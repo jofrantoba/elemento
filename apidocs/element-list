@@ -1,3 +1,5 @@
 org.jboss.gwt.elemento.core
 org.jboss.gwt.elemento.core.builder
+org.jboss.gwt.elemento.processor
+org.jboss.gwt.elemento.processor.context
 org.jboss.gwt.elemento.template
