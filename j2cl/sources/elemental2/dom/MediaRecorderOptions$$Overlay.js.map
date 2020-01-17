@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"MediaRecorderOptions$$Overlay.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;MAyBiB,6B;;;;;QAEa,U;EAAAA,wC;EAC1BA,oG;;;;;QAHa,O;EAAAC,gD;EAAAA;",
+"sources":["MediaRecorderOptions.java"],
+"names":["elemental2.dom.MediaRecorderOptions$$Overlay.create","elemental2.dom.MediaRecorderOptions$$Overlay.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TypedBuilder.impl.java.js",
+"lineCount":33,
+"mappings":"A;;;;;;;;;;MAkBiB,Y;;;;;;CAGX,Q;;;;;;;QAHW,M;EAAAA,uB;EAAAA,oE;;;;;QAAA,O;EAAAC,+B;EAAAA;",
+"sources":["TypedBuilder.java"],
+"names":["org.elemento.TypedBuilder.<synthetic: adapt_lambda>","org.elemento.TypedBuilder.<clinit>"]
+}

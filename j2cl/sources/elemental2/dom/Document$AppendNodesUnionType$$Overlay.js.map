@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Document$AppendNodesUnionType$$Overlay.impl.java.js",
+"lineCount":61,
+"mappings":"A;;;;;;;;;MA8BmB,6B;;;;;;QAEsB,sB,CAAUA,C;EAAVC,wC;EACnCA,wD;;;;;;;QAIW,+D;EAAAC,wC;EACXA,wF;;;;;;;QAIa,iE;EAAAC,wC;EACbA,iD;;;;;;;QAIc,+D;EAAAC,wC;EACdA,wD;;;;;;;QAIc,iE;EAAAC,wC;EACdA,0D;;;;;QAvBa,O;EAAAC,gD;EAAAA;",
+"sources":["Document.java"],
+"names":["o","elemental2.dom.Document$AppendNodesUnionType$$Overlay.of","elemental2.dom.Document$AppendNodesUnionType$$Overlay.asNode__$devirt","elemental2.dom.Document$AppendNodesUnionType$$Overlay.asString__$devirt","elemental2.dom.Document$AppendNodesUnionType$$Overlay.isNode__$devirt","elemental2.dom.Document$AppendNodesUnionType$$Overlay.isString__$devirt","elemental2.dom.Document$AppendNodesUnionType$$Overlay.<clinit>"]
+}

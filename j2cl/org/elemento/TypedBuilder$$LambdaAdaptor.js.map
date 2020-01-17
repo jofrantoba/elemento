@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TypedBuilder$$LambdaAdaptor.impl.java.js",
+"lineCount":45,
+"mappings":"A;;;;;;;;;;MAkBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;wD;EAAAA,gG;;;;;;CAAA,sF;EAAAC,iC;EAAAA,2D;;;;;;CAAA,Q;EAAAC,mC;EAAAA,wF;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["TypedBuilder.java"],
+"names":["org.elemento.TypedBuilder$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.elemento.TypedBuilder$$LambdaAdaptor.<init>","org.elemento.TypedBuilder$$LambdaAdaptor.that","org.elemento.TypedBuilder$$LambdaAdaptor.<clinit>"]
+}

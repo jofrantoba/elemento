@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"XMLHttpRequest$$Overlay.impl.java.js",
+"lineCount":142,
+"mappings":"A;;;;;;;;;;;;MA2Ba,uB;;;;;;QAkMO,2E,WAAiBA,I;EAAjBC,kC;EAChBA,4E;;;;;;;QAIgB,+E,WAAqBD,I;EAArBC,kC;EAChBA,4E;;;;;;;QAIgB,mE,WAAUD,I;EAAVC,kC;EAChBA,4E;;;;;;;QAIgB,uE,WAAcD,I;EAAdC,kC;EAChBA,4E;;;;;;;QAIgB,uE,WAAcD,I;EAAdC,kC;EAChBA,4E;;;;;;;QAMgB,gE,WAAYD,I;EAAZC,kC;EAChBA,4E;;;;;;QArFF,kD;EAAAC,oH;;;;;;QACA,8D;EAAAA,gI;;;;;;QACA,qD;EAAAA,uH;;;;;;QACA,oD;EAAAA,sH;;;;;;QACA,oD;EAAAA,sH;;;;;QA7IW,O;EAAAC,0C;EAAAA,uC;EAyIXA,8F;EACAA,sH;EACAA,oG;EACAA,kG;EACAA,kG;;;;;;;;;;;;;;;;;;;;AA7IW;4E;AAAA;wF;AAAA;+E;AAAA;8E;AAAA;;",
+"sources":["XMLHttpRequest.java"],
+"names":["data","elemental2.dom.XMLHttpRequest$$Overlay.send__$devirt","elemental2.dom.XMLHttpRequest$$Overlay.<synthetic: getter>","elemental2.dom.XMLHttpRequest$$Overlay.<clinit>"]
+}

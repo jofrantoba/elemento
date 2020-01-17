@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Request$ConstructorInputUnionType$$Overlay.impl.java.js",
+"lineCount":61,
+"mappings":"A;;;;;;;;;MA6BmB,kC;;;;;;QAE0B,sB,CAAUA,C;EAAVC,6C;EACvCA,wD;;;;;;;QAIc,sE;EAAAC,6C;EACdA,2F;;;;;;;QAIa,qE;EAAAC,6C;EACbA,iD;;;;;;;QAIc,sE;EAAAC,6C;EACdA,wD;;;;;;;QAIc,qE;EAAAC,6C;EACdA,0D;;;;;QAvBa,O;EAAAC,qD;EAAAA;",
+"sources":["Request.java"],
+"names":["o","elemental2.dom.Request$ConstructorInputUnionType$$Overlay.of","elemental2.dom.Request$ConstructorInputUnionType$$Overlay.asRequest__$devirt","elemental2.dom.Request$ConstructorInputUnionType$$Overlay.asString__$devirt","elemental2.dom.Request$ConstructorInputUnionType$$Overlay.isRequest__$devirt","elemental2.dom.Request$ConstructorInputUnionType$$Overlay.isString__$devirt","elemental2.dom.Request$ConstructorInputUnionType$$Overlay.<clinit>"]
+}

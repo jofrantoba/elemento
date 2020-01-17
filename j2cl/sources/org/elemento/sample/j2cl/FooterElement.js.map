@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"FooterElement.impl.java.js",
+"lineCount":59,
+"mappings":"A;;;;;;;;;;;;;;;;;;MAyBM,a;;;;CAAA,W;EAAAA,Q;EAAAA;OAEwB,+CAFxBA,C;;;;;;QAIF,S;EAAAC,wB;EAAAA,oC;EAAAA,4D;EAAAA,iB;;;;;CAAA,+C;EAAAC,iC;EACIA,o6D;;;;;;;CASe,W;EACfC,4D;;;;;QAfF,O;EAAAC,gC;EAAAA,6B;EAAAA;",
+"sources":["FooterElement.java"],
+"names":["org.elemento.sample.j2cl.FooterElement.<synthetic: ctor_js>","org.elemento.sample.j2cl.FooterElement.<synthetic: ctor_create>","org.elemento.sample.j2cl.FooterElement.<init>","org.elemento.sample.j2cl.FooterElement.element","org.elemento.sample.j2cl.FooterElement.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Messages.impl.java.js",
+"lineCount":38,
+"mappings":"A;;;;;;;;;;MAoBiB,Q;;;;;;QAEG,Y,CAAUA,K;EAAVC,mB;EACZA,mBAAOC,OAAPD,C;EACAA;;IAEQA,2CAFRA;IAGQA,MAHRA;;IAKQA,2CALRA;IAMQA,MANRA;;IAQQA,sDARRA;IASQA,MATRA;G;EAWAA,mE;;;;;QAfS,O;EAAAE,2B;EAAAA;",
+"sources":["Messages.java"],
+"names":["items","org.elemento.sample.j2cl.Messages.items","message","org.elemento.sample.j2cl.Messages.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ConstrainDOMStringParameters$$Overlay.impl.java.js",
+"lineCount":79,
+"mappings":"A;;;;;;;;;;MA0BiB,qC;;;;;QA0DqB,U;EAAAA,gD;EAClCA,4G;;;;;;;QAaW,yF,WAAyBC,K;EAAzBC,gD;EACXA,+E;;;;;;;QAIW,kF,WAAgBD,K;EAAhBC,gD;EACXA,+E;;;;;;;QAIW,0F,WAAkBD,K;EAAlBC,gD;EACXA,sN;;;;;;;QAOW,yF,WAAyBC,K;EAAzBC,gD;EACXA,+E;;;;;;;QAIW,kF,WAAgBD,K;EAAhBC,gD;EACXA,+E;;;;;;;QAIW,0F,WAAkBD,K;EAAlBC,gD;EACXA,sN;;;;;QArGa,O;EAAAC,wD;EAAAA;",
+"sources":["ConstrainDOMStringParameters.java"],
+"names":["elemental2.dom.ConstrainDOMStringParameters$$Overlay.create","exact","elemental2.dom.ConstrainDOMStringParameters$$Overlay.setExact__$devirt","ideal","elemental2.dom.ConstrainDOMStringParameters$$Overlay.setIdeal__$devirt","elemental2.dom.ConstrainDOMStringParameters$$Overlay.<clinit>"]
+}

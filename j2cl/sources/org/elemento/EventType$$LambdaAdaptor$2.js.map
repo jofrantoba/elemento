@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"EventType$$LambdaAdaptor$2.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;MAkKmD,gB;;;;;CAAA,W;EAAAA,2B;EAAAA,Q;EAAAA;uD;EAAAA,kG;;;;;;CAAA,wF;EAAAC,iC;EAAAA,0D;;;;;;CAAA,W;;GAAAC,qE;GAAAA,gB;;;;;;QAAA,O;EAAAC,mC;EAAAA,gC;EAAAA;",
+"sources":["EventType.java"],
+"names":["org.elemento.EventType$$LambdaAdaptor$2.<synthetic: lambda_adaptor_ctor>","org.elemento.EventType$$LambdaAdaptor$2.<init>","org.elemento.EventType$$LambdaAdaptor$2.handleEvent","org.elemento.EventType$$LambdaAdaptor$2.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Elements$JsArrayElementIterator.impl.java.js",
+"lineCount":99,
+"mappings":"A;;;;;;;;;;;;;;;;;MA+gDyB,sB;;;;CAAA,W;EAAAA,Q;EAAAA;OAEG,uDAFHA,C;EAAAA;OAEW,qDAFXA,C;EAAAA;OAEiB,qDAFjBA,C;;;;;;;QAIV,mC,CAAmCC,M;EAAnCC,iC;EAAAA,6C;EAAAA,kG;EAAAA,iB;;;;;;CAAA,+E,CAAmCD,M;EAAnCE,iC;EACHA,sE;EACAA,wI;;;;;;;CAIW,W;EACXC,0F;;;;;;;CAIe,Q;EACfC;GACIA,2DADJA;G;EAGAA,wH;EACAA,6L;EACAA,kE;;;;;;CAIQ,U;EACRC;GACIA,0DADJA;G;EAGAA,qI;EACAA,kE;;;;;;;;CA9Ba,+C;EAAAC,mG;;;;;QAAA,O;EAAAC,yC;EAAAA,sC;EAAAA,qB;EAAAA;",
+"sources":["Elements.java"],
+"names":["org.elemento.Elements$JsArrayElementIterator.<synthetic: ctor_js>","parent","org.elemento.Elements$JsArrayElementIterator.<synthetic: ctor_create>","org.elemento.Elements$JsArrayElementIterator.<init>","org.elemento.Elements$JsArrayElementIterator.hasNext","org.elemento.Elements$JsArrayElementIterator.next","org.elemento.Elements$JsArrayElementIterator.remove","org.elemento.Elements$JsArrayElementIterator.forEachRemaining","org.elemento.Elements$JsArrayElementIterator.<clinit>"]
+}

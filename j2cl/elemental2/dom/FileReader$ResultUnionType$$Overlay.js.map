@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"FileReader$ResultUnionType$$Overlay.impl.java.js",
+"lineCount":80,
+"mappings":"A;;;;;;;;;;MAyDmB,wB;;;;;;QAEmB,sB,CAAUA,C;EAAVC,mC;EAChCA,wD;;;;;;;QAIkB,mE;EAAAC,mC;EAClBA,+F;;;;;;;QAIW,4D;EAAAC,mC;EACXA,6F;;;;;;;QAIa,8D;EAAAC,mC;EACbA,iD;;;;;;;QAIc,mE;EAAAC,mC;EACdA,wD;;;;;;;QAIc,4D;EAAAC,mC;EACdA,6D;;;;;;;QAIc,8D;EAAAC,mC;EACdA,0D;;;;;QAjCa,O;EAAAC,2C;EAAAA;",
+"sources":["FileReader.java"],
+"names":["o","elemental2.dom.FileReader$ResultUnionType$$Overlay.of","elemental2.dom.FileReader$ResultUnionType$$Overlay.asArrayBuffer__$devirt","elemental2.dom.FileReader$ResultUnionType$$Overlay.asBlob__$devirt","elemental2.dom.FileReader$ResultUnionType$$Overlay.asString__$devirt","elemental2.dom.FileReader$ResultUnionType$$Overlay.isArrayBuffer__$devirt","elemental2.dom.FileReader$ResultUnionType$$Overlay.isBlob__$devirt","elemental2.dom.FileReader$ResultUnionType$$Overlay.isString__$devirt","elemental2.dom.FileReader$ResultUnionType$$Overlay.<clinit>"]
+}

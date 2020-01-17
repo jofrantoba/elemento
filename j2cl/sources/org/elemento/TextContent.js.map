@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TextContent.impl.java.js",
+"lineCount":40,
+"mappings":"A;;;;;;;;;;;;;;MAoBiB,W;;;;;;;CAIH,+B,CAAmBA,I;;;;;;;;QAAnB,mE,WAAmBA,I;EAAnBC,sB;EACNA,sE;EACAA,2B;;;;;QANS,O;EAAAC,8B;EAAAA;",
+"sources":["TextContent.java"],
+"names":["text","org.elemento.TextContent.textContent__$default","org.elemento.TextContent.<clinit>"]
+}

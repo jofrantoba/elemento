@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Attachable.impl.java.js",
+"lineCount":79,
+"mappings":"A;;;;;;;;;;;;;;;MAwBiB,U;;;;;;QAGD,+D,CAAqBA,O,EAAoBC,U;EAAzCC,qB;EACRA;GACIA;IAAkBC,yDAAlBD;OADJA;GAEIA;IAAkBC,2DAAlBD;OAFJA;G;;;;;;;;QAOgC,2D,CAAsBF,O,EAAoBC,U;EAA1CC,qB;EAChCA;GACIA,8GADJA;G;;;;;;;CAMC,uC,CAAsBE,c;;;;;;CAGd,uC,CAAsBA,c;;;;;;QArBtB,M;EAAAC,qB;EAAAA,8B;;;;;;;QAqBA,0E,WAAsBD,c;EAAtBE,qB;;;;;QArBA,O;EAAAC,6B;EAAAA;",
+"sources":["Attachable.java"],
+"names":["element","attachable","org.elemento.Attachable.register","org.elemento.Attachable.<lambda in register>","mutationRecord","org.elemento.Attachable.<synthetic: adapt_lambda>","org.elemento.Attachable.detach__$default","org.elemento.Attachable.<clinit>"]
+}

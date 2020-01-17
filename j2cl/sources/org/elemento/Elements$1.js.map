@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Elements$1.impl.java.js",
+"lineCount":56,
+"mappings":"A;;;;;;;;;;;;;;;MAoG+D,E;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,6C;EAAAA,iB;;;;;CAAA,gC;EAAAC,iC;;;;;;;;;;CAEtB,2C,CAAcC,O,EAAkBC,I;EAC7DC,sK;;;;;QAHmD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["Elements.java"],
+"names":["org.elemento.Elements$1.<synthetic: ctor_js>","org.elemento.Elements$1.<synthetic: ctor_create>","org.elemento.Elements$1.<init>","element","type","org.elemento.Elements$1.create","org.elemento.Elements$1.<clinit>"]
+}

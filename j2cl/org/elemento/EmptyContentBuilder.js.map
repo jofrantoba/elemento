@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"EmptyContentBuilder.impl.java.js",
+"lineCount":52,
+"mappings":"A;;;;;;;;;;;MAoBa,mB;;;;CAAA,W;EAAAA,Q;;;;;;;;QAEF,mC,CAAsBC,O;EAAtBC,8B;EAAAA,0C;EAAAA,uF;EAAAA,iB;;;;;;CAAA,mE,CAAsBD,O;EACzBE,6E;;;;;;;CAI0B,Q;EAC1BC,Y;;;;;QARK,O;EAAAC,sC;EAAAA,mC;EAAAA;",
+"sources":["EmptyContentBuilder.java"],
+"names":["org.elemento.EmptyContentBuilder.<synthetic: ctor_js>","element","org.elemento.EmptyContentBuilder.<synthetic: ctor_create>","org.elemento.EmptyContentBuilder.<init>","org.elemento.EmptyContentBuilder.that","org.elemento.EmptyContentBuilder.<clinit>"]
+}

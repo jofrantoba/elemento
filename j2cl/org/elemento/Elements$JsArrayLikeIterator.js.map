@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Elements$JsArrayLikeIterator.impl.java.js",
+"lineCount":97,
+"mappings":"A;;;;;;;;;;;;;;;MAo9CyB,mB;;;;CAAA,W;EAAAA,Q;EAAAA;OAEsB,kDAFtBA,C;EAAAA;OAGL,iDAHKA,K;;;;;;;;QAKjB,mC,CAA6CC,K;EAA7CC,8B;EAAAA,0C;EAAAA,8F;EAAAA,iB;;;;;;CAAA,4E,CAA6CD,K;EAA7CE,iC;EAAAA,4D;EACIA,gE;;;;;;;CAIW,W;EACXC,mL;;;;;;;CAIK,Q;EACLC;GACIA,2DADJA;G;EAGAA,qL;;;;;;;;CAnBa,+C;EAAAC,mG;;;;;;;CAAA,U;EAAAC,sD;;;;;CAAA,oD;EAGjBJ,2D;;;;;QAHiB,O;EAAAK,sC;EAAAA,mC;EAAAA,qB;EAAAA;",
+"sources":["Elements.java"],
+"names":["org.elemento.Elements$JsArrayLikeIterator.<synthetic: ctor_js>","nodes","org.elemento.Elements$JsArrayLikeIterator.<synthetic: ctor_create>","org.elemento.Elements$JsArrayLikeIterator.<init>","org.elemento.Elements$JsArrayLikeIterator.hasNext","org.elemento.Elements$JsArrayLikeIterator.next","org.elemento.Elements$JsArrayLikeIterator.forEachRemaining","org.elemento.Elements$JsArrayLikeIterator.remove","org.elemento.Elements$JsArrayLikeIterator.<clinit>"]
+}

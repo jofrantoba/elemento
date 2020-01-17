@@ -1,0 +1,35 @@
+goog.module('org.elemento.sample.j2cl.TodoElement');
+
+goog.require('java.lang.Object');
+goog.require('nativebootstrap.Util');
+goog.require('org.elemento.Attachable');
+goog.require('org.elemento.IsElement');
+goog.require('elemental2.dom.Event.$Overlay');
+goog.require('elemental2.dom.FocusEvent.$Overlay');
+goog.require('elemental2.dom.HTMLButtonElement.$Overlay');
+goog.require('elemental2.dom.HTMLDivElement.$Overlay');
+goog.require('elemental2.dom.HTMLElement.$Overlay');
+goog.require('elemental2.dom.HTMLInputElement.$Overlay');
+goog.require('elemental2.dom.HTMLLIElement.$Overlay');
+goog.require('elemental2.dom.HTMLLabelElement.$Overlay');
+goog.require('elemental2.dom.KeyboardEvent.$Overlay');
+goog.require('elemental2.dom.MouseEvent.$Overlay');
+goog.require('elemental2.dom.MutationRecord.$Overlay');
+goog.require('java.lang.String');
+goog.require('nativebootstrap.Equality');
+goog.require('org.elemento.Elements');
+goog.require('org.elemento.EventType');
+goog.require('org.elemento.HtmlContentBuilder');
+goog.require('org.elemento.InputBuilder');
+goog.require('org.elemento.InputType');
+goog.require('org.elemento.Key');
+goog.require('org.elemento.sample.j2cl.ApplicationElement');
+goog.require('org.elemento.sample.j2cl.Todo.$Overlay');
+goog.require('org.elemento.sample.j2cl.TodoRepository');
+goog.require('org.gwtproject.event.shared.HandlerRegistration');
+goog.require('org.gwtproject.event.shared.HandlerRegistrations');
+goog.require('vmbootstrap.Arrays');
+goog.require('vmbootstrap.Casts');
+
+const TodoElement = goog.require('org.elemento.sample.j2cl.TodoElement$impl');
+exports = TodoElement; 

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TodoRepository$ModificationCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":45,
+"mappings":"A;;;;;;;;;MAqKqB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;2F;EAAAA,sK;;;;;;CAAA,4J;EAAAC,iC;EAAAA,8F;;;;;CAAA,W;;GAAAC,yG;GAAAA,Y;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["TodoRepository.java"],
+"names":["org.elemento.sample.j2cl.TodoRepository$ModificationCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.elemento.sample.j2cl.TodoRepository$ModificationCallback$$LambdaAdaptor.<init>","org.elemento.sample.j2cl.TodoRepository$ModificationCallback$$LambdaAdaptor.execute","org.elemento.sample.j2cl.TodoRepository$ModificationCallback$$LambdaAdaptor.<clinit>"]
+}

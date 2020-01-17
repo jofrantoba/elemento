@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Main.impl.java.js",
+"lineCount":103,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;MAyBa,I;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,e;EAAAA,2B;EAAAA,mD;EAAAA,iB;;;;;CAAA,sC;EAAAC,iC;;;;;;CAGG,gB;EACRC,IAAeC,UAAfD,8B;EACAA,IAAmBE,WAAnBF,mF;EACAA,IAAcG,MAAdH,6B;EAEAA,yL;EACAA,mKAAyBI,KAAzBJ;GAAyBK,IAAAD,OAAAC,+DAAzBL;GAAkCK,2IAAlCL;K;EACAA,2I;;;;;QAVK,O;EAAAM,uB;EAAAA,oB;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;ACzBbC,sB;IACIA,0B;IACAA,qB;AACJA;",
+"sources":["Main.java","Main.native_js"],
+"names":["org.elemento.sample.j2cl.Main.<synthetic: ctor_js>","org.elemento.sample.j2cl.Main.<synthetic: ctor_create>","org.elemento.sample.j2cl.Main.<init>","org.elemento.sample.j2cl.Main.onModuleLoad","repository","application","footer","event","org.elemento.sample.j2cl.Main.<lambda in onModuleLoad>","org.elemento.sample.j2cl.Main.<clinit>","org.elemento.sample.j2cl.Main.<native>"]
+}

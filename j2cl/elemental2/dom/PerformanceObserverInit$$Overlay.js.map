@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"PerformanceObserverInit$$Overlay.impl.java.js",
+"lineCount":32,
+"mappings":"A;;;;;;;;MA0BiB,gC;;;;;QAEgB,U;EAAAA,2C;EAC7BA,uG;;;;;;;QAmBW,0F,WAAuBC,U;EAAvBC,2C;EACXA,sG;;;;;QAvBa,O;EAAAC,mD;EAAAA;",
+"sources":["PerformanceObserverInit.java"],
+"names":["elemental2.dom.PerformanceObserverInit$$Overlay.create","entryTypes","elemental2.dom.PerformanceObserverInit$$Overlay.setEntryTypes__$devirt","elemental2.dom.PerformanceObserverInit$$Overlay.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Attachable$$LambdaAdaptor.impl.java.js",
+"lineCount":58,
+"mappings":"A;;;;;;;;;;;MAwBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sD;EAAAA,4F;;;;;;CAAA,kF;EAAAC,iC;EAAAA,yD;;;;;;CAAA,uC;;GAAAC,oE;GAAAA,gB;;;;;;;;;CAAA,uC;EAAAC,kG;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
+"sources":["Attachable.java"],
+"names":["org.elemento.Attachable$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.elemento.Attachable$$LambdaAdaptor.<init>","org.elemento.Attachable$$LambdaAdaptor.attach","org.elemento.Attachable$$LambdaAdaptor.detach","org.elemento.Attachable$$LambdaAdaptor.<clinit>"]
+}

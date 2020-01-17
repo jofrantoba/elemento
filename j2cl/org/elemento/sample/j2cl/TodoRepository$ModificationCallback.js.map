@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TodoRepository$ModificationCallback.impl.java.js",
+"lineCount":30,
+"mappings":"A;;;;;;;;;MAqKqB,oB;;;;;CAER,W;;;;;;QAFQ,M;EAAAA,+B;EAAAA,8B;;;;;QAAA,O;EAAAC,uC;EAAAA;",
+"sources":["TodoRepository.java"],
+"names":["org.elemento.sample.j2cl.TodoRepository$ModificationCallback.<synthetic: adapt_lambda>","org.elemento.sample.j2cl.TodoRepository$ModificationCallback.<clinit>"]
+}
