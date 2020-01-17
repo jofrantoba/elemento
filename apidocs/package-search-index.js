@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"org.jboss.gwt.elemento.core"},{"l":"org.jboss.gwt.elemento.core.builder"},{"l":"org.jboss.gwt.elemento.processor"},{"l":"org.jboss.gwt.elemento.processor.context"},{"l":"org.jboss.gwt.elemento.template"}]
