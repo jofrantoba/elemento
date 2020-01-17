@@ -1,0 +1,22 @@
+JarIndex-Version: 1.0
+
+elemento-core-HEAD-SNAPSHOT-javadoc.jar
+META-INF
+META-INF/maven
+META-INF/maven/org.elemento
+META-INF/maven/org.elemento/elemento-core
+org
+org/elemento
+org/elemento/class-use
+allclasses-frame.html
+allclasses-noframe.html
+constant-values.html
+deprecated-list.html
+help-doc.html
+index-all.html
+index.html
+overview-tree.html
+package-list
+script.js
+stylesheet.css
+
