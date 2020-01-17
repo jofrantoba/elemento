@@ -1,9 +1,6 @@
 # Elemento Samples
 
-Elemento comes with five different [implementations](https://hal.github.io/elemento/index.html) of the [TodoMVC](http://todomvc.com/) sample app. 
+Elemento comes with different [implementations](https://hal.github.io/elemento/index.html) of the [TodoMVC](http://todomvc.com/) application:
 
-- [Builder API](http://hal.github.io/elemento/builder/index.html)
-- [HTML templates](http://hal.github.io/elemento/templated/index.html)
-- [Errai DI and builder API](http://hal.github.io/elemento/errai/index.html)
-- [Dagger DI and HTML templates](http://hal.github.io/elemento/dagger/index.html)
-- [GIN DI and HTML templates](http://hal.github.io/elemento/gin/index.html)
+- [GWT](https://hal.github.io/elemento/gwt/index.html)
+- [J2CL](https://hal.github.io/elemento/j2cl/index.html)
