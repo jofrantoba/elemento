@@ -1,13 +1,14 @@
 JarIndex-Version: 1.0
 
-elemento-core-HEAD-SNAPSHOT-javadoc.jar
+elemento-core-1.0.0-rc1-javadoc.jar
 META-INF
 META-INF/maven
-META-INF/maven/org.elemento
-META-INF/maven/org.elemento/elemento-core
+META-INF/maven/org.jboss.elemento
+META-INF/maven/org.jboss.elemento/elemento-core
 org
-org/elemento
-org/elemento/class-use
+org/jboss
+org/jboss/elemento
+org/jboss/elemento/class-use
 allclasses-frame.html
 allclasses-noframe.html
 constant-values.html

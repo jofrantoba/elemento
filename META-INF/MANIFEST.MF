@@ -1,21 +1,21 @@
 Manifest-Version: 1.0
 Implementation-Title: Elemento :: Core
-Implementation-Version: HEAD-SNAPSHOT
+Implementation-Version: 1.0.0-rc1
 Java-Version: 1.8.0_211
 Built-By: hpehl
 Scm-Connection: scm:git@github.com:hal/elemento.git
 Specification-Vendor: JBoss by Red Hat
 Os-Arch: x86_64
 Specification-Title: Elemento :: Core
-Implementation-Vendor-Id: org.elemento
+Implementation-Vendor-Id: org.jboss.elemento
 Java-Vendor: Oracle Corporation
 Os-Name: Mac OS X
 Scm-Url: https://github.com/hal/elemento
 Implementation-Vendor: JBoss by Red Hat
 Os-Version: 10.15.2
-Scm-Revision: 
+Scm-Revision: UNKNOWN
 Created-By: Apache Maven 3.6.3
 Build-Jdk: 1.8.0_211
-Specification-Version: 0.0
+Specification-Version: 1.0
 Implementation-URL: http://github.com/hal/elemento
 
