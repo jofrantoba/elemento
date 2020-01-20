@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"PushSubscriptionOptions$$Overlay.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;MA0BiB,gC;;;;;QAEgB,U;EAAAA,2C;EAC7BA,uG;;;;;QAHa,O;EAAAC,mD;EAAAA;",
+"sources":["PushSubscriptionOptions.java"],
+"names":["elemental2.dom.PushSubscriptionOptions$$Overlay.create","elemental2.dom.PushSubscriptionOptions$$Overlay.<clinit>"]
+}

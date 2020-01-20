@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"OffscreenCanvas$$Overlay.impl.java.js",
+"lineCount":25,
+"mappings":"A;;;;;;;MA4Ba,wB;;;;;;;;QAwCW,yF,WAAkBA,S,EAAkBC,O;EAApCC,mC;EACpBA,4G;;;;;QAzCS,O;EAAAC,2C;EAAAA;",
+"sources":["OffscreenCanvas.java"],
+"names":["contextId","options","elemental2.dom.OffscreenCanvas$$Overlay.getContext__$devirt","elemental2.dom.OffscreenCanvas$$Overlay.<clinit>"]
+}

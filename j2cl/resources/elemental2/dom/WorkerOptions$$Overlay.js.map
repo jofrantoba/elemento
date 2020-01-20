@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"WorkerOptions$$Overlay.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;MAyBiB,sB;;;;;QAEM,U;EAAAA,iC;EACnBA,6F;;;;;QAHa,O;EAAAC,yC;EAAAA;",
+"sources":["WorkerOptions.java"],
+"names":["elemental2.dom.WorkerOptions$$Overlay.create","elemental2.dom.WorkerOptions$$Overlay.<clinit>"]
+}

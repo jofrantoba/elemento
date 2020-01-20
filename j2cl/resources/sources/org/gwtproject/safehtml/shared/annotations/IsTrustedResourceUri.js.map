@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"IsTrustedResourceUri.impl.java.js",
+"lineCount":28,
+"mappings":"A;;;;;;;;;;;;MAsBkB,oB;;;;;;QAAA,M;EAAAA,+B;EAAAA,8B;;;;;QAAA,O;EAAAC,uC;EAAAA;",
+"sources":["IsTrustedResourceUri.java"],
+"names":["org.gwtproject.safehtml.shared.annotations.IsTrustedResourceUri.<synthetic: adapt_lambda>","org.gwtproject.safehtml.shared.annotations.IsTrustedResourceUri.<clinit>"]
+}

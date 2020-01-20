@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Promise$PromiseExecutorCallbackFn$ResolveCallbackFn$$Overlay.impl.java.js",
+"lineCount":35,
+"mappings":"A;;;;;;;;MAmEc,0B;;;;;;;QAoBK,yH,WAAsBA,K;EAAtBC,qC;EACXA,wE;;;;;;;;QAMW,6G,WAAWD,K;EAAXC,qC;EACXA,wE;;;;;QA5BM,O;EAAAC,6C;EAAAA;",
+"sources":["Promise.java"],
+"names":["value","elemental2.promise.Promise$PromiseExecutorCallbackFn$ResolveCallbackFn$$Overlay.onInvoke__$devirt","elemental2.promise.Promise$PromiseExecutorCallbackFn$ResolveCallbackFn$$Overlay.<clinit>"]
+}

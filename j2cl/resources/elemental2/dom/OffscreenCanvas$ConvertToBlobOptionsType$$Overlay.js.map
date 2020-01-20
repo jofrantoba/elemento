@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"OffscreenCanvas$ConvertToBlobOptionsType$$Overlay.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;MA8BmB,iC;;;;;QAEiC,U;EAAAA,4C;EAC9CA,iF;;;;;QAHa,O;EAAAC,oD;EAAAA;",
+"sources":["OffscreenCanvas.java"],
+"names":["elemental2.dom.OffscreenCanvas$ConvertToBlobOptionsType$$Overlay.create","elemental2.dom.OffscreenCanvas$ConvertToBlobOptionsType$$Overlay.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Document$RegisterElementOptionsType$$Overlay.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;MAkHmB,mC;;;;;QAE4B,U;EAAAA,8C;EACzCA,iF;;;;;QAHa,O;EAAAC,sD;EAAAA;",
+"sources":["Document.java"],
+"names":["elemental2.dom.Document$RegisterElementOptionsType$$Overlay.create","elemental2.dom.Document$RegisterElementOptionsType$$Overlay.<clinit>"]
+}

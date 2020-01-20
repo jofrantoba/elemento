@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Location$ReplaceUrlUnionType$$Overlay.impl.java.js",
+"lineCount":61,
+"mappings":"A;;;;;;;;;MAqDmB,4B;;;;;;QAEqB,sB,CAAUA,C;EAAVC,uC;EAClCA,wD;;;;;;;QAIa,gE;EAAAC,uC;EACbA,iD;;;;;;;QAIiB,oE;EAAAC,uC;EACjBA,8F;;;;;;;QAIc,gE;EAAAC,uC;EACdA,0D;;;;;;;QAIc,oE;EAAAC,uC;EACdA,wD;;;;;QAvBa,O;EAAAC,+C;EAAAA;",
+"sources":["Location.java"],
+"names":["o","elemental2.dom.Location$ReplaceUrlUnionType$$Overlay.of","elemental2.dom.Location$ReplaceUrlUnionType$$Overlay.asString__$devirt","elemental2.dom.Location$ReplaceUrlUnionType$$Overlay.asTrustedURL__$devirt","elemental2.dom.Location$ReplaceUrlUnionType$$Overlay.isString__$devirt","elemental2.dom.Location$ReplaceUrlUnionType$$Overlay.isTrustedURL__$devirt","elemental2.dom.Location$ReplaceUrlUnionType$$Overlay.<clinit>"]
+}

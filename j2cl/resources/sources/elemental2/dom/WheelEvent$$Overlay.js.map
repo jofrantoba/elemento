@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"WheelEvent$$Overlay.impl.java.js",
+"lineCount":58,
+"mappings":"A;;;;MAsBa,Q;;;;;QACX,wD;EAAAA,4F;;;;;;QACA,wD;EAAAA,4F;;;;;;QACA,yD;EAAAA,6F;;;;;QAHW,O;EAAAC,2B;EAAAA,wB;EACXA,2F;EACAA,2F;EACAA,6F;;;;;;;;;;;;;;;;;;AAHW;mE;AAAA;mE;AAAA;;",
+"sources":["WheelEvent.java"],
+"names":["elemental2.dom.WheelEvent$$Overlay.<synthetic: getter>","elemental2.dom.WheelEvent$$Overlay.<clinit>"]
+}

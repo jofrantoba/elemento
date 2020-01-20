@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"MediaTrackCapabilities$$Overlay.impl.java.js",
+"lineCount":59,
+"mappings":"A;;;;;;;MAyBiB,+B;;;;;;QAkGF,sF,WAA8BA,gB;EAA9BC,0C;EACXA,mH;;;;;;;QAUW,2F,WAAyBC,Y;EAAzBC,0C;EACXA,0G;;;;;;;QAOW,yF,WAAuBC,U;EAAvBC,0C;EACXA,sG;;;;;;;QAOW,wF,WAAsBC,S;EAAtBC,0C;EACXA,oG;;;;;;;QAwCW,+F,WAA6BC,gB;EAA7BC,0C;EACXA,kH;;;;;QAvKa,O;EAAAC,kD;EAAAA;",
+"sources":["MediaTrackCapabilities.java"],
+"names":["echoCancellation","elemental2.dom.MediaTrackCapabilities$$Overlay.setEchoCancellation__$devirt","exposureMode","elemental2.dom.MediaTrackCapabilities$$Overlay.setExposureMode__$devirt","facingMode","elemental2.dom.MediaTrackCapabilities$$Overlay.setFacingMode__$devirt","focusMode","elemental2.dom.MediaTrackCapabilities$$Overlay.setFocusMode__$devirt","whiteBalanceMode","elemental2.dom.MediaTrackCapabilities$$Overlay.setWhiteBalanceMode__$devirt","elemental2.dom.MediaTrackCapabilities$$Overlay.<clinit>"]
+}

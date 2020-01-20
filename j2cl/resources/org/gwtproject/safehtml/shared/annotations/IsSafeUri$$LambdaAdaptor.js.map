@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"IsSafeUri$$LambdaAdaptor.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;;;;MAuBkB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;mF;EAAAA,sJ;;;;;;CAAA,4I;EAAAC,iC;EAAAA,sF;;;;;;CAAA,kB;EAAAC,0C;EAAAA,mH;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["IsSafeUri.java"],
+"names":["org.gwtproject.safehtml.shared.annotations.IsSafeUri$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.safehtml.shared.annotations.IsSafeUri$$LambdaAdaptor.<init>","org.gwtproject.safehtml.shared.annotations.IsSafeUri$$LambdaAdaptor.annotationType","org.gwtproject.safehtml.shared.annotations.IsSafeUri$$LambdaAdaptor.<clinit>"]
+}

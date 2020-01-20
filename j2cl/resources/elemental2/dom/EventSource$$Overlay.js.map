@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"EventSource$$Overlay.impl.java.js",
+"lineCount":58,
+"mappings":"A;;;;MAuBa,Q;;;;;QAgBX,iD;EAAAA,qF;;;;;;QACA,qD;EAAAA,yF;;;;;;QACA,+C;EAAAA,mF;;;;;QAlBW,O;EAAAC,2B;EAAAA,wB;EAgBXA,6E;EACAA,qF;EACAA,yE;;;;;;;;;;;;;;;;;;AAlBW;4D;AAAA;gE;AAAA;;",
+"sources":["EventSource.java"],
+"names":["elemental2.dom.EventSource$$Overlay.<synthetic: getter>","elemental2.dom.EventSource$$Overlay.<clinit>"]
+}

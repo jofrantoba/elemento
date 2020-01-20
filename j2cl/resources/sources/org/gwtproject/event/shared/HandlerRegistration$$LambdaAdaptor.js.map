@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HandlerRegistration$$LambdaAdaptor.impl.java.js",
+"lineCount":45,
+"mappings":"A;;;;;;;;;MAsCiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;8E;EAAAA,4I;;;;;;CAAA,kI;EAAAC,iC;EAAAA,iF;;;;;CAAA,iB;;GAAAC,4F;GAAAA,Y;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["HandlerRegistration.java"],
+"names":["org.gwtproject.event.shared.HandlerRegistration$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.shared.HandlerRegistration$$LambdaAdaptor.<init>","org.gwtproject.event.shared.HandlerRegistration$$LambdaAdaptor.removeHandler","org.gwtproject.event.shared.HandlerRegistration$$LambdaAdaptor.<clinit>"]
+}
