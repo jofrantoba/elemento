@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ReadableStream$GetReaderOptionsType$$Overlay.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;MAgEmB,6B;;;;;QAE4B,U;EAAAA,wC;EACzCA,iF;;;;;QAHa,O;EAAAC,gD;EAAAA;",
+"sources":["ReadableStream.java"],
+"names":["elemental2.dom.ReadableStream$GetReaderOptionsType$$Overlay.create","elemental2.dom.ReadableStream$GetReaderOptionsType$$Overlay.<clinit>"]
+}

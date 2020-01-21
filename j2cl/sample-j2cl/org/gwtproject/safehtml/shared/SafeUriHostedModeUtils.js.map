@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SafeUriHostedModeUtils.impl.java.js",
+"lineCount":141,
+"mappings":"A;;;;;;;;;;;;MAgCa,sB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,iC;EAAAA,6C;EAAAA,2E;EAAAA,iB;;;;;CAAA,8D;EAAAC,iC;;;;;;;QAkEW,qC,CAAyBC,G;EAAzBC,iC;EACpBA,IAAIC,GAAJD,8C;EACAA,IAAIE,CAAJF,K;EACAA;GACEA,IAAIG,SAAJH,2DADFA;GAEEA,2CAFFA;GAGEA;IACEA,SADFA;IAHFA;GAMEA;IACEA,SADFA;IANFA;GAUEA;IAEEA,SAFFA;IAVFA;GAeEA;IAEEA,SAFFA;IAfFA;GAmBEA,aAnBFA;G;EAqBAA,Y;;;;;;QAQiB,sC,CAA0BD,G;EAA1BK,iC;EACjBA;GACEA,0QADFA;;GAGEA,oOAHFA;G;;;;;;;QAOkB,0C,CAAsBC,Y,EAAqBC,O;EAC7DC;GACEA,oFADFA;G;;;;;;QAWiB,gC,CAA8BC,K;EAA9BC,iC;EACjBA,4G;;;;;QAciB,qC;EAAAC,iC;EACjBA,oO;;;;;QAtIS,O;EAAAC,yC;EAAAA,sC;EAAAA,qB;EAwDXA,4G;EAGEA,+D;;;;;;;;;;;;;;;;;;;;;;;;;AAxBF;uBAQoB,8EARpB,yC;AAaA;uBAI2B,8EAJ3B,gD;AAhDW;uBAsDY,4EAtDZ,S;AAAA;uBAwDkB,8DAxDlB;",
+"sources":["SafeUriHostedModeUtils.java"],
+"names":["org.gwtproject.safehtml.shared.SafeUriHostedModeUtils.<synthetic: ctor_js>","org.gwtproject.safehtml.shared.SafeUriHostedModeUtils.<synthetic: ctor_create>","org.gwtproject.safehtml.shared.SafeUriHostedModeUtils.<init>","uri","org.gwtproject.safehtml.shared.SafeUriHostedModeUtils.isValidUriCharset","len","i","codePoint","org.gwtproject.safehtml.shared.SafeUriHostedModeUtils.maybeCheckValidUri","completeHtml","message","org.gwtproject.safehtml.shared.SafeUriHostedModeUtils.checkArgument","check","org.gwtproject.safehtml.shared.SafeUriHostedModeUtils.setForceCheckValidUri","org.gwtproject.safehtml.shared.SafeUriHostedModeUtils.setForceCheckValidUriFromProperty","org.gwtproject.safehtml.shared.SafeUriHostedModeUtils.<clinit>"]
+}

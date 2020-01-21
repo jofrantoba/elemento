@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SourceBuffer$AppendBufferDataUnionType$$Overlay.impl.java.js",
+"lineCount":61,
+"mappings":"A;;;;;;;;;MA4BmB,kC;;;;;;QAE+B,sB,CAAUA,C;EAAVC,6C;EAC5CA,wD;;;;;;;QAIkB,+E;EAAAC,6C;EAClBA,+F;;;;;;;QAIsB,mF;EAAAC,6C;EACtBA,mH;;;;;;;QAIc,+E;EAAAC,6C;EACdA,wD;;;;;;;QAIc,mF;EAAAC,6C;EACdA,wE;;;;;QAvBa,O;EAAAC,qD;EAAAA;",
+"sources":["SourceBuffer.java"],
+"names":["o","elemental2.dom.SourceBuffer$AppendBufferDataUnionType$$Overlay.of","elemental2.dom.SourceBuffer$AppendBufferDataUnionType$$Overlay.asArrayBuffer__$devirt","elemental2.dom.SourceBuffer$AppendBufferDataUnionType$$Overlay.asArrayBufferView__$devirt","elemental2.dom.SourceBuffer$AppendBufferDataUnionType$$Overlay.isArrayBuffer__$devirt","elemental2.dom.SourceBuffer$AppendBufferDataUnionType$$Overlay.isArrayBufferView__$devirt","elemental2.dom.SourceBuffer$AppendBufferDataUnionType$$Overlay.<clinit>"]
+}

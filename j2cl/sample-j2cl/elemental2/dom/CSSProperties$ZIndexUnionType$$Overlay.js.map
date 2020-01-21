@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CSSProperties$ZIndexUnionType$$Overlay.impl.java.js",
+"lineCount":60,
+"mappings":"A;;;;;;;;MAqiCmB,Q;;;;;;QAEsB,sB,CAAUA,C;EAAVC,mB;EACnCA,wD;;;;;;;QAIa,iE;EAAAC,mB;EACbA,iD;;;;;;;QAIa,iE;EAAAC,mB;EACbA,iD;;;;;;;QAIc,iE;EAAAC,mB;EACdA,sD;;;;;;;QAIc,iE;EAAAC,mB;EACdA,0D;;;;;QAvBa,O;EAAAC,2B;EAAAA;",
+"sources":["CSSProperties.java"],
+"names":["o","elemental2.dom.CSSProperties$ZIndexUnionType$$Overlay.of","elemental2.dom.CSSProperties$ZIndexUnionType$$Overlay.asDouble__$devirt","elemental2.dom.CSSProperties$ZIndexUnionType$$Overlay.asString__$devirt","elemental2.dom.CSSProperties$ZIndexUnionType$$Overlay.isDouble__$devirt","elemental2.dom.CSSProperties$ZIndexUnionType$$Overlay.isString__$devirt","elemental2.dom.CSSProperties$ZIndexUnionType$$Overlay.<clinit>"]
+}

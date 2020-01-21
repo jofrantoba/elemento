@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TodoRepository_Factory.impl.java.js",
+"lineCount":63,
+"mappings":"A;;;;;;;;;;;;MAKa,uB;;;;CAAA,W;EAAAA,Q;EAAAA;OAUc,uEAVdA,C;;;;;;;CAGa,O;EAClBC;GACIA,oFADJA;G;EAEAA,0G;EACAA,oF;;;;;;QAKI,S;EAAAC,8C;EAAAA,gF;EAAAA,iB;;;;;CAAA,mE;EAAAC,iC;;;;;;QAG6B,U;EAAAC,kC;EACjCA,2C;;;;;QAhBK,O;EAAAC,0C;EAAAA,uC;EAAAA;",
+"sources":["TodoRepository_Factory.java"],
+"names":["org.jboss.elemento.sample.crysknife.TodoRepository_Factory.<synthetic: ctor_js>","org.jboss.elemento.sample.crysknife.TodoRepository_Factory.get","org.jboss.elemento.sample.crysknife.TodoRepository_Factory.<synthetic: ctor_create>","org.jboss.elemento.sample.crysknife.TodoRepository_Factory.<init>","org.jboss.elemento.sample.crysknife.TodoRepository_Factory.create","org.jboss.elemento.sample.crysknife.TodoRepository_Factory.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Application.impl.java.js",
+"lineCount":28,
+"mappings":"A;;;;;;;;;;;;MASkB,W;;;;;;QAAA,M;EAAAA,sB;EAAAA,8B;;;;;QAAA,O;EAAAC,8B;EAAAA;",
+"sources":["Application.java"],
+"names":["org.treblereel.gwt.crysknife.client.Application.<synthetic: adapt_lambda>","org.treblereel.gwt.crysknife.client.Application.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NodeFilter$$Overlay.impl.java.js",
+"lineCount":179,
+"mappings":"A;;;;MAsBiB,Q;;;;;QACf,uD;EAAAA,2F;;;;;;QACA,uD;EAAAA,2F;;;;;;QACA,qD;EAAAA,yF;;;;;;QACA,kD;EAAAA,sF;;;;;;QACA,wD;EAAAA,4F;;;;;;QACA,4D;EAAAA,gG;;;;;;QACA,sD;EAAAA,0F;;;;;;QACA,uD;EAAAA,2F;;;;;;QACA,gE;EAAAA,oG;;;;;;QACA,4D;EAAAA,gG;;;;;;QACA,sD;EAAAA,0F;;;;;;QACA,qD;EAAAA,yF;;;;;;QACA,+D;EAAAA,mG;;;;;;QACA,uD;EAAAA,2F;;;;;;QACA,qE;EAAAA,yG;;;;;;QACA,mD;EAAAA,uF;;;;;QAhBe,O;EAAAC,2B;EAAAA,wB;EACfA,yF;EACAA,yF;EACAA,qF;EACAA,+E;EACAA,2F;EACAA,mG;EACAA,uF;EACAA,yF;EACAA,2G;EACAA,mG;EACAA,uF;EACAA,qF;EACAA,yG;EACAA,yF;EACAA,qH;EACAA,iF;;;;;;;;;AAhBe;oE;AAAA;oE;AAAA;kE;AAAA;+D;AAAA;qE;AAAA;yE;AAAA;mE;AAAA;oE;AAAA;6E;AAAA;yE;AAAA;mE;AAAA;kE;AAAA;4E;AAAA;oE;AAAA;kF;AAAA;;",
+"sources":["NodeFilter.java"],
+"names":["elemental2.dom.NodeFilter$$Overlay.<synthetic: getter>","elemental2.dom.NodeFilter$$Overlay.<clinit>"]
+}

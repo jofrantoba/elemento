@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Provider.impl.java.js",
+"lineCount":33,
+"mappings":"A;;;;;;;;;;MA2CiB,Q;;;;;;CAYX,O;;;;;;;QAZW,M;EAAAA,mB;EAAAA,iE;;;;;QAAA,O;EAAAC,2B;EAAAA;",
+"sources":["Provider.java"],
+"names":["javax.inject.Provider.<synthetic: adapt_lambda>","javax.inject.Provider.<clinit>"]
+}

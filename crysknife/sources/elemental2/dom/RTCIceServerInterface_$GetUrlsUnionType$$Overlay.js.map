@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"RTCIceServerInterface_$GetUrlsUnionType$$Overlay.impl.java.js",
+"lineCount":61,
+"mappings":"A;;;;;;;;;MA2BmB,yB;;;;;;QAEgC,sB,CAAUA,C;EAAVC,oC;EAC7CA,wD;;;;;;;QAIsB,4E;EAAAC,oC;EACtBA,kG;;;;;;;QAIa,2E;EAAAC,oC;EACbA,iD;;;;;;;QAIc,4E;EAAAC,oC;EACdA,wD;;;;;;;QAIc,2E;EAAAC,oC;EACdA,0D;;;;;QAvBa,O;EAAAC,4C;EAAAA;",
+"sources":["RTCIceServerInterface_.java"],
+"names":["o","elemental2.dom.RTCIceServerInterface_$GetUrlsUnionType$$Overlay.of","elemental2.dom.RTCIceServerInterface_$GetUrlsUnionType$$Overlay.asJsArray__$devirt","elemental2.dom.RTCIceServerInterface_$GetUrlsUnionType$$Overlay.asString__$devirt","elemental2.dom.RTCIceServerInterface_$GetUrlsUnionType$$Overlay.isJsArray__$devirt","elemental2.dom.RTCIceServerInterface_$GetUrlsUnionType$$Overlay.isString__$devirt","elemental2.dom.RTCIceServerInterface_$GetUrlsUnionType$$Overlay.<clinit>"]
+}

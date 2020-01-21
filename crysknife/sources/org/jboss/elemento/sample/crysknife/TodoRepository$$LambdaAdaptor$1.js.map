@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TodoRepository$$LambdaAdaptor$1.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;MAiIoE,gB;;;;;CAAA,W;EAAAA,2B;EAAAA,Q;EAAAA;mF;EAAAA,8H;;;;;;CAAA,oH;EAAAC,iC;EAAAA,sF;;;;;;CAAA,W;;GAAAC,iG;GAAAA,gB;;;;;;QAAA,O;EAAAC,mC;EAAAA,gC;EAAAA;",
+"sources":["TodoRepository.java"],
+"names":["org.jboss.elemento.sample.crysknife.TodoRepository$$LambdaAdaptor$1.<synthetic: lambda_adaptor_ctor>","org.jboss.elemento.sample.crysknife.TodoRepository$$LambdaAdaptor$1.<init>","org.jboss.elemento.sample.crysknife.TodoRepository$$LambdaAdaptor$1.handleEvent","org.jboss.elemento.sample.crysknife.TodoRepository$$LambdaAdaptor$1.<clinit>"]
+}

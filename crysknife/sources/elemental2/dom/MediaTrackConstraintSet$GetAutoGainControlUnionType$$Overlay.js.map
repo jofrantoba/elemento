@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"MediaTrackConstraintSet$GetAutoGainControlUnionType$$Overlay.impl.java.js",
+"lineCount":51,
+"mappings":"A;;;;;;;;MAmDmB,oC;;;;;;QAE4C,sB,CAAUA,C;EAAVC,+C;EACzDA,wD;;;;;;;QAIc,wF;EAAAC,+C;EACdA,kD;;;;;;;QAIiC,2G;EAAAC,+C;EACjCA,wF;;;;;;;QAIc,wF;EAAAC,+C;EACdA,uD;;;;;QAlBa,O;EAAAC,uD;EAAAA;",
+"sources":["MediaTrackConstraintSet.java"],
+"names":["o","elemental2.dom.MediaTrackConstraintSet$GetAutoGainControlUnionType$$Overlay.of","elemental2.dom.MediaTrackConstraintSet$GetAutoGainControlUnionType$$Overlay.asBoolean__$devirt","elemental2.dom.MediaTrackConstraintSet$GetAutoGainControlUnionType$$Overlay.asConstrainBooleanParameters__$devirt","elemental2.dom.MediaTrackConstraintSet$GetAutoGainControlUnionType$$Overlay.isBoolean__$devirt","elemental2.dom.MediaTrackConstraintSet$GetAutoGainControlUnionType$$Overlay.<clinit>"]
+}

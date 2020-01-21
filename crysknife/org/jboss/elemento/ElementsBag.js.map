@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ElementsBag.impl.java.js",
+"lineCount":126,
+"mappings":"A;;;;;;;;;;;;;;;;MAuBa,W;;;;CAAA,W;EAAAA,Q;EAAAA;OAEkB,2CAFlBA,C;;;;;;QAIF,S;EAAAC,sB;EAAAA,kC;EAAAA,oD;EAAAA,iB;;;;;CAAA,uC;EAAAC,iC;EACHA,4E;;;;;;;CAIe,Q;EACfC,Y;;;;;;CAMyB,Y;EACzBC,wD;;;;;;;CAIe,iC,CAAgBC,O;EAC/BC,uH;EACAA,uB;;;;;;;CAIe,mC,CAAiBD,O;EAChCC;GACIA,qEADJA;G;EAGAA,uB;;;;;;;CAIe,4C,CAAsBC,Q;EACrCC;GAAAA,IAAiBH,OAAjBG,kBAAAA;GACIA,gDADJA;G;EAGAA,uB;;;;;;;CAIe,8C,CAAuBD,Q;EACtCC;GAAAA,IAAkBH,OAAlBG,kBAAAA;GACIA;IACIA,8DADJA;IADJA;G;EAKAA,uB;;;;;;;CAIe,4B,CAAmBD,Q;EAClCC;GAAAA,IAAYH,OAAZG,wBAAAA;GACIA;IACIA,kGADJA;UAEOA;IAEHA,+GAFGA;IAHXA;G;EAQAA,uB;;;;;QA9DK,O;EAAAC,8B;EAAAA,2B;EAAAA;",
+"sources":["ElementsBag.java"],
+"names":["org.jboss.elemento.ElementsBag.<synthetic: ctor_js>","org.jboss.elemento.ElementsBag.<synthetic: ctor_create>","org.jboss.elemento.ElementsBag.<init>","org.jboss.elemento.ElementsBag.that","org.jboss.elemento.ElementsBag.elements","element","org.jboss.elemento.ElementsBag.add","elements","org.jboss.elemento.ElementsBag.addAll","org.jboss.elemento.ElementsBag.<clinit>"]
+}

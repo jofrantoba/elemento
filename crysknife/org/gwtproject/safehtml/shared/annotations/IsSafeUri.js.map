@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"IsSafeUri.impl.java.js",
+"lineCount":28,
+"mappings":"A;;;;;;;;;;;;MAuBkB,S;;;;;;QAAA,M;EAAAA,oB;EAAAA,8B;;;;;QAAA,O;EAAAC,4B;EAAAA;",
+"sources":["IsSafeUri.java"],
+"names":["org.gwtproject.safehtml.shared.annotations.IsSafeUri.<synthetic: adapt_lambda>","org.gwtproject.safehtml.shared.annotations.IsSafeUri.<clinit>"]
+}

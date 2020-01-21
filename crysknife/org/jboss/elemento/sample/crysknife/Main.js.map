@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Main.impl.java.js",
+"lineCount":111,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;MAgCa,I;;;;CAAA,W;EAAAA,Q;EAAAA;OAEc,sDAFdA,C;EAAAA;OAGkB,uDAHlBA,C;EAAAA;OAIa,kDAJbA,C;;;;;;QAAA,S;EAAAC,e;EAAAA,2B;EAAAA,8D;EAAAA,iB;;;;;CAAA,iD;EAAAC,iC;;;;;;CAOG,gB;EACRC,+H;;;;;CAIC,gD;EACDC,uS;EACAA,qLAAyBC,KAAzBD;GAAyBE,IAAAD,OAAAC,+DAAzBF;GAAkCE,uMAAlCF;K;EACAA,uM;;;;;QAfK,O;EAAAG,uB;EAAAA,oB;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AChCbC,sB;IACIA,0B;IACAA,qB;AACJA;",
+"sources":["Main.java","Main.native_js"],
+"names":["org.jboss.elemento.sample.crysknife.Main.<synthetic: ctor_js>","org.jboss.elemento.sample.crysknife.Main.<synthetic: ctor_create>","org.jboss.elemento.sample.crysknife.Main.<init>","org.jboss.elemento.sample.crysknife.Main.onModuleLoad","org.jboss.elemento.sample.crysknife.Main.init","event","org.jboss.elemento.sample.crysknife.Main.<lambda in init>","org.jboss.elemento.sample.crysknife.Main.<clinit>","org.jboss.elemento.sample.crysknife.Main.<native>"]
+}

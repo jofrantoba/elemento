@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ComponentScan.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;MAakB,a;;;;;;CAEd,S;;;;QAFc,O;EAAAA,gC;EAAAA;",
+"sources":["ComponentScan.java"],
+"names":["org.treblereel.gwt.crysknife.client.ComponentScan.<clinit>"]
+}

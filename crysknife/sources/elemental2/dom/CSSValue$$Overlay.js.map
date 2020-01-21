@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CSSValue$$Overlay.impl.java.js",
+"lineCount":68,
+"mappings":"A;;;;MAsBa,Q;;;;;QACX,kD;EAAAA,sF;;;;;;QACA,mD;EAAAA,uF;;;;;;QACA,2D;EAAAA,+F;;;;;;QACA,sD;EAAAA,0F;;;;;QAJW,O;EAAAC,2B;EAAAA,wB;EACXA,+E;EACAA,iF;EACAA,iG;EACAA,uF;;;;;;;;;;;;;;;;;;AAJW;6D;AAAA;8D;AAAA;sE;AAAA;;",
+"sources":["CSSValue.java"],
+"names":["elemental2.dom.CSSValue$$Overlay.<synthetic: getter>","elemental2.dom.CSSValue$$Overlay.<clinit>"]
+}

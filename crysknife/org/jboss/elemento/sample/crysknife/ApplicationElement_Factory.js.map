@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ApplicationElement_Factory.impl.java.js",
+"lineCount":71,
+"mappings":"A;;;;;;;;;;;;;;;;;MAOa,2B;;;;CAAA,W;EAAAA,Q;EAAAA;OAcsG,qHAdtGA,C;EAAAA;OAgBkB,2EAhBlBA,C;;;;;;;CAGiB,O;EACtBC;GACIA,wFADJA;G;EAEAA,mW;EACAA,wF;;;;;;QAGI,S;EAAAC,kD;EAAAA,oF;EAAAA,iB;;;;;CAAA,uE;EAAAC,iC;EACJA,0P;;;;;;QAOqC,U;EAAAC,sC;EACrCA,+C;;;;;QAnBK,O;EAAAC,8C;EAAAA,2C;EAAAA;",
+"sources":["ApplicationElement_Factory.java"],
+"names":["org.jboss.elemento.sample.crysknife.ApplicationElement_Factory.<synthetic: ctor_js>","org.jboss.elemento.sample.crysknife.ApplicationElement_Factory.get","org.jboss.elemento.sample.crysknife.ApplicationElement_Factory.<synthetic: ctor_create>","org.jboss.elemento.sample.crysknife.ApplicationElement_Factory.<init>","org.jboss.elemento.sample.crysknife.ApplicationElement_Factory.create","org.jboss.elemento.sample.crysknife.ApplicationElement_Factory.<clinit>"]
+}

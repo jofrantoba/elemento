@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"WebStorageWindow$$Overlay.impl.java.js",
+"lineCount":24,
+"mappings":"A;;;;;;;;MAwBa,yB;;;;;;QAEoB,2B,CAAUA,C;EAAVC,oC;EAC7BA,oG;;;;;QAHS,O;EAAAC,4C;EAAAA;",
+"sources":["WebStorageWindow.java"],
+"names":["o","elemental2.webstorage.WebStorageWindow$$Overlay.of","elemental2.webstorage.WebStorageWindow$$Overlay.<clinit>"]
+}

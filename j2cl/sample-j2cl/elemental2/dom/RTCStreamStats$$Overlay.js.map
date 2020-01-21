@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"RTCStreamStats$$Overlay.impl.java.js",
+"lineCount":11,
+"mappings":"A;;;;MAsBiB,Q;;;;QAAA,O;EAAAA,2B;EAAAA;",
+"sources":["RTCStreamStats.java"],
+"names":["elemental2.dom.RTCStreamStats$$Overlay.<clinit>"]
+}

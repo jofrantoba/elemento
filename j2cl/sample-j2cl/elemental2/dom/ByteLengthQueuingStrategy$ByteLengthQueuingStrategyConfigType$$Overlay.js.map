@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ByteLengthQueuingStrategy$ByteLengthQueuingStrategyConfigType$$Overlay.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;MA2BmB,4C;;;;;QAEsD,U;EAAAA,uD;EACnEA,iF;;;;;QAHa,O;EAAAC,+D;EAAAA;",
+"sources":["ByteLengthQueuingStrategy.java"],
+"names":["elemental2.dom.ByteLengthQueuingStrategy$ByteLengthQueuingStrategyConfigType$$Overlay.create","elemental2.dom.ByteLengthQueuingStrategy$ByteLengthQueuingStrategyConfigType$$Overlay.<clinit>"]
+}

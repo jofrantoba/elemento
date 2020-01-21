@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CSSProperties$TransformOriginUnionType$$Overlay.impl.java.js",
+"lineCount":60,
+"mappings":"A;;;;;;;;MA6+BmB,Q;;;;;;QAE+B,sB,CAAUA,C;EAAVC,mB;EAC5CA,wD;;;;;;;QAIa,0E;EAAAC,mB;EACbA,iD;;;;;;;QAIa,0E;EAAAC,mB;EACbA,iD;;;;;;;QAIc,0E;EAAAC,mB;EACdA,sD;;;;;;;QAIc,0E;EAAAC,mB;EACdA,0D;;;;;QAvBa,O;EAAAC,2B;EAAAA;",
+"sources":["CSSProperties.java"],
+"names":["o","elemental2.dom.CSSProperties$TransformOriginUnionType$$Overlay.of","elemental2.dom.CSSProperties$TransformOriginUnionType$$Overlay.asDouble__$devirt","elemental2.dom.CSSProperties$TransformOriginUnionType$$Overlay.asString__$devirt","elemental2.dom.CSSProperties$TransformOriginUnionType$$Overlay.isDouble__$devirt","elemental2.dom.CSSProperties$TransformOriginUnionType$$Overlay.isString__$devirt","elemental2.dom.CSSProperties$TransformOriginUnionType$$Overlay.<clinit>"]
+}

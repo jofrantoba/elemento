@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CSSPrimitiveValue$$Overlay.impl.java.js",
+"lineCount":288,
+"mappings":"A;;;;MAsBa,Q;;;;;QACX,yD;EAAAA,6F;;;;;;QACA,uD;EAAAA,2F;;;;;;QACA,4D;EAAAA,gG;;;;;;QACA,wD;EAAAA,4F;;;;;;QACA,8D;EAAAA,kG;;;;;;QACA,wD;EAAAA,4F;;;;;;QACA,wD;EAAAA,4F;;;;;;QACA,yD;EAAAA,6F;;;;;;QACA,uD;EAAAA,2F;;;;;;QACA,0D;EAAAA,8F;;;;;;QACA,uD;EAAAA,2F;;;;;;QACA,wD;EAAAA,4F;;;;;;QACA,uD;EAAAA,2F;;;;;;QACA,uD;EAAAA,2F;;;;;;QACA,2D;EAAAA,+F;;;;;;QACA,uD;EAAAA,2F;;;;;;QACA,+D;EAAAA,mG;;;;;;QACA,uD;EAAAA,2F;;;;;;QACA,uD;EAAAA,2F;;;;;;QACA,wD;EAAAA,4F;;;;;;QACA,yD;EAAAA,6F;;;;;;QACA,6D;EAAAA,iG;;;;;;QACA,sD;EAAAA,0F;;;;;;QACA,2D;EAAAA,+F;;;;;;QACA,4D;EAAAA,gG;;;;;;QACA,wD;EAAAA,4F;;;;;QA1BW,O;EAAAC,2B;EAAAA,wB;EACXA,6F;EACAA,yF;EACAA,mG;EACAA,2F;EACAA,uG;EACAA,2F;EACAA,2F;EACAA,6F;EACAA,yF;EACAA,+F;EACAA,yF;EACAA,2F;EACAA,yF;EACAA,yF;EACAA,iG;EACAA,yF;EACAA,yG;EACAA,yF;EACAA,yF;EACAA,2F;EACAA,6F;EACAA,qG;EACAA,uF;EACAA,iG;EACAA,mG;EACAA,2F;;;;;;;;;;;;;;;;;;AA1BW;oE;AAAA;kE;AAAA;uE;AAAA;mE;AAAA;yE;AAAA;mE;AAAA;mE;AAAA;oE;AAAA;kE;AAAA;qE;AAAA;kE;AAAA;mE;AAAA;kE;AAAA;kE;AAAA;sE;AAAA;kE;AAAA;0E;AAAA;kE;AAAA;kE;AAAA;mE;AAAA;oE;AAAA;wE;AAAA;iE;AAAA;sE;AAAA;uE;AAAA;;",
+"sources":["CSSPrimitiveValue.java"],
+"names":["elemental2.dom.CSSPrimitiveValue$$Overlay.<synthetic: getter>","elemental2.dom.CSSPrimitiveValue$$Overlay.<clinit>"]
+}

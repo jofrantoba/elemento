@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"FooterElement.impl.java.js",
+"lineCount":59,
+"mappings":"A;;;;;;;;;;;;;;;;;;MA4Ba,a;;;;CAAA,W;EAAAA,Q;EAAAA;OAEiB,0DAFjBA,C;;;;;;QAIF,S;EAAAC,wB;EAAAA,oC;EAAAA,uE;EAAAA,iB;;;;;CAAA,0D;EAAAC,iC;EACHA,y9D;;;;;;;CASe,W;EACfC,uE;;;;;QAfK,O;EAAAC,gC;EAAAA,6B;EAAAA;",
+"sources":["FooterElement.java"],
+"names":["org.jboss.elemento.sample.crysknife.FooterElement.<synthetic: ctor_js>","org.jboss.elemento.sample.crysknife.FooterElement.<synthetic: ctor_create>","org.jboss.elemento.sample.crysknife.FooterElement.<init>","org.jboss.elemento.sample.crysknife.FooterElement.element","org.jboss.elemento.sample.crysknife.FooterElement.<clinit>"]
+}

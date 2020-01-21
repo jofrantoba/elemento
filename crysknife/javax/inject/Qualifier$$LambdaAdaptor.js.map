@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Qualifier$$LambdaAdaptor.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;;;;MAyDkB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qD;EAAAA,0F;;;;;;CAAA,gF;EAAAC,iC;EAAAA,wD;;;;;;CAAA,kB;EAAAC,0C;EAAAA,qF;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["Qualifier.java"],
+"names":["javax.inject.Qualifier$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","javax.inject.Qualifier$$LambdaAdaptor.<init>","javax.inject.Qualifier$$LambdaAdaptor.annotationType","javax.inject.Qualifier$$LambdaAdaptor.<clinit>"]
+}
