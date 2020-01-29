@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NativeHorizontalScrollbar_ResourcesImpl.impl.java.js",
+"lineCount":143,
+"mappings":"A;;;;;;;;;;;;;;;;;;MAIa,wC;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,mD;EAAAA,+D;EAAAA,2F;EAAAA,iB;;;;;CAAA,8E;EAAAC,iC;;;;;CAEE,sH;EACXC,6O;;;;;;;CA8BqC,kC;EACrCC,2D;;;;;;CAKyB,gB;EACzBC,+H;;;;;;;CAIuB,+B,CAAmBC,I;EACxCC;GACEA,0MADFA;GAEEA,gNAFFA;G;EAIAA,iN;;;;;;QAhDJ,wF;EAAAC,4L;;;;;;QAAA,wF;EAAAC,6L;;;;;;QAoCA,4G;EAAAD,gN;;;;;;QAAA,4G;EAAAC,iN;;;;;QArCW,O;EAAAC,2D;EAAAA,wD;EAAAA,qB;EACXA,sL;;;;;;;;;;;;;;;;;;;;;;;;;;;;AADW;+H;AAAA;yCAoCiD,qFApCjD,C;AAAA;;",
+"sources":["NativeHorizontalScrollbar_ResourcesImpl.java"],
+"names":["org.gwtproject.user.client.ui.NativeHorizontalScrollbar_ResourcesImpl.<synthetic: ctor_js>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_ResourcesImpl.<synthetic: ctor_create>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_ResourcesImpl.<init>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_ResourcesImpl.nativeHorizontalScrollbarStyleInitializer","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_ResourcesImpl.nativeHorizontalScrollbarStyle","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_ResourcesImpl.getResources","name","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_ResourcesImpl.getResource","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_ResourcesImpl.<synthetic: getter>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_ResourcesImpl.<synthetic: setter>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_ResourcesImpl.<clinit>"]
+}

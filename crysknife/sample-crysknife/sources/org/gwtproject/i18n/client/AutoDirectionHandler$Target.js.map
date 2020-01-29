@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AutoDirectionHandler$Target.impl.java.js",
+"lineCount":30,
+"mappings":"A;;;;;;;;;;;MAyCmB,M;;;;;;CAKR,W;;;;;;CAOF,2B,CAAeA,I;;;;QAZL,O;EAAAC,yB;EAAAA;",
+"sources":["AutoDirectionHandler.java"],
+"names":["text","org.gwtproject.i18n.client.AutoDirectionHandler$Target.<clinit>"]
+}

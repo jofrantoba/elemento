@@ -1,0 +1,34 @@
+goog.module('org.gwtproject.user.client.ui.FormPanel');
+
+goog.require('nativebootstrap.Util');
+goog.require('org.gwtproject.user.client.ui.SimplePanel');
+goog.require('org.gwtproject.user.client.ui.impl.FormPanelImplHost');
+goog.require('java.lang.Iterable');
+goog.require('java.lang.String');
+goog.require('java.util.Spliterator');
+goog.require('java.util.function.Consumer');
+goog.require('nativebootstrap.Equality');
+goog.require('org.gwtproject.core.client.JavaScriptObject.$Overlay');
+goog.require('org.gwtproject.core.client.Scheduler');
+goog.require('org.gwtproject.dom.client.Document.$Overlay');
+goog.require('org.gwtproject.dom.client.Element.$Overlay');
+goog.require('org.gwtproject.dom.client.FormElement.$Overlay');
+goog.require('org.gwtproject.dom.client.Node.$Overlay');
+goog.require('org.gwtproject.event.shared.HandlerRegistration');
+goog.require('org.gwtproject.safehtml.shared.SafeUri');
+goog.require('org.gwtproject.user.client.Event');
+goog.require('org.gwtproject.user.client.ui.FormPanel.$1');
+goog.require('org.gwtproject.user.client.ui.FormPanel.IFrameTemplate');
+goog.require('org.gwtproject.user.client.ui.FormPanel.SubmitCompleteEvent');
+goog.require('org.gwtproject.user.client.ui.FormPanel.SubmitCompleteHandler');
+goog.require('org.gwtproject.user.client.ui.FormPanel.SubmitEvent');
+goog.require('org.gwtproject.user.client.ui.FormPanel.SubmitHandler');
+goog.require('org.gwtproject.user.client.ui.NamedFrame');
+goog.require('org.gwtproject.user.client.ui.RootPanel');
+goog.require('org.gwtproject.user.client.ui.Widget');
+goog.require('org.gwtproject.user.client.ui.impl.FormPanelImpl');
+goog.require('vmbootstrap.Asserts');
+goog.require('vmbootstrap.Casts');
+
+const FormPanel = goog.require('org.gwtproject.user.client.ui.FormPanel$impl');
+exports = FormPanel; 

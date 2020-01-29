@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ResponseImpl.impl.java.js",
+"lineCount":126,
+"mappings":"A;;;;;;;;;;;;;;;MAsBM,Y;;;;CAAA,W;EAAAA,Q;EAAAA;OAEyB,0DAFzBA,C;;;;;;;QAIG,sC,CAA4BC,c;EAA5BC,uB;EAAAA,mC;EAAAA,wG;EAAAA,iB;;;;;;CAAA,6E,CAA4BD,c;EAA5BE,oD;EACLA,iF;EAEAA,6C;;;;;;;;CAIY,6B,CAAiBC,M;EAC7BC,2F;EAEAA,iG;;;;;;;CAIc,c;EACdC,IAAOC,UAAPD,iC;EACAA,IAASE,eAATF,4E;EACAA,IAAaG,aAAbH,4D;EAEAA;GAAAA,IAAYI,cAAZJ,kBAAAA;GAEEA;IACEA,SADFA;IAFFA;GAMEA,IAAIK,YAAJL,6EANFA;GAOEA;IACEA,SADFA;IAPFA;GAWEA,IAAaM,IAAbN,4HAXFA;GAYEA,IAAaO,KAAbP,wHAZFA;GAaEA,IAAOF,MAAPE,8GAbFA;GA+BEA,0BA/BFA;G;EAkCAA,mM;;;;;;;CAIY,sB;EACZQ,IAAOC,OAAPD,2F;EACAA,sD;;;;;;;CAIS,iB;EACTE,8E;;;;;;;CAIY,iB;EACZC,kF;;;;;;;CAIY,W;EACZC,oF;;;;;;CAGgB,mB;EAChBC,yG;;;;;QAlFE,O;EAAAC,+B;EAAAA,4B;EAAAA;",
+"sources":["ResponseImpl.java"],
+"names":["org.gwtproject.http.client.ResponseImpl.<synthetic: ctor_js>","xmlHttpRequest","org.gwtproject.http.client.ResponseImpl.<synthetic: ctor_create>","org.gwtproject.http.client.ResponseImpl.<init>","header","org.gwtproject.http.client.ResponseImpl.getHeader","org.gwtproject.http.client.ResponseImpl.getHeaders","allHeaders","unparsedHeaders","parsedHeaders","unparsedHeader","endOfNameIdx","name","value","org.gwtproject.http.client.ResponseImpl.getHeadersAsString","headers","org.gwtproject.http.client.ResponseImpl.getStatusCode","org.gwtproject.http.client.ResponseImpl.getStatusText","org.gwtproject.http.client.ResponseImpl.getText","org.gwtproject.http.client.ResponseImpl.isResponseReady","org.gwtproject.http.client.ResponseImpl.<clinit>"]
+}

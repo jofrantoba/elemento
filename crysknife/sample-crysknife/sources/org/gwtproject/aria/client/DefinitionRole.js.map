@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DefinitionRole.impl.java.js",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MA2BiB,c;;;;QAAA,O;EAAAA,iC;EAAAA;",
+"sources":["DefinitionRole.java"],
+"names":["org.gwtproject.aria.client.DefinitionRole.<clinit>"]
+}

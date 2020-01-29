@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasDataPresenter$ElementIterator.impl.java.js",
+"lineCount":25,
+"mappings":"A;;;;;;;;;;;MA0EmB,e;;;;;;CAOV,sB,CAAoBA,Q;;;;QAPV,O;EAAAC,kC;EAAAA,+B;EAAAA;",
+"sources":["HasDataPresenter.java"],
+"names":["selected","org.gwtproject.user.cellview.client.HasDataPresenter$ElementIterator.<clinit>"]
+}

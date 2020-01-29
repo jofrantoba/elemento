@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"PopupPanel$ResizeAnimation$1.impl.java.js",
+"lineCount":51,
+"mappings":"A;;;;;;;;MA+NkC,E;;;;CAAA,W;EAAAA,Q;EAAAA;iF;;;;;;;QAAA,iE;EAAAC,a;EAAAA,yB;EAAAA,mJ;EAAAA,iB;;;;;;CAAA,2H;EAAAC,6F;EAAAA,kD;;;;;;CAEV,O;EACVC,6J;EACAA,sK;;;;;QAJoB,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["PopupPanel.java"],
+"names":["org.gwtproject.user.client.ui.PopupPanel$ResizeAnimation$1.<synthetic: ctor_js>","org.gwtproject.user.client.ui.PopupPanel$ResizeAnimation$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.PopupPanel$ResizeAnimation$1.<init>","org.gwtproject.user.client.ui.PopupPanel$ResizeAnimation$1.run","org.gwtproject.user.client.ui.PopupPanel$ResizeAnimation$1.<clinit>"]
+}

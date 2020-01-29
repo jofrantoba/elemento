@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AudioElement$$Overlay.impl.java.js",
+"lineCount":36,
+"mappings":"A;;;;MAkCa,Q;;;;QAAA,O;EAAAA,2B;EAAAA,wB;;;;;;;;;;;;;;;;;;AAEX;SAI2B,sDAJ3B,W;AAMA;SAI2B,2DAJ3B,gB;AAMA;SAI2B,2DAJ3B,e;AAMA;SAI2B,2DAJ3B;",
+"sources":["AudioElement.java"],
+"names":["org.gwtproject.dom.client.AudioElement$$Overlay.<clinit>"]
+}

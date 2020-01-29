@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ClippedImageImpl$DraggableTemplate.impl.java.js",
+"lineCount":38,
+"mappings":"A;;;;;;;;;;;;;;MAyCY,iB;;;;;;;;CACC,yF,CAAcA,U,EAAuBC,K;;;;;;QADtC,M;EAAAC,4B;EAAAA,8B;;;;;QAAA,O;EAAAC,oC;EAAAA;",
+"sources":["ClippedImageImpl.java"],
+"names":["clearImage","style","org.gwtproject.user.client.ui.impl.ClippedImageImpl$DraggableTemplate.<synthetic: adapt_lambda>","org.gwtproject.user.client.ui.impl.ClippedImageImpl$DraggableTemplate.<clinit>"]
+}

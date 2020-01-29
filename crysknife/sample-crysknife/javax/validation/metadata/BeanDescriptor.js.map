@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"BeanDescriptor.impl.java.js",
+"lineCount":38,
+"mappings":"A;;;;;;;;;;;;MAwBiB,c;;;;;;CAYP,qB;;;;;;;CAcW,6C,CAAiCA,Y;;;;;;CAO5B,4B;;;;QAjCT,O;EAAAC,iC;EAAAA;",
+"sources":["BeanDescriptor.java"],
+"names":["propertyName","javax.validation.metadata.BeanDescriptor.<clinit>"]
+}

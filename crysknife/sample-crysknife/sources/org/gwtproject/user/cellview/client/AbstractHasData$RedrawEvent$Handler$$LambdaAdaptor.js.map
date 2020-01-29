@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AbstractHasData$RedrawEvent$Handler$$LambdaAdaptor.impl.java.js",
+"lineCount":45,
+"mappings":"A;;;;;;;;;MA4kCyB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sG;EAAAA,4L;;;;;;CAAA,kL;EAAAC,iC;EAAAA,yG;;;;;CAAA,Y;;GAAAC,oH;GAAAA,Y;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["AbstractHasData.java"],
+"names":["org.gwtproject.user.cellview.client.AbstractHasData$RedrawEvent$Handler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.cellview.client.AbstractHasData$RedrawEvent$Handler$$LambdaAdaptor.<init>","org.gwtproject.user.cellview.client.AbstractHasData$RedrawEvent$Handler$$LambdaAdaptor.onRedraw","org.gwtproject.user.cellview.client.AbstractHasData$RedrawEvent$Handler$$LambdaAdaptor.<clinit>"]
+}

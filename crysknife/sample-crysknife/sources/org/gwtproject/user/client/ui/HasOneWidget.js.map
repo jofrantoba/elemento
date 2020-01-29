@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasOneWidget.impl.java.js",
+"lineCount":30,
+"mappings":"A;;;;;;;;;;;MAsBiB,Y;;;;;;CAOR,a;;;;;;CAOF,iD,CAAiBA,C;;;;QAdP,O;EAAAC,+B;EAAAA;",
+"sources":["HasOneWidget.java"],
+"names":["w","org.gwtproject.user.client.ui.HasOneWidget.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"StyleInjector.impl.java.js",
+"lineCount":61,
+"mappings":"A;;;;;;;;;;;MAOa,a;;;;CAAA,W;EAAAA,Q;;;;;;QAED,S;EAAAC,oC;EAAAA,iF;EAAAA,iB;;;;;CAAA,oE;EAAAC,iC;;;;;;;QAGiB,8B,CAAkBC,S;EAAlBC,wB;EACrBA,uD;;;;;;;QAG4B,iC,CAAqBC,Q;EAArBC,wB;EAC5BA,IAAiBC,KAAjBD,yJ;EACAA,oI;EACAA,2B;EACAA,a;;;;;QAbK,O;EAAAE,gC;EAAAA,6B;EAAAA;",
+"sources":["StyleInjector.java"],
+"names":["org.treblereel.gwt.crysknife.templates.client.StyleInjector.<synthetic: ctor_js>","org.treblereel.gwt.crysknife.templates.client.StyleInjector.<synthetic: ctor_create>","org.treblereel.gwt.crysknife.templates.client.StyleInjector.<init>","styleBody","org.treblereel.gwt.crysknife.templates.client.StyleInjector.fromString","contents","org.treblereel.gwt.crysknife.templates.client.StyleInjector.createElement","style","org.treblereel.gwt.crysknife.templates.client.StyleInjector.<clinit>"]
+}

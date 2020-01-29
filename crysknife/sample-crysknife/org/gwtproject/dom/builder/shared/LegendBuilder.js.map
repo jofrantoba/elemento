@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"LegendBuilder.impl.java.js",
+"lineCount":23,
+"mappings":"A;;;;;;;;;MAoBiB,a;;;;;;;CASD,6B,CAAiBA,S;;;;QAThB,O;EAAAC,gC;EAAAA;",
+"sources":["LegendBuilder.java"],
+"names":["accessKey","org.gwtproject.dom.builder.shared.LegendBuilder.<clinit>"]
+}

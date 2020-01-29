@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TimeZoneInfo.impl.java.js",
+"lineCount":69,
+"mappings":"A;;;;;;;;;;;;;MA+Ba,Y;;;;CAgBD,W;EAAAA,uB;EAAAA,Q;EAAAA,wD;;;;;;;QALiB,qC,CAAyBC,I;EAAzBC,uB;EACzBA,2G;;;;;CAIQ,gD;;;;;CAEU,S;EACnBC,+L;;;;;;CAG0B,Y;EACzBC,iM;;;;;;CAGe,qB;EACfC,sN;;;;;;CAG0B,kB;EAC1BC,uM;;;;;QA/BS,O;EAAAC,+B;EAAAA;",
+"sources":["TimeZoneInfo.java"],
+"names":["org.gwtproject.i18n.client.TimeZoneInfo.<init>","json","org.gwtproject.i18n.client.TimeZoneInfo.buildTimeZoneData","org.gwtproject.i18n.client.TimeZoneInfo.getID","org.gwtproject.i18n.client.TimeZoneInfo.getNames","org.gwtproject.i18n.client.TimeZoneInfo.getStandardOffset","org.gwtproject.i18n.client.TimeZoneInfo.getTransitions","org.gwtproject.i18n.client.TimeZoneInfo.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"RangeRole.impl.java.js",
+"lineCount":99,
+"mappings":"A;;;;;;;;;;;;MA4BiB,S;;;;;;;CAOR,4D,CAAgCA,O;;;;;;;CAOhC,4D,CAAgCA,O;;;;;;;CAOhC,4D,CAAgCA,O;;;;;;;CAOhC,6D,CAAiCA,O;;;;;;CAMnC,+D,CAAmCA,O;;;;;;CAMnC,+D,CAAmCA,O;;;;;;CAMnC,+D,CAAmCA,O;;;;;;CAMnC,gE,CAAoCA,O;;;;;;;CAMpC,8E,CAAgCA,O,EAAgBC,K;;;;;;;CAMhD,8E,CAAgCD,O,EAAgBC,K;;;;;;;CAMhD,8E,CAAgCD,O,EAAgBC,K;;;;;;;CAMhD,+E,CAAiCD,O,EAAgBC,K;;;;QA5EvC,O;EAAAC,4B;EAAAA;",
+"sources":["RangeRole.java"],
+"names":["element","value","org.gwtproject.aria.client.RangeRole.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasEditorDelegate.impl.java.js",
+"lineCount":36,
+"mappings":"A;;;;;;;;;;;;;MAsBiB,iB;;;;;;CAOV,0D,CAA8BA,Q;;;;;;;QAPpB,M;EAAAC,4B;EAAAA,iE;;;;;QAAA,O;EAAAC,oC;EAAAA;",
+"sources":["HasEditorDelegate.java"],
+"names":["delegate","org.gwtproject.editor.client.HasEditorDelegate.<synthetic: adapt_lambda>","org.gwtproject.editor.client.HasEditorDelegate.<clinit>"]
+}

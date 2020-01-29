@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TextBoxImpl$HTMLInputElement$$Overlay.impl.java.js",
+"lineCount":11,
+"mappings":"A;;;;MAsEsB,Q;;;;QAAA,O;EAAAA,2B;EAAAA;",
+"sources":["TextBoxImpl.java"],
+"names":["org.gwtproject.user.client.ui.impl.TextBoxImpl$HTMLInputElement$$Overlay.<clinit>"]
+}

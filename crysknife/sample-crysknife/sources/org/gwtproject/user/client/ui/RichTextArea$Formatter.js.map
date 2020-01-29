@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"RichTextArea$Formatter.impl.java.js",
+"lineCount":224,
+"mappings":"A;;;;;;;;;;;;MAuVmB,S;;;;;;;CAMV,8B,CAAkBA,G;;;;;;;CAOhB,gB;;;;;;;CAOA,gB;;;;;;CAKF,wB;;;;;;CAOA,8B,CAA8BC,I;;;;;;;CAO9B,+B,CAAmBD,G;;;;;;CAKnB,qB;;;;;;CAKA,uB;;;;;;;CAOG,U;;;;;;;CAOA,Y;;;;;;;CAOA,mB;;;;;;;CAOA,e;;;;;;;CAOA,iB;;;;;;;CAOA,gB;;;;;;CAKH,c;;;;;CAKA,Q;;;;;;CAKA,gB;;;;;;CAKA,c;;;;;;CAKA,e;;;;;;CAKA,a;;;;;;;CAOA,gC,CAAoBE,K;;;;;;;CAOpB,+B,CAAmBC,I;;;;;;;CAOnB,kE,CAAqBC,Q;;;;;;;CAOrB,gC,CAAoBF,K;;;;;;;CAOpB,4E,CAA+BG,a;;;;;;CAK/B,c;;;;;;CAKA,gB;;;;;;CAKA,uB;;;;;;CAKA,mB;;;;;;CAKA,qB;;;;;;CAKA,mB;;;;;CAKA,Q;;;;QA/LU,O;EAAAC,4B;EAAAA;",
+"sources":["RichTextArea.java"],
+"names":["url","html","color","name","fontSize","justification","org.gwtproject.user.client.ui.RichTextArea$Formatter.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ScriptBuilder.impl.java.js",
+"lineCount":69,
+"mappings":"A;;;;;;;;;MAsBiB,a;;;;;;;CAWD,yB,CAAaA,K;;;;;;;CASb,uB,CAAiCC,G;;;;;;;CASjC,wB,CAAYC,I;;;;QA7BX,O;EAAAC,gC;EAAAA,6B;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAEf;cAAO,mEAAP;",
+"sources":["ScriptBuilder.java"],
+"names":["defer","src","type","org.gwtproject.dom.builder.shared.ScriptBuilder.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HTMLAnchorElementInfo.impl.java.js",
+"lineCount":35,
+"mappings":"A;;;;;MAIa,qB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,gC;EAAAA,4C;EAAAA,0D;EAAAA,iB;;;;;CAAA,6C;EAAAC,iC;;;;;QAAA,O;EAAAC,wC;EAAAA,qC;EAAAA;",
+"sources":["HTMLAnchorElementInfo.java"],
+"names":["elemental2.dom.HTMLAnchorElementInfo.<synthetic: ctor_js>","elemental2.dom.HTMLAnchorElementInfo.<synthetic: ctor_create>","elemental2.dom.HTMLAnchorElementInfo.<init>","elemental2.dom.HTMLAnchorElementInfo.<clinit>"]
+}

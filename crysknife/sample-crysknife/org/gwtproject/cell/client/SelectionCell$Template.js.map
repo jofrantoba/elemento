@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SelectionCell$Template.impl.java.js",
+"lineCount":75,
+"mappings":"A;;;;;;;;;;;;MAkCY,Q;;;;;;;CAIC,8B,CAAkBA,M;;;;;;;CAElB,4B,CAAgBA,M;;;;;QAJzB,iE;EAAAC,qG;;;;;QAFQ,O;EAAAC,2B;EAAAA,wB;EAERA,kH;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFQ;;",
+"sources":["SelectionCell.java"],
+"names":["option","org.gwtproject.cell.client.SelectionCell$Template.<synthetic: getter>","org.gwtproject.cell.client.SelectionCell$Template.<clinit>"]
+}

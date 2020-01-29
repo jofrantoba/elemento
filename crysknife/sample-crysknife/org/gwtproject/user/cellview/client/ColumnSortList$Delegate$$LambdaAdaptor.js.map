@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ColumnSortList$Delegate$$LambdaAdaptor.impl.java.js",
+"lineCount":45,
+"mappings":"A;;;;;;;;;MAwGmB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;0F;EAAAA,oK;;;;;;CAAA,0J;EAAAC,iC;EAAAA,6F;;;;;CAAA,kB;;GAAAC,wG;GAAAA,Y;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["ColumnSortList.java"],
+"names":["org.gwtproject.user.cellview.client.ColumnSortList$Delegate$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.cellview.client.ColumnSortList$Delegate$$LambdaAdaptor.<init>","org.gwtproject.user.cellview.client.ColumnSortList$Delegate$$LambdaAdaptor.onModification","org.gwtproject.user.cellview.client.ColumnSortList$Delegate$$LambdaAdaptor.<clinit>"]
+}

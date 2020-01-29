@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AlertdialogRole.impl.java.js",
+"lineCount":18,
+"mappings":"A;;;;;;;;;;;MA2BiB,e;;;;QAAA,O;EAAAA,kC;EAAAA;",
+"sources":["AlertdialogRole.java"],
+"names":["org.gwtproject.aria.client.AlertdialogRole.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AlternateMessageSelector$AlternateForm.impl.java.js",
+"lineCount":153,
+"mappings":"A;;;;;;;;;;;;;;MA+BsB,a;;;;CAAA,W;EAAAA,Q;EAAAA;OAEG,0EAFHA,C;EAAAA;OAGG,iFAHHA,C;EAAAA;OAII,mFAJJA,S;;;;;;;;;QAYX,2C,CAAqBC,I,EAAaC,W;EAAlCC,wB;EAAAA,oC;EAAAA,0I;EAAAA,iB;;;;;;;;CAAA,4G,CAAqBF,I,EAAaC,W;EACvCE,oJ;;;;;;;;;;QAYK,oD,CAAqBH,I,EAAaC,W,EAC7BG,a;EADLF,wB;EAAAA,oC;EAAAA,kK;EAAAA,iB;;;;;;;;;CAAA,qH,CAAqBF,I,EAAaC,W,EAC7BG,a;EADLD,iC;EAELA,uF;EACAA,qG;EACAA,yG;;;;;;;CAGS,8E,CAAwBE,C;EACjCC,iO;;;;;;;;CAIa,M,CAAcC,G;EAC3BC;GACEA,YADFA;G;EAGAA;GACEA,aADFA;G;EAGAA,8J;;;;;;CAOY,kB;EACZC,8F;;;;;;CAMY,W;EACZC,uF;;;;;;CAOa,oB;EACbC,gG;;;;;;;CAIS,Q;EACTC,gI;;;;;;;CAIY,Q;EACZC,uF;;;;;;;;;CA7EgB,6B;EAAAP,0J;;;;;QAAA,O;EAAAQ,gC;EAAAA,6B;EAAAA;",
+"sources":["AlternateMessageSelector.java"],
+"names":["org.gwtproject.i18n.shared.AlternateMessageSelector$AlternateForm.<synthetic: ctor_js>","name","description","org.gwtproject.i18n.shared.AlternateMessageSelector$AlternateForm.<synthetic: ctor_create>","org.gwtproject.i18n.shared.AlternateMessageSelector$AlternateForm.<init>","warnIfMissing","o","org.gwtproject.i18n.shared.AlternateMessageSelector$AlternateForm.compareTo","obj","org.gwtproject.i18n.shared.AlternateMessageSelector$AlternateForm.equals","org.gwtproject.i18n.shared.AlternateMessageSelector$AlternateForm.getDescription","org.gwtproject.i18n.shared.AlternateMessageSelector$AlternateForm.getName","org.gwtproject.i18n.shared.AlternateMessageSelector$AlternateForm.getWarnIfMissing","org.gwtproject.i18n.shared.AlternateMessageSelector$AlternateForm.hashCode","org.gwtproject.i18n.shared.AlternateMessageSelector$AlternateForm.toString","org.gwtproject.i18n.shared.AlternateMessageSelector$AlternateForm.<clinit>"]
+}

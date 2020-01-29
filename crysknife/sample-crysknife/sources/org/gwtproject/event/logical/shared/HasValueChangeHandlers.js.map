@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasValueChangeHandlers.impl.java.js",
+"lineCount":27,
+"mappings":"A;;;;;;;;;;;;;MAyBiB,sB;;;;;;;CAOK,+E,CAA4CA,O;;;;QAPjD,O;EAAAC,yC;EAAAA;",
+"sources":["HasValueChangeHandlers.java"],
+"names":["handler","org.gwtproject.event.logical.shared.HasValueChangeHandlers.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ColumnSortList$Delegate.impl.java.js",
+"lineCount":30,
+"mappings":"A;;;;;;;;;MAwGmB,Q;;;;;CAKV,kB;;;;;;QALU,M;EAAAA,mB;EAAAA,8B;;;;;QAAA,O;EAAAC,2B;EAAAA;",
+"sources":["ColumnSortList.java"],
+"names":["org.gwtproject.user.cellview.client.ColumnSortList$Delegate.<synthetic: adapt_lambda>","org.gwtproject.user.cellview.client.ColumnSortList$Delegate.<clinit>"]
+}

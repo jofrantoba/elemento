@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SimpleBeanEditorDelegate.impl.java.js",
+"lineCount":41,
+"mappings":"A;;;;;;;;;;;;;MA0BsB,wB;;;;CAAA,W;EAAAA,Q;;;;;CAAA,mE;EAAAC,yE;;;;;;;CAIO,a;EACzBC,Y;;;;;QALkB,O;EAAAC,2C;EAAAA,wC;EAAAA;",
+"sources":["SimpleBeanEditorDelegate.java"],
+"names":["org.gwtproject.editor.client.impl.SimpleBeanEditorDelegate.<synthetic: ctor_js>","org.gwtproject.editor.client.impl.SimpleBeanEditorDelegate.<init>","org.gwtproject.editor.client.impl.SimpleBeanEditorDelegate.subscribe","org.gwtproject.editor.client.impl.SimpleBeanEditorDelegate.<clinit>"]
+}

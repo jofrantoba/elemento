@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasLoadHandlers.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;MAuBiB,e;;;;;;;CAQK,6D,CAA2BA,O;;;;QARhC,O;EAAAC,kC;EAAAA;",
+"sources":["HasLoadHandlers.java"],
+"names":["handler","org.gwtproject.event.dom.client.HasLoadHandlers.<clinit>"]
+}

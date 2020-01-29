@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TextContentBuilder.impl.java.js",
+"lineCount":66,
+"mappings":"A;;;;;;;;;;;;;;MAoBa,kB;;;;CAAA,W;EAAAA,Q;;;;;;;;QAGF,mC,CAAqBC,O;EAArBC,6B;EAAAA,yC;EAAAA,4F;EAAAA,iB;;;;;;CAAA,wE,CAAqBD,O;EACxBE,mF;;;;;;;CAIyB,Q;EACzBC,Y;;;;;;;;;CATK,+B;EAAAC,+K;;;;;QAAA,O;EAAAC,qC;EAAAA,kC;EAAAA,yB;EAAAA;",
+"sources":["TextContentBuilder.java"],
+"names":["org.jboss.elemento.TextContentBuilder.<synthetic: ctor_js>","element","org.jboss.elemento.TextContentBuilder.<synthetic: ctor_create>","org.jboss.elemento.TextContentBuilder.<init>","org.jboss.elemento.TextContentBuilder.that","org.jboss.elemento.TextContentBuilder.textContent","org.jboss.elemento.TextContentBuilder.<clinit>"]
+}

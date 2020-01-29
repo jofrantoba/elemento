@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CellBrowser$ScrollAnimation.impl.java.js",
+"lineCount":81,
+"mappings":"A;;;;;;;;;;MA4tBgB,e;;;;CAAA,W;EAAAA,Q;EAAAA;sF;EAAAA;OAKA,mFALAA,K;EAAAA;OAUA,oFAVAA,K;;;;;;;QAAA,wD;EAAAC,0B;EAAAA,sC;EAAAA,+I;EAAAA,iB;;;;;;CAAA,uH;EAAAC,kG;EAAAA,0D;;;;;;CAaG,c;EACbC,2Q;;;;;;;CAIa,kB,CAAgBC,Q;EAC7BC,IAAIC,IAAJD,wL;EACAA,8T;;;;;CAGG,uD;EACHE,IAAQC,IAARD,wG;EACAA,sP;EACAA;GACEA,gGADFA;G;EAIAA;GAEEA,sKAFFA;GAGEA,8DAHFA;;GAMEA,sBANFA;G;;;;;QA9BU,O;EAAAE,kC;EAAAA,+B;EAAAA;",
+"sources":["CellBrowser.java"],
+"names":["org.gwtproject.user.cellview.client.CellBrowser$ScrollAnimation.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.CellBrowser$ScrollAnimation.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.CellBrowser$ScrollAnimation.<init>","org.gwtproject.user.cellview.client.CellBrowser$ScrollAnimation.onComplete","progress","org.gwtproject.user.cellview.client.CellBrowser$ScrollAnimation.onUpdate","diff","org.gwtproject.user.cellview.client.CellBrowser$ScrollAnimation.scrollToEnd","elem","org.gwtproject.user.cellview.client.CellBrowser$ScrollAnimation.<clinit>"]
+}

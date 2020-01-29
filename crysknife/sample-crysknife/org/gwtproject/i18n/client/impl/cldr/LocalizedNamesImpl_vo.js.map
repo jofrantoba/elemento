@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"LocalizedNamesImpl_vo.impl.java.js",
+"lineCount":70,
+"mappings":"A;;;;;;;;MAsBa,sB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,iC;EAAAA,6C;EAAAA,gF;EAAAA,iB;;;;;CAAA,mE;EAAAC,wE;;;;;;;CAGK,yB;EACdC,umD;;;;;;CA2Qa,e;EACbC,wB;EACAA,iG;EACAA,gG;EACAA,+F;EACAA,gG;EACAA,gG;EACAA,2G;EACAA,iG;EACAA,+F;EACAA,+F;EACAA,kG;EACAA,8F;EACAA,qG;EACAA,gG;EACAA,iG;EACAA,iG;EACAA,8F;EACAA,kG;;;;;QAjSS,O;EAAAC,yC;EAAAA,sC;EAAAA;",
+"sources":["LocalizedNamesImpl_vo.java"],
+"names":["org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_vo.<synthetic: ctor_js>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_vo.<synthetic: ctor_create>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_vo.<init>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_vo.loadSortedRegionCodes","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_vo.loadNameMap","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_vo.<clinit>"]
+}

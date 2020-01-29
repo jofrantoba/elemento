@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HandlerManager$Bus$Command.impl.java.js",
+"lineCount":30,
+"mappings":"A;;;;;;;;;MAmW0B,O;;;;;CAET,W;;;;;;QAFS,M;EAAAA,kB;EAAAA,8B;;;;;QAAA,O;EAAAC,0B;EAAAA;",
+"sources":["HandlerManager.java"],
+"names":["org.gwtproject.event.shared.HandlerManager$Bus$Command.<synthetic: adapt_lambda>","org.gwtproject.event.shared.HandlerManager$Bus$Command.<clinit>"]
+}

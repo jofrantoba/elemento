@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"MouseEvent.impl.java.js",
+"lineCount":111,
+"mappings":"A;;;;;;;;;;;;;;;;MA0BsB,U;;;;CAAA,W;EAAAA,Q;;;;;CAAA,mD;EAAAC,gE;;;;;;CAWT,mB;EACTC,uG;;;;;;CAQS,c;EACTC,wG;;;;;;CAQS,c;EACTC,wG;;;;;;CAQS,Q;EACTC,IAAQC,YAARD,iC;EACAA;GACEA,4EADFA;G;EAGAA,6B;;;;;;;CASS,iD,CAAqBE,M;EAC9BC,IAAYC,CAAZD,6B;EACAA,uW;;;;;;CAWS,c;EACTE,wG;;;;;;CAQS,Q;EACTC,IAAQL,YAARK,iC;EACAA;GACEA,4EADFA;G;EAGAA,6B;;;;;;;CASS,iD,CAAqBJ,M;EAC9BK,IAAYH,CAAZG,6B;EACAA,oW;;;;;;CAWS,c;EACTC,wG;;;;;QAtGkB,O;EAAAC,6B;EAAAA,0B;EAAAA;",
+"sources":["MouseEvent.java"],
+"names":["org.gwtproject.event.dom.client.MouseEvent.<synthetic: ctor_js>","org.gwtproject.event.dom.client.MouseEvent.<init>","org.gwtproject.event.dom.client.MouseEvent.getNativeButton","org.gwtproject.event.dom.client.MouseEvent.getScreenX","org.gwtproject.event.dom.client.MouseEvent.getScreenY","org.gwtproject.event.dom.client.MouseEvent.getX","relativeElem","target","org.gwtproject.event.dom.client.MouseEvent.getRelativeX","e","org.gwtproject.event.dom.client.MouseEvent.getClientX","org.gwtproject.event.dom.client.MouseEvent.getY","org.gwtproject.event.dom.client.MouseEvent.getRelativeY","org.gwtproject.event.dom.client.MouseEvent.getClientY","org.gwtproject.event.dom.client.MouseEvent.<clinit>"]
+}

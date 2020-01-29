@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasAllDragAndDropHandlers.impl.java.js",
+"lineCount":28,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;MAwBiB,yB;;;;QAAA,O;EAAAA,4C;EAAAA;",
+"sources":["HasAllDragAndDropHandlers.java"],
+"names":["org.gwtproject.event.dom.client.HasAllDragAndDropHandlers.<clinit>"]
+}

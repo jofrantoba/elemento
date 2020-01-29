@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Window$ScrollHandler$$LambdaAdaptor.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;MAgcmB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qF;EAAAA,0J;;;;;;CAAA,gJ;EAAAC,iC;EAAAA,wF;;;;;;CAAA,sE;;GAAAC,mG;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["Window.java"],
+"names":["org.gwtproject.user.window.client.Window$ScrollHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.window.client.Window$ScrollHandler$$LambdaAdaptor.<init>","org.gwtproject.user.window.client.Window$ScrollHandler$$LambdaAdaptor.onWindowScroll","org.gwtproject.user.window.client.Window$ScrollHandler$$LambdaAdaptor.<clinit>"]
+}

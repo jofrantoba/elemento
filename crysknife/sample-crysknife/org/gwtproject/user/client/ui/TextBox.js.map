@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TextBox.impl.java.js",
+"lineCount":141,
+"mappings":"A;;;;;;;;;;;;;;;MAiDa,O;;;;CAAA,W;EAAAA,Q;;;;;;;QAYW,yC,CAAaC,O;EAAbC,kB;EAEpBA,8J;EAEAA,IAAQC,OAARD,+D;EAGAA,uB;EACAA,+E;EAEAA,e;;;;;;;QAMK,S;EAAAE,kB;EAAAA,8B;EAAAA,2D;EAAAA,iB;;;;;;CAAA,8C;EACLC,4O;;;;;;;;QAUQ,0C,CAAgBJ,O;EAAhBG,kB;EAAAA,8B;EAAAA,mG;EAAAA,iB;;;;;;;CAAA,+E,CAAgBH,O;EACxBI,kG;EACAA,yK;;;;;;;;;QAGF,4D,CAAgBJ,O,EAAgBK,S;EAAhCF,kB;EAAAA,8B;EAAAA,gI;EAAAA,iB;;;;;;;;CAAA,iG,CAAgBH,O,EAAgBK,S;EAC9BD,kG;EACAA;GACEA,iDADFA;G;;;;;;CAUS,gB;EACTE,qF;;;;;;CAQS,oB;EACTC,gF;;;;;;CAQU,mB,CAAiBC,M;EAC3BC,uF;;;;;;CAQU,uB,CAAqBD,M;EAC/BE,kF;;;;;;CAGmB,4D;EACnBC,0F;;;;;QAxFS,O;EAAAC,0B;EAAAA,uB;EAAAA;",
+"sources":["TextBox.java"],
+"names":["org.gwtproject.user.client.ui.TextBox.<synthetic: ctor_js>","element","org.gwtproject.user.client.ui.TextBox.wrap","textBox","org.gwtproject.user.client.ui.TextBox.<synthetic: ctor_create>","org.gwtproject.user.client.ui.TextBox.<init>","styleName","org.gwtproject.user.client.ui.TextBox.getMaxLength","org.gwtproject.user.client.ui.TextBox.getVisibleLength","length","org.gwtproject.user.client.ui.TextBox.setMaxLength","org.gwtproject.user.client.ui.TextBox.setVisibleLength","org.gwtproject.user.client.ui.TextBox.getInputElement","org.gwtproject.user.client.ui.TextBox.<clinit>"]
+}

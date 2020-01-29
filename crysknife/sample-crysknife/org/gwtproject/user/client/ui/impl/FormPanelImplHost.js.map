@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"FormPanelImplHost.impl.java.js",
+"lineCount":25,
+"mappings":"A;;;;;;;MAqBiB,iB;;;;;;CAOP,gB;;;;;CAKH,e;;;;QAZU,O;EAAAA,oC;EAAAA;",
+"sources":["FormPanelImplHost.java"],
+"names":["org.gwtproject.user.client.ui.impl.FormPanelImplHost.<clinit>"]
+}

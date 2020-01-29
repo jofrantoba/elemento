@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Localizable.impl.java.js",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MAyBiB,sC;;;;QAAA,O;EAAAA,yD;EAAAA;",
+"sources":["Localizable.java"],
+"names":["org.gwtproject.i18n.client.Localizable.<clinit>"]
+}

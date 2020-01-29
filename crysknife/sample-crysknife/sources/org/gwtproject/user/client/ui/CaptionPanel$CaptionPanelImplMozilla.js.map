@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CaptionPanel$CaptionPanelImplMozilla.impl.java.js",
+"lineCount":63,
+"mappings":"A;;;;;;;;;;MAuEsB,uB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,kC;EAAAA,8C;EAAAA,wF;EAAAA,iB;;;;;CAAA,2E;EAAAC,4E;;;;;;;;;CAEN,mI,CACcC,Q,EAAkBC,M,EAAiBC,O;EAC3DC,2K;;;;;;;;;;CAIU,qH,CACcH,Q,EACdC,M,EACWC,O,EACXE,M;EACVD,wI;EACAA,+J;EACAA,oI;;;;;QAfgB,O;EAAAE,0C;EAAAA,uC;EAAAA;",
+"sources":["CaptionPanel.java"],
+"names":["org.gwtproject.user.client.ui.CaptionPanel$CaptionPanelImplMozilla.<synthetic: ctor_js>","org.gwtproject.user.client.ui.CaptionPanel$CaptionPanelImplMozilla.<synthetic: ctor_create>","org.gwtproject.user.client.ui.CaptionPanel$CaptionPanelImplMozilla.<init>","fieldset","legend","caption","org.gwtproject.user.client.ui.CaptionPanel$CaptionPanelImplMozilla.setCaption","asHTML","org.gwtproject.user.client.ui.CaptionPanel$CaptionPanelImplMozilla.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Layout$AnimationCallback.impl.java.js",
+"lineCount":28,
+"mappings":"A;;;;;;;;;MA6cmB,iB;;;;;CAMV,uB;;;;;;;CAOA,6D,CAAeA,K,EAAcC,Q;;;;QAbnB,O;EAAAC,oC;EAAAA;",
+"sources":["Layout.java"],
+"names":["layer","progress","org.gwtproject.layout.client.Layout$AnimationCallback.<clinit>"]
+}

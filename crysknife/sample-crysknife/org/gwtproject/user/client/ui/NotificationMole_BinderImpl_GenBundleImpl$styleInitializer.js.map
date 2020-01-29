@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NotificationMole_BinderImpl_GenBundleImpl$styleInitializer.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;MAoCuB,gB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,uC;EAAAA,8G;EAAAA,iB;;;;;CAAA,iG;EAAAC,iC;;;;;;QAI2D,O;EAAAC,2B;EAC5EA,qI;;;;;QALiB,O;EAAAC,mC;EAAAA,gC;EAAAA,qB;EAEjBA;",
+"sources":["NotificationMole_BinderImpl_GenBundleImpl.java"],
+"names":["org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundleImpl$styleInitializer.<synthetic: ctor_js>","org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundleImpl$styleInitializer.<synthetic: ctor_create>","org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundleImpl$styleInitializer.<init>","org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundleImpl$styleInitializer.get","org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundleImpl$styleInitializer.<clinit>"]
+}

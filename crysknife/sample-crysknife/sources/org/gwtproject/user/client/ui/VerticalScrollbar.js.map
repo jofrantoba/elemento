@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"VerticalScrollbar.impl.java.js",
+"lineCount":32,
+"mappings":"A;;;;;;;;;;;;;MAsBiB,iB;;;;;;CAaX,mB;;;;;;CAYC,sB,CAAoBA,M;;;;QAzBV,O;EAAAC,oC;EAAAA;",
+"sources":["VerticalScrollbar.java"],
+"names":["height","org.gwtproject.user.client.ui.VerticalScrollbar.<clinit>"]
+}

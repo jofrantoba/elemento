@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"InlineHTML.impl.java.js",
+"lineCount":190,
+"mappings":"A;;;;;;;;;;;;;;MAiDa,U;;;;CAAA,W;EAAAA,Q;;;;;;;QAYc,yC,CAAaC,O;EAAbC,qB;EAEvBA,8J;EAEAA,IAAWC,IAAXD,kE;EAGAA,oB;EACAA,4E;EAEAA,Y;;;;;;;QAMK,S;EAAAE,qB;EAAAA,iC;EAAAA,8D;EAAAA,iB;;;;;;CAAA,iD;EACLC,mM;EACAA,wD;;;;;;;;QAQK,gD,CAAoBF,I;EAApBC,qB;EAAAA,iC;EAAAA,yG;EAAAA,iB;;;;;;;CAAA,wF,CAAoBD,I;EACzBE,4F;;;;;;;;;QAWK,mG,CAAoBF,I,EAAgBG,G;EAApCF,qB;EAAAA,iC;EAAAA,iK;EAAAA,iB;;;;;;;;CAAA,2I,CAAoBD,I,EAAgBG,G;EACzCD,oJ;;;;;;;;;QAYK,+F,CAAoBF,I,EAAyBI,kB;EAA7CH,qB;EAAAA,iC;EAAAA,4K;EAAAA,iB;;;;;;;;CAAA,uI,CAAoBD,I,EAAyBI,kB;EAClDF,yD;EACAA,gG;EACAA,8D;;;;;;;;QAQK,yB,CAA8BF,I;EAA9BC,qB;EAAAA,iC;EAAAA,kF;EAAAA,iB;;;;;;;CAAA,iE,CAA8BD,I;EACnCE,yD;EACAA,uC;;;;;;;;;QAWK,4E,CAA8BF,I,EAAgBG,G;EAA9CF,qB;EAAAA,iC;EAAAA,0I;EAAAA,iB;;;;;;;;CAAA,oH,CAA8BD,I,EAAgBG,G;EACnDD,yD;EACAA,+F;;;;;;;;QASQ,0C,CAAmBJ,O;EAAnBG,qB;EAAAA,iC;EAAAA,sG;EAAAA,iB;;;;;;;CAAA,kF,CAAmBH,O;EAG3BI,2F;;;;;QArGS,O;EAAAG,6B;EAAAA,0B;EAAAA;",
+"sources":["InlineHTML.java"],
+"names":["org.gwtproject.user.client.ui.InlineHTML.<synthetic: ctor_js>","element","org.gwtproject.user.client.ui.InlineHTML.wrap","html","org.gwtproject.user.client.ui.InlineHTML.<synthetic: ctor_create>","org.gwtproject.user.client.ui.InlineHTML.<init>","dir","directionEstimator","org.gwtproject.user.client.ui.InlineHTML.<clinit>"]
+}

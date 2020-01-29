@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DocumentRole.impl.java.js",
+"lineCount":39,
+"mappings":"A;;;;;;;;;;;;MA4BiB,Y;;;;;;;CAOR,yD,CAA6BA,O;;;;;;CAM/B,4D,CAAgCA,O;;;;;;;CAMhC,mG,CAA6BA,O,EAAuBC,K;;;;QAnB1C,O;EAAAC,+B;EAAAA;",
+"sources":["DocumentRole.java"],
+"names":["element","value","org.gwtproject.aria.client.DocumentRole.<clinit>"]
+}

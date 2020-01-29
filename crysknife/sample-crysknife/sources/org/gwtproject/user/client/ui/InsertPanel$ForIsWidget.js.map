@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"InsertPanel$ForIsWidget.impl.java.js",
+"lineCount":33,
+"mappings":"A;;;;;;;;;;;;;MAyBY,uB;;;;;;CACH,6C,CAAaA,C;;;;;;;CAEb,qD,CAAgBA,C,EAAOC,W;;;;QAHpB,O;EAAAC,0C;EAAAA;",
+"sources":["InsertPanel.java"],
+"names":["w","beforeIndex","org.gwtproject.user.client.ui.InsertPanel$ForIsWidget.<clinit>"]
+}

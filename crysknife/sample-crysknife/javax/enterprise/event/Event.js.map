@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Event.impl.java.js",
+"lineCount":33,
+"mappings":"A;;;;;;;;;;MAEiB,K;;;;;;CAER,wB,CAAOA,I;;;;;;;QAFC,M;EAAAC,gB;EAAAA,iE;;;;;QAAA,O;EAAAC,wB;EAAAA;",
+"sources":["Event.java"],
+"names":["var1","javax.enterprise.event.Event.<synthetic: adapt_lambda>","javax.enterprise.event.Event.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Renderer.impl.java.js",
+"lineCount":31,
+"mappings":"A;;;;;;;;;;MAIiB,Q;;;;;;;CACN,0B,CAASA,I;;;;;;;CAEX,gD,CAASA,I,EAAiBC,I;;;;QAHlB,O;EAAAC,2B;EAAAA;",
+"sources":["Renderer.java"],
+"names":["var1","var2","org.gwtproject.text.shared.Renderer.<clinit>"]
+}

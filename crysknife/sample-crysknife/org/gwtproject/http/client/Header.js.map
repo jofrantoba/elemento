@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Header.impl.java.js",
+"lineCount":40,
+"mappings":"A;;;;;;;;MAkBsB,M;;;;CAAA,W;EAAAA,Q;;;;;CAAA,0C;EAAAC,iC;;;;;;;CAMG,W;;;;;;CAOA,Y;;;;QAbH,O;EAAAC,yB;EAAAA,sB;EAAAA;",
+"sources":["Header.java"],
+"names":["org.gwtproject.http.client.Header.<synthetic: ctor_js>","org.gwtproject.http.client.Header.<init>","org.gwtproject.http.client.Header.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TouchMoveHandler$$LambdaAdaptor.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;MAoBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;+E;EAAAA,8I;;;;;;CAAA,oI;EAAAC,iC;EAAAA,kF;;;;;;CAAA,6D;;GAAAC,6F;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["TouchMoveHandler.java"],
+"names":["org.gwtproject.event.dom.client.TouchMoveHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.dom.client.TouchMoveHandler$$LambdaAdaptor.<init>","org.gwtproject.event.dom.client.TouchMoveHandler$$LambdaAdaptor.onTouchMove","org.gwtproject.event.dom.client.TouchMoveHandler$$LambdaAdaptor.<clinit>"]
+}

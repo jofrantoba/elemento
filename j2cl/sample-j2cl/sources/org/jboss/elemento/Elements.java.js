@@ -62,6 +62,7 @@ goog.require('java.lang.String');
 goog.require('java.util.ArrayList');
 goog.require('java.util.Collections');
 goog.require('java.util.Iterator');
+goog.require('java.util.List');
 goog.require('java.util.Objects');
 goog.require('java.util.Spliterator');
 goog.require('java.util.Spliterators');

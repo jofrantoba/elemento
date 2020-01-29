@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SplitLayoutPanel$Splitter$1.impl.java.js",
+"lineCount":54,
+"mappings":"A;;;;;;;;;;;MA8P+C,E;;;;CAAA,W;EAAAA,Q;EAAAA;gF;;;;;;;QAAA,gE;EAAAC,a;EAAAA,yB;EAAAA,iJ;EAAAA,iB;;;;;;CAAA,yH;EAAAC,4F;EAAAA,iC;;;;;;CAEzB,W;EACVC,+J;EACAA,uK;;;;;QAJmC,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["SplitLayoutPanel.java"],
+"names":["org.gwtproject.user.client.ui.SplitLayoutPanel$Splitter$1.<synthetic: ctor_js>","org.gwtproject.user.client.ui.SplitLayoutPanel$Splitter$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.SplitLayoutPanel$Splitter$1.<init>","org.gwtproject.user.client.ui.SplitLayoutPanel$Splitter$1.execute","org.gwtproject.user.client.ui.SplitLayoutPanel$Splitter$1.<clinit>"]
+}

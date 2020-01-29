@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"RowCountChangeEvent.impl.java.js",
+"lineCount":150,
+"mappings":"A;;;;;;;;;;;;;;;MAuBa,mB;;;;CAAA,W;EAAAA,Q;EAAAA;OA+CO,2DA/CPA,K;EAAAA;OAgDW,0DAhDXA,S;;;;;;;;QA4BQ,wD,CAAwCC,M,EAAYC,Q,EAAkBC,O;EAAtEC,8B;EACjBA;GACEA,IAAoBC,KAApBD,gEADFA;GAEEA,6DAFFA;G;;;;;;QAW0B,W;EAAAE,8B;EAC1BA;GACEA,8HADFA;G;EAGAA,mF;;;;;;;;QAYQ,qB,CAAwBJ,Q,EAAkBC,O;EAA1CI,8B;EAAAA,0C;EAAAA,iG;EAAAA,iB;;;;;;;CAAA,mE,CAAwBL,Q,EAAkBC,O;EAA1CK,kD;EACRA,4E;EACAA,0E;;;;;;;CAIyB,qB;EACzBC,mF;;;;;;CAQS,kB;EACTC,wE;;;;;;CAQa,sB;EACbC,uE;;;;;;;CAIY,iB;EACZC,qG;;;;;;CAIa,kE,CAAiBC,O;EAC9BC,iF;;;;;;;;CA3FS,4B;EAAAA,2H;;;;;QAAA,O;EAAAC,sC;EAAAA,mC;EAAAA,gB;;;;;;;;;;;;;;;;;;;;;;;;AAAA;oBAKwB,uDALxB;",
+"sources":["RowCountChangeEvent.java"],
+"names":["org.gwtproject.view.client.RowCountChangeEvent.<synthetic: ctor_js>","source","rowCount","isExact","org.gwtproject.view.client.RowCountChangeEvent.fire","event","org.gwtproject.view.client.RowCountChangeEvent.getType","org.gwtproject.view.client.RowCountChangeEvent.<synthetic: ctor_create>","org.gwtproject.view.client.RowCountChangeEvent.<init>","org.gwtproject.view.client.RowCountChangeEvent.getAssociatedType","org.gwtproject.view.client.RowCountChangeEvent.getNewRowCount","org.gwtproject.view.client.RowCountChangeEvent.isNewRowCountExact","org.gwtproject.view.client.RowCountChangeEvent.toDebugString","handler","org.gwtproject.view.client.RowCountChangeEvent.dispatch","org.gwtproject.view.client.RowCountChangeEvent.<clinit>"]
+}

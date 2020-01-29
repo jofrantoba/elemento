@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Constants$DefaultDoubleValue.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;MA+PoB,kB;;;;;;CAChB,S;;;;QADgB,O;EAAAA,qC;EAAAA;",
+"sources":["Constants.java"],
+"names":["org.gwtproject.i18n.client.Constants$DefaultDoubleValue.<clinit>"]
+}

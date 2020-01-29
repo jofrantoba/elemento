@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"GestureChangeHandler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;MAoBiB,oB;;;;;;CAOV,qE,CAAmCA,K;;;;;;QAPzB,M;EAAAC,+B;EAAAA,8B;;;;;QAAA,O;EAAAC,uC;EAAAA;",
+"sources":["GestureChangeHandler.java"],
+"names":["event","org.gwtproject.event.dom.client.GestureChangeHandler.<synthetic: adapt_lambda>","org.gwtproject.event.dom.client.GestureChangeHandler.<clinit>"]
+}

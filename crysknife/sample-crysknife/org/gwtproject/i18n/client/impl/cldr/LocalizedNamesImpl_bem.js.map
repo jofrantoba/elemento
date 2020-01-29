@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"LocalizedNamesImpl_bem.impl.java.js",
+"lineCount":61,
+"mappings":"A;;;;;;;;MAsBa,uB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,kC;EAAAA,8C;EAAAA,iF;EAAAA,iB;;;;;CAAA,oE;EAAAC,wE;;;;;;;CAGK,yB;EACdC,yE;;;;;;;CAMc,yB;EACdC,umD;;;;;;CA2Qa,e;EACbC,wB;;;;;QAvRS,O;EAAAC,0C;EAAAA,uC;EAAAA;",
+"sources":["LocalizedNamesImpl_bem.java"],
+"names":["org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_bem.<synthetic: ctor_js>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_bem.<synthetic: ctor_create>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_bem.<init>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_bem.loadLikelyRegionCodes","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_bem.loadSortedRegionCodes","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_bem.loadNameMap","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_bem.<clinit>"]
+}

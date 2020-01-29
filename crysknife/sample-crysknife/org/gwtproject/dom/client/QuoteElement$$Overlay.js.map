@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"QuoteElement$$Overlay.impl.java.js",
+"lineCount":99,
+"mappings":"A;;;;;;;;;;;;;MAgCa,qB;;;;;;QAYgB,uC,CAAWA,I;EAAXC,gC;EACzBA,sF;EACAA,sE;;;;;;;QASoB,iD,CAAoBC,C;EAApBC,gC;EACpBA;GACEA,qHADFA;G;EAGAA,a;;;;;;;QASoB,oC,CAAQC,I;EAARD,gC;EACpBA;GACEA,wHADFA;G;EAGAA,a;;;;;;;QASoB,uC,CAAWH,I;EAAXG,gC;EACpBA,2e;;;;;;;QAqBgB,kG,WAAgBE,I;EAAhBC,gC;EAChBA,oC;;;;;QAxES,O;EAAAC,wC;EAAAA,qC;;;;;;;;;;;;;;;;;;;;;;;;AAEX;sBAC2B,iEAD3B,gB;AAEA;sBAC2B,wDAD3B;",
+"sources":["QuoteElement.java"],
+"names":["elem","org.gwtproject.dom.client.QuoteElement$$Overlay.as","o","org.gwtproject.dom.client.QuoteElement$$Overlay.is","node","cite","org.gwtproject.dom.client.QuoteElement$$Overlay.setCite__$devirt","org.gwtproject.dom.client.QuoteElement$$Overlay.<clinit>"]
+}

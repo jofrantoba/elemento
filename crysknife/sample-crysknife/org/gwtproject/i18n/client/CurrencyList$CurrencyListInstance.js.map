@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CurrencyList$CurrencyListInstance.impl.java.js",
+"lineCount":73,
+"mappings":"A;;;;;;;;MAoCyB,oB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,2C;EAAAA,kF;EAAAA,iB;;;;;CAAA,qE;EAAAC,iC;;;;;;QACjB,6E;EAAAC,yI;;;;;;QAAA,6E;EAAAC,0I;;;;;QADiB,O;EAAAC,uC;EAAAA,oC;EAAAA,qB;EACjBA,6H;;;;;;;;;;;;;;;;;;;;AADiB;;",
+"sources":["CurrencyList.java"],
+"names":["org.gwtproject.i18n.client.CurrencyList$CurrencyListInstance.<synthetic: ctor_js>","org.gwtproject.i18n.client.CurrencyList$CurrencyListInstance.<synthetic: ctor_create>","org.gwtproject.i18n.client.CurrencyList$CurrencyListInstance.<init>","org.gwtproject.i18n.client.CurrencyList$CurrencyListInstance.<synthetic: getter>","org.gwtproject.i18n.client.CurrencyList$CurrencyListInstance.<synthetic: setter>","org.gwtproject.i18n.client.CurrencyList$CurrencyListInstance.<clinit>"]
+}

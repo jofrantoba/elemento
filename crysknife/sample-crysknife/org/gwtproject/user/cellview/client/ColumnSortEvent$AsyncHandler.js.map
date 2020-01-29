@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ColumnSortEvent$AsyncHandler.impl.java.js",
+"lineCount":55,
+"mappings":"A;;;;;;;;;;;;MAwDsB,Y;;;;CAAA,W;EAAAA,Q;EAAAA;OACO,4EADPA,C;;;;;;;QAGX,2C,CAAwBC,O;EAAxBC,uB;EAAAA,mC;EAAAA,+H;EAAAA,iB;;;;;;CAAA,2G,CAAwBD,O;EAAxBE,iC;EACLA,4F;;;;;;;CAGU,mE,CAA6BC,K;EACvCC,0Q;;;;;QARgB,O;EAAAC,+B;EAAAA,4B;EAAAA;",
+"sources":["ColumnSortEvent.java"],
+"names":["org.gwtproject.user.cellview.client.ColumnSortEvent$AsyncHandler.<synthetic: ctor_js>","hasData","org.gwtproject.user.cellview.client.ColumnSortEvent$AsyncHandler.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.ColumnSortEvent$AsyncHandler.<init>","event","org.gwtproject.user.cellview.client.ColumnSortEvent$AsyncHandler.onColumnSort","org.gwtproject.user.cellview.client.ColumnSortEvent$AsyncHandler.<clinit>"]
+}

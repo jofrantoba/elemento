@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasValue.impl.java.js",
+"lineCount":40,
+"mappings":"A;;;;;;;;;;;;MAgCiB,Q;;;;;;;CAOb,Y;;;;;;;CAgBG,4B,CAAWA,K;;;;;;;CAaX,qC,CAAWA,K,EAAeC,U;;;;QApChB,O;EAAAC,2B;EAAAA;",
+"sources":["HasValue.java"],
+"names":["value","fireEvents","org.gwtproject.user.client.ui.HasValue.<clinit>"]
+}

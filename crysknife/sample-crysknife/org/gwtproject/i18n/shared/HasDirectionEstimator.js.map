@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasDirectionEstimator.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;MAoBiB,qB;;;;;;CAKI,yB;;;;;;CASd,gC,CAA8BA,O;;;;;;CAQ9B,sE,CAAyCC,kB;;;;QAtB/B,O;EAAAC,wC;EAAAA;",
+"sources":["HasDirectionEstimator.java"],
+"names":["enabled","directionEstimator","org.gwtproject.i18n.shared.HasDirectionEstimator.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ResizeEvent.impl.java.js",
+"lineCount":152,
+"mappings":"A;;;;;;;;;;;;;;;;MAsBa,W;;;;CAAA,W;EAAAA,Q;EAAAA;OAiCO,yDAjCPA,K;EAAAA;OAkCO,0DAlCPA,K;;;;;;;;;QAaoD,uE,CACzDC,M,EAAYC,K,EAAWC,M;EADkCC,sB;EAE7DA;GACEA,IAAYC,KAAZD,gDADFA;GAEEA,+FAFFA;G;;;;;;QAWgC,W;EAAAE,sB;EAChCA;GACEA,6HADFA;G;EAGAA,4E;;;;;;;;QAYQ,iB,CAAgBJ,K,EAAWC,M;EAA3BI,sB;EAAAA,kC;EAAAA,0F;EAAAA,iB;;;;;;;CAAA,gE,CAAgBL,K,EAAWC,M;EAA3BK,kD;EACRA,uE;EACAA,yE;;;;;;;CAI+B,qB;EAC/BC,4E;;;;;;CAQS,a;EACTC,uE;;;;;;CAQS,Y;EACTC,sE;;;;;;;CAIY,iB;EACZC,wO;;;;;;CAIa,6D,CAAuBC,O;EACpCC,0E;;;;;;;;CA7ES,4B;EAAAA,kI;;;;;QAAA,O;EAAAC,8B;EAAAA,2B;EAAAA,gB;;;;;;;;;;;;;;;;;;;;;;;;AAAA;YAGwB,wDAHxB;",
+"sources":["ResizeEvent.java"],
+"names":["org.gwtproject.event.logical.shared.ResizeEvent.<synthetic: ctor_js>","source","width","height","org.gwtproject.event.logical.shared.ResizeEvent.fire","event","org.gwtproject.event.logical.shared.ResizeEvent.getType","org.gwtproject.event.logical.shared.ResizeEvent.<synthetic: ctor_create>","org.gwtproject.event.logical.shared.ResizeEvent.<init>","org.gwtproject.event.logical.shared.ResizeEvent.getAssociatedType","org.gwtproject.event.logical.shared.ResizeEvent.getHeight","org.gwtproject.event.logical.shared.ResizeEvent.getWidth","org.gwtproject.event.logical.shared.ResizeEvent.toDebugString","handler","org.gwtproject.event.logical.shared.ResizeEvent.dispatch","org.gwtproject.event.logical.shared.ResizeEvent.<clinit>"]
+}

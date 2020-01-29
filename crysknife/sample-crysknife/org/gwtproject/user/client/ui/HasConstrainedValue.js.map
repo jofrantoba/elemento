@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasConstrainedValue.impl.java.js",
+"lineCount":25,
+"mappings":"A;;;;;;;;;;;;MA6BiB,mB;;;;;;CAOV,2C,CAAkCA,M;;;;QAPxB,O;EAAAC,sC;EAAAA;",
+"sources":["HasConstrainedValue.java"],
+"names":["values","org.gwtproject.user.client.ui.HasConstrainedValue.<clinit>"]
+}

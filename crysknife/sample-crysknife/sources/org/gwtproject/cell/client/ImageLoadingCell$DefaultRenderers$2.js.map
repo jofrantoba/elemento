@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ImageLoadingCell$DefaultRenderers$2.impl.java.js",
+"lineCount":71,
+"mappings":"A;;;;;;;;;;;;;MAmGkE,E;;;;CAAA,W;EAAAA,Q;EAAAA;qF;EAAAA;OAD3CC,cAC2CD,C;;;;;;;;QAAA,8G;EAAAE,a;EAAAA,yB;EAAAA,oN;EAAAA,iB;;;;;;;CAAA,4K;EAAAC,iG;EAAAA,qC;EAAAA,oE;;;;;;;CACxC,0B,CAAcC,M;EAC5BC,2B;;;;;;;;;CAFsD,0B;EAAAA,6F;;;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["ImageLoadingCell.java"],
+"names":["org.gwtproject.cell.client.ImageLoadingCell$DefaultRenderers$2.<synthetic: ctor_js>","loadingHtml","org.gwtproject.cell.client.ImageLoadingCell$DefaultRenderers$2.<synthetic: ctor_create>","org.gwtproject.cell.client.ImageLoadingCell$DefaultRenderers$2.<init>","object","org.gwtproject.cell.client.ImageLoadingCell$DefaultRenderers$2.render","org.gwtproject.cell.client.ImageLoadingCell$DefaultRenderers$2.<clinit>"]
+}

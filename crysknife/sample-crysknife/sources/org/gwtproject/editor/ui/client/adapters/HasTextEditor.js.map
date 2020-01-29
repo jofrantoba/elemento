@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasTextEditor.impl.java.js",
+"lineCount":81,
+"mappings":"A;;;;;;;;;;;;;MAuBa,a;;;;CAAA,W;EAAAA,Q;EAAAA;OAYK,+DAZLA,C;;;;;;;QAQiB,2C,CAAWC,I;EAAXC,wB;EAC1BA,0E;;;;;;;QAWQ,8C,CAAsBD,I;EAAtBE,wB;EAAAA,oC;EAAAA,qH;EAAAA,iB;;;;;;CAAA,oG,CAAsBF,I;EAAtBG,iC;EACRA,4E;;;;;;;CAGY,Y;EACZC,0F;;;;;;CAGU,4B,CAAgBC,K;EAC1BC,wG;;;;;;;;CA7BS,4B;EAAAA,wF;;;;;QAAA,O;EAAAC,gC;EAAAA,6B;EAAAA;",
+"sources":["HasTextEditor.java"],
+"names":["org.gwtproject.editor.ui.client.adapters.HasTextEditor.<synthetic: ctor_js>","peer","org.gwtproject.editor.ui.client.adapters.HasTextEditor.of","org.gwtproject.editor.ui.client.adapters.HasTextEditor.<synthetic: ctor_create>","org.gwtproject.editor.ui.client.adapters.HasTextEditor.<init>","org.gwtproject.editor.ui.client.adapters.HasTextEditor.getValue","value","org.gwtproject.editor.ui.client.adapters.HasTextEditor.setValue","org.gwtproject.editor.ui.client.adapters.HasTextEditor.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"PassthroughParser.impl.java.js",
+"lineCount":87,
+"mappings":"A;;;;;;;;;;;;;MAIa,iB;;;;CAAA,W;EAAAA,Q;;;;;;QAGoB,Y;EAAAC,4B;EACzBA;GACIA,oHADJA;G;EAIAA,2F;;;;;;QAGM,S;EAAAC,4B;EAAAA,wC;EAAAA,0E;EAAAA,iB;;;;;CAAA,6D;EAAAC,iC;;;;;;;;CAGI,+B,CAAmBC,M;EAC7BC,iE;;;;;QAfK,O;EAAAC,oC;EAAAA,iC;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;;;AAAA;kBACwB,iEADxB;",
+"sources":["PassthroughParser.java"],
+"names":["org.gwtproject.text.shared.testing.PassthroughParser.<synthetic: ctor_js>","org.gwtproject.text.shared.testing.PassthroughParser.instance","org.gwtproject.text.shared.testing.PassthroughParser.<synthetic: ctor_create>","org.gwtproject.text.shared.testing.PassthroughParser.<init>","object","org.gwtproject.text.shared.testing.PassthroughParser.parse","org.gwtproject.text.shared.testing.PassthroughParser.<clinit>"]
+}

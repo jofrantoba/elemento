@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HTMLAreaElementInfo.impl.java.js",
+"lineCount":35,
+"mappings":"A;;;;;MAIa,mB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,8B;EAAAA,0C;EAAAA,wD;EAAAA,iB;;;;;CAAA,2C;EAAAC,iC;;;;;QAAA,O;EAAAC,sC;EAAAA,mC;EAAAA;",
+"sources":["HTMLAreaElementInfo.java"],
+"names":["elemental2.dom.HTMLAreaElementInfo.<synthetic: ctor_js>","elemental2.dom.HTMLAreaElementInfo.<synthetic: ctor_create>","elemental2.dom.HTMLAreaElementInfo.<init>","elemental2.dom.HTMLAreaElementInfo.<clinit>"]
+}

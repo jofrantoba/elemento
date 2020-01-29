@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ParagraphElement$$Overlay.impl.java.js",
+"lineCount":85,
+"mappings":"A;;;;;;;;;;;MA6Ba,yB;;;;;;QAUoB,uC,CAAWA,I;EAAXC,oC;EAC7BA,0F;EACAA,0E;;;;;;;QASoB,iD,CAAoBC,C;EAApBC,oC;EACpBA;GACEA,yHADFA;G;EAGAA,a;;;;;;;QASoB,oC,CAAQC,I;EAARD,oC;EACpBA;GACEA,4HADFA;G;EAGAA,a;;;;;;;QASoB,uC,CAAWH,I;EAAXG,oC;EACpBA,uN;;;;;QAhDS,O;EAAAE,4C;EAAAA,yC;;;;;;;;;;;;;;;;;;;;;;;AAEX;0BAC2B,0DAD3B;",
+"sources":["ParagraphElement.java"],
+"names":["elem","org.gwtproject.dom.client.ParagraphElement$$Overlay.as","o","org.gwtproject.dom.client.ParagraphElement$$Overlay.is","node","org.gwtproject.dom.client.ParagraphElement$$Overlay.<clinit>"]
+}

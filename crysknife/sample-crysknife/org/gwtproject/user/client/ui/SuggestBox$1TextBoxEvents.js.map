@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SuggestBox$1TextBoxEvents.impl.java.js",
+"lineCount":103,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;MA89BU,e;;;;CAAA,W;EAAAA,Q;EAAAA;8E;;;;;;;QAAA,iD;EAAAC,0B;EAAAA,sC;EAAAA,gI;EAAAA,iB;;;;;;CAAA,wG;EAAAC,0F;EAAAA,iC;;;;;;;CAEQ,yD,CAAuBC,K;EAAvBC,sBAgBKC,UAhBLD,C;EACRA;;IAEEA,yJAFFA;IAGEA;KACEA,2BADFA;KAHFA;IAMEA,MANFA;;IAQEA,uJARFA;IASEA;KACEA,2BADFA;KATFA;IAYEA,MAZFA;;;IAeEA,wKAfFA;IAgBEA;KACEA,uJADFA;;KAGEA,8MAHFA;KAhBFA;IAqBEA,MArBFA;G;;;;;;;CAyBQ,qD,CAAmBD,K;EAE7BG,iJ;;;;;;;CAGU,qE,CAAuCH,K;EACjDI,yP;;;;;QAlCE,O;EAAAC,kC;EAAAA,+B;EAAAA;",
+"sources":["SuggestBox.java"],
+"names":["org.gwtproject.user.client.ui.SuggestBox$1TextBoxEvents.<synthetic: ctor_js>","org.gwtproject.user.client.ui.SuggestBox$1TextBoxEvents.<synthetic: ctor_create>","org.gwtproject.user.client.ui.SuggestBox$1TextBoxEvents.<init>","event","org.gwtproject.user.client.ui.SuggestBox$1TextBoxEvents.onKeyDown","suggestion","org.gwtproject.user.client.ui.SuggestBox$1TextBoxEvents.onKeyUp","org.gwtproject.user.client.ui.SuggestBox$1TextBoxEvents.onValueChange","org.gwtproject.user.client.ui.SuggestBox$1TextBoxEvents.<clinit>"]
+}

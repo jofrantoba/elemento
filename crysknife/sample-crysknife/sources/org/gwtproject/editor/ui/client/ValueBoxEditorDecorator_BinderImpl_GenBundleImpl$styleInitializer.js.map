@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ValueBoxEditorDecorator_BinderImpl_GenBundleImpl$styleInitializer.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;MAgCuB,gB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,uC;EAAAA,uH;EAAAA,iB;;;;;CAAA,0G;EAAAC,iC;;;;;;QAIoE,O;EAAAC,2B;EACrFA,qJ;;;;;QALiB,O;EAAAC,mC;EAAAA,gC;EAAAA,qB;EAEjBA;",
+"sources":["ValueBoxEditorDecorator_BinderImpl_GenBundleImpl.java"],
+"names":["org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl$styleInitializer.<synthetic: ctor_js>","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl$styleInitializer.<synthetic: ctor_create>","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl$styleInitializer.<init>","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl$styleInitializer.get","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl$styleInitializer.<clinit>"]
+}

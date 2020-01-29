@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Window$Navigator.impl.java.js",
+"lineCount":92,
+"mappings":"A;;;;;;;MAwUsB,gB;;;;CAAA,W;EAAAA,Q;;;;;;QAMG,kB;EAAAC,2B;EACnBA,2C;;;;;;QAQmB,c;EAAAC,2B;EACnBA,uC;;;;;;QAQmB,iB;EAAAC,2B;EACnBA,0C;;;;;;QAQmB,e;EAAAC,2B;EACnBA,wC;;;;;;QAQmB,gB;EAAAC,2B;EACnBA,yC;;;;;;QAQoB,mB;EAAAC,2B;EACpBA,qC;;;;;;QAQoB,iB;EAAAC,2B;EACpBA,6C;;;;;;QAGM,S;EAAAC,uC;EAAAA,wE;EAAAA,iB;;;;;CAAA,2D;EAAAC,iC;;;;;QAhEU,O;EAAAC,mC;EAAAA,gC;EAAAA;",
+"sources":["Window.java"],
+"names":["org.gwtproject.user.window.client.Window$Navigator.<synthetic: ctor_js>","org.gwtproject.user.window.client.Window$Navigator.getAppCodeName","org.gwtproject.user.window.client.Window$Navigator.getAppName","org.gwtproject.user.window.client.Window$Navigator.getAppVersion","org.gwtproject.user.window.client.Window$Navigator.getPlatform","org.gwtproject.user.window.client.Window$Navigator.getUserAgent","org.gwtproject.user.window.client.Window$Navigator.isCookieEnabled","org.gwtproject.user.window.client.Window$Navigator.isJavaEnabled","org.gwtproject.user.window.client.Window$Navigator.<synthetic: ctor_create>","org.gwtproject.user.window.client.Window$Navigator.<init>","org.gwtproject.user.window.client.Window$Navigator.<clinit>"]
+}

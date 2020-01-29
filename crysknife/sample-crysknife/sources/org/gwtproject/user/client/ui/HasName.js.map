@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasName.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;MAsBiB,O;;;;;;CAOV,2B,CAAeA,I;;;;;;CAOb,W;;;;QAdQ,O;EAAAC,0B;EAAAA;",
+"sources":["HasName.java"],
+"names":["name","org.gwtproject.user.client.ui.HasName.<clinit>"]
+}

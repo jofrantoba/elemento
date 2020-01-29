@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DomTableSectionBuilder.impl.java.js",
+"lineCount":107,
+"mappings":"A;;;;;;;;;;;;;;;;;MAwBa,sB;;;;CAAA,W;EAAAA,Q;;;;;;;QAGX,yD,CAAsCC,Q;EAAtCC,iC;EAAAA,6C;EAAAA,sI;EAAAA,iB;;;;;;CAAA,iH,CAAsCD,Q;EACpCE,gI;;;;;;;;CAIyB,yB,CAAaC,K;EACtCC,4F;EACAA,Y;;;;;;;;CAIyB,sB,CAAUC,E;EACnCC,sF;EACAA,Y;;;;;;;;CAIyB,yB,CAAaC,K;EACtCC,4F;EACAA,Y;;;;;;;;CAIyB,+C,CAAcC,I;EACvCC,+K;;;;;;;;CAIyB,wB,CAAYC,I;EACrCC,+K;;;;;;;;CAIyB,0B,CAAcC,M;EACvCC,8F;EACAA,Y;;;;;QAtCS,O;EAAAC,yC;EAAAA,sC;EAAAA;",
+"sources":["DomTableSectionBuilder.java"],
+"names":["org.gwtproject.dom.builder.client.DomTableSectionBuilder.<synthetic: ctor_js>","delegate","org.gwtproject.dom.builder.client.DomTableSectionBuilder.<synthetic: ctor_create>","org.gwtproject.dom.builder.client.DomTableSectionBuilder.<init>","align","org.gwtproject.dom.builder.client.DomTableSectionBuilder.align","ch","org.gwtproject.dom.builder.client.DomTableSectionBuilder.ch","chOff","org.gwtproject.dom.builder.client.DomTableSectionBuilder.chOff","html","org.gwtproject.dom.builder.client.DomTableSectionBuilder.html","text","org.gwtproject.dom.builder.client.DomTableSectionBuilder.text","vAlign","org.gwtproject.dom.builder.client.DomTableSectionBuilder.vAlign","org.gwtproject.dom.builder.client.DomTableSectionBuilder.<clinit>"]
+}

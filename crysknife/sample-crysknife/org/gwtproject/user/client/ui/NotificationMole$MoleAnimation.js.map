@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NotificationMole$MoleAnimation.impl.java.js",
+"lineCount":85,
+"mappings":"A;;;;;;;;;;MA2CgB,a;;;;CAAA,W;EAAAA,Q;EAAAA;mF;EAAAA;OACA,wEADAA,K;EAAAA;OAEA,0EAFAA,K;;;;;;;QAAA,uD;EAAAC,wB;EAAAA,oC;EAAAA,2I;EAAAA,iB;;;;;;CAAA,mH;EAAAC,+F;EAAAA,0D;;;;;;CAKG,c;EACbC;GACEA,0TADFA;GAEEA,OAFFA;G;EAIAA,qY;;;;;;;CAIa,kB,CAAgBC,Q;EAC7BC,IAAOC,KAAPD,gL;EACAA,IAAOE,OAAPF,2F;EACAA,+T;;;;;;;;CAGG,8D,CAAgBG,S,EAAeC,O,EAAaC,Q;EAC/CC,4F;EACAA,wF;EACAA;GACEA,sBADFA;GAEEA,OAFFA;G;EAIAA,0B;;;;;QA3BU,O;EAAAC,gC;EAAAA,6B;EAAAA;",
+"sources":["NotificationMole.java"],
+"names":["org.gwtproject.user.client.ui.NotificationMole$MoleAnimation.<synthetic: ctor_js>","org.gwtproject.user.client.ui.NotificationMole$MoleAnimation.<synthetic: ctor_create>","org.gwtproject.user.client.ui.NotificationMole$MoleAnimation.<init>","org.gwtproject.user.client.ui.NotificationMole$MoleAnimation.onComplete","progress","org.gwtproject.user.client.ui.NotificationMole$MoleAnimation.onUpdate","delta","newSize","startSize","endSize","duration","org.gwtproject.user.client.ui.NotificationMole$MoleAnimation.animateMole","org.gwtproject.user.client.ui.NotificationMole$MoleAnimation.<clinit>"]
+}

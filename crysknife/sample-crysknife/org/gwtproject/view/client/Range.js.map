@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Range.impl.java.js",
+"lineCount":114,
+"mappings":"A;;;;;;;;;;;MAsBa,K;;;;CAAA,W;EAAAA,Q;EAAAA;OAEC,2CAFDA,K;EAAAA;OAGC,0CAHDA,K;;;;;;;;;QAWJ,iB,CAAUC,K,EAAWC,M;EAArBC,gB;EAAAA,4B;EAAAA,2E;EAAAA,iB;;;;;;;;CAAA,iD,CAAUF,K,EAAWC,M;EAArBE,iC;EACLA,wD;EACAA,0D;;;;;;;QAMF,S;EAAAD,gB;EAAAA,4B;EAAAA,sD;EAAAA,iB;;;;;;CAAA,yC;EAAAC,iC;;;;;;;;CAQe,M,CAAcC,C;EAC3BC;GACEA,aADFA;G;EAGAA,IAAMC,CAAND,8C;EACAA,oJ;;;;;;CAQS,a;EACTE,wD;;;;;;CAQS,Y;EACTC,uD;;;;;;;CAOS,Q;EACTC,iH;;;;;;;CAOY,Q;EACZC,iI;;;;;QAlES,O;EAAAC,wB;EAAAA,qB;EAAAA;",
+"sources":["Range.java"],
+"names":["org.gwtproject.view.client.Range.<synthetic: ctor_js>","start","length","org.gwtproject.view.client.Range.<synthetic: ctor_create>","org.gwtproject.view.client.Range.<init>","o","org.gwtproject.view.client.Range.equals","r","org.gwtproject.view.client.Range.getLength","org.gwtproject.view.client.Range.getStart","org.gwtproject.view.client.Range.hashCode","org.gwtproject.view.client.Range.toString","org.gwtproject.view.client.Range.<clinit>"]
+}

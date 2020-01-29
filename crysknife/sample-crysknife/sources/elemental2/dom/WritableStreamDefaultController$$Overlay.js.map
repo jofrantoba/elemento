@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"WritableStreamDefaultController$$Overlay.impl.java.js",
+"lineCount":11,
+"mappings":"A;;;;MAsBiB,Q;;;;QAAA,O;EAAAA,2B;EAAAA;",
+"sources":["WritableStreamDefaultController.java"],
+"names":["elemental2.dom.WritableStreamDefaultController$$Overlay.<clinit>"]
+}

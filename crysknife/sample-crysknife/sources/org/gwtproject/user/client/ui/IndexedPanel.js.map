@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"IndexedPanel.impl.java.js",
+"lineCount":43,
+"mappings":"A;;;;;;;;;MAsBiB,Y;;;;;;;CAeR,gB,CAAcA,K;;;;;;CAOjB,kB;;;;;;;CASA,sD,CAAsBC,K;;;;;;;CAQlB,a,CAAWD,K;;;;QAvCJ,O;EAAAE,+B;EAAAA;",
+"sources":["IndexedPanel.java"],
+"names":["index","child","org.gwtproject.user.client.ui.IndexedPanel.<clinit>"]
+}

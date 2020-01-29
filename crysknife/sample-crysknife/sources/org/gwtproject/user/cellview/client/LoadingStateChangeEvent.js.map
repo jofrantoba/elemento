@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"LoadingStateChangeEvent.impl.java.js",
+"lineCount":110,
+"mappings":"A;;;;;;;;;;;;;MAuBa,uB;;;;CAAA,W;EAAAA,Q;EAAAA;OA8CgB,qEA9ChBA,C;;;;;;;QAqDJ,iF,CAAqCC,K;EAArCC,kC;EAAAA,8C;EAAAA,8J;EAAAA,iB;;;;;;CAAA,4I,CAAqCD,K;EAArCE,kD;EACLA,mF;;;;;;;CAImB,qB;EACnBC,oG;;;;;;CAQkB,mB;EAClBC,kF;;;;;;CAIa,+E,CAAiBC,O;EAC9BC,mG;;;;;;;;CAzES,4B;EAAAA,wI;;;;;;QAyCX,uE;EAAAC,yI;;;;;QAzCW,O;EAAAC,0C;EAAAA,uC;EAAAA,gB;EAyCXA,+I;;;;;;;;;;;;;;;;;;;;;;AAzCW;;",
+"sources":["LoadingStateChangeEvent.java"],
+"names":["org.gwtproject.user.cellview.client.LoadingStateChangeEvent.<synthetic: ctor_js>","state","org.gwtproject.user.cellview.client.LoadingStateChangeEvent.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.LoadingStateChangeEvent.<init>","org.gwtproject.user.cellview.client.LoadingStateChangeEvent.getAssociatedType","org.gwtproject.user.cellview.client.LoadingStateChangeEvent.getLoadingState","handler","org.gwtproject.user.cellview.client.LoadingStateChangeEvent.dispatch","org.gwtproject.user.cellview.client.LoadingStateChangeEvent.<synthetic: getter>","org.gwtproject.user.cellview.client.LoadingStateChangeEvent.<clinit>"]
+}

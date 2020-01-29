@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DockPanel$TmpRow.impl.java.js",
+"lineCount":41,
+"mappings":"A;;;;;;;MA4EuB,M;;;;CAAA,W;EAAAA,Q;EAAAA;OACR,wDADQA,K;EAAAA;OAEJ,oDAFIA,C;;;;;;QAAA,S;EAAAC,iB;EAAAA,6B;EAAAA,oE;EAAAA,iB;;;;;CAAA,uD;EAAAC,iC;;;;;QAAA,O;EAAAC,yB;EAAAA,sB;EAAAA;",
+"sources":["DockPanel.java"],
+"names":["org.gwtproject.user.client.ui.DockPanel$TmpRow.<synthetic: ctor_js>","org.gwtproject.user.client.ui.DockPanel$TmpRow.<synthetic: ctor_create>","org.gwtproject.user.client.ui.DockPanel$TmpRow.<init>","org.gwtproject.user.client.ui.DockPanel$TmpRow.<clinit>"]
+}

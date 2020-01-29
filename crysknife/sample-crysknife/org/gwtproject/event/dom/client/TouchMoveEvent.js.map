@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TouchMoveEvent.impl.java.js",
+"lineCount":100,
+"mappings":"A;;;;;;;;;;;;;MAoBa,c;;;;CAAA,W;EAAAA,Q;;;;;;QAWD,S;EAAAC,yB;EAAAA,qC;EAAAA,oE;EAAAA,iB;;;;;CAAA,uD;EAAAC,2D;;;;;;QAO2B,W;EAAAC,yB;EACnCA,8E;;;;;;;CAIkC,qB;EAClCC,8E;;;;;;CAIa,4D,CAA0BC,O;EACvCC,4E;;;;;;;;CA7BS,4B;EAAAA,uI;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAEXA,0R;;;;;;;;;;;;;;;;;;;;;;;AAFW;eAGiC,uDAHjC;",
+"sources":["TouchMoveEvent.java"],
+"names":["org.gwtproject.event.dom.client.TouchMoveEvent.<synthetic: ctor_js>","org.gwtproject.event.dom.client.TouchMoveEvent.<synthetic: ctor_create>","org.gwtproject.event.dom.client.TouchMoveEvent.<init>","org.gwtproject.event.dom.client.TouchMoveEvent.getType","org.gwtproject.event.dom.client.TouchMoveEvent.getAssociatedType","handler","org.gwtproject.event.dom.client.TouchMoveEvent.dispatch","org.gwtproject.event.dom.client.TouchMoveEvent.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"RangeChangeEvent$Handler$$LambdaAdaptor.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;MAgC0B,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;kF;EAAAA,oJ;;;;;;CAAA,0I;EAAAC,iC;EAAAA,qF;;;;;;CAAA,4D;;GAAAC,gG;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["RangeChangeEvent.java"],
+"names":["org.gwtproject.view.client.RangeChangeEvent$Handler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.view.client.RangeChangeEvent$Handler$$LambdaAdaptor.<init>","org.gwtproject.view.client.RangeChangeEvent$Handler$$LambdaAdaptor.onRangeChange","org.gwtproject.view.client.RangeChangeEvent$Handler$$LambdaAdaptor.<clinit>"]
+}

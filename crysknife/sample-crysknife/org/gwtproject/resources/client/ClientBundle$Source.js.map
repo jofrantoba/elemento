@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ClientBundle$Source.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;MAmDa,M;;;;;;CACT,S;;;;QADS,O;EAAAA,yB;EAAAA;",
+"sources":["ClientBundle.java"],
+"names":["org.gwtproject.resources.client.ClientBundle$Source.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NativeMatchResult.impl.java.js",
+"lineCount":82,
+"mappings":"A;;;;;;;;;;;;;;MAoBa,iB;;;;CAAA,W;EAAAA,Q;EAAAA;OAEa,wDAFbA,C;;;;;;;QAIX,gC,CAAkCC,O;EAAlCC,4B;EAAAA,wC;EAAAA,kG;EAAAA,iB;;;;;;CAAA,8E,CAAkCD,O;EAAlCE,iC;EACEA,wE;;;;;;;;CAIY,e,CAAaC,K;EACzBC,wL;;;;;;;CAIS,iB;EACTC,4E;;;;;;;CAIS,Y;EACTC,2E;;;;;;;CAIY,Y;EACZC,2E;;;;;QAzBS,O;EAAAC,oC;EAAAA,iC;EAAAA;",
+"sources":["NativeMatchResult.java"],
+"names":["org.gwtproject.regexp.client.NativeMatchResult.<synthetic: ctor_js>","results","org.gwtproject.regexp.client.NativeMatchResult.<synthetic: ctor_create>","org.gwtproject.regexp.client.NativeMatchResult.<init>","index","org.gwtproject.regexp.client.NativeMatchResult.getGroup","org.gwtproject.regexp.client.NativeMatchResult.getGroupCount","org.gwtproject.regexp.client.NativeMatchResult.getIndex","org.gwtproject.regexp.client.NativeMatchResult.getInput","org.gwtproject.regexp.client.NativeMatchResult.<clinit>"]
+}

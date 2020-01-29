@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"FiniteWidgetIterator$WidgetProvider$$LambdaAdaptor.impl.java.js",
+"lineCount":47,
+"mappings":"A;;;;;;;;;;;MAoC0B,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gG;EAAAA,gL;;;;;;CAAA,sK;EAAAC,iC;EAAAA,mG;;;;;;;CAAA,U;EAAAC,gD;EAAAA,oI;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["FiniteWidgetIterator.java"],
+"names":["org.gwtproject.user.client.ui.FiniteWidgetIterator$WidgetProvider$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.client.ui.FiniteWidgetIterator$WidgetProvider$$LambdaAdaptor.<init>","org.gwtproject.user.client.ui.FiniteWidgetIterator$WidgetProvider$$LambdaAdaptor.get","org.gwtproject.user.client.ui.FiniteWidgetIterator$WidgetProvider$$LambdaAdaptor.<clinit>"]
+}

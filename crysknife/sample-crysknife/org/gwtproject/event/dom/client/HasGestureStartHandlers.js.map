@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasGestureStartHandlers.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;MAwBiB,uB;;;;;;;CAQK,6E,CAA2CA,O;;;;QARhD,O;EAAAC,0C;EAAAA;",
+"sources":["HasGestureStartHandlers.java"],
+"names":["handler","org.gwtproject.event.dom.client.HasGestureStartHandlers.<clinit>"]
+}

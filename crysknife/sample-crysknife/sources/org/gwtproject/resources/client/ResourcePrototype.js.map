@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ResourcePrototype.impl.java.js",
+"lineCount":31,
+"mappings":"A;;;;;;;;;MAkBiB,iB;;;;;;CAMR,W;;;;;;QANQ,M;EAAAA,4B;EAAAA,8B;;;;;QAAA,O;EAAAC,oC;EAAAA;",
+"sources":["ResourcePrototype.java"],
+"names":["org.gwtproject.resources.client.ResourcePrototype.<synthetic: adapt_lambda>","org.gwtproject.resources.client.ResourcePrototype.<clinit>"]
+}

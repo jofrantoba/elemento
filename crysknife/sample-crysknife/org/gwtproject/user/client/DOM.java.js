@@ -1,0 +1,30 @@
+goog.module('org.gwtproject.user.client.DOM');
+
+goog.require('java.lang.Object');
+goog.require('nativebootstrap.Util');
+goog.require('java.lang.Exception');
+goog.require('java.lang.Integer');
+goog.require('jsinterop.base.Js');
+goog.require('jsinterop.base.JsPropertyMap.$Overlay');
+goog.require('nativebootstrap.Equality');
+goog.require('org.gwtproject.core.client.JavaScriptObject.$Overlay');
+goog.require('org.gwtproject.dom.client.Document.$Overlay');
+goog.require('org.gwtproject.dom.client.Element.$Overlay');
+goog.require('org.gwtproject.dom.client.ImageElement.$Overlay');
+goog.require('org.gwtproject.dom.client.NativeEvent.$Overlay');
+goog.require('org.gwtproject.dom.client.Node.$Overlay');
+goog.require('org.gwtproject.dom.client.NodeList.$Overlay');
+goog.require('org.gwtproject.dom.client.OptionElement.$Overlay');
+goog.require('org.gwtproject.dom.client.SelectElement.$Overlay');
+goog.require('org.gwtproject.dom.client.Style.$Overlay');
+goog.require('org.gwtproject.user.client.Event');
+goog.require('org.gwtproject.user.client.EventListener');
+goog.require('org.gwtproject.user.client.impl.DOMImpl');
+goog.require('org.gwtproject.user.client.impl.DOMImplStandardBase');
+goog.require('org.gwtproject.user.window.client.Window');
+goog.require('vmbootstrap.Asserts');
+goog.require('vmbootstrap.Casts');
+goog.require('vmbootstrap.Exceptions');
+
+const DOM = goog.require('org.gwtproject.user.client.DOM$impl');
+exports = DOM; 

@@ -1,0 +1,33 @@
+goog.module('org.gwtproject.user.client.ui.ListBox');
+
+goog.require('nativebootstrap.Util');
+goog.require('org.gwtproject.event.dom.client.HasChangeHandlers');
+goog.require('org.gwtproject.i18n.shared.HasDirectionEstimator');
+goog.require('org.gwtproject.user.client.ui.FocusWidget');
+goog.require('org.gwtproject.user.client.ui.HasName');
+goog.require('java.lang.IndexOutOfBoundsException');
+goog.require('java.lang.NullPointerException');
+goog.require('java.lang.String');
+goog.require('nativebootstrap.Equality');
+goog.require('org.gwtproject.core.client.JavaScriptObject.$Overlay');
+goog.require('org.gwtproject.dom.client.Document.$Overlay');
+goog.require('org.gwtproject.dom.client.Element.$Overlay');
+goog.require('org.gwtproject.dom.client.Node.$Overlay');
+goog.require('org.gwtproject.dom.client.NodeList.$Overlay');
+goog.require('org.gwtproject.dom.client.OptionElement.$Overlay');
+goog.require('org.gwtproject.dom.client.SelectElement.$Overlay');
+goog.require('org.gwtproject.event.dom.client.ChangeEvent');
+goog.require('org.gwtproject.event.dom.client.ChangeHandler');
+goog.require('org.gwtproject.event.shared.HandlerRegistration');
+goog.require('org.gwtproject.i18n.client.HasDirection.Direction');
+goog.require('org.gwtproject.i18n.shared.BidiFormatter');
+goog.require('org.gwtproject.i18n.shared.DirectionEstimator');
+goog.require('org.gwtproject.i18n.shared.WordCountDirectionEstimator');
+goog.require('org.gwtproject.user.client.ui.RootPanel');
+goog.require('org.gwtproject.user.client.ui.UIObject');
+goog.require('vmbootstrap.Asserts');
+goog.require('vmbootstrap.Casts');
+goog.require('vmbootstrap.Exceptions');
+
+const ListBox = goog.require('org.gwtproject.user.client.ui.ListBox$impl');
+exports = ListBox; 

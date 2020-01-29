@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"OpenHandler$$LambdaAdaptor.impl.java.js",
+"lineCount":49,
+"mappings":"A;;;;;;;;;;;;MAsBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;8E;EAAAA,4I;;;;;;CAAA,kI;EAAAC,iC;EAAAA,iF;;;;;;CAAA,uD;;GAAAC,4F;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["OpenHandler.java"],
+"names":["org.gwtproject.event.logical.shared.OpenHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.logical.shared.OpenHandler$$LambdaAdaptor.<init>","org.gwtproject.event.logical.shared.OpenHandler$$LambdaAdaptor.onOpen","org.gwtproject.event.logical.shared.OpenHandler$$LambdaAdaptor.<clinit>"]
+}

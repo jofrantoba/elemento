@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"RichTextArea$ExtendedFormatter.impl.java.js",
+"lineCount":75,
+"mappings":"A;;;;;;;;;;MA2MmB,iB;;;;;;CAOV,8B,CAAkBA,G;;;;;CAKlB,wB;;;;;;CAOA,+B,CAAmBA,G;;;;;CAKnB,qB;;;;;CAKA,uB;;;;;;CAOG,mB;;;;;CAKH,c;;;;;CAKA,gB;;;;;CAKA,c;;;;;CAKA,e;;;;;CAKA,uB;;;;QA7DU,O;EAAAC,oC;EAAAA;",
+"sources":["RichTextArea.java"],
+"names":["url","org.gwtproject.user.client.ui.RichTextArea$ExtendedFormatter.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DebugInfo$DebugIdHolder.impl.java.js",
+"lineCount":73,
+"mappings":"A;;;;;;;MAqEuB,a;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,oC;EAAAA,yE;EAAAA,iB;;;;;CAAA,4D;EAAAC,iC;;;;;;QACnB,4E;EAAAC,0H;;;;;QADmB,O;EAAAC,gC;EAAAA,6B;EAAAA,qB;EACnBA,gN;;;;;;;;;;;;;;;;;;;;AADmB;gG;;;;;;ACrEvBC,qD;AACAA,+B;AACAA;",
+"sources":["DebugInfo.java","DebugInfo$DebugIdHolder.native_js"],
+"names":["org.gwtproject.debug.client.DebugInfo$DebugIdHolder.<synthetic: ctor_js>","org.gwtproject.debug.client.DebugInfo$DebugIdHolder.<synthetic: ctor_create>","org.gwtproject.debug.client.DebugInfo$DebugIdHolder.<init>","org.gwtproject.debug.client.DebugInfo$DebugIdHolder.<synthetic: getter>","org.gwtproject.debug.client.DebugInfo$DebugIdHolder.<clinit>","org.gwtproject.debug.client.DebugInfo$DebugIdHolder.<native>"]
+}

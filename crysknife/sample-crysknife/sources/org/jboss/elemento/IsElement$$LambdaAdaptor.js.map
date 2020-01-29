@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"IsElement$$LambdaAdaptor.impl.java.js",
+"lineCount":47,
+"mappings":"A;;;;;;;;;;;;MAoBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;2D;EAAAA,sG;;;;;;CAAA,4F;EAAAC,iC;EAAAA,8D;;;;;;CAAA,W;EAAAC,mC;EAAAA,2F;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["IsElement.java"],
+"names":["org.jboss.elemento.IsElement$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.jboss.elemento.IsElement$$LambdaAdaptor.<init>","org.jboss.elemento.IsElement$$LambdaAdaptor.element","org.jboss.elemento.IsElement$$LambdaAdaptor.<clinit>"]
+}

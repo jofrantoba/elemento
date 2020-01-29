@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"LocalizedNamesImpl_pa_Arab.impl.java.js",
+"lineCount":62,
+"mappings":"A;;;;;;;;MAsBa,4B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,uC;EAAAA,mD;EAAAA,qF;EAAAA,iB;;;;;CAAA,wE;EAAAC,2E;;;;;;;CAGK,yB;EACdC,yE;;;;;;;CAMc,yB;EACdC,umD;;;;;;CA2Qa,e;EACbC,wB;EACAA,8H;;;;;QAxRS,O;EAAAC,+C;EAAAA,4C;EAAAA;",
+"sources":["LocalizedNamesImpl_pa_Arab.java"],
+"names":["org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_pa_Arab.<synthetic: ctor_js>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_pa_Arab.<synthetic: ctor_create>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_pa_Arab.<init>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_pa_Arab.loadLikelyRegionCodes","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_pa_Arab.loadSortedRegionCodes","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_pa_Arab.loadNameMap","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_pa_Arab.<clinit>"]
+}

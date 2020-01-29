@@ -1,0 +1,32 @@
+goog.module('org.gwtproject.user.client.ui.MultiWordSuggestOracle');
+
+goog.require('nativebootstrap.Util');
+goog.require('org.gwtproject.user.client.ui.SuggestOracle');
+goog.require('java.lang.Integer');
+goog.require('java.lang.String');
+goog.require('java.util.ArrayList');
+goog.require('java.util.Collection');
+goog.require('java.util.Collections');
+goog.require('java.util.Comparator');
+goog.require('java.util.HashMap');
+goog.require('java.util.HashSet');
+goog.require('java.util.List');
+goog.require('java.util.Locale');
+goog.require('java.util.Set');
+goog.require('java.util.TreeSet');
+goog.require('nativebootstrap.Equality');
+goog.require('org.gwtproject.safehtml.shared.SafeHtmlBuilder');
+goog.require('org.gwtproject.safehtml.shared.SafeHtmlUtils');
+goog.require('org.gwtproject.user.client.ui.MultiWordSuggestOracle.MultiWordSuggestion');
+goog.require('org.gwtproject.user.client.ui.MultiWordSuggestOracle.WordBounds');
+goog.require('org.gwtproject.user.client.ui.PrefixTree');
+goog.require('org.gwtproject.user.client.ui.SuggestOracle.Callback');
+goog.require('org.gwtproject.user.client.ui.SuggestOracle.Request');
+goog.require('org.gwtproject.user.client.ui.SuggestOracle.Response');
+goog.require('org.gwtproject.user.client.ui.SuggestOracle.Suggestion');
+goog.require('vmbootstrap.Arrays');
+goog.require('vmbootstrap.Casts');
+goog.require('vmbootstrap.primitives.$char');
+
+const MultiWordSuggestOracle = goog.require('org.gwtproject.user.client.ui.MultiWordSuggestOracle$impl');
+exports = MultiWordSuggestOracle; 

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TreeRole.impl.java.js",
+"lineCount":58,
+"mappings":"A;;;;;;;;;;;MA4BiB,Q;;;;;;;CAQR,mE,CAAuCA,O;;;;;;;CAOvC,4D,CAAgCA,O;;;;;;CAMlC,sE,CAA0CA,O;;;;;;CAM1C,+D,CAAmCA,O;;;;;;;CAMnC,4E,CAAuCA,O,EAAiBC,K;;;;;;;CAMxD,qE,CAAgCD,O,EAAiBC,K;;;;QAvCvC,O;EAAAC,2B;EAAAA;",
+"sources":["TreeRole.java"],
+"names":["element","value","org.gwtproject.aria.client.TreeRole.<clinit>"]
+}

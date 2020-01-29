@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"IntegerRenderer.impl.java.js",
+"lineCount":97,
+"mappings":"A;;;;;;;;;;;;;;MAMa,e;;;;CAAA,W;EAAAA,Q;;;;;;QAGuB,Y;EAAAC,0B;EAC5BA;GACIA,sGADJA;G;EAIAA,+E;;;;;;QAGM,S;EAAAC,0B;EAAAA,sC;EAAAA,gE;EAAAA,iB;;;;;CAAA,mD;EAAAC,4D;;;;;;;CAGI,2B,CAAeC,M;EACzBC,mH;;;;;;;;;CAfK,0B;EAAAA,2F;;;;;QAAA,O;EAAAC,kC;EAAAA,+B;EAAAA,2B;;;;;;;;;;;;;;;;;;;;;;;AAAA;gBACsB,uDADtB;",
+"sources":["IntegerRenderer.java"],
+"names":["org.gwtproject.text.client.IntegerRenderer.<synthetic: ctor_js>","org.gwtproject.text.client.IntegerRenderer.instance","org.gwtproject.text.client.IntegerRenderer.<synthetic: ctor_create>","org.gwtproject.text.client.IntegerRenderer.<init>","object","org.gwtproject.text.client.IntegerRenderer.render","org.gwtproject.text.client.IntegerRenderer.<clinit>"]
+}

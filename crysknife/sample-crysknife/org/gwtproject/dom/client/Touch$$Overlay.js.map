@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Touch$$Overlay.impl.java.js",
+"lineCount":109,
+"mappings":"A;;;;;;;;;;MA6Ba,wC;;;;;;QAWM,sD;EAAAA,mD;EACfA,wH;;;;;;;QASe,sD;EAAAC,mD;EACfA,wH;;;;;;;QASe,yD;EAAAC,mD;EACfA,uF;;;;;;;QASe,oD;EAAAC,mD;EACfA,sH;;;;;;;QASe,oD;EAAAC,mD;EACfA,sH;;;;;;;;QAUe,2F,WAAqBC,M;EAArBC,mD;EACfA,wX;;;;;;;;QAWe,2F,WAAqBD,M;EAArBE,mD;EACfA,qX;;;;;;;QAUe,sD;EAAAC,mD;EACfA,wH;;;;;;;QASe,sD;EAAAC,mD;EACfA,wH;;;;;;;QASuB,qD;EAAAC,mD;EACvBA,gJ;;;;;QA1GS,O;EAAAC,2D;EAAAA;",
+"sources":["Touch.java"],
+"names":["org.gwtproject.dom.client.Touch$$Overlay.getClientX__$devirt","org.gwtproject.dom.client.Touch$$Overlay.getClientY__$devirt","org.gwtproject.dom.client.Touch$$Overlay.getIdentifier__$devirt","org.gwtproject.dom.client.Touch$$Overlay.getPageX__$devirt","org.gwtproject.dom.client.Touch$$Overlay.getPageY__$devirt","target","org.gwtproject.dom.client.Touch$$Overlay.getRelativeX__$devirt","org.gwtproject.dom.client.Touch$$Overlay.getRelativeY__$devirt","org.gwtproject.dom.client.Touch$$Overlay.getScreenX__$devirt","org.gwtproject.dom.client.Touch$$Overlay.getScreenY__$devirt","org.gwtproject.dom.client.Touch$$Overlay.getTarget__$devirt","org.gwtproject.dom.client.Touch$$Overlay.<clinit>"]
+}

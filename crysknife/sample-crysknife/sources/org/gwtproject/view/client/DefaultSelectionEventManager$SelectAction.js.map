@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DefaultSelectionEventManager$SelectAction.impl.java.js",
+"lineCount":163,
+"mappings":"A;;;;;;;;;;;;;MA6LqB,Y;;;;CAAA,W;EAAAA,Q;;;;;;;;QAAA,8B;EAAAC,mC;EAAAA,8H;EAAAA,iB;;;;;;;CAAA,kG;EAAAC,qC;EAAAA,2C;EAAAA,mE;;;;;;;QAAA,2B;EAAAC,uB;EAAAA;GAAAA,+JAAAA;G;EAAAA,mJ;;;;;;QAAA,U;EAAAC,uB;EAAAA,miB;;;;;;;;;CAAA,6B;EAAAC,oF;;;;;;QACjB,mF;EAAAC,+H;;;;;;QACA,kF;EAAAA,8H;;;;;;QACA,oF;EAAAA,gI;;;;;;QACA,kF;EAAAA,8H;;;;;;QACA,kF;EAAAA,8H;;;;;QALiB,O;EAAAC,+B;EAAAA,4B;EAAAA,e;EACjBA,mR;EACAA,gR;EACAA,sR;EACAA,gR;EACAA,gR;EALiBA,8G;;;;;;;;;;;;;;;;;;;;;;;AAAA;8F;AAAA;6F;AAAA;+F;AAAA;6F;AAAA;6F;AAAA;uG;AACjB;0G;AACA;yG;AACA;2G;AACA;yG;AACA;;",
+"sources":["DefaultSelectionEventManager.java"],
+"names":["org.gwtproject.view.client.DefaultSelectionEventManager$SelectAction.<synthetic: ctor_js>","org.gwtproject.view.client.DefaultSelectionEventManager$SelectAction.<synthetic: ctor_create>","org.gwtproject.view.client.DefaultSelectionEventManager$SelectAction.<init>","org.gwtproject.view.client.DefaultSelectionEventManager$SelectAction.valueOf","org.gwtproject.view.client.DefaultSelectionEventManager$SelectAction.values","org.gwtproject.view.client.DefaultSelectionEventManager$SelectAction.compareTo","org.gwtproject.view.client.DefaultSelectionEventManager$SelectAction.<synthetic: getter>","org.gwtproject.view.client.DefaultSelectionEventManager$SelectAction.<clinit>"]
+}

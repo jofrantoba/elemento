@@ -63,6 +63,7 @@ let j_l_String = goog.forwardDeclare('java.lang.String$impl');
 let ArrayList = goog.forwardDeclare('java.util.ArrayList$impl');
 let Collections = goog.forwardDeclare('java.util.Collections$impl');
 let Iterator = goog.forwardDeclare('java.util.Iterator$impl');
+let List = goog.forwardDeclare('java.util.List$impl');
 let Objects = goog.forwardDeclare('java.util.Objects$impl');
 let Spliterator = goog.forwardDeclare('java.util.Spliterator$impl');
 let Spliterators = goog.forwardDeclare('java.util.Spliterators$impl');
@@ -1927,17 +1928,20 @@ class Elements extends j_l_Object {
   */
  static m_findAll__elemental2_dom_Node__org_jboss_elemento_By(node, selector) {
   Elements.$clinit();
-  let nodes = node.querySelectorAll(selector.m_selector___$pp_org_jboss_elemento());
-  let htmlElements = /**@type {!Array<HTMLElement>} */ (new Array());
-  for (let i = 0; i < nodes.length; i++) {
-   let element = /**@type {Element} */ ($Casts.$to(JsArrayLike_$Overlay.m_getAt__$devirt__jsinterop_base_JsArrayLike__int(nodes, i), Element_$Overlay));
-   if (HTMLElement_$Overlay.$isInstance(element)) {
-    htmlElements.push(/**@type {HTMLElement} */ ($Casts.$to(element, HTMLElement_$Overlay)));
+  if (!$Equality.$same(node, null)) {
+   let nodes = node.querySelectorAll(selector.m_selector___$pp_org_jboss_elemento());
+   let htmlElements = /**@type {!Array<HTMLElement>} */ (new Array());
+   for (let i = 0; i < nodes.length; i++) {
+    let element = /**@type {Element} */ ($Casts.$to(JsArrayLike_$Overlay.m_getAt__$devirt__jsinterop_base_JsArrayLike__int(nodes, i), Element_$Overlay));
+    if (HTMLElement_$Overlay.$isInstance(element)) {
+     htmlElements.push(/**@type {HTMLElement} */ ($Casts.$to(element, HTMLElement_$Overlay)));
+    }
    }
+   return Iterable.$adapt(() =>{
+    return /**@type {Iterator<HTMLElement>} */ (Elements.m_iterator__jsinterop_base_JsArrayLike(htmlElements));
+   });
   }
-  return Iterable.$adapt(() =>{
-   return /**@type {Iterator<HTMLElement>} */ (Elements.m_iterator__jsinterop_base_JsArrayLike(htmlElements));
-  });
+  return /**@type {List<HTMLElement>} */ (Collections.m_emptyList__());
  }
  /**
   * @template E

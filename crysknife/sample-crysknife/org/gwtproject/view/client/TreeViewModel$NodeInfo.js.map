@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TreeViewModel$NodeInfo.impl.java.js",
+"lineCount":56,
+"mappings":"A;;;;;;;;;;;;;;MAiIY,Q;;;;;;CAOA,W;;;;;;CAOkC,kB;;;;;;CAUhB,qB;;;;;;CAOV,mB;;;;;;CAQX,oD,CAAqDA,O;;;;;CAMrD,oB;;;;QA7CG,O;EAAAC,2B;EAAAA;",
+"sources":["TreeViewModel.java"],
+"names":["display","org.gwtproject.view.client.TreeViewModel$NodeInfo.<clinit>"]
+}

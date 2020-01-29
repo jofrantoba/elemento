@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"MultiSelectionModel$SelectionChange.impl.java.js",
+"lineCount":63,
+"mappings":"A;;;;;;;;MAmCe,e;;;;CAAA,W;EAAAA,Q;EAAAA;OACK,uEADLA,C;EAAAA;OAEW,6EAFXA,S;;;;;;;;;QAIX,kC,CAAkBC,I,EAAcC,U;EAAhCC,0B;EAAAA,sC;EAAAA,6H;EAAAA,iB;;;;;;;CAAA,gG,CAAkBF,I,EAAcC,U;EAAhCE,iC;EACEA,oF;EACAA,gG;;;;;;CAGO,W;EACPC,oF;;;;;;CAGa,c;EACbC,0F;;;;;QAdS,O;EAAAC,kC;EAAAA,+B;EAAAA;",
+"sources":["MultiSelectionModel.java"],
+"names":["org.gwtproject.view.client.MultiSelectionModel$SelectionChange.<synthetic: ctor_js>","item","isSelected","org.gwtproject.view.client.MultiSelectionModel$SelectionChange.<synthetic: ctor_create>","org.gwtproject.view.client.MultiSelectionModel$SelectionChange.<init>","org.gwtproject.view.client.MultiSelectionModel$SelectionChange.getItem","org.gwtproject.view.client.MultiSelectionModel$SelectionChange.isSelected","org.gwtproject.view.client.MultiSelectionModel$SelectionChange.<clinit>"]
+}

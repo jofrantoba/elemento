@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HTMLInputElementInfo.impl.java.js",
+"lineCount":35,
+"mappings":"A;;;;;MAIa,oB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,+B;EAAAA,2C;EAAAA,yD;EAAAA,iB;;;;;CAAA,4C;EAAAC,iC;;;;;QAAA,O;EAAAC,uC;EAAAA,oC;EAAAA;",
+"sources":["HTMLInputElementInfo.java"],
+"names":["elemental2.dom.HTMLInputElementInfo.<synthetic: ctor_js>","elemental2.dom.HTMLInputElementInfo.<synthetic: ctor_create>","elemental2.dom.HTMLInputElementInfo.<init>","elemental2.dom.HTMLInputElementInfo.<clinit>"]
+}

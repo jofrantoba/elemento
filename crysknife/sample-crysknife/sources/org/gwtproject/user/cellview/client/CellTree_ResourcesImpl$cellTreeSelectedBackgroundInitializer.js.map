@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CellTree_ResourcesImpl$cellTreeSelectedBackgroundInitializer.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;MAoEuB,qC;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,4D;EAAAA,sH;EAAAA,iB;;;;;CAAA,yG;EAAAC,iC;;;;;;QAIkC,O;EAAAC,gD;EACnDA,yH;;;;;QALiB,O;EAAAC,wD;EAAAA,qD;EAAAA,qB;EAEjBA;",
+"sources":["CellTree_ResourcesImpl.java"],
+"names":["org.gwtproject.user.cellview.client.CellTree_ResourcesImpl$cellTreeSelectedBackgroundInitializer.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.CellTree_ResourcesImpl$cellTreeSelectedBackgroundInitializer.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.CellTree_ResourcesImpl$cellTreeSelectedBackgroundInitializer.<init>","org.gwtproject.user.cellview.client.CellTree_ResourcesImpl$cellTreeSelectedBackgroundInitializer.get","org.gwtproject.user.cellview.client.CellTree_ResourcesImpl$cellTreeSelectedBackgroundInitializer.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DataResourcePrototype.impl.java.js",
+"lineCount":74,
+"mappings":"A;;;;;;;;;;;MAqBa,qB;;;;CAAA,W;EAAAA,Q;EAAAA;OACU,mEADVA,C;EAAAA;OAEW,kEAFXA,C;;;;;;;;QAKJ,iE,CAA6BC,I,EAAcC,G;EAA3CC,gC;EAAAA,4C;EAAAA,iJ;EAAAA,iB;;;;;;;CAAA,2H,CAA6BF,I,EAAcC,G;EAA3CE,iC;EACLA,gF;EACAA,8E;;;;;;;CAGY,W;EACZC,gF;;;;;;;CAGa,c;EACbC,+E;;;;;;CAGY,U;EACZC,8F;;;;;QAnBS,O;EAAAC,wC;EAAAA,qC;EAAAA;",
+"sources":["DataResourcePrototype.java"],
+"names":["org.gwtproject.resources.client.impl.DataResourcePrototype.<synthetic: ctor_js>","name","uri","org.gwtproject.resources.client.impl.DataResourcePrototype.<synthetic: ctor_create>","org.gwtproject.resources.client.impl.DataResourcePrototype.<init>","org.gwtproject.resources.client.impl.DataResourcePrototype.getName","org.gwtproject.resources.client.impl.DataResourcePrototype.getSafeUri","org.gwtproject.resources.client.impl.DataResourcePrototype.getUrl","org.gwtproject.resources.client.impl.DataResourcePrototype.<clinit>"]
+}

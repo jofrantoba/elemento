@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SafeHtmlHeader.impl.java.js",
+"lineCount":54,
+"mappings":"A;;;;;;;;;;;MAuBa,c;;;;CAAA,W;EAAAA,Q;EAAAA;OAEM,2DAFNA,C;;;;;;;QASJ,gD,CAAwBC,I;EAAxBC,yB;EAAAA,qC;EAAAA,mH;EAAAA,iB;;;;;;CAAA,kG,CAAwBD,I;EAC7BE,kH;EACAA,wE;;;;;;;CAOc,Y;EACdC,wE;;;;;QAnBS,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["SafeHtmlHeader.java"],
+"names":["org.gwtproject.user.cellview.client.SafeHtmlHeader.<synthetic: ctor_js>","text","org.gwtproject.user.cellview.client.SafeHtmlHeader.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.SafeHtmlHeader.<init>","org.gwtproject.user.cellview.client.SafeHtmlHeader.getValue","org.gwtproject.user.cellview.client.SafeHtmlHeader.<clinit>"]
+}

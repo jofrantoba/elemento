@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Id.impl.java.js",
+"lineCount":105,
+"mappings":"A;;;;;;;;;;;;;;MAsBa,E;;;;CAAA,W;EAAAA,Q;EAAAA;OAEI,oCAFJA,C;;;;;;;;QASH,0C,CAAWC,O;EAAXC,yB;EAAAA,2F;EAAAA,iB;;;;;;;CAAA,uE,CAAWD,O;EAAXE,iC;EACNA,uF;EACAA,2E;;;;;;;;QAGM,yB,CAAUC,S;EAAVF,yB;EAAAA,4E;EAAAA,iB;;;;;;;CAAA,sD,CAAUE,S;EAAVD,iC;EACNA,0E;;;;;;;QAQe,uC,CAAWF,O;EAAXI,a;EACfA,8D;;;;;;;QASe,sB,CAAUD,S;EAAVC,a;EACfA,+C;;;;;;CAGW,yD,CAAYD,S;EACvBE,wL;EAEAA,sD;;;;;;;CAIY,gB;EACZC,iD;;;;;QA7CS,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["Id.java"],
+"names":["org.gwtproject.aria.client.Id.<synthetic: ctor_js>","element","org.gwtproject.aria.client.Id.<synthetic: ctor_create>","org.gwtproject.aria.client.Id.<init>","elementId","org.gwtproject.aria.client.Id.of","org.gwtproject.aria.client.Id.init","org.gwtproject.aria.client.Id.getAriaValue","org.gwtproject.aria.client.Id.<clinit>"]
+}

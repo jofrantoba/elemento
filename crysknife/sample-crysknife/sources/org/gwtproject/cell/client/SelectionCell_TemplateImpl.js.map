@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SelectionCell_TemplateImpl.impl.java.js",
+"lineCount":74,
+"mappings":"A;;;;;;;;;;;;;;MAKa,2B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,sC;EAAAA,kD;EAAAA,2E;EAAAA,iB;;;;;CAAA,8D;EAAAC,iC;;;;;;;;CAKoC,8B,CACxBC,I;EACrBC,IAAcC,EAAdD,6B;EACAA,kD;EACAA,kF;EACAA,qC;EACAA,kF;EACAA,2C;EACJA,mG;;;;;;;;CAO+C,4B,CACxBD,I;EACrBG,IAAcD,EAAdC,6B;EACAA,kD;EACAA,kF;EACAA,2D;EACAA,kF;EACAA,2C;EACFA,mG;;;;;QA5Ba,O;EAAAC,8C;EAAAA,2C;EAAAA;",
+"sources":["SelectionCell_TemplateImpl.java"],
+"names":["org.gwtproject.cell.client.SelectionCell_TemplateImpl.<synthetic: ctor_js>","org.gwtproject.cell.client.SelectionCell_TemplateImpl.<synthetic: ctor_create>","org.gwtproject.cell.client.SelectionCell_TemplateImpl.<init>","arg0","org.gwtproject.cell.client.SelectionCell_TemplateImpl.deselected","sb","org.gwtproject.cell.client.SelectionCell_TemplateImpl.selected","org.gwtproject.cell.client.SelectionCell_TemplateImpl.<clinit>"]
+}

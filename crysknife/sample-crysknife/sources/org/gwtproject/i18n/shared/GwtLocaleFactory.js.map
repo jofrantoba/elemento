@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"GwtLocaleFactory.impl.java.js",
+"lineCount":39,
+"mappings":"A;;;;;;;;;MAoBiB,gB;;;;;;;;;;CAaL,wF,CAAsBA,Q,EAAiBC,M,EAAeC,M,EACrDC,O;;;;;;;CAeD,8B,CAAkBC,U;;;;;;CAKlB,c;;;;QAlCK,O;EAAAC,mC;EAAAA;",
+"sources":["GwtLocaleFactory.java"],
+"names":["language","script","region","variant","localeName","org.gwtproject.i18n.shared.GwtLocaleFactory.<clinit>"]
+}

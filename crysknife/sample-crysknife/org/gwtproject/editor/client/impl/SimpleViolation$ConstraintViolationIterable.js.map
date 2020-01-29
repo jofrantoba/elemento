@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SimpleViolation$ConstraintViolationIterable.impl.java.js",
+"lineCount":79,
+"mappings":"A;;;;;;;;;;;;;;;;MAkCe,2B;;;;CAAA,W;EAAAA,Q;EAAAA;OAEoC,4FAFpCA,C;;;;;;;QAIJ,2B,CAA6DC,U;EAA7DC,sC;EAAAA,kD;EAAAA,+H;EAAAA,iB;;;;;;CAAA,wG,CAA6DD,U;EAA7DE,iC;EACLA,+G;;;;;;;CAG+B,Y;EAE/BC,IAAuCC,MAAvCD,oH;EACAA,mI;;;;;;;;CAXS,sC;EAAAE,0F;;;;;;;;CAAA,e;EAAAC,+G;;;;;QAAA,O;EAAAC,8C;EAAAA,2C;EAAAA,qB;EAAAA;",
+"sources":["SimpleViolation.java"],
+"names":["org.gwtproject.editor.client.impl.SimpleViolation$ConstraintViolationIterable.<synthetic: ctor_js>","violations","org.gwtproject.editor.client.impl.SimpleViolation$ConstraintViolationIterable.<synthetic: ctor_create>","org.gwtproject.editor.client.impl.SimpleViolation$ConstraintViolationIterable.<init>","org.gwtproject.editor.client.impl.SimpleViolation$ConstraintViolationIterable.iterator","source","org.gwtproject.editor.client.impl.SimpleViolation$ConstraintViolationIterable.forEach","org.gwtproject.editor.client.impl.SimpleViolation$ConstraintViolationIterable.spliterator","org.gwtproject.editor.client.impl.SimpleViolation$ConstraintViolationIterable.<clinit>"]
+}

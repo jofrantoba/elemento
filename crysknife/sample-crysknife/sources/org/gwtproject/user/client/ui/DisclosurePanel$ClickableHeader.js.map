@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DisclosurePanel$ClickableHeader.impl.java.js",
+"lineCount":85,
+"mappings":"A;;;;;;;;;;;;;;;MAuGsB,e;;;;CAAA,W;EAAAA,Q;EAAAA;oF;;;;;;;QAEV,sD;EAAAC,0B;EAAAA,sC;EAAAA,2I;EAAAA,iB;;;;;;CAAA,mH;EAAAC,gG;EAENA,iH;EACAA,IAAQC,IAARD,yB;EACAA,kJ;EAEAA,2I;EACAA,0E;EACAA,0H;;;;;;;CAIU,kD,CAAqBE,K;EAE/BC;;IAGIA,mEAHJA;IAIIA,kPAJJA;G;;;;;;;;CAhBgB,sC;EAAAC,0F;;;;;;;;CAAA,e;EAAAC,sG;;;;;QAAA,O;EAAAC,kC;EAAAA,+B;EAAAA;",
+"sources":["DisclosurePanel.java"],
+"names":["org.gwtproject.user.client.ui.DisclosurePanel$ClickableHeader.<synthetic: ctor_js>","org.gwtproject.user.client.ui.DisclosurePanel$ClickableHeader.<synthetic: ctor_create>","org.gwtproject.user.client.ui.DisclosurePanel$ClickableHeader.<init>","elem","event","org.gwtproject.user.client.ui.DisclosurePanel$ClickableHeader.onBrowserEvent","org.gwtproject.user.client.ui.DisclosurePanel$ClickableHeader.forEach","org.gwtproject.user.client.ui.DisclosurePanel$ClickableHeader.spliterator","org.gwtproject.user.client.ui.DisclosurePanel$ClickableHeader.<clinit>"]
+}

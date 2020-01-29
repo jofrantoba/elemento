@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"UiConstructor.impl.java.js",
+"lineCount":28,
+"mappings":"A;;;;;;;;;;;;MA+BkB,a;;;;;;QAAA,M;EAAAA,wB;EAAAA,8B;;;;;QAAA,O;EAAAC,gC;EAAAA;",
+"sources":["UiConstructor.java"],
+"names":["org.gwtproject.uibinder.client.UiConstructor.<synthetic: adapt_lambda>","org.gwtproject.uibinder.client.UiConstructor.<clinit>"]
+}

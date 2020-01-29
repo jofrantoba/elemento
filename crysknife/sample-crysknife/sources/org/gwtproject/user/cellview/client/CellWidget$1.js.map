@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CellWidget$1.impl.java.js",
+"lineCount":56,
+"mappings":"A;;;;;;;;;;;;MAkFqE,E;;;;CAAA,W;EAAAA,Q;EAAAA;uE;;;;;;;;QAAA,uD;EAAAC,a;EAAAA,yB;EAAAA,+H;EAAAA,iB;;;;;;CAAA,uG;EAAAC,mF;EAAAA,iC;;;;;;;CAErD,0B,CAASC,K;EAEnBC,wI;;;;;QAJ+D,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["CellWidget.java"],
+"names":["org.gwtproject.user.cellview.client.CellWidget$1.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.CellWidget$1.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.CellWidget$1.<init>","value","org.gwtproject.user.cellview.client.CellWidget$1.update","org.gwtproject.user.cellview.client.CellWidget$1.<clinit>"]
+}

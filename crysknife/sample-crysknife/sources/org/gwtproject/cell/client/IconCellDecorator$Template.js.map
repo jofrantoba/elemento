@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"IconCellDecorator$Template.impl.java.js",
+"lineCount":95,
+"mappings":"A;;;;;;;;;;;;;MAyCY,Q;;;;;;;;;CAIC,sI,CAAoBA,O,EAAkBC,I,EAAeC,Y;;;;;;;;CAKrD,uG,CAA8BC,M,EAAiBC,K;;;;;;;;CAK/C,uG,CAA8BD,M,EAAiBC,K;;;;;;;;CAK/C,oG,CAA2BD,M,EAAiBC,K;;;;;QAjBrD,qE;EAAAC,yG;;;;;QAFQ,O;EAAAC,2B;EAAAA,wB;EAERA,0H;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFQ;;",
+"sources":["IconCellDecorator.java"],
+"names":["padding","icon","cellContents","styles","image","org.gwtproject.cell.client.IconCellDecorator$Template.<synthetic: getter>","org.gwtproject.cell.client.IconCellDecorator$Template.<clinit>"]
+}

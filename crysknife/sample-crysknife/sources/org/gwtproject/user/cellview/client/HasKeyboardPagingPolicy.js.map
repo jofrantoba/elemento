@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasKeyboardPagingPolicy.impl.java.js",
+"lineCount":30,
+"mappings":"A;;;;;;;;;;;MAqBiB,uB;;;;;;CAuCM,2B;;;;;;CAQhB,2G,CAA6CA,M;;;;QA/CnC,O;EAAAC,0C;EAAAA;",
+"sources":["HasKeyboardPagingPolicy.java"],
+"names":["policy","org.gwtproject.user.cellview.client.HasKeyboardPagingPolicy.<clinit>"]
+}

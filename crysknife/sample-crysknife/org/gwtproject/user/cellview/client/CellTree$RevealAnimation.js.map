@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CellTree$RevealAnimation.impl.java.js",
+"lineCount":138,
+"mappings":"A;;;;;;;;;;;;;;;MAqMsB,e;;;;CAAA,W;EAAAA,Q;EAAAA;OAcV,gFAdUA,C;EAAAA;OAmBd,sEAnBcA,K;EAAAA;OAwBV,uEAxBUA,S;EAAAA;OA6BF,0EA7BEA,C;EAAAA;OAkCF,+EAlCEA,C;;;;;;QAOY,U;EAAAC,0B;EAC5BA,mC;;;;;;QA+BM,S;EAAAC,sC;EAAAA,kF;EAAAA,iB;;;;;CAAA,qE;EAAAC,2E;;;;;;CAIO,c;EACbC,mF;;;;;;CAIa,W;EACbC;GACEA,0PADFA;GAEEA,iQAFFA;GAGEA,yJAHFA;GAIEA,oPAJFA;;GAMEA,oPANFA;G;;;;;;;CAWa,kB,CAAgBC,Q;EAC7BC;GACEA,IAAOC,SAAPD,0FADFA;GAEEA,gQAFFA;;GAIEA,IAAOC,WAAPD,kGAJFA;GAKEA,kQALFA;G;EASAA,+P;EACAA,iQ;;;;;;;;CAUG,gH,CAA4BE,I,EAAcC,kB;EAE7CC,kB;EAGAA,iG;EACAA,0J;EACAA,kK;EACAA,+J;EAEAA;GAEEA,IAAIC,QAAJD,0BAFFA;GAGEA,IAAIE,UAAJF,gKAHFA;GAIEA;IAGEA,2EAHFA;IAJFA;GASEA,0BATFA;;GAYEA,mFAZFA;G;;;;;CAmBW,2E;EACXG;GACEA,yJADFA;;GAGEA,yPAHFA;GAIEA,wLAJFA;G;EAMAA,wJ;EACAA,0J;EACAA,6F;EACAA,4F;EACAA,uF;;;;;QAzHgB,O;EAAAC,kC;EAAAA,+B;EAAAA;",
+"sources":["CellTree.java"],
+"names":["org.gwtproject.user.cellview.client.CellTree$RevealAnimation.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.CellTree$RevealAnimation.create","org.gwtproject.user.cellview.client.CellTree$RevealAnimation.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.CellTree$RevealAnimation.<init>","org.gwtproject.user.cellview.client.CellTree$RevealAnimation.onComplete","org.gwtproject.user.cellview.client.CellTree$RevealAnimation.onStart","progress","org.gwtproject.user.cellview.client.CellTree$RevealAnimation.onUpdate","curHeight","node","isAnimationEnabled","org.gwtproject.user.cellview.client.CellTree$RevealAnimation.animate","duration","childCount","org.gwtproject.user.cellview.client.CellTree$RevealAnimation.cleanup","org.gwtproject.user.cellview.client.CellTree$RevealAnimation.<clinit>"]
+}

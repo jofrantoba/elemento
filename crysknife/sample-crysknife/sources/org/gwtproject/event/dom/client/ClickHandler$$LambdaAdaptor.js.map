@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ClickHandler$$LambdaAdaptor.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;MAoBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;2E;EAAAA,sI;;;;;;CAAA,4H;EAAAC,iC;EAAAA,8E;;;;;;CAAA,qD;;GAAAC,yF;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["ClickHandler.java"],
+"names":["org.gwtproject.event.dom.client.ClickHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.dom.client.ClickHandler$$LambdaAdaptor.<init>","org.gwtproject.event.dom.client.ClickHandler$$LambdaAdaptor.onClick","org.gwtproject.event.dom.client.ClickHandler$$LambdaAdaptor.<clinit>"]
+}

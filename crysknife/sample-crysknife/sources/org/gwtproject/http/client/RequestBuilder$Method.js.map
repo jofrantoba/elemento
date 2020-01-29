@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"RequestBuilder$Method.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;MAyB4B,M;;;;CAAA,W;EAAAA,Q;EAAAA;OACH,yDADGA,C;;;;;;;QAGhB,yB,CAAcC,I;EAAdC,iB;EAAAA,6B;EAAAA,0F;EAAAA,iB;;;;;;CAAA,yE,CAAcD,I;EAAdE,iC;EACNA,sE;;;;;;;CAIY,Q;EACZC,sE;;;;;QATsB,O;EAAAC,yB;EAAAA,sB;EAAAA;",
+"sources":["RequestBuilder.java"],
+"names":["org.gwtproject.http.client.RequestBuilder$Method.<synthetic: ctor_js>","name","org.gwtproject.http.client.RequestBuilder$Method.<synthetic: ctor_create>","org.gwtproject.http.client.RequestBuilder$Method.<init>","org.gwtproject.http.client.RequestBuilder$Method.toString","org.gwtproject.http.client.RequestBuilder$Method.<clinit>"]
+}

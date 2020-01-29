@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Context2d$$Overlay.impl.java.js",
+"lineCount":141,
+"mappings":"A;;;;;;;;;;;;;;;MAqCa,kB;;;;;;;;;;QA6MO,kG,WAAWA,C,EAAUC,C,EAAUC,M,EAAeC,U,EACrDC,Q;EADOC,6B;EAEhBA,wD;;;;;;;;;QAgHyB,oK,WAA4BC,K,EAAkBC,U;EAA9CC,6B;EACzBA,gE;;;;;;;;;QAoByB,mK,WAA2BF,K,EAAkBC,U;EAA7CC,6B;EACzBA,gE;;;;;;;QA8bgB,qF,WAAoBC,c;EAApBC,6B;EAChBA,uE;;;;;;;QA4BgB,wI,WAAsCC,S;EAAtCC,6B;EAChBA,6D;;;;;;;QAmBgB,qH,WAAmBC,O;EAAnBC,6B;EAChBA,0C;;;;;;;QAmBgB,uH,WAAqBC,Q;EAArBC,6B;EAChBA,4C;;;;;;;QAqFgB,uF,WAAsBC,gB;EAAtBC,6B;EAChBA,2E;;;;;;;QAmBgB,yH,WAAuBC,K;EAAvBC,6B;EAChBA,0C;;;;;;;QAmBgB,+H,WAA6BC,Q;EAA7BC,6B;EAChBA,gD;;;;;QAv9BS,O;EAAAC,qC;EAAAA,kC;;;;;;;;;;;;;;;;;;;;AAqLX;mBAI2B,iEAJ3B;",
+"sources":["Context2d.java"],
+"names":["x","y","radius","startAngle","endAngle","org.gwtproject.canvas.dom.client.Context2d$$Overlay.arc__$devirt","image","repetition","org.gwtproject.canvas.dom.client.Context2d$$Overlay.createPattern__$devirt","fillStyleColor","org.gwtproject.canvas.dom.client.Context2d$$Overlay.setFillStyle__$devirt","composite","org.gwtproject.canvas.dom.client.Context2d$$Overlay.setGlobalCompositeOperation__$devirt","lineCap","org.gwtproject.canvas.dom.client.Context2d$$Overlay.setLineCap__$devirt","lineJoin","org.gwtproject.canvas.dom.client.Context2d$$Overlay.setLineJoin__$devirt","strokeStyleColor","org.gwtproject.canvas.dom.client.Context2d$$Overlay.setStrokeStyle__$devirt","align","org.gwtproject.canvas.dom.client.Context2d$$Overlay.setTextAlign__$devirt","baseline","org.gwtproject.canvas.dom.client.Context2d$$Overlay.setTextBaseline__$devirt","org.gwtproject.canvas.dom.client.Context2d$$Overlay.<clinit>"]
+}

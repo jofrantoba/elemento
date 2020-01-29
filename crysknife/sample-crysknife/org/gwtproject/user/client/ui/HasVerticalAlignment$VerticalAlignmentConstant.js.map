@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasVerticalAlignment$VerticalAlignmentConstant.impl.java.js",
+"lineCount":47,
+"mappings":"A;;;;;MA2CsB,yB;;;;CAAA,W;EAAAA,Q;EAAAA;OACG,oGADHA,C;;;;;;;QAGV,yB,CAAiCC,mB;EAAjCC,oC;EAAAA,gD;EAAAA,qI;EAAAA,iB;;;;;;CAAA,qG,CAAiCD,mB;EAAjCE,iC;EACNA,gI;;;;;;CAQY,0B;EACZC,iH;;;;;QAbgB,O;EAAAC,4C;EAAAA,yC;EAAAA;",
+"sources":["HasVerticalAlignment.java"],
+"names":["org.gwtproject.user.client.ui.HasVerticalAlignment$VerticalAlignmentConstant.<synthetic: ctor_js>","verticalAlignString","org.gwtproject.user.client.ui.HasVerticalAlignment$VerticalAlignmentConstant.<synthetic: ctor_create>","org.gwtproject.user.client.ui.HasVerticalAlignment$VerticalAlignmentConstant.<init>","org.gwtproject.user.client.ui.HasVerticalAlignment$VerticalAlignmentConstant.getVerticalAlignString","org.gwtproject.user.client.ui.HasVerticalAlignment$VerticalAlignmentConstant.<clinit>"]
+}

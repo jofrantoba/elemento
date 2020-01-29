@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"KeyPressHandler$$LambdaAdaptor.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;MAoBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;8E;EAAAA,4I;;;;;;CAAA,kI;EAAAC,iC;EAAAA,iF;;;;;;CAAA,2D;;GAAAC,4F;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["KeyPressHandler.java"],
+"names":["org.gwtproject.event.dom.client.KeyPressHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.dom.client.KeyPressHandler$$LambdaAdaptor.<init>","org.gwtproject.event.dom.client.KeyPressHandler$$LambdaAdaptor.onKeyPress","org.gwtproject.event.dom.client.KeyPressHandler$$LambdaAdaptor.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ErrorCollector.impl.java.js",
+"lineCount":125,
+"mappings":"A;;;;;;;;;;;;;;;;;;MA0BM,c;;;;CAAA,W;EAAAA,Q;EAAAA;OACmC,+DADnCA,C;EAAAA;OAEW,kEAFXA,C;EAAAA;OAGsB,8DAHtBA,C;;;;;;;QAKG,uB,CAAiCC,M;EAAjCC,yB;EAAAA,qC;EAAAA,0F;EAAAA,iB;;;;;;CAAA,uE,CAAiCD,M;EAAjCE,2D;EAAAA,mE;EACLA,iD;EACAA,sG;;;;;;;;CAIc,sD,CAA0BC,G;EACxCC,IAA6BC,QAA7BD,qH;EACAA;GACEA,OADFA;G;EAKAA,IAAkBJ,MAAlBI,4B;EACAA,8J;EACAA,oG;EACAA,mJ;EACAA,e;EAGAA,IAAmBE,QAAnBF,+B;EACAA;GAEEA,IAAkBG,UAAlBH,sIAFFA;GAGEA,IAAII,YAAJJ,oEAHFA;GAIEA;IAAAA,IAAiBK,KAAjBL,6EAAAA;IACEA;KAEEA,8IAFFA;;KAIEA,uJAJFA;KAKEA,0IALFA;KADFA;IAJFA;GAkBEA,kDAlBFA;GAqBEA;IACEA,IAAkBM,WAAlBN,uIADFA;IAEEA;KAAAA,IAAiBO,CAAjBP,+EAAAA;KAEEA;MACEA,mBADFA;MAFFA;KAFFA;IArBFA;G;;;;;;;;;CAkCiB,mD,CAAuBD,G;EAExCS,IAAmBN,QAAnBM,+B;EACAA;GAOEA;IACEA,mNADFA;IAEEA,mKAFFA;;IAIEA,6JAJFA;IAPFA;G;EAcAA,Y;;;;;CA7EE,2D;EACJV,mI;;;;;QADI,O;EAAAW,iC;EAAAA,8B;EAAAA;",
+"sources":["ErrorCollector.java"],
+"names":["org.gwtproject.editor.client.impl.ErrorCollector.<synthetic: ctor_js>","errors","org.gwtproject.editor.client.impl.ErrorCollector.<synthetic: ctor_create>","org.gwtproject.editor.client.impl.ErrorCollector.<init>","ctx","org.gwtproject.editor.client.impl.ErrorCollector.endVisit","delegate","asErrors","tryConsume","prefixLength","error","accumulator","e","org.gwtproject.editor.client.impl.ErrorCollector.visit","org.gwtproject.editor.client.impl.ErrorCollector.<clinit>"]
+}

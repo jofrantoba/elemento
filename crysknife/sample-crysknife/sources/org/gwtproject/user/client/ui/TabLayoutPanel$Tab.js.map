@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TabLayoutPanel$Tab.impl.java.js",
+"lineCount":134,
+"mappings":"A;;;;;;;;;;;;;;;;;;;MAsGgB,G;;;;CAAA,W;EAAAA,Q;EAAAA;uE;EAAAA;OACI,0DADJA,C;EAAAA;OAEI,oEAFJA,S;;;;;;;;QAIL,2F,cAAWC,K;EAAXC,c;EAAAA,0B;EAAAA,0K;EAAAA,iB;;;;;;;CAAA,2I,cAAWD,K;EAAXE,mF;EACLA,uL;EACAA,kM;EAEAA,8D;EACAA,iH;EACAA,gP;EAEAA,gK;;;;;;;CAGyB,+D,CAA6BC,O;EACtDC,+J;;;;;;;;CAIa,8C,CAAcC,C;EAK3BC,IAAIC,KAAJD,4I;EACAA;GAKEA,+DALFA;;GAQEA,iGARFA;G;;;;;;CAYU,sB,CAAoBE,Q;EAC9BC;GACEA,2DADFA;;GAGEA,8DAHFA;G;;;;;;;CAQU,iD,CAAiBJ,C;EAC3BK,iF;EACAA,2D;EACAA,kF;;;;;;;CAIgB,uB;EAChBC,oN;;;;;;;;CAvDU,sC;EAAAC,0F;;;;;;;;CAAA,e;EAAAC,sG;;;;;QAAA,O;EAAAC,sB;EAAAA,mB;EAAAA;",
+"sources":["TabLayoutPanel.java"],
+"names":["org.gwtproject.user.client.ui.TabLayoutPanel$Tab.<synthetic: ctor_js>","child","org.gwtproject.user.client.ui.TabLayoutPanel$Tab.<synthetic: ctor_create>","org.gwtproject.user.client.ui.TabLayoutPanel$Tab.<init>","handler","org.gwtproject.user.client.ui.TabLayoutPanel$Tab.addClickHandler","w","org.gwtproject.user.client.ui.TabLayoutPanel$Tab.remove","index","selected","org.gwtproject.user.client.ui.TabLayoutPanel$Tab.setSelected","org.gwtproject.user.client.ui.TabLayoutPanel$Tab.setWidget","org.gwtproject.user.client.ui.TabLayoutPanel$Tab.getContainerElement","org.gwtproject.user.client.ui.TabLayoutPanel$Tab.forEach","org.gwtproject.user.client.ui.TabLayoutPanel$Tab.spliterator","org.gwtproject.user.client.ui.TabLayoutPanel$Tab.<clinit>"]
+}

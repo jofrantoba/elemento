@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DecoratedStackPanel.impl.java.js",
+"lineCount":124,
+"mappings":"A;;;;;;;;;;;;;;;;MAiEa,mB;;;;CAAA,W;EAAAA,Q;;;;;;QASJ,S;EAAAC,8B;EAAAA,0C;EAAAA,uE;EAAAA,iB;;;;;CAAA,0D;EACLC,yD;EACAA,yI;;;;;;;CAIM,sD;EAENC,IAAQC,KAARD,yB;EACAA,IAAQE,KAARF,yB;EACAA,sG;EACAA,mI;EACAA,8H;EACAA,8H;EAGAA,SAASG,CAATH;GACEA,iPADFA;G;EAKAA,a;;;;;;;;CAIM,wF,CAA0BI,U;EAChCC,IAAQH,KAARG,sE;EACAA,IAAQC,EAARD,oE;EACAA,IAAQE,EAARF,iE;EACAA,kE;;;;;;;;CAtCS,sC;EAAAG,0F;;;;;;;;CAAA,e;EAAAC,sG;;;;;QAAA,O;EAAAC,sC;EAAAA,mC;EAAAA,qB;EAGXA,kM;;;;;;;;;;;;;;;;;;;;;;;;;;AAFA;oBAA2B,sEAA3B,6B;AADW;oBAGmB,4EAHnB;",
+"sources":["DecoratedStackPanel.java"],
+"names":["org.gwtproject.user.client.ui.DecoratedStackPanel.<synthetic: ctor_js>","org.gwtproject.user.client.ui.DecoratedStackPanel.<synthetic: ctor_create>","org.gwtproject.user.client.ui.DecoratedStackPanel.<init>","org.gwtproject.user.client.ui.DecoratedStackPanel.createHeaderElem","table","tbody","i","headerElem","org.gwtproject.user.client.ui.DecoratedStackPanel.getHeaderTextElem","tr","td","org.gwtproject.user.client.ui.DecoratedStackPanel.forEach","org.gwtproject.user.client.ui.DecoratedStackPanel.spliterator","org.gwtproject.user.client.ui.DecoratedStackPanel.<clinit>"]
+}

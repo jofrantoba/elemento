@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NotificationMole_BinderImpl_GenBundleImpl$1.impl.java.js",
+"lineCount":103,
+"mappings":"A;;;;;;;;;;;;;MAQyF,E;;;;CAAA,W;EAAAA,Q;EAAAA;gG;EAAAA;OAInE,sFAJmEA,S;;;;;;;QAAA,gF;EAAAC,a;EAAAA,yB;EAAAA,iL;EAAAA,iB;;;;;;CAAA,yJ;EAAAC,4G;EAAAA,iC;;;;;;;CACrE,W;EACZC,e;;;;;;;CAGa,kB;EACbC;GACEA,mGADFA;GAEEA,6DAFFA;GAGEA,YAHFA;G;EAKAA,a;;;;;;;CAEY,W;EACZC,ytB;;;;;;;CAEsB,a;EACtBC,qB;;;;;;;CAEsB,Y;EACtBC,qB;;;;;;;CAEsB,oB;EACtBC,qB;;;;;QAvBiF,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["NotificationMole_BinderImpl_GenBundleImpl.java"],
+"names":["org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundleImpl$1.<synthetic: ctor_js>","org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundleImpl$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundleImpl$1.<init>","org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundleImpl$1.getName","org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundleImpl$1.ensureInjected","org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundleImpl$1.getText","org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundleImpl$1.container","org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundleImpl$1.centered","org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundleImpl$1.notificationText","org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundleImpl$1.<clinit>"]
+}

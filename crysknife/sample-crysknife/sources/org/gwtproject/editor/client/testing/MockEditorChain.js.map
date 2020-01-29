@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"MockEditorChain.impl.java.js",
+"lineCount":119,
+"mappings":"A;;;;;;;;;;;;;;;;;MA2Ba,e;;;;CAAA,W;EAAAA,Q;EAAAA;OACkC,iEADlCA,C;;;;;;;QAAA,S;EAAAC,0B;EAAAA,sC;EAAAA,0E;EAAAA,iB;;;;;CAAA,6D;EAAAC,iC;EAAAA,uE;;;;;;;CAIC,oF,CAASC,M,EAA+BC,S;EAClDC,+C;EACAA,4F;;;;;;CAGU,kE,CAA8BD,S;EACxCE,6C;EACAA,6F;;;;;;;CAGO,oE,CAAgCF,S;EACvCG,gC;;;;;;;CAGa,sE,CAAkCH,S;EAC/CI,uR;;;;;;;;;CAnBS,+D;EAAAH,8K;;;;;;;;CAAA,6C;EAAAC,sJ;;;;;;;;;CAAA,+C;EAAAC,+J;;;;;CAAA,+D;EACXL,wJ;;;;;QADW,O;EAAAO,kC;EAAAA,+B;EAAAA;",
+"sources":["MockEditorChain.java"],
+"names":["org.gwtproject.editor.client.testing.MockEditorChain.<synthetic: ctor_js>","org.gwtproject.editor.client.testing.MockEditorChain.<synthetic: ctor_create>","org.gwtproject.editor.client.testing.MockEditorChain.<init>","object","subEditor","org.gwtproject.editor.client.testing.MockEditorChain.attach","org.gwtproject.editor.client.testing.MockEditorChain.detach","org.gwtproject.editor.client.testing.MockEditorChain.getValue","org.gwtproject.editor.client.testing.MockEditorChain.isAttached","org.gwtproject.editor.client.testing.MockEditorChain.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"PrimitiveValueAttribute.impl.java.js",
+"lineCount":78,
+"mappings":"A;;;;;;;;;;;MAoBM,uB;;;;CAAA,W;EAAAA,Q;;;;;;;;;QAEG,yB,CAA+BC,I;EAA/BC,kC;EAAAA,8C;EAAAA,4F;EAAAA,iB;;;;;;;CAAA,2E,CAA+BD,I;EACpCE,yE;;;;;;;;;;QAGK,2C,CAA+BF,I,EAAaG,Y;EAA5CF,kC;EAAAA,8C;EAAAA,4H;EAAAA,iB;;;;;;;;CAAA,6F,CAA+BD,I,EAAaG,Y;EACjDD,yG;;;;;;;;CAIe,kC,CAAiBE,K;EAChCC,qD;;;;;QAZE,O;EAAAC,0C;EAAAA,uC;EAAAA;",
+"sources":["PrimitiveValueAttribute.java"],
+"names":["org.gwtproject.aria.client.PrimitiveValueAttribute.<synthetic: ctor_js>","name","org.gwtproject.aria.client.PrimitiveValueAttribute.<synthetic: ctor_create>","org.gwtproject.aria.client.PrimitiveValueAttribute.<init>","defaultValue","value","org.gwtproject.aria.client.PrimitiveValueAttribute.getSingleValue","org.gwtproject.aria.client.PrimitiveValueAttribute.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DomAnchorBuilder.impl.java.js",
+"lineCount":127,
+"mappings":"A;;;;;;;;;;;;;;;MAyBa,gB;;;;CAAA,W;EAAAA,Q;;;;;;;QAGX,yD,CAAgCC,Q;EAAhCC,2B;EAAAA,uC;EAAAA,gI;EAAAA,iB;;;;;;CAAA,2G,CAAgCD,Q;EAC9BE,gI;;;;;;;;CAImB,6B,CAAiBC,S;EACpCC,oG;EACAA,Y;;;;;;;;CAImB,8C,CAAaC,I;EAChCC,kM;EACAA,Y;;;;;;;;CAImB,wB,CAAuBD,I;EAC1CC,0F;EACAA,Y;;;;;;;;CAImB,4B,CAAgBC,Q;EACnCC,kG;EACAA,Y;;;;;;;;CAImB,wB,CAAYC,I;EAC/BC,0F;EACAA,Y;;;;;;;;CAImB,uB,CAAWC,G;EAC9BC,wF;EACAA,Y;;;;;;;;CAImB,0B,CAAcC,M;EACjCC,8F;EACAA,Y;;;;;;;;CAImB,wB,CAAYC,I;EAC/BC,0F;EACAA,Y;;;;;QApDS,O;EAAAC,mC;EAAAA,gC;EAAAA;",
+"sources":["DomAnchorBuilder.java"],
+"names":["org.gwtproject.dom.builder.client.DomAnchorBuilder.<synthetic: ctor_js>","delegate","org.gwtproject.dom.builder.client.DomAnchorBuilder.<synthetic: ctor_create>","org.gwtproject.dom.builder.client.DomAnchorBuilder.<init>","accessKey","org.gwtproject.dom.builder.client.DomAnchorBuilder.accessKey","href","org.gwtproject.dom.builder.client.DomAnchorBuilder.href","hreflang","org.gwtproject.dom.builder.client.DomAnchorBuilder.hreflang","name","org.gwtproject.dom.builder.client.DomAnchorBuilder.name","rel","org.gwtproject.dom.builder.client.DomAnchorBuilder.rel","target","org.gwtproject.dom.builder.client.DomAnchorBuilder.target","type","org.gwtproject.dom.builder.client.DomAnchorBuilder.type","org.gwtproject.dom.builder.client.DomAnchorBuilder.<clinit>"]
+}

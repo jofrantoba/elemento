@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasNativeEvent.impl.java.js",
+"lineCount":32,
+"mappings":"A;;;;;;;;;;MAoBiB,c;;;;;;CAOH,kB;;;;;;QAPG,M;EAAAA,yB;EAAAA,8B;;;;;QAAA,O;EAAAC,iC;EAAAA;",
+"sources":["HasNativeEvent.java"],
+"names":["org.gwtproject.event.dom.client.HasNativeEvent.<synthetic: adapt_lambda>","org.gwtproject.event.dom.client.HasNativeEvent.<clinit>"]
+}

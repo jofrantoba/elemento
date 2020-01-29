@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"InitializeHandler.impl.java.js",
+"lineCount":32,
+"mappings":"A;;;;;;;;;;MAmBiB,iB;;;;;;CAMV,mE,CAA6BA,K;;;;;;QANnB,M;EAAAC,4B;EAAAA,8B;;;;;QAAA,O;EAAAC,oC;EAAAA;",
+"sources":["InitializeHandler.java"],
+"names":["event","org.gwtproject.event.logical.shared.InitializeHandler.<synthetic: adapt_lambda>","org.gwtproject.event.logical.shared.InitializeHandler.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ArticleRoleImpl.impl.java.js",
+"lineCount":72,
+"mappings":"A;;;;;;;;;;;;;;MAsBM,e;;;;CAAA,W;EAAAA,Q;;;;;;;QAEJ,yB,CAAuBC,Q;EAAvBC,0B;EAAAA,sC;EAAAA,wF;EAAAA,iB;;;;;;CAAA,mE,CAAuBD,Q;EACrBE,4E;;;;;;;;CAIY,yD,CAA6BC,O;EACzCC,4G;;;;;;;CAIU,4D,CAAgCD,O;EAC1CE,wG;;;;;;;;CAIU,mG,CAA6BF,O,EAAuBG,K;EAC9DC,4M;;;;;QAlBE,O;EAAAC,kC;EAAAA,+B;EAAAA;",
+"sources":["ArticleRoleImpl.java"],
+"names":["org.gwtproject.aria.client.ArticleRoleImpl.<synthetic: ctor_js>","roleName","org.gwtproject.aria.client.ArticleRoleImpl.<synthetic: ctor_create>","org.gwtproject.aria.client.ArticleRoleImpl.<init>","element","org.gwtproject.aria.client.ArticleRoleImpl.getAriaExpandedState","org.gwtproject.aria.client.ArticleRoleImpl.removeAriaExpandedState","value","org.gwtproject.aria.client.ArticleRoleImpl.setAriaExpandedState","org.gwtproject.aria.client.ArticleRoleImpl.<clinit>"]
+}

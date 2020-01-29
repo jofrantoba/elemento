@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ResizeLayoutPanel$Impl$Delegate.impl.java.js",
+"lineCount":30,
+"mappings":"A;;;;;;;;;MAyD8B,Q;;;;;CAInB,Y;;;;;;QAJmB,M;EAAAA,mB;EAAAA,8B;;;;;QAAA,O;EAAAC,2B;EAAAA;",
+"sources":["ResizeLayoutPanel.java"],
+"names":["org.gwtproject.user.client.ui.ResizeLayoutPanel$Impl$Delegate.<synthetic: adapt_lambda>","org.gwtproject.user.client.ui.ResizeLayoutPanel$Impl$Delegate.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ListDataProvider.impl.java.js",
+"lineCount":157,
+"mappings":"A;;;;;;;;;;;;;;;MA4Ca,gB;;;;CAAA,W;EAAAA,Q;EAAAA;OA4aS,2DA5aTA,C;;;;;;;;QAibJ,S;EAAAC,2B;EAAAA,uC;EAAAA,iE;EAAAA,iB;;;;;;CAAA,oD;EACLC,2K;;;;;;;;;QAcK,uB,CAAyBC,U;EAAzBF,2B;EAAAA,uC;EAAAA,yF;EAAAA,iB;;;;;;;CAAA,kE,CAAyBE,U;EAC9BD,kI;;;;;;;;;QASK,+C,CAA2DE,W;EAA3DH,2B;EAAAA,uC;EAAAA,kH;EAAAA,iB;;;;;;;CAAA,0F,CAA2DG,W;EAChEF,kL;;;;;;;;;;QAgBK,+D,CAAyBC,U,EAAsDC,W;EAA/EH,2B;EAAAA,uC;EAAAA,8I;EAAAA,iB;;;;;;;;CAAA,0G,CAAyBE,U,EAAsDC,W;EACpFF,iH;EACAA,sM;;;;;CAWU,S;EACVG,2I;;;;;;CAoBa,W;EACbC,wE;;;;;CAiBU,W;EACVC,+G;;;;;;CAgBU,yB,CAAgBJ,U;EAC1BK,sM;EACAA,6I;EACAA,mN;EACAA,6I;EACAA,iB;;;;;;;CAIa,oD,CAAqDC,O;EAClEC,IAAIC,IAAJD,2E;EACAA;GAEEA,4JAFFA;G;;;;;QA3iBS,O;EAAAE,mC;EAAAA,gC;EAAAA;",
+"sources":["ListDataProvider.java"],
+"names":["org.gwtproject.view.client.ListDataProvider.<synthetic: ctor_js>","org.gwtproject.view.client.ListDataProvider.<synthetic: ctor_create>","org.gwtproject.view.client.ListDataProvider.<init>","listToWrap","keyProvider","org.gwtproject.view.client.ListDataProvider.flush","org.gwtproject.view.client.ListDataProvider.getList","org.gwtproject.view.client.ListDataProvider.refresh","org.gwtproject.view.client.ListDataProvider.setList","display","org.gwtproject.view.client.ListDataProvider.onRangeChanged","size","org.gwtproject.view.client.ListDataProvider.<clinit>"]
+}

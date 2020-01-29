@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"GestureStartHandler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;MAoBiB,mB;;;;;;CAOV,mE,CAAiCA,K;;;;;;QAPvB,M;EAAAC,8B;EAAAA,8B;;;;;QAAA,O;EAAAC,sC;EAAAA;",
+"sources":["GestureStartHandler.java"],
+"names":["event","org.gwtproject.event.dom.client.GestureStartHandler.<synthetic: adapt_lambda>","org.gwtproject.event.dom.client.GestureStartHandler.<clinit>"]
+}

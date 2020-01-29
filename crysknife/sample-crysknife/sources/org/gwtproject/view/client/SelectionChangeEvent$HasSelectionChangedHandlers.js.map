@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SelectionChangeEvent$HasSelectionChangedHandlers.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;MA4CmB,2B;;;;;;;CAOK,oF,CAAkCA,O;;;;QAPvC,O;EAAAC,8C;EAAAA;",
+"sources":["SelectionChangeEvent.java"],
+"names":["handler","org.gwtproject.view.client.SelectionChangeEvent$HasSelectionChangedHandlers.<clinit>"]
+}

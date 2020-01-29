@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasKeyProvider.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;MAyBiB,c;;;;;;CAO2B,kB;;;;;;;QAP3B,M;EAAAA,yB;EAAAA,iE;;;;;QAAA,O;EAAAC,iC;EAAAA;",
+"sources":["HasKeyProvider.java"],
+"names":["org.gwtproject.view.client.HasKeyProvider.<synthetic: adapt_lambda>","org.gwtproject.view.client.HasKeyProvider.<clinit>"]
+}

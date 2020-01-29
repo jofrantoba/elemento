@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"LIBuilder.impl.java.js",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MAoBiB,S;;;;QAAA,O;EAAAA,4B;EAAAA;",
+"sources":["LIBuilder.java"],
+"names":["org.gwtproject.dom.builder.shared.LIBuilder.<clinit>"]
+}

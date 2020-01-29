@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CellTree$SlideAnimation.impl.java.js",
+"lineCount":84,
+"mappings":"A;;;;;;;;;MAqUsB,c;;;;CAAA,W;EAAAA,Q;;;;;;QAMW,U;EAAAC,yB;EAC3BA,kC;;;;;;QAMM,S;EAAAC,qC;EAAAA,iF;EAAAA,iB;;;;;CAAA,oE;EAAAC,6E;;;;;;CAIO,c;EACbC,gK;EACAA,2J;EACAA,6J;EACAA,uB;;;;;;CAIa,W;EACbC,oB;EACAA;GACEA,sUADFA;;GAGEA,2PAHFA;G;EAKAA,uQ;;;;;;;CAIa,kB,CAAgBC,Q;EAC7BC,mC;EACAA;GACEA,IAAOC,MAAPD,mGADFA;GAEEA,gQAFFA;;GAIEA,IAAOC,QAAPD,2FAJFA;GAKEA,kQALFA;G;;;;;QAtCgB,O;EAAAE,iC;EAAAA,8B;EAAAA;",
+"sources":["CellTree.java"],
+"names":["org.gwtproject.user.cellview.client.CellTree$SlideAnimation.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.CellTree$SlideAnimation.create","org.gwtproject.user.cellview.client.CellTree$SlideAnimation.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.CellTree$SlideAnimation.<init>","org.gwtproject.user.cellview.client.CellTree$SlideAnimation.onComplete","org.gwtproject.user.cellview.client.CellTree$SlideAnimation.onStart","progress","org.gwtproject.user.cellview.client.CellTree$SlideAnimation.onUpdate","curTop","org.gwtproject.user.cellview.client.CellTree$SlideAnimation.<clinit>"]
+}

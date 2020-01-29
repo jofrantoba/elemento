@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HeaderPanel$WidgetProviderImpl.impl.java.js",
+"lineCount":66,
+"mappings":"A;;;;;;;;;;;;;;MA+CgB,kB;;;;CAAA,W;EAAAA,Q;EAAAA;mF;;;;;;;QAAA,kD;EAAAC,6B;EAAAA,yC;EAAAA,sI;EAAAA,iB;;;;;;CAAA,8G;EAAAC,+F;EAAAA,iC;;;;;;;;CAEE,U,CAAQC,K;EACpBC;;IAEIA,6IAFJA;;IAIIA,8IAJJA;;IAMIA,6IANJA;G;EAQAA,2E;;;;;QAXU,O;EAAAC,qC;EAAAA,kC;EAAAA;",
+"sources":["HeaderPanel.java"],
+"names":["org.gwtproject.user.client.ui.HeaderPanel$WidgetProviderImpl.<synthetic: ctor_js>","org.gwtproject.user.client.ui.HeaderPanel$WidgetProviderImpl.<synthetic: ctor_create>","org.gwtproject.user.client.ui.HeaderPanel$WidgetProviderImpl.<init>","index","org.gwtproject.user.client.ui.HeaderPanel$WidgetProviderImpl.get","org.gwtproject.user.client.ui.HeaderPanel$WidgetProviderImpl.<clinit>"]
+}

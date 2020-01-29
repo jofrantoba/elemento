@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DomHeadBuilder.impl.java.js",
+"lineCount":66,
+"mappings":"A;;;;;;;;;;;;;;;;MAwBa,c;;;;CAAA,W;EAAAA,Q;;;;;;;QAGX,yD,CAA8BC,Q;EAA9BC,yB;EAAAA,qC;EAAAA,8H;EAAAA,iB;;;;;;CAAA,yG,CAA8BD,Q;EAC5BE,gJ;;;;;;;;CAIiB,+C,CAAcC,I;EAC/BC,kE;;;;;;;;CAIiB,wB,CAAYC,I;EAC7BC,kE;;;;;QAdS,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["DomHeadBuilder.java"],
+"names":["org.gwtproject.dom.builder.client.DomHeadBuilder.<synthetic: ctor_js>","delegate","org.gwtproject.dom.builder.client.DomHeadBuilder.<synthetic: ctor_create>","org.gwtproject.dom.builder.client.DomHeadBuilder.<init>","html","org.gwtproject.dom.builder.client.DomHeadBuilder.html","text","org.gwtproject.dom.builder.client.DomHeadBuilder.text","org.gwtproject.dom.builder.client.DomHeadBuilder.<clinit>"]
+}

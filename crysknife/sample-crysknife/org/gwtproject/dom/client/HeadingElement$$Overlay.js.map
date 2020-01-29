@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HeadingElement$$Overlay.impl.java.js",
+"lineCount":133,
+"mappings":"A;;;;;;;;;;;;;;;;;MAkCa,uB;;;;;;QAyBkB,uC,CAAWA,I;EAAXC,kC;EAC3BA;GACEA,wFADFA;G;EAIAA,wE;;;;;;;QASoB,iD,CAAoBC,C;EAApBC,kC;EACpBA;GACEA,uHADFA;G;EAGAA,a;;;;;;;QASoB,oC,CAAQC,I;EAARD,kC;EACpBA;GACEA,0HADFA;G;EAGAA,a;;;;;;;QASoB,uC,CAAWH,I;EAAXG,kC;EAEpBA;GACEA,aADFA;G;EAIAA,IAAOE,GAAPF,0K;EAEAA;GACEA,aADFA;G;EAIAA;GACEA,aADFA;G;EAIAA,IAAIG,CAAJH,uG;EACAA;GACEA,aADFA;G;EAIAA,Y;;;;;;QApFF,6D;EAAAI,+H;;;;;QAFW,O;EAAAC,0C;EAAAA,uC;EAEXA,+oB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFW;mF;AAOX;wBAC2B,2DAD3B,Q;AAEA;wBAC2B,2DAD3B,Q;AAEA;wBAC2B,2DAD3B,Q;AAEA;wBAC2B,2DAD3B,Q;AAEA;wBAC2B,2DAD3B,Q;AAEA;wBAC2B,2DAD3B;",
+"sources":["HeadingElement.java"],
+"names":["elem","org.gwtproject.dom.client.HeadingElement$$Overlay.as","o","org.gwtproject.dom.client.HeadingElement$$Overlay.is","node","tag","n","org.gwtproject.dom.client.HeadingElement$$Overlay.<synthetic: getter>","org.gwtproject.dom.client.HeadingElement$$Overlay.<clinit>"]
+}

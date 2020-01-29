@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SelectBuilder.impl.java.js",
+"lineCount":63,
+"mappings":"A;;;;;;;;;MAoBiB,a;;;;;;CASD,Y;;;;;;CASA,Y;;;;;;;CASA,wB,CAAYA,I;;;;;;;CAOZ,oB,CAAkBC,K;;;;;;;CASlB,W,CAASC,I;;;;;;;CAMT,wB,CAAYC,I;;;;;;;CAOZ,yB,CAAaC,K;;;;QAxDZ,O;EAAAC,gC;EAAAA;",
+"sources":["SelectBuilder.java"],
+"names":["name","index","size","type","value","org.gwtproject.dom.builder.shared.SelectBuilder.<clinit>"]
+}

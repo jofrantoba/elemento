@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AbstractHeaderOrFooterBuilder$TwoWayHashMap.impl.java.js",
+"lineCount":86,
+"mappings":"A;;;;;;;;;;;MAoDuB,a;;;;CAAA,W;EAAAA,Q;EAAAA;OACK,8FADLA,C;EAAAA;OAEK,8FAFLA,C;;;;;;;QAAA,S;EAAAC,wB;EAAAA,oC;EAAAA,qG;EAAAA,iB;;;;;CAAA,wF;EAAAC,iC;EAAAA,kG;;;;;CAId,iD;EACHC,4G;EACAA,4G;;;;;;;CAGA,kE,CAASC,K;EACTC,sH;;;;;;;CAGA,oE,CAAWC,G;EACXC,oH;;;;;;;CAGG,iF,CAAMD,G,EAAOF,K;EAChBI,oH;EACAA,oH;;;;;CAnBiB,0F;EACnBN,yJ;EACAA,yJ;;;;;QAFmB,O;EAAAO,gC;EAAAA,6B;EAAAA;",
+"sources":["AbstractHeaderOrFooterBuilder.java"],
+"names":["org.gwtproject.user.cellview.client.AbstractHeaderOrFooterBuilder$TwoWayHashMap.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.AbstractHeaderOrFooterBuilder$TwoWayHashMap.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.AbstractHeaderOrFooterBuilder$TwoWayHashMap.<init>","org.gwtproject.user.cellview.client.AbstractHeaderOrFooterBuilder$TwoWayHashMap.clear","value","org.gwtproject.user.cellview.client.AbstractHeaderOrFooterBuilder$TwoWayHashMap.getKey","key","org.gwtproject.user.cellview.client.AbstractHeaderOrFooterBuilder$TwoWayHashMap.getValue","org.gwtproject.user.cellview.client.AbstractHeaderOrFooterBuilder$TwoWayHashMap.put","org.gwtproject.user.cellview.client.AbstractHeaderOrFooterBuilder$TwoWayHashMap.<clinit>"]
+}

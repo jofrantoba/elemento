@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"InlineLabel.impl.java.js",
+"lineCount":147,
+"mappings":"A;;;;;;;;;;;;;MAwCa,W;;;;CAAA,W;EAAAA,Q;;;;;;;QAYe,yC,CAAaC,O;EAAbC,sB;EAExBA,8J;EAEAA,IAAYC,KAAZD,mE;EAGAA,qB;EACAA,6E;EAEAA,a;;;;;;;QAMK,S;EAAAE,sB;EAAAA,kC;EAAAA,+D;EAAAA,iB;;;;;;CAAA,kD;EACLC,oM;EACAA,yD;;;;;;;;QAQK,yB,CAAmBC,I;EAAnBF,sB;EAAAA,kC;EAAAA,mF;EAAAA,iB;;;;;;;CAAA,kE,CAAmBE,I;EACxBD,0D;EACAA,uC;;;;;;;;;QAUK,4E,CAAmBC,I,EAAgBC,G;EAAnCH,sB;EAAAA,kC;EAAAA,2I;EAAAA,iB;;;;;;;;CAAA,qH,CAAmBE,I,EAAgBC,G;EACxCF,0D;EACAA,+F;;;;;;;;;QAWK,wE,CAAmBC,I,EAAyBE,kB;EAA5CJ,sB;EAAAA,kC;EAAAA,sJ;EAAAA,iB;;;;;;;;CAAA,iH,CAAmBE,I,EAAyBE,kB;EACjDH,0D;EACAA,gG;EACAA,uC;;;;;;;;QASQ,0C,CAAoBJ,O;EAApBG,sB;EAAAA,kC;EAAAA,uG;EAAAA,iB;;;;;;;CAAA,mF,CAAoBH,O;EAG5BI,4F;;;;;QA9ES,O;EAAAI,8B;EAAAA,2B;EAAAA;",
+"sources":["InlineLabel.java"],
+"names":["org.gwtproject.user.client.ui.InlineLabel.<synthetic: ctor_js>","element","org.gwtproject.user.client.ui.InlineLabel.wrap","label","org.gwtproject.user.client.ui.InlineLabel.<synthetic: ctor_create>","org.gwtproject.user.client.ui.InlineLabel.<init>","text","dir","directionEstimator","org.gwtproject.user.client.ui.InlineLabel.<clinit>"]
+}

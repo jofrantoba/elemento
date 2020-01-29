@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"StubAnimationScheduler$StubAnimationHandle.impl.java.js",
+"lineCount":55,
+"mappings":"A;;;;;;;;MAkDe,mB;;;;CAAA,W;EAAAA,Q;EAAAA;yG;EAAAA;OAEqB,+FAFrBA,C;;;;;;;;QAIJ,6I,cAAsCC,Q;EAAtCC,8B;EAAAA,0C;EAAAA,iQ;EAAAA,iB;;;;;;;CAAA,+N,cAAsCD,Q;EAAtCE,qH;EAAAA,mF;EACLA,gH;;;;;;CAIU,U;EACVC,iS;;;;;QAVS,O;EAAAC,sC;EAAAA,mC;EAAAA;",
+"sources":["StubAnimationScheduler.java"],
+"names":["org.gwtproject.animation.client.testing.StubAnimationScheduler$StubAnimationHandle.<synthetic: ctor_js>","callback","org.gwtproject.animation.client.testing.StubAnimationScheduler$StubAnimationHandle.<synthetic: ctor_create>","org.gwtproject.animation.client.testing.StubAnimationScheduler$StubAnimationHandle.<init>","org.gwtproject.animation.client.testing.StubAnimationScheduler$StubAnimationHandle.cancel","org.gwtproject.animation.client.testing.StubAnimationScheduler$StubAnimationHandle.<clinit>"]
+}

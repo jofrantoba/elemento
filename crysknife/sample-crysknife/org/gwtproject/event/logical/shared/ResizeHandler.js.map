@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ResizeHandler.impl.java.js",
+"lineCount":32,
+"mappings":"A;;;;;;;;;;MAmBiB,a;;;;;;CAMV,2D,CAAqBA,K;;;;;;QANX,M;EAAAC,wB;EAAAA,8B;;;;;QAAA,O;EAAAC,gC;EAAAA;",
+"sources":["ResizeHandler.java"],
+"names":["event","org.gwtproject.event.logical.shared.ResizeHandler.<synthetic: adapt_lambda>","org.gwtproject.event.logical.shared.ResizeHandler.<clinit>"]
+}

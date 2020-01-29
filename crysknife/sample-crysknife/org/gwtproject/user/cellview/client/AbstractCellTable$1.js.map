@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AbstractCellTable$1.impl.java.js",
+"lineCount":57,
+"mappings":"A;;;;;;;;;;;;MAotB2F,E;;;;CAAA,W;EAAAA,Q;EAAAA;8E;;;;;;;;QAAA,8D;EAAAC,a;EAAAA,yB;EAAAA,6I;EAAAA,iB;;;;;;CAAA,qH;EAAAC,0F;EAAAA,iC;;;;;;CAE3E,kB;EACVC;GACEA,qKADFA;G;;;;;QAHqF,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["AbstractCellTable.java"],
+"names":["org.gwtproject.user.cellview.client.AbstractCellTable$1.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.AbstractCellTable$1.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.AbstractCellTable$1.<init>","org.gwtproject.user.cellview.client.AbstractCellTable$1.onModification","org.gwtproject.user.cellview.client.AbstractCellTable$1.<clinit>"]
+}

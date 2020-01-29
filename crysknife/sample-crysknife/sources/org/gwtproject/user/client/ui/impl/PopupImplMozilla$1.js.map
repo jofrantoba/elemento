@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"PopupImplMozilla$1.impl.java.js",
+"lineCount":61,
+"mappings":"A;;;;;;;;;;;;;;MAmF8D,E;;;;CAAA,W;EAAAA,Q;EAAAA;4E;EAAAA;OAxB5CC,YAwB4CD,C;;;;;;;;QAAA,+F;EAAAE,a;EAAAA,yB;EAAAA,0L;EAAAA,iB;;;;;;;CAAA,oJ;EAAAC,wF;EAAAA,iC;EAAAA,iC;;;;;;CAC1C,W;EACVC,+L;;;;;QAFoD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["PopupImplMozilla.java"],
+"names":["org.gwtproject.user.client.ui.impl.PopupImplMozilla$1.<synthetic: ctor_js>","outerElem","org.gwtproject.user.client.ui.impl.PopupImplMozilla$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.impl.PopupImplMozilla$1.<init>","org.gwtproject.user.client.ui.impl.PopupImplMozilla$1.execute","org.gwtproject.user.client.ui.impl.PopupImplMozilla$1.<clinit>"]
+}

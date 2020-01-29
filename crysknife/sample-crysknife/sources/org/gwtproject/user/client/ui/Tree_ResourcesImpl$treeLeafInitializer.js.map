@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Tree_ResourcesImpl$treeLeafInitializer.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;MA+BuB,mB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,0C;EAAAA,0F;EAAAA,iB;;;;;CAAA,6E;EAAAC,iC;;;;;;QAIkC,O;EAAAC,8B;EACnDA,yF;;;;;QALiB,O;EAAAC,sC;EAAAA,mC;EAAAA,qB;EAEjBA;",
+"sources":["Tree_ResourcesImpl.java"],
+"names":["org.gwtproject.user.client.ui.Tree_ResourcesImpl$treeLeafInitializer.<synthetic: ctor_js>","org.gwtproject.user.client.ui.Tree_ResourcesImpl$treeLeafInitializer.<synthetic: ctor_create>","org.gwtproject.user.client.ui.Tree_ResourcesImpl$treeLeafInitializer.<init>","org.gwtproject.user.client.ui.Tree_ResourcesImpl$treeLeafInitializer.get","org.gwtproject.user.client.ui.Tree_ResourcesImpl$treeLeafInitializer.<clinit>"]
+}

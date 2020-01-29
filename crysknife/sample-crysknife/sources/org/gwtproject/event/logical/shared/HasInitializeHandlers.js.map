@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasInitializeHandlers.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;MAqBiB,qB;;;;;;;CAOK,6E,CAAuCA,O;;;;QAP5C,O;EAAAC,wC;EAAAA;",
+"sources":["HasInitializeHandlers.java"],
+"names":["handler","org.gwtproject.event.logical.shared.HasInitializeHandlers.<clinit>"]
+}

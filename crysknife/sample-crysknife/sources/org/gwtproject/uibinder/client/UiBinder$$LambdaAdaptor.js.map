@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"UiBinder$$LambdaAdaptor.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;;;MAiCiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sE;EAAAA,4H;;;;;;CAAA,kH;EAAAC,iC;EAAAA,yE;;;;;;;CAAA,mC;EAAAC,oC;EAAAA,0G;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["UiBinder.java"],
+"names":["org.gwtproject.uibinder.client.UiBinder$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.uibinder.client.UiBinder$$LambdaAdaptor.<init>","org.gwtproject.uibinder.client.UiBinder$$LambdaAdaptor.createAndBindUi","org.gwtproject.uibinder.client.UiBinder$$LambdaAdaptor.<clinit>"]
+}

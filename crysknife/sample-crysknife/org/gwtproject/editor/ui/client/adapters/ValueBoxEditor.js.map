@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ValueBoxEditor.impl.java.js",
+"lineCount":109,
+"mappings":"A;;;;;;;;;;;;;;;;;MA+Ba,c;;;;CAAA,W;EAAAA,Q;EAAAA;OAee,oEAffA,C;EAAAA;OAgBmB,gEAhBnBA,C;EAAAA;OAiBD,iEAjBCA,C;;;;;;;;QAWyB,gD,CAAmBC,Q;EAAnBC,yB;EAClCA,yH;;;;;;;;QAaQ,mD,CAA+BC,I;EAA/BC,yB;EAAAA,qC;EAAAA,2H;EAAAA,iB;;;;;;CAAA,0G,CAA+BD,I;EACvCE,gH;EACAA,6E;;;;;;CASuB,e;EACvBC,iF;;;;;;;CAaO,Y;EACPC;GACEA,qKADFA;;GAE2BA,oCAF3BA;GAE2BA;IAAAA,IAAHC,CAAGD,yCAAAA;IAEzBA,sUAFyBA;;IAAAA,+BAAAA;IAF3BA;G;EAOAA,8E;;;;;;;CAUU,0D,CAA8BE,Q;EACxCC,qF;;;;;;;CAIU,4B,CAAWC,K;EACrBC,mL;;;;;QA1ES,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["ValueBoxEditor.java"],
+"names":["org.gwtproject.editor.ui.client.adapters.ValueBoxEditor.<synthetic: ctor_js>","valueBox","org.gwtproject.editor.ui.client.adapters.ValueBoxEditor.of","peer","org.gwtproject.editor.ui.client.adapters.ValueBoxEditor.<synthetic: ctor_create>","org.gwtproject.editor.ui.client.adapters.ValueBoxEditor.<init>","org.gwtproject.editor.ui.client.adapters.ValueBoxEditor.getDelegate","org.gwtproject.editor.ui.client.adapters.ValueBoxEditor.getValue","e","delegate","org.gwtproject.editor.ui.client.adapters.ValueBoxEditor.setDelegate","value","org.gwtproject.editor.ui.client.adapters.ValueBoxEditor.setValue","org.gwtproject.editor.ui.client.adapters.ValueBoxEditor.<clinit>"]
+}

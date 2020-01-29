@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ActionCell$Delegate.impl.java.js",
+"lineCount":33,
+"mappings":"A;;;;;;;;;;MAyC0B,Q;;;;;;CAMjB,2B,CAAUA,M;;;;;;;QANO,M;EAAAC,mB;EAAAA,iE;;;;;QAAA,O;EAAAC,2B;EAAAA;",
+"sources":["ActionCell.java"],
+"names":["object","org.gwtproject.cell.client.ActionCell$Delegate.<synthetic: adapt_lambda>","org.gwtproject.cell.client.ActionCell$Delegate.<clinit>"]
+}

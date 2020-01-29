@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"FirstStrongDirectionEstimator.impl.java.js",
+"lineCount":78,
+"mappings":"A;;;;;;;;MAsBa,6B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,wC;EAAAA,oD;EAAAA,8E;EAAAA,iB;;;;;CAAA,iE;EAAAC,8D;;;;;;QAciC,O;EAAAC,wC;EAC1CA,2G;;;;;;;;CAae,qC,CAAyBC,G;EACxCC,kV;;;;;QA7BS,O;EAAAC,gD;EAAAA,6C;EAAAA,6B;EAEXA,gJ;;;;;;;;;;;;;;;;;;;;;AAFW;8BAMwC,qEANxC;",
+"sources":["FirstStrongDirectionEstimator.java"],
+"names":["org.gwtproject.i18n.shared.FirstStrongDirectionEstimator.<synthetic: ctor_js>","org.gwtproject.i18n.shared.FirstStrongDirectionEstimator.<synthetic: ctor_create>","org.gwtproject.i18n.shared.FirstStrongDirectionEstimator.<init>","org.gwtproject.i18n.shared.FirstStrongDirectionEstimator.get","str","org.gwtproject.i18n.shared.FirstStrongDirectionEstimator.estimateDirection","org.gwtproject.i18n.shared.FirstStrongDirectionEstimator.<clinit>"]
+}

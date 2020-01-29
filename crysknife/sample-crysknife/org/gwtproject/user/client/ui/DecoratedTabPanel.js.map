@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DecoratedTabPanel.impl.java.js",
+"lineCount":94,
+"mappings":"A;;;;;;;;;;;;;MAyCa,iB;;;;CAAA,W;EAAAA,Q;;;;;;QAGJ,S;EAAAC,4B;EAAAA,wC;EAAAA,qE;EAAAA,iB;;;;;CAAA,wD;EAAAC,uD;EACLA,sI;EACAA,iJ;;;;;;;CAIoB,wB;EACpBC,iJ;;;;;;;;CAVS,sC;EAAAC,0F;;;;;;;;CAAA,e;EAAAC,sG;;;;;QAAA,O;EAAAC,oC;EAAAA,iC;EAAAA,mB;;;;;;;;;;;;;;;;;;;;;;AACX;kBAA4B,qEAA5B;",
+"sources":["DecoratedTabPanel.java"],
+"names":["org.gwtproject.user.client.ui.DecoratedTabPanel.<synthetic: ctor_js>","org.gwtproject.user.client.ui.DecoratedTabPanel.<synthetic: ctor_create>","org.gwtproject.user.client.ui.DecoratedTabPanel.<init>","org.gwtproject.user.client.ui.DecoratedTabPanel.createTabTextWrapper","org.gwtproject.user.client.ui.DecoratedTabPanel.forEach","org.gwtproject.user.client.ui.DecoratedTabPanel.spliterator","org.gwtproject.user.client.ui.DecoratedTabPanel.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasTouchEndHandlers.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;MAwBiB,mB;;;;;;;CAQK,qE,CAAmCA,O;;;;QARxC,O;EAAAC,sC;EAAAA;",
+"sources":["HasTouchEndHandlers.java"],
+"names":["handler","org.gwtproject.event.dom.client.HasTouchEndHandlers.<clinit>"]
+}

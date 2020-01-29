@@ -1,0 +1,33 @@
+goog.module('org.gwtproject.i18n.client.NumberFormat');
+
+goog.require('java.lang.Object');
+goog.require('nativebootstrap.Util');
+goog.require('java.lang.Double');
+goog.require('java.lang.IllegalArgumentException');
+goog.require('java.lang.Integer');
+goog.require('java.lang.Long');
+goog.require('java.lang.Number');
+goog.require('java.lang.NumberFormatException');
+goog.require('java.lang.String');
+goog.require('java.lang.StringBuilder');
+goog.require('java.lang.UnsupportedOperationException');
+goog.require('java.math.BigDecimal');
+goog.require('java.math.BigInteger');
+goog.require('nativebootstrap.Equality');
+goog.require('nativebootstrap.Long');
+goog.require('org.gwtproject.i18n.client.CurrencyData');
+goog.require('org.gwtproject.i18n.client.CurrencyList');
+goog.require('org.gwtproject.i18n.client.LocaleInfo');
+goog.require('org.gwtproject.i18n.client.NumberFormat.$1');
+goog.require('org.gwtproject.i18n.client.constants.NumberConstants');
+goog.require('vmbootstrap.Arrays');
+goog.require('vmbootstrap.Asserts');
+goog.require('vmbootstrap.Casts');
+goog.require('vmbootstrap.Exceptions');
+goog.require('vmbootstrap.LongUtils');
+goog.require('vmbootstrap.Numbers');
+goog.require('vmbootstrap.Primitives');
+goog.require('vmbootstrap.primitives.$int');
+
+const NumberFormat = goog.require('org.gwtproject.i18n.client.NumberFormat$impl');
+exports = NumberFormat; 

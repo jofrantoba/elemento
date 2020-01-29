@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ShowRangeHandler$$LambdaAdaptor.impl.java.js",
+"lineCount":49,
+"mappings":"A;;;;;;;;;;;;MAsBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;mF;EAAAA,sJ;;;;;;CAAA,4I;EAAAC,iC;EAAAA,sF;;;;;;CAAA,iE;;GAAAC,iG;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["ShowRangeHandler.java"],
+"names":["org.gwtproject.event.logical.shared.ShowRangeHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.logical.shared.ShowRangeHandler$$LambdaAdaptor.<init>","org.gwtproject.event.logical.shared.ShowRangeHandler$$LambdaAdaptor.onShowRange","org.gwtproject.event.logical.shared.ShowRangeHandler$$LambdaAdaptor.<clinit>"]
+}

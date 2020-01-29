@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ValueBoxEditorDecorator_BinderImpl_TemplateImpl.impl.java.js",
+"lineCount":63,
+"mappings":"A;;;;;;;;;;;;;;MAKa,iD;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,4D;EAAAA,wE;EAAAA,qG;EAAAA,iB;;;;;CAAA,wF;EAAAC,iC;;;;;;;;;;CAKoC,6D,CACxBC,I,EACAC,I,EACAC,I;EACrBC,IAAcC,EAAdD,6B;EACAA,8C;EACAA,kF;EACAA,wC;EACAA,kF;EACAA,qD;EACAA,kF;EACAA,2C;EACJA,mG;;;;;QAjBa,O;EAAAE,oE;EAAAA,iE;EAAAA;",
+"sources":["ValueBoxEditorDecorator_BinderImpl_TemplateImpl.java"],
+"names":["org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_TemplateImpl.<synthetic: ctor_js>","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_TemplateImpl.<synthetic: ctor_create>","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_TemplateImpl.<init>","arg0","arg1","arg2","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_TemplateImpl.html1","sb","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_TemplateImpl.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SelectionHandler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;MAsBiB,gB;;;;;;CAOV,iE,CAA8BA,K;;;;;;;QAPpB,M;EAAAC,2B;EAAAA,iE;;;;;QAAA,O;EAAAC,mC;EAAAA;",
+"sources":["SelectionHandler.java"],
+"names":["event","org.gwtproject.event.logical.shared.SelectionHandler.<synthetic: adapt_lambda>","org.gwtproject.event.logical.shared.SelectionHandler.<clinit>"]
+}

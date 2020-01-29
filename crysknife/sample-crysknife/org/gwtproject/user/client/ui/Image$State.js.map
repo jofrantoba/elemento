@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Image$State.impl.java.js",
+"lineCount":153,
+"mappings":"A;;;;;;;;;;;;;;;;;;MAksB0B,K;;;;CAAA,W;EAAAA,Q;EAAAA;OAKO,mEALPA,C;;;;;CAAA,kD;EAAAC,iC;EAAAA,4D;;;;;;;;CAOE,gD,CAAgBC,K;;;;;;;CAEP,sD,CAAsBA,K;;;;;;CAE/B,iB;;;;;;CAEA,gB;;;;;;;CAEI,6C,CAAaA,K;;;;;;;CAEjB,+C,CAAeA,K;;;;;CAOvB,6C,CAAaA,K;EAGrBC,IAAOC,cAAPD,sO;EACAA;GACIA,0EADJA;G;;;;;;CASQ,kD,CAAkBD,K;;;;;;;CAIT,qF,CAAaA,K,EAAeG,G;;;;;;;;;CAE5B,+F,CAAaH,K,EAAeG,G,EAASC,K,EAAWC,M;;;;;;;;;;;CAEhD,uH,CAA2BL,K,EAAeG,G,EAASG,I,EAAUC,G,EACpCH,K,EAAWC,M;;;;;;;;;;CAEpC,yE,CAAqBL,K,EAAWM,I,EAAUC,G,EAASH,K,EAAWC,M;;;;;CAOpE,6D,CAAmCL,K;EAO9CQ,mL;EA0BAA,wK;;;;;;;CAIsB,gB;;;;CA5FR,oD;EAElBT,gF;;;;;QAFkB,O;EAAAU,wB;EAAAA,qB;EAAAA;",
+"sources":["Image.java"],
+"names":["org.gwtproject.user.client.ui.Image$State.<synthetic: ctor_js>","org.gwtproject.user.client.ui.Image$State.<init>","image","org.gwtproject.user.client.ui.Image$State.onLoad","unhandledEvent","url","width","height","left","top","org.gwtproject.user.client.ui.Image$State.fireSyntheticLoadEvent","org.gwtproject.user.client.ui.Image$State.<clinit>"]
+}

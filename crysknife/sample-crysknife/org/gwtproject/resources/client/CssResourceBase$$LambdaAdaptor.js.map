@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CssResourceBase$$LambdaAdaptor.impl.java.js",
+"lineCount":44,
+"mappings":"A;;;;;;;;;MAqCiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;8E;EAAAA,4I;;;;;;CAAA,kI;EAAAC,iC;EAAAA,iF;;;;;;CAAA,W;EAAAC,yC;EAAAA,8G;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["CssResourceBase.java"],
+"names":["org.gwtproject.resources.client.CssResourceBase$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.resources.client.CssResourceBase$$LambdaAdaptor.<init>","org.gwtproject.resources.client.CssResourceBase$$LambdaAdaptor.getName","org.gwtproject.resources.client.CssResourceBase$$LambdaAdaptor.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasHorizontalAlignment.impl.java.js",
+"lineCount":133,
+"mappings":"A;;;;;;;;;;;MA0CiB,sB;;;;;;CAyGa,0B;;;;;;CAgBvB,0G,CAAmDA,K;;;;;QAvExD,wE;EAAAC,wI;;;;;;QAMA,yE;EAAAA,yI;;;;;;QAMA,sE;EAAAA,sI;;;;;;QAMA,uE;EAAAA,uI;;;;;;QAMA,8E;EAAAA,8I;;;;;;QAQA,4E;EAAAA,4I;;;;;;QAQA,yE;EAAAA,yI;;;;;QA1Fe,O;EAAAC,yC;EAAAA,sC;EAkDfA,qO;EAMAA,uO;EAMAA,iO;EAMAA,mO;EAMAA,8U;EAQAA,4U;EAQAA,mM;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA1Fe;6F;AAAA;8F;AAAA;2F;AAAA;4F;AAAA;mG;AAAA;iG;AAAA;;",
+"sources":["HasHorizontalAlignment.java"],
+"names":["align","org.gwtproject.user.client.ui.HasHorizontalAlignment.<synthetic: getter>","org.gwtproject.user.client.ui.HasHorizontalAlignment.<clinit>"]
+}

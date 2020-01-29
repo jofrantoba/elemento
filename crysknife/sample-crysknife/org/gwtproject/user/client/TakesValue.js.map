@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TakesValue.impl.java.js",
+"lineCount":27,
+"mappings":"A;;;;;;;;MAsBiB,U;;;;;;CAOV,4B,CAAWA,K;;;;;;CAQd,Y;;;;QAfa,O;EAAAC,6B;EAAAA;",
+"sources":["TakesValue.java"],
+"names":["value","org.gwtproject.user.client.TakesValue.<clinit>"]
+}

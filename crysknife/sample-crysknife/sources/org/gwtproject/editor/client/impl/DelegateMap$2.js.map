@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DelegateMap$2.impl.java.js",
+"lineCount":60,
+"mappings":"A;;;;;;;;;;;;MAmF4B,E;;;;CAAA,W;EAAAA,Q;EAAAA;OAFNC,WAEMD,C;;;;;;;QAAA,sD;EAAAE,a;EAAAA,yB;EAAAA,6H;EAAAA,iB;;;;;;CAAA,qG;EAAAC,+B;EAAAA,2D;;;;;;;;CAEF,sD,CAA0BC,G;EACxCC,oK;EACAA,IAC6BC,QAD7BD,qH;EAGAA;GACEA,6KADFA;G;;;;;QAPgB,O;EAAAE,qB;EAAAA,kB;EAAAA;",
+"sources":["DelegateMap.java"],
+"names":["org.gwtproject.editor.client.impl.DelegateMap$2.<synthetic: ctor_js>","toReturn","org.gwtproject.editor.client.impl.DelegateMap$2.<synthetic: ctor_create>","org.gwtproject.editor.client.impl.DelegateMap$2.<init>","ctx","org.gwtproject.editor.client.impl.DelegateMap$2.endVisit","delegate","org.gwtproject.editor.client.impl.DelegateMap$2.<clinit>"]
+}

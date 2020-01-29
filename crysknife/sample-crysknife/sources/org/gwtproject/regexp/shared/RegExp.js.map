@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"RegExp.impl.java.js",
+"lineCount":119,
+"mappings":"A;;;;;;;;;;;MAiBiB,M;;;;;;QASC,2B,CAAeA,O;EAAfC,iB;EACVA,2G;;;;;;;;QAaU,6C,CAAeD,O,EAAgBE,K;EAA/BD,iB;EACVA,oI;;;;;;;QAaU,yB,CAAaE,K;EAAbC,iB;EACVA,uG;;;;;;;;CAUQ,wB,CAAYD,K;;;;;;CAMhB,a;;;;;;CAMA,iB;;;;;;CAUJ,gB;;;;;;CAQI,gB;;;;;;CAOD,a;;;;;;;;CAoBA,6C,CAAeA,K,EAAcE,W;;;;;;CAM/B,mB,CAAiBC,S;;;;;;;CAUV,yB,CAAaH,K;;;;;;;;CAYb,8B,CAAaA,K,EAAWI,K;;;;;;;CAU5B,wB,CAAYJ,K;;;;QA/IP,O;EAAAK,yB;EAAAA;",
+"sources":["RegExp.java"],
+"names":["pattern","org.gwtproject.regexp.shared.RegExp.compile","flags","input","org.gwtproject.regexp.shared.RegExp.quote","replacement","lastIndex","limit","org.gwtproject.regexp.shared.RegExp.<clinit>"]
+}

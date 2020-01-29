@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DomIFrameBuilder.impl.java.js",
+"lineCount":156,
+"mappings":"A;;;;;;;;;;;;;;;;;;;MA2Ba,gB;;;;CAAA,W;EAAAA,Q;;;;;;;QAGX,yD,CAAgCC,Q;EAAhCC,2B;EAAAA,uC;EAAAA,gI;EAAAA,iB;;;;;;CAAA,2G,CAAgCD,Q;EAC9BE,gI;;;;;;;;CAImB,kB,CAAgBC,W;EACnCC,wG;EACAA,Y;;;;;;;;CAIuB,+C,CAAcC,I;EACrCC,kE;;;;;;;CAIa,2B;EACbC,a;;;;;;;;CAImB,mB,CAAiBC,Y;EACpCC,0G;EACAA,Y;;;;;;;;CAImB,kB,CAAgBC,W;EACnCC,wG;EACAA,Y;;;;;;;;CAImB,wB,CAAYC,I;EAC/BC,0F;EACAA,Y;;;;;;;CAImB,Y;EACnBC,8F;EACAA,Y;;;;;;;;CAImB,6B,CAAiBC,S;EACpCC,oG;EACAA,Y;;;;;;;;CAImB,6C,CAAYC,G;EAC/BC,gM;EACAA,Y;;;;;;;;CAImB,uB,CAAsBD,G;EACzCC,wF;EACAA,Y;;;;;;;;CAIuB,wB,CAAYC,I;EACnCC,kE;;;;;QAnES,O;EAAAC,mC;EAAAA,gC;EAAAA;",
+"sources":["DomIFrameBuilder.java"],
+"names":["org.gwtproject.dom.builder.client.DomIFrameBuilder.<synthetic: ctor_js>","delegate","org.gwtproject.dom.builder.client.DomIFrameBuilder.<synthetic: ctor_create>","org.gwtproject.dom.builder.client.DomIFrameBuilder.<init>","frameBorder","org.gwtproject.dom.builder.client.DomIFrameBuilder.frameBorder","html","org.gwtproject.dom.builder.client.DomIFrameBuilder.html","org.gwtproject.dom.builder.client.DomIFrameBuilder.isChildElementSupported","marginHeight","org.gwtproject.dom.builder.client.DomIFrameBuilder.marginHeight","marginWidth","org.gwtproject.dom.builder.client.DomIFrameBuilder.marginWidth","name","org.gwtproject.dom.builder.client.DomIFrameBuilder.name","org.gwtproject.dom.builder.client.DomIFrameBuilder.noResize","scrolling","org.gwtproject.dom.builder.client.DomIFrameBuilder.scrolling","src","org.gwtproject.dom.builder.client.DomIFrameBuilder.src","text","org.gwtproject.dom.builder.client.DomIFrameBuilder.text","org.gwtproject.dom.builder.client.DomIFrameBuilder.<clinit>"]
+}

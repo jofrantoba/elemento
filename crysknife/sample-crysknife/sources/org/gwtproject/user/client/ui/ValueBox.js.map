@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ValueBox.impl.java.js",
+"lineCount":116,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;MA6Ba,Q;;;;CAAA,W;EAAAA,Q;;;;;;;;;;QAYmB,iH,CAAaC,O,EAAqBC,Q,EAAoBC,M;EAAtDC,mB;EAE5BA,8J;EAEAA,IAAYC,QAAZD,yL;EAGAA,wB;EACAA,gF;EAEAA,gB;;;;;;;;;;QAUQ,kH,CAAiBH,O,EAAqBC,Q,EAAoBC,M;EAA1DG,mB;EAAAA,+B;EAAAA,8L;EAAAA,iB;;;;;;;;CAAA,wJ,CAAiBL,O,EAAqBC,Q,EAAoBC,M;EAClEI,6L;EAEAA,6C;EACAA;GACEA,2IADFA;G;EAGAA,yK;;;;;;CAQS,gB;EACTC,sF;;;;;;CAQS,oB;EACTC,iF;;;;;;CAQU,mB,CAAiBC,M;EAC3BC,wF;;;;;;CAQU,uB,CAAqBD,M;EAC/BE,mF;;;;;;CAGmB,6D;EACnBC,+K;;;;;QA/ES,O;EAAAC,2B;EAAAA,wB;EAAAA;",
+"sources":["ValueBox.java"],
+"names":["org.gwtproject.user.client.ui.ValueBox.<synthetic: ctor_js>","element","renderer","parser","org.gwtproject.user.client.ui.ValueBox.wrap","valueBox","org.gwtproject.user.client.ui.ValueBox.<synthetic: ctor_create>","org.gwtproject.user.client.ui.ValueBox.<init>","org.gwtproject.user.client.ui.ValueBox.getMaxLength","org.gwtproject.user.client.ui.ValueBox.getVisibleLength","length","org.gwtproject.user.client.ui.ValueBox.setMaxLength","org.gwtproject.user.client.ui.ValueBox.setVisibleLength","org.gwtproject.user.client.ui.ValueBox.getInputElement","org.gwtproject.user.client.ui.ValueBox.<clinit>"]
+}

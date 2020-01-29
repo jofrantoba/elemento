@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CellList$Template.impl.java.js",
+"lineCount":81,
+"mappings":"A;;;;;;;;;;;;;MAmIY,Q;;;;;;;;;CAIC,qE,CAAQA,G,EAAYC,O,EAAkBC,Y;;;;;;QAJvC,M;EAAAC,mB;EAAAA,8B;;;;;;QAER,qE;EAAAC,yG;;;;;QAFQ,O;EAAAC,2B;EAAAA,wB;EAERA,iH;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFQ;;",
+"sources":["CellList.java"],
+"names":["idx","classes","cellContents","org.gwtproject.user.cellview.client.CellList$Template.<synthetic: adapt_lambda>","org.gwtproject.user.cellview.client.CellList$Template.<synthetic: getter>","org.gwtproject.user.cellview.client.CellList$Template.<clinit>"]
+}

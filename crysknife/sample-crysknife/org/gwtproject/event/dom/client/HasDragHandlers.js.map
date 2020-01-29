@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasDragHandlers.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;MA0BiB,e;;;;;;;CAQK,6D,CAA2BA,O;;;;QARhC,O;EAAAC,kC;EAAAA;",
+"sources":["HasDragHandlers.java"],
+"names":["handler","org.gwtproject.event.dom.client.HasDragHandlers.<clinit>"]
+}

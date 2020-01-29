@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CommonResources$Bundle.impl.java.js",
+"lineCount":78,
+"mappings":"A;;;;;;;;;;;;;MAyBY,M;;;;;;CAKS,oB;;;;;;QALT,M;EAAAA,iB;EAAAA,8B;;;;;;QAER,sE;EAAAC,sG;;;;;QAFQ,O;EAAAC,yB;EAAAA,sB;EAERA,qH;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFQ;;",
+"sources":["CommonResources.java"],
+"names":["org.gwtproject.resources.client.CommonResources$Bundle.<synthetic: adapt_lambda>","org.gwtproject.resources.client.CommonResources$Bundle.<synthetic: getter>","org.gwtproject.resources.client.CommonResources$Bundle.<clinit>"]
+}

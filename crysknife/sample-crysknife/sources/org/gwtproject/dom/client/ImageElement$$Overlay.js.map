@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ImageElement$$Overlay.impl.java.js",
+"lineCount":105,
+"mappings":"A;;;;;;;;;;;;MA+Ba,qB;;;;;;QAUgB,uC,CAAWA,I;EAAXC,gC;EACzBA,sF;EACAA,sE;;;;;;;QASoB,iD,CAAoBC,C;EAApBC,gC;EACpBA;GACEA,qHADFA;G;EAGAA,a;;;;;;;QASoB,oC,CAAQC,I;EAARD,gC;EACpBA;GACEA,wHADFA;G;EAGAA,a;;;;;;;QASoB,uC,CAAWH,I;EAAXG,gC;EACpBA,+M;;;;;;;QA6CmB,wD;EAAAE,gC;EACnBA,uD;;;;;;;QA6DmB,yD;EAAAC,gC;EACnBA,wD;;;;;QA5JS,O;EAAAC,wC;EAAAA,qC;;;;;;;;;;;;;;;;;;;;;;;;AAEX;sBAC2B,sDAD3B;",
+"sources":["ImageElement.java"],
+"names":["elem","org.gwtproject.dom.client.ImageElement$$Overlay.as","o","org.gwtproject.dom.client.ImageElement$$Overlay.is","node","org.gwtproject.dom.client.ImageElement$$Overlay.isMap__$devirt","org.gwtproject.dom.client.ImageElement$$Overlay.useMap__$devirt","org.gwtproject.dom.client.ImageElement$$Overlay.<clinit>"]
+}

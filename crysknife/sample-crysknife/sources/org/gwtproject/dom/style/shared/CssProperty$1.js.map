@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CssProperty$1.impl.java.js",
+"lineCount":59,
+"mappings":"A;;;;;;;MAkBQ,E;;;;CAAA,W;EAAAA,Q;;;;;;;;QAAA,8B;EAAAC,a;EAAAA,yB;EAAAA,uG;EAAAA,iB;;;;;;;CAAA,2E;EAAAC,gG;;;;;;;CACU,a;EACZC,kB;;;;;;;;;CAFE,6B;EAAAC,kF;;;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["CssProperty.java"],
+"names":["org.gwtproject.dom.style.shared.CssProperty$1.<synthetic: ctor_js>","org.gwtproject.dom.style.shared.CssProperty$1.<synthetic: ctor_create>","org.gwtproject.dom.style.shared.CssProperty$1.<init>","org.gwtproject.dom.style.shared.CssProperty$1.getJsName","org.gwtproject.dom.style.shared.CssProperty$1.compareTo","org.gwtproject.dom.style.shared.CssProperty$1.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NativeHorizontalScrollbar$ResourcesTransparant$$LambdaAdaptor.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;;;;MAsDmB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;2G;EAAAA,sM;;;;;;CAAA,4L;EAAAC,iC;EAAAA,8G;;;;;;CAAA,kC;EAAAC,uC;EAAAA,2I;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["NativeHorizontalScrollbar.java"],
+"names":["org.gwtproject.user.client.ui.NativeHorizontalScrollbar$ResourcesTransparant$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar$ResourcesTransparant$$LambdaAdaptor.<init>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar$ResourcesTransparant$$LambdaAdaptor.nativeHorizontalScrollbarStyle","org.gwtproject.user.client.ui.NativeHorizontalScrollbar$ResourcesTransparant$$LambdaAdaptor.<clinit>"]
+}

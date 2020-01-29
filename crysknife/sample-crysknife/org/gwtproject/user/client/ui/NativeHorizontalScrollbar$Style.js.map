@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NativeHorizontalScrollbar$Style.impl.java.js",
+"lineCount":54,
+"mappings":"A;;;;;;;;;MAoEmB,K;;;;;;CASR,6B;;;;QATQ,O;EAAAA,wB;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AACf;MAGO,4EAHP;",
+"sources":["NativeHorizontalScrollbar.java"],
+"names":["org.gwtproject.user.client.ui.NativeHorizontalScrollbar$Style.<clinit>"]
+}

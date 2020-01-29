@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NativeVerticalScrollbar_UiBinderBundleImpl$1.impl.java.js",
+"lineCount":95,
+"mappings":"A;;;;;;;;;;;;;MAQoG,E;;;;CAAA,W;EAAAA,Q;EAAAA;iG;EAAAA;OAI9E,uFAJ8EA,S;;;;;;;QAAA,iF;EAAAC,a;EAAAA,yB;EAAAA,mL;EAAAA,iB;;;;;;CAAA,2J;EAAAC,6G;EAAAA,iC;;;;;;;CAChF,W;EACZC,mC;;;;;;;CAGa,kB;EACbC;GACEA,oGADFA;GAEEA,6DAFFA;GAGEA,YAHFA;G;EAKAA,a;;;;;;;CAEY,W;EACZC,2Y;;;;;;;CAEY,Y;EACZC,qB;;;;;;;CAEY,c;EACZC,qB;;;;;QApB4F,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["NativeVerticalScrollbar_UiBinderBundleImpl.java"],
+"names":["org.gwtproject.user.client.ui.NativeVerticalScrollbar_UiBinderBundleImpl$1.<synthetic: ctor_js>","org.gwtproject.user.client.ui.NativeVerticalScrollbar_UiBinderBundleImpl$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.NativeVerticalScrollbar_UiBinderBundleImpl$1.<init>","org.gwtproject.user.client.ui.NativeVerticalScrollbar_UiBinderBundleImpl$1.getName","org.gwtproject.user.client.ui.NativeVerticalScrollbar_UiBinderBundleImpl$1.ensureInjected","org.gwtproject.user.client.ui.NativeVerticalScrollbar_UiBinderBundleImpl$1.getText","org.gwtproject.user.client.ui.NativeVerticalScrollbar_UiBinderBundleImpl$1.viewport","org.gwtproject.user.client.ui.NativeVerticalScrollbar_UiBinderBundleImpl$1.scrollable","org.gwtproject.user.client.ui.NativeVerticalScrollbar_UiBinderBundleImpl$1.<clinit>"]
+}

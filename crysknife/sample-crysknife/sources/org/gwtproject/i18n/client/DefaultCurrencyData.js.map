@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DefaultCurrencyData.impl.java.js",
+"lineCount":158,
+"mappings":"A;;;;;;;;;MAsBa,mB;;;;CAAA,W;EAAAA,Q;EAAAA;OAEU,+DAFVA,C;EAAAA;OAGU,iEAHVA,C;EAAAA;OAIO,iEAJPA,K;;;;;;;;;QAcJ,2C,CAA2BC,Y,EAAqBC,c;EAAhDC,8B;EAAAA,0C;EAAAA,kI;EAAAA,iB;;;;;;;;CAAA,yF,CAA2BF,Y,EAAqBC,c;EACrDE,qI;;;;;;;;;;QAYK,gD,CAA2BH,Y,EAAqBC,c,EAC/CG,c;EADDF,8B;EAAAA,0C;EAAAA,uJ;EAAAA,iB;;;;;;;;;CAAA,8F,CAA2BF,Y,EAAqBC,c,EAC/CG,c;EADDD,iC;EAELA,oF;EACAA,wF;EACAA,wF;;;;;;;CAIY,mB;EACZE,4E;;;;;;;CAIY,qB;EACZC,8E;;;;;;;CAIS,4B;EACTC,8E;;;;;;;CAIY,6B;EACZC,oC;;;;;;;CAIY,2B;EACZC,oC;;;;;;;CAIa,gB;EACbC,a;;;;;;;CAIa,iB;EACbC,a;;;;;;;CAIa,kB;EACbC,a;;;;;;;CAIa,yB;EACbC,a;;;;;;;CAIa,kB;EACbC,a;;;;;QAjFS,O;EAAAC,sC;EAAAA,mC;EAAAA;",
+"sources":["DefaultCurrencyData.java"],
+"names":["org.gwtproject.i18n.client.DefaultCurrencyData.<synthetic: ctor_js>","currencyCode","currencySymbol","org.gwtproject.i18n.client.DefaultCurrencyData.<synthetic: ctor_create>","org.gwtproject.i18n.client.DefaultCurrencyData.<init>","fractionDigits","org.gwtproject.i18n.client.DefaultCurrencyData.getCurrencyCode","org.gwtproject.i18n.client.DefaultCurrencyData.getCurrencySymbol","org.gwtproject.i18n.client.DefaultCurrencyData.getDefaultFractionDigits","org.gwtproject.i18n.client.DefaultCurrencyData.getPortableCurrencySymbol","org.gwtproject.i18n.client.DefaultCurrencyData.getSimpleCurrencySymbol","org.gwtproject.i18n.client.DefaultCurrencyData.isDeprecated","org.gwtproject.i18n.client.DefaultCurrencyData.isSpaceForced","org.gwtproject.i18n.client.DefaultCurrencyData.isSpacingFixed","org.gwtproject.i18n.client.DefaultCurrencyData.isSymbolPositionFixed","org.gwtproject.i18n.client.DefaultCurrencyData.isSymbolPrefix","org.gwtproject.i18n.client.DefaultCurrencyData.<clinit>"]
+}

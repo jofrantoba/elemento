@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"UiBinderUtil$TempAttachment.impl.java.js",
+"lineCount":64,
+"mappings":"A;;;;;;;;;MAmCsB,c;;;;CAAA,W;EAAAA,Q;EAAAA;OACI,sEADJA,C;EAAAA;OAEI,yEAFJA,C;EAAAA;OAGI,0EAHJA,C;;;;;;;;;QAKV,gH,CAAuBC,U,EAAoBC,W,EACvCC,O;EADJC,yB;EAAAA,qC;EAAAA,uN;EAAAA,iB;;;;;;;;CAAA,0K,CAAuBH,U,EAAoBC,W,EACvCC,O;EADJE,iC;EAENA,4F;EACAA,8F;EACAA,sF;;;;;CAMU,U;EAEVC;GACEA,0PADFA;;GAGEA,mIAHFA;G;;;;;QAjBgB,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["UiBinderUtil.java"],
+"names":["org.gwtproject.uibinder.client.UiBinderUtil$TempAttachment.<synthetic: ctor_js>","origParent","origSibling","element","org.gwtproject.uibinder.client.UiBinderUtil$TempAttachment.<synthetic: ctor_create>","org.gwtproject.uibinder.client.UiBinderUtil$TempAttachment.<init>","org.gwtproject.uibinder.client.UiBinderUtil$TempAttachment.detach","org.gwtproject.uibinder.client.UiBinderUtil$TempAttachment.<clinit>"]
+}

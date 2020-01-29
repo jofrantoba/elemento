@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CssResource.impl.java.js",
+"lineCount":28,
+"mappings":"A;;;;;;;;;MA+IiB,W;;;;;;CA8JP,kB;;;;;;CAGD,W;;;;QAjKQ,O;EAAAA,8B;EAAAA;",
+"sources":["CssResource.java"],
+"names":["org.gwtproject.resources.client.CssResource.<clinit>"]
+}

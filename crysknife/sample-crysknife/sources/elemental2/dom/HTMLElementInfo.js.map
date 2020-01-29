@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HTMLElementInfo.impl.java.js",
+"lineCount":35,
+"mappings":"A;;;;;MAIa,e;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,0B;EAAAA,sC;EAAAA,oD;EAAAA,iB;;;;;CAAA,uC;EAAAC,iC;;;;;QAAA,O;EAAAC,kC;EAAAA,+B;EAAAA;",
+"sources":["HTMLElementInfo.java"],
+"names":["elemental2.dom.HTMLElementInfo.<synthetic: ctor_js>","elemental2.dom.HTMLElementInfo.<synthetic: ctor_create>","elemental2.dom.HTMLElementInfo.<init>","elemental2.dom.HTMLElementInfo.<clinit>"]
+}

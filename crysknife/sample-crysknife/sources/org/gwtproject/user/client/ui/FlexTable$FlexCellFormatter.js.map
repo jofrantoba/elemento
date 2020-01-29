@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"FlexTable$FlexCellFormatter.impl.java.js",
+"lineCount":79,
+"mappings":"A;;;;;;;;MAoCe,iB;;;;CAAA,W;EAAAA,Q;EAAAA;gF;;;;;;;QAAA,gD;EAAAC,4B;EAAAA,wC;EAAAA,iI;EAAAA,iB;;;;;;CAAA,yG;EAAAC,4F;EAAAA,wH;;;;;;;;CAWA,sB,CAAeC,G,EAASC,M;EACjCC,oJ;;;;;;;;CAYS,sB,CAAeF,G,EAASC,M;EACjCE,oJ;;;;;;;;CAYU,2B,CAAeH,G,EAASC,M,EAAYG,O;EAC9CC,8J;;;;;;;;CAYU,2B,CAAeL,G,EAASC,M,EAAYK,O;EAC9CC,8J;;;;;QAnDS,O;EAAAC,oC;EAAAA,iC;EAAAA;",
+"sources":["FlexTable.java"],
+"names":["org.gwtproject.user.client.ui.FlexTable$FlexCellFormatter.<synthetic: ctor_js>","org.gwtproject.user.client.ui.FlexTable$FlexCellFormatter.<synthetic: ctor_create>","org.gwtproject.user.client.ui.FlexTable$FlexCellFormatter.<init>","row","column","org.gwtproject.user.client.ui.FlexTable$FlexCellFormatter.getColSpan","org.gwtproject.user.client.ui.FlexTable$FlexCellFormatter.getRowSpan","colSpan","org.gwtproject.user.client.ui.FlexTable$FlexCellFormatter.setColSpan","rowSpan","org.gwtproject.user.client.ui.FlexTable$FlexCellFormatter.setRowSpan","org.gwtproject.user.client.ui.FlexTable$FlexCellFormatter.<clinit>"]
+}

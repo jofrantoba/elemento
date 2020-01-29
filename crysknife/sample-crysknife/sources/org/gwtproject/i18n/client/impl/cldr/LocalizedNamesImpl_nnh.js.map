@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"LocalizedNamesImpl_nnh.impl.java.js",
+"lineCount":54,
+"mappings":"A;;;;;;;;MAsBa,uB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,kC;EAAAA,8C;EAAAA,iF;EAAAA,iB;;;;;CAAA,oE;EAAAC,wE;;;;;;;CAGK,yB;EACdC,umD;;;;;;CA2Qa,e;EACbC,wB;EACAA,qG;;;;;QAjRS,O;EAAAC,0C;EAAAA,uC;EAAAA;",
+"sources":["LocalizedNamesImpl_nnh.java"],
+"names":["org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_nnh.<synthetic: ctor_js>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_nnh.<synthetic: ctor_create>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_nnh.<init>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_nnh.loadSortedRegionCodes","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_nnh.loadNameMap","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_nnh.<clinit>"]
+}

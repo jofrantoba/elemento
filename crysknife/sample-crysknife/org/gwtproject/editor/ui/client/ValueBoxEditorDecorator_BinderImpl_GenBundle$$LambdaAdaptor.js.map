@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ValueBoxEditorDecorator_BinderImpl_GenBundle$$LambdaAdaptor.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;;;;MAIiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;2G;EAAAA,sM;;;;;;CAAA,4L;EAAAC,iC;EAAAA,8G;;;;;;CAAA,S;EAAAC,oF;EAAAA,2I;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["ValueBoxEditorDecorator_BinderImpl_GenBundle.java"],
+"names":["org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundle$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundle$$LambdaAdaptor.<init>","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundle$$LambdaAdaptor.style","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundle$$LambdaAdaptor.<clinit>"]
+}

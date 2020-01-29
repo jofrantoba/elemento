@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TouchScroller$MomentumTouchRemovalCommand.impl.java.js",
+"lineCount":65,
+"mappings":"A;;;;;;;;;;;;;;MAsMgB,2B;;;;CAAA,W;EAAAA,Q;EAAAA;4F;;;;;;;QAAA,kD;EAAAC,sC;EAAAA,kD;EAAAA,+I;EAAAA,iB;;;;;;CAAA,uH;EAAAC,wG;EAAAA,iC;;;;;;;CAEG,W;EACbC,IAAOC,WAAPD,oC;EACAA,IAAwBE,IAAxBF,uL;EACAA;GACEA,IAAcG,KAAdH,4EADFA;GAEEA;IACEA,kBADFA;IAFFA;G;EAMAA,uL;;;;;QAXU,O;EAAAI,8C;EAAAA,2C;EAAAA;",
+"sources":["TouchScroller.java"],
+"names":["org.gwtproject.touch.client.TouchScroller$MomentumTouchRemovalCommand.<synthetic: ctor_js>","org.gwtproject.touch.client.TouchScroller$MomentumTouchRemovalCommand.<synthetic: ctor_create>","org.gwtproject.touch.client.TouchScroller$MomentumTouchRemovalCommand.<init>","org.gwtproject.touch.client.TouchScroller$MomentumTouchRemovalCommand.execute","currentTime","iter","point","org.gwtproject.touch.client.TouchScroller$MomentumTouchRemovalCommand.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"RowheaderRole.impl.java.js",
+"lineCount":43,
+"mappings":"A;;;;;;;;;;;;;;;;MA4BiB,a;;;;;;;CAOR,wD,CAA4BA,O;;;;;;CAM9B,2D,CAA+BA,O;;;;;;;CAM/B,8F,CAA4BA,O,EAAmBC,K;;;;QAnBrC,O;EAAAC,gC;EAAAA;",
+"sources":["RowheaderRole.java"],
+"names":["element","value","org.gwtproject.aria.client.RowheaderRole.<clinit>"]
+}

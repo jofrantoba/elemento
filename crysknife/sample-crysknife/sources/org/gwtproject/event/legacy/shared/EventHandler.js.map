@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"EventHandler.impl.java.js",
+"lineCount":15,
+"mappings":"A;;;;;;;;MAuBiB,Y;;;;QAAA,O;EAAAA,+B;EAAAA;",
+"sources":["EventHandler.java"],
+"names":["org.gwtproject.event.legacy.shared.EventHandler.<clinit>"]
+}

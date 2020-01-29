@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ApplicationRole.impl.java.js",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MA2BiB,e;;;;QAAA,O;EAAAA,kC;EAAAA;",
+"sources":["ApplicationRole.java"],
+"names":["org.gwtproject.aria.client.ApplicationRole.<clinit>"]
+}

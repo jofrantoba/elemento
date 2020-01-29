@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"UiFactory.impl.java.js",
+"lineCount":28,
+"mappings":"A;;;;;;;;;;;;MAiCkB,S;;;;;;QAAA,M;EAAAA,oB;EAAAA,8B;;;;;QAAA,O;EAAAC,4B;EAAAA;",
+"sources":["UiFactory.java"],
+"names":["org.gwtproject.uibinder.client.UiFactory.<synthetic: adapt_lambda>","org.gwtproject.uibinder.client.UiFactory.<clinit>"]
+}

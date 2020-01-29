@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundle$$LambdaAdaptor.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;;;;MAWiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sI;EAAAA,4P;;;;;;CAAA,kP;EAAAC,iC;EAAAA,yI;;;;;;CAAA,S;EAAAC,iH;EAAAA,sK;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundle.java"],
+"names":["org.gwtproject.user.client.ui.NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundle$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundle$$LambdaAdaptor.<init>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundle$$LambdaAdaptor.style","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundle$$LambdaAdaptor.<clinit>"]
+}

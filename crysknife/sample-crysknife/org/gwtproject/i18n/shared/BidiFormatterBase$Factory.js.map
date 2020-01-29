@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"BidiFormatterBase$Factory.impl.java.js",
+"lineCount":73,
+"mappings":"A;;;;;;;;;;;;;;MAqCkC,O;;;;CAAA,W;EAAAA,Q;EAAAA;OAClB,kEADkBA,C;;;;;CAIvB,6D;EAAAC,iC;EACLA,2I;;;;;;;;;CAGgB,4E,CAAyBC,U,EAC/BC,U;;;;;;;CAEH,yE,CAAsBD,U,EACnBC,U;EACVC,IAAIC,KAAJD,qK;EACAA,IAAEE,SAAFF,kF;EACAA;GACEA,sHADFA;GAEEA,wGAFFA;G;EAIAA,iB;;;;;;;;CAIU,oI,CAAyBF,U,EAAoBC,U;EACvDI,IAAIC,CAAJD,iN;EAEAA;GACEA,OADFA;G;EAGAA,S;;;;;QA7B4B,O;EAAAE,0B;EAAAA,uB;EAAAA;",
+"sources":["BidiFormatterBase.java"],
+"names":["org.gwtproject.i18n.shared.BidiFormatterBase$Factory.<synthetic: ctor_js>","org.gwtproject.i18n.shared.BidiFormatterBase$Factory.<init>","contextDir","alwaysSpan","org.gwtproject.i18n.shared.BidiFormatterBase$Factory.getInstance","index","formatter","org.gwtproject.i18n.shared.BidiFormatterBase$Factory.calculateIndex","i","org.gwtproject.i18n.shared.BidiFormatterBase$Factory.<clinit>"]
+}

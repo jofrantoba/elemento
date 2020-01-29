@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"MarqueeRole.impl.java.js",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MA0BiB,W;;;;QAAA,O;EAAAA,8B;EAAAA;",
+"sources":["MarqueeRole.java"],
+"names":["org.gwtproject.aria.client.MarqueeRole.<clinit>"]
+}

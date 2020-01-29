@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"IsRenderable.impl.java.js",
+"lineCount":44,
+"mappings":"A;;;;;;;;;;;;MA6BiB,Y;;;;;;CAOV,iD,CAAqBA,O;;;;;CAMrB,4B;;;;;;;CAMI,yD,CAAyBC,O;;;;;;;CAO7B,yG,CAAyBA,O,EAAyBC,O;;;;QA1BxC,O;EAAAC,+B;EAAAA;",
+"sources":["IsRenderable.java"],
+"names":["element","stamper","builder","org.gwtproject.user.client.ui.IsRenderable.<clinit>"]
+}

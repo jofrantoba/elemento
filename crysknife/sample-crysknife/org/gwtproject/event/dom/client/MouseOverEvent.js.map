@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"MouseOverEvent.impl.java.js",
+"lineCount":110,
+"mappings":"A;;;;;;;;;;;;;;;MAqBa,c;;;;CAAA,W;EAAAA,Q;;;;;;QAWD,S;EAAAC,yB;EAAAA,qC;EAAAA,oE;EAAAA,iB;;;;;CAAA,uD;EAAAC,2D;;;;;;QAO2B,W;EAAAC,yB;EACnCA,8E;;;;;;;CAIkC,qB;EAClCC,8E;;;;;;CAQiB,oB;EACjBC,mH;;;;;;CAIa,4D,CAA0BC,O;EACvCC,4E;;;;;;;;CAtCS,4B;EAAAA,uI;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAEXA,0R;;;;;;;;;;;;;;;;;;;;;;;;AAFW;eAGiC,uDAHjC;",
+"sources":["MouseOverEvent.java"],
+"names":["org.gwtproject.event.dom.client.MouseOverEvent.<synthetic: ctor_js>","org.gwtproject.event.dom.client.MouseOverEvent.<synthetic: ctor_create>","org.gwtproject.event.dom.client.MouseOverEvent.<init>","org.gwtproject.event.dom.client.MouseOverEvent.getType","org.gwtproject.event.dom.client.MouseOverEvent.getAssociatedType","org.gwtproject.event.dom.client.MouseOverEvent.getRelatedTarget","handler","org.gwtproject.event.dom.client.MouseOverEvent.dispatch","org.gwtproject.event.dom.client.MouseOverEvent.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"UiHandler.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;MA+BkB,S;;;;;;CAEhB,S;;;;QAFgB,O;EAAAA,4B;EAAAA;",
+"sources":["UiHandler.java"],
+"names":["org.gwtproject.uibinder.client.UiHandler.<clinit>"]
+}

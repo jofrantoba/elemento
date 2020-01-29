@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Path$Node.impl.java.js",
+"lineCount":40,
+"mappings":"A;;;;;;;;;MA6BY,I;;;;;;CAOD,W;;;;;;CAGC,gB;;;;;;CAGA,Y;;;;;;CAGD,U;;;;QAhBC,O;EAAAA,uB;EAAAA;",
+"sources":["Path.java"],
+"names":["javax.validation.Path$Node.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"EditorSource.impl.java.js",
+"lineCount":77,
+"mappings":"A;;;;;;;;;;;;;;MA4BsB,Y;;;;CAAA,W;EAAAA,Q;;;;;CAAA,2D;EAAAC,iC;;;;;;;;CAOF,a,CAAWC,K;;;;;;;CAUd,kB,CAAWC,K,EAAWD,K;EACnCE,6B;EACAA,IAAQC,QAARD,+D;EACAA,SAASE,CAATF;GACEA,4CADFA;G;EAGAA,gB;;;;;;CAaO,4B;EACPG,IAAEF,QAAFE,yB;EACAA,8D;EACAA,gB;;;;;;CAQU,8C,CAAUC,S;;;;;;CAQV,oD,CAAWC,M,EAAYP,K;EACjCQ,6B;;;;;QAxDkB,O;EAAAC,+B;EAAAA,4B;EAAAA;",
+"sources":["EditorSource.java"],
+"names":["org.gwtproject.editor.client.adapters.EditorSource.<synthetic: ctor_js>","org.gwtproject.editor.client.adapters.EditorSource.<init>","index","count","org.gwtproject.editor.client.adapters.EditorSource.create","toReturn","i","org.gwtproject.editor.client.adapters.EditorSource.createEditorForTraversal","subEditor","editor","org.gwtproject.editor.client.adapters.EditorSource.setIndex","org.gwtproject.editor.client.adapters.EditorSource.<clinit>"]
+}

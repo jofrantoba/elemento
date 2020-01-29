@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Reflect.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;MAQa,O;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,kB;EAAAA,8B;EAAAA,iE;EAAAA,iB;;;;;CAAA,oD;EAAAC,iC;;;;;QAAA,O;EAAAC,0B;EAAAA,uB;EAAAA;",
+"sources":["Reflect.java"],
+"names":["org.treblereel.gwt.crysknife.client.Reflect.<synthetic: ctor_js>","org.treblereel.gwt.crysknife.client.Reflect.<synthetic: ctor_create>","org.treblereel.gwt.crysknife.client.Reflect.<init>","org.treblereel.gwt.crysknife.client.Reflect.<clinit>"]
+}

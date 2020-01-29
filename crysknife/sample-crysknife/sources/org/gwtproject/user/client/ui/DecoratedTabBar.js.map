@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DecoratedTabBar.impl.java.js",
+"lineCount":89,
+"mappings":"A;;;;;;;;;;MAmDa,e;;;;CAAA,W;EAAAA,Q;;;;;;QAQJ,S;EAAAC,0B;EAAAA,sC;EAAAA,mE;EAAAA,iB;;;;;CAAA,sD;EACLC,qD;EACAA,iI;;;;;;;CAIoB,wB;EACpBC,kJ;;;;;;QAdF,mE;EAAAC,qH;;;;;;QAAA,mE;EAAAC,sH;;;;;QADW,O;EAAAC,kC;EAAAA,+B;EAAAA,iB;EACXA,sK;;;;;;;;;;;;;;;;;;;;;;AADW;iF;AAGX;gBAAoB,kEAApB;",
+"sources":["DecoratedTabBar.java"],
+"names":["org.gwtproject.user.client.ui.DecoratedTabBar.<synthetic: ctor_js>","org.gwtproject.user.client.ui.DecoratedTabBar.<synthetic: ctor_create>","org.gwtproject.user.client.ui.DecoratedTabBar.<init>","org.gwtproject.user.client.ui.DecoratedTabBar.createTabTextWrapper","org.gwtproject.user.client.ui.DecoratedTabBar.<synthetic: getter>","org.gwtproject.user.client.ui.DecoratedTabBar.<synthetic: setter>","org.gwtproject.user.client.ui.DecoratedTabBar.<clinit>"]
+}

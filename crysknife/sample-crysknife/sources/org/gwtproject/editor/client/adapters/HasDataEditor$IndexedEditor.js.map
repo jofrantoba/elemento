@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasDataEditor$IndexedEditor.impl.java.js",
+"lineCount":93,
+"mappings":"A;;;;;;;;;;;;;;;;MA4DuB,a;;;;CAAA,W;EAAAA,Q;EAAAA;OACP,2EADOA,K;EAAAA;OAET,2EAFSA,C;EAAAA;OAGM,0EAHNA,C;;;;;;;;;QAKnB,gD,CAAkBC,K,EAAkBC,I;EAApCC,wB;EAAAA,oC;EAAAA,yI;EAAAA,iB;;;;;;;CAAA,iH,CAAkBF,K,EAAkBC,I;EAApCE,iC;EACEA,yF;EACAA,uF;;;;;;;CAIO,Y;EACPC,wF;;;;;;;CAIU,4B,CAAWC,K;EACrBC,yF;EACAA,qF;;;;;;CAGG,yD,CAAaN,K;EAChBO,6B;EACAA,yF;EACAA,qF;;;;;CAGW,6E;EACXC;GACEA,6VADFA;G;;;;;QA5BiB,O;EAAAC,gC;EAAAA,6B;EAAAA;",
+"sources":["HasDataEditor.java"],
+"names":["org.gwtproject.editor.client.adapters.HasDataEditor$IndexedEditor.<synthetic: ctor_js>","index","data","org.gwtproject.editor.client.adapters.HasDataEditor$IndexedEditor.<synthetic: ctor_create>","org.gwtproject.editor.client.adapters.HasDataEditor$IndexedEditor.<init>","org.gwtproject.editor.client.adapters.HasDataEditor$IndexedEditor.getValue","value","org.gwtproject.editor.client.adapters.HasDataEditor$IndexedEditor.setValue","org.gwtproject.editor.client.adapters.HasDataEditor$IndexedEditor.setIndex","org.gwtproject.editor.client.adapters.HasDataEditor$IndexedEditor.push","org.gwtproject.editor.client.adapters.HasDataEditor$IndexedEditor.<clinit>"]
+}

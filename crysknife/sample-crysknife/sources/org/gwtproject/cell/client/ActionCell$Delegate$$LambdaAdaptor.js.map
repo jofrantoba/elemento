@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ActionCell$Delegate$$LambdaAdaptor.impl.java.js",
+"lineCount":47,
+"mappings":"A;;;;;;;;;;MAyC0B,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;6E;EAAAA,0I;;;;;;CAAA,gI;EAAAC,iC;EAAAA,gF;;;;;;CAAA,2B;;GAAAC,2F;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["ActionCell.java"],
+"names":["org.gwtproject.cell.client.ActionCell$Delegate$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.cell.client.ActionCell$Delegate$$LambdaAdaptor.<init>","org.gwtproject.cell.client.ActionCell$Delegate$$LambdaAdaptor.execute","org.gwtproject.cell.client.ActionCell$Delegate$$LambdaAdaptor.<clinit>"]
+}

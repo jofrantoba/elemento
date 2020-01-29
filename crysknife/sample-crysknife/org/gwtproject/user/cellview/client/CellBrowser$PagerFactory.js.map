@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CellBrowser$PagerFactory.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;MAywBmB,Y;;;;;;;CACD,4C,CAAeA,O;;;;;;QADd,M;EAAAC,uB;EAAAA,8B;;;;;QAAA,O;EAAAC,+B;EAAAA;",
+"sources":["CellBrowser.java"],
+"names":["display","org.gwtproject.user.cellview.client.CellBrowser$PagerFactory.<synthetic: adapt_lambda>","org.gwtproject.user.cellview.client.CellBrowser$PagerFactory.<clinit>"]
+}

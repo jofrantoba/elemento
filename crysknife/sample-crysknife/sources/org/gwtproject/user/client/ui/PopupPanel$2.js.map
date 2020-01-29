@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"PopupPanel$2.impl.java.js",
+"lineCount":61,
+"mappings":"A;;;;;;;;;;;;MA07BmD,E;;;;CAAA,W;EAAAA,Q;EAAAA;iE;EAAAA;OAFDC,SAECD,C;;;;;;;;QAAA,yF;EAAAE,a;EAAAA,yB;EAAAA,sK;EAAAA,iB;;;;;;;CAAA,mI;EAAAC,6E;EAAAA,2B;EAAAA,iC;;;;;;;;CACjC,uB,CAAgBC,W,EAAiBC,Y;EAC3CC,mN;;;;;QAF2C,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["PopupPanel.java"],
+"names":["org.gwtproject.user.client.ui.PopupPanel$2.<synthetic: ctor_js>","target","org.gwtproject.user.client.ui.PopupPanel$2.<synthetic: ctor_create>","org.gwtproject.user.client.ui.PopupPanel$2.<init>","offsetWidth","offsetHeight","org.gwtproject.user.client.ui.PopupPanel$2.setPosition","org.gwtproject.user.client.ui.PopupPanel$2.<clinit>"]
+}

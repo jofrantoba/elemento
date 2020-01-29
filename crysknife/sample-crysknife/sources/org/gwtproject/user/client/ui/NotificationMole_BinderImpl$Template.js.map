@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NotificationMole_BinderImpl$Template.impl.java.js",
+"lineCount":39,
+"mappings":"A;;;;;;;;;;;;MAOY,Q;;;;;;;;;;;CACgC,iG,CAAaA,I,EAAaC,I,EAAaC,I,EAAaC,I,EAAaC,I;;;;;;QADjG,M;EAAAC,mB;EAAAA,8B;;;;;QAAA,O;EAAAC,2B;EAAAA;",
+"sources":["NotificationMole_BinderImpl.java"],
+"names":["arg0","arg1","arg2","arg3","arg4","org.gwtproject.user.client.ui.NotificationMole_BinderImpl$Template.<synthetic: adapt_lambda>","org.gwtproject.user.client.ui.NotificationMole_BinderImpl$Template.<clinit>"]
+}

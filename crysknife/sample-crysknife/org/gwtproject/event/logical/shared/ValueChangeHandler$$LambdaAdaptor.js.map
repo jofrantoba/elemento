@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ValueChangeHandler$$LambdaAdaptor.impl.java.js",
+"lineCount":49,
+"mappings":"A;;;;;;;;;;;;MAsBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qF;EAAAA,0J;;;;;;CAAA,gJ;EAAAC,iC;EAAAA,wF;;;;;;CAAA,qE;;GAAAC,mG;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["ValueChangeHandler.java"],
+"names":["org.gwtproject.event.logical.shared.ValueChangeHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.logical.shared.ValueChangeHandler$$LambdaAdaptor.<init>","org.gwtproject.event.logical.shared.ValueChangeHandler$$LambdaAdaptor.onValueChange","org.gwtproject.event.logical.shared.ValueChangeHandler$$LambdaAdaptor.<clinit>"]
+}

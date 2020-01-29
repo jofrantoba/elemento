@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"WidgetCollection$WidgetIterator.impl.java.js",
+"lineCount":106,
+"mappings":"A;;;;;;;;;;;;;;;;;MAmCgB,c;;;;CAAA,W;EAAAA,Q;EAAAA;oF;EAAAA;OAEA,uEAFAA,K;EAAAA;OAGG,+EAHHA,C;;;;;;;QAAA,uD;EAAAC,yB;EAAAA,qC;EAAAA,4I;EAAAA,iB;;;;;;CAAA,oH;EAAAC,gG;EAAAA,iC;EAAAA,gF;;;;;;;CAMG,W;EACbC,gO;;;;;;;CAIY,Q;EACZC;GACEA,2DADFA;G;EAGAA,gT;EACAA,+E;EACAA,4F;;;;;;CAIU,U;EACVC;GACEA,0DADFA;G;EAGAA,iR;EACAA,+E;EACAA,4F;;;;;;;;CA3BU,+C;EAAAC,mG;;;;;CAAA,wE;EAEZJ,iF;;;;;QAFY,O;EAAAK,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
+"sources":["WidgetCollection.java"],
+"names":["org.gwtproject.user.client.ui.WidgetCollection$WidgetIterator.<synthetic: ctor_js>","org.gwtproject.user.client.ui.WidgetCollection$WidgetIterator.<synthetic: ctor_create>","org.gwtproject.user.client.ui.WidgetCollection$WidgetIterator.<init>","org.gwtproject.user.client.ui.WidgetCollection$WidgetIterator.hasNext","org.gwtproject.user.client.ui.WidgetCollection$WidgetIterator.next","org.gwtproject.user.client.ui.WidgetCollection$WidgetIterator.remove","org.gwtproject.user.client.ui.WidgetCollection$WidgetIterator.forEachRemaining","org.gwtproject.user.client.ui.WidgetCollection$WidgetIterator.<clinit>"]
+}

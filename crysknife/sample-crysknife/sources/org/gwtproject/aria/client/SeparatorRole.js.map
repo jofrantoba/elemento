@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SeparatorRole.impl.java.js",
+"lineCount":60,
+"mappings":"A;;;;;;;;;;;;;MA4BiB,a;;;;;;;CAOR,yD,CAA6BA,O;;;;;;;CAO7B,+D,CAAmCA,O;;;;;;CAMrC,4D,CAAgCA,O;;;;;;CAMhC,kE,CAAsCA,O;;;;;;;CAMtC,mG,CAA6BA,O,EAAuBC,K;;;;;;;CAMpD,4G,CAAmCD,O,EAA0BC,K;;;;QAtCnD,O;EAAAC,gC;EAAAA;",
+"sources":["SeparatorRole.java"],
+"names":["element","value","org.gwtproject.aria.client.SeparatorRole.<clinit>"]
+}

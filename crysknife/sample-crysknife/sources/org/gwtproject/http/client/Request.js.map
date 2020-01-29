@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Request.impl.java.js",
+"lineCount":140,
+"mappings":"A;;;;;;;;;;;;;;;;MAwBa,O;;;;CAAA,W;EAAAA,Q;EAAAA;OAaO,oDAbPA,K;EAAAA;OAgBU,8CAhBVA,O;EAAAA;OAsBY,qDAtBZA,C;;;;;;;QAQa,+C,CAAoCC,c;EAC1DC,2E;;;;;;;;;QAwBF,uF,CAAuBD,c,EAAoBE,a,EAA+BC,Q;EAA1EC,kB;EAAAA,8B;EAAAA,6K;EAAAA,iB;;;;;;;;CAAA,yH,CAAuBJ,c,EAAoBE,a,EAA+BC,Q;EAA1EE,iC;EACEA;GACEA,yDADFA;G;EAIAA;GACEA,yDADFA;G;EAIAA;GACEA,6DADFA;G;EAIAA,0E;EACAA,4E;EAEAA;GACEA,6KAA+BC,IAA/BD;IAAuCE,iHAAvCF;yBADFA;;GAGEA,0DAHFA;G;;;;;CAWU,U;EACVG;GACEA,OADFA;G;EAIAA,6D;EAcAA,IAAqBC,GAArBD,8D;EACAA,kE;EAmBAA,Y;;;;;;CAQa,a;EACbE;GACEA,aADFA;G;EAIAA,IAAOC,UAAPD,yE;EASAA,oI;;;;;;CASG,mG,CAAuCP,Q;EAC1CS;GAEEA,OAFFA;G;EAKAA,6D;EAOAA,IAAqBH,GAArBG,8D;EACAA,kE;EAEAA,IAASC,QAATD,gE;EACAA,uH;;;;;CAIW,qD;EACXE;GACEA,yEADFA;G;;;;;;CAQW,iG,CAA8BX,Q;EACzCY;GAEEA,OAFFA;G;EAKAA,kB;EAEAA,6N;;;;;QAxKS,O;EAAAC,0B;EAAAA,uB;EAAAA;",
+"sources":["Request.java"],
+"names":["org.gwtproject.http.client.Request.<synthetic: ctor_js>","xmlHttpRequest","org.gwtproject.http.client.Request.createResponse","timeoutMillis","callback","org.gwtproject.http.client.Request.<synthetic: ctor_create>","org.gwtproject.http.client.Request.<init>","args","org.gwtproject.http.client.Request.<lambda in <init>>","org.gwtproject.http.client.Request.cancel","xhr","org.gwtproject.http.client.Request.isPending","readyState","org.gwtproject.http.client.Request.fireOnResponseReceived","response","org.gwtproject.http.client.Request.cancelTimer","org.gwtproject.http.client.Request.fireOnTimeout","org.gwtproject.http.client.Request.<clinit>"]
+}

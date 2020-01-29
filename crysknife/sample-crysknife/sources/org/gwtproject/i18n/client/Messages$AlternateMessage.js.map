@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Messages$AlternateMessage.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;MAqNoB,gB;;;;;;CAEhB,S;;;;QAFgB,O;EAAAA,mC;EAAAA;",
+"sources":["Messages.java"],
+"names":["org.gwtproject.i18n.client.Messages$AlternateMessage.<clinit>"]
+}

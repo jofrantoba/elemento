@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"BeforeSelectionHandler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;MAsBiB,sB;;;;;;CAOV,6E,CAA0CA,K;;;;;;;QAPhC,M;EAAAC,iC;EAAAA,iE;;;;;QAAA,O;EAAAC,yC;EAAAA;",
+"sources":["BeforeSelectionHandler.java"],
+"names":["event","org.gwtproject.event.logical.shared.BeforeSelectionHandler.<synthetic: adapt_lambda>","org.gwtproject.event.logical.shared.BeforeSelectionHandler.<clinit>"]
+}

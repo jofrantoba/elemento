@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Window$ClosingHandler.impl.java.js",
+"lineCount":32,
+"mappings":"A;;;;;;;;;;MA+FmB,c;;;;;;CAOV,wE,CAAoCA,K;;;;;;QAP1B,M;EAAAC,yB;EAAAA,8B;;;;;QAAA,O;EAAAC,iC;EAAAA;",
+"sources":["Window.java"],
+"names":["event","org.gwtproject.user.window.client.Window$ClosingHandler.<synthetic: adapt_lambda>","org.gwtproject.user.window.client.Window$ClosingHandler.<clinit>"]
+}

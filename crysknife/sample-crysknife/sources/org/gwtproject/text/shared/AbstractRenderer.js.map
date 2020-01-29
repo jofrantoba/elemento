@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AbstractRenderer.impl.java.js",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;;;MAMsB,gB;;;;CAAA,W;EAAAA,Q;;;;;CACX,oD;EAAAC,iC;;;;;;;;CAGK,gD,CAASC,M,EAAmBC,U;EACpCC,qF;;;;;QALc,O;EAAAC,mC;EAAAA,gC;EAAAA;",
+"sources":["AbstractRenderer.java"],
+"names":["org.gwtproject.text.shared.AbstractRenderer.<synthetic: ctor_js>","org.gwtproject.text.shared.AbstractRenderer.<init>","object","appendable","org.gwtproject.text.shared.AbstractRenderer.render","org.gwtproject.text.shared.AbstractRenderer.<clinit>"]
+}

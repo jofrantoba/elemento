@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Point.impl.java.js",
+"lineCount":163,
+"mappings":"A;;;;;;;;MAoBa,K;;;;CAAA,W;EAAAA,Q;EAAAA;OAEU,uCAFVA,O;EAAAA;OAGU,uCAHVA,O;;;;;;;QAKJ,S;EAAAC,gB;EAAAA,4B;EAAAA,uD;EAAAA,iB;;;;;;CAAA,0C;EACLC,wE;;;;;;;;;QAGK,uB,CAAaC,C,EAAUC,C;EAAvBH,gB;EAAAA,4B;EAAAA,yE;EAAAA,iB;;;;;;;;CAAA,wD,CAAaE,C,EAAUC,C;EAAvBF,iC;EACLA,iD;EACAA,iD;;;;;;;;QAGK,0C,CAAYG,C;EAAZJ,gB;EAAAA,4B;EAAAA,yF;EAAAA,iB;;;;;;;CAAA,2E,CAAYI,C;EACjBH,oJ;;;;;;;CAUW,wC,CAAUG,C;EACrBC,yN;;;;;;;;CAIa,M,CAAcC,G;EAC3BC;GACEA,aADFA;G;EAGAA,IAAMH,CAANG,gD;EACAA,kM;;;;;;CAQY,Q;EACZC,oD;;;;;;CAQY,Q;EACZC,oD;;;;;;;CAIS,Q;EACTC,mK;;;;;;;CAUW,0C,CAAYN,C;EACvBO,yN;;;;;;;CAUW,yC,CAAWP,C;EACtBQ,yN;;;;;;;CAUW,yC,CAAWR,C;EACtBS,yN;;;;;;;CAIY,Q;EACZC,0H;;;;;QAhGS,O;EAAAC,wB;EAAAA,qB;EAAAA;",
+"sources":["Point.java"],
+"names":["org.gwtproject.touch.client.Point.<synthetic: ctor_js>","org.gwtproject.touch.client.Point.<synthetic: ctor_create>","org.gwtproject.touch.client.Point.<init>","x","y","c","org.gwtproject.touch.client.Point.div","obj","org.gwtproject.touch.client.Point.equals","org.gwtproject.touch.client.Point.getX","org.gwtproject.touch.client.Point.getY","org.gwtproject.touch.client.Point.hashCode","org.gwtproject.touch.client.Point.minus","org.gwtproject.touch.client.Point.mult","org.gwtproject.touch.client.Point.plus","org.gwtproject.touch.client.Point.toString","org.gwtproject.touch.client.Point.<clinit>"]
+}

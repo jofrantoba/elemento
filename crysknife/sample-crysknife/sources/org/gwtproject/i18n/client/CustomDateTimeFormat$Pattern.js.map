@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CustomDateTimeFormat$Pattern.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;MAwCoB,O;;;;;;CAEhB,S;;;;QAFgB,O;EAAAA,0B;EAAAA;",
+"sources":["CustomDateTimeFormat.java"],
+"names":["org.gwtproject.i18n.client.CustomDateTimeFormat$Pattern.<clinit>"]
+}

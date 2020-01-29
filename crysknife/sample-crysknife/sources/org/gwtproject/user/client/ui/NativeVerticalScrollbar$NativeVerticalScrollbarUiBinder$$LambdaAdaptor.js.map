@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NativeVerticalScrollbar$NativeVerticalScrollbarUiBinder$$LambdaAdaptor.impl.java.js",
+"lineCount":59,
+"mappings":"A;;;;;;;;;;;;;MA+BY,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;oH;EAAAA,wN;;;;;;CAAA,8M;EAAAC,iC;EAAAA,uH;;;;;;;CAAA,wE;EAAAC,+D;EAAAA,wJ;;;;;;;;;CAAA,mC;EAAAA,wK;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["NativeVerticalScrollbar.java"],
+"names":["org.gwtproject.user.client.ui.NativeVerticalScrollbar$NativeVerticalScrollbarUiBinder$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.client.ui.NativeVerticalScrollbar$NativeVerticalScrollbarUiBinder$$LambdaAdaptor.<init>","org.gwtproject.user.client.ui.NativeVerticalScrollbar$NativeVerticalScrollbarUiBinder$$LambdaAdaptor.createAndBindUi","org.gwtproject.user.client.ui.NativeVerticalScrollbar$NativeVerticalScrollbarUiBinder$$LambdaAdaptor.<clinit>"]
+}

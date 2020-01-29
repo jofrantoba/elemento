@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"EventMap.impl.java.js",
+"lineCount":55,
+"mappings":"A;;;;;;;;MA0BM,Q;;;;CAGQ,W;EAAAA,mB;EAAAA,Q;EAAAA,yD;;;;;CAAA,iD;;;;;;QAKe,kD,CAAgBC,M;EACrCC,uBAAQC,GAARD,WAAaE,KAAbF;GAAuBG,oJAAvBH;I;;;;;;;QAMQ,0G,CAAyBI,G,EAAeC,E;EAAxCC,mB;EACRA,yJAA8BC,EAA9BD;GAAoCE,+HAApCF;K;;;;;;CAOc,oD,CAAuBG,Q;EACrCC,iM;;;;;QAxBF,O;EAAAC,2B;EAAAA;",
+"sources":["EventMap.java"],
+"names":["org.gwtproject.user.client.impl.EventMap.<init>","target","org.gwtproject.user.client.impl.EventMap.copyTo","key","value","org.gwtproject.user.client.impl.EventMap.<lambda in copyTo>","map","fn","org.gwtproject.user.client.impl.EventMap.foreach","cb","org.gwtproject.user.client.impl.EventMap.<lambda in foreach>","eventMap","org.gwtproject.user.client.impl.EventMap.merge","org.gwtproject.user.client.impl.EventMap.<clinit>"]
+}

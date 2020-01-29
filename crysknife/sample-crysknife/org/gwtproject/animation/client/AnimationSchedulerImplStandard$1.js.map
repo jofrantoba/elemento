@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AnimationSchedulerImplStandard$1.impl.java.js",
+"lineCount":54,
+"mappings":"A;;;;;;;MA8BiC,E;;;;CAAA,W;EAAAA,Q;EAAAA;uF;EAAAA;OADnBC,KACmBD,K;;;;;;;;QAAA,4E;EAAAE,a;EAAAA,yB;EAAAA,2K;EAAAA,iB;;;;;;;CAAA,4I;EAAAC,mG;EAAAA,mB;EAAAA,mF;;;;;;CAEf,U;EACVC,6D;;;;;QAHyB,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["AnimationSchedulerImplStandard.java"],
+"names":["org.gwtproject.animation.client.AnimationSchedulerImplStandard$1.<synthetic: ctor_js>","id","org.gwtproject.animation.client.AnimationSchedulerImplStandard$1.<synthetic: ctor_create>","org.gwtproject.animation.client.AnimationSchedulerImplStandard$1.<init>","org.gwtproject.animation.client.AnimationSchedulerImplStandard$1.cancel","org.gwtproject.animation.client.AnimationSchedulerImplStandard$1.<clinit>"]
+}

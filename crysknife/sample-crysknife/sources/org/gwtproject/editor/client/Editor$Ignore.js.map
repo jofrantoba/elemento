@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Editor$Ignore.impl.java.js",
+"lineCount":28,
+"mappings":"A;;;;;;;;;;;;MA8CoB,M;;;;;;QAAA,M;EAAAA,iB;EAAAA,8B;;;;;QAAA,O;EAAAC,yB;EAAAA;",
+"sources":["Editor.java"],
+"names":["org.gwtproject.editor.client.Editor$Ignore.<synthetic: adapt_lambda>","org.gwtproject.editor.client.Editor$Ignore.<clinit>"]
+}

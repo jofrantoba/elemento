@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CommonResources_BundleImpl.impl.java.js",
+"lineCount":143,
+"mappings":"A;;;;;;;;;;;;;;;;;;MAEa,2B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,sC;EAAAA,kD;EAAAA,gF;EAAAA,iB;;;;;CAAA,mE;EAAAC,iC;;;;;CAEE,6F;EACXC,4L;;;;;;;CA8BsC,oB;EACtCC,6C;;;;;;CAKyB,gB;EACzBC,iH;;;;;;;CAIuB,+B,CAAmBC,I;EACxCC;GACEA,kLADFA;GAEEA,4JAFFA;G;EAIAA,yL;;;;;;QAhDJ,6E;EAAAC,uJ;;;;;;QAAA,6E;EAAAC,wJ;;;;;;QAoCA,mF;EAAAD,6J;;;;;;QAAA,mF;EAAAC,8J;;;;;QArCW,O;EAAAC,8C;EAAAA,2C;EAAAA,qB;EACXA,iJ;;;;;;;;;;;;;;;;;;;;;;;;;;;;AADW;uG;AAAA;4BAoCiD,0EApCjD,C;AAAA;;",
+"sources":["CommonResources_BundleImpl.java"],
+"names":["org.gwtproject.resources.client.CommonResources_BundleImpl.<synthetic: ctor_js>","org.gwtproject.resources.client.CommonResources_BundleImpl.<synthetic: ctor_create>","org.gwtproject.resources.client.CommonResources_BundleImpl.<init>","org.gwtproject.resources.client.CommonResources_BundleImpl.inlineBlockStyleInitializer","org.gwtproject.resources.client.CommonResources_BundleImpl.inlineBlockStyle","org.gwtproject.resources.client.CommonResources_BundleImpl.getResources","name","org.gwtproject.resources.client.CommonResources_BundleImpl.getResource","org.gwtproject.resources.client.CommonResources_BundleImpl.<synthetic: getter>","org.gwtproject.resources.client.CommonResources_BundleImpl.<synthetic: setter>","org.gwtproject.resources.client.CommonResources_BundleImpl.<clinit>"]
+}

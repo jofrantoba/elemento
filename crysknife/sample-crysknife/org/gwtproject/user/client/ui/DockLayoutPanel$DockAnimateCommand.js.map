@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DockLayoutPanel$DockAnimateCommand.impl.java.js",
+"lineCount":52,
+"mappings":"A;;;;;;;;MA+GgB,kB;;;;CAAA,W;EAAAA,Q;EAAAA;uF;;;;;;;;QACL,2F,cAA0BC,M;EAA1BC,6B;EAAAA,yC;EAAAA,2L;EAAAA,iB;;;;;;;CAAA,2J,cAA0BD,M;EAA1BE,mG;EACLA,qG;;;;;;CAIa,kB;EACbC,qJ;;;;;QAPU,O;EAAAC,qC;EAAAA,kC;EAAAA;",
+"sources":["DockLayoutPanel.java"],
+"names":["org.gwtproject.user.client.ui.DockLayoutPanel$DockAnimateCommand.<synthetic: ctor_js>","layout","org.gwtproject.user.client.ui.DockLayoutPanel$DockAnimateCommand.<synthetic: ctor_create>","org.gwtproject.user.client.ui.DockLayoutPanel$DockAnimateCommand.<init>","org.gwtproject.user.client.ui.DockLayoutPanel$DockAnimateCommand.doBeforeLayout","org.gwtproject.user.client.ui.DockLayoutPanel$DockAnimateCommand.<clinit>"]
+}

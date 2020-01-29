@@ -1,0 +1,33 @@
+goog.module('org.gwtproject.user.client.ui.Widget');
+
+goog.require('nativebootstrap.Util');
+goog.require('org.gwtproject.event.logical.shared.HasAttachHandlers');
+goog.require('org.gwtproject.user.client.EventListener');
+goog.require('org.gwtproject.user.client.ui.IsWidget');
+goog.require('org.gwtproject.user.client.ui.UIObject');
+goog.require('java.lang.IllegalStateException');
+goog.require('java.lang.String');
+goog.require('jsinterop.base.Js');
+goog.require('nativebootstrap.Equality');
+goog.require('org.gwtproject.dom.client.Element.$Overlay');
+goog.require('org.gwtproject.dom.client.NativeEvent.$Overlay');
+goog.require('org.gwtproject.dom.client.Node.$Overlay');
+goog.require('org.gwtproject.event.dom.client.DomEvent');
+goog.require('org.gwtproject.event.dom.client.DomEvent.Type');
+goog.require('org.gwtproject.event.legacy.shared.EventHandler');
+goog.require('org.gwtproject.event.logical.shared.AttachEvent');
+goog.require('org.gwtproject.event.logical.shared.AttachEvent.Handler');
+goog.require('org.gwtproject.event.shared.Event');
+goog.require('org.gwtproject.event.shared.Event.Type');
+goog.require('org.gwtproject.event.shared.HandlerManager');
+goog.require('org.gwtproject.event.shared.HandlerRegistration');
+goog.require('org.gwtproject.user.client.DOM');
+goog.require('org.gwtproject.user.client.Event');
+goog.require('org.gwtproject.user.client.ui.HasWidgets');
+goog.require('org.gwtproject.user.client.ui.RootPanel');
+goog.require('vmbootstrap.Asserts');
+goog.require('vmbootstrap.Casts');
+goog.require('vmbootstrap.Exceptions');
+
+const Widget = goog.require('org.gwtproject.user.client.ui.Widget$impl');
+exports = Widget; 

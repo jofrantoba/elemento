@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SafeUri.impl.java.js",
+"lineCount":44,
+"mappings":"A;;;;;;;;;MAyDiB,O;;;;;;CAYR,Y;;;;;;;CAQC,M,CAAcA,Q;;;;;;CAMlB,Q;;;;;;QA1BW,M;EAAAC,kB;EAAAA,8B;;;;;QAAA,O;EAAAC,0B;EAAAA;",
+"sources":["SafeUri.java"],
+"names":["anObject","org.gwtproject.safehtml.shared.SafeUri.<synthetic: adapt_lambda>","org.gwtproject.safehtml.shared.SafeUri.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CompositeCell$1.impl.java.js",
+"lineCount":82,
+"mappings":"A;;;;;;;;;;;;;;;MAkPqE,E;;;;CAAA,W;EAAAA,Q;EAAAA;iE;EAAAA;OAFxCC,eAEwCD,C;EAAAA;OAbeE,UAafF,C;EAAAA;OAZvBG,SAYuBH,C;EAAAA;OAZqDI,eAYrDJ,C;;;;;;;;;;;;QAAA,8L;EAAAK,a;EAAAA,yB;EAAAA,yT;EAAAA,iB;;;;;;;;;;CAAA,wO;EAAAC,6E;EAAAA,uC;EAAAA,6B;EAAAA,2B;EAAAA,uC;EAAAA,iC;;;;;;;CAEjD,0B,CAASC,K;EACnBC,8H;EACAA;GACEA,gEADFA;G;;;;;QAJ2D,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["CompositeCell.java"],
+"names":["org.gwtproject.cell.client.CompositeCell$1.<synthetic: ctor_js>","fieldUpdater","context","object","valueUpdater","org.gwtproject.cell.client.CompositeCell$1.<synthetic: ctor_create>","org.gwtproject.cell.client.CompositeCell$1.<init>","value","org.gwtproject.cell.client.CompositeCell$1.update","org.gwtproject.cell.client.CompositeCell$1.<clinit>"]
+}

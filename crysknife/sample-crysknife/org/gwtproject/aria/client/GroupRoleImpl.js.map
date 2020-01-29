@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"GroupRoleImpl.impl.java.js",
+"lineCount":100,
+"mappings":"A;;;;;;;;;;;;;;;;MAsBM,a;;;;CAAA,W;EAAAA,Q;;;;;;;QAEJ,yB,CAAqBC,Q;EAArBC,wB;EAAAA,oC;EAAAA,sF;EAAAA,iB;;;;;;CAAA,iE,CAAqBD,Q;EACnBE,4E;;;;;;;;CAIY,oE,CAAwCC,O;EACpDC,0H;;;;;;;CAIU,uE,CAA2CD,O;EACrDE,sH;;;;;;;;CAIU,mG,CAAwCF,O,EAAYG,K;EAC9DC,oM;;;;;;;;CAIY,yD,CAA6BJ,O;EACzCK,4G;;;;;;;CAIU,4D,CAAgCL,O;EAC1CM,wG;;;;;;;;CAIU,mG,CAA6BN,O,EAAuBG,K;EAC9DI,4M;;;;;QAjCE,O;EAAAC,gC;EAAAA,6B;EAAAA;",
+"sources":["GroupRoleImpl.java"],
+"names":["org.gwtproject.aria.client.GroupRoleImpl.<synthetic: ctor_js>","roleName","org.gwtproject.aria.client.GroupRoleImpl.<synthetic: ctor_create>","org.gwtproject.aria.client.GroupRoleImpl.<init>","element","org.gwtproject.aria.client.GroupRoleImpl.getAriaActivedescendantProperty","org.gwtproject.aria.client.GroupRoleImpl.removeAriaActivedescendantProperty","value","org.gwtproject.aria.client.GroupRoleImpl.setAriaActivedescendantProperty","org.gwtproject.aria.client.GroupRoleImpl.getAriaExpandedState","org.gwtproject.aria.client.GroupRoleImpl.removeAriaExpandedState","org.gwtproject.aria.client.GroupRoleImpl.setAriaExpandedState","org.gwtproject.aria.client.GroupRoleImpl.<clinit>"]
+}

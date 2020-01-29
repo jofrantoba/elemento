@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Path.impl.java.js",
+"lineCount":30,
+"mappings":"A;;;;;;;;;;;;;MA0BiB,I;;;;;;QAAA,M;EAAAA,e;EAAAA,8B;;;;;QAAA,O;EAAAC,uB;EAAAA,oB;EAAAA;",
+"sources":["Path.java"],
+"names":["javax.validation.Path.<synthetic: adapt_lambda>","javax.validation.Path.<clinit>"]
+}

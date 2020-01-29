@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CloseHandler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;MAsBiB,Y;;;;;;CAOV,yD,CAAsBA,K;;;;;;;QAPZ,M;EAAAC,uB;EAAAA,iE;;;;;QAAA,O;EAAAC,+B;EAAAA;",
+"sources":["CloseHandler.java"],
+"names":["event","org.gwtproject.event.logical.shared.CloseHandler.<synthetic: adapt_lambda>","org.gwtproject.event.logical.shared.CloseHandler.<clinit>"]
+}

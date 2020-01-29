@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Event$NativePreviewHandler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;MAoZqB,oB;;;;;;CAMR,2E,CAAwCA,K;;;;;;QANhC,M;EAAAC,+B;EAAAA,8B;;;;;QAAA,O;EAAAC,uC;EAAAA;",
+"sources":["Event.java"],
+"names":["event","org.gwtproject.user.client.Event$NativePreviewHandler.<synthetic: adapt_lambda>","org.gwtproject.user.client.Event$NativePreviewHandler.<clinit>"]
+}

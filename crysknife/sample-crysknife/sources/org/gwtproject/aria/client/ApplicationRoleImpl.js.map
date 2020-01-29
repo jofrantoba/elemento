@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ApplicationRoleImpl.impl.java.js",
+"lineCount":72,
+"mappings":"A;;;;;;;;;;;;;;MAsBM,mB;;;;CAAA,W;EAAAA,Q;;;;;;;QAEJ,yB,CAA2BC,Q;EAA3BC,8B;EAAAA,0C;EAAAA,4F;EAAAA,iB;;;;;;CAAA,uE,CAA2BD,Q;EACzBE,4E;;;;;;;;CAIY,yD,CAA6BC,O;EACzCC,4G;;;;;;;CAIU,4D,CAAgCD,O;EAC1CE,wG;;;;;;;;CAIU,mG,CAA6BF,O,EAAuBG,K;EAC9DC,4M;;;;;QAlBE,O;EAAAC,sC;EAAAA,mC;EAAAA;",
+"sources":["ApplicationRoleImpl.java"],
+"names":["org.gwtproject.aria.client.ApplicationRoleImpl.<synthetic: ctor_js>","roleName","org.gwtproject.aria.client.ApplicationRoleImpl.<synthetic: ctor_create>","org.gwtproject.aria.client.ApplicationRoleImpl.<init>","element","org.gwtproject.aria.client.ApplicationRoleImpl.getAriaExpandedState","org.gwtproject.aria.client.ApplicationRoleImpl.removeAriaExpandedState","value","org.gwtproject.aria.client.ApplicationRoleImpl.setAriaExpandedState","org.gwtproject.aria.client.ApplicationRoleImpl.<clinit>"]
+}

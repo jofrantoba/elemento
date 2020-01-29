@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Audio.impl.java.js",
+"lineCount":79,
+"mappings":"A;;;;;;;;;;;MAkCa,K;;;;CAAA,W;EAAAA,Q;;;;;;;QASY,4D,CAAgCC,O;EACrDC,8H;;;;;;QAQkB,qB;EAAAC,gB;EAClBA,IAAaF,OAAbE,oH;EACAA;GACEA,YADFA;G;EAGAA,sE;;;;;;QAQoB,e;EAAAC,gB;EACpBA,IAAaH,OAAbG,oH;EACAA,mF;;;;;;;QAMQ,+C,CAAmBH,O;EAAnBI,gB;EAAAA,4B;EAAAA,oG;EAAAA,iB;;;;;;CAAA,gF,CAAmBJ,O;EAC3BK,mG;;;;;;CAQkB,mB;EAClBC,oL;;;;;QAjDS,O;EAAAC,wB;EAAAA,qB;EAAAA;",
+"sources":["Audio.java"],
+"names":["org.gwtproject.media.client.Audio.<synthetic: ctor_js>","element","org.gwtproject.media.client.Audio.isSupportedRunTime","org.gwtproject.media.client.Audio.createIfSupported","org.gwtproject.media.client.Audio.isSupported","org.gwtproject.media.client.Audio.<synthetic: ctor_create>","org.gwtproject.media.client.Audio.<init>","org.gwtproject.media.client.Audio.getAudioElement","org.gwtproject.media.client.Audio.<clinit>"]
+}

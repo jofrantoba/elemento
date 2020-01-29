@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SourceBuffer$$Overlay.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;MA0Ba,qB;;;;;;QAgDO,iF,WAAyBA,I;EAAzBC,gC;EAChBA,oF;;;;;;;QAIgB,qF,WAA6BD,I;EAA7BC,gC;EAChBA,oF;;;;;QAtDS,O;EAAAC,wC;EAAAA;",
+"sources":["SourceBuffer.java"],
+"names":["data","elemental2.dom.SourceBuffer$$Overlay.appendBuffer__$devirt","elemental2.dom.SourceBuffer$$Overlay.<clinit>"]
+}

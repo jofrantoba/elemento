@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl$Template.impl.java.js",
+"lineCount":38,
+"mappings":"A;;;;;;;;;;;;MAOY,Q;;;;;;;;;;CACgC,+E,CAAaA,I,EAAaC,I,EAAaC,I,EAAaC,I;;;;;;QADpF,M;EAAAC,mB;EAAAA,8B;;;;;QAAA,O;EAAAC,2B;EAAAA;",
+"sources":["NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl.java"],
+"names":["arg0","arg1","arg2","arg3","org.gwtproject.user.client.ui.NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl$Template.<synthetic: adapt_lambda>","org.gwtproject.user.client.ui.NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl$Template.<clinit>"]
+}

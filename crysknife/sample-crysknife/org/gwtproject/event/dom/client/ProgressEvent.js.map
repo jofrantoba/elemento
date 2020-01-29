@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ProgressEvent.impl.java.js",
+"lineCount":100,
+"mappings":"A;;;;;;;;;;;;;MAwCa,a;;;;CAAA,W;EAAAA,Q;;;;;;QAWD,S;EAAAC,wB;EAAAA,oC;EAAAA,mE;EAAAA,iB;;;;;CAAA,sD;EAAAC,yD;;;;;;QAO0B,W;EAAAC,wB;EAClCA,4E;;;;;;;CAIiC,qB;EACjCC,4E;;;;;;CAIa,2D,CAAyBC,O;EACtCC,0E;;;;;;;;CA7BS,4B;EAAAA,oI;;;;;QAAA,O;EAAAC,gC;EAAAA,6B;EAAAA,mB;EAEXA,qR;;;;;;;;;;;;;;;;;;;;;;;AAFW;cAGgC,sDAHhC;",
+"sources":["ProgressEvent.java"],
+"names":["org.gwtproject.event.dom.client.ProgressEvent.<synthetic: ctor_js>","org.gwtproject.event.dom.client.ProgressEvent.<synthetic: ctor_create>","org.gwtproject.event.dom.client.ProgressEvent.<init>","org.gwtproject.event.dom.client.ProgressEvent.getType","org.gwtproject.event.dom.client.ProgressEvent.getAssociatedType","handler","org.gwtproject.event.dom.client.ProgressEvent.dispatch","org.gwtproject.event.dom.client.ProgressEvent.<clinit>"]
+}

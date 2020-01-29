@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ClippedImageImpl_DraggableTemplateImpl.impl.java.js",
+"lineCount":62,
+"mappings":"A;;;;;;;;;;;;;;;;MAKa,uC;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,kD;EAAAA,8D;EAAAA,+F;EAAAA,iB;;;;;CAAA,kF;EAAAC,iC;;;;;;;;;CAKoC,yF,CACFC,I,EACEC,I;EAC7CC,IAAcC,EAAdD,6B;EACAA,4C;EACAA,iG;EACAA,2C;EACAA,iG;EACAA,gE;EACJA,mG;;;;;QAda,O;EAAAE,0D;EAAAA,uD;EAAAA;",
+"sources":["ClippedImageImpl_DraggableTemplateImpl.java"],
+"names":["org.gwtproject.user.client.ui.impl.ClippedImageImpl_DraggableTemplateImpl.<synthetic: ctor_js>","org.gwtproject.user.client.ui.impl.ClippedImageImpl_DraggableTemplateImpl.<synthetic: ctor_create>","org.gwtproject.user.client.ui.impl.ClippedImageImpl_DraggableTemplateImpl.<init>","arg0","arg1","org.gwtproject.user.client.ui.impl.ClippedImageImpl_DraggableTemplateImpl.image","sb","org.gwtproject.user.client.ui.impl.ClippedImageImpl_DraggableTemplateImpl.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"LocalizableResource$DefaultLocale.impl.java.js",
+"lineCount":54,
+"mappings":"A;;;;;;;;;MA6CoB,a;;;;;;CAIhB,S;;;;QAJgB,O;EAAAA,gC;EAAAA,6B;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAEhB;cAAO,8EAAP;",
+"sources":["LocalizableResource.java"],
+"names":["org.gwtproject.i18n.client.LocalizableResource$DefaultLocale.<clinit>"]
+}

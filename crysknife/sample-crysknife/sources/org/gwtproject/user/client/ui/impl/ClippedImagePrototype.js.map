@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ClippedImagePrototype.impl.java.js",
+"lineCount":175,
+"mappings":"A;;;;;;;;;;;;;MA8Ba,qB;;;;;;;;;;CAYJ,W,CAA8BA,G,EAASC,I,EAAUC,G,EAASC,K,EAAWC,M;EAArEC,gC;EAAAA,Q;EAAAA;OARK,mEAQLA,K;EAAAA;OAPK,iEAOLA,K;EAAAA;OANK,gEAMLA,K;EAAAA;OALS,gEAKTA,C;EAAAA;OAJK,kEAILA,K;EAAAA;OAHS,wEAGTA,S;EAAAA,gK;;;;;;;;;;;CAAA,2H,CAA8BL,G,EAASC,I,EAAUC,G,EAASC,K,EAAWC,M;EAArEC,2E;EACLA,4E;EACAA,8E;EACAA,4E;EACAA,gF;EACAA,kF;;;;;;;;;;;;;QAIK,6C,CAA6BL,G,EAASC,I,EAAUC,G,EAASC,K,EAAWC,M;EAApEE,gC;EAAAA,qI;EAAAA,+I;EAAAA,iB;;;;;;;;;;;;CAAA,qG,CAA6BN,G,EAASC,I,EAAUC,G,EAASC,K,EAAWC,M;;;;;;CAK/D,8C,CAAcG,K;EACxBC,kc;;;;;;;CAIU,qF,CAA8BC,Y;EACxCD,ujB;;;;;;;CAI2B,iB;EAC3BE,kmB;;;;;;;CAIW,e;EACXC,0b;;;;;;;CAIc,e;EACdC,0mB;;;;;;CAGU,uB,CAAqBC,W;EAC/BC,4F;;;;;CAnDS,mE;EAIXT,6E;EACAA,2E;EACAA,0E;EACAA,6E;EACAA,4E;EACAA,sF;;;;;QATW,O;EAAAU,wC;EAAAA,qC;EAAAA,iC;EAEXA,uH;;;;;;;;;;;;;;;;;;;;;;;AAFW;sBAE2B,iEAF3B;",
+"sources":["ClippedImagePrototype.java"],
+"names":["url","left","top","width","height","org.gwtproject.user.client.ui.impl.ClippedImagePrototype.<init>","org.gwtproject.user.client.ui.impl.ClippedImagePrototype.<synthetic: ctor_create>","image","org.gwtproject.user.client.ui.impl.ClippedImagePrototype.applyTo","imageElement","org.gwtproject.user.client.ui.impl.ClippedImagePrototype.createElement","org.gwtproject.user.client.ui.impl.ClippedImagePrototype.createImage","org.gwtproject.user.client.ui.impl.ClippedImagePrototype.getSafeHtml","isDraggable","org.gwtproject.user.client.ui.impl.ClippedImagePrototype.setDraggable","org.gwtproject.user.client.ui.impl.ClippedImagePrototype.<clinit>"]
+}

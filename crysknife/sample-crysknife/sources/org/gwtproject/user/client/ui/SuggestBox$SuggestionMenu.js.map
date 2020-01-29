@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SuggestBox$SuggestionMenu.impl.java.js",
+"lineCount":71,
+"mappings":"A;;;;;;;;;MA4hBuB,c;;;;CAAA,W;EAAAA,Q;;;;;;;QAEZ,gB,CAAuBC,Q;EAAvBC,yB;EAAAA,qC;EAAAA,4F;EAAAA,iB;;;;;;CAAA,uE,CAAuBD,Q;EAC5BE,qE;EAGAA,0C;EACAA,8C;;;;;;CAGS,e;EACTC,kC;;;;;;CAQS,wB;EAGTC,IAASC,YAATD,8B;EACAA;GACEA,iDADFA;G;EAGAA,U;;;;;;CAUU,iB,CAAeE,K;EACzBC,IAAeC,KAAfD,uB;EACAA;GACEA,kLADFA;G;;;;;QAtCiB,O;EAAAE,iC;EAAAA,8B;EAAAA;",
+"sources":["SuggestBox.java"],
+"names":["org.gwtproject.user.client.ui.SuggestBox$SuggestionMenu.<synthetic: ctor_js>","vertical","org.gwtproject.user.client.ui.SuggestBox$SuggestionMenu.<synthetic: ctor_create>","org.gwtproject.user.client.ui.SuggestBox$SuggestionMenu.<init>","org.gwtproject.user.client.ui.SuggestBox$SuggestionMenu.getNumItems","org.gwtproject.user.client.ui.SuggestBox$SuggestionMenu.getSelectedItemIndex","selectedItem","index","org.gwtproject.user.client.ui.SuggestBox$SuggestionMenu.selectItem","items","org.gwtproject.user.client.ui.SuggestBox$SuggestionMenu.<clinit>"]
+}

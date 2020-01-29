@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"VisibleForTesting$$LambdaAdaptor.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;;;;MAqBkB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;0F;EAAAA,oK;;;;;;CAAA,0J;EAAAC,iC;EAAAA,6F;;;;;;CAAA,kB;EAAAC,0C;EAAAA,0H;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["VisibleForTesting.java"],
+"names":["org.gwtproject.safecss.shared.annotations.VisibleForTesting$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.safecss.shared.annotations.VisibleForTesting$$LambdaAdaptor.<init>","org.gwtproject.safecss.shared.annotations.VisibleForTesting$$LambdaAdaptor.annotationType","org.gwtproject.safecss.shared.annotations.VisibleForTesting$$LambdaAdaptor.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CommonResources_BundleImpl$1.impl.java.js",
+"lineCount":86,
+"mappings":"A;;;;;;;;;;;;MAK8D,E;;;;CAAA,W;EAAAA,Q;EAAAA;mF;EAAAA;OAIxC,yEAJwCA,S;;;;;;;QAAA,mE;EAAAC,a;EAAAA,yB;EAAAA,uJ;EAAAA,iB;;;;;;CAAA,+H;EAAAC,+F;EAAAA,iC;;;;;;;CAC1C,W;EACZC,0B;;;;;;;CAGa,kB;EACbC;GACEA,sFADFA;GAEEA,6DAFFA;GAGEA,YAHFA;G;EAKAA,a;;;;;;;CAEY,W;EACZC,8D;;;;;;;CAEY,e;EACZC,qB;;;;;QAjBsD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["CommonResources_BundleImpl.java"],
+"names":["org.gwtproject.resources.client.CommonResources_BundleImpl$1.<synthetic: ctor_js>","org.gwtproject.resources.client.CommonResources_BundleImpl$1.<synthetic: ctor_create>","org.gwtproject.resources.client.CommonResources_BundleImpl$1.<init>","org.gwtproject.resources.client.CommonResources_BundleImpl$1.getName","org.gwtproject.resources.client.CommonResources_BundleImpl$1.ensureInjected","org.gwtproject.resources.client.CommonResources_BundleImpl$1.getText","org.gwtproject.resources.client.CommonResources_BundleImpl$1.inlineBlock","org.gwtproject.resources.client.CommonResources_BundleImpl$1.<clinit>"]
+}

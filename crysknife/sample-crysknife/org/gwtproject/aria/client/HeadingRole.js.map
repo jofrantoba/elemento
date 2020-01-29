@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HeadingRole.impl.java.js",
+"lineCount":38,
+"mappings":"A;;;;;;;;;;;MA4BiB,W;;;;;;;CAOR,yD,CAA6BA,O;;;;;;CAM/B,4D,CAAgCA,O;;;;;;;CAMhC,8D,CAA6BA,O,EAAaC,K;;;;QAnBhC,O;EAAAC,8B;EAAAA;",
+"sources":["HeadingRole.java"],
+"names":["element","value","org.gwtproject.aria.client.HeadingRole.<clinit>"]
+}

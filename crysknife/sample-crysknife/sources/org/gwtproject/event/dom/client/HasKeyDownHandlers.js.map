@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasKeyDownHandlers.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;MAwBiB,kB;;;;;;;CAQK,mE,CAAiCA,O;;;;QARtC,O;EAAAC,qC;EAAAA;",
+"sources":["HasKeyDownHandlers.java"],
+"names":["handler","org.gwtproject.event.dom.client.HasKeyDownHandlers.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"LocalizableResource.impl.java.js",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MAqCiB,mB;;;;QAAA,O;EAAAA,sC;EAAAA;",
+"sources":["LocalizableResource.java"],
+"names":["org.gwtproject.i18n.client.LocalizableResource.<clinit>"]
+}

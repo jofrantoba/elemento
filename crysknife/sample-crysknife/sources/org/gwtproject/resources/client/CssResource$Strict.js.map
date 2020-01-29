@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CssResource$Strict.impl.java.js",
+"lineCount":29,
+"mappings":"A;;;;;;;;;;;;;MAoSa,M;;;;;;QAAA,M;EAAAA,iB;EAAAA,8B;;;;;QAAA,O;EAAAC,yB;EAAAA;",
+"sources":["CssResource.java"],
+"names":["org.gwtproject.resources.client.CssResource$Strict.<synthetic: adapt_lambda>","org.gwtproject.resources.client.CssResource$Strict.<clinit>"]
+}

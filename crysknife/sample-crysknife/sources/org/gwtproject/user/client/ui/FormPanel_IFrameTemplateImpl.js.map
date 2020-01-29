@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"FormPanel_IFrameTemplateImpl.impl.java.js",
+"lineCount":57,
+"mappings":"A;;;;;;;;;;;;;;MAKa,6B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,wC;EAAAA,oD;EAAAA,gF;EAAAA,iB;;;;;CAAA,mE;EAAAC,iC;;;;;;;;CAKoC,uB,CACxBC,I;EACrBC,IAAcC,EAAdD,6B;EACAA,oE;EACAA,kF;EACAA,sG;EACJA,mG;;;;;QAXa,O;EAAAE,gD;EAAAA,6C;EAAAA;",
+"sources":["FormPanel_IFrameTemplateImpl.java"],
+"names":["org.gwtproject.user.client.ui.FormPanel_IFrameTemplateImpl.<synthetic: ctor_js>","org.gwtproject.user.client.ui.FormPanel_IFrameTemplateImpl.<synthetic: ctor_create>","org.gwtproject.user.client.ui.FormPanel_IFrameTemplateImpl.<init>","arg0","org.gwtproject.user.client.ui.FormPanel_IFrameTemplateImpl.get","sb","org.gwtproject.user.client.ui.FormPanel_IFrameTemplateImpl.<clinit>"]
+}

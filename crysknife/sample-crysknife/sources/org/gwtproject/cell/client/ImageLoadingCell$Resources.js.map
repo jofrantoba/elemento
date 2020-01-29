@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ImageLoadingCell$Resources.impl.java.js",
+"lineCount":78,
+"mappings":"A;;;;;;;;;;;;;MA2IY,S;;;;;;CAGM,W;;;;;;QAHN,M;EAAAA,oB;EAAAA,8B;;;;;;QACR,qE;EAAAC,2G;;;;;QADQ,O;EAAAC,4B;EAAAA,yB;EACRA,2H;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AADQ;;",
+"sources":["ImageLoadingCell.java"],
+"names":["org.gwtproject.cell.client.ImageLoadingCell$Resources.<synthetic: adapt_lambda>","org.gwtproject.cell.client.ImageLoadingCell$Resources.<synthetic: getter>","org.gwtproject.cell.client.ImageLoadingCell$Resources.<clinit>"]
+}

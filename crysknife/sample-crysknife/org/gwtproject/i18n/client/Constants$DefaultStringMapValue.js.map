@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Constants$DefaultStringMapValue.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;MAyToB,qB;;;;;;CAChB,S;;;;QADgB,O;EAAAA,wC;EAAAA;",
+"sources":["Constants.java"],
+"names":["org.gwtproject.i18n.client.Constants$DefaultStringMapValue.<clinit>"]
+}

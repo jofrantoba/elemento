@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"RequestCallback.impl.java.js",
+"lineCount":32,
+"mappings":"A;;;;;;;;;;;MAqBiB,e;;;;;;;CASV,6F,CAA2BA,O,EAAkBC,Q;;;;;;;CAW7C,kE,CAAgBD,O,EAAmBE,S;;;;QApBzB,O;EAAAC,kC;EAAAA;",
+"sources":["RequestCallback.java"],
+"names":["request","response","exception","org.gwtproject.http.client.RequestCallback.<clinit>"]
+}

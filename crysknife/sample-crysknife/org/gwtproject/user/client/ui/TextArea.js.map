@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TextArea.impl.java.js",
+"lineCount":132,
+"mappings":"A;;;;;;;;;;;;;;MA8Ca,Q;;;;CAAA,W;EAAAA,Q;;;;;;;QAYY,yC,CAAaC,O;EAAbC,mB;EAErBA,8J;EAEAA,IAASC,QAATD,gE;EAGAA,wB;EACAA,gF;EAEAA,gB;;;;;;;QAMK,S;EAAAE,mB;EAAAA,+B;EAAAA,4D;EAAAA,iB;;;;;;CAAA,+C;EACLC,8M;EACAA,sD;;;;;;;;QASQ,0C,CAAiBJ,O;EAAjBG,mB;EAAAA,+B;EAAAA,oG;EAAAA,iB;;;;;;;CAAA,gF,CAAiBH,O;EACzBI,+O;EACAA,0E;;;;;;CASS,qB;EACTC,oF;;;;;;;CAIS,gB;EACTC,2G;;;;;;;CAIS,sB;EACTC,iH;;;;;;CAQS,mB;EACTC,oF;;;;;;CASU,wB,CAAsBC,K;EAChCC,qF;;;;;;CAQU,sB,CAAoBC,K;EAC9BC,qF;;;;;;CAGsB,gE;EACtBC,kL;;;;;QA7FS,O;EAAAC,2B;EAAAA,wB;EAAAA;",
+"sources":["TextArea.java"],
+"names":["org.gwtproject.user.client.ui.TextArea.<synthetic: ctor_js>","element","org.gwtproject.user.client.ui.TextArea.wrap","textArea","org.gwtproject.user.client.ui.TextArea.<synthetic: ctor_create>","org.gwtproject.user.client.ui.TextArea.<init>","org.gwtproject.user.client.ui.TextArea.getCharacterWidth","org.gwtproject.user.client.ui.TextArea.getCursorPos","org.gwtproject.user.client.ui.TextArea.getSelectionLength","org.gwtproject.user.client.ui.TextArea.getVisibleLines","width","org.gwtproject.user.client.ui.TextArea.setCharacterWidth","lines","org.gwtproject.user.client.ui.TextArea.setVisibleLines","org.gwtproject.user.client.ui.TextArea.getTextAreaElement","org.gwtproject.user.client.ui.TextArea.<clinit>"]
+}

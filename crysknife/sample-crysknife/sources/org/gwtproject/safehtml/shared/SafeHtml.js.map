@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SafeHtml.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;;;;MA8DiB,Q;;;;;;CA8BR,Y;;;;;;;CAQC,M,CAAcA,Q;;;;;;CAMlB,Q;;;;;;QA5CW,M;EAAAC,mB;EAAAA,8B;;;;;QAAA,O;EAAAC,2B;EAAAA;",
+"sources":["SafeHtml.java"],
+"names":["anObject","org.gwtproject.safehtml.shared.SafeHtml.<synthetic: adapt_lambda>","org.gwtproject.safehtml.shared.SafeHtml.<clinit>"]
+}

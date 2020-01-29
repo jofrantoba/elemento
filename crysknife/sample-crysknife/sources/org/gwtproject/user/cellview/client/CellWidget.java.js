@@ -1,0 +1,31 @@
+goog.module('org.gwtproject.user.cellview.client.CellWidget');
+
+goog.require('nativebootstrap.Util');
+goog.require('org.gwtproject.editor.client.IsEditor');
+goog.require('org.gwtproject.user.client.ui.HasValue');
+goog.require('org.gwtproject.user.client.ui.Widget');
+goog.require('org.gwtproject.view.client.HasKeyProvider');
+goog.require('nativebootstrap.Equality');
+goog.require('org.gwtproject.cell.client.Cell');
+goog.require('org.gwtproject.cell.client.Cell.Context');
+goog.require('org.gwtproject.cell.client.ValueUpdater');
+goog.require('org.gwtproject.dom.client.Document.$Overlay');
+goog.require('org.gwtproject.dom.client.Element.$Overlay');
+goog.require('org.gwtproject.dom.client.NativeEvent.$Overlay');
+goog.require('org.gwtproject.dom.client.Style.$Overlay');
+goog.require('org.gwtproject.dom.style.shared.Unit');
+goog.require('org.gwtproject.editor.client.LeafValueEditor');
+goog.require('org.gwtproject.editor.client.adapters.TakesValueEditor');
+goog.require('org.gwtproject.event.logical.shared.ValueChangeEvent');
+goog.require('org.gwtproject.event.logical.shared.ValueChangeHandler');
+goog.require('org.gwtproject.event.shared.HandlerRegistration');
+goog.require('org.gwtproject.resources.client.CommonResources');
+goog.require('org.gwtproject.safehtml.shared.SafeHtmlBuilder');
+goog.require('org.gwtproject.user.cellview.client.CellBasedWidgetImpl');
+goog.require('org.gwtproject.user.cellview.client.CellWidget.$1');
+goog.require('org.gwtproject.user.client.Event');
+goog.require('org.gwtproject.view.client.ProvidesKey');
+goog.require('vmbootstrap.Objects');
+
+const CellWidget = goog.require('org.gwtproject.user.cellview.client.CellWidget$impl');
+exports = CellWidget; 

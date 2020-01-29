@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CellBrowser$PagerFactory$$LambdaAdaptor.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;;MAywBmB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;2F;EAAAA,sK;;;;;;CAAA,4J;EAAAC,iC;EAAAA,8F;;;;;;;CAAA,4C;EAAAC,sD;EAAAA,+H;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["CellBrowser.java"],
+"names":["org.gwtproject.user.cellview.client.CellBrowser$PagerFactory$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.cellview.client.CellBrowser$PagerFactory$$LambdaAdaptor.<init>","org.gwtproject.user.cellview.client.CellBrowser$PagerFactory$$LambdaAdaptor.create","org.gwtproject.user.cellview.client.CellBrowser$PagerFactory$$LambdaAdaptor.<clinit>"]
+}

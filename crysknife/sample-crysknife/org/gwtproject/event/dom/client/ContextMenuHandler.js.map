@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ContextMenuHandler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;MAoBiB,kB;;;;;;CAOV,iE,CAA+BA,K;;;;;;QAPrB,M;EAAAC,6B;EAAAA,8B;;;;;QAAA,O;EAAAC,qC;EAAAA;",
+"sources":["ContextMenuHandler.java"],
+"names":["event","org.gwtproject.event.dom.client.ContextMenuHandler.<synthetic: adapt_lambda>","org.gwtproject.event.dom.client.ContextMenuHandler.<clinit>"]
+}

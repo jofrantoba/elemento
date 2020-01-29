@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasDragEnterHandlers.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;MA2BiB,oB;;;;;;;CAQK,uE,CAAqCA,O;;;;QAR1C,O;EAAAC,uC;EAAAA;",
+"sources":["HasDragEnterHandlers.java"],
+"names":["handler","org.gwtproject.event.dom.client.HasDragEnterHandlers.<clinit>"]
+}

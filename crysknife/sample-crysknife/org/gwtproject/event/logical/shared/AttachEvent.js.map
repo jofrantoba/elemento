@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AttachEvent.impl.java.js",
+"lineCount":152,
+"mappings":"A;;;;;;;;;;;;;;;MAqBa,W;;;;CAAA,W;EAAAA,Q;EAAAA;OAoCW,4DApCXA,S;;;;;;;;QAiBsC,sE,CAAOC,M,EAAgBC,Q;EAAvBC,sB;EAC/CA;GACEA,IAAYC,KAAZD,0CADFA;GAEEA,+FAFFA;G;;;;;;QAWsC,W;EAAAE,sB;EACtCA;GACEA,uHADFA;G;EAGAA,4E;;;;;;;QAUQ,gB,CAAoBH,Q;EAApBI,sB;EAAAA,kC;EAAAA,oF;EAAAA,iB;;;;;;CAAA,+D,CAAoBJ,Q;EAApBK,kD;EACRA,6E;;;;;;;CAIqC,qB;EACrCC,4E;;;;;;CAOa,c;EACbC,yE;;;;;;;CAIY,iB;EACZC,8J;;;;;;CAIa,mE,CAA6BC,O;EAC1CC,kF;;;;;;;;CAnES,4B;EAAAA,4H;;;;;;QAOX,2D;EAAAC,qG;;;;;;QAAA,2D;EAAAC,sG;;;;;QAPW,O;EAAAC,8B;EAAAA,2B;EAAAA,gB;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;",
+"sources":["AttachEvent.java"],
+"names":["org.gwtproject.event.logical.shared.AttachEvent.<synthetic: ctor_js>","source","attached","org.gwtproject.event.logical.shared.AttachEvent.fire","event","org.gwtproject.event.logical.shared.AttachEvent.getType","org.gwtproject.event.logical.shared.AttachEvent.<synthetic: ctor_create>","org.gwtproject.event.logical.shared.AttachEvent.<init>","org.gwtproject.event.logical.shared.AttachEvent.getAssociatedType","org.gwtproject.event.logical.shared.AttachEvent.isAttached","org.gwtproject.event.logical.shared.AttachEvent.toDebugString","handler","org.gwtproject.event.logical.shared.AttachEvent.dispatch","org.gwtproject.event.logical.shared.AttachEvent.<synthetic: getter>","org.gwtproject.event.logical.shared.AttachEvent.<synthetic: setter>","org.gwtproject.event.logical.shared.AttachEvent.<clinit>"]
+}

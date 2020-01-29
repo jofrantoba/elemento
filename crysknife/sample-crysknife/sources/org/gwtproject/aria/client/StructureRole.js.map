@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"StructureRole.impl.java.js",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MA0BiB,a;;;;QAAA,O;EAAAA,gC;EAAAA;",
+"sources":["StructureRole.java"],
+"names":["org.gwtproject.aria.client.StructureRole.<clinit>"]
+}

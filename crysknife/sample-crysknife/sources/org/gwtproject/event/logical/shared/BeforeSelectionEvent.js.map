@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"BeforeSelectionEvent.impl.java.js",
+"lineCount":153,
+"mappings":"A;;;;;;;;;;;;;;;MAwBa,oB;;;;CAAA,W;EAAAA,Q;EAAAA;OAsCD,iEAtCCA,C;EAAAA;OAwCK,qEAxCLA,S;;;;;;;;;QAe+B,wF,CAAmCC,M,EAAUC,I;EAA7CC,+B;EAExCA;GACEA,IAAwBC,KAAxBD,+EADFA;GAEEA,wCAFFA;GAGEA,6DAHFA;GAIEA,aAJFA;G;EAMAA,Y;;;;;;QAQ4C,W;EAAAE,+B;EAC5CA;GACEA,2JADFA;G;EAGAA,8F;;;;;;;QAQQ,S;EAAAC,+B;EAAAA,2C;EAAAA,8E;EAAAA,iB;;;;;CAAA,iE;EAAAC,kD;;;;;CAOE,U;EACVC,kF;;;;;;;CAO2C,qB;EAC3CC,mH;;;;;;CAQO,W;EACPC,8E;;;;;;CAQa,c;EACbC,kF;;;;;;CAIa,sE,CAAmCC,O;EAChDC,4F;;;;;;CAQmB,2B,CAAUX,I;EAC7BY,8E;;;;;;;;CA3FS,4B;EAAAD,gK;;;;;QAAA,O;EAAAE,uC;EAAAA,oC;EAAAA,gB;;;;;;;;;;;;;;;;;;;;;;;AAAA;qBAGoC,iEAHpC;",
+"sources":["BeforeSelectionEvent.java"],
+"names":["org.gwtproject.event.logical.shared.BeforeSelectionEvent.<synthetic: ctor_js>","source","item","org.gwtproject.event.logical.shared.BeforeSelectionEvent.fire","event","org.gwtproject.event.logical.shared.BeforeSelectionEvent.getType","org.gwtproject.event.logical.shared.BeforeSelectionEvent.<synthetic: ctor_create>","org.gwtproject.event.logical.shared.BeforeSelectionEvent.<init>","org.gwtproject.event.logical.shared.BeforeSelectionEvent.cancel","org.gwtproject.event.logical.shared.BeforeSelectionEvent.getAssociatedType","org.gwtproject.event.logical.shared.BeforeSelectionEvent.getItem","org.gwtproject.event.logical.shared.BeforeSelectionEvent.isCanceled","handler","org.gwtproject.event.logical.shared.BeforeSelectionEvent.dispatch","org.gwtproject.event.logical.shared.BeforeSelectionEvent.setItem","org.gwtproject.event.logical.shared.BeforeSelectionEvent.<clinit>"]
+}

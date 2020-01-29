@@ -1,0 +1,32 @@
+goog.module('org.gwtproject.cell.client.ButtonCellBase.DefaultAppearance');
+
+goog.require('java.lang.Object');
+goog.require('nativebootstrap.Util');
+goog.require('org.gwtproject.cell.client.ButtonCellBase.Appearance');
+goog.require('java.lang.Math');
+goog.require('java.lang.String');
+goog.require('java.lang.StringBuilder');
+goog.require('nativebootstrap.Equality');
+goog.require('org.gwtproject.cell.client.ButtonCellBase');
+goog.require('org.gwtproject.cell.client.ButtonCellBase.Decoration');
+goog.require('org.gwtproject.cell.client.ButtonCellBase.DefaultAppearance.Resources');
+goog.require('org.gwtproject.cell.client.ButtonCellBase.DefaultAppearance.Style');
+goog.require('org.gwtproject.cell.client.ButtonCellBase.DefaultAppearance.Template');
+goog.require('org.gwtproject.cell.client.Cell.Context');
+goog.require('org.gwtproject.core.client.JavaScriptObject.$Overlay');
+goog.require('org.gwtproject.dom.client.Element.$Overlay');
+goog.require('org.gwtproject.dom.style.shared.Unit');
+goog.require('org.gwtproject.i18n.client.LocaleInfo');
+goog.require('org.gwtproject.resources.client.CommonResources');
+goog.require('org.gwtproject.resources.client.ImageResource');
+goog.require('org.gwtproject.safecss.shared.SafeStylesBuilder');
+goog.require('org.gwtproject.safehtml.shared.SafeHtml');
+goog.require('org.gwtproject.safehtml.shared.SafeHtmlBuilder');
+goog.require('org.gwtproject.safehtml.shared.SafeHtmlUtils');
+goog.require('org.gwtproject.text.shared.SafeHtmlRenderer');
+goog.require('org.gwtproject.user.client.ui.AbstractImagePrototype');
+goog.require('vmbootstrap.Casts');
+goog.require('vmbootstrap.Primitives');
+
+const DefaultAppearance = goog.require('org.gwtproject.cell.client.ButtonCellBase.DefaultAppearance$impl');
+exports = DefaultAppearance; 

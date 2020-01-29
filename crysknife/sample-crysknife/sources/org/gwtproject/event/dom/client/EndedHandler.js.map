@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"EndedHandler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;MAyBiB,Y;;;;;;CAOV,qD,CAAmBA,K;;;;;;QAPT,M;EAAAC,uB;EAAAA,8B;;;;;QAAA,O;EAAAC,+B;EAAAA;",
+"sources":["EndedHandler.java"],
+"names":["event","org.gwtproject.event.dom.client.EndedHandler.<synthetic: adapt_lambda>","org.gwtproject.event.dom.client.EndedHandler.<clinit>"]
+}

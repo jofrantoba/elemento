@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CustomButton$2.impl.java.js",
+"lineCount":78,
+"mappings":"A;;;;;;;MAi5BgC,E;;;;CAAA,W;EAAAA,Q;EAAAA;mE;EAAAA;OADwBC,OACxBD,C;EAAAA;OADwCE,SACxCF,K;;;;;;;;;;QAAA,2H;EAAAG,a;EAAAA,yB;EAAAA,wN;EAAAA,iB;;;;;;;;;CAAA,uK;EAAAC,+E;EAAAA,uB;EAAAA,2B;EAAAA,2K;;;;;;CAGZ,W;EACZC,oB;;;;;;;CAIE,+C;EACFC,sB;;;;;;;;CATwB,6C;EAAAD,0B;;;;;QAAA,O;EAAAE,qB;EAAAA,kB;EAAAA;",
+"sources":["CustomButton.java"],
+"names":["org.gwtproject.user.client.ui.CustomButton$2.<synthetic: ctor_js>","name","faceID","org.gwtproject.user.client.ui.CustomButton$2.<synthetic: ctor_create>","org.gwtproject.user.client.ui.CustomButton$2.<init>","org.gwtproject.user.client.ui.CustomButton$2.getName","org.gwtproject.user.client.ui.CustomButton$2.getFaceID","org.gwtproject.user.client.ui.CustomButton$2.<clinit>"]
+}

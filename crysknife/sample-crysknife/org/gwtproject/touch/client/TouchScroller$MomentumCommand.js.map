@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TouchScroller$MomentumCommand.impl.java.js",
+"lineCount":120,
+"mappings":"A;;;;;;;;;;;;;;;;;;;MAqGgB,e;;;;CAAA,W;EAAAA,Q;EAAAA;gF;EAAAA;OAEW,sEAFXA,C;EAAAA;OAGQ,6EAHRA,C;EAAAA;OAIA,+EAJAA,K;EAAAA;OAKE,mEALFA,C;EAAAA;OAMgB,iFANhBA,C;;;;;;;;QAaL,qF,cAAsBC,W;EAAtBC,0B;EAAAA,sC;EAAAA,mL;EAAAA,iB;;;;;;;CAAA,8I,cAAsBD,W;EAAtBE,4F;EAAAA,iC;EAAAA,4E;EACLA,kU;EAQAA,mP;;;;;;;CAQa,W;EAKbC;GACEA,+EADFA;GAEEA,aAFFA;G;EAMAA,IAAIC,uBAAJD,mG;EACAA,iP;EACAA,+G;EACAA,oK;EAGAA,IAAQE,OAARF,2Q;EAGAA;GACEA,+EADFA;G;EAQAA,oR;EAMAA,IAAIG,IAAJH,yI;EACAA,IAAII,IAAJJ,+K;EACAA,IAAIK,IAAJL,+K;EACAA,IAAIM,IAAJN,6K;EACAA,IAAIO,IAAJP,6K;EACAA,IAAIQ,IAAJR,yI;EACAA;GACEA,+EADFA;GAEEA,aAFFA;G;EAKAA,e;;;;;CAMW,uE;EACXS;GACEA,2GADFA;GAEEA,8FAFFA;G;EAIAA;GACEA,kJADFA;G;;;;;CAtFU,oE;EAEZV,mG;EACAA,8O;EACAA,yF;;;;;QAJY,O;EAAAW,kC;EAAAA,+B;EAAAA;",
+"sources":["TouchScroller.java"],
+"names":["org.gwtproject.touch.client.TouchScroller$MomentumCommand.<synthetic: ctor_js>","endVelocity","org.gwtproject.touch.client.TouchScroller$MomentumCommand.<synthetic: ctor_create>","org.gwtproject.touch.client.TouchScroller$MomentumCommand.<init>","org.gwtproject.touch.client.TouchScroller$MomentumCommand.execute","cumulativeElapsedMillis","notDone","hPos","hMin","hMax","vMin","vMax","vPos","org.gwtproject.touch.client.TouchScroller$MomentumCommand.finish","org.gwtproject.touch.client.TouchScroller$MomentumCommand.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DomSpanBuilder.impl.java.js",
+"lineCount":45,
+"mappings":"A;;;;;;;;;;;;;MAuBa,c;;;;CAAA,W;EAAAA,Q;;;;;;;QAGX,yD,CAA8BC,Q;EAA9BC,yB;EAAAA,qC;EAAAA,8H;EAAAA,iB;;;;;;CAAA,yG,CAA8BD,Q;EAC5BE,gI;;;;;QAJS,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["DomSpanBuilder.java"],
+"names":["org.gwtproject.dom.builder.client.DomSpanBuilder.<synthetic: ctor_js>","delegate","org.gwtproject.dom.builder.client.DomSpanBuilder.<synthetic: ctor_create>","org.gwtproject.dom.builder.client.DomSpanBuilder.<init>","org.gwtproject.dom.builder.client.DomSpanBuilder.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SimplePager_ResourcesImpl$1.impl.java.js",
+"lineCount":102,
+"mappings":"A;;;;;;;;;;;;MA2L+C,E;;;;CAAA,W;EAAAA,Q;EAAAA;sF;EAAAA;OAIzB,4EAJyBA,S;;;;;;;QAAA,sE;EAAAC,a;EAAAA,yB;EAAAA,6J;EAAAA,iB;;;;;;CAAA,qI;EAAAC,kG;EAAAA,iC;;;;;;;CAC3B,W;EACZC,0B;;;;;;;CAGa,kB;EACbC;GACEA,yFADFA;GAEEA,6DAFFA;GAGEA,YAHFA;G;EAKAA,a;;;;;;;CAEY,W;EACZC,yI;;;;;;;CAEY,U;EACZC,qB;;;;;;;CAEY,kB;EACZC,qB;;;;;;;CAEY,e;EACZC,qB;;;;;QAvBuC,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["SimplePager_ResourcesImpl.java"],
+"names":["org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$1.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$1.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$1.<init>","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$1.getName","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$1.ensureInjected","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$1.getText","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$1.button","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$1.disabledButton","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$1.pageDetails","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$1.<clinit>"]
+}

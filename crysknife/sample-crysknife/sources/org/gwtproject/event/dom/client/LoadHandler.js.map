@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"LoadHandler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;MAoBiB,W;;;;;;CAOV,mD,CAAiBA,K;;;;;;QAPP,M;EAAAC,sB;EAAAA,8B;;;;;QAAA,O;EAAAC,8B;EAAAA;",
+"sources":["LoadHandler.java"],
+"names":["event","org.gwtproject.event.dom.client.LoadHandler.<synthetic: adapt_lambda>","org.gwtproject.event.dom.client.LoadHandler.<clinit>"]
+}

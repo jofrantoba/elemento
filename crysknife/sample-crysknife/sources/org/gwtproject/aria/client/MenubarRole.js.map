@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"MenubarRole.impl.java.js",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MA0BiB,W;;;;QAAA,O;EAAAA,8B;EAAAA;",
+"sources":["MenubarRole.java"],
+"names":["org.gwtproject.aria.client.MenubarRole.<clinit>"]
+}

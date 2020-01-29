@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DateTimeFormatInfoImpl_so_DJ.impl.java.js",
+"lineCount":43,
+"mappings":"A;;;;;MAqBa,8B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,yC;EAAAA,qD;EAAAA,uF;EAAAA,iB;;;;;CAAA,0E;EAAAC,+E;;;;;;;CAGA,qB;EACTC,S;;;;;QAJS,O;EAAAC,iD;EAAAA,8C;EAAAA;",
+"sources":["DateTimeFormatInfoImpl_so_DJ.java"],
+"names":["org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_so_DJ.<synthetic: ctor_js>","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_so_DJ.<synthetic: ctor_create>","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_so_DJ.<init>","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_so_DJ.firstDayOfTheWeek","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_so_DJ.<clinit>"]
+}

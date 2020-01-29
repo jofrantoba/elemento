@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasDragEndHandlers.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;MA2BiB,kB;;;;;;;CAQK,mE,CAAiCA,O;;;;QARtC,O;EAAAC,qC;EAAAA;",
+"sources":["HasDragEndHandlers.java"],
+"names":["handler","org.gwtproject.event.dom.client.HasDragEndHandlers.<clinit>"]
+}

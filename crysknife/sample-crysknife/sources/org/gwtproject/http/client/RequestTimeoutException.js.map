@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"RequestTimeoutException.impl.java.js",
+"lineCount":70,
+"mappings":"A;;;;;;;MAmBa,uB;;;;CAAA,W;EAAAA,Q;EAAAA;OAMO,oEANPA,K;EAAAA;OASW,8DATXA,C;;;;;;;QACW,oB,CAAkBC,a;EACtCC,sE;;;;;;;;QAeK,gD,CAAgCC,O,EAAaF,a;EAA7CG,kC;EAAAA,8C;EAAAA,qI;EAAAA,mF;EAAAA,iB;;;;;;;CAAA,kG,CAAgCD,O,EAAaF,a;EAClDI,uI;EACAA,8E;EACAA,0F;;;;;;CAQa,c;EACbC,2E;;;;;;CAQS,oB;EACTC,iF;;;;;QAtCS,O;EAAAC,0C;EAAAA,uC;EAAAA;",
+"sources":["RequestTimeoutException.java"],
+"names":["org.gwtproject.http.client.RequestTimeoutException.<synthetic: ctor_js>","timeoutMillis","org.gwtproject.http.client.RequestTimeoutException.formatMessage","request","org.gwtproject.http.client.RequestTimeoutException.<synthetic: ctor_create>","org.gwtproject.http.client.RequestTimeoutException.<init>","org.gwtproject.http.client.RequestTimeoutException.getRequest","org.gwtproject.http.client.RequestTimeoutException.getTimeoutMillis","org.gwtproject.http.client.RequestTimeoutException.<clinit>"]
+}

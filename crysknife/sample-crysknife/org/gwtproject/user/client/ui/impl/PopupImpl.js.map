@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"PopupImpl.impl.java.js",
+"lineCount":71,
+"mappings":"A;;;;;;;;;;MAuBa,S;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,oB;EAAAA,gC;EAAAA,kE;EAAAA,iB;;;;;CAAA,qD;EAAAC,iC;;;;;;CAEI,iB;EACbC,oG;;;;;;;CAGa,wD,CAA4BC,K;EACzCC,a;;;;;;;CAGa,oD,CAAwBD,K;EACrCE,wF;;;;;;;CAOU,8D,CAAgBF,K,EAAcG,I;EACxCC,sI;;;;;QAnBS,O;EAAAC,4B;EAAAA,yB;EAAAA;",
+"sources":["PopupImpl.java"],
+"names":["org.gwtproject.user.client.ui.impl.PopupImpl.<synthetic: ctor_js>","org.gwtproject.user.client.ui.impl.PopupImpl.<synthetic: ctor_create>","org.gwtproject.user.client.ui.impl.PopupImpl.<init>","org.gwtproject.user.client.ui.impl.PopupImpl.createElement","popup","org.gwtproject.user.client.ui.impl.PopupImpl.getContainerElement","org.gwtproject.user.client.ui.impl.PopupImpl.getStyleElement","rect","org.gwtproject.user.client.ui.impl.PopupImpl.setClip","org.gwtproject.user.client.ui.impl.PopupImpl.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"FrameElement$$Overlay.impl.java.js",
+"lineCount":116,
+"mappings":"A;;;;;;;;;;;;;;MAqCa,qB;;;;;;QAUgB,uC,CAAWA,I;EAAXC,gC;EACzBA,sF;EACAA,sE;;;;;;;QASoB,iD,CAAoBC,C;EAApBC,gC;EACpBA;GACEA,qHADFA;G;EAGAA,a;;;;;;;QASoB,oC,CAAQC,I;EAARD,gC;EACpBA;GACEA,wHADFA;G;EAGAA,a;;;;;;;QASoB,uC,CAAWH,I;EAAXG,gC;EACpBA,+M;;;;;;;QA4EmB,6D;EAAAE,gC;EACnBA,iI;;;;;;;QAiBgB,sG,WAAoBC,Q;EAApBC,gC;EAChBA,4C;;;;;;;QA0DgB,iG,WAAqCC,G;EAArCC,gC;EAChBA,kC;;;;;QA1MS,O;EAAAC,wC;EAAAA,qC;;;;;;;;;;;;;;;;;;;;;;;;AAEX;sBAC2B,sDAD3B;",
+"sources":["FrameElement.java"],
+"names":["elem","org.gwtproject.dom.client.FrameElement$$Overlay.as","o","org.gwtproject.dom.client.FrameElement$$Overlay.is","node","org.gwtproject.dom.client.FrameElement$$Overlay.isNoResize__$devirt","longDesc","org.gwtproject.dom.client.FrameElement$$Overlay.setLongDesc__$devirt","src","org.gwtproject.dom.client.FrameElement$$Overlay.setSrc__$devirt","org.gwtproject.dom.client.FrameElement$$Overlay.<clinit>"]
+}

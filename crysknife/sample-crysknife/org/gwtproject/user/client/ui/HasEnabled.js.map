@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasEnabled.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;MAqBiB,U;;;;;;CAKP,a;;;;;;CAQH,qB,CAAmBA,O;;;;QAbT,O;EAAAC,6B;EAAAA;",
+"sources":["HasEnabled.java"],
+"names":["enabled","org.gwtproject.user.client.ui.HasEnabled.<clinit>"]
+}

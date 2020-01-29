@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TabLayoutPanel$TabbedDeckLayoutPanel.impl.java.js",
+"lineCount":114,
+"mappings":"A;;;;;;;;;;;;;MA8KgB,qB;;;;CAAA,W;EAAAA,Q;EAAAA;yF;;;;;;;QAAA,qD;EAAAC,gC;EAAAA,4C;EAAAA,+I;EAAAA,iB;;;;;;CAAA,uH;EAAAC,qG;EAAAA,8D;;;;;;;CAGA,2C,CAAWC,C;EACrBC,yI;;;;;;CAKU,S;EACVC,2I;;;;;;;;CAKU,mD,CAAcF,C,EAAOG,W;EAC/BC,4I;;;;;;;;CAKa,8C,CAAcJ,C;EAK3BK,gJ;;;;;;;CAGa,4D,CAAuBL,C,EAAOG,W;EAC3CG,0E;;;;;;CAGa,uD,CAAuBN,C;EACpCO,wD;;;;;;;;CAlCU,sC;EAAAC,0F;;;;;;;;CAAA,e;EAAAC,sG;;;;;QAAA,O;EAAAC,wC;EAAAA,qC;EAAAA;",
+"sources":["TabLayoutPanel.java"],
+"names":["org.gwtproject.user.client.ui.TabLayoutPanel$TabbedDeckLayoutPanel.<synthetic: ctor_js>","org.gwtproject.user.client.ui.TabLayoutPanel$TabbedDeckLayoutPanel.<synthetic: ctor_create>","org.gwtproject.user.client.ui.TabLayoutPanel$TabbedDeckLayoutPanel.<init>","w","org.gwtproject.user.client.ui.TabLayoutPanel$TabbedDeckLayoutPanel.add","org.gwtproject.user.client.ui.TabLayoutPanel$TabbedDeckLayoutPanel.clear","beforeIndex","org.gwtproject.user.client.ui.TabLayoutPanel$TabbedDeckLayoutPanel.insert","org.gwtproject.user.client.ui.TabLayoutPanel$TabbedDeckLayoutPanel.remove","org.gwtproject.user.client.ui.TabLayoutPanel$TabbedDeckLayoutPanel.insertProtected","org.gwtproject.user.client.ui.TabLayoutPanel$TabbedDeckLayoutPanel.removeProtected","org.gwtproject.user.client.ui.TabLayoutPanel$TabbedDeckLayoutPanel.forEach","org.gwtproject.user.client.ui.TabLayoutPanel$TabbedDeckLayoutPanel.spliterator","org.gwtproject.user.client.ui.TabLayoutPanel$TabbedDeckLayoutPanel.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AreaBuilder.impl.java.js",
+"lineCount":58,
+"mappings":"A;;;;;;;;;MAoBiB,W;;;;;;;CASH,6B,CAAiBA,S;;;;;;;CAUjB,uB,CAAWC,G;;;;;;;CAUX,0B,CAAcC,M;;;;;;;CASd,wB,CAAYC,I;;;;;;;CASZ,yB,CAAaC,K;;;;;;;CASb,0B,CAAcC,M;;;;QAxDX,O;EAAAC,8B;EAAAA;",
+"sources":["AreaBuilder.java"],
+"names":["accessKey","alt","coords","href","shape","target","org.gwtproject.dom.builder.shared.AreaBuilder.<clinit>"]
+}

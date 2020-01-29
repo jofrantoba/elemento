@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"IFrameElement$$Overlay.impl.java.js",
+"lineCount":106,
+"mappings":"A;;;;;;;;;;;;;MAiCa,sB;;;;;;QAUiB,uC,CAAWA,I;EAAXC,iC;EAC1BA,uF;EACAA,uE;;;;;;;QASoB,iD,CAAoBC,C;EAApBC,iC;EACpBA;GACEA,sHADFA;G;EAGAA,a;;;;;;;QASoB,oC,CAAQC,I;EAARD,iC;EACpBA;GACEA,yHADFA;G;EAGAA,a;;;;;;;QASoB,uC,CAAWH,I;EAAXG,iC;EACpBA,iN;;;;;;;QAoEmB,8D;EAAAE,iC;EACnBA,0D;;;;;;;QA4DgB,kG,WAAeC,G;EAAfC,iC;EAChBA,kC;;;;;QAlLS,O;EAAAC,yC;EAAAA,sC;;;;;;;;;;;;;;;;;;;;;;;;AAEX;uBAC2B,uDAD3B;",
+"sources":["IFrameElement.java"],
+"names":["elem","org.gwtproject.dom.client.IFrameElement$$Overlay.as","o","org.gwtproject.dom.client.IFrameElement$$Overlay.is","node","org.gwtproject.dom.client.IFrameElement$$Overlay.isNoResize__$devirt","src","org.gwtproject.dom.client.IFrameElement$$Overlay.setSrc__$devirt","org.gwtproject.dom.client.IFrameElement$$Overlay.<clinit>"]
+}

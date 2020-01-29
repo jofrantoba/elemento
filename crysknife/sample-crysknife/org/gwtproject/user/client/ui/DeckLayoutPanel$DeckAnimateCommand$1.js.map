@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DeckLayoutPanel$DeckAnimateCommand$1.impl.java.js",
+"lineCount":74,
+"mappings":"A;;;;;;;;;;;;;MAuDuD,E;;;;CAAA,W;EAAAA,Q;EAAAA;yF;EAAAA;OADQC,WACRD,C;;;;;;;;QAAA,gI;EAAAE,a;EAAAA,yB;EAAAA,uO;EAAAA,iB;;;;;;;CAAA,kM;EAAAC,qG;EAAAA,+B;EAAAA,iC;;;;;;CAEnC,uB;EACVC,4O;EACAA;GACEA,2CADFA;G;;;;;;;;CAMU,6D,CAAeC,K,EAAcC,Q;EACvCC;GACEA,gGADFA;G;;;;;QAX6C,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["DeckLayoutPanel.java"],
+"names":["org.gwtproject.user.client.ui.DeckLayoutPanel$DeckAnimateCommand$1.<synthetic: ctor_js>","callback","org.gwtproject.user.client.ui.DeckLayoutPanel$DeckAnimateCommand$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.DeckLayoutPanel$DeckAnimateCommand$1.<init>","org.gwtproject.user.client.ui.DeckLayoutPanel$DeckAnimateCommand$1.onAnimationComplete","layer","progress","org.gwtproject.user.client.ui.DeckLayoutPanel$DeckAnimateCommand$1.onLayout","org.gwtproject.user.client.ui.DeckLayoutPanel$DeckAnimateCommand$1.<clinit>"]
+}

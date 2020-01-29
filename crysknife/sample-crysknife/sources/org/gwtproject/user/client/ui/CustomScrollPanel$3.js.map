@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CustomScrollPanel$3.impl.java.js",
+"lineCount":53,
+"mappings":"A;;;;;;;;;;;MA2b4D,E;;;;CAAA,W;EAAAA,Q;EAAAA;wE;;;;;;;QAAA,wD;EAAAC,a;EAAAA,yB;EAAAA,iI;EAAAA,iB;;;;;;CAAA,yG;EAAAC,oF;EAAAA,iC;;;;;;CAE1C,W;EACVC,qJ;;;;;QAHoD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["CustomScrollPanel.java"],
+"names":["org.gwtproject.user.client.ui.CustomScrollPanel$3.<synthetic: ctor_js>","org.gwtproject.user.client.ui.CustomScrollPanel$3.<synthetic: ctor_create>","org.gwtproject.user.client.ui.CustomScrollPanel$3.<init>","org.gwtproject.user.client.ui.CustomScrollPanel$3.execute","org.gwtproject.user.client.ui.CustomScrollPanel$3.<clinit>"]
+}

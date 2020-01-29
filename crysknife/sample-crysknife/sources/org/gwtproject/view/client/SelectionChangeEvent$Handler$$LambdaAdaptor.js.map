@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SelectionChangeEvent$Handler$$LambdaAdaptor.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;MA8B0B,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sF;EAAAA,4J;;;;;;CAAA,kJ;EAAAC,iC;EAAAA,yF;;;;;;CAAA,oE;;GAAAC,oG;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["SelectionChangeEvent.java"],
+"names":["org.gwtproject.view.client.SelectionChangeEvent$Handler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.view.client.SelectionChangeEvent$Handler$$LambdaAdaptor.<init>","org.gwtproject.view.client.SelectionChangeEvent$Handler$$LambdaAdaptor.onSelectionChange","org.gwtproject.view.client.SelectionChangeEvent$Handler$$LambdaAdaptor.<clinit>"]
+}

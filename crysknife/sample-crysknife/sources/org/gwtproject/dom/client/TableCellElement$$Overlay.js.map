@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TableCellElement$$Overlay.impl.java.js",
+"lineCount":89,
+"mappings":"A;;;;;;;;;;;;MA8Ba,yB;;;;;;QAYoB,uC,CAAWA,I;EAAXC,oC;EAC7BA,0F;EACAA,0E;;;;;;;QASoB,iD,CAAoBC,C;EAApBC,oC;EACpBA;GACEA,yHADFA;G;EAGAA,a;;;;;;;QASoB,oC,CAAQC,I;EAARD,oC;EACpBA;GACEA,4HADFA;G;EAGAA,a;;;;;;;QASoB,uC,CAAWH,I;EAAXG,oC;EACpBA,of;;;;;QAlDS,O;EAAAE,4C;EAAAA,yC;;;;;;;;;;;;;;;;;;;;;;;;AAEX;0BAC2B,6DAD3B,Q;AAEA;0BAC2B,6DAD3B;",
+"sources":["TableCellElement.java"],
+"names":["elem","org.gwtproject.dom.client.TableCellElement$$Overlay.as","o","org.gwtproject.dom.client.TableCellElement$$Overlay.is","node","org.gwtproject.dom.client.TableCellElement$$Overlay.<clinit>"]
+}

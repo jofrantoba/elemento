@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CellPreviewEvent$Handler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;MAiC0B,O;;;;;;CAOjB,4D,CAAkCA,K;;;;;;;QAPjB,M;EAAAC,kB;EAAAA,iE;;;;;QAAA,O;EAAAC,0B;EAAAA;",
+"sources":["CellPreviewEvent.java"],
+"names":["event","org.gwtproject.view.client.CellPreviewEvent$Handler.<synthetic: adapt_lambda>","org.gwtproject.view.client.CellPreviewEvent$Handler.<clinit>"]
+}

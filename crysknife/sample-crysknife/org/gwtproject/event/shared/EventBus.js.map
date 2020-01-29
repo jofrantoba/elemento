@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"EventBus.impl.java.js",
+"lineCount":86,
+"mappings":"A;;;;;;;;;;;;;;MA6BsB,Q;;;;CAAA,W;EAAAA,Q;;;;;CAAA,6C;EAAAC,iC;;;;;;;;QAQM,oE,CAAuBC,K,EAASC,O;EAAhCC,mB;EACxBA,4C;;;;;;;QASoB,uE,CAA0BF,K,EAAcG,M;EAAxCC,mB;EACpBA,4C;;;;;;;;;;CAcsC,sE,CAAmBC,I,EAAQJ,O;;;;;;;;;;CAc3B,gG,CAC5BI,I,EAAaF,M,EAAUF,O;;;;;;;CAad,8C,CAAmBD,K;;;;;;;CAYnB,0E,CAA6BA,K,EAAcG,M;;;;QAzE5C,O;EAAAG,2B;EAAAA,wB;EAAAA;",
+"sources":["EventBus.java"],
+"names":["org.gwtproject.event.shared.EventBus.<synthetic: ctor_js>","org.gwtproject.event.shared.EventBus.<init>","event","handler","org.gwtproject.event.shared.EventBus.dispatchEvent","source","org.gwtproject.event.shared.EventBus.setSourceOfEvent","type","org.gwtproject.event.shared.EventBus.<clinit>"]
+}

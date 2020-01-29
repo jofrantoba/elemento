@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AlternateMessageSelector$$LambdaAdaptor.impl.java.js",
+"lineCount":45,
+"mappings":"A;;;;;;;;;MAqBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;kF;EAAAA,oJ;;;;;;CAAA,0I;EAAAC,iC;EAAAA,qF;;;;;;;CAAA,oC;EAAAC,gD;EAAAA,sH;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["AlternateMessageSelector.java"],
+"names":["org.gwtproject.i18n.shared.AlternateMessageSelector$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.i18n.shared.AlternateMessageSelector$$LambdaAdaptor.<init>","org.gwtproject.i18n.shared.AlternateMessageSelector$$LambdaAdaptor.isFormAcceptable","org.gwtproject.i18n.shared.AlternateMessageSelector$$LambdaAdaptor.<clinit>"]
+}

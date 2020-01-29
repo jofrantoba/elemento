@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SimpleKeyProvider.impl.java.js",
+"lineCount":50,
+"mappings":"A;;;;;;;;;;MAsBa,iB;;;;CAAA,W;EAAAA,Q;;;;;;;QAAA,S;EAAAC,4B;EAAAA,wC;EAAAA,kE;EAAAA,iB;;;;;CAAA,qD;EAAAC,iC;;;;;;;;CAKG,0B,CAASC,I;EACrBC,Y;;;;;QANS,O;EAAAC,oC;EAAAA,iC;EAAAA;",
+"sources":["SimpleKeyProvider.java"],
+"names":["org.gwtproject.view.client.SimpleKeyProvider.<synthetic: ctor_js>","org.gwtproject.view.client.SimpleKeyProvider.<synthetic: ctor_create>","org.gwtproject.view.client.SimpleKeyProvider.<init>","item","org.gwtproject.view.client.SimpleKeyProvider.getKey","org.gwtproject.view.client.SimpleKeyProvider.<clinit>"]
+}

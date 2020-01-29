@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Style$TextTransform.impl.java.js",
+"lineCount":99,
+"mappings":"A;;;;;;;;;;MAqUsB,mB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,8B;EAAAA,0C;EAAAA,mE;EAAAA,iB;;;;;CAAA,sD;EAAAC,iC;;;;;;QAClB,+D;EAAAC,yH;;;;;;QACA,yD;EAAAA,mH;;;;;;QACA,8D;EAAAA,wH;;;;;;QACA,8D;EAAAA,wH;;;;;QAJkB,O;EAAAC,sC;EAAAA,mC;EAAAA,qB;EAClBA,6J;EACAA,iJ;EACAA,2J;EACAA,2J;;;;;;;;;;;;;;;;;;;;AAJkB;iF;AAAA;2E;AAAA;gF;AAAA;;",
+"sources":["Style.java"],
+"names":["org.gwtproject.dom.client.Style$TextTransform.<synthetic: ctor_js>","org.gwtproject.dom.client.Style$TextTransform.<synthetic: ctor_create>","org.gwtproject.dom.client.Style$TextTransform.<init>","org.gwtproject.dom.client.Style$TextTransform.<synthetic: getter>","org.gwtproject.dom.client.Style$TextTransform.<clinit>"]
+}

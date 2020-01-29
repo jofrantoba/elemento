@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CellTree_BasicResourcesImpl$cellTreeClosedItemInitializer.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;MAgCuB,6B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,oD;EAAAA,mH;EAAAA,iB;;;;;CAAA,sG;EAAAC,iC;;;;;;QAIkC,O;EAAAC,wC;EACnDA,2H;;;;;QALiB,O;EAAAC,gD;EAAAA,6C;EAAAA,qB;EAEjBA;",
+"sources":["CellTree_BasicResourcesImpl.java"],
+"names":["org.gwtproject.user.cellview.client.CellTree_BasicResourcesImpl$cellTreeClosedItemInitializer.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.CellTree_BasicResourcesImpl$cellTreeClosedItemInitializer.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.CellTree_BasicResourcesImpl$cellTreeClosedItemInitializer.<init>","org.gwtproject.user.cellview.client.CellTree_BasicResourcesImpl$cellTreeClosedItemInitializer.get","org.gwtproject.user.cellview.client.CellTree_BasicResourcesImpl$cellTreeClosedItemInitializer.<clinit>"]
+}

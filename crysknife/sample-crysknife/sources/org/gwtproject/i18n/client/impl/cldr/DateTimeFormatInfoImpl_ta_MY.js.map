@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DateTimeFormatInfoImpl_ta_MY.impl.java.js",
+"lineCount":51,
+"mappings":"A;;;;;MAqBa,8B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,yC;EAAAA,qD;EAAAA,uF;EAAAA,iB;;;;;CAAA,0E;EAAAC,+E;;;;;;;CAGA,qB;EACTC,S;;;;;;;CAIS,gB;EACTC,S;;;;;QATS,O;EAAAC,iD;EAAAA,8C;EAAAA;",
+"sources":["DateTimeFormatInfoImpl_ta_MY.java"],
+"names":["org.gwtproject.i18n.client.impl.cldr.DateTimeFormatInfoImpl_ta_MY.<synthetic: ctor_js>","org.gwtproject.i18n.client.impl.cldr.DateTimeFormatInfoImpl_ta_MY.<synthetic: ctor_create>","org.gwtproject.i18n.client.impl.cldr.DateTimeFormatInfoImpl_ta_MY.<init>","org.gwtproject.i18n.client.impl.cldr.DateTimeFormatInfoImpl_ta_MY.firstDayOfTheWeek","org.gwtproject.i18n.client.impl.cldr.DateTimeFormatInfoImpl_ta_MY.weekendStart","org.gwtproject.i18n.client.impl.cldr.DateTimeFormatInfoImpl_ta_MY.<clinit>"]
+}

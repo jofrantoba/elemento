@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DragEndHandler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;MAoBiB,c;;;;;;CAOV,yD,CAAuBA,K;;;;;;QAPb,M;EAAAC,yB;EAAAA,8B;;;;;QAAA,O;EAAAC,iC;EAAAA;",
+"sources":["DragEndHandler.java"],
+"names":["event","org.gwtproject.event.dom.client.DragEndHandler.<synthetic: adapt_lambda>","org.gwtproject.event.dom.client.DragEndHandler.<clinit>"]
+}

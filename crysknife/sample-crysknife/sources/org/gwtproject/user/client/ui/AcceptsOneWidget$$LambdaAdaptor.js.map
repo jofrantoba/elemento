@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AcceptsOneWidget$$LambdaAdaptor.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;MAqBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;6E;EAAAA,0I;;;;;;CAAA,gI;EAAAC,iC;EAAAA,gF;;;;;;CAAA,mD;;GAAAC,2F;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["AcceptsOneWidget.java"],
+"names":["org.gwtproject.user.client.ui.AcceptsOneWidget$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.client.ui.AcceptsOneWidget$$LambdaAdaptor.<init>","org.gwtproject.user.client.ui.AcceptsOneWidget$$LambdaAdaptor.setWidget","org.gwtproject.user.client.ui.AcceptsOneWidget$$LambdaAdaptor.<clinit>"]
+}

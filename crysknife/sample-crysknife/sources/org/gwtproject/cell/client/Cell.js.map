@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Cell.impl.java.js",
+"lineCount":84,
+"mappings":"A;;;;;;;;;;;;;;;MAyEiB,I;;;;;;CAiFP,sB;;;;;;CAmBI,qB;;;;;;CAQJ,oB;;;;;;;;;CAaA,yG,CAAkBA,O,EAAiBC,M,EAAUC,K;;;;;;;;;;CAYhD,8L,CAAuBF,O,EAAiBC,M,EAAUC,K,EAAmBC,K,EACtCC,Y;;;;;;;;CAgB/B,mH,CAAeJ,O,EAAWE,K,EAAuBG,E;;;;;;;;;CAW9C,0G,CAAmBL,O,EAAiBC,M,EAAUC,K;;;;;;;;CAYjD,wG,CAAiBF,O,EAAiBC,M,EAAUC,K;;;;QA7KlC,O;EAAAI,uB;EAAAA;",
+"sources":["Cell.java"],
+"names":["context","parent","value","event","valueUpdater","sb","org.gwtproject.cell.client.Cell.<clinit>"]
+}

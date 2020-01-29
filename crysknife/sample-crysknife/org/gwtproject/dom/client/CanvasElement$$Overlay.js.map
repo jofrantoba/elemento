@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CanvasElement$$Overlay.impl.java.js",
+"lineCount":45,
+"mappings":"A;;;;;;;MA6Ba,sB;;;;;;QA2BY,gE;EAAAA,iC;EACrBA,oK;;;;;QA5BS,O;EAAAC,yC;EAAAA,sC;;;;;;;;;;;;;;;;;;;;;AAEX;uBAI2B,uDAJ3B;",
+"sources":["CanvasElement.java"],
+"names":["org.gwtproject.dom.client.CanvasElement$$Overlay.getContext2d__$devirt","org.gwtproject.dom.client.CanvasElement$$Overlay.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Messages$Example.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;MA0RoB,O;;;;;;CAChB,S;;;;QADgB,O;EAAAA,0B;EAAAA;",
+"sources":["Messages.java"],
+"names":["org.gwtproject.i18n.client.Messages$Example.<clinit>"]
+}

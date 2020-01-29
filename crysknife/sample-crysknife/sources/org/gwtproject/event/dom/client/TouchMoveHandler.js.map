@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TouchMoveHandler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;MAoBiB,gB;;;;;;CAOV,6D,CAA2BA,K;;;;;;QAPjB,M;EAAAC,2B;EAAAA,8B;;;;;QAAA,O;EAAAC,mC;EAAAA;",
+"sources":["TouchMoveHandler.java"],
+"names":["event","org.gwtproject.event.dom.client.TouchMoveHandler.<synthetic: adapt_lambda>","org.gwtproject.event.dom.client.TouchMoveHandler.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Attribute.impl.java.js",
+"lineCount":116,
+"mappings":"A;;;;;;;;;;;;;;;MA8BsB,S;;;;CAAA,W;EAAAA,Q;EAAAA;OAEG,4CAFHA,C;EAAAA;OAGH,oDAHGA,C;;;;;;;CAUb,6D,CAAiBC,I;EACtBC,iG;;;;;;;;CASK,+E,CAAiBD,I,EAAaE,Y;EAA9BD,iC;EACLA,iF;EACAA,yD;EACAA,yE;;;;;;;CAUY,wC,CAAYE,O;EACxBC,wF;EACAA,kT;;;;;;CAQY,W;EACZC,yD;;;;;;CAQU,2C,CAAeF,O;EACzBG,wF;EACAA,2E;;;;;;;CASU,kE,CAAYH,O,EAAcI,M;EACpCC,wF;EACAA,oC;EACAA,uK;;;;;;;CAGa,gF,CAAkBC,K;EAC/BC,IAAcC,GAAdD,6B;EACAA;GAAAA,IAAOE,IAAPF,kBAAAA;GACEA,8GADFA;G;EAGAA,2D;;;;;;;;CAUwB,kC,CAAiBD,K;;;;;CAW/B,+C,CAAmBN,O;EAC7BU,wF;EACAA,sP;EACAA,mI;;;;;QAlGkB,O;EAAAC,4B;EAAAA,yB;EAAAA;",
+"sources":["Attribute.java"],
+"names":["org.gwtproject.aria.client.Attribute.<synthetic: ctor_js>","name","org.gwtproject.aria.client.Attribute.<init>","defaultValue","element","org.gwtproject.aria.client.Attribute.get","org.gwtproject.aria.client.Attribute.getName","org.gwtproject.aria.client.Attribute.remove","values","org.gwtproject.aria.client.Attribute.set","value","org.gwtproject.aria.client.Attribute.getAriaValue","buf","item","org.gwtproject.aria.client.Attribute.setDefault","org.gwtproject.aria.client.Attribute.<clinit>"]
+}

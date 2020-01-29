@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AriaAttributeType$$LambdaAdaptor.impl.java.js",
+"lineCount":44,
+"mappings":"A;;;;;;;;;MAoBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;2E;EAAAA,sI;;;;;;CAAA,4H;EAAAC,iC;EAAAA,8E;;;;;;CAAA,gB;EAAAC,yC;EAAAA,2G;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["AriaAttributeType.java"],
+"names":["org.gwtproject.aria.client.AriaAttributeType$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.aria.client.AriaAttributeType$$LambdaAdaptor.<init>","org.gwtproject.aria.client.AriaAttributeType$$LambdaAdaptor.getAriaValue","org.gwtproject.aria.client.AriaAttributeType$$LambdaAdaptor.<clinit>"]
+}

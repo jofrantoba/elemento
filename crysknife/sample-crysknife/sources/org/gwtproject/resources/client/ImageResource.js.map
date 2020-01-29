@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ImageResource.impl.java.js",
+"lineCount":61,
+"mappings":"A;;;;;;;;;;;;MAyCiB,a;;;;;;CAGX,a;;;;;;CAGA,W;;;;;;CAGE,Y;;;;;;CAGE,c;;;;;;CAGJ,U;;;;;;CAGA,Y;;;;;;CAGI,c;;;;QArBO,O;EAAAA,gC;EAAAA;",
+"sources":["ImageResource.java"],
+"names":["org.gwtproject.resources.client.ImageResource.<clinit>"]
+}

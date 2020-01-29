@@ -1,0 +1,31 @@
+goog.module('org.gwtproject.user.cellview.client.AbstractCellTableBuilder');
+
+goog.require('java.lang.Object');
+goog.require('nativebootstrap.Util');
+goog.require('org.gwtproject.user.cellview.client.CellTableBuilder');
+goog.require('java.lang.IllegalStateException');
+goog.require('java.lang.Integer');
+goog.require('java.lang.NumberFormatException');
+goog.require('java.lang.String');
+goog.require('java.util.Collection');
+goog.require('java.util.HashMap');
+goog.require('java.util.Map');
+goog.require('nativebootstrap.Equality');
+goog.require('org.gwtproject.cell.client.Cell.Context');
+goog.require('org.gwtproject.cell.client.HasCell');
+goog.require('org.gwtproject.dom.builder.shared.ElementBuilderBase');
+goog.require('org.gwtproject.dom.builder.shared.HtmlBuilderFactory');
+goog.require('org.gwtproject.dom.builder.shared.HtmlTableSectionBuilder');
+goog.require('org.gwtproject.dom.builder.shared.TableRowBuilder');
+goog.require('org.gwtproject.dom.builder.shared.TableSectionBuilder');
+goog.require('org.gwtproject.dom.client.Document.$Overlay');
+goog.require('org.gwtproject.dom.client.Element.$Overlay');
+goog.require('org.gwtproject.dom.client.TableRowElement.$Overlay');
+goog.require('org.gwtproject.safehtml.shared.SafeHtmlBuilder');
+goog.require('org.gwtproject.user.cellview.client.AbstractCellTable');
+goog.require('org.gwtproject.user.cellview.client.Column');
+goog.require('vmbootstrap.Casts');
+goog.require('vmbootstrap.Exceptions');
+
+const AbstractCellTableBuilder = goog.require('org.gwtproject.user.cellview.client.AbstractCellTableBuilder$impl');
+exports = AbstractCellTableBuilder; 

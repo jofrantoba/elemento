@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DragEnterHandler$$LambdaAdaptor.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;MAoBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;+E;EAAAA,8I;;;;;;CAAA,oI;EAAAC,iC;EAAAA,kF;;;;;;CAAA,6D;;GAAAC,6F;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["DragEnterHandler.java"],
+"names":["org.gwtproject.event.dom.client.DragEnterHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.dom.client.DragEnterHandler$$LambdaAdaptor.<init>","org.gwtproject.event.dom.client.DragEnterHandler$$LambdaAdaptor.onDragEnter","org.gwtproject.event.dom.client.DragEnterHandler$$LambdaAdaptor.<clinit>"]
+}

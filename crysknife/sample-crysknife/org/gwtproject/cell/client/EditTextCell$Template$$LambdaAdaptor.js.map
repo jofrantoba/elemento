@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"EditTextCell$Template$$LambdaAdaptor.impl.java.js",
+"lineCount":47,
+"mappings":"A;;;;;;;;;;;MA4CY,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;+E;EAAAA,8I;;;;;;CAAA,oI;EAAAC,iC;EAAAA,kF;;;;;;;CAAA,yB;EAAAC,iD;EAAAA,mH;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["EditTextCell.java"],
+"names":["org.gwtproject.cell.client.EditTextCell$Template$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.cell.client.EditTextCell$Template$$LambdaAdaptor.<init>","org.gwtproject.cell.client.EditTextCell$Template$$LambdaAdaptor.input","org.gwtproject.cell.client.EditTextCell$Template$$LambdaAdaptor.<clinit>"]
+}

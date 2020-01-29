@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"FormBuilder.impl.java.js",
+"lineCount":67,
+"mappings":"A;;;;;;;;;;;MAuBiB,W;;;;;;;CASH,iC,CAAqBA,a;;;;;;;CASrB,gD,CAAeC,M;;;;;;;CASf,0B,CAAyBA,M;;;;;;;CAczB,2B,CAAeC,O;;;;;;;CASf,0B,CAAcC,M;;;;;;;CAKd,wB,CAAYC,I;;;;;;;CASZ,0B,CAAcC,M;;;;QAhEX,O;EAAAC,8B;EAAAA;",
+"sources":["FormBuilder.java"],
+"names":["acceptCharset","action","enctype","method","name","target","org.gwtproject.dom.builder.shared.FormBuilder.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ChangeHandler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;MAoBiB,a;;;;;;CAOV,uD,CAAqBA,K;;;;;;QAPX,M;EAAAC,wB;EAAAA,8B;;;;;QAAA,O;EAAAC,gC;EAAAA;",
+"sources":["ChangeHandler.java"],
+"names":["event","org.gwtproject.event.dom.client.ChangeHandler.<synthetic: adapt_lambda>","org.gwtproject.event.dom.client.ChangeHandler.<clinit>"]
+}

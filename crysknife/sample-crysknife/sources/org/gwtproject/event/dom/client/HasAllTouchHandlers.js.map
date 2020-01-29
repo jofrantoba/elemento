@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasAllTouchHandlers.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;;;;;MAwBiB,mB;;;;QAAA,O;EAAAA,sC;EAAAA;",
+"sources":["HasAllTouchHandlers.java"],
+"names":["org.gwtproject.event.dom.client.HasAllTouchHandlers.<clinit>"]
+}

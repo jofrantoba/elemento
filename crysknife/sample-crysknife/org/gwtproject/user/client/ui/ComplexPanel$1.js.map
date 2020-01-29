@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ComplexPanel$1.impl.java.js",
+"lineCount":55,
+"mappings":"A;;;;;;;;;;;;MAiM0D,E;;;;CAAA,W;EAAAA,Q;EAAAA;mE;;;;;;;QAAA,mD;EAAAC,a;EAAAA,yB;EAAAA,uH;EAAAA,iB;;;;;;CAAA,+F;EAAAC,+E;EAAAA,iC;;;;;;;CACtC,+C,CAAeC,C;EACzBC,mH;;;;;QAFgD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["ComplexPanel.java"],
+"names":["org.gwtproject.user.client.ui.ComplexPanel$1.<synthetic: ctor_js>","org.gwtproject.user.client.ui.ComplexPanel$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.ComplexPanel$1.<init>","w","org.gwtproject.user.client.ui.ComplexPanel$1.execute","org.gwtproject.user.client.ui.ComplexPanel$1.<clinit>"]
+}

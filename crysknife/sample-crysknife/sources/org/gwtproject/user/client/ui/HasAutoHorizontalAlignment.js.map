@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasAutoHorizontalAlignment.impl.java.js",
+"lineCount":82,
+"mappings":"A;;;;;;;;;;;MAsBiB,0B;;;;;;CA+BiB,8B;;;;;;CAuB3B,kH,CAC+BA,uB;;;;;QArDpC,mF;EAAAC,2J;;;;;;QAQA,iF;EAAAA,yJ;;;;;QAVe,O;EAAAC,6C;EAAAA,0C;EAEfA,0J;EAQAA,wJ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAVe;4G;AAAA;;",
+"sources":["HasAutoHorizontalAlignment.java"],
+"names":["autoHorizontalAlignment","org.gwtproject.user.client.ui.HasAutoHorizontalAlignment.<synthetic: getter>","org.gwtproject.user.client.ui.HasAutoHorizontalAlignment.<clinit>"]
+}

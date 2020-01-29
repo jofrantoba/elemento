@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ValueBoxBase$TextAlignment.impl.java.js",
+"lineCount":143,
+"mappings":"A;;;;;;;;;;;;;;;;;MAwWgB,a;;;;CAAA,W;EAAAA,Q;;;;;;;CAAA,sF;EAAAC,qC;EAAAA,2C;EAAAA,mE;;;;;;;CA0BQ,wD;;;;;;QA1BR,2B;EAAAC,wB;EAAAA;GAAAA,qJAAAA;G;EAAAA,wI;;;;;;QAAA,U;EAAAC,wB;EAAAA,sZ;;;;;;QACR,sE;EAAAC,oH;;;;;;QAMA,uE;EAAAA,qH;;;;;;QAMA,oE;EAAAA,kH;;;;;;QAMA,qE;EAAAA,mH;;;;;QAnBQ,O;EAAAC,gC;EAAAA,6B;EAAAA,e;EACRA,gP;EAMAA,mP;EAMAA,0O;EAMAA,6O;EAnBQA,mG;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;kF;AAAA;mF;AAAA;gF;AAAA;iF;AAAA;4F;AACR;8F;AAMA;+F;AAMA;4F;AAMA;;",
+"sources":["ValueBoxBase.java"],
+"names":["org.gwtproject.user.client.ui.ValueBoxBase$TextAlignment.<synthetic: ctor_js>","org.gwtproject.user.client.ui.ValueBoxBase$TextAlignment.<init>","org.gwtproject.user.client.ui.ValueBoxBase$TextAlignment.valueOf","org.gwtproject.user.client.ui.ValueBoxBase$TextAlignment.values","org.gwtproject.user.client.ui.ValueBoxBase$TextAlignment.<synthetic: getter>","org.gwtproject.user.client.ui.ValueBoxBase$TextAlignment.<clinit>"]
+}

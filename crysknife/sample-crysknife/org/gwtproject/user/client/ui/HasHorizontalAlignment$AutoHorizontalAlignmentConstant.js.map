@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasHorizontalAlignment$AutoHorizontalAlignmentConstant.impl.java.js",
+"lineCount":35,
+"mappings":"A;;;;;MAoDsB,+B;;;;CAAA,W;EAAAA,Q;;;;;;QAGlB,S;EAAAC,0C;EAAAA,sD;EAAAA,0G;EAAAA,iB;;;;;CAAA,6F;EAAAC,iC;;;;;QAHkB,O;EAAAC,kD;EAAAA,+C;EAAAA;",
+"sources":["HasHorizontalAlignment.java"],
+"names":["org.gwtproject.user.client.ui.HasHorizontalAlignment$AutoHorizontalAlignmentConstant.<synthetic: ctor_js>","org.gwtproject.user.client.ui.HasHorizontalAlignment$AutoHorizontalAlignmentConstant.<synthetic: ctor_create>","org.gwtproject.user.client.ui.HasHorizontalAlignment$AutoHorizontalAlignmentConstant.<init>","org.gwtproject.user.client.ui.HasHorizontalAlignment$AutoHorizontalAlignmentConstant.<clinit>"]
+}

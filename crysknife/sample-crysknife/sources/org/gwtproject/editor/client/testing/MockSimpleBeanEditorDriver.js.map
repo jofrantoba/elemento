@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"MockSimpleBeanEditorDriver.impl.java.js",
+"lineCount":130,
+"mappings":"A;;;;;;;;;;;;;;;;;;MA+Ba,0B;;;;CAAA,W;EAAAA,Q;EAAAA;OAGD,0EAHCA,C;EAAAA;OAID,0EAJCA,C;;;;;;;QAAA,S;EAAAC,qC;EAAAA,iD;EAAAA,qF;EAAAA,iB;;;;;CAAA,wE;EAAAC,iC;;;;;;;CAWC,oD,CAAqBC,O;;;;;;CAOrB,wB,CAAOC,M;EACjBC,yF;;;;;;;CAQO,S;EACPC,uF;;;;;;CAQO,a;EACPC,uF;;;;;;;CAQuB,a;EACvBC,qE;;;;;;CAQO,a;EACPC,uF;;;;;;;CAQa,a;EACbC,a;;;;;;;CAQU,iD,CAAaC,M;EACvBC,yF;;;;;;;CAQa,W;EACbC,a;;;;;;;;CASa,6C,CAAyDC,U;EACtEC,a;;;;;QA5FS,O;EAAAC,6C;EAAAA,0C;EAAAA;",
+"sources":["MockSimpleBeanEditorDriver.java"],
+"names":["org.gwtproject.editor.client.testing.MockSimpleBeanEditorDriver.<synthetic: ctor_js>","org.gwtproject.editor.client.testing.MockSimpleBeanEditorDriver.<synthetic: ctor_create>","org.gwtproject.editor.client.testing.MockSimpleBeanEditorDriver.<init>","visitor","object","org.gwtproject.editor.client.testing.MockSimpleBeanEditorDriver.edit","org.gwtproject.editor.client.testing.MockSimpleBeanEditorDriver.flush","org.gwtproject.editor.client.testing.MockSimpleBeanEditorDriver.getEditor","org.gwtproject.editor.client.testing.MockSimpleBeanEditorDriver.getErrors","org.gwtproject.editor.client.testing.MockSimpleBeanEditorDriver.getObject","org.gwtproject.editor.client.testing.MockSimpleBeanEditorDriver.hasErrors","editor","org.gwtproject.editor.client.testing.MockSimpleBeanEditorDriver.initialize","org.gwtproject.editor.client.testing.MockSimpleBeanEditorDriver.isDirty","violations","org.gwtproject.editor.client.testing.MockSimpleBeanEditorDriver.setConstraintViolations","org.gwtproject.editor.client.testing.MockSimpleBeanEditorDriver.<clinit>"]
+}

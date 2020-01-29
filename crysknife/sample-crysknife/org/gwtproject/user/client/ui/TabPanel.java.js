@@ -1,0 +1,35 @@
+goog.module('org.gwtproject.user.client.ui.TabPanel');
+
+goog.require('nativebootstrap.Util');
+goog.require('org.gwtproject.event.logical.shared.BeforeSelectionHandler');
+goog.require('org.gwtproject.event.logical.shared.HasBeforeSelectionHandlers');
+goog.require('org.gwtproject.event.logical.shared.HasSelectionHandlers');
+goog.require('org.gwtproject.event.logical.shared.SelectionHandler');
+goog.require('org.gwtproject.user.client.ui.Composite');
+goog.require('org.gwtproject.user.client.ui.HasAnimation');
+goog.require('org.gwtproject.user.client.ui.HasWidgets');
+goog.require('org.gwtproject.user.client.ui.IndexedPanel.ForIsWidget');
+goog.require('java.lang.Integer');
+goog.require('java.lang.Iterable');
+goog.require('java.lang.String');
+goog.require('java.lang.UnsupportedOperationException');
+goog.require('java.util.Iterator');
+goog.require('java.util.Spliterator');
+goog.require('java.util.function.Consumer');
+goog.require('org.gwtproject.aria.client.Roles');
+goog.require('org.gwtproject.event.logical.shared.BeforeSelectionEvent');
+goog.require('org.gwtproject.event.logical.shared.SelectionEvent');
+goog.require('org.gwtproject.event.shared.HandlerRegistration');
+goog.require('org.gwtproject.user.client.ui.DeckPanel');
+goog.require('org.gwtproject.user.client.ui.IsWidget');
+goog.require('org.gwtproject.user.client.ui.SimplePanel');
+goog.require('org.gwtproject.user.client.ui.TabBar');
+goog.require('org.gwtproject.user.client.ui.TabPanel.TabbedDeckPanel');
+goog.require('org.gwtproject.user.client.ui.TabPanel.UnmodifiableTabBar');
+goog.require('org.gwtproject.user.client.ui.VerticalPanel');
+goog.require('org.gwtproject.user.client.ui.Widget');
+goog.require('vmbootstrap.Casts');
+goog.require('vmbootstrap.Exceptions');
+
+const TabPanel = goog.require('org.gwtproject.user.client.ui.TabPanel$impl');
+exports = TabPanel; 

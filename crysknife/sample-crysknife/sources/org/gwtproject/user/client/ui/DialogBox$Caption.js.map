@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DialogBox$Caption.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;;;;;MA0ImB,O;;;;QAAA,O;EAAAA,0B;EAAAA;",
+"sources":["DialogBox.java"],
+"names":["org.gwtproject.user.client.ui.DialogBox$Caption.<clinit>"]
+}

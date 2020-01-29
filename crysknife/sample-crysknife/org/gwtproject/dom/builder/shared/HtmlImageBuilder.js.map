@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HtmlImageBuilder.impl.java.js",
+"lineCount":89,
+"mappings":"A;;;;;;;;;;;;;MAoBa,gB;;;;CAAA,W;EAAAA,Q;;;;;;;QAEX,0D,CAAiCC,Q;EAAjCC,2B;EAAAA,uC;EAAAA,iI;EAAAA,iB;;;;;;CAAA,4G,CAAiCD,Q;EAC/BE,iJ;;;;;;;;CAIkB,uB,CAAWC,G;EAC7BC,4K;;;;;;;;CAIkB,a,CAAWC,M;EAC7BC,qK;;;;;;;CAIkB,S;EAClBC,kL;;;;;;;;CAIkB,uB,CAAWC,G;EAC7BC,4K;;;;;;;;CAIkB,Y,CAAUC,K;EAC5BC,mK;;;;;QA5BS,O;EAAAC,mC;EAAAA,gC;EAAAA;",
+"sources":["HtmlImageBuilder.java"],
+"names":["org.gwtproject.dom.builder.shared.HtmlImageBuilder.<synthetic: ctor_js>","delegate","org.gwtproject.dom.builder.shared.HtmlImageBuilder.<synthetic: ctor_create>","org.gwtproject.dom.builder.shared.HtmlImageBuilder.<init>","alt","org.gwtproject.dom.builder.shared.HtmlImageBuilder.alt","height","org.gwtproject.dom.builder.shared.HtmlImageBuilder.height","org.gwtproject.dom.builder.shared.HtmlImageBuilder.isMap","src","org.gwtproject.dom.builder.shared.HtmlImageBuilder.src","width","org.gwtproject.dom.builder.shared.HtmlImageBuilder.width","org.gwtproject.dom.builder.shared.HtmlImageBuilder.<clinit>"]
+}

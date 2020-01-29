@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CellBasedWidgetImpl.impl.java.js",
+"lineCount":153,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;MA8Be,mB;;;;CAAA,W;EAAAA,Q;EAAAA;OAsBK,yEAtBLA,C;;;;;;QAYqB,O;EAAAC,8B;EAChCA;GACEA,+HADFA;G;EAGAA,4F;;;;;CAQF,gE;EAAAC,iC;EACEA,uI;EACAA,6F;EACAA,4F;EACAA,+F;EACAA,6F;EACAA,6F;EACAA,4F;;;;;;;CAUa,gD,CAAoBC,I;EACjCC,wV;;;;;;;CAUU,wF,CAAsBC,M,EAAcC,K;;;;;;CAShC,sD,CAAqBC,I;EACnCC,Y;;;;;;CAQU,mE,CAA4BC,O;EACtCC,sB;;;;;;;CASgB,iE,CAAkBL,M,EAAoBM,S;EACtDC;GACEA,OADFA;G;EAIAA,IAAIC,YAAJD,K;EACAA;GAAAA,IAAYE,QAAZF,wEAAAA;GACEA,IAAIG,OAAJH,kDADFA;GAEEA;IACEA,sDADFA;;IAGEA,qGAHFA;IAIEA;KACEA,wBADFA;KAJFA;IAFFA;G;EAWAA;GACEA,uCADFA;G;;;;;;;;CAYY,mE,CAAiBP,M,EAAeS,Q;EAC5CE,sD;;;;;QA9GW,O;EAAAC,sC;EAAAA,mC;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;oBAKsB,gEALtB;",
+"sources":["CellBasedWidgetImpl.java"],
+"names":["org.gwtproject.user.cellview.client.CellBasedWidgetImpl.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.CellBasedWidgetImpl.get","org.gwtproject.user.cellview.client.CellBasedWidgetImpl.<init>","elem","org.gwtproject.user.cellview.client.CellBasedWidgetImpl.isFocusable","widget","event","html","org.gwtproject.user.cellview.client.CellBasedWidgetImpl.processHtml","command","org.gwtproject.user.cellview.client.CellBasedWidgetImpl.resetFocus","typeNames","org.gwtproject.user.cellview.client.CellBasedWidgetImpl.sinkEvents","eventsToSink","typeName","typeInt","org.gwtproject.user.cellview.client.CellBasedWidgetImpl.sinkEvent","org.gwtproject.user.cellview.client.CellBasedWidgetImpl.<clinit>"]
+}

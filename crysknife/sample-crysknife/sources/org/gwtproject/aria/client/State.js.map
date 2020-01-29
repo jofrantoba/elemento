@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"State.impl.java.js",
+"lineCount":154,
+"mappings":"A;;;;;;;;;;;;;;;MAsCmB,K;;;;CAAA,W;EAAAA,Q;;;;;;QA6BT,S;EAAAC,4B;EAAAA,sD;EAAAA,iB;;;;;CAAA,yC;EAAAC,iC;;;;;;QA3BR,4C;EAAAC,0E;;;;;;QAGA,+C;EAAAA,6E;;;;;;QAGA,gD;EAAAA,8E;;;;;;QAGA,gD;EAAAA,8E;;;;;;QAGA,+C;EAAAA,6E;;;;;;QAGA,8C;EAAAA,4E;;;;;;QAGA,+C;EAAAA,6E;;;;;;QAGA,+C;EAAAA,6E;;;;;;QAGA,gD;EAAAA,8E;;;;;QA1BiB,O;EAAAC,wB;EAAAA,qB;EAAAA,qB;EAEjBA,+L;EAGAA,mM;EAGAA,uM;EAGAA,sM;EAGAA,mM;EAGAA,mM;EAGAA,+L;EAGAA,mM;EAGAA,sM;;;;;;;;;;;;;;;;;;;;;AA1BiB;gD;AAAA;mD;AAAA;oD;AAAA;oD;AAAA;mD;AAAA;kD;AAAA;mD;AAAA;mD;AAAA;;",
+"sources":["State.java"],
+"names":["org.gwtproject.aria.client.State.<synthetic: ctor_js>","org.gwtproject.aria.client.State.<synthetic: ctor_create>","org.gwtproject.aria.client.State.<init>","org.gwtproject.aria.client.State.<synthetic: getter>","org.gwtproject.aria.client.State.<clinit>"]
+}

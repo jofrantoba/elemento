@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"FormSubmitEvent.impl.java.js",
+"lineCount":72,
+"mappings":"A;;;;;;;MAsBa,e;;;;CAAA,W;EAAAA,Q;EAAAA;OAEK,wDAFLA,S;EAAAA;OAGK,oEAHLA,S;;;;;;;QAUJ,gD,CAA0BC,M;EAA1BC,0B;EAAAA,sC;EAAAA,gH;EAAAA,iB;;;;;;CAAA,6F,CAA0BD,M;EAC/BE,4D;EADKA,gE;;;;;;CASQ,e;EACbC,qE;;;;;;CAQU,uB,CAAqBC,M;EAC/BC,uE;EACAA,iF;;;;;;CAGM,0D;EACNC,iF;;;;;CAlCS,wD;EAGXJ,kF;;;;;QAHW,O;EAAAK,kC;EAAAA,+B;EAAAA;",
+"sources":["FormSubmitEvent.java"],
+"names":["org.gwtproject.user.client.ui.FormSubmitEvent.<synthetic: ctor_js>","source","org.gwtproject.user.client.ui.FormSubmitEvent.<synthetic: ctor_create>","org.gwtproject.user.client.ui.FormSubmitEvent.<init>","org.gwtproject.user.client.ui.FormSubmitEvent.isCancelled","cancel","org.gwtproject.user.client.ui.FormSubmitEvent.setCancelled","org.gwtproject.user.client.ui.FormSubmitEvent.isSetCancelledCalled","org.gwtproject.user.client.ui.FormSubmitEvent.<clinit>"]
+}

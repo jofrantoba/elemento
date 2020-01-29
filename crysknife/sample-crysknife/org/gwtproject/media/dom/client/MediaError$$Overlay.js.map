@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"MediaError$$Overlay.impl.java.js",
+"lineCount":11,
+"mappings":"A;;;;MAmCmB,Q;;;;QAAA,O;EAAAA,2B;EAAAA;",
+"sources":["MediaError.java"],
+"names":["org.gwtproject.media.dom.client.MediaError$$Overlay.<clinit>"]
+}

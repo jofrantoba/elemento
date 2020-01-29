@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DragOverHandler$$LambdaAdaptor.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;MAoBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;8E;EAAAA,4I;;;;;;CAAA,kI;EAAAC,iC;EAAAA,iF;;;;;;CAAA,2D;;GAAAC,4F;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["DragOverHandler.java"],
+"names":["org.gwtproject.event.dom.client.DragOverHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.dom.client.DragOverHandler$$LambdaAdaptor.<init>","org.gwtproject.event.dom.client.DragOverHandler$$LambdaAdaptor.onDragOver","org.gwtproject.event.dom.client.DragOverHandler$$LambdaAdaptor.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"FormPanel$SubmitCompleteHandler.impl.java.js",
+"lineCount":32,
+"mappings":"A;;;;;;;;;;MAwHmB,qB;;;;;;CAMV,+E,CAAqCA,K;;;;;;QAN3B,M;EAAAC,gC;EAAAA,8B;;;;;QAAA,O;EAAAC,wC;EAAAA;",
+"sources":["FormPanel.java"],
+"names":["event","org.gwtproject.user.client.ui.FormPanel$SubmitCompleteHandler.<synthetic: adapt_lambda>","org.gwtproject.user.client.ui.FormPanel$SubmitCompleteHandler.<clinit>"]
+}

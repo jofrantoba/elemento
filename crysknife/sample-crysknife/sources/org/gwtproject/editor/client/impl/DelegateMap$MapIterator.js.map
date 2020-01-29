@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DelegateMap$MapIterator.impl.java.js",
+"lineCount":105,
+"mappings":"A;;;;;;;;;;;;;;;;;;;MAiCuB,W;;;;CAAA,W;EAAAA,Q;EAAAA;OACkB,kEADlBA,C;EAAAA;OAE4B,kEAF5BA,C;EAAAA;OAGkC,oEAHlCA,C;;;;;;;QAKZ,sD,CAAwBC,G;EAAxBC,sB;EAAAA,kC;EAAAA,+H;EAAAA,iB;;;;;;CAAA,+G,CAAwBD,G;EAAxBE,iC;EACLA,8J;EACAA,gB;;;;;;;CAGa,W;EACbC,uG;;;;;;;CAGkC,Q;EAClCC,IAA6BC,QAA7BD,2E;EAEAA;GAEEA,mPAFFA;;GAKEA,+EALFA;GAMEA;IAEEA,mPAFFA;IAGEA;KACEA,mPADFA;KAEEA,MAFFA;KAHFA;IANFA;G;EAeAA,gB;;;;;;CAGU,U;EACVE,kE;;;;;;;;CApCiB,+C;EAAAC,mG;;;;;QAAA,O;EAAAC,8B;EAAAA,2B;EAAAA,qB;EAAAA;",
+"sources":["DelegateMap.java"],
+"names":["org.gwtproject.editor.client.impl.DelegateMap$MapIterator.<synthetic: ctor_js>","map","org.gwtproject.editor.client.impl.DelegateMap$MapIterator.<synthetic: ctor_create>","org.gwtproject.editor.client.impl.DelegateMap$MapIterator.<init>","org.gwtproject.editor.client.impl.DelegateMap$MapIterator.hasNext","org.gwtproject.editor.client.impl.DelegateMap$MapIterator.next","toReturn","org.gwtproject.editor.client.impl.DelegateMap$MapIterator.remove","org.gwtproject.editor.client.impl.DelegateMap$MapIterator.forEachRemaining","org.gwtproject.editor.client.impl.DelegateMap$MapIterator.<clinit>"]
+}

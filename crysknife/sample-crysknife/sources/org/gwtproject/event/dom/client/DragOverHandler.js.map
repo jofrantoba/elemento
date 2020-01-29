@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DragOverHandler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;MAoBiB,e;;;;;;CAOV,2D,CAAyBA,K;;;;;;QAPf,M;EAAAC,0B;EAAAA,8B;;;;;QAAA,O;EAAAC,kC;EAAAA;",
+"sources":["DragOverHandler.java"],
+"names":["event","org.gwtproject.event.dom.client.DragOverHandler.<synthetic: adapt_lambda>","org.gwtproject.event.dom.client.DragOverHandler.<clinit>"]
+}

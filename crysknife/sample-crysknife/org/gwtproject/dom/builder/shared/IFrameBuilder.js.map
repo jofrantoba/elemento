@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"IFrameBuilder.impl.java.js",
+"lineCount":90,
+"mappings":"A;;;;;;;;;;;;MAwBiB,a;;;;;;;CASD,kB,CAAgBA,W;;;;;;;;CAchB,+C,CAAcC,I;;;;;;;CASd,mB,CAAiBC,Y;;;;;;;CASjB,kB,CAAgBC,W;;;;;;;CAShB,wB,CAAYC,I;;;;;;CASZ,Y;;;;;;;CASA,6B,CAAiBC,S;;;;;;;CASjB,6C,CAAYC,G;;;;;;;CASZ,uB,CAAsBA,G;;;;;;;;CActB,wB,CAAYL,I;;;;QApGX,O;EAAAM,gC;EAAAA;",
+"sources":["IFrameBuilder.java"],
+"names":["frameBorder","html","marginHeight","marginWidth","name","scrolling","src","org.gwtproject.dom.builder.shared.IFrameBuilder.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DateTimeFormatInfoImpl_es_BO.impl.java.js",
+"lineCount":54,
+"mappings":"A;;;;;;;;MAqBa,8B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,yC;EAAAA,qD;EAAAA,uF;EAAAA,iB;;;;;CAAA,0E;EAAAC,mF;;;;;;;CAGK,S;EACdC,qF;;;;;;;CAOY,oB;EACZC,sB;;;;;QAZS,O;EAAAC,iD;EAAAA,8C;EAAAA;",
+"sources":["DateTimeFormatInfoImpl_es_BO.java"],
+"names":["org.gwtproject.i18n.client.impl.cldr.DateTimeFormatInfoImpl_es_BO.<synthetic: ctor_js>","org.gwtproject.i18n.client.impl.cldr.DateTimeFormatInfoImpl_es_BO.<synthetic: ctor_create>","org.gwtproject.i18n.client.impl.cldr.DateTimeFormatInfoImpl_es_BO.<init>","org.gwtproject.i18n.client.impl.cldr.DateTimeFormatInfoImpl_es_BO.ampms","org.gwtproject.i18n.client.impl.cldr.DateTimeFormatInfoImpl_es_BO.dateFormatMedium","org.gwtproject.i18n.client.impl.cldr.DateTimeFormatInfoImpl_es_BO.<clinit>"]
+}

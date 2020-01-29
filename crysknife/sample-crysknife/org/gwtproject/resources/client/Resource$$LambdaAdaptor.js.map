@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Resource$$LambdaAdaptor.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;;;;MAuBkB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;uE;EAAAA,8H;;;;;;CAAA,oH;EAAAC,iC;EAAAA,0E;;;;;;CAAA,kB;EAAAC,0C;EAAAA,uG;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["Resource.java"],
+"names":["org.gwtproject.resources.client.Resource$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.resources.client.Resource$$LambdaAdaptor.<init>","org.gwtproject.resources.client.Resource$$LambdaAdaptor.annotationType","org.gwtproject.resources.client.Resource$$LambdaAdaptor.<clinit>"]
+}

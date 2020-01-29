@@ -1,0 +1,36 @@
+goog.module('org.gwtproject.user.client.ui.TabBar');
+
+goog.require('nativebootstrap.Util');
+goog.require('org.gwtproject.event.logical.shared.HasBeforeSelectionHandlers');
+goog.require('org.gwtproject.event.logical.shared.HasSelectionHandlers');
+goog.require('org.gwtproject.user.client.ui.Composite');
+goog.require('java.lang.IndexOutOfBoundsException');
+goog.require('java.lang.Integer');
+goog.require('java.lang.String');
+goog.require('nativebootstrap.Equality');
+goog.require('org.gwtproject.aria.client.Roles');
+goog.require('org.gwtproject.dom.client.Element.$Overlay');
+goog.require('org.gwtproject.dom.client.Node.$Overlay');
+goog.require('org.gwtproject.event.logical.shared.BeforeSelectionEvent');
+goog.require('org.gwtproject.event.logical.shared.BeforeSelectionHandler');
+goog.require('org.gwtproject.event.logical.shared.SelectionEvent');
+goog.require('org.gwtproject.event.logical.shared.SelectionHandler');
+goog.require('org.gwtproject.event.shared.HandlerRegistration');
+goog.require('org.gwtproject.safehtml.shared.SafeHtml');
+goog.require('org.gwtproject.user.client.DOM');
+goog.require('org.gwtproject.user.client.Event');
+goog.require('org.gwtproject.user.client.ui.HTML');
+goog.require('org.gwtproject.user.client.ui.HasVerticalAlignment');
+goog.require('org.gwtproject.user.client.ui.HorizontalPanel');
+goog.require('org.gwtproject.user.client.ui.Label');
+goog.require('org.gwtproject.user.client.ui.SimplePanel');
+goog.require('org.gwtproject.user.client.ui.TabBar.ClickDelegatePanel');
+goog.require('org.gwtproject.user.client.ui.TabBar.Tab');
+goog.require('org.gwtproject.user.client.ui.UIObject');
+goog.require('org.gwtproject.user.client.ui.Widget');
+goog.require('vmbootstrap.Asserts');
+goog.require('vmbootstrap.Casts');
+goog.require('vmbootstrap.Exceptions');
+
+const TabBar = goog.require('org.gwtproject.user.client.ui.TabBar$impl');
+exports = TabBar; 

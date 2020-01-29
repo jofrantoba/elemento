@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasResizeHandlers.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;MAqBiB,iB;;;;;;;CAOK,qE,CAA+BA,O;;;;QAPpC,O;EAAAC,oC;EAAAA;",
+"sources":["HasResizeHandlers.java"],
+"names":["handler","org.gwtproject.event.logical.shared.HasResizeHandlers.<clinit>"]
+}

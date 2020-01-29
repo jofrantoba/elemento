@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ColumnSortEvent.impl.java.js",
+"lineCount":145,
+"mappings":"A;;;;;;;;;;;;;;;;MAiCa,e;;;;CAAA,W;EAAAA,Q;EAAAA;OAiJkB,gEAjJlBA,C;;;;;;;;QA6HmB,mG,CAAiBC,M,EAAuBC,Q;EAAxCC,0B;EAC5BA,IAAgBC,KAAhBD,yF;EACAA;GACEA,6DADFA;G;EAGAA,a;;;;;;QAQ0B,W;EAAAE,0B;EAC1BA;GACEA,+HADFA;G;EAGAA,oF;;;;;;;QAUQ,2D,CAA+BH,Q;EAA/BI,0B;EAAAA,sC;EAAAA,mI;EAAAA,iB;;;;;;CAAA,8G,CAA+BJ,Q;EAA/BK,kD;EACRA,iF;;;;;;;CAImB,qB;EACnBC,oF;;;;;;CAQkB,a;EAClBC,4S;;;;;;CAUoB,qB;EACpBC,6E;;;;;;CAQa,mB;EACbC,+S;;;;;;CAKa,uE,CAAiBC,O;EAC9BC,kF;;;;;;;;CAjMS,4B;EAAAA,gI;;;;;QAAA,O;EAAAC,kC;EAAAA,+B;EAAAA,gB;;;;;;;;;;;;;;;;;;;;;;;AAAA;gBAmHkB,4DAnHlB;",
+"sources":["ColumnSortEvent.java"],
+"names":["org.gwtproject.user.cellview.client.ColumnSortEvent.<synthetic: ctor_js>","source","sortList","org.gwtproject.user.cellview.client.ColumnSortEvent.fire","event","org.gwtproject.user.cellview.client.ColumnSortEvent.getType","org.gwtproject.user.cellview.client.ColumnSortEvent.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.ColumnSortEvent.<init>","org.gwtproject.user.cellview.client.ColumnSortEvent.getAssociatedType","org.gwtproject.user.cellview.client.ColumnSortEvent.getColumn","org.gwtproject.user.cellview.client.ColumnSortEvent.getColumnSortList","org.gwtproject.user.cellview.client.ColumnSortEvent.isSortAscending","handler","org.gwtproject.user.cellview.client.ColumnSortEvent.dispatch","org.gwtproject.user.cellview.client.ColumnSortEvent.<clinit>"]
+}

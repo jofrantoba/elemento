@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NamedFrame_IFrameTemplateImpl.impl.java.js",
+"lineCount":57,
+"mappings":"A;;;;;;;;;;;;;;MAKa,8B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,yC;EAAAA,qD;EAAAA,iF;EAAAA,iB;;;;;CAAA,oE;EAAAC,iC;;;;;;;;CAKoC,uB,CACxBC,I;EACrBC,IAAcC,EAAdD,6B;EACAA,oE;EACAA,kF;EACAA,oC;EACJA,mG;;;;;QAXa,O;EAAAE,iD;EAAAA,8C;EAAAA;",
+"sources":["NamedFrame_IFrameTemplateImpl.java"],
+"names":["org.gwtproject.user.client.ui.NamedFrame_IFrameTemplateImpl.<synthetic: ctor_js>","org.gwtproject.user.client.ui.NamedFrame_IFrameTemplateImpl.<synthetic: ctor_create>","org.gwtproject.user.client.ui.NamedFrame_IFrameTemplateImpl.<init>","arg0","org.gwtproject.user.client.ui.NamedFrame_IFrameTemplateImpl.get","sb","org.gwtproject.user.client.ui.NamedFrame_IFrameTemplateImpl.<clinit>"]
+}

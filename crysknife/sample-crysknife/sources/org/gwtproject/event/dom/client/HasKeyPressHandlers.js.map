@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasKeyPressHandlers.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;MAwBiB,mB;;;;;;;CAQK,qE,CAAmCA,O;;;;QARxC,O;EAAAC,sC;EAAAA;",
+"sources":["HasKeyPressHandlers.java"],
+"names":["handler","org.gwtproject.event.dom.client.HasKeyPressHandlers.<clinit>"]
+}

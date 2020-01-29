@@ -1,0 +1,30 @@
+goog.module('org.gwtproject.user.client.ui.UIObject');
+
+goog.require('java.lang.Object');
+goog.require('nativebootstrap.Util');
+goog.require('org.gwtproject.user.client.ui.HasVisibility');
+goog.require('java.lang.Float');
+goog.require('java.lang.IllegalArgumentException');
+goog.require('java.lang.RuntimeException');
+goog.require('java.lang.String');
+goog.require('java.lang.UnsupportedOperationException');
+goog.require('java.util.Arrays');
+goog.require('java.util.Locale');
+goog.require('java.util.stream.Collectors');
+goog.require('java.util.stream.Stream');
+goog.require('nativebootstrap.Equality');
+goog.require('org.gwtproject.core.client.JavaScriptObject.$Overlay');
+goog.require('org.gwtproject.debug.client.DebugInfo');
+goog.require('org.gwtproject.dom.client.Element.$Overlay');
+goog.require('org.gwtproject.dom.client.Style.$Overlay');
+goog.require('org.gwtproject.dom.style.shared.Display');
+goog.require('org.gwtproject.user.client.DOM');
+goog.require('org.gwtproject.user.client.ui.UIObject.DebugIdImpl');
+goog.require('org.gwtproject.user.client.ui.UIObject.DebugIdImplEnabled');
+goog.require('vmbootstrap.Arrays');
+goog.require('vmbootstrap.Asserts');
+goog.require('vmbootstrap.Casts');
+goog.require('vmbootstrap.Exceptions');
+
+const UIObject = goog.require('org.gwtproject.user.client.ui.UIObject$impl');
+exports = UIObject; 

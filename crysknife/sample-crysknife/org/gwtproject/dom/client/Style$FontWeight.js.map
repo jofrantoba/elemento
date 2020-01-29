@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Style$FontWeight.impl.java.js",
+"lineCount":99,
+"mappings":"A;;;;;;;;;;MAwLsB,gB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,2B;EAAAA,uC;EAAAA,gE;EAAAA,iB;;;;;CAAA,mD;EAAAC,iC;;;;;;QAClB,wD;EAAAC,4G;;;;;;QACA,sD;EAAAA,0G;;;;;;QACA,wD;EAAAA,4G;;;;;;QACA,yD;EAAAA,6G;;;;;QAJkB,O;EAAAC,mC;EAAAA,gC;EAAAA,qB;EAClBA,yI;EACAA,qI;EACAA,yI;EACAA,2I;;;;;;;;;;;;;;;;;;;;AAJkB;uE;AAAA;qE;AAAA;uE;AAAA;;",
+"sources":["Style.java"],
+"names":["org.gwtproject.dom.client.Style$FontWeight.<synthetic: ctor_js>","org.gwtproject.dom.client.Style$FontWeight.<synthetic: ctor_create>","org.gwtproject.dom.client.Style$FontWeight.<init>","org.gwtproject.dom.client.Style$FontWeight.<synthetic: getter>","org.gwtproject.dom.client.Style$FontWeight.<clinit>"]
+}

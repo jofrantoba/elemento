@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasKeyboardSelectionPolicy.impl.java.js",
+"lineCount":28,
+"mappings":"A;;;;;;;;;MAuBiB,0B;;;;;;CA6BS,8B;;;;;;CAQnB,oH,CAAmDA,M;;;;QArCzC,O;EAAAC,6C;EAAAA;",
+"sources":["HasKeyboardSelectionPolicy.java"],
+"names":["policy","org.gwtproject.user.cellview.client.HasKeyboardSelectionPolicy.<clinit>"]
+}

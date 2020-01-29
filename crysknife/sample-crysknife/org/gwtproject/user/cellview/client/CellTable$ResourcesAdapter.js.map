@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CellTable$ResourcesAdapter.impl.java.js",
+"lineCount":76,
+"mappings":"A;;;;;;;;;;;;;;MAqTuB,gB;;;;CAAA,W;EAAAA,Q;EAAAA;OAEe,4EAFfA,C;EAAAA;OAGQ,wEAHRA,C;;;;;;;QAKZ,gE,CAAqCC,S;EAArCC,2B;EAAAA,uC;EAAAA,oJ;EAAAA,iB;;;;;;CAAA,8H,CAAqCD,S;EAArCE,iC;EACLA,8F;EACAA,0L;;;;;;;CAImB,iB;EACnBC,sH;;;;;;;CAImB,kB;EACnBC,uH;;;;;;;CAI6B,S;EAC7BC,qF;;;;;QAtBiB,O;EAAAC,mC;EAAAA,gC;EAAAA;",
+"sources":["CellTable.java"],
+"names":["org.gwtproject.user.cellview.client.CellTable$ResourcesAdapter.<synthetic: ctor_js>","resources","org.gwtproject.user.cellview.client.CellTable$ResourcesAdapter.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.CellTable$ResourcesAdapter.<init>","org.gwtproject.user.cellview.client.CellTable$ResourcesAdapter.sortAscending","org.gwtproject.user.cellview.client.CellTable$ResourcesAdapter.sortDescending","org.gwtproject.user.cellview.client.CellTable$ResourcesAdapter.style","org.gwtproject.user.cellview.client.CellTable$ResourcesAdapter.<clinit>"]
+}

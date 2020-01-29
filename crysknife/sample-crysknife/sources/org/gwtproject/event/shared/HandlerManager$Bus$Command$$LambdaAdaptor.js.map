@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HandlerManager$Bus$Command$$LambdaAdaptor.impl.java.js",
+"lineCount":45,
+"mappings":"A;;;;;;;;;MAmW0B,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qF;EAAAA,0J;;;;;;CAAA,gJ;EAAAC,iC;EAAAA,wF;;;;;CAAA,W;;GAAAC,mG;GAAAA,Y;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["HandlerManager.java"],
+"names":["org.gwtproject.event.shared.HandlerManager$Bus$Command$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.shared.HandlerManager$Bus$Command$$LambdaAdaptor.<init>","org.gwtproject.event.shared.HandlerManager$Bus$Command$$LambdaAdaptor.execute","org.gwtproject.event.shared.HandlerManager$Bus$Command$$LambdaAdaptor.<clinit>"]
+}

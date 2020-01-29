@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DisclosurePanel$DefaultHeader.impl.java.js",
+"lineCount":176,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;MAyMgB,a;;;;CAAA,W;EAAAA,Q;EAAAA;kF;EAAAA;OAOU,uEAPVA,C;EAAAA;OASQ,yEATRA,C;EAAAA;OAUS,sEAVTA,C;;;;;;;;;QAYJ,wE,cAAqBC,I;EAArBC,oC;EAAAA,iK;EAAAA,iB;;;;;;;;CAAA,mI,cAAqBD,I;EAC3BE,iS;;;;;;;;;;QAgBM,8H,cAAqBC,M,EAAeH,I;EAApCC,oC;EAAAA,+N;EAAAA,iB;;;;;;;;;CAAA,yL,cAAqBE,M,EAAeH,I;EAApCE,8F;EAAAA,qD;EACNA,qF;EACAA,wG;EAGAA,IAAQE,IAARF,yB;EACAA,IAAQG,KAARH,yB;EACAA,IAAQI,EAARJ,sB;EACAA,IAAcK,OAAdL,sB;EACAA,kG;EAEAA,2D;EAEAA,qG;EACAA,mG;EACAA,qG;EACAA,0K;EAGAA,yI;EACAA,0I;EACAA,yO;EAEAA,kM;EAEAA,uC;EAEAA,oF;EACAA,sF;EACAA,mF;;;;;;;;;;;QAGM,sK,cAAkCM,S,EAClBC,W,EAAoBT,I;EADpCC,wB;EAAAA,oC;EAAAA,uR;EAAAA,iB;;;;;;;;;;CAAA,iO,cAAkCO,S,EAClBC,W,EAAoBT,I;EAC1CE,uZ;;;;;;;CAekB,W;EAClBQ,yJ;;;;;;;CAGgB,yD,CAAoCC,K;EACpDC,mF;;;;;;;CAGgB,uD,CAAkCD,K;EAClDE,mF;;;;;;;CAGgB,2B,CAAeb,I;EAC/Bc,0K;;;;;CAGW,2E;EACXC,kW;;;;;QA/FU,O;EAAAC,gC;EAAAA,6B;EAAAA;",
+"sources":["DisclosurePanel.java"],
+"names":["org.gwtproject.user.client.ui.DisclosurePanel$DefaultHeader.<synthetic: ctor_js>","text","org.gwtproject.user.client.ui.DisclosurePanel$DefaultHeader.<synthetic: ctor_create>","org.gwtproject.user.client.ui.DisclosurePanel$DefaultHeader.<init>","imager","root","tbody","tr","imageTD","openImage","closedImage","org.gwtproject.user.client.ui.DisclosurePanel$DefaultHeader.getText","event","org.gwtproject.user.client.ui.DisclosurePanel$DefaultHeader.onClose","org.gwtproject.user.client.ui.DisclosurePanel$DefaultHeader.onOpen","org.gwtproject.user.client.ui.DisclosurePanel$DefaultHeader.setText","org.gwtproject.user.client.ui.DisclosurePanel$DefaultHeader.setStyle","org.gwtproject.user.client.ui.DisclosurePanel$DefaultHeader.<clinit>"]
+}

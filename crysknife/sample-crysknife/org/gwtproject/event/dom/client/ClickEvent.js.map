@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ClickEvent.impl.java.js",
+"lineCount":100,
+"mappings":"A;;;;;;;;;;;;;MAoBa,U;;;;CAAA,W;EAAAA,Q;;;;;;QAUD,S;EAAAC,qB;EAAAA,iC;EAAAA,gE;EAAAA,iB;;;;;CAAA,mD;EAAAC,2D;;;;;;QAOuB,W;EAAAC,qB;EAC/BA,sE;;;;;;;CAI8B,qB;EAC9BC,sE;;;;;;CAIa,wD,CAAsBC,O;EACnCC,oE;;;;;;;;CA5BS,4B;EAAAA,2H;;;;;QAAA,O;EAAAC,6B;EAAAA,0B;EAAAA,qB;EAEXA,sQ;;;;;;;;;;;;;;;;;;;;;;;AAFW;WAG6B,mDAH7B;",
+"sources":["ClickEvent.java"],
+"names":["org.gwtproject.event.dom.client.ClickEvent.<synthetic: ctor_js>","org.gwtproject.event.dom.client.ClickEvent.<synthetic: ctor_create>","org.gwtproject.event.dom.client.ClickEvent.<init>","org.gwtproject.event.dom.client.ClickEvent.getType","org.gwtproject.event.dom.client.ClickEvent.getAssociatedType","handler","org.gwtproject.event.dom.client.ClickEvent.dispatch","org.gwtproject.event.dom.client.ClickEvent.<clinit>"]
+}

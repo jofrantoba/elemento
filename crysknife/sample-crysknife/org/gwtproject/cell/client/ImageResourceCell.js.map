@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ImageResourceCell.impl.java.js",
+"lineCount":98,
+"mappings":"A;;;;;;;;;;;;;;;;;MAwBa,iB;;;;CAAA,W;EAAAA,Q;;;;;;QAMJ,S;EAAAC,4B;EAAAA,wC;EAAAA,kE;EAAAA,iB;;;;;CAAA,qD;EAAAC,6I;EACLA;GACEA,gHADFA;G;;;;;;;;CAMU,gJ,CAAoBC,O,EAAuBC,K,EAAuBC,E;EAC5EC;GACEA,iMADFA;G;;;;;;;;;;CAdS,mH;EAAAA,iO;;;;;QAAA,O;EAAAC,oC;EAAAA,iC;EAAAA,uB;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;kBAC0B,yDAD1B;",
+"sources":["ImageResourceCell.java"],
+"names":["org.gwtproject.cell.client.ImageResourceCell.<synthetic: ctor_js>","org.gwtproject.cell.client.ImageResourceCell.<synthetic: ctor_create>","org.gwtproject.cell.client.ImageResourceCell.<init>","context","value","sb","org.gwtproject.cell.client.ImageResourceCell.render","org.gwtproject.cell.client.ImageResourceCell.<clinit>"]
+}

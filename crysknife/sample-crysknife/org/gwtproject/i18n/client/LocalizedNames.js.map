@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"LocalizedNames.impl.java.js",
+"lineCount":33,
+"mappings":"A;;;;;;;MAoBiB,c;;;;;;CAMN,wB;;;;;;;CAQF,iC,CAAqBA,U;;;;;;CAMnB,wB;;;;QApBM,O;EAAAC,iC;EAAAA;",
+"sources":["LocalizedNames.java"],
+"names":["regionCode","org.gwtproject.i18n.client.LocalizedNames.<clinit>"]
+}

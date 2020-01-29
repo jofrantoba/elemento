@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SuppressIsTrustedResourceUriCastCheck$$LambdaAdaptor.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;;;;MA4BkB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;+G;EAAAA,8M;;;;;;CAAA,oM;EAAAC,iC;EAAAA,kH;;;;;;CAAA,kB;EAAAC,0C;EAAAA,+I;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["SuppressIsTrustedResourceUriCastCheck.java"],
+"names":["org.gwtproject.safehtml.shared.annotations.SuppressIsTrustedResourceUriCastCheck$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.safehtml.shared.annotations.SuppressIsTrustedResourceUriCastCheck$$LambdaAdaptor.<init>","org.gwtproject.safehtml.shared.annotations.SuppressIsTrustedResourceUriCastCheck$$LambdaAdaptor.annotationType","org.gwtproject.safehtml.shared.annotations.SuppressIsTrustedResourceUriCastCheck$$LambdaAdaptor.<clinit>"]
+}

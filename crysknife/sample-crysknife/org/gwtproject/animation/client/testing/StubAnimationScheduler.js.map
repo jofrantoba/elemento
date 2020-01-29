@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"StubAnimationScheduler.impl.java.js",
+"lineCount":68,
+"mappings":"A;;;;;;;;;;;MA2Ba,sB;;;;CAAA,W;EAAAA,Q;EAAAA;OAE2B,4EAF3BA,C;;;;;;QAAA,S;EAAAC,iC;EAAAA,6C;EAAAA,oF;EAAAA,iB;;;;;CAAA,uE;EAAAC,mE;EAAAA,iF;;;;;;CASoB,yB;EAC7BC,yF;;;;;;;;;CAIyB,gI,CAAwCC,Q,EAAkBC,O;EACnFC,gG;EACAA,yL;;;;;CAhBS,yE;EAEXJ,wJ;;;;;QAFW,O;EAAAK,yC;EAAAA,sC;EAAAA;",
+"sources":["StubAnimationScheduler.java"],
+"names":["org.gwtproject.animation.client.testing.StubAnimationScheduler.<synthetic: ctor_js>","org.gwtproject.animation.client.testing.StubAnimationScheduler.<synthetic: ctor_create>","org.gwtproject.animation.client.testing.StubAnimationScheduler.<init>","org.gwtproject.animation.client.testing.StubAnimationScheduler.getAnimationCallbacks","callback","element","org.gwtproject.animation.client.testing.StubAnimationScheduler.requestAnimationFrame","org.gwtproject.animation.client.testing.StubAnimationScheduler.<clinit>"]
+}

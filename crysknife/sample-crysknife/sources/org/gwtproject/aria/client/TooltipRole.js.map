@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TooltipRole.impl.java.js",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MA0BiB,W;;;;QAAA,O;EAAAA,8B;EAAAA;",
+"sources":["TooltipRole.java"],
+"names":["org.gwtproject.aria.client.TooltipRole.<clinit>"]
+}

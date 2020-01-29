@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasClickHandlers.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;MAuBiB,gB;;;;;;;CAQK,+D,CAA6BA,O;;;;QARlC,O;EAAAC,mC;EAAAA;",
+"sources":["HasClickHandlers.java"],
+"names":["handler","org.gwtproject.event.dom.client.HasClickHandlers.<clinit>"]
+}

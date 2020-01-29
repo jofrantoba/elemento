@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"LoadedMetadataEvent.impl.java.js",
+"lineCount":100,
+"mappings":"A;;;;;;;;;;;;;MAwCa,mB;;;;CAAA,W;EAAAA,Q;;;;;;QAcD,S;EAAAC,8B;EAAAA,0C;EAAAA,yE;EAAAA,iB;;;;;CAAA,4D;EAAAC,yD;;;;;;QAOgC,W;EAAAC,8B;EACxCA,wF;;;;;;;CAIuC,qB;EACvCC,wF;;;;;;CAIa,iE,CAA+BC,O;EAC5CC,sF;;;;;;;;CAhCS,4B;EAAAA,sJ;;;;;QAAA,O;EAAAC,sC;EAAAA,mC;EAAAA,mB;EAEXA,mT;;;;;;;;;;;;;;;;;;;;;;;AAFW;oBAMsC,4DANtC;",
+"sources":["LoadedMetadataEvent.java"],
+"names":["org.gwtproject.event.dom.client.LoadedMetadataEvent.<synthetic: ctor_js>","org.gwtproject.event.dom.client.LoadedMetadataEvent.<synthetic: ctor_create>","org.gwtproject.event.dom.client.LoadedMetadataEvent.<init>","org.gwtproject.event.dom.client.LoadedMetadataEvent.getType","org.gwtproject.event.dom.client.LoadedMetadataEvent.getAssociatedType","handler","org.gwtproject.event.dom.client.LoadedMetadataEvent.dispatch","org.gwtproject.event.dom.client.LoadedMetadataEvent.<clinit>"]
+}

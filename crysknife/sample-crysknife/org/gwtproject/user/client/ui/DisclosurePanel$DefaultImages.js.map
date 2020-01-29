@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DisclosurePanel$DefaultImages.impl.java.js",
+"lineCount":73,
+"mappings":"A;;;;;;;;;;;;MAsFY,a;;;;;;CAKM,yB;;;;;;CAEA,uB;;;;;QALd,2E;EAAAA,yH;;;;;QAFQ,O;EAAAC,gC;EAAAA,6B;EAERA,wI;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFQ;;",
+"sources":["DisclosurePanel.java"],
+"names":["org.gwtproject.user.client.ui.DisclosurePanel$DefaultImages.<synthetic: getter>","org.gwtproject.user.client.ui.DisclosurePanel$DefaultImages.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AsyncDataProvider.impl.java.js",
+"lineCount":60,
+"mappings":"A;;;;;;;;;;;;;MA8BsB,iB;;;;CAAA,W;EAAAA,Q;;;;;;CAKV,qD;EACRC,0G;;;;;;;CASQ,2F,CAAiCC,W;EACzCD,iH;;;;;;;;CAIU,8B,CAAmBE,I,EAAcC,K;EAC3CC,kD;;;;;;;;CAIU,oC,CAAkBC,K,EAAeC,M;EAC3CC,0D;;;;;QA1BkB,O;EAAAC,oC;EAAAA,iC;EAAAA;",
+"sources":["AsyncDataProvider.java"],
+"names":["org.gwtproject.view.client.AsyncDataProvider.<synthetic: ctor_js>","org.gwtproject.view.client.AsyncDataProvider.<init>","keyProvider","size","exact","org.gwtproject.view.client.AsyncDataProvider.updateRowCount","start","values","org.gwtproject.view.client.AsyncDataProvider.updateRowData","org.gwtproject.view.client.AsyncDataProvider.<clinit>"]
+}

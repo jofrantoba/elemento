@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"GwtPotentialElementShim.impl.java.js",
+"lineCount":96,
+"mappings":"A;;;;;;;;;MAcM,uB;;;;CAiBF,W;EAAAA,kC;EAAAA,Q;EAAAA;OAfc,SAedA,C;EAAAA;OAdW,YAcXA,K;EAAAA;OAbW,WAaXA,K;EAAAA;OAZc,OAYdA,C;EAAAA;OAXc,GAWdA,C;EAAAA;OAVc,IAUdA,C;EAAAA;OATc,EASdA,C;EAAAA;OARc,IAQdA,C;EAAAA;OAPW,QAOXA,K;EAAAA;OANc,GAMdA,C;EAAAA;OALuB,KAKvBA,C;EAAAA;OAJc,KAIdA,C;EAAAA;OAHU,aAGVA,C;EAAAA,sE;;;;;CAAA,8D;EAAAA,wE;;;;;;;CAIc,Y,CAAoBC,I;EAC9BC,iI;;;;;;CAGQ,e,CAAuBD,I;EAC/BE,kJ;;;;;;;CAGQ,Y,CAAoBF,I,EAAaG,K;EACzCC,mJ;;;;;CA9BF,gE;EAEFL,oB;EACAA,sB;EACAA,qB;EACAA,kB;EACAA,c;EACAA,e;EACAA,a;EACAA,e;EACAA,kB;EACAA,c;EACAA,yD;EACAA,gB;;;;;QAbE,O;EAAAM,0C;EAAAA;",
+"sources":["GwtPotentialElementShim.java"],
+"names":["org.gwtproject.user.client.ui.GwtPotentialElementShim.<init>","name","org.gwtproject.user.client.ui.GwtPotentialElementShim.getAttribute","org.gwtproject.user.client.ui.GwtPotentialElementShim.removeAttribute","value","org.gwtproject.user.client.ui.GwtPotentialElementShim.setAttribute","org.gwtproject.user.client.ui.GwtPotentialElementShim.<clinit>"]
+}

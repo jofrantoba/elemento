@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"StorageEstimate$$Overlay.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;MAyBiB,wB;;;;;QAEQ,U;EAAAA,mC;EACrBA,+F;;;;;QAHa,O;EAAAC,2C;EAAAA;",
+"sources":["StorageEstimate.java"],
+"names":["elemental2.dom.StorageEstimate$$Overlay.create","elemental2.dom.StorageEstimate$$Overlay.<clinit>"]
+}

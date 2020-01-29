@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ImageLoadingCell_TemplateImpl.impl.java.js",
+"lineCount":84,
+"mappings":"A;;;;;;;;;;;;;;;MAKa,8B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,yC;EAAAA,qD;EAAAA,8E;EAAAA,iB;;;;;CAAA,iE;EAAAC,iC;;;;;;;;CAKoC,gD,CACDC,I;EAC5CC,IAAcC,EAAdD,6B;EACAA,qF;EACAA,mD;EACAA,wC;EACJA,mG;;;;;;;;CAO+C,uB,CACxBD,I;EACrBG,IAAcD,EAAdC,6B;EACAA,6C;EACAA,4H;EACAA,sC;EACFA,mG;;;;;;;;CAO+C,kD,CACDH,I;EAC5CI,IAAcF,EAAdE,6B;EACAA,uC;EACAA,mD;EACAA,wC;EACFA,mG;;;;;QArCa,O;EAAAC,iD;EAAAA,8C;EAAAA;",
+"sources":["ImageLoadingCell_TemplateImpl.java"],
+"names":["org.gwtproject.cell.client.ImageLoadingCell_TemplateImpl.<synthetic: ctor_js>","org.gwtproject.cell.client.ImageLoadingCell_TemplateImpl.<synthetic: ctor_create>","org.gwtproject.cell.client.ImageLoadingCell_TemplateImpl.<init>","arg0","org.gwtproject.cell.client.ImageLoadingCell_TemplateImpl.image","sb","org.gwtproject.cell.client.ImageLoadingCell_TemplateImpl.img","org.gwtproject.cell.client.ImageLoadingCell_TemplateImpl.loading","org.gwtproject.cell.client.ImageLoadingCell_TemplateImpl.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"LinkRole.impl.java.js",
+"lineCount":39,
+"mappings":"A;;;;;;;;;;;;MA4BiB,Q;;;;;;;CAOR,yD,CAA6BA,O;;;;;;CAM/B,4D,CAAgCA,O;;;;;;;CAMhC,mG,CAA6BA,O,EAAuBC,K;;;;QAnB1C,O;EAAAC,2B;EAAAA;",
+"sources":["LinkRole.java"],
+"names":["element","value","org.gwtproject.aria.client.LinkRole.<clinit>"]
+}

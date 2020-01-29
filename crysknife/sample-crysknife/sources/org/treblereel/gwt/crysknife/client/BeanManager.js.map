@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"BeanManager.impl.java.js",
+"lineCount":40,
+"mappings":"A;;;;;;;;;;MAQiB,W;;;;;;CAER,+B,CAAmBA,G;;;;;;;;;CAER,8C,CAAuBC,I,EAAkCC,S;;;;;;;;CAEzD,6B,CAAuBD,I;;;;QAN1B,O;EAAAE,8B;EAAAA;",
+"sources":["BeanManager.java"],
+"names":["ref","type","qualifier","org.treblereel.gwt.crysknife.client.BeanManager.<clinit>"]
+}

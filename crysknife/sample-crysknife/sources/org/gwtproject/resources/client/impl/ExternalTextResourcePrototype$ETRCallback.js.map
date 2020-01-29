@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ExternalTextResourcePrototype$ETRCallback.impl.java.js",
+"lineCount":114,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;MAqHgB,W;;;;CAAA,W;EAAAA,Q;EAAAA;qG;EAAAA;OACyB,0FADzBA,C;;;;;;;;QAGL,6H,cAA2CC,Q;EAA3CC,sB;EAAAA,kC;EAAAA,6O;EAAAA,iB;;;;;;;CAAA,2M,cAA2CD,Q;EAA3CE,iH;EAAAA,iC;EACLA,2G;;;;;;;;CAIU,kE,CAAgBC,O,EAAmBC,S;EAC7CC,iD;;;;;;;CAIU,gC,CAAoBD,S;EAC9BE,ya;;;;;;;;CAQU,6F,CAA2BH,O,EAAwBI,Q;EAC7DC,IAAOC,YAAPD,0B;EAEAA,IAASE,GAATF,8E;EACAA,gD;;;;;;CAIU,qC,CAAmBE,G;EAC7BC;GACEA,yXADFA;GAGEA,OAHFA;G;EAOAA,IAAaC,YAAbD,sQ;EACAA,if;EAaAA,igB;;;;;;;;CApDU,6B;EAAAA,8F;;;;;QAAA,O;EAAAE,8B;EAAAA,2B;EAAAA;",
+"sources":["ExternalTextResourcePrototype.java"],
+"names":["org.gwtproject.resources.client.impl.ExternalTextResourcePrototype$ETRCallback.<synthetic: ctor_js>","callback","org.gwtproject.resources.client.impl.ExternalTextResourcePrototype$ETRCallback.<synthetic: ctor_create>","org.gwtproject.resources.client.impl.ExternalTextResourcePrototype$ETRCallback.<init>","request","exception","org.gwtproject.resources.client.impl.ExternalTextResourcePrototype$ETRCallback.onError","org.gwtproject.resources.client.impl.ExternalTextResourcePrototype$ETRCallback.onFailure","response","org.gwtproject.resources.client.impl.ExternalTextResourcePrototype$ETRCallback.onResponseReceived","responseText","jso","org.gwtproject.resources.client.impl.ExternalTextResourcePrototype$ETRCallback.onSuccess","resourceText","org.gwtproject.resources.client.impl.ExternalTextResourcePrototype$ETRCallback.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"UiBinderUtil.impl.java.js",
+"lineCount":113,
+"mappings":"A;;;;;;;;;;;;;MA4Ba,Y;;;;CAAA,W;EAAAA,Q;;;;;;;QAyCkB,gD,CAAoBC,O;EAApBC,uB;EAE3BA,mC;EAIAA,IAAQC,UAARD,iF;EACAA,IAAQE,WAARF,iG;EAGAA,4F;EAEAA,yK;;;;;;;QAGoB,4B,CAA4BG,I;EAA5BC,uB;EACpBA,mC;EACAA,4K;EACAA,IAAQC,MAARD,+J;EACAA,8D;EACAA,c;;;;;QAGkB,mB;EAElBE;GACEA,wLADFA;GAEEA,sPAFFA;GAGEA,qHAHFA;G;;;;;;QAOkB,wC,CAAYC,I;EAAZC,uB;EAClBA,kC;;;;;;QAMM,S;EAAAC,mC;EAAAA,iE;EAAAA,iB;;;;;CAAA,oD;EAAAC,iC;;;;;QAhFG,O;EAAAC,+B;EAAAA,4B;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;aAgCY,yDAhCZ;",
+"sources":["UiBinderUtil.java"],
+"names":["org.gwtproject.uibinder.client.UiBinderUtil.<synthetic: ctor_js>","element","org.gwtproject.uibinder.client.UiBinderUtil.attachToDom","origParent","origSibling","html","org.gwtproject.uibinder.client.UiBinderUtil.fromHtml","newbie","org.gwtproject.uibinder.client.UiBinderUtil.ensureHiddenDiv","node","org.gwtproject.uibinder.client.UiBinderUtil.orphan","org.gwtproject.uibinder.client.UiBinderUtil.<synthetic: ctor_create>","org.gwtproject.uibinder.client.UiBinderUtil.<init>","org.gwtproject.uibinder.client.UiBinderUtil.<clinit>"]
+}

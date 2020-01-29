@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"LazyPanel.impl.java.js",
+"lineCount":79,
+"mappings":"A;;;;;;;;;;;;;;MAyBsB,S;;;;CAAA,W;EAAAA,Q;;;;;CAEb,gD;EAAAC,0D;;;;;;;CAQmB,gB;;;;CAQd,gB;EACVC,IAAOC,MAAPD,wB;EACAA;GACEA,iCADFA;GAEEA,+DAFFA;G;;;;;;;CAeU,qB,CAAmBE,O;EAC7BC;GACEA,wBADFA;G;EAGAA,qC;;;;;;;;CAvCkB,sC;EAAAC,0F;;;;;;;;CAAA,e;EAAAC,sG;;;;;QAAA,O;EAAAC,4B;EAAAA,yB;EAAAA;",
+"sources":["LazyPanel.java"],
+"names":["org.gwtproject.user.client.ui.LazyPanel.<synthetic: ctor_js>","org.gwtproject.user.client.ui.LazyPanel.<init>","org.gwtproject.user.client.ui.LazyPanel.ensureWidget","widget","visible","org.gwtproject.user.client.ui.LazyPanel.setVisible","org.gwtproject.user.client.ui.LazyPanel.forEach","org.gwtproject.user.client.ui.LazyPanel.spliterator","org.gwtproject.user.client.ui.LazyPanel.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TouchScroller$MomentumCommand$1.impl.java.js",
+"lineCount":55,
+"mappings":"A;;;;;;;;;;;;MA2HwE,E;;;;CAAA,W;EAAAA,Q;EAAAA;kF;;;;;;;QAAA,kE;EAAAC,a;EAAAA,yB;EAAAA,qJ;EAAAA,iB;;;;;;CAAA,6H;EAAAC,8F;EAAAA,iC;;;;;;;CACpD,2D,CAAqBC,K;EAC/BC,0J;;;;;QAF8D,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["TouchScroller.java"],
+"names":["org.gwtproject.touch.client.TouchScroller$MomentumCommand$1.<synthetic: ctor_js>","org.gwtproject.touch.client.TouchScroller$MomentumCommand$1.<synthetic: ctor_create>","org.gwtproject.touch.client.TouchScroller$MomentumCommand$1.<init>","event","org.gwtproject.touch.client.TouchScroller$MomentumCommand$1.onResize","org.gwtproject.touch.client.TouchScroller$MomentumCommand$1.<clinit>"]
+}

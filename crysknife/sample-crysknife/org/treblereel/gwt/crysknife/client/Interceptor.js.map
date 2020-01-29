@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Interceptor.impl.java.js",
+"lineCount":84,
+"mappings":"A;;;;;;;;;;;;MAWa,W;;;;CAAA,W;EAAAA,Q;EAAAA;OAGK,yDAHLA,C;EAAAA;OAKmB,uDALnBA,C;EAAAA;OAOmB,uDAPnBA,C;;;;;;;QASF,yB,CAAmBC,M;EAAnBC,sB;EAAAA,kC;EAAAA,2F;EAAAA,iB;;;;;;CAAA,wE,CAAmBD,M;EAAnBE,iC;EACHA,qH;EACAA,qH;EACAA,IAAcC,MAAdD,uD;EACAA,uK;EACAA,uK;EAEAA,2F;;;;;;;;CAGe,4E,CAAiCE,sB,EAA2DC,U;EAC3GC,8O;EACAA,Y;;;;;;;;CAGe,0E,CAA+BF,sB,EAAmCC,U;EACjFE,4O;EACAA,Y;;;;;;;CAGS,Y;EACTC,8H;;;;;QA9BK,O;EAAAC,8B;EAAAA,2B;EAAAA;",
+"sources":["Interceptor.java"],
+"names":["org.treblereel.gwt.crysknife.client.Interceptor.<synthetic: ctor_js>","target","org.treblereel.gwt.crysknife.client.Interceptor.<synthetic: ctor_create>","org.treblereel.gwt.crysknife.client.Interceptor.<init>","holder","obfuscatedPropertyName","function","org.treblereel.gwt.crysknife.client.Interceptor.addGetPropertyInterceptor","org.treblereel.gwt.crysknife.client.Interceptor.addGetMethodInterceptor","org.treblereel.gwt.crysknife.client.Interceptor.getProxy","org.treblereel.gwt.crysknife.client.Interceptor.<clinit>"]
+}

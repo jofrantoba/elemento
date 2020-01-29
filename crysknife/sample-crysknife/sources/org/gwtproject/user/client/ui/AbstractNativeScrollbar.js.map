@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AbstractNativeScrollbar.impl.java.js",
+"lineCount":163,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;MAgCsB,uB;;;;CAAA,W;EAAAA,Q;;;;;CAAA,8D;EAAAC,qD;;;;;;QAeF,4B;EAAAC,kC;EAChBA,kE;EACAA,sG;;;;;;QAYgB,2B;EAAAC,kC;EAChBA,kE;EACAA,qG;;;;;;QASoB,+B;EAAAC,kC;EACpBA,kE;EACAA,mG;;;;;QAMkB,uC;EAElBC;GACEA,OADFA;G;EAKAA,IAAQC,UAARD,gG;EACAA,kM;EACAA,4L;EACAA,6L;EACAA,6L;EACAA,4L;EACAA,gM;EACAA,iJ;EACAA,gD;EAGAA,IAAQE,OAARF,gG;EACAA,kH;EACAA,gC;EAGAA,yR;EACAA,sR;EACAA,qR;EAGAA,sF;;;;;;;;CAGyB,iE,CAA+BG,O;EAExDC,gJ;EACAA,uH;;;;;;;CAQyB,wB;;;;;CAGZ,Y;EACbC,qB;EAMAA,6I;;;;;;CAIa,Y;EAKbC,6I;EAEAA,qB;;;;;QA/GkB,O;EAAAC,0C;EAAAA,uC;EAAAA,iB;EAEpBA,oG;EACAA,mG;EACAA,oG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAJoB;wBAED,sEAFC,K;AAAA;wBAGD,qEAHC,K;AAAA;wBAIG,mEAJH;",
+"sources":["AbstractNativeScrollbar.java"],
+"names":["org.gwtproject.user.client.ui.AbstractNativeScrollbar.<synthetic: ctor_js>","org.gwtproject.user.client.ui.AbstractNativeScrollbar.<init>","org.gwtproject.user.client.ui.AbstractNativeScrollbar.getNativeScrollbarHeight","org.gwtproject.user.client.ui.AbstractNativeScrollbar.getNativeScrollbarWidth","org.gwtproject.user.client.ui.AbstractNativeScrollbar.isScrollbarLeftAlignedInRtl","org.gwtproject.user.client.ui.AbstractNativeScrollbar.maybeRecalculateNativeScrollbarSize","scrollable","content","handler","org.gwtproject.user.client.ui.AbstractNativeScrollbar.addScrollHandler","org.gwtproject.user.client.ui.AbstractNativeScrollbar.onAttach","org.gwtproject.user.client.ui.AbstractNativeScrollbar.onDetach","org.gwtproject.user.client.ui.AbstractNativeScrollbar.<clinit>"]
+}

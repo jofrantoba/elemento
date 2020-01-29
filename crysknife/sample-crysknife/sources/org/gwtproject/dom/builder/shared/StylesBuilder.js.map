@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"StylesBuilder.impl.java.js",
+"lineCount":429,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;MA+BiB,a;;;;;;;CASD,yD,CAAwBA,G;;;;;;;CAKxB,0D,CAAwBC,K;;;;;;;;CAKxB,2D,CAAmBA,K,EAAYC,I;;;;;;;;CAK/B,sD,CAAcD,K,EAAYC,I;;;;;;;CAK1B,gD,CAAcD,K;;;;;;;CAKd,kD,CAAgBA,K;;;;;CAOzB,Y;;;;;;;CAKS,kD,CAAgBA,K;;;;;;;;CAKhB,wD,CAAgBA,K,EAAYC,I;;;;;;;CAK5B,sD,CAAoBD,K;;;;;;;CAKpB,wD,CAAsBA,K;;;;;;;;CAKtB,sD,CAAcA,K,EAAYC,I;;;;;;;;CAK1B,oD,CAAYD,K,EAAYC,I;;;;;;;;CAKxB,0D,CAAkBD,K,EAAYC,I;;;;;;;CAK9B,8D,CAA4BD,K;;;;;;;;CAK5B,sD,CAAcA,K,EAAYC,I;;;;;;;;CAK1B,4D,CAAoBD,K,EAAYC,I;;;;;;;;CAKhC,0D,CAAkBD,K,EAAYC,I;;;;;;;;CAK9B,2D,CAAmBD,K,EAAYC,I;;;;;;;;CAK/B,yD,CAAiBD,K,EAAYC,I;;;;;;;CAK7B,iB,CAAeD,K;;;;;;;CAKf,4D,CAA0BA,K;;;;;;;;CAK1B,4D,CAAoBA,K,EAAYC,I;;;;;;;CAKhC,oD,CAAkBD,K;;;;;;;CAKlB,qD,CAAmBA,K;;;;;;;CAKnB,qD,CAAmBA,K;;;;;;;;CAKnB,uD,CAAeA,K,EAAYC,I;;;;;;;;CAK3B,6D,CAAqBD,K,EAAYC,I;;;;;;;;CAKjC,2D,CAAmBD,K,EAAYC,I;;;;;;;;CAK/B,4D,CAAoBD,K,EAAYC,I;;;;;;;;CAKhC,0D,CAAkBD,K,EAAYC,I;;;;;;;CAK9B,oD,CAAkBD,K;;;;;;;;CAKlB,qD,CAAaA,K,EAAYC,I;;;;;;;CAKzB,0D,CAAwBD,K;;;;;;;CAKxB,sD,CAAoBA,K;;;;;;;CAKpB,gE,CAA8BA,K;;;;;;;;CAK9B,0D,CAAkBA,K,EAAYC,I;;;;;;;CAK9B,0D,CAAwBD,K;;;;;;;CAKxB,4D,CAA0BA,K;;;;;;;CAK1B,8D,CAA4BA,K;;;;;;;;CAK5B,mD,CAAWA,K,EAAYC,I;;;;;;;CAiBvB,0C,CAA8BD,K;;;;;;;CAiB9B,0C,CAAyCA,K;;;;;;;CAiBzC,sC,CAA0BA,K;;;;;;;CAiB1B,gC,CAAoBA,K;;;;;;;CAiBpB,uC,CAA2BA,K;;;;;;;;;CAqB3B,iF,CAAuBE,I,EAAaF,K,EAAYC,I;;;;;;;;CAoBhD,qD,CAAuBC,I,EAAaF,K;;;;;;;;CAKpC,6D,CAAqBA,K,EAAYC,I;;;;;;;CAKjC,8D,CAA4BD,K;;;;;;;CAK5B,wD,CAAsBA,K;;;;;;;;CAKtB,qD,CAAaA,K,EAAYC,I;;;;;;;CAKzB,a,CAAWD,K;;;;QA1WV,O;EAAAG,gC;EAAAA;",
+"sources":["StylesBuilder.java"],
+"names":["uri","value","unit","name","org.gwtproject.dom.builder.shared.StylesBuilder.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DockPanel$LayoutData.impl.java.js",
+"lineCount":65,
+"mappings":"A;;;;;;;;;;MA+De,U;;;;CAAA,W;EAAAA,Q;EAAAA;OACe,+DADfA,C;EAAAA;OAEG,4DAFHA,C;EAAAA;OAGG,4DAHHA,C;EAAAA;OAII,wDAJJA,C;EAAAA;OAKG,4DALHA,C;EAAAA;OAMG,2DANHA,C;;;;;;;QAQJ,mE,CAA8BC,G;EAA9BC,qB;EAAAA,iC;EAAAA,qI;EAAAA,iB;;;;;;CAAA,qH,CAA8BD,G;EAA9BE,iC;EAAAA,qE;EACLA,2E;;;;;CATS,6D;EAEXA,0L;EACAA,uE;EAEAA,sL;EACAA,sE;;;;;QANW,O;EAAAC,6B;EAAAA,0B;EAAAA;",
+"sources":["DockPanel.java"],
+"names":["org.gwtproject.user.client.ui.DockPanel$LayoutData.<synthetic: ctor_js>","dir","org.gwtproject.user.client.ui.DockPanel$LayoutData.<synthetic: ctor_create>","org.gwtproject.user.client.ui.DockPanel$LayoutData.<init>","org.gwtproject.user.client.ui.DockPanel$LayoutData.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"GestureEndEvent.impl.java.js",
+"lineCount":116,
+"mappings":"A;;;;;;;;;;;;;;MAoBa,e;;;;CAAA,W;EAAAA,Q;;;;;;QAWD,S;EAAAC,0B;EAAAA,sC;EAAAA,qE;EAAAA,iB;;;;;CAAA,wD;EAAAC,yD;;;;;;QAO4B,W;EAAAC,0B;EACpCA,gF;;;;;;;CAImC,qB;EACnCC,gF;;;;;;CAGY,e;EACZC,yG;;;;;;CAGY,Y;EACZC,sG;;;;;;CAIa,6D,CAA2BC,O;EACxCC,8E;;;;;;;;CArCS,4B;EAAAA,0I;;;;;QAAA,O;EAAAC,kC;EAAAA,+B;EAAAA,mB;EAEXA,+R;;;;;;;;;;;;;;;;;;;;;;;;AAFW;gBAGkC,wDAHlC;",
+"sources":["GestureEndEvent.java"],
+"names":["org.gwtproject.event.dom.client.GestureEndEvent.<synthetic: ctor_js>","org.gwtproject.event.dom.client.GestureEndEvent.<synthetic: ctor_create>","org.gwtproject.event.dom.client.GestureEndEvent.<init>","org.gwtproject.event.dom.client.GestureEndEvent.getType","org.gwtproject.event.dom.client.GestureEndEvent.getAssociatedType","org.gwtproject.event.dom.client.GestureEndEvent.getRotation","org.gwtproject.event.dom.client.GestureEndEvent.getScale","handler","org.gwtproject.event.dom.client.GestureEndEvent.dispatch","org.gwtproject.event.dom.client.GestureEndEvent.<clinit>"]
+}

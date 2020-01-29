@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ListDataProvider$ListWrapper$1.impl.java.js",
+"lineCount":60,
+"mappings":"A;;;;;;;;;;;;MA2KmE,E;;;;CAAA,W;EAAAA,Q;EAAAA;gF;;;;;;;;QAAA,gE;EAAAC,a;EAAAA,yB;EAAAA,iJ;EAAAA,iB;;;;;;CAAA,yH;EAAAC,4F;EAAAA,iC;;;;;;CAEjD,W;EACVC,+J;EACAA;GACEA,iKADFA;GAEEA,OAFFA;G;EAIAA,wJ;;;;;QAR2D,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["ListDataProvider.java"],
+"names":["org.gwtproject.view.client.ListDataProvider$ListWrapper$1.<synthetic: ctor_js>","org.gwtproject.view.client.ListDataProvider$ListWrapper$1.<synthetic: ctor_create>","org.gwtproject.view.client.ListDataProvider$ListWrapper$1.<init>","org.gwtproject.view.client.ListDataProvider$ListWrapper$1.execute","org.gwtproject.view.client.ListDataProvider$ListWrapper$1.<clinit>"]
+}

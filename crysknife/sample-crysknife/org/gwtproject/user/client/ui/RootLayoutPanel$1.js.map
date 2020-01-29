@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"RootLayoutPanel$1.impl.java.js",
+"lineCount":55,
+"mappings":"A;;;;;;;;;;;;MAiEgD,E;;;;CAAA,W;EAAAA,Q;EAAAA;sE;;;;;;;QAAA,sD;EAAAC,a;EAAAA,yB;EAAAA,6H;EAAAA,iB;;;;;;CAAA,qG;EAAAC,kF;EAAAA,iC;;;;;;;CAC9B,2D,CAAqBC,K;EAC/BC,mF;;;;;QAFwC,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["RootLayoutPanel.java"],
+"names":["org.gwtproject.user.client.ui.RootLayoutPanel$1.<synthetic: ctor_js>","org.gwtproject.user.client.ui.RootLayoutPanel$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.RootLayoutPanel$1.<init>","event","org.gwtproject.user.client.ui.RootLayoutPanel$1.onResize","org.gwtproject.user.client.ui.RootLayoutPanel$1.<clinit>"]
+}

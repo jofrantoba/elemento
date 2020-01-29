@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NativeVerticalScrollbar_ResourcesImpl.impl.java.js",
+"lineCount":143,
+"mappings":"A;;;;;;;;;;;;;;;;;;MAIa,sC;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,iD;EAAAA,6D;EAAAA,yF;EAAAA,iB;;;;;CAAA,4E;EAAAC,iC;;;;;CAEE,kH;EACXC,qO;;;;;;;CA8BmC,gC;EACnCC,yD;;;;;;CAKyB,gB;EACzBC,6H;;;;;;;CAIuB,+B,CAAmBC,I;EACxCC;GACEA,sMADFA;GAEEA,wMAFFA;G;EAIAA,6M;;;;;;QAhDJ,sF;EAAAC,sL;;;;;;QAAA,sF;EAAAC,uL;;;;;;QAoCA,wG;EAAAD,wM;;;;;;QAAA,wG;EAAAC,yM;;;;;QArCW,O;EAAAC,yD;EAAAA,sD;EAAAA,qB;EACXA,gL;;;;;;;;;;;;;;;;;;;;;;;;;;;;AADW;2H;AAAA;uCAoCiD,mFApCjD,C;AAAA;;",
+"sources":["NativeVerticalScrollbar_ResourcesImpl.java"],
+"names":["org.gwtproject.user.client.ui.NativeVerticalScrollbar_ResourcesImpl.<synthetic: ctor_js>","org.gwtproject.user.client.ui.NativeVerticalScrollbar_ResourcesImpl.<synthetic: ctor_create>","org.gwtproject.user.client.ui.NativeVerticalScrollbar_ResourcesImpl.<init>","org.gwtproject.user.client.ui.NativeVerticalScrollbar_ResourcesImpl.nativeVerticalScrollbarStyleInitializer","org.gwtproject.user.client.ui.NativeVerticalScrollbar_ResourcesImpl.nativeVerticalScrollbarStyle","org.gwtproject.user.client.ui.NativeVerticalScrollbar_ResourcesImpl.getResources","name","org.gwtproject.user.client.ui.NativeVerticalScrollbar_ResourcesImpl.getResource","org.gwtproject.user.client.ui.NativeVerticalScrollbar_ResourcesImpl.<synthetic: getter>","org.gwtproject.user.client.ui.NativeVerticalScrollbar_ResourcesImpl.<synthetic: setter>","org.gwtproject.user.client.ui.NativeVerticalScrollbar_ResourcesImpl.<clinit>"]
+}

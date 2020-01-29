@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"URL.impl.java.js",
+"lineCount":149,
+"mappings":"A;;;;;;;;;;MA2BmB,G;;;;CAAA,W;EAAAA,Q;;;;;;;QAUI,0B,CAAcC,U;EAAdC,c;EACnBA,4F;EACAA,sD;;;;;;;QAWmB,qC,CAAyBC,mB;EAAzBC,c;EACnBA,8G;EACAA,0E;;;;;;;QAcmB,qC,CAAyBD,mB;EAAzBE,c;EACnBA,8G;EACAA,0E;;;;;;;QA0BmB,0B,CAAcC,U;EAAdC,c;EACnBA,4F;EACAA,sD;;;;;;;QA0BmB,qC,CAAyBC,mB;EAAzBC,c;EACnBA,8G;EACAA,0E;;;;;;;QA6BmB,qC,CAAyBD,mB;EAAzBE,c;EACnBA,8G;EACAA,0E;;;;;;;QAGoB,8B,CAAkBT,U;EACtCU,oC;;;;;;;QAGoB,yC,CAA6BR,mB;EACjDS,sD;;;;;;;QAGoB,yC,CAA6BT,mB;EACjDU,IAASC,MAATD,0B;EACAA,kP;;;;;;;QAGoB,8B,CAAkBP,U;EACtCS,oC;;;;;;;QAGoB,yC,CAA6BP,mB;EACjDQ,sD;;;;;;;QAGoB,yC,CAA6BR,mB;EACjDS,IAASH,MAATG,0B;EACAA,gP;;;;;;QAGM,S;EAAAC,0B;EAAAA,oD;EAAAA,iB;;;;;CAAA,uC;EAAAC,iC;;;;;QA7JS,O;EAAAC,sB;EAAAA,mB;EAAAA;",
+"sources":["URL.java"],
+"names":["org.gwtproject.http.client.URL.<synthetic: ctor_js>","encodedURL","org.gwtproject.http.client.URL.decode","encodedURLComponent","org.gwtproject.http.client.URL.decodePathSegment","org.gwtproject.http.client.URL.decodeQueryString","decodedURL","org.gwtproject.http.client.URL.encode","decodedURLComponent","org.gwtproject.http.client.URL.encodePathSegment","org.gwtproject.http.client.URL.encodeQueryString","org.gwtproject.http.client.URL.decodeImpl","org.gwtproject.http.client.URL.decodePathSegmentImpl","org.gwtproject.http.client.URL.decodeQueryStringImpl","regexp","org.gwtproject.http.client.URL.encodeImpl","org.gwtproject.http.client.URL.encodePathSegmentImpl","org.gwtproject.http.client.URL.encodeQueryStringImpl","org.gwtproject.http.client.URL.<synthetic: ctor_create>","org.gwtproject.http.client.URL.<init>","org.gwtproject.http.client.URL.<clinit>"]
+}

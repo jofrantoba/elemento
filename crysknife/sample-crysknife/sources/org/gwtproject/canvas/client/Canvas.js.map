@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Canvas.impl.java.js",
+"lineCount":165,
+"mappings":"A;;;;;;;;;;;;;;;;MAgCa,M;;;;CAAA,W;EAAAA,Q;;;;;;QAOU,qB;EAAAC,iB;EACnBA,IAAcC,OAAdD,mG;EACAA;GACEA,YADFA;G;EAGAA,wE;;;;;;;QAamB,+C,CAAmBC,O;EAAnBC,iB;EACnBA;GACEA,YADFA;G;EAGAA,0J;EACAA,IAAOC,MAAPD,oE;EAGAA,sB;EACAA,8E;EAEAA,c;;;;;;QAQoB,e;EAAAE,iB;EACpBA,sK;;;;;;;QAGqB,sD,CAA0BH,O;EAC/CG,qF;;;;;;;QAMM,gD,CAAqBH,O;EAArBI,6B;EAAAA,uG;EAAAA,iB;;;;;;CAAA,mF,CAAqBJ,O;EAArBK,0D;EACNA,8D;;;;;;CAQmB,oB;EACnBC,gL;;;;;;;CASa,8B,CAAkBC,S;EAC/BC,yD;;;;;;CAUe,gB;EACfC,4H;;;;;;CASS,4B;EACTC,0C;;;;;;CASS,2B;EACTC,yC;;;;;;CASU,+B,CAA6BC,M;EACvCC,4C;;;;;;CASU,8B,CAA4BC,K;EACtCC,0C;;;;;;CAQY,a;EACZC,+C;;;;;;;CAWY,6B,CAAiBC,I;EAC7BD,mD;;;;;;;QAUqB,6D,CAAiChB,O;EACtDkB,2I;;;;;QA9JS,O;EAAAC,yB;EAAAA,sB;EAAAA;",
+"sources":["Canvas.java"],
+"names":["org.gwtproject.canvas.client.Canvas.<synthetic: ctor_js>","org.gwtproject.canvas.client.Canvas.createIfSupported","element","org.gwtproject.canvas.client.Canvas.wrap","canvas","org.gwtproject.canvas.client.Canvas.isSupported","org.gwtproject.canvas.client.Canvas.<synthetic: ctor_create>","org.gwtproject.canvas.client.Canvas.<init>","org.gwtproject.canvas.client.Canvas.getCanvasElement","contextId","org.gwtproject.canvas.client.Canvas.getContext","org.gwtproject.canvas.client.Canvas.getContext2d","org.gwtproject.canvas.client.Canvas.getCoordinateSpaceHeight","org.gwtproject.canvas.client.Canvas.getCoordinateSpaceWidth","height","org.gwtproject.canvas.client.Canvas.setCoordinateSpaceHeight","width","org.gwtproject.canvas.client.Canvas.setCoordinateSpaceWidth","org.gwtproject.canvas.client.Canvas.toDataUrl","type","org.gwtproject.canvas.client.Canvas.isSupportedRunTime","org.gwtproject.canvas.client.Canvas.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"MenuItemSeparator.impl.java.js",
+"lineCount":80,
+"mappings":"A;;;;;;;;MAwBa,iB;;;;CAAA,W;EAAAA,Q;EAAAA;OAIK,8DAJLA,C;;;;;;QASJ,S;EAAAC,4B;EAAAA,wC;EAAAA,qE;EAAAA,iB;;;;;CAAA,wD;EAAAC,uD;EACLA,yE;EACAA,+H;EAGAA,IAAQC,GAARD,uB;EACAA,oH;EACAA,wG;;;;;;CAQa,iB;EACbE,2E;;;;;;CAGG,wF,CAAsBC,U;EACzBC,iF;;;;;QA7BS,O;EAAAC,oC;EAAAA,iC;EAAAA,mB;;;;;;;;;;;;;;;;;;;;AAEX;kBAA4B,qEAA5B;",
+"sources":["MenuItemSeparator.java"],
+"names":["org.gwtproject.user.client.ui.MenuItemSeparator.<synthetic: ctor_js>","org.gwtproject.user.client.ui.MenuItemSeparator.<synthetic: ctor_create>","org.gwtproject.user.client.ui.MenuItemSeparator.<init>","div","org.gwtproject.user.client.ui.MenuItemSeparator.getParentMenu","parentMenu","org.gwtproject.user.client.ui.MenuItemSeparator.setParentMenu","org.gwtproject.user.client.ui.MenuItemSeparator.<clinit>"]
+}

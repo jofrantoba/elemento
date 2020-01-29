@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"VisibleForTesting.impl.java.js",
+"lineCount":28,
+"mappings":"A;;;;;;;;;;;;MAqBkB,iB;;;;;;QAAA,M;EAAAA,4B;EAAAA,8B;;;;;QAAA,O;EAAAC,oC;EAAAA;",
+"sources":["VisibleForTesting.java"],
+"names":["org.gwtproject.safecss.shared.annotations.VisibleForTesting.<synthetic: adapt_lambda>","org.gwtproject.safecss.shared.annotations.VisibleForTesting.<clinit>"]
+}

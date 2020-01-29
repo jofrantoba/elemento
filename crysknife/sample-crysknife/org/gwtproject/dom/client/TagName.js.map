@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TagName.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;MA0BkB,O;;;;;;CAEhB,S;;;;QAFgB,O;EAAAA,0B;EAAAA;",
+"sources":["TagName.java"],
+"names":["org.gwtproject.dom.client.TagName.<clinit>"]
+}

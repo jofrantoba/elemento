@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SimplePager_ResourcesImpl$simplePagerFirstPageInitializer.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;MAiDuB,+B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,sD;EAAAA,mH;EAAAA,iB;;;;;CAAA,sG;EAAAC,iC;;;;;;QAIkC,O;EAAAC,0C;EACnDA,yH;;;;;QALiB,O;EAAAC,kD;EAAAA,+C;EAAAA,qB;EAEjBA;",
+"sources":["SimplePager_ResourcesImpl.java"],
+"names":["org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$simplePagerFirstPageInitializer.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$simplePagerFirstPageInitializer.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$simplePagerFirstPageInitializer.<init>","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$simplePagerFirstPageInitializer.get","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$simplePagerFirstPageInitializer.<clinit>"]
+}

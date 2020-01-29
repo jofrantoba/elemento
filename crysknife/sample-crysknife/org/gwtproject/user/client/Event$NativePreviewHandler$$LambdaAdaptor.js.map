@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Event$NativePreviewHandler$$LambdaAdaptor.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;MAoZqB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;oF;EAAAA,wJ;;;;;;CAAA,8I;EAAAC,iC;EAAAA,uF;;;;;;CAAA,2E;;GAAAC,kG;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["Event.java"],
+"names":["org.gwtproject.user.client.Event$NativePreviewHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.client.Event$NativePreviewHandler$$LambdaAdaptor.<init>","org.gwtproject.user.client.Event$NativePreviewHandler$$LambdaAdaptor.onPreviewNativeEvent","org.gwtproject.user.client.Event$NativePreviewHandler$$LambdaAdaptor.<clinit>"]
+}

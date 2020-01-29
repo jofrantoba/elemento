@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NativeHorizontalScrollbar_ResourcesTransparantImpl$1.impl.java.js",
+"lineCount":86,
+"mappings":"A;;;;;;;;;;;;MAO2E,E;;;;CAAA,W;EAAAA,Q;EAAAA;yG;EAAAA;OAIrD,+FAJqDA,S;;;;;;;QAAA,yF;EAAAC,a;EAAAA,yB;EAAAA,mM;EAAAA,iB;;;;;;CAAA,2K;EAAAC,qH;EAAAA,iC;;;;;;;CACvD,W;EACZC,wC;;;;;;;CAGa,kB;EACbC;GACEA,4GADFA;GAEEA,6DAFFA;GAGEA,YAHFA;G;EAKAA,a;;;;;;;CAEY,W;EACZC,sO;;;;;;;CAEY,6B;EACZC,qB;;;;;QAjBmE,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["NativeHorizontalScrollbar_ResourcesTransparantImpl.java"],
+"names":["org.gwtproject.user.client.ui.NativeHorizontalScrollbar_ResourcesTransparantImpl$1.<synthetic: ctor_js>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_ResourcesTransparantImpl$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_ResourcesTransparantImpl$1.<init>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_ResourcesTransparantImpl$1.getName","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_ResourcesTransparantImpl$1.ensureInjected","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_ResourcesTransparantImpl$1.getText","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_ResourcesTransparantImpl$1.nativeHorizontalScrollbar","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_ResourcesTransparantImpl$1.<clinit>"]
+}

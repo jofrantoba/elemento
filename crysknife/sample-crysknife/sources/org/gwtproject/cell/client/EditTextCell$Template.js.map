@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"EditTextCell$Template.impl.java.js",
+"lineCount":79,
+"mappings":"A;;;;;;;;;;;;;MA4CY,Q;;;;;;;CAKC,yB,CAAaA,K;;;;;;QALd,M;EAAAC,mB;EAAAA,8B;;;;;;QAER,gE;EAAAC,oG;;;;;QAFQ,O;EAAAC,2B;EAAAA,wB;EAERA,gH;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFQ;;",
+"sources":["EditTextCell.java"],
+"names":["value","org.gwtproject.cell.client.EditTextCell$Template.<synthetic: adapt_lambda>","org.gwtproject.cell.client.EditTextCell$Template.<synthetic: getter>","org.gwtproject.cell.client.EditTextCell$Template.<clinit>"]
+}

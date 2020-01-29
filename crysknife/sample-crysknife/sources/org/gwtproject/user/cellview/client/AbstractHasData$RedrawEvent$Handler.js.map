@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AbstractHasData$RedrawEvent$Handler.impl.java.js",
+"lineCount":30,
+"mappings":"A;;;;;;;;;MA4kCyB,O;;;;;CAMR,Y;;;;;;QANQ,M;EAAAA,kB;EAAAA,8B;;;;;QAAA,O;EAAAC,0B;EAAAA;",
+"sources":["AbstractHasData.java"],
+"names":["org.gwtproject.user.cellview.client.AbstractHasData$RedrawEvent$Handler.<synthetic: adapt_lambda>","org.gwtproject.user.cellview.client.AbstractHasData$RedrawEvent$Handler.<clinit>"]
+}

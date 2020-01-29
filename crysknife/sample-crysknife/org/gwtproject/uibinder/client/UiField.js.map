@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"UiField.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;MA+BkB,O;;;;;;CAEhB,Y;;;;QAFgB,O;EAAAA,0B;EAAAA;",
+"sources":["UiField.java"],
+"names":["org.gwtproject.uibinder.client.UiField.<clinit>"]
+}

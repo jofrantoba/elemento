@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CellTable_ResourcesImpl$cellTableFooterBackgroundInitializer.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;MAcuB,oC;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,2D;EAAAA,sH;EAAAA,iB;;;;;CAAA,yG;EAAAC,iC;;;;;;QAIkC,O;EAAAC,+C;EACnDA,0H;;;;;QALiB,O;EAAAC,uD;EAAAA,oD;EAAAA,qB;EAEjBA;",
+"sources":["CellTable_ResourcesImpl.java"],
+"names":["org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$cellTableFooterBackgroundInitializer.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$cellTableFooterBackgroundInitializer.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$cellTableFooterBackgroundInitializer.<init>","org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$cellTableFooterBackgroundInitializer.get","org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$cellTableFooterBackgroundInitializer.<clinit>"]
+}

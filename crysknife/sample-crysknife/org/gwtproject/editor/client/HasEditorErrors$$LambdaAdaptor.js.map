@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasEditorErrors$$LambdaAdaptor.impl.java.js",
+"lineCount":50,
+"mappings":"A;;;;;;;;;;;;;MAyBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;2E;EAAAA,sI;;;;;;CAAA,4H;EAAAC,iC;EAAAA,8E;;;;;;CAAA,4B;;GAAAC,yF;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["HasEditorErrors.java"],
+"names":["org.gwtproject.editor.client.HasEditorErrors$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.editor.client.HasEditorErrors$$LambdaAdaptor.<init>","org.gwtproject.editor.client.HasEditorErrors$$LambdaAdaptor.showErrors","org.gwtproject.editor.client.HasEditorErrors$$LambdaAdaptor.<clinit>"]
+}

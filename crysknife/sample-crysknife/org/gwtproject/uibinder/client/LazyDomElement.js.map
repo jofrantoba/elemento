@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"LazyDomElement.impl.java.js",
+"lineCount":69,
+"mappings":"A;;;;;;;;;;;;;;;;;MA8Ca,c;;;;CAAA,W;EAAAA,Q;EAAAA;OAED,yDAFCA,C;EAAAA;OAGU,uDAHVA,C;;;;;;;;QAQJ,yB,CAAsBC,K;EAAtBC,yB;EAAAA,qC;EAAAA,wF;EAAAA,iB;;;;;;CAAA,sE,CAAsBD,K;EAAtBE,iC;EACLA,qE;;;;;;CASO,O;EACPC;GACEA,iSADFA;GAEEA;IACEA,qQADFA;IAFFA;GAMEA,4GANFA;G;EAQAA,sE;;;;;QA3BS,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["LazyDomElement.java"],
+"names":["org.gwtproject.uibinder.client.LazyDomElement.<synthetic: ctor_js>","domId","org.gwtproject.uibinder.client.LazyDomElement.<synthetic: ctor_create>","org.gwtproject.uibinder.client.LazyDomElement.<init>","org.gwtproject.uibinder.client.LazyDomElement.get","org.gwtproject.uibinder.client.LazyDomElement.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TouchStartHandler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;MAoBiB,iB;;;;;;CAOV,+D,CAA6BA,K;;;;;;QAPnB,M;EAAAC,4B;EAAAA,8B;;;;;QAAA,O;EAAAC,oC;EAAAA;",
+"sources":["TouchStartHandler.java"],
+"names":["event","org.gwtproject.event.dom.client.TouchStartHandler.<synthetic: adapt_lambda>","org.gwtproject.event.dom.client.TouchStartHandler.<clinit>"]
+}

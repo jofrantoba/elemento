@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"BidiFormatter$Factory.impl.java.js",
+"lineCount":51,
+"mappings":"A;;;;;;;;;;;MAkEe,qB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,gC;EAAAA,4C;EAAAA,sE;EAAAA,iB;;;;;CAAA,yD;EAAAC,qE;;;;;;;;;CAEU,4E,CAAyBC,U,EAClCC,U;EACVC,iH;;;;;QAJS,O;EAAAC,wC;EAAAA,qC;EAAAA;",
+"sources":["BidiFormatter.java"],
+"names":["org.gwtproject.i18n.shared.BidiFormatter$Factory.<synthetic: ctor_js>","org.gwtproject.i18n.shared.BidiFormatter$Factory.<synthetic: ctor_create>","org.gwtproject.i18n.shared.BidiFormatter$Factory.<init>","contextDir","alwaysSpan","org.gwtproject.i18n.shared.BidiFormatter$Factory.createInstance","org.gwtproject.i18n.shared.BidiFormatter$Factory.<clinit>"]
+}

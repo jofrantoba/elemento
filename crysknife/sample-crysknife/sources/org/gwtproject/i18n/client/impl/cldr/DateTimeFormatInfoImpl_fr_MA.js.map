@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DateTimeFormatInfoImpl_fr_MA.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;MAqBa,8B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,yC;EAAAA,qD;EAAAA,uF;EAAAA,iB;;;;;CAAA,0E;EAAAC,+E;;;;;;;CAGK,e;EACdC,mL;;;;;QAJS,O;EAAAC,iD;EAAAA,8C;EAAAA;",
+"sources":["DateTimeFormatInfoImpl_fr_MA.java"],
+"names":["org.gwtproject.i18n.client.impl.cldr.DateTimeFormatInfoImpl_fr_MA.<synthetic: ctor_js>","org.gwtproject.i18n.client.impl.cldr.DateTimeFormatInfoImpl_fr_MA.<synthetic: ctor_create>","org.gwtproject.i18n.client.impl.cldr.DateTimeFormatInfoImpl_fr_MA.<init>","org.gwtproject.i18n.client.impl.cldr.DateTimeFormatInfoImpl_fr_MA.monthsShort","org.gwtproject.i18n.client.impl.cldr.DateTimeFormatInfoImpl_fr_MA.<clinit>"]
+}

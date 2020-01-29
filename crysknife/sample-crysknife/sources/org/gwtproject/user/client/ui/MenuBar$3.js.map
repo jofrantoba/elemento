@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"MenuBar$3.impl.java.js",
+"lineCount":65,
+"mappings":"A;;;;;;;;;;;;MAouCyD,E;;;;CAAA,W;EAAAA,Q;EAAAA;8D;EAAAA;OAbjBC,OAaiBD,C;;;;;;;;QAAA,sF;EAAAE,a;EAAAA,yB;EAAAA,8J;EAAAA,iB;;;;;;;CAAA,6H;EAAAC,0E;EAAAA,uB;EAAAA,iC;;;;;;;;CAEvC,uB,CAAgBC,W,EAAiBC,Y;EAC3CC;GACEA,mLADFA;;GAGEA,kLAHFA;G;;;;;QAHiD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["MenuBar.java"],
+"names":["org.gwtproject.user.client.ui.MenuBar$3.<synthetic: ctor_js>","item","org.gwtproject.user.client.ui.MenuBar$3.<synthetic: ctor_create>","org.gwtproject.user.client.ui.MenuBar$3.<init>","offsetWidth","offsetHeight","org.gwtproject.user.client.ui.MenuBar$3.setPosition","org.gwtproject.user.client.ui.MenuBar$3.<clinit>"]
+}

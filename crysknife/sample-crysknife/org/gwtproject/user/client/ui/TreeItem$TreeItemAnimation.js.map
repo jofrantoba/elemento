@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TreeItem$TreeItemAnimation.impl.java.js",
+"lineCount":121,
+"mappings":"A;;;;;;;;;;;;MAkHuB,iB;;;;CAAA,W;EAAAA,Q;EAAAA;OAKF,oEALEA,C;EAAAA;OAUH,oEAVGA,S;EAAAA;OAeP,yEAfOA,K;;;;;;QAAA,S;EAAAC,4B;EAAAA,wC;EAAAA,8E;EAAAA,iB;;;;;CAAA,iE;EAAAC,0D;EAAAA,2E;;;;;;;CAuBP,+D,CAAsBC,I,EAAcC,O;EAE9CC,kB;EAGAA;GACEA,iFADFA;GAEEA,iIAFFA;GAGEA,mRAHFA;;GAMEA,uLANFA;G;;;;;;CAWa,c;EACbC;GACEA;IACEA,4MADFA;IAEEA,6BAFFA;IAGEA,iQAHFA;;IAKEA,6MALFA;IADFA;GAQEA,sQARFA;GASEA,gQATFA;GAUEA,iFAVFA;G;;;;;;CAea,W;EACbC,mF;EAIAA;GACEA,oSADFA;G;EAGAA,qQ;EAMAA,oB;EAIAA;GACEA,4MADFA;GAEEA,oSAFFA;G;;;;;;;CAOa,kB,CAAgBC,Q;EAC7BC,IAAIC,MAAJD,+H;EACAA;GACEA,iGADFA;G;EAMAA,6B;EAEAA,wQ;EAGAA,IAAIE,WAAJF,sP;EACAA,4Q;;;;;CA9FiB,mE;EAEnBP,iF;EAKAA,iF;EAKAA,mF;;;;;QAZmB,O;EAAAU,oC;EAAAA,iC;EAAAA;",
+"sources":["TreeItem.java"],
+"names":["org.gwtproject.user.client.ui.TreeItem$TreeItemAnimation.<synthetic: ctor_js>","org.gwtproject.user.client.ui.TreeItem$TreeItemAnimation.<synthetic: ctor_create>","org.gwtproject.user.client.ui.TreeItem$TreeItemAnimation.<init>","item","animate","org.gwtproject.user.client.ui.TreeItem$TreeItemAnimation.setItemState","org.gwtproject.user.client.ui.TreeItem$TreeItemAnimation.onComplete","org.gwtproject.user.client.ui.TreeItem$TreeItemAnimation.onStart","progress","org.gwtproject.user.client.ui.TreeItem$TreeItemAnimation.onUpdate","height","scrollWidth","org.gwtproject.user.client.ui.TreeItem$TreeItemAnimation.<clinit>"]
+}

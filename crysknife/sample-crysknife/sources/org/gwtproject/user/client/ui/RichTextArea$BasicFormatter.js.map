@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"RichTextArea$BasicFormatter.impl.java.js",
+"lineCount":120,
+"mappings":"A;;;;;;;;;;;MAoEmB,c;;;;;;CAOR,gB;;;;;;CAOA,gB;;;;;;CAOC,U;;;;;;CAOA,Y;;;;;;CAOA,e;;;;;;CAOA,iB;;;;;;CAOA,gB;;;;;CAKH,a;;;;;;CAOA,gC,CAAoBA,K;;;;;;CAOpB,+B,CAAmBC,I;;;;;;CAOnB,kE,CAAqBC,Q;;;;;;CAOrB,gC,CAAoBF,K;;;;;;CAOpB,4E,CAA+BG,a;;;;;CAK/B,c;;;;;CAKA,gB;;;;;CAKA,mB;;;;;CAKA,qB;;;;;CAKA,mB;;;;QAlHU,O;EAAAC,iC;EAAAA;",
+"sources":["RichTextArea.java"],
+"names":["color","name","fontSize","justification","org.gwtproject.user.client.ui.RichTextArea$BasicFormatter.<clinit>"]
+}

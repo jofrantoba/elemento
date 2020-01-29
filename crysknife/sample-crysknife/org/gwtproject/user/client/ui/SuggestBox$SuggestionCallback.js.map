@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SuggestBox$SuggestionCallback.impl.java.js",
+"lineCount":32,
+"mappings":"A;;;;;;;;;;MAkGmB,kB;;;;;;CACV,8E,CAAgCA,U;;;;;;QADtB,M;EAAAC,6B;EAAAA,8B;;;;;QAAA,O;EAAAC,qC;EAAAA;",
+"sources":["SuggestBox.java"],
+"names":["suggestion","org.gwtproject.user.client.ui.SuggestBox$SuggestionCallback.<synthetic: adapt_lambda>","org.gwtproject.user.client.ui.SuggestBox$SuggestionCallback.<clinit>"]
+}

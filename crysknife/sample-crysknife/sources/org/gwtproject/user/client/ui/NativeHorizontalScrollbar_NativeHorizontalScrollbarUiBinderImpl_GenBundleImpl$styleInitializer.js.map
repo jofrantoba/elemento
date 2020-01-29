@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundleImpl$styleInitializer.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;MAoCuB,gB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,uC;EAAAA,kJ;EAAAA,iB;;;;;CAAA,qI;EAAAC,iC;;;;;;QAI+F,O;EAAAC,2B;EAChHA,6M;;;;;QALiB,O;EAAAC,mC;EAAAA,gC;EAAAA,qB;EAEjBA;",
+"sources":["NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundleImpl.java"],
+"names":["org.gwtproject.user.client.ui.NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundleImpl$styleInitializer.<synthetic: ctor_js>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundleImpl$styleInitializer.<synthetic: ctor_create>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundleImpl$styleInitializer.<init>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundleImpl$styleInitializer.get","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundleImpl$styleInitializer.<clinit>"]
+}

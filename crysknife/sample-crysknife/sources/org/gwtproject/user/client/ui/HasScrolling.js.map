@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasScrolling.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;;;;;MAsBiB,Y;;;;QAAA,O;EAAAA,+B;EAAAA;",
+"sources":["HasScrolling.java"],
+"names":["org.gwtproject.user.client.ui.HasScrolling.<clinit>"]
+}

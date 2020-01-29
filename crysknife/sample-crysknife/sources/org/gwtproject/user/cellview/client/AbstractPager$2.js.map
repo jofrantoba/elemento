@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AbstractPager$2.impl.java.js",
+"lineCount":58,
+"mappings":"A;;;;;;;;;;;;;MA8HiG,E;;;;CAAA,W;EAAAA,Q;EAAAA;0E;;;;;;;QAAA,0D;EAAAC,a;EAAAA,yB;EAAAA,qI;EAAAA,iB;;;;;;CAAA,6G;EAAAC,sF;EAAAA,iC;;;;;;;CAE7E,kE,CAAqCC,K;EAC/CC;GACEA,8NADFA;G;;;;;QAHuF,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["AbstractPager.java"],
+"names":["org.gwtproject.user.cellview.client.AbstractPager$2.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.AbstractPager$2.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.AbstractPager$2.<init>","event","org.gwtproject.user.cellview.client.AbstractPager$2.onRowCountChange","org.gwtproject.user.cellview.client.AbstractPager$2.<clinit>"]
+}

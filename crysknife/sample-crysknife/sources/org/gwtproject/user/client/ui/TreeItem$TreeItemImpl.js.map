@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TreeItem$TreeItemImpl.impl.java.js",
+"lineCount":82,
+"mappings":"A;;;;;;;;;;;;MA0DsB,Y;;;;CAAA,W;EAAAA,Q;;;;;;QACX,S;EAAAC,uB;EAAAA,mC;EAAAA,yE;EAAAA,iB;;;;;CAAA,4D;EAAAC,iC;EACLA,wE;;;;;;CAGG,6F,CAA2BC,I;EAC9BC;GAEEA,IAAQC,SAARD,yIAFFA;GAGEA,0HAHFA;GAIEA,IAAQE,EAARF,6HAJFA;GAKEA,IAAQG,KAARH,8DALFA;GAMEA,IAAQI,SAARJ,kEANFA;GASEA,oJATFA;GAUEA,gKAVFA;GAWEA,oEAXFA;G;;;;;CAkBG,gE;EAEHK,+F;EACAA,IAAQC,WAARD,uB;EACAA,IAAQE,KAARF,0BAAmCH,EAAnCG,sB;EACAA,IAAQF,KAARE,uBAAgCD,SAAhCC,sB;EACAA,uK;EACAA,mG;EACAA,mG;EACAA,uG;EACAA,6I;EACAA,iJ;EACAA,gH;EACAA,6I;EACAA,0G;EACAA,2M;EAGAA,yF;EAGAA,iM;EACAA,yK;EACAA,kF;;;;;QA/CgB,O;EAAAG,+B;EAAAA,4B;EAAAA;",
+"sources":["TreeItem.java"],
+"names":["org.gwtproject.user.client.ui.TreeItem$TreeItemImpl.<synthetic: ctor_js>","org.gwtproject.user.client.ui.TreeItem$TreeItemImpl.<synthetic: ctor_create>","org.gwtproject.user.client.ui.TreeItem$TreeItemImpl.<init>","item","org.gwtproject.user.client.ui.TreeItem$TreeItemImpl.convertToFullNode","itemTable","tr","tdImg","tdContent","org.gwtproject.user.client.ui.TreeItem$TreeItemImpl.initializeClonableElements","contentElem","tbody","org.gwtproject.user.client.ui.TreeItem$TreeItemImpl.<clinit>"]
+}

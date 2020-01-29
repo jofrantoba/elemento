@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HtmlAnchorBuilder.impl.java.js",
+"lineCount":118,
+"mappings":"A;;;;;;;;;;;;;;MAuBa,iB;;;;CAAA,W;EAAAA,Q;;;;;;;QAGX,0D,CAAkCC,Q;EAAlCC,4B;EAAAA,wC;EAAAA,kI;EAAAA,iB;;;;;;CAAA,6G,CAAkCD,Q;EAChCE,kI;;;;;;;;CAImB,6B,CAAiBC,S;EACpCC,0L;;;;;;;;CAImB,8C,CAAaC,I;EAChCC,0D;;;;;;;;CAImB,wB,CAAuBD,I;EAC1CC,gL;;;;;;;;CAImB,4B,CAAgBC,Q;EACnCC,wL;;;;;;;;CAImB,wB,CAAYC,I;EAC/BC,gL;;;;;;;;CAImB,uB,CAAWC,G;EAC9BC,8K;;;;;;;;CAImB,0B,CAAcC,M;EACjCC,oL;;;;;;;;CAImB,wB,CAAYC,I;EAC/BC,gL;;;;;QA5CS,O;EAAAC,oC;EAAAA,iC;EAAAA;",
+"sources":["HtmlAnchorBuilder.java"],
+"names":["org.gwtproject.dom.builder.shared.HtmlAnchorBuilder.<synthetic: ctor_js>","delegate","org.gwtproject.dom.builder.shared.HtmlAnchorBuilder.<synthetic: ctor_create>","org.gwtproject.dom.builder.shared.HtmlAnchorBuilder.<init>","accessKey","org.gwtproject.dom.builder.shared.HtmlAnchorBuilder.accessKey","href","org.gwtproject.dom.builder.shared.HtmlAnchorBuilder.href","hreflang","org.gwtproject.dom.builder.shared.HtmlAnchorBuilder.hreflang","name","org.gwtproject.dom.builder.shared.HtmlAnchorBuilder.name","rel","org.gwtproject.dom.builder.shared.HtmlAnchorBuilder.rel","target","org.gwtproject.dom.builder.shared.HtmlAnchorBuilder.target","type","org.gwtproject.dom.builder.shared.HtmlAnchorBuilder.type","org.gwtproject.dom.builder.shared.HtmlAnchorBuilder.<clinit>"]
+}

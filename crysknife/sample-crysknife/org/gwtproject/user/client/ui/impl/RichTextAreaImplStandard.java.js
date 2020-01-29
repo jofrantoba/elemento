@@ -1,0 +1,30 @@
+goog.module('org.gwtproject.user.client.ui.impl.RichTextAreaImplStandard');
+
+goog.require('nativebootstrap.Util');
+goog.require('org.gwtproject.user.client.ui.RichTextArea.Formatter');
+goog.require('org.gwtproject.user.client.ui.impl.RichTextAreaImpl');
+goog.require('elemental2.dom.DomGlobal.$Overlay');
+goog.require('elemental2.dom.EventListener.$Overlay');
+goog.require('elemental2.dom.EventTarget.$Overlay');
+goog.require('elemental2.dom.HTMLIFrameElement.$Overlay');
+goog.require('java.lang.Exception');
+goog.require('java.lang.Integer');
+goog.require('java.lang.String');
+goog.require('jsinterop.base.Js');
+goog.require('jsinterop.base.JsPropertyMap.$Overlay');
+goog.require('nativebootstrap.Equality');
+goog.require('org.gwtproject.dom.client.Document.$Overlay');
+goog.require('org.gwtproject.dom.client.Element.$Overlay');
+goog.require('org.gwtproject.dom.client.IFrameElement.$Overlay');
+goog.require('org.gwtproject.user.client.DOM');
+goog.require('org.gwtproject.user.client.Event');
+goog.require('org.gwtproject.user.client.ui.RichTextArea.FontSize');
+goog.require('org.gwtproject.user.client.ui.RichTextArea.Justification');
+goog.require('vmbootstrap.Asserts');
+goog.require('vmbootstrap.Casts');
+goog.require('vmbootstrap.Exceptions');
+goog.require('vmbootstrap.JavaScriptFunction');
+goog.require('vmbootstrap.Objects');
+
+const RichTextAreaImplStandard = goog.require('org.gwtproject.user.client.ui.impl.RichTextAreaImplStandard$impl');
+exports = RichTextAreaImplStandard; 

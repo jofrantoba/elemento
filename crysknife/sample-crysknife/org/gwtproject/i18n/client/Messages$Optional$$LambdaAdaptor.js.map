@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Messages$Optional$$LambdaAdaptor.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;;;;MAwUoB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;2E;EAAAA,sI;;;;;;CAAA,4H;EAAAC,iC;EAAAA,8E;;;;;;CAAA,kB;EAAAC,0C;EAAAA,2G;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["Messages.java"],
+"names":["org.gwtproject.i18n.client.Messages$Optional$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.i18n.client.Messages$Optional$$LambdaAdaptor.<init>","org.gwtproject.i18n.client.Messages$Optional$$LambdaAdaptor.annotationType","org.gwtproject.i18n.client.Messages$Optional$$LambdaAdaptor.<clinit>"]
+}

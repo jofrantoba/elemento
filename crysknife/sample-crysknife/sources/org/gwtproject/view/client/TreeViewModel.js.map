@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TreeViewModel.impl.java.js",
+"lineCount":31,
+"mappings":"A;;;;;;;;;MAwBiB,a;;;;;;;;CAiKC,+B,CAAcA,K;;;;;;;CAStB,0B,CAAcA,K;;;;QA1KP,O;EAAAC,gC;EAAAA;",
+"sources":["TreeViewModel.java"],
+"names":["value","org.gwtproject.view.client.TreeViewModel.<clinit>"]
+}

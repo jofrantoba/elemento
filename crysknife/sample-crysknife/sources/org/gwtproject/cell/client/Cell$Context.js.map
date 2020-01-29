@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Cell$Context.impl.java.js",
+"lineCount":109,
+"mappings":"A;;;;;MA8EQ,O;;;;CAAA,W;EAAAA,Q;EAAAA;OAEc,kDAFdA,K;EAAAA;OAGc,iDAHdA,K;EAAAA;OAIiB,+CAJjBA,C;EAAAA;OAKc,oDALdA,K;;;;;;;;;;QAcG,mC,CAAYC,K,EAAWC,M,EAAeC,G;EAAtCC,kB;EAAAA,8B;EAAAA,yG;EAAAA,iB;;;;;;;;;CAAA,0E,CAAYH,K,EAAWC,M,EAAeC,G;EAC3CE,4G;;;;;;;;;;;QAWK,wC,CAAYJ,K,EAAWC,M,EAAeC,G,EAASG,Q;EAA/CF,kB;EAAAA,8B;EAAAA,wH;EAAAA,iB;;;;;;;;;;CAAA,+E,CAAYH,K,EAAWC,M,EAAeC,G,EAASG,Q;EAA/CD,iC;EACLA,+D;EACAA,iE;EACAA,2D;EACAA,qE;;;;;;CASS,a;EACTE,+D;;;;;;CAQS,Y;EACTC,8D;;;;;;CAQY,U;EACZC,4D;;;;;;CAQS,e;EACTC,iE;;;;;QAnEE,O;EAAAC,0B;EAAAA,uB;EAAAA;",
+"sources":["Cell.java"],
+"names":["org.gwtproject.cell.client.Cell$Context.<synthetic: ctor_js>","index","column","key","org.gwtproject.cell.client.Cell$Context.<synthetic: ctor_create>","org.gwtproject.cell.client.Cell$Context.<init>","subindex","org.gwtproject.cell.client.Cell$Context.getColumn","org.gwtproject.cell.client.Cell$Context.getIndex","org.gwtproject.cell.client.Cell$Context.getKey","org.gwtproject.cell.client.Cell$Context.getSubIndex","org.gwtproject.cell.client.Cell$Context.<clinit>"]
+}

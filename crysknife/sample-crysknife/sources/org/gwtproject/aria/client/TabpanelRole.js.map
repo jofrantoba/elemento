@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TabpanelRole.impl.java.js",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MA0BiB,Y;;;;QAAA,O;EAAAA,+B;EAAAA;",
+"sources":["TabpanelRole.java"],
+"names":["org.gwtproject.aria.client.TabpanelRole.<clinit>"]
+}

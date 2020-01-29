@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"WidgetRole.impl.java.js",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MA0BiB,U;;;;QAAA,O;EAAAA,6B;EAAAA;",
+"sources":["WidgetRole.java"],
+"names":["org.gwtproject.aria.client.WidgetRole.<clinit>"]
+}

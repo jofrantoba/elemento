@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Element$FocusOptionsType$$Overlay.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;MAiHmB,yB;;;;;QAEiB,U;EAAAA,oC;EAC9BA,iF;;;;;QAHa,O;EAAAC,4C;EAAAA;",
+"sources":["Element.java"],
+"names":["elemental2.dom.Element$FocusOptionsType$$Overlay.create","elemental2.dom.Element$FocusOptionsType$$Overlay.<clinit>"]
+}

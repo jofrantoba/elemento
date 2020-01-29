@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AbstractCellTable$TableSectionChangeHandler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;MA8YsB,yB;;;;;;CAKb,kE,CAAsCA,Q;;;;;;CAMtC,kE,CAAsCC,Q;;;;;;CAMtC,kE,CAAsCC,Q;;;;QAjBzB,O;EAAAC,4C;EAAAA;",
+"sources":["AbstractCellTable.java"],
+"names":["newTBody","newTFoot","newTHead","org.gwtproject.user.cellview.client.AbstractCellTable$TableSectionChangeHandler.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ColumnSortEvent$ListHandler.impl.java.js",
+"lineCount":118,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;MAkFsB,W;;;;CAAA,W;EAAAA,Q;EAAAA;OAC6B,+EAD7BA,C;EAAAA;OAEF,wEAFEA,C;;;;;;;;QAIX,uB,CAAoBC,I;EAApBC,sB;EAAAA,kC;EAAAA,uG;EAAAA,iB;;;;;;CAAA,sF,CAAoBD,I;EAApBE,iC;EAAAA,kF;EACLA,qF;;;;;;;CASmB,2D,CAA2BC,M;EAC9CC,8J;;;;;;CAGa,W;EACbC,qF;;;;;;;CAGU,mE,CAA6BC,K;EAEvCC,IAAaJ,MAAbI,yB;EACAA;GACEA,OADFA;G;EAKAA,IAAoBC,UAApBD,0J;EACAA;GACEA,OADFA;G;EAKAA;GACEA,oJADFA;;GAGEA,oRAHFA;G;;;;;;;CAiBU,iF,CAA2BJ,M,EAAsBK,U;EAC3DC,6G;;;;;;CAGU,yB,CAAgBT,I;EAC1BU,iF;EACAA,qF;;;;;CA3DgB,0E;EAClBR,iK;;;;;QADkB,O;EAAAS,8B;EAAAA,2B;EAAAA;",
+"sources":["ColumnSortEvent.java"],
+"names":["org.gwtproject.user.cellview.client.ColumnSortEvent$ListHandler.<synthetic: ctor_js>","list","org.gwtproject.user.cellview.client.ColumnSortEvent$ListHandler.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.ColumnSortEvent$ListHandler.<init>","column","org.gwtproject.user.cellview.client.ColumnSortEvent$ListHandler.getComparator","org.gwtproject.user.cellview.client.ColumnSortEvent$ListHandler.getList","event","org.gwtproject.user.cellview.client.ColumnSortEvent$ListHandler.onColumnSort","comparator","org.gwtproject.user.cellview.client.ColumnSortEvent$ListHandler.setComparator","org.gwtproject.user.cellview.client.ColumnSortEvent$ListHandler.setList","org.gwtproject.user.cellview.client.ColumnSortEvent$ListHandler.<clinit>"]
+}

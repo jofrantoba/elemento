@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ClickableTextCell.impl.java.js",
+"lineCount":139,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;MA+Ba,iB;;;;CAAA,W;EAAAA,Q;;;;;;;QAMJ,S;EAAAC,4B;EAAAA,wC;EAAAA,kE;EAAAA,iB;;;;;;CAAA,qD;EACLC,gJ;;;;;;;;QASK,oD,CAA2CC,Q;EAA3CF,4B;EAAAA,wC;EAAAA,qH;EAAAA,iB;;;;;;;CAAA,gG,CAA2CE,Q;EAChDD,4U;;;;;;;;;;CAIU,8L,CAA4BE,O,EAAiBC,M,EAAeC,K,EACjCC,K,EAAuDC,Y;EAC5FC,kP;EACAA;GACEA,iPADFA;G;;;;;;;;;;CAMa,8L,CAA4BL,O,EAAiBC,M,EAAeC,K,EACjCC,K,EAAuDC,Y;EAC/FE;GACEA,+CADFA;G;;;;;;;;;CAMa,0I,CAAoBN,O,EAAkBE,K,EAAuBK,E;EAC1EC;GACEA,4DADFA;G;;;;;;;;;;;;CAvCS,8L;EAAAH,kR;;;;;;;;;;;;CAAA,8L;EAAAC,kR;;;;;QAAA,O;EAAAG,oC;EAAAA,iC;EAAAA;",
+"sources":["ClickableTextCell.java"],
+"names":["org.gwtproject.cell.client.ClickableTextCell.<synthetic: ctor_js>","org.gwtproject.cell.client.ClickableTextCell.<synthetic: ctor_create>","org.gwtproject.cell.client.ClickableTextCell.<init>","renderer","context","parent","value","event","valueUpdater","org.gwtproject.cell.client.ClickableTextCell.onBrowserEvent","org.gwtproject.cell.client.ClickableTextCell.onEnterKeyDown","sb","org.gwtproject.cell.client.ClickableTextCell.render","org.gwtproject.cell.client.ClickableTextCell.<clinit>"]
+}

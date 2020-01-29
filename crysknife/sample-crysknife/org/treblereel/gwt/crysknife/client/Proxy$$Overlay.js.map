@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Proxy$$Overlay.impl.java.js",
+"lineCount":11,
+"mappings":"A;;;;MAaa,Q;;;;QAAA,O;EAAAA,2B;EAAAA;",
+"sources":["Proxy.java"],
+"names":["org.treblereel.gwt.crysknife.client.Proxy$$Overlay.<clinit>"]
+}

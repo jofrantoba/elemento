@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DefaultSelectionEventManager$CheckboxEventTranslator.impl.java.js",
+"lineCount":112,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;MA6GsB,uB;;;;CAAA,W;EAAAA,Q;EAAAA;OAKA,0FALAA,K;;;;;;;;QAWX,S;EAAAC,kC;EAAAA,8C;EAAAA,qG;EAAAA,iB;;;;;;CAAA,wF;EACLC,qG;;;;;;;;;QASK,Y,CAA4BC,M;EAA5BF,kC;EAAAA,8C;EAAAA,8G;EAAAA,iB;;;;;;;CAAA,2F,CAA4BE,M;EAA5BD,iC;EACLA,yG;;;;;;;;CAGa,oE,CAA0CE,K;EACvDC,a;;;;;;;;CAGkB,sE,CAA4CD,K;EAE9DE,IAAYC,WAAZD,8B;EACAA;GAEEA;IACEA,mGADFA;IAFFA;GAOEA,IAAQE,MAARF,uOAPFA;GAQEA;IACEA,IAAmBG,KAAnBH,4JADFA;IAEEA;KAEEA,oHAFFA;KAIEA,mGAJFA;KAFFA;IARFA;GAiBEA,mGAjBFA;G;EAqBAA,oG;;;;;QArDgB,O;EAAAI,0C;EAAAA,uC;EAAAA;",
+"sources":["DefaultSelectionEventManager.java"],
+"names":["org.gwtproject.view.client.DefaultSelectionEventManager$CheckboxEventTranslator.<synthetic: ctor_js>","org.gwtproject.view.client.DefaultSelectionEventManager$CheckboxEventTranslator.<synthetic: ctor_create>","org.gwtproject.view.client.DefaultSelectionEventManager$CheckboxEventTranslator.<init>","column","event","org.gwtproject.view.client.DefaultSelectionEventManager$CheckboxEventTranslator.clearCurrentSelection","org.gwtproject.view.client.DefaultSelectionEventManager$CheckboxEventTranslator.translateSelectionEvent","nativeEvent","target","input","org.gwtproject.view.client.DefaultSelectionEventManager$CheckboxEventTranslator.<clinit>"]
+}

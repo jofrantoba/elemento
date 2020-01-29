@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HtmlTableCellBuilder.impl.java.js",
+"lineCount":108,
+"mappings":"A;;;;;;;;;;;;;MAoBa,oB;;;;CAAA,W;EAAAA,Q;;;;;;;QAGX,0D,CAAqCC,Q;EAArCC,+B;EAAAA,2C;EAAAA,qI;EAAAA,iB;;;;;;CAAA,gH,CAAqCD,Q;EACnCE,kI;;;;;;;;CAIsB,yB,CAAaC,K;EACnCC,wL;;;;;;;;CAIsB,sB,CAAUC,E;EAChCC,kL;;;;;;;;CAIsB,yB,CAAaC,K;EACnCC,wL;;;;;;;;CAIsB,c,CAAYC,O;EAClCC,+K;;;;;;;;CAIsB,2B,CAAeC,O;EACrCC,4L;;;;;;;;CAIsB,c,CAAYC,O;EAClCC,+K;;;;;;;;CAIsB,0B,CAAcC,M;EACpCC,0L;;;;;QAvCS,O;EAAAC,uC;EAAAA,oC;EAAAA;",
+"sources":["HtmlTableCellBuilder.java"],
+"names":["org.gwtproject.dom.builder.shared.HtmlTableCellBuilder.<synthetic: ctor_js>","delegate","org.gwtproject.dom.builder.shared.HtmlTableCellBuilder.<synthetic: ctor_create>","org.gwtproject.dom.builder.shared.HtmlTableCellBuilder.<init>","align","org.gwtproject.dom.builder.shared.HtmlTableCellBuilder.align","ch","org.gwtproject.dom.builder.shared.HtmlTableCellBuilder.ch","chOff","org.gwtproject.dom.builder.shared.HtmlTableCellBuilder.chOff","colSpan","org.gwtproject.dom.builder.shared.HtmlTableCellBuilder.colSpan","headers","org.gwtproject.dom.builder.shared.HtmlTableCellBuilder.headers","rowSpan","org.gwtproject.dom.builder.shared.HtmlTableCellBuilder.rowSpan","vAlign","org.gwtproject.dom.builder.shared.HtmlTableCellBuilder.vAlign","org.gwtproject.dom.builder.shared.HtmlTableCellBuilder.<clinit>"]
+}

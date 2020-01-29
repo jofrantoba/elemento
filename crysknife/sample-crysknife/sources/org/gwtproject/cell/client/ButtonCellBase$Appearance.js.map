@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ButtonCellBase$Appearance.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;;;MA2DmB,U;;;;;;CAOV,2C,CAAeA,M;;;;;;CAOf,6C,CAAiBA,M;;;;;;;;;CAUjB,8J,CAAyBC,I,EAAcC,O,EAAWC,K,EAAuBC,E;;;;;;;CAQzE,sD,CAAiBJ,M,EAAgBK,O;;;;QAhCvB,O;EAAAC,6B;EAAAA;",
+"sources":["ButtonCellBase.java"],
+"names":["parent","cell","context","value","sb","focused","org.gwtproject.cell.client.ButtonCellBase$Appearance.<clinit>"]
+}

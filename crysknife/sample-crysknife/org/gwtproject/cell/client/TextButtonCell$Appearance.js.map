@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TextButtonCell$Appearance.impl.java.js",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MA2BmB,yB;;;;QAAA,O;EAAAA,4C;EAAAA;",
+"sources":["TextButtonCell.java"],
+"names":["org.gwtproject.cell.client.TextButtonCell$Appearance.<clinit>"]
+}

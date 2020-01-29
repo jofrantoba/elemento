@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"MouseWheelHandler$$LambdaAdaptor.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;MAoBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gF;EAAAA,gJ;;;;;;CAAA,sI;EAAAC,iC;EAAAA,mF;;;;;;CAAA,+D;;GAAAC,8F;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["MouseWheelHandler.java"],
+"names":["org.gwtproject.event.dom.client.MouseWheelHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.dom.client.MouseWheelHandler$$LambdaAdaptor.<init>","org.gwtproject.event.dom.client.MouseWheelHandler$$LambdaAdaptor.onMouseWheel","org.gwtproject.event.dom.client.MouseWheelHandler$$LambdaAdaptor.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TextMetrics$$Overlay.impl.java.js",
+"lineCount":11,
+"mappings":"A;;;;MAiCa,Q;;;;QAAA,O;EAAAA,2B;EAAAA;",
+"sources":["TextMetrics.java"],
+"names":["org.gwtproject.canvas.dom.client.TextMetrics$$Overlay.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SimplePager_ResourcesImpl$simplePagerLastPageInitializer.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;MAqFuB,8B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,qD;EAAAA,kH;EAAAA,iB;;;;;CAAA,qG;EAAAC,iC;;;;;;QAIkC,O;EAAAC,yC;EACnDA,wH;;;;;QALiB,O;EAAAC,iD;EAAAA,8C;EAAAA,qB;EAEjBA;",
+"sources":["SimplePager_ResourcesImpl.java"],
+"names":["org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$simplePagerLastPageInitializer.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$simplePagerLastPageInitializer.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$simplePagerLastPageInitializer.<init>","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$simplePagerLastPageInitializer.get","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$simplePagerLastPageInitializer.<clinit>"]
+}

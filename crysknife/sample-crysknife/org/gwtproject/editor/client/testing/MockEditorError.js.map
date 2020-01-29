@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"MockEditorError.impl.java.js",
+"lineCount":103,
+"mappings":"A;;;;;;;;;;;MAqBa,e;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,0B;EAAAA,sC;EAAAA,0E;EAAAA,iB;;;;;CAAA,6D;EAAAC,iC;;;;;;;CAEG,mB;EACZC,Y;;;;;;;CAGe,a;EACfC,Y;;;;;;;CAGY,c;EACZC,Y;;;;;;;CAGY,W;EACZC,Y;;;;;;;CAGY,e;EACZC,Y;;;;;;;CAGY,Y;EACZC,Y;;;;;;;CAIa,c;EACbC,a;;;;;;;CAIU,sB,CAAoBC,Q;;;;QAhCrB,O;EAAAC,kC;EAAAA,+B;EAAAA;",
+"sources":["MockEditorError.java"],
+"names":["org.gwtproject.editor.client.testing.MockEditorError.<synthetic: ctor_js>","org.gwtproject.editor.client.testing.MockEditorError.<synthetic: ctor_create>","org.gwtproject.editor.client.testing.MockEditorError.<init>","org.gwtproject.editor.client.testing.MockEditorError.getAbsolutePath","org.gwtproject.editor.client.testing.MockEditorError.getEditor","org.gwtproject.editor.client.testing.MockEditorError.getMessage","org.gwtproject.editor.client.testing.MockEditorError.getPath","org.gwtproject.editor.client.testing.MockEditorError.getUserData","org.gwtproject.editor.client.testing.MockEditorError.getValue","org.gwtproject.editor.client.testing.MockEditorError.isConsumed","consumed","org.gwtproject.editor.client.testing.MockEditorError.<clinit>"]
+}

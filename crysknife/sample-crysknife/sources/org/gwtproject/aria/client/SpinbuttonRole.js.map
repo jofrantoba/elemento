@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SpinbuttonRole.impl.java.js",
+"lineCount":40,
+"mappings":"A;;;;;;;;;;;;;MA6BiB,c;;;;;;;CAOR,4D,CAAgCA,O;;;;;;CAMlC,+D,CAAmCA,O;;;;;;;CAMnC,qE,CAAgCA,O,EAAiBC,K;;;;QAnBvC,O;EAAAC,iC;EAAAA;",
+"sources":["SpinbuttonRole.java"],
+"names":["element","value","org.gwtproject.aria.client.SpinbuttonRole.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DomMediaBuilderBase.impl.java.js",
+"lineCount":105,
+"mappings":"A;;;;;;;;;;;;;;;;MA0Ba,mB;;;;CAAA,W;EAAAA,Q;;;;;;;;QAGX,yD,CAAmCC,Q;EAAnCC,8B;EAAAA,0C;EAAAA,mI;EAAAA,iB;;;;;;CAAA,8G,CAAmCD,Q;EACjCE,gI;;;;;;;CAIO,Y;EACPC,sK;EACAA,+E;;;;;;;CAIO,Y;EACPC,sK;EACAA,+E;;;;;;;CAIO,Q;EACPC,kK;EACAA,+E;;;;;;;CAIO,S;EACPC,2F;EACAA,+E;;;;;;;;CAIO,2B,CAAeC,O;EACtBC,gG;EACAA,+E;;;;;;;;CAIO,uB,CAAWC,G;EAClBC,wF;EACAA,+E;;;;;QAxCS,O;EAAAC,sC;EAAAA,mC;EAAAA;",
+"sources":["DomMediaBuilderBase.java"],
+"names":["org.gwtproject.dom.builder.client.DomMediaBuilderBase.<synthetic: ctor_js>","delegate","org.gwtproject.dom.builder.client.DomMediaBuilderBase.<synthetic: ctor_create>","org.gwtproject.dom.builder.client.DomMediaBuilderBase.<init>","org.gwtproject.dom.builder.client.DomMediaBuilderBase.autoplay","org.gwtproject.dom.builder.client.DomMediaBuilderBase.controls","org.gwtproject.dom.builder.client.DomMediaBuilderBase.loop","org.gwtproject.dom.builder.client.DomMediaBuilderBase.muted","preload","org.gwtproject.dom.builder.client.DomMediaBuilderBase.preload","url","org.gwtproject.dom.builder.client.DomMediaBuilderBase.src","org.gwtproject.dom.builder.client.DomMediaBuilderBase.<clinit>"]
+}

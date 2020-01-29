@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NamedFrame.impl.java.js",
+"lineCount":116,
+"mappings":"A;;;;;;;;;;;;;;;;;MAmCa,U;;;;CAAA,W;EAAAA,Q;;;;;;;QAyBkB,gC,CAAoBC,I;EAC/CC;GACEA,kJADFA;G;EAOAA,IAAQC,GAARD,uB;EACAA,wO;EACAA,yK;;;;;QAGkB,e;EAClBE,8H;;;;;;;QASqB,+B,CAAmBH,I;EACxCI,2G;;;;;;;QAeK,yB,CAAkBJ,I;EAAlBK,qB;EAAAA,iC;EAAAA,kF;EAAAA,iB;;;;;;CAAA,iE,CAAkBL,I;EACvBM,sI;EACAA,sG;;;;;;CAQY,W;EACZC,iI;;;;;QA3ES,O;EAAAC,6B;EAAAA,0B;EAAAA,gB;EAYTA,6B;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAZS;WASW,yDATX;",
+"sources":["NamedFrame.java"],
+"names":["org.gwtproject.user.client.ui.NamedFrame.<synthetic: ctor_js>","name","org.gwtproject.user.client.ui.NamedFrame.createIFrame","div","org.gwtproject.user.client.ui.NamedFrame.initStatics","org.gwtproject.user.client.ui.NamedFrame.isValidName","org.gwtproject.user.client.ui.NamedFrame.<synthetic: ctor_create>","org.gwtproject.user.client.ui.NamedFrame.<init>","org.gwtproject.user.client.ui.NamedFrame.getName","org.gwtproject.user.client.ui.NamedFrame.<clinit>"]
+}

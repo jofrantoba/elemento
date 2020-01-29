@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"EntryPoint$$LambdaAdaptor.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;;;;MAUkB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;6E;EAAAA,0I;;;;;;CAAA,gI;EAAAC,iC;EAAAA,gF;;;;;;CAAA,kB;EAAAC,0C;EAAAA,6G;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["EntryPoint.java"],
+"names":["org.treblereel.gwt.crysknife.client.EntryPoint$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.treblereel.gwt.crysknife.client.EntryPoint$$LambdaAdaptor.<init>","org.treblereel.gwt.crysknife.client.EntryPoint$$LambdaAdaptor.annotationType","org.treblereel.gwt.crysknife.client.EntryPoint$$LambdaAdaptor.<clinit>"]
+}

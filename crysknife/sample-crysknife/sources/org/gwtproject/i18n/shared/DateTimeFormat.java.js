@@ -1,0 +1,32 @@
+goog.module('org.gwtproject.i18n.shared.DateTimeFormat');
+
+goog.require('java.lang.Object');
+goog.require('nativebootstrap.Util');
+goog.require('java.lang.IllegalArgumentException');
+goog.require('java.lang.IllegalStateException');
+goog.require('java.lang.String');
+goog.require('java.lang.StringBuilder');
+goog.require('java.util.ArrayList');
+goog.require('java.util.Date');
+goog.require('java.util.HashMap');
+goog.require('java.util.Locale');
+goog.require('java.util.Map');
+goog.require('nativebootstrap.Equality');
+goog.require('nativebootstrap.Long');
+goog.require('org.gwtproject.i18n.client.LocaleInfo');
+goog.require('org.gwtproject.i18n.client.TimeZone');
+goog.require('org.gwtproject.i18n.shared.DateTimeFormat.PatternPart');
+goog.require('org.gwtproject.i18n.shared.DateTimeFormat.PredefinedFormat');
+goog.require('org.gwtproject.i18n.shared.DateTimeFormatInfo');
+goog.require('org.gwtproject.i18n.shared.DefaultDateTimeFormatInfo');
+goog.require('org.gwtproject.i18n.shared.TimeZone');
+goog.require('org.gwtproject.i18n.shared.impl.DateRecord');
+goog.require('vmbootstrap.Arrays');
+goog.require('vmbootstrap.Casts');
+goog.require('vmbootstrap.Exceptions');
+goog.require('vmbootstrap.LongUtils');
+goog.require('vmbootstrap.Primitives');
+goog.require('vmbootstrap.primitives.$int');
+
+const DateTimeFormat = goog.require('org.gwtproject.i18n.shared.DateTimeFormat$impl');
+exports = DateTimeFormat; 

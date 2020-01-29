@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AbstractHasData$_Widget.impl.java.js",
+"lineCount":67,
+"mappings":"A;;;;;;;;;;MAwtCkB,Q;;;;CAAA,W;EAAAA,Q;EAAAA;kF;;;;;;;;QAAA,4D;EAAAC,+B;EAAAA,+I;EAAAA,iB;;;;;;CAAA,uH;EAAAC,8F;EAAAA,qD;;;;;;;CAEK,iD,CAAiBC,M;EAC5BC,gE;;;;;;CAGW,Y;EACXC,qB;;;;;;CAGW,Y;EACXC,qB;;;;;QAXM,O;EAAAC,2B;EAAAA,wB;EAAAA;",
+"sources":["AbstractHasData.java"],
+"names":["org.gwtproject.user.cellview.client.AbstractHasData$_Widget.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.AbstractHasData$_Widget.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.AbstractHasData$_Widget.<init>","parent","org.gwtproject.user.cellview.client.AbstractHasData$_Widget.setParent","org.gwtproject.user.cellview.client.AbstractHasData$_Widget.onAttach","org.gwtproject.user.cellview.client.AbstractHasData$_Widget.onDetach","org.gwtproject.user.cellview.client.AbstractHasData$_Widget.<clinit>"]
+}

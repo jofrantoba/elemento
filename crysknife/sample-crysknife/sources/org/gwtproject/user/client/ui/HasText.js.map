@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasText.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;MAiCiB,O;;;;;;CAOR,W;;;;;;CAOF,2B,CAAeA,I;;;;QAdL,O;EAAAC,0B;EAAAA;",
+"sources":["HasText.java"],
+"names":["text","org.gwtproject.user.client.ui.HasText.<clinit>"]
+}

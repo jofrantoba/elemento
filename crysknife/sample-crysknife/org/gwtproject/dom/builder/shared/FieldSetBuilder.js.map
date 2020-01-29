@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"FieldSetBuilder.impl.java.js",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MAoBiB,e;;;;QAAA,O;EAAAA,kC;EAAAA;",
+"sources":["FieldSetBuilder.java"],
+"names":["org.gwtproject.dom.builder.shared.FieldSetBuilder.<clinit>"]
+}

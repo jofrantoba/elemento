@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SourceBuilder.impl.java.js",
+"lineCount":30,
+"mappings":"A;;;;;;;;;MAoBiB,a;;;;;;;CAOD,uB,CAAWA,G;;;;;;;CAUX,wB,CAAYC,I;;;;QAjBX,O;EAAAC,gC;EAAAA;",
+"sources":["SourceBuilder.java"],
+"names":["url","type","org.gwtproject.dom.builder.shared.SourceBuilder.<clinit>"]
+}

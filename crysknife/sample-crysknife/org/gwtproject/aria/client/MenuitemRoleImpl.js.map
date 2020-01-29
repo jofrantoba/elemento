@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"MenuitemRoleImpl.impl.java.js",
+"lineCount":41,
+"mappings":"A;;;;;;;;;MAoBM,gB;;;;CAAA,W;EAAAA,Q;;;;;;;QAEJ,yB,CAAwBC,Q;EAAxBC,2B;EAAAA,uC;EAAAA,yF;EAAAA,iB;;;;;;CAAA,oE,CAAwBD,Q;EACtBE,4E;;;;;QAHE,O;EAAAC,mC;EAAAA,gC;EAAAA;",
+"sources":["MenuitemRoleImpl.java"],
+"names":["org.gwtproject.aria.client.MenuitemRoleImpl.<synthetic: ctor_js>","roleName","org.gwtproject.aria.client.MenuitemRoleImpl.<synthetic: ctor_create>","org.gwtproject.aria.client.MenuitemRoleImpl.<init>","org.gwtproject.aria.client.MenuitemRoleImpl.<clinit>"]
+}

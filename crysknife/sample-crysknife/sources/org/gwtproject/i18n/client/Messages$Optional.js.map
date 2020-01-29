@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Messages$Optional.impl.java.js",
+"lineCount":28,
+"mappings":"A;;;;;;;;;;;;MAwUoB,Q;;;;;;QAAA,M;EAAAA,mB;EAAAA,8B;;;;;QAAA,O;EAAAC,2B;EAAAA;",
+"sources":["Messages.java"],
+"names":["org.gwtproject.i18n.client.Messages$Optional.<synthetic: adapt_lambda>","org.gwtproject.i18n.client.Messages$Optional.<clinit>"]
+}

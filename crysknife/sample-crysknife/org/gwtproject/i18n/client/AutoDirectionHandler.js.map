@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AutoDirectionHandler.impl.java.js",
+"lineCount":141,
+"mappings":"A;;;;;;;;;;;;;;;;;;MAgCa,oB;;;;CAAA,W;EAAAA,Q;EAAAA;OA+EgB,sEA/EhBA,C;EAAAA;OAoFiB,uEApFjBA,C;EAAAA;OAyFI,0DAzFJA,C;;;;;;;QAkCwB,+D,CAAaC,M;EAAbC,+B;EACjCA,mH;;;;;;;;QAgBiC,wE,CAAaD,M,EAAgBE,O;EAA7BD,+B;EACjCA,2M;;;;;;;;QAmBiC,8G,CAAaD,M,EAC5CG,kB;EAD+BF,+B;EAEjCA,uK;;;;;;;;QA0BM,8G,CAA4BD,M,EAChCG,kB;EADIC,2C;EAAAA,oM;EAAAA,iB;;;;;;;CAAA,6J,CAA4BJ,M,EAChCG,kB;EADIE,iC;EAENA,yE;EACAA,oF;EACAA,gG;;;;;;;CAMwB,yB;EACxBC,mF;;;;;;;CAOU,qD,CAAmBC,K;EAC7BC,4B;;;;;CAOU,oB;EACVC;GACEA,IAAUC,GAAVD,oMADFA;GAEEA;IACEA,uIADFA;IAFFA;G;;;;;;;CAWU,gC,CAA8BP,O;EACxCS,oI;;;;;;;CAMU,sE,CAAyCR,kB;EACnDQ,iG;EACAA;GACEA;IACEA,iGADFA;IAEEA,oFAFFA;;IAIEA,qNAJFA;IADFA;G;EAQAA,4B;;;;;QA1JS,O;EAAAC,uC;EAAAA,oC;EAAAA;",
+"sources":["AutoDirectionHandler.java"],
+"names":["org.gwtproject.i18n.client.AutoDirectionHandler.<synthetic: ctor_js>","target","org.gwtproject.i18n.client.AutoDirectionHandler.addTo","enabled","directionEstimator","org.gwtproject.i18n.client.AutoDirectionHandler.<synthetic: ctor_create>","org.gwtproject.i18n.client.AutoDirectionHandler.<init>","org.gwtproject.i18n.client.AutoDirectionHandler.getDirectionEstimator","event","org.gwtproject.i18n.client.AutoDirectionHandler.onKeyUp","org.gwtproject.i18n.client.AutoDirectionHandler.refreshDirection","dir","org.gwtproject.i18n.client.AutoDirectionHandler.setDirectionEstimator","org.gwtproject.i18n.client.AutoDirectionHandler.<clinit>"]
+}

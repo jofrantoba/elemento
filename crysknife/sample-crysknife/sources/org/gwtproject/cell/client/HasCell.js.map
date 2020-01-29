@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasCell.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MAyBiB,O;;;;;;CAOP,W;;;;;;CAOW,mB;;;;;;;CAQjB,4B,CAAWA,M;;;;QAtBE,O;EAAAC,0B;EAAAA;",
+"sources":["HasCell.java"],
+"names":["object","org.gwtproject.cell.client.HasCell.<clinit>"]
+}

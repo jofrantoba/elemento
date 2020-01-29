@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ProvidesKey.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;MAkCiB,W;;;;;;;CAQR,0B,CAASA,I;;;;;;;QARD,M;EAAAC,sB;EAAAA,iE;;;;;QAAA,O;EAAAC,8B;EAAAA;",
+"sources":["ProvidesKey.java"],
+"names":["item","org.gwtproject.view.client.ProvidesKey.<synthetic: adapt_lambda>","org.gwtproject.view.client.ProvidesKey.<clinit>"]
+}

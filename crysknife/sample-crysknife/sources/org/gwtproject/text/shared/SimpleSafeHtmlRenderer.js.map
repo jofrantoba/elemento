@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SimpleSafeHtmlRenderer.impl.java.js",
+"lineCount":118,
+"mappings":"A;;;;;;;;;;;;;;;;MAOa,sB;;;;CAAA,W;EAAAA,Q;;;;;;QAI0B,e;EAAAC,iC;EACnCA;GACEA,2HADFA;G;EAGAA,6F;;;;;;QAGM,S;EAAAC,6C;EAAAA,uE;EAAAA,iB;;;;;CAAA,0D;EAAAC,iC;;;;;;;CAEQ,0B,CAAcC,M;EAC5BC,4K;;;;;;;CAGU,0E,CAAcD,M,EAAwBE,U;EAChDD,mH;;;;;;;;;CAlBS,0B;EAAAA,6F;;;;;;;;;CAAA,0E;EAAAA,4I;;;;;QAAA,O;EAAAE,yC;EAAAA,sC;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;uBAE2B,8DAF3B;",
+"sources":["SimpleSafeHtmlRenderer.java"],
+"names":["org.gwtproject.text.shared.SimpleSafeHtmlRenderer.<synthetic: ctor_js>","org.gwtproject.text.shared.SimpleSafeHtmlRenderer.getInstance","org.gwtproject.text.shared.SimpleSafeHtmlRenderer.<synthetic: ctor_create>","org.gwtproject.text.shared.SimpleSafeHtmlRenderer.<init>","object","org.gwtproject.text.shared.SimpleSafeHtmlRenderer.render","appendable","org.gwtproject.text.shared.SimpleSafeHtmlRenderer.<clinit>"]
+}

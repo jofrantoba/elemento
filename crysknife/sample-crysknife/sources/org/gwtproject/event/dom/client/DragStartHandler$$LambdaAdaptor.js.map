@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DragStartHandler$$LambdaAdaptor.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;MAoBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;+E;EAAAA,8I;;;;;;CAAA,oI;EAAAC,iC;EAAAA,kF;;;;;;CAAA,6D;;GAAAC,6F;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["DragStartHandler.java"],
+"names":["org.gwtproject.event.dom.client.DragStartHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.dom.client.DragStartHandler$$LambdaAdaptor.<init>","org.gwtproject.event.dom.client.DragStartHandler$$LambdaAdaptor.onDragStart","org.gwtproject.event.dom.client.DragStartHandler$$LambdaAdaptor.<clinit>"]
+}

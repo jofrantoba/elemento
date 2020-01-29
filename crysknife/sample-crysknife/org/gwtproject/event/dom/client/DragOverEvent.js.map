@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DragOverEvent.impl.java.js",
+"lineCount":100,
+"mappings":"A;;;;;;;;;;;;;MAoBa,a;;;;CAAA,W;EAAAA,Q;;;;;;QAcD,S;EAAAC,wB;EAAAA,oC;EAAAA,mE;EAAAA,iB;;;;;CAAA,sD;EAAAC,kE;;;;;;QAO0B,W;EAAAC,wB;EAClCA,4E;;;;;;;CAIiC,qB;EACjCC,4E;;;;;;CAIa,2D,CAAyBC,O;EACtCC,0E;;;;;;;;CAhCS,4B;EAAAA,oI;;;;;QAAA,O;EAAAC,gC;EAAAA,6B;EAAAA,4B;EAEXA,qR;;;;;;;;;;;;;;;;;;;;;;;AAFW;cAGgC,sDAHhC;",
+"sources":["DragOverEvent.java"],
+"names":["org.gwtproject.event.dom.client.DragOverEvent.<synthetic: ctor_js>","org.gwtproject.event.dom.client.DragOverEvent.<synthetic: ctor_create>","org.gwtproject.event.dom.client.DragOverEvent.<init>","org.gwtproject.event.dom.client.DragOverEvent.getType","org.gwtproject.event.dom.client.DragOverEvent.getAssociatedType","handler","org.gwtproject.event.dom.client.DragOverEvent.dispatch","org.gwtproject.event.dom.client.DragOverEvent.<clinit>"]
+}

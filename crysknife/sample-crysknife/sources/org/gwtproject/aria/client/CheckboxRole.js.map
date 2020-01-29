@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CheckboxRole.impl.java.js",
+"lineCount":39,
+"mappings":"A;;;;;;;;;;;;MA4BiB,Y;;;;;;;CAOR,wD,CAA4BA,O;;;;;;CAM9B,2D,CAA+BA,O;;;;;;;CAM/B,iG,CAA4BA,O,EAAsBC,K;;;;QAnBxC,O;EAAAC,+B;EAAAA;",
+"sources":["CheckboxRole.java"],
+"names":["element","value","org.gwtproject.aria.client.CheckboxRole.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Command$$LambdaAdaptor.impl.java.js",
+"lineCount":45,
+"mappings":"A;;;;;;;;;MAIiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;iE;EAAAA,kH;;;;;;CAAA,wG;EAAAC,iC;EAAAA,oE;;;;;CAAA,W;;GAAAC,+E;GAAAA,Y;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["Command.java"],
+"names":["org.gwtproject.user.client.Command$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.client.Command$$LambdaAdaptor.<init>","org.gwtproject.user.client.Command$$LambdaAdaptor.execute","org.gwtproject.user.client.Command$$LambdaAdaptor.<clinit>"]
+}

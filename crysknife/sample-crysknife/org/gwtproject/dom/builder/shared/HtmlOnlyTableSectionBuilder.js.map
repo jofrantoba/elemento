@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HtmlOnlyTableSectionBuilder.impl.java.js",
+"lineCount":84,
+"mappings":"A;;;;;;;;;;MA6BmB,2B;;;;CAAA,W;EAAAA,Q;EAAAA;OA6BO,0EA7BPA,C;;;;;;QAKyB,sB;EAAAC,sC;EACxCA,IAAgBC,eAAhBD,+B;EACAA,iC;EACAA,+G;;;;;;QAMwC,sB;EAAAE,sC;EACxCA,IAAgBD,eAAhBC,+B;EACAA,iC;EACAA,+G;;;;;;QAMwC,sB;EAAAC,sC;EACxCA,IAAgBF,eAAhBE,+B;EACAA,iC;EACAA,+G;;;;;;;QAUM,0D,CAA4CC,Q;EAA5CC,kD;EAAAA,4I;EAAAA,iB;;;;;;CAAA,uH,CAA4CD,Q;EAClDE,mI;EACAA,2F;;;;;;;;CASyB,+C,CAAcC,I;EACvCC,sI;EACAA,wG;;;;;QAjDe,O;EAAAC,8C;EAAAA,2C;EAAAA;",
+"sources":["HtmlOnlyTableSectionBuilder.java"],
+"names":["org.gwtproject.dom.builder.shared.HtmlOnlyTableSectionBuilder.<synthetic: ctor_js>","org.gwtproject.dom.builder.shared.HtmlOnlyTableSectionBuilder.createTBodyBuilder","htmlBuilderImpl","org.gwtproject.dom.builder.shared.HtmlOnlyTableSectionBuilder.createTFootBuilder","org.gwtproject.dom.builder.shared.HtmlOnlyTableSectionBuilder.createTHeadBuilder","delegate","org.gwtproject.dom.builder.shared.HtmlOnlyTableSectionBuilder.<synthetic: ctor_create>","org.gwtproject.dom.builder.shared.HtmlOnlyTableSectionBuilder.<init>","html","org.gwtproject.dom.builder.shared.HtmlOnlyTableSectionBuilder.html","org.gwtproject.dom.builder.shared.HtmlOnlyTableSectionBuilder.<clinit>"]
+}

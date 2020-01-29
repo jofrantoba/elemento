@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"PropertyDescriptor.impl.java.js",
+"lineCount":28,
+"mappings":"A;;;;;;;;;MAwBiB,kB;;;;;;CAMP,c;;;;;;CAOD,mB;;;;QAbQ,O;EAAAA,qC;EAAAA;",
+"sources":["PropertyDescriptor.java"],
+"names":["javax.validation.metadata.PropertyDescriptor.<clinit>"]
+}

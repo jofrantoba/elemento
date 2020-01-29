@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AbstractDataProvider$1.impl.java.js",
+"lineCount":63,
+"mappings":"A;;;;;;;;;;;;;;MAsFkE,E;;;;CAAA,W;EAAAA,Q;EAAAA;wE;EAAAA;OAbOC,UAaPD,C;;;;;;;;;QAAA,4F;EAAAE,a;EAAAA,yB;EAAAA,iL;EAAAA,iB;;;;;;;CAAA,6I;EAAAC,oF;EAAAA,6B;EAAAA,iC;;;;;;;CAC5C,4D,CAA0DC,K;EACpEC,4I;;;;;QAFsD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["AbstractDataProvider.java"],
+"names":["org.gwtproject.view.client.AbstractDataProvider$1.<synthetic: ctor_js>","display","org.gwtproject.view.client.AbstractDataProvider$1.<synthetic: ctor_create>","org.gwtproject.view.client.AbstractDataProvider$1.<init>","event","org.gwtproject.view.client.AbstractDataProvider$1.onRangeChange","org.gwtproject.view.client.AbstractDataProvider$1.<clinit>"]
+}

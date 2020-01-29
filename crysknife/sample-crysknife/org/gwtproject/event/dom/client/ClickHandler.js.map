@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ClickHandler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;MAoBiB,Y;;;;;;CAOV,qD,CAAmBA,K;;;;;;QAPT,M;EAAAC,uB;EAAAA,8B;;;;;QAAA,O;EAAAC,+B;EAAAA;",
+"sources":["ClickHandler.java"],
+"names":["event","org.gwtproject.event.dom.client.ClickHandler.<synthetic: adapt_lambda>","org.gwtproject.event.dom.client.ClickHandler.<clinit>"]
+}

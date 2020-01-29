@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TableCaptionElement$$Overlay.impl.java.js",
+"lineCount":85,
+"mappings":"A;;;;;;;;;;;MA6Ba,4B;;;;;;QAUuB,uC,CAAWA,I;EAAXC,uC;EAChCA,6F;EACAA,6E;;;;;;;QASoB,iD,CAAoBC,C;EAApBC,uC;EACpBA;GACEA,4HADFA;G;EAGAA,a;;;;;;;QASoB,oC,CAAQC,I;EAARD,uC;EACpBA;GACEA,+HADFA;G;EAGAA,a;;;;;;;QASoB,uC,CAAWH,I;EAAXG,uC;EACpBA,6N;;;;;QAhDS,O;EAAAE,+C;EAAAA,4C;;;;;;;;;;;;;;;;;;;;;;;AAEX;6BAC2B,6DAD3B;",
+"sources":["TableCaptionElement.java"],
+"names":["elem","org.gwtproject.dom.client.TableCaptionElement$$Overlay.as","o","org.gwtproject.dom.client.TableCaptionElement$$Overlay.is","node","org.gwtproject.dom.client.TableCaptionElement$$Overlay.<clinit>"]
+}

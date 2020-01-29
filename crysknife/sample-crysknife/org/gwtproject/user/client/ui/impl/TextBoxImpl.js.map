@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TextBoxImpl.impl.java.js",
+"lineCount":116,
+"mappings":"A;;;;;;;;;;;;;;MA0Ba,W;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,sB;EAAAA,kC;EAAAA,oE;EAAAA,iB;;;;;CAAA,uD;EAAAC,iC;;;;;;;CAEA,iD,CAAqBC,I;EAC9BC,IAAcC,QAAdD,8C;EACAA;GACIA;IACEA,sMADFA;;IAEsBA,oCAFtBA;IAEsBA;KAAAA,+BAAAA;KAFtBA;IADJA;G;EAOAA,S;;;;;;;CAGS,uD,CAA2BD,I;EACpCG,IAAcD,QAAdC,8C;EACAA;GACEA;IACEA,IAAIC,YAAJD,gMADFA;IAEEA,IAAIE,cAAJF,kMAFFA;IAGEA,qCAHFA;;IAIsBA,oCAJtBA;IAIsBA;KAAAA,+BAAAA;KAJtBA;IADFA;G;EASAA,S;;;;;;;CAGS,yD,CAA6BH,I;EACtCM,oE;;;;;;;CAGS,+D,CAAmCN,I;EAC5CO,0E;;;;;;;;CAGU,gE,CAA0BP,I,EAAUQ,G,EAASC,M;EACvDC;GACEA,iHADFA;;GAEsBA,oCAFtBA;GAEsBA;IAAAA,+BAAAA;IAFtBA;G;;;;;QArCS,O;EAAAC,8B;EAAAA,2B;EAAAA;",
+"sources":["TextBoxImpl.java"],
+"names":["org.gwtproject.user.client.ui.impl.TextBoxImpl.<synthetic: ctor_js>","org.gwtproject.user.client.ui.impl.TextBoxImpl.<synthetic: ctor_create>","org.gwtproject.user.client.ui.impl.TextBoxImpl.<init>","elem","org.gwtproject.user.client.ui.impl.TextBoxImpl.getCursorPos","jsObject","org.gwtproject.user.client.ui.impl.TextBoxImpl.getSelectionLength","selectionEnd","selectionStart","org.gwtproject.user.client.ui.impl.TextBoxImpl.getTextAreaCursorPos","org.gwtproject.user.client.ui.impl.TextBoxImpl.getTextAreaSelectionLength","pos","length","org.gwtproject.user.client.ui.impl.TextBoxImpl.setSelectionRange","org.gwtproject.user.client.ui.impl.TextBoxImpl.<clinit>"]
+}

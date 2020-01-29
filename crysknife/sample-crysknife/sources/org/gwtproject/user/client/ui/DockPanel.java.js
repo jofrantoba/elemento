@@ -1,0 +1,33 @@
+goog.module('org.gwtproject.user.client.ui.DockPanel');
+
+goog.require('nativebootstrap.Util');
+goog.require('org.gwtproject.user.client.ui.CellPanel');
+goog.require('org.gwtproject.user.client.ui.HasAlignment');
+goog.require('java.lang.IllegalArgumentException');
+goog.require('java.lang.Integer');
+goog.require('java.lang.Iterable');
+goog.require('java.util.HashMap');
+goog.require('java.util.Spliterator');
+goog.require('java.util.function.Consumer');
+goog.require('nativebootstrap.Equality');
+goog.require('org.gwtproject.dom.client.Element.$Overlay');
+goog.require('org.gwtproject.dom.client.Style.$Overlay');
+goog.require('org.gwtproject.i18n.client.LocaleInfo');
+goog.require('org.gwtproject.user.client.DOM');
+goog.require('org.gwtproject.user.client.ui.DockPanel.DockLayoutConstant');
+goog.require('org.gwtproject.user.client.ui.DockPanel.LayoutData');
+goog.require('org.gwtproject.user.client.ui.DockPanel.TmpRow');
+goog.require('org.gwtproject.user.client.ui.HasHorizontalAlignment');
+goog.require('org.gwtproject.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant');
+goog.require('org.gwtproject.user.client.ui.HasVerticalAlignment');
+goog.require('org.gwtproject.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant');
+goog.require('org.gwtproject.user.client.ui.IsWidget');
+goog.require('org.gwtproject.user.client.ui.UIObject');
+goog.require('org.gwtproject.user.client.ui.Widget');
+goog.require('vmbootstrap.Arrays');
+goog.require('vmbootstrap.Asserts');
+goog.require('vmbootstrap.Casts');
+goog.require('vmbootstrap.Exceptions');
+
+const DockPanel = goog.require('org.gwtproject.user.client.ui.DockPanel$impl');
+exports = DockPanel; 

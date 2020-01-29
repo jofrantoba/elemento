@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasDirectionalHtml.impl.java.js",
+"lineCount":27,
+"mappings":"A;;;;;;;;;;;;;MAuBiB,kB;;;;;;;CAOV,8E,CAA2BA,I,EAAgBC,G;;;;QAPjC,O;EAAAC,qC;EAAAA;",
+"sources":["HasDirectionalHtml.java"],
+"names":["html","dir","org.gwtproject.user.client.ui.HasDirectionalHtml.<clinit>"]
+}

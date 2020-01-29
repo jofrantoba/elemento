@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DOMImplStandardBase.impl.java.js",
+"lineCount":35,
+"mappings":"A;;;;;MAoBa,mB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,8B;EAAAA,0C;EAAAA,yE;EAAAA,iB;;;;;CAAA,4D;EAAAC,gE;;;;;QAAA,O;EAAAC,sC;EAAAA,mC;EAAAA;",
+"sources":["DOMImplStandardBase.java"],
+"names":["org.gwtproject.user.client.impl.DOMImplStandardBase.<synthetic: ctor_js>","org.gwtproject.user.client.impl.DOMImplStandardBase.<synthetic: ctor_create>","org.gwtproject.user.client.impl.DOMImplStandardBase.<init>","org.gwtproject.user.client.impl.DOMImplStandardBase.<clinit>"]
+}

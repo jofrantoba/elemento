@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CloseHandler$$LambdaAdaptor.impl.java.js",
+"lineCount":49,
+"mappings":"A;;;;;;;;;;;;MAsBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;+E;EAAAA,8I;;;;;;CAAA,oI;EAAAC,iC;EAAAA,kF;;;;;;CAAA,yD;;GAAAC,6F;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["CloseHandler.java"],
+"names":["org.gwtproject.event.logical.shared.CloseHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.logical.shared.CloseHandler$$LambdaAdaptor.<init>","org.gwtproject.event.logical.shared.CloseHandler$$LambdaAdaptor.onClose","org.gwtproject.event.logical.shared.CloseHandler$$LambdaAdaptor.<clinit>"]
+}

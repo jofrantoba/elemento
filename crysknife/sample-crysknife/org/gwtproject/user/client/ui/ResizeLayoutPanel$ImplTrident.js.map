@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ResizeLayoutPanel$ImplTrident.impl.java.js",
+"lineCount":87,
+"mappings":"A;;;;;;;;;;;MA8Qe,W;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,sB;EAAAA,kC;EAAAA,iF;EAAAA,iB;;;;;CAAA,oE;EAAAC,qE;;;;;;;;CAGC,wG,CAAaC,I,EAAeC,Q;EACtCC,+H;EACAA,uI;;;;;;CAIU,Y;EACVC,qB;EACAA,iQ;;;;;;CAIU,Y;EACVC,qB;EACAA,iQ;;;;;;CAQW,2H,CAAgCJ,I;EAC3CK,IAAGC,IAAHD;GACEE;IACEA,+KADFA;IADFF;I;EAKAA,4M;;;;;;;CAMW,gL,CAA+BL,I,EAAWQ,Q;EACrDC,iJ;;;;;QAtCS,O;EAAAC,8B;EAAAA,2B;EAAAA;",
+"sources":["ResizeLayoutPanel.java"],
+"names":["org.gwtproject.user.client.ui.ResizeLayoutPanel$ImplTrident.<synthetic: ctor_js>","org.gwtproject.user.client.ui.ResizeLayoutPanel$ImplTrident.<synthetic: ctor_create>","org.gwtproject.user.client.ui.ResizeLayoutPanel$ImplTrident.<init>","elem","delegate","org.gwtproject.user.client.ui.ResizeLayoutPanel$ImplTrident.init","org.gwtproject.user.client.ui.ResizeLayoutPanel$ImplTrident.onAttach","org.gwtproject.user.client.ui.ResizeLayoutPanel$ImplTrident.onDetach","org.gwtproject.user.client.ui.ResizeLayoutPanel$ImplTrident.initResizeEventListener","func","org.gwtproject.user.client.ui.ResizeLayoutPanel$ImplTrident.<lambda in initResizeEventListener>","listener","org.gwtproject.user.client.ui.ResizeLayoutPanel$ImplTrident.setResizeEventListener","org.gwtproject.user.client.ui.ResizeLayoutPanel$ImplTrident.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SplitResult.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;MAiBiB,W;;;;;;;CAON,U,CAAQA,K;;;;;;CAOX,U;;;;;;;CAQC,4B,CAAQA,K,EAAcC,K;;;;QAtBd,O;EAAAC,8B;EAAAA;",
+"sources":["SplitResult.java"],
+"names":["index","value","org.gwtproject.regexp.shared.SplitResult.<clinit>"]
+}

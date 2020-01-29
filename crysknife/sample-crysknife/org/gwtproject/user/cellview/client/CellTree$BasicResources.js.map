@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CellTree$BasicResources.impl.java.js",
+"lineCount":90,
+"mappings":"A;;;;;;;;;;;;;MA2EmB,c;;;;;;;CAID,sB;;;;;;;CAIA,mB;;;;;;;CAGA,oB;;;;;;;CAMH,iB;;;;;QAhBX,2E;EAAAA,2H;;;;;QADe,O;EAAAC,iC;EAAAA,8B;EACfA,mI;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AADe;;",
+"sources":["CellTree.java"],
+"names":["org.gwtproject.user.cellview.client.CellTree$BasicResources.<synthetic: getter>","org.gwtproject.user.cellview.client.CellTree$BasicResources.<clinit>"]
+}

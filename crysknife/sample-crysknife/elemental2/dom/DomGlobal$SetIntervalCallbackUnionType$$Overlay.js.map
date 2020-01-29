@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DomGlobal$SetIntervalCallbackUnionType$$Overlay.impl.java.js",
+"lineCount":80,
+"mappings":"A;;;;;;;;;;MAwRmB,qC;;;;;;QAE+B,sB,CAAUA,C;EAAVC,gD;EAC5CA,wD;;;;;;;QAIsC,yF;EAAAC,gD;EACtCA,mH;;;;;;;QAIa,0E;EAAAC,gD;EACbA,iD;;;;;;;QAIoB,iF;EAAAC,gD;EACpBA,iG;;;;;;;QAIc,yF;EAAAC,gD;EACdA,mE;;;;;;;QAIc,0E;EAAAC,gD;EACdA,0D;;;;;;;QAIc,iF;EAAAC,gD;EACdA,wD;;;;;QAjCa,O;EAAAC,wD;EAAAA;",
+"sources":["DomGlobal.java"],
+"names":["o","elemental2.dom.DomGlobal$SetIntervalCallbackUnionType$$Overlay.of","elemental2.dom.DomGlobal$SetIntervalCallbackUnionType$$Overlay.asSetIntervalCallbackFn__$devirt","elemental2.dom.DomGlobal$SetIntervalCallbackUnionType$$Overlay.asString__$devirt","elemental2.dom.DomGlobal$SetIntervalCallbackUnionType$$Overlay.asTrustedScript__$devirt","elemental2.dom.DomGlobal$SetIntervalCallbackUnionType$$Overlay.isSetIntervalCallbackFn__$devirt","elemental2.dom.DomGlobal$SetIntervalCallbackUnionType$$Overlay.isString__$devirt","elemental2.dom.DomGlobal$SetIntervalCallbackUnionType$$Overlay.isTrustedScript__$devirt","elemental2.dom.DomGlobal$SetIntervalCallbackUnionType$$Overlay.<clinit>"]
+}

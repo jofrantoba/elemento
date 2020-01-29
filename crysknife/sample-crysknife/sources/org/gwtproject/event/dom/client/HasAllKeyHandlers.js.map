@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasAllKeyHandlers.impl.java.js",
+"lineCount":20,
+"mappings":"A;;;;;;;;;;;;;MAwBiB,iB;;;;QAAA,O;EAAAA,oC;EAAAA;",
+"sources":["HasAllKeyHandlers.java"],
+"names":["org.gwtproject.event.dom.client.HasAllKeyHandlers.<clinit>"]
+}

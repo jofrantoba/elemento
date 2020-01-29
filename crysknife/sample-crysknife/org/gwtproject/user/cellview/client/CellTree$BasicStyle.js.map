@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CellTree$BasicStyle.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;MAqcY,U;;;;QAAA,O;EAAAA,6B;EAAAA,0B;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AACR;WAGO,sEAHP;",
+"sources":["CellTree.java"],
+"names":["org.gwtproject.user.cellview.client.CellTree$BasicStyle.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TabBar$Tab.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;;MA4EmB,G;;;;;;CAMP,e;;;;QANO,O;EAAAA,sB;EAAAA;",
+"sources":["TabBar.java"],
+"names":["org.gwtproject.user.client.ui.TabBar$Tab.<clinit>"]
+}

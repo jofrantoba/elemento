@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DockLayoutPanel$Direction.impl.java.js",
+"lineCount":187,
+"mappings":"A;;;;;;;;;;;;;MA0Fc,S;;;;CAAA,W;EAAAA,Q;;;;;;;;QAAA,8B;EAAAC,gC;EAAAA,iH;EAAAA,iB;;;;;;;CAAA,qF;EAAAC,qC;EAAAA,2C;EAAAA,mE;;;;;;;QAAA,2B;EAAAC,oB;EAAAA;GAAAA,4IAAAA;G;EAAAA,mI;;;;;;QAAA,U;EAAAC,oB;EAAAA,smB;;;;;;;;;CAAA,6B;EAAAC,8E;;;;;;QACV,oE;EAAAC,0G;;;;;;QAAO,mE;EAAAA,yG;;;;;;QAAM,oE;EAAAA,0G;;;;;;QAAO,mE;EAAAA,yG;;;;;;QAAM,qE;EAAAA,2G;;;;;;QAAQ,yE;EAAAA,+G;;;;;;QAAY,uE;EAAAA,6G;;;;;QADpC,O;EAAAC,4B;EAAAA,yB;EAAAA,e;EACVA,0O;EAAOA,uO;EAAMA,0O;EAAOA,uO;EAAMA,6O;EAAQA,yP;EAAYA,mP;EADpCA,8F;;;;;;;;;;;;;;;;;;;;;;;AAAA;4E;AAAA;2E;AAAA;4E;AAAA;2E;AAAA;6E;AAAA;iF;AAAA;+E;AAAA;uF;AACV;wF;AAAO;uF;AAAM;wF;AAAO;uF;AAAM;yF;AAAQ;6F;AAAY;;",
+"sources":["DockLayoutPanel.java"],
+"names":["org.gwtproject.user.client.ui.DockLayoutPanel$Direction.<synthetic: ctor_js>","org.gwtproject.user.client.ui.DockLayoutPanel$Direction.<synthetic: ctor_create>","org.gwtproject.user.client.ui.DockLayoutPanel$Direction.<init>","org.gwtproject.user.client.ui.DockLayoutPanel$Direction.valueOf","org.gwtproject.user.client.ui.DockLayoutPanel$Direction.values","org.gwtproject.user.client.ui.DockLayoutPanel$Direction.compareTo","org.gwtproject.user.client.ui.DockLayoutPanel$Direction.<synthetic: getter>","org.gwtproject.user.client.ui.DockLayoutPanel$Direction.<clinit>"]
+}

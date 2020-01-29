@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Column$1.impl.java.js",
+"lineCount":66,
+"mappings":"A;;;;;;;;;;;;MAmJyF,E;;;;CAAA,W;EAAAA,Q;EAAAA;mE;EAAAA;OAD3EC,QAC2ED,K;EAAAA;OAFrBE,SAEqBF,C;;;;;;;;;;QAAA,0E;EAAAG,a;EAAAA,yB;EAAAA,mK;EAAAA,iB;;;;;;;;CAAA,sH;EAAAC,+E;EAAAA,yB;EAAAA,2B;EAAAA,iC;;;;;;;CAEvE,0B,CAASC,K;EACnBC,qN;;;;;QAHiF,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["Column.java"],
+"names":["org.gwtproject.user.cellview.client.Column$1.<synthetic: ctor_js>","index","object","org.gwtproject.user.cellview.client.Column$1.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.Column$1.<init>","value","org.gwtproject.user.cellview.client.Column$1.update","org.gwtproject.user.cellview.client.Column$1.<clinit>"]
+}

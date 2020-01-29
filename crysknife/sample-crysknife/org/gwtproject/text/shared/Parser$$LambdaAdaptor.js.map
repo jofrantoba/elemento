@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Parser$$LambdaAdaptor.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;;MAIiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gE;EAAAA,gH;;;;;;CAAA,sG;EAAAC,iC;EAAAA,mE;;;;;;;CAAA,+B;EAAAC,wD;EAAAA,oG;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["Parser.java"],
+"names":["org.gwtproject.text.shared.Parser$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.text.shared.Parser$$LambdaAdaptor.<init>","org.gwtproject.text.shared.Parser$$LambdaAdaptor.parse","org.gwtproject.text.shared.Parser$$LambdaAdaptor.<clinit>"]
+}

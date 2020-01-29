@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ResizeLayoutPanel$ImplStandard$1.impl.java.js",
+"lineCount":53,
+"mappings":"A;;;;;;;;;;;MA0L8D,E;;;;CAAA,W;EAAAA,Q;EAAAA;qF;;;;;;;QAAA,qE;EAAAC,a;EAAAA,yB;EAAAA,2J;EAAAA,iB;;;;;;CAAA,mI;EAAAC,iG;EAAAA,iC;;;;;;CAC1C,W;EACVC,0K;;;;;QAFoD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["ResizeLayoutPanel.java"],
+"names":["org.gwtproject.user.client.ui.ResizeLayoutPanel$ImplStandard$1.<synthetic: ctor_js>","org.gwtproject.user.client.ui.ResizeLayoutPanel$ImplStandard$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.ResizeLayoutPanel$ImplStandard$1.<init>","org.gwtproject.user.client.ui.ResizeLayoutPanel$ImplStandard$1.execute","org.gwtproject.user.client.ui.ResizeLayoutPanel$ImplStandard$1.<clinit>"]
+}

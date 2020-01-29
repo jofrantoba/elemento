@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HeadBuilder.impl.java.js",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MAoBiB,W;;;;QAAA,O;EAAAA,8B;EAAAA;",
+"sources":["HeadBuilder.java"],
+"names":["org.gwtproject.dom.builder.shared.HeadBuilder.<clinit>"]
+}

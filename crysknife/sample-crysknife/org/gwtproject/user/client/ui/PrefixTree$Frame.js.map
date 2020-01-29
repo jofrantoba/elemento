@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"PrefixTree$Frame.impl.java.js",
+"lineCount":59,
+"mappings":"A;;;;;;;;;MA8dyB,K;;;;CAAA,W;EAAAA,Q;EAAAA;OAEJ,6DAFIA,C;EAAAA;OAGM,0DAHNA,C;EAAAA;OAIV,wDAJUA,C;EAAAA;OAKb,uDALaA,K;;;;;;;;;;QAOjB,6D,CAAmBC,Q,EAAiCC,Q,EAAiBC,M,EAAYC,K;EAAjFC,gB;EAAAA,4B;EAAAA,yJ;EAAAA,iB;;;;;;;;;CAAA,2G,CAAmBJ,Q,EAAiCC,Q,EAAiBC,M,EAAYC,K;EAAjFE,iC;EACIA,2E;EACAA,8E;EACAA,uE;EACAA,qE;;;;;QAXa,O;EAAAC,wB;EAAAA,qB;EAAAA;",
+"sources":["PrefixTree.java"],
+"names":["org.gwtproject.user.client.ui.PrefixTree$Frame.<synthetic: ctor_js>","suffixes","subtrees","prefix","index","org.gwtproject.user.client.ui.PrefixTree$Frame.<synthetic: ctor_create>","org.gwtproject.user.client.ui.PrefixTree$Frame.<init>","org.gwtproject.user.client.ui.PrefixTree$Frame.<clinit>"]
+}

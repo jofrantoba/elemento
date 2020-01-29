@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Tree$Resources.impl.java.js",
+"lineCount":79,
+"mappings":"A;;;;;;;;;;;;MA4GmB,S;;;;;;CAOD,c;;;;;;CAKA,Y;;;;;;CAKA,Y;;;;;QAfd,4D;EAAAA,kG;;;;;QAFe,O;EAAAC,4B;EAAAA,yB;EAEfA,sG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFe;;",
+"sources":["Tree.java"],
+"names":["org.gwtproject.user.client.ui.Tree$Resources.<synthetic: getter>","org.gwtproject.user.client.ui.Tree$Resources.<clinit>"]
+}

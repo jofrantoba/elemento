@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Editor$Ignore$$LambdaAdaptor.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;;;;MA8CoB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;yE;EAAAA,kI;;;;;;CAAA,wH;EAAAC,iC;EAAAA,4E;;;;;;CAAA,kB;EAAAC,0C;EAAAA,yG;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["Editor.java"],
+"names":["org.gwtproject.editor.client.Editor$Ignore$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.editor.client.Editor$Ignore$$LambdaAdaptor.<init>","org.gwtproject.editor.client.Editor$Ignore$$LambdaAdaptor.annotationType","org.gwtproject.editor.client.Editor$Ignore$$LambdaAdaptor.<clinit>"]
+}

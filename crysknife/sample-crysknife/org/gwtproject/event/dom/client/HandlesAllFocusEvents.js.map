@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HandlesAllFocusEvents.impl.java.js",
+"lineCount":53,
+"mappings":"A;;;;;;;;;;;;;;;MAkBsB,qB;;;;CAAA,W;EAAAA,Q;;;;;CAGb,8D;EAAAC,iC;;;;;;CAOK,6D,CAA2BC,M;EACrCC,+I;;;;;;;;QAWwD,0G,CAClCC,W,EAAeC,Q;EADmBF,gC;EAExDA,oF;EACAA,6I;;;;;QAzBkB,O;EAAAG,wC;EAAAA,qC;EAAAA;",
+"sources":["HandlesAllFocusEvents.java"],
+"names":["org.gwtproject.event.dom.client.HandlesAllFocusEvents.<synthetic: ctor_js>","org.gwtproject.event.dom.client.HandlesAllFocusEvents.<init>","source","org.gwtproject.event.dom.client.HandlesAllFocusEvents.handle","eventSource","reciever","org.gwtproject.event.dom.client.HandlesAllFocusEvents.<clinit>"]
+}

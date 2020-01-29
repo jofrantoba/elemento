@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HandlesAllTouchEvents.impl.java.js",
+"lineCount":59,
+"mappings":"A;;;;;;;;;;;;;;;;;;;MAwBsB,qB;;;;CAAA,W;EAAAA,Q;;;;;CAIb,8D;EAAAC,iC;;;;;;CAOK,6D,CAA2BC,W;EACrCC,0J;;;;;;;;QAYO,gH,CAA2BC,M,EAAUC,Q;EAArCF,gC;EACPA,2F;EACAA,wJ;EACAA,oJ;EACAA,gK;;;;;QA5BkB,O;EAAAG,wC;EAAAA,qC;EAAAA;",
+"sources":["HandlesAllTouchEvents.java"],
+"names":["org.gwtproject.event.dom.client.HandlesAllTouchEvents.<synthetic: ctor_js>","org.gwtproject.event.dom.client.HandlesAllTouchEvents.<init>","eventSource","org.gwtproject.event.dom.client.HandlesAllTouchEvents.handle","source","reciever","org.gwtproject.event.dom.client.HandlesAllTouchEvents.<clinit>"]
+}

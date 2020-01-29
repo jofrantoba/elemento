@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ExternalTextResourcePrototype$ETRCallback$1.impl.java.js",
+"lineCount":67,
+"mappings":"A;;;;;;;;;;;MA6J6B,E;;;;CAAA,W;EAAAA,Q;EAAAA;uG;EAAAA;OAFVC,eAEUD,C;;;;;;;;QAAA,yG;EAAAE,a;EAAAA,yB;EAAAA,kO;EAAAA,iB;;;;;;;CAAA,yL;EAAAC,mH;EAAAA,uC;EAAAA,iC;;;;;;;CAEH,W;EACZC,sR;;;;;;;CAGY,W;EACZC,4B;;;;;QAPe,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["ExternalTextResourcePrototype.java"],
+"names":["org.gwtproject.resources.client.impl.ExternalTextResourcePrototype$ETRCallback$1.<synthetic: ctor_js>","resourceText","org.gwtproject.resources.client.impl.ExternalTextResourcePrototype$ETRCallback$1.<synthetic: ctor_create>","org.gwtproject.resources.client.impl.ExternalTextResourcePrototype$ETRCallback$1.<init>","org.gwtproject.resources.client.impl.ExternalTextResourcePrototype$ETRCallback$1.getName","org.gwtproject.resources.client.impl.ExternalTextResourcePrototype$ETRCallback$1.getText","org.gwtproject.resources.client.impl.ExternalTextResourcePrototype$ETRCallback$1.<clinit>"]
+}

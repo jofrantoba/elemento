@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"LoseCaptureHandler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;MAoBiB,kB;;;;;;CAOV,iE,CAA+BA,K;;;;;;QAPrB,M;EAAAC,6B;EAAAA,8B;;;;;QAAA,O;EAAAC,qC;EAAAA;",
+"sources":["LoseCaptureHandler.java"],
+"names":["event","org.gwtproject.event.dom.client.LoseCaptureHandler.<synthetic: adapt_lambda>","org.gwtproject.event.dom.client.LoseCaptureHandler.<clinit>"]
+}

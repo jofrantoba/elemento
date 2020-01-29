@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"MouseMoveHandler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;MAoBiB,gB;;;;;;CAOV,6D,CAA2BA,K;;;;;;QAPjB,M;EAAAC,2B;EAAAA,8B;;;;;QAAA,O;EAAAC,mC;EAAAA;",
+"sources":["MouseMoveHandler.java"],
+"names":["event","org.gwtproject.event.dom.client.MouseMoveHandler.<synthetic: adapt_lambda>","org.gwtproject.event.dom.client.MouseMoveHandler.<clinit>"]
+}

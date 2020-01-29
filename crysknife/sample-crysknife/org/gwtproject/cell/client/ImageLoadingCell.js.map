@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ImageLoadingCell.impl.java.js",
+"lineCount":159,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;MAmCa,gB;;;;CAAA,W;EAAAA,Q;EAAAA;OA8G4B,6DA9G5BA,C;EAAAA;OA+G4B,6DA/G5BA,C;EAAAA;OAgH4B,+DAhH5BA,C;;;;;;;QA4HJ,S;EAAAC,2B;EAAAA,uC;EAAAA,iE;EAAAA,iB;;;;;;CAAA,oD;EACLC,6I;;;;;;;;QASK,8D,CAA2BC,S;EAA3BF,2B;EAAAA,uC;EAAAA,+H;EAAAA,iB;;;;;;;CAAA,yG,CAA2BE,S;EAChCD,0Q;EACAA,sG;EACAA,sG;EACAA,0G;;;;;;;;;;CAIU,8L,CAAuBE,O,EAAiBC,M,EAAeC,K,EAC5BC,K,EAAuDC,Y;EAG5FC,IAAOC,IAAPD,6E;EACAA;GAEEA,2QAFFA;GAKEA,IAAQE,UAARF,kOALFA;GAMEA,+IANFA;GAOEA,8IAPFA;GAQEA,iJARFA;SASOA;GAELA,4TAFKA;G;;;;;;;;CAOG,mH,CAAeL,O,EAAgBE,K,EAAuBM,E;EAGhEC;GACEA,2RADFA;GAEEA,uRAFFA;G;;;;;;;;CAcc,+I,CAAiCN,K,EAAeF,M;EAC9DS,IAAYC,WAAZD,oF;EACAA;GACEA,aADFA;G;EAGAA,IAAQE,MAARF,4J;EAGAA,IAAQH,UAARG,qL;EACAA,iI;;;;;;;;;;;;CA7LS,8L;EAAAL,kR;;;;;;;;;;CAAA,mH;EAAAI,2L;;;;;QAAA,O;EAAAI,mC;EAAAA,gC;EAAAA;",
+"sources":["ImageLoadingCell.java"],
+"names":["org.gwtproject.cell.client.ImageLoadingCell.<synthetic: ctor_js>","org.gwtproject.cell.client.ImageLoadingCell.<synthetic: ctor_create>","org.gwtproject.cell.client.ImageLoadingCell.<init>","renderers","context","parent","value","event","valueUpdater","org.gwtproject.cell.client.ImageLoadingCell.onBrowserEvent","type","imgWrapper","sb","org.gwtproject.cell.client.ImageLoadingCell.render","org.gwtproject.cell.client.ImageLoadingCell.eventOccurredOnImage","eventTarget","target","org.gwtproject.cell.client.ImageLoadingCell.<clinit>"]
+}

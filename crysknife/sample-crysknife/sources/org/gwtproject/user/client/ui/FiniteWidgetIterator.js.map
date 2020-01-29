@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"FiniteWidgetIterator.impl.java.js",
+"lineCount":119,
+"mappings":"A;;;;;;;;;;;;;;;;;MA+BM,oB;;;;CAAA,W;EAAAA,Q;EAAAA;OASQ,4DATRA,K;EAAAA;OAUyB,+DAVzBA,C;EAAAA;OAWc,kEAXdA,K;;;;;;;;QAuBG,+E,CAAoCC,Q,EAAcC,W;EAAlDC,+B;EAAAA,2C;EAAAA,mK;EAAAA,iB;;;;;;;CAAA,iI,CAAoCF,Q,EAAcC,W;EAAlDE,iC;EAAAA,qE;EACLA,gF;EACAA,sF;;;;;;;CAGa,W;EAEbC,SAASC,CAATD;GACEA,IAASE,CAATF,sFADFA;GAEEA;IACEA,YADFA;IAFFA;G;EAMAA,a;;;;;;;CAGY,Q;EAEZG,SAASF,CAATE;GACEA,sEADFA;GAEEA,IAASD,CAATC,sFAFFA;GAGEA;IACEA,wBADFA;IAHFA;G;EAOAA,2D;;;;;;CAGU,U;EACVC;GACEA,0DADFA;G;EAGAA,IAASF,CAATE,sJ;EACAA;GACEA,uGADFA;G;EAGAA,wC;;;;;;;;CA3DE,+C;EAAAC,mG;;;;;CAAA,6D;EASJN,uE;;;;;QATI,O;EAAAO,uC;EAAAA,oC;EAAAA,qB;EAAAA;",
+"sources":["FiniteWidgetIterator.java"],
+"names":["org.gwtproject.user.client.ui.FiniteWidgetIterator.<synthetic: ctor_js>","provider","widgetCount","org.gwtproject.user.client.ui.FiniteWidgetIterator.<synthetic: ctor_create>","org.gwtproject.user.client.ui.FiniteWidgetIterator.<init>","org.gwtproject.user.client.ui.FiniteWidgetIterator.hasNext","i","w","org.gwtproject.user.client.ui.FiniteWidgetIterator.next","org.gwtproject.user.client.ui.FiniteWidgetIterator.remove","org.gwtproject.user.client.ui.FiniteWidgetIterator.forEachRemaining","org.gwtproject.user.client.ui.FiniteWidgetIterator.<clinit>"]
+}

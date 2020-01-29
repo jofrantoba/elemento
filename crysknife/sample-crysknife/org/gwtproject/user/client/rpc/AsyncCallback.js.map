@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AsyncCallback.impl.java.js",
+"lineCount":29,
+"mappings":"A;;;;;;;;;;MA2FiB,a;;;;;;CAgBV,gC,CAAoBA,M;;;;;;CAOpB,6B,CAAYC,M;;;;QAvBF,O;EAAAC,gC;EAAAA;",
+"sources":["AsyncCallback.java"],
+"names":["caught","result","org.gwtproject.user.client.rpc.AsyncCallback.<clinit>"]
+}

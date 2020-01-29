@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DragEndHandler$$LambdaAdaptor.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;MAoBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;6E;EAAAA,0I;;;;;;CAAA,gI;EAAAC,iC;EAAAA,gF;;;;;;CAAA,yD;;GAAAC,2F;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["DragEndHandler.java"],
+"names":["org.gwtproject.event.dom.client.DragEndHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.dom.client.DragEndHandler$$LambdaAdaptor.<init>","org.gwtproject.event.dom.client.DragEndHandler$$LambdaAdaptor.onDragEnd","org.gwtproject.event.dom.client.DragEndHandler$$LambdaAdaptor.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"LocalizableResource$Description.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;MA0DoB,W;;;;;;CAChB,S;;;;QADgB,O;EAAAA,8B;EAAAA;",
+"sources":["LocalizableResource.java"],
+"names":["org.gwtproject.i18n.client.LocalizableResource$Description.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ImageResourcePrototype$Bundle.impl.java.js",
+"lineCount":53,
+"mappings":"A;;;;;;;MA6BsB,M;;;;CAAA,W;EAAAA,Q;;;;;;;;;;;;;;QACX,uG,CACIC,I,EACCC,G,EACJC,I,EACAC,G,EACAC,K,EACAC,M,EACIC,Q,EACAC,K;EARLC,iB;EAAAA,6B;EAAAA,0O;EAAAA,iB;;;;;;;;;;;;;CAAA,yK,CACIR,I,EACCC,G,EACJC,I,EACAC,G,EACAC,K,EACAC,M,EACIC,Q,EACAC,K;EACVE,8N;;;;;QAVgB,O;EAAAC,yB;EAAAA,sB;EAAAA;",
+"sources":["ImageResourcePrototype.java"],
+"names":["org.gwtproject.resources.client.impl.ImageResourcePrototype$Bundle.<synthetic: ctor_js>","name","url","left","top","width","height","animated","lossy","org.gwtproject.resources.client.impl.ImageResourcePrototype$Bundle.<synthetic: ctor_create>","org.gwtproject.resources.client.impl.ImageResourcePrototype$Bundle.<init>","org.gwtproject.resources.client.impl.ImageResourcePrototype$Bundle.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasMouseDownHandlers.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;MAwBiB,oB;;;;;;;CAQK,uE,CAAqCA,O;;;;QAR1C,O;EAAAC,uC;EAAAA;",
+"sources":["HasMouseDownHandlers.java"],
+"names":["handler","org.gwtproject.event.dom.client.HasMouseDownHandlers.<clinit>"]
+}

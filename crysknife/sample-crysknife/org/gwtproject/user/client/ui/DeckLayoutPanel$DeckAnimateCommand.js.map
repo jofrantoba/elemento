@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DeckLayoutPanel$DeckAnimateCommand.impl.java.js",
+"lineCount":63,
+"mappings":"A;;;;;;;;;;MAgDgB,kB;;;;CAAA,W;EAAAA,Q;EAAAA;uF;;;;;;;;QACL,2F,cAA0BC,M;EAA1BC,6B;EAAAA,yC;EAAAA,2L;EAAAA,iB;;;;;;;CAAA,2J,cAA0BD,M;EAA1BE,mG;EACLA,qG;;;;;;;;CAIU,sE,CAAaC,Q,EAAkCC,Q;EACzDC,4O;;;;;;CAmBa,kB;EACbC,2J;;;;;QA3BU,O;EAAAC,qC;EAAAA,kC;EAAAA;",
+"sources":["DeckLayoutPanel.java"],
+"names":["org.gwtproject.user.client.ui.DeckLayoutPanel$DeckAnimateCommand.<synthetic: ctor_js>","layout","org.gwtproject.user.client.ui.DeckLayoutPanel$DeckAnimateCommand.<synthetic: ctor_create>","org.gwtproject.user.client.ui.DeckLayoutPanel$DeckAnimateCommand.<init>","duration","callback","org.gwtproject.user.client.ui.DeckLayoutPanel$DeckAnimateCommand.schedule","org.gwtproject.user.client.ui.DeckLayoutPanel$DeckAnimateCommand.doBeforeLayout","org.gwtproject.user.client.ui.DeckLayoutPanel$DeckAnimateCommand.<clinit>"]
+}

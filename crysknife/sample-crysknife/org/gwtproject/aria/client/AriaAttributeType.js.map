@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AriaAttributeType.impl.java.js",
+"lineCount":31,
+"mappings":"A;;;;;;;;;MAoBiB,iB;;;;;;CAER,gB;;;;;;QAFQ,M;EAAAA,4B;EAAAA,8B;;;;;QAAA,O;EAAAC,oC;EAAAA;",
+"sources":["AriaAttributeType.java"],
+"names":["org.gwtproject.aria.client.AriaAttributeType.<synthetic: adapt_lambda>","org.gwtproject.aria.client.AriaAttributeType.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasTouchMoveHandlers.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;MAwBiB,oB;;;;;;;CAQK,uE,CAAqCA,O;;;;QAR1C,O;EAAAC,uC;EAAAA;",
+"sources":["HasTouchMoveHandlers.java"],
+"names":["handler","org.gwtproject.event.dom.client.HasTouchMoveHandlers.<clinit>"]
+}

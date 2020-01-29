@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ListitemRole.impl.java.js",
+"lineCount":78,
+"mappings":"A;;;;;;;;;;;MA4BiB,Y;;;;;;;CAOR,yD,CAA6BA,O;;;;;;;CAO7B,4D,CAAgCA,O;;;;;;;CAOhC,2D,CAA+BA,O;;;;;;CAMjC,4D,CAAgCA,O;;;;;;CAMhC,+D,CAAmCA,O;;;;;;CAMnC,8D,CAAkCA,O;;;;;;;CAMlC,8D,CAA6BA,O,EAAaC,K;;;;;;;CAM1C,iE,CAAgCD,O,EAAaC,K;;;;;;;CAM7C,gE,CAA+BD,O,EAAaC,K;;;;QAzDlC,O;EAAAC,+B;EAAAA;",
+"sources":["ListitemRole.java"],
+"names":["element","value","org.gwtproject.aria.client.ListitemRole.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ListboxRole.impl.java.js",
+"lineCount":60,
+"mappings":"A;;;;;;;;;;;;;MA4BiB,W;;;;;;;CAQR,mE,CAAuCA,O;;;;;;;CAOvC,4D,CAAgCA,O;;;;;;CAMlC,sE,CAA0CA,O;;;;;;CAM1C,+D,CAAmCA,O;;;;;;;CAMnC,4E,CAAuCA,O,EAAiBC,K;;;;;;;CAMxD,qE,CAAgCD,O,EAAiBC,K;;;;QAvCvC,O;EAAAC,8B;EAAAA;",
+"sources":["ListboxRole.java"],
+"names":["element","value","org.gwtproject.aria.client.ListboxRole.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"UiRenderer$$LambdaAdaptor.impl.java.js",
+"lineCount":47,
+"mappings":"A;;;;;;;;;;;MA0BiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;wE;EAAAA,gI;;;;;;CAAA,sH;EAAAC,iC;EAAAA,2E;;;;;;;CAAA,uD;EAAAC,+C;EAAAA,4G;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["UiRenderer.java"],
+"names":["org.gwtproject.uibinder.client.UiRenderer$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.uibinder.client.UiRenderer$$LambdaAdaptor.<init>","org.gwtproject.uibinder.client.UiRenderer$$LambdaAdaptor.isParentOrRenderer","org.gwtproject.uibinder.client.UiRenderer$$LambdaAdaptor.<clinit>"]
+}

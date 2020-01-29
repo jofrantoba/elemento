@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NativeHorizontalScrollbar$StyleTransparant.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;MAoFmB,gB;;;;QAAA,O;EAAAA,mC;EAAAA,gC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AACf;iBAGO,uFAHP;",
+"sources":["NativeHorizontalScrollbar.java"],
+"names":["org.gwtproject.user.client.ui.NativeHorizontalScrollbar$StyleTransparant.<clinit>"]
+}

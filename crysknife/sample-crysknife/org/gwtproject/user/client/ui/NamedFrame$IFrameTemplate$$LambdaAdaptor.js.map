@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NamedFrame$IFrameTemplate$$LambdaAdaptor.impl.java.js",
+"lineCount":47,
+"mappings":"A;;;;;;;;;;;MAoCY,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sF;EAAAA,4J;;;;;;CAAA,kJ;EAAAC,iC;EAAAA,yF;;;;;;;CAAA,uB;EAAAC,iD;EAAAA,0H;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["NamedFrame.java"],
+"names":["org.gwtproject.user.client.ui.NamedFrame$IFrameTemplate$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.client.ui.NamedFrame$IFrameTemplate$$LambdaAdaptor.<init>","org.gwtproject.user.client.ui.NamedFrame$IFrameTemplate$$LambdaAdaptor.get","org.gwtproject.user.client.ui.NamedFrame$IFrameTemplate$$LambdaAdaptor.<clinit>"]
+}

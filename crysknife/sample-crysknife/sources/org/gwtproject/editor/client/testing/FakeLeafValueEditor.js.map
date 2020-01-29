@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"FakeLeafValueEditor.impl.java.js",
+"lineCount":59,
+"mappings":"A;;;;;;;;;;MAwBa,mB;;;;CAAA,W;EAAAA,Q;EAAAA;OACD,kEADCA,C;;;;;;;QAAA,S;EAAAC,8B;EAAAA,0C;EAAAA,8E;EAAAA,iB;;;;;CAAA,iE;EAAAC,iC;;;;;;;CAGF,Y;EACPC,+E;;;;;;;CAGU,4B,CAAWC,K;EACrBC,gF;;;;;QARS,O;EAAAC,sC;EAAAA,mC;EAAAA;",
+"sources":["FakeLeafValueEditor.java"],
+"names":["org.gwtproject.editor.client.testing.FakeLeafValueEditor.<synthetic: ctor_js>","org.gwtproject.editor.client.testing.FakeLeafValueEditor.<synthetic: ctor_create>","org.gwtproject.editor.client.testing.FakeLeafValueEditor.<init>","org.gwtproject.editor.client.testing.FakeLeafValueEditor.getValue","value","org.gwtproject.editor.client.testing.FakeLeafValueEditor.setValue","org.gwtproject.editor.client.testing.FakeLeafValueEditor.<clinit>"]
+}

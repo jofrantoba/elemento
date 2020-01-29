@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ComplementaryRole.impl.java.js",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MA2BiB,iB;;;;QAAA,O;EAAAA,oC;EAAAA;",
+"sources":["ComplementaryRole.java"],
+"names":["org.gwtproject.aria.client.ComplementaryRole.<clinit>"]
+}

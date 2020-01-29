@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TextHeader.impl.java.js",
+"lineCount":53,
+"mappings":"A;;;;;;;;;;MAsBa,U;;;;CAAA,W;EAAAA,Q;EAAAA;OAEI,uDAFJA,C;;;;;;;QASJ,yB,CAAkBC,I;EAAlBC,qB;EAAAA,iC;EAAAA,wF;EAAAA,iB;;;;;;CAAA,uE,CAAkBD,I;EACvBE,8G;EACAA,oE;;;;;;;CAOY,Y;EACZC,oE;;;;;QAnBS,O;EAAAC,6B;EAAAA,0B;EAAAA;",
+"sources":["TextHeader.java"],
+"names":["org.gwtproject.user.cellview.client.TextHeader.<synthetic: ctor_js>","text","org.gwtproject.user.cellview.client.TextHeader.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.TextHeader.<init>","org.gwtproject.user.cellview.client.TextHeader.getValue","org.gwtproject.user.cellview.client.TextHeader.<clinit>"]
+}

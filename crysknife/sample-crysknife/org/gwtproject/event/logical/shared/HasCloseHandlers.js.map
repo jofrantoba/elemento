@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasCloseHandlers.impl.java.js",
+"lineCount":27,
+"mappings":"A;;;;;;;;;;;;;MAyBiB,gB;;;;;;;CAOK,mE,CAAgCA,O;;;;QAPrC,O;EAAAC,mC;EAAAA;",
+"sources":["HasCloseHandlers.java"],
+"names":["handler","org.gwtproject.event.logical.shared.HasCloseHandlers.<clinit>"]
+}

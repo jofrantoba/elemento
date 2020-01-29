@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TouchCancelEvent.impl.java.js",
+"lineCount":100,
+"mappings":"A;;;;;;;;;;;;;MAmCa,gB;;;;CAAA,W;EAAAA,Q;;;;;;QAWD,S;EAAAC,2B;EAAAA,uC;EAAAA,sE;EAAAA,iB;;;;;CAAA,yD;EAAAC,2D;;;;;;QAO6B,W;EAAAC,2B;EACrCA,kF;;;;;;;CAIoC,qB;EACpCC,kF;;;;;;CAIa,8D,CAA4BC,O;EACzCC,gF;;;;;;;;CA7BS,4B;EAAAA,6I;;;;;QAAA,O;EAAAC,mC;EAAAA,gC;EAAAA,qB;EAEXA,oS;;;;;;;;;;;;;;;;;;;;;;;AAFW;iBAGmC,yDAHnC;",
+"sources":["TouchCancelEvent.java"],
+"names":["org.gwtproject.event.dom.client.TouchCancelEvent.<synthetic: ctor_js>","org.gwtproject.event.dom.client.TouchCancelEvent.<synthetic: ctor_create>","org.gwtproject.event.dom.client.TouchCancelEvent.<init>","org.gwtproject.event.dom.client.TouchCancelEvent.getType","org.gwtproject.event.dom.client.TouchCancelEvent.getAssociatedType","handler","org.gwtproject.event.dom.client.TouchCancelEvent.dispatch","org.gwtproject.event.dom.client.TouchCancelEvent.<clinit>"]
+}

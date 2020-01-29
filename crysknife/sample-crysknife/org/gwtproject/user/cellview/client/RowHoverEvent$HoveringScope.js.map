@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"RowHoverEvent$HoveringScope.impl.java.js",
+"lineCount":139,
+"mappings":"A;;;;;;;;;;;;;MA4CqB,a;;;;CAAA,W;EAAAA,Q;;;;;;;;QAAA,8B;EAAAC,oC;EAAAA,yH;EAAAA,iB;;;;;;;CAAA,6F;EAAAC,qC;EAAAA,2C;EAAAA,mE;;;;;;;QAAA,2B;EAAAC,wB;EAAAA;GAAAA,4JAAAA;G;EAAAA,+I;;;;;;QAAA,U;EAAAC,wB;EAAAA,kW;;;;;;;;;CAAA,6B;EAAAC,sF;;;;;;QACjB,8E;EAAAC,4H;;;;;;QAOA,gF;EAAAA,8H;;;;;;QAKA,iF;EAAAA,+H;;;;;QAbiB,O;EAAAC,gC;EAAAA,6B;EAAAA,e;EACjBA,4Q;EAOAA,kR;EAKAA,qR;EAbiBA,0G;;;;;;;;;;;;;;;;;;;;;;;AAAA;0F;AAAA;4F;AAAA;6F;AAAA;mG;AACjB;sG;AAOA;wG;AAKA;;",
+"sources":["RowHoverEvent.java"],
+"names":["org.gwtproject.user.cellview.client.RowHoverEvent$HoveringScope.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.RowHoverEvent$HoveringScope.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.RowHoverEvent$HoveringScope.<init>","org.gwtproject.user.cellview.client.RowHoverEvent$HoveringScope.valueOf","org.gwtproject.user.cellview.client.RowHoverEvent$HoveringScope.values","org.gwtproject.user.cellview.client.RowHoverEvent$HoveringScope.compareTo","org.gwtproject.user.cellview.client.RowHoverEvent$HoveringScope.<synthetic: getter>","org.gwtproject.user.cellview.client.RowHoverEvent$HoveringScope.<clinit>"]
+}

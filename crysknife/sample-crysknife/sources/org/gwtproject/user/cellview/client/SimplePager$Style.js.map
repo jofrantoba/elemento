@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SimplePager$Style.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;MA+ImB,K;;;;;;CAKR,U;;;;;;CAKA,kB;;;;;;CAKA,e;;;;QAfQ,O;EAAAA,wB;EAAAA;",
+"sources":["SimplePager.java"],
+"names":["org.gwtproject.user.cellview.client.SimplePager$Style.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ColumnSortEvent$Handler.impl.java.js",
+"lineCount":32,
+"mappings":"A;;;;;;;;;;MAsCmB,O;;;;;;CAOV,mE,CAA6BA,K;;;;;;QAPnB,M;EAAAC,kB;EAAAA,8B;;;;;QAAA,O;EAAAC,0B;EAAAA;",
+"sources":["ColumnSortEvent.java"],
+"names":["event","org.gwtproject.user.cellview.client.ColumnSortEvent$Handler.<synthetic: adapt_lambda>","org.gwtproject.user.cellview.client.ColumnSortEvent$Handler.<clinit>"]
+}

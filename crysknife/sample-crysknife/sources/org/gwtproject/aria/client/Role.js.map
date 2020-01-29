@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Role.impl.java.js",
+"lineCount":380,
+"mappings":"A;;;;;;;;;;;;;;;MAkCiB,I;;;;;;;CAOR,0D,CAA8BA,O;;;;;;;CAO9B,qD,CAAyBA,O;;;;;;;CAOzB,4D,CAAgCA,O;;;;;;;CAOhC,+D,CAAmCA,O;;;;;;;CAOnC,yD,CAA6BA,O;;;;;;;CAO7B,8D,CAAkCA,O;;;;;;;CAOlC,0D,CAA8BA,O;;;;;;;CAO9B,wD,CAA4BA,O;;;;;;;CAO5B,4D,CAAgCA,O;;;;;;;CAOhC,uD,CAA2BA,O;;;;;;;CAO3B,wD,CAA4BA,O;;;;;;;CAO5B,8D,CAAkCA,O;;;;;;;CAOlC,yD,CAA6BA,O;;;;;;;CAO7B,wD,CAA4BA,O;;;;;;;CAO5B,wD,CAA4BA,O;;;;;;;CAO5B,4D,CAAgCA,O;;;;;;CAQhC,W;;;;;;;CAOA,8D,CAAkCA,O;;;;;;CAOpC,2C,CAAeA,O;;;;;;CAMf,6D,CAAiCA,O;;;;;;CAMjC,wD,CAA4BA,O;;;;;;CAM5B,+D,CAAmCA,O;;;;;;CAMnC,kE,CAAsCA,O;;;;;;CAMtC,4D,CAAgCA,O;;;;;;CAMhC,iE,CAAqCA,O;;;;;;CAMrC,6D,CAAiCA,O;;;;;;CAMjC,2D,CAA+BA,O;;;;;;CAM/B,+D,CAAmCA,O;;;;;;CAMnC,0D,CAA8BA,O;;;;;;CAM9B,2D,CAA+BA,O;;;;;;CAM/B,iE,CAAqCA,O;;;;;;CAMrC,4D,CAAgCA,O;;;;;;CAMhC,2D,CAA+BA,O;;;;;;CAM/B,2D,CAA+BA,O;;;;;;CAM/B,+D,CAAmCA,O;;;;;;CAMnC,iE,CAAqCA,O;;;;;;CAOrC,wC,CAAYA,O;;;;;;;CAMZ,mE,CAA8BA,O,EAAiBC,K;;;;;;;CAM/C,8D,CAAyBD,O,EAAiBC,K;;;;;;;CAM1C,mG,CAAgCD,O,EAAeC,K;;;;;;;CAM/C,sG,CAAmCD,O,EAAeC,K;;;;;;;CAMlD,kE,CAA6BD,O,EAAiBC,K;;;;;;;CAM9C,kH,CAAkCD,O,EAA4BC,K;;;;;;;CAM9D,iG,CAA8BD,O,EAAeC,K;;;;;;;CAM7C,iG,CAA4BD,O,EAAsBC,K;;;;;;;CAMlD,qE,CAAgCD,O,EAAiBC,K;;;;;;;CAMjD,gE,CAA2BD,O,EAAiBC,K;;;;;;;CAM5C,iG,CAA4BD,O,EAAsBC,K;;;;;;;CAMlD,qG,CAAkCD,O,EAAeC,K;;;;;;;CAMjD,2E,CAA6BD,O,EAAgBC,K;;;;;;;CAM7C,8F,CAA4BD,O,EAAmBC,K;;;;;;;CAM/C,+F,CAA4BD,O,EAAeC,K;;;;;;;CAM3C,8G,CAAgCD,O,EAA0BC,K;;;;;;;CAM1D,mE,CAAkCD,O,EAAaC,K;;;;QAzVrC,O;EAAAC,uB;EAAAA;",
+"sources":["Role.java"],
+"names":["element","value","org.gwtproject.aria.client.Role.<clinit>"]
+}

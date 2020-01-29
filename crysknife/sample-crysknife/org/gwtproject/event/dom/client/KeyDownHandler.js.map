@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"KeyDownHandler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;MAoBiB,c;;;;;;CAOV,yD,CAAuBA,K;;;;;;QAPb,M;EAAAC,yB;EAAAA,8B;;;;;QAAA,O;EAAAC,iC;EAAAA;",
+"sources":["KeyDownHandler.java"],
+"names":["event","org.gwtproject.event.dom.client.KeyDownHandler.<synthetic: adapt_lambda>","org.gwtproject.event.dom.client.KeyDownHandler.<clinit>"]
+}

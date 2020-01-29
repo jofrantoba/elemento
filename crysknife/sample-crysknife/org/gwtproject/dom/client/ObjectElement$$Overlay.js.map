@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ObjectElement$$Overlay.impl.java.js",
+"lineCount":95,
+"mappings":"A;;;;;;;;;;;;MAqCa,sB;;;;;;QAUiB,uC,CAAWA,I;EAAXC,iC;EAC1BA,uF;EACAA,uE;;;;;;;QASoB,iD,CAAoBC,C;EAApBC,iC;EACpBA;GACEA,sHADFA;G;EAGAA,a;;;;;;;QASoB,oC,CAAQC,I;EAARD,iC;EACpBA;GACEA,yHADFA;G;EAGAA,a;;;;;;;QASoB,uC,CAAWH,I;EAAXG,iC;EACpBA,iN;;;;;;;QA+EgB,mG,WAAsCE,I;EAAtCC,iC;EAChBA,oC;;;;;QAhIS,O;EAAAC,yC;EAAAA,sC;;;;;;;;;;;;;;;;;;;;;;;AAEX;uBAC2B,uDAD3B;",
+"sources":["ObjectElement.java"],
+"names":["elem","org.gwtproject.dom.client.ObjectElement$$Overlay.as","o","org.gwtproject.dom.client.ObjectElement$$Overlay.is","node","data","org.gwtproject.dom.client.ObjectElement$$Overlay.setData__$devirt","org.gwtproject.dom.client.ObjectElement$$Overlay.<clinit>"]
+}

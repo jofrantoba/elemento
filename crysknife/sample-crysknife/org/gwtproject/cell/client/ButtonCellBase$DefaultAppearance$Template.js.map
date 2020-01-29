@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ButtonCellBase$DefaultAppearance$Template.impl.java.js",
+"lineCount":80,
+"mappings":"A;;;;;;;;;;;;;MAoLc,Q;;;;;;;;;;CASC,iK,CACEA,O,EAAoBC,M,EAAiBC,I,EAAeC,Y;;;;;;;;CAKtD,gG,CAAuBF,M,EAAiBG,K;;;;;QAbjD,oF;EAAAC,wH;;;;;QAFQ,O;EAAAC,2B;EAAAA,wB;EAERA,yJ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFQ;;",
+"sources":["ButtonCellBase.java"],
+"names":["classes","styles","icon","cellContents","image","org.gwtproject.cell.client.ButtonCellBase$DefaultAppearance$Template.<synthetic: getter>","org.gwtproject.cell.client.ButtonCellBase$DefaultAppearance$Template.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TodoRepositoryInfo.impl.java.js",
+"lineCount":35,
+"mappings":"A;;;;;MAIa,kB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,6B;EAAAA,yC;EAAAA,4E;EAAAA,iB;;;;;CAAA,+D;EAAAC,iC;;;;;QAAA,O;EAAAC,qC;EAAAA,kC;EAAAA;",
+"sources":["TodoRepositoryInfo.java"],
+"names":["org.jboss.elemento.sample.crysknife.TodoRepositoryInfo.<synthetic: ctor_js>","org.jboss.elemento.sample.crysknife.TodoRepositoryInfo.<synthetic: ctor_create>","org.jboss.elemento.sample.crysknife.TodoRepositoryInfo.<init>","org.jboss.elemento.sample.crysknife.TodoRepositoryInfo.<clinit>"]
+}

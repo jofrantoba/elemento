@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SimpleEditor.impl.java.js",
+"lineCount":81,
+"mappings":"A;;;;;;;;;;MAyBa,Y;;;;CAAA,W;EAAAA,Q;EAAAA;OAsBD,4DAtBCA,C;;;;;;;QAOuB,M;EAAAC,uB;EAChCA,uF;;;;;;;;QAUgC,sB,CAAKC,K;EAALD,uB;EAChCA,wF;;;;;;;;QAUQ,yB,CAAeC,K;EAAfC,uB;EAAAA,mC;EAAAA,6F;EAAAA,iB;;;;;;CAAA,2E,CAAeD,K;EAAfE,iC;EACRA,0E;;;;;;;CAGO,Y;EACPC,yE;;;;;;;CAGU,4B,CAAWH,K;EACrBI,0E;;;;;QAtCS,O;EAAAC,+B;EAAAA,4B;EAAAA;",
+"sources":["SimpleEditor.java"],
+"names":["org.gwtproject.editor.client.adapters.SimpleEditor.<synthetic: ctor_js>","org.gwtproject.editor.client.adapters.SimpleEditor.of","value","org.gwtproject.editor.client.adapters.SimpleEditor.<synthetic: ctor_create>","org.gwtproject.editor.client.adapters.SimpleEditor.<init>","org.gwtproject.editor.client.adapters.SimpleEditor.getValue","org.gwtproject.editor.client.adapters.SimpleEditor.setValue","org.gwtproject.editor.client.adapters.SimpleEditor.<clinit>"]
+}

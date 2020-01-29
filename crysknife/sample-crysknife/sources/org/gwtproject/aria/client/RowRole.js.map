@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"RowRole.impl.java.js",
+"lineCount":61,
+"mappings":"A;;;;;;;;;;;;;;MA4BiB,O;;;;;;;CAOR,yD,CAA6BA,O;;;;;;;CAO7B,yD,CAA6BA,O;;;;;;CAM/B,4D,CAAgCA,O;;;;;;CAMhC,4D,CAAgCA,O;;;;;;;CAMhC,8D,CAA6BA,O,EAAaC,K;;;;;;;CAM1C,mG,CAA6BD,O,EAAuBC,K;;;;QAtC1C,O;EAAAC,0B;EAAAA;",
+"sources":["RowRole.java"],
+"names":["element","value","org.gwtproject.aria.client.RowRole.<clinit>"]
+}

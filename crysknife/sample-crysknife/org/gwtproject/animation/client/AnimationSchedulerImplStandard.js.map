@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"AnimationSchedulerImplStandard.impl.java.js",
+"lineCount":74,
+"mappings":"A;;;;;;;;;;;;;;MAyBM,8B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,yC;EAAAA,qD;EAAAA,oF;EAAAA,iB;;;;;CAAA,uE;EAAAC,mE;;;;;;;;;CAGmB,gI,CAAwCC,Q,EAAkBC,O;EAC/EC,IAAUC,EAAVD,+K;EACAA,iG;;;;;;;;QAQiB,yH,CAAiCE,E,EAAYH,O;EAC9DI,mDACIC,EADJD;GACUE,uDADVF;yF;;;;;;QAIkB,iB,CAAeF,E;EAAfK,yC;EAClBA,gC;;;;;QAnBE,O;EAAAC,iD;EAAAA,8C;EAAAA;",
+"sources":["AnimationSchedulerImplStandard.java"],
+"names":["org.gwtproject.animation.client.AnimationSchedulerImplStandard.<synthetic: ctor_js>","org.gwtproject.animation.client.AnimationSchedulerImplStandard.<synthetic: ctor_create>","org.gwtproject.animation.client.AnimationSchedulerImplStandard.<init>","callback","element","org.gwtproject.animation.client.AnimationSchedulerImplStandard.requestAnimationFrame","id","cb","org.gwtproject.animation.client.AnimationSchedulerImplStandard.requestImplNew","p0","org.gwtproject.animation.client.AnimationSchedulerImplStandard.<lambda in requestImplNew>","org.gwtproject.animation.client.AnimationSchedulerImplStandard.cancelImpl","org.gwtproject.animation.client.AnimationSchedulerImplStandard.<clinit>"]
+}

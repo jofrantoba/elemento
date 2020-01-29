@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"InitializeHandler$$LambdaAdaptor.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;MAmBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;oF;EAAAA,wJ;;;;;;CAAA,8I;EAAAC,iC;EAAAA,uF;;;;;;CAAA,mE;;GAAAC,kG;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["InitializeHandler.java"],
+"names":["org.gwtproject.event.logical.shared.InitializeHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.logical.shared.InitializeHandler$$LambdaAdaptor.<init>","org.gwtproject.event.logical.shared.InitializeHandler$$LambdaAdaptor.onInitialize","org.gwtproject.event.logical.shared.InitializeHandler$$LambdaAdaptor.<clinit>"]
+}

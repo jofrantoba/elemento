@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"LocalizedNamesImpl_zh_Hant_TW.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;MAsBa,gC;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,2C;EAAAA,uD;EAAAA,wF;EAAAA,iB;;;;;CAAA,2E;EAAAC,gF;;;;;;;CAGK,yB;EACdC,umD;;;;;QAJS,O;EAAAC,mD;EAAAA,gD;EAAAA;",
+"sources":["LocalizedNamesImpl_zh_Hant_TW.java"],
+"names":["org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_zh_Hant_TW.<synthetic: ctor_js>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_zh_Hant_TW.<synthetic: ctor_create>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_zh_Hant_TW.<init>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_zh_Hant_TW.loadSortedRegionCodes","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_zh_Hant_TW.<clinit>"]
+}

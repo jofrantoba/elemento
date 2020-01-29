@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"EndedEvent.impl.java.js",
+"lineCount":100,
+"mappings":"A;;;;;;;;;;;;;MAyBa,U;;;;CAAA,W;EAAAA,Q;;;;;;QAUD,S;EAAAC,qB;EAAAA,iC;EAAAA,gE;EAAAA,iB;;;;;CAAA,mD;EAAAC,yD;;;;;;QAOuB,W;EAAAC,qB;EAC/BA,sE;;;;;;;CAI8B,qB;EAC9BC,sE;;;;;;CAIa,wD,CAAsBC,O;EACnCC,oE;;;;;;;;CA5BS,4B;EAAAA,2H;;;;;QAAA,O;EAAAC,6B;EAAAA,0B;EAAAA,mB;EAEXA,sQ;;;;;;;;;;;;;;;;;;;;;;;AAFW;WAG6B,mDAH7B;",
+"sources":["EndedEvent.java"],
+"names":["org.gwtproject.event.dom.client.EndedEvent.<synthetic: ctor_js>","org.gwtproject.event.dom.client.EndedEvent.<synthetic: ctor_create>","org.gwtproject.event.dom.client.EndedEvent.<init>","org.gwtproject.event.dom.client.EndedEvent.getType","org.gwtproject.event.dom.client.EndedEvent.getAssociatedType","handler","org.gwtproject.event.dom.client.EndedEvent.dispatch","org.gwtproject.event.dom.client.EndedEvent.<clinit>"]
+}

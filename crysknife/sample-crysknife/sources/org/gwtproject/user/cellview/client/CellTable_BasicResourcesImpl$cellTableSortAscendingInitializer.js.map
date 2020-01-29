@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CellTable_BasicResourcesImpl$cellTableSortAscendingInitializer.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;MAsFuB,iC;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,wD;EAAAA,wH;EAAAA,iB;;;;;CAAA,2G;EAAAC,iC;;;;;;QAIkC,O;EAAAC,4C;EACnDA,iI;;;;;QALiB,O;EAAAC,oD;EAAAA,iD;EAAAA,qB;EAEjBA;",
+"sources":["CellTable_BasicResourcesImpl.java"],
+"names":["org.gwtproject.user.cellview.client.CellTable_BasicResourcesImpl$cellTableSortAscendingInitializer.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.CellTable_BasicResourcesImpl$cellTableSortAscendingInitializer.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.CellTable_BasicResourcesImpl$cellTableSortAscendingInitializer.<init>","org.gwtproject.user.cellview.client.CellTable_BasicResourcesImpl$cellTableSortAscendingInitializer.get","org.gwtproject.user.cellview.client.CellTable_BasicResourcesImpl$cellTableSortAscendingInitializer.<clinit>"]
+}

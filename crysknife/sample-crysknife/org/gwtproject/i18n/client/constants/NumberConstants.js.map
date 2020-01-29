@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NumberConstants.impl.java.js",
+"lineCount":128,
+"mappings":"A;;;;;;;MA6BiB,e;;;;;;CACR,c;;;;;;CACA,mB;;;;;;CACA,kB;;;;;;CACA,oB;;;;;;CACA,mB;;;;;;CACA,qB;;;;;;CACA,yB;;;;;;CACA,qB;;;;;;CACA,Y;;;;;;CACA,a;;;;;;CACA,6B;;;;;;CACA,qB;;;;;;CACA,W;;;;;;CACA,kB;;;;;;CACA,W;;;;;;CACA,Y;;;;;;CACA,qB;;;;;;CACA,yB;;;;;;CACA,a;;;;QAnBQ,O;EAAAA,kC;EAAAA;",
+"sources":["NumberConstants.java"],
+"names":["org.gwtproject.i18n.client.constants.NumberConstants.<clinit>"]
+}

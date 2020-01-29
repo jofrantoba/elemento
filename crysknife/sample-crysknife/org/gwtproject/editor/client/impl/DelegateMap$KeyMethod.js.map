@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"DelegateMap$KeyMethod.impl.java.js",
+"lineCount":32,
+"mappings":"A;;;;;;;;;MA6BmB,S;;;;;;;CACR,uB,CAAWA,M;;;;;;QADH,M;EAAAC,oB;EAAAA,8B;;;;;QAAA,O;EAAAC,4B;EAAAA;",
+"sources":["DelegateMap.java"],
+"names":["object","org.gwtproject.editor.client.impl.DelegateMap$KeyMethod.<synthetic: adapt_lambda>","org.gwtproject.editor.client.impl.DelegateMap$KeyMethod.<clinit>"]
+}

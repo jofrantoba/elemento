@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasVisibility.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;MAoBiB,a;;;;;;CAYP,a;;;;;;CAQH,qB,CAAmBA,O;;;;QApBT,O;EAAAC,gC;EAAAA;",
+"sources":["HasVisibility.java"],
+"names":["visible","org.gwtproject.user.client.ui.HasVisibility.<clinit>"]
+}

@@ -1,0 +1,34 @@
+goog.module('org.gwtproject.user.cellview.client.DataGrid');
+
+goog.require('nativebootstrap.Util');
+goog.require('org.gwtproject.user.cellview.client.AbstractCellTable');
+goog.require('org.gwtproject.user.client.ui.RequiresResize');
+goog.require('nativebootstrap.Equality');
+goog.require('org.gwtproject.dom.client.Document.$Overlay');
+goog.require('org.gwtproject.dom.client.Element.$Overlay');
+goog.require('org.gwtproject.dom.client.Node.$Overlay');
+goog.require('org.gwtproject.dom.client.NodeList.$Overlay');
+goog.require('org.gwtproject.dom.client.Style.$Overlay');
+goog.require('org.gwtproject.dom.client.TableSectionElement.$Overlay');
+goog.require('org.gwtproject.dom.style.shared.Display');
+goog.require('org.gwtproject.dom.style.shared.Overflow');
+goog.require('org.gwtproject.dom.style.shared.Unit');
+goog.require('org.gwtproject.user.cellview.client.DataGrid.$1');
+goog.require('org.gwtproject.user.cellview.client.DataGrid.Resources');
+goog.require('org.gwtproject.user.cellview.client.DataGrid.ResourcesAdapter');
+goog.require('org.gwtproject.user.cellview.client.DataGrid.Style');
+goog.require('org.gwtproject.user.cellview.client.DataGrid.TableWidget');
+goog.require('org.gwtproject.user.cellview.client.DataGrid_ResourcesImpl');
+goog.require('org.gwtproject.user.cellview.client.LoadingStateChangeEvent.LoadingState');
+goog.require('org.gwtproject.user.client.ui.CustomScrollPanel');
+goog.require('org.gwtproject.user.client.ui.FlexTable');
+goog.require('org.gwtproject.user.client.ui.HeaderPanel');
+goog.require('org.gwtproject.user.client.ui.Image');
+goog.require('org.gwtproject.user.client.ui.ScrollPanel');
+goog.require('org.gwtproject.user.client.ui.SimplePanel');
+goog.require('org.gwtproject.user.client.ui.Widget');
+goog.require('org.gwtproject.view.client.ProvidesKey');
+goog.require('vmbootstrap.Casts');
+
+const DataGrid = goog.require('org.gwtproject.user.cellview.client.DataGrid$impl');
+exports = DataGrid; 

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Event$ComposedPathArrayUnionType$$Overlay.impl.java.js",
+"lineCount":99,
+"mappings":"A;;;;;;;;;;;MA2BmB,mC;;;;;;QAEyB,sB,CAAUA,C;EAAVC,8C;EACtCA,wD;;;;;;;QAIe,sE;EAAAC,8C;EACfA,4F;;;;;;;QAIc,qE;EAAAC,8C;EACdA,mG;;;;;;;QAIiB,wE;EAAAC,8C;EACjBA,yG;;;;;;;QAIa,oE;EAAAC,8C;EACbA,iG;;;;;;;QAIc,sE;EAAAC,8C;EACdA,wD;;;;;;;QAIc,qE;EAAAC,8C;EACdA,gE;;;;;;;QAIc,wE;EAAAC,8C;EACdA,mE;;;;;;;QAIc,oE;EAAAC,8C;EACdA,+D;;;;;QA3Ca,O;EAAAC,sD;EAAAA;",
+"sources":["Event.java"],
+"names":["o","elemental2.dom.Event$ComposedPathArrayUnionType$$Overlay.of","elemental2.dom.Event$ComposedPathArrayUnionType$$Overlay.asDocument__$devirt","elemental2.dom.Event$ComposedPathArrayUnionType$$Overlay.asElement__$devirt","elemental2.dom.Event$ComposedPathArrayUnionType$$Overlay.asShadowRoot__$devirt","elemental2.dom.Event$ComposedPathArrayUnionType$$Overlay.asWindow__$devirt","elemental2.dom.Event$ComposedPathArrayUnionType$$Overlay.isDocument__$devirt","elemental2.dom.Event$ComposedPathArrayUnionType$$Overlay.isElement__$devirt","elemental2.dom.Event$ComposedPathArrayUnionType$$Overlay.isShadowRoot__$devirt","elemental2.dom.Event$ComposedPathArrayUnionType$$Overlay.isWindow__$devirt","elemental2.dom.Event$ComposedPathArrayUnionType$$Overlay.<clinit>"]
+}

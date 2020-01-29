@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"EventInfo.impl.java.js",
+"lineCount":35,
+"mappings":"A;;;;;MAIa,S;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,oB;EAAAA,gC;EAAAA,sD;EAAAA,iB;;;;;CAAA,yC;EAAAC,iC;;;;;QAAA,O;EAAAC,4B;EAAAA,yB;EAAAA;",
+"sources":["EventInfo.java"],
+"names":["javax.enterprise.event.EventInfo.<synthetic: ctor_js>","javax.enterprise.event.EventInfo.<synthetic: ctor_create>","javax.enterprise.event.EventInfo.<init>","javax.enterprise.event.EventInfo.<clinit>"]
+}

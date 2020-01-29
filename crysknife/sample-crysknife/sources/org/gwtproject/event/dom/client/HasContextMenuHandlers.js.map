@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasContextMenuHandlers.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;MAwBiB,sB;;;;;;;CAQK,2E,CAAyCA,O;;;;QAR9C,O;EAAAC,yC;EAAAA;",
+"sources":["HasContextMenuHandlers.java"],
+"names":["handler","org.gwtproject.event.dom.client.HasContextMenuHandlers.<clinit>"]
+}

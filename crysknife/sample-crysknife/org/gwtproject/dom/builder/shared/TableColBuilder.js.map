@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"TableColBuilder.impl.java.js",
+"lineCount":58,
+"mappings":"A;;;;;;;;;MAoBiB,e;;;;;;;CASC,yB,CAAaA,K;;;;;;;CASb,sB,CAAUC,E;;;;;;;CASV,yB,CAAaC,K;;;;;;;CASb,W,CAASC,I;;;;;;;CAST,0B,CAAcC,M;;;;;;;CASd,yB,CAAaC,K;;;;QAtDd,O;EAAAC,kC;EAAAA;",
+"sources":["TableColBuilder.java"],
+"names":["align","ch","chOff","span","vAlign","width","org.gwtproject.dom.builder.shared.TableColBuilder.<clinit>"]
+}

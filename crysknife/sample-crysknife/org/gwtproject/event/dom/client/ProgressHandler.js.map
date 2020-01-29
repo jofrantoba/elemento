@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ProgressHandler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;MAyBiB,e;;;;;;CAOV,2D,CAAyBA,K;;;;;;QAPf,M;EAAAC,0B;EAAAA,8B;;;;;QAAA,O;EAAAC,kC;EAAAA;",
+"sources":["ProgressHandler.java"],
+"names":["event","org.gwtproject.event.dom.client.ProgressHandler.<synthetic: adapt_lambda>","org.gwtproject.event.dom.client.ProgressHandler.<clinit>"]
+}

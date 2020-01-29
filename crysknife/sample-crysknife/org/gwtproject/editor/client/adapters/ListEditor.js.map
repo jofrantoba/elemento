@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ListEditor.impl.java.js",
+"lineCount":164,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;MAgCa,U;;;;CAAA,W;EAAAA,Q;EAAAA;OAc+B,0DAd/BA,C;EAAAA;OAea,iEAfbA,C;EAAAA;OAgBqB,yDAhBrBA,C;;;;;;;;QAUqD,wD,CAAmBC,M;EAAnBC,qB;EAC9DA,4H;;;;;;;;QAYQ,2D,CAA2BD,M;EAA3BE,qB;EAAAA,iC;EAAAA,8H;EAAAA,iB;;;;;;CAAA,2G,CAA2BF,M;EAA3BG,iC;EACRA,gF;;;;;;;CAQO,4B;EACPC,6G;;;;;;CAGU,S;EACVC;GACEA,qHADFA;G;;;;;;CAgBa,c;EACbC;GACEA,2DADFA;G;EAGAA,yM;;;;;;CAmBa,W;EACbC,sE;;;;;;;;CAGY,qD,CAAiBC,S;EAC7BC,gK;;;;;;;CAGU,4C,CAA2BC,K;;;;;;CAE3B,0D,CAAoCC,Q;;;;;;CAEpC,0E,CAAiDC,K;EAC3DC,wE;;;;;;CAUU,0B,CAAiBC,K;EAC3BC;GAEEA,OAFFA;G;EAIAA;GAEEA,uHAFFA;GAGEA,OAHFA;G;EAMAA;GAEEA,sHAFFA;G;EAIAA;GACEA,sEADFA;;GAGEA,kZAHFA;GAIEA,sHAJFA;G;;;;;;;;CAlHS,4B;EAAAA,gF;;;;;QAAA,O;EAAAC,6B;EAAAA,0B;EAAAA;",
+"sources":["ListEditor.java"],
+"names":["org.gwtproject.editor.client.adapters.ListEditor.<synthetic: ctor_js>","source","org.gwtproject.editor.client.adapters.ListEditor.of","org.gwtproject.editor.client.adapters.ListEditor.<synthetic: ctor_create>","org.gwtproject.editor.client.adapters.ListEditor.<init>","org.gwtproject.editor.client.adapters.ListEditor.createEditorForTraversal","org.gwtproject.editor.client.adapters.ListEditor.flush","org.gwtproject.editor.client.adapters.ListEditor.getEditors","org.gwtproject.editor.client.adapters.ListEditor.getList","subEditor","org.gwtproject.editor.client.adapters.ListEditor.getPathElement","paths","delegate","chain","org.gwtproject.editor.client.adapters.ListEditor.setEditorChain","value","org.gwtproject.editor.client.adapters.ListEditor.setValue","org.gwtproject.editor.client.adapters.ListEditor.<clinit>"]
+}

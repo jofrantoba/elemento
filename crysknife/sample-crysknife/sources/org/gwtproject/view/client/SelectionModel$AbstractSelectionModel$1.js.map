@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SelectionModel$AbstractSelectionModel$1.impl.java.js",
+"lineCount":60,
+"mappings":"A;;;;;;;;;;;;MA8H+D,E;;;;CAAA,W;EAAAA,Q;EAAAA;yF;;;;;;;;QAAA,yE;EAAAC,a;EAAAA,yB;EAAAA,mK;EAAAA,iB;;;;;;CAAA,2I;EAAAC,qG;EAAAA,iC;;;;;;CACzC,W;EACVC,2H;EACAA;GACEA,2HADFA;GAEEA,OAFFA;G;EAIAA,sH;;;;;QAPmD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["SelectionModel.java"],
+"names":["org.gwtproject.view.client.SelectionModel$AbstractSelectionModel$1.<synthetic: ctor_js>","org.gwtproject.view.client.SelectionModel$AbstractSelectionModel$1.<synthetic: ctor_create>","org.gwtproject.view.client.SelectionModel$AbstractSelectionModel$1.<init>","org.gwtproject.view.client.SelectionModel$AbstractSelectionModel$1.execute","org.gwtproject.view.client.SelectionModel$AbstractSelectionModel$1.<clinit>"]
+}

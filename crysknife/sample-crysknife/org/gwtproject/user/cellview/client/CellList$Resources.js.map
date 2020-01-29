@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CellList$Resources.impl.java.js",
+"lineCount":74,
+"mappings":"A;;;;;;;;;;;;;MA+EmB,S;;;;;;CAOD,8B;;;;;;CAMR,iB;;;;;QAXN,sE;EAAAA,4G;;;;;QAFe,O;EAAAC,4B;EAAAA,yB;EAEfA,oH;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFe;;",
+"sources":["CellList.java"],
+"names":["org.gwtproject.user.cellview.client.CellList$Resources.<synthetic: getter>","org.gwtproject.user.cellview.client.CellList$Resources.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ButtonCellBase$DefaultAppearance$Resources.impl.java.js",
+"lineCount":74,
+"mappings":"A;;;;;;;;;;;;;MAwHqB,S;;;;;;CAQD,4B;;;;;;CAGR,uB;;;;;QATN,qF;EAAAA,2H;;;;;QAFe,O;EAAAC,4B;EAAAA,yB;EAEfA,4J;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFe;;",
+"sources":["ButtonCellBase.java"],
+"names":["org.gwtproject.cell.client.ButtonCellBase$DefaultAppearance$Resources.<synthetic: getter>","org.gwtproject.cell.client.ButtonCellBase$DefaultAppearance$Resources.<clinit>"]
+}

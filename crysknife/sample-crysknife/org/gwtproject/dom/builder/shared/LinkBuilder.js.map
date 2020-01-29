@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"LinkBuilder.impl.java.js",
+"lineCount":64,
+"mappings":"A;;;;;;;;;MAsBiB,W;;;;;;CAMH,Y;;;;;;;CAUA,wB,CAAkCA,I;;;;;;;CASlC,4B,CAAgBC,Q;;;;;;;CAShB,yB,CAAaC,K;;;;;;;CASb,uB,CAAWC,G;;;;;;;CASX,0B,CAAcC,M;;;;;;;CASd,wB,CAAYC,I;;;;QA7DT,O;EAAAC,8B;EAAAA;",
+"sources":["LinkBuilder.java"],
+"names":["href","hreflang","media","rel","target","type","org.gwtproject.dom.builder.shared.LinkBuilder.<clinit>"]
+}

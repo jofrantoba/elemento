@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HandlerRegistrations.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;MAgBa,oB;;;;CAAA,W;EAAAA,Q;;;;;;;QAyCuB,kE,CAA+BC,Q;EAA/BC,+B;EAChCA,gH;;;;;;QAIM,S;EAAAC,2C;EAAAA,sE;EAAAA,iB;;;;;CAAA,yD;EAAAC,iC;;;;;QA9CG,O;EAAAC,uC;EAAAA,oC;EAAAA;",
+"sources":["HandlerRegistrations.java"],
+"names":["org.gwtproject.event.shared.HandlerRegistrations.<synthetic: ctor_js>","handlers","org.gwtproject.event.shared.HandlerRegistrations.compose","org.gwtproject.event.shared.HandlerRegistrations.<synthetic: ctor_create>","org.gwtproject.event.shared.HandlerRegistrations.<init>","org.gwtproject.event.shared.HandlerRegistrations.<clinit>"]
+}

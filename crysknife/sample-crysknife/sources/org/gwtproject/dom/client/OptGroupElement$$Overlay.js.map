@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"OptGroupElement$$Overlay.impl.java.js",
+"lineCount":97,
+"mappings":"A;;;;;;;;;;;;;MAgCa,wB;;;;;;QAUmB,uC,CAAWA,I;EAAXC,mC;EAC5BA,yF;EACAA,yE;;;;;;;QASoB,iD,CAAoBC,C;EAApBC,mC;EACpBA;GACEA,wHADFA;G;EAGAA,a;;;;;;;QASoB,oC,CAAQC,I;EAARD,mC;EACpBA;GACEA,2HADFA;G;EAGAA,a;;;;;;;QASoB,uC,CAAWH,I;EAAXG,mC;EACpBA,qN;;;;;;;QAoBmB,gE;EAAAE,mC;EAClBA,oI;;;;;QArEQ,O;EAAAC,2C;EAAAA,wC;;;;;;;;;;;;;;;;;;;;;;;;AAEX;yBAC2B,yDAD3B;",
+"sources":["OptGroupElement.java"],
+"names":["elem","org.gwtproject.dom.client.OptGroupElement$$Overlay.as","o","org.gwtproject.dom.client.OptGroupElement$$Overlay.is","node","org.gwtproject.dom.client.OptGroupElement$$Overlay.isDisabled__$devirt","org.gwtproject.dom.client.OptGroupElement$$Overlay.<clinit>"]
+}

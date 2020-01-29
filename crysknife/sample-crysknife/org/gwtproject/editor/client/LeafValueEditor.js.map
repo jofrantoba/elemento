@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"LeafValueEditor.impl.java.js",
+"lineCount":29,
+"mappings":"A;;;;;;;;;;MAwBiB,e;;;;;;CAOV,4B,CAAWA,K;;;;;;CAQd,Y;;;;QAfa,O;EAAAC,kC;EAAAA;",
+"sources":["LeafValueEditor.java"],
+"names":["value","org.gwtproject.editor.client.LeafValueEditor.<clinit>"]
+}

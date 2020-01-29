@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"NumberLabel.impl.java.js",
+"lineCount":67,
+"mappings":"A;;;;;;;;;;;;;MAoEa,W;;;;CAAA,W;EAAAA,Q;;;;;;;;QAEJ,S;EAAAC,sB;EAAAA,kC;EAAAA,+D;EAAAA,iB;;;;;;CAAA,kD;EACLC,4H;;;;;;;;;QAGK,gD,CAAyBC,M;EAAzBF,sB;EAAAA,kC;EAAAA,4G;EAAAA,iB;;;;;;;CAAA,yF,CAAyBE,M;EAC9BD,yK;;;;;QAPS,O;EAAAE,8B;EAAAA,2B;EAAAA;",
+"sources":["NumberLabel.java"],
+"names":["org.gwtproject.user.client.ui.NumberLabel.<synthetic: ctor_js>","org.gwtproject.user.client.ui.NumberLabel.<synthetic: ctor_create>","org.gwtproject.user.client.ui.NumberLabel.<init>","format","org.gwtproject.user.client.ui.NumberLabel.<clinit>"]
+}

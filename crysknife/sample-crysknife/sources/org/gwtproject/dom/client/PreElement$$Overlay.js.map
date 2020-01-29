@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"PreElement$$Overlay.impl.java.js",
+"lineCount":85,
+"mappings":"A;;;;;;;;;;;MA6Ba,mB;;;;;;QAUc,uC,CAAWA,I;EAAXC,8B;EACvBA,oF;EACAA,oE;;;;;;;QASoB,iD,CAAoBC,C;EAApBC,8B;EACpBA;GACEA,mHADFA;G;EAGAA,a;;;;;;;QASoB,oC,CAAQC,I;EAARD,8B;EACpBA;GACEA,sHADFA;G;EAGAA,a;;;;;;;QASoB,uC,CAAWH,I;EAAXG,8B;EACpBA,2M;;;;;QAhDS,O;EAAAE,sC;EAAAA,mC;;;;;;;;;;;;;;;;;;;;;;;AAEX;oBAC2B,oDAD3B;",
+"sources":["PreElement.java"],
+"names":["elem","org.gwtproject.dom.client.PreElement$$Overlay.as","o","org.gwtproject.dom.client.PreElement$$Overlay.is","node","org.gwtproject.dom.client.PreElement$$Overlay.<clinit>"]
+}

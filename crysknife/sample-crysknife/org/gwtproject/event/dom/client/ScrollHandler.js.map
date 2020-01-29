@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ScrollHandler.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;MAoBiB,a;;;;;;CAOV,uD,CAAqBA,K;;;;;;QAPX,M;EAAAC,wB;EAAAA,8B;;;;;QAAA,O;EAAAC,gC;EAAAA;",
+"sources":["ScrollHandler.java"],
+"names":["event","org.gwtproject.event.dom.client.ScrollHandler.<synthetic: adapt_lambda>","org.gwtproject.event.dom.client.ScrollHandler.<clinit>"]
+}

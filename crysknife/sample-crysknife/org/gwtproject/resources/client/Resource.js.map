@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Resource.impl.java.js",
+"lineCount":28,
+"mappings":"A;;;;;;;;;;;;MAuBkB,Q;;;;;;QAAA,M;EAAAA,mB;EAAAA,8B;;;;;QAAA,O;EAAAC,2B;EAAAA;",
+"sources":["Resource.java"],
+"names":["org.gwtproject.resources.client.Resource.<synthetic: adapt_lambda>","org.gwtproject.resources.client.Resource.<clinit>"]
+}

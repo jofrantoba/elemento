@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"HasDragOverHandlers.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;MA2BiB,mB;;;;;;;CAQK,qE,CAAmCA,O;;;;QARxC,O;EAAAC,sC;EAAAA;",
+"sources":["HasDragOverHandlers.java"],
+"names":["handler","org.gwtproject.event.dom.client.HasDragOverHandlers.<clinit>"]
+}

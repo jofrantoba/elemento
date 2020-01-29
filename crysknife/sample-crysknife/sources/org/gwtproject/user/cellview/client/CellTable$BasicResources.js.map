@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"CellTable$BasicResources.impl.java.js",
+"lineCount":68,
+"mappings":"A;;;;;;;;;;;;MA6FmB,c;;;;;;;CASJ,kB;;;;;QAPX,4E;EAAAA,4H;;;;;QAFe,O;EAAAC,iC;EAAAA,8B;EAEfA,qI;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFe;;",
+"sources":["CellTable.java"],
+"names":["org.gwtproject.user.cellview.client.CellTable$BasicResources.<synthetic: getter>","org.gwtproject.user.cellview.client.CellTable$BasicResources.<clinit>"]
+}

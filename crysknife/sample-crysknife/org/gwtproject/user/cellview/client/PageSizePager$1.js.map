@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"PageSizePager$1.impl.java.js",
+"lineCount":66,
+"mappings":"A;;;;;;;;;;;;;MA0DsD,E;;;;CAAA,W;EAAAA,Q;EAAAA;0E;EAAAA;OAPrBC,YAOqBD,K;;;;;;;;QAAA,+D;EAAAE,a;EAAAA,yB;EAAAA,wJ;EAAAA,iB;;;;;;;CAAA,kH;EAAAC,sF;EAAAA,iC;EAAAA,iC;;;;;;;CACpC,qD,CAAmBC,K;EAE7BC,IAAQC,OAARD,4F;EACAA;GACEA,IAAME,KAANF,iCADFA;GAEEA,IAAIG,QAAJH,4IAFFA;GAKEA,oEALFA;G;;;;;QAJ8C,O;EAAAI,qB;EAAAA,kB;EAAAA;",
+"sources":["PageSizePager.java"],
+"names":["org.gwtproject.user.cellview.client.PageSizePager$1.<synthetic: ctor_js>","increment","org.gwtproject.user.cellview.client.PageSizePager$1.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.PageSizePager$1.<init>","event","org.gwtproject.user.cellview.client.PageSizePager$1.onClick","display","range","pageSize","org.gwtproject.user.cellview.client.PageSizePager$1.<clinit>"]
+}

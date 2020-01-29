@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SelectionCell.impl.java.js",
+"lineCount":159,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;MAgCa,a;;;;CAAA,W;EAAAA,Q;EAAAA;OAWsB,2DAXtBA,C;EAAAA;OAagB,oDAbhBA,C;;;;;;;QAoBJ,uB,CAA2BC,O;EAA3BC,wB;EAAAA,oC;EAAAA,mF;EAAAA,iB;;;;;;CAAA,+D,CAA2BD,O;EAChCE,iN;EADKA,2D;EAELA,iJ;EACAA,IAAIC,KAAJD,K;EACAA;GAAAA,IAAYE,MAAZF,wEAAAA;GACEA,8GADFA;G;;;;;;;;;;CAMU,8L,CAA4BG,O,EAAiBC,M,EAAeC,K,EACjCC,K,EAA4BC,Y;EACjEC,kP;EACAA,IAAOC,IAAPD,6E;EACAA;GACEA,IAAOE,GAAPF,wBADFA;GAEEA,IAAcG,MAAdH,wKAFFA;GAGEA,IAAOI,QAAPJ,8IAHFA;GAIEA,sEAJFA;GAKEA,0KALFA;GAMEA;IACEA,kDADFA;IANFA;G;;;;;;;;CAaU,mH,CAAoBL,O,EAAgBE,K,EAAuBQ,E;EAErEC,IAAOJ,GAAPI,wB;EACAA,IAAOC,QAAPD,6F;EACAA;GACEA,4CADFA;GAEEA,gBAFFA;G;EAKAA,IAAIE,aAAJF,6I;EACAA,sE;EACAA,IAAIb,KAAJa,K;EACAA;GAAAA,IAAYZ,MAAZY,wEAAAA;GACEA;IACEA,kKADFA;;IAGEA,oKAHFA;IADFA;G;EAOAA,uD;;;;;;;CAGU,gF,CAAwBT,K;EAClCY,IAAQhB,KAARgB,4H;EACAA;GACEA,UADFA;G;EAGAA,4B;;;;;;;;;;;;CA1ES,8L;EAAAT,kR;;;;;;;;;;CAAA,mH;EAAAM,2L;;;;;CAAA,mD;EAWXd,kI;;;;;QAXW,O;EAAAkB,gC;EAAAA,6B;EAAAA;",
+"sources":["SelectionCell.java"],
+"names":["org.gwtproject.cell.client.SelectionCell.<synthetic: ctor_js>","options","org.gwtproject.cell.client.SelectionCell.<synthetic: ctor_create>","org.gwtproject.cell.client.SelectionCell.<init>","index","option","context","parent","value","event","valueUpdater","org.gwtproject.cell.client.SelectionCell.onBrowserEvent","type","key","select","newValue","sb","org.gwtproject.cell.client.SelectionCell.render","viewData","selectedIndex","org.gwtproject.cell.client.SelectionCell.getSelectedIndex","org.gwtproject.cell.client.SelectionCell.<clinit>"]
+}

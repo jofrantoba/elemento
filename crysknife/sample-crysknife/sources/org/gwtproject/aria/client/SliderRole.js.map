@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"SliderRole.impl.java.js",
+"lineCount":41,
+"mappings":"A;;;;;;;;;;;;;;MA4BiB,U;;;;;;;CAOR,+D,CAAmCA,O;;;;;;CAMrC,kE,CAAsCA,O;;;;;;;CAMtC,4G,CAAmCA,O,EAA0BC,K;;;;QAnBnD,O;EAAAC,6B;EAAAA;",
+"sources":["SliderRole.java"],
+"names":["element","value","org.gwtproject.aria.client.SliderRole.<clinit>"]
+}

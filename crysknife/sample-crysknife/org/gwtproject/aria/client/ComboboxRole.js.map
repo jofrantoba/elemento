@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ComboboxRole.impl.java.js",
+"lineCount":59,
+"mappings":"A;;;;;;;;;;;;MA4BiB,Y;;;;;;;CAOR,gE,CAAoCA,O;;;;;;;CAOpC,4D,CAAgCA,O;;;;;;CAMlC,mE,CAAuCA,O;;;;;;CAMvC,+D,CAAmCA,O;;;;;;;CAMnC,8G,CAAoCA,O,EAA2BC,K;;;;;;;CAM/D,qE,CAAgCD,O,EAAiBC,K;;;;QAtCvC,O;EAAAC,+B;EAAAA;",
+"sources":["ComboboxRole.java"],
+"names":["element","value","org.gwtproject.aria.client.ComboboxRole.<clinit>"]
+}

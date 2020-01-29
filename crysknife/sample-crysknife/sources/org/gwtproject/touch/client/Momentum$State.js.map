@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"Momentum$State.impl.java.js",
+"lineCount":135,
+"mappings":"A;;;;;;;MA2BsB,K;;;;CAAA,W;EAAAA,Q;EAAAA;OAEN,sEAFMA,K;EAAAA;OAGN,4DAHMA,K;EAAAA;OAIE,8DAJFA,C;EAAAA;OAKE,8DALFA,C;EAAAA;OAMJ,uDANIA,C;EAAAA;OAOJ,uDAPIA,C;;;;;;;;QAiBX,6E,CAAYC,e,EAAuBC,e;EAAnCC,gB;EAAAA,4B;EAAAA,oK;EAAAA,iB;;;;;;;CAAA,uH,CAAYF,e,EAAuBC,e;EAAnCE,iC;EAAAA,6D;EACLA,sF;EACAA,sF;EACAA,iI;EACAA,iI;;;;;;CAQS,8B;EACTC,mF;;;;;;CASS,oB;EACTC,yE;;;;;;CAQW,sB;EACXC,2E;;;;;;CASW,sB;EACXC,2E;;;;;;CAQW,e;EACXC,oE;;;;;;CAQW,e;EACXC,oE;;;;;;CAQU,gD,CAAkBC,Q;EAC5BC,wE;;;;;;CAQU,gD,CAAkBC,Q;EAC5BC,wE;;;;;;CAQG,iE,CAA+BC,uB;EAClCC,sG;;;;;;CASG,uD,CAAqBC,a;EACxBC,kF;;;;;CAlHgB,qD;EAElBd,gF;EACAA,sE;;;;;QAHkB,O;EAAAe,wB;EAAAA,qB;EAAAA;",
+"sources":["Momentum.java"],
+"names":["org.gwtproject.touch.client.Momentum$State.<synthetic: ctor_js>","initialPosition","initialVelocity","org.gwtproject.touch.client.Momentum$State.<synthetic: ctor_create>","org.gwtproject.touch.client.Momentum$State.<init>","org.gwtproject.touch.client.Momentum$State.getCumulativeElapsedMillis","org.gwtproject.touch.client.Momentum$State.getElapsedMillis","org.gwtproject.touch.client.Momentum$State.getInitialPosition","org.gwtproject.touch.client.Momentum$State.getInitialVelocity","org.gwtproject.touch.client.Momentum$State.getPosition","org.gwtproject.touch.client.Momentum$State.getVelocity","position","org.gwtproject.touch.client.Momentum$State.setPosition","velocity","org.gwtproject.touch.client.Momentum$State.setVelocity","cumulativeElapsedMillis","org.gwtproject.touch.client.Momentum$State.setCumulativeElapsedMillis","elapsedMillis","org.gwtproject.touch.client.Momentum$State.setElapsedMillis","org.gwtproject.touch.client.Momentum$State.<clinit>"]
+}

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"UiFactory$$LambdaAdaptor.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;;;;MAiCkB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;uE;EAAAA,8H;;;;;;CAAA,oH;EAAAC,iC;EAAAA,0E;;;;;;CAAA,kB;EAAAC,0C;EAAAA,uG;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["UiFactory.java"],
+"names":["org.gwtproject.uibinder.client.UiFactory$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.uibinder.client.UiFactory$$LambdaAdaptor.<init>","org.gwtproject.uibinder.client.UiFactory$$LambdaAdaptor.annotationType","org.gwtproject.uibinder.client.UiFactory$$LambdaAdaptor.<clinit>"]
+}
