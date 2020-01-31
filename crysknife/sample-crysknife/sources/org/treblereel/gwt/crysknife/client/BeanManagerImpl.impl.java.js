@@ -33,8 +33,8 @@ class BeanManagerImpl extends AbstractBeanManager {
  
  m_init___$p_org_treblereel_gwt_crysknife_client_BeanManagerImpl() {
   this.m_register__java_lang_Class__javax_inject_Provider(Class.$get(BeanManager), BeanManager__Factory.m_create__());
-  this.m_register__java_lang_Class__javax_inject_Provider(Class.$get(FooterElement), FooterElement__Factory.m_create__());
   this.m_register__java_lang_Class__javax_inject_Provider(Class.$get(TodoRepository), TodoRepository__Factory.m_create__());
+  this.m_register__java_lang_Class__javax_inject_Provider(Class.$get(FooterElement), FooterElement__Factory.m_create__());
   this.m_register__java_lang_Class__javax_inject_Provider(Class.$get(ApplicationElement), ApplicationElement__Factory.m_create__());
  }
  /** @return {BeanManager} */

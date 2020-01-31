@@ -13,8 +13,8 @@ public class BeanManagerImpl extends AbstractBeanManager {
 
     private void init() {
         this.register(org.treblereel.gwt.crysknife.client.BeanManager.class, org.treblereel.gwt.crysknife.client.BeanManager_Factory.create());
-        this.register(org.jboss.elemento.sample.crysknife.FooterElement.class, org.jboss.elemento.sample.crysknife.FooterElement_Factory.create());
         this.register(org.jboss.elemento.sample.crysknife.TodoRepository.class, org.jboss.elemento.sample.crysknife.TodoRepository_Factory.create());
+        this.register(org.jboss.elemento.sample.crysknife.FooterElement.class, org.jboss.elemento.sample.crysknife.FooterElement_Factory.create());
         this.register(org.jboss.elemento.sample.crysknife.ApplicationElement.class, org.jboss.elemento.sample.crysknife.ApplicationElement_Factory.create());
     }
 
