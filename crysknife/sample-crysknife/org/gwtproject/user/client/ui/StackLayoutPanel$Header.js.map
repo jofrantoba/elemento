@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"StackLayoutPanel$Header.impl.java.js",
-"lineCount":82,
-"mappings":"A;;;;;;;;;;;;;;;;;;;MAuGgB,M;;;;CAAA,W;EAAAA,Q;EAAAA;4E;;;;;;;;QACL,6F,cAAcC,K;EAAdC,iB;EAAAA,6B;EAAAA,iL;EAAAA,iB;;;;;;;CAAA,kJ,cAAcD,K;EAAdE,wF;EAAAA,wD;EACLA,+D;;;;;;;;CAGyB,+D,CAA6BC,O;EACtDC,+J;;;;;;;CAGyB,qE,CAAmCD,O;EAC5DE,kK;;;;;;;CAGyB,uE,CAAqCF,O;EAC9DG,mK;;;;;QAdU,O;EAAAC,yB;EAAAA,sB;EAAAA;",
+"lineCount":56,
+"mappings":"A;;;;;;;;;;;;;;;;;;;MAuGgB,M;;CAAA,W;EAAAA,Q;EAAAA;4E;;;QACL,6F,oDAAcC,K;EAAdC,iB;EAAAA,6B;EAAAA,iL;EAAAA,iB;;;CAAA,kJ,oDAAcD,K;EAAdE,wF;EAAAA,wD;EACLA,+D;;;CAGyB,+D,qBAA6BC,O;EACtDC,+J;;;CAGyB,qE,wBAAmCD,O;EAC5DE,kK;;;CAGyB,uE,yBAAqCF,O;EAC9DG,mK;;;QAdU,O;EAAAC,yB;EAAAA,sB;EAAAA;",
 "sources":["StackLayoutPanel.java"],
 "names":["org.gwtproject.user.client.ui.StackLayoutPanel$Header.<synthetic: ctor_js>","child","org.gwtproject.user.client.ui.StackLayoutPanel$Header.<synthetic: ctor_create>","org.gwtproject.user.client.ui.StackLayoutPanel$Header.<init>","handler","org.gwtproject.user.client.ui.StackLayoutPanel$Header.addClickHandler","org.gwtproject.user.client.ui.StackLayoutPanel$Header.addMouseOutHandler","org.gwtproject.user.client.ui.StackLayoutPanel$Header.addMouseOverHandler","org.gwtproject.user.client.ui.StackLayoutPanel$Header.<clinit>"]
 }

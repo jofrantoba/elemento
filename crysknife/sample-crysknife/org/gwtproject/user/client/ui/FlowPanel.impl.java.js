@@ -17,63 +17,42 @@ let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
  * @implements {ForIsWidget}
   */
 class FlowPanel extends ComplexPanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * Factory method corresponding to constructor 'FlowPanel()'.
-  * @return {!FlowPanel}
-  * @public
-  */
+ //Factory method corresponding to constructor 'FlowPanel()'.
+ /** @return {!FlowPanel} */
  static $create__() {
   FlowPanel.$clinit();
   let $instance = new FlowPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_FlowPanel__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'FlowPanel()'.
-  * @public
-  */
+ //Initialization from constructor 'FlowPanel()'.
+ 
  $ctor__org_gwtproject_user_client_ui_FlowPanel__() {
   this.$ctor__org_gwtproject_user_client_ui_FlowPanel__java_lang_String($Overlay.f_TAG__org_gwtproject_dom_client_DivElement_$Overlay);
  }
- /**
-  * Factory method corresponding to constructor 'FlowPanel(String)'.
-  * @param {?string} tag
-  * @return {!FlowPanel}
-  * @public
-  */
- static $create__java_lang_String(tag) {
+ //Factory method corresponding to constructor 'FlowPanel(String)'.
+ /** @return {!FlowPanel} */
+ static $create__java_lang_String(/** ?string */ tag) {
   FlowPanel.$clinit();
   let $instance = new FlowPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_FlowPanel__java_lang_String(tag);
   return $instance;
  }
- /**
-  * Initialization from constructor 'FlowPanel(String)'.
-  * @param {?string} tag
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_FlowPanel__java_lang_String(tag) {
+ //Initialization from constructor 'FlowPanel(String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_FlowPanel__java_lang_String(/** ?string */ tag) {
   this.$ctor__org_gwtproject_user_client_ui_ComplexPanel__();
   this.m_setElement__org_gwtproject_dom_client_Element(Document_$Overlay.m_createElement__$devirt__org_gwtproject_dom_client_Document__java_lang_String(Document_$Overlay.m_get__(), tag));
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override */
+ m_add__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   this.m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element(w, this.m_getElement__());
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_clear__() {
   try {
    this.m_doLogicalClear___$pp_org_gwtproject_user_client_ui();
@@ -81,61 +60,35 @@ class FlowPanel extends ComplexPanel {
    Node_$Overlay.m_removeAllChildren__$devirt__org_gwtproject_dom_client_Node(this.m_getElement__());
   }
  }
- /**
-  * @override
-  * @param {IsWidget} w
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_IsWidget__int(w, beforeIndex) {
+ /** @override */
+ m_insert__org_gwtproject_user_client_ui_IsWidget__int(/** IsWidget */ w, /** number */ beforeIndex) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__int(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(w), beforeIndex);
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_Widget__int(w, beforeIndex) {
+ /** @override */
+ m_insert__org_gwtproject_user_client_ui_Widget__int(/** Widget */ w, /** number */ beforeIndex) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element__int__boolean(w, this.m_getElement__(), beforeIndex, true);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   FlowPanel.$clinit = () =>{};
   FlowPanel.$loadModules();
   ComplexPanel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof FlowPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.DivElement.$Overlay$impl');

@@ -11,50 +11,29 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.event.dom.client.FocusH
  * @extends {EventHandler}
  */
 class FocusHandler {
- /**
-  * @abstract
-  * @param {FocusEvent} event
-  * @public
-  */
- m_onFocus__org_gwtproject_event_dom_client_FocusEvent(event) {}
- /**
-  * @param {?function(FocusEvent):void} fn
-  * @return {FocusHandler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onFocus__org_gwtproject_event_dom_client_FocusEvent(/** FocusEvent */ event) {}
+ /** @return {FocusHandler} */
+ static $adapt(/** ?function(FocusEvent):void */ fn) {
   FocusHandler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   FocusHandler.$clinit = () =>{};
   FocusHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  EventHandler.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_FocusHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  EventHandler.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_FocusHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_FocusHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.event.dom.client.FocusHandler.$LambdaAdaptor$impl');
  }

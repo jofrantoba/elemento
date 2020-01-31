@@ -9,59 +9,38 @@ let FontWeight = goog.forwardDeclare('org.gwtproject.dom.style.shared.FontWeight
  * @deprecated
   */
 class Style_FontWeight extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!Style_FontWeight}
-  * @public
-  */
+ /** @return {!Style_FontWeight} */
  static $create__() {
   Style_FontWeight.$clinit();
   let $instance = new Style_FontWeight();
   $instance.$ctor__org_gwtproject_dom_client_Style_FontWeight__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_dom_client_Style_FontWeight__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {FontWeight}
-  * @public
-  */
+ /** @return {FontWeight} */
  static get f_NORMAL__org_gwtproject_dom_client_Style_FontWeight() {
   return (Style_FontWeight.$clinit(), Style_FontWeight.$f_NORMAL__org_gwtproject_dom_client_Style_FontWeight);
  }
- /**
-  * @return {FontWeight}
-  * @public
-  */
+ /** @return {FontWeight} */
  static get f_BOLD__org_gwtproject_dom_client_Style_FontWeight() {
   return (Style_FontWeight.$clinit(), Style_FontWeight.$f_BOLD__org_gwtproject_dom_client_Style_FontWeight);
  }
- /**
-  * @return {FontWeight}
-  * @public
-  */
+ /** @return {FontWeight} */
  static get f_BOLDER__org_gwtproject_dom_client_Style_FontWeight() {
   return (Style_FontWeight.$clinit(), Style_FontWeight.$f_BOLDER__org_gwtproject_dom_client_Style_FontWeight);
  }
- /**
-  * @return {FontWeight}
-  * @public
-  */
+ /** @return {FontWeight} */
  static get f_LIGHTER__org_gwtproject_dom_client_Style_FontWeight() {
   return (Style_FontWeight.$clinit(), Style_FontWeight.$f_LIGHTER__org_gwtproject_dom_client_Style_FontWeight);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Style_FontWeight.$clinit = () =>{};
   Style_FontWeight.$loadModules();
@@ -71,17 +50,11 @@ class Style_FontWeight extends j_l_Object {
   Style_FontWeight.$f_BOLDER__org_gwtproject_dom_client_Style_FontWeight = FontWeight.f_BOLDER__org_gwtproject_dom_style_shared_FontWeight;
   Style_FontWeight.$f_LIGHTER__org_gwtproject_dom_client_Style_FontWeight = FontWeight.f_LIGHTER__org_gwtproject_dom_style_shared_FontWeight;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Style_FontWeight;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   FontWeight = goog.module.get('org.gwtproject.dom.style.shared.FontWeight$impl');
  }
@@ -89,13 +62,13 @@ class Style_FontWeight extends j_l_Object {
 }
 $Util.$setClassMetadata(Style_FontWeight, 'org.gwtproject.dom.client.Style$FontWeight');
 
-/** @private {FontWeight} */
+/**@private {FontWeight}*/
 Style_FontWeight.$f_NORMAL__org_gwtproject_dom_client_Style_FontWeight;
-/** @private {FontWeight} */
+/**@private {FontWeight}*/
 Style_FontWeight.$f_BOLD__org_gwtproject_dom_client_Style_FontWeight;
-/** @private {FontWeight} */
+/**@private {FontWeight}*/
 Style_FontWeight.$f_BOLDER__org_gwtproject_dom_client_Style_FontWeight;
-/** @private {FontWeight} */
+/**@private {FontWeight}*/
 Style_FontWeight.$f_LIGHTER__org_gwtproject_dom_client_Style_FontWeight;
 
 exports = Style_FontWeight; 

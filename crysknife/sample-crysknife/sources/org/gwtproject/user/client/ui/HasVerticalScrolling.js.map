@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasVerticalScrolling.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;MAoBiB,oB;;;;;;CAQX,oC;;;;;;CAOA,oC;;;;;;CAOA,6B;;;;;;CAOC,gC,CAA8BA,Q;;;;QA7BpB,O;EAAAC,uC;EAAAA;",
+"lineCount":20,
+"mappings":"A;;;;;;;MAoBiB,oB;;CAQX,oC;;CAOA,oC;;CAOA,6B;;CAOC,gC,eAA8BA,Q;;QA7BpB,O;EAAAC,uC;EAAAA;",
 "sources":["HasVerticalScrolling.java"],
 "names":["position","org.gwtproject.user.client.ui.HasVerticalScrolling.<clinit>"]
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DisclosurePanel$Imager.impl.java.js",
-"lineCount":29,
-"mappings":"A;;;;;;;;;MA4SoB,M;;;;;;CACV,a;;;;;;;CAED,2D,CAAoBA,I,EAAYC,K;;;;QAHrB,O;EAAAC,yB;EAAAA;",
+"lineCount":18,
+"mappings":"A;;;;;;;;;MA4SoB,M;;CACV,a;;CAED,2D,gBAAoBA,I,eAAYC,K;;QAHrB,O;EAAAC,yB;EAAAA;",
 "sources":["DisclosurePanel.java"],
 "names":["open","image","org.gwtproject.user.client.ui.DisclosurePanel$Imager.<clinit>"]
 }

@@ -6,24 +6,17 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Overlay = goog.forwardDeclare('jsinterop.base.JsPropertyMap.$Overlay$impl');
 
 class GetRootNodeOptions_$Overlay {
- /**
-  * @return {GetRootNodeOptions}
-  * @public
-  */
+ /** @return {GetRootNodeOptions} */
  static m_create__() {
   GetRootNodeOptions_$Overlay.$clinit();
-  return /**@type {GetRootNodeOptions} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
+  return /**@type {GetRootNodeOptions}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   GetRootNodeOptions_$Overlay.$clinit = () =>{};
   GetRootNodeOptions_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');

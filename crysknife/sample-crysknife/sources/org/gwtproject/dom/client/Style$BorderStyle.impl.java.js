@@ -9,66 +9,42 @@ let BorderStyle = goog.forwardDeclare('org.gwtproject.dom.style.shared.BorderSty
  * @deprecated
   */
 class Style_BorderStyle extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!Style_BorderStyle}
-  * @public
-  */
+ /** @return {!Style_BorderStyle} */
  static $create__() {
   Style_BorderStyle.$clinit();
   let $instance = new Style_BorderStyle();
   $instance.$ctor__org_gwtproject_dom_client_Style_BorderStyle__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_dom_client_Style_BorderStyle__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {BorderStyle}
-  * @public
-  */
+ /** @return {BorderStyle} */
  static get f_NONE__org_gwtproject_dom_client_Style_BorderStyle() {
   return (Style_BorderStyle.$clinit(), Style_BorderStyle.$f_NONE__org_gwtproject_dom_client_Style_BorderStyle);
  }
- /**
-  * @return {BorderStyle}
-  * @public
-  */
+ /** @return {BorderStyle} */
  static get f_DOTTED__org_gwtproject_dom_client_Style_BorderStyle() {
   return (Style_BorderStyle.$clinit(), Style_BorderStyle.$f_DOTTED__org_gwtproject_dom_client_Style_BorderStyle);
  }
- /**
-  * @return {BorderStyle}
-  * @public
-  */
+ /** @return {BorderStyle} */
  static get f_DASHED__org_gwtproject_dom_client_Style_BorderStyle() {
   return (Style_BorderStyle.$clinit(), Style_BorderStyle.$f_DASHED__org_gwtproject_dom_client_Style_BorderStyle);
  }
- /**
-  * @return {BorderStyle}
-  * @public
-  */
+ /** @return {BorderStyle} */
  static get f_HIDDEN__org_gwtproject_dom_client_Style_BorderStyle() {
   return (Style_BorderStyle.$clinit(), Style_BorderStyle.$f_HIDDEN__org_gwtproject_dom_client_Style_BorderStyle);
  }
- /**
-  * @return {BorderStyle}
-  * @public
-  */
+ /** @return {BorderStyle} */
  static get f_SOLID__org_gwtproject_dom_client_Style_BorderStyle() {
   return (Style_BorderStyle.$clinit(), Style_BorderStyle.$f_SOLID__org_gwtproject_dom_client_Style_BorderStyle);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Style_BorderStyle.$clinit = () =>{};
   Style_BorderStyle.$loadModules();
@@ -79,17 +55,11 @@ class Style_BorderStyle extends j_l_Object {
   Style_BorderStyle.$f_HIDDEN__org_gwtproject_dom_client_Style_BorderStyle = BorderStyle.f_HIDDEN__org_gwtproject_dom_style_shared_BorderStyle;
   Style_BorderStyle.$f_SOLID__org_gwtproject_dom_client_Style_BorderStyle = BorderStyle.f_SOLID__org_gwtproject_dom_style_shared_BorderStyle;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Style_BorderStyle;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   BorderStyle = goog.module.get('org.gwtproject.dom.style.shared.BorderStyle$impl');
  }
@@ -97,15 +67,15 @@ class Style_BorderStyle extends j_l_Object {
 }
 $Util.$setClassMetadata(Style_BorderStyle, 'org.gwtproject.dom.client.Style$BorderStyle');
 
-/** @private {BorderStyle} */
+/**@private {BorderStyle}*/
 Style_BorderStyle.$f_NONE__org_gwtproject_dom_client_Style_BorderStyle;
-/** @private {BorderStyle} */
+/**@private {BorderStyle}*/
 Style_BorderStyle.$f_DOTTED__org_gwtproject_dom_client_Style_BorderStyle;
-/** @private {BorderStyle} */
+/**@private {BorderStyle}*/
 Style_BorderStyle.$f_DASHED__org_gwtproject_dom_client_Style_BorderStyle;
-/** @private {BorderStyle} */
+/**@private {BorderStyle}*/
 Style_BorderStyle.$f_HIDDEN__org_gwtproject_dom_client_Style_BorderStyle;
-/** @private {BorderStyle} */
+/**@private {BorderStyle}*/
 Style_BorderStyle.$f_SOLID__org_gwtproject_dom_client_Style_BorderStyle;
 
 exports = Style_BorderStyle; 

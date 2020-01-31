@@ -12,51 +12,29 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.editor.client.HasEditor
  * @extends {Editor<T>}
  */
 class HasEditorDelegate {
- /**
-  * @abstract
-  * @param {EditorDelegate<T>} delegate
-  * @public
-  */
- m_setDelegate__org_gwtproject_editor_client_EditorDelegate(delegate) {}
- /**
-  * @template T
-  * @param {?function(EditorDelegate<T>):void} fn
-  * @return {HasEditorDelegate<T>}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_setDelegate__org_gwtproject_editor_client_EditorDelegate(/** EditorDelegate<T> */ delegate) {}
+ /** @template T @return {HasEditorDelegate<T>} */
+ static $adapt(/** ?function(EditorDelegate<T>):void */ fn) {
   HasEditorDelegate.$clinit();
-  return /**@type {!$LambdaAdaptor<T>} */ (new $LambdaAdaptor(fn));
+  return /**@type {!$LambdaAdaptor<T>}*/ (new $LambdaAdaptor(fn));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HasEditorDelegate.$clinit = () =>{};
   HasEditorDelegate.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Editor.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_editor_client_HasEditorDelegate = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Editor.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_editor_client_HasEditorDelegate = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_editor_client_HasEditorDelegate;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.editor.client.HasEditorDelegate.$LambdaAdaptor$impl');
  }

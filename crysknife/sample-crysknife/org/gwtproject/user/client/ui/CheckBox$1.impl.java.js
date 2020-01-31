@@ -12,60 +12,39 @@ let CheckBox = goog.forwardDeclare('org.gwtproject.user.client.ui.CheckBox$impl'
  * @implements {ClickHandler}
   */
 class $1 extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {CheckBox} */
+  /**@type {CheckBox}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_CheckBox_1;
  }
- /**
-  * @param {CheckBox} $outer_this
-  * @return {!$1}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_CheckBox($outer_this) {
+ /** @return {!$1} */
+ static $create__org_gwtproject_user_client_ui_CheckBox(/** CheckBox */ $outer_this) {
   $1.$clinit();
   let $instance = new $1();
   $instance.$ctor__org_gwtproject_user_client_ui_CheckBox_1__org_gwtproject_user_client_ui_CheckBox($outer_this);
   return $instance;
  }
- /**
-  * @param {CheckBox} $outer_this
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_CheckBox_1__org_gwtproject_user_client_ui_CheckBox($outer_this) {
+ 
+ $ctor__org_gwtproject_user_client_ui_CheckBox_1__org_gwtproject_user_client_ui_CheckBox(/** CheckBox */ $outer_this) {
   this.f_$outer_this__org_gwtproject_user_client_ui_CheckBox_1 = $outer_this;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {ClickEvent} event
-  * @public
-  */
- m_onClick__org_gwtproject_event_dom_client_ClickEvent(event) {
+ /** @override */
+ m_onClick__org_gwtproject_event_dom_client_ClickEvent(/** ClickEvent */ event) {
   ValueChangeEvent.m_fire__org_gwtproject_event_logical_shared_HasValueChangeHandlers__java_lang_Object(this.f_$outer_this__org_gwtproject_user_client_ui_CheckBox_1, this.f_$outer_this__org_gwtproject_user_client_ui_CheckBox_1.m_getValue__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $1.$clinit = () =>{};
   $1.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $1;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   ValueChangeEvent = goog.module.get('org.gwtproject.event.logical.shared.ValueChangeEvent$impl');
  }

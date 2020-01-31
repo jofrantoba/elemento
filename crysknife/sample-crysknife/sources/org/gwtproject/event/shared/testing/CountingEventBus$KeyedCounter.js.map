@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CountingEventBus$KeyedCounter.impl.java.js",
-"lineCount":77,
-"mappings":"A;;;;;;;;;;;;;;MAmIuB,Y;;;;CAAA,W;EAAAA,Q;EAAAA;OACK,4EADLA,C;;;;;;;QAAA,S;EAAAC,uB;EAAAA,mC;EAAAA,uF;EAAAA,iB;;;;;CAAA,0E;EAAAC,iC;EAAAA,oF;;;;;;;CAGf,oE,CAAWC,G;EACbC,IAAQC,KAARD,2I;EACAA,+D;;;;;;CAGG,qE,CAAYD,G;EACfG,uM;;;;;;CAGG,qE,CAAYH,G;EACfI,uM;;;;;CAbiB,4E;EACnBL,6I;;;;;QADmB,O;EAAAM,+B;EAAAA,4B;EAAAA;",
+"lineCount":55,
+"mappings":"A;;;;;;;;;;;;;;MAmIuB,Y;;CAAA,W;EAAAA,Q;EAAAA;OACK,4EADLA,C;;;QAAA,S;EAAAC,uB;EAAAA,mC;EAAAA,uF;EAAAA,iB;;;CAAA,0E;EAAAC,iC;EAAAA,oF;;;CAGf,oE,UAAWC,G;EACbC,IAAQC,KAARD,0I;EACAA,+D;;;CAGG,qE,UAAYD,G;EACfG,uM;;;CAGG,qE,UAAYH,G;EACfI,uM;;;CAbiB,4E;EACnBL,4I;;;QADmB,O;EAAAM,+B;EAAAA,4B;EAAAA;",
 "sources":["CountingEventBus.java"],
 "names":["org.gwtproject.event.shared.testing.CountingEventBus$KeyedCounter.<synthetic: ctor_js>","org.gwtproject.event.shared.testing.CountingEventBus$KeyedCounter.<synthetic: ctor_create>","org.gwtproject.event.shared.testing.CountingEventBus$KeyedCounter.<init>","key","org.gwtproject.event.shared.testing.CountingEventBus$KeyedCounter.getCount","count","org.gwtproject.event.shared.testing.CountingEventBus$KeyedCounter.decrement","org.gwtproject.event.shared.testing.CountingEventBus$KeyedCounter.increment","org.gwtproject.event.shared.testing.CountingEventBus$KeyedCounter.<clinit>"]
 }

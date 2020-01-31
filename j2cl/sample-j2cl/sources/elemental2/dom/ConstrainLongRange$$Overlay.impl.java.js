@@ -6,24 +6,17 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Overlay = goog.forwardDeclare('jsinterop.base.JsPropertyMap.$Overlay$impl');
 
 class ConstrainLongRange_$Overlay {
- /**
-  * @return {ConstrainLongRange}
-  * @public
-  */
+ /** @return {ConstrainLongRange} */
  static m_create__() {
   ConstrainLongRange_$Overlay.$clinit();
-  return /**@type {ConstrainLongRange} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
+  return /**@type {ConstrainLongRange}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ConstrainLongRange_$Overlay.$clinit = () =>{};
   ConstrainLongRange_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');

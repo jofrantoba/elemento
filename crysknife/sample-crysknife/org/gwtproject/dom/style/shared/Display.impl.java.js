@@ -33,185 +33,108 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @implements {HasCssName}
   */
 class Display extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_dom_style_shared_Display__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_dom_style_shared_Display__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @abstract
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @override @return {?string} */
  m_getCssName__() {}
- /**
-  * @param {string} name
-  * @return {!Display}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!Display} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   Display.$clinit();
   if ($Equality.$same(Display.f_namesToValuesMap__org_gwtproject_dom_style_shared_Display_, null)) {
    Display.f_namesToValuesMap__org_gwtproject_dom_style_shared_Display_ = $Enums.createMapFromValues(Display.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, Display.f_namesToValuesMap__org_gwtproject_dom_style_shared_Display_);
  }
- /**
-  * @return {!Array<!Display>}
-  * @public
-  */
+ /** @return {!Array<!Display>} */
  static m_values__() {
   Display.$clinit();
-  return /**@type {!Array<Display>} */ ($Arrays.$init([Display.$f_NONE__org_gwtproject_dom_style_shared_Display, Display.$f_BLOCK__org_gwtproject_dom_style_shared_Display, Display.$f_INLINE__org_gwtproject_dom_style_shared_Display, Display.$f_INLINE_BLOCK__org_gwtproject_dom_style_shared_Display, Display.$f_INLINE_TABLE__org_gwtproject_dom_style_shared_Display, Display.$f_LIST_ITEM__org_gwtproject_dom_style_shared_Display, Display.$f_RUN_IN__org_gwtproject_dom_style_shared_Display, Display.$f_TABLE__org_gwtproject_dom_style_shared_Display, Display.$f_TABLE_CAPTION__org_gwtproject_dom_style_shared_Display, Display.$f_TABLE_COLUMN_GROUP__org_gwtproject_dom_style_shared_Display, Display.$f_TABLE_HEADER_GROUP__org_gwtproject_dom_style_shared_Display, Display.$f_TABLE_FOOTER_GROUP__org_gwtproject_dom_style_shared_Display, Display.$f_TABLE_ROW_GROUP__org_gwtproject_dom_style_shared_Display, Display.$f_TABLE_CELL__org_gwtproject_dom_style_shared_Display, Display.$f_TABLE_COLUMN__org_gwtproject_dom_style_shared_Display, Display.$f_TABLE_ROW__org_gwtproject_dom_style_shared_Display, Display.$f_INITIAL__org_gwtproject_dom_style_shared_Display, Display.$f_FLEX__org_gwtproject_dom_style_shared_Display, Display.$f_INLINE_FLEX__org_gwtproject_dom_style_shared_Display], Display));
+  return /**@type {!Array<Display>}*/ ($Arrays.$init([Display.$f_NONE__org_gwtproject_dom_style_shared_Display, Display.$f_BLOCK__org_gwtproject_dom_style_shared_Display, Display.$f_INLINE__org_gwtproject_dom_style_shared_Display, Display.$f_INLINE_BLOCK__org_gwtproject_dom_style_shared_Display, Display.$f_INLINE_TABLE__org_gwtproject_dom_style_shared_Display, Display.$f_LIST_ITEM__org_gwtproject_dom_style_shared_Display, Display.$f_RUN_IN__org_gwtproject_dom_style_shared_Display, Display.$f_TABLE__org_gwtproject_dom_style_shared_Display, Display.$f_TABLE_CAPTION__org_gwtproject_dom_style_shared_Display, Display.$f_TABLE_COLUMN_GROUP__org_gwtproject_dom_style_shared_Display, Display.$f_TABLE_HEADER_GROUP__org_gwtproject_dom_style_shared_Display, Display.$f_TABLE_FOOTER_GROUP__org_gwtproject_dom_style_shared_Display, Display.$f_TABLE_ROW_GROUP__org_gwtproject_dom_style_shared_Display, Display.$f_TABLE_CELL__org_gwtproject_dom_style_shared_Display, Display.$f_TABLE_COLUMN__org_gwtproject_dom_style_shared_Display, Display.$f_TABLE_ROW__org_gwtproject_dom_style_shared_Display, Display.$f_INITIAL__org_gwtproject_dom_style_shared_Display, Display.$f_FLEX__org_gwtproject_dom_style_shared_Display, Display.$f_INLINE_FLEX__org_gwtproject_dom_style_shared_Display], Display));
  }
- /**
-  * @return {!Display}
-  * @public
-  */
+ /** @return {!Display} */
  static get f_NONE__org_gwtproject_dom_style_shared_Display() {
   return (Display.$clinit(), Display.$f_NONE__org_gwtproject_dom_style_shared_Display);
  }
- /**
-  * @return {!Display}
-  * @public
-  */
+ /** @return {!Display} */
  static get f_BLOCK__org_gwtproject_dom_style_shared_Display() {
   return (Display.$clinit(), Display.$f_BLOCK__org_gwtproject_dom_style_shared_Display);
  }
- /**
-  * @return {!Display}
-  * @public
-  */
+ /** @return {!Display} */
  static get f_INLINE__org_gwtproject_dom_style_shared_Display() {
   return (Display.$clinit(), Display.$f_INLINE__org_gwtproject_dom_style_shared_Display);
  }
- /**
-  * @return {!Display}
-  * @public
-  */
+ /** @return {!Display} */
  static get f_INLINE_BLOCK__org_gwtproject_dom_style_shared_Display() {
   return (Display.$clinit(), Display.$f_INLINE_BLOCK__org_gwtproject_dom_style_shared_Display);
  }
- /**
-  * @return {!Display}
-  * @public
-  */
+ /** @return {!Display} */
  static get f_INLINE_TABLE__org_gwtproject_dom_style_shared_Display() {
   return (Display.$clinit(), Display.$f_INLINE_TABLE__org_gwtproject_dom_style_shared_Display);
  }
- /**
-  * @return {!Display}
-  * @public
-  */
+ /** @return {!Display} */
  static get f_LIST_ITEM__org_gwtproject_dom_style_shared_Display() {
   return (Display.$clinit(), Display.$f_LIST_ITEM__org_gwtproject_dom_style_shared_Display);
  }
- /**
-  * @return {!Display}
-  * @public
-  */
+ /** @return {!Display} */
  static get f_RUN_IN__org_gwtproject_dom_style_shared_Display() {
   return (Display.$clinit(), Display.$f_RUN_IN__org_gwtproject_dom_style_shared_Display);
  }
- /**
-  * @return {!Display}
-  * @public
-  */
+ /** @return {!Display} */
  static get f_TABLE__org_gwtproject_dom_style_shared_Display() {
   return (Display.$clinit(), Display.$f_TABLE__org_gwtproject_dom_style_shared_Display);
  }
- /**
-  * @return {!Display}
-  * @public
-  */
+ /** @return {!Display} */
  static get f_TABLE_CAPTION__org_gwtproject_dom_style_shared_Display() {
   return (Display.$clinit(), Display.$f_TABLE_CAPTION__org_gwtproject_dom_style_shared_Display);
  }
- /**
-  * @return {!Display}
-  * @public
-  */
+ /** @return {!Display} */
  static get f_TABLE_COLUMN_GROUP__org_gwtproject_dom_style_shared_Display() {
   return (Display.$clinit(), Display.$f_TABLE_COLUMN_GROUP__org_gwtproject_dom_style_shared_Display);
  }
- /**
-  * @return {!Display}
-  * @public
-  */
+ /** @return {!Display} */
  static get f_TABLE_HEADER_GROUP__org_gwtproject_dom_style_shared_Display() {
   return (Display.$clinit(), Display.$f_TABLE_HEADER_GROUP__org_gwtproject_dom_style_shared_Display);
  }
- /**
-  * @return {!Display}
-  * @public
-  */
+ /** @return {!Display} */
  static get f_TABLE_FOOTER_GROUP__org_gwtproject_dom_style_shared_Display() {
   return (Display.$clinit(), Display.$f_TABLE_FOOTER_GROUP__org_gwtproject_dom_style_shared_Display);
  }
- /**
-  * @return {!Display}
-  * @public
-  */
+ /** @return {!Display} */
  static get f_TABLE_ROW_GROUP__org_gwtproject_dom_style_shared_Display() {
   return (Display.$clinit(), Display.$f_TABLE_ROW_GROUP__org_gwtproject_dom_style_shared_Display);
  }
- /**
-  * @return {!Display}
-  * @public
-  */
+ /** @return {!Display} */
  static get f_TABLE_CELL__org_gwtproject_dom_style_shared_Display() {
   return (Display.$clinit(), Display.$f_TABLE_CELL__org_gwtproject_dom_style_shared_Display);
  }
- /**
-  * @return {!Display}
-  * @public
-  */
+ /** @return {!Display} */
  static get f_TABLE_COLUMN__org_gwtproject_dom_style_shared_Display() {
   return (Display.$clinit(), Display.$f_TABLE_COLUMN__org_gwtproject_dom_style_shared_Display);
  }
- /**
-  * @return {!Display}
-  * @public
-  */
+ /** @return {!Display} */
  static get f_TABLE_ROW__org_gwtproject_dom_style_shared_Display() {
   return (Display.$clinit(), Display.$f_TABLE_ROW__org_gwtproject_dom_style_shared_Display);
  }
- /**
-  * @return {!Display}
-  * @public
-  */
+ /** @return {!Display} */
  static get f_INITIAL__org_gwtproject_dom_style_shared_Display() {
   return (Display.$clinit(), Display.$f_INITIAL__org_gwtproject_dom_style_shared_Display);
  }
- /**
-  * @return {!Display}
-  * @public
-  */
+ /** @return {!Display} */
  static get f_FLEX__org_gwtproject_dom_style_shared_Display() {
   return (Display.$clinit(), Display.$f_FLEX__org_gwtproject_dom_style_shared_Display);
  }
- /**
-  * @return {!Display}
-  * @public
-  */
+ /** @return {!Display} */
  static get f_INLINE_FLEX__org_gwtproject_dom_style_shared_Display() {
   return (Display.$clinit(), Display.$f_INLINE_FLEX__org_gwtproject_dom_style_shared_Display);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Display.$clinit = () =>{};
   Display.$loadModules();
@@ -237,17 +160,11 @@ class Display extends Enum {
   Display.$f_INLINE_FLEX__org_gwtproject_dom_style_shared_Display = $19.$create__java_lang_String__int($Util.$makeEnumName("INLINE_FLEX"), Display.$ordinal$f_INLINE_FLEX__org_gwtproject_dom_style_shared_Display);
   Display.f_namesToValuesMap__org_gwtproject_dom_style_shared_Display_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Display;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.dom.style.shared.Display.$1$impl');
@@ -278,83 +195,83 @@ $Util.$setClassMetadataForEnum(Display, 'org.gwtproject.dom.style.shared.Display
 
 HasCssName.$markImplementor(Display);
 
-/** @private {!Display} */
+/**@private {!Display}*/
 Display.$f_NONE__org_gwtproject_dom_style_shared_Display;
-/** @private {!Display} */
+/**@private {!Display}*/
 Display.$f_BLOCK__org_gwtproject_dom_style_shared_Display;
-/** @private {!Display} */
+/**@private {!Display}*/
 Display.$f_INLINE__org_gwtproject_dom_style_shared_Display;
-/** @private {!Display} */
+/**@private {!Display}*/
 Display.$f_INLINE_BLOCK__org_gwtproject_dom_style_shared_Display;
-/** @private {!Display} */
+/**@private {!Display}*/
 Display.$f_INLINE_TABLE__org_gwtproject_dom_style_shared_Display;
-/** @private {!Display} */
+/**@private {!Display}*/
 Display.$f_LIST_ITEM__org_gwtproject_dom_style_shared_Display;
-/** @private {!Display} */
+/**@private {!Display}*/
 Display.$f_RUN_IN__org_gwtproject_dom_style_shared_Display;
-/** @private {!Display} */
+/**@private {!Display}*/
 Display.$f_TABLE__org_gwtproject_dom_style_shared_Display;
-/** @private {!Display} */
+/**@private {!Display}*/
 Display.$f_TABLE_CAPTION__org_gwtproject_dom_style_shared_Display;
-/** @private {!Display} */
+/**@private {!Display}*/
 Display.$f_TABLE_COLUMN_GROUP__org_gwtproject_dom_style_shared_Display;
-/** @private {!Display} */
+/**@private {!Display}*/
 Display.$f_TABLE_HEADER_GROUP__org_gwtproject_dom_style_shared_Display;
-/** @private {!Display} */
+/**@private {!Display}*/
 Display.$f_TABLE_FOOTER_GROUP__org_gwtproject_dom_style_shared_Display;
-/** @private {!Display} */
+/**@private {!Display}*/
 Display.$f_TABLE_ROW_GROUP__org_gwtproject_dom_style_shared_Display;
-/** @private {!Display} */
+/**@private {!Display}*/
 Display.$f_TABLE_CELL__org_gwtproject_dom_style_shared_Display;
-/** @private {!Display} */
+/**@private {!Display}*/
 Display.$f_TABLE_COLUMN__org_gwtproject_dom_style_shared_Display;
-/** @private {!Display} */
+/**@private {!Display}*/
 Display.$f_TABLE_ROW__org_gwtproject_dom_style_shared_Display;
-/** @private {!Display} */
+/**@private {!Display}*/
 Display.$f_INITIAL__org_gwtproject_dom_style_shared_Display;
-/** @private {!Display} */
+/**@private {!Display}*/
 Display.$f_FLEX__org_gwtproject_dom_style_shared_Display;
-/** @private {!Display} */
+/**@private {!Display}*/
 Display.$f_INLINE_FLEX__org_gwtproject_dom_style_shared_Display;
-/** @public {Map<?string, !Display>} */
+/**@type {Map<?string, !Display>}*/
 Display.f_namesToValuesMap__org_gwtproject_dom_style_shared_Display_;
-/** @public {number} @const */
+/**@const {number}*/
 Display.$ordinal$f_NONE__org_gwtproject_dom_style_shared_Display = 0;
-/** @public {number} @const */
+/**@const {number}*/
 Display.$ordinal$f_BLOCK__org_gwtproject_dom_style_shared_Display = 1;
-/** @public {number} @const */
+/**@const {number}*/
 Display.$ordinal$f_INLINE__org_gwtproject_dom_style_shared_Display = 2;
-/** @public {number} @const */
+/**@const {number}*/
 Display.$ordinal$f_INLINE_BLOCK__org_gwtproject_dom_style_shared_Display = 3;
-/** @public {number} @const */
+/**@const {number}*/
 Display.$ordinal$f_INLINE_TABLE__org_gwtproject_dom_style_shared_Display = 4;
-/** @public {number} @const */
+/**@const {number}*/
 Display.$ordinal$f_LIST_ITEM__org_gwtproject_dom_style_shared_Display = 5;
-/** @public {number} @const */
+/**@const {number}*/
 Display.$ordinal$f_RUN_IN__org_gwtproject_dom_style_shared_Display = 6;
-/** @public {number} @const */
+/**@const {number}*/
 Display.$ordinal$f_TABLE__org_gwtproject_dom_style_shared_Display = 7;
-/** @public {number} @const */
+/**@const {number}*/
 Display.$ordinal$f_TABLE_CAPTION__org_gwtproject_dom_style_shared_Display = 8;
-/** @public {number} @const */
+/**@const {number}*/
 Display.$ordinal$f_TABLE_COLUMN_GROUP__org_gwtproject_dom_style_shared_Display = 9;
-/** @public {number} @const */
+/**@const {number}*/
 Display.$ordinal$f_TABLE_HEADER_GROUP__org_gwtproject_dom_style_shared_Display = 10;
-/** @public {number} @const */
+/**@const {number}*/
 Display.$ordinal$f_TABLE_FOOTER_GROUP__org_gwtproject_dom_style_shared_Display = 11;
-/** @public {number} @const */
+/**@const {number}*/
 Display.$ordinal$f_TABLE_ROW_GROUP__org_gwtproject_dom_style_shared_Display = 12;
-/** @public {number} @const */
+/**@const {number}*/
 Display.$ordinal$f_TABLE_CELL__org_gwtproject_dom_style_shared_Display = 13;
-/** @public {number} @const */
+/**@const {number}*/
 Display.$ordinal$f_TABLE_COLUMN__org_gwtproject_dom_style_shared_Display = 14;
-/** @public {number} @const */
+/**@const {number}*/
 Display.$ordinal$f_TABLE_ROW__org_gwtproject_dom_style_shared_Display = 15;
-/** @public {number} @const */
+/**@const {number}*/
 Display.$ordinal$f_INITIAL__org_gwtproject_dom_style_shared_Display = 16;
-/** @public {number} @const */
+/**@const {number}*/
 Display.$ordinal$f_FLEX__org_gwtproject_dom_style_shared_Display = 17;
-/** @public {number} @const */
+/**@const {number}*/
 Display.$ordinal$f_INLINE_FLEX__org_gwtproject_dom_style_shared_Display = 18;
 
 exports = Display; 

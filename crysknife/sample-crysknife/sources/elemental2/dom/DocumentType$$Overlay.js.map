@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DocumentType$$Overlay.impl.java.js",
-"lineCount":71,
-"mappings":"A;;;;;;;;;;MAuBa,qB;;;;;;QA+FO,0E,WAAcA,K;EAAdC,gC;EAChBA,8E;;;;;;;QAIgB,uE,WAAgBD,K;EAAhBC,gC;EAChBA,8E;;;;;;;QAMgB,2E,WAAeD,K;EAAfE,gC;EAChBA,+E;;;;;;;QAIgB,wE,WAAiBF,K;EAAjBE,gC;EAChBA,+E;;;;;;;QAMgB,gF,WAAoBF,K;EAApBG,gC;EAChBA,oF;;;;;;;QAMgB,6E,WAAsBH,K;EAAtBG,gC;EAChBA,oF;;;;;QA/HS,O;EAAAC,wC;EAAAA;",
+"lineCount":45,
+"mappings":"A;;;;;;;;;;MAuBa,qB;;QA+FO,0E,mDAAcA,K;EAAdC,gC;EAChBA,6E;;;QAIgB,uE,sDAAgBD,K;EAAhBC,gC;EAChBA,6E;;;QAMgB,2E,mDAAeD,K;EAAfE,gC;EAChBA,8E;;;QAIgB,wE,sDAAiBF,K;EAAjBE,gC;EAChBA,8E;;;QAMgB,gF,mDAAoBF,K;EAApBG,gC;EAChBA,mF;;;QAMgB,6E,sDAAsBH,K;EAAtBG,gC;EAChBA,mF;;;QA/HS,O;EAAAC,wC;EAAAA;",
 "sources":["DocumentType.java"],
 "names":["nodes","elemental2.dom.DocumentType$$Overlay.after__$devirt","elemental2.dom.DocumentType$$Overlay.before__$devirt","elemental2.dom.DocumentType$$Overlay.replaceWith__$devirt","elemental2.dom.DocumentType$$Overlay.<clinit>"]
 }

@@ -14,47 +14,28 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @implements {AriaAttributeType}
   */
 class PressedValue extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @return {!PressedValue}
-  * @public
-  */
- static $create__java_lang_String__int($name, $ordinal) {
+ /** @return {!PressedValue} */
+ static $create__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   let $instance = new PressedValue();
   $instance.$ctor__org_gwtproject_aria_client_PressedValue__java_lang_String__int($name, $ordinal);
   return $instance;
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_aria_client_PressedValue__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_aria_client_PressedValue__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @param {boolean} value
-  * @return {PressedValue}
-  * @public
-  */
- static m_of__boolean(value) {
+ /** @return {PressedValue} */
+ static m_of__boolean(/** boolean */ value) {
   PressedValue.$clinit();
   return value ? PressedValue.$f_TRUE__org_gwtproject_aria_client_PressedValue : PressedValue.$f_FALSE__org_gwtproject_aria_client_PressedValue;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getAriaValue__() {
   switch (this.ordinal()) {
    case PressedValue.$ordinal$f_TRUE__org_gwtproject_aria_client_PressedValue: 
@@ -68,67 +49,41 @@ class PressedValue extends Enum {
   }
   return null;
  }
- /**
-  * @param {string} name
-  * @return {!PressedValue}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!PressedValue} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   PressedValue.$clinit();
   if ($Equality.$same(PressedValue.f_namesToValuesMap__org_gwtproject_aria_client_PressedValue_, null)) {
    PressedValue.f_namesToValuesMap__org_gwtproject_aria_client_PressedValue_ = $Enums.createMapFromValues(PressedValue.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, PressedValue.f_namesToValuesMap__org_gwtproject_aria_client_PressedValue_);
  }
- /**
-  * @return {!Array<!PressedValue>}
-  * @public
-  */
+ /** @return {!Array<!PressedValue>} */
  static m_values__() {
   PressedValue.$clinit();
-  return /**@type {!Array<PressedValue>} */ ($Arrays.$init([PressedValue.$f_TRUE__org_gwtproject_aria_client_PressedValue, PressedValue.$f_FALSE__org_gwtproject_aria_client_PressedValue, PressedValue.$f_MIXED__org_gwtproject_aria_client_PressedValue, PressedValue.$f_UNDEFINED__org_gwtproject_aria_client_PressedValue], PressedValue));
+  return /**@type {!Array<PressedValue>}*/ ($Arrays.$init([PressedValue.$f_TRUE__org_gwtproject_aria_client_PressedValue, PressedValue.$f_FALSE__org_gwtproject_aria_client_PressedValue, PressedValue.$f_MIXED__org_gwtproject_aria_client_PressedValue, PressedValue.$f_UNDEFINED__org_gwtproject_aria_client_PressedValue], PressedValue));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @return {number}
-  * @public
-  */
- m_compareTo__java_lang_Object(arg0) {
-  return super.compareTo(/**@type {PressedValue} */ ($Casts.$to(arg0, PressedValue)));
+ //Bridge method.
+ /** @override @return {number} */
+ m_compareTo__java_lang_Object(/** * */ arg0) {
+  return super.compareTo(/**@type {PressedValue}*/ ($Casts.$to(arg0, PressedValue)));
  }
- /**
-  * @return {!PressedValue}
-  * @public
-  */
+ /** @return {!PressedValue} */
  static get f_TRUE__org_gwtproject_aria_client_PressedValue() {
   return (PressedValue.$clinit(), PressedValue.$f_TRUE__org_gwtproject_aria_client_PressedValue);
  }
- /**
-  * @return {!PressedValue}
-  * @public
-  */
+ /** @return {!PressedValue} */
  static get f_FALSE__org_gwtproject_aria_client_PressedValue() {
   return (PressedValue.$clinit(), PressedValue.$f_FALSE__org_gwtproject_aria_client_PressedValue);
  }
- /**
-  * @return {!PressedValue}
-  * @public
-  */
+ /** @return {!PressedValue} */
  static get f_MIXED__org_gwtproject_aria_client_PressedValue() {
   return (PressedValue.$clinit(), PressedValue.$f_MIXED__org_gwtproject_aria_client_PressedValue);
  }
- /**
-  * @return {!PressedValue}
-  * @public
-  */
+ /** @return {!PressedValue} */
  static get f_UNDEFINED__org_gwtproject_aria_client_PressedValue() {
   return (PressedValue.$clinit(), PressedValue.$f_UNDEFINED__org_gwtproject_aria_client_PressedValue);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   PressedValue.$clinit = () =>{};
   PressedValue.$loadModules();
@@ -139,17 +94,11 @@ class PressedValue extends Enum {
   PressedValue.$f_UNDEFINED__org_gwtproject_aria_client_PressedValue = PressedValue.$create__java_lang_String__int($Util.$makeEnumName("UNDEFINED"), PressedValue.$ordinal$f_UNDEFINED__org_gwtproject_aria_client_PressedValue);
   PressedValue.f_namesToValuesMap__org_gwtproject_aria_client_PressedValue_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof PressedValue;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
@@ -162,23 +111,23 @@ $Util.$setClassMetadataForEnum(PressedValue, 'org.gwtproject.aria.client.Pressed
 
 AriaAttributeType.$markImplementor(PressedValue);
 
-/** @private {!PressedValue} */
+/**@private {!PressedValue}*/
 PressedValue.$f_TRUE__org_gwtproject_aria_client_PressedValue;
-/** @private {!PressedValue} */
+/**@private {!PressedValue}*/
 PressedValue.$f_FALSE__org_gwtproject_aria_client_PressedValue;
-/** @private {!PressedValue} */
+/**@private {!PressedValue}*/
 PressedValue.$f_MIXED__org_gwtproject_aria_client_PressedValue;
-/** @private {!PressedValue} */
+/**@private {!PressedValue}*/
 PressedValue.$f_UNDEFINED__org_gwtproject_aria_client_PressedValue;
-/** @public {Map<?string, !PressedValue>} */
+/**@type {Map<?string, !PressedValue>}*/
 PressedValue.f_namesToValuesMap__org_gwtproject_aria_client_PressedValue_;
-/** @public {number} @const */
+/**@const {number}*/
 PressedValue.$ordinal$f_TRUE__org_gwtproject_aria_client_PressedValue = 0;
-/** @public {number} @const */
+/**@const {number}*/
 PressedValue.$ordinal$f_FALSE__org_gwtproject_aria_client_PressedValue = 1;
-/** @public {number} @const */
+/**@const {number}*/
 PressedValue.$ordinal$f_MIXED__org_gwtproject_aria_client_PressedValue = 2;
-/** @public {number} @const */
+/**@const {number}*/
 PressedValue.$ordinal$f_UNDEFINED__org_gwtproject_aria_client_PressedValue = 3;
 
 exports = PressedValue; 

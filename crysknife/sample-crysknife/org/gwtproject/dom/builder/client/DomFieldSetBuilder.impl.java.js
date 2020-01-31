@@ -12,49 +12,32 @@ let $Overlay = goog.forwardDeclare('org.gwtproject.dom.client.FieldSetElement.$O
  * @implements {FieldSetBuilder}
   */
 class DomFieldSetBuilder extends DomElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @return {!DomFieldSetBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ /** @return {!DomFieldSetBuilder} */
+ static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   DomFieldSetBuilder.$clinit();
   let $instance = new DomFieldSetBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_client_DomFieldSetBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_client_DomFieldSetBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_client_DomFieldSetBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_client_DomElementBuilderBase__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomFieldSetBuilder.$clinit = () =>{};
   DomFieldSetBuilder.$loadModules();
   DomElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomFieldSetBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

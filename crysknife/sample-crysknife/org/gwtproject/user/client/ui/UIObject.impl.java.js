@@ -32,44 +32,28 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {HasVisibility}
   */
 class UIObject extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_element__org_gwtproject_user_client_ui_UIObject_;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_UIObject__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {Object} elem
-  * @param {?string} id
-  * @public
-  */
- static m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String(elem, id) {
+ 
+ static m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String(/** Object */ elem, /** ?string */ id) {
   UIObject.$clinit();
   UIObject.m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(elem, "", id);
  }
- /**
-  * @param {Object} elem
-  * @return {boolean}
-  * @public
-  */
- static m_isVisible__org_gwtproject_dom_client_Element(elem) {
+ /** @return {boolean} */
+ static m_isVisible__org_gwtproject_dom_client_Element(/** Object */ elem) {
   UIObject.$clinit();
   return !j_l_String.m_equals__java_lang_String__java_lang_Object($Overlay.m_getDisplay__$devirt__org_gwtproject_dom_client_Style(elem.style), "none");
  }
- /**
-  * @param {Object} elem
-  * @param {boolean} visible
-  * @public
-  */
- static m_setVisible__org_gwtproject_dom_client_Element__boolean(elem, visible) {
+ 
+ static m_setVisible__org_gwtproject_dom_client_Element__boolean(/** Object */ elem, /** boolean */ visible) {
   UIObject.$clinit();
   if (visible) {
    $Overlay.m_clearDisplay__$devirt__org_gwtproject_dom_client_Style(elem.style);
@@ -82,31 +66,18 @@ class UIObject extends j_l_Object {
    elem.setAttribute("aria-hidden", "true");
   }
  }
- /**
-  * @param {Object} elem
-  * @param {?string} baseID
-  * @param {?string} id
-  * @public
-  */
- static m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(elem, baseID, id) {
+ 
+ static m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(/** Object */ elem, /** ?string */ baseID, /** ?string */ id) {
   UIObject.$clinit();
   UIObject.f_debugIdImpl__org_gwtproject_user_client_ui_UIObject_.m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(elem, baseID, id);
  }
- /**
-  * @param {Object} elem
-  * @return {?string}
-  * @public
-  */
- static m_getStyleName__org_gwtproject_dom_client_Element(elem) {
+ /** @return {?string} */
+ static m_getStyleName__org_gwtproject_dom_client_Element(/** Object */ elem) {
   UIObject.$clinit();
   return Element_$Overlay.m_getClassName__$devirt__org_gwtproject_dom_client_Element(elem);
  }
- /**
-  * @param {Object} elem
-  * @return {?string}
-  * @public
-  */
- static m_getStylePrimaryName__org_gwtproject_dom_client_Element(elem) {
+ /** @return {?string} */
+ static m_getStylePrimaryName__org_gwtproject_dom_client_Element(/** Object */ elem) {
   UIObject.$clinit();
   let fullClassName = UIObject.m_getStyleName__org_gwtproject_dom_client_Element(elem);
   let spaceIdx = j_l_String.m_indexOf__java_lang_String__int(fullClassName, 32 /* ' ' */);
@@ -115,22 +86,13 @@ class UIObject extends j_l_Object {
   }
   return fullClassName;
  }
- /**
-  * @param {Object} elem
-  * @param {?string} styleName
-  * @public
-  */
- static m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String(elem, styleName) {
+ 
+ static m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String(/** Object */ elem, /** ?string */ styleName) {
   UIObject.$clinit();
   Element_$Overlay.m_setClassName__$devirt__org_gwtproject_dom_client_Element__java_lang_String(elem, styleName);
  }
- /**
-  * @param {Object} elem
-  * @param {?string} style
-  * @param {boolean} add
-  * @public
-  */
- static m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String__boolean(elem, style, add) {
+ 
+ static m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String__boolean(/** Object */ elem, /** ?string */ style, /** boolean */ add) {
   UIObject.$clinit();
   if ($Equality.$same(elem, null)) {
    throw $Exceptions.toJs(RuntimeException.$create__java_lang_String(UIObject.f_NULL_HANDLE_MSG__org_gwtproject_user_client_ui_UIObject_));
@@ -145,12 +107,8 @@ class UIObject extends j_l_Object {
    Element_$Overlay.m_removeClassName__$devirt__org_gwtproject_dom_client_Element__java_lang_String(elem, style);
   }
  }
- /**
-  * @param {Object} elem
-  * @param {?string} style
-  * @public
-  */
- static m_setStylePrimaryName__org_gwtproject_dom_client_Element__java_lang_String(elem, style) {
+ 
+ static m_setStylePrimaryName__org_gwtproject_dom_client_Element__java_lang_String(/** Object */ elem, /** ?string */ style) {
   UIObject.$clinit();
   if ($Equality.$same(elem, null)) {
    throw $Exceptions.toJs(RuntimeException.$create__java_lang_String(UIObject.f_NULL_HANDLE_MSG__org_gwtproject_user_client_ui_UIObject_));
@@ -161,12 +119,8 @@ class UIObject extends j_l_Object {
   }
   UIObject.m_updatePrimaryAndDependentStyleNames__org_gwtproject_dom_client_Element__java_lang_String(elem, style);
  }
- /**
-  * @param {Object} elem
-  * @param {?string} newPrimaryStyle
-  * @public
-  */
- static m_updatePrimaryAndDependentStyleNames__org_gwtproject_dom_client_Element__java_lang_String(elem, newPrimaryStyle) {
+ 
+ static m_updatePrimaryAndDependentStyleNames__org_gwtproject_dom_client_Element__java_lang_String(/** Object */ elem, /** ?string */ newPrimaryStyle) {
   let classes = j_l_String.m_split__java_lang_String__java_lang_String((j_l_String.m_isEmpty__java_lang_String(Element_$Overlay.m_getClassName__$devirt__org_gwtproject_dom_client_Element(elem)) ? "" : Element_$Overlay.m_getClassName__$devirt__org_gwtproject_dom_client_Element(elem)), "\\s+");
   if (classes.length == 0) {
    return;
@@ -180,162 +134,96 @@ class UIObject extends j_l_Object {
     $Arrays.$set(classes, i, j_l_String.m_valueOf__java_lang_Object(newPrimaryStyle) + j_l_String.m_valueOf__java_lang_Object(j_l_String.m_substring__java_lang_String__int(name, oldPrimaryStyleLen)));
    }
   }
-  Element_$Overlay.m_setClassName__$devirt__org_gwtproject_dom_client_Element__java_lang_String(elem, /**@type {?string} */ ($Casts.$to(/**@type {Stream<?string>} */ (Arrays.m_stream__arrayOf_java_lang_Object(classes)).m_collect__java_util_stream_Collector(Collectors.m_joining__java_lang_CharSequence(" ")), j_l_String)));
+  Element_$Overlay.m_setClassName__$devirt__org_gwtproject_dom_client_Element__java_lang_String(elem, /**@type {?string}*/ ($Casts.$to(/**@type {Stream<?string>}*/ (Arrays.m_stream__arrayOf_java_lang_Object(classes)).m_collect__java_util_stream_Collector(Collectors.m_joining__java_lang_CharSequence(" ")), j_l_String)));
  }
- /**
-  * @param {?string} styleSuffix
-  * @public
-  */
- m_addStyleDependentName__java_lang_String(styleSuffix) {
+ 
+ m_addStyleDependentName__java_lang_String(/** ?string */ styleSuffix) {
   this.m_setStyleDependentName__java_lang_String__boolean(styleSuffix, true);
  }
- /**
-  * @param {?string} style
-  * @public
-  */
- m_addStyleName__java_lang_String(style) {
+ 
+ m_addStyleName__java_lang_String(/** ?string */ style) {
   this.m_setStyleName__java_lang_String__boolean(style, true);
  }
- /**
-  * @param {?string} id
-  * @public
-  */
- m_ensureDebugId__java_lang_String(id) {
+ 
+ m_ensureDebugId__java_lang_String(/** ?string */ id) {
   UIObject.f_debugIdImpl__org_gwtproject_user_client_ui_UIObject_.m_ensureDebugId__org_gwtproject_user_client_ui_UIObject__java_lang_String(this, id);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getAbsoluteLeft__() {
   return Element_$Overlay.m_getAbsoluteLeft__$devirt__org_gwtproject_dom_client_Element(this.m_getElement__());
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getAbsoluteTop__() {
   return Element_$Overlay.m_getAbsoluteTop__$devirt__org_gwtproject_dom_client_Element(this.m_getElement__());
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getElement__() {
   $Asserts.$assertWithMessage((!$Equality.$same(this.f_element__org_gwtproject_user_client_ui_UIObject_, null)), UIObject.f_MISSING_ELEMENT_ERROR__org_gwtproject_user_client_ui_UIObject);
   return this.f_element__org_gwtproject_user_client_ui_UIObject_;
  }
- /**
-  * @param {Object} elem
-  * @public
-  */
- m_setElement__org_gwtproject_dom_client_Element(elem) {
+ 
+ m_setElement__org_gwtproject_dom_client_Element(/** Object */ elem) {
   this.f_element__org_gwtproject_user_client_ui_UIObject_ = elem;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getOffsetHeight__() {
   return Element_$Overlay.m_getPropertyInt__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.m_getElement__(), "offsetHeight");
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getOffsetWidth__() {
   return Element_$Overlay.m_getPropertyInt__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.m_getElement__(), "offsetWidth");
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getStyleName__() {
   return UIObject.m_getStyleName__org_gwtproject_dom_client_Element(this.m_getStyleElement__());
  }
- /**
-  * @param {?string} style
-  * @public
-  */
- m_setStyleName__java_lang_String(style) {
+ 
+ m_setStyleName__java_lang_String(/** ?string */ style) {
   UIObject.m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String(this.m_getStyleElement__(), style);
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getStylePrimaryName__() {
   return UIObject.m_getStylePrimaryName__org_gwtproject_dom_client_Element(this.m_getStyleElement__());
  }
- /**
-  * @param {?string} style
-  * @public
-  */
- m_setStylePrimaryName__java_lang_String(style) {
+ 
+ m_setStylePrimaryName__java_lang_String(/** ?string */ style) {
   UIObject.m_setStylePrimaryName__org_gwtproject_dom_client_Element__java_lang_String(this.m_getStyleElement__(), style);
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getTitle__() {
   return Element_$Overlay.m_getPropertyString__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.m_getElement__(), "title");
  }
- /**
-  * @param {?string} title
-  * @public
-  */
- m_setTitle__java_lang_String(title) {
+ 
+ m_setTitle__java_lang_String(/** ?string */ title) {
   if ($Equality.$same(title, null) || j_l_String.m_length__java_lang_String(title) == 0) {
    this.m_getElement__().removeAttribute("title");
   } else {
    this.m_getElement__().setAttribute("title", title);
   }
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isVisible__() {
   return UIObject.m_isVisible__org_gwtproject_dom_client_Element(this.m_getElement__());
  }
- /**
-  * @override
-  * @param {boolean} visible
-  * @public
-  */
- m_setVisible__boolean(visible) {
+ /** @override */
+ m_setVisible__boolean(/** boolean */ visible) {
   UIObject.m_setVisible__org_gwtproject_dom_client_Element__boolean(this.m_getElement__(), visible);
  }
- /**
-  * @param {?string} styleSuffix
-  * @public
-  */
- m_removeStyleDependentName__java_lang_String(styleSuffix) {
+ 
+ m_removeStyleDependentName__java_lang_String(/** ?string */ styleSuffix) {
   this.m_setStyleDependentName__java_lang_String__boolean(styleSuffix, false);
  }
- /**
-  * @param {?string} style
-  * @public
-  */
- m_removeStyleName__java_lang_String(style) {
+ 
+ m_removeStyleName__java_lang_String(/** ?string */ style) {
   this.m_setStyleName__java_lang_String__boolean(style, false);
  }
- /**
-  * @param {?string} height
-  * @public
-  */
- m_setHeight__java_lang_String(height) {
+ 
+ m_setHeight__java_lang_String(/** ?string */ height) {
   $Asserts.$assertWithMessage(this.m_extractLengthValue__java_lang_String_$p_org_gwtproject_user_client_ui_UIObject(j_l_String.m_toLowerCase__java_lang_String__java_util_Locale(j_l_String.m_trim__java_lang_String(height), Locale.f_ROOT__java_util_Locale)) >= 0, "CSS heights should not be negative");
   $Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(this.m_getElement__().style, "height", height);
  }
- /**
-  * @param {number} width
-  * @param {number} height
-  * @public
-  */
- m_setPixelSize__int__int(width, height) {
+ 
+ m_setPixelSize__int__int(/** number */ width, /** number */ height) {
   if (width >= 0) {
    this.m_setWidth__java_lang_String(width + "px");
   }
@@ -343,120 +231,72 @@ class UIObject extends j_l_Object {
    this.m_setHeight__java_lang_String(height + "px");
   }
  }
- /**
-  * @param {?string} width
-  * @param {?string} height
-  * @public
-  */
- m_setSize__java_lang_String__java_lang_String(width, height) {
+ 
+ m_setSize__java_lang_String__java_lang_String(/** ?string */ width, /** ?string */ height) {
   this.m_setWidth__java_lang_String(width);
   this.m_setHeight__java_lang_String(height);
  }
- /**
-  * @param {?string} styleSuffix
-  * @param {boolean} add
-  * @public
-  */
- m_setStyleDependentName__java_lang_String__boolean(styleSuffix, add) {
+ 
+ m_setStyleDependentName__java_lang_String__boolean(/** ?string */ styleSuffix, /** boolean */ add) {
   this.m_setStyleName__java_lang_String__boolean(j_l_String.m_valueOf__java_lang_Object(this.m_getStylePrimaryName__()) + j_l_String.m_valueOf__char(45 /* '-' */) + j_l_String.m_valueOf__java_lang_Object(styleSuffix), add);
  }
- /**
-  * @param {?string} style
-  * @param {boolean} add
-  * @public
-  */
- m_setStyleName__java_lang_String__boolean(style, add) {
+ 
+ m_setStyleName__java_lang_String__boolean(/** ?string */ style, /** boolean */ add) {
   UIObject.m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String__boolean(this.m_getStyleElement__(), style, add);
  }
- /**
-  * @param {?string} width
-  * @public
-  */
- m_setWidth__java_lang_String(width) {
+ 
+ m_setWidth__java_lang_String(/** ?string */ width) {
   $Asserts.$assertWithMessage(this.m_extractLengthValue__java_lang_String_$p_org_gwtproject_user_client_ui_UIObject(j_l_String.m_toLowerCase__java_lang_String__java_util_Locale(j_l_String.m_trim__java_lang_String(width), Locale.f_ROOT__java_util_Locale)) >= 0, "CSS widths should not be negative");
   $Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(this.m_getElement__().style, "width", width);
  }
- /**
-  * @param {?string} eventTypeName
-  * @public
-  */
- m_sinkBitlessEvent__java_lang_String(eventTypeName) {
+ 
+ m_sinkBitlessEvent__java_lang_String(/** ?string */ eventTypeName) {
   DOM.m_sinkBitlessEvent__org_gwtproject_dom_client_Element__java_lang_String(this.m_getElement__(), eventTypeName);
  }
- /**
-  * @param {number} eventBitsToAdd
-  * @public
-  */
- m_sinkEvents__int(eventBitsToAdd) {
+ 
+ m_sinkEvents__int(/** number */ eventBitsToAdd) {
   DOM.m_sinkEvents__org_gwtproject_dom_client_Element__int(this.m_getElement__(), eventBitsToAdd | DOM.m_getEventsSunk__org_gwtproject_dom_client_Element(this.m_getElement__()));
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  toString() {
   if ($Equality.$same(this.f_element__org_gwtproject_user_client_ui_UIObject_, null)) {
    return "(null handle)";
   }
   return Element_$Overlay.m_getString__$devirt__org_gwtproject_dom_client_Element(this.m_getElement__());
  }
- /**
-  * @param {number} eventBitsToRemove
-  * @public
-  */
- m_unsinkEvents__int(eventBitsToRemove) {
+ 
+ m_unsinkEvents__int(/** number */ eventBitsToRemove) {
   DOM.m_sinkEvents__org_gwtproject_dom_client_Element__int(this.m_getElement__(), DOM.m_getEventsSunk__org_gwtproject_dom_client_Element(this.m_getElement__()) & (~eventBitsToRemove));
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getStyleElement__() {
   return this.m_getElement__();
  }
- /**
-  * @param {?string} baseID
-  * @public
-  */
- m_onEnsureDebugId__java_lang_String(baseID) {
+ 
+ m_onEnsureDebugId__java_lang_String(/** ?string */ baseID) {
   UIObject.m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(this.m_getElement__(), "", baseID);
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_resolvePotentialElement__() {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String("resolvePotentialElement"));
  }
- /**
-  * @param {Object} elem
-  * @public
-  */
- m_replaceElement__org_gwtproject_dom_client_Element_$pp_org_gwtproject_user_client_ui(elem) {
+ 
+ m_replaceElement__org_gwtproject_dom_client_Element_$pp_org_gwtproject_user_client_ui(/** Object */ elem) {
   if (!$Equality.$same(this.f_element__org_gwtproject_user_client_ui_UIObject_, null)) {
    this.m_replaceNode__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_UIObject(this.f_element__org_gwtproject_user_client_ui_UIObject_, elem);
   }
   this.f_element__org_gwtproject_user_client_ui_UIObject_ = elem;
  }
- /**
-  * @param {?string} s
-  * @return {number}
-  * @public
-  */
- m_extractLengthValue__java_lang_String_$p_org_gwtproject_user_client_ui_UIObject(s) {
+ /** @return {number} */
+ m_extractLengthValue__java_lang_String_$p_org_gwtproject_user_client_ui_UIObject(/** ?string */ s) {
   if (j_l_String.m_equals__java_lang_String__java_lang_Object(s, "auto") || j_l_String.m_equals__java_lang_String__java_lang_Object(s, "inherit") || j_l_String.m_equals__java_lang_String__java_lang_Object(s, "")) {
    return 0.0;
   } else {
    return Float.m_valueOf__java_lang_String(j_l_String.m_replaceAll__java_lang_String__java_lang_String__java_lang_String(s, "[A-Za-z%\\s]+", "")).m_floatValue__();
   }
  }
- /**
-  * @param {Object} node
-  * @param {Object} newNode
-  * @public
-  */
- m_replaceNode__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_UIObject(node, newNode) {
+ 
+ m_replaceNode__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_UIObject(/** Object */ node, /** Object */ newNode) {
   let p = node.parentNode;
   if ($Equality.$same(p, null)) {
    return;
@@ -464,26 +304,18 @@ class UIObject extends j_l_Object {
   p.insertBefore(newNode, node);
   p.removeChild(node);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   UIObject.$clinit = () =>{};
   UIObject.$loadModules();
   j_l_Object.$clinit();
   UIObject.f_debugIdImpl__org_gwtproject_user_client_ui_UIObject_ = DebugInfo.m_isDebugIdEnabled__() ? DebugIdImplEnabled.$create__() : DebugIdImpl.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof UIObject;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Float = goog.module.get('java.lang.Float$impl');
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
@@ -512,19 +344,19 @@ $Util.$setClassMetadata(UIObject, 'org.gwtproject.user.client.ui.UIObject');
 
 HasVisibility.$markImplementor(UIObject);
 
-/** @public {?string} @const */
+/**@const {?string}*/
 UIObject.f_DEBUG_ID_PREFIX__org_gwtproject_user_client_ui_UIObject = "gwt-debug-";
-/** @public {?string} @const */
+/**@const {?string}*/
 UIObject.f_MISSING_ELEMENT_ERROR__org_gwtproject_user_client_ui_UIObject = "This UIObject's element is not set; you may be missing a call to either Composite.initWidget() or UIObject.setElement()";
-/** @public {?string} @const */
+/**@const {?string}*/
 UIObject.f_SETELEMENT_TWICE_ERROR__org_gwtproject_user_client_ui_UIObject = "Element may only be set once";
-/** @public {?string} @const */
+/**@const {?string}*/
 UIObject.f_EMPTY_STYLENAME_MSG__org_gwtproject_user_client_ui_UIObject_ = "Style names cannot be empty";
-/** @public {?string} @const */
+/**@const {?string}*/
 UIObject.f_NULL_HANDLE_MSG__org_gwtproject_user_client_ui_UIObject_ = "Null widget handle. If you are creating a composite, ensure that initWidget() has been called.";
-/** @public {Object} */
+/**@type {Object}*/
 UIObject.f_numberRegex__org_gwtproject_user_client_ui_UIObject_;
-/** @public {DebugIdImpl} */
+/**@type {DebugIdImpl}*/
 UIObject.f_debugIdImpl__org_gwtproject_user_client_ui_UIObject_;
 
 exports = UIObject; 

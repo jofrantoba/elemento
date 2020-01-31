@@ -10,38 +10,25 @@ let AbstractEditorDelegate = goog.forwardDeclare('org.gwtproject.editor.client.i
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class Refresher extends EditorVisitor {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!Refresher}
-  * @public
-  */
+ /** @return {!Refresher} */
  static $create__() {
   Refresher.$clinit();
   let $instance = new Refresher();
   $instance.$ctor__org_gwtproject_editor_client_impl_Refresher__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_editor_client_impl_Refresher__() {
   this.$ctor__org_gwtproject_editor_client_EditorVisitor__();
  }
- /**
-  * @override
-  * @template Q
-  * @param {EditorContext<Q>} ctx
-  * @return {boolean}
-  * @public
-  */
- m_visit__org_gwtproject_editor_client_EditorContext(ctx) {
+ /** @override @template Q @return {boolean} */
+ m_visit__org_gwtproject_editor_client_EditorContext(/** EditorContext<Q> */ ctx) {
   let toSet = ctx.m_getFromModel__();
-  let delegate = /**@type {AbstractEditorDelegate<Q, Editor>} */ ($Casts.$to(ctx.m_getEditorDelegate__(), AbstractEditorDelegate));
+  let delegate = /**@type {AbstractEditorDelegate<Q, Editor>}*/ ($Casts.$to(ctx.m_getEditorDelegate__(), AbstractEditorDelegate));
   if (!$Equality.$same(delegate, null)) {
    delegate.m_setObject__java_lang_Object(delegate.m_ensureMutable__java_lang_Object(toSet));
    delegate.m_setDirty__boolean(false);
@@ -57,25 +44,17 @@ class Refresher extends EditorVisitor {
   }
   return $Equality.$same(ctx.m_asCompositeEditor__(), null);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Refresher.$clinit = () =>{};
   Refresher.$loadModules();
   EditorVisitor.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Refresher;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   AbstractEditorDelegate = goog.module.get('org.gwtproject.editor.client.impl.AbstractEditorDelegate$impl');

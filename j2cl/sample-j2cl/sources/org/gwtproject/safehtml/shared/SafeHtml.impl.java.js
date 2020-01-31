@@ -10,63 +10,33 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHtm
  * @extends {Serializable}
  */
 class SafeHtml {
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_asString__() {}
- /**
-  * @abstract
-  * @param {*} anObject
-  * @return {boolean}
-  * @public
-  */
- equals(anObject) {}
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {boolean} */
+ equals(/** * */ anObject) {}
+ /** @abstract @return {number} */
  hashCode() {}
- /**
-  * @param {?function():?string} fn
-  * @return {SafeHtml}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {SafeHtml} */
+ static $adapt(/** ?function():?string */ fn) {
   SafeHtml.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SafeHtml.$clinit = () =>{};
   SafeHtml.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Serializable.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_safehtml_shared_SafeHtml = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Serializable.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_safehtml_shared_SafeHtml = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_safehtml_shared_SafeHtml;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.safehtml.shared.SafeHtml.$LambdaAdaptor$impl');
  }

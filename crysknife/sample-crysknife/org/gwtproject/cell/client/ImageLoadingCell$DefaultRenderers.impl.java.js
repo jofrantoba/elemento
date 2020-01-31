@@ -15,25 +15,18 @@ let AbstractImagePrototype = goog.forwardDeclare('org.gwtproject.user.client.ui.
  * @implements {Renderers}
   */
 class DefaultRenderers extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!DefaultRenderers}
-  * @public
-  */
+ /** @return {!DefaultRenderers} */
  static $create__() {
   DefaultRenderers.$clinit();
   let $instance = new DefaultRenderers();
   $instance.$ctor__org_gwtproject_cell_client_ImageLoadingCell_DefaultRenderers__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_cell_client_ImageLoadingCell_DefaultRenderers__() {
   this.$ctor__java_lang_Object__();
   if ($Equality.$same(DefaultRenderers.f_IMAGE_RENDERER__org_gwtproject_cell_client_ImageLoadingCell_DefaultRenderers_, null)) {
@@ -46,49 +39,29 @@ class DefaultRenderers extends j_l_Object {
    DefaultRenderers.f_LOADING_RENDERER__org_gwtproject_cell_client_ImageLoadingCell_DefaultRenderers_ = $2.$create__org_gwtproject_cell_client_ImageLoadingCell_DefaultRenderers__org_gwtproject_safehtml_shared_SafeHtml(this, loadingHtml);
   }
  }
- /**
-  * @override
-  * @return {SafeHtmlRenderer<?string>}
-  * @public
-  */
+ /** @override @return {SafeHtmlRenderer<?string>} */
  m_getErrorRenderer__() {
   return this.m_getImageRenderer__();
  }
- /**
-  * @override
-  * @return {SafeHtmlRenderer<?string>}
-  * @public
-  */
+ /** @override @return {SafeHtmlRenderer<?string>} */
  m_getImageRenderer__() {
   return DefaultRenderers.f_IMAGE_RENDERER__org_gwtproject_cell_client_ImageLoadingCell_DefaultRenderers_;
  }
- /**
-  * @override
-  * @return {SafeHtmlRenderer<?string>}
-  * @public
-  */
+ /** @override @return {SafeHtmlRenderer<?string>} */
  m_getLoadingRenderer__() {
   return DefaultRenderers.f_LOADING_RENDERER__org_gwtproject_cell_client_ImageLoadingCell_DefaultRenderers_;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DefaultRenderers.$clinit = () =>{};
   DefaultRenderers.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DefaultRenderers;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.cell.client.ImageLoadingCell.DefaultRenderers.$1$impl');
@@ -102,9 +75,9 @@ $Util.$setClassMetadata(DefaultRenderers, 'org.gwtproject.cell.client.ImageLoadi
 
 Renderers.$markImplementor(DefaultRenderers);
 
-/** @public {SafeHtmlRenderer<?string>} */
+/**@type {SafeHtmlRenderer<?string>}*/
 DefaultRenderers.f_IMAGE_RENDERER__org_gwtproject_cell_client_ImageLoadingCell_DefaultRenderers_;
-/** @public {SafeHtmlRenderer<?string>} */
+/**@type {SafeHtmlRenderer<?string>}*/
 DefaultRenderers.f_LOADING_RENDERER__org_gwtproject_cell_client_ImageLoadingCell_DefaultRenderers_;
 
 exports = DefaultRenderers; 

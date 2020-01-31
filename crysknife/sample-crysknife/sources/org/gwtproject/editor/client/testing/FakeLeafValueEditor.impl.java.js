@@ -9,66 +9,42 @@ const LeafValueEditor = goog.require('org.gwtproject.editor.client.LeafValueEdit
  * @implements {LeafValueEditor<T>}
   */
 class FakeLeafValueEditor extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {T} */
+  /**@type {T}*/
   this.f_value__org_gwtproject_editor_client_testing_FakeLeafValueEditor_;
  }
- /**
-  * @template T
-  * @return {!FakeLeafValueEditor<T>}
-  * @public
-  */
+ /** @template T @return {!FakeLeafValueEditor<T>} */
  static $create__() {
   FakeLeafValueEditor.$clinit();
   let $instance = new FakeLeafValueEditor();
   $instance.$ctor__org_gwtproject_editor_client_testing_FakeLeafValueEditor__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_editor_client_testing_FakeLeafValueEditor__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @return {T}
-  * @public
-  */
+ /** @override @return {T} */
  m_getValue__() {
   return this.f_value__org_gwtproject_editor_client_testing_FakeLeafValueEditor_;
  }
- /**
-  * @override
-  * @param {T} value
-  * @public
-  */
- m_setValue__java_lang_Object(value) {
+ /** @override */
+ m_setValue__java_lang_Object(/** T */ value) {
   this.f_value__org_gwtproject_editor_client_testing_FakeLeafValueEditor_ = value;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   FakeLeafValueEditor.$clinit = () =>{};
   FakeLeafValueEditor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof FakeLeafValueEditor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

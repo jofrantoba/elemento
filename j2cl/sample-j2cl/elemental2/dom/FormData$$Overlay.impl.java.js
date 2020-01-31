@@ -8,108 +8,56 @@ let SetValueUnionType_$Overlay = goog.forwardDeclare('elemental2.dom.FormData.Se
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class FormData_$Overlay {
- /**
-  * @param {!FormData} $thisArg
-  * @param {?string} name
-  * @param {Blob} value
-  * @param {?string} filename
-  * @public
-  */
- static m_append__$devirt__elemental2_dom_FormData__java_lang_String__elemental2_dom_Blob__java_lang_String($thisArg, name, value, filename) {
+ 
+ static m_append__$devirt__elemental2_dom_FormData__java_lang_String__elemental2_dom_Blob__java_lang_String(/** !FormData */ $thisArg, /** ?string */ name, /** Blob */ value, /** ?string */ filename) {
   FormData_$Overlay.$clinit();
-  $thisArg.append(name, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(value)), filename);
+  $thisArg.append(name, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(value)), filename);
  }
- /**
-  * @param {!FormData} $thisArg
-  * @param {?string} name
-  * @param {Blob} value
-  * @public
-  */
- static m_append__$devirt__elemental2_dom_FormData__java_lang_String__elemental2_dom_Blob($thisArg, name, value) {
+ 
+ static m_append__$devirt__elemental2_dom_FormData__java_lang_String__elemental2_dom_Blob(/** !FormData */ $thisArg, /** ?string */ name, /** Blob */ value) {
   FormData_$Overlay.$clinit();
-  $thisArg.append(name, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(value)));
+  $thisArg.append(name, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(value)));
  }
- /**
-  * @param {!FormData} $thisArg
-  * @param {?string} name
-  * @param {?string} value
-  * @param {?string} filename
-  * @public
-  */
- static m_append__$devirt__elemental2_dom_FormData__java_lang_String__java_lang_String__java_lang_String($thisArg, name, value, filename) {
+ 
+ static m_append__$devirt__elemental2_dom_FormData__java_lang_String__java_lang_String__java_lang_String(/** !FormData */ $thisArg, /** ?string */ name, /** ?string */ value, /** ?string */ filename) {
   FormData_$Overlay.$clinit();
-  $thisArg.append(name, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(value)), filename);
+  $thisArg.append(name, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(value)), filename);
  }
- /**
-  * @param {!FormData} $thisArg
-  * @param {?string} name
-  * @param {?string} value
-  * @public
-  */
- static m_append__$devirt__elemental2_dom_FormData__java_lang_String__java_lang_String($thisArg, name, value) {
+ 
+ static m_append__$devirt__elemental2_dom_FormData__java_lang_String__java_lang_String(/** !FormData */ $thisArg, /** ?string */ name, /** ?string */ value) {
   FormData_$Overlay.$clinit();
-  $thisArg.append(name, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(value)));
+  $thisArg.append(name, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(value)));
  }
- /**
-  * @param {!FormData} $thisArg
-  * @param {?string} name
-  * @param {Blob} value
-  * @param {?string} filename
-  * @public
-  */
- static m_set__$devirt__elemental2_dom_FormData__java_lang_String__elemental2_dom_Blob__java_lang_String($thisArg, name, value, filename) {
+ 
+ static m_set__$devirt__elemental2_dom_FormData__java_lang_String__elemental2_dom_Blob__java_lang_String(/** !FormData */ $thisArg, /** ?string */ name, /** Blob */ value, /** ?string */ filename) {
   FormData_$Overlay.$clinit();
-  $thisArg.set(name, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(value)), filename);
+  $thisArg.set(name, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(value)), filename);
  }
- /**
-  * @param {!FormData} $thisArg
-  * @param {?string} name
-  * @param {Blob} value
-  * @public
-  */
- static m_set__$devirt__elemental2_dom_FormData__java_lang_String__elemental2_dom_Blob($thisArg, name, value) {
+ 
+ static m_set__$devirt__elemental2_dom_FormData__java_lang_String__elemental2_dom_Blob(/** !FormData */ $thisArg, /** ?string */ name, /** Blob */ value) {
   FormData_$Overlay.$clinit();
-  $thisArg.set(name, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(value)));
+  $thisArg.set(name, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(value)));
  }
- /**
-  * @param {!FormData} $thisArg
-  * @param {?string} name
-  * @param {?string} value
-  * @param {?string} filename
-  * @public
-  */
- static m_set__$devirt__elemental2_dom_FormData__java_lang_String__java_lang_String__java_lang_String($thisArg, name, value, filename) {
+ 
+ static m_set__$devirt__elemental2_dom_FormData__java_lang_String__java_lang_String__java_lang_String(/** !FormData */ $thisArg, /** ?string */ name, /** ?string */ value, /** ?string */ filename) {
   FormData_$Overlay.$clinit();
-  $thisArg.set(name, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(value)), filename);
+  $thisArg.set(name, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(value)), filename);
  }
- /**
-  * @param {!FormData} $thisArg
-  * @param {?string} name
-  * @param {?string} value
-  * @public
-  */
- static m_set__$devirt__elemental2_dom_FormData__java_lang_String__java_lang_String($thisArg, name, value) {
+ 
+ static m_set__$devirt__elemental2_dom_FormData__java_lang_String__java_lang_String(/** !FormData */ $thisArg, /** ?string */ name, /** ?string */ value) {
   FormData_$Overlay.$clinit();
-  $thisArg.set(name, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(value)));
+  $thisArg.set(name, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(value)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   FormData_$Overlay.$clinit = () =>{};
   FormData_$Overlay.$loadModules();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof FormData;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }

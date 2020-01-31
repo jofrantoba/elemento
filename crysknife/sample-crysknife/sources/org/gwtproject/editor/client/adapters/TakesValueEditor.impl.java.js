@@ -11,79 +11,48 @@ let TakesValue = goog.forwardDeclare('org.gwtproject.user.client.TakesValue$impl
  * @implements {LeafValueEditor<T>}
   */
 class TakesValueEditor extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {TakesValue<T>} */
+  /**@type {TakesValue<T>}*/
   this.f_peer__org_gwtproject_editor_client_adapters_TakesValueEditor_;
  }
- /**
-  * @template T_1
-  * @param {TakesValue<T_1>} peer
-  * @return {TakesValueEditor<T_1>}
-  * @public
-  */
- static m_of__org_gwtproject_user_client_TakesValue(peer) {
+ /** @template T_1 @return {TakesValueEditor<T_1>} */
+ static m_of__org_gwtproject_user_client_TakesValue(/** TakesValue<T_1> */ peer) {
   TakesValueEditor.$clinit();
-  return /**@type {!TakesValueEditor<T_1>} */ (TakesValueEditor.$create__org_gwtproject_user_client_TakesValue(peer));
+  return /**@type {!TakesValueEditor<T_1>}*/ (TakesValueEditor.$create__org_gwtproject_user_client_TakesValue(peer));
  }
- /**
-  * @template T
-  * @param {TakesValue<T>} peer
-  * @return {!TakesValueEditor<T>}
-  * @public
-  */
- static $create__org_gwtproject_user_client_TakesValue(peer) {
+ /** @template T @return {!TakesValueEditor<T>} */
+ static $create__org_gwtproject_user_client_TakesValue(/** TakesValue<T> */ peer) {
   TakesValueEditor.$clinit();
   let $instance = new TakesValueEditor();
   $instance.$ctor__org_gwtproject_editor_client_adapters_TakesValueEditor__org_gwtproject_user_client_TakesValue(peer);
   return $instance;
  }
- /**
-  * @param {TakesValue<T>} peer
-  * @public
-  */
- $ctor__org_gwtproject_editor_client_adapters_TakesValueEditor__org_gwtproject_user_client_TakesValue(peer) {
+ 
+ $ctor__org_gwtproject_editor_client_adapters_TakesValueEditor__org_gwtproject_user_client_TakesValue(/** TakesValue<T> */ peer) {
   this.$ctor__java_lang_Object__();
   this.f_peer__org_gwtproject_editor_client_adapters_TakesValueEditor_ = peer;
  }
- /**
-  * @override
-  * @return {T}
-  * @public
-  */
+ /** @override @return {T} */
  m_getValue__() {
   return this.f_peer__org_gwtproject_editor_client_adapters_TakesValueEditor_.m_getValue__();
  }
- /**
-  * @override
-  * @param {T} value
-  * @public
-  */
- m_setValue__java_lang_Object(value) {
+ /** @override */
+ m_setValue__java_lang_Object(/** T */ value) {
   this.f_peer__org_gwtproject_editor_client_adapters_TakesValueEditor_.m_setValue__java_lang_Object(value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TakesValueEditor.$clinit = () =>{};
   TakesValueEditor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TakesValueEditor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

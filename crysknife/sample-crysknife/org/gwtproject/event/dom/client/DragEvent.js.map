@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DragEvent.impl.java.js",
-"lineCount":100,
-"mappings":"A;;;;;;;;;;;;;MAoBa,S;;;;CAAA,W;EAAAA,Q;;;;;;QAaD,S;EAAAC,oB;EAAAA,gC;EAAAA,+D;EAAAA,iB;;;;;CAAA,kD;EAAAC,kE;;;;;;QAOsB,W;EAAAC,oB;EAC9BA,oE;;;;;;;CAI6B,qB;EAC7BC,oE;;;;;;CAIa,uD,CAAqBC,O;EAClCC,kE;;;;;;;;CA/BS,4B;EAAAA,wH;;;;;QAAA,O;EAAAC,4B;EAAAA,yB;EAAAA,4B;EAEXA,iQ;;;;;;;;;;;;;;;;;;;;;;;AAFW;UAG4B,kDAH5B;",
+"lineCount":71,
+"mappings":"A;;;;;;;;;;;;;MAoBa,S;;CAAA,W;EAAAA,Q;;;QAaD,S;EAAAC,oB;EAAAA,gC;EAAAA,+D;EAAAA,iB;;;CAAA,kD;EAAAC,kE;;;QAOsB,W;EAAAC,oB;EAC9BA,oE;;;CAI6B,qB;EAC7BC,oE;;;CAIa,uD,oBAAqBC,O;EAClCC,kE;;;;CA/BS,4B;EAAAA,uH;;;QAAA,O;EAAAC,4B;EAAAA,yB;EAAAA,4B;EAEXA,gQ;;;;;;;;;;;;;;;;;AAFW;UAG4B,kDAH5B;",
 "sources":["DragEvent.java"],
 "names":["org.gwtproject.event.dom.client.DragEvent.<synthetic: ctor_js>","org.gwtproject.event.dom.client.DragEvent.<synthetic: ctor_create>","org.gwtproject.event.dom.client.DragEvent.<init>","org.gwtproject.event.dom.client.DragEvent.getType","org.gwtproject.event.dom.client.DragEvent.getAssociatedType","handler","org.gwtproject.event.dom.client.DragEvent.dispatch","org.gwtproject.event.dom.client.DragEvent.<clinit>"]
 }

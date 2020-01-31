@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ResponseImpl$1.impl.java.js",
-"lineCount":77,
-"mappings":"A;;;;;;;;MA2DuB,E;;;;CAAA,W;EAAAA,Q;EAAAA;gE;EAAAA;OAHJC,OAGID,C;EAAAA;OAFJE,QAEIF,C;;;;;;;;;QAAA,oF;EAAAG,a;EAAAA,yB;EAAAA,wK;EAAAA,iB;;;;;;;;CAAA,6H;EAAAC,4E;EAAAA,uB;EAAAA,yB;EAAAA,kD;;;;;;;CAEG,W;EACZC,oB;;;;;;;CAIY,Y;EACZC,qB;;;;;;;CAIY,Q;EACZC,4H;;;;;QAbS,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":50,
+"mappings":"A;;;;;;;;MA2DuB,E;;CAAA,W;EAAAA,Q;EAAAA;gE;EAAAA;OAHJC,OAGID,C;EAAAA;OAFJE,QAEIF,C;;;QAAA,oF;EAAAG,a;EAAAA,yB;EAAAA,wK;EAAAA,iB;;;CAAA,6H;EAAAC,4E;EAAAA,uB;EAAAA,yB;EAAAA,kD;;;CAEG,W;EACZC,oB;;;CAIY,Y;EACZC,qB;;;CAIY,Q;EACZC,4H;;;QAbS,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["ResponseImpl.java"],
 "names":["org.gwtproject.http.client.ResponseImpl$1.<synthetic: ctor_js>","name","value","org.gwtproject.http.client.ResponseImpl$1.<synthetic: ctor_create>","org.gwtproject.http.client.ResponseImpl$1.<init>","org.gwtproject.http.client.ResponseImpl$1.getName","org.gwtproject.http.client.ResponseImpl$1.getValue","org.gwtproject.http.client.ResponseImpl$1.toString","org.gwtproject.http.client.ResponseImpl$1.<clinit>"]
 }

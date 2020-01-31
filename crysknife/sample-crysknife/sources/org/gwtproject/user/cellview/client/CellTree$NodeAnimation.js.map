@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellTree$NodeAnimation.impl.java.js",
-"lineCount":79,
-"mappings":"A;;;;;;;;;;MA+G+B,a;;;;CAAA,W;EAAAA,Q;EAAAA;OAUf,uEAVeA,K;;;;;CAY3B,mE;EAAAC,0D;EAAAA,6E;;;;;;CAQW,e;EACTC,oF;;;;;;CASU,kB,CAAgBC,Q;EAC1BC,wF;;;;;;;;CASY,gH,CAA4BC,I,EAAcC,kB;;;;CAxC7B,qE;EAO3BL,uL;;;;;QAP2B,O;EAAAM,gC;EAAAA,6B;EAAAA,oB;;;;;;;;;;;;;;;;;;AAE3B;cAGyB,yFAHzB;",
+"lineCount":54,
+"mappings":"A;;;;;;;;;;MA+G+B,a;;CAAA,W;EAAAA,Q;EAAAA;OAUf,uEAVeA,K;;;CAY3B,mE;EAAAC,0D;EAAAA,6E;;;CAQW,e;EACTC,oF;;;CASU,kB,eAAgBC,Q;EAC1BC,wF;;;CASY,gH,4BAA4BC,I,iBAAcC,kB;;CAxC7B,qE;EAO3BL,uL;;;QAP2B,O;EAAAM,gC;EAAAA,6B;EAAAA,oB;;;;;;;;;;;;AAE3B;cAGyB,yFAHzB;",
 "sources":["CellTree.java"],
 "names":["org.gwtproject.user.cellview.client.CellTree$NodeAnimation.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.CellTree$NodeAnimation.<init>","org.gwtproject.user.cellview.client.CellTree$NodeAnimation.getDuration","duration","org.gwtproject.user.cellview.client.CellTree$NodeAnimation.setDuration","node","isAnimationEnabled","org.gwtproject.user.cellview.client.CellTree$NodeAnimation.<clinit>"]
 }

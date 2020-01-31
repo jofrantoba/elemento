@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"RenderableStamper.impl.java.js",
-"lineCount":83,
-"mappings":"A;;;;;;;;;;;;;;MAkCa,iB;;;;CAAA,W;EAAAA,Q;EAAAA;OAGU,yDAHVA,C;;;;;;;QASJ,yB,CAAyBC,K;EAAzBC,4B;EAAAA,wC;EAAAA,0F;EAAAA,iB;;;;;;CAAA,wE,CAAyBD,K;EAAzBE,iC;EACLA,qH;;;;;;CAOa,sB;EAEbC,yG;;;;;;;CASc,gD,CAAeC,Q;EAC7BC,IAAOC,IAAPD,gE;EACAA;GACEA,gBADFA;G;EAIAA,IAAIE,aAAJF,mE;EAEAA;GACEA,gBADFA;G;EAGAA,IAAcG,WAAdH,mY;EAMAA,mF;;;;;;;;CAQ6C,iE,CAAQI,c;EACrDJ,6I;EACAA,sB;;;;;QAvDS,O;EAAAK,oC;EAAAA,iC;EAAAA;",
+"lineCount":60,
+"mappings":"A;;;;;;;;;;;;;;MAkCa,iB;;CAAA,W;EAAAA,Q;EAAAA;OAGU,yDAHVA,C;;;QASJ,yB,gBAAyBC,K;EAAzBC,4B;EAAAA,wC;EAAAA,0F;EAAAA,iB;;;CAAA,wE,gBAAyBD,K;EAAzBE,iC;EACLA,qH;;;CAOa,sB;EAEbC,yG;;;CASc,gD,iBAAeC,Q;EAC7BC,IAAOC,IAAPD,gE;EACAA;GACEA,gBADFA;G;EAIAA,IAAIE,aAAJF,mE;EAEAA;GACEA,gBADFA;G;EAGAA,IAAcG,WAAdH,mY;EAMAA,mF;;;CAQ6C,iE,UAAQI,c;EACrDJ,4I;EACAA,sB;;;QAvDS,O;EAAAK,oC;EAAAA,iC;EAAAA;",
 "sources":["RenderableStamper.java"],
 "names":["org.gwtproject.user.client.ui.RenderableStamper.<synthetic: ctor_js>","token","org.gwtproject.user.client.ui.RenderableStamper.<synthetic: ctor_create>","org.gwtproject.user.client.ui.RenderableStamper.<init>","org.gwtproject.user.client.ui.RenderableStamper.findStampedElement","safeHtml","org.gwtproject.user.client.ui.RenderableStamper.stamp","html","endOfFirstTag","htmlBuilder","elementBuilder","org.gwtproject.user.client.ui.RenderableStamper.<clinit>"]
 }

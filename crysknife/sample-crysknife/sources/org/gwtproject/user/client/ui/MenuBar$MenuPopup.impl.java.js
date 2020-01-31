@@ -23,32 +23,23 @@ let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
 let Window = goog.forwardDeclare('org.gwtproject.user.window.client.Window$impl');
 
 class MenuPopup extends DecoratedPopupPanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {MenuBar} */
+  /**@type {MenuBar}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_MenuBar_MenuPopup;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_towardsEast__org_gwtproject_user_client_ui_MenuBar_MenuPopup_ = false;
  }
- /**
-  * @param {MenuBar} $outer_this
-  * @return {!MenuPopup}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_MenuBar($outer_this) {
+ /** @return {!MenuPopup} */
+ static $create__org_gwtproject_user_client_ui_MenuBar(/** MenuBar */ $outer_this) {
   MenuPopup.$clinit();
   let $instance = new MenuPopup();
   $instance.$ctor__org_gwtproject_user_client_ui_MenuBar_MenuPopup__org_gwtproject_user_client_ui_MenuBar($outer_this);
   return $instance;
  }
- /**
-  * @param {MenuBar} $outer_this
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_MenuBar_MenuPopup__org_gwtproject_user_client_ui_MenuBar($outer_this) {
+ 
+ $ctor__org_gwtproject_user_client_ui_MenuBar_MenuPopup__org_gwtproject_user_client_ui_MenuBar(/** MenuBar */ $outer_this) {
   this.f_$outer_this__org_gwtproject_user_client_ui_MenuBar_MenuPopup = $outer_this;
   this.$ctor__org_gwtproject_user_client_ui_DecoratedPopupPanel__boolean__boolean__java_lang_String(true, false, "menuPopup");
   this.$init___$p_org_gwtproject_user_client_ui_MenuBar_MenuPopup();
@@ -61,12 +52,8 @@ class MenuPopup extends DecoratedPopupPanel {
   }
   this.m_setPreviewingAllNativeEvents__boolean(true);
  }
- /**
-  * @override
-  * @param {NativePreviewEvent} event
-  * @public
-  */
- m_onPreviewNativeEvent__org_gwtproject_user_client_Event_NativePreviewEvent(event) {
+ /** @override */
+ m_onPreviewNativeEvent__org_gwtproject_user_client_Event_NativePreviewEvent(/** NativePreviewEvent */ event) {
   if (!event.m_isCanceled__()) {
    let /** Object */ target, /** Object */ parentMenuElement;
    switch (event.m_getTypeInt__()) {
@@ -86,20 +73,14 @@ class MenuPopup extends DecoratedPopupPanel {
   }
   super.m_onPreviewNativeEvent__org_gwtproject_user_client_Event_NativePreviewEvent(event);
  }
- /**
-  * @param {MenuItem} target
-  * @public
-  */
- m_positionBelow__org_gwtproject_user_client_ui_MenuItem(target) {
+ 
+ m_positionBelow__org_gwtproject_user_client_ui_MenuItem(/** MenuItem */ target) {
   let top = this.f_$outer_this__org_gwtproject_user_client_ui_MenuBar_MenuPopup.m_getAbsoluteTop__() + this.f_$outer_this__org_gwtproject_user_client_ui_MenuBar_MenuPopup.m_getOffsetHeight__();
   let left = this.f_towardsEast__org_gwtproject_user_client_ui_MenuBar_MenuPopup_ ? this.m_leftOf__org_gwtproject_user_client_ui_UIObject_$p_org_gwtproject_user_client_ui_MenuBar_MenuPopup(target) : this.m_rightOf__org_gwtproject_user_client_ui_UIObject_$p_org_gwtproject_user_client_ui_MenuBar_MenuPopup(target) - this.m_getOffsetWidth__();
   this.m_setPositionInClient__int__int_$p_org_gwtproject_user_client_ui_MenuBar_MenuPopup(left, top);
  }
- /**
-  * @param {MenuItem} target
-  * @public
-  */
- m_positionNextTo__org_gwtproject_user_client_ui_MenuItem(target) {
+ 
+ m_positionNextTo__org_gwtproject_user_client_ui_MenuItem(/** MenuItem */ target) {
   let offsetTop = target.m_getSubMenu__().m_getAbsoluteTop__() - this.m_getAbsoluteTop__();
   let top = target.m_getAbsoluteTop__() - offsetTop;
   let leftIfTowardEast = this.m_rightOf__org_gwtproject_user_client_ui_UIObject_$p_org_gwtproject_user_client_ui_MenuBar_MenuPopup(this.f_$outer_this__org_gwtproject_user_client_ui_MenuBar_MenuPopup);
@@ -110,24 +91,16 @@ class MenuPopup extends DecoratedPopupPanel {
   let left = this.f_towardsEast__org_gwtproject_user_client_ui_MenuBar_MenuPopup_ ? leftIfTowardEast : leftIfTowardWest;
   this.m_setPositionInClient__int__int_$p_org_gwtproject_user_client_ui_MenuBar_MenuPopup(left, top);
  }
- /**
-  * @param {number} left
-  * @param {number} top
-  * @public
-  */
- m_setPositionInClient__int__int_$p_org_gwtproject_user_client_ui_MenuBar_MenuPopup(left, top) {
+ 
+ m_setPositionInClient__int__int_$p_org_gwtproject_user_client_ui_MenuBar_MenuPopup(/** number */ left, /** number */ top) {
   if (this.m_getOffsetWidth__() < Window.m_getClientWidth__()) {
    left = Math.min(left, this.m_getClientRight___$p_org_gwtproject_user_client_ui_MenuBar_MenuPopup() - this.m_getOffsetWidth__());
    left = Math.max(this.m_getClientLeft___$p_org_gwtproject_user_client_ui_MenuBar_MenuPopup(), left);
   }
   this.m_setPopupPosition__int__int(left, top);
  }
- /**
-  * @param {number} overflowIfTowardsEast
-  * @param {number} overflowIfTowardsWest
-  * @public
-  */
- m_selectDirection__int__int_$p_org_gwtproject_user_client_ui_MenuBar_MenuPopup(overflowIfTowardsEast, overflowIfTowardsWest) {
+ 
+ m_selectDirection__int__int_$p_org_gwtproject_user_client_ui_MenuBar_MenuPopup(/** number */ overflowIfTowardsEast, /** number */ overflowIfTowardsWest) {
   if (overflowIfTowardsEast <= 0 && overflowIfTowardsWest <= 0) {
    if (!$Equality.$same(this.f_$outer_this__org_gwtproject_user_client_ui_MenuBar_MenuPopup.f_parentMenu__org_gwtproject_user_client_ui_MenuBar_, null) && !$Equality.$same(this.f_$outer_this__org_gwtproject_user_client_ui_MenuBar_MenuPopup.f_parentMenu__org_gwtproject_user_client_ui_MenuBar_.f_popup__org_gwtproject_user_client_ui_MenuBar_, null)) {
     this.f_towardsEast__org_gwtproject_user_client_ui_MenuBar_MenuPopup_ = this.f_$outer_this__org_gwtproject_user_client_ui_MenuBar_MenuPopup.f_parentMenu__org_gwtproject_user_client_ui_MenuBar_.f_popup__org_gwtproject_user_client_ui_MenuBar_.f_towardsEast__org_gwtproject_user_client_ui_MenuBar_MenuPopup_;
@@ -136,79 +109,47 @@ class MenuPopup extends DecoratedPopupPanel {
    this.f_towardsEast__org_gwtproject_user_client_ui_MenuBar_MenuPopup_ = (overflowIfTowardsEast < overflowIfTowardsWest);
   }
  }
- /**
-  * @param {UIObject} object
-  * @return {number}
-  * @public
-  */
- m_leftOf__org_gwtproject_user_client_ui_UIObject_$p_org_gwtproject_user_client_ui_MenuBar_MenuPopup(object) {
+ /** @return {number} */
+ m_leftOf__org_gwtproject_user_client_ui_UIObject_$p_org_gwtproject_user_client_ui_MenuBar_MenuPopup(/** UIObject */ object) {
   return object.m_getAbsoluteLeft__();
  }
- /**
-  * @param {UIObject} object
-  * @return {number}
-  * @public
-  */
- m_rightOf__org_gwtproject_user_client_ui_UIObject_$p_org_gwtproject_user_client_ui_MenuBar_MenuPopup(object) {
+ /** @return {number} */
+ m_rightOf__org_gwtproject_user_client_ui_UIObject_$p_org_gwtproject_user_client_ui_MenuBar_MenuPopup(/** UIObject */ object) {
   return object.m_getAbsoluteLeft__() + object.m_getOffsetWidth__();
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getClientLeft___$p_org_gwtproject_user_client_ui_MenuBar_MenuPopup() {
   return Window.m_getScrollLeft__();
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getClientRight___$p_org_gwtproject_user_client_ui_MenuBar_MenuPopup() {
   return this.m_getClientLeft___$p_org_gwtproject_user_client_ui_MenuBar_MenuPopup() + Window.m_getClientWidth__();
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_MenuBar_MenuPopup() {
   this.f_towardsEast__org_gwtproject_user_client_ui_MenuBar_MenuPopup_ = !LocaleInfo.m_getCurrentLocale__().m_isRTL__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MenuPopup.$clinit = () =>{};
   MenuPopup.$loadModules();
   DecoratedPopupPanel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof MenuPopup;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   j_l_String = goog.module.get('java.lang.String$impl');

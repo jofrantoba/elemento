@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Animation$1.impl.java.js",
-"lineCount":58,
-"mappings":"A;;;;;;;;;;;MAqD8B,E;;;;CAAA,W;EAAAA,Q;EAAAA;kE;;;;;;;QAAA,kD;EAAAC,a;EAAAA,yB;EAAAA,qH;EAAAA,iB;;;;;;CAAA,6F;EAAAC,8E;EAAAA,iC;;;;;;;CAEV,iB,CAAeC,S;EACzBC;GAEEA,smBAFFA;;GAIEA,mIAJFA;G;;;;;QAHoB,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":43,
+"mappings":"A;;;;;;;;;;;MAqD8B,E;;CAAA,W;EAAAA,Q;EAAAA;kE;;;QAAA,kD;EAAAC,a;EAAAA,yB;EAAAA,qH;EAAAA,iB;;;CAAA,6F;EAAAC,8E;EAAAA,iC;;;CAEV,iB,eAAeC,S;EACzBC;GAEEA,smBAFFA;;GAIEA,mIAJFA;G;;;QAHoB,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["Animation.java"],
 "names":["org.gwtproject.animation.client.Animation$1.<synthetic: ctor_js>","org.gwtproject.animation.client.Animation$1.<synthetic: ctor_create>","org.gwtproject.animation.client.Animation$1.<init>","timestamp","org.gwtproject.animation.client.Animation$1.execute","org.gwtproject.animation.client.Animation$1.<clinit>"]
 }

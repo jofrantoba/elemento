@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ImageLoadingCell_ResourcesImpl$loadingInitializer.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;MAauB,kB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,yC;EAAAA,kG;EAAAA,iB;;;;;CAAA,qF;EAAAC,iC;;;;;;QAIkC,O;EAAAC,6B;EACnDA,6G;;;;;QALiB,O;EAAAC,qC;EAAAA,kC;EAAAA,qB;EAEjBA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;MAauB,kB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,yC;EAAAA,kG;EAAAA,iB;;;CAAA,qF;EAAAC,iC;;;QAIkC,O;EAAAC,6B;EACnDA,6G;;;QALiB,O;EAAAC,qC;EAAAA,kC;EAAAA,qB;EAEjBA;",
 "sources":["ImageLoadingCell_ResourcesImpl.java"],
 "names":["org.gwtproject.cell.client.ImageLoadingCell_ResourcesImpl$loadingInitializer.<synthetic: ctor_js>","org.gwtproject.cell.client.ImageLoadingCell_ResourcesImpl$loadingInitializer.<synthetic: ctor_create>","org.gwtproject.cell.client.ImageLoadingCell_ResourcesImpl$loadingInitializer.<init>","org.gwtproject.cell.client.ImageLoadingCell_ResourcesImpl$loadingInitializer.get","org.gwtproject.cell.client.ImageLoadingCell_ResourcesImpl$loadingInitializer.<clinit>"]
 }

@@ -11,41 +11,30 @@ let UIObject = goog.forwardDeclare('org.gwtproject.user.client.ui.UIObject$impl'
 let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
 
 class TreeItemAnimation extends Animation {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {TreeItem} */
+  /**@type {TreeItem}*/
   this.f_curItem__org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_opening__org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation_ = false;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_scrollHeight__org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation_ = 0;
  }
- /**
-  * @return {!TreeItemAnimation}
-  * @public
-  */
+ /** @return {!TreeItemAnimation} */
  static $create__() {
   TreeItemAnimation.$clinit();
   let $instance = new TreeItemAnimation();
   $instance.$ctor__org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation__() {
   this.$ctor__org_gwtproject_animation_client_Animation__();
   this.$init___$p_org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation();
  }
- /**
-  * @param {TreeItem} item
-  * @param {boolean} animate
-  * @public
-  */
- m_setItemState__org_gwtproject_user_client_ui_TreeItem__boolean(item, animate) {
+ 
+ m_setItemState__org_gwtproject_user_client_ui_TreeItem__boolean(/** TreeItem */ item, /** boolean */ animate) {
   this.m_cancel__();
   if (animate) {
    this.f_curItem__org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation_ = item;
@@ -55,10 +44,7 @@ class TreeItemAnimation extends Animation {
    UIObject.m_setVisible__org_gwtproject_dom_client_Element__boolean(item.f_childSpanElem__org_gwtproject_user_client_ui_TreeItem_, item.f_open__org_gwtproject_user_client_ui_TreeItem_);
   }
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onComplete__() {
   if (!$Equality.$same(this.f_curItem__org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation_, null)) {
    if (this.f_opening__org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation_) {
@@ -73,10 +59,7 @@ class TreeItemAnimation extends Animation {
    this.f_curItem__org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation_ = null;
   }
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onStart__() {
   this.f_scrollHeight__org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation_ = 0;
   if (!this.f_opening__org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation_) {
@@ -89,12 +72,8 @@ class TreeItemAnimation extends Animation {
    this.f_scrollHeight__org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation_ = Element_$Overlay.m_getScrollHeight__$devirt__org_gwtproject_dom_client_Element(this.f_curItem__org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation_.f_childSpanElem__org_gwtproject_user_client_ui_TreeItem_);
   }
  }
- /**
-  * @override
-  * @param {number} progress
-  * @public
-  */
- m_onUpdate__double(progress) {
+ /** @override */
+ m_onUpdate__double(/** number */ progress) {
   let height = $Primitives.$narrowDoubleToInt((progress * this.f_scrollHeight__org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation_));
   if (!this.f_opening__org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation_) {
    height = this.f_scrollHeight__org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation_ - height;
@@ -104,33 +83,23 @@ class TreeItemAnimation extends Animation {
   let scrollWidth = Element_$Overlay.m_getPropertyInt__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.f_curItem__org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation_.f_childSpanElem__org_gwtproject_user_client_ui_TreeItem_, "scrollWidth");
   $Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(this.f_curItem__org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation_.f_childSpanElem__org_gwtproject_user_client_ui_TreeItem_.style, "width", scrollWidth + "px");
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation() {
   this.f_curItem__org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation_ = null;
   this.f_opening__org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation_ = true;
   this.f_scrollHeight__org_gwtproject_user_client_ui_TreeItem_TreeItemAnimation_ = 0;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TreeItemAnimation.$clinit = () =>{};
   TreeItemAnimation.$loadModules();
   Animation.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TreeItemAnimation;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   Element_$Overlay = goog.module.get('org.gwtproject.dom.client.Element.$Overlay$impl');

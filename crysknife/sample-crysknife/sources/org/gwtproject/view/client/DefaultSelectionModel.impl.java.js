@@ -19,106 +19,73 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {AbstractSelectionModel<T>}
   */
 class DefaultSelectionModel extends AbstractSelectionModel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Map<*, ?boolean>} */
+  /**@type {Map<*, ?boolean>}*/
   this.f_exceptions__org_gwtproject_view_client_DefaultSelectionModel_;
-  /** @public {Map<*, SelectionChange<T>>} */
+  /**@type {Map<*, SelectionChange<T>>}*/
   this.f_selectionChanges__org_gwtproject_view_client_DefaultSelectionModel_;
  }
- /**
-  * Initialization from constructor 'DefaultSelectionModel()'.
-  * @public
-  */
+ //Initialization from constructor 'DefaultSelectionModel()'.
+ 
  $ctor__org_gwtproject_view_client_DefaultSelectionModel__() {
   this.$ctor__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel__org_gwtproject_view_client_ProvidesKey(null);
   this.$init___$p_org_gwtproject_view_client_DefaultSelectionModel();
  }
- /**
-  * Initialization from constructor 'DefaultSelectionModel(ProvidesKey)'.
-  * @param {ProvidesKey<T>} keyProvider
-  * @public
-  */
- $ctor__org_gwtproject_view_client_DefaultSelectionModel__org_gwtproject_view_client_ProvidesKey(keyProvider) {
+ //Initialization from constructor 'DefaultSelectionModel(ProvidesKey)'.
+ 
+ $ctor__org_gwtproject_view_client_DefaultSelectionModel__org_gwtproject_view_client_ProvidesKey(/** ProvidesKey<T> */ keyProvider) {
   this.$ctor__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel__org_gwtproject_view_client_ProvidesKey(keyProvider);
   this.$init___$p_org_gwtproject_view_client_DefaultSelectionModel();
  }
- /**
-  * @public
-  */
+ 
  m_clearExceptions__() {
   this.f_exceptions__org_gwtproject_view_client_DefaultSelectionModel_.clear();
   this.f_selectionChanges__org_gwtproject_view_client_DefaultSelectionModel_.clear();
   this.m_scheduleSelectionChangeEvent__();
  }
- /**
-  * @abstract
-  * @param {T} item
-  * @return {boolean}
-  * @public
-  */
- m_isDefaultSelected__java_lang_Object(item) {}
- /**
-  * @override
-  * @param {T} item
-  * @return {boolean}
-  * @public
-  */
- m_isSelected__java_lang_Object(item) {
+ /** @abstract @return {boolean} */
+ m_isDefaultSelected__java_lang_Object(/** T */ item) {}
+ /** @override @return {boolean} */
+ m_isSelected__java_lang_Object(/** T */ item) {
   this.m_resolveChanges___$p_org_gwtproject_view_client_DefaultSelectionModel();
   let key = this.m_getKey__java_lang_Object(item);
-  let exception = /**@type {?boolean} */ ($Casts.$to(this.f_exceptions__org_gwtproject_view_client_DefaultSelectionModel_.get(key), Boolean));
+  let exception = /**@type {?boolean}*/ ($Casts.$to(this.f_exceptions__org_gwtproject_view_client_DefaultSelectionModel_.get(key), Boolean));
   if (!$Equality.$same(exception, null)) {
    return Boolean.m_booleanValue__java_lang_Boolean(exception);
   }
   return this.m_isDefaultSelected__java_lang_Object(item);
  }
- /**
-  * @override
-  * @param {T} item
-  * @param {boolean} selected
-  * @public
-  */
- m_setSelected__java_lang_Object__boolean(item, selected) {
-  this.f_selectionChanges__org_gwtproject_view_client_DefaultSelectionModel_.put(this.m_getKey__java_lang_Object(item), /**@type {!SelectionChange<T>} */ (SelectionChange.$create__java_lang_Object__boolean(item, selected)));
+ /** @override */
+ m_setSelected__java_lang_Object__boolean(/** T */ item, /** boolean */ selected) {
+  this.f_selectionChanges__org_gwtproject_view_client_DefaultSelectionModel_.put(this.m_getKey__java_lang_Object(item), /**@type {!SelectionChange<T>}*/ (SelectionChange.$create__java_lang_Object__boolean(item, selected)));
   this.m_scheduleSelectionChangeEvent__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_fireSelectionChangeEvent__() {
   if (this.m_isEventScheduled__()) {
    this.m_setEventCancelled__boolean(true);
   }
   this.m_resolveChanges___$p_org_gwtproject_view_client_DefaultSelectionModel();
  }
- /**
-  * @param {Map<*, ?boolean>} output
-  * @return {Map<*, ?boolean>}
-  * @public
-  */
- m_getExceptions__java_util_Map(output) {
+ /** @return {Map<*, ?boolean>} */
+ m_getExceptions__java_util_Map(/** Map<*, ?boolean> */ output) {
   output.clear();
   output.putAll(this.f_exceptions__org_gwtproject_view_client_DefaultSelectionModel_);
   return output;
  }
- /**
-  * @public
-  */
+ 
  m_resolveChanges___$p_org_gwtproject_view_client_DefaultSelectionModel() {
   let changed = false;
   for (let $iterator = this.f_selectionChanges__org_gwtproject_view_client_DefaultSelectionModel_.m_entrySet__().m_iterator__(); $iterator.m_hasNext__(); ) {
-   let entry = /**@type {Entry<*, SelectionChange<T>>} */ ($Casts.$to($iterator.m_next__(), Entry));
+   let entry = /**@type {Entry<*, SelectionChange<T>>}*/ ($Casts.$to($iterator.m_next__(), Entry));
    let key = entry.m_getKey__();
-   let value = /**@type {SelectionChange<T>} */ ($Casts.$to(entry.m_getValue__(), SelectionChange));
+   let value = /**@type {SelectionChange<T>}*/ ($Casts.$to(entry.m_getValue__(), SelectionChange));
    let item = value.m_getItem__();
    let selected = value.m_isSelected__();
    let defaultSelected = this.m_isDefaultSelected__java_lang_Object(item);
-   let previousException = /**@type {?boolean} */ ($Casts.$to(this.f_exceptions__org_gwtproject_view_client_DefaultSelectionModel_.get(key), Boolean));
+   let previousException = /**@type {?boolean}*/ ($Casts.$to(this.f_exceptions__org_gwtproject_view_client_DefaultSelectionModel_.get(key), Boolean));
    if (defaultSelected == selected) {
     if (!$Equality.$same(previousException, null)) {
      this.f_exceptions__org_gwtproject_view_client_DefaultSelectionModel_.remove(key);
@@ -136,32 +103,22 @@ class DefaultSelectionModel extends AbstractSelectionModel {
    SelectionChangeEvent.m_fire__org_gwtproject_view_client_SelectionChangeEvent_HasSelectionChangedHandlers(this);
   }
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_view_client_DefaultSelectionModel() {
-  this.f_exceptions__org_gwtproject_view_client_DefaultSelectionModel_ = /**@type {!HashMap<*, ?boolean>} */ (HashMap.$create__());
-  this.f_selectionChanges__org_gwtproject_view_client_DefaultSelectionModel_ = /**@type {!HashMap<*, SelectionChange<T>>} */ (HashMap.$create__());
+  this.f_exceptions__org_gwtproject_view_client_DefaultSelectionModel_ = /**@type {!HashMap<*, ?boolean>}*/ (HashMap.$create__());
+  this.f_selectionChanges__org_gwtproject_view_client_DefaultSelectionModel_ = /**@type {!HashMap<*, SelectionChange<T>>}*/ (HashMap.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DefaultSelectionModel.$clinit = () =>{};
   DefaultSelectionModel.$loadModules();
   AbstractSelectionModel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DefaultSelectionModel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Boolean = goog.module.get('java.lang.Boolean$impl');
   HashMap = goog.module.get('java.util.HashMap$impl');

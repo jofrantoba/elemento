@@ -7,55 +7,37 @@ let ImageResource = goog.forwardDeclare('org.gwtproject.resources.client.ImageRe
 let CellList__ResourcesImpl = goog.forwardDeclare('org.gwtproject.user.cellview.client.CellList_ResourcesImpl$impl');
 
 class cellListSelectedBackgroundInitializer extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!cellListSelectedBackgroundInitializer}
-  * @public
-  */
+ /** @return {!cellListSelectedBackgroundInitializer} */
  static $create__() {
   let $instance = new cellListSelectedBackgroundInitializer();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellList_ResourcesImpl_cellListSelectedBackgroundInitializer__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_cellview_client_CellList_ResourcesImpl_cellListSelectedBackgroundInitializer__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {ImageResource}
-  * @public
-  */
+ /** @return {ImageResource} */
  static m_get__() {
   cellListSelectedBackgroundInitializer.$clinit();
   return CellList__ResourcesImpl.f_cellListSelectedBackground__org_gwtproject_user_cellview_client_CellList_ResourcesImpl_;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   cellListSelectedBackgroundInitializer.$clinit = () =>{};
   cellListSelectedBackgroundInitializer.$loadModules();
   j_l_Object.$clinit();
   CellList__ResourcesImpl.f__instance0__org_gwtproject_user_cellview_client_CellList_ResourcesImpl_.m_cellListSelectedBackgroundInitializer___$p_org_gwtproject_user_cellview_client_CellList_ResourcesImpl();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof cellListSelectedBackgroundInitializer;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   CellList__ResourcesImpl = goog.module.get('org.gwtproject.user.cellview.client.CellList_ResourcesImpl$impl');
  }

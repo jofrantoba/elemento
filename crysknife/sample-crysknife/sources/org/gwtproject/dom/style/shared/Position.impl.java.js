@@ -18,80 +18,48 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @implements {HasCssName}
   */
 class Position extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_dom_style_shared_Position__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_dom_style_shared_Position__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @abstract
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @override @return {?string} */
  m_getCssName__() {}
- /**
-  * @param {string} name
-  * @return {!Position}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!Position} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   Position.$clinit();
   if ($Equality.$same(Position.f_namesToValuesMap__org_gwtproject_dom_style_shared_Position_, null)) {
    Position.f_namesToValuesMap__org_gwtproject_dom_style_shared_Position_ = $Enums.createMapFromValues(Position.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, Position.f_namesToValuesMap__org_gwtproject_dom_style_shared_Position_);
  }
- /**
-  * @return {!Array<!Position>}
-  * @public
-  */
+ /** @return {!Array<!Position>} */
  static m_values__() {
   Position.$clinit();
-  return /**@type {!Array<Position>} */ ($Arrays.$init([Position.$f_STATIC__org_gwtproject_dom_style_shared_Position, Position.$f_RELATIVE__org_gwtproject_dom_style_shared_Position, Position.$f_ABSOLUTE__org_gwtproject_dom_style_shared_Position, Position.$f_FIXED__org_gwtproject_dom_style_shared_Position], Position));
+  return /**@type {!Array<Position>}*/ ($Arrays.$init([Position.$f_STATIC__org_gwtproject_dom_style_shared_Position, Position.$f_RELATIVE__org_gwtproject_dom_style_shared_Position, Position.$f_ABSOLUTE__org_gwtproject_dom_style_shared_Position, Position.$f_FIXED__org_gwtproject_dom_style_shared_Position], Position));
  }
- /**
-  * @return {!Position}
-  * @public
-  */
+ /** @return {!Position} */
  static get f_STATIC__org_gwtproject_dom_style_shared_Position() {
   return (Position.$clinit(), Position.$f_STATIC__org_gwtproject_dom_style_shared_Position);
  }
- /**
-  * @return {!Position}
-  * @public
-  */
+ /** @return {!Position} */
  static get f_RELATIVE__org_gwtproject_dom_style_shared_Position() {
   return (Position.$clinit(), Position.$f_RELATIVE__org_gwtproject_dom_style_shared_Position);
  }
- /**
-  * @return {!Position}
-  * @public
-  */
+ /** @return {!Position} */
  static get f_ABSOLUTE__org_gwtproject_dom_style_shared_Position() {
   return (Position.$clinit(), Position.$f_ABSOLUTE__org_gwtproject_dom_style_shared_Position);
  }
- /**
-  * @return {!Position}
-  * @public
-  */
+ /** @return {!Position} */
  static get f_FIXED__org_gwtproject_dom_style_shared_Position() {
   return (Position.$clinit(), Position.$f_FIXED__org_gwtproject_dom_style_shared_Position);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Position.$clinit = () =>{};
   Position.$loadModules();
@@ -102,17 +70,11 @@ class Position extends Enum {
   Position.$f_FIXED__org_gwtproject_dom_style_shared_Position = $4.$create__java_lang_String__int($Util.$makeEnumName("FIXED"), Position.$ordinal$f_FIXED__org_gwtproject_dom_style_shared_Position);
   Position.f_namesToValuesMap__org_gwtproject_dom_style_shared_Position_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Position;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.dom.style.shared.Position.$1$impl');
@@ -128,23 +90,23 @@ $Util.$setClassMetadataForEnum(Position, 'org.gwtproject.dom.style.shared.Positi
 
 HasCssName.$markImplementor(Position);
 
-/** @private {!Position} */
+/**@private {!Position}*/
 Position.$f_STATIC__org_gwtproject_dom_style_shared_Position;
-/** @private {!Position} */
+/**@private {!Position}*/
 Position.$f_RELATIVE__org_gwtproject_dom_style_shared_Position;
-/** @private {!Position} */
+/**@private {!Position}*/
 Position.$f_ABSOLUTE__org_gwtproject_dom_style_shared_Position;
-/** @private {!Position} */
+/**@private {!Position}*/
 Position.$f_FIXED__org_gwtproject_dom_style_shared_Position;
-/** @public {Map<?string, !Position>} */
+/**@type {Map<?string, !Position>}*/
 Position.f_namesToValuesMap__org_gwtproject_dom_style_shared_Position_;
-/** @public {number} @const */
+/**@const {number}*/
 Position.$ordinal$f_STATIC__org_gwtproject_dom_style_shared_Position = 0;
-/** @public {number} @const */
+/**@const {number}*/
 Position.$ordinal$f_RELATIVE__org_gwtproject_dom_style_shared_Position = 1;
-/** @public {number} @const */
+/**@const {number}*/
 Position.$ordinal$f_ABSOLUTE__org_gwtproject_dom_style_shared_Position = 2;
-/** @public {number} @const */
+/**@const {number}*/
 Position.$ordinal$f_FIXED__org_gwtproject_dom_style_shared_Position = 3;
 
 exports = Position; 

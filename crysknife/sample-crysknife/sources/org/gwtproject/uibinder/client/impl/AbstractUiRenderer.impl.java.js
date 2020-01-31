@@ -27,38 +27,23 @@ let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
  * @implements {UiRenderer}
   */
 class AbstractUiRenderer extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_uiId__org_gwtproject_uibinder_client_impl_AbstractUiRenderer;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_uibinder_client_impl_AbstractUiRenderer__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {?string} fieldName
-  * @param {?string} uiId
-  * @return {?string}
-  * @public
-  */
- static m_buildInnerId__java_lang_String__java_lang_String(fieldName, uiId) {
+ /** @return {?string} */
+ static m_buildInnerId__java_lang_String__java_lang_String(/** ?string */ fieldName, /** ?string */ uiId) {
   AbstractUiRenderer.$clinit();
   return j_l_String.m_valueOf__java_lang_Object(uiId) + j_l_String.m_valueOf__java_lang_Object(AbstractUiRenderer.f_UI_ID_SEPARATOR__org_gwtproject_uibinder_client_impl_AbstractUiRenderer) + j_l_String.m_valueOf__java_lang_Object(fieldName);
  }
- /**
-  * @param {Object} parent
-  * @param {?string} fieldName
-  * @param {?string} attribute
-  * @return {Object}
-  * @public
-  */
- static m_findInnerField__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(parent, fieldName, attribute) {
+ /** @return {Object} */
+ static m_findInnerField__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(/** Object */ parent, /** ?string */ fieldName, /** ?string */ attribute) {
   AbstractUiRenderer.$clinit();
   let root = AbstractUiRenderer.m_findRootElement__org_gwtproject_dom_client_Element__java_lang_String(parent, attribute);
   if (!$Equality.$same(parent, root) && !AbstractUiRenderer.m_isRenderedElementSingleChild__org_gwtproject_dom_client_Element(root)) {
@@ -76,13 +61,8 @@ class AbstractUiRenderer extends j_l_Object {
   }
   return elementById;
  }
- /**
-  * @param {Object} parent
-  * @param {?string} attribute
-  * @return {Object}
-  * @public
-  */
- static m_findRootElement__org_gwtproject_dom_client_Element__java_lang_String(parent, attribute) {
+ /** @return {Object} */
+ static m_findRootElement__org_gwtproject_dom_client_Element__java_lang_String(/** Object */ parent, /** ?string */ attribute) {
   AbstractUiRenderer.$clinit();
   let root = AbstractUiRenderer.m_findRootElementOrNull__org_gwtproject_dom_client_Element__java_lang_String(parent, attribute);
   if ($Equality.$same(root, null)) {
@@ -90,14 +70,8 @@ class AbstractUiRenderer extends j_l_Object {
   }
   return root;
  }
- /**
-  * @param {SafeHtml} safeHtml
-  * @param {?string} attributeName
-  * @param {?string} attributeValue
-  * @return {SafeHtml}
-  * @public
-  */
- static m_stampUiRendererAttribute__org_gwtproject_safehtml_shared_SafeHtml__java_lang_String__java_lang_String(safeHtml, attributeName, attributeValue) {
+ /** @return {SafeHtml} */
+ static m_stampUiRendererAttribute__org_gwtproject_safehtml_shared_SafeHtml__java_lang_String__java_lang_String(/** SafeHtml */ safeHtml, /** ?string */ attributeName, /** ?string */ attributeValue) {
   AbstractUiRenderer.$clinit();
   let html = safeHtml.m_asString__();
   let endOfFirstTag = j_l_String.m_indexOf__java_lang_String__java_lang_String(html, ">");
@@ -108,28 +82,17 @@ class AbstractUiRenderer extends j_l_Object {
   html = j_l_String.m_valueOf__java_lang_Object(j_l_String.m_substring__java_lang_String__int__int(html, 0, endOfFirstTag)) + " " + j_l_String.m_valueOf__java_lang_Object(attributeName) + "=\"" + j_l_String.m_valueOf__java_lang_Object(attributeValue) + "\"" + j_l_String.m_valueOf__java_lang_Object(j_l_String.m_substring__java_lang_String__int(html, endOfFirstTag));
   return SafeHtmlUtils.m_fromTrustedString__java_lang_String(html);
  }
- /**
-  * @param {Array<?string>} keys
-  * @param {Array<Integer>} values
-  * @return {HashMap<?string, Integer>}
-  * @public
-  */
- static m_buildDispatchMap__arrayOf_java_lang_String__arrayOf_java_lang_Integer(keys, values) {
+ /** @return {HashMap<?string, Integer>} */
+ static m_buildDispatchMap__arrayOf_java_lang_String__arrayOf_java_lang_Integer(/** Array<?string> */ keys, /** Array<Integer> */ values) {
   AbstractUiRenderer.$clinit();
-  let result = /**@type {!HashMap<?string, Integer>} */ (HashMap.$create__int(keys.length));
+  let result = /**@type {!HashMap<?string, Integer>}*/ (HashMap.$create__int(keys.length));
   for (let i = 0; i < keys.length; i++) {
    result.put(keys[i], values[i]);
   }
   return result;
  }
- /**
-  * @param {HashMap<?string, Integer>} table
-  * @param {Object} root
-  * @param {Object} event
-  * @return {number}
-  * @public
-  */
- static m_computeDispatchEvent__java_util_HashMap__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_NativeEvent(table, root, event) {
+ /** @return {number} */
+ static m_computeDispatchEvent__java_util_HashMap__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_NativeEvent(/** HashMap<?string, Integer> */ table, /** Object */ root, /** Object */ event) {
   AbstractUiRenderer.$clinit();
   let uiId = $Overlay.m_getAttribute__$devirt__org_gwtproject_dom_client_Element__java_lang_String(root, AbstractUiRenderer.f_RENDERED_ATTRIBUTE__org_gwtproject_uibinder_client_impl_AbstractUiRenderer);
   let eventTarget = NativeEvent_$Overlay.m_getEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(event);
@@ -145,25 +108,20 @@ class AbstractUiRenderer extends j_l_Object {
    }
    let key = j_l_String.m_valueOf__java_lang_Object(NativeEvent_$Overlay.m_getType__$devirt__org_gwtproject_dom_client_NativeEvent(event)) + j_l_String.m_valueOf__java_lang_Object(AbstractUiRenderer.f_UI_ID_SEPARATOR__org_gwtproject_uibinder_client_impl_AbstractUiRenderer) + j_l_String.m_valueOf__java_lang_Object(fieldName);
    if (table.containsKey(key)) {
-    return /**@type {Integer} */ ($Casts.$to(table.get(key), Integer)).m_intValue__();
+    return /**@type {Integer}*/ ($Casts.$to(table.get(key), Integer)).m_intValue__();
    }
    cursor = Node_$Overlay.m_getParentElement__$devirt__org_gwtproject_dom_client_Node(cursor);
   }
   if ($Equality.$same(cursor, root)) {
    let key_1 = j_l_String.m_valueOf__java_lang_Object(NativeEvent_$Overlay.m_getType__$devirt__org_gwtproject_dom_client_NativeEvent(event)) + j_l_String.m_valueOf__java_lang_Object(AbstractUiRenderer.f_UI_ID_SEPARATOR__org_gwtproject_uibinder_client_impl_AbstractUiRenderer) + j_l_String.m_valueOf__java_lang_Object(AbstractUiRenderer.f_ROOT_FAKE_NAME__org_gwtproject_uibinder_client_impl_AbstractUiRenderer);
    if (table.containsKey(key_1)) {
-    return /**@type {Integer} */ ($Casts.$to(table.get(key_1), Integer)).m_intValue__();
+    return /**@type {Integer}*/ ($Casts.$to(table.get(key_1), Integer)).m_intValue__();
    }
   }
   return AbstractUiRenderer.f_NO_HANDLER_FOUND__org_gwtproject_uibinder_client_impl_AbstractUiRenderer_;
  }
- /**
-  * @param {Object} parent
-  * @param {?string} attribute
-  * @return {Object}
-  * @public
-  */
- static m_findRootElementOrNull__org_gwtproject_dom_client_Element__java_lang_String(parent, attribute) {
+ /** @return {Object} */
+ static m_findRootElementOrNull__org_gwtproject_dom_client_Element__java_lang_String(/** Object */ parent, /** ?string */ attribute) {
   AbstractUiRenderer.$clinit();
   if ($Equality.$same(parent, null)) {
    throw $Exceptions.toJs(NullPointerException.$create__java_lang_String("parent argument is null"));
@@ -177,13 +135,8 @@ class AbstractUiRenderer extends j_l_Object {
    return null;
   }
  }
- /**
-  * @param {?string} uiId
-  * @param {Object} element
-  * @return {?string}
-  * @public
-  */
- static m_getFieldName__java_lang_String__org_gwtproject_dom_client_Element(uiId, element) {
+ /** @return {?string} */
+ static m_getFieldName__java_lang_String__org_gwtproject_dom_client_Element(/** ?string */ uiId, /** Object */ element) {
   let id = element.id;
   if ($Equality.$same(id, null)) {
    return null;
@@ -191,25 +144,16 @@ class AbstractUiRenderer extends j_l_Object {
   let split = j_l_String.m_indexOf__java_lang_String__java_lang_String(id, AbstractUiRenderer.f_UI_ID_SEPARATOR__org_gwtproject_uibinder_client_impl_AbstractUiRenderer);
   return split != -1 && j_l_String.m_length__java_lang_String(uiId) == split && j_l_String.m_startsWith__java_lang_String__java_lang_String(id, uiId) ? j_l_String.m_substring__java_lang_String__int(id, split + 1) : null;
  }
- /**
-  * @param {Object} rendered
-  * @return {boolean}
-  * @public
-  */
- static m_isAttachedToDom__org_gwtproject_dom_client_Element(rendered) {
+ /** @return {boolean} */
+ static m_isAttachedToDom__org_gwtproject_dom_client_Element(/** Object */ rendered) {
   let body = Document_$Overlay.m_get__().body;
   while (!$Equality.$same(rendered, null) && Node_$Overlay.m_hasParentElement__$devirt__org_gwtproject_dom_client_Node(rendered) && !$Objects.m_equals__java_lang_Object__java_lang_Object(body, rendered)) {
    rendered = Node_$Overlay.m_getParentElement__$devirt__org_gwtproject_dom_client_Node(rendered);
   }
   return $Objects.m_equals__java_lang_Object__java_lang_Object(body, rendered);
  }
- /**
-  * @param {Object} parent
-  * @param {?string} attribute
-  * @return {boolean}
-  * @public
-  */
- static m_isParentOrRenderer__org_gwtproject_dom_client_Element__java_lang_String(parent, attribute) {
+ /** @return {boolean} */
+ static m_isParentOrRenderer__org_gwtproject_dom_client_Element__java_lang_String(/** Object */ parent, /** ?string */ attribute) {
   AbstractUiRenderer.$clinit();
   if ($Equality.$same(parent, null)) {
    return false;
@@ -217,42 +161,25 @@ class AbstractUiRenderer extends j_l_Object {
   let root = AbstractUiRenderer.m_findRootElementOrNull__org_gwtproject_dom_client_Element__java_lang_String(parent, attribute);
   return !$Equality.$same(root, null) && AbstractUiRenderer.m_isAttachedToDom__org_gwtproject_dom_client_Element(root) && AbstractUiRenderer.m_isRenderedElementSingleChild__org_gwtproject_dom_client_Element(root);
  }
- /**
-  * @param {Object} rendered
-  * @return {boolean}
-  * @public
-  */
- static m_isRenderedElementSingleChild__org_gwtproject_dom_client_Element(rendered) {
+ /** @return {boolean} */
+ static m_isRenderedElementSingleChild__org_gwtproject_dom_client_Element(/** Object */ rendered) {
   return Node_$Overlay.m_getChildCount__$devirt__org_gwtproject_dom_client_Node(Node_$Overlay.m_getParentElement__$devirt__org_gwtproject_dom_client_Node(rendered)) == 1;
  }
- /**
-  * @override
-  * @param {Object} parent
-  * @return {boolean}
-  * @public
-  */
- m_isParentOrRenderer__org_gwtproject_dom_client_Element(parent) {
+ /** @override @return {boolean} */
+ m_isParentOrRenderer__org_gwtproject_dom_client_Element(/** Object */ parent) {
   return AbstractUiRenderer.m_isParentOrRenderer__org_gwtproject_dom_client_Element__java_lang_String(parent, AbstractUiRenderer.f_RENDERED_ATTRIBUTE__org_gwtproject_uibinder_client_impl_AbstractUiRenderer);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AbstractUiRenderer.$clinit = () =>{};
   AbstractUiRenderer.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AbstractUiRenderer;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
   Integer = goog.module.get('java.lang.Integer$impl');
@@ -277,13 +204,13 @@ $Util.$setClassMetadata(AbstractUiRenderer, 'org.gwtproject.uibinder.client.impl
 
 UiRenderer.$markImplementor(AbstractUiRenderer);
 
-/** @public {?string} @const */
+/**@const {?string}*/
 AbstractUiRenderer.f_RENDERED_ATTRIBUTE__org_gwtproject_uibinder_client_impl_AbstractUiRenderer = "gwtuirendered";
-/** @public {?string} @const */
+/**@const {?string}*/
 AbstractUiRenderer.f_ROOT_FAKE_NAME__org_gwtproject_uibinder_client_impl_AbstractUiRenderer = "^";
-/** @public {?string} @const */
+/**@const {?string}*/
 AbstractUiRenderer.f_UI_ID_SEPARATOR__org_gwtproject_uibinder_client_impl_AbstractUiRenderer = ":";
-/** @public {number} @const */
+/**@const {number}*/
 AbstractUiRenderer.f_NO_HANDLER_FOUND__org_gwtproject_uibinder_client_impl_AbstractUiRenderer_ = -1;
 
 exports = AbstractUiRenderer; 

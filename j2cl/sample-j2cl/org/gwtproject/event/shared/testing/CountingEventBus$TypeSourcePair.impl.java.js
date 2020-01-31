@@ -10,84 +10,56 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
 class TypeSourcePair extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Type<?>} */
+  /**@type {Type<?>}*/
   this.f_type__org_gwtproject_event_shared_testing_CountingEventBus_TypeSourcePair;
-  /** @public {*} */
+  /**@type {*}*/
   this.f_source__org_gwtproject_event_shared_testing_CountingEventBus_TypeSourcePair;
  }
- /**
-  * @param {Type<?>} type
-  * @param {*} source
-  * @return {!TypeSourcePair}
-  * @public
-  */
- static $create__org_gwtproject_event_shared_Event_Type__java_lang_Object(type, source) {
+ /** @return {!TypeSourcePair} */
+ static $create__org_gwtproject_event_shared_Event_Type__java_lang_Object(/** Type<?> */ type, /** * */ source) {
   TypeSourcePair.$clinit();
   let $instance = new TypeSourcePair();
   $instance.$ctor__org_gwtproject_event_shared_testing_CountingEventBus_TypeSourcePair__org_gwtproject_event_shared_Event_Type__java_lang_Object(type, source);
   return $instance;
  }
- /**
-  * @param {Type<?>} type
-  * @param {*} source
-  * @public
-  */
- $ctor__org_gwtproject_event_shared_testing_CountingEventBus_TypeSourcePair__org_gwtproject_event_shared_Event_Type__java_lang_Object(type, source) {
+ 
+ $ctor__org_gwtproject_event_shared_testing_CountingEventBus_TypeSourcePair__org_gwtproject_event_shared_Event_Type__java_lang_Object(/** Type<?> */ type, /** * */ source) {
   this.$ctor__java_lang_Object__();
   this.f_type__org_gwtproject_event_shared_testing_CountingEventBus_TypeSourcePair = type;
   this.f_source__org_gwtproject_event_shared_testing_CountingEventBus_TypeSourcePair = source;
  }
- /**
-  * @override
-  * @param {*} o
-  * @return {boolean}
-  * @public
-  */
- equals(o) {
+ /** @override @return {boolean} */
+ equals(/** * */ o) {
   if ($Equality.$same(o, this)) {
    return true;
   }
   if (!TypeSourcePair.$isInstance(o)) {
    return false;
   }
-  let pair = /**@type {TypeSourcePair} */ ($Casts.$to(o, TypeSourcePair));
+  let pair = /**@type {TypeSourcePair}*/ ($Casts.$to(o, TypeSourcePair));
   return Objects.m_equals__java_lang_Object__java_lang_Object(this.f_type__org_gwtproject_event_shared_testing_CountingEventBus_TypeSourcePair, pair.f_type__org_gwtproject_event_shared_testing_CountingEventBus_TypeSourcePair) && Objects.m_equals__java_lang_Object__java_lang_Object(this.f_source__org_gwtproject_event_shared_testing_CountingEventBus_TypeSourcePair, pair.f_source__org_gwtproject_event_shared_testing_CountingEventBus_TypeSourcePair);
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  hashCode() {
   let hash = 7;
   hash = (hash * 31) + ($Equality.$same(this.f_type__org_gwtproject_event_shared_testing_CountingEventBus_TypeSourcePair, null) ? 0 : this.f_type__org_gwtproject_event_shared_testing_CountingEventBus_TypeSourcePair.hashCode());
   hash = (hash * 31) + ($Equality.$same(this.f_source__org_gwtproject_event_shared_testing_CountingEventBus_TypeSourcePair, null) ? 0 : $Objects.m_hashCode__java_lang_Object(this.f_source__org_gwtproject_event_shared_testing_CountingEventBus_TypeSourcePair));
   return hash;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TypeSourcePair.$clinit = () =>{};
   TypeSourcePair.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TypeSourcePair;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Objects = goog.module.get('java.util.Objects$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

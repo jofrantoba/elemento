@@ -23,115 +23,68 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @implements {HasCssName}
   */
 class OutlineStyle extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_dom_style_shared_OutlineStyle__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_dom_style_shared_OutlineStyle__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @abstract
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @override @return {?string} */
  m_getCssName__() {}
- /**
-  * @param {string} name
-  * @return {!OutlineStyle}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!OutlineStyle} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   OutlineStyle.$clinit();
   if ($Equality.$same(OutlineStyle.f_namesToValuesMap__org_gwtproject_dom_style_shared_OutlineStyle_, null)) {
    OutlineStyle.f_namesToValuesMap__org_gwtproject_dom_style_shared_OutlineStyle_ = $Enums.createMapFromValues(OutlineStyle.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, OutlineStyle.f_namesToValuesMap__org_gwtproject_dom_style_shared_OutlineStyle_);
  }
- /**
-  * @return {!Array<!OutlineStyle>}
-  * @public
-  */
+ /** @return {!Array<!OutlineStyle>} */
  static m_values__() {
   OutlineStyle.$clinit();
-  return /**@type {!Array<OutlineStyle>} */ ($Arrays.$init([OutlineStyle.$f_NONE__org_gwtproject_dom_style_shared_OutlineStyle, OutlineStyle.$f_DASHED__org_gwtproject_dom_style_shared_OutlineStyle, OutlineStyle.$f_DOTTED__org_gwtproject_dom_style_shared_OutlineStyle, OutlineStyle.$f_DOUBLE__org_gwtproject_dom_style_shared_OutlineStyle, OutlineStyle.$f_GROOVE__org_gwtproject_dom_style_shared_OutlineStyle, OutlineStyle.$f_INSET__org_gwtproject_dom_style_shared_OutlineStyle, OutlineStyle.$f_OUTSET__org_gwtproject_dom_style_shared_OutlineStyle, OutlineStyle.$f_RIDGE__org_gwtproject_dom_style_shared_OutlineStyle, OutlineStyle.$f_SOLID__org_gwtproject_dom_style_shared_OutlineStyle], OutlineStyle));
+  return /**@type {!Array<OutlineStyle>}*/ ($Arrays.$init([OutlineStyle.$f_NONE__org_gwtproject_dom_style_shared_OutlineStyle, OutlineStyle.$f_DASHED__org_gwtproject_dom_style_shared_OutlineStyle, OutlineStyle.$f_DOTTED__org_gwtproject_dom_style_shared_OutlineStyle, OutlineStyle.$f_DOUBLE__org_gwtproject_dom_style_shared_OutlineStyle, OutlineStyle.$f_GROOVE__org_gwtproject_dom_style_shared_OutlineStyle, OutlineStyle.$f_INSET__org_gwtproject_dom_style_shared_OutlineStyle, OutlineStyle.$f_OUTSET__org_gwtproject_dom_style_shared_OutlineStyle, OutlineStyle.$f_RIDGE__org_gwtproject_dom_style_shared_OutlineStyle, OutlineStyle.$f_SOLID__org_gwtproject_dom_style_shared_OutlineStyle], OutlineStyle));
  }
- /**
-  * @return {!OutlineStyle}
-  * @public
-  */
+ /** @return {!OutlineStyle} */
  static get f_NONE__org_gwtproject_dom_style_shared_OutlineStyle() {
   return (OutlineStyle.$clinit(), OutlineStyle.$f_NONE__org_gwtproject_dom_style_shared_OutlineStyle);
  }
- /**
-  * @return {!OutlineStyle}
-  * @public
-  */
+ /** @return {!OutlineStyle} */
  static get f_DASHED__org_gwtproject_dom_style_shared_OutlineStyle() {
   return (OutlineStyle.$clinit(), OutlineStyle.$f_DASHED__org_gwtproject_dom_style_shared_OutlineStyle);
  }
- /**
-  * @return {!OutlineStyle}
-  * @public
-  */
+ /** @return {!OutlineStyle} */
  static get f_DOTTED__org_gwtproject_dom_style_shared_OutlineStyle() {
   return (OutlineStyle.$clinit(), OutlineStyle.$f_DOTTED__org_gwtproject_dom_style_shared_OutlineStyle);
  }
- /**
-  * @return {!OutlineStyle}
-  * @public
-  */
+ /** @return {!OutlineStyle} */
  static get f_DOUBLE__org_gwtproject_dom_style_shared_OutlineStyle() {
   return (OutlineStyle.$clinit(), OutlineStyle.$f_DOUBLE__org_gwtproject_dom_style_shared_OutlineStyle);
  }
- /**
-  * @return {!OutlineStyle}
-  * @public
-  */
+ /** @return {!OutlineStyle} */
  static get f_GROOVE__org_gwtproject_dom_style_shared_OutlineStyle() {
   return (OutlineStyle.$clinit(), OutlineStyle.$f_GROOVE__org_gwtproject_dom_style_shared_OutlineStyle);
  }
- /**
-  * @return {!OutlineStyle}
-  * @public
-  */
+ /** @return {!OutlineStyle} */
  static get f_INSET__org_gwtproject_dom_style_shared_OutlineStyle() {
   return (OutlineStyle.$clinit(), OutlineStyle.$f_INSET__org_gwtproject_dom_style_shared_OutlineStyle);
  }
- /**
-  * @return {!OutlineStyle}
-  * @public
-  */
+ /** @return {!OutlineStyle} */
  static get f_OUTSET__org_gwtproject_dom_style_shared_OutlineStyle() {
   return (OutlineStyle.$clinit(), OutlineStyle.$f_OUTSET__org_gwtproject_dom_style_shared_OutlineStyle);
  }
- /**
-  * @return {!OutlineStyle}
-  * @public
-  */
+ /** @return {!OutlineStyle} */
  static get f_RIDGE__org_gwtproject_dom_style_shared_OutlineStyle() {
   return (OutlineStyle.$clinit(), OutlineStyle.$f_RIDGE__org_gwtproject_dom_style_shared_OutlineStyle);
  }
- /**
-  * @return {!OutlineStyle}
-  * @public
-  */
+ /** @return {!OutlineStyle} */
  static get f_SOLID__org_gwtproject_dom_style_shared_OutlineStyle() {
   return (OutlineStyle.$clinit(), OutlineStyle.$f_SOLID__org_gwtproject_dom_style_shared_OutlineStyle);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   OutlineStyle.$clinit = () =>{};
   OutlineStyle.$loadModules();
@@ -147,17 +100,11 @@ class OutlineStyle extends Enum {
   OutlineStyle.$f_SOLID__org_gwtproject_dom_style_shared_OutlineStyle = $9.$create__java_lang_String__int($Util.$makeEnumName("SOLID"), OutlineStyle.$ordinal$f_SOLID__org_gwtproject_dom_style_shared_OutlineStyle);
   OutlineStyle.f_namesToValuesMap__org_gwtproject_dom_style_shared_OutlineStyle_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof OutlineStyle;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.dom.style.shared.OutlineStyle.$1$impl');
@@ -178,43 +125,43 @@ $Util.$setClassMetadataForEnum(OutlineStyle, 'org.gwtproject.dom.style.shared.Ou
 
 HasCssName.$markImplementor(OutlineStyle);
 
-/** @private {!OutlineStyle} */
+/**@private {!OutlineStyle}*/
 OutlineStyle.$f_NONE__org_gwtproject_dom_style_shared_OutlineStyle;
-/** @private {!OutlineStyle} */
+/**@private {!OutlineStyle}*/
 OutlineStyle.$f_DASHED__org_gwtproject_dom_style_shared_OutlineStyle;
-/** @private {!OutlineStyle} */
+/**@private {!OutlineStyle}*/
 OutlineStyle.$f_DOTTED__org_gwtproject_dom_style_shared_OutlineStyle;
-/** @private {!OutlineStyle} */
+/**@private {!OutlineStyle}*/
 OutlineStyle.$f_DOUBLE__org_gwtproject_dom_style_shared_OutlineStyle;
-/** @private {!OutlineStyle} */
+/**@private {!OutlineStyle}*/
 OutlineStyle.$f_GROOVE__org_gwtproject_dom_style_shared_OutlineStyle;
-/** @private {!OutlineStyle} */
+/**@private {!OutlineStyle}*/
 OutlineStyle.$f_INSET__org_gwtproject_dom_style_shared_OutlineStyle;
-/** @private {!OutlineStyle} */
+/**@private {!OutlineStyle}*/
 OutlineStyle.$f_OUTSET__org_gwtproject_dom_style_shared_OutlineStyle;
-/** @private {!OutlineStyle} */
+/**@private {!OutlineStyle}*/
 OutlineStyle.$f_RIDGE__org_gwtproject_dom_style_shared_OutlineStyle;
-/** @private {!OutlineStyle} */
+/**@private {!OutlineStyle}*/
 OutlineStyle.$f_SOLID__org_gwtproject_dom_style_shared_OutlineStyle;
-/** @public {Map<?string, !OutlineStyle>} */
+/**@type {Map<?string, !OutlineStyle>}*/
 OutlineStyle.f_namesToValuesMap__org_gwtproject_dom_style_shared_OutlineStyle_;
-/** @public {number} @const */
+/**@const {number}*/
 OutlineStyle.$ordinal$f_NONE__org_gwtproject_dom_style_shared_OutlineStyle = 0;
-/** @public {number} @const */
+/**@const {number}*/
 OutlineStyle.$ordinal$f_DASHED__org_gwtproject_dom_style_shared_OutlineStyle = 1;
-/** @public {number} @const */
+/**@const {number}*/
 OutlineStyle.$ordinal$f_DOTTED__org_gwtproject_dom_style_shared_OutlineStyle = 2;
-/** @public {number} @const */
+/**@const {number}*/
 OutlineStyle.$ordinal$f_DOUBLE__org_gwtproject_dom_style_shared_OutlineStyle = 3;
-/** @public {number} @const */
+/**@const {number}*/
 OutlineStyle.$ordinal$f_GROOVE__org_gwtproject_dom_style_shared_OutlineStyle = 4;
-/** @public {number} @const */
+/**@const {number}*/
 OutlineStyle.$ordinal$f_INSET__org_gwtproject_dom_style_shared_OutlineStyle = 5;
-/** @public {number} @const */
+/**@const {number}*/
 OutlineStyle.$ordinal$f_OUTSET__org_gwtproject_dom_style_shared_OutlineStyle = 6;
-/** @public {number} @const */
+/**@const {number}*/
 OutlineStyle.$ordinal$f_RIDGE__org_gwtproject_dom_style_shared_OutlineStyle = 7;
-/** @public {number} @const */
+/**@const {number}*/
 OutlineStyle.$ordinal$f_SOLID__org_gwtproject_dom_style_shared_OutlineStyle = 8;
 
 exports = OutlineStyle; 

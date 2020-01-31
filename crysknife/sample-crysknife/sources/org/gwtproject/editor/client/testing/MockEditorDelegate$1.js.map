@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MockEditorDelegate$1.impl.java.js",
-"lineCount":44,
-"mappings":"A;;;;;;;;;MA2BgC,E;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,+E;EAAAA,iB;;;;;CAAA,kE;EAAAC,iC;;;;;;CACZ,iB;;;;QADY,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":32,
+"mappings":"A;;;;;;;;;MA2BgC,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,+E;EAAAA,iB;;;CAAA,kE;EAAAC,iC;;;CACZ,iB;;QADY,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["MockEditorDelegate.java"],
 "names":["org.gwtproject.editor.client.testing.MockEditorDelegate$1.<synthetic: ctor_js>","org.gwtproject.editor.client.testing.MockEditorDelegate$1.<synthetic: ctor_create>","org.gwtproject.editor.client.testing.MockEditorDelegate$1.<init>","org.gwtproject.editor.client.testing.MockEditorDelegate$1.<clinit>"]
 }

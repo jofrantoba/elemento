@@ -23,31 +23,24 @@ let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
  * @implements {ForIsWidget}
   */
 class HorizontalPanel extends CellPanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {HorizontalAlignmentConstant} */
+  /**@type {HorizontalAlignmentConstant}*/
   this.f_horzAlign__org_gwtproject_user_client_ui_HorizontalPanel_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_tableRow__org_gwtproject_user_client_ui_HorizontalPanel_;
-  /** @public {VerticalAlignmentConstant} */
+  /**@type {VerticalAlignmentConstant}*/
   this.f_vertAlign__org_gwtproject_user_client_ui_HorizontalPanel_;
  }
- /**
-  * @return {!HorizontalPanel}
-  * @public
-  */
+ /** @return {!HorizontalPanel} */
  static $create__() {
   HorizontalPanel.$clinit();
   let $instance = new HorizontalPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_HorizontalPanel__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_HorizontalPanel__() {
   this.$ctor__org_gwtproject_user_client_ui_CellPanel__();
   this.$init___$p_org_gwtproject_user_client_ui_HorizontalPanel();
@@ -56,60 +49,33 @@ class HorizontalPanel extends CellPanel {
   $Overlay.m_setPropertyString__$devirt__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(this.m_getTable__(), "cellSpacing", "0");
   $Overlay.m_setPropertyString__$devirt__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(this.m_getTable__(), "cellPadding", "0");
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override */
+ m_add__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   let td = this.m_createAlignedTd___$p_org_gwtproject_user_client_ui_HorizontalPanel();
   DOM.m_appendChild__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(this.f_tableRow__org_gwtproject_user_client_ui_HorizontalPanel_, td);
   this.m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element(w, td);
  }
- /**
-  * @override
-  * @return {HorizontalAlignmentConstant}
-  * @public
-  */
+ /** @override @return {HorizontalAlignmentConstant} */
  m_getHorizontalAlignment__() {
   return this.f_horzAlign__org_gwtproject_user_client_ui_HorizontalPanel_;
  }
- /**
-  * @override
-  * @return {VerticalAlignmentConstant}
-  * @public
-  */
+ /** @override @return {VerticalAlignmentConstant} */
  m_getVerticalAlignment__() {
   return this.f_vertAlign__org_gwtproject_user_client_ui_HorizontalPanel_;
  }
- /**
-  * @override
-  * @param {IsWidget} w
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_IsWidget__int(w, beforeIndex) {
+ /** @override */
+ m_insert__org_gwtproject_user_client_ui_IsWidget__int(/** IsWidget */ w, /** number */ beforeIndex) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__int(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(w), beforeIndex);
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_Widget__int(w, beforeIndex) {
+ /** @override */
+ m_insert__org_gwtproject_user_client_ui_Widget__int(/** Widget */ w, /** number */ beforeIndex) {
   this.m_checkIndexBoundsForInsertion__int(beforeIndex);
   let td = this.m_createAlignedTd___$p_org_gwtproject_user_client_ui_HorizontalPanel();
   DOM.m_insertChild__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element__int(this.f_tableRow__org_gwtproject_user_client_ui_HorizontalPanel_, td, beforeIndex);
   this.m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element__int__boolean(w, td, beforeIndex, false);
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   let td = DOM.m_getParent__org_gwtproject_dom_client_Element(w.m_getElement__());
   let removed = super.m_remove__org_gwtproject_user_client_ui_Widget(w);
   if (removed) {
@@ -117,88 +83,55 @@ class HorizontalPanel extends CellPanel {
   }
   return removed;
  }
- /**
-  * @override
-  * @param {HorizontalAlignmentConstant} align
-  * @public
-  */
- m_setHorizontalAlignment__org_gwtproject_user_client_ui_HasHorizontalAlignment_HorizontalAlignmentConstant(align) {
+ /** @override */
+ m_setHorizontalAlignment__org_gwtproject_user_client_ui_HasHorizontalAlignment_HorizontalAlignmentConstant(/** HorizontalAlignmentConstant */ align) {
   this.f_horzAlign__org_gwtproject_user_client_ui_HorizontalPanel_ = align;
  }
- /**
-  * @override
-  * @param {VerticalAlignmentConstant} align
-  * @public
-  */
- m_setVerticalAlignment__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant(align) {
+ /** @override */
+ m_setVerticalAlignment__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant(/** VerticalAlignmentConstant */ align) {
   this.f_vertAlign__org_gwtproject_user_client_ui_HorizontalPanel_ = align;
  }
- /**
-  * @override
-  * @param {?string} baseID
-  * @public
-  */
- m_onEnsureDebugId__java_lang_String(baseID) {
+ /** @override */
+ m_onEnsureDebugId__java_lang_String(/** ?string */ baseID) {
   super.m_onEnsureDebugId__java_lang_String(baseID);
   let numChildren = this.m_getWidgetCount__();
   for (let i = 0; i < numChildren; i++) {
    UIObject.m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(this.m_getWidgetTd__org_gwtproject_user_client_ui_Widget_$pp_org_gwtproject_user_client_ui(this.m_getWidget__int(i)), baseID, "" + i);
   }
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_createAlignedTd___$p_org_gwtproject_user_client_ui_HorizontalPanel() {
   let td = DOM.m_createTD__();
   this.m_setCellHorizontalAlignment__org_gwtproject_dom_client_Element__org_gwtproject_user_client_ui_HasHorizontalAlignment_HorizontalAlignmentConstant(td, this.f_horzAlign__org_gwtproject_user_client_ui_HorizontalPanel_);
   this.m_setCellVerticalAlignment__org_gwtproject_dom_client_Element__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant(td, this.f_vertAlign__org_gwtproject_user_client_ui_HorizontalPanel_);
   return td;
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_HorizontalPanel() {
   this.f_horzAlign__org_gwtproject_user_client_ui_HorizontalPanel_ = HasHorizontalAlignment.f_ALIGN_DEFAULT__org_gwtproject_user_client_ui_HasHorizontalAlignment;
   this.f_vertAlign__org_gwtproject_user_client_ui_HorizontalPanel_ = HasVerticalAlignment.f_ALIGN_TOP__org_gwtproject_user_client_ui_HasVerticalAlignment;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HorizontalPanel.$clinit = () =>{};
   HorizontalPanel.$loadModules();
   CellPanel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HorizontalPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.Element.$Overlay$impl');

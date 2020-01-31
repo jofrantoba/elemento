@@ -10,65 +10,32 @@ let RepeatStyle = goog.forwardDeclare('org.gwtproject.resources.client.ImageReso
  * @extends {Annotation}
  */
 class ImageOptions {
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_flipRtl__() {}
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {number} */
  m_height__() {}
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_preventInlining__() {}
- /**
-  * @abstract
-  * @return {RepeatStyle}
-  * @public
-  */
+ /** @abstract @return {RepeatStyle} */
  m_repeatStyle__() {}
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {number} */
  m_width__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ImageOptions.$clinit = () =>{};
   ImageOptions.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_resources_client_ImageResource_ImageOptions = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_resources_client_ImageResource_ImageOptions = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_resources_client_ImageResource_ImageOptions;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

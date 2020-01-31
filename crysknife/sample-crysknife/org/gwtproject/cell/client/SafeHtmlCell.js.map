@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SafeHtmlCell.impl.java.js",
-"lineCount":68,
-"mappings":"A;;;;;;;;;;;;;;;;MAuBa,Y;;;;CAAA,W;EAAAA,Q;;;;;;QAKJ,S;EAAAC,uB;EAAAA,mC;EAAAA,6D;EAAAA,iB;;;;;CAAA,gD;EAAAC,6I;;;;;;;;CAIK,0I,CAAeC,O,EAAkBC,K,EAAuBC,E;EAClEC;GACEA,4DADFA;G;;;;;;;;;;CAVS,mH;EAAAA,iN;;;;;QAAA,O;EAAAC,+B;EAAAA,4B;EAAAA;",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;;;;;;MAuBa,Y;;CAAA,W;EAAAA,Q;;;QAKJ,S;EAAAC,uB;EAAAA,mC;EAAAA,6D;EAAAA,iB;;;CAAA,gD;EAAAC,4I;;;CAIK,0I,gBAAeC,O,kBAAkBC,K,yBAAuBC,E;EAClEC;GACEA,4DADFA;G;;;;CAVS,mH;EAAAA,gN;;;QAAA,O;EAAAC,+B;EAAAA,4B;EAAAA;",
 "sources":["SafeHtmlCell.java"],
 "names":["org.gwtproject.cell.client.SafeHtmlCell.<synthetic: ctor_js>","org.gwtproject.cell.client.SafeHtmlCell.<synthetic: ctor_create>","org.gwtproject.cell.client.SafeHtmlCell.<init>","context","value","sb","org.gwtproject.cell.client.SafeHtmlCell.render","org.gwtproject.cell.client.SafeHtmlCell.<clinit>"]
 }

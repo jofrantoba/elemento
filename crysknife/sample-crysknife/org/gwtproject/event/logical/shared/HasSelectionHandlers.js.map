@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasSelectionHandlers.impl.java.js",
-"lineCount":27,
-"mappings":"A;;;;;;;;;;;;;MAyBiB,oB;;;;;;;CAOK,2E,CAAwCA,O;;;;QAP7C,O;EAAAC,uC;EAAAA;",
+"lineCount":20,
+"mappings":"A;;;;;;;;;;;;;MAyBiB,oB;;CAOK,2E,4BAAwCA,O;;QAP7C,O;EAAAC,uC;EAAAA;",
 "sources":["HasSelectionHandlers.java"],
 "names":["handler","org.gwtproject.event.logical.shared.HasSelectionHandlers.<clinit>"]
 }

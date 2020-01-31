@@ -14,58 +14,29 @@ let Handler = goog.forwardDeclare('org.gwtproject.view.client.SelectionChangeEve
  * @extends {ProvidesKey<T>}
  */
 class SelectionModel {
- /**
-  * @abstract
-  * @override
-  * @param {Handler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addSelectionChangeHandler__org_gwtproject_view_client_SelectionChangeEvent_Handler(handler) {}
- /**
-  * @abstract
-  * @param {T} object
-  * @return {boolean}
-  * @public
-  */
- m_isSelected__java_lang_Object(object) {}
- /**
-  * @abstract
-  * @param {T} object
-  * @param {boolean} selected
-  * @public
-  */
- m_setSelected__java_lang_Object__boolean(object, selected) {}
- /**
-  * @public
-  */
+ /** @abstract @override @return {HandlerRegistration} */
+ m_addSelectionChangeHandler__org_gwtproject_view_client_SelectionChangeEvent_Handler(/** Handler */ handler) {}
+ /** @abstract @return {boolean} */
+ m_isSelected__java_lang_Object(/** T */ object) {}
+ /** @abstract */
+ m_setSelected__java_lang_Object__boolean(/** T */ object, /** boolean */ selected) {}
+ 
  static $clinit() {
   SelectionModel.$clinit = () =>{};
   SelectionModel.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasSelectionChangedHandlers.$markImplementor(classConstructor);
-  ProvidesKey.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_view_client_SelectionModel = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasSelectionChangedHandlers.$markImplementor(ctor);
+  ProvidesKey.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_view_client_SelectionModel = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_view_client_SelectionModel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

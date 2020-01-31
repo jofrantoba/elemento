@@ -12,94 +12,58 @@ let FocusImplStandard = goog.forwardDeclare('org.gwtproject.user.client.ui.impl.
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class FocusImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {FocusImpl}
-  * @public
-  */
+ /** @return {FocusImpl} */
  static m_getFocusImplForPanel__() {
   FocusImpl.$clinit();
   return FocusImpl.f_implPanel__org_gwtproject_user_client_ui_impl_FocusImpl_;
  }
- /**
-  * @return {FocusImpl}
-  * @public
-  */
+ /** @return {FocusImpl} */
  static m_getFocusImplForWidget__() {
   FocusImpl.$clinit();
   return FocusImpl.f_implWidget__org_gwtproject_user_client_ui_impl_FocusImpl_;
  }
- /**
-  * @return {!FocusImpl}
-  * @public
-  */
+ /** @return {!FocusImpl} */
  static $create__() {
   FocusImpl.$clinit();
   let $instance = new FocusImpl();
   $instance.$ctor__org_gwtproject_user_client_ui_impl_FocusImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_impl_FocusImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {Object} elem
-  * @public
-  */
- m_blur__org_gwtproject_dom_client_Element(elem) {
+ 
+ m_blur__org_gwtproject_dom_client_Element(/** Object */ elem) {
   elem.blur();
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_createFocusable__() {
-  let e = /**@type {Object} */ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Document_$Overlay.m_createDivElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__())), Element_$Overlay));
+  let e = /**@type {Object}*/ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Document_$Overlay.m_createDivElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__())), Element_$Overlay));
   e.tabIndex = 0;
   return e;
  }
- /**
-  * @param {Object} elem
-  * @public
-  */
- m_focus__org_gwtproject_dom_client_Element(elem) {
+ 
+ m_focus__org_gwtproject_dom_client_Element(/** Object */ elem) {
   elem.focus();
  }
- /**
-  * @param {Object} elem
-  * @return {number}
-  * @public
-  */
- m_getTabIndex__org_gwtproject_dom_client_Element(elem) {
+ /** @return {number} */
+ m_getTabIndex__org_gwtproject_dom_client_Element(/** Object */ elem) {
   return Element_$Overlay.m_getTabIndex__$devirt__org_gwtproject_dom_client_Element(elem);
  }
- /**
-  * @param {Object} elem
-  * @param {number} key
-  * @public
-  */
- m_setAccessKey__org_gwtproject_dom_client_Element__char(elem, key) {
-  JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object} */ (elem), "accessKey", Character.m_toString__char(key));
+ 
+ m_setAccessKey__org_gwtproject_dom_client_Element__char(/** Object */ elem, /** number */ key) {
+  JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object}*/ (elem), "accessKey", Character.m_toString__char(key));
  }
- /**
-  * @param {Object} elem
-  * @param {number} index
-  * @public
-  */
- m_setTabIndex__org_gwtproject_dom_client_Element__int(elem, index) {
+ 
+ m_setTabIndex__org_gwtproject_dom_client_Element__int(/** Object */ elem, /** number */ index) {
   elem.tabIndex = index;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   FocusImpl.$clinit = () =>{};
   FocusImpl.$loadModules();
@@ -107,17 +71,11 @@ class FocusImpl extends j_l_Object {
   FocusImpl.f_implPanel__org_gwtproject_user_client_ui_impl_FocusImpl_ = FocusImpl.$create__();
   FocusImpl.f_implWidget__org_gwtproject_user_client_ui_impl_FocusImpl_ = FocusImplStandard.$isInstance(FocusImpl.f_implPanel__org_gwtproject_user_client_ui_impl_FocusImpl_) ? FocusImpl.$create__() : FocusImpl.f_implPanel__org_gwtproject_user_client_ui_impl_FocusImpl_;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof FocusImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Character = goog.module.get('java.lang.Character$impl');
   JsPropertyMap_$Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');
@@ -131,9 +89,9 @@ class FocusImpl extends j_l_Object {
 }
 $Util.$setClassMetadata(FocusImpl, 'org.gwtproject.user.client.ui.impl.FocusImpl');
 
-/** @public {FocusImpl} */
+/**@type {FocusImpl}*/
 FocusImpl.f_implPanel__org_gwtproject_user_client_ui_impl_FocusImpl_;
-/** @public {FocusImpl} */
+/**@type {FocusImpl}*/
 FocusImpl.f_implWidget__org_gwtproject_user_client_ui_impl_FocusImpl_;
 
 exports = FocusImpl; 

@@ -14,79 +14,47 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {ModBuilder}
   */
 class DomModBuilder extends DomElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @return {!DomModBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ /** @return {!DomModBuilder} */
+ static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   DomModBuilder.$clinit();
   let $instance = new DomModBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_client_DomModBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_client_DomModBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_client_DomModBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_client_DomElementBuilderBase__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
  }
- /**
-  * @override
-  * @param {SafeUri} cite
-  * @return {ModBuilder}
-  * @public
-  */
- m_cite__org_gwtproject_safehtml_shared_SafeUri(cite) {
-  $Overlay.m_setCite__$devirt__org_gwtproject_dom_client_ModElement__org_gwtproject_safehtml_shared_SafeUri(/**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)), cite);
+ /** @override @return {ModBuilder} */
+ m_cite__org_gwtproject_safehtml_shared_SafeUri(/** SafeUri */ cite) {
+  $Overlay.m_setCite__$devirt__org_gwtproject_dom_client_ModElement__org_gwtproject_safehtml_shared_SafeUri(/**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)), cite);
   return this;
  }
- /**
-  * @override
-  * @param {?string} cite
-  * @return {ModBuilder}
-  * @public
-  */
- m_cite__java_lang_String(cite) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).cite = cite;
+ /** @override @return {ModBuilder} */
+ m_cite__java_lang_String(/** ?string */ cite) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).cite = cite;
   return this;
  }
- /**
-  * @override
-  * @param {?string} dateTime
-  * @return {ModBuilder}
-  * @public
-  */
- m_dateTime__java_lang_String(dateTime) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).dateTime = dateTime;
+ /** @override @return {ModBuilder} */
+ m_dateTime__java_lang_String(/** ?string */ dateTime) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).dateTime = dateTime;
   return this;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomModBuilder.$clinit = () =>{};
   DomModBuilder.$loadModules();
   DomElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomModBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('org.gwtproject.dom.client.ModElement.$Overlay$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

@@ -16,183 +16,113 @@ let Set = goog.forwardDeclare('java.util.Set$impl');
  * @implements {State<T>}
   */
 class DefaultState extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {number} */
+  /**@type {number}*/
   this.f_keyboardSelectedRow__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState = 0;
-  /** @public {T} */
+  /**@type {T}*/
   this.f_keyboardSelectedRowValue__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_pageSize__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_pageStart__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_rowCount__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState = 0;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_rowCountIsExact__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState = false;
-  /** @public {List<T>} */
+  /**@type {List<T>}*/
   this.f_rowData__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState;
-  /** @public {Set<Integer>} */
+  /**@type {Set<Integer>}*/
   this.f_selectedRows__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState;
-  /** @public {T} */
+  /**@type {T}*/
   this.f_selectedValue__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_viewTouched__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState = false;
  }
- /**
-  * @template T
-  * @param {number} pageSize
-  * @return {!DefaultState<T>}
-  * @public
-  */
- static $create__int(pageSize) {
+ /** @template T @return {!DefaultState<T>} */
+ static $create__int(/** number */ pageSize) {
   DefaultState.$clinit();
   let $instance = new DefaultState();
   $instance.$ctor__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState__int(pageSize);
   return $instance;
  }
- /**
-  * @param {number} pageSize
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState__int(pageSize) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState__int(/** number */ pageSize) {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState();
   this.f_pageSize__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState = pageSize;
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getKeyboardSelectedRow__() {
   return this.f_keyboardSelectedRow__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState;
  }
- /**
-  * @override
-  * @return {T}
-  * @public
-  */
+ /** @override @return {T} */
  m_getKeyboardSelectedRowValue__() {
   return this.f_keyboardSelectedRowValue__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState;
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getPageSize__() {
   return this.f_pageSize__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState;
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getPageStart__() {
   return this.f_pageStart__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState;
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getRowCount__() {
   return this.f_rowCount__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState;
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getRowDataSize__() {
   return this.f_rowData__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState.size();
  }
- /**
-  * @override
-  * @param {number} index
-  * @return {T}
-  * @public
-  */
- m_getRowDataValue__int(index) {
+ /** @override @return {T} */
+ m_getRowDataValue__int(/** number */ index) {
   return this.f_rowData__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState.getAtIndex(index);
  }
- /**
-  * @override
-  * @return {List<T>}
-  * @public
-  */
+ /** @override @return {List<T>} */
  m_getRowDataValues__() {
-  return /**@type {List<T>} */ (Collections.m_unmodifiableList__java_util_List(this.f_rowData__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState));
+  return /**@type {List<T>}*/ (Collections.m_unmodifiableList__java_util_List(this.f_rowData__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState));
  }
- /**
-  * @override
-  * @return {T}
-  * @public
-  */
+ /** @override @return {T} */
  m_getSelectedValue__() {
   return this.f_selectedValue__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isRowCountExact__() {
   return this.f_rowCountIsExact__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState;
  }
- /**
-  * @override
-  * @param {number} index
-  * @return {boolean}
-  * @public
-  */
- m_isRowSelected__int(index) {
+ /** @override @return {boolean} */
+ m_isRowSelected__int(/** number */ index) {
   return this.f_selectedRows__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState.contains(Integer.m_valueOf__int(index));
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isViewTouched__() {
   return this.f_viewTouched__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState;
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState() {
   this.f_keyboardSelectedRow__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState = 0;
   this.f_keyboardSelectedRowValue__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState = null;
   this.f_pageStart__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState = 0;
   this.f_rowCount__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState = 0;
   this.f_rowCountIsExact__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState = false;
-  this.f_rowData__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState = /**@type {!ArrayList<T>} */ (ArrayList.$create__());
-  this.f_selectedRows__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState = /**@type {!HashSet<Integer>} */ (HashSet.$create__());
+  this.f_rowData__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState = /**@type {!ArrayList<T>}*/ (ArrayList.$create__());
+  this.f_selectedRows__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState = /**@type {!HashSet<Integer>}*/ (HashSet.$create__());
   this.f_selectedValue__org_gwtproject_user_cellview_client_HasDataPresenter_DefaultState = null;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DefaultState.$clinit = () =>{};
   DefaultState.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DefaultState;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Integer = goog.module.get('java.lang.Integer$impl');
   ArrayList = goog.module.get('java.util.ArrayList$impl');

@@ -20,167 +20,103 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {Resources}
   */
 class Tree__ResourcesImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!Tree__ResourcesImpl}
-  * @public
-  */
+ /** @return {!Tree__ResourcesImpl} */
  static $create__() {
   Tree__ResourcesImpl.$clinit();
   let $instance = new Tree__ResourcesImpl();
   $instance.$ctor__org_gwtproject_user_client_ui_Tree_ResourcesImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_Tree_ResourcesImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @public
-  */
+ 
  m_treeClosedInitializer___$p_org_gwtproject_user_client_ui_Tree_ResourcesImpl() {
   Tree__ResourcesImpl.$f_treeClosed__org_gwtproject_user_client_ui_Tree_ResourcesImpl_ = ImageResourcePrototype.$create__java_lang_String__org_gwtproject_safehtml_shared_SafeUri__int__int__int__int__boolean__boolean("treeClosed", UriUtils.m_fromTrustedString__java_lang_String(Tree__ResourcesImpl.f_externalImage__org_gwtproject_user_client_ui_Tree_ResourcesImpl_), 0, 0, 16, 16, false, false);
  }
- /**
-  * @override
-  * @return {ImageResource}
-  * @public
-  */
+ /** @override @return {ImageResource} */
  m_treeClosed__() {
   return treeClosedInitializer.m_get__();
  }
- /**
-  * @public
-  */
+ 
  m_treeLeafInitializer___$p_org_gwtproject_user_client_ui_Tree_ResourcesImpl() {
   Tree__ResourcesImpl.$f_treeLeaf__org_gwtproject_user_client_ui_Tree_ResourcesImpl_ = ImageResourcePrototype.$create__java_lang_String__org_gwtproject_safehtml_shared_SafeUri__int__int__int__int__boolean__boolean("treeLeaf", UriUtils.m_fromTrustedString__java_lang_String(Tree__ResourcesImpl.f_externalImage0__org_gwtproject_user_client_ui_Tree_ResourcesImpl_), 0, 0, 16, 16, false, false);
  }
- /**
-  * @override
-  * @return {ImageResource}
-  * @public
-  */
+ /** @override @return {ImageResource} */
  m_treeLeaf__() {
   return treeLeafInitializer.m_get__();
  }
- /**
-  * @public
-  */
+ 
  m_treeOpenInitializer___$p_org_gwtproject_user_client_ui_Tree_ResourcesImpl() {
   Tree__ResourcesImpl.$f_treeOpen__org_gwtproject_user_client_ui_Tree_ResourcesImpl_ = ImageResourcePrototype.$create__java_lang_String__org_gwtproject_safehtml_shared_SafeUri__int__int__int__int__boolean__boolean("treeOpen", UriUtils.m_fromTrustedString__java_lang_String(Tree__ResourcesImpl.f_externalImage1__org_gwtproject_user_client_ui_Tree_ResourcesImpl_), 0, 0, 16, 16, false, false);
  }
- /**
-  * @override
-  * @return {ImageResource}
-  * @public
-  */
+ /** @override @return {ImageResource} */
  m_treeOpen__() {
   return treeOpenInitializer.m_get__();
  }
- /**
-  * @return {Array<ResourcePrototype>}
-  * @public
-  */
+ /** @return {Array<ResourcePrototype>} */
  m_getResources__() {
-  return /**@type {!Array<ResourcePrototype>} */ ($Arrays.$init([this.m_treeClosed__(), this.m_treeLeaf__(), this.m_treeOpen__()], ResourcePrototype));
+  return /**@type {!Array<ResourcePrototype>}*/ ($Arrays.$init([this.m_treeClosed__(), this.m_treeLeaf__(), this.m_treeOpen__()], ResourcePrototype));
  }
- /**
-  * @param {?string} name
-  * @return {ResourcePrototype}
-  * @public
-  */
- m_getResource__java_lang_String(name) {
+ /** @return {ResourcePrototype} */
+ m_getResource__java_lang_String(/** ?string */ name) {
   if ($Equality.$same(Tree__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_Tree_ResourcesImpl_, null)) {
-   Tree__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_Tree_ResourcesImpl_ = /**@type {!HashMap<?string, ResourcePrototype>} */ (HashMap.$create__());
+   Tree__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_Tree_ResourcesImpl_ = /**@type {!HashMap<?string, ResourcePrototype>}*/ (HashMap.$create__());
    Tree__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_Tree_ResourcesImpl_.put("treeClosed", this.m_treeClosed__());
    Tree__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_Tree_ResourcesImpl_.put("treeLeaf", this.m_treeLeaf__());
    Tree__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_Tree_ResourcesImpl_.put("treeOpen", this.m_treeOpen__());
   }
-  return /**@type {ResourcePrototype} */ ($Casts.$to(Tree__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_Tree_ResourcesImpl_.get(name), ResourcePrototype));
+  return /**@type {ResourcePrototype}*/ ($Casts.$to(Tree__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_Tree_ResourcesImpl_.get(name), ResourcePrototype));
  }
- /**
-  * @return {Tree__ResourcesImpl}
-  * @public
-  */
+ /** @return {Tree__ResourcesImpl} */
  static get f__instance0__org_gwtproject_user_client_ui_Tree_ResourcesImpl_() {
   return (Tree__ResourcesImpl.$clinit(), Tree__ResourcesImpl.$f__instance0__org_gwtproject_user_client_ui_Tree_ResourcesImpl_);
  }
- /**
-  * @param {Tree__ResourcesImpl} value
-  * @public
-  */
- static set f__instance0__org_gwtproject_user_client_ui_Tree_ResourcesImpl_(value) {
+ 
+ static set f__instance0__org_gwtproject_user_client_ui_Tree_ResourcesImpl_(/** Tree__ResourcesImpl */ value) {
   (Tree__ResourcesImpl.$clinit(), Tree__ResourcesImpl.$f__instance0__org_gwtproject_user_client_ui_Tree_ResourcesImpl_ = value);
  }
- /**
-  * @return {ImageResource}
-  * @public
-  */
+ /** @return {ImageResource} */
  static get f_treeClosed__org_gwtproject_user_client_ui_Tree_ResourcesImpl_() {
   return (Tree__ResourcesImpl.$clinit(), Tree__ResourcesImpl.$f_treeClosed__org_gwtproject_user_client_ui_Tree_ResourcesImpl_);
  }
- /**
-  * @param {ImageResource} value
-  * @public
-  */
- static set f_treeClosed__org_gwtproject_user_client_ui_Tree_ResourcesImpl_(value) {
+ 
+ static set f_treeClosed__org_gwtproject_user_client_ui_Tree_ResourcesImpl_(/** ImageResource */ value) {
   (Tree__ResourcesImpl.$clinit(), Tree__ResourcesImpl.$f_treeClosed__org_gwtproject_user_client_ui_Tree_ResourcesImpl_ = value);
  }
- /**
-  * @return {ImageResource}
-  * @public
-  */
+ /** @return {ImageResource} */
  static get f_treeLeaf__org_gwtproject_user_client_ui_Tree_ResourcesImpl_() {
   return (Tree__ResourcesImpl.$clinit(), Tree__ResourcesImpl.$f_treeLeaf__org_gwtproject_user_client_ui_Tree_ResourcesImpl_);
  }
- /**
-  * @param {ImageResource} value
-  * @public
-  */
- static set f_treeLeaf__org_gwtproject_user_client_ui_Tree_ResourcesImpl_(value) {
+ 
+ static set f_treeLeaf__org_gwtproject_user_client_ui_Tree_ResourcesImpl_(/** ImageResource */ value) {
   (Tree__ResourcesImpl.$clinit(), Tree__ResourcesImpl.$f_treeLeaf__org_gwtproject_user_client_ui_Tree_ResourcesImpl_ = value);
  }
- /**
-  * @return {ImageResource}
-  * @public
-  */
+ /** @return {ImageResource} */
  static get f_treeOpen__org_gwtproject_user_client_ui_Tree_ResourcesImpl_() {
   return (Tree__ResourcesImpl.$clinit(), Tree__ResourcesImpl.$f_treeOpen__org_gwtproject_user_client_ui_Tree_ResourcesImpl_);
  }
- /**
-  * @param {ImageResource} value
-  * @public
-  */
- static set f_treeOpen__org_gwtproject_user_client_ui_Tree_ResourcesImpl_(value) {
+ 
+ static set f_treeOpen__org_gwtproject_user_client_ui_Tree_ResourcesImpl_(/** ImageResource */ value) {
   (Tree__ResourcesImpl.$clinit(), Tree__ResourcesImpl.$f_treeOpen__org_gwtproject_user_client_ui_Tree_ResourcesImpl_ = value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Tree__ResourcesImpl.$clinit = () =>{};
   Tree__ResourcesImpl.$loadModules();
   j_l_Object.$clinit();
   Tree__ResourcesImpl.$f__instance0__org_gwtproject_user_client_ui_Tree_ResourcesImpl_ = Tree__ResourcesImpl.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Tree__ResourcesImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   HashMap = goog.module.get('java.util.HashMap$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -199,21 +135,21 @@ $Util.$setClassMetadata(Tree__ResourcesImpl, 'org.gwtproject.user.client.ui.Tree
 
 Resources.$markImplementor(Tree__ResourcesImpl);
 
-/** @private {Tree__ResourcesImpl} */
+/**@private {Tree__ResourcesImpl}*/
 Tree__ResourcesImpl.$f__instance0__org_gwtproject_user_client_ui_Tree_ResourcesImpl_;
-/** @public {HashMap<?string, ResourcePrototype>} */
+/**@type {HashMap<?string, ResourcePrototype>}*/
 Tree__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_Tree_ResourcesImpl_;
-/** @public {?string} @const */
+/**@const {?string}*/
 Tree__ResourcesImpl.f_externalImage__org_gwtproject_user_client_ui_Tree_ResourcesImpl_ = "data:image/gif;base64,R0lGODlhEAAQAIQaAFhorldnrquz1mFxsvz9/vr6/M3Q2ZGbw5mixvb3+Gp5t2Nys77F4GRzs9ze4mt6uGV1s8/R2VZnrl5usFdortPV2/P09+3u8eXm6lZnrf///wAAzP///////////////yH5BAEAAB8ALAAAAAAQABAAAAVE4CeOZGmeaKquo5K974MuTKHdhDCcgOVvvoTkRLkYN8bL0ETBbJ5PTIaIqW6q0lPAYcVOTRNEpEI2HCYoCOzVYLnf7hAAOw==";
-/** @public {?string} @const */
+/**@const {?string}*/
 Tree__ResourcesImpl.f_externalImage0__org_gwtproject_user_client_ui_Tree_ResourcesImpl_ = "data:image/gif;base64,R0lGODlhEAAQAJEAAP///wAAAP///wAAACH5BAEAAAIALAAAAAAQABAAAAIOlI+py+0Po5y02ouzPgUAOw==";
-/** @public {?string} @const */
+/**@const {?string}*/
 Tree__ResourcesImpl.f_externalImage1__org_gwtproject_user_client_ui_Tree_ResourcesImpl_ = "data:image/gif;base64,R0lGODlhEAAQAIQaAFhorldnrquz1mFxsvz9/vr6/M3Q2ZGbw5mixvb3+Gp5t2Nys77F4GRzs9ze4mt6uGV1s8/R2VZnrl5usFdortPV2/P09+3u8eXm6lZnrf///wAAzP///////////////yH5BAEAAB8ALAAAAAAQABAAAAVD4CeOZGmeaKquo5K974MuTKHdhDCcgOVfvoTkRLkYj5ehiYLZOJ2YDBFDvVCjp4CjepWaJohIZWw4TFAQ2KvBarvbIQA7";
-/** @private {ImageResource} */
+/**@private {ImageResource}*/
 Tree__ResourcesImpl.$f_treeClosed__org_gwtproject_user_client_ui_Tree_ResourcesImpl_;
-/** @private {ImageResource} */
+/**@private {ImageResource}*/
 Tree__ResourcesImpl.$f_treeLeaf__org_gwtproject_user_client_ui_Tree_ResourcesImpl_;
-/** @private {ImageResource} */
+/**@private {ImageResource}*/
 Tree__ResourcesImpl.$f_treeOpen__org_gwtproject_user_client_ui_Tree_ResourcesImpl_;
 
 exports = Tree__ResourcesImpl; 

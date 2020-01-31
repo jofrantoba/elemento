@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"UmbrellaException.impl.java.js",
-"lineCount":145,
-"mappings":"A;;;;;;;;;;;;MA0Ba,iB;;;;CAAA,W;EAAAA,Q;EAAAA;OAiCY,wDAjCZA,C;;;;;;;QAQgB,0B,CAAyBC,M;EAAzBC,4B;EACzBA,mH;;;;;;;QAGsB,4B,CAA2BD,M;EAA3BE,4B;EACtBA,IAAIC,KAAJD,iB;EACAA;GACEA,YADFA;G;EAIAA,IAAcE,CAAdF,8P;EACAA,IAAQG,KAARH,Q;EACAA;GAAAA,IAAeI,CAAfJ,yEAAAA;GACEA;IACEA,cADFA;;IAGEA,mCAHFA;IADFA;GAMEA,iDANFA;G;EASAA,oB;;;;;;;;QAMK,sB,CAAiCF,M;EAAjCO,4B;EAAAA,wC;EAAAA,sF;EAAAA,mF;EAAAA,iB;;;;;;;CAAA,mE,CAAiCP,M;EACtCQ,4L;EACAA,uE;EACAA,IAAIC,CAAJD,K;EACAA;GAAAA,IAAeE,KAAfF,yEAAAA;GACEA;IAEEA,SAFFA;IADFA;GAKEA,iDALFA;G;;;;;;;QAUQ,S;EAAAD,4B;EAAAA,wC;EAAAA,mE;EAAAA,mF;EAAAA,iB;;;;;;CAAA,sD;EAERC,sI;EACAA,0H;;;;;;CAQoB,a;EACpBG,qE;;;;;QA7DS,O;EAAAC,oC;EAAAA,iC;EAAAA,2B;;;;;;;;;;;;;;;;;;;;;;;;AAGX;kBAAoB,yDAApB,0B;AAGA;kBAAoB,oDAApB;",
+"lineCount":112,
+"mappings":"A;;;;;;;;;;;;MA0Ba,iB;;CAAA,W;EAAAA,Q;EAAAA;OAiCY,wDAjCZA,C;;;QAQgB,0B,uBAAyBC,M;EAAzBC,4B;EACzBA,kH;;;QAGsB,4B,uBAA2BD,M;EAA3BE,4B;EACtBA,IAAIC,KAAJD,iB;EACAA;GACEA,YADFA;G;EAIAA,IAAcE,CAAdF,8P;EACAA,IAAQG,KAARH,Q;EACAA;GAAAA,IAAeI,CAAfJ,wEAAAA;GACEA;IACEA,cADFA;;IAGEA,mCAHFA;IADFA;GAMEA,iDANFA;G;EASAA,oB;;;;QAMK,sB,uBAAiCF,M;EAAjCO,4B;EAAAA,wC;EAAAA,sF;EAAAA,mF;EAAAA,iB;;;;CAAA,mE,uBAAiCP,M;EACtCQ,4L;EACAA,uE;EACAA,IAAIC,CAAJD,K;EACAA;GAAAA,IAAeE,KAAfF,wEAAAA;GACEA;IAEEA,SAFFA;IADFA;GAKEA,iDALFA;G;;;;QAUQ,S;EAAAD,4B;EAAAA,wC;EAAAA,mE;EAAAA,mF;EAAAA,iB;;;;CAAA,sD;EAERC,sI;EACAA,yH;;;CAQoB,a;EACpBG,qE;;;QA7DS,O;EAAAC,oC;EAAAA,iC;EAAAA,2B;;;;;;;;;;;;;;;;;;AAGX;kBAAoB,yDAApB,0B;AAGA;kBAAoB,oDAApB;",
 "sources":["UmbrellaException.java"],
 "names":["org.gwtproject.event.shared.UmbrellaException.<synthetic: ctor_js>","causes","org.gwtproject.event.shared.UmbrellaException.makeCause","org.gwtproject.event.shared.UmbrellaException.makeMessage","count","b","first","t","org.gwtproject.event.shared.UmbrellaException.<synthetic: ctor_create>","org.gwtproject.event.shared.UmbrellaException.<init>","i","cause","org.gwtproject.event.shared.UmbrellaException.getCauses","org.gwtproject.event.shared.UmbrellaException.<clinit>"]
 }

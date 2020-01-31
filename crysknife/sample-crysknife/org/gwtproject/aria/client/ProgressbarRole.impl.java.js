@@ -8,35 +8,22 @@ const RangeRole = goog.require('org.gwtproject.aria.client.RangeRole$impl');
  * @extends {RangeRole}
  */
 class ProgressbarRole {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ProgressbarRole.$clinit = () =>{};
   ProgressbarRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  RangeRole.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_ProgressbarRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  RangeRole.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_ProgressbarRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_ProgressbarRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

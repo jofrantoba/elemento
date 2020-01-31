@@ -9,50 +9,28 @@ let $LambdaAdaptor = goog.forwardDeclare('javax.enterprise.event.Event.$LambdaAd
  * @template T
  */
 class Event {
- /**
-  * @abstract
-  * @param {T} var1
-  * @public
-  */
- m_fire__java_lang_Object(var1) {}
- /**
-  * @template T
-  * @param {?function(T):void} fn
-  * @return {Event<T>}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_fire__java_lang_Object(/** T */ var1) {}
+ /** @template T @return {Event<T>} */
+ static $adapt(/** ?function(T):void */ fn) {
   Event.$clinit();
-  return /**@type {!$LambdaAdaptor<T>} */ (new $LambdaAdaptor(fn));
+  return /**@type {!$LambdaAdaptor<T>}*/ (new $LambdaAdaptor(fn));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Event.$clinit = () =>{};
   Event.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__javax_enterprise_event_Event = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__javax_enterprise_event_Event = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__javax_enterprise_event_Event;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('javax.enterprise.event.Event.$LambdaAdaptor$impl');
  }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SafeImageCell$Template$$LambdaAdaptor.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;;MAoCY,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gF;EAAAA,gJ;;;;;;CAAA,sI;EAAAC,iC;EAAAA,mF;;;;;;;CAAA,6C;EAAAC,iD;EAAAA,oH;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":36,
+"mappings":"A;;;;;;;;;;;;MAoCY,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gF;EAAAA,gJ;;;CAAA,sI;EAAAC,iC;EAAAA,mF;;;CAAA,6C;EAAAC,iD;EAAAA,oH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["SafeImageCell.java"],
 "names":["org.gwtproject.cell.client.SafeImageCell$Template$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.cell.client.SafeImageCell$Template$$LambdaAdaptor.<init>","org.gwtproject.cell.client.SafeImageCell$Template$$LambdaAdaptor.img","org.gwtproject.cell.client.SafeImageCell$Template$$LambdaAdaptor.<clinit>"]
 }

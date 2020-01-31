@@ -14,96 +14,37 @@ let SafeHtmlBuilder = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHt
  * @template C
  */
 class Cell {
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_dependsOnSelection__() {}
- /**
-  * @abstract
-  * @return {Set<?string>}
-  * @public
-  */
+ /** @abstract @return {Set<?string>} */
  m_getConsumedEvents__() {}
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_handlesSelection__() {}
- /**
-  * @abstract
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {C} value
-  * @return {boolean}
-  * @public
-  */
- m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(context, parent, value) {}
- /**
-  * @abstract
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {C} value
-  * @param {Object} event
-  * @param {ValueUpdater<C>} valueUpdater
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, parent, value, event, valueUpdater) {}
- /**
-  * @abstract
-  * @param {Context} context
-  * @param {C} value
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, value, sb) {}
- /**
-  * @abstract
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {C} value
-  * @return {boolean}
-  * @public
-  */
- m_resetFocus__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(context, parent, value) {}
- /**
-  * @abstract
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {C} value
-  * @public
-  */
- m_setValue__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(context, parent, value) {}
- /**
-  * @public
-  */
+ /** @abstract @return {boolean} */
+ m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(/** Context */ context, /** Object */ parent, /** C */ value) {}
+ /** @abstract */
+ m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(/** Context */ context, /** Object */ parent, /** C */ value, /** Object */ event, /** ValueUpdater<C> */ valueUpdater) {}
+ /** @abstract */
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ context, /** C */ value, /** SafeHtmlBuilder */ sb) {}
+ /** @abstract @return {boolean} */
+ m_resetFocus__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(/** Context */ context, /** Object */ parent, /** C */ value) {}
+ /** @abstract */
+ m_setValue__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(/** Context */ context, /** Object */ parent, /** C */ value) {}
+ 
  static $clinit() {
   Cell.$clinit = () =>{};
   Cell.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_cell_client_Cell = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_cell_client_Cell = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_cell_client_Cell;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

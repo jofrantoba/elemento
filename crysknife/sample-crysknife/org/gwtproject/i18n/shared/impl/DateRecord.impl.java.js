@@ -10,51 +10,44 @@ let $LongUtils = goog.forwardDeclare('vmbootstrap.LongUtils$impl');
 let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
 
 class DateRecord extends Date {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {number} */
+  /**@type {number}*/
   this.f_era__org_gwtproject_i18n_shared_impl_DateRecord_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_year__org_gwtproject_i18n_shared_impl_DateRecord_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_month__org_gwtproject_i18n_shared_impl_DateRecord_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_dayOfMonth__org_gwtproject_i18n_shared_impl_DateRecord_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_ampm__org_gwtproject_i18n_shared_impl_DateRecord_ = 0;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_midnightIs24__org_gwtproject_i18n_shared_impl_DateRecord_ = false;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_hours__org_gwtproject_i18n_shared_impl_DateRecord_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_minutes__org_gwtproject_i18n_shared_impl_DateRecord_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_seconds__org_gwtproject_i18n_shared_impl_DateRecord_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_milliseconds__org_gwtproject_i18n_shared_impl_DateRecord_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_tzOffset__org_gwtproject_i18n_shared_impl_DateRecord_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_dayOfWeek__org_gwtproject_i18n_shared_impl_DateRecord_ = 0;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_ambiguousYear__org_gwtproject_i18n_shared_impl_DateRecord_ = false;
  }
- /**
-  * @return {!DateRecord}
-  * @public
-  */
+ /** @return {!DateRecord} */
  static $create__() {
   DateRecord.$clinit();
   let $instance = new DateRecord();
   $instance.$ctor__org_gwtproject_i18n_shared_impl_DateRecord__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_i18n_shared_impl_DateRecord__() {
   this.$ctor__java_util_Date__();
   this.f_era__org_gwtproject_i18n_shared_impl_DateRecord_ = -1;
@@ -71,13 +64,8 @@ class DateRecord extends Date {
   this.f_dayOfWeek__org_gwtproject_i18n_shared_impl_DateRecord_ = -1;
   this.f_tzOffset__org_gwtproject_i18n_shared_impl_DateRecord_ = Integer.f_MIN_VALUE__java_lang_Integer;
  }
- /**
-  * @param {Date} date
-  * @param {boolean} strict
-  * @return {boolean}
-  * @public
-  */
- m_calcDate__java_util_Date__boolean(date, strict) {
+ /** @return {boolean} */
+ m_calcDate__java_util_Date__boolean(/** Date */ date, /** boolean */ strict) {
   if (this.f_era__org_gwtproject_i18n_shared_impl_DateRecord_ == 0 && this.f_year__org_gwtproject_i18n_shared_impl_DateRecord_ > 0) {
    this.f_year__org_gwtproject_i18n_shared_impl_DateRecord_ = -(this.f_year__org_gwtproject_i18n_shared_impl_DateRecord_ - 1);
   }
@@ -175,131 +163,74 @@ class DateRecord extends Date {
   }
   return true;
  }
- /**
-  * @param {boolean} ambiguousYear
-  * @public
-  */
- m_setAmbiguousYear__boolean(ambiguousYear) {
+ 
+ m_setAmbiguousYear__boolean(/** boolean */ ambiguousYear) {
   this.f_ambiguousYear__org_gwtproject_i18n_shared_impl_DateRecord_ = ambiguousYear;
  }
- /**
-  * @param {number} ampm
-  * @public
-  */
- m_setAmpm__int(ampm) {
+ 
+ m_setAmpm__int(/** number */ ampm) {
   this.f_ampm__org_gwtproject_i18n_shared_impl_DateRecord_ = ampm;
  }
- /**
-  * @param {number} day
-  * @public
-  */
- m_setDayOfMonth__int(day) {
+ 
+ m_setDayOfMonth__int(/** number */ day) {
   this.f_dayOfMonth__org_gwtproject_i18n_shared_impl_DateRecord_ = day;
  }
- /**
-  * @param {number} dayOfWeek
-  * @public
-  */
- m_setDayOfWeek__int(dayOfWeek) {
+ 
+ m_setDayOfWeek__int(/** number */ dayOfWeek) {
   this.f_dayOfWeek__org_gwtproject_i18n_shared_impl_DateRecord_ = dayOfWeek;
  }
- /**
-  * @param {number} era
-  * @public
-  */
- m_setEra__int(era) {
+ 
+ m_setEra__int(/** number */ era) {
   this.f_era__org_gwtproject_i18n_shared_impl_DateRecord_ = era;
  }
- /**
-  * @override
-  * @param {number} hours
-  * @public
-  */
- m_setHours__int(hours) {
+ /** @override */
+ m_setHours__int(/** number */ hours) {
   this.f_hours__org_gwtproject_i18n_shared_impl_DateRecord_ = hours;
  }
- /**
-  * @param {boolean} midnightIs24
-  * @public
-  */
- m_setMidnightIs24__boolean(midnightIs24) {
+ 
+ m_setMidnightIs24__boolean(/** boolean */ midnightIs24) {
   this.f_midnightIs24__org_gwtproject_i18n_shared_impl_DateRecord_ = midnightIs24;
  }
- /**
-  * @param {number} milliseconds
-  * @public
-  */
- m_setMilliseconds__int(milliseconds) {
+ 
+ m_setMilliseconds__int(/** number */ milliseconds) {
   this.f_milliseconds__org_gwtproject_i18n_shared_impl_DateRecord_ = milliseconds;
  }
- /**
-  * @override
-  * @param {number} minutes
-  * @public
-  */
- m_setMinutes__int(minutes) {
+ /** @override */
+ m_setMinutes__int(/** number */ minutes) {
   this.f_minutes__org_gwtproject_i18n_shared_impl_DateRecord_ = minutes;
  }
- /**
-  * @override
-  * @param {number} month
-  * @public
-  */
- m_setMonth__int(month) {
+ /** @override */
+ m_setMonth__int(/** number */ month) {
   this.f_month__org_gwtproject_i18n_shared_impl_DateRecord_ = month;
  }
- /**
-  * @override
-  * @param {number} seconds
-  * @public
-  */
- m_setSeconds__int(seconds) {
+ /** @override */
+ m_setSeconds__int(/** number */ seconds) {
   this.f_seconds__org_gwtproject_i18n_shared_impl_DateRecord_ = seconds;
  }
- /**
-  * @param {number} tzOffset
-  * @public
-  */
- m_setTzOffset__int(tzOffset) {
+ 
+ m_setTzOffset__int(/** number */ tzOffset) {
   this.f_tzOffset__org_gwtproject_i18n_shared_impl_DateRecord_ = tzOffset;
  }
- /**
-  * @override
-  * @param {number} value
-  * @public
-  */
- m_setYear__int(value) {
+ /** @override */
+ m_setYear__int(/** number */ value) {
   this.f_year__org_gwtproject_i18n_shared_impl_DateRecord_ = value;
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @return {number}
-  * @public
-  */
- m_compareTo__java_lang_Object(arg0) {
-  return super.m_compareTo__java_util_Date(/**@type {Date} */ ($Casts.$to(arg0, Date)));
+ //Bridge method.
+ /** @override @return {number} */
+ m_compareTo__java_lang_Object(/** * */ arg0) {
+  return super.m_compareTo__java_util_Date(/**@type {Date}*/ ($Casts.$to(arg0, Date)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DateRecord.$clinit = () =>{};
   DateRecord.$loadModules();
   Date.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DateRecord;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Integer = goog.module.get('java.lang.Integer$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
@@ -310,13 +241,13 @@ class DateRecord extends Date {
 }
 $Util.$setClassMetadata(DateRecord, 'org.gwtproject.i18n.shared.impl.DateRecord');
 
-/** @public {!$Long} @const */
+/**@const {!$Long}*/
 DateRecord.f_serialVersionUID__org_gwtproject_i18n_shared_impl_DateRecord_ = $Long.fromBits(2132106846, -297747598) /* -1278816193740448162 */;
-/** @public {number} @const */
+/**@const {number}*/
 DateRecord.f_AM__org_gwtproject_i18n_shared_impl_DateRecord = 0;
-/** @public {number} @const */
+/**@const {number}*/
 DateRecord.f_PM__org_gwtproject_i18n_shared_impl_DateRecord = 1;
-/** @public {number} @const */
+/**@const {number}*/
 DateRecord.f_JS_START_YEAR__org_gwtproject_i18n_shared_impl_DateRecord_ = 1900;
 
 exports = DateRecord; 

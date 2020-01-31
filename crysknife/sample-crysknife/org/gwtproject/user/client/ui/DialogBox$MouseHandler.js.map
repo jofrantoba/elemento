@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DialogBox$MouseHandler.impl.java.js",
-"lineCount":99,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;MA0JgB,Y;;;;CAAA,W;EAAAA,Q;EAAAA;2E;;;;;;;QAAA,gD;EAAAC,uB;EAAAA,mC;EAAAA,4H;EAAAA,iB;;;;;;CAAA,oG;EAAAC,uF;EAAAA,iC;;;;;;;CAGA,6D,CAA2BC,K;EACrCC,gJ;;;;;;;CAGU,6D,CAA2BD,K;EACrCE,mJ;;;;;;;CAGU,2D,CAAyBF,K;EACnCG,2Q;;;;;;;CAGU,6D,CAA2BH,K;EACrCI,2Q;;;;;;;CAGU,yD,CAAuBJ,K;EACjCK,4I;;;;;QApBU,O;EAAAC,+B;EAAAA,4B;EAAAA;",
+"lineCount":68,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;MA0JgB,Y;;CAAA,W;EAAAA,Q;EAAAA;2E;;;QAAA,gD;EAAAC,uB;EAAAA,mC;EAAAA,4H;EAAAA,iB;;;CAAA,oG;EAAAC,uF;EAAAA,iC;;;CAGA,6D,uBAA2BC,K;EACrCC,gJ;;;CAGU,6D,uBAA2BD,K;EACrCE,mJ;;;CAGU,2D,sBAAyBF,K;EACnCG,2Q;;;CAGU,6D,uBAA2BH,K;EACrCI,2Q;;;CAGU,yD,qBAAuBJ,K;EACjCK,4I;;;QApBU,O;EAAAC,+B;EAAAA,4B;EAAAA;",
 "sources":["DialogBox.java"],
 "names":["org.gwtproject.user.client.ui.DialogBox$MouseHandler.<synthetic: ctor_js>","org.gwtproject.user.client.ui.DialogBox$MouseHandler.<synthetic: ctor_create>","org.gwtproject.user.client.ui.DialogBox$MouseHandler.<init>","event","org.gwtproject.user.client.ui.DialogBox$MouseHandler.onMouseDown","org.gwtproject.user.client.ui.DialogBox$MouseHandler.onMouseMove","org.gwtproject.user.client.ui.DialogBox$MouseHandler.onMouseOut","org.gwtproject.user.client.ui.DialogBox$MouseHandler.onMouseOver","org.gwtproject.user.client.ui.DialogBox$MouseHandler.onMouseUp","org.gwtproject.user.client.ui.DialogBox$MouseHandler.<clinit>"]
 }

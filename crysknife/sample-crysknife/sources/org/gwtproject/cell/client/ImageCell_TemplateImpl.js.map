@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ImageCell_TemplateImpl.impl.java.js",
-"lineCount":58,
-"mappings":"A;;;;;;;;;;;;;;;MAKa,uB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,kC;EAAAA,8C;EAAAA,uE;EAAAA,iB;;;;;CAAA,0D;EAAAC,iC;;;;;;;;CAKoC,uB,CACxBC,I;EACrBC,IAAcC,EAAdD,6B;EACAA,6C;EACAA,4H;EACAA,sC;EACJA,mG;;;;;QAXa,O;EAAAE,0C;EAAAA,uC;EAAAA;",
+"lineCount":44,
+"mappings":"A;;;;;;;;;;;;;;;MAKa,uB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,kC;EAAAA,8C;EAAAA,uE;EAAAA,iB;;;CAAA,0D;EAAAC,iC;;;CAKoC,uB,gBACxBC,I;EACrBC,IAAcC,EAAdD,6B;EACAA,6C;EACAA,4H;EACAA,sC;EACJA,mG;;;QAXa,O;EAAAE,0C;EAAAA,uC;EAAAA;",
 "sources":["ImageCell_TemplateImpl.java"],
 "names":["org.gwtproject.cell.client.ImageCell_TemplateImpl.<synthetic: ctor_js>","org.gwtproject.cell.client.ImageCell_TemplateImpl.<synthetic: ctor_create>","org.gwtproject.cell.client.ImageCell_TemplateImpl.<init>","arg0","org.gwtproject.cell.client.ImageCell_TemplateImpl.img","sb","org.gwtproject.cell.client.ImageCell_TemplateImpl.<clinit>"]
 }

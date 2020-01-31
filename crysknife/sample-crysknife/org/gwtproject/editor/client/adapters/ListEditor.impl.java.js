@@ -19,116 +19,68 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {CompositeEditor<List<T>, T, E>}
   */
 class ListEditor extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {EditorChain<T, E>} */
+  /**@type {EditorChain<T, E>}*/
   this.f_chain__org_gwtproject_editor_client_adapters_ListEditor_;
-  /** @public {EditorSource<E>} */
+  /**@type {EditorSource<E>}*/
   this.f_editorSource__org_gwtproject_editor_client_adapters_ListEditor_;
-  /** @public {ListEditorWrapper<T, E>} */
+  /**@type {ListEditorWrapper<T, E>}*/
   this.f_list__org_gwtproject_editor_client_adapters_ListEditor_;
  }
- /**
-  * @template T_1, E_1
-  * @param {EditorSource<E_1>} source
-  * @return {ListEditor<T_1, E_1>}
-  * @public
-  */
- static m_of__org_gwtproject_editor_client_adapters_EditorSource(source) {
+ /** @template T_1, E_1 @return {ListEditor<T_1, E_1>} */
+ static m_of__org_gwtproject_editor_client_adapters_EditorSource(/** EditorSource<E_1> */ source) {
   ListEditor.$clinit();
-  return /**@type {!ListEditor<T_1, E_1>} */ (ListEditor.$create__org_gwtproject_editor_client_adapters_EditorSource(source));
+  return /**@type {!ListEditor<T_1, E_1>}*/ (ListEditor.$create__org_gwtproject_editor_client_adapters_EditorSource(source));
  }
- /**
-  * @template T, E
-  * @param {EditorSource<E>} source
-  * @return {!ListEditor<T, E>}
-  * @public
-  */
- static $create__org_gwtproject_editor_client_adapters_EditorSource(source) {
+ /** @template T, E @return {!ListEditor<T, E>} */
+ static $create__org_gwtproject_editor_client_adapters_EditorSource(/** EditorSource<E> */ source) {
   ListEditor.$clinit();
   let $instance = new ListEditor();
   $instance.$ctor__org_gwtproject_editor_client_adapters_ListEditor__org_gwtproject_editor_client_adapters_EditorSource(source);
   return $instance;
  }
- /**
-  * @param {EditorSource<E>} source
-  * @public
-  */
- $ctor__org_gwtproject_editor_client_adapters_ListEditor__org_gwtproject_editor_client_adapters_EditorSource(source) {
+ 
+ $ctor__org_gwtproject_editor_client_adapters_ListEditor__org_gwtproject_editor_client_adapters_EditorSource(/** EditorSource<E> */ source) {
   this.$ctor__java_lang_Object__();
   this.f_editorSource__org_gwtproject_editor_client_adapters_ListEditor_ = source;
  }
- /**
-  * @override
-  * @return {E}
-  * @public
-  */
+ /** @override @return {E} */
  m_createEditorForTraversal__() {
   return this.f_editorSource__org_gwtproject_editor_client_adapters_ListEditor_.m_createEditorForTraversal__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_flush__() {
   if (!$Equality.$same(this.f_list__org_gwtproject_editor_client_adapters_ListEditor_, null)) {
    this.f_list__org_gwtproject_editor_client_adapters_ListEditor_.m_flush___$pp_org_gwtproject_editor_client_adapters();
   }
  }
- /**
-  * @return {List<E>}
-  * @public
-  */
+ /** @return {List<E>} */
  m_getEditors__() {
   if ($Equality.$same(this.f_list__org_gwtproject_editor_client_adapters_ListEditor_, null)) {
-   return /**@type {List<E>} */ (Collections.m_emptyList__());
+   return /**@type {List<E>}*/ (Collections.m_emptyList__());
   }
-  return /**@type {List<E>} */ (Collections.m_unmodifiableList__java_util_List(this.f_list__org_gwtproject_editor_client_adapters_ListEditor_.m_getEditors___$pp_org_gwtproject_editor_client_adapters()));
+  return /**@type {List<E>}*/ (Collections.m_unmodifiableList__java_util_List(this.f_list__org_gwtproject_editor_client_adapters_ListEditor_.m_getEditors___$pp_org_gwtproject_editor_client_adapters()));
  }
- /**
-  * @return {List<T>}
-  * @public
-  */
+ /** @return {List<T>} */
  m_getList__() {
   return this.f_list__org_gwtproject_editor_client_adapters_ListEditor_;
  }
- /**
-  * @override
-  * @param {E} subEditor
-  * @return {?string}
-  * @public
-  */
- m_getPathElement__org_gwtproject_editor_client_Editor(subEditor) {
+ /** @override @return {?string} */
+ m_getPathElement__org_gwtproject_editor_client_Editor(/** E */ subEditor) {
   return "[" + this.f_list__org_gwtproject_editor_client_adapters_ListEditor_.m_getEditors___$pp_org_gwtproject_editor_client_adapters().indexOf(subEditor) + "]";
  }
- /**
-  * @override
-  * @param {Array<?string>} paths
-  * @public
-  */
- m_onPropertyChange__arrayOf_java_lang_String(paths) {}
- /**
-  * @override
-  * @param {EditorDelegate<List<T>>} delegate
-  * @public
-  */
- m_setDelegate__org_gwtproject_editor_client_EditorDelegate(delegate) {}
- /**
-  * @override
-  * @param {EditorChain<T, E>} chain
-  * @public
-  */
- m_setEditorChain__org_gwtproject_editor_client_CompositeEditor_EditorChain(chain) {
+ /** @override */
+ m_onPropertyChange__arrayOf_java_lang_String(/** Array<?string> */ paths) {}
+ /** @override */
+ m_setDelegate__org_gwtproject_editor_client_EditorDelegate(/** EditorDelegate<List<T>> */ delegate) {}
+ /** @override */
+ m_setEditorChain__org_gwtproject_editor_client_CompositeEditor_EditorChain(/** EditorChain<T, E> */ chain) {
   this.f_chain__org_gwtproject_editor_client_adapters_ListEditor_ = chain;
  }
- /**
-  * @param {List<T>} value
-  * @public
-  */
- m_setValue__java_util_List(value) {
+ 
+ m_setValue__java_util_List(/** List<T> */ value) {
   if ($Equality.$same(this.f_list__org_gwtproject_editor_client_adapters_ListEditor_, null) && $Equality.$same(value, null)) {
    return;
   }
@@ -142,38 +94,26 @@ class ListEditor extends j_l_Object {
   if ($Equality.$same(value, null)) {
    this.f_list__org_gwtproject_editor_client_adapters_ListEditor_ = null;
   } else {
-   this.f_list__org_gwtproject_editor_client_adapters_ListEditor_ = /**@type {!ListEditorWrapper<T, E>} */ (ListEditorWrapper.$create__java_util_List__org_gwtproject_editor_client_CompositeEditor_EditorChain__org_gwtproject_editor_client_adapters_EditorSource(value, this.f_chain__org_gwtproject_editor_client_adapters_ListEditor_, this.f_editorSource__org_gwtproject_editor_client_adapters_ListEditor_));
+   this.f_list__org_gwtproject_editor_client_adapters_ListEditor_ = /**@type {!ListEditorWrapper<T, E>}*/ (ListEditorWrapper.$create__java_util_List__org_gwtproject_editor_client_CompositeEditor_EditorChain__org_gwtproject_editor_client_adapters_EditorSource(value, this.f_chain__org_gwtproject_editor_client_adapters_ListEditor_, this.f_editorSource__org_gwtproject_editor_client_adapters_ListEditor_));
    this.f_list__org_gwtproject_editor_client_adapters_ListEditor_.m_attach___$pp_org_gwtproject_editor_client_adapters();
   }
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_setValue__java_lang_Object(arg0) {
-  this.m_setValue__java_util_List(/**@type {List<T>} */ ($Casts.$to(arg0, List)));
+ //Bridge method.
+ /** @override */
+ m_setValue__java_lang_Object(/** * */ arg0) {
+  this.m_setValue__java_util_List(/**@type {List<T>}*/ ($Casts.$to(arg0, List)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ListEditor.$clinit = () =>{};
   ListEditor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ListEditor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Collections = goog.module.get('java.util.Collections$impl');
   List = goog.module.get('java.util.List$impl');

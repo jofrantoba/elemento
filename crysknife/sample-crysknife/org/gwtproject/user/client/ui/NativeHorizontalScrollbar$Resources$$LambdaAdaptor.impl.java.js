@@ -10,52 +10,35 @@ let Style = goog.forwardDeclare('org.gwtproject.user.client.ui.NativeHorizontalS
  * @implements {Resources}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function():Style} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function():Style */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function():Style} */
+  /**@type {?function():Style}*/
   this.f_$$fn__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_Resources_$LambdaAdaptor;
   this.$ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_Resources_$LambdaAdaptor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_Resources_$JsFunction(fn);
  }
- /**
-  * @param {?function():Style} fn
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_Resources_$LambdaAdaptor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_Resources_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_Resources_$LambdaAdaptor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_Resources_$JsFunction(/** ?function():Style */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_Resources_$LambdaAdaptor = fn;
  }
- /**
-  * @return {Style}
-  * @public
-  */
+ /** @return {Style} */
  m_nativeHorizontalScrollbarStyle__() {
   let /** ?function():Style */ $function;
   return ($function = this.f_$$fn__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_Resources_$LambdaAdaptor, $function());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

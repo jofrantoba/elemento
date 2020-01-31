@@ -11,41 +11,24 @@ let TextResource = goog.forwardDeclare('org.gwtproject.resources.client.TextReso
  * @extends {ResourcePrototype}
  */
 class ExternalTextResource {
- /**
-  * @abstract
-  * @param {ResourceCallback<TextResource>} callback
-  * @public
-  */
- m_getText__org_gwtproject_resources_client_ResourceCallback(callback) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_getText__org_gwtproject_resources_client_ResourceCallback(/** ResourceCallback<TextResource> */ callback) {}
+ 
  static $clinit() {
   ExternalTextResource.$clinit = () =>{};
   ExternalTextResource.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ResourcePrototype.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_resources_client_ExternalTextResource = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ResourcePrototype.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_resources_client_ExternalTextResource = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_resources_client_ExternalTextResource;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

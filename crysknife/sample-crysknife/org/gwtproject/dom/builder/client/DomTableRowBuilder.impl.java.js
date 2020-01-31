@@ -16,107 +16,60 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {TableRowBuilder}
   */
 class DomTableRowBuilder extends DomElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @return {!DomTableRowBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ /** @return {!DomTableRowBuilder} */
+ static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   DomTableRowBuilder.$clinit();
   let $instance = new DomTableRowBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_client_DomTableRowBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_client_DomTableRowBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_client_DomTableRowBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_client_DomElementBuilderBase__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
  }
- /**
-  * @override
-  * @param {?string} align
-  * @return {TableRowBuilder}
-  * @public
-  */
- m_align__java_lang_String(align) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).align = align;
+ /** @override @return {TableRowBuilder} */
+ m_align__java_lang_String(/** ?string */ align) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).align = align;
   return this;
  }
- /**
-  * @override
-  * @param {?string} ch
-  * @return {TableRowBuilder}
-  * @public
-  */
- m_ch__java_lang_String(ch) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).ch = ch;
+ /** @override @return {TableRowBuilder} */
+ m_ch__java_lang_String(/** ?string */ ch) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).ch = ch;
   return this;
  }
- /**
-  * @override
-  * @param {?string} chOff
-  * @return {TableRowBuilder}
-  * @public
-  */
- m_chOff__java_lang_String(chOff) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).chOff = chOff;
+ /** @override @return {TableRowBuilder} */
+ m_chOff__java_lang_String(/** ?string */ chOff) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).chOff = chOff;
   return this;
  }
- /**
-  * @override
-  * @param {SafeHtml} html
-  * @return {TableRowBuilder}
-  * @public
-  */
- m_html__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ /** @override @return {TableRowBuilder} */
+ m_html__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String(TableRowBuilder.f_UNSUPPORTED_HTML__org_gwtproject_dom_builder_shared_TableRowBuilder));
  }
- /**
-  * @override
-  * @param {?string} text
-  * @return {TableRowBuilder}
-  * @public
-  */
- m_text__java_lang_String(text) {
+ /** @override @return {TableRowBuilder} */
+ m_text__java_lang_String(/** ?string */ text) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String(TableRowBuilder.f_UNSUPPORTED_HTML__org_gwtproject_dom_builder_shared_TableRowBuilder));
  }
- /**
-  * @override
-  * @param {?string} vAlign
-  * @return {TableRowBuilder}
-  * @public
-  */
- m_vAlign__java_lang_String(vAlign) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).VAlign = vAlign;
+ /** @override @return {TableRowBuilder} */
+ m_vAlign__java_lang_String(/** ?string */ vAlign) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).VAlign = vAlign;
   return this;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomTableRowBuilder.$clinit = () =>{};
   DomTableRowBuilder.$loadModules();
   DomElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomTableRowBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   UnsupportedOperationException = goog.module.get('java.lang.UnsupportedOperationException$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.TableRowElement.$Overlay$impl');

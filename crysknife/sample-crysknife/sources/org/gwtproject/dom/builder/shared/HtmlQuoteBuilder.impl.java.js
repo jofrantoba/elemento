@@ -13,67 +13,40 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {QuoteBuilder}
   */
 class HtmlQuoteBuilder extends HtmlElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @return {!HtmlQuoteBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ /** @return {!HtmlQuoteBuilder} */
+ static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   HtmlQuoteBuilder.$clinit();
   let $instance = new HtmlQuoteBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_shared_HtmlQuoteBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_shared_HtmlQuoteBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_shared_HtmlQuoteBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_shared_HtmlElementBuilderBase__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate);
  }
- /**
-  * @override
-  * @param {SafeUri} cite
-  * @return {QuoteBuilder}
-  * @public
-  */
- m_cite__org_gwtproject_safehtml_shared_SafeUri(cite) {
+ /** @override @return {QuoteBuilder} */
+ m_cite__org_gwtproject_safehtml_shared_SafeUri(/** SafeUri */ cite) {
   return this.m_cite__java_lang_String(cite.m_asString__());
  }
- /**
-  * @override
-  * @param {?string} cite
-  * @return {QuoteBuilder}
-  * @public
-  */
- m_cite__java_lang_String(cite) {
-  return /**@type {QuoteBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("cite", cite), QuoteBuilder));
+ /** @override @return {QuoteBuilder} */
+ m_cite__java_lang_String(/** ?string */ cite) {
+  return /**@type {QuoteBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("cite", cite), QuoteBuilder));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HtmlQuoteBuilder.$clinit = () =>{};
   HtmlQuoteBuilder.$loadModules();
   HtmlElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HtmlQuoteBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

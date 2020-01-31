@@ -18,72 +18,48 @@ let NativePreviewEvent = goog.forwardDeclare('org.gwtproject.user.client.Event.N
  * @implements {NativePreviewHandler}
   */
 class UnpushHandler extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {ButtonCellBase<C>} */
+  /**@type {ButtonCellBase<C>}*/
   this.f_$outer_this__org_gwtproject_cell_client_ButtonCellBase_UnpushHandler;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_parent__org_gwtproject_cell_client_ButtonCellBase_UnpushHandler_;
-  /** @public {HandlerRegistration} */
+  /**@type {HandlerRegistration}*/
   this.f_reg__org_gwtproject_cell_client_ButtonCellBase_UnpushHandler_;
  }
- /**
-  * @template C
-  * @param {ButtonCellBase<C>} $outer_this
-  * @param {Object} parent
-  * @return {!UnpushHandler<C>}
-  * @public
-  */
- static $create__org_gwtproject_cell_client_ButtonCellBase__org_gwtproject_dom_client_Element($outer_this, parent) {
+ /** @template C @return {!UnpushHandler<C>} */
+ static $create__org_gwtproject_cell_client_ButtonCellBase__org_gwtproject_dom_client_Element(/** ButtonCellBase<C> */ $outer_this, /** Object */ parent) {
   UnpushHandler.$clinit();
   let $instance = new UnpushHandler();
   $instance.$ctor__org_gwtproject_cell_client_ButtonCellBase_UnpushHandler__org_gwtproject_cell_client_ButtonCellBase__org_gwtproject_dom_client_Element($outer_this, parent);
   return $instance;
  }
- /**
-  * @param {ButtonCellBase<C>} $outer_this
-  * @param {Object} parent
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_ButtonCellBase_UnpushHandler__org_gwtproject_cell_client_ButtonCellBase__org_gwtproject_dom_client_Element($outer_this, parent) {
+ 
+ $ctor__org_gwtproject_cell_client_ButtonCellBase_UnpushHandler__org_gwtproject_cell_client_ButtonCellBase__org_gwtproject_dom_client_Element(/** ButtonCellBase<C> */ $outer_this, /** Object */ parent) {
   this.f_$outer_this__org_gwtproject_cell_client_ButtonCellBase_UnpushHandler = $outer_this;
   this.$ctor__java_lang_Object__();
   this.f_parent__org_gwtproject_cell_client_ButtonCellBase_UnpushHandler_ = parent;
   this.f_reg__org_gwtproject_cell_client_ButtonCellBase_UnpushHandler_ = Event.m_addNativePreviewHandler__org_gwtproject_user_client_Event_NativePreviewHandler(this);
  }
- /**
-  * @override
-  * @param {NativePreviewEvent} event
-  * @public
-  */
- m_onPreviewNativeEvent__org_gwtproject_user_client_Event_NativePreviewEvent(event) {
+ /** @override */
+ m_onPreviewNativeEvent__org_gwtproject_user_client_Event_NativePreviewEvent(/** NativePreviewEvent */ event) {
   if (j_l_String.m_equals__java_lang_String__java_lang_Object(BrowserEvents.f_MOUSEUP__org_gwtproject_dom_client_BrowserEvents, $Overlay.m_getType__$devirt__org_gwtproject_dom_client_NativeEvent(event.m_getNativeEvent__()))) {
    this.f_reg__org_gwtproject_cell_client_ButtonCellBase_UnpushHandler_.m_removeHandler__();
    this.f_$outer_this__org_gwtproject_cell_client_ButtonCellBase_UnpushHandler.f_appearance__org_gwtproject_cell_client_ButtonCellBase_.m_onUnpush__org_gwtproject_dom_client_Element(this.f_parent__org_gwtproject_cell_client_ButtonCellBase_UnpushHandler_);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   UnpushHandler.$clinit = () =>{};
   UnpushHandler.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof UnpushHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   BrowserEvents = goog.module.get('org.gwtproject.dom.client.BrowserEvents$impl');

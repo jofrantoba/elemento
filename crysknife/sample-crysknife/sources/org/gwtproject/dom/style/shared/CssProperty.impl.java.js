@@ -62,401 +62,232 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @extends {Enum<CssProperty>}
   */
 class CssProperty extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_dom_style_shared_CssProperty__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_dom_style_shared_CssProperty__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getJsName__() {}
- /**
-  * @param {string} name
-  * @return {!CssProperty}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!CssProperty} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   CssProperty.$clinit();
   if ($Equality.$same(CssProperty.f_namesToValuesMap__org_gwtproject_dom_style_shared_CssProperty_, null)) {
    CssProperty.f_namesToValuesMap__org_gwtproject_dom_style_shared_CssProperty_ = $Enums.createMapFromValues(CssProperty.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, CssProperty.f_namesToValuesMap__org_gwtproject_dom_style_shared_CssProperty_);
  }
- /**
-  * @return {!Array<!CssProperty>}
-  * @public
-  */
+ /** @return {!Array<!CssProperty>} */
  static m_values__() {
   CssProperty.$clinit();
-  return /**@type {!Array<CssProperty>} */ ($Arrays.$init([CssProperty.$f_FLOAT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_Z_INDEX__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_WIDTH__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_VISIBILITY__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_TOP__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_TEXT_DECORATION__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_RIGHT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_POSITION__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_PADDING_TOP__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_PADDING_RIGHT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_PADDING_LEFT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_PADDING_BOTTOM__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_PADDING__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_OVERFLOW__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_OVERFLOW_X__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_OVERFLOW_Y__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_OPACITY__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_MARGIN_TOP__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_MARGIN_RIGHT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_MARGIN_LEFT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_MARGIN_BOTTOM__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_MARGIN__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_LIST_TYPE__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_LEFT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_HEIGHT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_FONT_WEIGHT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_FONT_STYLE__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_FONT_SIZE__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_DISPLAY__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_CURSOR__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_COLOR__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_CLEAR__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_BOTTOM__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_BORDER_WIDTH__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_BORDER_STYLE__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_BORDER_COLOR__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_BACKGROUND_IMAGE__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_BACKGROUND_COLOR__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_VERTICAL_ALIGN__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_TABLE_LAYOUT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_TEXT_ALIGN__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_TEXT_INDENT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_TEXT_JUSTIFY__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_TEXT_OVERFLOW__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_TEXT_TRANSFORM__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_OUTLINE_WIDTH__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_OUTLINE_STYLE__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_OUTLINE_COLOR__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_LINE_HEIGHT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_WHITE_SPACE__org_gwtproject_dom_style_shared_CssProperty], CssProperty));
+  return /**@type {!Array<CssProperty>}*/ ($Arrays.$init([CssProperty.$f_FLOAT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_Z_INDEX__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_WIDTH__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_VISIBILITY__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_TOP__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_TEXT_DECORATION__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_RIGHT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_POSITION__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_PADDING_TOP__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_PADDING_RIGHT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_PADDING_LEFT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_PADDING_BOTTOM__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_PADDING__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_OVERFLOW__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_OVERFLOW_X__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_OVERFLOW_Y__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_OPACITY__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_MARGIN_TOP__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_MARGIN_RIGHT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_MARGIN_LEFT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_MARGIN_BOTTOM__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_MARGIN__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_LIST_TYPE__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_LEFT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_HEIGHT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_FONT_WEIGHT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_FONT_STYLE__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_FONT_SIZE__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_DISPLAY__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_CURSOR__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_COLOR__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_CLEAR__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_BOTTOM__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_BORDER_WIDTH__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_BORDER_STYLE__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_BORDER_COLOR__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_BACKGROUND_IMAGE__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_BACKGROUND_COLOR__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_VERTICAL_ALIGN__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_TABLE_LAYOUT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_TEXT_ALIGN__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_TEXT_INDENT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_TEXT_JUSTIFY__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_TEXT_OVERFLOW__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_TEXT_TRANSFORM__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_OUTLINE_WIDTH__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_OUTLINE_STYLE__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_OUTLINE_COLOR__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_LINE_HEIGHT__org_gwtproject_dom_style_shared_CssProperty, CssProperty.$f_WHITE_SPACE__org_gwtproject_dom_style_shared_CssProperty], CssProperty));
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_FLOAT__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_FLOAT__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_Z_INDEX__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_Z_INDEX__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_WIDTH__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_WIDTH__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_VISIBILITY__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_VISIBILITY__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_TOP__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_TOP__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_TEXT_DECORATION__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_TEXT_DECORATION__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_RIGHT__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_RIGHT__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_POSITION__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_POSITION__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_PADDING_TOP__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_PADDING_TOP__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_PADDING_RIGHT__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_PADDING_RIGHT__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_PADDING_LEFT__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_PADDING_LEFT__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_PADDING_BOTTOM__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_PADDING_BOTTOM__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_PADDING__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_PADDING__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_OVERFLOW__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_OVERFLOW__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_OVERFLOW_X__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_OVERFLOW_X__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_OVERFLOW_Y__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_OVERFLOW_Y__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_OPACITY__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_OPACITY__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_MARGIN_TOP__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_MARGIN_TOP__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_MARGIN_RIGHT__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_MARGIN_RIGHT__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_MARGIN_LEFT__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_MARGIN_LEFT__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_MARGIN_BOTTOM__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_MARGIN_BOTTOM__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_MARGIN__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_MARGIN__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_LIST_TYPE__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_LIST_TYPE__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_LEFT__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_LEFT__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_HEIGHT__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_HEIGHT__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_FONT_WEIGHT__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_FONT_WEIGHT__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_FONT_STYLE__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_FONT_STYLE__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_FONT_SIZE__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_FONT_SIZE__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_DISPLAY__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_DISPLAY__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_CURSOR__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_CURSOR__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_COLOR__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_COLOR__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_CLEAR__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_CLEAR__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_BOTTOM__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_BOTTOM__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_BORDER_WIDTH__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_BORDER_WIDTH__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_BORDER_STYLE__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_BORDER_STYLE__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_BORDER_COLOR__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_BORDER_COLOR__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_BACKGROUND_IMAGE__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_BACKGROUND_IMAGE__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_BACKGROUND_COLOR__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_BACKGROUND_COLOR__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_VERTICAL_ALIGN__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_VERTICAL_ALIGN__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_TABLE_LAYOUT__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_TABLE_LAYOUT__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_TEXT_ALIGN__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_TEXT_ALIGN__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_TEXT_INDENT__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_TEXT_INDENT__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_TEXT_JUSTIFY__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_TEXT_JUSTIFY__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_TEXT_OVERFLOW__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_TEXT_OVERFLOW__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_TEXT_TRANSFORM__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_TEXT_TRANSFORM__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_OUTLINE_WIDTH__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_OUTLINE_WIDTH__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_OUTLINE_STYLE__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_OUTLINE_STYLE__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_OUTLINE_COLOR__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_OUTLINE_COLOR__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_LINE_HEIGHT__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_LINE_HEIGHT__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @return {!CssProperty}
-  * @public
-  */
+ /** @return {!CssProperty} */
  static get f_WHITE_SPACE__org_gwtproject_dom_style_shared_CssProperty() {
   return (CssProperty.$clinit(), CssProperty.$f_WHITE_SPACE__org_gwtproject_dom_style_shared_CssProperty);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CssProperty.$clinit = () =>{};
   CssProperty.$loadModules();
@@ -513,17 +344,11 @@ class CssProperty extends Enum {
   CssProperty.$f_WHITE_SPACE__org_gwtproject_dom_style_shared_CssProperty = $50.$create__java_lang_String__int($Util.$makeEnumName("WHITE_SPACE"), CssProperty.$ordinal$f_WHITE_SPACE__org_gwtproject_dom_style_shared_CssProperty);
   CssProperty.f_namesToValuesMap__org_gwtproject_dom_style_shared_CssProperty_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CssProperty;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.dom.style.shared.CssProperty.$1$impl');
@@ -583,207 +408,207 @@ class CssProperty extends Enum {
 }
 $Util.$setClassMetadataForEnum(CssProperty, 'org.gwtproject.dom.style.shared.CssProperty');
 
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_FLOAT__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_Z_INDEX__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_WIDTH__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_VISIBILITY__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_TOP__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_TEXT_DECORATION__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_RIGHT__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_POSITION__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_PADDING_TOP__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_PADDING_RIGHT__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_PADDING_LEFT__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_PADDING_BOTTOM__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_PADDING__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_OVERFLOW__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_OVERFLOW_X__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_OVERFLOW_Y__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_OPACITY__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_MARGIN_TOP__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_MARGIN_RIGHT__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_MARGIN_LEFT__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_MARGIN_BOTTOM__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_MARGIN__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_LIST_TYPE__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_LEFT__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_HEIGHT__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_FONT_WEIGHT__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_FONT_STYLE__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_FONT_SIZE__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_DISPLAY__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_CURSOR__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_COLOR__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_CLEAR__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_BOTTOM__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_BORDER_WIDTH__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_BORDER_STYLE__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_BORDER_COLOR__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_BACKGROUND_IMAGE__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_BACKGROUND_COLOR__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_VERTICAL_ALIGN__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_TABLE_LAYOUT__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_TEXT_ALIGN__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_TEXT_INDENT__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_TEXT_JUSTIFY__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_TEXT_OVERFLOW__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_TEXT_TRANSFORM__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_OUTLINE_WIDTH__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_OUTLINE_STYLE__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_OUTLINE_COLOR__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_LINE_HEIGHT__org_gwtproject_dom_style_shared_CssProperty;
-/** @private {!CssProperty} */
+/**@private {!CssProperty}*/
 CssProperty.$f_WHITE_SPACE__org_gwtproject_dom_style_shared_CssProperty;
-/** @public {Map<?string, !CssProperty>} */
+/**@type {Map<?string, !CssProperty>}*/
 CssProperty.f_namesToValuesMap__org_gwtproject_dom_style_shared_CssProperty_;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_FLOAT__org_gwtproject_dom_style_shared_CssProperty = 0;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_Z_INDEX__org_gwtproject_dom_style_shared_CssProperty = 1;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_WIDTH__org_gwtproject_dom_style_shared_CssProperty = 2;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_VISIBILITY__org_gwtproject_dom_style_shared_CssProperty = 3;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_TOP__org_gwtproject_dom_style_shared_CssProperty = 4;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_TEXT_DECORATION__org_gwtproject_dom_style_shared_CssProperty = 5;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_RIGHT__org_gwtproject_dom_style_shared_CssProperty = 6;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_POSITION__org_gwtproject_dom_style_shared_CssProperty = 7;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_PADDING_TOP__org_gwtproject_dom_style_shared_CssProperty = 8;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_PADDING_RIGHT__org_gwtproject_dom_style_shared_CssProperty = 9;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_PADDING_LEFT__org_gwtproject_dom_style_shared_CssProperty = 10;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_PADDING_BOTTOM__org_gwtproject_dom_style_shared_CssProperty = 11;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_PADDING__org_gwtproject_dom_style_shared_CssProperty = 12;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_OVERFLOW__org_gwtproject_dom_style_shared_CssProperty = 13;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_OVERFLOW_X__org_gwtproject_dom_style_shared_CssProperty = 14;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_OVERFLOW_Y__org_gwtproject_dom_style_shared_CssProperty = 15;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_OPACITY__org_gwtproject_dom_style_shared_CssProperty = 16;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_MARGIN_TOP__org_gwtproject_dom_style_shared_CssProperty = 17;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_MARGIN_RIGHT__org_gwtproject_dom_style_shared_CssProperty = 18;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_MARGIN_LEFT__org_gwtproject_dom_style_shared_CssProperty = 19;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_MARGIN_BOTTOM__org_gwtproject_dom_style_shared_CssProperty = 20;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_MARGIN__org_gwtproject_dom_style_shared_CssProperty = 21;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_LIST_TYPE__org_gwtproject_dom_style_shared_CssProperty = 22;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_LEFT__org_gwtproject_dom_style_shared_CssProperty = 23;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_HEIGHT__org_gwtproject_dom_style_shared_CssProperty = 24;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_FONT_WEIGHT__org_gwtproject_dom_style_shared_CssProperty = 25;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_FONT_STYLE__org_gwtproject_dom_style_shared_CssProperty = 26;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_FONT_SIZE__org_gwtproject_dom_style_shared_CssProperty = 27;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_DISPLAY__org_gwtproject_dom_style_shared_CssProperty = 28;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_CURSOR__org_gwtproject_dom_style_shared_CssProperty = 29;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_COLOR__org_gwtproject_dom_style_shared_CssProperty = 30;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_CLEAR__org_gwtproject_dom_style_shared_CssProperty = 31;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_BOTTOM__org_gwtproject_dom_style_shared_CssProperty = 32;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_BORDER_WIDTH__org_gwtproject_dom_style_shared_CssProperty = 33;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_BORDER_STYLE__org_gwtproject_dom_style_shared_CssProperty = 34;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_BORDER_COLOR__org_gwtproject_dom_style_shared_CssProperty = 35;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_BACKGROUND_IMAGE__org_gwtproject_dom_style_shared_CssProperty = 36;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_BACKGROUND_COLOR__org_gwtproject_dom_style_shared_CssProperty = 37;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_VERTICAL_ALIGN__org_gwtproject_dom_style_shared_CssProperty = 38;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_TABLE_LAYOUT__org_gwtproject_dom_style_shared_CssProperty = 39;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_TEXT_ALIGN__org_gwtproject_dom_style_shared_CssProperty = 40;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_TEXT_INDENT__org_gwtproject_dom_style_shared_CssProperty = 41;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_TEXT_JUSTIFY__org_gwtproject_dom_style_shared_CssProperty = 42;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_TEXT_OVERFLOW__org_gwtproject_dom_style_shared_CssProperty = 43;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_TEXT_TRANSFORM__org_gwtproject_dom_style_shared_CssProperty = 44;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_OUTLINE_WIDTH__org_gwtproject_dom_style_shared_CssProperty = 45;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_OUTLINE_STYLE__org_gwtproject_dom_style_shared_CssProperty = 46;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_OUTLINE_COLOR__org_gwtproject_dom_style_shared_CssProperty = 47;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_LINE_HEIGHT__org_gwtproject_dom_style_shared_CssProperty = 48;
-/** @public {number} @const */
+/**@const {number}*/
 CssProperty.$ordinal$f_WHITE_SPACE__org_gwtproject_dom_style_shared_CssProperty = 49;
 
 exports = CssProperty; 

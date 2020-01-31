@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DataGrid_ResourcesImpl$dataGridSortAscendingInitializer.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;MAgCuB,gC;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,uD;EAAAA,iH;EAAAA,iB;;;;;CAAA,oG;EAAAC,iC;;;;;;QAIkC,O;EAAAC,2C;EACnDA,oH;;;;;QALiB,O;EAAAC,mD;EAAAA,gD;EAAAA,qB;EAEjBA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;MAgCuB,gC;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,uD;EAAAA,iH;EAAAA,iB;;;CAAA,oG;EAAAC,iC;;;QAIkC,O;EAAAC,2C;EACnDA,oH;;;QALiB,O;EAAAC,mD;EAAAA,gD;EAAAA,qB;EAEjBA;",
 "sources":["DataGrid_ResourcesImpl.java"],
 "names":["org.gwtproject.user.cellview.client.DataGrid_ResourcesImpl$dataGridSortAscendingInitializer.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.DataGrid_ResourcesImpl$dataGridSortAscendingInitializer.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.DataGrid_ResourcesImpl$dataGridSortAscendingInitializer.<init>","org.gwtproject.user.cellview.client.DataGrid_ResourcesImpl$dataGridSortAscendingInitializer.get","org.gwtproject.user.cellview.client.DataGrid_ResourcesImpl$dataGridSortAscendingInitializer.<clinit>"]
 }

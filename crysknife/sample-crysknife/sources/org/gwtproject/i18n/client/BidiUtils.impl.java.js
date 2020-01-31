@@ -9,34 +9,23 @@ let $Overlay = goog.forwardDeclare('org.gwtproject.dom.client.Element.$Overlay$i
 let Direction = goog.forwardDeclare('org.gwtproject.i18n.client.HasDirection.Direction$impl');
 
 class BidiUtils extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!BidiUtils}
-  * @public
-  */
+ /** @return {!BidiUtils} */
  static $create__() {
   BidiUtils.$clinit();
   let $instance = new BidiUtils();
   $instance.$ctor__org_gwtproject_i18n_client_BidiUtils__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_i18n_client_BidiUtils__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {Object} elem
-  * @return {Direction}
-  * @public
-  */
- static m_getDirectionOnElement__org_gwtproject_dom_client_Element(elem) {
+ /** @return {Direction} */
+ static m_getDirectionOnElement__org_gwtproject_dom_client_Element(/** Object */ elem) {
   BidiUtils.$clinit();
   let dirPropertyValue = $Overlay.m_getPropertyString__$devirt__org_gwtproject_dom_client_Element__java_lang_String(elem, BidiUtils.f_DIR_PROPERTY_NAME__org_gwtproject_i18n_client_BidiUtils);
   if (j_l_String.m_equalsIgnoreCase__java_lang_String__java_lang_String(BidiUtils.f_DIR_PROPERTY_VALUE_RTL__org_gwtproject_i18n_client_BidiUtils_, dirPropertyValue)) {
@@ -46,12 +35,8 @@ class BidiUtils extends j_l_Object {
   }
   return Direction.f_DEFAULT__org_gwtproject_i18n_client_HasDirection_Direction;
  }
- /**
-  * @param {Object} elem
-  * @param {Direction} direction
-  * @public
-  */
- static m_setDirectionOnElement__org_gwtproject_dom_client_Element__org_gwtproject_i18n_client_HasDirection_Direction(elem, direction) {
+ 
+ static m_setDirectionOnElement__org_gwtproject_dom_client_Element__org_gwtproject_i18n_client_HasDirection_Direction(/** Object */ elem, /** Direction */ direction) {
   BidiUtils.$clinit();
   switch (direction.ordinal()) {
    case Direction.$ordinal$f_RTL__org_gwtproject_i18n_client_HasDirection_Direction: 
@@ -73,25 +58,17 @@ class BidiUtils extends j_l_Object {
     }
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   BidiUtils.$clinit = () =>{};
   BidiUtils.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof BidiUtils;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -102,11 +79,11 @@ class BidiUtils extends j_l_Object {
 }
 $Util.$setClassMetadata(BidiUtils, 'org.gwtproject.i18n.client.BidiUtils');
 
-/** @public {?string} @const */
+/**@const {?string}*/
 BidiUtils.f_DIR_PROPERTY_NAME__org_gwtproject_i18n_client_BidiUtils = "dir";
-/** @public {?string} @const */
+/**@const {?string}*/
 BidiUtils.f_DIR_PROPERTY_VALUE_RTL__org_gwtproject_i18n_client_BidiUtils_ = "rtl";
-/** @public {?string} @const */
+/**@const {?string}*/
 BidiUtils.f_DIR_PROPERTY_VALUE_LTR__org_gwtproject_i18n_client_BidiUtils_ = "ltr";
 
 exports = BidiUtils; 

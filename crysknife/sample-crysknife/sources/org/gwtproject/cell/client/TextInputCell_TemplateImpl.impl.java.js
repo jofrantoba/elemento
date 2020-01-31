@@ -13,60 +13,40 @@ let SafeHtmlUtils = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHtml
  * @implements {Template}
   */
 class TextInputCell__TemplateImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!TextInputCell__TemplateImpl}
-  * @public
-  */
+ /** @return {!TextInputCell__TemplateImpl} */
  static $create__() {
   TextInputCell__TemplateImpl.$clinit();
   let $instance = new TextInputCell__TemplateImpl();
   $instance.$ctor__org_gwtproject_cell_client_TextInputCell_TemplateImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_cell_client_TextInputCell_TemplateImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {?string} arg0
-  * @return {SafeHtml}
-  * @public
-  */
- m_input__java_lang_String(arg0) {
+ /** @override @return {SafeHtml} */
+ m_input__java_lang_String(/** ?string */ arg0) {
   let sb = StringBuilder.$create__();
   sb.m_append__java_lang_String("<input type=\"text\" value=\"");
   sb.m_append__java_lang_String(SafeHtmlUtils.m_htmlEscape__java_lang_String(arg0));
   sb.m_append__java_lang_String("\" tabindex=\"-1\"></input>");
   return OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml.$create__java_lang_String(sb.toString());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TextInputCell__TemplateImpl.$clinit = () =>{};
   TextInputCell__TemplateImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TextInputCell__TemplateImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   StringBuilder = goog.module.get('java.lang.StringBuilder$impl');
   OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml = goog.module.get('org.gwtproject.safehtml.shared.OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml$impl');

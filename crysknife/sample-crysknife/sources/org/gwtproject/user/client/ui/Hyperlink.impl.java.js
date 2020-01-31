@@ -32,220 +32,133 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
  * @implements {HasDirectionalSafeHtml}
   */
 class Hyperlink extends Widget {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {DirectionalTextHelper} */
+  /**@type {DirectionalTextHelper}*/
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Hyperlink;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_anchorElem__org_gwtproject_user_client_ui_Hyperlink_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_targetHistoryToken__org_gwtproject_user_client_ui_Hyperlink_;
  }
- /**
-  * Factory method corresponding to constructor 'Hyperlink()'.
-  * @return {!Hyperlink}
-  * @public
-  */
+ //Factory method corresponding to constructor 'Hyperlink()'.
+ /** @return {!Hyperlink} */
  static $create__() {
   Hyperlink.$clinit();
   let $instance = new Hyperlink();
   $instance.$ctor__org_gwtproject_user_client_ui_Hyperlink__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'Hyperlink()'.
-  * @public
-  */
+ //Initialization from constructor 'Hyperlink()'.
+ 
  $ctor__org_gwtproject_user_client_ui_Hyperlink__() {
   this.$ctor__org_gwtproject_user_client_ui_Hyperlink__org_gwtproject_dom_client_Element(DOM.m_createDiv__());
  }
- /**
-  * Factory method corresponding to constructor 'Hyperlink(SafeHtml, String)'.
-  * @param {SafeHtml} html
-  * @param {?string} targetHistoryToken
-  * @return {!Hyperlink}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeHtml__java_lang_String(html, targetHistoryToken) {
+ //Factory method corresponding to constructor 'Hyperlink(SafeHtml, String)'.
+ /** @return {!Hyperlink} */
+ static $create__org_gwtproject_safehtml_shared_SafeHtml__java_lang_String(/** SafeHtml */ html, /** ?string */ targetHistoryToken) {
   Hyperlink.$clinit();
   let $instance = new Hyperlink();
   $instance.$ctor__org_gwtproject_user_client_ui_Hyperlink__org_gwtproject_safehtml_shared_SafeHtml__java_lang_String(html, targetHistoryToken);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Hyperlink(SafeHtml, String)'.
-  * @param {SafeHtml} html
-  * @param {?string} targetHistoryToken
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Hyperlink__org_gwtproject_safehtml_shared_SafeHtml__java_lang_String(html, targetHistoryToken) {
+ //Initialization from constructor 'Hyperlink(SafeHtml, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Hyperlink__org_gwtproject_safehtml_shared_SafeHtml__java_lang_String(/** SafeHtml */ html, /** ?string */ targetHistoryToken) {
   this.$ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__boolean__java_lang_String(html.m_asString__(), true, targetHistoryToken);
  }
- /**
-  * Factory method corresponding to constructor 'Hyperlink(SafeHtml, Direction, String)'.
-  * @param {SafeHtml} html
-  * @param {Direction} dir
-  * @param {?string} targetHistoryToken
-  * @return {!Hyperlink}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(html, dir, targetHistoryToken) {
+ //Factory method corresponding to constructor 'Hyperlink(SafeHtml, Direction, String)'.
+ /** @return {!Hyperlink} */
+ static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(/** SafeHtml */ html, /** Direction */ dir, /** ?string */ targetHistoryToken) {
   Hyperlink.$clinit();
   let $instance = new Hyperlink();
   $instance.$ctor__org_gwtproject_user_client_ui_Hyperlink__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(html, dir, targetHistoryToken);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Hyperlink(SafeHtml, Direction, String)'.
-  * @param {SafeHtml} html
-  * @param {Direction} dir
-  * @param {?string} targetHistoryToken
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Hyperlink__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(html, dir, targetHistoryToken) {
+ //Initialization from constructor 'Hyperlink(SafeHtml, Direction, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Hyperlink__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(/** SafeHtml */ html, /** Direction */ dir, /** ?string */ targetHistoryToken) {
   this.$ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__boolean__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(html.m_asString__(), true, dir, targetHistoryToken);
  }
- /**
-  * Factory method corresponding to constructor 'Hyperlink(SafeHtml, DirectionEstimator, String)'.
-  * @param {SafeHtml} html
-  * @param {DirectionEstimator} directionEstimator
-  * @param {?string} targetHistoryToken
-  * @return {!Hyperlink}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(html, directionEstimator, targetHistoryToken) {
+ //Factory method corresponding to constructor 'Hyperlink(SafeHtml, DirectionEstimator, String)'.
+ /** @return {!Hyperlink} */
+ static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(/** SafeHtml */ html, /** DirectionEstimator */ directionEstimator, /** ?string */ targetHistoryToken) {
   Hyperlink.$clinit();
   let $instance = new Hyperlink();
   $instance.$ctor__org_gwtproject_user_client_ui_Hyperlink__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(html, directionEstimator, targetHistoryToken);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Hyperlink(SafeHtml, DirectionEstimator, String)'.
-  * @param {SafeHtml} html
-  * @param {DirectionEstimator} directionEstimator
-  * @param {?string} targetHistoryToken
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Hyperlink__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(html, directionEstimator, targetHistoryToken) {
+ //Initialization from constructor 'Hyperlink(SafeHtml, DirectionEstimator, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Hyperlink__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(/** SafeHtml */ html, /** DirectionEstimator */ directionEstimator, /** ?string */ targetHistoryToken) {
   this.$ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__boolean__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(html.m_asString__(), true, directionEstimator, targetHistoryToken);
  }
- /**
-  * Factory method corresponding to constructor 'Hyperlink(String, String)'.
-  * @param {?string} text
-  * @param {?string} targetHistoryToken
-  * @return {!Hyperlink}
-  * @public
-  */
- static $create__java_lang_String__java_lang_String(text, targetHistoryToken) {
+ //Factory method corresponding to constructor 'Hyperlink(String, String)'.
+ /** @return {!Hyperlink} */
+ static $create__java_lang_String__java_lang_String(/** ?string */ text, /** ?string */ targetHistoryToken) {
   Hyperlink.$clinit();
   let $instance = new Hyperlink();
   $instance.$ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__java_lang_String(text, targetHistoryToken);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Hyperlink(String, String)'.
-  * @param {?string} text
-  * @param {?string} targetHistoryToken
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__java_lang_String(text, targetHistoryToken) {
+ //Initialization from constructor 'Hyperlink(String, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__java_lang_String(/** ?string */ text, /** ?string */ targetHistoryToken) {
   this.$ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__boolean__java_lang_String(text, false, targetHistoryToken);
  }
- /**
-  * Factory method corresponding to constructor 'Hyperlink(String, Direction, String)'.
-  * @param {?string} text
-  * @param {Direction} dir
-  * @param {?string} targetHistoryToken
-  * @return {!Hyperlink}
-  * @public
-  */
- static $create__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(text, dir, targetHistoryToken) {
+ //Factory method corresponding to constructor 'Hyperlink(String, Direction, String)'.
+ /** @return {!Hyperlink} */
+ static $create__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(/** ?string */ text, /** Direction */ dir, /** ?string */ targetHistoryToken) {
   Hyperlink.$clinit();
   let $instance = new Hyperlink();
   $instance.$ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(text, dir, targetHistoryToken);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Hyperlink(String, Direction, String)'.
-  * @param {?string} text
-  * @param {Direction} dir
-  * @param {?string} targetHistoryToken
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(text, dir, targetHistoryToken) {
+ //Initialization from constructor 'Hyperlink(String, Direction, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(/** ?string */ text, /** Direction */ dir, /** ?string */ targetHistoryToken) {
   this.$ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__boolean__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(text, false, dir, targetHistoryToken);
  }
- /**
-  * Factory method corresponding to constructor 'Hyperlink(String, DirectionEstimator, String)'.
-  * @param {?string} text
-  * @param {DirectionEstimator} directionEstimator
-  * @param {?string} targetHistoryToken
-  * @return {!Hyperlink}
-  * @public
-  */
- static $create__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(text, directionEstimator, targetHistoryToken) {
+ //Factory method corresponding to constructor 'Hyperlink(String, DirectionEstimator, String)'.
+ /** @return {!Hyperlink} */
+ static $create__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(/** ?string */ text, /** DirectionEstimator */ directionEstimator, /** ?string */ targetHistoryToken) {
   Hyperlink.$clinit();
   let $instance = new Hyperlink();
   $instance.$ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(text, directionEstimator, targetHistoryToken);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Hyperlink(String, DirectionEstimator, String)'.
-  * @param {?string} text
-  * @param {DirectionEstimator} directionEstimator
-  * @param {?string} targetHistoryToken
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(text, directionEstimator, targetHistoryToken) {
+ //Initialization from constructor 'Hyperlink(String, DirectionEstimator, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(/** ?string */ text, /** DirectionEstimator */ directionEstimator, /** ?string */ targetHistoryToken) {
   this.$ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__boolean__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(text, false, directionEstimator, targetHistoryToken);
  }
- /**
-  * Factory method corresponding to constructor 'Hyperlink(String, boolean, String)'.
-  * @param {?string} text
-  * @param {boolean} asHTML
-  * @param {?string} targetHistoryToken
-  * @return {!Hyperlink}
-  * @public
-  */
- static $create__java_lang_String__boolean__java_lang_String(text, asHTML, targetHistoryToken) {
+ //Factory method corresponding to constructor 'Hyperlink(String, boolean, String)'.
+ /** @return {!Hyperlink} */
+ static $create__java_lang_String__boolean__java_lang_String(/** ?string */ text, /** boolean */ asHTML, /** ?string */ targetHistoryToken) {
   Hyperlink.$clinit();
   let $instance = new Hyperlink();
   $instance.$ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__boolean__java_lang_String(text, asHTML, targetHistoryToken);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Hyperlink(String, boolean, String)'.
-  * @param {?string} text
-  * @param {boolean} asHTML
-  * @param {?string} targetHistoryToken
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__boolean__java_lang_String(text, asHTML, targetHistoryToken) {
+ //Initialization from constructor 'Hyperlink(String, boolean, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__boolean__java_lang_String(/** ?string */ text, /** boolean */ asHTML, /** ?string */ targetHistoryToken) {
   this.$ctor__org_gwtproject_user_client_ui_Hyperlink__();
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Hyperlink.m_setTextOrHtml__java_lang_String__boolean(text, asHTML);
   this.m_setTargetHistoryToken__java_lang_String(targetHistoryToken);
  }
- /**
-  * Factory method corresponding to constructor 'Hyperlink(Element)'.
-  * @param {Object} elem
-  * @return {!Hyperlink}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_Element(elem) {
+ //Factory method corresponding to constructor 'Hyperlink(Element)'.
+ /** @return {!Hyperlink} */
+ static $create__org_gwtproject_dom_client_Element(/** Object */ elem) {
   Hyperlink.$clinit();
   let $instance = new Hyperlink();
   $instance.$ctor__org_gwtproject_user_client_ui_Hyperlink__org_gwtproject_dom_client_Element(elem);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Hyperlink(Element)'.
-  * @param {Object} elem
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Hyperlink__org_gwtproject_dom_client_Element(elem) {
+ //Initialization from constructor 'Hyperlink(Element)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Hyperlink__org_gwtproject_dom_client_Element(/** Object */ elem) {
   this.$ctor__org_gwtproject_user_client_ui_Widget__();
   this.$init___$p_org_gwtproject_user_client_ui_Hyperlink();
   if ($Equality.$same(elem, null)) {
@@ -258,215 +171,116 @@ class Hyperlink extends Widget {
   this.m_setStyleName__java_lang_String("gwt-Hyperlink");
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Hyperlink = DirectionalTextHelper.$create__org_gwtproject_dom_client_Element__boolean(this.f_anchorElem__org_gwtproject_user_client_ui_Hyperlink_, true);
  }
- /**
-  * Factory method corresponding to constructor 'Hyperlink(String, boolean, Direction, String)'.
-  * @param {?string} text
-  * @param {boolean} asHTML
-  * @param {Direction} dir
-  * @param {?string} targetHistoryToken
-  * @return {!Hyperlink}
-  * @public
-  */
- static $create__java_lang_String__boolean__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(text, asHTML, dir, targetHistoryToken) {
+ //Factory method corresponding to constructor 'Hyperlink(String, boolean, Direction, String)'.
+ /** @return {!Hyperlink} */
+ static $create__java_lang_String__boolean__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(/** ?string */ text, /** boolean */ asHTML, /** Direction */ dir, /** ?string */ targetHistoryToken) {
   let $instance = new Hyperlink();
   $instance.$ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__boolean__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(text, asHTML, dir, targetHistoryToken);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Hyperlink(String, boolean, Direction, String)'.
-  * @param {?string} text
-  * @param {boolean} asHTML
-  * @param {Direction} dir
-  * @param {?string} targetHistoryToken
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__boolean__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(text, asHTML, dir, targetHistoryToken) {
+ //Initialization from constructor 'Hyperlink(String, boolean, Direction, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__boolean__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(/** ?string */ text, /** boolean */ asHTML, /** Direction */ dir, /** ?string */ targetHistoryToken) {
   this.$ctor__org_gwtproject_user_client_ui_Hyperlink__();
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Hyperlink.m_setTextOrHtml__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction__boolean(text, dir, asHTML);
   this.m_setTargetHistoryToken__java_lang_String(targetHistoryToken);
  }
- /**
-  * Factory method corresponding to constructor 'Hyperlink(String, boolean, DirectionEstimator, String)'.
-  * @param {?string} text
-  * @param {boolean} asHTML
-  * @param {DirectionEstimator} directionEstimator
-  * @param {?string} targetHistoryToken
-  * @return {!Hyperlink}
-  * @public
-  */
- static $create__java_lang_String__boolean__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(text, asHTML, directionEstimator, targetHistoryToken) {
+ //Factory method corresponding to constructor 'Hyperlink(String, boolean, DirectionEstimator, String)'.
+ /** @return {!Hyperlink} */
+ static $create__java_lang_String__boolean__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(/** ?string */ text, /** boolean */ asHTML, /** DirectionEstimator */ directionEstimator, /** ?string */ targetHistoryToken) {
   let $instance = new Hyperlink();
   $instance.$ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__boolean__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(text, asHTML, directionEstimator, targetHistoryToken);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Hyperlink(String, boolean, DirectionEstimator, String)'.
-  * @param {?string} text
-  * @param {boolean} asHTML
-  * @param {DirectionEstimator} directionEstimator
-  * @param {?string} targetHistoryToken
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__boolean__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(text, asHTML, directionEstimator, targetHistoryToken) {
+ //Initialization from constructor 'Hyperlink(String, boolean, DirectionEstimator, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Hyperlink__java_lang_String__boolean__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(/** ?string */ text, /** boolean */ asHTML, /** DirectionEstimator */ directionEstimator, /** ?string */ targetHistoryToken) {
   this.$ctor__org_gwtproject_user_client_ui_Hyperlink__();
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Hyperlink.m_setDirectionEstimator__org_gwtproject_i18n_shared_DirectionEstimator(directionEstimator);
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Hyperlink.m_setTextOrHtml__java_lang_String__boolean(text, asHTML);
   this.m_setTargetHistoryToken__java_lang_String(targetHistoryToken);
  }
- /**
-  * @override
-  * @param {ClickHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  * @deprecated
-  */
- m_addClickHandler__org_gwtproject_event_dom_client_ClickHandler(handler) {
+ /** @override @return {HandlerRegistration} @deprecated */
+ m_addClickHandler__org_gwtproject_event_dom_client_ClickHandler(/** ClickHandler */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, ClickEvent.m_getType__());
  }
- /**
-  * @override
-  * @return {DirectionEstimator}
-  * @public
-  */
+ /** @override @return {DirectionEstimator} */
  m_getDirectionEstimator__() {
   return this.f_directionalTextHelper__org_gwtproject_user_client_ui_Hyperlink.m_getDirectionEstimator__();
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getHTML__() {
   return this.f_directionalTextHelper__org_gwtproject_user_client_ui_Hyperlink.m_getHtml__();
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getTargetHistoryToken__() {
   return this.f_targetHistoryToken__org_gwtproject_user_client_ui_Hyperlink_;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getText__() {
   return this.f_directionalTextHelper__org_gwtproject_user_client_ui_Hyperlink.m_getText__();
  }
- /**
-  * @override
-  * @return {Direction}
-  * @public
-  */
+ /** @override @return {Direction} */
  m_getTextDirection__() {
   return this.f_directionalTextHelper__org_gwtproject_user_client_ui_Hyperlink.m_getTextDirection__();
  }
- /**
-  * @override
-  * @param {Event} event
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_user_client_Event(event) {
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_user_client_Event(/** Event */ event) {
   super.m_onBrowserEvent__org_gwtproject_user_client_Event(event);
   if (DOM.m_eventGetType__org_gwtproject_user_client_Event(event) == Event.f_ONCLICK__org_gwtproject_user_client_Event && Hyperlink.f_impl__org_gwtproject_user_client_ui_Hyperlink_.m_handleAsClick__org_gwtproject_user_client_Event(event)) {
    History.m_newItem__java_lang_String(this.m_getTargetHistoryToken__());
    $Overlay.m_preventDefault__$devirt__org_gwtproject_dom_client_NativeEvent(event);
   }
  }
- /**
-  * @override
-  * @param {boolean} enabled
-  * @public
-  */
- m_setDirectionEstimator__boolean(enabled) {
+ /** @override */
+ m_setDirectionEstimator__boolean(/** boolean */ enabled) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Hyperlink.m_setDirectionEstimator__boolean(enabled);
  }
- /**
-  * @override
-  * @param {DirectionEstimator} directionEstimator
-  * @public
-  */
- m_setDirectionEstimator__org_gwtproject_i18n_shared_DirectionEstimator(directionEstimator) {
+ /** @override */
+ m_setDirectionEstimator__org_gwtproject_i18n_shared_DirectionEstimator(/** DirectionEstimator */ directionEstimator) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Hyperlink.m_setDirectionEstimator__org_gwtproject_i18n_shared_DirectionEstimator(directionEstimator);
  }
- /**
-  * @override
-  * @param {SafeHtml} html
-  * @public
-  */
- m_setHTML__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ /** @override */
+ m_setHTML__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   this.m_setHTML__java_lang_String(html.m_asString__());
  }
- /**
-  * @override
-  * @param {?string} html
-  * @public
-  */
- m_setHTML__java_lang_String(html) {
+ /** @override */
+ m_setHTML__java_lang_String(/** ?string */ html) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Hyperlink.m_setHtml__java_lang_String(html);
  }
- /**
-  * @override
-  * @param {SafeHtml} html
-  * @param {Direction} dir
-  * @public
-  */
- m_setHTML__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(html, dir) {
+ /** @override */
+ m_setHTML__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(/** SafeHtml */ html, /** Direction */ dir) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Hyperlink.m_setHtml__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(html, dir);
  }
- /**
-  * @param {?string} targetHistoryToken
-  * @public
-  */
- m_setTargetHistoryToken__java_lang_String(targetHistoryToken) {
+ 
+ m_setTargetHistoryToken__java_lang_String(/** ?string */ targetHistoryToken) {
   $Asserts.$assertWithMessage(!$Equality.$same(targetHistoryToken, null), "targetHistoryToken must not be null, consider using Anchor instead");
   this.f_targetHistoryToken__org_gwtproject_user_client_ui_Hyperlink_ = targetHistoryToken;
   let hash = History.m_encodeHistoryToken__java_lang_String(targetHistoryToken);
   Element_$Overlay.m_setPropertyString__$devirt__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(this.f_anchorElem__org_gwtproject_user_client_ui_Hyperlink_, "href", "#" + j_l_String.m_valueOf__java_lang_Object(hash));
  }
- /**
-  * @override
-  * @param {?string} text
-  * @public
-  */
- m_setText__java_lang_String(text) {
+ /** @override */
+ m_setText__java_lang_String(/** ?string */ text) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Hyperlink.m_setText__java_lang_String(text);
  }
- /**
-  * @override
-  * @param {?string} text
-  * @param {Direction} dir
-  * @public
-  */
- m_setText__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(text, dir) {
+ /** @override */
+ m_setText__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(/** ?string */ text, /** Direction */ dir) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Hyperlink.m_setText__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(text, dir);
  }
- /**
-  * @override
-  * @param {?string} baseID
-  * @public
-  */
- m_onEnsureDebugId__java_lang_String(baseID) {
+ /** @override */
+ m_onEnsureDebugId__java_lang_String(/** ?string */ baseID) {
   UIObject.m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(this.f_anchorElem__org_gwtproject_user_client_ui_Hyperlink_, "", baseID);
   UIObject.m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(this.m_getElement__(), baseID, "wrapper");
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_Hyperlink() {
   this.f_anchorElem__org_gwtproject_user_client_ui_Hyperlink_ = DOM.m_createAnchor__();
  }
- /**
-  * @return {DirectionEstimator}
-  * @public
-  */
+ /** @return {DirectionEstimator} */
  static get f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_Hyperlink() {
   return (Hyperlink.$clinit(), Hyperlink.$f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_Hyperlink);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Hyperlink.$clinit = () =>{};
   Hyperlink.$loadModules();
@@ -474,17 +288,11 @@ class Hyperlink extends Widget {
   Hyperlink.$f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_Hyperlink = DirectionalTextHelper.f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_DirectionalTextHelper;
   Hyperlink.f_impl__org_gwtproject_user_client_ui_Hyperlink_ = HyperlinkImpl.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Hyperlink;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -508,9 +316,9 @@ HasClickHandlers.$markImplementor(Hyperlink);
 HasDirectionEstimator.$markImplementor(Hyperlink);
 HasDirectionalSafeHtml.$markImplementor(Hyperlink);
 
-/** @private {DirectionEstimator} */
+/**@private {DirectionEstimator}*/
 Hyperlink.$f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_Hyperlink;
-/** @public {HyperlinkImpl} */
+/**@type {HyperlinkImpl}*/
 Hyperlink.f_impl__org_gwtproject_user_client_ui_Hyperlink_;
 
 exports = Hyperlink; 

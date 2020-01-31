@@ -11,50 +11,29 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.i18n.client.constants.C
  * @extends {Constants}
  */
 class CurrencyCodeMapConstants {
- /**
-  * @abstract
-  * @return {Map<?string, ?string>}
-  * @public
-  */
+ /** @abstract @return {Map<?string, ?string>} */
  m_currencyMap__() {}
- /**
-  * @param {?function():Map<?string, ?string>} fn
-  * @return {CurrencyCodeMapConstants}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {CurrencyCodeMapConstants} */
+ static $adapt(/** ?function():Map<?string, ?string> */ fn) {
   CurrencyCodeMapConstants.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CurrencyCodeMapConstants.$clinit = () =>{};
   CurrencyCodeMapConstants.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Constants.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_i18n_client_constants_CurrencyCodeMapConstants = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Constants.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_i18n_client_constants_CurrencyCodeMapConstants = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_i18n_client_constants_CurrencyCodeMapConstants;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.i18n.client.constants.CurrencyCodeMapConstants.$LambdaAdaptor$impl');
  }

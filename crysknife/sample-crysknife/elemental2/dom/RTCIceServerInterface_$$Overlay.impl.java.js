@@ -7,43 +7,27 @@ let $Overlay = goog.forwardDeclare('elemental2.dom.RTCIceServerInterface_.GetUrl
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class RTCIceServerInterface___$Overlay {
- /**
-  * @param {!RTCIceServerInterface_} $thisArg
-  * @param {Array<?string>} urls
-  * @public
-  */
- static m_setUrls__$devirt__elemental2_dom_RTCIceServerInterface___elemental2_core_JsArray($thisArg, urls) {
+ 
+ static m_setUrls__$devirt__elemental2_dom_RTCIceServerInterface___elemental2_core_JsArray(/** !RTCIceServerInterface_ */ $thisArg, /** Array<?string> */ urls) {
   RTCIceServerInterface___$Overlay.$clinit();
-  $thisArg.urls = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(urls));
+  $thisArg.urls = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(urls));
  }
- /**
-  * @param {!RTCIceServerInterface_} $thisArg
-  * @param {?string} urls
-  * @public
-  */
- static m_setUrls__$devirt__elemental2_dom_RTCIceServerInterface___java_lang_String($thisArg, urls) {
+ 
+ static m_setUrls__$devirt__elemental2_dom_RTCIceServerInterface___java_lang_String(/** !RTCIceServerInterface_ */ $thisArg, /** ?string */ urls) {
   RTCIceServerInterface___$Overlay.$clinit();
-  $thisArg.urls = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(urls));
+  $thisArg.urls = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(urls));
  }
- /**
-  * @param {!RTCIceServerInterface_} $thisArg
-  * @param {Array<?string>} urls
-  * @public
-  */
- static m_setUrls__$devirt__elemental2_dom_RTCIceServerInterface___arrayOf_java_lang_String($thisArg, urls) {
+ 
+ static m_setUrls__$devirt__elemental2_dom_RTCIceServerInterface___arrayOf_java_lang_String(/** !RTCIceServerInterface_ */ $thisArg, /** Array<?string> */ urls) {
   RTCIceServerInterface___$Overlay.$clinit();
-  RTCIceServerInterface___$Overlay.m_setUrls__$devirt__elemental2_dom_RTCIceServerInterface___elemental2_core_JsArray($thisArg, /**@type {Array<?string>} */ (Js.m_uncheckedCast__java_lang_Object(urls)));
+  RTCIceServerInterface___$Overlay.m_setUrls__$devirt__elemental2_dom_RTCIceServerInterface___elemental2_core_JsArray($thisArg, /**@type {Array<?string>}*/ (Js.m_uncheckedCast__java_lang_Object(urls)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RTCIceServerInterface___$Overlay.$clinit = () =>{};
   RTCIceServerInterface___$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }

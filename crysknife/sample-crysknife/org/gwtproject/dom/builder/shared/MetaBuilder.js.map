@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MetaBuilder.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;MAoBiB,W;;;;;;;CASH,2B,CAAeA,O;;;;;;;CASf,6B,CAAiBC,S;;;;;;;CASjB,wB,CAAYC,I;;;;QA3BT,O;EAAAC,8B;EAAAA;",
+"lineCount":20,
+"mappings":"A;;;;;;;;;MAoBiB,W;;CASH,2B,gBAAeA,O;;CASf,6B,gBAAiBC,S;;CASjB,wB,gBAAYC,I;;QA3BT,O;EAAAC,8B;EAAAA;",
 "sources":["MetaBuilder.java"],
 "names":["content","httpEquiv","name","org.gwtproject.dom.builder.shared.MetaBuilder.<clinit>"]
 }

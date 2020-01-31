@@ -11,84 +11,37 @@ let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
  * @interface
  */
 class HasTreeItems {
- /**
-  * @abstract
-  * @param {SafeHtml} itemHtml
-  * @return {TreeItem}
-  * @public
-  */
- m_addItem__org_gwtproject_safehtml_shared_SafeHtml(itemHtml) {}
- /**
-  * @abstract
-  * @param {TreeItem} item
-  * @public
-  */
- m_addItem__org_gwtproject_user_client_ui_TreeItem(item) {}
- /**
-  * @abstract
-  * @param {IsTreeItem} isItem
-  * @public
-  */
- m_addItem__org_gwtproject_user_client_ui_IsTreeItem(isItem) {}
- /**
-  * @abstract
-  * @param {Widget} widget
-  * @return {TreeItem}
-  * @public
-  */
- m_addItem__org_gwtproject_user_client_ui_Widget(widget) {}
- /**
-  * @abstract
-  * @param {?string} itemText
-  * @return {TreeItem}
-  * @public
-  */
- m_addTextItem__java_lang_String(itemText) {}
- /**
-  * @abstract
-  * @param {TreeItem} item
-  * @public
-  */
- m_removeItem__org_gwtproject_user_client_ui_TreeItem(item) {}
- /**
-  * @abstract
-  * @param {IsTreeItem} isItem
-  * @public
-  */
- m_removeItem__org_gwtproject_user_client_ui_IsTreeItem(isItem) {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract @return {TreeItem} */
+ m_addItem__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ itemHtml) {}
+ /** @abstract */
+ m_addItem__org_gwtproject_user_client_ui_TreeItem(/** TreeItem */ item) {}
+ /** @abstract */
+ m_addItem__org_gwtproject_user_client_ui_IsTreeItem(/** IsTreeItem */ isItem) {}
+ /** @abstract @return {TreeItem} */
+ m_addItem__org_gwtproject_user_client_ui_Widget(/** Widget */ widget) {}
+ /** @abstract @return {TreeItem} */
+ m_addTextItem__java_lang_String(/** ?string */ itemText) {}
+ /** @abstract */
+ m_removeItem__org_gwtproject_user_client_ui_TreeItem(/** TreeItem */ item) {}
+ /** @abstract */
+ m_removeItem__org_gwtproject_user_client_ui_IsTreeItem(/** IsTreeItem */ isItem) {}
+ /** @abstract */
  m_removeItems__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HasTreeItems.$clinit = () =>{};
   HasTreeItems.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_HasTreeItems = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_HasTreeItems = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_HasTreeItems;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

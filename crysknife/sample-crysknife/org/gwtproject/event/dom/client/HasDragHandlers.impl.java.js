@@ -11,42 +11,24 @@ let HandlerRegistration = goog.forwardDeclare('org.gwtproject.event.shared.Handl
  * @extends {HasHandlers}
  */
 class HasDragHandlers {
- /**
-  * @abstract
-  * @param {DragHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDragHandler__org_gwtproject_event_dom_client_DragHandler(handler) {}
- /**
-  * @public
-  */
+ /** @abstract @return {HandlerRegistration} */
+ m_addDragHandler__org_gwtproject_event_dom_client_DragHandler(/** DragHandler */ handler) {}
+ 
  static $clinit() {
   HasDragHandlers.$clinit = () =>{};
   HasDragHandlers.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasHandlers.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_HasDragHandlers = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasHandlers.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_HasDragHandlers = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_HasDragHandlers;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

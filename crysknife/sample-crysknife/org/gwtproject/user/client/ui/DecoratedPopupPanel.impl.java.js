@@ -15,98 +15,64 @@ let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 
 class DecoratedPopupPanel extends PopupPanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {DecoratorPanel} */
+  /**@type {DecoratorPanel}*/
   this.f_decPanel__org_gwtproject_user_client_ui_DecoratedPopupPanel_;
  }
- /**
-  * Factory method corresponding to constructor 'DecoratedPopupPanel()'.
-  * @return {!DecoratedPopupPanel}
-  * @public
-  */
+ //Factory method corresponding to constructor 'DecoratedPopupPanel()'.
+ /** @return {!DecoratedPopupPanel} */
  static $create__() {
   DecoratedPopupPanel.$clinit();
   let $instance = new DecoratedPopupPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_DecoratedPopupPanel__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'DecoratedPopupPanel()'.
-  * @public
-  */
+ //Initialization from constructor 'DecoratedPopupPanel()'.
+ 
  $ctor__org_gwtproject_user_client_ui_DecoratedPopupPanel__() {
   this.$ctor__org_gwtproject_user_client_ui_DecoratedPopupPanel__boolean(false);
  }
- /**
-  * Factory method corresponding to constructor 'DecoratedPopupPanel(boolean)'.
-  * @param {boolean} autoHide
-  * @return {!DecoratedPopupPanel}
-  * @public
-  */
- static $create__boolean(autoHide) {
+ //Factory method corresponding to constructor 'DecoratedPopupPanel(boolean)'.
+ /** @return {!DecoratedPopupPanel} */
+ static $create__boolean(/** boolean */ autoHide) {
   DecoratedPopupPanel.$clinit();
   let $instance = new DecoratedPopupPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_DecoratedPopupPanel__boolean(autoHide);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DecoratedPopupPanel(boolean)'.
-  * @param {boolean} autoHide
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_DecoratedPopupPanel__boolean(autoHide) {
+ //Initialization from constructor 'DecoratedPopupPanel(boolean)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_DecoratedPopupPanel__boolean(/** boolean */ autoHide) {
   this.$ctor__org_gwtproject_user_client_ui_DecoratedPopupPanel__boolean__boolean(autoHide, false);
  }
- /**
-  * Factory method corresponding to constructor 'DecoratedPopupPanel(boolean, boolean)'.
-  * @param {boolean} autoHide
-  * @param {boolean} modal
-  * @return {!DecoratedPopupPanel}
-  * @public
-  */
- static $create__boolean__boolean(autoHide, modal) {
+ //Factory method corresponding to constructor 'DecoratedPopupPanel(boolean, boolean)'.
+ /** @return {!DecoratedPopupPanel} */
+ static $create__boolean__boolean(/** boolean */ autoHide, /** boolean */ modal) {
   DecoratedPopupPanel.$clinit();
   let $instance = new DecoratedPopupPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_DecoratedPopupPanel__boolean__boolean(autoHide, modal);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DecoratedPopupPanel(boolean, boolean)'.
-  * @param {boolean} autoHide
-  * @param {boolean} modal
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_DecoratedPopupPanel__boolean__boolean(autoHide, modal) {
+ //Initialization from constructor 'DecoratedPopupPanel(boolean, boolean)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_DecoratedPopupPanel__boolean__boolean(/** boolean */ autoHide, /** boolean */ modal) {
   this.$ctor__org_gwtproject_user_client_ui_DecoratedPopupPanel__boolean__boolean__java_lang_String(autoHide, modal, "popup");
  }
- /**
-  * Factory method corresponding to constructor 'DecoratedPopupPanel(boolean, boolean, String)'.
-  * @param {boolean} autoHide
-  * @param {boolean} modal
-  * @param {?string} prefix
-  * @return {!DecoratedPopupPanel}
-  * @public
-  */
- static $create__boolean__boolean__java_lang_String(autoHide, modal, prefix) {
+ //Factory method corresponding to constructor 'DecoratedPopupPanel(boolean, boolean, String)'.
+ /** @return {!DecoratedPopupPanel} */
+ static $create__boolean__boolean__java_lang_String(/** boolean */ autoHide, /** boolean */ modal, /** ?string */ prefix) {
   DecoratedPopupPanel.$clinit();
   let $instance = new DecoratedPopupPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_DecoratedPopupPanel__boolean__boolean__java_lang_String(autoHide, modal, prefix);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DecoratedPopupPanel(boolean, boolean, String)'.
-  * @param {boolean} autoHide
-  * @param {boolean} modal
-  * @param {?string} prefix
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_DecoratedPopupPanel__boolean__boolean__java_lang_String(autoHide, modal, prefix) {
+ //Initialization from constructor 'DecoratedPopupPanel(boolean, boolean, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_DecoratedPopupPanel__boolean__boolean__java_lang_String(/** boolean */ autoHide, /** boolean */ modal, /** ?string */ prefix) {
   this.$ctor__org_gwtproject_user_client_ui_PopupPanel__boolean__boolean(autoHide, modal);
-  let rowStyles = /**@type {!Array<?string>} */ ($Arrays.$init([j_l_String.m_valueOf__java_lang_Object(prefix) + "Top", j_l_String.m_valueOf__java_lang_Object(prefix) + "Middle", j_l_String.m_valueOf__java_lang_Object(prefix) + "Bottom"], j_l_String));
+  let rowStyles = /**@type {!Array<?string>}*/ ($Arrays.$init([j_l_String.m_valueOf__java_lang_Object(prefix) + "Top", j_l_String.m_valueOf__java_lang_Object(prefix) + "Middle", j_l_String.m_valueOf__java_lang_Object(prefix) + "Bottom"], j_l_String));
   this.f_decPanel__org_gwtproject_user_client_ui_DecoratedPopupPanel_ = DecoratorPanel.$create__arrayOf_java_lang_String__int(rowStyles, 1);
   this.f_decPanel__org_gwtproject_user_client_ui_DecoratedPopupPanel_.m_setStyleName__java_lang_String("");
   this.m_setStylePrimaryName__java_lang_String(DecoratedPopupPanel.f_DEFAULT_STYLENAME__org_gwtproject_user_client_ui_DecoratedPopupPanel_);
@@ -114,107 +80,60 @@ class DecoratedPopupPanel extends PopupPanel {
   UIObject.m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String__boolean(this.m_getContainerElement__(), "popupContent", false);
   UIObject.m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String__boolean(this.f_decPanel__org_gwtproject_user_client_ui_DecoratedPopupPanel_.m_getContainerElement__(), j_l_String.m_valueOf__java_lang_Object(prefix) + "Content", true);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_clear__() {
   this.f_decPanel__org_gwtproject_user_client_ui_DecoratedPopupPanel_.m_clear__();
  }
- /**
-  * @override
-  * @return {Widget}
-  * @public
-  */
+ /** @override @return {Widget} */
  m_getWidget__() {
   return this.f_decPanel__org_gwtproject_user_client_ui_DecoratedPopupPanel_.m_getWidget__();
  }
- /**
-  * @override
-  * @return {Iterator<Widget>}
-  * @public
-  */
+ /** @override @return {Iterator<Widget>} */
  m_iterator__() {
   return this.f_decPanel__org_gwtproject_user_client_ui_DecoratedPopupPanel_.m_iterator__();
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   return this.f_decPanel__org_gwtproject_user_client_ui_DecoratedPopupPanel_.m_remove__org_gwtproject_user_client_ui_Widget(w);
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @public
-  */
- m_setWidget__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override */
+ m_setWidget__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   this.f_decPanel__org_gwtproject_user_client_ui_DecoratedPopupPanel_.m_setWidget__org_gwtproject_user_client_ui_Widget(w);
   this.m_maybeUpdateSize___$pp_org_gwtproject_user_client_ui();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_doAttachChildren__() {
   this.f_decPanel__org_gwtproject_user_client_ui_DecoratedPopupPanel_.m_onAttach__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_doDetachChildren__() {
   this.f_decPanel__org_gwtproject_user_client_ui_DecoratedPopupPanel_.m_onDetach__();
  }
- /**
-  * @param {number} row
-  * @param {number} cell
-  * @return {Object}
-  * @public
-  */
- m_getCellElement__int__int(row, cell) {
+ /** @return {Object} */
+ m_getCellElement__int__int(/** number */ row, /** number */ cell) {
   return this.f_decPanel__org_gwtproject_user_client_ui_DecoratedPopupPanel_.m_getCellElement__int__int(row, cell);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DecoratedPopupPanel.$clinit = () =>{};
   DecoratedPopupPanel.$loadModules();
   PopupPanel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DecoratedPopupPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -226,7 +145,7 @@ class DecoratedPopupPanel extends PopupPanel {
 }
 $Util.$setClassMetadata(DecoratedPopupPanel, 'org.gwtproject.user.client.ui.DecoratedPopupPanel');
 
-/** @public {?string} @const */
+/**@const {?string}*/
 DecoratedPopupPanel.f_DEFAULT_STYLENAME__org_gwtproject_user_client_ui_DecoratedPopupPanel_ = "gwt-DecoratedPopupPanel";
 
 exports = DecoratedPopupPanel; 

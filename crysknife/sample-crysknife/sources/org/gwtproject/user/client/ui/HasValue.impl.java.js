@@ -11,57 +11,29 @@ const TakesValue = goog.require('org.gwtproject.user.client.TakesValue$impl');
  * @extends {HasValueChangeHandlers<T>}
  */
 class HasValue {
- /**
-  * @abstract
-  * @override
-  * @return {T}
-  * @public
-  */
+ /** @abstract @override @return {T} */
  m_getValue__() {}
- /**
-  * @abstract
-  * @override
-  * @param {T} value
-  * @public
-  */
- m_setValue__java_lang_Object(value) {}
- /**
-  * @abstract
-  * @param {T} value
-  * @param {boolean} fireEvents
-  * @public
-  */
- m_setValue__java_lang_Object__boolean(value, fireEvents) {}
- /**
-  * @public
-  */
+ /** @abstract @override */
+ m_setValue__java_lang_Object(/** T */ value) {}
+ /** @abstract */
+ m_setValue__java_lang_Object__boolean(/** T */ value, /** boolean */ fireEvents) {}
+ 
  static $clinit() {
   HasValue.$clinit = () =>{};
   HasValue.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  TakesValue.$markImplementor(classConstructor);
-  HasValueChangeHandlers.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_HasValue = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  TakesValue.$markImplementor(ctor);
+  HasValueChangeHandlers.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_HasValue = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_HasValue;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

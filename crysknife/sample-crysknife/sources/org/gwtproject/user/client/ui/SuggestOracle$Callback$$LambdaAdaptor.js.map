@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SuggestOracle$Callback$$LambdaAdaptor.impl.java.js",
-"lineCount":50,
-"mappings":"A;;;;;;;;;;;;MAqCmB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;mF;EAAAA,sJ;;;;;;CAAA,4I;EAAAC,iC;EAAAA,sF;;;;;;;CAAA,+H;;GAAAC,iG;GAAAA,sB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":38,
+"mappings":"A;;;;;;;;;;;;MAqCmB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;mF;EAAAA,sJ;;;CAAA,4I;EAAAC,iC;EAAAA,sF;;;CAAA,+H;;GAAAC,iG;GAAAA,sB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["SuggestOracle.java"],
 "names":["org.gwtproject.user.client.ui.SuggestOracle$Callback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.client.ui.SuggestOracle$Callback$$LambdaAdaptor.<init>","org.gwtproject.user.client.ui.SuggestOracle$Callback$$LambdaAdaptor.onSuggestionsReady","org.gwtproject.user.client.ui.SuggestOracle$Callback$$LambdaAdaptor.<clinit>"]
 }

@@ -6,24 +6,17 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Overlay = goog.forwardDeclare('jsinterop.base.JsPropertyMap.$Overlay$impl');
 
 class DeviceOrientationEventInit_$Overlay {
- /**
-  * @return {DeviceOrientationEventInit}
-  * @public
-  */
+ /** @return {DeviceOrientationEventInit} */
  static m_create__() {
   DeviceOrientationEventInit_$Overlay.$clinit();
-  return /**@type {DeviceOrientationEventInit} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
+  return /**@type {DeviceOrientationEventInit}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DeviceOrientationEventInit_$Overlay.$clinit = () =>{};
   DeviceOrientationEventInit_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');

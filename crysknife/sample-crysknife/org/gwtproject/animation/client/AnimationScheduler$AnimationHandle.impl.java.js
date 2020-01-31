@@ -7,42 +7,27 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @abstract
   */
 class AnimationHandle extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_animation_client_AnimationScheduler_AnimationHandle__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_cancel__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AnimationHandle.$clinit = () =>{};
   AnimationHandle.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AnimationHandle;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"FieldUpdater$$LambdaAdaptor.impl.java.js",
-"lineCount":49,
-"mappings":"A;;;;;;;;;;MAwBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sE;EAAAA,4H;;;;;;CAAA,kH;EAAAC,iC;EAAAA,yE;;;;;;;;CAAA,iD;;GAAAC,oF;GAAAA,4B;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":36,
+"mappings":"A;;;;;;;;;;MAwBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sE;EAAAA,4H;;;CAAA,kH;EAAAC,iC;EAAAA,yE;;;CAAA,iD;;GAAAC,oF;GAAAA,4B;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["FieldUpdater.java"],
 "names":["org.gwtproject.cell.client.FieldUpdater$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.cell.client.FieldUpdater$$LambdaAdaptor.<init>","org.gwtproject.cell.client.FieldUpdater$$LambdaAdaptor.update","org.gwtproject.cell.client.FieldUpdater$$LambdaAdaptor.<clinit>"]
 }

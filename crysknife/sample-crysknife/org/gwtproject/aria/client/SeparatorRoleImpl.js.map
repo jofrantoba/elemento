@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SeparatorRoleImpl.impl.java.js",
-"lineCount":100,
-"mappings":"A;;;;;;;;;;;;;;;;MAsBM,iB;;;;CAAA,W;EAAAA,Q;;;;;;;QAEJ,yB,CAAyBC,Q;EAAzBC,4B;EAAAA,wC;EAAAA,0F;EAAAA,iB;;;;;;CAAA,qE,CAAyBD,Q;EACvBE,4E;;;;;;;;CAIY,yD,CAA6BC,O;EACzCC,4G;;;;;;;;CAIY,+D,CAAmCD,O;EAC/CE,qH;;;;;;;CAIU,4D,CAAgCF,O;EAC1CG,wG;;;;;;;CAIU,kE,CAAsCH,O;EAChDI,iH;;;;;;;;CAIU,mG,CAA6BJ,O,EAAuBK,K;EAC9DC,4M;;;;;;;;CAIU,4G,CAAmCN,O,EAA0BK,K;EACvEE,2N;;;;;QAjCE,O;EAAAC,oC;EAAAA,iC;EAAAA;",
+"lineCount":61,
+"mappings":"A;;;;;;;;;;;;;;;;MAsBM,iB;;CAAA,W;EAAAA,Q;;;QAEJ,yB,gBAAyBC,Q;EAAzBC,4B;EAAAA,wC;EAAAA,0F;EAAAA,iB;;;CAAA,qE,gBAAyBD,Q;EACvBE,4E;;;CAIY,yD,eAA6BC,O;EACzCC,4G;;;CAIY,+D,eAAmCD,O;EAC/CE,qH;;;CAIU,4D,eAAgCF,O;EAC1CG,wG;;;CAIU,kE,eAAsCH,O;EAChDI,iH;;;CAIU,mG,eAA6BJ,O,uBAAuBK,K;EAC9DC,2M;;;CAIU,4G,eAAmCN,O,0BAA0BK,K;EACvEE,0N;;;QAjCE,O;EAAAC,oC;EAAAA,iC;EAAAA;",
 "sources":["SeparatorRoleImpl.java"],
 "names":["org.gwtproject.aria.client.SeparatorRoleImpl.<synthetic: ctor_js>","roleName","org.gwtproject.aria.client.SeparatorRoleImpl.<synthetic: ctor_create>","org.gwtproject.aria.client.SeparatorRoleImpl.<init>","element","org.gwtproject.aria.client.SeparatorRoleImpl.getAriaExpandedState","org.gwtproject.aria.client.SeparatorRoleImpl.getAriaOrientationProperty","org.gwtproject.aria.client.SeparatorRoleImpl.removeAriaExpandedState","org.gwtproject.aria.client.SeparatorRoleImpl.removeAriaOrientationProperty","value","org.gwtproject.aria.client.SeparatorRoleImpl.setAriaExpandedState","org.gwtproject.aria.client.SeparatorRoleImpl.setAriaOrientationProperty","org.gwtproject.aria.client.SeparatorRoleImpl.<clinit>"]
 }

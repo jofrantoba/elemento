@@ -16,39 +16,26 @@ let Window = goog.forwardDeclare('org.gwtproject.user.window.client.Window$impl'
  * @implements {ResizeHandler}
   */
 class $1 extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {PopupPanel} */
+  /**@type {PopupPanel}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_PopupPanel_1;
  }
- /**
-  * @param {PopupPanel} $outer_this
-  * @return {!$1}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_PopupPanel($outer_this) {
+ /** @return {!$1} */
+ static $create__org_gwtproject_user_client_ui_PopupPanel(/** PopupPanel */ $outer_this) {
   $1.$clinit();
   let $instance = new $1();
   $instance.$ctor__org_gwtproject_user_client_ui_PopupPanel_1__org_gwtproject_user_client_ui_PopupPanel($outer_this);
   return $instance;
  }
- /**
-  * @param {PopupPanel} $outer_this
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_PopupPanel_1__org_gwtproject_user_client_ui_PopupPanel($outer_this) {
+ 
+ $ctor__org_gwtproject_user_client_ui_PopupPanel_1__org_gwtproject_user_client_ui_PopupPanel(/** PopupPanel */ $outer_this) {
   this.f_$outer_this__org_gwtproject_user_client_ui_PopupPanel_1 = $outer_this;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {ResizeEvent} event
-  * @public
-  */
- m_onResize__org_gwtproject_event_logical_shared_ResizeEvent(event) {
+ /** @override */
+ m_onResize__org_gwtproject_event_logical_shared_ResizeEvent(/** ResizeEvent */ event) {
   let style = this.f_$outer_this__org_gwtproject_user_client_ui_PopupPanel_1.f_glass__org_gwtproject_user_client_ui_PopupPanel_.style;
   let winWidth = Window.m_getClientWidth__();
   let winHeight = Window.m_getClientHeight__();
@@ -61,25 +48,17 @@ class $1 extends j_l_Object {
   $Overlay.m_setHeight__$devirt__org_gwtproject_dom_client_Style__double__org_gwtproject_dom_style_shared_Unit(style, Math.max(height, winHeight), Unit.f_PX__org_gwtproject_dom_style_shared_Unit);
   $Overlay.m_setDisplay__$devirt__org_gwtproject_dom_client_Style__org_gwtproject_dom_style_shared_Display(style, Display.f_BLOCK__org_gwtproject_dom_style_shared_Display);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $1.$clinit = () =>{};
   $1.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $1;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Document_$Overlay = goog.module.get('org.gwtproject.dom.client.Document.$Overlay$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.Style.$Overlay$impl');

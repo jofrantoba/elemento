@@ -16,126 +16,71 @@ let TrustedHTML_$Overlay = goog.forwardDeclare('elemental2.dom.TrustedHTML.$Over
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class Document_$Overlay {
- /**
-  * @param {!Document} $thisArg
-  * @param {Array<Node>} nodes
-  * @public
-  */
- static m_append__$devirt__elemental2_dom_Document__arrayOf_elemental2_dom_Node($thisArg, nodes) {
+ 
+ static m_append__$devirt__elemental2_dom_Document__arrayOf_elemental2_dom_Node(/** !Document */ $thisArg, /** Array<Node> */ nodes) {
   Document_$Overlay.$clinit();
-  $thisArg.append(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(nodes)));
+  $thisArg.append(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(nodes)));
  }
- /**
-  * @param {!Document} $thisArg
-  * @param {Array<?string>} nodes
-  * @public
-  */
- static m_append__$devirt__elemental2_dom_Document__arrayOf_java_lang_String($thisArg, nodes) {
+ 
+ static m_append__$devirt__elemental2_dom_Document__arrayOf_java_lang_String(/** !Document */ $thisArg, /** Array<?string> */ nodes) {
   Document_$Overlay.$clinit();
-  $thisArg.append(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(nodes)));
+  $thisArg.append(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(nodes)));
  }
- /**
-  * @param {!Document} $thisArg
-  * @param {?string} data
-  * @return {Text}
-  * @public
-  */
- static m_createTextNode__$devirt__elemental2_dom_Document__java_lang_String($thisArg, data) {
+ /** @return {Text} */
+ static m_createTextNode__$devirt__elemental2_dom_Document__java_lang_String(/** !Document */ $thisArg, /** ?string */ data) {
   Document_$Overlay.$clinit();
-  return $thisArg.createTextNode(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(data)));
+  return $thisArg.createTextNode(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(data)));
  }
- /**
-  * @param {!Document} $thisArg
-  * @param {number} data
-  * @return {Text}
-  * @public
-  */
- static m_createTextNode__$devirt__elemental2_dom_Document__double($thisArg, data) {
+ /** @return {Text} */
+ static m_createTextNode__$devirt__elemental2_dom_Document__double(/** !Document */ $thisArg, /** number */ data) {
   Document_$Overlay.$clinit();
-  return $thisArg.createTextNode(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(data)));
+  return $thisArg.createTextNode(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(data)));
  }
- /**
-  * @param {!Document} $thisArg
-  * @param {Array<Touch>} touches
-  * @return {TouchList}
-  * @public
-  */
- static m_createTouchList__$devirt__elemental2_dom_Document__arrayOf_elemental2_dom_Touch($thisArg, touches) {
+ /** @return {TouchList} */
+ static m_createTouchList__$devirt__elemental2_dom_Document__arrayOf_elemental2_dom_Touch(/** !Document */ $thisArg, /** Array<Touch> */ touches) {
   Document_$Overlay.$clinit();
-  return $thisArg.createTouchList(/**@type {Array<Touch>} */ (Js.m_uncheckedCast__java_lang_Object(touches)));
+  return $thisArg.createTouchList(/**@type {Array<Touch>}*/ (Js.m_uncheckedCast__java_lang_Object(touches)));
  }
- /**
-  * @param {!Document} $thisArg
-  * @param {Array<Node>} nodes
-  * @public
-  */
- static m_prepend__$devirt__elemental2_dom_Document__arrayOf_elemental2_dom_Node($thisArg, nodes) {
+ 
+ static m_prepend__$devirt__elemental2_dom_Document__arrayOf_elemental2_dom_Node(/** !Document */ $thisArg, /** Array<Node> */ nodes) {
   Document_$Overlay.$clinit();
-  $thisArg.prepend(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(nodes)));
+  $thisArg.prepend(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(nodes)));
  }
- /**
-  * @param {!Document} $thisArg
-  * @param {Array<?string>} nodes
-  * @public
-  */
- static m_prepend__$devirt__elemental2_dom_Document__arrayOf_java_lang_String($thisArg, nodes) {
+ 
+ static m_prepend__$devirt__elemental2_dom_Document__arrayOf_java_lang_String(/** !Document */ $thisArg, /** Array<?string> */ nodes) {
   Document_$Overlay.$clinit();
-  $thisArg.prepend(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(nodes)));
+  $thisArg.prepend(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(nodes)));
  }
- /**
-  * @param {!Document} $thisArg
-  * @param {?string} text
-  * @public
-  */
- static m_write__$devirt__elemental2_dom_Document__java_lang_String($thisArg, text) {
+ 
+ static m_write__$devirt__elemental2_dom_Document__java_lang_String(/** !Document */ $thisArg, /** ?string */ text) {
   Document_$Overlay.$clinit();
-  $thisArg.write(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(text)));
+  $thisArg.write(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(text)));
  }
- /**
-  * @param {!Document} $thisArg
-  * @param {TrustedHTML} text
-  * @public
-  */
- static m_write__$devirt__elemental2_dom_Document__elemental2_dom_TrustedHTML($thisArg, text) {
+ 
+ static m_write__$devirt__elemental2_dom_Document__elemental2_dom_TrustedHTML(/** !Document */ $thisArg, /** TrustedHTML */ text) {
   Document_$Overlay.$clinit();
-  $thisArg.write(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(text)));
+  $thisArg.write(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(text)));
  }
- /**
-  * @param {!Document} $thisArg
-  * @param {?string} text
-  * @public
-  */
- static m_writeln__$devirt__elemental2_dom_Document__java_lang_String($thisArg, text) {
+ 
+ static m_writeln__$devirt__elemental2_dom_Document__java_lang_String(/** !Document */ $thisArg, /** ?string */ text) {
   Document_$Overlay.$clinit();
-  $thisArg.writeln(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(text)));
+  $thisArg.writeln(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(text)));
  }
- /**
-  * @param {!Document} $thisArg
-  * @param {TrustedHTML} text
-  * @public
-  */
- static m_writeln__$devirt__elemental2_dom_Document__elemental2_dom_TrustedHTML($thisArg, text) {
+ 
+ static m_writeln__$devirt__elemental2_dom_Document__elemental2_dom_TrustedHTML(/** !Document */ $thisArg, /** TrustedHTML */ text) {
   Document_$Overlay.$clinit();
-  $thisArg.writeln(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(text)));
+  $thisArg.writeln(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(text)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Document_$Overlay.$clinit = () =>{};
   Document_$Overlay.$loadModules();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Document;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }

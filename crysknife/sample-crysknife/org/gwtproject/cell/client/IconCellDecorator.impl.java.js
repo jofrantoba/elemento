@@ -34,72 +34,46 @@ let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
  * @implements {Cell<C>}
   */
 class IconCellDecorator extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Cell<C>} */
+  /**@type {Cell<C>}*/
   this.f_cell__org_gwtproject_cell_client_IconCellDecorator_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_direction__org_gwtproject_cell_client_IconCellDecorator_;
-  /** @public {SafeHtml} */
+  /**@type {SafeHtml}*/
   this.f_iconHtml__org_gwtproject_cell_client_IconCellDecorator_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_imageWidth__org_gwtproject_cell_client_IconCellDecorator_ = 0;
-  /** @public {SafeStyles} */
+  /**@type {SafeStyles}*/
   this.f_outerDivPadding__org_gwtproject_cell_client_IconCellDecorator_;
-  /** @public {SafeHtml} */
+  /**@type {SafeHtml}*/
   this.f_placeHolderHtml__org_gwtproject_cell_client_IconCellDecorator_;
  }
- /**
-  * Factory method corresponding to constructor 'IconCellDecorator(ImageResource, Cell)'.
-  * @template C
-  * @param {ImageResource} icon
-  * @param {Cell<C>} cell
-  * @return {!IconCellDecorator<C>}
-  * @public
-  */
- static $create__org_gwtproject_resources_client_ImageResource__org_gwtproject_cell_client_Cell(icon, cell) {
+ //Factory method corresponding to constructor 'IconCellDecorator(ImageResource, Cell)'.
+ /** @template C @return {!IconCellDecorator<C>} */
+ static $create__org_gwtproject_resources_client_ImageResource__org_gwtproject_cell_client_Cell(/** ImageResource */ icon, /** Cell<C> */ cell) {
   IconCellDecorator.$clinit();
   let $instance = new IconCellDecorator();
   $instance.$ctor__org_gwtproject_cell_client_IconCellDecorator__org_gwtproject_resources_client_ImageResource__org_gwtproject_cell_client_Cell(icon, cell);
   return $instance;
  }
- /**
-  * Initialization from constructor 'IconCellDecorator(ImageResource, Cell)'.
-  * @param {ImageResource} icon
-  * @param {Cell<C>} cell
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_IconCellDecorator__org_gwtproject_resources_client_ImageResource__org_gwtproject_cell_client_Cell(icon, cell) {
+ //Initialization from constructor 'IconCellDecorator(ImageResource, Cell)'.
+ 
+ $ctor__org_gwtproject_cell_client_IconCellDecorator__org_gwtproject_resources_client_ImageResource__org_gwtproject_cell_client_Cell(/** ImageResource */ icon, /** Cell<C> */ cell) {
   this.$ctor__org_gwtproject_cell_client_IconCellDecorator__org_gwtproject_resources_client_ImageResource__org_gwtproject_cell_client_Cell__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant__int(icon, cell, HasVerticalAlignment.f_ALIGN_MIDDLE__org_gwtproject_user_client_ui_HasVerticalAlignment, IconCellDecorator.f_DEFAULT_SPACING__org_gwtproject_cell_client_IconCellDecorator_);
  }
- /**
-  * Factory method corresponding to constructor 'IconCellDecorator(ImageResource, Cell, VerticalAlignmentConstant, int)'.
-  * @template C
-  * @param {ImageResource} icon
-  * @param {Cell<C>} cell
-  * @param {VerticalAlignmentConstant} valign
-  * @param {number} spacing
-  * @return {!IconCellDecorator<C>}
-  * @public
-  */
- static $create__org_gwtproject_resources_client_ImageResource__org_gwtproject_cell_client_Cell__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant__int(icon, cell, valign, spacing) {
+ //Factory method corresponding to constructor 'IconCellDecorator(ImageResource, Cell, VerticalAlignmentConstant, int)'.
+ /** @template C @return {!IconCellDecorator<C>} */
+ static $create__org_gwtproject_resources_client_ImageResource__org_gwtproject_cell_client_Cell__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant__int(/** ImageResource */ icon, /** Cell<C> */ cell, /** VerticalAlignmentConstant */ valign, /** number */ spacing) {
   IconCellDecorator.$clinit();
   let $instance = new IconCellDecorator();
   $instance.$ctor__org_gwtproject_cell_client_IconCellDecorator__org_gwtproject_resources_client_ImageResource__org_gwtproject_cell_client_Cell__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant__int(icon, cell, valign, spacing);
   return $instance;
  }
- /**
-  * Initialization from constructor 'IconCellDecorator(ImageResource, Cell, VerticalAlignmentConstant, int)'.
-  * @param {ImageResource} icon
-  * @param {Cell<C>} cell
-  * @param {VerticalAlignmentConstant} valign
-  * @param {number} spacing
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_IconCellDecorator__org_gwtproject_resources_client_ImageResource__org_gwtproject_cell_client_Cell__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant__int(icon, cell, valign, spacing) {
+ //Initialization from constructor 'IconCellDecorator(ImageResource, Cell, VerticalAlignmentConstant, int)'.
+ 
+ $ctor__org_gwtproject_cell_client_IconCellDecorator__org_gwtproject_resources_client_ImageResource__org_gwtproject_cell_client_Cell__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant__int(/** ImageResource */ icon, /** Cell<C> */ cell, /** VerticalAlignmentConstant */ valign, /** number */ spacing) {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_cell_client_IconCellDecorator();
   this.f_cell__org_gwtproject_cell_client_IconCellDecorator_ = cell;
@@ -108,110 +82,50 @@ class IconCellDecorator extends j_l_Object {
   this.f_placeHolderHtml__org_gwtproject_cell_client_IconCellDecorator_ = this.m_getImageHtml__org_gwtproject_resources_client_ImageResource__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant__boolean_$pp_org_gwtproject_cell_client(icon, valign, true);
   this.f_outerDivPadding__org_gwtproject_cell_client_IconCellDecorator_ = SafeStylesUtils.m_fromTrustedString__java_lang_String("padding-" + j_l_String.m_valueOf__java_lang_Object(this.f_direction__org_gwtproject_cell_client_IconCellDecorator_) + ": " + this.f_imageWidth__org_gwtproject_cell_client_IconCellDecorator_ + "px;");
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_dependsOnSelection__() {
   return this.f_cell__org_gwtproject_cell_client_IconCellDecorator_.m_dependsOnSelection__();
  }
- /**
-  * @override
-  * @return {Set<?string>}
-  * @public
-  */
+ /** @override @return {Set<?string>} */
  m_getConsumedEvents__() {
   return this.f_cell__org_gwtproject_cell_client_IconCellDecorator_.m_getConsumedEvents__();
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_handlesSelection__() {
   return this.f_cell__org_gwtproject_cell_client_IconCellDecorator_.m_handlesSelection__();
  }
- /**
-  * @override
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {C} value
-  * @return {boolean}
-  * @public
-  */
- m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(context, parent, value) {
+ /** @override @return {boolean} */
+ m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(/** Context */ context, /** Object */ parent, /** C */ value) {
   return this.f_cell__org_gwtproject_cell_client_IconCellDecorator_.m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(context, this.m_getCellParent__org_gwtproject_dom_client_Element_$p_org_gwtproject_cell_client_IconCellDecorator(parent), value);
  }
- /**
-  * @override
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {C} value
-  * @param {Object} event
-  * @param {ValueUpdater<C>} valueUpdater
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, parent, value, event, valueUpdater) {
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(/** Context */ context, /** Object */ parent, /** C */ value, /** Object */ event, /** ValueUpdater<C> */ valueUpdater) {
   this.f_cell__org_gwtproject_cell_client_IconCellDecorator_.m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, this.m_getCellParent__org_gwtproject_dom_client_Element_$p_org_gwtproject_cell_client_IconCellDecorator(parent), value, event, valueUpdater);
  }
- /**
-  * @override
-  * @param {Context} context
-  * @param {C} value
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, value, sb) {
+ /** @override */
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ context, /** C */ value, /** SafeHtmlBuilder */ sb) {
   let cellBuilder = SafeHtmlBuilder.$create__();
   this.f_cell__org_gwtproject_cell_client_IconCellDecorator_.m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, value, cellBuilder);
   sb.m_append__org_gwtproject_safehtml_shared_SafeHtml(Template.f_INSTANCE__org_gwtproject_cell_client_IconCellDecorator_Template.m_outerDiv__org_gwtproject_safecss_shared_SafeStyles__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_safehtml_shared_SafeHtml(this.f_outerDivPadding__org_gwtproject_cell_client_IconCellDecorator_, this.m_isIconUsed__java_lang_Object(value) ? this.m_getIconHtml__java_lang_Object(value) : this.f_placeHolderHtml__org_gwtproject_cell_client_IconCellDecorator_, cellBuilder.m_toSafeHtml__()));
  }
- /**
-  * @override
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {C} value
-  * @return {boolean}
-  * @public
-  */
- m_resetFocus__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(context, parent, value) {
+ /** @override @return {boolean} */
+ m_resetFocus__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(/** Context */ context, /** Object */ parent, /** C */ value) {
   return this.f_cell__org_gwtproject_cell_client_IconCellDecorator_.m_resetFocus__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(context, this.m_getCellParent__org_gwtproject_dom_client_Element_$p_org_gwtproject_cell_client_IconCellDecorator(parent), value);
  }
- /**
-  * @override
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {C} value
-  * @public
-  */
- m_setValue__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(context, parent, value) {
+ /** @override */
+ m_setValue__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(/** Context */ context, /** Object */ parent, /** C */ value) {
   this.f_cell__org_gwtproject_cell_client_IconCellDecorator_.m_setValue__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(context, this.m_getCellParent__org_gwtproject_dom_client_Element_$p_org_gwtproject_cell_client_IconCellDecorator(parent), value);
  }
- /**
-  * @param {C} value
-  * @return {SafeHtml}
-  * @public
-  */
- m_getIconHtml__java_lang_Object(value) {
+ /** @return {SafeHtml} */
+ m_getIconHtml__java_lang_Object(/** C */ value) {
   return this.f_iconHtml__org_gwtproject_cell_client_IconCellDecorator_;
  }
- /**
-  * @param {C} value
-  * @return {boolean}
-  * @public
-  */
- m_isIconUsed__java_lang_Object(value) {
+ /** @return {boolean} */
+ m_isIconUsed__java_lang_Object(/** C */ value) {
   return true;
  }
- /**
-  * @param {ImageResource} res
-  * @param {VerticalAlignmentConstant} valign
-  * @param {boolean} isPlaceholder
-  * @return {SafeHtml}
-  * @public
-  */
- m_getImageHtml__org_gwtproject_resources_client_ImageResource__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant__boolean_$pp_org_gwtproject_cell_client(res, valign, isPlaceholder) {
+ /** @return {SafeHtml} */
+ m_getImageHtml__org_gwtproject_resources_client_ImageResource__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant__boolean_$pp_org_gwtproject_cell_client(/** ImageResource */ res, /** VerticalAlignmentConstant */ valign, /** boolean */ isPlaceholder) {
   let /** SafeHtml */ image;
   if (isPlaceholder) {
    image = SafeHtmlUtils.m_fromSafeConstant__java_lang_String("<div></div>");
@@ -230,39 +144,25 @@ class IconCellDecorator extends j_l_Object {
    return Template.f_INSTANCE__org_gwtproject_cell_client_IconCellDecorator_Template.m_imageWrapperMiddle__org_gwtproject_safecss_shared_SafeStyles__org_gwtproject_safehtml_shared_SafeHtml(cssStyles.m_toSafeStyles__(), image);
   }
  }
- /**
-  * @param {Object} parent
-  * @return {Object}
-  * @public
-  */
- m_getCellParent__org_gwtproject_dom_client_Element_$p_org_gwtproject_cell_client_IconCellDecorator(parent) {
-  return /**@type {Object} */ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Node_$Overlay.m_getChild__$devirt__org_gwtproject_dom_client_Node__int(Element_$Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(parent), 1)), Element_$Overlay));
+ /** @return {Object} */
+ m_getCellParent__org_gwtproject_dom_client_Element_$p_org_gwtproject_cell_client_IconCellDecorator(/** Object */ parent) {
+  return /**@type {Object}*/ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Node_$Overlay.m_getChild__$devirt__org_gwtproject_dom_client_Node__int(Element_$Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(parent), 1)), Element_$Overlay));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_cell_client_IconCellDecorator() {
   this.f_direction__org_gwtproject_cell_client_IconCellDecorator_ = LocaleInfo.m_getCurrentLocale__().m_isRTL__() ? "right" : "left";
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   IconCellDecorator.$clinit = () =>{};
   IconCellDecorator.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof IconCellDecorator;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Math = goog.module.get('java.lang.Math$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -287,7 +187,7 @@ $Util.$setClassMetadata(IconCellDecorator, 'org.gwtproject.cell.client.IconCellD
 
 Cell.$markImplementor(IconCellDecorator);
 
-/** @public {number} @const */
+/**@const {number}*/
 IconCellDecorator.f_DEFAULT_SPACING__org_gwtproject_cell_client_IconCellDecorator_ = 6;
 
 exports = IconCellDecorator; 

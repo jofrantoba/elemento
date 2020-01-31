@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SimplePager$ImageButtonsConstants.impl.java.js",
-"lineCount":90,
-"mappings":"A;;;;;;;;;;;MAmDmB,qB;;;;;;CAIR,e;;;;;;CAEA,a;;;;;;CAEA,Y;;;;;;CAEA,Y;;;;;;CAEA,Y;;;;;QAXP,qF;EAAAA,mJ;;;;;QADe,O;EAAAC,wC;EAAAA,qC;EACfA,kK;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AADe;;",
+"lineCount":54,
+"mappings":"A;;;;;;;;;;;MAmDmB,qB;;CAIR,e;;CAEA,a;;CAEA,Y;;CAEA,Y;;CAEA,Y;;QAXP,qF;EAAAA,mJ;;;QADe,O;EAAAC,wC;EAAAA,qC;EACfA,kK;;;;;;;;;;;;;;;;;;;;;;AADe;;",
 "sources":["SimplePager.java"],
 "names":["org.gwtproject.user.cellview.client.SimplePager$ImageButtonsConstants.<synthetic: getter>","org.gwtproject.user.cellview.client.SimplePager$ImageButtonsConstants.<clinit>"]
 }

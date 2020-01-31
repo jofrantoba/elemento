@@ -13,69 +13,42 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {LabelBuilder}
   */
 class DomLabelBuilder extends DomElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @return {!DomLabelBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ /** @return {!DomLabelBuilder} */
+ static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   DomLabelBuilder.$clinit();
   let $instance = new DomLabelBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_client_DomLabelBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_client_DomLabelBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_client_DomLabelBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_client_DomElementBuilderBase__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
  }
- /**
-  * @override
-  * @param {?string} accessKey
-  * @return {LabelBuilder}
-  * @public
-  */
- m_accessKey__java_lang_String(accessKey) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).accessKey = accessKey;
+ /** @override @return {LabelBuilder} */
+ m_accessKey__java_lang_String(/** ?string */ accessKey) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).accessKey = accessKey;
   return this;
  }
- /**
-  * @override
-  * @param {?string} htmlFor
-  * @return {LabelBuilder}
-  * @public
-  */
- m_htmlFor__java_lang_String(htmlFor) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).htmlFor = htmlFor;
+ /** @override @return {LabelBuilder} */
+ m_htmlFor__java_lang_String(/** ?string */ htmlFor) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).htmlFor = htmlFor;
   return this;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomLabelBuilder.$clinit = () =>{};
   DomLabelBuilder.$loadModules();
   DomElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomLabelBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('org.gwtproject.dom.client.LabelElement.$Overlay$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

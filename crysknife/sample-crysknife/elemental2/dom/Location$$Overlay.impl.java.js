@@ -8,60 +8,36 @@ let TrustedURL_$Overlay = goog.forwardDeclare('elemental2.dom.TrustedURL.$Overla
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class Location_$Overlay {
- /**
-  * @param {!Location} $thisArg
-  * @param {?string} url
-  * @public
-  */
- static m_assign__$devirt__elemental2_dom_Location__java_lang_String($thisArg, url) {
+ 
+ static m_assign__$devirt__elemental2_dom_Location__java_lang_String(/** !Location */ $thisArg, /** ?string */ url) {
   Location_$Overlay.$clinit();
-  $thisArg.assign(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(url)));
+  $thisArg.assign(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(url)));
  }
- /**
-  * @param {!Location} $thisArg
-  * @param {TrustedURL} url
-  * @public
-  */
- static m_assign__$devirt__elemental2_dom_Location__elemental2_dom_TrustedURL($thisArg, url) {
+ 
+ static m_assign__$devirt__elemental2_dom_Location__elemental2_dom_TrustedURL(/** !Location */ $thisArg, /** TrustedURL */ url) {
   Location_$Overlay.$clinit();
-  $thisArg.assign(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(url)));
+  $thisArg.assign(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(url)));
  }
- /**
-  * @param {!Location} $thisArg
-  * @param {?string} url
-  * @public
-  */
- static m_replace__$devirt__elemental2_dom_Location__java_lang_String($thisArg, url) {
+ 
+ static m_replace__$devirt__elemental2_dom_Location__java_lang_String(/** !Location */ $thisArg, /** ?string */ url) {
   Location_$Overlay.$clinit();
-  $thisArg.replace(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(url)));
+  $thisArg.replace(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(url)));
  }
- /**
-  * @param {!Location} $thisArg
-  * @param {TrustedURL} url
-  * @public
-  */
- static m_replace__$devirt__elemental2_dom_Location__elemental2_dom_TrustedURL($thisArg, url) {
+ 
+ static m_replace__$devirt__elemental2_dom_Location__elemental2_dom_TrustedURL(/** !Location */ $thisArg, /** TrustedURL */ url) {
   Location_$Overlay.$clinit();
-  $thisArg.replace(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(url)));
+  $thisArg.replace(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(url)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Location_$Overlay.$clinit = () =>{};
   Location_$Overlay.$loadModules();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Location;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }

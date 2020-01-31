@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SimpleViolation$ConstraintViolationIterable$1.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;;;MA6C6C,E;;;;CAAA,W;EAAAA,Q;EAAAA;sG;EAAAA;OADAC,SACAD,C;;;;;;;;QAAA,0G;EAAAE,a;EAAAA,yB;EAAAA,4N;EAAAA,iB;;;;;;;CAAA,yL;EAAAC,kH;EAAAA,2B;EAAAA,iC;;;;;;;CACtB,W;EACbC,oC;;;;;;;CAGqB,Q;EACrBC,+K;;;;;;CAGU,U;EACVC,4B;;;;;;;;CAVmC,+C;EAAAC,mG;;;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA,qB;EAAAA;",
+"lineCount":61,
+"mappings":"A;;;;;;;;;;;;;;;;MA6C6C,E;;CAAA,W;EAAAA,Q;EAAAA;sG;EAAAA;OADAC,SACAD,C;;;QAAA,0G;EAAAE,a;EAAAA,yB;EAAAA,4N;EAAAA,iB;;;CAAA,yL;EAAAC,kH;EAAAA,2B;EAAAA,iC;;;CACtB,W;EACbC,oC;;;CAGqB,Q;EACrBC,8K;;;CAGU,U;EACVC,4B;;;;CAVmC,+C;EAAAC,mG;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA,qB;EAAAA;",
 "sources":["SimpleViolation.java"],
 "names":["org.gwtproject.editor.client.impl.SimpleViolation$ConstraintViolationIterable$1.<synthetic: ctor_js>","source","org.gwtproject.editor.client.impl.SimpleViolation$ConstraintViolationIterable$1.<synthetic: ctor_create>","org.gwtproject.editor.client.impl.SimpleViolation$ConstraintViolationIterable$1.<init>","org.gwtproject.editor.client.impl.SimpleViolation$ConstraintViolationIterable$1.hasNext","org.gwtproject.editor.client.impl.SimpleViolation$ConstraintViolationIterable$1.next","org.gwtproject.editor.client.impl.SimpleViolation$ConstraintViolationIterable$1.remove","org.gwtproject.editor.client.impl.SimpleViolation$ConstraintViolationIterable$1.forEachRemaining","org.gwtproject.editor.client.impl.SimpleViolation$ConstraintViolationIterable$1.<clinit>"]
 }

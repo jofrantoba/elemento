@@ -7,25 +7,17 @@ let GetIceServersArrayUnionType_$Overlay = goog.forwardDeclare('elemental2.dom.R
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class RTCConfigurationInterface___$Overlay {
- /**
-  * @param {!RTCConfigurationInterface_} $thisArg
-  * @param {Array<?>} iceServers
-  * @public
-  */
- static m_setIceServers__$devirt__elemental2_dom_RTCConfigurationInterface___arrayOf_elemental2_dom_RTCConfigurationInterface__GetIceServersArrayUnionType($thisArg, iceServers) {
+ 
+ static m_setIceServers__$devirt__elemental2_dom_RTCConfigurationInterface___arrayOf_elemental2_dom_RTCConfigurationInterface__GetIceServersArrayUnionType(/** !RTCConfigurationInterface_ */ $thisArg, /** Array<?> */ iceServers) {
   RTCConfigurationInterface___$Overlay.$clinit();
-  $thisArg.iceServers = /**@type {Array<?>} */ (Js.m_uncheckedCast__java_lang_Object(iceServers));
+  $thisArg.iceServers = /**@type {Array<?>}*/ (Js.m_uncheckedCast__java_lang_Object(iceServers));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RTCConfigurationInterface___$Overlay.$clinit = () =>{};
   RTCConfigurationInterface___$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }

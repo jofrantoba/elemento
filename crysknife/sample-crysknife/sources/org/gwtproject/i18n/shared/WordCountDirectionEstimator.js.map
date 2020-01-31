@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"WordCountDirectionEstimator.impl.java.js",
-"lineCount":77,
-"mappings":"A;;;;;;;;MAwBa,2B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,sC;EAAAA,kD;EAAAA,4E;EAAAA,iB;;;;;CAAA,+D;EAAAC,8D;;;;;;QAa+B,O;EAAAC,sC;EACxCA,uG;;;;;;;;CAWe,qC,CAAyBC,G;EACxCC,sE;;;;;QA1BS,O;EAAAC,8C;EAAAA,2C;EAAAA,6B;EAEXA,0I;;;;;;;;;;;;;;;;;;;;AAFW;4BAKsC,mEALtC;",
+"lineCount":54,
+"mappings":"A;;;;;;;;MAwBa,2B;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,sC;EAAAA,kD;EAAAA,4E;EAAAA,iB;;;CAAA,+D;EAAAC,8D;;;QAa+B,O;EAAAC,sC;EACxCA,uG;;;CAWe,qC,gBAAyBC,G;EACxCC,sE;;;QA1BS,O;EAAAC,8C;EAAAA,2C;EAAAA,6B;EAEXA,0I;;;;;;;;;;;;;;AAFW;4BAKsC,mEALtC;",
 "sources":["WordCountDirectionEstimator.java"],
 "names":["org.gwtproject.i18n.shared.WordCountDirectionEstimator.<synthetic: ctor_js>","org.gwtproject.i18n.shared.WordCountDirectionEstimator.<synthetic: ctor_create>","org.gwtproject.i18n.shared.WordCountDirectionEstimator.<init>","org.gwtproject.i18n.shared.WordCountDirectionEstimator.get","str","org.gwtproject.i18n.shared.WordCountDirectionEstimator.estimateDirection","org.gwtproject.i18n.shared.WordCountDirectionEstimator.<clinit>"]
 }

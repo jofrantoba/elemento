@@ -16,23 +16,16 @@ let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
 let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 
 class Grid extends HTMLTable {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {number} */
+  /**@type {number}*/
   this.f_numColumns__org_gwtproject_user_client_ui_Grid = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_numRows__org_gwtproject_user_client_ui_Grid = 0;
  }
- /**
-  * @param {Object} table
-  * @param {number} rows
-  * @param {number} columns
-  * @public
-  */
- static m_addRows__org_gwtproject_dom_client_Element__int__int(table, rows, columns) {
+ 
+ static m_addRows__org_gwtproject_dom_client_Element__int__int(/** Object */ table, /** number */ rows, /** number */ columns) {
   let td = $Overlay.m_createTDElement__$devirt__org_gwtproject_dom_client_Document($Overlay.m_get__());
   Element_$Overlay.m_setInnerHTML__$devirt__org_gwtproject_dom_client_Element__java_lang_String(td, "&nbsp;");
   let row = $Overlay.m_createTRElement__$devirt__org_gwtproject_dom_client_Document($Overlay.m_get__());
@@ -45,94 +38,57 @@ class Grid extends HTMLTable {
    table.appendChild(row.cloneNode(true));
   }
  }
- /**
-  * Factory method corresponding to constructor 'Grid()'.
-  * @return {!Grid}
-  * @public
-  */
+ //Factory method corresponding to constructor 'Grid()'.
+ /** @return {!Grid} */
  static $create__() {
   Grid.$clinit();
   let $instance = new Grid();
   $instance.$ctor__org_gwtproject_user_client_ui_Grid__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'Grid()'.
-  * @public
-  */
+ //Initialization from constructor 'Grid()'.
+ 
  $ctor__org_gwtproject_user_client_ui_Grid__() {
   this.$ctor__org_gwtproject_user_client_ui_HTMLTable__();
   this.m_setCellFormatter__org_gwtproject_user_client_ui_HTMLTable_CellFormatter(CellFormatter.$create__org_gwtproject_user_client_ui_HTMLTable(this));
   this.m_setRowFormatter__org_gwtproject_user_client_ui_HTMLTable_RowFormatter(RowFormatter.$create__org_gwtproject_user_client_ui_HTMLTable(this));
   this.m_setColumnFormatter__org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter(ColumnFormatter.$create__org_gwtproject_user_client_ui_HTMLTable(this));
  }
- /**
-  * Factory method corresponding to constructor 'Grid(int, int)'.
-  * @param {number} rows
-  * @param {number} columns
-  * @return {!Grid}
-  * @public
-  */
- static $create__int__int(rows, columns) {
+ //Factory method corresponding to constructor 'Grid(int, int)'.
+ /** @return {!Grid} */
+ static $create__int__int(/** number */ rows, /** number */ columns) {
   Grid.$clinit();
   let $instance = new Grid();
   $instance.$ctor__org_gwtproject_user_client_ui_Grid__int__int(rows, columns);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Grid(int, int)'.
-  * @param {number} rows
-  * @param {number} columns
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Grid__int__int(rows, columns) {
+ //Initialization from constructor 'Grid(int, int)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Grid__int__int(/** number */ rows, /** number */ columns) {
   this.$ctor__org_gwtproject_user_client_ui_Grid__();
   this.m_resize__int__int(rows, columns);
  }
- /**
-  * @override
-  * @param {number} row
-  * @param {number} column
-  * @return {boolean}
-  * @public
-  */
- m_clearCell__int__int(row, column) {
+ /** @override @return {boolean} */
+ m_clearCell__int__int(/** number */ row, /** number */ column) {
   let td = this.m_getCellFormatter__().m_getElement__int__int(row, column);
   let b = this.m_internalClearCell__org_gwtproject_dom_client_Element__boolean(td, false);
   Element_$Overlay.m_setInnerHTML__$devirt__org_gwtproject_dom_client_Element__java_lang_String(td, "&nbsp;");
   return b;
  }
- /**
-  * @override
-  * @param {number} row
-  * @return {number}
-  * @public
-  */
- m_getCellCount__int(row) {
+ /** @override @return {number} */
+ m_getCellCount__int(/** number */ row) {
   return this.f_numColumns__org_gwtproject_user_client_ui_Grid;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getColumnCount__() {
   return this.f_numColumns__org_gwtproject_user_client_ui_Grid;
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getRowCount__() {
   return this.f_numRows__org_gwtproject_user_client_ui_Grid;
  }
- /**
-  * @override
-  * @param {number} beforeRow
-  * @return {number}
-  * @public
-  */
- m_insertRow__int(beforeRow) {
+ /** @override @return {number} */
+ m_insertRow__int(/** number */ beforeRow) {
   let index = super.m_insertRow__int(beforeRow);
   this.f_numRows__org_gwtproject_user_client_ui_Grid++;
   for (let i = 0; i < this.f_numColumns__org_gwtproject_user_client_ui_Grid; i++) {
@@ -140,29 +96,18 @@ class Grid extends HTMLTable {
   }
   return index;
  }
- /**
-  * @override
-  * @param {number} row
-  * @public
-  */
- m_removeRow__int(row) {
+ /** @override */
+ m_removeRow__int(/** number */ row) {
   super.m_removeRow__int(row);
   this.f_numRows__org_gwtproject_user_client_ui_Grid--;
  }
- /**
-  * @param {number} rows
-  * @param {number} columns
-  * @public
-  */
- m_resize__int__int(rows, columns) {
+ 
+ m_resize__int__int(/** number */ rows, /** number */ columns) {
   this.m_resizeColumns__int(columns);
   this.m_resizeRows__int(rows);
  }
- /**
-  * @param {number} columns
-  * @public
-  */
- m_resizeColumns__int(columns) {
+ 
+ m_resizeColumns__int(/** number */ columns) {
   if (this.f_numColumns__org_gwtproject_user_client_ui_Grid == columns) {
    return;
   }
@@ -185,11 +130,8 @@ class Grid extends HTMLTable {
   this.f_numColumns__org_gwtproject_user_client_ui_Grid = columns;
   this.m_getColumnFormatter__().m_resizeColumnGroup__int__boolean_$pp_org_gwtproject_user_client_ui(columns, false);
  }
- /**
-  * @param {number} rows
-  * @public
-  */
- m_resizeRows__int(rows) {
+ 
+ m_resizeRows__int(/** number */ rows) {
   if (this.f_numRows__org_gwtproject_user_client_ui_Grid == rows) {
    return;
   }
@@ -205,23 +147,14 @@ class Grid extends HTMLTable {
    }
   }
  }
- /**
-  * @override
-  * @return {Object}
-  * @public
-  */
+ /** @override @return {Object} */
  m_createCell__() {
   let td = super.m_createCell__();
   Element_$Overlay.m_setInnerHTML__$devirt__org_gwtproject_dom_client_Element__java_lang_String(td, "&nbsp;");
   return td;
  }
- /**
-  * @override
-  * @param {number} row
-  * @param {number} column
-  * @public
-  */
- m_prepareCell__int__int(row, column) {
+ /** @override */
+ m_prepareCell__int__int(/** number */ row, /** number */ column) {
   this.m_prepareRow__int(row);
   if (column < 0) {
    throw $Exceptions.toJs(IndexOutOfBoundsException.$create__java_lang_String("Cannot access a column with a negative index: " + column));
@@ -230,23 +163,15 @@ class Grid extends HTMLTable {
    throw $Exceptions.toJs(IndexOutOfBoundsException.$create__java_lang_String("Column index: " + column + ", Column size: " + this.f_numColumns__org_gwtproject_user_client_ui_Grid));
   }
  }
- /**
-  * @override
-  * @param {number} column
-  * @public
-  */
- m_prepareColumn__int(column) {
+ /** @override */
+ m_prepareColumn__int(/** number */ column) {
   super.m_prepareColumn__int(column);
   if (column >= this.f_numColumns__org_gwtproject_user_client_ui_Grid) {
    throw $Exceptions.toJs(IndexOutOfBoundsException.$create__java_lang_String("Column index: " + column + ", Column size: " + this.f_numColumns__org_gwtproject_user_client_ui_Grid));
   }
  }
- /**
-  * @override
-  * @param {number} row
-  * @public
-  */
- m_prepareRow__int(row) {
+ /** @override */
+ m_prepareRow__int(/** number */ row) {
   if (row < 0) {
    throw $Exceptions.toJs(IndexOutOfBoundsException.$create__java_lang_String("Cannot access a row with a negative index: " + row));
   }
@@ -254,43 +179,27 @@ class Grid extends HTMLTable {
    throw $Exceptions.toJs(IndexOutOfBoundsException.$create__java_lang_String("Row index: " + row + ", Row size: " + this.f_numRows__org_gwtproject_user_client_ui_Grid));
   }
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Grid.$clinit = () =>{};
   Grid.$loadModules();
   HTMLTable.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Grid;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IndexOutOfBoundsException = goog.module.get('java.lang.IndexOutOfBoundsException$impl');
   Iterable = goog.module.get('java.lang.Iterable$impl');

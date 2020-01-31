@@ -14,79 +14,48 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {ValueChangeEvent<Date>}
   */
 class DateChangeEvent extends ValueChangeEvent {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @template S
-  * @param {S} source
-  * @param {Date} oldValue
-  * @param {Date} newValue
-  * @public
-  */
- static m_fireIfNotEqualDates__org_gwtproject_event_logical_shared_HasValueChangeHandlers__java_util_Date__java_util_Date(source, oldValue, newValue) {
+ /** @template S */
+ static m_fireIfNotEqualDates__org_gwtproject_event_logical_shared_HasValueChangeHandlers__java_util_Date__java_util_Date(/** S */ source, /** Date */ oldValue, /** Date */ newValue) {
   DateChangeEvent.$clinit();
   if (ValueChangeEvent.m_shouldFire__org_gwtproject_event_logical_shared_HasValueChangeHandlers__java_lang_Object__java_lang_Object(source, oldValue, newValue)) {
-   /**@type {HasValueChangeHandlers} */ (source).m_fireEvent__org_gwtproject_event_shared_Event(DateChangeEvent.$create__java_util_Date(newValue));
+   /**@type {HasValueChangeHandlers}*/ (source).m_fireEvent__org_gwtproject_event_shared_Event(DateChangeEvent.$create__java_util_Date(newValue));
   }
  }
- /**
-  * @param {Date} value
-  * @return {!DateChangeEvent}
-  * @public
-  */
- static $create__java_util_Date(value) {
+ /** @return {!DateChangeEvent} */
+ static $create__java_util_Date(/** Date */ value) {
   DateChangeEvent.$clinit();
   let $instance = new DateChangeEvent();
   $instance.$ctor__org_gwtproject_user_datepicker_client_DateChangeEvent__java_util_Date(value);
   return $instance;
  }
- /**
-  * @param {Date} value
-  * @public
-  */
- $ctor__org_gwtproject_user_datepicker_client_DateChangeEvent__java_util_Date(value) {
+ 
+ $ctor__org_gwtproject_user_datepicker_client_DateChangeEvent__java_util_Date(/** Date */ value) {
   this.$ctor__org_gwtproject_event_logical_shared_ValueChangeEvent__java_lang_Object(CalendarUtil.m_copyDate__java_util_Date(value));
  }
- /**
-  * @override
-  * @return {Date}
-  * @public
-  */
+ /** @override @return {Date} */
  m_getValue__() {
-  return CalendarUtil.m_copyDate__java_util_Date(/**@type {Date} */ ($Casts.$to(super.m_getValue__(), Date)));
+  return CalendarUtil.m_copyDate__java_util_Date(/**@type {Date}*/ ($Casts.$to(super.m_getValue__(), Date)));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  super.m_dispatch__org_gwtproject_event_logical_shared_ValueChangeHandler(/**@type {ValueChangeHandler<Date>} */ ($Casts.$to(arg0, ValueChangeHandler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  super.m_dispatch__org_gwtproject_event_logical_shared_ValueChangeHandler(/**@type {ValueChangeHandler<Date>}*/ ($Casts.$to(arg0, ValueChangeHandler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DateChangeEvent.$clinit = () =>{};
   DateChangeEvent.$loadModules();
   ValueChangeEvent.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DateChangeEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Date = goog.module.get('java.util.Date$impl');
   ValueChangeHandler = goog.module.get('org.gwtproject.event.logical.shared.ValueChangeHandler$impl');

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"LocalizableResource$GenerateKeys.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;MA2JoB,Y;;;;;;CAChB,S;;;;QADgB,O;EAAAA,+B;EAAAA;",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MA2JoB,Y;;CAChB,S;;QADgB,O;EAAAA,+B;EAAAA;",
 "sources":["LocalizableResource.java"],
 "names":["org.gwtproject.i18n.client.LocalizableResource$GenerateKeys.<clinit>"]
 }

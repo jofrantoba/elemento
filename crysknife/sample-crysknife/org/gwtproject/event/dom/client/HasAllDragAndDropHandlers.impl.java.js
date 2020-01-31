@@ -20,41 +20,28 @@ const HasDropHandlers = goog.require('org.gwtproject.event.dom.client.HasDropHan
  * @extends {HasDropHandlers}
  */
 class HasAllDragAndDropHandlers {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HasAllDragAndDropHandlers.$clinit = () =>{};
   HasAllDragAndDropHandlers.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasDragEndHandlers.$markImplementor(classConstructor);
-  HasDragEnterHandlers.$markImplementor(classConstructor);
-  HasDragLeaveHandlers.$markImplementor(classConstructor);
-  HasDragHandlers.$markImplementor(classConstructor);
-  HasDragOverHandlers.$markImplementor(classConstructor);
-  HasDragStartHandlers.$markImplementor(classConstructor);
-  HasDropHandlers.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_HasAllDragAndDropHandlers = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasDragEndHandlers.$markImplementor(ctor);
+  HasDragEnterHandlers.$markImplementor(ctor);
+  HasDragLeaveHandlers.$markImplementor(ctor);
+  HasDragHandlers.$markImplementor(ctor);
+  HasDragOverHandlers.$markImplementor(ctor);
+  HasDragStartHandlers.$markImplementor(ctor);
+  HasDropHandlers.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_HasAllDragAndDropHandlers = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_HasAllDragAndDropHandlers;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

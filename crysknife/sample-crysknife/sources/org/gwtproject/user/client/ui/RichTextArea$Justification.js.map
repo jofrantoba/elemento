@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"RichTextArea$Justification.impl.java.js",
-"lineCount":108,
-"mappings":"A;;;;;;;MA6hBsB,a;;;;CAAA,W;EAAAA,Q;EAAAA;OAsBH,gEAtBGA,C;;;;;;;QAwBV,yB,CAAqBC,G;EAArBC,oC;EAAAA,iG;EAAAA,iB;;;;;;CAAA,iF,CAAqBD,G;EAArBE,iC;EACNA,4E;;;;;;;CAIY,Q;EACZC,kI;;;;;;QA5BF,sE;EAAAC,oH;;;;;;QAKA,oE;EAAAA,kH;;;;;;QAKA,oE;EAAAA,kH;;;;;;QAKA,qE;EAAAA,mH;;;;;QAjBkB,O;EAAAC,gC;EAAAA,6B;EAAAA,qB;EAElBA,sI;EAKAA,kI;EAKAA,kI;EAKAA,oI;;;;;;;;;;;;;;;;;;;;AAjBkB;kF;AAAA;gF;AAAA;gF;AAAA;;",
+"lineCount":75,
+"mappings":"A;;;;;;;MA6hBsB,a;;CAAA,W;EAAAA,Q;EAAAA;OAsBH,gEAtBGA,C;;;QAwBV,yB,gBAAqBC,G;EAArBC,oC;EAAAA,iG;EAAAA,iB;;;CAAA,iF,gBAAqBD,G;EAArBE,iC;EACNA,4E;;;CAIY,Q;EACZC,kI;;;QA5BF,sE;EAAAC,oH;;;QAKA,oE;EAAAA,kH;;;QAKA,oE;EAAAA,kH;;;QAKA,qE;EAAAA,mH;;;QAjBkB,O;EAAAC,gC;EAAAA,6B;EAAAA,qB;EAElBA,sI;EAKAA,kI;EAKAA,kI;EAKAA,oI;;;;;;;;;;;;;;AAjBkB;kF;AAAA;gF;AAAA;gF;AAAA;;",
 "sources":["RichTextArea.java"],
 "names":["org.gwtproject.user.client.ui.RichTextArea$Justification.<synthetic: ctor_js>","tag","org.gwtproject.user.client.ui.RichTextArea$Justification.<synthetic: ctor_create>","org.gwtproject.user.client.ui.RichTextArea$Justification.<init>","org.gwtproject.user.client.ui.RichTextArea$Justification.toString","org.gwtproject.user.client.ui.RichTextArea$Justification.<synthetic: getter>","org.gwtproject.user.client.ui.RichTextArea$Justification.<clinit>"]
 }

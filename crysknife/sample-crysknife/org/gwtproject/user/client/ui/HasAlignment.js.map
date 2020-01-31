@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasAlignment.impl.java.js",
-"lineCount":18,
-"mappings":"A;;;;;;;;;;;MAqBiB,Y;;;;QAAA,O;EAAAA,+B;EAAAA;",
+"lineCount":16,
+"mappings":"A;;;;;;;;;;;MAqBiB,Y;;QAAA,O;EAAAA,+B;EAAAA;",
 "sources":["HasAlignment.java"],
 "names":["org.gwtproject.user.client.ui.HasAlignment.<clinit>"]
 }

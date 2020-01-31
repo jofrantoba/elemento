@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"AnimatedLayout.impl.java.js",
-"lineCount":34,
-"mappings":"A;;;;;;;;;MA4BiB,c;;;;;;CAOV,c,CAAYA,Q;;;;;;;CAaZ,qE,CAAkBA,Q,EAAkCC,Q;;;;;CAcpD,e;;;;QAlCU,O;EAAAC,iC;EAAAA;",
+"lineCount":20,
+"mappings":"A;;;;;;;;;MA4BiB,c;;CAOV,c,eAAYA,Q;;CAaZ,qE,eAAkBA,Q,2BAAkCC,Q;;CAcpD,e;;QAlCU,O;EAAAC,iC;EAAAA;",
 "sources":["AnimatedLayout.java"],
 "names":["duration","callback","org.gwtproject.user.client.ui.AnimatedLayout.<clinit>"]
 }

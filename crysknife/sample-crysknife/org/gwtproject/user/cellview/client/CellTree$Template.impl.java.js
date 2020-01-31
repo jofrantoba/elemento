@@ -13,61 +13,34 @@ let CellTree__TemplateImpl = goog.forwardDeclare('org.gwtproject.user.cellview.c
  * @extends {SafeHtmlTemplates}
  */
 class Template {
- /**
-  * @abstract
-  * @param {?string} classes
-  * @param {SafeStyles} cssLayout
-  * @param {SafeHtml} image
-  * @return {SafeHtml}
-  * @public
-  */
- m_imageWrapper__java_lang_String__org_gwtproject_safecss_shared_SafeStyles__org_gwtproject_safehtml_shared_SafeHtml(classes, cssLayout, image) {}
- /**
-  * @param {?function(?string, SafeStyles, SafeHtml):SafeHtml} fn
-  * @return {Template}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract @return {SafeHtml} */
+ m_imageWrapper__java_lang_String__org_gwtproject_safecss_shared_SafeStyles__org_gwtproject_safehtml_shared_SafeHtml(/** ?string */ classes, /** SafeStyles */ cssLayout, /** SafeHtml */ image) {}
+ /** @return {Template} */
+ static $adapt(/** ?function(?string, SafeStyles, SafeHtml):SafeHtml */ fn) {
   Template.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @return {Template}
-  * @public
-  */
+ /** @return {Template} */
  static get f_INSTANCE__org_gwtproject_user_cellview_client_CellTree_Template() {
   return (Template.$clinit(), Template.$f_INSTANCE__org_gwtproject_user_cellview_client_CellTree_Template);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Template.$clinit = () =>{};
   Template.$loadModules();
   Template.$f_INSTANCE__org_gwtproject_user_cellview_client_CellTree_Template = CellTree__TemplateImpl.$create__();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  SafeHtmlTemplates.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_cellview_client_CellTree_Template = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  SafeHtmlTemplates.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_cellview_client_CellTree_Template = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_cellview_client_CellTree_Template;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.user.cellview.client.CellTree.Template.$LambdaAdaptor$impl');
   CellTree__TemplateImpl = goog.module.get('org.gwtproject.user.cellview.client.CellTree_TemplateImpl$impl');
@@ -78,7 +51,7 @@ $Util.$setClassMetadataForInterface(Template, 'org.gwtproject.user.cellview.clie
 
 Template.$markImplementor(/** @type {Function} */ (Template));
 
-/** @private {Template} */
+/**@private {Template}*/
 Template.$f_INSTANCE__org_gwtproject_user_cellview_client_CellTree_Template;
 
 exports = Template; 

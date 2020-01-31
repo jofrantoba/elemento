@@ -21,138 +21,86 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {Resources}
   */
 class ButtonCellBase__DefaultAppearance__ResourcesImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!ButtonCellBase__DefaultAppearance__ResourcesImpl}
-  * @public
-  */
+ /** @return {!ButtonCellBase__DefaultAppearance__ResourcesImpl} */
  static $create__() {
   ButtonCellBase__DefaultAppearance__ResourcesImpl.$clinit();
   let $instance = new ButtonCellBase__DefaultAppearance__ResourcesImpl();
   $instance.$ctor__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @public
-  */
+ 
  m_buttonCellBaseBackgroundInitializer___$p_org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl() {
   ButtonCellBase__DefaultAppearance__ResourcesImpl.$f_buttonCellBaseBackground__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_ = ImageResourcePrototype.$create__java_lang_String__org_gwtproject_safehtml_shared_SafeUri__int__int__int__int__boolean__boolean("buttonCellBaseBackground", UriUtils.m_fromTrustedString__java_lang_String(ButtonCellBase__DefaultAppearance__ResourcesImpl.f_externalImage__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_), 0, 0, 32, 31, false, false);
  }
- /**
-  * @override
-  * @return {ImageResource}
-  * @public
-  */
+ /** @override @return {ImageResource} */
  m_buttonCellBaseBackground__() {
   return buttonCellBaseBackgroundInitializer.m_get__();
  }
- /**
-  * @public
-  */
+ 
  m_buttonCellBaseStyleInitializer___$p_org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl() {
   ButtonCellBase__DefaultAppearance__ResourcesImpl.$f_buttonCellBaseStyle__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_ = $1.$create__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl(this);
  }
- /**
-  * @override
-  * @return {Style}
-  * @public
-  */
+ /** @override @return {Style} */
  m_buttonCellBaseStyle__() {
   return buttonCellBaseStyleInitializer.m_get__();
  }
- /**
-  * @return {Array<ResourcePrototype>}
-  * @public
-  */
+ /** @return {Array<ResourcePrototype>} */
  m_getResources__() {
-  return /**@type {!Array<ResourcePrototype>} */ ($Arrays.$init([this.m_buttonCellBaseBackground__(), this.m_buttonCellBaseStyle__()], ResourcePrototype));
+  return /**@type {!Array<ResourcePrototype>}*/ ($Arrays.$init([this.m_buttonCellBaseBackground__(), this.m_buttonCellBaseStyle__()], ResourcePrototype));
  }
- /**
-  * @param {?string} name
-  * @return {ResourcePrototype}
-  * @public
-  */
- m_getResource__java_lang_String(name) {
+ /** @return {ResourcePrototype} */
+ m_getResource__java_lang_String(/** ?string */ name) {
   if ($Equality.$same(ButtonCellBase__DefaultAppearance__ResourcesImpl.f_resourceMap__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_, null)) {
-   ButtonCellBase__DefaultAppearance__ResourcesImpl.f_resourceMap__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_ = /**@type {!HashMap<?string, ResourcePrototype>} */ (HashMap.$create__());
+   ButtonCellBase__DefaultAppearance__ResourcesImpl.f_resourceMap__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_ = /**@type {!HashMap<?string, ResourcePrototype>}*/ (HashMap.$create__());
    ButtonCellBase__DefaultAppearance__ResourcesImpl.f_resourceMap__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_.put("buttonCellBaseBackground", this.m_buttonCellBaseBackground__());
    ButtonCellBase__DefaultAppearance__ResourcesImpl.f_resourceMap__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_.put("buttonCellBaseStyle", this.m_buttonCellBaseStyle__());
   }
-  return /**@type {ResourcePrototype} */ ($Casts.$to(ButtonCellBase__DefaultAppearance__ResourcesImpl.f_resourceMap__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_.get(name), ResourcePrototype));
+  return /**@type {ResourcePrototype}*/ ($Casts.$to(ButtonCellBase__DefaultAppearance__ResourcesImpl.f_resourceMap__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_.get(name), ResourcePrototype));
  }
- /**
-  * @return {ButtonCellBase__DefaultAppearance__ResourcesImpl}
-  * @public
-  */
+ /** @return {ButtonCellBase__DefaultAppearance__ResourcesImpl} */
  static get f__instance0__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_() {
   return (ButtonCellBase__DefaultAppearance__ResourcesImpl.$clinit(), ButtonCellBase__DefaultAppearance__ResourcesImpl.$f__instance0__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_);
  }
- /**
-  * @param {ButtonCellBase__DefaultAppearance__ResourcesImpl} value
-  * @public
-  */
- static set f__instance0__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_(value) {
+ 
+ static set f__instance0__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_(/** ButtonCellBase__DefaultAppearance__ResourcesImpl */ value) {
   (ButtonCellBase__DefaultAppearance__ResourcesImpl.$clinit(), ButtonCellBase__DefaultAppearance__ResourcesImpl.$f__instance0__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_ = value);
  }
- /**
-  * @return {ImageResource}
-  * @public
-  */
+ /** @return {ImageResource} */
  static get f_buttonCellBaseBackground__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_() {
   return (ButtonCellBase__DefaultAppearance__ResourcesImpl.$clinit(), ButtonCellBase__DefaultAppearance__ResourcesImpl.$f_buttonCellBaseBackground__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_);
  }
- /**
-  * @param {ImageResource} value
-  * @public
-  */
- static set f_buttonCellBaseBackground__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_(value) {
+ 
+ static set f_buttonCellBaseBackground__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_(/** ImageResource */ value) {
   (ButtonCellBase__DefaultAppearance__ResourcesImpl.$clinit(), ButtonCellBase__DefaultAppearance__ResourcesImpl.$f_buttonCellBaseBackground__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_ = value);
  }
- /**
-  * @return {Style}
-  * @public
-  */
+ /** @return {Style} */
  static get f_buttonCellBaseStyle__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_() {
   return (ButtonCellBase__DefaultAppearance__ResourcesImpl.$clinit(), ButtonCellBase__DefaultAppearance__ResourcesImpl.$f_buttonCellBaseStyle__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_);
  }
- /**
-  * @param {Style} value
-  * @public
-  */
- static set f_buttonCellBaseStyle__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_(value) {
+ 
+ static set f_buttonCellBaseStyle__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_(/** Style */ value) {
   (ButtonCellBase__DefaultAppearance__ResourcesImpl.$clinit(), ButtonCellBase__DefaultAppearance__ResourcesImpl.$f_buttonCellBaseStyle__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_ = value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ButtonCellBase__DefaultAppearance__ResourcesImpl.$clinit = () =>{};
   ButtonCellBase__DefaultAppearance__ResourcesImpl.$loadModules();
   j_l_Object.$clinit();
   ButtonCellBase__DefaultAppearance__ResourcesImpl.$f__instance0__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_ = ButtonCellBase__DefaultAppearance__ResourcesImpl.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ButtonCellBase__DefaultAppearance__ResourcesImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   HashMap = goog.module.get('java.util.HashMap$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -171,15 +119,15 @@ $Util.$setClassMetadata(ButtonCellBase__DefaultAppearance__ResourcesImpl, 'org.g
 
 Resources.$markImplementor(ButtonCellBase__DefaultAppearance__ResourcesImpl);
 
-/** @private {ButtonCellBase__DefaultAppearance__ResourcesImpl} */
+/**@private {ButtonCellBase__DefaultAppearance__ResourcesImpl}*/
 ButtonCellBase__DefaultAppearance__ResourcesImpl.$f__instance0__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_;
-/** @public {HashMap<?string, ResourcePrototype>} */
+/**@type {HashMap<?string, ResourcePrototype>}*/
 ButtonCellBase__DefaultAppearance__ResourcesImpl.f_resourceMap__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_;
-/** @public {?string} @const */
+/**@const {?string}*/
 ButtonCellBase__DefaultAppearance__ResourcesImpl.f_externalImage__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_ = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAAL0lEQVR4Xu3OMQ0AAAzDsPJnWwQbjD6OlN+5cWl7ywEAAAAAAAAAAAAAAAAA5oAHQZjT07gbmRUAAAAASUVORK5CYII=";
-/** @private {ImageResource} */
+/**@private {ImageResource}*/
 ButtonCellBase__DefaultAppearance__ResourcesImpl.$f_buttonCellBaseBackground__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_;
-/** @private {Style} */
+/**@private {Style}*/
 ButtonCellBase__DefaultAppearance__ResourcesImpl.$f_buttonCellBaseStyle__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_;
 
 exports = ButtonCellBase__DefaultAppearance__ResourcesImpl; 

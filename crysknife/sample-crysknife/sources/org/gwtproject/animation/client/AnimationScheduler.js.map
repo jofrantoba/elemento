@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"AnimationScheduler.impl.java.js",
-"lineCount":83,
-"mappings":"A;;;;;;;;;;;;;;MAwBsB,kB;;;;CAAA,W;EAAAA,Q;;;;;CAAA,2D;EAAAC,iC;;;;;;QAKa,O;EAAAC,6B;EAC/BA;GACEA,gIADFA;G;EAGAA,0F;;;;;;;CAmBqB,6F,CAAwCC,Q;EAC7DC,6J;;;;;;;;;CAgB8B,gI,CACVD,Q,EAAkBE,O;;;;QA9CpB,O;EAAAC,qC;EAAAA,kC;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;AAAA;mBAEc,+DAFd;",
+"lineCount":58,
+"mappings":"A;;;;;;;;;;;;;;MAwBsB,kB;;CAAA,W;EAAAA,Q;;;CAAA,2D;EAAAC,iC;;;QAKa,O;EAAAC,6B;EAC/BA;GACEA,gIADFA;G;EAGAA,0F;;;CAmBqB,6F,0BAAwCC,Q;EAC7DC,6J;;;CAgB8B,gI,0BACVD,Q,gBAAkBE,O;;QA9CpB,O;EAAAC,qC;EAAAA,kC;EAAAA,qB;;;;;;;;;;;;;;;AAAA;mBAEc,+DAFd;",
 "sources":["AnimationScheduler.java"],
 "names":["org.gwtproject.animation.client.AnimationScheduler.<synthetic: ctor_js>","org.gwtproject.animation.client.AnimationScheduler.<init>","org.gwtproject.animation.client.AnimationScheduler.get","callback","org.gwtproject.animation.client.AnimationScheduler.requestAnimationFrame","element","org.gwtproject.animation.client.AnimationScheduler.<clinit>"]
 }

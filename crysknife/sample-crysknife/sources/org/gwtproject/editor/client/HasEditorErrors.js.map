@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasEditorErrors.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;;;;;MAyBiB,e;;;;;;CAYV,4B,CAA6BA,M;;;;;;;QAZnB,M;EAAAC,0B;EAAAA,iE;;;;;QAAA,O;EAAAC,kC;EAAAA;",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;;;MAyBiB,e;;CAYV,4B,0BAA6BA,M;;QAZnB,M;EAAAC,0B;EAAAA,gE;;;QAAA,O;EAAAC,kC;EAAAA;",
 "sources":["HasEditorErrors.java"],
 "names":["errors","org.gwtproject.editor.client.HasEditorErrors.<synthetic: adapt_lambda>","org.gwtproject.editor.client.HasEditorErrors.<clinit>"]
 }

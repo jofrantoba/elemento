@@ -14,69 +14,47 @@ let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
  * @abstract
   */
 class AbstractPager extends Composite {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {HandlerRegistration} */
+  /**@type {HandlerRegistration}*/
   this.f_rangeChangeHandler__org_gwtproject_user_cellview_client_AbstractPager;
-  /** @public {HandlerRegistration} */
+  /**@type {HandlerRegistration}*/
   this.f_rowCountChangeHandler__org_gwtproject_user_cellview_client_AbstractPager;
-  /** @public {HasRows} */
+  /**@type {HasRows}*/
   this.f_display__org_gwtproject_user_cellview_client_AbstractPager_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isRangeLimited__org_gwtproject_user_cellview_client_AbstractPager_ = false;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_lastRowCount__org_gwtproject_user_cellview_client_AbstractPager_ = 0;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_cellview_client_AbstractPager__() {
   this.$ctor__org_gwtproject_user_client_ui_Composite__();
   this.$init___$p_org_gwtproject_user_cellview_client_AbstractPager();
  }
- /**
-  * @return {HasRows}
-  * @public
-  */
+ /** @return {HasRows} */
  m_getDisplay__() {
   return this.f_display__org_gwtproject_user_cellview_client_AbstractPager_;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getPageSize__() {
   return $Equality.$same(this.f_display__org_gwtproject_user_cellview_client_AbstractPager_, null) ? -1 : this.f_display__org_gwtproject_user_cellview_client_AbstractPager_.m_getVisibleRange__().m_getLength__();
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getPageStart__() {
   return $Equality.$same(this.f_display__org_gwtproject_user_cellview_client_AbstractPager_, null) ? -1 : this.f_display__org_gwtproject_user_cellview_client_AbstractPager_.m_getVisibleRange__().m_getStart__();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isRangeLimited__() {
   return this.f_isRangeLimited__org_gwtproject_user_cellview_client_AbstractPager_;
  }
- /**
-  * @param {boolean} isRangeLimited
-  * @public
-  */
- m_setRangeLimited__boolean(isRangeLimited) {
+ 
+ m_setRangeLimited__boolean(/** boolean */ isRangeLimited) {
   this.f_isRangeLimited__org_gwtproject_user_cellview_client_AbstractPager_ = isRangeLimited;
  }
- /**
-  * @param {HasRows} display
-  * @public
-  */
- m_setDisplay__org_gwtproject_view_client_HasRows(display) {
+ 
+ m_setDisplay__org_gwtproject_view_client_HasRows(/** HasRows */ display) {
   if (!$Equality.$same(this.f_rangeChangeHandler__org_gwtproject_user_cellview_client_AbstractPager, null)) {
    this.f_rangeChangeHandler__org_gwtproject_user_cellview_client_AbstractPager.m_removeHandler__();
    this.f_rangeChangeHandler__org_gwtproject_user_cellview_client_AbstractPager = null;
@@ -92,16 +70,11 @@ class AbstractPager extends Composite {
    this.m_onRangeOrRowCountChanged__();
   }
  }
- /**
-  * @public
-  */
+ 
  m_firstPage__() {
   this.m_setPage__int(0);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getPage__() {
   if ($Equality.$same(this.f_display__org_gwtproject_user_cellview_client_AbstractPager_, null)) {
    return -1;
@@ -110,10 +83,7 @@ class AbstractPager extends Composite {
   let pageSize = range.m_getLength__();
   return $Primitives.$coerceDivision((range.m_getStart__() + pageSize - 1) / pageSize);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getPageCount__() {
   if ($Equality.$same(this.f_display__org_gwtproject_user_cellview_client_AbstractPager_, null)) {
    return -1;
@@ -121,10 +91,7 @@ class AbstractPager extends Composite {
   let pageSize = this.m_getPageSize__();
   return $Primitives.$coerceDivision((this.f_display__org_gwtproject_user_cellview_client_AbstractPager_.m_getRowCount__() + pageSize - 1) / pageSize);
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_hasNextPage__() {
   if ($Equality.$same(this.f_display__org_gwtproject_user_cellview_client_AbstractPager_, null) || this.f_display__org_gwtproject_user_cellview_client_AbstractPager_.m_getRowCount__() == 0) {
    return false;
@@ -134,97 +101,65 @@ class AbstractPager extends Composite {
   let range = this.f_display__org_gwtproject_user_cellview_client_AbstractPager_.m_getVisibleRange__();
   return range.m_getStart__() + range.m_getLength__() < this.f_display__org_gwtproject_user_cellview_client_AbstractPager_.m_getRowCount__();
  }
- /**
-  * @param {number} pages
-  * @return {boolean}
-  * @public
-  */
- m_hasNextPages__int(pages) {
+ /** @return {boolean} */
+ m_hasNextPages__int(/** number */ pages) {
   if ($Equality.$same(this.f_display__org_gwtproject_user_cellview_client_AbstractPager_, null)) {
    return false;
   }
   let range = this.f_display__org_gwtproject_user_cellview_client_AbstractPager_.m_getVisibleRange__();
   return range.m_getStart__() + pages * range.m_getLength__() < this.f_display__org_gwtproject_user_cellview_client_AbstractPager_.m_getRowCount__();
  }
- /**
-  * @param {number} index
-  * @return {boolean}
-  * @public
-  */
- m_hasPage__int(index) {
+ /** @return {boolean} */
+ m_hasPage__int(/** number */ index) {
   return $Equality.$same(this.f_display__org_gwtproject_user_cellview_client_AbstractPager_, null) ? false : this.m_getPageSize__() * index < this.f_display__org_gwtproject_user_cellview_client_AbstractPager_.m_getRowCount__();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_hasPreviousPage__() {
   return $Equality.$same(this.f_display__org_gwtproject_user_cellview_client_AbstractPager_, null) ? false : this.m_getPageStart__() > 0 && this.f_display__org_gwtproject_user_cellview_client_AbstractPager_.m_getRowCount__() > 0;
  }
- /**
-  * @param {number} pages
-  * @return {boolean}
-  * @public
-  */
- m_hasPreviousPages__int(pages) {
+ /** @return {boolean} */
+ m_hasPreviousPages__int(/** number */ pages) {
   if ($Equality.$same(this.f_display__org_gwtproject_user_cellview_client_AbstractPager_, null)) {
    return false;
   }
   let range = this.f_display__org_gwtproject_user_cellview_client_AbstractPager_.m_getVisibleRange__();
   return (pages - 1) * range.m_getLength__() < range.m_getStart__();
  }
- /**
-  * @public
-  */
+ 
  m_lastPage__() {
   this.m_setPage__int(this.m_getPageCount__() - 1);
  }
- /**
-  * @public
-  */
+ 
  m_lastPageStart__() {
   if (!$Equality.$same(this.f_display__org_gwtproject_user_cellview_client_AbstractPager_, null)) {
    this.m_setPageStart__int(this.f_display__org_gwtproject_user_cellview_client_AbstractPager_.m_getRowCount__() - this.m_getPageSize__());
   }
  }
- /**
-  * @public
-  */
+ 
  m_nextPage__() {
   if (!$Equality.$same(this.f_display__org_gwtproject_user_cellview_client_AbstractPager_, null)) {
    let range = this.f_display__org_gwtproject_user_cellview_client_AbstractPager_.m_getVisibleRange__();
    this.m_setPageStart__int(range.m_getStart__() + range.m_getLength__());
   }
  }
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_onRangeOrRowCountChanged__() {}
- /**
-  * @public
-  */
+ 
  m_previousPage__() {
   if (!$Equality.$same(this.f_display__org_gwtproject_user_cellview_client_AbstractPager_, null)) {
    let range = this.f_display__org_gwtproject_user_cellview_client_AbstractPager_.m_getVisibleRange__();
    this.m_setPageStart__int(range.m_getStart__() - range.m_getLength__());
   }
  }
- /**
-  * @param {number} index
-  * @public
-  */
- m_setPage__int(index) {
+ 
+ m_setPage__int(/** number */ index) {
   if (!$Equality.$same(this.f_display__org_gwtproject_user_cellview_client_AbstractPager_, null) && (!this.f_isRangeLimited__org_gwtproject_user_cellview_client_AbstractPager_ || !this.f_display__org_gwtproject_user_cellview_client_AbstractPager_.m_isRowCountExact__() || this.m_hasPage__int(index))) {
    let pageSize = this.m_getPageSize__();
    this.f_display__org_gwtproject_user_cellview_client_AbstractPager_.m_setVisibleRange__int__int(pageSize * index, pageSize);
   }
  }
- /**
-  * @param {number} pageSize
-  * @public
-  */
- m_setPageSize__int(pageSize) {
+ 
+ m_setPageSize__int(/** number */ pageSize) {
   if (!$Equality.$same(this.f_display__org_gwtproject_user_cellview_client_AbstractPager_, null)) {
    let range = this.f_display__org_gwtproject_user_cellview_client_AbstractPager_.m_getVisibleRange__();
    let pageStart = range.m_getStart__();
@@ -235,11 +170,8 @@ class AbstractPager extends Composite {
    this.f_display__org_gwtproject_user_cellview_client_AbstractPager_.m_setVisibleRange__int__int(pageStart, pageSize);
   }
  }
- /**
-  * @param {number} index
-  * @public
-  */
- m_setPageStart__int(index) {
+ 
+ m_setPageStart__int(/** number */ index) {
   if (!$Equality.$same(this.f_display__org_gwtproject_user_cellview_client_AbstractPager_, null)) {
    let range = this.f_display__org_gwtproject_user_cellview_client_AbstractPager_.m_getVisibleRange__();
    let pageSize = range.m_getLength__();
@@ -252,12 +184,8 @@ class AbstractPager extends Composite {
    }
   }
  }
- /**
-  * @param {number} rowCount
-  * @param {boolean} isExact
-  * @public
-  */
- m_handleRowCountChange__int__boolean_$p_org_gwtproject_user_cellview_client_AbstractPager(rowCount, isExact) {
+ 
+ m_handleRowCountChange__int__boolean_$p_org_gwtproject_user_cellview_client_AbstractPager(/** number */ rowCount, /** boolean */ isExact) {
   let oldRowCount = this.f_lastRowCount__org_gwtproject_user_cellview_client_AbstractPager_;
   this.f_lastRowCount__org_gwtproject_user_cellview_client_AbstractPager_ = this.f_display__org_gwtproject_user_cellview_client_AbstractPager_.m_getRowCount__();
   if (this.f_isRangeLimited__org_gwtproject_user_cellview_client_AbstractPager_ && oldRowCount != this.f_lastRowCount__org_gwtproject_user_cellview_client_AbstractPager_) {
@@ -265,31 +193,21 @@ class AbstractPager extends Composite {
   }
   this.m_onRangeOrRowCountChanged__();
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_cellview_client_AbstractPager() {
   this.f_isRangeLimited__org_gwtproject_user_cellview_client_AbstractPager_ = true;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AbstractPager.$clinit = () =>{};
   AbstractPager.$loadModules();
   Composite.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AbstractPager;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.user.cellview.client.AbstractPager.$1$impl');

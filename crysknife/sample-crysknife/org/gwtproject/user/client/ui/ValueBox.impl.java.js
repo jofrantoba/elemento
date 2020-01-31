@@ -22,49 +22,28 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {ValueBoxBase<T>}
   */
 class ValueBox extends ValueBoxBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @template T_1
-  * @param {Object} element
-  * @param {Renderer<T_1>} renderer
-  * @param {Parser<T_1>} parser
-  * @return {ValueBox<T_1>}
-  * @public
-  */
- static m_wrap__org_gwtproject_dom_client_Element__org_gwtproject_text_shared_Renderer__org_gwtproject_text_shared_Parser(element, renderer, parser) {
+ /** @template T_1 @return {ValueBox<T_1>} */
+ static m_wrap__org_gwtproject_dom_client_Element__org_gwtproject_text_shared_Renderer__org_gwtproject_text_shared_Parser(/** Object */ element, /** Renderer<T_1> */ renderer, /** Parser<T_1> */ parser) {
   ValueBox.$clinit();
   $Asserts.$assert($Overlay.m_isOrHasChild__$devirt__org_gwtproject_dom_client_Node__org_gwtproject_dom_client_Node(Document_$Overlay.m_get__().body, element));
-  let valueBox = /**@type {!ValueBox<T_1>} */ (ValueBox.$create__org_gwtproject_dom_client_Element__org_gwtproject_text_shared_Renderer__org_gwtproject_text_shared_Parser(element, renderer, parser));
+  let valueBox = /**@type {!ValueBox<T_1>}*/ (ValueBox.$create__org_gwtproject_dom_client_Element__org_gwtproject_text_shared_Renderer__org_gwtproject_text_shared_Parser(element, renderer, parser));
   valueBox.m_onAttach__();
   RootPanel.m_detachOnWindowClose__org_gwtproject_user_client_ui_Widget(valueBox);
   return valueBox;
  }
- /**
-  * @template T
-  * @param {Object} element
-  * @param {Renderer<T>} renderer
-  * @param {Parser<T>} parser
-  * @return {!ValueBox<T>}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_Element__org_gwtproject_text_shared_Renderer__org_gwtproject_text_shared_Parser(element, renderer, parser) {
+ /** @template T @return {!ValueBox<T>} */
+ static $create__org_gwtproject_dom_client_Element__org_gwtproject_text_shared_Renderer__org_gwtproject_text_shared_Parser(/** Object */ element, /** Renderer<T> */ renderer, /** Parser<T> */ parser) {
   ValueBox.$clinit();
   let $instance = new ValueBox();
   $instance.$ctor__org_gwtproject_user_client_ui_ValueBox__org_gwtproject_dom_client_Element__org_gwtproject_text_shared_Renderer__org_gwtproject_text_shared_Parser(element, renderer, parser);
   return $instance;
  }
- /**
-  * @param {Object} element
-  * @param {Renderer<T>} renderer
-  * @param {Parser<T>} parser
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ValueBox__org_gwtproject_dom_client_Element__org_gwtproject_text_shared_Renderer__org_gwtproject_text_shared_Parser(element, renderer, parser) {
+ 
+ $ctor__org_gwtproject_user_client_ui_ValueBox__org_gwtproject_dom_client_Element__org_gwtproject_text_shared_Renderer__org_gwtproject_text_shared_Parser(/** Object */ element, /** Renderer<T> */ renderer, /** Parser<T> */ parser) {
   this.$ctor__org_gwtproject_user_client_ui_ValueBoxBase__org_gwtproject_dom_client_Element__org_gwtproject_text_shared_Renderer__org_gwtproject_text_shared_Parser(element, renderer, parser);
   this.m_setDirectionEstimator__boolean(false);
   if (LocaleInfo.m_getCurrentLocale__().m_isRTL__()) {
@@ -72,60 +51,37 @@ class ValueBox extends ValueBoxBase {
   }
   $Asserts.$assert(j_l_String.m_equalsIgnoreCase__java_lang_String__java_lang_String(InputElement_$Overlay.m_as__org_gwtproject_dom_client_Element(element).type, "text"));
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getMaxLength__() {
   return this.m_getInputElement___$p_org_gwtproject_user_client_ui_ValueBox().maxLength;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getVisibleLength__() {
   return this.m_getInputElement___$p_org_gwtproject_user_client_ui_ValueBox().size;
  }
- /**
-  * @param {number} length
-  * @public
-  */
- m_setMaxLength__int(length) {
+ 
+ m_setMaxLength__int(/** number */ length) {
   this.m_getInputElement___$p_org_gwtproject_user_client_ui_ValueBox().maxLength = length;
  }
- /**
-  * @param {number} length
-  * @public
-  */
- m_setVisibleLength__int(length) {
+ 
+ m_setVisibleLength__int(/** number */ length) {
   this.m_getInputElement___$p_org_gwtproject_user_client_ui_ValueBox().size = length;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getInputElement___$p_org_gwtproject_user_client_ui_ValueBox() {
-  return /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(this.m_getElement__()), InputElement_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(this.m_getElement__()), InputElement_$Overlay));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ValueBox.$clinit = () =>{};
   ValueBox.$loadModules();
   ValueBoxBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ValueBox;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   JavaScriptObject_$Overlay = goog.module.get('org.gwtproject.core.client.JavaScriptObject.$Overlay$impl');

@@ -10,48 +10,26 @@ let ResourcePrototype = goog.forwardDeclare('org.gwtproject.resources.client.Res
  * @extends {ClientBundle}
  */
 class ClientBundleWithLookup {
- /**
-  * @abstract
-  * @param {?string} name
-  * @return {ResourcePrototype}
-  * @public
-  */
- m_getResource__java_lang_String(name) {}
- /**
-  * @abstract
-  * @return {Array<ResourcePrototype>}
-  * @public
-  */
+ /** @abstract @return {ResourcePrototype} */
+ m_getResource__java_lang_String(/** ?string */ name) {}
+ /** @abstract @return {Array<ResourcePrototype>} */
  m_getResources__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ClientBundleWithLookup.$clinit = () =>{};
   ClientBundleWithLookup.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ClientBundle.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_resources_client_ClientBundleWithLookup = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ClientBundle.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_resources_client_ClientBundleWithLookup = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_resources_client_ClientBundleWithLookup;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

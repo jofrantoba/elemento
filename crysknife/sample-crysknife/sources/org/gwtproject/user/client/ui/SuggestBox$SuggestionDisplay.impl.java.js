@@ -12,106 +12,51 @@ let Suggestion = goog.forwardDeclare('org.gwtproject.user.client.ui.SuggestOracl
  * @abstract
   */
 class SuggestionDisplay extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_SuggestBox_SuggestionDisplay__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @abstract
-  * @return {Suggestion}
-  * @public
-  */
+ /** @abstract @return {Suggestion} */
  m_getCurrentSelection__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_hideSuggestions__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_moveSelectionDown__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_moveSelectionUp__() {}
- /**
-  * @param {?string} suggestBoxBaseID
-  * @public
-  */
- m_onEnsureDebugId__java_lang_String(suggestBoxBaseID) {}
- /**
-  * @param {boolean} hasMoreSuggestions
-  * @param {number} numMoreSuggestions
-  * @public
-  */
- m_setMoreSuggestions__boolean__int(hasMoreSuggestions, numMoreSuggestions) {}
- /**
-  * @abstract
-  * @param {SuggestBox} suggestBox
-  * @param {Collection<?>} suggestions
-  * @param {boolean} isDisplayStringHTML
-  * @param {boolean} isAutoSelectEnabled
-  * @param {SuggestionCallback} callback
-  * @public
-  */
- m_showSuggestions__org_gwtproject_user_client_ui_SuggestBox__java_util_Collection__boolean__boolean__org_gwtproject_user_client_ui_SuggestBox_SuggestionCallback(suggestBox, suggestions, isDisplayStringHTML, isAutoSelectEnabled, callback) {}
- /**
-  * @return {boolean}
-  * @public
-  * @deprecated
-  */
+ 
+ m_onEnsureDebugId__java_lang_String(/** ?string */ suggestBoxBaseID) {}
+ 
+ m_setMoreSuggestions__boolean__int(/** boolean */ hasMoreSuggestions, /** number */ numMoreSuggestions) {}
+ /** @abstract */
+ m_showSuggestions__org_gwtproject_user_client_ui_SuggestBox__java_util_Collection__boolean__boolean__org_gwtproject_user_client_ui_SuggestBox_SuggestionCallback(/** SuggestBox */ suggestBox, /** Collection<?> */ suggestions, /** boolean */ isDisplayStringHTML, /** boolean */ isAutoSelectEnabled, /** SuggestionCallback */ callback) {}
+ /** @return {boolean} @deprecated */
  m_isAnimationEnabledImpl___$pp_org_gwtproject_user_client_ui() {
   return false;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isSuggestionListShowing__() {
   return false;
  }
- /**
-  * @param {boolean} enable
-  * @public
-  * @deprecated
-  */
- m_setAnimationEnabledImpl__boolean_$pp_org_gwtproject_user_client_ui(enable) {}
- /**
-  * @param {?string} style
-  * @public
-  * @deprecated
-  */
- m_setPopupStyleNameImpl__java_lang_String_$pp_org_gwtproject_user_client_ui(style) {}
- /**
-  * @public
-  */
+ /** @deprecated */
+ m_setAnimationEnabledImpl__boolean_$pp_org_gwtproject_user_client_ui(/** boolean */ enable) {}
+ /** @deprecated */
+ m_setPopupStyleNameImpl__java_lang_String_$pp_org_gwtproject_user_client_ui(/** ?string */ style) {}
+ 
  static $clinit() {
   SuggestionDisplay.$clinit = () =>{};
   SuggestionDisplay.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SuggestionDisplay;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

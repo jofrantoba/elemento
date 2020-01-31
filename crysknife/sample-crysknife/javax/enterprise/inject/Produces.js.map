@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Produces.impl.java.js",
-"lineCount":28,
-"mappings":"A;;;;;;;;;;;;MAWkB,Q;;;;;;QAAA,M;EAAAA,mB;EAAAA,8B;;;;;QAAA,O;EAAAC,2B;EAAAA;",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;;MAWkB,Q;;QAAA,M;EAAAA,mB;EAAAA,8B;;;QAAA,O;EAAAC,2B;EAAAA;",
 "sources":["Produces.java"],
 "names":["javax.enterprise.inject.Produces.<synthetic: adapt_lambda>","javax.enterprise.inject.Produces.<clinit>"]
 }

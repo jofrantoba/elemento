@@ -8,41 +8,24 @@ const ResourcePrototype = goog.require('org.gwtproject.resources.client.Resource
  * @extends {ResourcePrototype}
  */
 class TextResource {
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getText__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TextResource.$clinit = () =>{};
   TextResource.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ResourcePrototype.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_resources_client_TextResource = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ResourcePrototype.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_resources_client_TextResource = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_resources_client_TextResource;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

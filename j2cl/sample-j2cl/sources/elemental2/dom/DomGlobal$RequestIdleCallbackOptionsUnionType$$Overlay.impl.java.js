@@ -7,52 +7,32 @@ let Double = goog.forwardDeclare('java.lang.Double$impl');
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class RequestIdleCallbackOptionsUnionType_$Overlay {
- /**
-  * @param {*} o
-  * @return {?}
-  * @public
-  */
- static m_of__java_lang_Object(o) {
+ /** @return {?} */
+ static m_of__java_lang_Object(/** * */ o) {
   RequestIdleCallbackOptionsUnionType_$Overlay.$clinit();
-  return /**@type {?} */ (Js.m_cast__java_lang_Object(o));
+  return /**@type {?}*/ (Js.m_cast__java_lang_Object(o));
  }
- /**
-  * @param {?} $thisArg
-  * @return {IdleCallbackOptions}
-  * @public
-  */
- static m_asIdleCallbackOptions__$devirt__elemental2_dom_DomGlobal_RequestIdleCallbackOptionsUnionType($thisArg) {
+ /** @return {IdleCallbackOptions} */
+ static m_asIdleCallbackOptions__$devirt__elemental2_dom_DomGlobal_RequestIdleCallbackOptionsUnionType(/** ? */ $thisArg) {
   RequestIdleCallbackOptionsUnionType_$Overlay.$clinit();
-  return /**@type {IdleCallbackOptions} */ (Js.m_cast__java_lang_Object($thisArg));
+  return /**@type {IdleCallbackOptions}*/ (Js.m_cast__java_lang_Object($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {number}
-  * @public
-  */
- static m_asInt__$devirt__elemental2_dom_DomGlobal_RequestIdleCallbackOptionsUnionType($thisArg) {
+ /** @return {number} */
+ static m_asInt__$devirt__elemental2_dom_DomGlobal_RequestIdleCallbackOptionsUnionType(/** ? */ $thisArg) {
   RequestIdleCallbackOptionsUnionType_$Overlay.$clinit();
   return Js.m_asInt__java_lang_Object($thisArg);
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isInt__$devirt__elemental2_dom_DomGlobal_RequestIdleCallbackOptionsUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isInt__$devirt__elemental2_dom_DomGlobal_RequestIdleCallbackOptionsUnionType(/** ? */ $thisArg) {
   RequestIdleCallbackOptionsUnionType_$Overlay.$clinit();
-  return Double.$isInstance(/**@type {*} */ ($thisArg));
+  return Double.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RequestIdleCallbackOptionsUnionType_$Overlay.$clinit = () =>{};
   RequestIdleCallbackOptionsUnionType_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Double = goog.module.get('java.lang.Double$impl');
   Js = goog.module.get('jsinterop.base.Js$impl');

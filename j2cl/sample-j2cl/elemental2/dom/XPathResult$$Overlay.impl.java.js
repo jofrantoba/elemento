@@ -3,79 +3,47 @@ goog.module('elemental2.dom.XPathResult.$Overlay$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 
 class $Overlay {
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_ANY_TYPE__elemental2_dom_XPathResult_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_ANY_TYPE__elemental2_dom_XPathResult_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_ANY_UNORDERED_NODE_TYPE__elemental2_dom_XPathResult_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_ANY_UNORDERED_NODE_TYPE__elemental2_dom_XPathResult_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_BOOLEAN_TYPE__elemental2_dom_XPathResult_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_BOOLEAN_TYPE__elemental2_dom_XPathResult_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_FIRST_ORDERED_NODE_TYPE__elemental2_dom_XPathResult_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_FIRST_ORDERED_NODE_TYPE__elemental2_dom_XPathResult_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_NUMBER_TYPE__elemental2_dom_XPathResult_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_NUMBER_TYPE__elemental2_dom_XPathResult_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_ORDERED_NODE_ITERATOR_TYPE__elemental2_dom_XPathResult_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_ORDERED_NODE_ITERATOR_TYPE__elemental2_dom_XPathResult_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_ORDERED_NODE_SNAPSHOT_TYPE__elemental2_dom_XPathResult_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_ORDERED_NODE_SNAPSHOT_TYPE__elemental2_dom_XPathResult_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_STRING_TYPE__elemental2_dom_XPathResult_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_STRING_TYPE__elemental2_dom_XPathResult_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_UNORDERED_NODE_ITERATOR_TYPE__elemental2_dom_XPathResult_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_UNORDERED_NODE_ITERATOR_TYPE__elemental2_dom_XPathResult_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_UNORDERED_NODE_SNAPSHOT_TYPE__elemental2_dom_XPathResult_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_UNORDERED_NODE_SNAPSHOT_TYPE__elemental2_dom_XPathResult_$Overlay);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $Overlay.$clinit = () =>{};
   $Overlay.$loadModules();
@@ -90,41 +58,35 @@ class $Overlay {
   $Overlay.$f_UNORDERED_NODE_ITERATOR_TYPE__elemental2_dom_XPathResult_$Overlay = XPathResult.UNORDERED_NODE_ITERATOR_TYPE;
   $Overlay.$f_UNORDERED_NODE_SNAPSHOT_TYPE__elemental2_dom_XPathResult_$Overlay = XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof XPathResult;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }
 $Util.$setClassMetadata($Overlay, 'XPathResult');
 
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_ANY_TYPE__elemental2_dom_XPathResult_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_ANY_UNORDERED_NODE_TYPE__elemental2_dom_XPathResult_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_BOOLEAN_TYPE__elemental2_dom_XPathResult_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_FIRST_ORDERED_NODE_TYPE__elemental2_dom_XPathResult_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_NUMBER_TYPE__elemental2_dom_XPathResult_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_ORDERED_NODE_ITERATOR_TYPE__elemental2_dom_XPathResult_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_ORDERED_NODE_SNAPSHOT_TYPE__elemental2_dom_XPathResult_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_STRING_TYPE__elemental2_dom_XPathResult_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_UNORDERED_NODE_ITERATOR_TYPE__elemental2_dom_XPathResult_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_UNORDERED_NODE_SNAPSHOT_TYPE__elemental2_dom_XPathResult_$Overlay = 0;
 
 exports = $Overlay; 

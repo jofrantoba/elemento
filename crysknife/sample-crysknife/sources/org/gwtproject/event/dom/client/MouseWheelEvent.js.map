@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MouseWheelEvent.impl.java.js",
-"lineCount":124,
-"mappings":"A;;;;;;;;;;;;;;MAoBa,e;;;;CAAA,W;EAAAA,Q;;;;;;QAmBD,S;EAAAC,0B;EAAAA,sC;EAAAA,qE;EAAAA,iB;;;;;CAAA,wD;EAAAC,2D;;;;;;QAO4B,W;EAAAC,0B;EACpCA,gF;;;;;;;CAImC,qB;EACnCC,gF;;;;;;CASa,W;EACbC,gC;;;;;;CAYS,a;EACTC,oH;;;;;;CASa,W;EACbC,gC;;;;;;CAIa,6D,CAA2BC,O;EACxCC,8E;;;;;;;;CAtES,4B;EAAAA,0I;;;;;QAAA,O;EAAAC,kC;EAAAA,+B;EAAAA,qB;EAEXA,+R;EASEA,wH;;;;;;;;;;;;;;;;;;;;;;;;AAXS;gBAGkC,wDAHlC;",
+"lineCount":86,
+"mappings":"A;;;;;;;;;;;;;;MAoBa,e;;CAAA,W;EAAAA,Q;;;QAmBD,S;EAAAC,0B;EAAAA,sC;EAAAA,qE;EAAAA,iB;;;CAAA,wD;EAAAC,2D;;;QAO4B,W;EAAAC,0B;EACpCA,gF;;;CAImC,qB;EACnCC,gF;;;CASa,W;EACbC,gC;;;CAYS,a;EACTC,oH;;;CASa,W;EACbC,gC;;;CAIa,6D,0BAA2BC,O;EACxCC,8E;;;;CAtES,4B;EAAAA,yI;;;QAAA,O;EAAAC,kC;EAAAA,+B;EAAAA,qB;EAEXA,8R;EASEA,wH;;;;;;;;;;;;;;;;;;AAXS;gBAGkC,wDAHlC;",
 "sources":["MouseWheelEvent.java"],
 "names":["org.gwtproject.event.dom.client.MouseWheelEvent.<synthetic: ctor_js>","org.gwtproject.event.dom.client.MouseWheelEvent.<synthetic: ctor_create>","org.gwtproject.event.dom.client.MouseWheelEvent.<init>","org.gwtproject.event.dom.client.MouseWheelEvent.getType","org.gwtproject.event.dom.client.MouseWheelEvent.getAssociatedType","org.gwtproject.event.dom.client.MouseWheelEvent.isNorth","org.gwtproject.event.dom.client.MouseWheelEvent.getDeltaY","org.gwtproject.event.dom.client.MouseWheelEvent.isSouth","handler","org.gwtproject.event.dom.client.MouseWheelEvent.dispatch","org.gwtproject.event.dom.client.MouseWheelEvent.<clinit>"]
 }

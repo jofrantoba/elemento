@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"LocalizedNamesImpl_fr_CA.impl.java.js",
-"lineCount":88,
-"mappings":"A;;;;;;;;MAsBa,0B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,qC;EAAAA,iD;EAAAA,mF;EAAAA,iB;;;;;CAAA,sE;EAAAC,2E;;;;;;;CAGK,yB;EACdC,umD;;;;;;CA2Qa,e;EACbC,wB;EACAA,mG;EACAA,4G;EACAA,qG;EACAA,qG;EACAA,0G;EACAA,uG;EACAA,gH;EACAA,+G;EACAA,0F;EACAA,mG;EACAA,gG;EACAA,6G;EACAA,kG;EACAA,sG;EACAA,uG;EACAA,mG;EACAA,6G;EACAA,+G;EACAA,sG;EACAA,mG;EACAA,sI;EACAA,yG;EACAA,2F;EACAA,qG;EACAA,oG;EACAA,sG;EACAA,0G;EACAA,mG;EACAA,2G;EACAA,+F;EACAA,8I;EACAA,wG;EACAA,mH;EACAA,kH;EACAA,sH;;;;;QAnTS,O;EAAAC,6C;EAAAA,0C;EAAAA;",
+"lineCount":72,
+"mappings":"A;;;;;;;;MAsBa,0B;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,qC;EAAAA,iD;EAAAA,mF;EAAAA,iB;;;CAAA,sE;EAAAC,2E;;;CAGK,yB;EACdC,smD;;;CA2Qa,e;EACbC,wB;EACAA,mG;EACAA,4G;EACAA,qG;EACAA,qG;EACAA,0G;EACAA,uG;EACAA,gH;EACAA,+G;EACAA,0F;EACAA,mG;EACAA,gG;EACAA,6G;EACAA,kG;EACAA,sG;EACAA,uG;EACAA,mG;EACAA,6G;EACAA,+G;EACAA,sG;EACAA,mG;EACAA,sI;EACAA,yG;EACAA,2F;EACAA,qG;EACAA,oG;EACAA,sG;EACAA,0G;EACAA,mG;EACAA,2G;EACAA,+F;EACAA,8I;EACAA,wG;EACAA,mH;EACAA,kH;EACAA,sH;;;QAnTS,O;EAAAC,6C;EAAAA,0C;EAAAA;",
 "sources":["LocalizedNamesImpl_fr_CA.java"],
 "names":["org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_fr_CA.<synthetic: ctor_js>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_fr_CA.<synthetic: ctor_create>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_fr_CA.<init>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_fr_CA.loadSortedRegionCodes","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_fr_CA.loadNameMap","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_fr_CA.<clinit>"]
 }

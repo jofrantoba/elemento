@@ -28,20 +28,14 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {IsEditor<LeafValueEditor<?string>>}
   */
 class Hidden extends Widget {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {LeafValueEditor<?string>} */
+  /**@type {LeafValueEditor<?string>}*/
   this.f_editor__org_gwtproject_user_client_ui_Hidden_;
  }
- /**
-  * @param {Object} element
-  * @return {Hidden}
-  * @public
-  */
- static m_wrap__org_gwtproject_dom_client_Element(element) {
+ /** @return {Hidden} */
+ static m_wrap__org_gwtproject_dom_client_Element(/** Object */ element) {
   Hidden.$clinit();
   $Asserts.$assert($Overlay.m_isOrHasChild__$devirt__org_gwtproject_dom_client_Node__org_gwtproject_dom_client_Node(Document_$Overlay.m_get__().body, element));
   let hidden = Hidden.$create__org_gwtproject_dom_client_Element(element);
@@ -49,152 +43,96 @@ class Hidden extends Widget {
   RootPanel.m_detachOnWindowClose__org_gwtproject_user_client_ui_Widget(hidden);
   return hidden;
  }
- /**
-  * Factory method corresponding to constructor 'Hidden()'.
-  * @return {!Hidden}
-  * @public
-  */
+ //Factory method corresponding to constructor 'Hidden()'.
+ /** @return {!Hidden} */
  static $create__() {
   Hidden.$clinit();
   let $instance = new Hidden();
   $instance.$ctor__org_gwtproject_user_client_ui_Hidden__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'Hidden()'.
-  * @public
-  */
+ //Initialization from constructor 'Hidden()'.
+ 
  $ctor__org_gwtproject_user_client_ui_Hidden__() {
   this.$ctor__org_gwtproject_user_client_ui_Widget__();
   this.m_setElement__org_gwtproject_dom_client_Element(Document_$Overlay.m_createHiddenInputElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__()));
  }
- /**
-  * Factory method corresponding to constructor 'Hidden(String)'.
-  * @param {?string} name
-  * @return {!Hidden}
-  * @public
-  */
- static $create__java_lang_String(name) {
+ //Factory method corresponding to constructor 'Hidden(String)'.
+ /** @return {!Hidden} */
+ static $create__java_lang_String(/** ?string */ name) {
   Hidden.$clinit();
   let $instance = new Hidden();
   $instance.$ctor__org_gwtproject_user_client_ui_Hidden__java_lang_String(name);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Hidden(String)'.
-  * @param {?string} name
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Hidden__java_lang_String(name) {
+ //Initialization from constructor 'Hidden(String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Hidden__java_lang_String(/** ?string */ name) {
   this.$ctor__org_gwtproject_user_client_ui_Hidden__();
   this.m_setName__java_lang_String(name);
  }
- /**
-  * Factory method corresponding to constructor 'Hidden(String, String)'.
-  * @param {?string} name
-  * @param {?string} value
-  * @return {!Hidden}
-  * @public
-  */
- static $create__java_lang_String__java_lang_String(name, value) {
+ //Factory method corresponding to constructor 'Hidden(String, String)'.
+ /** @return {!Hidden} */
+ static $create__java_lang_String__java_lang_String(/** ?string */ name, /** ?string */ value) {
   Hidden.$clinit();
   let $instance = new Hidden();
   $instance.$ctor__org_gwtproject_user_client_ui_Hidden__java_lang_String__java_lang_String(name, value);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Hidden(String, String)'.
-  * @param {?string} name
-  * @param {?string} value
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Hidden__java_lang_String__java_lang_String(name, value) {
+ //Initialization from constructor 'Hidden(String, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Hidden__java_lang_String__java_lang_String(/** ?string */ name, /** ?string */ value) {
   this.$ctor__org_gwtproject_user_client_ui_Hidden__java_lang_String(name);
   this.m_setValue__java_lang_String(value);
  }
- /**
-  * Factory method corresponding to constructor 'Hidden(Element)'.
-  * @param {Object} element
-  * @return {!Hidden}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_Element(element) {
+ //Factory method corresponding to constructor 'Hidden(Element)'.
+ /** @return {!Hidden} */
+ static $create__org_gwtproject_dom_client_Element(/** Object */ element) {
   Hidden.$clinit();
   let $instance = new Hidden();
   $instance.$ctor__org_gwtproject_user_client_ui_Hidden__org_gwtproject_dom_client_Element(element);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Hidden(Element)'.
-  * @param {Object} element
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Hidden__org_gwtproject_dom_client_Element(element) {
+ //Initialization from constructor 'Hidden(Element)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Hidden__org_gwtproject_dom_client_Element(/** Object */ element) {
   this.$ctor__org_gwtproject_user_client_ui_Widget__();
   $Asserts.$assert(j_l_String.m_equalsIgnoreCase__java_lang_String__java_lang_String(InputElement_$Overlay.m_as__org_gwtproject_dom_client_Element(element).type, "hidden"));
   this.m_setElement__org_gwtproject_dom_client_Element(element);
  }
- /**
-  * @override
-  * @return {LeafValueEditor<?string>}
-  * @public
-  */
+ /** @override @return {LeafValueEditor<?string>} */
  m_asEditor__() {
   if ($Equality.$same(this.f_editor__org_gwtproject_user_client_ui_Hidden_, null)) {
-   this.f_editor__org_gwtproject_user_client_ui_Hidden_ = /**@type {TakesValueEditor<?string>} */ (TakesValueEditor.m_of__org_gwtproject_user_client_TakesValue(this));
+   this.f_editor__org_gwtproject_user_client_ui_Hidden_ = /**@type {TakesValueEditor<?string>}*/ (TakesValueEditor.m_of__org_gwtproject_user_client_TakesValue(this));
   }
   return this.f_editor__org_gwtproject_user_client_ui_Hidden_;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getDefaultValue__() {
   return this.m_getInputElement___$p_org_gwtproject_user_client_ui_Hidden().defaultValue;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getID__() {
   return this.m_getElement__().id;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getName__() {
   return this.m_getInputElement___$p_org_gwtproject_user_client_ui_Hidden().name;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getValue__() {
   return this.m_getInputElement___$p_org_gwtproject_user_client_ui_Hidden().value;
  }
- /**
-  * @param {?string} defaultValue
-  * @public
-  */
- m_setDefaultValue__java_lang_String(defaultValue) {
+ 
+ m_setDefaultValue__java_lang_String(/** ?string */ defaultValue) {
   this.m_getInputElement___$p_org_gwtproject_user_client_ui_Hidden().defaultValue = defaultValue;
  }
- /**
-  * @param {?string} id
-  * @public
-  */
- m_setID__java_lang_String(id) {
+ 
+ m_setID__java_lang_String(/** ?string */ id) {
   this.m_getElement__().id = id;
  }
- /**
-  * @override
-  * @param {?string} name
-  * @public
-  */
- m_setName__java_lang_String(name) {
+ /** @override */
+ m_setName__java_lang_String(/** ?string */ name) {
   if ($Equality.$same(name, null)) {
    throw $Exceptions.toJs(NullPointerException.$create__java_lang_String("Name cannot be null"));
   } else if (j_l_String.m_equals__java_lang_String__java_lang_Object(name, "")) {
@@ -202,48 +140,30 @@ class Hidden extends Widget {
   }
   this.m_getInputElement___$p_org_gwtproject_user_client_ui_Hidden().name = name;
  }
- /**
-  * @param {?string} value
-  * @public
-  */
- m_setValue__java_lang_String(value) {
+ 
+ m_setValue__java_lang_String(/** ?string */ value) {
   this.m_getInputElement___$p_org_gwtproject_user_client_ui_Hidden().value = value;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getInputElement___$p_org_gwtproject_user_client_ui_Hidden() {
-  return /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(this.m_getElement__()), InputElement_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(this.m_getElement__()), InputElement_$Overlay));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_setValue__java_lang_Object(arg0) {
-  this.m_setValue__java_lang_String(/**@type {?string} */ ($Casts.$to(arg0, j_l_String)));
+ //Bridge method.
+ /** @override */
+ m_setValue__java_lang_Object(/** * */ arg0) {
+  this.m_setValue__java_lang_String(/**@type {?string}*/ ($Casts.$to(arg0, j_l_String)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Hidden.$clinit = () =>{};
   Hidden.$loadModules();
   Widget.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Hidden;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
   NullPointerException = goog.module.get('java.lang.NullPointerException$impl');

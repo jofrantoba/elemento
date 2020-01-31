@@ -23,188 +23,111 @@ let HasRows = goog.forwardDeclare('org.gwtproject.view.client.HasRows$impl');
 let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
 
 class SimplePager extends AbstractPager {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {ImageButton} */
+  /**@type {ImageButton}*/
   this.f_fastForward__org_gwtproject_user_cellview_client_SimplePager_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_fastForwardRows__org_gwtproject_user_cellview_client_SimplePager_ = 0;
-  /** @public {ImageButton} */
+  /**@type {ImageButton}*/
   this.f_firstPage__org_gwtproject_user_cellview_client_SimplePager_;
-  /** @public {HTML} */
+  /**@type {HTML}*/
   this.f_label__org_gwtproject_user_cellview_client_SimplePager_;
-  /** @public {ImageButton} */
+  /**@type {ImageButton}*/
   this.f_lastPage__org_gwtproject_user_cellview_client_SimplePager_;
-  /** @public {ImageButton} */
+  /**@type {ImageButton}*/
   this.f_nextPage__org_gwtproject_user_cellview_client_SimplePager_;
-  /** @public {ImageButton} */
+  /**@type {ImageButton}*/
   this.f_prevPage__org_gwtproject_user_cellview_client_SimplePager_;
-  /** @public {Resources} */
+  /**@type {Resources}*/
   this.f_resources__org_gwtproject_user_cellview_client_SimplePager_;
-  /** @public {Style} */
+  /**@type {Style}*/
   this.f_style__org_gwtproject_user_cellview_client_SimplePager_;
  }
- /**
-  * @return {Resources}
-  * @public
-  */
+ /** @return {Resources} */
  static m_getDefaultResources__() {
   if ($Equality.$same(SimplePager.f_DEFAULT_RESOURCES__org_gwtproject_user_cellview_client_SimplePager_, null)) {
    SimplePager.f_DEFAULT_RESOURCES__org_gwtproject_user_cellview_client_SimplePager_ = SimplePager__ResourcesImpl.$create__();
   }
   return SimplePager.f_DEFAULT_RESOURCES__org_gwtproject_user_cellview_client_SimplePager_;
  }
- /**
-  * Factory method corresponding to constructor 'SimplePager()'.
-  * @return {!SimplePager}
-  * @public
-  */
+ //Factory method corresponding to constructor 'SimplePager()'.
+ /** @return {!SimplePager} */
  static $create__() {
   SimplePager.$clinit();
   let $instance = new SimplePager();
   $instance.$ctor__org_gwtproject_user_cellview_client_SimplePager__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'SimplePager()'.
-  * @public
-  */
+ //Initialization from constructor 'SimplePager()'.
+ 
  $ctor__org_gwtproject_user_cellview_client_SimplePager__() {
   this.$ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation(TextLocation.f_CENTER__org_gwtproject_user_cellview_client_SimplePager_TextLocation);
  }
- /**
-  * Factory method corresponding to constructor 'SimplePager(TextLocation)'.
-  * @param {TextLocation} location
-  * @return {!SimplePager}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_SimplePager_TextLocation(location) {
+ //Factory method corresponding to constructor 'SimplePager(TextLocation)'.
+ /** @return {!SimplePager} */
+ static $create__org_gwtproject_user_cellview_client_SimplePager_TextLocation(/** TextLocation */ location) {
   SimplePager.$clinit();
   let $instance = new SimplePager();
   $instance.$ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation(location);
   return $instance;
  }
- /**
-  * Initialization from constructor 'SimplePager(TextLocation)'.
-  * @param {TextLocation} location
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation(location) {
+ //Initialization from constructor 'SimplePager(TextLocation)'.
+ 
+ $ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation(/** TextLocation */ location) {
   this.$ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation__org_gwtproject_user_cellview_client_SimplePager_Resources__boolean__int__boolean(location, SimplePager.m_getDefaultResources__(), true, SimplePager.f_DEFAULT_FAST_FORWARD_ROWS__org_gwtproject_user_cellview_client_SimplePager_, false);
  }
- /**
-  * Factory method corresponding to constructor 'SimplePager(TextLocation, boolean, boolean)'.
-  * @param {TextLocation} location
-  * @param {boolean} showFastForwardButton
-  * @param {boolean} showLastPageButton
-  * @return {!SimplePager}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_SimplePager_TextLocation__boolean__boolean(location, showFastForwardButton, showLastPageButton) {
+ //Factory method corresponding to constructor 'SimplePager(TextLocation, boolean, boolean)'.
+ /** @return {!SimplePager} */
+ static $create__org_gwtproject_user_cellview_client_SimplePager_TextLocation__boolean__boolean(/** TextLocation */ location, /** boolean */ showFastForwardButton, /** boolean */ showLastPageButton) {
   SimplePager.$clinit();
   let $instance = new SimplePager();
   $instance.$ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation__boolean__boolean(location, showFastForwardButton, showLastPageButton);
   return $instance;
  }
- /**
-  * Initialization from constructor 'SimplePager(TextLocation, boolean, boolean)'.
-  * @param {TextLocation} location
-  * @param {boolean} showFastForwardButton
-  * @param {boolean} showLastPageButton
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation__boolean__boolean(location, showFastForwardButton, showLastPageButton) {
+ //Initialization from constructor 'SimplePager(TextLocation, boolean, boolean)'.
+ 
+ $ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation__boolean__boolean(/** TextLocation */ location, /** boolean */ showFastForwardButton, /** boolean */ showLastPageButton) {
   this.$ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation__boolean__int__boolean(location, showFastForwardButton, SimplePager.f_DEFAULT_FAST_FORWARD_ROWS__org_gwtproject_user_cellview_client_SimplePager_, showLastPageButton);
  }
- /**
-  * Factory method corresponding to constructor 'SimplePager(TextLocation, boolean, int, boolean)'.
-  * @param {TextLocation} location
-  * @param {boolean} showFastForwardButton
-  * @param {number} fastForwardRows
-  * @param {boolean} showLastPageButton
-  * @return {!SimplePager}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_SimplePager_TextLocation__boolean__int__boolean(location, showFastForwardButton, fastForwardRows, showLastPageButton) {
+ //Factory method corresponding to constructor 'SimplePager(TextLocation, boolean, int, boolean)'.
+ /** @return {!SimplePager} */
+ static $create__org_gwtproject_user_cellview_client_SimplePager_TextLocation__boolean__int__boolean(/** TextLocation */ location, /** boolean */ showFastForwardButton, /** number */ fastForwardRows, /** boolean */ showLastPageButton) {
   SimplePager.$clinit();
   let $instance = new SimplePager();
   $instance.$ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation__boolean__int__boolean(location, showFastForwardButton, fastForwardRows, showLastPageButton);
   return $instance;
  }
- /**
-  * Initialization from constructor 'SimplePager(TextLocation, boolean, int, boolean)'.
-  * @param {TextLocation} location
-  * @param {boolean} showFastForwardButton
-  * @param {number} fastForwardRows
-  * @param {boolean} showLastPageButton
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation__boolean__int__boolean(location, showFastForwardButton, fastForwardRows, showLastPageButton) {
+ //Initialization from constructor 'SimplePager(TextLocation, boolean, int, boolean)'.
+ 
+ $ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation__boolean__int__boolean(/** TextLocation */ location, /** boolean */ showFastForwardButton, /** number */ fastForwardRows, /** boolean */ showLastPageButton) {
   this.$ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation__org_gwtproject_user_cellview_client_SimplePager_Resources__boolean__int__boolean(location, SimplePager.m_getDefaultResources__(), showFastForwardButton, fastForwardRows, showLastPageButton);
  }
- /**
-  * Factory method corresponding to constructor 'SimplePager(TextLocation, Resources, boolean, int, boolean, ImageButtonsConstants)'.
-  * @param {TextLocation} location
-  * @param {Resources} resources
-  * @param {boolean} showFastForwardButton
-  * @param {number} fastForwardRows
-  * @param {boolean} showLastPageButton
-  * @param {ImageButtonsConstants} imageButtonConstants
-  * @return {!SimplePager}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_SimplePager_TextLocation__org_gwtproject_user_cellview_client_SimplePager_Resources__boolean__int__boolean__org_gwtproject_user_cellview_client_SimplePager_ImageButtonsConstants(location, resources, showFastForwardButton, fastForwardRows, showLastPageButton, imageButtonConstants) {
+ //Factory method corresponding to constructor 'SimplePager(TextLocation, Resources, boolean, int, boolean, ImageButtonsConstants)'.
+ /** @return {!SimplePager} */
+ static $create__org_gwtproject_user_cellview_client_SimplePager_TextLocation__org_gwtproject_user_cellview_client_SimplePager_Resources__boolean__int__boolean__org_gwtproject_user_cellview_client_SimplePager_ImageButtonsConstants(/** TextLocation */ location, /** Resources */ resources, /** boolean */ showFastForwardButton, /** number */ fastForwardRows, /** boolean */ showLastPageButton, /** ImageButtonsConstants */ imageButtonConstants) {
   SimplePager.$clinit();
   let $instance = new SimplePager();
   $instance.$ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation__org_gwtproject_user_cellview_client_SimplePager_Resources__boolean__int__boolean__org_gwtproject_user_cellview_client_SimplePager_ImageButtonsConstants(location, resources, showFastForwardButton, fastForwardRows, showLastPageButton, imageButtonConstants);
   return $instance;
  }
- /**
-  * Initialization from constructor 'SimplePager(TextLocation, Resources, boolean, int, boolean, ImageButtonsConstants)'.
-  * @param {TextLocation} location
-  * @param {Resources} resources
-  * @param {boolean} showFastForwardButton
-  * @param {number} fastForwardRows
-  * @param {boolean} showLastPageButton
-  * @param {ImageButtonsConstants} imageButtonConstants
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation__org_gwtproject_user_cellview_client_SimplePager_Resources__boolean__int__boolean__org_gwtproject_user_cellview_client_SimplePager_ImageButtonsConstants(location, resources, showFastForwardButton, fastForwardRows, showLastPageButton, imageButtonConstants) {
+ //Initialization from constructor 'SimplePager(TextLocation, Resources, boolean, int, boolean, ImageButtonsConstants)'.
+ 
+ $ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation__org_gwtproject_user_cellview_client_SimplePager_Resources__boolean__int__boolean__org_gwtproject_user_cellview_client_SimplePager_ImageButtonsConstants(/** TextLocation */ location, /** Resources */ resources, /** boolean */ showFastForwardButton, /** number */ fastForwardRows, /** boolean */ showLastPageButton, /** ImageButtonsConstants */ imageButtonConstants) {
   this.$ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation__org_gwtproject_user_cellview_client_SimplePager_Resources__boolean__int__boolean__boolean__org_gwtproject_user_cellview_client_SimplePager_ImageButtonsConstants(location, resources, showFastForwardButton, fastForwardRows, showLastPageButton, true, imageButtonConstants);
  }
- /**
-  * Factory method corresponding to constructor 'SimplePager(TextLocation, Resources, boolean, int, boolean, boolean, ImageButtonsConstants)'.
-  * @param {TextLocation} location
-  * @param {Resources} resources
-  * @param {boolean} showFastForwardButton
-  * @param {number} fastForwardRows
-  * @param {boolean} showLastPageButton
-  * @param {boolean} showFirstPageButton
-  * @param {ImageButtonsConstants} imageButtonConstants
-  * @return {!SimplePager}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_SimplePager_TextLocation__org_gwtproject_user_cellview_client_SimplePager_Resources__boolean__int__boolean__boolean__org_gwtproject_user_cellview_client_SimplePager_ImageButtonsConstants(location, resources, showFastForwardButton, fastForwardRows, showLastPageButton, showFirstPageButton, imageButtonConstants) {
+ //Factory method corresponding to constructor 'SimplePager(TextLocation, Resources, boolean, int, boolean, boolean, ImageButtonsConstants)'.
+ /** @return {!SimplePager} */
+ static $create__org_gwtproject_user_cellview_client_SimplePager_TextLocation__org_gwtproject_user_cellview_client_SimplePager_Resources__boolean__int__boolean__boolean__org_gwtproject_user_cellview_client_SimplePager_ImageButtonsConstants(/** TextLocation */ location, /** Resources */ resources, /** boolean */ showFastForwardButton, /** number */ fastForwardRows, /** boolean */ showLastPageButton, /** boolean */ showFirstPageButton, /** ImageButtonsConstants */ imageButtonConstants) {
   SimplePager.$clinit();
   let $instance = new SimplePager();
   $instance.$ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation__org_gwtproject_user_cellview_client_SimplePager_Resources__boolean__int__boolean__boolean__org_gwtproject_user_cellview_client_SimplePager_ImageButtonsConstants(location, resources, showFastForwardButton, fastForwardRows, showLastPageButton, showFirstPageButton, imageButtonConstants);
   return $instance;
  }
- /**
-  * Initialization from constructor 'SimplePager(TextLocation, Resources, boolean, int, boolean, boolean, ImageButtonsConstants)'.
-  * @param {TextLocation} location
-  * @param {Resources} resources
-  * @param {boolean} showFastForwardButton
-  * @param {number} fastForwardRows
-  * @param {boolean} showLastPageButton
-  * @param {boolean} showFirstPageButton
-  * @param {ImageButtonsConstants} imageButtonConstants
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation__org_gwtproject_user_cellview_client_SimplePager_Resources__boolean__int__boolean__boolean__org_gwtproject_user_cellview_client_SimplePager_ImageButtonsConstants(location, resources, showFastForwardButton, fastForwardRows, showLastPageButton, showFirstPageButton, imageButtonConstants) {
+ //Initialization from constructor 'SimplePager(TextLocation, Resources, boolean, int, boolean, boolean, ImageButtonsConstants)'.
+ 
+ $ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation__org_gwtproject_user_cellview_client_SimplePager_Resources__boolean__int__boolean__boolean__org_gwtproject_user_cellview_client_SimplePager_ImageButtonsConstants(/** TextLocation */ location, /** Resources */ resources, /** boolean */ showFastForwardButton, /** number */ fastForwardRows, /** boolean */ showLastPageButton, /** boolean */ showFirstPageButton, /** ImageButtonsConstants */ imageButtonConstants) {
   this.$ctor__org_gwtproject_user_cellview_client_AbstractPager__();
   this.$init___$p_org_gwtproject_user_cellview_client_SimplePager();
   this.f_resources__org_gwtproject_user_cellview_client_SimplePager_ = resources;
@@ -281,175 +204,93 @@ class SimplePager extends AbstractPager {
   }
   this.m_setDisplay__org_gwtproject_view_client_HasRows(null);
  }
- /**
-  * Factory method corresponding to constructor 'SimplePager(TextLocation, Resources, boolean, int, boolean)'.
-  * @param {TextLocation} location
-  * @param {Resources} resources
-  * @param {boolean} showFastForwardButton
-  * @param {number} fastForwardRows
-  * @param {boolean} showLastPageButton
-  * @return {!SimplePager}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_SimplePager_TextLocation__org_gwtproject_user_cellview_client_SimplePager_Resources__boolean__int__boolean(location, resources, showFastForwardButton, fastForwardRows, showLastPageButton) {
+ //Factory method corresponding to constructor 'SimplePager(TextLocation, Resources, boolean, int, boolean)'.
+ /** @return {!SimplePager} */
+ static $create__org_gwtproject_user_cellview_client_SimplePager_TextLocation__org_gwtproject_user_cellview_client_SimplePager_Resources__boolean__int__boolean(/** TextLocation */ location, /** Resources */ resources, /** boolean */ showFastForwardButton, /** number */ fastForwardRows, /** boolean */ showLastPageButton) {
   SimplePager.$clinit();
   let $instance = new SimplePager();
   $instance.$ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation__org_gwtproject_user_cellview_client_SimplePager_Resources__boolean__int__boolean(location, resources, showFastForwardButton, fastForwardRows, showLastPageButton);
   return $instance;
  }
- /**
-  * Initialization from constructor 'SimplePager(TextLocation, Resources, boolean, int, boolean)'.
-  * @param {TextLocation} location
-  * @param {Resources} resources
-  * @param {boolean} showFastForwardButton
-  * @param {number} fastForwardRows
-  * @param {boolean} showLastPageButton
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation__org_gwtproject_user_cellview_client_SimplePager_Resources__boolean__int__boolean(location, resources, showFastForwardButton, fastForwardRows, showLastPageButton) {
+ //Initialization from constructor 'SimplePager(TextLocation, Resources, boolean, int, boolean)'.
+ 
+ $ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation__org_gwtproject_user_cellview_client_SimplePager_Resources__boolean__int__boolean(/** TextLocation */ location, /** Resources */ resources, /** boolean */ showFastForwardButton, /** number */ fastForwardRows, /** boolean */ showLastPageButton) {
   this.$ctor__org_gwtproject_user_cellview_client_SimplePager__org_gwtproject_user_cellview_client_SimplePager_TextLocation__org_gwtproject_user_cellview_client_SimplePager_Resources__boolean__int__boolean__org_gwtproject_user_cellview_client_SimplePager_ImageButtonsConstants(location, resources, showFastForwardButton, fastForwardRows, showLastPageButton, ImageButtonsConstants.f_INSTANCE__org_gwtproject_user_cellview_client_SimplePager_ImageButtonsConstants);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_firstPage__() {
   super.m_firstPage__();
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getPage__() {
   return super.m_getPage__();
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getPageCount__() {
   return super.m_getPageCount__();
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_hasNextPage__() {
   return super.m_hasNextPage__();
  }
- /**
-  * @override
-  * @param {number} pages
-  * @return {boolean}
-  * @public
-  */
- m_hasNextPages__int(pages) {
+ /** @override @return {boolean} */
+ m_hasNextPages__int(/** number */ pages) {
   return super.m_hasNextPages__int(pages);
  }
- /**
-  * @override
-  * @param {number} index
-  * @return {boolean}
-  * @public
-  */
- m_hasPage__int(index) {
+ /** @override @return {boolean} */
+ m_hasPage__int(/** number */ index) {
   return super.m_hasPage__int(index);
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_hasPreviousPage__() {
   return super.m_hasPreviousPage__();
  }
- /**
-  * @override
-  * @param {number} pages
-  * @return {boolean}
-  * @public
-  */
- m_hasPreviousPages__int(pages) {
+ /** @override @return {boolean} */
+ m_hasPreviousPages__int(/** number */ pages) {
   return super.m_hasPreviousPages__int(pages);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_lastPage__() {
   super.m_lastPage__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_lastPageStart__() {
   super.m_lastPageStart__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_nextPage__() {
   super.m_nextPage__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_previousPage__() {
   super.m_previousPage__();
  }
- /**
-  * @override
-  * @param {HasRows} display
-  * @public
-  */
- m_setDisplay__org_gwtproject_view_client_HasRows(display) {
+ /** @override */
+ m_setDisplay__org_gwtproject_view_client_HasRows(/** HasRows */ display) {
   let disableButtons = ($Equality.$same(display, null) || display.m_getRowCount__() == 0);
   this.m_setFastForwardDisabled__boolean_$p_org_gwtproject_user_cellview_client_SimplePager(disableButtons);
   this.m_setNextPageButtonsDisabled__boolean_$p_org_gwtproject_user_cellview_client_SimplePager(disableButtons);
   this.m_setPrevPageButtonsDisabled__boolean_$p_org_gwtproject_user_cellview_client_SimplePager(disableButtons);
   super.m_setDisplay__org_gwtproject_view_client_HasRows(display);
  }
- /**
-  * @override
-  * @param {number} index
-  * @public
-  */
- m_setPage__int(index) {
+ /** @override */
+ m_setPage__int(/** number */ index) {
   super.m_setPage__int(index);
  }
- /**
-  * @override
-  * @param {number} pageSize
-  * @public
-  */
- m_setPageSize__int(pageSize) {
+ /** @override */
+ m_setPageSize__int(/** number */ pageSize) {
   super.m_setPageSize__int(pageSize);
  }
- /**
-  * @override
-  * @param {number} index
-  * @public
-  */
- m_setPageStart__int(index) {
+ /** @override */
+ m_setPageStart__int(/** number */ index) {
   super.m_setPageStart__int(index);
  }
- /**
-  * @public
-  */
+ 
  m_startLoading__() {
   this.m_getDisplay__().m_setRowCount__int__boolean(0, true);
   this.f_label__org_gwtproject_user_cellview_client_SimplePager_.m_setHTML__java_lang_String("");
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_createText__() {
   let formatter = NumberFormat.m_getFormat__java_lang_String("#,###");
   let display = this.m_getDisplay__();
@@ -462,10 +303,7 @@ class SimplePager extends AbstractPager {
   let exact = display.m_isRowCountExact__();
   return j_l_String.m_valueOf__java_lang_Object(formatter.m_format__double(pageStart)) + "-" + j_l_String.m_valueOf__java_lang_Object(formatter.m_format__double(endIndex)) + j_l_String.m_valueOf__java_lang_Object((exact ? " of " : " of over ")) + j_l_String.m_valueOf__java_lang_Object(formatter.m_format__double(dataSize));
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onRangeOrRowCountChanged__() {
   let display = this.m_getDisplay__();
   this.f_label__org_gwtproject_user_cellview_client_SimplePager_.m_setText__java_lang_String(this.m_createText__());
@@ -475,33 +313,21 @@ class SimplePager extends AbstractPager {
    this.m_setFastForwardDisabled__boolean_$p_org_gwtproject_user_cellview_client_SimplePager(!this.m_hasNextPages__int(this.m_getFastForwardPages___$p_org_gwtproject_user_cellview_client_SimplePager()));
   }
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isNextButtonDisabled___$pp_org_gwtproject_user_cellview_client() {
   return this.f_nextPage__org_gwtproject_user_cellview_client_SimplePager_.m_isDisabled__();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isPreviousButtonDisabled___$pp_org_gwtproject_user_cellview_client() {
   return this.f_prevPage__org_gwtproject_user_cellview_client_SimplePager_.m_isDisabled__();
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getFastForwardPages___$p_org_gwtproject_user_cellview_client_SimplePager() {
   let pageSize = this.m_getPageSize__();
   return pageSize > 0 ? $Primitives.$coerceDivision(this.f_fastForwardRows__org_gwtproject_user_cellview_client_SimplePager_ / pageSize) : 0;
  }
- /**
-  * @param {boolean} disabled
-  * @public
-  */
- m_setFastForwardDisabled__boolean_$p_org_gwtproject_user_cellview_client_SimplePager(disabled) {
+ 
+ m_setFastForwardDisabled__boolean_$p_org_gwtproject_user_cellview_client_SimplePager(/** boolean */ disabled) {
   if ($Equality.$same(this.f_fastForward__org_gwtproject_user_cellview_client_SimplePager_, null)) {
    return;
   }
@@ -513,51 +339,35 @@ class SimplePager extends AbstractPager {
    $Overlay.m_removeClassName__$devirt__org_gwtproject_dom_client_Element__java_lang_String(Node_$Overlay.m_getParentElement__$devirt__org_gwtproject_dom_client_Node(this.f_fastForward__org_gwtproject_user_cellview_client_SimplePager_.m_getElement__()), this.f_style__org_gwtproject_user_cellview_client_SimplePager_.m_disabledButton__());
   }
  }
- /**
-  * @param {boolean} disabled
-  * @public
-  */
- m_setNextPageButtonsDisabled__boolean_$p_org_gwtproject_user_cellview_client_SimplePager(disabled) {
+ 
+ m_setNextPageButtonsDisabled__boolean_$p_org_gwtproject_user_cellview_client_SimplePager(/** boolean */ disabled) {
   this.f_nextPage__org_gwtproject_user_cellview_client_SimplePager_.m_setDisabled__boolean(disabled);
   if (!$Equality.$same(this.f_lastPage__org_gwtproject_user_cellview_client_SimplePager_, null)) {
    this.f_lastPage__org_gwtproject_user_cellview_client_SimplePager_.m_setDisabled__boolean(disabled);
   }
  }
- /**
-  * @param {boolean} disabled
-  * @public
-  */
- m_setPrevPageButtonsDisabled__boolean_$p_org_gwtproject_user_cellview_client_SimplePager(disabled) {
+ 
+ m_setPrevPageButtonsDisabled__boolean_$p_org_gwtproject_user_cellview_client_SimplePager(/** boolean */ disabled) {
   if (!$Equality.$same(this.f_firstPage__org_gwtproject_user_cellview_client_SimplePager_, null)) {
    this.f_firstPage__org_gwtproject_user_cellview_client_SimplePager_.m_setDisabled__boolean(disabled);
   }
   this.f_prevPage__org_gwtproject_user_cellview_client_SimplePager_.m_setDisabled__boolean(disabled);
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_cellview_client_SimplePager() {
   this.f_label__org_gwtproject_user_cellview_client_SimplePager_ = HTML.$create__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SimplePager.$clinit = () =>{};
   SimplePager.$loadModules();
   AbstractPager.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SimplePager;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -578,9 +388,9 @@ class SimplePager extends AbstractPager {
 }
 $Util.$setClassMetadata(SimplePager, 'org.gwtproject.user.cellview.client.SimplePager');
 
-/** @public {number} @const */
+/**@const {number}*/
 SimplePager.f_DEFAULT_FAST_FORWARD_ROWS__org_gwtproject_user_cellview_client_SimplePager_ = 1000;
-/** @public {Resources} */
+/**@type {Resources}*/
 SimplePager.f_DEFAULT_RESOURCES__org_gwtproject_user_cellview_client_SimplePager_;
 
 exports = SimplePager; 

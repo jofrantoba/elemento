@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"EmptyContentBuilder.impl.java.js",
-"lineCount":52,
-"mappings":"A;;;;;;;;;;;MAoBa,mB;;;;CAAA,W;EAAAA,Q;;;;;;;;QAEF,mC,CAAsBC,O;EAAtBC,8B;EAAAA,0C;EAAAA,6F;EAAAA,iB;;;;;;CAAA,yE,CAAsBD,O;EACzBE,mF;;;;;;;CAI0B,Q;EAC1BC,Y;;;;;QARK,O;EAAAC,sC;EAAAA,mC;EAAAA;",
+"lineCount":36,
+"mappings":"A;;;;;;;;;;;MAoBa,mB;;CAAA,W;EAAAA,Q;;;QAEF,mC,UAAsBC,O;EAAtBC,8B;EAAAA,0C;EAAAA,6F;EAAAA,iB;;;CAAA,yE,UAAsBD,O;EACzBE,mF;;;CAI0B,Q;EAC1BC,Y;;;QARK,O;EAAAC,sC;EAAAA,mC;EAAAA;",
 "sources":["EmptyContentBuilder.java"],
 "names":["org.jboss.elemento.EmptyContentBuilder.<synthetic: ctor_js>","element","org.jboss.elemento.EmptyContentBuilder.<synthetic: ctor_create>","org.jboss.elemento.EmptyContentBuilder.<init>","org.jboss.elemento.EmptyContentBuilder.that","org.jboss.elemento.EmptyContentBuilder.<clinit>"]
 }

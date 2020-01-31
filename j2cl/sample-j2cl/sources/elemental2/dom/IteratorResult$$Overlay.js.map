@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"IteratorResult$$Overlay.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;MAyBiB,uB;;;;;QAEO,U;EAAAA,kC;EACpBA,8F;;;;;QAHa,O;EAAAC,0C;EAAAA;",
+"lineCount":17,
+"mappings":"A;;;;;;;MAyBiB,uB;;QAEO,U;EAAAA,kC;EACpBA,6F;;;QAHa,O;EAAAC,0C;EAAAA;",
 "sources":["IteratorResult.java"],
 "names":["elemental2.dom.IteratorResult$$Overlay.create","elemental2.dom.IteratorResult$$Overlay.<clinit>"]
 }

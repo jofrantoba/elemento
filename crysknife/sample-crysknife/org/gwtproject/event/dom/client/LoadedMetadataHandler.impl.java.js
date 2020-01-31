@@ -11,50 +11,29 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.event.dom.client.Loaded
  * @extends {EventHandler}
  */
 class LoadedMetadataHandler {
- /**
-  * @abstract
-  * @param {LoadedMetadataEvent} event
-  * @public
-  */
- m_onLoadedMetadata__org_gwtproject_event_dom_client_LoadedMetadataEvent(event) {}
- /**
-  * @param {?function(LoadedMetadataEvent):void} fn
-  * @return {LoadedMetadataHandler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onLoadedMetadata__org_gwtproject_event_dom_client_LoadedMetadataEvent(/** LoadedMetadataEvent */ event) {}
+ /** @return {LoadedMetadataHandler} */
+ static $adapt(/** ?function(LoadedMetadataEvent):void */ fn) {
   LoadedMetadataHandler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   LoadedMetadataHandler.$clinit = () =>{};
   LoadedMetadataHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  EventHandler.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_LoadedMetadataHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  EventHandler.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_LoadedMetadataHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_LoadedMetadataHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.event.dom.client.LoadedMetadataHandler.$LambdaAdaptor$impl');
  }

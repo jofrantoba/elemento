@@ -13,16 +13,11 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {AbstractRenderer<?number>}
   */
 class DoubleRenderer extends AbstractRenderer {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {Renderer<?number>}
-  * @public
-  */
+ /** @return {Renderer<?number>} */
  static m_instance__() {
   DoubleRenderer.$clinit();
   if ($Equality.$same(DoubleRenderer.f_INSTANCE__org_gwtproject_text_client_DoubleRenderer_, null)) {
@@ -30,59 +25,37 @@ class DoubleRenderer extends AbstractRenderer {
   }
   return DoubleRenderer.f_INSTANCE__org_gwtproject_text_client_DoubleRenderer_;
  }
- /**
-  * @return {!DoubleRenderer}
-  * @public
-  */
+ /** @return {!DoubleRenderer} */
  static $create__() {
   DoubleRenderer.$clinit();
   let $instance = new DoubleRenderer();
   $instance.$ctor__org_gwtproject_text_client_DoubleRenderer__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_text_client_DoubleRenderer__() {
   this.$ctor__org_gwtproject_text_shared_AbstractRenderer__();
  }
- /**
-  * @param {?number} object
-  * @return {?string}
-  * @public
-  */
- m_render__java_lang_Double(object) {
+ /** @return {?string} */
+ m_render__java_lang_Double(/** ?number */ object) {
   return $Equality.$same(object, null) ? "" : NumberFormat.m_getDecimalFormat__().m_format__java_lang_Number(object);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @return {?string}
-  * @public
-  */
- m_render__java_lang_Object(arg0) {
-  return this.m_render__java_lang_Double(/**@type {?number} */ ($Casts.$to(arg0, Double)));
+ //Bridge method.
+ /** @override @return {?string} */
+ m_render__java_lang_Object(/** * */ arg0) {
+  return this.m_render__java_lang_Double(/**@type {?number}*/ ($Casts.$to(arg0, Double)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DoubleRenderer.$clinit = () =>{};
   DoubleRenderer.$loadModules();
   AbstractRenderer.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DoubleRenderer;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Double = goog.module.get('java.lang.Double$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -93,7 +66,7 @@ class DoubleRenderer extends AbstractRenderer {
 }
 $Util.$setClassMetadata(DoubleRenderer, 'org.gwtproject.text.client.DoubleRenderer');
 
-/** @public {DoubleRenderer} */
+/**@type {DoubleRenderer}*/
 DoubleRenderer.f_INSTANCE__org_gwtproject_text_client_DoubleRenderer_;
 
 exports = DoubleRenderer; 

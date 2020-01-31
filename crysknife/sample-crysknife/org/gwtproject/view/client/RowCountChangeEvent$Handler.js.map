@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"RowCountChangeEvent$Handler.impl.java.js",
-"lineCount":32,
-"mappings":"A;;;;;;;;;;MAiC0B,O;;;;;;CAOjB,kE,CAAqCA,K;;;;;;QAPpB,M;EAAAC,kB;EAAAA,8B;;;;;QAAA,O;EAAAC,0B;EAAAA;",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;MAiC0B,O;;CAOjB,kE,4BAAqCA,K;;QAPpB,M;EAAAC,kB;EAAAA,8B;;;QAAA,O;EAAAC,0B;EAAAA;",
 "sources":["RowCountChangeEvent.java"],
 "names":["event","org.gwtproject.view.client.RowCountChangeEvent$Handler.<synthetic: adapt_lambda>","org.gwtproject.view.client.RowCountChangeEvent$Handler.<clinit>"]
 }

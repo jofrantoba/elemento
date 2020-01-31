@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ResponseInit$GetHeadersUnionType$$Overlay.impl.java.js",
-"lineCount":71,
-"mappings":"A;;;;;;;;;;MA4BmB,4B;;;;;;QAEyB,sB,CAAUA,C;EAAVC,uC;EACtCA,wD;;;;;;;QAIc,qE;EAAAC,uC;EACdA,2F;;;;;;;QAI+B,qE;EAAAC,uC;EAC/BA,iH;;;;;;;QAI4B,2E;EAAAC,uC;EAC5BA,qF;;;;;;;QAIc,qE;EAAAC,uC;EACdA,wD;;;;;;;QAIc,qE;EAAAC,uC;EACdA,gE;;;;;QA5Ba,O;EAAAC,+C;EAAAA;",
+"lineCount":45,
+"mappings":"A;;;;;;;;;;MA4BmB,4B;;QAEyB,sB,UAAUA,C;EAAVC,uC;EACtCA,uD;;;QAIc,qE;EAAAC,uC;EACdA,0F;;;QAI+B,qE;EAAAC,uC;EAC/BA,gH;;;QAI4B,2E;EAAAC,uC;EAC5BA,oF;;;QAIc,qE;EAAAC,uC;EACdA,uD;;;QAIc,qE;EAAAC,uC;EACdA,+D;;;QA5Ba,O;EAAAC,+C;EAAAA;",
 "sources":["ResponseInit.java"],
 "names":["o","elemental2.dom.ResponseInit$GetHeadersUnionType$$Overlay.of","elemental2.dom.ResponseInit$GetHeadersUnionType$$Overlay.asHeaders__$devirt","elemental2.dom.ResponseInit$GetHeadersUnionType$$Overlay.asJsArray__$devirt","elemental2.dom.ResponseInit$GetHeadersUnionType$$Overlay.asJsPropertyMap__$devirt","elemental2.dom.ResponseInit$GetHeadersUnionType$$Overlay.isHeaders__$devirt","elemental2.dom.ResponseInit$GetHeadersUnionType$$Overlay.isJsArray__$devirt","elemental2.dom.ResponseInit$GetHeadersUnionType$$Overlay.<clinit>"]
 }

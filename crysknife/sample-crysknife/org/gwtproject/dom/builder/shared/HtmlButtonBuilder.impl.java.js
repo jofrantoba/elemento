@@ -12,84 +12,48 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {ButtonBuilder}
   */
 class HtmlButtonBuilder extends HtmlElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @return {!HtmlButtonBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ /** @return {!HtmlButtonBuilder} */
+ static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   HtmlButtonBuilder.$clinit();
   let $instance = new HtmlButtonBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_shared_HtmlButtonBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_shared_HtmlButtonBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_shared_HtmlButtonBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_shared_HtmlElementBuilderBase__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate);
  }
- /**
-  * @override
-  * @param {?string} accessKey
-  * @return {ButtonBuilder}
-  * @public
-  */
- m_accessKey__java_lang_String(accessKey) {
-  return /**@type {ButtonBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("accessKey", accessKey), ButtonBuilder));
+ /** @override @return {ButtonBuilder} */
+ m_accessKey__java_lang_String(/** ?string */ accessKey) {
+  return /**@type {ButtonBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("accessKey", accessKey), ButtonBuilder));
  }
- /**
-  * @override
-  * @return {ButtonBuilder}
-  * @public
-  */
+ /** @override @return {ButtonBuilder} */
  m_disabled__() {
-  return /**@type {ButtonBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("disabled", "disabled"), ButtonBuilder));
+  return /**@type {ButtonBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("disabled", "disabled"), ButtonBuilder));
  }
- /**
-  * @override
-  * @param {?string} name
-  * @return {ButtonBuilder}
-  * @public
-  */
- m_name__java_lang_String(name) {
-  return /**@type {ButtonBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("name", name), ButtonBuilder));
+ /** @override @return {ButtonBuilder} */
+ m_name__java_lang_String(/** ?string */ name) {
+  return /**@type {ButtonBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("name", name), ButtonBuilder));
  }
- /**
-  * @override
-  * @param {?string} value
-  * @return {ButtonBuilder}
-  * @public
-  */
- m_value__java_lang_String(value) {
-  return /**@type {ButtonBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("value", value), ButtonBuilder));
+ /** @override @return {ButtonBuilder} */
+ m_value__java_lang_String(/** ?string */ value) {
+  return /**@type {ButtonBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("value", value), ButtonBuilder));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HtmlButtonBuilder.$clinit = () =>{};
   HtmlButtonBuilder.$loadModules();
   HtmlElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HtmlButtonBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

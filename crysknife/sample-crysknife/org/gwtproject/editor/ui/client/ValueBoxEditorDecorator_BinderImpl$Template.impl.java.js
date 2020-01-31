@@ -11,53 +11,29 @@ let SafeHtml = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHtml$impl
  * @extends {SafeHtmlTemplates}
  */
 class Template {
- /**
-  * @abstract
-  * @param {?string} arg0
-  * @param {?string} arg1
-  * @param {?string} arg2
-  * @return {SafeHtml}
-  * @public
-  */
- m_html1__java_lang_String__java_lang_String__java_lang_String(arg0, arg1, arg2) {}
- /**
-  * @param {?function(?string, ?string, ?string):SafeHtml} fn
-  * @return {Template}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract @return {SafeHtml} */
+ m_html1__java_lang_String__java_lang_String__java_lang_String(/** ?string */ arg0, /** ?string */ arg1, /** ?string */ arg2) {}
+ /** @return {Template} */
+ static $adapt(/** ?function(?string, ?string, ?string):SafeHtml */ fn) {
   Template.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Template.$clinit = () =>{};
   Template.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  SafeHtmlTemplates.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_Template = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  SafeHtmlTemplates.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_Template = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_Template;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl.Template.$LambdaAdaptor$impl');
  }

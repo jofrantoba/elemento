@@ -11,50 +11,29 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.event.dom.client.CanPla
  * @extends {EventHandler}
  */
 class CanPlayThroughHandler {
- /**
-  * @abstract
-  * @param {CanPlayThroughEvent} event
-  * @public
-  */
- m_onCanPlayThrough__org_gwtproject_event_dom_client_CanPlayThroughEvent(event) {}
- /**
-  * @param {?function(CanPlayThroughEvent):void} fn
-  * @return {CanPlayThroughHandler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onCanPlayThrough__org_gwtproject_event_dom_client_CanPlayThroughEvent(/** CanPlayThroughEvent */ event) {}
+ /** @return {CanPlayThroughHandler} */
+ static $adapt(/** ?function(CanPlayThroughEvent):void */ fn) {
   CanPlayThroughHandler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CanPlayThroughHandler.$clinit = () =>{};
   CanPlayThroughHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  EventHandler.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_CanPlayThroughHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  EventHandler.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_CanPlayThroughHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_CanPlayThroughHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.event.dom.client.CanPlayThroughHandler.$LambdaAdaptor$impl');
  }

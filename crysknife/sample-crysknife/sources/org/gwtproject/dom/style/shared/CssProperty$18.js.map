@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CssProperty$18.impl.java.js",
-"lineCount":59,
-"mappings":"A;;;;;;;MAuGa,G;;;;CAAA,W;EAAAA,Q;;;;;;;;QAAA,8B;EAAAC,c;EAAAA,0B;EAAAA,wG;EAAAA,iB;;;;;;;CAAA,4E;EAAAC,gG;;;;;;;CACK,a;EACZC,mB;;;;;;;;;CAFO,6B;EAAAC,kF;;;;;QAAA,O;EAAAC,sB;EAAAA,mB;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;MAuGa,G;;CAAA,W;EAAAA,Q;;;QAAA,8B;EAAAC,c;EAAAA,0B;EAAAA,wG;EAAAA,iB;;;CAAA,4E;EAAAC,gG;;;CACK,a;EACZC,mB;;;;CAFO,6B;EAAAC,iF;;;QAAA,O;EAAAC,sB;EAAAA,mB;EAAAA;",
 "sources":["CssProperty.java"],
 "names":["org.gwtproject.dom.style.shared.CssProperty$18.<synthetic: ctor_js>","org.gwtproject.dom.style.shared.CssProperty$18.<synthetic: ctor_create>","org.gwtproject.dom.style.shared.CssProperty$18.<init>","org.gwtproject.dom.style.shared.CssProperty$18.getJsName","org.gwtproject.dom.style.shared.CssProperty$18.compareTo","org.gwtproject.dom.style.shared.CssProperty$18.<clinit>"]
 }

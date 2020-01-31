@@ -10,54 +10,37 @@ let LoadingStateChangeEvent = goog.forwardDeclare('org.gwtproject.user.cellview.
  * @implements {Handler}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(LoadingStateChangeEvent):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(LoadingStateChangeEvent):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(LoadingStateChangeEvent):void} */
+  /**@type {?function(LoadingStateChangeEvent):void}*/
   this.f_$$fn__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_Handler_$LambdaAdaptor;
   this.$ctor__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_Handler_$LambdaAdaptor__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_Handler_$JsFunction(fn);
  }
- /**
-  * @param {?function(LoadingStateChangeEvent):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_Handler_$LambdaAdaptor__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_Handler_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_Handler_$LambdaAdaptor__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_Handler_$JsFunction(/** ?function(LoadingStateChangeEvent):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_Handler_$LambdaAdaptor = fn;
  }
- /**
-  * @param {LoadingStateChangeEvent} arg0
-  * @public
-  */
- m_onLoadingStateChanged__org_gwtproject_user_cellview_client_LoadingStateChangeEvent(arg0) {
+ 
+ m_onLoadingStateChanged__org_gwtproject_user_cellview_client_LoadingStateChangeEvent(/** LoadingStateChangeEvent */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_Handler_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

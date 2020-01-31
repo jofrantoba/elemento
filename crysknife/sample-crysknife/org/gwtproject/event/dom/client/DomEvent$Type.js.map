@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DomEvent$Type.impl.java.js",
-"lineCount":74,
-"mappings":"A;;;;;;;;;;;;;;;;;MAuIsB,a;;;;CAAA,W;EAAAA,Q;EAAAA;OAEE,2DAFFA,C;EAAAA;OAGH,sDAHGA,C;;;;;;;;;QAeX,mE,CAAYC,S,EAAuBC,S;EAAnCC,wB;EAAAA,oC;EAAAA,iJ;EAAAA,iB;;;;;;;CAAA,gH,CAAYF,S,EAAuBC,S;EAAnCE,uD;EACLA,6E;EAGAA;GACEA,oBADFA;G;EAGAA,IAAcC,KAAdD,iN;EACAA;GACEA,2EADFA;GAEEA,8KAFFA;G;EAIAA,gB;EACAA,wE;;;;;;CAQY,W;EACZE,mE;;;;;QArCgB,O;EAAAC,gC;EAAAA,6B;EAAAA;",
+"lineCount":57,
+"mappings":"A;;;;;;;;;;;;;;;;;MAuIsB,a;;CAAA,W;EAAAA,Q;EAAAA;OAEE,2DAFFA,C;EAAAA;OAGH,sDAHGA,C;;;QAeX,mE,gBAAYC,S,qBAAuBC,S;EAAnCC,wB;EAAAA,oC;EAAAA,iJ;EAAAA,iB;;;CAAA,gH,gBAAYF,S,qBAAuBC,S;EAAnCE,uD;EACLA,6E;EAGAA;GACEA,oBADFA;G;EAGAA,IAAcC,KAAdD,gN;EACAA;GACEA,0EADFA;GAEEA,8KAFFA;G;EAIAA,gB;EACAA,wE;;;CAQY,W;EACZE,mE;;;QArCgB,O;EAAAC,gC;EAAAA,6B;EAAAA;",
 "sources":["DomEvent.java"],
 "names":["org.gwtproject.event.dom.client.DomEvent$Type.<synthetic: ctor_js>","eventName","flyweight","org.gwtproject.event.dom.client.DomEvent$Type.<synthetic: ctor_create>","org.gwtproject.event.dom.client.DomEvent$Type.<init>","types","org.gwtproject.event.dom.client.DomEvent$Type.getName","org.gwtproject.event.dom.client.DomEvent$Type.<clinit>"]
 }

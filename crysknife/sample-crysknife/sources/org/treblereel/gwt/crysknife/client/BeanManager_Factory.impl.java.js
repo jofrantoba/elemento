@@ -12,64 +12,42 @@ let Interceptor = goog.forwardDeclare('org.treblereel.gwt.crysknife.client.Inter
  * @implements {Factory<BeanManager>}
   */
 class BeanManager__Factory extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Interceptor} */
+  /**@type {Interceptor}*/
   this.f_interceptor__org_treblereel_gwt_crysknife_client_BeanManager_Factory_;
  }
- /**
-  * @override
-  * @return {BeanManager}
-  * @public
-  */
+ /** @override @return {BeanManager} */
  m_get__() {
   return BeanManagerImpl.m_get__();
  }
- /**
-  * @return {!BeanManager__Factory}
-  * @public
-  */
+ /** @return {!BeanManager__Factory} */
  static $create__() {
   let $instance = new BeanManager__Factory();
   $instance.$ctor__org_treblereel_gwt_crysknife_client_BeanManager_Factory__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_treblereel_gwt_crysknife_client_BeanManager_Factory__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {BeanManager__Factory}
-  * @public
-  */
+ /** @return {BeanManager__Factory} */
  static m_create__() {
   BeanManager__Factory.$clinit();
   return BeanManager__Factory.$create__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   BeanManager__Factory.$clinit = () =>{};
   BeanManager__Factory.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof BeanManager__Factory;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   BeanManagerImpl = goog.module.get('org.treblereel.gwt.crysknife.client.BeanManagerImpl$impl');
  }

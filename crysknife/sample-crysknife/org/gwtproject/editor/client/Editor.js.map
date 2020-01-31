@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Editor.impl.java.js",
-"lineCount":15,
-"mappings":"A;;;;;;;;MAyCiB,M;;;;QAAA,O;EAAAA,yB;EAAAA;",
+"lineCount":13,
+"mappings":"A;;;;;;;;MAyCiB,M;;QAAA,O;EAAAA,yB;EAAAA;",
 "sources":["Editor.java"],
 "names":["org.gwtproject.editor.client.Editor.<clinit>"]
 }

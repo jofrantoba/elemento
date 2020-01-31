@@ -9,52 +9,32 @@ let $Overlay = goog.forwardDeclare('elemental2.dom.RTCDataChannel.SendDataUnionT
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class RTCDataChannel_$Overlay {
- /**
-  * @param {!RTCDataChannel} $thisArg
-  * @param {ArrayBuffer} data
-  * @public
-  */
- static m_send__$devirt__elemental2_dom_RTCDataChannel__elemental2_core_ArrayBuffer($thisArg, data) {
+ 
+ static m_send__$devirt__elemental2_dom_RTCDataChannel__elemental2_core_ArrayBuffer(/** !RTCDataChannel */ $thisArg, /** ArrayBuffer */ data) {
   RTCDataChannel_$Overlay.$clinit();
-  $thisArg.send(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(data)));
+  $thisArg.send(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(data)));
  }
- /**
-  * @param {!RTCDataChannel} $thisArg
-  * @param {ArrayBufferView} data
-  * @public
-  */
- static m_send__$devirt__elemental2_dom_RTCDataChannel__elemental2_core_ArrayBufferView($thisArg, data) {
+ 
+ static m_send__$devirt__elemental2_dom_RTCDataChannel__elemental2_core_ArrayBufferView(/** !RTCDataChannel */ $thisArg, /** ArrayBufferView */ data) {
   RTCDataChannel_$Overlay.$clinit();
-  $thisArg.send(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(data)));
+  $thisArg.send(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(data)));
  }
- /**
-  * @param {!RTCDataChannel} $thisArg
-  * @param {Blob} data
-  * @public
-  */
- static m_send__$devirt__elemental2_dom_RTCDataChannel__elemental2_dom_Blob($thisArg, data) {
+ 
+ static m_send__$devirt__elemental2_dom_RTCDataChannel__elemental2_dom_Blob(/** !RTCDataChannel */ $thisArg, /** Blob */ data) {
   RTCDataChannel_$Overlay.$clinit();
-  $thisArg.send(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(data)));
+  $thisArg.send(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(data)));
  }
- /**
-  * @param {!RTCDataChannel} $thisArg
-  * @param {?string} data
-  * @public
-  */
- static m_send__$devirt__elemental2_dom_RTCDataChannel__java_lang_String($thisArg, data) {
+ 
+ static m_send__$devirt__elemental2_dom_RTCDataChannel__java_lang_String(/** !RTCDataChannel */ $thisArg, /** ?string */ data) {
   RTCDataChannel_$Overlay.$clinit();
-  $thisArg.send(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(data)));
+  $thisArg.send(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(data)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RTCDataChannel_$Overlay.$clinit = () =>{};
   RTCDataChannel_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }

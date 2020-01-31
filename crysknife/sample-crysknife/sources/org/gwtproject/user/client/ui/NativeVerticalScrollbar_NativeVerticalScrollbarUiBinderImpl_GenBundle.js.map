@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl_GenBundle.impl.java.js",
-"lineCount":16,
-"mappings":"A;;;;;;;;;MAWiB,uE;;;;QAAA,O;EAAAA,0F;EAAAA;",
+"lineCount":14,
+"mappings":"A;;;;;;;;;MAWiB,uE;;QAAA,O;EAAAA,0F;EAAAA;",
 "sources":["NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl_GenBundle.java"],
 "names":["org.gwtproject.user.client.ui.NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl_GenBundle.<clinit>"]
 }

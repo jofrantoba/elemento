@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DirectoryRole.impl.java.js",
-"lineCount":16,
-"mappings":"A;;;;;;;;;MA0BiB,a;;;;QAAA,O;EAAAA,gC;EAAAA;",
+"lineCount":14,
+"mappings":"A;;;;;;;;;MA0BiB,a;;QAAA,O;EAAAA,gC;EAAAA;",
 "sources":["DirectoryRole.java"],
 "names":["org.gwtproject.aria.client.DirectoryRole.<clinit>"]
 }

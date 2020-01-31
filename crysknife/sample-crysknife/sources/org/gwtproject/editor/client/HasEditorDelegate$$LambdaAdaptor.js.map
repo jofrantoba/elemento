@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasEditorDelegate$$LambdaAdaptor.impl.java.js",
-"lineCount":49,
-"mappings":"A;;;;;;;;;;;;MAsBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;6E;EAAAA,0I;;;;;;CAAA,gI;EAAAC,iC;EAAAA,gF;;;;;;CAAA,0D;;GAAAC,2F;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":38,
+"mappings":"A;;;;;;;;;;;;MAsBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;6E;EAAAA,0I;;;CAAA,gI;EAAAC,iC;EAAAA,gF;;;CAAA,0D;;GAAAC,2F;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["HasEditorDelegate.java"],
 "names":["org.gwtproject.editor.client.HasEditorDelegate$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.editor.client.HasEditorDelegate$$LambdaAdaptor.<init>","org.gwtproject.editor.client.HasEditorDelegate$$LambdaAdaptor.setDelegate","org.gwtproject.editor.client.HasEditorDelegate$$LambdaAdaptor.<clinit>"]
 }

@@ -11,72 +11,50 @@ let Delegate = goog.forwardDeclare('org.gwtproject.user.client.ui.ResizeLayoutPa
  * @abstract
   */
 class Impl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isAttached__org_gwtproject_user_client_ui_ResizeLayoutPanel_Impl = false;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_parent__org_gwtproject_user_client_ui_ResizeLayoutPanel_Impl;
-  /** @public {Delegate} */
+  /**@type {Delegate}*/
   this.f_delegate__org_gwtproject_user_client_ui_ResizeLayoutPanel_Impl_;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_ResizeLayoutPanel_Impl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {Object} elem
-  * @param {Delegate} delegate
-  * @public
-  */
- m_init__org_gwtproject_dom_client_Element__org_gwtproject_user_client_ui_ResizeLayoutPanel_Impl_Delegate(elem, delegate) {
+ 
+ m_init__org_gwtproject_dom_client_Element__org_gwtproject_user_client_ui_ResizeLayoutPanel_Impl_Delegate(/** Object */ elem, /** Delegate */ delegate) {
   this.f_parent__org_gwtproject_user_client_ui_ResizeLayoutPanel_Impl = elem;
   this.f_delegate__org_gwtproject_user_client_ui_ResizeLayoutPanel_Impl_ = delegate;
  }
- /**
-  * @public
-  */
+ 
  m_onAttach__() {
   this.f_isAttached__org_gwtproject_user_client_ui_ResizeLayoutPanel_Impl = true;
  }
- /**
-  * @public
-  */
+ 
  m_onDetach__() {
   this.f_isAttached__org_gwtproject_user_client_ui_ResizeLayoutPanel_Impl = false;
  }
- /**
-  * @public
-  */
+ 
  m_handleResize__() {
   if (this.f_isAttached__org_gwtproject_user_client_ui_ResizeLayoutPanel_Impl && !$Equality.$same(this.f_delegate__org_gwtproject_user_client_ui_ResizeLayoutPanel_Impl_, null)) {
    this.f_delegate__org_gwtproject_user_client_ui_ResizeLayoutPanel_Impl_.m_onResize__();
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Impl.$clinit = () =>{};
   Impl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Impl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
  }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasTouchCancelHandlers.impl.java.js",
-"lineCount":26,
-"mappings":"A;;;;;;;;;;;;MAwBiB,sB;;;;;;;CAQK,2E,CAAyCA,O;;;;QAR9C,O;EAAAC,yC;EAAAA;",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;;;MAwBiB,sB;;CAQK,2E,2BAAyCA,O;;QAR9C,O;EAAAC,yC;EAAAA;",
 "sources":["HasTouchCancelHandlers.java"],
 "names":["handler","org.gwtproject.event.dom.client.HasTouchCancelHandlers.<clinit>"]
 }

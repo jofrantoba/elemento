@@ -10,45 +10,27 @@ let SafeHtml = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHtml$impl
 let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
 
 class CaptionPanelImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!CaptionPanelImpl}
-  * @public
-  */
+ /** @return {!CaptionPanelImpl} */
  static $create__() {
   CaptionPanelImpl.$clinit();
   let $instance = new CaptionPanelImpl();
   $instance.$ctor__org_gwtproject_user_client_ui_CaptionPanel_CaptionPanelImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_CaptionPanel_CaptionPanelImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {Object} fieldset
-  * @param {Object} legend
-  * @param {SafeHtml} caption
-  * @public
-  */
- m_setCaption__org_gwtproject_dom_client_FieldSetElement__org_gwtproject_dom_client_Element__org_gwtproject_safehtml_shared_SafeHtml(fieldset, legend, caption) {
+ 
+ m_setCaption__org_gwtproject_dom_client_FieldSetElement__org_gwtproject_dom_client_Element__org_gwtproject_safehtml_shared_SafeHtml(/** Object */ fieldset, /** Object */ legend, /** SafeHtml */ caption) {
   this.m_setCaption__org_gwtproject_dom_client_FieldSetElement__org_gwtproject_dom_client_Element__java_lang_String__boolean(fieldset, legend, caption.m_asString__(), true);
  }
- /**
-  * @param {Object} fieldset
-  * @param {Object} legend
-  * @param {?string} caption
-  * @param {boolean} asHTML
-  * @public
-  */
- m_setCaption__org_gwtproject_dom_client_FieldSetElement__org_gwtproject_dom_client_Element__java_lang_String__boolean(fieldset, legend, caption, asHTML) {
+ 
+ m_setCaption__org_gwtproject_dom_client_FieldSetElement__org_gwtproject_dom_client_Element__java_lang_String__boolean(/** Object */ fieldset, /** Object */ legend, /** ?string */ caption, /** boolean */ asHTML) {
   $Asserts.$assert((!$Equality.$same(caption, null)));
   if (asHTML) {
    $Overlay.m_setInnerHTML__$devirt__org_gwtproject_dom_client_Element__java_lang_String(legend, caption);
@@ -61,25 +43,17 @@ class CaptionPanelImpl extends j_l_Object {
    fieldset.removeChild(legend);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CaptionPanelImpl.$clinit = () =>{};
   CaptionPanelImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CaptionPanelImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.Element.$Overlay$impl');

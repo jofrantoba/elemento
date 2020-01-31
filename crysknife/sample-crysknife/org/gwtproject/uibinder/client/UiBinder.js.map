@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"UiBinder.impl.java.js",
-"lineCount":34,
-"mappings":"A;;;;;;;;;;MAiCiB,Q;;;;;;;CAOb,mC,CAAkBA,K;;;;;;;QAPL,M;EAAAC,mB;EAAAA,oE;;;;;QAAA,O;EAAAC,2B;EAAAA;",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;MAiCiB,Q;;CAOb,mC,UAAkBA,K;;QAPL,M;EAAAC,mB;EAAAA,mE;;;QAAA,O;EAAAC,2B;EAAAA;",
 "sources":["UiBinder.java"],
 "names":["owner","org.gwtproject.uibinder.client.UiBinder.<synthetic: adapt_lambda>","org.gwtproject.uibinder.client.UiBinder.<clinit>"]
 }

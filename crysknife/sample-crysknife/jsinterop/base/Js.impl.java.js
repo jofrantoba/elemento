@@ -16,245 +16,142 @@ let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
 
 class Js extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @template T
-  * @param {Class<T>} clazz
-  * @return {?function(...*):void}
-  * @public
-  */
- static m_asConstructorFn__java_lang_Class(clazz) {
+ /** @template T @return {?function(...*):void} */
+ static m_asConstructorFn__java_lang_Class(/** Class<T> */ clazz) {
   Js.$clinit();
-  let fn = /**@type {?function(...*):void} */ (InternalJsUtil.toCtor(clazz));
+  let fn = /**@type {?function(...*):void}*/ (InternalJsUtil.toCtor(clazz));
   InternalPreconditions.m_checkType__boolean(!$Equality.$same(fn, null));
   return fn;
  }
- /**
-  * @param {*} obj
-  * @return {*}
-  * @public
-  */
- static m_asAny__java_lang_Object(obj) {
+ /** @return {*} */
+ static m_asAny__java_lang_Object(/** * */ obj) {
   Js.$clinit();
-  return /**@type {*} */ (Js.m_uncheckedCast__java_lang_Object(obj));
+  return /**@type {*}*/ (Js.m_uncheckedCast__java_lang_Object(obj));
  }
- /**
-  * @param {*} obj
-  * @return {Object<string, *>}
-  * @public
-  */
- static m_asPropertyMap__java_lang_Object(obj) {
+ /** @return {Object<string, *>} */
+ static m_asPropertyMap__java_lang_Object(/** * */ obj) {
   Js.$clinit();
-  return /**@type {Object<string, *>} */ (Js.m_uncheckedCast__java_lang_Object(obj));
+  return /**@type {Object<string, *>}*/ (Js.m_uncheckedCast__java_lang_Object(obj));
  }
- /**
-  * @param {*} obj
-  * @return {IArrayLike<*>}
-  * @public
-  */
- static m_asArrayLike__java_lang_Object(obj) {
+ /** @return {IArrayLike<*>} */
+ static m_asArrayLike__java_lang_Object(/** * */ obj) {
   Js.$clinit();
   InternalPreconditions.m_checkType__boolean($Equality.$same(obj, null) || InternalJsUtil.hasLength(obj));
-  return /**@type {IArrayLike<*>} */ (Js.m_uncheckedCast__java_lang_Object(obj));
+  return /**@type {IArrayLike<*>}*/ (Js.m_uncheckedCast__java_lang_Object(obj));
  }
- /**
-  * @param {*} obj
-  * @return {Array<*>}
-  * @public
-  */
- static m_asArray__java_lang_Object(obj) {
+ /** @return {Array<*>} */
+ static m_asArray__java_lang_Object(/** * */ obj) {
   Js.$clinit();
   InternalPreconditions.m_checkType__boolean($Arrays.$instanceIsOfNative(obj));
-  return /**@type {Array<*>} */ (Js.m_uncheckedCast__java_lang_Object(obj));
+  return /**@type {Array<*>}*/ (Js.m_uncheckedCast__java_lang_Object(obj));
  }
- /**
-  * @param {*} obj
-  * @return {?string}
-  * @public
-  */
- static m_asString__java_lang_Object(obj) {
+ /** @return {?string} */
+ static m_asString__java_lang_Object(/** * */ obj) {
   Js.$clinit();
   InternalPreconditions.m_checkType__boolean($Equality.$same(typeof(obj), "string"));
-  return /**@type {?string} */ (Js.m_uncheckedCast__java_lang_Object(obj));
+  return /**@type {?string}*/ (Js.m_uncheckedCast__java_lang_Object(obj));
  }
- /**
-  * @param {*} obj
-  * @return {boolean}
-  * @public
-  */
- static m_asBoolean__java_lang_Object(obj) {
+ /** @return {boolean} */
+ static m_asBoolean__java_lang_Object(/** * */ obj) {
   Js.$clinit();
   InternalPreconditions.m_checkType__boolean($Equality.$same(typeof(obj), "boolean"));
   return InternalJsUtil.castToAny(obj);
  }
- /**
-  * @param {*} obj
-  * @return {number}
-  * @public
-  */
- static m_asDouble__java_lang_Object(obj) {
+ /** @return {number} */
+ static m_asDouble__java_lang_Object(/** * */ obj) {
   Js.$clinit();
   InternalPreconditions.m_checkType__boolean($Equality.$same(typeof(obj), "number"));
   return InternalJsUtil.castToAny(obj);
  }
- /**
-  * @param {*} obj
-  * @return {number}
-  * @public
-  */
- static m_asFloat__java_lang_Object(obj) {
+ /** @return {number} */
+ static m_asFloat__java_lang_Object(/** * */ obj) {
   Js.$clinit();
   return Js.m_asDouble__java_lang_Object(obj);
  }
- /**
-  * @param {*} obj
-  * @return {!$Long}
-  * @public
-  */
- static m_asLong__java_lang_Object(obj) {
+ /** @return {!$Long} */
+ static m_asLong__java_lang_Object(/** * */ obj) {
   Js.$clinit();
   InternalPreconditions.m_checkType__boolean(InternalJsUtil.isLong(obj));
   return InternalJsUtil.castToAny(obj);
  }
- /**
-  * @param {*} obj
-  * @return {number}
-  * @public
-  */
- static m_asInt__java_lang_Object(obj) {
+ /** @return {number} */
+ static m_asInt__java_lang_Object(/** * */ obj) {
   Js.$clinit();
   InternalPreconditions.m_checkType__boolean(InternalJsUtil.isInt(obj));
   return InternalJsUtil.castToAny(obj);
  }
- /**
-  * @param {*} obj
-  * @return {number}
-  * @public
-  */
- static m_asShort__java_lang_Object(obj) {
+ /** @return {number} */
+ static m_asShort__java_lang_Object(/** * */ obj) {
   Js.$clinit();
   let num = Js.m_asInt__java_lang_Object(obj);
   InternalPreconditions.m_checkType__boolean(num == $Primitives.$narrowIntToShort(num));
   return InternalJsUtil.castToAny(obj);
  }
- /**
-  * @param {*} obj
-  * @return {number}
-  * @public
-  */
- static m_asChar__java_lang_Object(obj) {
+ /** @return {number} */
+ static m_asChar__java_lang_Object(/** * */ obj) {
   Js.$clinit();
   let num = Js.m_asInt__java_lang_Object(obj);
   InternalPreconditions.m_checkType__boolean(num == $Primitives.$narrowIntToChar(num));
   return InternalJsUtil.castToAny(obj);
  }
- /**
-  * @param {*} obj
-  * @return {number}
-  * @public
-  */
- static m_asByte__java_lang_Object(obj) {
+ /** @return {number} */
+ static m_asByte__java_lang_Object(/** * */ obj) {
   Js.$clinit();
   let num = Js.m_asInt__java_lang_Object(obj);
   InternalPreconditions.m_checkType__boolean(num == $Primitives.$narrowIntToByte(num));
   return InternalJsUtil.castToAny(obj);
  }
- /**
-  * @template T
-  * @param {*} obj
-  * @return {T}
-  * @public
-  */
- static m_cast__java_lang_Object(obj) {
+ /** @template T @return {T} */
+ static m_cast__java_lang_Object(/** * */ obj) {
   Js.$clinit();
-  return /**@type {T} */ (obj);
+  return /**@type {T}*/ (obj);
  }
- /**
-  * @template T
-  * @param {*} obj
-  * @return {T}
-  * @public
-  */
- static m_uncheckedCast__java_lang_Object(obj) {
+ /** @template T @return {T} */
+ static m_uncheckedCast__java_lang_Object(/** * */ obj) {
   Js.$clinit();
-  return /**@type {T} */ (obj);
+  return /**@type {T}*/ (obj);
  }
- /**
-  * @param {*} obj
-  * @return {boolean}
-  * @public
-  */
- static m_isTruthy__java_lang_Object(obj) {
+ /** @return {boolean} */
+ static m_isTruthy__java_lang_Object(/** * */ obj) {
   Js.$clinit();
   return !Js.isFalsy(obj);
  }
- /**
-  * @param {*} obj
-  * @return {boolean}
-  * @public
-  */
- // native static isFalsy(obj) 
- /**
-  * @param {*} o1
-  * @param {*} o2
-  * @return {boolean}
-  * @public
-  */
- // native static isTripleEqual(o1, o2) 
- /**
-  * @param {*} d
-  * @return {number}
-  * @public
-  */
- // native static coerceToDouble(d) 
- /**
-  * @param {*} d
-  * @return {number}
-  * @public
-  */
- static m_coerceToInt__java_lang_Object(d) {
+ // /** @return {boolean} */
+ // native static isFalsy(/** * */ obj) 
+ // /** @return {boolean} */
+ // native static isTripleEqual(/** * */ o1, /** * */ o2) 
+ // /** @return {number} */
+ // native static coerceToDouble(/** * */ d) 
+ /** @return {number} */
+ static m_coerceToInt__java_lang_Object(/** * */ d) {
   Js.$clinit();
   return InternalJsUtil.castToAny(d) | 0;
  }
- /**
-  * @return {!Js}
-  * @public
-  */
+ /** @return {!Js} */
  static $create__() {
   let $instance = new Js();
   $instance.$ctor__jsinterop_base_Js__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__jsinterop_base_Js__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Js.$clinit = () =>{};
   Js.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Js;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   InternalJsUtil = goog.module.get('jsinterop.base.InternalJsUtil$impl');
   InternalPreconditions = goog.module.get('jsinterop.base.InternalPreconditions$impl');

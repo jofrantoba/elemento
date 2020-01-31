@@ -110,161 +110,140 @@ let SafeHtml = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHtml$impl
 let SafeHtmlUtils = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHtmlUtils$impl');
 
 class HtmlBuilderImpl extends ElementBuilderImpl {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {HtmlAnchorBuilder} */
+  /**@type {HtmlAnchorBuilder}*/
   this.f_anchorBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlAreaBuilder} */
+  /**@type {HtmlAreaBuilder}*/
   this.f_areaBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlAudioBuilder} */
+  /**@type {HtmlAudioBuilder}*/
   this.f_audioBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlBaseBuilder} */
+  /**@type {HtmlBaseBuilder}*/
   this.f_baseBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlBodyBuilder} */
+  /**@type {HtmlBodyBuilder}*/
   this.f_bodyBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlBRBuilder} */
+  /**@type {HtmlBRBuilder}*/
   this.f_brBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlButtonBuilder} */
+  /**@type {HtmlButtonBuilder}*/
   this.f_buttonBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlCanvasBuilder} */
+  /**@type {HtmlCanvasBuilder}*/
   this.f_canvasBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlDivBuilder} */
+  /**@type {HtmlDivBuilder}*/
   this.f_divBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlDListBuilder} */
+  /**@type {HtmlDListBuilder}*/
   this.f_dListBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlElementBuilder} */
+  /**@type {HtmlElementBuilder}*/
   this.f_elementBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlFieldSetBuilder} */
+  /**@type {HtmlFieldSetBuilder}*/
   this.f_fieldSetBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlFormBuilder} */
+  /**@type {HtmlFormBuilder}*/
   this.f_formBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlFrameBuilder} */
+  /**@type {HtmlFrameBuilder}*/
   this.f_frameBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlFrameSetBuilder} */
+  /**@type {HtmlFrameSetBuilder}*/
   this.f_frameSetBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlHeadBuilder} */
+  /**@type {HtmlHeadBuilder}*/
   this.f_headBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlHeadingBuilder} */
+  /**@type {HtmlHeadingBuilder}*/
   this.f_headingBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlHRBuilder} */
+  /**@type {HtmlHRBuilder}*/
   this.f_hrBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlIFrameBuilder} */
+  /**@type {HtmlIFrameBuilder}*/
   this.f_iFrameBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlImageBuilder} */
+  /**@type {HtmlImageBuilder}*/
   this.f_imageBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlInputBuilder} */
+  /**@type {HtmlInputBuilder}*/
   this.f_inputBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlLabelBuilder} */
+  /**@type {HtmlLabelBuilder}*/
   this.f_labelBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlLegendBuilder} */
+  /**@type {HtmlLegendBuilder}*/
   this.f_legendBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlLIBuilder} */
+  /**@type {HtmlLIBuilder}*/
   this.f_liBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlLinkBuilder} */
+  /**@type {HtmlLinkBuilder}*/
   this.f_linkBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlMapBuilder} */
+  /**@type {HtmlMapBuilder}*/
   this.f_mapBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlMetaBuilder} */
+  /**@type {HtmlMetaBuilder}*/
   this.f_metaBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlOListBuilder} */
+  /**@type {HtmlOListBuilder}*/
   this.f_oListBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlOptionBuilder} */
+  /**@type {HtmlOptionBuilder}*/
   this.f_optionBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlOptGroupBuilder} */
+  /**@type {HtmlOptGroupBuilder}*/
   this.f_optGroupBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlParagraphBuilder} */
+  /**@type {HtmlParagraphBuilder}*/
   this.f_paragraphBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlParamBuilder} */
+  /**@type {HtmlParamBuilder}*/
   this.f_paramBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlPreBuilder} */
+  /**@type {HtmlPreBuilder}*/
   this.f_preBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlQuoteBuilder} */
+  /**@type {HtmlQuoteBuilder}*/
   this.f_quoteBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlScriptBuilder} */
+  /**@type {HtmlScriptBuilder}*/
   this.f_scriptBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlSelectBuilder} */
+  /**@type {HtmlSelectBuilder}*/
   this.f_selectBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlSourceBuilder} */
+  /**@type {HtmlSourceBuilder}*/
   this.f_sourceBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlSpanBuilder} */
+  /**@type {HtmlSpanBuilder}*/
   this.f_spanBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlStyleBuilder} */
+  /**@type {HtmlStyleBuilder}*/
   this.f_styleBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {StylesBuilder} */
+  /**@type {StylesBuilder}*/
   this.f_stylesBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlTableBuilder} */
+  /**@type {HtmlTableBuilder}*/
   this.f_tableBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlTableCellBuilder} */
+  /**@type {HtmlTableCellBuilder}*/
   this.f_tableCellBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlTableCaptionBuilder} */
+  /**@type {HtmlTableCaptionBuilder}*/
   this.f_tableCaptionBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlTableColBuilder} */
+  /**@type {HtmlTableColBuilder}*/
   this.f_tableColBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlTableColBuilder} */
+  /**@type {HtmlTableColBuilder}*/
   this.f_tableColGroupBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlTableRowBuilder} */
+  /**@type {HtmlTableRowBuilder}*/
   this.f_tableRowBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlTableSectionBuilder} */
+  /**@type {HtmlTableSectionBuilder}*/
   this.f_tableSectionBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlTextAreaBuilder} */
+  /**@type {HtmlTextAreaBuilder}*/
   this.f_textAreaBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlTitleBuilder} */
+  /**@type {HtmlTitleBuilder}*/
   this.f_titleBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlUListBuilder} */
+  /**@type {HtmlUListBuilder}*/
   this.f_uListBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {HtmlVideoBuilder} */
+  /**@type {HtmlVideoBuilder}*/
   this.f_videoBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
-  /** @public {StringBuilder} */
+  /**@type {StringBuilder}*/
   this.f_sb__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {!HtmlBuilderImpl}
-  * @public
-  */
+ /** @return {!HtmlBuilderImpl} */
  static $create__() {
   HtmlBuilderImpl.$clinit();
   let $instance = new HtmlBuilderImpl();
   $instance.$ctor__org_gwtproject_dom_builder_shared_HtmlBuilderImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_dom_builder_shared_HtmlBuilderImpl__() {
   this.$ctor__org_gwtproject_dom_builder_shared_ElementBuilderImpl__();
   this.$init___$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl();
  }
- /**
-  * @return {SafeHtml}
-  * @public
-  */
+ /** @return {SafeHtml} */
  m_asSafeHtml__() {
   this.m_endAllTags__();
   return SafeHtmlUtils.m_fromTrustedString__java_lang_String(this.f_sb__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_.toString());
  }
- /**
-  * @param {?string} name
-  * @param {number} value
-  * @public
-  */
- m_attribute__java_lang_String__int(name, value) {
+ 
+ m_attribute__java_lang_String__int(/** ?string */ name, /** number */ value) {
   this.m_trustedAttribute__java_lang_String__int(this.m_escape__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(name), value);
  }
- /**
-  * @param {?string} name
-  * @param {?string} value
-  * @public
-  */
- m_attribute__java_lang_String__java_lang_String(name, value) {
+ 
+ m_attribute__java_lang_String__java_lang_String(/** ?string */ name, /** ?string */ value) {
   this.m_trustedAttribute__java_lang_String__java_lang_String(this.m_escape__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(name), value);
  }
- /**
-  * @return {HtmlAnchorBuilder}
-  * @public
-  */
+ /** @return {HtmlAnchorBuilder} */
  m_startAnchor__() {
   if ($Equality.$same(this.f_anchorBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_anchorBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlAnchorBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -272,10 +251,7 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl($Overlay.f_TAG__org_gwtproject_dom_client_AnchorElement_$Overlay, this.f_anchorBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_anchorBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlAreaBuilder}
-  * @public
-  */
+ /** @return {HtmlAreaBuilder} */
  m_startArea__() {
   if ($Equality.$same(this.f_areaBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_areaBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlAreaBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -283,10 +259,7 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(AreaElement_$Overlay.f_TAG__org_gwtproject_dom_client_AreaElement_$Overlay, this.f_areaBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_areaBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlAudioBuilder}
-  * @public
-  */
+ /** @return {HtmlAudioBuilder} */
  m_startAudio__() {
   if ($Equality.$same(this.f_audioBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_audioBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlAudioBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -294,10 +267,7 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(AudioElement_$Overlay.f_TAG__org_gwtproject_dom_client_AudioElement_$Overlay, this.f_audioBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_audioBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlBaseBuilder}
-  * @public
-  */
+ /** @return {HtmlBaseBuilder} */
  m_startBase__() {
   if ($Equality.$same(this.f_baseBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_baseBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlBaseBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -305,17 +275,11 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(BaseElement_$Overlay.f_TAG__org_gwtproject_dom_client_BaseElement_$Overlay, this.f_baseBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_baseBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlQuoteBuilder}
-  * @public
-  */
+ /** @return {HtmlQuoteBuilder} */
  m_startBlockQuote__() {
   return this.m_startQuote__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(QuoteElement_$Overlay.f_TAG_BLOCKQUOTE__org_gwtproject_dom_client_QuoteElement_$Overlay);
  }
- /**
-  * @return {HtmlBodyBuilder}
-  * @public
-  */
+ /** @return {HtmlBodyBuilder} */
  m_startBody__() {
   if ($Equality.$same(this.f_bodyBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_bodyBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlBodyBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -323,10 +287,7 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(BodyElement_$Overlay.f_TAG__org_gwtproject_dom_client_BodyElement_$Overlay, this.f_bodyBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_bodyBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlBRBuilder}
-  * @public
-  */
+ /** @return {HtmlBRBuilder} */
  m_startBR__() {
   if ($Equality.$same(this.f_brBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_brBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlBRBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -334,17 +295,11 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(BRElement_$Overlay.f_TAG__org_gwtproject_dom_client_BRElement_$Overlay, this.f_brBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_brBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlInputBuilder}
-  * @public
-  */
+ /** @return {HtmlInputBuilder} */
  m_startButtonInput__() {
   return this.m_startInput__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(ButtonElement_$Overlay.f_TAG__org_gwtproject_dom_client_ButtonElement_$Overlay);
  }
- /**
-  * @return {HtmlCanvasBuilder}
-  * @public
-  */
+ /** @return {HtmlCanvasBuilder} */
  m_startCanvas__() {
   if ($Equality.$same(this.f_canvasBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_canvasBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlCanvasBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -352,17 +307,11 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(CanvasElement_$Overlay.f_TAG__org_gwtproject_dom_client_CanvasElement_$Overlay, this.f_canvasBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_canvasBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlInputBuilder}
-  * @public
-  */
+ /** @return {HtmlInputBuilder} */
  m_startCheckboxInput__() {
   return this.m_startInput__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl("checkbox");
  }
- /**
-  * @return {HtmlTableColBuilder}
-  * @public
-  */
+ /** @return {HtmlTableColBuilder} */
  m_startCol__() {
   if ($Equality.$same(this.f_tableColBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_tableColBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlTableColBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl__boolean(this, false);
@@ -370,10 +319,7 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(TableColElement_$Overlay.f_TAG_COL__org_gwtproject_dom_client_TableColElement_$Overlay, this.f_tableColBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_tableColBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlTableColBuilder}
-  * @public
-  */
+ /** @return {HtmlTableColBuilder} */
  m_startColGroup__() {
   if ($Equality.$same(this.f_tableColGroupBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_tableColGroupBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlTableColBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl__boolean(this, true);
@@ -381,18 +327,12 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(TableColElement_$Overlay.f_TAG_COLGROUP__org_gwtproject_dom_client_TableColElement_$Overlay, this.f_tableColGroupBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_tableColGroupBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlDivBuilder}
-  * @public
-  */
+ /** @return {HtmlDivBuilder} */
  m_startDiv__() {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(DivElement_$Overlay.f_TAG__org_gwtproject_dom_client_DivElement_$Overlay, this.f_divBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_divBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlDListBuilder}
-  * @public
-  */
+ /** @return {HtmlDListBuilder} */
  m_startDList__() {
   if ($Equality.$same(this.f_dListBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_dListBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlDListBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -400,10 +340,7 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(DListElement_$Overlay.f_TAG__org_gwtproject_dom_client_DListElement_$Overlay, this.f_dListBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_dListBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlFieldSetBuilder}
-  * @public
-  */
+ /** @return {HtmlFieldSetBuilder} */
  m_startFieldSet__() {
   if ($Equality.$same(this.f_fieldSetBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_fieldSetBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlFieldSetBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -411,17 +348,11 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(FieldSetElement_$Overlay.f_TAG__org_gwtproject_dom_client_FieldSetElement_$Overlay, this.f_fieldSetBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_fieldSetBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlInputBuilder}
-  * @public
-  */
+ /** @return {HtmlInputBuilder} */
  m_startFileInput__() {
   return this.m_startInput__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl("file");
  }
- /**
-  * @return {HtmlFormBuilder}
-  * @public
-  */
+ /** @return {HtmlFormBuilder} */
  m_startForm__() {
   if ($Equality.$same(this.f_formBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_formBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlFormBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -429,10 +360,7 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(FormElement_$Overlay.f_TAG__org_gwtproject_dom_client_FormElement_$Overlay, this.f_formBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_formBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlFrameBuilder}
-  * @public
-  */
+ /** @return {HtmlFrameBuilder} */
  m_startFrame__() {
   if ($Equality.$same(this.f_frameBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_frameBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlFrameBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -440,10 +368,7 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(FrameElement_$Overlay.f_TAG__org_gwtproject_dom_client_FrameElement_$Overlay, this.f_frameBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_frameBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlFrameSetBuilder}
-  * @public
-  */
+ /** @return {HtmlFrameSetBuilder} */
  m_startFrameSet__() {
   if ($Equality.$same(this.f_frameSetBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_frameSetBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlFrameSetBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -451,52 +376,31 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(FrameSetElement_$Overlay.f_TAG__org_gwtproject_dom_client_FrameSetElement_$Overlay, this.f_frameSetBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_frameSetBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlHeadingBuilder}
-  * @public
-  */
+ /** @return {HtmlHeadingBuilder} */
  m_startH1__() {
   return this.m_startHeading__int_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(1);
  }
- /**
-  * @return {HtmlHeadingBuilder}
-  * @public
-  */
+ /** @return {HtmlHeadingBuilder} */
  m_startH2__() {
   return this.m_startHeading__int_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(2);
  }
- /**
-  * @return {HtmlHeadingBuilder}
-  * @public
-  */
+ /** @return {HtmlHeadingBuilder} */
  m_startH3__() {
   return this.m_startHeading__int_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(3);
  }
- /**
-  * @return {HtmlHeadingBuilder}
-  * @public
-  */
+ /** @return {HtmlHeadingBuilder} */
  m_startH4__() {
   return this.m_startHeading__int_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(4);
  }
- /**
-  * @return {HtmlHeadingBuilder}
-  * @public
-  */
+ /** @return {HtmlHeadingBuilder} */
  m_startH5__() {
   return this.m_startHeading__int_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(5);
  }
- /**
-  * @return {HtmlHeadingBuilder}
-  * @public
-  */
+ /** @return {HtmlHeadingBuilder} */
  m_startH6__() {
   return this.m_startHeading__int_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(6);
  }
- /**
-  * @return {HtmlHeadBuilder}
-  * @public
-  */
+ /** @return {HtmlHeadBuilder} */
  m_startHead__() {
   if ($Equality.$same(this.f_headBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_headBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlHeadBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -504,17 +408,11 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(HeadElement_$Overlay.f_TAG__org_gwtproject_dom_client_HeadElement_$Overlay, this.f_headBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_headBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlInputBuilder}
-  * @public
-  */
+ /** @return {HtmlInputBuilder} */
  m_startHiddenInput__() {
   return this.m_startInput__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl("hidden");
  }
- /**
-  * @return {HtmlHRBuilder}
-  * @public
-  */
+ /** @return {HtmlHRBuilder} */
  m_startHR__() {
   if ($Equality.$same(this.f_hrBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_hrBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlHRBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -522,10 +420,7 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(HRElement_$Overlay.f_TAG__org_gwtproject_dom_client_HRElement_$Overlay, this.f_hrBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_hrBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlIFrameBuilder}
-  * @public
-  */
+ /** @return {HtmlIFrameBuilder} */
  m_startIFrame__() {
   if ($Equality.$same(this.f_iFrameBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_iFrameBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlIFrameBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -533,10 +428,7 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(IFrameElement_$Overlay.f_TAG__org_gwtproject_dom_client_IFrameElement_$Overlay, this.f_iFrameBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_iFrameBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlImageBuilder}
-  * @public
-  */
+ /** @return {HtmlImageBuilder} */
  m_startImage__() {
   if ($Equality.$same(this.f_imageBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_imageBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlImageBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -544,17 +436,11 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(ImageElement_$Overlay.f_TAG__org_gwtproject_dom_client_ImageElement_$Overlay, this.f_imageBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_imageBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlInputBuilder}
-  * @public
-  */
+ /** @return {HtmlInputBuilder} */
  m_startImageInput__() {
   return this.m_startInput__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl("image");
  }
- /**
-  * @return {HtmlLabelBuilder}
-  * @public
-  */
+ /** @return {HtmlLabelBuilder} */
  m_startLabel__() {
   if ($Equality.$same(this.f_labelBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_labelBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlLabelBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -562,10 +448,7 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(LabelElement_$Overlay.f_TAG__org_gwtproject_dom_client_LabelElement_$Overlay, this.f_labelBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_labelBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlLegendBuilder}
-  * @public
-  */
+ /** @return {HtmlLegendBuilder} */
  m_startLegend__() {
   if ($Equality.$same(this.f_legendBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_legendBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlLegendBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -573,18 +456,12 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(LegendElement_$Overlay.f_TAG__org_gwtproject_dom_client_LegendElement_$Overlay, this.f_legendBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_legendBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlLIBuilder}
-  * @public
-  */
+ /** @return {HtmlLIBuilder} */
  m_startLI__() {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(LIElement_$Overlay.f_TAG__org_gwtproject_dom_client_LIElement_$Overlay, this.f_liBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_liBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlLinkBuilder}
-  * @public
-  */
+ /** @return {HtmlLinkBuilder} */
  m_startLink__() {
   if ($Equality.$same(this.f_linkBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_linkBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlLinkBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -592,10 +469,7 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(LinkElement_$Overlay.f_TAG__org_gwtproject_dom_client_LinkElement_$Overlay, this.f_linkBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_linkBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlMapBuilder}
-  * @public
-  */
+ /** @return {HtmlMapBuilder} */
  m_startMap__() {
   if ($Equality.$same(this.f_mapBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_mapBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlMapBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -603,10 +477,7 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(MapElement_$Overlay.f_TAG__org_gwtproject_dom_client_MapElement_$Overlay, this.f_mapBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_mapBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlMetaBuilder}
-  * @public
-  */
+ /** @return {HtmlMetaBuilder} */
  m_startMeta__() {
   if ($Equality.$same(this.f_metaBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_metaBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlMetaBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -614,10 +485,7 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(MetaElement_$Overlay.f_TAG__org_gwtproject_dom_client_MetaElement_$Overlay, this.f_metaBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_metaBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlOListBuilder}
-  * @public
-  */
+ /** @return {HtmlOListBuilder} */
  m_startOList__() {
   if ($Equality.$same(this.f_oListBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_oListBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlOListBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -625,10 +493,7 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(OListElement_$Overlay.f_TAG__org_gwtproject_dom_client_OListElement_$Overlay, this.f_oListBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_oListBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlOptGroupBuilder}
-  * @public
-  */
+ /** @return {HtmlOptGroupBuilder} */
  m_startOptGroup__() {
   if ($Equality.$same(this.f_optGroupBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_optGroupBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlOptGroupBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -636,18 +501,12 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(OptGroupElement_$Overlay.f_TAG__org_gwtproject_dom_client_OptGroupElement_$Overlay, this.f_optGroupBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_optGroupBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlOptionBuilder}
-  * @public
-  */
+ /** @return {HtmlOptionBuilder} */
  m_startOption__() {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(OptionElement_$Overlay.f_TAG__org_gwtproject_dom_client_OptionElement_$Overlay, this.f_optionBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_optionBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlParagraphBuilder}
-  * @public
-  */
+ /** @return {HtmlParagraphBuilder} */
  m_startParagraph__() {
   if ($Equality.$same(this.f_paragraphBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_paragraphBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlParagraphBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -655,10 +514,7 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(ParagraphElement_$Overlay.f_TAG__org_gwtproject_dom_client_ParagraphElement_$Overlay, this.f_paragraphBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_paragraphBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlParamBuilder}
-  * @public
-  */
+ /** @return {HtmlParamBuilder} */
  m_startParam__() {
   if ($Equality.$same(this.f_paramBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_paramBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlParamBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -666,17 +522,11 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(ParamElement_$Overlay.f_TAG__org_gwtproject_dom_client_ParamElement_$Overlay, this.f_paramBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_paramBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlInputBuilder}
-  * @public
-  */
+ /** @return {HtmlInputBuilder} */
  m_startPasswordInput__() {
   return this.m_startInput__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl("password");
  }
- /**
-  * @return {HtmlPreBuilder}
-  * @public
-  */
+ /** @return {HtmlPreBuilder} */
  m_startPre__() {
   if ($Equality.$same(this.f_preBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_preBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlPreBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -684,48 +534,29 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(PreElement_$Overlay.f_TAG__org_gwtproject_dom_client_PreElement_$Overlay, this.f_preBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_preBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlButtonBuilder}
-  * @public
-  */
+ /** @return {HtmlButtonBuilder} */
  m_startPushButton__() {
   return this.m_startButton__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl("button");
  }
- /**
-  * @return {HtmlQuoteBuilder}
-  * @public
-  */
+ /** @return {HtmlQuoteBuilder} */
  m_startQuote__() {
   return this.m_startQuote__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(QuoteElement_$Overlay.f_TAG_Q__org_gwtproject_dom_client_QuoteElement_$Overlay);
  }
- /**
-  * @param {?string} name
-  * @return {HtmlInputBuilder}
-  * @public
-  */
- m_startRadioInput__java_lang_String(name) {
+ /** @return {HtmlInputBuilder} */
+ m_startRadioInput__java_lang_String(/** ?string */ name) {
   let builder = this.m_startInput__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl("radio");
   this.m_attribute__java_lang_String__java_lang_String("name", name);
   return builder;
  }
- /**
-  * @return {HtmlButtonBuilder}
-  * @public
-  */
+ /** @return {HtmlButtonBuilder} */
  m_startResetButton__() {
   return this.m_startButton__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl("reset");
  }
- /**
-  * @return {HtmlInputBuilder}
-  * @public
-  */
+ /** @return {HtmlInputBuilder} */
  m_startResetInput__() {
   return this.m_startInput__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl("reset");
  }
- /**
-  * @return {HtmlScriptBuilder}
-  * @public
-  */
+ /** @return {HtmlScriptBuilder} */
  m_startScript__() {
   if ($Equality.$same(this.f_scriptBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_scriptBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlScriptBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -733,10 +564,7 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(ScriptElement_$Overlay.f_TAG__org_gwtproject_dom_client_ScriptElement_$Overlay, this.f_scriptBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_scriptBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlSelectBuilder}
-  * @public
-  */
+ /** @return {HtmlSelectBuilder} */
  m_startSelect__() {
   if ($Equality.$same(this.f_selectBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_selectBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlSelectBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -744,10 +572,7 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(SelectElement_$Overlay.f_TAG__org_gwtproject_dom_client_SelectElement_$Overlay, this.f_selectBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_selectBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlSourceBuilder}
-  * @public
-  */
+ /** @return {HtmlSourceBuilder} */
  m_startSource__() {
   if ($Equality.$same(this.f_sourceBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_sourceBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlSourceBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -755,18 +580,12 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(SourceElement_$Overlay.f_TAG__org_gwtproject_dom_client_SourceElement_$Overlay, this.f_sourceBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_sourceBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlSpanBuilder}
-  * @public
-  */
+ /** @return {HtmlSpanBuilder} */
  m_startSpan__() {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(SpanElement_$Overlay.f_TAG__org_gwtproject_dom_client_SpanElement_$Overlay, this.f_spanBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_spanBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlStyleBuilder}
-  * @public
-  */
+ /** @return {HtmlStyleBuilder} */
  m_startStyle__() {
   if ($Equality.$same(this.f_styleBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_styleBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlStyleBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -774,24 +593,15 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(StyleElement_$Overlay.f_TAG__org_gwtproject_dom_client_StyleElement_$Overlay, this.f_styleBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_styleBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlButtonBuilder}
-  * @public
-  */
+ /** @return {HtmlButtonBuilder} */
  m_startSubmitButton__() {
   return this.m_startButton__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl("submit");
  }
- /**
-  * @return {HtmlInputBuilder}
-  * @public
-  */
+ /** @return {HtmlInputBuilder} */
  m_startSubmitInput__() {
   return this.m_startInput__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl("submit");
  }
- /**
-  * @return {HtmlTableBuilder}
-  * @public
-  */
+ /** @return {HtmlTableBuilder} */
  m_startTable__() {
   if ($Equality.$same(this.f_tableBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_tableBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlTableBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -799,10 +609,7 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(TableElement_$Overlay.f_TAG__org_gwtproject_dom_client_TableElement_$Overlay, this.f_tableBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_tableBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlTableCaptionBuilder}
-  * @public
-  */
+ /** @return {HtmlTableCaptionBuilder} */
  m_startTableCaption__() {
   if ($Equality.$same(this.f_tableCaptionBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_tableCaptionBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlTableCaptionBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -810,25 +617,16 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(TableCaptionElement_$Overlay.f_TAG__org_gwtproject_dom_client_TableCaptionElement_$Overlay, this.f_tableCaptionBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_tableCaptionBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlTableSectionBuilder}
-  * @public
-  */
+ /** @return {HtmlTableSectionBuilder} */
  m_startTBody__() {
   return this.m_startTableSection__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(TableSectionElement_$Overlay.f_TAG_TBODY__org_gwtproject_dom_client_TableSectionElement_$Overlay);
  }
- /**
-  * @return {HtmlTableCellBuilder}
-  * @public
-  */
+ /** @return {HtmlTableCellBuilder} */
  m_startTD__() {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(TableCellElement_$Overlay.f_TAG_TD__org_gwtproject_dom_client_TableCellElement_$Overlay, this.f_tableCellBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_tableCellBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlTextAreaBuilder}
-  * @public
-  */
+ /** @return {HtmlTextAreaBuilder} */
  m_startTextArea__() {
   if ($Equality.$same(this.f_textAreaBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_textAreaBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlTextAreaBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -836,39 +634,24 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(TextAreaElement_$Overlay.f_TAG__org_gwtproject_dom_client_TextAreaElement_$Overlay, this.f_textAreaBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_textAreaBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlInputBuilder}
-  * @public
-  */
+ /** @return {HtmlInputBuilder} */
  m_startTextInput__() {
   return this.m_startInput__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl("text");
  }
- /**
-  * @return {HtmlTableSectionBuilder}
-  * @public
-  */
+ /** @return {HtmlTableSectionBuilder} */
  m_startTFoot__() {
   return this.m_startTableSection__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(TableSectionElement_$Overlay.f_TAG_TFOOT__org_gwtproject_dom_client_TableSectionElement_$Overlay);
  }
- /**
-  * @return {HtmlTableCellBuilder}
-  * @public
-  */
+ /** @return {HtmlTableCellBuilder} */
  m_startTH__() {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(TableCellElement_$Overlay.f_TAG_TH__org_gwtproject_dom_client_TableCellElement_$Overlay, this.f_tableCellBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_tableCellBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlTableSectionBuilder}
-  * @public
-  */
+ /** @return {HtmlTableSectionBuilder} */
  m_startTHead__() {
   return this.m_startTableSection__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(TableSectionElement_$Overlay.f_TAG_THEAD__org_gwtproject_dom_client_TableSectionElement_$Overlay);
  }
- /**
-  * @return {HtmlTitleBuilder}
-  * @public
-  */
+ /** @return {HtmlTitleBuilder} */
  m_startTitle__() {
   if ($Equality.$same(this.f_titleBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_titleBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlTitleBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -876,18 +659,12 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(TitleElement_$Overlay.f_TAG__org_gwtproject_dom_client_TitleElement_$Overlay, this.f_titleBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_titleBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlTableRowBuilder}
-  * @public
-  */
+ /** @return {HtmlTableRowBuilder} */
  m_startTR__() {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(TableRowElement_$Overlay.f_TAG__org_gwtproject_dom_client_TableRowElement_$Overlay, this.f_tableRowBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_tableRowBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlUListBuilder}
-  * @public
-  */
+ /** @return {HtmlUListBuilder} */
  m_startUList__() {
   if ($Equality.$same(this.f_uListBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_uListBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlUListBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -895,10 +672,7 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(UListElement_$Overlay.f_TAG__org_gwtproject_dom_client_UListElement_$Overlay, this.f_uListBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_uListBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @return {HtmlVideoBuilder}
-  * @public
-  */
+ /** @return {HtmlVideoBuilder} */
  m_startVideo__() {
   if ($Equality.$same(this.f_videoBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_videoBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlVideoBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -906,127 +680,71 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(VideoElement_$Overlay.f_TAG__org_gwtproject_dom_client_VideoElement_$Overlay, this.f_videoBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_videoBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @override
-  * @return {StylesBuilder}
-  * @public
-  */
+ /** @override @return {StylesBuilder} */
  m_style__() {
   return this.f_stylesBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @param {SafeStyles} style
-  * @return {StylesBuilder}
-  * @public
-  */
- m_styleProperty__org_gwtproject_safecss_shared_SafeStyles(style) {
+ /** @return {StylesBuilder} */
+ m_styleProperty__org_gwtproject_safecss_shared_SafeStyles(/** SafeStyles */ style) {
   this.m_assertCanAddStylePropertyImpl__();
   this.f_sb__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_.m_append__java_lang_String(style.m_asString__());
   return this.m_style__();
  }
- /**
-  * @param {?string} name
-  * @param {number} value
-  * @public
-  */
- m_trustedAttribute__java_lang_String__int(name, value) {
+ 
+ m_trustedAttribute__java_lang_String__int(/** ?string */ name, /** number */ value) {
   this.m_assertCanAddAttributeImpl__();
   this.f_sb__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_.m_append__java_lang_String(" ").m_append__java_lang_String(name).m_append__java_lang_String("=\"").m_append__int(value).m_append__java_lang_String("\"");
  }
- /**
-  * @param {?string} name
-  * @param {?string} value
-  * @public
-  */
- m_trustedAttribute__java_lang_String__java_lang_String(name, value) {
+ 
+ m_trustedAttribute__java_lang_String__java_lang_String(/** ?string */ name, /** ?string */ value) {
   this.m_assertCanAddAttributeImpl__();
   this.f_sb__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_.m_append__java_lang_String(" ").m_append__java_lang_String(name).m_append__java_lang_String("=\"").m_append__java_lang_String(this.m_escape__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(value)).m_append__java_lang_String("\"");
  }
- /**
-  * @param {?string} tagName
-  * @return {HtmlElementBuilder}
-  * @public
-  */
- m_trustedStart__java_lang_String(tagName) {
+ /** @return {HtmlElementBuilder} */
+ m_trustedStart__java_lang_String(/** ?string */ tagName) {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(tagName, this.f_elementBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_elementBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_doCloseStartTagImpl__() {
   this.f_sb__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_.m_append__java_lang_String(">");
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_doCloseStyleAttributeImpl__() {
   this.f_sb__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_.m_append__java_lang_String("\"");
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_doEndStartTagImpl__() {
   this.f_sb__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_.m_append__java_lang_String(" />");
  }
- /**
-  * @override
-  * @param {?string} tagName
-  * @public
-  */
- m_doEndTagImpl__java_lang_String(tagName) {
+ /** @override */
+ m_doEndTagImpl__java_lang_String(/** ?string */ tagName) {
   this.f_sb__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_.m_append__java_lang_String("</").m_append__java_lang_String(tagName).m_append__java_lang_String(">");
  }
- /**
-  * @override
-  * @return {Object}
-  * @public
-  */
+ /** @override @return {Object} */
  m_doFinishImpl__() {
   let tmp = Document_$Overlay.m_createDivElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__());
   Element_$Overlay.m_setInnerSafeHtml__$devirt__org_gwtproject_dom_client_Element__org_gwtproject_safehtml_shared_SafeHtml(tmp, this.m_asSafeHtml__());
   return Element_$Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(tmp);
  }
- /**
-  * @override
-  * @param {SafeHtml} html
-  * @public
-  */
- m_doHtmlImpl__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ /** @override */
+ m_doHtmlImpl__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   this.f_sb__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_.m_append__java_lang_String(html.m_asString__());
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_doOpenStyleImpl__() {
   this.f_sb__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_.m_append__java_lang_String(" style=\"");
  }
- /**
-  * @override
-  * @param {?string} text
-  * @public
-  */
- m_doTextImpl__java_lang_String(text) {
+ /** @override */
+ m_doTextImpl__java_lang_String(/** ?string */ text) {
   this.f_sb__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_.m_append__java_lang_String(this.m_escape__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(text));
  }
- /**
-  * @param {?string} s
-  * @return {?string}
-  * @public
-  */
- m_escape__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(s) {
+ /** @return {?string} */
+ m_escape__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** ?string */ s) {
   return SafeHtmlUtils.m_htmlEscape__java_lang_String(s);
  }
- /**
-  * @param {?string} type
-  * @return {HtmlButtonBuilder}
-  * @public
-  */
- m_startButton__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(type) {
+ /** @return {HtmlButtonBuilder} */
+ m_startButton__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** ?string */ type) {
   if ($Equality.$same(this.f_buttonBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_buttonBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlButtonBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
   }
@@ -1034,64 +752,42 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.f_buttonBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_.m_attribute__java_lang_String__java_lang_String("type", type);
   return this.f_buttonBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @param {number} level
-  * @return {HtmlHeadingBuilder}
-  * @public
-  */
- m_startHeading__int_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(level) {
+ /** @return {HtmlHeadingBuilder} */
+ m_startHeading__int_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** number */ level) {
   if ($Equality.$same(this.f_headingBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_headingBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlHeadingBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
   }
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl("h" + level, this.f_headingBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_headingBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @param {?string} type
-  * @return {HtmlInputBuilder}
-  * @public
-  */
- m_startInput__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(type) {
+ /** @return {HtmlInputBuilder} */
+ m_startInput__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** ?string */ type) {
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl("input", this.f_inputBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   this.m_attribute__java_lang_String__java_lang_String("type", type);
   return this.f_inputBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @param {?string} tagName
-  * @return {HtmlQuoteBuilder}
-  * @public
-  */
- m_startQuote__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(tagName) {
+ /** @return {HtmlQuoteBuilder} */
+ m_startQuote__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** ?string */ tagName) {
   if ($Equality.$same(this.f_quoteBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_quoteBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlQuoteBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
   }
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(tagName, this.f_quoteBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_quoteBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @param {?string} tagName
-  * @return {HtmlTableSectionBuilder}
-  * @public
-  */
- m_startTableSection__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(tagName) {
+ /** @return {HtmlTableSectionBuilder} */
+ m_startTableSection__java_lang_String_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** ?string */ tagName) {
   if ($Equality.$same(this.f_tableSectionBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_, null)) {
    this.f_tableSectionBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlTableSectionBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
   }
   this.m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(tagName, this.f_tableSectionBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_);
   return this.f_tableSectionBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_;
  }
- /**
-  * @param {?string} tagName
-  * @param {ElementBuilderBase<?>} builder
-  * @public
-  */
- m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(tagName, builder) {
+ 
+ m_trustedStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase_$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** ?string */ tagName, /** ElementBuilderBase<?> */ builder) {
   this.m_onStart__java_lang_String__org_gwtproject_dom_builder_shared_ElementBuilderBase(tagName, builder);
   this.f_sb__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_.m_append__java_lang_String("<").m_append__java_lang_String(tagName);
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_dom_builder_shared_HtmlBuilderImpl() {
   this.f_divBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlDivBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
   this.f_elementBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlElementBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
@@ -1104,25 +800,17 @@ class HtmlBuilderImpl extends ElementBuilderImpl {
   this.f_tableRowBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = HtmlTableRowBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(this);
   this.f_sb__org_gwtproject_dom_builder_shared_HtmlBuilderImpl_ = StringBuilder.$create__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HtmlBuilderImpl.$clinit = () =>{};
   HtmlBuilderImpl.$loadModules();
   ElementBuilderImpl.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HtmlBuilderImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   StringBuilder = goog.module.get('java.lang.StringBuilder$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

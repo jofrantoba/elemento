@@ -15,136 +15,72 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {TextAreaBuilder}
   */
 class HtmlTextAreaBuilder extends HtmlElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @return {!HtmlTextAreaBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ /** @return {!HtmlTextAreaBuilder} */
+ static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   HtmlTextAreaBuilder.$clinit();
   let $instance = new HtmlTextAreaBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_shared_HtmlTextAreaBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_shared_HtmlTextAreaBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_shared_HtmlTextAreaBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_shared_HtmlElementBuilderBase__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate);
  }
- /**
-  * @override
-  * @param {?string} accessKey
-  * @return {TextAreaBuilder}
-  * @public
-  */
- m_accessKey__java_lang_String(accessKey) {
-  return /**@type {TextAreaBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("accessKey", accessKey), TextAreaBuilder));
+ /** @override @return {TextAreaBuilder} */
+ m_accessKey__java_lang_String(/** ?string */ accessKey) {
+  return /**@type {TextAreaBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("accessKey", accessKey), TextAreaBuilder));
  }
- /**
-  * @override
-  * @param {number} cols
-  * @return {TextAreaBuilder}
-  * @public
-  */
- m_cols__int(cols) {
-  return /**@type {TextAreaBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__int_$pp_org_gwtproject_dom_builder_shared("cols", cols), TextAreaBuilder));
+ /** @override @return {TextAreaBuilder} */
+ m_cols__int(/** number */ cols) {
+  return /**@type {TextAreaBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__int_$pp_org_gwtproject_dom_builder_shared("cols", cols), TextAreaBuilder));
  }
- /**
-  * @override
-  * @param {?string} defaultValue
-  * @return {TextAreaBuilder}
-  * @public
-  */
- m_defaultValue__java_lang_String(defaultValue) {
-  return /**@type {TextAreaBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("defaultValue", defaultValue), TextAreaBuilder));
+ /** @override @return {TextAreaBuilder} */
+ m_defaultValue__java_lang_String(/** ?string */ defaultValue) {
+  return /**@type {TextAreaBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("defaultValue", defaultValue), TextAreaBuilder));
  }
- /**
-  * @override
-  * @return {TextAreaBuilder}
-  * @public
-  */
+ /** @override @return {TextAreaBuilder} */
  m_disabled__() {
-  return /**@type {TextAreaBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("disabled", "disabled"), TextAreaBuilder));
+  return /**@type {TextAreaBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("disabled", "disabled"), TextAreaBuilder));
  }
- /**
-  * @override
-  * @param {SafeHtml} html
-  * @return {TextAreaBuilder}
-  * @public
-  */
- m_html__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ /** @override @return {TextAreaBuilder} */
+ m_html__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String(TextAreaBuilder.f_UNSUPPORTED_HTML__org_gwtproject_dom_builder_shared_TextAreaBuilder));
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isChildElementSupported__() {
   return false;
  }
- /**
-  * @override
-  * @param {?string} name
-  * @return {TextAreaBuilder}
-  * @public
-  */
- m_name__java_lang_String(name) {
-  return /**@type {TextAreaBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("name", name), TextAreaBuilder));
+ /** @override @return {TextAreaBuilder} */
+ m_name__java_lang_String(/** ?string */ name) {
+  return /**@type {TextAreaBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("name", name), TextAreaBuilder));
  }
- /**
-  * @override
-  * @return {TextAreaBuilder}
-  * @public
-  */
+ /** @override @return {TextAreaBuilder} */
  m_readOnly__() {
-  return /**@type {TextAreaBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("readonly", "readonly"), TextAreaBuilder));
+  return /**@type {TextAreaBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("readonly", "readonly"), TextAreaBuilder));
  }
- /**
-  * @override
-  * @param {number} rows
-  * @return {TextAreaBuilder}
-  * @public
-  */
- m_rows__int(rows) {
-  return /**@type {TextAreaBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__int_$pp_org_gwtproject_dom_builder_shared("rows", rows), TextAreaBuilder));
+ /** @override @return {TextAreaBuilder} */
+ m_rows__int(/** number */ rows) {
+  return /**@type {TextAreaBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__int_$pp_org_gwtproject_dom_builder_shared("rows", rows), TextAreaBuilder));
  }
- /**
-  * @override
-  * @param {?string} value
-  * @return {TextAreaBuilder}
-  * @public
-  */
- m_value__java_lang_String(value) {
-  return /**@type {TextAreaBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("value", value), TextAreaBuilder));
+ /** @override @return {TextAreaBuilder} */
+ m_value__java_lang_String(/** ?string */ value) {
+  return /**@type {TextAreaBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("value", value), TextAreaBuilder));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HtmlTextAreaBuilder.$clinit = () =>{};
   HtmlTextAreaBuilder.$loadModules();
   HtmlElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HtmlTextAreaBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   UnsupportedOperationException = goog.module.get('java.lang.UnsupportedOperationException$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

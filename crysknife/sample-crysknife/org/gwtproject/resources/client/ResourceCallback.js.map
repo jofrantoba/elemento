@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ResourceCallback.impl.java.js",
-"lineCount":30,
-"mappings":"A;;;;;;;;;;;MAuCiB,gB;;;;;;CAMV,4D,CAA0BA,C;;;;;;CAO1B,8D,CAAYC,Q;;;;QAbF,O;EAAAC,mC;EAAAA;",
+"lineCount":20,
+"mappings":"A;;;;;;;;;;;MAuCiB,gB;;CAMV,4D,0BAA0BA,C;;CAO1B,8D,UAAYC,Q;;QAbF,O;EAAAC,mC;EAAAA;",
 "sources":["ResourceCallback.java"],
 "names":["e","resource","org.gwtproject.resources.client.ResourceCallback.<clinit>"]
 }

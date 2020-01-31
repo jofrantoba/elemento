@@ -10,58 +10,36 @@ let $Overlay = goog.forwardDeclare('elemental2.dom.HTMLElement.$Overlay$impl');
  * @extends {ElementBuilder<E, EmptyContentBuilder<E>>}
   */
 class EmptyContentBuilder extends ElementBuilder {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @template E
-  * @param {E} element
-  * @return {!EmptyContentBuilder<E>}
-  * @public
-  */
- static $create__elemental2_dom_HTMLElement(element) {
+ /** @template E @return {!EmptyContentBuilder<E>} */
+ static $create__elemental2_dom_HTMLElement(/** E */ element) {
   EmptyContentBuilder.$clinit();
   let $instance = new EmptyContentBuilder();
   $instance.$ctor__org_jboss_elemento_EmptyContentBuilder__elemental2_dom_HTMLElement(element);
   return $instance;
  }
- /**
-  * @param {E} element
-  * @public
-  */
- $ctor__org_jboss_elemento_EmptyContentBuilder__elemental2_dom_HTMLElement(element) {
+ 
+ $ctor__org_jboss_elemento_EmptyContentBuilder__elemental2_dom_HTMLElement(/** E */ element) {
   this.$ctor__org_jboss_elemento_ElementBuilder__elemental2_dom_HTMLElement(element);
  }
- /**
-  * @override
-  * @return {EmptyContentBuilder<E>}
-  * @public
-  */
+ /** @override @return {EmptyContentBuilder<E>} */
  m_that__() {
   return this;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   EmptyContentBuilder.$clinit = () =>{};
   EmptyContentBuilder.$loadModules();
   ElementBuilder.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof EmptyContentBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

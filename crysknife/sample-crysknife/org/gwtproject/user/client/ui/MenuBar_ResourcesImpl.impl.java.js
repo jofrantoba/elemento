@@ -18,109 +18,69 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {Resources}
   */
 class MenuBar__ResourcesImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!MenuBar__ResourcesImpl}
-  * @public
-  */
+ /** @return {!MenuBar__ResourcesImpl} */
  static $create__() {
   MenuBar__ResourcesImpl.$clinit();
   let $instance = new MenuBar__ResourcesImpl();
   $instance.$ctor__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @public
-  */
+ 
  m_menuBarSubMenuIconInitializer___$p_org_gwtproject_user_client_ui_MenuBar_ResourcesImpl() {
   MenuBar__ResourcesImpl.$f_menuBarSubMenuIcon__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_ = ImageResourcePrototype.$create__java_lang_String__org_gwtproject_safehtml_shared_SafeUri__int__int__int__int__boolean__boolean("menuBarSubMenuIcon", UriUtils.m_fromTrustedString__java_lang_String(MenuBar__ResourcesImpl.f_externalImage__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_), 0, 0, 5, 9, false, false);
  }
- /**
-  * @override
-  * @return {ImageResource}
-  * @public
-  */
+ /** @override @return {ImageResource} */
  m_menuBarSubMenuIcon__() {
   return menuBarSubMenuIconInitializer.m_get__();
  }
- /**
-  * @return {Array<ResourcePrototype>}
-  * @public
-  */
+ /** @return {Array<ResourcePrototype>} */
  m_getResources__() {
-  return /**@type {!Array<ResourcePrototype>} */ ($Arrays.$init([this.m_menuBarSubMenuIcon__()], ResourcePrototype));
+  return /**@type {!Array<ResourcePrototype>}*/ ($Arrays.$init([this.m_menuBarSubMenuIcon__()], ResourcePrototype));
  }
- /**
-  * @param {?string} name
-  * @return {ResourcePrototype}
-  * @public
-  */
- m_getResource__java_lang_String(name) {
+ /** @return {ResourcePrototype} */
+ m_getResource__java_lang_String(/** ?string */ name) {
   if ($Equality.$same(MenuBar__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_, null)) {
-   MenuBar__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_ = /**@type {!HashMap<?string, ResourcePrototype>} */ (HashMap.$create__());
+   MenuBar__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_ = /**@type {!HashMap<?string, ResourcePrototype>}*/ (HashMap.$create__());
    MenuBar__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_.put("menuBarSubMenuIcon", this.m_menuBarSubMenuIcon__());
   }
-  return /**@type {ResourcePrototype} */ ($Casts.$to(MenuBar__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_.get(name), ResourcePrototype));
+  return /**@type {ResourcePrototype}*/ ($Casts.$to(MenuBar__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_.get(name), ResourcePrototype));
  }
- /**
-  * @return {MenuBar__ResourcesImpl}
-  * @public
-  */
+ /** @return {MenuBar__ResourcesImpl} */
  static get f__instance0__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_() {
   return (MenuBar__ResourcesImpl.$clinit(), MenuBar__ResourcesImpl.$f__instance0__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_);
  }
- /**
-  * @param {MenuBar__ResourcesImpl} value
-  * @public
-  */
- static set f__instance0__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_(value) {
+ 
+ static set f__instance0__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_(/** MenuBar__ResourcesImpl */ value) {
   (MenuBar__ResourcesImpl.$clinit(), MenuBar__ResourcesImpl.$f__instance0__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_ = value);
  }
- /**
-  * @return {ImageResource}
-  * @public
-  */
+ /** @return {ImageResource} */
  static get f_menuBarSubMenuIcon__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_() {
   return (MenuBar__ResourcesImpl.$clinit(), MenuBar__ResourcesImpl.$f_menuBarSubMenuIcon__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_);
  }
- /**
-  * @param {ImageResource} value
-  * @public
-  */
- static set f_menuBarSubMenuIcon__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_(value) {
+ 
+ static set f_menuBarSubMenuIcon__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_(/** ImageResource */ value) {
   (MenuBar__ResourcesImpl.$clinit(), MenuBar__ResourcesImpl.$f_menuBarSubMenuIcon__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_ = value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MenuBar__ResourcesImpl.$clinit = () =>{};
   MenuBar__ResourcesImpl.$loadModules();
   j_l_Object.$clinit();
   MenuBar__ResourcesImpl.$f__instance0__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_ = MenuBar__ResourcesImpl.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof MenuBar__ResourcesImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   HashMap = goog.module.get('java.util.HashMap$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -137,13 +97,13 @@ $Util.$setClassMetadata(MenuBar__ResourcesImpl, 'org.gwtproject.user.client.ui.M
 
 Resources.$markImplementor(MenuBar__ResourcesImpl);
 
-/** @private {MenuBar__ResourcesImpl} */
+/**@private {MenuBar__ResourcesImpl}*/
 MenuBar__ResourcesImpl.$f__instance0__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_;
-/** @public {HashMap<?string, ResourcePrototype>} */
+/**@type {HashMap<?string, ResourcePrototype>}*/
 MenuBar__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_;
-/** @public {?string} @const */
+/**@const {?string}*/
 MenuBar__ResourcesImpl.f_externalImage__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_ = "data:image/gif;base64,R0lGODlhBQAJAIAAAAAAAAAAACH5BAEAAAEALAAAAAAFAAkAAAIMRB5gp9v2YlJsJRQKADs=";
-/** @private {ImageResource} */
+/**@private {ImageResource}*/
 MenuBar__ResourcesImpl.$f_menuBarSubMenuIcon__org_gwtproject_user_client_ui_MenuBar_ResourcesImpl_;
 
 exports = MenuBar__ResourcesImpl; 

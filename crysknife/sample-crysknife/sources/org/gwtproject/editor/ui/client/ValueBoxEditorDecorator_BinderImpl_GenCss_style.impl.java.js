@@ -8,47 +8,26 @@ const CssResource = goog.require('org.gwtproject.resources.client.CssResource$im
  * @extends {CssResource}
  */
 class ValueBoxEditorDecorator__BinderImpl__GenCss__style {
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_contents__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_errorLabel__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ValueBoxEditorDecorator__BinderImpl__GenCss__style.$clinit = () =>{};
   ValueBoxEditorDecorator__BinderImpl__GenCss__style.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  CssResource.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenCss_style = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  CssResource.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenCss_style = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenCss_style;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

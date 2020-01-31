@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CharacterData$BeforeNodesUnionType$$Overlay.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;MAqDmB,6B;;;;;;QAE2B,sB,CAAUA,C;EAAVC,wC;EACxCA,wD;;;;;;;QAIW,oE;EAAAC,wC;EACXA,wF;;;;;;;QAIa,sE;EAAAC,wC;EACbA,iD;;;;;;;QAIc,oE;EAAAC,wC;EACdA,wD;;;;;;;QAIc,sE;EAAAC,wC;EACdA,0D;;;;;QAvBa,O;EAAAC,gD;EAAAA;",
+"lineCount":39,
+"mappings":"A;;;;;;;;;MAqDmB,6B;;QAE2B,sB,UAAUA,C;EAAVC,wC;EACxCA,uD;;;QAIW,oE;EAAAC,wC;EACXA,uF;;;QAIa,sE;EAAAC,wC;EACbA,iD;;;QAIc,oE;EAAAC,wC;EACdA,uD;;;QAIc,sE;EAAAC,wC;EACdA,yD;;;QAvBa,O;EAAAC,gD;EAAAA;",
 "sources":["CharacterData.java"],
 "names":["o","elemental2.dom.CharacterData$BeforeNodesUnionType$$Overlay.of","elemental2.dom.CharacterData$BeforeNodesUnionType$$Overlay.asNode__$devirt","elemental2.dom.CharacterData$BeforeNodesUnionType$$Overlay.asString__$devirt","elemental2.dom.CharacterData$BeforeNodesUnionType$$Overlay.isNode__$devirt","elemental2.dom.CharacterData$BeforeNodesUnionType$$Overlay.isString__$devirt","elemental2.dom.CharacterData$BeforeNodesUnionType$$Overlay.<clinit>"]
 }

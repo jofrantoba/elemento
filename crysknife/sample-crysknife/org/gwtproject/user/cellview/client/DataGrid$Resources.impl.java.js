@@ -12,67 +12,35 @@ let DataGrid__ResourcesImpl = goog.forwardDeclare('org.gwtproject.user.cellview.
  * @extends {ClientBundle}
  */
 class Resources {
- /**
-  * @abstract
-  * @return {ImageResource}
-  * @public
-  */
+ /** @abstract @return {ImageResource} */
  m_dataGridLoading__() {}
- /**
-  * @abstract
-  * @return {ImageResource}
-  * @public
-  */
+ /** @abstract @return {ImageResource} */
  m_dataGridSortAscending__() {}
- /**
-  * @abstract
-  * @return {ImageResource}
-  * @public
-  */
+ /** @abstract @return {ImageResource} */
  m_dataGridSortDescending__() {}
- /**
-  * @abstract
-  * @return {Style}
-  * @public
-  */
+ /** @abstract @return {Style} */
  m_dataGridStyle__() {}
- /**
-  * @return {Resources}
-  * @public
-  */
+ /** @return {Resources} */
  static get f_INSTANCE__org_gwtproject_user_cellview_client_DataGrid_Resources() {
   return (Resources.$clinit(), Resources.$f_INSTANCE__org_gwtproject_user_cellview_client_DataGrid_Resources);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Resources.$clinit = () =>{};
   Resources.$loadModules();
   Resources.$f_INSTANCE__org_gwtproject_user_cellview_client_DataGrid_Resources = DataGrid__ResourcesImpl.$create__();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ClientBundle.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_cellview_client_DataGrid_Resources = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ClientBundle.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_cellview_client_DataGrid_Resources = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_cellview_client_DataGrid_Resources;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   DataGrid__ResourcesImpl = goog.module.get('org.gwtproject.user.cellview.client.DataGrid_ResourcesImpl$impl');
  }
@@ -82,7 +50,7 @@ $Util.$setClassMetadataForInterface(Resources, 'org.gwtproject.user.cellview.cli
 
 Resources.$markImplementor(/** @type {Function} */ (Resources));
 
-/** @private {Resources} */
+/**@private {Resources}*/
 Resources.$f_INSTANCE__org_gwtproject_user_cellview_client_DataGrid_Resources;
 
 exports = Resources; 

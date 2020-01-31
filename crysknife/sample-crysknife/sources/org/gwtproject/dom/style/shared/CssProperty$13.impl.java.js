@@ -6,69 +6,41 @@ const CssProperty = goog.require('org.gwtproject.dom.style.shared.CssProperty$im
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class $13 extends CssProperty {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @return {!$13}
-  * @public
-  */
- static $create__java_lang_String__int($name, $ordinal) {
+ /** @return {!$13} */
+ static $create__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   $13.$clinit();
   let $instance = new $13();
   $instance.$ctor__org_gwtproject_dom_style_shared_CssProperty_13__java_lang_String__int($name, $ordinal);
   return $instance;
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_dom_style_shared_CssProperty_13__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_dom_style_shared_CssProperty_13__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.$ctor__org_gwtproject_dom_style_shared_CssProperty__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getJsName__() {
   return "padding";
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @return {number}
-  * @public
-  */
- m_compareTo__java_lang_Object(arg0) {
-  return super.compareTo(/**@type {CssProperty} */ ($Casts.$to(arg0, CssProperty)));
+ //Bridge method.
+ /** @override @return {number} */
+ m_compareTo__java_lang_Object(/** * */ arg0) {
+  return super.compareTo(/**@type {CssProperty}*/ ($Casts.$to(arg0, CssProperty)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $13.$clinit = () =>{};
   $13.$loadModules();
   CssProperty.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $13;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

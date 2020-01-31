@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ValueChangeHandler.impl.java.js",
-"lineCount":34,
-"mappings":"A;;;;;;;;;;;MAsBiB,kB;;;;;;CAOV,qE,CAAkCA,K;;;;;;;QAPxB,M;EAAAC,6B;EAAAA,iE;;;;;QAAA,O;EAAAC,qC;EAAAA;",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;MAsBiB,kB;;CAOV,qE,4BAAkCA,K;;QAPxB,M;EAAAC,6B;EAAAA,gE;;;QAAA,O;EAAAC,qC;EAAAA;",
 "sources":["ValueChangeHandler.java"],
 "names":["event","org.gwtproject.event.logical.shared.ValueChangeHandler.<synthetic: adapt_lambda>","org.gwtproject.event.logical.shared.ValueChangeHandler.<clinit>"]
 }

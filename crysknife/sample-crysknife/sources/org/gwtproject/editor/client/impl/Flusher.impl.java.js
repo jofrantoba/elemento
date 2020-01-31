@@ -12,44 +12,32 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class Flusher extends EditorVisitor {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Stack<AbstractEditorDelegate<?, ?>>} */
+  /**@type {Stack<AbstractEditorDelegate<?, ?>>}*/
   this.f_delegateStack__org_gwtproject_editor_client_impl_Flusher_;
  }
- /**
-  * @return {!Flusher}
-  * @public
-  */
+ /** @return {!Flusher} */
  static $create__() {
   Flusher.$clinit();
   let $instance = new Flusher();
   $instance.$ctor__org_gwtproject_editor_client_impl_Flusher__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_editor_client_impl_Flusher__() {
   this.$ctor__org_gwtproject_editor_client_EditorVisitor__();
   this.$init___$p_org_gwtproject_editor_client_impl_Flusher();
  }
- /**
-  * @override
-  * @template Q
-  * @param {EditorContext<Q>} ctx
-  * @public
-  */
- m_endVisit__org_gwtproject_editor_client_EditorContext(ctx) {
+ /** @override @template Q */
+ m_endVisit__org_gwtproject_editor_client_EditorContext(/** EditorContext<Q> */ ctx) {
   let asValue = ctx.m_asValueAwareEditor__();
   let /** AbstractEditorDelegate<?, ?> */ delegate;
   if ($Equality.$same(ctx.m_getEditorDelegate__(), null)) {
-   delegate = /**@type {AbstractEditorDelegate<*, Editor>} */ ($Casts.$to(this.f_delegateStack__org_gwtproject_editor_client_impl_Flusher_.m_peek__(), AbstractEditorDelegate));
+   delegate = /**@type {AbstractEditorDelegate<*, Editor>}*/ ($Casts.$to(this.f_delegateStack__org_gwtproject_editor_client_impl_Flusher_.m_peek__(), AbstractEditorDelegate));
   } else {
-   delegate = /**@type {AbstractEditorDelegate<*, Editor>} */ ($Casts.$to(this.f_delegateStack__org_gwtproject_editor_client_impl_Flusher_.m_pop__(), AbstractEditorDelegate));
+   delegate = /**@type {AbstractEditorDelegate<*, Editor>}*/ ($Casts.$to(this.f_delegateStack__org_gwtproject_editor_client_impl_Flusher_.m_pop__(), AbstractEditorDelegate));
   }
   $Asserts.$assert(!$Equality.$same(delegate, null));
   if (!$Equality.$same(asValue, null)) {
@@ -62,45 +50,29 @@ class Flusher extends EditorVisitor {
    ctx.m_setInModel__java_lang_Object(asLeaf.m_getValue__());
   }
  }
- /**
-  * @override
-  * @template Q
-  * @param {EditorContext<Q>} ctx
-  * @return {boolean}
-  * @public
-  */
- m_visit__org_gwtproject_editor_client_EditorContext(ctx) {
+ /** @override @template Q @return {boolean} */
+ m_visit__org_gwtproject_editor_client_EditorContext(/** EditorContext<Q> */ ctx) {
   let editorDelegate = ctx.m_getEditorDelegate__();
   if (!$Equality.$same(editorDelegate, null)) {
-   this.f_delegateStack__org_gwtproject_editor_client_impl_Flusher_.m_push__java_lang_Object(/**@type {AbstractEditorDelegate<*, Editor>} */ ($Casts.$to(editorDelegate, AbstractEditorDelegate)));
+   this.f_delegateStack__org_gwtproject_editor_client_impl_Flusher_.m_push__java_lang_Object(/**@type {AbstractEditorDelegate<*, Editor>}*/ ($Casts.$to(editorDelegate, AbstractEditorDelegate)));
   }
   return true;
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_editor_client_impl_Flusher() {
-  this.f_delegateStack__org_gwtproject_editor_client_impl_Flusher_ = /**@type {!Stack<AbstractEditorDelegate<?, ?>>} */ (Stack.$create__());
+  this.f_delegateStack__org_gwtproject_editor_client_impl_Flusher_ = /**@type {!Stack<AbstractEditorDelegate<?, ?>>}*/ (Stack.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Flusher.$clinit = () =>{};
   Flusher.$loadModules();
   EditorVisitor.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Flusher;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Stack = goog.module.get('java.util.Stack$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

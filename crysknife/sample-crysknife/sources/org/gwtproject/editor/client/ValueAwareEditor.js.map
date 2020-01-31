@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ValueAwareEditor.impl.java.js",
-"lineCount":34,
-"mappings":"A;;;;;;;;;;MAsBiB,gB;;;;;CAKV,S;;;;;;CAQA,4C,CAA2BA,K;;;;;;CAU3B,4B,CAAWC,K;;;;QAvBD,O;EAAAC,mC;EAAAA;",
+"lineCount":21,
+"mappings":"A;;;;;;;;;;MAsBiB,gB;;CAKV,S;;CAQA,4C,uBAA2BA,K;;CAU3B,4B,UAAWC,K;;QAvBD,O;EAAAC,mC;EAAAA;",
 "sources":["ValueAwareEditor.java"],
 "names":["paths","value","org.gwtproject.editor.client.ValueAwareEditor.<clinit>"]
 }

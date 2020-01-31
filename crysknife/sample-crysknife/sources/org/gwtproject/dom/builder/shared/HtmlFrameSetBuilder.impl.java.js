@@ -15,85 +15,48 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {FrameSetBuilder}
   */
 class HtmlFrameSetBuilder extends HtmlElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @return {!HtmlFrameSetBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ /** @return {!HtmlFrameSetBuilder} */
+ static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   HtmlFrameSetBuilder.$clinit();
   let $instance = new HtmlFrameSetBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_shared_HtmlFrameSetBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_shared_HtmlFrameSetBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_shared_HtmlFrameSetBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_shared_HtmlElementBuilderBase__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate);
  }
- /**
-  * @override
-  * @param {?string} cols
-  * @return {FrameSetBuilder}
-  * @public
-  */
- m_cols__java_lang_String(cols) {
-  return /**@type {FrameSetBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("cols", cols), FrameSetBuilder));
+ /** @override @return {FrameSetBuilder} */
+ m_cols__java_lang_String(/** ?string */ cols) {
+  return /**@type {FrameSetBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("cols", cols), FrameSetBuilder));
  }
- /**
-  * @override
-  * @param {SafeHtml} html
-  * @return {FrameSetBuilder}
-  * @public
-  */
- m_html__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ /** @override @return {FrameSetBuilder} */
+ m_html__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__());
  }
- /**
-  * @override
-  * @param {?string} rows
-  * @return {FrameSetBuilder}
-  * @public
-  */
- m_rows__java_lang_String(rows) {
-  return /**@type {FrameSetBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("rows", rows), FrameSetBuilder));
+ /** @override @return {FrameSetBuilder} */
+ m_rows__java_lang_String(/** ?string */ rows) {
+  return /**@type {FrameSetBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("rows", rows), FrameSetBuilder));
  }
- /**
-  * @override
-  * @param {?string} text
-  * @return {FrameSetBuilder}
-  * @public
-  */
- m_text__java_lang_String(text) {
+ /** @override @return {FrameSetBuilder} */
+ m_text__java_lang_String(/** ?string */ text) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HtmlFrameSetBuilder.$clinit = () =>{};
   HtmlFrameSetBuilder.$loadModules();
   HtmlElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HtmlFrameSetBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   UnsupportedOperationException = goog.module.get('java.lang.UnsupportedOperationException$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

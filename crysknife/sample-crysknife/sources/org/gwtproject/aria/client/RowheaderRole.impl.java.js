@@ -15,57 +15,30 @@ let $Overlay = goog.forwardDeclare('org.gwtproject.dom.client.Element.$Overlay$i
  * @extends {WidgetRole}
  */
 class RowheaderRole {
- /**
-  * @abstract
-  * @param {Object} element
-  * @return {?string}
-  * @public
-  */
- m_getAriaSortProperty__org_gwtproject_dom_client_Element(element) {}
- /**
-  * @abstract
-  * @param {Object} element
-  * @public
-  */
- m_removeAriaSortProperty__org_gwtproject_dom_client_Element(element) {}
- /**
-  * @abstract
-  * @param {Object} element
-  * @param {SortValue} value
-  * @public
-  */
- m_setAriaSortProperty__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_SortValue(element, value) {}
- /**
-  * @public
-  */
+ /** @abstract @return {?string} */
+ m_getAriaSortProperty__org_gwtproject_dom_client_Element(/** Object */ element) {}
+ /** @abstract */
+ m_removeAriaSortProperty__org_gwtproject_dom_client_Element(/** Object */ element) {}
+ /** @abstract */
+ m_setAriaSortProperty__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_SortValue(/** Object */ element, /** SortValue */ value) {}
+ 
  static $clinit() {
   RowheaderRole.$clinit = () =>{};
   RowheaderRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  GridcellRole.$markImplementor(classConstructor);
-  SectionheadRole.$markImplementor(classConstructor);
-  WidgetRole.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_RowheaderRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  GridcellRole.$markImplementor(ctor);
+  SectionheadRole.$markImplementor(ctor);
+  WidgetRole.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_RowheaderRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_RowheaderRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

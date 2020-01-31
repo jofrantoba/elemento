@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"KeyDownEvent.impl.java.js",
-"lineCount":100,
-"mappings":"A;;;;;;;;;;;;;MAoBa,Y;;;;CAAA,W;EAAAA,Q;;;;;;QAWD,S;EAAAC,uB;EAAAA,mC;EAAAA,kE;EAAAA,iB;;;;;CAAA,qD;EAAAC,6D;;;;;;QAOyB,W;EAAAC,uB;EACjCA,0E;;;;;;;CAIgC,qB;EAChCC,0E;;;;;;CAIa,0D,CAAwBC,O;EACrCC,wE;;;;;;;;CA7BS,4B;EAAAA,iI;;;;;QAAA,O;EAAAC,+B;EAAAA,4B;EAAAA,uB;EAEXA,gR;;;;;;;;;;;;;;;;;;;;;;;AAFW;aAG+B,qDAH/B;",
+"lineCount":71,
+"mappings":"A;;;;;;;;;;;;;MAoBa,Y;;CAAA,W;EAAAA,Q;;;QAWD,S;EAAAC,uB;EAAAA,mC;EAAAA,kE;EAAAA,iB;;;CAAA,qD;EAAAC,6D;;;QAOyB,W;EAAAC,uB;EACjCA,0E;;;CAIgC,qB;EAChCC,0E;;;CAIa,0D,uBAAwBC,O;EACrCC,wE;;;;CA7BS,4B;EAAAA,gI;;;QAAA,O;EAAAC,+B;EAAAA,4B;EAAAA,uB;EAEXA,+Q;;;;;;;;;;;;;;;;;AAFW;aAG+B,qDAH/B;",
 "sources":["KeyDownEvent.java"],
 "names":["org.gwtproject.event.dom.client.KeyDownEvent.<synthetic: ctor_js>","org.gwtproject.event.dom.client.KeyDownEvent.<synthetic: ctor_create>","org.gwtproject.event.dom.client.KeyDownEvent.<init>","org.gwtproject.event.dom.client.KeyDownEvent.getType","org.gwtproject.event.dom.client.KeyDownEvent.getAssociatedType","handler","org.gwtproject.event.dom.client.KeyDownEvent.dispatch","org.gwtproject.event.dom.client.KeyDownEvent.<clinit>"]
 }

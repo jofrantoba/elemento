@@ -22,293 +22,156 @@ let TrustedURL_$Overlay = goog.forwardDeclare('elemental2.dom.TrustedURL.$Overla
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class Element_$Overlay {
- /**
-  * @param {!Element} $thisArg
-  * @param {Array<Node>} nodes
-  * @public
-  */
- static m_after__$devirt__elemental2_dom_Element__arrayOf_elemental2_dom_Node($thisArg, nodes) {
+ 
+ static m_after__$devirt__elemental2_dom_Element__arrayOf_elemental2_dom_Node(/** !Element */ $thisArg, /** Array<Node> */ nodes) {
   Element_$Overlay.$clinit();
-  $thisArg.after(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(nodes)));
+  $thisArg.after(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(nodes)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {Array<?string>} nodes
-  * @public
-  */
- static m_after__$devirt__elemental2_dom_Element__arrayOf_java_lang_String($thisArg, nodes) {
+ 
+ static m_after__$devirt__elemental2_dom_Element__arrayOf_java_lang_String(/** !Element */ $thisArg, /** Array<?string> */ nodes) {
   Element_$Overlay.$clinit();
-  $thisArg.after(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(nodes)));
+  $thisArg.after(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(nodes)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {Array<Node>} nodes
-  * @public
-  */
- static m_append__$devirt__elemental2_dom_Element__arrayOf_elemental2_dom_Node($thisArg, nodes) {
+ 
+ static m_append__$devirt__elemental2_dom_Element__arrayOf_elemental2_dom_Node(/** !Element */ $thisArg, /** Array<Node> */ nodes) {
   Element_$Overlay.$clinit();
-  $thisArg.append(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(nodes)));
+  $thisArg.append(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(nodes)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {Array<?string>} nodes
-  * @public
-  */
- static m_append__$devirt__elemental2_dom_Element__arrayOf_java_lang_String($thisArg, nodes) {
+ 
+ static m_append__$devirt__elemental2_dom_Element__arrayOf_java_lang_String(/** !Element */ $thisArg, /** Array<?string> */ nodes) {
   Element_$Overlay.$clinit();
-  $thisArg.append(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(nodes)));
+  $thisArg.append(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(nodes)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {Array<Node>} nodes
-  * @public
-  */
- static m_before__$devirt__elemental2_dom_Element__arrayOf_elemental2_dom_Node($thisArg, nodes) {
+ 
+ static m_before__$devirt__elemental2_dom_Element__arrayOf_elemental2_dom_Node(/** !Element */ $thisArg, /** Array<Node> */ nodes) {
   Element_$Overlay.$clinit();
-  $thisArg.before(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(nodes)));
+  $thisArg.before(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(nodes)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {Array<?string>} nodes
-  * @public
-  */
- static m_before__$devirt__elemental2_dom_Element__arrayOf_java_lang_String($thisArg, nodes) {
+ 
+ static m_before__$devirt__elemental2_dom_Element__arrayOf_java_lang_String(/** !Element */ $thisArg, /** Array<?string> */ nodes) {
   Element_$Overlay.$clinit();
-  $thisArg.before(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(nodes)));
+  $thisArg.before(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(nodes)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {?string} selectors
-  * @param {Node} refNodes
-  * @return {boolean}
-  * @public
-  */
- static m_matchesSelector__$devirt__elemental2_dom_Element__java_lang_String__elemental2_dom_Node($thisArg, selectors, refNodes) {
+ /** @return {boolean} */
+ static m_matchesSelector__$devirt__elemental2_dom_Element__java_lang_String__elemental2_dom_Node(/** !Element */ $thisArg, /** ?string */ selectors, /** Node */ refNodes) {
   Element_$Overlay.$clinit();
-  return $thisArg.matchesSelector(selectors, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(refNodes)));
+  return $thisArg.matchesSelector(selectors, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(refNodes)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {?string} selectors
-  * @param {NodeList<*>} refNodes
-  * @return {boolean}
-  * @public
-  */
- static m_matchesSelector__$devirt__elemental2_dom_Element__java_lang_String__elemental2_dom_NodeList($thisArg, selectors, refNodes) {
+ /** @return {boolean} */
+ static m_matchesSelector__$devirt__elemental2_dom_Element__java_lang_String__elemental2_dom_NodeList(/** !Element */ $thisArg, /** ?string */ selectors, /** NodeList<*> */ refNodes) {
   Element_$Overlay.$clinit();
-  return $thisArg.matchesSelector(selectors, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(refNodes)));
+  return $thisArg.matchesSelector(selectors, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(refNodes)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {Array<Node>} nodes
-  * @public
-  */
- static m_prepend__$devirt__elemental2_dom_Element__arrayOf_elemental2_dom_Node($thisArg, nodes) {
+ 
+ static m_prepend__$devirt__elemental2_dom_Element__arrayOf_elemental2_dom_Node(/** !Element */ $thisArg, /** Array<Node> */ nodes) {
   Element_$Overlay.$clinit();
-  $thisArg.prepend(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(nodes)));
+  $thisArg.prepend(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(nodes)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {Array<?string>} nodes
-  * @public
-  */
- static m_prepend__$devirt__elemental2_dom_Element__arrayOf_java_lang_String($thisArg, nodes) {
+ 
+ static m_prepend__$devirt__elemental2_dom_Element__arrayOf_java_lang_String(/** !Element */ $thisArg, /** Array<?string> */ nodes) {
   Element_$Overlay.$clinit();
-  $thisArg.prepend(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(nodes)));
+  $thisArg.prepend(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(nodes)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {Array<Node>} nodes
-  * @public
-  */
- static m_replaceWith__$devirt__elemental2_dom_Element__arrayOf_elemental2_dom_Node($thisArg, nodes) {
+ 
+ static m_replaceWith__$devirt__elemental2_dom_Element__arrayOf_elemental2_dom_Node(/** !Element */ $thisArg, /** Array<Node> */ nodes) {
   Element_$Overlay.$clinit();
-  $thisArg.replaceWith(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(nodes)));
+  $thisArg.replaceWith(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(nodes)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {Array<?string>} nodes
-  * @public
-  */
- static m_replaceWith__$devirt__elemental2_dom_Element__arrayOf_java_lang_String($thisArg, nodes) {
+ 
+ static m_replaceWith__$devirt__elemental2_dom_Element__arrayOf_java_lang_String(/** !Element */ $thisArg, /** Array<?string> */ nodes) {
   Element_$Overlay.$clinit();
-  $thisArg.replaceWith(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(nodes)));
+  $thisArg.replaceWith(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(nodes)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {ScrollIntoViewOptions} top
-  * @public
-  */
- static m_scrollIntoView__$devirt__elemental2_dom_Element__elemental2_dom_ScrollIntoViewOptions($thisArg, top) {
+ 
+ static m_scrollIntoView__$devirt__elemental2_dom_Element__elemental2_dom_ScrollIntoViewOptions(/** !Element */ $thisArg, /** ScrollIntoViewOptions */ top) {
   Element_$Overlay.$clinit();
-  $thisArg.scrollIntoView(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(top)));
+  $thisArg.scrollIntoView(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(top)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {boolean} top
-  * @public
-  */
- static m_scrollIntoView__$devirt__elemental2_dom_Element__boolean($thisArg, top) {
+ 
+ static m_scrollIntoView__$devirt__elemental2_dom_Element__boolean(/** !Element */ $thisArg, /** boolean */ top) {
   Element_$Overlay.$clinit();
-  $thisArg.scrollIntoView(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(top)));
+  $thisArg.scrollIntoView(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(top)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {ScrollToOptions} scrollToOptionsOrX
-  * @param {number} y
-  * @public
-  */
- static m_scrollTo__$devirt__elemental2_dom_Element__elemental2_dom_ScrollToOptions__double($thisArg, scrollToOptionsOrX, y) {
+ 
+ static m_scrollTo__$devirt__elemental2_dom_Element__elemental2_dom_ScrollToOptions__double(/** !Element */ $thisArg, /** ScrollToOptions */ scrollToOptionsOrX, /** number */ y) {
   Element_$Overlay.$clinit();
-  $thisArg.scrollTo(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(scrollToOptionsOrX)), y);
+  $thisArg.scrollTo(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(scrollToOptionsOrX)), y);
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {ScrollToOptions} scrollToOptionsOrX
-  * @public
-  */
- static m_scrollTo__$devirt__elemental2_dom_Element__elemental2_dom_ScrollToOptions($thisArg, scrollToOptionsOrX) {
+ 
+ static m_scrollTo__$devirt__elemental2_dom_Element__elemental2_dom_ScrollToOptions(/** !Element */ $thisArg, /** ScrollToOptions */ scrollToOptionsOrX) {
   Element_$Overlay.$clinit();
-  $thisArg.scrollTo(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(scrollToOptionsOrX)));
+  $thisArg.scrollTo(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(scrollToOptionsOrX)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {number} scrollToOptionsOrX
-  * @param {number} y
-  * @public
-  */
- static m_scrollTo__$devirt__elemental2_dom_Element__double__double($thisArg, scrollToOptionsOrX, y) {
+ 
+ static m_scrollTo__$devirt__elemental2_dom_Element__double__double(/** !Element */ $thisArg, /** number */ scrollToOptionsOrX, /** number */ y) {
   Element_$Overlay.$clinit();
-  $thisArg.scrollTo(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(scrollToOptionsOrX)), y);
+  $thisArg.scrollTo(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(scrollToOptionsOrX)), y);
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {number} scrollToOptionsOrX
-  * @public
-  */
- static m_scrollTo__$devirt__elemental2_dom_Element__double($thisArg, scrollToOptionsOrX) {
+ 
+ static m_scrollTo__$devirt__elemental2_dom_Element__double(/** !Element */ $thisArg, /** number */ scrollToOptionsOrX) {
   Element_$Overlay.$clinit();
-  $thisArg.scrollTo(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(scrollToOptionsOrX)));
+  $thisArg.scrollTo(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(scrollToOptionsOrX)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {?string} name
-  * @param {?string} value
-  * @public
-  */
- static m_setAttribute__$devirt__elemental2_dom_Element__java_lang_String__java_lang_String($thisArg, name, value) {
+ 
+ static m_setAttribute__$devirt__elemental2_dom_Element__java_lang_String__java_lang_String(/** !Element */ $thisArg, /** ?string */ name, /** ?string */ value) {
   Element_$Overlay.$clinit();
-  $thisArg.setAttribute(name, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(value)));
+  $thisArg.setAttribute(name, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(value)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {?string} name
-  * @param {TrustedHTML} value
-  * @public
-  */
- static m_setAttribute__$devirt__elemental2_dom_Element__java_lang_String__elemental2_dom_TrustedHTML($thisArg, name, value) {
+ 
+ static m_setAttribute__$devirt__elemental2_dom_Element__java_lang_String__elemental2_dom_TrustedHTML(/** !Element */ $thisArg, /** ?string */ name, /** TrustedHTML */ value) {
   Element_$Overlay.$clinit();
-  $thisArg.setAttribute(name, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(value)));
+  $thisArg.setAttribute(name, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(value)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {?string} name
-  * @param {TrustedScriptURL} value
-  * @public
-  */
- static m_setAttribute__$devirt__elemental2_dom_Element__java_lang_String__elemental2_dom_TrustedScriptURL($thisArg, name, value) {
+ 
+ static m_setAttribute__$devirt__elemental2_dom_Element__java_lang_String__elemental2_dom_TrustedScriptURL(/** !Element */ $thisArg, /** ?string */ name, /** TrustedScriptURL */ value) {
   Element_$Overlay.$clinit();
-  $thisArg.setAttribute(name, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(value)));
+  $thisArg.setAttribute(name, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(value)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {?string} name
-  * @param {TrustedURL} value
-  * @public
-  */
- static m_setAttribute__$devirt__elemental2_dom_Element__java_lang_String__elemental2_dom_TrustedURL($thisArg, name, value) {
+ 
+ static m_setAttribute__$devirt__elemental2_dom_Element__java_lang_String__elemental2_dom_TrustedURL(/** !Element */ $thisArg, /** ?string */ name, /** TrustedURL */ value) {
   Element_$Overlay.$clinit();
-  $thisArg.setAttribute(name, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(value)));
+  $thisArg.setAttribute(name, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(value)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {?string} name
-  * @param {boolean} value
-  * @public
-  */
- static m_setAttribute__$devirt__elemental2_dom_Element__java_lang_String__boolean($thisArg, name, value) {
+ 
+ static m_setAttribute__$devirt__elemental2_dom_Element__java_lang_String__boolean(/** !Element */ $thisArg, /** ?string */ name, /** boolean */ value) {
   Element_$Overlay.$clinit();
-  $thisArg.setAttribute(name, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(value)));
+  $thisArg.setAttribute(name, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(value)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {?string} name
-  * @param {number} value
-  * @public
-  */
- static m_setAttribute__$devirt__elemental2_dom_Element__java_lang_String__double($thisArg, name, value) {
+ 
+ static m_setAttribute__$devirt__elemental2_dom_Element__java_lang_String__double(/** !Element */ $thisArg, /** ?string */ name, /** number */ value) {
   Element_$Overlay.$clinit();
-  $thisArg.setAttribute(name, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(value)));
+  $thisArg.setAttribute(name, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(value)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {?string} namespaceURI
-  * @param {?string} qualifiedName
-  * @param {?string} value
-  * @public
-  */
- static m_setAttributeNS__$devirt__elemental2_dom_Element__java_lang_String__java_lang_String__java_lang_String($thisArg, namespaceURI, qualifiedName, value) {
+ 
+ static m_setAttributeNS__$devirt__elemental2_dom_Element__java_lang_String__java_lang_String__java_lang_String(/** !Element */ $thisArg, /** ?string */ namespaceURI, /** ?string */ qualifiedName, /** ?string */ value) {
   Element_$Overlay.$clinit();
-  $thisArg.setAttributeNS(namespaceURI, qualifiedName, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(value)));
+  $thisArg.setAttributeNS(namespaceURI, qualifiedName, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(value)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {?string} namespaceURI
-  * @param {?string} qualifiedName
-  * @param {boolean} value
-  * @public
-  */
- static m_setAttributeNS__$devirt__elemental2_dom_Element__java_lang_String__java_lang_String__boolean($thisArg, namespaceURI, qualifiedName, value) {
+ 
+ static m_setAttributeNS__$devirt__elemental2_dom_Element__java_lang_String__java_lang_String__boolean(/** !Element */ $thisArg, /** ?string */ namespaceURI, /** ?string */ qualifiedName, /** boolean */ value) {
   Element_$Overlay.$clinit();
-  $thisArg.setAttributeNS(namespaceURI, qualifiedName, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(value)));
+  $thisArg.setAttributeNS(namespaceURI, qualifiedName, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(value)));
  }
- /**
-  * @param {!Element} $thisArg
-  * @param {?string} namespaceURI
-  * @param {?string} qualifiedName
-  * @param {number} value
-  * @public
-  */
- static m_setAttributeNS__$devirt__elemental2_dom_Element__java_lang_String__java_lang_String__double($thisArg, namespaceURI, qualifiedName, value) {
+ 
+ static m_setAttributeNS__$devirt__elemental2_dom_Element__java_lang_String__java_lang_String__double(/** !Element */ $thisArg, /** ?string */ namespaceURI, /** ?string */ qualifiedName, /** number */ value) {
   Element_$Overlay.$clinit();
-  $thisArg.setAttributeNS(namespaceURI, qualifiedName, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(value)));
+  $thisArg.setAttributeNS(namespaceURI, qualifiedName, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(value)));
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_ALLOW_KEYBOARD_INPUT__elemental2_dom_Element_$Overlay() {
   return (Element_$Overlay.$clinit(), Element_$Overlay.$f_ALLOW_KEYBOARD_INPUT__elemental2_dom_Element_$Overlay);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Element_$Overlay.$clinit = () =>{};
   Element_$Overlay.$loadModules();
   Element_$Overlay.$f_ALLOW_KEYBOARD_INPUT__elemental2_dom_Element_$Overlay = Element.ALLOW_KEYBOARD_INPUT;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Element;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }
@@ -316,7 +179,7 @@ class Element_$Overlay {
 }
 $Util.$setClassMetadata(Element_$Overlay, 'Element');
 
-/** @private {number} */
+/**@private {number}*/
 Element_$Overlay.$f_ALLOW_KEYBOARD_INPUT__elemental2_dom_Element_$Overlay = 0;
 
 exports = Element_$Overlay; 

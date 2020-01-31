@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CssResourceBase.impl.java.js",
-"lineCount":27,
-"mappings":"A;;;;;;;;;;;MAqCiB,e;;;;;;QAAA,M;EAAAA,0B;EAAAA,8B;;;;;QAAA,O;EAAAC,kC;EAAAA;",
+"lineCount":21,
+"mappings":"A;;;;;;;;;;;MAqCiB,e;;QAAA,M;EAAAA,0B;EAAAA,8B;;;QAAA,O;EAAAC,kC;EAAAA;",
 "sources":["CssResourceBase.java"],
 "names":["org.gwtproject.resources.client.CssResourceBase.<synthetic: adapt_lambda>","org.gwtproject.resources.client.CssResourceBase.<clinit>"]
 }

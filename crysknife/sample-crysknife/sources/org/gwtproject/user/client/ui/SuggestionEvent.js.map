@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SuggestionEvent.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;MAyBa,e;;;;CAAA,W;EAAAA,Q;EAAAA;OAEsB,oEAFtBA,C;;;;;;;;QAIJ,yG,CAA2BC,M,EACLC,kB;EADtBC,0B;EAAAA,sC;EAAAA,6L;EAAAA,iB;;;;;;;CAAA,sJ,CAA2BF,M,EACLC,kB;EAC3BE,4D;EACAA,+F;;;;;;CAS8B,yB;EAC9BC,iF;;;;;;;CAaY,Q;EACZC,4L;;;;;QA/BS,O;EAAAC,kC;EAAAA,+B;EAAAA;",
+"lineCount":41,
+"mappings":"A;;;;;;;;;MAyBa,e;;CAAA,W;EAAAA,Q;EAAAA;OAEsB,oEAFtBA,C;;;QAIJ,yG,mBAA2BC,M,oBACLC,kB;EADtBC,0B;EAAAA,sC;EAAAA,6L;EAAAA,iB;;;CAAA,sJ,mBAA2BF,M,oBACLC,kB;EAC3BE,4D;EACAA,+F;;;CAS8B,yB;EAC9BC,iF;;;CAaY,Q;EACZC,4L;;;QA/BS,O;EAAAC,kC;EAAAA,+B;EAAAA;",
 "sources":["SuggestionEvent.java"],
 "names":["org.gwtproject.user.client.ui.SuggestionEvent.<synthetic: ctor_js>","sender","selectedSuggestion","org.gwtproject.user.client.ui.SuggestionEvent.<synthetic: ctor_create>","org.gwtproject.user.client.ui.SuggestionEvent.<init>","org.gwtproject.user.client.ui.SuggestionEvent.getSelectedSuggestion","org.gwtproject.user.client.ui.SuggestionEvent.toString","org.gwtproject.user.client.ui.SuggestionEvent.<clinit>"]
 }

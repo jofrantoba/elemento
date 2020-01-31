@@ -16,53 +16,30 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {Event<Handler>}
   */
 class RowHoverEvent extends Event {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {org_gwtproject_user_client_Event} */
+  /**@type {org_gwtproject_user_client_Event}*/
   this.f_browserEvent__org_gwtproject_user_cellview_client_RowHoverEvent_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_hoveringRow__org_gwtproject_user_cellview_client_RowHoverEvent_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isUnHover__org_gwtproject_user_cellview_client_RowHoverEvent_ = false;
-  /** @public {HoveringScope} */
+  /**@type {HoveringScope}*/
   this.f_hoveringScope__org_gwtproject_user_cellview_client_RowHoverEvent_;
  }
- /**
-  * @param {HasHandlers} source
-  * @param {Object} hoveringRow
-  * @param {boolean} isUnHover
-  * @return {RowHoverEvent}
-  * @public
-  */
- static m_fire__org_gwtproject_event_shared_HasHandlers__org_gwtproject_dom_client_TableRowElement__boolean(source, hoveringRow, isUnHover) {
+ /** @return {RowHoverEvent} */
+ static m_fire__org_gwtproject_event_shared_HasHandlers__org_gwtproject_dom_client_TableRowElement__boolean(/** HasHandlers */ source, /** Object */ hoveringRow, /** boolean */ isUnHover) {
   RowHoverEvent.$clinit();
   return RowHoverEvent.m_fire__org_gwtproject_event_shared_HasHandlers__org_gwtproject_dom_client_TableRowElement__org_gwtproject_user_client_Event__boolean__org_gwtproject_user_cellview_client_RowHoverEvent_HoveringScope(source, hoveringRow, null, isUnHover, HoveringScope.f_UNKNOWN__org_gwtproject_user_cellview_client_RowHoverEvent_HoveringScope);
  }
- /**
-  * @param {HasHandlers} source
-  * @param {Object} hoveringRow
-  * @param {org_gwtproject_user_client_Event} browserEvent
-  * @param {boolean} isUnHover
-  * @return {RowHoverEvent}
-  * @public
-  */
- static m_fire__org_gwtproject_event_shared_HasHandlers__org_gwtproject_dom_client_TableRowElement__org_gwtproject_user_client_Event__boolean(source, hoveringRow, browserEvent, isUnHover) {
+ /** @return {RowHoverEvent} */
+ static m_fire__org_gwtproject_event_shared_HasHandlers__org_gwtproject_dom_client_TableRowElement__org_gwtproject_user_client_Event__boolean(/** HasHandlers */ source, /** Object */ hoveringRow, /** org_gwtproject_user_client_Event */ browserEvent, /** boolean */ isUnHover) {
   RowHoverEvent.$clinit();
   return RowHoverEvent.m_fire__org_gwtproject_event_shared_HasHandlers__org_gwtproject_dom_client_TableRowElement__org_gwtproject_user_client_Event__boolean__org_gwtproject_user_cellview_client_RowHoverEvent_HoveringScope(source, hoveringRow, browserEvent, isUnHover, HoveringScope.f_UNKNOWN__org_gwtproject_user_cellview_client_RowHoverEvent_HoveringScope);
  }
- /**
-  * @param {HasHandlers} source
-  * @param {Object} hoveringRow
-  * @param {org_gwtproject_user_client_Event} browserEvent
-  * @param {boolean} isUnHover
-  * @param {HoveringScope} hoveringScope
-  * @return {RowHoverEvent}
-  * @public
-  */
- static m_fire__org_gwtproject_event_shared_HasHandlers__org_gwtproject_dom_client_TableRowElement__org_gwtproject_user_client_Event__boolean__org_gwtproject_user_cellview_client_RowHoverEvent_HoveringScope(source, hoveringRow, browserEvent, isUnHover, hoveringScope) {
+ /** @return {RowHoverEvent} */
+ static m_fire__org_gwtproject_event_shared_HasHandlers__org_gwtproject_dom_client_TableRowElement__org_gwtproject_user_client_Event__boolean__org_gwtproject_user_cellview_client_RowHoverEvent_HoveringScope(/** HasHandlers */ source, /** Object */ hoveringRow, /** org_gwtproject_user_client_Event */ browserEvent, /** boolean */ isUnHover, /** HoveringScope */ hoveringScope) {
   RowHoverEvent.$clinit();
   let event = RowHoverEvent.$create__org_gwtproject_dom_client_TableRowElement__org_gwtproject_user_client_Event__boolean__org_gwtproject_user_cellview_client_RowHoverEvent_HoveringScope(hoveringRow, browserEvent, isUnHover, hoveringScope);
   if (!$Equality.$same(RowHoverEvent.f_TYPE__org_gwtproject_user_cellview_client_RowHoverEvent_, null)) {
@@ -70,164 +47,97 @@ class RowHoverEvent extends Event {
   }
   return event;
  }
- /**
-  * @return {Type<Handler>}
-  * @public
-  */
+ /** @return {Type<Handler>} */
  static m_getType__() {
   RowHoverEvent.$clinit();
   if ($Equality.$same(RowHoverEvent.f_TYPE__org_gwtproject_user_cellview_client_RowHoverEvent_, null)) {
-   RowHoverEvent.f_TYPE__org_gwtproject_user_cellview_client_RowHoverEvent_ = /**@type {!Type<Handler>} */ (Type.$create__());
+   RowHoverEvent.f_TYPE__org_gwtproject_user_cellview_client_RowHoverEvent_ = /**@type {!Type<Handler>}*/ (Type.$create__());
   }
   return RowHoverEvent.f_TYPE__org_gwtproject_user_cellview_client_RowHoverEvent_;
  }
- /**
-  * Factory method corresponding to constructor 'RowHoverEvent(TableRowElement, boolean)'.
-  * @param {Object} hoveringRow
-  * @param {boolean} isUnHover
-  * @return {!RowHoverEvent}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_TableRowElement__boolean(hoveringRow, isUnHover) {
+ //Factory method corresponding to constructor 'RowHoverEvent(TableRowElement, boolean)'.
+ /** @return {!RowHoverEvent} */
+ static $create__org_gwtproject_dom_client_TableRowElement__boolean(/** Object */ hoveringRow, /** boolean */ isUnHover) {
   RowHoverEvent.$clinit();
   let $instance = new RowHoverEvent();
   $instance.$ctor__org_gwtproject_user_cellview_client_RowHoverEvent__org_gwtproject_dom_client_TableRowElement__boolean(hoveringRow, isUnHover);
   return $instance;
  }
- /**
-  * Initialization from constructor 'RowHoverEvent(TableRowElement, boolean)'.
-  * @param {Object} hoveringRow
-  * @param {boolean} isUnHover
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_RowHoverEvent__org_gwtproject_dom_client_TableRowElement__boolean(hoveringRow, isUnHover) {
+ //Initialization from constructor 'RowHoverEvent(TableRowElement, boolean)'.
+ 
+ $ctor__org_gwtproject_user_cellview_client_RowHoverEvent__org_gwtproject_dom_client_TableRowElement__boolean(/** Object */ hoveringRow, /** boolean */ isUnHover) {
   this.$ctor__org_gwtproject_user_cellview_client_RowHoverEvent__org_gwtproject_dom_client_TableRowElement__org_gwtproject_user_client_Event__boolean__org_gwtproject_user_cellview_client_RowHoverEvent_HoveringScope(hoveringRow, null, isUnHover, HoveringScope.f_UNKNOWN__org_gwtproject_user_cellview_client_RowHoverEvent_HoveringScope);
  }
- /**
-  * Factory method corresponding to constructor 'RowHoverEvent(TableRowElement, Event, boolean)'.
-  * @param {Object} hoveringRow
-  * @param {org_gwtproject_user_client_Event} browserEvent
-  * @param {boolean} isUnHover
-  * @return {!RowHoverEvent}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_TableRowElement__org_gwtproject_user_client_Event__boolean(hoveringRow, browserEvent, isUnHover) {
+ //Factory method corresponding to constructor 'RowHoverEvent(TableRowElement, Event, boolean)'.
+ /** @return {!RowHoverEvent} */
+ static $create__org_gwtproject_dom_client_TableRowElement__org_gwtproject_user_client_Event__boolean(/** Object */ hoveringRow, /** org_gwtproject_user_client_Event */ browserEvent, /** boolean */ isUnHover) {
   RowHoverEvent.$clinit();
   let $instance = new RowHoverEvent();
   $instance.$ctor__org_gwtproject_user_cellview_client_RowHoverEvent__org_gwtproject_dom_client_TableRowElement__org_gwtproject_user_client_Event__boolean(hoveringRow, browserEvent, isUnHover);
   return $instance;
  }
- /**
-  * Initialization from constructor 'RowHoverEvent(TableRowElement, Event, boolean)'.
-  * @param {Object} hoveringRow
-  * @param {org_gwtproject_user_client_Event} browserEvent
-  * @param {boolean} isUnHover
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_RowHoverEvent__org_gwtproject_dom_client_TableRowElement__org_gwtproject_user_client_Event__boolean(hoveringRow, browserEvent, isUnHover) {
+ //Initialization from constructor 'RowHoverEvent(TableRowElement, Event, boolean)'.
+ 
+ $ctor__org_gwtproject_user_cellview_client_RowHoverEvent__org_gwtproject_dom_client_TableRowElement__org_gwtproject_user_client_Event__boolean(/** Object */ hoveringRow, /** org_gwtproject_user_client_Event */ browserEvent, /** boolean */ isUnHover) {
   this.$ctor__org_gwtproject_user_cellview_client_RowHoverEvent__org_gwtproject_dom_client_TableRowElement__org_gwtproject_user_client_Event__boolean__org_gwtproject_user_cellview_client_RowHoverEvent_HoveringScope(hoveringRow, browserEvent, isUnHover, HoveringScope.f_UNKNOWN__org_gwtproject_user_cellview_client_RowHoverEvent_HoveringScope);
  }
- /**
-  * Factory method corresponding to constructor 'RowHoverEvent(TableRowElement, Event, boolean, HoveringScope)'.
-  * @param {Object} hoveringRow
-  * @param {org_gwtproject_user_client_Event} browserEvent
-  * @param {boolean} isUnHover
-  * @param {HoveringScope} hoveringScope
-  * @return {!RowHoverEvent}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_TableRowElement__org_gwtproject_user_client_Event__boolean__org_gwtproject_user_cellview_client_RowHoverEvent_HoveringScope(hoveringRow, browserEvent, isUnHover, hoveringScope) {
+ //Factory method corresponding to constructor 'RowHoverEvent(TableRowElement, Event, boolean, HoveringScope)'.
+ /** @return {!RowHoverEvent} */
+ static $create__org_gwtproject_dom_client_TableRowElement__org_gwtproject_user_client_Event__boolean__org_gwtproject_user_cellview_client_RowHoverEvent_HoveringScope(/** Object */ hoveringRow, /** org_gwtproject_user_client_Event */ browserEvent, /** boolean */ isUnHover, /** HoveringScope */ hoveringScope) {
   RowHoverEvent.$clinit();
   let $instance = new RowHoverEvent();
   $instance.$ctor__org_gwtproject_user_cellview_client_RowHoverEvent__org_gwtproject_dom_client_TableRowElement__org_gwtproject_user_client_Event__boolean__org_gwtproject_user_cellview_client_RowHoverEvent_HoveringScope(hoveringRow, browserEvent, isUnHover, hoveringScope);
   return $instance;
  }
- /**
-  * Initialization from constructor 'RowHoverEvent(TableRowElement, Event, boolean, HoveringScope)'.
-  * @param {Object} hoveringRow
-  * @param {org_gwtproject_user_client_Event} browserEvent
-  * @param {boolean} isUnHover
-  * @param {HoveringScope} hoveringScope
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_RowHoverEvent__org_gwtproject_dom_client_TableRowElement__org_gwtproject_user_client_Event__boolean__org_gwtproject_user_cellview_client_RowHoverEvent_HoveringScope(hoveringRow, browserEvent, isUnHover, hoveringScope) {
+ //Initialization from constructor 'RowHoverEvent(TableRowElement, Event, boolean, HoveringScope)'.
+ 
+ $ctor__org_gwtproject_user_cellview_client_RowHoverEvent__org_gwtproject_dom_client_TableRowElement__org_gwtproject_user_client_Event__boolean__org_gwtproject_user_cellview_client_RowHoverEvent_HoveringScope(/** Object */ hoveringRow, /** org_gwtproject_user_client_Event */ browserEvent, /** boolean */ isUnHover, /** HoveringScope */ hoveringScope) {
   this.$ctor__org_gwtproject_event_shared_Event__();
   this.f_hoveringRow__org_gwtproject_user_cellview_client_RowHoverEvent_ = hoveringRow;
   this.f_browserEvent__org_gwtproject_user_cellview_client_RowHoverEvent_ = browserEvent;
   this.f_isUnHover__org_gwtproject_user_cellview_client_RowHoverEvent_ = isUnHover;
   this.f_hoveringScope__org_gwtproject_user_cellview_client_RowHoverEvent_ = hoveringScope;
  }
- /**
-  * @override
-  * @return {Type<Handler>}
-  * @public
-  */
+ /** @override @return {Type<Handler>} */
  m_getAssociatedType__() {
   return RowHoverEvent.f_TYPE__org_gwtproject_user_cellview_client_RowHoverEvent_;
  }
- /**
-  * @return {org_gwtproject_user_client_Event}
-  * @public
-  */
+ /** @return {org_gwtproject_user_client_Event} */
  m_getBrowserEvent__() {
   return this.f_browserEvent__org_gwtproject_user_cellview_client_RowHoverEvent_;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getHoveringRow__() {
   return this.f_hoveringRow__org_gwtproject_user_cellview_client_RowHoverEvent_;
  }
- /**
-  * @return {HoveringScope}
-  * @public
-  */
+ /** @return {HoveringScope} */
  m_getHoveringScope__() {
   return this.f_hoveringScope__org_gwtproject_user_cellview_client_RowHoverEvent_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isUnHover__() {
   return this.f_isUnHover__org_gwtproject_user_cellview_client_RowHoverEvent_;
  }
- /**
-  * @param {Handler} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_user_cellview_client_RowHoverEvent_Handler(handler) {
+ 
+ m_dispatch__org_gwtproject_user_cellview_client_RowHoverEvent_Handler(/** Handler */ handler) {
   handler.m_onRowHover__org_gwtproject_user_cellview_client_RowHoverEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_user_cellview_client_RowHoverEvent_Handler(/**@type {Handler} */ ($Casts.$to(arg0, Handler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_user_cellview_client_RowHoverEvent_Handler(/**@type {Handler}*/ ($Casts.$to(arg0, Handler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RowHoverEvent.$clinit = () =>{};
   RowHoverEvent.$loadModules();
   Event.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof RowHoverEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   Type = goog.module.get('org.gwtproject.event.shared.Event.Type$impl');
@@ -239,7 +149,7 @@ class RowHoverEvent extends Event {
 }
 $Util.$setClassMetadata(RowHoverEvent, 'org.gwtproject.user.cellview.client.RowHoverEvent');
 
-/** @public {Type<Handler>} */
+/**@type {Type<Handler>}*/
 RowHoverEvent.f_TYPE__org_gwtproject_user_cellview_client_RowHoverEvent_;
 
 exports = RowHoverEvent; 

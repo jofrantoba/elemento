@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Window$ScrollEvent.impl.java.js",
-"lineCount":129,
-"mappings":"A;;;;;;;;;;;;MA4YsB,W;;;;CAAA,W;EAAAA,Q;EAAAA;OAQA,mEARAA,K;EAAAA;OASA,kEATAA,K;;;;;;QAIgB,W;EAAAC,sB;EAChCA,iF;;;;;;;;QAYM,iB,CAAgBC,U,EAAgBC,S;EAAhCC,sB;EAAAA,kC;EAAAA,uG;EAAAA,iB;;;;;;;CAAA,qE,CAAgBF,U,EAAgBC,S;EAAhCE,kD;EACNA,sF;EACAA,oF;;;;;;;CAI+B,qB;EAC/BC,iF;;;;;;CAQS,iB;EACTC,gF;;;;;;CAQS,gB;EACTC,+E;;;;;;CAIa,kE,CAAuBC,O;EACpCC,qF;;;;;;;;CA/CgB,4B;EAAAA,uI;;;;;;QAClB,gE;EAAAC,0G;;;;;QADkB,O;EAAAC,8B;EAAAA,2B;EAAAA,gB;EAClBA,kI;;;;;;;;;;;;;;;;;;;;;;AADkB;;",
+"lineCount":87,
+"mappings":"A;;;;;;;;;;;;MA4YsB,W;;CAAA,W;EAAAA,Q;EAAAA;OAQA,mEARAA,K;EAAAA;OASA,kEATAA,K;;;QAIgB,W;EAAAC,sB;EAChCA,iF;;;QAYM,iB,eAAgBC,U,gBAAgBC,S;EAAhCC,sB;EAAAA,kC;EAAAA,uG;EAAAA,iB;;;CAAA,qE,eAAgBF,U,gBAAgBC,S;EAAhCE,kD;EACNA,sF;EACAA,oF;;;CAI+B,qB;EAC/BC,iF;;;CAQS,iB;EACTC,gF;;;CAQS,gB;EACTC,+E;;;CAIa,kE,sBAAuBC,O;EACpCC,qF;;;;CA/CgB,4B;EAAAA,sI;;;QAClB,gE;EAAAC,0G;;;QADkB,O;EAAAC,8B;EAAAA,2B;EAAAA,gB;EAClBA,iI;;;;;;;;;;;;;;;;AADkB;;",
 "sources":["Window.java"],
 "names":["org.gwtproject.user.window.client.Window$ScrollEvent.<synthetic: ctor_js>","org.gwtproject.user.window.client.Window$ScrollEvent.getType","scrollLeft","scrollTop","org.gwtproject.user.window.client.Window$ScrollEvent.<synthetic: ctor_create>","org.gwtproject.user.window.client.Window$ScrollEvent.<init>","org.gwtproject.user.window.client.Window$ScrollEvent.getAssociatedType","org.gwtproject.user.window.client.Window$ScrollEvent.getScrollLeft","org.gwtproject.user.window.client.Window$ScrollEvent.getScrollTop","handler","org.gwtproject.user.window.client.Window$ScrollEvent.dispatch","org.gwtproject.user.window.client.Window$ScrollEvent.<synthetic: getter>","org.gwtproject.user.window.client.Window$ScrollEvent.<clinit>"]
 }

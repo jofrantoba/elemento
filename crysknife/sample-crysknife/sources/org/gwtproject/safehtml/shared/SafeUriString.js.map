@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SafeUriString.impl.java.js",
-"lineCount":108,
-"mappings":"A;;;;;;;;;;;;;;;MA6BM,a;;;;CAAA,W;EAAAA,Q;EAAAA;OACsB,oDADtBA,C;;;;;;;;QAWJ,yB,CAAgCC,G;EAAhCC,wB;EAAAA,oC;EAAAA,qF;EAAAA,iB;;;;;;;CAAA,qE,CAAgCD,G;EAAhCE,iC;EACEA;GACEA,sFADFA;G;EAGAA,gE;;;;;;;QAOM,S;EAAAD,oC;EAAAA,kE;EAAAA,iB;;;;;;CAAA,qD;EAAAC,iC;;;;;;;CAOM,Y;EACZC,iE;;;;;;;;CAOa,M,CAAcC,G;EAC3BC;GACEA,aADFA;G;EAGAA,2L;;;;;;;CAOS,Q;EACTC,0G;;;;;;;CAIY,Q;EACZC,uF;;;;;QAtDE,O;EAAAC,gC;EAAAA,6B;EAAAA;",
+"lineCount":75,
+"mappings":"A;;;;;;;;;;;;;;;MA6BM,a;;CAAA,W;EAAAA,Q;EAAAA;OACsB,oDADtBA,C;;;;QAWJ,yB,gBAAgCC,G;EAAhCC,wB;EAAAA,oC;EAAAA,qF;EAAAA,iB;;;;CAAA,qE,gBAAgCD,G;EAAhCE,iC;EACEA;GACEA,sFADFA;G;EAGAA,gE;;;;QAOM,S;EAAAD,oC;EAAAA,kE;EAAAA,iB;;;;CAAA,qD;EAAAC,iC;;;CAOM,Y;EACZC,iE;;;CAOa,M,UAAcC,G;EAC3BC;GACEA,aADFA;G;EAGAA,0L;;;CAOS,Q;EACTC,0G;;;CAIY,Q;EACZC,uF;;;QAtDE,O;EAAAC,gC;EAAAA,6B;EAAAA;",
 "sources":["SafeUriString.java"],
 "names":["org.gwtproject.safehtml.shared.SafeUriString.<synthetic: ctor_js>","uri","org.gwtproject.safehtml.shared.SafeUriString.<synthetic: ctor_create>","org.gwtproject.safehtml.shared.SafeUriString.<init>","org.gwtproject.safehtml.shared.SafeUriString.asString","obj","org.gwtproject.safehtml.shared.SafeUriString.equals","org.gwtproject.safehtml.shared.SafeUriString.hashCode","org.gwtproject.safehtml.shared.SafeUriString.toString","org.gwtproject.safehtml.shared.SafeUriString.<clinit>"]
 }

@@ -10,44 +10,27 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.resources.client.CssRes
  * @extends {ResourcePrototype}
  */
 class CssResourceBase {
- /**
-  * @param {?function():?string} fn
-  * @return {CssResourceBase}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {CssResourceBase} */
+ static $adapt(/** ?function():?string */ fn) {
   CssResourceBase.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CssResourceBase.$clinit = () =>{};
   CssResourceBase.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ResourcePrototype.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_resources_client_CssResourceBase = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ResourcePrototype.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_resources_client_CssResourceBase = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_resources_client_CssResourceBase;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.resources.client.CssResourceBase.$LambdaAdaptor$impl');
  }

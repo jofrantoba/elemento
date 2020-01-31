@@ -11,44 +11,27 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.safehtml.shared.annotat
  * @extends {Annotation}
  */
 class IsSafeHtml {
- /**
-  * @param {?function():Class<?>} fn
-  * @return {IsSafeHtml}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {IsSafeHtml} */
+ static $adapt(/** ?function():Class<?> */ fn) {
   IsSafeHtml.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   IsSafeHtml.$clinit = () =>{};
   IsSafeHtml.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_safehtml_shared_annotations_IsSafeHtml = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_safehtml_shared_annotations_IsSafeHtml = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_safehtml_shared_annotations_IsSafeHtml;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.safehtml.shared.annotations.IsSafeHtml.$LambdaAdaptor$impl');
  }

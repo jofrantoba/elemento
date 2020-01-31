@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ProgressbarRole.impl.java.js",
-"lineCount":16,
-"mappings":"A;;;;;;;;;MA2BiB,e;;;;QAAA,O;EAAAA,kC;EAAAA;",
+"lineCount":14,
+"mappings":"A;;;;;;;;;MA2BiB,e;;QAAA,O;EAAAA,kC;EAAAA;",
 "sources":["ProgressbarRole.java"],
 "names":["org.gwtproject.aria.client.ProgressbarRole.<clinit>"]
 }

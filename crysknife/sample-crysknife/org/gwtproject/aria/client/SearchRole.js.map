@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SearchRole.impl.java.js",
-"lineCount":16,
-"mappings":"A;;;;;;;;;MA0BiB,U;;;;QAAA,O;EAAAA,6B;EAAAA;",
+"lineCount":14,
+"mappings":"A;;;;;;;;;MA0BiB,U;;QAAA,O;EAAAA,6B;EAAAA;",
 "sources":["SearchRole.java"],
 "names":["org.gwtproject.aria.client.SearchRole.<clinit>"]
 }

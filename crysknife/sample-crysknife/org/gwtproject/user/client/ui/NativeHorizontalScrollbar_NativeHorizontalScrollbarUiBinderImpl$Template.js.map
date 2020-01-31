@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl$Template.impl.java.js",
-"lineCount":39,
-"mappings":"A;;;;;;;;;;;;MAOY,Q;;;;;;;;;;;CACgC,iG,CAAaA,I,EAAaC,I,EAAaC,I,EAAaC,I,EAAaC,I;;;;;;QADjG,M;EAAAC,mB;EAAAA,8B;;;;;QAAA,O;EAAAC,2B;EAAAA;",
+"lineCount":24,
+"mappings":"A;;;;;;;;;;;;MAOY,Q;;CACgC,iG,gBAAaA,I,iBAAaC,I,iBAAaC,I,iBAAaC,I,iBAAaC,I;;QADjG,M;EAAAC,mB;EAAAA,8B;;;QAAA,O;EAAAC,2B;EAAAA;",
 "sources":["NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl.java"],
 "names":["arg0","arg1","arg2","arg3","arg4","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl$Template.<synthetic: adapt_lambda>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl$Template.<clinit>"]
 }

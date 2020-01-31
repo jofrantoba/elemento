@@ -7,61 +7,40 @@ let CurrencyList = goog.forwardDeclare('org.gwtproject.i18n.client.CurrencyList$
 let CurrencyList__ = goog.forwardDeclare('org.gwtproject.i18n.client.CurrencyList_$impl');
 
 class CurrencyListInstance extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!CurrencyListInstance}
-  * @public
-  */
+ /** @return {!CurrencyListInstance} */
  static $create__() {
   let $instance = new CurrencyListInstance();
   $instance.$ctor__org_gwtproject_i18n_client_CurrencyList_CurrencyListInstance__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_i18n_client_CurrencyList_CurrencyListInstance__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {CurrencyList}
-  * @public
-  */
+ /** @return {CurrencyList} */
  static get f_instance__org_gwtproject_i18n_client_CurrencyList_CurrencyListInstance_() {
   return (CurrencyListInstance.$clinit(), CurrencyListInstance.$f_instance__org_gwtproject_i18n_client_CurrencyList_CurrencyListInstance_);
  }
- /**
-  * @param {CurrencyList} value
-  * @public
-  */
- static set f_instance__org_gwtproject_i18n_client_CurrencyList_CurrencyListInstance_(value) {
+ 
+ static set f_instance__org_gwtproject_i18n_client_CurrencyList_CurrencyListInstance_(/** CurrencyList */ value) {
   (CurrencyListInstance.$clinit(), CurrencyListInstance.$f_instance__org_gwtproject_i18n_client_CurrencyList_CurrencyListInstance_ = value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CurrencyListInstance.$clinit = () =>{};
   CurrencyListInstance.$loadModules();
   j_l_Object.$clinit();
   CurrencyListInstance.$f_instance__org_gwtproject_i18n_client_CurrencyList_CurrencyListInstance_ = CurrencyList__.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CurrencyListInstance;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   CurrencyList__ = goog.module.get('org.gwtproject.i18n.client.CurrencyList_$impl');
  }
@@ -69,7 +48,7 @@ class CurrencyListInstance extends j_l_Object {
 }
 $Util.$setClassMetadata(CurrencyListInstance, 'org.gwtproject.i18n.client.CurrencyList$CurrencyListInstance');
 
-/** @private {CurrencyList} */
+/**@private {CurrencyList}*/
 CurrencyListInstance.$f_instance__org_gwtproject_i18n_client_CurrencyList_CurrencyListInstance_;
 
 exports = CurrencyListInstance; 

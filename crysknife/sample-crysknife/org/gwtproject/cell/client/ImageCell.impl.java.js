@@ -15,69 +15,43 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {AbstractCell<?string>}
   */
 class ImageCell extends AbstractCell {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!ImageCell}
-  * @public
-  */
+ /** @return {!ImageCell} */
  static $create__() {
   ImageCell.$clinit();
   let $instance = new ImageCell();
   $instance.$ctor__org_gwtproject_cell_client_ImageCell__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_cell_client_ImageCell__() {
-  this.$ctor__org_gwtproject_cell_client_AbstractCell__arrayOf_java_lang_String(/**@type {!Array<?string>} */ ($Arrays.$init([], j_l_String)));
+  this.$ctor__org_gwtproject_cell_client_AbstractCell__arrayOf_java_lang_String(/**@type {!Array<?string>}*/ ($Arrays.$init([], j_l_String)));
  }
- /**
-  * @param {Context} context
-  * @param {?string} value
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_String__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, value, sb) {
+ 
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_String__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ context, /** ?string */ value, /** SafeHtmlBuilder */ sb) {
   if (!$Equality.$same(value, null)) {
    sb.m_append__org_gwtproject_safehtml_shared_SafeHtml(Template.f_INSTANCE__org_gwtproject_cell_client_ImageCell_Template.m_img__java_lang_String(value));
   }
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Context} arg0
-  * @param {*} arg1
-  * @param {SafeHtmlBuilder} arg2
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, arg1, arg2) {
-  this.m_render__org_gwtproject_cell_client_Cell_Context__java_lang_String__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, /**@type {?string} */ ($Casts.$to(arg1, j_l_String)), arg2);
+ //Bridge method.
+ /** @override */
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ arg0, /** * */ arg1, /** SafeHtmlBuilder */ arg2) {
+  this.m_render__org_gwtproject_cell_client_Cell_Context__java_lang_String__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, /**@type {?string}*/ ($Casts.$to(arg1, j_l_String)), arg2);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ImageCell.$clinit = () =>{};
   ImageCell.$loadModules();
   AbstractCell.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ImageCell;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

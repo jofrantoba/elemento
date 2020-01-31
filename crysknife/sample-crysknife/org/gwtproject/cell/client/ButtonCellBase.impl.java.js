@@ -29,116 +29,74 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {HasEnabled}
   */
 class ButtonCellBase extends AbstractCell {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {number} */
+  /**@type {number}*/
   this.f_accessKey__org_gwtproject_cell_client_ButtonCellBase_ = 0 /* '\u0000' */;
-  /** @public {Appearance<C>} */
+  /**@type {Appearance<C>}*/
   this.f_appearance__org_gwtproject_cell_client_ButtonCellBase_;
-  /** @public {Decoration} */
+  /**@type {Decoration}*/
   this.f_decoration__org_gwtproject_cell_client_ButtonCellBase_;
-  /** @public {ImageResource} */
+  /**@type {ImageResource}*/
   this.f_icon__org_gwtproject_cell_client_ButtonCellBase_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isCollapsedLeft__org_gwtproject_cell_client_ButtonCellBase_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isCollapsedRight__org_gwtproject_cell_client_ButtonCellBase_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isEnabled__org_gwtproject_cell_client_ButtonCellBase_ = false;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_tabIndex__org_gwtproject_cell_client_ButtonCellBase_ = 0;
  }
- /**
-  * @template C
-  * @param {Appearance<C>} appearance
-  * @return {!ButtonCellBase<C>}
-  * @public
-  */
- static $create__org_gwtproject_cell_client_ButtonCellBase_Appearance(appearance) {
+ /** @template C @return {!ButtonCellBase<C>} */
+ static $create__org_gwtproject_cell_client_ButtonCellBase_Appearance(/** Appearance<C> */ appearance) {
   ButtonCellBase.$clinit();
   let $instance = new ButtonCellBase();
   $instance.$ctor__org_gwtproject_cell_client_ButtonCellBase__org_gwtproject_cell_client_ButtonCellBase_Appearance(appearance);
   return $instance;
  }
- /**
-  * @param {Appearance<C>} appearance
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_ButtonCellBase__org_gwtproject_cell_client_ButtonCellBase_Appearance(appearance) {
-  this.$ctor__org_gwtproject_cell_client_AbstractCell__arrayOf_java_lang_String(/**@type {!Array<?string>} */ ($Arrays.$init([BrowserEvents.f_CLICK__org_gwtproject_dom_client_BrowserEvents, BrowserEvents.f_KEYDOWN__org_gwtproject_dom_client_BrowserEvents, BrowserEvents.f_MOUSEDOWN__org_gwtproject_dom_client_BrowserEvents], j_l_String)));
+ 
+ $ctor__org_gwtproject_cell_client_ButtonCellBase__org_gwtproject_cell_client_ButtonCellBase_Appearance(/** Appearance<C> */ appearance) {
+  this.$ctor__org_gwtproject_cell_client_AbstractCell__arrayOf_java_lang_String(/**@type {!Array<?string>}*/ ($Arrays.$init([BrowserEvents.f_CLICK__org_gwtproject_dom_client_BrowserEvents, BrowserEvents.f_KEYDOWN__org_gwtproject_dom_client_BrowserEvents, BrowserEvents.f_MOUSEDOWN__org_gwtproject_dom_client_BrowserEvents], j_l_String)));
   this.$init___$p_org_gwtproject_cell_client_ButtonCellBase();
   this.f_appearance__org_gwtproject_cell_client_ButtonCellBase_ = appearance;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getAccessKey__() {
   return this.f_accessKey__org_gwtproject_cell_client_ButtonCellBase_;
  }
- /**
-  * @return {Decoration}
-  * @public
-  */
+ /** @return {Decoration} */
  m_getDecoration__() {
   return this.f_decoration__org_gwtproject_cell_client_ButtonCellBase_;
  }
- /**
-  * @return {ImageResource}
-  * @public
-  */
+ /** @return {ImageResource} */
  m_getIcon__() {
   return this.f_icon__org_gwtproject_cell_client_ButtonCellBase_;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getTabIndex__() {
   return this.f_tabIndex__org_gwtproject_cell_client_ButtonCellBase_;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isCollapseLeft__() {
   return this.f_isCollapsedLeft__org_gwtproject_cell_client_ButtonCellBase_;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isCollapseRight__() {
   return this.f_isCollapsedRight__org_gwtproject_cell_client_ButtonCellBase_;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isEnabled__() {
   return this.f_isEnabled__org_gwtproject_cell_client_ButtonCellBase_;
  }
- /**
-  * @override
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {C} value
-  * @param {Object} event
-  * @param {ValueUpdater<C>} valueUpdater
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, parent, value, event, valueUpdater) {
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(/** Context */ context, /** Object */ parent, /** C */ value, /** Object */ event, /** ValueUpdater<C> */ valueUpdater) {
   if (!this.m_isEnabled__()) {
    return;
   }
   super.m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, parent, value, event, valueUpdater);
-  let target = /**@type {Object} */ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(NativeEvent_$Overlay.m_getEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(event)), Element_$Overlay));
+  let target = /**@type {Object}*/ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(NativeEvent_$Overlay.m_getEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(event)), Element_$Overlay));
   if (!Node_$Overlay.m_isOrHasChild__$devirt__org_gwtproject_dom_client_Node__org_gwtproject_dom_client_Node(Element_$Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(parent), target)) {
    return;
   }
@@ -151,117 +109,65 @@ class ButtonCellBase extends AbstractCell {
    NativeEvent_$Overlay.m_preventDefault__$devirt__org_gwtproject_dom_client_NativeEvent(event);
   }
  }
- /**
-  * @override
-  * @param {Context} context
-  * @param {C} value
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, value, sb) {
+ /** @override */
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ context, /** C */ value, /** SafeHtmlBuilder */ sb) {
   this.f_appearance__org_gwtproject_cell_client_ButtonCellBase_.m_render__org_gwtproject_cell_client_ButtonCellBase__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(this, context, value, sb);
  }
- /**
-  * @param {number} key
-  * @public
-  */
- m_setAccessKey__char(key) {
+ 
+ m_setAccessKey__char(/** number */ key) {
   this.f_accessKey__org_gwtproject_cell_client_ButtonCellBase_ = key;
  }
- /**
-  * @override
-  * @param {boolean} isCollapsed
-  * @public
-  */
- m_setCollapseLeft__boolean(isCollapsed) {
+ /** @override */
+ m_setCollapseLeft__boolean(/** boolean */ isCollapsed) {
   this.f_isCollapsedLeft__org_gwtproject_cell_client_ButtonCellBase_ = isCollapsed;
  }
- /**
-  * @override
-  * @param {boolean} isCollapsed
-  * @public
-  */
- m_setCollapseRight__boolean(isCollapsed) {
+ /** @override */
+ m_setCollapseRight__boolean(/** boolean */ isCollapsed) {
   this.f_isCollapsedRight__org_gwtproject_cell_client_ButtonCellBase_ = isCollapsed;
  }
- /**
-  * @param {Decoration} decoration
-  * @public
-  */
- m_setDecoration__org_gwtproject_cell_client_ButtonCellBase_Decoration(decoration) {
+ 
+ m_setDecoration__org_gwtproject_cell_client_ButtonCellBase_Decoration(/** Decoration */ decoration) {
   this.f_decoration__org_gwtproject_cell_client_ButtonCellBase_ = decoration;
  }
- /**
-  * @override
-  * @param {boolean} isEnabled
-  * @public
-  */
- m_setEnabled__boolean(isEnabled) {
+ /** @override */
+ m_setEnabled__boolean(/** boolean */ isEnabled) {
   this.f_isEnabled__org_gwtproject_cell_client_ButtonCellBase_ = isEnabled;
  }
- /**
-  * @param {Object} parent
-  * @param {boolean} focused
-  * @public
-  */
- m_setFocus__org_gwtproject_dom_client_Element__boolean(parent, focused) {
+ 
+ m_setFocus__org_gwtproject_dom_client_Element__boolean(/** Object */ parent, /** boolean */ focused) {
   this.f_appearance__org_gwtproject_cell_client_ButtonCellBase_.m_setFocus__org_gwtproject_dom_client_Element__boolean(parent, focused);
  }
- /**
-  * @param {ImageResource} icon
-  * @public
-  */
- m_setIcon__org_gwtproject_resources_client_ImageResource(icon) {
+ 
+ m_setIcon__org_gwtproject_resources_client_ImageResource(/** ImageResource */ icon) {
   this.f_icon__org_gwtproject_cell_client_ButtonCellBase_ = icon;
  }
- /**
-  * @param {number} tabIndex
-  * @public
-  */
- m_setTabIndex__int(tabIndex) {
+ 
+ m_setTabIndex__int(/** number */ tabIndex) {
   this.f_tabIndex__org_gwtproject_cell_client_ButtonCellBase_ = tabIndex;
  }
- /**
-  * @override
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {C} value
-  * @param {Object} event
-  * @param {ValueUpdater<C>} valueUpdater
-  * @public
-  */
- m_onEnterKeyDown__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, parent, value, event, valueUpdater) {
+ /** @override */
+ m_onEnterKeyDown__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(/** Context */ context, /** Object */ parent, /** C */ value, /** Object */ event, /** ValueUpdater<C> */ valueUpdater) {
   if (!$Equality.$same(valueUpdater, null)) {
    valueUpdater.m_update__java_lang_Object(value);
   }
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_cell_client_ButtonCellBase() {
   this.f_decoration__org_gwtproject_cell_client_ButtonCellBase_ = Decoration.f_DEFAULT__org_gwtproject_cell_client_ButtonCellBase_Decoration;
   this.f_isEnabled__org_gwtproject_cell_client_ButtonCellBase_ = true;
   this.f_tabIndex__org_gwtproject_cell_client_ButtonCellBase_ = -1;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ButtonCellBase.$clinit = () =>{};
   ButtonCellBase.$loadModules();
   AbstractCell.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ButtonCellBase;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

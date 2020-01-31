@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DisclosurePanel$DefaultHeader$1.impl.java.js",
-"lineCount":69,
-"mappings":"A;;;;;;;;;;;;;MAsNwB,E;;;;CAAA,W;EAAAA,Q;EAAAA;oF;;;;;;;QAAA,oE;EAAAC,a;EAAAA,yB;EAAAA,yJ;EAAAA,iB;;;;;;CAAA,iI;EAAAC,gG;EAAAA,iC;;;;;;;CAEH,a;EACXC,uL;;;;;;;;CAGU,2D,CAAoBC,I,EAAYC,K;EAC1CC;GACEA,oLADFA;;GAGEA,sLAHFA;G;;;;;QAPc,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":49,
+"mappings":"A;;;;;;;;;;;;;MAsNwB,E;;CAAA,W;EAAAA,Q;EAAAA;oF;;;QAAA,oE;EAAAC,a;EAAAA,yB;EAAAA,yJ;EAAAA,iB;;;CAAA,iI;EAAAC,gG;EAAAA,iC;;;CAEH,a;EACXC,uL;;;CAGU,2D,gBAAoBC,I,eAAYC,K;EAC1CC;GACEA,oLADFA;;GAGEA,sLAHFA;G;;;QAPc,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["DisclosurePanel.java"],
 "names":["org.gwtproject.user.client.ui.DisclosurePanel$DefaultHeader$1.<synthetic: ctor_js>","org.gwtproject.user.client.ui.DisclosurePanel$DefaultHeader$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.DisclosurePanel$DefaultHeader$1.<init>","org.gwtproject.user.client.ui.DisclosurePanel$DefaultHeader$1.makeImage","open","image","org.gwtproject.user.client.ui.DisclosurePanel$DefaultHeader$1.updateImage","org.gwtproject.user.client.ui.DisclosurePanel$DefaultHeader$1.<clinit>"]
 }

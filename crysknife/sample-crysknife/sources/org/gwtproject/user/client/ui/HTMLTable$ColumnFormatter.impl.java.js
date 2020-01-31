@@ -14,105 +14,60 @@ let UIObject = goog.forwardDeclare('org.gwtproject.user.client.ui.UIObject$impl'
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class ColumnFormatter extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {HTMLTable} */
+  /**@type {HTMLTable}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_columnGroup__org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter;
  }
- /**
-  * @param {HTMLTable} $outer_this
-  * @return {!ColumnFormatter}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_HTMLTable($outer_this) {
+ /** @return {!ColumnFormatter} */
+ static $create__org_gwtproject_user_client_ui_HTMLTable(/** HTMLTable */ $outer_this) {
   ColumnFormatter.$clinit();
   let $instance = new ColumnFormatter();
   $instance.$ctor__org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter__org_gwtproject_user_client_ui_HTMLTable($outer_this);
   return $instance;
  }
- /**
-  * @param {HTMLTable} $outer_this
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter__org_gwtproject_user_client_ui_HTMLTable($outer_this) {
+ 
+ $ctor__org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter__org_gwtproject_user_client_ui_HTMLTable(/** HTMLTable */ $outer_this) {
   this.f_$outer_this__org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter = $outer_this;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {number} col
-  * @param {?string} styleName
-  * @public
-  */
- m_addStyleName__int__java_lang_String(col, styleName) {
+ 
+ m_addStyleName__int__java_lang_String(/** number */ col, /** ?string */ styleName) {
   UIObject.m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String__boolean(this.m_ensureColumn__int_$p_org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter(col), styleName, true);
  }
- /**
-  * @param {number} column
-  * @return {Object}
-  * @public
-  */
- m_getElement__int(column) {
+ /** @return {Object} */
+ m_getElement__int(/** number */ column) {
   return this.m_ensureColumn__int_$p_org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter(column);
  }
- /**
-  * @param {number} column
-  * @return {?string}
-  * @public
-  */
- m_getStyleName__int(column) {
+ /** @return {?string} */
+ m_getStyleName__int(/** number */ column) {
   return UIObject.m_getStyleName__org_gwtproject_dom_client_Element(this.m_ensureColumn__int_$p_org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter(column));
  }
- /**
-  * @param {number} column
-  * @return {?string}
-  * @public
-  */
- m_getStylePrimaryName__int(column) {
+ /** @return {?string} */
+ m_getStylePrimaryName__int(/** number */ column) {
   return UIObject.m_getStylePrimaryName__org_gwtproject_dom_client_Element(this.m_ensureColumn__int_$p_org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter(column));
  }
- /**
-  * @param {number} column
-  * @param {?string} styleName
-  * @public
-  */
- m_removeStyleName__int__java_lang_String(column, styleName) {
+ 
+ m_removeStyleName__int__java_lang_String(/** number */ column, /** ?string */ styleName) {
   UIObject.m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String__boolean(this.m_ensureColumn__int_$p_org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter(column), styleName, false);
  }
- /**
-  * @param {number} column
-  * @param {?string} styleName
-  * @public
-  */
- m_setStyleName__int__java_lang_String(column, styleName) {
+ 
+ m_setStyleName__int__java_lang_String(/** number */ column, /** ?string */ styleName) {
   UIObject.m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String(this.m_ensureColumn__int_$p_org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter(column), styleName);
  }
- /**
-  * @param {number} column
-  * @param {?string} styleName
-  * @public
-  */
- m_setStylePrimaryName__int__java_lang_String(column, styleName) {
+ 
+ m_setStylePrimaryName__int__java_lang_String(/** number */ column, /** ?string */ styleName) {
   UIObject.m_setStylePrimaryName__org_gwtproject_dom_client_Element__java_lang_String(this.m_ensureColumn__int_$p_org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter(column), styleName);
  }
- /**
-  * @param {number} column
-  * @param {?string} width
-  * @public
-  */
- m_setWidth__int__java_lang_String(column, width) {
+ 
+ m_setWidth__int__java_lang_String(/** number */ column, /** ?string */ width) {
   $Overlay.m_setPropertyString__$devirt__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(this.m_ensureColumn__int_$p_org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter(column), "width", width);
  }
- /**
-  * @param {number} columns
-  * @param {boolean} growOnly
-  * @public
-  */
- m_resizeColumnGroup__int__boolean_$pp_org_gwtproject_user_client_ui(columns, growOnly) {
+ 
+ m_resizeColumnGroup__int__boolean_$pp_org_gwtproject_user_client_ui(/** number */ columns, /** boolean */ growOnly) {
   columns = Math.max(columns, 1);
   let num = Node_$Overlay.m_getChildCount__$devirt__org_gwtproject_dom_client_Node(this.f_columnGroup__org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter);
   if (num < columns) {
@@ -125,20 +80,14 @@ class ColumnFormatter extends j_l_Object {
    }
   }
  }
- /**
-  * @param {number} col
-  * @return {Object}
-  * @public
-  */
- m_ensureColumn__int_$p_org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter(col) {
+ /** @return {Object} */
+ m_ensureColumn__int_$p_org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter(/** number */ col) {
   this.f_$outer_this__org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter.m_prepareColumn__int(col);
   this.m_prepareColumnGroup___$p_org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter();
   this.m_resizeColumnGroup__int__boolean_$pp_org_gwtproject_user_client_ui(col + 1, true);
-  return /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Node_$Overlay.m_getChild__$devirt__org_gwtproject_dom_client_Node__int(this.f_columnGroup__org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter, col)), $Overlay));
+  return /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Node_$Overlay.m_getChild__$devirt__org_gwtproject_dom_client_Node__int(this.f_columnGroup__org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter, col)), $Overlay));
  }
- /**
-  * @public
-  */
+ 
  m_prepareColumnGroup___$p_org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter() {
   if ($Equality.$same(this.f_columnGroup__org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter, null)) {
    this.f_columnGroup__org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter = DOM.m_createElement__java_lang_String("colgroup");
@@ -146,25 +95,17 @@ class ColumnFormatter extends j_l_Object {
    DOM.m_appendChild__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(this.f_columnGroup__org_gwtproject_user_client_ui_HTMLTable_ColumnFormatter, DOM.m_createElement__java_lang_String("col"));
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ColumnFormatter.$clinit = () =>{};
   ColumnFormatter.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ColumnFormatter;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   JavaScriptObject_$Overlay = goog.module.get('org.gwtproject.core.client.JavaScriptObject.$Overlay$impl');

@@ -12,105 +12,56 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {TableColBuilder}
   */
 class HtmlTableColBuilder extends HtmlElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @param {boolean} group
-  * @return {!HtmlTableColBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl__boolean(delegate, group) {
+ /** @return {!HtmlTableColBuilder} */
+ static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl__boolean(/** HtmlBuilderImpl */ delegate, /** boolean */ group) {
   HtmlTableColBuilder.$clinit();
   let $instance = new HtmlTableColBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_shared_HtmlTableColBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl__boolean(delegate, group);
   return $instance;
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @param {boolean} group
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_shared_HtmlTableColBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl__boolean(delegate, group) {
+ 
+ $ctor__org_gwtproject_dom_builder_shared_HtmlTableColBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl__boolean(/** HtmlBuilderImpl */ delegate, /** boolean */ group) {
   this.$ctor__org_gwtproject_dom_builder_shared_HtmlElementBuilderBase__org_gwtproject_dom_builder_shared_HtmlBuilderImpl__boolean(delegate, !group);
  }
- /**
-  * @override
-  * @param {?string} align
-  * @return {TableColBuilder}
-  * @public
-  */
- m_align__java_lang_String(align) {
-  return /**@type {TableColBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("align", align), TableColBuilder));
+ /** @override @return {TableColBuilder} */
+ m_align__java_lang_String(/** ?string */ align) {
+  return /**@type {TableColBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("align", align), TableColBuilder));
  }
- /**
-  * @override
-  * @param {?string} ch
-  * @return {TableColBuilder}
-  * @public
-  */
- m_ch__java_lang_String(ch) {
-  return /**@type {TableColBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("ch", ch), TableColBuilder));
+ /** @override @return {TableColBuilder} */
+ m_ch__java_lang_String(/** ?string */ ch) {
+  return /**@type {TableColBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("ch", ch), TableColBuilder));
  }
- /**
-  * @override
-  * @param {?string} chOff
-  * @return {TableColBuilder}
-  * @public
-  */
- m_chOff__java_lang_String(chOff) {
-  return /**@type {TableColBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("chOff", chOff), TableColBuilder));
+ /** @override @return {TableColBuilder} */
+ m_chOff__java_lang_String(/** ?string */ chOff) {
+  return /**@type {TableColBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("chOff", chOff), TableColBuilder));
  }
- /**
-  * @override
-  * @param {number} span
-  * @return {TableColBuilder}
-  * @public
-  */
- m_span__int(span) {
-  return /**@type {TableColBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__int_$pp_org_gwtproject_dom_builder_shared("span", span), TableColBuilder));
+ /** @override @return {TableColBuilder} */
+ m_span__int(/** number */ span) {
+  return /**@type {TableColBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__int_$pp_org_gwtproject_dom_builder_shared("span", span), TableColBuilder));
  }
- /**
-  * @override
-  * @param {?string} vAlign
-  * @return {TableColBuilder}
-  * @public
-  */
- m_vAlign__java_lang_String(vAlign) {
-  return /**@type {TableColBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("vAlign", vAlign), TableColBuilder));
+ /** @override @return {TableColBuilder} */
+ m_vAlign__java_lang_String(/** ?string */ vAlign) {
+  return /**@type {TableColBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("vAlign", vAlign), TableColBuilder));
  }
- /**
-  * @override
-  * @param {?string} width
-  * @return {TableColBuilder}
-  * @public
-  */
- m_width__java_lang_String(width) {
-  return /**@type {TableColBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("width", width), TableColBuilder));
+ /** @override @return {TableColBuilder} */
+ m_width__java_lang_String(/** ?string */ width) {
+  return /**@type {TableColBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("width", width), TableColBuilder));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HtmlTableColBuilder.$clinit = () =>{};
   HtmlTableColBuilder.$loadModules();
   HtmlElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HtmlTableColBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

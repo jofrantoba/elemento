@@ -8,48 +8,33 @@ const HTML = goog.require('org.gwtproject.user.client.ui.HTML$impl');
  * @implements {Caption}
   */
 class CaptionImpl extends HTML {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!CaptionImpl}
-  * @public
-  */
+ /** @return {!CaptionImpl} */
  static $create__() {
   CaptionImpl.$clinit();
   let $instance = new CaptionImpl();
   $instance.$ctor__org_gwtproject_user_client_ui_DialogBox_CaptionImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_DialogBox_CaptionImpl__() {
   this.$ctor__org_gwtproject_user_client_ui_HTML__();
   this.m_setStyleName__java_lang_String("Caption");
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CaptionImpl.$clinit = () =>{};
   CaptionImpl.$loadModules();
   HTML.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CaptionImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

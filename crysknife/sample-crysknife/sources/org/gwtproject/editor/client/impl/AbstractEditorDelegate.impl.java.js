@@ -27,33 +27,24 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {EditorDelegate<T>}
   */
 class AbstractEditorDelegate extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_dirty__org_gwtproject_editor_client_impl_AbstractEditorDelegate_ = false;
-  /** @public {Chain<?, ?, T, E>} */
+  /**@type {Chain<?, ?, T, E>}*/
   this.f_editorChain__org_gwtproject_editor_client_impl_AbstractEditorDelegate_;
-  /** @public {List<EditorError>} */
+  /**@type {List<EditorError>}*/
   this.f_errors__org_gwtproject_editor_client_impl_AbstractEditorDelegate_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_path__org_gwtproject_editor_client_impl_AbstractEditorDelegate_;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_editor_client_impl_AbstractEditorDelegate__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {?string} prefix
-  * @param {?string} path
-  * @return {?string}
-  * @public
-  */
- static m_appendPath__java_lang_String__java_lang_String(prefix, path) {
+ /** @return {?string} */
+ static m_appendPath__java_lang_String__java_lang_String(/** ?string */ prefix, /** ?string */ path) {
   AbstractEditorDelegate.$clinit();
   if ($Equality.$same("", prefix)) {
    return path;
@@ -61,198 +52,100 @@ class AbstractEditorDelegate extends j_l_Object {
    return j_l_String.m_valueOf__java_lang_Object(prefix) + "." + j_l_String.m_valueOf__java_lang_Object(path);
   }
  }
- /**
-  * @abstract
-  * @param {EditorVisitor} visitor
-  * @public
-  */
- m_accept__org_gwtproject_editor_client_EditorVisitor(visitor) {}
- /**
-  * @abstract
-  * @return {T}
-  * @public
-  */
+ /** @abstract */
+ m_accept__org_gwtproject_editor_client_EditorVisitor(/** EditorVisitor */ visitor) {}
+ /** @abstract @return {T} */
  m_getObject__() {}
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getPath__() {
   return this.f_path__org_gwtproject_editor_client_impl_AbstractEditorDelegate_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isDirty__() {
   return this.f_dirty__org_gwtproject_editor_client_impl_AbstractEditorDelegate_;
  }
- /**
-  * @override
-  * @param {?string} message
-  * @param {*} value
-  * @param {*} userData
-  * @public
-  */
- m_recordError__java_lang_String__java_lang_Object__java_lang_Object(message, value, userData) {
+ /** @override */
+ m_recordError__java_lang_String__java_lang_Object__java_lang_Object(/** ?string */ message, /** * */ value, /** * */ userData) {
   let error = SimpleError.$create__org_gwtproject_editor_client_impl_AbstractEditorDelegate__java_lang_String__java_lang_Object__java_lang_Object(this, message, value, userData);
   this.f_errors__org_gwtproject_editor_client_impl_AbstractEditorDelegate_.add(error);
  }
- /**
-  * @param {?string} message
-  * @param {*} value
-  * @param {*} userData
-  * @param {?string} extraPath
-  * @param {Editor<?>} leafEditor
-  * @public
-  */
- m_recordError__java_lang_String__java_lang_Object__java_lang_Object__java_lang_String__org_gwtproject_editor_client_Editor(message, value, userData, extraPath, leafEditor) {
+ 
+ m_recordError__java_lang_String__java_lang_Object__java_lang_Object__java_lang_String__org_gwtproject_editor_client_Editor(/** ?string */ message, /** * */ value, /** * */ userData, /** ?string */ extraPath, /** Editor<?> */ leafEditor) {
   let error = SimpleError.$create__org_gwtproject_editor_client_impl_AbstractEditorDelegate__java_lang_String__java_lang_Object__java_lang_Object__java_lang_String__org_gwtproject_editor_client_Editor(this, message, value, userData, extraPath, leafEditor);
   this.f_errors__org_gwtproject_editor_client_impl_AbstractEditorDelegate_.add(error);
  }
- /**
-  * @override
-  * @param {boolean} dirty
-  * @public
-  */
- m_setDirty__boolean(dirty) {
+ /** @override */
+ m_setDirty__boolean(/** boolean */ dirty) {
   this.f_dirty__org_gwtproject_editor_client_impl_AbstractEditorDelegate_ = dirty;
  }
- /**
-  * @abstract
-  * @override
-  * @return {HandlerRegistration}
-  * @public
-  */
+ /** @abstract @override @return {HandlerRegistration} */
  m_subscribe__() {}
- /**
-  * @template R, S
-  * @param {AbstractEditorDelegate<R, S>} subDelegate
-  * @param {?string} path
-  * @param {S} subEditor
-  * @public
-  */
- m_addSubDelegate__org_gwtproject_editor_client_impl_AbstractEditorDelegate__java_lang_String__org_gwtproject_editor_client_Editor(subDelegate, path, subEditor) {
+ /** @template R, S */
+ m_addSubDelegate__org_gwtproject_editor_client_impl_AbstractEditorDelegate__java_lang_String__org_gwtproject_editor_client_Editor(/** AbstractEditorDelegate<R, S> */ subDelegate, /** ?string */ path, /** S */ subEditor) {
   subDelegate.m_initialize__java_lang_String__org_gwtproject_editor_client_Editor(path, subEditor);
  }
- /**
-  * @param {?string} path
-  * @return {?string}
-  * @public
-  */
- m_appendPath__java_lang_String(path) {
+ /** @return {?string} */
+ m_appendPath__java_lang_String(/** ?string */ path) {
   if (j_l_String.m_length__java_lang_String(path) == 0) {
    return this.f_path__org_gwtproject_editor_client_impl_AbstractEditorDelegate_;
   }
   return AbstractEditorDelegate.m_appendPath__java_lang_String__java_lang_String(this.f_path__org_gwtproject_editor_client_impl_AbstractEditorDelegate_, path);
  }
- /**
-  * @template R, S
-  * @param {Class<R>} composedElementType
-  * @public
-  */
- m_createChain__java_lang_Class(composedElementType) {
-  let editor = /**@type {CompositeEditor<T, R, S>} */ ($Casts.$to(this.m_getEditor__(), CompositeEditor));
-  this.f_editorChain__org_gwtproject_editor_client_impl_AbstractEditorDelegate_ = /**@type {!Chain<R, S, T, E>} */ (Chain.$create__org_gwtproject_editor_client_impl_AbstractEditorDelegate__org_gwtproject_editor_client_CompositeEditor__java_lang_Class(this, editor, composedElementType));
+ /** @template R, S */
+ m_createChain__java_lang_Class(/** Class<R> */ composedElementType) {
+  let editor = /**@type {CompositeEditor<T, R, S>}*/ ($Casts.$to(this.m_getEditor__(), CompositeEditor));
+  this.f_editorChain__org_gwtproject_editor_client_impl_AbstractEditorDelegate_ = /**@type {!Chain<R, S, T, E>}*/ (Chain.$create__org_gwtproject_editor_client_impl_AbstractEditorDelegate__org_gwtproject_editor_client_CompositeEditor__java_lang_Class(this, editor, composedElementType));
  }
- /**
-  * @return {AbstractEditorDelegate<?, ?>}
-  * @public
-  */
+ /** @return {AbstractEditorDelegate<?, ?>} */
  m_createComposedDelegate__() {
   throw $Exceptions.toJs(IllegalStateException.$create__());
  }
- /**
-  * @return {EditorVisitor}
-  * @public
-  */
+ /** @return {EditorVisitor} */
  m_createInitializerVisitor__() {
   return Initializer.$create__();
  }
- /**
-  * @template Q
-  * @param {Q} object
-  * @return {Q}
-  * @public
-  */
- m_ensureMutable__java_lang_Object(object) {
+ /** @template Q @return {Q} */
+ m_ensureMutable__java_lang_Object(/** Q */ object) {
   return object;
  }
- /**
-  * @abstract
-  * @return {E}
-  * @public
-  */
+ /** @abstract @return {E} */
  m_getEditor__() {}
- /**
-  * @return {Chain<?, ?, T, E>}
-  * @public
-  */
+ /** @return {Chain<?, ?, T, E>} */
  m_getEditorChain__() {
   return this.f_editorChain__org_gwtproject_editor_client_impl_AbstractEditorDelegate_;
  }
- /**
-  * @return {List<EditorError>}
-  * @public
-  */
+ /** @return {List<EditorError>} */
  m_getErrors__() {
   return this.f_errors__org_gwtproject_editor_client_impl_AbstractEditorDelegate_;
  }
- /**
-  * @param {?string} pathSoFar
-  * @param {E} editor
-  * @public
-  */
- m_initialize__java_lang_String__org_gwtproject_editor_client_Editor(pathSoFar, editor) {
+ 
+ m_initialize__java_lang_String__org_gwtproject_editor_client_Editor(/** ?string */ pathSoFar, /** E */ editor) {
   this.f_path__org_gwtproject_editor_client_impl_AbstractEditorDelegate_ = pathSoFar;
   this.m_setEditor__org_gwtproject_editor_client_Editor(editor);
-  this.f_errors__org_gwtproject_editor_client_impl_AbstractEditorDelegate_ = /**@type {!ArrayList<EditorError>} */ (ArrayList.$create__());
+  this.f_errors__org_gwtproject_editor_client_impl_AbstractEditorDelegate_ = /**@type {!ArrayList<EditorError>}*/ (ArrayList.$create__());
   this.m_initializeSubDelegates__();
  }
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_initializeSubDelegates__() {}
- /**
-  * @abstract
-  * @param {E} editor
-  * @public
-  */
- m_setEditor__org_gwtproject_editor_client_Editor(editor) {}
- /**
-  * @abstract
-  * @param {T} object
-  * @public
-  */
- m_setObject__java_lang_Object(object) {}
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract */
+ m_setEditor__org_gwtproject_editor_client_Editor(/** E */ editor) {}
+ /** @abstract */
+ m_setObject__java_lang_Object(/** T */ object) {}
+ /** @return {boolean} */
  m_shouldFlush__() {
   return true;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AbstractEditorDelegate.$clinit = () =>{};
   AbstractEditorDelegate.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AbstractEditorDelegate;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');
   j_l_String = goog.module.get('java.lang.String$impl');

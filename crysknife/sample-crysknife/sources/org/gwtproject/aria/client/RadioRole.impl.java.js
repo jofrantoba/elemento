@@ -10,36 +10,23 @@ const OptionRole = goog.require('org.gwtproject.aria.client.OptionRole$impl');
  * @extends {OptionRole}
  */
 class RadioRole {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RadioRole.$clinit = () =>{};
   RadioRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  CheckboxRole.$markImplementor(classConstructor);
-  OptionRole.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_RadioRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  CheckboxRole.$markImplementor(ctor);
+  OptionRole.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_RadioRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_RadioRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

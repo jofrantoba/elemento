@@ -20,134 +20,86 @@ let $1 = goog.forwardDeclare('org.gwtproject.view.client.SelectionModel.Abstract
  * @implements {SelectionModel<T>}
   */
 class AbstractSelectionModel extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {HandlerManager} */
+  /**@type {HandlerManager}*/
   this.f_handlerManager__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isEventCancelled__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isEventScheduled__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel_ = false;
-  /** @public {ProvidesKey<T>} */
+  /**@type {ProvidesKey<T>}*/
   this.f_keyProvider__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel_;
  }
- /**
-  * @param {ProvidesKey<T>} keyProvider
-  * @public
-  */
- $ctor__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel__org_gwtproject_view_client_ProvidesKey(keyProvider) {
+ 
+ $ctor__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel__org_gwtproject_view_client_ProvidesKey(/** ProvidesKey<T> */ keyProvider) {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_view_client_SelectionModel_AbstractSelectionModel();
   this.f_keyProvider__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel_ = keyProvider;
  }
- /**
-  * @override
-  * @param {Handler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addSelectionChangeHandler__org_gwtproject_view_client_SelectionChangeEvent_Handler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addSelectionChangeHandler__org_gwtproject_view_client_SelectionChangeEvent_Handler(/** Handler */ handler) {
   return this.f_handlerManager__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel_.m_addHandler__org_gwtproject_event_shared_Event_Type__java_lang_Object(SelectionChangeEvent.m_getType__(), handler);
  }
- /**
-  * @override
-  * @param {Event<?>} event
-  * @public
-  */
- m_fireEvent__org_gwtproject_event_shared_Event(event) {
+ /** @override */
+ m_fireEvent__org_gwtproject_event_shared_Event(/** Event<?> */ event) {
   this.f_handlerManager__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel_.m_fireEvent__org_gwtproject_event_shared_Event(event);
  }
- /**
-  * @override
-  * @param {T} item
-  * @return {*}
-  * @public
-  */
- m_getKey__java_lang_Object(item) {
+ /** @override @return {*} */
+ m_getKey__java_lang_Object(/** T */ item) {
   return ($Equality.$same(this.f_keyProvider__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel_, null) || $Equality.$same(item, null)) ? item : this.f_keyProvider__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel_.m_getKey__java_lang_Object(item);
  }
- /**
-  * @return {ProvidesKey<T>}
-  * @public
-  */
+ /** @return {ProvidesKey<T>} */
  m_getKeyProvider__() {
   return this.f_keyProvider__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel_;
  }
- /**
-  * @public
-  */
+ 
  m_fireSelectionChangeEvent__() {
   if (this.m_isEventScheduled__()) {
    this.m_setEventCancelled__boolean(true);
   }
   SelectionChangeEvent.m_fire__org_gwtproject_view_client_SelectionChangeEvent_HasSelectionChangedHandlers(this);
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isEventCancelled__() {
   return this.f_isEventCancelled__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isEventScheduled__() {
   return this.f_isEventScheduled__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel_;
  }
- /**
-  * @public
-  */
+ 
  m_scheduleSelectionChangeEvent__() {
   this.m_setEventCancelled__boolean(false);
   if (!this.m_isEventScheduled__()) {
    this.m_setEventScheduled__boolean(true);
-   Scheduler.m_get__().m_scheduleFinally__org_gwtproject_core_client_Scheduler_ScheduledCommand(/**@type {!$1<T>} */ ($1.$create__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel(this)));
+   Scheduler.m_get__().m_scheduleFinally__org_gwtproject_core_client_Scheduler_ScheduledCommand(/**@type {!$1<T>}*/ ($1.$create__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel(this)));
   }
  }
- /**
-  * @param {boolean} isEventCancelled
-  * @public
-  */
- m_setEventCancelled__boolean(isEventCancelled) {
+ 
+ m_setEventCancelled__boolean(/** boolean */ isEventCancelled) {
   this.f_isEventCancelled__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel_ = isEventCancelled;
  }
- /**
-  * @param {boolean} isEventScheduled
-  * @public
-  */
- m_setEventScheduled__boolean(isEventScheduled) {
+ 
+ m_setEventScheduled__boolean(/** boolean */ isEventScheduled) {
   this.f_isEventScheduled__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel_ = isEventScheduled;
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_view_client_SelectionModel_AbstractSelectionModel() {
   this.f_handlerManager__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel_ = HandlerManager.$create__java_lang_Object(this);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AbstractSelectionModel.$clinit = () =>{};
   AbstractSelectionModel.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AbstractSelectionModel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   Scheduler = goog.module.get('org.gwtproject.core.client.Scheduler$impl');

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"NotificationMole_BinderImpl_GenBundle$$LambdaAdaptor.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;;;;MAWiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;kG;EAAAA,oL;;;;;;CAAA,0K;EAAAC,iC;EAAAA,qG;;;;;;CAAA,S;EAAAC,6E;EAAAA,kI;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;;MAWiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;kG;EAAAA,oL;;;CAAA,0K;EAAAC,iC;EAAAA,qG;;;CAAA,S;EAAAC,6E;EAAAA,kI;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["NotificationMole_BinderImpl_GenBundle.java"],
 "names":["org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundle$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundle$$LambdaAdaptor.<init>","org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundle$$LambdaAdaptor.style","org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundle$$LambdaAdaptor.<clinit>"]
 }

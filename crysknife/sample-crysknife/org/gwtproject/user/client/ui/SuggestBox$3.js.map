@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SuggestBox$3.impl.java.js",
-"lineCount":53,
-"mappings":"A;;;;;;;;;;;;MAqgC6C,E;;;;CAAA,W;EAAAA,Q;EAAAA;iE;;;;;;;QAAA,iD;EAAAC,a;EAAAA,yB;EAAAA,mH;EAAAA,iB;;;;;;CAAA,2F;EAAAC,6E;EAAAA,iC;;;;;;;CAE3B,uD,CAAqBC,W;;;;QAFM,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":38,
+"mappings":"A;;;;;;;;;;;;MAqgC6C,E;;CAAA,W;EAAAA,Q;EAAAA;iE;;;QAAA,iD;EAAAC,a;EAAAA,yB;EAAAA,mH;EAAAA,iB;;;CAAA,2F;EAAAC,6E;EAAAA,iC;;;CAE3B,uD,oBAAqBC,W;;QAFM,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["SuggestBox.java"],
 "names":["org.gwtproject.user.client.ui.SuggestBox$3.<synthetic: ctor_js>","org.gwtproject.user.client.ui.SuggestBox$3.<synthetic: ctor_create>","org.gwtproject.user.client.ui.SuggestBox$3.<init>","changeEvent","org.gwtproject.user.client.ui.SuggestBox$3.<clinit>"]
 }

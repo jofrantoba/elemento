@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SimplePager_ResourcesImpl$simplePagerStyleInitializer.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;MAuNuB,2B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,kD;EAAAA,+G;EAAAA,iB;;;;;CAAA,kG;EAAAC,iC;;;;;;QAIM,O;EAAAC,sC;EACvBA,qH;;;;;QALiB,O;EAAAC,8C;EAAAA,2C;EAAAA,qB;EAEjBA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;MAuNuB,2B;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,kD;EAAAA,+G;EAAAA,iB;;;CAAA,kG;EAAAC,iC;;;QAIM,O;EAAAC,sC;EACvBA,qH;;;QALiB,O;EAAAC,8C;EAAAA,2C;EAAAA,qB;EAEjBA;",
 "sources":["SimplePager_ResourcesImpl.java"],
 "names":["org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$simplePagerStyleInitializer.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$simplePagerStyleInitializer.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$simplePagerStyleInitializer.<init>","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$simplePagerStyleInitializer.get","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$simplePagerStyleInitializer.<clinit>"]
 }

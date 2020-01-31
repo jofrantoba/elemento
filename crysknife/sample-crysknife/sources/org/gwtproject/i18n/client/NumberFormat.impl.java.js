@@ -31,64 +31,56 @@ let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
 let $int = goog.forwardDeclare('vmbootstrap.primitives.$int$impl');
 
 class NumberFormat extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {CurrencyData} */
+  /**@type {CurrencyData}*/
   this.f_currencyData__org_gwtproject_i18n_client_NumberFormat_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_decimalPosition__org_gwtproject_i18n_client_NumberFormat_ = 0;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_decimalSeparatorAlwaysShown__org_gwtproject_i18n_client_NumberFormat_ = false;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_digitsLength__org_gwtproject_i18n_client_NumberFormat_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_exponent__org_gwtproject_i18n_client_NumberFormat_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_groupingSize__org_gwtproject_i18n_client_NumberFormat_ = 0;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isCurrencyFormat__org_gwtproject_i18n_client_NumberFormat_ = false;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_maximumFractionDigits__org_gwtproject_i18n_client_NumberFormat_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_maximumIntegerDigits__org_gwtproject_i18n_client_NumberFormat_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_minExponentDigits__org_gwtproject_i18n_client_NumberFormat_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_minimumFractionDigits__org_gwtproject_i18n_client_NumberFormat_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_minimumIntegerDigits__org_gwtproject_i18n_client_NumberFormat_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_multiplier__org_gwtproject_i18n_client_NumberFormat_ = 0;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_negativePrefix__org_gwtproject_i18n_client_NumberFormat_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_negativeSuffix__org_gwtproject_i18n_client_NumberFormat_;
-  /** @public {NumberConstants} */
+  /**@type {NumberConstants}*/
   this.f_numberConstants__org_gwtproject_i18n_client_NumberFormat_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_pattern__org_gwtproject_i18n_client_NumberFormat_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_positivePrefix__org_gwtproject_i18n_client_NumberFormat_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_positiveSuffix__org_gwtproject_i18n_client_NumberFormat_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_useExponentialNotation__org_gwtproject_i18n_client_NumberFormat_ = false;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  static m_forcedLatinDigits__() {
   NumberFormat.$clinit();
   return !$Equality.$same(NumberFormat.$f_defaultNumberConstants__org_gwtproject_i18n_client_NumberFormat, NumberFormat.$f_localizedNumberConstants__org_gwtproject_i18n_client_NumberFormat);
  }
- /**
-  * @return {NumberFormat}
-  * @public
-  */
+ /** @return {NumberFormat} */
  static m_getCurrencyFormat__() {
   NumberFormat.$clinit();
   if ($Equality.$same(NumberFormat.f_cachedCurrencyFormat__org_gwtproject_i18n_client_NumberFormat_, null)) {
@@ -96,28 +88,17 @@ class NumberFormat extends j_l_Object {
   }
   return NumberFormat.f_cachedCurrencyFormat__org_gwtproject_i18n_client_NumberFormat_;
  }
- /**
-  * @param {CurrencyData} currencyData
-  * @return {NumberFormat}
-  * @public
-  */
- static m_getCurrencyFormat__org_gwtproject_i18n_client_CurrencyData(currencyData) {
+ /** @return {NumberFormat} */
+ static m_getCurrencyFormat__org_gwtproject_i18n_client_CurrencyData(/** CurrencyData */ currencyData) {
   NumberFormat.$clinit();
   return NumberFormat.$create__java_lang_String__org_gwtproject_i18n_client_CurrencyData__boolean(NumberFormat.$f_defaultNumberConstants__org_gwtproject_i18n_client_NumberFormat.m_currencyPattern__(), currencyData, false);
  }
- /**
-  * @param {?string} currencyCode
-  * @return {NumberFormat}
-  * @public
-  */
- static m_getCurrencyFormat__java_lang_String(currencyCode) {
+ /** @return {NumberFormat} */
+ static m_getCurrencyFormat__java_lang_String(/** ?string */ currencyCode) {
   NumberFormat.$clinit();
   return NumberFormat.m_getCurrencyFormat__org_gwtproject_i18n_client_CurrencyData(NumberFormat.m_lookupCurrency__java_lang_String(currencyCode));
  }
- /**
-  * @return {NumberFormat}
-  * @public
-  */
+ /** @return {NumberFormat} */
  static m_getDecimalFormat__() {
   NumberFormat.$clinit();
   if ($Equality.$same(NumberFormat.f_cachedDecimalFormat__org_gwtproject_i18n_client_NumberFormat_, null)) {
@@ -125,108 +106,63 @@ class NumberFormat extends j_l_Object {
   }
   return NumberFormat.f_cachedDecimalFormat__org_gwtproject_i18n_client_NumberFormat_;
  }
- /**
-  * @param {?string} pattern
-  * @return {NumberFormat}
-  * @public
-  */
- static m_getFormat__java_lang_String(pattern) {
+ /** @return {NumberFormat} */
+ static m_getFormat__java_lang_String(/** ?string */ pattern) {
   NumberFormat.$clinit();
   return NumberFormat.$create__java_lang_String__org_gwtproject_i18n_client_CurrencyData__boolean(pattern, CurrencyList.m_get__().m_getDefault__(), true);
  }
- /**
-  * @param {?string} pattern
-  * @param {CurrencyData} currencyData
-  * @return {NumberFormat}
-  * @public
-  */
- static m_getFormat__java_lang_String__org_gwtproject_i18n_client_CurrencyData(pattern, currencyData) {
+ /** @return {NumberFormat} */
+ static m_getFormat__java_lang_String__org_gwtproject_i18n_client_CurrencyData(/** ?string */ pattern, /** CurrencyData */ currencyData) {
   NumberFormat.$clinit();
   return NumberFormat.$create__java_lang_String__org_gwtproject_i18n_client_CurrencyData__boolean(pattern, currencyData, true);
  }
- /**
-  * @param {?string} pattern
-  * @param {?string} currencyCode
-  * @return {NumberFormat}
-  * @public
-  */
- static m_getFormat__java_lang_String__java_lang_String(pattern, currencyCode) {
+ /** @return {NumberFormat} */
+ static m_getFormat__java_lang_String__java_lang_String(/** ?string */ pattern, /** ?string */ currencyCode) {
   NumberFormat.$clinit();
   return NumberFormat.$create__java_lang_String__org_gwtproject_i18n_client_CurrencyData__boolean(pattern, NumberFormat.m_lookupCurrency__java_lang_String(currencyCode), true);
  }
- /**
-  * @return {NumberFormat}
-  * @public
-  */
+ /** @return {NumberFormat} */
  static m_getGlobalCurrencyFormat__() {
   NumberFormat.$clinit();
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String("getGlobalCurrencyFormat"));
  }
- /**
-  * @param {CurrencyData} currencyData
-  * @return {NumberFormat}
-  * @public
-  */
- static m_getGlobalCurrencyFormat__org_gwtproject_i18n_client_CurrencyData(currencyData) {
+ /** @return {NumberFormat} */
+ static m_getGlobalCurrencyFormat__org_gwtproject_i18n_client_CurrencyData(/** CurrencyData */ currencyData) {
   NumberFormat.$clinit();
   return NumberFormat.$create__java_lang_String__org_gwtproject_i18n_client_CurrencyData__boolean(NumberFormat.$f_defaultNumberConstants__org_gwtproject_i18n_client_NumberFormat.m_globalCurrencyPattern__(), currencyData, false);
  }
- /**
-  * @param {?string} currencyCode
-  * @return {NumberFormat}
-  * @public
-  */
- static m_getGlobalCurrencyFormat__java_lang_String(currencyCode) {
+ /** @return {NumberFormat} */
+ static m_getGlobalCurrencyFormat__java_lang_String(/** ?string */ currencyCode) {
   NumberFormat.$clinit();
   return NumberFormat.m_getGlobalCurrencyFormat__org_gwtproject_i18n_client_CurrencyData(NumberFormat.m_lookupCurrency__java_lang_String(currencyCode));
  }
- /**
-  * @return {NumberFormat}
-  * @public
-  */
+ /** @return {NumberFormat} */
  static m_getPercentFormat__() {
   NumberFormat.$clinit();
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String("getPercentFormat"));
  }
- /**
-  * @return {NumberFormat}
-  * @public
-  */
+ /** @return {NumberFormat} */
  static m_getScientificFormat__() {
   NumberFormat.$clinit();
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String("getScientificFormat"));
  }
- /**
-  * @return {NumberFormat}
-  * @public
-  */
+ /** @return {NumberFormat} */
  static m_getSimpleCurrencyFormat__() {
   NumberFormat.$clinit();
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String("getSimpleCurrencyFormat"));
  }
- /**
-  * @param {CurrencyData} currencyData
-  * @return {NumberFormat}
-  * @public
-  */
- static m_getSimpleCurrencyFormat__org_gwtproject_i18n_client_CurrencyData(currencyData) {
+ /** @return {NumberFormat} */
+ static m_getSimpleCurrencyFormat__org_gwtproject_i18n_client_CurrencyData(/** CurrencyData */ currencyData) {
   NumberFormat.$clinit();
   return NumberFormat.$create__java_lang_String__org_gwtproject_i18n_client_CurrencyData__boolean(NumberFormat.$f_defaultNumberConstants__org_gwtproject_i18n_client_NumberFormat.m_simpleCurrencyPattern__(), currencyData, false);
  }
- /**
-  * @param {?string} currencyCode
-  * @return {NumberFormat}
-  * @public
-  */
- static m_getSimpleCurrencyFormat__java_lang_String(currencyCode) {
+ /** @return {NumberFormat} */
+ static m_getSimpleCurrencyFormat__java_lang_String(/** ?string */ currencyCode) {
   NumberFormat.$clinit();
   return NumberFormat.m_getSimpleCurrencyFormat__org_gwtproject_i18n_client_CurrencyData(NumberFormat.m_lookupCurrency__java_lang_String(currencyCode));
  }
- /**
-  * @param {boolean} useLatinDigits
-  * @public
-  */
- static m_setForcedLatinDigits__boolean(useLatinDigits) {
+ 
+ static m_setForcedLatinDigits__boolean(/** boolean */ useLatinDigits) {
   NumberFormat.$clinit();
   if (useLatinDigits != NumberFormat.m_forcedLatinDigits__()) {
    NumberFormat.f_cachedCurrencyFormat__org_gwtproject_i18n_client_NumberFormat_ = null;
@@ -243,12 +179,8 @@ class NumberFormat extends j_l_Object {
    NumberFormat.$f_defaultNumberConstants__org_gwtproject_i18n_client_NumberFormat = NumberFormat.$f_localizedNumberConstants__org_gwtproject_i18n_client_NumberFormat;
   }
  }
- /**
-  * @param {NumberConstants} orig
-  * @return {NumberConstants}
-  * @public
-  */
- static m_createLatinNumberConstants__org_gwtproject_i18n_client_constants_NumberConstants(orig) {
+ /** @return {NumberConstants} */
+ static m_createLatinNumberConstants__org_gwtproject_i18n_client_constants_NumberConstants(/** NumberConstants */ orig) {
   NumberFormat.$clinit();
   let groupingSeparator = NumberFormat.m_remapSeparator__java_lang_String(orig.m_groupingSeparator__());
   let decimalSeparator = NumberFormat.m_remapSeparator__java_lang_String(orig.m_decimalSeparator__());
@@ -256,12 +188,8 @@ class NumberFormat extends j_l_Object {
   let monetarySeparator = NumberFormat.m_remapSeparator__java_lang_String(orig.m_monetarySeparator__());
   return $1.$create__org_gwtproject_i18n_client_constants_NumberConstants__java_lang_String__java_lang_String__java_lang_String__java_lang_String(orig, decimalSeparator, groupingSeparator, monetaryGroupingSeparator, monetarySeparator);
  }
- /**
-  * @param {?string} separator
-  * @return {?string}
-  * @public
-  */
- static m_remapSeparator__java_lang_String(separator) {
+ /** @return {?string} */
+ static m_remapSeparator__java_lang_String(/** ?string */ separator) {
   NumberFormat.$clinit();
   let ch = j_l_String.m_length__java_lang_String(separator) > 0 ? j_l_String.m_charAt__java_lang_String__int(separator, 0) : 65535 /* '\uFFFF' */;
   if (j_l_String.m_indexOf__java_lang_String__int(NumberFormat.f_LOCALIZED_DOT_EQUIVALENTS__org_gwtproject_i18n_client_NumberFormat_, ch) >= 0) {
@@ -272,13 +200,8 @@ class NumberFormat extends j_l_Object {
   }
   return "\u00A0";
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {number} val
-  * @return {number}
-  * @public
-  */
- static m_toScaledString__java_lang_StringBuilder__double(buf, val) {
+ /** @return {number} */
+ static m_toScaledString__java_lang_StringBuilder__double(/** StringBuilder */ buf, /** number */ val) {
   NumberFormat.$clinit();
   let startLen = buf.m_length__();
   buf.m_append__java_lang_String(NumberFormat.m_toPrecision__double__int(val, 20));
@@ -304,47 +227,25 @@ class NumberFormat extends j_l_Object {
   }
   return scale;
  }
- /**
-  * @param {?string} currencyCode
-  * @return {CurrencyData}
-  * @public
-  */
- static m_lookupCurrency__java_lang_String(currencyCode) {
+ /** @return {CurrencyData} */
+ static m_lookupCurrency__java_lang_String(/** ?string */ currencyCode) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String("lookupCurrency"));
  }
- /**
-  * @param {number} d
-  * @param {number} digits
-  * @return {?string}
-  * @public
-  */
- static m_toPrecision__double__int(d, digits) {
+ /** @return {?string} */
+ static m_toPrecision__double__int(/** number */ d, /** number */ digits) {
   return new Number(d).toPrecision();
  }
- /**
-  * Factory method corresponding to constructor 'NumberFormat(NumberConstants, String, CurrencyData, boolean)'.
-  * @param {NumberConstants} numberConstants
-  * @param {?string} pattern
-  * @param {CurrencyData} cdata
-  * @param {boolean} userSuppliedPattern
-  * @return {!NumberFormat}
-  * @public
-  */
- static $create__org_gwtproject_i18n_client_constants_NumberConstants__java_lang_String__org_gwtproject_i18n_client_CurrencyData__boolean(numberConstants, pattern, cdata, userSuppliedPattern) {
+ //Factory method corresponding to constructor 'NumberFormat(NumberConstants, String, CurrencyData, boolean)'.
+ /** @return {!NumberFormat} */
+ static $create__org_gwtproject_i18n_client_constants_NumberConstants__java_lang_String__org_gwtproject_i18n_client_CurrencyData__boolean(/** NumberConstants */ numberConstants, /** ?string */ pattern, /** CurrencyData */ cdata, /** boolean */ userSuppliedPattern) {
   NumberFormat.$clinit();
   let $instance = new NumberFormat();
   $instance.$ctor__org_gwtproject_i18n_client_NumberFormat__org_gwtproject_i18n_client_constants_NumberConstants__java_lang_String__org_gwtproject_i18n_client_CurrencyData__boolean(numberConstants, pattern, cdata, userSuppliedPattern);
   return $instance;
  }
- /**
-  * Initialization from constructor 'NumberFormat(NumberConstants, String, CurrencyData, boolean)'.
-  * @param {NumberConstants} numberConstants
-  * @param {?string} pattern
-  * @param {CurrencyData} cdata
-  * @param {boolean} userSuppliedPattern
-  * @public
-  */
- $ctor__org_gwtproject_i18n_client_NumberFormat__org_gwtproject_i18n_client_constants_NumberConstants__java_lang_String__org_gwtproject_i18n_client_CurrencyData__boolean(numberConstants, pattern, cdata, userSuppliedPattern) {
+ //Initialization from constructor 'NumberFormat(NumberConstants, String, CurrencyData, boolean)'.
+ 
+ $ctor__org_gwtproject_i18n_client_NumberFormat__org_gwtproject_i18n_client_constants_NumberConstants__java_lang_String__org_gwtproject_i18n_client_CurrencyData__boolean(/** NumberConstants */ numberConstants, /** ?string */ pattern, /** CurrencyData */ cdata, /** boolean */ userSuppliedPattern) {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_i18n_client_NumberFormat();
   if ($Equality.$same(cdata, null)) {
@@ -359,36 +260,21 @@ class NumberFormat extends j_l_Object {
    this.f_maximumFractionDigits__org_gwtproject_i18n_client_NumberFormat_ = this.f_minimumFractionDigits__org_gwtproject_i18n_client_NumberFormat_;
   }
  }
- /**
-  * Factory method corresponding to constructor 'NumberFormat(String, CurrencyData, boolean)'.
-  * @param {?string} pattern
-  * @param {CurrencyData} cdata
-  * @param {boolean} userSuppliedPattern
-  * @return {!NumberFormat}
-  * @public
-  */
- static $create__java_lang_String__org_gwtproject_i18n_client_CurrencyData__boolean(pattern, cdata, userSuppliedPattern) {
+ //Factory method corresponding to constructor 'NumberFormat(String, CurrencyData, boolean)'.
+ /** @return {!NumberFormat} */
+ static $create__java_lang_String__org_gwtproject_i18n_client_CurrencyData__boolean(/** ?string */ pattern, /** CurrencyData */ cdata, /** boolean */ userSuppliedPattern) {
   NumberFormat.$clinit();
   let $instance = new NumberFormat();
   $instance.$ctor__org_gwtproject_i18n_client_NumberFormat__java_lang_String__org_gwtproject_i18n_client_CurrencyData__boolean(pattern, cdata, userSuppliedPattern);
   return $instance;
  }
- /**
-  * Initialization from constructor 'NumberFormat(String, CurrencyData, boolean)'.
-  * @param {?string} pattern
-  * @param {CurrencyData} cdata
-  * @param {boolean} userSuppliedPattern
-  * @public
-  */
- $ctor__org_gwtproject_i18n_client_NumberFormat__java_lang_String__org_gwtproject_i18n_client_CurrencyData__boolean(pattern, cdata, userSuppliedPattern) {
+ //Initialization from constructor 'NumberFormat(String, CurrencyData, boolean)'.
+ 
+ $ctor__org_gwtproject_i18n_client_NumberFormat__java_lang_String__org_gwtproject_i18n_client_CurrencyData__boolean(/** ?string */ pattern, /** CurrencyData */ cdata, /** boolean */ userSuppliedPattern) {
   this.$ctor__org_gwtproject_i18n_client_NumberFormat__org_gwtproject_i18n_client_constants_NumberConstants__java_lang_String__org_gwtproject_i18n_client_CurrencyData__boolean(NumberFormat.$f_defaultNumberConstants__org_gwtproject_i18n_client_NumberFormat, pattern, cdata, userSuppliedPattern);
  }
- /**
-  * @param {number} number_1
-  * @return {?string}
-  * @public
-  */
- m_format__double(number_1) {
+ /** @return {?string} */
+ m_format__double(/** number */ number_1) {
   if (isNaN(number_1)) {
    return this.f_numberConstants__org_gwtproject_i18n_client_NumberFormat_.m_notANumber__();
   }
@@ -414,14 +300,10 @@ class NumberFormat extends j_l_Object {
   this.m_format__boolean__java_lang_StringBuilder__int(isNegative, buf, scale);
   return buf.toString();
  }
- /**
-  * @param {(j_l_Number|number)} number_1
-  * @return {?string}
-  * @public
-  */
- m_format__java_lang_Number(number_1) {
+ /** @return {?string} */
+ m_format__java_lang_Number(/** (j_l_Number|number) */ number_1) {
   if (BigDecimal.$isInstance(number_1)) {
-   let bigDec = /**@type {BigDecimal} */ ($Casts.$to(number_1, BigDecimal));
+   let bigDec = /**@type {BigDecimal}*/ ($Casts.$to(number_1, BigDecimal));
    let isNegative = bigDec.m_signum__() < 0;
    if (isNegative) {
     bigDec = bigDec.m_negate__();
@@ -432,7 +314,7 @@ class NumberFormat extends j_l_Object {
    this.m_format__boolean__java_lang_StringBuilder__int(isNegative, buf, -bigDec.m_scale__());
    return buf.toString();
   } else if (BigInteger.$isInstance(number_1)) {
-   let bigInt = /**@type {BigInteger} */ ($Casts.$to(number_1, BigInteger));
+   let bigInt = /**@type {BigInteger}*/ ($Casts.$to(number_1, BigInteger));
    let isNegative_1 = bigInt.m_signum__() < 0;
    if (isNegative_1) {
     bigInt = bigInt.m_negate__();
@@ -448,54 +330,33 @@ class NumberFormat extends j_l_Object {
    return this.m_format__double($Numbers.m_doubleValue__java_lang_Number(number_1));
   }
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getPattern__() {
   return this.f_pattern__org_gwtproject_i18n_client_NumberFormat_;
  }
- /**
-  * @param {number} digits
-  * @return {NumberFormat}
-  * @public
-  */
- m_overrideFractionDigits__int(digits) {
+ /** @return {NumberFormat} */
+ m_overrideFractionDigits__int(/** number */ digits) {
   return this.m_overrideFractionDigits__int__int(digits, digits);
  }
- /**
-  * @param {number} minDigits
-  * @param {number} maxDigits
-  * @return {NumberFormat}
-  * @public
-  */
- m_overrideFractionDigits__int__int(minDigits, maxDigits) {
+ /** @return {NumberFormat} */
+ m_overrideFractionDigits__int__int(/** number */ minDigits, /** number */ maxDigits) {
   $Asserts.$assert(minDigits >= 0);
   $Asserts.$assert(maxDigits >= minDigits);
   this.f_minimumFractionDigits__org_gwtproject_i18n_client_NumberFormat_ = minDigits;
   this.f_maximumFractionDigits__org_gwtproject_i18n_client_NumberFormat_ = maxDigits;
   return this;
  }
- /**
-  * @param {?string} text
-  * @return {number}
-  * @public
-  */
- m_parse__java_lang_String(text) {
-  let pos = /**@type {!Array<number>} */ ($Arrays.$init([0], $int));
+ /** @return {number} */
+ m_parse__java_lang_String(/** ?string */ text) {
+  let pos = /**@type {!Array<number>}*/ ($Arrays.$init([0], $int));
   let result = this.m_parse__java_lang_String__arrayOf_int(text, pos);
   if (pos[0] == 0 || pos[0] != j_l_String.m_length__java_lang_String(text)) {
    throw $Exceptions.toJs(NumberFormatException.$create__java_lang_String(text));
   }
   return result;
  }
- /**
-  * @param {?string} text
-  * @param {Array<number>} inOutPos
-  * @return {number}
-  * @public
-  */
- m_parse__java_lang_String__arrayOf_int(text, inOutPos) {
+ /** @return {number} */
+ m_parse__java_lang_String__arrayOf_int(/** ?string */ text, /** Array<number> */ inOutPos) {
   let ret = 0.0;
   let gotPositivePrefix = j_l_String.m_startsWith__java_lang_String__java_lang_String__int(text, this.f_positivePrefix__org_gwtproject_i18n_client_NumberFormat_, inOutPos[0]);
   let gotNegativePrefix = j_l_String.m_startsWith__java_lang_String__java_lang_String__int(text, this.f_negativePrefix__org_gwtproject_i18n_client_NumberFormat_, inOutPos[0]);
@@ -533,7 +394,7 @@ class NumberFormat extends j_l_Object {
    inOutPos[0] += j_l_String.m_length__java_lang_String(this.f_numberConstants__org_gwtproject_i18n_client_NumberFormat_.m_notANumber__());
    ret = Double.f_NaN__java_lang_Double;
   } else {
-   let tempPos = /**@type {!Array<number>} */ ($Arrays.$init([0], $int));
+   let tempPos = /**@type {!Array<number>}*/ ($Arrays.$init([0], $int));
    ret = this.m_parseNumber__java_lang_String__arrayOf_int_$p_org_gwtproject_i18n_client_NumberFormat(valueOnly, tempPos) / this.f_multiplier__org_gwtproject_i18n_client_NumberFormat_;
    inOutPos[0] += tempPos[0];
   }
@@ -547,13 +408,8 @@ class NumberFormat extends j_l_Object {
   }
   return ret;
  }
- /**
-  * @param {boolean} isNegative
-  * @param {StringBuilder} digits
-  * @param {number} scale
-  * @public
-  */
- m_format__boolean__java_lang_StringBuilder__int(isNegative, digits, scale) {
+ 
+ m_format__boolean__java_lang_StringBuilder__int(/** boolean */ isNegative, /** StringBuilder */ digits, /** number */ scale) {
   let /** number */ decimalSeparator;
   let /** number */ groupingSeparator;
   if (this.f_isCurrencyFormat__org_gwtproject_i18n_client_NumberFormat_) {
@@ -589,13 +445,8 @@ class NumberFormat extends j_l_Object {
   digits.m_insert__int__java_lang_String(0, isNegative ? this.f_negativePrefix__org_gwtproject_i18n_client_NumberFormat_ : this.f_positivePrefix__org_gwtproject_i18n_client_NumberFormat_);
   digits.m_append__java_lang_String(isNegative ? this.f_negativeSuffix__org_gwtproject_i18n_client_NumberFormat_ : this.f_positiveSuffix__org_gwtproject_i18n_client_NumberFormat_);
  }
- /**
-  * @param {!$Long} value
-  * @param {number} scale
-  * @return {?string}
-  * @public
-  */
- m_format__long__int(value, scale) {
+ /** @return {?string} */
+ m_format__long__int(/** !$Long */ value, /** number */ scale) {
   let isNegative = $LongUtils.$less(value, $Long.fromInt(0));
   if (isNegative) {
    value = $LongUtils.$negate(value);
@@ -606,60 +457,36 @@ class NumberFormat extends j_l_Object {
   this.m_format__boolean__java_lang_StringBuilder__int(isNegative, buf, scale);
   return buf.toString();
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getGroupingSize__() {
   return this.f_groupingSize__org_gwtproject_i18n_client_NumberFormat_;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getNegativePrefix__() {
   return this.f_negativePrefix__org_gwtproject_i18n_client_NumberFormat_;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getNegativeSuffix__() {
   return this.f_negativeSuffix__org_gwtproject_i18n_client_NumberFormat_;
  }
- /**
-  * @return {NumberConstants}
-  * @public
-  */
+ /** @return {NumberConstants} */
  m_getNumberConstants__() {
   return this.f_numberConstants__org_gwtproject_i18n_client_NumberFormat_;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getPositivePrefix__() {
   return this.f_positivePrefix__org_gwtproject_i18n_client_NumberFormat_;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getPositiveSuffix__() {
   return this.f_positiveSuffix__org_gwtproject_i18n_client_NumberFormat_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isDecimalSeparatorAlwaysShown__() {
   return this.f_decimalSeparatorAlwaysShown__org_gwtproject_i18n_client_NumberFormat_;
  }
- /**
-  * @param {StringBuilder} digits
-  * @public
-  */
- m_addExponent__java_lang_StringBuilder_$p_org_gwtproject_i18n_client_NumberFormat(digits) {
+ 
+ m_addExponent__java_lang_StringBuilder_$p_org_gwtproject_i18n_client_NumberFormat(/** StringBuilder */ digits) {
   digits.m_append__java_lang_String(this.f_numberConstants__org_gwtproject_i18n_client_NumberFormat_.m_exponentialSymbol__());
   if (this.f_exponent__org_gwtproject_i18n_client_NumberFormat_ < 0) {
    this.f_exponent__org_gwtproject_i18n_client_NumberFormat_ = -this.f_exponent__org_gwtproject_i18n_client_NumberFormat_;
@@ -671,12 +498,8 @@ class NumberFormat extends j_l_Object {
   }
   digits.m_append__java_lang_String(exponentDigits);
  }
- /**
-  * @param {StringBuilder} digits
-  * @param {number} decimalSeparator
-  * @public
-  */
- m_addZeroAndDecimal__java_lang_StringBuilder__char_$p_org_gwtproject_i18n_client_NumberFormat(digits, decimalSeparator) {
+ 
+ m_addZeroAndDecimal__java_lang_StringBuilder__char_$p_org_gwtproject_i18n_client_NumberFormat(/** StringBuilder */ digits, /** number */ decimalSeparator) {
   if (this.f_digitsLength__org_gwtproject_i18n_client_NumberFormat_ == 0) {
    digits.m_insert__int__char(0, 48 /* '0' */);
    ++this.f_decimalPosition__org_gwtproject_i18n_client_NumberFormat_;
@@ -687,11 +510,8 @@ class NumberFormat extends j_l_Object {
    ++this.f_digitsLength__org_gwtproject_i18n_client_NumberFormat_;
   }
  }
- /**
-  * @param {StringBuilder} digits
-  * @public
-  */
- m_adjustFractionDigits__java_lang_StringBuilder_$p_org_gwtproject_i18n_client_NumberFormat(digits) {
+ 
+ m_adjustFractionDigits__java_lang_StringBuilder_$p_org_gwtproject_i18n_client_NumberFormat(/** StringBuilder */ digits) {
   let requiredDigits = this.f_decimalPosition__org_gwtproject_i18n_client_NumberFormat_ + this.f_minimumFractionDigits__org_gwtproject_i18n_client_NumberFormat_;
   if (this.f_digitsLength__org_gwtproject_i18n_client_NumberFormat_ < requiredDigits) {
    while (this.f_digitsLength__org_gwtproject_i18n_client_NumberFormat_ < requiredDigits) {
@@ -712,11 +532,8 @@ class NumberFormat extends j_l_Object {
    }
   }
  }
- /**
-  * @param {StringBuilder} digits
-  * @public
-  */
- m_computeExponent__java_lang_StringBuilder_$p_org_gwtproject_i18n_client_NumberFormat(digits) {
+ 
+ m_computeExponent__java_lang_StringBuilder_$p_org_gwtproject_i18n_client_NumberFormat(/** StringBuilder */ digits) {
   let strip = 0;
   while (strip < this.f_digitsLength__org_gwtproject_i18n_client_NumberFormat_ - 1 && digits.m_charAt__int(strip) == 48 /* '0' */) {
    ++strip;
@@ -743,12 +560,8 @@ class NumberFormat extends j_l_Object {
    this.f_decimalPosition__org_gwtproject_i18n_client_NumberFormat_ = this.f_minimumIntegerDigits__org_gwtproject_i18n_client_NumberFormat_;
   }
  }
- /**
-  * @param {number} ch
-  * @return {number}
-  * @public
-  */
- m_getDigit__char_$p_org_gwtproject_i18n_client_NumberFormat(ch) {
+ /** @return {number} */
+ m_getDigit__char_$p_org_gwtproject_i18n_client_NumberFormat(/** number */ ch) {
   if (48 /* '0' */ <= ch && ch <= 48 /* '0' */ + 9) {
    return (ch - 48 /* '0' */);
   } else {
@@ -756,13 +569,8 @@ class NumberFormat extends j_l_Object {
    return ((zeroChar <= ch && ch <= zeroChar + 9) ? (ch - zeroChar) : -1);
   }
  }
- /**
-  * @param {StringBuilder} digits
-  * @param {number} groupingSeparator
-  * @param {number} g
-  * @public
-  */
- m_insertGroupingSeparators__java_lang_StringBuilder__char__int_$p_org_gwtproject_i18n_client_NumberFormat(digits, groupingSeparator, g) {
+ 
+ m_insertGroupingSeparators__java_lang_StringBuilder__char__int_$p_org_gwtproject_i18n_client_NumberFormat(/** StringBuilder */ digits, /** number */ groupingSeparator, /** number */ g) {
   if (g > 0) {
    for (let i = g; i < this.f_decimalPosition__org_gwtproject_i18n_client_NumberFormat_; i += g + 1) {
     digits.m_insert__int__char(this.f_decimalPosition__org_gwtproject_i18n_client_NumberFormat_ - i, groupingSeparator);
@@ -771,12 +579,8 @@ class NumberFormat extends j_l_Object {
    }
   }
  }
- /**
-  * @param {StringBuilder} digits
-  * @param {number} zero
-  * @public
-  */
- m_localizeDigits__java_lang_StringBuilder__char_$p_org_gwtproject_i18n_client_NumberFormat(digits, zero) {
+ 
+ m_localizeDigits__java_lang_StringBuilder__char_$p_org_gwtproject_i18n_client_NumberFormat(/** StringBuilder */ digits, /** number */ zero) {
   let n = digits.m_length__();
   for (let i = 0; i < n; ++i) {
    let ch = digits.m_charAt__int(i);
@@ -785,15 +589,8 @@ class NumberFormat extends j_l_Object {
    }
   }
  }
- /**
-  * @param {?string} pattern
-  * @param {number} start
-  * @param {StringBuilder} affix
-  * @param {boolean} inNegativePattern
-  * @return {number}
-  * @public
-  */
- m_parseAffix__java_lang_String__int__java_lang_StringBuilder__boolean_$p_org_gwtproject_i18n_client_NumberFormat(pattern, start, affix, inNegativePattern) {
+ /** @return {number} */
+ m_parseAffix__java_lang_String__int__java_lang_StringBuilder__boolean_$p_org_gwtproject_i18n_client_NumberFormat(/** ?string */ pattern, /** number */ start, /** StringBuilder */ affix, /** boolean */ inNegativePattern) {
   affix.m_delete__int__int(0, affix.m_length__());
   let inQuote = false;
   let len = j_l_String.m_length__java_lang_String(pattern);
@@ -860,13 +657,8 @@ class NumberFormat extends j_l_Object {
   }
   return len - start;
  }
- /**
-  * @param {?string} text
-  * @param {Array<number>} pos
-  * @return {number}
-  * @public
-  */
- m_parseNumber__java_lang_String__arrayOf_int_$p_org_gwtproject_i18n_client_NumberFormat(text, pos) {
+ /** @return {number} */
+ m_parseNumber__java_lang_String__arrayOf_int_$p_org_gwtproject_i18n_client_NumberFormat(/** ?string */ text, /** Array<number> */ pos) {
   let /** number */ ret;
   let sawDecimal = false;
   let sawExponent = false;
@@ -928,7 +720,7 @@ class NumberFormat extends j_l_Object {
   } catch (__$exc) {
    __$exc = $Exceptions.toJava(__$exc);
    if (NumberFormatException.$isInstance(__$exc)) {
-    let e = /**@type {NumberFormatException} */ (__$exc);
+    let e = /**@type {NumberFormatException}*/ (__$exc);
     throw $Exceptions.toJs(NumberFormatException.$create__java_lang_String(text));
    } else {
     throw $Exceptions.toJs(__$exc);
@@ -937,11 +729,8 @@ class NumberFormat extends j_l_Object {
   ret = ret / scale;
   return ret;
  }
- /**
-  * @param {?string} pattern
-  * @public
-  */
- m_parsePattern__java_lang_String_$p_org_gwtproject_i18n_client_NumberFormat(pattern) {
+ 
+ m_parsePattern__java_lang_String_$p_org_gwtproject_i18n_client_NumberFormat(/** ?string */ pattern) {
   let pos = 0;
   let affix = StringBuilder.$create__();
   pos += this.m_parseAffix__java_lang_String__int__java_lang_StringBuilder__boolean_$p_org_gwtproject_i18n_client_NumberFormat(pattern, pos, affix, false);
@@ -961,14 +750,8 @@ class NumberFormat extends j_l_Object {
    this.f_negativeSuffix__org_gwtproject_i18n_client_NumberFormat_ = this.f_positiveSuffix__org_gwtproject_i18n_client_NumberFormat_;
   }
  }
- /**
-  * @param {?string} pattern
-  * @param {number} start
-  * @param {boolean} ignorePattern
-  * @return {number}
-  * @public
-  */
- m_parseTrunk__java_lang_String__int__boolean_$p_org_gwtproject_i18n_client_NumberFormat(pattern, start, ignorePattern) {
+ /** @return {number} */
+ m_parseTrunk__java_lang_String__int__boolean_$p_org_gwtproject_i18n_client_NumberFormat(/** ?string */ pattern, /** number */ start, /** boolean */ ignorePattern) {
   let decimalPos = -1;
   let digitLeftCount = 0, zeroDigitCount = 0, digitRightCount = 0;
   let groupingCount = $Primitives.$narrowIntToByte(-1);
@@ -1066,11 +849,8 @@ class NumberFormat extends j_l_Object {
   this.f_decimalSeparatorAlwaysShown__org_gwtproject_i18n_client_NumberFormat_ = (decimalPos == 0 || decimalPos == totalDigits);
   return pos - start;
  }
- /**
-  * @param {StringBuilder} digits
-  * @public
-  */
- m_processLeadingZeros__java_lang_StringBuilder_$p_org_gwtproject_i18n_client_NumberFormat(digits) {
+ 
+ m_processLeadingZeros__java_lang_StringBuilder_$p_org_gwtproject_i18n_client_NumberFormat(/** StringBuilder */ digits) {
   if (this.f_decimalPosition__org_gwtproject_i18n_client_NumberFormat_ > this.f_digitsLength__org_gwtproject_i18n_client_NumberFormat_) {
    while (this.f_digitsLength__org_gwtproject_i18n_client_NumberFormat_ < this.f_decimalPosition__org_gwtproject_i18n_client_NumberFormat_) {
     digits.m_append__char(48 /* '0' */);
@@ -1102,12 +882,8 @@ class NumberFormat extends j_l_Object {
    }
   }
  }
- /**
-  * @param {StringBuilder} digits
-  * @param {number} i
-  * @public
-  */
- m_propagateCarry__java_lang_StringBuilder__int_$p_org_gwtproject_i18n_client_NumberFormat(digits, i) {
+ 
+ m_propagateCarry__java_lang_StringBuilder__int_$p_org_gwtproject_i18n_client_NumberFormat(/** StringBuilder */ digits, /** number */ i) {
   let carry = true;
   while (carry && i >= 0) {
    let digit = digits.m_charAt__int(i);
@@ -1124,19 +900,14 @@ class NumberFormat extends j_l_Object {
    ++this.f_digitsLength__org_gwtproject_i18n_client_NumberFormat_;
   }
  }
- /**
-  * @param {StringBuilder} digits
-  * @public
-  */
- m_roundValue__java_lang_StringBuilder_$p_org_gwtproject_i18n_client_NumberFormat(digits) {
+ 
+ m_roundValue__java_lang_StringBuilder_$p_org_gwtproject_i18n_client_NumberFormat(/** StringBuilder */ digits) {
   if (this.f_digitsLength__org_gwtproject_i18n_client_NumberFormat_ > this.f_decimalPosition__org_gwtproject_i18n_client_NumberFormat_ + this.f_maximumFractionDigits__org_gwtproject_i18n_client_NumberFormat_ && digits.m_charAt__int(this.f_decimalPosition__org_gwtproject_i18n_client_NumberFormat_ + this.f_maximumFractionDigits__org_gwtproject_i18n_client_NumberFormat_) >= 53 /* '5' */) {
    let i = this.f_decimalPosition__org_gwtproject_i18n_client_NumberFormat_ + this.f_maximumFractionDigits__org_gwtproject_i18n_client_NumberFormat_ - 1;
    this.m_propagateCarry__java_lang_StringBuilder__int_$p_org_gwtproject_i18n_client_NumberFormat(digits, i);
   }
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_i18n_client_NumberFormat() {
   this.f_decimalSeparatorAlwaysShown__org_gwtproject_i18n_client_NumberFormat_ = false;
   this.f_groupingSize__org_gwtproject_i18n_client_NumberFormat_ = 3;
@@ -1152,30 +923,19 @@ class NumberFormat extends j_l_Object {
   this.f_positiveSuffix__org_gwtproject_i18n_client_NumberFormat_ = "";
   this.f_useExponentialNotation__org_gwtproject_i18n_client_NumberFormat_ = false;
  }
- /**
-  * @return {NumberConstants}
-  * @public
-  */
+ /** @return {NumberConstants} */
  static get f_localizedNumberConstants__org_gwtproject_i18n_client_NumberFormat() {
   return (NumberFormat.$clinit(), NumberFormat.$f_localizedNumberConstants__org_gwtproject_i18n_client_NumberFormat);
  }
- /**
-  * @return {NumberConstants}
-  * @public
-  */
+ /** @return {NumberConstants} */
  static get f_defaultNumberConstants__org_gwtproject_i18n_client_NumberFormat() {
   return (NumberFormat.$clinit(), NumberFormat.$f_defaultNumberConstants__org_gwtproject_i18n_client_NumberFormat);
  }
- /**
-  * @param {NumberConstants} value
-  * @public
-  */
- static set f_defaultNumberConstants__org_gwtproject_i18n_client_NumberFormat(value) {
+ 
+ static set f_defaultNumberConstants__org_gwtproject_i18n_client_NumberFormat(/** NumberConstants */ value) {
   (NumberFormat.$clinit(), NumberFormat.$f_defaultNumberConstants__org_gwtproject_i18n_client_NumberFormat = value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NumberFormat.$clinit = () =>{};
   NumberFormat.$loadModules();
@@ -1184,17 +944,11 @@ class NumberFormat extends j_l_Object {
   NumberFormat.$f_defaultNumberConstants__org_gwtproject_i18n_client_NumberFormat = NumberFormat.$f_localizedNumberConstants__org_gwtproject_i18n_client_NumberFormat;
   NumberFormat.f_latinNumberConstants__org_gwtproject_i18n_client_NumberFormat_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof NumberFormat;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Double = goog.module.get('java.lang.Double$impl');
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
@@ -1224,45 +978,45 @@ class NumberFormat extends j_l_Object {
 }
 $Util.$setClassMetadata(NumberFormat, 'org.gwtproject.i18n.client.NumberFormat');
 
-/** @private {NumberConstants} */
+/**@private {NumberConstants}*/
 NumberFormat.$f_localizedNumberConstants__org_gwtproject_i18n_client_NumberFormat;
-/** @private {NumberConstants} */
+/**@private {NumberConstants}*/
 NumberFormat.$f_defaultNumberConstants__org_gwtproject_i18n_client_NumberFormat;
-/** @public {NumberFormat} */
+/**@type {NumberFormat}*/
 NumberFormat.f_cachedCurrencyFormat__org_gwtproject_i18n_client_NumberFormat_;
-/** @public {NumberFormat} */
+/**@type {NumberFormat}*/
 NumberFormat.f_cachedDecimalFormat__org_gwtproject_i18n_client_NumberFormat_;
-/** @public {NumberFormat} */
+/**@type {NumberFormat}*/
 NumberFormat.f_cachedPercentFormat__org_gwtproject_i18n_client_NumberFormat_;
-/** @public {NumberFormat} */
+/**@type {NumberFormat}*/
 NumberFormat.f_cachedScientificFormat__org_gwtproject_i18n_client_NumberFormat_;
-/** @public {number} @const */
+/**@const {number}*/
 NumberFormat.f_CURRENCY_SIGN__org_gwtproject_i18n_client_NumberFormat_ = 164 /* '\u00A4' */;
-/** @public {NumberConstants} */
+/**@type {NumberConstants}*/
 NumberFormat.f_latinNumberConstants__org_gwtproject_i18n_client_NumberFormat_;
-/** @public {?string} @const */
+/**@const {?string}*/
 NumberFormat.f_LOCALIZED_COMMA_EQUIVALENTS__org_gwtproject_i18n_client_NumberFormat_ = ",\u060C\u066B\u3001\uFE10\uFE11\uFE50\uFE51\uFF0C\uFF64";
-/** @public {?string} @const */
+/**@const {?string}*/
 NumberFormat.f_LOCALIZED_DOT_EQUIVALENTS__org_gwtproject_i18n_client_NumberFormat_ = ".\u2024\u3002\uFE12\uFE52\uFF0E\uFF61";
-/** @public {number} @const */
+/**@const {number}*/
 NumberFormat.f_PATTERN_DECIMAL_SEPARATOR__org_gwtproject_i18n_client_NumberFormat_ = 46 /* '.' */;
-/** @public {number} @const */
+/**@const {number}*/
 NumberFormat.f_PATTERN_DIGIT__org_gwtproject_i18n_client_NumberFormat_ = 35 /* '#' */;
-/** @public {number} @const */
+/**@const {number}*/
 NumberFormat.f_PATTERN_EXPONENT__org_gwtproject_i18n_client_NumberFormat_ = 69 /* 'E' */;
-/** @public {number} @const */
+/**@const {number}*/
 NumberFormat.f_PATTERN_GROUPING_SEPARATOR__org_gwtproject_i18n_client_NumberFormat_ = 44 /* ',' */;
-/** @public {number} @const */
+/**@const {number}*/
 NumberFormat.f_PATTERN_MINUS__org_gwtproject_i18n_client_NumberFormat_ = 45 /* '-' */;
-/** @public {number} @const */
+/**@const {number}*/
 NumberFormat.f_PATTERN_PER_MILLE__org_gwtproject_i18n_client_NumberFormat_ = 8240 /* '\u2030' */;
-/** @public {number} @const */
+/**@const {number}*/
 NumberFormat.f_PATTERN_PERCENT__org_gwtproject_i18n_client_NumberFormat_ = 37 /* '%' */;
-/** @public {number} @const */
+/**@const {number}*/
 NumberFormat.f_PATTERN_SEPARATOR__org_gwtproject_i18n_client_NumberFormat_ = 59 /* ';' */;
-/** @public {number} @const */
+/**@const {number}*/
 NumberFormat.f_PATTERN_ZERO_DIGIT__org_gwtproject_i18n_client_NumberFormat_ = 48 /* '0' */;
-/** @public {number} @const */
+/**@const {number}*/
 NumberFormat.f_QUOTE__org_gwtproject_i18n_client_NumberFormat_ = 39 /* '\'' */;
 
 exports = NumberFormat; 

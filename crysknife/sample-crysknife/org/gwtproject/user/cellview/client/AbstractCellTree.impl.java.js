@@ -26,124 +26,72 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {HasKeyboardSelectionPolicy}
   */
 class AbstractCellTree extends Composite {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {KeyboardSelectionPolicy} */
+  /**@type {KeyboardSelectionPolicy}*/
   this.f_keyboardSelectionPolicy__org_gwtproject_user_cellview_client_AbstractCellTree_;
-  /** @public {TreeViewModel} */
+  /**@type {TreeViewModel}*/
   this.f_viewModel__org_gwtproject_user_cellview_client_AbstractCellTree_;
  }
- /**
-  * @param {TreeViewModel} viewModel
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_AbstractCellTree__org_gwtproject_view_client_TreeViewModel(viewModel) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_AbstractCellTree__org_gwtproject_view_client_TreeViewModel(/** TreeViewModel */ viewModel) {
   this.$ctor__org_gwtproject_user_client_ui_Composite__();
   this.$init___$p_org_gwtproject_user_cellview_client_AbstractCellTree();
   this.f_viewModel__org_gwtproject_user_cellview_client_AbstractCellTree_ = viewModel;
  }
- /**
-  * @override
-  * @param {CloseHandler<TreeNode>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addCloseHandler__org_gwtproject_event_logical_shared_CloseHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addCloseHandler__org_gwtproject_event_logical_shared_CloseHandler(/** CloseHandler<TreeNode> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, CloseEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {OpenHandler<TreeNode>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addOpenHandler__org_gwtproject_event_logical_shared_OpenHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addOpenHandler__org_gwtproject_event_logical_shared_OpenHandler(/** OpenHandler<TreeNode> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, OpenEvent.m_getType__());
  }
- /**
-  * @override
-  * @return {KeyboardSelectionPolicy}
-  * @public
-  */
+ /** @override @return {KeyboardSelectionPolicy} */
  m_getKeyboardSelectionPolicy__() {
   return this.f_keyboardSelectionPolicy__org_gwtproject_user_cellview_client_AbstractCellTree_;
  }
- /**
-  * @abstract
-  * @return {TreeNode}
-  * @public
-  */
+ /** @abstract @return {TreeNode} */
  m_getRootTreeNode__() {}
- /**
-  * @return {TreeViewModel}
-  * @public
-  */
+ /** @return {TreeViewModel} */
  m_getTreeViewModel__() {
   return this.f_viewModel__org_gwtproject_user_cellview_client_AbstractCellTree_;
  }
- /**
-  * @override
-  * @param {KeyboardSelectionPolicy} policy
-  * @public
-  */
- m_setKeyboardSelectionPolicy__org_gwtproject_user_cellview_client_HasKeyboardSelectionPolicy_KeyboardSelectionPolicy(policy) {
+ /** @override */
+ m_setKeyboardSelectionPolicy__org_gwtproject_user_cellview_client_HasKeyboardSelectionPolicy_KeyboardSelectionPolicy(/** KeyboardSelectionPolicy */ policy) {
   if ($Equality.$same(policy, null)) {
    throw $Exceptions.toJs(NullPointerException.$create__java_lang_String("KeyboardSelectionPolicy cannot be null"));
   }
   this.f_keyboardSelectionPolicy__org_gwtproject_user_cellview_client_AbstractCellTree_ = policy;
  }
- /**
-  * @template T
-  * @param {T} value
-  * @return {NodeInfo<?>}
-  * @public
-  */
- m_getNodeInfo__java_lang_Object(value) {
+ /** @template T @return {NodeInfo<?>} */
+ m_getNodeInfo__java_lang_Object(/** T */ value) {
   return this.f_viewModel__org_gwtproject_user_cellview_client_AbstractCellTree_.m_getNodeInfo__java_lang_Object(value);
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isKeyboardSelectionDisabled__() {
   return $Equality.$same(KeyboardSelectionPolicy.f_DISABLED__org_gwtproject_user_cellview_client_HasKeyboardSelectionPolicy_KeyboardSelectionPolicy, this.f_keyboardSelectionPolicy__org_gwtproject_user_cellview_client_AbstractCellTree_);
  }
- /**
-  * @param {*} value
-  * @return {boolean}
-  * @public
-  */
- m_isLeaf__java_lang_Object(value) {
+ /** @return {boolean} */
+ m_isLeaf__java_lang_Object(/** * */ value) {
   return this.f_viewModel__org_gwtproject_user_cellview_client_AbstractCellTree_.m_isLeaf__java_lang_Object(value);
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_cellview_client_AbstractCellTree() {
   this.f_keyboardSelectionPolicy__org_gwtproject_user_cellview_client_AbstractCellTree_ = KeyboardSelectionPolicy.f_ENABLED__org_gwtproject_user_cellview_client_HasKeyboardSelectionPolicy_KeyboardSelectionPolicy;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AbstractCellTree.$clinit = () =>{};
   AbstractCellTree.$loadModules();
   Composite.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AbstractCellTree;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   NullPointerException = goog.module.get('java.lang.NullPointerException$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

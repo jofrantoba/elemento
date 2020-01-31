@@ -6,24 +6,17 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Overlay = goog.forwardDeclare('jsinterop.base.JsPropertyMap.$Overlay$impl');
 
 class UIEventInit_$Overlay {
- /**
-  * @return {UIEventInit}
-  * @public
-  */
+ /** @return {UIEventInit} */
  static m_create__() {
   UIEventInit_$Overlay.$clinit();
-  return /**@type {UIEventInit} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
+  return /**@type {UIEventInit}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   UIEventInit_$Overlay.$clinit = () =>{};
   UIEventInit_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');

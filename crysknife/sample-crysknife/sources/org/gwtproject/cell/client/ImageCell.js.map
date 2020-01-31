@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ImageCell.impl.java.js",
-"lineCount":68,
-"mappings":"A;;;;;;;;;;;;;;;;MAiCa,S;;;;CAAA,W;EAAAA,Q;;;;;;QAWJ,S;EAAAC,oB;EAAAA,gC;EAAAA,0D;EAAAA,iB;;;;;CAAA,6C;EACLC,6I;;;;;;;;CAIU,mH,CAAoBC,O,EAAgBC,K,EAAuBC,E;EACrEC;GAEEA,wJAFFA;G;;;;;;;;;;CAjBS,mH;EAAAA,2L;;;;;QAAA,O;EAAAC,4B;EAAAA,yB;EAAAA;",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;;;;;;MAiCa,S;;CAAA,W;EAAAA,Q;;;QAWJ,S;EAAAC,oB;EAAAA,gC;EAAAA,0D;EAAAA,iB;;;CAAA,6C;EACLC,4I;;;CAIU,mH,gBAAoBC,O,iBAAgBC,K,yBAAuBC,E;EACrEC;GAEEA,wJAFFA;G;;;;CAjBS,mH;EAAAA,0L;;;QAAA,O;EAAAC,4B;EAAAA,yB;EAAAA;",
 "sources":["ImageCell.java"],
 "names":["org.gwtproject.cell.client.ImageCell.<synthetic: ctor_js>","org.gwtproject.cell.client.ImageCell.<synthetic: ctor_create>","org.gwtproject.cell.client.ImageCell.<init>","context","value","sb","org.gwtproject.cell.client.ImageCell.render","org.gwtproject.cell.client.ImageCell.<clinit>"]
 }

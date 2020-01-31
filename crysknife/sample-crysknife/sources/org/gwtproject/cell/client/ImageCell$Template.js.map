@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ImageCell$Template.impl.java.js",
-"lineCount":79,
-"mappings":"A;;;;;;;;;;;;;MAmCY,Q;;;;;;;CAGC,uB,CAAWA,G;;;;;;QAHZ,M;EAAAC,mB;EAAAA,8B;;;;;;QACR,6D;EAAAC,iG;;;;;QADQ,O;EAAAC,2B;EAAAA,wB;EACRA,0G;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AADQ;;",
+"lineCount":54,
+"mappings":"A;;;;;;;;;;;;;MAmCY,Q;;CAGC,uB,gBAAWA,G;;QAHZ,M;EAAAC,mB;EAAAA,8B;;;QACR,6D;EAAAC,iG;;;QADQ,O;EAAAC,2B;EAAAA,wB;EACRA,0G;;;;;;;;;;;;;;;;;;;;;;;AADQ;;",
 "sources":["ImageCell.java"],
 "names":["url","org.gwtproject.cell.client.ImageCell$Template.<synthetic: adapt_lambda>","org.gwtproject.cell.client.ImageCell$Template.<synthetic: getter>","org.gwtproject.cell.client.ImageCell$Template.<clinit>"]
 }

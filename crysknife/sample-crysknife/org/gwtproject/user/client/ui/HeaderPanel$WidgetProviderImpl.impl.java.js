@@ -13,40 +13,26 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {WidgetProvider}
   */
 class WidgetProviderImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {HeaderPanel} */
+  /**@type {HeaderPanel}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_HeaderPanel_WidgetProviderImpl;
  }
- /**
-  * @param {HeaderPanel} $outer_this
-  * @return {!WidgetProviderImpl}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_HeaderPanel($outer_this) {
+ /** @return {!WidgetProviderImpl} */
+ static $create__org_gwtproject_user_client_ui_HeaderPanel(/** HeaderPanel */ $outer_this) {
   WidgetProviderImpl.$clinit();
   let $instance = new WidgetProviderImpl();
   $instance.$ctor__org_gwtproject_user_client_ui_HeaderPanel_WidgetProviderImpl__org_gwtproject_user_client_ui_HeaderPanel($outer_this);
   return $instance;
  }
- /**
-  * @param {HeaderPanel} $outer_this
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_HeaderPanel_WidgetProviderImpl__org_gwtproject_user_client_ui_HeaderPanel($outer_this) {
+ 
+ $ctor__org_gwtproject_user_client_ui_HeaderPanel_WidgetProviderImpl__org_gwtproject_user_client_ui_HeaderPanel(/** HeaderPanel */ $outer_this) {
   this.f_$outer_this__org_gwtproject_user_client_ui_HeaderPanel_WidgetProviderImpl = $outer_this;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {number} index
-  * @return {Widget}
-  * @public
-  */
- m_get__int(index) {
+ /** @override @return {Widget} */
+ m_get__int(/** number */ index) {
   switch (index) {
    case 0: 
     return this.f_$outer_this__org_gwtproject_user_client_ui_HeaderPanel_WidgetProviderImpl.f_header__org_gwtproject_user_client_ui_HeaderPanel_;
@@ -57,25 +43,17 @@ class WidgetProviderImpl extends j_l_Object {
   }
   throw $Exceptions.toJs(ArrayIndexOutOfBoundsException.$create__int(index));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   WidgetProviderImpl.$clinit = () =>{};
   WidgetProviderImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof WidgetProviderImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   ArrayIndexOutOfBoundsException = goog.module.get('java.lang.ArrayIndexOutOfBoundsException$impl');
   $Exceptions = goog.module.get('vmbootstrap.Exceptions$impl');

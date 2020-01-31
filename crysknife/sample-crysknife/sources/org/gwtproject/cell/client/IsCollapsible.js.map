@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"IsCollapsible.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;MA4CiB,a;;;;;;CAQP,kB;;;;;;CAQA,mB;;;;;;CAQH,0B,CAAwBA,W;;;;;;CAQxB,2B,CAAyBA,W;;;;QAhCf,O;EAAAC,gC;EAAAA;",
+"lineCount":20,
+"mappings":"A;;;;;;;MA4CiB,a;;CAQP,kB;;CAQA,mB;;CAQH,0B,gBAAwBA,W;;CAQxB,2B,gBAAyBA,W;;QAhCf,O;EAAAC,gC;EAAAA;",
 "sources":["IsCollapsible.java"],
 "names":["isCollapsed","org.gwtproject.cell.client.IsCollapsible.<clinit>"]
 }

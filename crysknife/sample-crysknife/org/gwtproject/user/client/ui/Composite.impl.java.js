@@ -25,30 +25,22 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {IsRenderable}
   */
 class Composite extends Widget {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Widget} */
+  /**@type {Widget}*/
   this.f_widget__org_gwtproject_user_client_ui_Composite_;
-  /** @public {IsRenderable} */
+  /**@type {IsRenderable}*/
   this.f_renderable__org_gwtproject_user_client_ui_Composite_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_elementToWrap__org_gwtproject_user_client_ui_Composite_;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_Composite__() {
   this.$ctor__org_gwtproject_user_client_ui_Widget__();
  }
- /**
-  * @override
-  * @param {Object} element
-  * @public
-  */
- m_claimElement__org_gwtproject_dom_client_Element(element) {
+ /** @override */
+ m_claimElement__org_gwtproject_dom_client_Element(/** Object */ element) {
   if (!$Equality.$same(this.f_renderable__org_gwtproject_user_client_ui_Composite_, null)) {
    this.f_renderable__org_gwtproject_user_client_ui_Composite_.m_claimElement__org_gwtproject_dom_client_Element(element);
    this.m_setElement__org_gwtproject_dom_client_Element(this.f_widget__org_gwtproject_user_client_ui_Composite_.m_getElement__());
@@ -56,10 +48,7 @@ class Composite extends Widget {
    this.f_elementToWrap__org_gwtproject_user_client_ui_Composite_ = element;
   }
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_initializeClaimedElement__() {
   if (!$Equality.$same(this.f_renderable__org_gwtproject_user_client_ui_Composite_, null)) {
    this.f_renderable__org_gwtproject_user_client_ui_Composite_.m_initializeClaimedElement__();
@@ -67,75 +56,49 @@ class Composite extends Widget {
    this.f_elementToWrap__org_gwtproject_user_client_ui_Composite_.parentNode.replaceChild(this.f_widget__org_gwtproject_user_client_ui_Composite_.m_getElement__(), this.f_elementToWrap__org_gwtproject_user_client_ui_Composite_);
   }
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isAttached__() {
   if (!$Equality.$same(this.f_widget__org_gwtproject_user_client_ui_Composite_, null)) {
    return this.f_widget__org_gwtproject_user_client_ui_Composite_.m_isAttached__();
   }
   return false;
  }
- /**
-  * @override
-  * @param {Event} event
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_user_client_Event(event) {
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_user_client_Event(/** Event */ event) {
   super.m_onBrowserEvent__org_gwtproject_user_client_Event(event);
   this.f_widget__org_gwtproject_user_client_ui_Composite_.m_onBrowserEvent__org_gwtproject_user_client_Event(event);
  }
- /**
-  * @override
-  * @param {RenderableStamper} stamper
-  * @return {SafeHtml}
-  * @public
-  */
- m_render__org_gwtproject_user_client_ui_RenderableStamper(stamper) {
+ /** @override @return {SafeHtml} */
+ m_render__org_gwtproject_user_client_ui_RenderableStamper(/** RenderableStamper */ stamper) {
   if (!$Equality.$same(this.f_renderable__org_gwtproject_user_client_ui_Composite_, null)) {
    return this.f_renderable__org_gwtproject_user_client_ui_Composite_.m_render__org_gwtproject_user_client_ui_RenderableStamper(stamper);
   } else {
    this.m_checkInit___$p_org_gwtproject_user_client_ui_Composite();
    let spanBuilder = HtmlBuilderFactory.m_get__().m_createSpanBuilder__();
-   /**@type {HtmlSpanBuilder} */ ($Casts.$to(stamper.m_stamp__org_gwtproject_dom_builder_shared_HtmlElementBuilderBase(spanBuilder), HtmlSpanBuilder)).m_end__();
+   /**@type {HtmlSpanBuilder}*/ ($Casts.$to(stamper.m_stamp__org_gwtproject_dom_builder_shared_HtmlElementBuilderBase(spanBuilder), HtmlSpanBuilder)).m_end__();
    return spanBuilder.m_asSafeHtml__();
   }
  }
- /**
-  * @override
-  * @param {RenderableStamper} stamper
-  * @param {SafeHtmlBuilder} builder
-  * @public
-  */
- m_render__org_gwtproject_user_client_ui_RenderableStamper__org_gwtproject_safehtml_shared_SafeHtmlBuilder(stamper, builder) {
+ /** @override */
+ m_render__org_gwtproject_user_client_ui_RenderableStamper__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** RenderableStamper */ stamper, /** SafeHtmlBuilder */ builder) {
   if (!$Equality.$same(this.f_renderable__org_gwtproject_user_client_ui_Composite_, null)) {
    this.f_renderable__org_gwtproject_user_client_ui_Composite_.m_render__org_gwtproject_user_client_ui_RenderableStamper__org_gwtproject_safehtml_shared_SafeHtmlBuilder(stamper, builder);
   } else {
    builder.m_append__org_gwtproject_safehtml_shared_SafeHtml(this.m_render__org_gwtproject_user_client_ui_RenderableStamper(stamper));
   }
  }
- /**
-  * @return {Widget}
-  * @public
-  */
+ /** @return {Widget} */
  m_getWidget__() {
   return this.f_widget__org_gwtproject_user_client_ui_Composite_;
  }
- /**
-  * @public
-  */
+ 
  m_checkInit___$p_org_gwtproject_user_client_ui_Composite() {
   if ($Equality.$same(this.f_widget__org_gwtproject_user_client_ui_Composite_, null)) {
    throw $Exceptions.toJs(IllegalStateException.$create__java_lang_String("initWidget() is not called yet"));
   }
  }
- /**
-  * @param {Widget} widget
-  * @public
-  */
- m_initWidget__org_gwtproject_user_client_ui_Widget(widget) {
+ 
+ m_initWidget__org_gwtproject_user_client_ui_Widget(/** Widget */ widget) {
   if (!$Equality.$same(this.f_widget__org_gwtproject_user_client_ui_Composite_, null)) {
    throw $Exceptions.toJs(IllegalStateException.$create__java_lang_String("Composite.initWidget() may only be " + "called once."));
   }
@@ -143,7 +106,7 @@ class Composite extends Widget {
    throw $Exceptions.toJs(NullPointerException.$create__java_lang_String("widget cannot be null"));
   }
   if (IsRenderable.$isInstance(widget)) {
-   this.f_renderable__org_gwtproject_user_client_ui_Composite_ = /**@type {IsRenderable} */ ($Casts.$to(widget, IsRenderable));
+   this.f_renderable__org_gwtproject_user_client_ui_Composite_ = /**@type {IsRenderable}*/ ($Casts.$to(widget, IsRenderable));
   }
   widget.m_removeFromParent__();
   let elem = widget.m_getElement__();
@@ -154,10 +117,7 @@ class Composite extends Widget {
   this.f_widget__org_gwtproject_user_client_ui_Composite_ = widget;
   widget.m_setParent__org_gwtproject_user_client_ui_Widget(this);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onAttach__() {
   this.m_checkInit___$p_org_gwtproject_user_client_ui_Composite();
   if (!this.m_isOrWasAttached__()) {
@@ -170,10 +130,7 @@ class Composite extends Widget {
   this.m_onLoad__();
   AttachEvent.m_fire__org_gwtproject_event_logical_shared_HasAttachHandlers__boolean(this, true);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onDetach__() {
   try {
    this.m_onUnload__();
@@ -183,42 +140,26 @@ class Composite extends Widget {
    this.f_widget__org_gwtproject_user_client_ui_Composite_.m_onDetach__();
   }
  }
- /**
-  * @override
-  * @return {Object}
-  * @public
-  */
+ /** @override @return {Object} */
  m_resolvePotentialElement__() {
   this.m_setElement__org_gwtproject_dom_client_Element(this.f_widget__org_gwtproject_user_client_ui_Composite_.m_resolvePotentialElement__());
   return this.m_getElement__();
  }
- /**
-  * @param {Widget} widget
-  * @public
-  * @deprecated
-  */
- m_setWidget__org_gwtproject_user_client_ui_Widget(widget) {
+ /** @deprecated */
+ m_setWidget__org_gwtproject_user_client_ui_Widget(/** Widget */ widget) {
   this.m_initWidget__org_gwtproject_user_client_ui_Widget(widget);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Composite.$clinit = () =>{};
   Composite.$loadModules();
   Widget.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Composite;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');
   NullPointerException = goog.module.get('java.lang.NullPointerException$impl');

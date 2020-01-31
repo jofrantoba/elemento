@@ -19,160 +19,87 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {HtmlContent<E, HtmlContentBuilder<E>>}
   */
 class HtmlContentBuilder extends ElementBuilder {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @template E
-  * @param {E} element
-  * @return {!HtmlContentBuilder<E>}
-  * @public
-  */
- static $create__elemental2_dom_HTMLElement(element) {
+ /** @template E @return {!HtmlContentBuilder<E>} */
+ static $create__elemental2_dom_HTMLElement(/** E */ element) {
   HtmlContentBuilder.$clinit();
   let $instance = new HtmlContentBuilder();
   $instance.$ctor__org_jboss_elemento_HtmlContentBuilder__elemental2_dom_HTMLElement(element);
   return $instance;
  }
- /**
-  * @param {E} element
-  * @public
-  */
- $ctor__org_jboss_elemento_HtmlContentBuilder__elemental2_dom_HTMLElement(element) {
+ 
+ $ctor__org_jboss_elemento_HtmlContentBuilder__elemental2_dom_HTMLElement(/** E */ element) {
   this.$ctor__org_jboss_elemento_ElementBuilder__elemental2_dom_HTMLElement(element);
  }
- /**
-  * @override
-  * @return {HtmlContentBuilder<E>}
-  * @public
-  */
+ /** @override @return {HtmlContentBuilder<E>} */
  m_that__() {
   return this;
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {?string} arg0
-  * @return {HtmlContentBuilder<E>}
-  * @public
-  */
- m_add__java_lang_String(arg0) {
-  return /**@type {HtmlContentBuilder<E>} */ ($Casts.$to(HtmlContent.m_add__$default__org_jboss_elemento_HtmlContent__java_lang_String(this, arg0), HtmlContentBuilder));
+ //Default method forwarding stub.
+ /** @override @return {HtmlContentBuilder<E>} */
+ m_add__java_lang_String(/** ?string */ arg0) {
+  return /**@type {HtmlContentBuilder<E>}*/ ($Casts.$to(HtmlContent.m_add__$default__org_jboss_elemento_HtmlContent__java_lang_String(this, arg0), HtmlContentBuilder));
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Node} arg0
-  * @return {HtmlContentBuilder<E>}
-  * @public
-  */
- m_add__elemental2_dom_Node(arg0) {
-  return /**@type {HtmlContentBuilder<E>} */ ($Casts.$to(HtmlContent.m_add__$default__org_jboss_elemento_HtmlContent__elemental2_dom_Node(this, arg0), HtmlContentBuilder));
+ //Default method forwarding stub.
+ /** @override @return {HtmlContentBuilder<E>} */
+ m_add__elemental2_dom_Node(/** Node */ arg0) {
+  return /**@type {HtmlContentBuilder<E>}*/ ($Casts.$to(HtmlContent.m_add__$default__org_jboss_elemento_HtmlContent__elemental2_dom_Node(this, arg0), HtmlContentBuilder));
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {IsElement<?>} arg0
-  * @return {HtmlContentBuilder<E>}
-  * @public
-  */
- m_add__org_jboss_elemento_IsElement(arg0) {
-  return /**@type {HtmlContentBuilder<E>} */ ($Casts.$to(HtmlContent.m_add__$default__org_jboss_elemento_HtmlContent__org_jboss_elemento_IsElement(this, arg0), HtmlContentBuilder));
+ //Default method forwarding stub.
+ /** @override @return {HtmlContentBuilder<E>} */
+ m_add__org_jboss_elemento_IsElement(/** IsElement<?> */ arg0) {
+  return /**@type {HtmlContentBuilder<E>}*/ ($Casts.$to(HtmlContent.m_add__$default__org_jboss_elemento_HtmlContent__org_jboss_elemento_IsElement(this, arg0), HtmlContentBuilder));
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Array<Node>} arg0
-  * @return {HtmlContentBuilder<E>}
-  * @public
-  */
- m_addAll__arrayOf_elemental2_dom_Node(arg0) {
-  return /**@type {HtmlContentBuilder<E>} */ ($Casts.$to(HtmlContent.m_addAll__$default__org_jboss_elemento_HtmlContent__arrayOf_elemental2_dom_Node(this, arg0), HtmlContentBuilder));
+ //Default method forwarding stub.
+ /** @override @return {HtmlContentBuilder<E>} */
+ m_addAll__arrayOf_elemental2_dom_Node(/** Array<Node> */ arg0) {
+  return /**@type {HtmlContentBuilder<E>}*/ ($Casts.$to(HtmlContent.m_addAll__$default__org_jboss_elemento_HtmlContent__arrayOf_elemental2_dom_Node(this, arg0), HtmlContentBuilder));
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Array<Element>} arg0
-  * @return {HtmlContentBuilder<E>}
-  * @public
-  */
- m_addAll__arrayOf_elemental2_dom_Element(arg0) {
-  return /**@type {HtmlContentBuilder<E>} */ ($Casts.$to(HtmlContent.m_addAll__$default__org_jboss_elemento_HtmlContent__arrayOf_elemental2_dom_Element(this, arg0), HtmlContentBuilder));
+ //Default method forwarding stub.
+ /** @override @return {HtmlContentBuilder<E>} */
+ m_addAll__arrayOf_elemental2_dom_Element(/** Array<Element> */ arg0) {
+  return /**@type {HtmlContentBuilder<E>}*/ ($Casts.$to(HtmlContent.m_addAll__$default__org_jboss_elemento_HtmlContent__arrayOf_elemental2_dom_Element(this, arg0), HtmlContentBuilder));
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Array<HTMLElement>} arg0
-  * @return {HtmlContentBuilder<E>}
-  * @public
-  */
- m_addAll__arrayOf_elemental2_dom_HTMLElement(arg0) {
-  return /**@type {HtmlContentBuilder<E>} */ ($Casts.$to(HtmlContent.m_addAll__$default__org_jboss_elemento_HtmlContent__arrayOf_elemental2_dom_HTMLElement(this, arg0), HtmlContentBuilder));
+ //Default method forwarding stub.
+ /** @override @return {HtmlContentBuilder<E>} */
+ m_addAll__arrayOf_elemental2_dom_HTMLElement(/** Array<HTMLElement> */ arg0) {
+  return /**@type {HtmlContentBuilder<E>}*/ ($Casts.$to(HtmlContent.m_addAll__$default__org_jboss_elemento_HtmlContent__arrayOf_elemental2_dom_HTMLElement(this, arg0), HtmlContentBuilder));
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @template F
-  * @param {Array<IsElement<?>>} arg0
-  * @return {HtmlContentBuilder<E>}
-  * @public
-  */
- m_addAll__arrayOf_org_jboss_elemento_IsElement(arg0) {
-  return /**@type {HtmlContentBuilder<E>} */ ($Casts.$to(HtmlContent.m_addAll__$default__org_jboss_elemento_HtmlContent__arrayOf_org_jboss_elemento_IsElement(this, arg0), HtmlContentBuilder));
+ //Default method forwarding stub.
+ /** @override @template F @return {HtmlContentBuilder<E>} */
+ m_addAll__arrayOf_org_jboss_elemento_IsElement(/** Array<IsElement<?>> */ arg0) {
+  return /**@type {HtmlContentBuilder<E>}*/ ($Casts.$to(HtmlContent.m_addAll__$default__org_jboss_elemento_HtmlContent__arrayOf_org_jboss_elemento_IsElement(this, arg0), HtmlContentBuilder));
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Iterable<?>} arg0
-  * @return {HtmlContentBuilder<E>}
-  * @public
-  */
- m_addAll__java_lang_Iterable(arg0) {
-  return /**@type {HtmlContentBuilder<E>} */ ($Casts.$to(HtmlContent.m_addAll__$default__org_jboss_elemento_HtmlContent__java_lang_Iterable(this, arg0), HtmlContentBuilder));
+ //Default method forwarding stub.
+ /** @override @return {HtmlContentBuilder<E>} */
+ m_addAll__java_lang_Iterable(/** Iterable<?> */ arg0) {
+  return /**@type {HtmlContentBuilder<E>}*/ ($Casts.$to(HtmlContent.m_addAll__$default__org_jboss_elemento_HtmlContent__java_lang_Iterable(this, arg0), HtmlContentBuilder));
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {SafeHtml} arg0
-  * @return {HtmlContentBuilder<E>}
-  * @public
-  */
- m_innerHtml__org_gwtproject_safehtml_shared_SafeHtml(arg0) {
-  return /**@type {HtmlContentBuilder<E>} */ ($Casts.$to(HtmlContent.m_innerHtml__$default__org_jboss_elemento_HtmlContent__org_gwtproject_safehtml_shared_SafeHtml(this, arg0), HtmlContentBuilder));
+ //Default method forwarding stub.
+ /** @override @return {HtmlContentBuilder<E>} */
+ m_innerHtml__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ arg0) {
+  return /**@type {HtmlContentBuilder<E>}*/ ($Casts.$to(HtmlContent.m_innerHtml__$default__org_jboss_elemento_HtmlContent__org_gwtproject_safehtml_shared_SafeHtml(this, arg0), HtmlContentBuilder));
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {?string} arg0
-  * @return {HtmlContentBuilder<E>}
-  * @public
-  */
- m_textContent__java_lang_String(arg0) {
-  return /**@type {HtmlContentBuilder<E>} */ ($Casts.$to(TextContent.m_textContent__$default__org_jboss_elemento_TextContent__java_lang_String(this, arg0), HtmlContentBuilder));
+ //Default method forwarding stub.
+ /** @override @return {HtmlContentBuilder<E>} */
+ m_textContent__java_lang_String(/** ?string */ arg0) {
+  return /**@type {HtmlContentBuilder<E>}*/ ($Casts.$to(TextContent.m_textContent__$default__org_jboss_elemento_TextContent__java_lang_String(this, arg0), HtmlContentBuilder));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HtmlContentBuilder.$clinit = () =>{};
   HtmlContentBuilder.$loadModules();
   ElementBuilder.$clinit();
   HtmlContent.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HtmlContentBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   TextContent = goog.module.get('org.jboss.elemento.TextContent$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

@@ -26,348 +26,197 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Overlay = goog.forwardDeclare('jsinterop.base.JsPropertyMap.$Overlay$impl');
 
 class MediaTrackConstraintSet_$Overlay {
- /**
-  * @return {MediaTrackConstraintSet}
-  * @public
-  */
+ /** @return {MediaTrackConstraintSet} */
  static m_create__() {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  return /**@type {MediaTrackConstraintSet} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
+  return /**@type {MediaTrackConstraintSet}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {ConstrainDoubleRange} aspectRatio
-  * @public
-  */
- static m_setAspectRatio__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainDoubleRange($thisArg, aspectRatio) {
+ 
+ static m_setAspectRatio__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainDoubleRange(/** !MediaTrackConstraintSet */ $thisArg, /** ConstrainDoubleRange */ aspectRatio) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.aspectRatio = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(aspectRatio));
+  $thisArg.aspectRatio = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(aspectRatio));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {number} aspectRatio
-  * @public
-  */
- static m_setAspectRatio__$devirt__elemental2_dom_MediaTrackConstraintSet__double($thisArg, aspectRatio) {
+ 
+ static m_setAspectRatio__$devirt__elemental2_dom_MediaTrackConstraintSet__double(/** !MediaTrackConstraintSet */ $thisArg, /** number */ aspectRatio) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.aspectRatio = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(aspectRatio));
+  $thisArg.aspectRatio = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(aspectRatio));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {ConstrainBooleanParameters} autoGainControl
-  * @public
-  */
- static m_setAutoGainControl__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainBooleanParameters($thisArg, autoGainControl) {
+ 
+ static m_setAutoGainControl__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainBooleanParameters(/** !MediaTrackConstraintSet */ $thisArg, /** ConstrainBooleanParameters */ autoGainControl) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.autoGainControl = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(autoGainControl));
+  $thisArg.autoGainControl = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(autoGainControl));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {boolean} autoGainControl
-  * @public
-  */
- static m_setAutoGainControl__$devirt__elemental2_dom_MediaTrackConstraintSet__boolean($thisArg, autoGainControl) {
+ 
+ static m_setAutoGainControl__$devirt__elemental2_dom_MediaTrackConstraintSet__boolean(/** !MediaTrackConstraintSet */ $thisArg, /** boolean */ autoGainControl) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.autoGainControl = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(autoGainControl));
+  $thisArg.autoGainControl = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(autoGainControl));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {ConstrainLongRange} channelCount
-  * @public
-  */
- static m_setChannelCount__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainLongRange($thisArg, channelCount) {
+ 
+ static m_setChannelCount__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainLongRange(/** !MediaTrackConstraintSet */ $thisArg, /** ConstrainLongRange */ channelCount) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.channelCount = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(channelCount));
+  $thisArg.channelCount = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(channelCount));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {number} channelCount
-  * @public
-  */
- static m_setChannelCount__$devirt__elemental2_dom_MediaTrackConstraintSet__int($thisArg, channelCount) {
+ 
+ static m_setChannelCount__$devirt__elemental2_dom_MediaTrackConstraintSet__int(/** !MediaTrackConstraintSet */ $thisArg, /** number */ channelCount) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.channelCount = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(channelCount));
+  $thisArg.channelCount = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(channelCount));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {ConstrainDOMStringParameters} deviceId
-  * @public
-  */
- static m_setDeviceId__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainDOMStringParameters($thisArg, deviceId) {
+ 
+ static m_setDeviceId__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainDOMStringParameters(/** !MediaTrackConstraintSet */ $thisArg, /** ConstrainDOMStringParameters */ deviceId) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.deviceId = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(deviceId));
+  $thisArg.deviceId = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(deviceId));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {Array<?string>} deviceId
-  * @public
-  */
- static m_setDeviceId__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_core_JsArray($thisArg, deviceId) {
+ 
+ static m_setDeviceId__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_core_JsArray(/** !MediaTrackConstraintSet */ $thisArg, /** Array<?string> */ deviceId) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.deviceId = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(deviceId));
+  $thisArg.deviceId = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(deviceId));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {?string} deviceId
-  * @public
-  */
- static m_setDeviceId__$devirt__elemental2_dom_MediaTrackConstraintSet__java_lang_String($thisArg, deviceId) {
+ 
+ static m_setDeviceId__$devirt__elemental2_dom_MediaTrackConstraintSet__java_lang_String(/** !MediaTrackConstraintSet */ $thisArg, /** ?string */ deviceId) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.deviceId = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(deviceId));
+  $thisArg.deviceId = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(deviceId));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {Array<?string>} deviceId
-  * @public
-  */
- static m_setDeviceId__$devirt__elemental2_dom_MediaTrackConstraintSet__arrayOf_java_lang_String($thisArg, deviceId) {
+ 
+ static m_setDeviceId__$devirt__elemental2_dom_MediaTrackConstraintSet__arrayOf_java_lang_String(/** !MediaTrackConstraintSet */ $thisArg, /** Array<?string> */ deviceId) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  MediaTrackConstraintSet_$Overlay.m_setDeviceId__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_core_JsArray($thisArg, /**@type {Array<?string>} */ (Js.m_uncheckedCast__java_lang_Object(deviceId)));
+  MediaTrackConstraintSet_$Overlay.m_setDeviceId__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_core_JsArray($thisArg, /**@type {Array<?string>}*/ (Js.m_uncheckedCast__java_lang_Object(deviceId)));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {ConstrainBooleanParameters} echoCancellation
-  * @public
-  */
- static m_setEchoCancellation__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainBooleanParameters($thisArg, echoCancellation) {
+ 
+ static m_setEchoCancellation__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainBooleanParameters(/** !MediaTrackConstraintSet */ $thisArg, /** ConstrainBooleanParameters */ echoCancellation) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.echoCancellation = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(echoCancellation));
+  $thisArg.echoCancellation = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(echoCancellation));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {boolean} echoCancellation
-  * @public
-  */
- static m_setEchoCancellation__$devirt__elemental2_dom_MediaTrackConstraintSet__boolean($thisArg, echoCancellation) {
+ 
+ static m_setEchoCancellation__$devirt__elemental2_dom_MediaTrackConstraintSet__boolean(/** !MediaTrackConstraintSet */ $thisArg, /** boolean */ echoCancellation) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.echoCancellation = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(echoCancellation));
+  $thisArg.echoCancellation = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(echoCancellation));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {ConstrainDOMStringParameters} facingMode
-  * @public
-  */
- static m_setFacingMode__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainDOMStringParameters($thisArg, facingMode) {
+ 
+ static m_setFacingMode__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainDOMStringParameters(/** !MediaTrackConstraintSet */ $thisArg, /** ConstrainDOMStringParameters */ facingMode) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.facingMode = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(facingMode));
+  $thisArg.facingMode = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(facingMode));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {Array<?string>} facingMode
-  * @public
-  */
- static m_setFacingMode__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_core_JsArray($thisArg, facingMode) {
+ 
+ static m_setFacingMode__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_core_JsArray(/** !MediaTrackConstraintSet */ $thisArg, /** Array<?string> */ facingMode) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.facingMode = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(facingMode));
+  $thisArg.facingMode = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(facingMode));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {?string} facingMode
-  * @public
-  */
- static m_setFacingMode__$devirt__elemental2_dom_MediaTrackConstraintSet__java_lang_String($thisArg, facingMode) {
+ 
+ static m_setFacingMode__$devirt__elemental2_dom_MediaTrackConstraintSet__java_lang_String(/** !MediaTrackConstraintSet */ $thisArg, /** ?string */ facingMode) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.facingMode = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(facingMode));
+  $thisArg.facingMode = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(facingMode));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {Array<?string>} facingMode
-  * @public
-  */
- static m_setFacingMode__$devirt__elemental2_dom_MediaTrackConstraintSet__arrayOf_java_lang_String($thisArg, facingMode) {
+ 
+ static m_setFacingMode__$devirt__elemental2_dom_MediaTrackConstraintSet__arrayOf_java_lang_String(/** !MediaTrackConstraintSet */ $thisArg, /** Array<?string> */ facingMode) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  MediaTrackConstraintSet_$Overlay.m_setFacingMode__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_core_JsArray($thisArg, /**@type {Array<?string>} */ (Js.m_uncheckedCast__java_lang_Object(facingMode)));
+  MediaTrackConstraintSet_$Overlay.m_setFacingMode__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_core_JsArray($thisArg, /**@type {Array<?string>}*/ (Js.m_uncheckedCast__java_lang_Object(facingMode)));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {ConstrainDoubleRange} frameRate
-  * @public
-  */
- static m_setFrameRate__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainDoubleRange($thisArg, frameRate) {
+ 
+ static m_setFrameRate__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainDoubleRange(/** !MediaTrackConstraintSet */ $thisArg, /** ConstrainDoubleRange */ frameRate) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.frameRate = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(frameRate));
+  $thisArg.frameRate = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(frameRate));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {number} frameRate
-  * @public
-  */
- static m_setFrameRate__$devirt__elemental2_dom_MediaTrackConstraintSet__double($thisArg, frameRate) {
+ 
+ static m_setFrameRate__$devirt__elemental2_dom_MediaTrackConstraintSet__double(/** !MediaTrackConstraintSet */ $thisArg, /** number */ frameRate) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.frameRate = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(frameRate));
+  $thisArg.frameRate = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(frameRate));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {ConstrainDOMStringParameters} groupId
-  * @public
-  */
- static m_setGroupId__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainDOMStringParameters($thisArg, groupId) {
+ 
+ static m_setGroupId__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainDOMStringParameters(/** !MediaTrackConstraintSet */ $thisArg, /** ConstrainDOMStringParameters */ groupId) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.groupId = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(groupId));
+  $thisArg.groupId = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(groupId));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {Array<?string>} groupId
-  * @public
-  */
- static m_setGroupId__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_core_JsArray($thisArg, groupId) {
+ 
+ static m_setGroupId__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_core_JsArray(/** !MediaTrackConstraintSet */ $thisArg, /** Array<?string> */ groupId) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.groupId = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(groupId));
+  $thisArg.groupId = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(groupId));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {?string} groupId
-  * @public
-  */
- static m_setGroupId__$devirt__elemental2_dom_MediaTrackConstraintSet__java_lang_String($thisArg, groupId) {
+ 
+ static m_setGroupId__$devirt__elemental2_dom_MediaTrackConstraintSet__java_lang_String(/** !MediaTrackConstraintSet */ $thisArg, /** ?string */ groupId) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.groupId = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(groupId));
+  $thisArg.groupId = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(groupId));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {Array<?string>} groupId
-  * @public
-  */
- static m_setGroupId__$devirt__elemental2_dom_MediaTrackConstraintSet__arrayOf_java_lang_String($thisArg, groupId) {
+ 
+ static m_setGroupId__$devirt__elemental2_dom_MediaTrackConstraintSet__arrayOf_java_lang_String(/** !MediaTrackConstraintSet */ $thisArg, /** Array<?string> */ groupId) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  MediaTrackConstraintSet_$Overlay.m_setGroupId__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_core_JsArray($thisArg, /**@type {Array<?string>} */ (Js.m_uncheckedCast__java_lang_Object(groupId)));
+  MediaTrackConstraintSet_$Overlay.m_setGroupId__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_core_JsArray($thisArg, /**@type {Array<?string>}*/ (Js.m_uncheckedCast__java_lang_Object(groupId)));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {ConstrainLongRange} height
-  * @public
-  */
- static m_setHeight__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainLongRange($thisArg, height) {
+ 
+ static m_setHeight__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainLongRange(/** !MediaTrackConstraintSet */ $thisArg, /** ConstrainLongRange */ height) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.height = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(height));
+  $thisArg.height = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(height));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {number} height
-  * @public
-  */
- static m_setHeight__$devirt__elemental2_dom_MediaTrackConstraintSet__int($thisArg, height) {
+ 
+ static m_setHeight__$devirt__elemental2_dom_MediaTrackConstraintSet__int(/** !MediaTrackConstraintSet */ $thisArg, /** number */ height) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.height = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(height));
+  $thisArg.height = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(height));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {ConstrainDoubleRange} latency
-  * @public
-  */
- static m_setLatency__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainDoubleRange($thisArg, latency) {
+ 
+ static m_setLatency__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainDoubleRange(/** !MediaTrackConstraintSet */ $thisArg, /** ConstrainDoubleRange */ latency) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.latency = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(latency));
+  $thisArg.latency = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(latency));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {number} latency
-  * @public
-  */
- static m_setLatency__$devirt__elemental2_dom_MediaTrackConstraintSet__double($thisArg, latency) {
+ 
+ static m_setLatency__$devirt__elemental2_dom_MediaTrackConstraintSet__double(/** !MediaTrackConstraintSet */ $thisArg, /** number */ latency) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.latency = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(latency));
+  $thisArg.latency = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(latency));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {ConstrainBooleanParameters} noiseSuppression
-  * @public
-  */
- static m_setNoiseSuppression__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainBooleanParameters($thisArg, noiseSuppression) {
+ 
+ static m_setNoiseSuppression__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainBooleanParameters(/** !MediaTrackConstraintSet */ $thisArg, /** ConstrainBooleanParameters */ noiseSuppression) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.noiseSuppression = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(noiseSuppression));
+  $thisArg.noiseSuppression = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(noiseSuppression));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {boolean} noiseSuppression
-  * @public
-  */
- static m_setNoiseSuppression__$devirt__elemental2_dom_MediaTrackConstraintSet__boolean($thisArg, noiseSuppression) {
+ 
+ static m_setNoiseSuppression__$devirt__elemental2_dom_MediaTrackConstraintSet__boolean(/** !MediaTrackConstraintSet */ $thisArg, /** boolean */ noiseSuppression) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.noiseSuppression = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(noiseSuppression));
+  $thisArg.noiseSuppression = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(noiseSuppression));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {ConstrainLongRange} sampleRate
-  * @public
-  */
- static m_setSampleRate__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainLongRange($thisArg, sampleRate) {
+ 
+ static m_setSampleRate__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainLongRange(/** !MediaTrackConstraintSet */ $thisArg, /** ConstrainLongRange */ sampleRate) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.sampleRate = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(sampleRate));
+  $thisArg.sampleRate = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(sampleRate));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {number} sampleRate
-  * @public
-  */
- static m_setSampleRate__$devirt__elemental2_dom_MediaTrackConstraintSet__int($thisArg, sampleRate) {
+ 
+ static m_setSampleRate__$devirt__elemental2_dom_MediaTrackConstraintSet__int(/** !MediaTrackConstraintSet */ $thisArg, /** number */ sampleRate) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.sampleRate = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(sampleRate));
+  $thisArg.sampleRate = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(sampleRate));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {ConstrainLongRange} sampleSize
-  * @public
-  */
- static m_setSampleSize__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainLongRange($thisArg, sampleSize) {
+ 
+ static m_setSampleSize__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainLongRange(/** !MediaTrackConstraintSet */ $thisArg, /** ConstrainLongRange */ sampleSize) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.sampleSize = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(sampleSize));
+  $thisArg.sampleSize = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(sampleSize));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {number} sampleSize
-  * @public
-  */
- static m_setSampleSize__$devirt__elemental2_dom_MediaTrackConstraintSet__int($thisArg, sampleSize) {
+ 
+ static m_setSampleSize__$devirt__elemental2_dom_MediaTrackConstraintSet__int(/** !MediaTrackConstraintSet */ $thisArg, /** number */ sampleSize) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.sampleSize = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(sampleSize));
+  $thisArg.sampleSize = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(sampleSize));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {ConstrainDoubleRange} volume
-  * @public
-  */
- static m_setVolume__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainDoubleRange($thisArg, volume) {
+ 
+ static m_setVolume__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainDoubleRange(/** !MediaTrackConstraintSet */ $thisArg, /** ConstrainDoubleRange */ volume) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.volume = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(volume));
+  $thisArg.volume = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(volume));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {number} volume
-  * @public
-  */
- static m_setVolume__$devirt__elemental2_dom_MediaTrackConstraintSet__double($thisArg, volume) {
+ 
+ static m_setVolume__$devirt__elemental2_dom_MediaTrackConstraintSet__double(/** !MediaTrackConstraintSet */ $thisArg, /** number */ volume) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.volume = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(volume));
+  $thisArg.volume = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(volume));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {ConstrainLongRange} width
-  * @public
-  */
- static m_setWidth__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainLongRange($thisArg, width) {
+ 
+ static m_setWidth__$devirt__elemental2_dom_MediaTrackConstraintSet__elemental2_dom_ConstrainLongRange(/** !MediaTrackConstraintSet */ $thisArg, /** ConstrainLongRange */ width) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.width = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(width));
+  $thisArg.width = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(width));
  }
- /**
-  * @param {!MediaTrackConstraintSet} $thisArg
-  * @param {number} width
-  * @public
-  */
- static m_setWidth__$devirt__elemental2_dom_MediaTrackConstraintSet__int($thisArg, width) {
+ 
+ static m_setWidth__$devirt__elemental2_dom_MediaTrackConstraintSet__int(/** !MediaTrackConstraintSet */ $thisArg, /** number */ width) {
   MediaTrackConstraintSet_$Overlay.$clinit();
-  $thisArg.width = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(width));
+  $thisArg.width = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(width));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MediaTrackConstraintSet_$Overlay.$clinit = () =>{};
   MediaTrackConstraintSet_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');

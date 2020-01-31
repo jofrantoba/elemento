@@ -32,98 +32,60 @@ let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
  * @template T, E
   */
 class BaseEditorDriver extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {AbstractEditorDelegate<T, E>} */
+  /**@type {AbstractEditorDelegate<T, E>}*/
   this.f_delegate__org_gwtproject_editor_client_impl_BaseEditorDriver_;
-  /** @public {Map<LeafValueEditor<?>, *>} */
+  /**@type {Map<LeafValueEditor<?>, *>}*/
   this.f_leafValueMap__org_gwtproject_editor_client_impl_BaseEditorDriver_;
-  /** @public {E} */
+  /**@type {E}*/
   this.f_editor__org_gwtproject_editor_client_impl_BaseEditorDriver_;
-  /** @public {List<EditorError>} */
+  /**@type {List<EditorError>}*/
   this.f_errors__org_gwtproject_editor_client_impl_BaseEditorDriver_;
-  /** @public {T} */
+  /**@type {T}*/
   this.f_object__org_gwtproject_editor_client_impl_BaseEditorDriver_;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_editor_client_impl_BaseEditorDriver__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @abstract
-  * @param {EditorVisitor} visitor
-  * @public
-  */
- m_accept__org_gwtproject_editor_client_EditorVisitor(visitor) {}
- /**
-  * @return {List<EditorError>}
-  * @public
-  */
+ /** @abstract */
+ m_accept__org_gwtproject_editor_client_EditorVisitor(/** EditorVisitor */ visitor) {}
+ /** @return {List<EditorError>} */
  m_getErrors__() {
   return this.f_errors__org_gwtproject_editor_client_impl_BaseEditorDriver_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_hasErrors__() {
   return !this.f_errors__org_gwtproject_editor_client_impl_BaseEditorDriver_.isEmpty();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isDirty__() {
   let c = DirtCollector.$create__();
   this.m_accept__org_gwtproject_editor_client_EditorVisitor(c);
   return c.m_isDirty__() || !$Objects.m_equals__java_lang_Object__java_lang_Object(this.f_leafValueMap__org_gwtproject_editor_client_impl_BaseEditorDriver_, c.m_getLeafValues__());
  }
- /**
-  * @param {Iterable<ConstraintViolation<?>>} violations
-  * @return {boolean}
-  * @public
-  */
- m_setConstraintViolations__java_lang_Iterable(violations) {
+ /** @return {boolean} */
+ m_setConstraintViolations__java_lang_Iterable(/** Iterable<ConstraintViolation<?>> */ violations) {
   return this.m_doSetViolations__java_lang_Iterable($Equality.$same(violations, null) ? null : SimpleViolation.m_iterableFromConstrantViolations__java_lang_Iterable(violations));
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  toString() {
   return super.toString();
  }
- /**
-  * @param {AbstractEditorDelegate<T, E>} rootDelegate
-  * @public
-  */
- m_configureDelegate__org_gwtproject_editor_client_impl_AbstractEditorDelegate(rootDelegate) {
+ 
+ m_configureDelegate__org_gwtproject_editor_client_impl_AbstractEditorDelegate(/** AbstractEditorDelegate<T, E> */ rootDelegate) {
   rootDelegate.m_initialize__java_lang_String__org_gwtproject_editor_client_Editor("", this.m_getEditor__());
  }
- /**
-  * @abstract
-  * @return {AbstractEditorDelegate<T, E>}
-  * @public
-  */
+ /** @abstract @return {AbstractEditorDelegate<T, E>} */
  m_createDelegate__() {}
- /**
-  * @return {EditorVisitor}
-  * @public
-  */
+ /** @return {EditorVisitor} */
  m_createInitializerVisitor__() {
   return Initializer.$create__();
  }
- /**
-  * @param {T} object
-  * @public
-  */
- m_doEdit__java_lang_Object(object) {
+ 
+ m_doEdit__java_lang_Object(/** T */ object) {
   this.m_checkEditor___$p_org_gwtproject_editor_client_impl_BaseEditorDriver();
   object = this.f_delegate__org_gwtproject_editor_client_impl_BaseEditorDriver_.m_ensureMutable__java_lang_Object(object);
   this.f_object__org_gwtproject_editor_client_impl_BaseEditorDriver_ = object;
@@ -133,106 +95,70 @@ class BaseEditorDriver extends j_l_Object {
   this.m_accept__org_gwtproject_editor_client_EditorVisitor(c);
   this.f_leafValueMap__org_gwtproject_editor_client_impl_BaseEditorDriver_ = c.m_getLeafValues__();
  }
- /**
-  * @public
-  */
+ 
  m_doFlush__() {
   this.m_checkObject___$p_org_gwtproject_editor_client_impl_BaseEditorDriver();
-  this.f_errors__org_gwtproject_editor_client_impl_BaseEditorDriver_ = /**@type {!ArrayList<EditorError>} */ (ArrayList.$create__());
+  this.f_errors__org_gwtproject_editor_client_impl_BaseEditorDriver_ = /**@type {!ArrayList<EditorError>}*/ (ArrayList.$create__());
   this.m_accept__org_gwtproject_editor_client_EditorVisitor(Flusher.$create__());
   this.m_accept__org_gwtproject_editor_client_EditorVisitor(ErrorCollector.$create__java_util_List(this.f_errors__org_gwtproject_editor_client_impl_BaseEditorDriver_));
  }
- /**
-  * @param {E} editor
-  * @public
-  */
- m_doInitialize__org_gwtproject_editor_client_Editor(editor) {
+ 
+ m_doInitialize__org_gwtproject_editor_client_Editor(/** E */ editor) {
   this.f_editor__org_gwtproject_editor_client_impl_BaseEditorDriver_ = editor;
   this.f_delegate__org_gwtproject_editor_client_impl_BaseEditorDriver_ = this.m_createDelegate__();
   this.m_configureDelegate__org_gwtproject_editor_client_impl_AbstractEditorDelegate(this.f_delegate__org_gwtproject_editor_client_impl_BaseEditorDriver_);
  }
- /**
-  * @param {Iterable<SimpleViolation>} violations
-  * @return {boolean}
-  * @public
-  */
- m_doSetViolations__java_lang_Iterable(violations) {
+ /** @return {boolean} */
+ m_doSetViolations__java_lang_Iterable(/** Iterable<SimpleViolation> */ violations) {
   this.m_checkObject___$p_org_gwtproject_editor_client_impl_BaseEditorDriver();
   SimpleViolation.m_pushViolations__java_lang_Iterable__org_gwtproject_editor_client_EditorDriver__org_gwtproject_editor_client_impl_DelegateMap_KeyMethod(violations, this.m_asEditorDriver___$p_org_gwtproject_editor_client_impl_BaseEditorDriver(), this.m_getViolationKeyMethod__());
-  this.f_errors__org_gwtproject_editor_client_impl_BaseEditorDriver_ = /**@type {!ArrayList<EditorError>} */ (ArrayList.$create__());
+  this.f_errors__org_gwtproject_editor_client_impl_BaseEditorDriver_ = /**@type {!ArrayList<EditorError>}*/ (ArrayList.$create__());
   this.m_accept__org_gwtproject_editor_client_EditorVisitor(ErrorCollector.$create__java_util_List(this.f_errors__org_gwtproject_editor_client_impl_BaseEditorDriver_));
   return this.m_hasErrors__();
  }
- /**
-  * @return {AbstractEditorDelegate<T, E>}
-  * @public
-  */
+ /** @return {AbstractEditorDelegate<T, E>} */
  m_getDelegate__() {
   return this.f_delegate__org_gwtproject_editor_client_impl_BaseEditorDriver_;
  }
- /**
-  * @return {E}
-  * @public
-  */
+ /** @return {E} */
  m_getEditor__() {
   return this.f_editor__org_gwtproject_editor_client_impl_BaseEditorDriver_;
  }
- /**
-  * @return {T}
-  * @public
-  */
+ /** @return {T} */
  m_getObject__() {
   return this.f_object__org_gwtproject_editor_client_impl_BaseEditorDriver_;
  }
- /**
-  * @return {KeyMethod}
-  * @public
-  */
+ /** @return {KeyMethod} */
  m_getViolationKeyMethod__() {
   return DelegateMap.f_IDENTITY__org_gwtproject_editor_client_impl_DelegateMap;
  }
- /**
-  * @return {EditorDriver<?>}
-  * @public
-  */
+ /** @return {EditorDriver<?>} */
  m_asEditorDriver___$p_org_gwtproject_editor_client_impl_BaseEditorDriver() {
-  return /**@type {EditorDriver<*>} */ ($Casts.$to(this, EditorDriver));
+  return /**@type {EditorDriver<*>}*/ ($Casts.$to(this, EditorDriver));
  }
- /**
-  * @public
-  */
+ 
  m_checkEditor___$p_org_gwtproject_editor_client_impl_BaseEditorDriver() {
   if ($Equality.$same(this.f_editor__org_gwtproject_editor_client_impl_BaseEditorDriver_, null)) {
    throw $Exceptions.toJs(IllegalStateException.$create__java_lang_String("Must call initialize() first"));
   }
  }
- /**
-  * @public
-  */
+ 
  m_checkObject___$p_org_gwtproject_editor_client_impl_BaseEditorDriver() {
   if ($Equality.$same(this.f_object__org_gwtproject_editor_client_impl_BaseEditorDriver_, null)) {
    throw $Exceptions.toJs(IllegalStateException.$create__java_lang_String("Must call edit() first"));
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   BaseEditorDriver.$clinit = () =>{};
   BaseEditorDriver.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof BaseEditorDriver;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');
   ArrayList = goog.module.get('java.util.ArrayList$impl');

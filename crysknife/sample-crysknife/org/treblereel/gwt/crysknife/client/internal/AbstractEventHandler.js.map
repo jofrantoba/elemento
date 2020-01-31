@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"AbstractEventHandler.impl.java.js",
-"lineCount":63,
-"mappings":"A;;;;;;;;;;;;;;;;MAYsB,oB;;;;CAAA,W;EAAAA,Q;EAAAA;OAEO,iFAFPA,C;;;;;CAAA,0E;EAAAC,iC;EAAAA,oF;;;;;;;CAIN,wB,CAAOC,C;EACfC,+IAAoBC,UAApBD;GAAoBE,IAAAD,YAAAC,6DAApBF;GAAkCE,2CAAlCF;M;;;;;;CAGQ,4C,CAA0BC,U;EAClCE,uG;;;;;CATc,4E;EAElBL,mJ;;;;;QAFkB,O;EAAAM,uC;EAAAA,oC;EAAAA;",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;;;;;;MAYsB,oB;;CAAA,W;EAAAA,Q;EAAAA;OAEO,iFAFPA,C;;;CAAA,0E;EAAAC,iC;EAAAA,oF;;;CAIN,wB,UAAOC,C;EACfC,+IAAoBC,UAApBD;GAAoBE,IAAAD,YAAAC,4DAApBF;GAAkCE,2CAAlCF;M;;;CAGQ,4C,oBAA0BC,U;EAClCE,uG;;;CATc,4E;EAElBL,kJ;;;QAFkB,O;EAAAM,uC;EAAAA,oC;EAAAA;",
 "sources":["AbstractEventHandler.java"],
 "names":["org.treblereel.gwt.crysknife.client.internal.AbstractEventHandler.<synthetic: ctor_js>","org.treblereel.gwt.crysknife.client.internal.AbstractEventHandler.<init>","t","org.treblereel.gwt.crysknife.client.internal.AbstractEventHandler.fire","subscriber","org.treblereel.gwt.crysknife.client.internal.AbstractEventHandler.<lambda in fire>","org.treblereel.gwt.crysknife.client.internal.AbstractEventHandler.addSubscriber","org.treblereel.gwt.crysknife.client.internal.AbstractEventHandler.<clinit>"]
 }

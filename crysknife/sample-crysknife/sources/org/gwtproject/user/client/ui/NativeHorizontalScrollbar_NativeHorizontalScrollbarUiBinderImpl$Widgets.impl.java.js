@@ -18,40 +18,29 @@ let NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenCss__st
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class Widgets extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl} */
+  /**@type {NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets;
-  /** @public {NativeHorizontalScrollbar} */
+  /**@type {NativeHorizontalScrollbar}*/
   this.f_owner__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets_;
-  /** @public {NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenCss__style} */
+  /**@type {NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenCss__style}*/
   this.f_style__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_domId0__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_domId1__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets_;
  }
- /**
-  * @param {NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl} $outer_this
-  * @param {NativeHorizontalScrollbar} owner
-  * @return {!Widgets}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl__org_gwtproject_user_client_ui_NativeHorizontalScrollbar($outer_this, owner) {
+ /** @return {!Widgets} */
+ static $create__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl__org_gwtproject_user_client_ui_NativeHorizontalScrollbar(/** NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl */ $outer_this, /** NativeHorizontalScrollbar */ owner) {
   Widgets.$clinit();
   let $instance = new Widgets();
   $instance.$ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl__org_gwtproject_user_client_ui_NativeHorizontalScrollbar($outer_this, owner);
   return $instance;
  }
- /**
-  * @param {NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl} $outer_this
-  * @param {NativeHorizontalScrollbar} owner
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl__org_gwtproject_user_client_ui_NativeHorizontalScrollbar($outer_this, owner) {
+ 
+ $ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl__org_gwtproject_user_client_ui_NativeHorizontalScrollbar(/** NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl */ $outer_this, /** NativeHorizontalScrollbar */ owner) {
   this.f_$outer_this__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets = $outer_this;
   this.$ctor__java_lang_Object__();
   this.f_owner__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets_ = owner;
@@ -59,57 +48,36 @@ class Widgets extends j_l_Object {
   this.m_build_domId0___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets();
   this.m_build_domId1___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets();
  }
- /**
-  * @return {SafeHtml}
-  * @public
-  */
+ /** @return {SafeHtml} */
  m_template_html1___$pp_org_gwtproject_user_client_ui() {
   return this.f_$outer_this__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets.f_template__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl.m_html1__java_lang_String__java_lang_String__java_lang_String__java_lang_String__java_lang_String("" + j_l_String.m_valueOf__java_lang_Object(this.m_get_style___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets().m_viewport__()) + "", "" + j_l_String.m_valueOf__java_lang_Object(this.m_get_style___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets().m_scrollable__()) + "", this.m_get_domId0___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets(), "" + j_l_String.m_valueOf__java_lang_Object(this.m_get_style___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets().m_content__()) + "", this.m_get_domId1___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets());
  }
- /**
-  * @return {NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenBundle}
-  * @public
-  */
+ /** @return {NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenBundle} */
  m_get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets() {
   return this.m_build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets();
  }
- /**
-  * @return {NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenBundle}
-  * @public
-  */
+ /** @return {NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenBundle} */
  m_build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets() {
   let clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay = NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenBundleImpl.$create__();
   return clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay;
  }
- /**
-  * @return {NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenCss__style}
-  * @public
-  */
+ /** @return {NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenCss__style} */
  m_get_style___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets() {
   return this.f_style__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets_;
  }
- /**
-  * @return {NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenCss__style}
-  * @public
-  */
+ /** @return {NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenCss__style} */
  m_build_style___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets() {
   this.f_style__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets_ = this.m_get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets().m_style__();
   this.f_style__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets_.m_ensureInjected__();
   return this.f_style__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets_;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_get_f_div1___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets() {
   return this.m_build_f_div1___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets();
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_build_f_div1___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets() {
-  let f_div1 = /**@type {Object} */ (UiBinderUtil.m_fromHtml__java_lang_String(this.m_template_html1___$pp_org_gwtproject_user_client_ui().m_asString__()));
+  let f_div1 = /**@type {Object}*/ (UiBinderUtil.m_fromHtml__java_lang_String(this.m_template_html1___$pp_org_gwtproject_user_client_ui().m_asString__()));
   {
    let __attachRecord__ = UiBinderUtil.m_attachToDom__org_gwtproject_dom_client_Element(f_div1);
    this.m_get_scrollable___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets();
@@ -118,87 +86,55 @@ class Widgets extends j_l_Object {
   }
   return f_div1;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_get_scrollable___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets() {
   return this.m_build_scrollable___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets();
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_build_scrollable___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets() {
-  let scrollable = /**@type {Object} */ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(LazyDomElement.$create__java_lang_String(this.m_get_domId0___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets()).m_get__()), Element_$Overlay));
-  this.f_owner__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets_.f_scrollable__org_gwtproject_user_client_ui_NativeHorizontalScrollbar = /**@type {Object} */ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(scrollable), Element_$Overlay));
+  let scrollable = /**@type {Object}*/ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(LazyDomElement.$create__java_lang_String(this.m_get_domId0___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets()).m_get__()), Element_$Overlay));
+  this.f_owner__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets_.f_scrollable__org_gwtproject_user_client_ui_NativeHorizontalScrollbar = /**@type {Object}*/ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(scrollable), Element_$Overlay));
   return scrollable;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_get_domId0___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets() {
   return this.f_domId0__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets_;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_build_domId0___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets() {
   this.f_domId0__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets_ = Document_$Overlay.m_createUniqueId__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__());
   return this.f_domId0__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets_;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_get_contentDiv___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets() {
   return this.m_build_contentDiv___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets();
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_build_contentDiv___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets() {
-  let contentDiv = /**@type {Object} */ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(LazyDomElement.$create__java_lang_String(this.m_get_domId1___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets()).m_get__()), Element_$Overlay));
-  this.f_owner__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets_.f_contentDiv__org_gwtproject_user_client_ui_NativeHorizontalScrollbar = /**@type {Object} */ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(contentDiv), Element_$Overlay));
+  let contentDiv = /**@type {Object}*/ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(LazyDomElement.$create__java_lang_String(this.m_get_domId1___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets()).m_get__()), Element_$Overlay));
+  this.f_owner__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets_.f_contentDiv__org_gwtproject_user_client_ui_NativeHorizontalScrollbar = /**@type {Object}*/ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(contentDiv), Element_$Overlay));
   return contentDiv;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_get_domId1___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets() {
   return this.f_domId1__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets_;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_build_domId1___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets() {
   this.f_domId1__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets_ = Document_$Overlay.m_createUniqueId__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__());
   return this.f_domId1__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets_;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Widgets.$clinit = () =>{};
   Widgets.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Widgets;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Overlay = goog.module.get('org.gwtproject.core.client.JavaScriptObject.$Overlay$impl');

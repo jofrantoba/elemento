@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasProgressHandlers.impl.java.js",
-"lineCount":26,
-"mappings":"A;;;;;;;;;;;;MA2BiB,mB;;;;;;;CAQK,qE,CAAmCA,O;;;;QARxC,O;EAAAC,sC;EAAAA;",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;;;MA2BiB,mB;;CAQK,qE,wBAAmCA,O;;QARxC,O;EAAAC,sC;EAAAA;",
 "sources":["HasProgressHandlers.java"],
 "names":["handler","org.gwtproject.event.dom.client.HasProgressHandlers.<clinit>"]
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"RTCCertificate$$Overlay.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;MAyBiB,uB;;;;;QAEO,U;EAAAA,kC;EACpBA,8F;;;;;QAHa,O;EAAAC,0C;EAAAA;",
+"lineCount":17,
+"mappings":"A;;;;;;;MAyBiB,uB;;QAEO,U;EAAAA,kC;EACpBA,6F;;;QAHa,O;EAAAC,0C;EAAAA;",
 "sources":["RTCCertificate.java"],
 "names":["elemental2.dom.RTCCertificate$$Overlay.create","elemental2.dom.RTCCertificate$$Overlay.<clinit>"]
 }

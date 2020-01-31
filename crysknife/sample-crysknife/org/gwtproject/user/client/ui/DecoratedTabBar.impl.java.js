@@ -9,71 +9,46 @@ let SimplePanel = goog.forwardDeclare('org.gwtproject.user.client.ui.SimplePanel
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 
 class DecoratedTabBar extends TabBar {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!DecoratedTabBar}
-  * @public
-  */
+ /** @return {!DecoratedTabBar} */
  static $create__() {
   DecoratedTabBar.$clinit();
   let $instance = new DecoratedTabBar();
   $instance.$ctor__org_gwtproject_user_client_ui_DecoratedTabBar__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_DecoratedTabBar__() {
   this.$ctor__org_gwtproject_user_client_ui_TabBar__();
   this.m_setStylePrimaryName__java_lang_String(DecoratedTabBar.f_STYLENAME_DEFAULT__org_gwtproject_user_client_ui_DecoratedTabBar);
  }
- /**
-  * @override
-  * @return {SimplePanel}
-  * @public
-  */
+ /** @override @return {SimplePanel} */
  m_createTabTextWrapper__() {
   return DecoratorPanel.$create__arrayOf_java_lang_String__int(DecoratedTabBar.$f_TAB_ROW_STYLES__org_gwtproject_user_client_ui_DecoratedTabBar, 1);
  }
- /**
-  * @return {Array<?string>}
-  * @public
-  */
+ /** @return {Array<?string>} */
  static get f_TAB_ROW_STYLES__org_gwtproject_user_client_ui_DecoratedTabBar() {
   return (DecoratedTabBar.$clinit(), DecoratedTabBar.$f_TAB_ROW_STYLES__org_gwtproject_user_client_ui_DecoratedTabBar);
  }
- /**
-  * @param {Array<?string>} value
-  * @public
-  */
- static set f_TAB_ROW_STYLES__org_gwtproject_user_client_ui_DecoratedTabBar(value) {
+ 
+ static set f_TAB_ROW_STYLES__org_gwtproject_user_client_ui_DecoratedTabBar(/** Array<?string> */ value) {
   (DecoratedTabBar.$clinit(), DecoratedTabBar.$f_TAB_ROW_STYLES__org_gwtproject_user_client_ui_DecoratedTabBar = value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DecoratedTabBar.$clinit = () =>{};
   DecoratedTabBar.$loadModules();
   TabBar.$clinit();
-  DecoratedTabBar.$f_TAB_ROW_STYLES__org_gwtproject_user_client_ui_DecoratedTabBar = /**@type {!Array<?string>} */ ($Arrays.$init(["tabTop", "tabMiddle"], j_l_String));
+  DecoratedTabBar.$f_TAB_ROW_STYLES__org_gwtproject_user_client_ui_DecoratedTabBar = /**@type {!Array<?string>}*/ ($Arrays.$init(["tabTop", "tabMiddle"], j_l_String));
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DecoratedTabBar;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   DecoratorPanel = goog.module.get('org.gwtproject.user.client.ui.DecoratorPanel$impl');
@@ -83,9 +58,9 @@ class DecoratedTabBar extends TabBar {
 }
 $Util.$setClassMetadata(DecoratedTabBar, 'org.gwtproject.user.client.ui.DecoratedTabBar');
 
-/** @private {Array<?string>} */
+/**@private {Array<?string>}*/
 DecoratedTabBar.$f_TAB_ROW_STYLES__org_gwtproject_user_client_ui_DecoratedTabBar;
-/** @public {?string} @const */
+/**@const {?string}*/
 DecoratedTabBar.f_STYLENAME_DEFAULT__org_gwtproject_user_client_ui_DecoratedTabBar = "gwt-DecoratedTabBar";
 
 exports = DecoratedTabBar; 

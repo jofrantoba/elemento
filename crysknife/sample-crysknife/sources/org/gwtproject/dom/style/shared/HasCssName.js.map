@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasCssName.impl.java.js",
-"lineCount":31,
-"mappings":"A;;;;;;;;;MAoBiB,U;;;;;;CAKR,c;;;;;;QALQ,M;EAAAA,qB;EAAAA,8B;;;;;QAAA,O;EAAAC,6B;EAAAA;",
+"lineCount":21,
+"mappings":"A;;;;;;;;;MAoBiB,U;;CAKR,c;;QALQ,M;EAAAA,qB;EAAAA,8B;;;QAAA,O;EAAAC,6B;EAAAA;",
 "sources":["HasCssName.java"],
 "names":["org.gwtproject.dom.style.shared.HasCssName.<synthetic: adapt_lambda>","org.gwtproject.dom.style.shared.HasCssName.<clinit>"]
 }

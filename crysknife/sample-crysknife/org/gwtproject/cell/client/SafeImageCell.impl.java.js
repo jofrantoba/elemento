@@ -16,69 +16,43 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {AbstractCell<SafeUri>}
   */
 class SafeImageCell extends AbstractCell {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!SafeImageCell}
-  * @public
-  */
+ /** @return {!SafeImageCell} */
  static $create__() {
   SafeImageCell.$clinit();
   let $instance = new SafeImageCell();
   $instance.$ctor__org_gwtproject_cell_client_SafeImageCell__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_cell_client_SafeImageCell__() {
-  this.$ctor__org_gwtproject_cell_client_AbstractCell__arrayOf_java_lang_String(/**@type {!Array<?string>} */ ($Arrays.$init([], j_l_String)));
+  this.$ctor__org_gwtproject_cell_client_AbstractCell__arrayOf_java_lang_String(/**@type {!Array<?string>}*/ ($Arrays.$init([], j_l_String)));
  }
- /**
-  * @param {Context} context
-  * @param {SafeUri} value
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__org_gwtproject_safehtml_shared_SafeUri__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, value, sb) {
+ 
+ m_render__org_gwtproject_cell_client_Cell_Context__org_gwtproject_safehtml_shared_SafeUri__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ context, /** SafeUri */ value, /** SafeHtmlBuilder */ sb) {
   if (!$Equality.$same(value, null)) {
    sb.m_append__org_gwtproject_safehtml_shared_SafeHtml(Template.f_INSTANCE__org_gwtproject_cell_client_SafeImageCell_Template.m_img__org_gwtproject_safehtml_shared_SafeUri(value));
   }
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Context} arg0
-  * @param {*} arg1
-  * @param {SafeHtmlBuilder} arg2
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, arg1, arg2) {
-  this.m_render__org_gwtproject_cell_client_Cell_Context__org_gwtproject_safehtml_shared_SafeUri__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, /**@type {SafeUri} */ ($Casts.$to(arg1, SafeUri)), arg2);
+ //Bridge method.
+ /** @override */
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ arg0, /** * */ arg1, /** SafeHtmlBuilder */ arg2) {
+  this.m_render__org_gwtproject_cell_client_Cell_Context__org_gwtproject_safehtml_shared_SafeUri__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, /**@type {SafeUri}*/ ($Casts.$to(arg1, SafeUri)), arg2);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SafeImageCell.$clinit = () =>{};
   SafeImageCell.$loadModules();
   AbstractCell.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SafeImageCell;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

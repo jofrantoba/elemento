@@ -10,54 +10,37 @@ let EventListener_$Overlay = goog.forwardDeclare('elemental2.dom.EventListener.$
  * @implements {EventListener}
   */
 class $LambdaAdaptor$1 extends j_l_Object {
- /**
-  * @param {?function(Event):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(Event):void */ fn) {
   $LambdaAdaptor$1.$clinit();
   super();
-  /** @public {?function(Event):void} */
+  /**@type {?function(Event):void}*/
   this.f_$$fn__org_jboss_elemento_sample_j2cl_TodoRepository_$LambdaAdaptor$1;
   this.$ctor__org_jboss_elemento_sample_j2cl_TodoRepository_$LambdaAdaptor$1__elemental2_dom_EventListener_$JsFunction(fn);
  }
- /**
-  * @param {?function(Event):void} fn
-  * @public
-  */
- $ctor__org_jboss_elemento_sample_j2cl_TodoRepository_$LambdaAdaptor$1__elemental2_dom_EventListener_$JsFunction(fn) {
+ 
+ $ctor__org_jboss_elemento_sample_j2cl_TodoRepository_$LambdaAdaptor$1__elemental2_dom_EventListener_$JsFunction(/** ?function(Event):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_jboss_elemento_sample_j2cl_TodoRepository_$LambdaAdaptor$1 = fn;
  }
- /**
-  * @param {Event} arg0
-  * @public
-  */
- handleEvent(arg0) {
+ 
+ handleEvent(/** Event */ arg0) {
   {
    let $function = this.f_$$fn__org_jboss_elemento_sample_j2cl_TodoRepository_$LambdaAdaptor$1;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor$1.$clinit = () =>{};
   $LambdaAdaptor$1.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor$1;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -11,50 +11,29 @@ let NotificationMole__BinderImpl__GenCss__style = goog.forwardDeclare('org.gwtpr
  * @extends {ClientBundle}
  */
 class NotificationMole__BinderImpl__GenBundle {
- /**
-  * @abstract
-  * @return {NotificationMole__BinderImpl__GenCss__style}
-  * @public
-  */
+ /** @abstract @return {NotificationMole__BinderImpl__GenCss__style} */
  m_style__() {}
- /**
-  * @param {?function():NotificationMole__BinderImpl__GenCss__style} fn
-  * @return {NotificationMole__BinderImpl__GenBundle}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {NotificationMole__BinderImpl__GenBundle} */
+ static $adapt(/** ?function():NotificationMole__BinderImpl__GenCss__style */ fn) {
   NotificationMole__BinderImpl__GenBundle.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NotificationMole__BinderImpl__GenBundle.$clinit = () =>{};
   NotificationMole__BinderImpl__GenBundle.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ClientBundle.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_NotificationMole_BinderImpl_GenBundle = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ClientBundle.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_NotificationMole_BinderImpl_GenBundle = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_NotificationMole_BinderImpl_GenBundle;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundle.$LambdaAdaptor$impl');
  }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasDirectionalText.impl.java.js",
-"lineCount":31,
-"mappings":"A;;;;;;;;;;;MAsBiB,kB;;;;;;CAOL,oB;;;;;;;CAQL,8E,CAAeA,I,EAAgBC,G;;;;QAfrB,O;EAAAC,qC;EAAAA;",
+"lineCount":20,
+"mappings":"A;;;;;;;;;;;MAsBiB,kB;;CAOL,oB;;CAQL,8E,gBAAeA,I,mBAAgBC,G;;QAfrB,O;EAAAC,qC;EAAAA;",
 "sources":["HasDirectionalText.java"],
 "names":["text","dir","org.gwtproject.user.client.ui.HasDirectionalText.<clinit>"]
 }

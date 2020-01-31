@@ -13,44 +13,29 @@ let HorizontalScrollbar = goog.forwardDeclare('org.gwtproject.user.client.ui.Hor
  * @implements {ScrollHandler}
   */
 class $1 extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {CustomScrollPanel} */
+  /**@type {CustomScrollPanel}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_CustomScrollPanel_1;
-  /** @public {HorizontalScrollbar} */
+  /**@type {HorizontalScrollbar}*/
   this.$c_scrollbar;
  }
- /**
-  * @param {CustomScrollPanel} $outer_this
-  * @param {HorizontalScrollbar} $c_scrollbar
-  * @return {!$1}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_CustomScrollPanel__org_gwtproject_user_client_ui_HorizontalScrollbar($outer_this, $c_scrollbar) {
+ /** @return {!$1} */
+ static $create__org_gwtproject_user_client_ui_CustomScrollPanel__org_gwtproject_user_client_ui_HorizontalScrollbar(/** CustomScrollPanel */ $outer_this, /** HorizontalScrollbar */ $c_scrollbar) {
   $1.$clinit();
   let $instance = new $1();
   $instance.$ctor__org_gwtproject_user_client_ui_CustomScrollPanel_1__org_gwtproject_user_client_ui_CustomScrollPanel__org_gwtproject_user_client_ui_HorizontalScrollbar($outer_this, $c_scrollbar);
   return $instance;
  }
- /**
-  * @param {CustomScrollPanel} $outer_this
-  * @param {HorizontalScrollbar} $c_scrollbar
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_CustomScrollPanel_1__org_gwtproject_user_client_ui_CustomScrollPanel__org_gwtproject_user_client_ui_HorizontalScrollbar($outer_this, $c_scrollbar) {
+ 
+ $ctor__org_gwtproject_user_client_ui_CustomScrollPanel_1__org_gwtproject_user_client_ui_CustomScrollPanel__org_gwtproject_user_client_ui_HorizontalScrollbar(/** CustomScrollPanel */ $outer_this, /** HorizontalScrollbar */ $c_scrollbar) {
   this.f_$outer_this__org_gwtproject_user_client_ui_CustomScrollPanel_1 = $outer_this;
   this.$c_scrollbar = $c_scrollbar;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {ScrollEvent} event
-  * @public
-  */
- m_onScroll__org_gwtproject_event_dom_client_ScrollEvent(event) {
+ /** @override */
+ m_onScroll__org_gwtproject_event_dom_client_ScrollEvent(/** ScrollEvent */ event) {
   let curTime = Duration.m_currentTimeMillis__();
   if (curTime > this.f_$outer_this__org_gwtproject_user_client_ui_CustomScrollPanel_1.f_ignoreScrollbarsUntil__org_gwtproject_user_client_ui_CustomScrollPanel_) {
    this.f_$outer_this__org_gwtproject_user_client_ui_CustomScrollPanel_1.f_ignoreContentUntil__org_gwtproject_user_client_ui_CustomScrollPanel_ = curTime + CustomScrollPanel.f_IGNORE_SCROLL_TIMEOUT__org_gwtproject_user_client_ui_CustomScrollPanel_;
@@ -60,25 +45,17 @@ class $1 extends j_l_Object {
    }
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $1.$clinit = () =>{};
   $1.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $1;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Duration = goog.module.get('org.gwtproject.core.client.Duration$impl');
   CustomScrollPanel = goog.module.get('org.gwtproject.user.client.ui.CustomScrollPanel$impl');

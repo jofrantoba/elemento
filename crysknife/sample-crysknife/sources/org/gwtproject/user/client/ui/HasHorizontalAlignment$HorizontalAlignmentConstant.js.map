@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasHorizontalAlignment$HorizontalAlignmentConstant.impl.java.js",
-"lineCount":69,
-"mappings":"A;;;;;;;;;MA+DsB,2B;;;;CAAA,W;EAAAA,Q;EAAAA;OAaG,oGAbHA,C;;;;;;;QAGwB,0D,CAAgBC,S;EAAhBC,sC;EACxCA,ke;;;;;;;QAIwC,4D,CAAkBD,S;EAAlBE,sC;EACxCA,oe;;;;;;;QAMM,yB,CAAmCC,e;EAAnCC,sC;EAAAA,kD;EAAAA,qI;EAAAA,iB;;;;;;CAAA,yG,CAAmCD,e;EAAnCE,qG;EACNA,4H;;;;;;CAQY,sB;EACZC,iH;;;;;QAzBgB,O;EAAAC,8C;EAAAA,2C;EAAAA;",
+"lineCount":47,
+"mappings":"A;;;;;;;;;MA+DsB,2B;;CAAA,W;EAAAA,Q;EAAAA;OAaG,oGAbHA,C;;;QAGwB,0D,kBAAgBC,S;EAAhBC,sC;EACxCA,ke;;;QAIwC,4D,kBAAkBD,S;EAAlBE,sC;EACxCA,oe;;;QAMM,yB,gBAAmCC,e;EAAnCC,sC;EAAAA,kD;EAAAA,qI;EAAAA,iB;;;CAAA,yG,gBAAmCD,e;EAAnCE,qG;EACNA,4H;;;CAQY,sB;EACZC,iH;;;QAzBgB,O;EAAAC,8C;EAAAA,2C;EAAAA;",
 "sources":["HasHorizontalAlignment.java"],
 "names":["org.gwtproject.user.client.ui.HasHorizontalAlignment$HorizontalAlignmentConstant.<synthetic: ctor_js>","direction","org.gwtproject.user.client.ui.HasHorizontalAlignment$HorizontalAlignmentConstant.endOf","org.gwtproject.user.client.ui.HasHorizontalAlignment$HorizontalAlignmentConstant.startOf","textAlignString","org.gwtproject.user.client.ui.HasHorizontalAlignment$HorizontalAlignmentConstant.<synthetic: ctor_create>","org.gwtproject.user.client.ui.HasHorizontalAlignment$HorizontalAlignmentConstant.<init>","org.gwtproject.user.client.ui.HasHorizontalAlignment$HorizontalAlignmentConstant.getTextAlignString","org.gwtproject.user.client.ui.HasHorizontalAlignment$HorizontalAlignmentConstant.<clinit>"]
 }

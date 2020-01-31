@@ -11,34 +11,23 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
 let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 
 class SafeUriHostedModeUtils extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!SafeUriHostedModeUtils}
-  * @public
-  */
+ /** @return {!SafeUriHostedModeUtils} */
  static $create__() {
   SafeUriHostedModeUtils.$clinit();
   let $instance = new SafeUriHostedModeUtils();
   $instance.$ctor__org_gwtproject_safehtml_shared_SafeUriHostedModeUtils__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_safehtml_shared_SafeUriHostedModeUtils__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {?string} uri
-  * @return {boolean}
-  * @public
-  */
- static m_isValidUriCharset__java_lang_String(uri) {
+ /** @return {boolean} */
+ static m_isValidUriCharset__java_lang_String(/** ?string */ uri) {
   SafeUriHostedModeUtils.$clinit();
   let len = j_l_String.m_length__java_lang_String(uri);
   let i = 0;
@@ -61,11 +50,8 @@ class SafeUriHostedModeUtils extends j_l_Object {
   }
   return true;
  }
- /**
-  * @param {?string} uri
-  * @public
-  */
- static m_maybeCheckValidUri__java_lang_String(uri) {
+ 
+ static m_maybeCheckValidUri__java_lang_String(/** ?string */ uri) {
   SafeUriHostedModeUtils.$clinit();
   if (SafeUriHostedModeUtils.f_forceCheckValidUri__org_gwtproject_safehtml_shared_SafeUriHostedModeUtils_) {
    SafeUriHostedModeUtils.m_checkArgument__boolean__java_lang_String(SafeUriHostedModeUtils.f_impl__org_gwtproject_safehtml_shared_SafeUriHostedModeUtils_.m_isValidUri__java_lang_String(uri), "String is not a valid URI: " + j_l_String.m_valueOf__java_lang_Object(uri));
@@ -73,34 +59,23 @@ class SafeUriHostedModeUtils extends j_l_Object {
    $Asserts.$assertWithMessage(SafeUriHostedModeUtils.f_impl__org_gwtproject_safehtml_shared_SafeUriHostedModeUtils_.m_isValidUri__java_lang_String(uri), "String is not a valid URI: " + j_l_String.m_valueOf__java_lang_Object(uri));
   }
  }
- /**
-  * @param {boolean} completeHtml
-  * @param {?string} message
-  * @public
-  */
- static m_checkArgument__boolean__java_lang_String(completeHtml, message) {
+ 
+ static m_checkArgument__boolean__java_lang_String(/** boolean */ completeHtml, /** ?string */ message) {
   if (!completeHtml) {
    throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String(message));
   }
  }
- /**
-  * @param {boolean} check
-  * @public
-  */
- static m_setForceCheckValidUri__boolean(check) {
+ 
+ static m_setForceCheckValidUri__boolean(/** boolean */ check) {
   SafeUriHostedModeUtils.$clinit();
   SafeUriHostedModeUtils.f_forceCheckValidUri__org_gwtproject_safehtml_shared_SafeUriHostedModeUtils_ = check;
  }
- /**
-  * @public
-  */
+ 
  static m_setForceCheckValidUriFromProperty__() {
   SafeUriHostedModeUtils.$clinit();
   SafeUriHostedModeUtils.f_forceCheckValidUri__org_gwtproject_safehtml_shared_SafeUriHostedModeUtils_ = SafeUriHostedModeUtils.f_impl__org_gwtproject_safehtml_shared_SafeUriHostedModeUtils_.m_getForceCheckValieUriFromProperty__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SafeUriHostedModeUtils.$clinit = () =>{};
   SafeUriHostedModeUtils.$loadModules();
@@ -108,17 +83,11 @@ class SafeUriHostedModeUtils extends j_l_Object {
   SafeUriHostedModeUtils.f_impl__org_gwtproject_safehtml_shared_SafeUriHostedModeUtils_ = JreImpl.$create__();
   SafeUriHostedModeUtils.m_setForceCheckValidUriFromProperty__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SafeUriHostedModeUtils;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Character = goog.module.get('java.lang.Character$impl');
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
@@ -131,13 +100,13 @@ class SafeUriHostedModeUtils extends j_l_Object {
 }
 $Util.$setClassMetadata(SafeUriHostedModeUtils, 'org.gwtproject.safehtml.shared.SafeUriHostedModeUtils');
 
-/** @public {?string} @const */
+/**@const {?string}*/
 SafeUriHostedModeUtils.f_HREF_DISCRETE_UCSCHAR__org_gwtproject_safehtml_shared_SafeUriHostedModeUtils = ":/?#[]@!$&'()*+,;=-._~ <>\"{}|\\^`%";
-/** @public {?string} @const */
+/**@const {?string}*/
 SafeUriHostedModeUtils.f_FORCE_CHECK_VALID_URI__org_gwtproject_safehtml_shared_SafeUriHostedModeUtils = "com.google.gwt.safehtml.ForceCheckValidUri";
-/** @public {boolean} */
+/**@type {boolean}*/
 SafeUriHostedModeUtils.f_forceCheckValidUri__org_gwtproject_safehtml_shared_SafeUriHostedModeUtils_ = false;
-/** @public {JreImpl} */
+/**@type {JreImpl}*/
 SafeUriHostedModeUtils.f_impl__org_gwtproject_safehtml_shared_SafeUriHostedModeUtils_;
 
 exports = SafeUriHostedModeUtils; 

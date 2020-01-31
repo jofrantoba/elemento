@@ -7,86 +7,53 @@ let j_l_String = goog.forwardDeclare('java.lang.String$impl');
 let ResponseImpl = goog.forwardDeclare('org.gwtproject.http.client.ResponseImpl$impl');
 
 class $1 extends Header {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {ResponseImpl} */
+  /**@type {ResponseImpl}*/
   this.f_$outer_this__org_gwtproject_http_client_ResponseImpl_1;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.$c_name;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.$c_value;
  }
- /**
-  * @param {ResponseImpl} $outer_this
-  * @param {?string} $c_name
-  * @param {?string} $c_value
-  * @return {!$1}
-  * @public
-  */
- static $create__org_gwtproject_http_client_ResponseImpl__java_lang_String__java_lang_String($outer_this, $c_name, $c_value) {
+ /** @return {!$1} */
+ static $create__org_gwtproject_http_client_ResponseImpl__java_lang_String__java_lang_String(/** ResponseImpl */ $outer_this, /** ?string */ $c_name, /** ?string */ $c_value) {
   $1.$clinit();
   let $instance = new $1();
   $instance.$ctor__org_gwtproject_http_client_ResponseImpl_1__org_gwtproject_http_client_ResponseImpl__java_lang_String__java_lang_String($outer_this, $c_name, $c_value);
   return $instance;
  }
- /**
-  * @param {ResponseImpl} $outer_this
-  * @param {?string} $c_name
-  * @param {?string} $c_value
-  * @public
-  */
- $ctor__org_gwtproject_http_client_ResponseImpl_1__org_gwtproject_http_client_ResponseImpl__java_lang_String__java_lang_String($outer_this, $c_name, $c_value) {
+ 
+ $ctor__org_gwtproject_http_client_ResponseImpl_1__org_gwtproject_http_client_ResponseImpl__java_lang_String__java_lang_String(/** ResponseImpl */ $outer_this, /** ?string */ $c_name, /** ?string */ $c_value) {
   this.f_$outer_this__org_gwtproject_http_client_ResponseImpl_1 = $outer_this;
   this.$c_name = $c_name;
   this.$c_value = $c_value;
   this.$ctor__org_gwtproject_http_client_Header__();
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getName__() {
   return this.$c_name;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getValue__() {
   return this.$c_value;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  toString() {
   return j_l_String.m_valueOf__java_lang_Object(this.$c_name) + " : " + j_l_String.m_valueOf__java_lang_Object(this.$c_value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $1.$clinit = () =>{};
   $1.$loadModules();
   Header.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $1;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
  }

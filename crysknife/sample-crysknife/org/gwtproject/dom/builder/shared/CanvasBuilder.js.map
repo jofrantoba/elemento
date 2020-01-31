@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CanvasBuilder.impl.java.js",
-"lineCount":30,
-"mappings":"A;;;;;;;;;MAoBiB,a;;;;;;;CAOD,a,CAAWA,M;;;;;;;CAOX,Y,CAAUC,K;;;;QAdT,O;EAAAC,gC;EAAAA;",
+"lineCount":18,
+"mappings":"A;;;;;;;;;MAoBiB,a;;CAOD,a,eAAWA,M;;CAOX,Y,eAAUC,K;;QAdT,O;EAAAC,gC;EAAAA;",
 "sources":["CanvasBuilder.java"],
 "names":["height","width","org.gwtproject.dom.builder.shared.CanvasBuilder.<clinit>"]
 }

@@ -13,68 +13,42 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {OptGroupBuilder}
   */
 class DomOptGroupBuilder extends DomElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @return {!DomOptGroupBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ /** @return {!DomOptGroupBuilder} */
+ static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   DomOptGroupBuilder.$clinit();
   let $instance = new DomOptGroupBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_client_DomOptGroupBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_client_DomOptGroupBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_client_DomOptGroupBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_client_DomElementBuilderBase__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
  }
- /**
-  * @override
-  * @return {OptGroupBuilder}
-  * @public
-  */
+ /** @override @return {OptGroupBuilder} */
  m_disabled__() {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).disabled = true;
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).disabled = true;
   return this;
  }
- /**
-  * @override
-  * @param {?string} label
-  * @return {OptGroupBuilder}
-  * @public
-  */
- m_label__java_lang_String(label) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).label = label;
+ /** @override @return {OptGroupBuilder} */
+ m_label__java_lang_String(/** ?string */ label) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).label = label;
   return this;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomOptGroupBuilder.$clinit = () =>{};
   DomOptGroupBuilder.$loadModules();
   DomElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomOptGroupBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('org.gwtproject.dom.client.OptGroupElement.$Overlay$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

@@ -12,65 +12,41 @@ let EventHandler = goog.forwardDeclare('org.gwtproject.event.legacy.shared.Event
  * @extends {DomEvent<H>}
   */
 class HumanInputEvent extends DomEvent {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_dom_client_HumanInputEvent__() {
   this.$ctor__org_gwtproject_event_dom_client_DomEvent__();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isAltKeyDown__() {
   return $Overlay.m_getAltKey__$devirt__org_gwtproject_dom_client_NativeEvent(this.m_getNativeEvent__());
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isControlKeyDown__() {
   return $Overlay.m_getCtrlKey__$devirt__org_gwtproject_dom_client_NativeEvent(this.m_getNativeEvent__());
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isMetaKeyDown__() {
   return $Overlay.m_getMetaKey__$devirt__org_gwtproject_dom_client_NativeEvent(this.m_getNativeEvent__());
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isShiftKeyDown__() {
   return $Overlay.m_getShiftKey__$devirt__org_gwtproject_dom_client_NativeEvent(this.m_getNativeEvent__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HumanInputEvent.$clinit = () =>{};
   HumanInputEvent.$loadModules();
   DomEvent.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HumanInputEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('org.gwtproject.dom.client.NativeEvent.$Overlay$impl');
  }

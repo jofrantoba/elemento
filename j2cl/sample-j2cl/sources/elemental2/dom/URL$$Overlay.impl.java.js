@@ -9,51 +9,31 @@ let $Overlay = goog.forwardDeclare('elemental2.dom.URL.CreateObjectURLObjUnionTy
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class URL_$Overlay {
- /**
-  * @param {Blob} obj
-  * @return {?string}
-  * @public
-  */
- static m_createObjectURL__elemental2_dom_Blob(obj) {
+ /** @return {?string} */
+ static m_createObjectURL__elemental2_dom_Blob(/** Blob */ obj) {
   URL_$Overlay.$clinit();
-  return URL.createObjectURL(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(obj)));
+  return URL.createObjectURL(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(obj)));
  }
- /**
-  * @param {MediaSource} obj
-  * @return {?string}
-  * @public
-  */
- static m_createObjectURL__elemental2_dom_MediaSource(obj) {
+ /** @return {?string} */
+ static m_createObjectURL__elemental2_dom_MediaSource(/** MediaSource */ obj) {
   URL_$Overlay.$clinit();
-  return URL.createObjectURL(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(obj)));
+  return URL.createObjectURL(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(obj)));
  }
- /**
-  * @param {MediaStream} obj
-  * @return {?string}
-  * @public
-  */
- static m_createObjectURL__elemental2_dom_MediaStream(obj) {
+ /** @return {?string} */
+ static m_createObjectURL__elemental2_dom_MediaStream(/** MediaStream */ obj) {
   URL_$Overlay.$clinit();
-  return URL.createObjectURL(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(obj)));
+  return URL.createObjectURL(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(obj)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   URL_$Overlay.$clinit = () =>{};
   URL_$Overlay.$loadModules();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof URL;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }

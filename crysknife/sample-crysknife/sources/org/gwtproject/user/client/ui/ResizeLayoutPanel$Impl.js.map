@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ResizeLayoutPanel$Impl.impl.java.js",
-"lineCount":67,
-"mappings":"A;;;;;;;;;;;;MAqDwB,I;;;;CAAA,W;EAAAA,Q;EAAAA;OAWZ,kEAXYA,S;EAAAA;OAYZ,8DAZYA,C;EAAAA;OAaH,iEAbGA,C;;;;;CAAA,6D;EAAAC,iC;;;;;;;CAqBR,wG,CAAaC,I,EAAeC,Q;EACtCC,2E;EACAA,kF;;;;;CAMU,Y;EACVC,+E;;;;;CAMU,Y;EACVC,gF;;;;;CAMa,gB;EACbC;GACEA,sFADFA;G;;;;;QA5CkB,O;EAAAC,uB;EAAAA,oB;EAAAA;",
+"lineCount":51,
+"mappings":"A;;;;;;;;;;;;MAqDwB,I;;CAAA,W;EAAAA,Q;EAAAA;OAWZ,kEAXYA,S;EAAAA;OAYZ,8DAZYA,C;EAAAA;OAaH,iEAbGA,C;;;CAAA,6D;EAAAC,iC;;;CAqBR,wG,eAAaC,I,kBAAeC,Q;EACtCC,2E;EACAA,kF;;;CAMU,Y;EACVC,+E;;;CAMU,Y;EACVC,gF;;;CAMa,gB;EACbC;GACEA,sFADFA;G;;;QA5CkB,O;EAAAC,uB;EAAAA,oB;EAAAA;",
 "sources":["ResizeLayoutPanel.java"],
 "names":["org.gwtproject.user.client.ui.ResizeLayoutPanel$Impl.<synthetic: ctor_js>","org.gwtproject.user.client.ui.ResizeLayoutPanel$Impl.<init>","elem","delegate","org.gwtproject.user.client.ui.ResizeLayoutPanel$Impl.init","org.gwtproject.user.client.ui.ResizeLayoutPanel$Impl.onAttach","org.gwtproject.user.client.ui.ResizeLayoutPanel$Impl.onDetach","org.gwtproject.user.client.ui.ResizeLayoutPanel$Impl.handleResize","org.gwtproject.user.client.ui.ResizeLayoutPanel$Impl.<clinit>"]
 }

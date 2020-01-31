@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"LocalizedNamesImplBase.impl.java.js",
-"lineCount":58,
-"mappings":"A;;;;;;;;;;MAyBsB,sB;;;;CAAA,W;EAAAA,Q;EAAAA;OAaY,0EAbZA,C;;;;;CAAA,oE;EAAAC,iE;EAAAA,8E;;;;;;;;QAO2B,mD,CACfC,Q,EAAkCC,Q;EADnBC,iC;EAE5CA,0B;EACDA,gB;;;;;;;CAOiB,yB;EAGjBC,yC;;;;;CApBkB,sE;EAapBJ,uF;;;;;QAboB,O;EAAAK,yC;EAAAA,sC;EAAAA;",
+"lineCount":41,
+"mappings":"A;;;;;;;;;;MAyBsB,sB;;CAAA,W;EAAAA,Q;EAAAA;OAaY,0EAbZA,C;;;CAAA,oE;EAAAC,iE;EAAAA,8E;;;QAO2B,mD,kCACfC,Q,mCAAkCC,Q;EADnBC,iC;EAE5CA,0B;EACDA,gB;;;CAOiB,yB;EAGjBC,yC;;;CApBkB,sE;EAapBJ,uF;;;QAboB,O;EAAAK,yC;EAAAA,sC;EAAAA;",
 "sources":["LocalizedNamesImplBase.java"],
 "names":["org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImplBase.<synthetic: ctor_js>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImplBase.<init>","original","override","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImplBase.overrideMap","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImplBase.loadLikelyRegionCodes","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImplBase.<clinit>"]
 }

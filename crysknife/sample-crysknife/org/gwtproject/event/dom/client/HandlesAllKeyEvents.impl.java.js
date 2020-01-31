@@ -16,56 +16,36 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {KeyPressHandler}
   */
 class HandlesAllKeyEvents extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_dom_client_HandlesAllKeyEvents__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {HasAllKeyHandlers} source
-  * @public
-  */
- m_addKeyHandlersTo__org_gwtproject_event_dom_client_HasAllKeyHandlers(source) {
+ 
+ m_addKeyHandlersTo__org_gwtproject_event_dom_client_HasAllKeyHandlers(/** HasAllKeyHandlers */ source) {
   HandlesAllKeyEvents.m_addHandlers__org_gwtproject_event_dom_client_HasAllKeyHandlers__org_gwtproject_event_dom_client_KeyDownHandler(source, this);
  }
- /**
-  * @template H
-  * @param {HasAllKeyHandlers} eventSource
-  * @param {H} reciever
-  * @public
-  */
- static m_addHandlers__org_gwtproject_event_dom_client_HasAllKeyHandlers__org_gwtproject_event_dom_client_KeyDownHandler(eventSource, reciever) {
+ /** @template H */
+ static m_addHandlers__org_gwtproject_event_dom_client_HasAllKeyHandlers__org_gwtproject_event_dom_client_KeyDownHandler(/** HasAllKeyHandlers */ eventSource, /** H */ reciever) {
   HandlesAllKeyEvents.$clinit();
   eventSource.m_addKeyDownHandler__org_gwtproject_event_dom_client_KeyDownHandler(reciever);
-  eventSource.m_addKeyPressHandler__org_gwtproject_event_dom_client_KeyPressHandler(/**@type {KeyPressHandler} */ ($Casts.$to(reciever, KeyPressHandler)));
-  eventSource.m_addKeyUpHandler__org_gwtproject_event_dom_client_KeyUpHandler(/**@type {KeyUpHandler} */ ($Casts.$to(reciever, KeyUpHandler)));
+  eventSource.m_addKeyPressHandler__org_gwtproject_event_dom_client_KeyPressHandler(/**@type {KeyPressHandler}*/ ($Casts.$to(reciever, KeyPressHandler)));
+  eventSource.m_addKeyUpHandler__org_gwtproject_event_dom_client_KeyUpHandler(/**@type {KeyUpHandler}*/ ($Casts.$to(reciever, KeyUpHandler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HandlesAllKeyEvents.$clinit = () =>{};
   HandlesAllKeyEvents.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HandlesAllKeyEvents;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

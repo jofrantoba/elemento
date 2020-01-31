@@ -35,22 +35,16 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {FormPanelImplHost}
   */
 class FormPanel extends SimplePanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_frameName__org_gwtproject_user_client_ui_FormPanel_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_synthesizedFrame__org_gwtproject_user_client_ui_FormPanel_;
  }
- /**
-  * @param {Object} element
-  * @return {FormPanel}
-  * @public
-  */
- static m_wrap__org_gwtproject_dom_client_Element(element) {
+ /** @return {FormPanel} */
+ static m_wrap__org_gwtproject_dom_client_Element(/** Object */ element) {
   FormPanel.$clinit();
   $Asserts.$assert($Overlay.m_isOrHasChild__$devirt__org_gwtproject_dom_client_Node__org_gwtproject_dom_client_Node(Document_$Overlay.m_get__().body, element));
   let formPanel = FormPanel.$create__org_gwtproject_dom_client_Element(element);
@@ -58,13 +52,8 @@ class FormPanel extends SimplePanel {
   RootPanel.m_detachOnWindowClose__org_gwtproject_user_client_ui_Widget(formPanel);
   return formPanel;
  }
- /**
-  * @param {Object} element
-  * @param {boolean} createIFrame
-  * @return {FormPanel}
-  * @public
-  */
- static m_wrap__org_gwtproject_dom_client_Element__boolean(element, createIFrame) {
+ /** @return {FormPanel} */
+ static m_wrap__org_gwtproject_dom_client_Element__boolean(/** Object */ element, /** boolean */ createIFrame) {
   FormPanel.$clinit();
   $Asserts.$assert($Overlay.m_isOrHasChild__$devirt__org_gwtproject_dom_client_Node__org_gwtproject_dom_client_Node(Document_$Overlay.m_get__().body, element));
   let formPanel = FormPanel.$create__org_gwtproject_dom_client_Element__boolean(element, createIFrame);
@@ -72,105 +61,70 @@ class FormPanel extends SimplePanel {
   RootPanel.m_detachOnWindowClose__org_gwtproject_user_client_ui_Widget(formPanel);
   return formPanel;
  }
- /**
-  * Factory method corresponding to constructor 'FormPanel()'.
-  * @return {!FormPanel}
-  * @public
-  */
+ //Factory method corresponding to constructor 'FormPanel()'.
+ /** @return {!FormPanel} */
  static $create__() {
   FormPanel.$clinit();
   let $instance = new FormPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_FormPanel__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'FormPanel()'.
-  * @public
-  */
+ //Initialization from constructor 'FormPanel()'.
+ 
  $ctor__org_gwtproject_user_client_ui_FormPanel__() {
   this.$ctor__org_gwtproject_user_client_ui_FormPanel__org_gwtproject_dom_client_Element__boolean(Document_$Overlay.m_createFormElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__()), true);
  }
- /**
-  * Factory method corresponding to constructor 'FormPanel(NamedFrame)'.
-  * @param {NamedFrame} frameTarget
-  * @return {!FormPanel}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_NamedFrame(frameTarget) {
+ //Factory method corresponding to constructor 'FormPanel(NamedFrame)'.
+ /** @return {!FormPanel} */
+ static $create__org_gwtproject_user_client_ui_NamedFrame(/** NamedFrame */ frameTarget) {
   FormPanel.$clinit();
   let $instance = new FormPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_FormPanel__org_gwtproject_user_client_ui_NamedFrame(frameTarget);
   return $instance;
  }
- /**
-  * Initialization from constructor 'FormPanel(NamedFrame)'.
-  * @param {NamedFrame} frameTarget
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_FormPanel__org_gwtproject_user_client_ui_NamedFrame(frameTarget) {
+ //Initialization from constructor 'FormPanel(NamedFrame)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_FormPanel__org_gwtproject_user_client_ui_NamedFrame(/** NamedFrame */ frameTarget) {
   this.$ctor__org_gwtproject_user_client_ui_FormPanel__java_lang_String(frameTarget.m_getName__());
  }
- /**
-  * Factory method corresponding to constructor 'FormPanel(String)'.
-  * @param {?string} target
-  * @return {!FormPanel}
-  * @public
-  */
- static $create__java_lang_String(target) {
+ //Factory method corresponding to constructor 'FormPanel(String)'.
+ /** @return {!FormPanel} */
+ static $create__java_lang_String(/** ?string */ target) {
   FormPanel.$clinit();
   let $instance = new FormPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_FormPanel__java_lang_String(target);
   return $instance;
  }
- /**
-  * Initialization from constructor 'FormPanel(String)'.
-  * @param {?string} target
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_FormPanel__java_lang_String(target) {
+ //Initialization from constructor 'FormPanel(String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_FormPanel__java_lang_String(/** ?string */ target) {
   this.$ctor__org_gwtproject_user_client_ui_SimplePanel__org_gwtproject_dom_client_Element(Document_$Overlay.m_createFormElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__()));
   this.m_setTarget__java_lang_String_$p_org_gwtproject_user_client_ui_FormPanel(target);
  }
- /**
-  * Factory method corresponding to constructor 'FormPanel(Element)'.
-  * @param {Object} element
-  * @return {!FormPanel}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_Element(element) {
+ //Factory method corresponding to constructor 'FormPanel(Element)'.
+ /** @return {!FormPanel} */
+ static $create__org_gwtproject_dom_client_Element(/** Object */ element) {
   FormPanel.$clinit();
   let $instance = new FormPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_FormPanel__org_gwtproject_dom_client_Element(element);
   return $instance;
  }
- /**
-  * Initialization from constructor 'FormPanel(Element)'.
-  * @param {Object} element
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_FormPanel__org_gwtproject_dom_client_Element(element) {
+ //Initialization from constructor 'FormPanel(Element)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_FormPanel__org_gwtproject_dom_client_Element(/** Object */ element) {
   this.$ctor__org_gwtproject_user_client_ui_FormPanel__org_gwtproject_dom_client_Element__boolean(element, false);
  }
- /**
-  * Factory method corresponding to constructor 'FormPanel(Element, boolean)'.
-  * @param {Object} element
-  * @param {boolean} createIFrame
-  * @return {!FormPanel}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_Element__boolean(element, createIFrame) {
+ //Factory method corresponding to constructor 'FormPanel(Element, boolean)'.
+ /** @return {!FormPanel} */
+ static $create__org_gwtproject_dom_client_Element__boolean(/** Object */ element, /** boolean */ createIFrame) {
   FormPanel.$clinit();
   let $instance = new FormPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_FormPanel__org_gwtproject_dom_client_Element__boolean(element, createIFrame);
   return $instance;
  }
- /**
-  * Initialization from constructor 'FormPanel(Element, boolean)'.
-  * @param {Object} element
-  * @param {boolean} createIFrame
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_FormPanel__org_gwtproject_dom_client_Element__boolean(element, createIFrame) {
+ //Initialization from constructor 'FormPanel(Element, boolean)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_FormPanel__org_gwtproject_dom_client_Element__boolean(/** Object */ element, /** boolean */ createIFrame) {
   this.$ctor__org_gwtproject_user_client_ui_SimplePanel__org_gwtproject_dom_client_Element(element);
   FormElement_$Overlay.m_as__org_gwtproject_dom_client_Element(element);
   if (createIFrame) {
@@ -180,112 +134,66 @@ class FormPanel extends SimplePanel {
    this.m_sinkEvents__int(Event.f_ONLOAD__org_gwtproject_user_client_Event);
   }
  }
- /**
-  * @param {SubmitCompleteHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addSubmitCompleteHandler__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteHandler(handler) {
+ /** @return {HandlerRegistration} */
+ m_addSubmitCompleteHandler__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteHandler(/** SubmitCompleteHandler */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, SubmitCompleteEvent.m_getType__());
  }
- /**
-  * @param {SubmitHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addSubmitHandler__org_gwtproject_user_client_ui_FormPanel_SubmitHandler(handler) {
+ /** @return {HandlerRegistration} */
+ m_addSubmitHandler__org_gwtproject_user_client_ui_FormPanel_SubmitHandler(/** SubmitHandler */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, SubmitEvent.m_getType__());
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getAction__() {
   return this.m_getFormElement___$p_org_gwtproject_user_client_ui_FormPanel().action;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getEncoding__() {
   return FormPanel.$f_impl__org_gwtproject_user_client_ui_FormPanel_.m_getEncoding__org_gwtproject_dom_client_Element(this.m_getElement__());
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getMethod__() {
   return this.m_getFormElement___$p_org_gwtproject_user_client_ui_FormPanel().method;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getTarget__() {
   return this.m_getFormElement___$p_org_gwtproject_user_client_ui_FormPanel().target;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_onFormSubmit__() {
   return this.m_onFormSubmitImpl___$p_org_gwtproject_user_client_ui_FormPanel();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onFrameLoad__() {
   this.m_onFrameLoadImpl___$p_org_gwtproject_user_client_ui_FormPanel();
  }
- /**
-  * @public
-  */
+ 
  m_reset__() {
   FormPanel.$f_impl__org_gwtproject_user_client_ui_FormPanel_.m_reset__org_gwtproject_dom_client_Element(this.m_getElement__());
  }
- /**
-  * @param {?string} url
-  * @public
-  */
- m_setAction__java_lang_String(url) {
+ 
+ m_setAction__java_lang_String(/** ?string */ url) {
   this.m_getFormElement___$p_org_gwtproject_user_client_ui_FormPanel().action = url;
  }
- /**
-  * @param {SafeUri} url
-  * @public
-  */
- m_setAction__org_gwtproject_safehtml_shared_SafeUri(url) {
+ 
+ m_setAction__org_gwtproject_safehtml_shared_SafeUri(/** SafeUri */ url) {
   FormElement_$Overlay.m_setAction__$devirt__org_gwtproject_dom_client_FormElement__org_gwtproject_safehtml_shared_SafeUri(this.m_getFormElement___$p_org_gwtproject_user_client_ui_FormPanel(), url);
  }
- /**
-  * @param {?string} encodingType
-  * @public
-  */
- m_setEncoding__java_lang_String(encodingType) {
+ 
+ m_setEncoding__java_lang_String(/** ?string */ encodingType) {
   FormPanel.$f_impl__org_gwtproject_user_client_ui_FormPanel_.m_setEncoding__org_gwtproject_dom_client_Element__java_lang_String(this.m_getElement__(), encodingType);
  }
- /**
-  * @param {?string} method
-  * @public
-  */
- m_setMethod__java_lang_String(method) {
+ 
+ m_setMethod__java_lang_String(/** ?string */ method) {
   this.m_getFormElement___$p_org_gwtproject_user_client_ui_FormPanel().method = method;
  }
- /**
-  * @public
-  */
+ 
  m_submit__() {
   if (!this.m_fireSubmitEvent___$p_org_gwtproject_user_client_ui_FormPanel()) {
    return;
   }
   FormPanel.$f_impl__org_gwtproject_user_client_ui_FormPanel_.m_submit__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(this.m_getElement__(), this.f_synthesizedFrame__org_gwtproject_user_client_ui_FormPanel_);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onAttach__() {
   super.m_onAttach__();
   if (!$Equality.$same(this.f_frameName__org_gwtproject_user_client_ui_FormPanel_, null)) {
@@ -294,10 +202,7 @@ class FormPanel extends SimplePanel {
   }
   FormPanel.$f_impl__org_gwtproject_user_client_ui_FormPanel_.m_hookEvents__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element__org_gwtproject_user_client_ui_impl_FormPanelImplHost(this.f_synthesizedFrame__org_gwtproject_user_client_ui_FormPanel_, this.m_getElement__(), this);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onDetach__() {
   super.m_onDetach__();
   FormPanel.$f_impl__org_gwtproject_user_client_ui_FormPanel_.m_unhookEvents__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(this.f_synthesizedFrame__org_gwtproject_user_client_ui_FormPanel_, this.m_getElement__());
@@ -306,92 +211,57 @@ class FormPanel extends SimplePanel {
    this.f_synthesizedFrame__org_gwtproject_user_client_ui_FormPanel_ = null;
   }
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getSynthesizedIFrame___$pp_org_gwtproject_user_client_ui() {
   return this.f_synthesizedFrame__org_gwtproject_user_client_ui_FormPanel_;
  }
- /**
-  * @public
-  */
+ 
  m_createFrame___$p_org_gwtproject_user_client_ui_FormPanel() {
   let dummy = Document_$Overlay.m_createDivElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__());
   Element_$Overlay.m_setInnerSafeHtml__$devirt__org_gwtproject_dom_client_Element__org_gwtproject_safehtml_shared_SafeHtml(dummy, IFrameTemplate.f_INSTANCE__org_gwtproject_user_client_ui_FormPanel_IFrameTemplate.m_get__java_lang_String(this.f_frameName__org_gwtproject_user_client_ui_FormPanel_));
   this.f_synthesizedFrame__org_gwtproject_user_client_ui_FormPanel_ = Element_$Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(dummy);
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_fireSubmitEvent___$p_org_gwtproject_user_client_ui_FormPanel() {
   let event = SubmitEvent.$create__();
   this.m_fireEvent__org_gwtproject_event_shared_Event(event);
   return !event.m_isCanceled__();
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getFormElement___$p_org_gwtproject_user_client_ui_FormPanel() {
-  return /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(this.m_getElement__()), FormElement_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(this.m_getElement__()), FormElement_$Overlay));
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_onFormSubmitImpl___$p_org_gwtproject_user_client_ui_FormPanel() {
   return this.m_fireSubmitEvent___$p_org_gwtproject_user_client_ui_FormPanel();
  }
- /**
-  * @public
-  */
+ 
  m_onFrameLoadImpl___$p_org_gwtproject_user_client_ui_FormPanel() {
   Scheduler.m_get__().m_scheduleDeferred__org_gwtproject_core_client_Scheduler_ScheduledCommand($1.$create__org_gwtproject_user_client_ui_FormPanel(this));
  }
- /**
-  * @param {?string} target
-  * @public
-  */
- m_setTarget__java_lang_String_$p_org_gwtproject_user_client_ui_FormPanel(target) {
+ 
+ m_setTarget__java_lang_String_$p_org_gwtproject_user_client_ui_FormPanel(/** ?string */ target) {
   this.m_getFormElement___$p_org_gwtproject_user_client_ui_FormPanel().target = target;
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @return {FormPanelImpl}
-  * @public
-  */
+ /** @return {FormPanelImpl} */
  static get f_impl__org_gwtproject_user_client_ui_FormPanel_() {
   return (FormPanel.$clinit(), FormPanel.$f_impl__org_gwtproject_user_client_ui_FormPanel_);
  }
- /**
-  * @param {FormPanelImpl} value
-  * @public
-  */
- static set f_impl__org_gwtproject_user_client_ui_FormPanel_(value) {
+ 
+ static set f_impl__org_gwtproject_user_client_ui_FormPanel_(/** FormPanelImpl */ value) {
   (FormPanel.$clinit(), FormPanel.$f_impl__org_gwtproject_user_client_ui_FormPanel_ = value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   FormPanel.$clinit = () =>{};
   FormPanel.$loadModules();
@@ -399,17 +269,11 @@ class FormPanel extends SimplePanel {
   FormPanel.f_formId__org_gwtproject_user_client_ui_FormPanel_ = 0;
   FormPanel.$f_impl__org_gwtproject_user_client_ui_FormPanel_ = FormPanelImpl.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof FormPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -436,17 +300,17 @@ $Util.$setClassMetadata(FormPanel, 'org.gwtproject.user.client.ui.FormPanel');
 
 FormPanelImplHost.$markImplementor(FormPanel);
 
-/** @public {?string} @const */
+/**@const {?string}*/
 FormPanel.f_ENCODING_MULTIPART__org_gwtproject_user_client_ui_FormPanel = "multipart/form-data";
-/** @public {?string} @const */
+/**@const {?string}*/
 FormPanel.f_ENCODING_URLENCODED__org_gwtproject_user_client_ui_FormPanel = "application/x-www-form-urlencoded";
-/** @public {?string} @const */
+/**@const {?string}*/
 FormPanel.f_METHOD_GET__org_gwtproject_user_client_ui_FormPanel = "get";
-/** @public {?string} @const */
+/**@const {?string}*/
 FormPanel.f_METHOD_POST__org_gwtproject_user_client_ui_FormPanel = "post";
-/** @public {number} */
+/**@type {number}*/
 FormPanel.f_formId__org_gwtproject_user_client_ui_FormPanel_ = 0;
-/** @private {FormPanelImpl} */
+/**@private {FormPanelImpl}*/
 FormPanel.$f_impl__org_gwtproject_user_client_ui_FormPanel_;
 
 exports = FormPanel; 

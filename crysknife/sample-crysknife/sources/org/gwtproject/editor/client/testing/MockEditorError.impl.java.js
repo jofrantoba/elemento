@@ -10,109 +10,62 @@ let Editor = goog.forwardDeclare('org.gwtproject.editor.client.Editor$impl');
  * @implements {EditorError}
   */
 class MockEditorError extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!MockEditorError}
-  * @public
-  */
+ /** @return {!MockEditorError} */
  static $create__() {
   MockEditorError.$clinit();
   let $instance = new MockEditorError();
   $instance.$ctor__org_gwtproject_editor_client_testing_MockEditorError__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_editor_client_testing_MockEditorError__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getAbsolutePath__() {
   return null;
  }
- /**
-  * @override
-  * @return {Editor<?>}
-  * @public
-  */
+ /** @override @return {Editor<?>} */
  m_getEditor__() {
   return null;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getMessage__() {
   return null;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getPath__() {
   return null;
  }
- /**
-  * @override
-  * @return {*}
-  * @public
-  */
+ /** @override @return {*} */
  m_getUserData__() {
   return null;
  }
- /**
-  * @override
-  * @return {*}
-  * @public
-  */
+ /** @override @return {*} */
  m_getValue__() {
   return null;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isConsumed__() {
   return false;
  }
- /**
-  * @override
-  * @param {boolean} consumed
-  * @public
-  */
- m_setConsumed__boolean(consumed) {}
- /**
-  * @public
-  */
+ /** @override */
+ m_setConsumed__boolean(/** boolean */ consumed) {}
+ 
  static $clinit() {
   MockEditorError.$clinit = () =>{};
   MockEditorError.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof MockEditorError;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -15,102 +15,63 @@ let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
  * @extends {KeyEvent<KeyPressHandler>}
   */
 class KeyPressEvent extends KeyEvent {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!KeyPressEvent}
-  * @public
-  */
+ /** @return {!KeyPressEvent} */
  static $create__() {
   KeyPressEvent.$clinit();
   let $instance = new KeyPressEvent();
   $instance.$ctor__org_gwtproject_event_dom_client_KeyPressEvent__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_dom_client_KeyPressEvent__() {
   this.$ctor__org_gwtproject_event_dom_client_KeyEvent__();
  }
- /**
-  * @return {Type<KeyPressHandler>}
-  * @public
-  */
+ /** @return {Type<KeyPressHandler>} */
  static m_getType__() {
   KeyPressEvent.$clinit();
   return KeyPressEvent.f_TYPE__org_gwtproject_event_dom_client_KeyPressEvent_;
  }
- /**
-  * @override
-  * @return {Type<KeyPressHandler>}
-  * @public
-  */
+ /** @override @return {Type<KeyPressHandler>} */
  m_getAssociatedType__() {
   return KeyPressEvent.f_TYPE__org_gwtproject_event_dom_client_KeyPressEvent_;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_toDebugString__() {
   return j_l_String.m_valueOf__java_lang_Object(super.m_toDebugString__()) + "[" + j_l_String.m_valueOf__char(this.m_getCharCode__()) + "]";
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getCharCode__() {
   return $Primitives.$narrowIntToChar(this.m_getUnicodeCharCode__());
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getUnicodeCharCode__() {
   return $Overlay.m_getCharCode__$devirt__org_gwtproject_dom_client_NativeEvent(this.m_getNativeEvent__());
  }
- /**
-  * @param {KeyPressHandler} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_event_dom_client_KeyPressHandler(handler) {
+ 
+ m_dispatch__org_gwtproject_event_dom_client_KeyPressHandler(/** KeyPressHandler */ handler) {
   handler.m_onKeyPress__org_gwtproject_event_dom_client_KeyPressEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_event_dom_client_KeyPressHandler(/**@type {KeyPressHandler} */ ($Casts.$to(arg0, KeyPressHandler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_event_dom_client_KeyPressHandler(/**@type {KeyPressHandler}*/ ($Casts.$to(arg0, KeyPressHandler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   KeyPressEvent.$clinit = () =>{};
   KeyPressEvent.$loadModules();
   KeyEvent.$clinit();
-  KeyPressEvent.f_TYPE__org_gwtproject_event_dom_client_KeyPressEvent_ = /**@type {!Type<KeyPressHandler>} */ (Type.$create__java_lang_String__org_gwtproject_event_dom_client_DomEvent(BrowserEvents.f_KEYPRESS__org_gwtproject_dom_client_BrowserEvents, KeyPressEvent.$create__()));
+  KeyPressEvent.f_TYPE__org_gwtproject_event_dom_client_KeyPressEvent_ = /**@type {!Type<KeyPressHandler>}*/ (Type.$create__java_lang_String__org_gwtproject_event_dom_client_DomEvent(BrowserEvents.f_KEYPRESS__org_gwtproject_dom_client_BrowserEvents, KeyPressEvent.$create__()));
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof KeyPressEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   BrowserEvents = goog.module.get('org.gwtproject.dom.client.BrowserEvents$impl');
@@ -124,7 +85,7 @@ class KeyPressEvent extends KeyEvent {
 }
 $Util.$setClassMetadata(KeyPressEvent, 'org.gwtproject.event.dom.client.KeyPressEvent');
 
-/** @public {Type<KeyPressHandler>} */
+/**@type {Type<KeyPressHandler>}*/
 KeyPressEvent.f_TYPE__org_gwtproject_event_dom_client_KeyPressEvent_;
 
 exports = KeyPressEvent; 

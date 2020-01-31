@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ImageLoadingCell$Renderers.impl.java.js",
-"lineCount":34,
-"mappings":"A;;;;;;;;;MAwCmB,S;;;;;;CAQU,oB;;;;;;CASA,oB;;;;;;CAQA,sB;;;;QAzBV,O;EAAAA,4B;EAAAA;",
+"lineCount":20,
+"mappings":"A;;;;;;;;;MAwCmB,S;;CAQU,oB;;CASA,oB;;CAQA,sB;;QAzBV,O;EAAAA,4B;EAAAA;",
 "sources":["ImageLoadingCell.java"],
 "names":["org.gwtproject.cell.client.ImageLoadingCell$Renderers.<clinit>"]
 }

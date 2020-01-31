@@ -10,36 +10,23 @@ const HasFocusHandlers = goog.require('org.gwtproject.event.dom.client.HasFocusH
  * @extends {HasBlurHandlers}
  */
 class HasAllFocusHandlers {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HasAllFocusHandlers.$clinit = () =>{};
   HasAllFocusHandlers.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasFocusHandlers.$markImplementor(classConstructor);
-  HasBlurHandlers.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_HasAllFocusHandlers = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasFocusHandlers.$markImplementor(ctor);
+  HasBlurHandlers.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_HasAllFocusHandlers = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_HasAllFocusHandlers;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -30,57 +30,40 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {HasResizeHandlers}
   */
 class ResizeLayoutPanel extends SimplePanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Impl} */
+  /**@type {Impl}*/
   this.f_impl__org_gwtproject_user_client_ui_ResizeLayoutPanel_;
-  /** @public {Layer} */
+  /**@type {Layer}*/
   this.f_layer__org_gwtproject_user_client_ui_ResizeLayoutPanel_;
-  /** @public {Layout} */
+  /**@type {Layout}*/
   this.f_layout__org_gwtproject_user_client_ui_ResizeLayoutPanel_;
-  /** @public {ScheduledCommand} */
+  /**@type {ScheduledCommand}*/
   this.f_resizeCmd__org_gwtproject_user_client_ui_ResizeLayoutPanel_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_resizeCmdScheduled__org_gwtproject_user_client_ui_ResizeLayoutPanel_ = false;
  }
- /**
-  * @return {!ResizeLayoutPanel}
-  * @public
-  */
+ /** @return {!ResizeLayoutPanel} */
  static $create__() {
   ResizeLayoutPanel.$clinit();
   let $instance = new ResizeLayoutPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_ResizeLayoutPanel__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_ResizeLayoutPanel__() {
   this.$ctor__org_gwtproject_user_client_ui_SimplePanel__();
   this.$init___$p_org_gwtproject_user_client_ui_ResizeLayoutPanel();
   this.f_layout__org_gwtproject_user_client_ui_ResizeLayoutPanel_ = Layout.$create__org_gwtproject_dom_client_Element(this.m_getElement__());
   this.f_impl__org_gwtproject_user_client_ui_ResizeLayoutPanel_.m_init__org_gwtproject_dom_client_Element__org_gwtproject_user_client_ui_ResizeLayoutPanel_Impl_Delegate(this.m_getElement__(), $2.$create__org_gwtproject_user_client_ui_ResizeLayoutPanel(this));
  }
- /**
-  * @override
-  * @param {ResizeHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addResizeHandler__org_gwtproject_event_logical_shared_ResizeHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addResizeHandler__org_gwtproject_event_logical_shared_ResizeHandler(/** ResizeHandler */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, ResizeEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   if (!$Equality.$same(this.f_widget__org_gwtproject_user_client_ui_SimplePanel, w)) {
    return false;
   }
@@ -93,12 +76,8 @@ class ResizeLayoutPanel extends SimplePanel {
   }
   return true;
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @public
-  */
- m_setWidget__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override */
+ m_setWidget__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   if ($Equality.$same(w, this.f_widget__org_gwtproject_user_client_ui_SimplePanel)) {
    return;
   }
@@ -118,91 +97,63 @@ class ResizeLayoutPanel extends SimplePanel {
    this.m_scheduleResize___$p_org_gwtproject_user_client_ui_ResizeLayoutPanel();
   }
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onAttach__() {
   super.m_onAttach__();
   this.f_impl__org_gwtproject_user_client_ui_ResizeLayoutPanel_.m_onAttach__();
   this.f_layout__org_gwtproject_user_client_ui_ResizeLayoutPanel_.m_onAttach__();
   this.m_scheduleResize___$p_org_gwtproject_user_client_ui_ResizeLayoutPanel();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onDetach__() {
   super.m_onDetach__();
   this.f_impl__org_gwtproject_user_client_ui_ResizeLayoutPanel_.m_onDetach__();
   this.f_layout__org_gwtproject_user_client_ui_ResizeLayoutPanel_.m_onDetach__();
  }
- /**
-  * @public
-  */
+ 
  m_handleResize___$p_org_gwtproject_user_client_ui_ResizeLayoutPanel() {
   if (!this.m_isAttached__()) {
    return;
   }
   if (RequiresResize.$isInstance(this.f_widget__org_gwtproject_user_client_ui_SimplePanel)) {
-   /**@type {RequiresResize} */ ($Casts.$to(this.f_widget__org_gwtproject_user_client_ui_SimplePanel, RequiresResize)).m_onResize__();
+   /**@type {RequiresResize}*/ ($Casts.$to(this.f_widget__org_gwtproject_user_client_ui_SimplePanel, RequiresResize)).m_onResize__();
   }
   ResizeEvent.m_fire__org_gwtproject_event_logical_shared_HasResizeHandlers__int__int(this, this.m_getOffsetWidth__(), this.m_getOffsetHeight__());
  }
- /**
-  * @public
-  */
+ 
  m_scheduleResize___$p_org_gwtproject_user_client_ui_ResizeLayoutPanel() {
   if (this.m_isAttached__() && !this.f_resizeCmdScheduled__org_gwtproject_user_client_ui_ResizeLayoutPanel_) {
    this.f_resizeCmdScheduled__org_gwtproject_user_client_ui_ResizeLayoutPanel_ = true;
    Scheduler.m_get__().m_scheduleDeferred__org_gwtproject_core_client_Scheduler_ScheduledCommand(this.f_resizeCmd__org_gwtproject_user_client_ui_ResizeLayoutPanel_);
   }
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_ResizeLayoutPanel() {
   this.f_impl__org_gwtproject_user_client_ui_ResizeLayoutPanel_ = ImplStandard.$create__();
   this.f_resizeCmd__org_gwtproject_user_client_ui_ResizeLayoutPanel_ = $1.$create__org_gwtproject_user_client_ui_ResizeLayoutPanel(this);
   this.f_resizeCmdScheduled__org_gwtproject_user_client_ui_ResizeLayoutPanel_ = false;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ResizeLayoutPanel.$clinit = () =>{};
   ResizeLayoutPanel.$loadModules();
   SimplePanel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ResizeLayoutPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

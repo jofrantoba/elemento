@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ErrorHandler$$LambdaAdaptor.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;MAoBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;2E;EAAAA,sI;;;;;;CAAA,4H;EAAAC,iC;EAAAA,8E;;;;;;CAAA,qD;;GAAAC,yF;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MAoBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;2E;EAAAA,sI;;;CAAA,4H;EAAAC,iC;EAAAA,8E;;;CAAA,qD;;GAAAC,yF;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["ErrorHandler.java"],
 "names":["org.gwtproject.event.dom.client.ErrorHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.dom.client.ErrorHandler$$LambdaAdaptor.<init>","org.gwtproject.event.dom.client.ErrorHandler$$LambdaAdaptor.onError","org.gwtproject.event.dom.client.ErrorHandler$$LambdaAdaptor.<clinit>"]
 }

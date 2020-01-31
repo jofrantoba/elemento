@@ -140,537 +140,341 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class Roles extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!Roles}
-  * @public
-  */
+ /** @return {!Roles} */
  static $create__() {
   Roles.$clinit();
   let $instance = new Roles();
   $instance.$ctor__org_gwtproject_aria_client_Roles__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_aria_client_Roles__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {AlertdialogRole}
-  * @public
-  */
+ /** @return {AlertdialogRole} */
  static m_getAlertdialogRole__() {
   Roles.$clinit();
   return Roles.f_ALERTDIALOG__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {AlertRole}
-  * @public
-  */
+ /** @return {AlertRole} */
  static m_getAlertRole__() {
   Roles.$clinit();
   return Roles.f_ALERT__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {ApplicationRole}
-  * @public
-  */
+ /** @return {ApplicationRole} */
  static m_getApplicationRole__() {
   Roles.$clinit();
   return Roles.f_APPLICATION__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {ArticleRole}
-  * @public
-  */
+ /** @return {ArticleRole} */
  static m_getArticleRole__() {
   Roles.$clinit();
   return Roles.f_ARTICLE__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {BannerRole}
-  * @public
-  */
+ /** @return {BannerRole} */
  static m_getBannerRole__() {
   Roles.$clinit();
   return Roles.f_BANNER__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {ButtonRole}
-  * @public
-  */
+ /** @return {ButtonRole} */
  static m_getButtonRole__() {
   Roles.$clinit();
   return Roles.f_BUTTON__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {CheckboxRole}
-  * @public
-  */
+ /** @return {CheckboxRole} */
  static m_getCheckboxRole__() {
   Roles.$clinit();
   return Roles.f_CHECKBOX__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {ColumnheaderRole}
-  * @public
-  */
+ /** @return {ColumnheaderRole} */
  static m_getColumnheaderRole__() {
   Roles.$clinit();
   return Roles.f_COLUMNHEADER__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {ComboboxRole}
-  * @public
-  */
+ /** @return {ComboboxRole} */
  static m_getComboboxRole__() {
   Roles.$clinit();
   return Roles.f_COMBOBOX__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {ComplementaryRole}
-  * @public
-  */
+ /** @return {ComplementaryRole} */
  static m_getComplementaryRole__() {
   Roles.$clinit();
   return Roles.f_COMPLEMENTARY__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {ContentinfoRole}
-  * @public
-  */
+ /** @return {ContentinfoRole} */
  static m_getContentinfoRole__() {
   Roles.$clinit();
   return Roles.f_CONTENTINFO__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {DefinitionRole}
-  * @public
-  */
+ /** @return {DefinitionRole} */
  static m_getDefinitionRole__() {
   Roles.$clinit();
   return Roles.f_DEFINITION__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {DialogRole}
-  * @public
-  */
+ /** @return {DialogRole} */
  static m_getDialogRole__() {
   Roles.$clinit();
   return Roles.f_DIALOG__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {DirectoryRole}
-  * @public
-  */
+ /** @return {DirectoryRole} */
  static m_getDirectoryRole__() {
   Roles.$clinit();
   return Roles.f_DIRECTORY__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {DocumentRole}
-  * @public
-  */
+ /** @return {DocumentRole} */
  static m_getDocumentRole__() {
   Roles.$clinit();
   return Roles.f_DOCUMENT__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {FormRole}
-  * @public
-  */
+ /** @return {FormRole} */
  static m_getFormRole__() {
   Roles.$clinit();
   return Roles.f_FORM__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {GridcellRole}
-  * @public
-  */
+ /** @return {GridcellRole} */
  static m_getGridcellRole__() {
   Roles.$clinit();
   return Roles.f_GRIDCELL__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {GridRole}
-  * @public
-  */
+ /** @return {GridRole} */
  static m_getGridRole__() {
   Roles.$clinit();
   return Roles.f_GRID__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {GroupRole}
-  * @public
-  */
+ /** @return {GroupRole} */
  static m_getGroupRole__() {
   Roles.$clinit();
   return Roles.f_GROUP__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {HeadingRole}
-  * @public
-  */
+ /** @return {HeadingRole} */
  static m_getHeadingRole__() {
   Roles.$clinit();
   return Roles.f_HEADING__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {ImgRole}
-  * @public
-  */
+ /** @return {ImgRole} */
  static m_getImgRole__() {
   Roles.$clinit();
   return Roles.f_IMG__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {LinkRole}
-  * @public
-  */
+ /** @return {LinkRole} */
  static m_getLinkRole__() {
   Roles.$clinit();
   return Roles.f_LINK__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {ListboxRole}
-  * @public
-  */
+ /** @return {ListboxRole} */
  static m_getListboxRole__() {
   Roles.$clinit();
   return Roles.f_LISTBOX__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {ListitemRole}
-  * @public
-  */
+ /** @return {ListitemRole} */
  static m_getListitemRole__() {
   Roles.$clinit();
   return Roles.f_LISTITEM__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {ListRole}
-  * @public
-  */
+ /** @return {ListRole} */
  static m_getListRole__() {
   Roles.$clinit();
   return Roles.f_LIST__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {LogRole}
-  * @public
-  */
+ /** @return {LogRole} */
  static m_getLogRole__() {
   Roles.$clinit();
   return Roles.f_LOG__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {MainRole}
-  * @public
-  */
+ /** @return {MainRole} */
  static m_getMainRole__() {
   Roles.$clinit();
   return Roles.f_MAIN__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {MarqueeRole}
-  * @public
-  */
+ /** @return {MarqueeRole} */
  static m_getMarqueeRole__() {
   Roles.$clinit();
   return Roles.f_MARQUEE__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {MathRole}
-  * @public
-  */
+ /** @return {MathRole} */
  static m_getMathRole__() {
   Roles.$clinit();
   return Roles.f_MATH__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {MenubarRole}
-  * @public
-  */
+ /** @return {MenubarRole} */
  static m_getMenubarRole__() {
   Roles.$clinit();
   return Roles.f_MENUBAR__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {MenuitemcheckboxRole}
-  * @public
-  */
+ /** @return {MenuitemcheckboxRole} */
  static m_getMenuitemcheckboxRole__() {
   Roles.$clinit();
   return Roles.f_MENUITEMCHECKBOX__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {MenuitemradioRole}
-  * @public
-  */
+ /** @return {MenuitemradioRole} */
  static m_getMenuitemradioRole__() {
   Roles.$clinit();
   return Roles.f_MENUITEMRADIO__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {MenuitemRole}
-  * @public
-  */
+ /** @return {MenuitemRole} */
  static m_getMenuitemRole__() {
   Roles.$clinit();
   return Roles.f_MENUITEM__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {MenuRole}
-  * @public
-  */
+ /** @return {MenuRole} */
  static m_getMenuRole__() {
   Roles.$clinit();
   return Roles.f_MENU__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {NavigationRole}
-  * @public
-  */
+ /** @return {NavigationRole} */
  static m_getNavigationRole__() {
   Roles.$clinit();
   return Roles.f_NAVIGATION__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {NoteRole}
-  * @public
-  */
+ /** @return {NoteRole} */
  static m_getNoteRole__() {
   Roles.$clinit();
   return Roles.f_NOTE__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {OptionRole}
-  * @public
-  */
+ /** @return {OptionRole} */
  static m_getOptionRole__() {
   Roles.$clinit();
   return Roles.f_OPTION__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {PresentationRole}
-  * @public
-  */
+ /** @return {PresentationRole} */
  static m_getPresentationRole__() {
   Roles.$clinit();
   return Roles.f_PRESENTATION__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {ProgressbarRole}
-  * @public
-  */
+ /** @return {ProgressbarRole} */
  static m_getProgressbarRole__() {
   Roles.$clinit();
   return Roles.f_PROGRESSBAR__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {RadiogroupRole}
-  * @public
-  */
+ /** @return {RadiogroupRole} */
  static m_getRadiogroupRole__() {
   Roles.$clinit();
   return Roles.f_RADIOGROUP__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {RadioRole}
-  * @public
-  */
+ /** @return {RadioRole} */
  static m_getRadioRole__() {
   Roles.$clinit();
   return Roles.f_RADIO__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {RegionRole}
-  * @public
-  */
+ /** @return {RegionRole} */
  static m_getRegionRole__() {
   Roles.$clinit();
   return Roles.f_REGION__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {RowgroupRole}
-  * @public
-  */
+ /** @return {RowgroupRole} */
  static m_getRowgroupRole__() {
   Roles.$clinit();
   return Roles.f_ROWGROUP__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {RowheaderRole}
-  * @public
-  */
+ /** @return {RowheaderRole} */
  static m_getRowheaderRole__() {
   Roles.$clinit();
   return Roles.f_ROWHEADER__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {RowRole}
-  * @public
-  */
+ /** @return {RowRole} */
  static m_getRowRole__() {
   Roles.$clinit();
   return Roles.f_ROW__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {ScrollbarRole}
-  * @public
-  */
+ /** @return {ScrollbarRole} */
  static m_getScrollbarRole__() {
   Roles.$clinit();
   return Roles.f_SCROLLBAR__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {SearchRole}
-  * @public
-  */
+ /** @return {SearchRole} */
  static m_getSearchRole__() {
   Roles.$clinit();
   return Roles.f_SEARCH__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {SeparatorRole}
-  * @public
-  */
+ /** @return {SeparatorRole} */
  static m_getSeparatorRole__() {
   Roles.$clinit();
   return Roles.f_SEPARATOR__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {SliderRole}
-  * @public
-  */
+ /** @return {SliderRole} */
  static m_getSliderRole__() {
   Roles.$clinit();
   return Roles.f_SLIDER__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {SpinbuttonRole}
-  * @public
-  */
+ /** @return {SpinbuttonRole} */
  static m_getSpinbuttonRole__() {
   Roles.$clinit();
   return Roles.f_SPINBUTTON__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {StatusRole}
-  * @public
-  */
+ /** @return {StatusRole} */
  static m_getStatusRole__() {
   Roles.$clinit();
   return Roles.f_STATUS__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {TablistRole}
-  * @public
-  */
+ /** @return {TablistRole} */
  static m_getTablistRole__() {
   Roles.$clinit();
   return Roles.f_TABLIST__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {TabpanelRole}
-  * @public
-  */
+ /** @return {TabpanelRole} */
  static m_getTabpanelRole__() {
   Roles.$clinit();
   return Roles.f_TABPANEL__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {TabRole}
-  * @public
-  */
+ /** @return {TabRole} */
  static m_getTabRole__() {
   Roles.$clinit();
   return Roles.f_TAB__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {TextboxRole}
-  * @public
-  */
+ /** @return {TextboxRole} */
  static m_getTextboxRole__() {
   Roles.$clinit();
   return Roles.f_TEXTBOX__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {TimerRole}
-  * @public
-  */
+ /** @return {TimerRole} */
  static m_getTimerRole__() {
   Roles.$clinit();
   return Roles.f_TIMER__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {ToolbarRole}
-  * @public
-  */
+ /** @return {ToolbarRole} */
  static m_getToolbarRole__() {
   Roles.$clinit();
   return Roles.f_TOOLBAR__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {TooltipRole}
-  * @public
-  */
+ /** @return {TooltipRole} */
  static m_getTooltipRole__() {
   Roles.$clinit();
   return Roles.f_TOOLTIP__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {TreegridRole}
-  * @public
-  */
+ /** @return {TreegridRole} */
  static m_getTreegridRole__() {
   Roles.$clinit();
   return Roles.f_TREEGRID__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {TreeitemRole}
-  * @public
-  */
+ /** @return {TreeitemRole} */
  static m_getTreeitemRole__() {
   Roles.$clinit();
   return Roles.f_TREEITEM__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @return {TreeRole}
-  * @public
-  */
+ /** @return {TreeRole} */
  static m_getTreeRole__() {
   Roles.$clinit();
   return Roles.f_TREE__org_gwtproject_aria_client_Roles_;
  }
- /**
-  * @param {Object} element
-  * @return {Role}
-  * @public
-  */
- static m_roleOf__org_gwtproject_dom_client_Element(element) {
+ /** @return {Role} */
+ static m_roleOf__org_gwtproject_dom_client_Element(/** Object */ element) {
   let /** Map<?string, Role> */ $$q;
   Roles.$clinit();
   $Asserts.$assertWithMessage(!$Equality.$same(element, null), "Element cannot be null.");
   let roleAttributeValue = $Overlay.m_hasAttribute__$devirt__org_gwtproject_dom_client_Element__java_lang_String(element, "role") ? $Overlay.m_getAttribute__$devirt__org_gwtproject_dom_client_Element__java_lang_String(element, "role") : "";
-  return /**@type {Role} */ ($Casts.$to(/**@type {Stream<Role>} */ (/**@type {Stream<?string>} */ (Arrays.m_stream__arrayOf_java_lang_Object(j_l_String.m_split__java_lang_String__java_lang_String(roleAttributeValue, "\\s+"))).m_map__java_util_function_Function(($$q = Roles.f_ROLES_MAP__org_gwtproject_aria_client_Roles_, j_u_function_Function.$adapt((arg0) =>{
-   let arg0_1 = /**@type {?string} */ ($Casts.$to(arg0, j_l_String));
-   return /**@type {Role} */ ($Casts.$to($$q.get(arg0_1), Role));
+  return /**@type {Role}*/ ($Casts.$to(/**@type {Stream<Role>}*/ (/**@type {Stream<?string>}*/ (Arrays.m_stream__arrayOf_java_lang_Object(j_l_String.m_split__java_lang_String__java_lang_String(roleAttributeValue, "\\s+"))).m_map__java_util_function_Function(($$q = Roles.f_ROLES_MAP__org_gwtproject_aria_client_Roles_, j_u_function_Function.$adapt((arg0) =>{
+   let arg0_1 = /**@type {?string}*/ ($Casts.$to(arg0, j_l_String));
+   return /**@type {Role}*/ ($Casts.$to($$q.get(arg0_1), Role));
   })))).m_filter__java_util_function_Predicate(Predicate.$adapt((arg0_2) =>{
-   let arg0_3 = /**@type {Role} */ ($Casts.$to(arg0_2, Role));
+   let arg0_3 = /**@type {Role}*/ ($Casts.$to(arg0_2, Role));
    return Objects.m_nonNull__java_lang_Object(arg0_3);
   })).m_findFirst__().m_orElse__java_lang_Object(null), Role));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Roles.$clinit = () =>{};
   Roles.$loadModules();
@@ -736,7 +540,7 @@ class Roles extends j_l_Object {
   Roles.f_TREEGRID__org_gwtproject_aria_client_Roles_ = TreegridRoleImpl.$create__java_lang_String("treegrid");
   Roles.f_TREEITEM__org_gwtproject_aria_client_Roles_ = TreeitemRoleImpl.$create__java_lang_String("treeitem");
   Roles.f_TREE__org_gwtproject_aria_client_Roles_ = TreeRoleImpl.$create__java_lang_String("tree");
-  Roles.f_ROLES_MAP__org_gwtproject_aria_client_Roles_ = /**@type {!HashMap<?string, Role>} */ (HashMap.$create__());
+  Roles.f_ROLES_MAP__org_gwtproject_aria_client_Roles_ = /**@type {!HashMap<?string, Role>}*/ (HashMap.$create__());
   Roles.f_ROLES_MAP__org_gwtproject_aria_client_Roles_.put("region", Roles.f_REGION__org_gwtproject_aria_client_Roles_);
   Roles.f_ROLES_MAP__org_gwtproject_aria_client_Roles_.put("alert", Roles.f_ALERT__org_gwtproject_aria_client_Roles_);
   Roles.f_ROLES_MAP__org_gwtproject_aria_client_Roles_.put("dialog", Roles.f_DIALOG__org_gwtproject_aria_client_Roles_);
@@ -799,17 +603,11 @@ class Roles extends j_l_Object {
   Roles.f_ROLES_MAP__org_gwtproject_aria_client_Roles_.put("treegrid", Roles.f_TREEGRID__org_gwtproject_aria_client_Roles_);
   Roles.f_ROLES_MAP__org_gwtproject_aria_client_Roles_.put("treeitem", Roles.f_TREEITEM__org_gwtproject_aria_client_Roles_);
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Roles;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   Arrays = goog.module.get('java.util.Arrays$impl');
@@ -888,129 +686,129 @@ class Roles extends j_l_Object {
 }
 $Util.$setClassMetadata(Roles, 'org.gwtproject.aria.client.Roles');
 
-/** @public {AlertdialogRole} */
+/**@type {AlertdialogRole}*/
 Roles.f_ALERTDIALOG__org_gwtproject_aria_client_Roles_;
-/** @public {AlertRole} */
+/**@type {AlertRole}*/
 Roles.f_ALERT__org_gwtproject_aria_client_Roles_;
-/** @public {ApplicationRole} */
+/**@type {ApplicationRole}*/
 Roles.f_APPLICATION__org_gwtproject_aria_client_Roles_;
-/** @public {ArticleRole} */
+/**@type {ArticleRole}*/
 Roles.f_ARTICLE__org_gwtproject_aria_client_Roles_;
-/** @public {BannerRole} */
+/**@type {BannerRole}*/
 Roles.f_BANNER__org_gwtproject_aria_client_Roles_;
-/** @public {ButtonRole} */
+/**@type {ButtonRole}*/
 Roles.f_BUTTON__org_gwtproject_aria_client_Roles_;
-/** @public {CheckboxRole} */
+/**@type {CheckboxRole}*/
 Roles.f_CHECKBOX__org_gwtproject_aria_client_Roles_;
-/** @public {ColumnheaderRole} */
+/**@type {ColumnheaderRole}*/
 Roles.f_COLUMNHEADER__org_gwtproject_aria_client_Roles_;
-/** @public {ComboboxRole} */
+/**@type {ComboboxRole}*/
 Roles.f_COMBOBOX__org_gwtproject_aria_client_Roles_;
-/** @public {ComplementaryRole} */
+/**@type {ComplementaryRole}*/
 Roles.f_COMPLEMENTARY__org_gwtproject_aria_client_Roles_;
-/** @public {ContentinfoRole} */
+/**@type {ContentinfoRole}*/
 Roles.f_CONTENTINFO__org_gwtproject_aria_client_Roles_;
-/** @public {DefinitionRole} */
+/**@type {DefinitionRole}*/
 Roles.f_DEFINITION__org_gwtproject_aria_client_Roles_;
-/** @public {DialogRole} */
+/**@type {DialogRole}*/
 Roles.f_DIALOG__org_gwtproject_aria_client_Roles_;
-/** @public {DirectoryRole} */
+/**@type {DirectoryRole}*/
 Roles.f_DIRECTORY__org_gwtproject_aria_client_Roles_;
-/** @public {DocumentRole} */
+/**@type {DocumentRole}*/
 Roles.f_DOCUMENT__org_gwtproject_aria_client_Roles_;
-/** @public {FormRole} */
+/**@type {FormRole}*/
 Roles.f_FORM__org_gwtproject_aria_client_Roles_;
-/** @public {GridcellRole} */
+/**@type {GridcellRole}*/
 Roles.f_GRIDCELL__org_gwtproject_aria_client_Roles_;
-/** @public {GridRole} */
+/**@type {GridRole}*/
 Roles.f_GRID__org_gwtproject_aria_client_Roles_;
-/** @public {GroupRole} */
+/**@type {GroupRole}*/
 Roles.f_GROUP__org_gwtproject_aria_client_Roles_;
-/** @public {HeadingRole} */
+/**@type {HeadingRole}*/
 Roles.f_HEADING__org_gwtproject_aria_client_Roles_;
-/** @public {ImgRole} */
+/**@type {ImgRole}*/
 Roles.f_IMG__org_gwtproject_aria_client_Roles_;
-/** @public {LinkRole} */
+/**@type {LinkRole}*/
 Roles.f_LINK__org_gwtproject_aria_client_Roles_;
-/** @public {ListboxRole} */
+/**@type {ListboxRole}*/
 Roles.f_LISTBOX__org_gwtproject_aria_client_Roles_;
-/** @public {ListitemRole} */
+/**@type {ListitemRole}*/
 Roles.f_LISTITEM__org_gwtproject_aria_client_Roles_;
-/** @public {ListRole} */
+/**@type {ListRole}*/
 Roles.f_LIST__org_gwtproject_aria_client_Roles_;
-/** @public {LogRole} */
+/**@type {LogRole}*/
 Roles.f_LOG__org_gwtproject_aria_client_Roles_;
-/** @public {MainRole} */
+/**@type {MainRole}*/
 Roles.f_MAIN__org_gwtproject_aria_client_Roles_;
-/** @public {MarqueeRole} */
+/**@type {MarqueeRole}*/
 Roles.f_MARQUEE__org_gwtproject_aria_client_Roles_;
-/** @public {MathRole} */
+/**@type {MathRole}*/
 Roles.f_MATH__org_gwtproject_aria_client_Roles_;
-/** @public {MenubarRole} */
+/**@type {MenubarRole}*/
 Roles.f_MENUBAR__org_gwtproject_aria_client_Roles_;
-/** @public {MenuitemcheckboxRole} */
+/**@type {MenuitemcheckboxRole}*/
 Roles.f_MENUITEMCHECKBOX__org_gwtproject_aria_client_Roles_;
-/** @public {MenuitemradioRole} */
+/**@type {MenuitemradioRole}*/
 Roles.f_MENUITEMRADIO__org_gwtproject_aria_client_Roles_;
-/** @public {MenuitemRole} */
+/**@type {MenuitemRole}*/
 Roles.f_MENUITEM__org_gwtproject_aria_client_Roles_;
-/** @public {MenuRole} */
+/**@type {MenuRole}*/
 Roles.f_MENU__org_gwtproject_aria_client_Roles_;
-/** @public {NavigationRole} */
+/**@type {NavigationRole}*/
 Roles.f_NAVIGATION__org_gwtproject_aria_client_Roles_;
-/** @public {NoteRole} */
+/**@type {NoteRole}*/
 Roles.f_NOTE__org_gwtproject_aria_client_Roles_;
-/** @public {OptionRole} */
+/**@type {OptionRole}*/
 Roles.f_OPTION__org_gwtproject_aria_client_Roles_;
-/** @public {PresentationRole} */
+/**@type {PresentationRole}*/
 Roles.f_PRESENTATION__org_gwtproject_aria_client_Roles_;
-/** @public {ProgressbarRole} */
+/**@type {ProgressbarRole}*/
 Roles.f_PROGRESSBAR__org_gwtproject_aria_client_Roles_;
-/** @public {RadiogroupRole} */
+/**@type {RadiogroupRole}*/
 Roles.f_RADIOGROUP__org_gwtproject_aria_client_Roles_;
-/** @public {RadioRole} */
+/**@type {RadioRole}*/
 Roles.f_RADIO__org_gwtproject_aria_client_Roles_;
-/** @public {RegionRole} */
+/**@type {RegionRole}*/
 Roles.f_REGION__org_gwtproject_aria_client_Roles_;
-/** @public {RowgroupRole} */
+/**@type {RowgroupRole}*/
 Roles.f_ROWGROUP__org_gwtproject_aria_client_Roles_;
-/** @public {RowheaderRole} */
+/**@type {RowheaderRole}*/
 Roles.f_ROWHEADER__org_gwtproject_aria_client_Roles_;
-/** @public {RowRole} */
+/**@type {RowRole}*/
 Roles.f_ROW__org_gwtproject_aria_client_Roles_;
-/** @public {ScrollbarRole} */
+/**@type {ScrollbarRole}*/
 Roles.f_SCROLLBAR__org_gwtproject_aria_client_Roles_;
-/** @public {SearchRole} */
+/**@type {SearchRole}*/
 Roles.f_SEARCH__org_gwtproject_aria_client_Roles_;
-/** @public {SeparatorRole} */
+/**@type {SeparatorRole}*/
 Roles.f_SEPARATOR__org_gwtproject_aria_client_Roles_;
-/** @public {SliderRole} */
+/**@type {SliderRole}*/
 Roles.f_SLIDER__org_gwtproject_aria_client_Roles_;
-/** @public {SpinbuttonRole} */
+/**@type {SpinbuttonRole}*/
 Roles.f_SPINBUTTON__org_gwtproject_aria_client_Roles_;
-/** @public {StatusRole} */
+/**@type {StatusRole}*/
 Roles.f_STATUS__org_gwtproject_aria_client_Roles_;
-/** @public {TablistRole} */
+/**@type {TablistRole}*/
 Roles.f_TABLIST__org_gwtproject_aria_client_Roles_;
-/** @public {TabpanelRole} */
+/**@type {TabpanelRole}*/
 Roles.f_TABPANEL__org_gwtproject_aria_client_Roles_;
-/** @public {TabRole} */
+/**@type {TabRole}*/
 Roles.f_TAB__org_gwtproject_aria_client_Roles_;
-/** @public {TextboxRole} */
+/**@type {TextboxRole}*/
 Roles.f_TEXTBOX__org_gwtproject_aria_client_Roles_;
-/** @public {TimerRole} */
+/**@type {TimerRole}*/
 Roles.f_TIMER__org_gwtproject_aria_client_Roles_;
-/** @public {ToolbarRole} */
+/**@type {ToolbarRole}*/
 Roles.f_TOOLBAR__org_gwtproject_aria_client_Roles_;
-/** @public {TooltipRole} */
+/**@type {TooltipRole}*/
 Roles.f_TOOLTIP__org_gwtproject_aria_client_Roles_;
-/** @public {TreegridRole} */
+/**@type {TreegridRole}*/
 Roles.f_TREEGRID__org_gwtproject_aria_client_Roles_;
-/** @public {TreeitemRole} */
+/**@type {TreeitemRole}*/
 Roles.f_TREEITEM__org_gwtproject_aria_client_Roles_;
-/** @public {TreeRole} */
+/**@type {TreeRole}*/
 Roles.f_TREE__org_gwtproject_aria_client_Roles_;
-/** @public {Map<?string, Role>} */
+/**@type {Map<?string, Role>}*/
 Roles.f_ROLES_MAP__org_gwtproject_aria_client_Roles_;
 
 exports = Roles; 

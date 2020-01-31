@@ -7,71 +7,44 @@ let j_l_String = goog.forwardDeclare('java.lang.String$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 
 class DateTimeFormatInfoImpl__es__PY extends DateTimeFormatInfoImpl__es__419 {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!DateTimeFormatInfoImpl__es__PY}
-  * @public
-  */
+ /** @return {!DateTimeFormatInfoImpl__es__PY} */
  static $create__() {
   DateTimeFormatInfoImpl__es__PY.$clinit();
   let $instance = new DateTimeFormatInfoImpl__es__PY();
   $instance.$ctor__org_gwtproject_i18n_shared_impl_cldr_DateTimeFormatInfoImpl_es_PY__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_i18n_shared_impl_cldr_DateTimeFormatInfoImpl_es_PY__() {
   this.$ctor__org_gwtproject_i18n_shared_impl_cldr_DateTimeFormatInfoImpl_es_419__();
  }
- /**
-  * @override
-  * @return {Array<?string>}
-  * @public
-  */
+ /** @override @return {Array<?string>} */
  m_ampms__() {
-  return /**@type {!Array<?string>} */ ($Arrays.$init(["a. m.", "p. m."], j_l_String));
+  return /**@type {!Array<?string>}*/ ($Arrays.$init(["a. m.", "p. m."], j_l_String));
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_firstDayOfTheWeek__() {
   return 0;
  }
- /**
-  * @override
-  * @return {Array<?string>}
-  * @public
-  */
+ /** @override @return {Array<?string>} */
  m_monthsShort__() {
-  return /**@type {!Array<?string>} */ ($Arrays.$init(["ene.", "feb.", "mar.", "abr.", "may.", "jun.", "jul.", "ago.", "sept.", "oct.", "nov.", "dic."], j_l_String));
+  return /**@type {!Array<?string>}*/ ($Arrays.$init(["ene.", "feb.", "mar.", "abr.", "may.", "jun.", "jul.", "ago.", "sept.", "oct.", "nov.", "dic."], j_l_String));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DateTimeFormatInfoImpl__es__PY.$clinit = () =>{};
   DateTimeFormatInfoImpl__es__PY.$loadModules();
   DateTimeFormatInfoImpl__es__419.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DateTimeFormatInfoImpl__es__PY;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');

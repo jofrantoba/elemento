@@ -12,67 +12,40 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {BaseBuilder}
   */
 class HtmlBaseBuilder extends HtmlElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @return {!HtmlBaseBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ /** @return {!HtmlBaseBuilder} */
+ static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   HtmlBaseBuilder.$clinit();
   let $instance = new HtmlBaseBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_shared_HtmlBaseBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_shared_HtmlBaseBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_shared_HtmlBaseBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_shared_HtmlElementBuilderBase__org_gwtproject_dom_builder_shared_HtmlBuilderImpl__boolean(delegate, true);
  }
- /**
-  * @override
-  * @param {?string} href
-  * @return {BaseBuilder}
-  * @public
-  */
- m_href__java_lang_String(href) {
-  return /**@type {BaseBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("href", href), BaseBuilder));
+ /** @override @return {BaseBuilder} */
+ m_href__java_lang_String(/** ?string */ href) {
+  return /**@type {BaseBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("href", href), BaseBuilder));
  }
- /**
-  * @override
-  * @param {?string} target
-  * @return {BaseBuilder}
-  * @public
-  */
- m_target__java_lang_String(target) {
-  return /**@type {BaseBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("target", target), BaseBuilder));
+ /** @override @return {BaseBuilder} */
+ m_target__java_lang_String(/** ?string */ target) {
+  return /**@type {BaseBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("target", target), BaseBuilder));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HtmlBaseBuilder.$clinit = () =>{};
   HtmlBaseBuilder.$loadModules();
   HtmlElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HtmlBaseBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

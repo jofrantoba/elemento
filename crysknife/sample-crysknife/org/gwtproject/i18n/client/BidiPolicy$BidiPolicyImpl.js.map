@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"BidiPolicy$BidiPolicyImpl.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;MAwBsB,c;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,yB;EAAAA,qC;EAAAA,0E;EAAAA,iB;;;;;CAAA,6D;EAAAC,iC;;;;;;CACH,iB;EACbC,a;;;;;QAFgB,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":30,
+"mappings":"A;;;;;MAwBsB,c;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,yB;EAAAA,qC;EAAAA,0E;EAAAA,iB;;;CAAA,6D;EAAAC,iC;;;CACH,iB;EACbC,a;;;QAFgB,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["BidiPolicy.java"],
 "names":["org.gwtproject.i18n.client.BidiPolicy$BidiPolicyImpl.<synthetic: ctor_js>","org.gwtproject.i18n.client.BidiPolicy$BidiPolicyImpl.<synthetic: ctor_create>","org.gwtproject.i18n.client.BidiPolicy$BidiPolicyImpl.<init>","org.gwtproject.i18n.client.BidiPolicy$BidiPolicyImpl.isBidiEnabled","org.gwtproject.i18n.client.BidiPolicy$BidiPolicyImpl.<clinit>"]
 }

@@ -10,67 +10,43 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class PreElement_$Overlay {
- /**
-  * @param {Object} elem
-  * @return {Object}
-  * @public
-  */
- static m_as__org_gwtproject_dom_client_Element(elem) {
+ /** @return {Object} */
+ static m_as__org_gwtproject_dom_client_Element(/** Object */ elem) {
   PreElement_$Overlay.$clinit();
   $Asserts.$assert(PreElement_$Overlay.m_is__org_gwtproject_dom_client_Element(elem));
-  return /**@type {Object} */ ($Casts.$to(elem, PreElement_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to(elem, PreElement_$Overlay));
  }
- /**
-  * @param {Object} o
-  * @return {boolean}
-  * @public
-  */
- static m_is__org_gwtproject_core_client_JavaScriptObject(o) {
+ /** @return {boolean} */
+ static m_is__org_gwtproject_core_client_JavaScriptObject(/** Object */ o) {
   PreElement_$Overlay.$clinit();
   if ($Overlay.m_is__org_gwtproject_core_client_JavaScriptObject(o)) {
-   return PreElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object} */ ($Casts.$to(o, $Overlay)));
+   return PreElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object}*/ ($Casts.$to(o, $Overlay)));
   }
   return false;
  }
- /**
-  * @param {Object} node
-  * @return {boolean}
-  * @public
-  */
- static m_is__org_gwtproject_dom_client_Node(node) {
+ /** @return {boolean} */
+ static m_is__org_gwtproject_dom_client_Node(/** Object */ node) {
   PreElement_$Overlay.$clinit();
   if ($Overlay.m_is__org_gwtproject_dom_client_Node(node)) {
-   return PreElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object} */ ($Casts.$to(node, $Overlay)));
+   return PreElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object}*/ ($Casts.$to(node, $Overlay)));
   }
   return false;
  }
- /**
-  * @param {Object} elem
-  * @return {boolean}
-  * @public
-  */
- static m_is__org_gwtproject_dom_client_Element(elem) {
+ /** @return {boolean} */
+ static m_is__org_gwtproject_dom_client_Element(/** Object */ elem) {
   PreElement_$Overlay.$clinit();
   return !$Equality.$same(elem, null) && $Overlay.m_hasTagName__$devirt__org_gwtproject_dom_client_Element__java_lang_String(elem, PreElement_$Overlay.f_TAG__org_gwtproject_dom_client_PreElement_$Overlay);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   PreElement_$Overlay.$clinit = () =>{};
   PreElement_$Overlay.$loadModules();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Object;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.Element.$Overlay$impl');
@@ -81,7 +57,7 @@ class PreElement_$Overlay {
 }
 $Util.$setClassMetadata(PreElement_$Overlay, 'Object');
 
-/** @public {?string} @const */
+/**@const {?string}*/
 PreElement_$Overlay.f_TAG__org_gwtproject_dom_client_PreElement_$Overlay = "pre";
 
 exports = PreElement_$Overlay; 

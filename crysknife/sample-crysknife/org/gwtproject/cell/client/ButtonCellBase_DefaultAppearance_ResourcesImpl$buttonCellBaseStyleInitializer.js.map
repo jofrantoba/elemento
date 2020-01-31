@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ButtonCellBase_DefaultAppearance_ResourcesImpl$buttonCellBaseStyleInitializer.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;MAkEuB,8B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,qD;EAAAA,8H;EAAAA,iB;;;;;CAAA,iH;EAAAC,iC;;;;;;QAI2B,O;EAAAC,yC;EAC5CA,0J;;;;;QALiB,O;EAAAC,iD;EAAAA,8C;EAAAA,qB;EAEjBA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;MAkEuB,8B;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,qD;EAAAA,8H;EAAAA,iB;;;CAAA,iH;EAAAC,iC;;;QAI2B,O;EAAAC,yC;EAC5CA,0J;;;QALiB,O;EAAAC,iD;EAAAA,8C;EAAAA,qB;EAEjBA;",
 "sources":["ButtonCellBase_DefaultAppearance_ResourcesImpl.java"],
 "names":["org.gwtproject.cell.client.ButtonCellBase_DefaultAppearance_ResourcesImpl$buttonCellBaseStyleInitializer.<synthetic: ctor_js>","org.gwtproject.cell.client.ButtonCellBase_DefaultAppearance_ResourcesImpl$buttonCellBaseStyleInitializer.<synthetic: ctor_create>","org.gwtproject.cell.client.ButtonCellBase_DefaultAppearance_ResourcesImpl$buttonCellBaseStyleInitializer.<init>","org.gwtproject.cell.client.ButtonCellBase_DefaultAppearance_ResourcesImpl$buttonCellBaseStyleInitializer.get","org.gwtproject.cell.client.ButtonCellBase_DefaultAppearance_ResourcesImpl$buttonCellBaseStyleInitializer.<clinit>"]
 }

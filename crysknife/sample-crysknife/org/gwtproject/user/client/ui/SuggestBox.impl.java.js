@@ -60,37 +60,30 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {IsEditor<LeafValueEditor<?string>>}
   */
 class SuggestBox extends Composite {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {number} */
+  /**@type {number}*/
   this.f_limit__org_gwtproject_user_client_ui_SuggestBox_ = 0;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_selectsFirstItem__org_gwtproject_user_client_ui_SuggestBox_ = false;
-  /** @public {SuggestOracle} */
+  /**@type {SuggestOracle}*/
   this.f_oracle__org_gwtproject_user_client_ui_SuggestBox_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_currentText__org_gwtproject_user_client_ui_SuggestBox_;
-  /** @public {LeafValueEditor<?string>} */
+  /**@type {LeafValueEditor<?string>}*/
   this.f_editor__org_gwtproject_user_client_ui_SuggestBox_;
-  /** @public {SuggestionDisplay} */
+  /**@type {SuggestionDisplay}*/
   this.f_display__org_gwtproject_user_client_ui_SuggestBox_;
-  /** @public {ValueBoxBase<?string>} */
+  /**@type {ValueBoxBase<?string>}*/
   this.f_box__org_gwtproject_user_client_ui_SuggestBox_;
-  /** @public {Callback} */
+  /**@type {Callback}*/
   this.f_callback__org_gwtproject_user_client_ui_SuggestBox_;
-  /** @public {SuggestionCallback} */
+  /**@type {SuggestionCallback}*/
   this.f_suggestionCallback__org_gwtproject_user_client_ui_SuggestBox_;
  }
- /**
-  * @param {SuggestOracle} oracle
-  * @param {Object} element
-  * @return {SuggestBox}
-  * @public
-  */
- static m_wrap__org_gwtproject_user_client_ui_SuggestOracle__org_gwtproject_dom_client_Element(oracle, element) {
+ /** @return {SuggestBox} */
+ static m_wrap__org_gwtproject_user_client_ui_SuggestOracle__org_gwtproject_dom_client_Element(/** SuggestOracle */ oracle, /** Object */ element) {
   SuggestBox.$clinit();
   $Asserts.$assert($Overlay.m_isOrHasChild__$devirt__org_gwtproject_dom_client_Node__org_gwtproject_dom_client_Node(Document_$Overlay.m_get__().body, element));
   let textBox = TextBox.$create__org_gwtproject_dom_client_Element(element);
@@ -99,88 +92,56 @@ class SuggestBox extends Composite {
   RootPanel.m_detachOnWindowClose__org_gwtproject_user_client_ui_Widget(suggestBox);
   return suggestBox;
  }
- /**
-  * Factory method corresponding to constructor 'SuggestBox()'.
-  * @return {!SuggestBox}
-  * @public
-  */
+ //Factory method corresponding to constructor 'SuggestBox()'.
+ /** @return {!SuggestBox} */
  static $create__() {
   SuggestBox.$clinit();
   let $instance = new SuggestBox();
   $instance.$ctor__org_gwtproject_user_client_ui_SuggestBox__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'SuggestBox()'.
-  * @public
-  */
+ //Initialization from constructor 'SuggestBox()'.
+ 
  $ctor__org_gwtproject_user_client_ui_SuggestBox__() {
   this.$ctor__org_gwtproject_user_client_ui_SuggestBox__org_gwtproject_user_client_ui_SuggestOracle(MultiWordSuggestOracle.$create__());
  }
- /**
-  * Factory method corresponding to constructor 'SuggestBox(SuggestOracle)'.
-  * @param {SuggestOracle} oracle
-  * @return {!SuggestBox}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_SuggestOracle(oracle) {
+ //Factory method corresponding to constructor 'SuggestBox(SuggestOracle)'.
+ /** @return {!SuggestBox} */
+ static $create__org_gwtproject_user_client_ui_SuggestOracle(/** SuggestOracle */ oracle) {
   SuggestBox.$clinit();
   let $instance = new SuggestBox();
   $instance.$ctor__org_gwtproject_user_client_ui_SuggestBox__org_gwtproject_user_client_ui_SuggestOracle(oracle);
   return $instance;
  }
- /**
-  * Initialization from constructor 'SuggestBox(SuggestOracle)'.
-  * @param {SuggestOracle} oracle
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_SuggestBox__org_gwtproject_user_client_ui_SuggestOracle(oracle) {
+ //Initialization from constructor 'SuggestBox(SuggestOracle)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_SuggestBox__org_gwtproject_user_client_ui_SuggestOracle(/** SuggestOracle */ oracle) {
   this.$ctor__org_gwtproject_user_client_ui_SuggestBox__org_gwtproject_user_client_ui_SuggestOracle__org_gwtproject_user_client_ui_ValueBoxBase(oracle, TextBox.$create__());
  }
- /**
-  * Factory method corresponding to constructor 'SuggestBox(SuggestOracle, ValueBoxBase)'.
-  * @param {SuggestOracle} oracle
-  * @param {ValueBoxBase<?string>} box
-  * @return {!SuggestBox}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_SuggestOracle__org_gwtproject_user_client_ui_ValueBoxBase(oracle, box) {
+ //Factory method corresponding to constructor 'SuggestBox(SuggestOracle, ValueBoxBase)'.
+ /** @return {!SuggestBox} */
+ static $create__org_gwtproject_user_client_ui_SuggestOracle__org_gwtproject_user_client_ui_ValueBoxBase(/** SuggestOracle */ oracle, /** ValueBoxBase<?string> */ box) {
   SuggestBox.$clinit();
   let $instance = new SuggestBox();
   $instance.$ctor__org_gwtproject_user_client_ui_SuggestBox__org_gwtproject_user_client_ui_SuggestOracle__org_gwtproject_user_client_ui_ValueBoxBase(oracle, box);
   return $instance;
  }
- /**
-  * Initialization from constructor 'SuggestBox(SuggestOracle, ValueBoxBase)'.
-  * @param {SuggestOracle} oracle
-  * @param {ValueBoxBase<?string>} box
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_SuggestBox__org_gwtproject_user_client_ui_SuggestOracle__org_gwtproject_user_client_ui_ValueBoxBase(oracle, box) {
+ //Initialization from constructor 'SuggestBox(SuggestOracle, ValueBoxBase)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_SuggestBox__org_gwtproject_user_client_ui_SuggestOracle__org_gwtproject_user_client_ui_ValueBoxBase(/** SuggestOracle */ oracle, /** ValueBoxBase<?string> */ box) {
   this.$ctor__org_gwtproject_user_client_ui_SuggestBox__org_gwtproject_user_client_ui_SuggestOracle__org_gwtproject_user_client_ui_ValueBoxBase__org_gwtproject_user_client_ui_SuggestBox_SuggestionDisplay(oracle, box, DefaultSuggestionDisplay.$create__());
  }
- /**
-  * Factory method corresponding to constructor 'SuggestBox(SuggestOracle, ValueBoxBase, SuggestionDisplay)'.
-  * @param {SuggestOracle} oracle
-  * @param {ValueBoxBase<?string>} box
-  * @param {SuggestionDisplay} suggestDisplay
-  * @return {!SuggestBox}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_SuggestOracle__org_gwtproject_user_client_ui_ValueBoxBase__org_gwtproject_user_client_ui_SuggestBox_SuggestionDisplay(oracle, box, suggestDisplay) {
+ //Factory method corresponding to constructor 'SuggestBox(SuggestOracle, ValueBoxBase, SuggestionDisplay)'.
+ /** @return {!SuggestBox} */
+ static $create__org_gwtproject_user_client_ui_SuggestOracle__org_gwtproject_user_client_ui_ValueBoxBase__org_gwtproject_user_client_ui_SuggestBox_SuggestionDisplay(/** SuggestOracle */ oracle, /** ValueBoxBase<?string> */ box, /** SuggestionDisplay */ suggestDisplay) {
   SuggestBox.$clinit();
   let $instance = new SuggestBox();
   $instance.$ctor__org_gwtproject_user_client_ui_SuggestBox__org_gwtproject_user_client_ui_SuggestOracle__org_gwtproject_user_client_ui_ValueBoxBase__org_gwtproject_user_client_ui_SuggestBox_SuggestionDisplay(oracle, box, suggestDisplay);
   return $instance;
  }
- /**
-  * Initialization from constructor 'SuggestBox(SuggestOracle, ValueBoxBase, SuggestionDisplay)'.
-  * @param {SuggestOracle} oracle
-  * @param {ValueBoxBase<?string>} box
-  * @param {SuggestionDisplay} suggestDisplay
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_SuggestBox__org_gwtproject_user_client_ui_SuggestOracle__org_gwtproject_user_client_ui_ValueBoxBase__org_gwtproject_user_client_ui_SuggestBox_SuggestionDisplay(oracle, box, suggestDisplay) {
+ //Initialization from constructor 'SuggestBox(SuggestOracle, ValueBoxBase, SuggestionDisplay)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_SuggestBox__org_gwtproject_user_client_ui_SuggestOracle__org_gwtproject_user_client_ui_ValueBoxBase__org_gwtproject_user_client_ui_SuggestBox_SuggestionDisplay(/** SuggestOracle */ oracle, /** ValueBoxBase<?string> */ box, /** SuggestionDisplay */ suggestDisplay) {
   this.$ctor__org_gwtproject_user_client_ui_Composite__();
   this.$init___$p_org_gwtproject_user_client_ui_SuggestBox();
   this.f_box__org_gwtproject_user_client_ui_SuggestBox_ = box;
@@ -190,289 +151,159 @@ class SuggestBox extends Composite {
   this.m_setOracle__org_gwtproject_user_client_ui_SuggestOracle_$p_org_gwtproject_user_client_ui_SuggestBox(oracle);
   this.m_setStyleName__java_lang_String(SuggestBox.f_STYLENAME_DEFAULT__org_gwtproject_user_client_ui_SuggestBox_);
  }
- /**
-  * @override
-  * @param {KeyDownHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addKeyDownHandler__org_gwtproject_event_dom_client_KeyDownHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addKeyDownHandler__org_gwtproject_event_dom_client_KeyDownHandler(/** KeyDownHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, KeyDownEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {KeyPressHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addKeyPressHandler__org_gwtproject_event_dom_client_KeyPressHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addKeyPressHandler__org_gwtproject_event_dom_client_KeyPressHandler(/** KeyPressHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, KeyPressEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {KeyUpHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addKeyUpHandler__org_gwtproject_event_dom_client_KeyUpHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addKeyUpHandler__org_gwtproject_event_dom_client_KeyUpHandler(/** KeyUpHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, KeyUpEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {SelectionHandler<Suggestion>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addSelectionHandler__org_gwtproject_event_logical_shared_SelectionHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addSelectionHandler__org_gwtproject_event_logical_shared_SelectionHandler(/** SelectionHandler<Suggestion> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, SelectionEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {ValueChangeHandler<?string>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler(/** ValueChangeHandler<?string> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, ValueChangeEvent.m_getType__());
  }
- /**
-  * @override
-  * @return {LeafValueEditor<?string>}
-  * @public
-  */
+ /** @override @return {LeafValueEditor<?string>} */
  m_asEditor__() {
   if ($Equality.$same(this.f_editor__org_gwtproject_user_client_ui_SuggestBox_, null)) {
-   this.f_editor__org_gwtproject_user_client_ui_SuggestBox_ = /**@type {TakesValueEditor<?string>} */ (TakesValueEditor.m_of__org_gwtproject_user_client_TakesValue(this));
+   this.f_editor__org_gwtproject_user_client_ui_SuggestBox_ = /**@type {TakesValueEditor<?string>}*/ (TakesValueEditor.m_of__org_gwtproject_user_client_TakesValue(this));
   }
   return this.f_editor__org_gwtproject_user_client_ui_SuggestBox_;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getLimit__() {
   return this.f_limit__org_gwtproject_user_client_ui_SuggestBox_;
  }
- /**
-  * @return {SuggestionDisplay}
-  * @public
-  */
+ /** @return {SuggestionDisplay} */
  m_getSuggestionDisplay__() {
   return this.f_display__org_gwtproject_user_client_ui_SuggestBox_;
  }
- /**
-  * @return {SuggestOracle}
-  * @public
-  */
+ /** @return {SuggestOracle} */
  m_getSuggestOracle__() {
   return this.f_oracle__org_gwtproject_user_client_ui_SuggestBox_;
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getTabIndex__() {
   return this.f_box__org_gwtproject_user_client_ui_SuggestBox_.m_getTabIndex__();
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getText__() {
   return this.f_box__org_gwtproject_user_client_ui_SuggestBox_.m_getText__();
  }
- /**
-  * @return {TextBoxBase}
-  * @public
-  * @deprecated
-  */
+ /** @return {TextBoxBase} @deprecated */
  m_getTextBox__() {
-  return /**@type {TextBoxBase} */ ($Casts.$to(this.f_box__org_gwtproject_user_client_ui_SuggestBox_, TextBoxBase));
+  return /**@type {TextBoxBase}*/ ($Casts.$to(this.f_box__org_gwtproject_user_client_ui_SuggestBox_, TextBoxBase));
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getValue__() {
-  return /**@type {?string} */ ($Casts.$to(this.f_box__org_gwtproject_user_client_ui_SuggestBox_.m_getValue__(), j_l_String));
+  return /**@type {?string}*/ ($Casts.$to(this.f_box__org_gwtproject_user_client_ui_SuggestBox_.m_getValue__(), j_l_String));
  }
- /**
-  * @return {ValueBoxBase<?string>}
-  * @public
-  */
+ /** @return {ValueBoxBase<?string>} */
  m_getValueBox__() {
   return this.f_box__org_gwtproject_user_client_ui_SuggestBox_;
  }
- /**
-  * @public
-  * @deprecated
-  */
+ /** @deprecated */
  m_hideSuggestionList__() {
   this.f_display__org_gwtproject_user_client_ui_SuggestBox_.m_hideSuggestions__();
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  * @deprecated
-  */
+ /** @override @return {boolean} @deprecated */
  m_isAnimationEnabled__() {
   return this.f_display__org_gwtproject_user_client_ui_SuggestBox_.m_isAnimationEnabledImpl___$pp_org_gwtproject_user_client_ui();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isAutoSelectEnabled__() {
   return this.f_selectsFirstItem__org_gwtproject_user_client_ui_SuggestBox_;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isEnabled__() {
   return this.f_box__org_gwtproject_user_client_ui_SuggestBox_.m_isEnabled__();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isSuggestionListShowing__() {
   return this.f_display__org_gwtproject_user_client_ui_SuggestBox_.m_isSuggestionListShowing__();
  }
- /**
-  * @public
-  */
+ 
  m_refreshSuggestionList__() {
   if (this.m_isAttached__()) {
    this.m_refreshSuggestions___$p_org_gwtproject_user_client_ui_SuggestBox();
   }
  }
- /**
-  * @override
-  * @param {number} key
-  * @public
-  */
- m_setAccessKey__char(key) {
+ /** @override */
+ m_setAccessKey__char(/** number */ key) {
   this.f_box__org_gwtproject_user_client_ui_SuggestBox_.m_setAccessKey__char(key);
  }
- /**
-  * @override
-  * @param {boolean} enable
-  * @public
-  * @deprecated
-  */
- m_setAnimationEnabled__boolean(enable) {
+ /** @override @deprecated */
+ m_setAnimationEnabled__boolean(/** boolean */ enable) {
   this.f_display__org_gwtproject_user_client_ui_SuggestBox_.m_setAnimationEnabledImpl__boolean_$pp_org_gwtproject_user_client_ui(enable);
  }
- /**
-  * @param {boolean} selectsFirstItem
-  * @public
-  */
- m_setAutoSelectEnabled__boolean(selectsFirstItem) {
+ 
+ m_setAutoSelectEnabled__boolean(/** boolean */ selectsFirstItem) {
   this.f_selectsFirstItem__org_gwtproject_user_client_ui_SuggestBox_ = selectsFirstItem;
  }
- /**
-  * @override
-  * @param {boolean} enabled
-  * @public
-  */
- m_setEnabled__boolean(enabled) {
+ /** @override */
+ m_setEnabled__boolean(/** boolean */ enabled) {
   this.f_box__org_gwtproject_user_client_ui_SuggestBox_.m_setEnabled__boolean(enabled);
   if (!enabled) {
    this.f_display__org_gwtproject_user_client_ui_SuggestBox_.m_hideSuggestions__();
   }
  }
- /**
-  * @override
-  * @param {boolean} focused
-  * @public
-  */
- m_setFocus__boolean(focused) {
+ /** @override */
+ m_setFocus__boolean(/** boolean */ focused) {
   this.f_box__org_gwtproject_user_client_ui_SuggestBox_.m_setFocus__boolean(focused);
  }
- /**
-  * @param {number} limit
-  * @public
-  */
- m_setLimit__int(limit) {
+ 
+ m_setLimit__int(/** number */ limit) {
   this.f_limit__org_gwtproject_user_client_ui_SuggestBox_ = limit;
  }
- /**
-  * @param {?string} style
-  * @public
-  * @deprecated
-  */
- m_setPopupStyleName__java_lang_String(style) {
+ /** @deprecated */
+ m_setPopupStyleName__java_lang_String(/** ?string */ style) {
   this.m_getSuggestionDisplay__().m_setPopupStyleNameImpl__java_lang_String_$pp_org_gwtproject_user_client_ui(style);
  }
- /**
-  * @override
-  * @param {number} index
-  * @public
-  */
- m_setTabIndex__int(index) {
+ /** @override */
+ m_setTabIndex__int(/** number */ index) {
   this.f_box__org_gwtproject_user_client_ui_SuggestBox_.m_setTabIndex__int(index);
  }
- /**
-  * @override
-  * @param {?string} text
-  * @public
-  */
- m_setText__java_lang_String(text) {
+ /** @override */
+ m_setText__java_lang_String(/** ?string */ text) {
   this.f_box__org_gwtproject_user_client_ui_SuggestBox_.m_setText__java_lang_String(text);
  }
- /**
-  * @param {?string} newValue
-  * @public
-  */
- m_setValue__java_lang_String(newValue) {
+ 
+ m_setValue__java_lang_String(/** ?string */ newValue) {
   this.f_box__org_gwtproject_user_client_ui_SuggestBox_.m_setValue__java_lang_Object(newValue);
  }
- /**
-  * @param {?string} value
-  * @param {boolean} fireEvents
-  * @public
-  */
- m_setValue__java_lang_String__boolean(value, fireEvents) {
+ 
+ m_setValue__java_lang_String__boolean(/** ?string */ value, /** boolean */ fireEvents) {
   this.f_box__org_gwtproject_user_client_ui_SuggestBox_.m_setValue__java_lang_Object__boolean(value, fireEvents);
  }
- /**
-  * @public
-  */
+ 
  m_showSuggestionList__() {
   if (this.m_isAttached__()) {
    this.f_currentText__org_gwtproject_user_client_ui_SuggestBox_ = null;
    this.m_refreshSuggestions___$p_org_gwtproject_user_client_ui_SuggestBox();
   }
  }
- /**
-  * @override
-  * @param {?string} baseID
-  * @public
-  */
- m_onEnsureDebugId__java_lang_String(baseID) {
+ /** @override */
+ m_onEnsureDebugId__java_lang_String(/** ?string */ baseID) {
   super.m_onEnsureDebugId__java_lang_String(baseID);
   this.f_display__org_gwtproject_user_client_ui_SuggestBox_.m_onEnsureDebugId__java_lang_String(baseID);
  }
- /**
-  * @param {?string} query
-  * @public
-  */
- m_showSuggestions__java_lang_String_$pp_org_gwtproject_user_client_ui(query) {
+ 
+ m_showSuggestions__java_lang_String_$pp_org_gwtproject_user_client_ui(/** ?string */ query) {
   if (j_l_String.m_length__java_lang_String(query) == 0) {
    this.f_oracle__org_gwtproject_user_client_ui_SuggestBox_.m_requestDefaultSuggestions__org_gwtproject_user_client_ui_SuggestOracle_Request__org_gwtproject_user_client_ui_SuggestOracle_Callback(Request.$create__java_lang_String__int(null, this.f_limit__org_gwtproject_user_client_ui_SuggestBox_), this.f_callback__org_gwtproject_user_client_ui_SuggestBox_);
   } else {
    this.f_oracle__org_gwtproject_user_client_ui_SuggestBox_.m_requestSuggestions__org_gwtproject_user_client_ui_SuggestOracle_Request__org_gwtproject_user_client_ui_SuggestOracle_Callback(Request.$create__java_lang_String__int(query, this.f_limit__org_gwtproject_user_client_ui_SuggestBox_), this.f_callback__org_gwtproject_user_client_ui_SuggestBox_);
   }
  }
- /**
-  * @public
-  */
+ 
  m_addEventsToTextBox___$p_org_gwtproject_user_client_ui_SuggestBox() {
   let events = $1TextBoxEvents.$create__org_gwtproject_user_client_ui_SuggestBox(this);
   this.f_box__org_gwtproject_user_client_ui_SuggestBox_.m_addChangeHandler__org_gwtproject_event_dom_client_ChangeHandler($3.$create__org_gwtproject_user_client_ui_SuggestBox(this));
@@ -480,16 +311,11 @@ class SuggestBox extends Composite {
   this.f_box__org_gwtproject_user_client_ui_SuggestBox_.m_addKeyDownHandler__org_gwtproject_event_dom_client_KeyDownHandler(events);
   this.f_box__org_gwtproject_user_client_ui_SuggestBox_.m_addKeyUpHandler__org_gwtproject_event_dom_client_KeyUpHandler(events);
  }
- /**
-  * @param {Suggestion} selectedSuggestion
-  * @public
-  */
- m_fireSuggestionEvent__org_gwtproject_user_client_ui_SuggestOracle_Suggestion_$p_org_gwtproject_user_client_ui_SuggestBox(selectedSuggestion) {
+ 
+ m_fireSuggestionEvent__org_gwtproject_user_client_ui_SuggestOracle_Suggestion_$p_org_gwtproject_user_client_ui_SuggestBox(/** Suggestion */ selectedSuggestion) {
   SelectionEvent.m_fire__org_gwtproject_event_logical_shared_HasSelectionHandlers__java_lang_Object(this, selectedSuggestion);
  }
- /**
-  * @public
-  */
+ 
  m_refreshSuggestions___$p_org_gwtproject_user_client_ui_SuggestBox() {
   let text = this.m_getText__();
   if (j_l_String.m_equals__java_lang_String__java_lang_Object(text, this.f_currentText__org_gwtproject_user_client_ui_SuggestBox_)) {
@@ -499,71 +325,46 @@ class SuggestBox extends Composite {
   }
   this.m_showSuggestions__java_lang_String_$pp_org_gwtproject_user_client_ui(text);
  }
- /**
-  * @param {Suggestion} curSuggestion
-  * @public
-  */
- m_setNewSelection__org_gwtproject_user_client_ui_SuggestOracle_Suggestion_$p_org_gwtproject_user_client_ui_SuggestBox(curSuggestion) {
+ 
+ m_setNewSelection__org_gwtproject_user_client_ui_SuggestOracle_Suggestion_$p_org_gwtproject_user_client_ui_SuggestBox(/** Suggestion */ curSuggestion) {
   $Asserts.$assertWithMessage(!$Equality.$same(curSuggestion, null), "suggestion cannot be null");
   this.f_currentText__org_gwtproject_user_client_ui_SuggestBox_ = curSuggestion.m_getReplacementString__();
   this.m_setText__java_lang_String(this.f_currentText__org_gwtproject_user_client_ui_SuggestBox_);
   this.f_display__org_gwtproject_user_client_ui_SuggestBox_.m_hideSuggestions__();
   this.m_fireSuggestionEvent__org_gwtproject_user_client_ui_SuggestOracle_Suggestion_$p_org_gwtproject_user_client_ui_SuggestBox(curSuggestion);
  }
- /**
-  * @param {SuggestOracle} oracle
-  * @public
-  */
- m_setOracle__org_gwtproject_user_client_ui_SuggestOracle_$p_org_gwtproject_user_client_ui_SuggestBox(oracle) {
+ 
+ m_setOracle__org_gwtproject_user_client_ui_SuggestOracle_$p_org_gwtproject_user_client_ui_SuggestBox(/** SuggestOracle */ oracle) {
   this.f_oracle__org_gwtproject_user_client_ui_SuggestBox_ = oracle;
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_setValue__java_lang_Object(arg0) {
-  this.m_setValue__java_lang_String(/**@type {?string} */ ($Casts.$to(arg0, j_l_String)));
+ //Bridge method.
+ /** @override */
+ m_setValue__java_lang_Object(/** * */ arg0) {
+  this.m_setValue__java_lang_String(/**@type {?string}*/ ($Casts.$to(arg0, j_l_String)));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @param {boolean} arg1
-  * @public
-  */
- m_setValue__java_lang_Object__boolean(arg0, arg1) {
-  this.m_setValue__java_lang_String__boolean(/**@type {?string} */ ($Casts.$to(arg0, j_l_String)), arg1);
+ //Bridge method.
+ /** @override */
+ m_setValue__java_lang_Object__boolean(/** * */ arg0, /** boolean */ arg1) {
+  this.m_setValue__java_lang_String__boolean(/**@type {?string}*/ ($Casts.$to(arg0, j_l_String)), arg1);
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_SuggestBox() {
   this.f_limit__org_gwtproject_user_client_ui_SuggestBox_ = 20;
   this.f_selectsFirstItem__org_gwtproject_user_client_ui_SuggestBox_ = true;
   this.f_callback__org_gwtproject_user_client_ui_SuggestBox_ = $1.$create__org_gwtproject_user_client_ui_SuggestBox(this);
   this.f_suggestionCallback__org_gwtproject_user_client_ui_SuggestBox_ = $2.$create__org_gwtproject_user_client_ui_SuggestBox(this);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SuggestBox.$clinit = () =>{};
   SuggestBox.$loadModules();
   Composite.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SuggestBox;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -602,7 +403,7 @@ HasValue.$markImplementor(SuggestBox);
 HasSelectionHandlers.$markImplementor(SuggestBox);
 IsEditor.$markImplementor(SuggestBox);
 
-/** @public {?string} @const */
+/**@const {?string}*/
 SuggestBox.f_STYLENAME_DEFAULT__org_gwtproject_user_client_ui_SuggestBox_ = "gwt-SuggestBox";
 
 exports = SuggestBox; 

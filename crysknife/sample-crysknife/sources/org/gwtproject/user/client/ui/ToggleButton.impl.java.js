@@ -21,274 +21,167 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {IsEditor<LeafValueEditor<?boolean>>}
   */
 class ToggleButton extends CustomButton {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {LeafValueEditor<?boolean>} */
+  /**@type {LeafValueEditor<?boolean>}*/
   this.f_editor__org_gwtproject_user_client_ui_ToggleButton_;
  }
- /**
-  * Factory method corresponding to constructor 'ToggleButton()'.
-  * @return {!ToggleButton}
-  * @public
-  */
+ //Factory method corresponding to constructor 'ToggleButton()'.
+ /** @return {!ToggleButton} */
  static $create__() {
   ToggleButton.$clinit();
   let $instance = new ToggleButton();
   $instance.$ctor__org_gwtproject_user_client_ui_ToggleButton__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'ToggleButton()'.
-  * @public
-  */
+ //Initialization from constructor 'ToggleButton()'.
+ 
  $ctor__org_gwtproject_user_client_ui_ToggleButton__() {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__();
   this.$init___$p_org_gwtproject_user_client_ui_ToggleButton();
  }
- /**
-  * Factory method corresponding to constructor 'ToggleButton(Image)'.
-  * @param {Image} upImage
-  * @return {!ToggleButton}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_Image(upImage) {
+ //Factory method corresponding to constructor 'ToggleButton(Image)'.
+ /** @return {!ToggleButton} */
+ static $create__org_gwtproject_user_client_ui_Image(/** Image */ upImage) {
   ToggleButton.$clinit();
   let $instance = new ToggleButton();
   $instance.$ctor__org_gwtproject_user_client_ui_ToggleButton__org_gwtproject_user_client_ui_Image(upImage);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ToggleButton(Image)'.
-  * @param {Image} upImage
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ToggleButton__org_gwtproject_user_client_ui_Image(upImage) {
+ //Initialization from constructor 'ToggleButton(Image)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_ToggleButton__org_gwtproject_user_client_ui_Image(/** Image */ upImage) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__org_gwtproject_user_client_ui_Image(upImage);
   this.$init___$p_org_gwtproject_user_client_ui_ToggleButton();
  }
- /**
-  * Factory method corresponding to constructor 'ToggleButton(Image, ClickHandler)'.
-  * @param {Image} upImage
-  * @param {ClickHandler} handler
-  * @return {!ToggleButton}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(upImage, handler) {
+ //Factory method corresponding to constructor 'ToggleButton(Image, ClickHandler)'.
+ /** @return {!ToggleButton} */
+ static $create__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(/** Image */ upImage, /** ClickHandler */ handler) {
   ToggleButton.$clinit();
   let $instance = new ToggleButton();
   $instance.$ctor__org_gwtproject_user_client_ui_ToggleButton__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(upImage, handler);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ToggleButton(Image, ClickHandler)'.
-  * @param {Image} upImage
-  * @param {ClickHandler} handler
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ToggleButton__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(upImage, handler) {
+ //Initialization from constructor 'ToggleButton(Image, ClickHandler)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_ToggleButton__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(/** Image */ upImage, /** ClickHandler */ handler) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(upImage, handler);
   this.$init___$p_org_gwtproject_user_client_ui_ToggleButton();
  }
- /**
-  * Factory method corresponding to constructor 'ToggleButton(Image, Image)'.
-  * @param {Image} upImage
-  * @param {Image} downImage
-  * @return {!ToggleButton}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image(upImage, downImage) {
+ //Factory method corresponding to constructor 'ToggleButton(Image, Image)'.
+ /** @return {!ToggleButton} */
+ static $create__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image(/** Image */ upImage, /** Image */ downImage) {
   ToggleButton.$clinit();
   let $instance = new ToggleButton();
   $instance.$ctor__org_gwtproject_user_client_ui_ToggleButton__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image(upImage, downImage);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ToggleButton(Image, Image)'.
-  * @param {Image} upImage
-  * @param {Image} downImage
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ToggleButton__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image(upImage, downImage) {
+ //Initialization from constructor 'ToggleButton(Image, Image)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_ToggleButton__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image(/** Image */ upImage, /** Image */ downImage) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image(upImage, downImage);
   this.$init___$p_org_gwtproject_user_client_ui_ToggleButton();
  }
- /**
-  * Factory method corresponding to constructor 'ToggleButton(Image, Image, ClickHandler)'.
-  * @param {Image} upImage
-  * @param {Image} downImage
-  * @param {ClickHandler} handler
-  * @return {!ToggleButton}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(upImage, downImage, handler) {
+ //Factory method corresponding to constructor 'ToggleButton(Image, Image, ClickHandler)'.
+ /** @return {!ToggleButton} */
+ static $create__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(/** Image */ upImage, /** Image */ downImage, /** ClickHandler */ handler) {
   ToggleButton.$clinit();
   let $instance = new ToggleButton();
   $instance.$ctor__org_gwtproject_user_client_ui_ToggleButton__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(upImage, downImage, handler);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ToggleButton(Image, Image, ClickHandler)'.
-  * @param {Image} upImage
-  * @param {Image} downImage
-  * @param {ClickHandler} handler
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ToggleButton__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(upImage, downImage, handler) {
+ //Initialization from constructor 'ToggleButton(Image, Image, ClickHandler)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_ToggleButton__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(/** Image */ upImage, /** Image */ downImage, /** ClickHandler */ handler) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(upImage, downImage, handler);
   this.$init___$p_org_gwtproject_user_client_ui_ToggleButton();
  }
- /**
-  * Factory method corresponding to constructor 'ToggleButton(String)'.
-  * @param {?string} upText
-  * @return {!ToggleButton}
-  * @public
-  */
- static $create__java_lang_String(upText) {
+ //Factory method corresponding to constructor 'ToggleButton(String)'.
+ /** @return {!ToggleButton} */
+ static $create__java_lang_String(/** ?string */ upText) {
   ToggleButton.$clinit();
   let $instance = new ToggleButton();
   $instance.$ctor__org_gwtproject_user_client_ui_ToggleButton__java_lang_String(upText);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ToggleButton(String)'.
-  * @param {?string} upText
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ToggleButton__java_lang_String(upText) {
+ //Initialization from constructor 'ToggleButton(String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_ToggleButton__java_lang_String(/** ?string */ upText) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__java_lang_String(upText);
   this.$init___$p_org_gwtproject_user_client_ui_ToggleButton();
  }
- /**
-  * Factory method corresponding to constructor 'ToggleButton(String, ClickHandler)'.
-  * @param {?string} upText
-  * @param {ClickHandler} handler
-  * @return {!ToggleButton}
-  * @public
-  */
- static $create__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(upText, handler) {
+ //Factory method corresponding to constructor 'ToggleButton(String, ClickHandler)'.
+ /** @return {!ToggleButton} */
+ static $create__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(/** ?string */ upText, /** ClickHandler */ handler) {
   ToggleButton.$clinit();
   let $instance = new ToggleButton();
   $instance.$ctor__org_gwtproject_user_client_ui_ToggleButton__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(upText, handler);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ToggleButton(String, ClickHandler)'.
-  * @param {?string} upText
-  * @param {ClickHandler} handler
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ToggleButton__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(upText, handler) {
+ //Initialization from constructor 'ToggleButton(String, ClickHandler)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_ToggleButton__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(/** ?string */ upText, /** ClickHandler */ handler) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(upText, handler);
   this.$init___$p_org_gwtproject_user_client_ui_ToggleButton();
  }
- /**
-  * Factory method corresponding to constructor 'ToggleButton(String, String)'.
-  * @param {?string} upText
-  * @param {?string} downText
-  * @return {!ToggleButton}
-  * @public
-  */
- static $create__java_lang_String__java_lang_String(upText, downText) {
+ //Factory method corresponding to constructor 'ToggleButton(String, String)'.
+ /** @return {!ToggleButton} */
+ static $create__java_lang_String__java_lang_String(/** ?string */ upText, /** ?string */ downText) {
   ToggleButton.$clinit();
   let $instance = new ToggleButton();
   $instance.$ctor__org_gwtproject_user_client_ui_ToggleButton__java_lang_String__java_lang_String(upText, downText);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ToggleButton(String, String)'.
-  * @param {?string} upText
-  * @param {?string} downText
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ToggleButton__java_lang_String__java_lang_String(upText, downText) {
+ //Initialization from constructor 'ToggleButton(String, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_ToggleButton__java_lang_String__java_lang_String(/** ?string */ upText, /** ?string */ downText) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__java_lang_String__java_lang_String(upText, downText);
   this.$init___$p_org_gwtproject_user_client_ui_ToggleButton();
  }
- /**
-  * Factory method corresponding to constructor 'ToggleButton(String, String, ClickHandler)'.
-  * @param {?string} upText
-  * @param {?string} downText
-  * @param {ClickHandler} handler
-  * @return {!ToggleButton}
-  * @public
-  */
- static $create__java_lang_String__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(upText, downText, handler) {
+ //Factory method corresponding to constructor 'ToggleButton(String, String, ClickHandler)'.
+ /** @return {!ToggleButton} */
+ static $create__java_lang_String__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(/** ?string */ upText, /** ?string */ downText, /** ClickHandler */ handler) {
   ToggleButton.$clinit();
   let $instance = new ToggleButton();
   $instance.$ctor__org_gwtproject_user_client_ui_ToggleButton__java_lang_String__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(upText, downText, handler);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ToggleButton(String, String, ClickHandler)'.
-  * @param {?string} upText
-  * @param {?string} downText
-  * @param {ClickHandler} handler
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ToggleButton__java_lang_String__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(upText, downText, handler) {
+ //Initialization from constructor 'ToggleButton(String, String, ClickHandler)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_ToggleButton__java_lang_String__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(/** ?string */ upText, /** ?string */ downText, /** ClickHandler */ handler) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__java_lang_String__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(upText, downText, handler);
   this.$init___$p_org_gwtproject_user_client_ui_ToggleButton();
  }
- /**
-  * @override
-  * @param {ValueChangeHandler<?boolean>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler(/** ValueChangeHandler<?boolean> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, ValueChangeEvent.m_getType__());
  }
- /**
-  * @override
-  * @return {LeafValueEditor<?boolean>}
-  * @public
-  */
+ /** @override @return {LeafValueEditor<?boolean>} */
  m_asEditor__() {
   if ($Equality.$same(this.f_editor__org_gwtproject_user_client_ui_ToggleButton_, null)) {
-   this.f_editor__org_gwtproject_user_client_ui_ToggleButton_ = /**@type {TakesValueEditor<?boolean>} */ (TakesValueEditor.m_of__org_gwtproject_user_client_TakesValue(this));
+   this.f_editor__org_gwtproject_user_client_ui_ToggleButton_ = /**@type {TakesValueEditor<?boolean>}*/ (TakesValueEditor.m_of__org_gwtproject_user_client_TakesValue(this));
   }
   return this.f_editor__org_gwtproject_user_client_ui_ToggleButton_;
  }
- /**
-  * @override
-  * @return {?boolean}
-  * @public
-  */
+ /** @override @return {?boolean} */
  m_getValue__() {
   return this.m_isDown__();
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isDown__() {
   return super.m_isDown__();
  }
- /**
-  * @override
-  * @param {boolean} down
-  * @public
-  */
- m_setDown__boolean(down) {
+ /** @override */
+ m_setDown__boolean(/** boolean */ down) {
   super.m_setDown__boolean(down);
  }
- /**
-  * @param {?boolean} value
-  * @public
-  */
- m_setValue__java_lang_Boolean(value) {
+ 
+ m_setValue__java_lang_Boolean(/** ?boolean */ value) {
   this.m_setValue__java_lang_Boolean__boolean(value, false);
  }
- /**
-  * @param {?boolean} value
-  * @param {boolean} fireEvents
-  * @public
-  */
- m_setValue__java_lang_Boolean__boolean(value, fireEvents) {
+ 
+ m_setValue__java_lang_Boolean__boolean(/** ?boolean */ value, /** boolean */ fireEvents) {
   if ($Equality.$same(value, null)) {
    value = Boolean.f_FALSE__java_lang_Boolean;
   }
@@ -298,60 +191,38 @@ class ToggleButton extends CustomButton {
    ValueChangeEvent.m_fireIfNotEqual__org_gwtproject_event_logical_shared_HasValueChangeHandlers__java_lang_Object__java_lang_Object(this, oldValue, value);
   }
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onClick__() {
   this.m_toggleDown___$pp_org_gwtproject_user_client_ui();
   super.m_onClick__();
   ValueChangeEvent.m_fire__org_gwtproject_event_logical_shared_HasValueChangeHandlers__java_lang_Object(this, this.m_isDown__());
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_setValue__java_lang_Object(arg0) {
-  this.m_setValue__java_lang_Boolean(/**@type {?boolean} */ ($Casts.$to(arg0, Boolean)));
+ //Bridge method.
+ /** @override */
+ m_setValue__java_lang_Object(/** * */ arg0) {
+  this.m_setValue__java_lang_Boolean(/**@type {?boolean}*/ ($Casts.$to(arg0, Boolean)));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @param {boolean} arg1
-  * @public
-  */
- m_setValue__java_lang_Object__boolean(arg0, arg1) {
-  this.m_setValue__java_lang_Boolean__boolean(/**@type {?boolean} */ ($Casts.$to(arg0, Boolean)), arg1);
+ //Bridge method.
+ /** @override */
+ m_setValue__java_lang_Object__boolean(/** * */ arg0, /** boolean */ arg1) {
+  this.m_setValue__java_lang_Boolean__boolean(/**@type {?boolean}*/ ($Casts.$to(arg0, Boolean)), arg1);
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_ToggleButton() {
   this.m_setStyleName__java_lang_String(ToggleButton.f_STYLENAME_DEFAULT__org_gwtproject_user_client_ui_ToggleButton_);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ToggleButton.$clinit = () =>{};
   ToggleButton.$loadModules();
   CustomButton.$clinit();
   ToggleButton.f_STYLENAME_DEFAULT__org_gwtproject_user_client_ui_ToggleButton_ = "gwt-ToggleButton";
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ToggleButton;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Boolean = goog.module.get('java.lang.Boolean$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -366,7 +237,7 @@ $Util.$setClassMetadata(ToggleButton, 'org.gwtproject.user.client.ui.ToggleButto
 HasValue.$markImplementor(ToggleButton);
 IsEditor.$markImplementor(ToggleButton);
 
-/** @public {?string} */
+/**@type {?string}*/
 ToggleButton.f_STYLENAME_DEFAULT__org_gwtproject_user_client_ui_ToggleButton_;
 
 exports = ToggleButton; 

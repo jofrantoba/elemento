@@ -10,99 +10,57 @@ let SplitLayoutPanel = goog.forwardDeclare('org.gwtproject.user.client.ui.SplitL
 let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
 
 class VSplitter extends Splitter {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {SplitLayoutPanel} */
+  /**@type {SplitLayoutPanel}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_SplitLayoutPanel_VSplitter;
  }
- /**
-  * @param {SplitLayoutPanel} $outer_this
-  * @param {Widget} target
-  * @param {boolean} reverse
-  * @return {!VSplitter}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_SplitLayoutPanel__org_gwtproject_user_client_ui_Widget__boolean($outer_this, target, reverse) {
+ /** @return {!VSplitter} */
+ static $create__org_gwtproject_user_client_ui_SplitLayoutPanel__org_gwtproject_user_client_ui_Widget__boolean(/** SplitLayoutPanel */ $outer_this, /** Widget */ target, /** boolean */ reverse) {
   VSplitter.$clinit();
   let $instance = new VSplitter();
   $instance.$ctor__org_gwtproject_user_client_ui_SplitLayoutPanel_VSplitter__org_gwtproject_user_client_ui_SplitLayoutPanel__org_gwtproject_user_client_ui_Widget__boolean($outer_this, target, reverse);
   return $instance;
  }
- /**
-  * @param {SplitLayoutPanel} $outer_this
-  * @param {Widget} target
-  * @param {boolean} reverse
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_SplitLayoutPanel_VSplitter__org_gwtproject_user_client_ui_SplitLayoutPanel__org_gwtproject_user_client_ui_Widget__boolean($outer_this, target, reverse) {
+ 
+ $ctor__org_gwtproject_user_client_ui_SplitLayoutPanel_VSplitter__org_gwtproject_user_client_ui_SplitLayoutPanel__org_gwtproject_user_client_ui_Widget__boolean(/** SplitLayoutPanel */ $outer_this, /** Widget */ target, /** boolean */ reverse) {
   this.f_$outer_this__org_gwtproject_user_client_ui_SplitLayoutPanel_VSplitter = $outer_this;
   this.$ctor__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter__org_gwtproject_user_client_ui_SplitLayoutPanel__org_gwtproject_user_client_ui_Widget__boolean($outer_this, target, reverse);
   $Overlay.m_setPropertyPx__$devirt__org_gwtproject_dom_client_Style__java_lang_String__int(this.m_getElement__().style, "height", $outer_this.f_splitterSize__org_gwtproject_user_client_ui_SplitLayoutPanel_);
   this.m_setStyleName__java_lang_String("gwt-SplitLayoutPanel-VDragger");
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getAbsolutePosition__() {
   return this.m_getAbsoluteTop__();
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getCenterSize__() {
   return this.f_$outer_this__org_gwtproject_user_client_ui_SplitLayoutPanel_VSplitter.m_getCenterHeight__();
  }
- /**
-  * @override
-  * @param {Event} event
-  * @return {number}
-  * @public
-  */
- m_getEventPosition__org_gwtproject_user_client_Event(event) {
+ /** @override @return {number} */
+ m_getEventPosition__org_gwtproject_user_client_Event(/** Event */ event) {
   return NativeEvent_$Overlay.m_getClientY__$devirt__org_gwtproject_dom_client_NativeEvent(event);
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getTargetPosition__() {
   return this.f_target__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter.m_getAbsoluteTop__();
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getTargetSize__() {
   return this.f_target__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter.m_getOffsetHeight__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   VSplitter.$clinit = () =>{};
   VSplitter.$loadModules();
   Splitter.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof VSplitter;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   NativeEvent_$Overlay = goog.module.get('org.gwtproject.dom.client.NativeEvent.$Overlay$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.Style.$Overlay$impl');

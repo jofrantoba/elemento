@@ -8,41 +8,24 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @extends {Annotation}
  */
 class UiField {
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_provided__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   UiField.$clinit = () =>{};
   UiField.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_uibinder_client_UiField = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_uibinder_client_UiField = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_uibinder_client_UiField;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

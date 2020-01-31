@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"NormalScope.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;MAWkB,W;;;;;;CACd,e;;;;QADc,O;EAAAA,8B;EAAAA;",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MAWkB,W;;CACd,e;;QADc,O;EAAAA,8B;EAAAA;",
 "sources":["NormalScope.java"],
 "names":["javax.enterprise.context.NormalScope.<clinit>"]
 }

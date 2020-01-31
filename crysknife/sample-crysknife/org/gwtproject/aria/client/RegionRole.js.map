@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"RegionRole.impl.java.js",
-"lineCount":16,
-"mappings":"A;;;;;;;;;MA0BiB,U;;;;QAAA,O;EAAAA,6B;EAAAA;",
+"lineCount":14,
+"mappings":"A;;;;;;;;;MA0BiB,U;;QAAA,O;EAAAA,6B;EAAAA;",
 "sources":["RegionRole.java"],
 "names":["org.gwtproject.aria.client.RegionRole.<clinit>"]
 }

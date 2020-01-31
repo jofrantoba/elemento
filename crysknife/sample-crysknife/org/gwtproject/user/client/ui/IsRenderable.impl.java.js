@@ -11,59 +11,29 @@ let RenderableStamper = goog.forwardDeclare('org.gwtproject.user.client.ui.Rende
  * @interface
  */
 class IsRenderable {
- /**
-  * @abstract
-  * @param {Object} element
-  * @public
-  */
- m_claimElement__org_gwtproject_dom_client_Element(element) {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
+ m_claimElement__org_gwtproject_dom_client_Element(/** Object */ element) {}
+ /** @abstract */
  m_initializeClaimedElement__() {}
- /**
-  * @abstract
-  * @param {RenderableStamper} stamper
-  * @return {SafeHtml}
-  * @public
-  */
- m_render__org_gwtproject_user_client_ui_RenderableStamper(stamper) {}
- /**
-  * @abstract
-  * @param {RenderableStamper} stamper
-  * @param {SafeHtmlBuilder} builder
-  * @public
-  */
- m_render__org_gwtproject_user_client_ui_RenderableStamper__org_gwtproject_safehtml_shared_SafeHtmlBuilder(stamper, builder) {}
- /**
-  * @public
-  */
+ /** @abstract @return {SafeHtml} */
+ m_render__org_gwtproject_user_client_ui_RenderableStamper(/** RenderableStamper */ stamper) {}
+ /** @abstract */
+ m_render__org_gwtproject_user_client_ui_RenderableStamper__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** RenderableStamper */ stamper, /** SafeHtmlBuilder */ builder) {}
+ 
  static $clinit() {
   IsRenderable.$clinit = () =>{};
   IsRenderable.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_IsRenderable = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_IsRenderable = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_IsRenderable;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

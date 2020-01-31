@@ -4,121 +4,75 @@ const j_l_Object = goog.require('java.lang.Object$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 
 class Context extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {number} */
+  /**@type {number}*/
   this.f_column__org_gwtproject_cell_client_Cell_Context_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_index__org_gwtproject_cell_client_Cell_Context_ = 0;
-  /** @public {*} */
+  /**@type {*}*/
   this.f_key__org_gwtproject_cell_client_Cell_Context_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_subindex__org_gwtproject_cell_client_Cell_Context_ = 0;
  }
- /**
-  * Factory method corresponding to constructor 'Context(int, int, Object)'.
-  * @param {number} index
-  * @param {number} column
-  * @param {*} key
-  * @return {!Context}
-  * @public
-  */
- static $create__int__int__java_lang_Object(index, column, key) {
+ //Factory method corresponding to constructor 'Context(int, int, Object)'.
+ /** @return {!Context} */
+ static $create__int__int__java_lang_Object(/** number */ index, /** number */ column, /** * */ key) {
   Context.$clinit();
   let $instance = new Context();
   $instance.$ctor__org_gwtproject_cell_client_Cell_Context__int__int__java_lang_Object(index, column, key);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Context(int, int, Object)'.
-  * @param {number} index
-  * @param {number} column
-  * @param {*} key
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_Cell_Context__int__int__java_lang_Object(index, column, key) {
+ //Initialization from constructor 'Context(int, int, Object)'.
+ 
+ $ctor__org_gwtproject_cell_client_Cell_Context__int__int__java_lang_Object(/** number */ index, /** number */ column, /** * */ key) {
   this.$ctor__org_gwtproject_cell_client_Cell_Context__int__int__java_lang_Object__int(index, column, key, 0);
  }
- /**
-  * Factory method corresponding to constructor 'Context(int, int, Object, int)'.
-  * @param {number} index
-  * @param {number} column
-  * @param {*} key
-  * @param {number} subindex
-  * @return {!Context}
-  * @public
-  */
- static $create__int__int__java_lang_Object__int(index, column, key, subindex) {
+ //Factory method corresponding to constructor 'Context(int, int, Object, int)'.
+ /** @return {!Context} */
+ static $create__int__int__java_lang_Object__int(/** number */ index, /** number */ column, /** * */ key, /** number */ subindex) {
   Context.$clinit();
   let $instance = new Context();
   $instance.$ctor__org_gwtproject_cell_client_Cell_Context__int__int__java_lang_Object__int(index, column, key, subindex);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Context(int, int, Object, int)'.
-  * @param {number} index
-  * @param {number} column
-  * @param {*} key
-  * @param {number} subindex
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_Cell_Context__int__int__java_lang_Object__int(index, column, key, subindex) {
+ //Initialization from constructor 'Context(int, int, Object, int)'.
+ 
+ $ctor__org_gwtproject_cell_client_Cell_Context__int__int__java_lang_Object__int(/** number */ index, /** number */ column, /** * */ key, /** number */ subindex) {
   this.$ctor__java_lang_Object__();
   this.f_index__org_gwtproject_cell_client_Cell_Context_ = index;
   this.f_column__org_gwtproject_cell_client_Cell_Context_ = column;
   this.f_key__org_gwtproject_cell_client_Cell_Context_ = key;
   this.f_subindex__org_gwtproject_cell_client_Cell_Context_ = subindex;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getColumn__() {
   return this.f_column__org_gwtproject_cell_client_Cell_Context_;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getIndex__() {
   return this.f_index__org_gwtproject_cell_client_Cell_Context_;
  }
- /**
-  * @return {*}
-  * @public
-  */
+ /** @return {*} */
  m_getKey__() {
   return this.f_key__org_gwtproject_cell_client_Cell_Context_;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getSubIndex__() {
   return this.f_subindex__org_gwtproject_cell_client_Cell_Context_;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Context.$clinit = () =>{};
   Context.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Context;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

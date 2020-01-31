@@ -13,53 +13,34 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {RequiresResize}
   */
 class ResizeComposite extends Composite {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_ResizeComposite__() {
   this.$ctor__org_gwtproject_user_client_ui_Composite__();
  }
- /**
-  * @override
-  * @param {Widget} widget
-  * @public
-  */
- m_initWidget__org_gwtproject_user_client_ui_Widget(widget) {
+ /** @override */
+ m_initWidget__org_gwtproject_user_client_ui_Widget(/** Widget */ widget) {
   $Asserts.$assertWithMessage(RequiresResize.$isInstance(widget), "ResizeComposite requires that its wrapped widget implement RequiresResize");
   super.m_initWidget__org_gwtproject_user_client_ui_Widget(widget);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onResize__() {
-  /**@type {RequiresResize} */ ($Casts.$to(this.m_getWidget__(), RequiresResize)).m_onResize__();
+  /**@type {RequiresResize}*/ ($Casts.$to(this.m_getWidget__(), RequiresResize)).m_onResize__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ResizeComposite.$clinit = () =>{};
   ResizeComposite.$loadModules();
   Composite.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ResizeComposite;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Asserts = goog.module.get('vmbootstrap.Asserts$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

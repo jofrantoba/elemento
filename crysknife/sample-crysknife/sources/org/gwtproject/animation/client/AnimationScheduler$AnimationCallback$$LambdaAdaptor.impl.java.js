@@ -8,54 +8,37 @@ const AnimationCallback = goog.require('org.gwtproject.animation.client.Animatio
  * @implements {AnimationCallback}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(number):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(number):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(number):void} */
+  /**@type {?function(number):void}*/
   this.f_$$fn__org_gwtproject_animation_client_AnimationScheduler_AnimationCallback_$LambdaAdaptor;
   this.$ctor__org_gwtproject_animation_client_AnimationScheduler_AnimationCallback_$LambdaAdaptor__org_gwtproject_animation_client_AnimationScheduler_AnimationCallback_$JsFunction(fn);
  }
- /**
-  * @param {?function(number):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_animation_client_AnimationScheduler_AnimationCallback_$LambdaAdaptor__org_gwtproject_animation_client_AnimationScheduler_AnimationCallback_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_animation_client_AnimationScheduler_AnimationCallback_$LambdaAdaptor__org_gwtproject_animation_client_AnimationScheduler_AnimationCallback_$JsFunction(/** ?function(number):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_animation_client_AnimationScheduler_AnimationCallback_$LambdaAdaptor = fn;
  }
- /**
-  * @param {number} arg0
-  * @public
-  */
- m_execute__double(arg0) {
+ 
+ m_execute__double(/** number */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_animation_client_AnimationScheduler_AnimationCallback_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

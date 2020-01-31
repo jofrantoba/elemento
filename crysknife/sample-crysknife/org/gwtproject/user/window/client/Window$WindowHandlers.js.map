@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Window$WindowHandlers.impl.java.js",
-"lineCount":66,
-"mappings":"A;;;;;;;;;;;;;;;;;;MAycuB,c;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,yB;EAAAA,qC;EAAAA,6E;EAAAA,iB;;;;;CAAA,gE;EAAAC,2D;;;;;;;;CAIQ,mE,CAAqCC,O;EAC9DC,sH;;;;;;;;CAIyB,qE,CAA+BD,O;EACxDE,uH;;;;;QAViB,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":47,
+"mappings":"A;;;;;;;;;;;;;;;;;;MAycuB,c;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,yB;EAAAA,qC;EAAAA,6E;EAAAA,iB;;;CAAA,gE;EAAAC,2D;;;CAIQ,mE,6BAAqCC,O;EAC9DC,sH;;;CAIyB,qE,sBAA+BD,O;EACxDE,uH;;;QAViB,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["Window.java"],
 "names":["org.gwtproject.user.window.client.Window$WindowHandlers.<synthetic: ctor_js>","org.gwtproject.user.window.client.Window$WindowHandlers.<synthetic: ctor_create>","org.gwtproject.user.window.client.Window$WindowHandlers.<init>","handler","org.gwtproject.user.window.client.Window$WindowHandlers.addCloseHandler","org.gwtproject.user.window.client.Window$WindowHandlers.addResizeHandler","org.gwtproject.user.window.client.Window$WindowHandlers.<clinit>"]
 }

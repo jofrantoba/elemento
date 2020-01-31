@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"PerformanceNavigation$$Overlay.impl.java.js",
-"lineCount":68,
-"mappings":"A;;;;MAsBa,Q;;;;;QACX,sE;EAAAA,0G;;;;;;QAGA,kE;EAAAA,sG;;;;;;QAGA,gE;EAAAA,oG;;;;;;QAEA,kE;EAAAA,sG;;;;;QATW,O;EAAAC,2B;EAAAA,wB;EACXA,uH;EAGAA,+G;EAGAA,2G;EAEAA,+G;;;;;;;;;;;;;;;;;;AATW;mF;AAAA;+E;AAAA;6E;AAAA;;",
+"lineCount":48,
+"mappings":"A;;;;MAsBa,Q;;QACX,sE;EAAAA,0G;;;QAGA,kE;EAAAA,sG;;;QAGA,gE;EAAAA,oG;;;QAEA,kE;EAAAA,sG;;;QATW,O;EAAAC,2B;EAAAA,wB;EACXA,uH;EAGAA,+G;EAGAA,2G;EAEAA,+G;;;;;;;;;;;;AATW;mF;AAAA;+E;AAAA;6E;AAAA;;",
 "sources":["PerformanceNavigation.java"],
 "names":["elemental2.dom.PerformanceNavigation$$Overlay.<synthetic: getter>","elemental2.dom.PerformanceNavigation$$Overlay.<clinit>"]
 }

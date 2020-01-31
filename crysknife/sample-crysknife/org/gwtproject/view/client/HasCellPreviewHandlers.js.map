@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasCellPreviewHandlers.impl.java.js",
-"lineCount":27,
-"mappings":"A;;;;;;;;;;;;;MA0BiB,sB;;;;;;;CAOK,4E,CAAkDA,O;;;;QAPvD,O;EAAAC,yC;EAAAA;",
+"lineCount":20,
+"mappings":"A;;;;;;;;;;;;;MA0BiB,sB;;CAOK,4E,mBAAkDA,O;;QAPvD,O;EAAAC,yC;EAAAA;",
 "sources":["HasCellPreviewHandlers.java"],
 "names":["handler","org.gwtproject.view.client.HasCellPreviewHandlers.<clinit>"]
 }

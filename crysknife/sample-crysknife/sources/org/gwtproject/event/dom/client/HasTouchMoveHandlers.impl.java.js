@@ -11,42 +11,24 @@ let HandlerRegistration = goog.forwardDeclare('org.gwtproject.event.shared.Handl
  * @extends {HasHandlers}
  */
 class HasTouchMoveHandlers {
- /**
-  * @abstract
-  * @param {TouchMoveHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addTouchMoveHandler__org_gwtproject_event_dom_client_TouchMoveHandler(handler) {}
- /**
-  * @public
-  */
+ /** @abstract @return {HandlerRegistration} */
+ m_addTouchMoveHandler__org_gwtproject_event_dom_client_TouchMoveHandler(/** TouchMoveHandler */ handler) {}
+ 
  static $clinit() {
   HasTouchMoveHandlers.$clinit = () =>{};
   HasTouchMoveHandlers.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasHandlers.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_HasTouchMoveHandlers = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasHandlers.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_HasTouchMoveHandlers = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_HasTouchMoveHandlers;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

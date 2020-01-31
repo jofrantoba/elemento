@@ -9,50 +9,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.cell.client.ValueUpdate
  * @template C
  */
 class ValueUpdater {
- /**
-  * @abstract
-  * @param {C} value
-  * @public
-  */
- m_update__java_lang_Object(value) {}
- /**
-  * @template C
-  * @param {?function(C):void} fn
-  * @return {ValueUpdater<C>}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_update__java_lang_Object(/** C */ value) {}
+ /** @template C @return {ValueUpdater<C>} */
+ static $adapt(/** ?function(C):void */ fn) {
   ValueUpdater.$clinit();
-  return /**@type {!$LambdaAdaptor<C>} */ (new $LambdaAdaptor(fn));
+  return /**@type {!$LambdaAdaptor<C>}*/ (new $LambdaAdaptor(fn));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ValueUpdater.$clinit = () =>{};
   ValueUpdater.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_cell_client_ValueUpdater = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_cell_client_ValueUpdater = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_cell_client_ValueUpdater;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.cell.client.ValueUpdater.$LambdaAdaptor$impl');
  }

@@ -10,54 +10,37 @@ let KeyPressEvent = goog.forwardDeclare('org.gwtproject.event.dom.client.KeyPres
  * @implements {KeyPressHandler}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(KeyPressEvent):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(KeyPressEvent):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(KeyPressEvent):void} */
+  /**@type {?function(KeyPressEvent):void}*/
   this.f_$$fn__org_gwtproject_event_dom_client_KeyPressHandler_$LambdaAdaptor;
   this.$ctor__org_gwtproject_event_dom_client_KeyPressHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_KeyPressHandler_$JsFunction(fn);
  }
- /**
-  * @param {?function(KeyPressEvent):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_event_dom_client_KeyPressHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_KeyPressHandler_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_event_dom_client_KeyPressHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_KeyPressHandler_$JsFunction(/** ?function(KeyPressEvent):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_event_dom_client_KeyPressHandler_$LambdaAdaptor = fn;
  }
- /**
-  * @param {KeyPressEvent} arg0
-  * @public
-  */
- m_onKeyPress__org_gwtproject_event_dom_client_KeyPressEvent(arg0) {
+ 
+ m_onKeyPress__org_gwtproject_event_dom_client_KeyPressEvent(/** KeyPressEvent */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_event_dom_client_KeyPressHandler_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

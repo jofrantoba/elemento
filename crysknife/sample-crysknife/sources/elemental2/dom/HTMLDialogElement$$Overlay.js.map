@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HTMLDialogElement$$Overlay.impl.java.js",
-"lineCount":53,
-"mappings":"A;;;;;;;;;;MAuBa,0B;;;;;;QAmEO,yE,WAAaA,M;EAAbC,qC;EAChBA,8E;;;;;;;QAIgB,4E,WAAgBD,M;EAAhBC,qC;EAChBA,8E;;;;;;;QAQgB,8E,WAAkBD,M;EAAlBE,qC;EAChBA,mF;;;;;;;QAIgB,iF,WAAqBF,M;EAArBE,qC;EAChBA,mF;;;;;QAvFS,O;EAAAC,6C;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;MAuBa,0B;;QAmEO,yE,oDAAaA,M;EAAbC,qC;EAChBA,6E;;;QAIgB,4E,uDAAgBD,M;EAAhBC,qC;EAChBA,6E;;;QAQgB,8E,oDAAkBD,M;EAAlBE,qC;EAChBA,kF;;;QAIgB,iF,uDAAqBF,M;EAArBE,qC;EAChBA,kF;;;QAvFS,O;EAAAC,6C;EAAAA;",
 "sources":["HTMLDialogElement.java"],
 "names":["anchor","elemental2.dom.HTMLDialogElement$$Overlay.show__$devirt","elemental2.dom.HTMLDialogElement$$Overlay.showModal__$devirt","elemental2.dom.HTMLDialogElement$$Overlay.<clinit>"]
 }

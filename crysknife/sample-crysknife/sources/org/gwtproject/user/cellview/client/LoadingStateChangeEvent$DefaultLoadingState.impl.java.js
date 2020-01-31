@@ -8,47 +8,32 @@ const LoadingState = goog.require('org.gwtproject.user.cellview.client.LoadingSt
  * @implements {LoadingState}
   */
 class DefaultLoadingState extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!DefaultLoadingState}
-  * @public
-  */
+ /** @return {!DefaultLoadingState} */
  static $create__() {
   DefaultLoadingState.$clinit();
   let $instance = new DefaultLoadingState();
   $instance.$ctor__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_DefaultLoadingState__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_DefaultLoadingState__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DefaultLoadingState.$clinit = () =>{};
   DefaultLoadingState.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DefaultLoadingState;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

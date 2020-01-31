@@ -4,59 +4,39 @@ const j_l_Object = goog.require('java.lang.Object$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 
 class VerticalAlignmentConstant extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_verticalAlignString__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant_;
  }
- /**
-  * @param {?string} verticalAlignString
-  * @return {!VerticalAlignmentConstant}
-  * @public
-  */
- static $create__java_lang_String(verticalAlignString) {
+ /** @return {!VerticalAlignmentConstant} */
+ static $create__java_lang_String(/** ?string */ verticalAlignString) {
   VerticalAlignmentConstant.$clinit();
   let $instance = new VerticalAlignmentConstant();
   $instance.$ctor__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant__java_lang_String(verticalAlignString);
   return $instance;
  }
- /**
-  * @param {?string} verticalAlignString
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant__java_lang_String(verticalAlignString) {
+ 
+ $ctor__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant__java_lang_String(/** ?string */ verticalAlignString) {
   this.$ctor__java_lang_Object__();
   this.f_verticalAlignString__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant_ = verticalAlignString;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getVerticalAlignString__() {
   return this.f_verticalAlignString__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant_;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   VerticalAlignmentConstant.$clinit = () =>{};
   VerticalAlignmentConstant.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof VerticalAlignmentConstant;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

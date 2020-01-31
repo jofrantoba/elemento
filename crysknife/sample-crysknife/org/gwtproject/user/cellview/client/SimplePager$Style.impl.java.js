@@ -8,53 +8,28 @@ const CssResource = goog.require('org.gwtproject.resources.client.CssResource$im
  * @extends {CssResource}
  */
 class Style {
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_button__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_disabledButton__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_pageDetails__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Style.$clinit = () =>{};
   Style.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  CssResource.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_cellview_client_SimplePager_Style = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  CssResource.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_cellview_client_SimplePager_Style = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_cellview_client_SimplePager_Style;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

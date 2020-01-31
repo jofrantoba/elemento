@@ -8,82 +8,37 @@ let Editor = goog.forwardDeclare('org.gwtproject.editor.client.Editor$impl');
  * @interface
  */
 class EditorError {
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getAbsolutePath__() {}
- /**
-  * @abstract
-  * @return {Editor<?>}
-  * @public
-  */
+ /** @abstract @return {Editor<?>} */
  m_getEditor__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getMessage__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getPath__() {}
- /**
-  * @abstract
-  * @return {*}
-  * @public
-  */
+ /** @abstract @return {*} */
  m_getUserData__() {}
- /**
-  * @abstract
-  * @return {*}
-  * @public
-  */
+ /** @abstract @return {*} */
  m_getValue__() {}
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_isConsumed__() {}
- /**
-  * @abstract
-  * @param {boolean} consumed
-  * @public
-  */
- m_setConsumed__boolean(consumed) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_setConsumed__boolean(/** boolean */ consumed) {}
+ 
  static $clinit() {
   EditorError.$clinit = () =>{};
   EditorError.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_editor_client_EditorError = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_editor_client_EditorError = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_editor_client_EditorError;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

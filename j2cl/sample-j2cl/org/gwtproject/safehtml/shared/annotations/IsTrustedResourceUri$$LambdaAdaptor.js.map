@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"IsTrustedResourceUri$$LambdaAdaptor.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;;;;MAsBkB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;8F;EAAAA,4K;;;;;;CAAA,kK;EAAAC,iC;EAAAA,iG;;;;;;CAAA,kB;EAAAC,0C;EAAAA,8H;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;;MAsBkB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;8F;EAAAA,4K;;;CAAA,kK;EAAAC,iC;EAAAA,iG;;;CAAA,kB;EAAAC,0C;EAAAA,8H;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["IsTrustedResourceUri.java"],
 "names":["org.gwtproject.safehtml.shared.annotations.IsTrustedResourceUri$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.safehtml.shared.annotations.IsTrustedResourceUri$$LambdaAdaptor.<init>","org.gwtproject.safehtml.shared.annotations.IsTrustedResourceUri$$LambdaAdaptor.annotationType","org.gwtproject.safehtml.shared.annotations.IsTrustedResourceUri$$LambdaAdaptor.<clinit>"]
 }

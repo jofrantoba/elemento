@@ -12,18 +12,12 @@ let Display = goog.forwardDeclare('org.gwtproject.dom.client.Style.Display$impl'
 let TempAttachment = goog.forwardDeclare('org.gwtproject.uibinder.client.UiBinderUtil.TempAttachment$impl');
 
 class UiBinderUtil extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {Object} element
-  * @return {TempAttachment}
-  * @public
-  */
- static m_attachToDom__org_gwtproject_dom_client_Element(element) {
+ /** @return {TempAttachment} */
+ static m_attachToDom__org_gwtproject_dom_client_Element(/** Object */ element) {
   UiBinderUtil.$clinit();
   UiBinderUtil.m_ensureHiddenDiv__();
   let origParent = $Overlay.m_getParentElement__$devirt__org_gwtproject_dom_client_Node(element);
@@ -31,12 +25,8 @@ class UiBinderUtil extends j_l_Object {
   UiBinderUtil.f_hiddenDiv__org_gwtproject_uibinder_client_UiBinderUtil_.appendChild(element);
   return TempAttachment.$create__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(origParent, origSibling, element);
  }
- /**
-  * @param {?string} html
-  * @return {Object}
-  * @public
-  */
- static m_fromHtml__java_lang_String(html) {
+ /** @return {Object} */
+ static m_fromHtml__java_lang_String(/** ?string */ html) {
   UiBinderUtil.$clinit();
   UiBinderUtil.m_ensureHiddenDiv__();
   Element_$Overlay.m_setInnerHTML__$devirt__org_gwtproject_dom_client_Element__java_lang_String(UiBinderUtil.f_hiddenDiv__org_gwtproject_uibinder_client_UiBinderUtil_, html);
@@ -44,9 +34,7 @@ class UiBinderUtil extends j_l_Object {
   UiBinderUtil.m_orphan__org_gwtproject_dom_client_Node(newbie);
   return newbie;
  }
- /**
-  * @public
-  */
+ 
  static m_ensureHiddenDiv__() {
   if ($Equality.$same(UiBinderUtil.f_hiddenDiv__org_gwtproject_uibinder_client_UiBinderUtil_, null)) {
    UiBinderUtil.f_hiddenDiv__org_gwtproject_uibinder_client_UiBinderUtil_ = Document_$Overlay.m_createDivElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__());
@@ -54,48 +42,32 @@ class UiBinderUtil extends j_l_Object {
    Document_$Overlay.m_get__().body.appendChild(UiBinderUtil.f_hiddenDiv__org_gwtproject_uibinder_client_UiBinderUtil_);
   }
  }
- /**
-  * @param {Object} node
-  * @public
-  */
- static m_orphan__org_gwtproject_dom_client_Node(node) {
+ 
+ static m_orphan__org_gwtproject_dom_client_Node(/** Object */ node) {
   UiBinderUtil.$clinit();
   node.parentNode.removeChild(node);
  }
- /**
-  * @return {!UiBinderUtil}
-  * @public
-  */
+ /** @return {!UiBinderUtil} */
  static $create__() {
   let $instance = new UiBinderUtil();
   $instance.$ctor__org_gwtproject_uibinder_client_UiBinderUtil__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_uibinder_client_UiBinderUtil__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   UiBinderUtil.$clinit = () =>{};
   UiBinderUtil.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof UiBinderUtil;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   Document_$Overlay = goog.module.get('org.gwtproject.dom.client.Document.$Overlay$impl');
@@ -109,7 +81,7 @@ class UiBinderUtil extends j_l_Object {
 }
 $Util.$setClassMetadata(UiBinderUtil, 'org.gwtproject.uibinder.client.UiBinderUtil');
 
-/** @public {Object} */
+/**@type {Object}*/
 UiBinderUtil.f_hiddenDiv__org_gwtproject_uibinder_client_UiBinderUtil_;
 
 exports = UiBinderUtil; 

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DataResource$DoNotEmbed.impl.java.js",
-"lineCount":28,
-"mappings":"A;;;;;;;;;;;;MAyDa,U;;;;;;QAAA,M;EAAAA,qB;EAAAA,8B;;;;;QAAA,O;EAAAC,6B;EAAAA;",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;;MAyDa,U;;QAAA,M;EAAAA,qB;EAAAA,8B;;;QAAA,O;EAAAC,6B;EAAAA;",
 "sources":["DataResource.java"],
 "names":["org.gwtproject.resources.client.DataResource$DoNotEmbed.<synthetic: adapt_lambda>","org.gwtproject.resources.client.DataResource$DoNotEmbed.<clinit>"]
 }

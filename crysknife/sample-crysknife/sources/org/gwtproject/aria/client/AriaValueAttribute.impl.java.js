@@ -11,93 +11,56 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {Attribute<T>}
   */
 class AriaValueAttribute extends Attribute {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * Factory method corresponding to constructor 'AriaValueAttribute(String, String)'.
-  * @template T
-  * @param {?string} name
-  * @param {?string} defaultValue
-  * @return {!AriaValueAttribute<T>}
-  * @public
-  */
- static $create__java_lang_String__java_lang_String(name, defaultValue) {
+ //Factory method corresponding to constructor 'AriaValueAttribute(String, String)'.
+ /** @template T @return {!AriaValueAttribute<T>} */
+ static $create__java_lang_String__java_lang_String(/** ?string */ name, /** ?string */ defaultValue) {
   AriaValueAttribute.$clinit();
   let $instance = new AriaValueAttribute();
   $instance.$ctor__org_gwtproject_aria_client_AriaValueAttribute__java_lang_String__java_lang_String(name, defaultValue);
   return $instance;
  }
- /**
-  * Initialization from constructor 'AriaValueAttribute(String, String)'.
-  * @param {?string} name
-  * @param {?string} defaultValue
-  * @public
-  */
- $ctor__org_gwtproject_aria_client_AriaValueAttribute__java_lang_String__java_lang_String(name, defaultValue) {
+ //Initialization from constructor 'AriaValueAttribute(String, String)'.
+ 
+ $ctor__org_gwtproject_aria_client_AriaValueAttribute__java_lang_String__java_lang_String(/** ?string */ name, /** ?string */ defaultValue) {
   this.$ctor__org_gwtproject_aria_client_Attribute__java_lang_String__java_lang_String(name, defaultValue);
  }
- /**
-  * Factory method corresponding to constructor 'AriaValueAttribute(String)'.
-  * @template T
-  * @param {?string} name
-  * @return {!AriaValueAttribute<T>}
-  * @public
-  */
- static $create__java_lang_String(name) {
+ //Factory method corresponding to constructor 'AriaValueAttribute(String)'.
+ /** @template T @return {!AriaValueAttribute<T>} */
+ static $create__java_lang_String(/** ?string */ name) {
   AriaValueAttribute.$clinit();
   let $instance = new AriaValueAttribute();
   $instance.$ctor__org_gwtproject_aria_client_AriaValueAttribute__java_lang_String(name);
   return $instance;
  }
- /**
-  * Initialization from constructor 'AriaValueAttribute(String)'.
-  * @param {?string} name
-  * @public
-  */
- $ctor__org_gwtproject_aria_client_AriaValueAttribute__java_lang_String(name) {
+ //Initialization from constructor 'AriaValueAttribute(String)'.
+ 
+ $ctor__org_gwtproject_aria_client_AriaValueAttribute__java_lang_String(/** ?string */ name) {
   this.$ctor__org_gwtproject_aria_client_Attribute__java_lang_String(name);
  }
- /**
-  * @param {T} value
-  * @return {?string}
-  * @public
-  */
- m_getSingleValue__org_gwtproject_aria_client_AriaAttributeType(value) {
-  return /**@type {AriaAttributeType} */ (value).m_getAriaValue__();
+ /** @return {?string} */
+ m_getSingleValue__org_gwtproject_aria_client_AriaAttributeType(/** T */ value) {
+  return /**@type {AriaAttributeType}*/ (value).m_getAriaValue__();
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @return {?string}
-  * @public
-  */
- m_getSingleValue__java_lang_Object(arg0) {
-  return this.m_getSingleValue__org_gwtproject_aria_client_AriaAttributeType(/**@type {T} */ ($Casts.$to(arg0, AriaAttributeType)));
+ //Bridge method.
+ /** @override @return {?string} */
+ m_getSingleValue__java_lang_Object(/** * */ arg0) {
+  return this.m_getSingleValue__org_gwtproject_aria_client_AriaAttributeType(/**@type {T}*/ ($Casts.$to(arg0, AriaAttributeType)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AriaValueAttribute.$clinit = () =>{};
   AriaValueAttribute.$loadModules();
   Attribute.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AriaValueAttribute;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   AriaAttributeType = goog.module.get('org.gwtproject.aria.client.AriaAttributeType$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

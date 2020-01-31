@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MediaStream$ConstructorStreamOrTracksUnionType$$Overlay.impl.java.js",
-"lineCount":62,
-"mappings":"A;;;;;;;;;;MA4BmB,2C;;;;;;QAEuC,sB,CAAUA,C;EAAVC,sD;EACpDA,wD;;;;;;;QAIgC,mF;EAAAC,sD;EAChCA,2G;;;;;;;QAIkB,uF;EAAAC,sD;EAClBA,2G;;;;;;;QAIc,mF;EAAAC,sD;EACdA,wD;;;;;;;QAIc,uF;EAAAC,sD;EACdA,oE;;;;;QAvBa,O;EAAAC,8D;EAAAA;",
+"lineCount":40,
+"mappings":"A;;;;;;;;;;MA4BmB,2C;;QAEuC,sB,UAAUA,C;EAAVC,sD;EACpDA,uD;;;QAIgC,mF;EAAAC,sD;EAChCA,0G;;;QAIkB,uF;EAAAC,sD;EAClBA,0G;;;QAIc,mF;EAAAC,sD;EACdA,uD;;;QAIc,uF;EAAAC,sD;EACdA,mE;;;QAvBa,O;EAAAC,8D;EAAAA;",
 "sources":["MediaStream.java"],
 "names":["o","elemental2.dom.MediaStream$ConstructorStreamOrTracksUnionType$$Overlay.of","elemental2.dom.MediaStream$ConstructorStreamOrTracksUnionType$$Overlay.asJsArray__$devirt","elemental2.dom.MediaStream$ConstructorStreamOrTracksUnionType$$Overlay.asMediaStream__$devirt","elemental2.dom.MediaStream$ConstructorStreamOrTracksUnionType$$Overlay.isJsArray__$devirt","elemental2.dom.MediaStream$ConstructorStreamOrTracksUnionType$$Overlay.isMediaStream__$devirt","elemental2.dom.MediaStream$ConstructorStreamOrTracksUnionType$$Overlay.<clinit>"]
 }

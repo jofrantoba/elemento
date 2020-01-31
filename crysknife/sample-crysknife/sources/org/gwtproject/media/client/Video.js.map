@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Video.impl.java.js",
-"lineCount":132,
-"mappings":"A;;;;;;;;;;;MAgCa,K;;;;CAAA,W;EAAAA,Q;;;;;;;QASY,4D,CAAgCC,O;EACrDC,8H;;;;;;QAQkB,qB;EAAAC,gB;EAClBA,IAAaF,OAAbE,oH;EACAA;GACEA,YADFA;G;EAGAA,sE;;;;;;QAQoB,e;EAAAC,gB;EACpBA,IAAaH,OAAbG,oH;EACAA,mF;;;;;;;;QAMQ,+C,CAAmBH,O;EAAnBI,gB;EAAAA,4B;EAAAA,oG;EAAAA,iB;;;;;;;CAAA,gF,CAAmBJ,O;EAC3BK,mG;;;;;;;;;QAUK,yB,CAAaC,G;EAAbF,gB;EAAAA,4B;EAAAA,0E;EAAAA,iB;;;;;;;;CAAA,0D,CAAaE,G;EAClBD,4M;EACAA,qC;;;;;;CAUY,a;EACZE,yC;;;;;;CAQkB,mB;EAClBC,oL;;;;;;CAUS,kB;EACTC,8C;;;;;;CAUS,iB;EACTC,6C;;;;;;CASU,6B,CAAiBC,G;EAC3BC,wC;;;;;QAxGS,O;EAAAC,wB;EAAAA,qB;EAAAA;",
+"lineCount":87,
+"mappings":"A;;;;;;;;;;;MAgCa,K;;CAAA,W;EAAAA,Q;;;QASY,4D,eAAgCC,O;EACrDC,6H;;;QAQkB,qB;EAAAC,gB;EAClBA,IAAaF,OAAbE,oH;EACAA;GACEA,YADFA;G;EAGAA,sE;;;QAQoB,e;EAAAC,gB;EACpBA,IAAaH,OAAbG,oH;EACAA,mF;;;;QAMQ,+C,eAAmBH,O;EAAnBI,gB;EAAAA,4B;EAAAA,oG;EAAAA,iB;;;;CAAA,gF,eAAmBJ,O;EAC3BK,mG;;;;QAUK,yB,gBAAaC,G;EAAbF,gB;EAAAA,4B;EAAAA,0E;EAAAA,iB;;;;CAAA,0D,gBAAaE,G;EAClBD,4M;EACAA,qC;;;CAUY,a;EACZE,yC;;;CAQkB,mB;EAClBC,mL;;;CAUS,kB;EACTC,8C;;;CAUS,iB;EACTC,6C;;;CASU,6B,gBAAiBC,G;EAC3BC,wC;;;QAxGS,O;EAAAC,wB;EAAAA,qB;EAAAA;",
 "sources":["Video.java"],
 "names":["org.gwtproject.media.client.Video.<synthetic: ctor_js>","element","org.gwtproject.media.client.Video.isSupportedRunTime","org.gwtproject.media.client.Video.createIfSupported","org.gwtproject.media.client.Video.isSupported","org.gwtproject.media.client.Video.<synthetic: ctor_create>","org.gwtproject.media.client.Video.<init>","src","org.gwtproject.media.client.Video.getPoster","org.gwtproject.media.client.Video.getVideoElement","org.gwtproject.media.client.Video.getVideoHeight","org.gwtproject.media.client.Video.getVideoWidth","url","org.gwtproject.media.client.Video.setPoster","org.gwtproject.media.client.Video.<clinit>"]
 }

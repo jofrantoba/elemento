@@ -11,54 +11,28 @@ let PropertyDescriptor = goog.forwardDeclare('javax.validation.metadata.Property
  * @extends {ElementDescriptor}
  */
 class BeanDescriptor {
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_isBeanConstrained__() {}
- /**
-  * @abstract
-  * @param {?string} propertyName
-  * @return {PropertyDescriptor}
-  * @public
-  */
- m_getConstraintsForProperty__java_lang_String(propertyName) {}
- /**
-  * @abstract
-  * @return {Set<PropertyDescriptor>}
-  * @public
-  */
+ /** @abstract @return {PropertyDescriptor} */
+ m_getConstraintsForProperty__java_lang_String(/** ?string */ propertyName) {}
+ /** @abstract @return {Set<PropertyDescriptor>} */
  m_getConstrainedProperties__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   BeanDescriptor.$clinit = () =>{};
   BeanDescriptor.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ElementDescriptor.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__javax_validation_metadata_BeanDescriptor = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ElementDescriptor.$markImplementor(ctor);
+  ctor.prototype.$implements__javax_validation_metadata_BeanDescriptor = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__javax_validation_metadata_BeanDescriptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"AbstractUiRenderer$UiRendererDispatcher.impl.java.js",
-"lineCount":102,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;MAwCkC,oB;;;;CAAA,W;EAAAA,Q;EAAAA;OACpB,2FADoBA,C;EAAAA;OAGlB,2FAHkBA,K;EAAAA;OAKd,oFALcA,C;EAAAA;OAWG,qFAXHA,C;;;;;CAAA,oF;EAAAC,iC;;;;;;;;CAmBf,uG,CAAYC,M,EAAoBC,K,EAAeC,Y;EAC5DC;GACEA,sGADFA;G;EAGAA;GACEA,qGADFA;G;EAGAA;GACEA,+FADFA;G;EAIAA;GACEA,OADFA;G;EAGAA,0G;EACAA,2S;EACAA,wa;EACAA,wH;;;;;;CAMU,kB;EACVC,wG;;;;;;CAMY,kB;EACZC,wG;;;;;;CAMgB,W;EAChBC,iG;;;;;;;CAMa,wE,CAA2BC,I,EAAgBC,M;EACxDC,sM;;;;;QAhE4B,O;EAAAC,uC;EAAAA,oC;EAAAA;",
+"lineCount":78,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;MAwCkC,oB;;CAAA,W;EAAAA,Q;EAAAA;OACpB,2FADoBA,C;EAAAA;OAGlB,2FAHkBA,K;EAAAA;OAKd,oFALcA,C;EAAAA;OAWG,qFAXHA,C;;;CAAA,oF;EAAAC,iC;;;CAmBf,uG,UAAYC,M,gBAAoBC,K,gBAAeC,Y;EAC5DC;GACEA,sGADFA;G;EAGAA;GACEA,qGADFA;G;EAGAA;GACEA,+FADFA;G;EAIAA;GACEA,OADFA;G;EAGAA,0G;EACAA,2S;EACAA,wa;EACAA,wH;;;CAMU,kB;EACVC,wG;;;CAMY,kB;EACZC,wG;;;CAMgB,W;EAChBC,iG;;;CAMa,wE,uBAA2BC,I,wBAAgBC,M;EACxDC,sM;;;QAhE4B,O;EAAAC,uC;EAAAA,oC;EAAAA;",
 "sources":["AbstractUiRenderer.java"],
 "names":["org.gwtproject.uibinder.client.impl.AbstractUiRenderer$UiRendererDispatcher.<synthetic: ctor_js>","org.gwtproject.uibinder.client.impl.AbstractUiRenderer$UiRendererDispatcher.<init>","target","event","parentOrRoot","org.gwtproject.uibinder.client.impl.AbstractUiRenderer$UiRendererDispatcher.fireEvent","org.gwtproject.uibinder.client.impl.AbstractUiRenderer$UiRendererDispatcher.getEventTarget","org.gwtproject.uibinder.client.impl.AbstractUiRenderer$UiRendererDispatcher.getMethodIndex","org.gwtproject.uibinder.client.impl.AbstractUiRenderer$UiRendererDispatcher.getRoot","keys","values","org.gwtproject.uibinder.client.impl.AbstractUiRenderer$UiRendererDispatcher.initDispatchTable","org.gwtproject.uibinder.client.impl.AbstractUiRenderer$UiRendererDispatcher.<clinit>"]
 }

@@ -8,42 +8,26 @@ let $Overlay = goog.forwardDeclare('elemental2.dom.SourceBuffer.AppendBufferData
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class SourceBuffer_$Overlay {
- /**
-  * @param {!SourceBuffer} $thisArg
-  * @param {ArrayBuffer} data
-  * @public
-  */
- static m_appendBuffer__$devirt__elemental2_dom_SourceBuffer__elemental2_core_ArrayBuffer($thisArg, data) {
+ 
+ static m_appendBuffer__$devirt__elemental2_dom_SourceBuffer__elemental2_core_ArrayBuffer(/** !SourceBuffer */ $thisArg, /** ArrayBuffer */ data) {
   SourceBuffer_$Overlay.$clinit();
-  $thisArg.appendBuffer(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(data)));
+  $thisArg.appendBuffer(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(data)));
  }
- /**
-  * @param {!SourceBuffer} $thisArg
-  * @param {ArrayBufferView} data
-  * @public
-  */
- static m_appendBuffer__$devirt__elemental2_dom_SourceBuffer__elemental2_core_ArrayBufferView($thisArg, data) {
+ 
+ static m_appendBuffer__$devirt__elemental2_dom_SourceBuffer__elemental2_core_ArrayBufferView(/** !SourceBuffer */ $thisArg, /** ArrayBufferView */ data) {
   SourceBuffer_$Overlay.$clinit();
-  $thisArg.appendBuffer(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(data)));
+  $thisArg.appendBuffer(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(data)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SourceBuffer_$Overlay.$clinit = () =>{};
   SourceBuffer_$Overlay.$loadModules();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SourceBuffer;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }

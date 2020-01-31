@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Frame.impl.java.js",
-"lineCount":181,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;MA6Ca,K;;;;CAAA,W;EAAAA,Q;;;;;;;QAaS,yC,CAAaC,O;EAAbC,gB;EAElBA,8J;EAEAA,IAAMC,KAAND,6D;EAGAA,qB;EACAA,6E;EAEAA,a;;;;;;;QAMK,S;EAAAE,gB;EAAAA,4B;EAAAA,yD;EAAAA,iB;;;;;;CAAA,4C;EAAAC,qD;EACLA,wK;EACAA,sG;;;;;;;;QAQK,yB,CAAmCC,G;EAAnCF,gB;EAAAA,4B;EAAAA,4E;EAAAA,iB;;;;;;;CAAA,4D,CAAmCE,G;EACxCD,oD;EACAA,qC;;;;;;;;QASQ,0C,CAAcJ,O;EAAdG,gB;EAAAA,4B;EAAAA,iG;EAAAA,iB;;;;;;;CAAA,6E,CAAcH,O;EAAdI,qD;EACRA,wE;EACAA,8D;;;;;;;;CAUyB,6D,CAA2BE,O;EACpDC,8J;;;;;;CAQY,U;EACZC,6E;;;;;;CAQU,0B,CAAoCH,G;EAC9CI,4E;;;;;;CAQU,gD,CAAqCJ,G;EAC/CI,gM;;;;;;CAGmB,0D;EACnBC,+K;;;;;QA9FS,O;EAAAC,wB;EAAAA,qB;EAAAA,iB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAEX;MAAoB,wDAApB;",
+"lineCount":131,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;MA6Ca,K;;CAAA,W;EAAAA,Q;;;QAaS,yC,eAAaC,O;EAAbC,gB;EAElBA,8J;EAEAA,IAAMC,KAAND,6D;EAGAA,qB;EACAA,6E;EAEAA,a;;;;QAMK,S;EAAAE,gB;EAAAA,4B;EAAAA,yD;EAAAA,iB;;;;CAAA,4C;EAAAC,qD;EACLA,wK;EACAA,sG;;;;QAQK,yB,gBAAmCC,G;EAAnCF,gB;EAAAA,4B;EAAAA,4E;EAAAA,iB;;;;CAAA,4D,gBAAmCE,G;EACxCD,oD;EACAA,qC;;;;QASQ,0C,eAAcJ,O;EAAdG,gB;EAAAA,4B;EAAAA,iG;EAAAA,iB;;;;CAAA,6E,eAAcH,O;EAAdI,qD;EACRA,wE;EACAA,8D;;;CAUyB,6D,oBAA2BE,O;EACpDC,8J;;;CAQY,U;EACZC,6E;;;CAQU,0B,gBAAoCH,G;EAC9CI,4E;;;CAQU,gD,gBAAqCJ,G;EAC/CI,gM;;;CAGmB,0D;EACnBC,8K;;;QA9FS,O;EAAAC,wB;EAAAA,qB;EAAAA,iB;;;;;;;;;;;;;;;;;;;;;;;;AAEX;MAAoB,wDAApB;",
 "sources":["Frame.java"],
 "names":["org.gwtproject.user.client.ui.Frame.<synthetic: ctor_js>","element","org.gwtproject.user.client.ui.Frame.wrap","frame","org.gwtproject.user.client.ui.Frame.<synthetic: ctor_create>","org.gwtproject.user.client.ui.Frame.<init>","url","handler","org.gwtproject.user.client.ui.Frame.addLoadHandler","org.gwtproject.user.client.ui.Frame.getUrl","org.gwtproject.user.client.ui.Frame.setUrl","org.gwtproject.user.client.ui.Frame.getFrameElement","org.gwtproject.user.client.ui.Frame.<clinit>"]
 }

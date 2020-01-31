@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasAnimation.impl.java.js",
-"lineCount":26,
-"mappings":"A;;;;;;;MAqBiB,Y;;;;;;CAIP,sB;;;;;;CAOH,8B,CAA4BA,M;;;;QAXlB,O;EAAAC,+B;EAAAA;",
+"lineCount":16,
+"mappings":"A;;;;;;;MAqBiB,Y;;CAIP,sB;;CAOH,8B,gBAA4BA,M;;QAXlB,O;EAAAC,+B;EAAAA;",
 "sources":["HasAnimation.java"],
 "names":["enable","org.gwtproject.user.client.ui.HasAnimation.<clinit>"]
 }

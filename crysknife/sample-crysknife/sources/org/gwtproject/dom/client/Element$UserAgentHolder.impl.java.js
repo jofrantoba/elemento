@@ -6,54 +6,36 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 
 class UserAgentHolder extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!UserAgentHolder}
-  * @public
-  */
+ /** @return {!UserAgentHolder} */
  static $create__() {
   let $instance = new UserAgentHolder();
   $instance.$ctor__org_gwtproject_dom_client_Element_UserAgentHolder__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_dom_client_Element_UserAgentHolder__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  static get f_IS_SAFARI__org_gwtproject_dom_client_Element_UserAgentHolder_() {
   return (UserAgentHolder.$clinit(), UserAgentHolder.$f_IS_SAFARI__org_gwtproject_dom_client_Element_UserAgentHolder_);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   UserAgentHolder.$clinit = () =>{};
   UserAgentHolder.$loadModules();
   j_l_Object.$clinit();
   UserAgentHolder.$f_IS_SAFARI__org_gwtproject_dom_client_Element_UserAgentHolder_ = $Equality.$same("safari", $Util.$getDefine("user.agent"));
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof UserAgentHolder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
  }
@@ -61,7 +43,7 @@ class UserAgentHolder extends j_l_Object {
 }
 $Util.$setClassMetadata(UserAgentHolder, 'org.gwtproject.dom.client.Element$UserAgentHolder');
 
-/** @private {boolean} */
+/**@private {boolean}*/
 UserAgentHolder.$f_IS_SAFARI__org_gwtproject_dom_client_Element_UserAgentHolder_ = false;
 
 /* NATIVE.JS EPILOG */

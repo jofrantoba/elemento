@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"AlternateMessageSelector.impl.java.js",
-"lineCount":77,
-"mappings":"A;;;;;;;;;;MAqBiB,wB;;;;;;;CAqGP,oC,CAAwBA,I;;;;;;QArGjB,M;EAAAC,mC;EAAAA,8B;;;;;;QA2Ff,qE;EAAAC,yI;;;;;QA3Fe,O;EAAAC,2C;EAAAA,wC;EA2FfA,kS;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAzFA;yBAGO,sEAHP,W;AAFe;;",
+"lineCount":52,
+"mappings":"A;;;;;;;;;;MAqBiB,wB;;CAqGP,oC,gBAAwBA,I;;QArGjB,M;EAAAC,mC;EAAAA,8B;;;QA2Ff,qE;EAAAC,yI;;;QA3Fe,O;EAAAC,2C;EAAAA,wC;EA2FfA,kS;;;;;;;;;;;;;;;;;;;;;;AAzFA;yBAGO,sEAHP,W;AAFe;;",
 "sources":["AlternateMessageSelector.java"],
 "names":["form","org.gwtproject.i18n.shared.AlternateMessageSelector.<synthetic: adapt_lambda>","org.gwtproject.i18n.shared.AlternateMessageSelector.<synthetic: getter>","org.gwtproject.i18n.shared.AlternateMessageSelector.<clinit>"]
 }

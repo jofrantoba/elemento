@@ -14,53 +14,35 @@ let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
 
 class ResponseImpl extends Response {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {XMLHttpRequest} */
+  /**@type {XMLHttpRequest}*/
   this.f_xmlHttpRequest__org_gwtproject_http_client_ResponseImpl_;
  }
- /**
-  * @param {XMLHttpRequest} xmlHttpRequest
-  * @return {!ResponseImpl}
-  * @public
-  */
- static $create__elemental2_dom_XMLHttpRequest(xmlHttpRequest) {
+ /** @return {!ResponseImpl} */
+ static $create__elemental2_dom_XMLHttpRequest(/** XMLHttpRequest */ xmlHttpRequest) {
   ResponseImpl.$clinit();
   let $instance = new ResponseImpl();
   $instance.$ctor__org_gwtproject_http_client_ResponseImpl__elemental2_dom_XMLHttpRequest(xmlHttpRequest);
   return $instance;
  }
- /**
-  * @param {XMLHttpRequest} xmlHttpRequest
-  * @public
-  */
- $ctor__org_gwtproject_http_client_ResponseImpl__elemental2_dom_XMLHttpRequest(xmlHttpRequest) {
+ 
+ $ctor__org_gwtproject_http_client_ResponseImpl__elemental2_dom_XMLHttpRequest(/** XMLHttpRequest */ xmlHttpRequest) {
   this.$ctor__org_gwtproject_http_client_Response__();
   this.f_xmlHttpRequest__org_gwtproject_http_client_ResponseImpl_ = xmlHttpRequest;
   $Asserts.$assert(this.m_isResponseReady__());
  }
- /**
-  * @override
-  * @param {?string} header
-  * @return {?string}
-  * @public
-  */
- m_getHeader__java_lang_String(header) {
+ /** @override @return {?string} */
+ m_getHeader__java_lang_String(/** ?string */ header) {
   StringValidator.m_throwIfEmptyOrNull__java_lang_String__java_lang_String("header", header);
   return this.f_xmlHttpRequest__org_gwtproject_http_client_ResponseImpl_.getResponseHeader(header);
  }
- /**
-  * @override
-  * @return {Array<Header>}
-  * @public
-  */
+ /** @override @return {Array<Header>} */
  m_getHeaders__() {
   let allHeaders = this.m_getHeadersAsString__();
   let unparsedHeaders = j_l_String.m_split__java_lang_String__java_lang_String(allHeaders, "\n");
-  let parsedHeaders = /**@type {!ArrayList<Header>} */ (ArrayList.$create__());
+  let parsedHeaders = /**@type {!ArrayList<Header>}*/ (ArrayList.$create__());
   for (let $array = unparsedHeaders, $index = 0; $index < $array.length; $index++) {
    let unparsedHeader = $array[$index];
    if ($Equality.$same(unparsedHeader, null) || j_l_String.m_isEmpty__java_lang_String(j_l_String.m_trim__java_lang_String(unparsedHeader))) {
@@ -75,67 +57,40 @@ class ResponseImpl extends Response {
    let header = $1.$create__org_gwtproject_http_client_ResponseImpl__java_lang_String__java_lang_String(this, name, value);
    parsedHeaders.add(header);
   }
-  return /**@type {Array<Header>} */ ($Arrays.$castTo(parsedHeaders.m_toArray__arrayOf_java_lang_Object(/**@type {!Array<Header>} */ ($Arrays.$create([parsedHeaders.size()], Header))), Header, 1));
+  return /**@type {Array<Header>}*/ ($Arrays.$castTo(parsedHeaders.m_toArray__arrayOf_java_lang_Object(/**@type {!Array<Header>}*/ ($Arrays.$create([parsedHeaders.size()], Header))), Header, 1));
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getHeadersAsString__() {
   let headers = this.f_xmlHttpRequest__org_gwtproject_http_client_ResponseImpl_.getAllResponseHeaders();
   return !$Equality.$same(headers, null) ? headers : "";
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getStatusCode__() {
   return this.f_xmlHttpRequest__org_gwtproject_http_client_ResponseImpl_.status;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getStatusText__() {
   return this.f_xmlHttpRequest__org_gwtproject_http_client_ResponseImpl_.statusText;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getText__() {
   return this.f_xmlHttpRequest__org_gwtproject_http_client_ResponseImpl_.responseText;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isResponseReady__() {
   return this.f_xmlHttpRequest__org_gwtproject_http_client_ResponseImpl_.readyState == XMLHttpRequest.DONE;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ResponseImpl.$clinit = () =>{};
   ResponseImpl.$loadModules();
   Response.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ResponseImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   ArrayList = goog.module.get('java.util.ArrayList$impl');

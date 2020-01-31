@@ -21,114 +21,68 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @extends {Enum<Unit>}
   */
 class Unit extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_dom_style_shared_Unit__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_dom_style_shared_Unit__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getType__() {}
- /**
-  * @param {string} name
-  * @return {!Unit}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!Unit} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   Unit.$clinit();
   if ($Equality.$same(Unit.f_namesToValuesMap__org_gwtproject_dom_style_shared_Unit_, null)) {
    Unit.f_namesToValuesMap__org_gwtproject_dom_style_shared_Unit_ = $Enums.createMapFromValues(Unit.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, Unit.f_namesToValuesMap__org_gwtproject_dom_style_shared_Unit_);
  }
- /**
-  * @return {!Array<!Unit>}
-  * @public
-  */
+ /** @return {!Array<!Unit>} */
  static m_values__() {
   Unit.$clinit();
-  return /**@type {!Array<Unit>} */ ($Arrays.$init([Unit.$f_PX__org_gwtproject_dom_style_shared_Unit, Unit.$f_PCT__org_gwtproject_dom_style_shared_Unit, Unit.$f_EM__org_gwtproject_dom_style_shared_Unit, Unit.$f_EX__org_gwtproject_dom_style_shared_Unit, Unit.$f_PT__org_gwtproject_dom_style_shared_Unit, Unit.$f_PC__org_gwtproject_dom_style_shared_Unit, Unit.$f_IN__org_gwtproject_dom_style_shared_Unit, Unit.$f_CM__org_gwtproject_dom_style_shared_Unit, Unit.$f_MM__org_gwtproject_dom_style_shared_Unit], Unit));
+  return /**@type {!Array<Unit>}*/ ($Arrays.$init([Unit.$f_PX__org_gwtproject_dom_style_shared_Unit, Unit.$f_PCT__org_gwtproject_dom_style_shared_Unit, Unit.$f_EM__org_gwtproject_dom_style_shared_Unit, Unit.$f_EX__org_gwtproject_dom_style_shared_Unit, Unit.$f_PT__org_gwtproject_dom_style_shared_Unit, Unit.$f_PC__org_gwtproject_dom_style_shared_Unit, Unit.$f_IN__org_gwtproject_dom_style_shared_Unit, Unit.$f_CM__org_gwtproject_dom_style_shared_Unit, Unit.$f_MM__org_gwtproject_dom_style_shared_Unit], Unit));
  }
- /**
-  * @return {!Unit}
-  * @public
-  */
+ /** @return {!Unit} */
  static get f_PX__org_gwtproject_dom_style_shared_Unit() {
   return (Unit.$clinit(), Unit.$f_PX__org_gwtproject_dom_style_shared_Unit);
  }
- /**
-  * @return {!Unit}
-  * @public
-  */
+ /** @return {!Unit} */
  static get f_PCT__org_gwtproject_dom_style_shared_Unit() {
   return (Unit.$clinit(), Unit.$f_PCT__org_gwtproject_dom_style_shared_Unit);
  }
- /**
-  * @return {!Unit}
-  * @public
-  */
+ /** @return {!Unit} */
  static get f_EM__org_gwtproject_dom_style_shared_Unit() {
   return (Unit.$clinit(), Unit.$f_EM__org_gwtproject_dom_style_shared_Unit);
  }
- /**
-  * @return {!Unit}
-  * @public
-  */
+ /** @return {!Unit} */
  static get f_EX__org_gwtproject_dom_style_shared_Unit() {
   return (Unit.$clinit(), Unit.$f_EX__org_gwtproject_dom_style_shared_Unit);
  }
- /**
-  * @return {!Unit}
-  * @public
-  */
+ /** @return {!Unit} */
  static get f_PT__org_gwtproject_dom_style_shared_Unit() {
   return (Unit.$clinit(), Unit.$f_PT__org_gwtproject_dom_style_shared_Unit);
  }
- /**
-  * @return {!Unit}
-  * @public
-  */
+ /** @return {!Unit} */
  static get f_PC__org_gwtproject_dom_style_shared_Unit() {
   return (Unit.$clinit(), Unit.$f_PC__org_gwtproject_dom_style_shared_Unit);
  }
- /**
-  * @return {!Unit}
-  * @public
-  */
+ /** @return {!Unit} */
  static get f_IN__org_gwtproject_dom_style_shared_Unit() {
   return (Unit.$clinit(), Unit.$f_IN__org_gwtproject_dom_style_shared_Unit);
  }
- /**
-  * @return {!Unit}
-  * @public
-  */
+ /** @return {!Unit} */
  static get f_CM__org_gwtproject_dom_style_shared_Unit() {
   return (Unit.$clinit(), Unit.$f_CM__org_gwtproject_dom_style_shared_Unit);
  }
- /**
-  * @return {!Unit}
-  * @public
-  */
+ /** @return {!Unit} */
  static get f_MM__org_gwtproject_dom_style_shared_Unit() {
   return (Unit.$clinit(), Unit.$f_MM__org_gwtproject_dom_style_shared_Unit);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Unit.$clinit = () =>{};
   Unit.$loadModules();
@@ -144,17 +98,11 @@ class Unit extends Enum {
   Unit.$f_MM__org_gwtproject_dom_style_shared_Unit = $9.$create__java_lang_String__int($Util.$makeEnumName("MM"), Unit.$ordinal$f_MM__org_gwtproject_dom_style_shared_Unit);
   Unit.f_namesToValuesMap__org_gwtproject_dom_style_shared_Unit_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Unit;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.dom.style.shared.Unit.$1$impl');
@@ -173,43 +121,43 @@ class Unit extends Enum {
 }
 $Util.$setClassMetadataForEnum(Unit, 'org.gwtproject.dom.style.shared.Unit');
 
-/** @private {!Unit} */
+/**@private {!Unit}*/
 Unit.$f_PX__org_gwtproject_dom_style_shared_Unit;
-/** @private {!Unit} */
+/**@private {!Unit}*/
 Unit.$f_PCT__org_gwtproject_dom_style_shared_Unit;
-/** @private {!Unit} */
+/**@private {!Unit}*/
 Unit.$f_EM__org_gwtproject_dom_style_shared_Unit;
-/** @private {!Unit} */
+/**@private {!Unit}*/
 Unit.$f_EX__org_gwtproject_dom_style_shared_Unit;
-/** @private {!Unit} */
+/**@private {!Unit}*/
 Unit.$f_PT__org_gwtproject_dom_style_shared_Unit;
-/** @private {!Unit} */
+/**@private {!Unit}*/
 Unit.$f_PC__org_gwtproject_dom_style_shared_Unit;
-/** @private {!Unit} */
+/**@private {!Unit}*/
 Unit.$f_IN__org_gwtproject_dom_style_shared_Unit;
-/** @private {!Unit} */
+/**@private {!Unit}*/
 Unit.$f_CM__org_gwtproject_dom_style_shared_Unit;
-/** @private {!Unit} */
+/**@private {!Unit}*/
 Unit.$f_MM__org_gwtproject_dom_style_shared_Unit;
-/** @public {Map<?string, !Unit>} */
+/**@type {Map<?string, !Unit>}*/
 Unit.f_namesToValuesMap__org_gwtproject_dom_style_shared_Unit_;
-/** @public {number} @const */
+/**@const {number}*/
 Unit.$ordinal$f_PX__org_gwtproject_dom_style_shared_Unit = 0;
-/** @public {number} @const */
+/**@const {number}*/
 Unit.$ordinal$f_PCT__org_gwtproject_dom_style_shared_Unit = 1;
-/** @public {number} @const */
+/**@const {number}*/
 Unit.$ordinal$f_EM__org_gwtproject_dom_style_shared_Unit = 2;
-/** @public {number} @const */
+/**@const {number}*/
 Unit.$ordinal$f_EX__org_gwtproject_dom_style_shared_Unit = 3;
-/** @public {number} @const */
+/**@const {number}*/
 Unit.$ordinal$f_PT__org_gwtproject_dom_style_shared_Unit = 4;
-/** @public {number} @const */
+/**@const {number}*/
 Unit.$ordinal$f_PC__org_gwtproject_dom_style_shared_Unit = 5;
-/** @public {number} @const */
+/**@const {number}*/
 Unit.$ordinal$f_IN__org_gwtproject_dom_style_shared_Unit = 6;
-/** @public {number} @const */
+/**@const {number}*/
 Unit.$ordinal$f_CM__org_gwtproject_dom_style_shared_Unit = 7;
-/** @public {number} @const */
+/**@const {number}*/
 Unit.$ordinal$f_MM__org_gwtproject_dom_style_shared_Unit = 8;
 
 exports = Unit; 

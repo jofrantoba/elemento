@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Editor$Path.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;MAoDoB,I;;;;;;CAChB,S;;;;QADgB,O;EAAAA,uB;EAAAA;",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MAoDoB,I;;CAChB,S;;QADgB,O;EAAAA,uB;EAAAA;",
 "sources":["Editor.java"],
 "names":["org.gwtproject.editor.client.Editor$Path.<clinit>"]
 }

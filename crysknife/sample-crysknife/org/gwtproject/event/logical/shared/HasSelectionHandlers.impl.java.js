@@ -12,42 +12,24 @@ let HandlerRegistration = goog.forwardDeclare('org.gwtproject.event.shared.Handl
  * @extends {HasHandlers}
  */
 class HasSelectionHandlers {
- /**
-  * @abstract
-  * @param {SelectionHandler<T>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addSelectionHandler__org_gwtproject_event_logical_shared_SelectionHandler(handler) {}
- /**
-  * @public
-  */
+ /** @abstract @return {HandlerRegistration} */
+ m_addSelectionHandler__org_gwtproject_event_logical_shared_SelectionHandler(/** SelectionHandler<T> */ handler) {}
+ 
  static $clinit() {
   HasSelectionHandlers.$clinit = () =>{};
   HasSelectionHandlers.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasHandlers.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_logical_shared_HasSelectionHandlers = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasHandlers.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_logical_shared_HasSelectionHandlers = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_logical_shared_HasSelectionHandlers;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

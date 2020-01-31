@@ -23,115 +23,68 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @implements {HasCssName}
   */
 class ListStyleType extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_dom_style_shared_ListStyleType__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_dom_style_shared_ListStyleType__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @abstract
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @override @return {?string} */
  m_getCssName__() {}
- /**
-  * @param {string} name
-  * @return {!ListStyleType}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!ListStyleType} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   ListStyleType.$clinit();
   if ($Equality.$same(ListStyleType.f_namesToValuesMap__org_gwtproject_dom_style_shared_ListStyleType_, null)) {
    ListStyleType.f_namesToValuesMap__org_gwtproject_dom_style_shared_ListStyleType_ = $Enums.createMapFromValues(ListStyleType.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, ListStyleType.f_namesToValuesMap__org_gwtproject_dom_style_shared_ListStyleType_);
  }
- /**
-  * @return {!Array<!ListStyleType>}
-  * @public
-  */
+ /** @return {!Array<!ListStyleType>} */
  static m_values__() {
   ListStyleType.$clinit();
-  return /**@type {!Array<ListStyleType>} */ ($Arrays.$init([ListStyleType.$f_NONE__org_gwtproject_dom_style_shared_ListStyleType, ListStyleType.$f_DISC__org_gwtproject_dom_style_shared_ListStyleType, ListStyleType.$f_CIRCLE__org_gwtproject_dom_style_shared_ListStyleType, ListStyleType.$f_SQUARE__org_gwtproject_dom_style_shared_ListStyleType, ListStyleType.$f_DECIMAL__org_gwtproject_dom_style_shared_ListStyleType, ListStyleType.$f_LOWER_ALPHA__org_gwtproject_dom_style_shared_ListStyleType, ListStyleType.$f_UPPER_ALPHA__org_gwtproject_dom_style_shared_ListStyleType, ListStyleType.$f_LOWER_ROMAN__org_gwtproject_dom_style_shared_ListStyleType, ListStyleType.$f_UPPER_ROMAN__org_gwtproject_dom_style_shared_ListStyleType], ListStyleType));
+  return /**@type {!Array<ListStyleType>}*/ ($Arrays.$init([ListStyleType.$f_NONE__org_gwtproject_dom_style_shared_ListStyleType, ListStyleType.$f_DISC__org_gwtproject_dom_style_shared_ListStyleType, ListStyleType.$f_CIRCLE__org_gwtproject_dom_style_shared_ListStyleType, ListStyleType.$f_SQUARE__org_gwtproject_dom_style_shared_ListStyleType, ListStyleType.$f_DECIMAL__org_gwtproject_dom_style_shared_ListStyleType, ListStyleType.$f_LOWER_ALPHA__org_gwtproject_dom_style_shared_ListStyleType, ListStyleType.$f_UPPER_ALPHA__org_gwtproject_dom_style_shared_ListStyleType, ListStyleType.$f_LOWER_ROMAN__org_gwtproject_dom_style_shared_ListStyleType, ListStyleType.$f_UPPER_ROMAN__org_gwtproject_dom_style_shared_ListStyleType], ListStyleType));
  }
- /**
-  * @return {!ListStyleType}
-  * @public
-  */
+ /** @return {!ListStyleType} */
  static get f_NONE__org_gwtproject_dom_style_shared_ListStyleType() {
   return (ListStyleType.$clinit(), ListStyleType.$f_NONE__org_gwtproject_dom_style_shared_ListStyleType);
  }
- /**
-  * @return {!ListStyleType}
-  * @public
-  */
+ /** @return {!ListStyleType} */
  static get f_DISC__org_gwtproject_dom_style_shared_ListStyleType() {
   return (ListStyleType.$clinit(), ListStyleType.$f_DISC__org_gwtproject_dom_style_shared_ListStyleType);
  }
- /**
-  * @return {!ListStyleType}
-  * @public
-  */
+ /** @return {!ListStyleType} */
  static get f_CIRCLE__org_gwtproject_dom_style_shared_ListStyleType() {
   return (ListStyleType.$clinit(), ListStyleType.$f_CIRCLE__org_gwtproject_dom_style_shared_ListStyleType);
  }
- /**
-  * @return {!ListStyleType}
-  * @public
-  */
+ /** @return {!ListStyleType} */
  static get f_SQUARE__org_gwtproject_dom_style_shared_ListStyleType() {
   return (ListStyleType.$clinit(), ListStyleType.$f_SQUARE__org_gwtproject_dom_style_shared_ListStyleType);
  }
- /**
-  * @return {!ListStyleType}
-  * @public
-  */
+ /** @return {!ListStyleType} */
  static get f_DECIMAL__org_gwtproject_dom_style_shared_ListStyleType() {
   return (ListStyleType.$clinit(), ListStyleType.$f_DECIMAL__org_gwtproject_dom_style_shared_ListStyleType);
  }
- /**
-  * @return {!ListStyleType}
-  * @public
-  */
+ /** @return {!ListStyleType} */
  static get f_LOWER_ALPHA__org_gwtproject_dom_style_shared_ListStyleType() {
   return (ListStyleType.$clinit(), ListStyleType.$f_LOWER_ALPHA__org_gwtproject_dom_style_shared_ListStyleType);
  }
- /**
-  * @return {!ListStyleType}
-  * @public
-  */
+ /** @return {!ListStyleType} */
  static get f_UPPER_ALPHA__org_gwtproject_dom_style_shared_ListStyleType() {
   return (ListStyleType.$clinit(), ListStyleType.$f_UPPER_ALPHA__org_gwtproject_dom_style_shared_ListStyleType);
  }
- /**
-  * @return {!ListStyleType}
-  * @public
-  */
+ /** @return {!ListStyleType} */
  static get f_LOWER_ROMAN__org_gwtproject_dom_style_shared_ListStyleType() {
   return (ListStyleType.$clinit(), ListStyleType.$f_LOWER_ROMAN__org_gwtproject_dom_style_shared_ListStyleType);
  }
- /**
-  * @return {!ListStyleType}
-  * @public
-  */
+ /** @return {!ListStyleType} */
  static get f_UPPER_ROMAN__org_gwtproject_dom_style_shared_ListStyleType() {
   return (ListStyleType.$clinit(), ListStyleType.$f_UPPER_ROMAN__org_gwtproject_dom_style_shared_ListStyleType);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ListStyleType.$clinit = () =>{};
   ListStyleType.$loadModules();
@@ -147,17 +100,11 @@ class ListStyleType extends Enum {
   ListStyleType.$f_UPPER_ROMAN__org_gwtproject_dom_style_shared_ListStyleType = $9.$create__java_lang_String__int($Util.$makeEnumName("UPPER_ROMAN"), ListStyleType.$ordinal$f_UPPER_ROMAN__org_gwtproject_dom_style_shared_ListStyleType);
   ListStyleType.f_namesToValuesMap__org_gwtproject_dom_style_shared_ListStyleType_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ListStyleType;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.dom.style.shared.ListStyleType.$1$impl');
@@ -178,43 +125,43 @@ $Util.$setClassMetadataForEnum(ListStyleType, 'org.gwtproject.dom.style.shared.L
 
 HasCssName.$markImplementor(ListStyleType);
 
-/** @private {!ListStyleType} */
+/**@private {!ListStyleType}*/
 ListStyleType.$f_NONE__org_gwtproject_dom_style_shared_ListStyleType;
-/** @private {!ListStyleType} */
+/**@private {!ListStyleType}*/
 ListStyleType.$f_DISC__org_gwtproject_dom_style_shared_ListStyleType;
-/** @private {!ListStyleType} */
+/**@private {!ListStyleType}*/
 ListStyleType.$f_CIRCLE__org_gwtproject_dom_style_shared_ListStyleType;
-/** @private {!ListStyleType} */
+/**@private {!ListStyleType}*/
 ListStyleType.$f_SQUARE__org_gwtproject_dom_style_shared_ListStyleType;
-/** @private {!ListStyleType} */
+/**@private {!ListStyleType}*/
 ListStyleType.$f_DECIMAL__org_gwtproject_dom_style_shared_ListStyleType;
-/** @private {!ListStyleType} */
+/**@private {!ListStyleType}*/
 ListStyleType.$f_LOWER_ALPHA__org_gwtproject_dom_style_shared_ListStyleType;
-/** @private {!ListStyleType} */
+/**@private {!ListStyleType}*/
 ListStyleType.$f_UPPER_ALPHA__org_gwtproject_dom_style_shared_ListStyleType;
-/** @private {!ListStyleType} */
+/**@private {!ListStyleType}*/
 ListStyleType.$f_LOWER_ROMAN__org_gwtproject_dom_style_shared_ListStyleType;
-/** @private {!ListStyleType} */
+/**@private {!ListStyleType}*/
 ListStyleType.$f_UPPER_ROMAN__org_gwtproject_dom_style_shared_ListStyleType;
-/** @public {Map<?string, !ListStyleType>} */
+/**@type {Map<?string, !ListStyleType>}*/
 ListStyleType.f_namesToValuesMap__org_gwtproject_dom_style_shared_ListStyleType_;
-/** @public {number} @const */
+/**@const {number}*/
 ListStyleType.$ordinal$f_NONE__org_gwtproject_dom_style_shared_ListStyleType = 0;
-/** @public {number} @const */
+/**@const {number}*/
 ListStyleType.$ordinal$f_DISC__org_gwtproject_dom_style_shared_ListStyleType = 1;
-/** @public {number} @const */
+/**@const {number}*/
 ListStyleType.$ordinal$f_CIRCLE__org_gwtproject_dom_style_shared_ListStyleType = 2;
-/** @public {number} @const */
+/**@const {number}*/
 ListStyleType.$ordinal$f_SQUARE__org_gwtproject_dom_style_shared_ListStyleType = 3;
-/** @public {number} @const */
+/**@const {number}*/
 ListStyleType.$ordinal$f_DECIMAL__org_gwtproject_dom_style_shared_ListStyleType = 4;
-/** @public {number} @const */
+/**@const {number}*/
 ListStyleType.$ordinal$f_LOWER_ALPHA__org_gwtproject_dom_style_shared_ListStyleType = 5;
-/** @public {number} @const */
+/**@const {number}*/
 ListStyleType.$ordinal$f_UPPER_ALPHA__org_gwtproject_dom_style_shared_ListStyleType = 6;
-/** @public {number} @const */
+/**@const {number}*/
 ListStyleType.$ordinal$f_LOWER_ROMAN__org_gwtproject_dom_style_shared_ListStyleType = 7;
-/** @public {number} @const */
+/**@const {number}*/
 ListStyleType.$ordinal$f_UPPER_ROMAN__org_gwtproject_dom_style_shared_ListStyleType = 8;
 
 exports = ListStyleType; 

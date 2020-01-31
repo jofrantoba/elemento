@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"FormPanel$IFrameTemplate$$LambdaAdaptor.impl.java.js",
-"lineCount":47,
-"mappings":"A;;;;;;;;;;;MAiNY,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qF;EAAAA,0J;;;;;;CAAA,gJ;EAAAC,iC;EAAAA,wF;;;;;;;CAAA,uB;EAAAC,iD;EAAAA,yH;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;;MAiNY,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qF;EAAAA,0J;;;CAAA,gJ;EAAAC,iC;EAAAA,wF;;;CAAA,uB;EAAAC,iD;EAAAA,yH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["FormPanel.java"],
 "names":["org.gwtproject.user.client.ui.FormPanel$IFrameTemplate$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.client.ui.FormPanel$IFrameTemplate$$LambdaAdaptor.<init>","org.gwtproject.user.client.ui.FormPanel$IFrameTemplate$$LambdaAdaptor.get","org.gwtproject.user.client.ui.FormPanel$IFrameTemplate$$LambdaAdaptor.<clinit>"]
 }

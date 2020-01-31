@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Templated.impl.java.js",
-"lineCount":28,
-"mappings":"A;;;;;;;;;MAakB,S;;;;;;CAEd,S;;;;;;CAEA,c;;;;QAJc,O;EAAAA,4B;EAAAA;",
+"lineCount":18,
+"mappings":"A;;;;;;;;;MAakB,S;;CAEd,S;;CAEA,c;;QAJc,O;EAAAA,4B;EAAAA;",
 "sources":["Templated.java"],
 "names":["org.treblereel.gwt.crysknife.annotation.Templated.<clinit>"]
 }

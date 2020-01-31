@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellTree$Template.impl.java.js",
-"lineCount":82,
-"mappings":"A;;;;;;;;;;;;;;MA4cY,Q;;;;;;;;;CAIC,mH,CAAoBA,O,EAAoBC,S,EAAoBC,K;;;;;;QAJ7D,M;EAAAC,mB;EAAAA,8B;;;;;;QAER,qE;EAAAC,yG;;;;;QAFQ,O;EAAAC,2B;EAAAA,wB;EAERA,iH;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFQ;;",
+"lineCount":55,
+"mappings":"A;;;;;;;;;;;;;;MA4cY,Q;;CAIC,mH,gBAAoBA,O,oBAAoBC,S,kBAAoBC,K;;QAJ7D,M;EAAAC,mB;EAAAA,8B;;;QAER,qE;EAAAC,yG;;;QAFQ,O;EAAAC,2B;EAAAA,wB;EAERA,iH;;;;;;;;;;;;;;;;;;;;;;;AAFQ;;",
 "sources":["CellTree.java"],
 "names":["classes","cssLayout","image","org.gwtproject.user.cellview.client.CellTree$Template.<synthetic: adapt_lambda>","org.gwtproject.user.cellview.client.CellTree$Template.<synthetic: getter>","org.gwtproject.user.cellview.client.CellTree$Template.<clinit>"]
 }

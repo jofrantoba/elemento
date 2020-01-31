@@ -13,78 +13,47 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {SplitResult}
   */
 class NativeSplitResult extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Array<?string>} */
+  /**@type {Array<?string>}*/
   this.f_jsArray__org_gwtproject_regexp_client_NativeSplitResult_;
  }
- /**
-  * @param {Array<?string>} result
-  * @return {!NativeSplitResult}
-  * @public
-  */
- static $create__elemental2_core_JsArray(result) {
+ /** @return {!NativeSplitResult} */
+ static $create__elemental2_core_JsArray(/** Array<?string> */ result) {
   NativeSplitResult.$clinit();
   let $instance = new NativeSplitResult();
   $instance.$ctor__org_gwtproject_regexp_client_NativeSplitResult__elemental2_core_JsArray(result);
   return $instance;
  }
- /**
-  * @param {Array<?string>} result
-  * @public
-  */
- $ctor__org_gwtproject_regexp_client_NativeSplitResult__elemental2_core_JsArray(result) {
+ 
+ $ctor__org_gwtproject_regexp_client_NativeSplitResult__elemental2_core_JsArray(/** Array<?string> */ result) {
   this.$ctor__java_lang_Object__();
   this.f_jsArray__org_gwtproject_regexp_client_NativeSplitResult_ = result;
  }
- /**
-  * @override
-  * @param {number} index
-  * @return {?string}
-  * @public
-  */
- m_get__int(index) {
-  return /**@type {?string} */ ($Casts.$to($Overlay.m_getAt__$devirt__jsinterop_base_JsArrayLike__int(this.f_jsArray__org_gwtproject_regexp_client_NativeSplitResult_, index), j_l_String));
+ /** @override @return {?string} */
+ m_get__int(/** number */ index) {
+  return /**@type {?string}*/ ($Casts.$to($Overlay.m_getAt__$devirt__jsinterop_base_JsArrayLike__int(this.f_jsArray__org_gwtproject_regexp_client_NativeSplitResult_, index), j_l_String));
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_length__() {
   return this.f_jsArray__org_gwtproject_regexp_client_NativeSplitResult_.length;
  }
- /**
-  * @override
-  * @param {number} index
-  * @param {?string} value
-  * @public
-  */
- m_set__int__java_lang_String(index, value) {
+ /** @override */
+ m_set__int__java_lang_String(/** number */ index, /** ?string */ value) {
   $Overlay.m_setAt__$devirt__jsinterop_base_JsArrayLike__int__java_lang_Object(this.f_jsArray__org_gwtproject_regexp_client_NativeSplitResult_, index, value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NativeSplitResult.$clinit = () =>{};
   NativeSplitResult.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof NativeSplitResult;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Overlay = goog.module.get('jsinterop.base.JsArrayLike.$Overlay$impl');

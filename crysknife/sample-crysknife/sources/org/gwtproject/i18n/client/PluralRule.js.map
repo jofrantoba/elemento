@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"PluralRule.impl.java.js",
-"lineCount":29,
-"mappings":"A;;;;;;;;;MAuBiB,U;;;;;;CAqEF,e;;;;;;;CAWT,a,CAAWA,C;;;;QAhFA,O;EAAAC,6B;EAAAA;",
+"lineCount":18,
+"mappings":"A;;;;;;;;;MAuBiB,U;;CAqEF,e;;CAWT,a,eAAWA,C;;QAhFA,O;EAAAC,6B;EAAAA;",
 "sources":["PluralRule.java"],
 "names":["n","org.gwtproject.i18n.client.PluralRule.<clinit>"]
 }

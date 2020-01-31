@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasDataEditor$HasDataEditorSource.impl.java.js",
-"lineCount":106,
-"mappings":"A;;;;;;;;;;;;;;;;MA4Be,mB;;;;CAAA,W;EAAAA,Q;EAAAA;OACc,gFADdA,C;;;;;;;;QAGJ,2C,CAA+BC,I;EAA/BC,8B;EAAAA,0C;EAAAA,mI;EAAAA,iB;;;;;;CAAA,kH,CAA+BD,I;EAA/BE,mE;EACLA,6F;;;;;;;;CAIsB,a,CAAWC,K;EACjCC,6B;EACAA,sM;;;;;;;CAIwB,4B;EACxBC,kH;;;;;;CAIU,uD,CAA2BC,S;EAErCC,yK;EACAA,sN;;;;;;;CAIU,6D,CAA4BC,M,EAAYL,K;EAClDM,6B;EACAA,oI;;;;;;;;CA5BS,8C;EAAAF,mI;;;;;;;;;CAAA,oD;EAAAE,+I;;;;;QAAA,O;EAAAC,sC;EAAAA,mC;EAAAA;",
+"lineCount":69,
+"mappings":"A;;;;;;;;;;;;;;;;MA4Be,mB;;CAAA,W;EAAAA,Q;EAAAA;OACc,gFADdA,C;;;QAGJ,2C,mBAA+BC,I;EAA/BC,8B;EAAAA,0C;EAAAA,mI;EAAAA,iB;;;CAAA,kH,mBAA+BD,I;EAA/BE,mE;EACLA,6F;;;CAIsB,a,eAAWC,K;EACjCC,6B;EACAA,qM;;;CAIwB,4B;EACxBC,iH;;;CAIU,uD,2BAA2BC,S;EAErCC,wK;EACAA,sN;;;CAIU,6D,2BAA4BC,M,gBAAYL,K;EAClDM,6B;EACAA,mI;;;;CA5BS,8C;EAAAF,kI;;;;CAAA,oD;EAAAE,8I;;;QAAA,O;EAAAC,sC;EAAAA,mC;EAAAA;",
 "sources":["HasDataEditor.java"],
 "names":["org.gwtproject.editor.client.adapters.HasDataEditor$HasDataEditorSource.<synthetic: ctor_js>","data","org.gwtproject.editor.client.adapters.HasDataEditor$HasDataEditorSource.<synthetic: ctor_create>","org.gwtproject.editor.client.adapters.HasDataEditor$HasDataEditorSource.<init>","index","org.gwtproject.editor.client.adapters.HasDataEditor$HasDataEditorSource.create","org.gwtproject.editor.client.adapters.HasDataEditor$HasDataEditorSource.createEditorForTraversal","subEditor","org.gwtproject.editor.client.adapters.HasDataEditor$HasDataEditorSource.dispose","editor","org.gwtproject.editor.client.adapters.HasDataEditor$HasDataEditorSource.setIndex","org.gwtproject.editor.client.adapters.HasDataEditor$HasDataEditorSource.<clinit>"]
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellTable_BasicResourcesImpl$cellTableSelectedBackgroundInitializer.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;MAoEuB,sC;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,6D;EAAAA,6H;EAAAA,iB;;;;;CAAA,gH;EAAAC,iC;;;;;;QAIkC,O;EAAAC,iD;EACnDA,sI;;;;;QALiB,O;EAAAC,yD;EAAAA,sD;EAAAA,qB;EAEjBA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;MAoEuB,sC;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,6D;EAAAA,6H;EAAAA,iB;;;CAAA,gH;EAAAC,iC;;;QAIkC,O;EAAAC,iD;EACnDA,sI;;;QALiB,O;EAAAC,yD;EAAAA,sD;EAAAA,qB;EAEjBA;",
 "sources":["CellTable_BasicResourcesImpl.java"],
 "names":["org.gwtproject.user.cellview.client.CellTable_BasicResourcesImpl$cellTableSelectedBackgroundInitializer.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.CellTable_BasicResourcesImpl$cellTableSelectedBackgroundInitializer.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.CellTable_BasicResourcesImpl$cellTableSelectedBackgroundInitializer.<init>","org.gwtproject.user.cellview.client.CellTable_BasicResourcesImpl$cellTableSelectedBackgroundInitializer.get","org.gwtproject.user.cellview.client.CellTable_BasicResourcesImpl$cellTableSelectedBackgroundInitializer.<clinit>"]
 }

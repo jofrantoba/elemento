@@ -11,42 +11,24 @@ let HandlerRegistration = goog.forwardDeclare('org.gwtproject.event.shared.Handl
  * @extends {HasHandlers}
  */
 class HasLoseCaptureHandlers {
- /**
-  * @abstract
-  * @param {LoseCaptureHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addLoseCaptureHandler__org_gwtproject_event_dom_client_LoseCaptureHandler(handler) {}
- /**
-  * @public
-  */
+ /** @abstract @return {HandlerRegistration} */
+ m_addLoseCaptureHandler__org_gwtproject_event_dom_client_LoseCaptureHandler(/** LoseCaptureHandler */ handler) {}
+ 
  static $clinit() {
   HasLoseCaptureHandlers.$clinit = () =>{};
   HasLoseCaptureHandlers.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasHandlers.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_HasLoseCaptureHandlers = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasHandlers.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_HasLoseCaptureHandlers = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_HasLoseCaptureHandlers;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

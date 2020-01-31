@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"IsDriver.impl.java.js",
-"lineCount":28,
-"mappings":"A;;;;;;;;;;;;MA2BkB,Q;;;;;;QAAA,M;EAAAA,mB;EAAAA,8B;;;;;QAAA,O;EAAAC,2B;EAAAA;",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;;MA2BkB,Q;;QAAA,M;EAAAA,mB;EAAAA,8B;;;QAAA,O;EAAAC,2B;EAAAA;",
 "sources":["IsDriver.java"],
 "names":["org.gwtproject.editor.client.annotation.IsDriver.<synthetic: adapt_lambda>","org.gwtproject.editor.client.annotation.IsDriver.<clinit>"]
 }

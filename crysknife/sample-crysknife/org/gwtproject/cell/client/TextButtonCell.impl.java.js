@@ -10,69 +10,47 @@ let DefaultAppearance = goog.forwardDeclare('org.gwtproject.cell.client.TextButt
  * @extends {ButtonCellBase<?string>}
   */
 class TextButtonCell extends ButtonCellBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * Factory method corresponding to constructor 'TextButtonCell()'.
-  * @return {!TextButtonCell}
-  * @public
-  */
+ //Factory method corresponding to constructor 'TextButtonCell()'.
+ /** @return {!TextButtonCell} */
  static $create__() {
   TextButtonCell.$clinit();
   let $instance = new TextButtonCell();
   $instance.$ctor__org_gwtproject_cell_client_TextButtonCell__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'TextButtonCell()'.
-  * @public
-  */
+ //Initialization from constructor 'TextButtonCell()'.
+ 
  $ctor__org_gwtproject_cell_client_TextButtonCell__() {
   this.$ctor__org_gwtproject_cell_client_TextButtonCell__org_gwtproject_cell_client_TextButtonCell_Appearance(DefaultAppearance.$create__());
  }
- /**
-  * Factory method corresponding to constructor 'TextButtonCell(Appearance)'.
-  * @param {Appearance} appearance
-  * @return {!TextButtonCell}
-  * @public
-  */
- static $create__org_gwtproject_cell_client_TextButtonCell_Appearance(appearance) {
+ //Factory method corresponding to constructor 'TextButtonCell(Appearance)'.
+ /** @return {!TextButtonCell} */
+ static $create__org_gwtproject_cell_client_TextButtonCell_Appearance(/** Appearance */ appearance) {
   TextButtonCell.$clinit();
   let $instance = new TextButtonCell();
   $instance.$ctor__org_gwtproject_cell_client_TextButtonCell__org_gwtproject_cell_client_TextButtonCell_Appearance(appearance);
   return $instance;
  }
- /**
-  * Initialization from constructor 'TextButtonCell(Appearance)'.
-  * @param {Appearance} appearance
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_TextButtonCell__org_gwtproject_cell_client_TextButtonCell_Appearance(appearance) {
+ //Initialization from constructor 'TextButtonCell(Appearance)'.
+ 
+ $ctor__org_gwtproject_cell_client_TextButtonCell__org_gwtproject_cell_client_TextButtonCell_Appearance(/** Appearance */ appearance) {
   this.$ctor__org_gwtproject_cell_client_ButtonCellBase__org_gwtproject_cell_client_ButtonCellBase_Appearance(appearance);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TextButtonCell.$clinit = () =>{};
   TextButtonCell.$loadModules();
   ButtonCellBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TextButtonCell;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   DefaultAppearance = goog.module.get('org.gwtproject.cell.client.TextButtonCell.DefaultAppearance$impl');
  }

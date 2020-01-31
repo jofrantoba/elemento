@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"BidiUtils.impl.java.js",
-"lineCount":110,
-"mappings":"A;;;;;;;;;;MAuBa,S;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,oB;EAAAA,gC;EAAAA,0D;EAAAA,iB;;;;;CAAA,6C;EAAAC,iC;;;;;;;QA2B0B,0D,CAA8BC,I;EAA9BC,oB;EACnCA,IAAOC,gBAAPD,yK;EAEAA;GACEA,0EADFA;SAEOA;GACLA,0EADKA;G;EAIPA,8E;;;;;;;QAWiB,6G,CAA8BD,I,EAAgBG,S;EAA9CC,oB;EACjBA;;;KAEIA,mQAFJA;KAGIA,MAHJA;;;;KAOIA,mQAPJA;KAQIA,MARJA;;;;KAYIA;MAGEA,4LAHFA;MAZJA;KAiBIA,MAjBJA;;G;;;;;QAhDS,O;EAAAC,4B;EAAAA,yB;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;;;AAEX;UAG2B,yDAH3B,S;AAKA;UAI4B,+DAJ5B,S;AAMA;UAI4B,+DAJ5B;",
+"lineCount":87,
+"mappings":"A;;;;;;;;;;MAuBa,S;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,oB;EAAAA,gC;EAAAA,0D;EAAAA,iB;;;CAAA,6C;EAAAC,iC;;;QA2B0B,0D,eAA8BC,I;EAA9BC,oB;EACnCA,IAAOC,gBAAPD,yK;EAEAA;GACEA,0EADFA;SAEOA;GACLA,0EADKA;G;EAIPA,8E;;;QAWiB,6G,eAA8BD,I,mBAAgBG,S;EAA9CC,oB;EACjBA;;;KAEIA,mQAFJA;KAGIA,MAHJA;;;;KAOIA,mQAPJA;KAQIA,MARJA;;;;KAYIA;MAGEA,4LAHFA;MAZJA;KAiBIA,MAjBJA;;G;;;QAhDS,O;EAAAC,4B;EAAAA,yB;EAAAA,qB;;;;;;;;;;;;;;;;;AAEX;UAG2B,yDAH3B,S;AAKA;UAI4B,+DAJ5B,S;AAMA;UAI4B,+DAJ5B;",
 "sources":["BidiUtils.java"],
 "names":["org.gwtproject.i18n.client.BidiUtils.<synthetic: ctor_js>","org.gwtproject.i18n.client.BidiUtils.<synthetic: ctor_create>","org.gwtproject.i18n.client.BidiUtils.<init>","elem","org.gwtproject.i18n.client.BidiUtils.getDirectionOnElement","dirPropertyValue","direction","org.gwtproject.i18n.client.BidiUtils.setDirectionOnElement","org.gwtproject.i18n.client.BidiUtils.<clinit>"]
 }

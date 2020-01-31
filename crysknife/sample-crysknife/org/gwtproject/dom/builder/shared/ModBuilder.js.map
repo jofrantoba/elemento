@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ModBuilder.impl.java.js",
-"lineCount":39,
-"mappings":"A;;;;;;;;;;;MAuBiB,U;;;;;;;CAOJ,8C,CAAaA,I;;;;;;;CAOb,wB,CAAuBA,I;;;;;;;CAOvB,4B,CAAgBC,Q;;;;QArBZ,O;EAAAC,6B;EAAAA;",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;MAuBiB,U;;CAOJ,8C,gBAAaA,I;;CAOb,wB,gBAAuBA,I;;CAOvB,4B,gBAAgBC,Q;;QArBZ,O;EAAAC,6B;EAAAA;",
 "sources":["ModBuilder.java"],
 "names":["cite","dateTime","org.gwtproject.dom.builder.shared.ModBuilder.<clinit>"]
 }

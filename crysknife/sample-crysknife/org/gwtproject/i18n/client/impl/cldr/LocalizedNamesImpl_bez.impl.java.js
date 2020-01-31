@@ -7,40 +7,26 @@ let j_l_String = goog.forwardDeclare('java.lang.String$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 
 class LocalizedNamesImpl__bez extends LocalizedNamesImpl {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!LocalizedNamesImpl__bez}
-  * @public
-  */
+ /** @return {!LocalizedNamesImpl__bez} */
  static $create__() {
   LocalizedNamesImpl__bez.$clinit();
   let $instance = new LocalizedNamesImpl__bez();
   $instance.$ctor__org_gwtproject_i18n_client_impl_cldr_LocalizedNamesImpl_bez__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_i18n_client_impl_cldr_LocalizedNamesImpl_bez__() {
   this.$ctor__org_gwtproject_i18n_client_impl_cldr_LocalizedNamesImpl__();
  }
- /**
-  * @override
-  * @return {Array<?string>}
-  * @public
-  */
+ /** @override @return {Array<?string>} */
  m_loadSortedRegionCodes__() {
-  return /**@type {!Array<?string>} */ ($Arrays.$init(["AC", "AQ", "AX", "BL", "BQ", "BV", "CC", "CP", "CW", "CX", "DG", "EA", "EH", "EU", "EZ", "FO", "GG", "GS", "HK", "HM", "ZA", "AF", "IS", "AR", "AL", "DZ", "AW", "AM", "AD", "AO", "AI", "AG", "AT", "AU", "IE", "AZ", "BB", "BH", "BS", "BD", "BY", "BZ", "BM", "BJ", "BR", "BO", "BA", "BW", "BN", "BF", "MG", "BG", "BI", "BT", "TD", "CL", "CN", "DK", "DM", "EC", "SV", "ER", "EE", "AE", "FJ", "PH", "GA", "GM", "GH", "GW", "GQ", "GD", "GY", "GP", "GU", "GT", "GF", "HT", "ES", "HN", "HU", "IQ", "IN", "ID", "IL", "IT", "JM", "JP", "GI", "DJ", "GN", "GL", "GE", "KH", "CM", "CA", "QA", "KZ", "KE", "CV", "KI", "KG", "CI", "KP", "KR", "CO", "KM", "CG", "HR", "CR", "CU", "CY", "KW", "LA", "LU", "LV", "LB", "LS", "LR", "LY", "LI", "LT", "RE", "RO", "RW", "MW", "US", "MY", "ML", "MT", "MQ", "MK", "YT", "MX", "FM", "EG", "MV", "MD", "MU", "MR", "MA", "MC", "MN", "MS", "MZ", "MM", "NA", "NR", "NP", "NE", "NG", "NI", "NU", "NO", "NC", "NZ", "OM", "PK", "PY", "PW", "PA", "PG", "PE", "PN", "PL", "PF", "PR", "SM", "WS", "AS", "SH", "KN", "LC", "PM", "VC", "ST", "SA", "SN", "SC", "SL", "SY", "SG", "LK", "SK", "SI", "SO", "SD", "SR", "TH", "TW", "TJ", "TZ", "TL", "TG", "TK", "TO", "TT", "TN", "TV", "IR", "BE", "FR", "FI", "UG", "GR", "ET", "NL", "GB", "DE", "UA", "PT", "UY", "RU", "SZ", "SE", "CH", "TR", "TM", "UZ", "VU", "VA", "VE", "VN", "WF", "YE", "JO", "ZM", "ZW", "IC", "FK", "KY", "CK", "MP", "MH", "SB", "TC", "VG", "VI", "NF", "CF", "CZ", "CD", "DO", "IM", "JE", "ME", "MF", "MO", "QO", "RS", "SJ", "SS", "SX", "TA", "TF", "IO", "PS", "UM", "UN", "XA", "XB", "XK"], j_l_String));
+  return /**@type {!Array<?string>}*/ ($Arrays.$init(["AC", "AQ", "AX", "BL", "BQ", "BV", "CC", "CP", "CW", "CX", "DG", "EA", "EH", "EU", "EZ", "FO", "GG", "GS", "HK", "HM", "ZA", "AF", "IS", "AR", "AL", "DZ", "AW", "AM", "AD", "AO", "AI", "AG", "AT", "AU", "IE", "AZ", "BB", "BH", "BS", "BD", "BY", "BZ", "BM", "BJ", "BR", "BO", "BA", "BW", "BN", "BF", "MG", "BG", "BI", "BT", "TD", "CL", "CN", "DK", "DM", "EC", "SV", "ER", "EE", "AE", "FJ", "PH", "GA", "GM", "GH", "GW", "GQ", "GD", "GY", "GP", "GU", "GT", "GF", "HT", "ES", "HN", "HU", "IQ", "IN", "ID", "IL", "IT", "JM", "JP", "GI", "DJ", "GN", "GL", "GE", "KH", "CM", "CA", "QA", "KZ", "KE", "CV", "KI", "KG", "CI", "KP", "KR", "CO", "KM", "CG", "HR", "CR", "CU", "CY", "KW", "LA", "LU", "LV", "LB", "LS", "LR", "LY", "LI", "LT", "RE", "RO", "RW", "MW", "US", "MY", "ML", "MT", "MQ", "MK", "YT", "MX", "FM", "EG", "MV", "MD", "MU", "MR", "MA", "MC", "MN", "MS", "MZ", "MM", "NA", "NR", "NP", "NE", "NG", "NI", "NU", "NO", "NC", "NZ", "OM", "PK", "PY", "PW", "PA", "PG", "PE", "PN", "PL", "PF", "PR", "SM", "WS", "AS", "SH", "KN", "LC", "PM", "VC", "ST", "SA", "SN", "SC", "SL", "SY", "SG", "LK", "SK", "SI", "SO", "SD", "SR", "TH", "TW", "TJ", "TZ", "TL", "TG", "TK", "TO", "TT", "TN", "TV", "IR", "BE", "FR", "FI", "UG", "GR", "ET", "NL", "GB", "DE", "UA", "PT", "UY", "RU", "SZ", "SE", "CH", "TR", "TM", "UZ", "VU", "VA", "VE", "VN", "WF", "YE", "JO", "ZM", "ZW", "IC", "FK", "KY", "CK", "MP", "MH", "SB", "TC", "VG", "VI", "NF", "CF", "CZ", "CD", "DO", "IM", "JE", "ME", "MF", "MO", "QO", "RS", "SJ", "SS", "SX", "TA", "TF", "IO", "PS", "UM", "UN", "XA", "XB", "XK"], j_l_String));
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_loadNameMap__() {
   super.m_loadNameMap__();
   this.f_namesMap__org_gwtproject_i18n_client_DefaultLocalizedNamesBase.put("AD", "Huandola");
@@ -268,25 +254,17 @@ class LocalizedNamesImpl__bez extends LocalizedNamesImpl {
   this.f_namesMap__org_gwtproject_i18n_client_DefaultLocalizedNamesBase.put("ZM", "Huzambia");
   this.f_namesMap__org_gwtproject_i18n_client_DefaultLocalizedNamesBase.put("ZW", "Huzimbabwe");
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   LocalizedNamesImpl__bez.$clinit = () =>{};
   LocalizedNamesImpl__bez.$loadModules();
   LocalizedNamesImpl.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof LocalizedNamesImpl__bez;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');

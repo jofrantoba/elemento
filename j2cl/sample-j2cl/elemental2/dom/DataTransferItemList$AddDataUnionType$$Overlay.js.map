@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DataTransferItemList$AddDataUnionType$$Overlay.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;MA0BmB,yB;;;;;;QAE8B,sB,CAAUA,C;EAAVC,oC;EAC3CA,wD;;;;;;;QAIW,uE;EAAAC,oC;EACXA,wF;;;;;;;QAIa,yE;EAAAC,oC;EACbA,iD;;;;;;;QAIc,uE;EAAAC,oC;EACdA,wD;;;;;;;QAIc,yE;EAAAC,oC;EACdA,0D;;;;;QAvBa,O;EAAAC,4C;EAAAA;",
+"lineCount":39,
+"mappings":"A;;;;;;;;;MA0BmB,yB;;QAE8B,sB,UAAUA,C;EAAVC,oC;EAC3CA,uD;;;QAIW,uE;EAAAC,oC;EACXA,uF;;;QAIa,yE;EAAAC,oC;EACbA,iD;;;QAIc,uE;EAAAC,oC;EACdA,uD;;;QAIc,yE;EAAAC,oC;EACdA,yD;;;QAvBa,O;EAAAC,4C;EAAAA;",
 "sources":["DataTransferItemList.java"],
 "names":["o","elemental2.dom.DataTransferItemList$AddDataUnionType$$Overlay.of","elemental2.dom.DataTransferItemList$AddDataUnionType$$Overlay.asFile__$devirt","elemental2.dom.DataTransferItemList$AddDataUnionType$$Overlay.asString__$devirt","elemental2.dom.DataTransferItemList$AddDataUnionType$$Overlay.isFile__$devirt","elemental2.dom.DataTransferItemList$AddDataUnionType$$Overlay.isString__$devirt","elemental2.dom.DataTransferItemList$AddDataUnionType$$Overlay.<clinit>"]
 }

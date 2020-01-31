@@ -10,54 +10,37 @@ let IsWidget = goog.forwardDeclare('org.gwtproject.user.client.ui.IsWidget$impl'
  * @implements {AcceptsOneWidget}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(IsWidget):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(IsWidget):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(IsWidget):void} */
+  /**@type {?function(IsWidget):void}*/
   this.f_$$fn__org_gwtproject_user_client_ui_AcceptsOneWidget_$LambdaAdaptor;
   this.$ctor__org_gwtproject_user_client_ui_AcceptsOneWidget_$LambdaAdaptor__org_gwtproject_user_client_ui_AcceptsOneWidget_$JsFunction(fn);
  }
- /**
-  * @param {?function(IsWidget):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_AcceptsOneWidget_$LambdaAdaptor__org_gwtproject_user_client_ui_AcceptsOneWidget_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_user_client_ui_AcceptsOneWidget_$LambdaAdaptor__org_gwtproject_user_client_ui_AcceptsOneWidget_$JsFunction(/** ?function(IsWidget):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_user_client_ui_AcceptsOneWidget_$LambdaAdaptor = fn;
  }
- /**
-  * @param {IsWidget} arg0
-  * @public
-  */
- m_setWidget__org_gwtproject_user_client_ui_IsWidget(arg0) {
+ 
+ m_setWidget__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_user_client_ui_AcceptsOneWidget_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

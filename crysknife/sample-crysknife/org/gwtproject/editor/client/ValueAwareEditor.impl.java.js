@@ -9,52 +9,28 @@ const HasEditorDelegate = goog.require('org.gwtproject.editor.client.HasEditorDe
  * @extends {HasEditorDelegate<T>}
  */
 class ValueAwareEditor {
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_flush__() {}
- /**
-  * @abstract
-  * @param {Array<?string>} paths
-  * @public
-  */
- m_onPropertyChange__arrayOf_java_lang_String(paths) {}
- /**
-  * @abstract
-  * @param {T} value
-  * @public
-  */
- m_setValue__java_lang_Object(value) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_onPropertyChange__arrayOf_java_lang_String(/** Array<?string> */ paths) {}
+ /** @abstract */
+ m_setValue__java_lang_Object(/** T */ value) {}
+ 
  static $clinit() {
   ValueAwareEditor.$clinit = () =>{};
   ValueAwareEditor.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasEditorDelegate.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_editor_client_ValueAwareEditor = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasEditorDelegate.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_editor_client_ValueAwareEditor = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_editor_client_ValueAwareEditor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

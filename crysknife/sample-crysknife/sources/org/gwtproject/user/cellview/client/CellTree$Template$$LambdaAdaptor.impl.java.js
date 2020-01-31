@@ -11,55 +11,35 @@ let SafeHtml = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHtml$impl
  * @implements {Template}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(?string, SafeStyles, SafeHtml):SafeHtml} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(?string, SafeStyles, SafeHtml):SafeHtml */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(?string, SafeStyles, SafeHtml):SafeHtml} */
+  /**@type {?function(?string, SafeStyles, SafeHtml):SafeHtml}*/
   this.f_$$fn__org_gwtproject_user_cellview_client_CellTree_Template_$LambdaAdaptor;
   this.$ctor__org_gwtproject_user_cellview_client_CellTree_Template_$LambdaAdaptor__org_gwtproject_user_cellview_client_CellTree_Template_$JsFunction(fn);
  }
- /**
-  * @param {?function(?string, SafeStyles, SafeHtml):SafeHtml} fn
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_CellTree_Template_$LambdaAdaptor__org_gwtproject_user_cellview_client_CellTree_Template_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_CellTree_Template_$LambdaAdaptor__org_gwtproject_user_cellview_client_CellTree_Template_$JsFunction(/** ?function(?string, SafeStyles, SafeHtml):SafeHtml */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_user_cellview_client_CellTree_Template_$LambdaAdaptor = fn;
  }
- /**
-  * @param {?string} arg0
-  * @param {SafeStyles} arg1
-  * @param {SafeHtml} arg2
-  * @return {SafeHtml}
-  * @public
-  */
- m_imageWrapper__java_lang_String__org_gwtproject_safecss_shared_SafeStyles__org_gwtproject_safehtml_shared_SafeHtml(arg0, arg1, arg2) {
+ /** @return {SafeHtml} */
+ m_imageWrapper__java_lang_String__org_gwtproject_safecss_shared_SafeStyles__org_gwtproject_safehtml_shared_SafeHtml(/** ?string */ arg0, /** SafeStyles */ arg1, /** SafeHtml */ arg2) {
   let /** ?function(?string, SafeStyles, SafeHtml):SafeHtml */ $function;
   return ($function = this.f_$$fn__org_gwtproject_user_cellview_client_CellTree_Template_$LambdaAdaptor, $function(arg0, arg1, arg2));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

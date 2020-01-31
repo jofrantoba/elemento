@@ -12,68 +12,37 @@ let Promise_$Overlay = goog.forwardDeclare('elemental2.promise.Promise.$Overlay$
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class WorkerGlobalScope_$Overlay {
- /**
-  * @param {!WorkerGlobalScope} $thisArg
-  * @param {Request} input
-  * @param {RequestInit} init
-  * @return {Promise<Response>}
-  * @public
-  */
- static m_fetch__$devirt__elemental2_dom_WorkerGlobalScope__elemental2_dom_Request__elemental2_dom_RequestInit($thisArg, input, init) {
+ /** @return {Promise<Response>} */
+ static m_fetch__$devirt__elemental2_dom_WorkerGlobalScope__elemental2_dom_Request__elemental2_dom_RequestInit(/** !WorkerGlobalScope */ $thisArg, /** Request */ input, /** RequestInit */ init) {
   WorkerGlobalScope_$Overlay.$clinit();
-  return $thisArg.fetch(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(input)), init);
+  return $thisArg.fetch(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(input)), init);
  }
- /**
-  * @param {!WorkerGlobalScope} $thisArg
-  * @param {Request} input
-  * @return {Promise<Response>}
-  * @public
-  */
- static m_fetch__$devirt__elemental2_dom_WorkerGlobalScope__elemental2_dom_Request($thisArg, input) {
+ /** @return {Promise<Response>} */
+ static m_fetch__$devirt__elemental2_dom_WorkerGlobalScope__elemental2_dom_Request(/** !WorkerGlobalScope */ $thisArg, /** Request */ input) {
   WorkerGlobalScope_$Overlay.$clinit();
-  return $thisArg.fetch(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(input)));
+  return $thisArg.fetch(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(input)));
  }
- /**
-  * @param {!WorkerGlobalScope} $thisArg
-  * @param {?string} input
-  * @param {RequestInit} init
-  * @return {Promise<Response>}
-  * @public
-  */
- static m_fetch__$devirt__elemental2_dom_WorkerGlobalScope__java_lang_String__elemental2_dom_RequestInit($thisArg, input, init) {
+ /** @return {Promise<Response>} */
+ static m_fetch__$devirt__elemental2_dom_WorkerGlobalScope__java_lang_String__elemental2_dom_RequestInit(/** !WorkerGlobalScope */ $thisArg, /** ?string */ input, /** RequestInit */ init) {
   WorkerGlobalScope_$Overlay.$clinit();
-  return $thisArg.fetch(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(input)), init);
+  return $thisArg.fetch(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(input)), init);
  }
- /**
-  * @param {!WorkerGlobalScope} $thisArg
-  * @param {?string} input
-  * @return {Promise<Response>}
-  * @public
-  */
- static m_fetch__$devirt__elemental2_dom_WorkerGlobalScope__java_lang_String($thisArg, input) {
+ /** @return {Promise<Response>} */
+ static m_fetch__$devirt__elemental2_dom_WorkerGlobalScope__java_lang_String(/** !WorkerGlobalScope */ $thisArg, /** ?string */ input) {
   WorkerGlobalScope_$Overlay.$clinit();
-  return $thisArg.fetch(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(input)));
+  return $thisArg.fetch(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(input)));
  }
- /**
-  * @param {!WorkerGlobalScope} $thisArg
-  * @param {*} message
-  * @param {Array<Transferable>} transfer
-  * @public
-  */
- static m_postMessage__$devirt__elemental2_dom_WorkerGlobalScope__java_lang_Object__arrayOf_elemental2_core_Transferable($thisArg, message, transfer) {
+ 
+ static m_postMessage__$devirt__elemental2_dom_WorkerGlobalScope__java_lang_Object__arrayOf_elemental2_core_Transferable(/** !WorkerGlobalScope */ $thisArg, /** * */ message, /** Array<Transferable> */ transfer) {
   WorkerGlobalScope_$Overlay.$clinit();
-  $thisArg.postMessage(message, /**@type {Array<Transferable>} */ (Js.m_uncheckedCast__java_lang_Object(transfer)));
+  $thisArg.postMessage(message, /**@type {Array<Transferable>}*/ (Js.m_uncheckedCast__java_lang_Object(transfer)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   WorkerGlobalScope_$Overlay.$clinit = () =>{};
   WorkerGlobalScope_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }

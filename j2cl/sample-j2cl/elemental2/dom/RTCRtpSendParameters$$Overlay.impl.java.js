@@ -8,33 +8,22 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Overlay = goog.forwardDeclare('jsinterop.base.JsPropertyMap.$Overlay$impl');
 
 class RTCRtpSendParameters_$Overlay {
- /**
-  * @return {RTCRtpSendParameters}
-  * @public
-  */
+ /** @return {RTCRtpSendParameters} */
  static m_create__() {
   RTCRtpSendParameters_$Overlay.$clinit();
-  return /**@type {RTCRtpSendParameters} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
+  return /**@type {RTCRtpSendParameters}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
  }
- /**
-  * @param {!RTCRtpSendParameters} $thisArg
-  * @param {Array<RTCRtpEncodingParameters>} encodings
-  * @public
-  */
- static m_setEncodings__$devirt__elemental2_dom_RTCRtpSendParameters__arrayOf_elemental2_dom_RTCRtpEncodingParameters($thisArg, encodings) {
+ 
+ static m_setEncodings__$devirt__elemental2_dom_RTCRtpSendParameters__arrayOf_elemental2_dom_RTCRtpEncodingParameters(/** !RTCRtpSendParameters */ $thisArg, /** Array<RTCRtpEncodingParameters> */ encodings) {
   RTCRtpSendParameters_$Overlay.$clinit();
-  $thisArg.encodings = /**@type {Array<RTCRtpEncodingParameters>} */ (Js.m_uncheckedCast__java_lang_Object(encodings));
+  $thisArg.encodings = /**@type {Array<RTCRtpEncodingParameters>}*/ (Js.m_uncheckedCast__java_lang_Object(encodings));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RTCRtpSendParameters_$Overlay.$clinit = () =>{};
   RTCRtpSendParameters_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');

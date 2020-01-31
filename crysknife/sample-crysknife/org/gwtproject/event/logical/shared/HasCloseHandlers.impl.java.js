@@ -12,42 +12,24 @@ let HandlerRegistration = goog.forwardDeclare('org.gwtproject.event.shared.Handl
  * @extends {HasHandlers}
  */
 class HasCloseHandlers {
- /**
-  * @abstract
-  * @param {CloseHandler<T>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addCloseHandler__org_gwtproject_event_logical_shared_CloseHandler(handler) {}
- /**
-  * @public
-  */
+ /** @abstract @return {HandlerRegistration} */
+ m_addCloseHandler__org_gwtproject_event_logical_shared_CloseHandler(/** CloseHandler<T> */ handler) {}
+ 
  static $clinit() {
   HasCloseHandlers.$clinit = () =>{};
   HasCloseHandlers.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasHandlers.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_logical_shared_HasCloseHandlers = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasHandlers.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_logical_shared_HasCloseHandlers = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_logical_shared_HasCloseHandlers;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

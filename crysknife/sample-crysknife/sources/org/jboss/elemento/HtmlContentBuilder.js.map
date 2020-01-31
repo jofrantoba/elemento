@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HtmlContentBuilder.impl.java.js",
-"lineCount":163,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;MAoBa,kB;;;;CAAA,W;EAAAA,Q;;;;;;;;QAGF,mC,CAAqBC,O;EAArBC,6B;EAAAA,yC;EAAAA,4F;EAAAA,iB;;;;;;CAAA,wE,CAAqBD,O;EACxBE,mF;;;;;;;CAIyB,Q;EACzBC,Y;;;;;;;;;CATK,uB;EAAAC,uK;;;;;;;;;CAAA,0B;EAAAA,0K;;;;;;;;;CAAA,mC;EAAAA,mL;;;;;;;;;CAAA,qC;EAAAC,qL;;;;;;;;;CAAA,wC;EAAAA,wL;;;;;;;;;CAAA,4C;EAAAA,4L;;;;;;;;;;CAAA,8C;EAAAA,8L;;;;;;;;;CAAA,4B;EAAAA,4K;;;;;;;;;CAAA,oD;EAAAC,oM;;;;;;;;;CAAA,+B;EAAAC,+K;;;;;QAAA,O;EAAAC,qC;EAAAA,kC;EAAAA,yB;EAAAA;",
+"lineCount":96,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;MAoBa,kB;;CAAA,W;EAAAA,Q;;;QAGF,mC,UAAqBC,O;EAArBC,6B;EAAAA,yC;EAAAA,4F;EAAAA,iB;;;CAAA,wE,UAAqBD,O;EACxBE,mF;;;CAIyB,Q;EACzBC,Y;;;;CATK,uB;EAAAC,sK;;;;CAAA,0B;EAAAA,yK;;;;CAAA,mC;EAAAA,kL;;;;CAAA,qC;EAAAC,oL;;;;CAAA,wC;EAAAA,uL;;;;CAAA,4C;EAAAA,2L;;;;CAAA,8C;EAAAA,6L;;;;CAAA,4B;EAAAA,2K;;;;CAAA,oD;EAAAC,mM;;;;CAAA,+B;EAAAC,8K;;;QAAA,O;EAAAC,qC;EAAAA,kC;EAAAA,yB;EAAAA;",
 "sources":["HtmlContentBuilder.java"],
 "names":["org.jboss.elemento.HtmlContentBuilder.<synthetic: ctor_js>","element","org.jboss.elemento.HtmlContentBuilder.<synthetic: ctor_create>","org.jboss.elemento.HtmlContentBuilder.<init>","org.jboss.elemento.HtmlContentBuilder.that","org.jboss.elemento.HtmlContentBuilder.add","org.jboss.elemento.HtmlContentBuilder.addAll","org.jboss.elemento.HtmlContentBuilder.innerHtml","org.jboss.elemento.HtmlContentBuilder.textContent","org.jboss.elemento.HtmlContentBuilder.<clinit>"]
 }

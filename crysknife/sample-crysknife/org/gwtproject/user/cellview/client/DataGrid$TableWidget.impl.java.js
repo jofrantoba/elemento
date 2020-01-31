@@ -17,31 +17,24 @@ let Unit = goog.forwardDeclare('org.gwtproject.dom.style.shared.Unit$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class TableWidget extends Widget {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_colgroup__org_gwtproject_user_cellview_client_DataGrid_TableWidget_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_section__org_gwtproject_user_cellview_client_DataGrid_TableWidget_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_tableElem__org_gwtproject_user_cellview_client_DataGrid_TableWidget_;
  }
- /**
-  * @return {!TableWidget}
-  * @public
-  */
+ /** @return {!TableWidget} */
  static $create__() {
   TableWidget.$clinit();
   let $instance = new TableWidget();
   $instance.$ctor__org_gwtproject_user_cellview_client_DataGrid_TableWidget__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_cellview_client_DataGrid_TableWidget__() {
   this.$ctor__org_gwtproject_user_client_ui_Widget__();
   this.f_tableElem__org_gwtproject_user_cellview_client_DataGrid_TableWidget_ = $Overlay.m_createTableElement__$devirt__org_gwtproject_dom_client_Document($Overlay.m_get__());
@@ -52,77 +45,50 @@ class TableWidget extends Widget {
   this.f_colgroup__org_gwtproject_user_cellview_client_DataGrid_TableWidget_ = $Overlay.m_createColGroupElement__$devirt__org_gwtproject_dom_client_Document($Overlay.m_get__());
   this.f_tableElem__org_gwtproject_user_cellview_client_DataGrid_TableWidget_.appendChild(this.f_colgroup__org_gwtproject_user_cellview_client_DataGrid_TableWidget_);
  }
- /**
-  * @param {number} index
-  * @param {?string} styleName
-  * @public
-  */
- m_addColumnStyleName__int__java_lang_String(index, styleName) {
+ 
+ m_addColumnStyleName__int__java_lang_String(/** number */ index, /** ?string */ styleName) {
   Element_$Overlay.m_addClassName__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.m_ensureTableColElement__int(index), styleName);
  }
- /**
-  * @param {number} index
-  * @return {Object}
-  * @public
-  */
- m_ensureTableColElement__int(index) {
+ /** @return {Object} */
+ m_ensureTableColElement__int(/** number */ index) {
   for (let i = Node_$Overlay.m_getChildCount__$devirt__org_gwtproject_dom_client_Node(this.f_colgroup__org_gwtproject_user_cellview_client_DataGrid_TableWidget_); i <= index; i++) {
    this.f_colgroup__org_gwtproject_user_cellview_client_DataGrid_TableWidget_.appendChild($Overlay.m_createColElement__$devirt__org_gwtproject_dom_client_Document($Overlay.m_get__()));
   }
-  return /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Node_$Overlay.m_getChild__$devirt__org_gwtproject_dom_client_Node__int(this.f_colgroup__org_gwtproject_user_cellview_client_DataGrid_TableWidget_, index)), TableColElement_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Node_$Overlay.m_getChild__$devirt__org_gwtproject_dom_client_Node__int(this.f_colgroup__org_gwtproject_user_cellview_client_DataGrid_TableWidget_, index)), TableColElement_$Overlay));
  }
- /**
-  * @param {number} index
-  * @param {?string} styleName
-  * @public
-  */
- m_removeColumnStyleName__int__java_lang_String(index, styleName) {
+ 
+ m_removeColumnStyleName__int__java_lang_String(/** number */ index, /** ?string */ styleName) {
   if (index >= Node_$Overlay.m_getChildCount__$devirt__org_gwtproject_dom_client_Node(this.f_colgroup__org_gwtproject_user_cellview_client_DataGrid_TableWidget_)) {
    return;
   }
   Element_$Overlay.m_removeClassName__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.m_ensureTableColElement__int(index), styleName);
  }
- /**
-  * @param {number} start
-  * @public
-  */
- m_hideUnusedColumns__int_$pp_org_gwtproject_user_cellview_client(start) {
+ 
+ m_hideUnusedColumns__int_$pp_org_gwtproject_user_cellview_client(/** number */ start) {
   let colCount = Node_$Overlay.m_getChildCount__$devirt__org_gwtproject_dom_client_Node(this.f_colgroup__org_gwtproject_user_cellview_client_DataGrid_TableWidget_);
   for (let i = start; i < colCount; i++) {
    this.m_setColumnWidth__int__java_lang_String_$pp_org_gwtproject_user_cellview_client(i, "0px");
   }
  }
- /**
-  * @param {number} column
-  * @param {?string} width
-  * @public
-  */
- m_setColumnWidth__int__java_lang_String_$pp_org_gwtproject_user_cellview_client(column, width) {
+ 
+ m_setColumnWidth__int__java_lang_String_$pp_org_gwtproject_user_cellview_client(/** number */ column, /** ?string */ width) {
   if ($Equality.$same(width, null)) {
    Style_$Overlay.m_clearWidth__$devirt__org_gwtproject_dom_client_Style(this.m_ensureTableColElement__int(column).style);
   } else {
    Style_$Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(this.m_ensureTableColElement__int(column).style, "width", width);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TableWidget.$clinit = () =>{};
   TableWidget.$loadModules();
   Widget.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TableWidget;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   JavaScriptObject_$Overlay = goog.module.get('org.gwtproject.core.client.JavaScriptObject.$Overlay$impl');

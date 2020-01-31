@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasMouseUpHandlers.impl.java.js",
-"lineCount":26,
-"mappings":"A;;;;;;;;;;;;MAwBiB,kB;;;;;;;CAQK,mE,CAAiCA,O;;;;QARtC,O;EAAAC,qC;EAAAA;",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;;;MAwBiB,kB;;CAQK,mE,uBAAiCA,O;;QARtC,O;EAAAC,qC;EAAAA;",
 "sources":["HasMouseUpHandlers.java"],
 "names":["handler","org.gwtproject.event.dom.client.HasMouseUpHandlers.<clinit>"]
 }

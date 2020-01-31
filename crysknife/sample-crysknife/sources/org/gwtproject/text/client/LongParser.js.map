@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"LongParser.impl.java.js",
-"lineCount":113,
-"mappings":"A;;;;;;;;;;;;;;;;;;;MAOa,U;;;;CAAA,W;EAAAA,Q;;;;;;QAGkB,Y;EAAAC,qB;EACvBA;GACIA,uFADJA;G;EAIAA,qE;;;;;;QAGM,S;EAAAC,qB;EAAAA,iC;EAAAA,2D;EAAAA,iB;;;;;CAAA,8C;EAAAC,iC;;;;;;;;CAGE,+B,CAAmBC,M;EAC3BC;GACIA,YADJA;;GAGIA;IACIA,uLADJA;;IAEqCA,oCAFrCA;IAEqCA;KAAAA,IAANC,IAAMD,gDAAAA;KACjCA,gGADiCA;;KAAAA,+BAAAA;KAFrCA;IAHJA;G;;;;;QAfK,O;EAAAE,6B;EAAAA,0B;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;WACiB,kDADjB;",
+"lineCount":90,
+"mappings":"A;;;;;;;;;;;;;;;;;;;MAOa,U;;CAAA,W;EAAAA,Q;;;QAGkB,Y;EAAAC,qB;EACvBA;GACIA,uFADJA;G;EAIAA,qE;;;QAGM,S;EAAAC,qB;EAAAA,iC;EAAAA,2D;EAAAA,iB;;;CAAA,8C;EAAAC,iC;;;CAGE,+B,8BAAmBC,M;EAC3BC;GACIA,YADJA;;GAGIA;IACIA,uLADJA;;IAEqCA,oCAFrCA;IAEqCA;KAAAA,IAANC,IAAMD,+CAAAA;KACjCA,gGADiCA;;KAAAA,+BAAAA;KAFrCA;IAHJA;G;;;QAfK,O;EAAAE,6B;EAAAA,0B;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;;;AAAA;WACiB,kDADjB;",
 "sources":["LongParser.java"],
 "names":["org.gwtproject.text.client.LongParser.<synthetic: ctor_js>","org.gwtproject.text.client.LongParser.instance","org.gwtproject.text.client.LongParser.<synthetic: ctor_create>","org.gwtproject.text.client.LongParser.<init>","object","org.gwtproject.text.client.LongParser.parse","var3","org.gwtproject.text.client.LongParser.<clinit>"]
 }

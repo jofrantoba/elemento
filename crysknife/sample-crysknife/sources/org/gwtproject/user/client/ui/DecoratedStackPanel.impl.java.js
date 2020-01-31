@@ -15,34 +15,23 @@ let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 
 class DecoratedStackPanel extends StackPanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!DecoratedStackPanel}
-  * @public
-  */
+ /** @return {!DecoratedStackPanel} */
  static $create__() {
   DecoratedStackPanel.$clinit();
   let $instance = new DecoratedStackPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_DecoratedStackPanel__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_DecoratedStackPanel__() {
   this.$ctor__org_gwtproject_user_client_ui_StackPanel__();
   this.m_setStylePrimaryName__java_lang_String(DecoratedStackPanel.f_DEFAULT_STYLENAME__org_gwtproject_user_client_ui_DecoratedStackPanel);
  }
- /**
-  * @override
-  * @return {Object}
-  * @public
-  */
+ /** @override @return {Object} */
  m_createHeaderElem___$pp_org_gwtproject_user_client_ui() {
   let table = DOM.m_createTable__();
   let tbody = DOM.m_createTBody__();
@@ -55,56 +44,35 @@ class DecoratedStackPanel extends StackPanel {
   }
   return table;
  }
- /**
-  * @override
-  * @param {Object} headerElem
-  * @return {Object}
-  * @public
-  */
- m_getHeaderTextElem__org_gwtproject_dom_client_Element_$pp_org_gwtproject_user_client_ui(headerElem) {
+ /** @override @return {Object} */
+ m_getHeaderTextElem__org_gwtproject_dom_client_Element_$pp_org_gwtproject_user_client_ui(/** Object */ headerElem) {
   let tbody = DOM.m_getFirstChild__org_gwtproject_dom_client_Element(headerElem);
   let tr = DOM.m_getChild__org_gwtproject_dom_client_Element__int(tbody, 1);
   let td = DOM.m_getChild__org_gwtproject_dom_client_Element__int(tr, 1);
   return DOM.m_getFirstChild__org_gwtproject_dom_client_Element(td);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DecoratedStackPanel.$clinit = () =>{};
   DecoratedStackPanel.$loadModules();
   StackPanel.$clinit();
-  DecoratedStackPanel.f_DEFAULT_ROW_STYLENAMES__org_gwtproject_user_client_ui_DecoratedStackPanel_ = /**@type {!Array<?string>} */ ($Arrays.$init(["stackItemTop", "stackItemMiddle"], j_l_String));
+  DecoratedStackPanel.f_DEFAULT_ROW_STYLENAMES__org_gwtproject_user_client_ui_DecoratedStackPanel_ = /**@type {!Array<?string>}*/ ($Arrays.$init(["stackItemTop", "stackItemMiddle"], j_l_String));
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DecoratedStackPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -118,9 +86,9 @@ class DecoratedStackPanel extends StackPanel {
 }
 $Util.$setClassMetadata(DecoratedStackPanel, 'org.gwtproject.user.client.ui.DecoratedStackPanel');
 
-/** @public {?string} @const */
+/**@const {?string}*/
 DecoratedStackPanel.f_DEFAULT_STYLENAME__org_gwtproject_user_client_ui_DecoratedStackPanel = "gwt-DecoratedStackPanel";
-/** @public {Array<?string>} */
+/**@type {Array<?string>}*/
 DecoratedStackPanel.f_DEFAULT_ROW_STYLENAMES__org_gwtproject_user_client_ui_DecoratedStackPanel_;
 
 exports = DecoratedStackPanel; 

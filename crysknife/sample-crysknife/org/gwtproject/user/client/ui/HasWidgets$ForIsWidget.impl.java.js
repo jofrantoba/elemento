@@ -11,49 +11,27 @@ let IsWidget = goog.forwardDeclare('org.gwtproject.user.client.ui.IsWidget$impl'
  * @extends {HasWidgets}
  */
 class ForIsWidget {
- /**
-  * @abstract
-  * @param {IsWidget} w
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_IsWidget(w) {}
- /**
-  * @abstract
-  * @param {IsWidget} w
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_IsWidget(w) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_add__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ w) {}
+ /** @abstract @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ w) {}
+ 
  static $clinit() {
   ForIsWidget.$clinit = () =>{};
   ForIsWidget.$loadModules();
   Iterable.$clinit();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasWidgets.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_HasWidgets_ForIsWidget = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasWidgets.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_HasWidgets_ForIsWidget = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_HasWidgets_ForIsWidget;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
  }

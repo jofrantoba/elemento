@@ -18,36 +18,25 @@ let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class Tab extends SimplePanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {TabLayoutPanel} */
+  /**@type {TabLayoutPanel}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_TabLayoutPanel_Tab;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_inner__org_gwtproject_user_client_ui_TabLayoutPanel_Tab_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_replacingWidget__org_gwtproject_user_client_ui_TabLayoutPanel_Tab_ = false;
  }
- /**
-  * @param {TabLayoutPanel} $outer_this
-  * @param {Widget} child
-  * @return {!Tab}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_TabLayoutPanel__org_gwtproject_user_client_ui_Widget($outer_this, child) {
+ /** @return {!Tab} */
+ static $create__org_gwtproject_user_client_ui_TabLayoutPanel__org_gwtproject_user_client_ui_Widget(/** TabLayoutPanel */ $outer_this, /** Widget */ child) {
   Tab.$clinit();
   let $instance = new Tab();
   $instance.$ctor__org_gwtproject_user_client_ui_TabLayoutPanel_Tab__org_gwtproject_user_client_ui_TabLayoutPanel__org_gwtproject_user_client_ui_Widget($outer_this, child);
   return $instance;
  }
- /**
-  * @param {TabLayoutPanel} $outer_this
-  * @param {Widget} child
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_TabLayoutPanel_Tab__org_gwtproject_user_client_ui_TabLayoutPanel__org_gwtproject_user_client_ui_Widget($outer_this, child) {
+ 
+ $ctor__org_gwtproject_user_client_ui_TabLayoutPanel_Tab__org_gwtproject_user_client_ui_TabLayoutPanel__org_gwtproject_user_client_ui_Widget(/** TabLayoutPanel */ $outer_this, /** Widget */ child) {
   this.f_$outer_this__org_gwtproject_user_client_ui_TabLayoutPanel_Tab = $outer_this;
   this.$ctor__org_gwtproject_user_client_ui_SimplePanel__org_gwtproject_dom_client_Element($Overlay.m_createDivElement__$devirt__org_gwtproject_dom_client_Document($Overlay.m_get__()));
   this.m_getElement__().appendChild(this.f_inner__org_gwtproject_user_client_ui_TabLayoutPanel_Tab_ = $Overlay.m_createDivElement__$devirt__org_gwtproject_dom_client_Document($Overlay.m_get__()));
@@ -56,21 +45,12 @@ class Tab extends SimplePanel {
   Element_$Overlay.m_setClassName__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.f_inner__org_gwtproject_user_client_ui_TabLayoutPanel_Tab_, TabLayoutPanel.f_TAB_INNER_STYLE__org_gwtproject_user_client_ui_TabLayoutPanel_);
   Element_$Overlay.m_addClassName__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.m_getElement__(), CommonResources.m_getInlineBlockStyle__());
  }
- /**
-  * @param {ClickHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addClickHandler__org_gwtproject_event_dom_client_ClickHandler(handler) {
+ /** @return {HandlerRegistration} */
+ m_addClickHandler__org_gwtproject_event_dom_client_ClickHandler(/** ClickHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, ClickEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   let index = this.f_$outer_this__org_gwtproject_user_client_ui_TabLayoutPanel_Tab.f_tabs__org_gwtproject_user_client_ui_TabLayoutPanel_.indexOf(this);
   if (this.f_replacingWidget__org_gwtproject_user_client_ui_TabLayoutPanel_Tab_ || index < 0) {
    return super.m_remove__org_gwtproject_user_client_ui_Widget(w);
@@ -78,72 +58,45 @@ class Tab extends SimplePanel {
    return this.f_$outer_this__org_gwtproject_user_client_ui_TabLayoutPanel_Tab.m_remove__int(index);
   }
  }
- /**
-  * @param {boolean} selected
-  * @public
-  */
- m_setSelected__boolean(selected) {
+ 
+ m_setSelected__boolean(/** boolean */ selected) {
   if (selected) {
    this.m_addStyleDependentName__java_lang_String("selected");
   } else {
    this.m_removeStyleDependentName__java_lang_String("selected");
   }
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @public
-  */
- m_setWidget__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override */
+ m_setWidget__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   this.f_replacingWidget__org_gwtproject_user_client_ui_TabLayoutPanel_Tab_ = true;
   super.m_setWidget__org_gwtproject_user_client_ui_Widget(w);
   this.f_replacingWidget__org_gwtproject_user_client_ui_TabLayoutPanel_Tab_ = false;
  }
- /**
-  * @override
-  * @return {Object}
-  * @public
-  */
+ /** @override @return {Object} */
  m_getContainerElement__() {
-  return /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(this.f_inner__org_gwtproject_user_client_ui_TabLayoutPanel_Tab_), Element_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(this.f_inner__org_gwtproject_user_client_ui_TabLayoutPanel_Tab_), Element_$Overlay));
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Tab.$clinit = () =>{};
   Tab.$loadModules();
   SimplePanel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Tab;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   JavaScriptObject_$Overlay = goog.module.get('org.gwtproject.core.client.JavaScriptObject.$Overlay$impl');

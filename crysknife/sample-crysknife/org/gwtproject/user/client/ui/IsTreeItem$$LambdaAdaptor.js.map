@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"IsTreeItem$$LambdaAdaptor.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;;;;MAsBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;uE;EAAAA,8H;;;;;;CAAA,oH;EAAAC,iC;EAAAA,0E;;;;;;CAAA,c;EAAAC,0C;EAAAA,uG;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;;MAsBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;uE;EAAAA,8H;;;CAAA,oH;EAAAC,iC;EAAAA,0E;;;CAAA,c;EAAAC,0C;EAAAA,uG;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["IsTreeItem.java"],
 "names":["org.gwtproject.user.client.ui.IsTreeItem$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.client.ui.IsTreeItem$$LambdaAdaptor.<init>","org.gwtproject.user.client.ui.IsTreeItem$$LambdaAdaptor.asTreeItem","org.gwtproject.user.client.ui.IsTreeItem$$LambdaAdaptor.<clinit>"]
 }

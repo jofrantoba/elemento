@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ConstantsWithLookup.impl.java.js",
-"lineCount":67,
-"mappings":"A;;;;;;;;;;;MAqDiB,mB;;;;;;;CAQP,8B,CAAkBA,U;;;;;;;CASnB,6B,CAAiBA,U;;;;;;;CASlB,4B,CAAgBA,U;;;;;;;CASlB,0B,CAAcA,U;;;;;;;CASE,0B,CAAcA,U;;;;;;;CAS3B,6B,CAAiBA,U;;;;;;;CASf,kC,CAAsBA,U;;;;QA9DhB,O;EAAAC,sC;EAAAA;",
+"lineCount":30,
+"mappings":"A;;;;;;;;;;;MAqDiB,mB;;CAQP,8B,gBAAkBA,U;;CASnB,6B,gBAAiBA,U;;CASlB,4B,gBAAgBA,U;;CASlB,0B,gBAAcA,U;;CASE,0B,gBAAcA,U;;CAS3B,6B,gBAAiBA,U;;CASf,kC,gBAAsBA,U;;QA9DhB,O;EAAAC,sC;EAAAA;",
 "sources":["ConstantsWithLookup.java"],
 "names":["methodName","org.gwtproject.i18n.client.ConstantsWithLookup.<clinit>"]
 }

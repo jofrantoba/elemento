@@ -12,91 +12,52 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {OptionBuilder}
   */
 class HtmlOptionBuilder extends HtmlElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @return {!HtmlOptionBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ /** @return {!HtmlOptionBuilder} */
+ static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   HtmlOptionBuilder.$clinit();
   let $instance = new HtmlOptionBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_shared_HtmlOptionBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_shared_HtmlOptionBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_shared_HtmlOptionBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_shared_HtmlElementBuilderBase__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate);
  }
- /**
-  * @override
-  * @return {OptionBuilder}
-  * @public
-  */
+ /** @override @return {OptionBuilder} */
  m_defaultSelected__() {
-  return /**@type {OptionBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("defaultSelected", "defaultSelected"), OptionBuilder));
+  return /**@type {OptionBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("defaultSelected", "defaultSelected"), OptionBuilder));
  }
- /**
-  * @override
-  * @return {OptionBuilder}
-  * @public
-  */
+ /** @override @return {OptionBuilder} */
  m_disabled__() {
-  return /**@type {OptionBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("disabled", "disabled"), OptionBuilder));
+  return /**@type {OptionBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("disabled", "disabled"), OptionBuilder));
  }
- /**
-  * @override
-  * @param {?string} label
-  * @return {OptionBuilder}
-  * @public
-  */
- m_label__java_lang_String(label) {
-  return /**@type {OptionBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("label", label), OptionBuilder));
+ /** @override @return {OptionBuilder} */
+ m_label__java_lang_String(/** ?string */ label) {
+  return /**@type {OptionBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("label", label), OptionBuilder));
  }
- /**
-  * @override
-  * @return {OptionBuilder}
-  * @public
-  */
+ /** @override @return {OptionBuilder} */
  m_selected__() {
-  return /**@type {OptionBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("selected", "selected"), OptionBuilder));
+  return /**@type {OptionBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("selected", "selected"), OptionBuilder));
  }
- /**
-  * @override
-  * @param {?string} value
-  * @return {OptionBuilder}
-  * @public
-  */
- m_value__java_lang_String(value) {
-  return /**@type {OptionBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("value", value), OptionBuilder));
+ /** @override @return {OptionBuilder} */
+ m_value__java_lang_String(/** ?string */ value) {
+  return /**@type {OptionBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("value", value), OptionBuilder));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HtmlOptionBuilder.$clinit = () =>{};
   HtmlOptionBuilder.$loadModules();
   HtmlElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HtmlOptionBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

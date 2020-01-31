@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DragDropEventBase.impl.java.js",
-"lineCount":66,
-"mappings":"A;;;;;;;;;;;;;;MA2BsB,iB;;;;CAAA,W;EAAAA,Q;;;;;CAAA,0D;EAAAC,yD;;;;;;QAOE,e;EAAAC,4B;EAEpBA,Y;;;;;;;CASY,2B,CAAeC,M;EAC3BC,IAAaC,EAAbD,8B;EACAA,kD;;;;;;CAQkB,mB;EAClBE,6G;;;;;;;CASU,6C,CAAeH,M,EAAeI,I;EACxCC,iD;;;;;QAvCkB,O;EAAAC,oC;EAAAA,iC;EAAAA;",
+"lineCount":46,
+"mappings":"A;;;;;;;;;;;;;;MA2BsB,iB;;CAAA,W;EAAAA,Q;;;CAAA,0D;EAAAC,yD;;;QAOE,e;EAAAC,4B;EAEpBA,Y;;;CASY,2B,gBAAeC,M;EAC3BC,IAAaC,EAAbD,8B;EACAA,kD;;;CAQkB,mB;EAClBE,6G;;;CASU,6C,gBAAeH,M,iBAAeI,I;EACxCC,iD;;;QAvCkB,O;EAAAC,oC;EAAAA,iC;EAAAA;",
 "sources":["DragDropEventBase.java"],
 "names":["org.gwtproject.event.dom.client.DragDropEventBase.<synthetic: ctor_js>","org.gwtproject.event.dom.client.DragDropEventBase.<init>","org.gwtproject.event.dom.client.DragDropEventBase.isSupported","format","org.gwtproject.event.dom.client.DragDropEventBase.getData","dt","org.gwtproject.event.dom.client.DragDropEventBase.getDataTransfer","data","org.gwtproject.event.dom.client.DragDropEventBase.setData","org.gwtproject.event.dom.client.DragDropEventBase.<clinit>"]
 }

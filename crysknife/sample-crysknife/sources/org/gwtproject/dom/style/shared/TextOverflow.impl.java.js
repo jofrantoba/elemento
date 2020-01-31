@@ -16,66 +16,40 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @implements {HasCssName}
   */
 class TextOverflow extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_dom_style_shared_TextOverflow__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_dom_style_shared_TextOverflow__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @abstract
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @override @return {?string} */
  m_getCssName__() {}
- /**
-  * @param {string} name
-  * @return {!TextOverflow}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!TextOverflow} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   TextOverflow.$clinit();
   if ($Equality.$same(TextOverflow.f_namesToValuesMap__org_gwtproject_dom_style_shared_TextOverflow_, null)) {
    TextOverflow.f_namesToValuesMap__org_gwtproject_dom_style_shared_TextOverflow_ = $Enums.createMapFromValues(TextOverflow.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, TextOverflow.f_namesToValuesMap__org_gwtproject_dom_style_shared_TextOverflow_);
  }
- /**
-  * @return {!Array<!TextOverflow>}
-  * @public
-  */
+ /** @return {!Array<!TextOverflow>} */
  static m_values__() {
   TextOverflow.$clinit();
-  return /**@type {!Array<TextOverflow>} */ ($Arrays.$init([TextOverflow.$f_CLIP__org_gwtproject_dom_style_shared_TextOverflow, TextOverflow.$f_ELLIPSIS__org_gwtproject_dom_style_shared_TextOverflow], TextOverflow));
+  return /**@type {!Array<TextOverflow>}*/ ($Arrays.$init([TextOverflow.$f_CLIP__org_gwtproject_dom_style_shared_TextOverflow, TextOverflow.$f_ELLIPSIS__org_gwtproject_dom_style_shared_TextOverflow], TextOverflow));
  }
- /**
-  * @return {!TextOverflow}
-  * @public
-  */
+ /** @return {!TextOverflow} */
  static get f_CLIP__org_gwtproject_dom_style_shared_TextOverflow() {
   return (TextOverflow.$clinit(), TextOverflow.$f_CLIP__org_gwtproject_dom_style_shared_TextOverflow);
  }
- /**
-  * @return {!TextOverflow}
-  * @public
-  */
+ /** @return {!TextOverflow} */
  static get f_ELLIPSIS__org_gwtproject_dom_style_shared_TextOverflow() {
   return (TextOverflow.$clinit(), TextOverflow.$f_ELLIPSIS__org_gwtproject_dom_style_shared_TextOverflow);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TextOverflow.$clinit = () =>{};
   TextOverflow.$loadModules();
@@ -84,17 +58,11 @@ class TextOverflow extends Enum {
   TextOverflow.$f_ELLIPSIS__org_gwtproject_dom_style_shared_TextOverflow = $2.$create__java_lang_String__int($Util.$makeEnumName("ELLIPSIS"), TextOverflow.$ordinal$f_ELLIPSIS__org_gwtproject_dom_style_shared_TextOverflow);
   TextOverflow.f_namesToValuesMap__org_gwtproject_dom_style_shared_TextOverflow_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TextOverflow;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.dom.style.shared.TextOverflow.$1$impl');
@@ -108,15 +76,15 @@ $Util.$setClassMetadataForEnum(TextOverflow, 'org.gwtproject.dom.style.shared.Te
 
 HasCssName.$markImplementor(TextOverflow);
 
-/** @private {!TextOverflow} */
+/**@private {!TextOverflow}*/
 TextOverflow.$f_CLIP__org_gwtproject_dom_style_shared_TextOverflow;
-/** @private {!TextOverflow} */
+/**@private {!TextOverflow}*/
 TextOverflow.$f_ELLIPSIS__org_gwtproject_dom_style_shared_TextOverflow;
-/** @public {Map<?string, !TextOverflow>} */
+/**@type {Map<?string, !TextOverflow>}*/
 TextOverflow.f_namesToValuesMap__org_gwtproject_dom_style_shared_TextOverflow_;
-/** @public {number} @const */
+/**@const {number}*/
 TextOverflow.$ordinal$f_CLIP__org_gwtproject_dom_style_shared_TextOverflow = 0;
-/** @public {number} @const */
+/**@const {number}*/
 TextOverflow.$ordinal$f_ELLIPSIS__org_gwtproject_dom_style_shared_TextOverflow = 1;
 
 exports = TextOverflow; 

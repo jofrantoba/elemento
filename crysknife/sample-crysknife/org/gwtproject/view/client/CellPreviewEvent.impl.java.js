@@ -17,84 +17,50 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {Event<Handler<T>>}
   */
 class CellPreviewEvent extends Event {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Context} */
+  /**@type {Context}*/
   this.f_context__org_gwtproject_view_client_CellPreviewEvent_;
-  /** @public {HasData<T>} */
+  /**@type {HasData<T>}*/
   this.f_display__org_gwtproject_view_client_CellPreviewEvent_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isCanceled__org_gwtproject_view_client_CellPreviewEvent_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isCellEditing__org_gwtproject_view_client_CellPreviewEvent_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isSelectionHandled__org_gwtproject_view_client_CellPreviewEvent_ = false;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_nativeEvent__org_gwtproject_view_client_CellPreviewEvent_;
-  /** @public {T} */
+  /**@type {T}*/
   this.f_value__org_gwtproject_view_client_CellPreviewEvent_;
  }
- /**
-  * @template T_1
-  * @param {HasCellPreviewHandlers<T_1>} source
-  * @param {Object} nativeEvent
-  * @param {HasData<T_1>} display
-  * @param {Context} context
-  * @param {T_1} value
-  * @param {boolean} isCellEditing
-  * @param {boolean} isSelectionHandled
-  * @return {CellPreviewEvent<T_1>}
-  * @public
-  */
- static m_fire__org_gwtproject_view_client_HasCellPreviewHandlers__org_gwtproject_dom_client_NativeEvent__org_gwtproject_view_client_HasData__org_gwtproject_cell_client_Cell_Context__java_lang_Object__boolean__boolean(source, nativeEvent, display, context, value, isCellEditing, isSelectionHandled) {
+ /** @template T_1 @return {CellPreviewEvent<T_1>} */
+ static m_fire__org_gwtproject_view_client_HasCellPreviewHandlers__org_gwtproject_dom_client_NativeEvent__org_gwtproject_view_client_HasData__org_gwtproject_cell_client_Cell_Context__java_lang_Object__boolean__boolean(/** HasCellPreviewHandlers<T_1> */ source, /** Object */ nativeEvent, /** HasData<T_1> */ display, /** Context */ context, /** T_1 */ value, /** boolean */ isCellEditing, /** boolean */ isSelectionHandled) {
   CellPreviewEvent.$clinit();
-  let event = /**@type {!CellPreviewEvent<T_1>} */ (CellPreviewEvent.$create__org_gwtproject_dom_client_NativeEvent__org_gwtproject_view_client_HasData__org_gwtproject_cell_client_Cell_Context__java_lang_Object__boolean__boolean(nativeEvent, display, context, value, isCellEditing, isSelectionHandled));
+  let event = /**@type {!CellPreviewEvent<T_1>}*/ (CellPreviewEvent.$create__org_gwtproject_dom_client_NativeEvent__org_gwtproject_view_client_HasData__org_gwtproject_cell_client_Cell_Context__java_lang_Object__boolean__boolean(nativeEvent, display, context, value, isCellEditing, isSelectionHandled));
   if (!$Equality.$same(CellPreviewEvent.f_TYPE__org_gwtproject_view_client_CellPreviewEvent_, null)) {
    source.m_fireEvent__org_gwtproject_event_shared_Event(event);
   }
   return event;
  }
- /**
-  * @return {Type<Handler<?>>}
-  * @public
-  */
+ /** @return {Type<Handler<?>>} */
  static m_getType__() {
   CellPreviewEvent.$clinit();
   if ($Equality.$same(CellPreviewEvent.f_TYPE__org_gwtproject_view_client_CellPreviewEvent_, null)) {
-   CellPreviewEvent.f_TYPE__org_gwtproject_view_client_CellPreviewEvent_ = /**@type {!Type<Handler<?>>} */ (Type.$create__());
+   CellPreviewEvent.f_TYPE__org_gwtproject_view_client_CellPreviewEvent_ = /**@type {!Type<Handler<?>>}*/ (Type.$create__());
   }
   return CellPreviewEvent.f_TYPE__org_gwtproject_view_client_CellPreviewEvent_;
  }
- /**
-  * @template T
-  * @param {Object} nativeEvent
-  * @param {HasData<T>} display
-  * @param {Context} context
-  * @param {T} value
-  * @param {boolean} isCellEditing
-  * @param {boolean} isSelectionHandled
-  * @return {!CellPreviewEvent<T>}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_NativeEvent__org_gwtproject_view_client_HasData__org_gwtproject_cell_client_Cell_Context__java_lang_Object__boolean__boolean(nativeEvent, display, context, value, isCellEditing, isSelectionHandled) {
+ /** @template T @return {!CellPreviewEvent<T>} */
+ static $create__org_gwtproject_dom_client_NativeEvent__org_gwtproject_view_client_HasData__org_gwtproject_cell_client_Cell_Context__java_lang_Object__boolean__boolean(/** Object */ nativeEvent, /** HasData<T> */ display, /** Context */ context, /** T */ value, /** boolean */ isCellEditing, /** boolean */ isSelectionHandled) {
   CellPreviewEvent.$clinit();
   let $instance = new CellPreviewEvent();
   $instance.$ctor__org_gwtproject_view_client_CellPreviewEvent__org_gwtproject_dom_client_NativeEvent__org_gwtproject_view_client_HasData__org_gwtproject_cell_client_Cell_Context__java_lang_Object__boolean__boolean(nativeEvent, display, context, value, isCellEditing, isSelectionHandled);
   return $instance;
  }
- /**
-  * @param {Object} nativeEvent
-  * @param {HasData<T>} display
-  * @param {Context} context
-  * @param {T} value
-  * @param {boolean} isCellEditing
-  * @param {boolean} isSelectionHandled
-  * @public
-  */
- $ctor__org_gwtproject_view_client_CellPreviewEvent__org_gwtproject_dom_client_NativeEvent__org_gwtproject_view_client_HasData__org_gwtproject_cell_client_Cell_Context__java_lang_Object__boolean__boolean(nativeEvent, display, context, value, isCellEditing, isSelectionHandled) {
+ 
+ $ctor__org_gwtproject_view_client_CellPreviewEvent__org_gwtproject_dom_client_NativeEvent__org_gwtproject_view_client_HasData__org_gwtproject_cell_client_Cell_Context__java_lang_Object__boolean__boolean(/** Object */ nativeEvent, /** HasData<T> */ display, /** Context */ context, /** T */ value, /** boolean */ isCellEditing, /** boolean */ isSelectionHandled) {
   this.$ctor__org_gwtproject_event_shared_Event__();
   this.$init___$p_org_gwtproject_view_client_CellPreviewEvent();
   this.f_nativeEvent__org_gwtproject_view_client_CellPreviewEvent_ = nativeEvent;
@@ -104,125 +70,74 @@ class CellPreviewEvent extends Event {
   this.f_isCellEditing__org_gwtproject_view_client_CellPreviewEvent_ = isCellEditing;
   this.f_isSelectionHandled__org_gwtproject_view_client_CellPreviewEvent_ = isSelectionHandled;
  }
- /**
-  * @override
-  * @return {Type<Handler<T>>}
-  * @public
-  */
+ /** @override @return {Type<Handler<T>>} */
  m_getAssociatedType__() {
-  return /**@type {Type} */ (CellPreviewEvent.f_TYPE__org_gwtproject_view_client_CellPreviewEvent_);
+  return /**@type {Type}*/ (CellPreviewEvent.f_TYPE__org_gwtproject_view_client_CellPreviewEvent_);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getColumn__() {
   return this.f_context__org_gwtproject_view_client_CellPreviewEvent_.m_getColumn__();
  }
- /**
-  * @return {Context}
-  * @public
-  */
+ /** @return {Context} */
  m_getContext__() {
   return this.f_context__org_gwtproject_view_client_CellPreviewEvent_;
  }
- /**
-  * @return {HasData<T>}
-  * @public
-  */
+ /** @return {HasData<T>} */
  m_getDisplay__() {
   return this.f_display__org_gwtproject_view_client_CellPreviewEvent_;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getIndex__() {
   return this.f_context__org_gwtproject_view_client_CellPreviewEvent_.m_getIndex__();
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getNativeEvent__() {
   return this.f_nativeEvent__org_gwtproject_view_client_CellPreviewEvent_;
  }
- /**
-  * @return {T}
-  * @public
-  */
+ /** @return {T} */
  m_getValue__() {
   return this.f_value__org_gwtproject_view_client_CellPreviewEvent_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isCanceled__() {
   return this.f_isCanceled__org_gwtproject_view_client_CellPreviewEvent_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isCellEditing__() {
   return this.f_isCellEditing__org_gwtproject_view_client_CellPreviewEvent_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isSelectionHandled__() {
   return this.f_isSelectionHandled__org_gwtproject_view_client_CellPreviewEvent_;
  }
- /**
-  * @param {boolean} cancel
-  * @public
-  */
- m_setCanceled__boolean(cancel) {
+ 
+ m_setCanceled__boolean(/** boolean */ cancel) {
   this.f_isCanceled__org_gwtproject_view_client_CellPreviewEvent_ = cancel;
  }
- /**
-  * @param {Handler<T>} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_view_client_CellPreviewEvent_Handler(handler) {
+ 
+ m_dispatch__org_gwtproject_view_client_CellPreviewEvent_Handler(/** Handler<T> */ handler) {
   handler.m_onCellPreview__org_gwtproject_view_client_CellPreviewEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_view_client_CellPreviewEvent_Handler(/**@type {Handler<T>} */ ($Casts.$to(arg0, Handler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_view_client_CellPreviewEvent_Handler(/**@type {Handler<T>}*/ ($Casts.$to(arg0, Handler)));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_view_client_CellPreviewEvent() {
   this.f_isCanceled__org_gwtproject_view_client_CellPreviewEvent_ = false;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CellPreviewEvent.$clinit = () =>{};
   CellPreviewEvent.$loadModules();
   Event.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CellPreviewEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   Type = goog.module.get('org.gwtproject.event.shared.Event.Type$impl');
@@ -233,7 +148,7 @@ class CellPreviewEvent extends Event {
 }
 $Util.$setClassMetadata(CellPreviewEvent, 'org.gwtproject.view.client.CellPreviewEvent');
 
-/** @public {Type<Handler<?>>} */
+/**@type {Type<Handler<?>>}*/
 CellPreviewEvent.f_TYPE__org_gwtproject_view_client_CellPreviewEvent_;
 
 exports = CellPreviewEvent; 

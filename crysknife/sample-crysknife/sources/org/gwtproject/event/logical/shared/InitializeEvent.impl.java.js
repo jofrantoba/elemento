@@ -14,94 +14,61 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {Event<InitializeHandler>}
   */
 class InitializeEvent extends Event {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @template S
-  * @param {S} source
-  * @public
-  */
- static m_fire__org_gwtproject_event_logical_shared_HasInitializeHandlers(source) {
+ /** @template S */
+ static m_fire__org_gwtproject_event_logical_shared_HasInitializeHandlers(/** S */ source) {
   InitializeEvent.$clinit();
   if (!$Equality.$same(InitializeEvent.f_TYPE__org_gwtproject_event_logical_shared_InitializeEvent_, null)) {
    let event = InitializeEvent.$create__();
-   /**@type {HasInitializeHandlers} */ (source).m_fireEvent__org_gwtproject_event_shared_Event(event);
+   /**@type {HasInitializeHandlers}*/ (source).m_fireEvent__org_gwtproject_event_shared_Event(event);
   }
  }
- /**
-  * @return {Type<InitializeHandler>}
-  * @public
-  */
+ /** @return {Type<InitializeHandler>} */
  static m_getType__() {
   InitializeEvent.$clinit();
   if ($Equality.$same(InitializeEvent.f_TYPE__org_gwtproject_event_logical_shared_InitializeEvent_, null)) {
-   InitializeEvent.f_TYPE__org_gwtproject_event_logical_shared_InitializeEvent_ = /**@type {!Type<InitializeHandler>} */ (Type.$create__());
+   InitializeEvent.f_TYPE__org_gwtproject_event_logical_shared_InitializeEvent_ = /**@type {!Type<InitializeHandler>}*/ (Type.$create__());
   }
   return InitializeEvent.f_TYPE__org_gwtproject_event_logical_shared_InitializeEvent_;
  }
- /**
-  * @return {!InitializeEvent}
-  * @public
-  */
+ /** @return {!InitializeEvent} */
  static $create__() {
   InitializeEvent.$clinit();
   let $instance = new InitializeEvent();
   $instance.$ctor__org_gwtproject_event_logical_shared_InitializeEvent__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_logical_shared_InitializeEvent__() {
   this.$ctor__org_gwtproject_event_shared_Event__();
  }
- /**
-  * @override
-  * @return {Type<InitializeHandler>}
-  * @public
-  */
+ /** @override @return {Type<InitializeHandler>} */
  m_getAssociatedType__() {
   return InitializeEvent.f_TYPE__org_gwtproject_event_logical_shared_InitializeEvent_;
  }
- /**
-  * @param {InitializeHandler} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_event_logical_shared_InitializeHandler(handler) {
+ 
+ m_dispatch__org_gwtproject_event_logical_shared_InitializeHandler(/** InitializeHandler */ handler) {
   handler.m_onInitialize__org_gwtproject_event_logical_shared_InitializeEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_event_logical_shared_InitializeHandler(/**@type {InitializeHandler} */ ($Casts.$to(arg0, InitializeHandler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_event_logical_shared_InitializeHandler(/**@type {InitializeHandler}*/ ($Casts.$to(arg0, InitializeHandler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   InitializeEvent.$clinit = () =>{};
   InitializeEvent.$loadModules();
   Event.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof InitializeEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   InitializeHandler = goog.module.get('org.gwtproject.event.logical.shared.InitializeHandler$impl');
@@ -112,7 +79,7 @@ class InitializeEvent extends Event {
 }
 $Util.$setClassMetadata(InitializeEvent, 'org.gwtproject.event.logical.shared.InitializeEvent');
 
-/** @public {Type<InitializeHandler>} */
+/**@type {Type<InitializeHandler>}*/
 InitializeEvent.f_TYPE__org_gwtproject_event_logical_shared_InitializeEvent_;
 
 exports = InitializeEvent; 

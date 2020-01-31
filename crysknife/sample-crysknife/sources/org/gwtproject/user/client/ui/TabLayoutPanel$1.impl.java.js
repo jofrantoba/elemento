@@ -12,65 +12,42 @@ let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
  * @implements {ClickHandler}
   */
 class $1 extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {TabLayoutPanel} */
+  /**@type {TabLayoutPanel}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_TabLayoutPanel_1;
-  /** @public {Widget} */
+  /**@type {Widget}*/
   this.$c_child;
  }
- /**
-  * @param {TabLayoutPanel} $outer_this
-  * @param {Widget} $c_child
-  * @return {!$1}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_TabLayoutPanel__org_gwtproject_user_client_ui_Widget($outer_this, $c_child) {
+ /** @return {!$1} */
+ static $create__org_gwtproject_user_client_ui_TabLayoutPanel__org_gwtproject_user_client_ui_Widget(/** TabLayoutPanel */ $outer_this, /** Widget */ $c_child) {
   $1.$clinit();
   let $instance = new $1();
   $instance.$ctor__org_gwtproject_user_client_ui_TabLayoutPanel_1__org_gwtproject_user_client_ui_TabLayoutPanel__org_gwtproject_user_client_ui_Widget($outer_this, $c_child);
   return $instance;
  }
- /**
-  * @param {TabLayoutPanel} $outer_this
-  * @param {Widget} $c_child
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_TabLayoutPanel_1__org_gwtproject_user_client_ui_TabLayoutPanel__org_gwtproject_user_client_ui_Widget($outer_this, $c_child) {
+ 
+ $ctor__org_gwtproject_user_client_ui_TabLayoutPanel_1__org_gwtproject_user_client_ui_TabLayoutPanel__org_gwtproject_user_client_ui_Widget(/** TabLayoutPanel */ $outer_this, /** Widget */ $c_child) {
   this.f_$outer_this__org_gwtproject_user_client_ui_TabLayoutPanel_1 = $outer_this;
   this.$c_child = $c_child;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {ClickEvent} event
-  * @public
-  */
- m_onClick__org_gwtproject_event_dom_client_ClickEvent(event) {
+ /** @override */
+ m_onClick__org_gwtproject_event_dom_client_ClickEvent(/** ClickEvent */ event) {
   this.f_$outer_this__org_gwtproject_user_client_ui_TabLayoutPanel_1.m_selectTab__org_gwtproject_user_client_ui_Widget(this.$c_child);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $1.$clinit = () =>{};
   $1.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $1;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

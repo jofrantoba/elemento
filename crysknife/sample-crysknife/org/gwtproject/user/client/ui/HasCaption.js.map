@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasCaption.impl.java.js",
-"lineCount":26,
-"mappings":"A;;;;;;;MAqBiB,U;;;;;;CAMR,c;;;;;;CAMF,8B,CAAkBA,O;;;;QAZR,O;EAAAC,6B;EAAAA;",
+"lineCount":16,
+"mappings":"A;;;;;;;MAqBiB,U;;CAMR,c;;CAMF,8B,gBAAkBA,O;;QAZR,O;EAAAC,6B;EAAAA;",
 "sources":["HasCaption.java"],
 "names":["caption","org.gwtproject.user.client.ui.HasCaption.<clinit>"]
 }

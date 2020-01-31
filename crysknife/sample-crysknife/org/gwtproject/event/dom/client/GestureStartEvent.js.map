@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"GestureStartEvent.impl.java.js",
-"lineCount":116,
-"mappings":"A;;;;;;;;;;;;;;MAoBa,iB;;;;CAAA,W;EAAAA,Q;;;;;;QAWD,S;EAAAC,4B;EAAAA,wC;EAAAA,uE;EAAAA,iB;;;;;CAAA,0D;EAAAC,yD;;;;;;QAO8B,W;EAAAC,4B;EACtCA,oF;;;;;;;CAIqC,qB;EACrCC,oF;;;;;;CAGY,e;EACZC,yG;;;;;;CAGY,Y;EACZC,sG;;;;;;CAIa,+D,CAA6BC,O;EAC1CC,kF;;;;;;;;CArCS,4B;EAAAA,gJ;;;;;QAAA,O;EAAAC,oC;EAAAA,iC;EAAAA,mB;EAEXA,yS;;;;;;;;;;;;;;;;;;;;;;;;AAFW;kBAGoC,0DAHpC;",
+"lineCount":81,
+"mappings":"A;;;;;;;;;;;;;;MAoBa,iB;;CAAA,W;EAAAA,Q;;;QAWD,S;EAAAC,4B;EAAAA,wC;EAAAA,uE;EAAAA,iB;;;CAAA,0D;EAAAC,yD;;;QAO8B,W;EAAAC,4B;EACtCA,oF;;;CAIqC,qB;EACrCC,oF;;;CAGY,e;EACZC,yG;;;CAGY,Y;EACZC,sG;;;CAIa,+D,4BAA6BC,O;EAC1CC,kF;;;;CArCS,4B;EAAAA,+I;;;QAAA,O;EAAAC,oC;EAAAA,iC;EAAAA,mB;EAEXA,wS;;;;;;;;;;;;;;;;;;AAFW;kBAGoC,0DAHpC;",
 "sources":["GestureStartEvent.java"],
 "names":["org.gwtproject.event.dom.client.GestureStartEvent.<synthetic: ctor_js>","org.gwtproject.event.dom.client.GestureStartEvent.<synthetic: ctor_create>","org.gwtproject.event.dom.client.GestureStartEvent.<init>","org.gwtproject.event.dom.client.GestureStartEvent.getType","org.gwtproject.event.dom.client.GestureStartEvent.getAssociatedType","org.gwtproject.event.dom.client.GestureStartEvent.getRotation","org.gwtproject.event.dom.client.GestureStartEvent.getScale","handler","org.gwtproject.event.dom.client.GestureStartEvent.dispatch","org.gwtproject.event.dom.client.GestureStartEvent.<clinit>"]
 }

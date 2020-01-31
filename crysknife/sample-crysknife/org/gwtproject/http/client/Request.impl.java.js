@@ -15,46 +15,29 @@ let ResponseImpl = goog.forwardDeclare('org.gwtproject.http.client.ResponseImpl$
 let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 
 class Request extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {number} */
+  /**@type {number}*/
   this.f_timeoutMillis__org_gwtproject_http_client_Request_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_timerId__org_gwtproject_http_client_Request_ = 0.0;
-  /** @public {XMLHttpRequest} */
+  /**@type {XMLHttpRequest}*/
   this.f_xmlHttpRequest__org_gwtproject_http_client_Request_;
  }
- /**
-  * @param {XMLHttpRequest} xmlHttpRequest
-  * @return {Response}
-  * @public
-  */
- static m_createResponse__elemental2_dom_XMLHttpRequest(xmlHttpRequest) {
+ /** @return {Response} */
+ static m_createResponse__elemental2_dom_XMLHttpRequest(/** XMLHttpRequest */ xmlHttpRequest) {
   return ResponseImpl.$create__elemental2_dom_XMLHttpRequest(xmlHttpRequest);
  }
- /**
-  * @param {XMLHttpRequest} xmlHttpRequest
-  * @param {number} timeoutMillis
-  * @param {RequestCallback} callback
-  * @return {!Request}
-  * @public
-  */
- static $create__elemental2_dom_XMLHttpRequest__int__org_gwtproject_http_client_RequestCallback(xmlHttpRequest, timeoutMillis, callback) {
+ /** @return {!Request} */
+ static $create__elemental2_dom_XMLHttpRequest__int__org_gwtproject_http_client_RequestCallback(/** XMLHttpRequest */ xmlHttpRequest, /** number */ timeoutMillis, /** RequestCallback */ callback) {
   Request.$clinit();
   let $instance = new Request();
   $instance.$ctor__org_gwtproject_http_client_Request__elemental2_dom_XMLHttpRequest__int__org_gwtproject_http_client_RequestCallback(xmlHttpRequest, timeoutMillis, callback);
   return $instance;
  }
- /**
-  * @param {XMLHttpRequest} xmlHttpRequest
-  * @param {number} timeoutMillis
-  * @param {RequestCallback} callback
-  * @public
-  */
- $ctor__org_gwtproject_http_client_Request__elemental2_dom_XMLHttpRequest__int__org_gwtproject_http_client_RequestCallback(xmlHttpRequest, timeoutMillis, callback) {
+ 
+ $ctor__org_gwtproject_http_client_Request__elemental2_dom_XMLHttpRequest__int__org_gwtproject_http_client_RequestCallback(/** XMLHttpRequest */ xmlHttpRequest, /** number */ timeoutMillis, /** RequestCallback */ callback) {
   this.$ctor__java_lang_Object__();
   if ($Equality.$same(xmlHttpRequest, null)) {
    throw $Exceptions.toJs(NullPointerException.$create__());
@@ -75,9 +58,7 @@ class Request extends j_l_Object {
    this.f_timerId__org_gwtproject_http_client_Request_ = 0.0;
   }
  }
- /**
-  * @public
-  */
+ 
  m_cancel__() {
   if ($Equality.$same(this.f_xmlHttpRequest__org_gwtproject_http_client_Request_, null)) {
    return;
@@ -87,10 +68,7 @@ class Request extends j_l_Object {
   this.f_xmlHttpRequest__org_gwtproject_http_client_Request_ = null;
   xhr.abort();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isPending__() {
   if ($Equality.$same(this.f_xmlHttpRequest__org_gwtproject_http_client_Request_, null)) {
    return false;
@@ -98,11 +76,8 @@ class Request extends j_l_Object {
   let readyState = this.f_xmlHttpRequest__org_gwtproject_http_client_Request_.readyState;
   return readyState == XMLHttpRequest.OPENED || readyState == XMLHttpRequest.HEADERS_RECEIVED || readyState == XMLHttpRequest.LOADING;
  }
- /**
-  * @param {RequestCallback} callback
-  * @public
-  */
- m_fireOnResponseReceived__org_gwtproject_http_client_RequestCallback_$pp_org_gwtproject_http_client(callback) {
+ 
+ m_fireOnResponseReceived__org_gwtproject_http_client_RequestCallback_$pp_org_gwtproject_http_client(/** RequestCallback */ callback) {
   if ($Equality.$same(this.f_xmlHttpRequest__org_gwtproject_http_client_Request_, null)) {
    return;
   }
@@ -112,44 +87,31 @@ class Request extends j_l_Object {
   let response = Request.m_createResponse__elemental2_dom_XMLHttpRequest(xhr);
   callback.m_onResponseReceived__org_gwtproject_http_client_Request__org_gwtproject_http_client_Response(this, response);
  }
- /**
-  * @public
-  */
+ 
  m_cancelTimer___$p_org_gwtproject_http_client_Request() {
   if (this.f_timeoutMillis__org_gwtproject_http_client_Request_ > 0) {
    window.clearTimeout(this.f_timerId__org_gwtproject_http_client_Request_);
   }
  }
- /**
-  * @param {RequestCallback} callback
-  * @public
-  */
- m_fireOnTimeout__org_gwtproject_http_client_RequestCallback_$p_org_gwtproject_http_client_Request(callback) {
+ 
+ m_fireOnTimeout__org_gwtproject_http_client_RequestCallback_$p_org_gwtproject_http_client_Request(/** RequestCallback */ callback) {
   if ($Equality.$same(this.f_xmlHttpRequest__org_gwtproject_http_client_Request_, null)) {
    return;
   }
   this.m_cancel__();
   callback.m_onError__org_gwtproject_http_client_Request__java_lang_Throwable(this, RequestTimeoutException.$create__org_gwtproject_http_client_Request__int(this, this.f_timeoutMillis__org_gwtproject_http_client_Request_));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Request.$clinit = () =>{};
   Request.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Request;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('elemental2.dom.DomGlobal.$Overlay$impl');
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');

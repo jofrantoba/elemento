@@ -12,49 +12,28 @@ const IsWidget = goog.require('org.gwtproject.user.client.ui.IsWidget$impl');
  * @extends {IsWidget}
  */
 class HorizontalScrollbar {
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {number} */
  m_getScrollWidth__() {}
- /**
-  * @abstract
-  * @param {number} width
-  * @public
-  */
- m_setScrollWidth__int(width) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_setScrollWidth__int(/** number */ width) {}
+ 
  static $clinit() {
   HorizontalScrollbar.$clinit = () =>{};
   HorizontalScrollbar.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasHorizontalScrolling.$markImplementor(classConstructor);
-  HasScrollHandlers.$markImplementor(classConstructor);
-  IsWidget.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_HorizontalScrollbar = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasHorizontalScrolling.$markImplementor(ctor);
+  HasScrollHandlers.$markImplementor(ctor);
+  IsWidget.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_HorizontalScrollbar = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_HorizontalScrollbar;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

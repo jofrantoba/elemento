@@ -17,109 +17,69 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {Resources}
   */
 class CustomScrollPanel__ResourcesImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!CustomScrollPanel__ResourcesImpl}
-  * @public
-  */
+ /** @return {!CustomScrollPanel__ResourcesImpl} */
  static $create__() {
   CustomScrollPanel__ResourcesImpl.$clinit();
   let $instance = new CustomScrollPanel__ResourcesImpl();
   $instance.$ctor__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @public
-  */
+ 
  m_customScrollPanelStyleInitializer___$p_org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl() {
   CustomScrollPanel__ResourcesImpl.$f_customScrollPanelStyle__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl_ = $1.$create__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl(this);
  }
- /**
-  * @override
-  * @return {Style}
-  * @public
-  */
+ /** @override @return {Style} */
  m_customScrollPanelStyle__() {
   return customScrollPanelStyleInitializer.m_get__();
  }
- /**
-  * @return {Array<ResourcePrototype>}
-  * @public
-  */
+ /** @return {Array<ResourcePrototype>} */
  m_getResources__() {
-  return /**@type {!Array<ResourcePrototype>} */ ($Arrays.$init([this.m_customScrollPanelStyle__()], ResourcePrototype));
+  return /**@type {!Array<ResourcePrototype>}*/ ($Arrays.$init([this.m_customScrollPanelStyle__()], ResourcePrototype));
  }
- /**
-  * @param {?string} name
-  * @return {ResourcePrototype}
-  * @public
-  */
- m_getResource__java_lang_String(name) {
+ /** @return {ResourcePrototype} */
+ m_getResource__java_lang_String(/** ?string */ name) {
   if ($Equality.$same(CustomScrollPanel__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl_, null)) {
-   CustomScrollPanel__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl_ = /**@type {!HashMap<?string, ResourcePrototype>} */ (HashMap.$create__());
+   CustomScrollPanel__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl_ = /**@type {!HashMap<?string, ResourcePrototype>}*/ (HashMap.$create__());
    CustomScrollPanel__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl_.put("customScrollPanelStyle", this.m_customScrollPanelStyle__());
   }
-  return /**@type {ResourcePrototype} */ ($Casts.$to(CustomScrollPanel__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl_.get(name), ResourcePrototype));
+  return /**@type {ResourcePrototype}*/ ($Casts.$to(CustomScrollPanel__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl_.get(name), ResourcePrototype));
  }
- /**
-  * @return {CustomScrollPanel__ResourcesImpl}
-  * @public
-  */
+ /** @return {CustomScrollPanel__ResourcesImpl} */
  static get f__instance0__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl_() {
   return (CustomScrollPanel__ResourcesImpl.$clinit(), CustomScrollPanel__ResourcesImpl.$f__instance0__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl_);
  }
- /**
-  * @param {CustomScrollPanel__ResourcesImpl} value
-  * @public
-  */
- static set f__instance0__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl_(value) {
+ 
+ static set f__instance0__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl_(/** CustomScrollPanel__ResourcesImpl */ value) {
   (CustomScrollPanel__ResourcesImpl.$clinit(), CustomScrollPanel__ResourcesImpl.$f__instance0__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl_ = value);
  }
- /**
-  * @return {Style}
-  * @public
-  */
+ /** @return {Style} */
  static get f_customScrollPanelStyle__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl_() {
   return (CustomScrollPanel__ResourcesImpl.$clinit(), CustomScrollPanel__ResourcesImpl.$f_customScrollPanelStyle__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl_);
  }
- /**
-  * @param {Style} value
-  * @public
-  */
- static set f_customScrollPanelStyle__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl_(value) {
+ 
+ static set f_customScrollPanelStyle__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl_(/** Style */ value) {
   (CustomScrollPanel__ResourcesImpl.$clinit(), CustomScrollPanel__ResourcesImpl.$f_customScrollPanelStyle__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl_ = value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CustomScrollPanel__ResourcesImpl.$clinit = () =>{};
   CustomScrollPanel__ResourcesImpl.$loadModules();
   j_l_Object.$clinit();
   CustomScrollPanel__ResourcesImpl.$f__instance0__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl_ = CustomScrollPanel__ResourcesImpl.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CustomScrollPanel__ResourcesImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   HashMap = goog.module.get('java.util.HashMap$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -135,11 +95,11 @@ $Util.$setClassMetadata(CustomScrollPanel__ResourcesImpl, 'org.gwtproject.user.c
 
 Resources.$markImplementor(CustomScrollPanel__ResourcesImpl);
 
-/** @private {CustomScrollPanel__ResourcesImpl} */
+/**@private {CustomScrollPanel__ResourcesImpl}*/
 CustomScrollPanel__ResourcesImpl.$f__instance0__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl_;
-/** @public {HashMap<?string, ResourcePrototype>} */
+/**@type {HashMap<?string, ResourcePrototype>}*/
 CustomScrollPanel__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl_;
-/** @private {Style} */
+/**@private {Style}*/
 CustomScrollPanel__ResourcesImpl.$f_customScrollPanelStyle__org_gwtproject_user_client_ui_CustomScrollPanel_ResourcesImpl_;
 
 exports = CustomScrollPanel__ResourcesImpl; 

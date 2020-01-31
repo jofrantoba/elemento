@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HighlightEvent.impl.java.js",
-"lineCount":131,
-"mappings":"A;;;;;;;;;;;;;;;;MAyBa,c;;;;CAAA,W;EAAAA,Q;EAAAA;OAiCK,kEAjCLA,C;;;;;;;;QAa6D,kF,CAClEC,M,EAAUC,W;EADwDC,yB;EAEtEA;GACEA,IAAkBC,KAAlBD,8FADFA;GAEEA,kGAFFA;G;;;;;;QAWsC,W;EAAAE,yB;EACtCA;GACEA,yIADFA;G;EAGAA,kF;;;;;;;;QAUQ,yB,CAAiBH,W;EAAjBI,yB;EAAAA,qC;EAAAA,mG;EAAAA,iB;;;;;;CAAA,2E,CAAiBJ,W;EAAjBK,kD;EACRA,sF;;;;;;;CAOqC,qB;EACrCC,uG;;;;;;CAQO,kB;EACPC,+E;;;;;;CAIa,gE,CAA6BC,O;EAC1CC,gF;;;;;;;;CA/DS,4B;EAAAA,8I;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,gB;;;;;;;;;;;;;;;;;;;;;;;AAAA;eAG8B,2DAH9B;",
+"lineCount":91,
+"mappings":"A;;;;;;;;;;;;;;;;MAyBa,c;;CAAA,W;EAAAA,Q;EAAAA;OAiCK,kEAjCLA,C;;;QAa6D,kF,UAClEC,M,aAAUC,W;EADwDC,yB;EAEtEA;GACEA,IAAkBC,KAAlBD,6FADFA;GAEEA,iGAFFA;G;;;QAWsC,W;EAAAE,yB;EACtCA;GACEA,wIADFA;G;EAGAA,kF;;;QAUQ,yB,UAAiBH,W;EAAjBI,yB;EAAAA,qC;EAAAA,mG;EAAAA,iB;;;CAAA,2E,UAAiBJ,W;EAAjBK,kD;EACRA,sF;;;CAOqC,qB;EACrCC,sG;;;CAQO,kB;EACPC,+E;;;CAIa,gE,4BAA6BC,O;EAC1CC,gF;;;;CA/DS,4B;EAAAA,6I;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,gB;;;;;;;;;;;;;;;;;AAAA;eAG8B,2DAH9B;",
 "sources":["HighlightEvent.java"],
 "names":["org.gwtproject.event.logical.shared.HighlightEvent.<synthetic: ctor_js>","source","highlighted","org.gwtproject.event.logical.shared.HighlightEvent.fire","event","org.gwtproject.event.logical.shared.HighlightEvent.getType","org.gwtproject.event.logical.shared.HighlightEvent.<synthetic: ctor_create>","org.gwtproject.event.logical.shared.HighlightEvent.<init>","org.gwtproject.event.logical.shared.HighlightEvent.getAssociatedType","org.gwtproject.event.logical.shared.HighlightEvent.getHighlighted","handler","org.gwtproject.event.logical.shared.HighlightEvent.dispatch","org.gwtproject.event.logical.shared.HighlightEvent.<clinit>"]
 }

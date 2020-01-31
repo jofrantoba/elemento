@@ -10,54 +10,37 @@ let CanPlayThroughEvent = goog.forwardDeclare('org.gwtproject.event.dom.client.C
  * @implements {CanPlayThroughHandler}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(CanPlayThroughEvent):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(CanPlayThroughEvent):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(CanPlayThroughEvent):void} */
+  /**@type {?function(CanPlayThroughEvent):void}*/
   this.f_$$fn__org_gwtproject_event_dom_client_CanPlayThroughHandler_$LambdaAdaptor;
   this.$ctor__org_gwtproject_event_dom_client_CanPlayThroughHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_CanPlayThroughHandler_$JsFunction(fn);
  }
- /**
-  * @param {?function(CanPlayThroughEvent):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_event_dom_client_CanPlayThroughHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_CanPlayThroughHandler_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_event_dom_client_CanPlayThroughHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_CanPlayThroughHandler_$JsFunction(/** ?function(CanPlayThroughEvent):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_event_dom_client_CanPlayThroughHandler_$LambdaAdaptor = fn;
  }
- /**
-  * @param {CanPlayThroughEvent} arg0
-  * @public
-  */
- m_onCanPlayThrough__org_gwtproject_event_dom_client_CanPlayThroughEvent(arg0) {
+ 
+ m_onCanPlayThrough__org_gwtproject_event_dom_client_CanPlayThroughEvent(/** CanPlayThroughEvent */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_event_dom_client_CanPlayThroughHandler_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

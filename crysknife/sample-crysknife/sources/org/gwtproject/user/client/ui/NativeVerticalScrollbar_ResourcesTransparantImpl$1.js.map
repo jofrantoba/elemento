@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"NativeVerticalScrollbar_ResourcesTransparantImpl$1.impl.java.js",
-"lineCount":86,
-"mappings":"A;;;;;;;;;;;;MAOqG,E;;;;CAAA,W;EAAAA,Q;EAAAA;uG;EAAAA;OAI/E,6FAJ+EA,S;;;;;;;QAAA,uF;EAAAC,a;EAAAA,yB;EAAAA,+L;EAAAA,iB;;;;;;CAAA,uK;EAAAC,mH;EAAAA,iC;;;;;;;CACjF,W;EACZC,sC;;;;;;;CAGa,kB;EACbC;GACEA,0GADFA;GAEEA,6DAFFA;GAGEA,YAHFA;G;EAKAA,a;;;;;;;CAEY,W;EACZC,sO;;;;;;;CAEsB,2B;EACtBC,qB;;;;;QAjB6F,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":59,
+"mappings":"A;;;;;;;;;;;;MAOqG,E;;CAAA,W;EAAAA,Q;EAAAA;uG;EAAAA;OAI/E,6FAJ+EA,S;;;QAAA,uF;EAAAC,a;EAAAA,yB;EAAAA,+L;EAAAA,iB;;;CAAA,uK;EAAAC,mH;EAAAA,iC;;;CACjF,W;EACZC,sC;;;CAGa,kB;EACbC;GACEA,0GADFA;GAEEA,6DAFFA;GAGEA,YAHFA;G;EAKAA,a;;;CAEY,W;EACZC,sO;;;CAEsB,2B;EACtBC,qB;;;QAjB6F,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["NativeVerticalScrollbar_ResourcesTransparantImpl.java"],
 "names":["org.gwtproject.user.client.ui.NativeVerticalScrollbar_ResourcesTransparantImpl$1.<synthetic: ctor_js>","org.gwtproject.user.client.ui.NativeVerticalScrollbar_ResourcesTransparantImpl$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.NativeVerticalScrollbar_ResourcesTransparantImpl$1.<init>","org.gwtproject.user.client.ui.NativeVerticalScrollbar_ResourcesTransparantImpl$1.getName","org.gwtproject.user.client.ui.NativeVerticalScrollbar_ResourcesTransparantImpl$1.ensureInjected","org.gwtproject.user.client.ui.NativeVerticalScrollbar_ResourcesTransparantImpl$1.getText","org.gwtproject.user.client.ui.NativeVerticalScrollbar_ResourcesTransparantImpl$1.nativeVerticalScrollbar","org.gwtproject.user.client.ui.NativeVerticalScrollbar_ResourcesTransparantImpl$1.<clinit>"]
 }

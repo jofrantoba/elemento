@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ColumnheaderRole.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;;;;;;;;MA6BiB,gB;;;;;;;CAOR,wD,CAA4BA,O;;;;;;CAM9B,2D,CAA+BA,O;;;;;;;CAM/B,8F,CAA4BA,O,EAAmBC,K;;;;QAnBrC,O;EAAAC,mC;EAAAA;",
+"lineCount":27,
+"mappings":"A;;;;;;;;;;;;;;;;MA6BiB,gB;;CAOR,wD,eAA4BA,O;;CAM9B,2D,eAA+BA,O;;CAM/B,8F,eAA4BA,O,mBAAmBC,K;;QAnBrC,O;EAAAC,mC;EAAAA;",
 "sources":["ColumnheaderRole.java"],
 "names":["element","value","org.gwtproject.aria.client.ColumnheaderRole.<clinit>"]
 }

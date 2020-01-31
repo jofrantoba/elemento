@@ -18,53 +18,38 @@ let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
  * @implements {RepeatingCommand}
   */
 class MomentumCommand extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {TouchScroller} */
+  /**@type {TouchScroller}*/
   this.f_$outer_this__org_gwtproject_touch_client_TouchScroller_MomentumCommand;
-  /** @public {Duration} */
+  /**@type {Duration}*/
   this.f_duration__org_gwtproject_touch_client_TouchScroller_MomentumCommand_;
-  /** @public {Point} */
+  /**@type {Point}*/
   this.f_initialPosition__org_gwtproject_touch_client_TouchScroller_MomentumCommand_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_lastElapsedMillis__org_gwtproject_touch_client_TouchScroller_MomentumCommand_ = 0;
-  /** @public {State} */
+  /**@type {State}*/
   this.f_state__org_gwtproject_touch_client_TouchScroller_MomentumCommand_;
-  /** @public {HandlerRegistration} */
+  /**@type {HandlerRegistration}*/
   this.f_windowResizeHandler__org_gwtproject_touch_client_TouchScroller_MomentumCommand_;
  }
- /**
-  * @param {TouchScroller} $outer_this
-  * @param {Point} endVelocity
-  * @return {!MomentumCommand}
-  * @public
-  */
- static $create__org_gwtproject_touch_client_TouchScroller__org_gwtproject_touch_client_Point($outer_this, endVelocity) {
+ /** @return {!MomentumCommand} */
+ static $create__org_gwtproject_touch_client_TouchScroller__org_gwtproject_touch_client_Point(/** TouchScroller */ $outer_this, /** Point */ endVelocity) {
   MomentumCommand.$clinit();
   let $instance = new MomentumCommand();
   $instance.$ctor__org_gwtproject_touch_client_TouchScroller_MomentumCommand__org_gwtproject_touch_client_TouchScroller__org_gwtproject_touch_client_Point($outer_this, endVelocity);
   return $instance;
  }
- /**
-  * @param {TouchScroller} $outer_this
-  * @param {Point} endVelocity
-  * @public
-  */
- $ctor__org_gwtproject_touch_client_TouchScroller_MomentumCommand__org_gwtproject_touch_client_TouchScroller__org_gwtproject_touch_client_Point($outer_this, endVelocity) {
+ 
+ $ctor__org_gwtproject_touch_client_TouchScroller_MomentumCommand__org_gwtproject_touch_client_TouchScroller__org_gwtproject_touch_client_Point(/** TouchScroller */ $outer_this, /** Point */ endVelocity) {
   this.f_$outer_this__org_gwtproject_touch_client_TouchScroller_MomentumCommand = $outer_this;
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_touch_client_TouchScroller_MomentumCommand();
   this.f_state__org_gwtproject_touch_client_TouchScroller_MomentumCommand_ = $outer_this.f_momentum__org_gwtproject_touch_client_TouchScroller.m_createState__org_gwtproject_touch_client_Point__org_gwtproject_touch_client_Point(this.f_initialPosition__org_gwtproject_touch_client_TouchScroller_MomentumCommand_, endVelocity);
   this.f_windowResizeHandler__org_gwtproject_touch_client_TouchScroller_MomentumCommand_ = Window.m_addResizeHandler__org_gwtproject_event_logical_shared_ResizeHandler($1.$create__org_gwtproject_touch_client_TouchScroller_MomentumCommand(this));
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_execute__() {
   if (!$Equality.$same(this, this.f_$outer_this__org_gwtproject_touch_client_TouchScroller_MomentumCommand.f_momentumCommand__org_gwtproject_touch_client_TouchScroller)) {
    this.m_finish___$p_org_gwtproject_touch_client_TouchScroller_MomentumCommand();
@@ -91,9 +76,7 @@ class MomentumCommand extends j_l_Object {
   }
   return notDone;
  }
- /**
-  * @public
-  */
+ 
  m_finish___$p_org_gwtproject_touch_client_TouchScroller_MomentumCommand() {
   if (!$Equality.$same(this.f_windowResizeHandler__org_gwtproject_touch_client_TouchScroller_MomentumCommand_, null)) {
    this.f_windowResizeHandler__org_gwtproject_touch_client_TouchScroller_MomentumCommand_.m_removeHandler__();
@@ -103,33 +86,23 @@ class MomentumCommand extends j_l_Object {
    this.f_$outer_this__org_gwtproject_touch_client_TouchScroller_MomentumCommand.f_momentumCommand__org_gwtproject_touch_client_TouchScroller = null;
   }
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_touch_client_TouchScroller_MomentumCommand() {
   this.f_duration__org_gwtproject_touch_client_TouchScroller_MomentumCommand_ = Duration.$create__();
   this.f_initialPosition__org_gwtproject_touch_client_TouchScroller_MomentumCommand_ = this.f_$outer_this__org_gwtproject_touch_client_TouchScroller_MomentumCommand.m_getWidgetScrollPosition___$p_org_gwtproject_touch_client_TouchScroller();
   this.f_lastElapsedMillis__org_gwtproject_touch_client_TouchScroller_MomentumCommand_ = 0;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MomentumCommand.$clinit = () =>{};
   MomentumCommand.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof MomentumCommand;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   Duration = goog.module.get('org.gwtproject.core.client.Duration$impl');

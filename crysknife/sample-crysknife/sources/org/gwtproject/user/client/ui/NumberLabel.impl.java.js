@@ -12,71 +12,47 @@ let NumberFormatRenderer = goog.forwardDeclare('org.gwtproject.text.client.Numbe
  * @extends {ValueLabel<T>}
   */
 class NumberLabel extends ValueLabel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * Factory method corresponding to constructor 'NumberLabel()'.
-  * @template T
-  * @return {!NumberLabel<T>}
-  * @public
-  */
+ //Factory method corresponding to constructor 'NumberLabel()'.
+ /** @template T @return {!NumberLabel<T>} */
  static $create__() {
   NumberLabel.$clinit();
   let $instance = new NumberLabel();
   $instance.$ctor__org_gwtproject_user_client_ui_NumberLabel__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'NumberLabel()'.
-  * @public
-  */
+ //Initialization from constructor 'NumberLabel()'.
+ 
  $ctor__org_gwtproject_user_client_ui_NumberLabel__() {
   this.$ctor__org_gwtproject_user_client_ui_ValueLabel__org_gwtproject_text_shared_Renderer(NumberFormatRenderer.$create__());
  }
- /**
-  * Factory method corresponding to constructor 'NumberLabel(NumberFormat)'.
-  * @template T
-  * @param {NumberFormat} format
-  * @return {!NumberLabel<T>}
-  * @public
-  */
- static $create__org_gwtproject_i18n_client_NumberFormat(format) {
+ //Factory method corresponding to constructor 'NumberLabel(NumberFormat)'.
+ /** @template T @return {!NumberLabel<T>} */
+ static $create__org_gwtproject_i18n_client_NumberFormat(/** NumberFormat */ format) {
   NumberLabel.$clinit();
   let $instance = new NumberLabel();
   $instance.$ctor__org_gwtproject_user_client_ui_NumberLabel__org_gwtproject_i18n_client_NumberFormat(format);
   return $instance;
  }
- /**
-  * Initialization from constructor 'NumberLabel(NumberFormat)'.
-  * @param {NumberFormat} format
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_NumberLabel__org_gwtproject_i18n_client_NumberFormat(format) {
+ //Initialization from constructor 'NumberLabel(NumberFormat)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_NumberLabel__org_gwtproject_i18n_client_NumberFormat(/** NumberFormat */ format) {
   this.$ctor__org_gwtproject_user_client_ui_ValueLabel__org_gwtproject_text_shared_Renderer(NumberFormatRenderer.$create__org_gwtproject_i18n_client_NumberFormat(format));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NumberLabel.$clinit = () =>{};
   NumberLabel.$loadModules();
   ValueLabel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof NumberLabel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   NumberFormatRenderer = goog.module.get('org.gwtproject.text.client.NumberFormatRenderer$impl');
  }

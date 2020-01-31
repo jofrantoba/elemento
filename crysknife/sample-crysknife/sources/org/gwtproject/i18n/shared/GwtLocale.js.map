@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"GwtLocale.impl.java.js",
-"lineCount":161,
-"mappings":"A;;;;;;;;;;;MAwBiB,S;;;;;;;CAOX,iD,CAAoBA,C;;;;;;CAYR,c;;;;;;CAcT,e;;;;;;CAcG,oB;;;;;;CASM,yB;;;;;;CASA,uB;;;;;;CAKT,e;;;;;;CAKA,sB;;;;;;CAKA,a;;;;;;CAKA,oB;;;;;;CAKA,a;;;;;;CAKA,oB;;;;;;CAKA,c;;;;;;CAKA,qB;;;;;;;CAUC,oD,CAAuBC,M;;;;;;CAKvB,a;;;;;;CAKD,Q;;;;;;;CAQC,sD,CAAyBC,K;;;;QArIlB,O;EAAAC,4B;EAAAA,yB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAEf;UAAO,sDAAP;",
+"lineCount":73,
+"mappings":"A;;;;;;;;;;;MAwBiB,S;;CAOX,iD,kBAAoBA,C;;CAYR,c;;CAcT,e;;CAcG,oB;;CASM,yB;;CASA,uB;;CAKT,e;;CAKA,sB;;CAKA,a;;CAKA,oB;;CAKA,a;;CAKA,oB;;CAKA,c;;CAKA,qB;;CAUC,oD,kBAAuBC,M;;CAKvB,a;;CAKD,Q;;CAQC,sD,kBAAyBC,K;;QArIlB,O;EAAAC,4B;EAAAA,yB;;;;;;;;;;;;;;;;;;;;AAEf;UAAO,sDAAP;",
 "sources":["GwtLocale.java"],
 "names":["o","parent","other","org.gwtproject.i18n.shared.GwtLocale.<clinit>"]
 }

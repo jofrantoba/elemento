@@ -14,38 +14,25 @@ const HasProgressHandlers = goog.require('org.gwtproject.event.dom.client.HasPro
  * @extends {HasLoadedMetadataHandlers}
  */
 class HasAllMediaHandlers {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HasAllMediaHandlers.$clinit = () =>{};
   HasAllMediaHandlers.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasEndedHandlers.$markImplementor(classConstructor);
-  HasProgressHandlers.$markImplementor(classConstructor);
-  HasCanPlayThroughHandlers.$markImplementor(classConstructor);
-  HasLoadedMetadataHandlers.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_HasAllMediaHandlers = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasEndedHandlers.$markImplementor(ctor);
+  HasProgressHandlers.$markImplementor(ctor);
+  HasCanPlayThroughHandlers.$markImplementor(ctor);
+  HasLoadedMetadataHandlers.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_HasAllMediaHandlers = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_HasAllMediaHandlers;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

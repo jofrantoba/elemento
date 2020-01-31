@@ -11,41 +11,24 @@ let Collection = goog.forwardDeclare('java.util.Collection$impl');
  * @extends {HasValue<T>}
  */
 class HasConstrainedValue {
- /**
-  * @abstract
-  * @param {Collection<T>} values
-  * @public
-  */
- m_setAcceptableValues__java_util_Collection(values) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_setAcceptableValues__java_util_Collection(/** Collection<T> */ values) {}
+ 
  static $clinit() {
   HasConstrainedValue.$clinit = () =>{};
   HasConstrainedValue.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasValue.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_HasConstrainedValue = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasValue.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_HasConstrainedValue = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_HasConstrainedValue;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

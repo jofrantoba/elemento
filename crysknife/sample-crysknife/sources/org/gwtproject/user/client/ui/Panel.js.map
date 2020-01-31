@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Panel.impl.java.js",
-"lineCount":133,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;MAuBsB,K;;;;CAAA,W;EAAAA,Q;;;;;CAAA,4C;EAAAC,qD;;;;;;;CAsCR,2C,CAAWC,K;EACrBC,4H;;;;;;;CAIU,6C,CAAaD,K;EACvBC,yH;;;;;;CAGU,S;EACVC,IAAiBC,EAAjBD,uB;EACAA;GACEA,cADFA;GAEEA,gBAFFA;G;;;;;;;;;CAiCsB,8C,CAAcF,K;;;;;;;CAEvB,gD,CAAgBA,K;EAC7BI,mI;;;;;;CAamB,6C,CAAaJ,K;EAChCK,+D;EACAA,8D;;;;;;CAIa,oB;EACbC,sN;;;;;;CAIa,oB;EACbC,sN;;;;;;CAqBmB,8C,CAAcP,K;EACjCQ,+D;EACAA,8D;;;;;;;;CArIkB,sC;EAAAC,0F;;;;;;;;CAAA,e;EAAAC,sG;;;;;QAAA,O;EAAAC,wB;EAAAA,qB;EAAAA,iB;EAAAA;",
+"lineCount":85,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;MAuBsB,K;;CAAA,W;EAAAA,Q;;;CAAA,4C;EAAAC,qD;;;CAsCR,2C,eAAWC,K;EACrBC,4H;;;CAIU,6C,iBAAaD,K;EACvBC,yH;;;CAGU,S;EACVC,IAAiBC,EAAjBD,uB;EACAA;GACEA,cADFA;GAEEA,gBAFFA;G;;;CAiCsB,8C,eAAcF,K;;CAEvB,gD,iBAAgBA,K;EAC7BI,mI;;;CAamB,6C,eAAaJ,K;EAChCK,+D;EACAA,8D;;;CAIa,oB;EACbC,sN;;;CAIa,oB;EACbC,sN;;;CAqBmB,8C,eAAcP,K;EACjCQ,+D;EACAA,8D;;;;CArIkB,sC;EAAAC,0F;;;;CAAA,e;EAAAC,qG;;;QAAA,O;EAAAC,wB;EAAAA,qB;EAAAA,iB;EAAAA;",
 "sources":["Panel.java"],
 "names":["org.gwtproject.user.client.ui.Panel.<synthetic: ctor_js>","org.gwtproject.user.client.ui.Panel.<init>","child","org.gwtproject.user.client.ui.Panel.add","org.gwtproject.user.client.ui.Panel.clear","it","org.gwtproject.user.client.ui.Panel.remove","org.gwtproject.user.client.ui.Panel.adopt","org.gwtproject.user.client.ui.Panel.doAttachChildren","org.gwtproject.user.client.ui.Panel.doDetachChildren","org.gwtproject.user.client.ui.Panel.orphan","org.gwtproject.user.client.ui.Panel.forEach","org.gwtproject.user.client.ui.Panel.spliterator","org.gwtproject.user.client.ui.Panel.<clinit>"]
 }

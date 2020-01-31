@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"StackLayoutPanel$LayoutData.impl.java.js",
-"lineCount":53,
-"mappings":"A;;;;;;;;MAyHuB,U;;;;CAAA,W;EAAAA,Q;EAAAA;OACL,uEADKA,O;EAAAA;OAEL,mEAFKA,C;EAAAA;OAGL,mEAHKA,C;;;;;;;;;QAKZ,4G,CAAkBC,M,EAAeC,M,EAAeC,U;EAAhDC,qB;EAAAA,iC;EAAAA,4M;EAAAA,iB;;;;;;;;CAAA,qK,CAAkBH,M,EAAeC,M,EAAeC,U;EAAhDE,iC;EACLA,kF;EACAA,kF;EACAA,0F;;;;;QARiB,O;EAAAC,6B;EAAAA,0B;EAAAA;",
+"lineCount":38,
+"mappings":"A;;;;;;;;MAyHuB,U;;CAAA,W;EAAAA,Q;EAAAA;OACL,uEADKA,O;EAAAA;OAEL,mEAFKA,C;EAAAA;OAGL,mEAHKA,C;;;QAKZ,4G,eAAkBC,M,gBAAeC,M,gBAAeC,U;EAAhDC,qB;EAAAA,iC;EAAAA,4M;EAAAA,iB;;;CAAA,qK,eAAkBH,M,gBAAeC,M,gBAAeC,U;EAAhDE,iC;EACLA,kF;EACAA,kF;EACAA,0F;;;QARiB,O;EAAAC,6B;EAAAA,0B;EAAAA;",
 "sources":["StackLayoutPanel.java"],
 "names":["org.gwtproject.user.client.ui.StackLayoutPanel$LayoutData.<synthetic: ctor_js>","widget","header","headerSize","org.gwtproject.user.client.ui.StackLayoutPanel$LayoutData.<synthetic: ctor_create>","org.gwtproject.user.client.ui.StackLayoutPanel$LayoutData.<init>","org.gwtproject.user.client.ui.StackLayoutPanel$LayoutData.<clinit>"]
 }

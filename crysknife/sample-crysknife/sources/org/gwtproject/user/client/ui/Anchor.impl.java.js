@@ -40,22 +40,16 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
  * @implements {HasDirectionalSafeHtml}
   */
 class Anchor extends FocusWidget {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {DirectionalTextHelper} */
+  /**@type {DirectionalTextHelper}*/
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Anchor_;
-  /** @public {HorizontalAlignmentConstant} */
+  /**@type {HorizontalAlignmentConstant}*/
   this.f_horzAlign__org_gwtproject_user_client_ui_Anchor_;
  }
- /**
-  * @param {Object} element
-  * @return {Anchor}
-  * @public
-  */
- static m_wrap__org_gwtproject_dom_client_Element(element) {
+ /** @return {Anchor} */
+ static m_wrap__org_gwtproject_dom_client_Element(/** Object */ element) {
   Anchor.$clinit();
   $Asserts.$assert($Overlay.m_isOrHasChild__$devirt__org_gwtproject_dom_client_Node__org_gwtproject_dom_client_Node(Document_$Overlay.m_get__().body, element));
   let anchor = Anchor.$create__org_gwtproject_dom_client_Element(element);
@@ -63,42 +57,30 @@ class Anchor extends FocusWidget {
   RootPanel.m_detachOnWindowClose__org_gwtproject_user_client_ui_Widget(anchor);
   return anchor;
  }
- /**
-  * Factory method corresponding to constructor 'Anchor()'.
-  * @return {!Anchor}
-  * @public
-  */
+ //Factory method corresponding to constructor 'Anchor()'.
+ /** @return {!Anchor} */
  static $create__() {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor()'.
-  * @public
-  */
+ //Initialization from constructor 'Anchor()'.
+ 
  $ctor__org_gwtproject_user_client_ui_Anchor__() {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__boolean(false);
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(boolean)'.
-  * @param {boolean} useDefaultHref
-  * @return {!Anchor}
-  * @public
-  */
- static $create__boolean(useDefaultHref) {
+ //Factory method corresponding to constructor 'Anchor(boolean)'.
+ /** @return {!Anchor} */
+ static $create__boolean(/** boolean */ useDefaultHref) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__boolean(useDefaultHref);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(boolean)'.
-  * @param {boolean} useDefaultHref
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__boolean(useDefaultHref) {
+ //Initialization from constructor 'Anchor(boolean)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__boolean(/** boolean */ useDefaultHref) {
   this.$ctor__org_gwtproject_user_client_ui_FocusWidget__();
   this.m_setElement__org_gwtproject_dom_client_Element(Document_$Overlay.m_createAnchorElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__()));
   this.m_setStyleName__java_lang_String("gwt-Anchor");
@@ -110,830 +92,464 @@ class Anchor extends FocusWidget {
    this.m_addClickHandler__org_gwtproject_event_dom_client_ClickHandler($1.$create__org_gwtproject_user_client_ui_Anchor(this));
   }
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(SafeHtml)'.
-  * @param {SafeHtml} html
-  * @return {!Anchor}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ //Factory method corresponding to constructor 'Anchor(SafeHtml)'.
+ /** @return {!Anchor} */
+ static $create__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml(html);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(SafeHtml)'.
-  * @param {SafeHtml} html
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ //Initialization from constructor 'Anchor(SafeHtml)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean(html.m_asString__(), true);
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(SafeHtml, Direction)'.
-  * @param {SafeHtml} html
-  * @param {Direction} dir
-  * @return {!Anchor}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(html, dir) {
+ //Factory method corresponding to constructor 'Anchor(SafeHtml, Direction)'.
+ /** @return {!Anchor} */
+ static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(/** SafeHtml */ html, /** Direction */ dir) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(html, dir);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(SafeHtml, Direction)'.
-  * @param {SafeHtml} html
-  * @param {Direction} dir
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(html, dir) {
+ //Initialization from constructor 'Anchor(SafeHtml, Direction)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(/** SafeHtml */ html, /** Direction */ dir) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(html.m_asString__(), true, dir, Anchor.f_DEFAULT_HREF__org_gwtproject_user_client_ui_Anchor_);
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(SafeHtml, DirectionEstimator)'.
-  * @param {SafeHtml} html
-  * @param {DirectionEstimator} directionEstimator
-  * @return {!Anchor}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator(html, directionEstimator) {
+ //Factory method corresponding to constructor 'Anchor(SafeHtml, DirectionEstimator)'.
+ /** @return {!Anchor} */
+ static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator(/** SafeHtml */ html, /** DirectionEstimator */ directionEstimator) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator(html, directionEstimator);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(SafeHtml, DirectionEstimator)'.
-  * @param {SafeHtml} html
-  * @param {DirectionEstimator} directionEstimator
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator(html, directionEstimator) {
+ //Initialization from constructor 'Anchor(SafeHtml, DirectionEstimator)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator(/** SafeHtml */ html, /** DirectionEstimator */ directionEstimator) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(html.m_asString__(), true, directionEstimator, Anchor.f_DEFAULT_HREF__org_gwtproject_user_client_ui_Anchor_);
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(String)'.
-  * @param {?string} text
-  * @return {!Anchor}
-  * @public
-  */
- static $create__java_lang_String(text) {
+ //Factory method corresponding to constructor 'Anchor(String)'.
+ /** @return {!Anchor} */
+ static $create__java_lang_String(/** ?string */ text) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String(text);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(String)'.
-  * @param {?string} text
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String(text) {
+ //Initialization from constructor 'Anchor(String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String(/** ?string */ text) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__java_lang_String(text, Anchor.f_DEFAULT_HREF__org_gwtproject_user_client_ui_Anchor_);
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(String, Direction)'.
-  * @param {?string} text
-  * @param {Direction} dir
-  * @return {!Anchor}
-  * @public
-  */
- static $create__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(text, dir) {
+ //Factory method corresponding to constructor 'Anchor(String, Direction)'.
+ /** @return {!Anchor} */
+ static $create__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(/** ?string */ text, /** Direction */ dir) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(text, dir);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(String, Direction)'.
-  * @param {?string} text
-  * @param {Direction} dir
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(text, dir) {
+ //Initialization from constructor 'Anchor(String, Direction)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(/** ?string */ text, /** Direction */ dir) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(text, dir, Anchor.f_DEFAULT_HREF__org_gwtproject_user_client_ui_Anchor_);
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(String, DirectionEstimator)'.
-  * @param {?string} text
-  * @param {DirectionEstimator} directionEstimator
-  * @return {!Anchor}
-  * @public
-  */
- static $create__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator(text, directionEstimator) {
+ //Factory method corresponding to constructor 'Anchor(String, DirectionEstimator)'.
+ /** @return {!Anchor} */
+ static $create__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator(/** ?string */ text, /** DirectionEstimator */ directionEstimator) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator(text, directionEstimator);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(String, DirectionEstimator)'.
-  * @param {?string} text
-  * @param {DirectionEstimator} directionEstimator
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator(text, directionEstimator) {
+ //Initialization from constructor 'Anchor(String, DirectionEstimator)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator(/** ?string */ text, /** DirectionEstimator */ directionEstimator) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(text, directionEstimator, Anchor.f_DEFAULT_HREF__org_gwtproject_user_client_ui_Anchor_);
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(String, boolean)'.
-  * @param {?string} text
-  * @param {boolean} asHtml
-  * @return {!Anchor}
-  * @public
-  */
- static $create__java_lang_String__boolean(text, asHtml) {
+ //Factory method corresponding to constructor 'Anchor(String, boolean)'.
+ /** @return {!Anchor} */
+ static $create__java_lang_String__boolean(/** ?string */ text, /** boolean */ asHtml) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean(text, asHtml);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(String, boolean)'.
-  * @param {?string} text
-  * @param {boolean} asHtml
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean(text, asHtml) {
+ //Initialization from constructor 'Anchor(String, boolean)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean(/** ?string */ text, /** boolean */ asHtml) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__java_lang_String(text, asHtml, Anchor.f_DEFAULT_HREF__org_gwtproject_user_client_ui_Anchor_);
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(SafeHtml, String)'.
-  * @param {SafeHtml} html
-  * @param {?string} href
-  * @return {!Anchor}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeHtml__java_lang_String(html, href) {
+ //Factory method corresponding to constructor 'Anchor(SafeHtml, String)'.
+ /** @return {!Anchor} */
+ static $create__org_gwtproject_safehtml_shared_SafeHtml__java_lang_String(/** SafeHtml */ html, /** ?string */ href) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__java_lang_String(html, href);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(SafeHtml, String)'.
-  * @param {SafeHtml} html
-  * @param {?string} href
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__java_lang_String(html, href) {
+ //Initialization from constructor 'Anchor(SafeHtml, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__java_lang_String(/** SafeHtml */ html, /** ?string */ href) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__java_lang_String(html.m_asString__(), true, href);
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(SafeHtml, SafeUri)'.
-  * @param {SafeHtml} html
-  * @param {SafeUri} href
-  * @return {!Anchor}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_safehtml_shared_SafeUri(html, href) {
+ //Factory method corresponding to constructor 'Anchor(SafeHtml, SafeUri)'.
+ /** @return {!Anchor} */
+ static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_safehtml_shared_SafeUri(/** SafeHtml */ html, /** SafeUri */ href) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_safehtml_shared_SafeUri(html, href);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(SafeHtml, SafeUri)'.
-  * @param {SafeHtml} html
-  * @param {SafeUri} href
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_safehtml_shared_SafeUri(html, href) {
+ //Initialization from constructor 'Anchor(SafeHtml, SafeUri)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_safehtml_shared_SafeUri(/** SafeHtml */ html, /** SafeUri */ href) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__java_lang_String(html.m_asString__(), true, href.m_asString__());
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(SafeHtml, Direction, String)'.
-  * @param {SafeHtml} html
-  * @param {Direction} dir
-  * @param {?string} href
-  * @return {!Anchor}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(html, dir, href) {
+ //Factory method corresponding to constructor 'Anchor(SafeHtml, Direction, String)'.
+ /** @return {!Anchor} */
+ static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(/** SafeHtml */ html, /** Direction */ dir, /** ?string */ href) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(html, dir, href);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(SafeHtml, Direction, String)'.
-  * @param {SafeHtml} html
-  * @param {Direction} dir
-  * @param {?string} href
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(html, dir, href) {
+ //Initialization from constructor 'Anchor(SafeHtml, Direction, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(/** SafeHtml */ html, /** Direction */ dir, /** ?string */ href) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(html.m_asString__(), true, dir, href);
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(SafeHtml, Direction, SafeUri)'.
-  * @param {SafeHtml} html
-  * @param {Direction} dir
-  * @param {SafeUri} href
-  * @return {!Anchor}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction__org_gwtproject_safehtml_shared_SafeUri(html, dir, href) {
+ //Factory method corresponding to constructor 'Anchor(SafeHtml, Direction, SafeUri)'.
+ /** @return {!Anchor} */
+ static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction__org_gwtproject_safehtml_shared_SafeUri(/** SafeHtml */ html, /** Direction */ dir, /** SafeUri */ href) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction__org_gwtproject_safehtml_shared_SafeUri(html, dir, href);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(SafeHtml, Direction, SafeUri)'.
-  * @param {SafeHtml} html
-  * @param {Direction} dir
-  * @param {SafeUri} href
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction__org_gwtproject_safehtml_shared_SafeUri(html, dir, href) {
+ //Initialization from constructor 'Anchor(SafeHtml, Direction, SafeUri)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction__org_gwtproject_safehtml_shared_SafeUri(/** SafeHtml */ html, /** Direction */ dir, /** SafeUri */ href) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(html.m_asString__(), true, dir, href.m_asString__());
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(SafeHtml, DirectionEstimator, String)'.
-  * @param {SafeHtml} html
-  * @param {DirectionEstimator} directionEstimator
-  * @param {?string} href
-  * @return {!Anchor}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(html, directionEstimator, href) {
+ //Factory method corresponding to constructor 'Anchor(SafeHtml, DirectionEstimator, String)'.
+ /** @return {!Anchor} */
+ static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(/** SafeHtml */ html, /** DirectionEstimator */ directionEstimator, /** ?string */ href) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(html, directionEstimator, href);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(SafeHtml, DirectionEstimator, String)'.
-  * @param {SafeHtml} html
-  * @param {DirectionEstimator} directionEstimator
-  * @param {?string} href
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(html, directionEstimator, href) {
+ //Initialization from constructor 'Anchor(SafeHtml, DirectionEstimator, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(/** SafeHtml */ html, /** DirectionEstimator */ directionEstimator, /** ?string */ href) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(html.m_asString__(), true, directionEstimator, href);
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(SafeHtml, DirectionEstimator, SafeUri)'.
-  * @param {SafeHtml} html
-  * @param {DirectionEstimator} directionEstimator
-  * @param {SafeUri} href
-  * @return {!Anchor}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator__org_gwtproject_safehtml_shared_SafeUri(html, directionEstimator, href) {
+ //Factory method corresponding to constructor 'Anchor(SafeHtml, DirectionEstimator, SafeUri)'.
+ /** @return {!Anchor} */
+ static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator__org_gwtproject_safehtml_shared_SafeUri(/** SafeHtml */ html, /** DirectionEstimator */ directionEstimator, /** SafeUri */ href) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator__org_gwtproject_safehtml_shared_SafeUri(html, directionEstimator, href);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(SafeHtml, DirectionEstimator, SafeUri)'.
-  * @param {SafeHtml} html
-  * @param {DirectionEstimator} directionEstimator
-  * @param {SafeUri} href
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator__org_gwtproject_safehtml_shared_SafeUri(html, directionEstimator, href) {
+ //Initialization from constructor 'Anchor(SafeHtml, DirectionEstimator, SafeUri)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator__org_gwtproject_safehtml_shared_SafeUri(/** SafeHtml */ html, /** DirectionEstimator */ directionEstimator, /** SafeUri */ href) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(html.m_asString__(), true, directionEstimator, href.m_asString__());
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(String, String)'.
-  * @param {?string} text
-  * @param {?string} href
-  * @return {!Anchor}
-  * @public
-  */
- static $create__java_lang_String__java_lang_String(text, href) {
+ //Factory method corresponding to constructor 'Anchor(String, String)'.
+ /** @return {!Anchor} */
+ static $create__java_lang_String__java_lang_String(/** ?string */ text, /** ?string */ href) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__java_lang_String(text, href);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(String, String)'.
-  * @param {?string} text
-  * @param {?string} href
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__java_lang_String(text, href) {
+ //Initialization from constructor 'Anchor(String, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__java_lang_String(/** ?string */ text, /** ?string */ href) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__java_lang_String(text, false, href);
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(String, Direction, String)'.
-  * @param {?string} text
-  * @param {Direction} dir
-  * @param {?string} href
-  * @return {!Anchor}
-  * @public
-  */
- static $create__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(text, dir, href) {
+ //Factory method corresponding to constructor 'Anchor(String, Direction, String)'.
+ /** @return {!Anchor} */
+ static $create__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(/** ?string */ text, /** Direction */ dir, /** ?string */ href) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(text, dir, href);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(String, Direction, String)'.
-  * @param {?string} text
-  * @param {Direction} dir
-  * @param {?string} href
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(text, dir, href) {
+ //Initialization from constructor 'Anchor(String, Direction, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(/** ?string */ text, /** Direction */ dir, /** ?string */ href) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(text, false, dir, href);
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(String, DirectionEstimator, String)'.
-  * @param {?string} text
-  * @param {DirectionEstimator} directionEstimator
-  * @param {?string} href
-  * @return {!Anchor}
-  * @public
-  */
- static $create__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(text, directionEstimator, href) {
+ //Factory method corresponding to constructor 'Anchor(String, DirectionEstimator, String)'.
+ /** @return {!Anchor} */
+ static $create__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(/** ?string */ text, /** DirectionEstimator */ directionEstimator, /** ?string */ href) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(text, directionEstimator, href);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(String, DirectionEstimator, String)'.
-  * @param {?string} text
-  * @param {DirectionEstimator} directionEstimator
-  * @param {?string} href
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(text, directionEstimator, href) {
+ //Initialization from constructor 'Anchor(String, DirectionEstimator, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(/** ?string */ text, /** DirectionEstimator */ directionEstimator, /** ?string */ href) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(text, false, directionEstimator, href);
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(String, boolean, String)'.
-  * @param {?string} text
-  * @param {boolean} asHTML
-  * @param {?string} href
-  * @return {!Anchor}
-  * @public
-  */
- static $create__java_lang_String__boolean__java_lang_String(text, asHTML, href) {
+ //Factory method corresponding to constructor 'Anchor(String, boolean, String)'.
+ /** @return {!Anchor} */
+ static $create__java_lang_String__boolean__java_lang_String(/** ?string */ text, /** boolean */ asHTML, /** ?string */ href) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__java_lang_String(text, asHTML, href);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(String, boolean, String)'.
-  * @param {?string} text
-  * @param {boolean} asHTML
-  * @param {?string} href
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__java_lang_String(text, asHTML, href) {
+ //Initialization from constructor 'Anchor(String, boolean, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__java_lang_String(/** ?string */ text, /** boolean */ asHTML, /** ?string */ href) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__();
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Anchor_.m_setTextOrHtml__java_lang_String__boolean(text, asHTML);
   this.m_setHref__java_lang_String(href);
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(SafeHtml, String, String)'.
-  * @param {SafeHtml} html
-  * @param {?string} href
-  * @param {?string} target
-  * @return {!Anchor}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeHtml__java_lang_String__java_lang_String(html, href, target) {
+ //Factory method corresponding to constructor 'Anchor(SafeHtml, String, String)'.
+ /** @return {!Anchor} */
+ static $create__org_gwtproject_safehtml_shared_SafeHtml__java_lang_String__java_lang_String(/** SafeHtml */ html, /** ?string */ href, /** ?string */ target) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__java_lang_String__java_lang_String(html, href, target);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(SafeHtml, String, String)'.
-  * @param {SafeHtml} html
-  * @param {?string} href
-  * @param {?string} target
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__java_lang_String__java_lang_String(html, href, target) {
+ //Initialization from constructor 'Anchor(SafeHtml, String, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__java_lang_String__java_lang_String(/** SafeHtml */ html, /** ?string */ href, /** ?string */ target) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__java_lang_String__java_lang_String(html.m_asString__(), true, href, target);
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(SafeHtml, SafeUri, String)'.
-  * @param {SafeHtml} html
-  * @param {SafeUri} href
-  * @param {?string} target
-  * @return {!Anchor}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_safehtml_shared_SafeUri__java_lang_String(html, href, target) {
+ //Factory method corresponding to constructor 'Anchor(SafeHtml, SafeUri, String)'.
+ /** @return {!Anchor} */
+ static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_safehtml_shared_SafeUri__java_lang_String(/** SafeHtml */ html, /** SafeUri */ href, /** ?string */ target) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_safehtml_shared_SafeUri__java_lang_String(html, href, target);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(SafeHtml, SafeUri, String)'.
-  * @param {SafeHtml} html
-  * @param {SafeUri} href
-  * @param {?string} target
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_safehtml_shared_SafeUri__java_lang_String(html, href, target) {
+ //Initialization from constructor 'Anchor(SafeHtml, SafeUri, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_safehtml_shared_SafeUri__java_lang_String(/** SafeHtml */ html, /** SafeUri */ href, /** ?string */ target) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__java_lang_String__java_lang_String(html.m_asString__(), true, href.m_asString__(), target);
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(String, String, String)'.
-  * @param {?string} text
-  * @param {?string} href
-  * @param {?string} target
-  * @return {!Anchor}
-  * @public
-  */
- static $create__java_lang_String__java_lang_String__java_lang_String(text, href, target) {
+ //Factory method corresponding to constructor 'Anchor(String, String, String)'.
+ /** @return {!Anchor} */
+ static $create__java_lang_String__java_lang_String__java_lang_String(/** ?string */ text, /** ?string */ href, /** ?string */ target) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__java_lang_String__java_lang_String(text, href, target);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(String, String, String)'.
-  * @param {?string} text
-  * @param {?string} href
-  * @param {?string} target
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__java_lang_String__java_lang_String(text, href, target) {
+ //Initialization from constructor 'Anchor(String, String, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__java_lang_String__java_lang_String(/** ?string */ text, /** ?string */ href, /** ?string */ target) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__java_lang_String__java_lang_String(text, false, href, target);
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(String, boolean, String, String)'.
-  * @param {?string} text
-  * @param {boolean} asHtml
-  * @param {?string} href
-  * @param {?string} target
-  * @return {!Anchor}
-  * @public
-  */
- static $create__java_lang_String__boolean__java_lang_String__java_lang_String(text, asHtml, href, target) {
+ //Factory method corresponding to constructor 'Anchor(String, boolean, String, String)'.
+ /** @return {!Anchor} */
+ static $create__java_lang_String__boolean__java_lang_String__java_lang_String(/** ?string */ text, /** boolean */ asHtml, /** ?string */ href, /** ?string */ target) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__java_lang_String__java_lang_String(text, asHtml, href, target);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(String, boolean, String, String)'.
-  * @param {?string} text
-  * @param {boolean} asHtml
-  * @param {?string} href
-  * @param {?string} target
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__java_lang_String__java_lang_String(text, asHtml, href, target) {
+ //Initialization from constructor 'Anchor(String, boolean, String, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__java_lang_String__java_lang_String(/** ?string */ text, /** boolean */ asHtml, /** ?string */ href, /** ?string */ target) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__java_lang_String(text, asHtml, href);
   this.m_setTarget__java_lang_String(target);
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(Element)'.
-  * @param {Object} element
-  * @return {!Anchor}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_Element(element) {
+ //Factory method corresponding to constructor 'Anchor(Element)'.
+ /** @return {!Anchor} */
+ static $create__org_gwtproject_dom_client_Element(/** Object */ element) {
   Anchor.$clinit();
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_dom_client_Element(element);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(Element)'.
-  * @param {Object} element
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_dom_client_Element(element) {
+ //Initialization from constructor 'Anchor(Element)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__org_gwtproject_dom_client_Element(/** Object */ element) {
   this.$ctor__org_gwtproject_user_client_ui_FocusWidget__();
   AnchorElement_$Overlay.m_as__org_gwtproject_dom_client_Element(element);
   this.m_setElement__org_gwtproject_dom_client_Element(element);
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Anchor_ = DirectionalTextHelper.$create__org_gwtproject_dom_client_Element__boolean(this.m_getAnchorElement___$p_org_gwtproject_user_client_ui_Anchor(), true);
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(String, boolean, Direction, String)'.
-  * @param {?string} text
-  * @param {boolean} asHTML
-  * @param {Direction} dir
-  * @param {?string} href
-  * @return {!Anchor}
-  * @public
-  */
- static $create__java_lang_String__boolean__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(text, asHTML, dir, href) {
+ //Factory method corresponding to constructor 'Anchor(String, boolean, Direction, String)'.
+ /** @return {!Anchor} */
+ static $create__java_lang_String__boolean__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(/** ?string */ text, /** boolean */ asHTML, /** Direction */ dir, /** ?string */ href) {
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(text, asHTML, dir, href);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(String, boolean, Direction, String)'.
-  * @param {?string} text
-  * @param {boolean} asHTML
-  * @param {Direction} dir
-  * @param {?string} href
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(text, asHTML, dir, href) {
+ //Initialization from constructor 'Anchor(String, boolean, Direction, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__org_gwtproject_i18n_client_HasDirection_Direction__java_lang_String(/** ?string */ text, /** boolean */ asHTML, /** Direction */ dir, /** ?string */ href) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__();
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Anchor_.m_setTextOrHtml__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction__boolean(text, dir, asHTML);
   this.m_setHref__java_lang_String(href);
  }
- /**
-  * Factory method corresponding to constructor 'Anchor(String, boolean, DirectionEstimator, String)'.
-  * @param {?string} text
-  * @param {boolean} asHTML
-  * @param {DirectionEstimator} directionEstimator
-  * @param {?string} href
-  * @return {!Anchor}
-  * @public
-  */
- static $create__java_lang_String__boolean__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(text, asHTML, directionEstimator, href) {
+ //Factory method corresponding to constructor 'Anchor(String, boolean, DirectionEstimator, String)'.
+ /** @return {!Anchor} */
+ static $create__java_lang_String__boolean__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(/** ?string */ text, /** boolean */ asHTML, /** DirectionEstimator */ directionEstimator, /** ?string */ href) {
   let $instance = new Anchor();
   $instance.$ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(text, asHTML, directionEstimator, href);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Anchor(String, boolean, DirectionEstimator, String)'.
-  * @param {?string} text
-  * @param {boolean} asHTML
-  * @param {DirectionEstimator} directionEstimator
-  * @param {?string} href
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(text, asHTML, directionEstimator, href) {
+ //Initialization from constructor 'Anchor(String, boolean, DirectionEstimator, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Anchor__java_lang_String__boolean__org_gwtproject_i18n_shared_DirectionEstimator__java_lang_String(/** ?string */ text, /** boolean */ asHTML, /** DirectionEstimator */ directionEstimator, /** ?string */ href) {
   this.$ctor__org_gwtproject_user_client_ui_Anchor__();
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Anchor_.m_setDirectionEstimator__org_gwtproject_i18n_shared_DirectionEstimator(directionEstimator);
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Anchor_.m_setTextOrHtml__java_lang_String__boolean(text, asHTML);
   this.m_setHref__java_lang_String(href);
  }
- /**
-  * @override
-  * @return {Direction}
-  * @public
-  */
+ /** @override @return {Direction} */
  m_getDirection__() {
   return BidiUtils.m_getDirectionOnElement__org_gwtproject_dom_client_Element(this.m_getElement__());
  }
- /**
-  * @override
-  * @return {DirectionEstimator}
-  * @public
-  */
+ /** @override @return {DirectionEstimator} */
  m_getDirectionEstimator__() {
   return this.f_directionalTextHelper__org_gwtproject_user_client_ui_Anchor_.m_getDirectionEstimator__();
  }
- /**
-  * @override
-  * @return {HorizontalAlignmentConstant}
-  * @public
-  */
+ /** @override @return {HorizontalAlignmentConstant} */
  m_getHorizontalAlignment__() {
   return this.f_horzAlign__org_gwtproject_user_client_ui_Anchor_;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getHref__() {
   return this.m_getAnchorElement___$p_org_gwtproject_user_client_ui_Anchor().href;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getHTML__() {
   return Element_$Overlay.m_getInnerHTML__$devirt__org_gwtproject_dom_client_Element(this.m_getElement__());
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getName__() {
   return this.m_getAnchorElement___$p_org_gwtproject_user_client_ui_Anchor().name;
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getTabIndex__() {
   return Element_$Overlay.m_getTabIndex__$devirt__org_gwtproject_dom_client_Element(this.m_getAnchorElement___$p_org_gwtproject_user_client_ui_Anchor());
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getTarget__() {
   return this.m_getAnchorElement___$p_org_gwtproject_user_client_ui_Anchor().target;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getText__() {
   return this.f_directionalTextHelper__org_gwtproject_user_client_ui_Anchor_.m_getText__();
  }
- /**
-  * @override
-  * @return {Direction}
-  * @public
-  */
+ /** @override @return {Direction} */
  m_getTextDirection__() {
   return this.f_directionalTextHelper__org_gwtproject_user_client_ui_Anchor_.m_getTextDirection__();
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_getWordWrap__() {
   return !j_l_String.m_equals__java_lang_String__java_lang_Object(WhiteSpace.f_NOWRAP__org_gwtproject_dom_style_shared_WhiteSpace.m_getCssName__(), Style_$Overlay.m_getWhiteSpace__$devirt__org_gwtproject_dom_client_Style(this.m_getElement__().style));
  }
- /**
-  * @override
-  * @param {number} key
-  * @public
-  */
- m_setAccessKey__char(key) {
+ /** @override */
+ m_setAccessKey__char(/** number */ key) {
   this.m_getAnchorElement___$p_org_gwtproject_user_client_ui_Anchor().accessKey = Character.m_toString__char(key);
  }
- /**
-  * @override
-  * @param {Direction} direction
-  * @public
-  * @deprecated
-  */
- m_setDirection__org_gwtproject_i18n_client_HasDirection_Direction(direction) {
+ /** @override @deprecated */
+ m_setDirection__org_gwtproject_i18n_client_HasDirection_Direction(/** Direction */ direction) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Anchor_.m_setDirection__org_gwtproject_i18n_client_HasDirection_Direction(direction);
  }
- /**
-  * @override
-  * @param {boolean} enabled
-  * @public
-  */
- m_setDirectionEstimator__boolean(enabled) {
+ /** @override */
+ m_setDirectionEstimator__boolean(/** boolean */ enabled) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Anchor_.m_setDirectionEstimator__boolean(enabled);
  }
- /**
-  * @override
-  * @param {DirectionEstimator} directionEstimator
-  * @public
-  */
- m_setDirectionEstimator__org_gwtproject_i18n_shared_DirectionEstimator(directionEstimator) {
+ /** @override */
+ m_setDirectionEstimator__org_gwtproject_i18n_shared_DirectionEstimator(/** DirectionEstimator */ directionEstimator) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Anchor_.m_setDirectionEstimator__org_gwtproject_i18n_shared_DirectionEstimator(directionEstimator);
  }
- /**
-  * @override
-  * @param {boolean} focused
-  * @public
-  */
- m_setFocus__boolean(focused) {
+ /** @override */
+ m_setFocus__boolean(/** boolean */ focused) {
   if (focused) {
    this.m_getAnchorElement___$p_org_gwtproject_user_client_ui_Anchor().focus();
   } else {
    this.m_getAnchorElement___$p_org_gwtproject_user_client_ui_Anchor().blur();
   }
  }
- /**
-  * @override
-  * @param {HorizontalAlignmentConstant} align
-  * @public
-  */
- m_setHorizontalAlignment__org_gwtproject_user_client_ui_HasHorizontalAlignment_HorizontalAlignmentConstant(align) {
+ /** @override */
+ m_setHorizontalAlignment__org_gwtproject_user_client_ui_HasHorizontalAlignment_HorizontalAlignmentConstant(/** HorizontalAlignmentConstant */ align) {
   this.f_horzAlign__org_gwtproject_user_client_ui_Anchor_ = align;
   Style_$Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(this.m_getElement__().style, "textAlign", align.m_getTextAlignString__());
  }
- /**
-  * @param {SafeUri} href
-  * @public
-  */
- m_setHref__org_gwtproject_safehtml_shared_SafeUri(href) {
+ 
+ m_setHref__org_gwtproject_safehtml_shared_SafeUri(/** SafeUri */ href) {
   AnchorElement_$Overlay.m_setHref__$devirt__org_gwtproject_dom_client_AnchorElement__org_gwtproject_safehtml_shared_SafeUri(this.m_getAnchorElement___$p_org_gwtproject_user_client_ui_Anchor(), href);
  }
- /**
-  * @param {?string} href
-  * @public
-  */
- m_setHref__java_lang_String(href) {
+ 
+ m_setHref__java_lang_String(/** ?string */ href) {
   this.m_getAnchorElement___$p_org_gwtproject_user_client_ui_Anchor().href = href;
  }
- /**
-  * @override
-  * @param {SafeHtml} html
-  * @public
-  */
- m_setHTML__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ /** @override */
+ m_setHTML__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Anchor_.m_setHtml__org_gwtproject_safehtml_shared_SafeHtml(html);
  }
- /**
-  * @override
-  * @param {?string} html
-  * @public
-  */
- m_setHTML__java_lang_String(html) {
+ /** @override */
+ m_setHTML__java_lang_String(/** ?string */ html) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Anchor_.m_setHtml__java_lang_String(html);
  }
- /**
-  * @override
-  * @param {SafeHtml} html
-  * @param {Direction} dir
-  * @public
-  */
- m_setHTML__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(html, dir) {
+ /** @override */
+ m_setHTML__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(/** SafeHtml */ html, /** Direction */ dir) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Anchor_.m_setHtml__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(html, dir);
  }
- /**
-  * @override
-  * @param {?string} name
-  * @public
-  */
- m_setName__java_lang_String(name) {
+ /** @override */
+ m_setName__java_lang_String(/** ?string */ name) {
   this.m_getAnchorElement___$p_org_gwtproject_user_client_ui_Anchor().name = name;
  }
- /**
-  * @override
-  * @param {number} index
-  * @public
-  */
- m_setTabIndex__int(index) {
+ /** @override */
+ m_setTabIndex__int(/** number */ index) {
   this.m_getAnchorElement___$p_org_gwtproject_user_client_ui_Anchor().tabIndex = index;
  }
- /**
-  * @param {?string} target
-  * @public
-  */
- m_setTarget__java_lang_String(target) {
+ 
+ m_setTarget__java_lang_String(/** ?string */ target) {
   this.m_getAnchorElement___$p_org_gwtproject_user_client_ui_Anchor().target = target;
  }
- /**
-  * @override
-  * @param {?string} text
-  * @public
-  */
- m_setText__java_lang_String(text) {
+ /** @override */
+ m_setText__java_lang_String(/** ?string */ text) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Anchor_.m_setText__java_lang_String(text);
  }
- /**
-  * @override
-  * @param {?string} text
-  * @param {Direction} dir
-  * @public
-  */
- m_setText__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(text, dir) {
+ /** @override */
+ m_setText__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(/** ?string */ text, /** Direction */ dir) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_Anchor_.m_setText__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(text, dir);
  }
- /**
-  * @override
-  * @param {boolean} wrap
-  * @public
-  */
- m_setWordWrap__boolean(wrap) {
+ /** @override */
+ m_setWordWrap__boolean(/** boolean */ wrap) {
   Style_$Overlay.m_setWhiteSpace__$devirt__org_gwtproject_dom_client_Style__org_gwtproject_dom_style_shared_WhiteSpace(this.m_getElement__().style, wrap ? WhiteSpace.f_NORMAL__org_gwtproject_dom_style_shared_WhiteSpace : WhiteSpace.f_NOWRAP__org_gwtproject_dom_style_shared_WhiteSpace);
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getAnchorElement___$p_org_gwtproject_user_client_ui_Anchor() {
   return AnchorElement_$Overlay.m_as__org_gwtproject_dom_client_Element(this.m_getElement__());
  }
- /**
-  * @return {DirectionEstimator}
-  * @public
-  */
+ /** @return {DirectionEstimator} */
  static get f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_Anchor() {
   return (Anchor.$clinit(), Anchor.$f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_Anchor);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Anchor.$clinit = () =>{};
   Anchor.$loadModules();
   FocusWidget.$clinit();
   Anchor.$f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_Anchor = DirectionalTextHelper.f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_DirectionalTextHelper;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Anchor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Character = goog.module.get('java.lang.Character$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -962,9 +578,9 @@ HasDirection.$markImplementor(Anchor);
 HasDirectionEstimator.$markImplementor(Anchor);
 HasDirectionalSafeHtml.$markImplementor(Anchor);
 
-/** @private {DirectionEstimator} */
+/**@private {DirectionEstimator}*/
 Anchor.$f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_Anchor;
-/** @public {?string} @const */
+/**@const {?string}*/
 Anchor.f_DEFAULT_HREF__org_gwtproject_user_client_ui_Anchor_ = "javascript:;";
 
 exports = Anchor; 

@@ -10,42 +10,25 @@ let $Overlay = goog.forwardDeclare('org.gwtproject.dom.client.Element.$Overlay$i
  * @extends {Iterator<Object>}
  */
 class ElementIterator {
- /**
-  * @abstract
-  * @param {boolean} selected
-  * @public
-  */
- m_setSelected__boolean(selected) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_setSelected__boolean(/** boolean */ selected) {}
+ 
  static $clinit() {
   ElementIterator.$clinit = () =>{};
   ElementIterator.$loadModules();
   Iterator.$clinit();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Iterator.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_cellview_client_HasDataPresenter_ElementIterator = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Iterator.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_cellview_client_HasDataPresenter_ElementIterator = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_cellview_client_HasDataPresenter_ElementIterator;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

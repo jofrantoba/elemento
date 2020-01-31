@@ -12,62 +12,29 @@ let SafeHtmlBuilder = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHt
  * @template C
  */
 class Appearance {
- /**
-  * @abstract
-  * @param {Object} parent
-  * @public
-  */
- m_onPush__org_gwtproject_dom_client_Element(parent) {}
- /**
-  * @abstract
-  * @param {Object} parent
-  * @public
-  */
- m_onUnpush__org_gwtproject_dom_client_Element(parent) {}
- /**
-  * @abstract
-  * @param {ButtonCellBase<C>} cell
-  * @param {Context} context
-  * @param {C} value
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_ButtonCellBase__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(cell, context, value, sb) {}
- /**
-  * @abstract
-  * @param {Object} parent
-  * @param {boolean} focused
-  * @public
-  */
- m_setFocus__org_gwtproject_dom_client_Element__boolean(parent, focused) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_onPush__org_gwtproject_dom_client_Element(/** Object */ parent) {}
+ /** @abstract */
+ m_onUnpush__org_gwtproject_dom_client_Element(/** Object */ parent) {}
+ /** @abstract */
+ m_render__org_gwtproject_cell_client_ButtonCellBase__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** ButtonCellBase<C> */ cell, /** Context */ context, /** C */ value, /** SafeHtmlBuilder */ sb) {}
+ /** @abstract */
+ m_setFocus__org_gwtproject_dom_client_Element__boolean(/** Object */ parent, /** boolean */ focused) {}
+ 
  static $clinit() {
   Appearance.$clinit = () =>{};
   Appearance.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_cell_client_ButtonCellBase_Appearance = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_cell_client_ButtonCellBase_Appearance = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_cell_client_ButtonCellBase_Appearance;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

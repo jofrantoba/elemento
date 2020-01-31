@@ -10,53 +10,27 @@ let FieldUpdater = goog.forwardDeclare('org.gwtproject.cell.client.FieldUpdater$
  * @template T, C
  */
 class HasCell {
- /**
-  * @abstract
-  * @return {Cell<C>}
-  * @public
-  */
+ /** @abstract @return {Cell<C>} */
  m_getCell__() {}
- /**
-  * @abstract
-  * @return {FieldUpdater<T, C>}
-  * @public
-  */
+ /** @abstract @return {FieldUpdater<T, C>} */
  m_getFieldUpdater__() {}
- /**
-  * @abstract
-  * @param {T} object
-  * @return {C}
-  * @public
-  */
- m_getValue__java_lang_Object(object) {}
- /**
-  * @public
-  */
+ /** @abstract @return {C} */
+ m_getValue__java_lang_Object(/** T */ object) {}
+ 
  static $clinit() {
   HasCell.$clinit = () =>{};
   HasCell.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_cell_client_HasCell = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_cell_client_HasCell = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_cell_client_HasCell;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

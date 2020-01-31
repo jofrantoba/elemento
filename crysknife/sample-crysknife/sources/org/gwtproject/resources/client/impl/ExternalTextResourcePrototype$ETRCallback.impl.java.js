@@ -23,71 +23,43 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {AsyncCallback<Object>}
   */
 class ETRCallback extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {ExternalTextResourcePrototype} */
+  /**@type {ExternalTextResourcePrototype}*/
   this.f_$outer_this__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype_ETRCallback;
-  /** @public {ResourceCallback<TextResource>} */
+  /**@type {ResourceCallback<TextResource>}*/
   this.f_callback__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype_ETRCallback;
  }
- /**
-  * @param {ExternalTextResourcePrototype} $outer_this
-  * @param {ResourceCallback<TextResource>} callback
-  * @return {!ETRCallback}
-  * @public
-  */
- static $create__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype__org_gwtproject_resources_client_ResourceCallback($outer_this, callback) {
+ /** @return {!ETRCallback} */
+ static $create__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype__org_gwtproject_resources_client_ResourceCallback(/** ExternalTextResourcePrototype */ $outer_this, /** ResourceCallback<TextResource> */ callback) {
   ETRCallback.$clinit();
   let $instance = new ETRCallback();
   $instance.$ctor__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype_ETRCallback__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype__org_gwtproject_resources_client_ResourceCallback($outer_this, callback);
   return $instance;
  }
- /**
-  * @param {ExternalTextResourcePrototype} $outer_this
-  * @param {ResourceCallback<TextResource>} callback
-  * @public
-  */
- $ctor__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype_ETRCallback__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype__org_gwtproject_resources_client_ResourceCallback($outer_this, callback) {
+ 
+ $ctor__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype_ETRCallback__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype__org_gwtproject_resources_client_ResourceCallback(/** ExternalTextResourcePrototype */ $outer_this, /** ResourceCallback<TextResource> */ callback) {
   this.f_$outer_this__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype_ETRCallback = $outer_this;
   this.$ctor__java_lang_Object__();
   this.f_callback__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype_ETRCallback = callback;
  }
- /**
-  * @override
-  * @param {Request} request
-  * @param {Throwable} exception
-  * @public
-  */
- m_onError__org_gwtproject_http_client_Request__java_lang_Throwable(request, exception) {
+ /** @override */
+ m_onError__org_gwtproject_http_client_Request__java_lang_Throwable(/** Request */ request, /** Throwable */ exception) {
   this.m_onFailure__java_lang_Throwable(exception);
  }
- /**
-  * @override
-  * @param {Throwable} exception
-  * @public
-  */
- m_onFailure__java_lang_Throwable(exception) {
+ /** @override */
+ m_onFailure__java_lang_Throwable(/** Throwable */ exception) {
   this.f_callback__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype_ETRCallback.m_onError__org_gwtproject_resources_client_ResourceException(ResourceException.$create__org_gwtproject_resources_client_ResourcePrototype__java_lang_String__java_lang_Throwable(this.f_$outer_this__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype_ETRCallback, "Unable to retrieve external resource", exception));
  }
- /**
-  * @override
-  * @param {Request} request
-  * @param {Response} response
-  * @public
-  */
- m_onResponseReceived__org_gwtproject_http_client_Request__org_gwtproject_http_client_Response(request, response) {
+ /** @override */
+ m_onResponseReceived__org_gwtproject_http_client_Request__org_gwtproject_http_client_Response(/** Request */ request, /** Response */ response) {
   let responseText = response.m_getText__();
   let jso = ExternalTextResourcePrototype.m_evalObject__java_lang_String(responseText);
   this.m_onSuccess__elemental2_core_JsObject(jso);
  }
- /**
-  * @param {Object} jso
-  * @public
-  */
- m_onSuccess__elemental2_core_JsObject(jso) {
+ 
+ m_onSuccess__elemental2_core_JsObject(/** Object */ jso) {
   if ($Equality.$same(jso, null)) {
    this.f_callback__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype_ETRCallback.m_onError__org_gwtproject_resources_client_ResourceException(ResourceException.$create__org_gwtproject_resources_client_ResourcePrototype__java_lang_String(this.f_$outer_this__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype_ETRCallback, "eval() returned null"));
    return;
@@ -96,34 +68,22 @@ class ETRCallback extends j_l_Object {
   $Arrays.$set(this.f_$outer_this__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype_ETRCallback.f_cache__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype_, this.f_$outer_this__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype_ETRCallback.f_index__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype_, $1.$create__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype_ETRCallback__java_lang_String(this, resourceText));
   this.f_callback__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype_ETRCallback.m_onSuccess__org_gwtproject_resources_client_ResourcePrototype(this.f_$outer_this__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype_ETRCallback.f_cache__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype_[this.f_$outer_this__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype_ETRCallback.f_index__org_gwtproject_resources_client_impl_ExternalTextResourcePrototype_]);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_onSuccess__java_lang_Object(arg0) {
-  this.m_onSuccess__elemental2_core_JsObject(/**@type {Object} */ ($Casts.$to(arg0, $Overlay)));
+ //Bridge method.
+ /** @override */
+ m_onSuccess__java_lang_Object(/** * */ arg0) {
+  this.m_onSuccess__elemental2_core_JsObject(/**@type {Object}*/ ($Casts.$to(arg0, $Overlay)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ETRCallback.$clinit = () =>{};
   ETRCallback.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ETRCallback;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('elemental2.core.JsObject.$Overlay$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

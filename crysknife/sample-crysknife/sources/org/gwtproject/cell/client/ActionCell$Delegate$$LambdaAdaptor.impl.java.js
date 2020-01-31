@@ -9,54 +9,37 @@ const Delegate = goog.require('org.gwtproject.cell.client.ActionCell.Delegate$im
  * @implements {Delegate<T>}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(T):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(T):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(T):void} */
+  /**@type {?function(T):void}*/
   this.f_$$fn__org_gwtproject_cell_client_ActionCell_Delegate_$LambdaAdaptor;
   this.$ctor__org_gwtproject_cell_client_ActionCell_Delegate_$LambdaAdaptor__org_gwtproject_cell_client_ActionCell_Delegate_$JsFunction(fn);
  }
- /**
-  * @param {?function(T):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_ActionCell_Delegate_$LambdaAdaptor__org_gwtproject_cell_client_ActionCell_Delegate_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_cell_client_ActionCell_Delegate_$LambdaAdaptor__org_gwtproject_cell_client_ActionCell_Delegate_$JsFunction(/** ?function(T):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_cell_client_ActionCell_Delegate_$LambdaAdaptor = fn;
  }
- /**
-  * @param {T} arg0
-  * @public
-  */
- m_execute__java_lang_Object(arg0) {
+ 
+ m_execute__java_lang_Object(/** T */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_cell_client_ActionCell_Delegate_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

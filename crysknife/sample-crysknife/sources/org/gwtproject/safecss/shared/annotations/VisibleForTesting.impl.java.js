@@ -11,44 +11,27 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.safecss.shared.annotati
  * @extends {Annotation}
  */
 class VisibleForTesting {
- /**
-  * @param {?function():Class<?>} fn
-  * @return {VisibleForTesting}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {VisibleForTesting} */
+ static $adapt(/** ?function():Class<?> */ fn) {
   VisibleForTesting.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   VisibleForTesting.$clinit = () =>{};
   VisibleForTesting.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_safecss_shared_annotations_VisibleForTesting = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_safecss_shared_annotations_VisibleForTesting = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_safecss_shared_annotations_VisibleForTesting;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.safecss.shared.annotations.VisibleForTesting.$LambdaAdaptor$impl');
  }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"XMLHttpRequest$ResponseUnionType$$Overlay.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;MAqEmB,0B;;;;;;QAEyB,sB,CAAUA,C;EAAVC,qC;EACtCA,wD;;;;;;;QAIe,sE;EAAAC,qC;EACfA,0F;;;;;;;QAIa,oE;EAAAC,qC;EACbA,iD;;;;;;;QAIc,sE;EAAAC,qC;EACdA,wD;;;;;;;QAIc,oE;EAAAC,qC;EACdA,0D;;;;;QAvBa,O;EAAAC,6C;EAAAA;",
+"lineCount":39,
+"mappings":"A;;;;;;;;;MAqEmB,0B;;QAEyB,sB,UAAUA,C;EAAVC,qC;EACtCA,uD;;;QAIe,sE;EAAAC,qC;EACfA,yF;;;QAIa,oE;EAAAC,qC;EACbA,iD;;;QAIc,sE;EAAAC,qC;EACdA,uD;;;QAIc,oE;EAAAC,qC;EACdA,yD;;;QAvBa,O;EAAAC,6C;EAAAA;",
 "sources":["XMLHttpRequest.java"],
 "names":["o","elemental2.dom.XMLHttpRequest$ResponseUnionType$$Overlay.of","elemental2.dom.XMLHttpRequest$ResponseUnionType$$Overlay.asJsObject__$devirt","elemental2.dom.XMLHttpRequest$ResponseUnionType$$Overlay.asString__$devirt","elemental2.dom.XMLHttpRequest$ResponseUnionType$$Overlay.isJsObject__$devirt","elemental2.dom.XMLHttpRequest$ResponseUnionType$$Overlay.isString__$devirt","elemental2.dom.XMLHttpRequest$ResponseUnionType$$Overlay.<clinit>"]
 }

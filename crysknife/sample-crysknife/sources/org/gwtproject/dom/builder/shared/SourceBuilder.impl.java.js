@@ -8,49 +8,26 @@ const ElementBuilderBase = goog.require('org.gwtproject.dom.builder.shared.Eleme
  * @extends {ElementBuilderBase<SourceBuilder>}
  */
 class SourceBuilder {
- /**
-  * @abstract
-  * @param {?string} url
-  * @return {SourceBuilder}
-  * @public
-  */
- m_src__java_lang_String(url) {}
- /**
-  * @abstract
-  * @param {?string} type
-  * @return {SourceBuilder}
-  * @public
-  */
- m_type__java_lang_String(type) {}
- /**
-  * @public
-  */
+ /** @abstract @return {SourceBuilder} */
+ m_src__java_lang_String(/** ?string */ url) {}
+ /** @abstract @return {SourceBuilder} */
+ m_type__java_lang_String(/** ?string */ type) {}
+ 
  static $clinit() {
   SourceBuilder.$clinit = () =>{};
   SourceBuilder.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ElementBuilderBase.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_dom_builder_shared_SourceBuilder = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ElementBuilderBase.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_dom_builder_shared_SourceBuilder = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_dom_builder_shared_SourceBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

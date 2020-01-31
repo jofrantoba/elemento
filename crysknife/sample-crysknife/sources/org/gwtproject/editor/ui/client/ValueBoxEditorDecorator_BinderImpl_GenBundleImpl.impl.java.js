@@ -17,109 +17,69 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {ValueBoxEditorDecorator__BinderImpl__GenBundle}
   */
 class ValueBoxEditorDecorator__BinderImpl__GenBundleImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!ValueBoxEditorDecorator__BinderImpl__GenBundleImpl}
-  * @public
-  */
+ /** @return {!ValueBoxEditorDecorator__BinderImpl__GenBundleImpl} */
  static $create__() {
   ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.$clinit();
   let $instance = new ValueBoxEditorDecorator__BinderImpl__GenBundleImpl();
   $instance.$ctor__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @public
-  */
+ 
  m_styleInitializer___$p_org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl() {
   ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.$f_style__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl_ = $1.$create__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl(this);
  }
- /**
-  * @override
-  * @return {ValueBoxEditorDecorator__BinderImpl__GenCss__style}
-  * @public
-  */
+ /** @override @return {ValueBoxEditorDecorator__BinderImpl__GenCss__style} */
  m_style__() {
   return styleInitializer.m_get__();
  }
- /**
-  * @return {Array<ResourcePrototype>}
-  * @public
-  */
+ /** @return {Array<ResourcePrototype>} */
  m_getResources__() {
-  return /**@type {!Array<ResourcePrototype>} */ ($Arrays.$init([this.m_style__()], ResourcePrototype));
+  return /**@type {!Array<ResourcePrototype>}*/ ($Arrays.$init([this.m_style__()], ResourcePrototype));
  }
- /**
-  * @param {?string} name
-  * @return {ResourcePrototype}
-  * @public
-  */
- m_getResource__java_lang_String(name) {
+ /** @return {ResourcePrototype} */
+ m_getResource__java_lang_String(/** ?string */ name) {
   if ($Equality.$same(ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.f_resourceMap__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl_, null)) {
-   ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.f_resourceMap__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl_ = /**@type {!HashMap<?string, ResourcePrototype>} */ (HashMap.$create__());
+   ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.f_resourceMap__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl_ = /**@type {!HashMap<?string, ResourcePrototype>}*/ (HashMap.$create__());
    ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.f_resourceMap__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl_.put("style", this.m_style__());
   }
-  return /**@type {ResourcePrototype} */ ($Casts.$to(ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.f_resourceMap__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl_.get(name), ResourcePrototype));
+  return /**@type {ResourcePrototype}*/ ($Casts.$to(ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.f_resourceMap__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl_.get(name), ResourcePrototype));
  }
- /**
-  * @return {ValueBoxEditorDecorator__BinderImpl__GenBundleImpl}
-  * @public
-  */
+ /** @return {ValueBoxEditorDecorator__BinderImpl__GenBundleImpl} */
  static get f__instance0__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl_() {
   return (ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.$clinit(), ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.$f__instance0__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl_);
  }
- /**
-  * @param {ValueBoxEditorDecorator__BinderImpl__GenBundleImpl} value
-  * @public
-  */
- static set f__instance0__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl_(value) {
+ 
+ static set f__instance0__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl_(/** ValueBoxEditorDecorator__BinderImpl__GenBundleImpl */ value) {
   (ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.$clinit(), ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.$f__instance0__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl_ = value);
  }
- /**
-  * @return {ValueBoxEditorDecorator__BinderImpl__GenCss__style}
-  * @public
-  */
+ /** @return {ValueBoxEditorDecorator__BinderImpl__GenCss__style} */
  static get f_style__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl_() {
   return (ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.$clinit(), ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.$f_style__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl_);
  }
- /**
-  * @param {ValueBoxEditorDecorator__BinderImpl__GenCss__style} value
-  * @public
-  */
- static set f_style__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl_(value) {
+ 
+ static set f_style__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl_(/** ValueBoxEditorDecorator__BinderImpl__GenCss__style */ value) {
   (ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.$clinit(), ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.$f_style__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl_ = value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.$clinit = () =>{};
   ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.$loadModules();
   j_l_Object.$clinit();
   ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.$f__instance0__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl_ = ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ValueBoxEditorDecorator__BinderImpl__GenBundleImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   HashMap = goog.module.get('java.util.HashMap$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -135,11 +95,11 @@ $Util.$setClassMetadata(ValueBoxEditorDecorator__BinderImpl__GenBundleImpl, 'org
 
 ValueBoxEditorDecorator__BinderImpl__GenBundle.$markImplementor(ValueBoxEditorDecorator__BinderImpl__GenBundleImpl);
 
-/** @private {ValueBoxEditorDecorator__BinderImpl__GenBundleImpl} */
+/**@private {ValueBoxEditorDecorator__BinderImpl__GenBundleImpl}*/
 ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.$f__instance0__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl_;
-/** @public {HashMap<?string, ResourcePrototype>} */
+/**@type {HashMap<?string, ResourcePrototype>}*/
 ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.f_resourceMap__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl_;
-/** @private {ValueBoxEditorDecorator__BinderImpl__GenCss__style} */
+/**@private {ValueBoxEditorDecorator__BinderImpl__GenCss__style}*/
 ValueBoxEditorDecorator__BinderImpl__GenBundleImpl.$f_style__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundleImpl_;
 
 exports = ValueBoxEditorDecorator__BinderImpl__GenBundleImpl; 

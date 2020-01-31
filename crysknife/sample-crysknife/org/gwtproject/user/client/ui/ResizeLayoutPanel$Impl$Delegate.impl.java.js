@@ -8,48 +8,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.user.client.ui.ResizeLa
  * @interface
  */
 class Delegate {
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_onResize__() {}
- /**
-  * @param {?function():void} fn
-  * @return {Delegate}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {Delegate} */
+ static $adapt(/** ?function():void */ fn) {
   Delegate.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Delegate.$clinit = () =>{};
   Delegate.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_ResizeLayoutPanel_Impl_Delegate = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_ResizeLayoutPanel_Impl_Delegate = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_ResizeLayoutPanel_Impl_Delegate;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.user.client.ui.ResizeLayoutPanel.Impl.Delegate.$LambdaAdaptor$impl');
  }

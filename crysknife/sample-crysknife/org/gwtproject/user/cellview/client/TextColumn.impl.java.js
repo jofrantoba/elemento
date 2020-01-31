@@ -11,37 +11,25 @@ let TextCell = goog.forwardDeclare('org.gwtproject.cell.client.TextCell$impl');
  * @extends {Column<T, ?string>}
   */
 class TextColumn extends Column {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_cellview_client_TextColumn__() {
   this.$ctor__org_gwtproject_user_cellview_client_Column__org_gwtproject_cell_client_Cell(TextCell.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TextColumn.$clinit = () =>{};
   TextColumn.$loadModules();
   Column.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TextColumn;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   TextCell = goog.module.get('org.gwtproject.cell.client.TextCell$impl');
  }

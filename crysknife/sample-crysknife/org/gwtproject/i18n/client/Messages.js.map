@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Messages.impl.java.js",
-"lineCount":16,
-"mappings":"A;;;;;;;;;MA4KiB,Q;;;;QAAA,O;EAAAA,2B;EAAAA;",
+"lineCount":14,
+"mappings":"A;;;;;;;;;MA4KiB,Q;;QAAA,O;EAAAA,2B;EAAAA;",
 "sources":["Messages.java"],
 "names":["org.gwtproject.i18n.client.Messages.<clinit>"]
 }

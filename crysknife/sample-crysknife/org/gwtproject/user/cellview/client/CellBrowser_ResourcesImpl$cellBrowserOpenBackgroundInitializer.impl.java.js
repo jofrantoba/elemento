@@ -7,55 +7,37 @@ let ImageResource = goog.forwardDeclare('org.gwtproject.resources.client.ImageRe
 let CellBrowser__ResourcesImpl = goog.forwardDeclare('org.gwtproject.user.cellview.client.CellBrowser_ResourcesImpl$impl');
 
 class cellBrowserOpenBackgroundInitializer extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!cellBrowserOpenBackgroundInitializer}
-  * @public
-  */
+ /** @return {!cellBrowserOpenBackgroundInitializer} */
  static $create__() {
   let $instance = new cellBrowserOpenBackgroundInitializer();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellBrowser_ResourcesImpl_cellBrowserOpenBackgroundInitializer__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_cellview_client_CellBrowser_ResourcesImpl_cellBrowserOpenBackgroundInitializer__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {ImageResource}
-  * @public
-  */
+ /** @return {ImageResource} */
  static m_get__() {
   cellBrowserOpenBackgroundInitializer.$clinit();
   return CellBrowser__ResourcesImpl.f_cellBrowserOpenBackground__org_gwtproject_user_cellview_client_CellBrowser_ResourcesImpl_;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   cellBrowserOpenBackgroundInitializer.$clinit = () =>{};
   cellBrowserOpenBackgroundInitializer.$loadModules();
   j_l_Object.$clinit();
   CellBrowser__ResourcesImpl.f__instance0__org_gwtproject_user_cellview_client_CellBrowser_ResourcesImpl_.m_cellBrowserOpenBackgroundInitializer___$p_org_gwtproject_user_cellview_client_CellBrowser_ResourcesImpl();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof cellBrowserOpenBackgroundInitializer;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   CellBrowser__ResourcesImpl = goog.module.get('org.gwtproject.user.cellview.client.CellBrowser_ResourcesImpl$impl');
  }

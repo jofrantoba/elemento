@@ -12,43 +12,26 @@ const HasWordWrap = goog.require('org.gwtproject.user.client.ui.HasWordWrap$impl
  * @extends {HasWordWrap}
  */
 class Tab {
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_hasWordWrap__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Tab.$clinit = () =>{};
   Tab.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasAllKeyHandlers.$markImplementor(classConstructor);
-  HasClickHandlers.$markImplementor(classConstructor);
-  HasWordWrap.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_TabBar_Tab = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasAllKeyHandlers.$markImplementor(ctor);
+  HasClickHandlers.$markImplementor(ctor);
+  HasWordWrap.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_TabBar_Tab = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_TabBar_Tab;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

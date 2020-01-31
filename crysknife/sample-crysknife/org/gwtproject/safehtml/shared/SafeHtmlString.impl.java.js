@@ -14,110 +14,71 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {SafeHtml}
   */
 class SafeHtmlString extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_html__org_gwtproject_safehtml_shared_SafeHtmlString_;
  }
- /**
-  * Factory method corresponding to constructor 'SafeHtmlString(String)'.
-  * @param {?string} html
-  * @return {!SafeHtmlString}
-  * @public
-  */
- static $create__java_lang_String(html) {
+ //Factory method corresponding to constructor 'SafeHtmlString(String)'.
+ /** @return {!SafeHtmlString} */
+ static $create__java_lang_String(/** ?string */ html) {
   SafeHtmlString.$clinit();
   let $instance = new SafeHtmlString();
   $instance.$ctor__org_gwtproject_safehtml_shared_SafeHtmlString__java_lang_String(html);
   return $instance;
  }
- /**
-  * Initialization from constructor 'SafeHtmlString(String)'.
-  * @param {?string} html
-  * @public
-  */
- $ctor__org_gwtproject_safehtml_shared_SafeHtmlString__java_lang_String(html) {
+ //Initialization from constructor 'SafeHtmlString(String)'.
+ 
+ $ctor__org_gwtproject_safehtml_shared_SafeHtmlString__java_lang_String(/** ?string */ html) {
   this.$ctor__java_lang_Object__();
   if ($Equality.$same(html, null)) {
    throw $Exceptions.toJs(NullPointerException.$create__java_lang_String("html is null"));
   }
   this.f_html__org_gwtproject_safehtml_shared_SafeHtmlString_ = html;
  }
- /**
-  * Factory method corresponding to constructor 'SafeHtmlString()'.
-  * @return {!SafeHtmlString}
-  * @public
-  */
+ //Factory method corresponding to constructor 'SafeHtmlString()'.
+ /** @return {!SafeHtmlString} */
  static $create__() {
   let $instance = new SafeHtmlString();
   $instance.$ctor__org_gwtproject_safehtml_shared_SafeHtmlString__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'SafeHtmlString()'.
-  * @public
-  */
+ //Initialization from constructor 'SafeHtmlString()'.
+ 
  $ctor__org_gwtproject_safehtml_shared_SafeHtmlString__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_asString__() {
   return this.f_html__org_gwtproject_safehtml_shared_SafeHtmlString_;
  }
- /**
-  * @override
-  * @param {*} obj
-  * @return {boolean}
-  * @public
-  */
- equals(obj) {
+ /** @override @return {boolean} */
+ equals(/** * */ obj) {
   if (!SafeHtml.$isInstance(obj)) {
    return false;
   }
-  return j_l_String.m_equals__java_lang_String__java_lang_Object(this.f_html__org_gwtproject_safehtml_shared_SafeHtmlString_, /**@type {SafeHtml} */ ($Casts.$to(obj, SafeHtml)).m_asString__());
+  return j_l_String.m_equals__java_lang_String__java_lang_Object(this.f_html__org_gwtproject_safehtml_shared_SafeHtmlString_, /**@type {SafeHtml}*/ ($Casts.$to(obj, SafeHtml)).m_asString__());
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  hashCode() {
   return j_l_String.m_hashCode__java_lang_String(this.f_html__org_gwtproject_safehtml_shared_SafeHtmlString_);
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  toString() {
   return "safe: \"" + j_l_String.m_valueOf__java_lang_Object(this.m_asString__()) + "\"";
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SafeHtmlString.$clinit = () =>{};
   SafeHtmlString.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SafeHtmlString;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   NullPointerException = goog.module.get('java.lang.NullPointerException$impl');
   j_l_String = goog.module.get('java.lang.String$impl');

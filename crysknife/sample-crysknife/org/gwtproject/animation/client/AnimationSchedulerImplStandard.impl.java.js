@@ -13,77 +13,48 @@ let Element_$Overlay = goog.forwardDeclare('org.gwtproject.dom.client.Element.$O
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class AnimationSchedulerImplStandard extends AnimationScheduler {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!AnimationSchedulerImplStandard}
-  * @public
-  */
+ /** @return {!AnimationSchedulerImplStandard} */
  static $create__() {
   AnimationSchedulerImplStandard.$clinit();
   let $instance = new AnimationSchedulerImplStandard();
   $instance.$ctor__org_gwtproject_animation_client_AnimationSchedulerImplStandard__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_animation_client_AnimationSchedulerImplStandard__() {
   this.$ctor__org_gwtproject_animation_client_AnimationScheduler__();
  }
- /**
-  * @override
-  * @param {AnimationCallback} callback
-  * @param {Object} element
-  * @return {AnimationHandle}
-  * @public
-  */
- m_requestAnimationFrame__org_gwtproject_animation_client_AnimationScheduler_AnimationCallback__org_gwtproject_dom_client_Element(callback, element) {
+ /** @override @return {AnimationHandle} */
+ m_requestAnimationFrame__org_gwtproject_animation_client_AnimationScheduler_AnimationCallback__org_gwtproject_dom_client_Element(/** AnimationCallback */ callback, /** Object */ element) {
   let id = AnimationSchedulerImplStandard.m_requestImplNew__org_gwtproject_animation_client_AnimationScheduler_AnimationCallback__org_gwtproject_dom_client_Element(callback, element);
   return $1.$create__org_gwtproject_animation_client_AnimationSchedulerImplStandard__int(this, id);
  }
- /**
-  * @param {AnimationCallback} cb
-  * @param {Object} element
-  * @return {number}
-  * @public
-  */
- static m_requestImplNew__org_gwtproject_animation_client_AnimationScheduler_AnimationCallback__org_gwtproject_dom_client_Element(cb, element) {
+ /** @return {number} */
+ static m_requestImplNew__org_gwtproject_animation_client_AnimationScheduler_AnimationCallback__org_gwtproject_dom_client_Element(/** AnimationCallback */ cb, /** Object */ element) {
   return window.requestAnimationFrame((/** number */ p0) =>{
    cb.m_execute__double(Duration.m_currentTimeMillis__());
-  }, /**@type {Element} */ ($Casts.$to(Js.m_cast__java_lang_Object(element), $Overlay)));
+  }, /**@type {Element}*/ ($Casts.$to(Js.m_cast__java_lang_Object(element), $Overlay)));
  }
- /**
-  * @param {number} id
-  * @public
-  */
- static m_cancelImpl__int(id) {
+ 
+ static m_cancelImpl__int(/** number */ id) {
   AnimationSchedulerImplStandard.$clinit();
   window.cancelAnimationFrame(id);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AnimationSchedulerImplStandard.$clinit = () =>{};
   AnimationSchedulerImplStandard.$loadModules();
   AnimationScheduler.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AnimationSchedulerImplStandard;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('elemental2.dom.Element.$Overlay$impl');
   Js = goog.module.get('jsinterop.base.Js$impl');

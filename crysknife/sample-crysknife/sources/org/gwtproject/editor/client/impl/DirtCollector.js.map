@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DirtCollector.impl.java.js",
-"lineCount":85,
-"mappings":"A;;;;;;;;;;;;;;MAuBM,a;;;;CAAA,W;EAAAA,Q;EAAAA;OACW,wDADXA,S;EAAAA;OAE0C,8DAF1CA,C;;;;;;QAAA,S;EAAAC,wB;EAAAA,oC;EAAAA,qE;EAAAA,iB;;;;;CAAA,wD;EAAAC,2D;EAAAA,kE;;;;;;;;CAMY,sD,CAA0BC,G;EACxCC,IAAmBC,MAAnBD,+B;EACAA;GACEA,uGADFA;G;EAGAA,IAC6BE,QAD7BF,qH;EAEAA;GACEA,6JADFA;G;;;;;;CAKqC,iB;EACrCG,2E;;;;;;CAOa,W;EACbC,qE;;;;;CA3BE,0D;EAEJN,0I;;;;;QAFI,O;EAAAO,gC;EAAAA,6B;EAAAA;",
+"lineCount":63,
+"mappings":"A;;;;;;;;;;;;;;MAuBM,a;;CAAA,W;EAAAA,Q;EAAAA;OACW,wDADXA,S;EAAAA;OAE0C,8DAF1CA,C;;;QAAA,S;EAAAC,wB;EAAAA,oC;EAAAA,qE;EAAAA,iB;;;CAAA,wD;EAAAC,2D;EAAAA,kE;;;CAMY,sD,yBAA0BC,G;EACxCC,IAAmBC,MAAnBD,+B;EACAA;GACEA,uGADFA;G;EAGAA,IAC6BE,QAD7BF,oH;EAEAA;GACEA,6JADFA;G;;;CAKqC,iB;EACrCG,2E;;;CAOa,W;EACbC,qE;;;CA3BE,0D;EAEJN,yI;;;QAFI,O;EAAAO,gC;EAAAA,6B;EAAAA;",
 "sources":["DirtCollector.java"],
 "names":["org.gwtproject.editor.client.impl.DirtCollector.<synthetic: ctor_js>","org.gwtproject.editor.client.impl.DirtCollector.<synthetic: ctor_create>","org.gwtproject.editor.client.impl.DirtCollector.<init>","ctx","org.gwtproject.editor.client.impl.DirtCollector.endVisit","editor","delegate","org.gwtproject.editor.client.impl.DirtCollector.getLeafValues","org.gwtproject.editor.client.impl.DirtCollector.isDirty","org.gwtproject.editor.client.impl.DirtCollector.<clinit>"]
 }

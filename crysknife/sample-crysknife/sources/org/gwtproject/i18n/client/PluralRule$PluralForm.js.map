@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"PluralRule$PluralForm.impl.java.js",
-"lineCount":95,
-"mappings":"A;;;;;MA8BsB,U;;;;CAAA,W;EAAAA,Q;EAAAA;OACG,yDADHA,C;EAAAA;OAEG,gEAFHA,C;EAAAA;OAGI,2DAHJA,S;;;;;;;;;QAWX,2C,CAAkBC,I,EAAaC,W;EAA/BC,qB;EAAAA,iC;EAAAA,yH;EAAAA,iB;;;;;;;;CAAA,2F,CAAkBF,I,EAAaC,W;EACpCE,oI;;;;;;;;;;QAYK,oD,CAAkBH,I,EAAaC,W,EAAqBG,M;EAApDF,qB;EAAAA,iC;EAAAA,0I;EAAAA,iB;;;;;;;;;CAAA,oG,CAAkBF,I,EAAaC,W,EAAqBG,M;EAApDD,iC;EACLA,sE;EACAA,oF;EACAA,0E;;;;;;CAMY,kB;EACZE,6E;;;;;;CAMY,W;EACZC,sE;;;;;;CAOa,oB;EACbC,yE;;;;;QAjDgB,O;EAAAC,6B;EAAAA,0B;EAAAA;",
+"lineCount":62,
+"mappings":"A;;;;;MA8BsB,U;;CAAA,W;EAAAA,Q;EAAAA;OACG,yDADHA,C;EAAAA;OAEG,gEAFHA,C;EAAAA;OAGI,2DAHJA,S;;;;QAWX,2C,gBAAkBC,I,iBAAaC,W;EAA/BC,qB;EAAAA,iC;EAAAA,yH;EAAAA,iB;;;;CAAA,2F,gBAAkBF,I,iBAAaC,W;EACpCE,oI;;;;QAYK,oD,gBAAkBH,I,iBAAaC,W,iBAAqBG,M;EAApDF,qB;EAAAA,iC;EAAAA,0I;EAAAA,iB;;;;CAAA,oG,gBAAkBF,I,iBAAaC,W,iBAAqBG,M;EAApDD,iC;EACLA,sE;EACAA,oF;EACAA,0E;;;CAMY,kB;EACZE,6E;;;CAMY,W;EACZC,sE;;;CAOa,oB;EACbC,yE;;;QAjDgB,O;EAAAC,6B;EAAAA,0B;EAAAA;",
 "sources":["PluralRule.java"],
 "names":["org.gwtproject.i18n.client.PluralRule$PluralForm.<synthetic: ctor_js>","name","description","org.gwtproject.i18n.client.PluralRule$PluralForm.<synthetic: ctor_create>","org.gwtproject.i18n.client.PluralRule$PluralForm.<init>","noWarn","org.gwtproject.i18n.client.PluralRule$PluralForm.getDescription","org.gwtproject.i18n.client.PluralRule$PluralForm.getName","org.gwtproject.i18n.client.PluralRule$PluralForm.getWarnIfMissing","org.gwtproject.i18n.client.PluralRule$PluralForm.<clinit>"]
 }

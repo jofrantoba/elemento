@@ -10,54 +10,37 @@ let SelectionChangeEvent = goog.forwardDeclare('org.gwtproject.view.client.Selec
  * @implements {Handler}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(SelectionChangeEvent):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(SelectionChangeEvent):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(SelectionChangeEvent):void} */
+  /**@type {?function(SelectionChangeEvent):void}*/
   this.f_$$fn__org_gwtproject_view_client_SelectionChangeEvent_Handler_$LambdaAdaptor;
   this.$ctor__org_gwtproject_view_client_SelectionChangeEvent_Handler_$LambdaAdaptor__org_gwtproject_view_client_SelectionChangeEvent_Handler_$JsFunction(fn);
  }
- /**
-  * @param {?function(SelectionChangeEvent):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_view_client_SelectionChangeEvent_Handler_$LambdaAdaptor__org_gwtproject_view_client_SelectionChangeEvent_Handler_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_view_client_SelectionChangeEvent_Handler_$LambdaAdaptor__org_gwtproject_view_client_SelectionChangeEvent_Handler_$JsFunction(/** ?function(SelectionChangeEvent):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_view_client_SelectionChangeEvent_Handler_$LambdaAdaptor = fn;
  }
- /**
-  * @param {SelectionChangeEvent} arg0
-  * @public
-  */
- m_onSelectionChange__org_gwtproject_view_client_SelectionChangeEvent(arg0) {
+ 
+ m_onSelectionChange__org_gwtproject_view_client_SelectionChangeEvent(/** SelectionChangeEvent */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_view_client_SelectionChangeEvent_Handler_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

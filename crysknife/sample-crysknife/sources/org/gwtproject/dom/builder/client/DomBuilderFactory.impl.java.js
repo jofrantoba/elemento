@@ -56,16 +56,11 @@ let InputBuilder = goog.forwardDeclare('org.gwtproject.dom.builder.shared.InputB
 let TableColBuilder = goog.forwardDeclare('org.gwtproject.dom.builder.shared.TableColBuilder$impl');
 
 class DomBuilderFactory extends ElementBuilderFactory {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {DomBuilderFactory}
-  * @public
-  */
+ /** @return {DomBuilderFactory} */
  static m_get__() {
   DomBuilderFactory.$clinit();
   if ($Equality.$same(DomBuilderFactory.f_instance__org_gwtproject_dom_builder_client_DomBuilderFactory_, null)) {
@@ -73,602 +68,308 @@ class DomBuilderFactory extends ElementBuilderFactory {
   }
   return DomBuilderFactory.f_instance__org_gwtproject_dom_builder_client_DomBuilderFactory_;
  }
- /**
-  * @return {!DomBuilderFactory}
-  * @public
-  */
+ /** @return {!DomBuilderFactory} */
  static $create__() {
   DomBuilderFactory.$clinit();
   let $instance = new DomBuilderFactory();
   $instance.$ctor__org_gwtproject_dom_builder_client_DomBuilderFactory__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_dom_builder_client_DomBuilderFactory__() {
   this.$ctor__org_gwtproject_dom_builder_shared_ElementBuilderFactory__();
  }
- /**
-  * @override
-  * @return {DomAnchorBuilder}
-  * @public
-  */
+ /** @override @return {DomAnchorBuilder} */
  m_createAnchorBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startAnchor__();
  }
- /**
-  * @override
-  * @return {DomAreaBuilder}
-  * @public
-  */
+ /** @override @return {DomAreaBuilder} */
  m_createAreaBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startArea__();
  }
- /**
-  * @override
-  * @return {DomAudioBuilder}
-  * @public
-  */
+ /** @override @return {DomAudioBuilder} */
  m_createAudioBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startAudio__();
  }
- /**
-  * @override
-  * @return {DomBaseBuilder}
-  * @public
-  */
+ /** @override @return {DomBaseBuilder} */
  m_createBaseBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startBase__();
  }
- /**
-  * @override
-  * @return {DomQuoteBuilder}
-  * @public
-  */
+ /** @override @return {DomQuoteBuilder} */
  m_createBlockQuoteBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startBlockQuote__();
  }
- /**
-  * @override
-  * @return {DomBodyBuilder}
-  * @public
-  */
+ /** @override @return {DomBodyBuilder} */
  m_createBodyBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startBody__();
  }
- /**
-  * @override
-  * @return {DomBRBuilder}
-  * @public
-  */
+ /** @override @return {DomBRBuilder} */
  m_createBRBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startBR__();
  }
- /**
-  * @override
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @override @return {InputBuilder} */
  m_createButtonInputBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startButtonInput__();
  }
- /**
-  * @override
-  * @return {DomCanvasBuilder}
-  * @public
-  */
+ /** @override @return {DomCanvasBuilder} */
  m_createCanvasBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startCanvas__();
  }
- /**
-  * @override
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @override @return {InputBuilder} */
  m_createCheckboxInputBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startCheckboxInput__();
  }
- /**
-  * @override
-  * @return {DomTableColBuilder}
-  * @public
-  */
+ /** @override @return {DomTableColBuilder} */
  m_createColBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startCol__();
  }
- /**
-  * @override
-  * @return {TableColBuilder}
-  * @public
-  */
+ /** @override @return {TableColBuilder} */
  m_createColGroupBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startColGroup__();
  }
- /**
-  * @override
-  * @return {DomDivBuilder}
-  * @public
-  */
+ /** @override @return {DomDivBuilder} */
  m_createDivBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startDiv__();
  }
- /**
-  * @override
-  * @return {DomDListBuilder}
-  * @public
-  */
+ /** @override @return {DomDListBuilder} */
  m_createDListBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startDList__();
  }
- /**
-  * @override
-  * @return {DomFieldSetBuilder}
-  * @public
-  */
+ /** @override @return {DomFieldSetBuilder} */
  m_createFieldSetBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startFieldSet__();
  }
- /**
-  * @override
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @override @return {InputBuilder} */
  m_createFileInputBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startFileInput__();
  }
- /**
-  * @override
-  * @return {DomFormBuilder}
-  * @public
-  */
+ /** @override @return {DomFormBuilder} */
  m_createFormBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startForm__();
  }
- /**
-  * @override
-  * @return {DomFrameBuilder}
-  * @public
-  */
+ /** @override @return {DomFrameBuilder} */
  m_createFrameBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startFrame__();
  }
- /**
-  * @override
-  * @return {DomFrameSetBuilder}
-  * @public
-  */
+ /** @override @return {DomFrameSetBuilder} */
  m_createFrameSetBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startFrameSet__();
  }
- /**
-  * @override
-  * @return {DomHeadingBuilder}
-  * @public
-  */
+ /** @override @return {DomHeadingBuilder} */
  m_createH1Builder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startH1__();
  }
- /**
-  * @override
-  * @return {DomHeadingBuilder}
-  * @public
-  */
+ /** @override @return {DomHeadingBuilder} */
  m_createH2Builder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startH2__();
  }
- /**
-  * @override
-  * @return {DomHeadingBuilder}
-  * @public
-  */
+ /** @override @return {DomHeadingBuilder} */
  m_createH3Builder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startH3__();
  }
- /**
-  * @override
-  * @return {DomHeadingBuilder}
-  * @public
-  */
+ /** @override @return {DomHeadingBuilder} */
  m_createH4Builder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startH4__();
  }
- /**
-  * @override
-  * @return {DomHeadingBuilder}
-  * @public
-  */
+ /** @override @return {DomHeadingBuilder} */
  m_createH5Builder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startH5__();
  }
- /**
-  * @override
-  * @return {DomHeadingBuilder}
-  * @public
-  */
+ /** @override @return {DomHeadingBuilder} */
  m_createH6Builder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startH6__();
  }
- /**
-  * @override
-  * @return {DomHeadBuilder}
-  * @public
-  */
+ /** @override @return {DomHeadBuilder} */
  m_createHeadBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startHead__();
  }
- /**
-  * @override
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @override @return {InputBuilder} */
  m_createHiddenInputBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startHiddenInput__();
  }
- /**
-  * @override
-  * @return {DomHRBuilder}
-  * @public
-  */
+ /** @override @return {DomHRBuilder} */
  m_createHRBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startHR__();
  }
- /**
-  * @override
-  * @return {DomIFrameBuilder}
-  * @public
-  */
+ /** @override @return {DomIFrameBuilder} */
  m_createIFrameBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startIFrame__();
  }
- /**
-  * @override
-  * @return {DomImageBuilder}
-  * @public
-  */
+ /** @override @return {DomImageBuilder} */
  m_createImageBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startImage__();
  }
- /**
-  * @override
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @override @return {InputBuilder} */
  m_createImageInputBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startImageInput__();
  }
- /**
-  * @override
-  * @return {DomLabelBuilder}
-  * @public
-  */
+ /** @override @return {DomLabelBuilder} */
  m_createLabelBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startLabel__();
  }
- /**
-  * @override
-  * @return {DomLegendBuilder}
-  * @public
-  */
+ /** @override @return {DomLegendBuilder} */
  m_createLegendBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startLegend__();
  }
- /**
-  * @override
-  * @return {DomLIBuilder}
-  * @public
-  */
+ /** @override @return {DomLIBuilder} */
  m_createLIBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startLI__();
  }
- /**
-  * @override
-  * @return {DomLinkBuilder}
-  * @public
-  */
+ /** @override @return {DomLinkBuilder} */
  m_createLinkBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startLink__();
  }
- /**
-  * @override
-  * @return {DomMapBuilder}
-  * @public
-  */
+ /** @override @return {DomMapBuilder} */
  m_createMapBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startMap__();
  }
- /**
-  * @override
-  * @return {DomMetaBuilder}
-  * @public
-  */
+ /** @override @return {DomMetaBuilder} */
  m_createMetaBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startMeta__();
  }
- /**
-  * @override
-  * @return {DomOListBuilder}
-  * @public
-  */
+ /** @override @return {DomOListBuilder} */
  m_createOListBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startOList__();
  }
- /**
-  * @override
-  * @return {DomOptGroupBuilder}
-  * @public
-  */
+ /** @override @return {DomOptGroupBuilder} */
  m_createOptGroupBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startOptGroup__();
  }
- /**
-  * @override
-  * @return {DomOptionBuilder}
-  * @public
-  */
+ /** @override @return {DomOptionBuilder} */
  m_createOptionBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startOption__();
  }
- /**
-  * @override
-  * @return {DomParagraphBuilder}
-  * @public
-  */
+ /** @override @return {DomParagraphBuilder} */
  m_createParagraphBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startParagraph__();
  }
- /**
-  * @override
-  * @return {DomParamBuilder}
-  * @public
-  */
+ /** @override @return {DomParamBuilder} */
  m_createParamBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startParam__();
  }
- /**
-  * @override
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @override @return {InputBuilder} */
  m_createPasswordInputBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startPasswordInput__();
  }
- /**
-  * @override
-  * @return {DomPreBuilder}
-  * @public
-  */
+ /** @override @return {DomPreBuilder} */
  m_createPreBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startPre__();
  }
- /**
-  * @override
-  * @return {DomButtonBuilder}
-  * @public
-  */
+ /** @override @return {DomButtonBuilder} */
  m_createPushButtonBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startPushButton__();
  }
- /**
-  * @override
-  * @return {DomQuoteBuilder}
-  * @public
-  */
+ /** @override @return {DomQuoteBuilder} */
  m_createQuoteBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startQuote__();
  }
- /**
-  * @override
-  * @param {?string} name
-  * @return {InputBuilder}
-  * @public
-  */
- m_createRadioInputBuilder__java_lang_String(name) {
+ /** @override @return {InputBuilder} */
+ m_createRadioInputBuilder__java_lang_String(/** ?string */ name) {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startRadioInput__java_lang_String(name);
  }
- /**
-  * @override
-  * @return {DomButtonBuilder}
-  * @public
-  */
+ /** @override @return {DomButtonBuilder} */
  m_createResetButtonBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startResetButton__();
  }
- /**
-  * @override
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @override @return {InputBuilder} */
  m_createResetInputBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startResetInput__();
  }
- /**
-  * @override
-  * @return {DomScriptBuilder}
-  * @public
-  */
+ /** @override @return {DomScriptBuilder} */
  m_createScriptBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startScript__();
  }
- /**
-  * @override
-  * @return {DomSelectBuilder}
-  * @public
-  */
+ /** @override @return {DomSelectBuilder} */
  m_createSelectBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startSelect__();
  }
- /**
-  * @override
-  * @return {DomSourceBuilder}
-  * @public
-  */
+ /** @override @return {DomSourceBuilder} */
  m_createSourceBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startSource__();
  }
- /**
-  * @override
-  * @return {DomSpanBuilder}
-  * @public
-  */
+ /** @override @return {DomSpanBuilder} */
  m_createSpanBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startSpan__();
  }
- /**
-  * @override
-  * @return {DomStyleBuilder}
-  * @public
-  */
+ /** @override @return {DomStyleBuilder} */
  m_createStyleBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startStyle__();
  }
- /**
-  * @override
-  * @return {DomButtonBuilder}
-  * @public
-  */
+ /** @override @return {DomButtonBuilder} */
  m_createSubmitButtonBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startSubmitButton__();
  }
- /**
-  * @override
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @override @return {InputBuilder} */
  m_createSubmitInputBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startSubmitInput__();
  }
- /**
-  * @override
-  * @return {DomTableBuilder}
-  * @public
-  */
+ /** @override @return {DomTableBuilder} */
  m_createTableBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startTable__();
  }
- /**
-  * @override
-  * @return {DomTableCaptionBuilder}
-  * @public
-  */
+ /** @override @return {DomTableCaptionBuilder} */
  m_createTableCaptionBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startTableCaption__();
  }
- /**
-  * @override
-  * @return {DomTableSectionBuilder}
-  * @public
-  */
+ /** @override @return {DomTableSectionBuilder} */
  m_createTBodyBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startTBody__();
  }
- /**
-  * @override
-  * @return {DomTableCellBuilder}
-  * @public
-  */
+ /** @override @return {DomTableCellBuilder} */
  m_createTDBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startTD__();
  }
- /**
-  * @override
-  * @return {DomTextAreaBuilder}
-  * @public
-  */
+ /** @override @return {DomTextAreaBuilder} */
  m_createTextAreaBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startTextArea__();
  }
- /**
-  * @override
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @override @return {InputBuilder} */
  m_createTextInputBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startTextInput___$pp_org_gwtproject_dom_builder_client();
  }
- /**
-  * @override
-  * @return {DomTableSectionBuilder}
-  * @public
-  */
+ /** @override @return {DomTableSectionBuilder} */
  m_createTFootBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startTFoot__();
  }
- /**
-  * @override
-  * @return {DomTableCellBuilder}
-  * @public
-  */
+ /** @override @return {DomTableCellBuilder} */
  m_createTHBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startTH__();
  }
- /**
-  * @override
-  * @return {DomTableSectionBuilder}
-  * @public
-  */
+ /** @override @return {DomTableSectionBuilder} */
  m_createTHeadBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startTHead__();
  }
- /**
-  * @override
-  * @return {DomTableRowBuilder}
-  * @public
-  */
+ /** @override @return {DomTableRowBuilder} */
  m_createTRBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startTR__();
  }
- /**
-  * @override
-  * @return {DomUListBuilder}
-  * @public
-  */
+ /** @override @return {DomUListBuilder} */
  m_createUListBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startUList__();
  }
- /**
-  * @override
-  * @return {DomVideoBuilder}
-  * @public
-  */
+ /** @override @return {DomVideoBuilder} */
  m_createVideoBuilder__() {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_startVideo__();
  }
- /**
-  * @override
-  * @param {?string} tagName
-  * @return {ElementBuilder}
-  * @public
-  */
- m_trustedCreate__java_lang_String(tagName) {
+ /** @override @return {ElementBuilder} */
+ m_trustedCreate__java_lang_String(/** ?string */ tagName) {
   return this.m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory().m_trustedStart__java_lang_String(tagName);
  }
- /**
-  * @return {DomBuilderImpl}
-  * @public
-  */
+ /** @return {DomBuilderImpl} */
  m_impl___$p_org_gwtproject_dom_builder_client_DomBuilderFactory() {
   return DomBuilderImpl.$create__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomBuilderFactory.$clinit = () =>{};
   DomBuilderFactory.$loadModules();
   ElementBuilderFactory.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomBuilderFactory;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   DomBuilderImpl = goog.module.get('org.gwtproject.dom.builder.client.DomBuilderImpl$impl');
@@ -677,7 +378,7 @@ class DomBuilderFactory extends ElementBuilderFactory {
 }
 $Util.$setClassMetadata(DomBuilderFactory, 'org.gwtproject.dom.builder.client.DomBuilderFactory');
 
-/** @public {DomBuilderFactory} */
+/**@type {DomBuilderFactory}*/
 DomBuilderFactory.f_instance__org_gwtproject_dom_builder_client_DomBuilderFactory_;
 
 exports = DomBuilderFactory; 

@@ -14,60 +14,40 @@ let UriUtils = goog.forwardDeclare('org.gwtproject.safehtml.shared.UriUtils$impl
  * @implements {Template}
   */
 class ImageCell__TemplateImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!ImageCell__TemplateImpl}
-  * @public
-  */
+ /** @return {!ImageCell__TemplateImpl} */
  static $create__() {
   ImageCell__TemplateImpl.$clinit();
   let $instance = new ImageCell__TemplateImpl();
   $instance.$ctor__org_gwtproject_cell_client_ImageCell_TemplateImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_cell_client_ImageCell_TemplateImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {?string} arg0
-  * @return {SafeHtml}
-  * @public
-  */
- m_img__java_lang_String(arg0) {
+ /** @override @return {SafeHtml} */
+ m_img__java_lang_String(/** ?string */ arg0) {
   let sb = StringBuilder.$create__();
   sb.m_append__java_lang_String("<img src=\"");
   sb.m_append__java_lang_String(SafeHtmlUtils.m_htmlEscape__java_lang_String(UriUtils.m_sanitizeUri__java_lang_String(arg0)));
   sb.m_append__java_lang_String("\"/>");
   return OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml.$create__java_lang_String(sb.toString());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ImageCell__TemplateImpl.$clinit = () =>{};
   ImageCell__TemplateImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ImageCell__TemplateImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   StringBuilder = goog.module.get('java.lang.StringBuilder$impl');
   OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml = goog.module.get('org.gwtproject.safehtml.shared.OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml$impl');

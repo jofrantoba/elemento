@@ -15,69 +15,43 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
  * @abstract
   */
 class SuggestOracle extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Response} */
+  /**@type {Response}*/
   this.f_emptyResponse__org_gwtproject_user_client_ui_SuggestOracle_;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_SuggestOracle__() {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_user_client_ui_SuggestOracle();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isDisplayStringHTML__() {
   return false;
  }
- /**
-  * @param {Request} request
-  * @param {Callback} callback
-  * @public
-  */
- m_requestDefaultSuggestions__org_gwtproject_user_client_ui_SuggestOracle_Request__org_gwtproject_user_client_ui_SuggestOracle_Callback(request, callback) {
+ 
+ m_requestDefaultSuggestions__org_gwtproject_user_client_ui_SuggestOracle_Request__org_gwtproject_user_client_ui_SuggestOracle_Callback(/** Request */ request, /** Callback */ callback) {
   $Asserts.$assert($Equality.$same(request.f_query__org_gwtproject_user_client_ui_SuggestOracle_Request_, null));
   callback.m_onSuggestionsReady__org_gwtproject_user_client_ui_SuggestOracle_Request__org_gwtproject_user_client_ui_SuggestOracle_Response(request, this.f_emptyResponse__org_gwtproject_user_client_ui_SuggestOracle_);
  }
- /**
-  * @abstract
-  * @param {Request} request
-  * @param {Callback} callback
-  * @public
-  */
- m_requestSuggestions__org_gwtproject_user_client_ui_SuggestOracle_Request__org_gwtproject_user_client_ui_SuggestOracle_Callback(request, callback) {}
- /**
-  * @private
-  */
+ /** @abstract */
+ m_requestSuggestions__org_gwtproject_user_client_ui_SuggestOracle_Request__org_gwtproject_user_client_ui_SuggestOracle_Callback(/** Request */ request, /** Callback */ callback) {}
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_SuggestOracle() {
-  this.f_emptyResponse__org_gwtproject_user_client_ui_SuggestOracle_ = Response.$create__java_util_Collection(/**@type {!ArrayList<Suggestion>} */ (ArrayList.$create__()));
+  this.f_emptyResponse__org_gwtproject_user_client_ui_SuggestOracle_ = Response.$create__java_util_Collection(/**@type {!ArrayList<Suggestion>}*/ (ArrayList.$create__()));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SuggestOracle.$clinit = () =>{};
   SuggestOracle.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SuggestOracle;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   ArrayList = goog.module.get('java.util.ArrayList$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

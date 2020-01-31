@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ExtraAttribute.impl.java.js",
-"lineCount":67,
-"mappings":"A;;;;;;;;;MAuBmB,c;;;;CAAA,W;EAAAA,Q;;;;;;QAKT,S;EAAAC,qC;EAAAA,+D;EAAAA,iB;;;;;CAAA,kD;EAAAC,iC;;;;;;QAHR,yD;EAAAC,yG;;;;;QAFiB,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAEjBA,8M;;;;;;;;;;;;;;;;;;;;AAFiB;;",
+"lineCount":49,
+"mappings":"A;;;;;;;;;MAuBmB,c;;CAAA,W;EAAAA,Q;;;QAKT,S;EAAAC,qC;EAAAA,+D;EAAAA,iB;;;CAAA,kD;EAAAC,iC;;;QAHR,yD;EAAAC,yG;;;QAFiB,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAEjBA,6M;;;;;;;;;;;;;;AAFiB;;",
 "sources":["ExtraAttribute.java"],
 "names":["org.gwtproject.aria.client.ExtraAttribute.<synthetic: ctor_js>","org.gwtproject.aria.client.ExtraAttribute.<synthetic: ctor_create>","org.gwtproject.aria.client.ExtraAttribute.<init>","org.gwtproject.aria.client.ExtraAttribute.<synthetic: getter>","org.gwtproject.aria.client.ExtraAttribute.<clinit>"]
 }

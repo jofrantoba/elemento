@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellTable_ResourcesImpl$cellTableStyleInitializer.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;MAkNuB,yB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,gD;EAAAA,2G;EAAAA,iB;;;;;CAAA,8F;EAAAC,iC;;;;;;QAII,O;EAAAC,oC;EACrBA,+G;;;;;QALiB,O;EAAAC,4C;EAAAA,yC;EAAAA,qB;EAEjBA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;MAkNuB,yB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,gD;EAAAA,2G;EAAAA,iB;;;CAAA,8F;EAAAC,iC;;;QAII,O;EAAAC,oC;EACrBA,+G;;;QALiB,O;EAAAC,4C;EAAAA,yC;EAAAA,qB;EAEjBA;",
 "sources":["CellTable_ResourcesImpl.java"],
 "names":["org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$cellTableStyleInitializer.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$cellTableStyleInitializer.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$cellTableStyleInitializer.<init>","org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$cellTableStyleInitializer.get","org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$cellTableStyleInitializer.<clinit>"]
 }

@@ -19,42 +19,27 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
 
 class Cookies extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} name
-  * @return {?string}
-  * @public
-  */
- static m_getCookie__java_lang_String(name) {
+ /** @return {?string} */
+ static m_getCookie__java_lang_String(/** ?string */ name) {
   Cookies.$clinit();
   let cookiesMap = Cookies.m_ensureCookies__();
-  return /**@type {?string} */ ($Casts.$to(cookiesMap.get(name), j_l_String));
+  return /**@type {?string}*/ ($Casts.$to(cookiesMap.get(name), j_l_String));
  }
- /**
-  * @return {Collection<?string>}
-  * @public
-  */
+ /** @return {Collection<?string>} */
  static m_getCookieNames__() {
   Cookies.$clinit();
   return Cookies.m_ensureCookies__().keySet();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  static m_getUriEncode__() {
   Cookies.$clinit();
   return Cookies.f_uriEncoding__org_gwtproject_user_window_client_Cookies_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  static m_isCookieEnabled__() {
   Cookies.$clinit();
   if (!Cookies.f_isCookieChecked__org_gwtproject_user_window_client_Cookies_) {
@@ -65,66 +50,38 @@ class Cookies extends j_l_Object {
   }
   return Cookies.f_isCookieEnabled__org_gwtproject_user_window_client_Cookies_;
  }
- /**
-  * @param {?string} name
-  * @public
-  */
- static m_removeCookie__java_lang_String(name) {
+ 
+ static m_removeCookie__java_lang_String(/** ?string */ name) {
   Cookies.$clinit();
   if (Cookies.f_uriEncoding__org_gwtproject_user_window_client_Cookies_) {
    name = window.encodeURIComponent(name);
   }
   Cookies.m_removeCookieNative__java_lang_String(name);
  }
- /**
-  * @param {?string} name
-  * @param {?string} path
-  * @public
-  */
- static m_removeCookie__java_lang_String__java_lang_String(name, path) {
+ 
+ static m_removeCookie__java_lang_String__java_lang_String(/** ?string */ name, /** ?string */ path) {
   Cookies.$clinit();
   if (Cookies.f_uriEncoding__org_gwtproject_user_window_client_Cookies_) {
    name = window.encodeURIComponent(name);
   }
   Cookies.m_removeCookieNative__java_lang_String__java_lang_String(name, path);
  }
- /**
-  * @param {?string} name
-  * @param {?string} path
-  * @public
-  */
- static m_removeCookieNative__java_lang_String__java_lang_String(name, path) {
+ 
+ static m_removeCookieNative__java_lang_String__java_lang_String(/** ?string */ name, /** ?string */ path) {
   $Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.cookie = j_l_String.m_valueOf__java_lang_Object(name) + "=;path=" + j_l_String.m_valueOf__java_lang_Object(path) + ";expires=Fri, 02-Jan-1970 00:00:00 GMT";
  }
- /**
-  * @param {?string} name
-  * @param {?string} value
-  * @public
-  */
- static m_setCookie__java_lang_String__java_lang_String(name, value) {
+ 
+ static m_setCookie__java_lang_String__java_lang_String(/** ?string */ name, /** ?string */ value) {
   Cookies.$clinit();
   Cookies.m_setCookie__java_lang_String__java_lang_String__java_util_Date__java_lang_String__java_lang_String__boolean(name, value, null, null, null, false);
  }
- /**
-  * @param {?string} name
-  * @param {?string} value
-  * @param {j_u_Date} expires
-  * @public
-  */
- static m_setCookie__java_lang_String__java_lang_String__java_util_Date(name, value, expires) {
+ 
+ static m_setCookie__java_lang_String__java_lang_String__java_util_Date(/** ?string */ name, /** ?string */ value, /** j_u_Date */ expires) {
   Cookies.$clinit();
   Cookies.m_setCookie__java_lang_String__java_lang_String__java_util_Date__java_lang_String__java_lang_String__boolean(name, value, expires, null, null, false);
  }
- /**
-  * @param {?string} name
-  * @param {?string} value
-  * @param {j_u_Date} expires
-  * @param {?string} domain
-  * @param {?string} path
-  * @param {boolean} secure
-  * @public
-  */
- static m_setCookie__java_lang_String__java_lang_String__java_util_Date__java_lang_String__java_lang_String__boolean(name, value, expires, domain, path, secure) {
+ 
+ static m_setCookie__java_lang_String__java_lang_String__java_util_Date__java_lang_String__java_lang_String__boolean(/** ?string */ name, /** ?string */ value, /** j_u_Date */ expires, /** ?string */ domain, /** ?string */ path, /** boolean */ secure) {
   Cookies.$clinit();
   if (Cookies.f_uriEncoding__org_gwtproject_user_window_client_Cookies_) {
    name = window.encodeURIComponent(name);
@@ -136,25 +93,19 @@ class Cookies extends j_l_Object {
   }
   Cookies.m_setCookieImpl__java_lang_String__java_lang_String__double__java_lang_String__java_lang_String__boolean(name, value, $Primitives.$widenLongToDouble($Equality.$same(expires, null) ? $Long.fromInt(0) : expires.m_getTime__()), domain, path, secure);
  }
- /**
-  * @param {boolean} encode
-  * @public
-  */
- static m_setUriEncode__boolean(encode) {
+ 
+ static m_setUriEncode__boolean(/** boolean */ encode) {
   Cookies.$clinit();
   if (encode != Cookies.f_uriEncoding__org_gwtproject_user_window_client_Cookies_) {
    Cookies.f_uriEncoding__org_gwtproject_user_window_client_Cookies_ = encode;
    Cookies.f_cachedCookies__org_gwtproject_user_window_client_Cookies_ = null;
   }
  }
- /**
-  * @param {HashMap<?string, ?string>} m
-  * @public
-  */
- static m_loadCookies__java_util_HashMap(m) {
+ 
+ static m_loadCookies__java_util_HashMap(/** HashMap<?string, ?string> */ m) {
   let docCookie = $Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.cookie;
   if (Js.m_isTruthy__java_lang_Object(docCookie) && !j_l_String.m_isEmpty__java_lang_String(docCookie)) {
-   let crumbs = /**@type {String} */ ($Casts.$to(Js.m_cast__java_lang_Object(docCookie), JsString_$Overlay)).split("; ");
+   let crumbs = /**@type {String}*/ ($Casts.$to(Js.m_cast__java_lang_Object(docCookie), JsString_$Overlay)).split("; ");
    for (let i = crumbs.length - 1; i >= 0; --i) {
     let /** ?string */ name, /** ?string */ value;
     let eqIdx = j_l_String.m_indexOf__java_lang_String__int(crumbs[i], 61 /* '=' */);
@@ -177,24 +128,17 @@ class Cookies extends j_l_Object {
    }
   }
  }
- /**
-  * @return {HashMap<?string, ?string>}
-  * @public
-  */
+ /** @return {HashMap<?string, ?string>} */
  static m_ensureCookies__() {
   if ($Equality.$same(Cookies.f_cachedCookies__org_gwtproject_user_window_client_Cookies_, null) || Cookies.m_needsRefresh__()) {
-   let newCachedCookies = /**@type {!HashMap<?string, ?string>} */ (HashMap.$create__());
+   let newCachedCookies = /**@type {!HashMap<?string, ?string>}*/ (HashMap.$create__());
    Cookies.m_loadCookies__java_util_HashMap(newCachedCookies);
    Cookies.f_cachedCookies__org_gwtproject_user_window_client_Cookies_ = newCachedCookies;
   }
   return Cookies.f_cachedCookies__org_gwtproject_user_window_client_Cookies_;
  }
- /**
-  * @param {?string} name
-  * @return {boolean}
-  * @public
-  */
- static m_isValidCookieName__java_lang_String(name) {
+ /** @return {boolean} */
+ static m_isValidCookieName__java_lang_String(/** ?string */ name) {
   if (Cookies.f_uriEncoding__org_gwtproject_user_window_client_Cookies_) {
    return true;
   } else if (j_l_String.m_contains__java_lang_String__java_lang_CharSequence(name, "=") || j_l_String.m_contains__java_lang_String__java_lang_CharSequence(name, ";") || j_l_String.m_contains__java_lang_String__java_lang_CharSequence(name, ",") || j_l_String.m_startsWith__java_lang_String__java_lang_String(name, "$") || j_l_String.m_matches__java_lang_String__java_lang_String(name, ".*\\s+.*")) {
@@ -203,12 +147,8 @@ class Cookies extends j_l_Object {
    return true;
   }
  }
- /**
-  * @param {?string} value
-  * @return {boolean}
-  * @public
-  */
- static m_isValidCookieValue__java_lang_String(value) {
+ /** @return {boolean} */
+ static m_isValidCookieValue__java_lang_String(/** ?string */ value) {
   if (Cookies.f_uriEncoding__org_gwtproject_user_window_client_Cookies_) {
    return true;
   }
@@ -218,10 +158,7 @@ class Cookies extends j_l_Object {
    return true;
   }
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  static m_needsRefresh__() {
   let docCookie = $Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.cookie;
   if (!Objects.m_equals__java_lang_String__java_lang_String(docCookie, Cookies.f_rawCookies__org_gwtproject_user_window_client_Cookies_)) {
@@ -231,23 +168,12 @@ class Cookies extends j_l_Object {
    return false;
   }
  }
- /**
-  * @param {?string} name
-  * @public
-  */
- static m_removeCookieNative__java_lang_String(name) {
+ 
+ static m_removeCookieNative__java_lang_String(/** ?string */ name) {
   $Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.cookie = j_l_String.m_valueOf__java_lang_Object(name) + "=;expires=Fri, 02-Jan-1970 00:00:00 GMT";
  }
- /**
-  * @param {?string} name
-  * @param {?string} value
-  * @param {number} expires
-  * @param {?string} domain
-  * @param {?string} path
-  * @param {boolean} secure
-  * @public
-  */
- static m_setCookieImpl__java_lang_String__java_lang_String__double__java_lang_String__java_lang_String__boolean(name, value, expires, domain, path, secure) {
+ 
+ static m_setCookieImpl__java_lang_String__java_lang_String__double__java_lang_String__java_lang_String__boolean(/** ?string */ name, /** ?string */ value, /** number */ expires, /** ?string */ domain, /** ?string */ path, /** boolean */ secure) {
   let c = j_l_String.m_valueOf__java_lang_Object(name) + j_l_String.m_valueOf__char(61 /* '=' */) + j_l_String.m_valueOf__java_lang_Object(value);
   if (Js.m_isTruthy__java_lang_Object(expires)) {
    c = j_l_String.m_valueOf__java_lang_Object(c) + j_l_String.m_valueOf__java_lang_Object((";expires=" + j_l_String.m_valueOf__java_lang_Object(new Date(expires).toGMTString())));
@@ -263,24 +189,17 @@ class Cookies extends j_l_Object {
   }
   $Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.cookie = c;
  }
- /**
-  * @return {!Cookies}
-  * @public
-  */
+ /** @return {!Cookies} */
  static $create__() {
   let $instance = new Cookies();
   $instance.$ctor__org_gwtproject_user_window_client_Cookies__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_window_client_Cookies__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Cookies.$clinit = () =>{};
   Cookies.$loadModules();
@@ -290,17 +209,11 @@ class Cookies extends j_l_Object {
   Cookies.f_isCookieChecked__org_gwtproject_user_window_client_Cookies_ = false;
   Cookies.f_uriEncoding__org_gwtproject_user_window_client_Cookies_ = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Cookies;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   JsString_$Overlay = goog.module.get('elemental2.core.JsString.$Overlay$impl');
   $Overlay = goog.module.get('elemental2.dom.DomGlobal.$Overlay$impl');
@@ -319,15 +232,15 @@ class Cookies extends j_l_Object {
 }
 $Util.$setClassMetadata(Cookies, 'org.gwtproject.user.window.client.Cookies');
 
-/** @public {HashMap<?string, ?string>} */
+/**@type {HashMap<?string, ?string>}*/
 Cookies.f_cachedCookies__org_gwtproject_user_window_client_Cookies_;
-/** @public {?string} */
+/**@type {?string}*/
 Cookies.f_rawCookies__org_gwtproject_user_window_client_Cookies_;
-/** @public {boolean} */
+/**@type {boolean}*/
 Cookies.f_isCookieEnabled__org_gwtproject_user_window_client_Cookies_ = false;
-/** @public {boolean} */
+/**@type {boolean}*/
 Cookies.f_isCookieChecked__org_gwtproject_user_window_client_Cookies_ = false;
-/** @public {boolean} */
+/**@type {boolean}*/
 Cookies.f_uriEncoding__org_gwtproject_user_window_client_Cookies_ = false;
 
 exports = Cookies; 

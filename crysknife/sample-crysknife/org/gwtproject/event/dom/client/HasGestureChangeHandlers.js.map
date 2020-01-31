@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasGestureChangeHandlers.impl.java.js",
-"lineCount":26,
-"mappings":"A;;;;;;;;;;;;MAwBiB,wB;;;;;;;CAQK,+E,CAA6CA,O;;;;QARlD,O;EAAAC,2C;EAAAA;",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;;;MAwBiB,wB;;CAQK,+E,6BAA6CA,O;;QARlD,O;EAAAC,2C;EAAAA;",
 "sources":["HasGestureChangeHandlers.java"],
 "names":["handler","org.gwtproject.event.dom.client.HasGestureChangeHandlers.<clinit>"]
 }

@@ -8,35 +8,22 @@ const RegionRole = goog.require('org.gwtproject.aria.client.RegionRole$impl');
  * @extends {RegionRole}
  */
 class StatusRole {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   StatusRole.$clinit = () =>{};
   StatusRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  RegionRole.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_StatusRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  RegionRole.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_StatusRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_StatusRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

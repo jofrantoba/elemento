@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TextboxRole.impl.java.js",
-"lineCount":120,
-"mappings":"A;;;;;;;;;;;;;MA4BiB,W;;;;;;;CAQR,oE,CAAwCA,O;;;;;;;CAOxC,gE,CAAoCA,O;;;;;;;CAOpC,6D,CAAiCA,O;;;;;;;CAOjC,4D,CAAgCA,O;;;;;;;CAOhC,4D,CAAgCA,O;;;;;;CAOlC,uE,CAA2CA,O;;;;;;CAM3C,mE,CAAuCA,O;;;;;;CAMvC,gE,CAAoCA,O;;;;;;CAMpC,+D,CAAmCA,O;;;;;;CAMnC,+D,CAAmCA,O;;;;;;;CAMnC,mG,CAAwCA,O,EAAYC,K;;;;;;;CAMpD,8G,CAAoCD,O,EAA2BC,K;;;;;;;CAM/D,sE,CAAiCD,O,EAAiBC,K;;;;;;;CAMlD,qE,CAAgCD,O,EAAiBC,K;;;;;;;CAMjD,qE,CAAgCD,O,EAAiBC,K;;;;QAjGvC,O;EAAAC,8B;EAAAA;",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;;;MA4BiB,W;;CAQR,oE,eAAwCA,O;;CAOxC,gE,eAAoCA,O;;CAOpC,6D,eAAiCA,O;;CAOjC,4D,eAAgCA,O;;CAOhC,4D,eAAgCA,O;;CAOlC,uE,eAA2CA,O;;CAM3C,mE,eAAuCA,O;;CAMvC,gE,eAAoCA,O;;CAMpC,+D,eAAmCA,O;;CAMnC,+D,eAAmCA,O;;CAMnC,mG,eAAwCA,O,YAAYC,K;;CAMpD,8G,eAAoCD,O,2BAA2BC,K;;CAM/D,sE,eAAiCD,O,iBAAiBC,K;;CAMlD,qE,eAAgCD,O,iBAAiBC,K;;CAMjD,qE,eAAgCD,O,iBAAiBC,K;;QAjGvC,O;EAAAC,8B;EAAAA;",
 "sources":["TextboxRole.java"],
 "names":["element","value","org.gwtproject.aria.client.TextboxRole.<clinit>"]
 }

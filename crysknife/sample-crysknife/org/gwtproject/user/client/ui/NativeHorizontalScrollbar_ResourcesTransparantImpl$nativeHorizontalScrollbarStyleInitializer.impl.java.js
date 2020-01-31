@@ -7,55 +7,37 @@ let Style = goog.forwardDeclare('org.gwtproject.user.client.ui.NativeHorizontalS
 let NativeHorizontalScrollbar__ResourcesTransparantImpl = goog.forwardDeclare('org.gwtproject.user.client.ui.NativeHorizontalScrollbar_ResourcesTransparantImpl$impl');
 
 class nativeHorizontalScrollbarStyleInitializer extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!nativeHorizontalScrollbarStyleInitializer}
-  * @public
-  */
+ /** @return {!nativeHorizontalScrollbarStyleInitializer} */
  static $create__() {
   let $instance = new nativeHorizontalScrollbarStyleInitializer();
   $instance.$ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesTransparantImpl_nativeHorizontalScrollbarStyleInitializer__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesTransparantImpl_nativeHorizontalScrollbarStyleInitializer__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {Style}
-  * @public
-  */
+ /** @return {Style} */
  static m_get__() {
   nativeHorizontalScrollbarStyleInitializer.$clinit();
   return NativeHorizontalScrollbar__ResourcesTransparantImpl.f_nativeHorizontalScrollbarStyle__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesTransparantImpl_;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   nativeHorizontalScrollbarStyleInitializer.$clinit = () =>{};
   nativeHorizontalScrollbarStyleInitializer.$loadModules();
   j_l_Object.$clinit();
   NativeHorizontalScrollbar__ResourcesTransparantImpl.f__instance0__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesTransparantImpl_.m_nativeHorizontalScrollbarStyleInitializer___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesTransparantImpl();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof nativeHorizontalScrollbarStyleInitializer;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   NativeHorizontalScrollbar__ResourcesTransparantImpl = goog.module.get('org.gwtproject.user.client.ui.NativeHorizontalScrollbar_ResourcesTransparantImpl$impl');
  }

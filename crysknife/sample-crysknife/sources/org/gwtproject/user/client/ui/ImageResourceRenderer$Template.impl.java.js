@@ -12,53 +12,29 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.user.client.ui.ImageRes
  * @extends {SafeHtmlTemplates}
  */
 class Template {
- /**
-  * @abstract
-  * @param {SafeUri} imageUri
-  * @param {number} width
-  * @param {number} height
-  * @return {SafeHtml}
-  * @public
-  */
- m_image__org_gwtproject_safehtml_shared_SafeUri__int__int(imageUri, width, height) {}
- /**
-  * @param {?function(SafeUri, number, number):SafeHtml} fn
-  * @return {Template}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract @return {SafeHtml} */
+ m_image__org_gwtproject_safehtml_shared_SafeUri__int__int(/** SafeUri */ imageUri, /** number */ width, /** number */ height) {}
+ /** @return {Template} */
+ static $adapt(/** ?function(SafeUri, number, number):SafeHtml */ fn) {
   Template.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Template.$clinit = () =>{};
   Template.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  SafeHtmlTemplates.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_ImageResourceRenderer_Template = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  SafeHtmlTemplates.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_ImageResourceRenderer_Template = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_ImageResourceRenderer_Template;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.user.client.ui.ImageResourceRenderer.Template.$LambdaAdaptor$impl');
  }

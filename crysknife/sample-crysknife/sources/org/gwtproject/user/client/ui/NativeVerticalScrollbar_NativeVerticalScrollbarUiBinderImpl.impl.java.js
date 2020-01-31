@@ -17,74 +17,48 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {NativeVerticalScrollbarUiBinder}
   */
 class NativeVerticalScrollbar__NativeVerticalScrollbarUiBinderImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Template} */
+  /**@type {Template}*/
   this.f_template__org_gwtproject_user_client_ui_NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl;
  }
- /**
-  * @return {!NativeVerticalScrollbar__NativeVerticalScrollbarUiBinderImpl}
-  * @public
-  */
+ /** @return {!NativeVerticalScrollbar__NativeVerticalScrollbarUiBinderImpl} */
  static $create__() {
   NativeVerticalScrollbar__NativeVerticalScrollbarUiBinderImpl.$clinit();
   let $instance = new NativeVerticalScrollbar__NativeVerticalScrollbarUiBinderImpl();
   $instance.$ctor__org_gwtproject_user_client_ui_NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl__() {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_user_client_ui_NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl();
  }
- /**
-  * @param {NativeVerticalScrollbar} owner
-  * @return {Object}
-  * @public
-  */
- m_createAndBindUi__org_gwtproject_user_client_ui_NativeVerticalScrollbar(owner) {
+ /** @return {Object} */
+ m_createAndBindUi__org_gwtproject_user_client_ui_NativeVerticalScrollbar(/** NativeVerticalScrollbar */ owner) {
   return Widgets.$create__org_gwtproject_user_client_ui_NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl__org_gwtproject_user_client_ui_NativeVerticalScrollbar(this, owner).m_get_f_div1___$p_org_gwtproject_user_client_ui_NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl_Widgets();
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @return {Object}
-  * @public
-  */
- m_createAndBindUi__java_lang_Object(arg0) {
-  return this.m_createAndBindUi__org_gwtproject_user_client_ui_NativeVerticalScrollbar(/**@type {NativeVerticalScrollbar} */ ($Casts.$to(arg0, NativeVerticalScrollbar)));
+ //Bridge method.
+ /** @override @return {Object} */
+ m_createAndBindUi__java_lang_Object(/** * */ arg0) {
+  return this.m_createAndBindUi__org_gwtproject_user_client_ui_NativeVerticalScrollbar(/**@type {NativeVerticalScrollbar}*/ ($Casts.$to(arg0, NativeVerticalScrollbar)));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl() {
   this.f_template__org_gwtproject_user_client_ui_NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl = NativeVerticalScrollbar__NativeVerticalScrollbarUiBinderImpl__TemplateImpl.$create__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NativeVerticalScrollbar__NativeVerticalScrollbarUiBinderImpl.$clinit = () =>{};
   NativeVerticalScrollbar__NativeVerticalScrollbarUiBinderImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof NativeVerticalScrollbar__NativeVerticalScrollbarUiBinderImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   NativeVerticalScrollbar = goog.module.get('org.gwtproject.user.client.ui.NativeVerticalScrollbar$impl');
   Widgets = goog.module.get('org.gwtproject.user.client.ui.NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl.Widgets$impl');

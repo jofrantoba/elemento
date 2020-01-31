@@ -12,100 +12,65 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {SafeStyles}
   */
 class SafeStylesString extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_css__org_gwtproject_safecss_shared_SafeStylesString_;
  }
- /**
-  * Factory method corresponding to constructor 'SafeStylesString(String)'.
-  * @param {?string} css
-  * @return {!SafeStylesString}
-  * @public
-  */
- static $create__java_lang_String(css) {
+ //Factory method corresponding to constructor 'SafeStylesString(String)'.
+ /** @return {!SafeStylesString} */
+ static $create__java_lang_String(/** ?string */ css) {
   SafeStylesString.$clinit();
   let $instance = new SafeStylesString();
   $instance.$ctor__org_gwtproject_safecss_shared_SafeStylesString__java_lang_String(css);
   return $instance;
  }
- /**
-  * Initialization from constructor 'SafeStylesString(String)'.
-  * @param {?string} css
-  * @public
-  */
- $ctor__org_gwtproject_safecss_shared_SafeStylesString__java_lang_String(css) {
+ //Initialization from constructor 'SafeStylesString(String)'.
+ 
+ $ctor__org_gwtproject_safecss_shared_SafeStylesString__java_lang_String(/** ?string */ css) {
   this.$ctor__java_lang_Object__();
   SafeStylesUtils.m_verifySafeStylesConstraints__java_lang_String(css);
   this.f_css__org_gwtproject_safecss_shared_SafeStylesString_ = css;
  }
- /**
-  * Factory method corresponding to constructor 'SafeStylesString()'.
-  * @return {!SafeStylesString}
-  * @public
-  */
+ //Factory method corresponding to constructor 'SafeStylesString()'.
+ /** @return {!SafeStylesString} */
  static $create__() {
   let $instance = new SafeStylesString();
   $instance.$ctor__org_gwtproject_safecss_shared_SafeStylesString__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'SafeStylesString()'.
-  * @public
-  */
+ //Initialization from constructor 'SafeStylesString()'.
+ 
  $ctor__org_gwtproject_safecss_shared_SafeStylesString__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_asString__() {
   return this.f_css__org_gwtproject_safecss_shared_SafeStylesString_;
  }
- /**
-  * @override
-  * @param {*} obj
-  * @return {boolean}
-  * @public
-  */
- equals(obj) {
+ /** @override @return {boolean} */
+ equals(/** * */ obj) {
   if (!SafeStyles.$isInstance(obj)) {
    return false;
   }
-  return j_l_String.m_equals__java_lang_String__java_lang_Object(this.f_css__org_gwtproject_safecss_shared_SafeStylesString_, /**@type {SafeStyles} */ ($Casts.$to(obj, SafeStyles)).m_asString__());
+  return j_l_String.m_equals__java_lang_String__java_lang_Object(this.f_css__org_gwtproject_safecss_shared_SafeStylesString_, /**@type {SafeStyles}*/ ($Casts.$to(obj, SafeStyles)).m_asString__());
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  hashCode() {
   return j_l_String.m_hashCode__java_lang_String(this.f_css__org_gwtproject_safecss_shared_SafeStylesString_);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SafeStylesString.$clinit = () =>{};
   SafeStylesString.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SafeStylesString;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   SafeStylesUtils = goog.module.get('org.gwtproject.safecss.shared.SafeStylesUtils$impl');

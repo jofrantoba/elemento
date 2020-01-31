@@ -28,67 +28,53 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {IsElement<HTMLElement>}
   */
 class ApplicationElement extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {TodoRepository} */
+  /**@type {TodoRepository}*/
   this.f_repository__org_jboss_elemento_sample_crysknife_ApplicationElement_;
-  /** @public {Filter} */
+  /**@type {Filter}*/
   this.f_filter__org_jboss_elemento_sample_crysknife_ApplicationElement_;
-  /** @public {HTMLInputElement} */
+  /**@type {HTMLInputElement}*/
   this.f_newTodo__org_jboss_elemento_sample_crysknife_ApplicationElement;
-  /** @public {HTMLElement} */
+  /**@type {HTMLElement}*/
   this.f_main__org_jboss_elemento_sample_crysknife_ApplicationElement;
-  /** @public {HTMLInputElement} */
+  /**@type {HTMLInputElement}*/
   this.f_toggleAll__org_jboss_elemento_sample_crysknife_ApplicationElement;
-  /** @public {HTMLUListElement} */
+  /**@type {HTMLUListElement}*/
   this.f_list__org_jboss_elemento_sample_crysknife_ApplicationElement;
-  /** @public {HTMLElement} */
+  /**@type {HTMLElement}*/
   this.f_footer__org_jboss_elemento_sample_crysknife_ApplicationElement;
-  /** @public {HTMLElement} */
+  /**@type {HTMLElement}*/
   this.f_count__org_jboss_elemento_sample_crysknife_ApplicationElement;
-  /** @public {HTMLElement} */
+  /**@type {HTMLElement}*/
   this.f_filterAll__org_jboss_elemento_sample_crysknife_ApplicationElement;
-  /** @public {HTMLElement} */
+  /**@type {HTMLElement}*/
   this.f_filterActive__org_jboss_elemento_sample_crysknife_ApplicationElement;
-  /** @public {HTMLElement} */
+  /**@type {HTMLElement}*/
   this.f_filterCompleted__org_jboss_elemento_sample_crysknife_ApplicationElement;
-  /** @public {HTMLButtonElement} */
+  /**@type {HTMLButtonElement}*/
   this.f_clearCompleted__org_jboss_elemento_sample_crysknife_ApplicationElement;
  }
- /**
-  * @param {TodoRepository} repository
-  * @return {!ApplicationElement}
-  * @public
-  */
- static $create__org_jboss_elemento_sample_crysknife_TodoRepository(repository) {
+ /** @return {!ApplicationElement} */
+ static $create__org_jboss_elemento_sample_crysknife_TodoRepository(/** TodoRepository */ repository) {
   ApplicationElement.$clinit();
   let $instance = new ApplicationElement();
   $instance.$ctor__org_jboss_elemento_sample_crysknife_ApplicationElement__org_jboss_elemento_sample_crysknife_TodoRepository(repository);
   return $instance;
  }
- /**
-  * @param {TodoRepository} repository
-  * @public
-  */
- $ctor__org_jboss_elemento_sample_crysknife_ApplicationElement__org_jboss_elemento_sample_crysknife_TodoRepository(repository) {
+ 
+ $ctor__org_jboss_elemento_sample_crysknife_ApplicationElement__org_jboss_elemento_sample_crysknife_TodoRepository(/** TodoRepository */ repository) {
   this.$ctor__java_lang_Object__();
   this.f_repository__org_jboss_elemento_sample_crysknife_ApplicationElement_ = repository;
  }
- /**
-  * @public
-  */
+ 
  m_init___$pp_org_jboss_elemento_sample_crysknife() {
   this.m_reset___$p_org_jboss_elemento_sample_crysknife_ApplicationElement();
   this.m_update___$pp_org_jboss_elemento_sample_crysknife();
  }
- /**
-  * @param {KeyboardEvent} event
-  * @public
-  */
- m_newTodo__elemental2_dom_KeyboardEvent_$pp_org_jboss_elemento_sample_crysknife(event) {
+ 
+ m_newTodo__elemental2_dom_KeyboardEvent_$pp_org_jboss_elemento_sample_crysknife(/** KeyboardEvent */ event) {
   if (Key.f_Enter__org_jboss_elemento_Key.m_match__elemental2_dom_KeyboardEvent(event)) {
    let text = j_l_String.m_trim__java_lang_String(this.f_newTodo__org_jboss_elemento_sample_crysknife_ApplicationElement.value);
    if (j_l_String.m_length__java_lang_String(text) != 0) {
@@ -99,15 +85,12 @@ class ApplicationElement extends j_l_Object {
    }
   }
  }
- /**
-  * @param {Event} event
-  * @public
-  */
- m_toggleAll__elemental2_dom_Event_$pp_org_jboss_elemento_sample_crysknife(event) {
+ 
+ m_toggleAll__elemental2_dom_Event_$pp_org_jboss_elemento_sample_crysknife(/** Event */ event) {
   for (let $iterator = Elements.m_children__elemental2_dom_HTMLElement(this.f_list__org_jboss_elemento_sample_crysknife_ApplicationElement).m_iterator__(); $iterator.m_hasNext__(); ) {
-   let li = /**@type {HTMLElement} */ ($Casts.$to($iterator.m_next__(), $Overlay));
+   let li = /**@type {HTMLElement}*/ ($Casts.$to($iterator.m_next__(), $Overlay));
    Elements.m_toggle__elemental2_dom_HTMLElement__java_lang_String__boolean(li, "completed", this.f_toggleAll__org_jboss_elemento_sample_crysknife_ApplicationElement.checked);
-   let cb = /**@type {HTMLInputElement} */ ($Casts.$to(Elements.m_find__elemental2_dom_Node__org_jboss_elemento_By(li, By.m_classname__java_lang_String("toggle")), HTMLInputElement_$Overlay));
+   let cb = /**@type {HTMLInputElement}*/ ($Casts.$to(Elements.m_find__elemental2_dom_Node__org_jboss_elemento_By(li, By.m_classname__java_lang_String("toggle")), HTMLInputElement_$Overlay));
    if (!$Equality.$same(cb, null)) {
     cb.checked = this.f_toggleAll__org_jboss_elemento_sample_crysknife_ApplicationElement.checked;
    }
@@ -115,16 +98,13 @@ class ApplicationElement extends j_l_Object {
   this.f_repository__org_jboss_elemento_sample_crysknife_ApplicationElement_.m_completeAll__boolean(this.f_toggleAll__org_jboss_elemento_sample_crysknife_ApplicationElement.checked);
   this.m_update___$pp_org_jboss_elemento_sample_crysknife();
  }
- /**
-  * @param {Event} event
-  * @public
-  */
- m_clearCompleted__elemental2_dom_Event_$pp_org_jboss_elemento_sample_crysknife(event) {
-  let ids = /**@type {!HashSet<?string>} */ (HashSet.$create__());
+ 
+ m_clearCompleted__elemental2_dom_Event_$pp_org_jboss_elemento_sample_crysknife(/** Event */ event) {
+  let ids = /**@type {!HashSet<?string>}*/ (HashSet.$create__());
   for (let iterator = Elements.m_iterator__elemental2_dom_HTMLElement(this.f_list__org_jboss_elemento_sample_crysknife_ApplicationElement); iterator.m_hasNext__(); ) {
-   let li = /**@type {HTMLElement} */ ($Casts.$to(iterator.m_next__(), $Overlay));
+   let li = /**@type {HTMLElement}*/ ($Casts.$to(iterator.m_next__(), $Overlay));
    if (li.classList.contains("completed")) {
-    let id = j_l_String.m_valueOf__java_lang_Object(/**@type {?string} */ ($Casts.$to(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(li.dataset, "item"), j_l_String)));
+    let id = j_l_String.m_valueOf__java_lang_Object(/**@type {?string}*/ ($Casts.$to(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(li.dataset, "item"), j_l_String)));
     if (!$Equality.$same(id, null)) {
      ids.add(id);
     }
@@ -134,9 +114,7 @@ class ApplicationElement extends j_l_Object {
   this.f_repository__org_jboss_elemento_sample_crysknife_ApplicationElement_.m_removeAll__java_util_Set(ids);
   this.m_update___$pp_org_jboss_elemento_sample_crysknife();
  }
- /**
-  * @public
-  */
+ 
  m_update___$pp_org_jboss_elemento_sample_crysknife() {
   let activeCount = 0;
   let completedCount = 0;
@@ -144,7 +122,7 @@ class ApplicationElement extends j_l_Object {
   Elements.m_setVisible__elemental2_dom_HTMLElement__boolean(this.f_main__org_jboss_elemento_sample_crysknife_ApplicationElement, size > 0);
   Elements.m_setVisible__elemental2_dom_HTMLElement__boolean(this.f_footer__org_jboss_elemento_sample_crysknife_ApplicationElement, size > 0);
   for (let $iterator = Elements.m_children__elemental2_dom_HTMLElement(this.f_list__org_jboss_elemento_sample_crysknife_ApplicationElement).m_iterator__(); $iterator.m_hasNext__(); ) {
-   let li = /**@type {HTMLElement} */ ($Casts.$to($iterator.m_next__(), $Overlay));
+   let li = /**@type {HTMLElement}*/ ($Casts.$to($iterator.m_next__(), $Overlay));
    if (li.classList.contains("completed")) {
     completedCount++;
     Elements.m_setVisible__elemental2_dom_HTMLElement__boolean(li, !$Equality.$same(this.f_filter__org_jboss_elemento_sample_crysknife_ApplicationElement_, Filter.f_ACTIVE__org_jboss_elemento_sample_crysknife_Filter));
@@ -157,11 +135,8 @@ class ApplicationElement extends j_l_Object {
   Elements.m_innerHtml__elemental2_dom_HTMLElement__org_gwtproject_safehtml_shared_SafeHtml(this.f_count__org_jboss_elemento_sample_crysknife_ApplicationElement, Messages.m_items__int(activeCount));
   Elements.m_setVisible__elemental2_dom_HTMLElement__boolean(this.f_clearCompleted__org_jboss_elemento_sample_crysknife_ApplicationElement, completedCount != 0);
  }
- /**
-  * @param {?string} token
-  * @public
-  */
- m_filter__java_lang_String_$pp_org_jboss_elemento_sample_crysknife(token) {
+ 
+ m_filter__java_lang_String_$pp_org_jboss_elemento_sample_crysknife(/** ?string */ token) {
   this.f_filter__org_jboss_elemento_sample_crysknife_ApplicationElement_ = Filter.m_parseToken__java_lang_String(token);
   switch (this.f_filter__org_jboss_elemento_sample_crysknife_ApplicationElement_.ordinal()) {
    case Filter.$ordinal$f_ALL__org_jboss_elemento_sample_crysknife_Filter: 
@@ -184,45 +159,31 @@ class ApplicationElement extends j_l_Object {
   }
   this.m_update___$pp_org_jboss_elemento_sample_crysknife();
  }
- /**
-  * @public
-  */
+ 
  m_reset___$p_org_jboss_elemento_sample_crysknife_ApplicationElement() {
   Elements.m_removeChildrenFrom__elemental2_dom_Element(this.f_list__org_jboss_elemento_sample_crysknife_ApplicationElement);
   for (let $iterator = this.f_repository__org_jboss_elemento_sample_crysknife_ApplicationElement_.m_items__().m_iterator__(); $iterator.m_hasNext__(); ) {
-   let item = /**@type {Object} */ ($Casts.$to($iterator.m_next__(), Todo_$Overlay));
+   let item = /**@type {Object}*/ ($Casts.$to($iterator.m_next__(), Todo_$Overlay));
    this.f_list__org_jboss_elemento_sample_crysknife_ApplicationElement.appendChild(TodoElement.$create__org_jboss_elemento_sample_crysknife_ApplicationElement__org_jboss_elemento_sample_crysknife_TodoRepository__org_jboss_elemento_sample_crysknife_Todo(this, this.f_repository__org_jboss_elemento_sample_crysknife_ApplicationElement_, item).m_element__());
   }
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {HTMLElement}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {HTMLElement} */
  m_getElement__() {
   return IsElement.m_getElement__$default__org_jboss_gwt_elemento_core_IsElement(this);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ApplicationElement.$clinit = () =>{};
   ApplicationElement.$loadModules();
   j_l_Object.$clinit();
   IsElement.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ApplicationElement;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('elemental2.dom.HTMLElement.$Overlay$impl');
   HTMLInputElement_$Overlay = goog.module.get('elemental2.dom.HTMLInputElement.$Overlay$impl');

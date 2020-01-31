@@ -9,50 +9,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.jboss.elemento.TypedBuilder.$Lambd
  * @template T, B
  */
 class TypedBuilder {
- /**
-  * @abstract
-  * @return {B}
-  * @public
-  */
+ /** @abstract @return {B} */
  m_that__() {}
- /**
-  * @template T, B
-  * @param {?function():B} fn
-  * @return {TypedBuilder<T, B>}
-  * @public
-  */
- static $adapt(fn) {
+ /** @template T, B @return {TypedBuilder<T, B>} */
+ static $adapt(/** ?function():B */ fn) {
   TypedBuilder.$clinit();
-  return /**@type {!$LambdaAdaptor<T, B>} */ (new $LambdaAdaptor(fn));
+  return /**@type {!$LambdaAdaptor<T, B>}*/ (new $LambdaAdaptor(fn));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TypedBuilder.$clinit = () =>{};
   TypedBuilder.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_jboss_elemento_TypedBuilder = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_jboss_elemento_TypedBuilder = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_jboss_elemento_TypedBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.jboss.elemento.TypedBuilder.$LambdaAdaptor$impl');
  }

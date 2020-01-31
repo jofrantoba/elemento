@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"FormData$SetValueUnionType$$Overlay.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;MA4ImB,0B;;;;;;QAEmB,sB,CAAUA,C;EAAVC,qC;EAChCA,wD;;;;;;;QAIW,4D;EAAAC,qC;EACXA,wF;;;;;;;QAIa,8D;EAAAC,qC;EACbA,iD;;;;;;;QAIc,4D;EAAAC,qC;EACdA,wD;;;;;;;QAIc,8D;EAAAC,qC;EACdA,0D;;;;;QAvBa,O;EAAAC,6C;EAAAA;",
+"lineCount":39,
+"mappings":"A;;;;;;;;;MA4ImB,0B;;QAEmB,sB,UAAUA,C;EAAVC,qC;EAChCA,uD;;;QAIW,4D;EAAAC,qC;EACXA,uF;;;QAIa,8D;EAAAC,qC;EACbA,iD;;;QAIc,4D;EAAAC,qC;EACdA,uD;;;QAIc,8D;EAAAC,qC;EACdA,yD;;;QAvBa,O;EAAAC,6C;EAAAA;",
 "sources":["FormData.java"],
 "names":["o","elemental2.dom.FormData$SetValueUnionType$$Overlay.of","elemental2.dom.FormData$SetValueUnionType$$Overlay.asBlob__$devirt","elemental2.dom.FormData$SetValueUnionType$$Overlay.asString__$devirt","elemental2.dom.FormData$SetValueUnionType$$Overlay.isBlob__$devirt","elemental2.dom.FormData$SetValueUnionType$$Overlay.isString__$devirt","elemental2.dom.FormData$SetValueUnionType$$Overlay.<clinit>"]
 }

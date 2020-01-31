@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"EditorVisitor.impl.java.js",
-"lineCount":52,
-"mappings":"A;;;;;;;MAkBa,a;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,wB;EAAAA,oC;EAAAA,gE;EAAAA,iB;;;;;CAAA,mD;EAAAC,iC;;;;;;;CAOK,sD,CAA0BC,G;;;;;;;CASvB,mD,CAAuBA,G;EACxCC,Y;;;;;QAjBS,O;EAAAC,gC;EAAAA,6B;EAAAA;",
+"lineCount":34,
+"mappings":"A;;;;;;;MAkBa,a;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,wB;EAAAA,oC;EAAAA,gE;EAAAA,iB;;;CAAA,mD;EAAAC,iC;;;CAOK,sD,yBAA0BC,G;;CASvB,mD,yBAAuBA,G;EACxCC,Y;;;QAjBS,O;EAAAC,gC;EAAAA,6B;EAAAA;",
 "sources":["EditorVisitor.java"],
 "names":["org.gwtproject.editor.client.EditorVisitor.<synthetic: ctor_js>","org.gwtproject.editor.client.EditorVisitor.<synthetic: ctor_create>","org.gwtproject.editor.client.EditorVisitor.<init>","ctx","org.gwtproject.editor.client.EditorVisitor.visit","org.gwtproject.editor.client.EditorVisitor.<clinit>"]
 }

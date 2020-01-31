@@ -9,34 +9,23 @@ let j_l_String = goog.forwardDeclare('java.lang.String$impl');
 let SafeHtmlUtils = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHtmlUtils$impl');
 
 class JsImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!JsImpl}
-  * @public
-  */
+ /** @return {!JsImpl} */
  static $create__() {
   JsImpl.$clinit();
   let $instance = new JsImpl();
   $instance.$ctor__org_gwtproject_safehtml_shared_SafeHtmlUtils_JsImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_safehtml_shared_SafeHtmlUtils_JsImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {?string} s
-  * @return {?string}
-  * @public
-  */
- m_htmlEscape__java_lang_String_$pp_org_gwtproject_safehtml_shared(s) {
+ /** @return {?string} */
+ m_htmlEscape__java_lang_String_$pp_org_gwtproject_safehtml_shared(/** ?string */ s) {
   if (!JsImpl.f_HTML_CHARS_RE__org_gwtproject_safehtml_shared_SafeHtmlUtils_JsImpl_.test(s)) {
    return s;
   }
@@ -57,9 +46,7 @@ class JsImpl extends j_l_Object {
   }
   return s;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   JsImpl.$clinit = () =>{};
   JsImpl.$loadModules();
@@ -71,17 +58,11 @@ class JsImpl extends j_l_Object {
   JsImpl.f_SQUOT_RE__org_gwtproject_safehtml_shared_SafeHtmlUtils_JsImpl_ = new RegExp("'", "g");
   JsImpl.f_QUOT_RE__org_gwtproject_safehtml_shared_SafeHtmlUtils_JsImpl_ = new RegExp("\"", "g");
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof JsImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('elemental2.core.JsString.$Overlay$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -91,17 +72,17 @@ class JsImpl extends j_l_Object {
 }
 $Util.$setClassMetadata(JsImpl, 'org.gwtproject.safehtml.shared.SafeHtmlUtils$JsImpl');
 
-/** @public {RegExp} */
+/**@type {RegExp}*/
 JsImpl.f_HTML_CHARS_RE__org_gwtproject_safehtml_shared_SafeHtmlUtils_JsImpl_;
-/** @public {RegExp} */
+/**@type {RegExp}*/
 JsImpl.f_AMP_RE__org_gwtproject_safehtml_shared_SafeHtmlUtils_JsImpl_;
-/** @public {RegExp} */
+/**@type {RegExp}*/
 JsImpl.f_GT_RE__org_gwtproject_safehtml_shared_SafeHtmlUtils_JsImpl_;
-/** @public {RegExp} */
+/**@type {RegExp}*/
 JsImpl.f_LT_RE__org_gwtproject_safehtml_shared_SafeHtmlUtils_JsImpl_;
-/** @public {RegExp} */
+/**@type {RegExp}*/
 JsImpl.f_SQUOT_RE__org_gwtproject_safehtml_shared_SafeHtmlUtils_JsImpl_;
-/** @public {RegExp} */
+/**@type {RegExp}*/
 JsImpl.f_QUOT_RE__org_gwtproject_safehtml_shared_SafeHtmlUtils_JsImpl_;
 
 exports = JsImpl; 

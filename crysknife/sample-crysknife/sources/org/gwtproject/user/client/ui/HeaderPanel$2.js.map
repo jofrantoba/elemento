@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HeaderPanel$2.impl.java.js",
-"lineCount":53,
-"mappings":"A;;;;;;;;;;;MAsF2F,E;;;;CAAA,W;EAAAA,Q;EAAAA;kE;;;;;;;QAAA,kD;EAAAC,a;EAAAA,yB;EAAAA,qH;EAAAA,iB;;;;;;CAAA,6F;EAAAC,8E;EAAAA,iC;;;;;;CACzE,Y;EACVC,mI;;;;;QAFmF,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":39,
+"mappings":"A;;;;;;;;;;;MAsF2F,E;;CAAA,W;EAAAA,Q;EAAAA;kE;;;QAAA,kD;EAAAC,a;EAAAA,yB;EAAAA,qH;EAAAA,iB;;;CAAA,6F;EAAAC,8E;EAAAA,iC;;;CACzE,Y;EACVC,mI;;;QAFmF,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["HeaderPanel.java"],
 "names":["org.gwtproject.user.client.ui.HeaderPanel$2.<synthetic: ctor_js>","org.gwtproject.user.client.ui.HeaderPanel$2.<synthetic: ctor_create>","org.gwtproject.user.client.ui.HeaderPanel$2.<init>","org.gwtproject.user.client.ui.HeaderPanel$2.onResize","org.gwtproject.user.client.ui.HeaderPanel$2.<clinit>"]
 }

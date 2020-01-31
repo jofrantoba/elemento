@@ -6,47 +6,32 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 let reflect = goog.forwardDeclare('goog.reflect');
 
 class Reflect extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!Reflect}
-  * @public
-  */
+ /** @return {!Reflect} */
  static $create__() {
   Reflect.$clinit();
   let $instance = new Reflect();
   $instance.$ctor__org_treblereel_gwt_crysknife_client_Reflect__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_treblereel_gwt_crysknife_client_Reflect__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Reflect.$clinit = () =>{};
   Reflect.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Reflect;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   reflect = goog.module.get('goog.reflect');
  }

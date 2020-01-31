@@ -12,64 +12,39 @@ let ProvidesKey = goog.forwardDeclare('org.gwtproject.view.client.ProvidesKey$im
  * @extends {AbstractDataProvider<T>}
   */
 class AsyncDataProvider extends AbstractDataProvider {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * Initialization from constructor 'AsyncDataProvider()'.
-  * @public
-  */
+ //Initialization from constructor 'AsyncDataProvider()'.
+ 
  $ctor__org_gwtproject_view_client_AsyncDataProvider__() {
   this.$ctor__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_view_client_ProvidesKey(null);
  }
- /**
-  * Initialization from constructor 'AsyncDataProvider(ProvidesKey)'.
-  * @param {ProvidesKey<T>} keyProvider
-  * @public
-  */
- $ctor__org_gwtproject_view_client_AsyncDataProvider__org_gwtproject_view_client_ProvidesKey(keyProvider) {
+ //Initialization from constructor 'AsyncDataProvider(ProvidesKey)'.
+ 
+ $ctor__org_gwtproject_view_client_AsyncDataProvider__org_gwtproject_view_client_ProvidesKey(/** ProvidesKey<T> */ keyProvider) {
   this.$ctor__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_view_client_ProvidesKey(keyProvider);
  }
- /**
-  * @override
-  * @param {number} size
-  * @param {boolean} exact
-  * @public
-  */
- m_updateRowCount__int__boolean(size, exact) {
+ /** @override */
+ m_updateRowCount__int__boolean(/** number */ size, /** boolean */ exact) {
   super.m_updateRowCount__int__boolean(size, exact);
  }
- /**
-  * @override
-  * @param {number} start
-  * @param {List<T>} values
-  * @public
-  */
- m_updateRowData__int__java_util_List(start, values) {
+ /** @override */
+ m_updateRowData__int__java_util_List(/** number */ start, /** List<T> */ values) {
   super.m_updateRowData__int__java_util_List(start, values);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AsyncDataProvider.$clinit = () =>{};
   AsyncDataProvider.$loadModules();
   AbstractDataProvider.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AsyncDataProvider;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

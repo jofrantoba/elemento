@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"RequestException.impl.java.js",
-"lineCount":105,
-"mappings":"A;;;;;;;MAmBa,gB;;;;CAAA,W;EAAAA,Q;;;;;;;QAEJ,S;EAAAC,2B;EAAAA,uC;EAAAA,iE;EAAAA,mF;EAAAA,iB;;;;;;CAAA,oD;EACLC,oC;;;;;;;;QAGK,yB,CAAwBC,O;EAAxBF,2B;EAAAA,uC;EAAAA,wF;EAAAA,mF;EAAAA,iB;;;;;;;CAAA,oE,CAAwBE,O;EAC7BD,2D;;;;;;;;QAGK,4B,CAA2BE,K;EAA3BH,2B;EAAAA,uC;EAAAA,yF;EAAAA,mF;EAAAA,iB;;;;;;;CAAA,uE,CAA2BG,K;EAChCF,4D;;;;;;;;;QAGK,8C,CAAwBC,O,EAAmBC,K;EAA3CH,2B;EAAAA,uC;EAAAA,oH;EAAAA,mF;EAAAA,iB;;;;;;;;CAAA,yF,CAAwBE,O,EAAmBC,K;EAChDF,uF;;;;;QAfS,O;EAAAG,mC;EAAAA,gC;EAAAA;",
+"lineCount":73,
+"mappings":"A;;;;;;;MAmBa,gB;;CAAA,W;EAAAA,Q;;;;QAEJ,S;EAAAC,2B;EAAAA,uC;EAAAA,iE;EAAAA,mF;EAAAA,iB;;;;CAAA,oD;EACLC,oC;;;;QAGK,yB,gBAAwBC,O;EAAxBF,2B;EAAAA,uC;EAAAA,wF;EAAAA,mF;EAAAA,iB;;;;CAAA,oE,gBAAwBE,O;EAC7BD,2D;;;;QAGK,4B,kBAA2BE,K;EAA3BH,2B;EAAAA,uC;EAAAA,yF;EAAAA,mF;EAAAA,iB;;;;CAAA,uE,kBAA2BG,K;EAChCF,4D;;;;QAGK,8C,gBAAwBC,O,mBAAmBC,K;EAA3CH,2B;EAAAA,uC;EAAAA,oH;EAAAA,mF;EAAAA,iB;;;;CAAA,yF,gBAAwBE,O,mBAAmBC,K;EAChDF,uF;;;QAfS,O;EAAAG,mC;EAAAA,gC;EAAAA;",
 "sources":["RequestException.java"],
 "names":["org.gwtproject.http.client.RequestException.<synthetic: ctor_js>","org.gwtproject.http.client.RequestException.<synthetic: ctor_create>","org.gwtproject.http.client.RequestException.<init>","message","cause","org.gwtproject.http.client.RequestException.<clinit>"]
 }

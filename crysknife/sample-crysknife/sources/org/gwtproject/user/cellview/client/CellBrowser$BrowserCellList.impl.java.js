@@ -35,86 +35,55 @@ let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
  * @extends {CellList<T>}
   */
 class BrowserCellList extends CellList {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {CellBrowser} */
+  /**@type {CellBrowser}*/
   this.f_$outer_this__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_level__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ = 0;
-  /** @public {*} */
+  /**@type {*}*/
   this.f_focusedKey__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_;
-  /** @public {T} */
+  /**@type {T}*/
   this.f_selectedValue__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isDestroyed__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isFocusedOpen__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ = false;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_tmpElem__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_;
  }
- /**
-  * @template T
-  * @param {CellBrowser} $outer_this
-  * @param {Cell<T>} cell
-  * @param {number} level
-  * @param {ProvidesKey<T>} keyProvider
-  * @return {!BrowserCellList<T>}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_cell_client_Cell__int__org_gwtproject_view_client_ProvidesKey($outer_this, cell, level, keyProvider) {
+ /** @template T @return {!BrowserCellList<T>} */
+ static $create__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_cell_client_Cell__int__org_gwtproject_view_client_ProvidesKey(/** CellBrowser */ $outer_this, /** Cell<T> */ cell, /** number */ level, /** ProvidesKey<T> */ keyProvider) {
   BrowserCellList.$clinit();
   let $instance = new BrowserCellList();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_cell_client_Cell__int__org_gwtproject_view_client_ProvidesKey($outer_this, cell, level, keyProvider);
   return $instance;
  }
- /**
-  * @param {CellBrowser} $outer_this
-  * @param {Cell<T>} cell
-  * @param {number} level
-  * @param {ProvidesKey<T>} keyProvider
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_cell_client_Cell__int__org_gwtproject_view_client_ProvidesKey($outer_this, cell, level, keyProvider) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_cell_client_Cell__int__org_gwtproject_view_client_ProvidesKey(/** CellBrowser */ $outer_this, /** Cell<T> */ cell, /** number */ level, /** ProvidesKey<T> */ keyProvider) {
   this.f_$outer_this__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList = $outer_this;
   this.$ctor__org_gwtproject_user_cellview_client_CellList__org_gwtproject_cell_client_Cell__org_gwtproject_user_cellview_client_CellList_Resources__org_gwtproject_view_client_ProvidesKey(cell, $outer_this.f_cellListResources__org_gwtproject_user_cellview_client_CellBrowser_, keyProvider);
   this.$init___$p_org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList();
   this.f_level__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ = level;
  }
- /**
-  * @public
-  */
+ 
  m_deselectValue__() {
   let selectionModel = this.m_getSelectionModel__();
   if (!$Equality.$same(selectionModel, null) && !$Equality.$same(this.f_selectedValue__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_, null)) {
    selectionModel.m_setSelected__java_lang_Object__boolean(this.f_selectedValue__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_, false);
   }
  }
- /**
-  * @override
-  * @param {Object} item
-  * @return {Object}
-  * @public
-  */
- m_getCellParent__org_gwtproject_dom_client_Element(item) {
+ /** @override @return {Object} */
+ m_getCellParent__org_gwtproject_dom_client_Element(/** Object */ item) {
   return $Overlay.m_getNextSiblingElement__$devirt__org_gwtproject_dom_client_Element($Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(item));
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isKeyboardNavigationSuppressed__() {
   return $Equality.$same(KeyboardSelectionPolicy.f_DISABLED__org_gwtproject_user_cellview_client_HasKeyboardSelectionPolicy_KeyboardSelectionPolicy, this.f_$outer_this__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList.m_getKeyboardSelectionPolicy__()) || super.m_isKeyboardNavigationSuppressed__();
  }
- /**
-  * @override
-  * @param {Event} event
-  * @public
-  */
- m_onBrowserEvent2__org_gwtproject_user_client_Event(event) {
+ /** @override */
+ m_onBrowserEvent2__org_gwtproject_user_client_Event(/** Event */ event) {
   super.m_onBrowserEvent2__org_gwtproject_user_client_Event(event);
   let eventType = NativeEvent_$Overlay.m_getType__$devirt__org_gwtproject_dom_client_NativeEvent(event);
   if (j_l_String.m_equals__java_lang_String__java_lang_Object(BrowserEvents.f_KEYDOWN__org_gwtproject_dom_client_BrowserEvents, eventType) && !this.m_isKeyboardNavigationSuppressed__()) {
@@ -131,15 +100,8 @@ class BrowserCellList extends CellList {
    }
   }
  }
- /**
-  * @override
-  * @param {SafeHtmlBuilder} sb
-  * @param {List<T>} values
-  * @param {number} start
-  * @param {SelectionModel<?>} selectionModel
-  * @public
-  */
- m_renderRowValues__org_gwtproject_safehtml_shared_SafeHtmlBuilder__java_util_List__int__org_gwtproject_view_client_SelectionModel(sb, values, start, selectionModel) {
+ /** @override */
+ m_renderRowValues__org_gwtproject_safehtml_shared_SafeHtmlBuilder__java_util_List__int__org_gwtproject_view_client_SelectionModel(/** SafeHtmlBuilder */ sb, /** List<T> */ values, /** number */ start, /** SelectionModel<?> */ selectionModel) {
   let cell = this.m_getCell__();
   let keyboardSelectedItem = " " + j_l_String.m_valueOf__java_lang_Object(this.f_$outer_this__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList.f_style__org_gwtproject_user_cellview_client_CellBrowser_.m_cellBrowserKeyboardSelectedItem__());
   let selectedItem = " " + j_l_String.m_valueOf__java_lang_Object(this.f_$outer_this__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList.f_style__org_gwtproject_user_cellview_client_CellBrowser_.m_cellBrowserSelectedItem__());
@@ -189,14 +151,8 @@ class BrowserCellList extends CellList {
   }
   this.f_$outer_this__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList.m_updateChildState__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList__boolean_$p_org_gwtproject_user_cellview_client_CellBrowser(this, true);
  }
- /**
-  * @override
-  * @param {number} index
-  * @param {boolean} selected
-  * @param {boolean} stealFocus
-  * @public
-  */
- m_setKeyboardSelected__int__boolean__boolean(index, selected, stealFocus) {
+ /** @override */
+ m_setKeyboardSelected__int__boolean__boolean(/** number */ index, /** boolean */ selected, /** boolean */ stealFocus) {
   super.m_setKeyboardSelected__int__boolean__boolean(index, selected, stealFocus);
   if (!this.m_isRowWithinBounds__int(index)) {
    return;
@@ -217,11 +173,8 @@ class BrowserCellList extends CellList {
   elem.replaceChild($Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(this.f_tmpElem__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_), $Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(elem));
   this.f_$outer_this__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList.m_updateChildState__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList__boolean_$p_org_gwtproject_user_cellview_client_CellBrowser(this, true);
  }
- /**
-  * @param {T} value
-  * @public
-  */
- m_setSelectedValue__java_lang_Object(value) {
+ 
+ m_setSelectedValue__java_lang_Object(/** T */ value) {
   let oldKey = this.m_getValueKey__java_lang_Object(this.f_selectedValue__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_);
   let newKey = this.m_getValueKey__java_lang_Object(value);
   if (!$Equality.$same(newKey, null) && $Objects.m_equals__java_lang_Object__java_lang_Object(newKey, oldKey)) {
@@ -234,64 +187,46 @@ class BrowserCellList extends CellList {
    selectionModel.m_setSelected__java_lang_Object__boolean(this.f_selectedValue__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_, true);
   }
  }
- /**
-  * @param {number} index
-  * @return {boolean}
-  * @public
-  */
- m_isOpen__int_$p_org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList(index) {
+ /** @return {boolean} */
+ m_isOpen__int_$p_org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList(/** number */ index) {
   let value = this.m_getPresenter___$pp_org_gwtproject_user_cellview_client().m_getKeyboardSelectedRowValue__();
   return index == this.m_getKeyboardSelectedRow__() && !$Equality.$same(value, null) && !this.f_$outer_this__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList.m_getTreeViewModel__().m_isLeaf__java_lang_Object(value);
  }
- /**
-  * @public
-  */
+ 
  m_keyboardNavigateDeep___$p_org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList() {
   if (this.f_$outer_this__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList.m_isKeyboardSelectionDisabled__()) {
    return;
   }
   if (this.f_level__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ < this.f_$outer_this__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser.size() - 1) {
-   let treeNode = /**@type {TreeNodeImpl<*>} */ ($Casts.$to(this.f_$outer_this__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser.getAtIndex(this.f_level__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ + 1), TreeNodeImpl));
+   let treeNode = /**@type {TreeNodeImpl<*>}*/ ($Casts.$to(this.f_$outer_this__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser.getAtIndex(this.f_level__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ + 1), TreeNodeImpl));
    treeNode.f_display__org_gwtproject_user_cellview_client_CellBrowser_TreeNodeImpl_.m_getPresenter___$pp_org_gwtproject_user_cellview_client().m_setKeyboardSelectedRow__int__boolean__boolean(treeNode.f_display__org_gwtproject_user_cellview_client_CellBrowser_TreeNodeImpl_.m_getKeyboardSelectedRow__(), true, true);
   }
  }
- /**
-  * @public
-  */
+ 
  m_keyboardNavigateShallow___$p_org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList() {
   if (this.f_$outer_this__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList.m_isKeyboardSelectionDisabled__()) {
    return;
   }
   if (this.f_level__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ > 0) {
-   let treeNode = /**@type {TreeNodeImpl<*>} */ ($Casts.$to(this.f_$outer_this__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser.getAtIndex(this.f_level__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ - 1), TreeNodeImpl));
+   let treeNode = /**@type {TreeNodeImpl<*>}*/ ($Casts.$to(this.f_$outer_this__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser.getAtIndex(this.f_level__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ - 1), TreeNodeImpl));
    treeNode.f_display__org_gwtproject_user_cellview_client_CellBrowser_TreeNodeImpl_.m_setFocus__boolean(true);
   }
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList() {
   this.f_tmpElem__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ = Document_$Overlay.m_createDivElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   BrowserCellList.$clinit = () =>{};
   BrowserCellList.$loadModules();
   CellList.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof BrowserCellList;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   StringBuilder = goog.module.get('java.lang.StringBuilder$impl');

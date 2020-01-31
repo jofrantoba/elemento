@@ -7,34 +7,23 @@ let $Overlay = goog.forwardDeclare('org.gwtproject.dom.client.NativeEvent.$Overl
 let Event = goog.forwardDeclare('org.gwtproject.user.client.Event$impl');
 
 class HyperlinkImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!HyperlinkImpl}
-  * @public
-  */
+ /** @return {!HyperlinkImpl} */
  static $create__() {
   HyperlinkImpl.$clinit();
   let $instance = new HyperlinkImpl();
   $instance.$ctor__org_gwtproject_user_client_ui_impl_HyperlinkImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_impl_HyperlinkImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {Event} event
-  * @return {boolean}
-  * @public
-  */
- m_handleAsClick__org_gwtproject_user_client_Event(event) {
+ /** @return {boolean} */
+ m_handleAsClick__org_gwtproject_user_client_Event(/** Event */ event) {
   let mouseButtons = $Overlay.m_getButton__$devirt__org_gwtproject_dom_client_NativeEvent(event);
   let alt = $Overlay.m_getAltKey__$devirt__org_gwtproject_dom_client_NativeEvent(event);
   let ctrl = $Overlay.m_getCtrlKey__$devirt__org_gwtproject_dom_client_NativeEvent(event);
@@ -45,25 +34,17 @@ class HyperlinkImpl extends j_l_Object {
   let right = mouseButtons == $Overlay.f_BUTTON_RIGHT__org_gwtproject_dom_client_NativeEvent_$Overlay;
   return !modifiers && !middle && !right;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HyperlinkImpl.$clinit = () =>{};
   HyperlinkImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HyperlinkImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('org.gwtproject.dom.client.NativeEvent.$Overlay$impl');
  }

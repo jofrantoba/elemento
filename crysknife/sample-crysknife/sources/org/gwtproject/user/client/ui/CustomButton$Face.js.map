@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CustomButton$Face.impl.java.js",
-"lineCount":175,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;MAiJwB,I;;;;CAAA,W;EAAAA,Q;EAAAA;sE;EAAAA;OAED,8DAFCA,C;EAAAA;OAGJ,wDAHIA,C;;;;;;;CAWZ,mJ,cAAUC,U;EAAVC,kF;EAAAA,iC;EACNA,iF;;;;;;;CAUY,W;EACZC,kJ;;;;;;;CAUY,W;EACZC,kJ;;;;;;;CASU,kD,CAAiBC,I;EAC3BC,sD;;;;;;;CAUU,2B,CAA2BD,I;EACrCC,oF;EACAA,yO;EACAA,2J;EACAA,+E;;;;;;CAQgB,+C,CAAeC,K;EAC/BC,uF;EACAA,+E;;;;;;;CASgB,2B,CAAeC,I;EAC/BC,oF;EACAA,yO;EACAA,2J;EACAA,+E;;;;;;;CAIkB,Q;EAClBC,4D;;;;;;;CAOW,+C;;;;;;CAUG,6C;;;;;CAKA,8D;EACdC;GACEA;IAEEA,oFAFFA;IAGEA,qEAHFA;;IAKEA,4IALFA;IADFA;;GASEA,qEATFA;G;;;;;CAaW,uE;EACXC;GACEA,4OADFA;G;;;;;QA3HkB,O;EAAAC,uB;EAAAA,oB;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;;;;;;AACpB;KAA4B,uEAA5B;",
+"lineCount":121,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;MAiJwB,I;;CAAA,W;EAAAA,Q;EAAAA;sE;EAAAA;OAED,8DAFCA,C;EAAAA;OAGJ,wDAHIA,C;;;CAWZ,mJ,8CAAUC,U;EAAVC,kF;EAAAA,iC;EACNA,iF;;;CAUY,W;EACZC,kJ;;;CAUY,W;EACZC,kJ;;;CASU,kD,iBAAiBC,I;EAC3BC,sD;;;CAUU,2B,gBAA2BD,I;EACrCC,oF;EACAA,yO;EACAA,2J;EACAA,+E;;;CAQgB,+C,cAAeC,K;EAC/BC,uF;EACAA,+E;;;CASgB,2B,gBAAeC,I;EAC/BC,oF;EACAA,yO;EACAA,2J;EACAA,+E;;;CAIkB,Q;EAClBC,4D;;;CAOW,+C;;CAUG,6C;;CAKA,8D;EACdC;GACEA;IAEEA,oFAFFA;IAGEA,qEAHFA;;IAKEA,4IALFA;IADFA;;GASEA,qEATFA;G;;;CAaW,uE;EACXC;GACEA,4OADFA;G;;;QA3HkB,O;EAAAC,uB;EAAAA,oB;EAAAA,qB;;;;;;;;;;;;;;;;;;;;AACpB;KAA4B,uEAA5B;",
 "sources":["CustomButton.java"],
 "names":["org.gwtproject.user.client.ui.CustomButton$Face.<synthetic: ctor_js>","delegateTo","org.gwtproject.user.client.ui.CustomButton$Face.<init>","org.gwtproject.user.client.ui.CustomButton$Face.getHTML","org.gwtproject.user.client.ui.CustomButton$Face.getText","html","org.gwtproject.user.client.ui.CustomButton$Face.setHTML","image","org.gwtproject.user.client.ui.CustomButton$Face.setImage","text","org.gwtproject.user.client.ui.CustomButton$Face.setText","org.gwtproject.user.client.ui.CustomButton$Face.toString","org.gwtproject.user.client.ui.CustomButton$Face.getFace","org.gwtproject.user.client.ui.CustomButton$Face.updateButtonFace","org.gwtproject.user.client.ui.CustomButton$Face.<clinit>"]
 }

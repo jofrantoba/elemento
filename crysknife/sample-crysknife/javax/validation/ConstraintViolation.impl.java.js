@@ -10,76 +10,35 @@ let Path = goog.forwardDeclare('javax.validation.Path$impl');
  * @template T
  */
 class ConstraintViolation {
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getMessage__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getMessageTemplate__() {}
- /**
-  * @abstract
-  * @return {T}
-  * @public
-  */
+ /** @abstract @return {T} */
  m_getRootBean__() {}
- /**
-  * @abstract
-  * @return {Class<T>}
-  * @public
-  */
+ /** @abstract @return {Class<T>} */
  m_getRootBeanClass__() {}
- /**
-  * @abstract
-  * @return {*}
-  * @public
-  */
+ /** @abstract @return {*} */
  m_getLeafBean__() {}
- /**
-  * @abstract
-  * @return {Path}
-  * @public
-  */
+ /** @abstract @return {Path} */
  m_getPropertyPath__() {}
- /**
-  * @abstract
-  * @return {*}
-  * @public
-  */
+ /** @abstract @return {*} */
  m_getInvalidValue__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ConstraintViolation.$clinit = () =>{};
   ConstraintViolation.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__javax_validation_ConstraintViolation = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__javax_validation_ConstraintViolation = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__javax_validation_ConstraintViolation;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

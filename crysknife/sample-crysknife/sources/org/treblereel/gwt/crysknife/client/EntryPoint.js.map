@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"EntryPoint.impl.java.js",
-"lineCount":28,
-"mappings":"A;;;;;;;;;;;;MAUkB,U;;;;;;QAAA,M;EAAAA,qB;EAAAA,8B;;;;;QAAA,O;EAAAC,6B;EAAAA;",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;;MAUkB,U;;QAAA,M;EAAAA,qB;EAAAA,8B;;;QAAA,O;EAAAC,6B;EAAAA;",
 "sources":["EntryPoint.java"],
 "names":["org.treblereel.gwt.crysknife.client.EntryPoint.<synthetic: adapt_lambda>","org.treblereel.gwt.crysknife.client.EntryPoint.<clinit>"]
 }

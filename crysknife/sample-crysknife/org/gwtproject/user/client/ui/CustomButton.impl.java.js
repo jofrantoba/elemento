@@ -27,118 +27,82 @@ let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
  * @abstract
   */
 class CustomButton extends ButtonBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_curFaceElement__org_gwtproject_user_client_ui_CustomButton_;
-  /** @public {Face} */
+  /**@type {Face}*/
   this.f_curFace__org_gwtproject_user_client_ui_CustomButton_;
-  /** @public {Face} */
+  /**@type {Face}*/
   this.f_up__org_gwtproject_user_client_ui_CustomButton_;
-  /** @public {Face} */
+  /**@type {Face}*/
   this.f_down__org_gwtproject_user_client_ui_CustomButton_;
-  /** @public {Face} */
+  /**@type {Face}*/
   this.f_downHovering__org_gwtproject_user_client_ui_CustomButton_;
-  /** @public {Face} */
+  /**@type {Face}*/
   this.f_upHovering__org_gwtproject_user_client_ui_CustomButton_;
-  /** @public {Face} */
+  /**@type {Face}*/
   this.f_upDisabled__org_gwtproject_user_client_ui_CustomButton_;
-  /** @public {Face} */
+  /**@type {Face}*/
   this.f_downDisabled__org_gwtproject_user_client_ui_CustomButton_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isCapturing__org_gwtproject_user_client_ui_CustomButton_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isFocusing__org_gwtproject_user_client_ui_CustomButton_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_allowClick__org_gwtproject_user_client_ui_CustomButton_ = false;
  }
- /**
-  * Initialization from constructor 'CustomButton(Image)'.
-  * @param {Image} upImage
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_CustomButton__org_gwtproject_user_client_ui_Image(upImage) {
+ //Initialization from constructor 'CustomButton(Image)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_CustomButton__org_gwtproject_user_client_ui_Image(/** Image */ upImage) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__();
   this.m_getUpFace__().m_setImage__org_gwtproject_user_client_ui_Image(upImage);
  }
- /**
-  * Initialization from constructor 'CustomButton(Image, ClickHandler)'.
-  * @param {Image} upImage
-  * @param {ClickHandler} handler
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_CustomButton__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(upImage, handler) {
+ //Initialization from constructor 'CustomButton(Image, ClickHandler)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_CustomButton__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(/** Image */ upImage, /** ClickHandler */ handler) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__org_gwtproject_user_client_ui_Image(upImage);
   this.m_addClickHandler__org_gwtproject_event_dom_client_ClickHandler(handler);
  }
- /**
-  * Initialization from constructor 'CustomButton(Image, Image)'.
-  * @param {Image} upImage
-  * @param {Image} downImage
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_CustomButton__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image(upImage, downImage) {
+ //Initialization from constructor 'CustomButton(Image, Image)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_CustomButton__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image(/** Image */ upImage, /** Image */ downImage) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__org_gwtproject_user_client_ui_Image(upImage);
   this.m_getDownFace__().m_setImage__org_gwtproject_user_client_ui_Image(downImage);
  }
- /**
-  * Initialization from constructor 'CustomButton(Image, Image, ClickHandler)'.
-  * @param {Image} upImage
-  * @param {Image} downImage
-  * @param {ClickHandler} handler
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_CustomButton__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(upImage, downImage, handler) {
+ //Initialization from constructor 'CustomButton(Image, Image, ClickHandler)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_CustomButton__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(/** Image */ upImage, /** Image */ downImage, /** ClickHandler */ handler) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(upImage, handler);
   this.m_getDownFace__().m_setImage__org_gwtproject_user_client_ui_Image(downImage);
  }
- /**
-  * Initialization from constructor 'CustomButton(String)'.
-  * @param {?string} upText
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_CustomButton__java_lang_String(upText) {
+ //Initialization from constructor 'CustomButton(String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_CustomButton__java_lang_String(/** ?string */ upText) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__();
   this.m_getUpFace__().m_setText__java_lang_String(upText);
  }
- /**
-  * Initialization from constructor 'CustomButton(String, ClickHandler)'.
-  * @param {?string} upText
-  * @param {ClickHandler} handler
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_CustomButton__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(upText, handler) {
+ //Initialization from constructor 'CustomButton(String, ClickHandler)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_CustomButton__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(/** ?string */ upText, /** ClickHandler */ handler) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__java_lang_String(upText);
   this.m_addClickHandler__org_gwtproject_event_dom_client_ClickHandler(handler);
  }
- /**
-  * Initialization from constructor 'CustomButton(String, String)'.
-  * @param {?string} upText
-  * @param {?string} downText
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_CustomButton__java_lang_String__java_lang_String(upText, downText) {
+ //Initialization from constructor 'CustomButton(String, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_CustomButton__java_lang_String__java_lang_String(/** ?string */ upText, /** ?string */ downText) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__java_lang_String(upText);
   this.m_getDownFace__().m_setText__java_lang_String(downText);
  }
- /**
-  * Initialization from constructor 'CustomButton(String, String, ClickHandler)'.
-  * @param {?string} upText
-  * @param {?string} downText
-  * @param {ClickHandler} handler
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_CustomButton__java_lang_String__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(upText, downText, handler) {
+ //Initialization from constructor 'CustomButton(String, String, ClickHandler)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_CustomButton__java_lang_String__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(/** ?string */ upText, /** ?string */ downText, /** ClickHandler */ handler) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__java_lang_String__java_lang_String(upText, downText);
   this.m_addClickHandler__org_gwtproject_event_dom_client_ClickHandler(handler);
  }
- /**
-  * Initialization from constructor 'CustomButton()'.
-  * @public
-  */
+ //Initialization from constructor 'CustomButton()'.
+ 
  $ctor__org_gwtproject_user_client_ui_CustomButton__() {
   this.$ctor__org_gwtproject_user_client_ui_ButtonBase__org_gwtproject_dom_client_Element(FocusPanel.f_impl__org_gwtproject_user_client_ui_FocusPanel.m_createFocusable__());
   this.m_sinkEvents__int(Event.f_ONCLICK__org_gwtproject_user_client_Event | Event.f_MOUSEEVENTS__org_gwtproject_user_client_Event | Event.f_FOCUSEVENTS__org_gwtproject_user_client_Event | Event.f_KEYEVENTS__org_gwtproject_user_client_Event);
@@ -146,93 +110,59 @@ class CustomButton extends ButtonBase {
   this.m_setStyleName__java_lang_String(CustomButton.f_STYLENAME_DEFAULT__org_gwtproject_user_client_ui_CustomButton_);
   Roles.m_getButtonRole__().m_set__org_gwtproject_dom_client_Element(this.m_getElement__());
  }
- /**
-  * @return {Face}
-  * @public
-  */
+ /** @return {Face} */
  m_getDownDisabledFace__() {
   if ($Equality.$same(this.f_downDisabled__org_gwtproject_user_client_ui_CustomButton_, null)) {
    this.m_setDownDisabledFace__org_gwtproject_user_client_ui_CustomButton_Face_$p_org_gwtproject_user_client_ui_CustomButton(this.m_createFace__org_gwtproject_user_client_ui_CustomButton_Face__java_lang_String__int_$p_org_gwtproject_user_client_ui_CustomButton(this.m_getDownFace__(), "down-disabled", CustomButton.f_DOWN_DISABLED__org_gwtproject_user_client_ui_CustomButton_));
   }
   return this.f_downDisabled__org_gwtproject_user_client_ui_CustomButton_;
  }
- /**
-  * @return {Face}
-  * @public
-  */
+ /** @return {Face} */
  m_getDownFace__() {
   if ($Equality.$same(this.f_down__org_gwtproject_user_client_ui_CustomButton_, null)) {
    this.m_setDownFace__org_gwtproject_user_client_ui_CustomButton_Face_$p_org_gwtproject_user_client_ui_CustomButton(this.m_createFace__org_gwtproject_user_client_ui_CustomButton_Face__java_lang_String__int_$p_org_gwtproject_user_client_ui_CustomButton(this.m_getUpFace__(), "down", CustomButton.f_DOWN__org_gwtproject_user_client_ui_CustomButton_));
   }
   return this.f_down__org_gwtproject_user_client_ui_CustomButton_;
  }
- /**
-  * @return {Face}
-  * @public
-  */
+ /** @return {Face} */
  m_getDownHoveringFace__() {
   if ($Equality.$same(this.f_downHovering__org_gwtproject_user_client_ui_CustomButton_, null)) {
    this.m_setDownHoveringFace__org_gwtproject_user_client_ui_CustomButton_Face_$p_org_gwtproject_user_client_ui_CustomButton(this.m_createFace__org_gwtproject_user_client_ui_CustomButton_Face__java_lang_String__int_$p_org_gwtproject_user_client_ui_CustomButton(this.m_getDownFace__(), "down-hovering", CustomButton.f_DOWN_HOVERING__org_gwtproject_user_client_ui_CustomButton_));
   }
   return this.f_downHovering__org_gwtproject_user_client_ui_CustomButton_;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getHTML__() {
   return this.m_getCurrentFace___$pp_org_gwtproject_user_client_ui().m_getHTML__();
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getTabIndex__() {
   return FocusPanel.f_impl__org_gwtproject_user_client_ui_FocusPanel.m_getTabIndex__org_gwtproject_dom_client_Element(this.m_getElement__());
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getText__() {
   return this.m_getCurrentFace___$pp_org_gwtproject_user_client_ui().m_getText__();
  }
- /**
-  * @return {Face}
-  * @public
-  */
+ /** @return {Face} */
  m_getUpDisabledFace__() {
   if ($Equality.$same(this.f_upDisabled__org_gwtproject_user_client_ui_CustomButton_, null)) {
    this.m_setUpDisabledFace__org_gwtproject_user_client_ui_CustomButton_Face_$p_org_gwtproject_user_client_ui_CustomButton(this.m_createFace__org_gwtproject_user_client_ui_CustomButton_Face__java_lang_String__int_$p_org_gwtproject_user_client_ui_CustomButton(this.m_getUpFace__(), "up-disabled", CustomButton.f_UP_DISABLED__org_gwtproject_user_client_ui_CustomButton_));
   }
   return this.f_upDisabled__org_gwtproject_user_client_ui_CustomButton_;
  }
- /**
-  * @return {Face}
-  * @public
-  */
+ /** @return {Face} */
  m_getUpFace__() {
   return this.f_up__org_gwtproject_user_client_ui_CustomButton_;
  }
- /**
-  * @return {Face}
-  * @public
-  */
+ /** @return {Face} */
  m_getUpHoveringFace__() {
   if ($Equality.$same(this.f_upHovering__org_gwtproject_user_client_ui_CustomButton_, null)) {
    this.m_setUpHoveringFace__org_gwtproject_user_client_ui_CustomButton_Face_$p_org_gwtproject_user_client_ui_CustomButton(this.m_createFace__org_gwtproject_user_client_ui_CustomButton_Face__java_lang_String__int_$p_org_gwtproject_user_client_ui_CustomButton(this.m_getUpFace__(), "up-hovering", CustomButton.f_UP_HOVERING__org_gwtproject_user_client_ui_CustomButton_));
   }
   return this.f_upHovering__org_gwtproject_user_client_ui_CustomButton_;
  }
- /**
-  * @override
-  * @param {Event} event
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_user_client_Event(event) {
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_user_client_Event(/** Event */ event) {
   let /** Object */ to;
   if (this.m_isEnabled__() == false) {
    return;
@@ -323,20 +253,12 @@ class CustomButton extends ButtonBase {
    }
   }
  }
- /**
-  * @override
-  * @param {number} key
-  * @public
-  */
- m_setAccessKey__char(key) {
+ /** @override */
+ m_setAccessKey__char(/** number */ key) {
   FocusPanel.f_impl__org_gwtproject_user_client_ui_FocusPanel.m_setAccessKey__org_gwtproject_dom_client_Element__char(this.m_getElement__(), key);
  }
- /**
-  * @override
-  * @param {boolean} enabled
-  * @public
-  */
- m_setEnabled__boolean(enabled) {
+ /** @override */
+ m_setEnabled__boolean(/** boolean */ enabled) {
   if (this.m_isEnabled__() != enabled) {
    this.m_toggleDisabled___$p_org_gwtproject_user_client_ui_CustomButton();
    super.m_setEnabled__boolean(enabled);
@@ -348,135 +270,83 @@ class CustomButton extends ButtonBase {
    }
   }
  }
- /**
-  * @override
-  * @param {boolean} focused
-  * @public
-  */
- m_setFocus__boolean(focused) {
+ /** @override */
+ m_setFocus__boolean(/** boolean */ focused) {
   if (focused) {
    FocusPanel.f_impl__org_gwtproject_user_client_ui_FocusPanel.m_focus__org_gwtproject_dom_client_Element(this.m_getElement__());
   } else {
    FocusPanel.f_impl__org_gwtproject_user_client_ui_FocusPanel.m_blur__org_gwtproject_dom_client_Element(this.m_getElement__());
   }
  }
- /**
-  * @override
-  * @param {SafeHtml} html
-  * @public
-  */
- m_setHTML__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ /** @override */
+ m_setHTML__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   this.m_setHTML__java_lang_String(html.m_asString__());
  }
- /**
-  * @override
-  * @param {?string} html
-  * @public
-  */
- m_setHTML__java_lang_String(html) {
+ /** @override */
+ m_setHTML__java_lang_String(/** ?string */ html) {
   this.m_getCurrentFace___$pp_org_gwtproject_user_client_ui().m_setHTML__java_lang_String(html);
  }
- /**
-  * @override
-  * @param {number} index
-  * @public
-  */
- m_setTabIndex__int(index) {
+ /** @override */
+ m_setTabIndex__int(/** number */ index) {
   FocusPanel.f_impl__org_gwtproject_user_client_ui_FocusPanel.m_setTabIndex__org_gwtproject_dom_client_Element__int(this.m_getElement__(), index);
  }
- /**
-  * @override
-  * @param {?string} text
-  * @public
-  */
- m_setText__java_lang_String(text) {
+ /** @override */
+ m_setText__java_lang_String(/** ?string */ text) {
   this.m_getCurrentFace___$pp_org_gwtproject_user_client_ui().m_setText__java_lang_String(text);
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isDown__() {
   return (CustomButton.f_DOWN_ATTRIBUTE__org_gwtproject_user_client_ui_CustomButton_ & this.m_getCurrentFace___$pp_org_gwtproject_user_client_ui().m_getFaceID___$pp_org_gwtproject_user_client_ui()) > 0;
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onAttach__() {
   this.m_finishSetup___$pp_org_gwtproject_user_client_ui();
   super.m_onAttach__();
  }
- /**
-  * @public
-  */
+ 
  m_onClick__() {
   this.f_allowClick__org_gwtproject_user_client_ui_CustomButton_ = true;
   let evt = Document_$Overlay.m_createClickEvent__$devirt__org_gwtproject_dom_client_Document__int__int__int__int__int__boolean__boolean__boolean__boolean(Document_$Overlay.m_get__(), 1, 0, 0, 0, 0, false, false, false, false);
   Element_$Overlay.m_dispatchEvent__$devirt__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_NativeEvent(this.m_getElement__(), evt);
   this.f_allowClick__org_gwtproject_user_client_ui_CustomButton_ = false;
  }
- /**
-  * @public
-  */
+ 
  m_onClickCancel__() {}
- /**
-  * @public
-  */
+ 
  m_onClickStart__() {}
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onDetach__() {
   super.m_onDetach__();
   this.m_cleanupCaptureState___$p_org_gwtproject_user_client_ui_CustomButton();
   this.m_setHovering__boolean_$pp_org_gwtproject_user_client_ui(false);
  }
- /**
-  * @param {boolean} down
-  * @public
-  */
- m_setDown__boolean(down) {
+ 
+ m_setDown__boolean(/** boolean */ down) {
   if (down != this.m_isDown__()) {
    this.m_toggleDown___$pp_org_gwtproject_user_client_ui();
   }
  }
- /**
-  * @public
-  */
+ 
  m_finishSetup___$pp_org_gwtproject_user_client_ui() {
   if ($Equality.$same(this.f_curFace__org_gwtproject_user_client_ui_CustomButton_, null)) {
    this.m_setCurrentFace__org_gwtproject_user_client_ui_CustomButton_Face_$pp_org_gwtproject_user_client_ui(this.m_getUpFace__());
   }
  }
- /**
-  * @param {Event} nativeEvent
-  * @public
-  */
- m_fireClickListeners__org_gwtproject_user_client_Event_$pp_org_gwtproject_user_client_ui(nativeEvent) {
+ 
+ m_fireClickListeners__org_gwtproject_user_client_Event_$pp_org_gwtproject_user_client_ui(/** Event */ nativeEvent) {
   this.m_fireEvent__org_gwtproject_event_shared_Event($1.$create__org_gwtproject_user_client_ui_CustomButton(this));
  }
- /**
-  * @return {Face}
-  * @public
-  */
+ /** @return {Face} */
  m_getCurrentFace___$pp_org_gwtproject_user_client_ui() {
   this.m_finishSetup___$pp_org_gwtproject_user_client_ui();
   return this.f_curFace__org_gwtproject_user_client_ui_CustomButton_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isHovering___$pp_org_gwtproject_user_client_ui() {
   return (CustomButton.f_HOVERING_ATTRIBUTE__org_gwtproject_user_client_ui_CustomButton_ & this.m_getCurrentFace___$pp_org_gwtproject_user_client_ui().m_getFaceID___$pp_org_gwtproject_user_client_ui()) > 0;
  }
- /**
-  * @param {Face} newFace
-  * @public
-  */
- m_setCurrentFace__org_gwtproject_user_client_ui_CustomButton_Face_$pp_org_gwtproject_user_client_ui(newFace) {
+ 
+ m_setCurrentFace__org_gwtproject_user_client_ui_CustomButton_Face_$pp_org_gwtproject_user_client_ui(/** Face */ newFace) {
   if (!$Equality.$same(this.f_curFace__org_gwtproject_user_client_ui_CustomButton_, newFace)) {
    if (!$Equality.$same(this.f_curFace__org_gwtproject_user_client_ui_CustomButton_, null)) {
     this.m_removeStyleDependentName__java_lang_String(this.f_curFace__org_gwtproject_user_client_ui_CustomButton_.m_getName___$pp_org_gwtproject_user_client_ui());
@@ -489,25 +359,18 @@ class CustomButton extends ButtonBase {
    }
   }
  }
- /**
-  * @param {boolean} hovering
-  * @public
-  */
- m_setHovering__boolean_$pp_org_gwtproject_user_client_ui(hovering) {
+ 
+ m_setHovering__boolean_$pp_org_gwtproject_user_client_ui(/** boolean */ hovering) {
   if (hovering != this.m_isHovering___$pp_org_gwtproject_user_client_ui()) {
    this.m_toggleHover___$p_org_gwtproject_user_client_ui_CustomButton();
   }
  }
- /**
-  * @public
-  */
+ 
  m_toggleDown___$pp_org_gwtproject_user_client_ui() {
   let newFaceID = this.m_getCurrentFace___$pp_org_gwtproject_user_client_ui().m_getFaceID___$pp_org_gwtproject_user_client_ui() ^ CustomButton.f_DOWN_ATTRIBUTE__org_gwtproject_user_client_ui_CustomButton_;
   this.m_setCurrentFace__int_$p_org_gwtproject_user_client_ui_CustomButton(newFaceID);
  }
- /**
-  * @public
-  */
+ 
  m_cleanupCaptureState___$p_org_gwtproject_user_client_ui_CustomButton() {
   if (this.f_isCapturing__org_gwtproject_user_client_ui_CustomButton_ || this.f_isFocusing__org_gwtproject_user_client_ui_CustomButton_) {
    DOM.m_releaseCapture__org_gwtproject_dom_client_Element(this.m_getElement__());
@@ -516,22 +379,12 @@ class CustomButton extends ButtonBase {
    this.m_onClickCancel__();
   }
  }
- /**
-  * @param {Face} delegateTo
-  * @param {?string} name
-  * @param {number} faceID
-  * @return {Face}
-  * @public
-  */
- m_createFace__org_gwtproject_user_client_ui_CustomButton_Face__java_lang_String__int_$p_org_gwtproject_user_client_ui_CustomButton(delegateTo, name, faceID) {
+ /** @return {Face} */
+ m_createFace__org_gwtproject_user_client_ui_CustomButton_Face__java_lang_String__int_$p_org_gwtproject_user_client_ui_CustomButton(/** Face */ delegateTo, /** ?string */ name, /** number */ faceID) {
   return $2.$create__org_gwtproject_user_client_ui_CustomButton__java_lang_String__int__org_gwtproject_user_client_ui_CustomButton_Face(this, name, faceID, delegateTo);
  }
- /**
-  * @param {number} id
-  * @return {Face}
-  * @public
-  */
- m_getFaceFromID__int_$p_org_gwtproject_user_client_ui_CustomButton(id) {
+ /** @return {Face} */
+ m_getFaceFromID__int_$p_org_gwtproject_user_client_ui_CustomButton(/** number */ id) {
   switch (id) {
    case CustomButton.f_DOWN__org_gwtproject_user_client_ui_CustomButton_: 
     return this.m_getDownFace__();
@@ -549,27 +402,18 @@ class CustomButton extends ButtonBase {
     throw $Exceptions.toJs(IllegalStateException.$create__java_lang_String(id + " is not a known face id."));
   }
  }
- /**
-  * @param {Face} newFace
-  * @public
-  */
- m_setAriaPressed__org_gwtproject_user_client_ui_CustomButton_Face_$p_org_gwtproject_user_client_ui_CustomButton(newFace) {
+ 
+ m_setAriaPressed__org_gwtproject_user_client_ui_CustomButton_Face_$p_org_gwtproject_user_client_ui_CustomButton(/** Face */ newFace) {
   let pressed = (newFace.m_getFaceID___$pp_org_gwtproject_user_client_ui() & CustomButton.f_DOWN_ATTRIBUTE__org_gwtproject_user_client_ui_CustomButton_) == 1;
   Roles.m_getButtonRole__().m_setAriaPressedState__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_PressedValue(this.m_getElement__(), PressedValue.m_of__boolean(pressed));
  }
- /**
-  * @param {number} faceID
-  * @public
-  */
- m_setCurrentFace__int_$p_org_gwtproject_user_client_ui_CustomButton(faceID) {
+ 
+ m_setCurrentFace__int_$p_org_gwtproject_user_client_ui_CustomButton(/** number */ faceID) {
   let newFace = this.m_getFaceFromID__int_$p_org_gwtproject_user_client_ui_CustomButton(faceID);
   this.m_setCurrentFace__org_gwtproject_user_client_ui_CustomButton_Face_$pp_org_gwtproject_user_client_ui(newFace);
  }
- /**
-  * @param {Object} newFaceElement
-  * @public
-  */
- m_setCurrentFaceElement__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_CustomButton(newFaceElement) {
+ 
+ m_setCurrentFaceElement__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_CustomButton(/** Object */ newFaceElement) {
   if (!$Equality.$same(this.f_curFaceElement__org_gwtproject_user_client_ui_CustomButton_, newFaceElement)) {
    if (!$Equality.$same(this.f_curFaceElement__org_gwtproject_user_client_ui_CustomButton_, null)) {
     this.m_getElement__().removeChild(this.f_curFaceElement__org_gwtproject_user_client_ui_CustomButton_);
@@ -578,83 +422,53 @@ class CustomButton extends ButtonBase {
    DOM.m_appendChild__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(this.m_getElement__(), this.f_curFaceElement__org_gwtproject_user_client_ui_CustomButton_);
   }
  }
- /**
-  * @param {Face} downDisabled
-  * @public
-  */
- m_setDownDisabledFace__org_gwtproject_user_client_ui_CustomButton_Face_$p_org_gwtproject_user_client_ui_CustomButton(downDisabled) {
+ 
+ m_setDownDisabledFace__org_gwtproject_user_client_ui_CustomButton_Face_$p_org_gwtproject_user_client_ui_CustomButton(/** Face */ downDisabled) {
   this.f_downDisabled__org_gwtproject_user_client_ui_CustomButton_ = downDisabled;
  }
- /**
-  * @param {Face} down
-  * @public
-  */
- m_setDownFace__org_gwtproject_user_client_ui_CustomButton_Face_$p_org_gwtproject_user_client_ui_CustomButton(down) {
+ 
+ m_setDownFace__org_gwtproject_user_client_ui_CustomButton_Face_$p_org_gwtproject_user_client_ui_CustomButton(/** Face */ down) {
   this.f_down__org_gwtproject_user_client_ui_CustomButton_ = down;
  }
- /**
-  * @param {Face} downHovering
-  * @public
-  */
- m_setDownHoveringFace__org_gwtproject_user_client_ui_CustomButton_Face_$p_org_gwtproject_user_client_ui_CustomButton(downHovering) {
+ 
+ m_setDownHoveringFace__org_gwtproject_user_client_ui_CustomButton_Face_$p_org_gwtproject_user_client_ui_CustomButton(/** Face */ downHovering) {
   this.f_downHovering__org_gwtproject_user_client_ui_CustomButton_ = downHovering;
  }
- /**
-  * @param {Face} upDisabled
-  * @public
-  */
- m_setUpDisabledFace__org_gwtproject_user_client_ui_CustomButton_Face_$p_org_gwtproject_user_client_ui_CustomButton(upDisabled) {
+ 
+ m_setUpDisabledFace__org_gwtproject_user_client_ui_CustomButton_Face_$p_org_gwtproject_user_client_ui_CustomButton(/** Face */ upDisabled) {
   this.f_upDisabled__org_gwtproject_user_client_ui_CustomButton_ = upDisabled;
  }
- /**
-  * @param {Face} up
-  * @public
-  */
- m_setUpFace__org_gwtproject_user_client_ui_CustomButton_Face_$p_org_gwtproject_user_client_ui_CustomButton(up) {
+ 
+ m_setUpFace__org_gwtproject_user_client_ui_CustomButton_Face_$p_org_gwtproject_user_client_ui_CustomButton(/** Face */ up) {
   this.f_up__org_gwtproject_user_client_ui_CustomButton_ = up;
  }
- /**
-  * @param {Face} upHovering
-  * @public
-  */
- m_setUpHoveringFace__org_gwtproject_user_client_ui_CustomButton_Face_$p_org_gwtproject_user_client_ui_CustomButton(upHovering) {
+ 
+ m_setUpHoveringFace__org_gwtproject_user_client_ui_CustomButton_Face_$p_org_gwtproject_user_client_ui_CustomButton(/** Face */ upHovering) {
   this.f_upHovering__org_gwtproject_user_client_ui_CustomButton_ = upHovering;
  }
- /**
-  * @public
-  */
+ 
  m_toggleDisabled___$p_org_gwtproject_user_client_ui_CustomButton() {
   let newFaceID = this.m_getCurrentFace___$pp_org_gwtproject_user_client_ui().m_getFaceID___$pp_org_gwtproject_user_client_ui() ^ CustomButton.f_DISABLED_ATTRIBUTE__org_gwtproject_user_client_ui_CustomButton_;
   newFaceID &= ~CustomButton.f_HOVERING_ATTRIBUTE__org_gwtproject_user_client_ui_CustomButton_;
   this.m_setCurrentFace__int_$p_org_gwtproject_user_client_ui_CustomButton(newFaceID);
  }
- /**
-  * @public
-  */
+ 
  m_toggleHover___$p_org_gwtproject_user_client_ui_CustomButton() {
   let newFaceID = this.m_getCurrentFace___$pp_org_gwtproject_user_client_ui().m_getFaceID___$pp_org_gwtproject_user_client_ui() ^ CustomButton.f_HOVERING_ATTRIBUTE__org_gwtproject_user_client_ui_CustomButton_;
   newFaceID &= ~CustomButton.f_DISABLED_ATTRIBUTE__org_gwtproject_user_client_ui_CustomButton_;
   this.m_setCurrentFace__int_$p_org_gwtproject_user_client_ui_CustomButton(newFaceID);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CustomButton.$clinit = () =>{};
   CustomButton.$loadModules();
   ButtonBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CustomButton;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -676,25 +490,25 @@ class CustomButton extends ButtonBase {
 }
 $Util.$setClassMetadata(CustomButton, 'org.gwtproject.user.client.ui.CustomButton');
 
-/** @public {?string} @const */
+/**@const {?string}*/
 CustomButton.f_STYLENAME_DEFAULT__org_gwtproject_user_client_ui_CustomButton_ = "gwt-CustomButton";
-/** @public {number} @const */
+/**@const {number}*/
 CustomButton.f_DOWN_ATTRIBUTE__org_gwtproject_user_client_ui_CustomButton_ = 1;
-/** @public {number} @const */
+/**@const {number}*/
 CustomButton.f_HOVERING_ATTRIBUTE__org_gwtproject_user_client_ui_CustomButton_ = 2;
-/** @public {number} @const */
+/**@const {number}*/
 CustomButton.f_DISABLED_ATTRIBUTE__org_gwtproject_user_client_ui_CustomButton_ = 4;
-/** @public {number} @const */
+/**@const {number}*/
 CustomButton.f_UP__org_gwtproject_user_client_ui_CustomButton_ = 0;
-/** @public {number} @const */
+/**@const {number}*/
 CustomButton.f_DOWN__org_gwtproject_user_client_ui_CustomButton_ = 1;
-/** @public {number} @const */
+/**@const {number}*/
 CustomButton.f_UP_HOVERING__org_gwtproject_user_client_ui_CustomButton_ = 2;
-/** @public {number} @const */
+/**@const {number}*/
 CustomButton.f_DOWN_HOVERING__org_gwtproject_user_client_ui_CustomButton_ = 3;
-/** @public {number} @const */
+/**@const {number}*/
 CustomButton.f_UP_DISABLED__org_gwtproject_user_client_ui_CustomButton_ = 4;
-/** @public {number} @const */
+/**@const {number}*/
 CustomButton.f_DOWN_DISABLED__org_gwtproject_user_client_ui_CustomButton_ = 5;
 
 exports = CustomButton; 

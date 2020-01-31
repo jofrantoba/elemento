@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Window$ImportScriptsVar_argsUnionType$$Overlay.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;MAuFmB,wC;;;;;;QAE8B,sB,CAAUA,C;EAAVC,mD;EAC3CA,wD;;;;;;;QAIa,yE;EAAAC,mD;EACbA,iD;;;;;;;QAIuB,mF;EAAAC,mD;EACvBA,oG;;;;;;;QAIc,yE;EAAAC,mD;EACdA,0D;;;;;;;QAIc,mF;EAAAC,mD;EACdA,wD;;;;;QAvBa,O;EAAAC,2D;EAAAA;",
+"lineCount":39,
+"mappings":"A;;;;;;;;;MAuFmB,wC;;QAE8B,sB,UAAUA,C;EAAVC,mD;EAC3CA,uD;;;QAIa,yE;EAAAC,mD;EACbA,iD;;;QAIuB,mF;EAAAC,mD;EACvBA,mG;;;QAIc,yE;EAAAC,mD;EACdA,yD;;;QAIc,mF;EAAAC,mD;EACdA,uD;;;QAvBa,O;EAAAC,2D;EAAAA;",
 "sources":["Window.java"],
 "names":["o","elemental2.dom.Window$ImportScriptsVar_argsUnionType$$Overlay.of","elemental2.dom.Window$ImportScriptsVar_argsUnionType$$Overlay.asString__$devirt","elemental2.dom.Window$ImportScriptsVar_argsUnionType$$Overlay.asTrustedScriptURL__$devirt","elemental2.dom.Window$ImportScriptsVar_argsUnionType$$Overlay.isString__$devirt","elemental2.dom.Window$ImportScriptsVar_argsUnionType$$Overlay.isTrustedScriptURL__$devirt","elemental2.dom.Window$ImportScriptsVar_argsUnionType$$Overlay.<clinit>"]
 }

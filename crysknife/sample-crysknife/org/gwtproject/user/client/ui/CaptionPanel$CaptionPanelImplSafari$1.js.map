@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CaptionPanel$CaptionPanelImplSafari$1.impl.java.js",
-"lineCount":60,
-"mappings":"A;;;;;;;;;;;;;MA4G8D,E;;;;CAAA,W;EAAAA,Q;EAAAA;0F;EAAAA;OANhCC,WAMgCD,C;;;;;;;;QAAA,qH;EAAAE,a;EAAAA,yB;EAAAA,6N;EAAAA,iB;;;;;;;CAAA,wL;EAAAC,sG;EAAAA,+B;EAAAA,iC;;;;;;CAC1C,W;EACVC,+I;;;;;QAFoD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":44,
+"mappings":"A;;;;;;;;;;;;;MA4G8D,E;;CAAA,W;EAAAA,Q;EAAAA;0F;EAAAA;OANhCC,WAMgCD,C;;;QAAA,qH;EAAAE,a;EAAAA,yB;EAAAA,6N;EAAAA,iB;;;CAAA,wL;EAAAC,sG;EAAAA,+B;EAAAA,iC;;;CAC1C,W;EACVC,+I;;;QAFoD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["CaptionPanel.java"],
 "names":["org.gwtproject.user.client.ui.CaptionPanel$CaptionPanelImplSafari$1.<synthetic: ctor_js>","fieldset","org.gwtproject.user.client.ui.CaptionPanel$CaptionPanelImplSafari$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.CaptionPanel$CaptionPanelImplSafari$1.<init>","org.gwtproject.user.client.ui.CaptionPanel$CaptionPanelImplSafari$1.execute","org.gwtproject.user.client.ui.CaptionPanel$CaptionPanelImplSafari$1.<clinit>"]
 }

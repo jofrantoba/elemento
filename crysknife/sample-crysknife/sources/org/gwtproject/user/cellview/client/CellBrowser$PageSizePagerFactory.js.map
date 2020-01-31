@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellBrowser$PageSizePagerFactory.impl.java.js",
-"lineCount":52,
-"mappings":"A;;;;;;;;;;;;;MAgxBuB,oB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,+B;EAAAA,2C;EAAAA,0F;EAAAA,iB;;;;;CAAA,6E;EAAAC,iC;;;;;;;;CAEE,4C,CAAeC,O;EAClCC,iF;;;;;QAHiB,O;EAAAC,uC;EAAAA,oC;EAAAA;",
+"lineCount":38,
+"mappings":"A;;;;;;;;;;;;;MAgxBuB,oB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,+B;EAAAA,2C;EAAAA,0F;EAAAA,iB;;;CAAA,6E;EAAAC,iC;;;CAEE,4C,gBAAeC,O;EAClCC,iF;;;QAHiB,O;EAAAC,uC;EAAAA,oC;EAAAA;",
 "sources":["CellBrowser.java"],
 "names":["org.gwtproject.user.cellview.client.CellBrowser$PageSizePagerFactory.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.CellBrowser$PageSizePagerFactory.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.CellBrowser$PageSizePagerFactory.<init>","display","org.gwtproject.user.cellview.client.CellBrowser$PageSizePagerFactory.create","org.gwtproject.user.cellview.client.CellBrowser$PageSizePagerFactory.<clinit>"]
 }

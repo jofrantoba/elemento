@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"AbstractCellTable$Template.impl.java.js",
-"lineCount":133,
-"mappings":"A;;;;;;;;;;;;MAkaY,Q;;;;;;;CAIC,8C,CAAaA,Q;;;;;;;CAEb,gD,CAAeC,O;;;;;;;;CAEf,+D,CAAUC,O,EAAkBF,Q;;;;;;;;;;CAE5B,4G,CAAmBE,O,EAAgBC,M,EAAeC,M,EAAiBJ,Q;;;;;;;;;CAEnE,gG,CAAyBE,O,EAAgBC,M,EAAiBH,Q;;;;;;;;;CAE1D,8F,CAAuBE,O,EAAgBE,M,EAAiBJ,Q;;;;;;;CAExD,gD,CAAeC,O;;;;;;;CAEf,gD,CAAeA,O;;;;;;;;CAEf,+D,CAAUC,O,EAAkBF,Q;;;;;QAlBrC,8E;EAAAK,kH;;;;;QAFQ,O;EAAAC,2B;EAAAA,wB;EAERA,mI;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFQ;;",
+"lineCount":63,
+"mappings":"A;;;;;;;;;;;;MAkaY,Q;;CAIC,8C,iBAAaA,Q;;CAEb,gD,iBAAeC,O;;CAEf,+D,gBAAUC,O,kBAAkBF,Q;;CAE5B,4G,gBAAmBE,O,iBAAgBC,M,iBAAeC,M,kBAAiBJ,Q;;CAEnE,gG,gBAAyBE,O,iBAAgBC,M,kBAAiBH,Q;;CAE1D,8F,gBAAuBE,O,iBAAgBE,M,kBAAiBJ,Q;;CAExD,gD,iBAAeC,O;;CAEf,gD,iBAAeA,O;;CAEf,+D,gBAAUC,O,kBAAkBF,Q;;QAlBrC,8E;EAAAK,kH;;;QAFQ,O;EAAAC,2B;EAAAA,wB;EAERA,mI;;;;;;;;;;;;;;;;;;;;;;AAFQ;;",
 "sources":["AbstractCellTable.java"],
 "names":["contents","rowHtml","classes","hAlign","vAlign","org.gwtproject.user.cellview.client.AbstractCellTable$Template.<synthetic: getter>","org.gwtproject.user.cellview.client.AbstractCellTable$Template.<clinit>"]
 }

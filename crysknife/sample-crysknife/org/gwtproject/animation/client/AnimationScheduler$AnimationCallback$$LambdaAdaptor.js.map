@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"AnimationScheduler$AnimationCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;;MAyEmB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;mG;EAAAA,sL;;;;;;CAAA,4K;EAAAC,iC;EAAAA,sG;;;;;;CAAA,iB;;GAAAC,iH;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;MAyEmB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;mG;EAAAA,sL;;;CAAA,4K;EAAAC,iC;EAAAA,sG;;;CAAA,iB;;GAAAC,iH;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["AnimationScheduler.java"],
 "names":["org.gwtproject.animation.client.AnimationScheduler$AnimationCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.animation.client.AnimationScheduler$AnimationCallback$$LambdaAdaptor.<init>","org.gwtproject.animation.client.AnimationScheduler$AnimationCallback$$LambdaAdaptor.execute","org.gwtproject.animation.client.AnimationScheduler$AnimationCallback$$LambdaAdaptor.<clinit>"]
 }

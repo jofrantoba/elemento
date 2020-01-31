@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TodoRepository$ModificationCallback.impl.java.js",
-"lineCount":30,
-"mappings":"A;;;;;;;;;MAwKqB,oB;;;;;CAER,W;;;;;;QAFQ,M;EAAAA,+B;EAAAA,8B;;;;;QAAA,O;EAAAC,uC;EAAAA;",
+"lineCount":21,
+"mappings":"A;;;;;;;;;MAwKqB,oB;;CAER,W;;QAFQ,M;EAAAA,+B;EAAAA,8B;;;QAAA,O;EAAAC,uC;EAAAA;",
 "sources":["TodoRepository.java"],
 "names":["org.jboss.elemento.sample.crysknife.TodoRepository$ModificationCallback.<synthetic: adapt_lambda>","org.jboss.elemento.sample.crysknife.TodoRepository$ModificationCallback.<clinit>"]
 }

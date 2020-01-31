@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"BeanManager_Factory.impl.java.js",
-"lineCount":60,
-"mappings":"A;;;;;;;;;;;;;MAQa,oB;;;;CAAA,W;EAAAA,Q;EAAAA;OAEW,uEAFXA,C;;;;;;;CAKU,O;EACfC,iC;;;;;;QAGI,S;EAAAC,2C;EAAAA,6E;EAAAA,iB;;;;;CAAA,gE;EAAAC,iC;;;;;;QAG0B,U;EAAAC,+B;EAC9BA,wC;;;;;QAbK,O;EAAAC,uC;EAAAA,oC;EAAAA;",
+"lineCount":44,
+"mappings":"A;;;;;;;;;;;;;MAQa,oB;;CAAA,W;EAAAA,Q;EAAAA;OAEW,uEAFXA,C;;;CAKU,O;EACfC,iC;;;QAGI,S;EAAAC,2C;EAAAA,6E;EAAAA,iB;;;CAAA,gE;EAAAC,iC;;;QAG0B,U;EAAAC,+B;EAC9BA,wC;;;QAbK,O;EAAAC,uC;EAAAA,oC;EAAAA;",
 "sources":["BeanManager_Factory.java"],
 "names":["org.treblereel.gwt.crysknife.client.BeanManager_Factory.<synthetic: ctor_js>","org.treblereel.gwt.crysknife.client.BeanManager_Factory.get","org.treblereel.gwt.crysknife.client.BeanManager_Factory.<synthetic: ctor_create>","org.treblereel.gwt.crysknife.client.BeanManager_Factory.<init>","org.treblereel.gwt.crysknife.client.BeanManager_Factory.create","org.treblereel.gwt.crysknife.client.BeanManager_Factory.<clinit>"]
 }

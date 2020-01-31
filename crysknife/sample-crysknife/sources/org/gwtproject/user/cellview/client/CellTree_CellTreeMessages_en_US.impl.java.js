@@ -8,63 +8,40 @@ const CellTreeMessages = goog.require('org.gwtproject.user.cellview.client.CellT
  * @implements {CellTreeMessages}
   */
 class CellTree__CellTreeMessages__en__US extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!CellTree__CellTreeMessages__en__US}
-  * @public
-  */
+ /** @return {!CellTree__CellTreeMessages__en__US} */
  static $create__() {
   CellTree__CellTreeMessages__en__US.$clinit();
   let $instance = new CellTree__CellTreeMessages__en__US();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellTree_CellTreeMessages_en_US__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_cellview_client_CellTree_CellTreeMessages_en_US__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_showMore__() {
   return "Show more";
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_emptyTree__() {
   return "Empty";
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CellTree__CellTreeMessages__en__US.$clinit = () =>{};
   CellTree__CellTreeMessages__en__US.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CellTree__CellTreeMessages__en__US;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

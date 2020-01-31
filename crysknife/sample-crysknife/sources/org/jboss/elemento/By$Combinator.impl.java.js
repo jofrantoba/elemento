@@ -12,106 +12,64 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @extends {Enum<Combinator>}
   */
 class Combinator extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_operator__org_jboss_elemento_By_Combinator_;
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @param {?string} operator
-  * @return {!Combinator}
-  * @public
-  */
- static $create__java_lang_String__int__java_lang_String($name, $ordinal, operator) {
+ /** @return {!Combinator} */
+ static $create__java_lang_String__int__java_lang_String(/** ?string */ $name, /** number */ $ordinal, /** ?string */ operator) {
   let $instance = new Combinator();
   $instance.$ctor__org_jboss_elemento_By_Combinator__java_lang_String__int__java_lang_String($name, $ordinal, operator);
   return $instance;
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @param {?string} operator
-  * @public
-  */
- $ctor__org_jboss_elemento_By_Combinator__java_lang_String__int__java_lang_String($name, $ordinal, operator) {
+ 
+ $ctor__org_jboss_elemento_By_Combinator__java_lang_String__int__java_lang_String(/** ?string */ $name, /** number */ $ordinal, /** ?string */ operator) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
   this.f_operator__org_jboss_elemento_By_Combinator_ = operator;
  }
- /**
-  * @param {string} name
-  * @return {!Combinator}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!Combinator} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   Combinator.$clinit();
   if ($Equality.$same(Combinator.f_namesToValuesMap__org_jboss_elemento_By_Combinator_, null)) {
    Combinator.f_namesToValuesMap__org_jboss_elemento_By_Combinator_ = $Enums.createMapFromValues(Combinator.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, Combinator.f_namesToValuesMap__org_jboss_elemento_By_Combinator_);
  }
- /**
-  * @return {!Array<!Combinator>}
-  * @public
-  */
+ /** @return {!Array<!Combinator>} */
  static m_values__() {
   Combinator.$clinit();
-  return /**@type {!Array<Combinator>} */ ($Arrays.$init([Combinator.$f_AND__org_jboss_elemento_By_Combinator, Combinator.$f_DESCENDANT__org_jboss_elemento_By_Combinator, Combinator.$f_CHILD__org_jboss_elemento_By_Combinator, Combinator.$f_ADJACENT_SIBLING__org_jboss_elemento_By_Combinator, Combinator.$f_SIBLING__org_jboss_elemento_By_Combinator], Combinator));
+  return /**@type {!Array<Combinator>}*/ ($Arrays.$init([Combinator.$f_AND__org_jboss_elemento_By_Combinator, Combinator.$f_DESCENDANT__org_jboss_elemento_By_Combinator, Combinator.$f_CHILD__org_jboss_elemento_By_Combinator, Combinator.$f_ADJACENT_SIBLING__org_jboss_elemento_By_Combinator, Combinator.$f_SIBLING__org_jboss_elemento_By_Combinator], Combinator));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @return {number}
-  * @public
-  */
- m_compareTo__java_lang_Object(arg0) {
-  return super.compareTo(/**@type {Combinator} */ ($Casts.$to(arg0, Combinator)));
+ //Bridge method.
+ /** @override @return {number} */
+ m_compareTo__java_lang_Object(/** * */ arg0) {
+  return super.compareTo(/**@type {Combinator}*/ ($Casts.$to(arg0, Combinator)));
  }
- /**
-  * @return {!Combinator}
-  * @public
-  */
+ /** @return {!Combinator} */
  static get f_AND__org_jboss_elemento_By_Combinator() {
   return (Combinator.$clinit(), Combinator.$f_AND__org_jboss_elemento_By_Combinator);
  }
- /**
-  * @return {!Combinator}
-  * @public
-  */
+ /** @return {!Combinator} */
  static get f_DESCENDANT__org_jboss_elemento_By_Combinator() {
   return (Combinator.$clinit(), Combinator.$f_DESCENDANT__org_jboss_elemento_By_Combinator);
  }
- /**
-  * @return {!Combinator}
-  * @public
-  */
+ /** @return {!Combinator} */
  static get f_CHILD__org_jboss_elemento_By_Combinator() {
   return (Combinator.$clinit(), Combinator.$f_CHILD__org_jboss_elemento_By_Combinator);
  }
- /**
-  * @return {!Combinator}
-  * @public
-  */
+ /** @return {!Combinator} */
  static get f_ADJACENT_SIBLING__org_jboss_elemento_By_Combinator() {
   return (Combinator.$clinit(), Combinator.$f_ADJACENT_SIBLING__org_jboss_elemento_By_Combinator);
  }
- /**
-  * @return {!Combinator}
-  * @public
-  */
+ /** @return {!Combinator} */
  static get f_SIBLING__org_jboss_elemento_By_Combinator() {
   return (Combinator.$clinit(), Combinator.$f_SIBLING__org_jboss_elemento_By_Combinator);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Combinator.$clinit = () =>{};
   Combinator.$loadModules();
@@ -123,17 +81,11 @@ class Combinator extends Enum {
   Combinator.$f_SIBLING__org_jboss_elemento_By_Combinator = Combinator.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("SIBLING"), Combinator.$ordinal$f_SIBLING__org_jboss_elemento_By_Combinator, " ~ ");
   Combinator.f_namesToValuesMap__org_jboss_elemento_By_Combinator_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Combinator;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
@@ -144,27 +96,27 @@ class Combinator extends Enum {
 }
 $Util.$setClassMetadataForEnum(Combinator, 'org.jboss.elemento.By$Combinator');
 
-/** @private {!Combinator} */
+/**@private {!Combinator}*/
 Combinator.$f_AND__org_jboss_elemento_By_Combinator;
-/** @private {!Combinator} */
+/**@private {!Combinator}*/
 Combinator.$f_DESCENDANT__org_jboss_elemento_By_Combinator;
-/** @private {!Combinator} */
+/**@private {!Combinator}*/
 Combinator.$f_CHILD__org_jboss_elemento_By_Combinator;
-/** @private {!Combinator} */
+/**@private {!Combinator}*/
 Combinator.$f_ADJACENT_SIBLING__org_jboss_elemento_By_Combinator;
-/** @private {!Combinator} */
+/**@private {!Combinator}*/
 Combinator.$f_SIBLING__org_jboss_elemento_By_Combinator;
-/** @public {Map<?string, !Combinator>} */
+/**@type {Map<?string, !Combinator>}*/
 Combinator.f_namesToValuesMap__org_jboss_elemento_By_Combinator_;
-/** @public {number} @const */
+/**@const {number}*/
 Combinator.$ordinal$f_AND__org_jboss_elemento_By_Combinator = 0;
-/** @public {number} @const */
+/**@const {number}*/
 Combinator.$ordinal$f_DESCENDANT__org_jboss_elemento_By_Combinator = 1;
-/** @public {number} @const */
+/**@const {number}*/
 Combinator.$ordinal$f_CHILD__org_jboss_elemento_By_Combinator = 2;
-/** @public {number} @const */
+/**@const {number}*/
 Combinator.$ordinal$f_ADJACENT_SIBLING__org_jboss_elemento_By_Combinator = 3;
-/** @public {number} @const */
+/**@const {number}*/
 Combinator.$ordinal$f_SIBLING__org_jboss_elemento_By_Combinator = 4;
 
 exports = Combinator; 

@@ -9,49 +9,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.user.cellview.client.Lo
  * @interface
  */
 class Handler {
- /**
-  * @abstract
-  * @param {LoadingStateChangeEvent} event
-  * @public
-  */
- m_onLoadingStateChanged__org_gwtproject_user_cellview_client_LoadingStateChangeEvent(event) {}
- /**
-  * @param {?function(LoadingStateChangeEvent):void} fn
-  * @return {Handler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onLoadingStateChanged__org_gwtproject_user_cellview_client_LoadingStateChangeEvent(/** LoadingStateChangeEvent */ event) {}
+ /** @return {Handler} */
+ static $adapt(/** ?function(LoadingStateChangeEvent):void */ fn) {
   Handler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Handler.$clinit = () =>{};
   Handler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_Handler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_Handler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_Handler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.user.cellview.client.LoadingStateChangeEvent.Handler.$LambdaAdaptor$impl');
  }

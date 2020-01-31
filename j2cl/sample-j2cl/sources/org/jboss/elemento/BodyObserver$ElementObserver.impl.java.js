@@ -9,52 +9,27 @@ let ObserverCallback = goog.forwardDeclare('org.jboss.elemento.ObserverCallback$
  * @interface
  */
 class ElementObserver {
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_attachId__() {}
- /**
-  * @abstract
-  * @return {HTMLElement}
-  * @public
-  */
+ /** @abstract @return {HTMLElement} */
  m_observedElement__() {}
- /**
-  * @abstract
-  * @return {ObserverCallback}
-  * @public
-  */
+ /** @abstract @return {ObserverCallback} */
  m_callback__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ElementObserver.$clinit = () =>{};
   ElementObserver.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_jboss_elemento_BodyObserver_ElementObserver = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_jboss_elemento_BodyObserver_ElementObserver = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_jboss_elemento_BodyObserver_ElementObserver;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

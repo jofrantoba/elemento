@@ -6,24 +6,17 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Overlay = goog.forwardDeclare('jsinterop.base.JsPropertyMap.$Overlay$impl');
 
 class GetNotificationOptions_$Overlay {
- /**
-  * @return {GetNotificationOptions}
-  * @public
-  */
+ /** @return {GetNotificationOptions} */
  static m_create__() {
   GetNotificationOptions_$Overlay.$clinit();
-  return /**@type {GetNotificationOptions} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
+  return /**@type {GetNotificationOptions}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   GetNotificationOptions_$Overlay.$clinit = () =>{};
   GetNotificationOptions_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');

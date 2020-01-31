@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"NoSelectionModel.impl.java.js",
-"lineCount":104,
-"mappings":"A;;;;;;;;;;;;;MA0Ba,gB;;;;CAAA,W;EAAAA,Q;EAAAA;OAEI,uDAFJA,C;EAAAA;OAGD,6DAHCA,C;;;;;;;;QAQJ,S;EAAAC,2B;EAAAA,uC;EAAAA,iE;EAAAA,iB;;;;;;CAAA,oD;EACLC,2H;;;;;;;;;QASK,+C,CAA2DC,W;EAA3DF,2B;EAAAA,uC;EAAAA,kH;EAAAA,iB;;;;;;;CAAA,0F,CAA2DE,W;EAChED,kI;;;;;;CAQO,yB;EACPE,0E;;;;;;;;CAIa,8B,CAAaC,I;EAC1BC,a;;;;;;;;CAIU,wC,CAAcD,I,EAAcE,Q;EACtCC,IAAOC,GAAPD,yC;EACAA;GACEA,0EADFA;GAEEA,mEAFFA;SAGOA;GACLA,0EADKA;GAELA,oEAFKA;G;EAIPA,wC;;;;;QA9CS,O;EAAAE,mC;EAAAA,gC;EAAAA;",
+"lineCount":73,
+"mappings":"A;;;;;;;;;;;;;MA0Ba,gB;;CAAA,W;EAAAA,Q;EAAAA;OAEI,uDAFJA,C;EAAAA;OAGD,6DAHCA,C;;;;QAQJ,S;EAAAC,2B;EAAAA,uC;EAAAA,iE;EAAAA,iB;;;;CAAA,oD;EACLC,2H;;;;QASK,+C,uBAA2DC,W;EAA3DF,2B;EAAAA,uC;EAAAA,kH;EAAAA,iB;;;;CAAA,0F,uBAA2DE,W;EAChED,kI;;;CAQO,yB;EACPE,0E;;;CAIa,8B,UAAaC,I;EAC1BC,a;;;CAIU,wC,UAAcD,I,iBAAcE,Q;EACtCC,IAAOC,GAAPD,yC;EACAA;GACEA,0EADFA;GAEEA,mEAFFA;SAGOA;GACLA,0EADKA;GAELA,oEAFKA;G;EAIPA,wC;;;QA9CS,O;EAAAE,mC;EAAAA,gC;EAAAA;",
 "sources":["NoSelectionModel.java"],
 "names":["org.gwtproject.view.client.NoSelectionModel.<synthetic: ctor_js>","org.gwtproject.view.client.NoSelectionModel.<synthetic: ctor_create>","org.gwtproject.view.client.NoSelectionModel.<init>","keyProvider","org.gwtproject.view.client.NoSelectionModel.getLastSelectedObject","item","org.gwtproject.view.client.NoSelectionModel.isSelected","selected","org.gwtproject.view.client.NoSelectionModel.setSelected","key","org.gwtproject.view.client.NoSelectionModel.<clinit>"]
 }

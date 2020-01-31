@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"RequiresResize$$LambdaAdaptor.impl.java.js",
-"lineCount":45,
-"mappings":"A;;;;;;;;;MA2BiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;2E;EAAAA,sI;;;;;;CAAA,4H;EAAAC,iC;EAAAA,8E;;;;;CAAA,Y;;GAAAC,yF;GAAAA,Y;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;MA2BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;2E;EAAAA,sI;;;CAAA,4H;EAAAC,iC;EAAAA,8E;;;CAAA,Y;;GAAAC,yF;GAAAA,Y;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["RequiresResize.java"],
 "names":["org.gwtproject.user.client.ui.RequiresResize$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.client.ui.RequiresResize$$LambdaAdaptor.<init>","org.gwtproject.user.client.ui.RequiresResize$$LambdaAdaptor.onResize","org.gwtproject.user.client.ui.RequiresResize$$LambdaAdaptor.<clinit>"]
 }

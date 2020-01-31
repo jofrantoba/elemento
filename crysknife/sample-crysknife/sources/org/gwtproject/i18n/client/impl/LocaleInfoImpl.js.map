@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"LocaleInfoImpl.impl.java.js",
-"lineCount":52,
-"mappings":"A;;;;;;;;MA2Ba,c;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,yB;EAAAA,qC;EAAAA,oE;EAAAA,iB;;;;;CAAA,uD;EAAAC,iC;;;;;;CAEM,a;EACXC,a;;;;;;CAGmB,sB;EACnBC,yC;;;;;QAPK,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;MA2Ba,c;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,yB;EAAAA,qC;EAAAA,oE;EAAAA,iB;;;CAAA,uD;EAAAC,iC;;;CAEM,a;EACXC,a;;;CAGmB,sB;EACnBC,yC;;;QAPK,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["LocaleInfoImpl.java"],
 "names":["org.gwtproject.i18n.client.impl.LocaleInfoImpl.<synthetic: ctor_js>","org.gwtproject.i18n.client.impl.LocaleInfoImpl.<synthetic: ctor_create>","org.gwtproject.i18n.client.impl.LocaleInfoImpl.<init>","org.gwtproject.i18n.client.impl.LocaleInfoImpl.hasAnyRTL","org.gwtproject.i18n.client.impl.LocaleInfoImpl.getNumberConstants","org.gwtproject.i18n.client.impl.LocaleInfoImpl.<clinit>"]
 }

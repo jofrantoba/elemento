@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HumanInputEvent.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;;;;;MAwBsB,e;;;;CAAA,W;EAAAA,Q;;;;;CAAA,wD;EAAAC,yD;;;;;;CAOL,gB;EACbC,uG;;;;;;CAQa,oB;EACbC,wG;;;;;;CAQa,iB;EACbC,wG;;;;;;CAQa,kB;EACbC,yG;;;;;QAnCkB,O;EAAAC,kC;EAAAA,+B;EAAAA;",
+"lineCount":43,
+"mappings":"A;;;;;;;;;;;;;MAwBsB,e;;CAAA,W;EAAAA,Q;;;CAAA,wD;EAAAC,yD;;;CAOL,gB;EACbC,uG;;;CAQa,oB;EACbC,wG;;;CAQa,iB;EACbC,wG;;;CAQa,kB;EACbC,yG;;;QAnCkB,O;EAAAC,kC;EAAAA,+B;EAAAA;",
 "sources":["HumanInputEvent.java"],
 "names":["org.gwtproject.event.dom.client.HumanInputEvent.<synthetic: ctor_js>","org.gwtproject.event.dom.client.HumanInputEvent.<init>","org.gwtproject.event.dom.client.HumanInputEvent.isAltKeyDown","org.gwtproject.event.dom.client.HumanInputEvent.isControlKeyDown","org.gwtproject.event.dom.client.HumanInputEvent.isMetaKeyDown","org.gwtproject.event.dom.client.HumanInputEvent.isShiftKeyDown","org.gwtproject.event.dom.client.HumanInputEvent.<clinit>"]
 }

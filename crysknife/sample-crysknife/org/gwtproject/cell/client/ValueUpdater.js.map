@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ValueUpdater.impl.java.js",
-"lineCount":33,
-"mappings":"A;;;;;;;;;;MAuBiB,Y;;;;;;CAOV,0B,CAASA,K;;;;;;;QAPC,M;EAAAC,uB;EAAAA,iE;;;;;QAAA,O;EAAAC,+B;EAAAA;",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;MAuBiB,Y;;CAOV,0B,UAASA,K;;QAPC,M;EAAAC,uB;EAAAA,gE;;;QAAA,O;EAAAC,+B;EAAAA;",
 "sources":["ValueUpdater.java"],
 "names":["value","org.gwtproject.cell.client.ValueUpdater.<synthetic: adapt_lambda>","org.gwtproject.cell.client.ValueUpdater.<clinit>"]
 }

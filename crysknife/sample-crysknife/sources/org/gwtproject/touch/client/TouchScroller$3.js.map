@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TouchScroller$3.impl.java.js",
-"lineCount":55,
-"mappings":"A;;;;;;;;;;;;MAkgB6E,E;;;;CAAA,W;EAAAA,Q;EAAAA;kE;;;;;;;QAAA,kD;EAAAC,a;EAAAA,yB;EAAAA,qH;EAAAA,iB;;;;;;CAAA,6F;EAAAC,8E;EAAAA,iC;;;;;;;CAEzD,6D,CAA2BC,K;EACrCC,iI;;;;;QAHmE,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":40,
+"mappings":"A;;;;;;;;;;;;MAkgB6E,E;;CAAA,W;EAAAA,Q;EAAAA;kE;;;QAAA,kD;EAAAC,a;EAAAA,yB;EAAAA,qH;EAAAA,iB;;;CAAA,6F;EAAAC,8E;EAAAA,iC;;;CAEzD,6D,uBAA2BC,K;EACrCC,iI;;;QAHmE,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["TouchScroller.java"],
 "names":["org.gwtproject.touch.client.TouchScroller$3.<synthetic: ctor_js>","org.gwtproject.touch.client.TouchScroller$3.<synthetic: ctor_create>","org.gwtproject.touch.client.TouchScroller$3.<init>","event","org.gwtproject.touch.client.TouchScroller$3.onTouchMove","org.gwtproject.touch.client.TouchScroller$3.<clinit>"]
 }

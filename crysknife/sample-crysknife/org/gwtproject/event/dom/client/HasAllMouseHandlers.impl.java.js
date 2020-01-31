@@ -18,40 +18,27 @@ const HasMouseWheelHandlers = goog.require('org.gwtproject.event.dom.client.HasM
  * @extends {HasMouseWheelHandlers}
  */
 class HasAllMouseHandlers {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HasAllMouseHandlers.$clinit = () =>{};
   HasAllMouseHandlers.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasMouseDownHandlers.$markImplementor(classConstructor);
-  HasMouseUpHandlers.$markImplementor(classConstructor);
-  HasMouseOutHandlers.$markImplementor(classConstructor);
-  HasMouseOverHandlers.$markImplementor(classConstructor);
-  HasMouseMoveHandlers.$markImplementor(classConstructor);
-  HasMouseWheelHandlers.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_HasAllMouseHandlers = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasMouseDownHandlers.$markImplementor(ctor);
+  HasMouseUpHandlers.$markImplementor(ctor);
+  HasMouseOutHandlers.$markImplementor(ctor);
+  HasMouseOverHandlers.$markImplementor(ctor);
+  HasMouseMoveHandlers.$markImplementor(ctor);
+  HasMouseWheelHandlers.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_HasAllMouseHandlers = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_HasAllMouseHandlers;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

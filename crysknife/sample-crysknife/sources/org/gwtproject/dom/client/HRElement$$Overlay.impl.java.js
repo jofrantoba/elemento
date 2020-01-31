@@ -10,67 +10,43 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class HRElement_$Overlay {
- /**
-  * @param {Object} elem
-  * @return {Object}
-  * @public
-  */
- static m_as__org_gwtproject_dom_client_Element(elem) {
+ /** @return {Object} */
+ static m_as__org_gwtproject_dom_client_Element(/** Object */ elem) {
   HRElement_$Overlay.$clinit();
   $Asserts.$assert(HRElement_$Overlay.m_is__org_gwtproject_dom_client_Element(elem));
-  return /**@type {Object} */ ($Casts.$to(elem, HRElement_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to(elem, HRElement_$Overlay));
  }
- /**
-  * @param {Object} o
-  * @return {boolean}
-  * @public
-  */
- static m_is__org_gwtproject_core_client_JavaScriptObject(o) {
+ /** @return {boolean} */
+ static m_is__org_gwtproject_core_client_JavaScriptObject(/** Object */ o) {
   HRElement_$Overlay.$clinit();
   if ($Overlay.m_is__org_gwtproject_core_client_JavaScriptObject(o)) {
-   return HRElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object} */ ($Casts.$to(o, $Overlay)));
+   return HRElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object}*/ ($Casts.$to(o, $Overlay)));
   }
   return false;
  }
- /**
-  * @param {Object} node
-  * @return {boolean}
-  * @public
-  */
- static m_is__org_gwtproject_dom_client_Node(node) {
+ /** @return {boolean} */
+ static m_is__org_gwtproject_dom_client_Node(/** Object */ node) {
   HRElement_$Overlay.$clinit();
   if ($Overlay.m_is__org_gwtproject_dom_client_Node(node)) {
-   return HRElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object} */ ($Casts.$to(node, $Overlay)));
+   return HRElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object}*/ ($Casts.$to(node, $Overlay)));
   }
   return false;
  }
- /**
-  * @param {Object} elem
-  * @return {boolean}
-  * @public
-  */
- static m_is__org_gwtproject_dom_client_Element(elem) {
+ /** @return {boolean} */
+ static m_is__org_gwtproject_dom_client_Element(/** Object */ elem) {
   HRElement_$Overlay.$clinit();
   return !$Equality.$same(elem, null) && $Overlay.m_hasTagName__$devirt__org_gwtproject_dom_client_Element__java_lang_String(elem, HRElement_$Overlay.f_TAG__org_gwtproject_dom_client_HRElement_$Overlay);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HRElement_$Overlay.$clinit = () =>{};
   HRElement_$Overlay.$loadModules();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Object;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.Element.$Overlay$impl');
@@ -81,7 +57,7 @@ class HRElement_$Overlay {
 }
 $Util.$setClassMetadata(HRElement_$Overlay, 'Object');
 
-/** @public {?string} @const */
+/**@const {?string}*/
 HRElement_$Overlay.f_TAG__org_gwtproject_dom_client_HRElement_$Overlay = "hr";
 
 exports = HRElement_$Overlay; 

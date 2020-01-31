@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"AnimationScheduler$AnimationCallback.impl.java.js",
-"lineCount":31,
-"mappings":"A;;;;;;;;;MAyEmB,iB;;;;;;CAMV,iB,CAAeA,S;;;;;;QANL,M;EAAAC,4B;EAAAA,8B;;;;;QAAA,O;EAAAC,oC;EAAAA;",
+"lineCount":21,
+"mappings":"A;;;;;;;;;MAyEmB,iB;;CAMV,iB,eAAeA,S;;QANL,M;EAAAC,4B;EAAAA,8B;;;QAAA,O;EAAAC,oC;EAAAA;",
 "sources":["AnimationScheduler.java"],
 "names":["timestamp","org.gwtproject.animation.client.AnimationScheduler$AnimationCallback.<synthetic: adapt_lambda>","org.gwtproject.animation.client.AnimationScheduler$AnimationCallback.<clinit>"]
 }

@@ -12,58 +12,34 @@ let NativeVerticalScrollbar__ResourcesImpl = goog.forwardDeclare('org.gwtproject
  * @extends {ClientBundle}
  */
 class Resources {
- /**
-  * @abstract
-  * @return {Style}
-  * @public
-  */
+ /** @abstract @return {Style} */
  m_nativeVerticalScrollbarStyle__() {}
- /**
-  * @param {?function():Style} fn
-  * @return {Resources}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {Resources} */
+ static $adapt(/** ?function():Style */ fn) {
   Resources.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @return {Resources}
-  * @public
-  */
+ /** @return {Resources} */
  static get f_INSTANCE__org_gwtproject_user_client_ui_NativeVerticalScrollbar_Resources() {
   return (Resources.$clinit(), Resources.$f_INSTANCE__org_gwtproject_user_client_ui_NativeVerticalScrollbar_Resources);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Resources.$clinit = () =>{};
   Resources.$loadModules();
   Resources.$f_INSTANCE__org_gwtproject_user_client_ui_NativeVerticalScrollbar_Resources = NativeVerticalScrollbar__ResourcesImpl.$create__();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ClientBundle.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_NativeVerticalScrollbar_Resources = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ClientBundle.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_NativeVerticalScrollbar_Resources = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_NativeVerticalScrollbar_Resources;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.user.client.ui.NativeVerticalScrollbar.Resources.$LambdaAdaptor$impl');
   NativeVerticalScrollbar__ResourcesImpl = goog.module.get('org.gwtproject.user.client.ui.NativeVerticalScrollbar_ResourcesImpl$impl');
@@ -74,7 +50,7 @@ $Util.$setClassMetadataForInterface(Resources, 'org.gwtproject.user.client.ui.Na
 
 Resources.$markImplementor(/** @type {Function} */ (Resources));
 
-/** @private {Resources} */
+/**@private {Resources}*/
 Resources.$f_INSTANCE__org_gwtproject_user_client_ui_NativeVerticalScrollbar_Resources;
 
 exports = Resources; 

@@ -13,111 +13,62 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {TableColBuilder}
   */
 class DomTableColBuilder extends DomElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @param {boolean} group
-  * @return {!DomTableColBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_client_DomBuilderImpl__boolean(delegate, group) {
+ /** @return {!DomTableColBuilder} */
+ static $create__org_gwtproject_dom_builder_client_DomBuilderImpl__boolean(/** DomBuilderImpl */ delegate, /** boolean */ group) {
   DomTableColBuilder.$clinit();
   let $instance = new DomTableColBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_client_DomTableColBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl__boolean(delegate, group);
   return $instance;
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @param {boolean} group
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_client_DomTableColBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl__boolean(delegate, group) {
+ 
+ $ctor__org_gwtproject_dom_builder_client_DomTableColBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl__boolean(/** DomBuilderImpl */ delegate, /** boolean */ group) {
   this.$ctor__org_gwtproject_dom_builder_client_DomElementBuilderBase__org_gwtproject_dom_builder_client_DomBuilderImpl__boolean(delegate, !group);
  }
- /**
-  * @override
-  * @param {?string} align
-  * @return {TableColBuilder}
-  * @public
-  */
- m_align__java_lang_String(align) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).align = align;
+ /** @override @return {TableColBuilder} */
+ m_align__java_lang_String(/** ?string */ align) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).align = align;
   return this;
  }
- /**
-  * @override
-  * @param {?string} ch
-  * @return {TableColBuilder}
-  * @public
-  */
- m_ch__java_lang_String(ch) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).ch = ch;
+ /** @override @return {TableColBuilder} */
+ m_ch__java_lang_String(/** ?string */ ch) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).ch = ch;
   return this;
  }
- /**
-  * @override
-  * @param {?string} chOff
-  * @return {TableColBuilder}
-  * @public
-  */
- m_chOff__java_lang_String(chOff) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).chOff = chOff;
+ /** @override @return {TableColBuilder} */
+ m_chOff__java_lang_String(/** ?string */ chOff) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).chOff = chOff;
   return this;
  }
- /**
-  * @override
-  * @param {number} span
-  * @return {TableColBuilder}
-  * @public
-  */
- m_span__int(span) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).span = span;
+ /** @override @return {TableColBuilder} */
+ m_span__int(/** number */ span) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).span = span;
   return this;
  }
- /**
-  * @override
-  * @param {?string} vAlign
-  * @return {TableColBuilder}
-  * @public
-  */
- m_vAlign__java_lang_String(vAlign) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).VAlign = vAlign;
+ /** @override @return {TableColBuilder} */
+ m_vAlign__java_lang_String(/** ?string */ vAlign) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).VAlign = vAlign;
   return this;
  }
- /**
-  * @override
-  * @param {?string} width
-  * @return {TableColBuilder}
-  * @public
-  */
- m_width__java_lang_String(width) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).width = width;
+ /** @override @return {TableColBuilder} */
+ m_width__java_lang_String(/** ?string */ width) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).width = width;
   return this;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomTableColBuilder.$clinit = () =>{};
   DomTableColBuilder.$loadModules();
   DomElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomTableColBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('org.gwtproject.dom.client.TableColElement.$Overlay$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

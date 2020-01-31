@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"History$NoopHistoryTokenEncoder.impl.java.js",
-"lineCount":53,
-"mappings":"A;;;;;MA2FuB,uB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,kC;EAAAA,8C;EAAAA,wF;EAAAA,iB;;;;;CAAA,2E;EAAAC,+E;;;;;;;;CAEZ,iE,CAAcC,Q;EACnBC,gB;;;;;;;;CAIK,iE,CAAcC,Q;EACnBC,gB;;;;;QARiB,O;EAAAC,0C;EAAAA,uC;EAAAA;",
+"lineCount":34,
+"mappings":"A;;;;;MA2FuB,uB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,kC;EAAAA,8C;EAAAA,wF;EAAAA,iB;;;CAAA,2E;EAAAC,+E;;;CAEZ,iE,gBAAcC,Q;EACnBC,gB;;;CAIK,iE,gBAAcC,Q;EACnBC,gB;;;QARiB,O;EAAAC,0C;EAAAA,uC;EAAAA;",
 "sources":["History.java"],
 "names":["org.gwtproject.user.history.client.History$NoopHistoryTokenEncoder.<synthetic: ctor_js>","org.gwtproject.user.history.client.History$NoopHistoryTokenEncoder.<synthetic: ctor_create>","org.gwtproject.user.history.client.History$NoopHistoryTokenEncoder.<init>","toEncode","org.gwtproject.user.history.client.History$NoopHistoryTokenEncoder.encode","toDecode","org.gwtproject.user.history.client.History$NoopHistoryTokenEncoder.decode","org.gwtproject.user.history.client.History$NoopHistoryTokenEncoder.<clinit>"]
 }

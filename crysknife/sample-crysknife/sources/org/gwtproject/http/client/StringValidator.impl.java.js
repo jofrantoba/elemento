@@ -11,27 +11,17 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
 let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 
 class StringValidator extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} string_1
-  * @return {boolean}
-  * @public
-  */
- static m_isEmptyOrNullString__java_lang_String(string_1) {
+ /** @return {boolean} */
+ static m_isEmptyOrNullString__java_lang_String(/** ?string */ string_1) {
   StringValidator.$clinit();
   return $Equality.$same(string_1, null) || (0 == j_l_String.m_length__java_lang_String(j_l_String.m_trim__java_lang_String(string_1)));
  }
- /**
-  * @param {?string} name
-  * @param {?string} value
-  * @public
-  */
- static m_throwIfEmptyOrNull__java_lang_String__java_lang_String(name, value) {
+ 
+ static m_throwIfEmptyOrNull__java_lang_String__java_lang_String(/** ?string */ name, /** ?string */ value) {
   StringValidator.$clinit();
   $Asserts.$assert((!$Equality.$same(name, null)));
   $Asserts.$assert((j_l_String.m_length__java_lang_String(j_l_String.m_trim__java_lang_String(name)) != 0));
@@ -40,51 +30,34 @@ class StringValidator extends j_l_Object {
    throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String(j_l_String.m_valueOf__java_lang_Object(name) + " cannot be empty"));
   }
  }
- /**
-  * @param {?string} name
-  * @param {*} value
-  * @public
-  */
- static m_throwIfNull__java_lang_String__java_lang_Object(name, value) {
+ 
+ static m_throwIfNull__java_lang_String__java_lang_Object(/** ?string */ name, /** * */ value) {
   StringValidator.$clinit();
   if ($Equality.$same(null, value)) {
    throw $Exceptions.toJs(NullPointerException.$create__java_lang_String(j_l_String.m_valueOf__java_lang_Object(name) + " cannot be null"));
   }
  }
- /**
-  * @return {!StringValidator}
-  * @public
-  */
+ /** @return {!StringValidator} */
  static $create__() {
   let $instance = new StringValidator();
   $instance.$ctor__org_gwtproject_http_client_StringValidator__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_http_client_StringValidator__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   StringValidator.$clinit = () =>{};
   StringValidator.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof StringValidator;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
   NullPointerException = goog.module.get('java.lang.NullPointerException$impl');

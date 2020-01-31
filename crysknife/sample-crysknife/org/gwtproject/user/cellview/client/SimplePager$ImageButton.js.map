@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SimplePager$ImageButton.impl.java.js",
-"lineCount":98,
-"mappings":"A;;;;;;;;;;;MA2KuB,W;;;;CAAA,W;EAAAA,Q;EAAAA;OACH,wEADGA,S;EAAAA;OAES,2EAFTA,C;EAAAA;OAGS,0EAHTA,C;EAAAA;OAIE,6EAJFA,C;;;;;;;;;;QAMZ,yI,CAA0BC,U,EAA0BC,U,EACjCC,a,EAAsBC,K;EADzCC,sB;EAAAA,kC;EAAAA,6P;EAAAA,iB;;;;;;;;;CAAA,oM,CAA0BJ,U,EAA0BC,U,EACjCC,a,EAAsBC,K;EAC9CE,2G;EACAA,6F;EACAA,8F;EACAA,mG;EACAA,0F;EACAA,oI;;;;;;CAGa,c;EACbC,qF;;;;;;;CAIU,kD,CAAqBC,K;EAE/BC;GACEA,OADFA;G;EAIAA,gE;;;;;;CAGU,sB,CAAoBC,U;EAC9BC;GACEA,OADFA;G;EAIAA,2F;EACAA;GACEA,oJADFA;GAEEA,4QAFFA;;GAIEA,mJAJFA;GAKEA,+QALFA;G;EAOAA,mM;;;;;QA3CiB,O;EAAAC,8B;EAAAA,2B;EAAAA;",
+"lineCount":71,
+"mappings":"A;;;;;;;;;;;MA2KuB,W;;CAAA,W;EAAAA,Q;EAAAA;OACH,wEADGA,S;EAAAA;OAES,2EAFTA,C;EAAAA;OAGS,0EAHTA,C;EAAAA;OAIE,6EAJFA,C;;;QAMZ,yI,sBAA0BC,U,uBAA0BC,U,iBACjCC,a,iBAAsBC,K;EADzCC,sB;EAAAA,kC;EAAAA,6P;EAAAA,iB;;;CAAA,oM,sBAA0BJ,U,uBAA0BC,U,iBACjCC,a,iBAAsBC,K;EAC9CE,2G;EACAA,6F;EACAA,8F;EACAA,mG;EACAA,0F;EACAA,oI;;;CAGa,c;EACbC,qF;;;CAIU,kD,cAAqBC,K;EAE/BC;GACEA,OADFA;G;EAIAA,gE;;;CAGU,sB,gBAAoBC,U;EAC9BC;GACEA,OADFA;G;EAIAA,2F;EACAA;GACEA,oJADFA;GAEEA,4QAFFA;;GAIEA,mJAJFA;GAKEA,+QALFA;G;EAOAA,mM;;;QA3CiB,O;EAAAC,8B;EAAAA,2B;EAAAA;",
 "sources":["SimplePager.java"],
 "names":["org.gwtproject.user.cellview.client.SimplePager$ImageButton.<synthetic: ctor_js>","resEnabled","resDiabled","disabledStyle","label","org.gwtproject.user.cellview.client.SimplePager$ImageButton.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.SimplePager$ImageButton.<init>","org.gwtproject.user.cellview.client.SimplePager$ImageButton.isDisabled","event","org.gwtproject.user.cellview.client.SimplePager$ImageButton.onBrowserEvent","isDisabled","org.gwtproject.user.cellview.client.SimplePager$ImageButton.setDisabled","org.gwtproject.user.cellview.client.SimplePager$ImageButton.<clinit>"]
 }

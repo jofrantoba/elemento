@@ -8,49 +8,26 @@ const ElementBuilderBase = goog.require('org.gwtproject.dom.builder.shared.Eleme
  * @extends {ElementBuilderBase<CanvasBuilder>}
  */
 class CanvasBuilder {
- /**
-  * @abstract
-  * @param {number} height
-  * @return {CanvasBuilder}
-  * @public
-  */
- m_height__int(height) {}
- /**
-  * @abstract
-  * @param {number} width
-  * @return {CanvasBuilder}
-  * @public
-  */
- m_width__int(width) {}
- /**
-  * @public
-  */
+ /** @abstract @return {CanvasBuilder} */
+ m_height__int(/** number */ height) {}
+ /** @abstract @return {CanvasBuilder} */
+ m_width__int(/** number */ width) {}
+ 
  static $clinit() {
   CanvasBuilder.$clinit = () =>{};
   CanvasBuilder.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ElementBuilderBase.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_dom_builder_shared_CanvasBuilder = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ElementBuilderBase.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_dom_builder_shared_CanvasBuilder = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_dom_builder_shared_CanvasBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

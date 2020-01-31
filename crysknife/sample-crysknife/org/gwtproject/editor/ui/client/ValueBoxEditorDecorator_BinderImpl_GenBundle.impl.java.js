@@ -11,50 +11,29 @@ let ValueBoxEditorDecorator__BinderImpl__GenCss__style = goog.forwardDeclare('or
  * @extends {ClientBundle}
  */
 class ValueBoxEditorDecorator__BinderImpl__GenBundle {
- /**
-  * @abstract
-  * @return {ValueBoxEditorDecorator__BinderImpl__GenCss__style}
-  * @public
-  */
+ /** @abstract @return {ValueBoxEditorDecorator__BinderImpl__GenCss__style} */
  m_style__() {}
- /**
-  * @param {?function():ValueBoxEditorDecorator__BinderImpl__GenCss__style} fn
-  * @return {ValueBoxEditorDecorator__BinderImpl__GenBundle}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {ValueBoxEditorDecorator__BinderImpl__GenBundle} */
+ static $adapt(/** ?function():ValueBoxEditorDecorator__BinderImpl__GenCss__style */ fn) {
   ValueBoxEditorDecorator__BinderImpl__GenBundle.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ValueBoxEditorDecorator__BinderImpl__GenBundle.$clinit = () =>{};
   ValueBoxEditorDecorator__BinderImpl__GenBundle.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ClientBundle.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundle = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ClientBundle.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundle = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_GenBundle;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundle.$LambdaAdaptor$impl');
  }

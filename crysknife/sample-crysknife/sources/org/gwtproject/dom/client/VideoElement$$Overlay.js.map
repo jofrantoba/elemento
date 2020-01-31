@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"VideoElement$$Overlay.impl.java.js",
-"lineCount":36,
-"mappings":"A;;;;MAmCa,Q;;;;QAAA,O;EAAAA,2B;EAAAA,wB;;;;;;;;;;;;;;;;;;AAEX;SAI2B,sDAJ3B,W;AAMA;SAI2B,2DAJ3B,e;AAMA;SAI2B,2DAJ3B,e;AAMA;SAI2B,4DAJ3B;",
+"lineCount":28,
+"mappings":"A;;;;MAmCa,Q;;QAAA,O;EAAAA,2B;EAAAA,wB;;;;;;;;;;;;AAEX;SAI2B,sDAJ3B,W;AAMA;SAI2B,2DAJ3B,e;AAMA;SAI2B,2DAJ3B,e;AAMA;SAI2B,4DAJ3B;",
 "sources":["VideoElement.java"],
 "names":["org.gwtproject.dom.client.VideoElement$$Overlay.<clinit>"]
 }

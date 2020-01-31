@@ -11,44 +11,27 @@ let $LambdaAdaptor = goog.forwardDeclare('javax.enterprise.event.Observes.$Lambd
  * @extends {Annotation}
  */
 class Observes {
- /**
-  * @param {?function():Class<?>} fn
-  * @return {Observes}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {Observes} */
+ static $adapt(/** ?function():Class<?> */ fn) {
   Observes.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Observes.$clinit = () =>{};
   Observes.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__javax_enterprise_event_Observes = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__javax_enterprise_event_Observes = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__javax_enterprise_event_Observes;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('javax.enterprise.event.Observes.$LambdaAdaptor$impl');
  }

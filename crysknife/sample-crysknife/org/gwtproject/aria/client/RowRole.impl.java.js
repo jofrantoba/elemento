@@ -13,76 +13,35 @@ let $Overlay = goog.forwardDeclare('org.gwtproject.dom.client.Element.$Overlay$i
  * @extends {WidgetRole}
  */
 class RowRole {
- /**
-  * @abstract
-  * @param {Object} element
-  * @return {?string}
-  * @public
-  */
- m_getAriaLevelProperty__org_gwtproject_dom_client_Element(element) {}
- /**
-  * @abstract
-  * @param {Object} element
-  * @return {?string}
-  * @public
-  */
- m_getAriaSelectedState__org_gwtproject_dom_client_Element(element) {}
- /**
-  * @abstract
-  * @param {Object} element
-  * @public
-  */
- m_removeAriaLevelProperty__org_gwtproject_dom_client_Element(element) {}
- /**
-  * @abstract
-  * @param {Object} element
-  * @public
-  */
- m_removeAriaSelectedState__org_gwtproject_dom_client_Element(element) {}
- /**
-  * @abstract
-  * @param {Object} element
-  * @param {number} value
-  * @public
-  */
- m_setAriaLevelProperty__org_gwtproject_dom_client_Element__int(element, value) {}
- /**
-  * @abstract
-  * @param {Object} element
-  * @param {SelectedValue} value
-  * @public
-  */
- m_setAriaSelectedState__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_SelectedValue(element, value) {}
- /**
-  * @public
-  */
+ /** @abstract @return {?string} */
+ m_getAriaLevelProperty__org_gwtproject_dom_client_Element(/** Object */ element) {}
+ /** @abstract @return {?string} */
+ m_getAriaSelectedState__org_gwtproject_dom_client_Element(/** Object */ element) {}
+ /** @abstract */
+ m_removeAriaLevelProperty__org_gwtproject_dom_client_Element(/** Object */ element) {}
+ /** @abstract */
+ m_removeAriaSelectedState__org_gwtproject_dom_client_Element(/** Object */ element) {}
+ /** @abstract */
+ m_setAriaLevelProperty__org_gwtproject_dom_client_Element__int(/** Object */ element, /** number */ value) {}
+ /** @abstract */
+ m_setAriaSelectedState__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_SelectedValue(/** Object */ element, /** SelectedValue */ value) {}
+ 
  static $clinit() {
   RowRole.$clinit = () =>{};
   RowRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  GroupRole.$markImplementor(classConstructor);
-  WidgetRole.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_RowRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  GroupRole.$markImplementor(ctor);
+  WidgetRole.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_RowRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_RowRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

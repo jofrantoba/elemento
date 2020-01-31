@@ -17,74 +17,48 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {Binder}
   */
 class ValueBoxEditorDecorator__BinderImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Template} */
+  /**@type {Template}*/
   this.f_template__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl;
  }
- /**
-  * @return {!ValueBoxEditorDecorator__BinderImpl}
-  * @public
-  */
+ /** @return {!ValueBoxEditorDecorator__BinderImpl} */
  static $create__() {
   ValueBoxEditorDecorator__BinderImpl.$clinit();
   let $instance = new ValueBoxEditorDecorator__BinderImpl();
   $instance.$ctor__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl__() {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl();
  }
- /**
-  * @param {ValueBoxEditorDecorator} owner
-  * @return {Widget}
-  * @public
-  */
- m_createAndBindUi__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator(owner) {
+ /** @return {Widget} */
+ m_createAndBindUi__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator(/** ValueBoxEditorDecorator */ owner) {
   return Widgets.$create__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator(this, owner).m_get_f_HTMLPanel1___$p_org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl_Widgets();
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @return {Widget}
-  * @public
-  */
- m_createAndBindUi__java_lang_Object(arg0) {
-  return this.m_createAndBindUi__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator(/**@type {ValueBoxEditorDecorator<*>} */ ($Casts.$to(arg0, ValueBoxEditorDecorator)));
+ //Bridge method.
+ /** @override @return {Widget} */
+ m_createAndBindUi__java_lang_Object(/** * */ arg0) {
+  return this.m_createAndBindUi__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator(/**@type {ValueBoxEditorDecorator<*>}*/ ($Casts.$to(arg0, ValueBoxEditorDecorator)));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl() {
   this.f_template__org_gwtproject_editor_ui_client_ValueBoxEditorDecorator_BinderImpl = ValueBoxEditorDecorator__BinderImpl__TemplateImpl.$create__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ValueBoxEditorDecorator__BinderImpl.$clinit = () =>{};
   ValueBoxEditorDecorator__BinderImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ValueBoxEditorDecorator__BinderImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   ValueBoxEditorDecorator = goog.module.get('org.gwtproject.editor.ui.client.ValueBoxEditorDecorator$impl');
   Widgets = goog.module.get('org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl.Widgets$impl');

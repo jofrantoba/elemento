@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ButtonRoleImpl.impl.java.js",
-"lineCount":99,
-"mappings":"A;;;;;;;;;;;;;;;MAsBM,c;;;;CAAA,W;EAAAA,Q;;;;;;;QAEJ,yB,CAAsBC,Q;EAAtBC,yB;EAAAA,qC;EAAAA,uF;EAAAA,iB;;;;;;CAAA,kE,CAAsBD,Q;EACpBE,4E;;;;;;;;CAIY,yD,CAA6BC,O;EACzCC,4G;;;;;;;;CAIY,wD,CAA4BD,O;EACxCE,2G;;;;;;;CAIU,4D,CAAgCF,O;EAC1CG,wG;;;;;;;CAIU,2D,CAA+BH,O;EACzCI,uG;;;;;;;;CAIU,mG,CAA6BJ,O,EAAuBK,K;EAC9DC,4M;;;;;;;;CAIU,iG,CAA4BN,O,EAAsBK,K;EAC5DE,yM;;;;;QAjCE,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":60,
+"mappings":"A;;;;;;;;;;;;;;;MAsBM,c;;CAAA,W;EAAAA,Q;;;QAEJ,yB,gBAAsBC,Q;EAAtBC,yB;EAAAA,qC;EAAAA,uF;EAAAA,iB;;;CAAA,kE,gBAAsBD,Q;EACpBE,4E;;;CAIY,yD,eAA6BC,O;EACzCC,4G;;;CAIY,wD,eAA4BD,O;EACxCE,2G;;;CAIU,4D,eAAgCF,O;EAC1CG,wG;;;CAIU,2D,eAA+BH,O;EACzCI,uG;;;CAIU,mG,eAA6BJ,O,uBAAuBK,K;EAC9DC,2M;;;CAIU,iG,eAA4BN,O,sBAAsBK,K;EAC5DE,wM;;;QAjCE,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["ButtonRoleImpl.java"],
 "names":["org.gwtproject.aria.client.ButtonRoleImpl.<synthetic: ctor_js>","roleName","org.gwtproject.aria.client.ButtonRoleImpl.<synthetic: ctor_create>","org.gwtproject.aria.client.ButtonRoleImpl.<init>","element","org.gwtproject.aria.client.ButtonRoleImpl.getAriaExpandedState","org.gwtproject.aria.client.ButtonRoleImpl.getAriaPressedState","org.gwtproject.aria.client.ButtonRoleImpl.removeAriaExpandedState","org.gwtproject.aria.client.ButtonRoleImpl.removeAriaPressedState","value","org.gwtproject.aria.client.ButtonRoleImpl.setAriaExpandedState","org.gwtproject.aria.client.ButtonRoleImpl.setAriaPressedState","org.gwtproject.aria.client.ButtonRoleImpl.<clinit>"]
 }

@@ -11,79 +11,31 @@ let BeanDescriptor = goog.forwardDeclare('javax.validation.metadata.BeanDescript
  * @interface
  */
 class Validator {
- /**
-  * @abstract
-  * @template T
-  * @param {T} object
-  * @param {Array<Class<?>>} groups
-  * @return {Set<ConstraintViolation<T>>}
-  * @public
-  */
- m_validate__java_lang_Object__arrayOf_java_lang_Class(object, groups) {}
- /**
-  * @abstract
-  * @template T
-  * @param {T} object
-  * @param {?string} propertyName
-  * @param {Array<Class<?>>} groups
-  * @return {Set<ConstraintViolation<T>>}
-  * @public
-  */
- m_validateProperty__java_lang_Object__java_lang_String__arrayOf_java_lang_Class(object, propertyName, groups) {}
- /**
-  * @abstract
-  * @template T
-  * @param {Class<T>} beanType
-  * @param {?string} propertyName
-  * @param {*} value
-  * @param {Array<Class<?>>} groups
-  * @return {Set<ConstraintViolation<T>>}
-  * @public
-  */
- m_validateValue__java_lang_Class__java_lang_String__java_lang_Object__arrayOf_java_lang_Class(beanType, propertyName, value, groups) {}
- /**
-  * @abstract
-  * @param {Class<?>} clazz
-  * @return {BeanDescriptor}
-  * @public
-  */
- m_getConstraintsForClass__java_lang_Class(clazz) {}
- /**
-  * @abstract
-  * @template T
-  * @param {Class<T>} type
-  * @return {T}
-  * @public
-  */
- m_unwrap__java_lang_Class(type) {}
- /**
-  * @public
-  */
+ /** @abstract @template T @return {Set<ConstraintViolation<T>>} */
+ m_validate__java_lang_Object__arrayOf_java_lang_Class(/** T */ object, /** Array<Class<?>> */ groups) {}
+ /** @abstract @template T @return {Set<ConstraintViolation<T>>} */
+ m_validateProperty__java_lang_Object__java_lang_String__arrayOf_java_lang_Class(/** T */ object, /** ?string */ propertyName, /** Array<Class<?>> */ groups) {}
+ /** @abstract @template T @return {Set<ConstraintViolation<T>>} */
+ m_validateValue__java_lang_Class__java_lang_String__java_lang_Object__arrayOf_java_lang_Class(/** Class<T> */ beanType, /** ?string */ propertyName, /** * */ value, /** Array<Class<?>> */ groups) {}
+ /** @abstract @return {BeanDescriptor} */
+ m_getConstraintsForClass__java_lang_Class(/** Class<?> */ clazz) {}
+ /** @abstract @template T @return {T} */
+ m_unwrap__java_lang_Class(/** Class<T> */ type) {}
+ 
  static $clinit() {
   Validator.$clinit = () =>{};
   Validator.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__javax_validation_Validator = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__javax_validation_Validator = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__javax_validation_Validator;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

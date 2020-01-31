@@ -10,54 +10,37 @@ let SubmitCompleteEvent = goog.forwardDeclare('org.gwtproject.user.client.ui.For
  * @implements {SubmitCompleteHandler}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(SubmitCompleteEvent):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(SubmitCompleteEvent):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(SubmitCompleteEvent):void} */
+  /**@type {?function(SubmitCompleteEvent):void}*/
   this.f_$$fn__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteHandler_$LambdaAdaptor;
   this.$ctor__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteHandler_$LambdaAdaptor__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteHandler_$JsFunction(fn);
  }
- /**
-  * @param {?function(SubmitCompleteEvent):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteHandler_$LambdaAdaptor__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteHandler_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteHandler_$LambdaAdaptor__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteHandler_$JsFunction(/** ?function(SubmitCompleteEvent):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteHandler_$LambdaAdaptor = fn;
  }
- /**
-  * @param {SubmitCompleteEvent} arg0
-  * @public
-  */
- m_onSubmitComplete__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteEvent(arg0) {
+ 
+ m_onSubmitComplete__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteEvent(/** SubmitCompleteEvent */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteHandler_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

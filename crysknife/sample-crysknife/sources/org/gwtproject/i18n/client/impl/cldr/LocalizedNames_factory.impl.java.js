@@ -284,32 +284,22 @@ let LocalizedNamesImpl__zh__Hant__TW = goog.forwardDeclare('org.gwtproject.i18n.
 let LocalizedNamesImpl__zu = goog.forwardDeclare('org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_zu$impl');
 
 class LocalizedNames__factory extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!LocalizedNames__factory}
-  * @public
-  */
+ /** @return {!LocalizedNames__factory} */
  static $create__() {
   LocalizedNames__factory.$clinit();
   let $instance = new LocalizedNames__factory();
   $instance.$ctor__org_gwtproject_i18n_client_impl_cldr_LocalizedNames_factory__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_i18n_client_impl_cldr_LocalizedNames_factory__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {LocalizedNames}
-  * @public
-  */
+ /** @return {LocalizedNames} */
  static m_create__() {
   LocalizedNames__factory.$clinit();
   if ($Equality.$same("", $Util.$getDefine("locale"))) {
@@ -1142,25 +1132,17 @@ class LocalizedNames__factory extends j_l_Object {
   }
   return DefaultLocalizedNames.$create__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   LocalizedNames__factory.$clinit = () =>{};
   LocalizedNames__factory.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof LocalizedNames__factory;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   DefaultLocalizedNames = goog.module.get('org.gwtproject.i18n.client.DefaultLocalizedNames$impl');

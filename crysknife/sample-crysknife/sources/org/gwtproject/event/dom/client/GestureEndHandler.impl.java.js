@@ -11,50 +11,29 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.event.dom.client.Gestur
  * @extends {EventHandler}
  */
 class GestureEndHandler {
- /**
-  * @abstract
-  * @param {GestureEndEvent} event
-  * @public
-  */
- m_onGestureEnd__org_gwtproject_event_dom_client_GestureEndEvent(event) {}
- /**
-  * @param {?function(GestureEndEvent):void} fn
-  * @return {GestureEndHandler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onGestureEnd__org_gwtproject_event_dom_client_GestureEndEvent(/** GestureEndEvent */ event) {}
+ /** @return {GestureEndHandler} */
+ static $adapt(/** ?function(GestureEndEvent):void */ fn) {
   GestureEndHandler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   GestureEndHandler.$clinit = () =>{};
   GestureEndHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  EventHandler.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_GestureEndHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  EventHandler.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_GestureEndHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_GestureEndHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.event.dom.client.GestureEndHandler.$LambdaAdaptor$impl');
  }

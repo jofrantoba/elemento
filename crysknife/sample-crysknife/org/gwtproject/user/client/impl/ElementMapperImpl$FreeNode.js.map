@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ElementMapperImpl$FreeNode.impl.java.js",
-"lineCount":45,
-"mappings":"A;;;;;MAgCuB,Q;;;;CAAA,W;EAAAA,Q;EAAAA;OACf,mEADeA,K;EAAAA;OAEQ,kEAFRA,C;;;;;;;;QAIZ,wE,CAAaC,K,EAAkCC,I;EAA/CC,mB;EAAAA,+B;EAAAA,0J;EAAAA,iB;;;;;;;CAAA,kI,CAAaF,K,EAAkCC,I;EAA/CE,iC;EACLA,iF;EACAA,+E;;;;;QANiB,O;EAAAC,2B;EAAAA,wB;EAAAA;",
+"lineCount":32,
+"mappings":"A;;;;;MAgCuB,Q;;CAAA,W;EAAAA,Q;EAAAA;OACf,mEADeA,K;EAAAA;OAEQ,kEAFRA,C;;;QAIZ,wE,eAAaC,K,kBAAkCC,I;EAA/CC,mB;EAAAA,+B;EAAAA,0J;EAAAA,iB;;;CAAA,kI,eAAaF,K,kBAAkCC,I;EAA/CE,iC;EACLA,iF;EACAA,+E;;;QANiB,O;EAAAC,2B;EAAAA,wB;EAAAA;",
 "sources":["ElementMapperImpl.java"],
 "names":["org.gwtproject.user.client.impl.ElementMapperImpl$FreeNode.<synthetic: ctor_js>","index","next","org.gwtproject.user.client.impl.ElementMapperImpl$FreeNode.<synthetic: ctor_create>","org.gwtproject.user.client.impl.ElementMapperImpl$FreeNode.<init>","org.gwtproject.user.client.impl.ElementMapperImpl$FreeNode.<clinit>"]
 }

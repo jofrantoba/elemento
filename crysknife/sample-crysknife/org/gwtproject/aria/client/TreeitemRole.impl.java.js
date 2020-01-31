@@ -10,36 +10,23 @@ const OptionRole = goog.require('org.gwtproject.aria.client.OptionRole$impl');
  * @extends {OptionRole}
  */
 class TreeitemRole {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TreeitemRole.$clinit = () =>{};
   TreeitemRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ListitemRole.$markImplementor(classConstructor);
-  OptionRole.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_TreeitemRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ListitemRole.$markImplementor(ctor);
+  OptionRole.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_TreeitemRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_TreeitemRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -16,72 +16,46 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {AbstractCell<ImageResource>}
   */
 class ImageResourceCell extends AbstractCell {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!ImageResourceCell}
-  * @public
-  */
+ /** @return {!ImageResourceCell} */
  static $create__() {
   ImageResourceCell.$clinit();
   let $instance = new ImageResourceCell();
   $instance.$ctor__org_gwtproject_cell_client_ImageResourceCell__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_cell_client_ImageResourceCell__() {
-  this.$ctor__org_gwtproject_cell_client_AbstractCell__arrayOf_java_lang_String(/**@type {!Array<?string>} */ ($Arrays.$init([], j_l_String)));
+  this.$ctor__org_gwtproject_cell_client_AbstractCell__arrayOf_java_lang_String(/**@type {!Array<?string>}*/ ($Arrays.$init([], j_l_String)));
   if ($Equality.$same(ImageResourceCell.f_renderer__org_gwtproject_cell_client_ImageResourceCell_, null)) {
    ImageResourceCell.f_renderer__org_gwtproject_cell_client_ImageResourceCell_ = ImageResourceRenderer.$create__();
   }
  }
- /**
-  * @param {Context} context
-  * @param {ImageResource} value
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__org_gwtproject_resources_client_ImageResource__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, value, sb) {
+ 
+ m_render__org_gwtproject_cell_client_Cell_Context__org_gwtproject_resources_client_ImageResource__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ context, /** ImageResource */ value, /** SafeHtmlBuilder */ sb) {
   if (!$Equality.$same(value, null)) {
    sb.m_append__org_gwtproject_safehtml_shared_SafeHtml(ImageResourceCell.f_renderer__org_gwtproject_cell_client_ImageResourceCell_.m_render__org_gwtproject_resources_client_ImageResource(value));
   }
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Context} arg0
-  * @param {*} arg1
-  * @param {SafeHtmlBuilder} arg2
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, arg1, arg2) {
-  this.m_render__org_gwtproject_cell_client_Cell_Context__org_gwtproject_resources_client_ImageResource__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, /**@type {ImageResource} */ ($Casts.$to(arg1, ImageResource)), arg2);
+ //Bridge method.
+ /** @override */
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ arg0, /** * */ arg1, /** SafeHtmlBuilder */ arg2) {
+  this.m_render__org_gwtproject_cell_client_Cell_Context__org_gwtproject_resources_client_ImageResource__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, /**@type {ImageResource}*/ ($Casts.$to(arg1, ImageResource)), arg2);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ImageResourceCell.$clinit = () =>{};
   ImageResourceCell.$loadModules();
   AbstractCell.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ImageResourceCell;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -94,7 +68,7 @@ class ImageResourceCell extends AbstractCell {
 }
 $Util.$setClassMetadata(ImageResourceCell, 'org.gwtproject.cell.client.ImageResourceCell');
 
-/** @public {ImageResourceRenderer} */
+/**@type {ImageResourceRenderer}*/
 ImageResourceCell.f_renderer__org_gwtproject_cell_client_ImageResourceCell_;
 
 exports = ImageResourceCell; 

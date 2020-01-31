@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CustomScrollPanel_ResourcesImpl$1.impl.java.js",
-"lineCount":94,
-"mappings":"A;;;;;;;;;;;;MAO2D,E;;;;CAAA,W;EAAAA,Q;EAAAA;sF;EAAAA;OAIrC,4EAJqCA,S;;;;;;;QAAA,sE;EAAAC,a;EAAAA,yB;EAAAA,6J;EAAAA,iB;;;;;;CAAA,qI;EAAAC,kG;EAAAA,iC;;;;;;;CACvC,W;EACZC,gC;;;;;;;CAGa,kB;EACbC;GACEA,yFADFA;GAEEA,6DAFFA;GAGEA,YAHFA;G;EAKAA,a;;;;;;;CAEY,W;EACZC,0C;;;;;;;CAEY,qB;EACZC,qB;;;;;;;CAEY,2B;EACZC,qB;;;;;QApBmD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":63,
+"mappings":"A;;;;;;;;;;;;MAO2D,E;;CAAA,W;EAAAA,Q;EAAAA;sF;EAAAA;OAIrC,4EAJqCA,S;;;QAAA,sE;EAAAC,a;EAAAA,yB;EAAAA,6J;EAAAA,iB;;;CAAA,qI;EAAAC,kG;EAAAA,iC;;;CACvC,W;EACZC,gC;;;CAGa,kB;EACbC;GACEA,yFADFA;GAEEA,6DAFFA;GAGEA,YAHFA;G;EAKAA,a;;;CAEY,W;EACZC,0C;;;CAEY,qB;EACZC,qB;;;CAEY,2B;EACZC,qB;;;QApBmD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["CustomScrollPanel_ResourcesImpl.java"],
 "names":["org.gwtproject.user.client.ui.CustomScrollPanel_ResourcesImpl$1.<synthetic: ctor_js>","org.gwtproject.user.client.ui.CustomScrollPanel_ResourcesImpl$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.CustomScrollPanel_ResourcesImpl$1.<init>","org.gwtproject.user.client.ui.CustomScrollPanel_ResourcesImpl$1.getName","org.gwtproject.user.client.ui.CustomScrollPanel_ResourcesImpl$1.ensureInjected","org.gwtproject.user.client.ui.CustomScrollPanel_ResourcesImpl$1.getText","org.gwtproject.user.client.ui.CustomScrollPanel_ResourcesImpl$1.customScrollPanel","org.gwtproject.user.client.ui.CustomScrollPanel_ResourcesImpl$1.customScrollPanelCorner","org.gwtproject.user.client.ui.CustomScrollPanel_ResourcesImpl$1.<clinit>"]
 }

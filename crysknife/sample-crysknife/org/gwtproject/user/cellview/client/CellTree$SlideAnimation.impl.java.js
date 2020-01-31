@@ -8,49 +8,33 @@ let Position = goog.forwardDeclare('org.gwtproject.dom.style.shared.Position$imp
 let Unit = goog.forwardDeclare('org.gwtproject.dom.style.shared.Unit$impl');
 
 class SlideAnimation extends RevealAnimation {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {SlideAnimation}
-  * @public
-  */
+ /** @return {SlideAnimation} */
  static m_create__() {
   SlideAnimation.$clinit();
   return SlideAnimation.$create__();
  }
- /**
-  * @return {!SlideAnimation}
-  * @public
-  */
+ /** @return {!SlideAnimation} */
  static $create__() {
   let $instance = new SlideAnimation();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellTree_SlideAnimation__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_cellview_client_CellTree_SlideAnimation__() {
   this.$ctor__org_gwtproject_user_cellview_client_CellTree_RevealAnimation__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onComplete__() {
   $Overlay.m_clearPosition__$devirt__org_gwtproject_dom_client_Style(this.f_contentContainer__org_gwtproject_user_cellview_client_CellTree_RevealAnimation.style);
   $Overlay.m_clearTop__$devirt__org_gwtproject_dom_client_Style(this.f_contentContainer__org_gwtproject_user_cellview_client_CellTree_RevealAnimation.style);
   $Overlay.m_clearWidth__$devirt__org_gwtproject_dom_client_Style(this.f_contentContainer__org_gwtproject_user_cellview_client_CellTree_RevealAnimation.style);
   super.m_onComplete__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onStart__() {
   super.m_onStart__();
   if (this.f_opening__org_gwtproject_user_cellview_client_CellTree_RevealAnimation) {
@@ -60,12 +44,8 @@ class SlideAnimation extends RevealAnimation {
   }
   $Overlay.m_setPosition__$devirt__org_gwtproject_dom_client_Style__org_gwtproject_dom_style_shared_Position(this.f_contentContainer__org_gwtproject_user_cellview_client_CellTree_RevealAnimation.style, Position.f_RELATIVE__org_gwtproject_dom_style_shared_Position);
  }
- /**
-  * @override
-  * @param {number} progress
-  * @public
-  */
- m_onUpdate__double(progress) {
+ /** @override */
+ m_onUpdate__double(/** number */ progress) {
   super.m_onUpdate__double(progress);
   if (this.f_opening__org_gwtproject_user_cellview_client_CellTree_RevealAnimation) {
    let curTop = (1.0 - progress) * -this.f_height__org_gwtproject_user_cellview_client_CellTree_RevealAnimation;
@@ -75,25 +55,17 @@ class SlideAnimation extends RevealAnimation {
    $Overlay.m_setTop__$devirt__org_gwtproject_dom_client_Style__double__org_gwtproject_dom_style_shared_Unit(this.f_contentContainer__org_gwtproject_user_cellview_client_CellTree_RevealAnimation.style, curTop_1, Unit.f_PX__org_gwtproject_dom_style_shared_Unit);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SlideAnimation.$clinit = () =>{};
   SlideAnimation.$loadModules();
   RevealAnimation.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SlideAnimation;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('org.gwtproject.dom.client.Style.$Overlay$impl');
   Position = goog.module.get('org.gwtproject.dom.style.shared.Position$impl');

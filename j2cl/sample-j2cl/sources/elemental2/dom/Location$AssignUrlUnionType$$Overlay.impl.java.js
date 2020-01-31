@@ -8,61 +8,37 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class AssignUrlUnionType_$Overlay {
- /**
-  * @param {*} o
-  * @return {?}
-  * @public
-  */
- static m_of__java_lang_Object(o) {
+ /** @return {?} */
+ static m_of__java_lang_Object(/** * */ o) {
   AssignUrlUnionType_$Overlay.$clinit();
-  return /**@type {?} */ (Js.m_cast__java_lang_Object(o));
+  return /**@type {?}*/ (Js.m_cast__java_lang_Object(o));
  }
- /**
-  * @param {?} $thisArg
-  * @return {?string}
-  * @public
-  */
- static m_asString__$devirt__elemental2_dom_Location_AssignUrlUnionType($thisArg) {
+ /** @return {?string} */
+ static m_asString__$devirt__elemental2_dom_Location_AssignUrlUnionType(/** ? */ $thisArg) {
   AssignUrlUnionType_$Overlay.$clinit();
   return Js.m_asString__java_lang_Object($thisArg);
  }
- /**
-  * @param {?} $thisArg
-  * @return {TrustedURL}
-  * @public
-  */
- static m_asTrustedURL__$devirt__elemental2_dom_Location_AssignUrlUnionType($thisArg) {
+ /** @return {TrustedURL} */
+ static m_asTrustedURL__$devirt__elemental2_dom_Location_AssignUrlUnionType(/** ? */ $thisArg) {
   AssignUrlUnionType_$Overlay.$clinit();
-  return /**@type {TrustedURL} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $Overlay));
+  return /**@type {TrustedURL}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $Overlay));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isString__$devirt__elemental2_dom_Location_AssignUrlUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isString__$devirt__elemental2_dom_Location_AssignUrlUnionType(/** ? */ $thisArg) {
   AssignUrlUnionType_$Overlay.$clinit();
-  return j_l_String.$isInstance(/**@type {*} */ ($thisArg));
+  return j_l_String.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isTrustedURL__$devirt__elemental2_dom_Location_AssignUrlUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isTrustedURL__$devirt__elemental2_dom_Location_AssignUrlUnionType(/** ? */ $thisArg) {
   AssignUrlUnionType_$Overlay.$clinit();
-  return $Overlay.$isInstance(/**@type {*} */ ($thisArg));
+  return $Overlay.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AssignUrlUnionType_$Overlay.$clinit = () =>{};
   AssignUrlUnionType_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('elemental2.dom.TrustedURL.$Overlay$impl');
   j_l_String = goog.module.get('java.lang.String$impl');

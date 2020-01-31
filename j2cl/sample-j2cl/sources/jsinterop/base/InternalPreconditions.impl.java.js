@@ -10,17 +10,12 @@ let j_l_String = goog.forwardDeclare('java.lang.String$impl');
 let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 
 class InternalPreconditions extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {boolean} expression
-  * @public
-  */
- static m_checkType__boolean(expression) {
+ 
+ static m_checkType__boolean(/** boolean */ expression) {
   InternalPreconditions.$clinit();
   if (InternalPreconditions.f_IS_TYPE_CHECKED__jsinterop_base_InternalPreconditions_) {
    InternalPreconditions.m_checkCriticalType__boolean(expression);
@@ -30,7 +25,7 @@ class InternalPreconditions extends j_l_Object {
    } catch (__$exc) {
     __$exc = $Exceptions.toJava(__$exc);
     if (Exception.$isInstance(__$exc)) {
-     let e = /**@type {Exception} */ (__$exc);
+     let e = /**@type {Exception}*/ (__$exc);
      throw $Exceptions.toJs(AssertionError.$create__java_lang_Object(e));
     } else {
      throw $Exceptions.toJs(__$exc);
@@ -38,34 +33,24 @@ class InternalPreconditions extends j_l_Object {
    }
   }
  }
- /**
-  * @param {boolean} expression
-  * @public
-  */
- static m_checkCriticalType__boolean(expression) {
+ 
+ static m_checkCriticalType__boolean(/** boolean */ expression) {
   InternalPreconditions.$clinit();
   if (!expression) {
    throw $Exceptions.toJs(ClassCastException.$create__());
   }
  }
- /**
-  * @return {!InternalPreconditions}
-  * @public
-  */
+ /** @return {!InternalPreconditions} */
  static $create__() {
   let $instance = new InternalPreconditions();
   $instance.$ctor__jsinterop_base_InternalPreconditions__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__jsinterop_base_InternalPreconditions__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   InternalPreconditions.$clinit = () =>{};
   InternalPreconditions.$loadModules();
@@ -73,17 +58,11 @@ class InternalPreconditions extends j_l_Object {
   InternalPreconditions.f_IS_TYPE_CHECKED__jsinterop_base_InternalPreconditions_ = j_l_String.m_equals__java_lang_String__java_lang_Object($Util.$getDefine("jsinterop.checks"), "ENABLED");
   InternalPreconditions.f_IS_ASSERTED__jsinterop_base_InternalPreconditions_ = j_l_String.m_equals__java_lang_String__java_lang_Object($Util.$getDefine("jre.checkedMode"), "ENABLED");
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof InternalPreconditions;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   AssertionError = goog.module.get('java.lang.AssertionError$impl');
   ClassCastException = goog.module.get('java.lang.ClassCastException$impl');
@@ -95,9 +74,9 @@ class InternalPreconditions extends j_l_Object {
 }
 $Util.$setClassMetadata(InternalPreconditions, 'jsinterop.base.InternalPreconditions');
 
-/** @public {boolean} */
+/**@type {boolean}*/
 InternalPreconditions.f_IS_TYPE_CHECKED__jsinterop_base_InternalPreconditions_ = false;
-/** @public {boolean} */
+/**@type {boolean}*/
 InternalPreconditions.f_IS_ASSERTED__jsinterop_base_InternalPreconditions_ = false;
 
 /* NATIVE.JS EPILOG */

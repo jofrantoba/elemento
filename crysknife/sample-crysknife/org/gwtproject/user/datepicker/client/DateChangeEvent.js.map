@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DateChangeEvent.impl.java.js",
-"lineCount":77,
-"mappings":"A;;;;;;;;;;;;;;;MA2BM,e;;;;CAAA,W;EAAAA,Q;;;;;;;;;QAYsE,iH,CACpEC,M,EAAaC,Q,EAAeC,Q;EADwCC,0B;EAExEA;GACEA,gJADFA;G;;;;;;;QAUQ,uB,CAAqBC,K;EAArBC,0B;EAAAA,sC;EAAAA,8F;EAAAA,iB;;;;;;CAAA,4E,CAAqBD,K;EAE7BE,mI;;;;;;;CAIU,Y;EACVC,4G;;;;;;;;CA/BE,4B;EAAAC,wJ;;;;;QAAA,O;EAAAC,kC;EAAAA,+B;EAAAA;",
+"lineCount":52,
+"mappings":"A;;;;;;;;;;;;;;;MA2BM,e;;CAAA,W;EAAAA,Q;;;QAYsE,iH,UACpEC,M,cAAaC,Q,cAAeC,Q;EADwCC,0B;EAExEA;GACEA,+IADFA;G;;;QAUQ,uB,aAAqBC,K;EAArBC,0B;EAAAA,sC;EAAAA,8F;EAAAA,iB;;;CAAA,4E,aAAqBD,K;EAE7BE,mI;;;CAIU,Y;EACVC,2G;;;;CA/BE,4B;EAAAC,uJ;;;QAAA,O;EAAAC,kC;EAAAA,+B;EAAAA;",
 "sources":["DateChangeEvent.java"],
 "names":["org.gwtproject.user.datepicker.client.DateChangeEvent.<synthetic: ctor_js>","source","oldValue","newValue","org.gwtproject.user.datepicker.client.DateChangeEvent.fireIfNotEqualDates","value","org.gwtproject.user.datepicker.client.DateChangeEvent.<synthetic: ctor_create>","org.gwtproject.user.datepicker.client.DateChangeEvent.<init>","org.gwtproject.user.datepicker.client.DateChangeEvent.getValue","org.gwtproject.user.datepicker.client.DateChangeEvent.dispatch","org.gwtproject.user.datepicker.client.DateChangeEvent.<clinit>"]
 }

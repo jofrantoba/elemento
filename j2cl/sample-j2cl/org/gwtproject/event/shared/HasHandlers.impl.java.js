@@ -9,49 +9,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.event.shared.HasHandler
  * @interface
  */
 class HasHandlers {
- /**
-  * @abstract
-  * @param {Event<?>} event
-  * @public
-  */
- m_fireEvent__org_gwtproject_event_shared_Event(event) {}
- /**
-  * @param {?function(Event<?>):void} fn
-  * @return {HasHandlers}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_fireEvent__org_gwtproject_event_shared_Event(/** Event<?> */ event) {}
+ /** @return {HasHandlers} */
+ static $adapt(/** ?function(Event<?>):void */ fn) {
   HasHandlers.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HasHandlers.$clinit = () =>{};
   HasHandlers.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_shared_HasHandlers = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_event_shared_HasHandlers = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_shared_HasHandlers;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.event.shared.HasHandlers.$LambdaAdaptor$impl');
  }

@@ -12,131 +12,90 @@ let LocaleInfoImpl = goog.forwardDeclare('org.gwtproject.i18n.client.impl.Locale
 let NumberConstantsImpl__ = goog.forwardDeclare('org.gwtproject.i18n.client.impl.NumberConstantsImpl_$impl');
 
 class LocaleInfo extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {LocaleInfoImpl} */
+  /**@type {LocaleInfoImpl}*/
   this.f_infoImpl__org_gwtproject_i18n_client_LocaleInfo_;
-  /** @public {CldrImpl} */
+  /**@type {CldrImpl}*/
   this.f_cldrImpl__org_gwtproject_i18n_client_LocaleInfo_;
-  /** @public {DateTimeConstants} */
+  /**@type {DateTimeConstants}*/
   this.f_dateTimeConstants__org_gwtproject_i18n_client_LocaleInfo_;
-  /** @public {DateTimeFormatInfo} */
+  /**@type {DateTimeFormatInfo}*/
   this.f_dateTimeFormatInfo__org_gwtproject_i18n_client_LocaleInfo_;
-  /** @public {NumberConstants} */
+  /**@type {NumberConstants}*/
   this.f_numberConstants__org_gwtproject_i18n_client_LocaleInfo_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  static m_hasAnyRTL__() {
   LocaleInfo.$clinit();
   return LocaleInfo.f_instance__org_gwtproject_i18n_client_LocaleInfo_.f_infoImpl__org_gwtproject_i18n_client_LocaleInfo_.m_hasAnyRTL__();
  }
- /**
-  * Factory method corresponding to constructor 'LocaleInfo()'.
-  * @return {!LocaleInfo}
-  * @public
-  */
+ //Factory method corresponding to constructor 'LocaleInfo()'.
+ /** @return {!LocaleInfo} */
  static $create__() {
   LocaleInfo.$clinit();
   let $instance = new LocaleInfo();
   $instance.$ctor__org_gwtproject_i18n_client_LocaleInfo__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'LocaleInfo()'.
-  * @public
-  */
+ //Initialization from constructor 'LocaleInfo()'.
+ 
  $ctor__org_gwtproject_i18n_client_LocaleInfo__() {
   this.$ctor__java_lang_Object__();
   this.f_infoImpl__org_gwtproject_i18n_client_LocaleInfo_ = null;
   this.f_cldrImpl__org_gwtproject_i18n_client_LocaleInfo_ = null;
  }
- /**
-  * Factory method corresponding to constructor 'LocaleInfo(LocaleInfoImpl, CldrImpl)'.
-  * @param {LocaleInfoImpl} impl
-  * @param {CldrImpl} cldr
-  * @return {!LocaleInfo}
-  * @public
-  */
- static $create__org_gwtproject_i18n_client_impl_LocaleInfoImpl__org_gwtproject_i18n_client_impl_CldrImpl(impl, cldr) {
+ //Factory method corresponding to constructor 'LocaleInfo(LocaleInfoImpl, CldrImpl)'.
+ /** @return {!LocaleInfo} */
+ static $create__org_gwtproject_i18n_client_impl_LocaleInfoImpl__org_gwtproject_i18n_client_impl_CldrImpl(/** LocaleInfoImpl */ impl, /** CldrImpl */ cldr) {
   let $instance = new LocaleInfo();
   $instance.$ctor__org_gwtproject_i18n_client_LocaleInfo__org_gwtproject_i18n_client_impl_LocaleInfoImpl__org_gwtproject_i18n_client_impl_CldrImpl(impl, cldr);
   return $instance;
  }
- /**
-  * Initialization from constructor 'LocaleInfo(LocaleInfoImpl, CldrImpl)'.
-  * @param {LocaleInfoImpl} impl
-  * @param {CldrImpl} cldr
-  * @public
-  */
- $ctor__org_gwtproject_i18n_client_LocaleInfo__org_gwtproject_i18n_client_impl_LocaleInfoImpl__org_gwtproject_i18n_client_impl_CldrImpl(impl, cldr) {
+ //Initialization from constructor 'LocaleInfo(LocaleInfoImpl, CldrImpl)'.
+ 
+ $ctor__org_gwtproject_i18n_client_LocaleInfo__org_gwtproject_i18n_client_impl_LocaleInfoImpl__org_gwtproject_i18n_client_impl_CldrImpl(/** LocaleInfoImpl */ impl, /** CldrImpl */ cldr) {
   this.$ctor__java_lang_Object__();
   this.f_infoImpl__org_gwtproject_i18n_client_LocaleInfo_ = impl;
   this.f_cldrImpl__org_gwtproject_i18n_client_LocaleInfo_ = cldr;
  }
- /**
-  * @return {LocaleInfo}
-  * @public
-  */
+ /** @return {LocaleInfo} */
  static m_getCurrentLocale__() {
   LocaleInfo.$clinit();
   return LocaleInfo.$create__();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isRTL__() {
   return false;
  }
- /**
-  * @return {DateTimeFormatInfo}
-  * @public
-  */
+ /** @return {DateTimeFormatInfo} */
  m_getDateTimeFormatInfo__() {
   return this.f_dateTimeFormatInfo__org_gwtproject_i18n_client_LocaleInfo_;
  }
- /**
-  * @return {NumberConstants}
-  * @public
-  */
+ /** @return {NumberConstants} */
  m_getNumberConstants__() {
   this.m_ensureNumberConstants___$p_org_gwtproject_i18n_client_LocaleInfo();
   return this.f_numberConstants__org_gwtproject_i18n_client_LocaleInfo_;
  }
- /**
-  * @public
-  */
+ 
  m_ensureNumberConstants___$p_org_gwtproject_i18n_client_LocaleInfo() {
   if ($Equality.$same(this.f_numberConstants__org_gwtproject_i18n_client_LocaleInfo_, null)) {
    this.f_numberConstants__org_gwtproject_i18n_client_LocaleInfo_ = NumberConstantsImpl__.$create__();
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   LocaleInfo.$clinit = () =>{};
   LocaleInfo.$loadModules();
   j_l_Object.$clinit();
   LocaleInfo.f_instance__org_gwtproject_i18n_client_LocaleInfo_ = LocaleInfo.$create__org_gwtproject_i18n_client_impl_LocaleInfoImpl__org_gwtproject_i18n_client_impl_CldrImpl(LocaleInfoImpl.$create__(), CldrImpl.$create__());
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof LocaleInfo;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   CldrImpl = goog.module.get('org.gwtproject.i18n.client.impl.CldrImpl$impl');
@@ -147,7 +106,7 @@ class LocaleInfo extends j_l_Object {
 }
 $Util.$setClassMetadata(LocaleInfo, 'org.gwtproject.i18n.client.LocaleInfo');
 
-/** @public {LocaleInfo} */
+/**@type {LocaleInfo}*/
 LocaleInfo.f_instance__org_gwtproject_i18n_client_LocaleInfo_;
 
 exports = LocaleInfo; 

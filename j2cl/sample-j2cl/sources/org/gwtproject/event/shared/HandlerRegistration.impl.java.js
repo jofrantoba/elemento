@@ -8,48 +8,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.event.shared.HandlerReg
  * @interface
  */
 class HandlerRegistration {
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_removeHandler__() {}
- /**
-  * @param {?function():void} fn
-  * @return {HandlerRegistration}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {HandlerRegistration} */
+ static $adapt(/** ?function():void */ fn) {
   HandlerRegistration.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HandlerRegistration.$clinit = () =>{};
   HandlerRegistration.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_shared_HandlerRegistration = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_event_shared_HandlerRegistration = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_shared_HandlerRegistration;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.event.shared.HandlerRegistration.$LambdaAdaptor$impl');
  }

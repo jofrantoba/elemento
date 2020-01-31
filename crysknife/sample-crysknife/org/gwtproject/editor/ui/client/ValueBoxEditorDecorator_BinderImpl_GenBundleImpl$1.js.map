@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ValueBoxEditorDecorator_BinderImpl_GenBundleImpl$1.impl.java.js",
-"lineCount":94,
-"mappings":"A;;;;;;;;;;;;MAOkG,E;;;;CAAA,W;EAAAA,Q;EAAAA;yG;EAAAA;OAI5E,+FAJ4EA,S;;;;;;;QAAA,yF;EAAAC,a;EAAAA,yB;EAAAA,mM;EAAAA,iB;;;;;;CAAA,2K;EAAAC,qH;EAAAA,iC;;;;;;;CAC9E,W;EACZC,e;;;;;;;CAGa,kB;EACbC;GACEA,4GADFA;GAEEA,6DAFFA;GAGEA,YAHFA;G;EAKAA,a;;;;;;;CAEY,W;EACZC,gF;;;;;;;CAEsB,Y;EACtBC,qB;;;;;;;CAEsB,c;EACtBC,qB;;;;;QApB0F,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":63,
+"mappings":"A;;;;;;;;;;;;MAOkG,E;;CAAA,W;EAAAA,Q;EAAAA;yG;EAAAA;OAI5E,+FAJ4EA,S;;;QAAA,yF;EAAAC,a;EAAAA,yB;EAAAA,mM;EAAAA,iB;;;CAAA,2K;EAAAC,qH;EAAAA,iC;;;CAC9E,W;EACZC,e;;;CAGa,kB;EACbC;GACEA,4GADFA;GAEEA,6DAFFA;GAGEA,YAHFA;G;EAKAA,a;;;CAEY,W;EACZC,gF;;;CAEsB,Y;EACtBC,qB;;;CAEsB,c;EACtBC,qB;;;QApB0F,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["ValueBoxEditorDecorator_BinderImpl_GenBundleImpl.java"],
 "names":["org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl$1.<synthetic: ctor_js>","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl$1.<synthetic: ctor_create>","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl$1.<init>","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl$1.getName","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl$1.ensureInjected","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl$1.getText","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl$1.contents","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl$1.errorLabel","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl$1.<clinit>"]
 }

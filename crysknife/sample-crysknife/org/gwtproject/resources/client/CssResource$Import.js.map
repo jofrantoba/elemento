@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CssResource$Import.impl.java.js",
-"lineCount":24,
-"mappings":"A;;;;;;;;;;;MA8Ma,M;;;;;;CACT,S;;;;QADS,O;EAAAA,yB;EAAAA;",
+"lineCount":18,
+"mappings":"A;;;;;;;;;;;MA8Ma,M;;CACT,S;;QADS,O;EAAAA,yB;EAAAA;",
 "sources":["CssResource.java"],
 "names":["org.gwtproject.resources.client.CssResource$Import.<clinit>"]
 }

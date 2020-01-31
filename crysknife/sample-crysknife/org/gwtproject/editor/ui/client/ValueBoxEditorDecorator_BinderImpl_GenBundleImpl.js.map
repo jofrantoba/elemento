@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ValueBoxEditorDecorator_BinderImpl_GenBundleImpl.impl.java.js",
-"lineCount":143,
-"mappings":"A;;;;;;;;;;;;;;;;;;MAIa,kD;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,6D;EAAAA,yE;EAAAA,sG;EAAAA,iB;;;;;CAAA,yF;EAAAC,iC;;;;;CAEE,wG;EACXC,oP;;;;;;;CAiCqF,S;EACrFC,kC;;;;;;CAKyB,gB;EACzBC,sG;;;;;;;CAIuB,+B,CAAmBC,I;EACxCC;GACEA,+NADFA;GAEEA,mLAFFA;G;EAIAA,sO;;;;;;QAnDJ,mG;EAAAC,2N;;;;;;QAAA,mG;EAAAC,4N;;;;;;QAuCA,8F;EAAAD,sN;;;;;;QAAA,8F;EAAAC,uN;;;;;QAxCW,O;EAAAC,qE;EAAAA,kE;EAAAA,qB;EACXA,qN;;;;;;;;;;;;;;;;;;;;;;;;;;;;AADW;oJ;AAAA;mDAuCiD,gGAvCjD,C;AAAA;;",
+"lineCount":103,
+"mappings":"A;;;;;;;;;;;;;;;;;;MAIa,kD;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,6D;EAAAA,yE;EAAAA,sG;EAAAA,iB;;;CAAA,yF;EAAAC,iC;;;CAEE,wG;EACXC,oP;;;CAiCqF,S;EACrFC,kC;;;CAKyB,gB;EACzBC,qG;;;CAIuB,+B,gBAAmBC,I;EACxCC;GACEA,8NADFA;GAEEA,mLAFFA;G;EAIAA,qO;;;QAnDJ,mG;EAAAC,2N;;;QAAA,mG;EAAAC,4N;;;QAuCA,8F;EAAAD,sN;;;QAAA,8F;EAAAC,uN;;;QAxCW,O;EAAAC,qE;EAAAA,kE;EAAAA,qB;EACXA,qN;;;;;;;;;;;;;;;;;;;;;;AADW;oJ;AAAA;mDAuCiD,gGAvCjD,C;AAAA;;",
 "sources":["ValueBoxEditorDecorator_BinderImpl_GenBundleImpl.java"],
 "names":["org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl.<synthetic: ctor_js>","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl.<synthetic: ctor_create>","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl.<init>","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl.styleInitializer","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl.style","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl.getResources","name","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl.getResource","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl.<synthetic: getter>","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl.<synthetic: setter>","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl_GenBundleImpl.<clinit>"]
 }

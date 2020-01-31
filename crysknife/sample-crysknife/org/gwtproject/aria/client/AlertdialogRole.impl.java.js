@@ -10,36 +10,23 @@ const DialogRole = goog.require('org.gwtproject.aria.client.DialogRole$impl');
  * @extends {DialogRole}
  */
 class AlertdialogRole {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AlertdialogRole.$clinit = () =>{};
   AlertdialogRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  AlertRole.$markImplementor(classConstructor);
-  DialogRole.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_AlertdialogRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  AlertRole.$markImplementor(ctor);
+  DialogRole.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_AlertdialogRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_AlertdialogRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

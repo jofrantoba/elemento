@@ -11,55 +11,28 @@ let $Overlay = goog.forwardDeclare('org.gwtproject.dom.client.Element.$Overlay$i
  * @extends {Role}
  */
 class WindowRole {
- /**
-  * @abstract
-  * @param {Object} element
-  * @return {?string}
-  * @public
-  */
- m_getAriaExpandedState__org_gwtproject_dom_client_Element(element) {}
- /**
-  * @abstract
-  * @param {Object} element
-  * @public
-  */
- m_removeAriaExpandedState__org_gwtproject_dom_client_Element(element) {}
- /**
-  * @abstract
-  * @param {Object} element
-  * @param {ExpandedValue} value
-  * @public
-  */
- m_setAriaExpandedState__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_ExpandedValue(element, value) {}
- /**
-  * @public
-  */
+ /** @abstract @return {?string} */
+ m_getAriaExpandedState__org_gwtproject_dom_client_Element(/** Object */ element) {}
+ /** @abstract */
+ m_removeAriaExpandedState__org_gwtproject_dom_client_Element(/** Object */ element) {}
+ /** @abstract */
+ m_setAriaExpandedState__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_ExpandedValue(/** Object */ element, /** ExpandedValue */ value) {}
+ 
  static $clinit() {
   WindowRole.$clinit = () =>{};
   WindowRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Role.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_WindowRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Role.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_WindowRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_WindowRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

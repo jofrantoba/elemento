@@ -10,56 +10,28 @@ let SafeUri = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeUri$impl')
  * @extends {ElementBuilderBase<ModBuilder>}
  */
 class ModBuilder {
- /**
-  * @abstract
-  * @param {SafeUri} cite
-  * @return {ModBuilder}
-  * @public
-  */
- m_cite__org_gwtproject_safehtml_shared_SafeUri(cite) {}
- /**
-  * @abstract
-  * @param {?string} cite
-  * @return {ModBuilder}
-  * @public
-  */
- m_cite__java_lang_String(cite) {}
- /**
-  * @abstract
-  * @param {?string} dateTime
-  * @return {ModBuilder}
-  * @public
-  */
- m_dateTime__java_lang_String(dateTime) {}
- /**
-  * @public
-  */
+ /** @abstract @return {ModBuilder} */
+ m_cite__org_gwtproject_safehtml_shared_SafeUri(/** SafeUri */ cite) {}
+ /** @abstract @return {ModBuilder} */
+ m_cite__java_lang_String(/** ?string */ cite) {}
+ /** @abstract @return {ModBuilder} */
+ m_dateTime__java_lang_String(/** ?string */ dateTime) {}
+ 
  static $clinit() {
   ModBuilder.$clinit = () =>{};
   ModBuilder.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ElementBuilderBase.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_dom_builder_shared_ModBuilder = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ElementBuilderBase.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_dom_builder_shared_ModBuilder = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_dom_builder_shared_ModBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

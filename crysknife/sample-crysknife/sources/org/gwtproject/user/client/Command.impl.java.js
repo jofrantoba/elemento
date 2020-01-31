@@ -10,50 +10,29 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.user.client.Command.$La
  * @extends {ScheduledCommand}
  */
 class Command {
- /**
-  * @abstract
-  * @override
-  * @public
-  */
+ /** @abstract @override */
  m_execute__() {}
- /**
-  * @param {?function():void} fn
-  * @return {Command}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {Command} */
+ static $adapt(/** ?function():void */ fn) {
   Command.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Command.$clinit = () =>{};
   Command.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ScheduledCommand.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_Command = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ScheduledCommand.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_Command = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_Command;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.user.client.Command.$LambdaAdaptor$impl');
  }

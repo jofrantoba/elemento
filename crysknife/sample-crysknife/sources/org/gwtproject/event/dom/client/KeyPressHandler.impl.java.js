@@ -11,50 +11,29 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.event.dom.client.KeyPre
  * @extends {EventHandler}
  */
 class KeyPressHandler {
- /**
-  * @abstract
-  * @param {KeyPressEvent} event
-  * @public
-  */
- m_onKeyPress__org_gwtproject_event_dom_client_KeyPressEvent(event) {}
- /**
-  * @param {?function(KeyPressEvent):void} fn
-  * @return {KeyPressHandler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onKeyPress__org_gwtproject_event_dom_client_KeyPressEvent(/** KeyPressEvent */ event) {}
+ /** @return {KeyPressHandler} */
+ static $adapt(/** ?function(KeyPressEvent):void */ fn) {
   KeyPressHandler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   KeyPressHandler.$clinit = () =>{};
   KeyPressHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  EventHandler.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_KeyPressHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  EventHandler.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_KeyPressHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_KeyPressHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.event.dom.client.KeyPressHandler.$LambdaAdaptor$impl');
  }

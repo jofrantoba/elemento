@@ -20,95 +20,65 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @extends {AbstractCell<(Number|number)>}
   */
 class NumberCell extends AbstractCell {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {NumberFormat} */
+  /**@type {NumberFormat}*/
   this.f_format__org_gwtproject_cell_client_NumberCell_;
-  /** @public {SafeHtmlRenderer<?string>} */
+  /**@type {SafeHtmlRenderer<?string>}*/
   this.f_renderer__org_gwtproject_cell_client_NumberCell_;
  }
- /**
-  * Factory method corresponding to constructor 'NumberCell()'.
-  * @return {!NumberCell}
-  * @public
-  */
+ //Factory method corresponding to constructor 'NumberCell()'.
+ /** @return {!NumberCell} */
  static $create__() {
   NumberCell.$clinit();
   let $instance = new NumberCell();
   $instance.$ctor__org_gwtproject_cell_client_NumberCell__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'NumberCell()'.
-  * @public
-  */
+ //Initialization from constructor 'NumberCell()'.
+ 
  $ctor__org_gwtproject_cell_client_NumberCell__() {
   this.$ctor__org_gwtproject_cell_client_NumberCell__org_gwtproject_i18n_client_NumberFormat__org_gwtproject_text_shared_SafeHtmlRenderer(NumberFormat.m_getDecimalFormat__(), SimpleSafeHtmlRenderer.m_getInstance__());
  }
- /**
-  * Factory method corresponding to constructor 'NumberCell(NumberFormat)'.
-  * @param {NumberFormat} format
-  * @return {!NumberCell}
-  * @public
-  */
- static $create__org_gwtproject_i18n_client_NumberFormat(format) {
+ //Factory method corresponding to constructor 'NumberCell(NumberFormat)'.
+ /** @return {!NumberCell} */
+ static $create__org_gwtproject_i18n_client_NumberFormat(/** NumberFormat */ format) {
   NumberCell.$clinit();
   let $instance = new NumberCell();
   $instance.$ctor__org_gwtproject_cell_client_NumberCell__org_gwtproject_i18n_client_NumberFormat(format);
   return $instance;
  }
- /**
-  * Initialization from constructor 'NumberCell(NumberFormat)'.
-  * @param {NumberFormat} format
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_NumberCell__org_gwtproject_i18n_client_NumberFormat(format) {
+ //Initialization from constructor 'NumberCell(NumberFormat)'.
+ 
+ $ctor__org_gwtproject_cell_client_NumberCell__org_gwtproject_i18n_client_NumberFormat(/** NumberFormat */ format) {
   this.$ctor__org_gwtproject_cell_client_NumberCell__org_gwtproject_i18n_client_NumberFormat__org_gwtproject_text_shared_SafeHtmlRenderer(format, SimpleSafeHtmlRenderer.m_getInstance__());
  }
- /**
-  * Factory method corresponding to constructor 'NumberCell(SafeHtmlRenderer)'.
-  * @param {SafeHtmlRenderer<?string>} renderer
-  * @return {!NumberCell}
-  * @public
-  */
- static $create__org_gwtproject_text_shared_SafeHtmlRenderer(renderer) {
+ //Factory method corresponding to constructor 'NumberCell(SafeHtmlRenderer)'.
+ /** @return {!NumberCell} */
+ static $create__org_gwtproject_text_shared_SafeHtmlRenderer(/** SafeHtmlRenderer<?string> */ renderer) {
   NumberCell.$clinit();
   let $instance = new NumberCell();
   $instance.$ctor__org_gwtproject_cell_client_NumberCell__org_gwtproject_text_shared_SafeHtmlRenderer(renderer);
   return $instance;
  }
- /**
-  * Initialization from constructor 'NumberCell(SafeHtmlRenderer)'.
-  * @param {SafeHtmlRenderer<?string>} renderer
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_NumberCell__org_gwtproject_text_shared_SafeHtmlRenderer(renderer) {
+ //Initialization from constructor 'NumberCell(SafeHtmlRenderer)'.
+ 
+ $ctor__org_gwtproject_cell_client_NumberCell__org_gwtproject_text_shared_SafeHtmlRenderer(/** SafeHtmlRenderer<?string> */ renderer) {
   this.$ctor__org_gwtproject_cell_client_NumberCell__org_gwtproject_i18n_client_NumberFormat__org_gwtproject_text_shared_SafeHtmlRenderer(NumberFormat.m_getDecimalFormat__(), renderer);
  }
- /**
-  * Factory method corresponding to constructor 'NumberCell(NumberFormat, SafeHtmlRenderer)'.
-  * @param {NumberFormat} format
-  * @param {SafeHtmlRenderer<?string>} renderer
-  * @return {!NumberCell}
-  * @public
-  */
- static $create__org_gwtproject_i18n_client_NumberFormat__org_gwtproject_text_shared_SafeHtmlRenderer(format, renderer) {
+ //Factory method corresponding to constructor 'NumberCell(NumberFormat, SafeHtmlRenderer)'.
+ /** @return {!NumberCell} */
+ static $create__org_gwtproject_i18n_client_NumberFormat__org_gwtproject_text_shared_SafeHtmlRenderer(/** NumberFormat */ format, /** SafeHtmlRenderer<?string> */ renderer) {
   NumberCell.$clinit();
   let $instance = new NumberCell();
   $instance.$ctor__org_gwtproject_cell_client_NumberCell__org_gwtproject_i18n_client_NumberFormat__org_gwtproject_text_shared_SafeHtmlRenderer(format, renderer);
   return $instance;
  }
- /**
-  * Initialization from constructor 'NumberCell(NumberFormat, SafeHtmlRenderer)'.
-  * @param {NumberFormat} format
-  * @param {SafeHtmlRenderer<?string>} renderer
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_NumberCell__org_gwtproject_i18n_client_NumberFormat__org_gwtproject_text_shared_SafeHtmlRenderer(format, renderer) {
-  this.$ctor__org_gwtproject_cell_client_AbstractCell__arrayOf_java_lang_String(/**@type {!Array<?string>} */ ($Arrays.$init([], j_l_String)));
+ //Initialization from constructor 'NumberCell(NumberFormat, SafeHtmlRenderer)'.
+ 
+ $ctor__org_gwtproject_cell_client_NumberCell__org_gwtproject_i18n_client_NumberFormat__org_gwtproject_text_shared_SafeHtmlRenderer(/** NumberFormat */ format, /** SafeHtmlRenderer<?string> */ renderer) {
+  this.$ctor__org_gwtproject_cell_client_AbstractCell__arrayOf_java_lang_String(/**@type {!Array<?string>}*/ ($Arrays.$init([], j_l_String)));
   if ($Equality.$same(format, null)) {
    throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String("format == null"));
   }
@@ -118,47 +88,28 @@ class NumberCell extends AbstractCell {
   this.f_format__org_gwtproject_cell_client_NumberCell_ = format;
   this.f_renderer__org_gwtproject_cell_client_NumberCell_ = renderer;
  }
- /**
-  * @param {Context} context
-  * @param {(Number|number)} value
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Number__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, value, sb) {
+ 
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Number__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ context, /** (Number|number) */ value, /** SafeHtmlBuilder */ sb) {
   if (!$Equality.$same(value, null)) {
    sb.m_append__org_gwtproject_safehtml_shared_SafeHtml(this.f_renderer__org_gwtproject_cell_client_NumberCell_.m_render__java_lang_Object(this.f_format__org_gwtproject_cell_client_NumberCell_.m_format__java_lang_Number(value)));
   }
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Context} arg0
-  * @param {*} arg1
-  * @param {SafeHtmlBuilder} arg2
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, arg1, arg2) {
-  this.m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Number__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, /**@type {(Number|number)} */ ($Casts.$to(arg1, Number)), arg2);
+ //Bridge method.
+ /** @override */
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ arg0, /** * */ arg1, /** SafeHtmlBuilder */ arg2) {
+  this.m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Number__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, /**@type {(Number|number)}*/ ($Casts.$to(arg1, Number)), arg2);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NumberCell.$clinit = () =>{};
   NumberCell.$loadModules();
   AbstractCell.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof NumberCell;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
   Number = goog.module.get('java.lang.Number$impl');

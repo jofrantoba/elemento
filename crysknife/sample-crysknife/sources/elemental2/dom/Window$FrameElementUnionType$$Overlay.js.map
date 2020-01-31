@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Window$FrameElementUnionType$$Overlay.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;MA2DmB,8B;;;;;;QAEqB,sB,CAAUA,C;EAAVC,yC;EAClCA,wD;;;;;;;QAIwB,2E;EAAAC,yC;EACxBA,qG;;;;;;;QAIwB,2E;EAAAC,yC;EACxBA,uH;;;;;;;QAIc,2E;EAAAC,yC;EACdA,wD;;;;;;;QAIc,2E;EAAAC,yC;EACdA,0E;;;;;QAvBa,O;EAAAC,iD;EAAAA;",
+"lineCount":39,
+"mappings":"A;;;;;;;;;MA2DmB,8B;;QAEqB,sB,UAAUA,C;EAAVC,yC;EAClCA,uD;;;QAIwB,2E;EAAAC,yC;EACxBA,oG;;;QAIwB,2E;EAAAC,yC;EACxBA,sH;;;QAIc,2E;EAAAC,yC;EACdA,uD;;;QAIc,2E;EAAAC,yC;EACdA,yE;;;QAvBa,O;EAAAC,iD;EAAAA;",
 "sources":["Window.java"],
 "names":["o","elemental2.dom.Window$FrameElementUnionType$$Overlay.of","elemental2.dom.Window$FrameElementUnionType$$Overlay.asHTMLIFrameElement__$devirt","elemental2.dom.Window$FrameElementUnionType$$Overlay.asHTMLObjectElement__$devirt","elemental2.dom.Window$FrameElementUnionType$$Overlay.isHTMLIFrameElement__$devirt","elemental2.dom.Window$FrameElementUnionType$$Overlay.isHTMLObjectElement__$devirt","elemental2.dom.Window$FrameElementUnionType$$Overlay.<clinit>"]
 }

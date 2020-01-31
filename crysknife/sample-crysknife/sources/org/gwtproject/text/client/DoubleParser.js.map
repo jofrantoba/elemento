@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DoubleParser.impl.java.js",
-"lineCount":109,
-"mappings":"A;;;;;;;;;;;;;;;;;MAOa,Y;;;;CAAA,W;EAAAA,Q;;;;;;QAGoB,Y;EAAAC,uB;EACzBA;GACIA,6FADJA;G;EAIAA,yE;;;;;;QAGM,S;EAAAC,uB;EAAAA,mC;EAAAA,6D;EAAAA,iB;;;;;CAAA,gD;EAAAC,iC;;;;;;;;CAGI,+B,CAAmBC,M;EAC7BC;GACIA,YADJA;;GAGIA;IACIA,gIADJA;;IAEqCA,oCAFrCA;IAEqCA;KAAAA,IAANC,IAAMD,gDAAAA;KACjCA,gGADiCA;;KAAAA,+BAAAA;KAFrCA;IAHJA;G;;;;;QAfK,O;EAAAE,+B;EAAAA,4B;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;aACmB,oDADnB;",
+"lineCount":86,
+"mappings":"A;;;;;;;;;;;;;;;;;MAOa,Y;;CAAA,W;EAAAA,Q;;;QAGoB,Y;EAAAC,uB;EACzBA;GACIA,6FADJA;G;EAIAA,yE;;;QAGM,S;EAAAC,uB;EAAAA,mC;EAAAA,6D;EAAAA,iB;;;CAAA,gD;EAAAC,iC;;;CAGI,+B,8BAAmBC,M;EAC7BC;GACIA,YADJA;;GAGIA;IACIA,gIADJA;;IAEqCA,oCAFrCA;IAEqCA;KAAAA,IAANC,IAAMD,+CAAAA;KACjCA,gGADiCA;;KAAAA,+BAAAA;KAFrCA;IAHJA;G;;;QAfK,O;EAAAE,+B;EAAAA,4B;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;AAAA;aACmB,oDADnB;",
 "sources":["DoubleParser.java"],
 "names":["org.gwtproject.text.client.DoubleParser.<synthetic: ctor_js>","org.gwtproject.text.client.DoubleParser.instance","org.gwtproject.text.client.DoubleParser.<synthetic: ctor_create>","org.gwtproject.text.client.DoubleParser.<init>","object","org.gwtproject.text.client.DoubleParser.parse","var3","org.gwtproject.text.client.DoubleParser.<clinit>"]
 }

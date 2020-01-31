@@ -17,109 +17,69 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {UiBinderBundle}
   */
 class NativeVerticalScrollbar__UiBinderBundleImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!NativeVerticalScrollbar__UiBinderBundleImpl}
-  * @public
-  */
+ /** @return {!NativeVerticalScrollbar__UiBinderBundleImpl} */
  static $create__() {
   NativeVerticalScrollbar__UiBinderBundleImpl.$clinit();
   let $instance = new NativeVerticalScrollbar__UiBinderBundleImpl();
   $instance.$ctor__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @public
-  */
+ 
  m_nativeVerticalScrollbarUiInitializer___$p_org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl() {
   NativeVerticalScrollbar__UiBinderBundleImpl.$f_nativeVerticalScrollbarUi__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl_ = $1.$create__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl(this);
  }
- /**
-  * @override
-  * @return {UiStyle}
-  * @public
-  */
+ /** @override @return {UiStyle} */
  m_nativeVerticalScrollbarUi__() {
   return nativeVerticalScrollbarUiInitializer.m_get__();
  }
- /**
-  * @return {Array<ResourcePrototype>}
-  * @public
-  */
+ /** @return {Array<ResourcePrototype>} */
  m_getResources__() {
-  return /**@type {!Array<ResourcePrototype>} */ ($Arrays.$init([this.m_nativeVerticalScrollbarUi__()], ResourcePrototype));
+  return /**@type {!Array<ResourcePrototype>}*/ ($Arrays.$init([this.m_nativeVerticalScrollbarUi__()], ResourcePrototype));
  }
- /**
-  * @param {?string} name
-  * @return {ResourcePrototype}
-  * @public
-  */
- m_getResource__java_lang_String(name) {
+ /** @return {ResourcePrototype} */
+ m_getResource__java_lang_String(/** ?string */ name) {
   if ($Equality.$same(NativeVerticalScrollbar__UiBinderBundleImpl.f_resourceMap__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl_, null)) {
-   NativeVerticalScrollbar__UiBinderBundleImpl.f_resourceMap__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl_ = /**@type {!HashMap<?string, ResourcePrototype>} */ (HashMap.$create__());
+   NativeVerticalScrollbar__UiBinderBundleImpl.f_resourceMap__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl_ = /**@type {!HashMap<?string, ResourcePrototype>}*/ (HashMap.$create__());
    NativeVerticalScrollbar__UiBinderBundleImpl.f_resourceMap__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl_.put("nativeVerticalScrollbarUi", this.m_nativeVerticalScrollbarUi__());
   }
-  return /**@type {ResourcePrototype} */ ($Casts.$to(NativeVerticalScrollbar__UiBinderBundleImpl.f_resourceMap__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl_.get(name), ResourcePrototype));
+  return /**@type {ResourcePrototype}*/ ($Casts.$to(NativeVerticalScrollbar__UiBinderBundleImpl.f_resourceMap__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl_.get(name), ResourcePrototype));
  }
- /**
-  * @return {NativeVerticalScrollbar__UiBinderBundleImpl}
-  * @public
-  */
+ /** @return {NativeVerticalScrollbar__UiBinderBundleImpl} */
  static get f__instance0__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl_() {
   return (NativeVerticalScrollbar__UiBinderBundleImpl.$clinit(), NativeVerticalScrollbar__UiBinderBundleImpl.$f__instance0__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl_);
  }
- /**
-  * @param {NativeVerticalScrollbar__UiBinderBundleImpl} value
-  * @public
-  */
- static set f__instance0__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl_(value) {
+ 
+ static set f__instance0__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl_(/** NativeVerticalScrollbar__UiBinderBundleImpl */ value) {
   (NativeVerticalScrollbar__UiBinderBundleImpl.$clinit(), NativeVerticalScrollbar__UiBinderBundleImpl.$f__instance0__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl_ = value);
  }
- /**
-  * @return {UiStyle}
-  * @public
-  */
+ /** @return {UiStyle} */
  static get f_nativeVerticalScrollbarUi__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl_() {
   return (NativeVerticalScrollbar__UiBinderBundleImpl.$clinit(), NativeVerticalScrollbar__UiBinderBundleImpl.$f_nativeVerticalScrollbarUi__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl_);
  }
- /**
-  * @param {UiStyle} value
-  * @public
-  */
- static set f_nativeVerticalScrollbarUi__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl_(value) {
+ 
+ static set f_nativeVerticalScrollbarUi__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl_(/** UiStyle */ value) {
   (NativeVerticalScrollbar__UiBinderBundleImpl.$clinit(), NativeVerticalScrollbar__UiBinderBundleImpl.$f_nativeVerticalScrollbarUi__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl_ = value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NativeVerticalScrollbar__UiBinderBundleImpl.$clinit = () =>{};
   NativeVerticalScrollbar__UiBinderBundleImpl.$loadModules();
   j_l_Object.$clinit();
   NativeVerticalScrollbar__UiBinderBundleImpl.$f__instance0__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl_ = NativeVerticalScrollbar__UiBinderBundleImpl.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof NativeVerticalScrollbar__UiBinderBundleImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   HashMap = goog.module.get('java.util.HashMap$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -135,11 +95,11 @@ $Util.$setClassMetadata(NativeVerticalScrollbar__UiBinderBundleImpl, 'org.gwtpro
 
 UiBinderBundle.$markImplementor(NativeVerticalScrollbar__UiBinderBundleImpl);
 
-/** @private {NativeVerticalScrollbar__UiBinderBundleImpl} */
+/**@private {NativeVerticalScrollbar__UiBinderBundleImpl}*/
 NativeVerticalScrollbar__UiBinderBundleImpl.$f__instance0__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl_;
-/** @public {HashMap<?string, ResourcePrototype>} */
+/**@type {HashMap<?string, ResourcePrototype>}*/
 NativeVerticalScrollbar__UiBinderBundleImpl.f_resourceMap__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl_;
-/** @private {UiStyle} */
+/**@private {UiStyle}*/
 NativeVerticalScrollbar__UiBinderBundleImpl.$f_nativeVerticalScrollbarUi__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundleImpl_;
 
 exports = NativeVerticalScrollbar__UiBinderBundleImpl; 

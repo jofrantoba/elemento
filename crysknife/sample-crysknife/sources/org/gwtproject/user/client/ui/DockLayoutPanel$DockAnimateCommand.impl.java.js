@@ -7,61 +7,39 @@ let Layout = goog.forwardDeclare('org.gwtproject.layout.client.Layout$impl');
 let DockLayoutPanel = goog.forwardDeclare('org.gwtproject.user.client.ui.DockLayoutPanel$impl');
 
 class DockAnimateCommand extends LayoutCommand {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {DockLayoutPanel} */
+  /**@type {DockLayoutPanel}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_DockLayoutPanel_DockAnimateCommand;
  }
- /**
-  * @param {DockLayoutPanel} $outer_this
-  * @param {Layout} layout
-  * @return {!DockAnimateCommand}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_DockLayoutPanel__org_gwtproject_layout_client_Layout($outer_this, layout) {
+ /** @return {!DockAnimateCommand} */
+ static $create__org_gwtproject_user_client_ui_DockLayoutPanel__org_gwtproject_layout_client_Layout(/** DockLayoutPanel */ $outer_this, /** Layout */ layout) {
   DockAnimateCommand.$clinit();
   let $instance = new DockAnimateCommand();
   $instance.$ctor__org_gwtproject_user_client_ui_DockLayoutPanel_DockAnimateCommand__org_gwtproject_user_client_ui_DockLayoutPanel__org_gwtproject_layout_client_Layout($outer_this, layout);
   return $instance;
  }
- /**
-  * @param {DockLayoutPanel} $outer_this
-  * @param {Layout} layout
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_DockLayoutPanel_DockAnimateCommand__org_gwtproject_user_client_ui_DockLayoutPanel__org_gwtproject_layout_client_Layout($outer_this, layout) {
+ 
+ $ctor__org_gwtproject_user_client_ui_DockLayoutPanel_DockAnimateCommand__org_gwtproject_user_client_ui_DockLayoutPanel__org_gwtproject_layout_client_Layout(/** DockLayoutPanel */ $outer_this, /** Layout */ layout) {
   this.f_$outer_this__org_gwtproject_user_client_ui_DockLayoutPanel_DockAnimateCommand = $outer_this;
   this.$ctor__org_gwtproject_user_client_ui_LayoutCommand__org_gwtproject_layout_client_Layout(layout);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_doBeforeLayout__() {
   this.f_$outer_this__org_gwtproject_user_client_ui_DockLayoutPanel_DockAnimateCommand.m_doLayout___$p_org_gwtproject_user_client_ui_DockLayoutPanel();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DockAnimateCommand.$clinit = () =>{};
   DockAnimateCommand.$loadModules();
   LayoutCommand.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DockAnimateCommand;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -15,43 +15,27 @@ let EventHandler = goog.forwardDeclare('org.gwtproject.event.legacy.shared.Event
  * @extends {HumanInputEvent<H>}
   */
 class MouseEvent extends HumanInputEvent {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_dom_client_MouseEvent__() {
   this.$ctor__org_gwtproject_event_dom_client_HumanInputEvent__();
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getNativeButton__() {
   return $Overlay.m_getButton__$devirt__org_gwtproject_dom_client_NativeEvent(this.m_getNativeEvent__());
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getScreenX__() {
   return $Overlay.m_getScreenX__$devirt__org_gwtproject_dom_client_NativeEvent(this.m_getNativeEvent__());
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getScreenY__() {
   return $Overlay.m_getScreenY__$devirt__org_gwtproject_dom_client_NativeEvent(this.m_getNativeEvent__());
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getX__() {
   let relativeElem = this.m_getRelativeElement__();
   if (!$Equality.$same(relativeElem, null)) {
@@ -59,26 +43,16 @@ class MouseEvent extends HumanInputEvent {
   }
   return this.m_getClientX__();
  }
- /**
-  * @param {Object} target
-  * @return {number}
-  * @public
-  */
- m_getRelativeX__org_gwtproject_dom_client_Element(target) {
+ /** @return {number} */
+ m_getRelativeX__org_gwtproject_dom_client_Element(/** Object */ target) {
   let e = this.m_getNativeEvent__();
   return $Overlay.m_getClientX__$devirt__org_gwtproject_dom_client_NativeEvent(e) - Element_$Overlay.m_getAbsoluteLeft__$devirt__org_gwtproject_dom_client_Element(target) + Element_$Overlay.m_getScrollLeft__$devirt__org_gwtproject_dom_client_Element(target) + Document_$Overlay.m_getScrollLeft__$devirt__org_gwtproject_dom_client_Document(target.ownerDocument);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getClientX__() {
   return $Overlay.m_getClientX__$devirt__org_gwtproject_dom_client_NativeEvent(this.m_getNativeEvent__());
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getY__() {
   let relativeElem = this.m_getRelativeElement__();
   if (!$Equality.$same(relativeElem, null)) {
@@ -86,41 +60,26 @@ class MouseEvent extends HumanInputEvent {
   }
   return this.m_getClientY__();
  }
- /**
-  * @param {Object} target
-  * @return {number}
-  * @public
-  */
- m_getRelativeY__org_gwtproject_dom_client_Element(target) {
+ /** @return {number} */
+ m_getRelativeY__org_gwtproject_dom_client_Element(/** Object */ target) {
   let e = this.m_getNativeEvent__();
   return $Overlay.m_getClientY__$devirt__org_gwtproject_dom_client_NativeEvent(e) - Element_$Overlay.m_getAbsoluteTop__$devirt__org_gwtproject_dom_client_Element(target) + Element_$Overlay.m_getScrollTop__$devirt__org_gwtproject_dom_client_Element(target) + Document_$Overlay.m_getScrollTop__$devirt__org_gwtproject_dom_client_Document(target.ownerDocument);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getClientY__() {
   return $Overlay.m_getClientY__$devirt__org_gwtproject_dom_client_NativeEvent(this.m_getNativeEvent__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MouseEvent.$clinit = () =>{};
   MouseEvent.$loadModules();
   HumanInputEvent.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof MouseEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   Document_$Overlay = goog.module.get('org.gwtproject.dom.client.Document.$Overlay$impl');

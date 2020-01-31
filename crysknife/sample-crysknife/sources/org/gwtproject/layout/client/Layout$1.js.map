@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Layout$1.impl.java.js",
-"lineCount":102,
-"mappings":"A;;;;;;;;;;;MA6PwB,E;;;;CAAA,W;EAAAA,Q;EAAAA;4D;EAAAA;OArDmCC,WAqDnCD,C;;;;;;;;QAAA,mG;EAAAE,a;EAAAA,yB;EAAAA,6K;EAAAA,iB;;;;;;;CAAA,wI;EAAAC,wE;EAAAA,+B;EAAAA,0D;;;;;;CAEC,Y;EACbC,sB;;;;;;CAIa,c;EACbC,mH;EACAA,uE;EACAA;GACEA,2CADFA;G;;;;;;;CAMa,kB,CAAgBC,Q;EAC7BC;GAAAA,IAAWC,CAAXD,iEAAAA;GACEA;IACEA,qPADFA;IADFA;GAIEA;IACEA,yPADFA;IAJFA;GAOEA;IACEA,iPADFA;IAPFA;GAUEA;IACEA,6PADFA;IAVFA;GAaEA;IACEA,yPADFA;IAbFA;GAgBEA;IACEA,6PADFA;IAhBFA;GAoBEA,8JApBFA;GAqBEA;IACEA,4FADFA;IArBFA;G;EAyBAA,yQ;;;;;QA1CY,O;EAAAE,qB;EAAAA,kB;EAAAA;",
+"lineCount":79,
+"mappings":"A;;;;;;;;;;;MA6PwB,E;;CAAA,W;EAAAA,Q;EAAAA;4D;EAAAA;OArDmCC,WAqDnCD,C;;;QAAA,mG;EAAAE,a;EAAAA,yB;EAAAA,6K;EAAAA,iB;;;CAAA,wI;EAAAC,wE;EAAAA,+B;EAAAA,0D;;;CAEC,Y;EACbC,sB;;;CAIa,c;EACbC,mH;EACAA,uE;EACAA;GACEA,2CADFA;G;;;CAMa,kB,eAAgBC,Q;EAC7BC;GAAAA,IAAWC,CAAXD,gEAAAA;GACEA;IACEA,qPADFA;IADFA;GAIEA;IACEA,yPADFA;IAJFA;GAOEA;IACEA,iPADFA;IAPFA;GAUEA;IACEA,6PADFA;IAVFA;GAaEA;IACEA,yPADFA;IAbFA;GAgBEA;IACEA,6PADFA;IAhBFA;GAoBEA,8JApBFA;GAqBEA;IACEA,4FADFA;IArBFA;G;EAyBAA,yQ;;;QA1CY,O;EAAAE,qB;EAAAA,kB;EAAAA;",
 "sources":["Layout.java"],
 "names":["org.gwtproject.layout.client.Layout$1.<synthetic: ctor_js>","callback","org.gwtproject.layout.client.Layout$1.<synthetic: ctor_create>","org.gwtproject.layout.client.Layout$1.<init>","org.gwtproject.layout.client.Layout$1.onCancel","org.gwtproject.layout.client.Layout$1.onComplete","progress","org.gwtproject.layout.client.Layout$1.onUpdate","l","org.gwtproject.layout.client.Layout$1.<clinit>"]
 }

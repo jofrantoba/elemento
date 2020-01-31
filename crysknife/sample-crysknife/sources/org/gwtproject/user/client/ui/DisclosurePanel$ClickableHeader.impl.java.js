@@ -14,30 +14,21 @@ let DisclosurePanel = goog.forwardDeclare('org.gwtproject.user.client.ui.Disclos
 let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
 
 class ClickableHeader extends SimplePanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {DisclosurePanel} */
+  /**@type {DisclosurePanel}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_DisclosurePanel_ClickableHeader;
  }
- /**
-  * @param {DisclosurePanel} $outer_this
-  * @return {!ClickableHeader}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_DisclosurePanel($outer_this) {
+ /** @return {!ClickableHeader} */
+ static $create__org_gwtproject_user_client_ui_DisclosurePanel(/** DisclosurePanel */ $outer_this) {
   ClickableHeader.$clinit();
   let $instance = new ClickableHeader();
   $instance.$ctor__org_gwtproject_user_client_ui_DisclosurePanel_ClickableHeader__org_gwtproject_user_client_ui_DisclosurePanel($outer_this);
   return $instance;
  }
- /**
-  * @param {DisclosurePanel} $outer_this
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_DisclosurePanel_ClickableHeader__org_gwtproject_user_client_ui_DisclosurePanel($outer_this) {
+ 
+ $ctor__org_gwtproject_user_client_ui_DisclosurePanel_ClickableHeader__org_gwtproject_user_client_ui_DisclosurePanel(/** DisclosurePanel */ $outer_this) {
   this.f_$outer_this__org_gwtproject_user_client_ui_DisclosurePanel_ClickableHeader = $outer_this;
   this.$ctor__org_gwtproject_user_client_ui_SimplePanel__org_gwtproject_dom_client_Element(DOM.m_createAnchor__());
   let elem = this.m_getElement__();
@@ -46,55 +37,35 @@ class ClickableHeader extends SimplePanel {
   this.m_sinkEvents__int(Event.f_ONCLICK__org_gwtproject_user_client_Event);
   this.m_setStyleName__java_lang_String(DisclosurePanel.f_STYLENAME_HEADER__org_gwtproject_user_client_ui_DisclosurePanel_);
  }
- /**
-  * @override
-  * @param {Event} event
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_user_client_Event(event) {
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_user_client_Event(/** Event */ event) {
   switch (DOM.m_eventGetType__org_gwtproject_user_client_Event(event)) {
    case Event.f_ONCLICK__org_gwtproject_user_client_Event: 
     DOM.m_eventPreventDefault__org_gwtproject_user_client_Event(event);
     this.f_$outer_this__org_gwtproject_user_client_ui_DisclosurePanel_ClickableHeader.m_setOpen__boolean(!this.f_$outer_this__org_gwtproject_user_client_ui_DisclosurePanel_ClickableHeader.f_isOpen__org_gwtproject_user_client_ui_DisclosurePanel_);
   }
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ClickableHeader.$clinit = () =>{};
   ClickableHeader.$loadModules();
   SimplePanel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ClickableHeader;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.Element.$Overlay$impl');

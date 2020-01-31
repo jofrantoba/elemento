@@ -25,216 +25,125 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {EditorContext<T>}
   */
 class AbstractEditorContext extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_path__org_gwtproject_editor_client_impl_AbstractEditorContext_;
-  /** @public {CompositeEditor<?, ?, ?>} */
+  /**@type {CompositeEditor<?, ?, ?>}*/
   this.f_compositeEditor__org_gwtproject_editor_client_impl_AbstractEditorContext_;
-  /** @public {AbstractEditorDelegate<T, ?>} */
+  /**@type {AbstractEditorDelegate<T, ?>}*/
   this.f_delegate__org_gwtproject_editor_client_impl_AbstractEditorContext_;
-  /** @public {Editor<T>} */
+  /**@type {Editor<T>}*/
   this.f_editor__org_gwtproject_editor_client_impl_AbstractEditorContext_;
-  /** @public {HasEditorDelegate<T>} */
+  /**@type {HasEditorDelegate<T>}*/
   this.f_hasEditorDelegate__org_gwtproject_editor_client_impl_AbstractEditorContext_;
-  /** @public {HasEditorErrors<T>} */
+  /**@type {HasEditorErrors<T>}*/
   this.f_hasEditorErrors__org_gwtproject_editor_client_impl_AbstractEditorContext_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isHalted__org_gwtproject_editor_client_impl_AbstractEditorContext_ = false;
-  /** @public {LeafValueEditor<T>} */
+  /**@type {LeafValueEditor<T>}*/
   this.f_leafValueEditor__org_gwtproject_editor_client_impl_AbstractEditorContext_;
-  /** @public {ValueAwareEditor<T>} */
+  /**@type {ValueAwareEditor<T>}*/
   this.f_valueAwareEditor__org_gwtproject_editor_client_impl_AbstractEditorContext_;
  }
- /**
-  * @param {Editor<T>} editor
-  * @param {?string} path
-  * @public
-  */
- $ctor__org_gwtproject_editor_client_impl_AbstractEditorContext__org_gwtproject_editor_client_Editor__java_lang_String(editor, path) {
+ 
+ $ctor__org_gwtproject_editor_client_impl_AbstractEditorContext__org_gwtproject_editor_client_Editor__java_lang_String(/** Editor<T> */ editor, /** ?string */ path) {
   this.$ctor__java_lang_Object__();
   this.f_editor__org_gwtproject_editor_client_impl_AbstractEditorContext_ = editor;
   this.f_path__org_gwtproject_editor_client_impl_AbstractEditorContext_ = path;
-  this.f_compositeEditor__org_gwtproject_editor_client_impl_AbstractEditorContext_ = CompositeEditor.$isInstance(editor) ? /**@type {CompositeEditor<*, *, Editor>} */ ($Casts.$to(editor, CompositeEditor)) : null;
-  this.f_hasEditorDelegate__org_gwtproject_editor_client_impl_AbstractEditorContext_ = HasEditorDelegate.$isInstance(editor) ? /**@type {HasEditorDelegate<T>} */ ($Casts.$to(editor, HasEditorDelegate)) : null;
-  this.f_hasEditorErrors__org_gwtproject_editor_client_impl_AbstractEditorContext_ = HasEditorErrors.$isInstance(editor) ? /**@type {HasEditorErrors<T>} */ ($Casts.$to(editor, HasEditorErrors)) : null;
-  this.f_leafValueEditor__org_gwtproject_editor_client_impl_AbstractEditorContext_ = LeafValueEditor.$isInstance(editor) ? /**@type {LeafValueEditor<T>} */ ($Casts.$to(editor, LeafValueEditor)) : null;
-  this.f_valueAwareEditor__org_gwtproject_editor_client_impl_AbstractEditorContext_ = ValueAwareEditor.$isInstance(editor) ? /**@type {ValueAwareEditor<T>} */ ($Casts.$to(editor, ValueAwareEditor)) : null;
+  this.f_compositeEditor__org_gwtproject_editor_client_impl_AbstractEditorContext_ = CompositeEditor.$isInstance(editor) ? /**@type {CompositeEditor<*, *, Editor>}*/ ($Casts.$to(editor, CompositeEditor)) : null;
+  this.f_hasEditorDelegate__org_gwtproject_editor_client_impl_AbstractEditorContext_ = HasEditorDelegate.$isInstance(editor) ? /**@type {HasEditorDelegate<T>}*/ ($Casts.$to(editor, HasEditorDelegate)) : null;
+  this.f_hasEditorErrors__org_gwtproject_editor_client_impl_AbstractEditorContext_ = HasEditorErrors.$isInstance(editor) ? /**@type {HasEditorErrors<T>}*/ ($Casts.$to(editor, HasEditorErrors)) : null;
+  this.f_leafValueEditor__org_gwtproject_editor_client_impl_AbstractEditorContext_ = LeafValueEditor.$isInstance(editor) ? /**@type {LeafValueEditor<T>}*/ ($Casts.$to(editor, LeafValueEditor)) : null;
+  this.f_valueAwareEditor__org_gwtproject_editor_client_impl_AbstractEditorContext_ = ValueAwareEditor.$isInstance(editor) ? /**@type {ValueAwareEditor<T>}*/ ($Casts.$to(editor, ValueAwareEditor)) : null;
  }
- /**
-  * @override
-  * @return {CompositeEditor<T, ?, ?>}
-  * @public
-  */
+ /** @override @return {CompositeEditor<T, ?, ?>} */
  m_asCompositeEditor__() {
-  return /**@type {CompositeEditor<T, *, Editor>} */ (this.f_compositeEditor__org_gwtproject_editor_client_impl_AbstractEditorContext_);
+  return /**@type {CompositeEditor<T, *, Editor>}*/ (this.f_compositeEditor__org_gwtproject_editor_client_impl_AbstractEditorContext_);
  }
- /**
-  * @override
-  * @return {HasEditorDelegate<T>}
-  * @public
-  */
+ /** @override @return {HasEditorDelegate<T>} */
  m_asHasEditorDelegate__() {
   return this.f_hasEditorDelegate__org_gwtproject_editor_client_impl_AbstractEditorContext_;
  }
- /**
-  * @override
-  * @return {HasEditorErrors<T>}
-  * @public
-  */
+ /** @override @return {HasEditorErrors<T>} */
  m_asHasEditorErrors__() {
   return this.f_hasEditorErrors__org_gwtproject_editor_client_impl_AbstractEditorContext_;
  }
- /**
-  * @override
-  * @return {LeafValueEditor<T>}
-  * @public
-  */
+ /** @override @return {LeafValueEditor<T>} */
  m_asLeafValueEditor__() {
   return this.f_leafValueEditor__org_gwtproject_editor_client_impl_AbstractEditorContext_;
  }
- /**
-  * @override
-  * @return {ValueAwareEditor<T>}
-  * @public
-  */
+ /** @override @return {ValueAwareEditor<T>} */
  m_asValueAwareEditor__() {
   return this.f_valueAwareEditor__org_gwtproject_editor_client_impl_AbstractEditorContext_;
  }
- /**
-  * @abstract
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @override @return {boolean} */
  m_canSetInModel__() {}
- /**
-  * @abstract
-  * @override
-  * @param {*} value
-  * @return {T}
-  * @public
-  */
- m_checkAssignment__java_lang_Object(value) {}
- /**
-  * @param {EditorVisitor} visitor
-  * @public
-  */
- m_doTraverseSyntheticCompositeEditor__org_gwtproject_editor_client_EditorVisitor(visitor) {
+ /** @abstract @override @return {T} */
+ m_checkAssignment__java_lang_Object(/** * */ value) {}
+ 
+ m_doTraverseSyntheticCompositeEditor__org_gwtproject_editor_client_EditorVisitor(/** EditorVisitor */ visitor) {
   let sample = this.m_asCompositeEditor__().m_createEditorForTraversal__();
   let subDelegate = this.f_delegate__org_gwtproject_editor_client_impl_AbstractEditorContext_.m_createComposedDelegate__();
   this.f_delegate__org_gwtproject_editor_client_impl_AbstractEditorContext_.m_addSubDelegate__org_gwtproject_editor_client_impl_AbstractEditorDelegate__java_lang_String__org_gwtproject_editor_client_Editor(subDelegate, this.f_path__org_gwtproject_editor_client_impl_AbstractEditorContext_, sample);
   this.f_delegate__org_gwtproject_editor_client_impl_AbstractEditorContext_.m_getEditorChain__().m_traverse__org_gwtproject_editor_client_EditorVisitor__org_gwtproject_editor_client_impl_AbstractEditorDelegate_$pp_org_gwtproject_editor_client_impl(visitor, subDelegate);
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getAbsolutePath__() {
   return this.f_path__org_gwtproject_editor_client_impl_AbstractEditorContext_;
  }
- /**
-  * @abstract
-  * @override
-  * @return {Class<T>}
-  * @public
-  */
+ /** @abstract @override @return {Class<T>} */
  m_getEditedType__() {}
- /**
-  * @override
-  * @return {Editor<T>}
-  * @public
-  */
+ /** @override @return {Editor<T>} */
  m_getEditor__() {
   return this.f_editor__org_gwtproject_editor_client_impl_AbstractEditorContext_;
  }
- /**
-  * @override
-  * @return {EditorDelegate<T>}
-  * @public
-  */
+ /** @override @return {EditorDelegate<T>} */
  m_getEditorDelegate__() {
   return this.f_delegate__org_gwtproject_editor_client_impl_AbstractEditorContext_;
  }
- /**
-  * @abstract
-  * @override
-  * @return {T}
-  * @public
-  */
+ /** @abstract @override @return {T} */
  m_getFromModel__() {}
- /**
-  * @public
-  */
+ 
  m_halt__() {
   this.f_isHalted__org_gwtproject_editor_client_impl_AbstractEditorContext_ = true;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isHalted__() {
   return this.f_isHalted__org_gwtproject_editor_client_impl_AbstractEditorContext_;
  }
- /**
-  * @param {AbstractEditorDelegate<T, ?>} delegate
-  * @public
-  */
- m_setEditorDelegate__org_gwtproject_editor_client_impl_AbstractEditorDelegate(delegate) {
+ 
+ m_setEditorDelegate__org_gwtproject_editor_client_impl_AbstractEditorDelegate(/** AbstractEditorDelegate<T, ?> */ delegate) {
   this.f_delegate__org_gwtproject_editor_client_impl_AbstractEditorContext_ = delegate;
  }
- /**
-  * @abstract
-  * @override
-  * @param {T} data
-  * @public
-  */
- m_setInModel__java_lang_Object(data) {}
- /**
-  * @param {EditorVisitor} visitor
-  * @param {AbstractEditorDelegate<?, ?>} next
-  * @public
-  */
- m_traverse__org_gwtproject_editor_client_EditorVisitor__org_gwtproject_editor_client_impl_AbstractEditorDelegate(visitor, next) {
+ /** @abstract @override */
+ m_setInModel__java_lang_Object(/** T */ data) {}
+ 
+ m_traverse__org_gwtproject_editor_client_EditorVisitor__org_gwtproject_editor_client_impl_AbstractEditorDelegate(/** EditorVisitor */ visitor, /** AbstractEditorDelegate<?, ?> */ next) {
   if (visitor.m_visit__org_gwtproject_editor_client_EditorContext(this) && !$Equality.$same(next, null)) {
    next.m_accept__org_gwtproject_editor_client_EditorVisitor(visitor);
   }
   visitor.m_endVisit__org_gwtproject_editor_client_EditorContext(this);
  }
- /**
-  * @override
-  * @param {EditorVisitor} visitor
-  * @public
-  */
- m_traverseSyntheticCompositeEditor__org_gwtproject_editor_client_EditorVisitor(visitor) {
+ /** @override */
+ m_traverseSyntheticCompositeEditor__org_gwtproject_editor_client_EditorVisitor(/** EditorVisitor */ visitor) {
   if ($Equality.$same(this.m_asCompositeEditor__(), null)) {
    throw $Exceptions.toJs(IllegalStateException.$create__());
   }
   this.m_doTraverseSyntheticCompositeEditor__org_gwtproject_editor_client_EditorVisitor(visitor);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AbstractEditorContext.$clinit = () =>{};
   AbstractEditorContext.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AbstractEditorContext;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

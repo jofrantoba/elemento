@@ -15,128 +15,79 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {Event<ResizeHandler>}
   */
 class ResizeEvent extends Event {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {number} */
+  /**@type {number}*/
   this.f_width__org_gwtproject_event_logical_shared_ResizeEvent_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_height__org_gwtproject_event_logical_shared_ResizeEvent_ = 0;
  }
- /**
-  * @template S
-  * @param {S} source
-  * @param {number} width
-  * @param {number} height
-  * @public
-  */
- static m_fire__org_gwtproject_event_logical_shared_HasResizeHandlers__int__int(source, width, height) {
+ /** @template S */
+ static m_fire__org_gwtproject_event_logical_shared_HasResizeHandlers__int__int(/** S */ source, /** number */ width, /** number */ height) {
   ResizeEvent.$clinit();
   if (!$Equality.$same(ResizeEvent.f_TYPE__org_gwtproject_event_logical_shared_ResizeEvent_, null)) {
    let event = ResizeEvent.$create__int__int(width, height);
-   /**@type {HasResizeHandlers} */ (source).m_fireEvent__org_gwtproject_event_shared_Event(event);
+   /**@type {HasResizeHandlers}*/ (source).m_fireEvent__org_gwtproject_event_shared_Event(event);
   }
  }
- /**
-  * @return {Type<ResizeHandler>}
-  * @public
-  */
+ /** @return {Type<ResizeHandler>} */
  static m_getType__() {
   ResizeEvent.$clinit();
   if ($Equality.$same(ResizeEvent.f_TYPE__org_gwtproject_event_logical_shared_ResizeEvent_, null)) {
-   ResizeEvent.f_TYPE__org_gwtproject_event_logical_shared_ResizeEvent_ = /**@type {!Type<ResizeHandler>} */ (Type.$create__());
+   ResizeEvent.f_TYPE__org_gwtproject_event_logical_shared_ResizeEvent_ = /**@type {!Type<ResizeHandler>}*/ (Type.$create__());
   }
   return ResizeEvent.f_TYPE__org_gwtproject_event_logical_shared_ResizeEvent_;
  }
- /**
-  * @param {number} width
-  * @param {number} height
-  * @return {!ResizeEvent}
-  * @public
-  */
- static $create__int__int(width, height) {
+ /** @return {!ResizeEvent} */
+ static $create__int__int(/** number */ width, /** number */ height) {
   ResizeEvent.$clinit();
   let $instance = new ResizeEvent();
   $instance.$ctor__org_gwtproject_event_logical_shared_ResizeEvent__int__int(width, height);
   return $instance;
  }
- /**
-  * @param {number} width
-  * @param {number} height
-  * @public
-  */
- $ctor__org_gwtproject_event_logical_shared_ResizeEvent__int__int(width, height) {
+ 
+ $ctor__org_gwtproject_event_logical_shared_ResizeEvent__int__int(/** number */ width, /** number */ height) {
   this.$ctor__org_gwtproject_event_shared_Event__();
   this.f_width__org_gwtproject_event_logical_shared_ResizeEvent_ = width;
   this.f_height__org_gwtproject_event_logical_shared_ResizeEvent_ = height;
  }
- /**
-  * @override
-  * @return {Type<ResizeHandler>}
-  * @public
-  */
+ /** @override @return {Type<ResizeHandler>} */
  m_getAssociatedType__() {
   return ResizeEvent.f_TYPE__org_gwtproject_event_logical_shared_ResizeEvent_;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getHeight__() {
   return this.f_height__org_gwtproject_event_logical_shared_ResizeEvent_;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getWidth__() {
   return this.f_width__org_gwtproject_event_logical_shared_ResizeEvent_;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_toDebugString__() {
   return j_l_String.m_valueOf__java_lang_Object(super.m_toDebugString__()) + " width = " + this.f_width__org_gwtproject_event_logical_shared_ResizeEvent_ + " height =" + this.f_height__org_gwtproject_event_logical_shared_ResizeEvent_;
  }
- /**
-  * @param {ResizeHandler} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_event_logical_shared_ResizeHandler(handler) {
+ 
+ m_dispatch__org_gwtproject_event_logical_shared_ResizeHandler(/** ResizeHandler */ handler) {
   handler.m_onResize__org_gwtproject_event_logical_shared_ResizeEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_event_logical_shared_ResizeHandler(/**@type {ResizeHandler} */ ($Casts.$to(arg0, ResizeHandler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_event_logical_shared_ResizeHandler(/**@type {ResizeHandler}*/ ($Casts.$to(arg0, ResizeHandler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ResizeEvent.$clinit = () =>{};
   ResizeEvent.$loadModules();
   Event.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ResizeEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -148,7 +99,7 @@ class ResizeEvent extends Event {
 }
 $Util.$setClassMetadata(ResizeEvent, 'org.gwtproject.event.logical.shared.ResizeEvent');
 
-/** @public {Type<ResizeHandler>} */
+/**@type {Type<ResizeHandler>}*/
 ResizeEvent.f_TYPE__org_gwtproject_event_logical_shared_ResizeEvent_;
 
 exports = ResizeEvent; 

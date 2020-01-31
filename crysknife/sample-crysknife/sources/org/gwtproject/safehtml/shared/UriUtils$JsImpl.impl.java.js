@@ -6,33 +6,22 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 let j_l_String = goog.forwardDeclare('java.lang.String$impl');
 
 class JsImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!JsImpl}
-  * @public
-  */
+ /** @return {!JsImpl} */
  static $create__() {
   let $instance = new JsImpl();
   $instance.$ctor__org_gwtproject_safehtml_shared_UriUtils_JsImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_safehtml_shared_UriUtils_JsImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {?string} uri
-  * @return {?string}
-  * @public
-  */
- m_encode__java_lang_String_$pp_org_gwtproject_safehtml_shared(uri) {
+ /** @return {?string} */
+ m_encode__java_lang_String_$pp_org_gwtproject_safehtml_shared(/** ?string */ uri) {
   uri = window.encodeURI(uri);
   if (j_l_String.m_indexOf__java_lang_String__java_lang_String(uri, "%5B") != -1) {
    uri = j_l_String.m_replaceAll__java_lang_String__java_lang_String__java_lang_String(uri, "%5B", "[");
@@ -42,25 +31,17 @@ class JsImpl extends j_l_Object {
   }
   return uri;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   JsImpl.$clinit = () =>{};
   JsImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof JsImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
  }

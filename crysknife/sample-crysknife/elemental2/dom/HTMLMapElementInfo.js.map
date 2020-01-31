@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HTMLMapElementInfo.impl.java.js",
-"lineCount":35,
-"mappings":"A;;;;;MAIa,kB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,6B;EAAAA,yC;EAAAA,uD;EAAAA,iB;;;;;CAAA,0C;EAAAC,iC;;;;;QAAA,O;EAAAC,qC;EAAAA,kC;EAAAA;",
+"lineCount":26,
+"mappings":"A;;;;;MAIa,kB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,6B;EAAAA,yC;EAAAA,uD;EAAAA,iB;;;CAAA,0C;EAAAC,iC;;;QAAA,O;EAAAC,qC;EAAAA,kC;EAAAA;",
 "sources":["HTMLMapElementInfo.java"],
 "names":["elemental2.dom.HTMLMapElementInfo.<synthetic: ctor_js>","elemental2.dom.HTMLMapElementInfo.<synthetic: ctor_create>","elemental2.dom.HTMLMapElementInfo.<init>","elemental2.dom.HTMLMapElementInfo.<clinit>"]
 }

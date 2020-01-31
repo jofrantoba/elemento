@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CaptionPanel$CaptionPanelImplSafari.impl.java.js",
-"lineCount":65,
-"mappings":"A;;;;;;;;;;;;MA6FsB,sB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,iC;EAAAA,6C;EAAAA,uF;EAAAA,iB;;;;;CAAA,0E;EAAAC,4E;;;;;;;;;CAEN,mI,CACcC,Q,EAAkBC,M,EAAiBC,O;EAC3DC,2K;;;;;;;;;;CAIU,qH,CACcH,Q,EACdC,M,EACWC,O,EACXE,M;EACVD,6I;EACAA,+J;EACAA,wO;;;;;QAfgB,O;EAAAE,yC;EAAAA,sC;EAAAA;",
+"lineCount":43,
+"mappings":"A;;;;;;;;;;;;MA6FsB,sB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,iC;EAAAA,6C;EAAAA,uF;EAAAA,iB;;;CAAA,0E;EAAAC,4E;;;CAEN,mI,eACcC,Q,gBAAkBC,M,kBAAiBC,O;EAC3DC,2K;;;CAIU,qH,eACcH,Q,gBACdC,M,iBACWC,O,iBACXE,M;EACVD,6I;EACAA,+J;EACAA,wO;;;QAfgB,O;EAAAE,yC;EAAAA,sC;EAAAA;",
 "sources":["CaptionPanel.java"],
 "names":["org.gwtproject.user.client.ui.CaptionPanel$CaptionPanelImplSafari.<synthetic: ctor_js>","org.gwtproject.user.client.ui.CaptionPanel$CaptionPanelImplSafari.<synthetic: ctor_create>","org.gwtproject.user.client.ui.CaptionPanel$CaptionPanelImplSafari.<init>","fieldset","legend","caption","org.gwtproject.user.client.ui.CaptionPanel$CaptionPanelImplSafari.setCaption","asHTML","org.gwtproject.user.client.ui.CaptionPanel$CaptionPanelImplSafari.<clinit>"]
 }

@@ -22,29 +22,22 @@ let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
  * @implements {ForIsWidget}
   */
 class StackPanel extends ComplexPanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_body__org_gwtproject_user_client_ui_StackPanel_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_visibleStack__org_gwtproject_user_client_ui_StackPanel_ = 0;
  }
- /**
-  * @return {!StackPanel}
-  * @public
-  */
+ /** @return {!StackPanel} */
  static $create__() {
   StackPanel.$clinit();
   let $instance = new StackPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_StackPanel__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_StackPanel__() {
   this.$ctor__org_gwtproject_user_client_ui_ComplexPanel__();
   this.$init___$p_org_gwtproject_user_client_ui_StackPanel();
@@ -57,63 +50,33 @@ class StackPanel extends ComplexPanel {
   DOM.m_sinkEvents__org_gwtproject_dom_client_Element__int(table, Event.f_ONCLICK__org_gwtproject_user_client_Event);
   this.m_setStyleName__java_lang_String(StackPanel.f_DEFAULT_STYLENAME__org_gwtproject_user_client_ui_StackPanel_);
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override */
+ m_add__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__int(w, this.m_getWidgetCount__());
  }
- /**
-  * @param {Widget} w
-  * @param {?string} stackText
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget__java_lang_String(w, stackText) {
+ 
+ m_add__org_gwtproject_user_client_ui_Widget__java_lang_String(/** Widget */ w, /** ?string */ stackText) {
   this.m_add__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean(w, stackText, false);
  }
- /**
-  * @param {Widget} w
-  * @param {SafeHtml} stackHtml
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_safehtml_shared_SafeHtml(w, stackHtml) {
+ 
+ m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_safehtml_shared_SafeHtml(/** Widget */ w, /** SafeHtml */ stackHtml) {
   this.m_add__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean(w, stackHtml.m_asString__(), true);
  }
- /**
-  * @param {Widget} w
-  * @param {?string} stackText
-  * @param {boolean} asHTML
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean(w, stackText, asHTML) {
+ 
+ m_add__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean(/** Widget */ w, /** ?string */ stackText, /** boolean */ asHTML) {
   this.m_add__org_gwtproject_user_client_ui_Widget(w);
   this.m_setStackText__int__java_lang_String__boolean(this.m_getWidgetCount__() - 1, stackText, asHTML);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getSelectedIndex__() {
   return this.f_visibleStack__org_gwtproject_user_client_ui_StackPanel_;
  }
- /**
-  * @override
-  * @param {IsWidget} w
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_IsWidget__int(w, beforeIndex) {
+ /** @override */
+ m_insert__org_gwtproject_user_client_ui_IsWidget__int(/** IsWidget */ w, /** number */ beforeIndex) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__int(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(w), beforeIndex);
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_Widget__int(w, beforeIndex) {
+ /** @override */
+ m_insert__org_gwtproject_user_client_ui_Widget__int(/** Widget */ w, /** number */ beforeIndex) {
   let trh = DOM.m_createTR__();
   let tdh = DOM.m_createTD__();
   DOM.m_appendChild__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(trh, tdh);
@@ -143,12 +106,8 @@ class StackPanel extends ComplexPanel {
    this.m_setStackVisible__int__boolean_$p_org_gwtproject_user_client_ui_StackPanel(this.f_visibleStack__org_gwtproject_user_client_ui_StackPanel_, true);
   }
  }
- /**
-  * @override
-  * @param {Event} event
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_user_client_Event(event) {
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_user_client_Event(/** Event */ event) {
   if (DOM.m_eventGetType__org_gwtproject_user_client_Event(event) == Event.f_ONCLICK__org_gwtproject_user_client_Event) {
    let target = DOM.m_eventGetTarget__org_gwtproject_user_client_Event(event);
    let index = this.m_findDividerIndex__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_StackPanel(target);
@@ -158,47 +117,24 @@ class StackPanel extends ComplexPanel {
   }
   super.m_onBrowserEvent__org_gwtproject_user_client_Event(event);
  }
- /**
-  * @override
-  * @param {number} index
-  * @return {boolean}
-  * @public
-  */
- m_remove__int(index) {
+ /** @override @return {boolean} */
+ m_remove__int(/** number */ index) {
   return this.m_remove__org_gwtproject_user_client_ui_Widget__int_$p_org_gwtproject_user_client_ui_StackPanel(this.m_getWidget__int(index), index);
  }
- /**
-  * @override
-  * @param {Widget} child
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_Widget(child) {
+ /** @override @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_Widget(/** Widget */ child) {
   return this.m_remove__org_gwtproject_user_client_ui_Widget__int_$p_org_gwtproject_user_client_ui_StackPanel(child, this.m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(child));
  }
- /**
-  * @param {number} index
-  * @param {?string} text
-  * @public
-  */
- m_setStackText__int__java_lang_String(index, text) {
+ 
+ m_setStackText__int__java_lang_String(/** number */ index, /** ?string */ text) {
   this.m_setStackText__int__java_lang_String__boolean(index, text, false);
  }
- /**
-  * @param {number} index
-  * @param {SafeHtml} html
-  * @public
-  */
- m_setStackText__int__org_gwtproject_safehtml_shared_SafeHtml(index, html) {
+ 
+ m_setStackText__int__org_gwtproject_safehtml_shared_SafeHtml(/** number */ index, /** SafeHtml */ html) {
   this.m_setStackText__int__java_lang_String__boolean(index, html.m_asString__(), true);
  }
- /**
-  * @param {number} index
-  * @param {?string} text
-  * @param {boolean} asHTML
-  * @public
-  */
- m_setStackText__int__java_lang_String__boolean(index, text, asHTML) {
+ 
+ m_setStackText__int__java_lang_String__boolean(/** number */ index, /** ?string */ text, /** boolean */ asHTML) {
   if (index >= this.m_getWidgetCount__()) {
    return;
   }
@@ -210,11 +146,8 @@ class StackPanel extends ComplexPanel {
    $Overlay.m_setInnerText__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.m_getHeaderTextElem__org_gwtproject_dom_client_Element_$pp_org_gwtproject_user_client_ui(headerElem), text);
   }
  }
- /**
-  * @param {number} index
-  * @public
-  */
- m_showStack__int(index) {
+ 
+ m_showStack__int(/** number */ index) {
   if ((index >= this.m_getWidgetCount__()) || (index < 0) || (index == this.f_visibleStack__org_gwtproject_user_client_ui_StackPanel_)) {
    return;
   }
@@ -224,12 +157,8 @@ class StackPanel extends ComplexPanel {
   this.f_visibleStack__org_gwtproject_user_client_ui_StackPanel_ = index;
   this.m_setStackVisible__int__boolean_$p_org_gwtproject_user_client_ui_StackPanel(this.f_visibleStack__org_gwtproject_user_client_ui_StackPanel_, true);
  }
- /**
-  * @override
-  * @param {?string} baseID
-  * @public
-  */
- m_onEnsureDebugId__java_lang_String(baseID) {
+ /** @override */
+ m_onEnsureDebugId__java_lang_String(/** ?string */ baseID) {
   super.m_onEnsureDebugId__java_lang_String(baseID);
   let numHeaders = DOM.m_getChildCount__org_gwtproject_dom_client_Element(this.f_body__org_gwtproject_user_client_ui_StackPanel_) >> 1;
   for (let i = 0; i < numHeaders; i++) {
@@ -241,51 +170,32 @@ class StackPanel extends ComplexPanel {
    UIObject.m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(this.m_getHeaderTextElem__org_gwtproject_dom_client_Element_$pp_org_gwtproject_user_client_ui(headerElem), baseID, "text" + i);
   }
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_createHeaderElem___$pp_org_gwtproject_user_client_ui() {
   return DOM.m_createDiv__();
  }
- /**
-  * @param {Object} headerElem
-  * @return {Object}
-  * @public
-  */
- m_getHeaderTextElem__org_gwtproject_dom_client_Element_$pp_org_gwtproject_user_client_ui(headerElem) {
+ /** @return {Object} */
+ m_getHeaderTextElem__org_gwtproject_dom_client_Element_$pp_org_gwtproject_user_client_ui(/** Object */ headerElem) {
   return headerElem;
  }
- /**
-  * @param {number} index
-  * @param {?string} styleName
-  * @public
-  */
- m_addHeaderStyleName__int__java_lang_String(index, styleName) {
+ 
+ m_addHeaderStyleName__int__java_lang_String(/** number */ index, /** ?string */ styleName) {
   if (index >= this.m_getWidgetCount__()) {
    return;
   }
   let tr = DOM.m_getChild__org_gwtproject_dom_client_Element__int(this.f_body__org_gwtproject_user_client_ui_StackPanel_, index * 2);
   UIObject.m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String__boolean(tr, styleName, true);
  }
- /**
-  * @param {number} index
-  * @param {?string} styleName
-  * @public
-  */
- m_removeHeaderStyleName__int__java_lang_String(index, styleName) {
+ 
+ m_removeHeaderStyleName__int__java_lang_String(/** number */ index, /** ?string */ styleName) {
   if (index >= this.m_getWidgetCount__()) {
    return;
   }
   let tr = DOM.m_getChild__org_gwtproject_dom_client_Element__int(this.f_body__org_gwtproject_user_client_ui_StackPanel_, index * 2);
   UIObject.m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String__boolean(tr, styleName, false);
  }
- /**
-  * @param {Object} elem
-  * @return {number}
-  * @public
-  */
- m_findDividerIndex__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_StackPanel(elem) {
+ /** @return {number} */
+ m_findDividerIndex__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_StackPanel(/** Object */ elem) {
   while (!$Equality.$same(elem, null) && !$Equality.$same(elem, this.m_getElement__())) {
    let expando = $Overlay.m_getPropertyString__$devirt__org_gwtproject_dom_client_Element__java_lang_String(elem, "__index");
    if (!$Equality.$same(expando, null)) {
@@ -300,13 +210,8 @@ class StackPanel extends ComplexPanel {
   }
   return -1;
  }
- /**
-  * @param {Widget} child
-  * @param {number} index
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_Widget__int_$p_org_gwtproject_user_client_ui_StackPanel(child, index) {
+ /** @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_Widget__int_$p_org_gwtproject_user_client_ui_StackPanel(/** Widget */ child, /** number */ index) {
   let removed = super.m_remove__org_gwtproject_user_client_ui_Widget(child);
   if (removed) {
    let rowIndex = 2 * index;
@@ -323,22 +228,14 @@ class StackPanel extends ComplexPanel {
   }
   return removed;
  }
- /**
-  * @param {number} index
-  * @param {boolean} visible
-  * @public
-  */
- m_setStackContentVisible__int__boolean_$p_org_gwtproject_user_client_ui_StackPanel(index, visible) {
+ 
+ m_setStackContentVisible__int__boolean_$p_org_gwtproject_user_client_ui_StackPanel(/** number */ index, /** boolean */ visible) {
   let tr = DOM.m_getChild__org_gwtproject_dom_client_Element__int(this.f_body__org_gwtproject_user_client_ui_StackPanel_, (index * 2) + 1);
   UIObject.m_setVisible__org_gwtproject_dom_client_Element__boolean(tr, visible);
   this.m_getWidget__int(index).m_setVisible__boolean(visible);
  }
- /**
-  * @param {number} index
-  * @param {boolean} visible
-  * @public
-  */
- m_setStackVisible__int__boolean_$p_org_gwtproject_user_client_ui_StackPanel(index, visible) {
+ 
+ m_setStackVisible__int__boolean_$p_org_gwtproject_user_client_ui_StackPanel(/** number */ index, /** boolean */ visible) {
   let tr = DOM.m_getChild__org_gwtproject_dom_client_Element__int(this.f_body__org_gwtproject_user_client_ui_StackPanel_, (index * 2));
   if ($Equality.$same(tr, null)) {
    return;
@@ -352,11 +249,8 @@ class StackPanel extends ComplexPanel {
    UIObject.m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String__boolean(tdNext, j_l_String.m_valueOf__java_lang_Object(StackPanel.f_DEFAULT_ITEM_STYLENAME__org_gwtproject_user_client_ui_StackPanel_) + "-below-selected", visible);
   }
  }
- /**
-  * @param {number} beforeIndex
-  * @public
-  */
- m_updateIndicesFrom__int_$p_org_gwtproject_user_client_ui_StackPanel(beforeIndex) {
+ 
+ m_updateIndicesFrom__int_$p_org_gwtproject_user_client_ui_StackPanel(/** number */ beforeIndex) {
   for (let i = beforeIndex, c = this.m_getWidgetCount__(); i < c; ++i) {
    let childTR = DOM.m_getChild__org_gwtproject_dom_client_Element__int(this.f_body__org_gwtproject_user_client_ui_StackPanel_, i * 2);
    let childTD = DOM.m_getFirstChild__org_gwtproject_dom_client_Element(childTR);
@@ -368,49 +262,31 @@ class StackPanel extends ComplexPanel {
    }
   }
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_StackPanel() {
   this.f_visibleStack__org_gwtproject_user_client_ui_StackPanel_ = -1;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   StackPanel.$clinit = () =>{};
   StackPanel.$loadModules();
   ComplexPanel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof StackPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Integer = goog.module.get('java.lang.Integer$impl');
   Iterable = goog.module.get('java.lang.Iterable$impl');
@@ -428,9 +304,9 @@ $Util.$setClassMetadata(StackPanel, 'org.gwtproject.user.client.ui.StackPanel');
 
 ForIsWidget.$markImplementor(StackPanel);
 
-/** @public {?string} @const */
+/**@const {?string}*/
 StackPanel.f_DEFAULT_STYLENAME__org_gwtproject_user_client_ui_StackPanel_ = "gwt-StackPanel";
-/** @public {?string} @const */
+/**@const {?string}*/
 StackPanel.f_DEFAULT_ITEM_STYLENAME__org_gwtproject_user_client_ui_StackPanel_ = "gwt-StackPanelItem";
 
 exports = StackPanel; 

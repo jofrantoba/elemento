@@ -11,192 +11,77 @@ let $Overlay = goog.forwardDeclare('jsinterop.base.JsPropertyMap.$Overlay$impl')
 let $Long = goog.forwardDeclare('nativebootstrap.Long$impl');
 
 class InternalJsUtil extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @template T
-  * @return {Object<string, T>}
-  * @public
-  */
+ // /** @template T @return {Object<string, T>} */
  // native static emptyObjectLiteral() 
- /**
-  * @param {*} obj
-  * @param {?string} key
-  * @return {*}
-  * @public
-  */
- // native static getIndexed(obj, key) 
- /**
-  * @param {*} obj
-  * @param {?string} key
-  * @return {boolean}
-  * @public
-  */
- // native static hasIndexed(obj, key) 
- /**
-  * @param {*} obj
-  * @param {?string} key
-  * @return {*}
-  * @public
-  */
- // native static deleteIndexed(obj, key) 
- /**
-  * @param {*} obj
-  * @param {?string} key
-  * @param {*} value
-  * @public
-  */
- // native static setIndexed(obj, key, value) 
- /**
-  * @param {*} obj
-  * @param {number} key
-  * @return {*}
-  * @public
-  */
- // native static getIndexed(obj, key) 
- /**
-  * @param {*} obj
-  * @param {number} key
-  * @return {boolean}
-  * @public
-  */
- // native static hasIndexed(obj, key) 
- /**
-  * @param {*} obj
-  * @param {number} key
-  * @public
-  */
- // native static deleteIndexed(obj, key) 
- /**
-  * @param {*} obj
-  * @param {number} key
-  * @param {*} value
-  * @public
-  */
- // native static setIndexed(obj, key, value) 
- /**
-  * @param {*} obj
-  * @param {?function(?string):void} cb
-  * @public
-  */
- // native static forEach(obj, cb) 
- /**
-  * @param {*} obj
-  * @return {boolean}
-  * @public
-  */
- // native static castToAny(obj) 
- /**
-  * @param {*} obj
-  * @return {number}
-  * @public
-  */
- // native static castToAny(obj) 
- /**
-  * @param {*} obj
-  * @return {number}
-  * @public
-  */
- // native static castToAny(obj) 
- /**
-  * @param {*} obj
-  * @return {number}
-  * @public
-  */
- // native static castToAny(obj) 
- /**
-  * @param {*} obj
-  * @return {number}
-  * @public
-  */
- // native static castToAny(obj) 
- /**
-  * @param {*} obj
-  * @return {number}
-  * @public
-  */
- // native static castToAny(obj) 
- /**
-  * @param {*} obj
-  * @return {!$Long}
-  * @public
-  */
- // native static castToAny(obj) 
- /**
-  * @param {*} obj
-  * @return {boolean}
-  * @public
-  */
- // native static isLong(obj) 
- /**
-  * @param {*} obj
-  * @return {boolean}
-  * @public
-  */
- // native static isInt(obj) 
- /**
-  * @param {*} obj
-  * @return {boolean}
-  * @public
-  */
- // native static hasLength(obj) 
- /**
-  * @param {IArrayLike<?>} obj
-  * @return {number}
-  * @public
-  */
- // native static getLength(obj) 
- /**
-  * @param {IArrayLike<?>} obj
-  * @param {number} length
-  * @public
-  */
- // native static setLength(obj, length) 
- /**
-  * @template T
-  * @param {j_l_Class<T>} clazz
-  * @return {?function(...*):void}
-  * @public
-  */
- // native static toCtor(clazz) 
- /**
-  * @return {!InternalJsUtil}
-  * @public
-  */
+ // /** @return {*} */
+ // native static getIndexed(/** * */ obj, /** ?string */ key) 
+ // /** @return {boolean} */
+ // native static hasIndexed(/** * */ obj, /** ?string */ key) 
+ // /** @return {*} */
+ // native static deleteIndexed(/** * */ obj, /** ?string */ key) 
+ // 
+ // native static setIndexed(/** * */ obj, /** ?string */ key, /** * */ value) 
+ // /** @return {*} */
+ // native static getIndexed(/** * */ obj, /** number */ key) 
+ // /** @return {boolean} */
+ // native static hasIndexed(/** * */ obj, /** number */ key) 
+ // 
+ // native static deleteIndexed(/** * */ obj, /** number */ key) 
+ // 
+ // native static setIndexed(/** * */ obj, /** number */ key, /** * */ value) 
+ // 
+ // native static forEach(/** * */ obj, /** ?function(?string):void */ cb) 
+ // /** @return {boolean} */
+ // native static castToAny(/** * */ obj) 
+ // /** @return {number} */
+ // native static castToAny(/** * */ obj) 
+ // /** @return {number} */
+ // native static castToAny(/** * */ obj) 
+ // /** @return {number} */
+ // native static castToAny(/** * */ obj) 
+ // /** @return {number} */
+ // native static castToAny(/** * */ obj) 
+ // /** @return {number} */
+ // native static castToAny(/** * */ obj) 
+ // /** @return {!$Long} */
+ // native static castToAny(/** * */ obj) 
+ // /** @return {boolean} */
+ // native static isLong(/** * */ obj) 
+ // /** @return {boolean} */
+ // native static isInt(/** * */ obj) 
+ // /** @return {boolean} */
+ // native static hasLength(/** * */ obj) 
+ // /** @return {number} */
+ // native static getLength(/** IArrayLike<?> */ obj) 
+ // 
+ // native static setLength(/** IArrayLike<?> */ obj, /** number */ length) 
+ // /** @template T @return {?function(...*):void} */
+ // native static toCtor(/** j_l_Class<T> */ clazz) 
+ /** @return {!InternalJsUtil} */
  static $create__() {
   let $instance = new InternalJsUtil();
   $instance.$ctor__jsinterop_base_InternalJsUtil__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__jsinterop_base_InternalJsUtil__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   InternalJsUtil.$clinit = () =>{};
   InternalJsUtil.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof InternalJsUtil;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Class = goog.module.get('java.lang.Class');
  }

@@ -7,73 +7,49 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @template H
   */
 class Type extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {number} */
+  /**@type {number}*/
   this.f_index__org_gwtproject_event_shared_Event_Type_ = 0;
  }
- /**
-  * @template H
-  * @return {!Type<H>}
-  * @public
-  */
+ /** @template H @return {!Type<H>} */
  static $create__() {
   Type.$clinit();
   let $instance = new Type();
   $instance.$ctor__org_gwtproject_event_shared_Event_Type__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_shared_Event_Type__() {
   this.$ctor__java_lang_Object__();
   this.f_index__org_gwtproject_event_shared_Event_Type_ = ++Type.f_nextHashCode__org_gwtproject_event_shared_Event_Type_;
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  hashCode() {
   return this.f_index__org_gwtproject_event_shared_Event_Type_;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  toString() {
   return "Event type";
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Type.$clinit = () =>{};
   Type.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Type;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }
 $Util.$setClassMetadata(Type, 'org.gwtproject.event.shared.Event$Type');
 
-/** @public {number} */
+/**@type {number}*/
 Type.f_nextHashCode__org_gwtproject_event_shared_Event_Type_ = 0;
 
 exports = Type; 

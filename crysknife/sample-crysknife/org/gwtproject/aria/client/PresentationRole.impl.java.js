@@ -8,35 +8,22 @@ const StructureRole = goog.require('org.gwtproject.aria.client.StructureRole$imp
  * @extends {StructureRole}
  */
 class PresentationRole {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   PresentationRole.$clinit = () =>{};
   PresentationRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  StructureRole.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_PresentationRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  StructureRole.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_PresentationRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_PresentationRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

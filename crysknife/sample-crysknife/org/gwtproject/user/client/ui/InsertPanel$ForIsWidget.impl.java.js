@@ -12,49 +12,27 @@ let IsWidget = goog.forwardDeclare('org.gwtproject.user.client.ui.IsWidget$impl'
  * @extends {ForIsWidget}
  */
 class InsertPanel_ForIsWidget {
- /**
-  * @abstract
-  * @param {IsWidget} w
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_IsWidget(w) {}
- /**
-  * @abstract
-  * @param {IsWidget} w
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_IsWidget__int(w, beforeIndex) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_add__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ w) {}
+ /** @abstract */
+ m_insert__org_gwtproject_user_client_ui_IsWidget__int(/** IsWidget */ w, /** number */ beforeIndex) {}
+ 
  static $clinit() {
   InsertPanel_ForIsWidget.$clinit = () =>{};
   InsertPanel_ForIsWidget.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  InsertPanel.$markImplementor(classConstructor);
-  ForIsWidget.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_InsertPanel_ForIsWidget = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  InsertPanel.$markImplementor(ctor);
+  ForIsWidget.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_InsertPanel_ForIsWidget = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_InsertPanel_ForIsWidget;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

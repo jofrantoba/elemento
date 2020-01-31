@@ -10,54 +10,37 @@ let DragLeaveEvent = goog.forwardDeclare('org.gwtproject.event.dom.client.DragLe
  * @implements {DragLeaveHandler}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(DragLeaveEvent):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(DragLeaveEvent):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(DragLeaveEvent):void} */
+  /**@type {?function(DragLeaveEvent):void}*/
   this.f_$$fn__org_gwtproject_event_dom_client_DragLeaveHandler_$LambdaAdaptor;
   this.$ctor__org_gwtproject_event_dom_client_DragLeaveHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_DragLeaveHandler_$JsFunction(fn);
  }
- /**
-  * @param {?function(DragLeaveEvent):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_event_dom_client_DragLeaveHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_DragLeaveHandler_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_event_dom_client_DragLeaveHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_DragLeaveHandler_$JsFunction(/** ?function(DragLeaveEvent):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_event_dom_client_DragLeaveHandler_$LambdaAdaptor = fn;
  }
- /**
-  * @param {DragLeaveEvent} arg0
-  * @public
-  */
- m_onDragLeave__org_gwtproject_event_dom_client_DragLeaveEvent(arg0) {
+ 
+ m_onDragLeave__org_gwtproject_event_dom_client_DragLeaveEvent(/** DragLeaveEvent */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_event_dom_client_DragLeaveHandler_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

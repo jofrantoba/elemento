@@ -14,18 +14,12 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class SimpleRadioButton extends SimpleCheckBox {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {Object} element
-  * @return {SimpleRadioButton}
-  * @public
-  */
- static m_wrap__org_gwtproject_dom_client_Element(element) {
+ /** @return {SimpleRadioButton} */
+ static m_wrap__org_gwtproject_dom_client_Element(/** Object */ element) {
   SimpleRadioButton.$clinit();
   $Asserts.$assert($Overlay.m_isOrHasChild__$devirt__org_gwtproject_dom_client_Node__org_gwtproject_dom_client_Node(Document_$Overlay.m_get__().body, element));
   let radioButton = SimpleRadioButton.$create__org_gwtproject_dom_client_Element(element);
@@ -33,85 +27,54 @@ class SimpleRadioButton extends SimpleCheckBox {
   RootPanel.m_detachOnWindowClose__org_gwtproject_user_client_ui_Widget(radioButton);
   return radioButton;
  }
- /**
-  * Factory method corresponding to constructor 'SimpleRadioButton(String)'.
-  * @param {?string} name
-  * @return {!SimpleRadioButton}
-  * @public
-  */
- static $create__java_lang_String(name) {
+ //Factory method corresponding to constructor 'SimpleRadioButton(String)'.
+ /** @return {!SimpleRadioButton} */
+ static $create__java_lang_String(/** ?string */ name) {
   SimpleRadioButton.$clinit();
   let $instance = new SimpleRadioButton();
   $instance.$ctor__org_gwtproject_user_client_ui_SimpleRadioButton__java_lang_String(name);
   return $instance;
  }
- /**
-  * Initialization from constructor 'SimpleRadioButton(String)'.
-  * @param {?string} name
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_SimpleRadioButton__java_lang_String(name) {
+ //Initialization from constructor 'SimpleRadioButton(String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_SimpleRadioButton__java_lang_String(/** ?string */ name) {
   this.$ctor__org_gwtproject_user_client_ui_SimpleCheckBox__org_gwtproject_dom_client_Element__java_lang_String(Document_$Overlay.m_createRadioInputElement__$devirt__org_gwtproject_dom_client_Document__java_lang_String(Document_$Overlay.m_get__(), name), "gwt-SimpleRadioButton");
  }
- /**
-  * Factory method corresponding to constructor 'SimpleRadioButton(Element)'.
-  * @param {Object} element
-  * @return {!SimpleRadioButton}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_Element(element) {
+ //Factory method corresponding to constructor 'SimpleRadioButton(Element)'.
+ /** @return {!SimpleRadioButton} */
+ static $create__org_gwtproject_dom_client_Element(/** Object */ element) {
   SimpleRadioButton.$clinit();
   let $instance = new SimpleRadioButton();
   $instance.$ctor__org_gwtproject_user_client_ui_SimpleRadioButton__org_gwtproject_dom_client_Element(element);
   return $instance;
  }
- /**
-  * Initialization from constructor 'SimpleRadioButton(Element)'.
-  * @param {Object} element
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_SimpleRadioButton__org_gwtproject_dom_client_Element(element) {
+ //Initialization from constructor 'SimpleRadioButton(Element)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_SimpleRadioButton__org_gwtproject_dom_client_Element(/** Object */ element) {
   this.$ctor__org_gwtproject_user_client_ui_SimpleCheckBox__org_gwtproject_dom_client_Element__java_lang_String(element, null);
   $Asserts.$assert(j_l_String.m_equalsIgnoreCase__java_lang_String__java_lang_String(InputElement_$Overlay.m_as__org_gwtproject_dom_client_Element(element).type, "radio"));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_setValue__java_lang_Object(arg0) {
-  super.m_setValue__java_lang_Boolean(/**@type {?boolean} */ ($Casts.$to(arg0, Boolean)));
+ //Bridge method.
+ /** @override */
+ m_setValue__java_lang_Object(/** * */ arg0) {
+  super.m_setValue__java_lang_Boolean(/**@type {?boolean}*/ ($Casts.$to(arg0, Boolean)));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @param {boolean} arg1
-  * @public
-  */
- m_setValue__java_lang_Object__boolean(arg0, arg1) {
-  super.m_setValue__java_lang_Boolean__boolean(/**@type {?boolean} */ ($Casts.$to(arg0, Boolean)), arg1);
+ //Bridge method.
+ /** @override */
+ m_setValue__java_lang_Object__boolean(/** * */ arg0, /** boolean */ arg1) {
+  super.m_setValue__java_lang_Boolean__boolean(/**@type {?boolean}*/ ($Casts.$to(arg0, Boolean)), arg1);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SimpleRadioButton.$clinit = () =>{};
   SimpleRadioButton.$loadModules();
   SimpleCheckBox.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SimpleRadioButton;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Boolean = goog.module.get('java.lang.Boolean$impl');
   j_l_String = goog.module.get('java.lang.String$impl');

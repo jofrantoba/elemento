@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TableSectionBuilder.impl.java.js",
-"lineCount":76,
-"mappings":"A;;;;;;;;;MAoBiB,mB;;;;;;;CASK,yB,CAAaA,K;;;;;;;CASb,sB,CAAUC,E;;;;;;;CASV,yB,CAAaC,K;;;;;;;CAMb,0B,CAAcC,M;;;;QAjCnB,O;EAAAC,sC;EAAAA,mC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAEf;oBAAO,yEAAP;",
+"lineCount":43,
+"mappings":"A;;;;;;;;;MAoBiB,mB;;CASK,yB,gBAAaA,K;;CASb,sB,gBAAUC,E;;CASV,yB,gBAAaC,K;;CAMb,0B,gBAAcC,M;;QAjCnB,O;EAAAC,sC;EAAAA,mC;;;;;;;;;;;;;;;;;;;;AAEf;oBAAO,yEAAP;",
 "sources":["TableSectionBuilder.java"],
 "names":["align","ch","chOff","vAlign","org.gwtproject.dom.builder.shared.TableSectionBuilder.<clinit>"]
 }

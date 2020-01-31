@@ -6,24 +6,17 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Overlay = goog.forwardDeclare('jsinterop.base.JsPropertyMap.$Overlay$impl');
 
 class ProgressEventInit_$Overlay {
- /**
-  * @return {ProgressEventInit}
-  * @public
-  */
+ /** @return {ProgressEventInit} */
  static m_create__() {
   ProgressEventInit_$Overlay.$clinit();
-  return /**@type {ProgressEventInit} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
+  return /**@type {ProgressEventInit}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ProgressEventInit_$Overlay.$clinit = () =>{};
   ProgressEventInit_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"InitializeEvent.impl.java.js",
-"lineCount":116,
-"mappings":"A;;;;;;;;;;;;;;;MAsBa,e;;;;CAAA,W;EAAAA,Q;;;;;;;QAWwD,iE,CAAOC,M;EAAPC,0B;EACjEA;GACEA,IAAgBC,KAAhBD,+BADFA;GAEEA,mGAFFA;G;;;;;;QAWoC,W;EAAAE,0B;EACpCA;GACEA,yIADFA;G;EAGAA,oF;;;;;;QAIQ,S;EAAAC,0B;EAAAA,sC;EAAAA,yE;EAAAA,iB;;;;;CAAA,4D;EAAAC,kD;;;;;;;CAG2B,qB;EACnCC,oF;;;;;;CAIa,iE,CAA2BC,O;EACxCC,kF;;;;;;;;CAxCS,4B;EAAAA,8I;;;;;QAAA,O;EAAAC,kC;EAAAA,+B;EAAAA,gB;;;;;;;;;;;;;;;;;;;;;;;AAAA;gBAG4B,4DAH5B;",
+"lineCount":83,
+"mappings":"A;;;;;;;;;;;;;;;MAsBa,e;;CAAA,W;EAAAA,Q;;;QAWwD,iE,UAAOC,M;EAAPC,0B;EACjEA;GACEA,IAAgBC,KAAhBD,+BADFA;GAEEA,kGAFFA;G;;;QAWoC,W;EAAAE,0B;EACpCA;GACEA,wIADFA;G;EAGAA,oF;;;QAIQ,S;EAAAC,0B;EAAAA,sC;EAAAA,yE;EAAAA,iB;;;CAAA,4D;EAAAC,kD;;;CAG2B,qB;EACnCC,oF;;;CAIa,iE,0BAA2BC,O;EACxCC,kF;;;;CAxCS,4B;EAAAA,6I;;;QAAA,O;EAAAC,kC;EAAAA,+B;EAAAA,gB;;;;;;;;;;;;;;;;;AAAA;gBAG4B,4DAH5B;",
 "sources":["InitializeEvent.java"],
 "names":["org.gwtproject.event.logical.shared.InitializeEvent.<synthetic: ctor_js>","source","org.gwtproject.event.logical.shared.InitializeEvent.fire","event","org.gwtproject.event.logical.shared.InitializeEvent.getType","org.gwtproject.event.logical.shared.InitializeEvent.<synthetic: ctor_create>","org.gwtproject.event.logical.shared.InitializeEvent.<init>","org.gwtproject.event.logical.shared.InitializeEvent.getAssociatedType","handler","org.gwtproject.event.logical.shared.InitializeEvent.dispatch","org.gwtproject.event.logical.shared.InitializeEvent.<clinit>"]
 }

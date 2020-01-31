@@ -8,47 +8,26 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @extends {ElementDescriptor}
  */
 class PropertyDescriptor {
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_isCascaded__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getPropertyName__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   PropertyDescriptor.$clinit = () =>{};
   PropertyDescriptor.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ElementDescriptor.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__javax_validation_metadata_PropertyDescriptor = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ElementDescriptor.$markImplementor(ctor);
+  ctor.prototype.$implements__javax_validation_metadata_PropertyDescriptor = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__javax_validation_metadata_PropertyDescriptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

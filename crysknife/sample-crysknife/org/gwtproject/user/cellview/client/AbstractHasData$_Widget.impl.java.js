@@ -9,74 +9,46 @@ let AbstractHasData = goog.forwardDeclare('org.gwtproject.user.cellview.client.A
  * @template T
   */
 class __Widget extends Widget {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {AbstractHasData<T>} */
+  /**@type {AbstractHasData<T>}*/
   this.f_$outer_this__org_gwtproject_user_cellview_client_AbstractHasData__Widget;
  }
- /**
-  * @template T
-  * @param {AbstractHasData<T>} $outer_this
-  * @return {!__Widget<T>}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_AbstractHasData($outer_this) {
+ /** @template T @return {!__Widget<T>} */
+ static $create__org_gwtproject_user_cellview_client_AbstractHasData(/** AbstractHasData<T> */ $outer_this) {
   let $instance = new __Widget();
   $instance.$ctor__org_gwtproject_user_cellview_client_AbstractHasData__Widget__org_gwtproject_user_cellview_client_AbstractHasData($outer_this);
   return $instance;
  }
- /**
-  * @param {AbstractHasData<T>} $outer_this
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_AbstractHasData__Widget__org_gwtproject_user_cellview_client_AbstractHasData($outer_this) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_AbstractHasData__Widget__org_gwtproject_user_cellview_client_AbstractHasData(/** AbstractHasData<T> */ $outer_this) {
   this.f_$outer_this__org_gwtproject_user_cellview_client_AbstractHasData__Widget = $outer_this;
   this.$ctor__org_gwtproject_user_client_ui_Widget__();
  }
- /**
-  * @override
-  * @param {Widget} parent
-  * @public
-  */
- m_setParent__org_gwtproject_user_client_ui_Widget(parent) {
+ /** @override */
+ m_setParent__org_gwtproject_user_client_ui_Widget(/** Widget */ parent) {
   super.m_setParent__org_gwtproject_user_client_ui_Widget(parent);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onAttach__() {
   super.m_onAttach__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onDetach__() {
   super.m_onDetach__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   __Widget.$clinit = () =>{};
   __Widget.$loadModules();
   Widget.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof __Widget;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

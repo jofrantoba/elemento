@@ -13,55 +13,31 @@ let $Overlay = goog.forwardDeclare('elemental2.dom.HTMLElement.$Overlay$impl');
  * @extends {IsElement<E>}
  */
 class TextContent {
- /**
-  * @abstract
-  * @param {?string} text
-  * @return {B}
-  * @public
-  */
- m_textContent__java_lang_String(text) {}
- /**
-  * @template E, B
-  * @param {!TextContent<E, B>} $thisArg
-  * @param {?string} text
-  * @return {B}
-  * @public
-  */
- static m_textContent__$default__org_jboss_elemento_TextContent__java_lang_String($thisArg, text) {
+ /** @abstract @return {B} */
+ m_textContent__java_lang_String(/** ?string */ text) {}
+ /** @template E, B @return {B} */
+ static m_textContent__$default__org_jboss_elemento_TextContent__java_lang_String(/** !TextContent<E, B> */ $thisArg, /** ?string */ text) {
   TextContent.$clinit();
-  /**@type {HTMLElement} */ ($thisArg.m_element__()).textContent = text;
+  /**@type {HTMLElement}*/ ($thisArg.m_element__()).textContent = text;
   return $thisArg.m_that__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TextContent.$clinit = () =>{};
   TextContent.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  TypedBuilder.$markImplementor(classConstructor);
-  IsElement.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_jboss_elemento_TextContent = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  TypedBuilder.$markImplementor(ctor);
+  IsElement.$markImplementor(ctor);
+  ctor.prototype.$implements__org_jboss_elemento_TextContent = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_jboss_elemento_TextContent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

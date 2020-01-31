@@ -9,70 +9,42 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class ConstructorReadableStrategyUnionType_$Overlay {
- /**
-  * @param {*} o
-  * @return {?}
-  * @public
-  */
- static m_of__java_lang_Object(o) {
+ /** @return {?} */
+ static m_of__java_lang_Object(/** * */ o) {
   ConstructorReadableStrategyUnionType_$Overlay.$clinit();
-  return /**@type {?} */ (Js.m_cast__java_lang_Object(o));
+  return /**@type {?}*/ (Js.m_cast__java_lang_Object(o));
  }
- /**
-  * @param {?} $thisArg
-  * @return {ByteLengthQueuingStrategy}
-  * @public
-  */
- static m_asByteLengthQueuingStrategy__$devirt__elemental2_dom_TransformStream_ConstructorReadableStrategyUnionType($thisArg) {
+ /** @return {ByteLengthQueuingStrategy} */
+ static m_asByteLengthQueuingStrategy__$devirt__elemental2_dom_TransformStream_ConstructorReadableStrategyUnionType(/** ? */ $thisArg) {
   ConstructorReadableStrategyUnionType_$Overlay.$clinit();
-  return /**@type {ByteLengthQueuingStrategy} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $Overlay));
+  return /**@type {ByteLengthQueuingStrategy}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $Overlay));
  }
- /**
-  * @param {?} $thisArg
-  * @return {CountQueuingStrategy}
-  * @public
-  */
- static m_asCountQueuingStrategy__$devirt__elemental2_dom_TransformStream_ConstructorReadableStrategyUnionType($thisArg) {
+ /** @return {CountQueuingStrategy} */
+ static m_asCountQueuingStrategy__$devirt__elemental2_dom_TransformStream_ConstructorReadableStrategyUnionType(/** ? */ $thisArg) {
   ConstructorReadableStrategyUnionType_$Overlay.$clinit();
-  return /**@type {CountQueuingStrategy} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), CountQueuingStrategy_$Overlay));
+  return /**@type {CountQueuingStrategy}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), CountQueuingStrategy_$Overlay));
  }
- /**
-  * @param {?} $thisArg
-  * @return {?}
-  * @public
-  */
- static m_asTransformStreamWritableStrategyType__$devirt__elemental2_dom_TransformStream_ConstructorReadableStrategyUnionType($thisArg) {
+ /** @return {?} */
+ static m_asTransformStreamWritableStrategyType__$devirt__elemental2_dom_TransformStream_ConstructorReadableStrategyUnionType(/** ? */ $thisArg) {
   ConstructorReadableStrategyUnionType_$Overlay.$clinit();
-  return /**@type {?} */ (Js.m_cast__java_lang_Object($thisArg));
+  return /**@type {?}*/ (Js.m_cast__java_lang_Object($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isByteLengthQueuingStrategy__$devirt__elemental2_dom_TransformStream_ConstructorReadableStrategyUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isByteLengthQueuingStrategy__$devirt__elemental2_dom_TransformStream_ConstructorReadableStrategyUnionType(/** ? */ $thisArg) {
   ConstructorReadableStrategyUnionType_$Overlay.$clinit();
-  return $Overlay.$isInstance(/**@type {*} */ ($thisArg));
+  return $Overlay.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isCountQueuingStrategy__$devirt__elemental2_dom_TransformStream_ConstructorReadableStrategyUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isCountQueuingStrategy__$devirt__elemental2_dom_TransformStream_ConstructorReadableStrategyUnionType(/** ? */ $thisArg) {
   ConstructorReadableStrategyUnionType_$Overlay.$clinit();
-  return CountQueuingStrategy_$Overlay.$isInstance(/**@type {*} */ ($thisArg));
+  return CountQueuingStrategy_$Overlay.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ConstructorReadableStrategyUnionType_$Overlay.$clinit = () =>{};
   ConstructorReadableStrategyUnionType_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('elemental2.dom.ByteLengthQueuingStrategy.$Overlay$impl');
   CountQueuingStrategy_$Overlay = goog.module.get('elemental2.dom.CountQueuingStrategy.$Overlay$impl');

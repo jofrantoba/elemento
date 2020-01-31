@@ -11,54 +11,37 @@ let ValueChangeEvent = goog.forwardDeclare('org.gwtproject.event.logical.shared.
  * @implements {ValueChangeHandler<T>}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(ValueChangeEvent<T>):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(ValueChangeEvent<T>):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(ValueChangeEvent<T>):void} */
+  /**@type {?function(ValueChangeEvent<T>):void}*/
   this.f_$$fn__org_gwtproject_event_logical_shared_ValueChangeHandler_$LambdaAdaptor;
   this.$ctor__org_gwtproject_event_logical_shared_ValueChangeHandler_$LambdaAdaptor__org_gwtproject_event_logical_shared_ValueChangeHandler_$JsFunction(fn);
  }
- /**
-  * @param {?function(ValueChangeEvent<T>):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_event_logical_shared_ValueChangeHandler_$LambdaAdaptor__org_gwtproject_event_logical_shared_ValueChangeHandler_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_event_logical_shared_ValueChangeHandler_$LambdaAdaptor__org_gwtproject_event_logical_shared_ValueChangeHandler_$JsFunction(/** ?function(ValueChangeEvent<T>):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_event_logical_shared_ValueChangeHandler_$LambdaAdaptor = fn;
  }
- /**
-  * @param {ValueChangeEvent<T>} arg0
-  * @public
-  */
- m_onValueChange__org_gwtproject_event_logical_shared_ValueChangeEvent(arg0) {
+ 
+ m_onValueChange__org_gwtproject_event_logical_shared_ValueChangeEvent(/** ValueChangeEvent<T> */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_event_logical_shared_ValueChangeHandler_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

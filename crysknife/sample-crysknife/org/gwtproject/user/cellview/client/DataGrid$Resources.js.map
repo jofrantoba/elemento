@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DataGrid$Resources.impl.java.js",
-"lineCount":86,
-"mappings":"A;;;;;;;;;;;;;MAsFmB,S;;;;;;CAQD,mB;;;;;;CAOA,yB;;;;;;CAOA,0B;;;;;;CAMR,iB;;;;;QA1BN,sE;EAAAA,4G;;;;;QAFe,O;EAAAC,4B;EAAAA,yB;EAEfA,oH;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFe;;",
+"lineCount":54,
+"mappings":"A;;;;;;;;;;;;;MAsFmB,S;;CAQD,mB;;CAOA,yB;;CAOA,0B;;CAMR,iB;;QA1BN,sE;EAAAA,4G;;;QAFe,O;EAAAC,4B;EAAAA,yB;EAEfA,oH;;;;;;;;;;;;;;;;;;;;;;AAFe;;",
 "sources":["DataGrid.java"],
 "names":["org.gwtproject.user.cellview.client.DataGrid$Resources.<synthetic: getter>","org.gwtproject.user.cellview.client.DataGrid$Resources.<clinit>"]
 }

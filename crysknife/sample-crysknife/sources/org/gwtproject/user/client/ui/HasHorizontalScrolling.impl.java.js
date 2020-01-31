@@ -6,58 +6,29 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @interface
  */
 class HasHorizontalScrolling {
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {number} */
  m_getHorizontalScrollPosition__() {}
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {number} */
  m_getMaximumHorizontalScrollPosition__() {}
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {number} */
  m_getMinimumHorizontalScrollPosition__() {}
- /**
-  * @abstract
-  * @param {number} position
-  * @public
-  */
- m_setHorizontalScrollPosition__int(position) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_setHorizontalScrollPosition__int(/** number */ position) {}
+ 
  static $clinit() {
   HasHorizontalScrolling.$clinit = () =>{};
   HasHorizontalScrolling.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_HasHorizontalScrolling = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_HasHorizontalScrolling = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_HasHorizontalScrolling;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

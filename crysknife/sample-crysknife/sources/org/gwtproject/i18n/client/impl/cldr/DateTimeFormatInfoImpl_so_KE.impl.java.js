@@ -4,87 +4,52 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const DateTimeFormatInfoImpl__so = goog.require('org.gwtproject.i18n.client.impl.cldr.DateTimeFormatInfoImpl_so$impl');
 
 class DateTimeFormatInfoImpl__so__KE extends DateTimeFormatInfoImpl__so {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!DateTimeFormatInfoImpl__so__KE}
-  * @public
-  */
+ /** @return {!DateTimeFormatInfoImpl__so__KE} */
  static $create__() {
   DateTimeFormatInfoImpl__so__KE.$clinit();
   let $instance = new DateTimeFormatInfoImpl__so__KE();
   $instance.$ctor__org_gwtproject_i18n_client_impl_cldr_DateTimeFormatInfoImpl_so_KE__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_i18n_client_impl_cldr_DateTimeFormatInfoImpl_so_KE__() {
   this.$ctor__org_gwtproject_i18n_client_impl_cldr_DateTimeFormatInfoImpl_so__();
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_firstDayOfTheWeek__() {
   return 0;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_timeFormatFull__() {
   return "HH:mm:ss zzzz";
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_timeFormatLong__() {
   return "HH:mm:ss z";
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_timeFormatMedium__() {
   return "HH:mm:ss";
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_timeFormatShort__() {
   return "HH:mm";
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DateTimeFormatInfoImpl__so__KE.$clinit = () =>{};
   DateTimeFormatInfoImpl__so__KE.$loadModules();
   DateTimeFormatInfoImpl__so.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DateTimeFormatInfoImpl__so__KE;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

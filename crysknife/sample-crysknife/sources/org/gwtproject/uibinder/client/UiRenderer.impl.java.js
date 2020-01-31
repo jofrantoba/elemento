@@ -9,50 +9,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.uibinder.client.UiRende
  * @interface
  */
 class UiRenderer {
- /**
-  * @abstract
-  * @param {Object} parent
-  * @return {boolean}
-  * @public
-  */
- m_isParentOrRenderer__org_gwtproject_dom_client_Element(parent) {}
- /**
-  * @param {?function(Object):boolean} fn
-  * @return {UiRenderer}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract @return {boolean} */
+ m_isParentOrRenderer__org_gwtproject_dom_client_Element(/** Object */ parent) {}
+ /** @return {UiRenderer} */
+ static $adapt(/** ?function(Object):boolean */ fn) {
   UiRenderer.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   UiRenderer.$clinit = () =>{};
   UiRenderer.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_uibinder_client_UiRenderer = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_uibinder_client_UiRenderer = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_uibinder_client_UiRenderer;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.uibinder.client.UiRenderer.$LambdaAdaptor$impl');
  }

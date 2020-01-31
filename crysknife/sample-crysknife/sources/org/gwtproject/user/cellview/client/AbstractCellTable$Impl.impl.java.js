@@ -23,39 +23,26 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 
 class Impl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_tmpElem__org_gwtproject_user_cellview_client_AbstractCellTable_Impl_;
  }
- /**
-  * @return {!Impl}
-  * @public
-  */
+ /** @return {!Impl} */
  static $create__() {
   Impl.$clinit();
   let $instance = new Impl();
   $instance.$ctor__org_gwtproject_user_cellview_client_AbstractCellTable_Impl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_cellview_client_AbstractCellTable_Impl__() {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_user_cellview_client_AbstractCellTable_Impl();
  }
- /**
-  * @param {AbstractCellTable<?>} table
-  * @param {?string} sectionTag
-  * @param {SafeHtml} rowHtml
-  * @return {Object}
-  * @public
-  */
- m_convertToSectionElement__org_gwtproject_user_cellview_client_AbstractCellTable__java_lang_String__org_gwtproject_safehtml_shared_SafeHtml(table, sectionTag, rowHtml) {
+ /** @return {Object} */
+ m_convertToSectionElement__org_gwtproject_user_cellview_client_AbstractCellTable__java_lang_String__org_gwtproject_safehtml_shared_SafeHtml(/** AbstractCellTable<?> */ table, /** ?string */ sectionTag, /** SafeHtml */ rowHtml) {
   DOM.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(this.f_tmpElem__org_gwtproject_user_cellview_client_AbstractCellTable_Impl_, table);
   sectionTag = j_l_String.m_toLowerCase__java_lang_String__java_util_Locale(sectionTag, Locale.f_ROOT__java_util_Locale);
   if ($Equality.$same("tbody", sectionTag)) {
@@ -67,10 +54,10 @@ class Impl extends j_l_Object {
   } else {
    throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String("Invalid table section tag: " + j_l_String.m_valueOf__java_lang_Object(sectionTag)));
   }
-  let tableElem = /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject($Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(this.f_tmpElem__org_gwtproject_user_cellview_client_AbstractCellTable_Impl_)), TableElement_$Overlay));
+  let tableElem = /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject($Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(this.f_tmpElem__org_gwtproject_user_cellview_client_AbstractCellTable_Impl_)), TableElement_$Overlay));
   DOM.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(this.f_tmpElem__org_gwtproject_user_cellview_client_AbstractCellTable_Impl_, null);
   if ($Equality.$same("tbody", sectionTag)) {
-   return /**@type {Object} */ ($Casts.$to(NodeList_$Overlay.m_getItem__$devirt__org_gwtproject_dom_client_NodeList__int(tableElem.tBodies, 0), TableSectionElement_$Overlay));
+   return /**@type {Object}*/ ($Casts.$to(NodeList_$Overlay.m_getItem__$devirt__org_gwtproject_dom_client_NodeList__int(tableElem.tBodies, 0), TableSectionElement_$Overlay));
   } else if ($Equality.$same("thead", sectionTag)) {
    return tableElem.tHead;
   } else if ($Equality.$same("tfoot", sectionTag)) {
@@ -79,13 +66,8 @@ class Impl extends j_l_Object {
    throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String("Invalid table section tag: " + j_l_String.m_valueOf__java_lang_Object(sectionTag)));
   }
  }
- /**
-  * @param {AbstractCellTable<?>} table
-  * @param {Object} section
-  * @param {SafeHtml} html
-  * @public
-  */
- m_replaceAllRows__org_gwtproject_user_cellview_client_AbstractCellTable__org_gwtproject_dom_client_TableSectionElement__org_gwtproject_safehtml_shared_SafeHtml(table, section, html) {
+ 
+ m_replaceAllRows__org_gwtproject_user_cellview_client_AbstractCellTable__org_gwtproject_dom_client_TableSectionElement__org_gwtproject_safehtml_shared_SafeHtml(/** AbstractCellTable<?> */ table, /** Object */ section, /** SafeHtml */ html) {
   if (!table.m_isAttached__()) {
    DOM.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(table.m_getElement__(), table);
   }
@@ -98,15 +80,8 @@ class Impl extends j_l_Object {
    DOM.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(table.m_getElement__(), null);
   }
  }
- /**
-  * @param {AbstractCellTable<?>} table
-  * @param {Object} section
-  * @param {SafeHtml} html
-  * @param {number} startIndex
-  * @param {number} childCount
-  * @public
-  */
- m_replaceChildren__org_gwtproject_user_cellview_client_AbstractCellTable__org_gwtproject_dom_client_TableSectionElement__org_gwtproject_safehtml_shared_SafeHtml__int__int(table, section, html, startIndex, childCount) {
+ 
+ m_replaceChildren__org_gwtproject_user_cellview_client_AbstractCellTable__org_gwtproject_dom_client_TableSectionElement__org_gwtproject_safehtml_shared_SafeHtml__int__int(/** AbstractCellTable<?> */ table, /** Object */ section, /** SafeHtml */ html, /** number */ startIndex, /** number */ childCount) {
   if (!table.m_isAttached__()) {
    DOM.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(table.m_getElement__(), table);
   }
@@ -114,20 +89,20 @@ class Impl extends j_l_Object {
   let nextSection = $Overlay.m_getNextSiblingElement__$devirt__org_gwtproject_dom_client_Element(section);
   this.m_detachSectionElement__org_gwtproject_dom_client_TableSectionElement(section);
   let absEndIndex = table.m_getPageStart__() + startIndex + childCount;
-  let insertBefore = /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(table.m_getChildElement__int(startIndex)), TableRowElement_$Overlay));
+  let insertBefore = /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(table.m_getChildElement__int(startIndex)), TableRowElement_$Overlay));
   if (table.f_legacyRenderRowValues__org_gwtproject_user_cellview_client_AbstractCellTable_) {
    let count = 0;
    while (!$Equality.$same(insertBefore, null) && count < childCount) {
     let next = $Overlay.m_getNextSiblingElement__$devirt__org_gwtproject_dom_client_Element(insertBefore);
     section.removeChild(insertBefore);
-    insertBefore = $Equality.$same(next, null) ? null : /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(next), TableRowElement_$Overlay));
+    insertBefore = $Equality.$same(next, null) ? null : /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(next), TableRowElement_$Overlay));
     count++;
    }
   } else {
    while (!$Equality.$same(insertBefore, null) && table.f_tableBuilder__org_gwtproject_user_cellview_client_AbstractCellTable_.m_getRowValueIndex__org_gwtproject_dom_client_TableRowElement(insertBefore) < absEndIndex) {
     let next_1 = $Overlay.m_getNextSiblingElement__$devirt__org_gwtproject_dom_client_Element(insertBefore);
     section.removeChild(insertBefore);
-    insertBefore = $Equality.$same(next_1, null) ? null : /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(next_1), TableRowElement_$Overlay));
+    insertBefore = $Equality.$same(next_1, null) ? null : /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(next_1), TableRowElement_$Overlay));
    }
   }
   let newSection = this.m_convertToSectionElement__org_gwtproject_user_cellview_client_AbstractCellTable__java_lang_String__org_gwtproject_safehtml_shared_SafeHtml(table, $Overlay.m_getTagName__$devirt__org_gwtproject_dom_client_Element(section), html);
@@ -142,56 +117,33 @@ class Impl extends j_l_Object {
    DOM.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(table.m_getElement__(), null);
   }
  }
- /**
-  * @param {Object} section
-  * @public
-  */
- m_detachSectionElement__org_gwtproject_dom_client_TableSectionElement(section) {
+ 
+ m_detachSectionElement__org_gwtproject_dom_client_TableSectionElement(/** Object */ section) {
   Node_$Overlay.m_removeFromParent__$devirt__org_gwtproject_dom_client_Node(section);
  }
- /**
-  * @param {Object} parent
-  * @param {Object} section
-  * @param {Object} nextSection
-  * @public
-  */
- m_reattachSectionElement__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_TableSectionElement__org_gwtproject_dom_client_Element(parent, section, nextSection) {
+ 
+ m_reattachSectionElement__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_TableSectionElement__org_gwtproject_dom_client_Element(/** Object */ parent, /** Object */ section, /** Object */ nextSection) {
   parent.insertBefore(section, nextSection);
  }
- /**
-  * @param {AbstractCellTable<?>} table
-  * @param {Object} section
-  * @param {SafeHtml} html
-  * @public
-  */
- m_replaceAllRowsImpl__org_gwtproject_user_cellview_client_AbstractCellTable__org_gwtproject_dom_client_TableSectionElement__org_gwtproject_safehtml_shared_SafeHtml(table, section, html) {
+ 
+ m_replaceAllRowsImpl__org_gwtproject_user_cellview_client_AbstractCellTable__org_gwtproject_dom_client_TableSectionElement__org_gwtproject_safehtml_shared_SafeHtml(/** AbstractCellTable<?> */ table, /** Object */ section, /** SafeHtml */ html) {
   $Overlay.m_setInnerSafeHtml__$devirt__org_gwtproject_dom_client_Element__org_gwtproject_safehtml_shared_SafeHtml(section, html);
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_cellview_client_AbstractCellTable_Impl() {
   this.f_tmpElem__org_gwtproject_user_cellview_client_AbstractCellTable_Impl_ = Document_$Overlay.m_createDivElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Impl.$clinit = () =>{};
   Impl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Impl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
   j_l_String = goog.module.get('java.lang.String$impl');

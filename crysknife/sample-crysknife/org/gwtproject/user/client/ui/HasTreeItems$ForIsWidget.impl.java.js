@@ -11,42 +11,24 @@ let TreeItem = goog.forwardDeclare('org.gwtproject.user.client.ui.TreeItem$impl'
  * @extends {HasTreeItems}
  */
 class ForIsWidget {
- /**
-  * @abstract
-  * @param {IsWidget} w
-  * @return {TreeItem}
-  * @public
-  */
- m_addItem__org_gwtproject_user_client_ui_IsWidget(w) {}
- /**
-  * @public
-  */
+ /** @abstract @return {TreeItem} */
+ m_addItem__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ w) {}
+ 
  static $clinit() {
   ForIsWidget.$clinit = () =>{};
   ForIsWidget.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasTreeItems.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_HasTreeItems_ForIsWidget = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasTreeItems.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_HasTreeItems_ForIsWidget = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_HasTreeItems_ForIsWidget;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

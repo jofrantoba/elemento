@@ -9,41 +9,24 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @deprecated
  */
 class PluralText {
- /**
-  * @abstract
-  * @return {Array<?string>}
-  * @public
-  */
+ /** @abstract @return {Array<?string>} */
  m_value__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   PluralText.$clinit = () =>{};
   PluralText.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_i18n_client_Messages_PluralText = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_i18n_client_Messages_PluralText = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_i18n_client_Messages_PluralText;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

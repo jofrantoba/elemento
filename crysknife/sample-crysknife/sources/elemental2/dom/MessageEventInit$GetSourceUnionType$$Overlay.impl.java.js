@@ -9,79 +9,47 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class GetSourceUnionType_$Overlay {
- /**
-  * @param {*} o
-  * @return {?}
-  * @public
-  */
- static m_of__java_lang_Object(o) {
+ /** @return {?} */
+ static m_of__java_lang_Object(/** * */ o) {
   GetSourceUnionType_$Overlay.$clinit();
-  return /**@type {?} */ (Js.m_cast__java_lang_Object(o));
+  return /**@type {?}*/ (Js.m_cast__java_lang_Object(o));
  }
- /**
-  * @param {?} $thisArg
-  * @return {MessagePort}
-  * @public
-  */
- static m_asMessagePort__$devirt__elemental2_dom_MessageEventInit_GetSourceUnionType($thisArg) {
+ /** @return {MessagePort} */
+ static m_asMessagePort__$devirt__elemental2_dom_MessageEventInit_GetSourceUnionType(/** ? */ $thisArg) {
   GetSourceUnionType_$Overlay.$clinit();
-  return /**@type {MessagePort} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $Overlay));
+  return /**@type {MessagePort}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $Overlay));
  }
- /**
-  * @param {?} $thisArg
-  * @return {ServiceWorker}
-  * @public
-  */
- static m_asServiceWorker__$devirt__elemental2_dom_MessageEventInit_GetSourceUnionType($thisArg) {
+ /** @return {ServiceWorker} */
+ static m_asServiceWorker__$devirt__elemental2_dom_MessageEventInit_GetSourceUnionType(/** ? */ $thisArg) {
   GetSourceUnionType_$Overlay.$clinit();
-  return /**@type {ServiceWorker} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), ServiceWorker_$Overlay));
+  return /**@type {ServiceWorker}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), ServiceWorker_$Overlay));
  }
- /**
-  * @param {?} $thisArg
-  * @return {Window}
-  * @public
-  */
- static m_asWindow__$devirt__elemental2_dom_MessageEventInit_GetSourceUnionType($thisArg) {
+ /** @return {Window} */
+ static m_asWindow__$devirt__elemental2_dom_MessageEventInit_GetSourceUnionType(/** ? */ $thisArg) {
   GetSourceUnionType_$Overlay.$clinit();
-  return /**@type {Window} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), Window_$Overlay));
+  return /**@type {Window}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), Window_$Overlay));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isMessagePort__$devirt__elemental2_dom_MessageEventInit_GetSourceUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isMessagePort__$devirt__elemental2_dom_MessageEventInit_GetSourceUnionType(/** ? */ $thisArg) {
   GetSourceUnionType_$Overlay.$clinit();
-  return $Overlay.$isInstance(/**@type {*} */ ($thisArg));
+  return $Overlay.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isServiceWorker__$devirt__elemental2_dom_MessageEventInit_GetSourceUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isServiceWorker__$devirt__elemental2_dom_MessageEventInit_GetSourceUnionType(/** ? */ $thisArg) {
   GetSourceUnionType_$Overlay.$clinit();
-  return ServiceWorker_$Overlay.$isInstance(/**@type {*} */ ($thisArg));
+  return ServiceWorker_$Overlay.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isWindow__$devirt__elemental2_dom_MessageEventInit_GetSourceUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isWindow__$devirt__elemental2_dom_MessageEventInit_GetSourceUnionType(/** ? */ $thisArg) {
   GetSourceUnionType_$Overlay.$clinit();
-  return Window_$Overlay.$isInstance(/**@type {*} */ ($thisArg));
+  return Window_$Overlay.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   GetSourceUnionType_$Overlay.$clinit = () =>{};
   GetSourceUnionType_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('elemental2.dom.MessagePort.$Overlay$impl');
   ServiceWorker_$Overlay = goog.module.get('elemental2.dom.ServiceWorker.$Overlay$impl');

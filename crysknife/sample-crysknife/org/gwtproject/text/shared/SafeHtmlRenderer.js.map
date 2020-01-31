@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SafeHtmlRenderer.impl.java.js",
-"lineCount":32,
-"mappings":"A;;;;;;;;;;;MAKiB,gB;;;;;;;CACN,0B,CAASA,M;;;;;;;CACb,0E,CAASA,M,EAAwBC,O;;;;QAFvB,O;EAAAC,mC;EAAAA;",
+"lineCount":20,
+"mappings":"A;;;;;;;;;;;MAKiB,gB;;CACN,0B,UAASA,M;;CACb,0E,UAASA,M,yBAAwBC,O;;QAFvB,O;EAAAC,mC;EAAAA;",
 "sources":["SafeHtmlRenderer.java"],
 "names":["object","builder","org.gwtproject.text.shared.SafeHtmlRenderer.<clinit>"]
 }

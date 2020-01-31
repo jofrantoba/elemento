@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ImageResourceRenderer$Template.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;;;;;;;MA6BY,Q;;;;;;;;;CACC,yD,CAAcA,Q,EAAcC,K,EAAWC,M;;;;;;QADxC,M;EAAAC,mB;EAAAA,8B;;;;;QAAA,O;EAAAC,2B;EAAAA;",
+"lineCount":25,
+"mappings":"A;;;;;;;;;;;;;MA6BY,Q;;CACC,yD,gBAAcA,Q,gBAAcC,K,gBAAWC,M;;QADxC,M;EAAAC,mB;EAAAA,8B;;;QAAA,O;EAAAC,2B;EAAAA;",
 "sources":["ImageResourceRenderer.java"],
 "names":["imageUri","width","height","org.gwtproject.user.client.ui.ImageResourceRenderer$Template.<synthetic: adapt_lambda>","org.gwtproject.user.client.ui.ImageResourceRenderer$Template.<clinit>"]
 }

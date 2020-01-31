@@ -8,49 +8,32 @@ const RoleImpl = goog.require('org.gwtproject.aria.client.RoleImpl$impl');
  * @implements {PresentationRole}
   */
 class PresentationRoleImpl extends RoleImpl {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} roleName
-  * @return {!PresentationRoleImpl}
-  * @public
-  */
- static $create__java_lang_String(roleName) {
+ /** @return {!PresentationRoleImpl} */
+ static $create__java_lang_String(/** ?string */ roleName) {
   PresentationRoleImpl.$clinit();
   let $instance = new PresentationRoleImpl();
   $instance.$ctor__org_gwtproject_aria_client_PresentationRoleImpl__java_lang_String(roleName);
   return $instance;
  }
- /**
-  * @param {?string} roleName
-  * @public
-  */
- $ctor__org_gwtproject_aria_client_PresentationRoleImpl__java_lang_String(roleName) {
+ 
+ $ctor__org_gwtproject_aria_client_PresentationRoleImpl__java_lang_String(/** ?string */ roleName) {
   this.$ctor__org_gwtproject_aria_client_RoleImpl__java_lang_String(roleName);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   PresentationRoleImpl.$clinit = () =>{};
   PresentationRoleImpl.$loadModules();
   RoleImpl.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof PresentationRoleImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

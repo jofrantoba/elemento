@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SimpleBeanEditorDriver.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;;;;;;MAyCiB,sB;;;;;;CAOV,wB,CAAOA,M;;;;;;;CAQV,S;;;;;;CAOG,iD,CAAaC,M;;;;QAtBH,O;EAAAC,yC;EAAAA;",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;;MAyCiB,sB;;CAOV,wB,UAAOA,M;;CAQV,S;;CAOG,iD,UAAaC,M;;QAtBH,O;EAAAC,yC;EAAAA;",
 "sources":["SimpleBeanEditorDriver.java"],
 "names":["object","editor","org.gwtproject.editor.client.SimpleBeanEditorDriver.<clinit>"]
 }

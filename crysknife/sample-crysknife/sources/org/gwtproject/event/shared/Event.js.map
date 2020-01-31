@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Event.impl.java.js",
-"lineCount":77,
-"mappings":"A;;;;;;;;;;;;MAsBsB,K;;;;CAAA,W;EAAAA,Q;EAAAA;OA0BL,4CA1BKA,C;;;;;CA6BV,0C;EAAAC,iC;;;;;;;CAQc,qB;;;;;CAaV,a;EACZC,yD;;;;;;CAUY,iB;EACZC,IAAOC,IAAPD,qC;EACAA,wI;EACAA,sE;;;;;;;CAQY,Q;EACZE,uB;;;;;;;CAWsB,4B,CAAWC,O;;;;;CAUpB,6B,CAAiBC,M;EAC9BC,2D;;;;;QA/FkB,O;EAAAC,wB;EAAAA,qB;EAAAA;",
+"lineCount":50,
+"mappings":"A;;;;;;;;;;;;MAsBsB,K;;CAAA,W;EAAAA,Q;EAAAA;OA0BL,4CA1BKA,C;;;CA6BV,0C;EAAAC,iC;;;CAQc,qB;;CAaV,a;EACZC,yD;;;CAUY,iB;EACZC,IAAOC,IAAPD,qC;EACAA,wI;EACAA,sE;;;CAQY,Q;EACZE,uB;;;CAWsB,4B,UAAWC,O;;CAUpB,6B,UAAiBC,M;EAC9BC,2D;;;QA/FkB,O;EAAAC,wB;EAAAA,qB;EAAAA;",
 "sources":["Event.java"],
 "names":["org.gwtproject.event.shared.Event.<synthetic: ctor_js>","org.gwtproject.event.shared.Event.<init>","org.gwtproject.event.shared.Event.getSource","org.gwtproject.event.shared.Event.toDebugString","name","org.gwtproject.event.shared.Event.toString","handler","source","org.gwtproject.event.shared.Event.setSource","org.gwtproject.event.shared.Event.<clinit>"]
 }

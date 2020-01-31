@@ -8,52 +8,27 @@ let AnimationCallback = goog.forwardDeclare('org.gwtproject.layout.client.Layout
  * @interface
  */
 class AnimatedLayout {
- /**
-  * @abstract
-  * @param {number} duration
-  * @public
-  */
- m_animate__int(duration) {}
- /**
-  * @abstract
-  * @param {number} duration
-  * @param {AnimationCallback} callback
-  * @public
-  */
- m_animate__int__org_gwtproject_layout_client_Layout_AnimationCallback(duration, callback) {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
+ m_animate__int(/** number */ duration) {}
+ /** @abstract */
+ m_animate__int__org_gwtproject_layout_client_Layout_AnimationCallback(/** number */ duration, /** AnimationCallback */ callback) {}
+ /** @abstract */
  m_forceLayout__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AnimatedLayout.$clinit = () =>{};
   AnimatedLayout.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_AnimatedLayout = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_AnimatedLayout = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_AnimatedLayout;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -10,24 +10,15 @@ let Document_$Overlay = goog.forwardDeclare('org.gwtproject.dom.client.Document.
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class Audio extends MediaBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {Object} element
-  * @return {boolean}
-  * @public
-  */
- static m_isSupportedRunTime__org_gwtproject_dom_client_AudioElement(element) {
-  return $Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (element), "canPlayType");
+ /** @return {boolean} */
+ static m_isSupportedRunTime__org_gwtproject_dom_client_AudioElement(/** Object */ element) {
+  return $Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (element), "canPlayType");
  }
- /**
-  * @return {Audio}
-  * @public
-  */
+ /** @return {Audio} */
  static m_createIfSupported__() {
   Audio.$clinit();
   let element = Document_$Overlay.m_createAudioElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__());
@@ -36,59 +27,38 @@ class Audio extends MediaBase {
   }
   return Audio.$create__org_gwtproject_dom_client_AudioElement(element);
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  static m_isSupported__() {
   Audio.$clinit();
   let element = Document_$Overlay.m_createAudioElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__());
   return Audio.m_isSupportedRunTime__org_gwtproject_dom_client_AudioElement(element);
  }
- /**
-  * @param {Object} element
-  * @return {!Audio}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_AudioElement(element) {
+ /** @return {!Audio} */
+ static $create__org_gwtproject_dom_client_AudioElement(/** Object */ element) {
   Audio.$clinit();
   let $instance = new Audio();
   $instance.$ctor__org_gwtproject_media_client_Audio__org_gwtproject_dom_client_AudioElement(element);
   return $instance;
  }
- /**
-  * @param {Object} element
-  * @public
-  */
- $ctor__org_gwtproject_media_client_Audio__org_gwtproject_dom_client_AudioElement(element) {
+ 
+ $ctor__org_gwtproject_media_client_Audio__org_gwtproject_dom_client_AudioElement(/** Object */ element) {
   this.$ctor__org_gwtproject_media_client_MediaBase__org_gwtproject_dom_client_MediaElement(element);
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getAudioElement__() {
-  return /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(this.m_getMediaElement__()), AudioElement_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(this.m_getMediaElement__()), AudioElement_$Overlay));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Audio.$clinit = () =>{};
   Audio.$loadModules();
   MediaBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Audio;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');
   JavaScriptObject_$Overlay = goog.module.get('org.gwtproject.core.client.JavaScriptObject.$Overlay$impl');

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TimerRoleImpl.impl.java.js",
-"lineCount":72,
-"mappings":"A;;;;;;;;;;;;;;MAsBM,a;;;;CAAA,W;EAAAA,Q;;;;;;;QAEJ,yB,CAAqBC,Q;EAArBC,wB;EAAAA,oC;EAAAA,sF;EAAAA,iB;;;;;;CAAA,iE,CAAqBD,Q;EACnBE,4E;;;;;;;;CAIY,yD,CAA6BC,O;EACzCC,4G;;;;;;;CAIU,4D,CAAgCD,O;EAC1CE,wG;;;;;;;;CAIU,mG,CAA6BF,O,EAAuBG,K;EAC9DC,4M;;;;;QAlBE,O;EAAAC,gC;EAAAA,6B;EAAAA;",
+"lineCount":47,
+"mappings":"A;;;;;;;;;;;;;;MAsBM,a;;CAAA,W;EAAAA,Q;;;QAEJ,yB,gBAAqBC,Q;EAArBC,wB;EAAAA,oC;EAAAA,sF;EAAAA,iB;;;CAAA,iE,gBAAqBD,Q;EACnBE,4E;;;CAIY,yD,eAA6BC,O;EACzCC,4G;;;CAIU,4D,eAAgCD,O;EAC1CE,wG;;;CAIU,mG,eAA6BF,O,uBAAuBG,K;EAC9DC,2M;;;QAlBE,O;EAAAC,gC;EAAAA,6B;EAAAA;",
 "sources":["TimerRoleImpl.java"],
 "names":["org.gwtproject.aria.client.TimerRoleImpl.<synthetic: ctor_js>","roleName","org.gwtproject.aria.client.TimerRoleImpl.<synthetic: ctor_create>","org.gwtproject.aria.client.TimerRoleImpl.<init>","element","org.gwtproject.aria.client.TimerRoleImpl.getAriaExpandedState","org.gwtproject.aria.client.TimerRoleImpl.removeAriaExpandedState","value","org.gwtproject.aria.client.TimerRoleImpl.setAriaExpandedState","org.gwtproject.aria.client.TimerRoleImpl.<clinit>"]
 }

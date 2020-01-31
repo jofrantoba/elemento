@@ -30,24 +30,18 @@ let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
 let $int = goog.forwardDeclare('vmbootstrap.primitives.$int$impl');
 
 class DateTimeFormat extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {ArrayList<PatternPart>} */
+  /**@type {ArrayList<PatternPart>}*/
   this.f_patternParts__org_gwtproject_i18n_shared_DateTimeFormat_;
-  /** @public {DateTimeFormatInfo} */
+  /**@type {DateTimeFormatInfo}*/
   this.f_dateTimeFormatInfo__org_gwtproject_i18n_shared_DateTimeFormat_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_pattern__org_gwtproject_i18n_shared_DateTimeFormat_;
  }
- /**
-  * @param {PredefinedFormat} predef
-  * @return {DateTimeFormat}
-  * @public
-  */
- static m_getFormat__org_gwtproject_i18n_shared_DateTimeFormat_PredefinedFormat(predef) {
+ /** @return {DateTimeFormat} */
+ static m_getFormat__org_gwtproject_i18n_shared_DateTimeFormat_PredefinedFormat(/** PredefinedFormat */ predef) {
   DateTimeFormat.$clinit();
   if (DateTimeFormat.m_usesFixedEnglishStrings__org_gwtproject_i18n_shared_DateTimeFormat_PredefinedFormat(predef)) {
    let /** ?string */ pattern;
@@ -173,27 +167,18 @@ class DateTimeFormat extends j_l_Object {
   }
   return DateTimeFormat.m_getFormat__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(pattern_1, dtfi);
  }
- /**
-  * @param {?string} pattern
-  * @return {DateTimeFormat}
-  * @public
-  */
- static m_getFormat__java_lang_String(pattern) {
+ /** @return {DateTimeFormat} */
+ static m_getFormat__java_lang_String(/** ?string */ pattern) {
   DateTimeFormat.$clinit();
   return DateTimeFormat.m_getFormat__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(pattern, DateTimeFormat.m_getDefaultDateTimeFormatInfo__());
  }
- /**
-  * @param {?string} pattern
-  * @param {DateTimeFormatInfo} dtfi
-  * @return {DateTimeFormat}
-  * @public
-  */
- static m_getFormat__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(pattern, dtfi) {
+ /** @return {DateTimeFormat} */
+ static m_getFormat__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(/** ?string */ pattern, /** DateTimeFormatInfo */ dtfi) {
   DateTimeFormat.$clinit();
   let defaultDtfi = DateTimeFormat.m_getDefaultDateTimeFormatInfo__();
   let dtf = null;
   if ($Equality.$same(dtfi, defaultDtfi)) {
-   dtf = /**@type {DateTimeFormat} */ ($Casts.$to(DateTimeFormat.f_cache__org_gwtproject_i18n_shared_DateTimeFormat_.get(pattern), DateTimeFormat));
+   dtf = /**@type {DateTimeFormat}*/ ($Casts.$to(DateTimeFormat.f_cache__org_gwtproject_i18n_shared_DateTimeFormat_.get(pattern), DateTimeFormat));
   }
   if ($Equality.$same(dtf, null)) {
    dtf = DateTimeFormat.$create__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(pattern, dtfi);
@@ -203,19 +188,12 @@ class DateTimeFormat extends j_l_Object {
   }
   return dtf;
  }
- /**
-  * @return {DateTimeFormatInfo}
-  * @public
-  */
+ /** @return {DateTimeFormatInfo} */
  static m_getDefaultDateTimeFormatInfo__() {
   return LocaleInfo.m_getCurrentLocale__().m_getDateTimeFormatInfo__();
  }
- /**
-  * @param {PredefinedFormat} predef
-  * @return {boolean}
-  * @public
-  */
- static m_usesFixedEnglishStrings__org_gwtproject_i18n_shared_DateTimeFormat_PredefinedFormat(predef) {
+ /** @return {boolean} */
+ static m_usesFixedEnglishStrings__org_gwtproject_i18n_shared_DateTimeFormat_PredefinedFormat(/** PredefinedFormat */ predef) {
   switch (predef.ordinal()) {
    case PredefinedFormat.$ordinal$f_RFC_2822__org_gwtproject_i18n_shared_DateTimeFormat_PredefinedFormat: 
     return true;
@@ -225,67 +203,42 @@ class DateTimeFormat extends j_l_Object {
     return false;
   }
  }
- /**
-  * Factory method corresponding to constructor 'DateTimeFormat(String)'.
-  * @param {?string} pattern
-  * @return {!DateTimeFormat}
-  * @public
-  */
- static $create__java_lang_String(pattern) {
+ //Factory method corresponding to constructor 'DateTimeFormat(String)'.
+ /** @return {!DateTimeFormat} */
+ static $create__java_lang_String(/** ?string */ pattern) {
   DateTimeFormat.$clinit();
   let $instance = new DateTimeFormat();
   $instance.$ctor__org_gwtproject_i18n_shared_DateTimeFormat__java_lang_String(pattern);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DateTimeFormat(String)'.
-  * @param {?string} pattern
-  * @public
-  */
- $ctor__org_gwtproject_i18n_shared_DateTimeFormat__java_lang_String(pattern) {
+ //Initialization from constructor 'DateTimeFormat(String)'.
+ 
+ $ctor__org_gwtproject_i18n_shared_DateTimeFormat__java_lang_String(/** ?string */ pattern) {
   this.$ctor__org_gwtproject_i18n_shared_DateTimeFormat__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(pattern, DateTimeFormat.m_getDefaultDateTimeFormatInfo__());
  }
- /**
-  * Factory method corresponding to constructor 'DateTimeFormat(String, DateTimeFormatInfo)'.
-  * @param {?string} pattern
-  * @param {DateTimeFormatInfo} dtfi
-  * @return {!DateTimeFormat}
-  * @public
-  */
- static $create__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(pattern, dtfi) {
+ //Factory method corresponding to constructor 'DateTimeFormat(String, DateTimeFormatInfo)'.
+ /** @return {!DateTimeFormat} */
+ static $create__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(/** ?string */ pattern, /** DateTimeFormatInfo */ dtfi) {
   DateTimeFormat.$clinit();
   let $instance = new DateTimeFormat();
   $instance.$ctor__org_gwtproject_i18n_shared_DateTimeFormat__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(pattern, dtfi);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DateTimeFormat(String, DateTimeFormatInfo)'.
-  * @param {?string} pattern
-  * @param {DateTimeFormatInfo} dtfi
-  * @public
-  */
- $ctor__org_gwtproject_i18n_shared_DateTimeFormat__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(pattern, dtfi) {
+ //Initialization from constructor 'DateTimeFormat(String, DateTimeFormatInfo)'.
+ 
+ $ctor__org_gwtproject_i18n_shared_DateTimeFormat__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(/** ?string */ pattern, /** DateTimeFormatInfo */ dtfi) {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_i18n_shared_DateTimeFormat();
   this.f_pattern__org_gwtproject_i18n_shared_DateTimeFormat_ = pattern;
   this.f_dateTimeFormatInfo__org_gwtproject_i18n_shared_DateTimeFormat_ = dtfi;
   this.m_parsePattern__java_lang_String_$p_org_gwtproject_i18n_shared_DateTimeFormat(pattern);
  }
- /**
-  * @param {Date} date
-  * @return {?string}
-  * @public
-  */
- m_format__java_util_Date(date) {
+ /** @return {?string} */
+ m_format__java_util_Date(/** Date */ date) {
   return this.m_format__java_util_Date__org_gwtproject_i18n_shared_TimeZone(date, null);
  }
- /**
-  * @param {Date} date
-  * @param {org_gwtproject_i18n_shared_TimeZone} timeZone
-  * @return {?string}
-  * @public
-  */
- m_format__java_util_Date__org_gwtproject_i18n_shared_TimeZone(date, timeZone) {
+ /** @return {?string} */
+ m_format__java_util_Date__org_gwtproject_i18n_shared_TimeZone(/** Date */ date, /** org_gwtproject_i18n_shared_TimeZone */ timeZone) {
   if ($Equality.$same(timeZone, null)) {
    timeZone = this.m_createTimeZone__int(date.m_getTimezoneOffset__());
   }
@@ -339,95 +292,49 @@ class DateTimeFormat extends j_l_Object {
   }
   return toAppendTo.toString();
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getPattern__() {
   return this.f_pattern__org_gwtproject_i18n_shared_DateTimeFormat_;
  }
- /**
-  * @param {?string} text
-  * @return {Date}
-  * @public
-  */
- m_parse__java_lang_String(text) {
+ /** @return {Date} */
+ m_parse__java_lang_String(/** ?string */ text) {
   return this.m_parse__java_lang_String__boolean_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, false);
  }
- /**
-  * @param {?string} text
-  * @param {number} start
-  * @param {Date} date
-  * @return {number}
-  * @public
-  */
- m_parse__java_lang_String__int__java_util_Date(text, start, date) {
+ /** @return {number} */
+ m_parse__java_lang_String__int__java_util_Date(/** ?string */ text, /** number */ start, /** Date */ date) {
   return this.m_parse__java_lang_String__int__java_util_Date__boolean_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, start, date, false);
  }
- /**
-  * @param {?string} text
-  * @return {Date}
-  * @public
-  */
- m_parseStrict__java_lang_String(text) {
+ /** @return {Date} */
+ m_parseStrict__java_lang_String(/** ?string */ text) {
   return this.m_parse__java_lang_String__boolean_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, true);
  }
- /**
-  * @param {?string} text
-  * @param {number} start
-  * @param {Date} date
-  * @return {number}
-  * @public
-  */
- m_parseStrict__java_lang_String__int__java_util_Date(text, start, date) {
+ /** @return {number} */
+ m_parseStrict__java_lang_String__int__java_util_Date(/** ?string */ text, /** number */ start, /** Date */ date) {
   return this.m_parse__java_lang_String__int__java_util_Date__boolean_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, start, date, true);
  }
- /**
-  * @param {number} timezoneOffset
-  * @return {org_gwtproject_i18n_shared_TimeZone}
-  * @public
-  */
- m_createTimeZone__int(timezoneOffset) {
+ /** @return {org_gwtproject_i18n_shared_TimeZone} */
+ m_createTimeZone__int(/** number */ timezoneOffset) {
   return TimeZone.m_createTimeZone__int(timezoneOffset);
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {number} count
-  * @public
-  */
- m_addPart__java_lang_StringBuilder__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, count) {
+ 
+ m_addPart__java_lang_StringBuilder__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** StringBuilder */ buf, /** number */ count) {
   if (buf.m_length__() > 0) {
    this.f_patternParts__org_gwtproject_i18n_shared_DateTimeFormat_.add(PatternPart.$create__java_lang_String__int(buf.toString(), count));
    buf.m_setLength__int(0);
   }
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {number} count
-  * @param {Date} date
-  * @public
-  */
- m_format0To11Hours__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, count, date) {
+ 
+ m_format0To11Hours__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** StringBuilder */ buf, /** number */ count, /** Date */ date) {
   let value = $Primitives.$coerceDivision(date.m_getHours__() % 12);
   this.m_zeroPaddingNumber__java_lang_StringBuilder__int__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, value, count);
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {number} count
-  * @param {Date} date
-  * @public
-  */
- m_format0To23Hours__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, count, date) {
+ 
+ m_format0To23Hours__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** StringBuilder */ buf, /** number */ count, /** Date */ date) {
   let value = date.m_getHours__();
   this.m_zeroPaddingNumber__java_lang_StringBuilder__int__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, value, count);
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {number} count
-  * @param {Date} date
-  * @public
-  */
- m_format1To12Hours__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, count, date) {
+ 
+ m_format1To12Hours__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** StringBuilder */ buf, /** number */ count, /** Date */ date) {
   let value = $Primitives.$coerceDivision(date.m_getHours__() % 12);
   if (value == 0) {
    this.m_zeroPaddingNumber__java_lang_StringBuilder__int__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, 12, count);
@@ -435,13 +342,8 @@ class DateTimeFormat extends j_l_Object {
    this.m_zeroPaddingNumber__java_lang_StringBuilder__int__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, value, count);
   }
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {number} count
-  * @param {Date} date
-  * @public
-  */
- m_format24Hours__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, count, date) {
+ 
+ m_format24Hours__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** StringBuilder */ buf, /** number */ count, /** Date */ date) {
   let value = date.m_getHours__();
   if (value == 0) {
    this.m_zeroPaddingNumber__java_lang_StringBuilder__int__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, 24, count);
@@ -449,35 +351,21 @@ class DateTimeFormat extends j_l_Object {
    this.m_zeroPaddingNumber__java_lang_StringBuilder__int__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, value, count);
   }
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {Date} date
-  * @public
-  */
- m_formatAmPm__java_lang_StringBuilder__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, date) {
+ 
+ m_formatAmPm__java_lang_StringBuilder__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** StringBuilder */ buf, /** Date */ date) {
   if (date.m_getHours__() >= 12 && date.m_getHours__() < 24) {
    buf.m_append__java_lang_String(this.f_dateTimeFormatInfo__org_gwtproject_i18n_shared_DateTimeFormat_.m_ampms__()[1]);
   } else {
    buf.m_append__java_lang_String(this.f_dateTimeFormatInfo__org_gwtproject_i18n_shared_DateTimeFormat_.m_ampms__()[0]);
   }
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {number} count
-  * @param {Date} date
-  * @public
-  */
- m_formatDate__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, count, date) {
+ 
+ m_formatDate__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** StringBuilder */ buf, /** number */ count, /** Date */ date) {
   let value = date.m_getDate__();
   this.m_zeroPaddingNumber__java_lang_StringBuilder__int__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, value, count);
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {number} count
-  * @param {Date} date
-  * @public
-  */
- m_formatDayOfWeek__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, count, date) {
+ 
+ m_formatDayOfWeek__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** StringBuilder */ buf, /** number */ count, /** Date */ date) {
   let value = date.m_getDay__();
   if (count == 5) {
    buf.m_append__java_lang_String(this.f_dateTimeFormatInfo__org_gwtproject_i18n_shared_DateTimeFormat_.m_weekdaysNarrow__()[value]);
@@ -487,13 +375,8 @@ class DateTimeFormat extends j_l_Object {
    buf.m_append__java_lang_String(this.f_dateTimeFormatInfo__org_gwtproject_i18n_shared_DateTimeFormat_.m_weekdaysShort__()[value]);
   }
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {number} count
-  * @param {Date} date
-  * @public
-  */
- m_formatEra__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, count, date) {
+ 
+ m_formatEra__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** StringBuilder */ buf, /** number */ count, /** Date */ date) {
   let value = date.m_getYear__() >= -DateTimeFormat.f_JS_START_YEAR__org_gwtproject_i18n_shared_DateTimeFormat_ ? 1 : 0;
   if (count >= 4) {
    buf.m_append__java_lang_String(this.f_dateTimeFormatInfo__org_gwtproject_i18n_shared_DateTimeFormat_.m_erasFull__()[value]);
@@ -501,13 +384,8 @@ class DateTimeFormat extends j_l_Object {
    buf.m_append__java_lang_String(this.f_dateTimeFormatInfo__org_gwtproject_i18n_shared_DateTimeFormat_.m_erasShort__()[value]);
   }
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {number} count
-  * @param {Date} date
-  * @public
-  */
- m_formatFractionalSeconds__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, count, date) {
+ 
+ m_formatFractionalSeconds__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** StringBuilder */ buf, /** number */ count, /** Date */ date) {
   let time = date.m_getTime__();
   let /** number */ value;
   if ($LongUtils.$less(time, $Long.fromInt(0))) {
@@ -531,23 +409,13 @@ class DateTimeFormat extends j_l_Object {
    }
   }
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {number} count
-  * @param {Date} date
-  * @public
-  */
- m_formatMinutes__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, count, date) {
+ 
+ m_formatMinutes__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** StringBuilder */ buf, /** number */ count, /** Date */ date) {
   let value = date.m_getMinutes__();
   this.m_zeroPaddingNumber__java_lang_StringBuilder__int__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, value, count);
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {number} count
-  * @param {Date} date
-  * @public
-  */
- m_formatMonth__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, count, date) {
+ 
+ m_formatMonth__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** StringBuilder */ buf, /** number */ count, /** Date */ date) {
   let value = date.m_getMonth__();
   switch (count) {
    case 5: 
@@ -563,13 +431,8 @@ class DateTimeFormat extends j_l_Object {
     this.m_zeroPaddingNumber__java_lang_StringBuilder__int__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, value + 1, count);
   }
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {number} count
-  * @param {Date} date
-  * @public
-  */
- m_formatQuarter__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, count, date) {
+ 
+ m_formatQuarter__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** StringBuilder */ buf, /** number */ count, /** Date */ date) {
   let value = $Primitives.$coerceDivision(date.m_getMonth__() / 3);
   if (count < 4) {
    buf.m_append__java_lang_String(this.f_dateTimeFormatInfo__org_gwtproject_i18n_shared_DateTimeFormat_.m_quartersShort__()[value]);
@@ -577,23 +440,13 @@ class DateTimeFormat extends j_l_Object {
    buf.m_append__java_lang_String(this.f_dateTimeFormatInfo__org_gwtproject_i18n_shared_DateTimeFormat_.m_quartersFull__()[value]);
   }
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {number} count
-  * @param {Date} date
-  * @public
-  */
- m_formatSeconds__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, count, date) {
+ 
+ m_formatSeconds__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** StringBuilder */ buf, /** number */ count, /** Date */ date) {
   let value = date.m_getSeconds__();
   this.m_zeroPaddingNumber__java_lang_StringBuilder__int__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, value, count);
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {number} count
-  * @param {Date} date
-  * @public
-  */
- m_formatStandaloneDay__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, count, date) {
+ 
+ m_formatStandaloneDay__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** StringBuilder */ buf, /** number */ count, /** Date */ date) {
   let value = date.m_getDay__();
   if (count == 5) {
    buf.m_append__java_lang_String(this.f_dateTimeFormatInfo__org_gwtproject_i18n_shared_DateTimeFormat_.m_weekdaysNarrowStandalone__()[value]);
@@ -605,13 +458,8 @@ class DateTimeFormat extends j_l_Object {
    this.m_zeroPaddingNumber__java_lang_StringBuilder__int__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, value, 1);
   }
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {number} count
-  * @param {Date} date
-  * @public
-  */
- m_formatStandaloneMonth__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, count, date) {
+ 
+ m_formatStandaloneMonth__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** StringBuilder */ buf, /** number */ count, /** Date */ date) {
   let value = date.m_getMonth__();
   if (count == 5) {
    buf.m_append__java_lang_String(this.f_dateTimeFormatInfo__org_gwtproject_i18n_shared_DateTimeFormat_.m_monthsNarrowStandalone__()[value]);
@@ -623,28 +471,16 @@ class DateTimeFormat extends j_l_Object {
    this.m_zeroPaddingNumber__java_lang_StringBuilder__int__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, value + 1, count);
   }
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {number} count
-  * @param {Date} date
-  * @param {org_gwtproject_i18n_shared_TimeZone} timeZone
-  * @public
-  */
- m_formatTimeZone__java_lang_StringBuilder__int__java_util_Date__org_gwtproject_i18n_shared_TimeZone_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, count, date, timeZone) {
+ 
+ m_formatTimeZone__java_lang_StringBuilder__int__java_util_Date__org_gwtproject_i18n_shared_TimeZone_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** StringBuilder */ buf, /** number */ count, /** Date */ date, /** org_gwtproject_i18n_shared_TimeZone */ timeZone) {
   if (count < 4) {
    buf.m_append__java_lang_String(timeZone.m_getShortName__java_util_Date(date));
   } else {
    buf.m_append__java_lang_String(timeZone.m_getLongName__java_util_Date(date));
   }
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {number} count
-  * @param {Date} date
-  * @param {org_gwtproject_i18n_shared_TimeZone} timeZone
-  * @public
-  */
- m_formatTimeZoneRFC__java_lang_StringBuilder__int__java_util_Date__org_gwtproject_i18n_shared_TimeZone_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, count, date, timeZone) {
+ 
+ m_formatTimeZoneRFC__java_lang_StringBuilder__int__java_util_Date__org_gwtproject_i18n_shared_TimeZone_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** StringBuilder */ buf, /** number */ count, /** Date */ date, /** org_gwtproject_i18n_shared_TimeZone */ timeZone) {
   if (count < 3) {
    buf.m_append__java_lang_String(timeZone.m_getRFCTimeZoneString__java_util_Date(date));
   } else if (count == 3) {
@@ -653,13 +489,8 @@ class DateTimeFormat extends j_l_Object {
    buf.m_append__java_lang_String(timeZone.m_getGMTString__java_util_Date(date));
   }
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {number} count
-  * @param {Date} date
-  * @public
-  */
- m_formatYear__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, count, date) {
+ 
+ m_formatYear__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** StringBuilder */ buf, /** number */ count, /** Date */ date) {
   let value = date.m_getYear__() + DateTimeFormat.f_JS_START_YEAR__org_gwtproject_i18n_shared_DateTimeFormat_;
   if (value < 0) {
    value = -value;
@@ -676,13 +507,8 @@ class DateTimeFormat extends j_l_Object {
     break;
   }
  }
- /**
-  * @param {?string} pattern
-  * @param {number} start
-  * @return {number}
-  * @public
-  */
- m_getNextCharCountInPattern__java_lang_String__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(pattern, start) {
+ /** @return {number} */
+ m_getNextCharCountInPattern__java_lang_String__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** ?string */ pattern, /** number */ start) {
   let ch = j_l_String.m_charAt__java_lang_String__int(pattern, start);
   let next = start + 1;
   while (next < j_l_String.m_length__java_lang_String(pattern) && j_l_String.m_charAt__java_lang_String__int(pattern, next) == ch) {
@@ -690,44 +516,31 @@ class DateTimeFormat extends j_l_Object {
   }
   return next - start;
  }
- /**
-  * @public
-  */
+ 
  m_identifyAbutStart___$p_org_gwtproject_i18n_shared_DateTimeFormat() {
   let abut = false;
   let len = this.f_patternParts__org_gwtproject_i18n_shared_DateTimeFormat_.size();
   for (let i = 0; i < len; i++) {
-   if (this.m_isNumeric__org_gwtproject_i18n_shared_DateTimeFormat_PatternPart_$p_org_gwtproject_i18n_shared_DateTimeFormat(/**@type {PatternPart} */ ($Casts.$to(this.f_patternParts__org_gwtproject_i18n_shared_DateTimeFormat_.getAtIndex(i), PatternPart)))) {
-    if (!abut && i + 1 < len && this.m_isNumeric__org_gwtproject_i18n_shared_DateTimeFormat_PatternPart_$p_org_gwtproject_i18n_shared_DateTimeFormat(/**@type {PatternPart} */ ($Casts.$to(this.f_patternParts__org_gwtproject_i18n_shared_DateTimeFormat_.getAtIndex(i + 1), PatternPart)))) {
+   if (this.m_isNumeric__org_gwtproject_i18n_shared_DateTimeFormat_PatternPart_$p_org_gwtproject_i18n_shared_DateTimeFormat(/**@type {PatternPart}*/ ($Casts.$to(this.f_patternParts__org_gwtproject_i18n_shared_DateTimeFormat_.getAtIndex(i), PatternPart)))) {
+    if (!abut && i + 1 < len && this.m_isNumeric__org_gwtproject_i18n_shared_DateTimeFormat_PatternPart_$p_org_gwtproject_i18n_shared_DateTimeFormat(/**@type {PatternPart}*/ ($Casts.$to(this.f_patternParts__org_gwtproject_i18n_shared_DateTimeFormat_.getAtIndex(i + 1), PatternPart)))) {
      abut = true;
-     /**@type {PatternPart} */ ($Casts.$to(this.f_patternParts__org_gwtproject_i18n_shared_DateTimeFormat_.getAtIndex(i), PatternPart)).f_abutStart__org_gwtproject_i18n_shared_DateTimeFormat_PatternPart = true;
+     /**@type {PatternPart}*/ ($Casts.$to(this.f_patternParts__org_gwtproject_i18n_shared_DateTimeFormat_.getAtIndex(i), PatternPart)).f_abutStart__org_gwtproject_i18n_shared_DateTimeFormat_PatternPart = true;
     }
    } else {
     abut = false;
    }
   }
  }
- /**
-  * @param {PatternPart} part
-  * @return {boolean}
-  * @public
-  */
- m_isNumeric__org_gwtproject_i18n_shared_DateTimeFormat_PatternPart_$p_org_gwtproject_i18n_shared_DateTimeFormat(part) {
+ /** @return {boolean} */
+ m_isNumeric__org_gwtproject_i18n_shared_DateTimeFormat_PatternPart_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** PatternPart */ part) {
   if (part.f_count__org_gwtproject_i18n_shared_DateTimeFormat_PatternPart <= 0) {
    return false;
   }
   let i = j_l_String.m_indexOf__java_lang_String__int(DateTimeFormat.f_NUMERIC_FORMAT_CHARS__org_gwtproject_i18n_shared_DateTimeFormat_, j_l_String.m_charAt__java_lang_String__int(part.f_text__org_gwtproject_i18n_shared_DateTimeFormat_PatternPart, 0));
   return (i > 1 || (i >= 0 && part.f_count__org_gwtproject_i18n_shared_DateTimeFormat_PatternPart < 3));
  }
- /**
-  * @param {?string} text
-  * @param {number} start
-  * @param {Array<?string>} data
-  * @param {Array<number>} pos
-  * @return {number}
-  * @public
-  */
- m_matchString__java_lang_String__int__arrayOf_java_lang_String__arrayOf_int_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, start, data, pos) {
+ /** @return {number} */
+ m_matchString__java_lang_String__int__arrayOf_java_lang_String__arrayOf_int_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** ?string */ text, /** number */ start, /** Array<?string> */ data, /** Array<number> */ pos) {
   let count = data.length;
   let bestMatchLength = 0, bestMatch = -1;
   let textInLowerCase = j_l_String.m_toLowerCase__java_lang_String__java_util_Locale(j_l_String.m_substring__java_lang_String__int(text, start), Locale.f_ROOT__java_util_Locale);
@@ -743,13 +556,8 @@ class DateTimeFormat extends j_l_Object {
   }
   return bestMatch;
  }
- /**
-  * @param {?string} text
-  * @param {boolean} strict
-  * @return {Date}
-  * @public
-  */
- m_parse__java_lang_String__boolean_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, strict) {
+ /** @return {Date} */
+ m_parse__java_lang_String__boolean_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** ?string */ text, /** boolean */ strict) {
   let curDate = Date.$create__();
   let date = Date.$create__int__int__int(curDate.m_getYear__(), curDate.m_getMonth__(), curDate.m_getDate__());
   let charsConsumed = this.m_parse__java_lang_String__int__java_util_Date__boolean_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, 0, date, strict);
@@ -758,22 +566,15 @@ class DateTimeFormat extends j_l_Object {
   }
   return date;
  }
- /**
-  * @param {?string} text
-  * @param {number} start
-  * @param {Date} date
-  * @param {boolean} strict
-  * @return {number}
-  * @public
-  */
- m_parse__java_lang_String__int__java_util_Date__boolean_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, start, date, strict) {
+ /** @return {number} */
+ m_parse__java_lang_String__int__java_util_Date__boolean_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** ?string */ text, /** number */ start, /** Date */ date, /** boolean */ strict) {
   let cal = DateRecord.$create__();
-  let parsePos = /**@type {!Array<number>} */ ($Arrays.$init([start], $int));
+  let parsePos = /**@type {!Array<number>}*/ ($Arrays.$init([start], $int));
   let abutPat = -1;
   let abutStart = 0;
   let abutPass = 0;
   for (let i = 0; i < this.f_patternParts__org_gwtproject_i18n_shared_DateTimeFormat_.size(); ++i) {
-   let part = /**@type {PatternPart} */ ($Casts.$to(this.f_patternParts__org_gwtproject_i18n_shared_DateTimeFormat_.getAtIndex(i), PatternPart));
+   let part = /**@type {PatternPart}*/ ($Casts.$to(this.f_patternParts__org_gwtproject_i18n_shared_DateTimeFormat_.getAtIndex(i), PatternPart));
    if (part.f_count__org_gwtproject_i18n_shared_DateTimeFormat_PatternPart > 0) {
     if (abutPat < 0 && part.f_abutStart__org_gwtproject_i18n_shared_DateTimeFormat_PatternPart) {
      abutPat = i;
@@ -819,13 +620,8 @@ class DateTimeFormat extends j_l_Object {
   }
   return parsePos[0] - start;
  }
- /**
-  * @param {?string} text
-  * @param {Array<number>} pos
-  * @return {number}
-  * @public
-  */
- m_parseInt__java_lang_String__arrayOf_int_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, pos) {
+ /** @return {number} */
+ m_parseInt__java_lang_String__arrayOf_int_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** ?string */ text, /** Array<number> */ pos) {
   let ret = 0;
   let ind = pos[0];
   if (ind >= j_l_String.m_length__java_lang_String(text)) {
@@ -847,11 +643,8 @@ class DateTimeFormat extends j_l_Object {
   }
   return ret;
  }
- /**
-  * @param {?string} pattern
-  * @public
-  */
- m_parsePattern__java_lang_String_$p_org_gwtproject_i18n_shared_DateTimeFormat(pattern) {
+ 
+ m_parsePattern__java_lang_String_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** ?string */ pattern) {
   let buf = StringBuilder.$create__int(32);
   let inQuote = false;
   for (let i = 0; i < j_l_String.m_length__java_lang_String(pattern); i++) {
@@ -900,14 +693,8 @@ class DateTimeFormat extends j_l_Object {
   this.m_addPart__java_lang_StringBuilder__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, 0);
   this.m_identifyAbutStart___$p_org_gwtproject_i18n_shared_DateTimeFormat();
  }
- /**
-  * @param {?string} text
-  * @param {Array<number>} pos
-  * @param {DateRecord} cal
-  * @return {boolean}
-  * @public
-  */
- m_parseTimeZoneOffset__java_lang_String__arrayOf_int__org_gwtproject_i18n_shared_impl_DateRecord_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, pos, cal) {
+ /** @return {boolean} */
+ m_parseTimeZoneOffset__java_lang_String__arrayOf_int__org_gwtproject_i18n_shared_impl_DateRecord_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** ?string */ text, /** Array<number> */ pos, /** DateRecord */ cal) {
   if (pos[0] >= j_l_String.m_length__java_lang_String(text)) {
    cal.m_setTzOffset__int(0);
    return true;
@@ -952,28 +739,14 @@ class DateTimeFormat extends j_l_Object {
   cal.m_setTzOffset__int(-offset);
   return true;
  }
- /**
-  * @param {?string} text
-  * @param {Array<number>} pos
-  * @public
-  */
- m_skipSpace__java_lang_String__arrayOf_int_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, pos) {
+ 
+ m_skipSpace__java_lang_String__arrayOf_int_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** ?string */ text, /** Array<number> */ pos) {
   while (pos[0] < j_l_String.m_length__java_lang_String(text) && j_l_String.m_indexOf__java_lang_String__int(DateTimeFormat.f_WHITE_SPACE__org_gwtproject_i18n_shared_DateTimeFormat_, j_l_String.m_charAt__java_lang_String__int(text, pos[0])) >= 0) {
    ++pos[0];
   }
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {number} ch
-  * @param {number} count
-  * @param {Date} date
-  * @param {Date} adjustedDate
-  * @param {Date} adjustedTime
-  * @param {org_gwtproject_i18n_shared_TimeZone} timezone
-  * @return {boolean}
-  * @public
-  */
- m_subFormat__java_lang_StringBuilder__char__int__java_util_Date__java_util_Date__java_util_Date__org_gwtproject_i18n_shared_TimeZone_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, ch, count, date, adjustedDate, adjustedTime, timezone) {
+ /** @return {boolean} */
+ m_subFormat__java_lang_StringBuilder__char__int__java_util_Date__java_util_Date__java_util_Date__org_gwtproject_i18n_shared_TimeZone_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** StringBuilder */ buf, /** number */ ch, /** number */ count, /** Date */ date, /** Date */ adjustedDate, /** Date */ adjustedTime, /** org_gwtproject_i18n_shared_TimeZone */ timezone) {
   switch (ch) {
    case 71 /* 'G' */: 
     this.m_formatEra__java_lang_StringBuilder__int__java_util_Date_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, count, adjustedDate);
@@ -1037,16 +810,8 @@ class DateTimeFormat extends j_l_Object {
   }
   return true;
  }
- /**
-  * @param {?string} text
-  * @param {Array<number>} pos
-  * @param {PatternPart} part
-  * @param {number} digitCount
-  * @param {DateRecord} cal
-  * @return {boolean}
-  * @public
-  */
- m_subParse__java_lang_String__arrayOf_int__org_gwtproject_i18n_shared_DateTimeFormat_PatternPart__int__org_gwtproject_i18n_shared_impl_DateRecord_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, pos, part, digitCount, cal) {
+ /** @return {boolean} */
+ m_subParse__java_lang_String__arrayOf_int__org_gwtproject_i18n_shared_DateTimeFormat_PatternPart__int__org_gwtproject_i18n_shared_impl_DateRecord_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** ?string */ text, /** Array<number> */ pos, /** PatternPart */ part, /** number */ digitCount, /** DateRecord */ cal) {
   this.m_skipSpace__java_lang_String__arrayOf_int_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, pos);
   let start = pos[0];
   let ch = j_l_String.m_charAt__java_lang_String__int(part.f_text__org_gwtproject_i18n_shared_DateTimeFormat_PatternPart, 0);
@@ -1135,15 +900,8 @@ class DateTimeFormat extends j_l_Object {
     return false;
   }
  }
- /**
-  * @param {?string} text
-  * @param {Array<number>} pos
-  * @param {number} start
-  * @param {DateRecord} cal
-  * @return {boolean}
-  * @public
-  */
- m_subParseDayOfWeek__java_lang_String__arrayOf_int__int__org_gwtproject_i18n_shared_impl_DateRecord_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, pos, start, cal) {
+ /** @return {boolean} */
+ m_subParseDayOfWeek__java_lang_String__arrayOf_int__int__org_gwtproject_i18n_shared_impl_DateRecord_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** ?string */ text, /** Array<number> */ pos, /** number */ start, /** DateRecord */ cal) {
   let /** number */ value;
   value = this.m_matchString__java_lang_String__int__arrayOf_java_lang_String__arrayOf_int_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, start, this.f_dateTimeFormatInfo__org_gwtproject_i18n_shared_DateTimeFormat_.m_weekdaysFull__(), pos);
   if (value < 0) {
@@ -1155,15 +913,8 @@ class DateTimeFormat extends j_l_Object {
   cal.m_setDayOfWeek__int(value);
   return true;
  }
- /**
-  * @param {number} value
-  * @param {number} start
-  * @param {number} end
-  * @param {DateRecord} cal
-  * @return {boolean}
-  * @public
-  */
- m_subParseFractionalSeconds__int__int__int__org_gwtproject_i18n_shared_impl_DateRecord_$p_org_gwtproject_i18n_shared_DateTimeFormat(value, start, end, cal) {
+ /** @return {boolean} */
+ m_subParseFractionalSeconds__int__int__int__org_gwtproject_i18n_shared_impl_DateRecord_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** number */ value, /** number */ start, /** number */ end, /** DateRecord */ cal) {
   let i = end - start;
   if (i < 3) {
    while (i < 3) {
@@ -1181,16 +932,8 @@ class DateTimeFormat extends j_l_Object {
   cal.m_setMilliseconds__int(value);
   return true;
  }
- /**
-  * @param {?string} text
-  * @param {Array<number>} pos
-  * @param {DateRecord} cal
-  * @param {number} value
-  * @param {number} start
-  * @return {boolean}
-  * @public
-  */
- m_subParseMonth__java_lang_String__arrayOf_int__org_gwtproject_i18n_shared_impl_DateRecord__int__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, pos, cal, value, start) {
+ /** @return {boolean} */
+ m_subParseMonth__java_lang_String__arrayOf_int__org_gwtproject_i18n_shared_impl_DateRecord__int__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** ?string */ text, /** Array<number> */ pos, /** DateRecord */ cal, /** number */ value, /** number */ start) {
   if (value < 0) {
    value = this.m_matchString__java_lang_String__int__arrayOf_java_lang_String__arrayOf_int_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, start, this.f_dateTimeFormatInfo__org_gwtproject_i18n_shared_DateTimeFormat_.m_monthsFull__(), pos);
    if (value < 0) {
@@ -1207,15 +950,8 @@ class DateTimeFormat extends j_l_Object {
   }
   return false;
  }
- /**
-  * @param {?string} text
-  * @param {Array<number>} pos
-  * @param {number} start
-  * @param {DateRecord} cal
-  * @return {boolean}
-  * @public
-  */
- m_subParseStandaloneDay__java_lang_String__arrayOf_int__int__org_gwtproject_i18n_shared_impl_DateRecord_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, pos, start, cal) {
+ /** @return {boolean} */
+ m_subParseStandaloneDay__java_lang_String__arrayOf_int__int__org_gwtproject_i18n_shared_impl_DateRecord_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** ?string */ text, /** Array<number> */ pos, /** number */ start, /** DateRecord */ cal) {
   let /** number */ value;
   value = this.m_matchString__java_lang_String__int__arrayOf_java_lang_String__arrayOf_int_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, start, this.f_dateTimeFormatInfo__org_gwtproject_i18n_shared_DateTimeFormat_.m_weekdaysFullStandalone__(), pos);
   if (value < 0) {
@@ -1227,16 +963,8 @@ class DateTimeFormat extends j_l_Object {
   cal.m_setDayOfWeek__int(value);
   return true;
  }
- /**
-  * @param {?string} text
-  * @param {Array<number>} pos
-  * @param {DateRecord} cal
-  * @param {number} value
-  * @param {number} start
-  * @return {boolean}
-  * @public
-  */
- m_subParseStandaloneMonth__java_lang_String__arrayOf_int__org_gwtproject_i18n_shared_impl_DateRecord__int__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, pos, cal, value, start) {
+ /** @return {boolean} */
+ m_subParseStandaloneMonth__java_lang_String__arrayOf_int__org_gwtproject_i18n_shared_impl_DateRecord__int__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** ?string */ text, /** Array<number> */ pos, /** DateRecord */ cal, /** number */ value, /** number */ start) {
   if (value < 0) {
    value = this.m_matchString__java_lang_String__int__arrayOf_java_lang_String__arrayOf_int_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, start, this.f_dateTimeFormatInfo__org_gwtproject_i18n_shared_DateTimeFormat_.m_monthsFullStandalone__(), pos);
    if (value < 0) {
@@ -1253,15 +981,8 @@ class DateTimeFormat extends j_l_Object {
   }
   return false;
  }
- /**
-  * @param {?string} text
-  * @param {number} start
-  * @param {Array<number>} pos
-  * @param {DateRecord} cal
-  * @return {boolean}
-  * @public
-  */
- m_subParseTimeZoneInGMT__java_lang_String__int__arrayOf_int__org_gwtproject_i18n_shared_impl_DateRecord_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, start, pos, cal) {
+ /** @return {boolean} */
+ m_subParseTimeZoneInGMT__java_lang_String__int__arrayOf_int__org_gwtproject_i18n_shared_impl_DateRecord_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** ?string */ text, /** number */ start, /** Array<number> */ pos, /** DateRecord */ cal) {
   if (j_l_String.m_startsWith__java_lang_String__java_lang_String__int(text, DateTimeFormat.f_GMT__org_gwtproject_i18n_shared_DateTimeFormat_, start)) {
    $Arrays.$set(pos, 0, start + j_l_String.m_length__java_lang_String(DateTimeFormat.f_GMT__org_gwtproject_i18n_shared_DateTimeFormat_));
    return this.m_parseTimeZoneOffset__java_lang_String__arrayOf_int__org_gwtproject_i18n_shared_impl_DateRecord_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, pos, cal);
@@ -1272,17 +993,8 @@ class DateTimeFormat extends j_l_Object {
   }
   return this.m_parseTimeZoneOffset__java_lang_String__arrayOf_int__org_gwtproject_i18n_shared_impl_DateRecord_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, pos, cal);
  }
- /**
-  * @param {?string} text
-  * @param {Array<number>} pos
-  * @param {number} start
-  * @param {number} value
-  * @param {PatternPart} part
-  * @param {DateRecord} cal
-  * @return {boolean}
-  * @public
-  */
- m_subParseYear__java_lang_String__arrayOf_int__int__int__org_gwtproject_i18n_shared_DateTimeFormat_PatternPart__org_gwtproject_i18n_shared_impl_DateRecord_$p_org_gwtproject_i18n_shared_DateTimeFormat(text, pos, start, value, part, cal) {
+ /** @return {boolean} */
+ m_subParseYear__java_lang_String__arrayOf_int__int__int__org_gwtproject_i18n_shared_DateTimeFormat_PatternPart__org_gwtproject_i18n_shared_impl_DateRecord_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** ?string */ text, /** Array<number> */ pos, /** number */ start, /** number */ value, /** PatternPart */ part, /** DateRecord */ cal) {
   let ch = 32 /* ' ' */;
   if (value < 0) {
    if (pos[0] >= j_l_String.m_length__java_lang_String(text)) {
@@ -1311,13 +1023,8 @@ class DateTimeFormat extends j_l_Object {
   cal.m_setYear__int(value);
   return true;
  }
- /**
-  * @param {StringBuilder} buf
-  * @param {number} value
-  * @param {number} minWidth
-  * @public
-  */
- m_zeroPaddingNumber__java_lang_StringBuilder__int__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(buf, value, minWidth) {
+ 
+ m_zeroPaddingNumber__java_lang_StringBuilder__int__int_$p_org_gwtproject_i18n_shared_DateTimeFormat(/** StringBuilder */ buf, /** number */ value, /** number */ minWidth) {
   let b = DateTimeFormat.f_NUMBER_BASE__org_gwtproject_i18n_shared_DateTimeFormat_;
   for (let i = 0; i < minWidth - 1; i++) {
    if (value < b) {
@@ -1327,32 +1034,22 @@ class DateTimeFormat extends j_l_Object {
   }
   buf.m_append__int(value);
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_i18n_shared_DateTimeFormat() {
-  this.f_patternParts__org_gwtproject_i18n_shared_DateTimeFormat_ = /**@type {!ArrayList<PatternPart>} */ (ArrayList.$create__());
+  this.f_patternParts__org_gwtproject_i18n_shared_DateTimeFormat_ = /**@type {!ArrayList<PatternPart>}*/ (ArrayList.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DateTimeFormat.$clinit = () =>{};
   DateTimeFormat.$loadModules();
   j_l_Object.$clinit();
-  DateTimeFormat.f_cache__org_gwtproject_i18n_shared_DateTimeFormat_ = /**@type {!HashMap<?string, DateTimeFormat>} */ (HashMap.$create__());
+  DateTimeFormat.f_cache__org_gwtproject_i18n_shared_DateTimeFormat_ = /**@type {!HashMap<?string, DateTimeFormat>}*/ (HashMap.$create__());
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DateTimeFormat;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');
@@ -1381,29 +1078,29 @@ class DateTimeFormat extends j_l_Object {
 }
 $Util.$setClassMetadata(DateTimeFormat, 'org.gwtproject.i18n.shared.DateTimeFormat');
 
-/** @public {?string} @const */
+/**@const {?string}*/
 DateTimeFormat.f_RFC2822_PATTERN__org_gwtproject_i18n_shared_DateTimeFormat = "EEE, d MMM yyyy HH:mm:ss Z";
-/** @public {?string} @const */
+/**@const {?string}*/
 DateTimeFormat.f_ISO8601_PATTERN__org_gwtproject_i18n_shared_DateTimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZ";
-/** @public {number} @const */
+/**@const {number}*/
 DateTimeFormat.f_NUMBER_BASE__org_gwtproject_i18n_shared_DateTimeFormat_ = 10;
-/** @public {number} @const */
+/**@const {number}*/
 DateTimeFormat.f_JS_START_YEAR__org_gwtproject_i18n_shared_DateTimeFormat_ = 1900;
-/** @public {Map<?string, DateTimeFormat>} */
+/**@type {Map<?string, DateTimeFormat>}*/
 DateTimeFormat.f_cache__org_gwtproject_i18n_shared_DateTimeFormat_;
-/** @public {number} @const */
+/**@const {number}*/
 DateTimeFormat.f_NUM_MILLISECONDS_IN_DAY__org_gwtproject_i18n_shared_DateTimeFormat_ = 86400000;
-/** @public {?string} @const */
+/**@const {?string}*/
 DateTimeFormat.f_PATTERN_CHARS__org_gwtproject_i18n_shared_DateTimeFormat_ = "GyMLdkHmsSEcDahKzZv";
-/** @public {?string} @const */
+/**@const {?string}*/
 DateTimeFormat.f_NUMERIC_FORMAT_CHARS__org_gwtproject_i18n_shared_DateTimeFormat_ = "MLydhHmsSDkK";
-/** @public {?string} @const */
+/**@const {?string}*/
 DateTimeFormat.f_WHITE_SPACE__org_gwtproject_i18n_shared_DateTimeFormat_ = " \t\r\n";
-/** @public {?string} @const */
+/**@const {?string}*/
 DateTimeFormat.f_GMT__org_gwtproject_i18n_shared_DateTimeFormat_ = "GMT";
-/** @public {?string} @const */
+/**@const {?string}*/
 DateTimeFormat.f_UTC__org_gwtproject_i18n_shared_DateTimeFormat_ = "UTC";
-/** @public {number} @const */
+/**@const {number}*/
 DateTimeFormat.f_MINUTES_PER_HOUR__org_gwtproject_i18n_shared_DateTimeFormat_ = 60;
 
 exports = DateTimeFormat; 

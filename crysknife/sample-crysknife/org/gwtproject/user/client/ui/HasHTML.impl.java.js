@@ -8,47 +8,26 @@ const HasText = goog.require('org.gwtproject.user.client.ui.HasText$impl');
  * @extends {HasText}
  */
 class HasHTML {
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getHTML__() {}
- /**
-  * @abstract
-  * @param {?string} html
-  * @public
-  */
- m_setHTML__java_lang_String(html) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_setHTML__java_lang_String(/** ?string */ html) {}
+ 
  static $clinit() {
   HasHTML.$clinit = () =>{};
   HasHTML.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasText.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_HasHTML = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasText.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_HasHTML = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_HasHTML;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

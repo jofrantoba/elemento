@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TimerRole.impl.java.js",
-"lineCount":16,
-"mappings":"A;;;;;;;;;MA0BiB,S;;;;QAAA,O;EAAAA,4B;EAAAA;",
+"lineCount":14,
+"mappings":"A;;;;;;;;;MA0BiB,S;;QAAA,O;EAAAA,4B;EAAAA;",
 "sources":["TimerRole.java"],
 "names":["org.gwtproject.aria.client.TimerRole.<clinit>"]
 }

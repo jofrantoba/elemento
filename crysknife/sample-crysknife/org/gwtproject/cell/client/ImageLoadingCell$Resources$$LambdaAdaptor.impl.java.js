@@ -10,52 +10,35 @@ let ImageResource = goog.forwardDeclare('org.gwtproject.resources.client.ImageRe
  * @implements {Resources}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function():ImageResource} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function():ImageResource */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function():ImageResource} */
+  /**@type {?function():ImageResource}*/
   this.f_$$fn__org_gwtproject_cell_client_ImageLoadingCell_Resources_$LambdaAdaptor;
   this.$ctor__org_gwtproject_cell_client_ImageLoadingCell_Resources_$LambdaAdaptor__org_gwtproject_cell_client_ImageLoadingCell_Resources_$JsFunction(fn);
  }
- /**
-  * @param {?function():ImageResource} fn
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_ImageLoadingCell_Resources_$LambdaAdaptor__org_gwtproject_cell_client_ImageLoadingCell_Resources_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_cell_client_ImageLoadingCell_Resources_$LambdaAdaptor__org_gwtproject_cell_client_ImageLoadingCell_Resources_$JsFunction(/** ?function():ImageResource */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_cell_client_ImageLoadingCell_Resources_$LambdaAdaptor = fn;
  }
- /**
-  * @return {ImageResource}
-  * @public
-  */
+ /** @return {ImageResource} */
  m_loading__() {
   let /** ?function():ImageResource */ $function;
   return ($function = this.f_$$fn__org_gwtproject_cell_client_ImageLoadingCell_Resources_$LambdaAdaptor, $function());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

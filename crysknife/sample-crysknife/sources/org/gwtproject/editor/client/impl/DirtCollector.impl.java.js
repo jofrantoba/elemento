@@ -13,88 +13,60 @@ let AbstractEditorDelegate = goog.forwardDeclare('org.gwtproject.editor.client.i
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class DirtCollector extends EditorVisitor {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_dirty__org_gwtproject_editor_client_impl_DirtCollector = false;
-  /** @public {Map<LeafValueEditor<?>, *>} */
+  /**@type {Map<LeafValueEditor<?>, *>}*/
   this.f_leafValues__org_gwtproject_editor_client_impl_DirtCollector_;
  }
- /**
-  * @return {!DirtCollector}
-  * @public
-  */
+ /** @return {!DirtCollector} */
  static $create__() {
   DirtCollector.$clinit();
   let $instance = new DirtCollector();
   $instance.$ctor__org_gwtproject_editor_client_impl_DirtCollector__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_editor_client_impl_DirtCollector__() {
   this.$ctor__org_gwtproject_editor_client_EditorVisitor__();
   this.$init___$p_org_gwtproject_editor_client_impl_DirtCollector();
  }
- /**
-  * @override
-  * @template T
-  * @param {EditorContext<T>} ctx
-  * @public
-  */
- m_endVisit__org_gwtproject_editor_client_EditorContext(ctx) {
+ /** @override @template T */
+ m_endVisit__org_gwtproject_editor_client_EditorContext(/** EditorContext<T> */ ctx) {
   let editor = ctx.m_asLeafValueEditor__();
   if (!$Equality.$same(editor, null)) {
    this.f_leafValues__org_gwtproject_editor_client_impl_DirtCollector_.put(editor, editor.m_getValue__());
   }
-  let delegate = /**@type {AbstractEditorDelegate<T, Editor>} */ ($Casts.$to(ctx.m_getEditorDelegate__(), AbstractEditorDelegate));
+  let delegate = /**@type {AbstractEditorDelegate<T, Editor>}*/ ($Casts.$to(ctx.m_getEditorDelegate__(), AbstractEditorDelegate));
   if (!$Equality.$same(delegate, null)) {
    this.f_dirty__org_gwtproject_editor_client_impl_DirtCollector = !!(+this.f_dirty__org_gwtproject_editor_client_impl_DirtCollector | +delegate.m_isDirty__());
   }
  }
- /**
-  * @return {Map<LeafValueEditor<?>, *>}
-  * @public
-  */
+ /** @return {Map<LeafValueEditor<?>, *>} */
  m_getLeafValues__() {
   return this.f_leafValues__org_gwtproject_editor_client_impl_DirtCollector_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isDirty__() {
   return this.f_dirty__org_gwtproject_editor_client_impl_DirtCollector;
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_editor_client_impl_DirtCollector() {
-  this.f_leafValues__org_gwtproject_editor_client_impl_DirtCollector_ = /**@type {!HashMap<LeafValueEditor<?>, *>} */ (HashMap.$create__());
+  this.f_leafValues__org_gwtproject_editor_client_impl_DirtCollector_ = /**@type {!HashMap<LeafValueEditor<?>, *>}*/ (HashMap.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DirtCollector.$clinit = () =>{};
   DirtCollector.$loadModules();
   EditorVisitor.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DirtCollector;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   HashMap = goog.module.get('java.util.HashMap$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

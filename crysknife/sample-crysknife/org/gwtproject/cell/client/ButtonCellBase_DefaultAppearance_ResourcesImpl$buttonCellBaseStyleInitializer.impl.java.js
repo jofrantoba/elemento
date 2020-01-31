@@ -7,55 +7,37 @@ let Style = goog.forwardDeclare('org.gwtproject.cell.client.ButtonCellBase.Defau
 let ButtonCellBase__DefaultAppearance__ResourcesImpl = goog.forwardDeclare('org.gwtproject.cell.client.ButtonCellBase_DefaultAppearance_ResourcesImpl$impl');
 
 class buttonCellBaseStyleInitializer extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!buttonCellBaseStyleInitializer}
-  * @public
-  */
+ /** @return {!buttonCellBaseStyleInitializer} */
  static $create__() {
   let $instance = new buttonCellBaseStyleInitializer();
   $instance.$ctor__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_buttonCellBaseStyleInitializer__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_buttonCellBaseStyleInitializer__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {Style}
-  * @public
-  */
+ /** @return {Style} */
  static m_get__() {
   buttonCellBaseStyleInitializer.$clinit();
   return ButtonCellBase__DefaultAppearance__ResourcesImpl.f_buttonCellBaseStyle__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   buttonCellBaseStyleInitializer.$clinit = () =>{};
   buttonCellBaseStyleInitializer.$loadModules();
   j_l_Object.$clinit();
   ButtonCellBase__DefaultAppearance__ResourcesImpl.f__instance0__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl_.m_buttonCellBaseStyleInitializer___$p_org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ResourcesImpl();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof buttonCellBaseStyleInitializer;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   ButtonCellBase__DefaultAppearance__ResourcesImpl = goog.module.get('org.gwtproject.cell.client.ButtonCellBase_DefaultAppearance_ResourcesImpl$impl');
  }

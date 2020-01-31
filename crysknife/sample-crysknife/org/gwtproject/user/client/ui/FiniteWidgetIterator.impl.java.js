@@ -16,46 +16,31 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {Iterator<Widget>}
   */
 class FiniteWidgetIterator extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {number} */
+  /**@type {number}*/
   this.f_index__org_gwtproject_user_client_ui_FiniteWidgetIterator_ = 0;
-  /** @public {WidgetProvider} */
+  /**@type {WidgetProvider}*/
   this.f_provider__org_gwtproject_user_client_ui_FiniteWidgetIterator_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_widgetCount__org_gwtproject_user_client_ui_FiniteWidgetIterator_ = 0;
  }
- /**
-  * @param {WidgetProvider} provider
-  * @param {number} widgetCount
-  * @return {!FiniteWidgetIterator}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_FiniteWidgetIterator_WidgetProvider__int(provider, widgetCount) {
+ /** @return {!FiniteWidgetIterator} */
+ static $create__org_gwtproject_user_client_ui_FiniteWidgetIterator_WidgetProvider__int(/** WidgetProvider */ provider, /** number */ widgetCount) {
   FiniteWidgetIterator.$clinit();
   let $instance = new FiniteWidgetIterator();
   $instance.$ctor__org_gwtproject_user_client_ui_FiniteWidgetIterator__org_gwtproject_user_client_ui_FiniteWidgetIterator_WidgetProvider__int(provider, widgetCount);
   return $instance;
  }
- /**
-  * @param {WidgetProvider} provider
-  * @param {number} widgetCount
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_FiniteWidgetIterator__org_gwtproject_user_client_ui_FiniteWidgetIterator_WidgetProvider__int(provider, widgetCount) {
+ 
+ $ctor__org_gwtproject_user_client_ui_FiniteWidgetIterator__org_gwtproject_user_client_ui_FiniteWidgetIterator_WidgetProvider__int(/** WidgetProvider */ provider, /** number */ widgetCount) {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_user_client_ui_FiniteWidgetIterator();
   this.f_provider__org_gwtproject_user_client_ui_FiniteWidgetIterator_ = provider;
   this.f_widgetCount__org_gwtproject_user_client_ui_FiniteWidgetIterator_ = widgetCount;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_hasNext__() {
   for (let i = this.f_index__org_gwtproject_user_client_ui_FiniteWidgetIterator_ + 1; i < this.f_widgetCount__org_gwtproject_user_client_ui_FiniteWidgetIterator_; i++) {
    let w = this.f_provider__org_gwtproject_user_client_ui_FiniteWidgetIterator_.m_get__int(i);
@@ -65,11 +50,7 @@ class FiniteWidgetIterator extends j_l_Object {
   }
   return false;
  }
- /**
-  * @override
-  * @return {Widget}
-  * @public
-  */
+ /** @override @return {Widget} */
  m_next__() {
   for (let i = this.f_index__org_gwtproject_user_client_ui_FiniteWidgetIterator_ + 1; i < this.f_widgetCount__org_gwtproject_user_client_ui_FiniteWidgetIterator_; i++) {
    this.f_index__org_gwtproject_user_client_ui_FiniteWidgetIterator_ = i;
@@ -80,10 +61,7 @@ class FiniteWidgetIterator extends j_l_Object {
   }
   throw $Exceptions.toJs(NoSuchElementException.$create__());
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_remove__() {
   if (this.f_index__org_gwtproject_user_client_ui_FiniteWidgetIterator_ < 0 || this.f_index__org_gwtproject_user_client_ui_FiniteWidgetIterator_ >= this.f_widgetCount__org_gwtproject_user_client_ui_FiniteWidgetIterator_) {
    throw $Exceptions.toJs(IllegalStateException.$create__());
@@ -94,41 +72,27 @@ class FiniteWidgetIterator extends j_l_Object {
   }
   w.m_asWidget__().m_removeFromParent__();
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEachRemaining__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEachRemaining__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterator.m_forEachRemaining__$default__java_util_Iterator__java_util_function_Consumer(this, arg0);
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_FiniteWidgetIterator() {
   this.f_index__org_gwtproject_user_client_ui_FiniteWidgetIterator_ = -1;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   FiniteWidgetIterator.$clinit = () =>{};
   FiniteWidgetIterator.$loadModules();
   j_l_Object.$clinit();
   Iterator.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof FiniteWidgetIterator;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');
   NoSuchElementException = goog.module.get('java.util.NoSuchElementException$impl');

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MenuBar_ResourcesImpl$menuBarSubMenuIconInitializer.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;MAauB,6B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,oD;EAAAA,uG;EAAAA,iB;;;;;CAAA,0F;EAAAC,iC;;;;;;QAIkC,O;EAAAC,wC;EACnDA,yG;;;;;QALiB,O;EAAAC,gD;EAAAA,6C;EAAAA,qB;EAEjBA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;MAauB,6B;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,oD;EAAAA,uG;EAAAA,iB;;;CAAA,0F;EAAAC,iC;;;QAIkC,O;EAAAC,wC;EACnDA,yG;;;QALiB,O;EAAAC,gD;EAAAA,6C;EAAAA,qB;EAEjBA;",
 "sources":["MenuBar_ResourcesImpl.java"],
 "names":["org.gwtproject.user.client.ui.MenuBar_ResourcesImpl$menuBarSubMenuIconInitializer.<synthetic: ctor_js>","org.gwtproject.user.client.ui.MenuBar_ResourcesImpl$menuBarSubMenuIconInitializer.<synthetic: ctor_create>","org.gwtproject.user.client.ui.MenuBar_ResourcesImpl$menuBarSubMenuIconInitializer.<init>","org.gwtproject.user.client.ui.MenuBar_ResourcesImpl$menuBarSubMenuIconInitializer.get","org.gwtproject.user.client.ui.MenuBar_ResourcesImpl$menuBarSubMenuIconInitializer.<clinit>"]
 }

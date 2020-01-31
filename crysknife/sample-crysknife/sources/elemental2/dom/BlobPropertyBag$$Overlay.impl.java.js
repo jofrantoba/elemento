@@ -6,24 +6,17 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Overlay = goog.forwardDeclare('jsinterop.base.JsPropertyMap.$Overlay$impl');
 
 class BlobPropertyBag_$Overlay {
- /**
-  * @return {BlobPropertyBag}
-  * @public
-  */
+ /** @return {BlobPropertyBag} */
  static m_create__() {
   BlobPropertyBag_$Overlay.$clinit();
-  return /**@type {BlobPropertyBag} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
+  return /**@type {BlobPropertyBag}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   BlobPropertyBag_$Overlay.$clinit = () =>{};
   BlobPropertyBag_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');

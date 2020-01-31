@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TodoRepository$$LambdaAdaptor$1.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;MA8HoE,gB;;;;;CAAA,W;EAAAA,2B;EAAAA,Q;EAAAA;8E;EAAAA,yH;;;;;;CAAA,+G;EAAAC,iC;EAAAA,iF;;;;;;CAAA,W;;GAAAC,4F;GAAAA,gB;;;;;;QAAA,O;EAAAC,mC;EAAAA,gC;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MA8HoE,gB;;CAAA,W;EAAAA,2B;EAAAA,Q;EAAAA;8E;EAAAA,yH;;;CAAA,+G;EAAAC,iC;EAAAA,iF;;;CAAA,W;;GAAAC,4F;GAAAA,gB;;;;QAAA,O;EAAAC,mC;EAAAA,gC;EAAAA;",
 "sources":["TodoRepository.java"],
 "names":["org.jboss.elemento.sample.j2cl.TodoRepository$$LambdaAdaptor$1.<synthetic: lambda_adaptor_ctor>","org.jboss.elemento.sample.j2cl.TodoRepository$$LambdaAdaptor$1.<init>","org.jboss.elemento.sample.j2cl.TodoRepository$$LambdaAdaptor$1.handleEvent","org.jboss.elemento.sample.j2cl.TodoRepository$$LambdaAdaptor$1.<clinit>"]
 }

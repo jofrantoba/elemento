@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DatePicker$DateHighlightEvent.impl.java.js",
-"lineCount":62,
-"mappings":"A;;;;;;;;;;;;;MAiNuB,kB;;;;CAAA,W;EAAAA,Q;;;;;;;QACT,uB,CAAwBC,W;EAAxBC,6B;EAAAA,yC;EAAAA,kH;EAAAA,iB;;;;;;CAAA,0F,CAAwBD,W;EAChCE,8F;;;;;;;CAIU,kB;EACVC,kH;;;;;;;;CAPiB,4B;EAAAC,kJ;;;;;QAAA,O;EAAAC,qC;EAAAA,kC;EAAAA;",
+"lineCount":43,
+"mappings":"A;;;;;;;;;;;;;MAiNuB,kB;;CAAA,W;EAAAA,Q;;;QACT,uB,aAAwBC,W;EAAxBC,6B;EAAAA,yC;EAAAA,kH;EAAAA,iB;;;CAAA,0F,aAAwBD,W;EAChCE,8F;;;CAIU,kB;EACVC,iH;;;;CAPiB,4B;EAAAC,iJ;;;QAAA,O;EAAAC,qC;EAAAA,kC;EAAAA;",
 "sources":["DatePicker.java"],
 "names":["org.gwtproject.user.datepicker.client.DatePicker$DateHighlightEvent.<synthetic: ctor_js>","highlighted","org.gwtproject.user.datepicker.client.DatePicker$DateHighlightEvent.<synthetic: ctor_create>","org.gwtproject.user.datepicker.client.DatePicker$DateHighlightEvent.<init>","org.gwtproject.user.datepicker.client.DatePicker$DateHighlightEvent.getHighlighted","org.gwtproject.user.datepicker.client.DatePicker$DateHighlightEvent.dispatch","org.gwtproject.user.datepicker.client.DatePicker$DateHighlightEvent.<clinit>"]
 }

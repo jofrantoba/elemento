@@ -27,159 +27,99 @@ let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
  * @implements {IsEditor<LeafValueEditor<T>>}
   */
 class ValuePicker extends Composite {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {T} */
+  /**@type {T}*/
   this.f_value__org_gwtproject_user_client_ui_ValuePicker_;
-  /** @public {CellList<T>} */
+  /**@type {CellList<T>}*/
   this.f_cellList__org_gwtproject_user_client_ui_ValuePicker_;
-  /** @public {SingleSelectionModel<T>} */
+  /**@type {SingleSelectionModel<T>}*/
   this.f_smodel__org_gwtproject_user_client_ui_ValuePicker_;
-  /** @public {LeafValueEditor<T>} */
+  /**@type {LeafValueEditor<T>}*/
   this.f_editor__org_gwtproject_user_client_ui_ValuePicker_;
  }
- /**
-  * Factory method corresponding to constructor 'ValuePicker(CellList)'.
-  * @template T
-  * @param {CellList<T>} cellList
-  * @return {!ValuePicker<T>}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_CellList(cellList) {
+ //Factory method corresponding to constructor 'ValuePicker(CellList)'.
+ /** @template T @return {!ValuePicker<T>} */
+ static $create__org_gwtproject_user_cellview_client_CellList(/** CellList<T> */ cellList) {
   ValuePicker.$clinit();
   let $instance = new ValuePicker();
   $instance.$ctor__org_gwtproject_user_client_ui_ValuePicker__org_gwtproject_user_cellview_client_CellList(cellList);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ValuePicker(CellList)'.
-  * @param {CellList<T>} cellList
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ValuePicker__org_gwtproject_user_cellview_client_CellList(cellList) {
+ //Initialization from constructor 'ValuePicker(CellList)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_ValuePicker__org_gwtproject_user_cellview_client_CellList(/** CellList<T> */ cellList) {
   this.$ctor__org_gwtproject_user_client_ui_Composite__();
   this.$init___$p_org_gwtproject_user_client_ui_ValuePicker();
   this.f_cellList__org_gwtproject_user_client_ui_ValuePicker_ = cellList;
   this.m_initWidget__org_gwtproject_user_client_ui_Widget(cellList);
   cellList.m_setSelectionModel__org_gwtproject_view_client_SelectionModel(this.f_smodel__org_gwtproject_user_client_ui_ValuePicker_);
-  this.f_smodel__org_gwtproject_user_client_ui_ValuePicker_.m_addSelectionChangeHandler__org_gwtproject_view_client_SelectionChangeEvent_Handler(/**@type {!$1<T>} */ ($1.$create__org_gwtproject_user_client_ui_ValuePicker(this)));
+  this.f_smodel__org_gwtproject_user_client_ui_ValuePicker_.m_addSelectionChangeHandler__org_gwtproject_view_client_SelectionChangeEvent_Handler(/**@type {!$1<T>}*/ ($1.$create__org_gwtproject_user_client_ui_ValuePicker(this)));
  }
- /**
-  * Factory method corresponding to constructor 'ValuePicker(Renderer)'.
-  * @template T
-  * @param {Renderer<?>} renderer
-  * @return {!ValuePicker<T>}
-  * @public
-  */
- static $create__org_gwtproject_text_shared_Renderer(renderer) {
+ //Factory method corresponding to constructor 'ValuePicker(Renderer)'.
+ /** @template T @return {!ValuePicker<T>} */
+ static $create__org_gwtproject_text_shared_Renderer(/** Renderer<?> */ renderer) {
   ValuePicker.$clinit();
   let $instance = new ValuePicker();
   $instance.$ctor__org_gwtproject_user_client_ui_ValuePicker__org_gwtproject_text_shared_Renderer(renderer);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ValuePicker(Renderer)'.
-  * @param {Renderer<?>} renderer
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ValuePicker__org_gwtproject_text_shared_Renderer(renderer) {
-  this.$ctor__org_gwtproject_user_client_ui_ValuePicker__org_gwtproject_user_cellview_client_CellList(/**@type {!CellList<T>} */ (CellList.$create__org_gwtproject_cell_client_Cell(/**@type {!DefaultCell<T>} */ (DefaultCell.$create__org_gwtproject_text_shared_Renderer(renderer)))));
+ //Initialization from constructor 'ValuePicker(Renderer)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_ValuePicker__org_gwtproject_text_shared_Renderer(/** Renderer<?> */ renderer) {
+  this.$ctor__org_gwtproject_user_client_ui_ValuePicker__org_gwtproject_user_cellview_client_CellList(/**@type {!CellList<T>}*/ (CellList.$create__org_gwtproject_cell_client_Cell(/**@type {!DefaultCell<T>}*/ (DefaultCell.$create__org_gwtproject_text_shared_Renderer(renderer)))));
  }
- /**
-  * Factory method corresponding to constructor 'ValuePicker()'.
-  * @template T
-  * @return {!ValuePicker<T>}
-  * @public
-  */
+ //Factory method corresponding to constructor 'ValuePicker()'.
+ /** @template T @return {!ValuePicker<T>} */
  static $create__() {
   ValuePicker.$clinit();
   let $instance = new ValuePicker();
   $instance.$ctor__org_gwtproject_user_client_ui_ValuePicker__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'ValuePicker()'.
-  * @public
-  */
+ //Initialization from constructor 'ValuePicker()'.
+ 
  $ctor__org_gwtproject_user_client_ui_ValuePicker__() {
   this.$ctor__org_gwtproject_user_client_ui_ValuePicker__org_gwtproject_text_shared_Renderer(ToStringRenderer.m_instance__());
  }
- /**
-  * @override
-  * @param {ValueChangeHandler<T>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler(/** ValueChangeHandler<T> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, ValueChangeEvent.m_getType__());
  }
- /**
-  * @override
-  * @return {LeafValueEditor<T>}
-  * @public
-  */
+ /** @override @return {LeafValueEditor<T>} */
  m_asEditor__() {
   if ($Equality.$same(this.f_editor__org_gwtproject_user_client_ui_ValuePicker_, null)) {
-   this.f_editor__org_gwtproject_user_client_ui_ValuePicker_ = /**@type {TakesValueEditor<T>} */ (TakesValueEditor.m_of__org_gwtproject_user_client_TakesValue(this));
+   this.f_editor__org_gwtproject_user_client_ui_ValuePicker_ = /**@type {TakesValueEditor<T>}*/ (TakesValueEditor.m_of__org_gwtproject_user_client_TakesValue(this));
   }
   return this.f_editor__org_gwtproject_user_client_ui_ValuePicker_;
  }
- /**
-  * @override
-  * @return {ValuePicker<T>}
-  * @public
-  */
+ /** @override @return {ValuePicker<T>} */
  m_asWidget__() {
   return this;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getPageSize__() {
   return this.f_cellList__org_gwtproject_user_client_ui_ValuePicker_.m_getPageSize__();
  }
- /**
-  * @override
-  * @return {T}
-  * @public
-  */
+ /** @override @return {T} */
  m_getValue__() {
   return this.f_value__org_gwtproject_user_client_ui_ValuePicker_;
  }
- /**
-  * @override
-  * @param {Collection<T>} values
-  * @public
-  */
- m_setAcceptableValues__java_util_Collection(values) {
-  this.f_cellList__org_gwtproject_user_client_ui_ValuePicker_.m_setRowData__java_util_List(/**@type {!ArrayList<T>} */ (ArrayList.$create__java_util_Collection(values)));
+ /** @override */
+ m_setAcceptableValues__java_util_Collection(/** Collection<T> */ values) {
+  this.f_cellList__org_gwtproject_user_client_ui_ValuePicker_.m_setRowData__java_util_List(/**@type {!ArrayList<T>}*/ (ArrayList.$create__java_util_Collection(values)));
  }
- /**
-  * @param {number} size
-  * @public
-  */
- m_setPageSize__int(size) {
+ 
+ m_setPageSize__int(/** number */ size) {
   this.f_cellList__org_gwtproject_user_client_ui_ValuePicker_.m_setPageSize__int(size);
  }
- /**
-  * @override
-  * @param {T} value
-  * @public
-  */
- m_setValue__java_lang_Object(value) {
+ /** @override */
+ m_setValue__java_lang_Object(/** T */ value) {
   this.m_setValue__java_lang_Object__boolean(value, false);
  }
- /**
-  * @override
-  * @param {T} value
-  * @param {boolean} fireEvents
-  * @public
-  */
- m_setValue__java_lang_Object__boolean(value, fireEvents) {
+ /** @override */
+ m_setValue__java_lang_Object__boolean(/** T */ value, /** boolean */ fireEvents) {
   let current = this.m_getValue__();
   if ($Equality.$same(current, value) || (!$Equality.$same(current, null) && $Objects.m_equals__java_lang_Object__java_lang_Object(current, value))) {
    return;
@@ -190,31 +130,21 @@ class ValuePicker extends Composite {
    ValueChangeEvent.m_fire__org_gwtproject_event_logical_shared_HasValueChangeHandlers__java_lang_Object(this, value);
   }
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_ValuePicker() {
-  this.f_smodel__org_gwtproject_user_client_ui_ValuePicker_ = /**@type {!SingleSelectionModel<T>} */ (SingleSelectionModel.$create__());
+  this.f_smodel__org_gwtproject_user_client_ui_ValuePicker_ = /**@type {!SingleSelectionModel<T>}*/ (SingleSelectionModel.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ValuePicker.$clinit = () =>{};
   ValuePicker.$loadModules();
   Composite.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ValuePicker;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   ArrayList = goog.module.get('java.util.ArrayList$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

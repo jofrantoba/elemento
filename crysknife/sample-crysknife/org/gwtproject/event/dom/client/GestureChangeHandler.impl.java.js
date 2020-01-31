@@ -11,50 +11,29 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.event.dom.client.Gestur
  * @extends {EventHandler}
  */
 class GestureChangeHandler {
- /**
-  * @abstract
-  * @param {GestureChangeEvent} event
-  * @public
-  */
- m_onGestureChange__org_gwtproject_event_dom_client_GestureChangeEvent(event) {}
- /**
-  * @param {?function(GestureChangeEvent):void} fn
-  * @return {GestureChangeHandler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onGestureChange__org_gwtproject_event_dom_client_GestureChangeEvent(/** GestureChangeEvent */ event) {}
+ /** @return {GestureChangeHandler} */
+ static $adapt(/** ?function(GestureChangeEvent):void */ fn) {
   GestureChangeHandler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   GestureChangeHandler.$clinit = () =>{};
   GestureChangeHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  EventHandler.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_GestureChangeHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  EventHandler.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_GestureChangeHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_GestureChangeHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.event.dom.client.GestureChangeHandler.$LambdaAdaptor$impl');
  }

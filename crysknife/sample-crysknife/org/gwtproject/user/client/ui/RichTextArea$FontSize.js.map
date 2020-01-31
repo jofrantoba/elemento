@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"RichTextArea$FontSize.impl.java.js",
-"lineCount":145,
-"mappings":"A;;;;;;;MA+QsB,Q;;;;CAAA,W;EAAAA,Q;EAAAA;OAqCN,8DArCMA,K;;;;;;;QAuCV,Y,CAAaC,Q;EAAbC,+B;EAAAA,oF;EAAAA,iB;;;;;;CAAA,+D,CAAaD,Q;EAAbE,iC;EACNA,+E;;;;;;CAQS,a;EACTC,2E;;;;;;;CAIY,Q;EACZC,oG;;;;;;QApDF,gE;EAAAC,oG;;;;;;QAKA,iE;EAAAA,qG;;;;;;QAKA,gE;EAAAA,oG;;;;;;QAKA,kE;EAAAA,sG;;;;;;QAKA,kE;EAAAA,sG;;;;;;QAKA,mE;EAAAA,uG;;;;;;QAKA,mE;EAAAA,uG;;;;;QAhCkB,O;EAAAC,2B;EAAAA,wB;EAAAA,qB;EAElBA,kG;EAKAA,mG;EAKAA,kG;EAKAA,oG;EAKAA,oG;EAKAA,qG;EAKAA,qG;;;;;;;;;;;;;;;;;;;;AAhCkB;uE;AAAA;wE;AAAA;uE;AAAA;yE;AAAA;yE;AAAA;0E;AAAA;;",
+"lineCount":100,
+"mappings":"A;;;;;;;MA+QsB,Q;;CAAA,W;EAAAA,Q;EAAAA;OAqCN,8DArCMA,K;;;QAuCV,Y,eAAaC,Q;EAAbC,+B;EAAAA,oF;EAAAA,iB;;;CAAA,+D,eAAaD,Q;EAAbE,iC;EACNA,+E;;;CAQS,a;EACTC,2E;;;CAIY,Q;EACZC,oG;;;QApDF,gE;EAAAC,oG;;;QAKA,iE;EAAAA,qG;;;QAKA,gE;EAAAA,oG;;;QAKA,kE;EAAAA,sG;;;QAKA,kE;EAAAA,sG;;;QAKA,mE;EAAAA,uG;;;QAKA,mE;EAAAA,uG;;;QAhCkB,O;EAAAC,2B;EAAAA,wB;EAAAA,qB;EAElBA,kG;EAKAA,mG;EAKAA,kG;EAKAA,oG;EAKAA,oG;EAKAA,qG;EAKAA,qG;;;;;;;;;;;;;;AAhCkB;uE;AAAA;wE;AAAA;uE;AAAA;yE;AAAA;yE;AAAA;0E;AAAA;;",
 "sources":["RichTextArea.java"],
 "names":["org.gwtproject.user.client.ui.RichTextArea$FontSize.<synthetic: ctor_js>","number","org.gwtproject.user.client.ui.RichTextArea$FontSize.<synthetic: ctor_create>","org.gwtproject.user.client.ui.RichTextArea$FontSize.<init>","org.gwtproject.user.client.ui.RichTextArea$FontSize.getNumber","org.gwtproject.user.client.ui.RichTextArea$FontSize.toString","org.gwtproject.user.client.ui.RichTextArea$FontSize.<synthetic: getter>","org.gwtproject.user.client.ui.RichTextArea$FontSize.<clinit>"]
 }

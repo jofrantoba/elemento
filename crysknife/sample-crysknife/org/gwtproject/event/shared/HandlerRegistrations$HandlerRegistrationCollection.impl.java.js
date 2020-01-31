@@ -10,37 +10,25 @@ let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
  * @implements {HandlerRegistration}
   */
 class HandlerRegistrationCollection extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Array<HandlerRegistration>} */
+  /**@type {Array<HandlerRegistration>}*/
   this.f_handlers__org_gwtproject_event_shared_HandlerRegistrations_HandlerRegistrationCollection_;
  }
- /**
-  * @param {Array<HandlerRegistration>} handlers
-  * @return {!HandlerRegistrationCollection}
-  * @public
-  */
- static $create__arrayOf_org_gwtproject_event_shared_HandlerRegistration(handlers) {
+ /** @return {!HandlerRegistrationCollection} */
+ static $create__arrayOf_org_gwtproject_event_shared_HandlerRegistration(/** Array<HandlerRegistration> */ handlers) {
   HandlerRegistrationCollection.$clinit();
   let $instance = new HandlerRegistrationCollection();
   $instance.$ctor__org_gwtproject_event_shared_HandlerRegistrations_HandlerRegistrationCollection__arrayOf_org_gwtproject_event_shared_HandlerRegistration(handlers);
   return $instance;
  }
- /**
-  * @param {Array<HandlerRegistration>} handlers
-  * @public
-  */
- $ctor__org_gwtproject_event_shared_HandlerRegistrations_HandlerRegistrationCollection__arrayOf_org_gwtproject_event_shared_HandlerRegistration(handlers) {
+ 
+ $ctor__org_gwtproject_event_shared_HandlerRegistrations_HandlerRegistrationCollection__arrayOf_org_gwtproject_event_shared_HandlerRegistration(/** Array<HandlerRegistration> */ handlers) {
   this.$ctor__java_lang_Object__();
   this.f_handlers__org_gwtproject_event_shared_HandlerRegistrations_HandlerRegistrationCollection_ = handlers;
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_removeHandler__() {
   if ($Equality.$same(this.f_handlers__org_gwtproject_event_shared_HandlerRegistrations_HandlerRegistrationCollection_, null)) {
    return;
@@ -51,25 +39,17 @@ class HandlerRegistrationCollection extends j_l_Object {
   }
   this.f_handlers__org_gwtproject_event_shared_HandlerRegistrations_HandlerRegistrationCollection_ = null;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HandlerRegistrationCollection.$clinit = () =>{};
   HandlerRegistrationCollection.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HandlerRegistrationCollection;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
  }

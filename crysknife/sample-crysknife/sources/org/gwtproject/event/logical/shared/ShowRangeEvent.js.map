@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ShowRangeEvent.impl.java.js",
-"lineCount":144,
-"mappings":"A;;;;;;;;;;;;;;;;MA0Ba,c;;;;CAAA,W;EAAAA,Q;EAAAA;OAkCK,4DAlCLA,C;EAAAA;OAoCK,0DApCLA,C;;;;;;;;;QAc6D,oG,CAClEC,M,EAAUC,K,EAASC,G;EAD+CC,yB;EAEtEA;GACEA,IAAkBC,KAAlBD,+GADFA;GAEEA,kGAFFA;G;;;;;;QAWsC,W;EAAAE,yB;EACtCA;GACEA,yIADFA;G;EAGAA,kF;;;;;;;;;QAaQ,2C,CAAiBJ,K,EAASC,G;EAA1BI,yB;EAAAA,qC;EAAAA,oH;EAAAA,iB;;;;;;;CAAA,6F,CAAiBL,K,EAASC,G;EAA1BK,kD;EACRA,0E;EACAA,sE;;;;;;;CAOqC,qB;EACrCC,uG;;;;;;CAQO,U;EACPC,uE;;;;;;CAQO,Y;EACPC,yE;;;;;;CAIa,gE,CAA6BC,O;EAC1CC,gF;;;;;;;;CA7ES,4B;EAAAA,8I;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,gB;;;;;;;;;;;;;;;;;;;;;;;AAAA;eAG8B,2DAH9B;",
+"lineCount":98,
+"mappings":"A;;;;;;;;;;;;;;;;MA0Ba,c;;CAAA,W;EAAAA,Q;EAAAA;OAkCK,4DAlCLA,C;EAAAA;OAoCK,0DApCLA,C;;;QAc6D,oG,UAClEC,M,aAAUC,K,aAASC,G;EAD+CC,yB;EAEtEA;GACEA,IAAkBC,KAAlBD,8GADFA;GAEEA,iGAFFA;G;;;QAWsC,W;EAAAE,yB;EACtCA;GACEA,wIADFA;G;EAGAA,kF;;;QAaQ,2C,UAAiBJ,K,WAASC,G;EAA1BI,yB;EAAAA,qC;EAAAA,oH;EAAAA,iB;;;CAAA,6F,UAAiBL,K,WAASC,G;EAA1BK,kD;EACRA,0E;EACAA,sE;;;CAOqC,qB;EACrCC,sG;;;CAQO,U;EACPC,uE;;;CAQO,Y;EACPC,yE;;;CAIa,gE,4BAA6BC,O;EAC1CC,gF;;;;CA7ES,4B;EAAAA,6I;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,gB;;;;;;;;;;;;;;;;;AAAA;eAG8B,2DAH9B;",
 "sources":["ShowRangeEvent.java"],
 "names":["org.gwtproject.event.logical.shared.ShowRangeEvent.<synthetic: ctor_js>","source","start","end","org.gwtproject.event.logical.shared.ShowRangeEvent.fire","event","org.gwtproject.event.logical.shared.ShowRangeEvent.getType","org.gwtproject.event.logical.shared.ShowRangeEvent.<synthetic: ctor_create>","org.gwtproject.event.logical.shared.ShowRangeEvent.<init>","org.gwtproject.event.logical.shared.ShowRangeEvent.getAssociatedType","org.gwtproject.event.logical.shared.ShowRangeEvent.getEnd","org.gwtproject.event.logical.shared.ShowRangeEvent.getStart","handler","org.gwtproject.event.logical.shared.ShowRangeEvent.dispatch","org.gwtproject.event.logical.shared.ShowRangeEvent.<clinit>"]
 }

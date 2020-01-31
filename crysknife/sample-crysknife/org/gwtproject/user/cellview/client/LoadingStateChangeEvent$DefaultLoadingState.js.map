@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"LoadingStateChangeEvent$DefaultLoadingState.impl.java.js",
-"lineCount":39,
-"mappings":"A;;;;;;;;;MA6DuB,mB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,8B;EAAAA,0C;EAAAA,qG;EAAAA,iB;;;;;CAAA,wF;EAAAC,iC;;;;;QAAA,O;EAAAC,sC;EAAAA,mC;EAAAA;",
+"lineCount":30,
+"mappings":"A;;;;;;;;;MA6DuB,mB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,8B;EAAAA,0C;EAAAA,qG;EAAAA,iB;;;CAAA,wF;EAAAC,iC;;;QAAA,O;EAAAC,sC;EAAAA,mC;EAAAA;",
 "sources":["LoadingStateChangeEvent.java"],
 "names":["org.gwtproject.user.cellview.client.LoadingStateChangeEvent$DefaultLoadingState.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.LoadingStateChangeEvent$DefaultLoadingState.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.LoadingStateChangeEvent$DefaultLoadingState.<init>","org.gwtproject.user.cellview.client.LoadingStateChangeEvent$DefaultLoadingState.<clinit>"]
 }

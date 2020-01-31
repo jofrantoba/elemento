@@ -8,52 +8,35 @@ const SafeUri = goog.require('org.gwtproject.safehtml.shared.SafeUri$impl');
  * @implements {SafeUri}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function():?string} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function():?string */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function():?string} */
+  /**@type {?function():?string}*/
   this.f_$$fn__org_gwtproject_safehtml_shared_SafeUri_$LambdaAdaptor;
   this.$ctor__org_gwtproject_safehtml_shared_SafeUri_$LambdaAdaptor__org_gwtproject_safehtml_shared_SafeUri_$JsFunction(fn);
  }
- /**
-  * @param {?function():?string} fn
-  * @public
-  */
- $ctor__org_gwtproject_safehtml_shared_SafeUri_$LambdaAdaptor__org_gwtproject_safehtml_shared_SafeUri_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_safehtml_shared_SafeUri_$LambdaAdaptor__org_gwtproject_safehtml_shared_SafeUri_$JsFunction(/** ?function():?string */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_safehtml_shared_SafeUri_$LambdaAdaptor = fn;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_asString__() {
   let /** ?function():?string */ $function;
   return ($function = this.f_$$fn__org_gwtproject_safehtml_shared_SafeUri_$LambdaAdaptor, $function());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"IsWidget.impl.java.js",
-"lineCount":32,
-"mappings":"A;;;;;;;;;;MAsBiB,Q;;;;;;CAKR,Y;;;;;;QALQ,M;EAAAA,mB;EAAAA,8B;;;;;QAAA,O;EAAAC,2B;EAAAA;",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;MAsBiB,Q;;CAKR,Y;;QALQ,M;EAAAA,mB;EAAAA,8B;;;QAAA,O;EAAAC,2B;EAAAA;",
 "sources":["IsWidget.java"],
 "names":["org.gwtproject.user.client.ui.IsWidget.<synthetic: adapt_lambda>","org.gwtproject.user.client.ui.IsWidget.<clinit>"]
 }

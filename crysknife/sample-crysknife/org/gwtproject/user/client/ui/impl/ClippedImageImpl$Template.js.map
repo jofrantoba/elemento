@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ClippedImageImpl$Template.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;;;;;;;;MA6CY,Q;;;;;;;;CACC,yF,CAAcA,U,EAAuBC,K;;;;;;QADtC,M;EAAAC,mB;EAAAA,8B;;;;;QAAA,O;EAAAC,2B;EAAAA;",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;;;MA6CY,Q;;CACC,yF,gBAAcA,U,oBAAuBC,K;;QADtC,M;EAAAC,mB;EAAAA,8B;;;QAAA,O;EAAAC,2B;EAAAA;",
 "sources":["ClippedImageImpl.java"],
 "names":["clearImage","style","org.gwtproject.user.client.ui.impl.ClippedImageImpl$Template.<synthetic: adapt_lambda>","org.gwtproject.user.client.ui.impl.ClippedImageImpl$Template.<clinit>"]
 }

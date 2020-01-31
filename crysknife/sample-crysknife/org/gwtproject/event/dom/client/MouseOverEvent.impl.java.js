@@ -14,87 +14,55 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {MouseEvent<MouseOverHandler>}
   */
 class MouseOverEvent extends MouseEvent {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!MouseOverEvent}
-  * @public
-  */
+ /** @return {!MouseOverEvent} */
  static $create__() {
   MouseOverEvent.$clinit();
   let $instance = new MouseOverEvent();
   $instance.$ctor__org_gwtproject_event_dom_client_MouseOverEvent__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_dom_client_MouseOverEvent__() {
   this.$ctor__org_gwtproject_event_dom_client_MouseEvent__();
  }
- /**
-  * @return {Type<MouseOverHandler>}
-  * @public
-  */
+ /** @return {Type<MouseOverHandler>} */
  static m_getType__() {
   MouseOverEvent.$clinit();
   return MouseOverEvent.f_TYPE__org_gwtproject_event_dom_client_MouseOverEvent_;
  }
- /**
-  * @override
-  * @return {Type<MouseOverHandler>}
-  * @public
-  */
+ /** @override @return {Type<MouseOverHandler>} */
  m_getAssociatedType__() {
   return MouseOverEvent.f_TYPE__org_gwtproject_event_dom_client_MouseOverEvent_;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getRelatedTarget__() {
   return $Overlay.m_getRelatedEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(this.m_getNativeEvent__());
  }
- /**
-  * @param {MouseOverHandler} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_event_dom_client_MouseOverHandler(handler) {
+ 
+ m_dispatch__org_gwtproject_event_dom_client_MouseOverHandler(/** MouseOverHandler */ handler) {
   handler.m_onMouseOver__org_gwtproject_event_dom_client_MouseOverEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_event_dom_client_MouseOverHandler(/**@type {MouseOverHandler} */ ($Casts.$to(arg0, MouseOverHandler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_event_dom_client_MouseOverHandler(/**@type {MouseOverHandler}*/ ($Casts.$to(arg0, MouseOverHandler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MouseOverEvent.$clinit = () =>{};
   MouseOverEvent.$loadModules();
   MouseEvent.$clinit();
-  MouseOverEvent.f_TYPE__org_gwtproject_event_dom_client_MouseOverEvent_ = /**@type {!Type<MouseOverHandler>} */ (Type.$create__java_lang_String__org_gwtproject_event_dom_client_DomEvent(BrowserEvents.f_MOUSEOVER__org_gwtproject_dom_client_BrowserEvents, MouseOverEvent.$create__()));
+  MouseOverEvent.f_TYPE__org_gwtproject_event_dom_client_MouseOverEvent_ = /**@type {!Type<MouseOverHandler>}*/ (Type.$create__java_lang_String__org_gwtproject_event_dom_client_DomEvent(BrowserEvents.f_MOUSEOVER__org_gwtproject_dom_client_BrowserEvents, MouseOverEvent.$create__()));
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof MouseOverEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   BrowserEvents = goog.module.get('org.gwtproject.dom.client.BrowserEvents$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.NativeEvent.$Overlay$impl');
@@ -106,7 +74,7 @@ class MouseOverEvent extends MouseEvent {
 }
 $Util.$setClassMetadata(MouseOverEvent, 'org.gwtproject.event.dom.client.MouseOverEvent');
 
-/** @public {Type<MouseOverHandler>} */
+/**@type {Type<MouseOverHandler>}*/
 MouseOverEvent.f_TYPE__org_gwtproject_event_dom_client_MouseOverEvent_;
 
 exports = MouseOverEvent; 

@@ -14,87 +14,55 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {MouseEvent<MouseOutHandler>}
   */
 class MouseOutEvent extends MouseEvent {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!MouseOutEvent}
-  * @public
-  */
+ /** @return {!MouseOutEvent} */
  static $create__() {
   MouseOutEvent.$clinit();
   let $instance = new MouseOutEvent();
   $instance.$ctor__org_gwtproject_event_dom_client_MouseOutEvent__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_dom_client_MouseOutEvent__() {
   this.$ctor__org_gwtproject_event_dom_client_MouseEvent__();
  }
- /**
-  * @return {Type<MouseOutHandler>}
-  * @public
-  */
+ /** @return {Type<MouseOutHandler>} */
  static m_getType__() {
   MouseOutEvent.$clinit();
   return MouseOutEvent.f_TYPE__org_gwtproject_event_dom_client_MouseOutEvent_;
  }
- /**
-  * @override
-  * @return {Type<MouseOutHandler>}
-  * @public
-  */
+ /** @override @return {Type<MouseOutHandler>} */
  m_getAssociatedType__() {
   return MouseOutEvent.f_TYPE__org_gwtproject_event_dom_client_MouseOutEvent_;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getRelatedTarget__() {
   return $Overlay.m_getRelatedEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(this.m_getNativeEvent__());
  }
- /**
-  * @param {MouseOutHandler} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_event_dom_client_MouseOutHandler(handler) {
+ 
+ m_dispatch__org_gwtproject_event_dom_client_MouseOutHandler(/** MouseOutHandler */ handler) {
   handler.m_onMouseOut__org_gwtproject_event_dom_client_MouseOutEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_event_dom_client_MouseOutHandler(/**@type {MouseOutHandler} */ ($Casts.$to(arg0, MouseOutHandler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_event_dom_client_MouseOutHandler(/**@type {MouseOutHandler}*/ ($Casts.$to(arg0, MouseOutHandler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MouseOutEvent.$clinit = () =>{};
   MouseOutEvent.$loadModules();
   MouseEvent.$clinit();
-  MouseOutEvent.f_TYPE__org_gwtproject_event_dom_client_MouseOutEvent_ = /**@type {!Type<MouseOutHandler>} */ (Type.$create__java_lang_String__org_gwtproject_event_dom_client_DomEvent(BrowserEvents.f_MOUSEOUT__org_gwtproject_dom_client_BrowserEvents, MouseOutEvent.$create__()));
+  MouseOutEvent.f_TYPE__org_gwtproject_event_dom_client_MouseOutEvent_ = /**@type {!Type<MouseOutHandler>}*/ (Type.$create__java_lang_String__org_gwtproject_event_dom_client_DomEvent(BrowserEvents.f_MOUSEOUT__org_gwtproject_dom_client_BrowserEvents, MouseOutEvent.$create__()));
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof MouseOutEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   BrowserEvents = goog.module.get('org.gwtproject.dom.client.BrowserEvents$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.NativeEvent.$Overlay$impl');
@@ -106,7 +74,7 @@ class MouseOutEvent extends MouseEvent {
 }
 $Util.$setClassMetadata(MouseOutEvent, 'org.gwtproject.event.dom.client.MouseOutEvent');
 
-/** @public {Type<MouseOutHandler>} */
+/**@type {Type<MouseOutHandler>}*/
 MouseOutEvent.f_TYPE__org_gwtproject_event_dom_client_MouseOutEvent_;
 
 exports = MouseOutEvent; 

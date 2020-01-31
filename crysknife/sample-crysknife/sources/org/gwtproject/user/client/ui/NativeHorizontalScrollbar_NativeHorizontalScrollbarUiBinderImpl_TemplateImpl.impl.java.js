@@ -13,39 +13,23 @@ let SafeHtmlUtils = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHtml
  * @implements {Template}
   */
 class NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__TemplateImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__TemplateImpl}
-  * @public
-  */
+ /** @return {!NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__TemplateImpl} */
  static $create__() {
   NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__TemplateImpl.$clinit();
   let $instance = new NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__TemplateImpl();
   $instance.$ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_TemplateImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_TemplateImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {?string} arg0
-  * @param {?string} arg1
-  * @param {?string} arg2
-  * @param {?string} arg3
-  * @param {?string} arg4
-  * @return {SafeHtml}
-  * @public
-  */
- m_html1__java_lang_String__java_lang_String__java_lang_String__java_lang_String__java_lang_String(arg0, arg1, arg2, arg3, arg4) {
+ /** @override @return {SafeHtml} */
+ m_html1__java_lang_String__java_lang_String__java_lang_String__java_lang_String__java_lang_String(/** ?string */ arg0, /** ?string */ arg1, /** ?string */ arg2, /** ?string */ arg3, /** ?string */ arg4) {
   let sb = StringBuilder.$create__();
   sb.m_append__java_lang_String("<div class='");
   sb.m_append__java_lang_String(SafeHtmlUtils.m_htmlEscape__java_lang_String(arg0));
@@ -60,25 +44,17 @@ class NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__Template
   sb.m_append__java_lang_String("'></div> </div></div>");
   return OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml.$create__java_lang_String(sb.toString());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__TemplateImpl.$clinit = () =>{};
   NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__TemplateImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__TemplateImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   StringBuilder = goog.module.get('java.lang.StringBuilder$impl');
   OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml = goog.module.get('org.gwtproject.safehtml.shared.OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml$impl');

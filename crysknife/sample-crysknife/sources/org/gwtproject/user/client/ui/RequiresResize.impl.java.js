@@ -8,48 +8,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.user.client.ui.Requires
  * @interface
  */
 class RequiresResize {
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_onResize__() {}
- /**
-  * @param {?function():void} fn
-  * @return {RequiresResize}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {RequiresResize} */
+ static $adapt(/** ?function():void */ fn) {
   RequiresResize.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RequiresResize.$clinit = () =>{};
   RequiresResize.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_RequiresResize = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_RequiresResize = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_RequiresResize;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.user.client.ui.RequiresResize.$LambdaAdaptor$impl');
  }

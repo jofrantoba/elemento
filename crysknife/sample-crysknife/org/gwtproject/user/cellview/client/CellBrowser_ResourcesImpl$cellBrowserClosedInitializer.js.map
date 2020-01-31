@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellBrowser_ResourcesImpl$cellBrowserClosedInitializer.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;MAauB,4B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,mD;EAAAA,gH;EAAAA,iB;;;;;CAAA,mG;EAAAC,iC;;;;;;QAIkC,O;EAAAC,uC;EACnDA,sH;;;;;QALiB,O;EAAAC,+C;EAAAA,4C;EAAAA,qB;EAEjBA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;MAauB,4B;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,mD;EAAAA,gH;EAAAA,iB;;;CAAA,mG;EAAAC,iC;;;QAIkC,O;EAAAC,uC;EACnDA,sH;;;QALiB,O;EAAAC,+C;EAAAA,4C;EAAAA,qB;EAEjBA;",
 "sources":["CellBrowser_ResourcesImpl.java"],
 "names":["org.gwtproject.user.cellview.client.CellBrowser_ResourcesImpl$cellBrowserClosedInitializer.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.CellBrowser_ResourcesImpl$cellBrowserClosedInitializer.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.CellBrowser_ResourcesImpl$cellBrowserClosedInitializer.<init>","org.gwtproject.user.cellview.client.CellBrowser_ResourcesImpl$cellBrowserClosedInitializer.get","org.gwtproject.user.cellview.client.CellBrowser_ResourcesImpl$cellBrowserClosedInitializer.<clinit>"]
 }

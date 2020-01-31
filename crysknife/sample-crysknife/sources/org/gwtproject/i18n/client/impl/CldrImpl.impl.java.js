@@ -8,54 +8,36 @@ const Localizable = goog.require('org.gwtproject.i18n.client.Localizable$impl');
  * @implements {Localizable}
   */
 class CldrImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!CldrImpl}
-  * @public
-  */
+ /** @return {!CldrImpl} */
  static $create__() {
   CldrImpl.$clinit();
   let $instance = new CldrImpl();
   $instance.$ctor__org_gwtproject_i18n_client_impl_CldrImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_i18n_client_impl_CldrImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isRTL__() {
   return false;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CldrImpl.$clinit = () =>{};
   CldrImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CldrImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -8,35 +8,22 @@ const ElementBuilderBase = goog.require('org.gwtproject.dom.builder.shared.Eleme
  * @extends {ElementBuilderBase<DivBuilder>}
  */
 class DivBuilder {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DivBuilder.$clinit = () =>{};
   DivBuilder.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ElementBuilderBase.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_dom_builder_shared_DivBuilder = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ElementBuilderBase.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_dom_builder_shared_DivBuilder = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_dom_builder_shared_DivBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -16,115 +16,65 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {StyleBuilder}
   */
 class DomStyleBuilder extends DomElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @return {!DomStyleBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ /** @return {!DomStyleBuilder} */
+ static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   DomStyleBuilder.$clinit();
   let $instance = new DomStyleBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_client_DomStyleBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_client_DomStyleBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_client_DomStyleBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_client_DomElementBuilderBase__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
  }
- /**
-  * @override
-  * @param {?string} cssText
-  * @return {StyleBuilder}
-  * @public
-  */
- m_cssText__java_lang_String(cssText) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).cssText = cssText;
+ /** @override @return {StyleBuilder} */
+ m_cssText__java_lang_String(/** ?string */ cssText) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).cssText = cssText;
   this.m_getDelegate___$pp_org_gwtproject_dom_builder_client().m_lockCurrentElement__();
   return this;
  }
- /**
-  * @override
-  * @return {StyleBuilder}
-  * @public
-  */
+ /** @override @return {StyleBuilder} */
  m_disabled__() {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).disabled = true;
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).disabled = true;
   return this;
  }
- /**
-  * @override
-  * @param {SafeHtml} html
-  * @return {StyleBuilder}
-  * @public
-  */
- m_html__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ /** @override @return {StyleBuilder} */
+ m_html__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String(StyleBuilder.f_UNSUPPORTED_HTML__org_gwtproject_dom_builder_shared_StyleBuilder));
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isChildElementSupported__() {
   return false;
  }
- /**
-  * @override
-  * @param {?string} media
-  * @return {StyleBuilder}
-  * @public
-  */
- m_media__java_lang_String(media) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).media = media;
+ /** @override @return {StyleBuilder} */
+ m_media__java_lang_String(/** ?string */ media) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).media = media;
   return this;
  }
- /**
-  * @override
-  * @param {?string} text
-  * @return {StyleBuilder}
-  * @public
-  */
- m_text__java_lang_String(text) {
+ /** @override @return {StyleBuilder} */
+ m_text__java_lang_String(/** ?string */ text) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String(StyleBuilder.f_UNSUPPORTED_HTML__org_gwtproject_dom_builder_shared_StyleBuilder));
  }
- /**
-  * @override
-  * @param {?string} type
-  * @return {StyleBuilder}
-  * @public
-  */
- m_type__java_lang_String(type) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).type = type;
+ /** @override @return {StyleBuilder} */
+ m_type__java_lang_String(/** ?string */ type) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).type = type;
   return this;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomStyleBuilder.$clinit = () =>{};
   DomStyleBuilder.$loadModules();
   DomElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomStyleBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   UnsupportedOperationException = goog.module.get('java.lang.UnsupportedOperationException$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.StyleElement.$Overlay$impl');

@@ -28,22 +28,17 @@ let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
 let $char = goog.forwardDeclare('vmbootstrap.primitives.$char$impl');
 
 class TodoRepository extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_key__org_jboss_elemento_sample_crysknife_TodoRepository_;
-  /** @public {Storage} */
+  /**@type {Storage}*/
   this.f_storage__org_jboss_elemento_sample_crysknife_TodoRepository_;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  static m_uuid__() {
-  let uuid = /**@type {!Array<number>} */ ($Arrays.$create([36], $char));
+  let uuid = /**@type {!Array<number>}*/ ($Arrays.$create([36], $char));
   let /** number */ r;
   $Arrays.$set(uuid, 8, $Arrays.$set(uuid, 13, $Arrays.$set(uuid, 18, $Arrays.$set(uuid, 23, 45 /* '-' */))));
   $Arrays.$set(uuid, 14, 52 /* '4' */);
@@ -55,52 +50,36 @@ class TodoRepository extends j_l_Object {
   }
   return j_l_String.$create__arrayOf_char(uuid);
  }
- /**
-  * Factory method corresponding to constructor 'TodoRepository()'.
-  * @return {!TodoRepository}
-  * @public
-  */
+ //Factory method corresponding to constructor 'TodoRepository()'.
+ /** @return {!TodoRepository} */
  static $create__() {
   TodoRepository.$clinit();
   let $instance = new TodoRepository();
   $instance.$ctor__org_jboss_elemento_sample_crysknife_TodoRepository__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'TodoRepository()'.
-  * @public
-  */
+ //Initialization from constructor 'TodoRepository()'.
+ 
  $ctor__org_jboss_elemento_sample_crysknife_TodoRepository__() {
   this.$ctor__org_jboss_elemento_sample_crysknife_TodoRepository__java_lang_String(TodoRepository.f_DEFAULT_KEY__org_jboss_elemento_sample_crysknife_TodoRepository_);
  }
- /**
-  * Factory method corresponding to constructor 'TodoRepository(String)'.
-  * @param {?string} key
-  * @return {!TodoRepository}
-  * @public
-  */
- static $create__java_lang_String(key) {
+ //Factory method corresponding to constructor 'TodoRepository(String)'.
+ /** @return {!TodoRepository} */
+ static $create__java_lang_String(/** ?string */ key) {
   TodoRepository.$clinit();
   let $instance = new TodoRepository();
   $instance.$ctor__org_jboss_elemento_sample_crysknife_TodoRepository__java_lang_String(key);
   return $instance;
  }
- /**
-  * Initialization from constructor 'TodoRepository(String)'.
-  * @param {?string} key
-  * @public
-  */
- $ctor__org_jboss_elemento_sample_crysknife_TodoRepository__java_lang_String(key) {
+ //Initialization from constructor 'TodoRepository(String)'.
+ 
+ $ctor__org_jboss_elemento_sample_crysknife_TodoRepository__java_lang_String(/** ?string */ key) {
   this.$ctor__java_lang_Object__();
   this.f_key__org_jboss_elemento_sample_crysknife_TodoRepository_ = key;
   this.f_storage__org_jboss_elemento_sample_crysknife_TodoRepository_ = $Overlay.m_of__elemental2_dom_Window(window.window).localStorage;
  }
- /**
-  * @param {?string} text
-  * @return {Object}
-  * @public
-  */
- m_add__java_lang_String(text) {
+ /** @return {Object} */
+ m_add__java_lang_String(/** ?string */ text) {
   let item = new Object();
   item.id = TodoRepository.m_uuid__();
   item.text = text;
@@ -110,79 +89,56 @@ class TodoRepository extends j_l_Object {
   this.m_save__java_util_Collection_$p_org_jboss_elemento_sample_crysknife_TodoRepository(items.values());
   return item;
  }
- /**
-  * @param {boolean} completed
-  * @public
-  */
- m_completeAll__boolean(completed) {
+ 
+ m_completeAll__boolean(/** boolean */ completed) {
   for (let $iterator = this.m_items__().m_iterator__(); $iterator.m_hasNext__(); ) {
-   let item = /**@type {Object} */ ($Casts.$to($iterator.m_next__(), Todo_$Overlay));
+   let item = /**@type {Object}*/ ($Casts.$to($iterator.m_next__(), Todo_$Overlay));
    item.completed = completed;
   }
   this.m_save__java_util_Collection_$p_org_jboss_elemento_sample_crysknife_TodoRepository(this.m_items__());
  }
- /**
-  * @param {Object} item
-  * @param {boolean} completed
-  * @public
-  */
- m_complete__org_jboss_elemento_sample_crysknife_Todo__boolean(item, completed) {
+ 
+ m_complete__org_jboss_elemento_sample_crysknife_Todo__boolean(/** Object */ item, /** boolean */ completed) {
   let items = this.m_load___$p_org_jboss_elemento_sample_crysknife_TodoRepository();
-  let existingItem = /**@type {Object} */ ($Casts.$to(items.get(item.id), Todo_$Overlay));
+  let existingItem = /**@type {Object}*/ ($Casts.$to(items.get(item.id), Todo_$Overlay));
   if (!$Equality.$same(existingItem, null)) {
    existingItem.completed = completed;
    this.m_save__java_util_Collection_$p_org_jboss_elemento_sample_crysknife_TodoRepository(items.values());
   }
  }
- /**
-  * @param {Object} item
-  * @param {?string} text
-  * @public
-  */
- m_rename__org_jboss_elemento_sample_crysknife_Todo__java_lang_String(item, text) {
+ 
+ m_rename__org_jboss_elemento_sample_crysknife_Todo__java_lang_String(/** Object */ item, /** ?string */ text) {
   let items = this.m_load___$p_org_jboss_elemento_sample_crysknife_TodoRepository();
-  let existingItem = /**@type {Object} */ ($Casts.$to(items.get(item.id), Todo_$Overlay));
+  let existingItem = /**@type {Object}*/ ($Casts.$to(items.get(item.id), Todo_$Overlay));
   if (!$Equality.$same(existingItem, null)) {
    existingItem.text = text;
    this.m_save__java_util_Collection_$p_org_jboss_elemento_sample_crysknife_TodoRepository(items.values());
   }
  }
- /**
-  * @return {Collection<Object>}
-  * @public
-  */
+ /** @return {Collection<Object>} */
  m_items__() {
   return this.m_load___$p_org_jboss_elemento_sample_crysknife_TodoRepository().values();
  }
- /**
-  * @param {Object} item
-  * @public
-  */
- m_remove__org_jboss_elemento_sample_crysknife_Todo(item) {
+ 
+ m_remove__org_jboss_elemento_sample_crysknife_Todo(/** Object */ item) {
   let items = this.m_load___$p_org_jboss_elemento_sample_crysknife_TodoRepository();
   items.remove(item.id);
   this.m_save__java_util_Collection_$p_org_jboss_elemento_sample_crysknife_TodoRepository(items.values());
  }
- /**
-  * @param {Set<?string>} ids
-  * @public
-  */
- m_removeAll__java_util_Set(ids) {
+ 
+ m_removeAll__java_util_Set(/** Set<?string> */ ids) {
   let items = this.m_load___$p_org_jboss_elemento_sample_crysknife_TodoRepository();
   for (let $iterator = ids.m_iterator__(); $iterator.m_hasNext__(); ) {
-   let id = /**@type {?string} */ ($Casts.$to($iterator.m_next__(), j_l_String));
+   let id = /**@type {?string}*/ ($Casts.$to($iterator.m_next__(), j_l_String));
    items.remove(id);
   }
   this.m_save__java_util_Collection_$p_org_jboss_elemento_sample_crysknife_TodoRepository(items.values());
  }
- /**
-  * @param {ModificationCallback} callback
-  * @public
-  */
- m_onExternalModification__org_jboss_elemento_sample_crysknife_TodoRepository_ModificationCallback(callback) {
+ 
+ m_onExternalModification__org_jboss_elemento_sample_crysknife_TodoRepository_ModificationCallback(/** ModificationCallback */ callback) {
   if (!$Equality.$same(this.f_storage__org_jboss_elemento_sample_crysknife_TodoRepository_, null)) {
    EventTarget_$Overlay.m_addEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean($Overlay.m_of__elemental2_dom_Window(window.window), "storage", new $LambdaAdaptor$4((/** Event */ event) =>{
-    let storageEvent = /**@type {StorageEvent} */ ($Casts.$to(event, StorageEvent_$Overlay));
+    let storageEvent = /**@type {StorageEvent}*/ ($Casts.$to(event, StorageEvent_$Overlay));
     if (j_l_String.m_equals__java_lang_String__java_lang_Object(this.f_key__org_jboss_elemento_sample_crysknife_TodoRepository_, storageEvent.key)) {
      DomGlobal_$Overlay.m_setTimeout__elemental2_dom_DomGlobal_SetTimeoutCallbackFn__double__arrayOf_java_lang_Object((.../** ...* */ args) =>{
       callback.m_execute__();
@@ -191,27 +147,24 @@ class TodoRepository extends j_l_Object {
    }), false);
   }
  }
- /**
-  * @return {LinkedHashMap<?string, Object>}
-  * @public
-  */
+ /** @return {LinkedHashMap<?string, Object>} */
  m_load___$p_org_jboss_elemento_sample_crysknife_TodoRepository() {
-  let items = /**@type {!LinkedHashMap<?string, Object>} */ (LinkedHashMap.$create__());
+  let items = /**@type {!LinkedHashMap<?string, Object>}*/ (LinkedHashMap.$create__());
   if (!$Equality.$same(this.f_storage__org_jboss_elemento_sample_crysknife_TodoRepository_, null)) {
    let json = this.f_storage__org_jboss_elemento_sample_crysknife_TodoRepository_.getItem(this.f_key__org_jboss_elemento_sample_crysknife_TodoRepository_);
    if (!$Equality.$same(json, null)) {
     try {
-     let jsonArray = /**@type {Array<Object>} */ ($Casts.$to(Js.m_cast__java_lang_Object(window.JSON.parse(json)), JsArray_$Overlay));
+     let jsonArray = /**@type {Array<Object>}*/ ($Casts.$to(Js.m_cast__java_lang_Object(window.JSON.parse(json)), JsArray_$Overlay));
      if (!$Equality.$same(jsonArray, null)) {
       for (let i = 0; i < jsonArray.length; i++) {
-       let todo = /**@type {Object} */ ($Casts.$to(JsArrayLike_$Overlay.m_getAt__$devirt__jsinterop_base_JsArrayLike__int(jsonArray, i), Todo_$Overlay));
+       let todo = /**@type {Object}*/ ($Casts.$to(JsArrayLike_$Overlay.m_getAt__$devirt__jsinterop_base_JsArrayLike__int(jsonArray, i), Todo_$Overlay));
        items.put(todo.id, todo);
       }
      }
     } catch (__$exc) {
      __$exc = $Exceptions.toJava(__$exc);
      if (Exception.$isInstance(__$exc)) {
-      let parseError = /**@type {Exception} */ (__$exc);
+      let parseError = /**@type {Exception}*/ (__$exc);
       window.console.error("error parsing stored data", parseError);
       window.console.log("discarding stored data", json);
      } else {
@@ -222,36 +175,25 @@ class TodoRepository extends j_l_Object {
   }
   return items;
  }
- /**
-  * @param {Collection<Object>} items
-  * @public
-  */
- m_save__java_util_Collection_$p_org_jboss_elemento_sample_crysknife_TodoRepository(items) {
+ 
+ m_save__java_util_Collection_$p_org_jboss_elemento_sample_crysknife_TodoRepository(/** Collection<Object> */ items) {
   if (!$Equality.$same(this.f_storage__org_jboss_elemento_sample_crysknife_TodoRepository_, null)) {
-   let todos = /**@type {Array<Object>} */ ($Arrays.$castToNative(items.m_toArray__arrayOf_java_lang_Object(new Array(0))));
+   let todos = /**@type {Array<Object>}*/ ($Arrays.$castToNative(items.m_toArray__arrayOf_java_lang_Object(new Array(0))));
    this.f_storage__org_jboss_elemento_sample_crysknife_TodoRepository_.setItem(this.f_key__org_jboss_elemento_sample_crysknife_TodoRepository_, window.JSON.stringify(todos));
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TodoRepository.$clinit = () =>{};
   TodoRepository.$loadModules();
   j_l_Object.$clinit();
   TodoRepository.f_CHARS__org_jboss_elemento_sample_crysknife_TodoRepository_ = j_l_String.m_toCharArray__java_lang_String("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz");
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TodoRepository;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   JsArray_$Overlay = goog.module.get('elemental2.core.JsArray.$Overlay$impl');
   DomGlobal_$Overlay = goog.module.get('elemental2.dom.DomGlobal.$Overlay$impl');
@@ -276,9 +218,9 @@ class TodoRepository extends j_l_Object {
 }
 $Util.$setClassMetadata(TodoRepository, 'org.jboss.elemento.sample.crysknife.TodoRepository');
 
-/** @public {?string} @const */
+/**@const {?string}*/
 TodoRepository.f_DEFAULT_KEY__org_jboss_elemento_sample_crysknife_TodoRepository_ = "todos-elemento";
-/** @public {Array<number>} */
+/**@type {Array<number>}*/
 TodoRepository.f_CHARS__org_jboss_elemento_sample_crysknife_TodoRepository_;
 
 exports = TodoRepository; 

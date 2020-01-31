@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"KeyUpEvent.impl.java.js",
-"lineCount":100,
-"mappings":"A;;;;;;;;;;;;;MAoBa,U;;;;CAAA,W;EAAAA,Q;;;;;;QAUD,S;EAAAC,qB;EAAAA,iC;EAAAA,gE;EAAAA,iB;;;;;CAAA,mD;EAAAC,6D;;;;;;QAOuB,W;EAAAC,qB;EAC/BA,sE;;;;;;;CAI8B,qB;EAC9BC,sE;;;;;;CAIa,wD,CAAsBC,O;EACnCC,oE;;;;;;;;CA5BS,4B;EAAAA,2H;;;;;QAAA,O;EAAAC,6B;EAAAA,0B;EAAAA,uB;EAEXA,sQ;;;;;;;;;;;;;;;;;;;;;;;AAFW;WAG6B,mDAH7B;",
+"lineCount":71,
+"mappings":"A;;;;;;;;;;;;;MAoBa,U;;CAAA,W;EAAAA,Q;;;QAUD,S;EAAAC,qB;EAAAA,iC;EAAAA,gE;EAAAA,iB;;;CAAA,mD;EAAAC,6D;;;QAOuB,W;EAAAC,qB;EAC/BA,sE;;;CAI8B,qB;EAC9BC,sE;;;CAIa,wD,qBAAsBC,O;EACnCC,oE;;;;CA5BS,4B;EAAAA,0H;;;QAAA,O;EAAAC,6B;EAAAA,0B;EAAAA,uB;EAEXA,qQ;;;;;;;;;;;;;;;;;AAFW;WAG6B,mDAH7B;",
 "sources":["KeyUpEvent.java"],
 "names":["org.gwtproject.event.dom.client.KeyUpEvent.<synthetic: ctor_js>","org.gwtproject.event.dom.client.KeyUpEvent.<synthetic: ctor_create>","org.gwtproject.event.dom.client.KeyUpEvent.<init>","org.gwtproject.event.dom.client.KeyUpEvent.getType","org.gwtproject.event.dom.client.KeyUpEvent.getAssociatedType","handler","org.gwtproject.event.dom.client.KeyUpEvent.dispatch","org.gwtproject.event.dom.client.KeyUpEvent.<clinit>"]
 }

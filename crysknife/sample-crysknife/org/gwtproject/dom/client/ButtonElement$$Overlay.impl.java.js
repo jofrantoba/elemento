@@ -12,76 +12,48 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class ButtonElement_$Overlay {
- /**
-  * @param {Object} elem
-  * @return {Object}
-  * @public
-  */
- static m_as__org_gwtproject_dom_client_Element(elem) {
+ /** @return {Object} */
+ static m_as__org_gwtproject_dom_client_Element(/** Object */ elem) {
   ButtonElement_$Overlay.$clinit();
   $Asserts.$assert(ButtonElement_$Overlay.m_is__org_gwtproject_dom_client_Element(elem));
-  return /**@type {Object} */ ($Casts.$to(elem, ButtonElement_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to(elem, ButtonElement_$Overlay));
  }
- /**
-  * @param {Object} o
-  * @return {boolean}
-  * @public
-  */
- static m_is__org_gwtproject_core_client_JavaScriptObject(o) {
+ /** @return {boolean} */
+ static m_is__org_gwtproject_core_client_JavaScriptObject(/** Object */ o) {
   ButtonElement_$Overlay.$clinit();
   if ($Overlay.m_is__org_gwtproject_core_client_JavaScriptObject(o)) {
-   return ButtonElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object} */ ($Casts.$to(o, $Overlay)));
+   return ButtonElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object}*/ ($Casts.$to(o, $Overlay)));
   }
   return false;
  }
- /**
-  * @param {Object} node
-  * @return {boolean}
-  * @public
-  */
- static m_is__org_gwtproject_dom_client_Node(node) {
+ /** @return {boolean} */
+ static m_is__org_gwtproject_dom_client_Node(/** Object */ node) {
   ButtonElement_$Overlay.$clinit();
   if ($Overlay.m_is__org_gwtproject_dom_client_Node(node)) {
-   return ButtonElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object} */ ($Casts.$to(node, $Overlay)));
+   return ButtonElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object}*/ ($Casts.$to(node, $Overlay)));
   }
   return false;
  }
- /**
-  * @param {Object} elem
-  * @return {boolean}
-  * @public
-  */
- static m_is__org_gwtproject_dom_client_Element(elem) {
+ /** @return {boolean} */
+ static m_is__org_gwtproject_dom_client_Element(/** Object */ elem) {
   ButtonElement_$Overlay.$clinit();
   return !$Equality.$same(elem, null) && $Overlay.m_hasTagName__$devirt__org_gwtproject_dom_client_Element__java_lang_String(elem, ButtonElement_$Overlay.f_TAG__org_gwtproject_dom_client_ButtonElement_$Overlay);
  }
- /**
-  * @param {!Object} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isDisabled__$devirt__org_gwtproject_dom_client_ButtonElement($thisArg) {
+ /** @return {boolean} */
+ static m_isDisabled__$devirt__org_gwtproject_dom_client_ButtonElement(/** !Object */ $thisArg) {
   ButtonElement_$Overlay.$clinit();
-  return Js.m_isTruthy__java_lang_Object(/**@type {HTMLButtonElement} */ (Js.m_uncheckedCast__java_lang_Object($thisArg)).disabled);
+  return Js.m_isTruthy__java_lang_Object(/**@type {HTMLButtonElement}*/ (Js.m_uncheckedCast__java_lang_Object($thisArg)).disabled);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ButtonElement_$Overlay.$clinit = () =>{};
   ButtonElement_$Overlay.$loadModules();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Object;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -93,7 +65,7 @@ class ButtonElement_$Overlay {
 }
 $Util.$setClassMetadata(ButtonElement_$Overlay, 'Object');
 
-/** @public {?string} @const */
+/**@const {?string}*/
 ButtonElement_$Overlay.f_TAG__org_gwtproject_dom_client_ButtonElement_$Overlay = "button";
 
 exports = ButtonElement_$Overlay; 

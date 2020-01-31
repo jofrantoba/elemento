@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MessageEventInit$GetSourceUnionType$$Overlay.impl.java.js",
-"lineCount":80,
-"mappings":"A;;;;;;;;;;MA4BmB,2B;;;;;;QAE4B,sB,CAAUA,C;EAAVC,sC;EACzCA,wD;;;;;;;QAIkB,4E;EAAAC,sC;EAClBA,+F;;;;;;;QAIoB,8E;EAAAC,sC;EACpBA,+G;;;;;;;QAIa,uE;EAAAC,sC;EACbA,iG;;;;;;;QAIc,4E;EAAAC,sC;EACdA,wD;;;;;;;QAIc,8E;EAAAC,sC;EACdA,sE;;;;;;;QAIc,uE;EAAAC,sC;EACdA,+D;;;;;QAjCa,O;EAAAC,8C;EAAAA;",
+"lineCount":50,
+"mappings":"A;;;;;;;;;;MA4BmB,2B;;QAE4B,sB,UAAUA,C;EAAVC,sC;EACzCA,uD;;;QAIkB,4E;EAAAC,sC;EAClBA,8F;;;QAIoB,8E;EAAAC,sC;EACpBA,8G;;;QAIa,uE;EAAAC,sC;EACbA,gG;;;QAIc,4E;EAAAC,sC;EACdA,uD;;;QAIc,8E;EAAAC,sC;EACdA,qE;;;QAIc,uE;EAAAC,sC;EACdA,8D;;;QAjCa,O;EAAAC,8C;EAAAA;",
 "sources":["MessageEventInit.java"],
 "names":["o","elemental2.dom.MessageEventInit$GetSourceUnionType$$Overlay.of","elemental2.dom.MessageEventInit$GetSourceUnionType$$Overlay.asMessagePort__$devirt","elemental2.dom.MessageEventInit$GetSourceUnionType$$Overlay.asServiceWorker__$devirt","elemental2.dom.MessageEventInit$GetSourceUnionType$$Overlay.asWindow__$devirt","elemental2.dom.MessageEventInit$GetSourceUnionType$$Overlay.isMessagePort__$devirt","elemental2.dom.MessageEventInit$GetSourceUnionType$$Overlay.isServiceWorker__$devirt","elemental2.dom.MessageEventInit$GetSourceUnionType$$Overlay.isWindow__$devirt","elemental2.dom.MessageEventInit$GetSourceUnionType$$Overlay.<clinit>"]
 }

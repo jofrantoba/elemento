@@ -16,18 +16,12 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class ResetButton extends Button {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {Object} element
-  * @return {Button}
-  * @public
-  */
- static m_wrap__org_gwtproject_dom_client_Element(element) {
+ /** @return {Button} */
+ static m_wrap__org_gwtproject_dom_client_Element(/** Object */ element) {
   ResetButton.$clinit();
   $Asserts.$assert($Overlay.m_isOrHasChild__$devirt__org_gwtproject_dom_client_Node__org_gwtproject_dom_client_Node(Document_$Overlay.m_get__().body, element));
   let button = ResetButton.$create__org_gwtproject_dom_client_Element(element);
@@ -35,151 +29,99 @@ class ResetButton extends Button {
   RootPanel.m_detachOnWindowClose__org_gwtproject_user_client_ui_Widget(button);
   return button;
  }
- /**
-  * Factory method corresponding to constructor 'ResetButton()'.
-  * @return {!ResetButton}
-  * @public
-  */
+ //Factory method corresponding to constructor 'ResetButton()'.
+ /** @return {!ResetButton} */
  static $create__() {
   ResetButton.$clinit();
   let $instance = new ResetButton();
   $instance.$ctor__org_gwtproject_user_client_ui_ResetButton__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'ResetButton()'.
-  * @public
-  */
+ //Initialization from constructor 'ResetButton()'.
+ 
  $ctor__org_gwtproject_user_client_ui_ResetButton__() {
   this.$ctor__org_gwtproject_user_client_ui_Button__org_gwtproject_dom_client_Element(Document_$Overlay.m_createResetButtonElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__()));
   this.m_setStyleName__java_lang_String("gwt-ResetButton");
  }
- /**
-  * Factory method corresponding to constructor 'ResetButton(SafeHtml)'.
-  * @param {SafeHtml} html
-  * @return {!ResetButton}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ //Factory method corresponding to constructor 'ResetButton(SafeHtml)'.
+ /** @return {!ResetButton} */
+ static $create__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   ResetButton.$clinit();
   let $instance = new ResetButton();
   $instance.$ctor__org_gwtproject_user_client_ui_ResetButton__org_gwtproject_safehtml_shared_SafeHtml(html);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ResetButton(SafeHtml)'.
-  * @param {SafeHtml} html
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ResetButton__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ //Initialization from constructor 'ResetButton(SafeHtml)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_ResetButton__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   this.$ctor__org_gwtproject_user_client_ui_ResetButton__java_lang_String(html.m_asString__());
  }
- /**
-  * Factory method corresponding to constructor 'ResetButton(String)'.
-  * @param {?string} html
-  * @return {!ResetButton}
-  * @public
-  */
- static $create__java_lang_String(html) {
+ //Factory method corresponding to constructor 'ResetButton(String)'.
+ /** @return {!ResetButton} */
+ static $create__java_lang_String(/** ?string */ html) {
   ResetButton.$clinit();
   let $instance = new ResetButton();
   $instance.$ctor__org_gwtproject_user_client_ui_ResetButton__java_lang_String(html);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ResetButton(String)'.
-  * @param {?string} html
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ResetButton__java_lang_String(html) {
+ //Initialization from constructor 'ResetButton(String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_ResetButton__java_lang_String(/** ?string */ html) {
   this.$ctor__org_gwtproject_user_client_ui_ResetButton__();
   this.m_setHTML__java_lang_String(html);
  }
- /**
-  * Factory method corresponding to constructor 'ResetButton(SafeHtml, ClickHandler)'.
-  * @param {SafeHtml} html
-  * @param {ClickHandler} handler
-  * @return {!ResetButton}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_event_dom_client_ClickHandler(html, handler) {
+ //Factory method corresponding to constructor 'ResetButton(SafeHtml, ClickHandler)'.
+ /** @return {!ResetButton} */
+ static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_event_dom_client_ClickHandler(/** SafeHtml */ html, /** ClickHandler */ handler) {
   ResetButton.$clinit();
   let $instance = new ResetButton();
   $instance.$ctor__org_gwtproject_user_client_ui_ResetButton__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_event_dom_client_ClickHandler(html, handler);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ResetButton(SafeHtml, ClickHandler)'.
-  * @param {SafeHtml} html
-  * @param {ClickHandler} handler
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ResetButton__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_event_dom_client_ClickHandler(html, handler) {
+ //Initialization from constructor 'ResetButton(SafeHtml, ClickHandler)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_ResetButton__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_event_dom_client_ClickHandler(/** SafeHtml */ html, /** ClickHandler */ handler) {
   this.$ctor__org_gwtproject_user_client_ui_ResetButton__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(html.m_asString__(), handler);
  }
- /**
-  * Factory method corresponding to constructor 'ResetButton(String, ClickHandler)'.
-  * @param {?string} html
-  * @param {ClickHandler} handler
-  * @return {!ResetButton}
-  * @public
-  */
- static $create__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(html, handler) {
+ //Factory method corresponding to constructor 'ResetButton(String, ClickHandler)'.
+ /** @return {!ResetButton} */
+ static $create__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(/** ?string */ html, /** ClickHandler */ handler) {
   ResetButton.$clinit();
   let $instance = new ResetButton();
   $instance.$ctor__org_gwtproject_user_client_ui_ResetButton__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(html, handler);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ResetButton(String, ClickHandler)'.
-  * @param {?string} html
-  * @param {ClickHandler} handler
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ResetButton__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(html, handler) {
+ //Initialization from constructor 'ResetButton(String, ClickHandler)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_ResetButton__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(/** ?string */ html, /** ClickHandler */ handler) {
   this.$ctor__org_gwtproject_user_client_ui_ResetButton__java_lang_String(html);
   this.m_addClickHandler__org_gwtproject_event_dom_client_ClickHandler(handler);
  }
- /**
-  * Factory method corresponding to constructor 'ResetButton(Element)'.
-  * @param {Object} element
-  * @return {!ResetButton}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_Element(element) {
+ //Factory method corresponding to constructor 'ResetButton(Element)'.
+ /** @return {!ResetButton} */
+ static $create__org_gwtproject_dom_client_Element(/** Object */ element) {
   ResetButton.$clinit();
   let $instance = new ResetButton();
   $instance.$ctor__org_gwtproject_user_client_ui_ResetButton__org_gwtproject_dom_client_Element(element);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ResetButton(Element)'.
-  * @param {Object} element
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ResetButton__org_gwtproject_dom_client_Element(element) {
+ //Initialization from constructor 'ResetButton(Element)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_ResetButton__org_gwtproject_dom_client_Element(/** Object */ element) {
   this.$ctor__org_gwtproject_user_client_ui_Button__org_gwtproject_dom_client_Element(element);
-  $Asserts.$assert(j_l_String.m_equalsIgnoreCase__java_lang_String__java_lang_String("reset", /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(element), ButtonElement_$Overlay)).type));
+  $Asserts.$assert(j_l_String.m_equalsIgnoreCase__java_lang_String__java_lang_String("reset", /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(element), ButtonElement_$Overlay)).type));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ResetButton.$clinit = () =>{};
   ResetButton.$loadModules();
   Button.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ResetButton;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   JavaScriptObject_$Overlay = goog.module.get('org.gwtproject.core.client.JavaScriptObject.$Overlay$impl');

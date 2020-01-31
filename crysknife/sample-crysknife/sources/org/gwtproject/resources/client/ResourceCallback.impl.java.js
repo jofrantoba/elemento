@@ -10,46 +10,25 @@ let ResourcePrototype = goog.forwardDeclare('org.gwtproject.resources.client.Res
  * @template R
  */
 class ResourceCallback {
- /**
-  * @abstract
-  * @param {ResourceException} e
-  * @public
-  */
- m_onError__org_gwtproject_resources_client_ResourceException(e) {}
- /**
-  * @abstract
-  * @param {R} resource
-  * @public
-  */
- m_onSuccess__org_gwtproject_resources_client_ResourcePrototype(resource) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_onError__org_gwtproject_resources_client_ResourceException(/** ResourceException */ e) {}
+ /** @abstract */
+ m_onSuccess__org_gwtproject_resources_client_ResourcePrototype(/** R */ resource) {}
+ 
  static $clinit() {
   ResourceCallback.$clinit = () =>{};
   ResourceCallback.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_resources_client_ResourceCallback = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_resources_client_ResourceCallback = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_resources_client_ResourceCallback;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

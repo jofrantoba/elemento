@@ -13,93 +13,40 @@ let RowCountChangeEvent_Handler = goog.forwardDeclare('org.gwtproject.view.clien
  * @extends {HasHandlers}
  */
 class HasRows {
- /**
-  * @abstract
-  * @param {Handler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addRangeChangeHandler__org_gwtproject_view_client_RangeChangeEvent_Handler(handler) {}
- /**
-  * @abstract
-  * @param {RowCountChangeEvent_Handler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addRowCountChangeHandler__org_gwtproject_view_client_RowCountChangeEvent_Handler(handler) {}
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {HandlerRegistration} */
+ m_addRangeChangeHandler__org_gwtproject_view_client_RangeChangeEvent_Handler(/** Handler */ handler) {}
+ /** @abstract @return {HandlerRegistration} */
+ m_addRowCountChangeHandler__org_gwtproject_view_client_RowCountChangeEvent_Handler(/** RowCountChangeEvent_Handler */ handler) {}
+ /** @abstract @return {number} */
  m_getRowCount__() {}
- /**
-  * @abstract
-  * @return {Range}
-  * @public
-  */
+ /** @abstract @return {Range} */
  m_getVisibleRange__() {}
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_isRowCountExact__() {}
- /**
-  * @abstract
-  * @param {number} count
-  * @public
-  */
- m_setRowCount__int(count) {}
- /**
-  * @abstract
-  * @param {number} count
-  * @param {boolean} isExact
-  * @public
-  */
- m_setRowCount__int__boolean(count, isExact) {}
- /**
-  * @abstract
-  * @param {number} start
-  * @param {number} length
-  * @public
-  */
- m_setVisibleRange__int__int(start, length) {}
- /**
-  * @abstract
-  * @param {Range} range
-  * @public
-  */
- m_setVisibleRange__org_gwtproject_view_client_Range(range) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_setRowCount__int(/** number */ count) {}
+ /** @abstract */
+ m_setRowCount__int__boolean(/** number */ count, /** boolean */ isExact) {}
+ /** @abstract */
+ m_setVisibleRange__int__int(/** number */ start, /** number */ length) {}
+ /** @abstract */
+ m_setVisibleRange__org_gwtproject_view_client_Range(/** Range */ range) {}
+ 
  static $clinit() {
   HasRows.$clinit = () =>{};
   HasRows.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasHandlers.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_view_client_HasRows = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasHandlers.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_view_client_HasRows = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_view_client_HasRows;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

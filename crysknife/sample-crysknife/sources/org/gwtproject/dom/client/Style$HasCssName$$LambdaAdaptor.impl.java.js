@@ -8,52 +8,35 @@ const HasCssName = goog.require('org.gwtproject.dom.client.Style.HasCssName$impl
  * @implements {HasCssName}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function():?string} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function():?string */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function():?string} */
+  /**@type {?function():?string}*/
   this.f_$$fn__org_gwtproject_dom_client_Style_HasCssName_$LambdaAdaptor;
   this.$ctor__org_gwtproject_dom_client_Style_HasCssName_$LambdaAdaptor__org_gwtproject_dom_client_Style_HasCssName_$JsFunction(fn);
  }
- /**
-  * @param {?function():?string} fn
-  * @public
-  */
- $ctor__org_gwtproject_dom_client_Style_HasCssName_$LambdaAdaptor__org_gwtproject_dom_client_Style_HasCssName_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_dom_client_Style_HasCssName_$LambdaAdaptor__org_gwtproject_dom_client_Style_HasCssName_$JsFunction(/** ?function():?string */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_dom_client_Style_HasCssName_$LambdaAdaptor = fn;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getCssName__() {
   let /** ?function():?string */ $function;
   return ($function = this.f_$$fn__org_gwtproject_dom_client_Style_HasCssName_$LambdaAdaptor, $function());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

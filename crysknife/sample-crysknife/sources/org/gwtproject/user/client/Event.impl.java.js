@@ -17,24 +17,16 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class Event extends Object {
- /**
-  * @public
-  */
+ 
  constructor() {
   Event.$clinit();
   super();
   this.$ctor__org_gwtproject_user_client_Event__();
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_Event__() {}
- /**
-  * @param {NativePreviewHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- static m_addNativePreviewHandler__org_gwtproject_user_client_Event_NativePreviewHandler(handler) {
+ /** @return {HandlerRegistration} */
+ static m_addNativePreviewHandler__org_gwtproject_user_client_Event_NativePreviewHandler(/** NativePreviewHandler */ handler) {
   Event.$clinit();
   $Asserts.$assertWithMessage(!$Equality.$same(handler, null), "Cannot add a null handler");
   DOM.m_maybeInitializeEventSystem__();
@@ -45,181 +37,102 @@ class Event extends Object {
   }
   return Event.$f_handlers__org_gwtproject_user_client_Event.m_addHandler__org_gwtproject_event_shared_Event_Type__java_lang_Object(NativePreviewEvent.f_TYPE__org_gwtproject_user_client_Event_NativePreviewEvent_, handler);
  }
- /**
-  * @param {Object} event
-  * @return {Event}
-  * @public
-  */
- static m_as__org_gwtproject_dom_client_NativeEvent(event) {
+ /** @return {Event} */
+ static m_as__org_gwtproject_dom_client_NativeEvent(/** Object */ event) {
   Event.$clinit();
-  return /**@type {Event} */ (Js.m_uncheckedCast__java_lang_Object(event));
+  return /**@type {Event}*/ (Js.m_uncheckedCast__java_lang_Object(event));
  }
- /**
-  * @param {Object} nativeEvent
-  * @return {boolean}
-  * @public
-  */
- static m_fireNativePreviewEvent__org_gwtproject_dom_client_NativeEvent(nativeEvent) {
+ /** @return {boolean} */
+ static m_fireNativePreviewEvent__org_gwtproject_dom_client_NativeEvent(/** Object */ nativeEvent) {
   Event.$clinit();
   return NativePreviewEvent.m_fire__org_gwtproject_event_shared_HandlerManager__org_gwtproject_dom_client_NativeEvent(Event.$f_handlers__org_gwtproject_user_client_Event, nativeEvent);
  }
- /**
-  * @return {Event}
-  * @public
-  */
+ /** @return {Event} */
  static m_getCurrentEvent__() {
   Event.$clinit();
   return DOM.m_eventGetCurrentEvent__();
  }
- /**
-  * @param {Object} elem
-  * @return {EventListener}
-  * @public
-  */
- static m_getEventListener__org_gwtproject_dom_client_Element(elem) {
+ /** @return {EventListener} */
+ static m_getEventListener__org_gwtproject_dom_client_Element(/** Object */ elem) {
   Event.$clinit();
   return DOM.m_getEventListener__org_gwtproject_dom_client_Element(elem);
  }
- /**
-  * @param {Object} elem
-  * @return {number}
-  * @public
-  */
- static m_getEventsSunk__org_gwtproject_dom_client_Element(elem) {
+ /** @return {number} */
+ static m_getEventsSunk__org_gwtproject_dom_client_Element(/** Object */ elem) {
   Event.$clinit();
   return DOM.m_getEventsSunk__org_gwtproject_dom_client_Element(elem);
  }
- /**
-  * @param {?string} typeName
-  * @return {number}
-  * @public
-  */
- static m_getTypeInt__java_lang_String(typeName) {
+ /** @return {number} */
+ static m_getTypeInt__java_lang_String(/** ?string */ typeName) {
   Event.$clinit();
   return DOM.f_impl__org_gwtproject_user_client_DOM.m_eventGetTypeInt__java_lang_String(typeName);
  }
- /**
-  * @param {Object} elem
-  * @public
-  */
- static m_releaseCapture__org_gwtproject_dom_client_Element(elem) {
+ 
+ static m_releaseCapture__org_gwtproject_dom_client_Element(/** Object */ elem) {
   Event.$clinit();
   DOM.m_releaseCapture__org_gwtproject_dom_client_Element(elem);
  }
- /**
-  * @param {Object} elem
-  * @public
-  */
- static m_setCapture__org_gwtproject_dom_client_Element(elem) {
+ 
+ static m_setCapture__org_gwtproject_dom_client_Element(/** Object */ elem) {
   Event.$clinit();
   DOM.m_setCapture__org_gwtproject_dom_client_Element(elem);
  }
- /**
-  * @param {Object} elem
-  * @param {EventListener} listener
-  * @public
-  */
- static m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(elem, listener) {
+ 
+ static m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(/** Object */ elem, /** EventListener */ listener) {
   Event.$clinit();
   DOM.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(elem, listener);
  }
- /**
-  * @param {Object} elem
-  * @param {number} eventBits
-  * @public
-  */
- static m_sinkEvents__org_gwtproject_dom_client_Element__int(elem, eventBits) {
+ 
+ static m_sinkEvents__org_gwtproject_dom_client_Element__int(/** Object */ elem, /** number */ eventBits) {
   Event.$clinit();
   DOM.m_sinkEvents__org_gwtproject_dom_client_Element__int(elem, eventBits);
  }
- /**
-  * @param {boolean} cancel
-  * @public
-  * @deprecated
-  */
- m_cancelBubble__boolean(cancel) {
+ /** @deprecated */
+ m_cancelBubble__boolean(/** boolean */ cancel) {
   DOM.m_eventCancelBubble__org_gwtproject_user_client_Event__boolean(this, cancel);
  }
- /**
-  * @return {Object}
-  * @public
-  * @deprecated
-  */
+ /** @return {Object} @deprecated */
  m_getCurrentTarget__() {
-  return /**@type {Object} */ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(NativeEvent_$Overlay.m_getCurrentEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(this)), Element_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(NativeEvent_$Overlay.m_getCurrentEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(this)), Element_$Overlay));
  }
- /**
-  * @return {Object}
-  * @public
-  * @deprecated
-  */
+ /** @return {Object} @deprecated */
  m_getFromElement__() {
   return DOM.m_eventGetFromElement__org_gwtproject_user_client_Event(this);
  }
- /**
-  * @return {Object}
-  * @public
-  * @deprecated
-  */
+ /** @return {Object} @deprecated */
  m_getRelatedTarget__() {
-  return /**@type {Object} */ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(NativeEvent_$Overlay.m_getRelatedEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(this)), Element_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(NativeEvent_$Overlay.m_getRelatedEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(this)), Element_$Overlay));
  }
- /**
-  * @return {boolean}
-  * @public
-  * @deprecated
-  */
+ /** @return {boolean} @deprecated */
  m_getRepeat__() {
   return DOM.m_eventGetRepeat__org_gwtproject_user_client_Event(this);
  }
- /**
-  * @return {Object}
-  * @public
-  * @deprecated
-  */
+ /** @return {Object} @deprecated */
  m_getTarget__() {
-  return /**@type {Object} */ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(NativeEvent_$Overlay.m_getEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(this)), Element_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(NativeEvent_$Overlay.m_getEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(this)), Element_$Overlay));
  }
- /**
-  * @return {Object}
-  * @public
-  * @deprecated
-  */
+ /** @return {Object} @deprecated */
  m_getToElement__() {
   return DOM.m_eventGetToElement__org_gwtproject_user_client_Event(this);
  }
- /**
-  * @return {HandlerManager}
-  * @public
-  */
+ /** @return {HandlerManager} */
  static get f_handlers__org_gwtproject_user_client_Event() {
   return (Event.$clinit(), Event.$f_handlers__org_gwtproject_user_client_Event);
  }
- /**
-  * @param {HandlerManager} value
-  * @public
-  */
- static set f_handlers__org_gwtproject_user_client_Event(value) {
+ 
+ static set f_handlers__org_gwtproject_user_client_Event(/** HandlerManager */ value) {
   (Event.$clinit(), Event.$f_handlers__org_gwtproject_user_client_Event = value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Event.$clinit = () =>{};
   Event.$loadModules();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Event;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -236,73 +149,73 @@ class Event extends Object {
 }
 $Util.$setClassMetadata(Event, 'org.gwtproject.user.client.Event');
 
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONBLUR__org_gwtproject_user_client_Event = 4096;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONCHANGE__org_gwtproject_user_client_Event = 1024;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONCLICK__org_gwtproject_user_client_Event = 1;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONDBLCLICK__org_gwtproject_user_client_Event = 2;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONERROR__org_gwtproject_user_client_Event = 65536;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONFOCUS__org_gwtproject_user_client_Event = 2048;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONGESTURECHANGE__org_gwtproject_user_client_Event = 33554432;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONGESTUREEND__org_gwtproject_user_client_Event = 67108864;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONGESTURESTART__org_gwtproject_user_client_Event = 16777216;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONKEYDOWN__org_gwtproject_user_client_Event = 128;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONKEYPRESS__org_gwtproject_user_client_Event = 256;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONKEYUP__org_gwtproject_user_client_Event = 512;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONLOAD__org_gwtproject_user_client_Event = 32768;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONLOSECAPTURE__org_gwtproject_user_client_Event = 8192;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONMOUSEDOWN__org_gwtproject_user_client_Event = 4;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONMOUSEMOVE__org_gwtproject_user_client_Event = 64;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONMOUSEOUT__org_gwtproject_user_client_Event = 32;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONMOUSEOVER__org_gwtproject_user_client_Event = 16;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONMOUSEUP__org_gwtproject_user_client_Event = 8;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONMOUSEWHEEL__org_gwtproject_user_client_Event = 131072;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONPASTE__org_gwtproject_user_client_Event = 524288;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONSCROLL__org_gwtproject_user_client_Event = 16384;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONTOUCHCANCEL__org_gwtproject_user_client_Event = 8388608;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONTOUCHEND__org_gwtproject_user_client_Event = 4194304;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONTOUCHMOVE__org_gwtproject_user_client_Event = 2097152;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONTOUCHSTART__org_gwtproject_user_client_Event = 1048576;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_ONCONTEXTMENU__org_gwtproject_user_client_Event = 262144;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_FOCUSEVENTS__org_gwtproject_user_client_Event = 6144;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_KEYEVENTS__org_gwtproject_user_client_Event = 896;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_MOUSEEVENTS__org_gwtproject_user_client_Event = 124;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_TOUCHEVENTS__org_gwtproject_user_client_Event = 15728640;
-/** @public {number} @const */
+/**@const {number}*/
 Event.f_GESTUREEVENTS__org_gwtproject_user_client_Event = 117440512;
-/** @public {number} @const @deprecated */
+/**@const {number} @deprecated*/
 Event.f_UNDEFINED__org_gwtproject_user_client_Event = 0;
-/** @private {HandlerManager} */
+/**@private {HandlerManager}*/
 Event.$f_handlers__org_gwtproject_user_client_Event;
 
 exports = Event; 

@@ -13,64 +13,42 @@ let PopupImplMozilla = goog.forwardDeclare('org.gwtproject.user.client.ui.impl.P
  * @implements {ScheduledCommand}
   */
 class $1 extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {PopupImplMozilla} */
+  /**@type {PopupImplMozilla}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_impl_PopupImplMozilla_1;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.$c_outerElem;
  }
- /**
-  * @param {PopupImplMozilla} $outer_this
-  * @param {Object} $c_outerElem
-  * @return {!$1}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_impl_PopupImplMozilla__org_gwtproject_dom_client_Element($outer_this, $c_outerElem) {
+ /** @return {!$1} */
+ static $create__org_gwtproject_user_client_ui_impl_PopupImplMozilla__org_gwtproject_dom_client_Element(/** PopupImplMozilla */ $outer_this, /** Object */ $c_outerElem) {
   $1.$clinit();
   let $instance = new $1();
   $instance.$ctor__org_gwtproject_user_client_ui_impl_PopupImplMozilla_1__org_gwtproject_user_client_ui_impl_PopupImplMozilla__org_gwtproject_dom_client_Element($outer_this, $c_outerElem);
   return $instance;
  }
- /**
-  * @param {PopupImplMozilla} $outer_this
-  * @param {Object} $c_outerElem
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_impl_PopupImplMozilla_1__org_gwtproject_user_client_ui_impl_PopupImplMozilla__org_gwtproject_dom_client_Element($outer_this, $c_outerElem) {
+ 
+ $ctor__org_gwtproject_user_client_ui_impl_PopupImplMozilla_1__org_gwtproject_user_client_ui_impl_PopupImplMozilla__org_gwtproject_dom_client_Element(/** PopupImplMozilla */ $outer_this, /** Object */ $c_outerElem) {
   this.f_$outer_this__org_gwtproject_user_client_ui_impl_PopupImplMozilla_1 = $outer_this;
   this.$c_outerElem = $c_outerElem;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_execute__() {
   $Overlay.m_setOverflow__$devirt__org_gwtproject_dom_client_Style__org_gwtproject_dom_style_shared_Overflow(this.$c_outerElem.style, Overflow.f_AUTO__org_gwtproject_dom_style_shared_Overflow);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $1.$clinit = () =>{};
   $1.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $1;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('org.gwtproject.dom.client.Style.$Overlay$impl');
   Overflow = goog.module.get('org.gwtproject.dom.style.shared.Overflow$impl');

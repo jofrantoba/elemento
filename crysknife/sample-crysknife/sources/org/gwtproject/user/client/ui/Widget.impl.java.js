@@ -36,77 +36,49 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {IsWidget}
   */
 class Widget extends UIObject {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {number} */
+  /**@type {number}*/
   this.f_eventsToSink__org_gwtproject_user_client_ui_Widget = 0;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_attached__org_gwtproject_user_client_ui_Widget_ = false;
-  /** @public {HandlerManager} */
+  /**@type {HandlerManager}*/
   this.f_handlerManager__org_gwtproject_user_client_ui_Widget_;
-  /** @public {*} */
+  /**@type {*}*/
   this.f_layoutData__org_gwtproject_user_client_ui_Widget_;
-  /** @public {Widget} */
+  /**@type {Widget}*/
   this.f_parent__org_gwtproject_user_client_ui_Widget_;
  }
- /**
-  * @return {!Widget}
-  * @public
-  */
+ /** @return {!Widget} */
  static $create__() {
   Widget.$clinit();
   let $instance = new Widget();
   $instance.$ctor__org_gwtproject_user_client_ui_Widget__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_Widget__() {
   this.$ctor__org_gwtproject_user_client_ui_UIObject__();
  }
- /**
-  * @param {IsWidget} w
-  * @return {Widget}
-  * @public
-  */
- static m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(w) {
+ /** @return {Widget} */
+ static m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ w) {
   Widget.$clinit();
   return $Equality.$same(w, null) ? null : w.m_asWidget__();
  }
- /**
-  * @override
-  * @param {Handler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addAttachHandler__org_gwtproject_event_logical_shared_AttachEvent_Handler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addAttachHandler__org_gwtproject_event_logical_shared_AttachEvent_Handler(/** Handler */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, AttachEvent.m_getType__());
  }
- /**
-  * @template H
-  * @param {H} handler
-  * @param {Type<H>} type
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, type) {
+ /** @template H @return {HandlerRegistration} */
+ m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(/** H */ handler, /** Type<H> */ type) {
   $Asserts.$assertWithMessage(!$Equality.$same(handler, null), "handler must not be null");
   $Asserts.$assertWithMessage(!$Equality.$same(type, null), "type must not be null");
   this.m_sinkBitlessEvent__java_lang_String(type.m_getName__());
   return this.m_ensureHandlers___$pp_org_gwtproject_user_client_ui().m_addHandler__org_gwtproject_event_shared_Event_Type__java_lang_Object(type, handler);
  }
- /**
-  * @template H
-  * @param {H} handler
-  * @param {Type<H>} type
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, type) {
+ /** @template H @return {HandlerRegistration} */
+ m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(/** H */ handler, /** Type<H> */ type) {
   $Asserts.$assertWithMessage(!$Equality.$same(handler, null), "handler must not be null");
   $Asserts.$assertWithMessage(!$Equality.$same(type, null), "type must not be null");
   let typeInt = Event.m_getTypeInt__java_lang_String(type.m_getName__());
@@ -117,60 +89,34 @@ class Widget extends UIObject {
   }
   return this.m_ensureHandlers___$pp_org_gwtproject_user_client_ui().m_addHandler__org_gwtproject_event_shared_Event_Type__java_lang_Object(type, handler);
  }
- /**
-  * @template H
-  * @param {H} handler
-  * @param {Event_Type<H>} type
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, type) {
+ /** @template H @return {HandlerRegistration} */
+ m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(/** H */ handler, /** Event_Type<H> */ type) {
   return this.m_ensureHandlers___$pp_org_gwtproject_user_client_ui().m_addHandler__org_gwtproject_event_shared_Event_Type__java_lang_Object(type, handler);
  }
- /**
-  * @override
-  * @return {Widget}
-  * @public
-  */
+ /** @override @return {Widget} */
  m_asWidget__() {
   return this;
  }
- /**
-  * @override
-  * @param {org_gwtproject_event_shared_Event<?>} event
-  * @public
-  */
- m_fireEvent__org_gwtproject_event_shared_Event(event) {
+ /** @override */
+ m_fireEvent__org_gwtproject_event_shared_Event(/** org_gwtproject_event_shared_Event<?> */ event) {
   if (!$Equality.$same(this.f_handlerManager__org_gwtproject_user_client_ui_Widget_, null)) {
    this.f_handlerManager__org_gwtproject_user_client_ui_Widget_.m_fireEvent__org_gwtproject_event_shared_Event(event);
   }
  }
- /**
-  * @return {*}
-  * @public
-  */
+ /** @return {*} */
  m_getLayoutData__() {
   return this.f_layoutData__org_gwtproject_user_client_ui_Widget_;
  }
- /**
-  * @param {*} layoutData
-  * @public
-  */
- m_setLayoutData__java_lang_Object(layoutData) {
+ 
+ m_setLayoutData__java_lang_Object(/** * */ layoutData) {
   this.f_layoutData__org_gwtproject_user_client_ui_Widget_ = layoutData;
  }
- /**
-  * @return {Widget}
-  * @public
-  */
+ /** @return {Widget} */
  m_getParent__() {
   return this.f_parent__org_gwtproject_user_client_ui_Widget_;
  }
- /**
-  * @param {Widget} parent
-  * @public
-  */
- m_setParent__org_gwtproject_user_client_ui_Widget(parent) {
+ 
+ m_setParent__org_gwtproject_user_client_ui_Widget(/** Widget */ parent) {
   let oldParent = this.f_parent__org_gwtproject_user_client_ui_Widget_;
   if ($Equality.$same(parent, null)) {
    try {
@@ -192,25 +138,17 @@ class Widget extends UIObject {
    }
   }
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isAttached__() {
   return this.f_attached__org_gwtproject_user_client_ui_Widget_;
  }
- /**
-  * @override
-  * @param {Event} event
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_user_client_Event(event) {
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_user_client_Event(/** Event */ event) {
   let /** Object */ related;
   switch (DOM.m_eventGetType__org_gwtproject_user_client_Event(event)) {
    case Event.f_ONMOUSEOVER__org_gwtproject_user_client_Event: 
    case Event.f_ONMOUSEOUT__org_gwtproject_user_client_Event: 
-    related = /**@type {Object} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_getRelatedEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(event)));
+    related = /**@type {Object}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_getRelatedEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(event)));
     if (!$Equality.$same(related, null) && Node_$Overlay.m_isOrHasChild__$devirt__org_gwtproject_dom_client_Node__org_gwtproject_dom_client_Node(this.m_getElement__(), related)) {
      return;
     }
@@ -218,85 +156,55 @@ class Widget extends UIObject {
   }
   DomEvent.m_fireNativeEvent__org_gwtproject_dom_client_NativeEvent__org_gwtproject_event_shared_HasHandlers__org_gwtproject_dom_client_Element(event, this, this.m_getElement__());
  }
- /**
-  * @public
-  */
+ 
  m_removeFromParent__() {
   if ($Equality.$same(this.f_parent__org_gwtproject_user_client_ui_Widget_, null)) {
    if (RootPanel.m_isInDetachList__org_gwtproject_user_client_ui_Widget(this)) {
     RootPanel.m_detachNow__org_gwtproject_user_client_ui_Widget(this);
    }
   } else if (HasWidgets.$isInstance(this.f_parent__org_gwtproject_user_client_ui_Widget_)) {
-   /**@type {HasWidgets} */ ($Casts.$to(this.f_parent__org_gwtproject_user_client_ui_Widget_, HasWidgets)).m_remove__org_gwtproject_user_client_ui_Widget(this);
+   /**@type {HasWidgets}*/ ($Casts.$to(this.f_parent__org_gwtproject_user_client_ui_Widget_, HasWidgets)).m_remove__org_gwtproject_user_client_ui_Widget(this);
   } else if (!$Equality.$same(this.f_parent__org_gwtproject_user_client_ui_Widget_, null)) {
    throw $Exceptions.toJs(IllegalStateException.$create__java_lang_String("This widget's parent does not implement HasWidgets"));
   }
  }
- /**
-  * @override
-  * @param {number} eventBitsToAdd
-  * @public
-  */
- m_sinkEvents__int(eventBitsToAdd) {
+ /** @override */
+ m_sinkEvents__int(/** number */ eventBitsToAdd) {
   if (this.m_isOrWasAttached__()) {
    super.m_sinkEvents__int(eventBitsToAdd);
   } else {
    this.f_eventsToSink__org_gwtproject_user_client_ui_Widget |= eventBitsToAdd;
   }
  }
- /**
-  * @override
-  * @param {number} eventBitsToRemove
-  * @public
-  */
- m_unsinkEvents__int(eventBitsToRemove) {
+ /** @override */
+ m_unsinkEvents__int(/** number */ eventBitsToRemove) {
   if (this.m_isOrWasAttached__()) {
    super.m_unsinkEvents__int(eventBitsToRemove);
   } else {
    this.f_eventsToSink__org_gwtproject_user_client_ui_Widget &= ~eventBitsToRemove;
   }
  }
- /**
-  * @return {HandlerManager}
-  * @public
-  */
+ /** @return {HandlerManager} */
  m_createHandlerManager__() {
   return HandlerManager.$create__java_lang_Object(this);
  }
- /**
-  * @param {Widget} target
-  * @param {org_gwtproject_event_shared_Event<?>} event
-  * @public
-  */
- m_delegateEvent__org_gwtproject_user_client_ui_Widget__org_gwtproject_event_shared_Event(target, event) {
+ 
+ m_delegateEvent__org_gwtproject_user_client_ui_Widget__org_gwtproject_event_shared_Event(/** Widget */ target, /** org_gwtproject_event_shared_Event<?> */ event) {
   target.m_fireEvent__org_gwtproject_event_shared_Event(event);
  }
- /**
-  * @public
-  */
+ 
  m_doAttachChildren__() {}
- /**
-  * @public
-  */
+ 
  m_doDetachChildren__() {}
- /**
-  * @param {Event_Type<?>} type
-  * @return {number}
-  * @public
-  */
- m_getHandlerCount__org_gwtproject_event_shared_Event_Type(type) {
+ /** @return {number} */
+ m_getHandlerCount__org_gwtproject_event_shared_Event_Type(/** Event_Type<?> */ type) {
   return $Equality.$same(this.f_handlerManager__org_gwtproject_user_client_ui_Widget_, null) ? 0 : this.f_handlerManager__org_gwtproject_user_client_ui_Widget_.m_getHandlerCount__org_gwtproject_event_shared_Event_Type(type);
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isOrWasAttached__() {
   return this.f_eventsToSink__org_gwtproject_user_client_ui_Widget == -1;
  }
- /**
-  * @public
-  */
+ 
  m_onAttach__() {
   if (this.m_isAttached__()) {
    throw $Exceptions.toJs(IllegalStateException.$create__java_lang_String("Should only call onAttach when the widget is detached from the browser's document"));
@@ -312,9 +220,7 @@ class Widget extends UIObject {
   this.m_onLoad__();
   AttachEvent.m_fire__org_gwtproject_event_logical_shared_HasAttachHandlers__boolean(this, true);
  }
- /**
-  * @public
-  */
+ 
  m_onDetach__() {
   if (!this.m_isAttached__()) {
    throw $Exceptions.toJs(IllegalStateException.$create__java_lang_String("Should only call onDetach when the widget is attached to the browser's document"));
@@ -331,34 +237,20 @@ class Widget extends UIObject {
    }
   }
  }
- /**
-  * @public
-  */
+ 
  m_onLoad__() {}
- /**
-  * @public
-  */
+ 
  m_onUnload__() {}
- /**
-  * @return {HandlerManager}
-  * @public
-  */
+ /** @return {HandlerManager} */
  m_ensureHandlers___$pp_org_gwtproject_user_client_ui() {
   return $Equality.$same(this.f_handlerManager__org_gwtproject_user_client_ui_Widget_, null) ? this.f_handlerManager__org_gwtproject_user_client_ui_Widget_ = this.m_createHandlerManager__() : this.f_handlerManager__org_gwtproject_user_client_ui_Widget_;
  }
- /**
-  * @return {HandlerManager}
-  * @public
-  */
+ /** @return {HandlerManager} */
  m_getHandlerManager___$pp_org_gwtproject_user_client_ui() {
   return this.f_handlerManager__org_gwtproject_user_client_ui_Widget_;
  }
- /**
-  * @override
-  * @param {Object} elem
-  * @public
-  */
- m_replaceElement__org_gwtproject_dom_client_Element_$pp_org_gwtproject_user_client_ui(elem) {
+ /** @override */
+ m_replaceElement__org_gwtproject_dom_client_Element_$pp_org_gwtproject_user_client_ui(/** Object */ elem) {
   if (this.m_isAttached__()) {
    DOM.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(this.m_getElement__(), null);
   }
@@ -367,25 +259,17 @@ class Widget extends UIObject {
    DOM.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(this.m_getElement__(), this);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Widget.$clinit = () =>{};
   Widget.$loadModules();
   UIObject.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Widget;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');
   j_l_String = goog.module.get('java.lang.String$impl');

@@ -10,54 +10,37 @@ let SubmitEvent = goog.forwardDeclare('org.gwtproject.user.client.ui.FormPanel.S
  * @implements {SubmitHandler}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(SubmitEvent):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(SubmitEvent):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(SubmitEvent):void} */
+  /**@type {?function(SubmitEvent):void}*/
   this.f_$$fn__org_gwtproject_user_client_ui_FormPanel_SubmitHandler_$LambdaAdaptor;
   this.$ctor__org_gwtproject_user_client_ui_FormPanel_SubmitHandler_$LambdaAdaptor__org_gwtproject_user_client_ui_FormPanel_SubmitHandler_$JsFunction(fn);
  }
- /**
-  * @param {?function(SubmitEvent):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_FormPanel_SubmitHandler_$LambdaAdaptor__org_gwtproject_user_client_ui_FormPanel_SubmitHandler_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_user_client_ui_FormPanel_SubmitHandler_$LambdaAdaptor__org_gwtproject_user_client_ui_FormPanel_SubmitHandler_$JsFunction(/** ?function(SubmitEvent):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_user_client_ui_FormPanel_SubmitHandler_$LambdaAdaptor = fn;
  }
- /**
-  * @param {SubmitEvent} arg0
-  * @public
-  */
- m_onSubmit__org_gwtproject_user_client_ui_FormPanel_SubmitEvent(arg0) {
+ 
+ m_onSubmit__org_gwtproject_user_client_ui_FormPanel_SubmitEvent(/** SubmitEvent */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_user_client_ui_FormPanel_SubmitHandler_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

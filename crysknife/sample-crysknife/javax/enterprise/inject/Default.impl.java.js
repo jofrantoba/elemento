@@ -11,44 +11,27 @@ let $LambdaAdaptor = goog.forwardDeclare('javax.enterprise.inject.Default.$Lambd
  * @extends {Annotation}
  */
 class Default {
- /**
-  * @param {?function():Class<?>} fn
-  * @return {Default}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {Default} */
+ static $adapt(/** ?function():Class<?> */ fn) {
   Default.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Default.$clinit = () =>{};
   Default.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__javax_enterprise_inject_Default = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__javax_enterprise_inject_Default = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__javax_enterprise_inject_Default;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('javax.enterprise.inject.Default.$LambdaAdaptor$impl');
  }

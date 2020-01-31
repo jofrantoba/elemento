@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ImageLoadingCell$DefaultRenderers$1.impl.java.js",
-"lineCount":67,
-"mappings":"A;;;;;;;;;;;;;;MAyFgE,E;;;;CAAA,W;EAAAA,Q;EAAAA;qF;;;;;;;QAAA,qE;EAAAC,a;EAAAA,yB;EAAAA,2J;EAAAA,iB;;;;;;CAAA,mI;EAAAC,iG;EAAAA,oE;;;;;;;CACtC,0B,CAAcC,M;EAC5BC,iH;;;;;;;;;CAFoD,0B;EAAAA,6F;;;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":47,
+"mappings":"A;;;;;;;;;;;;;;MAyFgE,E;;CAAA,W;EAAAA,Q;EAAAA;qF;;;QAAA,qE;EAAAC,a;EAAAA,yB;EAAAA,2J;EAAAA,iB;;;CAAA,mI;EAAAC,iG;EAAAA,oE;;;CACtC,0B,gBAAcC,M;EAC5BC,iH;;;;CAFoD,0B;EAAAA,4F;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["ImageLoadingCell.java"],
 "names":["org.gwtproject.cell.client.ImageLoadingCell$DefaultRenderers$1.<synthetic: ctor_js>","org.gwtproject.cell.client.ImageLoadingCell$DefaultRenderers$1.<synthetic: ctor_create>","org.gwtproject.cell.client.ImageLoadingCell$DefaultRenderers$1.<init>","object","org.gwtproject.cell.client.ImageLoadingCell$DefaultRenderers$1.render","org.gwtproject.cell.client.ImageLoadingCell$DefaultRenderers$1.<clinit>"]
 }

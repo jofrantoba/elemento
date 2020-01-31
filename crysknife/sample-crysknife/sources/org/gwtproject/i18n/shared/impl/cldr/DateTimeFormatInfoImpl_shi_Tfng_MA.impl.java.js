@@ -4,71 +4,44 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const DateTimeFormatInfoImpl__shi__Tfng = goog.require('org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_shi_Tfng$impl');
 
 class DateTimeFormatInfoImpl__shi__Tfng__MA extends DateTimeFormatInfoImpl__shi__Tfng {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!DateTimeFormatInfoImpl__shi__Tfng__MA}
-  * @public
-  */
+ /** @return {!DateTimeFormatInfoImpl__shi__Tfng__MA} */
  static $create__() {
   DateTimeFormatInfoImpl__shi__Tfng__MA.$clinit();
   let $instance = new DateTimeFormatInfoImpl__shi__Tfng__MA();
   $instance.$ctor__org_gwtproject_i18n_shared_impl_cldr_DateTimeFormatInfoImpl_shi_Tfng_MA__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_i18n_shared_impl_cldr_DateTimeFormatInfoImpl_shi_Tfng_MA__() {
   this.$ctor__org_gwtproject_i18n_shared_impl_cldr_DateTimeFormatInfoImpl_shi_Tfng__();
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_firstDayOfTheWeek__() {
   return 6;
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_weekendEnd__() {
   return 6;
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_weekendStart__() {
   return 5;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DateTimeFormatInfoImpl__shi__Tfng__MA.$clinit = () =>{};
   DateTimeFormatInfoImpl__shi__Tfng__MA.$loadModules();
   DateTimeFormatInfoImpl__shi__Tfng.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DateTimeFormatInfoImpl__shi__Tfng__MA;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

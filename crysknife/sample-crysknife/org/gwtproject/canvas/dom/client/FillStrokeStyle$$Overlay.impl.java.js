@@ -9,12 +9,8 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
 class FillStrokeStyle_$Overlay {
- /**
-  * @param {!Object} $thisArg
-  * @return {number}
-  * @public
-  */
- static m_getType__$devirt__org_gwtproject_canvas_dom_client_FillStrokeStyle($thisArg) {
+ /** @return {number} */
+ static m_getType__$devirt__org_gwtproject_canvas_dom_client_FillStrokeStyle(/** !Object */ $thisArg) {
   FillStrokeStyle_$Overlay.$clinit();
   if (j_l_String.m_equals__java_lang_String__java_lang_Object(typeof($thisArg), "string")) {
    return FillStrokeStyle_$Overlay.f_TYPE_CSSCOLOR__org_gwtproject_canvas_dom_client_FillStrokeStyle_$Overlay;
@@ -25,24 +21,16 @@ class FillStrokeStyle_$Overlay {
    return FillStrokeStyle_$Overlay.f_TYPE_PATTERN__org_gwtproject_canvas_dom_client_FillStrokeStyle_$Overlay;
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   FillStrokeStyle_$Overlay.$clinit = () =>{};
   FillStrokeStyle_$Overlay.$loadModules();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Object;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Overlay = goog.module.get('org.gwtproject.canvas.dom.client.CanvasGradient.$Overlay$impl');
@@ -54,11 +42,11 @@ class FillStrokeStyle_$Overlay {
 }
 $Util.$setClassMetadata(FillStrokeStyle_$Overlay, 'Object');
 
-/** @public {number} @const */
+/**@const {number}*/
 FillStrokeStyle_$Overlay.f_TYPE_CSSCOLOR__org_gwtproject_canvas_dom_client_FillStrokeStyle_$Overlay = 0;
-/** @public {number} @const */
+/**@const {number}*/
 FillStrokeStyle_$Overlay.f_TYPE_GRADIENT__org_gwtproject_canvas_dom_client_FillStrokeStyle_$Overlay = 1;
-/** @public {number} @const */
+/**@const {number}*/
 FillStrokeStyle_$Overlay.f_TYPE_PATTERN__org_gwtproject_canvas_dom_client_FillStrokeStyle_$Overlay = 2;
 
 exports = FillStrokeStyle_$Overlay; 

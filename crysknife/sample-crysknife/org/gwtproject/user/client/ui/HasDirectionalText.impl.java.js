@@ -10,48 +10,26 @@ let Direction = goog.forwardDeclare('org.gwtproject.i18n.client.HasDirection.Dir
  * @extends {HasText}
  */
 class HasDirectionalText {
- /**
-  * @abstract
-  * @return {Direction}
-  * @public
-  */
+ /** @abstract @return {Direction} */
  m_getTextDirection__() {}
- /**
-  * @abstract
-  * @param {?string} text
-  * @param {Direction} dir
-  * @public
-  */
- m_setText__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(text, dir) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_setText__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(/** ?string */ text, /** Direction */ dir) {}
+ 
  static $clinit() {
   HasDirectionalText.$clinit = () =>{};
   HasDirectionalText.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasText.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_HasDirectionalText = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasText.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_HasDirectionalText = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_HasDirectionalText;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

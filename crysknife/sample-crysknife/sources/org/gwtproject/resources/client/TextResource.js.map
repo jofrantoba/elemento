@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TextResource.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;MAqBiB,Y;;;;;;CACR,W;;;;QADQ,O;EAAAA,+B;EAAAA;",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MAqBiB,Y;;CACR,W;;QADQ,O;EAAAA,+B;EAAAA;",
 "sources":["TextResource.java"],
 "names":["org.gwtproject.resources.client.TextResource.<clinit>"]
 }

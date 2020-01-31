@@ -17,49 +17,33 @@ let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
  * @implements {ValueChangeHandler<List<C>>}
   */
 class $1 extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {TreeNodeImpl<C>} */
+  /**@type {TreeNodeImpl<C>}*/
   this.f_$outer_this__org_gwtproject_user_cellview_client_CellBrowser_TreeNodeImpl_1;
-  /** @public {BrowserCellList<C>} */
+  /**@type {BrowserCellList<C>}*/
   this.$c_display;
  }
- /**
-  * @template C
-  * @param {TreeNodeImpl<C>} $outer_this
-  * @param {BrowserCellList<C>} $c_display
-  * @return {!$1<C>}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_CellBrowser_TreeNodeImpl__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList($outer_this, $c_display) {
+ /** @template C @return {!$1<C>} */
+ static $create__org_gwtproject_user_cellview_client_CellBrowser_TreeNodeImpl__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList(/** TreeNodeImpl<C> */ $outer_this, /** BrowserCellList<C> */ $c_display) {
   $1.$clinit();
   let $instance = new $1();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellBrowser_TreeNodeImpl_1__org_gwtproject_user_cellview_client_CellBrowser_TreeNodeImpl__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList($outer_this, $c_display);
   return $instance;
  }
- /**
-  * @param {TreeNodeImpl<C>} $outer_this
-  * @param {BrowserCellList<C>} $c_display
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_CellBrowser_TreeNodeImpl_1__org_gwtproject_user_cellview_client_CellBrowser_TreeNodeImpl__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList($outer_this, $c_display) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_CellBrowser_TreeNodeImpl_1__org_gwtproject_user_cellview_client_CellBrowser_TreeNodeImpl__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList(/** TreeNodeImpl<C> */ $outer_this, /** BrowserCellList<C> */ $c_display) {
   this.f_$outer_this__org_gwtproject_user_cellview_client_CellBrowser_TreeNodeImpl_1 = $outer_this;
   this.$c_display = $c_display;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {ValueChangeEvent<List<C>>} event
-  * @public
-  */
- m_onValueChange__org_gwtproject_event_logical_shared_ValueChangeEvent(event) {
+ /** @override */
+ m_onValueChange__org_gwtproject_event_logical_shared_ValueChangeEvent(/** ValueChangeEvent<List<C>> */ event) {
   let focusedKey = this.$c_display.f_focusedKey__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_;
   if (!$Equality.$same(focusedKey, null)) {
    let stillExists = false;
-   let displayValues = /**@type {List<C>} */ ($Casts.$to(event.m_getValue__(), List));
+   let displayValues = /**@type {List<C>}*/ ($Casts.$to(event.m_getValue__(), List));
    for (let $iterator = displayValues.m_iterator__(); $iterator.m_hasNext__(); ) {
     let displayValue = $iterator.m_next__();
     if ($Objects.m_equals__java_lang_Object__java_lang_Object(focusedKey, this.$c_display.m_getValueKey__java_lang_Object(displayValue))) {
@@ -72,25 +56,17 @@ class $1 extends j_l_Object {
    }
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $1.$clinit = () =>{};
   $1.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $1;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   List = goog.module.get('java.util.List$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

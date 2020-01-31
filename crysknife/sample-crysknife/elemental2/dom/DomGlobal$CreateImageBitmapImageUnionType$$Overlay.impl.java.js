@@ -13,142 +13,82 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class CreateImageBitmapImageUnionType_$Overlay {
- /**
-  * @param {*} o
-  * @return {?}
-  * @public
-  */
- static m_of__java_lang_Object(o) {
+ /** @return {?} */
+ static m_of__java_lang_Object(/** * */ o) {
   CreateImageBitmapImageUnionType_$Overlay.$clinit();
-  return /**@type {?} */ (Js.m_cast__java_lang_Object(o));
+  return /**@type {?}*/ (Js.m_cast__java_lang_Object(o));
  }
- /**
-  * @param {?} $thisArg
-  * @return {Blob}
-  * @public
-  */
- static m_asBlob__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType($thisArg) {
+ /** @return {Blob} */
+ static m_asBlob__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType(/** ? */ $thisArg) {
   CreateImageBitmapImageUnionType_$Overlay.$clinit();
-  return /**@type {Blob} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $Overlay));
+  return /**@type {Blob}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $Overlay));
  }
- /**
-  * @param {?} $thisArg
-  * @return {CanvasRenderingContext2D}
-  * @public
-  */
- static m_asCanvasRenderingContext2D__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType($thisArg) {
+ /** @return {CanvasRenderingContext2D} */
+ static m_asCanvasRenderingContext2D__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType(/** ? */ $thisArg) {
   CreateImageBitmapImageUnionType_$Overlay.$clinit();
-  return /**@type {CanvasRenderingContext2D} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), CanvasRenderingContext2D_$Overlay));
+  return /**@type {CanvasRenderingContext2D}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), CanvasRenderingContext2D_$Overlay));
  }
- /**
-  * @param {?} $thisArg
-  * @return {HTMLCanvasElement}
-  * @public
-  */
- static m_asHTMLCanvasElement__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType($thisArg) {
+ /** @return {HTMLCanvasElement} */
+ static m_asHTMLCanvasElement__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType(/** ? */ $thisArg) {
   CreateImageBitmapImageUnionType_$Overlay.$clinit();
-  return /**@type {HTMLCanvasElement} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), HTMLCanvasElement_$Overlay));
+  return /**@type {HTMLCanvasElement}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), HTMLCanvasElement_$Overlay));
  }
- /**
-  * @param {?} $thisArg
-  * @return {HTMLImageElement}
-  * @public
-  */
- static m_asHTMLImageElement__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType($thisArg) {
+ /** @return {HTMLImageElement} */
+ static m_asHTMLImageElement__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType(/** ? */ $thisArg) {
   CreateImageBitmapImageUnionType_$Overlay.$clinit();
-  return /**@type {HTMLImageElement} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), HTMLImageElement_$Overlay));
+  return /**@type {HTMLImageElement}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), HTMLImageElement_$Overlay));
  }
- /**
-  * @param {?} $thisArg
-  * @return {HTMLVideoElement}
-  * @public
-  */
- static m_asHTMLVideoElement__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType($thisArg) {
+ /** @return {HTMLVideoElement} */
+ static m_asHTMLVideoElement__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType(/** ? */ $thisArg) {
   CreateImageBitmapImageUnionType_$Overlay.$clinit();
-  return /**@type {HTMLVideoElement} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), HTMLVideoElement_$Overlay));
+  return /**@type {HTMLVideoElement}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), HTMLVideoElement_$Overlay));
  }
- /**
-  * @param {?} $thisArg
-  * @return {ImageBitmap}
-  * @public
-  */
- static m_asImageBitmap__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType($thisArg) {
+ /** @return {ImageBitmap} */
+ static m_asImageBitmap__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType(/** ? */ $thisArg) {
   CreateImageBitmapImageUnionType_$Overlay.$clinit();
-  return /**@type {ImageBitmap} */ (Js.m_cast__java_lang_Object($thisArg));
+  return /**@type {ImageBitmap}*/ (Js.m_cast__java_lang_Object($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {ImageData}
-  * @public
-  */
- static m_asImageData__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType($thisArg) {
+ /** @return {ImageData} */
+ static m_asImageData__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType(/** ? */ $thisArg) {
   CreateImageBitmapImageUnionType_$Overlay.$clinit();
-  return /**@type {ImageData} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), ImageData_$Overlay));
+  return /**@type {ImageData}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), ImageData_$Overlay));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isBlob__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isBlob__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType(/** ? */ $thisArg) {
   CreateImageBitmapImageUnionType_$Overlay.$clinit();
-  return $Overlay.$isInstance(/**@type {*} */ ($thisArg));
+  return $Overlay.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isCanvasRenderingContext2D__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isCanvasRenderingContext2D__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType(/** ? */ $thisArg) {
   CreateImageBitmapImageUnionType_$Overlay.$clinit();
-  return CanvasRenderingContext2D_$Overlay.$isInstance(/**@type {*} */ ($thisArg));
+  return CanvasRenderingContext2D_$Overlay.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isHTMLCanvasElement__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isHTMLCanvasElement__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType(/** ? */ $thisArg) {
   CreateImageBitmapImageUnionType_$Overlay.$clinit();
-  return HTMLCanvasElement_$Overlay.$isInstance(/**@type {*} */ ($thisArg));
+  return HTMLCanvasElement_$Overlay.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isHTMLImageElement__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isHTMLImageElement__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType(/** ? */ $thisArg) {
   CreateImageBitmapImageUnionType_$Overlay.$clinit();
-  return HTMLImageElement_$Overlay.$isInstance(/**@type {*} */ ($thisArg));
+  return HTMLImageElement_$Overlay.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isHTMLVideoElement__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isHTMLVideoElement__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType(/** ? */ $thisArg) {
   CreateImageBitmapImageUnionType_$Overlay.$clinit();
-  return HTMLVideoElement_$Overlay.$isInstance(/**@type {*} */ ($thisArg));
+  return HTMLVideoElement_$Overlay.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isImageData__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isImageData__$devirt__elemental2_dom_DomGlobal_CreateImageBitmapImageUnionType(/** ? */ $thisArg) {
   CreateImageBitmapImageUnionType_$Overlay.$clinit();
-  return ImageData_$Overlay.$isInstance(/**@type {*} */ ($thisArg));
+  return ImageData_$Overlay.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CreateImageBitmapImageUnionType_$Overlay.$clinit = () =>{};
   CreateImageBitmapImageUnionType_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('elemental2.dom.Blob.$Overlay$impl');
   CanvasRenderingContext2D_$Overlay = goog.module.get('elemental2.dom.CanvasRenderingContext2D.$Overlay$impl');

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"UiTemplate.impl.java.js",
-"lineCount":28,
-"mappings":"A;;;;;;;;;MA0BkB,U;;;;;;CAEhB,S;;;;;;CAKA,iB;;;;QAPgB,O;EAAAA,6B;EAAAA;",
+"lineCount":18,
+"mappings":"A;;;;;;;;;MA0BkB,U;;CAEhB,S;;CAKA,iB;;QAPgB,O;EAAAA,6B;EAAAA;",
 "sources":["UiTemplate.java"],
 "names":["org.gwtproject.uibinder.client.UiTemplate.<clinit>"]
 }

@@ -8,35 +8,22 @@ const Style = goog.require('org.gwtproject.user.client.ui.NativeHorizontalScroll
  * @extends {Style}
  */
 class StyleTransparant {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   StyleTransparant.$clinit = () =>{};
   StyleTransparant.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Style.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_StyleTransparant = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Style.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_StyleTransparant = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_StyleTransparant;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }
@@ -44,7 +31,7 @@ $Util.$setClassMetadataForInterface(StyleTransparant, 'org.gwtproject.user.clien
 
 StyleTransparant.$markImplementor(/** @type {Function} */ (StyleTransparant));
 
-/** @public {?string} @const */
+/**@const {?string}*/
 StyleTransparant.f_DEFAULT_CSS__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_StyleTransparant = "org/gwtproject/user/client/ui/NativeHorizontalScrollbarTransparent.gss";
 
 exports = StyleTransparant; 

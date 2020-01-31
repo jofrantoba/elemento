@@ -44,44 +44,38 @@ let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
  * @implements {FooterBuilder<T>}
   */
 class AbstractHeaderOrFooterBuilder extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isFooter__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isSortIconStartOfLine__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ = false;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_sortAscIconHalfHeight__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ = 0;
-  /** @public {SafeHtml} */
+  /**@type {SafeHtml}*/
   this.f_sortAscIconHtml__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_sortAscIconWidth__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_sortDescIconHalfHeight__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ = 0;
-  /** @public {SafeHtml} */
+  /**@type {SafeHtml}*/
   this.f_sortDescIconHtml__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_sortDescIconWidth__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ = 0;
-  /** @public {AbstractCellTable<T>} */
+  /**@type {AbstractCellTable<T>}*/
   this.f_table__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_rowIndex__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ = 0;
-  /** @public {HtmlTableSectionBuilder} */
+  /**@type {HtmlTableSectionBuilder}*/
   this.f_section__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_;
-  /** @public {Map<?string, Column<T, ?>>} */
+  /**@type {Map<?string, Column<T, ?>>}*/
   this.f_idToColumnMap__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_;
-  /** @public {TwoWayHashMap<?string, Header<?>>} */
+  /**@type {TwoWayHashMap<?string, Header<?>>}*/
   this.f_idToHeaderMap__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_;
  }
- /**
-  * @param {AbstractCellTable<T>} table
-  * @param {boolean} isFooter
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder__org_gwtproject_user_cellview_client_AbstractCellTable__boolean(table, isFooter) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder__org_gwtproject_user_cellview_client_AbstractCellTable__boolean(/** AbstractCellTable<T> */ table, /** boolean */ isFooter) {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder();
   this.f_isFooter__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ = isFooter;
@@ -103,136 +97,73 @@ class AbstractHeaderOrFooterBuilder extends j_l_Object {
    this.f_sortDescIconHalfHeight__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ = 0;
   }
  }
- /**
-  * @override
-  * @return {TableSectionBuilder}
-  * @public
-  */
+ /** @override @return {TableSectionBuilder} */
  m_buildFooter__() {
   if (!this.f_isFooter__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_) {
    throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String("Cannot build footer because this builder is designated to build a header"));
   }
   return this.m_buildHeaderOrFooter___$p_org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder();
  }
- /**
-  * @override
-  * @return {TableSectionBuilder}
-  * @public
-  */
+ /** @override @return {TableSectionBuilder} */
  m_buildHeader__() {
   if (this.f_isFooter__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_) {
    throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String("Cannot build header because this builder is designated to build a footer"));
   }
   return this.m_buildHeaderOrFooter___$p_org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder();
  }
- /**
-  * @override
-  * @param {Object} elem
-  * @return {Column<T, ?>}
-  * @public
-  */
- m_getColumn__org_gwtproject_dom_client_Element(elem) {
+ /** @override @return {Column<T, ?>} */
+ m_getColumn__org_gwtproject_dom_client_Element(/** Object */ elem) {
   let cellId = this.m_getColumnId__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder(elem);
-  return $Equality.$same(cellId, null) ? null : /**@type {Column<T, *>} */ ($Casts.$to(this.f_idToColumnMap__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_.get(cellId), Column));
+  return $Equality.$same(cellId, null) ? null : /**@type {Column<T, *>}*/ ($Casts.$to(this.f_idToColumnMap__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_.get(cellId), Column));
  }
- /**
-  * @override
-  * @param {Object} elem
-  * @return {Header<?>}
-  * @public
-  */
- m_getHeader__org_gwtproject_dom_client_Element(elem) {
+ /** @override @return {Header<?>} */
+ m_getHeader__org_gwtproject_dom_client_Element(/** Object */ elem) {
   let headerId = this.m_getHeaderId__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder(elem);
-  return $Equality.$same(headerId, null) ? null : /**@type {Header<*>} */ ($Casts.$to(this.f_idToHeaderMap__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_.m_getValue__java_lang_Object_$pp_org_gwtproject_user_cellview_client(headerId), Header));
+  return $Equality.$same(headerId, null) ? null : /**@type {Header<*>}*/ ($Casts.$to(this.f_idToHeaderMap__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_.m_getValue__java_lang_Object_$pp_org_gwtproject_user_cellview_client(headerId), Header));
  }
- /**
-  * @override
-  * @param {Object} row
-  * @return {number}
-  * @public
-  */
- m_getRowIndex__org_gwtproject_dom_client_TableRowElement(row) {
+ /** @override @return {number} */
+ m_getRowIndex__org_gwtproject_dom_client_TableRowElement(/** Object */ row) {
   return Integer.m_parseInt__java_lang_String($Overlay.m_getAttribute__$devirt__org_gwtproject_dom_client_Element__java_lang_String(row, AbstractHeaderOrFooterBuilder.f_ROW_ATTRIBUTE__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_));
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isBuildingFooter__() {
   return this.f_isFooter__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_;
  }
- /**
-  * @override
-  * @param {Object} elem
-  * @return {boolean}
-  * @public
-  */
- m_isColumn__org_gwtproject_dom_client_Element(elem) {
+ /** @override @return {boolean} */
+ m_isColumn__org_gwtproject_dom_client_Element(/** Object */ elem) {
   return !$Equality.$same(this.m_getColumnId__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder(elem), null);
  }
- /**
-  * @override
-  * @param {Object} elem
-  * @return {boolean}
-  * @public
-  */
- m_isHeader__org_gwtproject_dom_client_Element(elem) {
+ /** @override @return {boolean} */
+ m_isHeader__org_gwtproject_dom_client_Element(/** Object */ elem) {
   return !$Equality.$same(this.m_getHeaderId__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder(elem), null);
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isSortIconStartOfLine__() {
   return this.f_isSortIconStartOfLine__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_;
  }
- /**
-  * @param {boolean} isStartOfLine
-  * @public
-  */
- m_setSortIconStartOfLine__boolean(isStartOfLine) {
+ 
+ m_setSortIconStartOfLine__boolean(/** boolean */ isStartOfLine) {
   this.f_isSortIconStartOfLine__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ = isStartOfLine;
  }
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_buildHeaderOrFooterImpl__() {}
- /**
-  * @param {ElementBuilderBase<?>} builder
-  * @param {Column<T, ?>} column
-  * @public
-  */
- m_enableColumnHandlers__org_gwtproject_dom_builder_shared_ElementBuilderBase__org_gwtproject_user_cellview_client_Column(builder, column) {
+ 
+ m_enableColumnHandlers__org_gwtproject_dom_builder_shared_ElementBuilderBase__org_gwtproject_user_cellview_client_Column(/** ElementBuilderBase<?> */ builder, /** Column<T, ?> */ column) {
   let columnId = "column-" + j_l_String.m_valueOf__java_lang_Object(Document_$Overlay.m_createUniqueId__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__()));
   this.f_idToColumnMap__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_.put(columnId, column);
   builder.m_attribute__java_lang_String__java_lang_String(AbstractHeaderOrFooterBuilder.f_COLUMN_ATTRIBUTE__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_, columnId);
  }
- /**
-  * @param {number} index
-  * @return {Header<?>}
-  * @public
-  */
- m_getHeader__int(index) {
+ /** @return {Header<?>} */
+ m_getHeader__int(/** number */ index) {
   return this.f_isFooter__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ ? this.m_getTable__().m_getFooter__int(index) : this.m_getTable__().m_getHeader__int(index);
  }
- /**
-  * @return {AbstractCellTable<T>}
-  * @public
-  */
+ /** @return {AbstractCellTable<T>} */
  m_getTable__() {
   return this.f_table__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_;
  }
- /**
-  * @template H
-  * @param {ElementBuilderBase<?>} out
-  * @param {Context} context
-  * @param {Header<H>} header
-  * @public
-  */
- m_renderHeader__org_gwtproject_dom_builder_shared_ElementBuilderBase__org_gwtproject_cell_client_Cell_Context__org_gwtproject_user_cellview_client_Header(out, context, header) {
-  let headerId = /**@type {?string} */ ($Casts.$to(this.f_idToHeaderMap__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_.m_getKey__java_lang_Object_$pp_org_gwtproject_user_cellview_client(header), j_l_String));
+ /** @template H */
+ m_renderHeader__org_gwtproject_dom_builder_shared_ElementBuilderBase__org_gwtproject_cell_client_Cell_Context__org_gwtproject_user_cellview_client_Header(/** ElementBuilderBase<?> */ out, /** Context */ context, /** Header<H> */ header) {
+  let headerId = /**@type {?string}*/ ($Casts.$to(this.f_idToHeaderMap__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_.m_getKey__java_lang_Object_$pp_org_gwtproject_user_cellview_client(header), j_l_String));
   if ($Equality.$same(headerId, null)) {
    headerId = "header-" + j_l_String.m_valueOf__java_lang_Object(Document_$Overlay.m_createUniqueId__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__()));
    this.f_idToHeaderMap__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_.m_put__java_lang_Object__java_lang_Object_$pp_org_gwtproject_user_cellview_client(headerId, header);
@@ -242,15 +173,8 @@ class AbstractHeaderOrFooterBuilder extends j_l_Object {
   header.m_render__org_gwtproject_cell_client_Cell_Context__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, sb);
   out.m_html__org_gwtproject_safehtml_shared_SafeHtml(sb.m_toSafeHtml__());
  }
- /**
-  * @param {ElementBuilderBase<?>} out
-  * @param {Context} context
-  * @param {Header<?>} header
-  * @param {boolean} isSorted
-  * @param {boolean} isSortAscending
-  * @public
-  */
- m_renderSortableHeader__org_gwtproject_dom_builder_shared_ElementBuilderBase__org_gwtproject_cell_client_Cell_Context__org_gwtproject_user_cellview_client_Header__boolean__boolean(out, context, header, isSorted, isSortAscending) {
+ 
+ m_renderSortableHeader__org_gwtproject_dom_builder_shared_ElementBuilderBase__org_gwtproject_cell_client_Cell_Context__org_gwtproject_user_cellview_client_Header__boolean__boolean(/** ElementBuilderBase<?> */ out, /** Context */ context, /** Header<?> */ header, /** boolean */ isSorted, /** boolean */ isSortAscending) {
   let headerContainer = out;
   isSorted = isSorted && !this.f_isFooter__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_;
   if (isSorted) {
@@ -283,10 +207,7 @@ class AbstractHeaderOrFooterBuilder extends j_l_Object {
    headerContainer.m_endDiv__();
   }
  }
- /**
-  * @return {TableRowBuilder}
-  * @public
-  */
+ /** @return {TableRowBuilder} */
  m_startRow__() {
   while (this.f_section__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_.m_getDepth__() > 1) {
    this.f_section__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_.m_end__();
@@ -299,10 +220,7 @@ class AbstractHeaderOrFooterBuilder extends j_l_Object {
   this.f_rowIndex__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_++;
   return row;
  }
- /**
-  * @return {TableSectionBuilder}
-  * @public
-  */
+ /** @return {TableSectionBuilder} */
  m_buildHeaderOrFooter___$p_org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder() {
   this.f_section__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ = this.f_isFooter__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ ? HtmlBuilderFactory.m_get__().m_createTFootBuilder__() : HtmlBuilderFactory.m_get__().m_createTHeadBuilder__();
   this.f_idToHeaderMap__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_.m_clear___$pp_org_gwtproject_user_cellview_client();
@@ -316,41 +234,24 @@ class AbstractHeaderOrFooterBuilder extends j_l_Object {
   }
   return this.f_section__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_;
  }
- /**
-  * @param {Object} elem
-  * @return {?string}
-  * @public
-  */
- m_getColumnId__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder(elem) {
+ /** @return {?string} */
+ m_getColumnId__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder(/** Object */ elem) {
   return this.m_getElementAttribute__org_gwtproject_dom_client_Element__java_lang_String_$p_org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder(elem, AbstractHeaderOrFooterBuilder.f_COLUMN_ATTRIBUTE__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_);
  }
- /**
-  * @param {Object} elem
-  * @param {?string} attribute
-  * @return {?string}
-  * @public
-  */
- m_getElementAttribute__org_gwtproject_dom_client_Element__java_lang_String_$p_org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder(elem, attribute) {
+ /** @return {?string} */
+ m_getElementAttribute__org_gwtproject_dom_client_Element__java_lang_String_$p_org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder(/** Object */ elem, /** ?string */ attribute) {
   if ($Equality.$same(elem, null)) {
    return null;
   }
   let value = $Overlay.m_getAttribute__$devirt__org_gwtproject_dom_client_Element__java_lang_String(elem, attribute);
   return $Equality.$same(value, null) || (j_l_String.m_length__java_lang_String(value) == 0) ? null : value;
  }
- /**
-  * @param {Object} elem
-  * @return {?string}
-  * @public
-  */
- m_getHeaderId__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder(elem) {
+ /** @return {?string} */
+ m_getHeaderId__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder(/** Object */ elem) {
   return this.m_getElementAttribute__org_gwtproject_dom_client_Element__java_lang_String_$p_org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder(elem, AbstractHeaderOrFooterBuilder.f_HEADER_ATTRIBUTE__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_);
  }
- /**
-  * @param {boolean} isAscending
-  * @return {SafeHtml}
-  * @public
-  */
- m_getSortIcon__boolean_$p_org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder(isAscending) {
+ /** @return {SafeHtml} */
+ m_getSortIcon__boolean_$p_org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder(/** boolean */ isAscending) {
   if (isAscending) {
    if ($Equality.$same(this.f_sortAscIconHtml__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_, null)) {
     let proto = AbstractImagePrototype.m_create__org_gwtproject_resources_client_ImageResource(this.f_table__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_.m_getResources__().m_sortAscending__());
@@ -365,33 +266,23 @@ class AbstractHeaderOrFooterBuilder extends j_l_Object {
    return this.f_sortDescIconHtml__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_;
   }
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder() {
   this.f_isSortIconStartOfLine__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ = true;
-  this.f_idToColumnMap__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ = /**@type {!HashMap<?string, Column<T, ?>>} */ (HashMap.$create__());
-  this.f_idToHeaderMap__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ = /**@type {!TwoWayHashMap<?string, Header<?>>} */ (TwoWayHashMap.$create__());
+  this.f_idToColumnMap__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ = /**@type {!HashMap<?string, Column<T, ?>>}*/ (HashMap.$create__());
+  this.f_idToHeaderMap__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ = /**@type {!TwoWayHashMap<?string, Header<?>>}*/ (TwoWayHashMap.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AbstractHeaderOrFooterBuilder.$clinit = () =>{};
   AbstractHeaderOrFooterBuilder.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AbstractHeaderOrFooterBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');
   Integer = goog.module.get('java.lang.Integer$impl');
@@ -423,13 +314,13 @@ $Util.$setClassMetadata(AbstractHeaderOrFooterBuilder, 'org.gwtproject.user.cell
 HeaderBuilder.$markImplementor(AbstractHeaderOrFooterBuilder);
 FooterBuilder.$markImplementor(AbstractHeaderOrFooterBuilder);
 
-/** @public {?string} @const */
+/**@const {?string}*/
 AbstractHeaderOrFooterBuilder.f_COLUMN_ATTRIBUTE__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ = "__gwt_column";
-/** @public {?string} @const */
+/**@const {?string}*/
 AbstractHeaderOrFooterBuilder.f_HEADER_ATTRIBUTE__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ = "__gwt_header";
-/** @public {?string} @const */
+/**@const {?string}*/
 AbstractHeaderOrFooterBuilder.f_ROW_ATTRIBUTE__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ = "__gwt_header_row";
-/** @public {number} @const */
+/**@const {number}*/
 AbstractHeaderOrFooterBuilder.f_ICON_PADDING__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder_ = 6;
 
 exports = AbstractHeaderOrFooterBuilder; 

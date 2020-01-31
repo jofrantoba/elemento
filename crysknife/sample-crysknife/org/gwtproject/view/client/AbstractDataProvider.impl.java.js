@@ -27,144 +27,100 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {ProvidesKey<T>}
   */
 class AbstractDataProvider extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Set<HasData<T>>} */
+  /**@type {Set<HasData<T>>}*/
   this.f_displays__org_gwtproject_view_client_AbstractDataProvider_;
-  /** @public {ProvidesKey<T>} */
+  /**@type {ProvidesKey<T>}*/
   this.f_keyProvider__org_gwtproject_view_client_AbstractDataProvider_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_lastRowCount__org_gwtproject_view_client_AbstractDataProvider_ = 0;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_lastRowCountExact__org_gwtproject_view_client_AbstractDataProvider_ = false;
-  /** @public {Map<HasData<T>, HandlerRegistration>} */
+  /**@type {Map<HasData<T>, HandlerRegistration>}*/
   this.f_rangeChangeHandlers__org_gwtproject_view_client_AbstractDataProvider_;
  }
- /**
-  * Initialization from constructor 'AbstractDataProvider()'.
-  * @public
-  */
+ //Initialization from constructor 'AbstractDataProvider()'.
+ 
  $ctor__org_gwtproject_view_client_AbstractDataProvider__() {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_view_client_AbstractDataProvider();
   this.f_keyProvider__org_gwtproject_view_client_AbstractDataProvider_ = null;
  }
- /**
-  * Initialization from constructor 'AbstractDataProvider(ProvidesKey)'.
-  * @param {ProvidesKey<T>} keyProvider
-  * @public
-  */
- $ctor__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_view_client_ProvidesKey(keyProvider) {
+ //Initialization from constructor 'AbstractDataProvider(ProvidesKey)'.
+ 
+ $ctor__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_view_client_ProvidesKey(/** ProvidesKey<T> */ keyProvider) {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_view_client_AbstractDataProvider();
   this.f_keyProvider__org_gwtproject_view_client_AbstractDataProvider_ = keyProvider;
  }
- /**
-  * @param {HasData<T>} display
-  * @public
-  */
- m_addDataDisplay__org_gwtproject_view_client_HasData(display) {
+ 
+ m_addDataDisplay__org_gwtproject_view_client_HasData(/** HasData<T> */ display) {
   if ($Equality.$same(display, null)) {
    throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String("display cannot be null"));
   } else if (this.f_displays__org_gwtproject_view_client_AbstractDataProvider_.contains(display)) {
    throw $Exceptions.toJs(IllegalStateException.$create__java_lang_String("The specified display has already been added to this adapter."));
   }
   this.f_displays__org_gwtproject_view_client_AbstractDataProvider_.add(display);
-  let handler = display.m_addRangeChangeHandler__org_gwtproject_view_client_RangeChangeEvent_Handler(/**@type {!$1<T>} */ ($1.$create__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_view_client_HasData(this, display)));
+  let handler = display.m_addRangeChangeHandler__org_gwtproject_view_client_RangeChangeEvent_Handler(/**@type {!$1<T>}*/ ($1.$create__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_view_client_HasData(this, display)));
   this.f_rangeChangeHandlers__org_gwtproject_view_client_AbstractDataProvider_.put(display, handler);
   if (this.f_lastRowCount__org_gwtproject_view_client_AbstractDataProvider_ >= 0) {
    display.m_setRowCount__int__boolean(this.f_lastRowCount__org_gwtproject_view_client_AbstractDataProvider_, this.f_lastRowCountExact__org_gwtproject_view_client_AbstractDataProvider_);
   }
   this.m_onRangeChanged__org_gwtproject_view_client_HasData(display);
  }
- /**
-  * @return {Set<HasData<T>>}
-  * @public
-  */
+ /** @return {Set<HasData<T>>} */
  m_getDataDisplays__() {
-  return /**@type {Set<HasData<T>>} */ (Collections.m_unmodifiableSet__java_util_Set(this.f_displays__org_gwtproject_view_client_AbstractDataProvider_));
+  return /**@type {Set<HasData<T>>}*/ (Collections.m_unmodifiableSet__java_util_Set(this.f_displays__org_gwtproject_view_client_AbstractDataProvider_));
  }
- /**
-  * @override
-  * @param {T} item
-  * @return {*}
-  * @public
-  */
- m_getKey__java_lang_Object(item) {
+ /** @override @return {*} */
+ m_getKey__java_lang_Object(/** T */ item) {
   return $Equality.$same(this.f_keyProvider__org_gwtproject_view_client_AbstractDataProvider_, null) ? item : this.f_keyProvider__org_gwtproject_view_client_AbstractDataProvider_.m_getKey__java_lang_Object(item);
  }
- /**
-  * @return {ProvidesKey<T>}
-  * @public
-  */
+ /** @return {ProvidesKey<T>} */
  m_getKeyProvider__() {
   return this.f_keyProvider__org_gwtproject_view_client_AbstractDataProvider_;
  }
- /**
-  * @return {Array<Range>}
-  * @public
-  */
+ /** @return {Array<Range>} */
  m_getRanges__() {
-  let ranges = /**@type {!Array<Range>} */ ($Arrays.$create([this.f_displays__org_gwtproject_view_client_AbstractDataProvider_.size()], Range));
+  let ranges = /**@type {!Array<Range>}*/ ($Arrays.$create([this.f_displays__org_gwtproject_view_client_AbstractDataProvider_.size()], Range));
   let i = 0;
   for (let $iterator = this.f_displays__org_gwtproject_view_client_AbstractDataProvider_.m_iterator__(); $iterator.m_hasNext__(); ) {
-   let display = /**@type {HasData<T>} */ ($Casts.$to($iterator.m_next__(), HasData));
+   let display = /**@type {HasData<T>}*/ ($Casts.$to($iterator.m_next__(), HasData));
    $Arrays.$set(ranges, i++, display.m_getVisibleRange__());
   }
   return ranges;
  }
- /**
-  * @param {HasData<T>} display
-  * @public
-  */
- m_removeDataDisplay__org_gwtproject_view_client_HasData(display) {
+ 
+ m_removeDataDisplay__org_gwtproject_view_client_HasData(/** HasData<T> */ display) {
   if (!this.f_displays__org_gwtproject_view_client_AbstractDataProvider_.contains(display)) {
    throw $Exceptions.toJs(IllegalStateException.$create__java_lang_String("HasData not present"));
   }
   this.f_displays__org_gwtproject_view_client_AbstractDataProvider_.remove(display);
-  let handler = /**@type {HandlerRegistration} */ ($Casts.$to(this.f_rangeChangeHandlers__org_gwtproject_view_client_AbstractDataProvider_.remove(display), HandlerRegistration));
+  let handler = /**@type {HandlerRegistration}*/ ($Casts.$to(this.f_rangeChangeHandlers__org_gwtproject_view_client_AbstractDataProvider_.remove(display), HandlerRegistration));
   handler.m_removeHandler__();
  }
- /**
-  * @abstract
-  * @param {HasData<T>} display
-  * @public
-  */
- m_onRangeChanged__org_gwtproject_view_client_HasData(display) {}
- /**
-  * @param {number} count
-  * @param {boolean} exact
-  * @public
-  */
- m_updateRowCount__int__boolean(count, exact) {
+ /** @abstract */
+ m_onRangeChanged__org_gwtproject_view_client_HasData(/** HasData<T> */ display) {}
+ 
+ m_updateRowCount__int__boolean(/** number */ count, /** boolean */ exact) {
   this.f_lastRowCount__org_gwtproject_view_client_AbstractDataProvider_ = count;
   this.f_lastRowCountExact__org_gwtproject_view_client_AbstractDataProvider_ = exact;
   for (let $iterator = this.f_displays__org_gwtproject_view_client_AbstractDataProvider_.m_iterator__(); $iterator.m_hasNext__(); ) {
-   let display = /**@type {HasData<T>} */ ($Casts.$to($iterator.m_next__(), HasData));
+   let display = /**@type {HasData<T>}*/ ($Casts.$to($iterator.m_next__(), HasData));
    display.m_setRowCount__int__boolean(count, exact);
   }
  }
- /**
-  * @param {number} start
-  * @param {List<T>} values
-  * @public
-  */
- m_updateRowData__int__java_util_List(start, values) {
+ 
+ m_updateRowData__int__java_util_List(/** number */ start, /** List<T> */ values) {
   for (let $iterator = this.f_displays__org_gwtproject_view_client_AbstractDataProvider_.m_iterator__(); $iterator.m_hasNext__(); ) {
-   let display = /**@type {HasData<T>} */ ($Casts.$to($iterator.m_next__(), HasData));
+   let display = /**@type {HasData<T>}*/ ($Casts.$to($iterator.m_next__(), HasData));
    this.m_updateRowData__org_gwtproject_view_client_HasData__int__java_util_List(display, start, values);
   }
  }
- /**
-  * @param {HasData<T>} display
-  * @param {number} start
-  * @param {List<T>} values
-  * @public
-  */
- m_updateRowData__org_gwtproject_view_client_HasData__int__java_util_List(display, start, values) {
+ 
+ m_updateRowData__org_gwtproject_view_client_HasData__int__java_util_List(/** HasData<T> */ display, /** number */ start, /** List<T> */ values) {
   let end = start + values.size();
   let range = display.m_getVisibleRange__();
   let curStart = range.m_getStart__();
@@ -178,33 +134,23 @@ class AbstractDataProvider extends j_l_Object {
    display.m_setRowData__int__java_util_List(realStart, realValues);
   }
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_view_client_AbstractDataProvider() {
-  this.f_displays__org_gwtproject_view_client_AbstractDataProvider_ = /**@type {!HashSet<HasData<T>>} */ (HashSet.$create__());
+  this.f_displays__org_gwtproject_view_client_AbstractDataProvider_ = /**@type {!HashSet<HasData<T>>}*/ (HashSet.$create__());
   this.f_lastRowCount__org_gwtproject_view_client_AbstractDataProvider_ = -1;
-  this.f_rangeChangeHandlers__org_gwtproject_view_client_AbstractDataProvider_ = /**@type {!HashMap<HasData<T>, HandlerRegistration>} */ (HashMap.$create__());
+  this.f_rangeChangeHandlers__org_gwtproject_view_client_AbstractDataProvider_ = /**@type {!HashMap<HasData<T>, HandlerRegistration>}*/ (HashMap.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AbstractDataProvider.$clinit = () =>{};
   AbstractDataProvider.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AbstractDataProvider;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');

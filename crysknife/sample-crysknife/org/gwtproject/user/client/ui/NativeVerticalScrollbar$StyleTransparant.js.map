@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"NativeVerticalScrollbar$StyleTransparant.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;MAoFmB,gB;;;;QAAA,O;EAAAA,mC;EAAAA,gC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AACf;iBAGO,qFAHP;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;MAoFmB,gB;;QAAA,O;EAAAA,mC;EAAAA,gC;;;;;;;;;;;;;;;;;;;;AACf;iBAGO,qFAHP;",
 "sources":["NativeVerticalScrollbar.java"],
 "names":["org.gwtproject.user.client.ui.NativeVerticalScrollbar$StyleTransparant.<clinit>"]
 }

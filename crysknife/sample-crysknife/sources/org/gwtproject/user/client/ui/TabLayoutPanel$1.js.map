@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TabLayoutPanel$1.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;;;;;MAsuB2C,E;;;;CAAA,W;EAAAA,Q;EAAAA;qE;EAAAA;OAjBRC,QAiBQD,C;;;;;;;;QAAA,2F;EAAAE,a;EAAAA,yB;EAAAA,2K;EAAAA,iB;;;;;;;CAAA,yI;EAAAC,iF;EAAAA,yB;EAAAA,iC;;;;;;;CACzB,qD,CAAmBC,K;EAC7BC,oI;;;;;QAFmC,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":44,
+"mappings":"A;;;;;;;;;;;;;MAsuB2C,E;;CAAA,W;EAAAA,Q;EAAAA;qE;EAAAA;OAjBRC,QAiBQD,C;;;QAAA,2F;EAAAE,a;EAAAA,yB;EAAAA,2K;EAAAA,iB;;;CAAA,yI;EAAAC,iF;EAAAA,yB;EAAAA,iC;;;CACzB,qD,mBAAmBC,K;EAC7BC,oI;;;QAFmC,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["TabLayoutPanel.java"],
 "names":["org.gwtproject.user.client.ui.TabLayoutPanel$1.<synthetic: ctor_js>","child","org.gwtproject.user.client.ui.TabLayoutPanel$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.TabLayoutPanel$1.<init>","event","org.gwtproject.user.client.ui.TabLayoutPanel$1.onClick","org.gwtproject.user.client.ui.TabLayoutPanel$1.<clinit>"]
 }

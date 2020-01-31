@@ -10,36 +10,23 @@ const RadioRole = goog.require('org.gwtproject.aria.client.RadioRole$impl');
  * @extends {RadioRole}
  */
 class MenuitemradioRole {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MenuitemradioRole.$clinit = () =>{};
   MenuitemradioRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  MenuitemcheckboxRole.$markImplementor(classConstructor);
-  RadioRole.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_MenuitemradioRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  MenuitemcheckboxRole.$markImplementor(ctor);
+  RadioRole.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_MenuitemradioRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_MenuitemradioRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasEndedHandlers.impl.java.js",
-"lineCount":26,
-"mappings":"A;;;;;;;;;;;;MA0BiB,gB;;;;;;;CAQK,+D,CAA6BA,O;;;;QARlC,O;EAAAC,mC;EAAAA;",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;;;MA0BiB,gB;;CAQK,+D,qBAA6BA,O;;QARlC,O;EAAAC,mC;EAAAA;",
 "sources":["HasEndedHandlers.java"],
 "names":["handler","org.gwtproject.event.dom.client.HasEndedHandlers.<clinit>"]
 }

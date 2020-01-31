@@ -8,41 +8,24 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @extends {Annotation}
  */
 class DefaultLocale {
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_value__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DefaultLocale.$clinit = () =>{};
   DefaultLocale.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_i18n_client_LocalizableResource_DefaultLocale = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_i18n_client_LocalizableResource_DefaultLocale = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_i18n_client_LocalizableResource_DefaultLocale;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }
@@ -50,7 +33,7 @@ $Util.$setClassMetadataForInterface(DefaultLocale, 'org.gwtproject.i18n.client.L
 
 DefaultLocale.$markImplementor(/** @type {Function} */ (DefaultLocale));
 
-/** @public {?string} @const */
+/**@const {?string}*/
 DefaultLocale.f_DEFAULT_LOCALE__org_gwtproject_i18n_client_LocalizableResource_DefaultLocale = "en";
 
 exports = DefaultLocale; 

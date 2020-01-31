@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellBrowser$Resources.impl.java.js",
-"lineCount":92,
-"mappings":"A;;;;;;;;;;;;;MA4FmB,S;;;;;;CAOD,qB;;;;;;CAMA,mB;;;;;;CAOA,6B;;;;;;CAQA,iC;;;;;;CAMR,oB;;;;;QAhCN,yE;EAAAA,+G;;;;;QAFe,O;EAAAC,4B;EAAAA,yB;EAEfA,0H;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFe;;",
+"lineCount":56,
+"mappings":"A;;;;;;;;;;;;;MA4FmB,S;;CAOD,qB;;CAMA,mB;;CAOA,6B;;CAQA,iC;;CAMR,oB;;QAhCN,yE;EAAAA,+G;;;QAFe,O;EAAAC,4B;EAAAA,yB;EAEfA,0H;;;;;;;;;;;;;;;;;;;;;;AAFe;;",
 "sources":["CellBrowser.java"],
 "names":["org.gwtproject.user.cellview.client.CellBrowser$Resources.<synthetic: getter>","org.gwtproject.user.cellview.client.CellBrowser$Resources.<clinit>"]
 }

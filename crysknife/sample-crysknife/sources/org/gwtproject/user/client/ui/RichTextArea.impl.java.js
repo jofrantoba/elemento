@@ -23,27 +23,20 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {HasSafeHtml}
   */
 class RichTextArea extends FocusWidget {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {RichTextAreaImpl} */
+  /**@type {RichTextAreaImpl}*/
   this.f_impl__org_gwtproject_user_client_ui_RichTextArea_;
  }
- /**
-  * @return {!RichTextArea}
-  * @public
-  */
+ /** @return {!RichTextArea} */
  static $create__() {
   RichTextArea.$clinit();
   let $instance = new RichTextArea();
   $instance.$ctor__org_gwtproject_user_client_ui_RichTextArea__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_RichTextArea__() {
   this.$ctor__org_gwtproject_user_client_ui_FocusWidget__();
   this.$init___$p_org_gwtproject_user_client_ui_RichTextArea();
@@ -51,148 +44,84 @@ class RichTextArea extends FocusWidget {
   this.m_setStyleName__java_lang_String("gwt-RichTextArea");
   this.f_impl__org_gwtproject_user_client_ui_RichTextArea_.m_setOwner__org_gwtproject_event_logical_shared_HasInitializeHandlers(this);
  }
- /**
-  * @override
-  * @param {InitializeHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addInitializeHandler__org_gwtproject_event_logical_shared_InitializeHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addInitializeHandler__org_gwtproject_event_logical_shared_InitializeHandler(/** InitializeHandler */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, InitializeEvent.m_getType__());
  }
- /**
-  * @return {BasicFormatter}
-  * @public
-  * @deprecated
-  */
+ /** @return {BasicFormatter} @deprecated */
  m_getBasicFormatter__() {
   return this.m_getFormatter__();
  }
- /**
-  * @return {ExtendedFormatter}
-  * @public
-  * @deprecated
-  */
+ /** @return {ExtendedFormatter} @deprecated */
  m_getExtendedFormatter__() {
   return this.m_getFormatter__();
  }
- /**
-  * @return {Formatter}
-  * @public
-  */
+ /** @return {Formatter} */
  m_getFormatter__() {
   if (Formatter.$isInstance(this.f_impl__org_gwtproject_user_client_ui_RichTextArea_)) {
-   return /**@type {Formatter} */ ($Casts.$to(this.f_impl__org_gwtproject_user_client_ui_RichTextArea_, Formatter));
+   return /**@type {Formatter}*/ ($Casts.$to(this.f_impl__org_gwtproject_user_client_ui_RichTextArea_, Formatter));
   }
   return null;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getHTML__() {
   return this.f_impl__org_gwtproject_user_client_ui_RichTextArea_.m_getHTML__();
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getText__() {
   return this.f_impl__org_gwtproject_user_client_ui_RichTextArea_.m_getText__();
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isEnabled__() {
   return this.f_impl__org_gwtproject_user_client_ui_RichTextArea_.m_isEnabled__();
  }
- /**
-  * @override
-  * @param {boolean} enabled
-  * @public
-  */
- m_setEnabled__boolean(enabled) {
+ /** @override */
+ m_setEnabled__boolean(/** boolean */ enabled) {
   this.f_impl__org_gwtproject_user_client_ui_RichTextArea_.m_setEnabled__boolean(enabled);
  }
- /**
-  * @override
-  * @param {boolean} focused
-  * @public
-  */
- m_setFocus__boolean(focused) {
+ /** @override */
+ m_setFocus__boolean(/** boolean */ focused) {
   if (this.m_isAttached__()) {
    this.f_impl__org_gwtproject_user_client_ui_RichTextArea_.m_setFocus__boolean(focused);
   }
  }
- /**
-  * @override
-  * @param {?string} html
-  * @public
-  */
- m_setHTML__java_lang_String(html) {
+ /** @override */
+ m_setHTML__java_lang_String(/** ?string */ html) {
   this.f_impl__org_gwtproject_user_client_ui_RichTextArea_.m_setHTML__java_lang_String(html);
  }
- /**
-  * @override
-  * @param {SafeHtml} html
-  * @public
-  */
- m_setHTML__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ /** @override */
+ m_setHTML__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   this.m_setHTML__java_lang_String(html.m_asString__());
  }
- /**
-  * @override
-  * @param {?string} text
-  * @public
-  */
- m_setText__java_lang_String(text) {
+ /** @override */
+ m_setText__java_lang_String(/** ?string */ text) {
   this.f_impl__org_gwtproject_user_client_ui_RichTextArea_.m_setText__java_lang_String(text);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onAttach__() {
   super.m_onAttach__();
   this.f_impl__org_gwtproject_user_client_ui_RichTextArea_.m_initElement__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onDetach__() {
   super.m_onDetach__();
   this.f_impl__org_gwtproject_user_client_ui_RichTextArea_.m_uninitElement__();
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_RichTextArea() {
   this.f_impl__org_gwtproject_user_client_ui_RichTextArea_ = RichTextAreaImplMozilla.$create__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RichTextArea.$clinit = () =>{};
   RichTextArea.$loadModules();
   FocusWidget.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof RichTextArea;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   InitializeEvent = goog.module.get('org.gwtproject.event.logical.shared.InitializeEvent$impl');
   Formatter = goog.module.get('org.gwtproject.user.client.ui.RichTextArea.Formatter$impl');

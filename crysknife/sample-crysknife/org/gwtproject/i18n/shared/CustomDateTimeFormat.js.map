@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CustomDateTimeFormat.impl.java.js",
-"lineCount":14,
-"mappings":"A;;;;;;;MAsBiB,oB;;;;QAAA,O;EAAAA,uC;EAAAA;",
+"lineCount":12,
+"mappings":"A;;;;;;;MAsBiB,oB;;QAAA,O;EAAAA,uC;EAAAA;",
 "sources":["CustomDateTimeFormat.java"],
 "names":["org.gwtproject.i18n.shared.CustomDateTimeFormat.<clinit>"]
 }

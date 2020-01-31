@@ -17,65 +17,40 @@ let Window = goog.forwardDeclare('org.gwtproject.user.window.client.Window$impl'
  * @implements {HasResizeHandlers}
   */
 class WindowHandlers extends SimpleEventBus {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!WindowHandlers}
-  * @public
-  */
+ /** @return {!WindowHandlers} */
  static $create__() {
   WindowHandlers.$clinit();
   let $instance = new WindowHandlers();
   $instance.$ctor__org_gwtproject_user_window_client_Window_WindowHandlers__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_window_client_Window_WindowHandlers__() {
   this.$ctor__org_gwtproject_event_shared_SimpleEventBus__();
  }
- /**
-  * @override
-  * @param {CloseHandler<Window>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addCloseHandler__org_gwtproject_event_logical_shared_CloseHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addCloseHandler__org_gwtproject_event_logical_shared_CloseHandler(/** CloseHandler<Window> */ handler) {
   return this.m_addHandler__org_gwtproject_event_shared_Event_Type__java_lang_Object(CloseEvent.m_getType__(), handler);
  }
- /**
-  * @override
-  * @param {ResizeHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addResizeHandler__org_gwtproject_event_logical_shared_ResizeHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addResizeHandler__org_gwtproject_event_logical_shared_ResizeHandler(/** ResizeHandler */ handler) {
   return this.m_addHandler__org_gwtproject_event_shared_Event_Type__java_lang_Object(ResizeEvent.m_getType__(), handler);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   WindowHandlers.$clinit = () =>{};
   WindowHandlers.$loadModules();
   SimpleEventBus.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof WindowHandlers;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   CloseEvent = goog.module.get('org.gwtproject.event.logical.shared.CloseEvent$impl');
   ResizeEvent = goog.module.get('org.gwtproject.event.logical.shared.ResizeEvent$impl');

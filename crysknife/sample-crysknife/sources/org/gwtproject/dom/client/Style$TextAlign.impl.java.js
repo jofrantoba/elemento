@@ -9,59 +9,38 @@ let TextAlign = goog.forwardDeclare('org.gwtproject.dom.style.shared.TextAlign$i
  * @deprecated
   */
 class Style_TextAlign extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!Style_TextAlign}
-  * @public
-  */
+ /** @return {!Style_TextAlign} */
  static $create__() {
   Style_TextAlign.$clinit();
   let $instance = new Style_TextAlign();
   $instance.$ctor__org_gwtproject_dom_client_Style_TextAlign__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_dom_client_Style_TextAlign__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {TextAlign}
-  * @public
-  */
+ /** @return {TextAlign} */
  static get f_CENTER__org_gwtproject_dom_client_Style_TextAlign() {
   return (Style_TextAlign.$clinit(), Style_TextAlign.$f_CENTER__org_gwtproject_dom_client_Style_TextAlign);
  }
- /**
-  * @return {TextAlign}
-  * @public
-  */
+ /** @return {TextAlign} */
  static get f_JUSTIFY__org_gwtproject_dom_client_Style_TextAlign() {
   return (Style_TextAlign.$clinit(), Style_TextAlign.$f_JUSTIFY__org_gwtproject_dom_client_Style_TextAlign);
  }
- /**
-  * @return {TextAlign}
-  * @public
-  */
+ /** @return {TextAlign} */
  static get f_LEFT__org_gwtproject_dom_client_Style_TextAlign() {
   return (Style_TextAlign.$clinit(), Style_TextAlign.$f_LEFT__org_gwtproject_dom_client_Style_TextAlign);
  }
- /**
-  * @return {TextAlign}
-  * @public
-  */
+ /** @return {TextAlign} */
  static get f_RIGHT__org_gwtproject_dom_client_Style_TextAlign() {
   return (Style_TextAlign.$clinit(), Style_TextAlign.$f_RIGHT__org_gwtproject_dom_client_Style_TextAlign);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Style_TextAlign.$clinit = () =>{};
   Style_TextAlign.$loadModules();
@@ -71,17 +50,11 @@ class Style_TextAlign extends j_l_Object {
   Style_TextAlign.$f_LEFT__org_gwtproject_dom_client_Style_TextAlign = TextAlign.f_LEFT__org_gwtproject_dom_style_shared_TextAlign;
   Style_TextAlign.$f_RIGHT__org_gwtproject_dom_client_Style_TextAlign = TextAlign.f_RIGHT__org_gwtproject_dom_style_shared_TextAlign;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Style_TextAlign;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   TextAlign = goog.module.get('org.gwtproject.dom.style.shared.TextAlign$impl');
  }
@@ -89,13 +62,13 @@ class Style_TextAlign extends j_l_Object {
 }
 $Util.$setClassMetadata(Style_TextAlign, 'org.gwtproject.dom.client.Style$TextAlign');
 
-/** @private {TextAlign} */
+/**@private {TextAlign}*/
 Style_TextAlign.$f_CENTER__org_gwtproject_dom_client_Style_TextAlign;
-/** @private {TextAlign} */
+/**@private {TextAlign}*/
 Style_TextAlign.$f_JUSTIFY__org_gwtproject_dom_client_Style_TextAlign;
-/** @private {TextAlign} */
+/**@private {TextAlign}*/
 Style_TextAlign.$f_LEFT__org_gwtproject_dom_client_Style_TextAlign;
-/** @private {TextAlign} */
+/**@private {TextAlign}*/
 Style_TextAlign.$f_RIGHT__org_gwtproject_dom_client_Style_TextAlign;
 
 exports = Style_TextAlign; 

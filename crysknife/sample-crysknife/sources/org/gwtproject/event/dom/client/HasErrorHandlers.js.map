@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasErrorHandlers.impl.java.js",
-"lineCount":26,
-"mappings":"A;;;;;;;;;;;;MAuBiB,gB;;;;;;;CAQK,+D,CAA6BA,O;;;;QARlC,O;EAAAC,mC;EAAAA;",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;;;MAuBiB,gB;;CAQK,+D,qBAA6BA,O;;QARlC,O;EAAAC,mC;EAAAA;",
 "sources":["HasErrorHandlers.java"],
 "names":["handler","org.gwtproject.event.dom.client.HasErrorHandlers.<clinit>"]
 }

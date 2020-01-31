@@ -12,16 +12,11 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {AbstractRenderer<?string>}
   */
 class PassthroughRenderer extends AbstractRenderer {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {Renderer<?string>}
-  * @public
-  */
+ /** @return {Renderer<?string>} */
  static m_instance__() {
   PassthroughRenderer.$clinit();
   if ($Equality.$same(PassthroughRenderer.f_INSTANCE__org_gwtproject_text_shared_testing_PassthroughRenderer_, null)) {
@@ -29,59 +24,37 @@ class PassthroughRenderer extends AbstractRenderer {
   }
   return PassthroughRenderer.f_INSTANCE__org_gwtproject_text_shared_testing_PassthroughRenderer_;
  }
- /**
-  * @return {!PassthroughRenderer}
-  * @public
-  */
+ /** @return {!PassthroughRenderer} */
  static $create__() {
   PassthroughRenderer.$clinit();
   let $instance = new PassthroughRenderer();
   $instance.$ctor__org_gwtproject_text_shared_testing_PassthroughRenderer__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_text_shared_testing_PassthroughRenderer__() {
   this.$ctor__org_gwtproject_text_shared_AbstractRenderer__();
  }
- /**
-  * @param {?string} object
-  * @return {?string}
-  * @public
-  */
- m_render__java_lang_String(object) {
+ /** @return {?string} */
+ m_render__java_lang_String(/** ?string */ object) {
   return object;
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @return {?string}
-  * @public
-  */
- m_render__java_lang_Object(arg0) {
-  return this.m_render__java_lang_String(/**@type {?string} */ ($Casts.$to(arg0, j_l_String)));
+ //Bridge method.
+ /** @override @return {?string} */
+ m_render__java_lang_Object(/** * */ arg0) {
+  return this.m_render__java_lang_String(/**@type {?string}*/ ($Casts.$to(arg0, j_l_String)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   PassthroughRenderer.$clinit = () =>{};
   PassthroughRenderer.$loadModules();
   AbstractRenderer.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof PassthroughRenderer;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -91,7 +64,7 @@ class PassthroughRenderer extends AbstractRenderer {
 }
 $Util.$setClassMetadata(PassthroughRenderer, 'org.gwtproject.text.shared.testing.PassthroughRenderer');
 
-/** @public {PassthroughRenderer} */
+/**@type {PassthroughRenderer}*/
 PassthroughRenderer.f_INSTANCE__org_gwtproject_text_shared_testing_PassthroughRenderer_;
 
 exports = PassthroughRenderer; 

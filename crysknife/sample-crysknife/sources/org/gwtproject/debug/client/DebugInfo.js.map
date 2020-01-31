@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DebugInfo.impl.java.js",
-"lineCount":117,
-"mappings":"A;;;;;;;MAuBa,S;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,oB;EAAAA,gC;EAAAA,2D;EAAAA,iB;;;;;CAAA,8C;EAAAC,iC;;;;;;QAaU,uB;EAAAC,oB;EACnBA,4E;;;;;;QAMmB,oB;EAAAC,oB;EACnBA,yE;;;;;;QAOoB,uB;EAAAC,oB;EACpBA,6E;;;;;;QAYoB,oB;EAAAC,oB;EACpBA,8F;;;;;;;QAeiB,gD,CAA2BC,S,EAAmBC,U;EAA9CC,oB;EACjBA,iF;EACAA,mF;;;;;;QAMiB,oC,CAAwBC,M;EAAxBC,oB;EACjBA,2E;;;;;QAlES,O;EAAAC,4B;EAAAA,yB;EAAAA,qB;EAIXA,+I;EACAA,4E;EACAA,6E;;;;;;;;;;;;;;;;;;;;AAJA;UAA2B,gEAA3B,gB;AAFW;UAIW,uDAJX,C;AAAA;UAKW,0DALX,C;AAAA;UAMY,2DANZ;",
+"lineCount":83,
+"mappings":"A;;;;;;;MAuBa,S;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,oB;EAAAA,gC;EAAAA,2D;EAAAA,iB;;;CAAA,8C;EAAAC,iC;;;QAaU,uB;EAAAC,oB;EACnBA,4E;;;QAMmB,oB;EAAAC,oB;EACnBA,yE;;;QAOoB,uB;EAAAC,oB;EACpBA,6E;;;QAYoB,oB;EAAAC,oB;EACpBA,8F;;;QAeiB,gD,gBAA2BC,S,iBAAmBC,U;EAA9CC,oB;EACjBA,iF;EACAA,mF;;;QAMiB,oC,gBAAwBC,M;EAAxBC,oB;EACjBA,2E;;;QAlES,O;EAAAC,4B;EAAAA,yB;EAAAA,qB;EAIXA,+I;EACAA,4E;EACAA,6E;;;;;;;;;;;;;;AAJA;UAA2B,gEAA3B,gB;AAFW;UAIW,uDAJX,C;AAAA;UAKW,0DALX,C;AAAA;UAMY,2DANZ;",
 "sources":["DebugInfo.java"],
 "names":["org.gwtproject.debug.client.DebugInfo.<synthetic: ctor_js>","org.gwtproject.debug.client.DebugInfo.<synthetic: ctor_create>","org.gwtproject.debug.client.DebugInfo.<init>","org.gwtproject.debug.client.DebugInfo.getDebugIdAttribute","org.gwtproject.debug.client.DebugInfo.getDebugIdPrefix","org.gwtproject.debug.client.DebugInfo.isDebugIdAsProperty","org.gwtproject.debug.client.DebugInfo.isDebugIdEnabled","attribute","asProperty","org.gwtproject.debug.client.DebugInfo.setDebugIdAttribute","prefix","org.gwtproject.debug.client.DebugInfo.setDebugIdPrefix","org.gwtproject.debug.client.DebugInfo.<clinit>"]
 }

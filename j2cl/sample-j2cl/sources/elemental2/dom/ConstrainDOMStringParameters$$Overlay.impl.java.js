@@ -9,78 +9,47 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Overlay = goog.forwardDeclare('jsinterop.base.JsPropertyMap.$Overlay$impl');
 
 class ConstrainDOMStringParameters_$Overlay {
- /**
-  * @return {ConstrainDOMStringParameters}
-  * @public
-  */
+ /** @return {ConstrainDOMStringParameters} */
  static m_create__() {
   ConstrainDOMStringParameters_$Overlay.$clinit();
-  return /**@type {ConstrainDOMStringParameters} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
+  return /**@type {ConstrainDOMStringParameters}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
  }
- /**
-  * @param {!ConstrainDOMStringParameters} $thisArg
-  * @param {Array<?string>} exact
-  * @public
-  */
- static m_setExact__$devirt__elemental2_dom_ConstrainDOMStringParameters__elemental2_core_JsArray($thisArg, exact) {
+ 
+ static m_setExact__$devirt__elemental2_dom_ConstrainDOMStringParameters__elemental2_core_JsArray(/** !ConstrainDOMStringParameters */ $thisArg, /** Array<?string> */ exact) {
   ConstrainDOMStringParameters_$Overlay.$clinit();
-  $thisArg.exact = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(exact));
+  $thisArg.exact = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(exact));
  }
- /**
-  * @param {!ConstrainDOMStringParameters} $thisArg
-  * @param {?string} exact
-  * @public
-  */
- static m_setExact__$devirt__elemental2_dom_ConstrainDOMStringParameters__java_lang_String($thisArg, exact) {
+ 
+ static m_setExact__$devirt__elemental2_dom_ConstrainDOMStringParameters__java_lang_String(/** !ConstrainDOMStringParameters */ $thisArg, /** ?string */ exact) {
   ConstrainDOMStringParameters_$Overlay.$clinit();
-  $thisArg.exact = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(exact));
+  $thisArg.exact = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(exact));
  }
- /**
-  * @param {!ConstrainDOMStringParameters} $thisArg
-  * @param {Array<?string>} exact
-  * @public
-  */
- static m_setExact__$devirt__elemental2_dom_ConstrainDOMStringParameters__arrayOf_java_lang_String($thisArg, exact) {
+ 
+ static m_setExact__$devirt__elemental2_dom_ConstrainDOMStringParameters__arrayOf_java_lang_String(/** !ConstrainDOMStringParameters */ $thisArg, /** Array<?string> */ exact) {
   ConstrainDOMStringParameters_$Overlay.$clinit();
-  ConstrainDOMStringParameters_$Overlay.m_setExact__$devirt__elemental2_dom_ConstrainDOMStringParameters__elemental2_core_JsArray($thisArg, /**@type {Array<?string>} */ (Js.m_uncheckedCast__java_lang_Object(exact)));
+  ConstrainDOMStringParameters_$Overlay.m_setExact__$devirt__elemental2_dom_ConstrainDOMStringParameters__elemental2_core_JsArray($thisArg, /**@type {Array<?string>}*/ (Js.m_uncheckedCast__java_lang_Object(exact)));
  }
- /**
-  * @param {!ConstrainDOMStringParameters} $thisArg
-  * @param {Array<?string>} ideal
-  * @public
-  */
- static m_setIdeal__$devirt__elemental2_dom_ConstrainDOMStringParameters__elemental2_core_JsArray($thisArg, ideal) {
+ 
+ static m_setIdeal__$devirt__elemental2_dom_ConstrainDOMStringParameters__elemental2_core_JsArray(/** !ConstrainDOMStringParameters */ $thisArg, /** Array<?string> */ ideal) {
   ConstrainDOMStringParameters_$Overlay.$clinit();
-  $thisArg.ideal = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(ideal));
+  $thisArg.ideal = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(ideal));
  }
- /**
-  * @param {!ConstrainDOMStringParameters} $thisArg
-  * @param {?string} ideal
-  * @public
-  */
- static m_setIdeal__$devirt__elemental2_dom_ConstrainDOMStringParameters__java_lang_String($thisArg, ideal) {
+ 
+ static m_setIdeal__$devirt__elemental2_dom_ConstrainDOMStringParameters__java_lang_String(/** !ConstrainDOMStringParameters */ $thisArg, /** ?string */ ideal) {
   ConstrainDOMStringParameters_$Overlay.$clinit();
-  $thisArg.ideal = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(ideal));
+  $thisArg.ideal = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(ideal));
  }
- /**
-  * @param {!ConstrainDOMStringParameters} $thisArg
-  * @param {Array<?string>} ideal
-  * @public
-  */
- static m_setIdeal__$devirt__elemental2_dom_ConstrainDOMStringParameters__arrayOf_java_lang_String($thisArg, ideal) {
+ 
+ static m_setIdeal__$devirt__elemental2_dom_ConstrainDOMStringParameters__arrayOf_java_lang_String(/** !ConstrainDOMStringParameters */ $thisArg, /** Array<?string> */ ideal) {
   ConstrainDOMStringParameters_$Overlay.$clinit();
-  ConstrainDOMStringParameters_$Overlay.m_setIdeal__$devirt__elemental2_dom_ConstrainDOMStringParameters__elemental2_core_JsArray($thisArg, /**@type {Array<?string>} */ (Js.m_uncheckedCast__java_lang_Object(ideal)));
+  ConstrainDOMStringParameters_$Overlay.m_setIdeal__$devirt__elemental2_dom_ConstrainDOMStringParameters__elemental2_core_JsArray($thisArg, /**@type {Array<?string>}*/ (Js.m_uncheckedCast__java_lang_Object(ideal)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ConstrainDOMStringParameters_$Overlay.$clinit = () =>{};
   ConstrainDOMStringParameters_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');

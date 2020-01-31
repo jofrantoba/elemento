@@ -11,44 +11,27 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.resources.client.CssRes
  * @extends {Annotation}
  */
 class Shared {
- /**
-  * @param {?function():Class<?>} fn
-  * @return {Shared}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {Shared} */
+ static $adapt(/** ?function():Class<?> */ fn) {
   Shared.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Shared.$clinit = () =>{};
   Shared.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_resources_client_CssResource_Shared = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_resources_client_CssResource_Shared = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_resources_client_CssResource_Shared;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.resources.client.CssResource.Shared.$LambdaAdaptor$impl');
  }

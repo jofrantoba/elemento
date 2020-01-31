@@ -21,108 +21,70 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {HasOneWidget}
   */
 class SimplePanel extends Panel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Widget} */
+  /**@type {Widget}*/
   this.f_widget__org_gwtproject_user_client_ui_SimplePanel;
  }
- /**
-  * Factory method corresponding to constructor 'SimplePanel()'.
-  * @return {!SimplePanel}
-  * @public
-  */
+ //Factory method corresponding to constructor 'SimplePanel()'.
+ /** @return {!SimplePanel} */
  static $create__() {
   SimplePanel.$clinit();
   let $instance = new SimplePanel();
   $instance.$ctor__org_gwtproject_user_client_ui_SimplePanel__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'SimplePanel()'.
-  * @public
-  */
+ //Initialization from constructor 'SimplePanel()'.
+ 
  $ctor__org_gwtproject_user_client_ui_SimplePanel__() {
   this.$ctor__org_gwtproject_user_client_ui_SimplePanel__org_gwtproject_dom_client_Element(DOM.m_createDiv__());
  }
- /**
-  * Factory method corresponding to constructor 'SimplePanel(Widget)'.
-  * @param {Widget} child
-  * @return {!SimplePanel}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_Widget(child) {
+ //Factory method corresponding to constructor 'SimplePanel(Widget)'.
+ /** @return {!SimplePanel} */
+ static $create__org_gwtproject_user_client_ui_Widget(/** Widget */ child) {
   SimplePanel.$clinit();
   let $instance = new SimplePanel();
   $instance.$ctor__org_gwtproject_user_client_ui_SimplePanel__org_gwtproject_user_client_ui_Widget(child);
   return $instance;
  }
- /**
-  * Initialization from constructor 'SimplePanel(Widget)'.
-  * @param {Widget} child
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_SimplePanel__org_gwtproject_user_client_ui_Widget(child) {
+ //Initialization from constructor 'SimplePanel(Widget)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_SimplePanel__org_gwtproject_user_client_ui_Widget(/** Widget */ child) {
   this.$ctor__org_gwtproject_user_client_ui_SimplePanel__();
   this.m_setWidget__org_gwtproject_user_client_ui_Widget(child);
  }
- /**
-  * Factory method corresponding to constructor 'SimplePanel(Element)'.
-  * @param {Object} elem
-  * @return {!SimplePanel}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_Element(elem) {
+ //Factory method corresponding to constructor 'SimplePanel(Element)'.
+ /** @return {!SimplePanel} */
+ static $create__org_gwtproject_dom_client_Element(/** Object */ elem) {
   SimplePanel.$clinit();
   let $instance = new SimplePanel();
   $instance.$ctor__org_gwtproject_user_client_ui_SimplePanel__org_gwtproject_dom_client_Element(elem);
   return $instance;
  }
- /**
-  * Initialization from constructor 'SimplePanel(Element)'.
-  * @param {Object} elem
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_SimplePanel__org_gwtproject_dom_client_Element(elem) {
+ //Initialization from constructor 'SimplePanel(Element)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_SimplePanel__org_gwtproject_dom_client_Element(/** Object */ elem) {
   this.$ctor__org_gwtproject_user_client_ui_Panel__();
   this.m_setElement__org_gwtproject_dom_client_Element(elem);
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override */
+ m_add__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   if (!$Equality.$same(this.m_getWidget__(), null)) {
    throw $Exceptions.toJs(IllegalStateException.$create__java_lang_String("SimplePanel can only contain one child widget"));
   }
   this.m_setWidget__org_gwtproject_user_client_ui_Widget(w);
  }
- /**
-  * @override
-  * @return {Widget}
-  * @public
-  */
+ /** @override @return {Widget} */
  m_getWidget__() {
   return this.f_widget__org_gwtproject_user_client_ui_SimplePanel;
  }
- /**
-  * @override
-  * @return {Iterator<Widget>}
-  * @public
-  */
+ /** @override @return {Iterator<Widget>} */
  m_iterator__() {
   return $1.$create__org_gwtproject_user_client_ui_SimplePanel(this);
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   if (!$Equality.$same(this.f_widget__org_gwtproject_user_client_ui_SimplePanel, w)) {
    return false;
   }
@@ -134,20 +96,12 @@ class SimplePanel extends Panel {
   }
   return true;
  }
- /**
-  * @override
-  * @param {IsWidget} w
-  * @public
-  */
- m_setWidget__org_gwtproject_user_client_ui_IsWidget(w) {
+ /** @override */
+ m_setWidget__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ w) {
   this.m_setWidget__org_gwtproject_user_client_ui_Widget(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(w));
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @public
-  */
- m_setWidget__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override */
+ m_setWidget__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   if ($Equality.$same(w, this.f_widget__org_gwtproject_user_client_ui_SimplePanel)) {
    return;
   }
@@ -163,50 +117,31 @@ class SimplePanel extends Panel {
    this.m_adopt__org_gwtproject_user_client_ui_Widget(w);
   }
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getContainerElement__() {
   return this.m_getElement__();
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SimplePanel.$clinit = () =>{};
   SimplePanel.$loadModules();
   Panel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SimplePanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');
   Iterable = goog.module.get('java.lang.Iterable$impl');

@@ -16,16 +16,11 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {Parser<?number>}
   */
 class DoubleParser extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {Parser<?number>}
-  * @public
-  */
+ /** @return {Parser<?number>} */
  static m_instance__() {
   DoubleParser.$clinit();
   if ($Equality.$same(DoubleParser.f_INSTANCE__org_gwtproject_text_client_DoubleParser_, null)) {
@@ -33,29 +28,19 @@ class DoubleParser extends j_l_Object {
   }
   return DoubleParser.f_INSTANCE__org_gwtproject_text_client_DoubleParser_;
  }
- /**
-  * @return {!DoubleParser}
-  * @public
-  */
+ /** @return {!DoubleParser} */
  static $create__() {
   DoubleParser.$clinit();
   let $instance = new DoubleParser();
   $instance.$ctor__org_gwtproject_text_client_DoubleParser__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_text_client_DoubleParser__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {(CharSequence|string)} object
-  * @return {?number}
-  * @public
-  */
- m_parse__java_lang_CharSequence(object) {
+ /** @override @return {?number} */
+ m_parse__java_lang_CharSequence(/** (CharSequence|string) */ object) {
   if ($Equality.$same("", $CharSequences.m_toString__java_lang_CharSequence(object))) {
    return null;
   } else {
@@ -64,7 +49,7 @@ class DoubleParser extends j_l_Object {
    } catch (__$exc) {
     __$exc = $Exceptions.toJava(__$exc);
     if (NumberFormatException.$isInstance(__$exc)) {
-     let var3 = /**@type {NumberFormatException} */ (__$exc);
+     let var3 = /**@type {NumberFormatException}*/ (__$exc);
      throw $Exceptions.toJs(ParseException.$create__java_lang_String__int(var3.m_getMessage__(), 0));
     } else {
      throw $Exceptions.toJs(__$exc);
@@ -72,25 +57,17 @@ class DoubleParser extends j_l_Object {
    }
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DoubleParser.$clinit = () =>{};
   DoubleParser.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DoubleParser;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   NumberFormatException = goog.module.get('java.lang.NumberFormatException$impl');
   ParseException = goog.module.get('java.text.ParseException$impl');
@@ -105,7 +82,7 @@ $Util.$setClassMetadata(DoubleParser, 'org.gwtproject.text.client.DoubleParser')
 
 Parser.$markImplementor(DoubleParser);
 
-/** @public {DoubleParser} */
+/**@type {DoubleParser}*/
 DoubleParser.f_INSTANCE__org_gwtproject_text_client_DoubleParser_;
 
 exports = DoubleParser; 

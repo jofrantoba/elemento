@@ -13,43 +13,25 @@ let SafeHtml = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHtml$impl
  * @extends {HasSafeHtml}
  */
 class HasDirectionalSafeHtml {
- /**
-  * @abstract
-  * @param {SafeHtml} html
-  * @param {Direction} dir
-  * @public
-  */
- m_setHTML__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(html, dir) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_setHTML__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(/** SafeHtml */ html, /** Direction */ dir) {}
+ 
  static $clinit() {
   HasDirectionalSafeHtml.$clinit = () =>{};
   HasDirectionalSafeHtml.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasDirectionalText.$markImplementor(classConstructor);
-  HasSafeHtml.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_HasDirectionalSafeHtml = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasDirectionalText.$markImplementor(ctor);
+  HasSafeHtml.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_HasDirectionalSafeHtml = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_HasDirectionalSafeHtml;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -15,51 +15,34 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {Iterator<Node>}
   */
 class JsArrayNodeIterator extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Node} */
+  /**@type {Node}*/
   this.f_parent__org_jboss_elemento_Elements_JsArrayNodeIterator_;
-  /** @public {Node} */
+  /**@type {Node}*/
   this.f_last__org_jboss_elemento_Elements_JsArrayNodeIterator_;
-  /** @public {Node} */
+  /**@type {Node}*/
   this.f_next__org_jboss_elemento_Elements_JsArrayNodeIterator_;
  }
- /**
-  * @param {Node} parent
-  * @return {!JsArrayNodeIterator}
-  * @public
-  */
- static $create__elemental2_dom_Node(parent) {
+ /** @return {!JsArrayNodeIterator} */
+ static $create__elemental2_dom_Node(/** Node */ parent) {
   JsArrayNodeIterator.$clinit();
   let $instance = new JsArrayNodeIterator();
   $instance.$ctor__org_jboss_elemento_Elements_JsArrayNodeIterator__elemental2_dom_Node(parent);
   return $instance;
  }
- /**
-  * @param {Node} parent
-  * @public
-  */
- $ctor__org_jboss_elemento_Elements_JsArrayNodeIterator__elemental2_dom_Node(parent) {
+ 
+ $ctor__org_jboss_elemento_Elements_JsArrayNodeIterator__elemental2_dom_Node(/** Node */ parent) {
   this.$ctor__java_lang_Object__();
   this.f_parent__org_jboss_elemento_Elements_JsArrayNodeIterator_ = parent;
   this.f_next__org_jboss_elemento_Elements_JsArrayNodeIterator_ = parent.firstChild;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_hasNext__() {
   return !$Equality.$same(this.f_next__org_jboss_elemento_Elements_JsArrayNodeIterator_, null);
  }
- /**
-  * @override
-  * @return {Node}
-  * @public
-  */
+ /** @override @return {Node} */
  m_next__() {
   if (!this.m_hasNext__()) {
    throw $Exceptions.toJs(NoSuchElementException.$create__());
@@ -68,10 +51,7 @@ class JsArrayNodeIterator extends j_l_Object {
   this.f_next__org_jboss_elemento_Elements_JsArrayNodeIterator_ = this.f_last__org_jboss_elemento_Elements_JsArrayNodeIterator_.nextSibling;
   return this.f_last__org_jboss_elemento_Elements_JsArrayNodeIterator_;
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_remove__() {
   if ($Equality.$same(this.f_last__org_jboss_elemento_Elements_JsArrayNodeIterator_, null)) {
    throw $Exceptions.toJs(IllegalStateException.$create__());
@@ -79,35 +59,23 @@ class JsArrayNodeIterator extends j_l_Object {
   this.f_parent__org_jboss_elemento_Elements_JsArrayNodeIterator_.removeChild(this.f_last__org_jboss_elemento_Elements_JsArrayNodeIterator_);
   this.f_last__org_jboss_elemento_Elements_JsArrayNodeIterator_ = null;
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEachRemaining__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEachRemaining__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterator.m_forEachRemaining__$default__java_util_Iterator__java_util_function_Consumer(this, arg0);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   JsArrayNodeIterator.$clinit = () =>{};
   JsArrayNodeIterator.$loadModules();
   j_l_Object.$clinit();
   Iterator.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof JsArrayNodeIterator;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');
   NoSuchElementException = goog.module.get('java.util.NoSuchElementException$impl');

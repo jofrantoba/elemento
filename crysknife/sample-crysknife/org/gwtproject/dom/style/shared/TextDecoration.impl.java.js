@@ -19,87 +19,52 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @implements {HasCssName}
   */
 class TextDecoration extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_dom_style_shared_TextDecoration__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_dom_style_shared_TextDecoration__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @abstract
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @override @return {?string} */
  m_getCssName__() {}
- /**
-  * @param {string} name
-  * @return {!TextDecoration}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!TextDecoration} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   TextDecoration.$clinit();
   if ($Equality.$same(TextDecoration.f_namesToValuesMap__org_gwtproject_dom_style_shared_TextDecoration_, null)) {
    TextDecoration.f_namesToValuesMap__org_gwtproject_dom_style_shared_TextDecoration_ = $Enums.createMapFromValues(TextDecoration.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, TextDecoration.f_namesToValuesMap__org_gwtproject_dom_style_shared_TextDecoration_);
  }
- /**
-  * @return {!Array<!TextDecoration>}
-  * @public
-  */
+ /** @return {!Array<!TextDecoration>} */
  static m_values__() {
   TextDecoration.$clinit();
-  return /**@type {!Array<TextDecoration>} */ ($Arrays.$init([TextDecoration.$f_BLINK__org_gwtproject_dom_style_shared_TextDecoration, TextDecoration.$f_LINE_THROUGH__org_gwtproject_dom_style_shared_TextDecoration, TextDecoration.$f_NONE__org_gwtproject_dom_style_shared_TextDecoration, TextDecoration.$f_OVERLINE__org_gwtproject_dom_style_shared_TextDecoration, TextDecoration.$f_UNDERLINE__org_gwtproject_dom_style_shared_TextDecoration], TextDecoration));
+  return /**@type {!Array<TextDecoration>}*/ ($Arrays.$init([TextDecoration.$f_BLINK__org_gwtproject_dom_style_shared_TextDecoration, TextDecoration.$f_LINE_THROUGH__org_gwtproject_dom_style_shared_TextDecoration, TextDecoration.$f_NONE__org_gwtproject_dom_style_shared_TextDecoration, TextDecoration.$f_OVERLINE__org_gwtproject_dom_style_shared_TextDecoration, TextDecoration.$f_UNDERLINE__org_gwtproject_dom_style_shared_TextDecoration], TextDecoration));
  }
- /**
-  * @return {!TextDecoration}
-  * @public
-  */
+ /** @return {!TextDecoration} */
  static get f_BLINK__org_gwtproject_dom_style_shared_TextDecoration() {
   return (TextDecoration.$clinit(), TextDecoration.$f_BLINK__org_gwtproject_dom_style_shared_TextDecoration);
  }
- /**
-  * @return {!TextDecoration}
-  * @public
-  */
+ /** @return {!TextDecoration} */
  static get f_LINE_THROUGH__org_gwtproject_dom_style_shared_TextDecoration() {
   return (TextDecoration.$clinit(), TextDecoration.$f_LINE_THROUGH__org_gwtproject_dom_style_shared_TextDecoration);
  }
- /**
-  * @return {!TextDecoration}
-  * @public
-  */
+ /** @return {!TextDecoration} */
  static get f_NONE__org_gwtproject_dom_style_shared_TextDecoration() {
   return (TextDecoration.$clinit(), TextDecoration.$f_NONE__org_gwtproject_dom_style_shared_TextDecoration);
  }
- /**
-  * @return {!TextDecoration}
-  * @public
-  */
+ /** @return {!TextDecoration} */
  static get f_OVERLINE__org_gwtproject_dom_style_shared_TextDecoration() {
   return (TextDecoration.$clinit(), TextDecoration.$f_OVERLINE__org_gwtproject_dom_style_shared_TextDecoration);
  }
- /**
-  * @return {!TextDecoration}
-  * @public
-  */
+ /** @return {!TextDecoration} */
  static get f_UNDERLINE__org_gwtproject_dom_style_shared_TextDecoration() {
   return (TextDecoration.$clinit(), TextDecoration.$f_UNDERLINE__org_gwtproject_dom_style_shared_TextDecoration);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TextDecoration.$clinit = () =>{};
   TextDecoration.$loadModules();
@@ -111,17 +76,11 @@ class TextDecoration extends Enum {
   TextDecoration.$f_UNDERLINE__org_gwtproject_dom_style_shared_TextDecoration = $5.$create__java_lang_String__int($Util.$makeEnumName("UNDERLINE"), TextDecoration.$ordinal$f_UNDERLINE__org_gwtproject_dom_style_shared_TextDecoration);
   TextDecoration.f_namesToValuesMap__org_gwtproject_dom_style_shared_TextDecoration_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TextDecoration;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.dom.style.shared.TextDecoration.$1$impl');
@@ -138,27 +97,27 @@ $Util.$setClassMetadataForEnum(TextDecoration, 'org.gwtproject.dom.style.shared.
 
 HasCssName.$markImplementor(TextDecoration);
 
-/** @private {!TextDecoration} */
+/**@private {!TextDecoration}*/
 TextDecoration.$f_BLINK__org_gwtproject_dom_style_shared_TextDecoration;
-/** @private {!TextDecoration} */
+/**@private {!TextDecoration}*/
 TextDecoration.$f_LINE_THROUGH__org_gwtproject_dom_style_shared_TextDecoration;
-/** @private {!TextDecoration} */
+/**@private {!TextDecoration}*/
 TextDecoration.$f_NONE__org_gwtproject_dom_style_shared_TextDecoration;
-/** @private {!TextDecoration} */
+/**@private {!TextDecoration}*/
 TextDecoration.$f_OVERLINE__org_gwtproject_dom_style_shared_TextDecoration;
-/** @private {!TextDecoration} */
+/**@private {!TextDecoration}*/
 TextDecoration.$f_UNDERLINE__org_gwtproject_dom_style_shared_TextDecoration;
-/** @public {Map<?string, !TextDecoration>} */
+/**@type {Map<?string, !TextDecoration>}*/
 TextDecoration.f_namesToValuesMap__org_gwtproject_dom_style_shared_TextDecoration_;
-/** @public {number} @const */
+/**@const {number}*/
 TextDecoration.$ordinal$f_BLINK__org_gwtproject_dom_style_shared_TextDecoration = 0;
-/** @public {number} @const */
+/**@const {number}*/
 TextDecoration.$ordinal$f_LINE_THROUGH__org_gwtproject_dom_style_shared_TextDecoration = 1;
-/** @public {number} @const */
+/**@const {number}*/
 TextDecoration.$ordinal$f_NONE__org_gwtproject_dom_style_shared_TextDecoration = 2;
-/** @public {number} @const */
+/**@const {number}*/
 TextDecoration.$ordinal$f_OVERLINE__org_gwtproject_dom_style_shared_TextDecoration = 3;
-/** @public {number} @const */
+/**@const {number}*/
 TextDecoration.$ordinal$f_UNDERLINE__org_gwtproject_dom_style_shared_TextDecoration = 4;
 
 exports = TextDecoration; 

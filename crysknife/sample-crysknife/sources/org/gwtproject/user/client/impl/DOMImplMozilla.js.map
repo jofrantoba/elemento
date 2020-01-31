@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DOMImplMozilla.impl.java.js",
-"lineCount":78,
-"mappings":"A;;;;;;;;;MAsBM,c;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,yB;EAAAA,qC;EAAAA,oE;EAAAA,iB;;;;;CAAA,uD;EAAAC,gE;;;;;QAMgB,qC;EAChBC,kE;;;;;;;;CAIQ,oD,CAAmBC,I,EAAUC,I;EACvCC,uE;EACAA,6E;;;;;;;CAIU,2D,CAA0BF,I,EAAUC,I;EAC9CE,kE;;;;;;CAIa,mB;EACbC,4B;EACAA,wF;;;;;CAGW,gF;EACXC,kE;;;;;QA5BE,O;EAAAC,iC;EAAAA,8B;EAAAA,0B;EAGFA;",
+"lineCount":53,
+"mappings":"A;;;;;;;;;MAsBM,c;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,yB;EAAAA,qC;EAAAA,oE;EAAAA,iB;;;CAAA,uD;EAAAC,gE;;;QAMgB,qC;EAChBC,kE;;;CAIQ,oD,eAAmBC,I,gBAAUC,I;EACvCC,uE;EACAA,6E;;;CAIU,2D,eAA0BF,I,gBAAUC,I;EAC9CE,kE;;;CAIa,mB;EACbC,4B;EACAA,wF;;;CAGW,gF;EACXC,kE;;;QA5BE,O;EAAAC,iC;EAAAA,8B;EAAAA,0B;EAGFA;",
 "sources":["DOMImplMozilla.java"],
 "names":["org.gwtproject.user.client.impl.DOMImplMozilla.<synthetic: ctor_js>","org.gwtproject.user.client.impl.DOMImplMozilla.<synthetic: ctor_create>","org.gwtproject.user.client.impl.DOMImplMozilla.<init>","org.gwtproject.user.client.impl.DOMImplMozilla.addMozillaCaptureEventDispatchers","elem","bits","org.gwtproject.user.client.impl.DOMImplMozilla.sinkEvents","org.gwtproject.user.client.impl.DOMImplMozilla.sinkEventsMozilla","org.gwtproject.user.client.impl.DOMImplMozilla.initEventSystem","org.gwtproject.user.client.impl.DOMImplMozilla.initSyntheticMouseUpEvents","org.gwtproject.user.client.impl.DOMImplMozilla.<clinit>"]
 }

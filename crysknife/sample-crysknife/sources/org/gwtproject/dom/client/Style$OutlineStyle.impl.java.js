@@ -9,94 +9,58 @@ let OutlineStyle = goog.forwardDeclare('org.gwtproject.dom.style.shared.OutlineS
  * @deprecated
   */
 class Style_OutlineStyle extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!Style_OutlineStyle}
-  * @public
-  */
+ /** @return {!Style_OutlineStyle} */
  static $create__() {
   Style_OutlineStyle.$clinit();
   let $instance = new Style_OutlineStyle();
   $instance.$ctor__org_gwtproject_dom_client_Style_OutlineStyle__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_dom_client_Style_OutlineStyle__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {OutlineStyle}
-  * @public
-  */
+ /** @return {OutlineStyle} */
  static get f_NONE__org_gwtproject_dom_client_Style_OutlineStyle() {
   return (Style_OutlineStyle.$clinit(), Style_OutlineStyle.$f_NONE__org_gwtproject_dom_client_Style_OutlineStyle);
  }
- /**
-  * @return {OutlineStyle}
-  * @public
-  */
+ /** @return {OutlineStyle} */
  static get f_DASHED__org_gwtproject_dom_client_Style_OutlineStyle() {
   return (Style_OutlineStyle.$clinit(), Style_OutlineStyle.$f_DASHED__org_gwtproject_dom_client_Style_OutlineStyle);
  }
- /**
-  * @return {OutlineStyle}
-  * @public
-  */
+ /** @return {OutlineStyle} */
  static get f_DOTTED__org_gwtproject_dom_client_Style_OutlineStyle() {
   return (Style_OutlineStyle.$clinit(), Style_OutlineStyle.$f_DOTTED__org_gwtproject_dom_client_Style_OutlineStyle);
  }
- /**
-  * @return {OutlineStyle}
-  * @public
-  */
+ /** @return {OutlineStyle} */
  static get f_DOUBLE__org_gwtproject_dom_client_Style_OutlineStyle() {
   return (Style_OutlineStyle.$clinit(), Style_OutlineStyle.$f_DOUBLE__org_gwtproject_dom_client_Style_OutlineStyle);
  }
- /**
-  * @return {OutlineStyle}
-  * @public
-  */
+ /** @return {OutlineStyle} */
  static get f_GROOVE__org_gwtproject_dom_client_Style_OutlineStyle() {
   return (Style_OutlineStyle.$clinit(), Style_OutlineStyle.$f_GROOVE__org_gwtproject_dom_client_Style_OutlineStyle);
  }
- /**
-  * @return {OutlineStyle}
-  * @public
-  */
+ /** @return {OutlineStyle} */
  static get f_INSET__org_gwtproject_dom_client_Style_OutlineStyle() {
   return (Style_OutlineStyle.$clinit(), Style_OutlineStyle.$f_INSET__org_gwtproject_dom_client_Style_OutlineStyle);
  }
- /**
-  * @return {OutlineStyle}
-  * @public
-  */
+ /** @return {OutlineStyle} */
  static get f_OUTSET__org_gwtproject_dom_client_Style_OutlineStyle() {
   return (Style_OutlineStyle.$clinit(), Style_OutlineStyle.$f_OUTSET__org_gwtproject_dom_client_Style_OutlineStyle);
  }
- /**
-  * @return {OutlineStyle}
-  * @public
-  */
+ /** @return {OutlineStyle} */
  static get f_RIDGE__org_gwtproject_dom_client_Style_OutlineStyle() {
   return (Style_OutlineStyle.$clinit(), Style_OutlineStyle.$f_RIDGE__org_gwtproject_dom_client_Style_OutlineStyle);
  }
- /**
-  * @return {OutlineStyle}
-  * @public
-  */
+ /** @return {OutlineStyle} */
  static get f_SOLID__org_gwtproject_dom_client_Style_OutlineStyle() {
   return (Style_OutlineStyle.$clinit(), Style_OutlineStyle.$f_SOLID__org_gwtproject_dom_client_Style_OutlineStyle);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Style_OutlineStyle.$clinit = () =>{};
   Style_OutlineStyle.$loadModules();
@@ -111,17 +75,11 @@ class Style_OutlineStyle extends j_l_Object {
   Style_OutlineStyle.$f_RIDGE__org_gwtproject_dom_client_Style_OutlineStyle = OutlineStyle.f_RIDGE__org_gwtproject_dom_style_shared_OutlineStyle;
   Style_OutlineStyle.$f_SOLID__org_gwtproject_dom_client_Style_OutlineStyle = OutlineStyle.f_SOLID__org_gwtproject_dom_style_shared_OutlineStyle;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Style_OutlineStyle;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   OutlineStyle = goog.module.get('org.gwtproject.dom.style.shared.OutlineStyle$impl');
  }
@@ -129,23 +87,23 @@ class Style_OutlineStyle extends j_l_Object {
 }
 $Util.$setClassMetadata(Style_OutlineStyle, 'org.gwtproject.dom.client.Style$OutlineStyle');
 
-/** @private {OutlineStyle} */
+/**@private {OutlineStyle}*/
 Style_OutlineStyle.$f_NONE__org_gwtproject_dom_client_Style_OutlineStyle;
-/** @private {OutlineStyle} */
+/**@private {OutlineStyle}*/
 Style_OutlineStyle.$f_DASHED__org_gwtproject_dom_client_Style_OutlineStyle;
-/** @private {OutlineStyle} */
+/**@private {OutlineStyle}*/
 Style_OutlineStyle.$f_DOTTED__org_gwtproject_dom_client_Style_OutlineStyle;
-/** @private {OutlineStyle} */
+/**@private {OutlineStyle}*/
 Style_OutlineStyle.$f_DOUBLE__org_gwtproject_dom_client_Style_OutlineStyle;
-/** @private {OutlineStyle} */
+/**@private {OutlineStyle}*/
 Style_OutlineStyle.$f_GROOVE__org_gwtproject_dom_client_Style_OutlineStyle;
-/** @private {OutlineStyle} */
+/**@private {OutlineStyle}*/
 Style_OutlineStyle.$f_INSET__org_gwtproject_dom_client_Style_OutlineStyle;
-/** @private {OutlineStyle} */
+/**@private {OutlineStyle}*/
 Style_OutlineStyle.$f_OUTSET__org_gwtproject_dom_client_Style_OutlineStyle;
-/** @private {OutlineStyle} */
+/**@private {OutlineStyle}*/
 Style_OutlineStyle.$f_RIDGE__org_gwtproject_dom_client_Style_OutlineStyle;
-/** @private {OutlineStyle} */
+/**@private {OutlineStyle}*/
 Style_OutlineStyle.$f_SOLID__org_gwtproject_dom_client_Style_OutlineStyle;
 
 exports = Style_OutlineStyle; 

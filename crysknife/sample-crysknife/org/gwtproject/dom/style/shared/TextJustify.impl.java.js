@@ -22,108 +22,64 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @implements {HasCssName}
   */
 class TextJustify extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_dom_style_shared_TextJustify__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_dom_style_shared_TextJustify__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @abstract
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @override @return {?string} */
  m_getCssName__() {}
- /**
-  * @param {string} name
-  * @return {!TextJustify}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!TextJustify} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   TextJustify.$clinit();
   if ($Equality.$same(TextJustify.f_namesToValuesMap__org_gwtproject_dom_style_shared_TextJustify_, null)) {
    TextJustify.f_namesToValuesMap__org_gwtproject_dom_style_shared_TextJustify_ = $Enums.createMapFromValues(TextJustify.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, TextJustify.f_namesToValuesMap__org_gwtproject_dom_style_shared_TextJustify_);
  }
- /**
-  * @return {!Array<!TextJustify>}
-  * @public
-  */
+ /** @return {!Array<!TextJustify>} */
  static m_values__() {
   TextJustify.$clinit();
-  return /**@type {!Array<TextJustify>} */ ($Arrays.$init([TextJustify.$f_AUTO__org_gwtproject_dom_style_shared_TextJustify, TextJustify.$f_DISTRIBUTE__org_gwtproject_dom_style_shared_TextJustify, TextJustify.$f_INTER_CHARACTER__org_gwtproject_dom_style_shared_TextJustify, TextJustify.$f_INTER_CLUSTER__org_gwtproject_dom_style_shared_TextJustify, TextJustify.$f_INTER_IDEOGRAPH__org_gwtproject_dom_style_shared_TextJustify, TextJustify.$f_INTER_WORD__org_gwtproject_dom_style_shared_TextJustify, TextJustify.$f_KASHIDA__org_gwtproject_dom_style_shared_TextJustify, TextJustify.$f_NONE__org_gwtproject_dom_style_shared_TextJustify], TextJustify));
+  return /**@type {!Array<TextJustify>}*/ ($Arrays.$init([TextJustify.$f_AUTO__org_gwtproject_dom_style_shared_TextJustify, TextJustify.$f_DISTRIBUTE__org_gwtproject_dom_style_shared_TextJustify, TextJustify.$f_INTER_CHARACTER__org_gwtproject_dom_style_shared_TextJustify, TextJustify.$f_INTER_CLUSTER__org_gwtproject_dom_style_shared_TextJustify, TextJustify.$f_INTER_IDEOGRAPH__org_gwtproject_dom_style_shared_TextJustify, TextJustify.$f_INTER_WORD__org_gwtproject_dom_style_shared_TextJustify, TextJustify.$f_KASHIDA__org_gwtproject_dom_style_shared_TextJustify, TextJustify.$f_NONE__org_gwtproject_dom_style_shared_TextJustify], TextJustify));
  }
- /**
-  * @return {!TextJustify}
-  * @public
-  */
+ /** @return {!TextJustify} */
  static get f_AUTO__org_gwtproject_dom_style_shared_TextJustify() {
   return (TextJustify.$clinit(), TextJustify.$f_AUTO__org_gwtproject_dom_style_shared_TextJustify);
  }
- /**
-  * @return {!TextJustify}
-  * @public
-  */
+ /** @return {!TextJustify} */
  static get f_DISTRIBUTE__org_gwtproject_dom_style_shared_TextJustify() {
   return (TextJustify.$clinit(), TextJustify.$f_DISTRIBUTE__org_gwtproject_dom_style_shared_TextJustify);
  }
- /**
-  * @return {!TextJustify}
-  * @public
-  */
+ /** @return {!TextJustify} */
  static get f_INTER_CHARACTER__org_gwtproject_dom_style_shared_TextJustify() {
   return (TextJustify.$clinit(), TextJustify.$f_INTER_CHARACTER__org_gwtproject_dom_style_shared_TextJustify);
  }
- /**
-  * @return {!TextJustify}
-  * @public
-  */
+ /** @return {!TextJustify} */
  static get f_INTER_CLUSTER__org_gwtproject_dom_style_shared_TextJustify() {
   return (TextJustify.$clinit(), TextJustify.$f_INTER_CLUSTER__org_gwtproject_dom_style_shared_TextJustify);
  }
- /**
-  * @return {!TextJustify}
-  * @public
-  */
+ /** @return {!TextJustify} */
  static get f_INTER_IDEOGRAPH__org_gwtproject_dom_style_shared_TextJustify() {
   return (TextJustify.$clinit(), TextJustify.$f_INTER_IDEOGRAPH__org_gwtproject_dom_style_shared_TextJustify);
  }
- /**
-  * @return {!TextJustify}
-  * @public
-  */
+ /** @return {!TextJustify} */
  static get f_INTER_WORD__org_gwtproject_dom_style_shared_TextJustify() {
   return (TextJustify.$clinit(), TextJustify.$f_INTER_WORD__org_gwtproject_dom_style_shared_TextJustify);
  }
- /**
-  * @return {!TextJustify}
-  * @public
-  */
+ /** @return {!TextJustify} */
  static get f_KASHIDA__org_gwtproject_dom_style_shared_TextJustify() {
   return (TextJustify.$clinit(), TextJustify.$f_KASHIDA__org_gwtproject_dom_style_shared_TextJustify);
  }
- /**
-  * @return {!TextJustify}
-  * @public
-  */
+ /** @return {!TextJustify} */
  static get f_NONE__org_gwtproject_dom_style_shared_TextJustify() {
   return (TextJustify.$clinit(), TextJustify.$f_NONE__org_gwtproject_dom_style_shared_TextJustify);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TextJustify.$clinit = () =>{};
   TextJustify.$loadModules();
@@ -138,17 +94,11 @@ class TextJustify extends Enum {
   TextJustify.$f_NONE__org_gwtproject_dom_style_shared_TextJustify = $8.$create__java_lang_String__int($Util.$makeEnumName("NONE"), TextJustify.$ordinal$f_NONE__org_gwtproject_dom_style_shared_TextJustify);
   TextJustify.f_namesToValuesMap__org_gwtproject_dom_style_shared_TextJustify_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TextJustify;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.dom.style.shared.TextJustify.$1$impl');
@@ -168,39 +118,39 @@ $Util.$setClassMetadataForEnum(TextJustify, 'org.gwtproject.dom.style.shared.Tex
 
 HasCssName.$markImplementor(TextJustify);
 
-/** @private {!TextJustify} */
+/**@private {!TextJustify}*/
 TextJustify.$f_AUTO__org_gwtproject_dom_style_shared_TextJustify;
-/** @private {!TextJustify} */
+/**@private {!TextJustify}*/
 TextJustify.$f_DISTRIBUTE__org_gwtproject_dom_style_shared_TextJustify;
-/** @private {!TextJustify} */
+/**@private {!TextJustify}*/
 TextJustify.$f_INTER_CHARACTER__org_gwtproject_dom_style_shared_TextJustify;
-/** @private {!TextJustify} */
+/**@private {!TextJustify}*/
 TextJustify.$f_INTER_CLUSTER__org_gwtproject_dom_style_shared_TextJustify;
-/** @private {!TextJustify} */
+/**@private {!TextJustify}*/
 TextJustify.$f_INTER_IDEOGRAPH__org_gwtproject_dom_style_shared_TextJustify;
-/** @private {!TextJustify} */
+/**@private {!TextJustify}*/
 TextJustify.$f_INTER_WORD__org_gwtproject_dom_style_shared_TextJustify;
-/** @private {!TextJustify} */
+/**@private {!TextJustify}*/
 TextJustify.$f_KASHIDA__org_gwtproject_dom_style_shared_TextJustify;
-/** @private {!TextJustify} */
+/**@private {!TextJustify}*/
 TextJustify.$f_NONE__org_gwtproject_dom_style_shared_TextJustify;
-/** @public {Map<?string, !TextJustify>} */
+/**@type {Map<?string, !TextJustify>}*/
 TextJustify.f_namesToValuesMap__org_gwtproject_dom_style_shared_TextJustify_;
-/** @public {number} @const */
+/**@const {number}*/
 TextJustify.$ordinal$f_AUTO__org_gwtproject_dom_style_shared_TextJustify = 0;
-/** @public {number} @const */
+/**@const {number}*/
 TextJustify.$ordinal$f_DISTRIBUTE__org_gwtproject_dom_style_shared_TextJustify = 1;
-/** @public {number} @const */
+/**@const {number}*/
 TextJustify.$ordinal$f_INTER_CHARACTER__org_gwtproject_dom_style_shared_TextJustify = 2;
-/** @public {number} @const */
+/**@const {number}*/
 TextJustify.$ordinal$f_INTER_CLUSTER__org_gwtproject_dom_style_shared_TextJustify = 3;
-/** @public {number} @const */
+/**@const {number}*/
 TextJustify.$ordinal$f_INTER_IDEOGRAPH__org_gwtproject_dom_style_shared_TextJustify = 4;
-/** @public {number} @const */
+/**@const {number}*/
 TextJustify.$ordinal$f_INTER_WORD__org_gwtproject_dom_style_shared_TextJustify = 5;
-/** @public {number} @const */
+/**@const {number}*/
 TextJustify.$ordinal$f_KASHIDA__org_gwtproject_dom_style_shared_TextJustify = 6;
-/** @public {number} @const */
+/**@const {number}*/
 TextJustify.$ordinal$f_NONE__org_gwtproject_dom_style_shared_TextJustify = 7;
 
 exports = TextJustify; 

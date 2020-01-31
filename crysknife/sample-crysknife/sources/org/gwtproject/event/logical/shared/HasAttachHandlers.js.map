@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasAttachHandlers.impl.java.js",
-"lineCount":32,
-"mappings":"A;;;;;;;;;;;;MAqBiB,iB;;;;;;;CAOK,2E,CAAqCA,O;;;;;;CAOjD,c;;;;QAdO,O;EAAAC,oC;EAAAA;",
+"lineCount":21,
+"mappings":"A;;;;;;;;;;;;MAqBiB,iB;;CAOK,2E,gBAAqCA,O;;CAOjD,c;;QAdO,O;EAAAC,oC;EAAAA;",
 "sources":["HasAttachHandlers.java"],
 "names":["handler","org.gwtproject.event.logical.shared.HasAttachHandlers.<clinit>"]
 }

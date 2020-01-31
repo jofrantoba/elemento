@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Application$$LambdaAdaptor.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;;;;MASkB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;8E;EAAAA,4I;;;;;;CAAA,kI;EAAAC,iC;EAAAA,iF;;;;;;CAAA,kB;EAAAC,0C;EAAAA,8G;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;;MASkB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;8E;EAAAA,4I;;;CAAA,kI;EAAAC,iC;EAAAA,iF;;;CAAA,kB;EAAAC,0C;EAAAA,8G;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["Application.java"],
 "names":["org.treblereel.gwt.crysknife.client.Application$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.treblereel.gwt.crysknife.client.Application$$LambdaAdaptor.<init>","org.treblereel.gwt.crysknife.client.Application$$LambdaAdaptor.annotationType","org.treblereel.gwt.crysknife.client.Application$$LambdaAdaptor.<clinit>"]
 }

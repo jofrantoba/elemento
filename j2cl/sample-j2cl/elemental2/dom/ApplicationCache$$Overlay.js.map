@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ApplicationCache$$Overlay.impl.java.js",
-"lineCount":88,
-"mappings":"A;;;;MAuBa,Q;;;;;QAoCX,wD;EAAAA,4F;;;;;;QACA,2D;EAAAA,+F;;;;;;QACA,oD;EAAAA,wF;;;;;;QACA,wD;EAAAA,4F;;;;;;QACA,wD;EAAAA,4F;;;;;;QACA,2D;EAAAA,+F;;;;;QAzCW,O;EAAAC,2B;EAAAA,wB;EAoCXA,2F;EACAA,iG;EACAA,mF;EACAA,2F;EACAA,2F;EACAA,iG;;;;;;;;;;;;;;;;;;AAzCW;mE;AAAA;sE;AAAA;+D;AAAA;mE;AAAA;mE;AAAA;;",
+"lineCount":62,
+"mappings":"A;;;;MAuBa,Q;;QAoCX,wD;EAAAA,4F;;;QACA,2D;EAAAA,+F;;;QACA,oD;EAAAA,wF;;;QACA,wD;EAAAA,4F;;;QACA,wD;EAAAA,4F;;;QACA,2D;EAAAA,+F;;;QAzCW,O;EAAAC,2B;EAAAA,wB;EAoCXA,2F;EACAA,iG;EACAA,mF;EACAA,2F;EACAA,2F;EACAA,iG;;;;;;;;;;;;AAzCW;mE;AAAA;sE;AAAA;+D;AAAA;mE;AAAA;mE;AAAA;;",
 "sources":["ApplicationCache.java"],
 "names":["elemental2.dom.ApplicationCache$$Overlay.<synthetic: getter>","elemental2.dom.ApplicationCache$$Overlay.<clinit>"]
 }

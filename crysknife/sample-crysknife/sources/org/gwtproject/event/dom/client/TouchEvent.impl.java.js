@@ -16,22 +16,15 @@ let EventHandler = goog.forwardDeclare('org.gwtproject.event.legacy.shared.Event
  * @extends {HumanInputEvent<H>}
   */
 class TouchEvent extends HumanInputEvent {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_dom_client_TouchEvent__() {
   this.$ctor__org_gwtproject_event_dom_client_HumanInputEvent__();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  static m_isSupported__() {
   TouchEvent.$clinit();
   if ($Equality.$same(TouchEvent.f_impl__org_gwtproject_event_dom_client_TouchEvent_, null)) {
@@ -39,46 +32,29 @@ class TouchEvent extends HumanInputEvent {
   }
   return TouchEvent.f_impl__org_gwtproject_event_dom_client_TouchEvent_.f_isSupported__org_gwtproject_event_dom_client_TouchEvent_TouchSupportDetector_;
  }
- /**
-  * @return {Object<string, Object>}
-  * @public
-  */
+ /** @return {Object<string, Object>} */
  m_getChangedTouches__() {
   return $Overlay.m_getChangedTouches__$devirt__org_gwtproject_dom_client_NativeEvent(this.m_getNativeEvent__());
  }
- /**
-  * @return {Object<string, Object>}
-  * @public
-  */
+ /** @return {Object<string, Object>} */
  m_getTargetTouches__() {
   return $Overlay.m_getTargetTouches__$devirt__org_gwtproject_dom_client_NativeEvent(this.m_getNativeEvent__());
  }
- /**
-  * @return {Object<string, Object>}
-  * @public
-  */
+ /** @return {Object<string, Object>} */
  m_getTouches__() {
   return $Overlay.m_getTouches__$devirt__org_gwtproject_dom_client_NativeEvent(this.m_getNativeEvent__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TouchEvent.$clinit = () =>{};
   TouchEvent.$loadModules();
   HumanInputEvent.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TouchEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.NativeEvent.$Overlay$impl');
@@ -88,7 +64,7 @@ class TouchEvent extends HumanInputEvent {
 }
 $Util.$setClassMetadata(TouchEvent, 'org.gwtproject.event.dom.client.TouchEvent');
 
-/** @public {TouchSupportDetector} */
+/**@type {TouchSupportDetector}*/
 TouchEvent.f_impl__org_gwtproject_event_dom_client_TouchEvent_;
 
 exports = TouchEvent; 

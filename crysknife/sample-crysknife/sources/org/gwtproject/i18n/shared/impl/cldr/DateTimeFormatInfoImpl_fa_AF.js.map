@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DateTimeFormatInfoImpl_fa_AF.impl.java.js",
-"lineCount":94,
-"mappings":"A;;;;;;;;MAqBa,8B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,yC;EAAAA,qD;EAAAA,uF;EAAAA,iB;;;;;CAAA,0E;EAAAC,+E;;;;;;;CAGK,c;EACdC,mc;;;;;;;CAiBc,gB;EACdC,2L;;;;;;;CAiBc,e;EACdC,+Z;;;;;;;CAiBc,yB;EACdC,mc;;;;;;;CAiBc,gB;EACdC,mP;;;;;;;CASc,iB;EACdC,mI;;;;;;;CASS,gB;EACTC,S;;;;;QAhGS,O;EAAAC,iD;EAAAA,8C;EAAAA;",
+"lineCount":57,
+"mappings":"A;;;;;;;;MAqBa,8B;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,yC;EAAAA,qD;EAAAA,uF;EAAAA,iB;;;CAAA,0E;EAAAC,+E;;;CAGK,c;EACdC,kc;;;CAiBc,gB;EACdC,0L;;;CAiBc,e;EACdC,8Z;;;CAiBc,yB;EACdC,kc;;;CAiBc,gB;EACdC,kP;;;CASc,iB;EACdC,kI;;;CASS,gB;EACTC,S;;;QAhGS,O;EAAAC,iD;EAAAA,8C;EAAAA;",
 "sources":["DateTimeFormatInfoImpl_fa_AF.java"],
 "names":["org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_fa_AF.<synthetic: ctor_js>","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_fa_AF.<synthetic: ctor_create>","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_fa_AF.<init>","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_fa_AF.monthsFull","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_fa_AF.monthsNarrow","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_fa_AF.monthsShort","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_fa_AF.monthsShortStandalone","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_fa_AF.quartersFull","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_fa_AF.quartersShort","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_fa_AF.weekendStart","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_fa_AF.<clinit>"]
 }

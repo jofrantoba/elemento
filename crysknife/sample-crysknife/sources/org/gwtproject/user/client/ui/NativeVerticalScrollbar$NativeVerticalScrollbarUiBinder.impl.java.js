@@ -12,44 +12,27 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.user.client.ui.NativeVe
  * @extends {UiBinder<Object, NativeVerticalScrollbar>}
  */
 class NativeVerticalScrollbarUiBinder {
- /**
-  * @param {?function(NativeVerticalScrollbar):Object} fn
-  * @return {NativeVerticalScrollbarUiBinder}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {NativeVerticalScrollbarUiBinder} */
+ static $adapt(/** ?function(NativeVerticalScrollbar):Object */ fn) {
   NativeVerticalScrollbarUiBinder.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NativeVerticalScrollbarUiBinder.$clinit = () =>{};
   NativeVerticalScrollbarUiBinder.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  UiBinder.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_NativeVerticalScrollbar_NativeVerticalScrollbarUiBinder = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  UiBinder.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_NativeVerticalScrollbar_NativeVerticalScrollbarUiBinder = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_NativeVerticalScrollbar_NativeVerticalScrollbarUiBinder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.user.client.ui.NativeVerticalScrollbar.NativeVerticalScrollbarUiBinder.$LambdaAdaptor$impl');
  }

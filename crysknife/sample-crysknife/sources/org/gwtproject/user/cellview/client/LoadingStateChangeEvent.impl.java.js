@@ -12,91 +12,57 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {Event<Handler>}
   */
 class LoadingStateChangeEvent extends Event {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {LoadingState} */
+  /**@type {LoadingState}*/
   this.f_state__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_;
  }
- /**
-  * @param {LoadingState} state
-  * @return {!LoadingStateChangeEvent}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_LoadingState(state) {
+ /** @return {!LoadingStateChangeEvent} */
+ static $create__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_LoadingState(/** LoadingState */ state) {
   LoadingStateChangeEvent.$clinit();
   let $instance = new LoadingStateChangeEvent();
   $instance.$ctor__org_gwtproject_user_cellview_client_LoadingStateChangeEvent__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_LoadingState(state);
   return $instance;
  }
- /**
-  * @param {LoadingState} state
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_LoadingStateChangeEvent__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_LoadingState(state) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_LoadingStateChangeEvent__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_LoadingState(/** LoadingState */ state) {
   this.$ctor__org_gwtproject_event_shared_Event__();
   this.f_state__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_ = state;
  }
- /**
-  * @override
-  * @return {Type<Handler>}
-  * @public
-  */
+ /** @override @return {Type<Handler>} */
  m_getAssociatedType__() {
   return LoadingStateChangeEvent.$f_TYPE__org_gwtproject_user_cellview_client_LoadingStateChangeEvent;
  }
- /**
-  * @return {LoadingState}
-  * @public
-  */
+ /** @return {LoadingState} */
  m_getLoadingState__() {
   return this.f_state__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_;
  }
- /**
-  * @param {Handler} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_Handler(handler) {
+ 
+ m_dispatch__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_Handler(/** Handler */ handler) {
   handler.m_onLoadingStateChanged__org_gwtproject_user_cellview_client_LoadingStateChangeEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_Handler(/**@type {Handler} */ ($Casts.$to(arg0, Handler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_Handler(/**@type {Handler}*/ ($Casts.$to(arg0, Handler)));
  }
- /**
-  * @return {Type<Handler>}
-  * @public
-  */
+ /** @return {Type<Handler>} */
  static get f_TYPE__org_gwtproject_user_cellview_client_LoadingStateChangeEvent() {
   return (LoadingStateChangeEvent.$clinit(), LoadingStateChangeEvent.$f_TYPE__org_gwtproject_user_cellview_client_LoadingStateChangeEvent);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   LoadingStateChangeEvent.$clinit = () =>{};
   LoadingStateChangeEvent.$loadModules();
   Event.$clinit();
-  LoadingStateChangeEvent.$f_TYPE__org_gwtproject_user_cellview_client_LoadingStateChangeEvent = /**@type {!Type<Handler>} */ (Type.$create__());
+  LoadingStateChangeEvent.$f_TYPE__org_gwtproject_user_cellview_client_LoadingStateChangeEvent = /**@type {!Type<Handler>}*/ (Type.$create__());
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof LoadingStateChangeEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Type = goog.module.get('org.gwtproject.event.shared.Event.Type$impl');
   Handler = goog.module.get('org.gwtproject.user.cellview.client.LoadingStateChangeEvent.Handler$impl');
@@ -106,7 +72,7 @@ class LoadingStateChangeEvent extends Event {
 }
 $Util.$setClassMetadata(LoadingStateChangeEvent, 'org.gwtproject.user.cellview.client.LoadingStateChangeEvent');
 
-/** @private {Type<Handler>} */
+/**@private {Type<Handler>}*/
 LoadingStateChangeEvent.$f_TYPE__org_gwtproject_user_cellview_client_LoadingStateChangeEvent;
 
 exports = LoadingStateChangeEvent; 

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"GestureEndHandler$$LambdaAdaptor.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;MAoBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gF;EAAAA,gJ;;;;;;CAAA,sI;EAAAC,iC;EAAAA,mF;;;;;;CAAA,+D;;GAAAC,8F;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MAoBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gF;EAAAA,gJ;;;CAAA,sI;EAAAC,iC;EAAAA,mF;;;CAAA,+D;;GAAAC,8F;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["GestureEndHandler.java"],
 "names":["org.gwtproject.event.dom.client.GestureEndHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.dom.client.GestureEndHandler$$LambdaAdaptor.<init>","org.gwtproject.event.dom.client.GestureEndHandler$$LambdaAdaptor.onGestureEnd","org.gwtproject.event.dom.client.GestureEndHandler$$LambdaAdaptor.<clinit>"]
 }

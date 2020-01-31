@@ -17,112 +17,76 @@ let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
  * @implements {SetSelectionModel<T>}
   */
 class SingleSelectionModel extends AbstractSelectionModel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {*} */
+  /**@type {*}*/
   this.f_curKey__org_gwtproject_view_client_SingleSelectionModel_;
-  /** @public {T} */
+  /**@type {T}*/
   this.f_curSelection__org_gwtproject_view_client_SingleSelectionModel_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_newSelected__org_gwtproject_view_client_SingleSelectionModel_ = false;
-  /** @public {T} */
+  /**@type {T}*/
   this.f_newSelectedItem__org_gwtproject_view_client_SingleSelectionModel_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_newSelectedPending__org_gwtproject_view_client_SingleSelectionModel_ = false;
  }
- /**
-  * Factory method corresponding to constructor 'SingleSelectionModel()'.
-  * @template T
-  * @return {!SingleSelectionModel<T>}
-  * @public
-  */
+ //Factory method corresponding to constructor 'SingleSelectionModel()'.
+ /** @template T @return {!SingleSelectionModel<T>} */
  static $create__() {
   SingleSelectionModel.$clinit();
   let $instance = new SingleSelectionModel();
   $instance.$ctor__org_gwtproject_view_client_SingleSelectionModel__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'SingleSelectionModel()'.
-  * @public
-  */
+ //Initialization from constructor 'SingleSelectionModel()'.
+ 
  $ctor__org_gwtproject_view_client_SingleSelectionModel__() {
   this.$ctor__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel__org_gwtproject_view_client_ProvidesKey(null);
   this.$init___$p_org_gwtproject_view_client_SingleSelectionModel();
  }
- /**
-  * Factory method corresponding to constructor 'SingleSelectionModel(ProvidesKey)'.
-  * @template T
-  * @param {ProvidesKey<T>} keyProvider
-  * @return {!SingleSelectionModel<T>}
-  * @public
-  */
- static $create__org_gwtproject_view_client_ProvidesKey(keyProvider) {
+ //Factory method corresponding to constructor 'SingleSelectionModel(ProvidesKey)'.
+ /** @template T @return {!SingleSelectionModel<T>} */
+ static $create__org_gwtproject_view_client_ProvidesKey(/** ProvidesKey<T> */ keyProvider) {
   SingleSelectionModel.$clinit();
   let $instance = new SingleSelectionModel();
   $instance.$ctor__org_gwtproject_view_client_SingleSelectionModel__org_gwtproject_view_client_ProvidesKey(keyProvider);
   return $instance;
  }
- /**
-  * Initialization from constructor 'SingleSelectionModel(ProvidesKey)'.
-  * @param {ProvidesKey<T>} keyProvider
-  * @public
-  */
- $ctor__org_gwtproject_view_client_SingleSelectionModel__org_gwtproject_view_client_ProvidesKey(keyProvider) {
+ //Initialization from constructor 'SingleSelectionModel(ProvidesKey)'.
+ 
+ $ctor__org_gwtproject_view_client_SingleSelectionModel__org_gwtproject_view_client_ProvidesKey(/** ProvidesKey<T> */ keyProvider) {
   this.$ctor__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel__org_gwtproject_view_client_ProvidesKey(keyProvider);
   this.$init___$p_org_gwtproject_view_client_SingleSelectionModel();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_clear__() {
   this.m_setSelected__java_lang_Object__boolean(this.m_getSelectedObject__(), false);
  }
- /**
-  * @return {T}
-  * @public
-  */
+ /** @return {T} */
  m_getSelectedObject__() {
   this.m_resolveChanges___$p_org_gwtproject_view_client_SingleSelectionModel();
   return this.f_curSelection__org_gwtproject_view_client_SingleSelectionModel_;
  }
- /**
-  * @override
-  * @return {Set<T>}
-  * @public
-  */
+ /** @override @return {Set<T>} */
  m_getSelectedSet__() {
-  let set = /**@type {!HashSet<T>} */ (HashSet.$create__());
+  let set = /**@type {!HashSet<T>}*/ (HashSet.$create__());
   let item = this.m_getSelectedObject__();
   if (!$Equality.$same(item, null)) {
    set.add(item);
   }
   return set;
  }
- /**
-  * @override
-  * @param {T} item
-  * @return {boolean}
-  * @public
-  */
- m_isSelected__java_lang_Object(item) {
+ /** @override @return {boolean} */
+ m_isSelected__java_lang_Object(/** T */ item) {
   this.m_resolveChanges___$p_org_gwtproject_view_client_SingleSelectionModel();
   if ($Equality.$same(this.f_curSelection__org_gwtproject_view_client_SingleSelectionModel_, null) || $Equality.$same(this.f_curKey__org_gwtproject_view_client_SingleSelectionModel_, null) || $Equality.$same(item, null)) {
    return false;
   }
   return $Objects.m_equals__java_lang_Object__java_lang_Object(this.f_curKey__org_gwtproject_view_client_SingleSelectionModel_, this.m_getKey__java_lang_Object(item));
  }
- /**
-  * @override
-  * @param {T} item
-  * @param {boolean} selected
-  * @public
-  */
- m_setSelected__java_lang_Object__boolean(item, selected) {
+ /** @override */
+ m_setSelected__java_lang_Object__boolean(/** T */ item, /** boolean */ selected) {
   if (!selected) {
    let oldKey = this.f_newSelectedPending__org_gwtproject_view_client_SingleSelectionModel_ ? this.m_getKey__java_lang_Object(this.f_newSelectedItem__org_gwtproject_view_client_SingleSelectionModel_) : this.f_curKey__org_gwtproject_view_client_SingleSelectionModel_;
    let newKey = this.m_getKey__java_lang_Object(item);
@@ -135,28 +99,18 @@ class SingleSelectionModel extends AbstractSelectionModel {
   this.f_newSelectedPending__org_gwtproject_view_client_SingleSelectionModel_ = true;
   this.m_scheduleSelectionChangeEvent__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_fireSelectionChangeEvent__() {
   if (this.m_isEventScheduled__()) {
    this.m_setEventCancelled__boolean(true);
   }
   this.m_resolveChanges___$p_org_gwtproject_view_client_SingleSelectionModel();
  }
- /**
-  * @param {*} a
-  * @param {*} b
-  * @return {boolean}
-  * @public
-  */
- m_equalsOrBothNull__java_lang_Object__java_lang_Object_$p_org_gwtproject_view_client_SingleSelectionModel(a, b) {
+ /** @return {boolean} */
+ m_equalsOrBothNull__java_lang_Object__java_lang_Object_$p_org_gwtproject_view_client_SingleSelectionModel(/** * */ a, /** * */ b) {
   return $Equality.$same(a, null) ? $Equality.$same(b, null) : $Objects.m_equals__java_lang_Object__java_lang_Object(a, b);
  }
- /**
-  * @public
-  */
+ 
  m_resolveChanges___$p_org_gwtproject_view_client_SingleSelectionModel() {
   if (!this.f_newSelectedPending__org_gwtproject_view_client_SingleSelectionModel_) {
    return;
@@ -179,31 +133,21 @@ class SingleSelectionModel extends AbstractSelectionModel {
    SelectionChangeEvent.m_fire__org_gwtproject_view_client_SelectionChangeEvent_HasSelectionChangedHandlers(this);
   }
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_view_client_SingleSelectionModel() {
   this.f_newSelectedItem__org_gwtproject_view_client_SingleSelectionModel_ = null;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SingleSelectionModel.$clinit = () =>{};
   SingleSelectionModel.$loadModules();
   AbstractSelectionModel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SingleSelectionModel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   HashSet = goog.module.get('java.util.HashSet$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

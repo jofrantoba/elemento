@@ -15,121 +15,75 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {Event<ShowRangeHandler<V>>}
   */
 class ShowRangeEvent extends Event {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {V} */
+  /**@type {V}*/
   this.f_start__org_gwtproject_event_logical_shared_ShowRangeEvent_;
-  /** @public {V} */
+  /**@type {V}*/
   this.f_end__org_gwtproject_event_logical_shared_ShowRangeEvent_;
  }
- /**
-  * @template V_1, S
-  * @param {S} source
-  * @param {V_1} start
-  * @param {V_1} end
-  * @public
-  */
- static m_fire__org_gwtproject_event_logical_shared_HasShowRangeHandlers__java_lang_Object__java_lang_Object(source, start, end) {
+ /** @template V_1, S */
+ static m_fire__org_gwtproject_event_logical_shared_HasShowRangeHandlers__java_lang_Object__java_lang_Object(/** S */ source, /** V_1 */ start, /** V_1 */ end) {
   ShowRangeEvent.$clinit();
   if (!$Equality.$same(ShowRangeEvent.f_TYPE__org_gwtproject_event_logical_shared_ShowRangeEvent_, null)) {
-   let event = /**@type {!ShowRangeEvent<V_1>} */ (ShowRangeEvent.$create__java_lang_Object__java_lang_Object(start, end));
-   /**@type {HasShowRangeHandlers} */ (source).m_fireEvent__org_gwtproject_event_shared_Event(event);
+   let event = /**@type {!ShowRangeEvent<V_1>}*/ (ShowRangeEvent.$create__java_lang_Object__java_lang_Object(start, end));
+   /**@type {HasShowRangeHandlers}*/ (source).m_fireEvent__org_gwtproject_event_shared_Event(event);
   }
  }
- /**
-  * @return {Type<ShowRangeHandler<?>>}
-  * @public
-  */
+ /** @return {Type<ShowRangeHandler<?>>} */
  static m_getType__() {
   ShowRangeEvent.$clinit();
   if ($Equality.$same(ShowRangeEvent.f_TYPE__org_gwtproject_event_logical_shared_ShowRangeEvent_, null)) {
-   ShowRangeEvent.f_TYPE__org_gwtproject_event_logical_shared_ShowRangeEvent_ = /**@type {!Type<ShowRangeHandler<?>>} */ (Type.$create__());
+   ShowRangeEvent.f_TYPE__org_gwtproject_event_logical_shared_ShowRangeEvent_ = /**@type {!Type<ShowRangeHandler<?>>}*/ (Type.$create__());
   }
   return ShowRangeEvent.f_TYPE__org_gwtproject_event_logical_shared_ShowRangeEvent_;
  }
- /**
-  * @template V
-  * @param {V} start
-  * @param {V} end
-  * @return {!ShowRangeEvent<V>}
-  * @public
-  */
- static $create__java_lang_Object__java_lang_Object(start, end) {
+ /** @template V @return {!ShowRangeEvent<V>} */
+ static $create__java_lang_Object__java_lang_Object(/** V */ start, /** V */ end) {
   ShowRangeEvent.$clinit();
   let $instance = new ShowRangeEvent();
   $instance.$ctor__org_gwtproject_event_logical_shared_ShowRangeEvent__java_lang_Object__java_lang_Object(start, end);
   return $instance;
  }
- /**
-  * @param {V} start
-  * @param {V} end
-  * @public
-  */
- $ctor__org_gwtproject_event_logical_shared_ShowRangeEvent__java_lang_Object__java_lang_Object(start, end) {
+ 
+ $ctor__org_gwtproject_event_logical_shared_ShowRangeEvent__java_lang_Object__java_lang_Object(/** V */ start, /** V */ end) {
   this.$ctor__org_gwtproject_event_shared_Event__();
   this.f_start__org_gwtproject_event_logical_shared_ShowRangeEvent_ = start;
   this.f_end__org_gwtproject_event_logical_shared_ShowRangeEvent_ = end;
  }
- /**
-  * @override
-  * @return {Type<ShowRangeHandler<V>>}
-  * @public
-  */
+ /** @override @return {Type<ShowRangeHandler<V>>} */
  m_getAssociatedType__() {
-  return /**@type {Type} */ (ShowRangeEvent.f_TYPE__org_gwtproject_event_logical_shared_ShowRangeEvent_);
+  return /**@type {Type}*/ (ShowRangeEvent.f_TYPE__org_gwtproject_event_logical_shared_ShowRangeEvent_);
  }
- /**
-  * @return {V}
-  * @public
-  */
+ /** @return {V} */
  m_getEnd__() {
   return this.f_end__org_gwtproject_event_logical_shared_ShowRangeEvent_;
  }
- /**
-  * @return {V}
-  * @public
-  */
+ /** @return {V} */
  m_getStart__() {
   return this.f_start__org_gwtproject_event_logical_shared_ShowRangeEvent_;
  }
- /**
-  * @param {ShowRangeHandler<V>} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_event_logical_shared_ShowRangeHandler(handler) {
+ 
+ m_dispatch__org_gwtproject_event_logical_shared_ShowRangeHandler(/** ShowRangeHandler<V> */ handler) {
   handler.m_onShowRange__org_gwtproject_event_logical_shared_ShowRangeEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_event_logical_shared_ShowRangeHandler(/**@type {ShowRangeHandler<V>} */ ($Casts.$to(arg0, ShowRangeHandler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_event_logical_shared_ShowRangeHandler(/**@type {ShowRangeHandler<V>}*/ ($Casts.$to(arg0, ShowRangeHandler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ShowRangeEvent.$clinit = () =>{};
   ShowRangeEvent.$loadModules();
   Event.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ShowRangeEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   ShowRangeHandler = goog.module.get('org.gwtproject.event.logical.shared.ShowRangeHandler$impl');
@@ -140,7 +94,7 @@ class ShowRangeEvent extends Event {
 }
 $Util.$setClassMetadata(ShowRangeEvent, 'org.gwtproject.event.logical.shared.ShowRangeEvent');
 
-/** @public {Type<ShowRangeHandler<?>>} */
+/**@type {Type<ShowRangeHandler<?>>}*/
 ShowRangeEvent.f_TYPE__org_gwtproject_event_logical_shared_ShowRangeEvent_;
 
 exports = ShowRangeEvent; 

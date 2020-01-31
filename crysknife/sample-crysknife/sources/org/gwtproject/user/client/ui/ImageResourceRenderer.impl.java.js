@@ -15,70 +15,46 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {AbstractSafeHtmlRenderer<ImageResource>}
   */
 class ImageResourceRenderer extends AbstractSafeHtmlRenderer {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!ImageResourceRenderer}
-  * @public
-  */
+ /** @return {!ImageResourceRenderer} */
  static $create__() {
   ImageResourceRenderer.$clinit();
   let $instance = new ImageResourceRenderer();
   $instance.$ctor__org_gwtproject_user_client_ui_ImageResourceRenderer__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_ImageResourceRenderer__() {
   this.$ctor__org_gwtproject_text_shared_AbstractSafeHtmlRenderer__();
  }
- /**
-  * @param {ImageResource} image
-  * @return {SafeHtml}
-  * @public
-  */
- m_render__org_gwtproject_resources_client_ImageResource(image) {
+ /** @return {SafeHtml} */
+ m_render__org_gwtproject_resources_client_ImageResource(/** ImageResource */ image) {
   if (Bundle.$isInstance(image)) {
    return AbstractImagePrototype.m_create__org_gwtproject_resources_client_ImageResource(image).m_getSafeHtml__();
   } else {
    return ImageResourceRenderer.f_TEMPLATE__org_gwtproject_user_client_ui_ImageResourceRenderer_.m_image__org_gwtproject_safehtml_shared_SafeUri__int__int(image.m_getSafeUri__(), image.m_getWidth__(), image.m_getHeight__());
   }
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @return {SafeHtml}
-  * @public
-  */
- m_render__java_lang_Object(arg0) {
-  return this.m_render__org_gwtproject_resources_client_ImageResource(/**@type {ImageResource} */ ($Casts.$to(arg0, ImageResource)));
+ //Bridge method.
+ /** @override @return {SafeHtml} */
+ m_render__java_lang_Object(/** * */ arg0) {
+  return this.m_render__org_gwtproject_resources_client_ImageResource(/**@type {ImageResource}*/ ($Casts.$to(arg0, ImageResource)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ImageResourceRenderer.$clinit = () =>{};
   ImageResourceRenderer.$loadModules();
   AbstractSafeHtmlRenderer.$clinit();
   ImageResourceRenderer.f_TEMPLATE__org_gwtproject_user_client_ui_ImageResourceRenderer_ = ImageResourceRenderer__TemplateImpl.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ImageResourceRenderer;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   ImageResource = goog.module.get('org.gwtproject.resources.client.ImageResource$impl');
   Bundle = goog.module.get('org.gwtproject.resources.client.impl.ImageResourcePrototype.Bundle$impl');
@@ -90,7 +66,7 @@ class ImageResourceRenderer extends AbstractSafeHtmlRenderer {
 }
 $Util.$setClassMetadata(ImageResourceRenderer, 'org.gwtproject.user.client.ui.ImageResourceRenderer');
 
-/** @public {Template} */
+/**@type {Template}*/
 ImageResourceRenderer.f_TEMPLATE__org_gwtproject_user_client_ui_ImageResourceRenderer_;
 
 exports = ImageResourceRenderer; 

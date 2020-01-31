@@ -11,44 +11,27 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.resources.client.DataRe
  * @extends {Annotation}
  */
 class DoNotEmbed {
- /**
-  * @param {?function():Class<?>} fn
-  * @return {DoNotEmbed}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {DoNotEmbed} */
+ static $adapt(/** ?function():Class<?> */ fn) {
   DoNotEmbed.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DoNotEmbed.$clinit = () =>{};
   DoNotEmbed.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_resources_client_DataResource_DoNotEmbed = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_resources_client_DataResource_DoNotEmbed = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_resources_client_DataResource_DoNotEmbed;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.resources.client.DataResource.DoNotEmbed.$LambdaAdaptor$impl');
  }

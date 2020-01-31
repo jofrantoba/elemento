@@ -11,54 +11,37 @@ let EditorDelegate = goog.forwardDeclare('org.gwtproject.editor.client.EditorDel
  * @implements {HasEditorDelegate<T>}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(EditorDelegate<T>):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(EditorDelegate<T>):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(EditorDelegate<T>):void} */
+  /**@type {?function(EditorDelegate<T>):void}*/
   this.f_$$fn__org_gwtproject_editor_client_HasEditorDelegate_$LambdaAdaptor;
   this.$ctor__org_gwtproject_editor_client_HasEditorDelegate_$LambdaAdaptor__org_gwtproject_editor_client_HasEditorDelegate_$JsFunction(fn);
  }
- /**
-  * @param {?function(EditorDelegate<T>):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_editor_client_HasEditorDelegate_$LambdaAdaptor__org_gwtproject_editor_client_HasEditorDelegate_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_editor_client_HasEditorDelegate_$LambdaAdaptor__org_gwtproject_editor_client_HasEditorDelegate_$JsFunction(/** ?function(EditorDelegate<T>):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_editor_client_HasEditorDelegate_$LambdaAdaptor = fn;
  }
- /**
-  * @param {EditorDelegate<T>} arg0
-  * @public
-  */
- m_setDelegate__org_gwtproject_editor_client_EditorDelegate(arg0) {
+ 
+ m_setDelegate__org_gwtproject_editor_client_EditorDelegate(/** EditorDelegate<T> */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_editor_client_HasEditorDelegate_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

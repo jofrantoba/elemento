@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"FormData$GetUnionType$$Overlay.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;MAoFmB,qB;;;;;;QAEc,sB,CAAUA,C;EAAVC,gC;EAC3BA,wD;;;;;;;QAIW,uD;EAAAC,gC;EACXA,wF;;;;;;;QAIa,yD;EAAAC,gC;EACbA,iD;;;;;;;QAIc,uD;EAAAC,gC;EACdA,wD;;;;;;;QAIc,yD;EAAAC,gC;EACdA,0D;;;;;QAvBa,O;EAAAC,wC;EAAAA;",
+"lineCount":39,
+"mappings":"A;;;;;;;;;MAoFmB,qB;;QAEc,sB,UAAUA,C;EAAVC,gC;EAC3BA,uD;;;QAIW,uD;EAAAC,gC;EACXA,uF;;;QAIa,yD;EAAAC,gC;EACbA,iD;;;QAIc,uD;EAAAC,gC;EACdA,uD;;;QAIc,yD;EAAAC,gC;EACdA,yD;;;QAvBa,O;EAAAC,wC;EAAAA;",
 "sources":["FormData.java"],
 "names":["o","elemental2.dom.FormData$GetUnionType$$Overlay.of","elemental2.dom.FormData$GetUnionType$$Overlay.asFile__$devirt","elemental2.dom.FormData$GetUnionType$$Overlay.asString__$devirt","elemental2.dom.FormData$GetUnionType$$Overlay.isFile__$devirt","elemental2.dom.FormData$GetUnionType$$Overlay.isString__$devirt","elemental2.dom.FormData$GetUnionType$$Overlay.<clinit>"]
 }

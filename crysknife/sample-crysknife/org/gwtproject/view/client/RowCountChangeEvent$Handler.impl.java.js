@@ -9,49 +9,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.view.client.RowCountCha
  * @interface
  */
 class Handler {
- /**
-  * @abstract
-  * @param {RowCountChangeEvent} event
-  * @public
-  */
- m_onRowCountChange__org_gwtproject_view_client_RowCountChangeEvent(event) {}
- /**
-  * @param {?function(RowCountChangeEvent):void} fn
-  * @return {Handler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onRowCountChange__org_gwtproject_view_client_RowCountChangeEvent(/** RowCountChangeEvent */ event) {}
+ /** @return {Handler} */
+ static $adapt(/** ?function(RowCountChangeEvent):void */ fn) {
   Handler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Handler.$clinit = () =>{};
   Handler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_view_client_RowCountChangeEvent_Handler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_view_client_RowCountChangeEvent_Handler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_view_client_RowCountChangeEvent_Handler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.view.client.RowCountChangeEvent.Handler.$LambdaAdaptor$impl');
  }

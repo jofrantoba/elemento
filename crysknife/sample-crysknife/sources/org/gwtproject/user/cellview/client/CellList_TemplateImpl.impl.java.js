@@ -14,37 +14,23 @@ let SafeHtmlUtils = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHtml
  * @implements {Template}
   */
 class CellList__TemplateImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!CellList__TemplateImpl}
-  * @public
-  */
+ /** @return {!CellList__TemplateImpl} */
  static $create__() {
   CellList__TemplateImpl.$clinit();
   let $instance = new CellList__TemplateImpl();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellList_TemplateImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_cellview_client_CellList_TemplateImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {number} arg0
-  * @param {?string} arg1
-  * @param {SafeHtml} arg2
-  * @return {SafeHtml}
-  * @public
-  */
- m_div__int__java_lang_String__org_gwtproject_safehtml_shared_SafeHtml(arg0, arg1, arg2) {
+ /** @override @return {SafeHtml} */
+ m_div__int__java_lang_String__org_gwtproject_safehtml_shared_SafeHtml(/** number */ arg0, /** ?string */ arg1, /** SafeHtml */ arg2) {
   let sb = StringBuilder.$create__();
   sb.m_append__java_lang_String("<div __idx=\"");
   sb.m_append__java_lang_String(SafeHtmlUtils.m_htmlEscape__java_lang_String(j_l_String.m_valueOf__int(arg0)));
@@ -55,25 +41,17 @@ class CellList__TemplateImpl extends j_l_Object {
   sb.m_append__java_lang_String("</div>");
   return OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml.$create__java_lang_String(sb.toString());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CellList__TemplateImpl.$clinit = () =>{};
   CellList__TemplateImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CellList__TemplateImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   StringBuilder = goog.module.get('java.lang.StringBuilder$impl');

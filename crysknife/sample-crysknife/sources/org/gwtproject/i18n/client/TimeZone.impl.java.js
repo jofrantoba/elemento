@@ -22,78 +22,60 @@ let $int = goog.forwardDeclare('vmbootstrap.primitives.$int$impl');
  * @implements {TimeZone}
   */
 class org_gwtproject_i18n_client_TimeZone extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_timezoneID__org_gwtproject_i18n_client_TimeZone_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_standardOffset__org_gwtproject_i18n_client_TimeZone_ = 0;
-  /** @public {Array<?string>} */
+  /**@type {Array<?string>}*/
   this.f_tzNames__org_gwtproject_i18n_client_TimeZone_;
-  /** @public {Array<number>} */
+  /**@type {Array<number>}*/
   this.f_transitionPoints__org_gwtproject_i18n_client_TimeZone_;
-  /** @public {Array<number>} */
+  /**@type {Array<number>}*/
   this.f_adjustments__org_gwtproject_i18n_client_TimeZone_;
  }
- /**
-  * @param {number} timeZoneOffsetInMinutes
-  * @return {org_gwtproject_i18n_client_TimeZone}
-  * @public
-  */
- static m_createTimeZoneInMinutes__int(timeZoneOffsetInMinutes) {
+ /** @return {org_gwtproject_i18n_client_TimeZone} */
+ static m_createTimeZoneInMinutes__int(/** number */ timeZoneOffsetInMinutes) {
   org_gwtproject_i18n_client_TimeZone.$clinit();
   let tz = org_gwtproject_i18n_client_TimeZone.$create__();
   tz.f_standardOffset__org_gwtproject_i18n_client_TimeZone_ = timeZoneOffsetInMinutes;
   tz.f_timezoneID__org_gwtproject_i18n_client_TimeZone_ = org_gwtproject_i18n_client_TimeZone.m_composePOSIXTimeZoneID__int(timeZoneOffsetInMinutes);
-  tz.f_tzNames__org_gwtproject_i18n_client_TimeZone_ = /**@type {!Array<?string>} */ ($Arrays.$create([2], j_l_String));
+  tz.f_tzNames__org_gwtproject_i18n_client_TimeZone_ = /**@type {!Array<?string>}*/ ($Arrays.$create([2], j_l_String));
   $Arrays.$set(tz.f_tzNames__org_gwtproject_i18n_client_TimeZone_, 0, org_gwtproject_i18n_client_TimeZone.m_composeUTCString__int(timeZoneOffsetInMinutes));
   $Arrays.$set(tz.f_tzNames__org_gwtproject_i18n_client_TimeZone_, 1, org_gwtproject_i18n_client_TimeZone.m_composeUTCString__int(timeZoneOffsetInMinutes));
   tz.f_transitionPoints__org_gwtproject_i18n_client_TimeZone_ = null;
   tz.f_adjustments__org_gwtproject_i18n_client_TimeZone_ = null;
   return tz;
  }
- /**
-  * @param {?string} tzJSON
-  * @return {org_gwtproject_i18n_client_TimeZone}
-  * @public
-  */
- static m_createTimeZoneFromJSON__java_lang_String(tzJSON) {
+ /** @return {org_gwtproject_i18n_client_TimeZone} */
+ static m_createTimeZoneFromJSON__java_lang_String(/** ?string */ tzJSON) {
   org_gwtproject_i18n_client_TimeZone.$clinit();
   let tzData = TimeZoneInfo.m_buildTimeZoneData__java_lang_String(tzJSON);
   return org_gwtproject_i18n_client_TimeZone.m_createTimeZone__org_gwtproject_i18n_client_TimeZoneInfo(tzData);
  }
- /**
-  * @param {number} timeZoneOffsetInMinutes
-  * @return {org_gwtproject_i18n_client_TimeZone}
-  * @public
-  */
- static m_createTimeZone__int(timeZoneOffsetInMinutes) {
+ /** @return {org_gwtproject_i18n_client_TimeZone} */
+ static m_createTimeZone__int(/** number */ timeZoneOffsetInMinutes) {
   org_gwtproject_i18n_client_TimeZone.$clinit();
   let tz = org_gwtproject_i18n_client_TimeZone.$create__();
   tz.f_standardOffset__org_gwtproject_i18n_client_TimeZone_ = timeZoneOffsetInMinutes;
   tz.f_timezoneID__org_gwtproject_i18n_client_TimeZone_ = org_gwtproject_i18n_client_TimeZone.m_composePOSIXTimeZoneID__int(timeZoneOffsetInMinutes);
-  tz.f_tzNames__org_gwtproject_i18n_client_TimeZone_ = /**@type {!Array<?string>} */ ($Arrays.$create([2], j_l_String));
+  tz.f_tzNames__org_gwtproject_i18n_client_TimeZone_ = /**@type {!Array<?string>}*/ ($Arrays.$create([2], j_l_String));
   $Arrays.$set(tz.f_tzNames__org_gwtproject_i18n_client_TimeZone_, 0, org_gwtproject_i18n_client_TimeZone.m_composeUTCString__int(timeZoneOffsetInMinutes));
   $Arrays.$set(tz.f_tzNames__org_gwtproject_i18n_client_TimeZone_, 1, org_gwtproject_i18n_client_TimeZone.m_composeUTCString__int(timeZoneOffsetInMinutes));
   tz.f_transitionPoints__org_gwtproject_i18n_client_TimeZone_ = null;
   tz.f_adjustments__org_gwtproject_i18n_client_TimeZone_ = null;
   return tz;
  }
- /**
-  * @param {TimeZoneInfo} timezoneData
-  * @return {org_gwtproject_i18n_client_TimeZone}
-  * @public
-  */
- static m_createTimeZone__org_gwtproject_i18n_client_TimeZoneInfo(timezoneData) {
+ /** @return {org_gwtproject_i18n_client_TimeZone} */
+ static m_createTimeZone__org_gwtproject_i18n_client_TimeZoneInfo(/** TimeZoneInfo */ timezoneData) {
   org_gwtproject_i18n_client_TimeZone.$clinit();
   let tz = org_gwtproject_i18n_client_TimeZone.$create__();
   tz.f_timezoneID__org_gwtproject_i18n_client_TimeZone_ = timezoneData.m_getID__();
   tz.f_standardOffset__org_gwtproject_i18n_client_TimeZone_ = -timezoneData.m_getStandardOffset__();
   let jsTimezoneNames = timezoneData.m_getNames__();
-  tz.f_tzNames__org_gwtproject_i18n_client_TimeZone_ = /**@type {!Array<?string>} */ ($Arrays.$create([$Overlay.m_length__$devirt__org_gwtproject_core_client_JsArrayString(jsTimezoneNames)], j_l_String));
+  tz.f_tzNames__org_gwtproject_i18n_client_TimeZone_ = /**@type {!Array<?string>}*/ ($Arrays.$create([$Overlay.m_length__$devirt__org_gwtproject_core_client_JsArrayString(jsTimezoneNames)], j_l_String));
   for (let i = 0; i < $Overlay.m_length__$devirt__org_gwtproject_core_client_JsArrayString(jsTimezoneNames); i++) {
    $Arrays.$set(tz.f_tzNames__org_gwtproject_i18n_client_TimeZone_, i, $Overlay.m_get__$devirt__org_gwtproject_core_client_JsArrayString__int(jsTimezoneNames, i));
   }
@@ -103,8 +85,8 @@ class org_gwtproject_i18n_client_TimeZone extends j_l_Object {
    tz.f_adjustments__org_gwtproject_i18n_client_TimeZone_ = null;
   } else {
    let transitionNum = $Primitives.$coerceDivision(JsArrayInteger_$Overlay.m_length__$devirt__org_gwtproject_core_client_JsArrayInteger(transitions) / 2);
-   tz.f_transitionPoints__org_gwtproject_i18n_client_TimeZone_ = /**@type {!Array<number>} */ ($Arrays.$create([transitionNum], $int));
-   tz.f_adjustments__org_gwtproject_i18n_client_TimeZone_ = /**@type {!Array<number>} */ ($Arrays.$create([transitionNum], $int));
+   tz.f_transitionPoints__org_gwtproject_i18n_client_TimeZone_ = /**@type {!Array<number>}*/ ($Arrays.$create([transitionNum], $int));
+   tz.f_adjustments__org_gwtproject_i18n_client_TimeZone_ = /**@type {!Array<number>}*/ ($Arrays.$create([transitionNum], $int));
    for (let i_1 = 0; i_1 < transitionNum; ++i_1) {
     $Arrays.$set(tz.f_transitionPoints__org_gwtproject_i18n_client_TimeZone_, i_1, JsArrayInteger_$Overlay.m_get__$devirt__org_gwtproject_core_client_JsArrayInteger__int(transitions, i_1 * 2));
     $Arrays.$set(tz.f_adjustments__org_gwtproject_i18n_client_TimeZone_, i_1, JsArrayInteger_$Overlay.m_get__$devirt__org_gwtproject_core_client_JsArrayInteger__int(transitions, i_1 * 2 + 1));
@@ -112,13 +94,9 @@ class org_gwtproject_i18n_client_TimeZone extends j_l_Object {
   }
   return tz;
  }
- /**
-  * @param {number} offset
-  * @return {?string}
-  * @public
-  */
- static m_composeGMTString__int(offset) {
-  let data = /**@type {!Array<number>} */ ($Arrays.$init([71 /* 'G' */, 77 /* 'M' */, 84 /* 'T' */, 45 /* '-' */, 48 /* '0' */, 48 /* '0' */, 58 /* ':' */, 48 /* '0' */, 48 /* '0' */], $char));
+ /** @return {?string} */
+ static m_composeGMTString__int(/** number */ offset) {
+  let data = /**@type {!Array<number>}*/ ($Arrays.$init([71 /* 'G' */, 77 /* 'M' */, 84 /* 'T' */, 45 /* '-' */, 48 /* '0' */, 48 /* '0' */, 58 /* ':' */, 48 /* '0' */, 48 /* '0' */], $char));
   if (offset <= 0) {
    $Arrays.$set(data, 3, 43 /* '+' */);
    offset = -offset;
@@ -129,12 +107,8 @@ class org_gwtproject_i18n_client_TimeZone extends j_l_Object {
   $Arrays.$set(data, 8, $Primitives.$narrowIntToChar((data[8] + $Primitives.$coerceDivision(offset % 10))));
   return j_l_String.$create__arrayOf_char(data);
  }
- /**
-  * @param {number} offset
-  * @return {?string}
-  * @public
-  */
- static m_composePOSIXTimeZoneID__int(offset) {
+ /** @return {?string} */
+ static m_composePOSIXTimeZoneID__int(/** number */ offset) {
   if (offset == 0) {
    return "Etc/GMT";
   }
@@ -147,12 +121,8 @@ class org_gwtproject_i18n_client_TimeZone extends j_l_Object {
   }
   return j_l_String.m_valueOf__java_lang_Object(str) + j_l_String.m_valueOf__java_lang_Object(org_gwtproject_i18n_client_TimeZone.m_offsetDisplay__int(offset));
  }
- /**
-  * @param {number} offset
-  * @return {?string}
-  * @public
-  */
- static m_composeUTCString__int(offset) {
+ /** @return {?string} */
+ static m_composeUTCString__int(/** number */ offset) {
   if (offset == 0) {
    return "UTC";
   }
@@ -165,12 +135,8 @@ class org_gwtproject_i18n_client_TimeZone extends j_l_Object {
   }
   return j_l_String.m_valueOf__java_lang_Object(str) + j_l_String.m_valueOf__java_lang_Object(org_gwtproject_i18n_client_TimeZone.m_offsetDisplay__int(offset));
  }
- /**
-  * @param {number} offset
-  * @return {?string}
-  * @public
-  */
- static m_offsetDisplay__int(offset) {
+ /** @return {?string} */
+ static m_offsetDisplay__int(/** number */ offset) {
   let hour = $Primitives.$coerceDivision(offset / 60);
   let mins = $Primitives.$coerceDivision(offset % 60);
   if (mins == 0) {
@@ -178,28 +144,18 @@ class org_gwtproject_i18n_client_TimeZone extends j_l_Object {
   }
   return j_l_String.m_valueOf__java_lang_Object(Integer.m_toString__int(hour)) + ":" + j_l_String.m_valueOf__java_lang_Object(Integer.m_toString__int(mins));
  }
- /**
-  * @return {!org_gwtproject_i18n_client_TimeZone}
-  * @public
-  */
+ /** @return {!org_gwtproject_i18n_client_TimeZone} */
  static $create__() {
   let $instance = new org_gwtproject_i18n_client_TimeZone();
   $instance.$ctor__org_gwtproject_i18n_client_TimeZone__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_i18n_client_TimeZone__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {Date} date
-  * @return {number}
-  * @public
-  */
- m_getDaylightAdjustment__java_util_Date(date) {
+ /** @override @return {number} */
+ m_getDaylightAdjustment__java_util_Date(/** Date */ date) {
   if ($Equality.$same(this.f_transitionPoints__org_gwtproject_i18n_client_TimeZone_, null)) {
    return 0;
   }
@@ -210,32 +166,18 @@ class org_gwtproject_i18n_client_TimeZone extends j_l_Object {
   }
   return (index == 0) ? 0 : this.f_adjustments__org_gwtproject_i18n_client_TimeZone_[index - 1];
  }
- /**
-  * @override
-  * @param {Date} date
-  * @return {?string}
-  * @public
-  */
- m_getGMTString__java_util_Date(date) {
+ /** @override @return {?string} */
+ m_getGMTString__java_util_Date(/** Date */ date) {
   return org_gwtproject_i18n_client_TimeZone.m_composeGMTString__int(this.m_getOffset__java_util_Date(date));
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getID__() {
   return this.f_timezoneID__org_gwtproject_i18n_client_TimeZone_;
  }
- /**
-  * @override
-  * @param {Date} date
-  * @return {?string}
-  * @public
-  */
- m_getISOTimeZoneString__java_util_Date(date) {
+ /** @override @return {?string} */
+ m_getISOTimeZoneString__java_util_Date(/** Date */ date) {
   let offset = -this.m_getOffset__java_util_Date(date);
-  let data = /**@type {!Array<number>} */ ($Arrays.$init([43 /* '+' */, 48 /* '0' */, 48 /* '0' */, 58 /* ':' */, 48 /* '0' */, 48 /* '0' */], $char));
+  let data = /**@type {!Array<number>}*/ ($Arrays.$init([43 /* '+' */, 48 /* '0' */, 48 /* '0' */, 58 /* ':' */, 48 /* '0' */, 48 /* '0' */], $char));
   if (offset < 0) {
    $Arrays.$set(data, 0, 45 /* '-' */);
    offset = -offset;
@@ -246,33 +188,18 @@ class org_gwtproject_i18n_client_TimeZone extends j_l_Object {
   $Arrays.$set(data, 5, $Primitives.$narrowIntToChar((data[5] + $Primitives.$coerceDivision(offset % 10))));
   return j_l_String.$create__arrayOf_char(data);
  }
- /**
-  * @override
-  * @param {Date} date
-  * @return {?string}
-  * @public
-  */
- m_getLongName__java_util_Date(date) {
+ /** @override @return {?string} */
+ m_getLongName__java_util_Date(/** Date */ date) {
   return this.f_tzNames__org_gwtproject_i18n_client_TimeZone_[this.m_isDaylightTime__java_util_Date(date) ? org_gwtproject_i18n_client_TimeZone.f_DLT_LONG_NAME__org_gwtproject_i18n_client_TimeZone_ : org_gwtproject_i18n_client_TimeZone.f_STD_LONG_NAME__org_gwtproject_i18n_client_TimeZone_];
  }
- /**
-  * @override
-  * @param {Date} date
-  * @return {number}
-  * @public
-  */
- m_getOffset__java_util_Date(date) {
+ /** @override @return {number} */
+ m_getOffset__java_util_Date(/** Date */ date) {
   return this.f_standardOffset__org_gwtproject_i18n_client_TimeZone_ - this.m_getDaylightAdjustment__java_util_Date(date);
  }
- /**
-  * @override
-  * @param {Date} date
-  * @return {?string}
-  * @public
-  */
- m_getRFCTimeZoneString__java_util_Date(date) {
+ /** @override @return {?string} */
+ m_getRFCTimeZoneString__java_util_Date(/** Date */ date) {
   let offset = -this.m_getOffset__java_util_Date(date);
-  let data = /**@type {!Array<number>} */ ($Arrays.$init([43 /* '+' */, 48 /* '0' */, 48 /* '0' */, 48 /* '0' */, 48 /* '0' */], $char));
+  let data = /**@type {!Array<number>}*/ ($Arrays.$init([43 /* '+' */, 48 /* '0' */, 48 /* '0' */, 48 /* '0' */, 48 /* '0' */], $char));
   if (offset < 0) {
    $Arrays.$set(data, 0, 45 /* '-' */);
    offset = -offset;
@@ -283,51 +210,29 @@ class org_gwtproject_i18n_client_TimeZone extends j_l_Object {
   $Arrays.$set(data, 4, $Primitives.$narrowIntToChar((data[4] + $Primitives.$coerceDivision(offset % 10))));
   return j_l_String.$create__arrayOf_char(data);
  }
- /**
-  * @override
-  * @param {Date} date
-  * @return {?string}
-  * @public
-  */
- m_getShortName__java_util_Date(date) {
+ /** @override @return {?string} */
+ m_getShortName__java_util_Date(/** Date */ date) {
   return this.f_tzNames__org_gwtproject_i18n_client_TimeZone_[this.m_isDaylightTime__java_util_Date(date) ? org_gwtproject_i18n_client_TimeZone.f_DLT_SHORT_NAME__org_gwtproject_i18n_client_TimeZone_ : org_gwtproject_i18n_client_TimeZone.f_STD_SHORT_NAME__org_gwtproject_i18n_client_TimeZone_];
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getStandardOffset__() {
   return this.f_standardOffset__org_gwtproject_i18n_client_TimeZone_;
  }
- /**
-  * @override
-  * @param {Date} date
-  * @return {boolean}
-  * @public
-  */
- m_isDaylightTime__java_util_Date(date) {
+ /** @override @return {boolean} */
+ m_isDaylightTime__java_util_Date(/** Date */ date) {
   return this.m_getDaylightAdjustment__java_util_Date(date) > 0;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   org_gwtproject_i18n_client_TimeZone.$clinit = () =>{};
   org_gwtproject_i18n_client_TimeZone.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof org_gwtproject_i18n_client_TimeZone;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Integer = goog.module.get('java.lang.Integer$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -348,13 +253,13 @@ $Util.$setClassMetadata(org_gwtproject_i18n_client_TimeZone, 'org.gwtproject.i18
 
 TimeZone.$markImplementor(org_gwtproject_i18n_client_TimeZone);
 
-/** @public {number} @const */
+/**@const {number}*/
 org_gwtproject_i18n_client_TimeZone.f_STD_SHORT_NAME__org_gwtproject_i18n_client_TimeZone_ = 0;
-/** @public {number} @const */
+/**@const {number}*/
 org_gwtproject_i18n_client_TimeZone.f_STD_LONG_NAME__org_gwtproject_i18n_client_TimeZone_ = 1;
-/** @public {number} @const */
+/**@const {number}*/
 org_gwtproject_i18n_client_TimeZone.f_DLT_SHORT_NAME__org_gwtproject_i18n_client_TimeZone_ = 2;
-/** @public {number} @const */
+/**@const {number}*/
 org_gwtproject_i18n_client_TimeZone.f_DLT_LONG_NAME__org_gwtproject_i18n_client_TimeZone_ = 3;
 
 exports = org_gwtproject_i18n_client_TimeZone; 

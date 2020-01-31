@@ -10,53 +10,35 @@ let IsWidget = goog.forwardDeclare('org.gwtproject.user.client.ui.IsWidget$impl'
  * @implements {WidgetProvider}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(number):IsWidget} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(number):IsWidget */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(number):IsWidget} */
+  /**@type {?function(number):IsWidget}*/
   this.f_$$fn__org_gwtproject_user_client_ui_FiniteWidgetIterator_WidgetProvider_$LambdaAdaptor;
   this.$ctor__org_gwtproject_user_client_ui_FiniteWidgetIterator_WidgetProvider_$LambdaAdaptor__org_gwtproject_user_client_ui_FiniteWidgetIterator_WidgetProvider_$JsFunction(fn);
  }
- /**
-  * @param {?function(number):IsWidget} fn
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_FiniteWidgetIterator_WidgetProvider_$LambdaAdaptor__org_gwtproject_user_client_ui_FiniteWidgetIterator_WidgetProvider_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_user_client_ui_FiniteWidgetIterator_WidgetProvider_$LambdaAdaptor__org_gwtproject_user_client_ui_FiniteWidgetIterator_WidgetProvider_$JsFunction(/** ?function(number):IsWidget */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_user_client_ui_FiniteWidgetIterator_WidgetProvider_$LambdaAdaptor = fn;
  }
- /**
-  * @param {number} arg0
-  * @return {IsWidget}
-  * @public
-  */
- m_get__int(arg0) {
+ /** @return {IsWidget} */
+ m_get__int(/** number */ arg0) {
   let /** ?function(number):IsWidget */ $function;
   return ($function = this.f_$$fn__org_gwtproject_user_client_ui_FiniteWidgetIterator_WidgetProvider_$LambdaAdaptor, $function(arg0));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

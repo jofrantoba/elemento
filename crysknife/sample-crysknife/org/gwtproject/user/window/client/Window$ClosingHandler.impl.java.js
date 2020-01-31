@@ -9,49 +9,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.user.window.client.Wind
  * @interface
  */
 class ClosingHandler {
- /**
-  * @abstract
-  * @param {ClosingEvent} event
-  * @public
-  */
- m_onWindowClosing__org_gwtproject_user_window_client_Window_ClosingEvent(event) {}
- /**
-  * @param {?function(ClosingEvent):void} fn
-  * @return {ClosingHandler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onWindowClosing__org_gwtproject_user_window_client_Window_ClosingEvent(/** ClosingEvent */ event) {}
+ /** @return {ClosingHandler} */
+ static $adapt(/** ?function(ClosingEvent):void */ fn) {
   ClosingHandler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ClosingHandler.$clinit = () =>{};
   ClosingHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_window_client_Window_ClosingHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_window_client_Window_ClosingHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_window_client_Window_ClosingHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.user.window.client.Window.ClosingHandler.$LambdaAdaptor$impl');
  }

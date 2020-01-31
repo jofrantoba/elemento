@@ -23,45 +23,32 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {HasNativeEvent}
   */
 class DomEvent extends Event {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_nativeEvent__org_gwtproject_event_dom_client_DomEvent_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_relativeElem__org_gwtproject_event_dom_client_DomEvent_;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_dom_client_DomEvent__() {
   this.$ctor__org_gwtproject_event_shared_Event__();
  }
- /**
-  * @param {Object} nativeEvent
-  * @param {HasHandlers} handlerSource
-  * @public
-  */
- static m_fireNativeEvent__org_gwtproject_dom_client_NativeEvent__org_gwtproject_event_shared_HasHandlers(nativeEvent, handlerSource) {
+ 
+ static m_fireNativeEvent__org_gwtproject_dom_client_NativeEvent__org_gwtproject_event_shared_HasHandlers(/** Object */ nativeEvent, /** HasHandlers */ handlerSource) {
   DomEvent.$clinit();
   DomEvent.m_fireNativeEvent__org_gwtproject_dom_client_NativeEvent__org_gwtproject_event_shared_HasHandlers__org_gwtproject_dom_client_Element(nativeEvent, handlerSource, null);
  }
- /**
-  * @param {Object} nativeEvent
-  * @param {HasHandlers} handlerSource
-  * @param {Object} relativeElem
-  * @public
-  */
- static m_fireNativeEvent__org_gwtproject_dom_client_NativeEvent__org_gwtproject_event_shared_HasHandlers__org_gwtproject_dom_client_Element(nativeEvent, handlerSource, relativeElem) {
+ 
+ static m_fireNativeEvent__org_gwtproject_dom_client_NativeEvent__org_gwtproject_event_shared_HasHandlers__org_gwtproject_dom_client_Element(/** Object */ nativeEvent, /** HasHandlers */ handlerSource, /** Object */ relativeElem) {
   DomEvent.$clinit();
   $Asserts.$assertWithMessage(!$Equality.$same(nativeEvent, null), "nativeEvent must not be null");
   if (!$Equality.$same(DomEvent.$f_registered__org_gwtproject_event_dom_client_DomEvent_, null)) {
-   let types = /**@type {List<Type<?>>} */ ($Casts.$to($Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(DomEvent.$f_registered__org_gwtproject_event_dom_client_DomEvent_, NativeEvent_$Overlay.m_getType__$devirt__org_gwtproject_dom_client_NativeEvent(nativeEvent)), List));
+   let types = /**@type {List<Type<?>>}*/ ($Casts.$to($Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(DomEvent.$f_registered__org_gwtproject_event_dom_client_DomEvent_, NativeEvent_$Overlay.m_getType__$devirt__org_gwtproject_dom_client_NativeEvent(nativeEvent)), List));
    if (!$Equality.$same(types, null)) {
     for (let $iterator = types.m_iterator__(); $iterator.m_hasNext__(); ) {
-     let type = /**@type {Type<EventHandler>} */ ($Casts.$to($iterator.m_next__(), Type));
+     let type = /**@type {Type<EventHandler>}*/ ($Casts.$to($iterator.m_next__(), Type));
      let currentNative = type.f_flyweight__org_gwtproject_event_dom_client_DomEvent_Type_.f_nativeEvent__org_gwtproject_event_dom_client_DomEvent_;
      let currentRelativeElem = type.f_flyweight__org_gwtproject_event_dom_client_DomEvent_Type_.f_relativeElem__org_gwtproject_event_dom_client_DomEvent_;
      type.f_flyweight__org_gwtproject_event_dom_client_DomEvent_Type_.m_setNativeEvent__org_gwtproject_dom_client_NativeEvent(nativeEvent);
@@ -73,94 +60,56 @@ class DomEvent extends Event {
    }
   }
  }
- /**
-  * @public
-  */
+ 
  static m_init__() {
   DomEvent.$clinit();
-  DomEvent.$f_registered__org_gwtproject_event_dom_client_DomEvent_ = /**@type {Object<string, List<Type<?>>>} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
+  DomEvent.$f_registered__org_gwtproject_event_dom_client_DomEvent_ = /**@type {Object<string, List<Type<?>>>}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
  }
- /**
-  * @abstract
-  * @override
-  * @return {Type<H>}
-  * @public
-  */
+ /** @abstract @override @return {Type<H>} */
  m_getAssociatedType__() {}
- /**
-  * @override
-  * @return {Object}
-  * @public
-  */
+ /** @override @return {Object} */
  m_getNativeEvent__() {
   return this.f_nativeEvent__org_gwtproject_event_dom_client_DomEvent_;
  }
- /**
-  * @param {Object} nativeEvent
-  * @public
-  */
- m_setNativeEvent__org_gwtproject_dom_client_NativeEvent(nativeEvent) {
+ 
+ m_setNativeEvent__org_gwtproject_dom_client_NativeEvent(/** Object */ nativeEvent) {
   this.f_nativeEvent__org_gwtproject_event_dom_client_DomEvent_ = nativeEvent;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getRelativeElement__() {
   return this.f_relativeElem__org_gwtproject_event_dom_client_DomEvent_;
  }
- /**
-  * @param {Object} relativeElem
-  * @public
-  */
- m_setRelativeElement__org_gwtproject_dom_client_Element(relativeElem) {
+ 
+ m_setRelativeElement__org_gwtproject_dom_client_Element(/** Object */ relativeElem) {
   this.f_relativeElem__org_gwtproject_event_dom_client_DomEvent_ = relativeElem;
  }
- /**
-  * @public
-  */
+ 
  m_preventDefault__() {
   NativeEvent_$Overlay.m_preventDefault__$devirt__org_gwtproject_dom_client_NativeEvent(this.f_nativeEvent__org_gwtproject_event_dom_client_DomEvent_);
  }
- /**
-  * @public
-  */
+ 
  m_stopPropagation__() {
   NativeEvent_$Overlay.m_stopPropagation__$devirt__org_gwtproject_dom_client_NativeEvent(this.f_nativeEvent__org_gwtproject_event_dom_client_DomEvent_);
  }
- /**
-  * @return {Object<string, List<Type<?>>>}
-  * @public
-  */
+ /** @return {Object<string, List<Type<?>>>} */
  static get f_registered__org_gwtproject_event_dom_client_DomEvent_() {
   return (DomEvent.$clinit(), DomEvent.$f_registered__org_gwtproject_event_dom_client_DomEvent_);
  }
- /**
-  * @param {Object<string, List<Type<?>>>} value
-  * @public
-  */
- static set f_registered__org_gwtproject_event_dom_client_DomEvent_(value) {
+ 
+ static set f_registered__org_gwtproject_event_dom_client_DomEvent_(/** Object<string, List<Type<?>>> */ value) {
   (DomEvent.$clinit(), DomEvent.$f_registered__org_gwtproject_event_dom_client_DomEvent_ = value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomEvent.$clinit = () =>{};
   DomEvent.$loadModules();
   Event.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   List = goog.module.get('java.util.List$impl');
   Js = goog.module.get('jsinterop.base.Js$impl');
@@ -177,7 +126,7 @@ $Util.$setClassMetadata(DomEvent, 'org.gwtproject.event.dom.client.DomEvent');
 
 HasNativeEvent.$markImplementor(DomEvent);
 
-/** @private {Object<string, List<Type<?>>>} */
+/**@private {Object<string, List<Type<?>>>}*/
 DomEvent.$f_registered__org_gwtproject_event_dom_client_DomEvent_;
 
 exports = DomEvent; 

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CustomScrollPanel_ResourcesImpl$customScrollPanelStyleInitializer.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;MAgCuB,iC;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,wD;EAAAA,qH;EAAAA,iB;;;;;CAAA,wG;EAAAC,iC;;;;;;QAIY,O;EAAAC,4C;EAC7BA,iI;;;;;QALiB,O;EAAAC,oD;EAAAA,iD;EAAAA,qB;EAEjBA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;MAgCuB,iC;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,wD;EAAAA,qH;EAAAA,iB;;;CAAA,wG;EAAAC,iC;;;QAIY,O;EAAAC,4C;EAC7BA,iI;;;QALiB,O;EAAAC,oD;EAAAA,iD;EAAAA,qB;EAEjBA;",
 "sources":["CustomScrollPanel_ResourcesImpl.java"],
 "names":["org.gwtproject.user.client.ui.CustomScrollPanel_ResourcesImpl$customScrollPanelStyleInitializer.<synthetic: ctor_js>","org.gwtproject.user.client.ui.CustomScrollPanel_ResourcesImpl$customScrollPanelStyleInitializer.<synthetic: ctor_create>","org.gwtproject.user.client.ui.CustomScrollPanel_ResourcesImpl$customScrollPanelStyleInitializer.<init>","org.gwtproject.user.client.ui.CustomScrollPanel_ResourcesImpl$customScrollPanelStyleInitializer.get","org.gwtproject.user.client.ui.CustomScrollPanel_ResourcesImpl$customScrollPanelStyleInitializer.<clinit>"]
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"KeyEvent.impl.java.js",
-"lineCount":68,
-"mappings":"A;;;;;;;;;;;;;MA0BsB,Q;;;;CAAA,W;EAAAA,Q;;;;;CAAA,iD;EAAAC,yD;;;;;;CAQL,wB;EACbC,uH;;;;;;CAQa,oB;EACbC,wG;;;;;;CAQa,kB;EACbC,yG;;;;;;CAQa,iB;EACbC,wG;;;;;;CAQa,gB;EACbC,uG;;;;;QA7CkB,O;EAAAC,2B;EAAAA,wB;EAAAA;",
+"lineCount":47,
+"mappings":"A;;;;;;;;;;;;;MA0BsB,Q;;CAAA,W;EAAAA,Q;;;CAAA,iD;EAAAC,yD;;;CAQL,wB;EACbC,uH;;;CAQa,oB;EACbC,wG;;;CAQa,kB;EACbC,yG;;;CAQa,iB;EACbC,wG;;;CAQa,gB;EACbC,uG;;;QA7CkB,O;EAAAC,2B;EAAAA,wB;EAAAA;",
 "sources":["KeyEvent.java"],
 "names":["org.gwtproject.event.dom.client.KeyEvent.<synthetic: ctor_js>","org.gwtproject.event.dom.client.KeyEvent.<init>","org.gwtproject.event.dom.client.KeyEvent.isAnyModifierKeyDown","org.gwtproject.event.dom.client.KeyEvent.isControlKeyDown","org.gwtproject.event.dom.client.KeyEvent.isShiftKeyDown","org.gwtproject.event.dom.client.KeyEvent.isMetaKeyDown","org.gwtproject.event.dom.client.KeyEvent.isAltKeyDown","org.gwtproject.event.dom.client.KeyEvent.<clinit>"]
 }

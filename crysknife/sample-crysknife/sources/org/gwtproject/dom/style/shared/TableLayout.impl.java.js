@@ -16,66 +16,40 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @implements {HasCssName}
   */
 class TableLayout extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_dom_style_shared_TableLayout__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_dom_style_shared_TableLayout__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @abstract
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @override @return {?string} */
  m_getCssName__() {}
- /**
-  * @param {string} name
-  * @return {!TableLayout}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!TableLayout} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   TableLayout.$clinit();
   if ($Equality.$same(TableLayout.f_namesToValuesMap__org_gwtproject_dom_style_shared_TableLayout_, null)) {
    TableLayout.f_namesToValuesMap__org_gwtproject_dom_style_shared_TableLayout_ = $Enums.createMapFromValues(TableLayout.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, TableLayout.f_namesToValuesMap__org_gwtproject_dom_style_shared_TableLayout_);
  }
- /**
-  * @return {!Array<!TableLayout>}
-  * @public
-  */
+ /** @return {!Array<!TableLayout>} */
  static m_values__() {
   TableLayout.$clinit();
-  return /**@type {!Array<TableLayout>} */ ($Arrays.$init([TableLayout.$f_AUTO__org_gwtproject_dom_style_shared_TableLayout, TableLayout.$f_FIXED__org_gwtproject_dom_style_shared_TableLayout], TableLayout));
+  return /**@type {!Array<TableLayout>}*/ ($Arrays.$init([TableLayout.$f_AUTO__org_gwtproject_dom_style_shared_TableLayout, TableLayout.$f_FIXED__org_gwtproject_dom_style_shared_TableLayout], TableLayout));
  }
- /**
-  * @return {!TableLayout}
-  * @public
-  */
+ /** @return {!TableLayout} */
  static get f_AUTO__org_gwtproject_dom_style_shared_TableLayout() {
   return (TableLayout.$clinit(), TableLayout.$f_AUTO__org_gwtproject_dom_style_shared_TableLayout);
  }
- /**
-  * @return {!TableLayout}
-  * @public
-  */
+ /** @return {!TableLayout} */
  static get f_FIXED__org_gwtproject_dom_style_shared_TableLayout() {
   return (TableLayout.$clinit(), TableLayout.$f_FIXED__org_gwtproject_dom_style_shared_TableLayout);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TableLayout.$clinit = () =>{};
   TableLayout.$loadModules();
@@ -84,17 +58,11 @@ class TableLayout extends Enum {
   TableLayout.$f_FIXED__org_gwtproject_dom_style_shared_TableLayout = $2.$create__java_lang_String__int($Util.$makeEnumName("FIXED"), TableLayout.$ordinal$f_FIXED__org_gwtproject_dom_style_shared_TableLayout);
   TableLayout.f_namesToValuesMap__org_gwtproject_dom_style_shared_TableLayout_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TableLayout;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.dom.style.shared.TableLayout.$1$impl');
@@ -108,15 +76,15 @@ $Util.$setClassMetadataForEnum(TableLayout, 'org.gwtproject.dom.style.shared.Tab
 
 HasCssName.$markImplementor(TableLayout);
 
-/** @private {!TableLayout} */
+/**@private {!TableLayout}*/
 TableLayout.$f_AUTO__org_gwtproject_dom_style_shared_TableLayout;
-/** @private {!TableLayout} */
+/**@private {!TableLayout}*/
 TableLayout.$f_FIXED__org_gwtproject_dom_style_shared_TableLayout;
-/** @public {Map<?string, !TableLayout>} */
+/**@type {Map<?string, !TableLayout>}*/
 TableLayout.f_namesToValuesMap__org_gwtproject_dom_style_shared_TableLayout_;
-/** @public {number} @const */
+/**@const {number}*/
 TableLayout.$ordinal$f_AUTO__org_gwtproject_dom_style_shared_TableLayout = 0;
-/** @public {number} @const */
+/**@const {number}*/
 TableLayout.$ordinal$f_FIXED__org_gwtproject_dom_style_shared_TableLayout = 1;
 
 exports = TableLayout; 

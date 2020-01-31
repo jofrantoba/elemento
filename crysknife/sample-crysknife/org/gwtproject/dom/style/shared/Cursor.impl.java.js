@@ -32,178 +32,104 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @implements {HasCssName}
   */
 class Cursor extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_dom_style_shared_Cursor__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_dom_style_shared_Cursor__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @abstract
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @override @return {?string} */
  m_getCssName__() {}
- /**
-  * @param {string} name
-  * @return {!Cursor}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!Cursor} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   Cursor.$clinit();
   if ($Equality.$same(Cursor.f_namesToValuesMap__org_gwtproject_dom_style_shared_Cursor_, null)) {
    Cursor.f_namesToValuesMap__org_gwtproject_dom_style_shared_Cursor_ = $Enums.createMapFromValues(Cursor.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, Cursor.f_namesToValuesMap__org_gwtproject_dom_style_shared_Cursor_);
  }
- /**
-  * @return {!Array<!Cursor>}
-  * @public
-  */
+ /** @return {!Array<!Cursor>} */
  static m_values__() {
   Cursor.$clinit();
-  return /**@type {!Array<Cursor>} */ ($Arrays.$init([Cursor.$f_DEFAULT__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_AUTO__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_CROSSHAIR__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_POINTER__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_MOVE__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_E_RESIZE__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_NE_RESIZE__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_NW_RESIZE__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_N_RESIZE__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_SE_RESIZE__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_SW_RESIZE__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_S_RESIZE__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_W_RESIZE__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_TEXT__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_WAIT__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_HELP__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_COL_RESIZE__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_ROW_RESIZE__org_gwtproject_dom_style_shared_Cursor], Cursor));
+  return /**@type {!Array<Cursor>}*/ ($Arrays.$init([Cursor.$f_DEFAULT__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_AUTO__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_CROSSHAIR__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_POINTER__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_MOVE__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_E_RESIZE__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_NE_RESIZE__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_NW_RESIZE__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_N_RESIZE__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_SE_RESIZE__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_SW_RESIZE__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_S_RESIZE__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_W_RESIZE__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_TEXT__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_WAIT__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_HELP__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_COL_RESIZE__org_gwtproject_dom_style_shared_Cursor, Cursor.$f_ROW_RESIZE__org_gwtproject_dom_style_shared_Cursor], Cursor));
  }
- /**
-  * @return {!Cursor}
-  * @public
-  */
+ /** @return {!Cursor} */
  static get f_DEFAULT__org_gwtproject_dom_style_shared_Cursor() {
   return (Cursor.$clinit(), Cursor.$f_DEFAULT__org_gwtproject_dom_style_shared_Cursor);
  }
- /**
-  * @return {!Cursor}
-  * @public
-  */
+ /** @return {!Cursor} */
  static get f_AUTO__org_gwtproject_dom_style_shared_Cursor() {
   return (Cursor.$clinit(), Cursor.$f_AUTO__org_gwtproject_dom_style_shared_Cursor);
  }
- /**
-  * @return {!Cursor}
-  * @public
-  */
+ /** @return {!Cursor} */
  static get f_CROSSHAIR__org_gwtproject_dom_style_shared_Cursor() {
   return (Cursor.$clinit(), Cursor.$f_CROSSHAIR__org_gwtproject_dom_style_shared_Cursor);
  }
- /**
-  * @return {!Cursor}
-  * @public
-  */
+ /** @return {!Cursor} */
  static get f_POINTER__org_gwtproject_dom_style_shared_Cursor() {
   return (Cursor.$clinit(), Cursor.$f_POINTER__org_gwtproject_dom_style_shared_Cursor);
  }
- /**
-  * @return {!Cursor}
-  * @public
-  */
+ /** @return {!Cursor} */
  static get f_MOVE__org_gwtproject_dom_style_shared_Cursor() {
   return (Cursor.$clinit(), Cursor.$f_MOVE__org_gwtproject_dom_style_shared_Cursor);
  }
- /**
-  * @return {!Cursor}
-  * @public
-  */
+ /** @return {!Cursor} */
  static get f_E_RESIZE__org_gwtproject_dom_style_shared_Cursor() {
   return (Cursor.$clinit(), Cursor.$f_E_RESIZE__org_gwtproject_dom_style_shared_Cursor);
  }
- /**
-  * @return {!Cursor}
-  * @public
-  */
+ /** @return {!Cursor} */
  static get f_NE_RESIZE__org_gwtproject_dom_style_shared_Cursor() {
   return (Cursor.$clinit(), Cursor.$f_NE_RESIZE__org_gwtproject_dom_style_shared_Cursor);
  }
- /**
-  * @return {!Cursor}
-  * @public
-  */
+ /** @return {!Cursor} */
  static get f_NW_RESIZE__org_gwtproject_dom_style_shared_Cursor() {
   return (Cursor.$clinit(), Cursor.$f_NW_RESIZE__org_gwtproject_dom_style_shared_Cursor);
  }
- /**
-  * @return {!Cursor}
-  * @public
-  */
+ /** @return {!Cursor} */
  static get f_N_RESIZE__org_gwtproject_dom_style_shared_Cursor() {
   return (Cursor.$clinit(), Cursor.$f_N_RESIZE__org_gwtproject_dom_style_shared_Cursor);
  }
- /**
-  * @return {!Cursor}
-  * @public
-  */
+ /** @return {!Cursor} */
  static get f_SE_RESIZE__org_gwtproject_dom_style_shared_Cursor() {
   return (Cursor.$clinit(), Cursor.$f_SE_RESIZE__org_gwtproject_dom_style_shared_Cursor);
  }
- /**
-  * @return {!Cursor}
-  * @public
-  */
+ /** @return {!Cursor} */
  static get f_SW_RESIZE__org_gwtproject_dom_style_shared_Cursor() {
   return (Cursor.$clinit(), Cursor.$f_SW_RESIZE__org_gwtproject_dom_style_shared_Cursor);
  }
- /**
-  * @return {!Cursor}
-  * @public
-  */
+ /** @return {!Cursor} */
  static get f_S_RESIZE__org_gwtproject_dom_style_shared_Cursor() {
   return (Cursor.$clinit(), Cursor.$f_S_RESIZE__org_gwtproject_dom_style_shared_Cursor);
  }
- /**
-  * @return {!Cursor}
-  * @public
-  */
+ /** @return {!Cursor} */
  static get f_W_RESIZE__org_gwtproject_dom_style_shared_Cursor() {
   return (Cursor.$clinit(), Cursor.$f_W_RESIZE__org_gwtproject_dom_style_shared_Cursor);
  }
- /**
-  * @return {!Cursor}
-  * @public
-  */
+ /** @return {!Cursor} */
  static get f_TEXT__org_gwtproject_dom_style_shared_Cursor() {
   return (Cursor.$clinit(), Cursor.$f_TEXT__org_gwtproject_dom_style_shared_Cursor);
  }
- /**
-  * @return {!Cursor}
-  * @public
-  */
+ /** @return {!Cursor} */
  static get f_WAIT__org_gwtproject_dom_style_shared_Cursor() {
   return (Cursor.$clinit(), Cursor.$f_WAIT__org_gwtproject_dom_style_shared_Cursor);
  }
- /**
-  * @return {!Cursor}
-  * @public
-  */
+ /** @return {!Cursor} */
  static get f_HELP__org_gwtproject_dom_style_shared_Cursor() {
   return (Cursor.$clinit(), Cursor.$f_HELP__org_gwtproject_dom_style_shared_Cursor);
  }
- /**
-  * @return {!Cursor}
-  * @public
-  */
+ /** @return {!Cursor} */
  static get f_COL_RESIZE__org_gwtproject_dom_style_shared_Cursor() {
   return (Cursor.$clinit(), Cursor.$f_COL_RESIZE__org_gwtproject_dom_style_shared_Cursor);
  }
- /**
-  * @return {!Cursor}
-  * @public
-  */
+ /** @return {!Cursor} */
  static get f_ROW_RESIZE__org_gwtproject_dom_style_shared_Cursor() {
   return (Cursor.$clinit(), Cursor.$f_ROW_RESIZE__org_gwtproject_dom_style_shared_Cursor);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Cursor.$clinit = () =>{};
   Cursor.$loadModules();
@@ -228,17 +154,11 @@ class Cursor extends Enum {
   Cursor.$f_ROW_RESIZE__org_gwtproject_dom_style_shared_Cursor = $18.$create__java_lang_String__int($Util.$makeEnumName("ROW_RESIZE"), Cursor.$ordinal$f_ROW_RESIZE__org_gwtproject_dom_style_shared_Cursor);
   Cursor.f_namesToValuesMap__org_gwtproject_dom_style_shared_Cursor_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Cursor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.dom.style.shared.Cursor.$1$impl');
@@ -268,79 +188,79 @@ $Util.$setClassMetadataForEnum(Cursor, 'org.gwtproject.dom.style.shared.Cursor')
 
 HasCssName.$markImplementor(Cursor);
 
-/** @private {!Cursor} */
+/**@private {!Cursor}*/
 Cursor.$f_DEFAULT__org_gwtproject_dom_style_shared_Cursor;
-/** @private {!Cursor} */
+/**@private {!Cursor}*/
 Cursor.$f_AUTO__org_gwtproject_dom_style_shared_Cursor;
-/** @private {!Cursor} */
+/**@private {!Cursor}*/
 Cursor.$f_CROSSHAIR__org_gwtproject_dom_style_shared_Cursor;
-/** @private {!Cursor} */
+/**@private {!Cursor}*/
 Cursor.$f_POINTER__org_gwtproject_dom_style_shared_Cursor;
-/** @private {!Cursor} */
+/**@private {!Cursor}*/
 Cursor.$f_MOVE__org_gwtproject_dom_style_shared_Cursor;
-/** @private {!Cursor} */
+/**@private {!Cursor}*/
 Cursor.$f_E_RESIZE__org_gwtproject_dom_style_shared_Cursor;
-/** @private {!Cursor} */
+/**@private {!Cursor}*/
 Cursor.$f_NE_RESIZE__org_gwtproject_dom_style_shared_Cursor;
-/** @private {!Cursor} */
+/**@private {!Cursor}*/
 Cursor.$f_NW_RESIZE__org_gwtproject_dom_style_shared_Cursor;
-/** @private {!Cursor} */
+/**@private {!Cursor}*/
 Cursor.$f_N_RESIZE__org_gwtproject_dom_style_shared_Cursor;
-/** @private {!Cursor} */
+/**@private {!Cursor}*/
 Cursor.$f_SE_RESIZE__org_gwtproject_dom_style_shared_Cursor;
-/** @private {!Cursor} */
+/**@private {!Cursor}*/
 Cursor.$f_SW_RESIZE__org_gwtproject_dom_style_shared_Cursor;
-/** @private {!Cursor} */
+/**@private {!Cursor}*/
 Cursor.$f_S_RESIZE__org_gwtproject_dom_style_shared_Cursor;
-/** @private {!Cursor} */
+/**@private {!Cursor}*/
 Cursor.$f_W_RESIZE__org_gwtproject_dom_style_shared_Cursor;
-/** @private {!Cursor} */
+/**@private {!Cursor}*/
 Cursor.$f_TEXT__org_gwtproject_dom_style_shared_Cursor;
-/** @private {!Cursor} */
+/**@private {!Cursor}*/
 Cursor.$f_WAIT__org_gwtproject_dom_style_shared_Cursor;
-/** @private {!Cursor} */
+/**@private {!Cursor}*/
 Cursor.$f_HELP__org_gwtproject_dom_style_shared_Cursor;
-/** @private {!Cursor} */
+/**@private {!Cursor}*/
 Cursor.$f_COL_RESIZE__org_gwtproject_dom_style_shared_Cursor;
-/** @private {!Cursor} */
+/**@private {!Cursor}*/
 Cursor.$f_ROW_RESIZE__org_gwtproject_dom_style_shared_Cursor;
-/** @public {Map<?string, !Cursor>} */
+/**@type {Map<?string, !Cursor>}*/
 Cursor.f_namesToValuesMap__org_gwtproject_dom_style_shared_Cursor_;
-/** @public {number} @const */
+/**@const {number}*/
 Cursor.$ordinal$f_DEFAULT__org_gwtproject_dom_style_shared_Cursor = 0;
-/** @public {number} @const */
+/**@const {number}*/
 Cursor.$ordinal$f_AUTO__org_gwtproject_dom_style_shared_Cursor = 1;
-/** @public {number} @const */
+/**@const {number}*/
 Cursor.$ordinal$f_CROSSHAIR__org_gwtproject_dom_style_shared_Cursor = 2;
-/** @public {number} @const */
+/**@const {number}*/
 Cursor.$ordinal$f_POINTER__org_gwtproject_dom_style_shared_Cursor = 3;
-/** @public {number} @const */
+/**@const {number}*/
 Cursor.$ordinal$f_MOVE__org_gwtproject_dom_style_shared_Cursor = 4;
-/** @public {number} @const */
+/**@const {number}*/
 Cursor.$ordinal$f_E_RESIZE__org_gwtproject_dom_style_shared_Cursor = 5;
-/** @public {number} @const */
+/**@const {number}*/
 Cursor.$ordinal$f_NE_RESIZE__org_gwtproject_dom_style_shared_Cursor = 6;
-/** @public {number} @const */
+/**@const {number}*/
 Cursor.$ordinal$f_NW_RESIZE__org_gwtproject_dom_style_shared_Cursor = 7;
-/** @public {number} @const */
+/**@const {number}*/
 Cursor.$ordinal$f_N_RESIZE__org_gwtproject_dom_style_shared_Cursor = 8;
-/** @public {number} @const */
+/**@const {number}*/
 Cursor.$ordinal$f_SE_RESIZE__org_gwtproject_dom_style_shared_Cursor = 9;
-/** @public {number} @const */
+/**@const {number}*/
 Cursor.$ordinal$f_SW_RESIZE__org_gwtproject_dom_style_shared_Cursor = 10;
-/** @public {number} @const */
+/**@const {number}*/
 Cursor.$ordinal$f_S_RESIZE__org_gwtproject_dom_style_shared_Cursor = 11;
-/** @public {number} @const */
+/**@const {number}*/
 Cursor.$ordinal$f_W_RESIZE__org_gwtproject_dom_style_shared_Cursor = 12;
-/** @public {number} @const */
+/**@const {number}*/
 Cursor.$ordinal$f_TEXT__org_gwtproject_dom_style_shared_Cursor = 13;
-/** @public {number} @const */
+/**@const {number}*/
 Cursor.$ordinal$f_WAIT__org_gwtproject_dom_style_shared_Cursor = 14;
-/** @public {number} @const */
+/**@const {number}*/
 Cursor.$ordinal$f_HELP__org_gwtproject_dom_style_shared_Cursor = 15;
-/** @public {number} @const */
+/**@const {number}*/
 Cursor.$ordinal$f_COL_RESIZE__org_gwtproject_dom_style_shared_Cursor = 16;
-/** @public {number} @const */
+/**@const {number}*/
 Cursor.$ordinal$f_ROW_RESIZE__org_gwtproject_dom_style_shared_Cursor = 17;
 
 exports = Cursor; 

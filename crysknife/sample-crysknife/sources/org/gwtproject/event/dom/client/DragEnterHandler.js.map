@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DragEnterHandler.impl.java.js",
-"lineCount":34,
-"mappings":"A;;;;;;;;;;;;MAoBiB,gB;;;;;;CAOV,6D,CAA2BA,K;;;;;;QAPjB,M;EAAAC,2B;EAAAA,8B;;;;;QAAA,O;EAAAC,mC;EAAAA;",
+"lineCount":24,
+"mappings":"A;;;;;;;;;;;;MAoBiB,gB;;CAOV,6D,uBAA2BA,K;;QAPjB,M;EAAAC,2B;EAAAA,8B;;;QAAA,O;EAAAC,mC;EAAAA;",
 "sources":["DragEnterHandler.java"],
 "names":["event","org.gwtproject.event.dom.client.DragEnterHandler.<synthetic: adapt_lambda>","org.gwtproject.event.dom.client.DragEnterHandler.<clinit>"]
 }

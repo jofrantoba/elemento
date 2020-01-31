@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasHTML.impl.java.js",
-"lineCount":28,
-"mappings":"A;;;;;;;;;MAkCiB,O;;;;;;CAOR,W;;;;;;CASF,2B,CAA2BA,I;;;;QAhBjB,O;EAAAC,0B;EAAAA;",
+"lineCount":18,
+"mappings":"A;;;;;;;;;MAkCiB,O;;CAOR,W;;CASF,2B,gBAA2BA,I;;QAhBjB,O;EAAAC,0B;EAAAA;",
 "sources":["HasHTML.java"],
 "names":["html","org.gwtproject.user.client.ui.HasHTML.<clinit>"]
 }

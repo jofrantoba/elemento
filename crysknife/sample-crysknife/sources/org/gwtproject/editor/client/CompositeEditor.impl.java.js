@@ -12,54 +12,28 @@ let Editor = goog.forwardDeclare('org.gwtproject.editor.client.Editor$impl');
  * @extends {ValueAwareEditor<T>}
  */
 class CompositeEditor {
- /**
-  * @abstract
-  * @return {E}
-  * @public
-  */
+ /** @abstract @return {E} */
  m_createEditorForTraversal__() {}
- /**
-  * @abstract
-  * @param {E} subEditor
-  * @return {?string}
-  * @public
-  */
- m_getPathElement__org_gwtproject_editor_client_Editor(subEditor) {}
- /**
-  * @abstract
-  * @param {EditorChain<C, E>} chain
-  * @public
-  */
- m_setEditorChain__org_gwtproject_editor_client_CompositeEditor_EditorChain(chain) {}
- /**
-  * @public
-  */
+ /** @abstract @return {?string} */
+ m_getPathElement__org_gwtproject_editor_client_Editor(/** E */ subEditor) {}
+ /** @abstract */
+ m_setEditorChain__org_gwtproject_editor_client_CompositeEditor_EditorChain(/** EditorChain<C, E> */ chain) {}
+ 
  static $clinit() {
   CompositeEditor.$clinit = () =>{};
   CompositeEditor.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ValueAwareEditor.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_editor_client_CompositeEditor = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ValueAwareEditor.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_editor_client_CompositeEditor = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_editor_client_CompositeEditor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

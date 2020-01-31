@@ -7,61 +7,40 @@ let NumberConstants = goog.forwardDeclare('org.gwtproject.i18n.client.constants.
 let NumberConstantsImpl__ = goog.forwardDeclare('org.gwtproject.i18n.client.impl.NumberConstantsImpl_$impl');
 
 class LocaleInfoImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!LocaleInfoImpl}
-  * @public
-  */
+ /** @return {!LocaleInfoImpl} */
  static $create__() {
   LocaleInfoImpl.$clinit();
   let $instance = new LocaleInfoImpl();
   $instance.$ctor__org_gwtproject_i18n_client_impl_LocaleInfoImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_i18n_client_impl_LocaleInfoImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_hasAnyRTL__() {
   return false;
  }
- /**
-  * @return {NumberConstants}
-  * @public
-  */
+ /** @return {NumberConstants} */
  m_getNumberConstants__() {
   return NumberConstantsImpl__.$create__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   LocaleInfoImpl.$clinit = () =>{};
   LocaleInfoImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof LocaleInfoImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   NumberConstantsImpl__ = goog.module.get('org.gwtproject.i18n.client.impl.NumberConstantsImpl_$impl');
  }

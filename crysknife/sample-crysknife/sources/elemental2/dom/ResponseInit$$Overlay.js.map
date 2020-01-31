@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ResponseInit$$Overlay.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;;MA0BiB,qB;;;;;QAmCK,U;EAAAA,gC;EAClBA,4F;;;;;;;QAgBW,0E,WAAmBC,O;EAAnBC,gC;EACXA,mF;;;;;;;QAIW,2E,WAAoCD,O;EAApCC,gC;EACXA,mF;;;;;;;QAIW,gF,WAAiCD,O;EAAjCC,gC;EACXA,mF;;;;;;;QAIW,oF,WAAsBD,O;EAAtBC,gC;EACXA,iM;;;;;QApEa,O;EAAAC,wC;EAAAA;",
+"lineCount":40,
+"mappings":"A;;;;;;;;;;MA0BiB,qB;;QAmCK,U;EAAAA,gC;EAClBA,2F;;;QAgBW,0E,+CAAmBC,O;EAAnBC,gC;EACXA,kF;;;QAIW,2E,6DAAoCD,O;EAApCC,gC;EACXA,kF;;;QAIW,gF,+DAAiCD,O;EAAjCC,gC;EACXA,kF;;;QAIW,oF,6DAAsBD,O;EAAtBC,gC;EACXA,gM;;;QApEa,O;EAAAC,wC;EAAAA;",
 "sources":["ResponseInit.java"],
 "names":["elemental2.dom.ResponseInit$$Overlay.create","headers","elemental2.dom.ResponseInit$$Overlay.setHeaders__$devirt","elemental2.dom.ResponseInit$$Overlay.<clinit>"]
 }

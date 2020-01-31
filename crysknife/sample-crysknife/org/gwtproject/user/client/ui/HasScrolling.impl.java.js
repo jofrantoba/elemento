@@ -14,38 +14,25 @@ const IsWidget = goog.require('org.gwtproject.user.client.ui.IsWidget$impl');
  * @extends {IsWidget}
  */
 class HasScrolling {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HasScrolling.$clinit = () =>{};
   HasScrolling.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasHorizontalScrolling.$markImplementor(classConstructor);
-  HasVerticalScrolling.$markImplementor(classConstructor);
-  HasScrollHandlers.$markImplementor(classConstructor);
-  IsWidget.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_HasScrolling = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasHorizontalScrolling.$markImplementor(ctor);
+  HasVerticalScrolling.$markImplementor(ctor);
+  HasScrollHandlers.$markImplementor(ctor);
+  IsWidget.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_HasScrolling = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_HasScrolling;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

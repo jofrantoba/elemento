@@ -13,40 +13,26 @@ let $1 = goog.forwardDeclare('org.gwtproject.user.client.ui.impl.PopupImplMozill
 let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 
 class PopupImplMozilla extends PopupImpl {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!PopupImplMozilla}
-  * @public
-  */
+ /** @return {!PopupImplMozilla} */
  static $create__() {
   PopupImplMozilla.$clinit();
   let $instance = new PopupImplMozilla();
   $instance.$ctor__org_gwtproject_user_client_ui_impl_PopupImplMozilla__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_impl_PopupImplMozilla__() {
   this.$ctor__org_gwtproject_user_client_ui_impl_PopupImpl__();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  static m_isFF2Mac__() {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__());
  }
- /**
-  * @override
-  * @return {Object}
-  * @public
-  */
+ /** @override @return {Object} */
  m_createElement__() {
   let outerElem = DOM.m_createDiv__();
   if (PopupImplMozilla.f_isFF2Mac__org_gwtproject_user_client_ui_impl_PopupImplMozilla_) {
@@ -55,55 +41,32 @@ class PopupImplMozilla extends PopupImpl {
   }
   return outerElem;
  }
- /**
-  * @override
-  * @param {Object} outerElem
-  * @return {Object}
-  * @public
-  */
- m_getContainerElement__org_gwtproject_dom_client_Element(outerElem) {
+ /** @override @return {Object} */
+ m_getContainerElement__org_gwtproject_dom_client_Element(/** Object */ outerElem) {
   return PopupImplMozilla.f_isFF2Mac__org_gwtproject_user_client_ui_impl_PopupImplMozilla_ ? $Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(outerElem) : outerElem;
  }
- /**
-  * @override
-  * @param {Object} outerElem
-  * @return {Object}
-  * @public
-  */
- m_getStyleElement__org_gwtproject_dom_client_Element(outerElem) {
+ /** @override @return {Object} */
+ m_getStyleElement__org_gwtproject_dom_client_Element(/** Object */ outerElem) {
   return PopupImplMozilla.f_isFF2Mac__org_gwtproject_user_client_ui_impl_PopupImplMozilla_ ? outerElem : super.m_getStyleElement__org_gwtproject_dom_client_Element(outerElem);
  }
- /**
-  * @override
-  * @param {Object} popup
-  * @param {?string} rect
-  * @public
-  */
- m_setClip__org_gwtproject_dom_client_Element__java_lang_String(popup, rect) {
+ /** @override */
+ m_setClip__org_gwtproject_dom_client_Element__java_lang_String(/** Object */ popup, /** ?string */ rect) {
   super.m_setClip__org_gwtproject_dom_client_Element__java_lang_String(popup, rect);
   Style_$Overlay.m_setDisplay__$devirt__org_gwtproject_dom_client_Style__org_gwtproject_dom_style_shared_Display(popup.style, Display.f_NONE__org_gwtproject_dom_style_shared_Display);
   Style_$Overlay.m_clearDisplay__$devirt__org_gwtproject_dom_client_Style(popup.style);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   PopupImplMozilla.$clinit = () =>{};
   PopupImplMozilla.$loadModules();
   PopupImpl.$clinit();
   PopupImplMozilla.f_isFF2Mac__org_gwtproject_user_client_ui_impl_PopupImplMozilla_ = PopupImplMozilla.m_isFF2Mac__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof PopupImplMozilla;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   UnsupportedOperationException = goog.module.get('java.lang.UnsupportedOperationException$impl');
   Scheduler = goog.module.get('org.gwtproject.core.client.Scheduler$impl');
@@ -118,7 +81,7 @@ class PopupImplMozilla extends PopupImpl {
 }
 $Util.$setClassMetadata(PopupImplMozilla, 'org.gwtproject.user.client.ui.impl.PopupImplMozilla');
 
-/** @public {boolean} */
+/**@type {boolean}*/
 PopupImplMozilla.f_isFF2Mac__org_gwtproject_user_client_ui_impl_PopupImplMozilla_ = false;
 
 exports = PopupImplMozilla; 

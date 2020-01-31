@@ -11,44 +11,27 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.safehtml.shared.annotat
  * @extends {Annotation}
  */
 class IsTrustedResourceUri {
- /**
-  * @param {?function():Class<?>} fn
-  * @return {IsTrustedResourceUri}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {IsTrustedResourceUri} */
+ static $adapt(/** ?function():Class<?> */ fn) {
   IsTrustedResourceUri.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   IsTrustedResourceUri.$clinit = () =>{};
   IsTrustedResourceUri.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_safehtml_shared_annotations_IsTrustedResourceUri = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_safehtml_shared_annotations_IsTrustedResourceUri = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_safehtml_shared_annotations_IsTrustedResourceUri;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.safehtml.shared.annotations.IsTrustedResourceUri.$LambdaAdaptor$impl');
  }

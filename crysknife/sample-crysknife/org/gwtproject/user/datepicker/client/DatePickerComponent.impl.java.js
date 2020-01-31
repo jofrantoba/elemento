@@ -11,91 +11,56 @@ let StandardCss = goog.forwardDeclare('org.gwtproject.user.datepicker.client.Dat
  * @abstract
   */
 class DatePickerComponent extends Composite {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {DatePicker} */
+  /**@type {DatePicker}*/
   this.f_datePicker__org_gwtproject_user_datepicker_client_DatePickerComponent_;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_datepicker_client_DatePickerComponent__() {
   this.$ctor__org_gwtproject_user_client_ui_Composite__();
  }
- /**
-  * @return {CalendarModel}
-  * @public
-  */
+ /** @return {CalendarModel} */
  m_getModel__() {
   return this.f_datePicker__org_gwtproject_user_datepicker_client_DatePickerComponent_.m_getModel__();
  }
- /**
-  * @param {number} numMonths
-  * @public
-  */
- m_addMonths__int(numMonths) {
+ 
+ m_addMonths__int(/** number */ numMonths) {
   this.m_getModel__().m_shiftCurrentMonth__int(numMonths);
   this.m_getDatePicker__().m_refreshAll__();
  }
- /**
-  * @return {DatePicker}
-  * @public
-  */
+ /** @return {DatePicker} */
  m_getDatePicker__() {
   return this.f_datePicker__org_gwtproject_user_datepicker_client_DatePickerComponent_;
  }
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_refresh__() {}
- /**
-  * @public
-  */
+ 
  m_refreshAll__() {
   this.m_getDatePicker__().m_refreshAll__();
  }
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_setup__() {}
- /**
-  * @return {StandardCss}
-  * @public
-  */
+ /** @return {StandardCss} */
  m_css___$pp_org_gwtproject_user_datepicker_client() {
   return this.f_datePicker__org_gwtproject_user_datepicker_client_DatePickerComponent_.m_css___$pp_org_gwtproject_user_datepicker_client();
  }
- /**
-  * @param {DatePicker} me
-  * @public
-  */
- m_setDatePicker__org_gwtproject_user_datepicker_client_DatePicker_$pp_org_gwtproject_user_datepicker_client(me) {
+ 
+ m_setDatePicker__org_gwtproject_user_datepicker_client_DatePicker_$pp_org_gwtproject_user_datepicker_client(/** DatePicker */ me) {
   this.f_datePicker__org_gwtproject_user_datepicker_client_DatePickerComponent_ = me;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DatePickerComponent.$clinit = () =>{};
   DatePickerComponent.$loadModules();
   Composite.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DatePickerComponent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

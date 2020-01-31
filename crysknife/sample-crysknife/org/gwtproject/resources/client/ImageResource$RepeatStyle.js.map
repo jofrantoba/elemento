@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ImageResource$RepeatStyle.impl.java.js",
-"lineCount":151,
-"mappings":"A;;;;;;;;;;;;;MAoEO,W;;;;CAAA,W;EAAAA,Q;;;;;;;;QAAA,8B;EAAAC,kC;EAAAA,mH;EAAAA,iB;;;;;;;CAAA,uF;EAAAC,qC;EAAAA,2C;EAAAA,mE;;;;;;;QAAA,2B;EAAAC,sB;EAAAA;GAAAA,kJAAAA;G;EAAAA,uI;;;;;;QAAA,U;EAAAC,sB;EAAAA,kZ;;;;;;;;;CAAA,6B;EAAAC,kF;;;;;;QACH,qE;EAAAC,+G;;;;;;QAGA,2E;EAAAA,qH;;;;;;QAGA,yE;EAAAA,mH;;;;;;QAGA,qE;EAAAA,+G;;;;;QAVG,O;EAAAC,8B;EAAAA,2B;EAAAA,e;EACHA,iP;EAGAA,mQ;EAGAA,6P;EAGAA,iP;EAVGA,kG;;;;;;;;;;;;;;;;;;;;;;;AAAA;+E;AAAA;qF;AAAA;mF;AAAA;+E;AAAA;2F;AACH;2F;AAGA;iG;AAGA;+F;AAGA;;",
+"lineCount":108,
+"mappings":"A;;;;;;;;;;;;;MAoEO,W;;CAAA,W;EAAAA,Q;;;QAAA,8B;EAAAC,kC;EAAAA,mH;EAAAA,iB;;;CAAA,uF;EAAAC,qC;EAAAA,2C;EAAAA,mE;;;QAAA,2B;EAAAC,sB;EAAAA;GAAAA,kJAAAA;G;EAAAA,uI;;;QAAA,U;EAAAC,sB;EAAAA,iZ;;;;CAAA,6B;EAAAC,iF;;;QACH,qE;EAAAC,+G;;;QAGA,2E;EAAAA,qH;;;QAGA,yE;EAAAA,mH;;;QAGA,qE;EAAAA,+G;;;QAVG,O;EAAAC,8B;EAAAA,2B;EAAAA,e;EACHA,iP;EAGAA,mQ;EAGAA,6P;EAGAA,iP;EAVGA,kG;;;;;;;;;;;;;;;;;AAAA;+E;AAAA;qF;AAAA;mF;AAAA;+E;AAAA;2F;AACH;2F;AAGA;iG;AAGA;+F;AAGA;;",
 "sources":["ImageResource.java"],
 "names":["org.gwtproject.resources.client.ImageResource$RepeatStyle.<synthetic: ctor_js>","org.gwtproject.resources.client.ImageResource$RepeatStyle.<synthetic: ctor_create>","org.gwtproject.resources.client.ImageResource$RepeatStyle.<init>","org.gwtproject.resources.client.ImageResource$RepeatStyle.valueOf","org.gwtproject.resources.client.ImageResource$RepeatStyle.values","org.gwtproject.resources.client.ImageResource$RepeatStyle.compareTo","org.gwtproject.resources.client.ImageResource$RepeatStyle.<synthetic: getter>","org.gwtproject.resources.client.ImageResource$RepeatStyle.<clinit>"]
 }

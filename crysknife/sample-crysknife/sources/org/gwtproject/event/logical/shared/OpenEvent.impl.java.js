@@ -14,108 +14,68 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {Event<OpenHandler<T>>}
   */
 class OpenEvent extends Event {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {T} */
+  /**@type {T}*/
   this.f_target__org_gwtproject_event_logical_shared_OpenEvent_;
  }
- /**
-  * @template T_1
-  * @param {HasOpenHandlers<T_1>} source
-  * @param {T_1} target
-  * @public
-  */
- static m_fire__org_gwtproject_event_logical_shared_HasOpenHandlers__java_lang_Object(source, target) {
+ /** @template T_1 */
+ static m_fire__org_gwtproject_event_logical_shared_HasOpenHandlers__java_lang_Object(/** HasOpenHandlers<T_1> */ source, /** T_1 */ target) {
   OpenEvent.$clinit();
   if (!$Equality.$same(OpenEvent.f_TYPE__org_gwtproject_event_logical_shared_OpenEvent_, null)) {
-   let event = /**@type {!OpenEvent<T_1>} */ (OpenEvent.$create__java_lang_Object(target));
+   let event = /**@type {!OpenEvent<T_1>}*/ (OpenEvent.$create__java_lang_Object(target));
    source.m_fireEvent__org_gwtproject_event_shared_Event(event);
   }
  }
- /**
-  * @return {Type<OpenHandler<?>>}
-  * @public
-  */
+ /** @return {Type<OpenHandler<?>>} */
  static m_getType__() {
   OpenEvent.$clinit();
   if ($Equality.$same(OpenEvent.f_TYPE__org_gwtproject_event_logical_shared_OpenEvent_, null)) {
-   OpenEvent.f_TYPE__org_gwtproject_event_logical_shared_OpenEvent_ = /**@type {!Type<OpenHandler<?>>} */ (Type.$create__());
+   OpenEvent.f_TYPE__org_gwtproject_event_logical_shared_OpenEvent_ = /**@type {!Type<OpenHandler<?>>}*/ (Type.$create__());
   }
   return OpenEvent.f_TYPE__org_gwtproject_event_logical_shared_OpenEvent_;
  }
- /**
-  * @template T
-  * @param {T} target
-  * @return {!OpenEvent<T>}
-  * @public
-  */
- static $create__java_lang_Object(target) {
+ /** @template T @return {!OpenEvent<T>} */
+ static $create__java_lang_Object(/** T */ target) {
   OpenEvent.$clinit();
   let $instance = new OpenEvent();
   $instance.$ctor__org_gwtproject_event_logical_shared_OpenEvent__java_lang_Object(target);
   return $instance;
  }
- /**
-  * @param {T} target
-  * @public
-  */
- $ctor__org_gwtproject_event_logical_shared_OpenEvent__java_lang_Object(target) {
+ 
+ $ctor__org_gwtproject_event_logical_shared_OpenEvent__java_lang_Object(/** T */ target) {
   this.$ctor__org_gwtproject_event_shared_Event__();
   this.f_target__org_gwtproject_event_logical_shared_OpenEvent_ = target;
  }
- /**
-  * @override
-  * @return {Type<OpenHandler<T>>}
-  * @public
-  */
+ /** @override @return {Type<OpenHandler<T>>} */
  m_getAssociatedType__() {
-  return /**@type {Type} */ (OpenEvent.f_TYPE__org_gwtproject_event_logical_shared_OpenEvent_);
+  return /**@type {Type}*/ (OpenEvent.f_TYPE__org_gwtproject_event_logical_shared_OpenEvent_);
  }
- /**
-  * @return {T}
-  * @public
-  */
+ /** @return {T} */
  m_getTarget__() {
   return this.f_target__org_gwtproject_event_logical_shared_OpenEvent_;
  }
- /**
-  * @param {OpenHandler<T>} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_event_logical_shared_OpenHandler(handler) {
+ 
+ m_dispatch__org_gwtproject_event_logical_shared_OpenHandler(/** OpenHandler<T> */ handler) {
   handler.m_onOpen__org_gwtproject_event_logical_shared_OpenEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_event_logical_shared_OpenHandler(/**@type {OpenHandler<T>} */ ($Casts.$to(arg0, OpenHandler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_event_logical_shared_OpenHandler(/**@type {OpenHandler<T>}*/ ($Casts.$to(arg0, OpenHandler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   OpenEvent.$clinit = () =>{};
   OpenEvent.$loadModules();
   Event.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof OpenEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   OpenHandler = goog.module.get('org.gwtproject.event.logical.shared.OpenHandler$impl');
@@ -126,7 +86,7 @@ class OpenEvent extends Event {
 }
 $Util.$setClassMetadata(OpenEvent, 'org.gwtproject.event.logical.shared.OpenEvent');
 
-/** @public {Type<OpenHandler<?>>} */
+/**@type {Type<OpenHandler<?>>}*/
 OpenEvent.f_TYPE__org_gwtproject_event_logical_shared_OpenEvent_;
 
 exports = OpenEvent; 

@@ -11,48 +11,26 @@ let HandlerRegistration = goog.forwardDeclare('org.gwtproject.event.shared.Handl
  * @extends {HasHandlers}
  */
 class HasAttachHandlers {
- /**
-  * @abstract
-  * @param {Handler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addAttachHandler__org_gwtproject_event_logical_shared_AttachEvent_Handler(handler) {}
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {HandlerRegistration} */
+ m_addAttachHandler__org_gwtproject_event_logical_shared_AttachEvent_Handler(/** Handler */ handler) {}
+ /** @abstract @return {boolean} */
  m_isAttached__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HasAttachHandlers.$clinit = () =>{};
   HasAttachHandlers.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasHandlers.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_logical_shared_HasAttachHandlers = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasHandlers.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_logical_shared_HasAttachHandlers = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_logical_shared_HasAttachHandlers;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

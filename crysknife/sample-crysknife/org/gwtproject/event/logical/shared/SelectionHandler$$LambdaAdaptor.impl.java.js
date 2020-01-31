@@ -11,54 +11,37 @@ let SelectionEvent = goog.forwardDeclare('org.gwtproject.event.logical.shared.Se
  * @implements {SelectionHandler<T>}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(SelectionEvent<T>):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(SelectionEvent<T>):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(SelectionEvent<T>):void} */
+  /**@type {?function(SelectionEvent<T>):void}*/
   this.f_$$fn__org_gwtproject_event_logical_shared_SelectionHandler_$LambdaAdaptor;
   this.$ctor__org_gwtproject_event_logical_shared_SelectionHandler_$LambdaAdaptor__org_gwtproject_event_logical_shared_SelectionHandler_$JsFunction(fn);
  }
- /**
-  * @param {?function(SelectionEvent<T>):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_event_logical_shared_SelectionHandler_$LambdaAdaptor__org_gwtproject_event_logical_shared_SelectionHandler_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_event_logical_shared_SelectionHandler_$LambdaAdaptor__org_gwtproject_event_logical_shared_SelectionHandler_$JsFunction(/** ?function(SelectionEvent<T>):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_event_logical_shared_SelectionHandler_$LambdaAdaptor = fn;
  }
- /**
-  * @param {SelectionEvent<T>} arg0
-  * @public
-  */
- m_onSelection__org_gwtproject_event_logical_shared_SelectionEvent(arg0) {
+ 
+ m_onSelection__org_gwtproject_event_logical_shared_SelectionEvent(/** SelectionEvent<T> */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_event_logical_shared_SelectionHandler_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

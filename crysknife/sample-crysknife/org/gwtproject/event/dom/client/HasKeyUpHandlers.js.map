@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasKeyUpHandlers.impl.java.js",
-"lineCount":26,
-"mappings":"A;;;;;;;;;;;;MAuBiB,gB;;;;;;;CAQK,+D,CAA6BA,O;;;;QARlC,O;EAAAC,mC;EAAAA;",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;;;MAuBiB,gB;;CAQK,+D,qBAA6BA,O;;QARlC,O;EAAAC,mC;EAAAA;",
 "sources":["HasKeyUpHandlers.java"],
 "names":["handler","org.gwtproject.event.dom.client.HasKeyUpHandlers.<clinit>"]
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Header.impl.java.js",
-"lineCount":119,
-"mappings":"A;;;;;;;;;;;;;;;;MA8BsB,M;;;;CAAA,W;EAAAA,Q;EAAAA;OAEE,mDAFFA,C;EAAAA;OAIL,+DAJKA,C;EAAAA;OAKI,sDALJA,C;;;;;;CAYb,kF,CAAeC,I;EAAfC,iC;EAAAA,6D;EACLA,gE;;;;;;CAQa,W;EACbC,gE;;;;;;CAWY,uB;EACZC,4E;;;;;;CASY,U;EACZC,2B;;;;;;;CAQgB,Y;;;;;;;CASN,mI,CAAuBC,O,EAAiBC,I,EAAkBC,K;EACpEC,gW;;;;;;;;;CAkBa,6I,CAAiCH,O,EAAiBC,I,EAAkBC,K;EACjFE,Y;;;;;;;CASU,iG,CAAeJ,O,EAAyBK,E;EAClDC,+M;;;;;;CAcU,uC,CAA2BC,U;EACrCC,kF;;;;;;CAQU,qD,CAA2BC,O;EACrCC,sE;;;;;CAnHkB,qD;EAIpBd,4E;;;;;QAJoB,O;EAAAe,yB;EAAAA,sB;EAAAA;",
+"lineCount":76,
+"mappings":"A;;;;;;;;;;;;;;;;MA8BsB,M;;CAAA,W;EAAAA,Q;EAAAA;OAEE,mDAFFA,C;EAAAA;OAIL,+DAJKA,C;EAAAA;OAKI,sDALJA,C;;;CAYb,kF,gBAAeC,I;EAAfC,iC;EAAAA,6D;EACLA,gE;;;CAQa,W;EACbC,gE;;;CAWY,uB;EACZC,4E;;;CASY,U;EACZC,2B;;;CAQgB,Y;;CASN,mI,gBAAuBC,O,gBAAiBC,I,gBAAkBC,K;EACpEC,gW;;;CAkBa,6I,gBAAiCH,O,gBAAiBC,I,gBAAkBC,K;EACjFE,Y;;;CASU,iG,gBAAeJ,O,yBAAyBK,E;EAClDC,+M;;;CAcU,uC,gBAA2BC,U;EACrCC,kF;;;CAQU,qD,wBAA2BC,O;EACrCC,sE;;;CAnHkB,qD;EAIpBd,4E;;;QAJoB,O;EAAAe,yB;EAAAA,sB;EAAAA;",
 "sources":["Header.java"],
 "names":["org.gwtproject.user.cellview.client.Header.<synthetic: ctor_js>","cell","org.gwtproject.user.cellview.client.Header.<init>","org.gwtproject.user.cellview.client.Header.getCell","org.gwtproject.user.cellview.client.Header.getHeaderStyleNames","org.gwtproject.user.cellview.client.Header.getKey","context","elem","event","org.gwtproject.user.cellview.client.Header.onBrowserEvent","org.gwtproject.user.cellview.client.Header.onPreviewColumnSortEvent","sb","org.gwtproject.user.cellview.client.Header.render","styleNames","org.gwtproject.user.cellview.client.Header.setHeaderStyleNames","updater","org.gwtproject.user.cellview.client.Header.setUpdater","org.gwtproject.user.cellview.client.Header.<clinit>"]
 }

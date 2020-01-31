@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellBrowser_ResourcesImpl$cellBrowserSelectedBackgroundInitializer.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;MAmEuB,wC;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,+D;EAAAA,4H;EAAAA,iB;;;;;CAAA,+G;EAAAC,iC;;;;;;QAIkC,O;EAAAC,mD;EACnDA,kI;;;;;QALiB,O;EAAAC,2D;EAAAA,wD;EAAAA,qB;EAEjBA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;MAmEuB,wC;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,+D;EAAAA,4H;EAAAA,iB;;;CAAA,+G;EAAAC,iC;;;QAIkC,O;EAAAC,mD;EACnDA,kI;;;QALiB,O;EAAAC,2D;EAAAA,wD;EAAAA,qB;EAEjBA;",
 "sources":["CellBrowser_ResourcesImpl.java"],
 "names":["org.gwtproject.user.cellview.client.CellBrowser_ResourcesImpl$cellBrowserSelectedBackgroundInitializer.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.CellBrowser_ResourcesImpl$cellBrowserSelectedBackgroundInitializer.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.CellBrowser_ResourcesImpl$cellBrowserSelectedBackgroundInitializer.<init>","org.gwtproject.user.cellview.client.CellBrowser_ResourcesImpl$cellBrowserSelectedBackgroundInitializer.get","org.gwtproject.user.cellview.client.CellBrowser_ResourcesImpl$cellBrowserSelectedBackgroundInitializer.<clinit>"]
 }

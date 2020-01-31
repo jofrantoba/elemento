@@ -9,49 +9,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.event.dom.client.HasNat
  * @interface
  */
 class HasNativeEvent {
- /**
-  * @abstract
-  * @return {Object}
-  * @public
-  */
+ /** @abstract @return {Object} */
  m_getNativeEvent__() {}
- /**
-  * @param {?function():Object} fn
-  * @return {HasNativeEvent}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {HasNativeEvent} */
+ static $adapt(/** ?function():Object */ fn) {
   HasNativeEvent.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HasNativeEvent.$clinit = () =>{};
   HasNativeEvent.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_HasNativeEvent = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_HasNativeEvent = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_HasNativeEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.event.dom.client.HasNativeEvent.$LambdaAdaptor$impl');
  }

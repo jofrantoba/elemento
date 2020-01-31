@@ -10,54 +10,37 @@ let RowHoverEvent = goog.forwardDeclare('org.gwtproject.user.cellview.client.Row
  * @implements {Handler}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(RowHoverEvent):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(RowHoverEvent):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(RowHoverEvent):void} */
+  /**@type {?function(RowHoverEvent):void}*/
   this.f_$$fn__org_gwtproject_user_cellview_client_RowHoverEvent_Handler_$LambdaAdaptor;
   this.$ctor__org_gwtproject_user_cellview_client_RowHoverEvent_Handler_$LambdaAdaptor__org_gwtproject_user_cellview_client_RowHoverEvent_Handler_$JsFunction(fn);
  }
- /**
-  * @param {?function(RowHoverEvent):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_RowHoverEvent_Handler_$LambdaAdaptor__org_gwtproject_user_cellview_client_RowHoverEvent_Handler_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_RowHoverEvent_Handler_$LambdaAdaptor__org_gwtproject_user_cellview_client_RowHoverEvent_Handler_$JsFunction(/** ?function(RowHoverEvent):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_user_cellview_client_RowHoverEvent_Handler_$LambdaAdaptor = fn;
  }
- /**
-  * @param {RowHoverEvent} arg0
-  * @public
-  */
- m_onRowHover__org_gwtproject_user_cellview_client_RowHoverEvent(arg0) {
+ 
+ m_onRowHover__org_gwtproject_user_cellview_client_RowHoverEvent(/** RowHoverEvent */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_user_cellview_client_RowHoverEvent_Handler_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

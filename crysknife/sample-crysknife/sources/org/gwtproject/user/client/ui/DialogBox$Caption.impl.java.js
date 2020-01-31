@@ -14,38 +14,25 @@ const IsWidget = goog.require('org.gwtproject.user.client.ui.IsWidget$impl');
  * @extends {IsWidget}
  */
 class Caption {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Caption.$clinit = () =>{};
   Caption.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasAllMouseHandlers.$markImplementor(classConstructor);
-  HasHTML.$markImplementor(classConstructor);
-  HasSafeHtml.$markImplementor(classConstructor);
-  IsWidget.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_DialogBox_Caption = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasAllMouseHandlers.$markImplementor(ctor);
+  HasHTML.$markImplementor(ctor);
+  HasSafeHtml.$markImplementor(ctor);
+  IsWidget.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_DialogBox_Caption = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_DialogBox_Caption;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -18,93 +18,53 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {BeanManager}
   */
 class AbstractBeanManager extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Map<Class, Map<Class<?>, Provider>>} */
+  /**@type {Map<Class, Map<Class<?>, Provider>>}*/
   this.f_beanStore__org_treblereel_gwt_crysknife_client_internal_AbstractBeanManager_;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_treblereel_gwt_crysknife_client_internal_AbstractBeanManager__() {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_treblereel_gwt_crysknife_client_internal_AbstractBeanManager();
  }
- /**
-  * @override
-  * @param {*} ref
-  * @public
-  */
- m_destroyBean__java_lang_Object(ref) {}
- /**
-  * @param {Class} type
-  * @param {Provider} provider
-  * @public
-  */
- m_register__java_lang_Class__javax_inject_Provider(type, provider) {
+ /** @override */
+ m_destroyBean__java_lang_Object(/** * */ ref) {}
+ 
+ m_register__java_lang_Class__javax_inject_Provider(/** Class */ type, /** Provider */ provider) {
   this.m_register__java_lang_Class__javax_inject_Provider__java_lang_Class(type, provider, Class.$get(Default));
  }
- /**
-  * @param {Class} type
-  * @param {Provider} provider
-  * @param {Class<?>} annotation
-  * @public
-  */
- m_register__java_lang_Class__javax_inject_Provider__java_lang_Class(type, provider, annotation) {
+ 
+ m_register__java_lang_Class__javax_inject_Provider__java_lang_Class(/** Class */ type, /** Provider */ provider, /** Class<?> */ annotation) {
   if (!this.f_beanStore__org_treblereel_gwt_crysknife_client_internal_AbstractBeanManager_.containsKey(type)) {
-   this.f_beanStore__org_treblereel_gwt_crysknife_client_internal_AbstractBeanManager_.put(type, /**@type {!HashMap<Class<?>, Provider>} */ (HashMap.$create__()));
+   this.f_beanStore__org_treblereel_gwt_crysknife_client_internal_AbstractBeanManager_.put(type, /**@type {!HashMap<Class<?>, Provider>}*/ (HashMap.$create__()));
   }
-  /**@type {Map<Class<?>, Provider>} */ ($Casts.$to(this.f_beanStore__org_treblereel_gwt_crysknife_client_internal_AbstractBeanManager_.get(type), Map)).put(annotation, provider);
+  /**@type {Map<Class<?>, Provider>}*/ ($Casts.$to(this.f_beanStore__org_treblereel_gwt_crysknife_client_internal_AbstractBeanManager_.get(type), Map)).put(annotation, provider);
  }
- /**
-  * @override
-  * @template T
-  * @param {Class} type
-  * @param {Class<?>} qualifier
-  * @return {Instance<T>}
-  * @public
-  */
- m_lookupBean__java_lang_Class__java_lang_Class(type, qualifier) {
-  return /**@type {!InstanceImpl<T>} */ (InstanceImpl.$create__javax_inject_Provider(/**@type {Provider} */ ($Casts.$to(/**@type {Map<Class<?>, Provider>} */ ($Casts.$to(this.f_beanStore__org_treblereel_gwt_crysknife_client_internal_AbstractBeanManager_.get(type), Map)).get(qualifier), Provider))));
+ /** @override @template T @return {Instance<T>} */
+ m_lookupBean__java_lang_Class__java_lang_Class(/** Class */ type, /** Class<?> */ qualifier) {
+  return /**@type {!InstanceImpl<T>}*/ (InstanceImpl.$create__javax_inject_Provider(/**@type {Provider}*/ ($Casts.$to(/**@type {Map<Class<?>, Provider>}*/ ($Casts.$to(this.f_beanStore__org_treblereel_gwt_crysknife_client_internal_AbstractBeanManager_.get(type), Map)).get(qualifier), Provider))));
  }
- /**
-  * @override
-  * @template T
-  * @param {Class} type
-  * @return {Instance<T>}
-  * @public
-  */
- m_lookupBean__java_lang_Class(type) {
-  return /**@type {Instance<T>} */ (this.m_lookupBean__java_lang_Class__java_lang_Class(type, Class.$get(Default)));
+ /** @override @template T @return {Instance<T>} */
+ m_lookupBean__java_lang_Class(/** Class */ type) {
+  return /**@type {Instance<T>}*/ (this.m_lookupBean__java_lang_Class__java_lang_Class(type, Class.$get(Default)));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_treblereel_gwt_crysknife_client_internal_AbstractBeanManager() {
-  this.f_beanStore__org_treblereel_gwt_crysknife_client_internal_AbstractBeanManager_ = /**@type {!HashMap<Class, Map<Class<?>, Provider>>} */ (HashMap.$create__());
+  this.f_beanStore__org_treblereel_gwt_crysknife_client_internal_AbstractBeanManager_ = /**@type {!HashMap<Class, Map<Class<?>, Provider>>}*/ (HashMap.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AbstractBeanManager.$clinit = () =>{};
   AbstractBeanManager.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AbstractBeanManager;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Class = goog.module.get('java.lang.Class$impl');
   HashMap = goog.module.get('java.util.HashMap$impl');

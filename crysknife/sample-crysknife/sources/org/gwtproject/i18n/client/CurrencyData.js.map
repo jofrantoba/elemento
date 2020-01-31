@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CurrencyData.impl.java.js",
-"lineCount":74,
-"mappings":"A;;;;;;;MAoBiB,Y;;;;;;CAKR,mB;;;;;;CAKA,qB;;;;;;CAKH,4B;;;;;;CAOG,6B;;;;;;CAOA,2B;;;;;;CAMC,gB;;;;;;CAOA,iB;;;;;;CAOA,kB;;;;;;CAOA,yB;;;;;;CAOA,kB;;;;QA/DO,O;EAAAA,+B;EAAAA;",
+"lineCount":32,
+"mappings":"A;;;;;;;MAoBiB,Y;;CAKR,mB;;CAKA,qB;;CAKH,4B;;CAOG,6B;;CAOA,2B;;CAMC,gB;;CAOA,iB;;CAOA,kB;;CAOA,yB;;CAOA,kB;;QA/DO,O;EAAAA,+B;EAAAA;",
 "sources":["CurrencyData.java"],
 "names":["org.gwtproject.i18n.client.CurrencyData.<clinit>"]
 }

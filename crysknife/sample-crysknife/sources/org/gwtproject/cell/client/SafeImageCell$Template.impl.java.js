@@ -13,59 +13,34 @@ let SafeUri = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeUri$impl')
  * @extends {SafeHtmlTemplates}
  */
 class Template {
- /**
-  * @abstract
-  * @param {SafeUri} url
-  * @return {SafeHtml}
-  * @public
-  */
- m_img__org_gwtproject_safehtml_shared_SafeUri(url) {}
- /**
-  * @param {?function(SafeUri):SafeHtml} fn
-  * @return {Template}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract @return {SafeHtml} */
+ m_img__org_gwtproject_safehtml_shared_SafeUri(/** SafeUri */ url) {}
+ /** @return {Template} */
+ static $adapt(/** ?function(SafeUri):SafeHtml */ fn) {
   Template.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @return {Template}
-  * @public
-  */
+ /** @return {Template} */
  static get f_INSTANCE__org_gwtproject_cell_client_SafeImageCell_Template() {
   return (Template.$clinit(), Template.$f_INSTANCE__org_gwtproject_cell_client_SafeImageCell_Template);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Template.$clinit = () =>{};
   Template.$loadModules();
   Template.$f_INSTANCE__org_gwtproject_cell_client_SafeImageCell_Template = SafeImageCell__TemplateImpl.$create__();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  SafeHtmlTemplates.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_cell_client_SafeImageCell_Template = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  SafeHtmlTemplates.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_cell_client_SafeImageCell_Template = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_cell_client_SafeImageCell_Template;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.cell.client.SafeImageCell.Template.$LambdaAdaptor$impl');
   SafeImageCell__TemplateImpl = goog.module.get('org.gwtproject.cell.client.SafeImageCell_TemplateImpl$impl');
@@ -76,7 +51,7 @@ $Util.$setClassMetadataForInterface(Template, 'org.gwtproject.cell.client.SafeIm
 
 Template.$markImplementor(/** @type {Function} */ (Template));
 
-/** @private {Template} */
+/**@private {Template}*/
 Template.$f_INSTANCE__org_gwtproject_cell_client_SafeImageCell_Template;
 
 exports = Template; 

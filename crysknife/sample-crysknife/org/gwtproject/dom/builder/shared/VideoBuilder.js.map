@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"VideoBuilder.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;MAoBiB,Y;;;;;;;CAOF,a,CAAWA,M;;;;;;;CAOX,0B,CAAcC,G;;;;;;;CAOd,Y,CAAUC,K;;;;QArBR,O;EAAAC,+B;EAAAA;",
+"lineCount":20,
+"mappings":"A;;;;;;;;;MAoBiB,Y;;CAOF,a,eAAWA,M;;CAOX,0B,gBAAcC,G;;CAOd,Y,eAAUC,K;;QArBR,O;EAAAC,+B;EAAAA;",
 "sources":["VideoBuilder.java"],
 "names":["height","url","width","org.gwtproject.dom.builder.shared.VideoBuilder.<clinit>"]
 }

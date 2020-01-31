@@ -7,43 +7,27 @@ let ReadableStreamDefaultReader_$Overlay = goog.forwardDeclare('elemental2.dom.R
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class GetReaderUnionType_$Overlay {
- /**
-  * @param {*} o
-  * @return {?}
-  * @public
-  */
- static m_of__java_lang_Object(o) {
+ /** @return {?} */
+ static m_of__java_lang_Object(/** * */ o) {
   GetReaderUnionType_$Overlay.$clinit();
-  return /**@type {?} */ (Js.m_cast__java_lang_Object(o));
+  return /**@type {?}*/ (Js.m_cast__java_lang_Object(o));
  }
- /**
-  * @param {?} $thisArg
-  * @return {ReadableStreamBYOBReader}
-  * @public
-  */
- static m_asReadableStreamBYOBReader__$devirt__elemental2_dom_ReadableStream_GetReaderUnionType($thisArg) {
+ /** @return {ReadableStreamBYOBReader} */
+ static m_asReadableStreamBYOBReader__$devirt__elemental2_dom_ReadableStream_GetReaderUnionType(/** ? */ $thisArg) {
   GetReaderUnionType_$Overlay.$clinit();
-  return /**@type {ReadableStreamBYOBReader} */ (Js.m_cast__java_lang_Object($thisArg));
+  return /**@type {ReadableStreamBYOBReader}*/ (Js.m_cast__java_lang_Object($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {ReadableStreamDefaultReader}
-  * @public
-  */
- static m_asReadableStreamDefaultReader__$devirt__elemental2_dom_ReadableStream_GetReaderUnionType($thisArg) {
+ /** @return {ReadableStreamDefaultReader} */
+ static m_asReadableStreamDefaultReader__$devirt__elemental2_dom_ReadableStream_GetReaderUnionType(/** ? */ $thisArg) {
   GetReaderUnionType_$Overlay.$clinit();
-  return /**@type {ReadableStreamDefaultReader} */ (Js.m_cast__java_lang_Object($thisArg));
+  return /**@type {ReadableStreamDefaultReader}*/ (Js.m_cast__java_lang_Object($thisArg));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   GetReaderUnionType_$Overlay.$clinit = () =>{};
   GetReaderUnionType_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }

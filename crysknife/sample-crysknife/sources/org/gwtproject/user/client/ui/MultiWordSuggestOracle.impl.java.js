@@ -30,78 +30,61 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $char = goog.forwardDeclare('vmbootstrap.primitives.$char$impl');
 
 class MultiWordSuggestOracle extends SuggestOracle {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {PrefixTree} */
+  /**@type {PrefixTree}*/
   this.f_tree__org_gwtproject_user_client_ui_MultiWordSuggestOracle_;
-  /** @public {HashMap<?string, Set<?string>>} */
+  /**@type {HashMap<?string, Set<?string>>}*/
   this.f_toCandidates__org_gwtproject_user_client_ui_MultiWordSuggestOracle_;
-  /** @public {HashMap<?string, List<?string>>} */
+  /**@type {HashMap<?string, List<?string>>}*/
   this.f_toRealSuggestions__org_gwtproject_user_client_ui_MultiWordSuggestOracle_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_suggestAllMatchingWords__org_gwtproject_user_client_ui_MultiWordSuggestOracle_ = false;
-  /** @public {Array<number>} */
+  /**@type {Array<number>}*/
   this.f_whitespaceChars__org_gwtproject_user_client_ui_MultiWordSuggestOracle_;
-  /** @public {Response} */
+  /**@type {Response}*/
   this.f_defaultResponse__org_gwtproject_user_client_ui_MultiWordSuggestOracle_;
-  /** @public {Comparator<?string>} */
+  /**@type {Comparator<?string>}*/
   this.f_comparator__org_gwtproject_user_client_ui_MultiWordSuggestOracle_;
  }
- /**
-  * Factory method corresponding to constructor 'MultiWordSuggestOracle()'.
-  * @return {!MultiWordSuggestOracle}
-  * @public
-  */
+ //Factory method corresponding to constructor 'MultiWordSuggestOracle()'.
+ /** @return {!MultiWordSuggestOracle} */
  static $create__() {
   MultiWordSuggestOracle.$clinit();
   let $instance = new MultiWordSuggestOracle();
   $instance.$ctor__org_gwtproject_user_client_ui_MultiWordSuggestOracle__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'MultiWordSuggestOracle()'.
-  * @public
-  */
+ //Initialization from constructor 'MultiWordSuggestOracle()'.
+ 
  $ctor__org_gwtproject_user_client_ui_MultiWordSuggestOracle__() {
   this.$ctor__org_gwtproject_user_client_ui_MultiWordSuggestOracle__java_lang_String(" ");
  }
- /**
-  * Factory method corresponding to constructor 'MultiWordSuggestOracle(String)'.
-  * @param {?string} whitespaceChars
-  * @return {!MultiWordSuggestOracle}
-  * @public
-  */
- static $create__java_lang_String(whitespaceChars) {
+ //Factory method corresponding to constructor 'MultiWordSuggestOracle(String)'.
+ /** @return {!MultiWordSuggestOracle} */
+ static $create__java_lang_String(/** ?string */ whitespaceChars) {
   MultiWordSuggestOracle.$clinit();
   let $instance = new MultiWordSuggestOracle();
   $instance.$ctor__org_gwtproject_user_client_ui_MultiWordSuggestOracle__java_lang_String(whitespaceChars);
   return $instance;
  }
- /**
-  * Initialization from constructor 'MultiWordSuggestOracle(String)'.
-  * @param {?string} whitespaceChars
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_MultiWordSuggestOracle__java_lang_String(whitespaceChars) {
+ //Initialization from constructor 'MultiWordSuggestOracle(String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_MultiWordSuggestOracle__java_lang_String(/** ?string */ whitespaceChars) {
   this.$ctor__org_gwtproject_user_client_ui_SuggestOracle__();
   this.$init___$p_org_gwtproject_user_client_ui_MultiWordSuggestOracle();
-  this.f_whitespaceChars__org_gwtproject_user_client_ui_MultiWordSuggestOracle_ = /**@type {!Array<number>} */ ($Arrays.$create([j_l_String.m_length__java_lang_String(whitespaceChars)], $char));
+  this.f_whitespaceChars__org_gwtproject_user_client_ui_MultiWordSuggestOracle_ = /**@type {!Array<number>}*/ ($Arrays.$create([j_l_String.m_length__java_lang_String(whitespaceChars)], $char));
   for (let i = 0; i < j_l_String.m_length__java_lang_String(whitespaceChars); i++) {
    $Arrays.$set(this.f_whitespaceChars__org_gwtproject_user_client_ui_MultiWordSuggestOracle_, i, j_l_String.m_charAt__java_lang_String__int(whitespaceChars, i));
   }
  }
- /**
-  * @param {?string} suggestion
-  * @public
-  */
- m_add__java_lang_String(suggestion) {
+ 
+ m_add__java_lang_String(/** ?string */ suggestion) {
   let candidate = this.m_normalizeSuggestion__java_lang_String_$p_org_gwtproject_user_client_ui_MultiWordSuggestOracle(suggestion);
-  let realSuggestions = /**@type {List<?string>} */ ($Casts.$to(this.f_toRealSuggestions__org_gwtproject_user_client_ui_MultiWordSuggestOracle_.get(candidate), List));
+  let realSuggestions = /**@type {List<?string>}*/ ($Casts.$to(this.f_toRealSuggestions__org_gwtproject_user_client_ui_MultiWordSuggestOracle_.get(candidate), List));
   if ($Equality.$same(realSuggestions, null)) {
-   realSuggestions = /**@type {!ArrayList<?string>} */ (ArrayList.$create__());
+   realSuggestions = /**@type {!ArrayList<?string>}*/ (ArrayList.$create__());
    this.f_toRealSuggestions__org_gwtproject_user_client_ui_MultiWordSuggestOracle_.put(candidate, realSuggestions);
   }
   realSuggestions.addAtIndex(0, suggestion);
@@ -109,60 +92,41 @@ class MultiWordSuggestOracle extends SuggestOracle {
   for (let i = 0; i < words.length; i++) {
    let word = words[i];
    this.f_tree__org_gwtproject_user_client_ui_MultiWordSuggestOracle_.add(word);
-   let l = /**@type {Set<?string>} */ ($Casts.$to(this.f_toCandidates__org_gwtproject_user_client_ui_MultiWordSuggestOracle_.get(word), Set));
+   let l = /**@type {Set<?string>}*/ ($Casts.$to(this.f_toCandidates__org_gwtproject_user_client_ui_MultiWordSuggestOracle_.get(word), Set));
    if ($Equality.$same(l, null)) {
-    l = /**@type {!HashSet<?string>} */ (HashSet.$create__());
+    l = /**@type {!HashSet<?string>}*/ (HashSet.$create__());
     this.f_toCandidates__org_gwtproject_user_client_ui_MultiWordSuggestOracle_.put(word, l);
    }
    l.add(candidate);
   }
  }
- /**
-  * @param {Collection<?string>} collection
-  * @public
-  */
- m_addAll__java_util_Collection(collection) {
+ 
+ m_addAll__java_util_Collection(/** Collection<?string> */ collection) {
   for (let $iterator = collection.m_iterator__(); $iterator.m_hasNext__(); ) {
-   let suggestion = /**@type {?string} */ ($Casts.$to($iterator.m_next__(), j_l_String));
+   let suggestion = /**@type {?string}*/ ($Casts.$to($iterator.m_next__(), j_l_String));
    this.m_add__java_lang_String(suggestion);
   }
  }
- /**
-  * @public
-  */
+ 
  m_clear__() {
   this.f_tree__org_gwtproject_user_client_ui_MultiWordSuggestOracle_.clear();
   this.f_toCandidates__org_gwtproject_user_client_ui_MultiWordSuggestOracle_.clear();
   this.f_toRealSuggestions__org_gwtproject_user_client_ui_MultiWordSuggestOracle_.clear();
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isDisplayStringHTML__() {
   return true;
  }
- /**
-  * @override
-  * @param {Request} request
-  * @param {Callback} callback
-  * @public
-  */
- m_requestDefaultSuggestions__org_gwtproject_user_client_ui_SuggestOracle_Request__org_gwtproject_user_client_ui_SuggestOracle_Callback(request, callback) {
+ /** @override */
+ m_requestDefaultSuggestions__org_gwtproject_user_client_ui_SuggestOracle_Request__org_gwtproject_user_client_ui_SuggestOracle_Callback(/** Request */ request, /** Callback */ callback) {
   if (!$Equality.$same(this.f_defaultResponse__org_gwtproject_user_client_ui_MultiWordSuggestOracle_, null)) {
    callback.m_onSuggestionsReady__org_gwtproject_user_client_ui_SuggestOracle_Request__org_gwtproject_user_client_ui_SuggestOracle_Response(request, this.f_defaultResponse__org_gwtproject_user_client_ui_MultiWordSuggestOracle_);
   } else {
    super.m_requestDefaultSuggestions__org_gwtproject_user_client_ui_SuggestOracle_Request__org_gwtproject_user_client_ui_SuggestOracle_Callback(request, callback);
   }
  }
- /**
-  * @override
-  * @param {Request} request
-  * @param {Callback} callback
-  * @public
-  */
- m_requestSuggestions__org_gwtproject_user_client_ui_SuggestOracle_Request__org_gwtproject_user_client_ui_SuggestOracle_Callback(request, callback) {
+ /** @override */
+ m_requestSuggestions__org_gwtproject_user_client_ui_SuggestOracle_Request__org_gwtproject_user_client_ui_SuggestOracle_Callback(/** Request */ request, /** Callback */ callback) {
   let query = this.m_normalizeSearch__java_lang_String_$p_org_gwtproject_user_client_ui_MultiWordSuggestOracle(request.m_getQuery__());
   let limit = request.m_getLimit__();
   let candidates = this.m_createCandidatesFromSearch__java_lang_String_$p_org_gwtproject_user_client_ui_MultiWordSuggestOracle(query);
@@ -175,70 +139,48 @@ class MultiWordSuggestOracle extends SuggestOracle {
   response.m_setMoreSuggestionsCount__int(numberTruncated);
   callback.m_onSuggestionsReady__org_gwtproject_user_client_ui_SuggestOracle_Request__org_gwtproject_user_client_ui_SuggestOracle_Response(request, response);
  }
- /**
-  * @param {Comparator<?string>} comparator
-  * @public
-  */
- m_setComparator__java_util_Comparator(comparator) {
+ 
+ m_setComparator__java_util_Comparator(/** Comparator<?string> */ comparator) {
   this.f_comparator__org_gwtproject_user_client_ui_MultiWordSuggestOracle_ = comparator;
  }
- /**
-  * @param {Collection<Suggestion>} suggestionList
-  * @public
-  */
- m_setDefaultSuggestions__java_util_Collection(suggestionList) {
+ 
+ m_setDefaultSuggestions__java_util_Collection(/** Collection<Suggestion> */ suggestionList) {
   this.f_defaultResponse__org_gwtproject_user_client_ui_MultiWordSuggestOracle_ = Response.$create__java_util_Collection(suggestionList);
  }
- /**
-  * @param {Collection<?string>} suggestionList
-  * @public
-  */
- m_setDefaultSuggestionsFromText__java_util_Collection(suggestionList) {
-  let accum = /**@type {!ArrayList<Suggestion>} */ (ArrayList.$create__());
+ 
+ m_setDefaultSuggestionsFromText__java_util_Collection(/** Collection<?string> */ suggestionList) {
+  let accum = /**@type {!ArrayList<Suggestion>}*/ (ArrayList.$create__());
   for (let $iterator = suggestionList.m_iterator__(); $iterator.m_hasNext__(); ) {
-   let candidate = /**@type {?string} */ ($Casts.$to($iterator.m_next__(), j_l_String));
+   let candidate = /**@type {?string}*/ ($Casts.$to($iterator.m_next__(), j_l_String));
    accum.add(this.m_createSuggestion__java_lang_String__java_lang_String(candidate, SafeHtmlUtils.m_htmlEscape__java_lang_String(candidate)));
   }
   this.m_setDefaultSuggestions__java_util_Collection(accum);
  }
- /**
-  * @param {boolean} suggestAllMatchingWords
-  * @public
-  */
- m_setSuggestAllMatchingWords__boolean(suggestAllMatchingWords) {
+ 
+ m_setSuggestAllMatchingWords__boolean(/** boolean */ suggestAllMatchingWords) {
   this.f_suggestAllMatchingWords__org_gwtproject_user_client_ui_MultiWordSuggestOracle_ = suggestAllMatchingWords;
  }
- /**
-  * @param {?string} replacementString
-  * @param {?string} displayString
-  * @return {MultiWordSuggestion}
-  * @public
-  */
- m_createSuggestion__java_lang_String__java_lang_String(replacementString, displayString) {
+ /** @return {MultiWordSuggestion} */
+ m_createSuggestion__java_lang_String__java_lang_String(/** ?string */ replacementString, /** ?string */ displayString) {
   return MultiWordSuggestion.$create__java_lang_String__java_lang_String(replacementString, displayString);
  }
- /**
-  * @param {?string} query
-  * @param {List<?string>} candidates
-  * @return {List<MultiWordSuggestion>}
-  * @public
-  */
- m_convertToFormattedSuggestions__java_lang_String__java_util_List_$p_org_gwtproject_user_client_ui_MultiWordSuggestOracle(query, candidates) {
-  let suggestions = /**@type {!ArrayList<MultiWordSuggestion>} */ (ArrayList.$create__());
+ /** @return {List<MultiWordSuggestion>} */
+ m_convertToFormattedSuggestions__java_lang_String__java_util_List_$p_org_gwtproject_user_client_ui_MultiWordSuggestOracle(/** ?string */ query, /** List<?string> */ candidates) {
+  let suggestions = /**@type {!ArrayList<MultiWordSuggestion>}*/ (ArrayList.$create__());
   for (let i = 0; i < candidates.size(); i++) {
-   let candidate = /**@type {?string} */ ($Casts.$to(candidates.getAtIndex(i), j_l_String));
-   let realSuggestions = /**@type {List<?string>} */ ($Casts.$to(this.f_toRealSuggestions__org_gwtproject_user_client_ui_MultiWordSuggestOracle_.get(candidate), List));
-   let realSuggestionsSet = /**@type {!TreeSet<?string>} */ (TreeSet.$create__());
+   let candidate = /**@type {?string}*/ ($Casts.$to(candidates.getAtIndex(i), j_l_String));
+   let realSuggestions = /**@type {List<?string>}*/ ($Casts.$to(this.f_toRealSuggestions__org_gwtproject_user_client_ui_MultiWordSuggestOracle_.get(candidate), List));
+   let realSuggestionsSet = /**@type {!TreeSet<?string>}*/ (TreeSet.$create__());
    if (this.f_suggestAllMatchingWords__org_gwtproject_user_client_ui_MultiWordSuggestOracle_) {
     realSuggestionsSet.addAll(realSuggestions);
    } else {
-    realSuggestionsSet.add(/**@type {?string} */ ($Casts.$to(realSuggestions.getAtIndex(0), j_l_String)));
+    realSuggestionsSet.add(/**@type {?string}*/ ($Casts.$to(realSuggestions.getAtIndex(0), j_l_String)));
    }
    let realSuggestionsIterator = realSuggestionsSet.m_iterator__();
    while (realSuggestionsIterator.m_hasNext__()) {
     let cursor = 0;
     let index = 0;
-    let formattedSuggestion = /**@type {?string} */ ($Casts.$to(realSuggestionsIterator.m_next__(), j_l_String));
+    let formattedSuggestion = /**@type {?string}*/ ($Casts.$to(realSuggestionsIterator.m_next__(), j_l_String));
     let accum = SafeHtmlBuilder.$create__();
     let searchWords = j_l_String.m_split__java_lang_String__java_lang_String(query, MultiWordSuggestOracle.f_WHITESPACE_STRING__org_gwtproject_user_client_ui_MultiWordSuggestOracle_);
     while (true) {
@@ -267,13 +209,9 @@ class MultiWordSuggestOracle extends SuggestOracle {
   }
   return suggestions;
  }
- /**
-  * @param {?string} query
-  * @return {List<?string>}
-  * @public
-  */
- m_createCandidatesFromSearch__java_lang_String_$p_org_gwtproject_user_client_ui_MultiWordSuggestOracle(query) {
-  let candidates = /**@type {!ArrayList<?string>} */ (ArrayList.$create__());
+ /** @return {List<?string>} */
+ m_createCandidatesFromSearch__java_lang_String_$p_org_gwtproject_user_client_ui_MultiWordSuggestOracle(/** ?string */ query) {
+  let candidates = /**@type {!ArrayList<?string>}*/ (ArrayList.$create__());
   if (j_l_String.m_length__java_lang_String(query) == 0) {
    return candidates;
   }
@@ -300,17 +238,13 @@ class MultiWordSuggestOracle extends SuggestOracle {
   }
   return candidates;
  }
- /**
-  * @param {?string} query
-  * @return {HashSet<?string>}
-  * @public
-  */
- m_createCandidatesFromWord__java_lang_String_$p_org_gwtproject_user_client_ui_MultiWordSuggestOracle(query) {
-  let candidateSet = /**@type {!HashSet<?string>} */ (HashSet.$create__());
+ /** @return {HashSet<?string>} */
+ m_createCandidatesFromWord__java_lang_String_$p_org_gwtproject_user_client_ui_MultiWordSuggestOracle(/** ?string */ query) {
+  let candidateSet = /**@type {!HashSet<?string>}*/ (HashSet.$create__());
   let words = this.f_tree__org_gwtproject_user_client_ui_MultiWordSuggestOracle_.m_getSuggestions__java_lang_String__int(query, Integer.f_MAX_VALUE__java_lang_Integer);
   if (!$Equality.$same(words, null)) {
    for (let i = 0; i < words.size(); i++) {
-    let belongsTo = /**@type {Set<?string>} */ ($Casts.$to(this.f_toCandidates__org_gwtproject_user_client_ui_MultiWordSuggestOracle_.get(/**@type {?string} */ ($Casts.$to(words.getAtIndex(i), j_l_String))), Set));
+    let belongsTo = /**@type {Set<?string>}*/ ($Casts.$to(this.f_toCandidates__org_gwtproject_user_client_ui_MultiWordSuggestOracle_.get(/**@type {?string}*/ ($Casts.$to(words.getAtIndex(i), j_l_String))), Set));
     if (!$Equality.$same(belongsTo, null)) {
      candidateSet.addAll(belongsTo);
     }
@@ -318,14 +252,8 @@ class MultiWordSuggestOracle extends SuggestOracle {
   }
   return candidateSet;
  }
- /**
-  * @param {?string} candidate
-  * @param {Array<?string>} searchWords
-  * @param {number} indexToStartAt
-  * @return {WordBounds}
-  * @public
-  */
- m_findNextWord__java_lang_String__arrayOf_java_lang_String__int_$p_org_gwtproject_user_client_ui_MultiWordSuggestOracle(candidate, searchWords, indexToStartAt) {
+ /** @return {WordBounds} */
+ m_findNextWord__java_lang_String__arrayOf_java_lang_String__int_$p_org_gwtproject_user_client_ui_MultiWordSuggestOracle(/** ?string */ candidate, /** Array<?string> */ searchWords, /** number */ indexToStartAt) {
   let firstWord = null;
   for (let $array = searchWords, $index = 0; $index < $array.length; $index++) {
    let word = $array[$index];
@@ -339,22 +267,14 @@ class MultiWordSuggestOracle extends SuggestOracle {
   }
   return firstWord;
  }
- /**
-  * @param {?string} search
-  * @return {?string}
-  * @public
-  */
- m_normalizeSearch__java_lang_String_$p_org_gwtproject_user_client_ui_MultiWordSuggestOracle(search) {
+ /** @return {?string} */
+ m_normalizeSearch__java_lang_String_$p_org_gwtproject_user_client_ui_MultiWordSuggestOracle(/** ?string */ search) {
   search = this.m_normalizeSuggestion__java_lang_String_$p_org_gwtproject_user_client_ui_MultiWordSuggestOracle(search);
   search = j_l_String.m_replaceAll__java_lang_String__java_lang_String__java_lang_String(search, MultiWordSuggestOracle.f_NORMALIZE_TO_SINGLE_WHITE_SPACE__org_gwtproject_user_client_ui_MultiWordSuggestOracle_, MultiWordSuggestOracle.f_WHITESPACE_STRING__org_gwtproject_user_client_ui_MultiWordSuggestOracle_);
   return j_l_String.m_trim__java_lang_String(search);
  }
- /**
-  * @param {?string} formattedSuggestion
-  * @return {?string}
-  * @public
-  */
- m_normalizeSuggestion__java_lang_String_$p_org_gwtproject_user_client_ui_MultiWordSuggestOracle(formattedSuggestion) {
+ /** @return {?string} */
+ m_normalizeSuggestion__java_lang_String_$p_org_gwtproject_user_client_ui_MultiWordSuggestOracle(/** ?string */ formattedSuggestion) {
   formattedSuggestion = j_l_String.m_toLowerCase__java_lang_String__java_util_Locale(formattedSuggestion, Locale.f_ROOT__java_util_Locale);
   if (!$Equality.$same(this.f_whitespaceChars__org_gwtproject_user_client_ui_MultiWordSuggestOracle_, null)) {
    for (let i = 0; i < this.f_whitespaceChars__org_gwtproject_user_client_ui_MultiWordSuggestOracle_.length; i++) {
@@ -364,35 +284,25 @@ class MultiWordSuggestOracle extends SuggestOracle {
   }
   return formattedSuggestion;
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_MultiWordSuggestOracle() {
   this.f_tree__org_gwtproject_user_client_ui_MultiWordSuggestOracle_ = PrefixTree.$create__();
-  this.f_toCandidates__org_gwtproject_user_client_ui_MultiWordSuggestOracle_ = /**@type {!HashMap<?string, Set<?string>>} */ (HashMap.$create__());
-  this.f_toRealSuggestions__org_gwtproject_user_client_ui_MultiWordSuggestOracle_ = /**@type {!HashMap<?string, List<?string>>} */ (HashMap.$create__());
+  this.f_toCandidates__org_gwtproject_user_client_ui_MultiWordSuggestOracle_ = /**@type {!HashMap<?string, Set<?string>>}*/ (HashMap.$create__());
+  this.f_toRealSuggestions__org_gwtproject_user_client_ui_MultiWordSuggestOracle_ = /**@type {!HashMap<?string, List<?string>>}*/ (HashMap.$create__());
   this.f_suggestAllMatchingWords__org_gwtproject_user_client_ui_MultiWordSuggestOracle_ = false;
   this.f_comparator__org_gwtproject_user_client_ui_MultiWordSuggestOracle_ = null;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MultiWordSuggestOracle.$clinit = () =>{};
   MultiWordSuggestOracle.$loadModules();
   SuggestOracle.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof MultiWordSuggestOracle;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Integer = goog.module.get('java.lang.Integer$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -419,11 +329,11 @@ class MultiWordSuggestOracle extends SuggestOracle {
 }
 $Util.$setClassMetadata(MultiWordSuggestOracle, 'org.gwtproject.user.client.ui.MultiWordSuggestOracle');
 
-/** @public {number} @const */
+/**@const {number}*/
 MultiWordSuggestOracle.f_WHITESPACE_CHAR__org_gwtproject_user_client_ui_MultiWordSuggestOracle_ = 32 /* ' ' */;
-/** @public {?string} @const */
+/**@const {?string}*/
 MultiWordSuggestOracle.f_WHITESPACE_STRING__org_gwtproject_user_client_ui_MultiWordSuggestOracle_ = " ";
-/** @public {?string} @const */
+/**@const {?string}*/
 MultiWordSuggestOracle.f_NORMALIZE_TO_SINGLE_WHITE_SPACE__org_gwtproject_user_client_ui_MultiWordSuggestOracle_ = "\\s+";
 
 exports = MultiWordSuggestOracle; 

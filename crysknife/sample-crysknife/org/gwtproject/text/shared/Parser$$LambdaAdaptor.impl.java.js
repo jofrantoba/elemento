@@ -11,53 +11,35 @@ let CharSequence = goog.forwardDeclare('java.lang.CharSequence$impl');
  * @implements {Parser<T>}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function((CharSequence|string)):T} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function((CharSequence|string)):T */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function((CharSequence|string)):T} */
+  /**@type {?function((CharSequence|string)):T}*/
   this.f_$$fn__org_gwtproject_text_shared_Parser_$LambdaAdaptor;
   this.$ctor__org_gwtproject_text_shared_Parser_$LambdaAdaptor__org_gwtproject_text_shared_Parser_$JsFunction(fn);
  }
- /**
-  * @param {?function((CharSequence|string)):T} fn
-  * @public
-  */
- $ctor__org_gwtproject_text_shared_Parser_$LambdaAdaptor__org_gwtproject_text_shared_Parser_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_text_shared_Parser_$LambdaAdaptor__org_gwtproject_text_shared_Parser_$JsFunction(/** ?function((CharSequence|string)):T */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_text_shared_Parser_$LambdaAdaptor = fn;
  }
- /**
-  * @param {(CharSequence|string)} arg0
-  * @return {T}
-  * @public
-  */
- m_parse__java_lang_CharSequence(arg0) {
+ /** @return {T} */
+ m_parse__java_lang_CharSequence(/** (CharSequence|string) */ arg0) {
   let /** ?function((CharSequence|string)):T */ $function;
   return ($function = this.f_$$fn__org_gwtproject_text_shared_Parser_$LambdaAdaptor, $function(arg0));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

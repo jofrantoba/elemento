@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"EventHandler.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;MAakB,Y;;;;;;CACd,S;;;;QADc,O;EAAAA,+B;EAAAA;",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MAakB,Y;;CACd,S;;QADc,O;EAAAA,+B;EAAAA;",
 "sources":["EventHandler.java"],
 "names":["org.treblereel.gwt.crysknife.annotation.EventHandler.<clinit>"]
 }

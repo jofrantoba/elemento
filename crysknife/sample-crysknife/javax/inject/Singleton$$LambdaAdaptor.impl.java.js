@@ -10,52 +10,35 @@ let Class = goog.forwardDeclare('java.lang.Class$impl');
  * @implements {Singleton}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function():Class<?>} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function():Class<?> */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function():Class<?>} */
+  /**@type {?function():Class<?>}*/
   this.f_$$fn__javax_inject_Singleton_$LambdaAdaptor;
   this.$ctor__javax_inject_Singleton_$LambdaAdaptor__javax_inject_Singleton_$JsFunction(fn);
  }
- /**
-  * @param {?function():Class<?>} fn
-  * @public
-  */
- $ctor__javax_inject_Singleton_$LambdaAdaptor__javax_inject_Singleton_$JsFunction(fn) {
+ 
+ $ctor__javax_inject_Singleton_$LambdaAdaptor__javax_inject_Singleton_$JsFunction(/** ?function():Class<?> */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__javax_inject_Singleton_$LambdaAdaptor = fn;
  }
- /**
-  * @return {Class<?>}
-  * @public
-  */
+ /** @return {Class<?>} */
  m_annotationType__() {
   let /** ?function():Class<?> */ $function;
   return ($function = this.f_$$fn__javax_inject_Singleton_$LambdaAdaptor, $function());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -16,78 +16,47 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {ValueBoxBase<?string>}
   */
 class TextBoxBase extends ValueBoxBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {Object} elem
-  * @return {!TextBoxBase}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_Element(elem) {
+ /** @return {!TextBoxBase} */
+ static $create__org_gwtproject_dom_client_Element(/** Object */ elem) {
   TextBoxBase.$clinit();
   let $instance = new TextBoxBase();
   $instance.$ctor__org_gwtproject_user_client_ui_TextBoxBase__org_gwtproject_dom_client_Element(elem);
   return $instance;
  }
- /**
-  * @param {Object} elem
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_TextBoxBase__org_gwtproject_dom_client_Element(elem) {
+ 
+ $ctor__org_gwtproject_user_client_ui_TextBoxBase__org_gwtproject_dom_client_Element(/** Object */ elem) {
   this.$ctor__org_gwtproject_user_client_ui_ValueBoxBase__org_gwtproject_dom_client_Element__org_gwtproject_text_shared_Renderer__org_gwtproject_text_shared_Parser(elem, PassthroughRenderer.m_instance__(), PassthroughParser.m_instance__());
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getValue__() {
-  let raw = /**@type {?string} */ ($Casts.$to(super.m_getValue__(), j_l_String));
+  let raw = /**@type {?string}*/ ($Casts.$to(super.m_getValue__(), j_l_String));
   return $Equality.$same(raw, null) ? "" : raw;
  }
- /**
-  * @param {TextAlignConstant} align
-  * @public
-  * @deprecated
-  */
- m_setTextAlignment__org_gwtproject_user_client_ui_TextBoxBase_TextAlignConstant(align) {
+ /** @deprecated */
+ m_setTextAlignment__org_gwtproject_user_client_ui_TextBoxBase_TextAlignConstant(/** TextAlignConstant */ align) {
   this.m_setAlignment__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment(align.f_value__org_gwtproject_user_client_ui_TextBoxBase_TextAlignConstant_);
  }
- /**
-  * @return {TextAlignConstant}
-  * @public
-  */
+ /** @return {TextAlignConstant} */
  static get f_ALIGN_CENTER__org_gwtproject_user_client_ui_TextBoxBase() {
   return (TextBoxBase.$clinit(), TextBoxBase.$f_ALIGN_CENTER__org_gwtproject_user_client_ui_TextBoxBase);
  }
- /**
-  * @return {TextAlignConstant}
-  * @public
-  */
+ /** @return {TextAlignConstant} */
  static get f_ALIGN_JUSTIFY__org_gwtproject_user_client_ui_TextBoxBase() {
   return (TextBoxBase.$clinit(), TextBoxBase.$f_ALIGN_JUSTIFY__org_gwtproject_user_client_ui_TextBoxBase);
  }
- /**
-  * @return {TextAlignConstant}
-  * @public
-  */
+ /** @return {TextAlignConstant} */
  static get f_ALIGN_LEFT__org_gwtproject_user_client_ui_TextBoxBase() {
   return (TextBoxBase.$clinit(), TextBoxBase.$f_ALIGN_LEFT__org_gwtproject_user_client_ui_TextBoxBase);
  }
- /**
-  * @return {TextAlignConstant}
-  * @public
-  */
+ /** @return {TextAlignConstant} */
  static get f_ALIGN_RIGHT__org_gwtproject_user_client_ui_TextBoxBase() {
   return (TextBoxBase.$clinit(), TextBoxBase.$f_ALIGN_RIGHT__org_gwtproject_user_client_ui_TextBoxBase);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TextBoxBase.$clinit = () =>{};
   TextBoxBase.$loadModules();
@@ -97,17 +66,11 @@ class TextBoxBase extends ValueBoxBase {
   TextBoxBase.$f_ALIGN_LEFT__org_gwtproject_user_client_ui_TextBoxBase = TextAlignConstant.$create__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment(TextAlignment.f_LEFT__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment);
   TextBoxBase.$f_ALIGN_RIGHT__org_gwtproject_user_client_ui_TextBoxBase = TextAlignConstant.$create__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment(TextAlignment.f_RIGHT__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment);
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TextBoxBase;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -121,13 +84,13 @@ class TextBoxBase extends ValueBoxBase {
 }
 $Util.$setClassMetadata(TextBoxBase, 'org.gwtproject.user.client.ui.TextBoxBase');
 
-/** @private {TextAlignConstant} */
+/**@private {TextAlignConstant}*/
 TextBoxBase.$f_ALIGN_CENTER__org_gwtproject_user_client_ui_TextBoxBase;
-/** @private {TextAlignConstant} */
+/**@private {TextAlignConstant}*/
 TextBoxBase.$f_ALIGN_JUSTIFY__org_gwtproject_user_client_ui_TextBoxBase;
-/** @private {TextAlignConstant} */
+/**@private {TextAlignConstant}*/
 TextBoxBase.$f_ALIGN_LEFT__org_gwtproject_user_client_ui_TextBoxBase;
-/** @private {TextAlignConstant} */
+/**@private {TextAlignConstant}*/
 TextBoxBase.$f_ALIGN_RIGHT__org_gwtproject_user_client_ui_TextBoxBase;
 
 exports = TextBoxBase; 

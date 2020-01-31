@@ -10,36 +10,23 @@ const SelectRole = goog.require('org.gwtproject.aria.client.SelectRole$impl');
  * @extends {SelectRole}
  */
 class MenuRole {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MenuRole.$clinit = () =>{};
   MenuRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ListRole.$markImplementor(classConstructor);
-  SelectRole.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_MenuRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ListRole.$markImplementor(ctor);
+  SelectRole.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_MenuRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_MenuRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

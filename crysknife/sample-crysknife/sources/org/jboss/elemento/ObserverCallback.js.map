@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ObserverCallback.impl.java.js",
-"lineCount":32,
-"mappings":"A;;;;;;;;;;MAyBiB,gB;;;;;;CAER,2C,CAA0BA,c;;;;;;QAFlB,M;EAAAC,2B;EAAAA,8B;;;;;QAAA,O;EAAAC,mC;EAAAA;",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;MAyBiB,gB;;CAER,2C,uBAA0BA,c;;QAFlB,M;EAAAC,2B;EAAAA,8B;;;QAAA,O;EAAAC,mC;EAAAA;",
 "sources":["ObserverCallback.java"],
 "names":["mutationRecord","org.jboss.elemento.ObserverCallback.<synthetic: adapt_lambda>","org.jboss.elemento.ObserverCallback.<clinit>"]
 }

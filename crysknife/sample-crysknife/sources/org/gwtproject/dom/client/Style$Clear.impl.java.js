@@ -9,59 +9,38 @@ let Clear = goog.forwardDeclare('org.gwtproject.dom.style.shared.Clear$impl');
  * @deprecated
   */
 class Style_Clear extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!Style_Clear}
-  * @public
-  */
+ /** @return {!Style_Clear} */
  static $create__() {
   Style_Clear.$clinit();
   let $instance = new Style_Clear();
   $instance.$ctor__org_gwtproject_dom_client_Style_Clear__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_dom_client_Style_Clear__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {Clear}
-  * @public
-  */
+ /** @return {Clear} */
  static get f_BOTH__org_gwtproject_dom_client_Style_Clear() {
   return (Style_Clear.$clinit(), Style_Clear.$f_BOTH__org_gwtproject_dom_client_Style_Clear);
  }
- /**
-  * @return {Clear}
-  * @public
-  */
+ /** @return {Clear} */
  static get f_LEFT__org_gwtproject_dom_client_Style_Clear() {
   return (Style_Clear.$clinit(), Style_Clear.$f_LEFT__org_gwtproject_dom_client_Style_Clear);
  }
- /**
-  * @return {Clear}
-  * @public
-  */
+ /** @return {Clear} */
  static get f_NONE__org_gwtproject_dom_client_Style_Clear() {
   return (Style_Clear.$clinit(), Style_Clear.$f_NONE__org_gwtproject_dom_client_Style_Clear);
  }
- /**
-  * @return {Clear}
-  * @public
-  */
+ /** @return {Clear} */
  static get f_RIGHT__org_gwtproject_dom_client_Style_Clear() {
   return (Style_Clear.$clinit(), Style_Clear.$f_RIGHT__org_gwtproject_dom_client_Style_Clear);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Style_Clear.$clinit = () =>{};
   Style_Clear.$loadModules();
@@ -71,17 +50,11 @@ class Style_Clear extends j_l_Object {
   Style_Clear.$f_NONE__org_gwtproject_dom_client_Style_Clear = Clear.f_NONE__org_gwtproject_dom_style_shared_Clear;
   Style_Clear.$f_RIGHT__org_gwtproject_dom_client_Style_Clear = Clear.f_RIGHT__org_gwtproject_dom_style_shared_Clear;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Style_Clear;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Clear = goog.module.get('org.gwtproject.dom.style.shared.Clear$impl');
  }
@@ -89,13 +62,13 @@ class Style_Clear extends j_l_Object {
 }
 $Util.$setClassMetadata(Style_Clear, 'org.gwtproject.dom.client.Style$Clear');
 
-/** @private {Clear} */
+/**@private {Clear}*/
 Style_Clear.$f_BOTH__org_gwtproject_dom_client_Style_Clear;
-/** @private {Clear} */
+/**@private {Clear}*/
 Style_Clear.$f_LEFT__org_gwtproject_dom_client_Style_Clear;
-/** @private {Clear} */
+/**@private {Clear}*/
 Style_Clear.$f_NONE__org_gwtproject_dom_client_Style_Clear;
-/** @private {Clear} */
+/**@private {Clear}*/
 Style_Clear.$f_RIGHT__org_gwtproject_dom_client_Style_Clear;
 
 exports = Style_Clear; 

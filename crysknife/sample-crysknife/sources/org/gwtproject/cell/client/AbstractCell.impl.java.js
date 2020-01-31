@@ -23,31 +23,24 @@ let SafeHtmlBuilder = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHt
  * @implements {Cell<C>}
   */
 class AbstractCell extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Set<?string>} */
+  /**@type {Set<?string>}*/
   this.f_consumedEvents__org_gwtproject_cell_client_AbstractCell_;
  }
- /**
-  * Initialization from constructor 'AbstractCell()'.
-  * @public
-  */
+ //Initialization from constructor 'AbstractCell()'.
+ 
  $ctor__org_gwtproject_cell_client_AbstractCell__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * Initialization from constructor 'AbstractCell(String...)'.
-  * @param {Array<?string>} consumedEvents
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_AbstractCell__arrayOf_java_lang_String(consumedEvents) {
+ //Initialization from constructor 'AbstractCell(String...)'.
+ 
+ $ctor__org_gwtproject_cell_client_AbstractCell__arrayOf_java_lang_String(/** Array<?string> */ consumedEvents) {
   this.$ctor__org_gwtproject_cell_client_AbstractCell__();
   let events = null;
   if (!$Equality.$same(consumedEvents, null) && consumedEvents.length > 0) {
-   events = /**@type {!HashSet<?string>} */ (HashSet.$create__());
+   events = /**@type {!HashSet<?string>}*/ (HashSet.$create__());
    for (let $array = consumedEvents, $index = 0; $index < $array.length; $index++) {
     let event = $array[$index];
     events.add(event);
@@ -55,134 +48,66 @@ class AbstractCell extends j_l_Object {
   }
   this.m_init__java_util_Set_$p_org_gwtproject_cell_client_AbstractCell(events);
  }
- /**
-  * Initialization from constructor 'AbstractCell(Set)'.
-  * @param {Set<?string>} consumedEvents
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_AbstractCell__java_util_Set(consumedEvents) {
+ //Initialization from constructor 'AbstractCell(Set)'.
+ 
+ $ctor__org_gwtproject_cell_client_AbstractCell__java_util_Set(/** Set<?string> */ consumedEvents) {
   this.$ctor__org_gwtproject_cell_client_AbstractCell__();
   this.m_init__java_util_Set_$p_org_gwtproject_cell_client_AbstractCell(consumedEvents);
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_dependsOnSelection__() {
   return false;
  }
- /**
-  * @override
-  * @return {Set<?string>}
-  * @public
-  */
+ /** @override @return {Set<?string>} */
  m_getConsumedEvents__() {
   return this.f_consumedEvents__org_gwtproject_cell_client_AbstractCell_;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_handlesSelection__() {
   return false;
  }
- /**
-  * @override
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {C} value
-  * @return {boolean}
-  * @public
-  */
- m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(context, parent, value) {
+ /** @override @return {boolean} */
+ m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(/** Context */ context, /** Object */ parent, /** C */ value) {
   return false;
  }
- /**
-  * @override
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {C} value
-  * @param {Object} event
-  * @param {ValueUpdater<C>} valueUpdater
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, parent, value, event, valueUpdater) {
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(/** Context */ context, /** Object */ parent, /** C */ value, /** Object */ event, /** ValueUpdater<C> */ valueUpdater) {
   let eventType = $Overlay.m_getType__$devirt__org_gwtproject_dom_client_NativeEvent(event);
   if (j_l_String.m_equals__java_lang_String__java_lang_Object(BrowserEvents.f_KEYDOWN__org_gwtproject_dom_client_BrowserEvents, eventType) && $Overlay.m_getKeyCode__$devirt__org_gwtproject_dom_client_NativeEvent(event) == KeyCodes.f_KEY_ENTER__org_gwtproject_event_dom_client_KeyCodes) {
    this.m_onEnterKeyDown__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, parent, value, event, valueUpdater);
   }
  }
- /**
-  * @abstract
-  * @override
-  * @param {Context} context
-  * @param {C} value
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, value, sb) {}
- /**
-  * @override
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {C} value
-  * @return {boolean}
-  * @public
-  */
- m_resetFocus__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(context, parent, value) {
+ /** @abstract @override */
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ context, /** C */ value, /** SafeHtmlBuilder */ sb) {}
+ /** @override @return {boolean} */
+ m_resetFocus__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(/** Context */ context, /** Object */ parent, /** C */ value) {
   return false;
  }
- /**
-  * @override
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {C} value
-  * @public
-  */
- m_setValue__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(context, parent, value) {
+ /** @override */
+ m_setValue__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(/** Context */ context, /** Object */ parent, /** C */ value) {
   let sb = SafeHtmlBuilder.$create__();
   this.m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, value, sb);
   Element_$Overlay.m_setInnerSafeHtml__$devirt__org_gwtproject_dom_client_Element__org_gwtproject_safehtml_shared_SafeHtml(parent, sb.m_toSafeHtml__());
  }
- /**
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {C} value
-  * @param {Object} event
-  * @param {ValueUpdater<C>} valueUpdater
-  * @public
-  */
- m_onEnterKeyDown__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, parent, value, event, valueUpdater) {}
- /**
-  * @param {Set<?string>} consumedEvents
-  * @public
-  */
- m_init__java_util_Set_$p_org_gwtproject_cell_client_AbstractCell(consumedEvents) {
+ 
+ m_onEnterKeyDown__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(/** Context */ context, /** Object */ parent, /** C */ value, /** Object */ event, /** ValueUpdater<C> */ valueUpdater) {}
+ 
+ m_init__java_util_Set_$p_org_gwtproject_cell_client_AbstractCell(/** Set<?string> */ consumedEvents) {
   if (!$Equality.$same(consumedEvents, null)) {
-   this.f_consumedEvents__org_gwtproject_cell_client_AbstractCell_ = /**@type {Set<?string>} */ (Collections.m_unmodifiableSet__java_util_Set(consumedEvents));
+   this.f_consumedEvents__org_gwtproject_cell_client_AbstractCell_ = /**@type {Set<?string>}*/ (Collections.m_unmodifiableSet__java_util_Set(consumedEvents));
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AbstractCell.$clinit = () =>{};
   AbstractCell.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AbstractCell;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   Collections = goog.module.get('java.util.Collections$impl');

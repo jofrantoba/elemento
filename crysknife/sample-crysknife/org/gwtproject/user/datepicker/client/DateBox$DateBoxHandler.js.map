@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DateBox$DateBoxHandler.impl.java.js",
-"lineCount":143,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;MAiLgB,c;;;;CAAA,W;EAAAA,Q;EAAAA;mF;;;;;;;QAAA,sD;EAAAC,yB;EAAAA,qC;EAAAA,0I;EAAAA,iB;;;;;;CAAA,kH;EAAAC,+F;EAAAA,iC;;;;;;;CAIA,mD,CAAiBC,K;EAC3BC;GACEA,8JADFA;G;;;;;;;CAKU,qD,CAAmBD,K;EAC7BE,sG;;;;;;;CAGU,yD,CAA+BF,K;EAGzCG;GACEA,8JADFA;G;;;;;;;CAKU,qD,CAAmBH,K;EAC7BI;GACEA,sGADFA;G;;;;;;;CAKU,yD,CAAuBJ,K;EACjCK;;;IAGIA,8JAHJA;;;IAOIA,sGAPJA;IAQIA,MARJA;;IAUIA,sGAVJA;IAWIA,MAXJA;G;;;;;;;CAeU,qE,CAAqCL,K;EAC/CM,ygB;EACAA,sG;EACAA,+J;EACAA,iK;;;;;;;CAKW,2F,CAAeC,I;EAC1BC,IAAQC,OAARD,oF;EACAA,mY;;;;;QAvDU,O;EAAAE,iC;EAAAA,8B;EAAAA;",
+"lineCount":104,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;MAiLgB,c;;CAAA,W;EAAAA,Q;EAAAA;mF;;;QAAA,sD;EAAAC,yB;EAAAA,qC;EAAAA,0I;EAAAA,iB;;;CAAA,kH;EAAAC,+F;EAAAA,iC;;;CAIA,mD,kBAAiBC,K;EAC3BC;GACEA,8JADFA;G;;;CAKU,qD,mBAAmBD,K;EAC7BE,sG;;;CAGU,yD,+BAA+BF,K;EAGzCG;GACEA,8JADFA;G;;;CAKU,qD,mBAAmBH,K;EAC7BI;GACEA,sGADFA;G;;;CAKU,yD,qBAAuBJ,K;EACjCK;;;IAGIA,8JAHJA;;;IAOIA,sGAPJA;IAQIA,MARJA;;IAUIA,sGAVJA;IAWIA,MAXJA;G;;;CAeU,qE,+BAAqCL,K;EAC/CM,wgB;EACAA,sG;EACAA,+J;EACAA,iK;;;CAKW,2F,aAAeC,I;EAC1BC,IAAQC,OAARD,oF;EACAA,mY;;;QAvDU,O;EAAAE,iC;EAAAA,8B;EAAAA;",
 "sources":["DateBox.java"],
 "names":["org.gwtproject.user.datepicker.client.DateBox$DateBoxHandler.<synthetic: ctor_js>","org.gwtproject.user.datepicker.client.DateBox$DateBoxHandler.<synthetic: ctor_create>","org.gwtproject.user.datepicker.client.DateBox$DateBoxHandler.<init>","event","org.gwtproject.user.datepicker.client.DateBox$DateBoxHandler.onBlur","org.gwtproject.user.datepicker.client.DateBox$DateBoxHandler.onClick","org.gwtproject.user.datepicker.client.DateBox$DateBoxHandler.onClose","org.gwtproject.user.datepicker.client.DateBox$DateBoxHandler.onFocus","org.gwtproject.user.datepicker.client.DateBox$DateBoxHandler.onKeyDown","org.gwtproject.user.datepicker.client.DateBox$DateBoxHandler.onValueChange","date","org.gwtproject.user.datepicker.client.DateBox$DateBoxHandler.normalize","dateBox","org.gwtproject.user.datepicker.client.DateBox$DateBoxHandler.<clinit>"]
 }

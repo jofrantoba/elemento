@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"BaseRenderingContext2D$DrawImageImageUnionType$$Overlay.impl.java.js",
-"lineCount":109,
-"mappings":"A;;;;;;;;;;;;MAwImB,gC;;;;;;QAEuC,sB,CAAUA,C;EAAVC,2C;EACpDA,wD;;;;;;;QAIwB,6F;EAAAC,2C;EACxBA,qG;;;;;;;QAIuB,4F;EAAAC,2C;EACvBA,qH;;;;;;;QAIuB,4F;EAAAC,2C;EACvBA,qH;;;;;;;QAIkB,uF;EAAAC,2C;EAClBA,yE;;;;;;;QAIsB,2F;EAAAC,2C;EACtBA,mH;;;;;;;QAIc,6F;EAAAC,2C;EACdA,wD;;;;;;;QAIc,4F;EAAAC,2C;EACdA,yE;;;;;;;QAIc,4F;EAAAC,2C;EACdA,yE;;;;;;;QAIc,2F;EAAAC,2C;EACdA,wE;;;;;QAhDa,O;EAAAC,mD;EAAAA;",
+"lineCount":67,
+"mappings":"A;;;;;;;;;;;;MAwImB,gC;;QAEuC,sB,UAAUA,C;EAAVC,2C;EACpDA,uD;;;QAIwB,6F;EAAAC,2C;EACxBA,oG;;;QAIuB,4F;EAAAC,2C;EACvBA,oH;;;QAIuB,4F;EAAAC,2C;EACvBA,oH;;;QAIkB,uF;EAAAC,2C;EAClBA,wE;;;QAIsB,2F;EAAAC,2C;EACtBA,kH;;;QAIc,6F;EAAAC,2C;EACdA,uD;;;QAIc,4F;EAAAC,2C;EACdA,wE;;;QAIc,4F;EAAAC,2C;EACdA,wE;;;QAIc,2F;EAAAC,2C;EACdA,uE;;;QAhDa,O;EAAAC,mD;EAAAA;",
 "sources":["BaseRenderingContext2D.java"],
 "names":["o","elemental2.dom.BaseRenderingContext2D$DrawImageImageUnionType$$Overlay.of","elemental2.dom.BaseRenderingContext2D$DrawImageImageUnionType$$Overlay.asHTMLCanvasElement__$devirt","elemental2.dom.BaseRenderingContext2D$DrawImageImageUnionType$$Overlay.asHTMLImageElement__$devirt","elemental2.dom.BaseRenderingContext2D$DrawImageImageUnionType$$Overlay.asHTMLVideoElement__$devirt","elemental2.dom.BaseRenderingContext2D$DrawImageImageUnionType$$Overlay.asImageBitmap__$devirt","elemental2.dom.BaseRenderingContext2D$DrawImageImageUnionType$$Overlay.asOffscreenCanvas__$devirt","elemental2.dom.BaseRenderingContext2D$DrawImageImageUnionType$$Overlay.isHTMLCanvasElement__$devirt","elemental2.dom.BaseRenderingContext2D$DrawImageImageUnionType$$Overlay.isHTMLImageElement__$devirt","elemental2.dom.BaseRenderingContext2D$DrawImageImageUnionType$$Overlay.isHTMLVideoElement__$devirt","elemental2.dom.BaseRenderingContext2D$DrawImageImageUnionType$$Overlay.isOffscreenCanvas__$devirt","elemental2.dom.BaseRenderingContext2D$DrawImageImageUnionType$$Overlay.<clinit>"]
 }

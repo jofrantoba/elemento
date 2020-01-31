@@ -8,58 +8,29 @@ let Integer = goog.forwardDeclare('java.lang.Integer$impl');
  * @interface
  */
 class Node {
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getName__() {}
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_isInIterable__() {}
- /**
-  * @abstract
-  * @return {Integer}
-  * @public
-  */
+ /** @abstract @return {Integer} */
  m_getIndex__() {}
- /**
-  * @abstract
-  * @return {*}
-  * @public
-  */
+ /** @abstract @return {*} */
  m_getKey__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Node.$clinit = () =>{};
   Node.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__javax_validation_Path_Node = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__javax_validation_Path_Node = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__javax_validation_Path_Node;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

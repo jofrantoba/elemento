@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"PassthroughRenderer.impl.java.js",
-"lineCount":95,
-"mappings":"A;;;;;;;;;;;;;MAKa,mB;;;;CAAA,W;EAAAA,Q;;;;;;QAGsB,Y;EAAAC,8B;EAC3BA;GACIA,0HADJA;G;EAIAA,+F;;;;;;QAGM,S;EAAAC,8B;EAAAA,0C;EAAAA,4E;EAAAA,iB;;;;;CAAA,+D;EAAAC,4D;;;;;;;CAGI,0B,CAAcC,M;EACxBC,c;;;;;;;;;CAfK,0B;EAAAA,6F;;;;;QAAA,O;EAAAC,sC;EAAAA,mC;EAAAA,2B;;;;;;;;;;;;;;;;;;;;;;AAAA;oBAC0B,mEAD1B;",
+"lineCount":68,
+"mappings":"A;;;;;;;;;;;;;MAKa,mB;;CAAA,W;EAAAA,Q;;;QAGsB,Y;EAAAC,8B;EAC3BA;GACIA,0HADJA;G;EAIAA,+F;;;QAGM,S;EAAAC,8B;EAAAA,0C;EAAAA,4E;EAAAA,iB;;;CAAA,+D;EAAAC,4D;;;CAGI,0B,gBAAcC,M;EACxBC,c;;;;CAfK,0B;EAAAA,4F;;;QAAA,O;EAAAC,sC;EAAAA,mC;EAAAA,2B;;;;;;;;;;;;;;;;AAAA;oBAC0B,mEAD1B;",
 "sources":["PassthroughRenderer.java"],
 "names":["org.gwtproject.text.shared.testing.PassthroughRenderer.<synthetic: ctor_js>","org.gwtproject.text.shared.testing.PassthroughRenderer.instance","org.gwtproject.text.shared.testing.PassthroughRenderer.<synthetic: ctor_create>","org.gwtproject.text.shared.testing.PassthroughRenderer.<init>","object","org.gwtproject.text.shared.testing.PassthroughRenderer.render","org.gwtproject.text.shared.testing.PassthroughRenderer.<clinit>"]
 }

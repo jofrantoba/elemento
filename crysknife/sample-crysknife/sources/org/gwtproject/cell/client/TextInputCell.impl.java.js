@@ -24,64 +24,41 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {AbstractInputCell<?string, ViewData>}
   */
 class TextInputCell extends AbstractInputCell {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * Factory method corresponding to constructor 'TextInputCell()'.
-  * @return {!TextInputCell}
-  * @public
-  */
+ //Factory method corresponding to constructor 'TextInputCell()'.
+ /** @return {!TextInputCell} */
  static $create__() {
   TextInputCell.$clinit();
   let $instance = new TextInputCell();
   $instance.$ctor__org_gwtproject_cell_client_TextInputCell__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'TextInputCell()'.
-  * @public
-  */
+ //Initialization from constructor 'TextInputCell()'.
+ 
  $ctor__org_gwtproject_cell_client_TextInputCell__() {
-  this.$ctor__org_gwtproject_cell_client_AbstractInputCell__arrayOf_java_lang_String(/**@type {!Array<?string>} */ ($Arrays.$init([BrowserEvents.f_CHANGE__org_gwtproject_dom_client_BrowserEvents, BrowserEvents.f_KEYUP__org_gwtproject_dom_client_BrowserEvents], j_l_String)));
+  this.$ctor__org_gwtproject_cell_client_AbstractInputCell__arrayOf_java_lang_String(/**@type {!Array<?string>}*/ ($Arrays.$init([BrowserEvents.f_CHANGE__org_gwtproject_dom_client_BrowserEvents, BrowserEvents.f_KEYUP__org_gwtproject_dom_client_BrowserEvents], j_l_String)));
  }
- /**
-  * Factory method corresponding to constructor 'TextInputCell(SafeHtmlRenderer)'.
-  * @param {SafeHtmlRenderer<?string>} renderer
-  * @return {!TextInputCell}
-  * @public
-  * @deprecated
-  */
- static $create__org_gwtproject_text_shared_SafeHtmlRenderer(renderer) {
+ //Factory method corresponding to constructor 'TextInputCell(SafeHtmlRenderer)'.
+ /** @return {!TextInputCell} @deprecated */
+ static $create__org_gwtproject_text_shared_SafeHtmlRenderer(/** SafeHtmlRenderer<?string> */ renderer) {
   TextInputCell.$clinit();
   let $instance = new TextInputCell();
   $instance.$ctor__org_gwtproject_cell_client_TextInputCell__org_gwtproject_text_shared_SafeHtmlRenderer(renderer);
   return $instance;
  }
- /**
-  * Initialization from constructor 'TextInputCell(SafeHtmlRenderer)'.
-  * @param {SafeHtmlRenderer<?string>} renderer
-  * @public
-  * @deprecated
-  */
- $ctor__org_gwtproject_cell_client_TextInputCell__org_gwtproject_text_shared_SafeHtmlRenderer(renderer) {
+ //Initialization from constructor 'TextInputCell(SafeHtmlRenderer)'.
+ /** @deprecated */
+ $ctor__org_gwtproject_cell_client_TextInputCell__org_gwtproject_text_shared_SafeHtmlRenderer(/** SafeHtmlRenderer<?string> */ renderer) {
   this.$ctor__org_gwtproject_cell_client_TextInputCell__();
  }
- /**
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {?string} value
-  * @param {Object} event
-  * @param {ValueUpdater<?string>} valueUpdater
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, parent, value, event, valueUpdater) {
+ 
+ m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(/** Context */ context, /** Object */ parent, /** ?string */ value, /** Object */ event, /** ValueUpdater<?string> */ valueUpdater) {
   super.m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, parent, value, event, valueUpdater);
   let input = this.m_getInputElement__org_gwtproject_dom_client_Element(parent);
-  let target = /**@type {Object} */ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(NativeEvent_$Overlay.m_getEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(event)), Element_$Overlay));
+  let target = /**@type {Object}*/ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(NativeEvent_$Overlay.m_getEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(event)), Element_$Overlay));
   if (!Node_$Overlay.m_isOrHasChild__$devirt__org_gwtproject_dom_client_Node__org_gwtproject_dom_client_Node(input, target)) {
    return;
   }
@@ -90,7 +67,7 @@ class TextInputCell extends AbstractInputCell {
   if (j_l_String.m_equals__java_lang_String__java_lang_Object(BrowserEvents.f_CHANGE__org_gwtproject_dom_client_BrowserEvents, eventType)) {
    this.m_finishEditing__org_gwtproject_dom_client_Element__java_lang_String__java_lang_Object__org_gwtproject_cell_client_ValueUpdater(parent, value, key, valueUpdater);
   } else if (j_l_String.m_equals__java_lang_String__java_lang_Object(BrowserEvents.f_KEYUP__org_gwtproject_dom_client_BrowserEvents, eventType)) {
-   let vd = /**@type {ViewData} */ ($Casts.$to(this.m_getViewData__java_lang_Object(key), ViewData));
+   let vd = /**@type {ViewData}*/ ($Casts.$to(this.m_getViewData__java_lang_Object(key), ViewData));
    if ($Equality.$same(vd, null)) {
     vd = ViewData.$create__java_lang_String(value);
     this.m_setViewData__java_lang_Object__java_lang_Object(key, vd);
@@ -98,15 +75,10 @@ class TextInputCell extends AbstractInputCell {
    vd.m_setCurrentValue__java_lang_String(input.value);
   }
  }
- /**
-  * @param {Context} context
-  * @param {?string} value
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_String__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, value, sb) {
+ 
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_String__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ context, /** ?string */ value, /** SafeHtmlBuilder */ sb) {
   let key = context.m_getKey__();
-  let viewData = /**@type {ViewData} */ ($Casts.$to(this.m_getViewData__java_lang_Object(key), ViewData));
+  let viewData = /**@type {ViewData}*/ ($Casts.$to(this.m_getViewData__java_lang_Object(key), ViewData));
   if (!$Equality.$same(viewData, null) && j_l_String.m_equals__java_lang_String__java_lang_Object(viewData.m_getCurrentValue__(), value)) {
    this.m_clearViewData__java_lang_Object(key);
    viewData = null;
@@ -118,16 +90,10 @@ class TextInputCell extends AbstractInputCell {
    sb.m_appendHtmlConstant__java_lang_String("<input type=\"text\" tabindex=\"-1\"></input>");
   }
  }
- /**
-  * @param {Object} parent
-  * @param {?string} value
-  * @param {*} key
-  * @param {ValueUpdater<?string>} valueUpdater
-  * @public
-  */
- m_finishEditing__org_gwtproject_dom_client_Element__java_lang_String__java_lang_Object__org_gwtproject_cell_client_ValueUpdater(parent, value, key, valueUpdater) {
+ 
+ m_finishEditing__org_gwtproject_dom_client_Element__java_lang_String__java_lang_Object__org_gwtproject_cell_client_ValueUpdater(/** Object */ parent, /** ?string */ value, /** * */ key, /** ValueUpdater<?string> */ valueUpdater) {
   let newValue = this.m_getInputElement__org_gwtproject_dom_client_Element(parent).value;
-  let vd = /**@type {ViewData} */ ($Casts.$to(this.m_getViewData__java_lang_Object(key), ViewData));
+  let vd = /**@type {ViewData}*/ ($Casts.$to(this.m_getViewData__java_lang_Object(key), ViewData));
   if ($Equality.$same(vd, null)) {
    vd = ViewData.$create__java_lang_String(value);
    this.m_setViewData__java_lang_Object__java_lang_Object(key, vd);
@@ -139,70 +105,36 @@ class TextInputCell extends AbstractInputCell {
   }
   super.m_finishEditing__org_gwtproject_dom_client_Element__java_lang_Object__java_lang_Object__org_gwtproject_cell_client_ValueUpdater(parent, newValue, key, valueUpdater);
  }
- /**
-  * @override
-  * @param {Object} parent
-  * @return {Object}
-  * @public
-  */
- m_getInputElement__org_gwtproject_dom_client_Element(parent) {
-  return /**@type {Object} */ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(super.m_getInputElement__org_gwtproject_dom_client_Element(parent)), InputElement_$Overlay));
+ /** @override @return {Object} */
+ m_getInputElement__org_gwtproject_dom_client_Element(/** Object */ parent) {
+  return /**@type {Object}*/ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(super.m_getInputElement__org_gwtproject_dom_client_Element(parent)), InputElement_$Overlay));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Object} arg0
-  * @param {*} arg1
-  * @param {*} arg2
-  * @param {ValueUpdater} arg3
-  * @public
-  */
- m_finishEditing__org_gwtproject_dom_client_Element__java_lang_Object__java_lang_Object__org_gwtproject_cell_client_ValueUpdater(arg0, arg1, arg2, arg3) {
-  this.m_finishEditing__org_gwtproject_dom_client_Element__java_lang_String__java_lang_Object__org_gwtproject_cell_client_ValueUpdater(arg0, /**@type {?string} */ ($Casts.$to(arg1, j_l_String)), arg2, arg3);
+ //Bridge method.
+ /** @override */
+ m_finishEditing__org_gwtproject_dom_client_Element__java_lang_Object__java_lang_Object__org_gwtproject_cell_client_ValueUpdater(/** Object */ arg0, /** * */ arg1, /** * */ arg2, /** ValueUpdater */ arg3) {
+  this.m_finishEditing__org_gwtproject_dom_client_Element__java_lang_String__java_lang_Object__org_gwtproject_cell_client_ValueUpdater(arg0, /**@type {?string}*/ ($Casts.$to(arg1, j_l_String)), arg2, arg3);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Context} arg0
-  * @param {Object} arg1
-  * @param {*} arg2
-  * @param {Object} arg3
-  * @param {ValueUpdater} arg4
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(arg0, arg1, arg2, arg3, arg4) {
-  this.m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(arg0, arg1, /**@type {?string} */ ($Casts.$to(arg2, j_l_String)), arg3, arg4);
+ //Bridge method.
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(/** Context */ arg0, /** Object */ arg1, /** * */ arg2, /** Object */ arg3, /** ValueUpdater */ arg4) {
+  this.m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(arg0, arg1, /**@type {?string}*/ ($Casts.$to(arg2, j_l_String)), arg3, arg4);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Context} arg0
-  * @param {*} arg1
-  * @param {SafeHtmlBuilder} arg2
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, arg1, arg2) {
-  this.m_render__org_gwtproject_cell_client_Cell_Context__java_lang_String__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, /**@type {?string} */ ($Casts.$to(arg1, j_l_String)), arg2);
+ //Bridge method.
+ /** @override */
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ arg0, /** * */ arg1, /** SafeHtmlBuilder */ arg2) {
+  this.m_render__org_gwtproject_cell_client_Cell_Context__java_lang_String__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, /**@type {?string}*/ ($Casts.$to(arg1, j_l_String)), arg2);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TextInputCell.$clinit = () =>{};
   TextInputCell.$loadModules();
   AbstractInputCell.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TextInputCell;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

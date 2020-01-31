@@ -10,54 +10,37 @@ let Suggestion = goog.forwardDeclare('org.gwtproject.user.client.ui.SuggestOracl
  * @implements {SuggestionCallback}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(Suggestion):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(Suggestion):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(Suggestion):void} */
+  /**@type {?function(Suggestion):void}*/
   this.f_$$fn__org_gwtproject_user_client_ui_SuggestBox_SuggestionCallback_$LambdaAdaptor;
   this.$ctor__org_gwtproject_user_client_ui_SuggestBox_SuggestionCallback_$LambdaAdaptor__org_gwtproject_user_client_ui_SuggestBox_SuggestionCallback_$JsFunction(fn);
  }
- /**
-  * @param {?function(Suggestion):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_SuggestBox_SuggestionCallback_$LambdaAdaptor__org_gwtproject_user_client_ui_SuggestBox_SuggestionCallback_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_user_client_ui_SuggestBox_SuggestionCallback_$LambdaAdaptor__org_gwtproject_user_client_ui_SuggestBox_SuggestionCallback_$JsFunction(/** ?function(Suggestion):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_user_client_ui_SuggestBox_SuggestionCallback_$LambdaAdaptor = fn;
  }
- /**
-  * @param {Suggestion} arg0
-  * @public
-  */
- m_onSuggestionSelected__org_gwtproject_user_client_ui_SuggestOracle_Suggestion(arg0) {
+ 
+ m_onSuggestionSelected__org_gwtproject_user_client_ui_SuggestOracle_Suggestion(/** Suggestion */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_user_client_ui_SuggestBox_SuggestionCallback_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

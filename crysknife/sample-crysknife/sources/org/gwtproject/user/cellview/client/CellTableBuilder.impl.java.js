@@ -14,89 +14,37 @@ let TableRowElement_$Overlay = goog.forwardDeclare('org.gwtproject.dom.client.Ta
  * @template T
  */
 class CellTableBuilder {
- /**
-  * @abstract
-  * @param {T} rowValue
-  * @param {number} absRowIndex
-  * @public
-  */
- m_buildRow__java_lang_Object__int(rowValue, absRowIndex) {}
- /**
-  * @abstract
-  * @return {TableSectionBuilder}
-  * @public
-  */
+ /** @abstract */
+ m_buildRow__java_lang_Object__int(/** T */ rowValue, /** number */ absRowIndex) {}
+ /** @abstract @return {TableSectionBuilder} */
  m_finish__() {}
- /**
-  * @abstract
-  * @param {Context} context
-  * @param {T} rowValue
-  * @param {Object} elem
-  * @return {HasCell<T, ?>}
-  * @public
-  */
- m_getColumn__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_dom_client_Element(context, rowValue, elem) {}
- /**
-  * @abstract
-  * @return {Collection<HasCell<T, ?>>}
-  * @public
-  */
+ /** @abstract @return {HasCell<T, ?>} */
+ m_getColumn__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_dom_client_Element(/** Context */ context, /** T */ rowValue, /** Object */ elem) {}
+ /** @abstract @return {Collection<HasCell<T, ?>>} */
  m_getColumns__() {}
- /**
-  * @abstract
-  * @param {Object} row
-  * @return {number}
-  * @public
-  */
- m_getRowValueIndex__org_gwtproject_dom_client_TableRowElement(row) {}
- /**
-  * @abstract
-  * @param {Object} row
-  * @return {number}
-  * @public
-  */
- m_getSubrowValueIndex__org_gwtproject_dom_client_TableRowElement(row) {}
- /**
-  * @abstract
-  * @param {Object} elem
-  * @return {boolean}
-  * @public
-  */
- m_isColumn__org_gwtproject_dom_client_Element(elem) {}
- /**
-  * @abstract
-  * @param {boolean} isRebuildingAllRows
-  * @public
-  */
- m_start__boolean(isRebuildingAllRows) {}
- /**
-  * @public
-  */
+ /** @abstract @return {number} */
+ m_getRowValueIndex__org_gwtproject_dom_client_TableRowElement(/** Object */ row) {}
+ /** @abstract @return {number} */
+ m_getSubrowValueIndex__org_gwtproject_dom_client_TableRowElement(/** Object */ row) {}
+ /** @abstract @return {boolean} */
+ m_isColumn__org_gwtproject_dom_client_Element(/** Object */ elem) {}
+ /** @abstract */
+ m_start__boolean(/** boolean */ isRebuildingAllRows) {}
+ 
  static $clinit() {
   CellTableBuilder.$clinit = () =>{};
   CellTableBuilder.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_cellview_client_CellTableBuilder = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_cellview_client_CellTableBuilder = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_cellview_client_CellTableBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

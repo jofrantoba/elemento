@@ -25,18 +25,12 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {HasEnabled}
   */
 class FileUpload extends FocusWidget {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {Object} element
-  * @return {FileUpload}
-  * @public
-  */
- static m_wrap__org_gwtproject_dom_client_Element(element) {
+ /** @return {FileUpload} */
+ static m_wrap__org_gwtproject_dom_client_Element(/** Object */ element) {
   FileUpload.$clinit();
   $Asserts.$assert($Overlay.m_isOrHasChild__$devirt__org_gwtproject_dom_client_Node__org_gwtproject_dom_client_Node(Document_$Overlay.m_get__().body, element));
   let fileUpload = FileUpload.$create__org_gwtproject_dom_client_Element(element);
@@ -44,127 +38,78 @@ class FileUpload extends FocusWidget {
   RootPanel.m_detachOnWindowClose__org_gwtproject_user_client_ui_Widget(fileUpload);
   return fileUpload;
  }
- /**
-  * Factory method corresponding to constructor 'FileUpload()'.
-  * @return {!FileUpload}
-  * @public
-  */
+ //Factory method corresponding to constructor 'FileUpload()'.
+ /** @return {!FileUpload} */
  static $create__() {
   FileUpload.$clinit();
   let $instance = new FileUpload();
   $instance.$ctor__org_gwtproject_user_client_ui_FileUpload__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'FileUpload()'.
-  * @public
-  */
+ //Initialization from constructor 'FileUpload()'.
+ 
  $ctor__org_gwtproject_user_client_ui_FileUpload__() {
   this.$ctor__org_gwtproject_user_client_ui_FileUpload__org_gwtproject_dom_client_Element(Document_$Overlay.m_createFileInputElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__()));
   this.m_setStyleName__java_lang_String("gwt-FileUpload");
  }
- /**
-  * Factory method corresponding to constructor 'FileUpload(Element)'.
-  * @param {Object} element
-  * @return {!FileUpload}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_Element(element) {
+ //Factory method corresponding to constructor 'FileUpload(Element)'.
+ /** @return {!FileUpload} */
+ static $create__org_gwtproject_dom_client_Element(/** Object */ element) {
   FileUpload.$clinit();
   let $instance = new FileUpload();
   $instance.$ctor__org_gwtproject_user_client_ui_FileUpload__org_gwtproject_dom_client_Element(element);
   return $instance;
  }
- /**
-  * Initialization from constructor 'FileUpload(Element)'.
-  * @param {Object} element
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_FileUpload__org_gwtproject_dom_client_Element(element) {
+ //Initialization from constructor 'FileUpload(Element)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_FileUpload__org_gwtproject_dom_client_Element(/** Object */ element) {
   this.$ctor__org_gwtproject_user_client_ui_FocusWidget__();
   $Asserts.$assert(j_l_String.m_equalsIgnoreCase__java_lang_String__java_lang_String(InputElement_$Overlay.m_as__org_gwtproject_dom_client_Element(element).type, "file"));
   this.m_setElement__org_gwtproject_dom_client_Element(element);
  }
- /**
-  * @override
-  * @param {ChangeHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addChangeHandler__org_gwtproject_event_dom_client_ChangeHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addChangeHandler__org_gwtproject_event_dom_client_ChangeHandler(/** ChangeHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, ChangeEvent.m_getType__());
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getFilename__() {
   return this.m_getInputElement___$p_org_gwtproject_user_client_ui_FileUpload().value;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getName__() {
   return this.m_getInputElement___$p_org_gwtproject_user_client_ui_FileUpload().name;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isEnabled__() {
   return !Element_$Overlay.m_getPropertyBoolean__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.m_getElement__(), "disabled");
  }
- /**
-  * @override
-  * @param {boolean} enabled
-  * @public
-  */
- m_setEnabled__boolean(enabled) {
+ /** @override */
+ m_setEnabled__boolean(/** boolean */ enabled) {
   Element_$Overlay.m_setPropertyBoolean__$devirt__org_gwtproject_dom_client_Element__java_lang_String__boolean(this.m_getElement__(), "disabled", !enabled);
  }
- /**
-  * @override
-  * @param {?string} name
-  * @public
-  */
- m_setName__java_lang_String(name) {
+ /** @override */
+ m_setName__java_lang_String(/** ?string */ name) {
   this.m_getInputElement___$p_org_gwtproject_user_client_ui_FileUpload().name = name;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getInputElement___$p_org_gwtproject_user_client_ui_FileUpload() {
-  return /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(this.m_getElement__()), InputElement_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(this.m_getElement__()), InputElement_$Overlay));
  }
- /**
-  * @public
-  */
+ 
  m_click__() {
   this.m_getInputElement___$p_org_gwtproject_user_client_ui_FileUpload().click();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   FileUpload.$clinit = () =>{};
   FileUpload.$loadModules();
   FocusWidget.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof FileUpload;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   JavaScriptObject_$Overlay = goog.module.get('org.gwtproject.core.client.JavaScriptObject.$Overlay$impl');

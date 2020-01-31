@@ -6,24 +6,17 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Overlay = goog.forwardDeclare('jsinterop.base.JsPropertyMap.$Overlay$impl');
 
 class ExtendableEventInit_$Overlay {
- /**
-  * @return {ExtendableEventInit}
-  * @public
-  */
+ /** @return {ExtendableEventInit} */
  static m_create__() {
   ExtendableEventInit_$Overlay.$clinit();
-  return /**@type {ExtendableEventInit} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
+  return /**@type {ExtendableEventInit}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ExtendableEventInit_$Overlay.$clinit = () =>{};
   ExtendableEventInit_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');

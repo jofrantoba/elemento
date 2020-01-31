@@ -13,102 +13,64 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {MouseEvent<MouseWheelHandler>}
   */
 class MouseWheelEvent extends MouseEvent {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!MouseWheelEvent}
-  * @public
-  */
+ /** @return {!MouseWheelEvent} */
  static $create__() {
   MouseWheelEvent.$clinit();
   let $instance = new MouseWheelEvent();
   $instance.$ctor__org_gwtproject_event_dom_client_MouseWheelEvent__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_dom_client_MouseWheelEvent__() {
   this.$ctor__org_gwtproject_event_dom_client_MouseEvent__();
  }
- /**
-  * @return {Type<MouseWheelHandler>}
-  * @public
-  */
+ /** @return {Type<MouseWheelHandler>} */
  static m_getType__() {
   MouseWheelEvent.$clinit();
   return MouseWheelEvent.f_TYPE__org_gwtproject_event_dom_client_MouseWheelEvent_;
  }
- /**
-  * @override
-  * @return {Type<MouseWheelHandler>}
-  * @public
-  */
+ /** @override @return {Type<MouseWheelHandler>} */
  m_getAssociatedType__() {
   return MouseWheelEvent.f_TYPE__org_gwtproject_event_dom_client_MouseWheelEvent_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isNorth__() {
   return this.m_getDeltaY__() < 0;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getDeltaY__() {
   return $Overlay.m_getMouseWheelVelocityY__$devirt__org_gwtproject_dom_client_NativeEvent(this.m_getNativeEvent__());
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isSouth__() {
   return this.m_getDeltaY__() > 0;
  }
- /**
-  * @param {MouseWheelHandler} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_event_dom_client_MouseWheelHandler(handler) {
+ 
+ m_dispatch__org_gwtproject_event_dom_client_MouseWheelHandler(/** MouseWheelHandler */ handler) {
   handler.m_onMouseWheel__org_gwtproject_event_dom_client_MouseWheelEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_event_dom_client_MouseWheelHandler(/**@type {MouseWheelHandler} */ ($Casts.$to(arg0, MouseWheelHandler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_event_dom_client_MouseWheelHandler(/**@type {MouseWheelHandler}*/ ($Casts.$to(arg0, MouseWheelHandler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MouseWheelEvent.$clinit = () =>{};
   MouseWheelEvent.$loadModules();
   MouseEvent.$clinit();
-  MouseWheelEvent.f_TYPE__org_gwtproject_event_dom_client_MouseWheelEvent_ = /**@type {!Type<MouseWheelHandler>} */ (Type.$create__java_lang_String__org_gwtproject_event_dom_client_DomEvent(BrowserEvents.f_MOUSEWHEEL__org_gwtproject_dom_client_BrowserEvents, MouseWheelEvent.$create__()));
+  MouseWheelEvent.f_TYPE__org_gwtproject_event_dom_client_MouseWheelEvent_ = /**@type {!Type<MouseWheelHandler>}*/ (Type.$create__java_lang_String__org_gwtproject_event_dom_client_DomEvent(BrowserEvents.f_MOUSEWHEEL__org_gwtproject_dom_client_BrowserEvents, MouseWheelEvent.$create__()));
   Type.$create__java_lang_String__org_gwtproject_event_dom_client_DomEvent("DOMMouseScroll", MouseWheelEvent.$create__());
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof MouseWheelEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   BrowserEvents = goog.module.get('org.gwtproject.dom.client.BrowserEvents$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.NativeEvent.$Overlay$impl');
@@ -120,7 +82,7 @@ class MouseWheelEvent extends MouseEvent {
 }
 $Util.$setClassMetadata(MouseWheelEvent, 'org.gwtproject.event.dom.client.MouseWheelEvent');
 
-/** @public {Type<MouseWheelHandler>} */
+/**@type {Type<MouseWheelHandler>}*/
 MouseWheelEvent.f_TYPE__org_gwtproject_event_dom_client_MouseWheelEvent_;
 
 exports = MouseWheelEvent; 

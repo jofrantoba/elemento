@@ -12,42 +12,24 @@ let HandlerRegistration = goog.forwardDeclare('org.gwtproject.event.shared.Handl
  * @extends {HasHandlers}
  */
 class HasShowRangeHandlers {
- /**
-  * @abstract
-  * @param {ShowRangeHandler<V>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addShowRangeHandler__org_gwtproject_event_logical_shared_ShowRangeHandler(handler) {}
- /**
-  * @public
-  */
+ /** @abstract @return {HandlerRegistration} */
+ m_addShowRangeHandler__org_gwtproject_event_logical_shared_ShowRangeHandler(/** ShowRangeHandler<V> */ handler) {}
+ 
  static $clinit() {
   HasShowRangeHandlers.$clinit = () =>{};
   HasShowRangeHandlers.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasHandlers.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_logical_shared_HasShowRangeHandlers = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasHandlers.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_logical_shared_HasShowRangeHandlers = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_logical_shared_HasShowRangeHandlers;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

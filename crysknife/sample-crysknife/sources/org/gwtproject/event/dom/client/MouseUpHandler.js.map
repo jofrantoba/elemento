@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MouseUpHandler.impl.java.js",
-"lineCount":34,
-"mappings":"A;;;;;;;;;;;;MAoBiB,c;;;;;;CAOV,yD,CAAuBA,K;;;;;;QAPb,M;EAAAC,yB;EAAAA,8B;;;;;QAAA,O;EAAAC,iC;EAAAA;",
+"lineCount":24,
+"mappings":"A;;;;;;;;;;;;MAoBiB,c;;CAOV,yD,qBAAuBA,K;;QAPb,M;EAAAC,yB;EAAAA,8B;;;QAAA,O;EAAAC,iC;EAAAA;",
 "sources":["MouseUpHandler.java"],
 "names":["event","org.gwtproject.event.dom.client.MouseUpHandler.<synthetic: adapt_lambda>","org.gwtproject.event.dom.client.MouseUpHandler.<clinit>"]
 }

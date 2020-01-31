@@ -11,54 +11,28 @@ let Editor = goog.forwardDeclare('org.gwtproject.editor.client.Editor$impl');
  * @extends {EditorDriver<T>}
  */
 class SimpleBeanEditorDriver {
- /**
-  * @abstract
-  * @param {T} object
-  * @public
-  */
- m_edit__java_lang_Object(object) {}
- /**
-  * @abstract
-  * @override
-  * @return {T}
-  * @public
-  */
+ /** @abstract */
+ m_edit__java_lang_Object(/** T */ object) {}
+ /** @abstract @override @return {T} */
  m_flush__() {}
- /**
-  * @abstract
-  * @param {E} editor
-  * @public
-  */
- m_initialize__org_gwtproject_editor_client_Editor(editor) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_initialize__org_gwtproject_editor_client_Editor(/** E */ editor) {}
+ 
  static $clinit() {
   SimpleBeanEditorDriver.$clinit = () =>{};
   SimpleBeanEditorDriver.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  EditorDriver.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_editor_client_SimpleBeanEditorDriver = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  EditorDriver.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_editor_client_SimpleBeanEditorDriver = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_editor_client_SimpleBeanEditorDriver;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

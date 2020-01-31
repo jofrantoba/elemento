@@ -7,55 +7,37 @@ let ImageResource = goog.forwardDeclare('org.gwtproject.resources.client.ImageRe
 let CellTable__ResourcesImpl = goog.forwardDeclare('org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$impl');
 
 class cellTableSortDescendingInitializer extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!cellTableSortDescendingInitializer}
-  * @public
-  */
+ /** @return {!cellTableSortDescendingInitializer} */
  static $create__() {
   let $instance = new cellTableSortDescendingInitializer();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellTable_ResourcesImpl_cellTableSortDescendingInitializer__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_cellview_client_CellTable_ResourcesImpl_cellTableSortDescendingInitializer__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {ImageResource}
-  * @public
-  */
+ /** @return {ImageResource} */
  static m_get__() {
   cellTableSortDescendingInitializer.$clinit();
   return CellTable__ResourcesImpl.f_cellTableSortDescending__org_gwtproject_user_cellview_client_CellTable_ResourcesImpl_;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   cellTableSortDescendingInitializer.$clinit = () =>{};
   cellTableSortDescendingInitializer.$loadModules();
   j_l_Object.$clinit();
   CellTable__ResourcesImpl.f__instance0__org_gwtproject_user_cellview_client_CellTable_ResourcesImpl_.m_cellTableSortDescendingInitializer___$p_org_gwtproject_user_cellview_client_CellTable_ResourcesImpl();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof cellTableSortDescendingInitializer;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   CellTable__ResourcesImpl = goog.module.get('org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$impl');
  }

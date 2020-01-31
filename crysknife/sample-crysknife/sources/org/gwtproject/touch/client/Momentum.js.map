@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Momentum.impl.java.js",
-"lineCount":32,
-"mappings":"A;;;;;;;;;;MAsBiB,Q;;;;;;;;CAkIT,mF,CAAkBA,e,EAAuBC,e;;;;;;;CAkBvC,yD,CAAkBC,K;;;;QApJX,O;EAAAC,2B;EAAAA;",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;MAsBiB,Q;;CAkIT,mF,cAAkBA,e,eAAuBC,e;;CAkBvC,yD,cAAkBC,K;;QApJX,O;EAAAC,2B;EAAAA;",
 "sources":["Momentum.java"],
 "names":["initialPosition","initialVelocity","state","org.gwtproject.touch.client.Momentum.<clinit>"]
 }

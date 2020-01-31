@@ -11,47 +11,32 @@ let DoubleRenderer = goog.forwardDeclare('org.gwtproject.text.client.DoubleRende
  * @extends {ValueBox<?number>}
   */
 class DoubleBox extends ValueBox {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!DoubleBox}
-  * @public
-  */
+ /** @return {!DoubleBox} */
  static $create__() {
   DoubleBox.$clinit();
   let $instance = new DoubleBox();
   $instance.$ctor__org_gwtproject_user_client_ui_DoubleBox__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_DoubleBox__() {
   this.$ctor__org_gwtproject_user_client_ui_ValueBox__org_gwtproject_dom_client_Element__org_gwtproject_text_shared_Renderer__org_gwtproject_text_shared_Parser($Overlay.m_createTextInputElement__$devirt__org_gwtproject_dom_client_Document($Overlay.m_get__()), DoubleRenderer.m_instance__(), DoubleParser.m_instance__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DoubleBox.$clinit = () =>{};
   DoubleBox.$loadModules();
   ValueBox.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DoubleBox;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('org.gwtproject.dom.client.Document.$Overlay$impl');
   DoubleParser = goog.module.get('org.gwtproject.text.client.DoubleParser$impl');

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasVerticalAlignment.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;MAsCiB,oB;;;;;;CA4CW,wB;;;;;;CAUrB,oG,CAA+CA,K;;;;;QAhCpD,sE;EAAAC,kI;;;;;;QAMA,sE;EAAAA,kI;;;;;;QAMA,mE;EAAAA,+H;;;;;QAlCe,O;EAAAC,uC;EAAAA,oC;EAsBfA,yJ;EAMAA,yJ;EAMAA,mJ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAlCe;yF;AAAA;yF;AAAA;;",
+"lineCount":59,
+"mappings":"A;;;;;;;;;MAsCiB,oB;;CA4CW,wB;;CAUrB,oG,kCAA+CA,K;;QAhCpD,sE;EAAAC,kI;;;QAMA,sE;EAAAA,kI;;;QAMA,mE;EAAAA,+H;;;QAlCe,O;EAAAC,uC;EAAAA,oC;EAsBfA,yJ;EAMAA,yJ;EAMAA,mJ;;;;;;;;;;;;;;;;;;;;;AAlCe;yF;AAAA;yF;AAAA;;",
 "sources":["HasVerticalAlignment.java"],
 "names":["align","org.gwtproject.user.client.ui.HasVerticalAlignment.<synthetic: getter>","org.gwtproject.user.client.ui.HasVerticalAlignment.<clinit>"]
 }

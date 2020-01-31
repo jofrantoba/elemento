@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasHorizontalScrolling.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;MAoBiB,sB;;;;;;CAOX,+B;;;;;;CAQA,sC;;;;;;CAOA,sC;;;;;;CAOC,kC,CAAgCA,Q;;;;QA7BtB,O;EAAAC,yC;EAAAA;",
+"lineCount":20,
+"mappings":"A;;;;;;;MAoBiB,sB;;CAOX,+B;;CAQA,sC;;CAOA,sC;;CAOC,kC,eAAgCA,Q;;QA7BtB,O;EAAAC,yC;EAAAA;",
 "sources":["HasHorizontalScrolling.java"],
 "names":["position","org.gwtproject.user.client.ui.HasHorizontalScrolling.<clinit>"]
 }

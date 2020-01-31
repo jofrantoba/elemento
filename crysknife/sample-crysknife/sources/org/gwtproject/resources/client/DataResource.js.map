@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DataResource.impl.java.js",
-"lineCount":24,
-"mappings":"A;;;;;;;;;;;MA0CiB,Y;;;;;;CAKP,c;;;;QALO,O;EAAAA,+B;EAAAA;",
+"lineCount":18,
+"mappings":"A;;;;;;;;;;;MA0CiB,Y;;CAKP,c;;QALO,O;EAAAA,+B;EAAAA;",
 "sources":["DataResource.java"],
 "names":["org.gwtproject.resources.client.DataResource.<clinit>"]
 }

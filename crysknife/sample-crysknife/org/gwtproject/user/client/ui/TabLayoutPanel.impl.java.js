@@ -47,38 +47,27 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {HasSelectionHandlers<Integer>}
   */
 class TabLayoutPanel extends ResizeComposite {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {TabbedDeckLayoutPanel} */
+  /**@type {TabbedDeckLayoutPanel}*/
   this.f_deckPanel__org_gwtproject_user_client_ui_TabLayoutPanel_;
-  /** @public {FlowPanel} */
+  /**@type {FlowPanel}*/
   this.f_tabBar__org_gwtproject_user_client_ui_TabLayoutPanel_;
-  /** @public {ArrayList<Tab>} */
+  /**@type {ArrayList<Tab>}*/
   this.f_tabs__org_gwtproject_user_client_ui_TabLayoutPanel_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_selectedIndex__org_gwtproject_user_client_ui_TabLayoutPanel_ = 0;
  }
- /**
-  * @param {number} barHeight
-  * @param {Unit} barUnit
-  * @return {!TabLayoutPanel}
-  * @public
-  */
- static $create__double__org_gwtproject_dom_style_shared_Unit(barHeight, barUnit) {
+ /** @return {!TabLayoutPanel} */
+ static $create__double__org_gwtproject_dom_style_shared_Unit(/** number */ barHeight, /** Unit */ barUnit) {
   TabLayoutPanel.$clinit();
   let $instance = new TabLayoutPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_TabLayoutPanel__double__org_gwtproject_dom_style_shared_Unit(barHeight, barUnit);
   return $instance;
  }
- /**
-  * @param {number} barHeight
-  * @param {Unit} barUnit
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_TabLayoutPanel__double__org_gwtproject_dom_style_shared_Unit(barHeight, barUnit) {
+ 
+ $ctor__org_gwtproject_user_client_ui_TabLayoutPanel__double__org_gwtproject_dom_style_shared_Unit(/** number */ barHeight, /** Unit */ barUnit) {
   this.$ctor__org_gwtproject_user_client_ui_ResizeComposite__();
   this.$init___$p_org_gwtproject_user_client_ui_TabLayoutPanel();
   let panel = LayoutPanel.$create__();
@@ -95,118 +84,59 @@ class TabLayoutPanel extends ResizeComposite {
   this.f_tabBar__org_gwtproject_user_client_ui_TabLayoutPanel_.m_setStyleName__java_lang_String("gwt-TabLayoutPanelTabs");
   this.m_setStyleName__java_lang_String("gwt-TabLayoutPanel");
  }
- /**
-  * @param {IsWidget} w
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_IsWidget(w) {
+ 
+ m_add__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ w) {
   this.m_add__org_gwtproject_user_client_ui_Widget(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(w));
  }
- /**
-  * @param {IsWidget} w
-  * @param {IsWidget} tab
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_IsWidget__org_gwtproject_user_client_ui_IsWidget(w, tab) {
+ 
+ m_add__org_gwtproject_user_client_ui_IsWidget__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ w, /** IsWidget */ tab) {
   this.m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(w), Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(tab));
  }
- /**
-  * @param {IsWidget} w
-  * @param {?string} text
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_IsWidget__java_lang_String(w, text) {
+ 
+ m_add__org_gwtproject_user_client_ui_IsWidget__java_lang_String(/** IsWidget */ w, /** ?string */ text) {
   this.m_add__org_gwtproject_user_client_ui_Widget__java_lang_String(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(w), text);
  }
- /**
-  * @param {IsWidget} w
-  * @param {?string} text
-  * @param {boolean} asHtml
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_IsWidget__java_lang_String__boolean(w, text, asHtml) {
+ 
+ m_add__org_gwtproject_user_client_ui_IsWidget__java_lang_String__boolean(/** IsWidget */ w, /** ?string */ text, /** boolean */ asHtml) {
   this.m_add__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(w), text, asHtml);
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override */
+ m_add__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__int(w, this.m_getWidgetCount__());
  }
- /**
-  * @param {Widget} child
-  * @param {?string} text
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget__java_lang_String(child, text) {
+ 
+ m_add__org_gwtproject_user_client_ui_Widget__java_lang_String(/** Widget */ child, /** ?string */ text) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__java_lang_String__int(child, text, this.m_getWidgetCount__());
  }
- /**
-  * @param {Widget} child
-  * @param {SafeHtml} html
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_safehtml_shared_SafeHtml(child, html) {
+ 
+ m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_safehtml_shared_SafeHtml(/** Widget */ child, /** SafeHtml */ html) {
   this.m_add__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean(child, html.m_asString__(), true);
  }
- /**
-  * @param {Widget} child
-  * @param {?string} text
-  * @param {boolean} asHtml
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean(child, text, asHtml) {
+ 
+ m_add__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean(/** Widget */ child, /** ?string */ text, /** boolean */ asHtml) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean__int(child, text, asHtml, this.m_getWidgetCount__());
  }
- /**
-  * @param {Widget} child
-  * @param {Widget} tab
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget(child, tab) {
+ 
+ m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget(/** Widget */ child, /** Widget */ tab) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget__int(child, tab, this.m_getWidgetCount__());
  }
- /**
-  * @override
-  * @param {BeforeSelectionHandler<Integer>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addBeforeSelectionHandler__org_gwtproject_event_logical_shared_BeforeSelectionHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addBeforeSelectionHandler__org_gwtproject_event_logical_shared_BeforeSelectionHandler(/** BeforeSelectionHandler<Integer> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, BeforeSelectionEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {SelectionHandler<Integer>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addSelectionHandler__org_gwtproject_event_logical_shared_SelectionHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addSelectionHandler__org_gwtproject_event_logical_shared_SelectionHandler(/** SelectionHandler<Integer> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, SelectionEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {number} duration
-  * @public
-  */
- m_animate__int(duration) {
+ /** @override */
+ m_animate__int(/** number */ duration) {
   this.m_animate__int__org_gwtproject_layout_client_Layout_AnimationCallback(duration, null);
  }
- /**
-  * @override
-  * @param {number} duration
-  * @param {AnimationCallback} callback
-  * @public
-  */
- m_animate__int__org_gwtproject_layout_client_Layout_AnimationCallback(duration, callback) {
+ /** @override */
+ m_animate__int__org_gwtproject_layout_client_Layout_AnimationCallback(/** number */ duration, /** AnimationCallback */ callback) {
   this.f_deckPanel__org_gwtproject_user_client_ui_TabLayoutPanel_.m_animate__int__org_gwtproject_layout_client_Layout_AnimationCallback(duration, callback);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_clear__() {
   let it = this.m_iterator__();
   while (it.m_hasNext__()) {
@@ -214,149 +144,74 @@ class TabLayoutPanel extends ResizeComposite {
    it.m_remove__();
   }
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_forceLayout__() {
   this.f_deckPanel__org_gwtproject_user_client_ui_TabLayoutPanel_.m_forceLayout__();
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getAnimationDuration__() {
   return this.f_deckPanel__org_gwtproject_user_client_ui_TabLayoutPanel_.m_getAnimationDuration__();
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getSelectedIndex__() {
   return this.f_selectedIndex__org_gwtproject_user_client_ui_TabLayoutPanel_;
  }
- /**
-  * @param {number} index
-  * @return {Widget}
-  * @public
-  */
- m_getTabWidget__int(index) {
+ /** @return {Widget} */
+ m_getTabWidget__int(/** number */ index) {
   this.m_checkIndex__int_$p_org_gwtproject_user_client_ui_TabLayoutPanel(index);
-  return /**@type {Tab} */ ($Casts.$to(this.f_tabs__org_gwtproject_user_client_ui_TabLayoutPanel_.getAtIndex(index), Tab)).m_getWidget__();
+  return /**@type {Tab}*/ ($Casts.$to(this.f_tabs__org_gwtproject_user_client_ui_TabLayoutPanel_.getAtIndex(index), Tab)).m_getWidget__();
  }
- /**
-  * @param {IsWidget} child
-  * @return {Widget}
-  * @public
-  */
- m_getTabWidget__org_gwtproject_user_client_ui_IsWidget(child) {
+ /** @return {Widget} */
+ m_getTabWidget__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ child) {
   return this.m_getTabWidget__org_gwtproject_user_client_ui_Widget(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(child));
  }
- /**
-  * @param {Widget} child
-  * @return {Widget}
-  * @public
-  */
- m_getTabWidget__org_gwtproject_user_client_ui_Widget(child) {
+ /** @return {Widget} */
+ m_getTabWidget__org_gwtproject_user_client_ui_Widget(/** Widget */ child) {
   this.m_checkChild__org_gwtproject_user_client_ui_Widget_$p_org_gwtproject_user_client_ui_TabLayoutPanel(child);
   return this.m_getTabWidget__int(this.m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(child));
  }
- /**
-  * @override
-  * @param {number} index
-  * @return {Widget}
-  * @public
-  */
- m_getWidget__int(index) {
+ /** @override @return {Widget} */
+ m_getWidget__int(/** number */ index) {
   return this.f_deckPanel__org_gwtproject_user_client_ui_TabLayoutPanel_.m_getWidget__int(index);
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getWidgetCount__() {
   return this.f_deckPanel__org_gwtproject_user_client_ui_TabLayoutPanel_.m_getWidgetCount__();
  }
- /**
-  * @override
-  * @param {IsWidget} child
-  * @return {number}
-  * @public
-  */
- m_getWidgetIndex__org_gwtproject_user_client_ui_IsWidget(child) {
+ /** @override @return {number} */
+ m_getWidgetIndex__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ child) {
   return this.m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(child));
  }
- /**
-  * @override
-  * @param {Widget} child
-  * @return {number}
-  * @public
-  */
- m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(child) {
+ /** @override @return {number} */
+ m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(/** Widget */ child) {
   return this.f_deckPanel__org_gwtproject_user_client_ui_TabLayoutPanel_.m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(child);
  }
- /**
-  * @param {IsWidget} child
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_IsWidget__int(child, beforeIndex) {
+ 
+ m_insert__org_gwtproject_user_client_ui_IsWidget__int(/** IsWidget */ child, /** number */ beforeIndex) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__int(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(child), beforeIndex);
  }
- /**
-  * @param {IsWidget} child
-  * @param {IsWidget} tab
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_IsWidget__org_gwtproject_user_client_ui_IsWidget__int(child, tab, beforeIndex) {
+ 
+ m_insert__org_gwtproject_user_client_ui_IsWidget__org_gwtproject_user_client_ui_IsWidget__int(/** IsWidget */ child, /** IsWidget */ tab, /** number */ beforeIndex) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget__int(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(child), Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(tab), beforeIndex);
  }
- /**
-  * @param {IsWidget} child
-  * @param {?string} text
-  * @param {boolean} asHtml
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_IsWidget__java_lang_String__boolean__int(child, text, asHtml, beforeIndex) {
+ 
+ m_insert__org_gwtproject_user_client_ui_IsWidget__java_lang_String__boolean__int(/** IsWidget */ child, /** ?string */ text, /** boolean */ asHtml, /** number */ beforeIndex) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean__int(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(child), text, asHtml, beforeIndex);
  }
- /**
-  * @param {IsWidget} child
-  * @param {?string} text
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_IsWidget__java_lang_String__int(child, text, beforeIndex) {
+ 
+ m_insert__org_gwtproject_user_client_ui_IsWidget__java_lang_String__int(/** IsWidget */ child, /** ?string */ text, /** number */ beforeIndex) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__java_lang_String__int(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(child), text, beforeIndex);
  }
- /**
-  * @param {Widget} child
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_Widget__int(child, beforeIndex) {
+ 
+ m_insert__org_gwtproject_user_client_ui_Widget__int(/** Widget */ child, /** number */ beforeIndex) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__java_lang_String__int(child, "", beforeIndex);
  }
- /**
-  * @param {Widget} child
-  * @param {SafeHtml} html
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_safehtml_shared_SafeHtml__int(child, html, beforeIndex) {
+ 
+ m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_safehtml_shared_SafeHtml__int(/** Widget */ child, /** SafeHtml */ html, /** number */ beforeIndex) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean__int(child, html.m_asString__(), true, beforeIndex);
  }
- /**
-  * @param {Widget} child
-  * @param {?string} text
-  * @param {boolean} asHtml
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean__int(child, text, asHtml, beforeIndex) {
+ 
+ m_insert__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean__int(/** Widget */ child, /** ?string */ text, /** boolean */ asHtml, /** number */ beforeIndex) {
   let /** Widget */ contents;
   if (asHtml) {
    contents = HTML.$create__java_lang_String(text);
@@ -365,46 +220,24 @@ class TabLayoutPanel extends ResizeComposite {
   }
   this.m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget__int(child, contents, beforeIndex);
  }
- /**
-  * @param {Widget} child
-  * @param {?string} text
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_Widget__java_lang_String__int(child, text, beforeIndex) {
+ 
+ m_insert__org_gwtproject_user_client_ui_Widget__java_lang_String__int(/** Widget */ child, /** ?string */ text, /** number */ beforeIndex) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean__int(child, text, false, beforeIndex);
  }
- /**
-  * @param {Widget} child
-  * @param {Widget} tab
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget__int(child, tab, beforeIndex) {
+ 
+ m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget__int(/** Widget */ child, /** Widget */ tab, /** number */ beforeIndex) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_TabLayoutPanel_Tab__int_$p_org_gwtproject_user_client_ui_TabLayoutPanel(child, Tab.$create__org_gwtproject_user_client_ui_TabLayoutPanel__org_gwtproject_user_client_ui_Widget(this, tab), beforeIndex);
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isAnimationVertical__() {
   return this.f_deckPanel__org_gwtproject_user_client_ui_TabLayoutPanel_.m_isAnimationVertical__();
  }
- /**
-  * @override
-  * @return {Iterator<Widget>}
-  * @public
-  */
+ /** @override @return {Iterator<Widget>} */
  m_iterator__() {
   return this.f_deckPanel__org_gwtproject_user_client_ui_TabLayoutPanel_.m_iterator__();
  }
- /**
-  * @override
-  * @param {number} index
-  * @return {boolean}
-  * @public
-  */
- m_remove__int(index) {
+ /** @override @return {boolean} */
+ m_remove__int(/** number */ index) {
   if ((index < 0) || (index >= this.m_getWidgetCount__())) {
    return false;
   }
@@ -412,7 +245,7 @@ class TabLayoutPanel extends ResizeComposite {
   this.f_tabBar__org_gwtproject_user_client_ui_TabLayoutPanel_.m_remove__int(index);
   this.f_deckPanel__org_gwtproject_user_client_ui_TabLayoutPanel_.m_removeProtected__org_gwtproject_user_client_ui_Widget(child);
   child.m_removeStyleName__java_lang_String(TabLayoutPanel.f_CONTENT_STYLE__org_gwtproject_user_client_ui_TabLayoutPanel_);
-  let tab = /**@type {Tab} */ ($Casts.$to(this.f_tabs__org_gwtproject_user_client_ui_TabLayoutPanel_.removeAtIndex(index), Tab));
+  let tab = /**@type {Tab}*/ ($Casts.$to(this.f_tabs__org_gwtproject_user_client_ui_TabLayoutPanel_.removeAtIndex(index), Tab));
   tab.m_getWidget__().m_removeFromParent__();
   if (index == this.f_selectedIndex__org_gwtproject_user_client_ui_TabLayoutPanel_) {
    this.f_selectedIndex__org_gwtproject_user_client_ui_TabLayoutPanel_ = -1;
@@ -424,143 +257,88 @@ class TabLayoutPanel extends ResizeComposite {
   }
   return true;
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   let index = this.m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(w);
   if (index == -1) {
    return false;
   }
   return this.m_remove__int(index);
  }
- /**
-  * @param {number} index
-  * @public
-  */
- m_selectTab__int(index) {
+ 
+ m_selectTab__int(/** number */ index) {
   this.m_selectTab__int__boolean(index, true);
  }
- /**
-  * @param {number} index
-  * @param {boolean} fireEvents
-  * @public
-  */
- m_selectTab__int__boolean(index, fireEvents) {
+ 
+ m_selectTab__int__boolean(/** number */ index, /** boolean */ fireEvents) {
   this.m_checkIndex__int_$p_org_gwtproject_user_client_ui_TabLayoutPanel(index);
   if (index == this.f_selectedIndex__org_gwtproject_user_client_ui_TabLayoutPanel_) {
    return;
   }
   if (fireEvents) {
-   let event = /**@type {BeforeSelectionEvent<Integer>} */ (BeforeSelectionEvent.m_fire__org_gwtproject_event_logical_shared_HasBeforeSelectionHandlers__java_lang_Object(this, Integer.m_valueOf__int(index)));
+   let event = /**@type {BeforeSelectionEvent<Integer>}*/ (BeforeSelectionEvent.m_fire__org_gwtproject_event_logical_shared_HasBeforeSelectionHandlers__java_lang_Object(this, Integer.m_valueOf__int(index)));
    if ((!$Equality.$same(event, null)) && event.m_isCanceled__()) {
     return;
    }
   }
   if (this.f_selectedIndex__org_gwtproject_user_client_ui_TabLayoutPanel_ != -1) {
-   /**@type {Tab} */ ($Casts.$to(this.f_tabs__org_gwtproject_user_client_ui_TabLayoutPanel_.getAtIndex(this.f_selectedIndex__org_gwtproject_user_client_ui_TabLayoutPanel_), Tab)).m_setSelected__boolean(false);
+   /**@type {Tab}*/ ($Casts.$to(this.f_tabs__org_gwtproject_user_client_ui_TabLayoutPanel_.getAtIndex(this.f_selectedIndex__org_gwtproject_user_client_ui_TabLayoutPanel_), Tab)).m_setSelected__boolean(false);
   }
   this.f_deckPanel__org_gwtproject_user_client_ui_TabLayoutPanel_.m_showWidget__int(index);
-  /**@type {Tab} */ ($Casts.$to(this.f_tabs__org_gwtproject_user_client_ui_TabLayoutPanel_.getAtIndex(index), Tab)).m_setSelected__boolean(true);
+  /**@type {Tab}*/ ($Casts.$to(this.f_tabs__org_gwtproject_user_client_ui_TabLayoutPanel_.getAtIndex(index), Tab)).m_setSelected__boolean(true);
   this.f_selectedIndex__org_gwtproject_user_client_ui_TabLayoutPanel_ = index;
   if (fireEvents) {
    SelectionEvent.m_fire__org_gwtproject_event_logical_shared_HasSelectionHandlers__java_lang_Object(this, Integer.m_valueOf__int(index));
   }
  }
- /**
-  * @param {IsWidget} child
-  * @public
-  */
- m_selectTab__org_gwtproject_user_client_ui_IsWidget(child) {
+ 
+ m_selectTab__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ child) {
   this.m_selectTab__org_gwtproject_user_client_ui_Widget(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(child));
  }
- /**
-  * @param {IsWidget} child
-  * @param {boolean} fireEvents
-  * @public
-  */
- m_selectTab__org_gwtproject_user_client_ui_IsWidget__boolean(child, fireEvents) {
+ 
+ m_selectTab__org_gwtproject_user_client_ui_IsWidget__boolean(/** IsWidget */ child, /** boolean */ fireEvents) {
   this.m_selectTab__org_gwtproject_user_client_ui_Widget__boolean(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(child), fireEvents);
  }
- /**
-  * @param {Widget} child
-  * @public
-  */
- m_selectTab__org_gwtproject_user_client_ui_Widget(child) {
+ 
+ m_selectTab__org_gwtproject_user_client_ui_Widget(/** Widget */ child) {
   this.m_selectTab__int(this.m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(child));
  }
- /**
-  * @param {Widget} child
-  * @param {boolean} fireEvents
-  * @public
-  */
- m_selectTab__org_gwtproject_user_client_ui_Widget__boolean(child, fireEvents) {
+ 
+ m_selectTab__org_gwtproject_user_client_ui_Widget__boolean(/** Widget */ child, /** boolean */ fireEvents) {
   this.m_selectTab__int__boolean(this.m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(child), fireEvents);
  }
- /**
-  * @param {number} duration
-  * @public
-  */
- m_setAnimationDuration__int(duration) {
+ 
+ m_setAnimationDuration__int(/** number */ duration) {
   this.f_deckPanel__org_gwtproject_user_client_ui_TabLayoutPanel_.m_setAnimationDuration__int(duration);
  }
- /**
-  * @param {boolean} isVertical
-  * @public
-  */
- m_setAnimationVertical__boolean(isVertical) {
+ 
+ m_setAnimationVertical__boolean(/** boolean */ isVertical) {
   this.f_deckPanel__org_gwtproject_user_client_ui_TabLayoutPanel_.m_setAnimationVertical__boolean(isVertical);
  }
- /**
-  * @param {number} index
-  * @param {?string} html
-  * @public
-  */
- m_setTabHTML__int__java_lang_String(index, html) {
+ 
+ m_setTabHTML__int__java_lang_String(/** number */ index, /** ?string */ html) {
   this.m_checkIndex__int_$p_org_gwtproject_user_client_ui_TabLayoutPanel(index);
-  /**@type {Tab} */ ($Casts.$to(this.f_tabs__org_gwtproject_user_client_ui_TabLayoutPanel_.getAtIndex(index), Tab)).m_setWidget__org_gwtproject_user_client_ui_Widget(HTML.$create__java_lang_String(html));
+  /**@type {Tab}*/ ($Casts.$to(this.f_tabs__org_gwtproject_user_client_ui_TabLayoutPanel_.getAtIndex(index), Tab)).m_setWidget__org_gwtproject_user_client_ui_Widget(HTML.$create__java_lang_String(html));
  }
- /**
-  * @param {number} index
-  * @param {SafeHtml} html
-  * @public
-  */
- m_setTabHTML__int__org_gwtproject_safehtml_shared_SafeHtml(index, html) {
+ 
+ m_setTabHTML__int__org_gwtproject_safehtml_shared_SafeHtml(/** number */ index, /** SafeHtml */ html) {
   this.m_setTabHTML__int__java_lang_String(index, html.m_asString__());
  }
- /**
-  * @param {number} index
-  * @param {?string} text
-  * @public
-  */
- m_setTabText__int__java_lang_String(index, text) {
+ 
+ m_setTabText__int__java_lang_String(/** number */ index, /** ?string */ text) {
   this.m_checkIndex__int_$p_org_gwtproject_user_client_ui_TabLayoutPanel(index);
-  /**@type {Tab} */ ($Casts.$to(this.f_tabs__org_gwtproject_user_client_ui_TabLayoutPanel_.getAtIndex(index), Tab)).m_setWidget__org_gwtproject_user_client_ui_Widget(Label.$create__java_lang_String(text));
+  /**@type {Tab}*/ ($Casts.$to(this.f_tabs__org_gwtproject_user_client_ui_TabLayoutPanel_.getAtIndex(index), Tab)).m_setWidget__org_gwtproject_user_client_ui_Widget(Label.$create__java_lang_String(text));
  }
- /**
-  * @param {Widget} child
-  * @public
-  */
- m_checkChild__org_gwtproject_user_client_ui_Widget_$p_org_gwtproject_user_client_ui_TabLayoutPanel(child) {
+ 
+ m_checkChild__org_gwtproject_user_client_ui_Widget_$p_org_gwtproject_user_client_ui_TabLayoutPanel(/** Widget */ child) {
   $Asserts.$assertWithMessage(this.m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(child) >= 0, "Child is not a part of this panel");
  }
- /**
-  * @param {number} index
-  * @public
-  */
- m_checkIndex__int_$p_org_gwtproject_user_client_ui_TabLayoutPanel(index) {
+ 
+ m_checkIndex__int_$p_org_gwtproject_user_client_ui_TabLayoutPanel(/** number */ index) {
   $Asserts.$assertWithMessage((index >= 0) && (index < this.m_getWidgetCount__()), "Index out of bounds");
  }
- /**
-  * @param {Widget} child
-  * @param {Tab} tab
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_TabLayoutPanel_Tab__int_$p_org_gwtproject_user_client_ui_TabLayoutPanel(child, tab, beforeIndex) {
+ 
+ m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_TabLayoutPanel_Tab__int_$p_org_gwtproject_user_client_ui_TabLayoutPanel(/** Widget */ child, /** Tab */ tab, /** number */ beforeIndex) {
   $Asserts.$assertWithMessage((beforeIndex >= 0) && (beforeIndex <= this.m_getWidgetCount__()), "beforeIndex out of bounds");
   let idx = this.m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(child);
   if (idx != -1) {
@@ -580,53 +358,35 @@ class TabLayoutPanel extends ResizeComposite {
    this.f_selectedIndex__org_gwtproject_user_client_ui_TabLayoutPanel_++;
   }
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_TabLayoutPanel() {
   this.f_deckPanel__org_gwtproject_user_client_ui_TabLayoutPanel_ = TabbedDeckLayoutPanel.$create__org_gwtproject_user_client_ui_TabLayoutPanel(this);
   this.f_tabBar__org_gwtproject_user_client_ui_TabLayoutPanel_ = FlowPanel.$create__();
-  this.f_tabs__org_gwtproject_user_client_ui_TabLayoutPanel_ = /**@type {!ArrayList<Tab>} */ (ArrayList.$create__());
+  this.f_tabs__org_gwtproject_user_client_ui_TabLayoutPanel_ = /**@type {!ArrayList<Tab>}*/ (ArrayList.$create__());
   this.f_selectedIndex__org_gwtproject_user_client_ui_TabLayoutPanel_ = -1;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TabLayoutPanel.$clinit = () =>{};
   TabLayoutPanel.$loadModules();
   ResizeComposite.$clinit();
   Iterable.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TabLayoutPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Integer = goog.module.get('java.lang.Integer$impl');
   Iterable = goog.module.get('java.lang.Iterable$impl');
@@ -659,15 +419,15 @@ AnimatedLayout.$markImplementor(TabLayoutPanel);
 HasBeforeSelectionHandlers.$markImplementor(TabLayoutPanel);
 HasSelectionHandlers.$markImplementor(TabLayoutPanel);
 
-/** @public {?string} @const */
+/**@const {?string}*/
 TabLayoutPanel.f_CONTENT_CONTAINER_STYLE__org_gwtproject_user_client_ui_TabLayoutPanel_ = "gwt-TabLayoutPanelContentContainer";
-/** @public {?string} @const */
+/**@const {?string}*/
 TabLayoutPanel.f_CONTENT_STYLE__org_gwtproject_user_client_ui_TabLayoutPanel_ = "gwt-TabLayoutPanelContent";
-/** @public {?string} @const */
+/**@const {?string}*/
 TabLayoutPanel.f_TAB_STYLE__org_gwtproject_user_client_ui_TabLayoutPanel_ = "gwt-TabLayoutPanelTab";
-/** @public {?string} @const */
+/**@const {?string}*/
 TabLayoutPanel.f_TAB_INNER_STYLE__org_gwtproject_user_client_ui_TabLayoutPanel_ = "gwt-TabLayoutPanelTabInner";
-/** @public {number} @const */
+/**@const {number}*/
 TabLayoutPanel.f_BIG_ENOUGH_TO_NOT_WRAP__org_gwtproject_user_client_ui_TabLayoutPanel_ = 16384;
 
 exports = TabLayoutPanel; 

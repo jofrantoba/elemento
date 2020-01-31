@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ValueLabel.impl.java.js",
-"lineCount":170,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;MAmCa,U;;;;CAAA,W;EAAAA,Q;EAAAA;OA4DuB,qDA5DvBA,C;EAAAA;OA6DD,kDA7DCA,C;EAAAA;OA8DgB,mDA9DhBA,C;;;;;;;;;QAiBqB,8E,CAAaC,O,EACrBC,Q;EADQC,qB;EAG9BA,8J;EAEAA,IAAcC,KAAdD,kJ;EAGAA,qB;EACAA,6E;EAEAA,a;;;;;;;;;;QAkB8B,iH,CAAaF,O,EACrBC,Q,EAA8BG,M;EADtBF,qB;EAG9BA,IAAcC,KAAdD,gJ;EAEAA,iK;EAGAA,qB;EACAA,6E;EAEAA,a;;;;;;;;QAOK,S;EAAAG,qB;EAAAA,iC;EAAAA,8D;EAAAA,iB;;;;;;CAAA,iD;EACLC,2H;;;;;;;;;QASK,4C,CAA+BL,Q;EAA/BI,qB;EAAAA,iC;EAAAA,yG;EAAAA,iB;;;;;;;CAAA,oF,CAA+BJ,Q;EACpCK,mE;EACAA,sE;;;;;;;;;;QAUQ,+E,CAAmBN,O,EAA6BC,Q;EAAhDI,qB;EAAAA,iC;EAAAA,qJ;EAAAA,iB;;;;;;;;CAAA,uH,CAAmBL,O,EAA6BC,Q;EACxDK,gG;EACAA,sE;;;;;;;CAGwB,Y;EACxBC;GACEA,kKADFA;G;EAGAA,gE;;;;;;;CAGO,Y;EACPC,+D;;;;;;;CAGU,4B,CAAWC,K;EACrBC,gE;EACAA,gM;EACAA,qC;;;;;QAzGS,O;EAAAC,6B;EAAAA,0B;EAAAA;",
+"lineCount":117,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;MAmCa,U;;CAAA,W;EAAAA,Q;EAAAA;OA4DuB,qDA5DvBA,C;EAAAA;OA6DD,kDA7DCA,C;EAAAA;OA8DgB,mDA9DhBA,C;;;QAiBqB,8E,eAAaC,O,qBACrBC,Q;EADQC,qB;EAG9BA,8J;EAEAA,IAAcC,KAAdD,iJ;EAGAA,qB;EACAA,6E;EAEAA,a;;;QAkB8B,iH,eAAaF,O,qBACrBC,Q,mBAA8BG,M;EADtBF,qB;EAG9BA,IAAcC,KAAdD,+I;EAEAA,iK;EAGAA,qB;EACAA,6E;EAEAA,a;;;;QAOK,S;EAAAG,qB;EAAAA,iC;EAAAA,8D;EAAAA,iB;;;;CAAA,iD;EACLC,2H;;;;QASK,4C,oBAA+BL,Q;EAA/BI,qB;EAAAA,iC;EAAAA,yG;EAAAA,iB;;;;CAAA,oF,oBAA+BJ,Q;EACpCK,mE;EACAA,sE;;;;QAUQ,+E,eAAmBN,O,qBAA6BC,Q;EAAhDI,qB;EAAAA,iC;EAAAA,qJ;EAAAA,iB;;;;CAAA,uH,eAAmBL,O,qBAA6BC,Q;EACxDK,gG;EACAA,sE;;;CAGwB,Y;EACxBC;GACEA,iKADFA;G;EAGAA,gE;;;CAGO,Y;EACPC,+D;;;CAGU,4B,UAAWC,K;EACrBC,gE;EACAA,gM;EACAA,qC;;;QAzGS,O;EAAAC,6B;EAAAA,0B;EAAAA;",
 "sources":["ValueLabel.java"],
 "names":["org.gwtproject.user.client.ui.ValueLabel.<synthetic: ctor_js>","element","renderer","org.gwtproject.user.client.ui.ValueLabel.wrap","label","parser","org.gwtproject.user.client.ui.ValueLabel.<synthetic: ctor_create>","org.gwtproject.user.client.ui.ValueLabel.<init>","org.gwtproject.user.client.ui.ValueLabel.asEditor","org.gwtproject.user.client.ui.ValueLabel.getValue","value","org.gwtproject.user.client.ui.ValueLabel.setValue","org.gwtproject.user.client.ui.ValueLabel.<clinit>"]
 }

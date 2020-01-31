@@ -16,81 +16,37 @@ let SelectionModel = goog.forwardDeclare('org.gwtproject.view.client.SelectionMo
  * @extends {HasCellPreviewHandlers<T>}
  */
 class HasData {
- /**
-  * @abstract
-  * @return {SelectionModel<?>}
-  * @public
-  */
+ /** @abstract @return {SelectionModel<?>} */
  m_getSelectionModel__() {}
- /**
-  * @abstract
-  * @param {number} indexOnPage
-  * @return {T}
-  * @public
-  */
- m_getVisibleItem__int(indexOnPage) {}
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {T} */
+ m_getVisibleItem__int(/** number */ indexOnPage) {}
+ /** @abstract @return {number} */
  m_getVisibleItemCount__() {}
- /**
-  * @abstract
-  * @return {Iterable<T>}
-  * @public
-  */
+ /** @abstract @return {Iterable<T>} */
  m_getVisibleItems__() {}
- /**
-  * @abstract
-  * @param {number} start
-  * @param {List<?>} values
-  * @public
-  */
- m_setRowData__int__java_util_List(start, values) {}
- /**
-  * @abstract
-  * @param {SelectionModel<?>} selectionModel
-  * @public
-  */
- m_setSelectionModel__org_gwtproject_view_client_SelectionModel(selectionModel) {}
- /**
-  * @abstract
-  * @param {Range} range
-  * @param {boolean} forceRangeChangeEvent
-  * @public
-  */
- m_setVisibleRangeAndClearData__org_gwtproject_view_client_Range__boolean(range, forceRangeChangeEvent) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_setRowData__int__java_util_List(/** number */ start, /** List<?> */ values) {}
+ /** @abstract */
+ m_setSelectionModel__org_gwtproject_view_client_SelectionModel(/** SelectionModel<?> */ selectionModel) {}
+ /** @abstract */
+ m_setVisibleRangeAndClearData__org_gwtproject_view_client_Range__boolean(/** Range */ range, /** boolean */ forceRangeChangeEvent) {}
+ 
  static $clinit() {
   HasData.$clinit = () =>{};
   HasData.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasRows.$markImplementor(classConstructor);
-  HasCellPreviewHandlers.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_view_client_HasData = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasRows.$markImplementor(ctor);
+  HasCellPreviewHandlers.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_view_client_HasData = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_view_client_HasData;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

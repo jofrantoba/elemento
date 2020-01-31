@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"EventListener.impl.java.js",
-"lineCount":32,
-"mappings":"A;;;;;;;;;;MA2BiB,a;;;;;;CAOV,kD,CAAqBA,K;;;;;;QAPX,M;EAAAC,wB;EAAAA,8B;;;;;QAAA,O;EAAAC,gC;EAAAA;",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;MA2BiB,a;;CAOV,kD,cAAqBA,K;;QAPX,M;EAAAC,wB;EAAAA,8B;;;QAAA,O;EAAAC,gC;EAAAA;",
 "sources":["EventListener.java"],
 "names":["event","org.gwtproject.user.client.EventListener.<synthetic: adapt_lambda>","org.gwtproject.user.client.EventListener.<clinit>"]
 }

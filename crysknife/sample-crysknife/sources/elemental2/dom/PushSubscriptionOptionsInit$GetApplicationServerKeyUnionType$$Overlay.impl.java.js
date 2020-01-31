@@ -9,79 +9,47 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class GetApplicationServerKeyUnionType_$Overlay {
- /**
-  * @param {*} o
-  * @return {?}
-  * @public
-  */
- static m_of__java_lang_Object(o) {
+ /** @return {?} */
+ static m_of__java_lang_Object(/** * */ o) {
   GetApplicationServerKeyUnionType_$Overlay.$clinit();
-  return /**@type {?} */ (Js.m_cast__java_lang_Object(o));
+  return /**@type {?}*/ (Js.m_cast__java_lang_Object(o));
  }
- /**
-  * @param {?} $thisArg
-  * @return {ArrayBuffer}
-  * @public
-  */
- static m_asArrayBuffer__$devirt__elemental2_dom_PushSubscriptionOptionsInit_GetApplicationServerKeyUnionType($thisArg) {
+ /** @return {ArrayBuffer} */
+ static m_asArrayBuffer__$devirt__elemental2_dom_PushSubscriptionOptionsInit_GetApplicationServerKeyUnionType(/** ? */ $thisArg) {
   GetApplicationServerKeyUnionType_$Overlay.$clinit();
-  return /**@type {ArrayBuffer} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $Overlay));
+  return /**@type {ArrayBuffer}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $Overlay));
  }
- /**
-  * @param {?} $thisArg
-  * @return {ArrayBufferView}
-  * @public
-  */
- static m_asArrayBufferView__$devirt__elemental2_dom_PushSubscriptionOptionsInit_GetApplicationServerKeyUnionType($thisArg) {
+ /** @return {ArrayBufferView} */
+ static m_asArrayBufferView__$devirt__elemental2_dom_PushSubscriptionOptionsInit_GetApplicationServerKeyUnionType(/** ? */ $thisArg) {
   GetApplicationServerKeyUnionType_$Overlay.$clinit();
-  return /**@type {ArrayBufferView} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), ArrayBufferView_$Overlay));
+  return /**@type {ArrayBufferView}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), ArrayBufferView_$Overlay));
  }
- /**
-  * @param {?} $thisArg
-  * @return {?string}
-  * @public
-  */
- static m_asString__$devirt__elemental2_dom_PushSubscriptionOptionsInit_GetApplicationServerKeyUnionType($thisArg) {
+ /** @return {?string} */
+ static m_asString__$devirt__elemental2_dom_PushSubscriptionOptionsInit_GetApplicationServerKeyUnionType(/** ? */ $thisArg) {
   GetApplicationServerKeyUnionType_$Overlay.$clinit();
   return Js.m_asString__java_lang_Object($thisArg);
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isArrayBuffer__$devirt__elemental2_dom_PushSubscriptionOptionsInit_GetApplicationServerKeyUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isArrayBuffer__$devirt__elemental2_dom_PushSubscriptionOptionsInit_GetApplicationServerKeyUnionType(/** ? */ $thisArg) {
   GetApplicationServerKeyUnionType_$Overlay.$clinit();
-  return $Overlay.$isInstance(/**@type {*} */ ($thisArg));
+  return $Overlay.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isArrayBufferView__$devirt__elemental2_dom_PushSubscriptionOptionsInit_GetApplicationServerKeyUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isArrayBufferView__$devirt__elemental2_dom_PushSubscriptionOptionsInit_GetApplicationServerKeyUnionType(/** ? */ $thisArg) {
   GetApplicationServerKeyUnionType_$Overlay.$clinit();
-  return ArrayBufferView_$Overlay.$isInstance(/**@type {*} */ ($thisArg));
+  return ArrayBufferView_$Overlay.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isString__$devirt__elemental2_dom_PushSubscriptionOptionsInit_GetApplicationServerKeyUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isString__$devirt__elemental2_dom_PushSubscriptionOptionsInit_GetApplicationServerKeyUnionType(/** ? */ $thisArg) {
   GetApplicationServerKeyUnionType_$Overlay.$clinit();
-  return j_l_String.$isInstance(/**@type {*} */ ($thisArg));
+  return j_l_String.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   GetApplicationServerKeyUnionType_$Overlay.$clinit = () =>{};
   GetApplicationServerKeyUnionType_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('elemental2.core.ArrayBuffer.$Overlay$impl');
   ArrayBufferView_$Overlay = goog.module.get('elemental2.core.ArrayBufferView.$Overlay$impl');

@@ -7,55 +7,37 @@ let ImageLoadingCell__ResourcesImpl = goog.forwardDeclare('org.gwtproject.cell.c
 let ImageResource = goog.forwardDeclare('org.gwtproject.resources.client.ImageResource$impl');
 
 class loadingInitializer extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!loadingInitializer}
-  * @public
-  */
+ /** @return {!loadingInitializer} */
  static $create__() {
   let $instance = new loadingInitializer();
   $instance.$ctor__org_gwtproject_cell_client_ImageLoadingCell_ResourcesImpl_loadingInitializer__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_cell_client_ImageLoadingCell_ResourcesImpl_loadingInitializer__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {ImageResource}
-  * @public
-  */
+ /** @return {ImageResource} */
  static m_get__() {
   loadingInitializer.$clinit();
   return ImageLoadingCell__ResourcesImpl.f_loading__org_gwtproject_cell_client_ImageLoadingCell_ResourcesImpl_;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   loadingInitializer.$clinit = () =>{};
   loadingInitializer.$loadModules();
   j_l_Object.$clinit();
   ImageLoadingCell__ResourcesImpl.f__instance0__org_gwtproject_cell_client_ImageLoadingCell_ResourcesImpl_.m_loadingInitializer___$p_org_gwtproject_cell_client_ImageLoadingCell_ResourcesImpl();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof loadingInitializer;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   ImageLoadingCell__ResourcesImpl = goog.module.get('org.gwtproject.cell.client.ImageLoadingCell_ResourcesImpl$impl');
  }

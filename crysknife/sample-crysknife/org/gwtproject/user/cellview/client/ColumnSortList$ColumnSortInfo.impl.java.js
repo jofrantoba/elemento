@@ -9,123 +9,79 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
 class ColumnSortInfo extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_ascending__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo_ = false;
-  /** @public {Column<?, ?>} */
+  /**@type {Column<?, ?>}*/
   this.f_column__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo_;
  }
- /**
-  * Factory method corresponding to constructor 'ColumnSortInfo(Column, boolean)'.
-  * @param {Column<?, ?>} column
-  * @param {boolean} ascending
-  * @return {!ColumnSortInfo}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_Column__boolean(column, ascending) {
+ //Factory method corresponding to constructor 'ColumnSortInfo(Column, boolean)'.
+ /** @return {!ColumnSortInfo} */
+ static $create__org_gwtproject_user_cellview_client_Column__boolean(/** Column<?, ?> */ column, /** boolean */ ascending) {
   ColumnSortInfo.$clinit();
   let $instance = new ColumnSortInfo();
   $instance.$ctor__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo__org_gwtproject_user_cellview_client_Column__boolean(column, ascending);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ColumnSortInfo(Column, boolean)'.
-  * @param {Column<?, ?>} column
-  * @param {boolean} ascending
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo__org_gwtproject_user_cellview_client_Column__boolean(column, ascending) {
+ //Initialization from constructor 'ColumnSortInfo(Column, boolean)'.
+ 
+ $ctor__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo__org_gwtproject_user_cellview_client_Column__boolean(/** Column<?, ?> */ column, /** boolean */ ascending) {
   this.$ctor__java_lang_Object__();
   this.f_column__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo_ = column;
   this.f_ascending__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo_ = ascending;
  }
- /**
-  * Factory method corresponding to constructor 'ColumnSortInfo()'.
-  * @return {!ColumnSortInfo}
-  * @public
-  */
+ //Factory method corresponding to constructor 'ColumnSortInfo()'.
+ /** @return {!ColumnSortInfo} */
  static $create__() {
   ColumnSortInfo.$clinit();
   let $instance = new ColumnSortInfo();
   $instance.$ctor__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'ColumnSortInfo()'.
-  * @public
-  */
+ //Initialization from constructor 'ColumnSortInfo()'.
+ 
  $ctor__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo__() {
   this.$ctor__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo__org_gwtproject_user_cellview_client_Column__boolean(null, true);
  }
- /**
-  * @override
-  * @param {*} obj
-  * @return {boolean}
-  * @public
-  */
- equals(obj) {
+ /** @override @return {boolean} */
+ equals(/** * */ obj) {
   if ($Equality.$same(obj, this)) {
    return true;
   } else if (!ColumnSortInfo.$isInstance(obj)) {
    return false;
   }
-  let other = /**@type {ColumnSortInfo} */ ($Casts.$to(obj, ColumnSortInfo));
+  let other = /**@type {ColumnSortInfo}*/ ($Casts.$to(obj, ColumnSortInfo));
   return this.m_equalsOrBothNull__java_lang_Object__java_lang_Object_$p_org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo(this.m_getColumn__(), other.m_getColumn__()) && this.m_isAscending__() == other.m_isAscending__();
  }
- /**
-  * @return {Column<?, ?>}
-  * @public
-  */
+ /** @return {Column<?, ?>} */
  m_getColumn__() {
   return this.f_column__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo_;
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  hashCode() {
   return 31 * ($Equality.$same(this.f_column__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo_, null) ? 0 : $Objects.m_hashCode__java_lang_Object(this.f_column__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo_)) + (this.f_ascending__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo_ ? 1 : 0);
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isAscending__() {
   return this.f_ascending__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo_;
  }
- /**
-  * @param {*} a
-  * @param {*} b
-  * @return {boolean}
-  * @public
-  */
- m_equalsOrBothNull__java_lang_Object__java_lang_Object_$p_org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo(a, b) {
+ /** @return {boolean} */
+ m_equalsOrBothNull__java_lang_Object__java_lang_Object_$p_org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo(/** * */ a, /** * */ b) {
   return $Equality.$same(a, null) ? $Equality.$same(b, null) : $Objects.m_equals__java_lang_Object__java_lang_Object(a, b);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ColumnSortInfo.$clinit = () =>{};
   ColumnSortInfo.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ColumnSortInfo;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

@@ -4,60 +4,39 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const By = goog.require('org.jboss.elemento.By$impl');
 
 class ByElement extends By {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_element__org_jboss_elemento_By_ByElement_;
  }
- /**
-  * @param {?string} element
-  * @return {!ByElement}
-  * @public
-  */
- static $create__java_lang_String(element) {
+ /** @return {!ByElement} */
+ static $create__java_lang_String(/** ?string */ element) {
   ByElement.$clinit();
   let $instance = new ByElement();
   $instance.$ctor__org_jboss_elemento_By_ByElement__java_lang_String(element);
   return $instance;
  }
- /**
-  * @param {?string} element
-  * @public
-  */
- $ctor__org_jboss_elemento_By_ByElement__java_lang_String(element) {
+ 
+ $ctor__org_jboss_elemento_By_ByElement__java_lang_String(/** ?string */ element) {
   this.$ctor__org_jboss_elemento_By__();
   this.f_element__org_jboss_elemento_By_ByElement_ = element;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_selector___$pp_org_jboss_elemento() {
   return this.f_element__org_jboss_elemento_By_ByElement_;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ByElement.$clinit = () =>{};
   ByElement.$loadModules();
   By.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ByElement;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

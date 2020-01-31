@@ -14,71 +14,49 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {Factory<org_jboss_elemento_sample_crysknife_FooterElement>}
   */
 class FooterElement__Factory extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Interceptor} */
+  /**@type {Interceptor}*/
   this.f_interceptor__org_jboss_elemento_sample_crysknife_FooterElement_Factory_;
-  /** @public {FooterElement} */
+  /**@type {FooterElement}*/
   this.f_instance__org_jboss_elemento_sample_crysknife_FooterElement_Factory_;
  }
- /**
-  * @override
-  * @return {FooterElement}
-  * @public
-  */
+ /** @override @return {FooterElement} */
  m_get__() {
   if (!$Equality.$same(this.f_instance__org_jboss_elemento_sample_crysknife_FooterElement_Factory_, null)) {
    return this.f_instance__org_jboss_elemento_sample_crysknife_FooterElement_Factory_;
   }
   this.f_interceptor__org_jboss_elemento_sample_crysknife_FooterElement_Factory_ = Interceptor.$create__java_lang_Object(FooterElement.$create__org_jboss_elemento_sample_crysknife_FooterElement_Factory(this));
-  this.f_instance__org_jboss_elemento_sample_crysknife_FooterElement_Factory_ = /**@type {FooterElement} */ ($Casts.$to(this.f_interceptor__org_jboss_elemento_sample_crysknife_FooterElement_Factory_.m_getProxy__(), FooterElement));
+  this.f_instance__org_jboss_elemento_sample_crysknife_FooterElement_Factory_ = /**@type {FooterElement}*/ ($Casts.$to(this.f_interceptor__org_jboss_elemento_sample_crysknife_FooterElement_Factory_.m_getProxy__(), FooterElement));
   return this.f_instance__org_jboss_elemento_sample_crysknife_FooterElement_Factory_;
  }
- /**
-  * @return {!FooterElement__Factory}
-  * @public
-  */
+ /** @return {!FooterElement__Factory} */
  static $create__() {
   let $instance = new FooterElement__Factory();
   $instance.$ctor__org_jboss_elemento_sample_crysknife_FooterElement_Factory__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_jboss_elemento_sample_crysknife_FooterElement_Factory__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {FooterElement__Factory}
-  * @public
-  */
+ /** @return {FooterElement__Factory} */
  static m_create__() {
   FooterElement__Factory.$clinit();
   return FooterElement__Factory.$create__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   FooterElement__Factory.$clinit = () =>{};
   FooterElement__Factory.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof FooterElement__Factory;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   FooterElement = goog.module.get('org.jboss.elemento.sample.crysknife.FooterElement_Factory.FooterElement$impl');

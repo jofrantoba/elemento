@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ClippedImageImpl$Template$$LambdaAdaptor.impl.java.js",
-"lineCount":50,
-"mappings":"A;;;;;;;;;;;;;MA6CY,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;2F;EAAAA,sK;;;;;;CAAA,4J;EAAAC,iC;EAAAA,8F;;;;;;;;CAAA,yF;EAAAC,6D;EAAAA,qI;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;;;MA6CY,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;2F;EAAAA,sK;;;CAAA,4J;EAAAC,iC;EAAAA,8F;;;CAAA,yF;EAAAC,6D;EAAAA,qI;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["ClippedImageImpl.java"],
 "names":["org.gwtproject.user.client.ui.impl.ClippedImageImpl$Template$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.client.ui.impl.ClippedImageImpl$Template$$LambdaAdaptor.<init>","org.gwtproject.user.client.ui.impl.ClippedImageImpl$Template$$LambdaAdaptor.image","org.gwtproject.user.client.ui.impl.ClippedImageImpl$Template$$LambdaAdaptor.<clinit>"]
 }

@@ -12,55 +12,31 @@ let ImageResource = goog.forwardDeclare('org.gwtproject.resources.client.ImageRe
  * @extends {ClientBundle}
  */
 class Resources {
- /**
-  * @abstract
-  * @return {ImageResource}
-  * @public
-  */
+ /** @abstract @return {ImageResource} */
  m_buttonCellBaseBackground__() {}
- /**
-  * @abstract
-  * @return {Style}
-  * @public
-  */
+ /** @abstract @return {Style} */
  m_buttonCellBaseStyle__() {}
- /**
-  * @return {Resources}
-  * @public
-  */
+ /** @return {Resources} */
  static get f_INSTANCE__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Resources() {
   return (Resources.$clinit(), Resources.$f_INSTANCE__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Resources);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Resources.$clinit = () =>{};
   Resources.$loadModules();
   Resources.$f_INSTANCE__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Resources = ButtonCellBase__DefaultAppearance__ResourcesImpl.$create__();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ClientBundle.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Resources = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ClientBundle.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Resources = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Resources;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   ButtonCellBase__DefaultAppearance__ResourcesImpl = goog.module.get('org.gwtproject.cell.client.ButtonCellBase_DefaultAppearance_ResourcesImpl$impl');
  }
@@ -70,7 +46,7 @@ $Util.$setClassMetadataForInterface(Resources, 'org.gwtproject.cell.client.Butto
 
 Resources.$markImplementor(/** @type {Function} */ (Resources));
 
-/** @private {Resources} */
+/**@private {Resources}*/
 Resources.$f_INSTANCE__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Resources;
 
 exports = Resources; 

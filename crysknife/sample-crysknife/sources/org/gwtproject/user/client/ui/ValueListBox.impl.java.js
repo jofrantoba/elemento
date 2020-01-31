@@ -39,142 +39,91 @@ let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
  * @implements {IsEditor<TakesValueEditor<T>>}
   */
 class ValueListBox extends Composite {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {List<T>} */
+  /**@type {List<T>}*/
   this.f_values__org_gwtproject_user_client_ui_ValueListBox_;
-  /** @public {Map<*, Integer>} */
+  /**@type {Map<*, Integer>}*/
   this.f_valueKeyToIndex__org_gwtproject_user_client_ui_ValueListBox_;
-  /** @public {Renderer<?>} */
+  /**@type {Renderer<?>}*/
   this.f_renderer__org_gwtproject_user_client_ui_ValueListBox_;
-  /** @public {ProvidesKey<T>} */
+  /**@type {ProvidesKey<T>}*/
   this.f_keyProvider__org_gwtproject_user_client_ui_ValueListBox_;
-  /** @public {TakesValueEditor<T>} */
+  /**@type {TakesValueEditor<T>}*/
   this.f_editor__org_gwtproject_user_client_ui_ValueListBox_;
-  /** @public {T} */
+  /**@type {T}*/
   this.f_value__org_gwtproject_user_client_ui_ValueListBox_;
  }
- /**
-  * Factory method corresponding to constructor 'ValueListBox()'.
-  * @template T
-  * @return {!ValueListBox<T>}
-  * @public
-  */
+ //Factory method corresponding to constructor 'ValueListBox()'.
+ /** @template T @return {!ValueListBox<T>} */
  static $create__() {
   ValueListBox.$clinit();
   let $instance = new ValueListBox();
   $instance.$ctor__org_gwtproject_user_client_ui_ValueListBox__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'ValueListBox()'.
-  * @public
-  */
+ //Initialization from constructor 'ValueListBox()'.
+ 
  $ctor__org_gwtproject_user_client_ui_ValueListBox__() {
   this.$ctor__org_gwtproject_user_client_ui_ValueListBox__org_gwtproject_text_shared_Renderer(ToStringRenderer.m_instance__());
  }
- /**
-  * Factory method corresponding to constructor 'ValueListBox(Renderer)'.
-  * @template T
-  * @param {Renderer<?>} renderer
-  * @return {!ValueListBox<T>}
-  * @public
-  */
- static $create__org_gwtproject_text_shared_Renderer(renderer) {
+ //Factory method corresponding to constructor 'ValueListBox(Renderer)'.
+ /** @template T @return {!ValueListBox<T>} */
+ static $create__org_gwtproject_text_shared_Renderer(/** Renderer<?> */ renderer) {
   ValueListBox.$clinit();
   let $instance = new ValueListBox();
   $instance.$ctor__org_gwtproject_user_client_ui_ValueListBox__org_gwtproject_text_shared_Renderer(renderer);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ValueListBox(Renderer)'.
-  * @param {Renderer<?>} renderer
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ValueListBox__org_gwtproject_text_shared_Renderer(renderer) {
-  this.$ctor__org_gwtproject_user_client_ui_ValueListBox__org_gwtproject_text_shared_Renderer__org_gwtproject_view_client_ProvidesKey(renderer, /**@type {!SimpleKeyProvider<T>} */ (SimpleKeyProvider.$create__()));
+ //Initialization from constructor 'ValueListBox(Renderer)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_ValueListBox__org_gwtproject_text_shared_Renderer(/** Renderer<?> */ renderer) {
+  this.$ctor__org_gwtproject_user_client_ui_ValueListBox__org_gwtproject_text_shared_Renderer__org_gwtproject_view_client_ProvidesKey(renderer, /**@type {!SimpleKeyProvider<T>}*/ (SimpleKeyProvider.$create__()));
  }
- /**
-  * Factory method corresponding to constructor 'ValueListBox(Renderer, ProvidesKey)'.
-  * @template T
-  * @param {Renderer<?>} renderer
-  * @param {ProvidesKey<T>} keyProvider
-  * @return {!ValueListBox<T>}
-  * @public
-  */
- static $create__org_gwtproject_text_shared_Renderer__org_gwtproject_view_client_ProvidesKey(renderer, keyProvider) {
+ //Factory method corresponding to constructor 'ValueListBox(Renderer, ProvidesKey)'.
+ /** @template T @return {!ValueListBox<T>} */
+ static $create__org_gwtproject_text_shared_Renderer__org_gwtproject_view_client_ProvidesKey(/** Renderer<?> */ renderer, /** ProvidesKey<T> */ keyProvider) {
   ValueListBox.$clinit();
   let $instance = new ValueListBox();
   $instance.$ctor__org_gwtproject_user_client_ui_ValueListBox__org_gwtproject_text_shared_Renderer__org_gwtproject_view_client_ProvidesKey(renderer, keyProvider);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ValueListBox(Renderer, ProvidesKey)'.
-  * @param {Renderer<?>} renderer
-  * @param {ProvidesKey<T>} keyProvider
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ValueListBox__org_gwtproject_text_shared_Renderer__org_gwtproject_view_client_ProvidesKey(renderer, keyProvider) {
+ //Initialization from constructor 'ValueListBox(Renderer, ProvidesKey)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_ValueListBox__org_gwtproject_text_shared_Renderer__org_gwtproject_view_client_ProvidesKey(/** Renderer<?> */ renderer, /** ProvidesKey<T> */ keyProvider) {
   this.$ctor__org_gwtproject_user_client_ui_Composite__();
   this.$init___$p_org_gwtproject_user_client_ui_ValueListBox();
   this.f_keyProvider__org_gwtproject_user_client_ui_ValueListBox_ = keyProvider;
   this.f_renderer__org_gwtproject_user_client_ui_ValueListBox_ = renderer;
   this.m_initWidget__org_gwtproject_user_client_ui_Widget(ListBox.$create__());
-  this.m_getListBox___$p_org_gwtproject_user_client_ui_ValueListBox().m_addChangeHandler__org_gwtproject_event_dom_client_ChangeHandler(/**@type {!$1<T>} */ ($1.$create__org_gwtproject_user_client_ui_ValueListBox(this)));
+  this.m_getListBox___$p_org_gwtproject_user_client_ui_ValueListBox().m_addChangeHandler__org_gwtproject_event_dom_client_ChangeHandler(/**@type {!$1<T>}*/ ($1.$create__org_gwtproject_user_client_ui_ValueListBox(this)));
  }
- /**
-  * @override
-  * @param {ValueChangeHandler<T>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler(/** ValueChangeHandler<T> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, ValueChangeEvent.m_getType__());
  }
- /**
-  * @override
-  * @return {TakesValueEditor<T>}
-  * @public
-  */
+ /** @override @return {TakesValueEditor<T>} */
  m_asEditor__() {
   if ($Equality.$same(this.f_editor__org_gwtproject_user_client_ui_ValueListBox_, null)) {
-   this.f_editor__org_gwtproject_user_client_ui_ValueListBox_ = /**@type {TakesValueEditor<T>} */ (TakesValueEditor.m_of__org_gwtproject_user_client_TakesValue(this));
+   this.f_editor__org_gwtproject_user_client_ui_ValueListBox_ = /**@type {TakesValueEditor<T>}*/ (TakesValueEditor.m_of__org_gwtproject_user_client_TakesValue(this));
   }
   return this.f_editor__org_gwtproject_user_client_ui_ValueListBox_;
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getTabIndex__() {
   return this.m_getListBox___$p_org_gwtproject_user_client_ui_ValueListBox().m_getTabIndex__();
  }
- /**
-  * @override
-  * @return {T}
-  * @public
-  */
+ /** @override @return {T} */
  m_getValue__() {
   return this.f_value__org_gwtproject_user_client_ui_ValueListBox_;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isEnabled__() {
   return this.m_getListBox___$p_org_gwtproject_user_client_ui_ValueListBox().m_isEnabled__();
  }
- /**
-  * @override
-  * @param {Collection<T>} newValues
-  * @public
-  */
- m_setAcceptableValues__java_util_Collection(newValues) {
+ /** @override */
+ m_setAcceptableValues__java_util_Collection(/** Collection<T> */ newValues) {
   this.f_values__org_gwtproject_user_client_ui_ValueListBox_.clear();
   this.f_valueKeyToIndex__org_gwtproject_user_client_ui_ValueListBox_.clear();
   let listBox = this.m_getListBox___$p_org_gwtproject_user_client_ui_ValueListBox();
@@ -185,53 +134,28 @@ class ValueListBox extends Composite {
   }
   this.m_updateListBox___$p_org_gwtproject_user_client_ui_ValueListBox();
  }
- /**
-  * @override
-  * @param {number} key
-  * @public
-  */
- m_setAccessKey__char(key) {
+ /** @override */
+ m_setAccessKey__char(/** number */ key) {
   this.m_getListBox___$p_org_gwtproject_user_client_ui_ValueListBox().m_setAccessKey__char(key);
  }
- /**
-  * @override
-  * @param {boolean} enabled
-  * @public
-  */
- m_setEnabled__boolean(enabled) {
+ /** @override */
+ m_setEnabled__boolean(/** boolean */ enabled) {
   this.m_getListBox___$p_org_gwtproject_user_client_ui_ValueListBox().m_setEnabled__boolean(enabled);
  }
- /**
-  * @override
-  * @param {boolean} focused
-  * @public
-  */
- m_setFocus__boolean(focused) {
+ /** @override */
+ m_setFocus__boolean(/** boolean */ focused) {
   this.m_getListBox___$p_org_gwtproject_user_client_ui_ValueListBox().m_setFocus__boolean(focused);
  }
- /**
-  * @override
-  * @param {number} index
-  * @public
-  */
- m_setTabIndex__int(index) {
+ /** @override */
+ m_setTabIndex__int(/** number */ index) {
   this.m_getListBox___$p_org_gwtproject_user_client_ui_ValueListBox().m_setTabIndex__int(index);
  }
- /**
-  * @override
-  * @param {T} value
-  * @public
-  */
- m_setValue__java_lang_Object(value) {
+ /** @override */
+ m_setValue__java_lang_Object(/** T */ value) {
   this.m_setValue__java_lang_Object__boolean(value, false);
  }
- /**
-  * @override
-  * @param {T} value
-  * @param {boolean} fireEvents
-  * @public
-  */
- m_setValue__java_lang_Object__boolean(value, fireEvents) {
+ /** @override */
+ m_setValue__java_lang_Object__boolean(/** T */ value, /** boolean */ fireEvents) {
   if ($Equality.$same(value, this.f_value__org_gwtproject_user_client_ui_ValueListBox_) || (!$Equality.$same(this.f_value__org_gwtproject_user_client_ui_ValueListBox_, null) && $Objects.m_equals__java_lang_Object__java_lang_Object(this.f_value__org_gwtproject_user_client_ui_ValueListBox_, value))) {
    return;
   }
@@ -242,11 +166,8 @@ class ValueListBox extends Composite {
    ValueChangeEvent.m_fireIfNotEqual__org_gwtproject_event_logical_shared_HasValueChangeHandlers__java_lang_Object__java_lang_Object(this, before, value);
   }
  }
- /**
-  * @param {T} value
-  * @public
-  */
- m_addValue__java_lang_Object_$p_org_gwtproject_user_client_ui_ValueListBox(value) {
+ 
+ m_addValue__java_lang_Object_$p_org_gwtproject_user_client_ui_ValueListBox(/** T */ value) {
   let key = this.f_keyProvider__org_gwtproject_user_client_ui_ValueListBox_.m_getKey__java_lang_Object(value);
   if (this.f_valueKeyToIndex__org_gwtproject_user_client_ui_ValueListBox_.containsKey(key)) {
    throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String("Duplicate value: " + j_l_String.m_valueOf__java_lang_Object(value)));
@@ -256,51 +177,36 @@ class ValueListBox extends Composite {
   this.m_getListBox___$p_org_gwtproject_user_client_ui_ValueListBox().m_addItem__java_lang_String(this.f_renderer__org_gwtproject_user_client_ui_ValueListBox_.m_render__java_lang_Object(value));
   $Asserts.$assert(this.f_values__org_gwtproject_user_client_ui_ValueListBox_.size() == this.m_getListBox___$p_org_gwtproject_user_client_ui_ValueListBox().m_getItemCount__());
  }
- /**
-  * @return {ListBox}
-  * @public
-  */
+ /** @return {ListBox} */
  m_getListBox___$p_org_gwtproject_user_client_ui_ValueListBox() {
-  return /**@type {ListBox} */ ($Casts.$to(this.m_getWidget__(), ListBox));
+  return /**@type {ListBox}*/ ($Casts.$to(this.m_getWidget__(), ListBox));
  }
- /**
-  * @public
-  */
+ 
  m_updateListBox___$p_org_gwtproject_user_client_ui_ValueListBox() {
   let key = this.f_keyProvider__org_gwtproject_user_client_ui_ValueListBox_.m_getKey__java_lang_Object(this.f_value__org_gwtproject_user_client_ui_ValueListBox_);
-  let index = /**@type {Integer} */ ($Casts.$to(this.f_valueKeyToIndex__org_gwtproject_user_client_ui_ValueListBox_.get(key), Integer));
+  let index = /**@type {Integer}*/ ($Casts.$to(this.f_valueKeyToIndex__org_gwtproject_user_client_ui_ValueListBox_.get(key), Integer));
   if ($Equality.$same(index, null)) {
    this.m_addValue__java_lang_Object_$p_org_gwtproject_user_client_ui_ValueListBox(this.f_value__org_gwtproject_user_client_ui_ValueListBox_);
   }
-  index = /**@type {Integer} */ ($Casts.$to(this.f_valueKeyToIndex__org_gwtproject_user_client_ui_ValueListBox_.get(key), Integer));
+  index = /**@type {Integer}*/ ($Casts.$to(this.f_valueKeyToIndex__org_gwtproject_user_client_ui_ValueListBox_.get(key), Integer));
   this.m_getListBox___$p_org_gwtproject_user_client_ui_ValueListBox().m_setSelectedIndex__int(index.m_intValue__());
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_ValueListBox() {
-  this.f_values__org_gwtproject_user_client_ui_ValueListBox_ = /**@type {!ArrayList<T>} */ (ArrayList.$create__());
-  this.f_valueKeyToIndex__org_gwtproject_user_client_ui_ValueListBox_ = /**@type {!HashMap<*, Integer>} */ (HashMap.$create__());
+  this.f_values__org_gwtproject_user_client_ui_ValueListBox_ = /**@type {!ArrayList<T>}*/ (ArrayList.$create__());
+  this.f_valueKeyToIndex__org_gwtproject_user_client_ui_ValueListBox_ = /**@type {!HashMap<*, Integer>}*/ (HashMap.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ValueListBox.$clinit = () =>{};
   ValueListBox.$loadModules();
   Composite.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ValueListBox;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
   Integer = goog.module.get('java.lang.Integer$impl');

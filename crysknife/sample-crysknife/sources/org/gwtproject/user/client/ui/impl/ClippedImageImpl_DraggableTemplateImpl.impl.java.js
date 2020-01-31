@@ -15,36 +15,23 @@ let SafeUri = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeUri$impl')
  * @implements {DraggableTemplate}
   */
 class ClippedImageImpl__DraggableTemplateImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!ClippedImageImpl__DraggableTemplateImpl}
-  * @public
-  */
+ /** @return {!ClippedImageImpl__DraggableTemplateImpl} */
  static $create__() {
   ClippedImageImpl__DraggableTemplateImpl.$clinit();
   let $instance = new ClippedImageImpl__DraggableTemplateImpl();
   $instance.$ctor__org_gwtproject_user_client_ui_impl_ClippedImageImpl_DraggableTemplateImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_impl_ClippedImageImpl_DraggableTemplateImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {SafeUri} arg0
-  * @param {SafeStyles} arg1
-  * @return {SafeHtml}
-  * @public
-  */
- m_image__org_gwtproject_safehtml_shared_SafeUri__org_gwtproject_safecss_shared_SafeStyles(arg0, arg1) {
+ /** @override @return {SafeHtml} */
+ m_image__org_gwtproject_safehtml_shared_SafeUri__org_gwtproject_safecss_shared_SafeStyles(/** SafeUri */ arg0, /** SafeStyles */ arg1) {
   let sb = StringBuilder.$create__();
   sb.m_append__java_lang_String("<img src='");
   sb.m_append__java_lang_String(SafeHtmlUtils.m_htmlEscape__java_lang_String(arg0.m_asString__()));
@@ -53,25 +40,17 @@ class ClippedImageImpl__DraggableTemplateImpl extends j_l_Object {
   sb.m_append__java_lang_String("' border='0' draggable='true'>");
   return OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml.$create__java_lang_String(sb.toString());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ClippedImageImpl__DraggableTemplateImpl.$clinit = () =>{};
   ClippedImageImpl__DraggableTemplateImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ClippedImageImpl__DraggableTemplateImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   StringBuilder = goog.module.get('java.lang.StringBuilder$impl');
   OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml = goog.module.get('org.gwtproject.safehtml.shared.OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml$impl');

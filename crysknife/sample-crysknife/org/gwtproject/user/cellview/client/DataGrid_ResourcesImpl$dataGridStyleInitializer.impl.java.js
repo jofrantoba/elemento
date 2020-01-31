@@ -7,55 +7,37 @@ let Style = goog.forwardDeclare('org.gwtproject.user.cellview.client.DataGrid.St
 let DataGrid__ResourcesImpl = goog.forwardDeclare('org.gwtproject.user.cellview.client.DataGrid_ResourcesImpl$impl');
 
 class dataGridStyleInitializer extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!dataGridStyleInitializer}
-  * @public
-  */
+ /** @return {!dataGridStyleInitializer} */
  static $create__() {
   let $instance = new dataGridStyleInitializer();
   $instance.$ctor__org_gwtproject_user_cellview_client_DataGrid_ResourcesImpl_dataGridStyleInitializer__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_cellview_client_DataGrid_ResourcesImpl_dataGridStyleInitializer__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {Style}
-  * @public
-  */
+ /** @return {Style} */
  static m_get__() {
   dataGridStyleInitializer.$clinit();
   return DataGrid__ResourcesImpl.f_dataGridStyle__org_gwtproject_user_cellview_client_DataGrid_ResourcesImpl_;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   dataGridStyleInitializer.$clinit = () =>{};
   dataGridStyleInitializer.$loadModules();
   j_l_Object.$clinit();
   DataGrid__ResourcesImpl.f__instance0__org_gwtproject_user_cellview_client_DataGrid_ResourcesImpl_.m_dataGridStyleInitializer___$p_org_gwtproject_user_cellview_client_DataGrid_ResourcesImpl();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof dataGridStyleInitializer;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   DataGrid__ResourcesImpl = goog.module.get('org.gwtproject.user.cellview.client.DataGrid_ResourcesImpl$impl');
  }

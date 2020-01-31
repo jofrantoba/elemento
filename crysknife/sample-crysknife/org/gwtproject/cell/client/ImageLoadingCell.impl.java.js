@@ -26,72 +26,51 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {AbstractCell<?string>}
   */
 class ImageLoadingCell extends AbstractCell {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {SafeHtmlRenderer<?string>} */
+  /**@type {SafeHtmlRenderer<?string>}*/
   this.f_errorRenderer__org_gwtproject_cell_client_ImageLoadingCell_;
-  /** @public {SafeHtmlRenderer<?string>} */
+  /**@type {SafeHtmlRenderer<?string>}*/
   this.f_imageRenderer__org_gwtproject_cell_client_ImageLoadingCell_;
-  /** @public {SafeHtmlRenderer<?string>} */
+  /**@type {SafeHtmlRenderer<?string>}*/
   this.f_loadingRenderer__org_gwtproject_cell_client_ImageLoadingCell_;
  }
- /**
-  * Factory method corresponding to constructor 'ImageLoadingCell()'.
-  * @return {!ImageLoadingCell}
-  * @public
-  */
+ //Factory method corresponding to constructor 'ImageLoadingCell()'.
+ /** @return {!ImageLoadingCell} */
  static $create__() {
   ImageLoadingCell.$clinit();
   let $instance = new ImageLoadingCell();
   $instance.$ctor__org_gwtproject_cell_client_ImageLoadingCell__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'ImageLoadingCell()'.
-  * @public
-  */
+ //Initialization from constructor 'ImageLoadingCell()'.
+ 
  $ctor__org_gwtproject_cell_client_ImageLoadingCell__() {
   this.$ctor__org_gwtproject_cell_client_ImageLoadingCell__org_gwtproject_cell_client_ImageLoadingCell_Renderers(DefaultRenderers.$create__());
  }
- /**
-  * Factory method corresponding to constructor 'ImageLoadingCell(Renderers)'.
-  * @param {Renderers} renderers
-  * @return {!ImageLoadingCell}
-  * @public
-  */
- static $create__org_gwtproject_cell_client_ImageLoadingCell_Renderers(renderers) {
+ //Factory method corresponding to constructor 'ImageLoadingCell(Renderers)'.
+ /** @return {!ImageLoadingCell} */
+ static $create__org_gwtproject_cell_client_ImageLoadingCell_Renderers(/** Renderers */ renderers) {
   ImageLoadingCell.$clinit();
   let $instance = new ImageLoadingCell();
   $instance.$ctor__org_gwtproject_cell_client_ImageLoadingCell__org_gwtproject_cell_client_ImageLoadingCell_Renderers(renderers);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ImageLoadingCell(Renderers)'.
-  * @param {Renderers} renderers
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_ImageLoadingCell__org_gwtproject_cell_client_ImageLoadingCell_Renderers(renderers) {
-  this.$ctor__org_gwtproject_cell_client_AbstractCell__arrayOf_java_lang_String(/**@type {!Array<?string>} */ ($Arrays.$init([BrowserEvents.f_LOAD__org_gwtproject_dom_client_BrowserEvents, BrowserEvents.f_ERROR__org_gwtproject_dom_client_BrowserEvents], j_l_String)));
+ //Initialization from constructor 'ImageLoadingCell(Renderers)'.
+ 
+ $ctor__org_gwtproject_cell_client_ImageLoadingCell__org_gwtproject_cell_client_ImageLoadingCell_Renderers(/** Renderers */ renderers) {
+  this.$ctor__org_gwtproject_cell_client_AbstractCell__arrayOf_java_lang_String(/**@type {!Array<?string>}*/ ($Arrays.$init([BrowserEvents.f_LOAD__org_gwtproject_dom_client_BrowserEvents, BrowserEvents.f_ERROR__org_gwtproject_dom_client_BrowserEvents], j_l_String)));
   this.f_errorRenderer__org_gwtproject_cell_client_ImageLoadingCell_ = renderers.m_getErrorRenderer__();
   this.f_imageRenderer__org_gwtproject_cell_client_ImageLoadingCell_ = renderers.m_getImageRenderer__();
   this.f_loadingRenderer__org_gwtproject_cell_client_ImageLoadingCell_ = renderers.m_getLoadingRenderer__();
  }
- /**
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {?string} value
-  * @param {Object} event
-  * @param {ValueUpdater<?string>} valueUpdater
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, parent, value, event, valueUpdater) {
+ 
+ m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(/** Context */ context, /** Object */ parent, /** ?string */ value, /** Object */ event, /** ValueUpdater<?string> */ valueUpdater) {
   let type = $Overlay.m_getType__$devirt__org_gwtproject_dom_client_NativeEvent(event);
   if (j_l_String.m_equals__java_lang_String__java_lang_Object(BrowserEvents.f_LOAD__org_gwtproject_dom_client_BrowserEvents, type) && this.m_eventOccurredOnImage__org_gwtproject_dom_client_NativeEvent__org_gwtproject_dom_client_Element_$p_org_gwtproject_cell_client_ImageLoadingCell(event, parent)) {
    Style_$Overlay.m_setDisplay__$devirt__org_gwtproject_dom_client_Style__org_gwtproject_dom_style_shared_Display(Element_$Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(parent).style, Display.f_NONE__org_gwtproject_dom_style_shared_Display);
-   let imgWrapper = /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Node_$Overlay.m_getChild__$devirt__org_gwtproject_dom_client_Node__int(parent, 1)), Element_$Overlay));
+   let imgWrapper = /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Node_$Overlay.m_getChild__$devirt__org_gwtproject_dom_client_Node__int(parent, 1)), Element_$Overlay));
    Style_$Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(imgWrapper.style, "height", "auto");
    Style_$Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(imgWrapper.style, "width", "auto");
    Style_$Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(imgWrapper.style, "overflow", "auto");
@@ -99,76 +78,44 @@ class ImageLoadingCell extends AbstractCell {
    Element_$Overlay.m_setInnerSafeHtml__$devirt__org_gwtproject_dom_client_Element__org_gwtproject_safehtml_shared_SafeHtml(Element_$Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(parent), this.f_errorRenderer__org_gwtproject_cell_client_ImageLoadingCell_.m_render__java_lang_Object(value));
   }
  }
- /**
-  * @param {Context} context
-  * @param {?string} value
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_String__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, value, sb) {
+ 
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_String__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ context, /** ?string */ value, /** SafeHtmlBuilder */ sb) {
   if (!$Equality.$same(value, null)) {
    sb.m_append__org_gwtproject_safehtml_shared_SafeHtml(Template.f_INSTANCE__org_gwtproject_cell_client_ImageLoadingCell_Template.m_loading__org_gwtproject_safehtml_shared_SafeHtml(this.f_loadingRenderer__org_gwtproject_cell_client_ImageLoadingCell_.m_render__java_lang_Object(value)));
    sb.m_append__org_gwtproject_safehtml_shared_SafeHtml(Template.f_INSTANCE__org_gwtproject_cell_client_ImageLoadingCell_Template.m_image__org_gwtproject_safehtml_shared_SafeHtml(this.f_imageRenderer__org_gwtproject_cell_client_ImageLoadingCell_.m_render__java_lang_Object(value)));
   }
  }
- /**
-  * @param {Object} event
-  * @param {Object} parent
-  * @return {boolean}
-  * @public
-  */
- m_eventOccurredOnImage__org_gwtproject_dom_client_NativeEvent__org_gwtproject_dom_client_Element_$p_org_gwtproject_cell_client_ImageLoadingCell(event, parent) {
+ /** @return {boolean} */
+ m_eventOccurredOnImage__org_gwtproject_dom_client_NativeEvent__org_gwtproject_dom_client_Element_$p_org_gwtproject_cell_client_ImageLoadingCell(/** Object */ event, /** Object */ parent) {
   let eventTarget = $Overlay.m_getEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(event);
   if (!Element_$Overlay.m_is__org_gwtproject_core_client_JavaScriptObject(eventTarget)) {
    return false;
   }
-  let target = /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(eventTarget), Element_$Overlay));
+  let target = /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(eventTarget), Element_$Overlay));
   let imgWrapper = Element_$Overlay.m_getNextSiblingElement__$devirt__org_gwtproject_dom_client_Element(Element_$Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(parent));
   return Node_$Overlay.m_isOrHasChild__$devirt__org_gwtproject_dom_client_Node__org_gwtproject_dom_client_Node(imgWrapper, target);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Context} arg0
-  * @param {Object} arg1
-  * @param {*} arg2
-  * @param {Object} arg3
-  * @param {ValueUpdater} arg4
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(arg0, arg1, arg2, arg3, arg4) {
-  this.m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(arg0, arg1, /**@type {?string} */ ($Casts.$to(arg2, j_l_String)), arg3, arg4);
+ //Bridge method.
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(/** Context */ arg0, /** Object */ arg1, /** * */ arg2, /** Object */ arg3, /** ValueUpdater */ arg4) {
+  this.m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(arg0, arg1, /**@type {?string}*/ ($Casts.$to(arg2, j_l_String)), arg3, arg4);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Context} arg0
-  * @param {*} arg1
-  * @param {SafeHtmlBuilder} arg2
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, arg1, arg2) {
-  this.m_render__org_gwtproject_cell_client_Cell_Context__java_lang_String__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, /**@type {?string} */ ($Casts.$to(arg1, j_l_String)), arg2);
+ //Bridge method.
+ /** @override */
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ arg0, /** * */ arg1, /** SafeHtmlBuilder */ arg2) {
+  this.m_render__org_gwtproject_cell_client_Cell_Context__java_lang_String__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, /**@type {?string}*/ ($Casts.$to(arg1, j_l_String)), arg2);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ImageLoadingCell.$clinit = () =>{};
   ImageLoadingCell.$loadModules();
   AbstractCell.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ImageLoadingCell;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

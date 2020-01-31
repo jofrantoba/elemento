@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ImageLoadingCell$Template.impl.java.js",
-"lineCount":82,
-"mappings":"A;;;;;;;;;;;;MAoEY,Q;;;;;;;CAIC,gD,CAAeA,S;;;;;;;CAEf,uB,CAAWC,G;;;;;;;CAEX,kD,CAAiBC,W;;;;;QAN1B,oE;EAAAC,wG;;;;;QAFQ,O;EAAAC,2B;EAAAA,wB;EAERA,wH;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFQ;;",
+"lineCount":51,
+"mappings":"A;;;;;;;;;;;;MAoEY,Q;;CAIC,gD,iBAAeA,S;;CAEf,uB,gBAAWC,G;;CAEX,kD,iBAAiBC,W;;QAN1B,oE;EAAAC,wG;;;QAFQ,O;EAAAC,2B;EAAAA,wB;EAERA,wH;;;;;;;;;;;;;;;;;;;;;;AAFQ;;",
 "sources":["ImageLoadingCell.java"],
 "names":["imageHtml","url","loadingHtml","org.gwtproject.cell.client.ImageLoadingCell$Template.<synthetic: getter>","org.gwtproject.cell.client.ImageLoadingCell$Template.<clinit>"]
 }

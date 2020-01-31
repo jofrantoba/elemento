@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MenuitemcheckboxRoleImpl.impl.java.js",
-"lineCount":72,
-"mappings":"A;;;;;;;;;;;;;;MAsBM,wB;;;;CAAA,W;EAAAA,Q;;;;;;;QAEJ,yB,CAAgCC,Q;EAAhCC,mC;EAAAA,+C;EAAAA,iG;EAAAA,iB;;;;;;CAAA,4E,CAAgCD,Q;EAC9BE,4E;;;;;;;;CAIY,wD,CAA4BC,O;EACxCC,2G;;;;;;;CAIU,2D,CAA+BD,O;EACzCE,uG;;;;;;;;CAIU,iG,CAA4BF,O,EAAsBG,K;EAC5DC,yM;;;;;QAlBE,O;EAAAC,2C;EAAAA,wC;EAAAA;",
+"lineCount":47,
+"mappings":"A;;;;;;;;;;;;;;MAsBM,wB;;CAAA,W;EAAAA,Q;;;QAEJ,yB,gBAAgCC,Q;EAAhCC,mC;EAAAA,+C;EAAAA,iG;EAAAA,iB;;;CAAA,4E,gBAAgCD,Q;EAC9BE,4E;;;CAIY,wD,eAA4BC,O;EACxCC,2G;;;CAIU,2D,eAA+BD,O;EACzCE,uG;;;CAIU,iG,eAA4BF,O,sBAAsBG,K;EAC5DC,wM;;;QAlBE,O;EAAAC,2C;EAAAA,wC;EAAAA;",
 "sources":["MenuitemcheckboxRoleImpl.java"],
 "names":["org.gwtproject.aria.client.MenuitemcheckboxRoleImpl.<synthetic: ctor_js>","roleName","org.gwtproject.aria.client.MenuitemcheckboxRoleImpl.<synthetic: ctor_create>","org.gwtproject.aria.client.MenuitemcheckboxRoleImpl.<init>","element","org.gwtproject.aria.client.MenuitemcheckboxRoleImpl.getAriaCheckedState","org.gwtproject.aria.client.MenuitemcheckboxRoleImpl.removeAriaCheckedState","value","org.gwtproject.aria.client.MenuitemcheckboxRoleImpl.setAriaCheckedState","org.gwtproject.aria.client.MenuitemcheckboxRoleImpl.<clinit>"]
 }

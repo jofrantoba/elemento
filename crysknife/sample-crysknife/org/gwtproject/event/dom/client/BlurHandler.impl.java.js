@@ -11,50 +11,29 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.event.dom.client.BlurHa
  * @extends {EventHandler}
  */
 class BlurHandler {
- /**
-  * @abstract
-  * @param {BlurEvent} event
-  * @public
-  */
- m_onBlur__org_gwtproject_event_dom_client_BlurEvent(event) {}
- /**
-  * @param {?function(BlurEvent):void} fn
-  * @return {BlurHandler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onBlur__org_gwtproject_event_dom_client_BlurEvent(/** BlurEvent */ event) {}
+ /** @return {BlurHandler} */
+ static $adapt(/** ?function(BlurEvent):void */ fn) {
   BlurHandler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   BlurHandler.$clinit = () =>{};
   BlurHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  EventHandler.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_BlurHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  EventHandler.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_BlurHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_BlurHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.event.dom.client.BlurHandler.$LambdaAdaptor$impl');
  }

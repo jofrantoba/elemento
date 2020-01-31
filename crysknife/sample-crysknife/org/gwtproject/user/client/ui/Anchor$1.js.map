@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Anchor$1.impl.java.js",
-"lineCount":58,
-"mappings":"A;;;;;;;;;;;;;MAwIyC,E;;;;CAAA,W;EAAAA,Q;EAAAA;6D;;;;;;;QAAA,6C;EAAAC,a;EAAAA,yB;EAAAA,2G;EAAAA,iB;;;;;;CAAA,mF;EAAAC,yE;EAAAA,iC;;;;;;;CAErB,qD,CAAmBC,K;EAC7BC;GACEA,2BADFA;G;;;;;QAH+B,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":43,
+"mappings":"A;;;;;;;;;;;;;MAwIyC,E;;CAAA,W;EAAAA,Q;EAAAA;6D;;;QAAA,6C;EAAAC,a;EAAAA,yB;EAAAA,2G;EAAAA,iB;;;CAAA,mF;EAAAC,yE;EAAAA,iC;;;CAErB,qD,mBAAmBC,K;EAC7BC;GACEA,2BADFA;G;;;QAH+B,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["Anchor.java"],
 "names":["org.gwtproject.user.client.ui.Anchor$1.<synthetic: ctor_js>","org.gwtproject.user.client.ui.Anchor$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.Anchor$1.<init>","event","org.gwtproject.user.client.ui.Anchor$1.onClick","org.gwtproject.user.client.ui.Anchor$1.<clinit>"]
 }

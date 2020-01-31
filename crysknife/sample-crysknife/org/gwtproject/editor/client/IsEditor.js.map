@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"IsEditor.impl.java.js",
-"lineCount":34,
-"mappings":"A;;;;;;;;;;;MA8CiB,Q;;;;;;CAMb,Y;;;;;;;QANa,M;EAAAA,mB;EAAAA,iE;;;;;QAAA,O;EAAAC,2B;EAAAA;",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;MA8CiB,Q;;CAMb,Y;;QANa,M;EAAAA,mB;EAAAA,gE;;;QAAA,O;EAAAC,2B;EAAAA;",
 "sources":["IsEditor.java"],
 "names":["org.gwtproject.editor.client.IsEditor.<synthetic: adapt_lambda>","org.gwtproject.editor.client.IsEditor.<clinit>"]
 }

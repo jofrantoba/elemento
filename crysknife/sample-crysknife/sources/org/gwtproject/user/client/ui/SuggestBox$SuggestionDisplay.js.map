@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SuggestBox$SuggestionDisplay.impl.java.js",
-"lineCount":102,
-"mappings":"A;;;;;;;;;;;;;MAyG+B,iB;;;;CAAA,W;EAAAA,Q;;;;;CAAA,mE;EAAAC,iC;;;;;;;CAOG,uB;;;;;CAKN,mB;;;;;CAMA,qB;;;;;CAMA,mB;;;;;CAQT,mC,CAAuBC,gB;;;;;;CAWvB,kC,CAA2BC,kB,EAClCC,kB;;;;;;;;;;CAiBgB,gK,CAA2BC,U,EACdC,W,EACzBC,mB,EAA6BC,mB,EAClBC,Q;;;;;;CAQf,4D;EAENC,a;;;;;;CAQa,2B;EACbC,a;;;;;;;CAWG,oE,CAAgCC,M;;;;;;CAYhC,2E,CAA6BC,K;;;;QA1GP,O;EAAAC,oC;EAAAA,iC;EAAAA;",
+"lineCount":53,
+"mappings":"A;;;;;;;;;;;;;MAyG+B,iB;;CAAA,W;EAAAA,Q;;;CAAA,mE;EAAAC,iC;;;CAOG,uB;;CAKN,mB;;CAMA,qB;;CAMA,mB;;CAQT,mC,gBAAuBC,gB;;CAWvB,kC,gBAA2BC,kB,gBAClCC,kB;;CAiBgB,gK,mBAA2BC,U,uBACdC,W,iBACzBC,mB,iBAA6BC,mB,4BAClBC,Q;;CAQf,4D;EAENC,a;;;CAQa,2B;EACbC,a;;;CAWG,oE,gBAAgCC,M;;CAYhC,2E,gBAA6BC,K;;QA1GP,O;EAAAC,oC;EAAAA,iC;EAAAA;",
 "sources":["SuggestBox.java"],
 "names":["org.gwtproject.user.client.ui.SuggestBox$SuggestionDisplay.<synthetic: ctor_js>","org.gwtproject.user.client.ui.SuggestBox$SuggestionDisplay.<init>","suggestBoxBaseID","hasMoreSuggestions","numMoreSuggestions","suggestBox","suggestions","isDisplayStringHTML","isAutoSelectEnabled","callback","org.gwtproject.user.client.ui.SuggestBox$SuggestionDisplay.isAnimationEnabledImpl","org.gwtproject.user.client.ui.SuggestBox$SuggestionDisplay.isSuggestionListShowing","enable","style","org.gwtproject.user.client.ui.SuggestBox$SuggestionDisplay.<clinit>"]
 }

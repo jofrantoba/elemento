@@ -15,87 +15,55 @@ let Type = goog.forwardDeclare('org.gwtproject.event.legacy.shared.GwtEvent.Type
  * @extends {Event<H>}
   */
 class GwtEvent extends Event {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_legacy_shared_GwtEvent__() {
   this.$ctor__org_gwtproject_event_shared_Event__();
  }
- /**
-  * @abstract
-  * @override
-  * @return {Type<H>}
-  * @public
-  */
+ /** @abstract @override @return {Type<H>} */
  m_getAssociatedType__() {}
- /**
-  * @public
-  */
+ 
  m_assertLive__() {
   this.m_logDeprecation__java_lang_String_$p_org_gwtproject_event_legacy_shared_GwtEvent("assertLive is a no-op, and doesn't exist in Event.");
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isLive__() {
   this.m_logDeprecation__java_lang_String_$p_org_gwtproject_event_legacy_shared_GwtEvent("isLive always returns true, and doesn't exist in Event.");
   return true;
  }
- /**
-  * @public
-  */
+ 
  m_kill__() {
   this.m_logDeprecation__java_lang_String_$p_org_gwtproject_event_legacy_shared_GwtEvent("kill only resets the event's source, and doesn't exist in Event.");
   this.m_setSource__java_lang_Object(null);
  }
- /**
-  * @public
-  */
+ 
  m_revive__() {
   this.m_logDeprecation__java_lang_String_$p_org_gwtproject_event_legacy_shared_GwtEvent("revive only resets the event's source, and doesn't exist in Event.");
   this.m_setSource__java_lang_Object(null);
  }
- /**
-  * @param {*} source
-  * @public
-  */
- m_overrideSource__java_lang_Object_$pp_org_gwtproject_event_legacy_shared(source) {
+ 
+ m_overrideSource__java_lang_Object_$pp_org_gwtproject_event_legacy_shared(/** * */ source) {
   super.m_setSource__java_lang_Object(source);
  }
- /**
-  * @param {?string} msg
-  * @public
-  */
- m_logDeprecation__java_lang_String_$p_org_gwtproject_event_legacy_shared_GwtEvent(msg) {
+ 
+ m_logDeprecation__java_lang_String_$p_org_gwtproject_event_legacy_shared_GwtEvent(/** ?string */ msg) {
   GwtEvent.f_LOGGER__org_gwtproject_event_legacy_shared_GwtEvent_.m_warning__java_lang_String("GwtEvent is deprecated; please migrate to Event. " + j_l_String.m_valueOf__java_lang_Object(msg));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   GwtEvent.$clinit = () =>{};
   GwtEvent.$loadModules();
   Event.$clinit();
   GwtEvent.f_LOGGER__org_gwtproject_event_legacy_shared_GwtEvent_ = Logger.m_getLogger__java_lang_String(Class.$get(GwtEvent).m_getName__());
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof GwtEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Class = goog.module.get('java.lang.Class$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -105,7 +73,7 @@ class GwtEvent extends Event {
 }
 $Util.$setClassMetadata(GwtEvent, 'org.gwtproject.event.legacy.shared.GwtEvent');
 
-/** @public {Logger} */
+/**@type {Logger}*/
 GwtEvent.f_LOGGER__org_gwtproject_event_legacy_shared_GwtEvent_;
 
 exports = GwtEvent; 

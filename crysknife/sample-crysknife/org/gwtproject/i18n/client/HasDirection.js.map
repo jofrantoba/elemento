@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasDirection.impl.java.js",
-"lineCount":28,
-"mappings":"A;;;;;;;;;MAyBiB,Y;;;;;;CAiBV,iE,CAAuBA,S;;;;;;CASlB,gB;;;;QA1BK,O;EAAAC,+B;EAAAA;",
+"lineCount":18,
+"mappings":"A;;;;;;;;;MAyBiB,Y;;CAiBV,iE,kBAAuBA,S;;CASlB,gB;;QA1BK,O;EAAAC,+B;EAAAA;",
 "sources":["HasDirection.java"],
 "names":["direction","org.gwtproject.i18n.client.HasDirection.<clinit>"]
 }

@@ -12,69 +12,45 @@ let Suggestion = goog.forwardDeclare('org.gwtproject.user.client.ui.SuggestOracl
  * @implements {ScheduledCommand}
   */
 class $1 extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {DefaultSuggestionDisplay} */
+  /**@type {DefaultSuggestionDisplay}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_1;
-  /** @public {SuggestionCallback} */
+  /**@type {SuggestionCallback}*/
   this.$c_callback;
-  /** @public {Suggestion} */
+  /**@type {Suggestion}*/
   this.$c_curSuggestion;
  }
- /**
-  * @param {DefaultSuggestionDisplay} $outer_this
-  * @param {SuggestionCallback} $c_callback
-  * @param {Suggestion} $c_curSuggestion
-  * @return {!$1}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay__org_gwtproject_user_client_ui_SuggestBox_SuggestionCallback__org_gwtproject_user_client_ui_SuggestOracle_Suggestion($outer_this, $c_callback, $c_curSuggestion) {
+ /** @return {!$1} */
+ static $create__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay__org_gwtproject_user_client_ui_SuggestBox_SuggestionCallback__org_gwtproject_user_client_ui_SuggestOracle_Suggestion(/** DefaultSuggestionDisplay */ $outer_this, /** SuggestionCallback */ $c_callback, /** Suggestion */ $c_curSuggestion) {
   $1.$clinit();
   let $instance = new $1();
   $instance.$ctor__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_1__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay__org_gwtproject_user_client_ui_SuggestBox_SuggestionCallback__org_gwtproject_user_client_ui_SuggestOracle_Suggestion($outer_this, $c_callback, $c_curSuggestion);
   return $instance;
  }
- /**
-  * @param {DefaultSuggestionDisplay} $outer_this
-  * @param {SuggestionCallback} $c_callback
-  * @param {Suggestion} $c_curSuggestion
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_1__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay__org_gwtproject_user_client_ui_SuggestBox_SuggestionCallback__org_gwtproject_user_client_ui_SuggestOracle_Suggestion($outer_this, $c_callback, $c_curSuggestion) {
+ 
+ $ctor__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_1__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay__org_gwtproject_user_client_ui_SuggestBox_SuggestionCallback__org_gwtproject_user_client_ui_SuggestOracle_Suggestion(/** DefaultSuggestionDisplay */ $outer_this, /** SuggestionCallback */ $c_callback, /** Suggestion */ $c_curSuggestion) {
   this.f_$outer_this__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_1 = $outer_this;
   this.$c_callback = $c_callback;
   this.$c_curSuggestion = $c_curSuggestion;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_execute__() {
   this.$c_callback.m_onSuggestionSelected__org_gwtproject_user_client_ui_SuggestOracle_Suggestion(this.$c_curSuggestion);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $1.$clinit = () =>{};
   $1.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $1;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

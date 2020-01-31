@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SimplePager_ResourcesImpl$simplePagerFastForwardInitializer.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;MAauB,iC;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,wD;EAAAA,qH;EAAAA,iB;;;;;CAAA,wG;EAAAC,iC;;;;;;QAIkC,O;EAAAC,4C;EACnDA,2H;;;;;QALiB,O;EAAAC,oD;EAAAA,iD;EAAAA,qB;EAEjBA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;MAauB,iC;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,wD;EAAAA,qH;EAAAA,iB;;;CAAA,wG;EAAAC,iC;;;QAIkC,O;EAAAC,4C;EACnDA,2H;;;QALiB,O;EAAAC,oD;EAAAA,iD;EAAAA,qB;EAEjBA;",
 "sources":["SimplePager_ResourcesImpl.java"],
 "names":["org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$simplePagerFastForwardInitializer.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$simplePagerFastForwardInitializer.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$simplePagerFastForwardInitializer.<init>","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$simplePagerFastForwardInitializer.get","org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$simplePagerFastForwardInitializer.<clinit>"]
 }

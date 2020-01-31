@@ -8,35 +8,22 @@ const Role = goog.require('org.gwtproject.aria.client.Role$impl');
  * @extends {Role}
  */
 class WidgetRole {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   WidgetRole.$clinit = () =>{};
   WidgetRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Role.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_WidgetRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Role.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_WidgetRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_WidgetRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

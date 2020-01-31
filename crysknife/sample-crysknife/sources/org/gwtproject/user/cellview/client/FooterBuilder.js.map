@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"FooterBuilder.impl.java.js",
-"lineCount":62,
-"mappings":"A;;;;;;;;;;;;;;MA0CiB,a;;;;;;CAcK,e;;;;;;;CAYP,8C,CAAkBA,I;;;;;;;CAWrB,8C,CAAkBA,I;;;;;;;CASxB,wD,CAA4BC,G;;;;;;;CAQxB,6C,CAAiBD,I;;;;;;;CAQjB,6C,CAAiBA,I;;;;QA9DV,O;EAAAE,gC;EAAAA;",
+"lineCount":31,
+"mappings":"A;;;;;;;;;;;;;;MA0CiB,a;;CAcK,e;;CAYP,8C,eAAkBA,I;;CAWrB,8C,eAAkBA,I;;CASxB,wD,eAA4BC,G;;CAQxB,6C,eAAiBD,I;;CAQjB,6C,eAAiBA,I;;QA9DV,O;EAAAE,gC;EAAAA;",
 "sources":["FooterBuilder.java"],
 "names":["elem","row","org.gwtproject.user.cellview.client.FooterBuilder.<clinit>"]
 }

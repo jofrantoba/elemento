@@ -12,65 +12,42 @@ let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
  * @implements {ClickHandler}
   */
 class $2 extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {StackLayoutPanel} */
+  /**@type {StackLayoutPanel}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_StackLayoutPanel_2;
-  /** @public {Widget} */
+  /**@type {Widget}*/
   this.$c_child;
  }
- /**
-  * @param {StackLayoutPanel} $outer_this
-  * @param {Widget} $c_child
-  * @return {!$2}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_StackLayoutPanel__org_gwtproject_user_client_ui_Widget($outer_this, $c_child) {
+ /** @return {!$2} */
+ static $create__org_gwtproject_user_client_ui_StackLayoutPanel__org_gwtproject_user_client_ui_Widget(/** StackLayoutPanel */ $outer_this, /** Widget */ $c_child) {
   $2.$clinit();
   let $instance = new $2();
   $instance.$ctor__org_gwtproject_user_client_ui_StackLayoutPanel_2__org_gwtproject_user_client_ui_StackLayoutPanel__org_gwtproject_user_client_ui_Widget($outer_this, $c_child);
   return $instance;
  }
- /**
-  * @param {StackLayoutPanel} $outer_this
-  * @param {Widget} $c_child
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_StackLayoutPanel_2__org_gwtproject_user_client_ui_StackLayoutPanel__org_gwtproject_user_client_ui_Widget($outer_this, $c_child) {
+ 
+ $ctor__org_gwtproject_user_client_ui_StackLayoutPanel_2__org_gwtproject_user_client_ui_StackLayoutPanel__org_gwtproject_user_client_ui_Widget(/** StackLayoutPanel */ $outer_this, /** Widget */ $c_child) {
   this.f_$outer_this__org_gwtproject_user_client_ui_StackLayoutPanel_2 = $outer_this;
   this.$c_child = $c_child;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {ClickEvent} event
-  * @public
-  */
- m_onClick__org_gwtproject_event_dom_client_ClickEvent(event) {
+ /** @override */
+ m_onClick__org_gwtproject_event_dom_client_ClickEvent(/** ClickEvent */ event) {
   this.f_$outer_this__org_gwtproject_user_client_ui_StackLayoutPanel_2.m_showWidget__org_gwtproject_user_client_ui_Widget(this.$c_child);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $2.$clinit = () =>{};
   $2.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $2;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

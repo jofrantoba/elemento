@@ -11,44 +11,27 @@ let $LambdaAdaptor = goog.forwardDeclare('javax.inject.Qualifier.$LambdaAdaptor$
  * @extends {Annotation}
  */
 class Qualifier {
- /**
-  * @param {?function():Class<?>} fn
-  * @return {Qualifier}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {Qualifier} */
+ static $adapt(/** ?function():Class<?> */ fn) {
   Qualifier.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Qualifier.$clinit = () =>{};
   Qualifier.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__javax_inject_Qualifier = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__javax_inject_Qualifier = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__javax_inject_Qualifier;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('javax.inject.Qualifier.$LambdaAdaptor$impl');
  }

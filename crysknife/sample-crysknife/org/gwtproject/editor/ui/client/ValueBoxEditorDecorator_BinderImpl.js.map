@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ValueBoxEditorDecorator_BinderImpl.impl.java.js",
-"lineCount":75,
-"mappings":"A;;;;;;;;;;;;;;;;;;MAKa,mC;;;;CAAA,W;EAAAA,Q;EAAAA;OAQF,8EAREA,C;;;;;;QAAA,S;EAAAC,8C;EAAAA,0D;EAAAA,wF;EAAAA,iB;;;;;CAAA,2E;EAAAC,iC;EAAAA,qF;;;;;;;CAWiC,0E,CAA8EC,K;EAGxHC,sQ;;;;;;;;;CAdS,mC;EAAAA,6K;;;;;CAAA,6E;EAQXF,oJ;;;;;QARW,O;EAAAG,sD;EAAAA,mD;EAAAA;",
+"lineCount":55,
+"mappings":"A;;;;;;;;;;;;;;;;;;MAKa,mC;;CAAA,W;EAAAA,Q;EAAAA;OAQF,8EAREA,C;;;QAAA,S;EAAAC,8C;EAAAA,0D;EAAAA,wF;EAAAA,iB;;;CAAA,2E;EAAAC,iC;EAAAA,qF;;;CAWiC,0E,gCAA8EC,K;EAGxHC,sQ;;;;CAdS,mC;EAAAA,4K;;;CAAA,6E;EAQXF,oJ;;;QARW,O;EAAAG,sD;EAAAA,mD;EAAAA;",
 "sources":["ValueBoxEditorDecorator_BinderImpl.java"],
 "names":["org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl.<synthetic: ctor_js>","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl.<synthetic: ctor_create>","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl.<init>","owner","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl.createAndBindUi","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator_BinderImpl.<clinit>"]
 }

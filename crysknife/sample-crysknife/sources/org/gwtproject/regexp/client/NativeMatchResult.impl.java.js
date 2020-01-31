@@ -13,85 +13,51 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {MatchResult}
   */
 class NativeMatchResult extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Array<?string>} */
+  /**@type {Array<?string>}*/
   this.f_array__org_gwtproject_regexp_client_NativeMatchResult_;
  }
- /**
-  * @param {Array<?string>} results
-  * @return {!NativeMatchResult}
-  * @public
-  */
- static $create__elemental2_core_JsArray(results) {
+ /** @return {!NativeMatchResult} */
+ static $create__elemental2_core_JsArray(/** Array<?string> */ results) {
   NativeMatchResult.$clinit();
   let $instance = new NativeMatchResult();
   $instance.$ctor__org_gwtproject_regexp_client_NativeMatchResult__elemental2_core_JsArray(results);
   return $instance;
  }
- /**
-  * @param {Array<?string>} results
-  * @public
-  */
- $ctor__org_gwtproject_regexp_client_NativeMatchResult__elemental2_core_JsArray(results) {
+ 
+ $ctor__org_gwtproject_regexp_client_NativeMatchResult__elemental2_core_JsArray(/** Array<?string> */ results) {
   this.$ctor__java_lang_Object__();
   this.f_array__org_gwtproject_regexp_client_NativeMatchResult_ = results;
  }
- /**
-  * @override
-  * @param {number} index
-  * @return {?string}
-  * @public
-  */
- m_getGroup__int(index) {
-  return /**@type {?string} */ ($Casts.$to($Overlay.m_getAt__$devirt__jsinterop_base_JsArrayLike__int(this.f_array__org_gwtproject_regexp_client_NativeMatchResult_, index), j_l_String));
+ /** @override @return {?string} */
+ m_getGroup__int(/** number */ index) {
+  return /**@type {?string}*/ ($Casts.$to($Overlay.m_getAt__$devirt__jsinterop_base_JsArrayLike__int(this.f_array__org_gwtproject_regexp_client_NativeMatchResult_, index), j_l_String));
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getGroupCount__() {
   return this.f_array__org_gwtproject_regexp_client_NativeMatchResult_.length;
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getIndex__() {
   return this.f_array__org_gwtproject_regexp_client_NativeMatchResult_.index;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getInput__() {
   return this.f_array__org_gwtproject_regexp_client_NativeMatchResult_.input;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NativeMatchResult.$clinit = () =>{};
   NativeMatchResult.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof NativeMatchResult;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Overlay = goog.module.get('jsinterop.base.JsArrayLike.$Overlay$impl');

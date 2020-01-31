@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MultiWordSuggestOracle$WordBounds.impl.java.js",
-"lineCount":73,
-"mappings":"A;;;;;;;;;;;MA+GuB,U;;;;CAAA,W;EAAAA,Q;EAAAA;OAET,6EAFSA,K;EAAAA;OAGT,2EAHSA,K;;;;;;;;QAKZ,iB,CAAeC,U,EAAgBC,M;EAA/BC,qB;EAAAA,iC;EAAAA,+G;EAAAA,iB;;;;;;;CAAA,gF,CAAeF,U,EAAgBC,M;EAA/BE,iC;EACLA,gG;EACAA,uG;;;;;;;CAGS,4E,CAAqBC,I;EAC9BC,IAAIC,UAAJD,2K;EACAA;GACEA,iLADFA;G;EAGAA,kB;;;;;;;;;CAfiB,6B;EAAAA,kJ;;;;;QAAA,O;EAAAE,6B;EAAAA,0B;EAAAA;",
+"lineCount":51,
+"mappings":"A;;;;;;;;;;;MA+GuB,U;;CAAA,W;EAAAA,Q;EAAAA;OAET,6EAFSA,K;EAAAA;OAGT,2EAHSA,K;;;QAKZ,iB,eAAeC,U,gBAAgBC,M;EAA/BC,qB;EAAAA,iC;EAAAA,+G;EAAAA,iB;;;CAAA,gF,eAAeF,U,gBAAgBC,M;EAA/BE,iC;EACLA,gG;EACAA,uG;;;CAGS,4E,mBAAqBC,I;EAC9BC,IAAIC,UAAJD,2K;EACAA;GACEA,iLADFA;G;EAGAA,kB;;;;CAfiB,6B;EAAAA,iJ;;;QAAA,O;EAAAE,6B;EAAAA,0B;EAAAA;",
 "sources":["MultiWordSuggestOracle.java"],
 "names":["org.gwtproject.user.client.ui.MultiWordSuggestOracle$WordBounds.<synthetic: ctor_js>","startIndex","length","org.gwtproject.user.client.ui.MultiWordSuggestOracle$WordBounds.<synthetic: ctor_create>","org.gwtproject.user.client.ui.MultiWordSuggestOracle$WordBounds.<init>","that","org.gwtproject.user.client.ui.MultiWordSuggestOracle$WordBounds.compareTo","comparison","org.gwtproject.user.client.ui.MultiWordSuggestOracle$WordBounds.<clinit>"]
 }

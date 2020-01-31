@@ -14,129 +14,80 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {Event<Handler>}
   */
 class AttachEvent extends Event {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_attached__org_gwtproject_event_logical_shared_AttachEvent_ = false;
  }
- /**
-  * @template S
-  * @param {S} source
-  * @param {boolean} attached
-  * @public
-  */
- static m_fire__org_gwtproject_event_logical_shared_HasAttachHandlers__boolean(source, attached) {
+ /** @template S */
+ static m_fire__org_gwtproject_event_logical_shared_HasAttachHandlers__boolean(/** S */ source, /** boolean */ attached) {
   AttachEvent.$clinit();
   if (!$Equality.$same(AttachEvent.$f_TYPE__org_gwtproject_event_logical_shared_AttachEvent, null)) {
    let event = AttachEvent.$create__boolean(attached);
-   /**@type {HasAttachHandlers} */ (source).m_fireEvent__org_gwtproject_event_shared_Event(event);
+   /**@type {HasAttachHandlers}*/ (source).m_fireEvent__org_gwtproject_event_shared_Event(event);
   }
  }
- /**
-  * @return {Type<Handler>}
-  * @public
-  */
+ /** @return {Type<Handler>} */
  static m_getType__() {
   AttachEvent.$clinit();
   if ($Equality.$same(AttachEvent.$f_TYPE__org_gwtproject_event_logical_shared_AttachEvent, null)) {
-   AttachEvent.$f_TYPE__org_gwtproject_event_logical_shared_AttachEvent = /**@type {!Type<Handler>} */ (Type.$create__());
+   AttachEvent.$f_TYPE__org_gwtproject_event_logical_shared_AttachEvent = /**@type {!Type<Handler>}*/ (Type.$create__());
   }
   return AttachEvent.$f_TYPE__org_gwtproject_event_logical_shared_AttachEvent;
  }
- /**
-  * @param {boolean} attached
-  * @return {!AttachEvent}
-  * @public
-  */
- static $create__boolean(attached) {
+ /** @return {!AttachEvent} */
+ static $create__boolean(/** boolean */ attached) {
   AttachEvent.$clinit();
   let $instance = new AttachEvent();
   $instance.$ctor__org_gwtproject_event_logical_shared_AttachEvent__boolean(attached);
   return $instance;
  }
- /**
-  * @param {boolean} attached
-  * @public
-  */
- $ctor__org_gwtproject_event_logical_shared_AttachEvent__boolean(attached) {
+ 
+ $ctor__org_gwtproject_event_logical_shared_AttachEvent__boolean(/** boolean */ attached) {
   this.$ctor__org_gwtproject_event_shared_Event__();
   this.f_attached__org_gwtproject_event_logical_shared_AttachEvent_ = attached;
  }
- /**
-  * @override
-  * @return {Type<Handler>}
-  * @public
-  */
+ /** @override @return {Type<Handler>} */
  m_getAssociatedType__() {
   return AttachEvent.$f_TYPE__org_gwtproject_event_logical_shared_AttachEvent;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isAttached__() {
   return this.f_attached__org_gwtproject_event_logical_shared_AttachEvent_;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_toDebugString__() {
   return j_l_String.m_valueOf__java_lang_Object(super.m_toDebugString__()) + " attached = " + this.f_attached__org_gwtproject_event_logical_shared_AttachEvent_;
  }
- /**
-  * @param {Handler} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_event_logical_shared_AttachEvent_Handler(handler) {
+ 
+ m_dispatch__org_gwtproject_event_logical_shared_AttachEvent_Handler(/** Handler */ handler) {
   handler.m_onAttachOrDetach__org_gwtproject_event_logical_shared_AttachEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_event_logical_shared_AttachEvent_Handler(/**@type {Handler} */ ($Casts.$to(arg0, Handler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_event_logical_shared_AttachEvent_Handler(/**@type {Handler}*/ ($Casts.$to(arg0, Handler)));
  }
- /**
-  * @return {Type<Handler>}
-  * @public
-  */
+ /** @return {Type<Handler>} */
  static get f_TYPE__org_gwtproject_event_logical_shared_AttachEvent() {
   return (AttachEvent.$clinit(), AttachEvent.$f_TYPE__org_gwtproject_event_logical_shared_AttachEvent);
  }
- /**
-  * @param {Type<Handler>} value
-  * @public
-  */
- static set f_TYPE__org_gwtproject_event_logical_shared_AttachEvent(value) {
+ 
+ static set f_TYPE__org_gwtproject_event_logical_shared_AttachEvent(/** Type<Handler> */ value) {
   (AttachEvent.$clinit(), AttachEvent.$f_TYPE__org_gwtproject_event_logical_shared_AttachEvent = value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AttachEvent.$clinit = () =>{};
   AttachEvent.$loadModules();
   Event.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AttachEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -148,7 +99,7 @@ class AttachEvent extends Event {
 }
 $Util.$setClassMetadata(AttachEvent, 'org.gwtproject.event.logical.shared.AttachEvent');
 
-/** @private {Type<Handler>} */
+/**@private {Type<Handler>}*/
 AttachEvent.$f_TYPE__org_gwtproject_event_logical_shared_AttachEvent;
 
 exports = AttachEvent; 

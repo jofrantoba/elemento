@@ -6,53 +6,27 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @interface
  */
 class LocalizedNames {
- /**
-  * @abstract
-  * @return {Array<?string>}
-  * @public
-  */
+ /** @abstract @return {Array<?string>} */
  m_getLikelyRegionCodes__() {}
- /**
-  * @abstract
-  * @param {?string} regionCode
-  * @return {?string}
-  * @public
-  */
- m_getRegionName__java_lang_String(regionCode) {}
- /**
-  * @abstract
-  * @return {Array<?string>}
-  * @public
-  */
+ /** @abstract @return {?string} */
+ m_getRegionName__java_lang_String(/** ?string */ regionCode) {}
+ /** @abstract @return {Array<?string>} */
  m_getSortedRegionCodes__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   LocalizedNames.$clinit = () =>{};
   LocalizedNames.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_i18n_client_LocalizedNames = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_i18n_client_LocalizedNames = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_i18n_client_LocalizedNames;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

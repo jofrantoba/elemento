@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"OrderedMultiSelectionModel.impl.java.js",
-"lineCount":77,
-"mappings":"A;;;;;;;;;;;;;;;MAgCa,0B;;;;CAAA,W;EAAAA,Q;;;;;;;;QAIJ,S;EAAAC,qC;EAAAA,iD;EAAAA,2E;EAAAA,iB;;;;;;CAAA,8D;EACLC,gH;;;;;;;;;QASK,+C,CAAqEC,W;EAArEF,qC;EAAAA,iD;EAAAA,4H;EAAAA,iB;;;;;;;CAAA,oG,CAAqEE,W;EAC1ED,+R;;;;;;CAWa,mB;EACbE,yD;EACAA,0J;;;;;QA5BS,O;EAAAC,6C;EAAAA,0C;EAAAA;",
+"lineCount":56,
+"mappings":"A;;;;;;;;;;;;;;;MAgCa,0B;;CAAA,W;EAAAA,Q;;;;QAIJ,S;EAAAC,qC;EAAAA,iD;EAAAA,2E;EAAAA,iB;;;;CAAA,8D;EACLC,gH;;;;QASK,+C,uBAAqEC,W;EAArEF,qC;EAAAA,iD;EAAAA,4H;EAAAA,iB;;;;CAAA,oG,uBAAqEE,W;EAC1ED,6R;;;CAWa,mB;EACbE,yD;EACAA,yJ;;;QA5BS,O;EAAAC,6C;EAAAA,0C;EAAAA;",
 "sources":["OrderedMultiSelectionModel.java"],
 "names":["org.gwtproject.view.client.OrderedMultiSelectionModel.<synthetic: ctor_js>","org.gwtproject.view.client.OrderedMultiSelectionModel.<synthetic: ctor_create>","org.gwtproject.view.client.OrderedMultiSelectionModel.<init>","keyProvider","org.gwtproject.view.client.OrderedMultiSelectionModel.getSelectedList","org.gwtproject.view.client.OrderedMultiSelectionModel.<clinit>"]
 }

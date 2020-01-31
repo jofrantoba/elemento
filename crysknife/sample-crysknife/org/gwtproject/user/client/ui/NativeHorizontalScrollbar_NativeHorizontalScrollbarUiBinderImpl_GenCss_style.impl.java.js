@@ -8,53 +8,28 @@ const CssResource = goog.require('org.gwtproject.resources.client.CssResource$im
  * @extends {CssResource}
  */
 class NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenCss__style {
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_viewport__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_scrollable__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_content__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenCss__style.$clinit = () =>{};
   NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenCss__style.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  CssResource.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenCss_style = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  CssResource.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenCss_style = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenCss_style;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

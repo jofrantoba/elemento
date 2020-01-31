@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ClientBundleWithLookup.impl.java.js",
-"lineCount":31,
-"mappings":"A;;;;;;;;;;;MAuBiB,sB;;;;;;;CAQG,+B,CAAmBA,I;;;;;;CAGjB,gB;;;;QAXL,O;EAAAC,yC;EAAAA;",
+"lineCount":20,
+"mappings":"A;;;;;;;;;;;MAuBiB,sB;;CAQG,+B,gBAAmBA,I;;CAGjB,gB;;QAXL,O;EAAAC,yC;EAAAA;",
 "sources":["ClientBundleWithLookup.java"],
 "names":["name","org.gwtproject.resources.client.ClientBundleWithLookup.<clinit>"]
 }

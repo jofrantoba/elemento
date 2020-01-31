@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"VideoPlaybackQuality$$Overlay.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;MAyBiB,6B;;;;;QAEa,U;EAAAA,wC;EAC1BA,oG;;;;;QAHa,O;EAAAC,gD;EAAAA;",
+"lineCount":17,
+"mappings":"A;;;;;;;MAyBiB,6B;;QAEa,U;EAAAA,wC;EAC1BA,mG;;;QAHa,O;EAAAC,gD;EAAAA;",
 "sources":["VideoPlaybackQuality.java"],
 "names":["elemental2.dom.VideoPlaybackQuality$$Overlay.create","elemental2.dom.VideoPlaybackQuality$$Overlay.<clinit>"]
 }

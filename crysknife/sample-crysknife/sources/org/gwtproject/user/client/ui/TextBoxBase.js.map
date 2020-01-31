@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TextBoxBase.impl.java.js",
-"lineCount":131,
-"mappings":"A;;;;;;;;;;;;;;;;;MAqCa,W;;;;CAAA,W;EAAAA,Q;;;;;;;QAiDD,0C,CAAoBC,I;EAApBC,sB;EAAAA,kC;EAAAA,oG;EAAAA,iB;;;;;;CAAA,mF,CAAoBD,I;EAC5BE,8O;;;;;;;CAOY,Y;EACZC,IAAOC,GAAPD,wE;EACAA,6C;;;;;;;CASU,+E,CAAmCE,K;EAC7CC,2J;;;;;;QAlDF,6D;EAAAC,uG;;;;;;QAMA,8D;EAAAA,wG;;;;;;QAMA,2D;EAAAA,qG;;;;;;QAMA,4D;EAAAA,sG;;;;;QArCW,O;EAAAC,8B;EAAAA,2B;EAAAA,uB;EAmBXA,+O;EAMAA,iP;EAMAA,2O;EAMAA,6O;;;;;;;;;;;;;;;;;;;;;;;;;;AArCW;uE;AAAA;wE;AAAA;qE;AAAA;;",
+"lineCount":94,
+"mappings":"A;;;;;;;;;;;;;;;;;MAqCa,W;;CAAA,W;EAAAA,Q;;;QAiDD,0C,eAAoBC,I;EAApBC,sB;EAAAA,kC;EAAAA,oG;EAAAA,iB;;;CAAA,mF,eAAoBD,I;EAC5BE,8O;;;CAOY,Y;EACZC,IAAOC,GAAPD,uE;EACAA,6C;;;CASU,+E,0BAAmCE,K;EAC7CC,2J;;;QAlDF,6D;EAAAC,uG;;;QAMA,8D;EAAAA,wG;;;QAMA,2D;EAAAA,qG;;;QAMA,4D;EAAAA,sG;;;QArCW,O;EAAAC,8B;EAAAA,2B;EAAAA,uB;EAmBXA,+O;EAMAA,iP;EAMAA,2O;EAMAA,6O;;;;;;;;;;;;;;;;;;;;AArCW;uE;AAAA;wE;AAAA;qE;AAAA;;",
 "sources":["TextBoxBase.java"],
 "names":["org.gwtproject.user.client.ui.TextBoxBase.<synthetic: ctor_js>","elem","org.gwtproject.user.client.ui.TextBoxBase.<synthetic: ctor_create>","org.gwtproject.user.client.ui.TextBoxBase.<init>","org.gwtproject.user.client.ui.TextBoxBase.getValue","raw","align","org.gwtproject.user.client.ui.TextBoxBase.setTextAlignment","org.gwtproject.user.client.ui.TextBoxBase.<synthetic: getter>","org.gwtproject.user.client.ui.TextBoxBase.<clinit>"]
 }

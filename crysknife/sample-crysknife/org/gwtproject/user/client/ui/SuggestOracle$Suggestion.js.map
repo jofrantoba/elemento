@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SuggestOracle$Suggestion.impl.java.js",
-"lineCount":26,
-"mappings":"A;;;;;;;MAmRmB,U;;;;;;CASR,oB;;;;;;CAUA,wB;;;;QAnBQ,O;EAAAA,6B;EAAAA;",
+"lineCount":16,
+"mappings":"A;;;;;;;MAmRmB,U;;CASR,oB;;CAUA,wB;;QAnBQ,O;EAAAA,6B;EAAAA;",
 "sources":["SuggestOracle.java"],
 "names":["org.gwtproject.user.client.ui.SuggestOracle$Suggestion.<clinit>"]
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"EditorContext.impl.java.js",
-"lineCount":141,
-"mappings":"A;;;;;;;;;;;;;;;;;;MAuBiB,a;;;;;;CASU,qB;;;;;;CAQJ,uB;;;;;;CAQF,qB;;;;;;CAQA,qB;;;;;;CAQC,sB;;;;;;CAOZ,iB;;;;;;;CAUN,mC,CAAuBA,K;;;;;;CASlB,mB;;;;;;CAOE,iB;;;;;;CAOC,a;;;;;;CAQQ,qB;;;;;;CAOhB,gB;;;;;;CAQG,8B,CAAaC,I;;;;;;CAWb,8E,CAA+CC,O;;;;QAnHrC,O;EAAAC,gC;EAAAA,6B;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AACf;cAAO,uDAAP;",
+"lineCount":71,
+"mappings":"A;;;;;;;;;;;;;;;;;;MAuBiB,a;;CASU,qB;;CAQJ,uB;;CAQF,qB;;CAQA,qB;;CAQC,sB;;CAOZ,iB;;CAUN,mC,UAAuBA,K;;CASlB,mB;;CAOE,iB;;CAOC,a;;CAQQ,qB;;CAOhB,gB;;CAQG,8B,UAAaC,I;;CAWb,8E,sBAA+CC,O;;QAnHrC,O;EAAAC,gC;EAAAA,6B;;;;;;;;;;;;;;;;;;;AACf;cAAO,uDAAP;",
 "sources":["EditorContext.java"],
 "names":["value","data","visitor","org.gwtproject.editor.client.EditorContext.<clinit>"]
 }

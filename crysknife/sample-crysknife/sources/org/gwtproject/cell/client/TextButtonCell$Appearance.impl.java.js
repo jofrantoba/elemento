@@ -8,35 +8,22 @@ const Appearance = goog.require('org.gwtproject.cell.client.ButtonCellBase.Appea
  * @extends {Appearance<?string>}
  */
 class TextButtonCell_Appearance {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TextButtonCell_Appearance.$clinit = () =>{};
   TextButtonCell_Appearance.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Appearance.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_cell_client_TextButtonCell_Appearance = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Appearance.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_cell_client_TextButtonCell_Appearance = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_cell_client_TextButtonCell_Appearance;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"FieldUpdater.impl.java.js",
-"lineCount":35,
-"mappings":"A;;;;;;;;;;MAwBiB,Y;;;;;;;;CASV,iD,CAAWA,K,EAASC,M,EAAUC,K;;;;;;;QATpB,M;EAAAC,uB;EAAAA,oE;;;;;QAAA,O;EAAAC,+B;EAAAA;",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;MAwBiB,Y;;CASV,iD,eAAWA,K,WAASC,M,WAAUC,K;;QATpB,M;EAAAC,uB;EAAAA,mE;;;QAAA,O;EAAAC,+B;EAAAA;",
 "sources":["FieldUpdater.java"],
 "names":["index","object","value","org.gwtproject.cell.client.FieldUpdater.<synthetic: adapt_lambda>","org.gwtproject.cell.client.FieldUpdater.<clinit>"]
 }

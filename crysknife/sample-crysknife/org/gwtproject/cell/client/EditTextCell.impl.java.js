@@ -31,78 +31,51 @@ let $JavaScriptFunction = goog.forwardDeclare('vmbootstrap.JavaScriptFunction$im
  * @extends {AbstractEditableCell<?string, ViewData>}
   */
 class EditTextCell extends AbstractEditableCell {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {SafeHtmlRenderer<?string>} */
+  /**@type {SafeHtmlRenderer<?string>}*/
   this.f_renderer__org_gwtproject_cell_client_EditTextCell_;
  }
- /**
-  * Factory method corresponding to constructor 'EditTextCell()'.
-  * @return {!EditTextCell}
-  * @public
-  */
+ //Factory method corresponding to constructor 'EditTextCell()'.
+ /** @return {!EditTextCell} */
  static $create__() {
   EditTextCell.$clinit();
   let $instance = new EditTextCell();
   $instance.$ctor__org_gwtproject_cell_client_EditTextCell__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'EditTextCell()'.
-  * @public
-  */
+ //Initialization from constructor 'EditTextCell()'.
+ 
  $ctor__org_gwtproject_cell_client_EditTextCell__() {
   this.$ctor__org_gwtproject_cell_client_EditTextCell__org_gwtproject_text_shared_SafeHtmlRenderer(SimpleSafeHtmlRenderer.m_getInstance__());
  }
- /**
-  * Factory method corresponding to constructor 'EditTextCell(SafeHtmlRenderer)'.
-  * @param {SafeHtmlRenderer<?string>} renderer
-  * @return {!EditTextCell}
-  * @public
-  */
- static $create__org_gwtproject_text_shared_SafeHtmlRenderer(renderer) {
+ //Factory method corresponding to constructor 'EditTextCell(SafeHtmlRenderer)'.
+ /** @return {!EditTextCell} */
+ static $create__org_gwtproject_text_shared_SafeHtmlRenderer(/** SafeHtmlRenderer<?string> */ renderer) {
   EditTextCell.$clinit();
   let $instance = new EditTextCell();
   $instance.$ctor__org_gwtproject_cell_client_EditTextCell__org_gwtproject_text_shared_SafeHtmlRenderer(renderer);
   return $instance;
  }
- /**
-  * Initialization from constructor 'EditTextCell(SafeHtmlRenderer)'.
-  * @param {SafeHtmlRenderer<?string>} renderer
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_EditTextCell__org_gwtproject_text_shared_SafeHtmlRenderer(renderer) {
-  this.$ctor__org_gwtproject_cell_client_AbstractEditableCell__arrayOf_java_lang_String(/**@type {!Array<?string>} */ ($Arrays.$init([BrowserEvents.f_CLICK__org_gwtproject_dom_client_BrowserEvents, BrowserEvents.f_KEYUP__org_gwtproject_dom_client_BrowserEvents, BrowserEvents.f_KEYDOWN__org_gwtproject_dom_client_BrowserEvents, BrowserEvents.f_BLUR__org_gwtproject_dom_client_BrowserEvents], j_l_String)));
+ //Initialization from constructor 'EditTextCell(SafeHtmlRenderer)'.
+ 
+ $ctor__org_gwtproject_cell_client_EditTextCell__org_gwtproject_text_shared_SafeHtmlRenderer(/** SafeHtmlRenderer<?string> */ renderer) {
+  this.$ctor__org_gwtproject_cell_client_AbstractEditableCell__arrayOf_java_lang_String(/**@type {!Array<?string>}*/ ($Arrays.$init([BrowserEvents.f_CLICK__org_gwtproject_dom_client_BrowserEvents, BrowserEvents.f_KEYUP__org_gwtproject_dom_client_BrowserEvents, BrowserEvents.f_KEYDOWN__org_gwtproject_dom_client_BrowserEvents, BrowserEvents.f_BLUR__org_gwtproject_dom_client_BrowserEvents], j_l_String)));
   if ($Equality.$same(renderer, null)) {
    throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String("renderer == null"));
   }
   this.f_renderer__org_gwtproject_cell_client_EditTextCell_ = renderer;
  }
- /**
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {?string} value
-  * @return {boolean}
-  * @public
-  */
- m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String(context, parent, value) {
-  let viewData = /**@type {ViewData} */ ($Casts.$to(this.m_getViewData__java_lang_Object(context.m_getKey__()), ViewData));
+ /** @return {boolean} */
+ m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String(/** Context */ context, /** Object */ parent, /** ?string */ value) {
+  let viewData = /**@type {ViewData}*/ ($Casts.$to(this.m_getViewData__java_lang_Object(context.m_getKey__()), ViewData));
   return $Equality.$same(viewData, null) ? false : viewData.m_isEditing__();
  }
- /**
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {?string} value
-  * @param {Object} event
-  * @param {ValueUpdater<?string>} valueUpdater
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, parent, value, event, valueUpdater) {
+ 
+ m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(/** Context */ context, /** Object */ parent, /** ?string */ value, /** Object */ event, /** ValueUpdater<?string> */ valueUpdater) {
   let key = context.m_getKey__();
-  let viewData = /**@type {ViewData} */ ($Casts.$to(this.m_getViewData__java_lang_Object(key), ViewData));
+  let viewData = /**@type {ViewData}*/ ($Casts.$to(this.m_getViewData__java_lang_Object(key), ViewData));
   if (!$Equality.$same(viewData, null) && viewData.m_isEditing__()) {
    this.m_editEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String__org_gwtproject_cell_client_EditTextCell_ViewData__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater_$p_org_gwtproject_cell_client_EditTextCell(context, parent, value, viewData, event, valueUpdater);
   } else {
@@ -120,15 +93,10 @@ class EditTextCell extends AbstractEditableCell {
    }
   }
  }
- /**
-  * @param {Context} context
-  * @param {?string} value
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_String__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, value, sb) {
+ 
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_String__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ context, /** ?string */ value, /** SafeHtmlBuilder */ sb) {
   let key = context.m_getKey__();
-  let viewData = /**@type {ViewData} */ ($Casts.$to(this.m_getViewData__java_lang_Object(key), ViewData));
+  let viewData = /**@type {ViewData}*/ ($Casts.$to(this.m_getViewData__java_lang_Object(key), ViewData));
   if (!$Equality.$same(viewData, null) && !viewData.m_isEditing__() && !$Equality.$same(value, null) && j_l_String.m_equals__java_lang_String__java_lang_Object(value, viewData.m_getText__())) {
    this.m_clearViewData__java_lang_Object(key);
    viewData = null;
@@ -149,62 +117,37 @@ class EditTextCell extends AbstractEditableCell {
    sb.m_appendHtmlConstant__java_lang_String("\u00A0");
   }
  }
- /**
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {?string} value
-  * @return {boolean}
-  * @public
-  */
- m_resetFocus__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String(context, parent, value) {
+ /** @return {boolean} */
+ m_resetFocus__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String(/** Context */ context, /** Object */ parent, /** ?string */ value) {
   if (this.m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String(context, parent, value)) {
    this.m_getInputElement__org_gwtproject_dom_client_Element_$p_org_gwtproject_cell_client_EditTextCell(parent).focus();
    return true;
   }
   return false;
  }
- /**
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {?string} value
-  * @public
-  */
- m_edit__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String(context, parent, value) {
+ 
+ m_edit__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String(/** Context */ context, /** Object */ parent, /** ?string */ value) {
   this.m_setValue__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(context, parent, value);
   let input = this.m_getInputElement__org_gwtproject_dom_client_Element_$p_org_gwtproject_cell_client_EditTextCell(parent);
   input.focus();
   input.select();
  }
- /**
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {?string} value
-  * @public
-  */
- m_cancel__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String_$p_org_gwtproject_cell_client_EditTextCell(context, parent, value) {
+ 
+ m_cancel__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String_$p_org_gwtproject_cell_client_EditTextCell(/** Context */ context, /** Object */ parent, /** ?string */ value) {
   this.m_clearInput__org_gwtproject_dom_client_Element_$p_org_gwtproject_cell_client_EditTextCell(this.m_getInputElement__org_gwtproject_dom_client_Element_$p_org_gwtproject_cell_client_EditTextCell(parent));
   this.m_setValue__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(context, parent, value);
  }
- /**
-  * @param {Object} input
-  * @public
-  */
- m_clearInput__org_gwtproject_dom_client_Element_$p_org_gwtproject_cell_client_EditTextCell(input) {
-  let jsObject = /**@type {Object} */ (input);
+ 
+ m_clearInput__org_gwtproject_dom_client_Element_$p_org_gwtproject_cell_client_EditTextCell(/** Object */ input) {
+  let jsObject = /**@type {Object}*/ (input);
   if (JsPropertyMap_$Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(jsObject, "selectionEnd")) {
    JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(jsObject, "selectionEnd", JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(jsObject, "selectionStart"));
-  } else if (JsPropertyMap_$Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (Document_$Overlay.m_get__()), "selection")) {
-   /**@type {?function():void} */ ($Casts.$to(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (Document_$Overlay.m_get__()), "selection"), $JavaScriptFunction))();
+  } else if (JsPropertyMap_$Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (Document_$Overlay.m_get__()), "selection")) {
+   /**@type {?function():void}*/ ($Casts.$to(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (Document_$Overlay.m_get__()), "selection"), $JavaScriptFunction))();
   }
  }
- /**
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {ViewData} viewData
-  * @param {ValueUpdater<?string>} valueUpdater
-  * @public
-  */
- m_commit__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__org_gwtproject_cell_client_EditTextCell_ViewData__org_gwtproject_cell_client_ValueUpdater_$p_org_gwtproject_cell_client_EditTextCell(context, parent, viewData, valueUpdater) {
+ 
+ m_commit__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__org_gwtproject_cell_client_EditTextCell_ViewData__org_gwtproject_cell_client_ValueUpdater_$p_org_gwtproject_cell_client_EditTextCell(/** Context */ context, /** Object */ parent, /** ViewData */ viewData, /** ValueUpdater<?string> */ valueUpdater) {
   let value = this.m_updateViewData__org_gwtproject_dom_client_Element__org_gwtproject_cell_client_EditTextCell_ViewData__boolean_$p_org_gwtproject_cell_client_EditTextCell(parent, viewData, false);
   this.m_clearInput__org_gwtproject_dom_client_Element_$p_org_gwtproject_cell_client_EditTextCell(this.m_getInputElement__org_gwtproject_dom_client_Element_$p_org_gwtproject_cell_client_EditTextCell(parent));
   this.m_setValue__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(context, parent, viewData.m_getOriginal__());
@@ -212,16 +155,8 @@ class EditTextCell extends AbstractEditableCell {
    valueUpdater.m_update__java_lang_Object(value);
   }
  }
- /**
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {?string} value
-  * @param {ViewData} viewData
-  * @param {Object} event
-  * @param {ValueUpdater<?string>} valueUpdater
-  * @public
-  */
- m_editEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String__org_gwtproject_cell_client_EditTextCell_ViewData__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater_$p_org_gwtproject_cell_client_EditTextCell(context, parent, value, viewData, event, valueUpdater) {
+ 
+ m_editEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String__org_gwtproject_cell_client_EditTextCell_ViewData__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater_$p_org_gwtproject_cell_client_EditTextCell(/** Context */ context, /** Object */ parent, /** ?string */ value, /** ViewData */ viewData, /** Object */ event, /** ValueUpdater<?string> */ valueUpdater) {
   let type = $Overlay.m_getType__$devirt__org_gwtproject_dom_client_NativeEvent(event);
   let keyUp = j_l_String.m_equals__java_lang_String__java_lang_Object(BrowserEvents.f_KEYUP__org_gwtproject_dom_client_BrowserEvents, type);
   let keyDown = j_l_String.m_equals__java_lang_String__java_lang_Object(BrowserEvents.f_KEYDOWN__org_gwtproject_dom_client_BrowserEvents, type);
@@ -251,95 +186,49 @@ class EditTextCell extends AbstractEditableCell {
    }
   }
  }
- /**
-  * @param {Object} parent
-  * @return {Object}
-  * @public
-  */
- m_getInputElement__org_gwtproject_dom_client_Element_$p_org_gwtproject_cell_client_EditTextCell(parent) {
-  return /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(parent.firstChild), InputElement_$Overlay));
+ /** @return {Object} */
+ m_getInputElement__org_gwtproject_dom_client_Element_$p_org_gwtproject_cell_client_EditTextCell(/** Object */ parent) {
+  return /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(parent.firstChild), InputElement_$Overlay));
  }
- /**
-  * @param {Object} parent
-  * @param {ViewData} viewData
-  * @param {boolean} isEditing
-  * @return {?string}
-  * @public
-  */
- m_updateViewData__org_gwtproject_dom_client_Element__org_gwtproject_cell_client_EditTextCell_ViewData__boolean_$p_org_gwtproject_cell_client_EditTextCell(parent, viewData, isEditing) {
-  let input = /**@type {Object} */ ($Casts.$to(parent.firstChild, InputElement_$Overlay));
+ /** @return {?string} */
+ m_updateViewData__org_gwtproject_dom_client_Element__org_gwtproject_cell_client_EditTextCell_ViewData__boolean_$p_org_gwtproject_cell_client_EditTextCell(/** Object */ parent, /** ViewData */ viewData, /** boolean */ isEditing) {
+  let input = /**@type {Object}*/ ($Casts.$to(parent.firstChild, InputElement_$Overlay));
   let value = input.value;
   viewData.m_setText__java_lang_String(value);
   viewData.m_setEditing__boolean(isEditing);
   return value;
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Context} arg0
-  * @param {Object} arg1
-  * @param {*} arg2
-  * @return {boolean}
-  * @public
-  */
- m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(arg0, arg1, arg2) {
-  return this.m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String(arg0, arg1, /**@type {?string} */ ($Casts.$to(arg2, j_l_String)));
+ //Bridge method.
+ /** @override @return {boolean} */
+ m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(/** Context */ arg0, /** Object */ arg1, /** * */ arg2) {
+  return this.m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String(arg0, arg1, /**@type {?string}*/ ($Casts.$to(arg2, j_l_String)));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Context} arg0
-  * @param {Object} arg1
-  * @param {*} arg2
-  * @param {Object} arg3
-  * @param {ValueUpdater} arg4
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(arg0, arg1, arg2, arg3, arg4) {
-  this.m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(arg0, arg1, /**@type {?string} */ ($Casts.$to(arg2, j_l_String)), arg3, arg4);
+ //Bridge method.
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(/** Context */ arg0, /** Object */ arg1, /** * */ arg2, /** Object */ arg3, /** ValueUpdater */ arg4) {
+  this.m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(arg0, arg1, /**@type {?string}*/ ($Casts.$to(arg2, j_l_String)), arg3, arg4);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Context} arg0
-  * @param {*} arg1
-  * @param {SafeHtmlBuilder} arg2
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, arg1, arg2) {
-  this.m_render__org_gwtproject_cell_client_Cell_Context__java_lang_String__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, /**@type {?string} */ ($Casts.$to(arg1, j_l_String)), arg2);
+ //Bridge method.
+ /** @override */
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ arg0, /** * */ arg1, /** SafeHtmlBuilder */ arg2) {
+  this.m_render__org_gwtproject_cell_client_Cell_Context__java_lang_String__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, /**@type {?string}*/ ($Casts.$to(arg1, j_l_String)), arg2);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Context} arg0
-  * @param {Object} arg1
-  * @param {*} arg2
-  * @return {boolean}
-  * @public
-  */
- m_resetFocus__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(arg0, arg1, arg2) {
-  return this.m_resetFocus__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String(arg0, arg1, /**@type {?string} */ ($Casts.$to(arg2, j_l_String)));
+ //Bridge method.
+ /** @override @return {boolean} */
+ m_resetFocus__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(/** Context */ arg0, /** Object */ arg1, /** * */ arg2) {
+  return this.m_resetFocus__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_String(arg0, arg1, /**@type {?string}*/ ($Casts.$to(arg2, j_l_String)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   EditTextCell.$clinit = () =>{};
   EditTextCell.$loadModules();
   AbstractEditableCell.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof EditTextCell;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
   j_l_String = goog.module.get('java.lang.String$impl');

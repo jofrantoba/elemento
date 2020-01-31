@@ -15,120 +15,71 @@ let SafeHtmlBuilder = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHt
  * @template H
   */
 class Header extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Cell<H>} */
+  /**@type {Cell<H>}*/
   this.f_cell__org_gwtproject_user_cellview_client_Header_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_headerStyleNames__org_gwtproject_user_cellview_client_Header_;
-  /** @public {ValueUpdater<H>} */
+  /**@type {ValueUpdater<H>}*/
   this.f_updater__org_gwtproject_user_cellview_client_Header_;
  }
- /**
-  * @param {Cell<H>} cell
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_Header__org_gwtproject_cell_client_Cell(cell) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_Header__org_gwtproject_cell_client_Cell(/** Cell<H> */ cell) {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_user_cellview_client_Header();
   this.f_cell__org_gwtproject_user_cellview_client_Header_ = cell;
  }
- /**
-  * @return {Cell<H>}
-  * @public
-  */
+ /** @return {Cell<H>} */
  m_getCell__() {
   return this.f_cell__org_gwtproject_user_cellview_client_Header_;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getHeaderStyleNames__() {
   return this.f_headerStyleNames__org_gwtproject_user_cellview_client_Header_;
  }
- /**
-  * @return {*}
-  * @public
-  */
+ /** @return {*} */
  m_getKey__() {
   return this.m_getValue__();
  }
- /**
-  * @abstract
-  * @return {H}
-  * @public
-  */
+ /** @abstract @return {H} */
  m_getValue__() {}
- /**
-  * @param {Context} context
-  * @param {Object} elem
-  * @param {Object} event
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_NativeEvent(context, elem, event) {
+ 
+ m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_NativeEvent(/** Context */ context, /** Object */ elem, /** Object */ event) {
   this.f_cell__org_gwtproject_user_cellview_client_Header_.m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, elem, this.m_getValue__(), event, this.f_updater__org_gwtproject_user_cellview_client_Header_);
  }
- /**
-  * @param {Context} context
-  * @param {Object} elem
-  * @param {Object} event
-  * @return {boolean}
-  * @public
-  */
- m_onPreviewColumnSortEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_NativeEvent(context, elem, event) {
+ /** @return {boolean} */
+ m_onPreviewColumnSortEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_NativeEvent(/** Context */ context, /** Object */ elem, /** Object */ event) {
   return true;
  }
- /**
-  * @param {Context} context
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, sb) {
+ 
+ m_render__org_gwtproject_cell_client_Cell_Context__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ context, /** SafeHtmlBuilder */ sb) {
   this.f_cell__org_gwtproject_user_cellview_client_Header_.m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, this.m_getValue__(), sb);
  }
- /**
-  * @param {?string} styleNames
-  * @public
-  */
- m_setHeaderStyleNames__java_lang_String(styleNames) {
+ 
+ m_setHeaderStyleNames__java_lang_String(/** ?string */ styleNames) {
   this.f_headerStyleNames__org_gwtproject_user_cellview_client_Header_ = styleNames;
  }
- /**
-  * @param {ValueUpdater<H>} updater
-  * @public
-  */
- m_setUpdater__org_gwtproject_cell_client_ValueUpdater(updater) {
+ 
+ m_setUpdater__org_gwtproject_cell_client_ValueUpdater(/** ValueUpdater<H> */ updater) {
   this.f_updater__org_gwtproject_user_cellview_client_Header_ = updater;
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_cellview_client_Header() {
   this.f_headerStyleNames__org_gwtproject_user_cellview_client_Header_ = null;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Header.$clinit = () =>{};
   Header.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Header;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TouchScroller$6.impl.java.js",
-"lineCount":65,
-"mappings":"A;;;;;;;;;;;;;;;MA+1BmF,E;;;;CAAA,W;EAAAA,Q;EAAAA;kE;;;;;;;QAAA,kD;EAAAC,a;EAAAA,yB;EAAAA,qH;EAAAA,iB;;;;;;CAAA,6F;EAAAC,8E;EAAAA,iC;;;;;;;CAEjE,2E,CAAwCC,K;EAClDC;GACEA,IAAMC,UAAND,uOADFA;GAeEA;IAEEA,mBAFFA;IAGEA,uGAHFA;IAIEA,sGAJFA;IAfFA;G;;;;;QAH2E,O;EAAAE,qB;EAAAA,kB;EAAAA;",
+"lineCount":50,
+"mappings":"A;;;;;;;;;;;;;;;MA+1BmF,E;;CAAA,W;EAAAA,Q;EAAAA;kE;;;QAAA,kD;EAAAC,a;EAAAA,yB;EAAAA,qH;EAAAA,iB;;;CAAA,6F;EAAAC,8E;EAAAA,iC;;;CAEjE,2E,2BAAwCC,K;EAClDC;GACEA,IAAMC,UAAND,uOADFA;GAeEA;IAEEA,mBAFFA;IAGEA,uGAHFA;IAIEA,sGAJFA;IAfFA;G;;;QAH2E,O;EAAAE,qB;EAAAA,kB;EAAAA;",
 "sources":["TouchScroller.java"],
 "names":["org.gwtproject.touch.client.TouchScroller$6.<synthetic: ctor_js>","org.gwtproject.touch.client.TouchScroller$6.<synthetic: ctor_create>","org.gwtproject.touch.client.TouchScroller$6.<init>","event","org.gwtproject.touch.client.TouchScroller$6.onPreviewNativeEvent","clickPoint","org.gwtproject.touch.client.TouchScroller$6.<clinit>"]
 }

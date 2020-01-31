@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"PopupImplMozilla.impl.java.js",
-"lineCount":122,
-"mappings":"A;;;;;;;;;;;;;;MA+Ca,gB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,2B;EAAAA,uC;EAAAA,yE;EAAAA,iB;;;;;CAAA,4D;EAAAC,6D;;;;;;QAOY,Y;EACrBC,kE;;;;;;;CAGa,iB;EACbC,IAAcC,SAAdD,uB;EAEAA;GAYEA,gHAZFA;GAsBEA,mNAtBFA;G;EA6BAA,iB;;;;;;;;CAIa,wD,CAA4BC,S;EACzCC,8L;;;;;;;;CAIa,oD,CAAwBD,S;EACrCE,6K;;;;;;;;CAIU,8D,CAAgBC,K,EAAcC,I;EACxCC,kF;EACAA,qL;EACAA,qF;;;;;QA5DS,O;EAAAC,mC;EAAAA,gC;EAAAA,oB;EAEXA,oH;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFW;iBAKY,gEALZ;",
+"lineCount":85,
+"mappings":"A;;;;;;;;;;;;;;MA+Ca,gB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,2B;EAAAA,uC;EAAAA,yE;EAAAA,iB;;;CAAA,4D;EAAAC,6D;;;QAOY,Y;EACrBC,kE;;;CAGa,iB;EACbC,IAAcC,SAAdD,uB;EAEAA;GAYEA,gHAZFA;GAsBEA,mNAtBFA;G;EA6BAA,iB;;;CAIa,wD,eAA4BC,S;EACzCC,8L;;;CAIa,oD,eAAwBD,S;EACrCE,6K;;;CAIU,8D,eAAgBC,K,iBAAcC,I;EACxCC,kF;EACAA,qL;EACAA,qF;;;QA5DS,O;EAAAC,mC;EAAAA,gC;EAAAA,oB;EAEXA,oH;;;;;;;;;;;;;;;;;;;;;AAFW;iBAKY,gEALZ;",
 "sources":["PopupImplMozilla.java"],
 "names":["org.gwtproject.user.client.ui.impl.PopupImplMozilla.<synthetic: ctor_js>","org.gwtproject.user.client.ui.impl.PopupImplMozilla.<synthetic: ctor_create>","org.gwtproject.user.client.ui.impl.PopupImplMozilla.<init>","org.gwtproject.user.client.ui.impl.PopupImplMozilla.isFF2Mac","org.gwtproject.user.client.ui.impl.PopupImplMozilla.createElement","outerElem","org.gwtproject.user.client.ui.impl.PopupImplMozilla.getContainerElement","org.gwtproject.user.client.ui.impl.PopupImplMozilla.getStyleElement","popup","rect","org.gwtproject.user.client.ui.impl.PopupImplMozilla.setClip","org.gwtproject.user.client.ui.impl.PopupImplMozilla.<clinit>"]
 }

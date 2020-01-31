@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"RequestInit$$Overlay.impl.java.js",
-"lineCount":131,
-"mappings":"A;;;;;;;;;;;;;;;;;MA4BiB,oB;;;;;QAiHI,U;EAAAA,+B;EACjBA,2F;;;;;;;QA2CW,2E,WAAoBC,I;EAApBC,+B;EACXA,6E;;;;;;;QAIW,+E,WAAwBD,I;EAAxBC,+B;EACXA,6E;;;;;;;QAIW,mE,WAAaD,I;EAAbC,+B;EACXA,6E;;;;;;;QAIW,uE,WAAiBD,I;EAAjBC,+B;EACXA,6E;;;;;;;QAOW,6E,WAAuBD,I;EAAvBC,+B;EACXA,6E;;;;;;;QAIW,gE,WAAeD,I;EAAfC,+B;EACXA,6E;;;;;;;QAIW,8E,WAAwBD,I;EAAxBC,+B;EACXA,6E;;;;;;;QAaW,yE,WAAmBC,O;EAAnBC,+B;EACXA,mF;;;;;;;QAIW,0E,WAAoCD,O;EAApCC,+B;EACXA,mF;;;;;;;QAIW,+E,WAAiCD,O;EAAjCC,+B;EACXA,mF;;;;;;;QAIW,mF,WAAsBD,O;EAAtBC,+B;EACXA,+L;;;;;QA5Na,O;EAAAC,uC;EAAAA;",
+"lineCount":82,
+"mappings":"A;;;;;;;;;;;;;;;;;MA4BiB,oB;;QAiHI,U;EAAAA,+B;EACjBA,0F;;;QA2CW,2E,kDAAoBC,I;EAApBC,+B;EACXA,4E;;;QAIW,+E,sDAAwBD,I;EAAxBC,+B;EACXA,4E;;;QAIW,mE,2CAAaD,I;EAAbC,+B;EACXA,4E;;;QAIW,uE,+CAAiBD,I;EAAjBC,+B;EACXA,4E;;;QAOW,6E,qDAAuBD,I;EAAvBC,+B;EACXA,4E;;;QAIW,gE,8CAAeD,I;EAAfC,+B;EACXA,4E;;;QAIW,8E,sDAAwBD,I;EAAxBC,+B;EACXA,4E;;;QAaW,yE,8CAAmBC,O;EAAnBC,+B;EACXA,kF;;;QAIW,0E,4DAAoCD,O;EAApCC,+B;EACXA,kF;;;QAIW,+E,8DAAiCD,O;EAAjCC,+B;EACXA,kF;;;QAIW,mF,4DAAsBD,O;EAAtBC,+B;EACXA,8L;;;QA5Na,O;EAAAC,uC;EAAAA;",
 "sources":["RequestInit.java"],
 "names":["elemental2.dom.RequestInit$$Overlay.create","body","elemental2.dom.RequestInit$$Overlay.setBody__$devirt","headers","elemental2.dom.RequestInit$$Overlay.setHeaders__$devirt","elemental2.dom.RequestInit$$Overlay.<clinit>"]
 }

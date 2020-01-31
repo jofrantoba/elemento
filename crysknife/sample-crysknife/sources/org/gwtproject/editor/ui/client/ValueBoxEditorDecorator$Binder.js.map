@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ValueBoxEditorDecorator$Binder.impl.java.js",
-"lineCount":73,
-"mappings":"A;;;;;;;;;;;;;;MA6DY,M;;;;;;QAAA,M;EAAAA,iB;EAAAA,8B;;;;;;QACR,8E;EAAAC,8G;;;;;QADQ,O;EAAAC,yB;EAAAA,sB;EACRA,qI;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AADQ;;",
+"lineCount":53,
+"mappings":"A;;;;;;;;;;;;;;MA6DY,M;;QAAA,M;EAAAA,iB;EAAAA,8B;;;QACR,8E;EAAAC,8G;;;QADQ,O;EAAAC,yB;EAAAA,sB;EACRA,qI;;;;;;;;;;;;;;;;;;;;;;;AADQ;;",
 "sources":["ValueBoxEditorDecorator.java"],
 "names":["org.gwtproject.editor.ui.client.ValueBoxEditorDecorator$Binder.<synthetic: adapt_lambda>","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator$Binder.<synthetic: getter>","org.gwtproject.editor.ui.client.ValueBoxEditorDecorator$Binder.<clinit>"]
 }

@@ -9,49 +9,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.user.client.ui.FormPane
  * @interface
  */
 class SubmitCompleteHandler {
- /**
-  * @abstract
-  * @param {SubmitCompleteEvent} event
-  * @public
-  */
- m_onSubmitComplete__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteEvent(event) {}
- /**
-  * @param {?function(SubmitCompleteEvent):void} fn
-  * @return {SubmitCompleteHandler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onSubmitComplete__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteEvent(/** SubmitCompleteEvent */ event) {}
+ /** @return {SubmitCompleteHandler} */
+ static $adapt(/** ?function(SubmitCompleteEvent):void */ fn) {
   SubmitCompleteHandler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SubmitCompleteHandler.$clinit = () =>{};
   SubmitCompleteHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.user.client.ui.FormPanel.SubmitCompleteHandler.$LambdaAdaptor$impl');
  }

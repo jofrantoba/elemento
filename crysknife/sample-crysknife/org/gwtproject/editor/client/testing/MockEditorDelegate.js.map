@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MockEditorDelegate.impl.java.js",
-"lineCount":125,
-"mappings":"A;;;;;;;;;;;;;MAyBa,kB;;;;CAAA,W;EAAAA,Q;EAAAA;OAMK,iEANLA,S;EAAAA;OAOI,gEAPJA,C;;;;;;;QAAA,S;EAAAC,6B;EAAAA,yC;EAAAA,6E;EAAAA,iB;;;;;CAAA,gE;EAAAC,iC;EAAAA,0E;;;;;;;CAUG,W;EACZC,6E;;;;;;CAQa,W;EACbC,8E;;;;;;;;;CAUU,mE,CAAmBC,O,EAAgBC,K,EAAcC,Q;;;;;;CAOjD,mB,CAAiBC,K;EAC3BC,+E;;;;;;CAQU,2B,CAAeC,I;EACzBC,6E;;;;;;;CAQyB,a;EACzBC,wG;;;;;CAxDS,kE;EAOXV,2E;;;;;QAPW,O;EAAAW,qC;EAAAA,kC;EAAAA,qB;EACXA,kH;;;;;;;;;;;;;;;;;;;;;;AADW;mBAC8B,6EAD9B;",
+"lineCount":83,
+"mappings":"A;;;;;;;;;;;;;MAyBa,kB;;CAAA,W;EAAAA,Q;EAAAA;OAMK,iEANLA,S;EAAAA;OAOI,gEAPJA,C;;;QAAA,S;EAAAC,6B;EAAAA,yC;EAAAA,6E;EAAAA,iB;;;CAAA,gE;EAAAC,iC;EAAAA,0E;;;CAUG,W;EACZC,6E;;;CAQa,W;EACbC,8E;;;CAUU,mE,gBAAmBC,O,WAAgBC,K,WAAcC,Q;;CAOjD,mB,gBAAiBC,K;EAC3BC,+E;;;CAQU,2B,gBAAeC,I;EACzBC,6E;;;CAQyB,a;EACzBC,wG;;;CAxDS,kE;EAOXV,2E;;;QAPW,O;EAAAW,qC;EAAAA,kC;EAAAA,qB;EACXA,kH;;;;;;;;;;;;;;;;AADW;mBAC8B,6EAD9B;",
 "sources":["MockEditorDelegate.java"],
 "names":["org.gwtproject.editor.client.testing.MockEditorDelegate.<synthetic: ctor_js>","org.gwtproject.editor.client.testing.MockEditorDelegate.<synthetic: ctor_create>","org.gwtproject.editor.client.testing.MockEditorDelegate.<init>","org.gwtproject.editor.client.testing.MockEditorDelegate.getPath","org.gwtproject.editor.client.testing.MockEditorDelegate.isDirty","message","value","userData","dirty","org.gwtproject.editor.client.testing.MockEditorDelegate.setDirty","path","org.gwtproject.editor.client.testing.MockEditorDelegate.setPath","org.gwtproject.editor.client.testing.MockEditorDelegate.subscribe","org.gwtproject.editor.client.testing.MockEditorDelegate.<clinit>"]
 }

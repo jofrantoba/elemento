@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasAllMouseHandlers.impl.java.js",
-"lineCount":26,
-"mappings":"A;;;;;;;;;;;;;;;;;;;MAwBiB,mB;;;;QAAA,O;EAAAA,sC;EAAAA;",
+"lineCount":24,
+"mappings":"A;;;;;;;;;;;;;;;;;;;MAwBiB,mB;;QAAA,O;EAAAA,sC;EAAAA;",
 "sources":["HasAllMouseHandlers.java"],
 "names":["org.gwtproject.event.dom.client.HasAllMouseHandlers.<clinit>"]
 }

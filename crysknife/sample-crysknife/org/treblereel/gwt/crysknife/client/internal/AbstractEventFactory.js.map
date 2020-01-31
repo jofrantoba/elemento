@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"AbstractEventFactory.impl.java.js",
-"lineCount":56,
-"mappings":"A;;;;;;;;;;;;;;;MAWsB,oB;;;;CAAA,W;EAAAA,Q;EAAAA;OAEgB,2EAFhBA,C;;;;;CAAA,0E;EAAAC,iC;EAAAA,oF;;;;;;;;CAIE,sB,CAAUC,I;EAC1BC;GACIA,gNADJA;G;EAIAA,uJ;;;;;CATc,4E;EAElBF,oJ;;;;;QAFkB,O;EAAAG,uC;EAAAA,oC;EAAAA;",
+"lineCount":43,
+"mappings":"A;;;;;;;;;;;;;;;MAWsB,oB;;CAAA,W;EAAAA,Q;EAAAA;OAEgB,2EAFhBA,C;;;CAAA,0E;EAAAC,iC;EAAAA,oF;;;CAIE,sB,cAAUC,I;EAC1BC;GACIA,gNADJA;G;EAIAA,sJ;;;CATc,4E;EAElBF,mJ;;;QAFkB,O;EAAAG,uC;EAAAA,oC;EAAAA;",
 "sources":["AbstractEventFactory.java"],
 "names":["org.treblereel.gwt.crysknife.client.internal.AbstractEventFactory.<synthetic: ctor_js>","org.treblereel.gwt.crysknife.client.internal.AbstractEventFactory.<init>","type","org.treblereel.gwt.crysknife.client.internal.AbstractEventFactory.get","org.treblereel.gwt.crysknife.client.internal.AbstractEventFactory.<clinit>"]
 }

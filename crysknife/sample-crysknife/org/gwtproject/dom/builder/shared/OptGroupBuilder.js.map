@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"OptGroupBuilder.impl.java.js",
-"lineCount":29,
-"mappings":"A;;;;;;;;;MAoBiB,e;;;;;;CASC,Y;;;;;;;CASA,yB,CAAaA,K;;;;QAlBd,O;EAAAC,kC;EAAAA;",
+"lineCount":18,
+"mappings":"A;;;;;;;;;MAoBiB,e;;CASC,Y;;CASA,yB,gBAAaA,K;;QAlBd,O;EAAAC,kC;EAAAA;",
 "sources":["OptGroupBuilder.java"],
 "names":["label","org.gwtproject.dom.builder.shared.OptGroupBuilder.<clinit>"]
 }

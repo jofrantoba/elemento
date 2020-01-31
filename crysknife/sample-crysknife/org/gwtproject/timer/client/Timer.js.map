@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Timer.impl.java.js",
-"lineCount":128,
-"mappings":"A;;;;;;;;;;;;;;MA8BsB,K;;;;CAAA,W;EAAAA,Q;EAAAA;OAEJ,iDAFIA,S;EAAAA;OAIL,6CAJKA,C;;;;;CAAA,0C;EAAAC,iC;EAAAA,oD;;;;;;CAYC,a;EACnBC,kF;;;;;CAIU,U;EACVC;GACEA,OADFA;G;EAIAA;GACEA,iHADFA;;GAGEA,gHAHFA;G;EAKAA,0D;;;;;;CAImB,O;;;;;CAQT,e,CAAaC,W;EACvBC;GACEA,mGADFA;G;EAGAA;GACEA,kBADFA;G;EAGAA,+D;EACAA,yR;;;;;;CAUU,wB,CAAsBC,Y;EAChCC;GACEA,+FADFA;G;EAGAA;GACEA,kBADFA;G;EAGAA,8D;EACAA,6R;;;;;CAQS,wC;EAETC;GACEA,0DADFA;G;EAKAA,e;;;;;;;CAGqC,+F,CAA4BC,K;EACjEC,uBAAOC,QAAPD;GAAmBE,iDAAnBF;I;;;;;;;CAGsC,gG,CAA6BD,K;EACnEI,uBAAOF,QAAPE;GAAmBC,iDAAnBD;I;;;;;CAxFkB,4C;EAIpBZ,0D;;;;;QAJoB,O;EAAAc,wB;EAAAA,qB;EAAAA;",
+"lineCount":96,
+"mappings":"A;;;;;;;;;;;;;;MA8BsB,K;;CAAA,W;EAAAA,Q;EAAAA;OAEJ,iDAFIA,S;EAAAA;OAIL,6CAJKA,C;;;CAAA,0C;EAAAC,iC;EAAAA,oD;;;CAYC,a;EACnBC,kF;;;CAIU,U;EACVC;GACEA,OADFA;G;EAIAA;GACEA,iHADFA;;GAGEA,gHAHFA;G;EAKAA,0D;;;CAImB,O;;CAQT,e,eAAaC,W;EACvBC;GACEA,mGADFA;G;EAGAA;GACEA,kBADFA;G;EAGAA,+D;EACAA,yR;;;CAUU,wB,eAAsBC,Y;EAChCC;GACEA,+FADFA;G;EAGAA;GACEA,kBADFA;G;EAGAA,8D;EACAA,6R;;;CAQS,wC;EAETC;GACEA,0DADFA;G;EAKAA,e;;;CAGqC,+F,cAA4BC,K;EACjEC,uBAAOC,QAAPD;GAAmBE,iDAAnBF;I;;;CAGsC,gG,cAA6BD,K;EACnEI,uBAAOF,QAAPE;GAAmBC,iDAAnBD;I;;;CAxFkB,4C;EAIpBZ,0D;;;QAJoB,O;EAAAc,wB;EAAAA,qB;EAAAA;",
 "sources":["Timer.java"],
 "names":["org.gwtproject.timer.client.Timer.<synthetic: ctor_js>","org.gwtproject.timer.client.Timer.<init>","org.gwtproject.timer.client.Timer.isRunning","org.gwtproject.timer.client.Timer.cancel","delayMillis","org.gwtproject.timer.client.Timer.schedule","periodMillis","org.gwtproject.timer.client.Timer.scheduleRepeating","org.gwtproject.timer.client.Timer.fire","timer","org.gwtproject.timer.client.Timer.createTimeoutCallback","callback","org.gwtproject.timer.client.Timer.<lambda in createTimeoutCallback>","org.gwtproject.timer.client.Timer.createIntervalCallback","org.gwtproject.timer.client.Timer.<lambda in createIntervalCallback>","org.gwtproject.timer.client.Timer.<clinit>"]
 }

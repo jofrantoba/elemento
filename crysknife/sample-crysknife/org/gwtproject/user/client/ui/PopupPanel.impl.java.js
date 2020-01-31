@@ -49,65 +49,58 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {HasCloseHandlers<PopupPanel>}
   */
 class PopupPanel extends SimplePanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {ResizeHandler} */
+  /**@type {ResizeHandler}*/
   this.f_glassResizer__org_gwtproject_user_client_ui_PopupPanel_;
-  /** @public {AnimationType} */
+  /**@type {AnimationType}*/
   this.f_animType__org_gwtproject_user_client_ui_PopupPanel_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_autoHide__org_gwtproject_user_client_ui_PopupPanel_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_previewAllNativeEvents__org_gwtproject_user_client_ui_PopupPanel_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_modal__org_gwtproject_user_client_ui_PopupPanel_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_showing__org_gwtproject_user_client_ui_PopupPanel_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_autoHideOnHistoryEvents__org_gwtproject_user_client_ui_PopupPanel_ = false;
-  /** @public {List<Object>} */
+  /**@type {List<Object>}*/
   this.f_autoHidePartners__org_gwtproject_user_client_ui_PopupPanel_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_desiredHeight__org_gwtproject_user_client_ui_PopupPanel_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_desiredWidth__org_gwtproject_user_client_ui_PopupPanel_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_glass__org_gwtproject_user_client_ui_PopupPanel_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_glassStyleName__org_gwtproject_user_client_ui_PopupPanel_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isGlassEnabled__org_gwtproject_user_client_ui_PopupPanel_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isAnimationEnabled__org_gwtproject_user_client_ui_PopupPanel_ = false;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_leftPosition__org_gwtproject_user_client_ui_PopupPanel_ = 0;
-  /** @public {HandlerRegistration} */
+  /**@type {HandlerRegistration}*/
   this.f_nativePreviewHandlerRegistration__org_gwtproject_user_client_ui_PopupPanel_;
-  /** @public {HandlerRegistration} */
+  /**@type {HandlerRegistration}*/
   this.f_historyHandlerRegistration__org_gwtproject_user_client_ui_PopupPanel_;
-  /** @public {ResizeAnimation} */
+  /**@type {ResizeAnimation}*/
   this.f_resizeAnimation__org_gwtproject_user_client_ui_PopupPanel_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_topPosition__org_gwtproject_user_client_ui_PopupPanel_ = 0;
  }
- /**
-  * Factory method corresponding to constructor 'PopupPanel()'.
-  * @return {!PopupPanel}
-  * @public
-  */
+ //Factory method corresponding to constructor 'PopupPanel()'.
+ /** @return {!PopupPanel} */
  static $create__() {
   PopupPanel.$clinit();
   let $instance = new PopupPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_PopupPanel__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'PopupPanel()'.
-  * @public
-  */
+ //Initialization from constructor 'PopupPanel()'.
+ 
  $ctor__org_gwtproject_user_client_ui_PopupPanel__() {
   this.$ctor__org_gwtproject_user_client_ui_SimplePanel__();
   this.$init___$p_org_gwtproject_user_client_ui_PopupPanel();
@@ -116,74 +109,48 @@ class PopupPanel extends SimplePanel {
   this.m_setStyleName__java_lang_String(PopupPanel.f_DEFAULT_STYLENAME__org_gwtproject_user_client_ui_PopupPanel_);
   UIObject.m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String(this.m_getContainerElement__(), "popupContent");
  }
- /**
-  * Factory method corresponding to constructor 'PopupPanel(boolean)'.
-  * @param {boolean} autoHide
-  * @return {!PopupPanel}
-  * @public
-  */
- static $create__boolean(autoHide) {
+ //Factory method corresponding to constructor 'PopupPanel(boolean)'.
+ /** @return {!PopupPanel} */
+ static $create__boolean(/** boolean */ autoHide) {
   PopupPanel.$clinit();
   let $instance = new PopupPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_PopupPanel__boolean(autoHide);
   return $instance;
  }
- /**
-  * Initialization from constructor 'PopupPanel(boolean)'.
-  * @param {boolean} autoHide
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_PopupPanel__boolean(autoHide) {
+ //Initialization from constructor 'PopupPanel(boolean)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_PopupPanel__boolean(/** boolean */ autoHide) {
   this.$ctor__org_gwtproject_user_client_ui_PopupPanel__();
   this.f_autoHide__org_gwtproject_user_client_ui_PopupPanel_ = autoHide;
   this.f_autoHideOnHistoryEvents__org_gwtproject_user_client_ui_PopupPanel_ = autoHide;
  }
- /**
-  * Factory method corresponding to constructor 'PopupPanel(boolean, boolean)'.
-  * @param {boolean} autoHide
-  * @param {boolean} modal
-  * @return {!PopupPanel}
-  * @public
-  */
- static $create__boolean__boolean(autoHide, modal) {
+ //Factory method corresponding to constructor 'PopupPanel(boolean, boolean)'.
+ /** @return {!PopupPanel} */
+ static $create__boolean__boolean(/** boolean */ autoHide, /** boolean */ modal) {
   PopupPanel.$clinit();
   let $instance = new PopupPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_PopupPanel__boolean__boolean(autoHide, modal);
   return $instance;
  }
- /**
-  * Initialization from constructor 'PopupPanel(boolean, boolean)'.
-  * @param {boolean} autoHide
-  * @param {boolean} modal
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_PopupPanel__boolean__boolean(autoHide, modal) {
+ //Initialization from constructor 'PopupPanel(boolean, boolean)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_PopupPanel__boolean__boolean(/** boolean */ autoHide, /** boolean */ modal) {
   this.$ctor__org_gwtproject_user_client_ui_PopupPanel__boolean(autoHide);
   this.f_modal__org_gwtproject_user_client_ui_PopupPanel_ = modal;
  }
- /**
-  * @param {Object} partner
-  * @public
-  */
- m_addAutoHidePartner__org_gwtproject_dom_client_Element(partner) {
+ 
+ m_addAutoHidePartner__org_gwtproject_dom_client_Element(/** Object */ partner) {
   $Asserts.$assertWithMessage(!$Equality.$same(partner, null), "partner cannot be null");
   if ($Equality.$same(this.f_autoHidePartners__org_gwtproject_user_client_ui_PopupPanel_, null)) {
-   this.f_autoHidePartners__org_gwtproject_user_client_ui_PopupPanel_ = /**@type {!ArrayList<Object>} */ (ArrayList.$create__());
+   this.f_autoHidePartners__org_gwtproject_user_client_ui_PopupPanel_ = /**@type {!ArrayList<Object>}*/ (ArrayList.$create__());
   }
   this.f_autoHidePartners__org_gwtproject_user_client_ui_PopupPanel_.add(partner);
  }
- /**
-  * @override
-  * @param {CloseHandler<PopupPanel>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addCloseHandler__org_gwtproject_event_logical_shared_CloseHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addCloseHandler__org_gwtproject_event_logical_shared_CloseHandler(/** CloseHandler<PopupPanel> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, CloseEvent.m_getType__());
  }
- /**
-  * @public
-  */
+ 
  m_center__() {
   let initiallyShowing = this.f_showing__org_gwtproject_user_client_ui_PopupPanel_;
   let initiallyAnimated = this.f_isAnimationEnabled__org_gwtproject_user_client_ui_PopupPanel_;
@@ -209,172 +176,99 @@ class PopupPanel extends SimplePanel {
    }
   }
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getGlassStyleName__() {
   return this.f_glassStyleName__org_gwtproject_user_client_ui_PopupPanel_;
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getOffsetHeight__() {
   return super.m_getOffsetHeight__();
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getOffsetWidth__() {
   return super.m_getOffsetWidth__();
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getPopupLeft__() {
   return Element_$Overlay.m_getAbsoluteLeft__$devirt__org_gwtproject_dom_client_Element(this.m_getElement__());
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getPopupTop__() {
   return Element_$Overlay.m_getAbsoluteTop__$devirt__org_gwtproject_dom_client_Element(this.m_getElement__());
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getTitle__() {
   return Element_$Overlay.m_getPropertyString__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.m_getContainerElement__(), "title");
  }
- /**
-  * @public
-  */
+ 
  m_hide__() {
   this.m_hide__boolean(false);
  }
- /**
-  * @param {boolean} autoClosed
-  * @public
-  */
- m_hide__boolean(autoClosed) {
+ 
+ m_hide__boolean(/** boolean */ autoClosed) {
   if (!this.m_isShowing__()) {
    return;
   }
   this.f_resizeAnimation__org_gwtproject_user_client_ui_PopupPanel_.m_setState__boolean__boolean(false, false);
   CloseEvent.m_fire__org_gwtproject_event_logical_shared_HasCloseHandlers__java_lang_Object__boolean(this, this, autoClosed);
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isAnimationEnabled__() {
   return this.f_isAnimationEnabled__org_gwtproject_user_client_ui_PopupPanel_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isAutoHideEnabled__() {
   return this.f_autoHide__org_gwtproject_user_client_ui_PopupPanel_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isAutoHideOnHistoryEventsEnabled__() {
   return this.f_autoHideOnHistoryEvents__org_gwtproject_user_client_ui_PopupPanel_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isGlassEnabled__() {
   return this.f_isGlassEnabled__org_gwtproject_user_client_ui_PopupPanel_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isModal__() {
   return this.f_modal__org_gwtproject_user_client_ui_PopupPanel_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isPreviewingAllNativeEvents__() {
   return this.f_previewAllNativeEvents__org_gwtproject_user_client_ui_PopupPanel_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isShowing__() {
   return this.f_showing__org_gwtproject_user_client_ui_PopupPanel_;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isVisible__() {
   return !$Equality.$same("hidden", $Overlay.m_getProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String(this.m_getElement__().style, "visibility"));
  }
- /**
-  * @param {Event} event
-  * @return {boolean}
-  * @public
-  * @deprecated
-  */
- m_onEventPreview__org_gwtproject_user_client_Event(event) {
+ /** @return {boolean} @deprecated */
+ m_onEventPreview__org_gwtproject_user_client_Event(/** Event */ event) {
   return true;
  }
- /**
-  * @param {Object} partner
-  * @public
-  */
- m_removeAutoHidePartner__org_gwtproject_dom_client_Element(partner) {
+ 
+ m_removeAutoHidePartner__org_gwtproject_dom_client_Element(/** Object */ partner) {
   $Asserts.$assertWithMessage(!$Equality.$same(partner, null), "partner cannot be null");
   if (!$Equality.$same(this.f_autoHidePartners__org_gwtproject_user_client_ui_PopupPanel_, null)) {
    this.f_autoHidePartners__org_gwtproject_user_client_ui_PopupPanel_.remove(partner);
   }
  }
- /**
-  * @override
-  * @param {boolean} enable
-  * @public
-  */
- m_setAnimationEnabled__boolean(enable) {
+ /** @override */
+ m_setAnimationEnabled__boolean(/** boolean */ enable) {
   this.f_isAnimationEnabled__org_gwtproject_user_client_ui_PopupPanel_ = enable;
  }
- /**
-  * @param {boolean} autoHide
-  * @public
-  */
- m_setAutoHideEnabled__boolean(autoHide) {
+ 
+ m_setAutoHideEnabled__boolean(/** boolean */ autoHide) {
   this.f_autoHide__org_gwtproject_user_client_ui_PopupPanel_ = autoHide;
  }
- /**
-  * @param {boolean} enabled
-  * @public
-  */
- m_setAutoHideOnHistoryEventsEnabled__boolean(enabled) {
+ 
+ m_setAutoHideOnHistoryEventsEnabled__boolean(/** boolean */ enabled) {
   this.f_autoHideOnHistoryEvents__org_gwtproject_user_client_ui_PopupPanel_ = enabled;
  }
- /**
-  * @param {boolean} enabled
-  * @public
-  */
- m_setGlassEnabled__boolean(enabled) {
+ 
+ m_setGlassEnabled__boolean(/** boolean */ enabled) {
   this.f_isGlassEnabled__org_gwtproject_user_client_ui_PopupPanel_ = enabled;
   if (enabled && $Equality.$same(this.f_glass__org_gwtproject_user_client_ui_PopupPanel_, null)) {
    this.f_glass__org_gwtproject_user_client_ui_PopupPanel_ = Document_$Overlay.m_createDivElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__());
@@ -384,41 +278,27 @@ class PopupPanel extends SimplePanel {
    $Overlay.m_setTop__$devirt__org_gwtproject_dom_client_Style__double__org_gwtproject_dom_style_shared_Unit(this.f_glass__org_gwtproject_user_client_ui_PopupPanel_.style, 0, Unit.f_PX__org_gwtproject_dom_style_shared_Unit);
   }
  }
- /**
-  * @param {?string} glassStyleName
-  * @public
-  */
- m_setGlassStyleName__java_lang_String(glassStyleName) {
+ 
+ m_setGlassStyleName__java_lang_String(/** ?string */ glassStyleName) {
   this.f_glassStyleName__org_gwtproject_user_client_ui_PopupPanel_ = glassStyleName;
   if (!$Equality.$same(this.f_glass__org_gwtproject_user_client_ui_PopupPanel_, null)) {
    Element_$Overlay.m_setClassName__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.f_glass__org_gwtproject_user_client_ui_PopupPanel_, glassStyleName);
   }
  }
- /**
-  * @override
-  * @param {?string} height
-  * @public
-  */
- m_setHeight__java_lang_String(height) {
+ /** @override */
+ m_setHeight__java_lang_String(/** ?string */ height) {
   this.f_desiredHeight__org_gwtproject_user_client_ui_PopupPanel_ = height;
   this.m_maybeUpdateSize___$pp_org_gwtproject_user_client_ui();
   if (j_l_String.m_length__java_lang_String(height) == 0) {
    this.f_desiredHeight__org_gwtproject_user_client_ui_PopupPanel_ = null;
   }
  }
- /**
-  * @param {boolean} modal
-  * @public
-  */
- m_setModal__boolean(modal) {
+ 
+ m_setModal__boolean(/** boolean */ modal) {
   this.f_modal__org_gwtproject_user_client_ui_PopupPanel_ = modal;
  }
- /**
-  * @param {number} left
-  * @param {number} top
-  * @public
-  */
- m_setPopupPosition__int__int(left, top) {
+ 
+ m_setPopupPosition__int__int(/** number */ left, /** number */ top) {
   this.f_leftPosition__org_gwtproject_user_client_ui_PopupPanel_ = left;
   this.f_topPosition__org_gwtproject_user_client_ui_PopupPanel_ = top;
   left -= Document_$Overlay.m_getBodyOffsetLeft__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__());
@@ -427,29 +307,19 @@ class PopupPanel extends SimplePanel {
   $Overlay.m_setPropertyPx__$devirt__org_gwtproject_dom_client_Style__java_lang_String__int(elem.style, "left", left);
   $Overlay.m_setPropertyPx__$devirt__org_gwtproject_dom_client_Style__java_lang_String__int(elem.style, "top", top);
  }
- /**
-  * @param {PositionCallback} callback
-  * @public
-  */
- m_setPopupPositionAndShow__org_gwtproject_user_client_ui_PopupPanel_PositionCallback(callback) {
+ 
+ m_setPopupPositionAndShow__org_gwtproject_user_client_ui_PopupPanel_PositionCallback(/** PositionCallback */ callback) {
   this.m_setVisible__boolean(false);
   this.m_show__();
   callback.m_setPosition__int__int(this.m_getOffsetWidth__(), this.m_getOffsetHeight__());
   this.m_setVisible__boolean(true);
  }
- /**
-  * @param {boolean} previewAllNativeEvents
-  * @public
-  */
- m_setPreviewingAllNativeEvents__boolean(previewAllNativeEvents) {
+ 
+ m_setPreviewingAllNativeEvents__boolean(/** boolean */ previewAllNativeEvents) {
   this.f_previewAllNativeEvents__org_gwtproject_user_client_ui_PopupPanel_ = previewAllNativeEvents;
  }
- /**
-  * @override
-  * @param {?string} title
-  * @public
-  */
- m_setTitle__java_lang_String(title) {
+ /** @override */
+ m_setTitle__java_lang_String(/** ?string */ title) {
   let containerElement = this.m_getContainerElement__();
   if ($Equality.$same(title, null) || j_l_String.m_length__java_lang_String(title) == 0) {
    containerElement.removeAttribute("title");
@@ -457,41 +327,27 @@ class PopupPanel extends SimplePanel {
    containerElement.setAttribute("title", title);
   }
  }
- /**
-  * @override
-  * @param {boolean} visible
-  * @public
-  */
- m_setVisible__boolean(visible) {
+ /** @override */
+ m_setVisible__boolean(/** boolean */ visible) {
   $Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(this.m_getElement__().style, "visibility", visible ? "visible" : "hidden");
   if (!$Equality.$same(this.f_glass__org_gwtproject_user_client_ui_PopupPanel_, null)) {
    $Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(this.f_glass__org_gwtproject_user_client_ui_PopupPanel_.style, "visibility", visible ? "visible" : "hidden");
   }
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @public
-  */
- m_setWidget__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override */
+ m_setWidget__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   super.m_setWidget__org_gwtproject_user_client_ui_Widget(w);
   this.m_maybeUpdateSize___$pp_org_gwtproject_user_client_ui();
  }
- /**
-  * @override
-  * @param {?string} width
-  * @public
-  */
- m_setWidth__java_lang_String(width) {
+ /** @override */
+ m_setWidth__java_lang_String(/** ?string */ width) {
   this.f_desiredWidth__org_gwtproject_user_client_ui_PopupPanel_ = width;
   this.m_maybeUpdateSize___$pp_org_gwtproject_user_client_ui();
   if (j_l_String.m_length__java_lang_String(width) == 0) {
    this.f_desiredWidth__org_gwtproject_user_client_ui_PopupPanel_ = null;
   }
  }
- /**
-  * @public
-  */
+ 
  m_show__() {
   if (this.f_showing__org_gwtproject_user_client_ui_PopupPanel_) {
    return;
@@ -500,58 +356,36 @@ class PopupPanel extends SimplePanel {
   }
   this.f_resizeAnimation__org_gwtproject_user_client_ui_PopupPanel_.m_setState__boolean__boolean(true, false);
  }
- /**
-  * @param {UIObject} target
-  * @public
-  */
- m_showRelativeTo__org_gwtproject_user_client_ui_UIObject(target) {
+ 
+ m_showRelativeTo__org_gwtproject_user_client_ui_UIObject(/** UIObject */ target) {
   this.m_setPopupPositionAndShow__org_gwtproject_user_client_ui_PopupPanel_PositionCallback($2.$create__org_gwtproject_user_client_ui_PopupPanel__org_gwtproject_user_client_ui_UIObject(this, target));
  }
- /**
-  * @override
-  * @return {Object}
-  * @public
-  */
+ /** @override @return {Object} */
  m_getContainerElement__() {
-  return /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(PopupPanel.$f_impl__org_gwtproject_user_client_ui_PopupPanel_.m_getContainerElement__org_gwtproject_dom_client_Element(this.m_getPopupImplElement___$p_org_gwtproject_user_client_ui_PopupPanel())), Element_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(PopupPanel.$f_impl__org_gwtproject_user_client_ui_PopupPanel_.m_getContainerElement__org_gwtproject_dom_client_Element(this.m_getPopupImplElement___$p_org_gwtproject_user_client_ui_PopupPanel())), Element_$Overlay));
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getGlassElement__() {
   return this.f_glass__org_gwtproject_user_client_ui_PopupPanel_;
  }
- /**
-  * @override
-  * @return {Object}
-  * @public
-  */
+ /** @override @return {Object} */
  m_getStyleElement__() {
-  return /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(PopupPanel.$f_impl__org_gwtproject_user_client_ui_PopupPanel_.m_getStyleElement__org_gwtproject_dom_client_Element(this.m_getPopupImplElement___$p_org_gwtproject_user_client_ui_PopupPanel())), Element_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(PopupPanel.$f_impl__org_gwtproject_user_client_ui_PopupPanel_.m_getStyleElement__org_gwtproject_dom_client_Element(this.m_getPopupImplElement___$p_org_gwtproject_user_client_ui_PopupPanel())), Element_$Overlay));
  }
- /**
-  * @param {NativePreviewEvent} event
-  * @public
-  */
- m_onPreviewNativeEvent__org_gwtproject_user_client_Event_NativePreviewEvent(event) {
+ 
+ m_onPreviewNativeEvent__org_gwtproject_user_client_Event_NativePreviewEvent(/** NativePreviewEvent */ event) {
   if (event.m_isFirstHandler__() && !this.m_onEventPreview__org_gwtproject_user_client_Event(Event.m_as__org_gwtproject_dom_client_NativeEvent(event.m_getNativeEvent__()))) {
    event.m_cancel__();
   }
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onUnload__() {
   super.m_onUnload__();
   if (this.m_isShowing__()) {
    this.f_resizeAnimation__org_gwtproject_user_client_ui_PopupPanel_.m_setState__boolean__boolean(false, true);
   }
  }
- /**
-  * @public
-  */
+ 
  m_maybeUpdateSize___$pp_org_gwtproject_user_client_ui() {
   let w = super.m_getWidget__();
   if (!$Equality.$same(w, null)) {
@@ -563,49 +397,33 @@ class PopupPanel extends SimplePanel {
    }
   }
  }
- /**
-  * @param {ResizeAnimation} animation
-  * @public
-  */
- m_setAnimation__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_$pp_org_gwtproject_user_client_ui(animation) {
+ 
+ m_setAnimation__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_$pp_org_gwtproject_user_client_ui(/** ResizeAnimation */ animation) {
   this.f_resizeAnimation__org_gwtproject_user_client_ui_PopupPanel_ = animation;
  }
- /**
-  * @param {AnimationType} type
-  * @public
-  */
- m_setAnimationType__org_gwtproject_user_client_ui_PopupPanel_AnimationType(type) {
+ 
+ m_setAnimationType__org_gwtproject_user_client_ui_PopupPanel_AnimationType(/** AnimationType */ type) {
   this.f_animType__org_gwtproject_user_client_ui_PopupPanel_ = !$Equality.$same(type, null) ? type : AnimationType.f_CENTER__org_gwtproject_user_client_ui_PopupPanel_AnimationType;
  }
- /**
-  * @return {AnimationType}
-  * @public
-  */
+ /** @return {AnimationType} */
  m_getAnimationType__() {
   return this.f_animType__org_gwtproject_user_client_ui_PopupPanel_;
  }
- /**
-  * @param {Object} elt
-  * @public
-  */
- m_blur__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_PopupPanel(elt) {
-  if (JsPropertyMap_$Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (elt), "blur") && !$Equality.$same(elt, Document_$Overlay.m_get__().body)) {
+ 
+ m_blur__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_PopupPanel(/** Object */ elt) {
+  if (JsPropertyMap_$Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (elt), "blur") && !$Equality.$same(elt, Document_$Overlay.m_get__().body)) {
    elt.blur();
   }
  }
- /**
-  * @param {Object} event
-  * @return {boolean}
-  * @public
-  */
- m_eventTargetsPartner__org_gwtproject_dom_client_NativeEvent_$p_org_gwtproject_user_client_ui_PopupPanel(event) {
+ /** @return {boolean} */
+ m_eventTargetsPartner__org_gwtproject_dom_client_NativeEvent_$p_org_gwtproject_user_client_ui_PopupPanel(/** Object */ event) {
   if ($Equality.$same(this.f_autoHidePartners__org_gwtproject_user_client_ui_PopupPanel_, null)) {
    return false;
   }
   let target = NativeEvent_$Overlay.m_getEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(event);
   if (Element_$Overlay.m_is__org_gwtproject_core_client_JavaScriptObject(target)) {
    for (let $iterator = this.f_autoHidePartners__org_gwtproject_user_client_ui_PopupPanel_.m_iterator__(); $iterator.m_hasNext__(); ) {
-    let elem = /**@type {Object} */ ($Casts.$to($iterator.m_next__(), Element_$Overlay));
+    let elem = /**@type {Object}*/ ($Casts.$to($iterator.m_next__(), Element_$Overlay));
     if (Node_$Overlay.m_isOrHasChild__$devirt__org_gwtproject_dom_client_Node__org_gwtproject_dom_client_Node(elem, Element_$Overlay.m_as__org_gwtproject_core_client_JavaScriptObject(target))) {
      return true;
     }
@@ -613,32 +431,20 @@ class PopupPanel extends SimplePanel {
   }
   return false;
  }
- /**
-  * @param {Object} event
-  * @return {boolean}
-  * @public
-  */
- m_eventTargetsPopup__org_gwtproject_dom_client_NativeEvent_$p_org_gwtproject_user_client_ui_PopupPanel(event) {
+ /** @return {boolean} */
+ m_eventTargetsPopup__org_gwtproject_dom_client_NativeEvent_$p_org_gwtproject_user_client_ui_PopupPanel(/** Object */ event) {
   let target = NativeEvent_$Overlay.m_getEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(event);
   if (Element_$Overlay.m_is__org_gwtproject_core_client_JavaScriptObject(target)) {
    return Node_$Overlay.m_isOrHasChild__$devirt__org_gwtproject_dom_client_Node__org_gwtproject_dom_client_Node(this.m_getElement__(), Element_$Overlay.m_as__org_gwtproject_core_client_JavaScriptObject(target));
   }
   return false;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getPopupImplElement___$p_org_gwtproject_user_client_ui_PopupPanel() {
   return DOM.m_getFirstChild__org_gwtproject_dom_client_Element(super.m_getContainerElement__());
  }
- /**
-  * @param {UIObject} relativeObject
-  * @param {number} offsetWidth
-  * @param {number} offsetHeight
-  * @public
-  */
- m_position__org_gwtproject_user_client_ui_UIObject__int__int_$p_org_gwtproject_user_client_ui_PopupPanel(relativeObject, offsetWidth, offsetHeight) {
+ 
+ m_position__org_gwtproject_user_client_ui_UIObject__int__int_$p_org_gwtproject_user_client_ui_PopupPanel(/** UIObject */ relativeObject, /** number */ offsetWidth, /** number */ offsetHeight) {
   let textBoxOffsetWidth = relativeObject.m_getOffsetWidth__();
   let offsetWidthDiff = offsetWidth - textBoxOffsetWidth;
   let /** number */ left;
@@ -679,11 +485,8 @@ class PopupPanel extends SimplePanel {
   }
   this.m_setPopupPosition__int__int(left, top);
  }
- /**
-  * @param {NativePreviewEvent} event
-  * @public
-  */
- m_previewNativeEvent__org_gwtproject_user_client_Event_NativePreviewEvent_$p_org_gwtproject_user_client_ui_PopupPanel(event) {
+ 
+ m_previewNativeEvent__org_gwtproject_user_client_Event_NativePreviewEvent_$p_org_gwtproject_user_client_ui_PopupPanel(/** NativePreviewEvent */ event) {
   if (event.m_isCanceled__() || (!this.f_previewAllNativeEvents__org_gwtproject_user_client_ui_PopupPanel_ && event.m_isConsumed__())) {
    if (this.f_modal__org_gwtproject_user_client_ui_PopupPanel_) {
     event.m_cancel__();
@@ -751,9 +554,7 @@ class PopupPanel extends SimplePanel {
     }
   }
  }
- /**
-  * @public
-  */
+ 
  m_updateHandlers___$p_org_gwtproject_user_client_ui_PopupPanel() {
   if (!$Equality.$same(this.f_nativePreviewHandlerRegistration__org_gwtproject_user_client_ui_PopupPanel_, null)) {
    this.f_nativePreviewHandlerRegistration__org_gwtproject_user_client_ui_PopupPanel_.m_removeHandler__();
@@ -768,27 +569,17 @@ class PopupPanel extends SimplePanel {
    this.f_historyHandlerRegistration__org_gwtproject_user_client_ui_PopupPanel_ = History.m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler($4.$create__org_gwtproject_user_client_ui_PopupPanel(this));
   }
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_PopupPanel() {
   this.f_glassResizer__org_gwtproject_user_client_ui_PopupPanel_ = $1.$create__org_gwtproject_user_client_ui_PopupPanel(this);
   this.f_animType__org_gwtproject_user_client_ui_PopupPanel_ = AnimationType.f_CENTER__org_gwtproject_user_client_ui_PopupPanel_AnimationType;
@@ -798,33 +589,22 @@ class PopupPanel extends SimplePanel {
   this.f_resizeAnimation__org_gwtproject_user_client_ui_PopupPanel_ = ResizeAnimation.$create__org_gwtproject_user_client_ui_PopupPanel(this);
   this.f_topPosition__org_gwtproject_user_client_ui_PopupPanel_ = -1;
  }
- /**
-  * @return {PopupImpl}
-  * @public
-  */
+ /** @return {PopupImpl} */
  static get f_impl__org_gwtproject_user_client_ui_PopupPanel_() {
   return (PopupPanel.$clinit(), PopupPanel.$f_impl__org_gwtproject_user_client_ui_PopupPanel_);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   PopupPanel.$clinit = () =>{};
   PopupPanel.$loadModules();
   SimplePanel.$clinit();
   PopupPanel.$f_impl__org_gwtproject_user_client_ui_PopupPanel_ = PopupImpl.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof PopupPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -863,11 +643,11 @@ $Util.$setClassMetadata(PopupPanel, 'org.gwtproject.user.client.ui.PopupPanel');
 HasAnimation.$markImplementor(PopupPanel);
 HasCloseHandlers.$markImplementor(PopupPanel);
 
-/** @public {number} @const */
+/**@const {number}*/
 PopupPanel.f_ANIMATION_DURATION__org_gwtproject_user_client_ui_PopupPanel_ = 200;
-/** @public {?string} @const */
+/**@const {?string}*/
 PopupPanel.f_DEFAULT_STYLENAME__org_gwtproject_user_client_ui_PopupPanel_ = "gwt-PopupPanel";
-/** @private {PopupImpl} */
+/**@private {PopupImpl}*/
 PopupPanel.$f_impl__org_gwtproject_user_client_ui_PopupPanel_;
 
 exports = PopupPanel; 

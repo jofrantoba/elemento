@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TableBuilder.impl.java.js",
-"lineCount":90,
-"mappings":"A;;;;;;;;;MAoBiB,Y;;;;;;;CAYF,a,CAAWA,M;;;;;;;CAUX,kB,CAAgBC,W;;;;;;;CAShB,kB,CAAgBC,W;;;;;;;CAShB,yB,CAAaC,K;;;;;;;CASb,yB,CAAaC,K;;;;;;;CASb,yB,CAAaC,K;;;;QA1DX,O;EAAAC,+B;EAAAA,4B;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAEf;aAAO,kEAAP;",
+"lineCount":47,
+"mappings":"A;;;;;;;;;MAoBiB,Y;;CAYF,a,eAAWA,M;;CAUX,kB,eAAgBC,W;;CAShB,kB,eAAgBC,W;;CAShB,yB,gBAAaC,K;;CASb,yB,gBAAaC,K;;CASb,yB,gBAAaC,K;;QA1DX,O;EAAAC,+B;EAAAA,4B;;;;;;;;;;;;;;;;;;;;AAEf;aAAO,kEAAP;",
 "sources":["TableBuilder.java"],
 "names":["border","cellPadding","cellSpacing","frame","rules","width","org.gwtproject.dom.builder.shared.TableBuilder.<clinit>"]
 }

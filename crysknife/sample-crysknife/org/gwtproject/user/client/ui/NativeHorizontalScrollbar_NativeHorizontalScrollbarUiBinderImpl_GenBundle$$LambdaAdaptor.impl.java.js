@@ -10,52 +10,35 @@ let NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenCss__st
  * @implements {NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenBundle}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function():NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenCss__style} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function():NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenCss__style */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function():NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenCss__style} */
+  /**@type {?function():NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenCss__style}*/
   this.f_$$fn__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundle_$LambdaAdaptor;
   this.$ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundle_$LambdaAdaptor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundle_$JsFunction(fn);
  }
- /**
-  * @param {?function():NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenCss__style} fn
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundle_$LambdaAdaptor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundle_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundle_$LambdaAdaptor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundle_$JsFunction(/** ?function():NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenCss__style */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundle_$LambdaAdaptor = fn;
  }
- /**
-  * @return {NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenCss__style}
-  * @public
-  */
+ /** @return {NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenCss__style} */
  m_style__() {
   let /** ?function():NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__GenCss__style */ $function;
   return ($function = this.f_$$fn__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_GenBundle_$LambdaAdaptor, $function());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"RTCConfigurationInterface_$UrlsFieldType$$Overlay.impl.java.js",
-"lineCount":32,
-"mappings":"A;;;;;;;;MAiEmB,sB;;;;;QAEiC,U;EAAAA,iC;EAC9CA,iF;;;;;;;QAUW,qG,WAAiBC,I;EAAjBC,iC;EACXA,0F;;;;;QAda,O;EAAAC,yC;EAAAA;",
+"lineCount":23,
+"mappings":"A;;;;;;;;MAiEmB,sB;;QAEiC,U;EAAAA,iC;EAC9CA,gF;;;QAUW,qG,0CAAiBC,I;EAAjBC,iC;EACXA,yF;;;QAda,O;EAAAC,yC;EAAAA;",
 "sources":["RTCConfigurationInterface_.java"],
 "names":["elemental2.dom.RTCConfigurationInterface_$UrlsFieldType$$Overlay.create","urls","elemental2.dom.RTCConfigurationInterface_$UrlsFieldType$$Overlay.setUrls__$devirt","elemental2.dom.RTCConfigurationInterface_$UrlsFieldType$$Overlay.<clinit>"]
 }

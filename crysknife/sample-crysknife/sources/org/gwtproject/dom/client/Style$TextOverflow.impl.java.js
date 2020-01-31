@@ -9,45 +9,30 @@ let TextOverflow = goog.forwardDeclare('org.gwtproject.dom.style.shared.TextOver
  * @deprecated
   */
 class Style_TextOverflow extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!Style_TextOverflow}
-  * @public
-  */
+ /** @return {!Style_TextOverflow} */
  static $create__() {
   Style_TextOverflow.$clinit();
   let $instance = new Style_TextOverflow();
   $instance.$ctor__org_gwtproject_dom_client_Style_TextOverflow__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_dom_client_Style_TextOverflow__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {TextOverflow}
-  * @public
-  */
+ /** @return {TextOverflow} */
  static get f_CLIP__org_gwtproject_dom_client_Style_TextOverflow() {
   return (Style_TextOverflow.$clinit(), Style_TextOverflow.$f_CLIP__org_gwtproject_dom_client_Style_TextOverflow);
  }
- /**
-  * @return {TextOverflow}
-  * @public
-  */
+ /** @return {TextOverflow} */
  static get f_ELLIPSIS__org_gwtproject_dom_client_Style_TextOverflow() {
   return (Style_TextOverflow.$clinit(), Style_TextOverflow.$f_ELLIPSIS__org_gwtproject_dom_client_Style_TextOverflow);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Style_TextOverflow.$clinit = () =>{};
   Style_TextOverflow.$loadModules();
@@ -55,17 +40,11 @@ class Style_TextOverflow extends j_l_Object {
   Style_TextOverflow.$f_CLIP__org_gwtproject_dom_client_Style_TextOverflow = TextOverflow.f_CLIP__org_gwtproject_dom_style_shared_TextOverflow;
   Style_TextOverflow.$f_ELLIPSIS__org_gwtproject_dom_client_Style_TextOverflow = TextOverflow.f_ELLIPSIS__org_gwtproject_dom_style_shared_TextOverflow;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Style_TextOverflow;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   TextOverflow = goog.module.get('org.gwtproject.dom.style.shared.TextOverflow$impl');
  }
@@ -73,9 +52,9 @@ class Style_TextOverflow extends j_l_Object {
 }
 $Util.$setClassMetadata(Style_TextOverflow, 'org.gwtproject.dom.client.Style$TextOverflow');
 
-/** @private {TextOverflow} */
+/**@private {TextOverflow}*/
 Style_TextOverflow.$f_CLIP__org_gwtproject_dom_client_Style_TextOverflow;
-/** @private {TextOverflow} */
+/**@private {TextOverflow}*/
 Style_TextOverflow.$f_ELLIPSIS__org_gwtproject_dom_client_Style_TextOverflow;
 
 exports = Style_TextOverflow; 

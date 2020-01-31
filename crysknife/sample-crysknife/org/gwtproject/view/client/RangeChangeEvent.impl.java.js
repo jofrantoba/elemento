@@ -15,114 +15,72 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {Event<Handler>}
   */
 class RangeChangeEvent extends Event {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Range} */
+  /**@type {Range}*/
   this.f_range__org_gwtproject_view_client_RangeChangeEvent_;
  }
- /**
-  * @param {HasRows} source
-  * @param {Range} range
-  * @public
-  */
- static m_fire__org_gwtproject_view_client_HasRows__org_gwtproject_view_client_Range(source, range) {
+ 
+ static m_fire__org_gwtproject_view_client_HasRows__org_gwtproject_view_client_Range(/** HasRows */ source, /** Range */ range) {
   RangeChangeEvent.$clinit();
   if (!$Equality.$same(RangeChangeEvent.f_TYPE__org_gwtproject_view_client_RangeChangeEvent_, null)) {
    let event = RangeChangeEvent.$create__org_gwtproject_view_client_Range(range);
    source.m_fireEvent__org_gwtproject_event_shared_Event(event);
   }
  }
- /**
-  * @return {Type<Handler>}
-  * @public
-  */
+ /** @return {Type<Handler>} */
  static m_getType__() {
   RangeChangeEvent.$clinit();
   if ($Equality.$same(RangeChangeEvent.f_TYPE__org_gwtproject_view_client_RangeChangeEvent_, null)) {
-   RangeChangeEvent.f_TYPE__org_gwtproject_view_client_RangeChangeEvent_ = /**@type {!Type<Handler>} */ (Type.$create__());
+   RangeChangeEvent.f_TYPE__org_gwtproject_view_client_RangeChangeEvent_ = /**@type {!Type<Handler>}*/ (Type.$create__());
   }
   return RangeChangeEvent.f_TYPE__org_gwtproject_view_client_RangeChangeEvent_;
  }
- /**
-  * @param {Range} range
-  * @return {!RangeChangeEvent}
-  * @public
-  */
- static $create__org_gwtproject_view_client_Range(range) {
+ /** @return {!RangeChangeEvent} */
+ static $create__org_gwtproject_view_client_Range(/** Range */ range) {
   RangeChangeEvent.$clinit();
   let $instance = new RangeChangeEvent();
   $instance.$ctor__org_gwtproject_view_client_RangeChangeEvent__org_gwtproject_view_client_Range(range);
   return $instance;
  }
- /**
-  * @param {Range} range
-  * @public
-  */
- $ctor__org_gwtproject_view_client_RangeChangeEvent__org_gwtproject_view_client_Range(range) {
+ 
+ $ctor__org_gwtproject_view_client_RangeChangeEvent__org_gwtproject_view_client_Range(/** Range */ range) {
   this.$ctor__org_gwtproject_event_shared_Event__();
   this.f_range__org_gwtproject_view_client_RangeChangeEvent_ = range;
  }
- /**
-  * @override
-  * @return {Type<Handler>}
-  * @public
-  */
+ /** @override @return {Type<Handler>} */
  m_getAssociatedType__() {
   return RangeChangeEvent.f_TYPE__org_gwtproject_view_client_RangeChangeEvent_;
  }
- /**
-  * @return {Range}
-  * @public
-  */
+ /** @return {Range} */
  m_getNewRange__() {
   return this.f_range__org_gwtproject_view_client_RangeChangeEvent_;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_toDebugString__() {
   return j_l_String.m_valueOf__java_lang_Object(super.m_toDebugString__()) + j_l_String.m_valueOf__java_lang_Object(this.m_getNewRange__());
  }
- /**
-  * @param {Handler} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_view_client_RangeChangeEvent_Handler(handler) {
+ 
+ m_dispatch__org_gwtproject_view_client_RangeChangeEvent_Handler(/** Handler */ handler) {
   handler.m_onRangeChange__org_gwtproject_view_client_RangeChangeEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_view_client_RangeChangeEvent_Handler(/**@type {Handler} */ ($Casts.$to(arg0, Handler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_view_client_RangeChangeEvent_Handler(/**@type {Handler}*/ ($Casts.$to(arg0, Handler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RangeChangeEvent.$clinit = () =>{};
   RangeChangeEvent.$loadModules();
   Event.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof RangeChangeEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -134,7 +92,7 @@ class RangeChangeEvent extends Event {
 }
 $Util.$setClassMetadata(RangeChangeEvent, 'org.gwtproject.view.client.RangeChangeEvent');
 
-/** @public {Type<Handler>} */
+/**@type {Type<Handler>}*/
 RangeChangeEvent.f_TYPE__org_gwtproject_view_client_RangeChangeEvent_;
 
 exports = RangeChangeEvent; 

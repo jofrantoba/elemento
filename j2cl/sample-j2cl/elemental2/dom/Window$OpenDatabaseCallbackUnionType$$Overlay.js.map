@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Window$OpenDatabaseCallbackUnionType$$Overlay.impl.java.js",
-"lineCount":53,
-"mappings":"A;;;;;;;;;;MAwRmB,sC;;;;;;QAE6B,sB,CAAUA,C;EAAVC,iD;EAC1CA,wD;;;;;;;QAIuB,kF;EAAAC,iD;EACvBA,8E;;;;;;;QAIoC,wF;EAAAC,iD;EACpCA,oH;;;;;;;QAIc,wF;EAAAC,iD;EACdA,mE;;;;;QAlBa,O;EAAAC,yD;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;MAwRmB,sC;;QAE6B,sB,UAAUA,C;EAAVC,iD;EAC1CA,uD;;;QAIuB,kF;EAAAC,iD;EACvBA,6E;;;QAIoC,wF;EAAAC,iD;EACpCA,mH;;;QAIc,wF;EAAAC,iD;EACdA,kE;;;QAlBa,O;EAAAC,yD;EAAAA;",
 "sources":["Window.java"],
 "names":["o","elemental2.dom.Window$OpenDatabaseCallbackUnionType$$Overlay.of","elemental2.dom.Window$OpenDatabaseCallbackUnionType$$Overlay.asDatabaseCallback__$devirt","elemental2.dom.Window$OpenDatabaseCallbackUnionType$$Overlay.asOpenDatabaseCallbackFn__$devirt","elemental2.dom.Window$OpenDatabaseCallbackUnionType$$Overlay.isOpenDatabaseCallbackFn__$devirt","elemental2.dom.Window$OpenDatabaseCallbackUnionType$$Overlay.<clinit>"]
 }

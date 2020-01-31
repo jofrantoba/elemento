@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DefaultLocalizedNamesBase.impl.java.js",
-"lineCount":120,
-"mappings":"A;;;;;;;;;;;;;;;;;MAwBsB,yB;;;;CAAA,W;EAAAA,Q;EAAAA;OAED,yEAFCA,C;EAAAA;OAID,yEAJCA,C;EAAAA;OAMU,gEANVA,C;;;;;CAAA,6D;EAAAC,iC;EAAAA,uE;;;;;;;CAQE,wB;EACpBC;GACEA,kHADFA;G;EAGAA,sF;;;;;;;;CAEkB,iC,CAAqBC,U;EACvCC;GACEA,uBADFA;G;EAGAA,8D;;;;;;;CAGoB,wB;EACpBC;GACEA,kHADFA;G;EAGAA,sF;;;;;;;CAGe,qC,CAAyBF,U;EACxCG,6I;;;;;;CAWiB,yB;EACjBC,wE;;;;;CASa,e;EACbC,uI;;;;;;;CAS0B,yB;;;;;CAOV,gB;EAChBC,oG;;;;;CApEkB,+D;EAEpBR,sF;EAEAA,sF;EAEAA,6E;;;;;QANoB,O;EAAAS,4C;EAAAA,yC;EAAAA;",
+"lineCount":83,
+"mappings":"A;;;;;;;;;;;;;;;;;MAwBsB,yB;;CAAA,W;EAAAA,Q;EAAAA;OAED,yEAFCA,C;EAAAA;OAID,yEAJCA,C;EAAAA;OAMU,gEANVA,C;;;CAAA,6D;EAAAC,iC;EAAAA,uE;;;CAQE,wB;EACpBC;GACEA,kHADFA;G;EAGAA,sF;;;CAEkB,iC,gBAAqBC,U;EACvCC;GACEA,uBADFA;G;EAGAA,8D;;;CAGoB,wB;EACpBC;GACEA,kHADFA;G;EAGAA,sF;;;CAGe,qC,gBAAyBF,U;EACxCG,4I;;;CAWiB,yB;EACjBC,uE;;;CASa,e;EACbC,sI;;;CAS0B,yB;;CAOV,gB;EAChBC,oG;;;CApEkB,+D;EAEpBR,sF;EAEAA,sF;EAEAA,6E;;;QANoB,O;EAAAS,4C;EAAAA,yC;EAAAA;",
 "sources":["DefaultLocalizedNamesBase.java"],
 "names":["org.gwtproject.i18n.client.DefaultLocalizedNamesBase.<synthetic: ctor_js>","org.gwtproject.i18n.client.DefaultLocalizedNamesBase.<init>","org.gwtproject.i18n.client.DefaultLocalizedNamesBase.getLikelyRegionCodes","regionCode","org.gwtproject.i18n.client.DefaultLocalizedNamesBase.getRegionName","org.gwtproject.i18n.client.DefaultLocalizedNamesBase.getSortedRegionCodes","org.gwtproject.i18n.client.DefaultLocalizedNamesBase.getRegionNameImpl","org.gwtproject.i18n.client.DefaultLocalizedNamesBase.loadLikelyRegionCodes","org.gwtproject.i18n.client.DefaultLocalizedNamesBase.loadNameMap","org.gwtproject.i18n.client.DefaultLocalizedNamesBase.needsNameMap","org.gwtproject.i18n.client.DefaultLocalizedNamesBase.<clinit>"]
 }

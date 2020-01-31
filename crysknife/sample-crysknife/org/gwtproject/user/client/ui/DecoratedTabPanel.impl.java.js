@@ -12,75 +12,48 @@ let SimplePanel = goog.forwardDeclare('org.gwtproject.user.client.ui.SimplePanel
 let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
 
 class DecoratedTabPanel extends TabPanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!DecoratedTabPanel}
-  * @public
-  */
+ /** @return {!DecoratedTabPanel} */
  static $create__() {
   DecoratedTabPanel.$clinit();
   let $instance = new DecoratedTabPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_DecoratedTabPanel__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_DecoratedTabPanel__() {
   this.$ctor__org_gwtproject_user_client_ui_TabPanel__();
   this.m_setStylePrimaryName__java_lang_String(DecoratedTabPanel.f_DEFAULT_STYLENAME__org_gwtproject_user_client_ui_DecoratedTabPanel_);
   this.m_getTabBar__().m_setStylePrimaryName__java_lang_String(DecoratedTabBar.f_STYLENAME_DEFAULT__org_gwtproject_user_client_ui_DecoratedTabBar);
  }
- /**
-  * @override
-  * @return {SimplePanel}
-  * @public
-  */
+ /** @override @return {SimplePanel} */
  m_createTabTextWrapper__() {
   return DecoratorPanel.$create__arrayOf_java_lang_String__int(DecoratedTabBar.f_TAB_ROW_STYLES__org_gwtproject_user_client_ui_DecoratedTabBar, 1);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DecoratedTabPanel.$clinit = () =>{};
   DecoratedTabPanel.$loadModules();
   TabPanel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DecoratedTabPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   DecoratedTabBar = goog.module.get('org.gwtproject.user.client.ui.DecoratedTabBar$impl');
@@ -90,7 +63,7 @@ class DecoratedTabPanel extends TabPanel {
 }
 $Util.$setClassMetadata(DecoratedTabPanel, 'org.gwtproject.user.client.ui.DecoratedTabPanel');
 
-/** @public {?string} @const */
+/**@const {?string}*/
 DecoratedTabPanel.f_DEFAULT_STYLENAME__org_gwtproject_user_client_ui_DecoratedTabPanel_ = "gwt-DecoratedTabPanel";
 
 exports = DecoratedTabPanel; 

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Main.impl.java.js",
-"lineCount":103,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;MAyBa,I;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,e;EAAAA,2B;EAAAA,yD;EAAAA,iB;;;;;CAAA,4C;EAAAC,iC;;;;;;CAGG,gB;EACRC,IAAeC,UAAfD,8B;EACAA,IAAmBE,WAAnBF,yF;EACAA,IAAcG,MAAdH,6B;EAEAA,qM;EACAA,qLAAyBI,KAAzBJ;GAAyBK,IAAAD,OAAAC,+DAAzBL;GAAkCK,iJAAlCL;K;EACAA,iJ;;;;;QAVK,O;EAAAM,uB;EAAAA,oB;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;ACzBbC,sB;IACIA,0B;IACAA,qB;AACJA;",
+"lineCount":85,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;MAyBa,I;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,e;EAAAA,2B;EAAAA,yD;EAAAA,iB;;;CAAA,4C;EAAAC,iC;;;CAGG,gB;EACRC,IAAeC,UAAfD,8B;EACAA,IAAmBE,WAAnBF,yF;EACAA,IAAcG,MAAdH,6B;EAEAA,oM;EACAA,qLAAyBI,KAAzBJ;GAAyBK,IAAAD,OAAAC,8DAAzBL;GAAkCK,iJAAlCL;K;EACAA,iJ;;;QAVK,O;EAAAM,uB;EAAAA,oB;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;;;;;;;;ACzBbC,sB;IACIA,0B;IACAA,qB;AACJA;",
 "sources":["Main.java","Main.native_js"],
 "names":["org.jboss.elemento.sample.j2cl.Main.<synthetic: ctor_js>","org.jboss.elemento.sample.j2cl.Main.<synthetic: ctor_create>","org.jboss.elemento.sample.j2cl.Main.<init>","org.jboss.elemento.sample.j2cl.Main.onModuleLoad","repository","application","footer","event","org.jboss.elemento.sample.j2cl.Main.<lambda in onModuleLoad>","org.jboss.elemento.sample.j2cl.Main.<clinit>","org.jboss.elemento.sample.j2cl.Main.<native>"]
 }

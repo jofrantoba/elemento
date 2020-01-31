@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasAllGestureHandlers.impl.java.js",
-"lineCount":20,
-"mappings":"A;;;;;;;;;;;;;MAyBiB,qB;;;;QAAA,O;EAAAA,wC;EAAAA;",
+"lineCount":18,
+"mappings":"A;;;;;;;;;;;;;MAyBiB,qB;;QAAA,O;EAAAA,wC;EAAAA;",
 "sources":["HasAllGestureHandlers.java"],
 "names":["org.gwtproject.event.dom.client.HasAllGestureHandlers.<clinit>"]
 }

@@ -14,12 +14,8 @@ let ObserverCallback = goog.forwardDeclare('org.jboss.elemento.ObserverCallback$
  * @interface
  */
 class Attachable {
- /**
-  * @param {HTMLElement} element
-  * @param {Attachable} attachable
-  * @public
-  */
- static m_register__elemental2_dom_HTMLElement__org_jboss_elemento_Attachable(element, attachable) {
+ 
+ static m_register__elemental2_dom_HTMLElement__org_jboss_elemento_Attachable(/** HTMLElement */ element, /** Attachable */ attachable) {
   Attachable.$clinit();
   if (!$Equality.$same(element, null)) {
    Elements.m_onAttach__elemental2_dom_HTMLElement__org_jboss_elemento_ObserverCallback(element, ObserverCallback.$adapt((/** MutationRecord */ arg0) =>{
@@ -30,75 +26,41 @@ class Attachable {
    }));
   }
  }
- /**
-  * @template E
-  * @param {IsElement<E>} element
-  * @param {Attachable} attachable
-  * @public
-  */
- static m_register__org_jboss_elemento_IsElement__org_jboss_elemento_Attachable(element, attachable) {
+ /** @template E */
+ static m_register__org_jboss_elemento_IsElement__org_jboss_elemento_Attachable(/** IsElement<E> */ element, /** Attachable */ attachable) {
   Attachable.$clinit();
   if (!$Equality.$same(element, null)) {
    Attachable.m_register__elemental2_dom_HTMLElement__org_jboss_elemento_Attachable(element.m_element__(), attachable);
   }
  }
- /**
-  * @abstract
-  * @param {MutationRecord} mutationRecord
-  * @public
-  */
- m_attach__elemental2_dom_MutationRecord(mutationRecord) {}
- /**
-  * @abstract
-  * @param {MutationRecord} mutationRecord
-  * @public
-  */
- m_detach__elemental2_dom_MutationRecord(mutationRecord) {}
- /**
-  * @param {?function(MutationRecord):void} fn
-  * @return {Attachable}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_attach__elemental2_dom_MutationRecord(/** MutationRecord */ mutationRecord) {}
+ /** @abstract */
+ m_detach__elemental2_dom_MutationRecord(/** MutationRecord */ mutationRecord) {}
+ /** @return {Attachable} */
+ static $adapt(/** ?function(MutationRecord):void */ fn) {
   Attachable.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @param {!Attachable} $thisArg
-  * @param {MutationRecord} mutationRecord
-  * @public
-  */
- static m_detach__$default__org_jboss_elemento_Attachable__elemental2_dom_MutationRecord($thisArg, mutationRecord) {
+ 
+ static m_detach__$default__org_jboss_elemento_Attachable__elemental2_dom_MutationRecord(/** !Attachable */ $thisArg, /** MutationRecord */ mutationRecord) {
   Attachable.$clinit();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Attachable.$clinit = () =>{};
   Attachable.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_jboss_elemento_Attachable = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_jboss_elemento_Attachable = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_jboss_elemento_Attachable;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $LambdaAdaptor = goog.module.get('org.jboss.elemento.Attachable.$LambdaAdaptor$impl');

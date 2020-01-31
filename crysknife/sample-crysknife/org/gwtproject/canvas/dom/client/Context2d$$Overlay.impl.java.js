@@ -14,122 +14,66 @@ let CanvasElement_$Overlay = goog.forwardDeclare('org.gwtproject.dom.client.Canv
 let ImageElement_$Overlay = goog.forwardDeclare('org.gwtproject.dom.client.ImageElement.$Overlay$impl');
 
 class Context2d_$Overlay {
- /**
-  * @param {!Object} $thisArg
-  * @param {number} x
-  * @param {number} y
-  * @param {number} radius
-  * @param {number} startAngle
-  * @param {number} endAngle
-  * @public
-  */
- static m_arc__$devirt__org_gwtproject_canvas_dom_client_Context2d__double__double__double__double__double($thisArg, x, y, radius, startAngle, endAngle) {
+ 
+ static m_arc__$devirt__org_gwtproject_canvas_dom_client_Context2d__double__double__double__double__double(/** !Object */ $thisArg, /** number */ x, /** number */ y, /** number */ radius, /** number */ startAngle, /** number */ endAngle) {
   Context2d_$Overlay.$clinit();
   $thisArg.arc(x, y, radius, startAngle, endAngle, false);
  }
- /**
-  * @param {!Object} $thisArg
-  * @param {Object} image
-  * @param {Repetition} repetition
-  * @return {CanvasPattern}
-  * @public
-  */
- static m_createPattern__$devirt__org_gwtproject_canvas_dom_client_Context2d__org_gwtproject_dom_client_CanvasElement__org_gwtproject_canvas_dom_client_Context2d_Repetition($thisArg, image, repetition) {
+ /** @return {CanvasPattern} */
+ static m_createPattern__$devirt__org_gwtproject_canvas_dom_client_Context2d__org_gwtproject_dom_client_CanvasElement__org_gwtproject_canvas_dom_client_Context2d_Repetition(/** !Object */ $thisArg, /** Object */ image, /** Repetition */ repetition) {
   Context2d_$Overlay.$clinit();
   return $thisArg.createPattern(image, repetition.m_getValue__());
  }
- /**
-  * @param {!Object} $thisArg
-  * @param {Object} image
-  * @param {Repetition} repetition
-  * @return {CanvasPattern}
-  * @public
-  */
- static m_createPattern__$devirt__org_gwtproject_canvas_dom_client_Context2d__org_gwtproject_dom_client_ImageElement__org_gwtproject_canvas_dom_client_Context2d_Repetition($thisArg, image, repetition) {
+ /** @return {CanvasPattern} */
+ static m_createPattern__$devirt__org_gwtproject_canvas_dom_client_Context2d__org_gwtproject_dom_client_ImageElement__org_gwtproject_canvas_dom_client_Context2d_Repetition(/** !Object */ $thisArg, /** Object */ image, /** Repetition */ repetition) {
   Context2d_$Overlay.$clinit();
   return $thisArg.createPattern(image, repetition.m_getValue__());
  }
- /**
-  * @param {!Object} $thisArg
-  * @param {?string} fillStyleColor
-  * @public
-  */
- static m_setFillStyle__$devirt__org_gwtproject_canvas_dom_client_Context2d__java_lang_String($thisArg, fillStyleColor) {
+ 
+ static m_setFillStyle__$devirt__org_gwtproject_canvas_dom_client_Context2d__java_lang_String(/** !Object */ $thisArg, /** ?string */ fillStyleColor) {
   Context2d_$Overlay.$clinit();
   $thisArg.fillStyle = $Overlay.m_make__java_lang_String(fillStyleColor);
  }
- /**
-  * @param {!Object} $thisArg
-  * @param {Composite} composite
-  * @public
-  */
- static m_setGlobalCompositeOperation__$devirt__org_gwtproject_canvas_dom_client_Context2d__org_gwtproject_canvas_dom_client_Context2d_Composite($thisArg, composite) {
+ 
+ static m_setGlobalCompositeOperation__$devirt__org_gwtproject_canvas_dom_client_Context2d__org_gwtproject_canvas_dom_client_Context2d_Composite(/** !Object */ $thisArg, /** Composite */ composite) {
   Context2d_$Overlay.$clinit();
   $thisArg.globalCompositeOperation = composite.m_getValue__();
  }
- /**
-  * @param {!Object} $thisArg
-  * @param {LineCap} lineCap
-  * @public
-  */
- static m_setLineCap__$devirt__org_gwtproject_canvas_dom_client_Context2d__org_gwtproject_canvas_dom_client_Context2d_LineCap($thisArg, lineCap) {
+ 
+ static m_setLineCap__$devirt__org_gwtproject_canvas_dom_client_Context2d__org_gwtproject_canvas_dom_client_Context2d_LineCap(/** !Object */ $thisArg, /** LineCap */ lineCap) {
   Context2d_$Overlay.$clinit();
   $thisArg.lineCap = lineCap.m_getValue__();
  }
- /**
-  * @param {!Object} $thisArg
-  * @param {LineJoin} lineJoin
-  * @public
-  */
- static m_setLineJoin__$devirt__org_gwtproject_canvas_dom_client_Context2d__org_gwtproject_canvas_dom_client_Context2d_LineJoin($thisArg, lineJoin) {
+ 
+ static m_setLineJoin__$devirt__org_gwtproject_canvas_dom_client_Context2d__org_gwtproject_canvas_dom_client_Context2d_LineJoin(/** !Object */ $thisArg, /** LineJoin */ lineJoin) {
   Context2d_$Overlay.$clinit();
   $thisArg.lineJoin = lineJoin.m_getValue__();
  }
- /**
-  * @param {!Object} $thisArg
-  * @param {?string} strokeStyleColor
-  * @public
-  */
- static m_setStrokeStyle__$devirt__org_gwtproject_canvas_dom_client_Context2d__java_lang_String($thisArg, strokeStyleColor) {
+ 
+ static m_setStrokeStyle__$devirt__org_gwtproject_canvas_dom_client_Context2d__java_lang_String(/** !Object */ $thisArg, /** ?string */ strokeStyleColor) {
   Context2d_$Overlay.$clinit();
   $thisArg.strokeStyle = $Overlay.m_make__java_lang_String(strokeStyleColor);
  }
- /**
-  * @param {!Object} $thisArg
-  * @param {TextAlign} align
-  * @public
-  */
- static m_setTextAlign__$devirt__org_gwtproject_canvas_dom_client_Context2d__org_gwtproject_canvas_dom_client_Context2d_TextAlign($thisArg, align) {
+ 
+ static m_setTextAlign__$devirt__org_gwtproject_canvas_dom_client_Context2d__org_gwtproject_canvas_dom_client_Context2d_TextAlign(/** !Object */ $thisArg, /** TextAlign */ align) {
   Context2d_$Overlay.$clinit();
   $thisArg.textAlign = align.m_getValue__();
  }
- /**
-  * @param {!Object} $thisArg
-  * @param {TextBaseline} baseline
-  * @public
-  */
- static m_setTextBaseline__$devirt__org_gwtproject_canvas_dom_client_Context2d__org_gwtproject_canvas_dom_client_Context2d_TextBaseline($thisArg, baseline) {
+ 
+ static m_setTextBaseline__$devirt__org_gwtproject_canvas_dom_client_Context2d__org_gwtproject_canvas_dom_client_Context2d_TextBaseline(/** !Object */ $thisArg, /** TextBaseline */ baseline) {
   Context2d_$Overlay.$clinit();
   $thisArg.textBaseline = baseline.m_getValue__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Context2d_$Overlay.$clinit = () =>{};
   Context2d_$Overlay.$loadModules();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Object;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('org.gwtproject.canvas.dom.client.CssColor.$Overlay$impl');
  }
@@ -137,7 +81,7 @@ class Context2d_$Overlay {
 }
 $Util.$setClassMetadata(Context2d_$Overlay, 'Object');
 
-/** @public {?string} @const */
+/**@const {?string}*/
 Context2d_$Overlay.f_CONTEXT_ID__org_gwtproject_canvas_dom_client_Context2d_$Overlay = "2d";
 
 exports = Context2d_$Overlay; 

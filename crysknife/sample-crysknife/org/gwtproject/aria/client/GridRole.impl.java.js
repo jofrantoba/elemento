@@ -12,96 +12,41 @@ let $Overlay = goog.forwardDeclare('org.gwtproject.dom.client.Element.$Overlay$i
  * @extends {RegionRole}
  */
 class GridRole {
- /**
-  * @abstract
-  * @param {Object} element
-  * @return {?string}
-  * @public
-  */
- m_getAriaLevelProperty__org_gwtproject_dom_client_Element(element) {}
- /**
-  * @abstract
-  * @param {Object} element
-  * @return {?string}
-  * @public
-  */
- m_getAriaMultiselectableProperty__org_gwtproject_dom_client_Element(element) {}
- /**
-  * @abstract
-  * @param {Object} element
-  * @return {?string}
-  * @public
-  */
- m_getAriaReadonlyProperty__org_gwtproject_dom_client_Element(element) {}
- /**
-  * @abstract
-  * @param {Object} element
-  * @public
-  */
- m_removeAriaLevelProperty__org_gwtproject_dom_client_Element(element) {}
- /**
-  * @abstract
-  * @param {Object} element
-  * @public
-  */
- m_removeAriaMultiselectableProperty__org_gwtproject_dom_client_Element(element) {}
- /**
-  * @abstract
-  * @param {Object} element
-  * @public
-  */
- m_removeAriaReadonlyProperty__org_gwtproject_dom_client_Element(element) {}
- /**
-  * @abstract
-  * @param {Object} element
-  * @param {number} value
-  * @public
-  */
- m_setAriaLevelProperty__org_gwtproject_dom_client_Element__int(element, value) {}
- /**
-  * @abstract
-  * @param {Object} element
-  * @param {boolean} value
-  * @public
-  */
- m_setAriaMultiselectableProperty__org_gwtproject_dom_client_Element__boolean(element, value) {}
- /**
-  * @abstract
-  * @param {Object} element
-  * @param {boolean} value
-  * @public
-  */
- m_setAriaReadonlyProperty__org_gwtproject_dom_client_Element__boolean(element, value) {}
- /**
-  * @public
-  */
+ /** @abstract @return {?string} */
+ m_getAriaLevelProperty__org_gwtproject_dom_client_Element(/** Object */ element) {}
+ /** @abstract @return {?string} */
+ m_getAriaMultiselectableProperty__org_gwtproject_dom_client_Element(/** Object */ element) {}
+ /** @abstract @return {?string} */
+ m_getAriaReadonlyProperty__org_gwtproject_dom_client_Element(/** Object */ element) {}
+ /** @abstract */
+ m_removeAriaLevelProperty__org_gwtproject_dom_client_Element(/** Object */ element) {}
+ /** @abstract */
+ m_removeAriaMultiselectableProperty__org_gwtproject_dom_client_Element(/** Object */ element) {}
+ /** @abstract */
+ m_removeAriaReadonlyProperty__org_gwtproject_dom_client_Element(/** Object */ element) {}
+ /** @abstract */
+ m_setAriaLevelProperty__org_gwtproject_dom_client_Element__int(/** Object */ element, /** number */ value) {}
+ /** @abstract */
+ m_setAriaMultiselectableProperty__org_gwtproject_dom_client_Element__boolean(/** Object */ element, /** boolean */ value) {}
+ /** @abstract */
+ m_setAriaReadonlyProperty__org_gwtproject_dom_client_Element__boolean(/** Object */ element, /** boolean */ value) {}
+ 
  static $clinit() {
   GridRole.$clinit = () =>{};
   GridRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  CompositeRole.$markImplementor(classConstructor);
-  RegionRole.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_GridRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  CompositeRole.$markImplementor(ctor);
+  RegionRole.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_GridRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_GridRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

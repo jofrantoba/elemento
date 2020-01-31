@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"JSON$$Overlay.impl.java.js",
-"lineCount":11,
-"mappings":"A;;;;MAyBa,Q;;;;QAAA,O;EAAAA,2B;EAAAA;",
+"lineCount":9,
+"mappings":"A;;;;MAyBa,Q;;QAAA,O;EAAAA,2B;EAAAA;",
 "sources":["JSON.java"],
 "names":["org.gwtproject.resources.client.JSON$$Overlay.<clinit>"]
 }

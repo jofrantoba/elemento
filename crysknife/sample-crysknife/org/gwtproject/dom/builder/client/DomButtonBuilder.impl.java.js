@@ -13,88 +13,52 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {ButtonBuilder}
   */
 class DomButtonBuilder extends DomElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @return {!DomButtonBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ /** @return {!DomButtonBuilder} */
+ static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   DomButtonBuilder.$clinit();
   let $instance = new DomButtonBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_client_DomButtonBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_client_DomButtonBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_client_DomButtonBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_client_DomElementBuilderBase__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
  }
- /**
-  * @override
-  * @param {?string} accessKey
-  * @return {ButtonBuilder}
-  * @public
-  */
- m_accessKey__java_lang_String(accessKey) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).accessKey = accessKey;
+ /** @override @return {ButtonBuilder} */
+ m_accessKey__java_lang_String(/** ?string */ accessKey) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).accessKey = accessKey;
   return this;
  }
- /**
-  * @override
-  * @return {ButtonBuilder}
-  * @public
-  */
+ /** @override @return {ButtonBuilder} */
  m_disabled__() {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).disabled = true;
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).disabled = true;
   return this;
  }
- /**
-  * @override
-  * @param {?string} name
-  * @return {ButtonBuilder}
-  * @public
-  */
- m_name__java_lang_String(name) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).name = name;
+ /** @override @return {ButtonBuilder} */
+ m_name__java_lang_String(/** ?string */ name) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).name = name;
   return this;
  }
- /**
-  * @override
-  * @param {?string} value
-  * @return {ButtonBuilder}
-  * @public
-  */
- m_value__java_lang_String(value) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).value = value;
+ /** @override @return {ButtonBuilder} */
+ m_value__java_lang_String(/** ?string */ value) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).value = value;
   return this;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomButtonBuilder.$clinit = () =>{};
   DomButtonBuilder.$loadModules();
   DomElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomButtonBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('org.gwtproject.dom.client.ButtonElement.$Overlay$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

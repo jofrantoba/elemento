@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DefaultSelectionEventManager$BlacklistEventTranslator.impl.java.js",
-"lineCount":109,
-"mappings":"A;;;;;;;;;;;;;;;;;MA8CsB,wB;;;;CAAA,W;EAAAA,Q;EAAAA;OACS,8FADTA,C;;;;;;;;QAQX,oB,CAAgCC,kB;EAAhCC,mC;EAAAA,+C;EAAAA,mI;EAAAA,iB;;;;;;CAAA,oG,CAAgCD,kB;EAAhCE,iC;EAAAA,mG;EACLA;GACEA;IAAAA,IAASC,CAATD,kBAAAA;IACEA,mDADFA;IADFA;G;;;;;CAUU,kB;EACVE,4G;;;;;;;;CAGa,oE,CAA0CC,K;EACvDC,a;;;;;;;CASa,0B,CAAwBC,K;EACrCC,mJ;;;;;;;CASU,oC,CAAyBD,K,EAAeE,a;EAClDC;GACEA,uIADFA;;GAGEA,0IAHFA;G;;;;;;;;CAOkB,sE,CAA4CL,K;EAC9DM,2P;;;;;CApDgB,2F;EAClBT,4J;;;;;QADkB,O;EAAAU,2C;EAAAA,wC;EAAAA;",
+"lineCount":75,
+"mappings":"A;;;;;;;;;;;;;;;;;MA8CsB,wB;;CAAA,W;EAAAA,Q;EAAAA;OACS,8FADTA,C;;;QAQX,oB,sBAAgCC,kB;EAAhCC,mC;EAAAA,+C;EAAAA,mI;EAAAA,iB;;;CAAA,oG,sBAAgCD,kB;EAAhCE,iC;EAAAA,mG;EACLA;GACEA;IAAAA,IAASC,CAATD,kBAAAA;IACEA,mDADFA;IADFA;G;;;CAUU,kB;EACVE,4G;;;CAGa,oE,4BAA0CC,K;EACvDC,a;;;CASa,0B,eAAwBC,K;EACrCC,mJ;;;CASU,oC,eAAyBD,K,iBAAeE,a;EAClDC;GACEA,uIADFA;;GAGEA,0IAHFA;G;;;CAOkB,sE,4BAA4CL,K;EAC9DM,2P;;;CApDgB,2F;EAClBT,2J;;;QADkB,O;EAAAU,2C;EAAAA,wC;EAAAA;",
 "sources":["DefaultSelectionEventManager.java"],
 "names":["org.gwtproject.view.client.DefaultSelectionEventManager$BlacklistEventTranslator.<synthetic: ctor_js>","blacklistedColumns","org.gwtproject.view.client.DefaultSelectionEventManager$BlacklistEventTranslator.<synthetic: ctor_create>","org.gwtproject.view.client.DefaultSelectionEventManager$BlacklistEventTranslator.<init>","i","org.gwtproject.view.client.DefaultSelectionEventManager$BlacklistEventTranslator.clearBlacklist","event","org.gwtproject.view.client.DefaultSelectionEventManager$BlacklistEventTranslator.clearCurrentSelection","index","org.gwtproject.view.client.DefaultSelectionEventManager$BlacklistEventTranslator.isColumnBlacklisted","isBlacklisted","org.gwtproject.view.client.DefaultSelectionEventManager$BlacklistEventTranslator.setColumnBlacklisted","org.gwtproject.view.client.DefaultSelectionEventManager$BlacklistEventTranslator.translateSelectionEvent","org.gwtproject.view.client.DefaultSelectionEventManager$BlacklistEventTranslator.<clinit>"]
 }

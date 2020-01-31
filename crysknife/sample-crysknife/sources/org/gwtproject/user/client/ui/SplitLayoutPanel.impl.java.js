@@ -22,50 +22,36 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class SplitLayoutPanel extends DockLayoutPanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {number} */
+  /**@type {number}*/
   this.f_splitterSize__org_gwtproject_user_client_ui_SplitLayoutPanel_ = 0;
  }
- /**
-  * Factory method corresponding to constructor 'SplitLayoutPanel()'.
-  * @return {!SplitLayoutPanel}
-  * @public
-  */
+ //Factory method corresponding to constructor 'SplitLayoutPanel()'.
+ /** @return {!SplitLayoutPanel} */
  static $create__() {
   SplitLayoutPanel.$clinit();
   let $instance = new SplitLayoutPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_SplitLayoutPanel__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'SplitLayoutPanel()'.
-  * @public
-  */
+ //Initialization from constructor 'SplitLayoutPanel()'.
+ 
  $ctor__org_gwtproject_user_client_ui_SplitLayoutPanel__() {
   this.$ctor__org_gwtproject_user_client_ui_SplitLayoutPanel__int(SplitLayoutPanel.f_DEFAULT_SPLITTER_SIZE__org_gwtproject_user_client_ui_SplitLayoutPanel_);
  }
- /**
-  * Factory method corresponding to constructor 'SplitLayoutPanel(int)'.
-  * @param {number} splitterSize
-  * @return {!SplitLayoutPanel}
-  * @public
-  */
- static $create__int(splitterSize) {
+ //Factory method corresponding to constructor 'SplitLayoutPanel(int)'.
+ /** @return {!SplitLayoutPanel} */
+ static $create__int(/** number */ splitterSize) {
   SplitLayoutPanel.$clinit();
   let $instance = new SplitLayoutPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_SplitLayoutPanel__int(splitterSize);
   return $instance;
  }
- /**
-  * Initialization from constructor 'SplitLayoutPanel(int)'.
-  * @param {number} splitterSize
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_SplitLayoutPanel__int(splitterSize) {
+ //Initialization from constructor 'SplitLayoutPanel(int)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_SplitLayoutPanel__int(/** number */ splitterSize) {
   this.$ctor__org_gwtproject_user_client_ui_DockLayoutPanel__org_gwtproject_dom_style_shared_Unit(Unit.f_PX__org_gwtproject_dom_style_shared_Unit);
   this.f_splitterSize__org_gwtproject_user_client_ui_SplitLayoutPanel_ = splitterSize;
   this.m_setStyleName__java_lang_String("gwt-SplitLayoutPanel");
@@ -81,34 +67,19 @@ class SplitLayoutPanel extends DockLayoutPanel {
    Style_$Overlay.m_setOpacity__$devirt__org_gwtproject_dom_client_Style__double(SplitLayoutPanel.$f_glassElem__org_gwtproject_user_client_ui_SplitLayoutPanel_.style, 0.0);
   }
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getSplitterSize__() {
   return this.f_splitterSize__org_gwtproject_user_client_ui_SplitLayoutPanel_;
  }
- /**
-  * @override
-  * @param {Widget} child
-  * @param {Direction} direction
-  * @param {number} size
-  * @param {Widget} before
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_DockLayoutPanel_Direction__double__org_gwtproject_user_client_ui_Widget(child, direction, size, before) {
+ /** @override */
+ m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_DockLayoutPanel_Direction__double__org_gwtproject_user_client_ui_Widget(/** Widget */ child, /** Direction */ direction, /** number */ size, /** Widget */ before) {
   super.m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_DockLayoutPanel_Direction__double__org_gwtproject_user_client_ui_Widget(child, direction, size, before);
   if (!$Equality.$same(direction, Direction.f_CENTER__org_gwtproject_user_client_ui_DockLayoutPanel_Direction)) {
    this.m_insertSplitter__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget_$p_org_gwtproject_user_client_ui_SplitLayoutPanel(child, before);
   }
  }
- /**
-  * @override
-  * @param {Widget} child
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_Widget(child) {
+ /** @override @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_Widget(/** Widget */ child) {
   $Asserts.$assertWithMessage(!Splitter.$isInstance(child), "Splitters may not be directly removed");
   let idx = this.m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(child);
   if (super.m_remove__org_gwtproject_user_client_ui_Widget(child)) {
@@ -119,77 +90,52 @@ class SplitLayoutPanel extends DockLayoutPanel {
   }
   return false;
  }
- /**
-  * @override
-  * @param {Widget} widget
-  * @param {boolean} hidden
-  * @public
-  */
- m_setWidgetHidden__org_gwtproject_user_client_ui_Widget__boolean(widget, hidden) {
+ /** @override */
+ m_setWidgetHidden__org_gwtproject_user_client_ui_Widget__boolean(/** Widget */ widget, /** boolean */ hidden) {
   super.m_setWidgetHidden__org_gwtproject_user_client_ui_Widget__boolean(widget, hidden);
   let splitter = this.m_getAssociatedSplitter__org_gwtproject_user_client_ui_Widget_$p_org_gwtproject_user_client_ui_SplitLayoutPanel(widget);
   if (!$Equality.$same(splitter, null)) {
    super.m_setWidgetHidden__org_gwtproject_user_client_ui_Widget__boolean(splitter, hidden);
   }
  }
- /**
-  * @param {Widget} child
-  * @param {number} minSize
-  * @public
-  */
- m_setWidgetMinSize__org_gwtproject_user_client_ui_Widget__int(child, minSize) {
+ 
+ m_setWidgetMinSize__org_gwtproject_user_client_ui_Widget__int(/** Widget */ child, /** number */ minSize) {
   this.m_assertIsChild__org_gwtproject_user_client_ui_Widget_$pp_org_gwtproject_user_client_ui(child);
   let splitter = this.m_getAssociatedSplitter__org_gwtproject_user_client_ui_Widget_$p_org_gwtproject_user_client_ui_SplitLayoutPanel(child);
   if (!$Equality.$same(splitter, null)) {
    splitter.m_setMinSize__int(minSize);
   }
  }
- /**
-  * @param {Widget} child
-  * @param {number} snapClosedSize
-  * @public
-  */
- m_setWidgetSnapClosedSize__org_gwtproject_user_client_ui_Widget__int(child, snapClosedSize) {
+ 
+ m_setWidgetSnapClosedSize__org_gwtproject_user_client_ui_Widget__int(/** Widget */ child, /** number */ snapClosedSize) {
   this.m_assertIsChild__org_gwtproject_user_client_ui_Widget_$pp_org_gwtproject_user_client_ui(child);
   let splitter = this.m_getAssociatedSplitter__org_gwtproject_user_client_ui_Widget_$p_org_gwtproject_user_client_ui_SplitLayoutPanel(child);
   if (!$Equality.$same(splitter, null)) {
    splitter.m_setSnapClosedSize__int(snapClosedSize);
   }
  }
- /**
-  * @param {Widget} child
-  * @param {boolean} allowed
-  * @public
-  */
- m_setWidgetToggleDisplayAllowed__org_gwtproject_user_client_ui_Widget__boolean(child, allowed) {
+ 
+ m_setWidgetToggleDisplayAllowed__org_gwtproject_user_client_ui_Widget__boolean(/** Widget */ child, /** boolean */ allowed) {
   this.m_assertIsChild__org_gwtproject_user_client_ui_Widget_$pp_org_gwtproject_user_client_ui(child);
   let splitter = this.m_getAssociatedSplitter__org_gwtproject_user_client_ui_Widget_$p_org_gwtproject_user_client_ui_SplitLayoutPanel(child);
   if (!$Equality.$same(splitter, null)) {
    splitter.m_setToggleDisplayAllowed__boolean(allowed);
   }
  }
- /**
-  * @param {Widget} child
-  * @return {Splitter}
-  * @public
-  */
- m_getAssociatedSplitter__org_gwtproject_user_client_ui_Widget_$p_org_gwtproject_user_client_ui_SplitLayoutPanel(child) {
+ /** @return {Splitter} */
+ m_getAssociatedSplitter__org_gwtproject_user_client_ui_Widget_$p_org_gwtproject_user_client_ui_SplitLayoutPanel(/** Widget */ child) {
   let idx = this.m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(child);
   if (idx > -1 && idx < this.m_getWidgetCount__() - 1) {
    let splitter = this.m_getWidget__int(idx + 1);
    $Asserts.$assertWithMessage(Splitter.$isInstance(splitter), "Expected child widget to be splitter");
-   return /**@type {Splitter} */ ($Casts.$to(splitter, Splitter));
+   return /**@type {Splitter}*/ ($Casts.$to(splitter, Splitter));
   }
   return null;
  }
- /**
-  * @param {Widget} widget
-  * @param {Widget} before
-  * @public
-  */
- m_insertSplitter__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget_$p_org_gwtproject_user_client_ui_SplitLayoutPanel(widget, before) {
+ 
+ m_insertSplitter__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget_$p_org_gwtproject_user_client_ui_SplitLayoutPanel(/** Widget */ widget, /** Widget */ before) {
   $Asserts.$assertWithMessage(this.m_getChildren__().m_size__() > 0, "Can't add a splitter before any children");
-  let layout = /**@type {LayoutData} */ ($Casts.$to(widget.m_getLayoutData__(), LayoutData));
+  let layout = /**@type {LayoutData}*/ ($Casts.$to(widget.m_getLayoutData__(), LayoutData));
   let splitter = null;
   switch (this.m_getResolvedDirection__org_gwtproject_user_client_ui_DockLayoutPanel_Direction(layout.f_direction__org_gwtproject_user_client_ui_DockLayoutPanel_LayoutData).ordinal()) {
    case Direction.$ordinal$f_WEST__org_gwtproject_user_client_ui_DockLayoutPanel_Direction: 
@@ -209,58 +155,36 @@ class SplitLayoutPanel extends DockLayoutPanel {
   }
   super.m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_DockLayoutPanel_Direction__double__org_gwtproject_user_client_ui_Widget(splitter, layout.f_direction__org_gwtproject_user_client_ui_DockLayoutPanel_LayoutData, this.f_splitterSize__org_gwtproject_user_client_ui_SplitLayoutPanel_, before);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  static get f_glassElem__org_gwtproject_user_client_ui_SplitLayoutPanel_() {
   return (SplitLayoutPanel.$clinit(), SplitLayoutPanel.$f_glassElem__org_gwtproject_user_client_ui_SplitLayoutPanel_);
  }
- /**
-  * @param {Object} value
-  * @public
-  */
- static set f_glassElem__org_gwtproject_user_client_ui_SplitLayoutPanel_(value) {
+ 
+ static set f_glassElem__org_gwtproject_user_client_ui_SplitLayoutPanel_(/** Object */ value) {
   (SplitLayoutPanel.$clinit(), SplitLayoutPanel.$f_glassElem__org_gwtproject_user_client_ui_SplitLayoutPanel_ = value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SplitLayoutPanel.$clinit = () =>{};
   SplitLayoutPanel.$loadModules();
   DockLayoutPanel.$clinit();
   SplitLayoutPanel.$f_glassElem__org_gwtproject_user_client_ui_SplitLayoutPanel_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SplitLayoutPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -280,11 +204,11 @@ class SplitLayoutPanel extends DockLayoutPanel {
 }
 $Util.$setClassMetadata(SplitLayoutPanel, 'org.gwtproject.user.client.ui.SplitLayoutPanel');
 
-/** @public {number} @const */
+/**@const {number}*/
 SplitLayoutPanel.f_DEFAULT_SPLITTER_SIZE__org_gwtproject_user_client_ui_SplitLayoutPanel_ = 8;
-/** @public {number} @const */
+/**@const {number}*/
 SplitLayoutPanel.f_DOUBLE_CLICK_TIMEOUT__org_gwtproject_user_client_ui_SplitLayoutPanel_ = 500;
-/** @private {Object} */
+/**@private {Object}*/
 SplitLayoutPanel.$f_glassElem__org_gwtproject_user_client_ui_SplitLayoutPanel_;
 
 exports = SplitLayoutPanel; 

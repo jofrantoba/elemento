@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Constants$DefaultStringValue.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;MAwUoB,kB;;;;;;CAChB,S;;;;QADgB,O;EAAAA,qC;EAAAA;",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MAwUoB,kB;;CAChB,S;;QADgB,O;EAAAA,qC;EAAAA;",
 "sources":["Constants.java"],
 "names":["org.gwtproject.i18n.client.Constants$DefaultStringValue.<clinit>"]
 }

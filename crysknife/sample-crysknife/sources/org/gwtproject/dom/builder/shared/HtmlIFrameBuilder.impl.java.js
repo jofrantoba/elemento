@@ -16,146 +16,76 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {IFrameBuilder}
   */
 class HtmlIFrameBuilder extends HtmlElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @return {!HtmlIFrameBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ /** @return {!HtmlIFrameBuilder} */
+ static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   HtmlIFrameBuilder.$clinit();
   let $instance = new HtmlIFrameBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_shared_HtmlIFrameBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_shared_HtmlIFrameBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_shared_HtmlIFrameBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_shared_HtmlElementBuilderBase__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate);
  }
- /**
-  * @override
-  * @param {number} frameBorder
-  * @return {IFrameBuilder}
-  * @public
-  */
- m_frameBorder__int(frameBorder) {
-  return /**@type {IFrameBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__int_$pp_org_gwtproject_dom_builder_shared("frameBorder", frameBorder), IFrameBuilder));
+ /** @override @return {IFrameBuilder} */
+ m_frameBorder__int(/** number */ frameBorder) {
+  return /**@type {IFrameBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__int_$pp_org_gwtproject_dom_builder_shared("frameBorder", frameBorder), IFrameBuilder));
  }
- /**
-  * @override
-  * @param {SafeHtml} html
-  * @return {HtmlIFrameBuilder}
-  * @public
-  */
- m_html__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ /** @override @return {HtmlIFrameBuilder} */
+ m_html__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__());
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isChildElementSupported__() {
   return false;
  }
- /**
-  * @override
-  * @param {number} marginHeight
-  * @return {IFrameBuilder}
-  * @public
-  */
- m_marginHeight__int(marginHeight) {
-  return /**@type {IFrameBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__int_$pp_org_gwtproject_dom_builder_shared("marginHeight", marginHeight), IFrameBuilder));
+ /** @override @return {IFrameBuilder} */
+ m_marginHeight__int(/** number */ marginHeight) {
+  return /**@type {IFrameBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__int_$pp_org_gwtproject_dom_builder_shared("marginHeight", marginHeight), IFrameBuilder));
  }
- /**
-  * @override
-  * @param {number} marginWidth
-  * @return {IFrameBuilder}
-  * @public
-  */
- m_marginWidth__int(marginWidth) {
-  return /**@type {IFrameBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__int_$pp_org_gwtproject_dom_builder_shared("marginWidth", marginWidth), IFrameBuilder));
+ /** @override @return {IFrameBuilder} */
+ m_marginWidth__int(/** number */ marginWidth) {
+  return /**@type {IFrameBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__int_$pp_org_gwtproject_dom_builder_shared("marginWidth", marginWidth), IFrameBuilder));
  }
- /**
-  * @override
-  * @param {?string} name
-  * @return {IFrameBuilder}
-  * @public
-  */
- m_name__java_lang_String(name) {
-  return /**@type {IFrameBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("name", name), IFrameBuilder));
+ /** @override @return {IFrameBuilder} */
+ m_name__java_lang_String(/** ?string */ name) {
+  return /**@type {IFrameBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("name", name), IFrameBuilder));
  }
- /**
-  * @override
-  * @return {IFrameBuilder}
-  * @public
-  */
+ /** @override @return {IFrameBuilder} */
  m_noResize__() {
-  return /**@type {IFrameBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("noresize", "noresize"), IFrameBuilder));
+  return /**@type {IFrameBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("noresize", "noresize"), IFrameBuilder));
  }
- /**
-  * @override
-  * @param {?string} scrolling
-  * @return {IFrameBuilder}
-  * @public
-  */
- m_scrolling__java_lang_String(scrolling) {
-  return /**@type {IFrameBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("scrolling", scrolling), IFrameBuilder));
+ /** @override @return {IFrameBuilder} */
+ m_scrolling__java_lang_String(/** ?string */ scrolling) {
+  return /**@type {IFrameBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("scrolling", scrolling), IFrameBuilder));
  }
- /**
-  * @override
-  * @param {SafeUri} src
-  * @return {IFrameBuilder}
-  * @public
-  */
- m_src__org_gwtproject_safehtml_shared_SafeUri(src) {
+ /** @override @return {IFrameBuilder} */
+ m_src__org_gwtproject_safehtml_shared_SafeUri(/** SafeUri */ src) {
   return this.m_src__java_lang_String(src.m_asString__());
  }
- /**
-  * @override
-  * @param {?string} src
-  * @return {IFrameBuilder}
-  * @public
-  */
- m_src__java_lang_String(src) {
-  return /**@type {IFrameBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("src", src), IFrameBuilder));
+ /** @override @return {IFrameBuilder} */
+ m_src__java_lang_String(/** ?string */ src) {
+  return /**@type {IFrameBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("src", src), IFrameBuilder));
  }
- /**
-  * @override
-  * @param {?string} text
-  * @return {HtmlIFrameBuilder}
-  * @public
-  */
- m_text__java_lang_String(text) {
+ /** @override @return {HtmlIFrameBuilder} */
+ m_text__java_lang_String(/** ?string */ text) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HtmlIFrameBuilder.$clinit = () =>{};
   HtmlIFrameBuilder.$loadModules();
   HtmlElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HtmlIFrameBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   UnsupportedOperationException = goog.module.get('java.lang.UnsupportedOperationException$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

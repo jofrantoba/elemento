@@ -8,53 +8,35 @@ const KeyMethod = goog.require('org.gwtproject.editor.client.impl.DelegateMap.Ke
  * @implements {KeyMethod}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(*):*} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(*):* */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(*):*} */
+  /**@type {?function(*):*}*/
   this.f_$$fn__org_gwtproject_editor_client_impl_DelegateMap_KeyMethod_$LambdaAdaptor;
   this.$ctor__org_gwtproject_editor_client_impl_DelegateMap_KeyMethod_$LambdaAdaptor__org_gwtproject_editor_client_impl_DelegateMap_KeyMethod_$JsFunction(fn);
  }
- /**
-  * @param {?function(*):*} fn
-  * @public
-  */
- $ctor__org_gwtproject_editor_client_impl_DelegateMap_KeyMethod_$LambdaAdaptor__org_gwtproject_editor_client_impl_DelegateMap_KeyMethod_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_editor_client_impl_DelegateMap_KeyMethod_$LambdaAdaptor__org_gwtproject_editor_client_impl_DelegateMap_KeyMethod_$JsFunction(/** ?function(*):* */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_editor_client_impl_DelegateMap_KeyMethod_$LambdaAdaptor = fn;
  }
- /**
-  * @param {*} arg0
-  * @return {*}
-  * @public
-  */
- m_key__java_lang_Object(arg0) {
+ /** @return {*} */
+ m_key__java_lang_Object(/** * */ arg0) {
   let /** ?function(*):* */ $function;
   return ($function = this.f_$$fn__org_gwtproject_editor_client_impl_DelegateMap_KeyMethod_$LambdaAdaptor, $function(arg0));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

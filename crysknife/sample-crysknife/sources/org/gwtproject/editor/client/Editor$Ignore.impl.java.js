@@ -11,44 +11,27 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.editor.client.Editor.Ig
  * @extends {Annotation}
  */
 class Ignore {
- /**
-  * @param {?function():Class<?>} fn
-  * @return {Ignore}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {Ignore} */
+ static $adapt(/** ?function():Class<?> */ fn) {
   Ignore.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Ignore.$clinit = () =>{};
   Ignore.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_editor_client_Editor_Ignore = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_editor_client_Editor_Ignore = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_editor_client_Editor_Ignore;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.editor.client.Editor.Ignore.$LambdaAdaptor$impl');
  }

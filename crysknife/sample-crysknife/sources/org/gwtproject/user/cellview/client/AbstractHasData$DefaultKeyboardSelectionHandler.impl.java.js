@@ -20,47 +20,30 @@ let CellPreviewEvent = goog.forwardDeclare('org.gwtproject.view.client.CellPrevi
  * @implements {Handler<T>}
   */
 class DefaultKeyboardSelectionHandler extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {AbstractHasData<T>} */
+  /**@type {AbstractHasData<T>}*/
   this.f_display__org_gwtproject_user_cellview_client_AbstractHasData_DefaultKeyboardSelectionHandler_;
  }
- /**
-  * @template T
-  * @param {AbstractHasData<T>} display
-  * @return {!DefaultKeyboardSelectionHandler<T>}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_AbstractHasData(display) {
+ /** @template T @return {!DefaultKeyboardSelectionHandler<T>} */
+ static $create__org_gwtproject_user_cellview_client_AbstractHasData(/** AbstractHasData<T> */ display) {
   DefaultKeyboardSelectionHandler.$clinit();
   let $instance = new DefaultKeyboardSelectionHandler();
   $instance.$ctor__org_gwtproject_user_cellview_client_AbstractHasData_DefaultKeyboardSelectionHandler__org_gwtproject_user_cellview_client_AbstractHasData(display);
   return $instance;
  }
- /**
-  * @param {AbstractHasData<T>} display
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_AbstractHasData_DefaultKeyboardSelectionHandler__org_gwtproject_user_cellview_client_AbstractHasData(display) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_AbstractHasData_DefaultKeyboardSelectionHandler__org_gwtproject_user_cellview_client_AbstractHasData(/** AbstractHasData<T> */ display) {
   this.$ctor__java_lang_Object__();
   this.f_display__org_gwtproject_user_cellview_client_AbstractHasData_DefaultKeyboardSelectionHandler_ = display;
  }
- /**
-  * @return {AbstractHasData<T>}
-  * @public
-  */
+ /** @return {AbstractHasData<T>} */
  m_getDisplay__() {
   return this.f_display__org_gwtproject_user_cellview_client_AbstractHasData_DefaultKeyboardSelectionHandler_;
  }
- /**
-  * @override
-  * @param {CellPreviewEvent<T>} event
-  * @public
-  */
- m_onCellPreview__org_gwtproject_view_client_CellPreviewEvent(event) {
+ /** @override */
+ m_onCellPreview__org_gwtproject_view_client_CellPreviewEvent(/** CellPreviewEvent<T> */ event) {
   let nativeEvent = event.m_getNativeEvent__();
   let eventType = $Overlay.m_getType__$devirt__org_gwtproject_dom_client_NativeEvent(event.m_getNativeEvent__());
   if (j_l_String.m_equals__java_lang_String__java_lang_Object(BrowserEvents.f_KEYDOWN__org_gwtproject_dom_client_BrowserEvents, eventType) && !event.m_isCellEditing__()) {
@@ -107,29 +90,20 @@ class DefaultKeyboardSelectionHandler extends j_l_Object {
    }
   }
  }
- /**
-  * @public
-  */
+ 
  m_end___$pp_org_gwtproject_user_cellview_client() {
   this.m_setKeyboardSelectedRow__int_$pp_org_gwtproject_user_cellview_client(this.f_display__org_gwtproject_user_cellview_client_AbstractHasData_DefaultKeyboardSelectionHandler_.m_getRowCount__() - 1);
  }
- /**
-  * @param {CellPreviewEvent<?>} event
-  * @public
-  */
- m_handledEvent__org_gwtproject_view_client_CellPreviewEvent_$pp_org_gwtproject_user_cellview_client(event) {
+ 
+ m_handledEvent__org_gwtproject_view_client_CellPreviewEvent_$pp_org_gwtproject_user_cellview_client(/** CellPreviewEvent<?> */ event) {
   event.m_setCanceled__boolean(true);
   $Overlay.m_preventDefault__$devirt__org_gwtproject_dom_client_NativeEvent(event.m_getNativeEvent__());
  }
- /**
-  * @public
-  */
+ 
  m_home___$pp_org_gwtproject_user_cellview_client() {
   this.m_setKeyboardSelectedRow__int_$pp_org_gwtproject_user_cellview_client(-this.f_display__org_gwtproject_user_cellview_client_AbstractHasData_DefaultKeyboardSelectionHandler_.m_getPageStart__());
  }
- /**
-  * @public
-  */
+ 
  m_nextPage___$pp_org_gwtproject_user_cellview_client() {
   let keyboardPagingPolicy = this.f_display__org_gwtproject_user_cellview_client_AbstractHasData_DefaultKeyboardSelectionHandler_.m_getKeyboardPagingPolicy__();
   if ($Equality.$same(KeyboardPagingPolicy.f_CHANGE_PAGE__org_gwtproject_user_cellview_client_HasKeyboardPagingPolicy_KeyboardPagingPolicy, keyboardPagingPolicy)) {
@@ -138,15 +112,11 @@ class DefaultKeyboardSelectionHandler extends j_l_Object {
    this.m_setKeyboardSelectedRow__int_$pp_org_gwtproject_user_cellview_client(this.f_display__org_gwtproject_user_cellview_client_AbstractHasData_DefaultKeyboardSelectionHandler_.m_getKeyboardSelectedRow__() + DefaultKeyboardSelectionHandler.f_PAGE_INCREMENT__org_gwtproject_user_cellview_client_AbstractHasData_DefaultKeyboardSelectionHandler_);
   }
  }
- /**
-  * @public
-  */
+ 
  m_nextRow___$pp_org_gwtproject_user_cellview_client() {
   this.m_setKeyboardSelectedRow__int_$pp_org_gwtproject_user_cellview_client(this.f_display__org_gwtproject_user_cellview_client_AbstractHasData_DefaultKeyboardSelectionHandler_.m_getKeyboardSelectedRow__() + 1);
  }
- /**
-  * @public
-  */
+ 
  m_prevPage___$pp_org_gwtproject_user_cellview_client() {
   let keyboardPagingPolicy = this.f_display__org_gwtproject_user_cellview_client_AbstractHasData_DefaultKeyboardSelectionHandler_.m_getKeyboardPagingPolicy__();
   if ($Equality.$same(KeyboardPagingPolicy.f_CHANGE_PAGE__org_gwtproject_user_cellview_client_HasKeyboardPagingPolicy_KeyboardPagingPolicy, keyboardPagingPolicy)) {
@@ -155,38 +125,25 @@ class DefaultKeyboardSelectionHandler extends j_l_Object {
    this.m_setKeyboardSelectedRow__int_$pp_org_gwtproject_user_cellview_client(this.f_display__org_gwtproject_user_cellview_client_AbstractHasData_DefaultKeyboardSelectionHandler_.m_getKeyboardSelectedRow__() - DefaultKeyboardSelectionHandler.f_PAGE_INCREMENT__org_gwtproject_user_cellview_client_AbstractHasData_DefaultKeyboardSelectionHandler_);
   }
  }
- /**
-  * @public
-  */
+ 
  m_prevRow___$pp_org_gwtproject_user_cellview_client() {
   this.m_setKeyboardSelectedRow__int_$pp_org_gwtproject_user_cellview_client(this.f_display__org_gwtproject_user_cellview_client_AbstractHasData_DefaultKeyboardSelectionHandler_.m_getKeyboardSelectedRow__() - 1);
  }
- /**
-  * @param {number} row
-  * @public
-  */
- m_setKeyboardSelectedRow__int_$pp_org_gwtproject_user_cellview_client(row) {
+ 
+ m_setKeyboardSelectedRow__int_$pp_org_gwtproject_user_cellview_client(/** number */ row) {
   this.f_display__org_gwtproject_user_cellview_client_AbstractHasData_DefaultKeyboardSelectionHandler_.m_setKeyboardSelectedRow__int__boolean(row, true);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DefaultKeyboardSelectionHandler.$clinit = () =>{};
   DefaultKeyboardSelectionHandler.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DefaultKeyboardSelectionHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -203,7 +160,7 @@ $Util.$setClassMetadata(DefaultKeyboardSelectionHandler, 'org.gwtproject.user.ce
 
 Handler.$markImplementor(DefaultKeyboardSelectionHandler);
 
-/** @public {number} @const */
+/**@const {number}*/
 DefaultKeyboardSelectionHandler.f_PAGE_INCREMENT__org_gwtproject_user_cellview_client_AbstractHasData_DefaultKeyboardSelectionHandler_ = 30;
 
 exports = DefaultKeyboardSelectionHandler; 

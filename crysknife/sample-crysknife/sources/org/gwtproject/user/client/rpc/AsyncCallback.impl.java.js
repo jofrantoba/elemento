@@ -9,46 +9,25 @@ let Throwable = goog.forwardDeclare('java.lang.Throwable$impl');
  * @template T
  */
 class AsyncCallback {
- /**
-  * @abstract
-  * @param {Throwable} caught
-  * @public
-  */
- m_onFailure__java_lang_Throwable(caught) {}
- /**
-  * @abstract
-  * @param {T} result
-  * @public
-  */
- m_onSuccess__java_lang_Object(result) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_onFailure__java_lang_Throwable(/** Throwable */ caught) {}
+ /** @abstract */
+ m_onSuccess__java_lang_Object(/** T */ result) {}
+ 
  static $clinit() {
   AsyncCallback.$clinit = () =>{};
   AsyncCallback.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_rpc_AsyncCallback = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_client_rpc_AsyncCallback = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_rpc_AsyncCallback;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

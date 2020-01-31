@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SafeImageCell$Template.impl.java.js",
-"lineCount":80,
-"mappings":"A;;;;;;;;;;;;;;MAoCY,Q;;;;;;;CAIC,6C,CAAYA,G;;;;;;QAJb,M;EAAAC,mB;EAAAA,8B;;;;;;QAER,iE;EAAAC,qG;;;;;QAFQ,O;EAAAC,2B;EAAAA,wB;EAERA,kH;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFQ;;",
+"lineCount":55,
+"mappings":"A;;;;;;;;;;;;;;MAoCY,Q;;CAIC,6C,gBAAYA,G;;QAJb,M;EAAAC,mB;EAAAA,8B;;;QAER,iE;EAAAC,qG;;;QAFQ,O;EAAAC,2B;EAAAA,wB;EAERA,kH;;;;;;;;;;;;;;;;;;;;;;;AAFQ;;",
 "sources":["SafeImageCell.java"],
 "names":["url","org.gwtproject.cell.client.SafeImageCell$Template.<synthetic: adapt_lambda>","org.gwtproject.cell.client.SafeImageCell$Template.<synthetic: getter>","org.gwtproject.cell.client.SafeImageCell$Template.<clinit>"]
 }

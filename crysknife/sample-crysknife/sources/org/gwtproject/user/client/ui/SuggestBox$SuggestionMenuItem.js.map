@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SuggestBox$SuggestionMenuItem.impl.java.js",
-"lineCount":82,
-"mappings":"A;;;;;;;;MA8kBuB,kB;;;;CAAA,W;EAAAA,Q;EAAAA;OAIA,0EAJAA,C;;;;;;;;QAMZ,wE,CAA8BC,U,EAAoBC,M;EAAlDC,6B;EAAAA,yC;EAAAA,kK;EAAAA,iB;;;;;;;CAAA,mI,CAA8BF,U,EAAoBC,M;EACvDE,yH;EAKAA,0J;EACAA,4I;EACAA,yF;;;;;;CAGgB,iB;EAChBC,uF;;;;;;CAGU,uE,CAAyBJ,U;EACnCK,6F;;;;;QAtBiB,O;EAAAC,qC;EAAAA,kC;EAAAA,mB;;;;;;;;;;;;;;;;;;;;AAEnB;mBAA4B,iFAA5B;",
+"lineCount":57,
+"mappings":"A;;;;;;;;MA8kBuB,kB;;CAAA,W;EAAAA,Q;EAAAA;OAIA,0EAJAA,C;;;QAMZ,wE,mBAA8BC,U,iBAAoBC,M;EAAlDC,6B;EAAAA,yC;EAAAA,kK;EAAAA,iB;;;CAAA,mI,mBAA8BF,U,iBAAoBC,M;EACvDE,yH;EAKAA,0J;EACAA,4I;EACAA,yF;;;CAGgB,iB;EAChBC,uF;;;CAGU,uE,mBAAyBJ,U;EACnCK,6F;;;QAtBiB,O;EAAAC,qC;EAAAA,kC;EAAAA,mB;;;;;;;;;;;;;;AAEnB;mBAA4B,iFAA5B;",
 "sources":["SuggestBox.java"],
 "names":["org.gwtproject.user.client.ui.SuggestBox$SuggestionMenuItem.<synthetic: ctor_js>","suggestion","asHTML","org.gwtproject.user.client.ui.SuggestBox$SuggestionMenuItem.<synthetic: ctor_create>","org.gwtproject.user.client.ui.SuggestBox$SuggestionMenuItem.<init>","org.gwtproject.user.client.ui.SuggestBox$SuggestionMenuItem.getSuggestion","org.gwtproject.user.client.ui.SuggestBox$SuggestionMenuItem.setSuggestion","org.gwtproject.user.client.ui.SuggestBox$SuggestionMenuItem.<clinit>"]
 }

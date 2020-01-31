@@ -12,68 +12,45 @@ let DefaultMonthSelector = goog.forwardDeclare('org.gwtproject.user.datepicker.c
  * @implements {ChangeHandler}
   */
 class $2 extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {DefaultMonthSelector} */
+  /**@type {DefaultMonthSelector}*/
   this.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultMonthSelector_2;
-  /** @public {ListBox} */
+  /**@type {ListBox}*/
   this.$c_monthListBox;
  }
- /**
-  * @param {DefaultMonthSelector} $outer_this
-  * @param {ListBox} $c_monthListBox
-  * @return {!$2}
-  * @public
-  */
- static $create__org_gwtproject_user_datepicker_client_DefaultMonthSelector__org_gwtproject_user_client_ui_ListBox($outer_this, $c_monthListBox) {
+ /** @return {!$2} */
+ static $create__org_gwtproject_user_datepicker_client_DefaultMonthSelector__org_gwtproject_user_client_ui_ListBox(/** DefaultMonthSelector */ $outer_this, /** ListBox */ $c_monthListBox) {
   $2.$clinit();
   let $instance = new $2();
   $instance.$ctor__org_gwtproject_user_datepicker_client_DefaultMonthSelector_2__org_gwtproject_user_datepicker_client_DefaultMonthSelector__org_gwtproject_user_client_ui_ListBox($outer_this, $c_monthListBox);
   return $instance;
  }
- /**
-  * @param {DefaultMonthSelector} $outer_this
-  * @param {ListBox} $c_monthListBox
-  * @public
-  */
- $ctor__org_gwtproject_user_datepicker_client_DefaultMonthSelector_2__org_gwtproject_user_datepicker_client_DefaultMonthSelector__org_gwtproject_user_client_ui_ListBox($outer_this, $c_monthListBox) {
+ 
+ $ctor__org_gwtproject_user_datepicker_client_DefaultMonthSelector_2__org_gwtproject_user_datepicker_client_DefaultMonthSelector__org_gwtproject_user_client_ui_ListBox(/** DefaultMonthSelector */ $outer_this, /** ListBox */ $c_monthListBox) {
   this.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultMonthSelector_2 = $outer_this;
   this.$c_monthListBox = $c_monthListBox;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {ChangeEvent} event
-  * @public
-  */
- m_onChange__org_gwtproject_event_dom_client_ChangeEvent(event) {
+ /** @override */
+ m_onChange__org_gwtproject_event_dom_client_ChangeEvent(/** ChangeEvent */ event) {
   let previousMonth = this.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultMonthSelector_2.m_getModel__().m_getCurrentMonth__().m_getMonth__();
   let newMonth = this.$c_monthListBox.m_getSelectedIndex__();
   let delta = newMonth - previousMonth;
   this.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultMonthSelector_2.m_addMonths__int(delta);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $2.$clinit = () =>{};
   $2.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $2;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

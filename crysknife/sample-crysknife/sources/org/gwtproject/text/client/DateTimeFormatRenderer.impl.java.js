@@ -15,116 +15,76 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {AbstractRenderer<Date>}
   */
 class DateTimeFormatRenderer extends AbstractRenderer {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {DateTimeFormat} */
+  /**@type {DateTimeFormat}*/
   this.f_format__org_gwtproject_text_client_DateTimeFormatRenderer_;
-  /** @public {TimeZone} */
+  /**@type {TimeZone}*/
   this.f_timeZone__org_gwtproject_text_client_DateTimeFormatRenderer_;
  }
- /**
-  * Factory method corresponding to constructor 'DateTimeFormatRenderer()'.
-  * @return {!DateTimeFormatRenderer}
-  * @public
-  */
+ //Factory method corresponding to constructor 'DateTimeFormatRenderer()'.
+ /** @return {!DateTimeFormatRenderer} */
  static $create__() {
   DateTimeFormatRenderer.$clinit();
   let $instance = new DateTimeFormatRenderer();
   $instance.$ctor__org_gwtproject_text_client_DateTimeFormatRenderer__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'DateTimeFormatRenderer()'.
-  * @public
-  */
+ //Initialization from constructor 'DateTimeFormatRenderer()'.
+ 
  $ctor__org_gwtproject_text_client_DateTimeFormatRenderer__() {
   this.$ctor__org_gwtproject_text_client_DateTimeFormatRenderer__org_gwtproject_i18n_shared_DateTimeFormat(DateTimeFormat.m_getFormat__org_gwtproject_i18n_shared_DateTimeFormat_PredefinedFormat(PredefinedFormat.f_DATE_SHORT__org_gwtproject_i18n_shared_DateTimeFormat_PredefinedFormat));
  }
- /**
-  * Factory method corresponding to constructor 'DateTimeFormatRenderer(DateTimeFormat)'.
-  * @param {DateTimeFormat} format
-  * @return {!DateTimeFormatRenderer}
-  * @public
-  */
- static $create__org_gwtproject_i18n_shared_DateTimeFormat(format) {
+ //Factory method corresponding to constructor 'DateTimeFormatRenderer(DateTimeFormat)'.
+ /** @return {!DateTimeFormatRenderer} */
+ static $create__org_gwtproject_i18n_shared_DateTimeFormat(/** DateTimeFormat */ format) {
   DateTimeFormatRenderer.$clinit();
   let $instance = new DateTimeFormatRenderer();
   $instance.$ctor__org_gwtproject_text_client_DateTimeFormatRenderer__org_gwtproject_i18n_shared_DateTimeFormat(format);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DateTimeFormatRenderer(DateTimeFormat)'.
-  * @param {DateTimeFormat} format
-  * @public
-  */
- $ctor__org_gwtproject_text_client_DateTimeFormatRenderer__org_gwtproject_i18n_shared_DateTimeFormat(format) {
-  this.$ctor__org_gwtproject_text_client_DateTimeFormatRenderer__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_i18n_shared_TimeZone(format, /**@type {TimeZone} */ (null));
+ //Initialization from constructor 'DateTimeFormatRenderer(DateTimeFormat)'.
+ 
+ $ctor__org_gwtproject_text_client_DateTimeFormatRenderer__org_gwtproject_i18n_shared_DateTimeFormat(/** DateTimeFormat */ format) {
+  this.$ctor__org_gwtproject_text_client_DateTimeFormatRenderer__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_i18n_shared_TimeZone(format, /**@type {TimeZone}*/ (null));
  }
- /**
-  * Factory method corresponding to constructor 'DateTimeFormatRenderer(DateTimeFormat, TimeZone)'.
-  * @param {DateTimeFormat} format
-  * @param {TimeZone} timeZone
-  * @return {!DateTimeFormatRenderer}
-  * @public
-  */
- static $create__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_i18n_shared_TimeZone(format, timeZone) {
+ //Factory method corresponding to constructor 'DateTimeFormatRenderer(DateTimeFormat, TimeZone)'.
+ /** @return {!DateTimeFormatRenderer} */
+ static $create__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_i18n_shared_TimeZone(/** DateTimeFormat */ format, /** TimeZone */ timeZone) {
   DateTimeFormatRenderer.$clinit();
   let $instance = new DateTimeFormatRenderer();
   $instance.$ctor__org_gwtproject_text_client_DateTimeFormatRenderer__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_i18n_shared_TimeZone(format, timeZone);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DateTimeFormatRenderer(DateTimeFormat, TimeZone)'.
-  * @param {DateTimeFormat} format
-  * @param {TimeZone} timeZone
-  * @public
-  */
- $ctor__org_gwtproject_text_client_DateTimeFormatRenderer__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_i18n_shared_TimeZone(format, timeZone) {
+ //Initialization from constructor 'DateTimeFormatRenderer(DateTimeFormat, TimeZone)'.
+ 
+ $ctor__org_gwtproject_text_client_DateTimeFormatRenderer__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_i18n_shared_TimeZone(/** DateTimeFormat */ format, /** TimeZone */ timeZone) {
   this.$ctor__org_gwtproject_text_shared_AbstractRenderer__();
   $Asserts.$assert(!$Equality.$same(format, null));
   this.f_format__org_gwtproject_text_client_DateTimeFormatRenderer_ = format;
   this.f_timeZone__org_gwtproject_text_client_DateTimeFormatRenderer_ = timeZone;
  }
- /**
-  * @param {Date} object
-  * @return {?string}
-  * @public
-  */
- m_render__java_util_Date(object) {
+ /** @return {?string} */
+ m_render__java_util_Date(/** Date */ object) {
   return $Equality.$same(object, null) ? "" : this.f_format__org_gwtproject_text_client_DateTimeFormatRenderer_.m_format__java_util_Date__org_gwtproject_i18n_shared_TimeZone(object, this.f_timeZone__org_gwtproject_text_client_DateTimeFormatRenderer_);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @return {?string}
-  * @public
-  */
- m_render__java_lang_Object(arg0) {
-  return this.m_render__java_util_Date(/**@type {Date} */ ($Casts.$to(arg0, Date)));
+ //Bridge method.
+ /** @override @return {?string} */
+ m_render__java_lang_Object(/** * */ arg0) {
+  return this.m_render__java_util_Date(/**@type {Date}*/ ($Casts.$to(arg0, Date)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DateTimeFormatRenderer.$clinit = () =>{};
   DateTimeFormatRenderer.$loadModules();
   AbstractRenderer.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DateTimeFormatRenderer;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Date = goog.module.get('java.util.Date$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

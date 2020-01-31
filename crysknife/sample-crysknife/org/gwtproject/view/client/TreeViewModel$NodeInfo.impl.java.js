@@ -13,69 +13,33 @@ let SelectionModel = goog.forwardDeclare('org.gwtproject.view.client.SelectionMo
  * @template T
  */
 class NodeInfo {
- /**
-  * @abstract
-  * @return {Cell<T>}
-  * @public
-  */
+ /** @abstract @return {Cell<T>} */
  m_getCell__() {}
- /**
-  * @abstract
-  * @return {ProvidesKey<T>}
-  * @public
-  */
+ /** @abstract @return {ProvidesKey<T>} */
  m_getProvidesKey__() {}
- /**
-  * @abstract
-  * @return {SelectionModel<?>}
-  * @public
-  */
+ /** @abstract @return {SelectionModel<?>} */
  m_getSelectionModel__() {}
- /**
-  * @abstract
-  * @return {ValueUpdater<T>}
-  * @public
-  */
+ /** @abstract @return {ValueUpdater<T>} */
  m_getValueUpdater__() {}
- /**
-  * @abstract
-  * @param {HasData<T>} display
-  * @public
-  */
- m_setDataDisplay__org_gwtproject_view_client_HasData(display) {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
+ m_setDataDisplay__org_gwtproject_view_client_HasData(/** HasData<T> */ display) {}
+ /** @abstract */
  m_unsetDataDisplay__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NodeInfo.$clinit = () =>{};
   NodeInfo.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_view_client_TreeViewModel_NodeInfo = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_view_client_TreeViewModel_NodeInfo = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_view_client_TreeViewModel_NodeInfo;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

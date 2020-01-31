@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasKeyProvider$$LambdaAdaptor.impl.java.js",
-"lineCount":47,
-"mappings":"A;;;;;;;;;;;;MAyBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;wE;EAAAA,gI;;;;;;CAAA,sH;EAAAC,iC;EAAAA,2E;;;;;;CAAA,kB;EAAAC,gD;EAAAA,wG;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":36,
+"mappings":"A;;;;;;;;;;;;MAyBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;wE;EAAAA,gI;;;CAAA,sH;EAAAC,iC;EAAAA,2E;;;CAAA,kB;EAAAC,gD;EAAAA,wG;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["HasKeyProvider.java"],
 "names":["org.gwtproject.view.client.HasKeyProvider$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.view.client.HasKeyProvider$$LambdaAdaptor.<init>","org.gwtproject.view.client.HasKeyProvider$$LambdaAdaptor.getKeyProvider","org.gwtproject.view.client.HasKeyProvider$$LambdaAdaptor.<clinit>"]
 }

@@ -10,54 +10,37 @@ let ClickEvent = goog.forwardDeclare('org.gwtproject.event.dom.client.ClickEvent
  * @implements {ClickHandler}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(ClickEvent):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(ClickEvent):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(ClickEvent):void} */
+  /**@type {?function(ClickEvent):void}*/
   this.f_$$fn__org_gwtproject_event_dom_client_ClickHandler_$LambdaAdaptor;
   this.$ctor__org_gwtproject_event_dom_client_ClickHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_ClickHandler_$JsFunction(fn);
  }
- /**
-  * @param {?function(ClickEvent):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_event_dom_client_ClickHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_ClickHandler_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_event_dom_client_ClickHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_ClickHandler_$JsFunction(/** ?function(ClickEvent):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_event_dom_client_ClickHandler_$LambdaAdaptor = fn;
  }
- /**
-  * @param {ClickEvent} arg0
-  * @public
-  */
- m_onClick__org_gwtproject_event_dom_client_ClickEvent(arg0) {
+ 
+ m_onClick__org_gwtproject_event_dom_client_ClickEvent(/** ClickEvent */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_event_dom_client_ClickHandler_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

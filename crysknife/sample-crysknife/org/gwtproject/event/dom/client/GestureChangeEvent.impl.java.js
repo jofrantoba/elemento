@@ -13,94 +13,59 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {DomEvent<GestureChangeHandler>}
   */
 class GestureChangeEvent extends DomEvent {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!GestureChangeEvent}
-  * @public
-  */
+ /** @return {!GestureChangeEvent} */
  static $create__() {
   GestureChangeEvent.$clinit();
   let $instance = new GestureChangeEvent();
   $instance.$ctor__org_gwtproject_event_dom_client_GestureChangeEvent__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_dom_client_GestureChangeEvent__() {
   this.$ctor__org_gwtproject_event_dom_client_DomEvent__();
  }
- /**
-  * @return {Type<GestureChangeHandler>}
-  * @public
-  */
+ /** @return {Type<GestureChangeHandler>} */
  static m_getType__() {
   GestureChangeEvent.$clinit();
   return GestureChangeEvent.f_TYPE__org_gwtproject_event_dom_client_GestureChangeEvent_;
  }
- /**
-  * @override
-  * @return {Type<GestureChangeHandler>}
-  * @public
-  */
+ /** @override @return {Type<GestureChangeHandler>} */
  m_getAssociatedType__() {
   return GestureChangeEvent.f_TYPE__org_gwtproject_event_dom_client_GestureChangeEvent_;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getRotation__() {
   return $Overlay.m_getRotation__$devirt__org_gwtproject_dom_client_NativeEvent(this.m_getNativeEvent__());
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getScale__() {
   return $Overlay.m_getScale__$devirt__org_gwtproject_dom_client_NativeEvent(this.m_getNativeEvent__());
  }
- /**
-  * @param {GestureChangeHandler} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_event_dom_client_GestureChangeHandler(handler) {
+ 
+ m_dispatch__org_gwtproject_event_dom_client_GestureChangeHandler(/** GestureChangeHandler */ handler) {
   handler.m_onGestureChange__org_gwtproject_event_dom_client_GestureChangeEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_event_dom_client_GestureChangeHandler(/**@type {GestureChangeHandler} */ ($Casts.$to(arg0, GestureChangeHandler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_event_dom_client_GestureChangeHandler(/**@type {GestureChangeHandler}*/ ($Casts.$to(arg0, GestureChangeHandler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   GestureChangeEvent.$clinit = () =>{};
   GestureChangeEvent.$loadModules();
   DomEvent.$clinit();
-  GestureChangeEvent.f_TYPE__org_gwtproject_event_dom_client_GestureChangeEvent_ = /**@type {!Type<GestureChangeHandler>} */ (Type.$create__java_lang_String__org_gwtproject_event_dom_client_DomEvent(BrowserEvents.f_GESTURECHANGE__org_gwtproject_dom_client_BrowserEvents, GestureChangeEvent.$create__()));
+  GestureChangeEvent.f_TYPE__org_gwtproject_event_dom_client_GestureChangeEvent_ = /**@type {!Type<GestureChangeHandler>}*/ (Type.$create__java_lang_String__org_gwtproject_event_dom_client_DomEvent(BrowserEvents.f_GESTURECHANGE__org_gwtproject_dom_client_BrowserEvents, GestureChangeEvent.$create__()));
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof GestureChangeEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   BrowserEvents = goog.module.get('org.gwtproject.dom.client.BrowserEvents$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.NativeEvent.$Overlay$impl');
@@ -112,7 +77,7 @@ class GestureChangeEvent extends DomEvent {
 }
 $Util.$setClassMetadata(GestureChangeEvent, 'org.gwtproject.event.dom.client.GestureChangeEvent');
 
-/** @public {Type<GestureChangeHandler>} */
+/**@type {Type<GestureChangeHandler>}*/
 GestureChangeEvent.f_TYPE__org_gwtproject_event_dom_client_GestureChangeEvent_;
 
 exports = GestureChangeEvent; 

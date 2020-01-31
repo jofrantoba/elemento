@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasBeforeSelectionHandlers.impl.java.js",
-"lineCount":27,
-"mappings":"A;;;;;;;;;;;;;MA0BiB,0B;;;;;;;CAOK,uF,CAAoDA,O;;;;QAPzD,O;EAAAC,6C;EAAAA;",
+"lineCount":20,
+"mappings":"A;;;;;;;;;;;;;MA0BiB,0B;;CAOK,uF,kCAAoDA,O;;QAPzD,O;EAAAC,6C;EAAAA;",
 "sources":["HasBeforeSelectionHandlers.java"],
 "names":["handler","org.gwtproject.event.logical.shared.HasBeforeSelectionHandlers.<clinit>"]
 }

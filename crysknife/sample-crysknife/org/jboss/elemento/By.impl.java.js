@@ -26,87 +26,52 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @abstract
   */
 class By extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_jboss_elemento_By__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {?string} selector
-  * @return {By}
-  * @public
-  */
- static m_selector__java_lang_String(selector) {
+ /** @return {By} */
+ static m_selector__java_lang_String(/** ?string */ selector) {
   By.$clinit();
   return BySelector.$create__java_lang_String(selector);
  }
- /**
-  * @param {?string} id
-  * @return {By}
-  * @public
-  */
- static m_id__java_lang_String(id) {
+ /** @return {By} */
+ static m_id__java_lang_String(/** ?string */ id) {
   By.$clinit();
   return ById.$create__java_lang_String(id);
  }
- /**
-  * @param {?string} element
-  * @return {By}
-  * @public
-  */
- static m_element__java_lang_String(element) {
+ /** @return {By} */
+ static m_element__java_lang_String(/** ?string */ element) {
   By.$clinit();
   return ByElement.$create__java_lang_String(element);
  }
- /**
-  * @param {Element} element
-  * @return {By}
-  * @public
-  */
- static m_element__elemental2_dom_Element(element) {
+ /** @return {By} */
+ static m_element__elemental2_dom_Element(/** Element */ element) {
   By.$clinit();
   return ByElement.$create__java_lang_String(j_l_String.m_toLowerCase__java_lang_String(element.tagName));
  }
- /**
-  * @template E
-  * @param {IsElement<E>} element
-  * @return {By}
-  * @public
-  */
- static m_element__org_jboss_elemento_IsElement(element) {
+ /** @template E @return {By} */
+ static m_element__org_jboss_elemento_IsElement(/** IsElement<E> */ element) {
   By.$clinit();
-  return ByElement.$create__java_lang_String(j_l_String.m_toLowerCase__java_lang_String(/**@type {HTMLElement} */ (element.m_element__()).tagName));
+  return ByElement.$create__java_lang_String(j_l_String.m_toLowerCase__java_lang_String(/**@type {HTMLElement}*/ (element.m_element__()).tagName));
  }
- /**
-  * @param {?string} classname
-  * @return {By}
-  * @public
-  */
- static m_classname__java_lang_String(classname) {
+ /** @return {By} */
+ static m_classname__java_lang_String(/** ?string */ classname) {
   By.$clinit();
-  return ByClassname.$create__arrayOf_java_lang_String(/**@type {!Array<?string>} */ ($Arrays.$init([classname], j_l_String)));
+  return ByClassname.$create__arrayOf_java_lang_String(/**@type {!Array<?string>}*/ ($Arrays.$init([classname], j_l_String)));
  }
- /**
-  * @param {?string} first
-  * @param {?string} second
-  * @param {Array<?string>} remaining
-  * @return {By}
-  * @public
-  */
- static m_classnames__java_lang_String__java_lang_String__arrayOf_java_lang_String(first, second, remaining) {
+ /** @return {By} */
+ static m_classnames__java_lang_String__java_lang_String__arrayOf_java_lang_String(/** ?string */ first, /** ?string */ second, /** Array<?string> */ remaining) {
   By.$clinit();
   let length = 2;
   if (!$Equality.$same(remaining, null)) {
    length += remaining.length;
   }
-  let classnames = /**@type {!Array<?string>} */ ($Arrays.$create([length], j_l_String));
+  let classnames = /**@type {!Array<?string>}*/ ($Arrays.$create([length], j_l_String));
   $Arrays.$set(classnames, 0, first);
   $Arrays.$set(classnames, 1, second);
   if (!$Equality.$same(remaining, null)) {
@@ -119,89 +84,49 @@ class By extends j_l_Object {
   }
   return ByClassname.$create__arrayOf_java_lang_String(classnames);
  }
- /**
-  * @param {Array<?string>} classnames
-  * @return {By}
-  * @public
-  */
- static m_classnames__arrayOf_java_lang_String(classnames) {
+ /** @return {By} */
+ static m_classnames__arrayOf_java_lang_String(/** Array<?string> */ classnames) {
   By.$clinit();
   return ByClassname.$create__arrayOf_java_lang_String(classnames);
  }
- /**
-  * @param {?string} name
-  * @return {By}
-  * @public
-  */
- static m_attribute__java_lang_String(name) {
+ /** @return {By} */
+ static m_attribute__java_lang_String(/** ?string */ name) {
   By.$clinit();
   return ByAttribute.$create__java_lang_String__org_jboss_elemento_By_AttributeOperator__java_lang_String(name, null, null);
  }
- /**
-  * @param {?string} name
-  * @param {?string} value
-  * @return {By}
-  * @public
-  */
- static m_attribute__java_lang_String__java_lang_String(name, value) {
+ /** @return {By} */
+ static m_attribute__java_lang_String__java_lang_String(/** ?string */ name, /** ?string */ value) {
   By.$clinit();
   return ByAttribute.$create__java_lang_String__org_jboss_elemento_By_AttributeOperator__java_lang_String(name, null, value);
  }
- /**
-  * @param {?string} name
-  * @param {AttributeOperator} operator
-  * @param {?string} value
-  * @return {By}
-  * @public
-  */
- static m_attribute__java_lang_String__org_jboss_elemento_By_AttributeOperator__java_lang_String(name, operator, value) {
+ /** @return {By} */
+ static m_attribute__java_lang_String__org_jboss_elemento_By_AttributeOperator__java_lang_String(/** ?string */ name, /** AttributeOperator */ operator, /** ?string */ value) {
   By.$clinit();
   return ByAttribute.$create__java_lang_String__org_jboss_elemento_By_AttributeOperator__java_lang_String(name, operator, value);
  }
- /**
-  * @param {?string} name
-  * @return {By}
-  * @public
-  */
- static m_data__java_lang_String(name) {
+ /** @return {By} */
+ static m_data__java_lang_String(/** ?string */ name) {
   By.$clinit();
   return ByData.$create__java_lang_String__org_jboss_elemento_By_AttributeOperator__java_lang_String(name, null, null);
  }
- /**
-  * @param {?string} name
-  * @param {?string} value
-  * @return {By}
-  * @public
-  */
- static m_data__java_lang_String__java_lang_String(name, value) {
+ /** @return {By} */
+ static m_data__java_lang_String__java_lang_String(/** ?string */ name, /** ?string */ value) {
   By.$clinit();
   return ByData.$create__java_lang_String__org_jboss_elemento_By_AttributeOperator__java_lang_String(name, null, value);
  }
- /**
-  * @param {?string} name
-  * @param {AttributeOperator} operator
-  * @param {?string} value
-  * @return {By}
-  * @public
-  */
- static m_data__java_lang_String__org_jboss_elemento_By_AttributeOperator__java_lang_String(name, operator, value) {
+ /** @return {By} */
+ static m_data__java_lang_String__org_jboss_elemento_By_AttributeOperator__java_lang_String(/** ?string */ name, /** AttributeOperator */ operator, /** ?string */ value) {
   By.$clinit();
   return ByData.$create__java_lang_String__org_jboss_elemento_By_AttributeOperator__java_lang_String(name, operator, value);
  }
- /**
-  * @param {By} first
-  * @param {By} second
-  * @param {Array<By>} remaining
-  * @return {By}
-  * @public
-  */
- static m_group__org_jboss_elemento_By__org_jboss_elemento_By__arrayOf_org_jboss_elemento_By(first, second, remaining) {
+ /** @return {By} */
+ static m_group__org_jboss_elemento_By__org_jboss_elemento_By__arrayOf_org_jboss_elemento_By(/** By */ first, /** By */ second, /** Array<By> */ remaining) {
   By.$clinit();
   let length = 2;
   if (!$Equality.$same(remaining, null)) {
    length += remaining.length;
   }
-  let group = /**@type {!Array<By>} */ ($Arrays.$create([length], By));
+  let group = /**@type {!Array<By>}*/ ($Arrays.$create([length], By));
   $Arrays.$set(group, 0, first);
   $Arrays.$set(group, 1, second);
   if (!$Equality.$same(remaining, null)) {
@@ -214,121 +139,67 @@ class By extends j_l_Object {
   }
   return ByGroup.$create__arrayOf_org_jboss_elemento_By(group);
  }
- /**
-  * @param {Array<By>} selectors
-  * @return {By}
-  * @public
-  */
- static m_group__arrayOf_org_jboss_elemento_By(selectors) {
+ /** @return {By} */
+ static m_group__arrayOf_org_jboss_elemento_By(/** Array<By> */ selectors) {
   By.$clinit();
   return ByGroup.$create__arrayOf_org_jboss_elemento_By(selectors);
  }
- /**
-  * @param {By} selector
-  * @return {By}
-  * @public
-  */
- m_and__org_jboss_elemento_By(selector) {
+ /** @return {By} */
+ m_and__org_jboss_elemento_By(/** By */ selector) {
   return this.m_combinator__org_jboss_elemento_By_Combinator__org_jboss_elemento_By_$p_org_jboss_elemento_By(Combinator.f_AND__org_jboss_elemento_By_Combinator, selector);
  }
- /**
-  * @param {By} selector
-  * @return {By}
-  * @public
-  */
- m_desc__org_jboss_elemento_By(selector) {
+ /** @return {By} */
+ m_desc__org_jboss_elemento_By(/** By */ selector) {
   return this.m_combinator__org_jboss_elemento_By_Combinator__org_jboss_elemento_By_$p_org_jboss_elemento_By(Combinator.f_DESCENDANT__org_jboss_elemento_By_Combinator, selector);
  }
- /**
-  * @param {By} selector
-  * @return {By}
-  * @public
-  */
- m_child__org_jboss_elemento_By(selector) {
+ /** @return {By} */
+ m_child__org_jboss_elemento_By(/** By */ selector) {
   return this.m_combinator__org_jboss_elemento_By_Combinator__org_jboss_elemento_By_$p_org_jboss_elemento_By(Combinator.f_CHILD__org_jboss_elemento_By_Combinator, selector);
  }
- /**
-  * @param {By} selector
-  * @return {By}
-  * @public
-  */
- m_sibling__org_jboss_elemento_By(selector) {
+ /** @return {By} */
+ m_sibling__org_jboss_elemento_By(/** By */ selector) {
   return this.m_combinator__org_jboss_elemento_By_Combinator__org_jboss_elemento_By_$p_org_jboss_elemento_By(Combinator.f_SIBLING__org_jboss_elemento_By_Combinator, selector);
  }
- /**
-  * @param {By} selector
-  * @return {By}
-  * @public
-  */
- m_adjacentSibling__org_jboss_elemento_By(selector) {
+ /** @return {By} */
+ m_adjacentSibling__org_jboss_elemento_By(/** By */ selector) {
   return this.m_combinator__org_jboss_elemento_By_Combinator__org_jboss_elemento_By_$p_org_jboss_elemento_By(Combinator.f_ADJACENT_SIBLING__org_jboss_elemento_By_Combinator, selector);
  }
- /**
-  * @param {Combinator} combinator
-  * @param {By} selector
-  * @return {By}
-  * @public
-  */
- m_combinator__org_jboss_elemento_By_Combinator__org_jboss_elemento_By_$p_org_jboss_elemento_By(combinator, selector) {
+ /** @return {By} */
+ m_combinator__org_jboss_elemento_By_Combinator__org_jboss_elemento_By_$p_org_jboss_elemento_By(/** Combinator */ combinator, /** By */ selector) {
   return ByCombination.$create__org_jboss_elemento_By__org_jboss_elemento_By_Combinator__org_jboss_elemento_By(this, combinator, selector);
  }
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_selector___$pp_org_jboss_elemento() {}
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  hashCode() {
   return Objects.m_hashCode__java_lang_Object(this.m_selector___$pp_org_jboss_elemento());
  }
- /**
-  * @override
-  * @param {*} o
-  * @return {boolean}
-  * @public
-  */
- equals(o) {
+ /** @override @return {boolean} */
+ equals(/** * */ o) {
   if ($Equality.$same(this, o)) {
    return true;
   }
   if (!By.$isInstance(o)) {
    return false;
   }
-  let by = /**@type {By} */ ($Casts.$to(o, By));
+  let by = /**@type {By}*/ ($Casts.$to(o, By));
   return j_l_String.m_equals__java_lang_String__java_lang_Object(this.m_selector___$pp_org_jboss_elemento(), by.m_selector___$pp_org_jboss_elemento());
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  toString() {
   return this.m_selector___$pp_org_jboss_elemento();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   By.$clinit = () =>{};
   By.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof By;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   Objects = goog.module.get('java.util.Objects$impl');

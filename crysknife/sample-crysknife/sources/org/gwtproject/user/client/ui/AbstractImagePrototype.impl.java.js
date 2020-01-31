@@ -15,88 +15,52 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @abstract
   */
 class AbstractImagePrototype extends j_l_Object {
- /**
-  * @public
-  */
+ 
  constructor() {
   AbstractImagePrototype.$clinit();
   super();
   this.$ctor__org_gwtproject_user_client_ui_AbstractImagePrototype__();
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_AbstractImagePrototype__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {ImageResource} resource
-  * @return {AbstractImagePrototype}
-  * @public
-  */
- static m_create__org_gwtproject_resources_client_ImageResource(resource) {
+ /** @return {AbstractImagePrototype} */
+ static m_create__org_gwtproject_resources_client_ImageResource(/** ImageResource */ resource) {
   AbstractImagePrototype.$clinit();
   return new ClippedImagePrototype(resource.m_getSafeUri__(), resource.m_getLeft__(), resource.m_getTop__(), resource.m_getWidth__(), resource.m_getHeight__());
  }
- /**
-  * @abstract
-  * @param {Image} image
-  * @public
-  */
- m_applyTo__org_gwtproject_user_client_ui_Image(image) {}
- /**
-  * @param {ImagePrototypeElement} imageElement
-  * @public
-  */
- m_applyTo__org_gwtproject_user_client_ui_AbstractImagePrototype_ImagePrototypeElement(imageElement) {
+ /** @abstract */
+ m_applyTo__org_gwtproject_user_client_ui_Image(/** Image */ image) {}
+ 
+ m_applyTo__org_gwtproject_user_client_ui_AbstractImagePrototype_ImagePrototypeElement(/** ImagePrototypeElement */ imageElement) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__());
  }
- /**
-  * @return {ImagePrototypeElement}
-  * @public
-  */
+ /** @return {ImagePrototypeElement} */
  m_createElement__() {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__());
  }
- /**
-  * @abstract
-  * @return {Image}
-  * @public
-  */
+ /** @abstract @return {Image} */
  m_createImage__() {}
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getHTML__() {
   return this.m_getSafeHtml__().m_asString__();
  }
- /**
-  * @return {SafeHtml}
-  * @public
-  */
+ /** @return {SafeHtml} */
  m_getSafeHtml__() {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AbstractImagePrototype.$clinit = () =>{};
   AbstractImagePrototype.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AbstractImagePrototype;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   UnsupportedOperationException = goog.module.get('java.lang.UnsupportedOperationException$impl');
   ClippedImagePrototype = goog.module.get('org.gwtproject.user.client.ui.impl.ClippedImagePrototype$impl');

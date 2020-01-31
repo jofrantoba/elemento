@@ -7,57 +7,38 @@ let IllegalArgumentException = goog.forwardDeclare('java.lang.IllegalArgumentExc
 let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 
 class JreImpl extends JsImpl {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!JreImpl}
-  * @public
-  */
+ /** @return {!JreImpl} */
  static $create__() {
   JreImpl.$clinit();
   let $instance = new JreImpl();
   $instance.$ctor__org_gwtproject_safehtml_shared_SafeHtmlHostedModeUtils_JreImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_safehtml_shared_SafeHtmlHostedModeUtils_JreImpl__() {
   this.$ctor__org_gwtproject_safehtml_shared_SafeHtmlHostedModeUtils_JsImpl__();
  }
- /**
-  * @param {boolean} completeHtml
-  * @param {?string} message
-  * @public
-  */
- static m_checkArgument__boolean__java_lang_String(completeHtml, message) {
+ 
+ static m_checkArgument__boolean__java_lang_String(/** boolean */ completeHtml, /** ?string */ message) {
   if (!completeHtml) {
    throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String(message));
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   JreImpl.$clinit = () =>{};
   JreImpl.$loadModules();
   JsImpl.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof JreImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
   $Exceptions = goog.module.get('vmbootstrap.Exceptions$impl');

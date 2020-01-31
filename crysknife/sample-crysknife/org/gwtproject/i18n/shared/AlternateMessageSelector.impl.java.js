@@ -9,58 +9,33 @@ let AlternateForm = goog.forwardDeclare('org.gwtproject.i18n.shared.AlternateMes
  * @interface
  */
 class AlternateMessageSelector {
- /**
-  * @abstract
-  * @param {?string} form
-  * @return {boolean}
-  * @public
-  */
- m_isFormAcceptable__java_lang_String(form) {}
- /**
-  * @param {?function(?string):boolean} fn
-  * @return {AlternateMessageSelector}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract @return {boolean} */
+ m_isFormAcceptable__java_lang_String(/** ?string */ form) {}
+ /** @return {AlternateMessageSelector} */
+ static $adapt(/** ?function(?string):boolean */ fn) {
   AlternateMessageSelector.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @return {AlternateForm}
-  * @public
-  */
+ /** @return {AlternateForm} */
  static get f_OTHER_FORM__org_gwtproject_i18n_shared_AlternateMessageSelector() {
   return (AlternateMessageSelector.$clinit(), AlternateMessageSelector.$f_OTHER_FORM__org_gwtproject_i18n_shared_AlternateMessageSelector);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AlternateMessageSelector.$clinit = () =>{};
   AlternateMessageSelector.$loadModules();
   AlternateMessageSelector.$f_OTHER_FORM__org_gwtproject_i18n_shared_AlternateMessageSelector = AlternateForm.$create__java_lang_String__java_lang_String(AlternateMessageSelector.f_OTHER_FORM_NAME__org_gwtproject_i18n_shared_AlternateMessageSelector, "Default value if no other forms apply");
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_i18n_shared_AlternateMessageSelector = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_i18n_shared_AlternateMessageSelector = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_i18n_shared_AlternateMessageSelector;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.i18n.shared.AlternateMessageSelector.$LambdaAdaptor$impl');
   AlternateForm = goog.module.get('org.gwtproject.i18n.shared.AlternateMessageSelector.AlternateForm$impl');
@@ -71,9 +46,9 @@ $Util.$setClassMetadataForInterface(AlternateMessageSelector, 'org.gwtproject.i1
 
 AlternateMessageSelector.$markImplementor(/** @type {Function} */ (AlternateMessageSelector));
 
-/** @public {?string} @const */
+/**@const {?string}*/
 AlternateMessageSelector.f_OTHER_FORM_NAME__org_gwtproject_i18n_shared_AlternateMessageSelector = "other";
-/** @private {AlternateForm} */
+/**@private {AlternateForm}*/
 AlternateMessageSelector.$f_OTHER_FORM__org_gwtproject_i18n_shared_AlternateMessageSelector;
 
 exports = AlternateMessageSelector; 

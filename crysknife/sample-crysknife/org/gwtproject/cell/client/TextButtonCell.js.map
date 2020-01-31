@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TextButtonCell.impl.java.js",
-"lineCount":63,
-"mappings":"A;;;;;;;;;;;MAsBa,c;;;;CAAA,W;EAAAA,Q;;;;;;;QAgDJ,S;EAAAC,yB;EAAAA,qC;EAAAA,+D;EAAAA,iB;;;;;;CAAA,kD;EACLC,2I;;;;;;;;QASK,6D,CAA0BC,U;EAA1BF,yB;EAAAA,qC;EAAAA,6H;EAAAA,iB;;;;;;;CAAA,sG,CAA0BE,U;EAC/BD,wH;;;;;QA3DS,O;EAAAE,iC;EAAAA,8B;EAAAA;",
+"lineCount":47,
+"mappings":"A;;;;;;;;;;;MAsBa,c;;CAAA,W;EAAAA,Q;;;;QAgDJ,S;EAAAC,yB;EAAAA,qC;EAAAA,+D;EAAAA,iB;;;;CAAA,kD;EACLC,2I;;;;QASK,6D,mBAA0BC,U;EAA1BF,yB;EAAAA,qC;EAAAA,6H;EAAAA,iB;;;;CAAA,sG,mBAA0BE,U;EAC/BD,wH;;;QA3DS,O;EAAAE,iC;EAAAA,8B;EAAAA;",
 "sources":["TextButtonCell.java"],
 "names":["org.gwtproject.cell.client.TextButtonCell.<synthetic: ctor_js>","org.gwtproject.cell.client.TextButtonCell.<synthetic: ctor_create>","org.gwtproject.cell.client.TextButtonCell.<init>","appearance","org.gwtproject.cell.client.TextButtonCell.<clinit>"]
 }

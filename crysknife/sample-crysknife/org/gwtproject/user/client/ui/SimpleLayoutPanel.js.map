@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SimpleLayoutPanel.impl.java.js",
-"lineCount":143,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;MAwBa,iB;;;;CAAA,W;EAAAA,Q;EAAAA;OAGG,yDAHHA,C;EAAAA;OAIU,0DAJVA,C;;;;;;QAMJ,S;EAAAC,4B;EAAAA,wC;EAAAA,qE;EAAAA,iB;;;;;CAAA,wD;EAAAC,0D;EACLA,2I;;;;;;CAIU,Y;EACVC;GACEA,mIADFA;G;;;;;;;;CAMa,8C,CAAcC,C;EAE3BC;GACEA,aADFA;G;EAKAA;GACEA,uDADFA;;GAIEA,yLAJFA;GAKEA,sEALFA;GAQEA,gEARFA;G;EAUAA,Y;;;;;;;CAIU,iD,CAAiBD,C;EAE3BE;GACEA,OADFA;G;EAKAA;GACEA,yBADFA;G;EAKAA;GACEA,8GADFA;G;EAKAA,6D;EAEAA;GAEEA,yUAFFA;GAGEA,yRAHFA;GAIEA,yRAJFA;GAMEA,sDANFA;GASEA,6EATFA;GAUEA,oBAVFA;G;;;;;;CAea,Y;EACbC,qB;EACAA,+E;;;;;;CAIa,Y;EACbC,qB;EACAA,+E;;;;;;;;CAjFS,sC;EAAAC,0F;;;;;;;;CAAA,e;EAAAC,sG;;;;;QAAA,O;EAAAC,oC;EAAAA,iC;EAAAA;",
+"lineCount":108,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;MAwBa,iB;;CAAA,W;EAAAA,Q;EAAAA;OAGG,yDAHHA,C;EAAAA;OAIU,0DAJVA,C;;;QAMJ,S;EAAAC,4B;EAAAA,wC;EAAAA,qE;EAAAA,iB;;;CAAA,wD;EAAAC,0D;EACLA,2I;;;CAIU,Y;EACVC;GACEA,kIADFA;G;;;CAMa,8C,eAAcC,C;EAE3BC;GACEA,aADFA;G;EAKAA;GACEA,uDADFA;;GAIEA,yLAJFA;GAKEA,sEALFA;GAQEA,gEARFA;G;EAUAA,Y;;;CAIU,iD,eAAiBD,C;EAE3BE;GACEA,OADFA;G;EAKAA;GACEA,yBADFA;G;EAKAA;GACEA,8GADFA;G;EAKAA,6D;EAEAA;GAEEA,yUAFFA;GAGEA,yRAHFA;GAIEA,yRAJFA;GAMEA,sDANFA;GASEA,6EATFA;GAUEA,oBAVFA;G;;;CAea,Y;EACbC,qB;EACAA,+E;;;CAIa,Y;EACbC,qB;EACAA,+E;;;;CAjFS,sC;EAAAC,0F;;;;CAAA,e;EAAAC,qG;;;QAAA,O;EAAAC,oC;EAAAA,iC;EAAAA;",
 "sources":["SimpleLayoutPanel.java"],
 "names":["org.gwtproject.user.client.ui.SimpleLayoutPanel.<synthetic: ctor_js>","org.gwtproject.user.client.ui.SimpleLayoutPanel.<synthetic: ctor_create>","org.gwtproject.user.client.ui.SimpleLayoutPanel.<init>","org.gwtproject.user.client.ui.SimpleLayoutPanel.onResize","w","org.gwtproject.user.client.ui.SimpleLayoutPanel.remove","org.gwtproject.user.client.ui.SimpleLayoutPanel.setWidget","org.gwtproject.user.client.ui.SimpleLayoutPanel.onAttach","org.gwtproject.user.client.ui.SimpleLayoutPanel.onDetach","org.gwtproject.user.client.ui.SimpleLayoutPanel.forEach","org.gwtproject.user.client.ui.SimpleLayoutPanel.spliterator","org.gwtproject.user.client.ui.SimpleLayoutPanel.<clinit>"]
 }

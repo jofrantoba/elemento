@@ -17,47 +17,37 @@ let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
  * @extends {AbstractCellTableBuilder<T>}
   */
 class DefaultCellTableBuilder extends AbstractCellTableBuilder {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_evenRowStyle__org_gwtproject_user_cellview_client_DefaultCellTableBuilder_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_oddRowStyle__org_gwtproject_user_cellview_client_DefaultCellTableBuilder_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_selectedRowStyle__org_gwtproject_user_cellview_client_DefaultCellTableBuilder_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_cellStyle__org_gwtproject_user_cellview_client_DefaultCellTableBuilder_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_evenCellStyle__org_gwtproject_user_cellview_client_DefaultCellTableBuilder_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_oddCellStyle__org_gwtproject_user_cellview_client_DefaultCellTableBuilder_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_firstColumnStyle__org_gwtproject_user_cellview_client_DefaultCellTableBuilder_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_lastColumnStyle__org_gwtproject_user_cellview_client_DefaultCellTableBuilder_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_selectedCellStyle__org_gwtproject_user_cellview_client_DefaultCellTableBuilder_;
  }
- /**
-  * @template T
-  * @param {AbstractCellTable<T>} cellTable
-  * @return {!DefaultCellTableBuilder<T>}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_AbstractCellTable(cellTable) {
+ /** @template T @return {!DefaultCellTableBuilder<T>} */
+ static $create__org_gwtproject_user_cellview_client_AbstractCellTable(/** AbstractCellTable<T> */ cellTable) {
   DefaultCellTableBuilder.$clinit();
   let $instance = new DefaultCellTableBuilder();
   $instance.$ctor__org_gwtproject_user_cellview_client_DefaultCellTableBuilder__org_gwtproject_user_cellview_client_AbstractCellTable(cellTable);
   return $instance;
  }
- /**
-  * @param {AbstractCellTable<T>} cellTable
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_DefaultCellTableBuilder__org_gwtproject_user_cellview_client_AbstractCellTable(cellTable) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_DefaultCellTableBuilder__org_gwtproject_user_cellview_client_AbstractCellTable(/** AbstractCellTable<T> */ cellTable) {
   this.$ctor__org_gwtproject_user_cellview_client_AbstractCellTableBuilder__org_gwtproject_user_cellview_client_AbstractCellTable(cellTable);
   let style = cellTable.m_getResources__().m_style__();
   this.f_evenRowStyle__org_gwtproject_user_cellview_client_DefaultCellTableBuilder_ = style.m_evenRow__();
@@ -70,13 +60,8 @@ class DefaultCellTableBuilder extends AbstractCellTableBuilder {
   this.f_lastColumnStyle__org_gwtproject_user_cellview_client_DefaultCellTableBuilder_ = " " + j_l_String.m_valueOf__java_lang_Object(style.m_lastColumn__());
   this.f_selectedCellStyle__org_gwtproject_user_cellview_client_DefaultCellTableBuilder_ = " " + j_l_String.m_valueOf__java_lang_Object(style.m_selectedRowCell__());
  }
- /**
-  * @override
-  * @param {T} rowValue
-  * @param {number} absRowIndex
-  * @public
-  */
- m_buildRowImpl__java_lang_Object__int(rowValue, absRowIndex) {
+ /** @override */
+ m_buildRowImpl__java_lang_Object__int(/** T */ rowValue, /** number */ absRowIndex) {
   let selectionModel = this.f_cellTable__org_gwtproject_user_cellview_client_AbstractCellTableBuilder.m_getSelectionModel__();
   let isSelected = ($Equality.$same(selectionModel, null) || $Equality.$same(rowValue, null)) ? false : selectionModel.m_isSelected__java_lang_Object(rowValue);
   let isEven = $Primitives.$coerceDivision(absRowIndex % 2) == 0;
@@ -131,30 +116,19 @@ class DefaultCellTableBuilder extends AbstractCellTableBuilder {
   }
   tr.m_endTR__();
  }
- /**
-  * @param {TableCellBuilder} cell
-  * @public
-  */
- m_addCellAttributes__org_gwtproject_dom_builder_shared_TableCellBuilder(cell) {}
- /**
-  * @public
-  */
+ 
+ m_addCellAttributes__org_gwtproject_dom_builder_shared_TableCellBuilder(/** TableCellBuilder */ cell) {}
+ 
  static $clinit() {
   DefaultCellTableBuilder.$clinit = () =>{};
   DefaultCellTableBuilder.$loadModules();
   AbstractCellTableBuilder.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DefaultCellTableBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   StringBuilder = goog.module.get('java.lang.StringBuilder$impl');

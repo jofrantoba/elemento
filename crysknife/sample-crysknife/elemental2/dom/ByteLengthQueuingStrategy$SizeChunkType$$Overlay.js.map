@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ByteLengthQueuingStrategy$SizeChunkType$$Overlay.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;MAyCmB,sB;;;;;QAEgC,U;EAAAA,iC;EAC7CA,iF;;;;;QAHa,O;EAAAC,yC;EAAAA;",
+"lineCount":17,
+"mappings":"A;;;;;;;MAyCmB,sB;;QAEgC,U;EAAAA,iC;EAC7CA,gF;;;QAHa,O;EAAAC,yC;EAAAA;",
 "sources":["ByteLengthQueuingStrategy.java"],
 "names":["elemental2.dom.ByteLengthQueuingStrategy$SizeChunkType$$Overlay.create","elemental2.dom.ByteLengthQueuingStrategy$SizeChunkType$$Overlay.<clinit>"]
 }

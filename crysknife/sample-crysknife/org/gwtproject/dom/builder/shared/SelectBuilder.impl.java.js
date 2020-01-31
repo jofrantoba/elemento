@@ -8,82 +8,36 @@ const ElementBuilderBase = goog.require('org.gwtproject.dom.builder.shared.Eleme
  * @extends {ElementBuilderBase<SelectBuilder>}
  */
 class SelectBuilder {
- /**
-  * @abstract
-  * @return {SelectBuilder}
-  * @public
-  */
+ /** @abstract @return {SelectBuilder} */
  m_disabled__() {}
- /**
-  * @abstract
-  * @return {SelectBuilder}
-  * @public
-  */
+ /** @abstract @return {SelectBuilder} */
  m_multiple__() {}
- /**
-  * @abstract
-  * @param {?string} name
-  * @return {SelectBuilder}
-  * @public
-  */
- m_name__java_lang_String(name) {}
- /**
-  * @abstract
-  * @param {number} index
-  * @return {SelectBuilder}
-  * @public
-  */
- m_selectedIndex__int(index) {}
- /**
-  * @abstract
-  * @param {number} size
-  * @return {SelectBuilder}
-  * @public
-  */
- m_size__int(size) {}
- /**
-  * @abstract
-  * @param {?string} type
-  * @return {SelectBuilder}
-  * @public
-  */
- m_type__java_lang_String(type) {}
- /**
-  * @abstract
-  * @param {?string} value
-  * @return {SelectBuilder}
-  * @public
-  */
- m_value__java_lang_String(value) {}
- /**
-  * @public
-  */
+ /** @abstract @return {SelectBuilder} */
+ m_name__java_lang_String(/** ?string */ name) {}
+ /** @abstract @return {SelectBuilder} */
+ m_selectedIndex__int(/** number */ index) {}
+ /** @abstract @return {SelectBuilder} */
+ m_size__int(/** number */ size) {}
+ /** @abstract @return {SelectBuilder} */
+ m_type__java_lang_String(/** ?string */ type) {}
+ /** @abstract @return {SelectBuilder} */
+ m_value__java_lang_String(/** ?string */ value) {}
+ 
  static $clinit() {
   SelectBuilder.$clinit = () =>{};
   SelectBuilder.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ElementBuilderBase.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_dom_builder_shared_SelectBuilder = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ElementBuilderBase.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_dom_builder_shared_SelectBuilder = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_dom_builder_shared_SelectBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

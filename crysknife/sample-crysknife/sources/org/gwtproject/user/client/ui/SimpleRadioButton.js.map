@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SimpleRadioButton.impl.java.js",
-"lineCount":102,
-"mappings":"A;;;;;;;;;;;;;;;MA8Ba,iB;;;;CAAA,W;EAAAA,Q;;;;;;;QAYqB,yC,CAAaC,O;EAAbC,4B;EAE9BA,8J;EAEAA,IAAkBC,WAAlBD,yE;EAGAA,2B;EACAA,mF;EAEAA,mB;;;;;;;;QAaK,yB,CAAyBE,I;EAAzBC,4B;EAAAA,wC;EAAAA,yF;EAAAA,iB;;;;;;;CAAA,wE,CAAyBD,I;EAC9BE,sR;;;;;;;;QAUQ,0C,CAA0BL,O;EAA1BI,4B;EAAAA,wC;EAAAA,6G;EAAAA,iB;;;;;;;CAAA,yF,CAA0BJ,O;EAClCK,6H;EACAA,0K;;;;;;;;CAhDS,4B;EAAAC,wF;;;;;;;;;CAAA,qC;EAAAA,uG;;;;;QAAA,O;EAAAC,oC;EAAAA,iC;EAAAA;",
+"lineCount":71,
+"mappings":"A;;;;;;;;;;;;;;;MA8Ba,iB;;CAAA,W;EAAAA,Q;;;QAYqB,yC,eAAaC,O;EAAbC,4B;EAE9BA,8J;EAEAA,IAAkBC,WAAlBD,yE;EAGAA,2B;EACAA,mF;EAEAA,mB;;;;QAaK,yB,gBAAyBE,I;EAAzBC,4B;EAAAA,wC;EAAAA,yF;EAAAA,iB;;;;CAAA,wE,gBAAyBD,I;EAC9BE,sR;;;;QAUQ,0C,eAA0BL,O;EAA1BI,4B;EAAAA,wC;EAAAA,6G;EAAAA,iB;;;;CAAA,yF,eAA0BJ,O;EAClCK,6H;EACAA,0K;;;;CAhDS,4B;EAAAC,uF;;;;CAAA,qC;EAAAA,sG;;;QAAA,O;EAAAC,oC;EAAAA,iC;EAAAA;",
 "sources":["SimpleRadioButton.java"],
 "names":["org.gwtproject.user.client.ui.SimpleRadioButton.<synthetic: ctor_js>","element","org.gwtproject.user.client.ui.SimpleRadioButton.wrap","radioButton","name","org.gwtproject.user.client.ui.SimpleRadioButton.<synthetic: ctor_create>","org.gwtproject.user.client.ui.SimpleRadioButton.<init>","org.gwtproject.user.client.ui.SimpleRadioButton.setValue","org.gwtproject.user.client.ui.SimpleRadioButton.<clinit>"]
 }

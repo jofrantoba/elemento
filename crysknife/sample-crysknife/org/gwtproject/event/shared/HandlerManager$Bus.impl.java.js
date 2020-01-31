@@ -25,116 +25,67 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
 class Bus extends EventBus {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Map<Type<?>, Map<*, List<?>>>} */
+  /**@type {Map<Type<?>, Map<*, List<?>>>}*/
   this.f_map__org_gwtproject_event_shared_HandlerManager_Bus_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isReverseOrder__org_gwtproject_event_shared_HandlerManager_Bus_ = false;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_firingDepth__org_gwtproject_event_shared_HandlerManager_Bus_ = 0;
-  /** @public {List<Command>} */
+  /**@type {List<Command>}*/
   this.f_deferredDeltas__org_gwtproject_event_shared_HandlerManager_Bus_;
  }
- /**
-  * @param {boolean} fireInReverseOrder
-  * @return {!Bus}
-  * @public
-  */
- static $create__boolean(fireInReverseOrder) {
+ /** @return {!Bus} */
+ static $create__boolean(/** boolean */ fireInReverseOrder) {
   Bus.$clinit();
   let $instance = new Bus();
   $instance.$ctor__org_gwtproject_event_shared_HandlerManager_Bus__boolean(fireInReverseOrder);
   return $instance;
  }
- /**
-  * @param {boolean} fireInReverseOrder
-  * @public
-  */
- $ctor__org_gwtproject_event_shared_HandlerManager_Bus__boolean(fireInReverseOrder) {
+ 
+ $ctor__org_gwtproject_event_shared_HandlerManager_Bus__boolean(/** boolean */ fireInReverseOrder) {
   this.$ctor__org_gwtproject_event_shared_EventBus__();
   this.$init___$p_org_gwtproject_event_shared_HandlerManager_Bus();
   this.f_isReverseOrder__org_gwtproject_event_shared_HandlerManager_Bus_ = fireInReverseOrder;
  }
- /**
-  * @override
-  * @template H
-  * @param {Type<H>} type
-  * @param {H} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addHandler__org_gwtproject_event_shared_Event_Type__java_lang_Object(type, handler) {
+ /** @override @template H @return {HandlerRegistration} */
+ m_addHandler__org_gwtproject_event_shared_Event_Type__java_lang_Object(/** Type<H> */ type, /** H */ handler) {
   return this.m_doAdd__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, null, handler);
  }
- /**
-  * @override
-  * @template H
-  * @param {Type<H>} type
-  * @param {*} source
-  * @param {H} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addHandlerToSource__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object(type, source, handler) {
+ /** @override @template H @return {HandlerRegistration} */
+ m_addHandlerToSource__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object(/** Type<H> */ type, /** * */ source, /** H */ handler) {
   if ($Equality.$same(source, null)) {
    throw $Exceptions.toJs(NullPointerException.$create__java_lang_String("Cannot add a handler with a null source"));
   }
   return this.m_doAdd__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, source, handler);
  }
- /**
-  * @override
-  * @param {Event<?>} event
-  * @public
-  */
- m_fireEvent__org_gwtproject_event_shared_Event(event) {
+ /** @override */
+ m_fireEvent__org_gwtproject_event_shared_Event(/** Event<?> */ event) {
   this.m_doFire__org_gwtproject_event_shared_Event__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(event, null);
  }
- /**
-  * @override
-  * @param {Event<?>} event
-  * @param {*} source
-  * @public
-  */
- m_fireEventFromSource__org_gwtproject_event_shared_Event__java_lang_Object(event, source) {
+ /** @override */
+ m_fireEventFromSource__org_gwtproject_event_shared_Event__java_lang_Object(/** Event<?> */ event, /** * */ source) {
   this.m_doFire__org_gwtproject_event_shared_Event__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(event, source);
  }
- /**
-  * @template H
-  * @param {Type<H>} type
-  * @param {*} source
-  * @param {H} handler
-  * @public
-  */
- m_doRemove__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object(type, source, handler) {
+ /** @template H */
+ m_doRemove__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object(/** Type<H> */ type, /** * */ source, /** H */ handler) {
   if (this.f_firingDepth__org_gwtproject_event_shared_HandlerManager_Bus_ > 0) {
    this.m_enqueueRemove__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, source, handler);
   } else {
    this.m_doRemoveNow__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, source, handler);
   }
  }
- /**
-  * @param {Command} command
-  * @public
-  */
- m_defer__org_gwtproject_event_shared_HandlerManager_Bus_Command_$p_org_gwtproject_event_shared_HandlerManager_Bus(command) {
+ 
+ m_defer__org_gwtproject_event_shared_HandlerManager_Bus_Command_$p_org_gwtproject_event_shared_HandlerManager_Bus(/** Command */ command) {
   if ($Equality.$same(this.f_deferredDeltas__org_gwtproject_event_shared_HandlerManager_Bus_, null)) {
-   this.f_deferredDeltas__org_gwtproject_event_shared_HandlerManager_Bus_ = /**@type {!ArrayList<Command>} */ (ArrayList.$create__());
+   this.f_deferredDeltas__org_gwtproject_event_shared_HandlerManager_Bus_ = /**@type {!ArrayList<Command>}*/ (ArrayList.$create__());
   }
   this.f_deferredDeltas__org_gwtproject_event_shared_HandlerManager_Bus_.add(command);
  }
- /**
-  * @template H
-  * @param {Type<H>} type
-  * @param {*} source
-  * @param {H} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_doAdd__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, source, handler) {
+ /** @template H @return {HandlerRegistration} */
+ m_doAdd__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(/** Type<H> */ type, /** * */ source, /** H */ handler) {
   if ($Equality.$same(type, null)) {
    throw $Exceptions.toJs(NullPointerException.$create__java_lang_String("Cannot add a handler with a null type"));
   }
@@ -150,24 +101,13 @@ class Bus extends EventBus {
    this.m_doRemove__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object(type, source, handler);
   });
  }
- /**
-  * @template H
-  * @param {Type<H>} type
-  * @param {*} source
-  * @param {H} handler
-  * @public
-  */
- m_doAddNow__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, source, handler) {
-  let l = /**@type {List<H>} */ (this.m_ensureHandlerList__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, source));
+ /** @template H */
+ m_doAddNow__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(/** Type<H> */ type, /** * */ source, /** H */ handler) {
+  let l = /**@type {List<H>}*/ (this.m_ensureHandlerList__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, source));
   l.add(handler);
  }
- /**
-  * @template H
-  * @param {Event<H>} event
-  * @param {*} source
-  * @public
-  */
- m_doFire__org_gwtproject_event_shared_Event__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(event, source) {
+ /** @template H */
+ m_doFire__org_gwtproject_event_shared_Event__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(/** Event<H> */ event, /** * */ source) {
   if ($Equality.$same(event, null)) {
    throw $Exceptions.toJs(NullPointerException.$create__java_lang_String("Cannot fire null event"));
   }
@@ -176,7 +116,7 @@ class Bus extends EventBus {
    if (!$Equality.$same(source, null)) {
     EventBus.m_setSourceOfEvent__org_gwtproject_event_shared_Event__java_lang_Object(event, source);
    }
-   let handlers = /**@type {List<H>} */ (this.m_getDispatchList__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(event.m_getAssociatedType__(), source));
+   let handlers = /**@type {List<H>}*/ (this.m_getDispatchList__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(event.m_getAssociatedType__(), source));
    let causes = null;
    let it = this.f_isReverseOrder__org_gwtproject_event_shared_HandlerManager_Bus_ ? handlers.m_listIterator__int(handlers.size()) : handlers.m_listIterator__();
    while (this.f_isReverseOrder__org_gwtproject_event_shared_HandlerManager_Bus_ ? it.m_hasPrevious__() : it.m_hasNext__()) {
@@ -186,9 +126,9 @@ class Bus extends EventBus {
     } catch (__$exc) {
      __$exc = $Exceptions.toJava(__$exc);
      {
-      let e = /**@type {Throwable} */ (__$exc);
+      let e = /**@type {Throwable}*/ (__$exc);
       if ($Equality.$same(causes, null)) {
-       causes = /**@type {!HashSet<Throwable>} */ (HashSet.$create__());
+       causes = /**@type {!HashSet<Throwable>}*/ (HashSet.$create__());
       }
       causes.add(e);
      }
@@ -204,106 +144,68 @@ class Bus extends EventBus {
    }
   }
  }
- /**
-  * @template H
-  * @param {Type<H>} type
-  * @param {*} source
-  * @param {H} handler
-  * @public
-  */
- m_doRemoveNow__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, source, handler) {
-  let l = /**@type {List<H>} */ (this.m_getHandlerList__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, source));
+ /** @template H */
+ m_doRemoveNow__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(/** Type<H> */ type, /** * */ source, /** H */ handler) {
+  let l = /**@type {List<H>}*/ (this.m_getHandlerList__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, source));
   let removed = l.remove(handler);
   if (removed && l.isEmpty()) {
    this.m_prune__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, source);
   }
  }
- /**
-  * @template H
-  * @param {Type<H>} type
-  * @param {*} source
-  * @param {H} handler
-  * @public
-  */
- m_enqueueAdd__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, source, handler) {
+ /** @template H */
+ m_enqueueAdd__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(/** Type<H> */ type, /** * */ source, /** H */ handler) {
   this.m_defer__org_gwtproject_event_shared_HandlerManager_Bus_Command_$p_org_gwtproject_event_shared_HandlerManager_Bus(Command.$adapt(() =>{
    this.m_doAddNow__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, source, handler);
   }));
  }
- /**
-  * @template H
-  * @param {Type<H>} type
-  * @param {*} source
-  * @param {H} handler
-  * @public
-  */
- m_enqueueRemove__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, source, handler) {
+ /** @template H */
+ m_enqueueRemove__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(/** Type<H> */ type, /** * */ source, /** H */ handler) {
   this.m_defer__org_gwtproject_event_shared_HandlerManager_Bus_Command_$p_org_gwtproject_event_shared_HandlerManager_Bus(Command.$adapt(() =>{
    this.m_doRemoveNow__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, source, handler);
   }));
  }
- /**
-  * @template H
-  * @param {Type<H>} type
-  * @param {*} source
-  * @return {List<H>}
-  * @public
-  */
- m_ensureHandlerList__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, source) {
-  let sourceMap = /**@type {Map<*, List<?>>} */ ($Casts.$to(this.f_map__org_gwtproject_event_shared_HandlerManager_Bus_.m_computeIfAbsent__java_lang_Object__java_util_function_Function(type, j_u_function_Function.$adapt((k) =>{
-   let k_1 = /**@type {Type} */ ($Casts.$to(k, Type));
-   return /**@type {!HashMap<*, List<?>>} */ (HashMap.$create__());
+ /** @template H @return {List<H>} */
+ m_ensureHandlerList__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(/** Type<H> */ type, /** * */ source) {
+  let sourceMap = /**@type {Map<*, List<?>>}*/ ($Casts.$to(this.f_map__org_gwtproject_event_shared_HandlerManager_Bus_.m_computeIfAbsent__java_lang_Object__java_util_function_Function(type, j_u_function_Function.$adapt((k) =>{
+   let k_1 = /**@type {Type}*/ ($Casts.$to(k, Type));
+   return /**@type {!HashMap<*, List<?>>}*/ (HashMap.$create__());
   })), Map));
-  let handlers = /**@type {List<H>} */ ($Casts.$to(sourceMap.get(source), List));
+  let handlers = /**@type {List<H>}*/ ($Casts.$to(sourceMap.get(source), List));
   if ($Equality.$same(handlers, null)) {
-   handlers = /**@type {!ArrayList<H>} */ (ArrayList.$create__());
+   handlers = /**@type {!ArrayList<H>}*/ (ArrayList.$create__());
    sourceMap.put(source, handlers);
   }
   return handlers;
  }
- /**
-  * @template H
-  * @param {Type<H>} type
-  * @param {*} source
-  * @return {List<H>}
-  * @public
-  */
- m_getDispatchList__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, source) {
-  let directHandlers = /**@type {List<H>} */ (this.m_getHandlerList__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, source));
+ /** @template H @return {List<H>} */
+ m_getDispatchList__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(/** Type<H> */ type, /** * */ source) {
+  let directHandlers = /**@type {List<H>}*/ (this.m_getHandlerList__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, source));
   if ($Equality.$same(source, null)) {
    return directHandlers;
   }
-  let globalHandlers = /**@type {List<H>} */ (this.m_getHandlerList__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, null));
-  let rtn = /**@type {!ArrayList<H>} */ (ArrayList.$create__java_util_Collection(directHandlers));
+  let globalHandlers = /**@type {List<H>}*/ (this.m_getHandlerList__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, null));
+  let rtn = /**@type {!ArrayList<H>}*/ (ArrayList.$create__java_util_Collection(directHandlers));
   rtn.addAll(globalHandlers);
   return rtn;
  }
- /**
-  * @template H
-  * @param {Type<H>} type
-  * @param {*} source
-  * @return {List<H>}
-  * @public
-  */
- m_getHandlerList__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, source) {
-  let sourceMap = /**@type {Map<*, List<?>>} */ ($Casts.$to(this.f_map__org_gwtproject_event_shared_HandlerManager_Bus_.get(type), Map));
+ /** @template H @return {List<H>} */
+ m_getHandlerList__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(/** Type<H> */ type, /** * */ source) {
+  let sourceMap = /**@type {Map<*, List<?>>}*/ ($Casts.$to(this.f_map__org_gwtproject_event_shared_HandlerManager_Bus_.get(type), Map));
   if ($Equality.$same(sourceMap, null)) {
-   return /**@type {List<H>} */ (Collections.m_emptyList__());
+   return /**@type {List<H>}*/ (Collections.m_emptyList__());
   }
-  let handlers = /**@type {List<H>} */ ($Casts.$to(sourceMap.get(source), List));
+  let handlers = /**@type {List<H>}*/ ($Casts.$to(sourceMap.get(source), List));
   if ($Equality.$same(handlers, null)) {
-   return /**@type {List<H>} */ (Collections.m_emptyList__());
+   return /**@type {List<H>}*/ (Collections.m_emptyList__());
   }
   return handlers;
  }
- /**
-  * @public
-  */
+ 
  m_handleQueuedAddsAndRemoves___$p_org_gwtproject_event_shared_HandlerManager_Bus() {
   if (!$Equality.$same(this.f_deferredDeltas__org_gwtproject_event_shared_HandlerManager_Bus_, null)) {
    try {
     for (let $iterator = this.f_deferredDeltas__org_gwtproject_event_shared_HandlerManager_Bus_.m_iterator__(); $iterator.m_hasNext__(); ) {
-     let c = /**@type {Command} */ ($Casts.$to($iterator.m_next__(), Command));
+     let c = /**@type {Command}*/ ($Casts.$to($iterator.m_next__(), Command));
      c.m_execute__();
     }
    } finally {
@@ -311,74 +213,46 @@ class Bus extends EventBus {
    }
   }
  }
- /**
-  * @param {Type<?>} type
-  * @param {*} source
-  * @public
-  */
- m_prune__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, source) {
-  let sourceMap = /**@type {Map<*, List<?>>} */ ($Casts.$to(this.f_map__org_gwtproject_event_shared_HandlerManager_Bus_.get(type), Map));
-  let pruned = /**@type {List<*>} */ ($Casts.$to(sourceMap.remove(source), List));
+ 
+ m_prune__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(/** Type<?> */ type, /** * */ source) {
+  let sourceMap = /**@type {Map<*, List<?>>}*/ ($Casts.$to(this.f_map__org_gwtproject_event_shared_HandlerManager_Bus_.get(type), Map));
+  let pruned = /**@type {List<*>}*/ ($Casts.$to(sourceMap.remove(source), List));
   $Asserts.$assertWithMessage(!$Equality.$same(pruned, null), "Can't prune what wasn't there");
   $Asserts.$assertWithMessage(pruned.isEmpty(), "Pruned unempty list!");
   if (sourceMap.isEmpty()) {
    this.f_map__org_gwtproject_event_shared_HandlerManager_Bus_.remove(type);
   }
  }
- /**
-  * @template H
-  * @param {Type<H>} type
-  * @param {number} index
-  * @return {H}
-  * @public
-  */
- m_getHandler__org_gwtproject_event_shared_Event_Type__int(type, index) {
+ /** @template H @return {H} */
+ m_getHandler__org_gwtproject_event_shared_Event_Type__int(/** Type<H> */ type, /** number */ index) {
   $Asserts.$assertWithMessage(index < this.m_getHandlerCount__org_gwtproject_event_shared_Event_Type(type), "handlers for " + j_l_String.m_valueOf__java_lang_Object($Objects.m_getClass__java_lang_Object(type)) + " have size: " + this.m_getHandlerCount__org_gwtproject_event_shared_Event_Type(type) + " so do not have a handler at index: " + index);
-  let l = /**@type {List<H>} */ (this.m_getHandlerList__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, null));
+  let l = /**@type {List<H>}*/ (this.m_getHandlerList__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, null));
   return l.getAtIndex(index);
  }
- /**
-  * @param {Type<?>} type
-  * @return {number}
-  * @public
-  */
- m_getHandlerCount__org_gwtproject_event_shared_Event_Type(type) {
-  return /**@type {List<*>} */ (this.m_getHandlerList__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, null)).size();
+ /** @return {number} */
+ m_getHandlerCount__org_gwtproject_event_shared_Event_Type(/** Type<?> */ type) {
+  return /**@type {List<*>}*/ (this.m_getHandlerList__org_gwtproject_event_shared_Event_Type__java_lang_Object_$p_org_gwtproject_event_shared_HandlerManager_Bus(type, null)).size();
  }
- /**
-  * @param {Type<?>} type
-  * @return {boolean}
-  * @public
-  */
- m_isEventHandled__org_gwtproject_event_shared_Event_Type(type) {
+ /** @return {boolean} */
+ m_isEventHandled__org_gwtproject_event_shared_Event_Type(/** Type<?> */ type) {
   return this.f_map__org_gwtproject_event_shared_HandlerManager_Bus_.containsKey(type);
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_event_shared_HandlerManager_Bus() {
-  this.f_map__org_gwtproject_event_shared_HandlerManager_Bus_ = /**@type {!HashMap<Type<?>, Map<*, List<?>>>} */ (HashMap.$create__());
+  this.f_map__org_gwtproject_event_shared_HandlerManager_Bus_ = /**@type {!HashMap<Type<?>, Map<*, List<?>>>}*/ (HashMap.$create__());
   this.f_firingDepth__org_gwtproject_event_shared_HandlerManager_Bus_ = 0;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Bus.$clinit = () =>{};
   Bus.$loadModules();
   EventBus.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Bus;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   NullPointerException = goog.module.get('java.lang.NullPointerException$impl');
   j_l_String = goog.module.get('java.lang.String$impl');

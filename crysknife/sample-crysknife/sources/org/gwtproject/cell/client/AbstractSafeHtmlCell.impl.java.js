@@ -18,88 +18,55 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @extends {AbstractCell<C>}
   */
 class AbstractSafeHtmlCell extends AbstractCell {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {SafeHtmlRenderer<C>} */
+  /**@type {SafeHtmlRenderer<C>}*/
   this.f_renderer__org_gwtproject_cell_client_AbstractSafeHtmlCell_;
  }
- /**
-  * Initialization from constructor 'AbstractSafeHtmlCell(SafeHtmlRenderer, String...)'.
-  * @param {SafeHtmlRenderer<C>} renderer
-  * @param {Array<?string>} consumedEvents
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_AbstractSafeHtmlCell__org_gwtproject_text_shared_SafeHtmlRenderer__arrayOf_java_lang_String(renderer, consumedEvents) {
+ //Initialization from constructor 'AbstractSafeHtmlCell(SafeHtmlRenderer, String...)'.
+ 
+ $ctor__org_gwtproject_cell_client_AbstractSafeHtmlCell__org_gwtproject_text_shared_SafeHtmlRenderer__arrayOf_java_lang_String(/** SafeHtmlRenderer<C> */ renderer, /** Array<?string> */ consumedEvents) {
   this.$ctor__org_gwtproject_cell_client_AbstractCell__arrayOf_java_lang_String(consumedEvents);
   if ($Equality.$same(renderer, null)) {
    throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String("renderer == null"));
   }
   this.f_renderer__org_gwtproject_cell_client_AbstractSafeHtmlCell_ = renderer;
  }
- /**
-  * Initialization from constructor 'AbstractSafeHtmlCell(SafeHtmlRenderer, Set)'.
-  * @param {SafeHtmlRenderer<C>} renderer
-  * @param {Set<?string>} consumedEvents
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_AbstractSafeHtmlCell__org_gwtproject_text_shared_SafeHtmlRenderer__java_util_Set(renderer, consumedEvents) {
+ //Initialization from constructor 'AbstractSafeHtmlCell(SafeHtmlRenderer, Set)'.
+ 
+ $ctor__org_gwtproject_cell_client_AbstractSafeHtmlCell__org_gwtproject_text_shared_SafeHtmlRenderer__java_util_Set(/** SafeHtmlRenderer<C> */ renderer, /** Set<?string> */ consumedEvents) {
   this.$ctor__org_gwtproject_cell_client_AbstractCell__java_util_Set(consumedEvents);
   if ($Equality.$same(renderer, null)) {
    throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String("renderer == null"));
   }
   this.f_renderer__org_gwtproject_cell_client_AbstractSafeHtmlCell_ = renderer;
  }
- /**
-  * @return {SafeHtmlRenderer<C>}
-  * @public
-  */
+ /** @return {SafeHtmlRenderer<C>} */
  m_getRenderer__() {
   return this.f_renderer__org_gwtproject_cell_client_AbstractSafeHtmlCell_;
  }
- /**
-  * @override
-  * @param {Context} context
-  * @param {C} data
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, data, sb) {
+ /** @override */
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ context, /** C */ data, /** SafeHtmlBuilder */ sb) {
   if ($Equality.$same(data, null)) {
-   this.m_render__org_gwtproject_cell_client_Cell_Context__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, /**@type {SafeHtml} */ (null), sb);
+   this.m_render__org_gwtproject_cell_client_Cell_Context__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, /**@type {SafeHtml}*/ (null), sb);
   } else {
    this.m_render__org_gwtproject_cell_client_Cell_Context__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, this.f_renderer__org_gwtproject_cell_client_AbstractSafeHtmlCell_.m_render__java_lang_Object(data), sb);
   }
  }
- /**
-  * @abstract
-  * @param {Context} context
-  * @param {SafeHtml} data
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, data, sb) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_render__org_gwtproject_cell_client_Cell_Context__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ context, /** SafeHtml */ data, /** SafeHtmlBuilder */ sb) {}
+ 
  static $clinit() {
   AbstractSafeHtmlCell.$clinit = () =>{};
   AbstractSafeHtmlCell.$loadModules();
   AbstractCell.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AbstractSafeHtmlCell;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

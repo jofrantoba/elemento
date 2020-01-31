@@ -17,54 +17,41 @@ let Window = goog.forwardDeclare('org.gwtproject.user.window.client.Window$impl'
 let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
 
 class ResizeAnimation extends Animation {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {PopupPanel} */
+  /**@type {PopupPanel}*/
   this.f_curPanel__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isUnloading__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_ = false;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_offsetHeight__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_offsetWidth__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_ = 0;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_showing__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_ = false;
-  /** @public {Timer} */
+  /**@type {Timer}*/
   this.f_showTimer__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_glassShowing__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_ = false;
-  /** @public {HandlerRegistration} */
+  /**@type {HandlerRegistration}*/
   this.f_resizeRegistration__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_;
  }
- /**
-  * @param {PopupPanel} panel
-  * @return {!ResizeAnimation}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_PopupPanel(panel) {
+ /** @return {!ResizeAnimation} */
+ static $create__org_gwtproject_user_client_ui_PopupPanel(/** PopupPanel */ panel) {
   ResizeAnimation.$clinit();
   let $instance = new ResizeAnimation();
   $instance.$ctor__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation__org_gwtproject_user_client_ui_PopupPanel(panel);
   return $instance;
  }
- /**
-  * @param {PopupPanel} panel
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation__org_gwtproject_user_client_ui_PopupPanel(panel) {
+ 
+ $ctor__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation__org_gwtproject_user_client_ui_PopupPanel(/** PopupPanel */ panel) {
   this.$ctor__org_gwtproject_animation_client_Animation__();
   this.$init___$p_org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation();
   this.f_curPanel__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_ = panel;
  }
- /**
-  * @param {boolean} showing
-  * @param {boolean} isUnloading
-  * @public
-  */
- m_setState__boolean__boolean(showing, isUnloading) {
+ 
+ m_setState__boolean__boolean(/** boolean */ showing, /** boolean */ isUnloading) {
   this.f_isUnloading__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_ = isUnloading;
   this.m_cancel__();
   if (!$Equality.$same(this.f_showTimer__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_, null)) {
@@ -97,10 +84,7 @@ class ResizeAnimation extends Animation {
    this.m_onInstantaneousRun___$p_org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation();
   }
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onComplete__() {
   if (!this.f_showing__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_) {
    this.m_maybeShowGlass___$p_org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation();
@@ -111,22 +95,15 @@ class ResizeAnimation extends Animation {
   PopupPanel.f_impl__org_gwtproject_user_client_ui_PopupPanel_.m_setClip__org_gwtproject_dom_client_Element__java_lang_String(this.f_curPanel__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_.m_getElement__(), "rect(auto, auto, auto, auto)");
   $Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(this.f_curPanel__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_.m_getElement__().style, "overflow", "visible");
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onStart__() {
   this.f_offsetHeight__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_ = this.f_curPanel__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_.m_getOffsetHeight__();
   this.f_offsetWidth__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_ = this.f_curPanel__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_.m_getOffsetWidth__();
   $Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(this.f_curPanel__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_.m_getElement__().style, "overflow", "hidden");
   super.m_onStart__();
  }
- /**
-  * @override
-  * @param {number} progress
-  * @public
-  */
- m_onUpdate__double(progress) {
+ /** @override */
+ m_onUpdate__double(/** number */ progress) {
   if (!this.f_showing__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_) {
    progress = 1.0 - progress;
   }
@@ -157,20 +134,11 @@ class ResizeAnimation extends Animation {
   }
   PopupPanel.f_impl__org_gwtproject_user_client_ui_PopupPanel_.m_setClip__org_gwtproject_dom_client_Element__java_lang_String(this.f_curPanel__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_.m_getElement__(), this.m_getRectString__int__int__int__int_$p_org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation(top, right, bottom, left));
  }
- /**
-  * @param {number} top
-  * @param {number} right
-  * @param {number} bottom
-  * @param {number} left
-  * @return {?string}
-  * @public
-  */
- m_getRectString__int__int__int__int_$p_org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation(top, right, bottom, left) {
+ /** @return {?string} */
+ m_getRectString__int__int__int__int_$p_org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation(/** number */ top, /** number */ right, /** number */ bottom, /** number */ left) {
   return "rect(" + top + "px, " + right + "px, " + bottom + "px, " + left + "px)";
  }
- /**
-  * @public
-  */
+ 
  m_maybeShowGlass___$p_org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation() {
   if (this.f_showing__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_) {
    if (this.f_curPanel__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_.f_isGlassEnabled__org_gwtproject_user_client_ui_PopupPanel_) {
@@ -186,9 +154,7 @@ class ResizeAnimation extends Animation {
    this.f_glassShowing__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_ = false;
   }
  }
- /**
-  * @public
-  */
+ 
  m_onInstantaneousRun___$p_org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation() {
   this.m_maybeShowGlass___$p_org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation();
   if (this.f_showing__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_) {
@@ -204,32 +170,22 @@ class ResizeAnimation extends Animation {
   }
   $Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(this.f_curPanel__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_.m_getElement__().style, "overflow", "visible");
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation() {
   this.f_curPanel__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_ = null;
   this.f_offsetWidth__org_gwtproject_user_client_ui_PopupPanel_ResizeAnimation_ = -1;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ResizeAnimation.$clinit = () =>{};
   ResizeAnimation.$loadModules();
   Animation.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ResizeAnimation;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   Document_$Overlay = goog.module.get('org.gwtproject.dom.client.Document.$Overlay$impl');

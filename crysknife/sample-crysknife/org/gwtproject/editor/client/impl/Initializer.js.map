@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Initializer.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;;;MA0Ba,W;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,sB;EAAAA,kC;EAAAA,mE;EAAAA,iB;;;;;CAAA,sD;EAAAC,4D;;;;;;;;;CAGQ,mD,CAAuBC,G;EACxCC,IAC6BC,QAD7BD,qH;EAIAA,IAAqBE,aAArBF,iC;EACAA;GACEA,mFADFA;G;EAKAA,IAAyBG,WAAzBH,+B;EACAA;GAEEA,IACYI,KADZJ,iCAFFA;GAIEA,8FAJFA;G;EAOAA,sE;;;;;QAtBS,O;EAAAK,8B;EAAAA,2B;EAAAA;",
+"lineCount":46,
+"mappings":"A;;;;;;;;;;;MA0Ba,W;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,sB;EAAAA,kC;EAAAA,mE;EAAAA,iB;;;CAAA,sD;EAAAC,4D;;;CAGQ,mD,yBAAuBC,G;EACxCC,IAC6BC,QAD7BD,oH;EAIAA,IAAqBE,aAArBF,iC;EACAA;GACEA,mFADFA;G;EAKAA,IAAyBG,WAAzBH,+B;EACAA;GAEEA,IACYI,KADZJ,iCAFFA;GAIEA,8FAJFA;G;EAOAA,sE;;;QAtBS,O;EAAAK,8B;EAAAA,2B;EAAAA;",
 "sources":["Initializer.java"],
 "names":["org.gwtproject.editor.client.impl.Initializer.<synthetic: ctor_js>","org.gwtproject.editor.client.impl.Initializer.<synthetic: ctor_create>","org.gwtproject.editor.client.impl.Initializer.<init>","ctx","org.gwtproject.editor.client.impl.Initializer.visit","delegate","asHasDelegate","asComposite","chain","org.gwtproject.editor.client.impl.Initializer.<clinit>"]
 }

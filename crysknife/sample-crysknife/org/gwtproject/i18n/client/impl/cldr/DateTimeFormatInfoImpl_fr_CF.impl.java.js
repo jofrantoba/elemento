@@ -4,47 +4,32 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const DateTimeFormatInfoImpl__fr = goog.require('org.gwtproject.i18n.client.impl.cldr.DateTimeFormatInfoImpl_fr$impl');
 
 class DateTimeFormatInfoImpl__fr__CF extends DateTimeFormatInfoImpl__fr {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!DateTimeFormatInfoImpl__fr__CF}
-  * @public
-  */
+ /** @return {!DateTimeFormatInfoImpl__fr__CF} */
  static $create__() {
   DateTimeFormatInfoImpl__fr__CF.$clinit();
   let $instance = new DateTimeFormatInfoImpl__fr__CF();
   $instance.$ctor__org_gwtproject_i18n_client_impl_cldr_DateTimeFormatInfoImpl_fr_CF__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_i18n_client_impl_cldr_DateTimeFormatInfoImpl_fr_CF__() {
   this.$ctor__org_gwtproject_i18n_client_impl_cldr_DateTimeFormatInfoImpl_fr__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DateTimeFormatInfoImpl__fr__CF.$clinit = () =>{};
   DateTimeFormatInfoImpl__fr__CF.$loadModules();
   DateTimeFormatInfoImpl__fr.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DateTimeFormatInfoImpl__fr__CF;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

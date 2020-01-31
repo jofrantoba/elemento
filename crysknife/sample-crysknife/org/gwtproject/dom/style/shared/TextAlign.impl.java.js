@@ -18,80 +18,48 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @implements {HasCssName}
   */
 class TextAlign extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_dom_style_shared_TextAlign__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_dom_style_shared_TextAlign__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @abstract
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @override @return {?string} */
  m_getCssName__() {}
- /**
-  * @param {string} name
-  * @return {!TextAlign}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!TextAlign} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   TextAlign.$clinit();
   if ($Equality.$same(TextAlign.f_namesToValuesMap__org_gwtproject_dom_style_shared_TextAlign_, null)) {
    TextAlign.f_namesToValuesMap__org_gwtproject_dom_style_shared_TextAlign_ = $Enums.createMapFromValues(TextAlign.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, TextAlign.f_namesToValuesMap__org_gwtproject_dom_style_shared_TextAlign_);
  }
- /**
-  * @return {!Array<!TextAlign>}
-  * @public
-  */
+ /** @return {!Array<!TextAlign>} */
  static m_values__() {
   TextAlign.$clinit();
-  return /**@type {!Array<TextAlign>} */ ($Arrays.$init([TextAlign.$f_CENTER__org_gwtproject_dom_style_shared_TextAlign, TextAlign.$f_JUSTIFY__org_gwtproject_dom_style_shared_TextAlign, TextAlign.$f_LEFT__org_gwtproject_dom_style_shared_TextAlign, TextAlign.$f_RIGHT__org_gwtproject_dom_style_shared_TextAlign], TextAlign));
+  return /**@type {!Array<TextAlign>}*/ ($Arrays.$init([TextAlign.$f_CENTER__org_gwtproject_dom_style_shared_TextAlign, TextAlign.$f_JUSTIFY__org_gwtproject_dom_style_shared_TextAlign, TextAlign.$f_LEFT__org_gwtproject_dom_style_shared_TextAlign, TextAlign.$f_RIGHT__org_gwtproject_dom_style_shared_TextAlign], TextAlign));
  }
- /**
-  * @return {!TextAlign}
-  * @public
-  */
+ /** @return {!TextAlign} */
  static get f_CENTER__org_gwtproject_dom_style_shared_TextAlign() {
   return (TextAlign.$clinit(), TextAlign.$f_CENTER__org_gwtproject_dom_style_shared_TextAlign);
  }
- /**
-  * @return {!TextAlign}
-  * @public
-  */
+ /** @return {!TextAlign} */
  static get f_JUSTIFY__org_gwtproject_dom_style_shared_TextAlign() {
   return (TextAlign.$clinit(), TextAlign.$f_JUSTIFY__org_gwtproject_dom_style_shared_TextAlign);
  }
- /**
-  * @return {!TextAlign}
-  * @public
-  */
+ /** @return {!TextAlign} */
  static get f_LEFT__org_gwtproject_dom_style_shared_TextAlign() {
   return (TextAlign.$clinit(), TextAlign.$f_LEFT__org_gwtproject_dom_style_shared_TextAlign);
  }
- /**
-  * @return {!TextAlign}
-  * @public
-  */
+ /** @return {!TextAlign} */
  static get f_RIGHT__org_gwtproject_dom_style_shared_TextAlign() {
   return (TextAlign.$clinit(), TextAlign.$f_RIGHT__org_gwtproject_dom_style_shared_TextAlign);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TextAlign.$clinit = () =>{};
   TextAlign.$loadModules();
@@ -102,17 +70,11 @@ class TextAlign extends Enum {
   TextAlign.$f_RIGHT__org_gwtproject_dom_style_shared_TextAlign = $4.$create__java_lang_String__int($Util.$makeEnumName("RIGHT"), TextAlign.$ordinal$f_RIGHT__org_gwtproject_dom_style_shared_TextAlign);
   TextAlign.f_namesToValuesMap__org_gwtproject_dom_style_shared_TextAlign_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TextAlign;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.dom.style.shared.TextAlign.$1$impl');
@@ -128,23 +90,23 @@ $Util.$setClassMetadataForEnum(TextAlign, 'org.gwtproject.dom.style.shared.TextA
 
 HasCssName.$markImplementor(TextAlign);
 
-/** @private {!TextAlign} */
+/**@private {!TextAlign}*/
 TextAlign.$f_CENTER__org_gwtproject_dom_style_shared_TextAlign;
-/** @private {!TextAlign} */
+/**@private {!TextAlign}*/
 TextAlign.$f_JUSTIFY__org_gwtproject_dom_style_shared_TextAlign;
-/** @private {!TextAlign} */
+/**@private {!TextAlign}*/
 TextAlign.$f_LEFT__org_gwtproject_dom_style_shared_TextAlign;
-/** @private {!TextAlign} */
+/**@private {!TextAlign}*/
 TextAlign.$f_RIGHT__org_gwtproject_dom_style_shared_TextAlign;
-/** @public {Map<?string, !TextAlign>} */
+/**@type {Map<?string, !TextAlign>}*/
 TextAlign.f_namesToValuesMap__org_gwtproject_dom_style_shared_TextAlign_;
-/** @public {number} @const */
+/**@const {number}*/
 TextAlign.$ordinal$f_CENTER__org_gwtproject_dom_style_shared_TextAlign = 0;
-/** @public {number} @const */
+/**@const {number}*/
 TextAlign.$ordinal$f_JUSTIFY__org_gwtproject_dom_style_shared_TextAlign = 1;
-/** @public {number} @const */
+/**@const {number}*/
 TextAlign.$ordinal$f_LEFT__org_gwtproject_dom_style_shared_TextAlign = 2;
-/** @public {number} @const */
+/**@const {number}*/
 TextAlign.$ordinal$f_RIGHT__org_gwtproject_dom_style_shared_TextAlign = 3;
 
 exports = TextAlign; 

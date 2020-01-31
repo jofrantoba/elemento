@@ -12,38 +12,25 @@ let View = goog.forwardDeclare('org.gwtproject.user.cellview.client.AbstractHasD
  * @implements {ScheduledCommand}
   */
 class $1 extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {View<T>} */
+  /**@type {View<T>}*/
   this.f_$outer_this__org_gwtproject_user_cellview_client_AbstractHasData_View_1;
  }
- /**
-  * @template T
-  * @param {View<T>} $outer_this
-  * @return {!$1<T>}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_AbstractHasData_View($outer_this) {
+ /** @template T @return {!$1<T>} */
+ static $create__org_gwtproject_user_cellview_client_AbstractHasData_View(/** View<T> */ $outer_this) {
   $1.$clinit();
   let $instance = new $1();
   $instance.$ctor__org_gwtproject_user_cellview_client_AbstractHasData_View_1__org_gwtproject_user_cellview_client_AbstractHasData_View($outer_this);
   return $instance;
  }
- /**
-  * @param {View<T>} $outer_this
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_AbstractHasData_View_1__org_gwtproject_user_cellview_client_AbstractHasData_View($outer_this) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_AbstractHasData_View_1__org_gwtproject_user_cellview_client_AbstractHasData_View(/** View<T> */ $outer_this) {
   this.f_$outer_this__org_gwtproject_user_cellview_client_AbstractHasData_View_1 = $outer_this;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_execute__() {
   if (!this.f_$outer_this__org_gwtproject_user_cellview_client_AbstractHasData_View_1.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.m_resetFocusOnCell__()) {
    let elem = this.f_$outer_this__org_gwtproject_user_cellview_client_AbstractHasData_View_1.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.m_getKeyboardSelectedElement__();
@@ -52,25 +39,17 @@ class $1 extends j_l_Object {
    }
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $1.$clinit = () =>{};
   $1.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $1;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
  }

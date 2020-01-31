@@ -28,49 +28,35 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @deprecated
   */
 class SplitPanel extends Panel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Array<Widget>} */
+  /**@type {Array<Widget>}*/
   this.f_widgets__org_gwtproject_user_client_ui_SplitPanel_;
-  /** @public {Array<Object>} */
+  /**@type {Array<Object>}*/
   this.f_elements__org_gwtproject_user_client_ui_SplitPanel_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_splitElem__org_gwtproject_user_client_ui_SplitPanel_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isResizing__org_gwtproject_user_client_ui_SplitPanel_ = false;
  }
- /**
-  * @param {Object} elem
-  * @public
-  */
- static m_addAbsolutePositoning__org_gwtproject_dom_client_Element(elem) {
+ 
+ static m_addAbsolutePositoning__org_gwtproject_dom_client_Element(/** Object */ elem) {
   SplitPanel.$clinit();
   $Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(elem.style, "position", "absolute");
  }
- /**
-  * @param {Object} elem
-  * @public
-  */
- static m_addClipping__org_gwtproject_dom_client_Element(elem) {
+ 
+ static m_addClipping__org_gwtproject_dom_client_Element(/** Object */ elem) {
   SplitPanel.$clinit();
   $Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(elem.style, "overflow", "hidden");
  }
- /**
-  * @param {Object} elem
-  * @public
-  */
- static m_addScrolling__org_gwtproject_dom_client_Element(elem) {
+ 
+ static m_addScrolling__org_gwtproject_dom_client_Element(/** Object */ elem) {
   SplitPanel.$clinit();
   $Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(elem.style, "overflow", "auto");
  }
- /**
-  * @param {Object} elem
-  * @public
-  */
- static m_expandToFitParentUsingCssOffsets__org_gwtproject_dom_client_Element(elem) {
+ 
+ static m_expandToFitParentUsingCssOffsets__org_gwtproject_dom_client_Element(/** Object */ elem) {
   SplitPanel.$clinit();
   let zeroSize = "0px";
   SplitPanel.m_addAbsolutePositoning__org_gwtproject_dom_client_Element(elem);
@@ -79,11 +65,8 @@ class SplitPanel extends Panel {
   SplitPanel.m_setTop__org_gwtproject_dom_client_Element__java_lang_String(elem, zeroSize);
   SplitPanel.m_setBottom__org_gwtproject_dom_client_Element__java_lang_String(elem, zeroSize);
  }
- /**
-  * @param {Object} elem
-  * @public
-  */
- static m_expandToFitParentUsingPercentages__org_gwtproject_dom_client_Element(elem) {
+ 
+ static m_expandToFitParentUsingPercentages__org_gwtproject_dom_client_Element(/** Object */ elem) {
   SplitPanel.$clinit();
   let zeroSize = "0px";
   let fullSize = "100%";
@@ -93,107 +76,61 @@ class SplitPanel extends Panel {
   SplitPanel.m_setWidth__org_gwtproject_dom_client_Element__java_lang_String(elem, fullSize);
   SplitPanel.m_setHeight__org_gwtproject_dom_client_Element__java_lang_String(elem, fullSize);
  }
- /**
-  * @param {Object} elem
-  * @return {number}
-  * @public
-  */
- static m_getOffsetHeight__org_gwtproject_dom_client_Element(elem) {
+ /** @return {number} */
+ static m_getOffsetHeight__org_gwtproject_dom_client_Element(/** Object */ elem) {
   SplitPanel.$clinit();
   return Element_$Overlay.m_getPropertyInt__$devirt__org_gwtproject_dom_client_Element__java_lang_String(elem, "offsetHeight");
  }
- /**
-  * @param {Object} elem
-  * @return {number}
-  * @public
-  */
- static m_getOffsetWidth__org_gwtproject_dom_client_Element(elem) {
+ /** @return {number} */
+ static m_getOffsetWidth__org_gwtproject_dom_client_Element(/** Object */ elem) {
   SplitPanel.$clinit();
   return Element_$Overlay.m_getPropertyInt__$devirt__org_gwtproject_dom_client_Element__java_lang_String(elem, "offsetWidth");
  }
- /**
-  * @param {Object} elem
-  * @return {Object}
-  * @public
-  */
- static m_preventBoxStyles__org_gwtproject_dom_client_Element(elem) {
+ /** @return {Object} */
+ static m_preventBoxStyles__org_gwtproject_dom_client_Element(/** Object */ elem) {
   SplitPanel.$clinit();
   DOM.m_setIntStyleAttribute__org_gwtproject_dom_client_Element__java_lang_String__int(elem, "padding", 0);
   DOM.m_setIntStyleAttribute__org_gwtproject_dom_client_Element__java_lang_String__int(elem, "margin", 0);
   $Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(elem.style, "border", "none");
   return elem;
  }
- /**
-  * @param {Object} elem
-  * @param {?string} size
-  * @public
-  */
- static m_setBottom__org_gwtproject_dom_client_Element__java_lang_String(elem, size) {
+ 
+ static m_setBottom__org_gwtproject_dom_client_Element__java_lang_String(/** Object */ elem, /** ?string */ size) {
   SplitPanel.$clinit();
   $Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(elem.style, "bottom", size);
  }
- /**
-  * @param {Object} elem
-  * @param {?string} className
-  * @public
-  */
- static m_setClassname__org_gwtproject_dom_client_Element__java_lang_String(elem, className) {
+ 
+ static m_setClassname__org_gwtproject_dom_client_Element__java_lang_String(/** Object */ elem, /** ?string */ className) {
   SplitPanel.$clinit();
   Element_$Overlay.m_setPropertyString__$devirt__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(elem, "className", className);
  }
- /**
-  * @param {Object} elem
-  * @param {?string} height
-  * @public
-  */
- static m_setHeight__org_gwtproject_dom_client_Element__java_lang_String(elem, height) {
+ 
+ static m_setHeight__org_gwtproject_dom_client_Element__java_lang_String(/** Object */ elem, /** ?string */ height) {
   SplitPanel.$clinit();
   $Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(elem.style, "height", height);
  }
- /**
-  * @param {Object} elem
-  * @param {?string} left
-  * @public
-  */
- static m_setLeft__org_gwtproject_dom_client_Element__java_lang_String(elem, left) {
+ 
+ static m_setLeft__org_gwtproject_dom_client_Element__java_lang_String(/** Object */ elem, /** ?string */ left) {
   SplitPanel.$clinit();
   $Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(elem.style, "left", left);
  }
- /**
-  * @param {Object} elem
-  * @param {?string} right
-  * @public
-  */
- static m_setRight__org_gwtproject_dom_client_Element__java_lang_String(elem, right) {
+ 
+ static m_setRight__org_gwtproject_dom_client_Element__java_lang_String(/** Object */ elem, /** ?string */ right) {
   SplitPanel.$clinit();
   $Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(elem.style, "right", right);
  }
- /**
-  * @param {Object} elem
-  * @param {?string} top
-  * @public
-  */
- static m_setTop__org_gwtproject_dom_client_Element__java_lang_String(elem, top) {
+ 
+ static m_setTop__org_gwtproject_dom_client_Element__java_lang_String(/** Object */ elem, /** ?string */ top) {
   SplitPanel.$clinit();
   $Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(elem.style, "top", top);
  }
- /**
-  * @param {Object} elem
-  * @param {?string} width
-  * @public
-  */
- static m_setWidth__org_gwtproject_dom_client_Element__java_lang_String(elem, width) {
+ 
+ static m_setWidth__org_gwtproject_dom_client_Element__java_lang_String(/** Object */ elem, /** ?string */ width) {
   SplitPanel.$clinit();
   $Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(elem.style, "width", width);
  }
- /**
-  * @param {Object} mainElem
-  * @param {Object} splitElem
-  * @param {Object} headElem
-  * @param {Object} tailElem
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_SplitPanel__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(mainElem, splitElem, headElem, tailElem) {
+ 
+ $ctor__org_gwtproject_user_client_ui_SplitPanel__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(/** Object */ mainElem, /** Object */ splitElem, /** Object */ headElem, /** Object */ tailElem) {
   this.$ctor__org_gwtproject_user_client_ui_Panel__();
   this.$init___$p_org_gwtproject_user_client_ui_SplitPanel();
   this.m_setElement__org_gwtproject_dom_client_Element(mainElem);
@@ -214,12 +151,8 @@ class SplitPanel extends Panel {
    $Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(SplitPanel.f_glassElem__org_gwtproject_user_client_ui_SplitPanel_.style, "filter", "alpha(opacity=0)");
   }
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override */
+ m_add__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   if ($Equality.$same(this.m_getWidget__int(0), null)) {
    this.m_setWidget__int__org_gwtproject_user_client_ui_Widget(0, w);
   } else if ($Equality.$same(this.m_getWidget__int(1), null)) {
@@ -228,27 +161,16 @@ class SplitPanel extends Panel {
    throw $Exceptions.toJs(IllegalStateException.$create__java_lang_String("A Splitter can only contain two Widgets."));
   }
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isResizing__() {
   return this.f_isResizing__org_gwtproject_user_client_ui_SplitPanel_;
  }
- /**
-  * @override
-  * @return {Iterator<Widget>}
-  * @public
-  */
+ /** @override @return {Iterator<Widget>} */
  m_iterator__() {
   return WidgetIterators.m_createWidgetIterator__org_gwtproject_user_client_ui_HasWidgets__arrayOf_org_gwtproject_user_client_ui_Widget(this, this.f_widgets__org_gwtproject_user_client_ui_SplitPanel_);
  }
- /**
-  * @override
-  * @param {Event} event
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_user_client_Event(event) {
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_user_client_Event(/** Event */ event) {
   switch (DOM.m_eventGetType__org_gwtproject_user_client_Event(event)) {
    case Event.f_ONMOUSEDOWN__org_gwtproject_user_client_Event: 
     {
@@ -287,13 +209,8 @@ class SplitPanel extends Panel {
   }
   super.m_onBrowserEvent__org_gwtproject_user_client_Event(event);
  }
- /**
-  * @override
-  * @param {Widget} widget
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_Widget(widget) {
+ /** @override @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_Widget(/** Widget */ widget) {
   if ($Equality.$same(this.f_widgets__org_gwtproject_user_client_ui_SplitPanel_[0], widget)) {
    this.m_setWidget__int__org_gwtproject_user_client_ui_Widget(0, null);
    return true;
@@ -303,50 +220,27 @@ class SplitPanel extends Panel {
   }
   return false;
  }
- /**
-  * @abstract
-  * @param {?string} size
-  * @public
-  */
- m_setSplitPosition__java_lang_String(size) {}
- /**
-  * @param {number} index
-  * @return {Object}
-  * @public
-  */
- m_getElement__int(index) {
+ /** @abstract */
+ m_setSplitPosition__java_lang_String(/** ?string */ size) {}
+ /** @return {Object} */
+ m_getElement__int(/** number */ index) {
   return this.f_elements__org_gwtproject_user_client_ui_SplitPanel_[index];
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getSplitElement__() {
   return this.f_splitElem__org_gwtproject_user_client_ui_SplitPanel_;
  }
- /**
-  * @param {number} index
-  * @return {Widget}
-  * @public
-  */
- m_getWidget__int(index) {
+ /** @return {Widget} */
+ m_getWidget__int(/** number */ index) {
   return this.f_widgets__org_gwtproject_user_client_ui_SplitPanel_[index];
  }
- /**
-  * @override
-  * @param {?string} baseID
-  * @public
-  */
- m_onEnsureDebugId__java_lang_String(baseID) {
+ /** @override */
+ m_onEnsureDebugId__java_lang_String(/** ?string */ baseID) {
   super.m_onEnsureDebugId__java_lang_String(baseID);
   UIObject.m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(this.f_splitElem__org_gwtproject_user_client_ui_SplitPanel_, baseID, "splitter");
  }
- /**
-  * @param {number} index
-  * @param {Widget} w
-  * @public
-  */
- m_setWidget__int__org_gwtproject_user_client_ui_Widget(index, w) {
+ 
+ m_setWidget__int__org_gwtproject_user_client_ui_Widget(/** number */ index, /** Widget */ w) {
   let oldWidget = this.f_widgets__org_gwtproject_user_client_ui_SplitPanel_[index];
   if ($Equality.$same(oldWidget, w)) {
    return;
@@ -368,26 +262,12 @@ class SplitPanel extends Panel {
    this.m_adopt__org_gwtproject_user_client_ui_Widget(w);
   }
  }
- /**
-  * @abstract
-  * @param {number} x
-  * @param {number} y
-  * @public
-  */
- m_onSplitterResize__int__int_$pp_org_gwtproject_user_client_ui(x, y) {}
- /**
-  * @abstract
-  * @param {number} x
-  * @param {number} y
-  * @public
-  */
- m_onSplitterResizeStarted__int__int_$pp_org_gwtproject_user_client_ui(x, y) {}
- /**
-  * @param {number} x
-  * @param {number} y
-  * @public
-  */
- m_startResizingFrom__int__int_$p_org_gwtproject_user_client_ui_SplitPanel(x, y) {
+ /** @abstract */
+ m_onSplitterResize__int__int_$pp_org_gwtproject_user_client_ui(/** number */ x, /** number */ y) {}
+ /** @abstract */
+ m_onSplitterResizeStarted__int__int_$pp_org_gwtproject_user_client_ui(/** number */ x, /** number */ y) {}
+ 
+ m_startResizingFrom__int__int_$p_org_gwtproject_user_client_ui_SplitPanel(/** number */ x, /** number */ y) {
   this.f_isResizing__org_gwtproject_user_client_ui_SplitPanel_ = true;
   this.m_onSplitterResizeStarted__int__int_$pp_org_gwtproject_user_client_ui(x, y);
   let height = Element_$Overlay.m_getScrollHeight__$devirt__org_gwtproject_dom_client_Element(RootPanel.m_getBodyElement__()) - 1;
@@ -396,59 +276,39 @@ class SplitPanel extends Panel {
   $Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(SplitPanel.f_glassElem__org_gwtproject_user_client_ui_SplitPanel_.style, "width", width + "px");
   RootPanel.m_getBodyElement__().appendChild(SplitPanel.f_glassElem__org_gwtproject_user_client_ui_SplitPanel_);
  }
- /**
-  * @public
-  */
+ 
  m_stopResizing___$p_org_gwtproject_user_client_ui_SplitPanel() {
   this.f_isResizing__org_gwtproject_user_client_ui_SplitPanel_ = false;
   RootPanel.m_getBodyElement__().removeChild(SplitPanel.f_glassElem__org_gwtproject_user_client_ui_SplitPanel_);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_SplitPanel() {
-  this.f_widgets__org_gwtproject_user_client_ui_SplitPanel_ = /**@type {!Array<Widget>} */ ($Arrays.$create([2], Widget));
+  this.f_widgets__org_gwtproject_user_client_ui_SplitPanel_ = /**@type {!Array<Widget>}*/ ($Arrays.$create([2], Widget));
   this.f_elements__org_gwtproject_user_client_ui_SplitPanel_ = new Array(2);
   this.f_isResizing__org_gwtproject_user_client_ui_SplitPanel_ = false;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SplitPanel.$clinit = () =>{};
   SplitPanel.$loadModules();
   Panel.$clinit();
   SplitPanel.f_glassElem__org_gwtproject_user_client_ui_SplitPanel_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SplitPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');
   Iterable = goog.module.get('java.lang.Iterable$impl');
@@ -471,7 +331,7 @@ class SplitPanel extends Panel {
 }
 $Util.$setClassMetadata(SplitPanel, 'org.gwtproject.user.client.ui.SplitPanel');
 
-/** @public {Object} */
+/**@type {Object}*/
 SplitPanel.f_glassElem__org_gwtproject_user_client_ui_SplitPanel_;
 
 exports = SplitPanel; 

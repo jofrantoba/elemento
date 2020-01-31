@@ -42,196 +42,130 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {IsEditor<LeafValueEditor<?boolean>>}
   */
 class CheckBox extends ButtonBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {DirectionalTextHelper} */
+  /**@type {DirectionalTextHelper}*/
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_CheckBox;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_inputElem__org_gwtproject_user_client_ui_CheckBox;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_labelElem__org_gwtproject_user_client_ui_CheckBox;
-  /** @public {LeafValueEditor<?boolean>} */
+  /**@type {LeafValueEditor<?boolean>}*/
   this.f_editor__org_gwtproject_user_client_ui_CheckBox_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_valueChangeHandlerInitialized__org_gwtproject_user_client_ui_CheckBox_ = false;
  }
- /**
-  * Factory method corresponding to constructor 'CheckBox()'.
-  * @return {!CheckBox}
-  * @public
-  */
+ //Factory method corresponding to constructor 'CheckBox()'.
+ /** @return {!CheckBox} */
  static $create__() {
   CheckBox.$clinit();
   let $instance = new CheckBox();
   $instance.$ctor__org_gwtproject_user_client_ui_CheckBox__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'CheckBox()'.
-  * @public
-  */
+ //Initialization from constructor 'CheckBox()'.
+ 
  $ctor__org_gwtproject_user_client_ui_CheckBox__() {
   this.$ctor__org_gwtproject_user_client_ui_CheckBox__org_gwtproject_dom_client_Element(DOM.m_createInputCheck__());
   this.m_setStyleName__java_lang_String("gwt-CheckBox");
  }
- /**
-  * Factory method corresponding to constructor 'CheckBox(SafeHtml)'.
-  * @param {SafeHtml} label
-  * @return {!CheckBox}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeHtml(label) {
+ //Factory method corresponding to constructor 'CheckBox(SafeHtml)'.
+ /** @return {!CheckBox} */
+ static $create__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ label) {
   CheckBox.$clinit();
   let $instance = new CheckBox();
   $instance.$ctor__org_gwtproject_user_client_ui_CheckBox__org_gwtproject_safehtml_shared_SafeHtml(label);
   return $instance;
  }
- /**
-  * Initialization from constructor 'CheckBox(SafeHtml)'.
-  * @param {SafeHtml} label
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_CheckBox__org_gwtproject_safehtml_shared_SafeHtml(label) {
+ //Initialization from constructor 'CheckBox(SafeHtml)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_CheckBox__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ label) {
   this.$ctor__org_gwtproject_user_client_ui_CheckBox__java_lang_String__boolean(label.m_asString__(), true);
  }
- /**
-  * Factory method corresponding to constructor 'CheckBox(SafeHtml, Direction)'.
-  * @param {SafeHtml} label
-  * @param {Direction} dir
-  * @return {!CheckBox}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(label, dir) {
+ //Factory method corresponding to constructor 'CheckBox(SafeHtml, Direction)'.
+ /** @return {!CheckBox} */
+ static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(/** SafeHtml */ label, /** Direction */ dir) {
   CheckBox.$clinit();
   let $instance = new CheckBox();
   $instance.$ctor__org_gwtproject_user_client_ui_CheckBox__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(label, dir);
   return $instance;
  }
- /**
-  * Initialization from constructor 'CheckBox(SafeHtml, Direction)'.
-  * @param {SafeHtml} label
-  * @param {Direction} dir
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_CheckBox__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(label, dir) {
+ //Initialization from constructor 'CheckBox(SafeHtml, Direction)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_CheckBox__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(/** SafeHtml */ label, /** Direction */ dir) {
   this.$ctor__org_gwtproject_user_client_ui_CheckBox__();
   this.m_setHTML__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(label, dir);
  }
- /**
-  * Factory method corresponding to constructor 'CheckBox(SafeHtml, DirectionEstimator)'.
-  * @param {SafeHtml} label
-  * @param {DirectionEstimator} directionEstimator
-  * @return {!CheckBox}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator(label, directionEstimator) {
+ //Factory method corresponding to constructor 'CheckBox(SafeHtml, DirectionEstimator)'.
+ /** @return {!CheckBox} */
+ static $create__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator(/** SafeHtml */ label, /** DirectionEstimator */ directionEstimator) {
   CheckBox.$clinit();
   let $instance = new CheckBox();
   $instance.$ctor__org_gwtproject_user_client_ui_CheckBox__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator(label, directionEstimator);
   return $instance;
  }
- /**
-  * Initialization from constructor 'CheckBox(SafeHtml, DirectionEstimator)'.
-  * @param {SafeHtml} label
-  * @param {DirectionEstimator} directionEstimator
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_CheckBox__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator(label, directionEstimator) {
+ //Initialization from constructor 'CheckBox(SafeHtml, DirectionEstimator)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_CheckBox__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator(/** SafeHtml */ label, /** DirectionEstimator */ directionEstimator) {
   this.$ctor__org_gwtproject_user_client_ui_CheckBox__();
   this.m_setDirectionEstimator__org_gwtproject_i18n_shared_DirectionEstimator(directionEstimator);
   this.m_setHTML__java_lang_String(label.m_asString__());
  }
- /**
-  * Factory method corresponding to constructor 'CheckBox(String)'.
-  * @param {?string} label
-  * @return {!CheckBox}
-  * @public
-  */
- static $create__java_lang_String(label) {
+ //Factory method corresponding to constructor 'CheckBox(String)'.
+ /** @return {!CheckBox} */
+ static $create__java_lang_String(/** ?string */ label) {
   CheckBox.$clinit();
   let $instance = new CheckBox();
   $instance.$ctor__org_gwtproject_user_client_ui_CheckBox__java_lang_String(label);
   return $instance;
  }
- /**
-  * Initialization from constructor 'CheckBox(String)'.
-  * @param {?string} label
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_CheckBox__java_lang_String(label) {
+ //Initialization from constructor 'CheckBox(String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_CheckBox__java_lang_String(/** ?string */ label) {
   this.$ctor__org_gwtproject_user_client_ui_CheckBox__();
   this.m_setText__java_lang_String(label);
  }
- /**
-  * Factory method corresponding to constructor 'CheckBox(String, Direction)'.
-  * @param {?string} label
-  * @param {Direction} dir
-  * @return {!CheckBox}
-  * @public
-  */
- static $create__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(label, dir) {
+ //Factory method corresponding to constructor 'CheckBox(String, Direction)'.
+ /** @return {!CheckBox} */
+ static $create__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(/** ?string */ label, /** Direction */ dir) {
   CheckBox.$clinit();
   let $instance = new CheckBox();
   $instance.$ctor__org_gwtproject_user_client_ui_CheckBox__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(label, dir);
   return $instance;
  }
- /**
-  * Initialization from constructor 'CheckBox(String, Direction)'.
-  * @param {?string} label
-  * @param {Direction} dir
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_CheckBox__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(label, dir) {
+ //Initialization from constructor 'CheckBox(String, Direction)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_CheckBox__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(/** ?string */ label, /** Direction */ dir) {
   this.$ctor__org_gwtproject_user_client_ui_CheckBox__();
   this.m_setText__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(label, dir);
  }
- /**
-  * Factory method corresponding to constructor 'CheckBox(String, DirectionEstimator)'.
-  * @param {?string} label
-  * @param {DirectionEstimator} directionEstimator
-  * @return {!CheckBox}
-  * @public
-  */
- static $create__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator(label, directionEstimator) {
+ //Factory method corresponding to constructor 'CheckBox(String, DirectionEstimator)'.
+ /** @return {!CheckBox} */
+ static $create__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator(/** ?string */ label, /** DirectionEstimator */ directionEstimator) {
   CheckBox.$clinit();
   let $instance = new CheckBox();
   $instance.$ctor__org_gwtproject_user_client_ui_CheckBox__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator(label, directionEstimator);
   return $instance;
  }
- /**
-  * Initialization from constructor 'CheckBox(String, DirectionEstimator)'.
-  * @param {?string} label
-  * @param {DirectionEstimator} directionEstimator
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_CheckBox__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator(label, directionEstimator) {
+ //Initialization from constructor 'CheckBox(String, DirectionEstimator)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_CheckBox__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator(/** ?string */ label, /** DirectionEstimator */ directionEstimator) {
   this.$ctor__org_gwtproject_user_client_ui_CheckBox__();
   this.m_setDirectionEstimator__org_gwtproject_i18n_shared_DirectionEstimator(directionEstimator);
   this.m_setText__java_lang_String(label);
  }
- /**
-  * Factory method corresponding to constructor 'CheckBox(String, boolean)'.
-  * @param {?string} label
-  * @param {boolean} asHTML
-  * @return {!CheckBox}
-  * @public
-  */
- static $create__java_lang_String__boolean(label, asHTML) {
+ //Factory method corresponding to constructor 'CheckBox(String, boolean)'.
+ /** @return {!CheckBox} */
+ static $create__java_lang_String__boolean(/** ?string */ label, /** boolean */ asHTML) {
   CheckBox.$clinit();
   let $instance = new CheckBox();
   $instance.$ctor__org_gwtproject_user_client_ui_CheckBox__java_lang_String__boolean(label, asHTML);
   return $instance;
  }
- /**
-  * Initialization from constructor 'CheckBox(String, boolean)'.
-  * @param {?string} label
-  * @param {boolean} asHTML
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_CheckBox__java_lang_String__boolean(label, asHTML) {
+ //Initialization from constructor 'CheckBox(String, boolean)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_CheckBox__java_lang_String__boolean(/** ?string */ label, /** boolean */ asHTML) {
   this.$ctor__org_gwtproject_user_client_ui_CheckBox__();
   if (asHTML) {
    this.m_setHTML__java_lang_String(label);
@@ -239,24 +173,17 @@ class CheckBox extends ButtonBase {
    this.m_setText__java_lang_String(label);
   }
  }
- /**
-  * Factory method corresponding to constructor 'CheckBox(Element)'.
-  * @param {Object} elem
-  * @return {!CheckBox}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_Element(elem) {
+ //Factory method corresponding to constructor 'CheckBox(Element)'.
+ /** @return {!CheckBox} */
+ static $create__org_gwtproject_dom_client_Element(/** Object */ elem) {
   CheckBox.$clinit();
   let $instance = new CheckBox();
   $instance.$ctor__org_gwtproject_user_client_ui_CheckBox__org_gwtproject_dom_client_Element(elem);
   return $instance;
  }
- /**
-  * Initialization from constructor 'CheckBox(Element)'.
-  * @param {Object} elem
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_CheckBox__org_gwtproject_dom_client_Element(elem) {
+ //Initialization from constructor 'CheckBox(Element)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_CheckBox__org_gwtproject_dom_client_Element(/** Object */ elem) {
   this.$ctor__org_gwtproject_user_client_ui_ButtonBase__org_gwtproject_dom_client_Element(DOM.m_createSpan__());
   this.f_inputElem__org_gwtproject_user_client_ui_CheckBox = $Overlay.m_as__org_gwtproject_dom_client_Element(elem);
   this.f_labelElem__org_gwtproject_user_client_ui_CheckBox = Document_$Overlay.m_createLabelElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__());
@@ -268,90 +195,50 @@ class CheckBox extends ButtonBase {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_CheckBox = DirectionalTextHelper.$create__org_gwtproject_dom_client_Element__boolean(this.f_labelElem__org_gwtproject_user_client_ui_CheckBox, true);
   this.m_setTabIndex__int(0);
  }
- /**
-  * @override
-  * @param {ValueChangeHandler<?boolean>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler(/** ValueChangeHandler<?boolean> */ handler) {
   if (!this.f_valueChangeHandlerInitialized__org_gwtproject_user_client_ui_CheckBox_) {
    this.m_ensureDomEventHandlers__();
    this.f_valueChangeHandlerInitialized__org_gwtproject_user_client_ui_CheckBox_ = true;
   }
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, ValueChangeEvent.m_getType__());
  }
- /**
-  * @override
-  * @return {LeafValueEditor<?boolean>}
-  * @public
-  */
+ /** @override @return {LeafValueEditor<?boolean>} */
  m_asEditor__() {
   if ($Equality.$same(this.f_editor__org_gwtproject_user_client_ui_CheckBox_, null)) {
-   this.f_editor__org_gwtproject_user_client_ui_CheckBox_ = /**@type {TakesValueEditor<?boolean>} */ (TakesValueEditor.m_of__org_gwtproject_user_client_TakesValue(this));
+   this.f_editor__org_gwtproject_user_client_ui_CheckBox_ = /**@type {TakesValueEditor<?boolean>}*/ (TakesValueEditor.m_of__org_gwtproject_user_client_TakesValue(this));
   }
   return this.f_editor__org_gwtproject_user_client_ui_CheckBox_;
  }
- /**
-  * @override
-  * @return {DirectionEstimator}
-  * @public
-  */
+ /** @override @return {DirectionEstimator} */
  m_getDirectionEstimator__() {
   return this.f_directionalTextHelper__org_gwtproject_user_client_ui_CheckBox.m_getDirectionEstimator__();
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getFormValue__() {
   return this.f_inputElem__org_gwtproject_user_client_ui_CheckBox.value;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getHTML__() {
   return this.f_directionalTextHelper__org_gwtproject_user_client_ui_CheckBox.m_getHtml__();
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getName__() {
   return this.f_inputElem__org_gwtproject_user_client_ui_CheckBox.name;
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getTabIndex__() {
   return Element_$Overlay.m_getTabIndex__$devirt__org_gwtproject_dom_client_Element(this.f_inputElem__org_gwtproject_user_client_ui_CheckBox);
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getText__() {
   return this.f_directionalTextHelper__org_gwtproject_user_client_ui_CheckBox.m_getText__();
  }
- /**
-  * @override
-  * @return {Direction}
-  * @public
-  */
+ /** @override @return {Direction} */
  m_getTextDirection__() {
   return this.f_directionalTextHelper__org_gwtproject_user_client_ui_CheckBox.m_getTextDirection__();
  }
- /**
-  * @override
-  * @return {?boolean}
-  * @public
-  */
+ /** @override @return {?boolean} */
  m_getValue__() {
   if (this.m_isAttached__()) {
    return $Overlay.m_isChecked__$devirt__org_gwtproject_dom_client_InputElement(this.f_inputElem__org_gwtproject_user_client_ui_CheckBox);
@@ -359,68 +246,36 @@ class CheckBox extends ButtonBase {
    return $Overlay.m_isDefaultChecked__$devirt__org_gwtproject_dom_client_InputElement(this.f_inputElem__org_gwtproject_user_client_ui_CheckBox);
   }
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_getWordWrap__() {
   return !j_l_String.m_equals__java_lang_String__java_lang_Object(WhiteSpace.f_NOWRAP__org_gwtproject_dom_style_shared_WhiteSpace.m_getCssName__(), Style_$Overlay.m_getWhiteSpace__$devirt__org_gwtproject_dom_client_Style(this.m_getElement__().style));
  }
- /**
-  * @return {boolean}
-  * @public
-  * @deprecated
-  */
+ /** @return {boolean} @deprecated */
  m_isChecked__() {
   return Boolean.m_booleanValue__java_lang_Boolean(this.m_getValue__()) == true;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isEnabled__() {
   return !$Overlay.m_isDisabled__$devirt__org_gwtproject_dom_client_InputElement(this.f_inputElem__org_gwtproject_user_client_ui_CheckBox);
  }
- /**
-  * @override
-  * @param {number} key
-  * @public
-  */
- m_setAccessKey__char(key) {
+ /** @override */
+ m_setAccessKey__char(/** number */ key) {
   this.f_inputElem__org_gwtproject_user_client_ui_CheckBox.accessKey = "" + j_l_String.m_valueOf__char(key);
  }
- /**
-  * @param {boolean} checked
-  * @public
-  * @deprecated
-  */
- m_setChecked__boolean(checked) {
+ /** @deprecated */
+ m_setChecked__boolean(/** boolean */ checked) {
   this.m_setValue__java_lang_Boolean(checked);
  }
- /**
-  * @override
-  * @param {boolean} enabled
-  * @public
-  */
- m_setDirectionEstimator__boolean(enabled) {
+ /** @override */
+ m_setDirectionEstimator__boolean(/** boolean */ enabled) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_CheckBox.m_setDirectionEstimator__boolean(enabled);
  }
- /**
-  * @override
-  * @param {DirectionEstimator} directionEstimator
-  * @public
-  */
- m_setDirectionEstimator__org_gwtproject_i18n_shared_DirectionEstimator(directionEstimator) {
+ /** @override */
+ m_setDirectionEstimator__org_gwtproject_i18n_shared_DirectionEstimator(/** DirectionEstimator */ directionEstimator) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_CheckBox.m_setDirectionEstimator__org_gwtproject_i18n_shared_DirectionEstimator(directionEstimator);
  }
- /**
-  * @override
-  * @param {boolean} enabled
-  * @public
-  */
- m_setEnabled__boolean(enabled) {
+ /** @override */
+ m_setEnabled__boolean(/** boolean */ enabled) {
   this.f_inputElem__org_gwtproject_user_client_ui_CheckBox.disabled = !enabled;
   if (enabled) {
    this.m_removeStyleDependentName__java_lang_String("disabled");
@@ -428,90 +283,50 @@ class CheckBox extends ButtonBase {
    this.m_addStyleDependentName__java_lang_String("disabled");
   }
  }
- /**
-  * @override
-  * @param {boolean} focused
-  * @public
-  */
- m_setFocus__boolean(focused) {
+ /** @override */
+ m_setFocus__boolean(/** boolean */ focused) {
   if (focused) {
    this.f_inputElem__org_gwtproject_user_client_ui_CheckBox.focus();
   } else {
    this.f_inputElem__org_gwtproject_user_client_ui_CheckBox.blur();
   }
  }
- /**
-  * @param {?string} value
-  * @public
-  */
- m_setFormValue__java_lang_String(value) {
+ 
+ m_setFormValue__java_lang_String(/** ?string */ value) {
   this.f_inputElem__org_gwtproject_user_client_ui_CheckBox.setAttribute("value", value);
  }
- /**
-  * @override
-  * @param {SafeHtml} html
-  * @param {Direction} dir
-  * @public
-  */
- m_setHTML__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(html, dir) {
+ /** @override */
+ m_setHTML__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(/** SafeHtml */ html, /** Direction */ dir) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_CheckBox.m_setHtml__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(html, dir);
  }
- /**
-  * @override
-  * @param {?string} html
-  * @public
-  */
- m_setHTML__java_lang_String(html) {
+ /** @override */
+ m_setHTML__java_lang_String(/** ?string */ html) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_CheckBox.m_setHtml__java_lang_String(html);
  }
- /**
-  * @override
-  * @param {?string} name
-  * @public
-  */
- m_setName__java_lang_String(name) {
+ /** @override */
+ m_setName__java_lang_String(/** ?string */ name) {
   this.f_inputElem__org_gwtproject_user_client_ui_CheckBox.name = name;
  }
- /**
-  * @override
-  * @param {number} index
-  * @public
-  */
- m_setTabIndex__int(index) {
+ /** @override */
+ m_setTabIndex__int(/** number */ index) {
   if (!$Equality.$same(this.f_inputElem__org_gwtproject_user_client_ui_CheckBox, null)) {
    this.f_inputElem__org_gwtproject_user_client_ui_CheckBox.tabIndex = index;
   }
  }
- /**
-  * @override
-  * @param {?string} text
-  * @public
-  */
- m_setText__java_lang_String(text) {
+ /** @override */
+ m_setText__java_lang_String(/** ?string */ text) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_CheckBox.m_setText__java_lang_String(text);
  }
- /**
-  * @override
-  * @param {?string} text
-  * @param {Direction} dir
-  * @public
-  */
- m_setText__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(text, dir) {
+ /** @override */
+ m_setText__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(/** ?string */ text, /** Direction */ dir) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_CheckBox.m_setText__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(text, dir);
  }
- /**
-  * @param {?boolean} value
-  * @public
-  */
- m_setValue__java_lang_Boolean(value) {
+ 
+ m_setValue__java_lang_Boolean(/** ?boolean */ value) {
   this.m_setValue__java_lang_Boolean__boolean(value, false);
  }
- /**
-  * @param {?boolean} value
-  * @param {boolean} fireEvents
-  * @public
-  */
- m_setValue__java_lang_Boolean__boolean(value, fireEvents) {
+ 
+ m_setValue__java_lang_Boolean__boolean(/** ?boolean */ value, /** boolean */ fireEvents) {
   if ($Equality.$same(value, null)) {
    value = Boolean.f_FALSE__java_lang_Boolean;
   }
@@ -525,63 +340,40 @@ class CheckBox extends ButtonBase {
    ValueChangeEvent.m_fire__org_gwtproject_event_logical_shared_HasValueChangeHandlers__java_lang_Object(this, value);
   }
  }
- /**
-  * @override
-  * @param {boolean} wrap
-  * @public
-  */
- m_setWordWrap__boolean(wrap) {
+ /** @override */
+ m_setWordWrap__boolean(/** boolean */ wrap) {
   Style_$Overlay.m_setWhiteSpace__$devirt__org_gwtproject_dom_client_Style__org_gwtproject_dom_style_shared_WhiteSpace(this.m_getElement__().style, wrap ? WhiteSpace.f_NORMAL__org_gwtproject_dom_style_shared_WhiteSpace : WhiteSpace.f_NOWRAP__org_gwtproject_dom_style_shared_WhiteSpace);
  }
- /**
-  * @override
-  * @param {number} eventBitsToAdd
-  * @public
-  */
- m_sinkEvents__int(eventBitsToAdd) {
+ /** @override */
+ m_sinkEvents__int(/** number */ eventBitsToAdd) {
   if (this.m_isOrWasAttached__()) {
    Event.m_sinkEvents__org_gwtproject_dom_client_Element__int(this.f_inputElem__org_gwtproject_user_client_ui_CheckBox, eventBitsToAdd | Event.m_getEventsSunk__org_gwtproject_dom_client_Element(this.f_inputElem__org_gwtproject_user_client_ui_CheckBox));
   } else {
    super.m_sinkEvents__int(eventBitsToAdd);
   }
  }
- /**
-  * @public
-  */
+ 
  m_ensureDomEventHandlers__() {
   this.m_addClickHandler__org_gwtproject_event_dom_client_ClickHandler($1.$create__org_gwtproject_user_client_ui_CheckBox(this));
  }
- /**
-  * @override
-  * @param {?string} baseID
-  * @public
-  */
- m_onEnsureDebugId__java_lang_String(baseID) {
+ /** @override */
+ m_onEnsureDebugId__java_lang_String(/** ?string */ baseID) {
   super.m_onEnsureDebugId__java_lang_String(baseID);
   UIObject.m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(this.f_labelElem__org_gwtproject_user_client_ui_CheckBox, baseID, "label");
   UIObject.m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(this.f_inputElem__org_gwtproject_user_client_ui_CheckBox, baseID, "input");
   this.f_labelElem__org_gwtproject_user_client_ui_CheckBox.htmlFor = this.f_inputElem__org_gwtproject_user_client_ui_CheckBox.id;
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onLoad__() {
   DOM.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(this.f_inputElem__org_gwtproject_user_client_ui_CheckBox, this);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onUnload__() {
   DOM.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(this.f_inputElem__org_gwtproject_user_client_ui_CheckBox, null);
   this.m_setValue__java_lang_Boolean(this.m_getValue__());
  }
- /**
-  * @param {Object} elem
-  * @public
-  */
- m_replaceInputElement__org_gwtproject_dom_client_Element(elem) {
+ 
+ m_replaceInputElement__org_gwtproject_dom_client_Element(/** Object */ elem) {
   let newInputElem = $Overlay.m_as__org_gwtproject_dom_client_Element(elem);
   let tabIndex = this.m_getTabIndex__();
   let checked = Boolean.m_booleanValue__java_lang_Boolean(this.m_getValue__());
@@ -608,52 +400,32 @@ class CheckBox extends ButtonBase {
    DOM.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(this.f_inputElem__org_gwtproject_user_client_ui_CheckBox, this);
   }
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_setValue__java_lang_Object(arg0) {
-  this.m_setValue__java_lang_Boolean(/**@type {?boolean} */ ($Casts.$to(arg0, Boolean)));
+ //Bridge method.
+ /** @override */
+ m_setValue__java_lang_Object(/** * */ arg0) {
+  this.m_setValue__java_lang_Boolean(/**@type {?boolean}*/ ($Casts.$to(arg0, Boolean)));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @param {boolean} arg1
-  * @public
-  */
- m_setValue__java_lang_Object__boolean(arg0, arg1) {
-  this.m_setValue__java_lang_Boolean__boolean(/**@type {?boolean} */ ($Casts.$to(arg0, Boolean)), arg1);
+ //Bridge method.
+ /** @override */
+ m_setValue__java_lang_Object__boolean(/** * */ arg0, /** boolean */ arg1) {
+  this.m_setValue__java_lang_Boolean__boolean(/**@type {?boolean}*/ ($Casts.$to(arg0, Boolean)), arg1);
  }
- /**
-  * @return {DirectionEstimator}
-  * @public
-  */
+ /** @return {DirectionEstimator} */
  static get f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_CheckBox() {
   return (CheckBox.$clinit(), CheckBox.$f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_CheckBox);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CheckBox.$clinit = () =>{};
   CheckBox.$loadModules();
   ButtonBase.$clinit();
   CheckBox.$f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_CheckBox = DirectionalTextHelper.f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_DirectionalTextHelper;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CheckBox;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Boolean = goog.module.get('java.lang.Boolean$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -683,7 +455,7 @@ HasDirectionalSafeHtml.$markImplementor(CheckBox);
 HasDirectionEstimator.$markImplementor(CheckBox);
 IsEditor.$markImplementor(CheckBox);
 
-/** @private {DirectionEstimator} */
+/**@private {DirectionEstimator}*/
 CheckBox.$f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_CheckBox;
 
 exports = CheckBox; 

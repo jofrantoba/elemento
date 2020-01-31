@@ -8,66 +8,36 @@ let File_$Overlay = goog.forwardDeclare('elemental2.dom.File.$Overlay$impl');
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class DataTransferItemList_$Overlay {
- /**
-  * @param {!DataTransferItemList} $thisArg
-  * @param {File} data
-  * @param {?string} type
-  * @return {DataTransferItem}
-  * @public
-  */
- static m_add__$devirt__elemental2_dom_DataTransferItemList__elemental2_dom_File__java_lang_String($thisArg, data, type) {
+ /** @return {DataTransferItem} */
+ static m_add__$devirt__elemental2_dom_DataTransferItemList__elemental2_dom_File__java_lang_String(/** !DataTransferItemList */ $thisArg, /** File */ data, /** ?string */ type) {
   DataTransferItemList_$Overlay.$clinit();
-  return $thisArg.add(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(data)), type);
+  return $thisArg.add(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(data)), type);
  }
- /**
-  * @param {!DataTransferItemList} $thisArg
-  * @param {File} data
-  * @return {DataTransferItem}
-  * @public
-  */
- static m_add__$devirt__elemental2_dom_DataTransferItemList__elemental2_dom_File($thisArg, data) {
+ /** @return {DataTransferItem} */
+ static m_add__$devirt__elemental2_dom_DataTransferItemList__elemental2_dom_File(/** !DataTransferItemList */ $thisArg, /** File */ data) {
   DataTransferItemList_$Overlay.$clinit();
-  return $thisArg.add(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(data)));
+  return $thisArg.add(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(data)));
  }
- /**
-  * @param {!DataTransferItemList} $thisArg
-  * @param {?string} data
-  * @param {?string} type
-  * @return {DataTransferItem}
-  * @public
-  */
- static m_add__$devirt__elemental2_dom_DataTransferItemList__java_lang_String__java_lang_String($thisArg, data, type) {
+ /** @return {DataTransferItem} */
+ static m_add__$devirt__elemental2_dom_DataTransferItemList__java_lang_String__java_lang_String(/** !DataTransferItemList */ $thisArg, /** ?string */ data, /** ?string */ type) {
   DataTransferItemList_$Overlay.$clinit();
-  return $thisArg.add(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(data)), type);
+  return $thisArg.add(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(data)), type);
  }
- /**
-  * @param {!DataTransferItemList} $thisArg
-  * @param {?string} data
-  * @return {DataTransferItem}
-  * @public
-  */
- static m_add__$devirt__elemental2_dom_DataTransferItemList__java_lang_String($thisArg, data) {
+ /** @return {DataTransferItem} */
+ static m_add__$devirt__elemental2_dom_DataTransferItemList__java_lang_String(/** !DataTransferItemList */ $thisArg, /** ?string */ data) {
   DataTransferItemList_$Overlay.$clinit();
-  return $thisArg.add(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(data)));
+  return $thisArg.add(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(data)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DataTransferItemList_$Overlay.$clinit = () =>{};
   DataTransferItemList_$Overlay.$loadModules();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DataTransferItemList;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }

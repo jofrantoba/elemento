@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"AbstractHasData$1.impl.java.js",
-"lineCount":59,
-"mappings":"A;;;;;;;;;;;MA4F0B,E;;;;CAAA,W;EAAAA,Q;EAAAA;4E;EAAAA;OADeC,OACfD,C;;;;;;;;;QAAA,+F;EAAAE,a;EAAAA,yB;EAAAA,qL;EAAAA,iB;;;;;;;CAAA,oJ;EAAAC,wF;EAAAA,uB;EAAAA,qD;EAAAA,wE;;;;;CAAA,gE;EAEVA,mE;;;;;QAFU,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":43,
+"mappings":"A;;;;;;;;;;;MA4F0B,E;;CAAA,W;EAAAA,Q;EAAAA;4E;EAAAA;OADeC,OACfD,C;;;QAAA,+F;EAAAE,a;EAAAA,yB;EAAAA,qL;EAAAA,iB;;;CAAA,oJ;EAAAC,wF;EAAAA,uB;EAAAA,qD;EAAAA,wE;;;CAAA,gE;EAEVA,mE;;;QAFU,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["AbstractHasData.java"],
 "names":["org.gwtproject.user.cellview.client.AbstractHasData$1.<synthetic: ctor_js>","elem","org.gwtproject.user.cellview.client.AbstractHasData$1.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.AbstractHasData$1.<init>","org.gwtproject.user.cellview.client.AbstractHasData$1.<clinit>"]
 }

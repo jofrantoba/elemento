@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"IntegerBox.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;;;;;MAwBa,U;;;;CAAA,W;EAAAA,Q;;;;;;QACJ,S;EAAAC,qB;EAAAA,iC;EAAAA,8D;EAAAA,iB;;;;;CAAA,iD;EACLC,gU;;;;;QAFS,O;EAAAC,6B;EAAAA,0B;EAAAA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;;MAwBa,U;;CAAA,W;EAAAA,Q;;;QACJ,S;EAAAC,qB;EAAAA,iC;EAAAA,8D;EAAAA,iB;;;CAAA,iD;EACLC,gU;;;QAFS,O;EAAAC,6B;EAAAA,0B;EAAAA;",
 "sources":["IntegerBox.java"],
 "names":["org.gwtproject.user.client.ui.IntegerBox.<synthetic: ctor_js>","org.gwtproject.user.client.ui.IntegerBox.<synthetic: ctor_create>","org.gwtproject.user.client.ui.IntegerBox.<init>","org.gwtproject.user.client.ui.IntegerBox.<clinit>"]
 }

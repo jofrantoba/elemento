@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DoubleClickEvent.impl.java.js",
-"lineCount":100,
-"mappings":"A;;;;;;;;;;;;;MAoBa,gB;;;;CAAA,W;EAAAA,Q;;;;;;QAWD,S;EAAAC,2B;EAAAA,uC;EAAAA,sE;EAAAA,iB;;;;;CAAA,yD;EAAAC,2D;;;;;;QAO6B,W;EAAAC,2B;EACrCA,kF;;;;;;;CAIoC,qB;EACpCC,kF;;;;;;CAIa,8D,CAA4BC,O;EACzCC,gF;;;;;;;;CA7BS,4B;EAAAA,6I;;;;;QAAA,O;EAAAC,mC;EAAAA,gC;EAAAA,qB;EAEXA,iS;;;;;;;;;;;;;;;;;;;;;;;AAFW;iBAGmC,yDAHnC;",
+"lineCount":71,
+"mappings":"A;;;;;;;;;;;;;MAoBa,gB;;CAAA,W;EAAAA,Q;;;QAWD,S;EAAAC,2B;EAAAA,uC;EAAAA,sE;EAAAA,iB;;;CAAA,yD;EAAAC,2D;;;QAO6B,W;EAAAC,2B;EACrCA,kF;;;CAIoC,qB;EACpCC,kF;;;CAIa,8D,2BAA4BC,O;EACzCC,gF;;;;CA7BS,4B;EAAAA,4I;;;QAAA,O;EAAAC,mC;EAAAA,gC;EAAAA,qB;EAEXA,gS;;;;;;;;;;;;;;;;;AAFW;iBAGmC,yDAHnC;",
 "sources":["DoubleClickEvent.java"],
 "names":["org.gwtproject.event.dom.client.DoubleClickEvent.<synthetic: ctor_js>","org.gwtproject.event.dom.client.DoubleClickEvent.<synthetic: ctor_create>","org.gwtproject.event.dom.client.DoubleClickEvent.<init>","org.gwtproject.event.dom.client.DoubleClickEvent.getType","org.gwtproject.event.dom.client.DoubleClickEvent.getAssociatedType","handler","org.gwtproject.event.dom.client.DoubleClickEvent.dispatch","org.gwtproject.event.dom.client.DoubleClickEvent.<clinit>"]
 }

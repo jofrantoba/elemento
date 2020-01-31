@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TakesValueEditor.impl.java.js",
-"lineCount":74,
-"mappings":"A;;;;;;;;;;;;MAyBa,gB;;;;CAAA,W;EAAAA,Q;EAAAA;OAYiB,+DAZjBA,C;;;;;;;;QAQ2B,2C,CAAiBC,I;EAAjBC,2B;EACpCA,oH;;;;;;;;QAWQ,8C,CAA+BD,I;EAA/BE,2B;EAAAA,uC;EAAAA,qH;EAAAA,iB;;;;;;CAAA,oG,CAA+BF,I;EAA/BG,iC;EACRA,4E;;;;;;;CAGO,Y;EACPC,2F;;;;;;;CAGU,4B,CAAWC,K;EACrBC,yG;;;;;QA7BS,O;EAAAC,mC;EAAAA,gC;EAAAA;",
+"lineCount":49,
+"mappings":"A;;;;;;;;;;;;MAyBa,gB;;CAAA,W;EAAAA,Q;EAAAA;OAYiB,+DAZjBA,C;;;QAQ2B,2C,wBAAiBC,I;EAAjBC,2B;EACpCA,mH;;;QAWQ,8C,sBAA+BD,I;EAA/BE,2B;EAAAA,uC;EAAAA,qH;EAAAA,iB;;;CAAA,oG,sBAA+BF,I;EAA/BG,iC;EACRA,4E;;;CAGO,Y;EACPC,2F;;;CAGU,4B,UAAWC,K;EACrBC,yG;;;QA7BS,O;EAAAC,mC;EAAAA,gC;EAAAA;",
 "sources":["TakesValueEditor.java"],
 "names":["org.gwtproject.editor.client.adapters.TakesValueEditor.<synthetic: ctor_js>","peer","org.gwtproject.editor.client.adapters.TakesValueEditor.of","org.gwtproject.editor.client.adapters.TakesValueEditor.<synthetic: ctor_create>","org.gwtproject.editor.client.adapters.TakesValueEditor.<init>","org.gwtproject.editor.client.adapters.TakesValueEditor.getValue","value","org.gwtproject.editor.client.adapters.TakesValueEditor.setValue","org.gwtproject.editor.client.adapters.TakesValueEditor.<clinit>"]
 }

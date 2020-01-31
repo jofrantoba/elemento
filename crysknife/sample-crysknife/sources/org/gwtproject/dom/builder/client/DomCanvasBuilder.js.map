@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DomCanvasBuilder.impl.java.js",
-"lineCount":66,
-"mappings":"A;;;;;;;;;;;;;;MAuBa,gB;;;;CAAA,W;EAAAA,Q;;;;;;;QAGX,yD,CAAgCC,Q;EAAhCC,2B;EAAAA,uC;EAAAA,gI;EAAAA,iB;;;;;;CAAA,2G,CAAgCD,Q;EAC9BE,gI;;;;;;;;CAImB,a,CAAWC,M;EAC9BC,8F;EACAA,Y;;;;;;;;CAImB,Y,CAAUC,K;EAC7BC,4F;EACAA,Y;;;;;QAhBS,O;EAAAC,mC;EAAAA,gC;EAAAA;",
+"lineCount":45,
+"mappings":"A;;;;;;;;;;;;;;MAuBa,gB;;CAAA,W;EAAAA,Q;;;QAGX,yD,uBAAgCC,Q;EAAhCC,2B;EAAAA,uC;EAAAA,gI;EAAAA,iB;;;CAAA,2G,uBAAgCD,Q;EAC9BE,gI;;;CAImB,a,eAAWC,M;EAC9BC,6F;EACAA,Y;;;CAImB,Y,eAAUC,K;EAC7BC,2F;EACAA,Y;;;QAhBS,O;EAAAC,mC;EAAAA,gC;EAAAA;",
 "sources":["DomCanvasBuilder.java"],
 "names":["org.gwtproject.dom.builder.client.DomCanvasBuilder.<synthetic: ctor_js>","delegate","org.gwtproject.dom.builder.client.DomCanvasBuilder.<synthetic: ctor_create>","org.gwtproject.dom.builder.client.DomCanvasBuilder.<init>","height","org.gwtproject.dom.builder.client.DomCanvasBuilder.height","width","org.gwtproject.dom.builder.client.DomCanvasBuilder.width","org.gwtproject.dom.builder.client.DomCanvasBuilder.<clinit>"]
 }

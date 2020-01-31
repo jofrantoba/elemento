@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SafeHtmlBidiFormatter$Factory.impl.java.js",
-"lineCount":51,
-"mappings":"A;;;;;;;;;;;MAgCe,6B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,wC;EAAAA,oD;EAAAA,8E;EAAAA,iB;;;;;CAAA,iE;EAAAC,qE;;;;;;;;;CAEkB,4E,CAAyBC,U,EAC1CC,U;EACVC,yH;;;;;QAJS,O;EAAAC,gD;EAAAA,6C;EAAAA;",
+"lineCount":36,
+"mappings":"A;;;;;;;;;;;MAgCe,6B;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,wC;EAAAA,oD;EAAAA,8E;EAAAA,iB;;;CAAA,iE;EAAAC,qE;;;CAEkB,4E,kBAAyBC,U,iBAC1CC,U;EACVC,yH;;;QAJS,O;EAAAC,gD;EAAAA,6C;EAAAA;",
 "sources":["SafeHtmlBidiFormatter.java"],
 "names":["org.gwtproject.i18n.shared.SafeHtmlBidiFormatter$Factory.<synthetic: ctor_js>","org.gwtproject.i18n.shared.SafeHtmlBidiFormatter$Factory.<synthetic: ctor_create>","org.gwtproject.i18n.shared.SafeHtmlBidiFormatter$Factory.<init>","contextDir","alwaysSpan","org.gwtproject.i18n.shared.SafeHtmlBidiFormatter$Factory.createInstance","org.gwtproject.i18n.shared.SafeHtmlBidiFormatter$Factory.<clinit>"]
 }

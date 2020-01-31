@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Messages$Offset.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;MAwToB,M;;;;;;CAChB,S;;;;QADgB,O;EAAAA,yB;EAAAA;",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MAwToB,M;;CAChB,S;;QADgB,O;EAAAA,yB;EAAAA;",
 "sources":["Messages.java"],
 "names":["org.gwtproject.i18n.client.Messages$Offset.<clinit>"]
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellTable$BasicStyle.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;MA0SY,U;;;;QAAA,O;EAAAA,6B;EAAAA,0B;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AACR;WAGO,uEAHP;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;MA0SY,U;;QAAA,O;EAAAA,6B;EAAAA,0B;;;;;;;;;;;;;;;;;;;;AACR;WAGO,uEAHP;",
 "sources":["CellTable.java"],
 "names":["org.gwtproject.user.cellview.client.CellTable$BasicStyle.<clinit>"]
 }

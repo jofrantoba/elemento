@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MouseDownHandler$$LambdaAdaptor.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;MAoBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;+E;EAAAA,8I;;;;;;CAAA,oI;EAAAC,iC;EAAAA,kF;;;;;;CAAA,6D;;GAAAC,6F;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MAoBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;+E;EAAAA,8I;;;CAAA,oI;EAAAC,iC;EAAAA,kF;;;CAAA,6D;;GAAAC,6F;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["MouseDownHandler.java"],
 "names":["org.gwtproject.event.dom.client.MouseDownHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.dom.client.MouseDownHandler$$LambdaAdaptor.<init>","org.gwtproject.event.dom.client.MouseDownHandler$$LambdaAdaptor.onMouseDown","org.gwtproject.event.dom.client.MouseDownHandler$$LambdaAdaptor.<clinit>"]
 }

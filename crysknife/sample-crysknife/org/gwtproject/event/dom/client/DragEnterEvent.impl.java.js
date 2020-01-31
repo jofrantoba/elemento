@@ -12,80 +12,51 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {DragDropEventBase<DragEnterHandler>}
   */
 class DragEnterEvent extends DragDropEventBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!DragEnterEvent}
-  * @public
-  */
+ /** @return {!DragEnterEvent} */
  static $create__() {
   DragEnterEvent.$clinit();
   let $instance = new DragEnterEvent();
   $instance.$ctor__org_gwtproject_event_dom_client_DragEnterEvent__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_dom_client_DragEnterEvent__() {
   this.$ctor__org_gwtproject_event_dom_client_DragDropEventBase__();
  }
- /**
-  * @return {Type<DragEnterHandler>}
-  * @public
-  */
+ /** @return {Type<DragEnterHandler>} */
  static m_getType__() {
   DragEnterEvent.$clinit();
   return DragEnterEvent.f_TYPE__org_gwtproject_event_dom_client_DragEnterEvent_;
  }
- /**
-  * @override
-  * @return {Type<DragEnterHandler>}
-  * @public
-  */
+ /** @override @return {Type<DragEnterHandler>} */
  m_getAssociatedType__() {
   return DragEnterEvent.f_TYPE__org_gwtproject_event_dom_client_DragEnterEvent_;
  }
- /**
-  * @param {DragEnterHandler} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_event_dom_client_DragEnterHandler(handler) {
+ 
+ m_dispatch__org_gwtproject_event_dom_client_DragEnterHandler(/** DragEnterHandler */ handler) {
   handler.m_onDragEnter__org_gwtproject_event_dom_client_DragEnterEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_event_dom_client_DragEnterHandler(/**@type {DragEnterHandler} */ ($Casts.$to(arg0, DragEnterHandler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_event_dom_client_DragEnterHandler(/**@type {DragEnterHandler}*/ ($Casts.$to(arg0, DragEnterHandler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DragEnterEvent.$clinit = () =>{};
   DragEnterEvent.$loadModules();
   DragDropEventBase.$clinit();
-  DragEnterEvent.f_TYPE__org_gwtproject_event_dom_client_DragEnterEvent_ = /**@type {!Type<DragEnterHandler>} */ (Type.$create__java_lang_String__org_gwtproject_event_dom_client_DomEvent(BrowserEvents.f_DRAGENTER__org_gwtproject_dom_client_BrowserEvents, DragEnterEvent.$create__()));
+  DragEnterEvent.f_TYPE__org_gwtproject_event_dom_client_DragEnterEvent_ = /**@type {!Type<DragEnterHandler>}*/ (Type.$create__java_lang_String__org_gwtproject_event_dom_client_DomEvent(BrowserEvents.f_DRAGENTER__org_gwtproject_dom_client_BrowserEvents, DragEnterEvent.$create__()));
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DragEnterEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   BrowserEvents = goog.module.get('org.gwtproject.dom.client.BrowserEvents$impl');
   Type = goog.module.get('org.gwtproject.event.dom.client.DomEvent.Type$impl');
@@ -96,7 +67,7 @@ class DragEnterEvent extends DragDropEventBase {
 }
 $Util.$setClassMetadata(DragEnterEvent, 'org.gwtproject.event.dom.client.DragEnterEvent');
 
-/** @public {Type<DragEnterHandler>} */
+/**@type {Type<DragEnterHandler>}*/
 DragEnterEvent.f_TYPE__org_gwtproject_event_dom_client_DragEnterEvent_;
 
 exports = DragEnterEvent; 

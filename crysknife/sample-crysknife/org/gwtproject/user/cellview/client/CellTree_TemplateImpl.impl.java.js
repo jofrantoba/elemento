@@ -14,37 +14,23 @@ let SafeHtmlUtils = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHtml
  * @implements {Template}
   */
 class CellTree__TemplateImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!CellTree__TemplateImpl}
-  * @public
-  */
+ /** @return {!CellTree__TemplateImpl} */
  static $create__() {
   CellTree__TemplateImpl.$clinit();
   let $instance = new CellTree__TemplateImpl();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellTree_TemplateImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_cellview_client_CellTree_TemplateImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {?string} arg0
-  * @param {SafeStyles} arg1
-  * @param {SafeHtml} arg2
-  * @return {SafeHtml}
-  * @public
-  */
- m_imageWrapper__java_lang_String__org_gwtproject_safecss_shared_SafeStyles__org_gwtproject_safehtml_shared_SafeHtml(arg0, arg1, arg2) {
+ /** @override @return {SafeHtml} */
+ m_imageWrapper__java_lang_String__org_gwtproject_safecss_shared_SafeStyles__org_gwtproject_safehtml_shared_SafeHtml(/** ?string */ arg0, /** SafeStyles */ arg1, /** SafeHtml */ arg2) {
   let sb = StringBuilder.$create__();
   sb.m_append__java_lang_String("<div class=\"");
   sb.m_append__java_lang_String(SafeHtmlUtils.m_htmlEscape__java_lang_String(arg0));
@@ -55,25 +41,17 @@ class CellTree__TemplateImpl extends j_l_Object {
   sb.m_append__java_lang_String("</div>");
   return OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml.$create__java_lang_String(sb.toString());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CellTree__TemplateImpl.$clinit = () =>{};
   CellTree__TemplateImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CellTree__TemplateImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   StringBuilder = goog.module.get('java.lang.StringBuilder$impl');
   OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml = goog.module.get('org.gwtproject.safehtml.shared.OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml$impl');

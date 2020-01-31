@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"EditTextCell_TemplateImpl.impl.java.js",
-"lineCount":57,
-"mappings":"A;;;;;;;;;;;;;;MAKa,0B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,qC;EAAAA,iD;EAAAA,0E;EAAAA,iB;;;;;CAAA,6D;EAAAC,iC;;;;;;;;CAKoC,yB,CACxBC,I;EACrBC,IAAcC,EAAdD,6B;EACAA,+D;EACAA,kF;EACAA,6D;EACJA,mG;;;;;QAXa,O;EAAAE,6C;EAAAA,0C;EAAAA;",
+"lineCount":43,
+"mappings":"A;;;;;;;;;;;;;;MAKa,0B;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,qC;EAAAA,iD;EAAAA,0E;EAAAA,iB;;;CAAA,6D;EAAAC,iC;;;CAKoC,yB,gBACxBC,I;EACrBC,IAAcC,EAAdD,6B;EACAA,+D;EACAA,kF;EACAA,6D;EACJA,mG;;;QAXa,O;EAAAE,6C;EAAAA,0C;EAAAA;",
 "sources":["EditTextCell_TemplateImpl.java"],
 "names":["org.gwtproject.cell.client.EditTextCell_TemplateImpl.<synthetic: ctor_js>","org.gwtproject.cell.client.EditTextCell_TemplateImpl.<synthetic: ctor_create>","org.gwtproject.cell.client.EditTextCell_TemplateImpl.<init>","arg0","org.gwtproject.cell.client.EditTextCell_TemplateImpl.input","sb","org.gwtproject.cell.client.EditTextCell_TemplateImpl.<clinit>"]
 }

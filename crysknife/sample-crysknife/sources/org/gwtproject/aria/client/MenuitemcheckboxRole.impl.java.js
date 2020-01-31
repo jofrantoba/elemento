@@ -10,36 +10,23 @@ const MenuitemRole = goog.require('org.gwtproject.aria.client.MenuitemRole$impl'
  * @extends {MenuitemRole}
  */
 class MenuitemcheckboxRole {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MenuitemcheckboxRole.$clinit = () =>{};
   MenuitemcheckboxRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  CheckboxRole.$markImplementor(classConstructor);
-  MenuitemRole.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_MenuitemcheckboxRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  CheckboxRole.$markImplementor(ctor);
+  MenuitemRole.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_MenuitemcheckboxRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_MenuitemcheckboxRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

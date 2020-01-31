@@ -13,175 +13,97 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {InputBuilder}
   */
 class DomInputBuilder extends DomElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @return {!DomInputBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ /** @return {!DomInputBuilder} */
+ static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   DomInputBuilder.$clinit();
   let $instance = new DomInputBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_client_DomInputBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_client_DomInputBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_client_DomInputBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_client_DomElementBuilderBase__org_gwtproject_dom_builder_client_DomBuilderImpl__boolean(delegate, true);
  }
- /**
-  * @override
-  * @param {?string} accept
-  * @return {InputBuilder}
-  * @public
-  */
- m_accept__java_lang_String(accept) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).accept = accept;
+ /** @override @return {InputBuilder} */
+ m_accept__java_lang_String(/** ?string */ accept) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).accept = accept;
   return this;
  }
- /**
-  * @override
-  * @param {?string} accessKey
-  * @return {InputBuilder}
-  * @public
-  */
- m_accessKey__java_lang_String(accessKey) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).accessKey = accessKey;
+ /** @override @return {InputBuilder} */
+ m_accessKey__java_lang_String(/** ?string */ accessKey) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).accessKey = accessKey;
   return this;
  }
- /**
-  * @override
-  * @param {?string} alt
-  * @return {InputBuilder}
-  * @public
-  */
- m_alt__java_lang_String(alt) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).alt = alt;
+ /** @override @return {InputBuilder} */
+ m_alt__java_lang_String(/** ?string */ alt) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).alt = alt;
   return this;
  }
- /**
-  * @override
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @override @return {InputBuilder} */
  m_checked__() {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).checked = true;
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).checked = true;
   return this;
  }
- /**
-  * @override
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @override @return {InputBuilder} */
  m_defaultChecked__() {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).defaultChecked = true;
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).defaultChecked = true;
   return this;
  }
- /**
-  * @override
-  * @param {?string} defaultValue
-  * @return {InputBuilder}
-  * @public
-  */
- m_defaultValue__java_lang_String(defaultValue) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).defaultValue = defaultValue;
+ /** @override @return {InputBuilder} */
+ m_defaultValue__java_lang_String(/** ?string */ defaultValue) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).defaultValue = defaultValue;
   return this;
  }
- /**
-  * @override
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @override @return {InputBuilder} */
  m_disabled__() {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).disabled = true;
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).disabled = true;
   return this;
  }
- /**
-  * @override
-  * @param {number} maxLength
-  * @return {InputBuilder}
-  * @public
-  */
- m_maxLength__int(maxLength) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).maxLength = maxLength;
+ /** @override @return {InputBuilder} */
+ m_maxLength__int(/** number */ maxLength) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).maxLength = maxLength;
   return this;
  }
- /**
-  * @override
-  * @param {?string} name
-  * @return {InputBuilder}
-  * @public
-  */
- m_name__java_lang_String(name) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).name = name;
+ /** @override @return {InputBuilder} */
+ m_name__java_lang_String(/** ?string */ name) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).name = name;
   return this;
  }
- /**
-  * @override
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @override @return {InputBuilder} */
  m_readOnly__() {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).readOnly = true;
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).readOnly = true;
   return this;
  }
- /**
-  * @override
-  * @param {number} size
-  * @return {InputBuilder}
-  * @public
-  */
- m_size__int(size) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).size = size;
+ /** @override @return {InputBuilder} */
+ m_size__int(/** number */ size) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).size = size;
   return this;
  }
- /**
-  * @override
-  * @param {?string} src
-  * @return {InputBuilder}
-  * @public
-  */
- m_src__java_lang_String(src) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).src = src;
+ /** @override @return {InputBuilder} */
+ m_src__java_lang_String(/** ?string */ src) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).src = src;
   return this;
  }
- /**
-  * @override
-  * @param {?string} value
-  * @return {InputBuilder}
-  * @public
-  */
- m_value__java_lang_String(value) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).value = value;
+ /** @override @return {InputBuilder} */
+ m_value__java_lang_String(/** ?string */ value) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).value = value;
   return this;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomInputBuilder.$clinit = () =>{};
   DomInputBuilder.$loadModules();
   DomElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomInputBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('org.gwtproject.dom.client.InputElement.$Overlay$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

@@ -11,48 +11,31 @@ let CommonResources__BundleImpl = goog.forwardDeclare('org.gwtproject.resources.
  * @implements {InlineBlockStyle}
   */
 class $1 extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {CommonResources__BundleImpl} */
+  /**@type {CommonResources__BundleImpl}*/
   this.f_$outer_this__org_gwtproject_resources_client_CommonResources_BundleImpl_1;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_injected__org_gwtproject_resources_client_CommonResources_BundleImpl_1_ = false;
  }
- /**
-  * @param {CommonResources__BundleImpl} $outer_this
-  * @return {!$1}
-  * @public
-  */
- static $create__org_gwtproject_resources_client_CommonResources_BundleImpl($outer_this) {
+ /** @return {!$1} */
+ static $create__org_gwtproject_resources_client_CommonResources_BundleImpl(/** CommonResources__BundleImpl */ $outer_this) {
   $1.$clinit();
   let $instance = new $1();
   $instance.$ctor__org_gwtproject_resources_client_CommonResources_BundleImpl_1__org_gwtproject_resources_client_CommonResources_BundleImpl($outer_this);
   return $instance;
  }
- /**
-  * @param {CommonResources__BundleImpl} $outer_this
-  * @public
-  */
- $ctor__org_gwtproject_resources_client_CommonResources_BundleImpl_1__org_gwtproject_resources_client_CommonResources_BundleImpl($outer_this) {
+ 
+ $ctor__org_gwtproject_resources_client_CommonResources_BundleImpl_1__org_gwtproject_resources_client_CommonResources_BundleImpl(/** CommonResources__BundleImpl */ $outer_this) {
   this.f_$outer_this__org_gwtproject_resources_client_CommonResources_BundleImpl_1 = $outer_this;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getName__() {
   return "inlineBlockStyle";
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_ensureInjected__() {
   if (!this.f_injected__org_gwtproject_resources_client_CommonResources_BundleImpl_1_) {
    this.f_injected__org_gwtproject_resources_client_CommonResources_BundleImpl_1_ = true;
@@ -61,41 +44,25 @@ class $1 extends j_l_Object {
   }
   return false;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getText__() {
   return ".MU1SOAB-n-a{position:relative;display:inline-block}";
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_inlineBlock__() {
   return "MU1SOAB-n-a";
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $1.$clinit = () =>{};
   $1.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $1;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   StyleInjector = goog.module.get('org.gwtproject.dom.client.StyleInjector$impl');
  }

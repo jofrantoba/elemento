@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DataGrid$TableWidget.impl.java.js",
-"lineCount":113,
-"mappings":"A;;;;;;;;;;;;;;;;;;MA2Pe,W;;;;CAAA,W;EAAAA,Q;EAAAA;OACmB,qEADnBA,C;EAAAA;OAEiB,oEAFjBA,C;EAAAA;OAGgB,sEAHhBA,C;;;;;;QAKJ,S;EAAAC,sB;EAAAA,kC;EAAAA,8E;EAAAA,iB;;;;;CAAA,iE;EAAAC,qD;EAELA,6K;EACAA,4F;EACAA,4Q;EACAA,8P;EACAA,kI;EAGAA,+K;EACAA,oK;;;;;;;CAGU,2C,CAAuBC,K,EAAcC,S;EAC/CC,mJ;;;;;;;CAUqB,4B,CAA0BF,K;EAE/CG,SAASC,CAATD;GACEA,qLADFA;G;EAGAA,sT;;;;;;;CAGU,8C,CAA0BH,K,EAAcC,S;EAClDI;GACEA,OADFA;G;EAGAA,sJ;;;;;;CAQG,gE,CAAsBC,K;EAMzBC,IAAIC,QAAJD,sJ;EACAA,SAASH,CAATG;GACEA,+FADFA;G;;;;;;;CAKG,+E,CAAmBE,M,EAAeC,K;EACrCC;GACEA,uHADFA;;GAGEA,4KAHFA;G;;;;;QA9DS,O;EAAAC,8B;EAAAA,2B;EAAAA;",
+"lineCount":85,
+"mappings":"A;;;;;;;;;;;;;;;;;;MA2Pe,W;;CAAA,W;EAAAA,Q;EAAAA;OACmB,qEADnBA,C;EAAAA;OAEiB,oEAFjBA,C;EAAAA;OAGgB,sEAHhBA,C;;;QAKJ,S;EAAAC,sB;EAAAA,kC;EAAAA,8E;EAAAA,iB;;;CAAA,iE;EAAAC,qD;EAELA,6K;EACAA,4F;EACAA,4Q;EACAA,8P;EACAA,kI;EAGAA,+K;EACAA,oK;;;CAGU,2C,eAAuBC,K,iBAAcC,S;EAC/CC,mJ;;;CAUqB,4B,eAA0BF,K;EAE/CG,SAASC,CAATD;GACEA,qLADFA;G;EAGAA,qT;;;CAGU,8C,eAA0BH,K,iBAAcC,S;EAClDI;GACEA,OADFA;G;EAGAA,sJ;;;CAQG,gE,eAAsBC,K;EAMzBC,IAAIC,QAAJD,sJ;EACAA,SAASH,CAATG;GACEA,+FADFA;G;;;CAKG,+E,eAAmBE,M,iBAAeC,K;EACrCC;GACEA,uHADFA;;GAGEA,4KAHFA;G;;;QA9DS,O;EAAAC,8B;EAAAA,2B;EAAAA;",
 "sources":["DataGrid.java"],
 "names":["org.gwtproject.user.cellview.client.DataGrid$TableWidget.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.DataGrid$TableWidget.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.DataGrid$TableWidget.<init>","index","styleName","org.gwtproject.user.cellview.client.DataGrid$TableWidget.addColumnStyleName","org.gwtproject.user.cellview.client.DataGrid$TableWidget.ensureTableColElement","i","org.gwtproject.user.cellview.client.DataGrid$TableWidget.removeColumnStyleName","start","org.gwtproject.user.cellview.client.DataGrid$TableWidget.hideUnusedColumns","colCount","column","width","org.gwtproject.user.cellview.client.DataGrid$TableWidget.setColumnWidth","org.gwtproject.user.cellview.client.DataGrid$TableWidget.<clinit>"]
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ResizeLayoutPanel$Impl$Delegate$$LambdaAdaptor.impl.java.js",
-"lineCount":45,
-"mappings":"A;;;;;;;;;MAyD8B,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;4F;EAAAA,wK;;;;;;CAAA,8J;EAAAC,iC;EAAAA,+F;;;;;CAAA,Y;;GAAAC,0G;GAAAA,Y;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;MAyD8B,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;4F;EAAAA,wK;;;CAAA,8J;EAAAC,iC;EAAAA,+F;;;CAAA,Y;;GAAAC,0G;GAAAA,Y;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["ResizeLayoutPanel.java"],
 "names":["org.gwtproject.user.client.ui.ResizeLayoutPanel$Impl$Delegate$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.client.ui.ResizeLayoutPanel$Impl$Delegate$$LambdaAdaptor.<init>","org.gwtproject.user.client.ui.ResizeLayoutPanel$Impl$Delegate$$LambdaAdaptor.onResize","org.gwtproject.user.client.ui.ResizeLayoutPanel$Impl$Delegate$$LambdaAdaptor.<clinit>"]
 }

@@ -11,42 +11,24 @@ let Handler = goog.forwardDeclare('org.gwtproject.view.client.SelectionChangeEve
  * @extends {HasHandlers}
  */
 class HasSelectionChangedHandlers {
- /**
-  * @abstract
-  * @param {Handler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addSelectionChangeHandler__org_gwtproject_view_client_SelectionChangeEvent_Handler(handler) {}
- /**
-  * @public
-  */
+ /** @abstract @return {HandlerRegistration} */
+ m_addSelectionChangeHandler__org_gwtproject_view_client_SelectionChangeEvent_Handler(/** Handler */ handler) {}
+ 
  static $clinit() {
   HasSelectionChangedHandlers.$clinit = () =>{};
   HasSelectionChangedHandlers.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasHandlers.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_view_client_SelectionChangeEvent_HasSelectionChangedHandlers = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasHandlers.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_view_client_SelectionChangeEvent_HasSelectionChangedHandlers = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_view_client_SelectionChangeEvent_HasSelectionChangedHandlers;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -23,21 +23,15 @@ let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
  * @extends {AbstractEditableCell<C, V>}
   */
 class AbstractInputCell extends AbstractEditableCell {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {*} */
+  /**@type {*}*/
   this.f_focusedKey__org_gwtproject_cell_client_AbstractInputCell_;
  }
- /**
-  * @param {Set<?string>} userEvents
-  * @return {Set<?string>}
-  * @public
-  */
- static m_getConsumedEventsImpl__java_util_Set(userEvents) {
-  let events = /**@type {!HashSet<?string>} */ (HashSet.$create__());
+ /** @return {Set<?string>} */
+ static m_getConsumedEventsImpl__java_util_Set(/** Set<?string> */ userEvents) {
+  let events = /**@type {!HashSet<?string>}*/ (HashSet.$create__());
   events.add(BrowserEvents.f_FOCUS__org_gwtproject_dom_client_BrowserEvents);
   events.add(BrowserEvents.f_BLUR__org_gwtproject_dom_client_BrowserEvents);
   events.add(BrowserEvents.f_KEYDOWN__org_gwtproject_dom_client_BrowserEvents);
@@ -46,13 +40,9 @@ class AbstractInputCell extends AbstractEditableCell {
   }
   return events;
  }
- /**
-  * @param {Array<?string>} consumedEvents
-  * @return {Set<?string>}
-  * @public
-  */
- static m_getConsumedEventsImpl__arrayOf_java_lang_String(consumedEvents) {
-  let userEvents = /**@type {!HashSet<?string>} */ (HashSet.$create__());
+ /** @return {Set<?string>} */
+ static m_getConsumedEventsImpl__arrayOf_java_lang_String(/** Array<?string> */ consumedEvents) {
+  let userEvents = /**@type {!HashSet<?string>}*/ (HashSet.$create__());
   if (!$Equality.$same(consumedEvents, null)) {
    for (let $array = consumedEvents, $index = 0; $index < $array.length; $index++) {
     let event = $array[$index];
@@ -61,45 +51,24 @@ class AbstractInputCell extends AbstractEditableCell {
   }
   return AbstractInputCell.m_getConsumedEventsImpl__java_util_Set(userEvents);
  }
- /**
-  * Initialization from constructor 'AbstractInputCell(String...)'.
-  * @param {Array<?string>} consumedEvents
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_AbstractInputCell__arrayOf_java_lang_String(consumedEvents) {
+ //Initialization from constructor 'AbstractInputCell(String...)'.
+ 
+ $ctor__org_gwtproject_cell_client_AbstractInputCell__arrayOf_java_lang_String(/** Array<?string> */ consumedEvents) {
   this.$ctor__org_gwtproject_cell_client_AbstractEditableCell__java_util_Set(AbstractInputCell.m_getConsumedEventsImpl__arrayOf_java_lang_String(consumedEvents));
  }
- /**
-  * Initialization from constructor 'AbstractInputCell(Set)'.
-  * @param {Set<?string>} consumedEvents
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_AbstractInputCell__java_util_Set(consumedEvents) {
+ //Initialization from constructor 'AbstractInputCell(Set)'.
+ 
+ $ctor__org_gwtproject_cell_client_AbstractInputCell__java_util_Set(/** Set<?string> */ consumedEvents) {
   this.$ctor__org_gwtproject_cell_client_AbstractEditableCell__java_util_Set(AbstractInputCell.m_getConsumedEventsImpl__java_util_Set(consumedEvents));
  }
- /**
-  * @override
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {C} value
-  * @return {boolean}
-  * @public
-  */
- m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(context, parent, value) {
+ /** @override @return {boolean} */
+ m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(/** Context */ context, /** Object */ parent, /** C */ value) {
   return !$Equality.$same(this.f_focusedKey__org_gwtproject_cell_client_AbstractInputCell_, null) && $Objects.m_equals__java_lang_Object__java_lang_Object(this.f_focusedKey__org_gwtproject_cell_client_AbstractInputCell_, context.m_getKey__());
  }
- /**
-  * @override
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {C} value
-  * @param {Object} event
-  * @param {ValueUpdater<C>} valueUpdater
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, parent, value, event, valueUpdater) {
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(/** Context */ context, /** Object */ parent, /** C */ value, /** Object */ event, /** ValueUpdater<C> */ valueUpdater) {
   super.m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, parent, value, event, valueUpdater);
-  let target = /**@type {Object} */ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(NativeEvent_$Overlay.m_getEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(event)), Element_$Overlay));
+  let target = /**@type {Object}*/ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(NativeEvent_$Overlay.m_getEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(event)), Element_$Overlay));
   if (!Node_$Overlay.m_isOrHasChild__$devirt__org_gwtproject_dom_client_Node__org_gwtproject_dom_client_Node(this.m_getInputElement__org_gwtproject_dom_client_Element(parent), target)) {
    return;
   }
@@ -110,52 +79,27 @@ class AbstractInputCell extends AbstractEditableCell {
    this.f_focusedKey__org_gwtproject_cell_client_AbstractInputCell_ = null;
   }
  }
- /**
-  * @override
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {C} value
-  * @return {boolean}
-  * @public
-  */
- m_resetFocus__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(context, parent, value) {
+ /** @override @return {boolean} */
+ m_resetFocus__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(/** Context */ context, /** Object */ parent, /** C */ value) {
   if (this.m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(context, parent, value)) {
    this.m_getInputElement__org_gwtproject_dom_client_Element(parent).focus();
    return true;
   }
   return false;
  }
- /**
-  * @param {Object} parent
-  * @param {C} value
-  * @param {*} key
-  * @param {ValueUpdater<C>} valueUpdater
-  * @public
-  */
- m_finishEditing__org_gwtproject_dom_client_Element__java_lang_Object__java_lang_Object__org_gwtproject_cell_client_ValueUpdater(parent, value, key, valueUpdater) {
+ 
+ m_finishEditing__org_gwtproject_dom_client_Element__java_lang_Object__java_lang_Object__org_gwtproject_cell_client_ValueUpdater(/** Object */ parent, /** C */ value, /** * */ key, /** ValueUpdater<C> */ valueUpdater) {
   this.f_focusedKey__org_gwtproject_cell_client_AbstractInputCell_ = null;
   this.m_getInputElement__org_gwtproject_dom_client_Element(parent).blur();
  }
- /**
-  * @param {Object} parent
-  * @return {Object}
-  * @public
-  */
- m_getInputElement__org_gwtproject_dom_client_Element(parent) {
+ /** @return {Object} */
+ m_getInputElement__org_gwtproject_dom_client_Element(/** Object */ parent) {
   return Element_$Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(parent);
  }
- /**
-  * @override
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {C} value
-  * @param {Object} event
-  * @param {ValueUpdater<C>} valueUpdater
-  * @public
-  */
- m_onEnterKeyDown__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, parent, value, event, valueUpdater) {
+ /** @override */
+ m_onEnterKeyDown__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(/** Context */ context, /** Object */ parent, /** C */ value, /** Object */ event, /** ValueUpdater<C> */ valueUpdater) {
   let input = this.m_getInputElement__org_gwtproject_dom_client_Element(parent);
-  let target = /**@type {Object} */ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(NativeEvent_$Overlay.m_getEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(event)), Element_$Overlay));
+  let target = /**@type {Object}*/ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(NativeEvent_$Overlay.m_getEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(event)), Element_$Overlay));
   let key = context.m_getKey__();
   if (Node_$Overlay.m_isOrHasChild__$devirt__org_gwtproject_dom_client_Node__org_gwtproject_dom_client_Node(this.m_getInputElement__org_gwtproject_dom_client_Element(parent), target)) {
    this.m_finishEditing__org_gwtproject_dom_client_Element__java_lang_Object__java_lang_Object__org_gwtproject_cell_client_ValueUpdater(parent, value, key, valueUpdater);
@@ -164,25 +108,17 @@ class AbstractInputCell extends AbstractEditableCell {
    input.focus();
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AbstractInputCell.$clinit = () =>{};
   AbstractInputCell.$loadModules();
   AbstractEditableCell.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AbstractInputCell;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   HashSet = goog.module.get('java.util.HashSet$impl');

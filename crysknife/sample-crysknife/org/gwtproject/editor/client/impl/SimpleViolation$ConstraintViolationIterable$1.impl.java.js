@@ -15,90 +15,56 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {Iterator<SimpleViolation>}
   */
 class $1 extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {ConstraintViolationIterable} */
+  /**@type {ConstraintViolationIterable}*/
   this.f_$outer_this__org_gwtproject_editor_client_impl_SimpleViolation_ConstraintViolationIterable_1;
-  /** @public {Iterator<ConstraintViolation<?>>} */
+  /**@type {Iterator<ConstraintViolation<?>>}*/
   this.$c_source;
  }
- /**
-  * @param {ConstraintViolationIterable} $outer_this
-  * @param {Iterator<ConstraintViolation<?>>} $c_source
-  * @return {!$1}
-  * @public
-  */
- static $create__org_gwtproject_editor_client_impl_SimpleViolation_ConstraintViolationIterable__java_util_Iterator($outer_this, $c_source) {
+ /** @return {!$1} */
+ static $create__org_gwtproject_editor_client_impl_SimpleViolation_ConstraintViolationIterable__java_util_Iterator(/** ConstraintViolationIterable */ $outer_this, /** Iterator<ConstraintViolation<?>> */ $c_source) {
   $1.$clinit();
   let $instance = new $1();
   $instance.$ctor__org_gwtproject_editor_client_impl_SimpleViolation_ConstraintViolationIterable_1__org_gwtproject_editor_client_impl_SimpleViolation_ConstraintViolationIterable__java_util_Iterator($outer_this, $c_source);
   return $instance;
  }
- /**
-  * @param {ConstraintViolationIterable} $outer_this
-  * @param {Iterator<ConstraintViolation<?>>} $c_source
-  * @public
-  */
- $ctor__org_gwtproject_editor_client_impl_SimpleViolation_ConstraintViolationIterable_1__org_gwtproject_editor_client_impl_SimpleViolation_ConstraintViolationIterable__java_util_Iterator($outer_this, $c_source) {
+ 
+ $ctor__org_gwtproject_editor_client_impl_SimpleViolation_ConstraintViolationIterable_1__org_gwtproject_editor_client_impl_SimpleViolation_ConstraintViolationIterable__java_util_Iterator(/** ConstraintViolationIterable */ $outer_this, /** Iterator<ConstraintViolation<?>> */ $c_source) {
   this.f_$outer_this__org_gwtproject_editor_client_impl_SimpleViolation_ConstraintViolationIterable_1 = $outer_this;
   this.$c_source = $c_source;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_hasNext__() {
   return this.$c_source.m_hasNext__();
  }
- /**
-  * @override
-  * @return {SimpleViolation}
-  * @public
-  */
+ /** @override @return {SimpleViolation} */
  m_next__() {
-  return SimpleViolationAdapter.$create__javax_validation_ConstraintViolation(/**@type {ConstraintViolation<*>} */ ($Casts.$to(this.$c_source.m_next__(), ConstraintViolation)));
+  return SimpleViolationAdapter.$create__javax_validation_ConstraintViolation(/**@type {ConstraintViolation<*>}*/ ($Casts.$to(this.$c_source.m_next__(), ConstraintViolation)));
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_remove__() {
   this.$c_source.m_remove__();
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEachRemaining__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEachRemaining__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterator.m_forEachRemaining__$default__java_util_Iterator__java_util_function_Consumer(this, arg0);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $1.$clinit = () =>{};
   $1.$loadModules();
   j_l_Object.$clinit();
   Iterator.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $1;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   ConstraintViolation = goog.module.get('javax.validation.ConstraintViolation$impl');
   SimpleViolationAdapter = goog.module.get('org.gwtproject.editor.client.impl.SimpleViolation.SimpleViolationAdapter$impl');

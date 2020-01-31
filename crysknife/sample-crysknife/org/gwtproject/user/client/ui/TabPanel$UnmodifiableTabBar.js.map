@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TabPanel$UnmodifiableTabBar.impl.java.js",
-"lineCount":105,
-"mappings":"A;;;;;;;;;;;MAkKgB,kB;;;;CAAA,W;EAAAA,Q;EAAAA;gF;;;;;;;QAAA,+C;EAAAC,6B;EAAAA,yC;EAAAA,gI;EAAAA,iB;;;;;;CAAA,wG;EAAAC,4F;EAAAA,qD;;;;;;;;;CAEA,2C,CAA6BC,I,EAAcC,M,EAAYC,W;EACjEC,6H;;;;;;;;CAKU,sD,CAAiBC,M,EAAYF,W;EACvCC,6H;;;;;;;;CAIU,oD,CAAsCH,I,EAAcC,M,EAAYC,W;EAC1EG,6E;;;;;;;CAGU,+D,CAA0BD,M,EAAYF,W;EAChDG,kF;;;;;;;CAIU,gB,CAAcC,K;EAIxBC,6H;;;;;;CAIU,yB,CAAuBD,K;EACjCE,8B;;;;;;;CAIoB,wB;EACpBC,gH;;;;;QApCU,O;EAAAC,qC;EAAAA,kC;EAAAA;",
+"lineCount":63,
+"mappings":"A;;;;;;;;;;;MAkKgB,kB;;CAAA,W;EAAAA,Q;EAAAA;gF;;;QAAA,+C;EAAAC,6B;EAAAA,yC;EAAAA,gI;EAAAA,iB;;;CAAA,wG;EAAAC,4F;EAAAA,qD;;;CAEA,2C,gBAA6BC,I,iBAAcC,M,gBAAYC,W;EACjEC,6H;;;CAKU,sD,eAAiBC,M,gBAAYF,W;EACvCC,6H;;;CAIU,oD,gBAAsCH,I,iBAAcC,M,gBAAYC,W;EAC1EG,6E;;;CAGU,+D,eAA0BD,M,gBAAYF,W;EAChDG,kF;;;CAIU,gB,eAAcC,K;EAIxBC,6H;;;CAIU,yB,eAAuBD,K;EACjCE,8B;;;CAIoB,wB;EACpBC,gH;;;QApCU,O;EAAAC,qC;EAAAA,kC;EAAAA;",
 "sources":["TabPanel.java"],
 "names":["org.gwtproject.user.client.ui.TabPanel$UnmodifiableTabBar.<synthetic: ctor_js>","org.gwtproject.user.client.ui.TabPanel$UnmodifiableTabBar.<synthetic: ctor_create>","org.gwtproject.user.client.ui.TabPanel$UnmodifiableTabBar.<init>","text","asHTML","beforeIndex","org.gwtproject.user.client.ui.TabPanel$UnmodifiableTabBar.insertTab","widget","org.gwtproject.user.client.ui.TabPanel$UnmodifiableTabBar.insertTabProtected","index","org.gwtproject.user.client.ui.TabPanel$UnmodifiableTabBar.removeTab","org.gwtproject.user.client.ui.TabPanel$UnmodifiableTabBar.removeTabProtected","org.gwtproject.user.client.ui.TabPanel$UnmodifiableTabBar.createTabTextWrapper","org.gwtproject.user.client.ui.TabPanel$UnmodifiableTabBar.<clinit>"]
 }

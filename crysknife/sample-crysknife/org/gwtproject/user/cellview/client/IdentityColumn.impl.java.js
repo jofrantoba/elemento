@@ -10,59 +10,36 @@ let Cell = goog.forwardDeclare('org.gwtproject.cell.client.Cell$impl');
  * @extends {Column<T, T>}
   */
 class IdentityColumn extends Column {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @template T
-  * @param {Cell<T>} cell
-  * @return {!IdentityColumn<T>}
-  * @public
-  */
- static $create__org_gwtproject_cell_client_Cell(cell) {
+ /** @template T @return {!IdentityColumn<T>} */
+ static $create__org_gwtproject_cell_client_Cell(/** Cell<T> */ cell) {
   IdentityColumn.$clinit();
   let $instance = new IdentityColumn();
   $instance.$ctor__org_gwtproject_user_cellview_client_IdentityColumn__org_gwtproject_cell_client_Cell(cell);
   return $instance;
  }
- /**
-  * @param {Cell<T>} cell
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_IdentityColumn__org_gwtproject_cell_client_Cell(cell) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_IdentityColumn__org_gwtproject_cell_client_Cell(/** Cell<T> */ cell) {
   this.$ctor__org_gwtproject_user_cellview_client_Column__org_gwtproject_cell_client_Cell(cell);
  }
- /**
-  * @override
-  * @param {T} object
-  * @return {T}
-  * @public
-  */
- m_getValue__java_lang_Object(object) {
+ /** @override @return {T} */
+ m_getValue__java_lang_Object(/** T */ object) {
   return object;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   IdentityColumn.$clinit = () =>{};
   IdentityColumn.$loadModules();
   Column.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof IdentityColumn;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

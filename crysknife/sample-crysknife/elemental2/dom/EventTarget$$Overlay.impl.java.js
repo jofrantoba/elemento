@@ -10,60 +10,32 @@ let RemoveEventListenerOptionsUnionType_$Overlay = goog.forwardDeclare('elementa
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class EventTarget_$Overlay {
- /**
-  * @param {!EventTarget} $thisArg
-  * @param {?string} type
-  * @param {EventListener} listener
-  * @param {AddEventListenerOptions} options
-  * @public
-  */
- static m_addEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__elemental2_dom_AddEventListenerOptions($thisArg, type, listener, options) {
+ 
+ static m_addEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__elemental2_dom_AddEventListenerOptions(/** !EventTarget */ $thisArg, /** ?string */ type, /** EventListener */ listener, /** AddEventListenerOptions */ options) {
   EventTarget_$Overlay.$clinit();
-  $thisArg.addEventListener(type, listener, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(options)));
+  $thisArg.addEventListener(type, listener, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(options)));
  }
- /**
-  * @param {!EventTarget} $thisArg
-  * @param {?string} type
-  * @param {EventListener} listener
-  * @param {boolean} options
-  * @public
-  */
- static m_addEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean($thisArg, type, listener, options) {
+ 
+ static m_addEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(/** !EventTarget */ $thisArg, /** ?string */ type, /** EventListener */ listener, /** boolean */ options) {
   EventTarget_$Overlay.$clinit();
-  $thisArg.addEventListener(type, listener, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(options)));
+  $thisArg.addEventListener(type, listener, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(options)));
  }
- /**
-  * @param {!EventTarget} $thisArg
-  * @param {?string} type
-  * @param {EventListener} listener
-  * @param {EventListenerOptions} options
-  * @public
-  */
- static m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__elemental2_dom_EventListenerOptions($thisArg, type, listener, options) {
+ 
+ static m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__elemental2_dom_EventListenerOptions(/** !EventTarget */ $thisArg, /** ?string */ type, /** EventListener */ listener, /** EventListenerOptions */ options) {
   EventTarget_$Overlay.$clinit();
-  $thisArg.removeEventListener(type, listener, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(options)));
+  $thisArg.removeEventListener(type, listener, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(options)));
  }
- /**
-  * @param {!EventTarget} $thisArg
-  * @param {?string} type
-  * @param {EventListener} listener
-  * @param {boolean} options
-  * @public
-  */
- static m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean($thisArg, type, listener, options) {
+ 
+ static m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(/** !EventTarget */ $thisArg, /** ?string */ type, /** EventListener */ listener, /** boolean */ options) {
   EventTarget_$Overlay.$clinit();
-  $thisArg.removeEventListener(type, listener, /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(options)));
+  $thisArg.removeEventListener(type, listener, /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(options)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   EventTarget_$Overlay.$clinit = () =>{};
   EventTarget_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }

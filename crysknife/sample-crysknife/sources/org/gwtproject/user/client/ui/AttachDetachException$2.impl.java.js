@@ -10,55 +10,36 @@ let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
  * @implements {Command}
   */
 class $2 extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!$2}
-  * @public
-  */
+ /** @return {!$2} */
  static $create__() {
   $2.$clinit();
   let $instance = new $2();
   $instance.$ctor__org_gwtproject_user_client_ui_AttachDetachException_2__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_AttachDetachException_2__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @public
-  */
- m_execute__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override */
+ m_execute__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   w.m_onDetach__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $2.$clinit = () =>{};
   $2.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $2;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

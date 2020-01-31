@@ -13,27 +13,17 @@ let SafeUriString = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeUriS
 let JvmImpl = goog.forwardDeclare('org.gwtproject.safehtml.shared.UriUtils.JvmImpl$impl');
 
 class UriUtils extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} uri
-  * @return {?string}
-  * @public
-  */
- static m_encode__java_lang_String(uri) {
+ /** @return {?string} */
+ static m_encode__java_lang_String(/** ?string */ uri) {
   UriUtils.$clinit();
   return UriUtils.f_impl__org_gwtproject_safehtml_shared_UriUtils_.m_encode__java_lang_String_$pp_org_gwtproject_safehtml_shared(uri);
  }
- /**
-  * @param {?string} uri
-  * @return {?string}
-  * @public
-  */
- static m_encodeAllowEscapes__java_lang_String(uri) {
+ /** @return {?string} */
+ static m_encodeAllowEscapes__java_lang_String(/** ?string */ uri) {
   UriUtils.$clinit();
   let escaped = StringBuilder.$create__();
   let firstSegment = true;
@@ -53,12 +43,8 @@ class UriUtils extends j_l_Object {
   }
   return escaped.toString();
  }
- /**
-  * @param {?string} uri
-  * @return {?string}
-  * @public
-  */
- static m_extractScheme__java_lang_String(uri) {
+ /** @return {?string} */
+ static m_extractScheme__java_lang_String(/** ?string */ uri) {
   UriUtils.$clinit();
   let colonPos = j_l_String.m_indexOf__java_lang_String__int(uri, 58 /* ':' */);
   if (colonPos < 0) {
@@ -70,41 +56,25 @@ class UriUtils extends j_l_Object {
   }
   return scheme;
  }
- /**
-  * @param {?string} s
-  * @return {SafeUri}
-  * @public
-  */
- static m_fromSafeConstant__java_lang_String(s) {
+ /** @return {SafeUri} */
+ static m_fromSafeConstant__java_lang_String(/** ?string */ s) {
   UriUtils.$clinit();
   SafeUriHostedModeUtils.m_maybeCheckValidUri__java_lang_String(s);
   return SafeUriString.$create__java_lang_String(s);
  }
- /**
-  * @param {?string} s
-  * @return {SafeUri}
-  * @public
-  */
- static m_fromString__java_lang_String(s) {
+ /** @return {SafeUri} */
+ static m_fromString__java_lang_String(/** ?string */ s) {
   UriUtils.$clinit();
   return SafeUriString.$create__java_lang_String(UriUtils.m_sanitizeUri__java_lang_String(s));
  }
- /**
-  * @param {?string} s
-  * @return {SafeUri}
-  * @public
-  */
- static m_fromTrustedString__java_lang_String(s) {
+ /** @return {SafeUri} */
+ static m_fromTrustedString__java_lang_String(/** ?string */ s) {
   UriUtils.$clinit();
   SafeUriHostedModeUtils.m_maybeCheckValidUri__java_lang_String(s);
   return SafeUriString.$create__java_lang_String(s);
  }
- /**
-  * @param {?string} uri
-  * @return {boolean}
-  * @public
-  */
- static m_isSafeUri__java_lang_String(uri) {
+ /** @return {boolean} */
+ static m_isSafeUri__java_lang_String(/** ?string */ uri) {
   UriUtils.$clinit();
   let scheme = UriUtils.m_extractScheme__java_lang_String(uri);
   if ($Equality.$same(scheme, null)) {
@@ -113,12 +83,8 @@ class UriUtils extends j_l_Object {
   let schemeLc = j_l_String.m_toLowerCase__java_lang_String__java_util_Locale(scheme, Locale.f_ROOT__java_util_Locale);
   return ($Equality.$same("http", schemeLc) || $Equality.$same("https", schemeLc) || $Equality.$same("ftp", schemeLc) || $Equality.$same("mailto", schemeLc) || $Equality.$same("MAILTO", j_l_String.m_toUpperCase__java_lang_String__java_util_Locale(scheme, Locale.f_ROOT__java_util_Locale)));
  }
- /**
-  * @param {?string} uri
-  * @return {?string}
-  * @public
-  */
- static m_sanitizeUri__java_lang_String(uri) {
+ /** @return {?string} */
+ static m_sanitizeUri__java_lang_String(/** ?string */ uri) {
   UriUtils.$clinit();
   if (UriUtils.m_isSafeUri__java_lang_String(uri)) {
    return UriUtils.m_encodeAllowEscapes__java_lang_String(uri);
@@ -126,51 +92,33 @@ class UriUtils extends j_l_Object {
    return "#";
   }
  }
- /**
-  * @param {?string} s
-  * @return {SafeUri}
-  * @public
-  * @deprecated
-  */
- static m_unsafeCastFromUntrustedString__java_lang_String(s) {
+ /** @return {SafeUri} @deprecated */
+ static m_unsafeCastFromUntrustedString__java_lang_String(/** ?string */ s) {
   UriUtils.$clinit();
   return SafeUriString.$create__java_lang_String(s);
  }
- /**
-  * @return {!UriUtils}
-  * @public
-  */
+ /** @return {!UriUtils} */
  static $create__() {
   let $instance = new UriUtils();
   $instance.$ctor__org_gwtproject_safehtml_shared_UriUtils__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_safehtml_shared_UriUtils__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   UriUtils.$clinit = () =>{};
   UriUtils.$loadModules();
   j_l_Object.$clinit();
   UriUtils.f_impl__org_gwtproject_safehtml_shared_UriUtils_ = JvmImpl.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof UriUtils;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   StringBuilder = goog.module.get('java.lang.StringBuilder$impl');
@@ -184,9 +132,9 @@ class UriUtils extends j_l_Object {
 }
 $Util.$setClassMetadata(UriUtils, 'org.gwtproject.safehtml.shared.UriUtils');
 
-/** @public {?string} @const */
+/**@const {?string}*/
 UriUtils.f_DONT_NEED_ENCODING__org_gwtproject_safehtml_shared_UriUtils = ";/?:@&=+$,-_.!~*'()#[]";
-/** @public {JvmImpl} */
+/**@type {JvmImpl}*/
 UriUtils.f_impl__org_gwtproject_safehtml_shared_UriUtils_;
 
 exports = UriUtils; 

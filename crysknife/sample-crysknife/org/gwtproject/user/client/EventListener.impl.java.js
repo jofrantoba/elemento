@@ -9,49 +9,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.user.client.EventListen
  * @interface
  */
 class EventListener {
- /**
-  * @abstract
-  * @param {Event} event
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_user_client_Event(event) {}
- /**
-  * @param {?function(Event):void} fn
-  * @return {EventListener}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onBrowserEvent__org_gwtproject_user_client_Event(/** Event */ event) {}
+ /** @return {EventListener} */
+ static $adapt(/** ?function(Event):void */ fn) {
   EventListener.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   EventListener.$clinit = () =>{};
   EventListener.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_EventListener = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_client_EventListener = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_EventListener;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.user.client.EventListener.$LambdaAdaptor$impl');
  }

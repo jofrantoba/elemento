@@ -19,217 +19,122 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {org_gwtproject_regexp_shared_RegExp}
   */
 class NativeRegExp extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {RegExp} */
+  /**@type {RegExp}*/
   this.f_jsRegExp__org_gwtproject_regexp_client_NativeRegExp_;
  }
- /**
-  * @param {?string} pattern
-  * @return {org_gwtproject_regexp_shared_RegExp}
-  * @public
-  */
- static m_compile__java_lang_String(pattern) {
+ /** @return {org_gwtproject_regexp_shared_RegExp} */
+ static m_compile__java_lang_String(/** ?string */ pattern) {
   NativeRegExp.$clinit();
   return NativeRegExp.$create__java_lang_String(pattern);
  }
- /**
-  * @param {?string} pattern
-  * @param {?string} flags
-  * @return {org_gwtproject_regexp_shared_RegExp}
-  * @public
-  */
- static m_compile__java_lang_String__java_lang_String(pattern, flags) {
+ /** @return {org_gwtproject_regexp_shared_RegExp} */
+ static m_compile__java_lang_String__java_lang_String(/** ?string */ pattern, /** ?string */ flags) {
   NativeRegExp.$clinit();
   return NativeRegExp.$create__java_lang_String__java_lang_String(pattern, flags);
  }
- /**
-  * @param {?string} input
-  * @return {?string}
-  * @public
-  */
- static m_quote__java_lang_String(input) {
+ /** @return {?string} */
+ static m_quote__java_lang_String(/** ?string */ input) {
   NativeRegExp.$clinit();
   return $Overlay.m_replace__$devirt__elemental2_core_JsString__elemental2_core_JsRegExp__java_lang_String(new String(input), new RegExp("([.?*+^$[\\]\\\\(){}|-])", "g"), "\\$1");
  }
- /**
-  * Factory method corresponding to constructor 'NativeRegExp()'.
-  * @return {!NativeRegExp}
-  * @public
-  */
+ //Factory method corresponding to constructor 'NativeRegExp()'.
+ /** @return {!NativeRegExp} */
  static $create__() {
   let $instance = new NativeRegExp();
   $instance.$ctor__org_gwtproject_regexp_client_NativeRegExp__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'NativeRegExp()'.
-  * @public
-  */
+ //Initialization from constructor 'NativeRegExp()'.
+ 
  $ctor__org_gwtproject_regexp_client_NativeRegExp__() {
   this.$ctor__java_lang_Object__();
   this.f_jsRegExp__org_gwtproject_regexp_client_NativeRegExp_ = new RegExp();
  }
- /**
-  * Factory method corresponding to constructor 'NativeRegExp(String)'.
-  * @param {?string} pattern
-  * @return {!NativeRegExp}
-  * @public
-  */
- static $create__java_lang_String(pattern) {
+ //Factory method corresponding to constructor 'NativeRegExp(String)'.
+ /** @return {!NativeRegExp} */
+ static $create__java_lang_String(/** ?string */ pattern) {
   let $instance = new NativeRegExp();
   $instance.$ctor__org_gwtproject_regexp_client_NativeRegExp__java_lang_String(pattern);
   return $instance;
  }
- /**
-  * Initialization from constructor 'NativeRegExp(String)'.
-  * @param {?string} pattern
-  * @public
-  */
- $ctor__org_gwtproject_regexp_client_NativeRegExp__java_lang_String(pattern) {
+ //Initialization from constructor 'NativeRegExp(String)'.
+ 
+ $ctor__org_gwtproject_regexp_client_NativeRegExp__java_lang_String(/** ?string */ pattern) {
   this.$ctor__org_gwtproject_regexp_client_NativeRegExp__();
   this.f_jsRegExp__org_gwtproject_regexp_client_NativeRegExp_.compile(pattern);
  }
- /**
-  * Factory method corresponding to constructor 'NativeRegExp(String, String)'.
-  * @param {?string} pattern
-  * @param {?string} flags
-  * @return {!NativeRegExp}
-  * @public
-  */
- static $create__java_lang_String__java_lang_String(pattern, flags) {
+ //Factory method corresponding to constructor 'NativeRegExp(String, String)'.
+ /** @return {!NativeRegExp} */
+ static $create__java_lang_String__java_lang_String(/** ?string */ pattern, /** ?string */ flags) {
   let $instance = new NativeRegExp();
   $instance.$ctor__org_gwtproject_regexp_client_NativeRegExp__java_lang_String__java_lang_String(pattern, flags);
   return $instance;
  }
- /**
-  * Initialization from constructor 'NativeRegExp(String, String)'.
-  * @param {?string} pattern
-  * @param {?string} flags
-  * @public
-  */
- $ctor__org_gwtproject_regexp_client_NativeRegExp__java_lang_String__java_lang_String(pattern, flags) {
+ //Initialization from constructor 'NativeRegExp(String, String)'.
+ 
+ $ctor__org_gwtproject_regexp_client_NativeRegExp__java_lang_String__java_lang_String(/** ?string */ pattern, /** ?string */ flags) {
   this.$ctor__org_gwtproject_regexp_client_NativeRegExp__();
   this.f_jsRegExp__org_gwtproject_regexp_client_NativeRegExp_.compile(pattern, flags);
  }
- /**
-  * @override
-  * @param {?string} input
-  * @return {MatchResult}
-  * @public
-  */
- m_exec__java_lang_String(input) {
+ /** @override @return {MatchResult} */
+ m_exec__java_lang_String(/** ?string */ input) {
   let result = this.f_jsRegExp__org_gwtproject_regexp_client_NativeRegExp_.exec(input);
-  return Objects.m_isNull__java_lang_Object(result) ? null : NativeMatchResult.$create__elemental2_core_JsArray(/**@type {Array<?string>} */ ($Casts.$to(Js.m_cast__java_lang_Object(result), JsArray_$Overlay)));
+  return Objects.m_isNull__java_lang_Object(result) ? null : NativeMatchResult.$create__elemental2_core_JsArray(/**@type {Array<?string>}*/ ($Casts.$to(Js.m_cast__java_lang_Object(result), JsArray_$Overlay)));
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_getGlobal__() {
   return this.f_jsRegExp__org_gwtproject_regexp_client_NativeRegExp_.global;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_getIgnoreCase__() {
   return this.f_jsRegExp__org_gwtproject_regexp_client_NativeRegExp_.ignoreCase;
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getLastIndex__() {
   return this.f_jsRegExp__org_gwtproject_regexp_client_NativeRegExp_.lastIndex;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_getMultiline__() {
   return this.f_jsRegExp__org_gwtproject_regexp_client_NativeRegExp_.multiline;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getSource__() {
   return this.f_jsRegExp__org_gwtproject_regexp_client_NativeRegExp_.source;
  }
- /**
-  * @override
-  * @param {?string} input
-  * @param {?string} replacement
-  * @return {?string}
-  * @public
-  */
- m_replace__java_lang_String__java_lang_String(input, replacement) {
+ /** @override @return {?string} */
+ m_replace__java_lang_String__java_lang_String(/** ?string */ input, /** ?string */ replacement) {
   return $Overlay.m_replace__$devirt__elemental2_core_JsString__elemental2_core_JsRegExp__java_lang_String(new String(input), this.f_jsRegExp__org_gwtproject_regexp_client_NativeRegExp_, replacement);
  }
- /**
-  * @override
-  * @param {number} lastIndex
-  * @public
-  */
- m_setLastIndex__int(lastIndex) {
+ /** @override */
+ m_setLastIndex__int(/** number */ lastIndex) {
   this.f_jsRegExp__org_gwtproject_regexp_client_NativeRegExp_.lastIndex = lastIndex;
  }
- /**
-  * @override
-  * @param {?string} input
-  * @return {SplitResult}
-  * @public
-  */
- m_split__java_lang_String(input) {
-  return NativeSplitResult.$create__elemental2_core_JsArray(/**@type {Array<?string>} */ ($Casts.$to(Js.m_cast__java_lang_Object(new String(input).split(this.f_jsRegExp__org_gwtproject_regexp_client_NativeRegExp_)), JsArray_$Overlay)));
+ /** @override @return {SplitResult} */
+ m_split__java_lang_String(/** ?string */ input) {
+  return NativeSplitResult.$create__elemental2_core_JsArray(/**@type {Array<?string>}*/ ($Casts.$to(Js.m_cast__java_lang_Object(new String(input).split(this.f_jsRegExp__org_gwtproject_regexp_client_NativeRegExp_)), JsArray_$Overlay)));
  }
- /**
-  * @override
-  * @param {?string} input
-  * @param {number} limit
-  * @return {SplitResult}
-  * @public
-  */
- m_split__java_lang_String__int(input, limit) {
-  return NativeSplitResult.$create__elemental2_core_JsArray(/**@type {Array<?string>} */ ($Casts.$to(Js.m_cast__java_lang_Object(new String(input).split(this.f_jsRegExp__org_gwtproject_regexp_client_NativeRegExp_, limit)), JsArray_$Overlay)));
+ /** @override @return {SplitResult} */
+ m_split__java_lang_String__int(/** ?string */ input, /** number */ limit) {
+  return NativeSplitResult.$create__elemental2_core_JsArray(/**@type {Array<?string>}*/ ($Casts.$to(Js.m_cast__java_lang_Object(new String(input).split(this.f_jsRegExp__org_gwtproject_regexp_client_NativeRegExp_, limit)), JsArray_$Overlay)));
  }
- /**
-  * @override
-  * @param {?string} input
-  * @return {boolean}
-  * @public
-  */
- m_test__java_lang_String(input) {
+ /** @override @return {boolean} */
+ m_test__java_lang_String(/** ?string */ input) {
   return this.f_jsRegExp__org_gwtproject_regexp_client_NativeRegExp_.test(input);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NativeRegExp.$clinit = () =>{};
   NativeRegExp.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof NativeRegExp;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   JsArray_$Overlay = goog.module.get('elemental2.core.JsArray.$Overlay$impl');
   $Overlay = goog.module.get('elemental2.core.JsString.$Overlay$impl');

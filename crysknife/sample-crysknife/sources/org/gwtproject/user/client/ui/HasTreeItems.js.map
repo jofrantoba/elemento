@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasTreeItems.impl.java.js",
-"lineCount":69,
-"mappings":"A;;;;;;;;;;;;MAuBiB,Y;;;;;;;CAeN,kD,CAAiBA,Q;;;;;;CAOrB,iD,CAAiBC,I;;;;;;CAOjB,mD,CAAmBC,M;;;;;;;CAQf,+C,CAAeC,M;;;;;;;CAQf,+B,CAAmBC,Q;;;;;;CAOvB,oD,CAAoBH,I;;;;;;CAOpB,sD,CAAsBC,M;;;;;CAKtB,e;;;;QAhEU,O;EAAAG,+B;EAAAA;",
+"lineCount":33,
+"mappings":"A;;;;;;;;;;;;MAuBiB,Y;;CAeN,kD,iBAAiBA,Q;;CAOrB,iD,iBAAiBC,I;;CAOjB,mD,mBAAmBC,M;;CAQf,+C,eAAeC,M;;CAQf,+B,gBAAmBC,Q;;CAOvB,oD,iBAAoBH,I;;CAOpB,sD,mBAAsBC,M;;CAKtB,e;;QAhEU,O;EAAAG,+B;EAAAA;",
 "sources":["HasTreeItems.java"],
 "names":["itemHtml","item","isItem","widget","itemText","org.gwtproject.user.client.ui.HasTreeItems.<clinit>"]
 }

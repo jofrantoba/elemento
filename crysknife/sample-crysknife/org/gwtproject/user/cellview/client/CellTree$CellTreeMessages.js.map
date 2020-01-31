@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellTree$CellTreeMessages.impl.java.js",
-"lineCount":72,
-"mappings":"A;;;;;;;;;;;MAmGmB,gB;;;;;;CAIR,Y;;;;;;CAEA,a;;;;;QALP,6E;EAAAA,iI;;;;;QADe,O;EAAAC,mC;EAAAA,gC;EACfA,6I;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AADe;;",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;MAmGmB,gB;;CAIR,Y;;CAEA,a;;QALP,6E;EAAAA,iI;;;QADe,O;EAAAC,mC;EAAAA,gC;EACfA,6I;;;;;;;;;;;;;;;;;;;;;;AADe;;",
 "sources":["CellTree.java"],
 "names":["org.gwtproject.user.cellview.client.CellTree$CellTreeMessages.<synthetic: getter>","org.gwtproject.user.cellview.client.CellTree$CellTreeMessages.<clinit>"]
 }

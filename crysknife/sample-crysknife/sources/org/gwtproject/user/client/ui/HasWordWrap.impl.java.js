@@ -6,46 +6,25 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @interface
  */
 class HasWordWrap {
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_getWordWrap__() {}
- /**
-  * @abstract
-  * @param {boolean} wrap
-  * @public
-  */
- m_setWordWrap__boolean(wrap) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_setWordWrap__boolean(/** boolean */ wrap) {}
+ 
  static $clinit() {
   HasWordWrap.$clinit = () =>{};
   HasWordWrap.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_HasWordWrap = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_HasWordWrap = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_HasWordWrap;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

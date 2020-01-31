@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HorizontalScrollbar.impl.java.js",
-"lineCount":32,
-"mappings":"A;;;;;;;;;;;;;MAsBiB,mB;;;;;;CAaX,kB;;;;;;CAYC,qB,CAAmBA,K;;;;QAzBT,O;EAAAC,sC;EAAAA;",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;;;MAsBiB,mB;;CAaX,kB;;CAYC,qB,eAAmBA,K;;QAzBT,O;EAAAC,sC;EAAAA;",
 "sources":["HorizontalScrollbar.java"],
 "names":["width","org.gwtproject.user.client.ui.HorizontalScrollbar.<clinit>"]
 }

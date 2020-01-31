@@ -10,55 +10,31 @@ let CellTree__CellTreeMessages__en__US = goog.forwardDeclare('org.gwtproject.use
  * @extends {Messages}
  */
 class CellTreeMessages {
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_showMore__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_emptyTree__() {}
- /**
-  * @return {CellTreeMessages}
-  * @public
-  */
+ /** @return {CellTreeMessages} */
  static get f_INSTANCE__org_gwtproject_user_cellview_client_CellTree_CellTreeMessages() {
   return (CellTreeMessages.$clinit(), CellTreeMessages.$f_INSTANCE__org_gwtproject_user_cellview_client_CellTree_CellTreeMessages);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CellTreeMessages.$clinit = () =>{};
   CellTreeMessages.$loadModules();
   CellTreeMessages.$f_INSTANCE__org_gwtproject_user_cellview_client_CellTree_CellTreeMessages = CellTree__CellTreeMessages__en__US.$create__();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Messages.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_cellview_client_CellTree_CellTreeMessages = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Messages.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_cellview_client_CellTree_CellTreeMessages = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_cellview_client_CellTree_CellTreeMessages;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   CellTree__CellTreeMessages__en__US = goog.module.get('org.gwtproject.user.cellview.client.CellTree_CellTreeMessages_en_US$impl');
  }
@@ -68,7 +44,7 @@ $Util.$setClassMetadataForInterface(CellTreeMessages, 'org.gwtproject.user.cellv
 
 CellTreeMessages.$markImplementor(/** @type {Function} */ (CellTreeMessages));
 
-/** @private {CellTreeMessages} */
+/**@private {CellTreeMessages}*/
 CellTreeMessages.$f_INSTANCE__org_gwtproject_user_cellview_client_CellTree_CellTreeMessages;
 
 exports = CellTreeMessages; 

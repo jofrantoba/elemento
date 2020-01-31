@@ -9,35 +9,22 @@ const DateTimeFormatInfo = goog.require('org.gwtproject.i18n.shared.DateTimeForm
  * @deprecated
  */
 class org_gwtproject_i18n_client_DateTimeFormatInfo {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   org_gwtproject_i18n_client_DateTimeFormatInfo.$clinit = () =>{};
   org_gwtproject_i18n_client_DateTimeFormatInfo.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  DateTimeFormatInfo.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_i18n_client_DateTimeFormatInfo = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  DateTimeFormatInfo.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_i18n_client_DateTimeFormatInfo = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_i18n_client_DateTimeFormatInfo;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

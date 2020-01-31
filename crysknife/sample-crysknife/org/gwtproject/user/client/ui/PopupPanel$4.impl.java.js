@@ -11,62 +11,41 @@ let PopupPanel = goog.forwardDeclare('org.gwtproject.user.client.ui.PopupPanel$i
  * @implements {ValueChangeHandler<?string>}
   */
 class $4 extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {PopupPanel} */
+  /**@type {PopupPanel}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_PopupPanel_4;
  }
- /**
-  * @param {PopupPanel} $outer_this
-  * @return {!$4}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_PopupPanel($outer_this) {
+ /** @return {!$4} */
+ static $create__org_gwtproject_user_client_ui_PopupPanel(/** PopupPanel */ $outer_this) {
   $4.$clinit();
   let $instance = new $4();
   $instance.$ctor__org_gwtproject_user_client_ui_PopupPanel_4__org_gwtproject_user_client_ui_PopupPanel($outer_this);
   return $instance;
  }
- /**
-  * @param {PopupPanel} $outer_this
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_PopupPanel_4__org_gwtproject_user_client_ui_PopupPanel($outer_this) {
+ 
+ $ctor__org_gwtproject_user_client_ui_PopupPanel_4__org_gwtproject_user_client_ui_PopupPanel(/** PopupPanel */ $outer_this) {
   this.f_$outer_this__org_gwtproject_user_client_ui_PopupPanel_4 = $outer_this;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {ValueChangeEvent<?string>} event
-  * @public
-  */
- m_onValueChange__org_gwtproject_event_logical_shared_ValueChangeEvent(event) {
+ /** @override */
+ m_onValueChange__org_gwtproject_event_logical_shared_ValueChangeEvent(/** ValueChangeEvent<?string> */ event) {
   if (this.f_$outer_this__org_gwtproject_user_client_ui_PopupPanel_4.f_autoHideOnHistoryEvents__org_gwtproject_user_client_ui_PopupPanel_) {
    this.f_$outer_this__org_gwtproject_user_client_ui_PopupPanel_4.m_hide__();
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $4.$clinit = () =>{};
   $4.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $4;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -9,70 +9,42 @@ let JsPropertyMap_$Overlay = goog.forwardDeclare('jsinterop.base.JsPropertyMap.$
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class GetHeadersUnionType_$Overlay {
- /**
-  * @param {*} o
-  * @return {?}
-  * @public
-  */
- static m_of__java_lang_Object(o) {
+ /** @return {?} */
+ static m_of__java_lang_Object(/** * */ o) {
   GetHeadersUnionType_$Overlay.$clinit();
-  return /**@type {?} */ (Js.m_cast__java_lang_Object(o));
+  return /**@type {?}*/ (Js.m_cast__java_lang_Object(o));
  }
- /**
-  * @param {?} $thisArg
-  * @return {Headers}
-  * @public
-  */
- static m_asHeaders__$devirt__elemental2_dom_RequestInit_GetHeadersUnionType($thisArg) {
+ /** @return {Headers} */
+ static m_asHeaders__$devirt__elemental2_dom_RequestInit_GetHeadersUnionType(/** ? */ $thisArg) {
   GetHeadersUnionType_$Overlay.$clinit();
-  return /**@type {Headers} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $Overlay));
+  return /**@type {Headers}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $Overlay));
  }
- /**
-  * @param {?} $thisArg
-  * @return {Array<Array<?string>>}
-  * @public
-  */
- static m_asJsArray__$devirt__elemental2_dom_RequestInit_GetHeadersUnionType($thisArg) {
+ /** @return {Array<Array<?string>>} */
+ static m_asJsArray__$devirt__elemental2_dom_RequestInit_GetHeadersUnionType(/** ? */ $thisArg) {
   GetHeadersUnionType_$Overlay.$clinit();
-  return /**@type {Array<Array<?string>>} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), JsArray_$Overlay));
+  return /**@type {Array<Array<?string>>}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), JsArray_$Overlay));
  }
- /**
-  * @param {?} $thisArg
-  * @return {Object<string, ?string>}
-  * @public
-  */
- static m_asJsPropertyMap__$devirt__elemental2_dom_RequestInit_GetHeadersUnionType($thisArg) {
+ /** @return {Object<string, ?string>} */
+ static m_asJsPropertyMap__$devirt__elemental2_dom_RequestInit_GetHeadersUnionType(/** ? */ $thisArg) {
   GetHeadersUnionType_$Overlay.$clinit();
-  return /**@type {Object<string, ?string>} */ (Js.m_cast__java_lang_Object($thisArg));
+  return /**@type {Object<string, ?string>}*/ (Js.m_cast__java_lang_Object($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isHeaders__$devirt__elemental2_dom_RequestInit_GetHeadersUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isHeaders__$devirt__elemental2_dom_RequestInit_GetHeadersUnionType(/** ? */ $thisArg) {
   GetHeadersUnionType_$Overlay.$clinit();
-  return $Overlay.$isInstance(/**@type {*} */ ($thisArg));
+  return $Overlay.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isJsArray__$devirt__elemental2_dom_RequestInit_GetHeadersUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isJsArray__$devirt__elemental2_dom_RequestInit_GetHeadersUnionType(/** ? */ $thisArg) {
   GetHeadersUnionType_$Overlay.$clinit();
-  return JsArray_$Overlay.$isInstance(/**@type {*} */ ($thisArg));
+  return JsArray_$Overlay.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   GetHeadersUnionType_$Overlay.$clinit = () =>{};
   GetHeadersUnionType_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   JsArray_$Overlay = goog.module.get('elemental2.core.JsArray.$Overlay$impl');
   $Overlay = goog.module.get('elemental2.dom.Headers.$Overlay$impl');

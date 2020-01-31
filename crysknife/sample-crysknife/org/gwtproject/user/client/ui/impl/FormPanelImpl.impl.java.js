@@ -17,36 +17,25 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
 class FormPanelImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!FormPanelImpl}
-  * @public
-  */
+ /** @return {!FormPanelImpl} */
  static $create__() {
   FormPanelImpl.$clinit();
   let $instance = new FormPanelImpl();
   $instance.$ctor__org_gwtproject_user_client_ui_impl_FormPanelImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_impl_FormPanelImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {Object} iframe
-  * @return {?string}
-  * @public
-  */
- m_getContents__org_gwtproject_dom_client_Element(iframe) {
+ /** @return {?string} */
+ m_getContents__org_gwtproject_dom_client_Element(/** Object */ iframe) {
   try {
-   let _iframe = /**@type {Object} */ (Js.m_uncheckedCast__java_lang_Object(iframe));
+   let _iframe = /**@type {Object}*/ (Js.m_uncheckedCast__java_lang_Object(iframe));
    if ($Equality.$same(_iframe.contentWindow.document, null)) {
     return null;
    }
@@ -54,96 +43,64 @@ class FormPanelImpl extends j_l_Object {
   } catch (__$exc) {
    __$exc = $Exceptions.toJava(__$exc);
    if (Exception.$isInstance(__$exc)) {
-    let e = /**@type {Exception} */ (__$exc);
+    let e = /**@type {Exception}*/ (__$exc);
     return null;
    } else {
     throw $Exceptions.toJs(__$exc);
    }
   }
  }
- /**
-  * @param {Object} form
-  * @return {?string}
-  * @public
-  */
- m_getEncoding__org_gwtproject_dom_client_Element(form) {
-  return $Objects.m_toString__java_lang_Object(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (form), "enctype"));
+ /** @return {?string} */
+ m_getEncoding__org_gwtproject_dom_client_Element(/** Object */ form) {
+  return $Objects.m_toString__java_lang_Object(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (form), "enctype"));
  }
- /**
-  * @param {Object} iframe
-  * @param {Object} form
-  * @param {FormPanelImplHost} listener
-  * @public
-  */
- m_hookEvents__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element__org_gwtproject_user_client_ui_impl_FormPanelImplHost(iframe, form, listener) {
+ 
+ m_hookEvents__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element__org_gwtproject_user_client_ui_impl_FormPanelImplHost(/** Object */ iframe, /** Object */ form, /** FormPanelImplHost */ listener) {
   if (!$Equality.$same(iframe, null)) {
-   JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object} */ (iframe), "onload", /**@type {?function(Event):void} */ ((/** Event */ event) =>{
-    if (!JsPropertyMap_$Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (iframe), "__formAction")) {
+   JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object}*/ (iframe), "onload", /**@type {?function(Event):void}*/ ((/** Event */ event) =>{
+    if (!JsPropertyMap_$Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (iframe), "__formAction")) {
      return;
     }
     listener.m_onFrameLoad__();
    }));
   }
  }
- /**
-  * @param {Object} form
-  * @public
-  */
- m_reset__org_gwtproject_dom_client_Element(form) {
-  /**@type {HTMLFormElement} */ ($Casts.$to(Js.m_uncheckedCast__java_lang_Object(form), HTMLFormElement_$Overlay)).reset();
+ 
+ m_reset__org_gwtproject_dom_client_Element(/** Object */ form) {
+  /**@type {HTMLFormElement}*/ ($Casts.$to(Js.m_uncheckedCast__java_lang_Object(form), HTMLFormElement_$Overlay)).reset();
  }
- /**
-  * @param {Object} form
-  * @param {?string} encoding
-  * @public
-  */
- m_setEncoding__org_gwtproject_dom_client_Element__java_lang_String(form, encoding) {
-  JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object} */ (form), "enctype", encoding);
-  JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object} */ (form), "encoding", encoding);
+ 
+ m_setEncoding__org_gwtproject_dom_client_Element__java_lang_String(/** Object */ form, /** ?string */ encoding) {
+  JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object}*/ (form), "enctype", encoding);
+  JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object}*/ (form), "encoding", encoding);
  }
- /**
-  * @param {Object} form
-  * @param {Object} iframe
-  * @public
-  */
- m_submit__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(form, iframe) {
-  let map = /**@type {Object} */ (form);
+ 
+ m_submit__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(/** Object */ form, /** Object */ iframe) {
+  let map = /**@type {Object}*/ (form);
   if (!$Equality.$same(iframe, null)) {
-   JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object} */ (iframe), "__formAction", JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(map, "action"));
+   JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object}*/ (iframe), "__formAction", JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(map, "action"));
   } else {
-   /**@type {HTMLFormElement} */ ($Casts.$to(Js.m_uncheckedCast__java_lang_Object(form), HTMLFormElement_$Overlay)).submit();
+   /**@type {HTMLFormElement}*/ ($Casts.$to(Js.m_uncheckedCast__java_lang_Object(form), HTMLFormElement_$Overlay)).submit();
   }
  }
- /**
-  * @param {Object} iframe
-  * @param {Object} form
-  * @public
-  */
- m_unhookEvents__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(iframe, form) {
+ 
+ m_unhookEvents__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(/** Object */ iframe, /** Object */ form) {
   if (!$Equality.$same(iframe, null)) {
-   JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object} */ (form), "onload", null);
-   JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object} */ (form), "onsubmit", null);
+   JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object}*/ (form), "onload", null);
+   JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object}*/ (form), "onsubmit", null);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   FormPanelImpl.$clinit = () =>{};
   FormPanelImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof FormPanelImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   HTMLFormElement_$Overlay = goog.module.get('elemental2.dom.HTMLFormElement.$Overlay$impl');
   Exception = goog.module.get('java.lang.Exception$impl');

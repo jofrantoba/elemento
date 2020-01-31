@@ -19,16 +19,11 @@ let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
  * @implements {Parser<Integer>}
   */
 class IntegerParser extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {Parser<Integer>}
-  * @public
-  */
+ /** @return {Parser<Integer>} */
  static m_instance__() {
   IntegerParser.$clinit();
   if ($Equality.$same(IntegerParser.f_INSTANCE__org_gwtproject_text_client_IntegerParser_, null)) {
@@ -36,29 +31,19 @@ class IntegerParser extends j_l_Object {
   }
   return IntegerParser.f_INSTANCE__org_gwtproject_text_client_IntegerParser_;
  }
- /**
-  * @return {!IntegerParser}
-  * @public
-  */
+ /** @return {!IntegerParser} */
  static $create__() {
   IntegerParser.$clinit();
   let $instance = new IntegerParser();
   $instance.$ctor__org_gwtproject_text_client_IntegerParser__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_text_client_IntegerParser__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {(CharSequence|string)} object
-  * @return {Integer}
-  * @public
-  */
- m_parse__java_lang_CharSequence(object) {
+ /** @override @return {Integer} */
+ m_parse__java_lang_CharSequence(/** (CharSequence|string) */ object) {
   if ($Equality.$same("", $CharSequences.m_toString__java_lang_CharSequence(object))) {
    return null;
   } else {
@@ -67,7 +52,7 @@ class IntegerParser extends j_l_Object {
    } catch (__$exc) {
     __$exc = $Exceptions.toJava(__$exc);
     if (NumberFormatException.$isInstance(__$exc)) {
-     let var3 = /**@type {NumberFormatException} */ (__$exc);
+     let var3 = /**@type {NumberFormatException}*/ (__$exc);
      throw $Exceptions.toJs(ParseException.$create__java_lang_String__int(var3.m_getMessage__(), 0));
     } else {
      throw $Exceptions.toJs(__$exc);
@@ -75,25 +60,17 @@ class IntegerParser extends j_l_Object {
    }
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   IntegerParser.$clinit = () =>{};
   IntegerParser.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof IntegerParser;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Integer = goog.module.get('java.lang.Integer$impl');
   Math = goog.module.get('java.lang.Math$impl');
@@ -111,7 +88,7 @@ $Util.$setClassMetadata(IntegerParser, 'org.gwtproject.text.client.IntegerParser
 
 Parser.$markImplementor(IntegerParser);
 
-/** @public {IntegerParser} */
+/**@type {IntegerParser}*/
 IntegerParser.f_INSTANCE__org_gwtproject_text_client_IntegerParser_;
 
 exports = IntegerParser; 

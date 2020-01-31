@@ -10,54 +10,37 @@ let MouseOverEvent = goog.forwardDeclare('org.gwtproject.event.dom.client.MouseO
  * @implements {MouseOverHandler}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(MouseOverEvent):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(MouseOverEvent):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(MouseOverEvent):void} */
+  /**@type {?function(MouseOverEvent):void}*/
   this.f_$$fn__org_gwtproject_event_dom_client_MouseOverHandler_$LambdaAdaptor;
   this.$ctor__org_gwtproject_event_dom_client_MouseOverHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_MouseOverHandler_$JsFunction(fn);
  }
- /**
-  * @param {?function(MouseOverEvent):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_event_dom_client_MouseOverHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_MouseOverHandler_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_event_dom_client_MouseOverHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_MouseOverHandler_$JsFunction(/** ?function(MouseOverEvent):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_event_dom_client_MouseOverHandler_$LambdaAdaptor = fn;
  }
- /**
-  * @param {MouseOverEvent} arg0
-  * @public
-  */
- m_onMouseOver__org_gwtproject_event_dom_client_MouseOverEvent(arg0) {
+ 
+ m_onMouseOver__org_gwtproject_event_dom_client_MouseOverEvent(/** MouseOverEvent */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_event_dom_client_MouseOverHandler_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

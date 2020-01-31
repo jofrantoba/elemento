@@ -12,94 +12,57 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @extends {Enum<RepeatStyle>}
   */
 class RepeatStyle extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @return {!RepeatStyle}
-  * @public
-  */
- static $create__java_lang_String__int($name, $ordinal) {
+ /** @return {!RepeatStyle} */
+ static $create__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   let $instance = new RepeatStyle();
   $instance.$ctor__org_gwtproject_resources_client_ImageResource_RepeatStyle__java_lang_String__int($name, $ordinal);
   return $instance;
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_resources_client_ImageResource_RepeatStyle__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_resources_client_ImageResource_RepeatStyle__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @param {string} name
-  * @return {!RepeatStyle}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!RepeatStyle} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   RepeatStyle.$clinit();
   if ($Equality.$same(RepeatStyle.f_namesToValuesMap__org_gwtproject_resources_client_ImageResource_RepeatStyle_, null)) {
    RepeatStyle.f_namesToValuesMap__org_gwtproject_resources_client_ImageResource_RepeatStyle_ = $Enums.createMapFromValues(RepeatStyle.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, RepeatStyle.f_namesToValuesMap__org_gwtproject_resources_client_ImageResource_RepeatStyle_);
  }
- /**
-  * @return {!Array<!RepeatStyle>}
-  * @public
-  */
+ /** @return {!Array<!RepeatStyle>} */
  static m_values__() {
   RepeatStyle.$clinit();
-  return /**@type {!Array<RepeatStyle>} */ ($Arrays.$init([RepeatStyle.$f_None__org_gwtproject_resources_client_ImageResource_RepeatStyle, RepeatStyle.$f_Horizontal__org_gwtproject_resources_client_ImageResource_RepeatStyle, RepeatStyle.$f_Vertical__org_gwtproject_resources_client_ImageResource_RepeatStyle, RepeatStyle.$f_Both__org_gwtproject_resources_client_ImageResource_RepeatStyle], RepeatStyle));
+  return /**@type {!Array<RepeatStyle>}*/ ($Arrays.$init([RepeatStyle.$f_None__org_gwtproject_resources_client_ImageResource_RepeatStyle, RepeatStyle.$f_Horizontal__org_gwtproject_resources_client_ImageResource_RepeatStyle, RepeatStyle.$f_Vertical__org_gwtproject_resources_client_ImageResource_RepeatStyle, RepeatStyle.$f_Both__org_gwtproject_resources_client_ImageResource_RepeatStyle], RepeatStyle));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @return {number}
-  * @public
-  */
- m_compareTo__java_lang_Object(arg0) {
-  return super.compareTo(/**@type {RepeatStyle} */ ($Casts.$to(arg0, RepeatStyle)));
+ //Bridge method.
+ /** @override @return {number} */
+ m_compareTo__java_lang_Object(/** * */ arg0) {
+  return super.compareTo(/**@type {RepeatStyle}*/ ($Casts.$to(arg0, RepeatStyle)));
  }
- /**
-  * @return {!RepeatStyle}
-  * @public
-  */
+ /** @return {!RepeatStyle} */
  static get f_None__org_gwtproject_resources_client_ImageResource_RepeatStyle() {
   return (RepeatStyle.$clinit(), RepeatStyle.$f_None__org_gwtproject_resources_client_ImageResource_RepeatStyle);
  }
- /**
-  * @return {!RepeatStyle}
-  * @public
-  */
+ /** @return {!RepeatStyle} */
  static get f_Horizontal__org_gwtproject_resources_client_ImageResource_RepeatStyle() {
   return (RepeatStyle.$clinit(), RepeatStyle.$f_Horizontal__org_gwtproject_resources_client_ImageResource_RepeatStyle);
  }
- /**
-  * @return {!RepeatStyle}
-  * @public
-  */
+ /** @return {!RepeatStyle} */
  static get f_Vertical__org_gwtproject_resources_client_ImageResource_RepeatStyle() {
   return (RepeatStyle.$clinit(), RepeatStyle.$f_Vertical__org_gwtproject_resources_client_ImageResource_RepeatStyle);
  }
- /**
-  * @return {!RepeatStyle}
-  * @public
-  */
+ /** @return {!RepeatStyle} */
  static get f_Both__org_gwtproject_resources_client_ImageResource_RepeatStyle() {
   return (RepeatStyle.$clinit(), RepeatStyle.$f_Both__org_gwtproject_resources_client_ImageResource_RepeatStyle);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RepeatStyle.$clinit = () =>{};
   RepeatStyle.$loadModules();
@@ -110,17 +73,11 @@ class RepeatStyle extends Enum {
   RepeatStyle.$f_Both__org_gwtproject_resources_client_ImageResource_RepeatStyle = RepeatStyle.$create__java_lang_String__int($Util.$makeEnumName("Both"), RepeatStyle.$ordinal$f_Both__org_gwtproject_resources_client_ImageResource_RepeatStyle);
   RepeatStyle.f_namesToValuesMap__org_gwtproject_resources_client_ImageResource_RepeatStyle_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof RepeatStyle;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
@@ -131,23 +88,23 @@ class RepeatStyle extends Enum {
 }
 $Util.$setClassMetadataForEnum(RepeatStyle, 'org.gwtproject.resources.client.ImageResource$RepeatStyle');
 
-/** @private {!RepeatStyle} */
+/**@private {!RepeatStyle}*/
 RepeatStyle.$f_None__org_gwtproject_resources_client_ImageResource_RepeatStyle;
-/** @private {!RepeatStyle} */
+/**@private {!RepeatStyle}*/
 RepeatStyle.$f_Horizontal__org_gwtproject_resources_client_ImageResource_RepeatStyle;
-/** @private {!RepeatStyle} */
+/**@private {!RepeatStyle}*/
 RepeatStyle.$f_Vertical__org_gwtproject_resources_client_ImageResource_RepeatStyle;
-/** @private {!RepeatStyle} */
+/**@private {!RepeatStyle}*/
 RepeatStyle.$f_Both__org_gwtproject_resources_client_ImageResource_RepeatStyle;
-/** @public {Map<?string, !RepeatStyle>} */
+/**@type {Map<?string, !RepeatStyle>}*/
 RepeatStyle.f_namesToValuesMap__org_gwtproject_resources_client_ImageResource_RepeatStyle_;
-/** @public {number} @const */
+/**@const {number}*/
 RepeatStyle.$ordinal$f_None__org_gwtproject_resources_client_ImageResource_RepeatStyle = 0;
-/** @public {number} @const */
+/**@const {number}*/
 RepeatStyle.$ordinal$f_Horizontal__org_gwtproject_resources_client_ImageResource_RepeatStyle = 1;
-/** @public {number} @const */
+/**@const {number}*/
 RepeatStyle.$ordinal$f_Vertical__org_gwtproject_resources_client_ImageResource_RepeatStyle = 2;
-/** @public {number} @const */
+/**@const {number}*/
 RepeatStyle.$ordinal$f_Both__org_gwtproject_resources_client_ImageResource_RepeatStyle = 3;
 
 exports = RepeatStyle; 

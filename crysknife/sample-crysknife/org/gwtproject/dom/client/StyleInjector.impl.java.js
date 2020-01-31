@@ -17,118 +17,73 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class StyleInjector extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @public
-  */
+ 
  static m_flush__() {
   StyleInjector.$clinit();
   StyleInjector.m_inject__boolean(true);
  }
- /**
-  * @param {?string} css
-  * @public
-  */
- static m_inject__java_lang_String(css) {
+ 
+ static m_inject__java_lang_String(/** ?string */ css) {
   StyleInjector.$clinit();
   StyleInjector.m_inject__java_lang_String__boolean(css, false);
  }
- /**
-  * @param {?string} css
-  * @param {boolean} immediate
-  * @public
-  */
- static m_inject__java_lang_String__boolean(css, immediate) {
+ 
+ static m_inject__java_lang_String__boolean(/** ?string */ css, /** boolean */ immediate) {
   StyleInjector.$clinit();
   StyleInjector.f_toInject__org_gwtproject_dom_client_StyleInjector_.push(css);
   StyleInjector.m_inject__boolean(immediate);
  }
- /**
-  * @param {?string} css
-  * @public
-  */
- static m_injectAtEnd__java_lang_String(css) {
+ 
+ static m_injectAtEnd__java_lang_String(/** ?string */ css) {
   StyleInjector.$clinit();
   StyleInjector.m_injectAtEnd__java_lang_String__boolean(css, false);
  }
- /**
-  * @param {?string} css
-  * @param {boolean} immediate
-  * @public
-  */
- static m_injectAtEnd__java_lang_String__boolean(css, immediate) {
+ 
+ static m_injectAtEnd__java_lang_String__boolean(/** ?string */ css, /** boolean */ immediate) {
   StyleInjector.$clinit();
   StyleInjector.f_toInjectAtEnd__org_gwtproject_dom_client_StyleInjector_.push(css);
   StyleInjector.m_inject__boolean(immediate);
  }
- /**
-  * @param {?string} css
-  * @public
-  */
- static m_injectAtStart__java_lang_String(css) {
+ 
+ static m_injectAtStart__java_lang_String(/** ?string */ css) {
   StyleInjector.$clinit();
   StyleInjector.m_injectAtStart__java_lang_String__boolean(css, false);
  }
- /**
-  * @param {?string} css
-  * @param {boolean} immediate
-  * @public
-  */
- static m_injectAtStart__java_lang_String__boolean(css, immediate) {
+ 
+ static m_injectAtStart__java_lang_String__boolean(/** ?string */ css, /** boolean */ immediate) {
   StyleInjector.$clinit();
   StyleInjector.f_toInjectAtStart__org_gwtproject_dom_client_StyleInjector_.unshift(css);
   StyleInjector.m_inject__boolean(immediate);
  }
- /**
-  * @param {?string} contents
-  * @return {Object}
-  * @public
-  */
- static m_injectStylesheet__java_lang_String(contents) {
+ /** @return {Object} */
+ static m_injectStylesheet__java_lang_String(/** ?string */ contents) {
   StyleInjector.$clinit();
   StyleInjector.f_toInject__org_gwtproject_dom_client_StyleInjector_.push(contents);
   return StyleInjector.m_flush__org_gwtproject_core_client_JavaScriptObject(StyleInjector.f_toInject__org_gwtproject_dom_client_StyleInjector_);
  }
- /**
-  * @param {?string} contents
-  * @return {Object}
-  * @public
-  */
- static m_injectStylesheetAtEnd__java_lang_String(contents) {
+ /** @return {Object} */
+ static m_injectStylesheetAtEnd__java_lang_String(/** ?string */ contents) {
   StyleInjector.$clinit();
   StyleInjector.f_toInjectAtEnd__org_gwtproject_dom_client_StyleInjector_.push(contents);
   return StyleInjector.m_flush__org_gwtproject_core_client_JavaScriptObject(StyleInjector.f_toInjectAtEnd__org_gwtproject_dom_client_StyleInjector_);
  }
- /**
-  * @param {?string} contents
-  * @return {Object}
-  * @public
-  */
- static m_injectStylesheetAtStart__java_lang_String(contents) {
+ /** @return {Object} */
+ static m_injectStylesheetAtStart__java_lang_String(/** ?string */ contents) {
   StyleInjector.$clinit();
   StyleInjector.f_toInjectAtStart__org_gwtproject_dom_client_StyleInjector_.unshift(contents);
   return StyleInjector.m_flush__org_gwtproject_core_client_JavaScriptObject(StyleInjector.f_toInjectAtStart__org_gwtproject_dom_client_StyleInjector_);
  }
- /**
-  * @param {Object} style
-  * @param {?string} contents
-  * @public
-  */
- static m_setContents__org_gwtproject_dom_client_StyleElement__java_lang_String(style, contents) {
+ 
+ static m_setContents__org_gwtproject_dom_client_StyleElement__java_lang_String(/** Object */ style, /** ?string */ contents) {
   StyleInjector.$clinit();
   $Overlay.m_setInnerText__$devirt__org_gwtproject_dom_client_Element__java_lang_String(style, contents);
  }
- /**
-  * @param {Object} which
-  * @return {Object}
-  * @public
-  */
- static m_flush__org_gwtproject_core_client_JavaScriptObject(which) {
+ /** @return {Object} */
+ static m_flush__org_gwtproject_core_client_JavaScriptObject(/** Object */ which) {
   StyleInjector.$clinit();
   let toReturn = null;
   let /** Object */ maybeReturn;
@@ -159,69 +114,45 @@ class StyleInjector extends j_l_Object {
   StyleInjector.$f_needsInjection__org_gwtproject_dom_client_StyleInjector_ = false;
   return toReturn;
  }
- /**
-  * @param {boolean} immediate
-  * @public
-  */
- static m_inject__boolean(immediate) {
+ 
+ static m_inject__boolean(/** boolean */ immediate) {
   if (immediate) {
    StyleInjector.m_flush__org_gwtproject_core_client_JavaScriptObject(null);
   } else {
    StyleInjector.m_schedule__();
   }
  }
- /**
-  * @public
-  */
+ 
  static m_schedule__() {
   if (!StyleInjector.$f_needsInjection__org_gwtproject_dom_client_StyleInjector_) {
    StyleInjector.$f_needsInjection__org_gwtproject_dom_client_StyleInjector_ = true;
    Scheduler.m_get__().m_scheduleFinally__org_gwtproject_core_client_Scheduler_ScheduledCommand(StyleInjector.f_flusher__org_gwtproject_dom_client_StyleInjector_);
   }
  }
- /**
-  * @param {?string} contents
-  * @return {Object}
-  * @public
-  */
- static m_injectStyleSheet__java_lang_String(contents) {
+ /** @return {Object} */
+ static m_injectStyleSheet__java_lang_String(/** ?string */ contents) {
   let style = StyleInjector.m_createElement__java_lang_String(contents);
   StyleInjector.m_getHead__().appendChild(style);
   return style;
  }
- /**
-  * @param {?string} contents
-  * @return {Object}
-  * @public
-  */
- static m_injectStyleSheetAtEnd__java_lang_String(contents) {
+ /** @return {Object} */
+ static m_injectStyleSheetAtEnd__java_lang_String(/** ?string */ contents) {
   return StyleInjector.m_injectStyleSheet__java_lang_String(contents);
  }
- /**
-  * @param {?string} contents
-  * @return {Object}
-  * @public
-  */
- static m_injectStyleSheetAtStart__java_lang_String(contents) {
+ /** @return {Object} */
+ static m_injectStyleSheetAtStart__java_lang_String(/** ?string */ contents) {
   let style = StyleInjector.m_createElement__java_lang_String(contents);
   StyleInjector.m_getHead__().insertBefore(style, StyleInjector.f_head__org_gwtproject_dom_client_StyleInjector_.firstChild);
   return style;
  }
- /**
-  * @param {?string} contents
-  * @return {Object}
-  * @public
-  */
- static m_createElement__java_lang_String(contents) {
+ /** @return {Object} */
+ static m_createElement__java_lang_String(/** ?string */ contents) {
   let style = Document_$Overlay.m_createStyleElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__());
   $Overlay.m_setPropertyString__$devirt__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(style, "language", "text/css");
   $Overlay.m_setInnerText__$devirt__org_gwtproject_dom_client_Element__java_lang_String(style, contents);
   return style;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  static m_getHead__() {
   if ($Equality.$same(StyleInjector.f_head__org_gwtproject_dom_client_StyleInjector_, null)) {
    let elt = Document_$Overlay.m_get__().head;
@@ -230,59 +161,40 @@ class StyleInjector extends j_l_Object {
   }
   return StyleInjector.f_head__org_gwtproject_dom_client_StyleInjector_;
  }
- /**
-  * @return {!StyleInjector}
-  * @public
-  */
+ /** @return {!StyleInjector} */
  static $create__() {
   let $instance = new StyleInjector();
   $instance.$ctor__org_gwtproject_dom_client_StyleInjector__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_dom_client_StyleInjector__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  static get f_needsInjection__org_gwtproject_dom_client_StyleInjector_() {
   return (StyleInjector.$clinit(), StyleInjector.$f_needsInjection__org_gwtproject_dom_client_StyleInjector_);
  }
- /**
-  * @param {boolean} value
-  * @public
-  */
- static set f_needsInjection__org_gwtproject_dom_client_StyleInjector_(value) {
+ 
+ static set f_needsInjection__org_gwtproject_dom_client_StyleInjector_(/** boolean */ value) {
   (StyleInjector.$clinit(), StyleInjector.$f_needsInjection__org_gwtproject_dom_client_StyleInjector_ = value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   StyleInjector.$clinit = () =>{};
   StyleInjector.$loadModules();
   j_l_Object.$clinit();
-  StyleInjector.f_toInject__org_gwtproject_dom_client_StyleInjector_ = /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(JavaScriptObject_$Overlay.m_createArray__()), JsArrayString_$Overlay));
-  StyleInjector.f_toInjectAtEnd__org_gwtproject_dom_client_StyleInjector_ = /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(JavaScriptObject_$Overlay.m_createArray__()), JsArrayString_$Overlay));
-  StyleInjector.f_toInjectAtStart__org_gwtproject_dom_client_StyleInjector_ = /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(JavaScriptObject_$Overlay.m_createArray__()), JsArrayString_$Overlay));
+  StyleInjector.f_toInject__org_gwtproject_dom_client_StyleInjector_ = /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(JavaScriptObject_$Overlay.m_createArray__()), JsArrayString_$Overlay));
+  StyleInjector.f_toInjectAtEnd__org_gwtproject_dom_client_StyleInjector_ = /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(JavaScriptObject_$Overlay.m_createArray__()), JsArrayString_$Overlay));
+  StyleInjector.f_toInjectAtStart__org_gwtproject_dom_client_StyleInjector_ = /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(JavaScriptObject_$Overlay.m_createArray__()), JsArrayString_$Overlay));
   StyleInjector.f_flusher__org_gwtproject_dom_client_StyleInjector_ = $1.$create__();
   StyleInjector.$f_needsInjection__org_gwtproject_dom_client_StyleInjector_ = false;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof StyleInjector;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   JavaScriptObject_$Overlay = goog.module.get('org.gwtproject.core.client.JavaScriptObject.$Overlay$impl');
@@ -299,17 +211,17 @@ class StyleInjector extends j_l_Object {
 }
 $Util.$setClassMetadata(StyleInjector, 'org.gwtproject.dom.client.StyleInjector');
 
-/** @public {Object} */
+/**@type {Object}*/
 StyleInjector.f_head__org_gwtproject_dom_client_StyleInjector_;
-/** @public {Object} */
+/**@type {Object}*/
 StyleInjector.f_toInject__org_gwtproject_dom_client_StyleInjector_;
-/** @public {Object} */
+/**@type {Object}*/
 StyleInjector.f_toInjectAtEnd__org_gwtproject_dom_client_StyleInjector_;
-/** @public {Object} */
+/**@type {Object}*/
 StyleInjector.f_toInjectAtStart__org_gwtproject_dom_client_StyleInjector_;
-/** @public {ScheduledCommand} */
+/**@type {ScheduledCommand}*/
 StyleInjector.f_flusher__org_gwtproject_dom_client_StyleInjector_;
-/** @private {boolean} */
+/**@private {boolean}*/
 StyleInjector.$f_needsInjection__org_gwtproject_dom_client_StyleInjector_ = false;
 
 exports = StyleInjector; 

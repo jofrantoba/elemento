@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellTable_ResourcesImpl$cellTableLoadingInitializer.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;MAkDuB,2B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,kD;EAAAA,6G;EAAAA,iB;;;;;CAAA,gG;EAAAC,iC;;;;;;QAIkC,O;EAAAC,sC;EACnDA,iH;;;;;QALiB,O;EAAAC,8C;EAAAA,2C;EAAAA,qB;EAEjBA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;MAkDuB,2B;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,kD;EAAAA,6G;EAAAA,iB;;;CAAA,gG;EAAAC,iC;;;QAIkC,O;EAAAC,sC;EACnDA,iH;;;QALiB,O;EAAAC,8C;EAAAA,2C;EAAAA,qB;EAEjBA;",
 "sources":["CellTable_ResourcesImpl.java"],
 "names":["org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$cellTableLoadingInitializer.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$cellTableLoadingInitializer.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$cellTableLoadingInitializer.<init>","org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$cellTableLoadingInitializer.get","org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$cellTableLoadingInitializer.<clinit>"]
 }

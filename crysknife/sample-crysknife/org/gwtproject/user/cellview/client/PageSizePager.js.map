@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"PageSizePager.impl.java.js",
-"lineCount":118,
-"mappings":"A;;;;;;;;;;;;MA6Ba,a;;;;CAAA,W;EAAAA,Q;EAAAA;OAKO,+DALPA,K;EAAAA;OAUa,4DAVbA,C;EAAAA;OAaU,oEAbVA,C;EAAAA;OAcU,oEAdVA,C;;;;;;;QAsBJ,Y,CAAwBC,S;EAAxBC,wB;EAAAA,oC;EAAAA,mF;EAAAA,iB;;;;;;CAAA,6D,CAAwBD,S;EAAxBE,kE;EAAAA,oE;EACLA,iF;EACAA,2H;EACAA,2F;EACAA,2F;EAGAA,+N;EAaAA,+N;EAaAA,+M;EACAA,qH;EACAA,+M;EAGAA,4D;;;;;;;CAIU,gD,CAAmBC,O;EAG7BC;GACEA,uGADFA;GAEEA,uGAFFA;G;EAIAA,gE;;;;;;;CAIU,kB,CAAgBC,Q;EAC1BC,mC;;;;;;CAIa,4B;EAEbC,IAAQJ,OAARI,yB;EACAA,IAAIF,QAAJE,iD;EACAA,IAAQC,OAARD,mF;EACAA,IAAQE,OAARF,0E;EAEAA,yG;EACAA,yG;EACAA,iJ;;;;;;CAMM,mE;EACNG,iG;;;;;;CAMM,mE;EACNC,iG;;;;;CAvGS,4D;EAOXT,0F;EAMAA,0H;EACAA,0H;;;;;QAdW,O;EAAAU,gC;EAAAA,6B;EAAAA;",
+"lineCount":88,
+"mappings":"A;;;;;;;;;;;;MA6Ba,a;;CAAA,W;EAAAA,Q;EAAAA;OAKO,+DALPA,K;EAAAA;OAUa,4DAVbA,C;EAAAA;OAaU,oEAbVA,C;EAAAA;OAcU,oEAdVA,C;;;QAsBJ,Y,eAAwBC,S;EAAxBC,wB;EAAAA,oC;EAAAA,mF;EAAAA,iB;;;CAAA,6D,eAAwBD,S;EAAxBE,kE;EAAAA,oE;EACLA,iF;EACAA,2H;EACAA,2F;EACAA,2F;EAGAA,+N;EAaAA,+N;EAaAA,+M;EACAA,qH;EACAA,+M;EAGAA,4D;;;CAIU,gD,gBAAmBC,O;EAG7BC;GACEA,uGADFA;GAEEA,uGAFFA;G;EAIAA,gE;;;CAIU,kB,eAAgBC,Q;EAC1BC,mC;;;CAIa,4B;EAEbC,IAAQJ,OAARI,yB;EACAA,IAAIF,QAAJE,iD;EACAA,IAAQC,OAARD,mF;EACAA,IAAQE,OAARF,0E;EAEAA,yG;EACAA,yG;EACAA,iJ;;;CAMM,mE;EACNG,iG;;;CAMM,mE;EACNC,iG;;;CAvGS,4D;EAOXT,0F;EAMAA,0H;EACAA,0H;;;QAdW,O;EAAAU,gC;EAAAA,6B;EAAAA;",
 "sources":["PageSizePager.java"],
 "names":["org.gwtproject.user.cellview.client.PageSizePager.<synthetic: ctor_js>","increment","org.gwtproject.user.cellview.client.PageSizePager.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.PageSizePager.<init>","display","org.gwtproject.user.cellview.client.PageSizePager.setDisplay","pageSize","org.gwtproject.user.cellview.client.PageSizePager.setPageSize","org.gwtproject.user.cellview.client.PageSizePager.onRangeOrRowCountChanged","hasLess","hasMore","org.gwtproject.user.cellview.client.PageSizePager.isShowLessButtonVisible","org.gwtproject.user.cellview.client.PageSizePager.isShowMoreButtonVisible","org.gwtproject.user.cellview.client.PageSizePager.<clinit>"]
 }

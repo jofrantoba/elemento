@@ -11,38 +11,25 @@ let ListWrapper = goog.forwardDeclare('org.gwtproject.view.client.ListDataProvid
  * @implements {ScheduledCommand}
   */
 class $1 extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {ListWrapper<T>} */
+  /**@type {ListWrapper<T>}*/
   this.f_$outer_this__org_gwtproject_view_client_ListDataProvider_ListWrapper_1;
  }
- /**
-  * @template T
-  * @param {ListWrapper<T>} $outer_this
-  * @return {!$1<T>}
-  * @public
-  */
- static $create__org_gwtproject_view_client_ListDataProvider_ListWrapper($outer_this) {
+ /** @template T @return {!$1<T>} */
+ static $create__org_gwtproject_view_client_ListDataProvider_ListWrapper(/** ListWrapper<T> */ $outer_this) {
   $1.$clinit();
   let $instance = new $1();
   $instance.$ctor__org_gwtproject_view_client_ListDataProvider_ListWrapper_1__org_gwtproject_view_client_ListDataProvider_ListWrapper($outer_this);
   return $instance;
  }
- /**
-  * @param {ListWrapper<T>} $outer_this
-  * @public
-  */
- $ctor__org_gwtproject_view_client_ListDataProvider_ListWrapper_1__org_gwtproject_view_client_ListDataProvider_ListWrapper($outer_this) {
+ 
+ $ctor__org_gwtproject_view_client_ListDataProvider_ListWrapper_1__org_gwtproject_view_client_ListDataProvider_ListWrapper(/** ListWrapper<T> */ $outer_this) {
   this.f_$outer_this__org_gwtproject_view_client_ListDataProvider_ListWrapper_1 = $outer_this;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_execute__() {
   this.f_$outer_this__org_gwtproject_view_client_ListDataProvider_ListWrapper_1.f_flushPending__org_gwtproject_view_client_ListDataProvider_ListWrapper_ = false;
   if (this.f_$outer_this__org_gwtproject_view_client_ListDataProvider_ListWrapper_1.f_flushCancelled__org_gwtproject_view_client_ListDataProvider_ListWrapper_) {
@@ -51,25 +38,17 @@ class $1 extends j_l_Object {
   }
   this.f_$outer_this__org_gwtproject_view_client_ListDataProvider_ListWrapper_1.m_flushNow___$p_org_gwtproject_view_client_ListDataProvider_ListWrapper();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $1.$clinit = () =>{};
   $1.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $1;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"PopupPanel$AnimationType.impl.java.js",
-"lineCount":139,
-"mappings":"A;;;;;;;;;;;;;MAuHc,a;;;;CAAA,W;EAAAA,Q;;;;;;;;QAAA,8B;EAAAC,oC;EAAAA,gH;EAAAA,iB;;;;;;;CAAA,oF;EAAAC,qC;EAAAA,2C;EAAAA,mE;;;;;;;QAAA,2B;EAAAC,wB;EAAAA;GAAAA,mJAAAA;G;EAAAA,sI;;;;;;QAAA,U;EAAAC,wB;EAAAA,0U;;;;;;;;;CAAA,6B;EAAAC,sF;;;;;;QACV,oE;EAAAC,kH;;;;;;QAAQ,4E;EAAAA,0H;;;;;;QAAgB,uE;EAAAA,qH;;;;;QADd,O;EAAAC,gC;EAAAA,6B;EAAAA,e;EACVA,uP;EAAQA,+Q;EAAgBA,gQ;EADdA,iG;;;;;;;;;;;;;;;;;;;;;;;AAAA;gF;AAAA;wF;AAAA;mF;AAAA;0F;AACV;4F;AAAQ;oG;AAAgB;;",
+"lineCount":99,
+"mappings":"A;;;;;;;;;;;;;MAuHc,a;;CAAA,W;EAAAA,Q;;;QAAA,8B;EAAAC,oC;EAAAA,gH;EAAAA,iB;;;CAAA,oF;EAAAC,qC;EAAAA,2C;EAAAA,mE;;;QAAA,2B;EAAAC,wB;EAAAA;GAAAA,mJAAAA;G;EAAAA,sI;;;QAAA,U;EAAAC,wB;EAAAA,yU;;;;CAAA,6B;EAAAC,qF;;;QACV,oE;EAAAC,kH;;;QAAQ,4E;EAAAA,0H;;;QAAgB,uE;EAAAA,qH;;;QADd,O;EAAAC,gC;EAAAA,6B;EAAAA,e;EACVA,uP;EAAQA,+Q;EAAgBA,gQ;EADdA,iG;;;;;;;;;;;;;;;;;AAAA;gF;AAAA;wF;AAAA;mF;AAAA;0F;AACV;4F;AAAQ;oG;AAAgB;;",
 "sources":["PopupPanel.java"],
 "names":["org.gwtproject.user.client.ui.PopupPanel$AnimationType.<synthetic: ctor_js>","org.gwtproject.user.client.ui.PopupPanel$AnimationType.<synthetic: ctor_create>","org.gwtproject.user.client.ui.PopupPanel$AnimationType.<init>","org.gwtproject.user.client.ui.PopupPanel$AnimationType.valueOf","org.gwtproject.user.client.ui.PopupPanel$AnimationType.values","org.gwtproject.user.client.ui.PopupPanel$AnimationType.compareTo","org.gwtproject.user.client.ui.PopupPanel$AnimationType.<synthetic: getter>","org.gwtproject.user.client.ui.PopupPanel$AnimationType.<clinit>"]
 }

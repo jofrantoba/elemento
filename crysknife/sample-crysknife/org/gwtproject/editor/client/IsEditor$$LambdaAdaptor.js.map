@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"IsEditor$$LambdaAdaptor.impl.java.js",
-"lineCount":47,
-"mappings":"A;;;;;;;;;;;;MA8CiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;oE;EAAAA,wH;;;;;;CAAA,8G;EAAAC,iC;EAAAA,uE;;;;;;CAAA,Y;EAAAC,mC;EAAAA,oG;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":36,
+"mappings":"A;;;;;;;;;;;;MA8CiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;oE;EAAAA,wH;;;CAAA,8G;EAAAC,iC;EAAAA,uE;;;CAAA,Y;EAAAC,mC;EAAAA,oG;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["IsEditor.java"],
 "names":["org.gwtproject.editor.client.IsEditor$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.editor.client.IsEditor$$LambdaAdaptor.<init>","org.gwtproject.editor.client.IsEditor$$LambdaAdaptor.asEditor","org.gwtproject.editor.client.IsEditor$$LambdaAdaptor.<clinit>"]
 }

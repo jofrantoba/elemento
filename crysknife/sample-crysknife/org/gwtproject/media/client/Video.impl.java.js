@@ -10,24 +10,15 @@ let VideoElement_$Overlay = goog.forwardDeclare('org.gwtproject.dom.client.Video
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class Video extends MediaBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {Object} element
-  * @return {boolean}
-  * @public
-  */
- static m_isSupportedRunTime__org_gwtproject_dom_client_VideoElement(element) {
-  return $Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (element), "canPlayType");
+ /** @return {boolean} */
+ static m_isSupportedRunTime__org_gwtproject_dom_client_VideoElement(/** Object */ element) {
+  return $Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (element), "canPlayType");
  }
- /**
-  * @return {Video}
-  * @public
-  */
+ /** @return {Video} */
  static m_createIfSupported__() {
   Video.$clinit();
   let element = Document_$Overlay.m_createVideoElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__());
@@ -36,112 +27,70 @@ class Video extends MediaBase {
   }
   return Video.$create__org_gwtproject_dom_client_VideoElement(element);
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  static m_isSupported__() {
   Video.$clinit();
   let element = Document_$Overlay.m_createVideoElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__());
   return Video.m_isSupportedRunTime__org_gwtproject_dom_client_VideoElement(element);
  }
- /**
-  * Factory method corresponding to constructor 'Video(VideoElement)'.
-  * @param {Object} element
-  * @return {!Video}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_VideoElement(element) {
+ //Factory method corresponding to constructor 'Video(VideoElement)'.
+ /** @return {!Video} */
+ static $create__org_gwtproject_dom_client_VideoElement(/** Object */ element) {
   Video.$clinit();
   let $instance = new Video();
   $instance.$ctor__org_gwtproject_media_client_Video__org_gwtproject_dom_client_VideoElement(element);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Video(VideoElement)'.
-  * @param {Object} element
-  * @public
-  */
- $ctor__org_gwtproject_media_client_Video__org_gwtproject_dom_client_VideoElement(element) {
+ //Initialization from constructor 'Video(VideoElement)'.
+ 
+ $ctor__org_gwtproject_media_client_Video__org_gwtproject_dom_client_VideoElement(/** Object */ element) {
   this.$ctor__org_gwtproject_media_client_MediaBase__org_gwtproject_dom_client_MediaElement(element);
  }
- /**
-  * Factory method corresponding to constructor 'Video(String)'.
-  * @param {?string} src
-  * @return {!Video}
-  * @public
-  * @deprecated
-  */
- static $create__java_lang_String(src) {
+ //Factory method corresponding to constructor 'Video(String)'.
+ /** @return {!Video} @deprecated */
+ static $create__java_lang_String(/** ?string */ src) {
   Video.$clinit();
   let $instance = new Video();
   $instance.$ctor__org_gwtproject_media_client_Video__java_lang_String(src);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Video(String)'.
-  * @param {?string} src
-  * @public
-  * @deprecated
-  */
- $ctor__org_gwtproject_media_client_Video__java_lang_String(src) {
+ //Initialization from constructor 'Video(String)'.
+ /** @deprecated */
+ $ctor__org_gwtproject_media_client_Video__java_lang_String(/** ?string */ src) {
   this.$ctor__org_gwtproject_media_client_MediaBase__org_gwtproject_dom_client_MediaElement(Document_$Overlay.m_createVideoElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__()));
   this.m_getMediaElement__().src = src;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getPoster__() {
   return this.m_getVideoElement__().poster;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getVideoElement__() {
-  return /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(this.m_getMediaElement__()), VideoElement_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(this.m_getMediaElement__()), VideoElement_$Overlay));
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getVideoHeight__() {
   return this.m_getVideoElement__().videoHeight;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getVideoWidth__() {
   return this.m_getVideoElement__().videoWidth;
  }
- /**
-  * @param {?string} url
-  * @public
-  */
- m_setPoster__java_lang_String(url) {
+ 
+ m_setPoster__java_lang_String(/** ?string */ url) {
   this.m_getVideoElement__().poster = url;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Video.$clinit = () =>{};
   Video.$loadModules();
   MediaBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Video;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');
   JavaScriptObject_$Overlay = goog.module.get('org.gwtproject.core.client.JavaScriptObject.$Overlay$impl');

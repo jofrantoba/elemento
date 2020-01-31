@@ -33,112 +33,84 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {HasSafeHtml}
   */
 class TreeItem extends UIObject {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {ArrayList<TreeItem>} */
+  /**@type {ArrayList<TreeItem>}*/
   this.f_children__org_gwtproject_user_client_ui_TreeItem_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_contentElem__org_gwtproject_user_client_ui_TreeItem_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_childSpanElem__org_gwtproject_user_client_ui_TreeItem_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_imageHolder__org_gwtproject_user_client_ui_TreeItem_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isRoot__org_gwtproject_user_client_ui_TreeItem_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_open__org_gwtproject_user_client_ui_TreeItem_ = false;
-  /** @public {TreeItem} */
+  /**@type {TreeItem}*/
   this.f_parent__org_gwtproject_user_client_ui_TreeItem_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_selected__org_gwtproject_user_client_ui_TreeItem_ = false;
-  /** @public {*} */
+  /**@type {*}*/
   this.f_userObject__org_gwtproject_user_client_ui_TreeItem_;
-  /** @public {Tree} */
+  /**@type {Tree}*/
   this.f_tree__org_gwtproject_user_client_ui_TreeItem_;
-  /** @public {Widget} */
+  /**@type {Widget}*/
   this.f_widget__org_gwtproject_user_client_ui_TreeItem_;
  }
- /**
-  * Factory method corresponding to constructor 'TreeItem()'.
-  * @return {!TreeItem}
-  * @public
-  */
+ //Factory method corresponding to constructor 'TreeItem()'.
+ /** @return {!TreeItem} */
  static $create__() {
   TreeItem.$clinit();
   let $instance = new TreeItem();
   $instance.$ctor__org_gwtproject_user_client_ui_TreeItem__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'TreeItem()'.
-  * @public
-  */
+ //Initialization from constructor 'TreeItem()'.
+ 
  $ctor__org_gwtproject_user_client_ui_TreeItem__() {
   this.$ctor__org_gwtproject_user_client_ui_TreeItem__boolean(false);
  }
- /**
-  * Factory method corresponding to constructor 'TreeItem(SafeHtml)'.
-  * @param {SafeHtml} html
-  * @return {!TreeItem}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ //Factory method corresponding to constructor 'TreeItem(SafeHtml)'.
+ /** @return {!TreeItem} */
+ static $create__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   TreeItem.$clinit();
   let $instance = new TreeItem();
   $instance.$ctor__org_gwtproject_user_client_ui_TreeItem__org_gwtproject_safehtml_shared_SafeHtml(html);
   return $instance;
  }
- /**
-  * Initialization from constructor 'TreeItem(SafeHtml)'.
-  * @param {SafeHtml} html
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_TreeItem__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ //Initialization from constructor 'TreeItem(SafeHtml)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_TreeItem__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   this.$ctor__org_gwtproject_user_client_ui_TreeItem__();
   this.m_setHTML__org_gwtproject_safehtml_shared_SafeHtml(html);
  }
- /**
-  * Factory method corresponding to constructor 'TreeItem(Widget)'.
-  * @param {Widget} widget
-  * @return {!TreeItem}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_Widget(widget) {
+ //Factory method corresponding to constructor 'TreeItem(Widget)'.
+ /** @return {!TreeItem} */
+ static $create__org_gwtproject_user_client_ui_Widget(/** Widget */ widget) {
   TreeItem.$clinit();
   let $instance = new TreeItem();
   $instance.$ctor__org_gwtproject_user_client_ui_TreeItem__org_gwtproject_user_client_ui_Widget(widget);
   return $instance;
  }
- /**
-  * Initialization from constructor 'TreeItem(Widget)'.
-  * @param {Widget} widget
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_TreeItem__org_gwtproject_user_client_ui_Widget(widget) {
+ //Initialization from constructor 'TreeItem(Widget)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_TreeItem__org_gwtproject_user_client_ui_Widget(/** Widget */ widget) {
   this.$ctor__org_gwtproject_user_client_ui_TreeItem__();
   this.m_setWidget__org_gwtproject_user_client_ui_Widget(widget);
  }
- /**
-  * Factory method corresponding to constructor 'TreeItem(boolean)'.
-  * @param {boolean} isRoot
-  * @return {!TreeItem}
-  * @public
-  */
- static $create__boolean(isRoot) {
+ //Factory method corresponding to constructor 'TreeItem(boolean)'.
+ /** @return {!TreeItem} */
+ static $create__boolean(/** boolean */ isRoot) {
   TreeItem.$clinit();
   let $instance = new TreeItem();
   $instance.$ctor__org_gwtproject_user_client_ui_TreeItem__boolean(isRoot);
   return $instance;
  }
- /**
-  * Initialization from constructor 'TreeItem(boolean)'.
-  * @param {boolean} isRoot
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_TreeItem__boolean(isRoot) {
+ //Initialization from constructor 'TreeItem(boolean)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_TreeItem__boolean(/** boolean */ isRoot) {
   this.$ctor__org_gwtproject_user_client_ui_UIObject__();
   this.f_isRoot__org_gwtproject_user_client_ui_TreeItem_ = isRoot;
   let elem = DOM.m_clone__org_gwtproject_dom_client_Element__boolean(TreeItem.$f_BASE_BARE_ELEM__org_gwtproject_user_client_ui_TreeItem_, true);
@@ -149,182 +121,104 @@ class TreeItem extends UIObject {
    this.m_initChildren___$pp_org_gwtproject_user_client_ui();
   }
  }
- /**
-  * @override
-  * @param {SafeHtml} itemHtml
-  * @return {TreeItem}
-  * @public
-  */
- m_addItem__org_gwtproject_safehtml_shared_SafeHtml(itemHtml) {
+ /** @override @return {TreeItem} */
+ m_addItem__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ itemHtml) {
   let ret = TreeItem.$create__org_gwtproject_safehtml_shared_SafeHtml(itemHtml);
   this.m_addItem__org_gwtproject_user_client_ui_TreeItem(ret);
   return ret;
  }
- /**
-  * @override
-  * @param {TreeItem} item
-  * @public
-  */
- m_addItem__org_gwtproject_user_client_ui_TreeItem(item) {
+ /** @override */
+ m_addItem__org_gwtproject_user_client_ui_TreeItem(/** TreeItem */ item) {
   this.m_maybeRemoveItemFromParent__org_gwtproject_user_client_ui_TreeItem_$pp_org_gwtproject_user_client_ui(item);
   this.m_insertItem__int__org_gwtproject_user_client_ui_TreeItem(this.m_getChildCount__(), item);
  }
- /**
-  * @override
-  * @param {IsTreeItem} isItem
-  * @public
-  */
- m_addItem__org_gwtproject_user_client_ui_IsTreeItem(isItem) {
+ /** @override */
+ m_addItem__org_gwtproject_user_client_ui_IsTreeItem(/** IsTreeItem */ isItem) {
   let item = isItem.m_asTreeItem__();
   this.m_addItem__org_gwtproject_user_client_ui_TreeItem(item);
  }
- /**
-  * @override
-  * @param {Widget} widget
-  * @return {TreeItem}
-  * @public
-  */
- m_addItem__org_gwtproject_user_client_ui_Widget(widget) {
+ /** @override @return {TreeItem} */
+ m_addItem__org_gwtproject_user_client_ui_Widget(/** Widget */ widget) {
   let ret = TreeItem.$create__org_gwtproject_user_client_ui_Widget(widget);
   this.m_addItem__org_gwtproject_user_client_ui_TreeItem(ret);
   return ret;
  }
- /**
-  * @override
-  * @param {?string} itemText
-  * @return {TreeItem}
-  * @public
-  */
- m_addTextItem__java_lang_String(itemText) {
+ /** @override @return {TreeItem} */
+ m_addTextItem__java_lang_String(/** ?string */ itemText) {
   let ret = TreeItem.$create__();
   ret.m_setText__java_lang_String(itemText);
   this.m_addItem__org_gwtproject_user_client_ui_TreeItem(ret);
   return ret;
  }
- /**
-  * @override
-  * @return {TreeItem}
-  * @public
-  */
+ /** @override @return {TreeItem} */
  m_asTreeItem__() {
   return this;
  }
- /**
-  * @param {number} index
-  * @return {TreeItem}
-  * @public
-  */
- m_getChild__int(index) {
+ /** @return {TreeItem} */
+ m_getChild__int(/** number */ index) {
   if ((index < 0) || (index >= this.m_getChildCount__())) {
    return null;
   }
-  return /**@type {TreeItem} */ ($Casts.$to(this.f_children__org_gwtproject_user_client_ui_TreeItem_.getAtIndex(index), TreeItem));
+  return /**@type {TreeItem}*/ ($Casts.$to(this.f_children__org_gwtproject_user_client_ui_TreeItem_.getAtIndex(index), TreeItem));
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getChildCount__() {
   if ($Equality.$same(this.f_children__org_gwtproject_user_client_ui_TreeItem_, null)) {
    return 0;
   }
   return this.f_children__org_gwtproject_user_client_ui_TreeItem_.size();
  }
- /**
-  * @param {TreeItem} child
-  * @return {number}
-  * @public
-  */
- m_getChildIndex__org_gwtproject_user_client_ui_TreeItem(child) {
+ /** @return {number} */
+ m_getChildIndex__org_gwtproject_user_client_ui_TreeItem(/** TreeItem */ child) {
   if ($Equality.$same(this.f_children__org_gwtproject_user_client_ui_TreeItem_, null)) {
    return -1;
   }
   return this.f_children__org_gwtproject_user_client_ui_TreeItem_.indexOf(child);
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getHTML__() {
   return $Overlay.m_getInnerHTML__$devirt__org_gwtproject_dom_client_Element(this.f_contentElem__org_gwtproject_user_client_ui_TreeItem_);
  }
- /**
-  * @return {TreeItem}
-  * @public
-  */
+ /** @return {TreeItem} */
  m_getParentItem__() {
   return this.f_parent__org_gwtproject_user_client_ui_TreeItem_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_getState__() {
   return this.f_open__org_gwtproject_user_client_ui_TreeItem_;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getText__() {
   return $Overlay.m_getInnerText__$devirt__org_gwtproject_dom_client_Element(this.f_contentElem__org_gwtproject_user_client_ui_TreeItem_);
  }
- /**
-  * @return {Tree}
-  * @public
-  */
+ /** @return {Tree} */
  m_getTree__() {
   return this.f_tree__org_gwtproject_user_client_ui_TreeItem_;
  }
- /**
-  * @return {*}
-  * @public
-  */
+ /** @return {*} */
  m_getUserObject__() {
   return this.f_userObject__org_gwtproject_user_client_ui_TreeItem_;
  }
- /**
-  * @return {Widget}
-  * @public
-  */
+ /** @return {Widget} */
  m_getWidget__() {
   return this.f_widget__org_gwtproject_user_client_ui_TreeItem_;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getTitle__() {
   return this.f_contentElem__org_gwtproject_user_client_ui_TreeItem_.title;
  }
- /**
-  * @override
-  * @param {?string} title
-  * @public
-  */
- m_setTitle__java_lang_String(title) {
+ /** @override */
+ m_setTitle__java_lang_String(/** ?string */ title) {
   $Overlay.m_setTitle__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.f_contentElem__org_gwtproject_user_client_ui_TreeItem_, title);
  }
- /**
-  * @param {number} beforeIndex
-  * @param {SafeHtml} itemHtml
-  * @return {TreeItem}
-  * @public
-  */
- m_insertItem__int__org_gwtproject_safehtml_shared_SafeHtml(beforeIndex, itemHtml) {
+ /** @return {TreeItem} */
+ m_insertItem__int__org_gwtproject_safehtml_shared_SafeHtml(/** number */ beforeIndex, /** SafeHtml */ itemHtml) {
   let ret = TreeItem.$create__org_gwtproject_safehtml_shared_SafeHtml(itemHtml);
   this.m_insertItem__int__org_gwtproject_user_client_ui_TreeItem(beforeIndex, ret);
   return ret;
  }
- /**
-  * @param {number} beforeIndex
-  * @param {TreeItem} item
-  * @public
-  */
- m_insertItem__int__org_gwtproject_user_client_ui_TreeItem(beforeIndex, item) {
+ 
+ m_insertItem__int__org_gwtproject_user_client_ui_TreeItem(/** number */ beforeIndex, /** TreeItem */ item) {
   this.m_maybeRemoveItemFromParent__org_gwtproject_user_client_ui_TreeItem_$pp_org_gwtproject_user_client_ui(item);
   let childCount = this.m_getChildCount__();
   if (beforeIndex < 0 || beforeIndex > childCount) {
@@ -353,39 +247,24 @@ class TreeItem extends UIObject {
    this.m_updateState__boolean__boolean_$pp_org_gwtproject_user_client_ui(false, false);
   }
  }
- /**
-  * @param {number} beforeIndex
-  * @param {Widget} widget
-  * @return {TreeItem}
-  * @public
-  */
- m_insertItem__int__org_gwtproject_user_client_ui_Widget(beforeIndex, widget) {
+ /** @return {TreeItem} */
+ m_insertItem__int__org_gwtproject_user_client_ui_Widget(/** number */ beforeIndex, /** Widget */ widget) {
   let ret = TreeItem.$create__org_gwtproject_user_client_ui_Widget(widget);
   this.m_insertItem__int__org_gwtproject_user_client_ui_TreeItem(beforeIndex, ret);
   return ret;
  }
- /**
-  * @param {number} beforeIndex
-  * @param {?string} itemText
-  * @return {TreeItem}
-  * @public
-  */
- m_insertTextItem__int__java_lang_String(beforeIndex, itemText) {
+ /** @return {TreeItem} */
+ m_insertTextItem__int__java_lang_String(/** number */ beforeIndex, /** ?string */ itemText) {
   let ret = TreeItem.$create__();
   ret.m_setText__java_lang_String(itemText);
   this.m_insertItem__int__org_gwtproject_user_client_ui_TreeItem(beforeIndex, ret);
   return ret;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isSelected__() {
   return this.f_selected__org_gwtproject_user_client_ui_TreeItem_;
  }
- /**
-  * @public
-  */
+ 
  m_remove__() {
   if (!$Equality.$same(this.f_parent__org_gwtproject_user_client_ui_TreeItem_, null)) {
    this.f_parent__org_gwtproject_user_client_ui_TreeItem_.m_removeItem__org_gwtproject_user_client_ui_TreeItem(this);
@@ -393,12 +272,8 @@ class TreeItem extends UIObject {
    this.f_tree__org_gwtproject_user_client_ui_TreeItem_.m_removeItem__org_gwtproject_user_client_ui_TreeItem(this);
   }
  }
- /**
-  * @override
-  * @param {TreeItem} item
-  * @public
-  */
- m_removeItem__org_gwtproject_user_client_ui_TreeItem(item) {
+ /** @override */
+ m_removeItem__org_gwtproject_user_client_ui_TreeItem(/** TreeItem */ item) {
   if ($Equality.$same(this.f_children__org_gwtproject_user_client_ui_TreeItem_, null) || !this.f_children__org_gwtproject_user_client_ui_TreeItem_.contains(item)) {
    return;
   }
@@ -415,67 +290,42 @@ class TreeItem extends UIObject {
    this.m_updateState__boolean__boolean_$pp_org_gwtproject_user_client_ui(false, false);
   }
  }
- /**
-  * @override
-  * @param {IsTreeItem} isItem
-  * @public
-  */
- m_removeItem__org_gwtproject_user_client_ui_IsTreeItem(isItem) {
+ /** @override */
+ m_removeItem__org_gwtproject_user_client_ui_IsTreeItem(/** IsTreeItem */ isItem) {
   if (!$Equality.$same(isItem, null)) {
    let item = isItem.m_asTreeItem__();
    this.m_removeItem__org_gwtproject_user_client_ui_TreeItem(item);
   }
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_removeItems__() {
   while (this.m_getChildCount__() > 0) {
    this.m_removeItem__org_gwtproject_user_client_ui_TreeItem(this.m_getChild__int(0));
   }
  }
- /**
-  * @override
-  * @param {?string} html
-  * @public
-  */
- m_setHTML__java_lang_String(html) {
+ /** @override */
+ m_setHTML__java_lang_String(/** ?string */ html) {
   this.m_setWidget__org_gwtproject_user_client_ui_Widget(null);
   $Overlay.m_setInnerHTML__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.f_contentElem__org_gwtproject_user_client_ui_TreeItem_, html);
  }
- /**
-  * @override
-  * @param {SafeHtml} html
-  * @public
-  */
- m_setHTML__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ /** @override */
+ m_setHTML__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   this.m_setHTML__java_lang_String(html.m_asString__());
  }
- /**
-  * @param {boolean} selected
-  * @public
-  */
- m_setSelected__boolean(selected) {
+ 
+ m_setSelected__boolean(/** boolean */ selected) {
   if (this.f_selected__org_gwtproject_user_client_ui_TreeItem_ == selected) {
    return;
   }
   this.f_selected__org_gwtproject_user_client_ui_TreeItem_ = selected;
   UIObject.m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String__boolean(this.m_getContentElem___$pp_org_gwtproject_user_client_ui(), "gwt-TreeItem-selected", selected);
  }
- /**
-  * @param {boolean} open
-  * @public
-  */
- m_setState__boolean(open) {
+ 
+ m_setState__boolean(/** boolean */ open) {
   this.m_setState__boolean__boolean(open, true);
  }
- /**
-  * @param {boolean} open
-  * @param {boolean} fireEvents
-  * @public
-  */
- m_setState__boolean__boolean(open, fireEvents) {
+ 
+ m_setState__boolean__boolean(/** boolean */ open, /** boolean */ fireEvents) {
   if (open && this.m_getChildCount__() == 0) {
    return;
   }
@@ -487,27 +337,17 @@ class TreeItem extends UIObject {
    }
   }
  }
- /**
-  * @override
-  * @param {?string} text
-  * @public
-  */
- m_setText__java_lang_String(text) {
+ /** @override */
+ m_setText__java_lang_String(/** ?string */ text) {
   this.m_setWidget__org_gwtproject_user_client_ui_Widget(null);
   $Overlay.m_setInnerText__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.f_contentElem__org_gwtproject_user_client_ui_TreeItem_, text);
  }
- /**
-  * @param {*} userObj
-  * @public
-  */
- m_setUserObject__java_lang_Object(userObj) {
+ 
+ m_setUserObject__java_lang_Object(/** * */ userObj) {
   this.f_userObject__org_gwtproject_user_client_ui_TreeItem_ = userObj;
  }
- /**
-  * @param {Widget} newWidget
-  * @public
-  */
- m_setWidget__org_gwtproject_user_client_ui_Widget(newWidget) {
+ 
+ m_setWidget__org_gwtproject_user_client_ui_Widget(/** Widget */ newWidget) {
   if (!$Equality.$same(newWidget, null)) {
    newWidget.m_removeFromParent__();
   }
@@ -533,26 +373,19 @@ class TreeItem extends UIObject {
    }
   }
  }
- /**
-  * @return {Focusable}
-  * @public
-  */
+ /** @return {Focusable} */
  m_getFocusable__() {
   let focus = this.m_getFocusable__();
   if ($Equality.$same(focus, null)) {
    let w = this.m_getWidget__();
    if (Focusable.$isInstance(w)) {
-    focus = /**@type {Focusable} */ ($Casts.$to(w, Focusable));
+    focus = /**@type {Focusable}*/ ($Casts.$to(w, Focusable));
    }
   }
   return focus;
  }
- /**
-  * @override
-  * @param {?string} baseID
-  * @public
-  */
- m_onEnsureDebugId__java_lang_String(baseID) {
+ /** @override */
+ m_onEnsureDebugId__java_lang_String(/** ?string */ baseID) {
   super.m_onEnsureDebugId__java_lang_String(baseID);
   UIObject.m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(this.f_contentElem__org_gwtproject_user_client_ui_TreeItem_, baseID, "content");
   if (!$Equality.$same(this.f_imageHolder__org_gwtproject_user_client_ui_TreeItem_, null)) {
@@ -561,93 +394,64 @@ class TreeItem extends UIObject {
   if (!$Equality.$same(this.f_children__org_gwtproject_user_client_ui_TreeItem_, null)) {
    let childCount = 0;
    for (let $iterator = this.f_children__org_gwtproject_user_client_ui_TreeItem_.m_iterator__(); $iterator.m_hasNext__(); ) {
-    let child = /**@type {TreeItem} */ ($Casts.$to($iterator.m_next__(), TreeItem));
+    let child = /**@type {TreeItem}*/ ($Casts.$to($iterator.m_next__(), TreeItem));
     child.m_ensureDebugId__java_lang_String(j_l_String.m_valueOf__java_lang_Object(baseID) + "-child" + childCount);
     childCount++;
    }
   }
  }
- /**
-  * @param {List<TreeItem>} accum
-  * @public
-  */
- m_addTreeItems__java_util_List_$pp_org_gwtproject_user_client_ui(accum) {
+ 
+ m_addTreeItems__java_util_List_$pp_org_gwtproject_user_client_ui(/** List<TreeItem> */ accum) {
   let size = this.m_getChildCount__();
   for (let i = 0; i < size; i++) {
-   let item = /**@type {TreeItem} */ ($Casts.$to(this.f_children__org_gwtproject_user_client_ui_TreeItem_.getAtIndex(i), TreeItem));
+   let item = /**@type {TreeItem}*/ ($Casts.$to(this.f_children__org_gwtproject_user_client_ui_TreeItem_.getAtIndex(i), TreeItem));
    accum.add(item);
    item.m_addTreeItems__java_util_List_$pp_org_gwtproject_user_client_ui(accum);
   }
  }
- /**
-  * @return {ArrayList<TreeItem>}
-  * @public
-  */
+ /** @return {ArrayList<TreeItem>} */
  m_getChildren___$pp_org_gwtproject_user_client_ui() {
   return this.f_children__org_gwtproject_user_client_ui_TreeItem_;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getContentElem___$pp_org_gwtproject_user_client_ui() {
   return this.f_contentElem__org_gwtproject_user_client_ui_TreeItem_;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getImageElement___$pp_org_gwtproject_user_client_ui() {
   return DOM.m_getFirstChild__org_gwtproject_dom_client_Element(this.m_getImageHolderElement___$pp_org_gwtproject_user_client_ui());
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getImageHolderElement___$pp_org_gwtproject_user_client_ui() {
   if (!this.m_isFullNode___$pp_org_gwtproject_user_client_ui()) {
    this.m_convertToFullNode___$p_org_gwtproject_user_client_ui_TreeItem();
   }
   return this.f_imageHolder__org_gwtproject_user_client_ui_TreeItem_;
  }
- /**
-  * @public
-  */
+ 
  m_initChildren___$pp_org_gwtproject_user_client_ui() {
   this.m_convertToFullNode___$p_org_gwtproject_user_client_ui_TreeItem();
   this.f_childSpanElem__org_gwtproject_user_client_ui_TreeItem_ = DOM.m_createDiv__();
   DOM.m_appendChild__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(this.m_getElement__(), this.f_childSpanElem__org_gwtproject_user_client_ui_TreeItem_);
   Style_$Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(this.f_childSpanElem__org_gwtproject_user_client_ui_TreeItem_.style, "whiteSpace", "nowrap");
-  this.f_children__org_gwtproject_user_client_ui_TreeItem_ = /**@type {!ArrayList<TreeItem>} */ (ArrayList.$create__());
+  this.f_children__org_gwtproject_user_client_ui_TreeItem_ = /**@type {!ArrayList<TreeItem>}*/ (ArrayList.$create__());
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isFullNode___$pp_org_gwtproject_user_client_ui() {
   return !$Equality.$same(this.f_imageHolder__org_gwtproject_user_client_ui_TreeItem_, null);
  }
- /**
-  * @param {TreeItem} item
-  * @public
-  */
- m_maybeRemoveItemFromParent__org_gwtproject_user_client_ui_TreeItem_$pp_org_gwtproject_user_client_ui(item) {
+ 
+ m_maybeRemoveItemFromParent__org_gwtproject_user_client_ui_TreeItem_$pp_org_gwtproject_user_client_ui(/** TreeItem */ item) {
   if ((!$Equality.$same(item.m_getParentItem__(), null)) || (!$Equality.$same(item.m_getTree__(), null))) {
    item.m_remove__();
   }
  }
- /**
-  * @param {TreeItem} parent
-  * @public
-  */
- m_setParentItem__org_gwtproject_user_client_ui_TreeItem_$pp_org_gwtproject_user_client_ui(parent) {
+ 
+ m_setParentItem__org_gwtproject_user_client_ui_TreeItem_$pp_org_gwtproject_user_client_ui(/** TreeItem */ parent) {
   this.f_parent__org_gwtproject_user_client_ui_TreeItem_ = parent;
  }
- /**
-  * @param {Tree} newTree
-  * @public
-  */
- m_setTree__org_gwtproject_user_client_ui_Tree_$pp_org_gwtproject_user_client_ui(newTree) {
+ 
+ m_setTree__org_gwtproject_user_client_ui_Tree_$pp_org_gwtproject_user_client_ui(/** Tree */ newTree) {
   if ($Equality.$same(this.f_tree__org_gwtproject_user_client_ui_TreeItem_, newTree)) {
    return;
   }
@@ -661,7 +465,7 @@ class TreeItem extends UIObject {
   }
   this.f_tree__org_gwtproject_user_client_ui_TreeItem_ = newTree;
   for (let i = 0, n = this.m_getChildCount__(); i < n; ++i) {
-   /**@type {TreeItem} */ ($Casts.$to(this.f_children__org_gwtproject_user_client_ui_TreeItem_.getAtIndex(i), TreeItem)).m_setTree__org_gwtproject_user_client_ui_Tree_$pp_org_gwtproject_user_client_ui(newTree);
+   /**@type {TreeItem}*/ ($Casts.$to(this.f_children__org_gwtproject_user_client_ui_TreeItem_.getAtIndex(i), TreeItem)).m_setTree__org_gwtproject_user_client_ui_Tree_$pp_org_gwtproject_user_client_ui(newTree);
   }
   this.m_updateState__boolean__boolean_$pp_org_gwtproject_user_client_ui(false, true);
   if (!$Equality.$same(newTree, null)) {
@@ -670,12 +474,8 @@ class TreeItem extends UIObject {
    }
   }
  }
- /**
-  * @param {boolean} animate
-  * @param {boolean} updateTreeSelection
-  * @public
-  */
- m_updateState__boolean__boolean_$pp_org_gwtproject_user_client_ui(animate, updateTreeSelection) {
+ 
+ m_updateState__boolean__boolean_$pp_org_gwtproject_user_client_ui(/** boolean */ animate, /** boolean */ updateTreeSelection) {
   if ($Equality.$same(this.f_tree__org_gwtproject_user_client_ui_TreeItem_, null) || this.f_tree__org_gwtproject_user_client_ui_TreeItem_.m_isAttached__() == false) {
    return;
   }
@@ -700,59 +500,39 @@ class TreeItem extends UIObject {
    this.f_tree__org_gwtproject_user_client_ui_TreeItem_.m_maybeUpdateSelection__org_gwtproject_user_client_ui_TreeItem__boolean_$pp_org_gwtproject_user_client_ui(this, this.f_open__org_gwtproject_user_client_ui_TreeItem_);
   }
  }
- /**
-  * @public
-  */
+ 
  m_updateStateRecursive___$pp_org_gwtproject_user_client_ui() {
   this.m_updateStateRecursiveHelper___$p_org_gwtproject_user_client_ui_TreeItem();
   this.f_tree__org_gwtproject_user_client_ui_TreeItem_.m_maybeUpdateSelection__org_gwtproject_user_client_ui_TreeItem__boolean_$pp_org_gwtproject_user_client_ui(this, this.f_open__org_gwtproject_user_client_ui_TreeItem_);
  }
- /**
-  * @public
-  */
+ 
  m_convertToFullNode___$p_org_gwtproject_user_client_ui_TreeItem() {
   TreeItem.f_impl__org_gwtproject_user_client_ui_TreeItem_.m_convertToFullNode__org_gwtproject_user_client_ui_TreeItem_$pp_org_gwtproject_user_client_ui(this);
  }
- /**
-  * @public
-  */
+ 
  m_updateStateRecursiveHelper___$p_org_gwtproject_user_client_ui_TreeItem() {
   this.m_updateState__boolean__boolean_$pp_org_gwtproject_user_client_ui(false, false);
   for (let i = 0, n = this.m_getChildCount__(); i < n; ++i) {
-   /**@type {TreeItem} */ ($Casts.$to(this.f_children__org_gwtproject_user_client_ui_TreeItem_.getAtIndex(i), TreeItem)).m_updateStateRecursiveHelper___$p_org_gwtproject_user_client_ui_TreeItem();
+   /**@type {TreeItem}*/ ($Casts.$to(this.f_children__org_gwtproject_user_client_ui_TreeItem_.getAtIndex(i), TreeItem)).m_updateStateRecursiveHelper___$p_org_gwtproject_user_client_ui_TreeItem();
   }
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  static get f_BASE_INTERNAL_ELEM__org_gwtproject_user_client_ui_TreeItem_() {
   return (TreeItem.$clinit(), TreeItem.$f_BASE_INTERNAL_ELEM__org_gwtproject_user_client_ui_TreeItem_);
  }
- /**
-  * @param {Object} value
-  * @public
-  */
- static set f_BASE_INTERNAL_ELEM__org_gwtproject_user_client_ui_TreeItem_(value) {
+ 
+ static set f_BASE_INTERNAL_ELEM__org_gwtproject_user_client_ui_TreeItem_(/** Object */ value) {
   (TreeItem.$clinit(), TreeItem.$f_BASE_INTERNAL_ELEM__org_gwtproject_user_client_ui_TreeItem_ = value);
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  static get f_BASE_BARE_ELEM__org_gwtproject_user_client_ui_TreeItem_() {
   return (TreeItem.$clinit(), TreeItem.$f_BASE_BARE_ELEM__org_gwtproject_user_client_ui_TreeItem_);
  }
- /**
-  * @param {Object} value
-  * @public
-  */
- static set f_BASE_BARE_ELEM__org_gwtproject_user_client_ui_TreeItem_(value) {
+ 
+ static set f_BASE_BARE_ELEM__org_gwtproject_user_client_ui_TreeItem_(/** Object */ value) {
   (TreeItem.$clinit(), TreeItem.$f_BASE_BARE_ELEM__org_gwtproject_user_client_ui_TreeItem_ = value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TreeItem.$clinit = () =>{};
   TreeItem.$loadModules();
@@ -760,17 +540,11 @@ class TreeItem extends UIObject {
   TreeItem.f_itemAnimation__org_gwtproject_user_client_ui_TreeItem_ = TreeItemAnimation.$create__();
   TreeItem.f_impl__org_gwtproject_user_client_ui_TreeItem_ = TreeItemImpl.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TreeItem;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IndexOutOfBoundsException = goog.module.get('java.lang.IndexOutOfBoundsException$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -797,21 +571,21 @@ HasTreeItems.$markImplementor(TreeItem);
 HasHTML.$markImplementor(TreeItem);
 HasSafeHtml.$markImplementor(TreeItem);
 
-/** @public {number} @const */
+/**@const {number}*/
 TreeItem.f_CHILD_MARGIN__org_gwtproject_user_client_ui_TreeItem_ = 16.0;
-/** @public {number} @const */
+/**@const {number}*/
 TreeItem.f_IMAGE_PAD__org_gwtproject_user_client_ui_TreeItem = 7;
-/** @public {number} @const */
+/**@const {number}*/
 TreeItem.f_ANIMATION_DURATION__org_gwtproject_user_client_ui_TreeItem_ = 200;
-/** @public {number} @const */
+/**@const {number}*/
 TreeItem.f_ANIMATION_DURATION_PER_ITEM__org_gwtproject_user_client_ui_TreeItem_ = 75;
-/** @public {TreeItemAnimation} */
+/**@type {TreeItemAnimation}*/
 TreeItem.f_itemAnimation__org_gwtproject_user_client_ui_TreeItem_;
-/** @private {Object} */
+/**@private {Object}*/
 TreeItem.$f_BASE_INTERNAL_ELEM__org_gwtproject_user_client_ui_TreeItem_;
-/** @private {Object} */
+/**@private {Object}*/
 TreeItem.$f_BASE_BARE_ELEM__org_gwtproject_user_client_ui_TreeItem_;
-/** @public {TreeItemImpl} */
+/**@type {TreeItemImpl}*/
 TreeItem.f_impl__org_gwtproject_user_client_ui_TreeItem_;
 
 exports = TreeItem; 

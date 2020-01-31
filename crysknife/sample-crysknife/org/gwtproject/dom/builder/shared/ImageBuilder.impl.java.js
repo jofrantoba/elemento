@@ -8,69 +8,32 @@ const ElementBuilderBase = goog.require('org.gwtproject.dom.builder.shared.Eleme
  * @extends {ElementBuilderBase<ImageBuilder>}
  */
 class ImageBuilder {
- /**
-  * @abstract
-  * @param {?string} alt
-  * @return {ImageBuilder}
-  * @public
-  */
- m_alt__java_lang_String(alt) {}
- /**
-  * @abstract
-  * @param {number} height
-  * @return {ImageBuilder}
-  * @public
-  */
- m_height__int(height) {}
- /**
-  * @abstract
-  * @return {ImageBuilder}
-  * @public
-  */
+ /** @abstract @return {ImageBuilder} */
+ m_alt__java_lang_String(/** ?string */ alt) {}
+ /** @abstract @return {ImageBuilder} */
+ m_height__int(/** number */ height) {}
+ /** @abstract @return {ImageBuilder} */
  m_isMap__() {}
- /**
-  * @abstract
-  * @param {?string} src
-  * @return {ImageBuilder}
-  * @public
-  */
- m_src__java_lang_String(src) {}
- /**
-  * @abstract
-  * @param {number} width
-  * @return {ImageBuilder}
-  * @public
-  */
- m_width__int(width) {}
- /**
-  * @public
-  */
+ /** @abstract @return {ImageBuilder} */
+ m_src__java_lang_String(/** ?string */ src) {}
+ /** @abstract @return {ImageBuilder} */
+ m_width__int(/** number */ width) {}
+ 
  static $clinit() {
   ImageBuilder.$clinit = () =>{};
   ImageBuilder.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ElementBuilderBase.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_dom_builder_shared_ImageBuilder = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ElementBuilderBase.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_dom_builder_shared_ImageBuilder = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_dom_builder_shared_ImageBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

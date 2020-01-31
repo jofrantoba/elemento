@@ -22,146 +22,96 @@ let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
  * @implements {SetSelectionModel<T>}
   */
 class MultiSelectionModel extends AbstractSelectionModel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Map<*, T>} */
+  /**@type {Map<*, T>}*/
   this.f_selectedSet__org_gwtproject_view_client_MultiSelectionModel;
-  /** @public {Map<*, SelectionChange<T>>} */
+  /**@type {Map<*, SelectionChange<T>>}*/
   this.f_selectionChanges__org_gwtproject_view_client_MultiSelectionModel_;
  }
- /**
-  * Factory method corresponding to constructor 'MultiSelectionModel()'.
-  * @template T
-  * @return {!MultiSelectionModel<T>}
-  * @public
-  */
+ //Factory method corresponding to constructor 'MultiSelectionModel()'.
+ /** @template T @return {!MultiSelectionModel<T>} */
  static $create__() {
   MultiSelectionModel.$clinit();
   let $instance = new MultiSelectionModel();
   $instance.$ctor__org_gwtproject_view_client_MultiSelectionModel__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'MultiSelectionModel()'.
-  * @public
-  */
+ //Initialization from constructor 'MultiSelectionModel()'.
+ 
  $ctor__org_gwtproject_view_client_MultiSelectionModel__() {
   this.$ctor__org_gwtproject_view_client_MultiSelectionModel__org_gwtproject_view_client_ProvidesKey(null);
  }
- /**
-  * Factory method corresponding to constructor 'MultiSelectionModel(ProvidesKey)'.
-  * @template T
-  * @param {ProvidesKey<T>} keyProvider
-  * @return {!MultiSelectionModel<T>}
-  * @public
-  */
- static $create__org_gwtproject_view_client_ProvidesKey(keyProvider) {
+ //Factory method corresponding to constructor 'MultiSelectionModel(ProvidesKey)'.
+ /** @template T @return {!MultiSelectionModel<T>} */
+ static $create__org_gwtproject_view_client_ProvidesKey(/** ProvidesKey<T> */ keyProvider) {
   MultiSelectionModel.$clinit();
   let $instance = new MultiSelectionModel();
   $instance.$ctor__org_gwtproject_view_client_MultiSelectionModel__org_gwtproject_view_client_ProvidesKey(keyProvider);
   return $instance;
  }
- /**
-  * Initialization from constructor 'MultiSelectionModel(ProvidesKey)'.
-  * @param {ProvidesKey<T>} keyProvider
-  * @public
-  */
- $ctor__org_gwtproject_view_client_MultiSelectionModel__org_gwtproject_view_client_ProvidesKey(keyProvider) {
-  this.$ctor__org_gwtproject_view_client_MultiSelectionModel__org_gwtproject_view_client_ProvidesKey__java_util_Map__java_util_Map(keyProvider, /**@type {!HashMap<*, T>} */ (HashMap.$create__()), /**@type {!HashMap<*, SelectionChange<T>>} */ (HashMap.$create__()));
+ //Initialization from constructor 'MultiSelectionModel(ProvidesKey)'.
+ 
+ $ctor__org_gwtproject_view_client_MultiSelectionModel__org_gwtproject_view_client_ProvidesKey(/** ProvidesKey<T> */ keyProvider) {
+  this.$ctor__org_gwtproject_view_client_MultiSelectionModel__org_gwtproject_view_client_ProvidesKey__java_util_Map__java_util_Map(keyProvider, /**@type {!HashMap<*, T>}*/ (HashMap.$create__()), /**@type {!HashMap<*, SelectionChange<T>>}*/ (HashMap.$create__()));
  }
- /**
-  * Factory method corresponding to constructor 'MultiSelectionModel(ProvidesKey, Map, Map)'.
-  * @template T
-  * @param {ProvidesKey<T>} keyProvider
-  * @param {Map<*, T>} selectedSet
-  * @param {Map<*, SelectionChange<T>>} selectionChanges
-  * @return {!MultiSelectionModel<T>}
-  * @public
-  */
- static $create__org_gwtproject_view_client_ProvidesKey__java_util_Map__java_util_Map(keyProvider, selectedSet, selectionChanges) {
+ //Factory method corresponding to constructor 'MultiSelectionModel(ProvidesKey, Map, Map)'.
+ /** @template T @return {!MultiSelectionModel<T>} */
+ static $create__org_gwtproject_view_client_ProvidesKey__java_util_Map__java_util_Map(/** ProvidesKey<T> */ keyProvider, /** Map<*, T> */ selectedSet, /** Map<*, SelectionChange<T>> */ selectionChanges) {
   MultiSelectionModel.$clinit();
   let $instance = new MultiSelectionModel();
   $instance.$ctor__org_gwtproject_view_client_MultiSelectionModel__org_gwtproject_view_client_ProvidesKey__java_util_Map__java_util_Map(keyProvider, selectedSet, selectionChanges);
   return $instance;
  }
- /**
-  * Initialization from constructor 'MultiSelectionModel(ProvidesKey, Map, Map)'.
-  * @param {ProvidesKey<T>} keyProvider
-  * @param {Map<*, T>} selectedSet
-  * @param {Map<*, SelectionChange<T>>} selectionChanges
-  * @public
-  */
- $ctor__org_gwtproject_view_client_MultiSelectionModel__org_gwtproject_view_client_ProvidesKey__java_util_Map__java_util_Map(keyProvider, selectedSet, selectionChanges) {
+ //Initialization from constructor 'MultiSelectionModel(ProvidesKey, Map, Map)'.
+ 
+ $ctor__org_gwtproject_view_client_MultiSelectionModel__org_gwtproject_view_client_ProvidesKey__java_util_Map__java_util_Map(/** ProvidesKey<T> */ keyProvider, /** Map<*, T> */ selectedSet, /** Map<*, SelectionChange<T>> */ selectionChanges) {
   this.$ctor__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel__org_gwtproject_view_client_ProvidesKey(keyProvider);
   this.f_selectedSet__org_gwtproject_view_client_MultiSelectionModel = selectedSet;
   this.f_selectionChanges__org_gwtproject_view_client_MultiSelectionModel_ = selectionChanges;
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_clear__() {
   this.f_selectionChanges__org_gwtproject_view_client_MultiSelectionModel_.clear();
   for (let $iterator = this.f_selectedSet__org_gwtproject_view_client_MultiSelectionModel.values().m_iterator__(); $iterator.m_hasNext__(); ) {
    let value = $iterator.m_next__();
-   this.f_selectionChanges__org_gwtproject_view_client_MultiSelectionModel_.put(this.m_getKey__java_lang_Object(value), /**@type {!SelectionChange<T>} */ (SelectionChange.$create__java_lang_Object__boolean(value, false)));
+   this.f_selectionChanges__org_gwtproject_view_client_MultiSelectionModel_.put(this.m_getKey__java_lang_Object(value), /**@type {!SelectionChange<T>}*/ (SelectionChange.$create__java_lang_Object__boolean(value, false)));
   }
   this.m_scheduleSelectionChangeEvent__();
  }
- /**
-  * @override
-  * @return {Set<T>}
-  * @public
-  */
+ /** @override @return {Set<T>} */
  m_getSelectedSet__() {
   this.m_resolveChanges___$pp_org_gwtproject_view_client();
-  return /**@type {!HashSet<T>} */ (HashSet.$create__java_util_Collection(this.f_selectedSet__org_gwtproject_view_client_MultiSelectionModel.values()));
+  return /**@type {!HashSet<T>}*/ (HashSet.$create__java_util_Collection(this.f_selectedSet__org_gwtproject_view_client_MultiSelectionModel.values()));
  }
- /**
-  * @override
-  * @param {T} item
-  * @return {boolean}
-  * @public
-  */
- m_isSelected__java_lang_Object(item) {
+ /** @override @return {boolean} */
+ m_isSelected__java_lang_Object(/** T */ item) {
   this.m_resolveChanges___$pp_org_gwtproject_view_client();
   return this.f_selectedSet__org_gwtproject_view_client_MultiSelectionModel.containsKey(this.m_getKey__java_lang_Object(item));
  }
- /**
-  * @override
-  * @param {T} item
-  * @param {boolean} selected
-  * @public
-  */
- m_setSelected__java_lang_Object__boolean(item, selected) {
-  this.f_selectionChanges__org_gwtproject_view_client_MultiSelectionModel_.put(this.m_getKey__java_lang_Object(item), /**@type {!SelectionChange<T>} */ (SelectionChange.$create__java_lang_Object__boolean(item, selected)));
+ /** @override */
+ m_setSelected__java_lang_Object__boolean(/** T */ item, /** boolean */ selected) {
+  this.f_selectionChanges__org_gwtproject_view_client_MultiSelectionModel_.put(this.m_getKey__java_lang_Object(item), /**@type {!SelectionChange<T>}*/ (SelectionChange.$create__java_lang_Object__boolean(item, selected)));
   this.m_scheduleSelectionChangeEvent__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_fireSelectionChangeEvent__() {
   if (this.m_isEventScheduled__()) {
    this.m_setEventCancelled__boolean(true);
   }
   this.m_resolveChanges___$pp_org_gwtproject_view_client();
  }
- /**
-  * @public
-  */
+ 
  m_resolveChanges___$pp_org_gwtproject_view_client() {
   if (this.f_selectionChanges__org_gwtproject_view_client_MultiSelectionModel_.isEmpty()) {
    return;
   }
   let changed = false;
   for (let $iterator = this.f_selectionChanges__org_gwtproject_view_client_MultiSelectionModel_.m_entrySet__().m_iterator__(); $iterator.m_hasNext__(); ) {
-   let entry = /**@type {Entry<*, SelectionChange<T>>} */ ($Casts.$to($iterator.m_next__(), Entry));
+   let entry = /**@type {Entry<*, SelectionChange<T>>}*/ ($Casts.$to($iterator.m_next__(), Entry));
    let key = entry.m_getKey__();
-   let value = /**@type {SelectionChange<T>} */ ($Casts.$to(entry.m_getValue__(), SelectionChange));
+   let value = /**@type {SelectionChange<T>}*/ ($Casts.$to(entry.m_getValue__(), SelectionChange));
    let selected = value.f_isSelected__org_gwtproject_view_client_MultiSelectionModel_SelectionChange_;
    let oldValue = this.f_selectedSet__org_gwtproject_view_client_MultiSelectionModel.get(key);
    if (selected) {
@@ -182,25 +132,17 @@ class MultiSelectionModel extends AbstractSelectionModel {
    SelectionChangeEvent.m_fire__org_gwtproject_view_client_SelectionChangeEvent_HasSelectionChangedHandlers(this);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MultiSelectionModel.$clinit = () =>{};
   MultiSelectionModel.$loadModules();
   AbstractSelectionModel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof MultiSelectionModel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   HashMap = goog.module.get('java.util.HashMap$impl');
   HashSet = goog.module.get('java.util.HashSet$impl');

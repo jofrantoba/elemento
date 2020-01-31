@@ -7,36 +7,22 @@ let $Overlay = goog.forwardDeclare('elemental2.promise.Promise.PromiseExecutorCa
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class ResolveCallbackFn_$Overlay {
- /**
-  * @template T
-  * @param {function(?):void} $thisArg
-  * @param {IThenable<T>} value
-  * @public
-  */
- static m_onInvoke__$devirt__elemental2_promise_Promise_PromiseExecutorCallbackFn_ResolveCallbackFn__elemental2_promise_IThenable($thisArg, value) {
+ /** @template T */
+ static m_onInvoke__$devirt__elemental2_promise_Promise_PromiseExecutorCallbackFn_ResolveCallbackFn__elemental2_promise_IThenable(/** function(?):void */ $thisArg, /** IThenable<T> */ value) {
   ResolveCallbackFn_$Overlay.$clinit();
-  $thisArg(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(value)));
+  $thisArg(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(value)));
  }
- /**
-  * @template T
-  * @param {function(?):void} $thisArg
-  * @param {T} value
-  * @public
-  */
- static m_onInvoke__$devirt__elemental2_promise_Promise_PromiseExecutorCallbackFn_ResolveCallbackFn__java_lang_Object($thisArg, value) {
+ /** @template T */
+ static m_onInvoke__$devirt__elemental2_promise_Promise_PromiseExecutorCallbackFn_ResolveCallbackFn__java_lang_Object(/** function(?):void */ $thisArg, /** T */ value) {
   ResolveCallbackFn_$Overlay.$clinit();
-  $thisArg(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(value)));
+  $thisArg(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(value)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ResolveCallbackFn_$Overlay.$clinit = () =>{};
   ResolveCallbackFn_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }

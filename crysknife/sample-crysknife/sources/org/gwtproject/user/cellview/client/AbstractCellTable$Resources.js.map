@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"AbstractCellTable$Resources.impl.java.js",
-"lineCount":35,
-"mappings":"A;;;;;;;;;;MAqPmB,S;;;;;;CAID,iB;;;;;;CAKA,kB;;;;;;CAKR,S;;;;QAdS,O;EAAAA,4B;EAAAA;",
+"lineCount":21,
+"mappings":"A;;;;;;;;;;MAqPmB,S;;CAID,iB;;CAKA,kB;;CAKR,S;;QAdS,O;EAAAA,4B;EAAAA;",
 "sources":["AbstractCellTable.java"],
 "names":["org.gwtproject.user.cellview.client.AbstractCellTable$Resources.<clinit>"]
 }

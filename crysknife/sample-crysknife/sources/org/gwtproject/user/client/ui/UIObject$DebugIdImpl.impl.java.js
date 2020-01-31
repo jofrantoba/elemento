@@ -7,60 +7,36 @@ let $Overlay = goog.forwardDeclare('org.gwtproject.dom.client.Element.$Overlay$i
 let UIObject = goog.forwardDeclare('org.gwtproject.user.client.ui.UIObject$impl');
 
 class DebugIdImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!DebugIdImpl}
-  * @public
-  */
+ /** @return {!DebugIdImpl} */
  static $create__() {
   DebugIdImpl.$clinit();
   let $instance = new DebugIdImpl();
   $instance.$ctor__org_gwtproject_user_client_ui_UIObject_DebugIdImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_UIObject_DebugIdImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {UIObject} uiObject
-  * @param {?string} id
-  * @public
-  */
- m_ensureDebugId__org_gwtproject_user_client_ui_UIObject__java_lang_String(uiObject, id) {}
- /**
-  * @param {Object} elem
-  * @param {?string} baseID
-  * @param {?string} id
-  * @public
-  */
- m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(elem, baseID, id) {}
- /**
-  * @public
-  */
+ 
+ m_ensureDebugId__org_gwtproject_user_client_ui_UIObject__java_lang_String(/** UIObject */ uiObject, /** ?string */ id) {}
+ 
+ m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(/** Object */ elem, /** ?string */ baseID, /** ?string */ id) {}
+ 
  static $clinit() {
   DebugIdImpl.$clinit = () =>{};
   DebugIdImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DebugIdImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

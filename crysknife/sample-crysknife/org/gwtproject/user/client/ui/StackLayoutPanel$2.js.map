@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"StackLayoutPanel$2.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;;;;;MAynB8C,E;;;;CAAA,W;EAAAA,Q;EAAAA;uE;EAAAA;OA3BXC,QA2BWD,C;;;;;;;;QAAA,6F;EAAAE,a;EAAAA,yB;EAAAA,+K;EAAAA,iB;;;;;;;CAAA,6I;EAAAC,mF;EAAAA,yB;EAAAA,iC;;;;;;;CAC5B,qD,CAAmBC,K;EAC7BC,uI;;;;;QAFsC,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":44,
+"mappings":"A;;;;;;;;;;;;;MAynB8C,E;;CAAA,W;EAAAA,Q;EAAAA;uE;EAAAA;OA3BXC,QA2BWD,C;;;QAAA,6F;EAAAE,a;EAAAA,yB;EAAAA,+K;EAAAA,iB;;;CAAA,6I;EAAAC,mF;EAAAA,yB;EAAAA,iC;;;CAC5B,qD,mBAAmBC,K;EAC7BC,uI;;;QAFsC,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["StackLayoutPanel.java"],
 "names":["org.gwtproject.user.client.ui.StackLayoutPanel$2.<synthetic: ctor_js>","child","org.gwtproject.user.client.ui.StackLayoutPanel$2.<synthetic: ctor_create>","org.gwtproject.user.client.ui.StackLayoutPanel$2.<init>","event","org.gwtproject.user.client.ui.StackLayoutPanel$2.onClick","org.gwtproject.user.client.ui.StackLayoutPanel$2.<clinit>"]
 }

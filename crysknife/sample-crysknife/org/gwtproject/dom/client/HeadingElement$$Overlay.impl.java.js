@@ -16,48 +16,32 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $JavaScriptObject = goog.forwardDeclare('vmbootstrap.JavaScriptObject$impl');
 
 class HeadingElement_$Overlay {
- /**
-  * @param {Object} elem
-  * @return {Object}
-  * @public
-  */
- static m_as__org_gwtproject_dom_client_Element(elem) {
+ /** @return {Object} */
+ static m_as__org_gwtproject_dom_client_Element(/** Object */ elem) {
   HeadingElement_$Overlay.$clinit();
   if (Class.$get($JavaScriptObject).m_desiredAssertionStatus__()) {
    $Asserts.$assert(HeadingElement_$Overlay.m_is__org_gwtproject_dom_client_Element(elem));
   }
-  return /**@type {Object} */ ($Casts.$to(elem, HeadingElement_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to(elem, HeadingElement_$Overlay));
  }
- /**
-  * @param {Object} o
-  * @return {boolean}
-  * @public
-  */
- static m_is__org_gwtproject_core_client_JavaScriptObject(o) {
+ /** @return {boolean} */
+ static m_is__org_gwtproject_core_client_JavaScriptObject(/** Object */ o) {
   HeadingElement_$Overlay.$clinit();
   if ($Overlay.m_is__org_gwtproject_core_client_JavaScriptObject(o)) {
-   return HeadingElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object} */ ($Casts.$to(o, $Overlay)));
+   return HeadingElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object}*/ ($Casts.$to(o, $Overlay)));
   }
   return false;
  }
- /**
-  * @param {Object} node
-  * @return {boolean}
-  * @public
-  */
- static m_is__org_gwtproject_dom_client_Node(node) {
+ /** @return {boolean} */
+ static m_is__org_gwtproject_dom_client_Node(/** Object */ node) {
   HeadingElement_$Overlay.$clinit();
   if ($Overlay.m_is__org_gwtproject_dom_client_Node(node)) {
-   return HeadingElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object} */ ($Casts.$to(node, $Overlay)));
+   return HeadingElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object}*/ ($Casts.$to(node, $Overlay)));
   }
   return false;
  }
- /**
-  * @param {Object} elem
-  * @return {boolean}
-  * @public
-  */
- static m_is__org_gwtproject_dom_client_Element(elem) {
+ /** @return {boolean} */
+ static m_is__org_gwtproject_dom_client_Element(/** Object */ elem) {
   HeadingElement_$Overlay.$clinit();
   if ($Equality.$same(elem, null)) {
    return false;
@@ -75,32 +59,21 @@ class HeadingElement_$Overlay {
   }
   return true;
  }
- /**
-  * @return {Array<?string>}
-  * @public
-  */
+ /** @return {Array<?string>} */
  static get f_TAGS__org_gwtproject_dom_client_HeadingElement_$Overlay() {
   return (HeadingElement_$Overlay.$clinit(), HeadingElement_$Overlay.$f_TAGS__org_gwtproject_dom_client_HeadingElement_$Overlay);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HeadingElement_$Overlay.$clinit = () =>{};
   HeadingElement_$Overlay.$loadModules();
-  HeadingElement_$Overlay.$f_TAGS__org_gwtproject_dom_client_HeadingElement_$Overlay = /**@type {!Array<?string>} */ ($Arrays.$init([HeadingElement_$Overlay.f_TAG_H1__org_gwtproject_dom_client_HeadingElement_$Overlay, HeadingElement_$Overlay.f_TAG_H2__org_gwtproject_dom_client_HeadingElement_$Overlay, HeadingElement_$Overlay.f_TAG_H3__org_gwtproject_dom_client_HeadingElement_$Overlay, HeadingElement_$Overlay.f_TAG_H4__org_gwtproject_dom_client_HeadingElement_$Overlay, HeadingElement_$Overlay.f_TAG_H5__org_gwtproject_dom_client_HeadingElement_$Overlay, HeadingElement_$Overlay.f_TAG_H6__org_gwtproject_dom_client_HeadingElement_$Overlay], j_l_String));
+  HeadingElement_$Overlay.$f_TAGS__org_gwtproject_dom_client_HeadingElement_$Overlay = /**@type {!Array<?string>}*/ ($Arrays.$init([HeadingElement_$Overlay.f_TAG_H1__org_gwtproject_dom_client_HeadingElement_$Overlay, HeadingElement_$Overlay.f_TAG_H2__org_gwtproject_dom_client_HeadingElement_$Overlay, HeadingElement_$Overlay.f_TAG_H3__org_gwtproject_dom_client_HeadingElement_$Overlay, HeadingElement_$Overlay.f_TAG_H4__org_gwtproject_dom_client_HeadingElement_$Overlay, HeadingElement_$Overlay.f_TAG_H5__org_gwtproject_dom_client_HeadingElement_$Overlay, HeadingElement_$Overlay.f_TAG_H6__org_gwtproject_dom_client_HeadingElement_$Overlay], j_l_String));
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Object;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Class = goog.module.get('java.lang.Class$impl');
   Integer = goog.module.get('java.lang.Integer$impl');
@@ -117,19 +90,19 @@ class HeadingElement_$Overlay {
 }
 $Util.$setClassMetadata(HeadingElement_$Overlay, 'Object');
 
-/** @private {Array<?string>} */
+/**@private {Array<?string>}*/
 HeadingElement_$Overlay.$f_TAGS__org_gwtproject_dom_client_HeadingElement_$Overlay;
-/** @public {?string} @const */
+/**@const {?string}*/
 HeadingElement_$Overlay.f_TAG_H1__org_gwtproject_dom_client_HeadingElement_$Overlay = "h1";
-/** @public {?string} @const */
+/**@const {?string}*/
 HeadingElement_$Overlay.f_TAG_H2__org_gwtproject_dom_client_HeadingElement_$Overlay = "h2";
-/** @public {?string} @const */
+/**@const {?string}*/
 HeadingElement_$Overlay.f_TAG_H3__org_gwtproject_dom_client_HeadingElement_$Overlay = "h3";
-/** @public {?string} @const */
+/**@const {?string}*/
 HeadingElement_$Overlay.f_TAG_H4__org_gwtproject_dom_client_HeadingElement_$Overlay = "h4";
-/** @public {?string} @const */
+/**@const {?string}*/
 HeadingElement_$Overlay.f_TAG_H5__org_gwtproject_dom_client_HeadingElement_$Overlay = "h5";
-/** @public {?string} @const */
+/**@const {?string}*/
 HeadingElement_$Overlay.f_TAG_H6__org_gwtproject_dom_client_HeadingElement_$Overlay = "h6";
 
 exports = HeadingElement_$Overlay; 

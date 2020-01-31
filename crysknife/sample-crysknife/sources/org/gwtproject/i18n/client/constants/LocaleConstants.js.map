@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"LocaleConstants.impl.java.js",
-"lineCount":29,
-"mappings":"A;;;;;;;;;;MAoBiB,e;;;;;;CAEG,wB;;;;;;CAEF,sB;;;;QAJD,O;EAAAA,kC;EAAAA;",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;MAoBiB,e;;CAEG,wB;;CAEF,sB;;QAJD,O;EAAAA,kC;EAAAA;",
 "sources":["LocaleConstants.java"],
 "names":["org.gwtproject.i18n.client.constants.LocaleConstants.<clinit>"]
 }

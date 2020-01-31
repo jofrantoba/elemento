@@ -12,45 +12,28 @@ let Node = goog.forwardDeclare('javax.validation.Path.Node$impl');
  * @extends {Iterable<Node>}
  */
 class Path {
- /**
-  * @param {?function():Iterator<Node>} fn
-  * @return {Path}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {Path} */
+ static $adapt(/** ?function():Iterator<Node> */ fn) {
   Path.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Path.$clinit = () =>{};
   Path.$loadModules();
   Iterable.$clinit();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Iterable.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__javax_validation_Path = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Iterable.$markImplementor(ctor);
+  ctor.prototype.$implements__javax_validation_Path = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__javax_validation_Path;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('javax.validation.Path.$LambdaAdaptor$impl');
  }

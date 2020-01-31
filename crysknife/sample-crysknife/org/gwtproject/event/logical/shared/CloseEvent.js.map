@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CloseEvent.impl.java.js",
-"lineCount":150,
-"mappings":"A;;;;;;;;;;;;;;;MAwBa,U;;;;CAAA,W;EAAAA,Q;EAAAA;OAyCK,yDAzCLA,C;EAAAA;OA2CW,6DA3CXA,S;;;;;;;;QAaY,8E,CAAyBC,M,EAAUC,M;EAAnCC,qB;EACrBA,0H;;;;;;;;;QAWqB,uF,CAAyBF,M,EAAUC,M,EAAgBE,U;EAAnDD,qB;EACrBA;GACEA,IAAcE,KAAdF,sGADFA;GAEEA,6DAFFA;G;;;;;;QAWkC,W;EAAAG,qB;EAClCA,wS;;;;;;;;;QAaQ,kC,CAAaJ,M,EAAgBE,U;EAA7BG,qB;EAAAA,iC;EAAAA,+G;EAAAA,iB;;;;;;;CAAA,gF,CAAaL,M,EAAgBE,U;EAA7BI,kD;EACRA,gF;EACAA,wE;;;;;;;CAOiC,qB;EACjCC,+F;;;;;;CAQO,a;EACPC,sE;;;;;;CAQa,gB;EACbC,0E;;;;;;CAIa,4D,CAAyBC,O;EACtCC,wE;;;;;;;;CApFS,4B;EAAAA,kI;;;;;QAAA,O;EAAAC,6B;EAAAA,0B;EAAAA,gB;;;;;;;;;;;;;;;;;;;;;;;AAAA;WAG0B,uDAH1B;",
+"lineCount":99,
+"mappings":"A;;;;;;;;;;;;;;;MAwBa,U;;CAAA,W;EAAAA,Q;EAAAA;OAyCK,yDAzCLA,C;EAAAA;OA2CW,6DA3CXA,S;;;QAaY,8E,8BAAyBC,M,aAAUC,M;EAAnCC,qB;EACrBA,0H;;;QAWqB,uF,8BAAyBF,M,aAAUC,M,iBAAgBE,U;EAAnDD,qB;EACrBA;GACEA,IAAcE,KAAdF,qGADFA;GAEEA,6DAFFA;G;;;QAWkC,W;EAAAG,qB;EAClCA,uS;;;QAaQ,kC,UAAaJ,M,iBAAgBE,U;EAA7BG,qB;EAAAA,iC;EAAAA,+G;EAAAA,iB;;;CAAA,gF,UAAaL,M,iBAAgBE,U;EAA7BI,kD;EACRA,gF;EACAA,wE;;;CAOiC,qB;EACjCC,8F;;;CAQO,a;EACPC,sE;;;CAQa,gB;EACbC,0E;;;CAIa,4D,wBAAyBC,O;EACtCC,wE;;;;CApFS,4B;EAAAA,iI;;;QAAA,O;EAAAC,6B;EAAAA,0B;EAAAA,gB;;;;;;;;;;;;;;;;;AAAA;WAG0B,uDAH1B;",
 "sources":["CloseEvent.java"],
 "names":["org.gwtproject.event.logical.shared.CloseEvent.<synthetic: ctor_js>","source","target","org.gwtproject.event.logical.shared.CloseEvent.fire","autoClosed","event","org.gwtproject.event.logical.shared.CloseEvent.getType","org.gwtproject.event.logical.shared.CloseEvent.<synthetic: ctor_create>","org.gwtproject.event.logical.shared.CloseEvent.<init>","org.gwtproject.event.logical.shared.CloseEvent.getAssociatedType","org.gwtproject.event.logical.shared.CloseEvent.getTarget","org.gwtproject.event.logical.shared.CloseEvent.isAutoClosed","handler","org.gwtproject.event.logical.shared.CloseEvent.dispatch","org.gwtproject.event.logical.shared.CloseEvent.<clinit>"]
 }

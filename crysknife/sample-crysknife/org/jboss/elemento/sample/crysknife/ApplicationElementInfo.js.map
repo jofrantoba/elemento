@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ApplicationElementInfo.impl.java.js",
-"lineCount":35,
-"mappings":"A;;;;;MAIa,sB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,iC;EAAAA,6C;EAAAA,gF;EAAAA,iB;;;;;CAAA,mE;EAAAC,iC;;;;;QAAA,O;EAAAC,yC;EAAAA,sC;EAAAA;",
+"lineCount":26,
+"mappings":"A;;;;;MAIa,sB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,iC;EAAAA,6C;EAAAA,gF;EAAAA,iB;;;CAAA,mE;EAAAC,iC;;;QAAA,O;EAAAC,yC;EAAAA,sC;EAAAA;",
 "sources":["ApplicationElementInfo.java"],
 "names":["org.jboss.elemento.sample.crysknife.ApplicationElementInfo.<synthetic: ctor_js>","org.jboss.elemento.sample.crysknife.ApplicationElementInfo.<synthetic: ctor_create>","org.jboss.elemento.sample.crysknife.ApplicationElementInfo.<init>","org.jboss.elemento.sample.crysknife.ApplicationElementInfo.<clinit>"]
 }

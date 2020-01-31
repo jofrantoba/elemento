@@ -7,64 +7,42 @@ let AnimationCallback = goog.forwardDeclare('org.gwtproject.animation.client.Ani
 let StubAnimationScheduler = goog.forwardDeclare('org.gwtproject.animation.client.testing.StubAnimationScheduler$impl');
 
 class StubAnimationHandle extends AnimationHandle {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {StubAnimationScheduler} */
+  /**@type {StubAnimationScheduler}*/
   this.f_$outer_this__org_gwtproject_animation_client_testing_StubAnimationScheduler_StubAnimationHandle;
-  /** @public {AnimationCallback} */
+  /**@type {AnimationCallback}*/
   this.f_callback__org_gwtproject_animation_client_testing_StubAnimationScheduler_StubAnimationHandle_;
  }
- /**
-  * @param {StubAnimationScheduler} $outer_this
-  * @param {AnimationCallback} callback
-  * @return {!StubAnimationHandle}
-  * @public
-  */
- static $create__org_gwtproject_animation_client_testing_StubAnimationScheduler__org_gwtproject_animation_client_AnimationScheduler_AnimationCallback($outer_this, callback) {
+ /** @return {!StubAnimationHandle} */
+ static $create__org_gwtproject_animation_client_testing_StubAnimationScheduler__org_gwtproject_animation_client_AnimationScheduler_AnimationCallback(/** StubAnimationScheduler */ $outer_this, /** AnimationCallback */ callback) {
   StubAnimationHandle.$clinit();
   let $instance = new StubAnimationHandle();
   $instance.$ctor__org_gwtproject_animation_client_testing_StubAnimationScheduler_StubAnimationHandle__org_gwtproject_animation_client_testing_StubAnimationScheduler__org_gwtproject_animation_client_AnimationScheduler_AnimationCallback($outer_this, callback);
   return $instance;
  }
- /**
-  * @param {StubAnimationScheduler} $outer_this
-  * @param {AnimationCallback} callback
-  * @public
-  */
- $ctor__org_gwtproject_animation_client_testing_StubAnimationScheduler_StubAnimationHandle__org_gwtproject_animation_client_testing_StubAnimationScheduler__org_gwtproject_animation_client_AnimationScheduler_AnimationCallback($outer_this, callback) {
+ 
+ $ctor__org_gwtproject_animation_client_testing_StubAnimationScheduler_StubAnimationHandle__org_gwtproject_animation_client_testing_StubAnimationScheduler__org_gwtproject_animation_client_AnimationScheduler_AnimationCallback(/** StubAnimationScheduler */ $outer_this, /** AnimationCallback */ callback) {
   this.f_$outer_this__org_gwtproject_animation_client_testing_StubAnimationScheduler_StubAnimationHandle = $outer_this;
   this.$ctor__org_gwtproject_animation_client_AnimationScheduler_AnimationHandle__();
   this.f_callback__org_gwtproject_animation_client_testing_StubAnimationScheduler_StubAnimationHandle_ = callback;
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_cancel__() {
   this.f_$outer_this__org_gwtproject_animation_client_testing_StubAnimationScheduler_StubAnimationHandle.f_callbacks__org_gwtproject_animation_client_testing_StubAnimationScheduler_.remove(this.f_callback__org_gwtproject_animation_client_testing_StubAnimationScheduler_StubAnimationHandle_);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   StubAnimationHandle.$clinit = () =>{};
   StubAnimationHandle.$loadModules();
   AnimationHandle.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof StubAnimationHandle;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

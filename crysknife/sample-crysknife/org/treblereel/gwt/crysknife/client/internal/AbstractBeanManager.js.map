@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"AbstractBeanManager.impl.java.js",
-"lineCount":95,
-"mappings":"A;;;;;;;;;;;;;;;;;;;MAgBsB,mB;;;;CAAA,W;EAAAA,Q;EAAAA;OAEmD,8EAFnDA,C;;;;;CAIR,yE;EAAAC,iC;EAAAA,mF;;;;;;;CAKE,+B,CAAmBC,G;;;;;;CAIhB,kD,CAAeC,I,EAAeC,Q;EACzCC,8G;;;;;;;;CAGW,mE,CAAeF,I,EAAeC,Q,EAAsCE,U;EAC/ED;GACIA,gKADJA;G;EAGAA,iL;;;;;;;;;;CAImB,8C,CAAiBF,I,EAAkCI,S;EACtEC,0S;;;;;;;;;CAImB,6B,CAAiBL,I;EACpCK,kH;;;;;CA/Bc,2E;EAElBP,mK;;;;;QAFkB,O;EAAAQ,sC;EAAAA,mC;EAAAA;",
+"lineCount":61,
+"mappings":"A;;;;;;;;;;;;;;;;;;;MAgBsB,mB;;CAAA,W;EAAAA,Q;EAAAA;OAEmD,8EAFnDA,C;;;CAIR,yE;EAAAC,iC;EAAAA,mF;;;CAKE,+B,UAAmBC,G;;CAIhB,kD,cAAeC,I,kBAAeC,Q;EACzCC,8G;;;CAGW,mE,cAAeF,I,kBAAeC,Q,kBAAsCE,U;EAC/ED;GACIA,+JADJA;G;EAGAA,gL;;;CAImB,8C,cAAiBF,I,kBAAkCI,S;EACtEC,uS;;;CAImB,6B,cAAiBL,I;EACpCK,iH;;;CA/Bc,2E;EAElBP,kK;;;QAFkB,O;EAAAQ,sC;EAAAA,mC;EAAAA;",
 "sources":["AbstractBeanManager.java"],
 "names":["org.treblereel.gwt.crysknife.client.internal.AbstractBeanManager.<synthetic: ctor_js>","org.treblereel.gwt.crysknife.client.internal.AbstractBeanManager.<init>","ref","type","provider","org.treblereel.gwt.crysknife.client.internal.AbstractBeanManager.register","annotation","qualifier","org.treblereel.gwt.crysknife.client.internal.AbstractBeanManager.lookupBean","org.treblereel.gwt.crysknife.client.internal.AbstractBeanManager.<clinit>"]
 }

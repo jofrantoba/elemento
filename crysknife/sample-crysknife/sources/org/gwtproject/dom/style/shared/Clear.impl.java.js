@@ -18,80 +18,48 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @implements {HasCssName}
   */
 class Clear extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_dom_style_shared_Clear__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_dom_style_shared_Clear__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @abstract
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @override @return {?string} */
  m_getCssName__() {}
- /**
-  * @param {string} name
-  * @return {!Clear}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!Clear} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   Clear.$clinit();
   if ($Equality.$same(Clear.f_namesToValuesMap__org_gwtproject_dom_style_shared_Clear_, null)) {
    Clear.f_namesToValuesMap__org_gwtproject_dom_style_shared_Clear_ = $Enums.createMapFromValues(Clear.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, Clear.f_namesToValuesMap__org_gwtproject_dom_style_shared_Clear_);
  }
- /**
-  * @return {!Array<!Clear>}
-  * @public
-  */
+ /** @return {!Array<!Clear>} */
  static m_values__() {
   Clear.$clinit();
-  return /**@type {!Array<Clear>} */ ($Arrays.$init([Clear.$f_BOTH__org_gwtproject_dom_style_shared_Clear, Clear.$f_LEFT__org_gwtproject_dom_style_shared_Clear, Clear.$f_NONE__org_gwtproject_dom_style_shared_Clear, Clear.$f_RIGHT__org_gwtproject_dom_style_shared_Clear], Clear));
+  return /**@type {!Array<Clear>}*/ ($Arrays.$init([Clear.$f_BOTH__org_gwtproject_dom_style_shared_Clear, Clear.$f_LEFT__org_gwtproject_dom_style_shared_Clear, Clear.$f_NONE__org_gwtproject_dom_style_shared_Clear, Clear.$f_RIGHT__org_gwtproject_dom_style_shared_Clear], Clear));
  }
- /**
-  * @return {!Clear}
-  * @public
-  */
+ /** @return {!Clear} */
  static get f_BOTH__org_gwtproject_dom_style_shared_Clear() {
   return (Clear.$clinit(), Clear.$f_BOTH__org_gwtproject_dom_style_shared_Clear);
  }
- /**
-  * @return {!Clear}
-  * @public
-  */
+ /** @return {!Clear} */
  static get f_LEFT__org_gwtproject_dom_style_shared_Clear() {
   return (Clear.$clinit(), Clear.$f_LEFT__org_gwtproject_dom_style_shared_Clear);
  }
- /**
-  * @return {!Clear}
-  * @public
-  */
+ /** @return {!Clear} */
  static get f_NONE__org_gwtproject_dom_style_shared_Clear() {
   return (Clear.$clinit(), Clear.$f_NONE__org_gwtproject_dom_style_shared_Clear);
  }
- /**
-  * @return {!Clear}
-  * @public
-  */
+ /** @return {!Clear} */
  static get f_RIGHT__org_gwtproject_dom_style_shared_Clear() {
   return (Clear.$clinit(), Clear.$f_RIGHT__org_gwtproject_dom_style_shared_Clear);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Clear.$clinit = () =>{};
   Clear.$loadModules();
@@ -102,17 +70,11 @@ class Clear extends Enum {
   Clear.$f_RIGHT__org_gwtproject_dom_style_shared_Clear = $4.$create__java_lang_String__int($Util.$makeEnumName("RIGHT"), Clear.$ordinal$f_RIGHT__org_gwtproject_dom_style_shared_Clear);
   Clear.f_namesToValuesMap__org_gwtproject_dom_style_shared_Clear_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Clear;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.dom.style.shared.Clear.$1$impl');
@@ -128,23 +90,23 @@ $Util.$setClassMetadataForEnum(Clear, 'org.gwtproject.dom.style.shared.Clear');
 
 HasCssName.$markImplementor(Clear);
 
-/** @private {!Clear} */
+/**@private {!Clear}*/
 Clear.$f_BOTH__org_gwtproject_dom_style_shared_Clear;
-/** @private {!Clear} */
+/**@private {!Clear}*/
 Clear.$f_LEFT__org_gwtproject_dom_style_shared_Clear;
-/** @private {!Clear} */
+/**@private {!Clear}*/
 Clear.$f_NONE__org_gwtproject_dom_style_shared_Clear;
-/** @private {!Clear} */
+/**@private {!Clear}*/
 Clear.$f_RIGHT__org_gwtproject_dom_style_shared_Clear;
-/** @public {Map<?string, !Clear>} */
+/**@type {Map<?string, !Clear>}*/
 Clear.f_namesToValuesMap__org_gwtproject_dom_style_shared_Clear_;
-/** @public {number} @const */
+/**@const {number}*/
 Clear.$ordinal$f_BOTH__org_gwtproject_dom_style_shared_Clear = 0;
-/** @public {number} @const */
+/**@const {number}*/
 Clear.$ordinal$f_LEFT__org_gwtproject_dom_style_shared_Clear = 1;
-/** @public {number} @const */
+/**@const {number}*/
 Clear.$ordinal$f_NONE__org_gwtproject_dom_style_shared_Clear = 2;
-/** @public {number} @const */
+/**@const {number}*/
 Clear.$ordinal$f_RIGHT__org_gwtproject_dom_style_shared_Clear = 3;
 
 exports = Clear; 

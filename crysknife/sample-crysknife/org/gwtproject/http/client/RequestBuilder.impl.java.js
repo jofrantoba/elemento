@@ -21,224 +21,144 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 
 class RequestBuilder extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {RequestCallback} */
+  /**@type {RequestCallback}*/
   this.f_callback__org_gwtproject_http_client_RequestBuilder_;
-  /** @public {Map<?string, ?string>} */
+  /**@type {Map<?string, ?string>}*/
   this.f_headers__org_gwtproject_http_client_RequestBuilder_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_httpMethod__org_gwtproject_http_client_RequestBuilder_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_includeCredentials__org_gwtproject_http_client_RequestBuilder_ = false;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_password__org_gwtproject_http_client_RequestBuilder_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_requestData__org_gwtproject_http_client_RequestBuilder_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_timeoutMillis__org_gwtproject_http_client_RequestBuilder_ = 0;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_url__org_gwtproject_http_client_RequestBuilder_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_user__org_gwtproject_http_client_RequestBuilder_;
  }
- /**
-  * Factory method corresponding to constructor 'RequestBuilder(Method, String)'.
-  * @param {Method} httpMethod
-  * @param {?string} url
-  * @return {!RequestBuilder}
-  * @public
-  */
- static $create__org_gwtproject_http_client_RequestBuilder_Method__java_lang_String(httpMethod, url) {
+ //Factory method corresponding to constructor 'RequestBuilder(Method, String)'.
+ /** @return {!RequestBuilder} */
+ static $create__org_gwtproject_http_client_RequestBuilder_Method__java_lang_String(/** Method */ httpMethod, /** ?string */ url) {
   RequestBuilder.$clinit();
   let $instance = new RequestBuilder();
   $instance.$ctor__org_gwtproject_http_client_RequestBuilder__org_gwtproject_http_client_RequestBuilder_Method__java_lang_String(httpMethod, url);
   return $instance;
  }
- /**
-  * Initialization from constructor 'RequestBuilder(Method, String)'.
-  * @param {Method} httpMethod
-  * @param {?string} url
-  * @public
-  */
- $ctor__org_gwtproject_http_client_RequestBuilder__org_gwtproject_http_client_RequestBuilder_Method__java_lang_String(httpMethod, url) {
+ //Initialization from constructor 'RequestBuilder(Method, String)'.
+ 
+ $ctor__org_gwtproject_http_client_RequestBuilder__org_gwtproject_http_client_RequestBuilder_Method__java_lang_String(/** Method */ httpMethod, /** ?string */ url) {
   this.$ctor__org_gwtproject_http_client_RequestBuilder__java_lang_String__java_lang_String($Equality.$same(httpMethod, null) ? null : httpMethod.toString(), url);
  }
- /**
-  * Factory method corresponding to constructor 'RequestBuilder(String, String)'.
-  * @param {?string} httpMethod
-  * @param {?string} url
-  * @return {!RequestBuilder}
-  * @public
-  */
- static $create__java_lang_String__java_lang_String(httpMethod, url) {
+ //Factory method corresponding to constructor 'RequestBuilder(String, String)'.
+ /** @return {!RequestBuilder} */
+ static $create__java_lang_String__java_lang_String(/** ?string */ httpMethod, /** ?string */ url) {
   RequestBuilder.$clinit();
   let $instance = new RequestBuilder();
   $instance.$ctor__org_gwtproject_http_client_RequestBuilder__java_lang_String__java_lang_String(httpMethod, url);
   return $instance;
  }
- /**
-  * Initialization from constructor 'RequestBuilder(String, String)'.
-  * @param {?string} httpMethod
-  * @param {?string} url
-  * @public
-  */
- $ctor__org_gwtproject_http_client_RequestBuilder__java_lang_String__java_lang_String(httpMethod, url) {
+ //Initialization from constructor 'RequestBuilder(String, String)'.
+ 
+ $ctor__org_gwtproject_http_client_RequestBuilder__java_lang_String__java_lang_String(/** ?string */ httpMethod, /** ?string */ url) {
   this.$ctor__java_lang_Object__();
   StringValidator.m_throwIfEmptyOrNull__java_lang_String__java_lang_String("httpMethod", httpMethod);
   StringValidator.m_throwIfEmptyOrNull__java_lang_String__java_lang_String("url", url);
   this.f_httpMethod__org_gwtproject_http_client_RequestBuilder_ = httpMethod;
   this.f_url__org_gwtproject_http_client_RequestBuilder_ = url;
  }
- /**
-  * @return {RequestCallback}
-  * @public
-  */
+ /** @return {RequestCallback} */
  m_getCallback__() {
   return this.f_callback__org_gwtproject_http_client_RequestBuilder_;
  }
- /**
-  * @param {?string} header
-  * @return {?string}
-  * @public
-  */
- m_getHeader__java_lang_String(header) {
+ /** @return {?string} */
+ m_getHeader__java_lang_String(/** ?string */ header) {
   if ($Equality.$same(this.f_headers__org_gwtproject_http_client_RequestBuilder_, null)) {
    return null;
   }
-  return /**@type {?string} */ ($Casts.$to(this.f_headers__org_gwtproject_http_client_RequestBuilder_.get(header), j_l_String));
+  return /**@type {?string}*/ ($Casts.$to(this.f_headers__org_gwtproject_http_client_RequestBuilder_.get(header), j_l_String));
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getHTTPMethod__() {
   return this.f_httpMethod__org_gwtproject_http_client_RequestBuilder_;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getPassword__() {
   return this.f_password__org_gwtproject_http_client_RequestBuilder_;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getRequestData__() {
   return this.f_requestData__org_gwtproject_http_client_RequestBuilder_;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getTimeoutMillis__() {
   return this.f_timeoutMillis__org_gwtproject_http_client_RequestBuilder_;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getUrl__() {
   return this.f_url__org_gwtproject_http_client_RequestBuilder_;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getUser__() {
   return this.f_user__org_gwtproject_http_client_RequestBuilder_;
  }
- /**
-  * @return {Request}
-  * @public
-  */
+ /** @return {Request} */
  m_send__() {
   StringValidator.m_throwIfNull__java_lang_String__java_lang_Object("callback", this.f_callback__org_gwtproject_http_client_RequestBuilder_);
   return this.m_doSend__java_lang_String__org_gwtproject_http_client_RequestCallback_$p_org_gwtproject_http_client_RequestBuilder(this.f_requestData__org_gwtproject_http_client_RequestBuilder_, this.f_callback__org_gwtproject_http_client_RequestBuilder_);
  }
- /**
-  * @param {?string} requestData
-  * @param {RequestCallback} callback
-  * @return {Request}
-  * @public
-  */
- m_sendRequest__java_lang_String__org_gwtproject_http_client_RequestCallback(requestData, callback) {
+ /** @return {Request} */
+ m_sendRequest__java_lang_String__org_gwtproject_http_client_RequestCallback(/** ?string */ requestData, /** RequestCallback */ callback) {
   StringValidator.m_throwIfNull__java_lang_String__java_lang_Object("callback", callback);
   return this.m_doSend__java_lang_String__org_gwtproject_http_client_RequestCallback_$p_org_gwtproject_http_client_RequestBuilder(requestData, callback);
  }
- /**
-  * @param {RequestCallback} callback
-  * @public
-  */
- m_setCallback__org_gwtproject_http_client_RequestCallback(callback) {
+ 
+ m_setCallback__org_gwtproject_http_client_RequestCallback(/** RequestCallback */ callback) {
   StringValidator.m_throwIfNull__java_lang_String__java_lang_Object("callback", callback);
   this.f_callback__org_gwtproject_http_client_RequestBuilder_ = callback;
  }
- /**
-  * @param {?string} header
-  * @param {?string} value
-  * @public
-  */
- m_setHeader__java_lang_String__java_lang_String(header, value) {
+ 
+ m_setHeader__java_lang_String__java_lang_String(/** ?string */ header, /** ?string */ value) {
   StringValidator.m_throwIfEmptyOrNull__java_lang_String__java_lang_String("header", header);
   StringValidator.m_throwIfEmptyOrNull__java_lang_String__java_lang_String("value", value);
   if ($Equality.$same(this.f_headers__org_gwtproject_http_client_RequestBuilder_, null)) {
-   this.f_headers__org_gwtproject_http_client_RequestBuilder_ = /**@type {!HashMap<?string, ?string>} */ (HashMap.$create__());
+   this.f_headers__org_gwtproject_http_client_RequestBuilder_ = /**@type {!HashMap<?string, ?string>}*/ (HashMap.$create__());
   }
   this.f_headers__org_gwtproject_http_client_RequestBuilder_.put(header, value);
  }
- /**
-  * @param {?string} password
-  * @public
-  */
- m_setPassword__java_lang_String(password) {
+ 
+ m_setPassword__java_lang_String(/** ?string */ password) {
   StringValidator.m_throwIfEmptyOrNull__java_lang_String__java_lang_String("password", password);
   this.f_password__org_gwtproject_http_client_RequestBuilder_ = password;
  }
- /**
-  * @param {?string} requestData
-  * @public
-  */
- m_setRequestData__java_lang_String(requestData) {
+ 
+ m_setRequestData__java_lang_String(/** ?string */ requestData) {
   this.f_requestData__org_gwtproject_http_client_RequestBuilder_ = requestData;
  }
- /**
-  * @param {number} timeoutMillis
-  * @public
-  */
- m_setTimeoutMillis__int(timeoutMillis) {
+ 
+ m_setTimeoutMillis__int(/** number */ timeoutMillis) {
   if (timeoutMillis < 0) {
    throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String("Timeouts cannot be negative"));
   }
   this.f_timeoutMillis__org_gwtproject_http_client_RequestBuilder_ = timeoutMillis;
  }
- /**
-  * @param {?string} user
-  * @public
-  */
- m_setUser__java_lang_String(user) {
+ 
+ m_setUser__java_lang_String(/** ?string */ user) {
   StringValidator.m_throwIfEmptyOrNull__java_lang_String__java_lang_String("user", user);
   this.f_user__org_gwtproject_http_client_RequestBuilder_ = user;
  }
- /**
-  * @param {boolean} includeCredentials
-  * @public
-  */
- m_setIncludeCredentials__boolean(includeCredentials) {
+ 
+ m_setIncludeCredentials__boolean(/** boolean */ includeCredentials) {
   this.f_includeCredentials__org_gwtproject_http_client_RequestBuilder_ = includeCredentials;
  }
- /**
-  * @param {?string} requestData
-  * @param {RequestCallback} callback
-  * @return {Request}
-  * @public
-  */
- m_doSend__java_lang_String__org_gwtproject_http_client_RequestCallback_$p_org_gwtproject_http_client_RequestBuilder(requestData, callback) {
+ /** @return {Request} */
+ m_doSend__java_lang_String__org_gwtproject_http_client_RequestCallback_$p_org_gwtproject_http_client_RequestBuilder(/** ?string */ requestData, /** RequestCallback */ callback) {
   let xmlHttpRequest = new XMLHttpRequest();
   if (!$Equality.$same(this.f_user__org_gwtproject_http_client_RequestBuilder_, null) && !$Equality.$same(this.f_password__org_gwtproject_http_client_RequestBuilder_, null)) {
    xmlHttpRequest.open(this.f_httpMethod__org_gwtproject_http_client_RequestBuilder_, this.f_url__org_gwtproject_http_client_RequestBuilder_, true, this.f_user__org_gwtproject_http_client_RequestBuilder_, this.f_password__org_gwtproject_http_client_RequestBuilder_);
@@ -263,26 +183,23 @@ class RequestBuilder extends j_l_Object {
   } catch (__$exc) {
    __$exc = $Exceptions.toJava(__$exc);
    {
-    let e = /**@type {Throwable} */ (__$exc);
+    let e = /**@type {Throwable}*/ (__$exc);
     throw $Exceptions.toJs(RequestException.$create__java_lang_String(e.m_getMessage__()));
    }
   }
   return request;
  }
- /**
-  * @param {XMLHttpRequest} xmlHttpRequest
-  * @public
-  */
- m_setHeaders__elemental2_dom_XMLHttpRequest_$p_org_gwtproject_http_client_RequestBuilder(xmlHttpRequest) {
+ 
+ m_setHeaders__elemental2_dom_XMLHttpRequest_$p_org_gwtproject_http_client_RequestBuilder(/** XMLHttpRequest */ xmlHttpRequest) {
   if (!$Equality.$same(this.f_headers__org_gwtproject_http_client_RequestBuilder_, null) && this.f_headers__org_gwtproject_http_client_RequestBuilder_.size() > 0) {
    for (let $iterator = this.f_headers__org_gwtproject_http_client_RequestBuilder_.m_entrySet__().m_iterator__(); $iterator.m_hasNext__(); ) {
-    let header = /**@type {Entry<?string, ?string>} */ ($Casts.$to($iterator.m_next__(), Entry));
+    let header = /**@type {Entry<?string, ?string>}*/ ($Casts.$to($iterator.m_next__(), Entry));
     try {
-     xmlHttpRequest.setRequestHeader(/**@type {?string} */ ($Casts.$to(header.m_getKey__(), j_l_String)), /**@type {?string} */ ($Casts.$to(header.m_getValue__(), j_l_String)));
+     xmlHttpRequest.setRequestHeader(/**@type {?string}*/ ($Casts.$to(header.m_getKey__(), j_l_String)), /**@type {?string}*/ ($Casts.$to(header.m_getValue__(), j_l_String)));
     } catch (__$exc) {
      __$exc = $Exceptions.toJava(__$exc);
      {
-      let e = /**@type {Throwable} */ (__$exc);
+      let e = /**@type {Throwable}*/ (__$exc);
       throw $Exceptions.toJs(RequestException.$create__java_lang_String(e.m_getMessage__()));
      }
     }
@@ -291,44 +208,27 @@ class RequestBuilder extends j_l_Object {
    xmlHttpRequest.setRequestHeader("Content-Type", "text/plain; charset=utf-8");
   }
  }
- /**
-  * @return {Method}
-  * @public
-  */
+ /** @return {Method} */
  static get f_DELETE__org_gwtproject_http_client_RequestBuilder() {
   return (RequestBuilder.$clinit(), RequestBuilder.$f_DELETE__org_gwtproject_http_client_RequestBuilder);
  }
- /**
-  * @return {Method}
-  * @public
-  */
+ /** @return {Method} */
  static get f_GET__org_gwtproject_http_client_RequestBuilder() {
   return (RequestBuilder.$clinit(), RequestBuilder.$f_GET__org_gwtproject_http_client_RequestBuilder);
  }
- /**
-  * @return {Method}
-  * @public
-  */
+ /** @return {Method} */
  static get f_HEAD__org_gwtproject_http_client_RequestBuilder() {
   return (RequestBuilder.$clinit(), RequestBuilder.$f_HEAD__org_gwtproject_http_client_RequestBuilder);
  }
- /**
-  * @return {Method}
-  * @public
-  */
+ /** @return {Method} */
  static get f_POST__org_gwtproject_http_client_RequestBuilder() {
   return (RequestBuilder.$clinit(), RequestBuilder.$f_POST__org_gwtproject_http_client_RequestBuilder);
  }
- /**
-  * @return {Method}
-  * @public
-  */
+ /** @return {Method} */
  static get f_PUT__org_gwtproject_http_client_RequestBuilder() {
   return (RequestBuilder.$clinit(), RequestBuilder.$f_PUT__org_gwtproject_http_client_RequestBuilder);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RequestBuilder.$clinit = () =>{};
   RequestBuilder.$loadModules();
@@ -339,17 +239,11 @@ class RequestBuilder extends j_l_Object {
   RequestBuilder.$f_POST__org_gwtproject_http_client_RequestBuilder = Method.$create__java_lang_String("POST");
   RequestBuilder.$f_PUT__org_gwtproject_http_client_RequestBuilder = Method.$create__java_lang_String("PUT");
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof RequestBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('elemental2.dom.XMLHttpRequest.$Overlay$impl');
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
@@ -368,15 +262,15 @@ class RequestBuilder extends j_l_Object {
 }
 $Util.$setClassMetadata(RequestBuilder, 'org.gwtproject.http.client.RequestBuilder');
 
-/** @private {Method} */
+/**@private {Method}*/
 RequestBuilder.$f_DELETE__org_gwtproject_http_client_RequestBuilder;
-/** @private {Method} */
+/**@private {Method}*/
 RequestBuilder.$f_GET__org_gwtproject_http_client_RequestBuilder;
-/** @private {Method} */
+/**@private {Method}*/
 RequestBuilder.$f_HEAD__org_gwtproject_http_client_RequestBuilder;
-/** @private {Method} */
+/**@private {Method}*/
 RequestBuilder.$f_POST__org_gwtproject_http_client_RequestBuilder;
-/** @private {Method} */
+/**@private {Method}*/
 RequestBuilder.$f_PUT__org_gwtproject_http_client_RequestBuilder;
 
 exports = RequestBuilder; 

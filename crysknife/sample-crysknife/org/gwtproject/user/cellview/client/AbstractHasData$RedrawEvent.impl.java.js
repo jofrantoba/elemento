@@ -11,79 +11,50 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {Event<Handler>}
   */
 class RedrawEvent extends Event {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!RedrawEvent}
-  * @public
-  */
+ /** @return {!RedrawEvent} */
  static $create__() {
   RedrawEvent.$clinit();
   let $instance = new RedrawEvent();
   $instance.$ctor__org_gwtproject_user_cellview_client_AbstractHasData_RedrawEvent__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_cellview_client_AbstractHasData_RedrawEvent__() {
   this.$ctor__org_gwtproject_event_shared_Event__();
  }
- /**
-  * @override
-  * @return {Type<Handler>}
-  * @public
-  */
+ /** @override @return {Type<Handler>} */
  m_getAssociatedType__() {
   return RedrawEvent.$f_TYPE__org_gwtproject_user_cellview_client_AbstractHasData_RedrawEvent_;
  }
- /**
-  * @param {Handler} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_user_cellview_client_AbstractHasData_RedrawEvent_Handler(handler) {
+ 
+ m_dispatch__org_gwtproject_user_cellview_client_AbstractHasData_RedrawEvent_Handler(/** Handler */ handler) {
   handler.m_onRedraw__();
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_user_cellview_client_AbstractHasData_RedrawEvent_Handler(/**@type {Handler} */ ($Casts.$to(arg0, Handler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_user_cellview_client_AbstractHasData_RedrawEvent_Handler(/**@type {Handler}*/ ($Casts.$to(arg0, Handler)));
  }
- /**
-  * @return {Type<Handler>}
-  * @public
-  */
+ /** @return {Type<Handler>} */
  static get f_TYPE__org_gwtproject_user_cellview_client_AbstractHasData_RedrawEvent_() {
   return (RedrawEvent.$clinit(), RedrawEvent.$f_TYPE__org_gwtproject_user_cellview_client_AbstractHasData_RedrawEvent_);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RedrawEvent.$clinit = () =>{};
   RedrawEvent.$loadModules();
   Event.$clinit();
-  RedrawEvent.$f_TYPE__org_gwtproject_user_cellview_client_AbstractHasData_RedrawEvent_ = /**@type {!Type<Handler>} */ (Type.$create__());
+  RedrawEvent.$f_TYPE__org_gwtproject_user_cellview_client_AbstractHasData_RedrawEvent_ = /**@type {!Type<Handler>}*/ (Type.$create__());
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof RedrawEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Type = goog.module.get('org.gwtproject.event.shared.Event.Type$impl');
   Handler = goog.module.get('org.gwtproject.user.cellview.client.AbstractHasData.RedrawEvent.Handler$impl');
@@ -93,7 +64,7 @@ class RedrawEvent extends Event {
 }
 $Util.$setClassMetadata(RedrawEvent, 'org.gwtproject.user.cellview.client.AbstractHasData$RedrawEvent');
 
-/** @private {Type<Handler>} */
+/**@private {Type<Handler>}*/
 RedrawEvent.$f_TYPE__org_gwtproject_user_cellview_client_AbstractHasData_RedrawEvent_;
 
 exports = RedrawEvent; 

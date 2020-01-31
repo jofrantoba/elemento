@@ -11,50 +11,29 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.event.dom.client.Change
  * @extends {EventHandler}
  */
 class ChangeHandler {
- /**
-  * @abstract
-  * @param {ChangeEvent} event
-  * @public
-  */
- m_onChange__org_gwtproject_event_dom_client_ChangeEvent(event) {}
- /**
-  * @param {?function(ChangeEvent):void} fn
-  * @return {ChangeHandler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onChange__org_gwtproject_event_dom_client_ChangeEvent(/** ChangeEvent */ event) {}
+ /** @return {ChangeHandler} */
+ static $adapt(/** ?function(ChangeEvent):void */ fn) {
   ChangeHandler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ChangeHandler.$clinit = () =>{};
   ChangeHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  EventHandler.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_ChangeHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  EventHandler.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_ChangeHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_ChangeHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.event.dom.client.ChangeHandler.$LambdaAdaptor$impl');
  }

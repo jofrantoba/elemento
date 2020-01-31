@@ -20,39 +20,26 @@ let Suggestion = goog.forwardDeclare('org.gwtproject.user.client.ui.SuggestOracl
  * @implements {ValueChangeHandler<?string>}
   */
 class $1TextBoxEvents extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {SuggestBox} */
+  /**@type {SuggestBox}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_SuggestBox_1TextBoxEvents;
  }
- /**
-  * @param {SuggestBox} $outer_this
-  * @return {!$1TextBoxEvents}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_SuggestBox($outer_this) {
+ /** @return {!$1TextBoxEvents} */
+ static $create__org_gwtproject_user_client_ui_SuggestBox(/** SuggestBox */ $outer_this) {
   $1TextBoxEvents.$clinit();
   let $instance = new $1TextBoxEvents();
   $instance.$ctor__org_gwtproject_user_client_ui_SuggestBox_1TextBoxEvents__org_gwtproject_user_client_ui_SuggestBox($outer_this);
   return $instance;
  }
- /**
-  * @param {SuggestBox} $outer_this
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_SuggestBox_1TextBoxEvents__org_gwtproject_user_client_ui_SuggestBox($outer_this) {
+ 
+ $ctor__org_gwtproject_user_client_ui_SuggestBox_1TextBoxEvents__org_gwtproject_user_client_ui_SuggestBox(/** SuggestBox */ $outer_this) {
   this.f_$outer_this__org_gwtproject_user_client_ui_SuggestBox_1TextBoxEvents = $outer_this;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {KeyDownEvent} event
-  * @public
-  */
- m_onKeyDown__org_gwtproject_event_dom_client_KeyDownEvent(event) {
+ /** @override */
+ m_onKeyDown__org_gwtproject_event_dom_client_KeyDownEvent(/** KeyDownEvent */ event) {
   let /** Suggestion */ suggestion;
   switch (event.m_getNativeKeyCode__()) {
    case KeyCodes.f_KEY_DOWN__org_gwtproject_event_dom_client_KeyCodes: 
@@ -78,41 +65,25 @@ class $1TextBoxEvents extends j_l_Object {
     break;
   }
  }
- /**
-  * @override
-  * @param {KeyUpEvent} event
-  * @public
-  */
- m_onKeyUp__org_gwtproject_event_dom_client_KeyUpEvent(event) {
+ /** @override */
+ m_onKeyUp__org_gwtproject_event_dom_client_KeyUpEvent(/** KeyUpEvent */ event) {
   this.f_$outer_this__org_gwtproject_user_client_ui_SuggestBox_1TextBoxEvents.m_refreshSuggestions___$p_org_gwtproject_user_client_ui_SuggestBox();
  }
- /**
-  * @override
-  * @param {ValueChangeEvent<?string>} event
-  * @public
-  */
- m_onValueChange__org_gwtproject_event_logical_shared_ValueChangeEvent(event) {
+ /** @override */
+ m_onValueChange__org_gwtproject_event_logical_shared_ValueChangeEvent(/** ValueChangeEvent<?string> */ event) {
   this.f_$outer_this__org_gwtproject_user_client_ui_SuggestBox_1TextBoxEvents.m_delegateEvent__org_gwtproject_user_client_ui_Widget__org_gwtproject_event_shared_Event(this.f_$outer_this__org_gwtproject_user_client_ui_SuggestBox_1TextBoxEvents, event);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $1TextBoxEvents.$clinit = () =>{};
   $1TextBoxEvents.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $1TextBoxEvents;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   KeyCodes = goog.module.get('org.gwtproject.event.dom.client.KeyCodes$impl');

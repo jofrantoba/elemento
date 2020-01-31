@@ -11,240 +11,86 @@ let Justification = goog.forwardDeclare('org.gwtproject.user.client.ui.RichTextA
  * @extends {ExtendedFormatter}
  */
 class Formatter {
- /**
-  * @abstract
-  * @override
-  * @param {?string} url
-  * @public
-  */
- m_createLink__java_lang_String(url) {}
- /**
-  * @abstract
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @override */
+ m_createLink__java_lang_String(/** ?string */ url) {}
+ /** @abstract @override @return {?string} */
  m_getBackColor__() {}
- /**
-  * @abstract
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @override @return {?string} */
  m_getForeColor__() {}
- /**
-  * @abstract
-  * @override
-  * @public
-  */
+ /** @abstract @override */
  m_insertHorizontalRule__() {}
- /**
-  * @abstract
-  * @param {?string} html
-  * @public
-  */
- m_insertHTML__java_lang_String(html) {}
- /**
-  * @abstract
-  * @override
-  * @param {?string} url
-  * @public
-  */
- m_insertImage__java_lang_String(url) {}
- /**
-  * @abstract
-  * @override
-  * @public
-  */
+ /** @abstract */
+ m_insertHTML__java_lang_String(/** ?string */ html) {}
+ /** @abstract @override */
+ m_insertImage__java_lang_String(/** ?string */ url) {}
+ /** @abstract @override */
  m_insertOrderedList__() {}
- /**
-  * @abstract
-  * @override
-  * @public
-  */
+ /** @abstract @override */
  m_insertUnorderedList__() {}
- /**
-  * @abstract
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @override @return {boolean} */
  m_isBold__() {}
- /**
-  * @abstract
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @override @return {boolean} */
  m_isItalic__() {}
- /**
-  * @abstract
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @override @return {boolean} */
  m_isStrikethrough__() {}
- /**
-  * @abstract
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @override @return {boolean} */
  m_isSubscript__() {}
- /**
-  * @abstract
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @override @return {boolean} */
  m_isSuperscript__() {}
- /**
-  * @abstract
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @override @return {boolean} */
  m_isUnderlined__() {}
- /**
-  * @abstract
-  * @override
-  * @public
-  */
+ /** @abstract @override */
  m_leftIndent__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_redo__() {}
- /**
-  * @abstract
-  * @override
-  * @public
-  */
+ /** @abstract @override */
  m_removeFormat__() {}
- /**
-  * @abstract
-  * @override
-  * @public
-  */
+ /** @abstract @override */
  m_removeLink__() {}
- /**
-  * @abstract
-  * @override
-  * @public
-  */
+ /** @abstract @override */
  m_rightIndent__() {}
- /**
-  * @abstract
-  * @override
-  * @public
-  */
+ /** @abstract @override */
  m_selectAll__() {}
- /**
-  * @abstract
-  * @override
-  * @param {?string} color
-  * @public
-  */
- m_setBackColor__java_lang_String(color) {}
- /**
-  * @abstract
-  * @override
-  * @param {?string} name
-  * @public
-  */
- m_setFontName__java_lang_String(name) {}
- /**
-  * @abstract
-  * @override
-  * @param {FontSize} fontSize
-  * @public
-  */
- m_setFontSize__org_gwtproject_user_client_ui_RichTextArea_FontSize(fontSize) {}
- /**
-  * @abstract
-  * @override
-  * @param {?string} color
-  * @public
-  */
- m_setForeColor__java_lang_String(color) {}
- /**
-  * @abstract
-  * @override
-  * @param {Justification} justification
-  * @public
-  */
- m_setJustification__org_gwtproject_user_client_ui_RichTextArea_Justification(justification) {}
- /**
-  * @abstract
-  * @override
-  * @public
-  */
+ /** @abstract @override */
+ m_setBackColor__java_lang_String(/** ?string */ color) {}
+ /** @abstract @override */
+ m_setFontName__java_lang_String(/** ?string */ name) {}
+ /** @abstract @override */
+ m_setFontSize__org_gwtproject_user_client_ui_RichTextArea_FontSize(/** FontSize */ fontSize) {}
+ /** @abstract @override */
+ m_setForeColor__java_lang_String(/** ?string */ color) {}
+ /** @abstract @override */
+ m_setJustification__org_gwtproject_user_client_ui_RichTextArea_Justification(/** Justification */ justification) {}
+ /** @abstract @override */
  m_toggleBold__() {}
- /**
-  * @abstract
-  * @override
-  * @public
-  */
+ /** @abstract @override */
  m_toggleItalic__() {}
- /**
-  * @abstract
-  * @override
-  * @public
-  */
+ /** @abstract @override */
  m_toggleStrikethrough__() {}
- /**
-  * @abstract
-  * @override
-  * @public
-  */
+ /** @abstract @override */
  m_toggleSubscript__() {}
- /**
-  * @abstract
-  * @override
-  * @public
-  */
+ /** @abstract @override */
  m_toggleSuperscript__() {}
- /**
-  * @abstract
-  * @override
-  * @public
-  */
+ /** @abstract @override */
  m_toggleUnderline__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_undo__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Formatter.$clinit = () =>{};
   Formatter.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ExtendedFormatter.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_RichTextArea_Formatter = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ExtendedFormatter.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_RichTextArea_Formatter = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_RichTextArea_Formatter;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

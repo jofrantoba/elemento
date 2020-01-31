@@ -9,66 +9,42 @@ let TextDecoration = goog.forwardDeclare('org.gwtproject.dom.style.shared.TextDe
  * @deprecated
   */
 class Style_TextDecoration extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!Style_TextDecoration}
-  * @public
-  */
+ /** @return {!Style_TextDecoration} */
  static $create__() {
   Style_TextDecoration.$clinit();
   let $instance = new Style_TextDecoration();
   $instance.$ctor__org_gwtproject_dom_client_Style_TextDecoration__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_dom_client_Style_TextDecoration__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {TextDecoration}
-  * @public
-  */
+ /** @return {TextDecoration} */
  static get f_BLINK__org_gwtproject_dom_client_Style_TextDecoration() {
   return (Style_TextDecoration.$clinit(), Style_TextDecoration.$f_BLINK__org_gwtproject_dom_client_Style_TextDecoration);
  }
- /**
-  * @return {TextDecoration}
-  * @public
-  */
+ /** @return {TextDecoration} */
  static get f_LINE_THROUGH__org_gwtproject_dom_client_Style_TextDecoration() {
   return (Style_TextDecoration.$clinit(), Style_TextDecoration.$f_LINE_THROUGH__org_gwtproject_dom_client_Style_TextDecoration);
  }
- /**
-  * @return {TextDecoration}
-  * @public
-  */
+ /** @return {TextDecoration} */
  static get f_NONE__org_gwtproject_dom_client_Style_TextDecoration() {
   return (Style_TextDecoration.$clinit(), Style_TextDecoration.$f_NONE__org_gwtproject_dom_client_Style_TextDecoration);
  }
- /**
-  * @return {TextDecoration}
-  * @public
-  */
+ /** @return {TextDecoration} */
  static get f_OVERLINE__org_gwtproject_dom_client_Style_TextDecoration() {
   return (Style_TextDecoration.$clinit(), Style_TextDecoration.$f_OVERLINE__org_gwtproject_dom_client_Style_TextDecoration);
  }
- /**
-  * @return {TextDecoration}
-  * @public
-  */
+ /** @return {TextDecoration} */
  static get f_UNDERLINE__org_gwtproject_dom_client_Style_TextDecoration() {
   return (Style_TextDecoration.$clinit(), Style_TextDecoration.$f_UNDERLINE__org_gwtproject_dom_client_Style_TextDecoration);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Style_TextDecoration.$clinit = () =>{};
   Style_TextDecoration.$loadModules();
@@ -79,17 +55,11 @@ class Style_TextDecoration extends j_l_Object {
   Style_TextDecoration.$f_OVERLINE__org_gwtproject_dom_client_Style_TextDecoration = TextDecoration.f_OVERLINE__org_gwtproject_dom_style_shared_TextDecoration;
   Style_TextDecoration.$f_UNDERLINE__org_gwtproject_dom_client_Style_TextDecoration = TextDecoration.f_UNDERLINE__org_gwtproject_dom_style_shared_TextDecoration;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Style_TextDecoration;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   TextDecoration = goog.module.get('org.gwtproject.dom.style.shared.TextDecoration$impl');
  }
@@ -97,15 +67,15 @@ class Style_TextDecoration extends j_l_Object {
 }
 $Util.$setClassMetadata(Style_TextDecoration, 'org.gwtproject.dom.client.Style$TextDecoration');
 
-/** @private {TextDecoration} */
+/**@private {TextDecoration}*/
 Style_TextDecoration.$f_BLINK__org_gwtproject_dom_client_Style_TextDecoration;
-/** @private {TextDecoration} */
+/**@private {TextDecoration}*/
 Style_TextDecoration.$f_LINE_THROUGH__org_gwtproject_dom_client_Style_TextDecoration;
-/** @private {TextDecoration} */
+/**@private {TextDecoration}*/
 Style_TextDecoration.$f_NONE__org_gwtproject_dom_client_Style_TextDecoration;
-/** @private {TextDecoration} */
+/**@private {TextDecoration}*/
 Style_TextDecoration.$f_OVERLINE__org_gwtproject_dom_client_Style_TextDecoration;
-/** @private {TextDecoration} */
+/**@private {TextDecoration}*/
 Style_TextDecoration.$f_UNDERLINE__org_gwtproject_dom_client_Style_TextDecoration;
 
 exports = Style_TextDecoration; 

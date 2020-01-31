@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ChangeHandler$$LambdaAdaptor.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;MAoBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;4E;EAAAA,wI;;;;;;CAAA,8H;EAAAC,iC;EAAAA,+E;;;;;;CAAA,uD;;GAAAC,0F;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MAoBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;4E;EAAAA,wI;;;CAAA,8H;EAAAC,iC;EAAAA,+E;;;CAAA,uD;;GAAAC,0F;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["ChangeHandler.java"],
 "names":["org.gwtproject.event.dom.client.ChangeHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.dom.client.ChangeHandler$$LambdaAdaptor.<init>","org.gwtproject.event.dom.client.ChangeHandler$$LambdaAdaptor.onChange","org.gwtproject.event.dom.client.ChangeHandler$$LambdaAdaptor.<clinit>"]
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SimplePanel$1.impl.java.js",
-"lineCount":102,
-"mappings":"A;;;;;;;;;;;;;;;;MAmFkC,E;;;;CAAA,W;EAAAA,Q;EAAAA;kE;EAAAA;OACpB,yDADoBA,S;EAAAA;OAErB,uDAFqBA,C;;;;;;;QAAA,kD;EAAAC,a;EAAAA,yB;EAAAA,qH;EAAAA,iB;;;;;;CAAA,6F;EAAAC,8E;EAAAA,iC;EAAAA,8D;;;;;;;CAIb,W;EACbC,sE;;;;;;;CAGY,Q;EACZC;GACEA,2DADFA;G;EAGAA,uE;EACAA,4L;;;;;;CAGU,U;EACVC;GACEA,6KADFA;G;;;;;;;;CAjB0B,+C;EAAAC,mG;;;;;CAAA,sD;EAC5BJ,6M;EACAA,oE;;;;;QAF4B,O;EAAAK,qB;EAAAA,kB;EAAAA,qB;EAAAA;",
+"lineCount":74,
+"mappings":"A;;;;;;;;;;;;;;;;MAmFkC,E;;CAAA,W;EAAAA,Q;EAAAA;kE;EAAAA;OACpB,yDADoBA,S;EAAAA;OAErB,uDAFqBA,C;;;QAAA,kD;EAAAC,a;EAAAA,yB;EAAAA,qH;EAAAA,iB;;;CAAA,6F;EAAAC,8E;EAAAA,iC;EAAAA,8D;;;CAIb,W;EACbC,sE;;;CAGY,Q;EACZC;GACEA,2DADFA;G;EAGAA,uE;EACAA,4L;;;CAGU,U;EACVC;GACEA,6KADFA;G;;;;CAjB0B,+C;EAAAC,mG;;;CAAA,sD;EAC5BJ,6M;EACAA,oE;;;QAF4B,O;EAAAK,qB;EAAAA,kB;EAAAA,qB;EAAAA;",
 "sources":["SimplePanel.java"],
 "names":["org.gwtproject.user.client.ui.SimplePanel$1.<synthetic: ctor_js>","org.gwtproject.user.client.ui.SimplePanel$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.SimplePanel$1.<init>","org.gwtproject.user.client.ui.SimplePanel$1.hasNext","org.gwtproject.user.client.ui.SimplePanel$1.next","org.gwtproject.user.client.ui.SimplePanel$1.remove","org.gwtproject.user.client.ui.SimplePanel$1.forEachRemaining","org.gwtproject.user.client.ui.SimplePanel$1.<clinit>"]
 }

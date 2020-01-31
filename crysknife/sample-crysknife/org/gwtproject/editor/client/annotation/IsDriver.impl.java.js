@@ -11,44 +11,27 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.editor.client.annotatio
  * @extends {Annotation}
  */
 class IsDriver {
- /**
-  * @param {?function():Class<?>} fn
-  * @return {IsDriver}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {IsDriver} */
+ static $adapt(/** ?function():Class<?> */ fn) {
   IsDriver.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   IsDriver.$clinit = () =>{};
   IsDriver.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_editor_client_annotation_IsDriver = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_editor_client_annotation_IsDriver = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_editor_client_annotation_IsDriver;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.editor.client.annotation.IsDriver.$LambdaAdaptor$impl');
  }

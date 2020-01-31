@@ -16,79 +16,48 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @extends {Enum<TextAlignment>}
   */
 class TextAlignment extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getTextAlignString___$pp_org_gwtproject_user_client_ui() {}
- /**
-  * @param {string} name
-  * @return {!TextAlignment}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!TextAlignment} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   TextAlignment.$clinit();
   if ($Equality.$same(TextAlignment.f_namesToValuesMap__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment_, null)) {
    TextAlignment.f_namesToValuesMap__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment_ = $Enums.createMapFromValues(TextAlignment.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, TextAlignment.f_namesToValuesMap__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment_);
  }
- /**
-  * @return {!Array<!TextAlignment>}
-  * @public
-  */
+ /** @return {!Array<!TextAlignment>} */
  static m_values__() {
   TextAlignment.$clinit();
-  return /**@type {!Array<TextAlignment>} */ ($Arrays.$init([TextAlignment.$f_CENTER__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment, TextAlignment.$f_JUSTIFY__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment, TextAlignment.$f_LEFT__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment, TextAlignment.$f_RIGHT__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment], TextAlignment));
+  return /**@type {!Array<TextAlignment>}*/ ($Arrays.$init([TextAlignment.$f_CENTER__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment, TextAlignment.$f_JUSTIFY__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment, TextAlignment.$f_LEFT__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment, TextAlignment.$f_RIGHT__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment], TextAlignment));
  }
- /**
-  * @return {!TextAlignment}
-  * @public
-  */
+ /** @return {!TextAlignment} */
  static get f_CENTER__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment() {
   return (TextAlignment.$clinit(), TextAlignment.$f_CENTER__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment);
  }
- /**
-  * @return {!TextAlignment}
-  * @public
-  */
+ /** @return {!TextAlignment} */
  static get f_JUSTIFY__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment() {
   return (TextAlignment.$clinit(), TextAlignment.$f_JUSTIFY__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment);
  }
- /**
-  * @return {!TextAlignment}
-  * @public
-  */
+ /** @return {!TextAlignment} */
  static get f_LEFT__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment() {
   return (TextAlignment.$clinit(), TextAlignment.$f_LEFT__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment);
  }
- /**
-  * @return {!TextAlignment}
-  * @public
-  */
+ /** @return {!TextAlignment} */
  static get f_RIGHT__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment() {
   return (TextAlignment.$clinit(), TextAlignment.$f_RIGHT__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TextAlignment.$clinit = () =>{};
   TextAlignment.$loadModules();
@@ -99,17 +68,11 @@ class TextAlignment extends Enum {
   TextAlignment.$f_RIGHT__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment = $4.$create__java_lang_String__int($Util.$makeEnumName("RIGHT"), TextAlignment.$ordinal$f_RIGHT__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment);
   TextAlignment.f_namesToValuesMap__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TextAlignment;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.user.client.ui.ValueBoxBase.TextAlignment.$1$impl');
@@ -123,23 +86,23 @@ class TextAlignment extends Enum {
 }
 $Util.$setClassMetadataForEnum(TextAlignment, 'org.gwtproject.user.client.ui.ValueBoxBase$TextAlignment');
 
-/** @private {!TextAlignment} */
+/**@private {!TextAlignment}*/
 TextAlignment.$f_CENTER__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment;
-/** @private {!TextAlignment} */
+/**@private {!TextAlignment}*/
 TextAlignment.$f_JUSTIFY__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment;
-/** @private {!TextAlignment} */
+/**@private {!TextAlignment}*/
 TextAlignment.$f_LEFT__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment;
-/** @private {!TextAlignment} */
+/**@private {!TextAlignment}*/
 TextAlignment.$f_RIGHT__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment;
-/** @public {Map<?string, !TextAlignment>} */
+/**@type {Map<?string, !TextAlignment>}*/
 TextAlignment.f_namesToValuesMap__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment_;
-/** @public {number} @const */
+/**@const {number}*/
 TextAlignment.$ordinal$f_CENTER__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment = 0;
-/** @public {number} @const */
+/**@const {number}*/
 TextAlignment.$ordinal$f_JUSTIFY__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment = 1;
-/** @public {number} @const */
+/**@const {number}*/
 TextAlignment.$ordinal$f_LEFT__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment = 2;
-/** @public {number} @const */
+/**@const {number}*/
 TextAlignment.$ordinal$f_RIGHT__org_gwtproject_user_client_ui_ValueBoxBase_TextAlignment = 3;
 
 exports = TextAlignment; 

@@ -26,375 +26,215 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {HasAllMediaHandlers}
   */
 class MediaBase extends FocusWidget {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {Object} element
-  * @public
-  */
- $ctor__org_gwtproject_media_client_MediaBase__org_gwtproject_dom_client_MediaElement(element) {
+ 
+ $ctor__org_gwtproject_media_client_MediaBase__org_gwtproject_dom_client_MediaElement(/** Object */ element) {
   this.$ctor__org_gwtproject_user_client_ui_FocusWidget__();
   this.m_setElement__org_gwtproject_dom_client_Element(element);
  }
- /**
-  * @override
-  * @param {CanPlayThroughHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addCanPlayThroughHandler__org_gwtproject_event_dom_client_CanPlayThroughHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addCanPlayThroughHandler__org_gwtproject_event_dom_client_CanPlayThroughHandler(/** CanPlayThroughHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, CanPlayThroughEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {EndedHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addEndedHandler__org_gwtproject_event_dom_client_EndedHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addEndedHandler__org_gwtproject_event_dom_client_EndedHandler(/** EndedHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, EndedEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {ProgressHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addProgressHandler__org_gwtproject_event_dom_client_ProgressHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addProgressHandler__org_gwtproject_event_dom_client_ProgressHandler(/** ProgressHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, ProgressEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {LoadedMetadataHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addLoadedMetadataHandler__org_gwtproject_event_dom_client_LoadedMetadataHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addLoadedMetadataHandler__org_gwtproject_event_dom_client_LoadedMetadataHandler(/** LoadedMetadataHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, LoadedMetadataEvent.m_getType__());
  }
- /**
-  * @param {?string} url
-  * @return {Object}
-  * @public
-  */
- m_addSource__java_lang_String(url) {
+ /** @return {Object} */
+ m_addSource__java_lang_String(/** ?string */ url) {
   let elem = $Overlay.m_createSourceElement__$devirt__org_gwtproject_dom_client_Document($Overlay.m_get__());
   elem.src = url;
   this.m_getElement__().appendChild(elem);
   return elem;
  }
- /**
-  * @param {?string} url
-  * @param {?string} type
-  * @return {Object}
-  * @public
-  */
- m_addSource__java_lang_String__java_lang_String(url, type) {
+ /** @return {Object} */
+ m_addSource__java_lang_String__java_lang_String(/** ?string */ url, /** ?string */ type) {
   let elem = this.m_addSource__java_lang_String(url);
   elem.type = type;
   return elem;
  }
- /**
-  * @param {?string} type
-  * @return {?string}
-  * @public
-  */
- m_canPlayType__java_lang_String(type) {
+ /** @return {?string} */
+ m_canPlayType__java_lang_String(/** ?string */ type) {
   return MediaElement_$Overlay.m_canPlayType__$devirt__org_gwtproject_dom_client_MediaElement__java_lang_String(this.m_getMediaElement__(), type);
  }
- /**
-  * @return {TimeRanges}
-  * @public
-  */
+ /** @return {TimeRanges} */
  m_getBuffered__() {
   return this.m_getMediaElement__().buffered;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getCurrentSrc__() {
   return this.m_getMediaElement__().currentSrc;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getCurrentTime__() {
   return this.m_getMediaElement__().currentTime;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getDefaultPlaybackRate__() {
   return MediaElement_$Overlay.m_getDefaultPlaybackRate__$devirt__org_gwtproject_dom_client_MediaElement(this.m_getMediaElement__());
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getDuration__() {
   return this.m_getMediaElement__().duration;
  }
- /**
-  * @return {MediaError}
-  * @public
-  */
+ /** @return {MediaError} */
  m_getError__() {
   return MediaElement_$Overlay.m_getError__$devirt__org_gwtproject_dom_client_MediaElement(this.m_getMediaElement__());
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getInitialTime__() {
   return MediaElement_$Overlay.m_getInitialTime__$devirt__org_gwtproject_dom_client_MediaElement(this.m_getMediaElement__());
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getMediaElement__() {
-  return /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(this.m_getElement__()), MediaElement_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(this.m_getElement__()), MediaElement_$Overlay));
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getNetworkState__() {
   return this.m_getMediaElement__().networkState;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getPlaybackRate__() {
   return MediaElement_$Overlay.m_getPlaybackRate__$devirt__org_gwtproject_dom_client_MediaElement(this.m_getMediaElement__());
  }
- /**
-  * @return {TimeRanges}
-  * @public
-  */
+ /** @return {TimeRanges} */
  m_getPlayed__() {
   return this.m_getMediaElement__().played;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getPreload__() {
   return this.m_getMediaElement__().preload;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getReadyState__() {
   return this.m_getMediaElement__().readyState;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getModuleName__() {
   return "org.gwtproject.media.MediaTest";
  }
- /**
-  * @return {TimeRanges}
-  * @public
-  */
+ /** @return {TimeRanges} */
  m_getSeekable__() {
   return this.m_getMediaElement__().seekable;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getSrc__() {
   return MediaElement_$Overlay.m_getSrc__$devirt__org_gwtproject_dom_client_MediaElement(this.m_getMediaElement__());
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getStartOffsetTime__() {
   return MediaElement_$Overlay.m_getStartOffsetTime__$devirt__org_gwtproject_dom_client_MediaElement(this.m_getMediaElement__());
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getVolume__() {
   return this.m_getMediaElement__().volume;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_hasControls__() {
   return MediaElement_$Overlay.m_hasControls__$devirt__org_gwtproject_dom_client_MediaElement(this.m_getMediaElement__());
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_hasEnded__() {
   return this.m_getMediaElement__().ended;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isAutoplay__() {
   return MediaElement_$Overlay.m_isAutoplay__$devirt__org_gwtproject_dom_client_MediaElement(this.m_getMediaElement__());
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isLoop__() {
   return MediaElement_$Overlay.m_isLoop__$devirt__org_gwtproject_dom_client_MediaElement(this.m_getMediaElement__());
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isMuted__() {
   return MediaElement_$Overlay.m_isMuted__$devirt__org_gwtproject_dom_client_MediaElement(this.m_getMediaElement__());
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isPaused__() {
   return MediaElement_$Overlay.m_isPaused__$devirt__org_gwtproject_dom_client_MediaElement(this.m_getMediaElement__());
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isSeeking__() {
   return MediaElement_$Overlay.m_isSeeking__$devirt__org_gwtproject_dom_client_MediaElement(this.m_getMediaElement__());
  }
- /**
-  * @public
-  */
+ 
  m_load__() {
   this.m_getMediaElement__().load();
  }
- /**
-  * @public
-  */
+ 
  m_pause__() {
   this.m_getMediaElement__().pause();
  }
- /**
-  * @public
-  */
+ 
  m_play__() {
   this.m_getMediaElement__().play();
  }
- /**
-  * @param {Object} source
-  * @public
-  */
- m_removeSource__org_gwtproject_dom_client_SourceElement(source) {
+ 
+ m_removeSource__org_gwtproject_dom_client_SourceElement(/** Object */ source) {
   this.m_getElement__().removeChild(source);
  }
- /**
-  * @param {boolean} autoplay
-  * @public
-  */
- m_setAutoplay__boolean(autoplay) {
+ 
+ m_setAutoplay__boolean(/** boolean */ autoplay) {
   MediaElement_$Overlay.m_setAutoplay__$devirt__org_gwtproject_dom_client_MediaElement__boolean(this.m_getMediaElement__(), autoplay);
  }
- /**
-  * @param {boolean} controls
-  * @public
-  */
- m_setControls__boolean(controls) {
+ 
+ m_setControls__boolean(/** boolean */ controls) {
   MediaElement_$Overlay.m_setControls__$devirt__org_gwtproject_dom_client_MediaElement__boolean(this.m_getMediaElement__(), controls);
  }
- /**
-  * @param {number} time
-  * @public
-  */
- m_setCurrentTime__double(time) {
+ 
+ m_setCurrentTime__double(/** number */ time) {
   this.m_getMediaElement__().currentTime = time;
  }
- /**
-  * @param {number} rate
-  * @public
-  */
- m_setDefaultPlaybackRate__double(rate) {
+ 
+ m_setDefaultPlaybackRate__double(/** number */ rate) {
   this.m_getMediaElement__().defaultPlaybackRate = rate;
  }
- /**
-  * @param {boolean} loop
-  * @public
-  */
- m_setLoop__boolean(loop) {
+ 
+ m_setLoop__boolean(/** boolean */ loop) {
   MediaElement_$Overlay.m_setLoop__$devirt__org_gwtproject_dom_client_MediaElement__boolean(this.m_getMediaElement__(), loop);
  }
- /**
-  * @param {boolean} muted
-  * @public
-  */
- m_setMuted__boolean(muted) {
+ 
+ m_setMuted__boolean(/** boolean */ muted) {
   this.m_getMediaElement__().muted = muted;
  }
- /**
-  * @param {number} rate
-  * @public
-  */
- m_setPlaybackRate__double(rate) {
+ 
+ m_setPlaybackRate__double(/** number */ rate) {
   this.m_getMediaElement__().playbackRate = rate;
  }
- /**
-  * @param {?string} preload
-  * @public
-  */
- m_setPreload__java_lang_String(preload) {
+ 
+ m_setPreload__java_lang_String(/** ?string */ preload) {
   this.m_getMediaElement__().preload = preload;
  }
- /**
-  * @param {?string} url
-  * @public
-  */
- m_setSrc__java_lang_String(url) {
+ 
+ m_setSrc__java_lang_String(/** ?string */ url) {
   this.m_getMediaElement__().src = url;
  }
- /**
-  * @param {number} volume
-  * @public
-  */
- m_setVolume__double(volume) {
+ 
+ m_setVolume__double(/** number */ volume) {
   this.m_getMediaElement__().volume = volume;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MediaBase.$clinit = () =>{};
   MediaBase.$loadModules();
   FocusWidget.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof MediaBase;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   JavaScriptObject_$Overlay = goog.module.get('org.gwtproject.core.client.JavaScriptObject.$Overlay$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.Document.$Overlay$impl');

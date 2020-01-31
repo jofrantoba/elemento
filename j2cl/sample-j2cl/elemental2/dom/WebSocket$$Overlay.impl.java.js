@@ -9,73 +9,43 @@ let $Overlay = goog.forwardDeclare('elemental2.dom.WebSocket.SendDataUnionType.$
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class WebSocket_$Overlay {
- /**
-  * @param {!WebSocket} $thisArg
-  * @param {ArrayBuffer} data
-  * @public
-  */
- static m_send__$devirt__elemental2_dom_WebSocket__elemental2_core_ArrayBuffer($thisArg, data) {
+ 
+ static m_send__$devirt__elemental2_dom_WebSocket__elemental2_core_ArrayBuffer(/** !WebSocket */ $thisArg, /** ArrayBuffer */ data) {
   WebSocket_$Overlay.$clinit();
-  $thisArg.send(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(data)));
+  $thisArg.send(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(data)));
  }
- /**
-  * @param {!WebSocket} $thisArg
-  * @param {ArrayBufferView} data
-  * @public
-  */
- static m_send__$devirt__elemental2_dom_WebSocket__elemental2_core_ArrayBufferView($thisArg, data) {
+ 
+ static m_send__$devirt__elemental2_dom_WebSocket__elemental2_core_ArrayBufferView(/** !WebSocket */ $thisArg, /** ArrayBufferView */ data) {
   WebSocket_$Overlay.$clinit();
-  $thisArg.send(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(data)));
+  $thisArg.send(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(data)));
  }
- /**
-  * @param {!WebSocket} $thisArg
-  * @param {Blob} data
-  * @public
-  */
- static m_send__$devirt__elemental2_dom_WebSocket__elemental2_dom_Blob($thisArg, data) {
+ 
+ static m_send__$devirt__elemental2_dom_WebSocket__elemental2_dom_Blob(/** !WebSocket */ $thisArg, /** Blob */ data) {
   WebSocket_$Overlay.$clinit();
-  $thisArg.send(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(data)));
+  $thisArg.send(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(data)));
  }
- /**
-  * @param {!WebSocket} $thisArg
-  * @param {?string} data
-  * @public
-  */
- static m_send__$devirt__elemental2_dom_WebSocket__java_lang_String($thisArg, data) {
+ 
+ static m_send__$devirt__elemental2_dom_WebSocket__java_lang_String(/** !WebSocket */ $thisArg, /** ?string */ data) {
   WebSocket_$Overlay.$clinit();
-  $thisArg.send(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(data)));
+  $thisArg.send(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(data)));
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CLOSED__elemental2_dom_WebSocket_$Overlay() {
   return (WebSocket_$Overlay.$clinit(), WebSocket_$Overlay.$f_CLOSED__elemental2_dom_WebSocket_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CLOSING__elemental2_dom_WebSocket_$Overlay() {
   return (WebSocket_$Overlay.$clinit(), WebSocket_$Overlay.$f_CLOSING__elemental2_dom_WebSocket_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CONNECTING__elemental2_dom_WebSocket_$Overlay() {
   return (WebSocket_$Overlay.$clinit(), WebSocket_$Overlay.$f_CONNECTING__elemental2_dom_WebSocket_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_OPEN__elemental2_dom_WebSocket_$Overlay() {
   return (WebSocket_$Overlay.$clinit(), WebSocket_$Overlay.$f_OPEN__elemental2_dom_WebSocket_$Overlay);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   WebSocket_$Overlay.$clinit = () =>{};
   WebSocket_$Overlay.$loadModules();
@@ -84,17 +54,11 @@ class WebSocket_$Overlay {
   WebSocket_$Overlay.$f_CONNECTING__elemental2_dom_WebSocket_$Overlay = WebSocket.CONNECTING;
   WebSocket_$Overlay.$f_OPEN__elemental2_dom_WebSocket_$Overlay = WebSocket.OPEN;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof WebSocket;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }
@@ -102,13 +66,13 @@ class WebSocket_$Overlay {
 }
 $Util.$setClassMetadata(WebSocket_$Overlay, 'WebSocket');
 
-/** @private {number} */
+/**@private {number}*/
 WebSocket_$Overlay.$f_CLOSED__elemental2_dom_WebSocket_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 WebSocket_$Overlay.$f_CLOSING__elemental2_dom_WebSocket_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 WebSocket_$Overlay.$f_CONNECTING__elemental2_dom_WebSocket_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 WebSocket_$Overlay.$f_OPEN__elemental2_dom_WebSocket_$Overlay = 0;
 
 exports = WebSocket_$Overlay; 

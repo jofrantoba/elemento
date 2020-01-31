@@ -4,47 +4,32 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const DOMImplStandard = goog.require('org.gwtproject.user.client.impl.DOMImplStandard$impl');
 
 class DOMImplStandardBase extends DOMImplStandard {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!DOMImplStandardBase}
-  * @public
-  */
+ /** @return {!DOMImplStandardBase} */
  static $create__() {
   DOMImplStandardBase.$clinit();
   let $instance = new DOMImplStandardBase();
   $instance.$ctor__org_gwtproject_user_client_impl_DOMImplStandardBase__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_impl_DOMImplStandardBase__() {
   this.$ctor__org_gwtproject_user_client_impl_DOMImplStandard__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DOMImplStandardBase.$clinit = () =>{};
   DOMImplStandardBase.$loadModules();
   DOMImplStandard.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DOMImplStandardBase;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

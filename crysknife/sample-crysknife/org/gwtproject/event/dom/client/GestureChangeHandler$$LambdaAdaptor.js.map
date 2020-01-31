@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"GestureChangeHandler$$LambdaAdaptor.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;MAoBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;mF;EAAAA,sJ;;;;;;CAAA,4I;EAAAC,iC;EAAAA,sF;;;;;;CAAA,qE;;GAAAC,iG;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MAoBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;mF;EAAAA,sJ;;;CAAA,4I;EAAAC,iC;EAAAA,sF;;;CAAA,qE;;GAAAC,iG;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["GestureChangeHandler.java"],
 "names":["org.gwtproject.event.dom.client.GestureChangeHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.dom.client.GestureChangeHandler$$LambdaAdaptor.<init>","org.gwtproject.event.dom.client.GestureChangeHandler$$LambdaAdaptor.onGestureChange","org.gwtproject.event.dom.client.GestureChangeHandler$$LambdaAdaptor.<clinit>"]
 }

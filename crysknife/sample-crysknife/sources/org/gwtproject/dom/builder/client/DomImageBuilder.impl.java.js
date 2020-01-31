@@ -13,98 +13,57 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {ImageBuilder}
   */
 class DomImageBuilder extends DomElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @return {!DomImageBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ /** @return {!DomImageBuilder} */
+ static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   DomImageBuilder.$clinit();
   let $instance = new DomImageBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_client_DomImageBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_client_DomImageBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_client_DomImageBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_client_DomElementBuilderBase__org_gwtproject_dom_builder_client_DomBuilderImpl__boolean(delegate, true);
  }
- /**
-  * @override
-  * @param {?string} alt
-  * @return {ImageBuilder}
-  * @public
-  */
- m_alt__java_lang_String(alt) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).alt = alt;
+ /** @override @return {ImageBuilder} */
+ m_alt__java_lang_String(/** ?string */ alt) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).alt = alt;
   return this;
  }
- /**
-  * @override
-  * @param {number} height
-  * @return {ImageBuilder}
-  * @public
-  */
- m_height__int(height) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).height = height;
+ /** @override @return {ImageBuilder} */
+ m_height__int(/** number */ height) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).height = height;
   return this;
  }
- /**
-  * @override
-  * @return {ImageBuilder}
-  * @public
-  */
+ /** @override @return {ImageBuilder} */
  m_isMap__() {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).isMap = true;
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).isMap = true;
   return this;
  }
- /**
-  * @override
-  * @param {?string} src
-  * @return {ImageBuilder}
-  * @public
-  */
- m_src__java_lang_String(src) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).src = src;
+ /** @override @return {ImageBuilder} */
+ m_src__java_lang_String(/** ?string */ src) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).src = src;
   return this;
  }
- /**
-  * @override
-  * @param {number} width
-  * @return {ImageBuilder}
-  * @public
-  */
- m_width__int(width) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).width = width;
+ /** @override @return {ImageBuilder} */
+ m_width__int(/** number */ width) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).width = width;
   return this;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomImageBuilder.$clinit = () =>{};
   DomImageBuilder.$loadModules();
   DomElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomImageBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('org.gwtproject.dom.client.ImageElement.$Overlay$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

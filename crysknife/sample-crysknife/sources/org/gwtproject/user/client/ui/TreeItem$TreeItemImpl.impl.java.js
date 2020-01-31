@@ -11,34 +11,24 @@ let TreeItem = goog.forwardDeclare('org.gwtproject.user.client.ui.TreeItem$impl'
 let UIObject = goog.forwardDeclare('org.gwtproject.user.client.ui.UIObject$impl');
 
 class TreeItemImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!TreeItemImpl}
-  * @public
-  */
+ /** @return {!TreeItemImpl} */
  static $create__() {
   TreeItemImpl.$clinit();
   let $instance = new TreeItemImpl();
   $instance.$ctor__org_gwtproject_user_client_ui_TreeItem_TreeItemImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_TreeItem_TreeItemImpl__() {
   this.$ctor__java_lang_Object__();
   this.m_initializeClonableElements___$pp_org_gwtproject_user_client_ui();
  }
- /**
-  * @param {TreeItem} item
-  * @public
-  */
- m_convertToFullNode__org_gwtproject_user_client_ui_TreeItem_$pp_org_gwtproject_user_client_ui(item) {
+ 
+ m_convertToFullNode__org_gwtproject_user_client_ui_TreeItem_$pp_org_gwtproject_user_client_ui(/** TreeItem */ item) {
   if ($Equality.$same(item.f_imageHolder__org_gwtproject_user_client_ui_TreeItem_, null)) {
    let itemTable = DOM.m_clone__org_gwtproject_dom_client_Element__boolean(TreeItem.f_BASE_INTERNAL_ELEM__org_gwtproject_user_client_ui_TreeItem_, true);
    DOM.m_appendChild__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(item.m_getElement__(), itemTable);
@@ -50,9 +40,7 @@ class TreeItemImpl extends j_l_Object {
    item.f_imageHolder__org_gwtproject_user_client_ui_TreeItem_ = tdImg;
   }
  }
- /**
-  * @public
-  */
+ 
  m_initializeClonableElements___$pp_org_gwtproject_user_client_ui() {
   TreeItem.f_BASE_INTERNAL_ELEM__org_gwtproject_user_client_ui_TreeItem_ = DOM.m_createTable__();
   let contentElem = DOM.m_createDiv__();
@@ -73,25 +61,17 @@ class TreeItemImpl extends j_l_Object {
   DOM.m_appendChild__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(TreeItem.f_BASE_BARE_ELEM__org_gwtproject_user_client_ui_TreeItem_, contentElem);
   Roles.m_getTreeitemRole__().m_set__org_gwtproject_dom_client_Element(contentElem);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TreeItemImpl.$clinit = () =>{};
   TreeItemImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TreeItemImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   Roles = goog.module.get('org.gwtproject.aria.client.Roles$impl');

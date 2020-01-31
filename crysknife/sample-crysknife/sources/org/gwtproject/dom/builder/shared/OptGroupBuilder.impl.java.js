@@ -8,48 +8,26 @@ const ElementBuilderBase = goog.require('org.gwtproject.dom.builder.shared.Eleme
  * @extends {ElementBuilderBase<OptGroupBuilder>}
  */
 class OptGroupBuilder {
- /**
-  * @abstract
-  * @return {OptGroupBuilder}
-  * @public
-  */
+ /** @abstract @return {OptGroupBuilder} */
  m_disabled__() {}
- /**
-  * @abstract
-  * @param {?string} label
-  * @return {OptGroupBuilder}
-  * @public
-  */
- m_label__java_lang_String(label) {}
- /**
-  * @public
-  */
+ /** @abstract @return {OptGroupBuilder} */
+ m_label__java_lang_String(/** ?string */ label) {}
+ 
  static $clinit() {
   OptGroupBuilder.$clinit = () =>{};
   OptGroupBuilder.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ElementBuilderBase.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_dom_builder_shared_OptGroupBuilder = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ElementBuilderBase.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_dom_builder_shared_OptGroupBuilder = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_dom_builder_shared_OptGroupBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -10,70 +10,39 @@ let HorizontalAlignmentConstant = goog.forwardDeclare('org.gwtproject.user.clien
  * @interface
  */
 class HasHorizontalAlignment {
- /**
-  * @abstract
-  * @return {HorizontalAlignmentConstant}
-  * @public
-  */
+ /** @abstract @return {HorizontalAlignmentConstant} */
  m_getHorizontalAlignment__() {}
- /**
-  * @abstract
-  * @param {HorizontalAlignmentConstant} align
-  * @public
-  */
- m_setHorizontalAlignment__org_gwtproject_user_client_ui_HasHorizontalAlignment_HorizontalAlignmentConstant(align) {}
- /**
-  * @return {HorizontalAlignmentConstant}
-  * @public
-  */
+ /** @abstract */
+ m_setHorizontalAlignment__org_gwtproject_user_client_ui_HasHorizontalAlignment_HorizontalAlignmentConstant(/** HorizontalAlignmentConstant */ align) {}
+ /** @return {HorizontalAlignmentConstant} */
  static get f_ALIGN_CENTER__org_gwtproject_user_client_ui_HasHorizontalAlignment() {
   return (HasHorizontalAlignment.$clinit(), HasHorizontalAlignment.$f_ALIGN_CENTER__org_gwtproject_user_client_ui_HasHorizontalAlignment);
  }
- /**
-  * @return {HorizontalAlignmentConstant}
-  * @public
-  */
+ /** @return {HorizontalAlignmentConstant} */
  static get f_ALIGN_JUSTIFY__org_gwtproject_user_client_ui_HasHorizontalAlignment() {
   return (HasHorizontalAlignment.$clinit(), HasHorizontalAlignment.$f_ALIGN_JUSTIFY__org_gwtproject_user_client_ui_HasHorizontalAlignment);
  }
- /**
-  * @return {HorizontalAlignmentConstant}
-  * @public
-  */
+ /** @return {HorizontalAlignmentConstant} */
  static get f_ALIGN_LEFT__org_gwtproject_user_client_ui_HasHorizontalAlignment() {
   return (HasHorizontalAlignment.$clinit(), HasHorizontalAlignment.$f_ALIGN_LEFT__org_gwtproject_user_client_ui_HasHorizontalAlignment);
  }
- /**
-  * @return {HorizontalAlignmentConstant}
-  * @public
-  */
+ /** @return {HorizontalAlignmentConstant} */
  static get f_ALIGN_RIGHT__org_gwtproject_user_client_ui_HasHorizontalAlignment() {
   return (HasHorizontalAlignment.$clinit(), HasHorizontalAlignment.$f_ALIGN_RIGHT__org_gwtproject_user_client_ui_HasHorizontalAlignment);
  }
- /**
-  * @return {HorizontalAlignmentConstant}
-  * @public
-  */
+ /** @return {HorizontalAlignmentConstant} */
  static get f_ALIGN_LOCALE_START__org_gwtproject_user_client_ui_HasHorizontalAlignment() {
   return (HasHorizontalAlignment.$clinit(), HasHorizontalAlignment.$f_ALIGN_LOCALE_START__org_gwtproject_user_client_ui_HasHorizontalAlignment);
  }
- /**
-  * @return {HorizontalAlignmentConstant}
-  * @public
-  */
+ /** @return {HorizontalAlignmentConstant} */
  static get f_ALIGN_LOCALE_END__org_gwtproject_user_client_ui_HasHorizontalAlignment() {
   return (HasHorizontalAlignment.$clinit(), HasHorizontalAlignment.$f_ALIGN_LOCALE_END__org_gwtproject_user_client_ui_HasHorizontalAlignment);
  }
- /**
-  * @return {HorizontalAlignmentConstant}
-  * @public
-  */
+ /** @return {HorizontalAlignmentConstant} */
  static get f_ALIGN_DEFAULT__org_gwtproject_user_client_ui_HasHorizontalAlignment() {
   return (HasHorizontalAlignment.$clinit(), HasHorizontalAlignment.$f_ALIGN_DEFAULT__org_gwtproject_user_client_ui_HasHorizontalAlignment);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HasHorizontalAlignment.$clinit = () =>{};
   HasHorizontalAlignment.$loadModules();
@@ -85,27 +54,16 @@ class HasHorizontalAlignment {
   HasHorizontalAlignment.$f_ALIGN_LOCALE_END__org_gwtproject_user_client_ui_HasHorizontalAlignment = LocaleInfo.m_getCurrentLocale__().m_isRTL__() ? HasHorizontalAlignment.$f_ALIGN_LEFT__org_gwtproject_user_client_ui_HasHorizontalAlignment : HasHorizontalAlignment.$f_ALIGN_RIGHT__org_gwtproject_user_client_ui_HasHorizontalAlignment;
   HasHorizontalAlignment.$f_ALIGN_DEFAULT__org_gwtproject_user_client_ui_HasHorizontalAlignment = HasHorizontalAlignment.$f_ALIGN_LOCALE_START__org_gwtproject_user_client_ui_HasHorizontalAlignment;
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_HasHorizontalAlignment = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_HasHorizontalAlignment = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_HasHorizontalAlignment;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   TextAlign = goog.module.get('org.gwtproject.dom.style.shared.TextAlign$impl');
   LocaleInfo = goog.module.get('org.gwtproject.i18n.client.LocaleInfo$impl');
@@ -117,19 +75,19 @@ $Util.$setClassMetadataForInterface(HasHorizontalAlignment, 'org.gwtproject.user
 
 HasHorizontalAlignment.$markImplementor(/** @type {Function} */ (HasHorizontalAlignment));
 
-/** @private {HorizontalAlignmentConstant} */
+/**@private {HorizontalAlignmentConstant}*/
 HasHorizontalAlignment.$f_ALIGN_CENTER__org_gwtproject_user_client_ui_HasHorizontalAlignment;
-/** @private {HorizontalAlignmentConstant} */
+/**@private {HorizontalAlignmentConstant}*/
 HasHorizontalAlignment.$f_ALIGN_JUSTIFY__org_gwtproject_user_client_ui_HasHorizontalAlignment;
-/** @private {HorizontalAlignmentConstant} */
+/**@private {HorizontalAlignmentConstant}*/
 HasHorizontalAlignment.$f_ALIGN_LEFT__org_gwtproject_user_client_ui_HasHorizontalAlignment;
-/** @private {HorizontalAlignmentConstant} */
+/**@private {HorizontalAlignmentConstant}*/
 HasHorizontalAlignment.$f_ALIGN_RIGHT__org_gwtproject_user_client_ui_HasHorizontalAlignment;
-/** @private {HorizontalAlignmentConstant} */
+/**@private {HorizontalAlignmentConstant}*/
 HasHorizontalAlignment.$f_ALIGN_LOCALE_START__org_gwtproject_user_client_ui_HasHorizontalAlignment;
-/** @private {HorizontalAlignmentConstant} */
+/**@private {HorizontalAlignmentConstant}*/
 HasHorizontalAlignment.$f_ALIGN_LOCALE_END__org_gwtproject_user_client_ui_HasHorizontalAlignment;
-/** @private {HorizontalAlignmentConstant} */
+/**@private {HorizontalAlignmentConstant}*/
 HasHorizontalAlignment.$f_ALIGN_DEFAULT__org_gwtproject_user_client_ui_HasHorizontalAlignment;
 
 exports = HasHorizontalAlignment; 

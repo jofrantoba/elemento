@@ -8,67 +8,32 @@ const ElementBuilderBase = goog.require('org.gwtproject.dom.builder.shared.Eleme
  * @extends {ElementBuilderBase<OptionBuilder>}
  */
 class OptionBuilder {
- /**
-  * @abstract
-  * @return {OptionBuilder}
-  * @public
-  */
+ /** @abstract @return {OptionBuilder} */
  m_defaultSelected__() {}
- /**
-  * @abstract
-  * @return {OptionBuilder}
-  * @public
-  */
+ /** @abstract @return {OptionBuilder} */
  m_disabled__() {}
- /**
-  * @abstract
-  * @param {?string} label
-  * @return {OptionBuilder}
-  * @public
-  */
- m_label__java_lang_String(label) {}
- /**
-  * @abstract
-  * @return {OptionBuilder}
-  * @public
-  */
+ /** @abstract @return {OptionBuilder} */
+ m_label__java_lang_String(/** ?string */ label) {}
+ /** @abstract @return {OptionBuilder} */
  m_selected__() {}
- /**
-  * @abstract
-  * @param {?string} value
-  * @return {OptionBuilder}
-  * @public
-  */
- m_value__java_lang_String(value) {}
- /**
-  * @public
-  */
+ /** @abstract @return {OptionBuilder} */
+ m_value__java_lang_String(/** ?string */ value) {}
+ 
  static $clinit() {
   OptionBuilder.$clinit = () =>{};
   OptionBuilder.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ElementBuilderBase.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_dom_builder_shared_OptionBuilder = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ElementBuilderBase.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_dom_builder_shared_OptionBuilder = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_dom_builder_shared_OptionBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

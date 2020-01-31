@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"WebSocket$ConstructorProtocolUnionType$$Overlay.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;MA6BmB,qC;;;;;;QAE+B,sB,CAAUA,C;EAAVC,gD;EAC5CA,wD;;;;;;;QAIsB,2E;EAAAC,gD;EACtBA,kG;;;;;;;QAIa,0E;EAAAC,gD;EACbA,iD;;;;;;;QAIc,2E;EAAAC,gD;EACdA,wD;;;;;;;QAIc,0E;EAAAC,gD;EACdA,0D;;;;;QAvBa,O;EAAAC,wD;EAAAA;",
+"lineCount":39,
+"mappings":"A;;;;;;;;;MA6BmB,qC;;QAE+B,sB,UAAUA,C;EAAVC,gD;EAC5CA,uD;;;QAIsB,2E;EAAAC,gD;EACtBA,iG;;;QAIa,0E;EAAAC,gD;EACbA,iD;;;QAIc,2E;EAAAC,gD;EACdA,uD;;;QAIc,0E;EAAAC,gD;EACdA,yD;;;QAvBa,O;EAAAC,wD;EAAAA;",
 "sources":["WebSocket.java"],
 "names":["o","elemental2.dom.WebSocket$ConstructorProtocolUnionType$$Overlay.of","elemental2.dom.WebSocket$ConstructorProtocolUnionType$$Overlay.asJsArray__$devirt","elemental2.dom.WebSocket$ConstructorProtocolUnionType$$Overlay.asString__$devirt","elemental2.dom.WebSocket$ConstructorProtocolUnionType$$Overlay.isJsArray__$devirt","elemental2.dom.WebSocket$ConstructorProtocolUnionType$$Overlay.isString__$devirt","elemental2.dom.WebSocket$ConstructorProtocolUnionType$$Overlay.<clinit>"]
 }

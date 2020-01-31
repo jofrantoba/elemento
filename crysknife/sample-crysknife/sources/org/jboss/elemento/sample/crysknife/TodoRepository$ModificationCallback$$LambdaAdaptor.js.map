@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TodoRepository$ModificationCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":45,
-"mappings":"A;;;;;;;;;MAwKqB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sG;EAAAA,4L;;;;;;CAAA,kL;EAAAC,iC;EAAAA,yG;;;;;CAAA,W;;GAAAC,oH;GAAAA,Y;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;MAwKqB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sG;EAAAA,4L;;;CAAA,kL;EAAAC,iC;EAAAA,yG;;;CAAA,W;;GAAAC,oH;GAAAA,Y;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["TodoRepository.java"],
 "names":["org.jboss.elemento.sample.crysknife.TodoRepository$ModificationCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.jboss.elemento.sample.crysknife.TodoRepository$ModificationCallback$$LambdaAdaptor.<init>","org.jboss.elemento.sample.crysknife.TodoRepository$ModificationCallback$$LambdaAdaptor.execute","org.jboss.elemento.sample.crysknife.TodoRepository$ModificationCallback$$LambdaAdaptor.<clinit>"]
 }

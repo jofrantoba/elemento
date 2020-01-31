@@ -10,52 +10,35 @@ let InlineBlockStyle = goog.forwardDeclare('org.gwtproject.resources.client.Comm
  * @implements {Bundle}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function():InlineBlockStyle} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function():InlineBlockStyle */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function():InlineBlockStyle} */
+  /**@type {?function():InlineBlockStyle}*/
   this.f_$$fn__org_gwtproject_resources_client_CommonResources_Bundle_$LambdaAdaptor;
   this.$ctor__org_gwtproject_resources_client_CommonResources_Bundle_$LambdaAdaptor__org_gwtproject_resources_client_CommonResources_Bundle_$JsFunction(fn);
  }
- /**
-  * @param {?function():InlineBlockStyle} fn
-  * @public
-  */
- $ctor__org_gwtproject_resources_client_CommonResources_Bundle_$LambdaAdaptor__org_gwtproject_resources_client_CommonResources_Bundle_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_resources_client_CommonResources_Bundle_$LambdaAdaptor__org_gwtproject_resources_client_CommonResources_Bundle_$JsFunction(/** ?function():InlineBlockStyle */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_resources_client_CommonResources_Bundle_$LambdaAdaptor = fn;
  }
- /**
-  * @return {InlineBlockStyle}
-  * @public
-  */
+ /** @return {InlineBlockStyle} */
  m_inlineBlockStyle__() {
   let /** ?function():InlineBlockStyle */ $function;
   return ($function = this.f_$$fn__org_gwtproject_resources_client_CommonResources_Bundle_$LambdaAdaptor, $function());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

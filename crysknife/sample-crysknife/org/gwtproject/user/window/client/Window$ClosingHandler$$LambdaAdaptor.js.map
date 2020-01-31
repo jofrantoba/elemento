@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Window$ClosingHandler$$LambdaAdaptor.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;MA+FmB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sF;EAAAA,4J;;;;;;CAAA,kJ;EAAAC,iC;EAAAA,yF;;;;;;CAAA,wE;;GAAAC,oG;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MA+FmB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sF;EAAAA,4J;;;CAAA,kJ;EAAAC,iC;EAAAA,yF;;;CAAA,wE;;GAAAC,oG;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["Window.java"],
 "names":["org.gwtproject.user.window.client.Window$ClosingHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.window.client.Window$ClosingHandler$$LambdaAdaptor.<init>","org.gwtproject.user.window.client.Window$ClosingHandler$$LambdaAdaptor.onWindowClosing","org.gwtproject.user.window.client.Window$ClosingHandler$$LambdaAdaptor.<clinit>"]
 }

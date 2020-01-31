@@ -13,16 +13,11 @@ let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
 let Window = goog.forwardDeclare('org.gwtproject.user.window.client.Window$impl');
 
 class RootLayoutPanel extends LayoutPanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {RootLayoutPanel}
-  * @public
-  */
+ /** @return {RootLayoutPanel} */
  static m_get__() {
   RootLayoutPanel.$clinit();
   if ($Equality.$same(RootLayoutPanel.f_singleton__org_gwtproject_user_client_ui_RootLayoutPanel_, null)) {
@@ -31,67 +26,43 @@ class RootLayoutPanel extends LayoutPanel {
   }
   return RootLayoutPanel.f_singleton__org_gwtproject_user_client_ui_RootLayoutPanel_;
  }
- /**
-  * @return {!RootLayoutPanel}
-  * @public
-  */
+ /** @return {!RootLayoutPanel} */
  static $create__() {
   let $instance = new RootLayoutPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_RootLayoutPanel__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_RootLayoutPanel__() {
   this.$ctor__org_gwtproject_user_client_ui_LayoutPanel__();
   Window.m_addResizeHandler__org_gwtproject_event_logical_shared_ResizeHandler($1.$create__org_gwtproject_user_client_ui_RootLayoutPanel(this));
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onLoad__() {
   this.m_getLayout___$pp_org_gwtproject_user_client_ui().m_onAttach__();
   this.m_getLayout___$pp_org_gwtproject_user_client_ui().m_fillParent__();
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RootLayoutPanel.$clinit = () =>{};
   RootLayoutPanel.$loadModules();
   LayoutPanel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof RootLayoutPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -103,7 +74,7 @@ class RootLayoutPanel extends LayoutPanel {
 }
 $Util.$setClassMetadata(RootLayoutPanel, 'org.gwtproject.user.client.ui.RootLayoutPanel');
 
-/** @public {RootLayoutPanel} */
+/**@type {RootLayoutPanel}*/
 RootLayoutPanel.f_singleton__org_gwtproject_user_client_ui_RootLayoutPanel_;
 
 exports = RootLayoutPanel; 

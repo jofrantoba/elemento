@@ -13,71 +13,46 @@ let Style = goog.forwardDeclare('org.gwtproject.user.cellview.client.CellList.St
  * @implements {Resources}
   */
 class CellListResourcesImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {CellBrowser_Resources} */
+  /**@type {CellBrowser_Resources}*/
   this.f_delegate__org_gwtproject_user_cellview_client_CellBrowser_CellListResourcesImpl_;
-  /** @public {CellListStyleImpl} */
+  /**@type {CellListStyleImpl}*/
   this.f_style__org_gwtproject_user_cellview_client_CellBrowser_CellListResourcesImpl_;
  }
- /**
-  * @param {CellBrowser_Resources} delegate
-  * @return {!CellListResourcesImpl}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_CellBrowser_Resources(delegate) {
+ /** @return {!CellListResourcesImpl} */
+ static $create__org_gwtproject_user_cellview_client_CellBrowser_Resources(/** CellBrowser_Resources */ delegate) {
   CellListResourcesImpl.$clinit();
   let $instance = new CellListResourcesImpl();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellBrowser_CellListResourcesImpl__org_gwtproject_user_cellview_client_CellBrowser_Resources(delegate);
   return $instance;
  }
- /**
-  * @param {CellBrowser_Resources} delegate
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_CellBrowser_CellListResourcesImpl__org_gwtproject_user_cellview_client_CellBrowser_Resources(delegate) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_CellBrowser_CellListResourcesImpl__org_gwtproject_user_cellview_client_CellBrowser_Resources(/** CellBrowser_Resources */ delegate) {
   this.$ctor__java_lang_Object__();
   this.f_delegate__org_gwtproject_user_cellview_client_CellBrowser_CellListResourcesImpl_ = delegate;
   this.f_style__org_gwtproject_user_cellview_client_CellBrowser_CellListResourcesImpl_ = CellListStyleImpl.$create__org_gwtproject_user_cellview_client_CellBrowser_Style(delegate.m_cellBrowserStyle__());
  }
- /**
-  * @override
-  * @return {ImageResource}
-  * @public
-  */
+ /** @override @return {ImageResource} */
  m_cellListSelectedBackground__() {
   return this.f_delegate__org_gwtproject_user_cellview_client_CellBrowser_CellListResourcesImpl_.m_cellBrowserSelectedBackground__();
  }
- /**
-  * @override
-  * @return {Style}
-  * @public
-  */
+ /** @override @return {Style} */
  m_cellListStyle__() {
   return this.f_style__org_gwtproject_user_cellview_client_CellBrowser_CellListResourcesImpl_;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CellListResourcesImpl.$clinit = () =>{};
   CellListResourcesImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CellListResourcesImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   CellListStyleImpl = goog.module.get('org.gwtproject.user.cellview.client.CellBrowser.CellListStyleImpl$impl');
  }

@@ -12,45 +12,29 @@ let HandlerRegistration = goog.forwardDeclare('org.gwtproject.event.shared.Handl
  * @extends {AbstractEditorDelegate<T, E>}
   */
 class SimpleBeanEditorDelegate extends AbstractEditorDelegate {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_editor_client_impl_SimpleBeanEditorDelegate__() {
   this.$ctor__org_gwtproject_editor_client_impl_AbstractEditorDelegate__();
  }
- /**
-  * @override
-  * @return {HandlerRegistration}
-  * @public
-  */
+ /** @override @return {HandlerRegistration} */
  m_subscribe__() {
   return null;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SimpleBeanEditorDelegate.$clinit = () =>{};
   SimpleBeanEditorDelegate.$loadModules();
   AbstractEditorDelegate.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SimpleBeanEditorDelegate;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

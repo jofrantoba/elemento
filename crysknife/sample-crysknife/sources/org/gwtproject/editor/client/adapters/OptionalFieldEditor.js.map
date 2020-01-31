@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"OptionalFieldEditor.impl.java.js",
-"lineCount":133,
-"mappings":"A;;;;;;;;;;;;;;;;;MAmCa,mB;;;;CAAA,W;EAAAA,Q;EAAAA;OAee,mEAffA,C;EAAAA;OAgBD,0EAhBCA,C;EAAAA;OAiBK,uEAjBLA,C;;;;;;;;QAW8D,yC,CAAKC,S;EAALC,8B;EACvEA,kI;;;;;;;;QAYQ,4C,CAAsBD,S;EAAtBE,8B;EAAAA,0C;EAAAA,2H;EAAAA,iB;;;;;;CAAA,qG,CAAsBF,S;EAAtBG,iC;EACRA,yF;;;;;;;CAQO,4B;EACPC,oF;;;;;;CAGU,S;EACVC,yR;;;;;;;;CAIY,qD,CAAiBL,S;EAC7BM,U;;;;;;;CAGO,Y;EACPC,uF;;;;;;;CAGU,4C,CAA2BC,K;;;;;;CAE3B,0D,CAA8BC,Q;;;;;;CAE9B,0E,CAAiCC,K;EAC3CC,iF;;;;;;;CAGU,4B,CAAWC,K;EACrBC;GACEA,qMADFA;G;EAGAA,wF;EACAA;GACEA,8NADFA;G;;;;;QA/DS,O;EAAAC,sC;EAAAA,mC;EAAAA;",
+"lineCount":84,
+"mappings":"A;;;;;;;;;;;;;;;;;MAmCa,mB;;CAAA,W;EAAAA,Q;EAAAA;OAee,mEAffA,C;EAAAA;OAgBD,0EAhBCA,C;EAAAA;OAiBK,uEAjBLA,C;;;QAW8D,yC,YAAKC,S;EAALC,8B;EACvEA,iI;;;QAYQ,4C,UAAsBD,S;EAAtBE,8B;EAAAA,0C;EAAAA,2H;EAAAA,iB;;;CAAA,qG,UAAsBF,S;EAAtBG,iC;EACRA,yF;;;CAQO,4B;EACPC,oF;;;CAGU,S;EACVC,yR;;;CAIY,qD,UAAiBL,S;EAC7BM,U;;;CAGO,Y;EACPC,uF;;;CAGU,4C,uBAA2BC,K;;CAE3B,0D,0BAA8BC,Q;;CAE9B,0E,0BAAiCC,K;EAC3CC,iF;;;CAGU,4B,UAAWC,K;EACrBC;GACEA,qMADFA;G;EAGAA,wF;EACAA;GACEA,8NADFA;G;;;QA/DS,O;EAAAC,sC;EAAAA,mC;EAAAA;",
 "sources":["OptionalFieldEditor.java"],
 "names":["org.gwtproject.editor.client.adapters.OptionalFieldEditor.<synthetic: ctor_js>","subEditor","org.gwtproject.editor.client.adapters.OptionalFieldEditor.of","org.gwtproject.editor.client.adapters.OptionalFieldEditor.<synthetic: ctor_create>","org.gwtproject.editor.client.adapters.OptionalFieldEditor.<init>","org.gwtproject.editor.client.adapters.OptionalFieldEditor.createEditorForTraversal","org.gwtproject.editor.client.adapters.OptionalFieldEditor.flush","org.gwtproject.editor.client.adapters.OptionalFieldEditor.getPathElement","org.gwtproject.editor.client.adapters.OptionalFieldEditor.getValue","paths","delegate","chain","org.gwtproject.editor.client.adapters.OptionalFieldEditor.setEditorChain","value","org.gwtproject.editor.client.adapters.OptionalFieldEditor.setValue","org.gwtproject.editor.client.adapters.OptionalFieldEditor.<clinit>"]
 }

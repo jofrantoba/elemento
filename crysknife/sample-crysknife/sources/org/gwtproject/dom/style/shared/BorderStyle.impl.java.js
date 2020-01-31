@@ -19,87 +19,52 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @implements {HasCssName}
   */
 class BorderStyle extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_dom_style_shared_BorderStyle__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_dom_style_shared_BorderStyle__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @abstract
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @override @return {?string} */
  m_getCssName__() {}
- /**
-  * @param {string} name
-  * @return {!BorderStyle}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!BorderStyle} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   BorderStyle.$clinit();
   if ($Equality.$same(BorderStyle.f_namesToValuesMap__org_gwtproject_dom_style_shared_BorderStyle_, null)) {
    BorderStyle.f_namesToValuesMap__org_gwtproject_dom_style_shared_BorderStyle_ = $Enums.createMapFromValues(BorderStyle.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, BorderStyle.f_namesToValuesMap__org_gwtproject_dom_style_shared_BorderStyle_);
  }
- /**
-  * @return {!Array<!BorderStyle>}
-  * @public
-  */
+ /** @return {!Array<!BorderStyle>} */
  static m_values__() {
   BorderStyle.$clinit();
-  return /**@type {!Array<BorderStyle>} */ ($Arrays.$init([BorderStyle.$f_NONE__org_gwtproject_dom_style_shared_BorderStyle, BorderStyle.$f_DOTTED__org_gwtproject_dom_style_shared_BorderStyle, BorderStyle.$f_DASHED__org_gwtproject_dom_style_shared_BorderStyle, BorderStyle.$f_HIDDEN__org_gwtproject_dom_style_shared_BorderStyle, BorderStyle.$f_SOLID__org_gwtproject_dom_style_shared_BorderStyle], BorderStyle));
+  return /**@type {!Array<BorderStyle>}*/ ($Arrays.$init([BorderStyle.$f_NONE__org_gwtproject_dom_style_shared_BorderStyle, BorderStyle.$f_DOTTED__org_gwtproject_dom_style_shared_BorderStyle, BorderStyle.$f_DASHED__org_gwtproject_dom_style_shared_BorderStyle, BorderStyle.$f_HIDDEN__org_gwtproject_dom_style_shared_BorderStyle, BorderStyle.$f_SOLID__org_gwtproject_dom_style_shared_BorderStyle], BorderStyle));
  }
- /**
-  * @return {!BorderStyle}
-  * @public
-  */
+ /** @return {!BorderStyle} */
  static get f_NONE__org_gwtproject_dom_style_shared_BorderStyle() {
   return (BorderStyle.$clinit(), BorderStyle.$f_NONE__org_gwtproject_dom_style_shared_BorderStyle);
  }
- /**
-  * @return {!BorderStyle}
-  * @public
-  */
+ /** @return {!BorderStyle} */
  static get f_DOTTED__org_gwtproject_dom_style_shared_BorderStyle() {
   return (BorderStyle.$clinit(), BorderStyle.$f_DOTTED__org_gwtproject_dom_style_shared_BorderStyle);
  }
- /**
-  * @return {!BorderStyle}
-  * @public
-  */
+ /** @return {!BorderStyle} */
  static get f_DASHED__org_gwtproject_dom_style_shared_BorderStyle() {
   return (BorderStyle.$clinit(), BorderStyle.$f_DASHED__org_gwtproject_dom_style_shared_BorderStyle);
  }
- /**
-  * @return {!BorderStyle}
-  * @public
-  */
+ /** @return {!BorderStyle} */
  static get f_HIDDEN__org_gwtproject_dom_style_shared_BorderStyle() {
   return (BorderStyle.$clinit(), BorderStyle.$f_HIDDEN__org_gwtproject_dom_style_shared_BorderStyle);
  }
- /**
-  * @return {!BorderStyle}
-  * @public
-  */
+ /** @return {!BorderStyle} */
  static get f_SOLID__org_gwtproject_dom_style_shared_BorderStyle() {
   return (BorderStyle.$clinit(), BorderStyle.$f_SOLID__org_gwtproject_dom_style_shared_BorderStyle);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   BorderStyle.$clinit = () =>{};
   BorderStyle.$loadModules();
@@ -111,17 +76,11 @@ class BorderStyle extends Enum {
   BorderStyle.$f_SOLID__org_gwtproject_dom_style_shared_BorderStyle = $5.$create__java_lang_String__int($Util.$makeEnumName("SOLID"), BorderStyle.$ordinal$f_SOLID__org_gwtproject_dom_style_shared_BorderStyle);
   BorderStyle.f_namesToValuesMap__org_gwtproject_dom_style_shared_BorderStyle_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof BorderStyle;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.dom.style.shared.BorderStyle.$1$impl');
@@ -138,27 +97,27 @@ $Util.$setClassMetadataForEnum(BorderStyle, 'org.gwtproject.dom.style.shared.Bor
 
 HasCssName.$markImplementor(BorderStyle);
 
-/** @private {!BorderStyle} */
+/**@private {!BorderStyle}*/
 BorderStyle.$f_NONE__org_gwtproject_dom_style_shared_BorderStyle;
-/** @private {!BorderStyle} */
+/**@private {!BorderStyle}*/
 BorderStyle.$f_DOTTED__org_gwtproject_dom_style_shared_BorderStyle;
-/** @private {!BorderStyle} */
+/**@private {!BorderStyle}*/
 BorderStyle.$f_DASHED__org_gwtproject_dom_style_shared_BorderStyle;
-/** @private {!BorderStyle} */
+/**@private {!BorderStyle}*/
 BorderStyle.$f_HIDDEN__org_gwtproject_dom_style_shared_BorderStyle;
-/** @private {!BorderStyle} */
+/**@private {!BorderStyle}*/
 BorderStyle.$f_SOLID__org_gwtproject_dom_style_shared_BorderStyle;
-/** @public {Map<?string, !BorderStyle>} */
+/**@type {Map<?string, !BorderStyle>}*/
 BorderStyle.f_namesToValuesMap__org_gwtproject_dom_style_shared_BorderStyle_;
-/** @public {number} @const */
+/**@const {number}*/
 BorderStyle.$ordinal$f_NONE__org_gwtproject_dom_style_shared_BorderStyle = 0;
-/** @public {number} @const */
+/**@const {number}*/
 BorderStyle.$ordinal$f_DOTTED__org_gwtproject_dom_style_shared_BorderStyle = 1;
-/** @public {number} @const */
+/**@const {number}*/
 BorderStyle.$ordinal$f_DASHED__org_gwtproject_dom_style_shared_BorderStyle = 2;
-/** @public {number} @const */
+/**@const {number}*/
 BorderStyle.$ordinal$f_HIDDEN__org_gwtproject_dom_style_shared_BorderStyle = 3;
-/** @public {number} @const */
+/**@const {number}*/
 BorderStyle.$ordinal$f_SOLID__org_gwtproject_dom_style_shared_BorderStyle = 4;
 
 exports = BorderStyle; 

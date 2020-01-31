@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"BidiFormatterBase$Format.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;MA0EqB,M;;;;CAAA,W;EAAAA,Q;;;;;;QA+CT,S;EAAAC,6B;EAAAA,yE;EAAAA,iB;;;;;CAAA,4D;EAAAC,iC;;;;;;QA/BR,qE;EAAAC,qG;;;;;;QAyBA,qE;EAAAA,qG;;;;;QAzCiB,O;EAAAC,yB;EAAAA,sB;EAAAA,qB;EAgBjBA,0K;EAyBAA,0K;;;;;;;;;;;;;;;;;;;;AAxCA;OAG2B,2DAH3B,U;AAKA;OAGyB,0DAHzB,uB;AAKA;OAGyB,0DAHzB,uB;AAXiB;0E;AAqBjB;OAGyB,0DAHzB,uB;AAKA;OAG2B,4DAH3B,W;AAKA;OAGyB,0DAHzB,uB;AAKA;OAGyB,0DAHzB,uB;AApCiB;;",
+"lineCount":68,
+"mappings":"A;;;;;;;MA0EqB,M;;CAAA,W;EAAAA,Q;;;QA+CT,S;EAAAC,6B;EAAAA,yE;EAAAA,iB;;;CAAA,4D;EAAAC,iC;;;QA/BR,qE;EAAAC,qG;;;QAyBA,qE;EAAAA,qG;;;QAzCiB,O;EAAAC,yB;EAAAA,sB;EAAAA,qB;EAgBjBA,0K;EAyBAA,0K;;;;;;;;;;;;;;AAxCA;OAG2B,2DAH3B,U;AAKA;OAGyB,0DAHzB,uB;AAKA;OAGyB,0DAHzB,uB;AAXiB;0E;AAqBjB;OAGyB,0DAHzB,uB;AAKA;OAG2B,4DAH3B,W;AAKA;OAGyB,0DAHzB,uB;AAKA;OAGyB,0DAHzB,uB;AApCiB;;",
 "sources":["BidiFormatterBase.java"],
 "names":["org.gwtproject.i18n.shared.BidiFormatterBase$Format.<synthetic: ctor_js>","org.gwtproject.i18n.shared.BidiFormatterBase$Format.<synthetic: ctor_create>","org.gwtproject.i18n.shared.BidiFormatterBase$Format.<init>","org.gwtproject.i18n.shared.BidiFormatterBase$Format.<synthetic: getter>","org.gwtproject.i18n.shared.BidiFormatterBase$Format.<clinit>"]
 }

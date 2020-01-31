@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ClippedImageImpl$DraggableTemplate$$LambdaAdaptor.impl.java.js",
-"lineCount":50,
-"mappings":"A;;;;;;;;;;;;;MAyCY,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;oG;EAAAA,wL;;;;;;CAAA,8K;EAAAC,iC;EAAAA,uG;;;;;;;;CAAA,yF;EAAAC,6D;EAAAA,8I;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;;;MAyCY,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;oG;EAAAA,wL;;;CAAA,8K;EAAAC,iC;EAAAA,uG;;;CAAA,yF;EAAAC,6D;EAAAA,8I;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["ClippedImageImpl.java"],
 "names":["org.gwtproject.user.client.ui.impl.ClippedImageImpl$DraggableTemplate$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.client.ui.impl.ClippedImageImpl$DraggableTemplate$$LambdaAdaptor.<init>","org.gwtproject.user.client.ui.impl.ClippedImageImpl$DraggableTemplate$$LambdaAdaptor.image","org.gwtproject.user.client.ui.impl.ClippedImageImpl$DraggableTemplate$$LambdaAdaptor.<clinit>"]
 }

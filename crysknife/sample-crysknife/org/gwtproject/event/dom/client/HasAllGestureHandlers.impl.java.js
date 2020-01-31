@@ -12,37 +12,24 @@ const HasGestureStartHandlers = goog.require('org.gwtproject.event.dom.client.Ha
  * @extends {HasGestureEndHandlers}
  */
 class HasAllGestureHandlers {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HasAllGestureHandlers.$clinit = () =>{};
   HasAllGestureHandlers.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasGestureStartHandlers.$markImplementor(classConstructor);
-  HasGestureChangeHandlers.$markImplementor(classConstructor);
-  HasGestureEndHandlers.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_HasAllGestureHandlers = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasGestureStartHandlers.$markImplementor(ctor);
+  HasGestureChangeHandlers.$markImplementor(ctor);
+  HasGestureEndHandlers.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_HasAllGestureHandlers = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_HasAllGestureHandlers;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

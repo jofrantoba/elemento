@@ -8,46 +8,25 @@ let KeyboardSelectionPolicy = goog.forwardDeclare('org.gwtproject.user.cellview.
  * @interface
  */
 class HasKeyboardSelectionPolicy {
- /**
-  * @abstract
-  * @return {KeyboardSelectionPolicy}
-  * @public
-  */
+ /** @abstract @return {KeyboardSelectionPolicy} */
  m_getKeyboardSelectionPolicy__() {}
- /**
-  * @abstract
-  * @param {KeyboardSelectionPolicy} policy
-  * @public
-  */
- m_setKeyboardSelectionPolicy__org_gwtproject_user_cellview_client_HasKeyboardSelectionPolicy_KeyboardSelectionPolicy(policy) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_setKeyboardSelectionPolicy__org_gwtproject_user_cellview_client_HasKeyboardSelectionPolicy_KeyboardSelectionPolicy(/** KeyboardSelectionPolicy */ policy) {}
+ 
  static $clinit() {
   HasKeyboardSelectionPolicy.$clinit = () =>{};
   HasKeyboardSelectionPolicy.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_cellview_client_HasKeyboardSelectionPolicy = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_cellview_client_HasKeyboardSelectionPolicy = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_cellview_client_HasKeyboardSelectionPolicy;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

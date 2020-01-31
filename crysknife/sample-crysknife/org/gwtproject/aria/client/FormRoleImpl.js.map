@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"FormRoleImpl.impl.java.js",
-"lineCount":72,
-"mappings":"A;;;;;;;;;;;;;;MAsBM,Y;;;;CAAA,W;EAAAA,Q;;;;;;;QAEJ,yB,CAAoBC,Q;EAApBC,uB;EAAAA,mC;EAAAA,qF;EAAAA,iB;;;;;;CAAA,gE,CAAoBD,Q;EAClBE,4E;;;;;;;;CAIY,yD,CAA6BC,O;EACzCC,4G;;;;;;;CAIU,4D,CAAgCD,O;EAC1CE,wG;;;;;;;;CAIU,mG,CAA6BF,O,EAAuBG,K;EAC9DC,4M;;;;;QAlBE,O;EAAAC,+B;EAAAA,4B;EAAAA;",
+"lineCount":47,
+"mappings":"A;;;;;;;;;;;;;;MAsBM,Y;;CAAA,W;EAAAA,Q;;;QAEJ,yB,gBAAoBC,Q;EAApBC,uB;EAAAA,mC;EAAAA,qF;EAAAA,iB;;;CAAA,gE,gBAAoBD,Q;EAClBE,4E;;;CAIY,yD,eAA6BC,O;EACzCC,4G;;;CAIU,4D,eAAgCD,O;EAC1CE,wG;;;CAIU,mG,eAA6BF,O,uBAAuBG,K;EAC9DC,2M;;;QAlBE,O;EAAAC,+B;EAAAA,4B;EAAAA;",
 "sources":["FormRoleImpl.java"],
 "names":["org.gwtproject.aria.client.FormRoleImpl.<synthetic: ctor_js>","roleName","org.gwtproject.aria.client.FormRoleImpl.<synthetic: ctor_create>","org.gwtproject.aria.client.FormRoleImpl.<init>","element","org.gwtproject.aria.client.FormRoleImpl.getAriaExpandedState","org.gwtproject.aria.client.FormRoleImpl.removeAriaExpandedState","value","org.gwtproject.aria.client.FormRoleImpl.setAriaExpandedState","org.gwtproject.aria.client.FormRoleImpl.<clinit>"]
 }

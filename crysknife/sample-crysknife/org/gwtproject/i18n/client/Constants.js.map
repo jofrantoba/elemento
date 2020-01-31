@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Constants.impl.java.js",
-"lineCount":16,
-"mappings":"A;;;;;;;;;MA0OiB,S;;;;QAAA,O;EAAAA,4B;EAAAA;",
+"lineCount":14,
+"mappings":"A;;;;;;;;;MA0OiB,S;;QAAA,O;EAAAA,4B;EAAAA;",
 "sources":["Constants.java"],
 "names":["org.gwtproject.i18n.client.Constants.<clinit>"]
 }

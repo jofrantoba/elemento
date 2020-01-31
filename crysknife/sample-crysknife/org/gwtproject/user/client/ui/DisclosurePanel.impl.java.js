@@ -43,37 +43,30 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {HasCloseHandlers<DisclosurePanel>}
   */
 class DisclosurePanel extends Composite {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {VerticalPanel} */
+  /**@type {VerticalPanel}*/
   this.f_mainPanel__org_gwtproject_user_client_ui_DisclosurePanel_;
-  /** @public {SimplePanel} */
+  /**@type {SimplePanel}*/
   this.f_contentWrapper__org_gwtproject_user_client_ui_DisclosurePanel_;
-  /** @public {ClickableHeader} */
+  /**@type {ClickableHeader}*/
   this.f_header__org_gwtproject_user_client_ui_DisclosurePanel_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isAnimationEnabled__org_gwtproject_user_client_ui_DisclosurePanel_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isOpen__org_gwtproject_user_client_ui_DisclosurePanel_ = false;
  }
- /**
-  * Factory method corresponding to constructor 'DisclosurePanel()'.
-  * @return {!DisclosurePanel}
-  * @public
-  */
+ //Factory method corresponding to constructor 'DisclosurePanel()'.
+ /** @return {!DisclosurePanel} */
  static $create__() {
   DisclosurePanel.$clinit();
   let $instance = new DisclosurePanel();
   $instance.$ctor__org_gwtproject_user_client_ui_DisclosurePanel__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'DisclosurePanel()'.
-  * @public
-  */
+ //Initialization from constructor 'DisclosurePanel()'.
+ 
  $ctor__org_gwtproject_user_client_ui_DisclosurePanel__() {
   this.$ctor__org_gwtproject_user_client_ui_Composite__();
   this.$init___$p_org_gwtproject_user_client_ui_DisclosurePanel();
@@ -85,176 +78,100 @@ class DisclosurePanel extends Composite {
   this.m_setStyleName__java_lang_String(DisclosurePanel.f_STYLENAME_DEFAULT__org_gwtproject_user_client_ui_DisclosurePanel_);
   this.m_setContentDisplay__boolean_$p_org_gwtproject_user_client_ui_DisclosurePanel(false);
  }
- /**
-  * Factory method corresponding to constructor 'DisclosurePanel(ImageResource, ImageResource, String)'.
-  * @param {ImageResource} openImage
-  * @param {ImageResource} closedImage
-  * @param {?string} headerText
-  * @return {!DisclosurePanel}
-  * @public
-  */
- static $create__org_gwtproject_resources_client_ImageResource__org_gwtproject_resources_client_ImageResource__java_lang_String(openImage, closedImage, headerText) {
+ //Factory method corresponding to constructor 'DisclosurePanel(ImageResource, ImageResource, String)'.
+ /** @return {!DisclosurePanel} */
+ static $create__org_gwtproject_resources_client_ImageResource__org_gwtproject_resources_client_ImageResource__java_lang_String(/** ImageResource */ openImage, /** ImageResource */ closedImage, /** ?string */ headerText) {
   DisclosurePanel.$clinit();
   let $instance = new DisclosurePanel();
   $instance.$ctor__org_gwtproject_user_client_ui_DisclosurePanel__org_gwtproject_resources_client_ImageResource__org_gwtproject_resources_client_ImageResource__java_lang_String(openImage, closedImage, headerText);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DisclosurePanel(ImageResource, ImageResource, String)'.
-  * @param {ImageResource} openImage
-  * @param {ImageResource} closedImage
-  * @param {?string} headerText
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_DisclosurePanel__org_gwtproject_resources_client_ImageResource__org_gwtproject_resources_client_ImageResource__java_lang_String(openImage, closedImage, headerText) {
+ //Initialization from constructor 'DisclosurePanel(ImageResource, ImageResource, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_DisclosurePanel__org_gwtproject_resources_client_ImageResource__org_gwtproject_resources_client_ImageResource__java_lang_String(/** ImageResource */ openImage, /** ImageResource */ closedImage, /** ?string */ headerText) {
   this.$ctor__org_gwtproject_user_client_ui_DisclosurePanel__();
   this.m_setHeader__org_gwtproject_user_client_ui_Widget(DefaultHeader.$create__org_gwtproject_user_client_ui_DisclosurePanel__org_gwtproject_resources_client_ImageResource__org_gwtproject_resources_client_ImageResource__java_lang_String(this, openImage, closedImage, headerText));
  }
- /**
-  * Factory method corresponding to constructor 'DisclosurePanel(String)'.
-  * @param {?string} headerText
-  * @return {!DisclosurePanel}
-  * @public
-  */
- static $create__java_lang_String(headerText) {
+ //Factory method corresponding to constructor 'DisclosurePanel(String)'.
+ /** @return {!DisclosurePanel} */
+ static $create__java_lang_String(/** ?string */ headerText) {
   DisclosurePanel.$clinit();
   let $instance = new DisclosurePanel();
   $instance.$ctor__org_gwtproject_user_client_ui_DisclosurePanel__java_lang_String(headerText);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DisclosurePanel(String)'.
-  * @param {?string} headerText
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_DisclosurePanel__java_lang_String(headerText) {
+ //Initialization from constructor 'DisclosurePanel(String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_DisclosurePanel__java_lang_String(/** ?string */ headerText) {
   this.$ctor__org_gwtproject_user_client_ui_DisclosurePanel__org_gwtproject_resources_client_ImageResource__org_gwtproject_resources_client_ImageResource__java_lang_String(DisclosurePanel.f_DEFAULT_IMAGES__org_gwtproject_user_client_ui_DisclosurePanel_.m_disclosurePanelOpen__(), DisclosurePanel.f_DEFAULT_IMAGES__org_gwtproject_user_client_ui_DisclosurePanel_.m_disclosurePanelClosed__(), headerText);
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override */
+ m_add__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   if ($Equality.$same(this.m_getContent__(), null)) {
    this.m_setContent__org_gwtproject_user_client_ui_Widget(w);
   } else {
    throw $Exceptions.toJs(IllegalStateException.$create__java_lang_String("A DisclosurePanel can only contain two Widgets."));
   }
  }
- /**
-  * @override
-  * @param {IsWidget} w
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_IsWidget(w) {
+ /** @override */
+ m_add__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ w) {
   this.m_add__org_gwtproject_user_client_ui_Widget(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(w));
  }
- /**
-  * @override
-  * @param {CloseHandler<DisclosurePanel>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addCloseHandler__org_gwtproject_event_logical_shared_CloseHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addCloseHandler__org_gwtproject_event_logical_shared_CloseHandler(/** CloseHandler<DisclosurePanel> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, CloseEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {OpenHandler<DisclosurePanel>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addOpenHandler__org_gwtproject_event_logical_shared_OpenHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addOpenHandler__org_gwtproject_event_logical_shared_OpenHandler(/** OpenHandler<DisclosurePanel> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, OpenEvent.m_getType__());
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_clear__() {
   this.m_setContent__org_gwtproject_user_client_ui_Widget(null);
  }
- /**
-  * @return {Widget}
-  * @public
-  */
+ /** @return {Widget} */
  m_getContent__() {
   return this.f_contentWrapper__org_gwtproject_user_client_ui_DisclosurePanel_.m_getWidget__();
  }
- /**
-  * @return {Widget}
-  * @public
-  */
+ /** @return {Widget} */
  m_getHeader__() {
   return this.f_header__org_gwtproject_user_client_ui_DisclosurePanel_.m_getWidget__();
  }
- /**
-  * @return {HasText}
-  * @public
-  */
+ /** @return {HasText} */
  m_getHeaderTextAccessor__() {
   let widget = this.f_header__org_gwtproject_user_client_ui_DisclosurePanel_.m_getWidget__();
-  return HasText.$isInstance(widget) ? /**@type {HasText} */ ($Casts.$to(widget, HasText)) : null;
+  return HasText.$isInstance(widget) ? /**@type {HasText}*/ ($Casts.$to(widget, HasText)) : null;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isAnimationEnabled__() {
   return this.f_isAnimationEnabled__org_gwtproject_user_client_ui_DisclosurePanel_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isOpen__() {
   return this.f_isOpen__org_gwtproject_user_client_ui_DisclosurePanel_;
  }
- /**
-  * @override
-  * @return {Iterator<Widget>}
-  * @public
-  */
+ /** @override @return {Iterator<Widget>} */
  m_iterator__() {
-  return WidgetIterators.m_createWidgetIterator__org_gwtproject_user_client_ui_HasWidgets__arrayOf_org_gwtproject_user_client_ui_Widget(this, /**@type {!Array<Widget>} */ ($Arrays.$init([this.m_getContent__()], Widget)));
+  return WidgetIterators.m_createWidgetIterator__org_gwtproject_user_client_ui_HasWidgets__arrayOf_org_gwtproject_user_client_ui_Widget(this, /**@type {!Array<Widget>}*/ ($Arrays.$init([this.m_getContent__()], Widget)));
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   if ($Equality.$same(w, this.m_getContent__())) {
    this.m_setContent__org_gwtproject_user_client_ui_Widget(null);
    return true;
   }
   return false;
  }
- /**
-  * @override
-  * @param {IsWidget} w
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_IsWidget(w) {
+ /** @override @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ w) {
   return this.m_remove__org_gwtproject_user_client_ui_Widget(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(w));
  }
- /**
-  * @override
-  * @param {boolean} enable
-  * @public
-  */
- m_setAnimationEnabled__boolean(enable) {
+ /** @override */
+ m_setAnimationEnabled__boolean(/** boolean */ enable) {
   this.f_isAnimationEnabled__org_gwtproject_user_client_ui_DisclosurePanel_ = enable;
  }
- /**
-  * @param {Widget} content
-  * @public
-  */
- m_setContent__org_gwtproject_user_client_ui_Widget(content) {
+ 
+ m_setContent__org_gwtproject_user_client_ui_Widget(/** Widget */ content) {
   let currentContent = this.m_getContent__();
   if (!$Equality.$same(currentContent, null)) {
    this.f_contentWrapper__org_gwtproject_user_client_ui_DisclosurePanel_.m_setWidget__org_gwtproject_user_client_ui_Widget(null);
@@ -266,36 +183,24 @@ class DisclosurePanel extends Composite {
    this.m_setContentDisplay__boolean_$p_org_gwtproject_user_client_ui_DisclosurePanel(false);
   }
  }
- /**
-  * @param {Widget} headerWidget
-  * @public
-  */
- m_setHeader__org_gwtproject_user_client_ui_Widget(headerWidget) {
+ 
+ m_setHeader__org_gwtproject_user_client_ui_Widget(/** Widget */ headerWidget) {
   this.f_header__org_gwtproject_user_client_ui_DisclosurePanel_.m_setWidget__org_gwtproject_user_client_ui_Widget(headerWidget);
  }
- /**
-  * @param {boolean} isOpen
-  * @public
-  */
- m_setOpen__boolean(isOpen) {
+ 
+ m_setOpen__boolean(/** boolean */ isOpen) {
   if (this.f_isOpen__org_gwtproject_user_client_ui_DisclosurePanel_ != isOpen) {
    this.f_isOpen__org_gwtproject_user_client_ui_DisclosurePanel_ = isOpen;
    this.m_setContentDisplay__boolean_$p_org_gwtproject_user_client_ui_DisclosurePanel(true);
    this.m_fireEvent___$p_org_gwtproject_user_client_ui_DisclosurePanel();
   }
  }
- /**
-  * @override
-  * @param {?string} baseID
-  * @public
-  */
- m_onEnsureDebugId__java_lang_String(baseID) {
+ /** @override */
+ m_onEnsureDebugId__java_lang_String(/** ?string */ baseID) {
   super.m_onEnsureDebugId__java_lang_String(baseID);
   this.f_header__org_gwtproject_user_client_ui_DisclosurePanel_.m_ensureDebugId__java_lang_String(j_l_String.m_valueOf__java_lang_Object(baseID) + "-header");
  }
- /**
-  * @public
-  */
+ 
  m_fireEvent___$p_org_gwtproject_user_client_ui_DisclosurePanel() {
   if (this.f_isOpen__org_gwtproject_user_client_ui_DisclosurePanel_) {
    OpenEvent.m_fire__org_gwtproject_event_logical_shared_HasOpenHandlers__java_lang_Object(this, this);
@@ -303,11 +208,8 @@ class DisclosurePanel extends Composite {
    CloseEvent.m_fire__org_gwtproject_event_logical_shared_HasCloseHandlers__java_lang_Object(this, this);
   }
  }
- /**
-  * @param {boolean} animate
-  * @public
-  */
- m_setContentDisplay__boolean_$p_org_gwtproject_user_client_ui_DisclosurePanel(animate) {
+ 
+ m_setContentDisplay__boolean_$p_org_gwtproject_user_client_ui_DisclosurePanel(/** boolean */ animate) {
   if (this.f_isOpen__org_gwtproject_user_client_ui_DisclosurePanel_) {
    this.m_removeStyleDependentName__java_lang_String(DisclosurePanel.f_STYLENAME_SUFFIX_CLOSED__org_gwtproject_user_client_ui_DisclosurePanel_);
    this.m_addStyleDependentName__java_lang_String(DisclosurePanel.f_STYLENAME_SUFFIX_OPEN__org_gwtproject_user_client_ui_DisclosurePanel_);
@@ -322,27 +224,17 @@ class DisclosurePanel extends Composite {
    DisclosurePanel.f_contentAnimation__org_gwtproject_user_client_ui_DisclosurePanel_.m_setOpen__org_gwtproject_user_client_ui_DisclosurePanel__boolean(this, animate && this.f_isAnimationEnabled__org_gwtproject_user_client_ui_DisclosurePanel_);
   }
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_DisclosurePanel() {
   this.f_mainPanel__org_gwtproject_user_client_ui_DisclosurePanel_ = VerticalPanel.$create__();
   this.f_contentWrapper__org_gwtproject_user_client_ui_DisclosurePanel_ = SimplePanel.$create__();
@@ -350,9 +242,7 @@ class DisclosurePanel extends Composite {
   this.f_isAnimationEnabled__org_gwtproject_user_client_ui_DisclosurePanel_ = false;
   this.f_isOpen__org_gwtproject_user_client_ui_DisclosurePanel_ = false;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DisclosurePanel.$clinit = () =>{};
   DisclosurePanel.$loadModules();
@@ -360,17 +250,11 @@ class DisclosurePanel extends Composite {
   Iterable.$clinit();
   DisclosurePanel.f_DEFAULT_IMAGES__org_gwtproject_user_client_ui_DisclosurePanel_ = DisclosurePanel__DefaultImagesImpl.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DisclosurePanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');
   Iterable = goog.module.get('java.lang.Iterable$impl');
@@ -401,21 +285,21 @@ HasAnimation.$markImplementor(DisclosurePanel);
 HasOpenHandlers.$markImplementor(DisclosurePanel);
 HasCloseHandlers.$markImplementor(DisclosurePanel);
 
-/** @public {DefaultImages} */
+/**@type {DefaultImages}*/
 DisclosurePanel.f_DEFAULT_IMAGES__org_gwtproject_user_client_ui_DisclosurePanel_;
-/** @public {number} @const */
+/**@const {number}*/
 DisclosurePanel.f_ANIMATION_DURATION__org_gwtproject_user_client_ui_DisclosurePanel_ = 350;
-/** @public {?string} @const */
+/**@const {?string}*/
 DisclosurePanel.f_STYLENAME_DEFAULT__org_gwtproject_user_client_ui_DisclosurePanel_ = "gwt-DisclosurePanel";
-/** @public {?string} @const */
+/**@const {?string}*/
 DisclosurePanel.f_STYLENAME_SUFFIX_OPEN__org_gwtproject_user_client_ui_DisclosurePanel_ = "open";
-/** @public {?string} @const */
+/**@const {?string}*/
 DisclosurePanel.f_STYLENAME_SUFFIX_CLOSED__org_gwtproject_user_client_ui_DisclosurePanel_ = "closed";
-/** @public {?string} @const */
+/**@const {?string}*/
 DisclosurePanel.f_STYLENAME_HEADER__org_gwtproject_user_client_ui_DisclosurePanel_ = "header";
-/** @public {?string} @const */
+/**@const {?string}*/
 DisclosurePanel.f_STYLENAME_CONTENT__org_gwtproject_user_client_ui_DisclosurePanel_ = "content";
-/** @public {ContentAnimation} */
+/**@type {ContentAnimation}*/
 DisclosurePanel.f_contentAnimation__org_gwtproject_user_client_ui_DisclosurePanel_;
 
 exports = DisclosurePanel; 

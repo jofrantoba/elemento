@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ImageResource$ImageOptions.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;MAyFa,Y;;;;;;CACT,W;;;;;;CAQA,U;;;;;;CAOA,mB;;;;;;CAOA,e;;;;;;CASA,S;;;;QAhCS,O;EAAAA,+B;EAAAA;",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;MAyFa,Y;;CACT,W;;CAQA,U;;CAOA,mB;;CAOA,e;;CASA,S;;QAhCS,O;EAAAA,+B;EAAAA;",
 "sources":["ImageResource.java"],
 "names":["org.gwtproject.resources.client.ImageResource$ImageOptions.<clinit>"]
 }

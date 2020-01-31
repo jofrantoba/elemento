@@ -12,58 +12,34 @@ let CommonResources__BundleImpl = goog.forwardDeclare('org.gwtproject.resources.
  * @extends {ClientBundle}
  */
 class Bundle {
- /**
-  * @abstract
-  * @return {InlineBlockStyle}
-  * @public
-  */
+ /** @abstract @return {InlineBlockStyle} */
  m_inlineBlockStyle__() {}
- /**
-  * @param {?function():InlineBlockStyle} fn
-  * @return {Bundle}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {Bundle} */
+ static $adapt(/** ?function():InlineBlockStyle */ fn) {
   Bundle.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @return {Bundle}
-  * @public
-  */
+ /** @return {Bundle} */
  static get f_INSTANCE__org_gwtproject_resources_client_CommonResources_Bundle() {
   return (Bundle.$clinit(), Bundle.$f_INSTANCE__org_gwtproject_resources_client_CommonResources_Bundle);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Bundle.$clinit = () =>{};
   Bundle.$loadModules();
   Bundle.$f_INSTANCE__org_gwtproject_resources_client_CommonResources_Bundle = CommonResources__BundleImpl.$create__();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ClientBundle.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_resources_client_CommonResources_Bundle = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ClientBundle.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_resources_client_CommonResources_Bundle = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_resources_client_CommonResources_Bundle;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.resources.client.CommonResources.Bundle.$LambdaAdaptor$impl');
   CommonResources__BundleImpl = goog.module.get('org.gwtproject.resources.client.CommonResources_BundleImpl$impl');
@@ -74,7 +50,7 @@ $Util.$setClassMetadataForInterface(Bundle, 'org.gwtproject.resources.client.Com
 
 Bundle.$markImplementor(/** @type {Function} */ (Bundle));
 
-/** @private {Bundle} */
+/**@private {Bundle}*/
 Bundle.$f_INSTANCE__org_gwtproject_resources_client_CommonResources_Bundle;
 
 exports = Bundle; 

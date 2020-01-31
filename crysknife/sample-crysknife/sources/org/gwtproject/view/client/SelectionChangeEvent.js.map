@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SelectionChangeEvent.impl.java.js",
-"lineCount":114,
-"mappings":"A;;;;;;;;;;;;;;MAwBa,oB;;;;CAAA,W;EAAAA,Q;;;;;;QAyCQ,mF,CAAiCC,M;EAAjCC,+B;EACjBA;GACEA,IAAqBC,KAArBD,oCADFA;GAEEA,6DAFFA;G;;;;;;QAW0B,W;EAAAE,+B;EAC1BA;GACEA,gIADFA;G;EAGAA,qF;;;;;;QAMF,S;EAAAC,+B;EAAAA,2C;EAAAA,qE;EAAAA,iB;;;;;CAAA,wD;EAAAC,kD;;;;;;;CAI2B,qB;EACzBC,qF;;;;;;CAIa,mE,CAAsCC,O;EACnDC,mF;;;;;;;;CAzES,4B;EAAAA,4H;;;;;QAAA,O;EAAAC,uC;EAAAA,oC;EAAAA,gB;;;;;;;;;;;;;;;;;;;;;;;AAAA;qBAiCkB,wDAjClB;",
+"lineCount":82,
+"mappings":"A;;;;;;;;;;;;;;MAwBa,oB;;CAAA,W;EAAAA,Q;;;QAyCQ,mF,oCAAiCC,M;EAAjCC,+B;EACjBA;GACEA,IAAqBC,KAArBD,oCADFA;GAEEA,6DAFFA;G;;;QAW0B,W;EAAAE,+B;EAC1BA;GACEA,+HADFA;G;EAGAA,qF;;;QAMF,S;EAAAC,+B;EAAAA,2C;EAAAA,qE;EAAAA,iB;;;CAAA,wD;EAAAC,kD;;;CAI2B,qB;EACzBC,qF;;;CAIa,mE,gBAAsCC,O;EACnDC,mF;;;;CAzES,4B;EAAAA,2H;;;QAAA,O;EAAAC,uC;EAAAA,oC;EAAAA,gB;;;;;;;;;;;;;;;;;AAAA;qBAiCkB,wDAjClB;",
 "sources":["SelectionChangeEvent.java"],
 "names":["org.gwtproject.view.client.SelectionChangeEvent.<synthetic: ctor_js>","source","org.gwtproject.view.client.SelectionChangeEvent.fire","event","org.gwtproject.view.client.SelectionChangeEvent.getType","org.gwtproject.view.client.SelectionChangeEvent.<synthetic: ctor_create>","org.gwtproject.view.client.SelectionChangeEvent.<init>","org.gwtproject.view.client.SelectionChangeEvent.getAssociatedType","handler","org.gwtproject.view.client.SelectionChangeEvent.dispatch","org.gwtproject.view.client.SelectionChangeEvent.<clinit>"]
 }

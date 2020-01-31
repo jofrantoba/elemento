@@ -11,45 +11,27 @@ let Point = goog.forwardDeclare('org.gwtproject.touch.client.Point$impl');
  * @implements {Momentum}
   */
 class DefaultMomentum extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!DefaultMomentum}
-  * @public
-  */
+ /** @return {!DefaultMomentum} */
  static $create__() {
   DefaultMomentum.$clinit();
   let $instance = new DefaultMomentum();
   $instance.$ctor__org_gwtproject_touch_client_DefaultMomentum__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_touch_client_DefaultMomentum__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {Point} initialPosition
-  * @param {Point} initialVelocity
-  * @return {State}
-  * @public
-  */
- m_createState__org_gwtproject_touch_client_Point__org_gwtproject_touch_client_Point(initialPosition, initialVelocity) {
+ /** @override @return {State} */
+ m_createState__org_gwtproject_touch_client_Point__org_gwtproject_touch_client_Point(/** Point */ initialPosition, /** Point */ initialVelocity) {
   return State.$create__org_gwtproject_touch_client_Point__org_gwtproject_touch_client_Point(initialPosition, initialVelocity);
  }
- /**
-  * @override
-  * @param {State} state
-  * @return {boolean}
-  * @public
-  */
- m_updateState__org_gwtproject_touch_client_Momentum_State(state) {
+ /** @override @return {boolean} */
+ m_updateState__org_gwtproject_touch_client_Momentum_State(/** State */ state) {
   let ellapsedMillis = state.m_getElapsedMillis__();
   let totalEllapsedMillis = state.m_getCumulativeElapsedMillis__();
   let initialVelocity = state.m_getInitialVelocity__();
@@ -69,15 +51,8 @@ class DefaultMomentum extends j_l_Object {
   }
   return true;
  }
- /**
-  * @param {number} initialVelocity
-  * @param {number} decelFactor
-  * @param {number} oldVelocity
-  * @param {number} minDecel
-  * @return {number}
-  * @public
-  */
- m_calcNewVelocity__double__double__double__double_$p_org_gwtproject_touch_client_DefaultMomentum(initialVelocity, decelFactor, oldVelocity, minDecel) {
+ /** @return {number} */
+ m_calcNewVelocity__double__double__double__double_$p_org_gwtproject_touch_client_DefaultMomentum(/** number */ initialVelocity, /** number */ decelFactor, /** number */ oldVelocity, /** number */ minDecel) {
   let newVelocity = initialVelocity * decelFactor;
   if (oldVelocity >= 0) {
    let maxVelocityX = Math.max(0.0, oldVelocity - minDecel);
@@ -88,25 +63,17 @@ class DefaultMomentum extends j_l_Object {
   }
   return newVelocity;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DefaultMomentum.$clinit = () =>{};
   DefaultMomentum.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DefaultMomentum;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   State = goog.module.get('org.gwtproject.touch.client.Momentum.State$impl');
   Point = goog.module.get('org.gwtproject.touch.client.Point$impl');
@@ -117,11 +84,11 @@ $Util.$setClassMetadata(DefaultMomentum, 'org.gwtproject.touch.client.DefaultMom
 
 Momentum.$markImplementor(DefaultMomentum);
 
-/** @public {number} @const */
+/**@const {number}*/
 DefaultMomentum.f_DECELERATION_FACTOR__org_gwtproject_touch_client_DefaultMomentum_ = 0.9993;
-/** @public {number} @const */
+/**@const {number}*/
 DefaultMomentum.f_DECELERATION_STOP_VELOCITY__org_gwtproject_touch_client_DefaultMomentum_ = 0.02;
-/** @public {number} @const */
+/**@const {number}*/
 DefaultMomentum.f_MIN_DECELERATION__org_gwtproject_touch_client_DefaultMomentum_ = 5.0E-4;
 
 exports = DefaultMomentum; 

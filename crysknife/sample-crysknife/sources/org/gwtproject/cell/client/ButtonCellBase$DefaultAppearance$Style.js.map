@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ButtonCellBase$DefaultAppearance$Style.impl.java.js",
-"lineCount":90,
-"mappings":"A;;;;;;;;;MA0IqB,K;;;;;;CAMR,kB;;;;;;CAKA,8B;;;;;;CAKA,+B;;;;;;CAKA,yB;;;;;;CAKA,0B;;;;;;CAKA,yB;;;;;;CAKA,yB;;;;QApCQ,O;EAAAA,wB;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AACf;MAAO,gFAAP;",
+"lineCount":49,
+"mappings":"A;;;;;;;;;MA0IqB,K;;CAMR,kB;;CAKA,8B;;CAKA,+B;;CAKA,yB;;CAKA,0B;;CAKA,yB;;CAKA,yB;;QApCQ,O;EAAAA,wB;EAAAA,qB;;;;;;;;;;;;;;;;;;;;AACf;MAAO,gFAAP;",
 "sources":["ButtonCellBase.java"],
 "names":["org.gwtproject.cell.client.ButtonCellBase$DefaultAppearance$Style.<clinit>"]
 }

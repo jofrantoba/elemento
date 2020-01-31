@@ -6,54 +6,27 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @interface
  */
 class SplitResult {
- /**
-  * @abstract
-  * @param {number} index
-  * @return {?string}
-  * @public
-  */
- m_get__int(index) {}
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {?string} */
+ m_get__int(/** number */ index) {}
+ /** @abstract @return {number} */
  m_length__() {}
- /**
-  * @abstract
-  * @param {number} index
-  * @param {?string} value
-  * @public
-  */
- m_set__int__java_lang_String(index, value) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_set__int__java_lang_String(/** number */ index, /** ?string */ value) {}
+ 
  static $clinit() {
   SplitResult.$clinit = () =>{};
   SplitResult.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_regexp_shared_SplitResult = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_regexp_shared_SplitResult = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_regexp_shared_SplitResult;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

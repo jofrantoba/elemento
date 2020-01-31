@@ -3,191 +3,111 @@ goog.module('elemental2.dom.CSSPrimitiveValue.$Overlay$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 
 class $Overlay {
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_ATTR__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_ATTR__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_CM__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_CM__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_COUNTER__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_COUNTER__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_DEG__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_DEG__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_DIMENSION__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_DIMENSION__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_EMS__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_EMS__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_EXS__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_EXS__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_GRAD__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_GRAD__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_HZ__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_HZ__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_IDENT__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_IDENT__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_IN__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_IN__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_KHZ__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_KHZ__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_MM__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_MM__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_MS__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_MS__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_NUMBER__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_NUMBER__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_PC__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_PC__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_PERCENTAGE__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_PERCENTAGE__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_PT__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_PT__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_PX__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_PX__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_RAD__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_RAD__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_RECT__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_RECT__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_RGBCOLOR__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_RGBCOLOR__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_S__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_S__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_STRING__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_STRING__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_UNKNOWN__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_UNKNOWN__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CSS_URI__elemental2_dom_CSSPrimitiveValue_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CSS_URI__elemental2_dom_CSSPrimitiveValue_$Overlay);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $Overlay.$clinit = () =>{};
   $Overlay.$loadModules();
@@ -218,73 +138,67 @@ class $Overlay {
   $Overlay.$f_CSS_UNKNOWN__elemental2_dom_CSSPrimitiveValue_$Overlay = CSSPrimitiveValue.CSS_UNKNOWN;
   $Overlay.$f_CSS_URI__elemental2_dom_CSSPrimitiveValue_$Overlay = CSSPrimitiveValue.CSS_URI;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CSSPrimitiveValue;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }
 $Util.$setClassMetadata($Overlay, 'CSSPrimitiveValue');
 
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_ATTR__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_CM__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_COUNTER__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_DEG__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_DIMENSION__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_EMS__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_EXS__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_GRAD__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_HZ__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_IDENT__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_IN__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_KHZ__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_MM__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_MS__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_NUMBER__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_PC__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_PERCENTAGE__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_PT__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_PX__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_RAD__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_RECT__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_RGBCOLOR__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_S__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_STRING__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_UNKNOWN__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CSS_URI__elemental2_dom_CSSPrimitiveValue_$Overlay = 0;
 
 exports = $Overlay; 

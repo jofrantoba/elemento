@@ -9,50 +9,28 @@ let $LambdaAdaptor = goog.forwardDeclare('javax.inject.Provider.$LambdaAdaptor$i
  * @template T
  */
 class Provider {
- /**
-  * @abstract
-  * @return {T}
-  * @public
-  */
+ /** @abstract @return {T} */
  m_get__() {}
- /**
-  * @template T
-  * @param {?function():T} fn
-  * @return {Provider<T>}
-  * @public
-  */
- static $adapt(fn) {
+ /** @template T @return {Provider<T>} */
+ static $adapt(/** ?function():T */ fn) {
   Provider.$clinit();
-  return /**@type {!$LambdaAdaptor<T>} */ (new $LambdaAdaptor(fn));
+  return /**@type {!$LambdaAdaptor<T>}*/ (new $LambdaAdaptor(fn));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Provider.$clinit = () =>{};
   Provider.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__javax_inject_Provider = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__javax_inject_Provider = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__javax_inject_Provider;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('javax.inject.Provider.$LambdaAdaptor$impl');
  }

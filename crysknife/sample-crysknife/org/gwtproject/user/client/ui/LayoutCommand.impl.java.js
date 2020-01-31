@@ -13,51 +13,37 @@ let $1 = goog.forwardDeclare('org.gwtproject.user.client.ui.LayoutCommand.$1$imp
  * @implements {ScheduledCommand}
   */
 class LayoutCommand extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_scheduled__org_gwtproject_user_client_ui_LayoutCommand_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_canceled__org_gwtproject_user_client_ui_LayoutCommand_ = false;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_duration__org_gwtproject_user_client_ui_LayoutCommand_ = 0;
-  /** @public {AnimationCallback} */
+  /**@type {AnimationCallback}*/
   this.f_callback__org_gwtproject_user_client_ui_LayoutCommand_;
-  /** @public {Layout} */
+  /**@type {Layout}*/
   this.f_layout__org_gwtproject_user_client_ui_LayoutCommand_;
  }
- /**
-  * @param {Layout} layout
-  * @return {!LayoutCommand}
-  * @public
-  */
- static $create__org_gwtproject_layout_client_Layout(layout) {
+ /** @return {!LayoutCommand} */
+ static $create__org_gwtproject_layout_client_Layout(/** Layout */ layout) {
   LayoutCommand.$clinit();
   let $instance = new LayoutCommand();
   $instance.$ctor__org_gwtproject_user_client_ui_LayoutCommand__org_gwtproject_layout_client_Layout(layout);
   return $instance;
  }
- /**
-  * @param {Layout} layout
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_LayoutCommand__org_gwtproject_layout_client_Layout(layout) {
+ 
+ $ctor__org_gwtproject_user_client_ui_LayoutCommand__org_gwtproject_layout_client_Layout(/** Layout */ layout) {
   this.$ctor__java_lang_Object__();
   this.f_layout__org_gwtproject_user_client_ui_LayoutCommand_ = layout;
  }
- /**
-  * @public
-  */
+ 
  m_cancel__() {
   this.f_canceled__org_gwtproject_user_client_ui_LayoutCommand_ = true;
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_execute__() {
   this.f_scheduled__org_gwtproject_user_client_ui_LayoutCommand_ = false;
   if (this.f_canceled__org_gwtproject_user_client_ui_LayoutCommand_) {
@@ -66,12 +52,8 @@ class LayoutCommand extends j_l_Object {
   this.m_doBeforeLayout__();
   this.f_layout__org_gwtproject_user_client_ui_LayoutCommand_.m_layout__int__org_gwtproject_layout_client_Layout_AnimationCallback(this.f_duration__org_gwtproject_user_client_ui_LayoutCommand_, $1.$create__org_gwtproject_user_client_ui_LayoutCommand(this));
  }
- /**
-  * @param {number} duration
-  * @param {AnimationCallback} callback
-  * @public
-  */
- m_schedule__int__org_gwtproject_layout_client_Layout_AnimationCallback(duration, callback) {
+ 
+ m_schedule__int__org_gwtproject_layout_client_Layout_AnimationCallback(/** number */ duration, /** AnimationCallback */ callback) {
   this.f_duration__org_gwtproject_user_client_ui_LayoutCommand_ = duration;
   this.f_callback__org_gwtproject_user_client_ui_LayoutCommand_ = callback;
   this.f_canceled__org_gwtproject_user_client_ui_LayoutCommand_ = false;
@@ -80,29 +62,19 @@ class LayoutCommand extends j_l_Object {
    Scheduler.m_get__().m_scheduleFinally__org_gwtproject_core_client_Scheduler_ScheduledCommand(this);
   }
  }
- /**
-  * @public
-  */
+ 
  m_doBeforeLayout__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   LayoutCommand.$clinit = () =>{};
   LayoutCommand.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof LayoutCommand;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Scheduler = goog.module.get('org.gwtproject.core.client.Scheduler$impl');
   $1 = goog.module.get('org.gwtproject.user.client.ui.LayoutCommand.$1$impl');

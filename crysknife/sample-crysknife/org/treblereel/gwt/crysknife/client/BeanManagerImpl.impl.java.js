@@ -15,41 +15,29 @@ let BeanManager = goog.forwardDeclare('org.treblereel.gwt.crysknife.client.BeanM
 let BeanManager__Factory = goog.forwardDeclare('org.treblereel.gwt.crysknife.client.BeanManager_Factory$impl');
 
 class BeanManagerImpl extends AbstractBeanManager {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!BeanManagerImpl}
-  * @public
-  */
+ /** @return {!BeanManagerImpl} */
  static $create__() {
   BeanManagerImpl.$clinit();
   let $instance = new BeanManagerImpl();
   $instance.$ctor__org_treblereel_gwt_crysknife_client_BeanManagerImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_treblereel_gwt_crysknife_client_BeanManagerImpl__() {
   this.$ctor__org_treblereel_gwt_crysknife_client_internal_AbstractBeanManager__();
  }
- /**
-  * @public
-  */
+ 
  m_init___$p_org_treblereel_gwt_crysknife_client_BeanManagerImpl() {
   this.m_register__java_lang_Class__javax_inject_Provider(Class.$get(BeanManager), BeanManager__Factory.m_create__());
+  this.m_register__java_lang_Class__javax_inject_Provider(Class.$get(FooterElement), FooterElement__Factory.m_create__());
   this.m_register__java_lang_Class__javax_inject_Provider(Class.$get(TodoRepository), TodoRepository__Factory.m_create__());
   this.m_register__java_lang_Class__javax_inject_Provider(Class.$get(ApplicationElement), ApplicationElement__Factory.m_create__());
-  this.m_register__java_lang_Class__javax_inject_Provider(Class.$get(FooterElement), FooterElement__Factory.m_create__());
  }
- /**
-  * @return {BeanManager}
-  * @public
-  */
+ /** @return {BeanManager} */
  static m_get__() {
   BeanManagerImpl.$clinit();
   if ($Equality.$same(BeanManagerImpl.f_instance__org_treblereel_gwt_crysknife_client_BeanManagerImpl_, null)) {
@@ -58,25 +46,17 @@ class BeanManagerImpl extends AbstractBeanManager {
   }
   return BeanManagerImpl.f_instance__org_treblereel_gwt_crysknife_client_BeanManagerImpl_;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   BeanManagerImpl.$clinit = () =>{};
   BeanManagerImpl.$loadModules();
   AbstractBeanManager.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof BeanManagerImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Class = goog.module.get('java.lang.Class$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -93,7 +73,7 @@ class BeanManagerImpl extends AbstractBeanManager {
 }
 $Util.$setClassMetadata(BeanManagerImpl, 'org.treblereel.gwt.crysknife.client.BeanManagerImpl');
 
-/** @public {BeanManagerImpl} */
+/**@type {BeanManagerImpl}*/
 BeanManagerImpl.f_instance__org_treblereel_gwt_crysknife_client_BeanManagerImpl_;
 
 exports = BeanManagerImpl; 

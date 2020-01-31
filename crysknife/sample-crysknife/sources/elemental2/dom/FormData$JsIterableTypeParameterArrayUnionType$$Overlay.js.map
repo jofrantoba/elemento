@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"FormData$JsIterableTypeParameterArrayUnionType$$Overlay.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;MAgHmB,8C;;;;;;QAEuC,sB,CAAUA,C;EAAVC,yD;EACpDA,wD;;;;;;;QAIW,gF;EAAAC,yD;EACXA,wF;;;;;;;QAIa,kF;EAAAC,yD;EACbA,iD;;;;;;;QAIc,gF;EAAAC,yD;EACdA,wD;;;;;;;QAIc,kF;EAAAC,yD;EACdA,0D;;;;;QAvBa,O;EAAAC,iE;EAAAA;",
+"lineCount":39,
+"mappings":"A;;;;;;;;;MAgHmB,8C;;QAEuC,sB,UAAUA,C;EAAVC,yD;EACpDA,uD;;;QAIW,gF;EAAAC,yD;EACXA,uF;;;QAIa,kF;EAAAC,yD;EACbA,iD;;;QAIc,gF;EAAAC,yD;EACdA,uD;;;QAIc,kF;EAAAC,yD;EACdA,yD;;;QAvBa,O;EAAAC,iE;EAAAA;",
 "sources":["FormData.java"],
 "names":["o","elemental2.dom.FormData$JsIterableTypeParameterArrayUnionType$$Overlay.of","elemental2.dom.FormData$JsIterableTypeParameterArrayUnionType$$Overlay.asFile__$devirt","elemental2.dom.FormData$JsIterableTypeParameterArrayUnionType$$Overlay.asString__$devirt","elemental2.dom.FormData$JsIterableTypeParameterArrayUnionType$$Overlay.isFile__$devirt","elemental2.dom.FormData$JsIterableTypeParameterArrayUnionType$$Overlay.isString__$devirt","elemental2.dom.FormData$JsIterableTypeParameterArrayUnionType$$Overlay.<clinit>"]
 }

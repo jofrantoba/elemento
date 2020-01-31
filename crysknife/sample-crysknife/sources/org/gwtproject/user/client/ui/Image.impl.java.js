@@ -91,52 +91,38 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
  * @implements {HasAllTouchHandlers}
   */
 class Image extends Widget {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {State} */
+  /**@type {State}*/
   this.f_state__org_gwtproject_user_client_ui_Image;
  }
- /**
-  * Factory method corresponding to constructor 'Image()'.
-  * @return {!Image}
-  * @public
-  */
+ //Factory method corresponding to constructor 'Image()'.
+ /** @return {!Image} */
  static $create__() {
   Image.$clinit();
   let $instance = new Image();
   $instance.$ctor__org_gwtproject_user_client_ui_Image__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'Image()'.
-  * @public
-  */
+ //Initialization from constructor 'Image()'.
+ 
  $ctor__org_gwtproject_user_client_ui_Image__() {
   this.$ctor__org_gwtproject_user_client_ui_Widget__();
   this.m_changeState__org_gwtproject_user_client_ui_Image_State_$p_org_gwtproject_user_client_ui_Image(UnclippedState.$create__org_gwtproject_user_client_ui_Image(this));
   this.m_setStyleName__java_lang_String("gwt-Image");
  }
- /**
-  * Factory method corresponding to constructor 'Image(ImageResource)'.
-  * @param {ImageResource} resource
-  * @return {!Image}
-  * @public
-  */
- static $create__org_gwtproject_resources_client_ImageResource(resource) {
+ //Factory method corresponding to constructor 'Image(ImageResource)'.
+ /** @return {!Image} */
+ static $create__org_gwtproject_resources_client_ImageResource(/** ImageResource */ resource) {
   Image.$clinit();
   let $instance = new Image();
   $instance.$ctor__org_gwtproject_user_client_ui_Image__org_gwtproject_resources_client_ImageResource(resource);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Image(ImageResource)'.
-  * @param {ImageResource} resource
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Image__org_gwtproject_resources_client_ImageResource(resource) {
+ //Initialization from constructor 'Image(ImageResource)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Image__org_gwtproject_resources_client_ImageResource(/** ImageResource */ resource) {
   this.$ctor__org_gwtproject_user_client_ui_Widget__();
   if (Bundle.$isInstance(resource)) {
    this.m_changeState__org_gwtproject_user_client_ui_Image_State_$p_org_gwtproject_user_client_ui_Image(ClippedState.$create__org_gwtproject_user_client_ui_Image__org_gwtproject_safehtml_shared_SafeUri__int__int__int__int(this, resource.m_getSafeUri__(), resource.m_getLeft__(), resource.m_getTop__(), resource.m_getWidth__(), resource.m_getHeight__()));
@@ -145,153 +131,92 @@ class Image extends Widget {
   }
   this.m_setStyleName__java_lang_String("gwt-Image");
  }
- /**
-  * Factory method corresponding to constructor 'Image(String)'.
-  * @param {?string} url
-  * @return {!Image}
-  * @public
-  */
- static $create__java_lang_String(url) {
+ //Factory method corresponding to constructor 'Image(String)'.
+ /** @return {!Image} */
+ static $create__java_lang_String(/** ?string */ url) {
   Image.$clinit();
   let $instance = new Image();
   $instance.$ctor__org_gwtproject_user_client_ui_Image__java_lang_String(url);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Image(String)'.
-  * @param {?string} url
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Image__java_lang_String(url) {
+ //Initialization from constructor 'Image(String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Image__java_lang_String(/** ?string */ url) {
   this.$ctor__org_gwtproject_user_client_ui_Image__org_gwtproject_safehtml_shared_SafeUri(UriUtils.m_unsafeCastFromUntrustedString__java_lang_String(url));
  }
- /**
-  * Factory method corresponding to constructor 'Image(SafeUri)'.
-  * @param {SafeUri} url
-  * @return {!Image}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeUri(url) {
+ //Factory method corresponding to constructor 'Image(SafeUri)'.
+ /** @return {!Image} */
+ static $create__org_gwtproject_safehtml_shared_SafeUri(/** SafeUri */ url) {
   Image.$clinit();
   let $instance = new Image();
   $instance.$ctor__org_gwtproject_user_client_ui_Image__org_gwtproject_safehtml_shared_SafeUri(url);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Image(SafeUri)'.
-  * @param {SafeUri} url
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Image__org_gwtproject_safehtml_shared_SafeUri(url) {
+ //Initialization from constructor 'Image(SafeUri)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Image__org_gwtproject_safehtml_shared_SafeUri(/** SafeUri */ url) {
   this.$ctor__org_gwtproject_user_client_ui_Widget__();
   this.m_changeState__org_gwtproject_user_client_ui_Image_State_$p_org_gwtproject_user_client_ui_Image(UnclippedState.$create__org_gwtproject_user_client_ui_Image__org_gwtproject_safehtml_shared_SafeUri(this, url));
   this.m_setStyleName__java_lang_String("gwt-Image");
  }
- /**
-  * Factory method corresponding to constructor 'Image(String, int, int, int, int)'.
-  * @param {?string} url
-  * @param {number} left
-  * @param {number} top
-  * @param {number} width
-  * @param {number} height
-  * @return {!Image}
-  * @public
-  */
- static $create__java_lang_String__int__int__int__int(url, left, top, width, height) {
+ //Factory method corresponding to constructor 'Image(String, int, int, int, int)'.
+ /** @return {!Image} */
+ static $create__java_lang_String__int__int__int__int(/** ?string */ url, /** number */ left, /** number */ top, /** number */ width, /** number */ height) {
   Image.$clinit();
   let $instance = new Image();
   $instance.$ctor__org_gwtproject_user_client_ui_Image__java_lang_String__int__int__int__int(url, left, top, width, height);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Image(String, int, int, int, int)'.
-  * @param {?string} url
-  * @param {number} left
-  * @param {number} top
-  * @param {number} width
-  * @param {number} height
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Image__java_lang_String__int__int__int__int(url, left, top, width, height) {
+ //Initialization from constructor 'Image(String, int, int, int, int)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Image__java_lang_String__int__int__int__int(/** ?string */ url, /** number */ left, /** number */ top, /** number */ width, /** number */ height) {
   this.$ctor__org_gwtproject_user_client_ui_Image__org_gwtproject_safehtml_shared_SafeUri__int__int__int__int(UriUtils.m_unsafeCastFromUntrustedString__java_lang_String(url), left, top, width, height);
  }
- /**
-  * Factory method corresponding to constructor 'Image(SafeUri, int, int, int, int)'.
-  * @param {SafeUri} url
-  * @param {number} left
-  * @param {number} top
-  * @param {number} width
-  * @param {number} height
-  * @return {!Image}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeUri__int__int__int__int(url, left, top, width, height) {
+ //Factory method corresponding to constructor 'Image(SafeUri, int, int, int, int)'.
+ /** @return {!Image} */
+ static $create__org_gwtproject_safehtml_shared_SafeUri__int__int__int__int(/** SafeUri */ url, /** number */ left, /** number */ top, /** number */ width, /** number */ height) {
   Image.$clinit();
   let $instance = new Image();
   $instance.$ctor__org_gwtproject_user_client_ui_Image__org_gwtproject_safehtml_shared_SafeUri__int__int__int__int(url, left, top, width, height);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Image(SafeUri, int, int, int, int)'.
-  * @param {SafeUri} url
-  * @param {number} left
-  * @param {number} top
-  * @param {number} width
-  * @param {number} height
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Image__org_gwtproject_safehtml_shared_SafeUri__int__int__int__int(url, left, top, width, height) {
+ //Initialization from constructor 'Image(SafeUri, int, int, int, int)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Image__org_gwtproject_safehtml_shared_SafeUri__int__int__int__int(/** SafeUri */ url, /** number */ left, /** number */ top, /** number */ width, /** number */ height) {
   this.$ctor__org_gwtproject_user_client_ui_Widget__();
   this.m_changeState__org_gwtproject_user_client_ui_Image_State_$p_org_gwtproject_user_client_ui_Image(ClippedState.$create__org_gwtproject_user_client_ui_Image__org_gwtproject_safehtml_shared_SafeUri__int__int__int__int(this, url, left, top, width, height));
   this.m_setStyleName__java_lang_String("gwt-Image");
  }
- /**
-  * Factory method corresponding to constructor 'Image(Element)'.
-  * @param {Object} element
-  * @return {!Image}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_Element(element) {
+ //Factory method corresponding to constructor 'Image(Element)'.
+ /** @return {!Image} */
+ static $create__org_gwtproject_dom_client_Element(/** Object */ element) {
   Image.$clinit();
   let $instance = new Image();
   $instance.$ctor__org_gwtproject_user_client_ui_Image__org_gwtproject_dom_client_Element(element);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Image(Element)'.
-  * @param {Object} element
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Image__org_gwtproject_dom_client_Element(element) {
+ //Initialization from constructor 'Image(Element)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Image__org_gwtproject_dom_client_Element(/** Object */ element) {
   this.$ctor__org_gwtproject_user_client_ui_Widget__();
   $Overlay.m_as__org_gwtproject_dom_client_Element(element);
   this.m_setElement__org_gwtproject_dom_client_Element(element);
   this.m_changeState__org_gwtproject_user_client_ui_Image_State_$p_org_gwtproject_user_client_ui_Image(UnclippedState.$create__org_gwtproject_dom_client_Element(element));
  }
- /**
-  * @param {?string} url
-  * @public
-  */
- static m_prefetch__java_lang_String(url) {
+ 
+ static m_prefetch__java_lang_String(/** ?string */ url) {
   Image.$clinit();
   let img = Document_$Overlay.m_createImageElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__());
   img.src = url;
   Image.f_prefetchImages__org_gwtproject_user_client_ui_Image_.put(url, img);
  }
- /**
-  * @param {SafeUri} url
-  * @public
-  */
- static m_prefetch__org_gwtproject_safehtml_shared_SafeUri(url) {
+ 
+ static m_prefetch__org_gwtproject_safehtml_shared_SafeUri(/** SafeUri */ url) {
   Image.$clinit();
   Image.m_prefetch__java_lang_String(url.m_asString__());
  }
- /**
-  * @param {Object} element
-  * @return {Image}
-  * @public
-  */
- static m_wrap__org_gwtproject_dom_client_Element(element) {
+ /** @return {Image} */
+ static m_wrap__org_gwtproject_dom_client_Element(/** Object */ element) {
   Image.$clinit();
   $Asserts.$assert(Node_$Overlay.m_isOrHasChild__$devirt__org_gwtproject_dom_client_Node__org_gwtproject_dom_client_Node(Document_$Overlay.m_get__().body, element));
   let image = Image.$create__org_gwtproject_dom_client_Element(element);
@@ -299,383 +224,193 @@ class Image extends Widget {
   RootPanel.m_detachOnWindowClose__org_gwtproject_user_client_ui_Widget(image);
   return image;
  }
- /**
-  * @override
-  * @param {ClickHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addClickHandler__org_gwtproject_event_dom_client_ClickHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addClickHandler__org_gwtproject_event_dom_client_ClickHandler(/** ClickHandler */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, ClickEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DoubleClickHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDoubleClickHandler__org_gwtproject_event_dom_client_DoubleClickHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDoubleClickHandler__org_gwtproject_event_dom_client_DoubleClickHandler(/** DoubleClickHandler */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, DoubleClickEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DragEndHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDragEndHandler__org_gwtproject_event_dom_client_DragEndHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDragEndHandler__org_gwtproject_event_dom_client_DragEndHandler(/** DragEndHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DragEndEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DragEnterHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDragEnterHandler__org_gwtproject_event_dom_client_DragEnterHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDragEnterHandler__org_gwtproject_event_dom_client_DragEnterHandler(/** DragEnterHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DragEnterEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DragHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDragHandler__org_gwtproject_event_dom_client_DragHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDragHandler__org_gwtproject_event_dom_client_DragHandler(/** DragHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DragEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DragLeaveHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDragLeaveHandler__org_gwtproject_event_dom_client_DragLeaveHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDragLeaveHandler__org_gwtproject_event_dom_client_DragLeaveHandler(/** DragLeaveHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DragLeaveEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DragOverHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDragOverHandler__org_gwtproject_event_dom_client_DragOverHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDragOverHandler__org_gwtproject_event_dom_client_DragOverHandler(/** DragOverHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DragOverEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DragStartHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDragStartHandler__org_gwtproject_event_dom_client_DragStartHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDragStartHandler__org_gwtproject_event_dom_client_DragStartHandler(/** DragStartHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DragStartEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DropHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDropHandler__org_gwtproject_event_dom_client_DropHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDropHandler__org_gwtproject_event_dom_client_DropHandler(/** DropHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DropEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {ErrorHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addErrorHandler__org_gwtproject_event_dom_client_ErrorHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addErrorHandler__org_gwtproject_event_dom_client_ErrorHandler(/** ErrorHandler */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, ErrorEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {GestureChangeHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addGestureChangeHandler__org_gwtproject_event_dom_client_GestureChangeHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addGestureChangeHandler__org_gwtproject_event_dom_client_GestureChangeHandler(/** GestureChangeHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, GestureChangeEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {GestureEndHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addGestureEndHandler__org_gwtproject_event_dom_client_GestureEndHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addGestureEndHandler__org_gwtproject_event_dom_client_GestureEndHandler(/** GestureEndHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, GestureEndEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {GestureStartHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addGestureStartHandler__org_gwtproject_event_dom_client_GestureStartHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addGestureStartHandler__org_gwtproject_event_dom_client_GestureStartHandler(/** GestureStartHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, GestureStartEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {LoadHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addLoadHandler__org_gwtproject_event_dom_client_LoadHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addLoadHandler__org_gwtproject_event_dom_client_LoadHandler(/** LoadHandler */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, LoadEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseDownHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseDownHandler__org_gwtproject_event_dom_client_MouseDownHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseDownHandler__org_gwtproject_event_dom_client_MouseDownHandler(/** MouseDownHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseDownEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseMoveHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseMoveHandler__org_gwtproject_event_dom_client_MouseMoveHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseMoveHandler__org_gwtproject_event_dom_client_MouseMoveHandler(/** MouseMoveHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseMoveEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseOutHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseOutHandler__org_gwtproject_event_dom_client_MouseOutHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseOutHandler__org_gwtproject_event_dom_client_MouseOutHandler(/** MouseOutHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseOutEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseOverHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseOverHandler__org_gwtproject_event_dom_client_MouseOverHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseOverHandler__org_gwtproject_event_dom_client_MouseOverHandler(/** MouseOverHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseOverEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseUpHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseUpHandler__org_gwtproject_event_dom_client_MouseUpHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseUpHandler__org_gwtproject_event_dom_client_MouseUpHandler(/** MouseUpHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseUpEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseWheelHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseWheelHandler__org_gwtproject_event_dom_client_MouseWheelHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseWheelHandler__org_gwtproject_event_dom_client_MouseWheelHandler(/** MouseWheelHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseWheelEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {TouchCancelHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addTouchCancelHandler__org_gwtproject_event_dom_client_TouchCancelHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addTouchCancelHandler__org_gwtproject_event_dom_client_TouchCancelHandler(/** TouchCancelHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, TouchCancelEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {TouchEndHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addTouchEndHandler__org_gwtproject_event_dom_client_TouchEndHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addTouchEndHandler__org_gwtproject_event_dom_client_TouchEndHandler(/** TouchEndHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, TouchEndEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {TouchMoveHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addTouchMoveHandler__org_gwtproject_event_dom_client_TouchMoveHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addTouchMoveHandler__org_gwtproject_event_dom_client_TouchMoveHandler(/** TouchMoveHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, TouchMoveEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {TouchStartHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addTouchStartHandler__org_gwtproject_event_dom_client_TouchStartHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addTouchStartHandler__org_gwtproject_event_dom_client_TouchStartHandler(/** TouchStartHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, TouchStartEvent.m_getType__());
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getAltText__() {
   return this.f_state__org_gwtproject_user_client_ui_Image.m_getImageElement__org_gwtproject_user_client_ui_Image(this).alt;
  }
- /**
-  * @param {?string} altText
-  * @public
-  */
- m_setAltText__java_lang_String(altText) {
+ 
+ m_setAltText__java_lang_String(/** ?string */ altText) {
   this.f_state__org_gwtproject_user_client_ui_Image.m_getImageElement__org_gwtproject_user_client_ui_Image(this).alt = altText;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getHeight__() {
   return this.f_state__org_gwtproject_user_client_ui_Image.m_getHeight__org_gwtproject_user_client_ui_Image(this);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getOriginLeft__() {
   return this.f_state__org_gwtproject_user_client_ui_Image.m_getOriginLeft__();
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getOriginTop__() {
   return this.f_state__org_gwtproject_user_client_ui_Image.m_getOriginTop__();
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getUrl__() {
   return this.f_state__org_gwtproject_user_client_ui_Image.m_getUrl__org_gwtproject_user_client_ui_Image(this).m_asString__();
  }
- /**
-  * @param {?string} url
-  * @public
-  */
- m_setUrl__java_lang_String(url) {
+ 
+ m_setUrl__java_lang_String(/** ?string */ url) {
   this.m_setUrl__org_gwtproject_safehtml_shared_SafeUri(UriUtils.m_unsafeCastFromUntrustedString__java_lang_String(url));
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getWidth__() {
   return this.f_state__org_gwtproject_user_client_ui_Image.m_getWidth__org_gwtproject_user_client_ui_Image(this);
  }
- /**
-  * @override
-  * @param {Event} event
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_user_client_Event(event) {
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_user_client_Event(/** Event */ event) {
   if (JsPropertyMap_$Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(Js.m_asPropertyMap__java_lang_Object(event), "getTypeInt") && DOM.m_eventGetType__org_gwtproject_user_client_Event(event) == Event.f_ONLOAD__org_gwtproject_user_client_Event) {
    this.m_clearUnhandledEvent___$p_org_gwtproject_user_client_ui_Image();
    this.f_state__org_gwtproject_user_client_ui_Image.m_onLoadEvent__org_gwtproject_user_client_ui_Image(this);
   }
   super.m_onBrowserEvent__org_gwtproject_user_client_Event(event);
  }
- /**
-  * @param {ImageResource} resource
-  * @public
-  */
- m_setResource__org_gwtproject_resources_client_ImageResource(resource) {
+ 
+ m_setResource__org_gwtproject_resources_client_ImageResource(/** ImageResource */ resource) {
   if (Bundle.$isInstance(resource)) {
    this.f_state__org_gwtproject_user_client_ui_Image.m_setUrlAndVisibleRect__org_gwtproject_user_client_ui_Image__org_gwtproject_safehtml_shared_SafeUri__int__int__int__int(this, resource.m_getSafeUri__(), resource.m_getLeft__(), resource.m_getTop__(), resource.m_getWidth__(), resource.m_getHeight__());
   } else {
    this.f_state__org_gwtproject_user_client_ui_Image.m_setUrl__org_gwtproject_user_client_ui_Image__org_gwtproject_safehtml_shared_SafeUri__int__int(this, resource.m_getSafeUri__(), resource.m_getWidth__(), resource.m_getHeight__());
   }
  }
- /**
-  * @param {SafeUri} url
-  * @public
-  */
- m_setUrl__org_gwtproject_safehtml_shared_SafeUri(url) {
+ 
+ m_setUrl__org_gwtproject_safehtml_shared_SafeUri(/** SafeUri */ url) {
   this.f_state__org_gwtproject_user_client_ui_Image.m_setUrl__org_gwtproject_user_client_ui_Image__org_gwtproject_safehtml_shared_SafeUri(this, url);
  }
- /**
-  * @param {SafeUri} url
-  * @param {number} left
-  * @param {number} top
-  * @param {number} width
-  * @param {number} height
-  * @public
-  */
- m_setUrlAndVisibleRect__org_gwtproject_safehtml_shared_SafeUri__int__int__int__int(url, left, top, width, height) {
+ 
+ m_setUrlAndVisibleRect__org_gwtproject_safehtml_shared_SafeUri__int__int__int__int(/** SafeUri */ url, /** number */ left, /** number */ top, /** number */ width, /** number */ height) {
   this.f_state__org_gwtproject_user_client_ui_Image.m_setUrlAndVisibleRect__org_gwtproject_user_client_ui_Image__org_gwtproject_safehtml_shared_SafeUri__int__int__int__int(this, url, left, top, width, height);
  }
- /**
-  * @param {?string} url
-  * @param {number} left
-  * @param {number} top
-  * @param {number} width
-  * @param {number} height
-  * @public
-  */
- m_setUrlAndVisibleRect__java_lang_String__int__int__int__int(url, left, top, width, height) {
+ 
+ m_setUrlAndVisibleRect__java_lang_String__int__int__int__int(/** ?string */ url, /** number */ left, /** number */ top, /** number */ width, /** number */ height) {
   this.m_setUrlAndVisibleRect__org_gwtproject_safehtml_shared_SafeUri__int__int__int__int(UriUtils.m_unsafeCastFromUntrustedString__java_lang_String(url), left, top, width, height);
  }
- /**
-  * @param {number} left
-  * @param {number} top
-  * @param {number} width
-  * @param {number} height
-  * @public
-  */
- m_setVisibleRect__int__int__int__int(left, top, width, height) {
+ 
+ m_setVisibleRect__int__int__int__int(/** number */ left, /** number */ top, /** number */ width, /** number */ height) {
   this.f_state__org_gwtproject_user_client_ui_Image.m_setVisibleRect__org_gwtproject_user_client_ui_Image__int__int__int__int(this, left, top, width, height);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onLoad__() {
   super.m_onLoad__();
   this.f_state__org_gwtproject_user_client_ui_Image.m_onLoad__org_gwtproject_user_client_ui_Image(this);
  }
- /**
-  * @param {State} newState
-  * @public
-  */
- m_changeState__org_gwtproject_user_client_ui_Image_State_$p_org_gwtproject_user_client_ui_Image(newState) {
+ 
+ m_changeState__org_gwtproject_user_client_ui_Image_State_$p_org_gwtproject_user_client_ui_Image(/** State */ newState) {
   this.f_state__org_gwtproject_user_client_ui_Image = newState;
  }
- /**
-  * @public
-  */
+ 
  m_clearUnhandledEvent___$p_org_gwtproject_user_client_ui_Image() {
   if (!$Equality.$same(this.f_state__org_gwtproject_user_client_ui_Image, null)) {
    Element_$Overlay.m_setPropertyString__$devirt__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(this.f_state__org_gwtproject_user_client_ui_Image.m_getImageElement__org_gwtproject_user_client_ui_Image(this), Image.f_UNHANDLED_EVENT_ATTR__org_gwtproject_user_client_ui_Image_, "");
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Image.$clinit = () =>{};
   Image.$loadModules();
   Widget.$clinit();
-  Image.f_prefetchImages__org_gwtproject_user_client_ui_Image_ = /**@type {!HashMap<?string, Object>} */ (HashMap.$create__());
+  Image.f_prefetchImages__org_gwtproject_user_client_ui_Image_ = /**@type {!HashMap<?string, Object>}*/ (HashMap.$create__());
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Image;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   HashMap = goog.module.get('java.util.HashMap$impl');
   Js = goog.module.get('jsinterop.base.Js$impl');
@@ -731,9 +466,9 @@ HasAllGestureHandlers.$markImplementor(Image);
 HasAllMouseHandlers.$markImplementor(Image);
 HasAllTouchHandlers.$markImplementor(Image);
 
-/** @public {?string} @const */
+/**@const {?string}*/
 Image.f_UNHANDLED_EVENT_ATTR__org_gwtproject_user_client_ui_Image_ = "__gwtLastUnhandledEvent";
-/** @public {HashMap<?string, Object>} */
+/**@type {HashMap<?string, Object>}*/
 Image.f_prefetchImages__org_gwtproject_user_client_ui_Image_;
 
 exports = Image; 

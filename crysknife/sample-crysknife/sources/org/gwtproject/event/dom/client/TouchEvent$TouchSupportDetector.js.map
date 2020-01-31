@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TouchEvent$TouchSupportDetector.impl.java.js",
-"lineCount":59,
-"mappings":"A;;;;;;;;;;;MAsHe,oB;;;;CAAA,W;EAAAA,Q;EAAAA;OAEK,+EAFLA,S;;;;;;QAAA,S;EAAAC,+B;EAAAA,2C;EAAAA,qF;EAAAA,iB;;;;;CAAA,wE;EAAAC,iC;EAAAA,kF;;;;;;CAIK,yF;EACdC,IAAeC,UAAfD,mJ;EACAA,4I;EACAA,oE;;;;;CAPS,0E;EAEXD,wL;;;;;QAFW,O;EAAAG,uC;EAAAA,oC;EAAAA;",
+"lineCount":45,
+"mappings":"A;;;;;;;;;;;MAsHe,oB;;CAAA,W;EAAAA,Q;EAAAA;OAEK,+EAFLA,S;;;QAAA,S;EAAAC,+B;EAAAA,2C;EAAAA,qF;EAAAA,iB;;;CAAA,wE;EAAAC,iC;EAAAA,kF;;;CAIK,yF;EACdC,IAAeC,UAAfD,kJ;EACAA,4I;EACAA,oE;;;CAPS,0E;EAEXD,wL;;;QAFW,O;EAAAG,uC;EAAAA,oC;EAAAA;",
 "sources":["TouchEvent.java"],
 "names":["org.gwtproject.event.dom.client.TouchEvent$TouchSupportDetector.<synthetic: ctor_js>","org.gwtproject.event.dom.client.TouchEvent$TouchSupportDetector.<synthetic: ctor_create>","org.gwtproject.event.dom.client.TouchEvent$TouchSupportDetector.<init>","org.gwtproject.event.dom.client.TouchEvent$TouchSupportDetector.detectTouchSupport","divElement","org.gwtproject.event.dom.client.TouchEvent$TouchSupportDetector.<clinit>"]
 }

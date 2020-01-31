@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ValueBoxBase$TextAlignment$4.impl.java.js",
-"lineCount":59,
-"mappings":"A;;;;;;;MA2Xc,E;;;;CAAA,W;EAAAA,Q;;;;;;;;QAAA,8B;EAAAC,a;EAAAA,yB;EAAAA,oH;EAAAA,iB;;;;;;;CAAA,wF;EAAAC,6G;;;;;;;CAEK,wD;EACHC,e;;;;;;;;;CAHF,6B;EAAAC,sF;;;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;MA2Xc,E;;CAAA,W;EAAAA,Q;;;QAAA,8B;EAAAC,a;EAAAA,yB;EAAAA,oH;EAAAA,iB;;;CAAA,wF;EAAAC,6G;;;CAEK,wD;EACHC,e;;;;CAHF,6B;EAAAC,qF;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["ValueBoxBase.java"],
 "names":["org.gwtproject.user.client.ui.ValueBoxBase$TextAlignment$4.<synthetic: ctor_js>","org.gwtproject.user.client.ui.ValueBoxBase$TextAlignment$4.<synthetic: ctor_create>","org.gwtproject.user.client.ui.ValueBoxBase$TextAlignment$4.<init>","org.gwtproject.user.client.ui.ValueBoxBase$TextAlignment$4.getTextAlignString","org.gwtproject.user.client.ui.ValueBoxBase$TextAlignment$4.compareTo","org.gwtproject.user.client.ui.ValueBoxBase$TextAlignment$4.<clinit>"]
 }

@@ -17,129 +17,74 @@ let EditorVisitor = goog.forwardDeclare('org.gwtproject.editor.client.EditorVisi
  * @implements {SimpleBeanEditorDriver<T, E>}
   */
 class MockSimpleBeanEditorDriver extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {E} */
+  /**@type {E}*/
   this.f_editor__org_gwtproject_editor_client_testing_MockSimpleBeanEditorDriver_;
-  /** @public {T} */
+  /**@type {T}*/
   this.f_object__org_gwtproject_editor_client_testing_MockSimpleBeanEditorDriver_;
  }
- /**
-  * @template T, E
-  * @return {!MockSimpleBeanEditorDriver<T, E>}
-  * @public
-  */
+ /** @template T, E @return {!MockSimpleBeanEditorDriver<T, E>} */
  static $create__() {
   MockSimpleBeanEditorDriver.$clinit();
   let $instance = new MockSimpleBeanEditorDriver();
   $instance.$ctor__org_gwtproject_editor_client_testing_MockSimpleBeanEditorDriver__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_editor_client_testing_MockSimpleBeanEditorDriver__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {EditorVisitor} visitor
-  * @public
-  */
- m_accept__org_gwtproject_editor_client_EditorVisitor(visitor) {}
- /**
-  * @override
-  * @param {T} object
-  * @public
-  */
- m_edit__java_lang_Object(object) {
+ /** @override */
+ m_accept__org_gwtproject_editor_client_EditorVisitor(/** EditorVisitor */ visitor) {}
+ /** @override */
+ m_edit__java_lang_Object(/** T */ object) {
   this.f_object__org_gwtproject_editor_client_testing_MockSimpleBeanEditorDriver_ = object;
  }
- /**
-  * @override
-  * @return {T}
-  * @public
-  */
+ /** @override @return {T} */
  m_flush__() {
   return this.f_object__org_gwtproject_editor_client_testing_MockSimpleBeanEditorDriver_;
  }
- /**
-  * @return {E}
-  * @public
-  */
+ /** @return {E} */
  m_getEditor__() {
   return this.f_editor__org_gwtproject_editor_client_testing_MockSimpleBeanEditorDriver_;
  }
- /**
-  * @override
-  * @return {List<EditorError>}
-  * @public
-  */
+ /** @override @return {List<EditorError>} */
  m_getErrors__() {
-  return /**@type {List<EditorError>} */ (Collections.m_emptyList__());
+  return /**@type {List<EditorError>}*/ (Collections.m_emptyList__());
  }
- /**
-  * @return {T}
-  * @public
-  */
+ /** @return {T} */
  m_getObject__() {
   return this.f_object__org_gwtproject_editor_client_testing_MockSimpleBeanEditorDriver_;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_hasErrors__() {
   return false;
  }
- /**
-  * @override
-  * @param {E} editor
-  * @public
-  */
- m_initialize__org_gwtproject_editor_client_Editor(editor) {
+ /** @override */
+ m_initialize__org_gwtproject_editor_client_Editor(/** E */ editor) {
   this.f_editor__org_gwtproject_editor_client_testing_MockSimpleBeanEditorDriver_ = editor;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isDirty__() {
   return false;
  }
- /**
-  * @override
-  * @param {Iterable<ConstraintViolation<?>>} violations
-  * @return {boolean}
-  * @public
-  */
- m_setConstraintViolations__java_lang_Iterable(violations) {
+ /** @override @return {boolean} */
+ m_setConstraintViolations__java_lang_Iterable(/** Iterable<ConstraintViolation<?>> */ violations) {
   return false;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MockSimpleBeanEditorDriver.$clinit = () =>{};
   MockSimpleBeanEditorDriver.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof MockSimpleBeanEditorDriver;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Collections = goog.module.get('java.util.Collections$impl');
  }

@@ -11,54 +11,37 @@ let OpenEvent = goog.forwardDeclare('org.gwtproject.event.logical.shared.OpenEve
  * @implements {OpenHandler<T>}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(OpenEvent<T>):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(OpenEvent<T>):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(OpenEvent<T>):void} */
+  /**@type {?function(OpenEvent<T>):void}*/
   this.f_$$fn__org_gwtproject_event_logical_shared_OpenHandler_$LambdaAdaptor;
   this.$ctor__org_gwtproject_event_logical_shared_OpenHandler_$LambdaAdaptor__org_gwtproject_event_logical_shared_OpenHandler_$JsFunction(fn);
  }
- /**
-  * @param {?function(OpenEvent<T>):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_event_logical_shared_OpenHandler_$LambdaAdaptor__org_gwtproject_event_logical_shared_OpenHandler_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_event_logical_shared_OpenHandler_$LambdaAdaptor__org_gwtproject_event_logical_shared_OpenHandler_$JsFunction(/** ?function(OpenEvent<T>):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_event_logical_shared_OpenHandler_$LambdaAdaptor = fn;
  }
- /**
-  * @param {OpenEvent<T>} arg0
-  * @public
-  */
- m_onOpen__org_gwtproject_event_logical_shared_OpenEvent(arg0) {
+ 
+ m_onOpen__org_gwtproject_event_logical_shared_OpenEvent(/** OpenEvent<T> */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_event_logical_shared_OpenHandler_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

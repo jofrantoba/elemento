@@ -10,54 +10,37 @@ let ClosingEvent = goog.forwardDeclare('org.gwtproject.user.window.client.Window
  * @implements {ClosingHandler}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(ClosingEvent):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(ClosingEvent):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(ClosingEvent):void} */
+  /**@type {?function(ClosingEvent):void}*/
   this.f_$$fn__org_gwtproject_user_window_client_Window_ClosingHandler_$LambdaAdaptor;
   this.$ctor__org_gwtproject_user_window_client_Window_ClosingHandler_$LambdaAdaptor__org_gwtproject_user_window_client_Window_ClosingHandler_$JsFunction(fn);
  }
- /**
-  * @param {?function(ClosingEvent):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_user_window_client_Window_ClosingHandler_$LambdaAdaptor__org_gwtproject_user_window_client_Window_ClosingHandler_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_user_window_client_Window_ClosingHandler_$LambdaAdaptor__org_gwtproject_user_window_client_Window_ClosingHandler_$JsFunction(/** ?function(ClosingEvent):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_user_window_client_Window_ClosingHandler_$LambdaAdaptor = fn;
  }
- /**
-  * @param {ClosingEvent} arg0
-  * @public
-  */
- m_onWindowClosing__org_gwtproject_user_window_client_Window_ClosingEvent(arg0) {
+ 
+ m_onWindowClosing__org_gwtproject_user_window_client_Window_ClosingEvent(/** ClosingEvent */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_user_window_client_Window_ClosingHandler_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

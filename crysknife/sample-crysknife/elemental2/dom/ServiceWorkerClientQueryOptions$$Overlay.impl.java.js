@@ -6,24 +6,17 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Overlay = goog.forwardDeclare('jsinterop.base.JsPropertyMap.$Overlay$impl');
 
 class ServiceWorkerClientQueryOptions_$Overlay {
- /**
-  * @return {ServiceWorkerClientQueryOptions}
-  * @public
-  */
+ /** @return {ServiceWorkerClientQueryOptions} */
  static m_create__() {
   ServiceWorkerClientQueryOptions_$Overlay.$clinit();
-  return /**@type {ServiceWorkerClientQueryOptions} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
+  return /**@type {ServiceWorkerClientQueryOptions}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ServiceWorkerClientQueryOptions_$Overlay.$clinit = () =>{};
   ServiceWorkerClientQueryOptions_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');

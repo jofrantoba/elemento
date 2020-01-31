@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"FakeEditorSource.impl.java.js",
-"lineCount":143,
-"mappings":"A;;;;;;;;;;;;;;;;MA2Ba,gB;;;;CAAA,W;EAAAA,Q;EAAAA;OAawC,2EAbxCA,C;;;;;;;QAAA,S;EAAAC,2B;EAAAA,uC;EAAAA,2E;EAAAA,iB;;;;;CAAA,8D;EAAAC,mE;EAAAA,wE;;;;;;;;CAiBmB,a,CAAWC,K;EACvCC,IAAuBC,QAAvBD,2E;EACAA,8H;EACAA,gB;;;;;;;CAI4B,4B;EAC5BE,+E;;;;;;CAIU,mE,CAA+BC,S;EACzCC,4M;;;;;;;CAGS,gF,CAA4CC,M;EACrDC,2V;;;;;;;CAIU,yE,CAAgCD,M,EAAYN,K;EACtDQ,4H;;;;;;;;CAvCS,8C;EAAAH,uJ;;;;;;;;;CAAA,oD;EAAAG,mK;;;;;CAAA,gE;EAaXT,iK;;;;;QAbW,O;EAAAU,mC;EAAAA,gC;EAAAA,uB;;;;;;;;;;;;;;;;;;;;;;;AACX;iBAIwB,iEAJxB,M;AAMA;iBAIwB,gEAJxB;",
+"lineCount":96,
+"mappings":"A;;;;;;;;;;;;;;;;MA2Ba,gB;;CAAA,W;EAAAA,Q;EAAAA;OAawC,2EAbxCA,C;;;QAAA,S;EAAAC,2B;EAAAA,uC;EAAAA,2E;EAAAA,iB;;;CAAA,8D;EAAAC,mE;EAAAA,wE;;;CAiBmB,a,eAAWC,K;EACvCC,IAAuBC,QAAvBD,0E;EACAA,8H;EACAA,gB;;;CAI4B,4B;EAC5BE,8E;;;CAIU,mE,+BAA+BC,S;EACzCC,4M;;;CAGS,gF,+BAA4CC,M;EACrDC,0V;;;CAIU,yE,+BAAgCD,M,gBAAYN,K;EACtDQ,4H;;;;CAvCS,8C;EAAAH,sJ;;;;CAAA,oD;EAAAG,kK;;;CAAA,gE;EAaXT,gK;;;QAbW,O;EAAAU,mC;EAAAA,gC;EAAAA,uB;;;;;;;;;;;;;;;;;AACX;iBAIwB,iEAJxB,M;AAMA;iBAIwB,gEAJxB;",
 "sources":["FakeEditorSource.java"],
 "names":["org.gwtproject.editor.client.testing.FakeEditorSource.<synthetic: ctor_js>","org.gwtproject.editor.client.testing.FakeEditorSource.<synthetic: ctor_create>","org.gwtproject.editor.client.testing.FakeEditorSource.<init>","index","org.gwtproject.editor.client.testing.FakeEditorSource.create","toReturn","org.gwtproject.editor.client.testing.FakeEditorSource.createEditorForTraversal","subEditor","org.gwtproject.editor.client.testing.FakeEditorSource.dispose","editor","org.gwtproject.editor.client.testing.FakeEditorSource.getLastKnownPosition","org.gwtproject.editor.client.testing.FakeEditorSource.setIndex","org.gwtproject.editor.client.testing.FakeEditorSource.<clinit>"]
 }

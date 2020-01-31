@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl_TemplateImpl.impl.java.js",
-"lineCount":66,
-"mappings":"A;;;;;;;;;;;;;;MAKa,0E;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,qF;EAAAA,iG;EAAAA,4H;EAAAA,iB;;;;;CAAA,+G;EAAAC,iC;;;;;;;;;;;CAKoC,+E,CACxBC,I,EACAC,I,EACAC,I,EACAC,I;EACrBC,IAAcC,EAAdD,6B;EACAA,8C;EACAA,kF;EACAA,gD;EACAA,kF;EACAA,wC;EACAA,kF;EACAA,8C;EACAA,kF;EACAA,uD;EACJA,mG;;;;;QApBa,O;EAAAE,6F;EAAAA,0F;EAAAA;",
+"lineCount":49,
+"mappings":"A;;;;;;;;;;;;;;MAKa,0E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,qF;EAAAA,iG;EAAAA,4H;EAAAA,iB;;;CAAA,+G;EAAAC,iC;;;CAKoC,+E,gBACxBC,I,iBACAC,I,iBACAC,I,iBACAC,I;EACrBC,IAAcC,EAAdD,6B;EACAA,8C;EACAA,kF;EACAA,gD;EACAA,kF;EACAA,wC;EACAA,kF;EACAA,8C;EACAA,kF;EACAA,uD;EACJA,mG;;;QApBa,O;EAAAE,6F;EAAAA,0F;EAAAA;",
 "sources":["NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl_TemplateImpl.java"],
 "names":["org.gwtproject.user.client.ui.NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl_TemplateImpl.<synthetic: ctor_js>","org.gwtproject.user.client.ui.NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl_TemplateImpl.<synthetic: ctor_create>","org.gwtproject.user.client.ui.NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl_TemplateImpl.<init>","arg0","arg1","arg2","arg3","org.gwtproject.user.client.ui.NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl_TemplateImpl.html1","sb","org.gwtproject.user.client.ui.NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl_TemplateImpl.<clinit>"]
 }

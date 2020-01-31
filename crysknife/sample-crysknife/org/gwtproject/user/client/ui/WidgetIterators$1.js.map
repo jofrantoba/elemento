@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"WidgetIterators$1.impl.java.js",
-"lineCount":136,
-"mappings":"A;;;;;;;;;;;;;;;;;;MA8CkC,E;;;;CAAA,W;EAAAA,Q;EAAAA;OACxB,wDADwBA,K;EAAAA;OACZ,uDADYA,K;EAAAA;OAEpB,mEAFoBA,S;EAAAA;OAGnB,0DAHmBA,C;EAAAA;OADbC,YACaD,C;EAAAA;OAFoCE,YAEpCF,C;;;;;;;;QAAA,+F;EAAAG,a;EAAAA,yB;EAAAA,qL;EAAAA,iB;;;;;;;CAAA,8I;EAAAC,iC;EAAAA,iC;EAAAA,iC;EAAAA,kE;;;;;CASf,oE;EACXC,gE;EACAA;GACEA;IACEA,OADFA;IADFA;GAIEA,gEAJFA;G;;;;;;;CAQa,W;EACbC,kG;;;;;;;CAGY,Q;EACZC;GACEA,2DADFA;G;EAGAA,6H;EACAA,IAAaC,CAAbD,oF;EACAA,4E;EACAA,S;;;;;;CAGU,U;EACVE;GACEA,0DADFA;G;EAIAA;GACEA,mNADFA;GAEEA,gFAFFA;G;EAKAA,kJ;EACAA,kE;;;;;;;;CA5C0B,+C;EAAAC,mG;;;;;CAAA,0D;EAC5BN,mE;EAAAA,kE;EACAA,iF;EACAA,oF;EAGEA,4E;;;;;QAN0B,O;EAAAO,qB;EAAAA,kB;EAAAA,qB;EAAAA;",
+"lineCount":104,
+"mappings":"A;;;;;;;;;;;;;;;;;;MA8CkC,E;;CAAA,W;EAAAA,Q;EAAAA;OACxB,wDADwBA,K;EAAAA;OACZ,uDADYA,K;EAAAA;OAEpB,mEAFoBA,S;EAAAA;OAGnB,0DAHmBA,C;EAAAA;OADbC,YACaD,C;EAAAA;OAFoCE,YAEpCF,C;;;QAAA,+F;EAAAG,a;EAAAA,yB;EAAAA,qL;EAAAA,iB;;;CAAA,8I;EAAAC,iC;EAAAA,iC;EAAAA,iC;EAAAA,kE;;;CASf,oE;EACXC,gE;EACAA;GACEA;IACEA,OADFA;IADFA;GAIEA,gEAJFA;G;;;CAQa,W;EACbC,kG;;;CAGY,Q;EACZC;GACEA,2DADFA;G;EAGAA,6H;EACAA,IAAaC,CAAbD,oF;EACAA,4E;EACAA,S;;;CAGU,U;EACVE;GACEA,0DADFA;G;EAIAA;GACEA,mNADFA;GAEEA,gFAFFA;G;EAKAA,kJ;EACAA,kE;;;;CA5C0B,+C;EAAAC,mG;;;CAAA,0D;EAC5BN,mE;EAAAA,kE;EACAA,iF;EACAA,oF;EAGEA,4E;;;QAN0B,O;EAAAO,qB;EAAAA,kB;EAAAA,qB;EAAAA;",
 "sources":["WidgetIterators.java"],
 "names":["org.gwtproject.user.client.ui.WidgetIterators$1.<synthetic: ctor_js>","contained","container","org.gwtproject.user.client.ui.WidgetIterators$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.WidgetIterators$1.<init>","org.gwtproject.user.client.ui.WidgetIterators$1.gotoNextIndex","org.gwtproject.user.client.ui.WidgetIterators$1.hasNext","org.gwtproject.user.client.ui.WidgetIterators$1.next","w","org.gwtproject.user.client.ui.WidgetIterators$1.remove","org.gwtproject.user.client.ui.WidgetIterators$1.forEachRemaining","org.gwtproject.user.client.ui.WidgetIterators$1.<clinit>"]
 }

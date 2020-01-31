@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"RootEditorContext.impl.java.js",
-"lineCount":99,
-"mappings":"A;;;;;;;;;;;;;;MAsBa,iB;;;;CAAA,W;EAAAA,Q;EAAAA;OAEY,kEAFZA,C;EAAAA;OAGK,6DAHLA,C;;;;;;;;;;QAKJ,oG,CAC0BC,c,EAAyBC,U,EAAcC,K;EADjEC,4B;EAAAA,wC;EAAAA,qM;EAAAA,iB;;;;;;;;CAAA,uJ,CAC0BH,c,EAAyBC,U,EAAcC,K;EACtEE,yL;EACAA,mG;EACAA,qF;EACAA,2E;;;;;;;CAIa,iB;EACbC,Y;;;;;;;;CAWO,mC,CAAuBH,K;EAC9BI,+B;;;;;;;CAIc,iB;EACdC,+E;;;;;;;CAIO,gB;EACPC,0E;;;;;;;CAKU,8B,CAAaC,I;EACvBC,uJ;;;;;QA3CS,O;EAAAC,oC;EAAAA,iC;EAAAA;",
+"lineCount":62,
+"mappings":"A;;;;;;;;;;;;;;MAsBa,iB;;CAAA,W;EAAAA,Q;EAAAA;OAEY,kEAFZA,C;EAAAA;OAGK,6DAHLA,C;;;QAKJ,oG,qCAC0BC,c,kBAAyBC,U,WAAcC,K;EADjEC,4B;EAAAA,wC;EAAAA,qM;EAAAA,iB;;;CAAA,uJ,qCAC0BH,c,kBAAyBC,U,WAAcC,K;EACtEE,yL;EACAA,mG;EACAA,qF;EACAA,2E;;;CAIa,iB;EACbC,Y;;;CAWO,mC,UAAuBH,K;EAC9BI,8B;;;CAIc,iB;EACdC,+E;;;CAIO,gB;EACPC,0E;;;CAKU,8B,UAAaC,I;EACvBC,sJ;;;QA3CS,O;EAAAC,oC;EAAAA,iC;EAAAA;",
 "sources":["RootEditorContext.java"],
 "names":["org.gwtproject.editor.client.impl.RootEditorContext.<synthetic: ctor_js>","editorDelegate","editedType","value","org.gwtproject.editor.client.impl.RootEditorContext.<synthetic: ctor_create>","org.gwtproject.editor.client.impl.RootEditorContext.<init>","org.gwtproject.editor.client.impl.RootEditorContext.canSetInModel","org.gwtproject.editor.client.impl.RootEditorContext.checkAssignment","org.gwtproject.editor.client.impl.RootEditorContext.getEditedType","org.gwtproject.editor.client.impl.RootEditorContext.getFromModel","data","org.gwtproject.editor.client.impl.RootEditorContext.setInModel","org.gwtproject.editor.client.impl.RootEditorContext.<clinit>"]
 }

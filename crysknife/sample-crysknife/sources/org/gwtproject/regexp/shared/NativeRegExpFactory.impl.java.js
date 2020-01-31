@@ -7,75 +7,44 @@ let NativeRegExp = goog.forwardDeclare('org.gwtproject.regexp.client.NativeRegEx
 let RegExp = goog.forwardDeclare('org.gwtproject.regexp.shared.RegExp$impl');
 
 class NativeRegExpFactory extends RegExpFactory {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!NativeRegExpFactory}
-  * @public
-  */
+ /** @return {!NativeRegExpFactory} */
  static $create__() {
   NativeRegExpFactory.$clinit();
   let $instance = new NativeRegExpFactory();
   $instance.$ctor__org_gwtproject_regexp_shared_NativeRegExpFactory__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_regexp_shared_NativeRegExpFactory__() {
   this.$ctor__org_gwtproject_regexp_shared_RegExpFactory__();
  }
- /**
-  * @override
-  * @param {?string} pattern
-  * @param {?string} flags
-  * @return {RegExp}
-  * @public
-  */
- m_compile__java_lang_String__java_lang_String_$pp_org_gwtproject_regexp_shared(pattern, flags) {
+ /** @override @return {RegExp} */
+ m_compile__java_lang_String__java_lang_String_$pp_org_gwtproject_regexp_shared(/** ?string */ pattern, /** ?string */ flags) {
   return NativeRegExp.m_compile__java_lang_String__java_lang_String(pattern, flags);
  }
- /**
-  * @override
-  * @param {?string} pattern
-  * @return {RegExp}
-  * @public
-  */
- m_compile__java_lang_String_$pp_org_gwtproject_regexp_shared(pattern) {
+ /** @override @return {RegExp} */
+ m_compile__java_lang_String_$pp_org_gwtproject_regexp_shared(/** ?string */ pattern) {
   return NativeRegExp.m_compile__java_lang_String(pattern);
  }
- /**
-  * @override
-  * @param {?string} input
-  * @return {?string}
-  * @public
-  */
- m_quote__java_lang_String_$pp_org_gwtproject_regexp_shared(input) {
+ /** @override @return {?string} */
+ m_quote__java_lang_String_$pp_org_gwtproject_regexp_shared(/** ?string */ input) {
   return NativeRegExp.m_quote__java_lang_String(input);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NativeRegExpFactory.$clinit = () =>{};
   NativeRegExpFactory.$loadModules();
   RegExpFactory.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof NativeRegExpFactory;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   NativeRegExp = goog.module.get('org.gwtproject.regexp.client.NativeRegExp$impl');
  }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TouchCancelHandler$$LambdaAdaptor.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;MAoBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;iF;EAAAA,kJ;;;;;;CAAA,wI;EAAAC,iC;EAAAA,oF;;;;;;CAAA,iE;;GAAAC,+F;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MAoBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;iF;EAAAA,kJ;;;CAAA,wI;EAAAC,iC;EAAAA,oF;;;CAAA,iE;;GAAAC,+F;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["TouchCancelHandler.java"],
 "names":["org.gwtproject.event.dom.client.TouchCancelHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.dom.client.TouchCancelHandler$$LambdaAdaptor.<init>","org.gwtproject.event.dom.client.TouchCancelHandler$$LambdaAdaptor.onTouchCancel","org.gwtproject.event.dom.client.TouchCancelHandler$$LambdaAdaptor.<clinit>"]
 }

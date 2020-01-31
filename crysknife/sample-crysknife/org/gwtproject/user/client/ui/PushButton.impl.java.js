@@ -7,268 +7,170 @@ let ClickHandler = goog.forwardDeclare('org.gwtproject.event.dom.client.ClickHan
 let Image = goog.forwardDeclare('org.gwtproject.user.client.ui.Image$impl');
 
 class PushButton extends CustomButton {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * Factory method corresponding to constructor 'PushButton()'.
-  * @return {!PushButton}
-  * @public
-  */
+ //Factory method corresponding to constructor 'PushButton()'.
+ /** @return {!PushButton} */
  static $create__() {
   PushButton.$clinit();
   let $instance = new PushButton();
   $instance.$ctor__org_gwtproject_user_client_ui_PushButton__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'PushButton()'.
-  * @public
-  */
+ //Initialization from constructor 'PushButton()'.
+ 
  $ctor__org_gwtproject_user_client_ui_PushButton__() {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__();
   this.$init___$p_org_gwtproject_user_client_ui_PushButton();
  }
- /**
-  * Factory method corresponding to constructor 'PushButton(Image)'.
-  * @param {Image} upImage
-  * @return {!PushButton}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_Image(upImage) {
+ //Factory method corresponding to constructor 'PushButton(Image)'.
+ /** @return {!PushButton} */
+ static $create__org_gwtproject_user_client_ui_Image(/** Image */ upImage) {
   PushButton.$clinit();
   let $instance = new PushButton();
   $instance.$ctor__org_gwtproject_user_client_ui_PushButton__org_gwtproject_user_client_ui_Image(upImage);
   return $instance;
  }
- /**
-  * Initialization from constructor 'PushButton(Image)'.
-  * @param {Image} upImage
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_PushButton__org_gwtproject_user_client_ui_Image(upImage) {
+ //Initialization from constructor 'PushButton(Image)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_PushButton__org_gwtproject_user_client_ui_Image(/** Image */ upImage) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__org_gwtproject_user_client_ui_Image(upImage);
   this.$init___$p_org_gwtproject_user_client_ui_PushButton();
  }
- /**
-  * Factory method corresponding to constructor 'PushButton(Image, ClickHandler)'.
-  * @param {Image} upImage
-  * @param {ClickHandler} handler
-  * @return {!PushButton}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(upImage, handler) {
+ //Factory method corresponding to constructor 'PushButton(Image, ClickHandler)'.
+ /** @return {!PushButton} */
+ static $create__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(/** Image */ upImage, /** ClickHandler */ handler) {
   PushButton.$clinit();
   let $instance = new PushButton();
   $instance.$ctor__org_gwtproject_user_client_ui_PushButton__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(upImage, handler);
   return $instance;
  }
- /**
-  * Initialization from constructor 'PushButton(Image, ClickHandler)'.
-  * @param {Image} upImage
-  * @param {ClickHandler} handler
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_PushButton__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(upImage, handler) {
+ //Initialization from constructor 'PushButton(Image, ClickHandler)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_PushButton__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(/** Image */ upImage, /** ClickHandler */ handler) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(upImage, handler);
   this.$init___$p_org_gwtproject_user_client_ui_PushButton();
  }
- /**
-  * Factory method corresponding to constructor 'PushButton(Image, Image)'.
-  * @param {Image} upImage
-  * @param {Image} downImage
-  * @return {!PushButton}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image(upImage, downImage) {
+ //Factory method corresponding to constructor 'PushButton(Image, Image)'.
+ /** @return {!PushButton} */
+ static $create__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image(/** Image */ upImage, /** Image */ downImage) {
   PushButton.$clinit();
   let $instance = new PushButton();
   $instance.$ctor__org_gwtproject_user_client_ui_PushButton__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image(upImage, downImage);
   return $instance;
  }
- /**
-  * Initialization from constructor 'PushButton(Image, Image)'.
-  * @param {Image} upImage
-  * @param {Image} downImage
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_PushButton__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image(upImage, downImage) {
+ //Initialization from constructor 'PushButton(Image, Image)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_PushButton__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image(/** Image */ upImage, /** Image */ downImage) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image(upImage, downImage);
   this.$init___$p_org_gwtproject_user_client_ui_PushButton();
  }
- /**
-  * Factory method corresponding to constructor 'PushButton(Image, Image, ClickHandler)'.
-  * @param {Image} upImage
-  * @param {Image} downImage
-  * @param {ClickHandler} handler
-  * @return {!PushButton}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(upImage, downImage, handler) {
+ //Factory method corresponding to constructor 'PushButton(Image, Image, ClickHandler)'.
+ /** @return {!PushButton} */
+ static $create__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(/** Image */ upImage, /** Image */ downImage, /** ClickHandler */ handler) {
   PushButton.$clinit();
   let $instance = new PushButton();
   $instance.$ctor__org_gwtproject_user_client_ui_PushButton__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(upImage, downImage, handler);
   return $instance;
  }
- /**
-  * Initialization from constructor 'PushButton(Image, Image, ClickHandler)'.
-  * @param {Image} upImage
-  * @param {Image} downImage
-  * @param {ClickHandler} handler
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_PushButton__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(upImage, downImage, handler) {
+ //Initialization from constructor 'PushButton(Image, Image, ClickHandler)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_PushButton__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(/** Image */ upImage, /** Image */ downImage, /** ClickHandler */ handler) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__org_gwtproject_user_client_ui_Image__org_gwtproject_user_client_ui_Image__org_gwtproject_event_dom_client_ClickHandler(upImage, downImage, handler);
   this.$init___$p_org_gwtproject_user_client_ui_PushButton();
  }
- /**
-  * Factory method corresponding to constructor 'PushButton(String)'.
-  * @param {?string} upText
-  * @return {!PushButton}
-  * @public
-  */
- static $create__java_lang_String(upText) {
+ //Factory method corresponding to constructor 'PushButton(String)'.
+ /** @return {!PushButton} */
+ static $create__java_lang_String(/** ?string */ upText) {
   PushButton.$clinit();
   let $instance = new PushButton();
   $instance.$ctor__org_gwtproject_user_client_ui_PushButton__java_lang_String(upText);
   return $instance;
  }
- /**
-  * Initialization from constructor 'PushButton(String)'.
-  * @param {?string} upText
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_PushButton__java_lang_String(upText) {
+ //Initialization from constructor 'PushButton(String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_PushButton__java_lang_String(/** ?string */ upText) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__java_lang_String(upText);
   this.$init___$p_org_gwtproject_user_client_ui_PushButton();
  }
- /**
-  * Factory method corresponding to constructor 'PushButton(String, ClickHandler)'.
-  * @param {?string} upText
-  * @param {ClickHandler} handler
-  * @return {!PushButton}
-  * @public
-  */
- static $create__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(upText, handler) {
+ //Factory method corresponding to constructor 'PushButton(String, ClickHandler)'.
+ /** @return {!PushButton} */
+ static $create__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(/** ?string */ upText, /** ClickHandler */ handler) {
   PushButton.$clinit();
   let $instance = new PushButton();
   $instance.$ctor__org_gwtproject_user_client_ui_PushButton__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(upText, handler);
   return $instance;
  }
- /**
-  * Initialization from constructor 'PushButton(String, ClickHandler)'.
-  * @param {?string} upText
-  * @param {ClickHandler} handler
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_PushButton__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(upText, handler) {
+ //Initialization from constructor 'PushButton(String, ClickHandler)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_PushButton__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(/** ?string */ upText, /** ClickHandler */ handler) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(upText, handler);
   this.$init___$p_org_gwtproject_user_client_ui_PushButton();
  }
- /**
-  * Factory method corresponding to constructor 'PushButton(String, String)'.
-  * @param {?string} upText
-  * @param {?string} downText
-  * @return {!PushButton}
-  * @public
-  */
- static $create__java_lang_String__java_lang_String(upText, downText) {
+ //Factory method corresponding to constructor 'PushButton(String, String)'.
+ /** @return {!PushButton} */
+ static $create__java_lang_String__java_lang_String(/** ?string */ upText, /** ?string */ downText) {
   PushButton.$clinit();
   let $instance = new PushButton();
   $instance.$ctor__org_gwtproject_user_client_ui_PushButton__java_lang_String__java_lang_String(upText, downText);
   return $instance;
  }
- /**
-  * Initialization from constructor 'PushButton(String, String)'.
-  * @param {?string} upText
-  * @param {?string} downText
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_PushButton__java_lang_String__java_lang_String(upText, downText) {
+ //Initialization from constructor 'PushButton(String, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_PushButton__java_lang_String__java_lang_String(/** ?string */ upText, /** ?string */ downText) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__java_lang_String__java_lang_String(upText, downText);
   this.$init___$p_org_gwtproject_user_client_ui_PushButton();
  }
- /**
-  * Factory method corresponding to constructor 'PushButton(String, String, ClickHandler)'.
-  * @param {?string} upText
-  * @param {?string} downText
-  * @param {ClickHandler} handler
-  * @return {!PushButton}
-  * @public
-  */
- static $create__java_lang_String__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(upText, downText, handler) {
+ //Factory method corresponding to constructor 'PushButton(String, String, ClickHandler)'.
+ /** @return {!PushButton} */
+ static $create__java_lang_String__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(/** ?string */ upText, /** ?string */ downText, /** ClickHandler */ handler) {
   PushButton.$clinit();
   let $instance = new PushButton();
   $instance.$ctor__org_gwtproject_user_client_ui_PushButton__java_lang_String__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(upText, downText, handler);
   return $instance;
  }
- /**
-  * Initialization from constructor 'PushButton(String, String, ClickHandler)'.
-  * @param {?string} upText
-  * @param {?string} downText
-  * @param {ClickHandler} handler
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_PushButton__java_lang_String__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(upText, downText, handler) {
+ //Initialization from constructor 'PushButton(String, String, ClickHandler)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_PushButton__java_lang_String__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(/** ?string */ upText, /** ?string */ downText, /** ClickHandler */ handler) {
   this.$ctor__org_gwtproject_user_client_ui_CustomButton__java_lang_String__java_lang_String__org_gwtproject_event_dom_client_ClickHandler(upText, downText, handler);
   this.$init___$p_org_gwtproject_user_client_ui_PushButton();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onClick__() {
   this.m_setDown__boolean(false);
   super.m_onClick__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onClickCancel__() {
   this.m_setDown__boolean(false);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onClickStart__() {
   this.m_setDown__boolean(true);
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_PushButton() {
   this.m_setStyleName__java_lang_String(PushButton.f_STYLENAME_DEFAULT__org_gwtproject_user_client_ui_PushButton_);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   PushButton.$clinit = () =>{};
   PushButton.$loadModules();
   CustomButton.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof PushButton;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }
 $Util.$setClassMetadata(PushButton, 'org.gwtproject.user.client.ui.PushButton');
 
-/** @public {?string} @const */
+/**@const {?string}*/
 PushButton.f_STYLENAME_DEFAULT__org_gwtproject_user_client_ui_PushButton_ = "gwt-PushButton";
 
 exports = PushButton; 

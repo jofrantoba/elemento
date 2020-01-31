@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"PopupPanel$PositionCallback.impl.java.js",
-"lineCount":32,
-"mappings":"A;;;;;;;;;MA+FmB,gB;;;;;;;CAYV,uB,CAAgBA,W,EAAiBC,Y;;;;;;QAZvB,M;EAAAC,2B;EAAAA,8B;;;;;QAAA,O;EAAAC,mC;EAAAA;",
+"lineCount":21,
+"mappings":"A;;;;;;;;;MA+FmB,gB;;CAYV,uB,eAAgBA,W,gBAAiBC,Y;;QAZvB,M;EAAAC,2B;EAAAA,8B;;;QAAA,O;EAAAC,mC;EAAAA;",
 "sources":["PopupPanel.java"],
 "names":["offsetWidth","offsetHeight","org.gwtproject.user.client.ui.PopupPanel$PositionCallback.<synthetic: adapt_lambda>","org.gwtproject.user.client.ui.PopupPanel$PositionCallback.<clinit>"]
 }

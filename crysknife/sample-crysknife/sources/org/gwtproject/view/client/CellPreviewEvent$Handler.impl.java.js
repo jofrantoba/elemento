@@ -10,50 +10,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.view.client.CellPreview
  * @template T
  */
 class Handler {
- /**
-  * @abstract
-  * @param {CellPreviewEvent<T>} event
-  * @public
-  */
- m_onCellPreview__org_gwtproject_view_client_CellPreviewEvent(event) {}
- /**
-  * @template T
-  * @param {?function(CellPreviewEvent<T>):void} fn
-  * @return {Handler<T>}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onCellPreview__org_gwtproject_view_client_CellPreviewEvent(/** CellPreviewEvent<T> */ event) {}
+ /** @template T @return {Handler<T>} */
+ static $adapt(/** ?function(CellPreviewEvent<T>):void */ fn) {
   Handler.$clinit();
-  return /**@type {!$LambdaAdaptor<T>} */ (new $LambdaAdaptor(fn));
+  return /**@type {!$LambdaAdaptor<T>}*/ (new $LambdaAdaptor(fn));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Handler.$clinit = () =>{};
   Handler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_view_client_CellPreviewEvent_Handler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_view_client_CellPreviewEvent_Handler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_view_client_CellPreviewEvent_Handler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.view.client.CellPreviewEvent.Handler.$LambdaAdaptor$impl');
  }

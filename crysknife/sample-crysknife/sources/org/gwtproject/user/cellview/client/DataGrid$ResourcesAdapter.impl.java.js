@@ -13,79 +13,50 @@ let StyleAdapter = goog.forwardDeclare('org.gwtproject.user.cellview.client.Data
  * @implements {Resources}
   */
 class ResourcesAdapter extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {DataGrid_Resources} */
+  /**@type {DataGrid_Resources}*/
   this.f_resources__org_gwtproject_user_cellview_client_DataGrid_ResourcesAdapter_;
-  /** @public {StyleAdapter} */
+  /**@type {StyleAdapter}*/
   this.f_style__org_gwtproject_user_cellview_client_DataGrid_ResourcesAdapter_;
  }
- /**
-  * @param {DataGrid_Resources} resources
-  * @return {!ResourcesAdapter}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_DataGrid_Resources(resources) {
+ /** @return {!ResourcesAdapter} */
+ static $create__org_gwtproject_user_cellview_client_DataGrid_Resources(/** DataGrid_Resources */ resources) {
   ResourcesAdapter.$clinit();
   let $instance = new ResourcesAdapter();
   $instance.$ctor__org_gwtproject_user_cellview_client_DataGrid_ResourcesAdapter__org_gwtproject_user_cellview_client_DataGrid_Resources(resources);
   return $instance;
  }
- /**
-  * @param {DataGrid_Resources} resources
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_DataGrid_ResourcesAdapter__org_gwtproject_user_cellview_client_DataGrid_Resources(resources) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_DataGrid_ResourcesAdapter__org_gwtproject_user_cellview_client_DataGrid_Resources(/** DataGrid_Resources */ resources) {
   this.$ctor__java_lang_Object__();
   this.f_resources__org_gwtproject_user_cellview_client_DataGrid_ResourcesAdapter_ = resources;
   this.f_style__org_gwtproject_user_cellview_client_DataGrid_ResourcesAdapter_ = StyleAdapter.$create__org_gwtproject_user_cellview_client_DataGrid_Style(resources.m_dataGridStyle__());
  }
- /**
-  * @override
-  * @return {ImageResource}
-  * @public
-  */
+ /** @override @return {ImageResource} */
  m_sortAscending__() {
   return this.f_resources__org_gwtproject_user_cellview_client_DataGrid_ResourcesAdapter_.m_dataGridSortAscending__();
  }
- /**
-  * @override
-  * @return {ImageResource}
-  * @public
-  */
+ /** @override @return {ImageResource} */
  m_sortDescending__() {
   return this.f_resources__org_gwtproject_user_cellview_client_DataGrid_ResourcesAdapter_.m_dataGridSortDescending__();
  }
- /**
-  * @override
-  * @return {Style}
-  * @public
-  */
+ /** @override @return {Style} */
  m_style__() {
   return this.f_style__org_gwtproject_user_cellview_client_DataGrid_ResourcesAdapter_;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ResourcesAdapter.$clinit = () =>{};
   ResourcesAdapter.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ResourcesAdapter;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   StyleAdapter = goog.module.get('org.gwtproject.user.cellview.client.DataGrid.StyleAdapter$impl');
  }

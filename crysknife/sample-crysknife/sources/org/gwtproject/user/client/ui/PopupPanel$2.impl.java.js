@@ -11,66 +11,42 @@ let UIObject = goog.forwardDeclare('org.gwtproject.user.client.ui.UIObject$impl'
  * @implements {PositionCallback}
   */
 class $2 extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {PopupPanel} */
+  /**@type {PopupPanel}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_PopupPanel_2;
-  /** @public {UIObject} */
+  /**@type {UIObject}*/
   this.$c_target;
  }
- /**
-  * @param {PopupPanel} $outer_this
-  * @param {UIObject} $c_target
-  * @return {!$2}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_PopupPanel__org_gwtproject_user_client_ui_UIObject($outer_this, $c_target) {
+ /** @return {!$2} */
+ static $create__org_gwtproject_user_client_ui_PopupPanel__org_gwtproject_user_client_ui_UIObject(/** PopupPanel */ $outer_this, /** UIObject */ $c_target) {
   $2.$clinit();
   let $instance = new $2();
   $instance.$ctor__org_gwtproject_user_client_ui_PopupPanel_2__org_gwtproject_user_client_ui_PopupPanel__org_gwtproject_user_client_ui_UIObject($outer_this, $c_target);
   return $instance;
  }
- /**
-  * @param {PopupPanel} $outer_this
-  * @param {UIObject} $c_target
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_PopupPanel_2__org_gwtproject_user_client_ui_PopupPanel__org_gwtproject_user_client_ui_UIObject($outer_this, $c_target) {
+ 
+ $ctor__org_gwtproject_user_client_ui_PopupPanel_2__org_gwtproject_user_client_ui_PopupPanel__org_gwtproject_user_client_ui_UIObject(/** PopupPanel */ $outer_this, /** UIObject */ $c_target) {
   this.f_$outer_this__org_gwtproject_user_client_ui_PopupPanel_2 = $outer_this;
   this.$c_target = $c_target;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {number} offsetWidth
-  * @param {number} offsetHeight
-  * @public
-  */
- m_setPosition__int__int(offsetWidth, offsetHeight) {
+ /** @override */
+ m_setPosition__int__int(/** number */ offsetWidth, /** number */ offsetHeight) {
   this.f_$outer_this__org_gwtproject_user_client_ui_PopupPanel_2.m_position__org_gwtproject_user_client_ui_UIObject__int__int_$p_org_gwtproject_user_client_ui_PopupPanel(this.$c_target, offsetWidth, offsetHeight);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $2.$clinit = () =>{};
   $2.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $2;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

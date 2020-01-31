@@ -20,103 +20,61 @@ let SelectionModel = goog.forwardDeclare('org.gwtproject.view.client.SelectionMo
  * @implements {NodeInfo<T>}
   */
 class DefaultNodeInfo extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Cell<T>} */
+  /**@type {Cell<T>}*/
   this.f_cell__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_;
-  /** @public {AbstractDataProvider<T>} */
+  /**@type {AbstractDataProvider<T>}*/
   this.f_dataProvider__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_;
-  /** @public {Handler<T>} */
+  /**@type {Handler<T>}*/
   this.f_selectionEventManager__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_;
-  /** @public {HandlerRegistration} */
+  /**@type {HandlerRegistration}*/
   this.f_selectionEventManagerReg__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_;
-  /** @public {SelectionModel<?>} */
+  /**@type {SelectionModel<?>}*/
   this.f_selectionModel__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_;
-  /** @public {ValueUpdater<T>} */
+  /**@type {ValueUpdater<T>}*/
   this.f_valueUpdater__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_;
-  /** @public {HasData<T>} */
+  /**@type {HasData<T>}*/
   this.f_display__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_;
  }
- /**
-  * Factory method corresponding to constructor 'DefaultNodeInfo(AbstractDataProvider, Cell)'.
-  * @template T
-  * @param {AbstractDataProvider<T>} dataProvider
-  * @param {Cell<T>} cell
-  * @return {!DefaultNodeInfo<T>}
-  * @public
-  */
- static $create__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_cell_client_Cell(dataProvider, cell) {
+ //Factory method corresponding to constructor 'DefaultNodeInfo(AbstractDataProvider, Cell)'.
+ /** @template T @return {!DefaultNodeInfo<T>} */
+ static $create__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_cell_client_Cell(/** AbstractDataProvider<T> */ dataProvider, /** Cell<T> */ cell) {
   DefaultNodeInfo.$clinit();
   let $instance = new DefaultNodeInfo();
   $instance.$ctor__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_cell_client_Cell(dataProvider, cell);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DefaultNodeInfo(AbstractDataProvider, Cell)'.
-  * @param {AbstractDataProvider<T>} dataProvider
-  * @param {Cell<T>} cell
-  * @public
-  */
- $ctor__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_cell_client_Cell(dataProvider, cell) {
+ //Initialization from constructor 'DefaultNodeInfo(AbstractDataProvider, Cell)'.
+ 
+ $ctor__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_cell_client_Cell(/** AbstractDataProvider<T> */ dataProvider, /** Cell<T> */ cell) {
   this.$ctor__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_cell_client_Cell__org_gwtproject_view_client_SelectionModel__org_gwtproject_cell_client_ValueUpdater(dataProvider, cell, null, null);
  }
- /**
-  * Factory method corresponding to constructor 'DefaultNodeInfo(AbstractDataProvider, Cell, SelectionModel, ValueUpdater)'.
-  * @template T
-  * @param {AbstractDataProvider<T>} dataProvider
-  * @param {Cell<T>} cell
-  * @param {SelectionModel<?>} selectionModel
-  * @param {ValueUpdater<T>} valueUpdater
-  * @return {!DefaultNodeInfo<T>}
-  * @public
-  */
- static $create__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_cell_client_Cell__org_gwtproject_view_client_SelectionModel__org_gwtproject_cell_client_ValueUpdater(dataProvider, cell, selectionModel, valueUpdater) {
+ //Factory method corresponding to constructor 'DefaultNodeInfo(AbstractDataProvider, Cell, SelectionModel, ValueUpdater)'.
+ /** @template T @return {!DefaultNodeInfo<T>} */
+ static $create__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_cell_client_Cell__org_gwtproject_view_client_SelectionModel__org_gwtproject_cell_client_ValueUpdater(/** AbstractDataProvider<T> */ dataProvider, /** Cell<T> */ cell, /** SelectionModel<?> */ selectionModel, /** ValueUpdater<T> */ valueUpdater) {
   DefaultNodeInfo.$clinit();
   let $instance = new DefaultNodeInfo();
   $instance.$ctor__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_cell_client_Cell__org_gwtproject_view_client_SelectionModel__org_gwtproject_cell_client_ValueUpdater(dataProvider, cell, selectionModel, valueUpdater);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DefaultNodeInfo(AbstractDataProvider, Cell, SelectionModel, ValueUpdater)'.
-  * @param {AbstractDataProvider<T>} dataProvider
-  * @param {Cell<T>} cell
-  * @param {SelectionModel<?>} selectionModel
-  * @param {ValueUpdater<T>} valueUpdater
-  * @public
-  */
- $ctor__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_cell_client_Cell__org_gwtproject_view_client_SelectionModel__org_gwtproject_cell_client_ValueUpdater(dataProvider, cell, selectionModel, valueUpdater) {
-  this.$ctor__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_cell_client_Cell__org_gwtproject_view_client_SelectionModel__org_gwtproject_view_client_CellPreviewEvent_Handler__org_gwtproject_cell_client_ValueUpdater(dataProvider, cell, selectionModel, /**@type {DefaultSelectionEventManager<T>} */ (DefaultSelectionEventManager.m_createDefaultManager__()), valueUpdater);
+ //Initialization from constructor 'DefaultNodeInfo(AbstractDataProvider, Cell, SelectionModel, ValueUpdater)'.
+ 
+ $ctor__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_cell_client_Cell__org_gwtproject_view_client_SelectionModel__org_gwtproject_cell_client_ValueUpdater(/** AbstractDataProvider<T> */ dataProvider, /** Cell<T> */ cell, /** SelectionModel<?> */ selectionModel, /** ValueUpdater<T> */ valueUpdater) {
+  this.$ctor__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_cell_client_Cell__org_gwtproject_view_client_SelectionModel__org_gwtproject_view_client_CellPreviewEvent_Handler__org_gwtproject_cell_client_ValueUpdater(dataProvider, cell, selectionModel, /**@type {DefaultSelectionEventManager<T>}*/ (DefaultSelectionEventManager.m_createDefaultManager__()), valueUpdater);
  }
- /**
-  * Factory method corresponding to constructor 'DefaultNodeInfo(AbstractDataProvider, Cell, SelectionModel, Handler, ValueUpdater)'.
-  * @template T
-  * @param {AbstractDataProvider<T>} dataProvider
-  * @param {Cell<T>} cell
-  * @param {SelectionModel<?>} selectionModel
-  * @param {Handler<T>} selectionEventManager
-  * @param {ValueUpdater<T>} valueUpdater
-  * @return {!DefaultNodeInfo<T>}
-  * @public
-  */
- static $create__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_cell_client_Cell__org_gwtproject_view_client_SelectionModel__org_gwtproject_view_client_CellPreviewEvent_Handler__org_gwtproject_cell_client_ValueUpdater(dataProvider, cell, selectionModel, selectionEventManager, valueUpdater) {
+ //Factory method corresponding to constructor 'DefaultNodeInfo(AbstractDataProvider, Cell, SelectionModel, Handler, ValueUpdater)'.
+ /** @template T @return {!DefaultNodeInfo<T>} */
+ static $create__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_cell_client_Cell__org_gwtproject_view_client_SelectionModel__org_gwtproject_view_client_CellPreviewEvent_Handler__org_gwtproject_cell_client_ValueUpdater(/** AbstractDataProvider<T> */ dataProvider, /** Cell<T> */ cell, /** SelectionModel<?> */ selectionModel, /** Handler<T> */ selectionEventManager, /** ValueUpdater<T> */ valueUpdater) {
   DefaultNodeInfo.$clinit();
   let $instance = new DefaultNodeInfo();
   $instance.$ctor__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_cell_client_Cell__org_gwtproject_view_client_SelectionModel__org_gwtproject_view_client_CellPreviewEvent_Handler__org_gwtproject_cell_client_ValueUpdater(dataProvider, cell, selectionModel, selectionEventManager, valueUpdater);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DefaultNodeInfo(AbstractDataProvider, Cell, SelectionModel, Handler, ValueUpdater)'.
-  * @param {AbstractDataProvider<T>} dataProvider
-  * @param {Cell<T>} cell
-  * @param {SelectionModel<?>} selectionModel
-  * @param {Handler<T>} selectionEventManager
-  * @param {ValueUpdater<T>} valueUpdater
-  * @public
-  */
- $ctor__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_cell_client_Cell__org_gwtproject_view_client_SelectionModel__org_gwtproject_view_client_CellPreviewEvent_Handler__org_gwtproject_cell_client_ValueUpdater(dataProvider, cell, selectionModel, selectionEventManager, valueUpdater) {
+ //Initialization from constructor 'DefaultNodeInfo(AbstractDataProvider, Cell, SelectionModel, Handler, ValueUpdater)'.
+ 
+ $ctor__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo__org_gwtproject_view_client_AbstractDataProvider__org_gwtproject_cell_client_Cell__org_gwtproject_view_client_SelectionModel__org_gwtproject_view_client_CellPreviewEvent_Handler__org_gwtproject_cell_client_ValueUpdater(/** AbstractDataProvider<T> */ dataProvider, /** Cell<T> */ cell, /** SelectionModel<?> */ selectionModel, /** Handler<T> */ selectionEventManager, /** ValueUpdater<T> */ valueUpdater) {
   this.$ctor__java_lang_Object__();
   this.f_dataProvider__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_ = dataProvider;
   this.f_cell__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_ = cell;
@@ -124,54 +82,31 @@ class DefaultNodeInfo extends j_l_Object {
   this.f_valueUpdater__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_ = valueUpdater;
   this.f_selectionEventManager__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_ = selectionEventManager;
  }
- /**
-  * @override
-  * @return {Cell<T>}
-  * @public
-  */
+ /** @override @return {Cell<T>} */
  m_getCell__() {
   return this.f_cell__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_;
  }
- /**
-  * @override
-  * @return {ProvidesKey<T>}
-  * @public
-  */
+ /** @override @return {ProvidesKey<T>} */
  m_getProvidesKey__() {
   return this.f_dataProvider__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_;
  }
- /**
-  * @override
-  * @return {SelectionModel<?>}
-  * @public
-  */
+ /** @override @return {SelectionModel<?>} */
  m_getSelectionModel__() {
   return this.f_selectionModel__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_;
  }
- /**
-  * @override
-  * @return {ValueUpdater<T>}
-  * @public
-  */
+ /** @override @return {ValueUpdater<T>} */
  m_getValueUpdater__() {
   return this.f_valueUpdater__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_;
  }
- /**
-  * @override
-  * @param {HasData<T>} display
-  * @public
-  */
- m_setDataDisplay__org_gwtproject_view_client_HasData(display) {
+ /** @override */
+ m_setDataDisplay__org_gwtproject_view_client_HasData(/** HasData<T> */ display) {
   this.f_display__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_ = display;
   if (!$Equality.$same(this.f_selectionEventManager__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_, null)) {
    this.f_selectionEventManagerReg__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_ = display.m_addCellPreviewHandler__org_gwtproject_view_client_CellPreviewEvent_Handler(this.f_selectionEventManager__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_);
   }
   this.f_dataProvider__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_.m_addDataDisplay__org_gwtproject_view_client_HasData(display);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_unsetDataDisplay__() {
   if (!$Equality.$same(this.f_display__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_, null)) {
    this.f_dataProvider__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_.m_removeDataDisplay__org_gwtproject_view_client_HasData(this.f_display__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_);
@@ -182,25 +117,17 @@ class DefaultNodeInfo extends j_l_Object {
    this.f_display__org_gwtproject_view_client_TreeViewModel_DefaultNodeInfo_ = null;
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DefaultNodeInfo.$clinit = () =>{};
   DefaultNodeInfo.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DefaultNodeInfo;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   DefaultSelectionEventManager = goog.module.get('org.gwtproject.view.client.DefaultSelectionEventManager$impl');

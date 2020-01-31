@@ -8,35 +8,22 @@ const MenuRole = goog.require('org.gwtproject.aria.client.MenuRole$impl');
  * @extends {MenuRole}
  */
 class MenubarRole {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MenubarRole.$clinit = () =>{};
   MenubarRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  MenuRole.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_MenubarRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  MenuRole.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_MenubarRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_MenubarRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -10,48 +10,27 @@ const HasDirection = goog.require('org.gwtproject.i18n.client.HasDirection$impl'
  * @extends {HasKeyUpHandlers}
  */
 class Target {
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getText__() {}
- /**
-  * @abstract
-  * @param {?string} text
-  * @public
-  */
- m_setText__java_lang_String(text) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_setText__java_lang_String(/** ?string */ text) {}
+ 
  static $clinit() {
   Target.$clinit = () =>{};
   Target.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasDirection.$markImplementor(classConstructor);
-  HasKeyUpHandlers.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_i18n_client_AutoDirectionHandler_Target = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasDirection.$markImplementor(ctor);
+  HasKeyUpHandlers.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_i18n_client_AutoDirectionHandler_Target = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_i18n_client_AutoDirectionHandler_Target;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -6,46 +6,25 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @interface
  */
 class HasText {
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getText__() {}
- /**
-  * @abstract
-  * @param {?string} text
-  * @public
-  */
- m_setText__java_lang_String(text) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_setText__java_lang_String(/** ?string */ text) {}
+ 
  static $clinit() {
   HasText.$clinit = () =>{};
   HasText.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_HasText = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_HasText = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_HasText;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

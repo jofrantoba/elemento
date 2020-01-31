@@ -10,49 +10,32 @@ let Layer = goog.forwardDeclare('org.gwtproject.layout.client.Layout.Layer$impl'
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class $1 extends Animation {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Layout} */
+  /**@type {Layout}*/
   this.f_$outer_this__org_gwtproject_layout_client_Layout_1;
-  /** @public {AnimationCallback} */
+  /**@type {AnimationCallback}*/
   this.$c_callback;
  }
- /**
-  * @param {Layout} $outer_this
-  * @param {AnimationCallback} $c_callback
-  * @return {!$1}
-  * @public
-  */
- static $create__org_gwtproject_layout_client_Layout__org_gwtproject_layout_client_Layout_AnimationCallback($outer_this, $c_callback) {
+ /** @return {!$1} */
+ static $create__org_gwtproject_layout_client_Layout__org_gwtproject_layout_client_Layout_AnimationCallback(/** Layout */ $outer_this, /** AnimationCallback */ $c_callback) {
   $1.$clinit();
   let $instance = new $1();
   $instance.$ctor__org_gwtproject_layout_client_Layout_1__org_gwtproject_layout_client_Layout__org_gwtproject_layout_client_Layout_AnimationCallback($outer_this, $c_callback);
   return $instance;
  }
- /**
-  * @param {Layout} $outer_this
-  * @param {AnimationCallback} $c_callback
-  * @public
-  */
- $ctor__org_gwtproject_layout_client_Layout_1__org_gwtproject_layout_client_Layout__org_gwtproject_layout_client_Layout_AnimationCallback($outer_this, $c_callback) {
+ 
+ $ctor__org_gwtproject_layout_client_Layout_1__org_gwtproject_layout_client_Layout__org_gwtproject_layout_client_Layout_AnimationCallback(/** Layout */ $outer_this, /** AnimationCallback */ $c_callback) {
   this.f_$outer_this__org_gwtproject_layout_client_Layout_1 = $outer_this;
   this.$c_callback = $c_callback;
   this.$ctor__org_gwtproject_animation_client_Animation__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onCancel__() {
   this.m_onComplete__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onComplete__() {
   this.f_$outer_this__org_gwtproject_layout_client_Layout_1.f_animation__org_gwtproject_layout_client_Layout_ = null;
   this.f_$outer_this__org_gwtproject_layout_client_Layout_1.m_layout__();
@@ -60,14 +43,10 @@ class $1 extends Animation {
    this.$c_callback.m_onAnimationComplete__();
   }
  }
- /**
-  * @override
-  * @param {number} progress
-  * @public
-  */
- m_onUpdate__double(progress) {
+ /** @override */
+ m_onUpdate__double(/** number */ progress) {
   for (let $iterator = this.f_$outer_this__org_gwtproject_layout_client_Layout_1.f_layers__org_gwtproject_layout_client_Layout_.m_iterator__(); $iterator.m_hasNext__(); ) {
-   let l = /**@type {Layer} */ ($Casts.$to($iterator.m_next__(), Layer));
+   let l = /**@type {Layer}*/ ($Casts.$to($iterator.m_next__(), Layer));
    if (l.f_setTargetLeft__org_gwtproject_layout_client_Layout_Layer) {
     l.f_left__org_gwtproject_layout_client_Layout_Layer = l.f_sourceLeft__org_gwtproject_layout_client_Layout_Layer + (l.f_targetLeft__org_gwtproject_layout_client_Layout_Layer - l.f_sourceLeft__org_gwtproject_layout_client_Layout_Layer) * progress;
    }
@@ -93,25 +72,17 @@ class $1 extends Animation {
   }
   this.f_$outer_this__org_gwtproject_layout_client_Layout_1.f_impl__org_gwtproject_layout_client_Layout_.m_finalizeLayout__org_gwtproject_dom_client_Element(this.f_$outer_this__org_gwtproject_layout_client_Layout_1.f_parentElem__org_gwtproject_layout_client_Layout_);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $1.$clinit = () =>{};
   $1.$loadModules();
   Animation.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $1;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   Layer = goog.module.get('org.gwtproject.layout.client.Layout.Layer$impl');

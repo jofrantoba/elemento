@@ -16,55 +16,40 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {HasNativeEvent}
   */
 class NativePreviewEvent extends GwtEvent {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isCanceled__org_gwtproject_user_client_Event_NativePreviewEvent_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isConsumed__org_gwtproject_user_client_Event_NativePreviewEvent_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isFirstHandler__org_gwtproject_user_client_Event_NativePreviewEvent_ = false;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_nativeEvent__org_gwtproject_user_client_Event_NativePreviewEvent_;
  }
- /**
-  * @return {!NativePreviewEvent}
-  * @public
-  */
+ /** @return {!NativePreviewEvent} */
  static $create__() {
   NativePreviewEvent.$clinit();
   let $instance = new NativePreviewEvent();
   $instance.$ctor__org_gwtproject_user_client_Event_NativePreviewEvent__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_Event_NativePreviewEvent__() {
   this.$ctor__org_gwtproject_event_legacy_shared_GwtEvent__();
   this.$init___$p_org_gwtproject_user_client_Event_NativePreviewEvent();
  }
- /**
-  * @return {Type<NativePreviewHandler>}
-  * @public
-  */
+ /** @return {Type<NativePreviewHandler>} */
  static m_getType__() {
   NativePreviewEvent.$clinit();
   if ($Equality.$same(NativePreviewEvent.$f_TYPE__org_gwtproject_user_client_Event_NativePreviewEvent_, null)) {
-   NativePreviewEvent.$f_TYPE__org_gwtproject_user_client_Event_NativePreviewEvent_ = /**@type {!Type<NativePreviewHandler>} */ (Type.$create__());
+   NativePreviewEvent.$f_TYPE__org_gwtproject_user_client_Event_NativePreviewEvent_ = /**@type {!Type<NativePreviewHandler>}*/ (Type.$create__());
   }
   return NativePreviewEvent.$f_TYPE__org_gwtproject_user_client_Event_NativePreviewEvent_;
  }
- /**
-  * @param {HandlerManager} handlers
-  * @param {Object} nativeEvent
-  * @return {boolean}
-  * @public
-  */
- static m_fire__org_gwtproject_event_shared_HandlerManager__org_gwtproject_dom_client_NativeEvent(handlers, nativeEvent) {
+ /** @return {boolean} */
+ static m_fire__org_gwtproject_event_shared_HandlerManager__org_gwtproject_dom_client_NativeEvent(/** HandlerManager */ handlers, /** Object */ nativeEvent) {
   NativePreviewEvent.$clinit();
   if (!$Equality.$same(NativePreviewEvent.$f_TYPE__org_gwtproject_user_client_Event_NativePreviewEvent_, null) && !$Equality.$same(handlers, null) && handlers.m_isEventHandled__org_gwtproject_event_shared_Event_Type(NativePreviewEvent.$f_TYPE__org_gwtproject_user_client_Event_NativePreviewEvent_)) {
    let lastIsCanceled = NativePreviewEvent.$f_singleton__org_gwtproject_user_client_Event_NativePreviewEvent_.f_isCanceled__org_gwtproject_user_client_Event_NativePreviewEvent_;
@@ -83,81 +68,48 @@ class NativePreviewEvent extends GwtEvent {
   }
   return true;
  }
- /**
-  * @public
-  */
+ 
  m_cancel__() {
   this.f_isCanceled__org_gwtproject_user_client_Event_NativePreviewEvent_ = true;
  }
- /**
-  * @public
-  */
+ 
  m_consume__() {
   this.f_isConsumed__org_gwtproject_user_client_Event_NativePreviewEvent_ = true;
  }
- /**
-  * @override
-  * @return {Type<NativePreviewHandler>}
-  * @public
-  */
+ /** @override @return {Type<NativePreviewHandler>} */
  m_getAssociatedType__() {
   return NativePreviewEvent.$f_TYPE__org_gwtproject_user_client_Event_NativePreviewEvent_;
  }
- /**
-  * @override
-  * @return {Object}
-  * @public
-  */
+ /** @override @return {Object} */
  m_getNativeEvent__() {
   return this.f_nativeEvent__org_gwtproject_user_client_Event_NativePreviewEvent_;
  }
- /**
-  * @param {Object} nativeEvent
-  * @public
-  */
- m_setNativeEvent__org_gwtproject_dom_client_NativeEvent_$p_org_gwtproject_user_client_Event_NativePreviewEvent(nativeEvent) {
+ 
+ m_setNativeEvent__org_gwtproject_dom_client_NativeEvent_$p_org_gwtproject_user_client_Event_NativePreviewEvent(/** Object */ nativeEvent) {
   this.f_nativeEvent__org_gwtproject_user_client_Event_NativePreviewEvent_ = nativeEvent;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getTypeInt__() {
   return $Overlay.m_getKeyCode__$devirt__org_gwtproject_dom_client_NativeEvent(this.m_getNativeEvent__());
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isCanceled__() {
   return this.f_isCanceled__org_gwtproject_user_client_Event_NativePreviewEvent_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isConsumed__() {
   return this.f_isConsumed__org_gwtproject_user_client_Event_NativePreviewEvent_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isFirstHandler__() {
   return this.f_isFirstHandler__org_gwtproject_user_client_Event_NativePreviewEvent_;
  }
- /**
-  * @param {NativePreviewHandler} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_user_client_Event_NativePreviewHandler(handler) {
+ 
+ m_dispatch__org_gwtproject_user_client_Event_NativePreviewHandler(/** NativePreviewHandler */ handler) {
   handler.m_onPreviewNativeEvent__org_gwtproject_user_client_Event_NativePreviewEvent(this);
   NativePreviewEvent.$f_singleton__org_gwtproject_user_client_Event_NativePreviewEvent_.f_isFirstHandler__org_gwtproject_user_client_Event_NativePreviewEvent_ = false;
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_revive__() {
   super.m_revive__();
   this.f_isCanceled__org_gwtproject_user_client_Event_NativePreviewEvent_ = false;
@@ -165,70 +117,44 @@ class NativePreviewEvent extends GwtEvent {
   this.f_isFirstHandler__org_gwtproject_user_client_Event_NativePreviewEvent_ = true;
   this.f_nativeEvent__org_gwtproject_user_client_Event_NativePreviewEvent_ = null;
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_user_client_Event_NativePreviewHandler(/**@type {NativePreviewHandler} */ ($Casts.$to(arg0, NativePreviewHandler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_user_client_Event_NativePreviewHandler(/**@type {NativePreviewHandler}*/ ($Casts.$to(arg0, NativePreviewHandler)));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_Event_NativePreviewEvent() {
   this.f_isCanceled__org_gwtproject_user_client_Event_NativePreviewEvent_ = false;
   this.f_isConsumed__org_gwtproject_user_client_Event_NativePreviewEvent_ = false;
   this.f_isFirstHandler__org_gwtproject_user_client_Event_NativePreviewEvent_ = false;
  }
- /**
-  * @return {Type<NativePreviewHandler>}
-  * @public
-  */
+ /** @return {Type<NativePreviewHandler>} */
  static get f_TYPE__org_gwtproject_user_client_Event_NativePreviewEvent_() {
   return (NativePreviewEvent.$clinit(), NativePreviewEvent.$f_TYPE__org_gwtproject_user_client_Event_NativePreviewEvent_);
  }
- /**
-  * @param {Type<NativePreviewHandler>} value
-  * @public
-  */
- static set f_TYPE__org_gwtproject_user_client_Event_NativePreviewEvent_(value) {
+ 
+ static set f_TYPE__org_gwtproject_user_client_Event_NativePreviewEvent_(/** Type<NativePreviewHandler> */ value) {
   (NativePreviewEvent.$clinit(), NativePreviewEvent.$f_TYPE__org_gwtproject_user_client_Event_NativePreviewEvent_ = value);
  }
- /**
-  * @return {NativePreviewEvent}
-  * @public
-  */
+ /** @return {NativePreviewEvent} */
  static get f_singleton__org_gwtproject_user_client_Event_NativePreviewEvent_() {
   return (NativePreviewEvent.$clinit(), NativePreviewEvent.$f_singleton__org_gwtproject_user_client_Event_NativePreviewEvent_);
  }
- /**
-  * @param {NativePreviewEvent} value
-  * @public
-  */
- static set f_singleton__org_gwtproject_user_client_Event_NativePreviewEvent_(value) {
+ 
+ static set f_singleton__org_gwtproject_user_client_Event_NativePreviewEvent_(/** NativePreviewEvent */ value) {
   (NativePreviewEvent.$clinit(), NativePreviewEvent.$f_singleton__org_gwtproject_user_client_Event_NativePreviewEvent_ = value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NativePreviewEvent.$clinit = () =>{};
   NativePreviewEvent.$loadModules();
   GwtEvent.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof NativePreviewEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.NativeEvent.$Overlay$impl');
@@ -242,9 +168,9 @@ $Util.$setClassMetadata(NativePreviewEvent, 'org.gwtproject.user.client.Event$Na
 
 HasNativeEvent.$markImplementor(NativePreviewEvent);
 
-/** @private {Type<NativePreviewHandler>} */
+/**@private {Type<NativePreviewHandler>}*/
 NativePreviewEvent.$f_TYPE__org_gwtproject_user_client_Event_NativePreviewEvent_;
-/** @private {NativePreviewEvent} */
+/**@private {NativePreviewEvent}*/
 NativePreviewEvent.$f_singleton__org_gwtproject_user_client_Event_NativePreviewEvent_;
 
 exports = NativePreviewEvent; 

@@ -9,59 +9,38 @@ let TextTransform = goog.forwardDeclare('org.gwtproject.dom.style.shared.TextTra
  * @deprecated
   */
 class Style_TextTransform extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!Style_TextTransform}
-  * @public
-  */
+ /** @return {!Style_TextTransform} */
  static $create__() {
   Style_TextTransform.$clinit();
   let $instance = new Style_TextTransform();
   $instance.$ctor__org_gwtproject_dom_client_Style_TextTransform__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_dom_client_Style_TextTransform__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {TextTransform}
-  * @public
-  */
+ /** @return {TextTransform} */
  static get f_CAPITALIZE__org_gwtproject_dom_client_Style_TextTransform() {
   return (Style_TextTransform.$clinit(), Style_TextTransform.$f_CAPITALIZE__org_gwtproject_dom_client_Style_TextTransform);
  }
- /**
-  * @return {TextTransform}
-  * @public
-  */
+ /** @return {TextTransform} */
  static get f_NONE__org_gwtproject_dom_client_Style_TextTransform() {
   return (Style_TextTransform.$clinit(), Style_TextTransform.$f_NONE__org_gwtproject_dom_client_Style_TextTransform);
  }
- /**
-  * @return {TextTransform}
-  * @public
-  */
+ /** @return {TextTransform} */
  static get f_LOWERCASE__org_gwtproject_dom_client_Style_TextTransform() {
   return (Style_TextTransform.$clinit(), Style_TextTransform.$f_LOWERCASE__org_gwtproject_dom_client_Style_TextTransform);
  }
- /**
-  * @return {TextTransform}
-  * @public
-  */
+ /** @return {TextTransform} */
  static get f_UPPERCASE__org_gwtproject_dom_client_Style_TextTransform() {
   return (Style_TextTransform.$clinit(), Style_TextTransform.$f_UPPERCASE__org_gwtproject_dom_client_Style_TextTransform);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Style_TextTransform.$clinit = () =>{};
   Style_TextTransform.$loadModules();
@@ -71,17 +50,11 @@ class Style_TextTransform extends j_l_Object {
   Style_TextTransform.$f_LOWERCASE__org_gwtproject_dom_client_Style_TextTransform = TextTransform.f_LOWERCASE__org_gwtproject_dom_style_shared_TextTransform;
   Style_TextTransform.$f_UPPERCASE__org_gwtproject_dom_client_Style_TextTransform = TextTransform.f_UPPERCASE__org_gwtproject_dom_style_shared_TextTransform;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Style_TextTransform;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   TextTransform = goog.module.get('org.gwtproject.dom.style.shared.TextTransform$impl');
  }
@@ -89,13 +62,13 @@ class Style_TextTransform extends j_l_Object {
 }
 $Util.$setClassMetadata(Style_TextTransform, 'org.gwtproject.dom.client.Style$TextTransform');
 
-/** @private {TextTransform} */
+/**@private {TextTransform}*/
 Style_TextTransform.$f_CAPITALIZE__org_gwtproject_dom_client_Style_TextTransform;
-/** @private {TextTransform} */
+/**@private {TextTransform}*/
 Style_TextTransform.$f_NONE__org_gwtproject_dom_client_Style_TextTransform;
-/** @private {TextTransform} */
+/**@private {TextTransform}*/
 Style_TextTransform.$f_LOWERCASE__org_gwtproject_dom_client_Style_TextTransform;
-/** @private {TextTransform} */
+/**@private {TextTransform}*/
 Style_TextTransform.$f_UPPERCASE__org_gwtproject_dom_client_Style_TextTransform;
 
 exports = Style_TextTransform; 

@@ -19,45 +19,35 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 
 class UrlBuilder extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Map<?string, Array<?string>>} */
+  /**@type {Map<?string, Array<?string>>}*/
   this.f_listParamMap__org_gwtproject_http_client_UrlBuilder_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_protocol__org_gwtproject_http_client_UrlBuilder_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_host__org_gwtproject_http_client_UrlBuilder_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_port__org_gwtproject_http_client_UrlBuilder_ = 0;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_path__org_gwtproject_http_client_UrlBuilder_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_hash__org_gwtproject_http_client_UrlBuilder_;
  }
- /**
-  * @return {!UrlBuilder}
-  * @public
-  */
+ /** @return {!UrlBuilder} */
  static $create__() {
   UrlBuilder.$clinit();
   let $instance = new UrlBuilder();
   $instance.$ctor__org_gwtproject_http_client_UrlBuilder__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_http_client_UrlBuilder__() {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_http_client_UrlBuilder();
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_buildString__() {
   let url = StringBuilder.$create__();
   url.m_append__java_lang_String(URL.m_encode__java_lang_String(this.f_protocol__org_gwtproject_http_client_UrlBuilder_)).m_append__java_lang_String("://");
@@ -72,10 +62,10 @@ class UrlBuilder extends j_l_Object {
   }
   let prefix = 63 /* '?' */;
   for (let $iterator = this.f_listParamMap__org_gwtproject_http_client_UrlBuilder_.m_entrySet__().m_iterator__(); $iterator.m_hasNext__(); ) {
-   let entry = /**@type {Entry<?string, Array<?string>>} */ ($Casts.$to($iterator.m_next__(), Entry));
-   for (let $array = /**@type {Array<?string>} */ ($Arrays.$castTo(entry.m_getValue__(), j_l_String, 1)), $index = 0; $index < $array.length; $index++) {
+   let entry = /**@type {Entry<?string, Array<?string>>}*/ ($Casts.$to($iterator.m_next__(), Entry));
+   for (let $array = /**@type {Array<?string>}*/ ($Arrays.$castTo(entry.m_getValue__(), j_l_String, 1)), $index = 0; $index < $array.length; $index++) {
     let val = $array[$index];
-    url.m_append__char(prefix).m_append__java_lang_String(URL.m_encodeQueryString__java_lang_String(/**@type {?string} */ ($Casts.$to(entry.m_getKey__(), j_l_String)))).m_append__char(61 /* '=' */);
+    url.m_append__char(prefix).m_append__java_lang_String(URL.m_encodeQueryString__java_lang_String(/**@type {?string}*/ ($Casts.$to(entry.m_getKey__(), j_l_String)))).m_append__char(61 /* '=' */);
     if (!$Equality.$same(val, null)) {
      url.m_append__java_lang_String(URL.m_encodeQueryString__java_lang_String(val));
     }
@@ -87,33 +77,21 @@ class UrlBuilder extends j_l_Object {
   }
   return url.toString();
  }
- /**
-  * @param {?string} name
-  * @return {UrlBuilder}
-  * @public
-  */
- m_removeParameter__java_lang_String(name) {
+ /** @return {UrlBuilder} */
+ m_removeParameter__java_lang_String(/** ?string */ name) {
   this.f_listParamMap__org_gwtproject_http_client_UrlBuilder_.remove(name);
   return this;
  }
- /**
-  * @param {?string} hash
-  * @return {UrlBuilder}
-  * @public
-  */
- m_setHash__java_lang_String(hash) {
+ /** @return {UrlBuilder} */
+ m_setHash__java_lang_String(/** ?string */ hash) {
   if (!$Equality.$same(hash, null) && j_l_String.m_startsWith__java_lang_String__java_lang_String(hash, "#")) {
    hash = j_l_String.m_substring__java_lang_String__int(hash, 1);
   }
   this.f_hash__org_gwtproject_http_client_UrlBuilder_ = hash;
   return this;
  }
- /**
-  * @param {?string} host
-  * @return {UrlBuilder}
-  * @public
-  */
- m_setHost__java_lang_String(host) {
+ /** @return {UrlBuilder} */
+ m_setHost__java_lang_String(/** ?string */ host) {
   if (!$Equality.$same(host, null) && j_l_String.m_contains__java_lang_String__java_lang_CharSequence(host, ":")) {
    let parts = j_l_String.m_split__java_lang_String__java_lang_String(host, ":");
    if (parts.length > 2) {
@@ -124,7 +102,7 @@ class UrlBuilder extends j_l_Object {
    } catch (__$exc) {
     __$exc = $Exceptions.toJava(__$exc);
     if (NumberFormatException.$isInstance(__$exc)) {
-     let e = /**@type {NumberFormatException} */ (__$exc);
+     let e = /**@type {NumberFormatException}*/ (__$exc);
      throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String("Could not parse port out of host: " + j_l_String.m_valueOf__java_lang_Object(host)));
     } else {
      throw $Exceptions.toJs(__$exc);
@@ -135,13 +113,8 @@ class UrlBuilder extends j_l_Object {
   this.f_host__org_gwtproject_http_client_UrlBuilder_ = host;
   return this;
  }
- /**
-  * @param {?string} key
-  * @param {Array<?string>} values
-  * @return {UrlBuilder}
-  * @public
-  */
- m_setParameter__java_lang_String__arrayOf_java_lang_String(key, values) {
+ /** @return {UrlBuilder} */
+ m_setParameter__java_lang_String__arrayOf_java_lang_String(/** ?string */ key, /** Array<?string> */ values) {
   this.m_assertNotNullOrEmpty__java_lang_String__java_lang_String__boolean_$p_org_gwtproject_http_client_UrlBuilder(key, "Key cannot be null or empty", false);
   this.m_assertNotNull__java_lang_Object__java_lang_String_$p_org_gwtproject_http_client_UrlBuilder(values, "Values cannot null. Try using removeParameter instead.");
   if (values.length == 0) {
@@ -150,33 +123,21 @@ class UrlBuilder extends j_l_Object {
   this.f_listParamMap__org_gwtproject_http_client_UrlBuilder_.put(key, values);
   return this;
  }
- /**
-  * @param {?string} path
-  * @return {UrlBuilder}
-  * @public
-  */
- m_setPath__java_lang_String(path) {
+ /** @return {UrlBuilder} */
+ m_setPath__java_lang_String(/** ?string */ path) {
   if (!$Equality.$same(path, null) && j_l_String.m_startsWith__java_lang_String__java_lang_String(path, "/")) {
    path = j_l_String.m_substring__java_lang_String__int(path, 1);
   }
   this.f_path__org_gwtproject_http_client_UrlBuilder_ = path;
   return this;
  }
- /**
-  * @param {number} port
-  * @return {UrlBuilder}
-  * @public
-  */
- m_setPort__int(port) {
+ /** @return {UrlBuilder} */
+ m_setPort__int(/** number */ port) {
   this.f_port__org_gwtproject_http_client_UrlBuilder_ = port;
   return this;
  }
- /**
-  * @param {?string} protocol
-  * @return {UrlBuilder}
-  * @public
-  */
- m_setProtocol__java_lang_String(protocol) {
+ /** @return {UrlBuilder} */
+ m_setProtocol__java_lang_String(/** ?string */ protocol) {
   this.m_assertNotNull__java_lang_Object__java_lang_String_$p_org_gwtproject_http_client_UrlBuilder(protocol, "Protocol cannot be null");
   if (j_l_String.m_endsWith__java_lang_String__java_lang_String(protocol, "://")) {
    protocol = j_l_String.m_substring__java_lang_String__int__int(protocol, 0, j_l_String.m_length__java_lang_String(protocol) - 3);
@@ -192,23 +153,14 @@ class UrlBuilder extends j_l_Object {
   this.f_protocol__org_gwtproject_http_client_UrlBuilder_ = protocol;
   return this;
  }
- /**
-  * @param {*} value
-  * @param {?string} message
-  * @public
-  */
- m_assertNotNull__java_lang_Object__java_lang_String_$p_org_gwtproject_http_client_UrlBuilder(value, message) {
+ 
+ m_assertNotNull__java_lang_Object__java_lang_String_$p_org_gwtproject_http_client_UrlBuilder(/** * */ value, /** ?string */ message) {
   if ($Equality.$same(value, null)) {
    throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String(message));
   }
  }
- /**
-  * @param {?string} value
-  * @param {?string} message
-  * @param {boolean} isState
-  * @public
-  */
- m_assertNotNullOrEmpty__java_lang_String__java_lang_String__boolean_$p_org_gwtproject_http_client_UrlBuilder(value, message, isState) {
+ 
+ m_assertNotNullOrEmpty__java_lang_String__java_lang_String__boolean_$p_org_gwtproject_http_client_UrlBuilder(/** ?string */ value, /** ?string */ message, /** boolean */ isState) {
   if ($Equality.$same(value, null) || j_l_String.m_length__java_lang_String(value) == 0) {
    if (isState) {
     throw $Exceptions.toJs(IllegalStateException.$create__java_lang_String(message));
@@ -217,36 +169,26 @@ class UrlBuilder extends j_l_Object {
    }
   }
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_http_client_UrlBuilder() {
-  this.f_listParamMap__org_gwtproject_http_client_UrlBuilder_ = /**@type {!LinkedHashMap<?string, Array<?string>>} */ (LinkedHashMap.$create__());
+  this.f_listParamMap__org_gwtproject_http_client_UrlBuilder_ = /**@type {!LinkedHashMap<?string, Array<?string>>}*/ (LinkedHashMap.$create__());
   this.f_protocol__org_gwtproject_http_client_UrlBuilder_ = "http";
   this.f_host__org_gwtproject_http_client_UrlBuilder_ = null;
   this.f_port__org_gwtproject_http_client_UrlBuilder_ = UrlBuilder.f_PORT_UNSPECIFIED__org_gwtproject_http_client_UrlBuilder;
   this.f_path__org_gwtproject_http_client_UrlBuilder_ = null;
   this.f_hash__org_gwtproject_http_client_UrlBuilder_ = null;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   UrlBuilder.$clinit = () =>{};
   UrlBuilder.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof UrlBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');
@@ -266,7 +208,7 @@ class UrlBuilder extends j_l_Object {
 }
 $Util.$setClassMetadata(UrlBuilder, 'org.gwtproject.http.client.UrlBuilder');
 
-/** @public {number} @const */
+/**@const {number}*/
 UrlBuilder.f_PORT_UNSPECIFIED__org_gwtproject_http_client_UrlBuilder = -2147483648;
 
 exports = UrlBuilder; 

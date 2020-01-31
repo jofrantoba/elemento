@@ -21,48 +21,33 @@ let Event = goog.forwardDeclare('org.gwtproject.user.client.Event$impl');
  * @implements {HasScrollHandlers}
   */
 class AbstractNativeScrollbar extends Widget {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_AbstractNativeScrollbar__() {
   this.$ctor__org_gwtproject_user_client_ui_Widget__();
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static m_getNativeScrollbarHeight__() {
   AbstractNativeScrollbar.$clinit();
   AbstractNativeScrollbar.m_maybeRecalculateNativeScrollbarSize__();
   return AbstractNativeScrollbar.f_nativeHeight__org_gwtproject_user_client_ui_AbstractNativeScrollbar_;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static m_getNativeScrollbarWidth__() {
   AbstractNativeScrollbar.$clinit();
   AbstractNativeScrollbar.m_maybeRecalculateNativeScrollbarSize__();
   return AbstractNativeScrollbar.f_nativeWidth__org_gwtproject_user_client_ui_AbstractNativeScrollbar_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  static m_isScrollbarLeftAlignedInRtl__() {
   AbstractNativeScrollbar.$clinit();
   AbstractNativeScrollbar.m_maybeRecalculateNativeScrollbarSize__();
   return AbstractNativeScrollbar.f_nativeRtl__org_gwtproject_user_client_ui_AbstractNativeScrollbar_;
  }
- /**
-  * @public
-  */
+ 
  static m_maybeRecalculateNativeScrollbarSize__() {
   if (AbstractNativeScrollbar.f_nativeHeight__org_gwtproject_user_client_ui_AbstractNativeScrollbar_ > -1) {
    return;
@@ -84,41 +69,24 @@ class AbstractNativeScrollbar extends Widget {
   AbstractNativeScrollbar.f_nativeRtl__org_gwtproject_user_client_ui_AbstractNativeScrollbar_ = (Element_$Overlay.m_getAbsoluteLeft__$devirt__org_gwtproject_dom_client_Element(content) > Element_$Overlay.m_getAbsoluteLeft__$devirt__org_gwtproject_dom_client_Element(scrollable));
   Node_$Overlay.m_removeFromParent__$devirt__org_gwtproject_dom_client_Node(scrollable);
  }
- /**
-  * @override
-  * @param {ScrollHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addScrollHandler__org_gwtproject_event_dom_client_ScrollHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addScrollHandler__org_gwtproject_event_dom_client_ScrollHandler(/** ScrollHandler */ handler) {
   Event.m_sinkEvents__org_gwtproject_dom_client_Element__int(this.m_getScrollableElement__(), Event.f_ONSCROLL__org_gwtproject_user_client_Event);
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, ScrollEvent.m_getType__());
  }
- /**
-  * @abstract
-  * @return {Object}
-  * @public
-  */
+ /** @abstract @return {Object} */
  m_getScrollableElement__() {}
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onAttach__() {
   super.m_onAttach__();
   Event.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(this.m_getScrollableElement__(), this);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onDetach__() {
   Event.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(this.m_getScrollableElement__(), null);
   super.m_onDetach__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AbstractNativeScrollbar.$clinit = () =>{};
   AbstractNativeScrollbar.$loadModules();
@@ -127,17 +95,11 @@ class AbstractNativeScrollbar extends Widget {
   AbstractNativeScrollbar.f_nativeWidth__org_gwtproject_user_client_ui_AbstractNativeScrollbar_ = -1;
   AbstractNativeScrollbar.f_nativeRtl__org_gwtproject_user_client_ui_AbstractNativeScrollbar_ = false;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AbstractNativeScrollbar;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('org.gwtproject.dom.client.Document.$Overlay$impl');
   Element_$Overlay = goog.module.get('org.gwtproject.dom.client.Element.$Overlay$impl');
@@ -155,11 +117,11 @@ $Util.$setClassMetadata(AbstractNativeScrollbar, 'org.gwtproject.user.client.ui.
 
 HasScrollHandlers.$markImplementor(AbstractNativeScrollbar);
 
-/** @public {number} */
+/**@type {number}*/
 AbstractNativeScrollbar.f_nativeHeight__org_gwtproject_user_client_ui_AbstractNativeScrollbar_ = 0;
-/** @public {number} */
+/**@type {number}*/
 AbstractNativeScrollbar.f_nativeWidth__org_gwtproject_user_client_ui_AbstractNativeScrollbar_ = 0;
-/** @public {boolean} */
+/**@type {boolean}*/
 AbstractNativeScrollbar.f_nativeRtl__org_gwtproject_user_client_ui_AbstractNativeScrollbar_ = false;
 
 exports = AbstractNativeScrollbar; 

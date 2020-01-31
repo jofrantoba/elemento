@@ -30,17 +30,12 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class RootPanel extends AbsolutePanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {Widget} widget
-  * @public
-  */
- static m_detachNow__org_gwtproject_user_client_ui_Widget(widget) {
+ 
+ static m_detachNow__org_gwtproject_user_client_ui_Widget(/** Widget */ widget) {
   RootPanel.$clinit();
   $Asserts.$assertWithMessage(RootPanel.f_widgetsToDetach__org_gwtproject_user_client_ui_RootPanel_.contains(widget), "detachNow() called on a widget " + "not currently in the detach list");
   try {
@@ -49,32 +44,22 @@ class RootPanel extends AbsolutePanel {
    RootPanel.f_widgetsToDetach__org_gwtproject_user_client_ui_RootPanel_.remove(widget);
   }
  }
- /**
-  * @param {Widget} widget
-  * @public
-  */
- static m_detachOnWindowClose__org_gwtproject_user_client_ui_Widget(widget) {
+ 
+ static m_detachOnWindowClose__org_gwtproject_user_client_ui_Widget(/** Widget */ widget) {
   RootPanel.$clinit();
   $Asserts.$assertWithMessage(!RootPanel.f_widgetsToDetach__org_gwtproject_user_client_ui_RootPanel_.contains(widget), "detachOnUnload() called twice " + "for the same widget");
   $Asserts.$assertWithMessage(!RootPanel.m_isElementChildOfWidget__org_gwtproject_dom_client_Element(widget.m_getElement__()), "A widget that has " + "an existing parent widget may not be added to the detach list");
   RootPanel.f_widgetsToDetach__org_gwtproject_user_client_ui_RootPanel_.add(widget);
  }
- /**
-  * @return {RootPanel}
-  * @public
-  */
+ /** @return {RootPanel} */
  static m_get__() {
   RootPanel.$clinit();
   return RootPanel.m_get__java_lang_String(null);
  }
- /**
-  * @param {?string} id
-  * @return {RootPanel}
-  * @public
-  */
- static m_get__java_lang_String(id) {
+ /** @return {RootPanel} */
+ static m_get__java_lang_String(/** ?string */ id) {
   RootPanel.$clinit();
-  let rp = /**@type {RootPanel} */ ($Casts.$to(RootPanel.f_rootPanels__org_gwtproject_user_client_ui_RootPanel_.get(id), RootPanel));
+  let rp = /**@type {RootPanel}*/ ($Casts.$to(RootPanel.f_rootPanels__org_gwtproject_user_client_ui_RootPanel_.get(id), RootPanel));
   let elem = null;
   if (!$Equality.$same(id, null)) {
    if ($Equality.$same(null, (elem = $Overlay.m_get__().getElementById(id)))) {
@@ -101,26 +86,17 @@ class RootPanel extends AbsolutePanel {
   RootPanel.m_detachOnWindowClose__org_gwtproject_user_client_ui_Widget(rp);
   return rp;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  static m_getBodyElement__() {
   RootPanel.$clinit();
   return $Overlay.m_get__().body;
  }
- /**
-  * @param {Widget} widget
-  * @return {boolean}
-  * @public
-  */
- static m_isInDetachList__org_gwtproject_user_client_ui_Widget(widget) {
+ /** @return {boolean} */
+ static m_isInDetachList__org_gwtproject_user_client_ui_Widget(/** Widget */ widget) {
   RootPanel.$clinit();
   return RootPanel.f_widgetsToDetach__org_gwtproject_user_client_ui_RootPanel_.contains(widget);
  }
- /**
-  * @public
-  */
+ 
  static m_detachWidgets__() {
   RootPanel.$clinit();
   try {
@@ -130,87 +106,57 @@ class RootPanel extends AbsolutePanel {
    RootPanel.f_rootPanels__org_gwtproject_user_client_ui_RootPanel_.clear();
   }
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  static m_getRootElement__() {
   return $Overlay.m_get__().documentElement;
  }
- /**
-  * @public
-  */
+ 
  static m_hookWindowClosing__() {
   Window.m_addCloseHandler__org_gwtproject_event_logical_shared_CloseHandler(CloseHandler.$adapt((/** CloseEvent<Window> */ closeEvent) =>{
    RootPanel.m_detachWidgets__();
   }));
  }
- /**
-  * @param {Object} element
-  * @return {boolean}
-  * @public
-  */
- static m_isElementChildOfWidget__org_gwtproject_dom_client_Element(element) {
+ /** @return {boolean} */
+ static m_isElementChildOfWidget__org_gwtproject_dom_client_Element(/** Object */ element) {
   element = Node_$Overlay.m_getParentElement__$devirt__org_gwtproject_dom_client_Node(element);
   let body = $Overlay.m_get__().body;
   while ((!$Equality.$same(element, null)) && (!$Equality.$same(body, element))) {
    if (!$Equality.$same(Event.m_getEventListener__org_gwtproject_dom_client_Element(element), null)) {
     return true;
    }
-   element = /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Node_$Overlay.m_getParentElement__$devirt__org_gwtproject_dom_client_Node(element)), Element_$Overlay));
+   element = /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Node_$Overlay.m_getParentElement__$devirt__org_gwtproject_dom_client_Node(element)), Element_$Overlay));
   }
   return false;
  }
- /**
-  * @param {Object} elem
-  * @return {!RootPanel}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_Element(elem) {
+ /** @return {!RootPanel} */
+ static $create__org_gwtproject_dom_client_Element(/** Object */ elem) {
   let $instance = new RootPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_RootPanel__org_gwtproject_dom_client_Element(elem);
   return $instance;
  }
- /**
-  * @param {Object} elem
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_RootPanel__org_gwtproject_dom_client_Element(elem) {
+ 
+ $ctor__org_gwtproject_user_client_ui_RootPanel__org_gwtproject_dom_client_Element(/** Object */ elem) {
   this.$ctor__org_gwtproject_user_client_ui_AbsolutePanel__org_gwtproject_dom_client_Element(elem);
   this.m_onAttach__();
  }
- /**
-  * @param {boolean} clearDom
-  * @public
-  * @deprecated
-  */
- m_clear__boolean(clearDom) {
+ /** @deprecated */
+ m_clear__boolean(/** boolean */ clearDom) {
   this.m_clear__();
   if (clearDom) {
    Node_$Overlay.m_removeAllChildren__$devirt__org_gwtproject_dom_client_Node(this.m_getElement__());
   }
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RootPanel.$clinit = () =>{};
   RootPanel.$loadModules();
@@ -220,20 +166,14 @@ class RootPanel extends AbsolutePanel {
     w.m_onDetach__();
    }
   });
-  RootPanel.f_rootPanels__org_gwtproject_user_client_ui_RootPanel_ = /**@type {!HashMap<?string, RootPanel>} */ (HashMap.$create__());
-  RootPanel.f_widgetsToDetach__org_gwtproject_user_client_ui_RootPanel_ = /**@type {!HashSet<Widget>} */ (HashSet.$create__());
+  RootPanel.f_rootPanels__org_gwtproject_user_client_ui_RootPanel_ = /**@type {!HashMap<?string, RootPanel>}*/ (HashMap.$create__());
+  RootPanel.f_widgetsToDetach__org_gwtproject_user_client_ui_RootPanel_ = /**@type {!HashSet<Widget>}*/ (HashSet.$create__());
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof RootPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   HashMap = goog.module.get('java.util.HashMap$impl');
@@ -259,11 +199,11 @@ class RootPanel extends AbsolutePanel {
 }
 $Util.$setClassMetadata(RootPanel, 'org.gwtproject.user.client.ui.RootPanel');
 
-/** @public {Command} */
+/**@type {Command}*/
 RootPanel.f_maybeDetachCommand__org_gwtproject_user_client_ui_RootPanel_;
-/** @public {Map<?string, RootPanel>} */
+/**@type {Map<?string, RootPanel>}*/
 RootPanel.f_rootPanels__org_gwtproject_user_client_ui_RootPanel_;
-/** @public {Set<Widget>} */
+/**@type {Set<Widget>}*/
 RootPanel.f_widgetsToDetach__org_gwtproject_user_client_ui_RootPanel_;
 
 exports = RootPanel; 

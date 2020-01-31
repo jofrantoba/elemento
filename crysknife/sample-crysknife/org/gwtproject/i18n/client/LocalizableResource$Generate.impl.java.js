@@ -8,53 +8,28 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @extends {Annotation}
  */
 class Generate {
- /**
-  * @abstract
-  * @return {Array<?string>}
-  * @public
-  */
+ /** @abstract @return {Array<?string>} */
  m_format__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_fileName__() {}
- /**
-  * @abstract
-  * @return {Array<?string>}
-  * @public
-  */
+ /** @abstract @return {Array<?string>} */
  m_locales__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Generate.$clinit = () =>{};
   Generate.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_i18n_client_LocalizableResource_Generate = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_i18n_client_LocalizableResource_Generate = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_i18n_client_LocalizableResource_Generate;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }
@@ -62,7 +37,7 @@ $Util.$setClassMetadataForInterface(Generate, 'org.gwtproject.i18n.client.Locali
 
 Generate.$markImplementor(/** @type {Function} */ (Generate));
 
-/** @public {?string} @const */
+/**@const {?string}*/
 Generate.f_DEFAULT__org_gwtproject_i18n_client_LocalizableResource_Generate = "[default]";
 
 exports = Generate; 

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Focusable.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;MAoBiB,S;;;;;;CAOX,e;;;;;;CAQC,oB,CAAkBA,G;;;;;;CAYlB,mB,CAAiBC,O;;;;;;CAUjB,kB,CAAgBC,K;;;;QArCN,O;EAAAC,4B;EAAAA;",
+"lineCount":20,
+"mappings":"A;;;;;;;MAoBiB,S;;CAOX,e;;CAQC,oB,eAAkBA,G;;CAYlB,mB,gBAAiBC,O;;CAUjB,kB,eAAgBC,K;;QArCN,O;EAAAC,4B;EAAAA;",
 "sources":["Focusable.java"],
 "names":["key","focused","index","org.gwtproject.user.client.ui.Focusable.<clinit>"]
 }

@@ -8,49 +8,26 @@ const ElementBuilderBase = goog.require('org.gwtproject.dom.builder.shared.Eleme
  * @extends {ElementBuilderBase<FrameSetBuilder>}
  */
 class FrameSetBuilder {
- /**
-  * @abstract
-  * @param {?string} cols
-  * @return {FrameSetBuilder}
-  * @public
-  */
- m_cols__java_lang_String(cols) {}
- /**
-  * @abstract
-  * @param {?string} rows
-  * @return {FrameSetBuilder}
-  * @public
-  */
- m_rows__java_lang_String(rows) {}
- /**
-  * @public
-  */
+ /** @abstract @return {FrameSetBuilder} */
+ m_cols__java_lang_String(/** ?string */ cols) {}
+ /** @abstract @return {FrameSetBuilder} */
+ m_rows__java_lang_String(/** ?string */ rows) {}
+ 
  static $clinit() {
   FrameSetBuilder.$clinit = () =>{};
   FrameSetBuilder.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ElementBuilderBase.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_dom_builder_shared_FrameSetBuilder = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ElementBuilderBase.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_dom_builder_shared_FrameSetBuilder = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_dom_builder_shared_FrameSetBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

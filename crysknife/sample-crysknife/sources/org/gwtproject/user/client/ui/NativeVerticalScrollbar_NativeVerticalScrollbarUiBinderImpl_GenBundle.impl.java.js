@@ -8,35 +8,22 @@ const ClientBundle = goog.require('org.gwtproject.resources.client.ClientBundle$
  * @extends {ClientBundle}
  */
 class NativeVerticalScrollbar__NativeVerticalScrollbarUiBinderImpl__GenBundle {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NativeVerticalScrollbar__NativeVerticalScrollbarUiBinderImpl__GenBundle.$clinit = () =>{};
   NativeVerticalScrollbar__NativeVerticalScrollbarUiBinderImpl__GenBundle.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ClientBundle.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl_GenBundle = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ClientBundle.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl_GenBundle = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_NativeVerticalScrollbar_NativeVerticalScrollbarUiBinderImpl_GenBundle;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

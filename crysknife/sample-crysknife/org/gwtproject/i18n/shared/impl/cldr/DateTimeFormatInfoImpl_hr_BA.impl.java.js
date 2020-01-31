@@ -7,71 +7,44 @@ let j_l_String = goog.forwardDeclare('java.lang.String$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 
 class DateTimeFormatInfoImpl__hr__BA extends DateTimeFormatInfoImpl__hr {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!DateTimeFormatInfoImpl__hr__BA}
-  * @public
-  */
+ /** @return {!DateTimeFormatInfoImpl__hr__BA} */
  static $create__() {
   DateTimeFormatInfoImpl__hr__BA.$clinit();
   let $instance = new DateTimeFormatInfoImpl__hr__BA();
   $instance.$ctor__org_gwtproject_i18n_shared_impl_cldr_DateTimeFormatInfoImpl_hr_BA__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_i18n_shared_impl_cldr_DateTimeFormatInfoImpl_hr_BA__() {
   this.$ctor__org_gwtproject_i18n_shared_impl_cldr_DateTimeFormatInfoImpl_hr__();
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_dateFormatShort__() {
   return "d. M. yy.";
  }
- /**
-  * @override
-  * @return {Array<?string>}
-  * @public
-  */
+ /** @override @return {Array<?string>} */
  m_quartersShort__() {
-  return /**@type {!Array<?string>} */ ($Arrays.$init(["1. kv.", "2. kv.", "3. kv.", "4. kv."], j_l_String));
+  return /**@type {!Array<?string>}*/ ($Arrays.$init(["1. kv.", "2. kv.", "3. kv.", "4. kv."], j_l_String));
  }
- /**
-  * @override
-  * @return {Array<?string>}
-  * @public
-  */
+ /** @override @return {Array<?string>} */
  m_weekdaysNarrowStandalone__() {
-  return /**@type {!Array<?string>} */ ($Arrays.$init(["N", "P", "U", "S", "\u010C", "P", "S"], j_l_String));
+  return /**@type {!Array<?string>}*/ ($Arrays.$init(["N", "P", "U", "S", "\u010C", "P", "S"], j_l_String));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DateTimeFormatInfoImpl__hr__BA.$clinit = () =>{};
   DateTimeFormatInfoImpl__hr__BA.$loadModules();
   DateTimeFormatInfoImpl__hr.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DateTimeFormatInfoImpl__hr__BA;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');

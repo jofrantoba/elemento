@@ -23,182 +23,105 @@ let VerticalAlignmentConstant = goog.forwardDeclare('org.gwtproject.user.client.
  * @implements {HasAlignment}
   */
 class Column extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Cell<C>} */
+  /**@type {Cell<C>}*/
   this.f_cell__org_gwtproject_user_cellview_client_Column_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_cellStyleNames__org_gwtproject_user_cellview_client_Column_;
-  /** @public {FieldUpdater<T, C>} */
+  /**@type {FieldUpdater<T, C>}*/
   this.f_fieldUpdater__org_gwtproject_user_cellview_client_Column_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isDefaultSortAscending__org_gwtproject_user_cellview_client_Column_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isSortable__org_gwtproject_user_cellview_client_Column_ = false;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_dataStoreName__org_gwtproject_user_cellview_client_Column_;
-  /** @public {HorizontalAlignmentConstant} */
+  /**@type {HorizontalAlignmentConstant}*/
   this.f_hAlign__org_gwtproject_user_cellview_client_Column_;
-  /** @public {VerticalAlignmentConstant} */
+  /**@type {VerticalAlignmentConstant}*/
   this.f_vAlign__org_gwtproject_user_cellview_client_Column_;
  }
- /**
-  * @param {Cell<C>} cell
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_Column__org_gwtproject_cell_client_Cell(cell) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_Column__org_gwtproject_cell_client_Cell(/** Cell<C> */ cell) {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_user_cellview_client_Column();
   this.f_cell__org_gwtproject_user_cellview_client_Column_ = cell;
  }
- /**
-  * @override
-  * @return {Cell<C>}
-  * @public
-  */
+ /** @override @return {Cell<C>} */
  m_getCell__() {
   return this.f_cell__org_gwtproject_user_cellview_client_Column_;
  }
- /**
-  * @param {Context} context
-  * @param {T} object
-  * @return {?string}
-  * @public
-  */
- m_getCellStyleNames__org_gwtproject_cell_client_Cell_Context__java_lang_Object(context, object) {
+ /** @return {?string} */
+ m_getCellStyleNames__org_gwtproject_cell_client_Cell_Context__java_lang_Object(/** Context */ context, /** T */ object) {
   return this.f_cellStyleNames__org_gwtproject_user_cellview_client_Column_;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getDataStoreName__() {
   return this.f_dataStoreName__org_gwtproject_user_cellview_client_Column_;
  }
- /**
-  * @override
-  * @return {FieldUpdater<T, C>}
-  * @public
-  */
+ /** @override @return {FieldUpdater<T, C>} */
  m_getFieldUpdater__() {
   return this.f_fieldUpdater__org_gwtproject_user_cellview_client_Column_;
  }
- /**
-  * @override
-  * @return {HorizontalAlignmentConstant}
-  * @public
-  */
+ /** @override @return {HorizontalAlignmentConstant} */
  m_getHorizontalAlignment__() {
   return this.f_hAlign__org_gwtproject_user_cellview_client_Column_;
  }
- /**
-  * @abstract
-  * @override
-  * @param {T} object
-  * @return {C}
-  * @public
-  */
- m_getValue__java_lang_Object(object) {}
- /**
-  * @override
-  * @return {VerticalAlignmentConstant}
-  * @public
-  */
+ /** @abstract @override @return {C} */
+ m_getValue__java_lang_Object(/** T */ object) {}
+ /** @override @return {VerticalAlignmentConstant} */
  m_getVerticalAlignment__() {
   return this.f_vAlign__org_gwtproject_user_cellview_client_Column_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isDefaultSortAscending__() {
   return this.f_isDefaultSortAscending__org_gwtproject_user_cellview_client_Column_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isSortable__() {
   return this.f_isSortable__org_gwtproject_user_cellview_client_Column_;
  }
- /**
-  * @param {Context} context
-  * @param {Object} elem
-  * @param {T} object
-  * @param {Object} event
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent(context, elem, object, event) {
+ 
+ m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent(/** Context */ context, /** Object */ elem, /** T */ object, /** Object */ event) {
   let index = context.m_getIndex__();
-  let valueUpdater = $Equality.$same(this.f_fieldUpdater__org_gwtproject_user_cellview_client_Column_, null) ? null : /**@type {!$1<T, C>} */ ($1.$create__org_gwtproject_user_cellview_client_Column__int__java_lang_Object(this, index, object));
+  let valueUpdater = $Equality.$same(this.f_fieldUpdater__org_gwtproject_user_cellview_client_Column_, null) ? null : /**@type {!$1<T, C>}*/ ($1.$create__org_gwtproject_user_cellview_client_Column__int__java_lang_Object(this, index, object));
   this.f_cell__org_gwtproject_user_cellview_client_Column_.m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, elem, this.m_getValue__java_lang_Object(object), event, valueUpdater);
  }
- /**
-  * @param {Context} context
-  * @param {T} object
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, object, sb) {
+ 
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ context, /** T */ object, /** SafeHtmlBuilder */ sb) {
   this.f_cell__org_gwtproject_user_cellview_client_Column_.m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, this.m_getValue__java_lang_Object(object), sb);
  }
- /**
-  * @param {?string} styleNames
-  * @public
-  */
- m_setCellStyleNames__java_lang_String(styleNames) {
+ 
+ m_setCellStyleNames__java_lang_String(/** ?string */ styleNames) {
   this.f_cellStyleNames__org_gwtproject_user_cellview_client_Column_ = styleNames;
  }
- /**
-  * @param {?string} name
-  * @public
-  */
- m_setDataStoreName__java_lang_String(name) {
+ 
+ m_setDataStoreName__java_lang_String(/** ?string */ name) {
   this.f_dataStoreName__org_gwtproject_user_cellview_client_Column_ = name;
  }
- /**
-  * @param {boolean} isAscending
-  * @public
-  */
- m_setDefaultSortAscending__boolean(isAscending) {
+ 
+ m_setDefaultSortAscending__boolean(/** boolean */ isAscending) {
   this.f_isDefaultSortAscending__org_gwtproject_user_cellview_client_Column_ = isAscending;
  }
- /**
-  * @param {FieldUpdater<T, C>} fieldUpdater
-  * @public
-  */
- m_setFieldUpdater__org_gwtproject_cell_client_FieldUpdater(fieldUpdater) {
+ 
+ m_setFieldUpdater__org_gwtproject_cell_client_FieldUpdater(/** FieldUpdater<T, C> */ fieldUpdater) {
   this.f_fieldUpdater__org_gwtproject_user_cellview_client_Column_ = fieldUpdater;
  }
- /**
-  * @override
-  * @param {HorizontalAlignmentConstant} align
-  * @public
-  */
- m_setHorizontalAlignment__org_gwtproject_user_client_ui_HasHorizontalAlignment_HorizontalAlignmentConstant(align) {
+ /** @override */
+ m_setHorizontalAlignment__org_gwtproject_user_client_ui_HasHorizontalAlignment_HorizontalAlignmentConstant(/** HorizontalAlignmentConstant */ align) {
   this.f_hAlign__org_gwtproject_user_cellview_client_Column_ = align;
  }
- /**
-  * @param {boolean} sortable
-  * @public
-  */
- m_setSortable__boolean(sortable) {
+ 
+ m_setSortable__boolean(/** boolean */ sortable) {
   this.f_isSortable__org_gwtproject_user_cellview_client_Column_ = sortable;
  }
- /**
-  * @override
-  * @param {VerticalAlignmentConstant} align
-  * @public
-  */
- m_setVerticalAlignment__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant(align) {
+ /** @override */
+ m_setVerticalAlignment__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant(/** VerticalAlignmentConstant */ align) {
   this.f_vAlign__org_gwtproject_user_cellview_client_Column_ = align;
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_cellview_client_Column() {
   this.f_cellStyleNames__org_gwtproject_user_cellview_client_Column_ = null;
   this.f_isDefaultSortAscending__org_gwtproject_user_cellview_client_Column_ = true;
@@ -207,25 +130,17 @@ class Column extends j_l_Object {
   this.f_hAlign__org_gwtproject_user_cellview_client_Column_ = null;
   this.f_vAlign__org_gwtproject_user_cellview_client_Column_ = null;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Column.$clinit = () =>{};
   Column.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Column;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.user.cellview.client.Column.$1$impl');

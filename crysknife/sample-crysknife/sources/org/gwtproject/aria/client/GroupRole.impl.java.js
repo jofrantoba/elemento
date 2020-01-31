@@ -11,55 +11,28 @@ let $Overlay = goog.forwardDeclare('org.gwtproject.dom.client.Element.$Overlay$i
  * @extends {SectionRole}
  */
 class GroupRole {
- /**
-  * @abstract
-  * @param {Object} element
-  * @return {?string}
-  * @public
-  */
- m_getAriaActivedescendantProperty__org_gwtproject_dom_client_Element(element) {}
- /**
-  * @abstract
-  * @param {Object} element
-  * @public
-  */
- m_removeAriaActivedescendantProperty__org_gwtproject_dom_client_Element(element) {}
- /**
-  * @abstract
-  * @param {Object} element
-  * @param {Id} value
-  * @public
-  */
- m_setAriaActivedescendantProperty__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_Id(element, value) {}
- /**
-  * @public
-  */
+ /** @abstract @return {?string} */
+ m_getAriaActivedescendantProperty__org_gwtproject_dom_client_Element(/** Object */ element) {}
+ /** @abstract */
+ m_removeAriaActivedescendantProperty__org_gwtproject_dom_client_Element(/** Object */ element) {}
+ /** @abstract */
+ m_setAriaActivedescendantProperty__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_Id(/** Object */ element, /** Id */ value) {}
+ 
  static $clinit() {
   GroupRole.$clinit = () =>{};
   GroupRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  SectionRole.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_GroupRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  SectionRole.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_GroupRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_GroupRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

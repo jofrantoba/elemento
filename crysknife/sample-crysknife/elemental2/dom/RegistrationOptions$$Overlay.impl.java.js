@@ -6,24 +6,17 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Overlay = goog.forwardDeclare('jsinterop.base.JsPropertyMap.$Overlay$impl');
 
 class RegistrationOptions_$Overlay {
- /**
-  * @return {RegistrationOptions}
-  * @public
-  */
+ /** @return {RegistrationOptions} */
  static m_create__() {
   RegistrationOptions_$Overlay.$clinit();
-  return /**@type {RegistrationOptions} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
+  return /**@type {RegistrationOptions}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RegistrationOptions_$Overlay.$clinit = () =>{};
   RegistrationOptions_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');

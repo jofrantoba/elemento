@@ -13,75 +13,33 @@ let Header = goog.forwardDeclare('org.gwtproject.user.cellview.client.Header$imp
  * @template T
  */
 class HeaderBuilder {
- /**
-  * @abstract
-  * @return {TableSectionBuilder}
-  * @public
-  */
+ /** @abstract @return {TableSectionBuilder} */
  m_buildHeader__() {}
- /**
-  * @abstract
-  * @param {Object} elem
-  * @return {Column<T, ?>}
-  * @public
-  */
- m_getColumn__org_gwtproject_dom_client_Element(elem) {}
- /**
-  * @abstract
-  * @param {Object} elem
-  * @return {Header<?>}
-  * @public
-  */
- m_getHeader__org_gwtproject_dom_client_Element(elem) {}
- /**
-  * @abstract
-  * @param {Object} row
-  * @return {number}
-  * @public
-  */
- m_getRowIndex__org_gwtproject_dom_client_TableRowElement(row) {}
- /**
-  * @abstract
-  * @param {Object} elem
-  * @return {boolean}
-  * @public
-  */
- m_isColumn__org_gwtproject_dom_client_Element(elem) {}
- /**
-  * @abstract
-  * @param {Object} elem
-  * @return {boolean}
-  * @public
-  */
- m_isHeader__org_gwtproject_dom_client_Element(elem) {}
- /**
-  * @public
-  */
+ /** @abstract @return {Column<T, ?>} */
+ m_getColumn__org_gwtproject_dom_client_Element(/** Object */ elem) {}
+ /** @abstract @return {Header<?>} */
+ m_getHeader__org_gwtproject_dom_client_Element(/** Object */ elem) {}
+ /** @abstract @return {number} */
+ m_getRowIndex__org_gwtproject_dom_client_TableRowElement(/** Object */ row) {}
+ /** @abstract @return {boolean} */
+ m_isColumn__org_gwtproject_dom_client_Element(/** Object */ elem) {}
+ /** @abstract @return {boolean} */
+ m_isHeader__org_gwtproject_dom_client_Element(/** Object */ elem) {}
+ 
  static $clinit() {
   HeaderBuilder.$clinit = () =>{};
   HeaderBuilder.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_cellview_client_HeaderBuilder = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_cellview_client_HeaderBuilder = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_cellview_client_HeaderBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

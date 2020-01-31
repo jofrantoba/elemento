@@ -8,61 +8,37 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class BeforeNodesUnionType_$Overlay {
- /**
-  * @param {*} o
-  * @return {?}
-  * @public
-  */
- static m_of__java_lang_Object(o) {
+ /** @return {?} */
+ static m_of__java_lang_Object(/** * */ o) {
   BeforeNodesUnionType_$Overlay.$clinit();
-  return /**@type {?} */ (Js.m_cast__java_lang_Object(o));
+  return /**@type {?}*/ (Js.m_cast__java_lang_Object(o));
  }
- /**
-  * @param {?} $thisArg
-  * @return {Node}
-  * @public
-  */
- static m_asNode__$devirt__elemental2_dom_CharacterData_BeforeNodesUnionType($thisArg) {
+ /** @return {Node} */
+ static m_asNode__$devirt__elemental2_dom_CharacterData_BeforeNodesUnionType(/** ? */ $thisArg) {
   BeforeNodesUnionType_$Overlay.$clinit();
-  return /**@type {Node} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $Overlay));
+  return /**@type {Node}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $Overlay));
  }
- /**
-  * @param {?} $thisArg
-  * @return {?string}
-  * @public
-  */
- static m_asString__$devirt__elemental2_dom_CharacterData_BeforeNodesUnionType($thisArg) {
+ /** @return {?string} */
+ static m_asString__$devirt__elemental2_dom_CharacterData_BeforeNodesUnionType(/** ? */ $thisArg) {
   BeforeNodesUnionType_$Overlay.$clinit();
   return Js.m_asString__java_lang_Object($thisArg);
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isNode__$devirt__elemental2_dom_CharacterData_BeforeNodesUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isNode__$devirt__elemental2_dom_CharacterData_BeforeNodesUnionType(/** ? */ $thisArg) {
   BeforeNodesUnionType_$Overlay.$clinit();
-  return $Overlay.$isInstance(/**@type {*} */ ($thisArg));
+  return $Overlay.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isString__$devirt__elemental2_dom_CharacterData_BeforeNodesUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isString__$devirt__elemental2_dom_CharacterData_BeforeNodesUnionType(/** ? */ $thisArg) {
   BeforeNodesUnionType_$Overlay.$clinit();
-  return j_l_String.$isInstance(/**@type {*} */ ($thisArg));
+  return j_l_String.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   BeforeNodesUnionType_$Overlay.$clinit = () =>{};
   BeforeNodesUnionType_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('elemental2.dom.Node.$Overlay$impl');
   j_l_String = goog.module.get('java.lang.String$impl');

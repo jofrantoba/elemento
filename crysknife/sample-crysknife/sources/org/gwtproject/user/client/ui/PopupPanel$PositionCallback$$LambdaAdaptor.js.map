@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"PopupPanel$PositionCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":47,
-"mappings":"A;;;;;;;;;MA+FmB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;wF;EAAAA,gK;;;;;;CAAA,sJ;EAAAC,iC;EAAAA,2F;;;;;;;CAAA,uB;;GAAAC,sG;GAAAA,sB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;MA+FmB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;wF;EAAAA,gK;;;CAAA,sJ;EAAAC,iC;EAAAA,2F;;;CAAA,uB;;GAAAC,sG;GAAAA,sB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["PopupPanel.java"],
 "names":["org.gwtproject.user.client.ui.PopupPanel$PositionCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.client.ui.PopupPanel$PositionCallback$$LambdaAdaptor.<init>","org.gwtproject.user.client.ui.PopupPanel$PositionCallback$$LambdaAdaptor.setPosition","org.gwtproject.user.client.ui.PopupPanel$PositionCallback$$LambdaAdaptor.<clinit>"]
 }

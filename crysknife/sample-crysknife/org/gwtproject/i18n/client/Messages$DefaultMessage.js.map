@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Messages$DefaultMessage.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;MA2QoB,c;;;;;;CAChB,S;;;;QADgB,O;EAAAA,iC;EAAAA;",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MA2QoB,c;;CAChB,S;;QADgB,O;EAAAA,iC;EAAAA;",
 "sources":["Messages.java"],
 "names":["org.gwtproject.i18n.client.Messages$DefaultMessage.<clinit>"]
 }

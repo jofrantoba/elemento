@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"RadioRole.impl.java.js",
-"lineCount":18,
-"mappings":"A;;;;;;;;;;;MA0BiB,S;;;;QAAA,O;EAAAA,4B;EAAAA;",
+"lineCount":16,
+"mappings":"A;;;;;;;;;;;MA0BiB,S;;QAAA,O;EAAAA,4B;EAAAA;",
 "sources":["RadioRole.java"],
 "names":["org.gwtproject.aria.client.RadioRole.<clinit>"]
 }

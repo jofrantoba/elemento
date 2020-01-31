@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HTMLDocument$LinksHTMLCollectionTypeParameterUnionType$$Overlay.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;MAyBmB,kD;;;;;;QAE+C,sB,CAAUA,C;EAAVC,6D;EAC5DA,wD;;;;;;;QAIwB,qG;EAAAC,6D;EACxBA,qG;;;;;;;QAIsB,mG;EAAAC,6D;EACtBA,mH;;;;;;;QAIc,qG;EAAAC,6D;EACdA,wD;;;;;;;QAIc,mG;EAAAC,6D;EACdA,wE;;;;;QAvBa,O;EAAAC,qE;EAAAA;",
+"lineCount":39,
+"mappings":"A;;;;;;;;;MAyBmB,kD;;QAE+C,sB,UAAUA,C;EAAVC,6D;EAC5DA,uD;;;QAIwB,qG;EAAAC,6D;EACxBA,oG;;;QAIsB,mG;EAAAC,6D;EACtBA,kH;;;QAIc,qG;EAAAC,6D;EACdA,uD;;;QAIc,mG;EAAAC,6D;EACdA,uE;;;QAvBa,O;EAAAC,qE;EAAAA;",
 "sources":["HTMLDocument.java"],
 "names":["o","elemental2.dom.HTMLDocument$LinksHTMLCollectionTypeParameterUnionType$$Overlay.of","elemental2.dom.HTMLDocument$LinksHTMLCollectionTypeParameterUnionType$$Overlay.asHTMLAnchorElement__$devirt","elemental2.dom.HTMLDocument$LinksHTMLCollectionTypeParameterUnionType$$Overlay.asHTMLAreaElement__$devirt","elemental2.dom.HTMLDocument$LinksHTMLCollectionTypeParameterUnionType$$Overlay.isHTMLAnchorElement__$devirt","elemental2.dom.HTMLDocument$LinksHTMLCollectionTypeParameterUnionType$$Overlay.isHTMLAreaElement__$devirt","elemental2.dom.HTMLDocument$LinksHTMLCollectionTypeParameterUnionType$$Overlay.<clinit>"]
 }

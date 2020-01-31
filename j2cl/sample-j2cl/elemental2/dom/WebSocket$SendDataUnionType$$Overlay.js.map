@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"WebSocket$SendDataUnionType$$Overlay.impl.java.js",
-"lineCount":99,
-"mappings":"A;;;;;;;;;;;MAoHmB,0B;;;;;;QAEoB,sB,CAAUA,C;EAAVC,qC;EACjCA,wD;;;;;;;QAIkB,oE;EAAAC,qC;EAClBA,+F;;;;;;;QAIsB,wE;EAAAC,qC;EACtBA,mH;;;;;;;QAIW,6D;EAAAC,qC;EACXA,6F;;;;;;;QAIa,+D;EAAAC,qC;EACbA,iD;;;;;;;QAIc,oE;EAAAC,qC;EACdA,wD;;;;;;;QAIc,wE;EAAAC,qC;EACdA,wE;;;;;;;QAIc,6D;EAAAC,qC;EACdA,6D;;;;;;;QAIc,+D;EAAAC,qC;EACdA,0D;;;;;QA3Ca,O;EAAAC,6C;EAAAA;",
+"lineCount":61,
+"mappings":"A;;;;;;;;;;;MAoHmB,0B;;QAEoB,sB,UAAUA,C;EAAVC,qC;EACjCA,uD;;;QAIkB,oE;EAAAC,qC;EAClBA,8F;;;QAIsB,wE;EAAAC,qC;EACtBA,kH;;;QAIW,6D;EAAAC,qC;EACXA,4F;;;QAIa,+D;EAAAC,qC;EACbA,iD;;;QAIc,oE;EAAAC,qC;EACdA,uD;;;QAIc,wE;EAAAC,qC;EACdA,uE;;;QAIc,6D;EAAAC,qC;EACdA,4D;;;QAIc,+D;EAAAC,qC;EACdA,yD;;;QA3Ca,O;EAAAC,6C;EAAAA;",
 "sources":["WebSocket.java"],
 "names":["o","elemental2.dom.WebSocket$SendDataUnionType$$Overlay.of","elemental2.dom.WebSocket$SendDataUnionType$$Overlay.asArrayBuffer__$devirt","elemental2.dom.WebSocket$SendDataUnionType$$Overlay.asArrayBufferView__$devirt","elemental2.dom.WebSocket$SendDataUnionType$$Overlay.asBlob__$devirt","elemental2.dom.WebSocket$SendDataUnionType$$Overlay.asString__$devirt","elemental2.dom.WebSocket$SendDataUnionType$$Overlay.isArrayBuffer__$devirt","elemental2.dom.WebSocket$SendDataUnionType$$Overlay.isArrayBufferView__$devirt","elemental2.dom.WebSocket$SendDataUnionType$$Overlay.isBlob__$devirt","elemental2.dom.WebSocket$SendDataUnionType$$Overlay.isString__$devirt","elemental2.dom.WebSocket$SendDataUnionType$$Overlay.<clinit>"]
 }

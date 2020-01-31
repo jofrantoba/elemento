@@ -8,52 +8,27 @@ let $Overlay = goog.forwardDeclare('org.gwtproject.dom.client.TableSectionElemen
  * @interface
  */
 class TableSectionChangeHandler {
- /**
-  * @abstract
-  * @param {Object} newTBody
-  * @public
-  */
- m_onTableBodyChange__org_gwtproject_dom_client_TableSectionElement(newTBody) {}
- /**
-  * @abstract
-  * @param {Object} newTFoot
-  * @public
-  */
- m_onTableFootChange__org_gwtproject_dom_client_TableSectionElement(newTFoot) {}
- /**
-  * @abstract
-  * @param {Object} newTHead
-  * @public
-  */
- m_onTableHeadChange__org_gwtproject_dom_client_TableSectionElement(newTHead) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_onTableBodyChange__org_gwtproject_dom_client_TableSectionElement(/** Object */ newTBody) {}
+ /** @abstract */
+ m_onTableFootChange__org_gwtproject_dom_client_TableSectionElement(/** Object */ newTFoot) {}
+ /** @abstract */
+ m_onTableHeadChange__org_gwtproject_dom_client_TableSectionElement(/** Object */ newTHead) {}
+ 
  static $clinit() {
   TableSectionChangeHandler.$clinit = () =>{};
   TableSectionChangeHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_cellview_client_AbstractCellTable_TableSectionChangeHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_cellview_client_AbstractCellTable_TableSectionChangeHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_cellview_client_AbstractCellTable_TableSectionChangeHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

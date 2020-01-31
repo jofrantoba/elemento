@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ErrorHandler.impl.java.js",
-"lineCount":34,
-"mappings":"A;;;;;;;;;;;;MAoBiB,Y;;;;;;CAOV,qD,CAAmBA,K;;;;;;QAPT,M;EAAAC,uB;EAAAA,8B;;;;;QAAA,O;EAAAC,+B;EAAAA;",
+"lineCount":24,
+"mappings":"A;;;;;;;;;;;;MAoBiB,Y;;CAOV,qD,mBAAmBA,K;;QAPT,M;EAAAC,uB;EAAAA,8B;;;QAAA,O;EAAAC,+B;EAAAA;",
 "sources":["ErrorHandler.java"],
 "names":["event","org.gwtproject.event.dom.client.ErrorHandler.<synthetic: adapt_lambda>","org.gwtproject.event.dom.client.ErrorHandler.<clinit>"]
 }

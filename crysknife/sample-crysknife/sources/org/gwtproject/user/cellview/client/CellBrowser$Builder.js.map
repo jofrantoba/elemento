@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellBrowser$Builder.impl.java.js",
-"lineCount":126,
-"mappings":"A;;;;;;;;;;;;;;;;;MA4xBsB,O;;;;CAAA,W;EAAAA,Q;EAAAA;OACU,qEADVA,C;EAAAA;OAEF,qEAFEA,C;EAAAA;OAGH,4EAHGA,C;EAAAA;OAIG,wEAJHA,C;EAAAA;OAKF,oEALEA,C;EAAAA;OAMA,qEANAA,C;;;;;;;;;QAcX,mE,CAAsBC,S,EAAaC,S;EAAnCC,kB;EAAAA,8B;EAAAA,2J;EAAAA,iB;;;;;;;CAAA,0H,CAAsBF,S,EAAaC,S;EAAnCE,iC;EAAAA,0E;EACLA,uF;EACAA,uF;;;;;;CAQiB,S;EACjBC,0F;;;;;;;CASgB,wD,CAAwBC,M;EACxCC,2F;EACAA,Y;;;;;;;CAagB,4E,CAA0BC,O;EAC1CC,wF;EACAA,Y;;;;;;;CASgB,e,CAAaC,Q;EAC7BC,6G;EACAA,Y;;;;;;;CASgB,sE,CAAoBC,S;EACpCC,uF;EACAA,Y;;;;;;CAGgB,wE;EAChBA;GACEA,mHADFA;G;EAGAA,kF;;;;;CAhFgB,kE;EAIlBT,iH;;;;;QAJkB,O;EAAAU,0B;EAAAA,uB;EAAAA;",
+"lineCount":88,
+"mappings":"A;;;;;;;;;;;;;;;;;MA4xBsB,O;;CAAA,W;EAAAA,Q;EAAAA;OACU,qEADVA,C;EAAAA;OAEF,qEAFEA,C;EAAAA;OAGH,4EAHGA,C;EAAAA;OAIG,wEAJHA,C;EAAAA;OAKF,oEALEA,C;EAAAA;OAMA,qEANAA,C;;;QAcX,mE,sBAAsBC,S,WAAaC,S;EAAnCC,kB;EAAAA,8B;EAAAA,2J;EAAAA,iB;;;CAAA,0H,sBAAsBF,S,WAAaC,S;EAAnCE,iC;EAAAA,0E;EACLA,uF;EACAA,uF;;;CAQiB,S;EACjBC,0F;;;CASgB,wD,eAAwBC,M;EACxCC,2F;EACAA,Y;;;CAagB,4E,qBAA0BC,O;EAC1CC,wF;EACAA,Y;;;CASgB,e,eAAaC,Q;EAC7BC,6G;EACAA,Y;;;CASgB,sE,kBAAoBC,S;EACpCC,uF;EACAA,Y;;;CAGgB,wE;EAChBA;GACEA,mHADFA;G;EAGAA,kF;;;CAhFgB,kE;EAIlBT,iH;;;QAJkB,O;EAAAU,0B;EAAAA,uB;EAAAA;",
 "sources":["CellBrowser.java"],
 "names":["org.gwtproject.user.cellview.client.CellBrowser$Builder.<synthetic: ctor_js>","viewModel","rootValue","org.gwtproject.user.cellview.client.CellBrowser$Builder.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.CellBrowser$Builder.<init>","org.gwtproject.user.cellview.client.CellBrowser$Builder.build","widget","org.gwtproject.user.cellview.client.CellBrowser$Builder.loadingIndicator","factory","org.gwtproject.user.cellview.client.CellBrowser$Builder.pagerFactory","pageSize","org.gwtproject.user.cellview.client.CellBrowser$Builder.pageSize","resources","org.gwtproject.user.cellview.client.CellBrowser$Builder.resources","org.gwtproject.user.cellview.client.CellBrowser$Builder.<clinit>"]
 }

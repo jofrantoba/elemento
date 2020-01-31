@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"KeyDownHandler$$LambdaAdaptor.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;MAoBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;6E;EAAAA,0I;;;;;;CAAA,gI;EAAAC,iC;EAAAA,gF;;;;;;CAAA,yD;;GAAAC,2F;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MAoBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;6E;EAAAA,0I;;;CAAA,gI;EAAAC,iC;EAAAA,gF;;;CAAA,yD;;GAAAC,2F;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["KeyDownHandler.java"],
 "names":["org.gwtproject.event.dom.client.KeyDownHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.dom.client.KeyDownHandler$$LambdaAdaptor.<init>","org.gwtproject.event.dom.client.KeyDownHandler$$LambdaAdaptor.onKeyDown","org.gwtproject.event.dom.client.KeyDownHandler$$LambdaAdaptor.<clinit>"]
 }

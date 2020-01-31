@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ElementsBag$IterableImpl.impl.java.js",
-"lineCount":76,
-"mappings":"A;;;;;;;;;;;;;;;;MA0FyB,Y;;;;CAAA,W;EAAAA,Q;EAAAA;OAEU,uDAFVA,C;;;;;;QAIT,S;EAAAC,uB;EAAAA,mC;EAAAA,iE;EAAAA,iB;;;;;CAAA,oD;EAAAC,iC;EACJA,+G;;;;;;;CAIyB,Y;EACzBC,2J;;;;;;;;CAVa,sC;EAAAC,0F;;;;;;;;CAAA,e;EAAAC,2G;;;;;QAAA,O;EAAAC,+B;EAAAA,4B;EAAAA,qB;EAAAA;",
+"lineCount":55,
+"mappings":"A;;;;;;;;;;;;;;;;MA0FyB,Y;;CAAA,W;EAAAA,Q;EAAAA;OAEU,uDAFVA,C;;;QAIT,S;EAAAC,uB;EAAAA,mC;EAAAA,iE;EAAAA,iB;;;CAAA,oD;EAAAC,iC;EACJA,8G;;;CAIyB,Y;EACzBC,0J;;;;CAVa,sC;EAAAC,0F;;;;CAAA,e;EAAAC,0G;;;QAAA,O;EAAAC,+B;EAAAA,4B;EAAAA,qB;EAAAA;",
 "sources":["ElementsBag.java"],
 "names":["org.jboss.elemento.ElementsBag$IterableImpl.<synthetic: ctor_js>","org.jboss.elemento.ElementsBag$IterableImpl.<synthetic: ctor_create>","org.jboss.elemento.ElementsBag$IterableImpl.<init>","org.jboss.elemento.ElementsBag$IterableImpl.iterator","org.jboss.elemento.ElementsBag$IterableImpl.forEach","org.jboss.elemento.ElementsBag$IterableImpl.spliterator","org.jboss.elemento.ElementsBag$IterableImpl.<clinit>"]
 }

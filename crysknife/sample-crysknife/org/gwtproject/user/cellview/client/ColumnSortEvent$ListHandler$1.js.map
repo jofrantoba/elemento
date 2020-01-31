@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ColumnSortEvent$ListHandler$1.impl.java.js",
-"lineCount":140,
-"mappings":"A;;;;;;;;;;;;;;;;MAyHmD,E;;;;CAAA,W;EAAAA,Q;EAAAA;wF;EAAAA;OATzBC,aASyBD,C;;;;;;;;;QAAA,8F;EAAAE,a;EAAAA,yB;EAAAA,sM;EAAAA,iB;;;;;;;CAAA,+J;EAAAC,oG;EAAAA,mC;EAAAA,iC;;;;;;;;;CAC9B,6C,CAAUC,E,EAAMC,E;EACzBC,iF;;;;;;;;CAFuC,Y;EAAAC,iG;;;;;;;;;CAAA,qC;EAAAC,kI;;;;;;;;;;CAAA,4C;EAAAA,yI;;;;;;;;;;;CAAA,kE;EAAAA,qK;;;;;;;;;CAAA,0D;EAAAC,uJ;;;;;;;;;CAAA,oD;EAAAC,iJ;;;;;;;;;CAAA,sD;EAAAC,mJ;;;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA,qB;EAAAA;",
+"lineCount":83,
+"mappings":"A;;;;;;;;;;;;;;;;MAyHmD,E;;CAAA,W;EAAAA,Q;EAAAA;wF;EAAAA;OATzBC,aASyBD,C;;;QAAA,8F;EAAAE,a;EAAAA,yB;EAAAA,sM;EAAAA,iB;;;CAAA,+J;EAAAC,oG;EAAAA,mC;EAAAA,iC;;;CAC9B,6C,UAAUC,E,WAAMC,E;EACzBC,iF;;;;CAFuC,Y;EAAAC,gG;;;;CAAA,qC;EAAAC,iI;;;;CAAA,4C;EAAAA,wI;;;;CAAA,kE;EAAAA,oK;;;;CAAA,0D;EAAAC,sJ;;;;CAAA,oD;EAAAC,gJ;;;;CAAA,sD;EAAAC,kJ;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA,qB;EAAAA;",
 "sources":["ColumnSortEvent.java"],
 "names":["org.gwtproject.user.cellview.client.ColumnSortEvent$ListHandler$1.<synthetic: ctor_js>","comparator","org.gwtproject.user.cellview.client.ColumnSortEvent$ListHandler$1.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.ColumnSortEvent$ListHandler$1.<init>","o1","o2","org.gwtproject.user.cellview.client.ColumnSortEvent$ListHandler$1.compare","org.gwtproject.user.cellview.client.ColumnSortEvent$ListHandler$1.reversed","org.gwtproject.user.cellview.client.ColumnSortEvent$ListHandler$1.thenComparing","org.gwtproject.user.cellview.client.ColumnSortEvent$ListHandler$1.thenComparingDouble","org.gwtproject.user.cellview.client.ColumnSortEvent$ListHandler$1.thenComparingInt","org.gwtproject.user.cellview.client.ColumnSortEvent$ListHandler$1.thenComparingLong","org.gwtproject.user.cellview.client.ColumnSortEvent$ListHandler$1.<clinit>"]
 }

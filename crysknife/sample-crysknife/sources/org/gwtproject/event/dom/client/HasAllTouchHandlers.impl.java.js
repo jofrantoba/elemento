@@ -14,38 +14,25 @@ const HasTouchStartHandlers = goog.require('org.gwtproject.event.dom.client.HasT
  * @extends {HasTouchCancelHandlers}
  */
 class HasAllTouchHandlers {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HasAllTouchHandlers.$clinit = () =>{};
   HasAllTouchHandlers.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasTouchStartHandlers.$markImplementor(classConstructor);
-  HasTouchMoveHandlers.$markImplementor(classConstructor);
-  HasTouchEndHandlers.$markImplementor(classConstructor);
-  HasTouchCancelHandlers.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_HasAllTouchHandlers = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasTouchStartHandlers.$markImplementor(ctor);
+  HasTouchMoveHandlers.$markImplementor(ctor);
+  HasTouchEndHandlers.$markImplementor(ctor);
+  HasTouchCancelHandlers.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_HasAllTouchHandlers = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_HasAllTouchHandlers;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

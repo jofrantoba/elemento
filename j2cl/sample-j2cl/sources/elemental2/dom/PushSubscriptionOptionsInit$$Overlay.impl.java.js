@@ -9,51 +9,32 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Overlay = goog.forwardDeclare('jsinterop.base.JsPropertyMap.$Overlay$impl');
 
 class PushSubscriptionOptionsInit_$Overlay {
- /**
-  * @return {PushSubscriptionOptionsInit}
-  * @public
-  */
+ /** @return {PushSubscriptionOptionsInit} */
  static m_create__() {
   PushSubscriptionOptionsInit_$Overlay.$clinit();
-  return /**@type {PushSubscriptionOptionsInit} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
+  return /**@type {PushSubscriptionOptionsInit}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
  }
- /**
-  * @param {!PushSubscriptionOptionsInit} $thisArg
-  * @param {ArrayBuffer} applicationServerKey
-  * @public
-  */
- static m_setApplicationServerKey__$devirt__elemental2_dom_PushSubscriptionOptionsInit__elemental2_core_ArrayBuffer($thisArg, applicationServerKey) {
+ 
+ static m_setApplicationServerKey__$devirt__elemental2_dom_PushSubscriptionOptionsInit__elemental2_core_ArrayBuffer(/** !PushSubscriptionOptionsInit */ $thisArg, /** ArrayBuffer */ applicationServerKey) {
   PushSubscriptionOptionsInit_$Overlay.$clinit();
-  $thisArg.applicationServerKey = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(applicationServerKey));
+  $thisArg.applicationServerKey = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(applicationServerKey));
  }
- /**
-  * @param {!PushSubscriptionOptionsInit} $thisArg
-  * @param {ArrayBufferView} applicationServerKey
-  * @public
-  */
- static m_setApplicationServerKey__$devirt__elemental2_dom_PushSubscriptionOptionsInit__elemental2_core_ArrayBufferView($thisArg, applicationServerKey) {
+ 
+ static m_setApplicationServerKey__$devirt__elemental2_dom_PushSubscriptionOptionsInit__elemental2_core_ArrayBufferView(/** !PushSubscriptionOptionsInit */ $thisArg, /** ArrayBufferView */ applicationServerKey) {
   PushSubscriptionOptionsInit_$Overlay.$clinit();
-  $thisArg.applicationServerKey = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(applicationServerKey));
+  $thisArg.applicationServerKey = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(applicationServerKey));
  }
- /**
-  * @param {!PushSubscriptionOptionsInit} $thisArg
-  * @param {?string} applicationServerKey
-  * @public
-  */
- static m_setApplicationServerKey__$devirt__elemental2_dom_PushSubscriptionOptionsInit__java_lang_String($thisArg, applicationServerKey) {
+ 
+ static m_setApplicationServerKey__$devirt__elemental2_dom_PushSubscriptionOptionsInit__java_lang_String(/** !PushSubscriptionOptionsInit */ $thisArg, /** ?string */ applicationServerKey) {
   PushSubscriptionOptionsInit_$Overlay.$clinit();
-  $thisArg.applicationServerKey = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(applicationServerKey));
+  $thisArg.applicationServerKey = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(applicationServerKey));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   PushSubscriptionOptionsInit_$Overlay.$clinit = () =>{};
   PushSubscriptionOptionsInit_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');

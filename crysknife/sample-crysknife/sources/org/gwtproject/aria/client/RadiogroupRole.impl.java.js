@@ -10,55 +10,28 @@ let $Overlay = goog.forwardDeclare('org.gwtproject.dom.client.Element.$Overlay$i
  * @extends {SelectRole}
  */
 class RadiogroupRole {
- /**
-  * @abstract
-  * @param {Object} element
-  * @return {?string}
-  * @public
-  */
- m_getAriaRequiredProperty__org_gwtproject_dom_client_Element(element) {}
- /**
-  * @abstract
-  * @param {Object} element
-  * @public
-  */
- m_removeAriaRequiredProperty__org_gwtproject_dom_client_Element(element) {}
- /**
-  * @abstract
-  * @param {Object} element
-  * @param {boolean} value
-  * @public
-  */
- m_setAriaRequiredProperty__org_gwtproject_dom_client_Element__boolean(element, value) {}
- /**
-  * @public
-  */
+ /** @abstract @return {?string} */
+ m_getAriaRequiredProperty__org_gwtproject_dom_client_Element(/** Object */ element) {}
+ /** @abstract */
+ m_removeAriaRequiredProperty__org_gwtproject_dom_client_Element(/** Object */ element) {}
+ /** @abstract */
+ m_setAriaRequiredProperty__org_gwtproject_dom_client_Element__boolean(/** Object */ element, /** boolean */ value) {}
+ 
  static $clinit() {
   RadiogroupRole.$clinit = () =>{};
   RadiogroupRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  SelectRole.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_RadiogroupRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  SelectRole.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_RadiogroupRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_RadiogroupRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

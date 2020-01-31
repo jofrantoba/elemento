@@ -11,65 +11,42 @@ let DefaultMonthSelector = goog.forwardDeclare('org.gwtproject.user.datepicker.c
  * @implements {ClickHandler}
   */
 class $1 extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {DefaultMonthSelector} */
+  /**@type {DefaultMonthSelector}*/
   this.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultMonthSelector_1;
-  /** @public {number} */
+  /**@type {number}*/
   this.$c_noOfMonths = 0;
  }
- /**
-  * @param {DefaultMonthSelector} $outer_this
-  * @param {number} $c_noOfMonths
-  * @return {!$1}
-  * @public
-  */
- static $create__org_gwtproject_user_datepicker_client_DefaultMonthSelector__int($outer_this, $c_noOfMonths) {
+ /** @return {!$1} */
+ static $create__org_gwtproject_user_datepicker_client_DefaultMonthSelector__int(/** DefaultMonthSelector */ $outer_this, /** number */ $c_noOfMonths) {
   $1.$clinit();
   let $instance = new $1();
   $instance.$ctor__org_gwtproject_user_datepicker_client_DefaultMonthSelector_1__org_gwtproject_user_datepicker_client_DefaultMonthSelector__int($outer_this, $c_noOfMonths);
   return $instance;
  }
- /**
-  * @param {DefaultMonthSelector} $outer_this
-  * @param {number} $c_noOfMonths
-  * @public
-  */
- $ctor__org_gwtproject_user_datepicker_client_DefaultMonthSelector_1__org_gwtproject_user_datepicker_client_DefaultMonthSelector__int($outer_this, $c_noOfMonths) {
+ 
+ $ctor__org_gwtproject_user_datepicker_client_DefaultMonthSelector_1__org_gwtproject_user_datepicker_client_DefaultMonthSelector__int(/** DefaultMonthSelector */ $outer_this, /** number */ $c_noOfMonths) {
   this.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultMonthSelector_1 = $outer_this;
   this.$c_noOfMonths = $c_noOfMonths;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {ClickEvent} event
-  * @public
-  */
- m_onClick__org_gwtproject_event_dom_client_ClickEvent(event) {
+ /** @override */
+ m_onClick__org_gwtproject_event_dom_client_ClickEvent(/** ClickEvent */ event) {
   this.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultMonthSelector_1.m_addMonths__int(this.$c_noOfMonths);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $1.$clinit = () =>{};
   $1.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $1;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

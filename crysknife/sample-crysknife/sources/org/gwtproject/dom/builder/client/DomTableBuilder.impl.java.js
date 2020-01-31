@@ -16,127 +16,70 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {TableBuilder}
   */
 class DomTableBuilder extends DomElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @return {!DomTableBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ /** @return {!DomTableBuilder} */
+ static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   DomTableBuilder.$clinit();
   let $instance = new DomTableBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_client_DomTableBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_client_DomTableBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_client_DomTableBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_client_DomElementBuilderBase__org_gwtproject_dom_builder_client_DomBuilderImpl__boolean(delegate, false);
  }
- /**
-  * @override
-  * @param {number} border
-  * @return {TableBuilder}
-  * @public
-  */
- m_border__int(border) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).border = border;
+ /** @override @return {TableBuilder} */
+ m_border__int(/** number */ border) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).border = border;
   return this;
  }
- /**
-  * @override
-  * @param {number} cellPadding
-  * @return {TableBuilder}
-  * @public
-  */
- m_cellPadding__int(cellPadding) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).cellPadding = cellPadding;
+ /** @override @return {TableBuilder} */
+ m_cellPadding__int(/** number */ cellPadding) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).cellPadding = cellPadding;
   return this;
  }
- /**
-  * @override
-  * @param {number} cellSpacing
-  * @return {TableBuilder}
-  * @public
-  */
- m_cellSpacing__int(cellSpacing) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).cellSpacing = cellSpacing;
+ /** @override @return {TableBuilder} */
+ m_cellSpacing__int(/** number */ cellSpacing) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).cellSpacing = cellSpacing;
   return this;
  }
- /**
-  * @override
-  * @param {?string} frame
-  * @return {TableBuilder}
-  * @public
-  */
- m_frame__java_lang_String(frame) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).frame = frame;
+ /** @override @return {TableBuilder} */
+ m_frame__java_lang_String(/** ?string */ frame) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).frame = frame;
   return this;
  }
- /**
-  * @override
-  * @param {SafeHtml} html
-  * @return {TableBuilder}
-  * @public
-  */
- m_html__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ /** @override @return {TableBuilder} */
+ m_html__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String(TableBuilder.f_UNSUPPORTED_HTML__org_gwtproject_dom_builder_shared_TableBuilder));
  }
- /**
-  * @override
-  * @param {?string} rules
-  * @return {TableBuilder}
-  * @public
-  */
- m_rules__java_lang_String(rules) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).rules = rules;
+ /** @override @return {TableBuilder} */
+ m_rules__java_lang_String(/** ?string */ rules) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).rules = rules;
   return this;
  }
- /**
-  * @override
-  * @param {?string} text
-  * @return {TableBuilder}
-  * @public
-  */
- m_text__java_lang_String(text) {
+ /** @override @return {TableBuilder} */
+ m_text__java_lang_String(/** ?string */ text) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String(TableBuilder.f_UNSUPPORTED_HTML__org_gwtproject_dom_builder_shared_TableBuilder));
  }
- /**
-  * @override
-  * @param {?string} width
-  * @return {TableBuilder}
-  * @public
-  */
- m_width__java_lang_String(width) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).width = width;
+ /** @override @return {TableBuilder} */
+ m_width__java_lang_String(/** ?string */ width) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).width = width;
   return this;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomTableBuilder.$clinit = () =>{};
   DomTableBuilder.$loadModules();
   DomElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomTableBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   UnsupportedOperationException = goog.module.get('java.lang.UnsupportedOperationException$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.TableElement.$Overlay$impl');

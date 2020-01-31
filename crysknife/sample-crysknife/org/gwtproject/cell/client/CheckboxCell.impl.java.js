@@ -24,119 +24,73 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {AbstractEditableCell<?boolean, ?boolean>}
   */
 class CheckboxCell extends AbstractEditableCell {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_dependsOnSelection__org_gwtproject_cell_client_CheckboxCell_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_handlesSelection__org_gwtproject_cell_client_CheckboxCell_ = false;
  }
- /**
-  * Factory method corresponding to constructor 'CheckboxCell()'.
-  * @return {!CheckboxCell}
-  * @public
-  */
+ //Factory method corresponding to constructor 'CheckboxCell()'.
+ /** @return {!CheckboxCell} */
  static $create__() {
   CheckboxCell.$clinit();
   let $instance = new CheckboxCell();
   $instance.$ctor__org_gwtproject_cell_client_CheckboxCell__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'CheckboxCell()'.
-  * @public
-  */
+ //Initialization from constructor 'CheckboxCell()'.
+ 
  $ctor__org_gwtproject_cell_client_CheckboxCell__() {
   this.$ctor__org_gwtproject_cell_client_CheckboxCell__boolean(false);
  }
- /**
-  * Factory method corresponding to constructor 'CheckboxCell(boolean)'.
-  * @param {boolean} isSelectBox
-  * @return {!CheckboxCell}
-  * @public
-  * @deprecated
-  */
- static $create__boolean(isSelectBox) {
+ //Factory method corresponding to constructor 'CheckboxCell(boolean)'.
+ /** @return {!CheckboxCell} @deprecated */
+ static $create__boolean(/** boolean */ isSelectBox) {
   CheckboxCell.$clinit();
   let $instance = new CheckboxCell();
   $instance.$ctor__org_gwtproject_cell_client_CheckboxCell__boolean(isSelectBox);
   return $instance;
  }
- /**
-  * Initialization from constructor 'CheckboxCell(boolean)'.
-  * @param {boolean} isSelectBox
-  * @public
-  * @deprecated
-  */
- $ctor__org_gwtproject_cell_client_CheckboxCell__boolean(isSelectBox) {
+ //Initialization from constructor 'CheckboxCell(boolean)'.
+ /** @deprecated */
+ $ctor__org_gwtproject_cell_client_CheckboxCell__boolean(/** boolean */ isSelectBox) {
   this.$ctor__org_gwtproject_cell_client_CheckboxCell__boolean__boolean(isSelectBox, isSelectBox);
  }
- /**
-  * Factory method corresponding to constructor 'CheckboxCell(boolean, boolean)'.
-  * @param {boolean} dependsOnSelection
-  * @param {boolean} handlesSelection
-  * @return {!CheckboxCell}
-  * @public
-  */
- static $create__boolean__boolean(dependsOnSelection, handlesSelection) {
+ //Factory method corresponding to constructor 'CheckboxCell(boolean, boolean)'.
+ /** @return {!CheckboxCell} */
+ static $create__boolean__boolean(/** boolean */ dependsOnSelection, /** boolean */ handlesSelection) {
   CheckboxCell.$clinit();
   let $instance = new CheckboxCell();
   $instance.$ctor__org_gwtproject_cell_client_CheckboxCell__boolean__boolean(dependsOnSelection, handlesSelection);
   return $instance;
  }
- /**
-  * Initialization from constructor 'CheckboxCell(boolean, boolean)'.
-  * @param {boolean} dependsOnSelection
-  * @param {boolean} handlesSelection
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_CheckboxCell__boolean__boolean(dependsOnSelection, handlesSelection) {
-  this.$ctor__org_gwtproject_cell_client_AbstractEditableCell__arrayOf_java_lang_String(/**@type {!Array<?string>} */ ($Arrays.$init([BrowserEvents.f_CHANGE__org_gwtproject_dom_client_BrowserEvents, BrowserEvents.f_KEYDOWN__org_gwtproject_dom_client_BrowserEvents], j_l_String)));
+ //Initialization from constructor 'CheckboxCell(boolean, boolean)'.
+ 
+ $ctor__org_gwtproject_cell_client_CheckboxCell__boolean__boolean(/** boolean */ dependsOnSelection, /** boolean */ handlesSelection) {
+  this.$ctor__org_gwtproject_cell_client_AbstractEditableCell__arrayOf_java_lang_String(/**@type {!Array<?string>}*/ ($Arrays.$init([BrowserEvents.f_CHANGE__org_gwtproject_dom_client_BrowserEvents, BrowserEvents.f_KEYDOWN__org_gwtproject_dom_client_BrowserEvents], j_l_String)));
   this.f_dependsOnSelection__org_gwtproject_cell_client_CheckboxCell_ = dependsOnSelection;
   this.f_handlesSelection__org_gwtproject_cell_client_CheckboxCell_ = handlesSelection;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_dependsOnSelection__() {
   return this.f_dependsOnSelection__org_gwtproject_cell_client_CheckboxCell_;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_handlesSelection__() {
   return this.f_handlesSelection__org_gwtproject_cell_client_CheckboxCell_;
  }
- /**
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {?boolean} value
-  * @return {boolean}
-  * @public
-  */
- m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Boolean(context, parent, value) {
+ /** @return {boolean} */
+ m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Boolean(/** Context */ context, /** Object */ parent, /** ?boolean */ value) {
   return false;
  }
- /**
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {?boolean} value
-  * @param {Object} event
-  * @param {ValueUpdater<?boolean>} valueUpdater
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Boolean__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, parent, value, event, valueUpdater) {
+ 
+ m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Boolean__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(/** Context */ context, /** Object */ parent, /** ?boolean */ value, /** Object */ event, /** ValueUpdater<?boolean> */ valueUpdater) {
   let type = $Overlay.m_getType__$devirt__org_gwtproject_dom_client_NativeEvent(event);
   let enterPressed = j_l_String.m_equals__java_lang_String__java_lang_Object(BrowserEvents.f_KEYDOWN__org_gwtproject_dom_client_BrowserEvents, type) && $Overlay.m_getKeyCode__$devirt__org_gwtproject_dom_client_NativeEvent(event) == KeyCodes.f_KEY_ENTER__org_gwtproject_event_dom_client_KeyCodes;
   if (j_l_String.m_equals__java_lang_String__java_lang_Object(BrowserEvents.f_CHANGE__org_gwtproject_dom_client_BrowserEvents, type) || enterPressed) {
-   let input = /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(parent.firstChild), InputElement_$Overlay));
+   let input = /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(parent.firstChild), InputElement_$Overlay));
    let isChecked = InputElement_$Overlay.m_isChecked__$devirt__org_gwtproject_dom_client_InputElement(input);
    if (enterPressed && (this.m_handlesSelection__() || !this.m_dependsOnSelection__())) {
     isChecked = !Boolean.m_booleanValue__java_lang_Boolean(isChecked);
@@ -152,15 +106,10 @@ class CheckboxCell extends AbstractEditableCell {
    }
   }
  }
- /**
-  * @param {Context} context
-  * @param {?boolean} value
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Boolean__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, value, sb) {
+ 
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Boolean__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ context, /** ?boolean */ value, /** SafeHtmlBuilder */ sb) {
   let key = context.m_getKey__();
-  let viewData = /**@type {?boolean} */ ($Casts.$to(this.m_getViewData__java_lang_Object(key), Boolean));
+  let viewData = /**@type {?boolean}*/ ($Casts.$to(this.m_getViewData__java_lang_Object(key), Boolean));
   if (!$Equality.$same(viewData, null) && Boolean.m_equals__java_lang_Boolean__java_lang_Object(viewData, value)) {
    this.m_clearViewData__java_lang_Object(key);
    viewData = null;
@@ -171,45 +120,22 @@ class CheckboxCell extends AbstractEditableCell {
    sb.m_append__org_gwtproject_safehtml_shared_SafeHtml(CheckboxCell.f_INPUT_UNCHECKED__org_gwtproject_cell_client_CheckboxCell_);
   }
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Context} arg0
-  * @param {Object} arg1
-  * @param {*} arg2
-  * @return {boolean}
-  * @public
-  */
- m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(arg0, arg1, arg2) {
-  return this.m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Boolean(arg0, arg1, /**@type {?boolean} */ ($Casts.$to(arg2, Boolean)));
+ //Bridge method.
+ /** @override @return {boolean} */
+ m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(/** Context */ arg0, /** Object */ arg1, /** * */ arg2) {
+  return this.m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Boolean(arg0, arg1, /**@type {?boolean}*/ ($Casts.$to(arg2, Boolean)));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Context} arg0
-  * @param {Object} arg1
-  * @param {*} arg2
-  * @param {Object} arg3
-  * @param {ValueUpdater} arg4
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(arg0, arg1, arg2, arg3, arg4) {
-  this.m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Boolean__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(arg0, arg1, /**@type {?boolean} */ ($Casts.$to(arg2, Boolean)), arg3, arg4);
+ //Bridge method.
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(/** Context */ arg0, /** Object */ arg1, /** * */ arg2, /** Object */ arg3, /** ValueUpdater */ arg4) {
+  this.m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Boolean__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(arg0, arg1, /**@type {?boolean}*/ ($Casts.$to(arg2, Boolean)), arg3, arg4);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Context} arg0
-  * @param {*} arg1
-  * @param {SafeHtmlBuilder} arg2
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, arg1, arg2) {
-  this.m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Boolean__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, /**@type {?boolean} */ ($Casts.$to(arg1, Boolean)), arg2);
+ //Bridge method.
+ /** @override */
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ arg0, /** * */ arg1, /** SafeHtmlBuilder */ arg2) {
+  this.m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Boolean__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, /**@type {?boolean}*/ ($Casts.$to(arg1, Boolean)), arg2);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CheckboxCell.$clinit = () =>{};
   CheckboxCell.$loadModules();
@@ -217,17 +143,11 @@ class CheckboxCell extends AbstractEditableCell {
   CheckboxCell.f_INPUT_CHECKED__org_gwtproject_cell_client_CheckboxCell_ = SafeHtmlUtils.m_fromSafeConstant__java_lang_String("<input type=\"checkbox\" tabindex=\"-1\" checked/>");
   CheckboxCell.f_INPUT_UNCHECKED__org_gwtproject_cell_client_CheckboxCell_ = SafeHtmlUtils.m_fromSafeConstant__java_lang_String("<input type=\"checkbox\" tabindex=\"-1\"/>");
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CheckboxCell;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Boolean = goog.module.get('java.lang.Boolean$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -245,9 +165,9 @@ class CheckboxCell extends AbstractEditableCell {
 }
 $Util.$setClassMetadata(CheckboxCell, 'org.gwtproject.cell.client.CheckboxCell');
 
-/** @public {SafeHtml} */
+/**@type {SafeHtml}*/
 CheckboxCell.f_INPUT_CHECKED__org_gwtproject_cell_client_CheckboxCell_;
-/** @public {SafeHtml} */
+/**@type {SafeHtml}*/
 CheckboxCell.f_INPUT_UNCHECKED__org_gwtproject_cell_client_CheckboxCell_;
 
 exports = CheckboxCell; 

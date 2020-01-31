@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TablistRoleImpl.impl.java.js",
-"lineCount":127,
-"mappings":"A;;;;;;;;;;;;;;;;;MAsBM,e;;;;CAAA,W;EAAAA,Q;;;;;;;QAEJ,yB,CAAuBC,Q;EAAvBC,0B;EAAAA,sC;EAAAA,wF;EAAAA,iB;;;;;;CAAA,mE,CAAuBD,Q;EACrBE,4E;;;;;;;;CAIY,oE,CAAwCC,O;EACpDC,0H;;;;;;;CAIU,uE,CAA2CD,O;EACrDE,sH;;;;;;;;CAIU,mG,CAAwCF,O,EAAYG,K;EAC9DC,oM;;;;;;;;CAIY,yD,CAA6BJ,O;EACzCK,4G;;;;;;;CAIU,4D,CAAgCL,O;EAC1CM,wG;;;;;;;;CAIU,mG,CAA6BN,O,EAAuBG,K;EAC9DI,4M;;;;;;;;CAIY,yD,CAA6BP,O;EACzCQ,+G;;;;;;;CAIU,4D,CAAgCR,O;EAC1CS,2G;;;;;;;;CAIU,8D,CAA6BT,O,EAAaG,K;EACpDO,2N;;;;;QAhDE,O;EAAAC,kC;EAAAA,+B;EAAAA;",
+"lineCount":74,
+"mappings":"A;;;;;;;;;;;;;;;;;MAsBM,e;;CAAA,W;EAAAA,Q;;;QAEJ,yB,gBAAuBC,Q;EAAvBC,0B;EAAAA,sC;EAAAA,wF;EAAAA,iB;;;CAAA,mE,gBAAuBD,Q;EACrBE,4E;;;CAIY,oE,eAAwCC,O;EACpDC,0H;;;CAIU,uE,eAA2CD,O;EACrDE,sH;;;CAIU,mG,eAAwCF,O,YAAYG,K;EAC9DC,mM;;;CAIY,yD,eAA6BJ,O;EACzCK,4G;;;CAIU,4D,eAAgCL,O;EAC1CM,wG;;;CAIU,mG,eAA6BN,O,uBAAuBG,K;EAC9DI,2M;;;CAIY,yD,eAA6BP,O;EACzCQ,+G;;;CAIU,4D,eAAgCR,O;EAC1CS,2G;;;CAIU,8D,eAA6BT,O,gBAAaG,K;EACpDO,0N;;;QAhDE,O;EAAAC,kC;EAAAA,+B;EAAAA;",
 "sources":["TablistRoleImpl.java"],
 "names":["org.gwtproject.aria.client.TablistRoleImpl.<synthetic: ctor_js>","roleName","org.gwtproject.aria.client.TablistRoleImpl.<synthetic: ctor_create>","org.gwtproject.aria.client.TablistRoleImpl.<init>","element","org.gwtproject.aria.client.TablistRoleImpl.getAriaActivedescendantProperty","org.gwtproject.aria.client.TablistRoleImpl.removeAriaActivedescendantProperty","value","org.gwtproject.aria.client.TablistRoleImpl.setAriaActivedescendantProperty","org.gwtproject.aria.client.TablistRoleImpl.getAriaExpandedState","org.gwtproject.aria.client.TablistRoleImpl.removeAriaExpandedState","org.gwtproject.aria.client.TablistRoleImpl.setAriaExpandedState","org.gwtproject.aria.client.TablistRoleImpl.getAriaLevelProperty","org.gwtproject.aria.client.TablistRoleImpl.removeAriaLevelProperty","org.gwtproject.aria.client.TablistRoleImpl.setAriaLevelProperty","org.gwtproject.aria.client.TablistRoleImpl.<clinit>"]
 }

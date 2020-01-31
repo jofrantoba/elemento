@@ -10,64 +10,42 @@ let MenuBar = goog.forwardDeclare('org.gwtproject.user.client.ui.MenuBar$impl');
  * @implements {ScheduledCommand}
   */
 class $1 extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {MenuBar} */
+  /**@type {MenuBar}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_MenuBar_1;
-  /** @public {ScheduledCommand} */
+  /**@type {ScheduledCommand}*/
   this.$c_cmd;
  }
- /**
-  * @param {MenuBar} $outer_this
-  * @param {ScheduledCommand} $c_cmd
-  * @return {!$1}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_MenuBar__org_gwtproject_core_client_Scheduler_ScheduledCommand($outer_this, $c_cmd) {
+ /** @return {!$1} */
+ static $create__org_gwtproject_user_client_ui_MenuBar__org_gwtproject_core_client_Scheduler_ScheduledCommand(/** MenuBar */ $outer_this, /** ScheduledCommand */ $c_cmd) {
   $1.$clinit();
   let $instance = new $1();
   $instance.$ctor__org_gwtproject_user_client_ui_MenuBar_1__org_gwtproject_user_client_ui_MenuBar__org_gwtproject_core_client_Scheduler_ScheduledCommand($outer_this, $c_cmd);
   return $instance;
  }
- /**
-  * @param {MenuBar} $outer_this
-  * @param {ScheduledCommand} $c_cmd
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_MenuBar_1__org_gwtproject_user_client_ui_MenuBar__org_gwtproject_core_client_Scheduler_ScheduledCommand($outer_this, $c_cmd) {
+ 
+ $ctor__org_gwtproject_user_client_ui_MenuBar_1__org_gwtproject_user_client_ui_MenuBar__org_gwtproject_core_client_Scheduler_ScheduledCommand(/** MenuBar */ $outer_this, /** ScheduledCommand */ $c_cmd) {
   this.f_$outer_this__org_gwtproject_user_client_ui_MenuBar_1 = $outer_this;
   this.$c_cmd = $c_cmd;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_execute__() {
   this.$c_cmd.m_execute__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $1.$clinit = () =>{};
   $1.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $1;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

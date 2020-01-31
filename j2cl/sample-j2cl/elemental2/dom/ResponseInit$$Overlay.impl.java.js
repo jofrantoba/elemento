@@ -9,60 +9,37 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Overlay = goog.forwardDeclare('jsinterop.base.JsPropertyMap.$Overlay$impl');
 
 class ResponseInit_$Overlay {
- /**
-  * @return {ResponseInit}
-  * @public
-  */
+ /** @return {ResponseInit} */
  static m_create__() {
   ResponseInit_$Overlay.$clinit();
-  return /**@type {ResponseInit} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
+  return /**@type {ResponseInit}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
  }
- /**
-  * @param {!ResponseInit} $thisArg
-  * @param {Headers} headers
-  * @public
-  */
- static m_setHeaders__$devirt__elemental2_dom_ResponseInit__elemental2_dom_Headers($thisArg, headers) {
+ 
+ static m_setHeaders__$devirt__elemental2_dom_ResponseInit__elemental2_dom_Headers(/** !ResponseInit */ $thisArg, /** Headers */ headers) {
   ResponseInit_$Overlay.$clinit();
-  $thisArg.headers = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(headers));
+  $thisArg.headers = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(headers));
  }
- /**
-  * @param {!ResponseInit} $thisArg
-  * @param {Array<Array<?string>>} headers
-  * @public
-  */
- static m_setHeaders__$devirt__elemental2_dom_ResponseInit__elemental2_core_JsArray($thisArg, headers) {
+ 
+ static m_setHeaders__$devirt__elemental2_dom_ResponseInit__elemental2_core_JsArray(/** !ResponseInit */ $thisArg, /** Array<Array<?string>> */ headers) {
   ResponseInit_$Overlay.$clinit();
-  $thisArg.headers = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(headers));
+  $thisArg.headers = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(headers));
  }
- /**
-  * @param {!ResponseInit} $thisArg
-  * @param {Object<string, ?string>} headers
-  * @public
-  */
- static m_setHeaders__$devirt__elemental2_dom_ResponseInit__jsinterop_base_JsPropertyMap($thisArg, headers) {
+ 
+ static m_setHeaders__$devirt__elemental2_dom_ResponseInit__jsinterop_base_JsPropertyMap(/** !ResponseInit */ $thisArg, /** Object<string, ?string> */ headers) {
   ResponseInit_$Overlay.$clinit();
-  $thisArg.headers = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(headers));
+  $thisArg.headers = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(headers));
  }
- /**
-  * @param {!ResponseInit} $thisArg
-  * @param {Array<Array<?string>>} headers
-  * @public
-  */
- static m_setHeaders__$devirt__elemental2_dom_ResponseInit__arrayOf_arrayOf_java_lang_String($thisArg, headers) {
+ 
+ static m_setHeaders__$devirt__elemental2_dom_ResponseInit__arrayOf_arrayOf_java_lang_String(/** !ResponseInit */ $thisArg, /** Array<Array<?string>> */ headers) {
   ResponseInit_$Overlay.$clinit();
-  ResponseInit_$Overlay.m_setHeaders__$devirt__elemental2_dom_ResponseInit__elemental2_core_JsArray($thisArg, /**@type {Array<Array<?string>>} */ (Js.m_uncheckedCast__java_lang_Object(headers)));
+  ResponseInit_$Overlay.m_setHeaders__$devirt__elemental2_dom_ResponseInit__elemental2_core_JsArray($thisArg, /**@type {Array<Array<?string>>}*/ (Js.m_uncheckedCast__java_lang_Object(headers)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ResponseInit_$Overlay.$clinit = () =>{};
   ResponseInit_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');

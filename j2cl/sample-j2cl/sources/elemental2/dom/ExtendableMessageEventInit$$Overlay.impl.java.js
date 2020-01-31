@@ -11,64 +11,37 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Overlay = goog.forwardDeclare('jsinterop.base.JsPropertyMap.$Overlay$impl');
 
 class ExtendableMessageEventInit_$Overlay {
- /**
-  * @return {ExtendableMessageEventInit}
-  * @public
-  */
+ /** @return {ExtendableMessageEventInit} */
  static m_create__() {
   ExtendableMessageEventInit_$Overlay.$clinit();
-  return /**@type {ExtendableMessageEventInit} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
+  return /**@type {ExtendableMessageEventInit}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
  }
- /**
-  * @template T
-  * @param {!ExtendableMessageEventInit<T>} $thisArg
-  * @param {Array<MessagePort>} ports
-  * @public
-  */
- static m_setPorts__$devirt__elemental2_dom_ExtendableMessageEventInit__arrayOf_elemental2_dom_MessagePort($thisArg, ports) {
+ /** @template T */
+ static m_setPorts__$devirt__elemental2_dom_ExtendableMessageEventInit__arrayOf_elemental2_dom_MessagePort(/** !ExtendableMessageEventInit<T> */ $thisArg, /** Array<MessagePort> */ ports) {
   ExtendableMessageEventInit_$Overlay.$clinit();
-  $thisArg.ports = /**@type {Array<MessagePort>} */ (Js.m_uncheckedCast__java_lang_Object(ports));
+  $thisArg.ports = /**@type {Array<MessagePort>}*/ (Js.m_uncheckedCast__java_lang_Object(ports));
  }
- /**
-  * @template T
-  * @param {!ExtendableMessageEventInit<T>} $thisArg
-  * @param {MessagePort} source
-  * @public
-  */
- static m_setSource__$devirt__elemental2_dom_ExtendableMessageEventInit__elemental2_dom_MessagePort($thisArg, source) {
+ /** @template T */
+ static m_setSource__$devirt__elemental2_dom_ExtendableMessageEventInit__elemental2_dom_MessagePort(/** !ExtendableMessageEventInit<T> */ $thisArg, /** MessagePort */ source) {
   ExtendableMessageEventInit_$Overlay.$clinit();
-  $thisArg.source = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(source));
+  $thisArg.source = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(source));
  }
- /**
-  * @template T
-  * @param {!ExtendableMessageEventInit<T>} $thisArg
-  * @param {ServiceWorker} source
-  * @public
-  */
- static m_setSource__$devirt__elemental2_dom_ExtendableMessageEventInit__elemental2_dom_ServiceWorker($thisArg, source) {
+ /** @template T */
+ static m_setSource__$devirt__elemental2_dom_ExtendableMessageEventInit__elemental2_dom_ServiceWorker(/** !ExtendableMessageEventInit<T> */ $thisArg, /** ServiceWorker */ source) {
   ExtendableMessageEventInit_$Overlay.$clinit();
-  $thisArg.source = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(source));
+  $thisArg.source = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(source));
  }
- /**
-  * @template T
-  * @param {!ExtendableMessageEventInit<T>} $thisArg
-  * @param {ServiceWorkerClient} source
-  * @public
-  */
- static m_setSource__$devirt__elemental2_dom_ExtendableMessageEventInit__elemental2_dom_ServiceWorkerClient($thisArg, source) {
+ /** @template T */
+ static m_setSource__$devirt__elemental2_dom_ExtendableMessageEventInit__elemental2_dom_ServiceWorkerClient(/** !ExtendableMessageEventInit<T> */ $thisArg, /** ServiceWorkerClient */ source) {
   ExtendableMessageEventInit_$Overlay.$clinit();
-  $thisArg.source = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(source));
+  $thisArg.source = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(source));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ExtendableMessageEventInit_$Overlay.$clinit = () =>{};
   ExtendableMessageEventInit_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');

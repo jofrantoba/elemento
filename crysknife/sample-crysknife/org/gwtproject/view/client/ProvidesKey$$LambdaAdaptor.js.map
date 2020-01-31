@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ProvidesKey$$LambdaAdaptor.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;;;MAkCiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qE;EAAAA,0H;;;;;;CAAA,gH;EAAAC,iC;EAAAA,wE;;;;;;;CAAA,0B;EAAAC,oC;EAAAA,yG;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;MAkCiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qE;EAAAA,0H;;;CAAA,gH;EAAAC,iC;EAAAA,wE;;;CAAA,0B;EAAAC,oC;EAAAA,yG;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["ProvidesKey.java"],
 "names":["org.gwtproject.view.client.ProvidesKey$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.view.client.ProvidesKey$$LambdaAdaptor.<init>","org.gwtproject.view.client.ProvidesKey$$LambdaAdaptor.getKey","org.gwtproject.view.client.ProvidesKey$$LambdaAdaptor.<clinit>"]
 }

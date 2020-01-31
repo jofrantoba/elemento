@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"LocalizedNamesImpl_gv.impl.java.js",
-"lineCount":55,
-"mappings":"A;;;;;;;;MAsBa,sB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,iC;EAAAA,6C;EAAAA,gF;EAAAA,iB;;;;;CAAA,mE;EAAAC,wE;;;;;;;CAGK,yB;EACdC,umD;;;;;;CA2Qa,e;EACbC,wB;EACAA,kG;EACAA,gG;;;;;QAlRS,O;EAAAC,yC;EAAAA,sC;EAAAA;",
+"lineCount":39,
+"mappings":"A;;;;;;;;MAsBa,sB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,iC;EAAAA,6C;EAAAA,gF;EAAAA,iB;;;CAAA,mE;EAAAC,wE;;;CAGK,yB;EACdC,smD;;;CA2Qa,e;EACbC,wB;EACAA,kG;EACAA,gG;;;QAlRS,O;EAAAC,yC;EAAAA,sC;EAAAA;",
 "sources":["LocalizedNamesImpl_gv.java"],
 "names":["org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_gv.<synthetic: ctor_js>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_gv.<synthetic: ctor_create>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_gv.<init>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_gv.loadSortedRegionCodes","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_gv.loadNameMap","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_gv.<clinit>"]
 }

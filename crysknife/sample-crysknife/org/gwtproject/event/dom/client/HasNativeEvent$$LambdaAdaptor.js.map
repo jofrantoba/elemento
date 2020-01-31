@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasNativeEvent$$LambdaAdaptor.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;;;;MAoBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;6E;EAAAA,0I;;;;;;CAAA,gI;EAAAC,iC;EAAAA,gF;;;;;;CAAA,kB;EAAAC,wC;EAAAA,6G;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;;MAoBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;6E;EAAAA,0I;;;CAAA,gI;EAAAC,iC;EAAAA,gF;;;CAAA,kB;EAAAC,wC;EAAAA,6G;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["HasNativeEvent.java"],
 "names":["org.gwtproject.event.dom.client.HasNativeEvent$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.dom.client.HasNativeEvent$$LambdaAdaptor.<init>","org.gwtproject.event.dom.client.HasNativeEvent$$LambdaAdaptor.getNativeEvent","org.gwtproject.event.dom.client.HasNativeEvent$$LambdaAdaptor.<clinit>"]
 }

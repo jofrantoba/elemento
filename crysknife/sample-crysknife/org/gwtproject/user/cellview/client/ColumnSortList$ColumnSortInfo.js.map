@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ColumnSortList$ColumnSortInfo.impl.java.js",
-"lineCount":116,
-"mappings":"A;;;;;;;;;;MA8BsB,c;;;;CAAA,W;EAAAA,Q;EAAAA;OAEI,+EAFJA,S;EAAAA;OAGS,4EAHTA,C;;;;;;;;;QAWX,4D,CAA4BC,M,EAAgBC,S;EAA5CC,yB;EAAAA,qC;EAAAA,2J;EAAAA,iB;;;;;;;;CAAA,6H,CAA4BF,M,EAAgBC,S;EAA5CE,iC;EACLA,2F;EACAA,iG;;;;;;;QAMF,S;EAAAD,yB;EAAAA,qC;EAAAA,uF;EAAAA,iB;;;;;;CAAA,0E;EACEC,+I;;;;;;;;CAWa,M,CAAcC,G;EAC3BC;GACEA,YADFA;SAEOA;GACLA,aADKA;G;EAIPA,IAAeC,KAAfD,kE;EACAA,0O;;;;;;CASkB,a;EAClBE,yF;;;;;;;CAIS,Q;EACTC,uV;;;;;;CAQa,e;EACbC,4F;;;;;;;;CAGc,2H,CAAwBC,C,EAAUC,C;EAChDC,yH;;;;;QAnEgB,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":78,
+"mappings":"A;;;;;;;;;;MA8BsB,c;;CAAA,W;EAAAA,Q;EAAAA;OAEI,+EAFJA,S;EAAAA;OAGS,4EAHTA,C;;;;QAWX,4D,qBAA4BC,M,iBAAgBC,S;EAA5CC,yB;EAAAA,qC;EAAAA,2J;EAAAA,iB;;;;CAAA,6H,qBAA4BF,M,iBAAgBC,S;EAA5CE,iC;EACLA,2F;EACAA,iG;;;;QAMF,S;EAAAD,yB;EAAAA,qC;EAAAA,uF;EAAAA,iB;;;;CAAA,0E;EACEC,+I;;;CAWa,M,UAAcC,G;EAC3BC;GACEA,YADFA;SAEOA;GACLA,aADKA;G;EAIPA,IAAeC,KAAfD,iE;EACAA,0O;;;CASkB,a;EAClBE,yF;;;CAIS,Q;EACTC,uV;;;CAQa,e;EACbC,4F;;;CAGc,2H,UAAwBC,C,WAAUC,C;EAChDC,yH;;;QAnEgB,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["ColumnSortList.java"],
 "names":["org.gwtproject.user.cellview.client.ColumnSortList$ColumnSortInfo.<synthetic: ctor_js>","column","ascending","org.gwtproject.user.cellview.client.ColumnSortList$ColumnSortInfo.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.ColumnSortList$ColumnSortInfo.<init>","obj","org.gwtproject.user.cellview.client.ColumnSortList$ColumnSortInfo.equals","other","org.gwtproject.user.cellview.client.ColumnSortList$ColumnSortInfo.getColumn","org.gwtproject.user.cellview.client.ColumnSortList$ColumnSortInfo.hashCode","org.gwtproject.user.cellview.client.ColumnSortList$ColumnSortInfo.isAscending","a","b","org.gwtproject.user.cellview.client.ColumnSortList$ColumnSortInfo.equalsOrBothNull","org.gwtproject.user.cellview.client.ColumnSortList$ColumnSortInfo.<clinit>"]
 }

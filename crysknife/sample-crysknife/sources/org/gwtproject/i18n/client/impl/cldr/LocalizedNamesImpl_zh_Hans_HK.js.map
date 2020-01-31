@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"LocalizedNamesImpl_zh_Hans_HK.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;MAsBa,gC;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,2C;EAAAA,uD;EAAAA,wF;EAAAA,iB;;;;;CAAA,2E;EAAAC,2E;;;;;;;CAGK,yB;EACdC,umD;;;;;QAJS,O;EAAAC,mD;EAAAA,gD;EAAAA;",
+"lineCount":33,
+"mappings":"A;;;;;;;;MAsBa,gC;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,2C;EAAAA,uD;EAAAA,wF;EAAAA,iB;;;CAAA,2E;EAAAC,2E;;;CAGK,yB;EACdC,smD;;;QAJS,O;EAAAC,mD;EAAAA,gD;EAAAA;",
 "sources":["LocalizedNamesImpl_zh_Hans_HK.java"],
 "names":["org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_zh_Hans_HK.<synthetic: ctor_js>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_zh_Hans_HK.<synthetic: ctor_create>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_zh_Hans_HK.<init>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_zh_Hans_HK.loadSortedRegionCodes","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_zh_Hans_HK.<clinit>"]
 }

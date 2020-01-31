@@ -8,47 +8,25 @@ let PluralForm = goog.forwardDeclare('org.gwtproject.i18n.client.PluralRule.Plur
  * @interface
  */
 class PluralRule {
- /**
-  * @abstract
-  * @return {Array<PluralForm>}
-  * @public
-  */
+ /** @abstract @return {Array<PluralForm>} */
  m_pluralForms__() {}
- /**
-  * @abstract
-  * @param {number} n
-  * @return {number}
-  * @public
-  */
- m_select__int(n) {}
- /**
-  * @public
-  */
+ /** @abstract @return {number} */
+ m_select__int(/** number */ n) {}
+ 
  static $clinit() {
   PluralRule.$clinit = () =>{};
   PluralRule.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_i18n_client_PluralRule = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_i18n_client_PluralRule = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_i18n_client_PluralRule;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

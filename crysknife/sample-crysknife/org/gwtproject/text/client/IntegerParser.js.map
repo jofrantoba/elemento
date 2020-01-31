@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"IntegerParser.impl.java.js",
-"lineCount":115,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;MAOa,a;;;;CAAA,W;EAAAA,Q;;;;;;QAGqB,Y;EAAAC,wB;EAC1BA;GACIA,gGADJA;G;EAIAA,2E;;;;;;QAGM,S;EAAAC,wB;EAAAA,oC;EAAAA,8D;EAAAA,iB;;;;;CAAA,iD;EAAAC,iC;;;;;;;;CAGK,+B,CAAmBC,M;EAC9BC;GACIA,YADJA;;GAGIA;IACIA,6MADJA;;IAEqCA,oCAFrCA;IAEqCA;KAAAA,IAANC,IAAMD,gDAAAA;KACjCA,gGADiCA;;KAAAA,+BAAAA;KAFrCA;IAHJA;G;;;;;QAfK,O;EAAAE,gC;EAAAA,6B;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;cACoB,qDADpB;",
+"lineCount":92,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;MAOa,a;;CAAA,W;EAAAA,Q;;;QAGqB,Y;EAAAC,wB;EAC1BA;GACIA,gGADJA;G;EAIAA,2E;;;QAGM,S;EAAAC,wB;EAAAA,oC;EAAAA,8D;EAAAA,iB;;;CAAA,iD;EAAAC,iC;;;CAGK,+B,8BAAmBC,M;EAC9BC;GACIA,YADJA;;GAGIA;IACIA,6MADJA;;IAEqCA,oCAFrCA;IAEqCA;KAAAA,IAANC,IAAMD,+CAAAA;KACjCA,gGADiCA;;KAAAA,+BAAAA;KAFrCA;IAHJA;G;;;QAfK,O;EAAAE,gC;EAAAA,6B;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;;;;AAAA;cACoB,qDADpB;",
 "sources":["IntegerParser.java"],
 "names":["org.gwtproject.text.client.IntegerParser.<synthetic: ctor_js>","org.gwtproject.text.client.IntegerParser.instance","org.gwtproject.text.client.IntegerParser.<synthetic: ctor_create>","org.gwtproject.text.client.IntegerParser.<init>","object","org.gwtproject.text.client.IntegerParser.parse","var3","org.gwtproject.text.client.IntegerParser.<clinit>"]
 }

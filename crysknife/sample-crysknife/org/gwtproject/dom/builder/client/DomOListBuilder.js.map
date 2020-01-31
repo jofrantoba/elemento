@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DomOListBuilder.impl.java.js",
-"lineCount":45,
-"mappings":"A;;;;;;;;;;;;;MAuBa,e;;;;CAAA,W;EAAAA,Q;;;;;;;QAGX,yD,CAA+BC,Q;EAA/BC,0B;EAAAA,sC;EAAAA,+H;EAAAA,iB;;;;;;CAAA,0G,CAA+BD,Q;EAC7BE,gI;;;;;QAJS,O;EAAAC,kC;EAAAA,+B;EAAAA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;;MAuBa,e;;CAAA,W;EAAAA,Q;;;QAGX,yD,uBAA+BC,Q;EAA/BC,0B;EAAAA,sC;EAAAA,+H;EAAAA,iB;;;CAAA,0G,uBAA+BD,Q;EAC7BE,gI;;;QAJS,O;EAAAC,kC;EAAAA,+B;EAAAA;",
 "sources":["DomOListBuilder.java"],
 "names":["org.gwtproject.dom.builder.client.DomOListBuilder.<synthetic: ctor_js>","delegate","org.gwtproject.dom.builder.client.DomOListBuilder.<synthetic: ctor_create>","org.gwtproject.dom.builder.client.DomOListBuilder.<init>","org.gwtproject.dom.builder.client.DomOListBuilder.<clinit>"]
 }

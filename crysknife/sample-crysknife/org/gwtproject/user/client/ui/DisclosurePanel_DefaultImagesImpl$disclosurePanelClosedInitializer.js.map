@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DisclosurePanel_DefaultImagesImpl$disclosurePanelClosedInitializer.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;MAauB,gC;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,uD;EAAAA,sH;EAAAA,iB;;;;;CAAA,yG;EAAAC,iC;;;;;;QAIkC,O;EAAAC,2C;EACnDA,oI;;;;;QALiB,O;EAAAC,mD;EAAAA,gD;EAAAA,qB;EAEjBA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;MAauB,gC;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,uD;EAAAA,sH;EAAAA,iB;;;CAAA,yG;EAAAC,iC;;;QAIkC,O;EAAAC,2C;EACnDA,oI;;;QALiB,O;EAAAC,mD;EAAAA,gD;EAAAA,qB;EAEjBA;",
 "sources":["DisclosurePanel_DefaultImagesImpl.java"],
 "names":["org.gwtproject.user.client.ui.DisclosurePanel_DefaultImagesImpl$disclosurePanelClosedInitializer.<synthetic: ctor_js>","org.gwtproject.user.client.ui.DisclosurePanel_DefaultImagesImpl$disclosurePanelClosedInitializer.<synthetic: ctor_create>","org.gwtproject.user.client.ui.DisclosurePanel_DefaultImagesImpl$disclosurePanelClosedInitializer.<init>","org.gwtproject.user.client.ui.DisclosurePanel_DefaultImagesImpl$disclosurePanelClosedInitializer.get","org.gwtproject.user.client.ui.DisclosurePanel_DefaultImagesImpl$disclosurePanelClosedInitializer.<clinit>"]
 }

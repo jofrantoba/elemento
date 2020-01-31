@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"GwtEvent.impl.java.js",
-"lineCount":109,
-"mappings":"A;;;;;;;;;;;;;;;;MA4BsB,Q;;;;CAAA,W;EAAAA,Q;;;;;CAaV,oD;EAAAC,kD;;;;;;;;CAGuB,qB;;;;CAElB,c;EACbC,6I;;;;;;CAGsB,U;EACtBC,kJ;EACAA,Y;;;;;CAGa,Q;EACbC,2J;EACAA,yC;;;;;CAGa,U;EACbC,6J;EACAA,yC;;;;;;CAGG,yE,CAAsBC,M;EACzBC,4C;;;;;;CAGW,iF,CAAsBC,G;EACjCC,+L;;;;;QA1CkB,O;EAAAC,2B;EAAAA,wB;EAAAA,gB;EACpBA,2I;;;;;;;;;;;;;;;;;;;;;;AADoB;SACQ,sDADR;",
+"lineCount":77,
+"mappings":"A;;;;;;;;;;;;;;;;MA4BsB,Q;;CAAA,W;EAAAA,Q;;;CAaV,oD;EAAAC,kD;;;CAGuB,qB;;CAElB,c;EACbC,6I;;;CAGsB,U;EACtBC,kJ;EACAA,Y;;;CAGa,Q;EACbC,2J;EACAA,yC;;;CAGa,U;EACbC,6J;EACAA,yC;;;CAGG,yE,UAAsBC,M;EACzBC,4C;;;CAGW,iF,gBAAsBC,G;EACjCC,+L;;;QA1CkB,O;EAAAC,2B;EAAAA,wB;EAAAA,gB;EACpBA,2I;;;;;;;;;;;;;;;;AADoB;SACQ,sDADR;",
 "sources":["GwtEvent.java"],
 "names":["org.gwtproject.event.legacy.shared.GwtEvent.<synthetic: ctor_js>","org.gwtproject.event.legacy.shared.GwtEvent.<init>","org.gwtproject.event.legacy.shared.GwtEvent.assertLive","org.gwtproject.event.legacy.shared.GwtEvent.isLive","org.gwtproject.event.legacy.shared.GwtEvent.kill","org.gwtproject.event.legacy.shared.GwtEvent.revive","source","org.gwtproject.event.legacy.shared.GwtEvent.overrideSource","msg","org.gwtproject.event.legacy.shared.GwtEvent.logDeprecation","org.gwtproject.event.legacy.shared.GwtEvent.<clinit>"]
 }

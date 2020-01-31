@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"RTCRtpContributingSource$GetTimestampUnionType$$Overlay.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;MA2BmB,8B;;;;;;QAEuC,sB,CAAUA,C;EAAVC,yC;EACpDA,wD;;;;;;;QAIa,kF;EAAAC,yC;EACbA,iD;;;;;;;QAIa,kF;EAAAC,yC;EACbA,wF;;;;;;;QAIc,kF;EAAAC,yC;EACdA,sD;;;;;;;QAIc,kF;EAAAC,yC;EACdA,wD;;;;;QAvBa,O;EAAAC,iD;EAAAA;",
+"lineCount":39,
+"mappings":"A;;;;;;;;;MA2BmB,8B;;QAEuC,sB,UAAUA,C;EAAVC,yC;EACpDA,uD;;;QAIa,kF;EAAAC,yC;EACbA,iD;;;QAIa,kF;EAAAC,yC;EACbA,uF;;;QAIc,kF;EAAAC,yC;EACdA,qD;;;QAIc,kF;EAAAC,yC;EACdA,uD;;;QAvBa,O;EAAAC,iD;EAAAA;",
 "sources":["RTCRtpContributingSource.java"],
 "names":["o","elemental2.dom.RTCRtpContributingSource$GetTimestampUnionType$$Overlay.of","elemental2.dom.RTCRtpContributingSource$GetTimestampUnionType$$Overlay.asDouble__$devirt","elemental2.dom.RTCRtpContributingSource$GetTimestampUnionType$$Overlay.asJsDate__$devirt","elemental2.dom.RTCRtpContributingSource$GetTimestampUnionType$$Overlay.isDouble__$devirt","elemental2.dom.RTCRtpContributingSource$GetTimestampUnionType$$Overlay.isJsDate__$devirt","elemental2.dom.RTCRtpContributingSource$GetTimestampUnionType$$Overlay.<clinit>"]
 }

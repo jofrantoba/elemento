@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"XPathResult$$Overlay.impl.java.js",
-"lineCount":128,
-"mappings":"A;;;;MAsBa,Q;;;;;QACX,mD;EAAAA,uF;;;;;;QAEA,kE;EAAAA,sG;;;;;;QAGA,uD;EAAAA,2F;;;;;;QAEA,kE;EAAAA,sG;;;;;;QAGA,sD;EAAAA,0F;;;;;;QAEA,qE;EAAAA,yG;;;;;;QAIA,qE;EAAAA,yG;;;;;;QAIA,sD;EAAAA,0F;;;;;;QAEA,uE;EAAAA,2G;;;;;;QAIA,uE;EAAAA,2G;;;;;QA3BW,O;EAAAC,2B;EAAAA,wB;EACXA,iF;EAEAA,+G;EAGAA,yF;EAEAA,+G;EAGAA,uF;EAEAA,qH;EAIAA,qH;EAIAA,uF;EAEAA,yH;EAIAA,yH;;;;;;;;;;;;;;;;;;AA3BW;8D;AAAA;6E;AAAA;kE;AAAA;6E;AAAA;iE;AAAA;gF;AAAA;gF;AAAA;iE;AAAA;kF;AAAA;;",
+"lineCount":90,
+"mappings":"A;;;;MAsBa,Q;;QACX,mD;EAAAA,uF;;;QAEA,kE;EAAAA,sG;;;QAGA,uD;EAAAA,2F;;;QAEA,kE;EAAAA,sG;;;QAGA,sD;EAAAA,0F;;;QAEA,qE;EAAAA,yG;;;QAIA,qE;EAAAA,yG;;;QAIA,sD;EAAAA,0F;;;QAEA,uE;EAAAA,2G;;;QAIA,uE;EAAAA,2G;;;QA3BW,O;EAAAC,2B;EAAAA,wB;EACXA,iF;EAEAA,+G;EAGAA,yF;EAEAA,+G;EAGAA,uF;EAEAA,qH;EAIAA,qH;EAIAA,uF;EAEAA,yH;EAIAA,yH;;;;;;;;;;;;AA3BW;8D;AAAA;6E;AAAA;kE;AAAA;6E;AAAA;iE;AAAA;gF;AAAA;gF;AAAA;iE;AAAA;kF;AAAA;;",
 "sources":["XPathResult.java"],
 "names":["elemental2.dom.XPathResult$$Overlay.<synthetic: getter>","elemental2.dom.XPathResult$$Overlay.<clinit>"]
 }

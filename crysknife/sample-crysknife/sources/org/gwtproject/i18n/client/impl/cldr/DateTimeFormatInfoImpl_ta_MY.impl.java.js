@@ -4,63 +4,40 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const DateTimeFormatInfoImpl__ta = goog.require('org.gwtproject.i18n.client.impl.cldr.DateTimeFormatInfoImpl_ta$impl');
 
 class DateTimeFormatInfoImpl__ta__MY extends DateTimeFormatInfoImpl__ta {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!DateTimeFormatInfoImpl__ta__MY}
-  * @public
-  */
+ /** @return {!DateTimeFormatInfoImpl__ta__MY} */
  static $create__() {
   DateTimeFormatInfoImpl__ta__MY.$clinit();
   let $instance = new DateTimeFormatInfoImpl__ta__MY();
   $instance.$ctor__org_gwtproject_i18n_client_impl_cldr_DateTimeFormatInfoImpl_ta_MY__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_i18n_client_impl_cldr_DateTimeFormatInfoImpl_ta_MY__() {
   this.$ctor__org_gwtproject_i18n_client_impl_cldr_DateTimeFormatInfoImpl_ta__();
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_firstDayOfTheWeek__() {
   return 1;
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_weekendStart__() {
   return 6;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DateTimeFormatInfoImpl__ta__MY.$clinit = () =>{};
   DateTimeFormatInfoImpl__ta__MY.$loadModules();
   DateTimeFormatInfoImpl__ta.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DateTimeFormatInfoImpl__ta__MY;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

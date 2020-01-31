@@ -13,79 +13,47 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {MetaBuilder}
   */
 class DomMetaBuilder extends DomElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @return {!DomMetaBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ /** @return {!DomMetaBuilder} */
+ static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   DomMetaBuilder.$clinit();
   let $instance = new DomMetaBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_client_DomMetaBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_client_DomMetaBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_client_DomMetaBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_client_DomElementBuilderBase__org_gwtproject_dom_builder_client_DomBuilderImpl__boolean(delegate, true);
  }
- /**
-  * @override
-  * @param {?string} content
-  * @return {MetaBuilder}
-  * @public
-  */
- m_content__java_lang_String(content) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).content = content;
+ /** @override @return {MetaBuilder} */
+ m_content__java_lang_String(/** ?string */ content) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).content = content;
   return this;
  }
- /**
-  * @override
-  * @param {?string} httpEquiv
-  * @return {MetaBuilder}
-  * @public
-  */
- m_httpEquiv__java_lang_String(httpEquiv) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).httpEquiv = httpEquiv;
+ /** @override @return {MetaBuilder} */
+ m_httpEquiv__java_lang_String(/** ?string */ httpEquiv) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).httpEquiv = httpEquiv;
   return this;
  }
- /**
-  * @override
-  * @param {?string} name
-  * @return {MetaBuilder}
-  * @public
-  */
- m_name__java_lang_String(name) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).name = name;
+ /** @override @return {MetaBuilder} */
+ m_name__java_lang_String(/** ?string */ name) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).name = name;
   return this;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomMetaBuilder.$clinit = () =>{};
   DomMetaBuilder.$loadModules();
   DomElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomMetaBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('org.gwtproject.dom.client.MetaElement.$Overlay$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

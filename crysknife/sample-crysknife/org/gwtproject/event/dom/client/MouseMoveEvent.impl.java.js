@@ -12,80 +12,51 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {MouseEvent<MouseMoveHandler>}
   */
 class MouseMoveEvent extends MouseEvent {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!MouseMoveEvent}
-  * @public
-  */
+ /** @return {!MouseMoveEvent} */
  static $create__() {
   MouseMoveEvent.$clinit();
   let $instance = new MouseMoveEvent();
   $instance.$ctor__org_gwtproject_event_dom_client_MouseMoveEvent__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_dom_client_MouseMoveEvent__() {
   this.$ctor__org_gwtproject_event_dom_client_MouseEvent__();
  }
- /**
-  * @return {Type<MouseMoveHandler>}
-  * @public
-  */
+ /** @return {Type<MouseMoveHandler>} */
  static m_getType__() {
   MouseMoveEvent.$clinit();
   return MouseMoveEvent.f_TYPE__org_gwtproject_event_dom_client_MouseMoveEvent_;
  }
- /**
-  * @override
-  * @return {Type<MouseMoveHandler>}
-  * @public
-  */
+ /** @override @return {Type<MouseMoveHandler>} */
  m_getAssociatedType__() {
   return MouseMoveEvent.f_TYPE__org_gwtproject_event_dom_client_MouseMoveEvent_;
  }
- /**
-  * @param {MouseMoveHandler} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_event_dom_client_MouseMoveHandler(handler) {
+ 
+ m_dispatch__org_gwtproject_event_dom_client_MouseMoveHandler(/** MouseMoveHandler */ handler) {
   handler.m_onMouseMove__org_gwtproject_event_dom_client_MouseMoveEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_event_dom_client_MouseMoveHandler(/**@type {MouseMoveHandler} */ ($Casts.$to(arg0, MouseMoveHandler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_event_dom_client_MouseMoveHandler(/**@type {MouseMoveHandler}*/ ($Casts.$to(arg0, MouseMoveHandler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MouseMoveEvent.$clinit = () =>{};
   MouseMoveEvent.$loadModules();
   MouseEvent.$clinit();
-  MouseMoveEvent.f_TYPE__org_gwtproject_event_dom_client_MouseMoveEvent_ = /**@type {!Type<MouseMoveHandler>} */ (Type.$create__java_lang_String__org_gwtproject_event_dom_client_DomEvent(BrowserEvents.f_MOUSEMOVE__org_gwtproject_dom_client_BrowserEvents, MouseMoveEvent.$create__()));
+  MouseMoveEvent.f_TYPE__org_gwtproject_event_dom_client_MouseMoveEvent_ = /**@type {!Type<MouseMoveHandler>}*/ (Type.$create__java_lang_String__org_gwtproject_event_dom_client_DomEvent(BrowserEvents.f_MOUSEMOVE__org_gwtproject_dom_client_BrowserEvents, MouseMoveEvent.$create__()));
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof MouseMoveEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   BrowserEvents = goog.module.get('org.gwtproject.dom.client.BrowserEvents$impl');
   Type = goog.module.get('org.gwtproject.event.dom.client.DomEvent.Type$impl');
@@ -96,7 +67,7 @@ class MouseMoveEvent extends MouseEvent {
 }
 $Util.$setClassMetadata(MouseMoveEvent, 'org.gwtproject.event.dom.client.MouseMoveEvent');
 
-/** @public {Type<MouseMoveHandler>} */
+/**@type {Type<MouseMoveHandler>}*/
 MouseMoveEvent.f_TYPE__org_gwtproject_event_dom_client_MouseMoveEvent_;
 
 exports = MouseMoveEvent; 

@@ -23,92 +23,55 @@ let DialogBox = goog.forwardDeclare('org.gwtproject.user.client.ui.DialogBox$imp
  * @implements {MouseMoveHandler}
   */
 class MouseHandler extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {DialogBox} */
+  /**@type {DialogBox}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_DialogBox_MouseHandler;
  }
- /**
-  * @param {DialogBox} $outer_this
-  * @return {!MouseHandler}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_DialogBox($outer_this) {
+ /** @return {!MouseHandler} */
+ static $create__org_gwtproject_user_client_ui_DialogBox(/** DialogBox */ $outer_this) {
   MouseHandler.$clinit();
   let $instance = new MouseHandler();
   $instance.$ctor__org_gwtproject_user_client_ui_DialogBox_MouseHandler__org_gwtproject_user_client_ui_DialogBox($outer_this);
   return $instance;
  }
- /**
-  * @param {DialogBox} $outer_this
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_DialogBox_MouseHandler__org_gwtproject_user_client_ui_DialogBox($outer_this) {
+ 
+ $ctor__org_gwtproject_user_client_ui_DialogBox_MouseHandler__org_gwtproject_user_client_ui_DialogBox(/** DialogBox */ $outer_this) {
   this.f_$outer_this__org_gwtproject_user_client_ui_DialogBox_MouseHandler = $outer_this;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {MouseDownEvent} event
-  * @public
-  */
- m_onMouseDown__org_gwtproject_event_dom_client_MouseDownEvent(event) {
+ /** @override */
+ m_onMouseDown__org_gwtproject_event_dom_client_MouseDownEvent(/** MouseDownEvent */ event) {
   this.f_$outer_this__org_gwtproject_user_client_ui_DialogBox_MouseHandler.m_beginDragging__org_gwtproject_event_dom_client_MouseDownEvent(event);
  }
- /**
-  * @override
-  * @param {MouseMoveEvent} event
-  * @public
-  */
- m_onMouseMove__org_gwtproject_event_dom_client_MouseMoveEvent(event) {
+ /** @override */
+ m_onMouseMove__org_gwtproject_event_dom_client_MouseMoveEvent(/** MouseMoveEvent */ event) {
   this.f_$outer_this__org_gwtproject_user_client_ui_DialogBox_MouseHandler.m_continueDragging__org_gwtproject_event_dom_client_MouseMoveEvent(event);
  }
- /**
-  * @override
-  * @param {MouseOutEvent} event
-  * @public
-  */
- m_onMouseOut__org_gwtproject_event_dom_client_MouseOutEvent(event) {
+ /** @override */
+ m_onMouseOut__org_gwtproject_event_dom_client_MouseOutEvent(/** MouseOutEvent */ event) {
   this.f_$outer_this__org_gwtproject_user_client_ui_DialogBox_MouseHandler.m_onMouseLeave__org_gwtproject_user_client_ui_Widget(this.f_$outer_this__org_gwtproject_user_client_ui_DialogBox_MouseHandler.f_caption__org_gwtproject_user_client_ui_DialogBox_.m_asWidget__());
  }
- /**
-  * @override
-  * @param {MouseOverEvent} event
-  * @public
-  */
- m_onMouseOver__org_gwtproject_event_dom_client_MouseOverEvent(event) {
+ /** @override */
+ m_onMouseOver__org_gwtproject_event_dom_client_MouseOverEvent(/** MouseOverEvent */ event) {
   this.f_$outer_this__org_gwtproject_user_client_ui_DialogBox_MouseHandler.m_onMouseEnter__org_gwtproject_user_client_ui_Widget(this.f_$outer_this__org_gwtproject_user_client_ui_DialogBox_MouseHandler.f_caption__org_gwtproject_user_client_ui_DialogBox_.m_asWidget__());
  }
- /**
-  * @override
-  * @param {MouseUpEvent} event
-  * @public
-  */
- m_onMouseUp__org_gwtproject_event_dom_client_MouseUpEvent(event) {
+ /** @override */
+ m_onMouseUp__org_gwtproject_event_dom_client_MouseUpEvent(/** MouseUpEvent */ event) {
   this.f_$outer_this__org_gwtproject_user_client_ui_DialogBox_MouseHandler.m_endDragging__org_gwtproject_event_dom_client_MouseUpEvent(event);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MouseHandler.$clinit = () =>{};
   MouseHandler.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof MouseHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

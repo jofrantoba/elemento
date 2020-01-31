@@ -25,82 +25,45 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {ForIsWidget}
   */
 class ComplexPanel extends Panel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {WidgetCollection} */
+  /**@type {WidgetCollection}*/
   this.f_children__org_gwtproject_user_client_ui_ComplexPanel_;
-  /** @public {Command} */
+  /**@type {Command}*/
   this.f_orphanCommand__org_gwtproject_user_client_ui_ComplexPanel_;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_ComplexPanel__() {
   this.$ctor__org_gwtproject_user_client_ui_Panel__();
   this.$init___$p_org_gwtproject_user_client_ui_ComplexPanel();
  }
- /**
-  * @override
-  * @param {number} index
-  * @return {Widget}
-  * @public
-  */
- m_getWidget__int(index) {
+ /** @override @return {Widget} */
+ m_getWidget__int(/** number */ index) {
   return this.m_getChildren__().m_get__int(index);
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getWidgetCount__() {
   return this.m_getChildren__().m_size__();
  }
- /**
-  * @override
-  * @param {Widget} child
-  * @return {number}
-  * @public
-  */
- m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(child) {
+ /** @override @return {number} */
+ m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(/** Widget */ child) {
   return this.m_getChildren__().m_indexOf__org_gwtproject_user_client_ui_Widget(child);
  }
- /**
-  * @override
-  * @param {IsWidget} child
-  * @return {number}
-  * @public
-  */
- m_getWidgetIndex__org_gwtproject_user_client_ui_IsWidget(child) {
+ /** @override @return {number} */
+ m_getWidgetIndex__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ child) {
   return this.m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(child));
  }
- /**
-  * @override
-  * @return {Iterator<Widget>}
-  * @public
-  */
+ /** @override @return {Iterator<Widget>} */
  m_iterator__() {
   return this.m_getChildren__().m_iterator__();
  }
- /**
-  * @override
-  * @param {number} index
-  * @return {boolean}
-  * @public
-  */
- m_remove__int(index) {
+ /** @override @return {boolean} */
+ m_remove__int(/** number */ index) {
   return this.m_remove__org_gwtproject_user_client_ui_Widget(this.m_getWidget__int(index));
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   if (!$Equality.$same(w.m_getParent__(), this)) {
    return false;
   }
@@ -113,24 +76,15 @@ class ComplexPanel extends Panel {
   }
   return true;
  }
- /**
-  * @param {Widget} child
-  * @param {Object} container
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element(child, container) {
+ 
+ m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element(/** Widget */ child, /** Object */ container) {
   child.m_removeFromParent__();
   this.m_getChildren__().m_add__org_gwtproject_user_client_ui_Widget(child);
   DOM.m_appendChild__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(container, child.m_getElement__());
   this.m_adopt__org_gwtproject_user_client_ui_Widget(child);
  }
- /**
-  * @param {Widget} child
-  * @param {number} beforeIndex
-  * @return {number}
-  * @public
-  */
- m_adjustIndex__org_gwtproject_user_client_ui_Widget__int(child, beforeIndex) {
+ /** @return {number} */
+ m_adjustIndex__org_gwtproject_user_client_ui_Widget__int(/** Widget */ child, /** number */ beforeIndex) {
   this.m_checkIndexBoundsForInsertion__int(beforeIndex);
   if ($Equality.$same(child.m_getParent__(), this)) {
    let idx = this.m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(child);
@@ -140,39 +94,24 @@ class ComplexPanel extends Panel {
   }
   return beforeIndex;
  }
- /**
-  * @param {number} index
-  * @public
-  */
- m_checkIndexBoundsForAccess__int(index) {
+ 
+ m_checkIndexBoundsForAccess__int(/** number */ index) {
   if (index < 0 || index >= this.m_getWidgetCount__()) {
    throw $Exceptions.toJs(IndexOutOfBoundsException.$create__());
   }
  }
- /**
-  * @param {number} index
-  * @public
-  */
- m_checkIndexBoundsForInsertion__int(index) {
+ 
+ m_checkIndexBoundsForInsertion__int(/** number */ index) {
   if (index < 0 || index > this.m_getWidgetCount__()) {
    throw $Exceptions.toJs(IndexOutOfBoundsException.$create__());
   }
  }
- /**
-  * @return {WidgetCollection}
-  * @public
-  */
+ /** @return {WidgetCollection} */
  m_getChildren__() {
   return this.f_children__org_gwtproject_user_client_ui_ComplexPanel_;
  }
- /**
-  * @param {Widget} child
-  * @param {Object} container
-  * @param {number} beforeIndex
-  * @param {boolean} domInsert
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element__int__boolean(child, container, beforeIndex, domInsert) {
+ 
+ m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element__int__boolean(/** Widget */ child, /** Object */ container, /** number */ beforeIndex, /** boolean */ domInsert) {
   beforeIndex = this.m_adjustIndex__org_gwtproject_user_client_ui_Widget__int(child, beforeIndex);
   child.m_removeFromParent__();
   this.m_getChildren__().m_insert__org_gwtproject_user_client_ui_Widget__int(child, beforeIndex);
@@ -183,9 +122,7 @@ class ComplexPanel extends Panel {
   }
   this.m_adopt__org_gwtproject_user_client_ui_Widget(child);
  }
- /**
-  * @public
-  */
+ 
  m_doLogicalClear___$pp_org_gwtproject_user_client_ui() {
   if ($Equality.$same(this.f_orphanCommand__org_gwtproject_user_client_ui_ComplexPanel_, null)) {
    this.f_orphanCommand__org_gwtproject_user_client_ui_ComplexPanel_ = $1.$create__org_gwtproject_user_client_ui_ComplexPanel(this);
@@ -196,49 +133,31 @@ class ComplexPanel extends Panel {
    this.f_children__org_gwtproject_user_client_ui_ComplexPanel_ = WidgetCollection.$create__org_gwtproject_user_client_ui_HasWidgets(this);
   }
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_ComplexPanel() {
   this.f_children__org_gwtproject_user_client_ui_ComplexPanel_ = WidgetCollection.$create__org_gwtproject_user_client_ui_HasWidgets(this);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ComplexPanel.$clinit = () =>{};
   ComplexPanel.$loadModules();
   Panel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ComplexPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IndexOutOfBoundsException = goog.module.get('java.lang.IndexOutOfBoundsException$impl');
   Iterable = goog.module.get('java.lang.Iterable$impl');

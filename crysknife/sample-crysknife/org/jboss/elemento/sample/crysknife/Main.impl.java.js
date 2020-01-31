@@ -20,71 +20,51 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {EntryPoint}
   */
 class Main extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {TodoRepository} */
+  /**@type {TodoRepository}*/
   this.f_repository__org_jboss_elemento_sample_crysknife_Main;
-  /** @public {ApplicationElement} */
+  /**@type {ApplicationElement}*/
   this.f_application__org_jboss_elemento_sample_crysknife_Main;
-  /** @public {FooterElement} */
+  /**@type {FooterElement}*/
   this.f_footer__org_jboss_elemento_sample_crysknife_Main;
  }
- /**
-  * @return {!Main}
-  * @public
-  */
+ /** @return {!Main} */
  static $create__() {
   Main.$clinit();
   let $instance = new Main();
   $instance.$ctor__org_jboss_elemento_sample_crysknife_Main__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_jboss_elemento_sample_crysknife_Main__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onModuleLoad__() {
   MainBootstrap.$create__org_jboss_elemento_sample_crysknife_Main(this).m_initialize___$pp_org_jboss_elemento_sample_crysknife();
  }
- /**
-  * @public
-  */
+ 
  m_init___$pp_org_jboss_elemento_sample_crysknife() {
-  /**@type {HtmlContentBuilder<HTMLBodyElement>} */ ($Casts.$to(Elements.m_body__().m_add__elemental2_dom_Node(this.f_application__org_jboss_elemento_sample_crysknife_Main.m_getElement__()), HtmlContentBuilder)).m_add__elemental2_dom_Node(this.f_footer__org_jboss_elemento_sample_crysknife_Main.m_getElement__());
+  /**@type {HtmlContentBuilder<HTMLBodyElement>}*/ ($Casts.$to(Elements.m_body__().m_add__elemental2_dom_Node(this.f_application__org_jboss_elemento_sample_crysknife_Main.m_getElement__()), HtmlContentBuilder)).m_add__elemental2_dom_Node(this.f_footer__org_jboss_elemento_sample_crysknife_Main.m_getElement__());
   EventType.m_bind__elemental2_dom_EventTarget__org_jboss_elemento_EventType__org_jboss_elemento_EventCallbackFn(window.window, EventType.f_hashchange__org_jboss_elemento_EventType, (event) =>{
-   let event_1 = /**@type {HashChangeEvent} */ ($Casts.$to(event, $Overlay));
+   let event_1 = /**@type {HashChangeEvent}*/ ($Casts.$to(event, $Overlay));
    this.f_application__org_jboss_elemento_sample_crysknife_Main.m_filter__java_lang_String_$pp_org_jboss_elemento_sample_crysknife(window.window.location.hash);
   });
   this.f_application__org_jboss_elemento_sample_crysknife_Main.m_filter__java_lang_String_$pp_org_jboss_elemento_sample_crysknife(window.window.location.hash);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Main.$clinit = () =>{};
   Main.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Main;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('elemental2.dom.HashChangeEvent.$Overlay$impl');
   Elements = goog.module.get('org.jboss.elemento.Elements$impl');

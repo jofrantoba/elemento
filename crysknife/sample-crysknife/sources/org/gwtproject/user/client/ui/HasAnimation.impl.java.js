@@ -6,46 +6,25 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @interface
  */
 class HasAnimation {
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_isAnimationEnabled__() {}
- /**
-  * @abstract
-  * @param {boolean} enable
-  * @public
-  */
- m_setAnimationEnabled__boolean(enable) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_setAnimationEnabled__boolean(/** boolean */ enable) {}
+ 
  static $clinit() {
   HasAnimation.$clinit = () =>{};
   HasAnimation.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_HasAnimation = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_HasAnimation = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_HasAnimation;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -12,94 +12,60 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {Event<SubmitCompleteHandler>}
   */
 class SubmitCompleteEvent extends Event {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_resultHtml__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteEvent_;
  }
- /**
-  * @return {Type<SubmitCompleteHandler>}
-  * @public
-  */
+ /** @return {Type<SubmitCompleteHandler>} */
  static m_getType__() {
   SubmitCompleteEvent.$clinit();
   if ($Equality.$same(SubmitCompleteEvent.f_TYPE__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteEvent_, null)) {
-   SubmitCompleteEvent.f_TYPE__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteEvent_ = /**@type {!Type<SubmitCompleteHandler>} */ (Type.$create__());
+   SubmitCompleteEvent.f_TYPE__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteEvent_ = /**@type {!Type<SubmitCompleteHandler>}*/ (Type.$create__());
   }
   return SubmitCompleteEvent.f_TYPE__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteEvent_;
  }
- /**
-  * @param {?string} resultsHtml
-  * @return {!SubmitCompleteEvent}
-  * @public
-  */
- static $create__java_lang_String(resultsHtml) {
+ /** @return {!SubmitCompleteEvent} */
+ static $create__java_lang_String(/** ?string */ resultsHtml) {
   SubmitCompleteEvent.$clinit();
   let $instance = new SubmitCompleteEvent();
   $instance.$ctor__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteEvent__java_lang_String(resultsHtml);
   return $instance;
  }
- /**
-  * @param {?string} resultsHtml
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteEvent__java_lang_String(resultsHtml) {
+ 
+ $ctor__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteEvent__java_lang_String(/** ?string */ resultsHtml) {
   this.$ctor__org_gwtproject_event_shared_Event__();
   this.f_resultHtml__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteEvent_ = resultsHtml;
  }
- /**
-  * @override
-  * @return {Type<SubmitCompleteHandler>}
-  * @public
-  */
+ /** @override @return {Type<SubmitCompleteHandler>} */
  m_getAssociatedType__() {
   return SubmitCompleteEvent.m_getType__();
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getResults__() {
   return this.f_resultHtml__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteEvent_;
  }
- /**
-  * @param {SubmitCompleteHandler} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteHandler(handler) {
+ 
+ m_dispatch__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteHandler(/** SubmitCompleteHandler */ handler) {
   handler.m_onSubmitComplete__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteHandler(/**@type {SubmitCompleteHandler} */ ($Casts.$to(arg0, SubmitCompleteHandler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteHandler(/**@type {SubmitCompleteHandler}*/ ($Casts.$to(arg0, SubmitCompleteHandler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SubmitCompleteEvent.$clinit = () =>{};
   SubmitCompleteEvent.$loadModules();
   Event.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SubmitCompleteEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   Type = goog.module.get('org.gwtproject.event.shared.Event.Type$impl');
@@ -110,7 +76,7 @@ class SubmitCompleteEvent extends Event {
 }
 $Util.$setClassMetadata(SubmitCompleteEvent, 'org.gwtproject.user.client.ui.FormPanel$SubmitCompleteEvent');
 
-/** @public {Type<SubmitCompleteHandler>} */
+/**@type {Type<SubmitCompleteHandler>}*/
 SubmitCompleteEvent.f_TYPE__org_gwtproject_user_client_ui_FormPanel_SubmitCompleteEvent_;
 
 exports = SubmitCompleteEvent; 

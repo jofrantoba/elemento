@@ -8,35 +8,22 @@ const SectionRole = goog.require('org.gwtproject.aria.client.SectionRole$impl');
  * @extends {SectionRole}
  */
 class DefinitionRole {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DefinitionRole.$clinit = () =>{};
   DefinitionRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  SectionRole.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_DefinitionRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  SectionRole.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_DefinitionRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_DefinitionRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

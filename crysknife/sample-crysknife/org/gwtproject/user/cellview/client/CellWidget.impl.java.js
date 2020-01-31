@@ -35,148 +35,89 @@ let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
  * @implements {IsEditor<LeafValueEditor<C>>}
   */
 class CellWidget extends Widget {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Cell<C>} */
+  /**@type {Cell<C>}*/
   this.f_cell__org_gwtproject_user_cellview_client_CellWidget_;
-  /** @public {LeafValueEditor<C>} */
+  /**@type {LeafValueEditor<C>}*/
   this.f_editor__org_gwtproject_user_cellview_client_CellWidget_;
-  /** @public {ProvidesKey<C>} */
+  /**@type {ProvidesKey<C>}*/
   this.f_keyProvider__org_gwtproject_user_cellview_client_CellWidget_;
-  /** @public {C} */
+  /**@type {C}*/
   this.f_value__org_gwtproject_user_cellview_client_CellWidget_;
-  /** @public {ValueUpdater<C>} */
+  /**@type {ValueUpdater<C>}*/
   this.f_valueUpdater__org_gwtproject_user_cellview_client_CellWidget_;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  static m_createDefaultWrapperElement__() {
   let div = $Overlay.m_createDivElement__$devirt__org_gwtproject_dom_client_Document($Overlay.m_get__());
   Element_$Overlay.m_setClassName__$devirt__org_gwtproject_dom_client_Element__java_lang_String(div, CommonResources.m_getInlineBlockStyle__());
   return div;
  }
- /**
-  * Factory method corresponding to constructor 'CellWidget(Cell)'.
-  * @template C
-  * @param {Cell<C>} cell
-  * @return {!CellWidget<C>}
-  * @public
-  */
- static $create__org_gwtproject_cell_client_Cell(cell) {
+ //Factory method corresponding to constructor 'CellWidget(Cell)'.
+ /** @template C @return {!CellWidget<C>} */
+ static $create__org_gwtproject_cell_client_Cell(/** Cell<C> */ cell) {
   CellWidget.$clinit();
   let $instance = new CellWidget();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellWidget__org_gwtproject_cell_client_Cell(cell);
   return $instance;
  }
- /**
-  * Initialization from constructor 'CellWidget(Cell)'.
-  * @param {Cell<C>} cell
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_CellWidget__org_gwtproject_cell_client_Cell(cell) {
+ //Initialization from constructor 'CellWidget(Cell)'.
+ 
+ $ctor__org_gwtproject_user_cellview_client_CellWidget__org_gwtproject_cell_client_Cell(/** Cell<C> */ cell) {
   this.$ctor__org_gwtproject_user_cellview_client_CellWidget__org_gwtproject_cell_client_Cell__java_lang_Object__org_gwtproject_view_client_ProvidesKey(cell, null, null);
  }
- /**
-  * Factory method corresponding to constructor 'CellWidget(Cell, ProvidesKey)'.
-  * @template C
-  * @param {Cell<C>} cell
-  * @param {ProvidesKey<C>} keyProvider
-  * @return {!CellWidget<C>}
-  * @public
-  */
- static $create__org_gwtproject_cell_client_Cell__org_gwtproject_view_client_ProvidesKey(cell, keyProvider) {
+ //Factory method corresponding to constructor 'CellWidget(Cell, ProvidesKey)'.
+ /** @template C @return {!CellWidget<C>} */
+ static $create__org_gwtproject_cell_client_Cell__org_gwtproject_view_client_ProvidesKey(/** Cell<C> */ cell, /** ProvidesKey<C> */ keyProvider) {
   CellWidget.$clinit();
   let $instance = new CellWidget();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellWidget__org_gwtproject_cell_client_Cell__org_gwtproject_view_client_ProvidesKey(cell, keyProvider);
   return $instance;
  }
- /**
-  * Initialization from constructor 'CellWidget(Cell, ProvidesKey)'.
-  * @param {Cell<C>} cell
-  * @param {ProvidesKey<C>} keyProvider
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_CellWidget__org_gwtproject_cell_client_Cell__org_gwtproject_view_client_ProvidesKey(cell, keyProvider) {
+ //Initialization from constructor 'CellWidget(Cell, ProvidesKey)'.
+ 
+ $ctor__org_gwtproject_user_cellview_client_CellWidget__org_gwtproject_cell_client_Cell__org_gwtproject_view_client_ProvidesKey(/** Cell<C> */ cell, /** ProvidesKey<C> */ keyProvider) {
   this.$ctor__org_gwtproject_user_cellview_client_CellWidget__org_gwtproject_cell_client_Cell__java_lang_Object__org_gwtproject_view_client_ProvidesKey(cell, null, keyProvider);
  }
- /**
-  * Factory method corresponding to constructor 'CellWidget(Cell, Object)'.
-  * @template C
-  * @param {Cell<C>} cell
-  * @param {C} initialValue
-  * @return {!CellWidget<C>}
-  * @public
-  */
- static $create__org_gwtproject_cell_client_Cell__java_lang_Object(cell, initialValue) {
+ //Factory method corresponding to constructor 'CellWidget(Cell, Object)'.
+ /** @template C @return {!CellWidget<C>} */
+ static $create__org_gwtproject_cell_client_Cell__java_lang_Object(/** Cell<C> */ cell, /** C */ initialValue) {
   CellWidget.$clinit();
   let $instance = new CellWidget();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellWidget__org_gwtproject_cell_client_Cell__java_lang_Object(cell, initialValue);
   return $instance;
  }
- /**
-  * Initialization from constructor 'CellWidget(Cell, Object)'.
-  * @param {Cell<C>} cell
-  * @param {C} initialValue
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_CellWidget__org_gwtproject_cell_client_Cell__java_lang_Object(cell, initialValue) {
+ //Initialization from constructor 'CellWidget(Cell, Object)'.
+ 
+ $ctor__org_gwtproject_user_cellview_client_CellWidget__org_gwtproject_cell_client_Cell__java_lang_Object(/** Cell<C> */ cell, /** C */ initialValue) {
   this.$ctor__org_gwtproject_user_cellview_client_CellWidget__org_gwtproject_cell_client_Cell__java_lang_Object__org_gwtproject_view_client_ProvidesKey(cell, initialValue, null);
  }
- /**
-  * Factory method corresponding to constructor 'CellWidget(Cell, Object, ProvidesKey)'.
-  * @template C
-  * @param {Cell<C>} cell
-  * @param {C} initialValue
-  * @param {ProvidesKey<C>} keyProvider
-  * @return {!CellWidget<C>}
-  * @public
-  */
- static $create__org_gwtproject_cell_client_Cell__java_lang_Object__org_gwtproject_view_client_ProvidesKey(cell, initialValue, keyProvider) {
+ //Factory method corresponding to constructor 'CellWidget(Cell, Object, ProvidesKey)'.
+ /** @template C @return {!CellWidget<C>} */
+ static $create__org_gwtproject_cell_client_Cell__java_lang_Object__org_gwtproject_view_client_ProvidesKey(/** Cell<C> */ cell, /** C */ initialValue, /** ProvidesKey<C> */ keyProvider) {
   CellWidget.$clinit();
   let $instance = new CellWidget();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellWidget__org_gwtproject_cell_client_Cell__java_lang_Object__org_gwtproject_view_client_ProvidesKey(cell, initialValue, keyProvider);
   return $instance;
  }
- /**
-  * Initialization from constructor 'CellWidget(Cell, Object, ProvidesKey)'.
-  * @param {Cell<C>} cell
-  * @param {C} initialValue
-  * @param {ProvidesKey<C>} keyProvider
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_CellWidget__org_gwtproject_cell_client_Cell__java_lang_Object__org_gwtproject_view_client_ProvidesKey(cell, initialValue, keyProvider) {
+ //Initialization from constructor 'CellWidget(Cell, Object, ProvidesKey)'.
+ 
+ $ctor__org_gwtproject_user_cellview_client_CellWidget__org_gwtproject_cell_client_Cell__java_lang_Object__org_gwtproject_view_client_ProvidesKey(/** Cell<C> */ cell, /** C */ initialValue, /** ProvidesKey<C> */ keyProvider) {
   this.$ctor__org_gwtproject_user_cellview_client_CellWidget__org_gwtproject_cell_client_Cell__java_lang_Object__org_gwtproject_view_client_ProvidesKey__org_gwtproject_dom_client_Element(cell, initialValue, keyProvider, CellWidget.m_createDefaultWrapperElement__());
  }
- /**
-  * Factory method corresponding to constructor 'CellWidget(Cell, Object, ProvidesKey, Element)'.
-  * @template C
-  * @param {Cell<C>} cell
-  * @param {C} initialValue
-  * @param {ProvidesKey<C>} keyProvider
-  * @param {Object} elem
-  * @return {!CellWidget<C>}
-  * @public
-  */
- static $create__org_gwtproject_cell_client_Cell__java_lang_Object__org_gwtproject_view_client_ProvidesKey__org_gwtproject_dom_client_Element(cell, initialValue, keyProvider, elem) {
+ //Factory method corresponding to constructor 'CellWidget(Cell, Object, ProvidesKey, Element)'.
+ /** @template C @return {!CellWidget<C>} */
+ static $create__org_gwtproject_cell_client_Cell__java_lang_Object__org_gwtproject_view_client_ProvidesKey__org_gwtproject_dom_client_Element(/** Cell<C> */ cell, /** C */ initialValue, /** ProvidesKey<C> */ keyProvider, /** Object */ elem) {
   CellWidget.$clinit();
   let $instance = new CellWidget();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellWidget__org_gwtproject_cell_client_Cell__java_lang_Object__org_gwtproject_view_client_ProvidesKey__org_gwtproject_dom_client_Element(cell, initialValue, keyProvider, elem);
   return $instance;
  }
- /**
-  * Initialization from constructor 'CellWidget(Cell, Object, ProvidesKey, Element)'.
-  * @param {Cell<C>} cell
-  * @param {C} initialValue
-  * @param {ProvidesKey<C>} keyProvider
-  * @param {Object} elem
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_CellWidget__org_gwtproject_cell_client_Cell__java_lang_Object__org_gwtproject_view_client_ProvidesKey__org_gwtproject_dom_client_Element(cell, initialValue, keyProvider, elem) {
+ //Initialization from constructor 'CellWidget(Cell, Object, ProvidesKey, Element)'.
+ 
+ $ctor__org_gwtproject_user_cellview_client_CellWidget__org_gwtproject_cell_client_Cell__java_lang_Object__org_gwtproject_view_client_ProvidesKey__org_gwtproject_dom_client_Element(/** Cell<C> */ cell, /** C */ initialValue, /** ProvidesKey<C> */ keyProvider, /** Object */ elem) {
   this.$ctor__org_gwtproject_user_client_ui_Widget__();
   this.$init___$p_org_gwtproject_user_cellview_client_CellWidget();
   this.f_cell__org_gwtproject_user_cellview_client_CellWidget_ = cell;
@@ -186,55 +127,31 @@ class CellWidget extends Widget {
   this.f_value__org_gwtproject_user_cellview_client_CellWidget_ = initialValue;
   this.m_redraw__();
  }
- /**
-  * @override
-  * @param {ValueChangeHandler<C>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler(/** ValueChangeHandler<C> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, ValueChangeEvent.m_getType__());
  }
- /**
-  * @override
-  * @return {LeafValueEditor<C>}
-  * @public
-  */
+ /** @override @return {LeafValueEditor<C>} */
  m_asEditor__() {
   if ($Equality.$same(this.f_editor__org_gwtproject_user_cellview_client_CellWidget_, null)) {
-   this.f_editor__org_gwtproject_user_cellview_client_CellWidget_ = /**@type {TakesValueEditor<C>} */ (TakesValueEditor.m_of__org_gwtproject_user_client_TakesValue(this));
+   this.f_editor__org_gwtproject_user_cellview_client_CellWidget_ = /**@type {TakesValueEditor<C>}*/ (TakesValueEditor.m_of__org_gwtproject_user_client_TakesValue(this));
   }
   return this.f_editor__org_gwtproject_user_cellview_client_CellWidget_;
  }
- /**
-  * @return {Cell<C>}
-  * @public
-  */
+ /** @return {Cell<C>} */
  m_getCell__() {
   return this.f_cell__org_gwtproject_user_cellview_client_CellWidget_;
  }
- /**
-  * @override
-  * @return {ProvidesKey<C>}
-  * @public
-  */
+ /** @override @return {ProvidesKey<C>} */
  m_getKeyProvider__() {
   return this.f_keyProvider__org_gwtproject_user_cellview_client_CellWidget_;
  }
- /**
-  * @override
-  * @return {C}
-  * @public
-  */
+ /** @override @return {C} */
  m_getValue__() {
   return this.f_value__org_gwtproject_user_cellview_client_CellWidget_;
  }
- /**
-  * @override
-  * @param {Event} event
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_user_client_Event(event) {
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_user_client_Event(/** Event */ event) {
   CellBasedWidgetImpl.m_get__().m_onBrowserEvent__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_Event(this, event);
   super.m_onBrowserEvent__org_gwtproject_user_client_Event(event);
   let eventType = NativeEvent_$Overlay.m_getType__$devirt__org_gwtproject_dom_client_NativeEvent(event);
@@ -243,9 +160,7 @@ class CellWidget extends Widget {
    this.f_cell__org_gwtproject_user_cellview_client_CellWidget_.m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(this.m_createContext___$p_org_gwtproject_user_cellview_client_CellWidget(), this.m_getElement__(), this.f_value__org_gwtproject_user_cellview_client_CellWidget_, event, this.f_valueUpdater__org_gwtproject_user_cellview_client_CellWidget_);
   }
  }
- /**
-  * @public
-  */
+ 
  m_redraw__() {
   let sb = SafeHtmlBuilder.$create__();
   this.f_cell__org_gwtproject_user_cellview_client_CellWidget_.m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(this.m_createContext___$p_org_gwtproject_user_cellview_client_CellWidget(), this.f_value__org_gwtproject_user_cellview_client_CellWidget_, sb);
@@ -256,30 +171,16 @@ class CellWidget extends Widget {
    Style_$Overlay.m_setWidth__$devirt__org_gwtproject_dom_client_Style__double__org_gwtproject_dom_style_shared_Unit(child.style, 100, Unit.f_PCT__org_gwtproject_dom_style_shared_Unit);
   }
  }
- /**
-  * @override
-  * @param {C} value
-  * @public
-  */
- m_setValue__java_lang_Object(value) {
+ /** @override */
+ m_setValue__java_lang_Object(/** C */ value) {
   this.m_setValue__java_lang_Object__boolean__boolean(value, false, true);
  }
- /**
-  * @override
-  * @param {C} value
-  * @param {boolean} fireEvents
-  * @public
-  */
- m_setValue__java_lang_Object__boolean(value, fireEvents) {
+ /** @override */
+ m_setValue__java_lang_Object__boolean(/** C */ value, /** boolean */ fireEvents) {
   this.m_setValue__java_lang_Object__boolean__boolean(value, fireEvents, true);
  }
- /**
-  * @param {C} value
-  * @param {boolean} fireEvents
-  * @param {boolean} redraw
-  * @public
-  */
- m_setValue__java_lang_Object__boolean__boolean(value, fireEvents, redraw) {
+ 
+ m_setValue__java_lang_Object__boolean__boolean(/** C */ value, /** boolean */ fireEvents, /** boolean */ redraw) {
   let oldValue = this.m_getValue__();
   if (!$Equality.$same(value, oldValue) && ($Equality.$same(oldValue, null) || !$Objects.m_equals__java_lang_Object__java_lang_Object(oldValue, value))) {
    this.f_value__org_gwtproject_user_cellview_client_CellWidget_ = value;
@@ -291,46 +192,29 @@ class CellWidget extends Widget {
    }
   }
  }
- /**
-  * @return {Context}
-  * @public
-  */
+ /** @return {Context} */
  m_createContext___$p_org_gwtproject_user_cellview_client_CellWidget() {
   return Context.$create__int__int__java_lang_Object(0, 0, this.m_getKey__java_lang_Object_$p_org_gwtproject_user_cellview_client_CellWidget(this.f_value__org_gwtproject_user_cellview_client_CellWidget_));
  }
- /**
-  * @param {C} value
-  * @return {*}
-  * @public
-  */
- m_getKey__java_lang_Object_$p_org_gwtproject_user_cellview_client_CellWidget(value) {
+ /** @return {*} */
+ m_getKey__java_lang_Object_$p_org_gwtproject_user_cellview_client_CellWidget(/** C */ value) {
   return ($Equality.$same(this.f_keyProvider__org_gwtproject_user_cellview_client_CellWidget_, null) || $Equality.$same(value, null)) ? value : this.f_keyProvider__org_gwtproject_user_cellview_client_CellWidget_.m_getKey__java_lang_Object(value);
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_cellview_client_CellWidget() {
-  this.f_valueUpdater__org_gwtproject_user_cellview_client_CellWidget_ = /**@type {!$1<C>} */ ($1.$create__org_gwtproject_user_cellview_client_CellWidget(this));
+  this.f_valueUpdater__org_gwtproject_user_cellview_client_CellWidget_ = /**@type {!$1<C>}*/ ($1.$create__org_gwtproject_user_cellview_client_CellWidget(this));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CellWidget.$clinit = () =>{};
   CellWidget.$loadModules();
   Widget.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CellWidget;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   Context = goog.module.get('org.gwtproject.cell.client.Cell.Context$impl');

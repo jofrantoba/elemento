@@ -25,124 +25,74 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {Iterable<AbstractEditorDelegate<?, ?>>}
   */
 class DelegateMap extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Map<*, List<AbstractEditorDelegate<?, ?>>>} */
+  /**@type {Map<*, List<AbstractEditorDelegate<?, ?>>>}*/
   this.f_map__org_gwtproject_editor_client_impl_DelegateMap_;
-  /** @public {Map<?string, List<AbstractEditorDelegate<?, ?>>>} */
+  /**@type {Map<?string, List<AbstractEditorDelegate<?, ?>>>}*/
   this.f_delegatesByPath__org_gwtproject_editor_client_impl_DelegateMap_;
-  /** @public {Map<?string, List<Editor<?>>>} */
+  /**@type {Map<?string, List<Editor<?>>>}*/
   this.f_editorsByPath__org_gwtproject_editor_client_impl_DelegateMap_;
-  /** @public {KeyMethod} */
+  /**@type {KeyMethod}*/
   this.f_keyMethod__org_gwtproject_editor_client_impl_DelegateMap_;
  }
- /**
-  * @param {EditorDriver<?>} driver
-  * @param {KeyMethod} key
-  * @return {DelegateMap}
-  * @public
-  */
- static m_of__org_gwtproject_editor_client_EditorDriver__org_gwtproject_editor_client_impl_DelegateMap_KeyMethod(driver, key) {
+ /** @return {DelegateMap} */
+ static m_of__org_gwtproject_editor_client_EditorDriver__org_gwtproject_editor_client_impl_DelegateMap_KeyMethod(/** EditorDriver<?> */ driver, /** KeyMethod */ key) {
   DelegateMap.$clinit();
   let toReturn = DelegateMap.$create__org_gwtproject_editor_client_impl_DelegateMap_KeyMethod(key);
   driver.m_accept__org_gwtproject_editor_client_EditorVisitor($2.$create__org_gwtproject_editor_client_impl_DelegateMap(toReturn));
   return toReturn;
  }
- /**
-  * @param {KeyMethod} key
-  * @return {!DelegateMap}
-  * @public
-  */
- static $create__org_gwtproject_editor_client_impl_DelegateMap_KeyMethod(key) {
+ /** @return {!DelegateMap} */
+ static $create__org_gwtproject_editor_client_impl_DelegateMap_KeyMethod(/** KeyMethod */ key) {
   DelegateMap.$clinit();
   let $instance = new DelegateMap();
   $instance.$ctor__org_gwtproject_editor_client_impl_DelegateMap__org_gwtproject_editor_client_impl_DelegateMap_KeyMethod(key);
   return $instance;
  }
- /**
-  * @param {KeyMethod} key
-  * @public
-  */
- $ctor__org_gwtproject_editor_client_impl_DelegateMap__org_gwtproject_editor_client_impl_DelegateMap_KeyMethod(key) {
+ 
+ $ctor__org_gwtproject_editor_client_impl_DelegateMap__org_gwtproject_editor_client_impl_DelegateMap_KeyMethod(/** KeyMethod */ key) {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_editor_client_impl_DelegateMap();
   this.f_keyMethod__org_gwtproject_editor_client_impl_DelegateMap_ = key;
  }
- /**
-  * @param {*} object
-  * @return {List<AbstractEditorDelegate<?, ?>>}
-  * @public
-  */
- m_get__java_lang_Object(object) {
+ /** @return {List<AbstractEditorDelegate<?, ?>>} */
+ m_get__java_lang_Object(/** * */ object) {
   let key = this.f_keyMethod__org_gwtproject_editor_client_impl_DelegateMap_.m_key__java_lang_Object(object);
-  return $Equality.$same(key, null) ? null : /**@type {List<AbstractEditorDelegate<?, ?>>} */ ($Casts.$to(this.f_map__org_gwtproject_editor_client_impl_DelegateMap_.get(key), List));
+  return $Equality.$same(key, null) ? null : /**@type {List<AbstractEditorDelegate<?, ?>>}*/ ($Casts.$to(this.f_map__org_gwtproject_editor_client_impl_DelegateMap_.get(key), List));
  }
- /**
-  * @param {?string} path
-  * @return {List<AbstractEditorDelegate<?, ?>>}
-  * @public
-  */
- m_getDelegatesByPath__java_lang_String(path) {
-  return /**@type {List<AbstractEditorDelegate<?, ?>>} */ ($Casts.$to(this.f_delegatesByPath__org_gwtproject_editor_client_impl_DelegateMap_.get(path), List));
+ /** @return {List<AbstractEditorDelegate<?, ?>>} */
+ m_getDelegatesByPath__java_lang_String(/** ?string */ path) {
+  return /**@type {List<AbstractEditorDelegate<?, ?>>}*/ ($Casts.$to(this.f_delegatesByPath__org_gwtproject_editor_client_impl_DelegateMap_.get(path), List));
  }
- /**
-  * @param {?string} path
-  * @return {List<Editor<?>>}
-  * @public
-  */
- m_getEditorByPath__java_lang_String(path) {
-  return /**@type {List<Editor<?>>} */ ($Casts.$to(this.f_editorsByPath__org_gwtproject_editor_client_impl_DelegateMap_.get(path), List));
+ /** @return {List<Editor<?>>} */
+ m_getEditorByPath__java_lang_String(/** ?string */ path) {
+  return /**@type {List<Editor<?>>}*/ ($Casts.$to(this.f_editorsByPath__org_gwtproject_editor_client_impl_DelegateMap_.get(path), List));
  }
- /**
-  * @param {*} key
-  * @return {List<AbstractEditorDelegate<?, ?>>}
-  * @public
-  */
- m_getRaw__java_lang_Object(key) {
-  return /**@type {List<AbstractEditorDelegate<?, ?>>} */ ($Casts.$to(this.f_map__org_gwtproject_editor_client_impl_DelegateMap_.get(key), List));
+ /** @return {List<AbstractEditorDelegate<?, ?>>} */
+ m_getRaw__java_lang_Object(/** * */ key) {
+  return /**@type {List<AbstractEditorDelegate<?, ?>>}*/ ($Casts.$to(this.f_map__org_gwtproject_editor_client_impl_DelegateMap_.get(key), List));
  }
- /**
-  * @override
-  * @return {Iterator<AbstractEditorDelegate<?, ?>>}
-  * @public
-  */
+ /** @override @return {Iterator<AbstractEditorDelegate<?, ?>>} */
  m_iterator__() {
   return MapIterator.$create__org_gwtproject_editor_client_impl_DelegateMap(this);
  }
- /**
-  * @template K, V
-  * @param {Map<K, List<V>>} map
-  * @param {K} key
-  * @param {V} value
-  * @public
-  */
- m_add__java_util_Map__java_lang_Object__java_lang_Object_$pp_org_gwtproject_editor_client_impl(map, key, value) {
-  let list = /**@type {List<V>} */ ($Casts.$to(map.get(key), List));
+ /** @template K, V */
+ m_add__java_util_Map__java_lang_Object__java_lang_Object_$pp_org_gwtproject_editor_client_impl(/** Map<K, List<V>> */ map, /** K */ key, /** V */ value) {
+  let list = /**@type {List<V>}*/ ($Casts.$to(map.get(key), List));
   if ($Equality.$same(list, null)) {
-   list = /**@type {!ArrayList<V>} */ (ArrayList.$create__());
+   list = /**@type {!ArrayList<V>}*/ (ArrayList.$create__());
    map.put(key, list);
   }
   list.add(value);
  }
- /**
-  * @template T
-  * @param {?string} path
-  * @param {Editor<T>} editor
-  * @public
-  */
- m_put__java_lang_String__org_gwtproject_editor_client_Editor_$pp_org_gwtproject_editor_client_impl(path, editor) {
+ /** @template T */
+ m_put__java_lang_String__org_gwtproject_editor_client_Editor_$pp_org_gwtproject_editor_client_impl(/** ?string */ path, /** Editor<T> */ editor) {
   this.m_add__java_util_Map__java_lang_Object__java_lang_Object_$pp_org_gwtproject_editor_client_impl(this.f_editorsByPath__org_gwtproject_editor_client_impl_DelegateMap_, path, editor);
  }
- /**
-  * @template T
-  * @param {T} object
-  * @param {AbstractEditorDelegate<T, ?>} delegate
-  * @public
-  */
- m_put__java_lang_Object__org_gwtproject_editor_client_impl_AbstractEditorDelegate_$pp_org_gwtproject_editor_client_impl(object, delegate) {
+ /** @template T */
+ m_put__java_lang_Object__org_gwtproject_editor_client_impl_AbstractEditorDelegate_$pp_org_gwtproject_editor_client_impl(/** T */ object, /** AbstractEditorDelegate<T, ?> */ delegate) {
   this.m_add__java_util_Map__java_lang_Object__java_lang_Object_$pp_org_gwtproject_editor_client_impl(this.f_delegatesByPath__org_gwtproject_editor_client_impl_DelegateMap_, delegate.m_getPath__(), delegate);
   let key = this.f_keyMethod__org_gwtproject_editor_client_impl_DelegateMap_.m_key__java_lang_Object(object);
   if ($Equality.$same(key, null)) {
@@ -150,42 +100,27 @@ class DelegateMap extends j_l_Object {
   }
   this.m_add__java_util_Map__java_lang_Object__java_lang_Object_$pp_org_gwtproject_editor_client_impl(this.f_map__org_gwtproject_editor_client_impl_DelegateMap_, key, delegate);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<AbstractEditorDelegate<?, ?>>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<AbstractEditorDelegate<?, ?>>} */
  m_spliterator__() {
-  return /**@type {Spliterator<AbstractEditorDelegate<?, ?>>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<AbstractEditorDelegate<?, ?>>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_editor_client_impl_DelegateMap() {
-  this.f_map__org_gwtproject_editor_client_impl_DelegateMap_ = /**@type {!HashMap<*, List<AbstractEditorDelegate<?, ?>>>} */ (HashMap.$create__());
-  this.f_delegatesByPath__org_gwtproject_editor_client_impl_DelegateMap_ = /**@type {!HashMap<?string, List<AbstractEditorDelegate<?, ?>>>} */ (HashMap.$create__());
-  this.f_editorsByPath__org_gwtproject_editor_client_impl_DelegateMap_ = /**@type {!HashMap<?string, List<Editor<?>>>} */ (HashMap.$create__());
+  this.f_map__org_gwtproject_editor_client_impl_DelegateMap_ = /**@type {!HashMap<*, List<AbstractEditorDelegate<?, ?>>>}*/ (HashMap.$create__());
+  this.f_delegatesByPath__org_gwtproject_editor_client_impl_DelegateMap_ = /**@type {!HashMap<?string, List<AbstractEditorDelegate<?, ?>>>}*/ (HashMap.$create__());
+  this.f_editorsByPath__org_gwtproject_editor_client_impl_DelegateMap_ = /**@type {!HashMap<?string, List<Editor<?>>>}*/ (HashMap.$create__());
  }
- /**
-  * @return {KeyMethod}
-  * @public
-  */
+ /** @return {KeyMethod} */
  static get f_IDENTITY__org_gwtproject_editor_client_impl_DelegateMap() {
   return (DelegateMap.$clinit(), DelegateMap.$f_IDENTITY__org_gwtproject_editor_client_impl_DelegateMap);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DelegateMap.$clinit = () =>{};
   DelegateMap.$loadModules();
@@ -193,17 +128,11 @@ class DelegateMap extends j_l_Object {
   Iterable.$clinit();
   DelegateMap.$f_IDENTITY__org_gwtproject_editor_client_impl_DelegateMap = $1.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DelegateMap;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   ArrayList = goog.module.get('java.util.ArrayList$impl');
   HashMap = goog.module.get('java.util.HashMap$impl');
@@ -220,7 +149,7 @@ $Util.$setClassMetadata(DelegateMap, 'org.gwtproject.editor.client.impl.Delegate
 
 Iterable.$markImplementor(DelegateMap);
 
-/** @private {KeyMethod} */
+/**@private {KeyMethod}*/
 DelegateMap.$f_IDENTITY__org_gwtproject_editor_client_impl_DelegateMap;
 
 exports = DelegateMap; 

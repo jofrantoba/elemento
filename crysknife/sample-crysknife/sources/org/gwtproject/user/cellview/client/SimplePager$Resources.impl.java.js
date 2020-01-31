@@ -12,109 +12,49 @@ let SimplePager__ResourcesImpl = goog.forwardDeclare('org.gwtproject.user.cellvi
  * @extends {ClientBundle}
  */
 class Resources {
- /**
-  * @abstract
-  * @return {ImageResource}
-  * @public
-  */
+ /** @abstract @return {ImageResource} */
  m_simplePagerFastForward__() {}
- /**
-  * @abstract
-  * @return {ImageResource}
-  * @public
-  */
+ /** @abstract @return {ImageResource} */
  m_simplePagerFastForwardDisabled__() {}
- /**
-  * @abstract
-  * @return {ImageResource}
-  * @public
-  */
+ /** @abstract @return {ImageResource} */
  m_simplePagerFirstPage__() {}
- /**
-  * @abstract
-  * @return {ImageResource}
-  * @public
-  */
+ /** @abstract @return {ImageResource} */
  m_simplePagerFirstPageDisabled__() {}
- /**
-  * @abstract
-  * @return {ImageResource}
-  * @public
-  */
+ /** @abstract @return {ImageResource} */
  m_simplePagerLastPage__() {}
- /**
-  * @abstract
-  * @return {ImageResource}
-  * @public
-  */
+ /** @abstract @return {ImageResource} */
  m_simplePagerLastPageDisabled__() {}
- /**
-  * @abstract
-  * @return {ImageResource}
-  * @public
-  */
+ /** @abstract @return {ImageResource} */
  m_simplePagerNextPage__() {}
- /**
-  * @abstract
-  * @return {ImageResource}
-  * @public
-  */
+ /** @abstract @return {ImageResource} */
  m_simplePagerNextPageDisabled__() {}
- /**
-  * @abstract
-  * @return {ImageResource}
-  * @public
-  */
+ /** @abstract @return {ImageResource} */
  m_simplePagerPreviousPage__() {}
- /**
-  * @abstract
-  * @return {ImageResource}
-  * @public
-  */
+ /** @abstract @return {ImageResource} */
  m_simplePagerPreviousPageDisabled__() {}
- /**
-  * @abstract
-  * @return {Style}
-  * @public
-  */
+ /** @abstract @return {Style} */
  m_simplePagerStyle__() {}
- /**
-  * @return {Resources}
-  * @public
-  */
+ /** @return {Resources} */
  static get f_INSTANCE__org_gwtproject_user_cellview_client_SimplePager_Resources() {
   return (Resources.$clinit(), Resources.$f_INSTANCE__org_gwtproject_user_cellview_client_SimplePager_Resources);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Resources.$clinit = () =>{};
   Resources.$loadModules();
   Resources.$f_INSTANCE__org_gwtproject_user_cellview_client_SimplePager_Resources = SimplePager__ResourcesImpl.$create__();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ClientBundle.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_cellview_client_SimplePager_Resources = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ClientBundle.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_cellview_client_SimplePager_Resources = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_cellview_client_SimplePager_Resources;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   SimplePager__ResourcesImpl = goog.module.get('org.gwtproject.user.cellview.client.SimplePager_ResourcesImpl$impl');
  }
@@ -124,7 +64,7 @@ $Util.$setClassMetadataForInterface(Resources, 'org.gwtproject.user.cellview.cli
 
 Resources.$markImplementor(/** @type {Function} */ (Resources));
 
-/** @private {Resources} */
+/**@private {Resources}*/
 Resources.$f_INSTANCE__org_gwtproject_user_cellview_client_SimplePager_Resources;
 
 exports = Resources; 

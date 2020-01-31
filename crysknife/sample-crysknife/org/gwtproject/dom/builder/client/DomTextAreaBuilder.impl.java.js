@@ -16,144 +16,80 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {TextAreaBuilder}
   */
 class DomTextAreaBuilder extends DomElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @return {!DomTextAreaBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ /** @return {!DomTextAreaBuilder} */
+ static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   DomTextAreaBuilder.$clinit();
   let $instance = new DomTextAreaBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_client_DomTextAreaBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_client_DomTextAreaBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_client_DomTextAreaBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_client_DomElementBuilderBase__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
  }
- /**
-  * @override
-  * @param {?string} accessKey
-  * @return {TextAreaBuilder}
-  * @public
-  */
- m_accessKey__java_lang_String(accessKey) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).accessKey = accessKey;
+ /** @override @return {TextAreaBuilder} */
+ m_accessKey__java_lang_String(/** ?string */ accessKey) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).accessKey = accessKey;
   return this;
  }
- /**
-  * @override
-  * @param {number} cols
-  * @return {TextAreaBuilder}
-  * @public
-  */
- m_cols__int(cols) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).cols = cols;
+ /** @override @return {TextAreaBuilder} */
+ m_cols__int(/** number */ cols) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).cols = cols;
   return this;
  }
- /**
-  * @override
-  * @param {?string} defaultValue
-  * @return {TextAreaBuilder}
-  * @public
-  */
- m_defaultValue__java_lang_String(defaultValue) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).defaultValue = defaultValue;
+ /** @override @return {TextAreaBuilder} */
+ m_defaultValue__java_lang_String(/** ?string */ defaultValue) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).defaultValue = defaultValue;
   return this;
  }
- /**
-  * @override
-  * @return {TextAreaBuilder}
-  * @public
-  */
+ /** @override @return {TextAreaBuilder} */
  m_disabled__() {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).disabled = true;
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).disabled = true;
   return this;
  }
- /**
-  * @override
-  * @param {SafeHtml} html
-  * @return {TextAreaBuilder}
-  * @public
-  */
- m_html__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ /** @override @return {TextAreaBuilder} */
+ m_html__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String(TextAreaBuilder.f_UNSUPPORTED_HTML__org_gwtproject_dom_builder_shared_TextAreaBuilder));
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isChildElementSupported__() {
   return false;
  }
- /**
-  * @override
-  * @param {?string} name
-  * @return {TextAreaBuilder}
-  * @public
-  */
- m_name__java_lang_String(name) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).name = name;
+ /** @override @return {TextAreaBuilder} */
+ m_name__java_lang_String(/** ?string */ name) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).name = name;
   return this;
  }
- /**
-  * @override
-  * @return {TextAreaBuilder}
-  * @public
-  */
+ /** @override @return {TextAreaBuilder} */
  m_readOnly__() {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).readOnly = true;
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).readOnly = true;
   return this;
  }
- /**
-  * @override
-  * @param {number} rows
-  * @return {TextAreaBuilder}
-  * @public
-  */
- m_rows__int(rows) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).rows = rows;
+ /** @override @return {TextAreaBuilder} */
+ m_rows__int(/** number */ rows) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).rows = rows;
   return this;
  }
- /**
-  * @override
-  * @param {?string} value
-  * @return {TextAreaBuilder}
-  * @public
-  */
- m_value__java_lang_String(value) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).value = value;
+ /** @override @return {TextAreaBuilder} */
+ m_value__java_lang_String(/** ?string */ value) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).value = value;
   return this;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomTextAreaBuilder.$clinit = () =>{};
   DomTextAreaBuilder.$loadModules();
   DomElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomTextAreaBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   UnsupportedOperationException = goog.module.get('java.lang.UnsupportedOperationException$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.TextAreaElement.$Overlay$impl');

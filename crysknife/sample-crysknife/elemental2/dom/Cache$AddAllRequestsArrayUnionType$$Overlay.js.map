@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Cache$AddAllRequestsArrayUnionType$$Overlay.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;MA2BmB,qC;;;;;;QAE2B,sB,CAAUA,C;EAAVC,gD;EACxCA,wD;;;;;;;QAIc,uE;EAAAC,gD;EACdA,2F;;;;;;;QAIa,sE;EAAAC,gD;EACbA,iD;;;;;;;QAIc,uE;EAAAC,gD;EACdA,wD;;;;;;;QAIc,sE;EAAAC,gD;EACdA,0D;;;;;QAvBa,O;EAAAC,wD;EAAAA;",
+"lineCount":39,
+"mappings":"A;;;;;;;;;MA2BmB,qC;;QAE2B,sB,UAAUA,C;EAAVC,gD;EACxCA,uD;;;QAIc,uE;EAAAC,gD;EACdA,0F;;;QAIa,sE;EAAAC,gD;EACbA,iD;;;QAIc,uE;EAAAC,gD;EACdA,uD;;;QAIc,sE;EAAAC,gD;EACdA,yD;;;QAvBa,O;EAAAC,wD;EAAAA;",
 "sources":["Cache.java"],
 "names":["o","elemental2.dom.Cache$AddAllRequestsArrayUnionType$$Overlay.of","elemental2.dom.Cache$AddAllRequestsArrayUnionType$$Overlay.asRequest__$devirt","elemental2.dom.Cache$AddAllRequestsArrayUnionType$$Overlay.asString__$devirt","elemental2.dom.Cache$AddAllRequestsArrayUnionType$$Overlay.isRequest__$devirt","elemental2.dom.Cache$AddAllRequestsArrayUnionType$$Overlay.isString__$devirt","elemental2.dom.Cache$AddAllRequestsArrayUnionType$$Overlay.<clinit>"]
 }

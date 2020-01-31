@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ScrollbarRole.impl.java.js",
-"lineCount":41,
-"mappings":"A;;;;;;;;;;;;;;MA4BiB,a;;;;;;;CAOR,+D,CAAmCA,O;;;;;;CAMrC,kE,CAAsCA,O;;;;;;;CAMtC,4G,CAAmCA,O,EAA0BC,K;;;;QAnBnD,O;EAAAC,gC;EAAAA;",
+"lineCount":25,
+"mappings":"A;;;;;;;;;;;;;;MA4BiB,a;;CAOR,+D,eAAmCA,O;;CAMrC,kE,eAAsCA,O;;CAMtC,4G,eAAmCA,O,0BAA0BC,K;;QAnBnD,O;EAAAC,gC;EAAAA;",
 "sources":["ScrollbarRole.java"],
 "names":["element","value","org.gwtproject.aria.client.ScrollbarRole.<clinit>"]
 }

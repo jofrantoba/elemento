@@ -13,34 +13,23 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
 class TextBoxImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!TextBoxImpl}
-  * @public
-  */
+ /** @return {!TextBoxImpl} */
  static $create__() {
   TextBoxImpl.$clinit();
   let $instance = new TextBoxImpl();
   $instance.$ctor__org_gwtproject_user_client_ui_impl_TextBoxImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_impl_TextBoxImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {Object} elem
-  * @return {number}
-  * @public
-  */
- m_getCursorPos__org_gwtproject_dom_client_Element(elem) {
+ /** @return {number} */
+ m_getCursorPos__org_gwtproject_dom_client_Element(/** Object */ elem) {
   let jsObject = Js.m_asPropertyMap__java_lang_Object(elem);
   if ($Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(jsObject, "selectionStart")) {
    try {
@@ -54,12 +43,8 @@ class TextBoxImpl extends j_l_Object {
   }
   return 0;
  }
- /**
-  * @param {Object} elem
-  * @return {number}
-  * @public
-  */
- m_getSelectionLength__org_gwtproject_dom_client_Element(elem) {
+ /** @return {number} */
+ m_getSelectionLength__org_gwtproject_dom_client_Element(/** Object */ elem) {
   let jsObject = Js.m_asPropertyMap__java_lang_Object(elem);
   if ($Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(jsObject, "selectionEnd") && $Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(jsObject, "selectionStart")) {
    try {
@@ -75,31 +60,18 @@ class TextBoxImpl extends j_l_Object {
   }
   return 0;
  }
- /**
-  * @param {Object} elem
-  * @return {number}
-  * @public
-  */
- m_getTextAreaCursorPos__org_gwtproject_dom_client_Element(elem) {
+ /** @return {number} */
+ m_getTextAreaCursorPos__org_gwtproject_dom_client_Element(/** Object */ elem) {
   return this.m_getCursorPos__org_gwtproject_dom_client_Element(elem);
  }
- /**
-  * @param {Object} elem
-  * @return {number}
-  * @public
-  */
- m_getTextAreaSelectionLength__org_gwtproject_dom_client_Element(elem) {
+ /** @return {number} */
+ m_getTextAreaSelectionLength__org_gwtproject_dom_client_Element(/** Object */ elem) {
   return this.m_getSelectionLength__org_gwtproject_dom_client_Element(elem);
  }
- /**
-  * @param {Object} elem
-  * @param {number} pos
-  * @param {number} length
-  * @public
-  */
- m_setSelectionRange__org_gwtproject_dom_client_Element__int__int(elem, pos, length) {
+ 
+ m_setSelectionRange__org_gwtproject_dom_client_Element__int__int(/** Object */ elem, /** number */ pos, /** number */ length) {
   try {
-   /**@type {HTMLInputElement} */ (Js.m_uncheckedCast__java_lang_Object(elem)).setSelectionRange(pos, pos + length);
+   /**@type {HTMLInputElement}*/ (Js.m_uncheckedCast__java_lang_Object(elem)).setSelectionRange(pos, pos + length);
   } catch (__$exc) {
    __$exc = $Exceptions.toJava(__$exc);
    if (Exception.$isInstance(__$exc)) {} else {
@@ -107,25 +79,17 @@ class TextBoxImpl extends j_l_Object {
    }
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TextBoxImpl.$clinit = () =>{};
   TextBoxImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TextBoxImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Exception = goog.module.get('java.lang.Exception$impl');
   Integer = goog.module.get('java.lang.Integer$impl');

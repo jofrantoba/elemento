@@ -17,119 +17,49 @@ let ValueAwareEditor = goog.forwardDeclare('org.gwtproject.editor.client.ValueAw
  * @template T
  */
 class EditorContext {
- /**
-  * @abstract
-  * @return {CompositeEditor<T, ?, ?>}
-  * @public
-  */
+ /** @abstract @return {CompositeEditor<T, ?, ?>} */
  m_asCompositeEditor__() {}
- /**
-  * @abstract
-  * @return {HasEditorDelegate<T>}
-  * @public
-  */
+ /** @abstract @return {HasEditorDelegate<T>} */
  m_asHasEditorDelegate__() {}
- /**
-  * @abstract
-  * @return {HasEditorErrors<T>}
-  * @public
-  */
+ /** @abstract @return {HasEditorErrors<T>} */
  m_asHasEditorErrors__() {}
- /**
-  * @abstract
-  * @return {LeafValueEditor<T>}
-  * @public
-  */
+ /** @abstract @return {LeafValueEditor<T>} */
  m_asLeafValueEditor__() {}
- /**
-  * @abstract
-  * @return {ValueAwareEditor<T>}
-  * @public
-  */
+ /** @abstract @return {ValueAwareEditor<T>} */
  m_asValueAwareEditor__() {}
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_canSetInModel__() {}
- /**
-  * @abstract
-  * @param {*} value
-  * @return {T}
-  * @public
-  */
- m_checkAssignment__java_lang_Object(value) {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {T} */
+ m_checkAssignment__java_lang_Object(/** * */ value) {}
+ /** @abstract @return {?string} */
  m_getAbsolutePath__() {}
- /**
-  * @abstract
-  * @return {Class<T>}
-  * @public
-  */
+ /** @abstract @return {Class<T>} */
  m_getEditedType__() {}
- /**
-  * @abstract
-  * @return {Editor<T>}
-  * @public
-  */
+ /** @abstract @return {Editor<T>} */
  m_getEditor__() {}
- /**
-  * @abstract
-  * @return {EditorDelegate<T>}
-  * @public
-  */
+ /** @abstract @return {EditorDelegate<T>} */
  m_getEditorDelegate__() {}
- /**
-  * @abstract
-  * @return {T}
-  * @public
-  */
+ /** @abstract @return {T} */
  m_getFromModel__() {}
- /**
-  * @abstract
-  * @param {T} data
-  * @public
-  */
- m_setInModel__java_lang_Object(data) {}
- /**
-  * @abstract
-  * @param {EditorVisitor} visitor
-  * @public
-  */
- m_traverseSyntheticCompositeEditor__org_gwtproject_editor_client_EditorVisitor(visitor) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_setInModel__java_lang_Object(/** T */ data) {}
+ /** @abstract */
+ m_traverseSyntheticCompositeEditor__org_gwtproject_editor_client_EditorVisitor(/** EditorVisitor */ visitor) {}
+ 
  static $clinit() {
   EditorContext.$clinit = () =>{};
   EditorContext.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_editor_client_EditorContext = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_editor_client_EditorContext = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_editor_client_EditorContext;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }
@@ -137,7 +67,7 @@ $Util.$setClassMetadataForInterface(EditorContext, 'org.gwtproject.editor.client
 
 EditorContext.$markImplementor(/** @type {Function} */ (EditorContext));
 
-/** @public {?string} @const */
+/**@const {?string}*/
 EditorContext.f_ROOT_PATH__org_gwtproject_editor_client_EditorContext = "";
 
 exports = EditorContext; 

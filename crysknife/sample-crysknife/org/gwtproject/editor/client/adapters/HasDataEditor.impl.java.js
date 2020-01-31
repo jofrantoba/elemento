@@ -14,68 +14,41 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {ListEditor<T, LeafValueEditor<T>>}
   */
 class HasDataEditor extends ListEditor {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @template T_1
-  * @param {HasData<T_1>} data
-  * @return {HasDataEditor<T_1>}
-  * @public
-  */
- static m_of__org_gwtproject_view_client_HasData(data) {
+ /** @template T_1 @return {HasDataEditor<T_1>} */
+ static m_of__org_gwtproject_view_client_HasData(/** HasData<T_1> */ data) {
   HasDataEditor.$clinit();
-  return /**@type {!HasDataEditor<T_1>} */ (HasDataEditor.$create__org_gwtproject_view_client_HasData(data));
+  return /**@type {!HasDataEditor<T_1>}*/ (HasDataEditor.$create__org_gwtproject_view_client_HasData(data));
  }
- /**
-  * @template T
-  * @param {HasData<T>} data
-  * @return {!HasDataEditor<T>}
-  * @public
-  */
- static $create__org_gwtproject_view_client_HasData(data) {
+ /** @template T @return {!HasDataEditor<T>} */
+ static $create__org_gwtproject_view_client_HasData(/** HasData<T> */ data) {
   let $instance = new HasDataEditor();
   $instance.$ctor__org_gwtproject_editor_client_adapters_HasDataEditor__org_gwtproject_view_client_HasData(data);
   return $instance;
  }
- /**
-  * @param {HasData<T>} data
-  * @public
-  */
- $ctor__org_gwtproject_editor_client_adapters_HasDataEditor__org_gwtproject_view_client_HasData(data) {
-  this.$ctor__org_gwtproject_editor_client_adapters_ListEditor__org_gwtproject_editor_client_adapters_EditorSource(/**@type {!HasDataEditorSource<T>} */ (HasDataEditorSource.$create__org_gwtproject_view_client_HasData(data)));
+ 
+ $ctor__org_gwtproject_editor_client_adapters_HasDataEditor__org_gwtproject_view_client_HasData(/** HasData<T> */ data) {
+  this.$ctor__org_gwtproject_editor_client_adapters_ListEditor__org_gwtproject_editor_client_adapters_EditorSource(/**@type {!HasDataEditorSource<T>}*/ (HasDataEditorSource.$create__org_gwtproject_view_client_HasData(data)));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_setValue__java_lang_Object(arg0) {
-  super.m_setValue__java_util_List(/**@type {List<T>} */ ($Casts.$to(arg0, List)));
+ //Bridge method.
+ /** @override */
+ m_setValue__java_lang_Object(/** * */ arg0) {
+  super.m_setValue__java_util_List(/**@type {List<T>}*/ ($Casts.$to(arg0, List)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HasDataEditor.$clinit = () =>{};
   HasDataEditor.$loadModules();
   ListEditor.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HasDataEditor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   List = goog.module.get('java.util.List$impl');
   HasDataEditorSource = goog.module.get('org.gwtproject.editor.client.adapters.HasDataEditor.HasDataEditorSource$impl');

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CustomScrollPanel$Style.impl.java.js",
-"lineCount":60,
-"mappings":"A;;;;;;;;;MA8EmB,K;;;;;;CASR,qB;;;;;;CAMA,2B;;;;QAfQ,O;EAAAA,wB;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AACf;MAGO,oEAHP;",
+"lineCount":39,
+"mappings":"A;;;;;;;;;MA8EmB,K;;CASR,qB;;CAMA,2B;;QAfQ,O;EAAAA,wB;EAAAA,qB;;;;;;;;;;;;;;;;;;;;AACf;MAGO,oEAHP;",
 "sources":["CustomScrollPanel.java"],
 "names":["org.gwtproject.user.client.ui.CustomScrollPanel$Style.<clinit>"]
 }

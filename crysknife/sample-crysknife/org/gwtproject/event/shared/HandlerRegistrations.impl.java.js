@@ -7,55 +7,36 @@ let HandlerRegistration = goog.forwardDeclare('org.gwtproject.event.shared.Handl
 let HandlerRegistrationCollection = goog.forwardDeclare('org.gwtproject.event.shared.HandlerRegistrations.HandlerRegistrationCollection$impl');
 
 class HandlerRegistrations extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {Array<HandlerRegistration>} handlers
-  * @return {HandlerRegistration}
-  * @public
-  */
- static m_compose__arrayOf_org_gwtproject_event_shared_HandlerRegistration(handlers) {
+ /** @return {HandlerRegistration} */
+ static m_compose__arrayOf_org_gwtproject_event_shared_HandlerRegistration(/** Array<HandlerRegistration> */ handlers) {
   HandlerRegistrations.$clinit();
   return HandlerRegistrationCollection.$create__arrayOf_org_gwtproject_event_shared_HandlerRegistration(handlers);
  }
- /**
-  * @return {!HandlerRegistrations}
-  * @public
-  */
+ /** @return {!HandlerRegistrations} */
  static $create__() {
   let $instance = new HandlerRegistrations();
   $instance.$ctor__org_gwtproject_event_shared_HandlerRegistrations__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_shared_HandlerRegistrations__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HandlerRegistrations.$clinit = () =>{};
   HandlerRegistrations.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HandlerRegistrations;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   HandlerRegistrationCollection = goog.module.get('org.gwtproject.event.shared.HandlerRegistrations.HandlerRegistrationCollection$impl');
  }

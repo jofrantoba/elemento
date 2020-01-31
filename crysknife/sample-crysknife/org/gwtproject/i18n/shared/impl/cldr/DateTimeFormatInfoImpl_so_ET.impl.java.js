@@ -4,55 +4,36 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const DateTimeFormatInfoImpl__so = goog.require('org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_so$impl');
 
 class DateTimeFormatInfoImpl__so__ET extends DateTimeFormatInfoImpl__so {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!DateTimeFormatInfoImpl__so__ET}
-  * @public
-  */
+ /** @return {!DateTimeFormatInfoImpl__so__ET} */
  static $create__() {
   DateTimeFormatInfoImpl__so__ET.$clinit();
   let $instance = new DateTimeFormatInfoImpl__so__ET();
   $instance.$ctor__org_gwtproject_i18n_shared_impl_cldr_DateTimeFormatInfoImpl_so_ET__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_i18n_shared_impl_cldr_DateTimeFormatInfoImpl_so_ET__() {
   this.$ctor__org_gwtproject_i18n_shared_impl_cldr_DateTimeFormatInfoImpl_so__();
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_firstDayOfTheWeek__() {
   return 0;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DateTimeFormatInfoImpl__so__ET.$clinit = () =>{};
   DateTimeFormatInfoImpl__so__ET.$loadModules();
   DateTimeFormatInfoImpl__so.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DateTimeFormatInfoImpl__so__ET;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

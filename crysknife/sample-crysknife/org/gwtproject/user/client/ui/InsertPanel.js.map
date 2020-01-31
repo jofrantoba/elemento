@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"InsertPanel.impl.java.js",
-"lineCount":31,
-"mappings":"A;;;;;;;;;;;MAoBiB,W;;;;;;CAgBV,2C,CAAWA,C;;;;;;;CAWX,mD,CAAcA,C,EAAOC,W;;;;QA3BX,O;EAAAC,8B;EAAAA;",
+"lineCount":20,
+"mappings":"A;;;;;;;;;;;MAoBiB,W;;CAgBV,2C,eAAWA,C;;CAWX,mD,eAAcA,C,gBAAOC,W;;QA3BX,O;EAAAC,8B;EAAAA;",
 "sources":["InsertPanel.java"],
 "names":["w","beforeIndex","org.gwtproject.user.client.ui.InsertPanel.<clinit>"]
 }

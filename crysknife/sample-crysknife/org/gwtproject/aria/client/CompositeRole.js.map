@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CompositeRole.impl.java.js",
-"lineCount":39,
-"mappings":"A;;;;;;;;;;;;MA4BiB,a;;;;;;;CAQR,oE,CAAwCA,O;;;;;;CAO1C,uE,CAA2CA,O;;;;;;;CAM3C,mG,CAAwCA,O,EAAYC,K;;;;QArB1C,O;EAAAC,gC;EAAAA;",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;;MA4BiB,a;;CAQR,oE,eAAwCA,O;;CAO1C,uE,eAA2CA,O;;CAM3C,mG,eAAwCA,O,YAAYC,K;;QArB1C,O;EAAAC,gC;EAAAA;",
 "sources":["CompositeRole.java"],
 "names":["element","value","org.gwtproject.aria.client.CompositeRole.<clinit>"]
 }

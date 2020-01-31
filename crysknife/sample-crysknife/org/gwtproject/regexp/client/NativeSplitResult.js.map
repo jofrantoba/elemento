@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"NativeSplitResult.impl.java.js",
-"lineCount":75,
-"mappings":"A;;;;;;;;;;;;;;MAqBa,iB;;;;CAAA,W;EAAAA,Q;EAAAA;OAEa,0DAFbA,C;;;;;;;QAID,gC,CAAkCC,M;EAAlCC,4B;EAAAA,wC;EAAAA,iG;EAAAA,iB;;;;;;CAAA,8E,CAAkCD,M;EAAlCE,iC;EACRA,yE;;;;;;;;CAIY,U,CAAQC,K;EACpBC,0L;;;;;;;CAIS,U;EACTC,8E;;;;;;;;CAIU,4B,CAAQF,K,EAAcG,K;EAChCC,4J;;;;;QApBS,O;EAAAC,oC;EAAAA,iC;EAAAA;",
+"lineCount":50,
+"mappings":"A;;;;;;;;;;;;;;MAqBa,iB;;CAAA,W;EAAAA,Q;EAAAA;OAEa,0DAFbA,C;;;QAID,gC,uBAAkCC,M;EAAlCC,4B;EAAAA,wC;EAAAA,iG;EAAAA,iB;;;CAAA,8E,uBAAkCD,M;EAAlCE,iC;EACRA,yE;;;CAIY,U,eAAQC,K;EACpBC,yL;;;CAIS,U;EACTC,8E;;;CAIU,4B,eAAQF,K,iBAAcG,K;EAChCC,4J;;;QApBS,O;EAAAC,oC;EAAAA,iC;EAAAA;",
 "sources":["NativeSplitResult.java"],
 "names":["org.gwtproject.regexp.client.NativeSplitResult.<synthetic: ctor_js>","result","org.gwtproject.regexp.client.NativeSplitResult.<synthetic: ctor_create>","org.gwtproject.regexp.client.NativeSplitResult.<init>","index","org.gwtproject.regexp.client.NativeSplitResult.get","org.gwtproject.regexp.client.NativeSplitResult.length","value","org.gwtproject.regexp.client.NativeSplitResult.set","org.gwtproject.regexp.client.NativeSplitResult.<clinit>"]
 }

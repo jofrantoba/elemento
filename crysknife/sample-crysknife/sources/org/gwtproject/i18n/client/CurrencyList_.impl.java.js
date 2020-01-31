@@ -15,90 +15,56 @@ let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 
 class CurrencyList__ extends CurrencyList {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!CurrencyList__}
-  * @public
-  */
+ /** @return {!CurrencyList__} */
  static $create__() {
   CurrencyList__.$clinit();
   let $instance = new CurrencyList__();
   $instance.$ctor__org_gwtproject_i18n_client_CurrencyList___();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_i18n_client_CurrencyList___() {
   this.$ctor__org_gwtproject_i18n_client_CurrencyList__();
  }
- /**
-  * @override
-  * @return {CurrencyData}
-  * @public
-  */
+ /** @override @return {CurrencyData} */
  m_getDefaultNative__() {
-  let arr = /**@type {!Array<?string>} */ ($Arrays.$init(["USD", "US$", "2", "US$", "$"], j_l_String));
+  let arr = /**@type {!Array<?string>}*/ ($Arrays.$init(["USD", "US$", "2", "US$", "$"], j_l_String));
   let result = new Array();
-  return /**@type {CurrencyData} */ (Js.m_uncheckedCast__java_lang_Object(result.push("USD", "US$", "2", "US$", "$")));
+  return /**@type {CurrencyData}*/ (Js.m_uncheckedCast__java_lang_Object(result.push("USD", "US$", "2", "US$", "$")));
  }
- /**
-  * @override
-  * @return {Object}
-  * @public
-  */
+ /** @override @return {Object} */
  m_loadCurrencyMapNative__() {
   return CurrencyList.m_overrideMap__org_gwtproject_core_client_JavaScriptObject__org_gwtproject_core_client_JavaScriptObject(super.m_loadCurrencyMapNative__(), this.m_loadMyCurrencyMapOverridesNative___$p_org_gwtproject_i18n_client_CurrencyList_());
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_loadMyCurrencyMapOverridesNative___$p_org_gwtproject_i18n_client_CurrencyList_() {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String("loadMyCurrencyMapOverridesNative"));
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<CurrencyData>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<CurrencyData>} */
  m_spliterator__() {
-  return /**@type {Spliterator<CurrencyData>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<CurrencyData>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CurrencyList__.$clinit = () =>{};
   CurrencyList__.$loadModules();
   CurrencyList.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CurrencyList__;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   j_l_String = goog.module.get('java.lang.String$impl');

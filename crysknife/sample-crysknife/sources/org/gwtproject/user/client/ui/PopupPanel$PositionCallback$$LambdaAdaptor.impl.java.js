@@ -8,55 +8,37 @@ const PositionCallback = goog.require('org.gwtproject.user.client.ui.PopupPanel.
  * @implements {PositionCallback}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(number, number):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(number, number):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(number, number):void} */
+  /**@type {?function(number, number):void}*/
   this.f_$$fn__org_gwtproject_user_client_ui_PopupPanel_PositionCallback_$LambdaAdaptor;
   this.$ctor__org_gwtproject_user_client_ui_PopupPanel_PositionCallback_$LambdaAdaptor__org_gwtproject_user_client_ui_PopupPanel_PositionCallback_$JsFunction(fn);
  }
- /**
-  * @param {?function(number, number):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_PopupPanel_PositionCallback_$LambdaAdaptor__org_gwtproject_user_client_ui_PopupPanel_PositionCallback_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_user_client_ui_PopupPanel_PositionCallback_$LambdaAdaptor__org_gwtproject_user_client_ui_PopupPanel_PositionCallback_$JsFunction(/** ?function(number, number):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_user_client_ui_PopupPanel_PositionCallback_$LambdaAdaptor = fn;
  }
- /**
-  * @param {number} arg0
-  * @param {number} arg1
-  * @public
-  */
- m_setPosition__int__int(arg0, arg1) {
+ 
+ m_setPosition__int__int(/** number */ arg0, /** number */ arg1) {
   {
    let $function = this.f_$$fn__org_gwtproject_user_client_ui_PopupPanel_PositionCallback_$LambdaAdaptor;
    $function(arg0, arg1);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

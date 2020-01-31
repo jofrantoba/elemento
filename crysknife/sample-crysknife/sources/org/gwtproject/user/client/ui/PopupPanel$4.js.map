@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"PopupPanel$4.impl.java.js",
-"lineCount":57,
-"mappings":"A;;;;;;;;;;;;MA40CkG,E;;;;CAAA,W;EAAAA,Q;EAAAA;iE;;;;;;;QAAA,iD;EAAAC,a;EAAAA,yB;EAAAA,mH;EAAAA,iB;;;;;;CAAA,2F;EAAAC,6E;EAAAA,iC;;;;;;;CAC9E,qE,CAAuCC,K;EACjDC;GACEA,0EADFA;G;;;;;QAFwF,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;;MA40CkG,E;;CAAA,W;EAAAA,Q;EAAAA;iE;;;QAAA,iD;EAAAC,a;EAAAA,yB;EAAAA,mH;EAAAA,iB;;;CAAA,2F;EAAAC,6E;EAAAA,iC;;;CAC9E,qE,kCAAuCC,K;EACjDC;GACEA,0EADFA;G;;;QAFwF,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["PopupPanel.java"],
 "names":["org.gwtproject.user.client.ui.PopupPanel$4.<synthetic: ctor_js>","org.gwtproject.user.client.ui.PopupPanel$4.<synthetic: ctor_create>","org.gwtproject.user.client.ui.PopupPanel$4.<init>","event","org.gwtproject.user.client.ui.PopupPanel$4.onValueChange","org.gwtproject.user.client.ui.PopupPanel$4.<clinit>"]
 }

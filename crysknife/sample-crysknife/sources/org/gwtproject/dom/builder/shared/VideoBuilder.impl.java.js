@@ -8,56 +8,28 @@ const MediaBuilder = goog.require('org.gwtproject.dom.builder.shared.MediaBuilde
  * @extends {MediaBuilder<VideoBuilder>}
  */
 class VideoBuilder {
- /**
-  * @abstract
-  * @param {number} height
-  * @return {VideoBuilder}
-  * @public
-  */
- m_height__int(height) {}
- /**
-  * @abstract
-  * @param {?string} url
-  * @return {VideoBuilder}
-  * @public
-  */
- m_poster__java_lang_String(url) {}
- /**
-  * @abstract
-  * @param {number} width
-  * @return {VideoBuilder}
-  * @public
-  */
- m_width__int(width) {}
- /**
-  * @public
-  */
+ /** @abstract @return {VideoBuilder} */
+ m_height__int(/** number */ height) {}
+ /** @abstract @return {VideoBuilder} */
+ m_poster__java_lang_String(/** ?string */ url) {}
+ /** @abstract @return {VideoBuilder} */
+ m_width__int(/** number */ width) {}
+ 
  static $clinit() {
   VideoBuilder.$clinit = () =>{};
   VideoBuilder.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  MediaBuilder.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_dom_builder_shared_VideoBuilder = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  MediaBuilder.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_dom_builder_shared_VideoBuilder = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_dom_builder_shared_VideoBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

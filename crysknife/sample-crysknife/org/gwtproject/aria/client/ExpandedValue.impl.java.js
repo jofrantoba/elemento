@@ -14,47 +14,28 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @implements {AriaAttributeType}
   */
 class ExpandedValue extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @return {!ExpandedValue}
-  * @public
-  */
- static $create__java_lang_String__int($name, $ordinal) {
+ /** @return {!ExpandedValue} */
+ static $create__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   let $instance = new ExpandedValue();
   $instance.$ctor__org_gwtproject_aria_client_ExpandedValue__java_lang_String__int($name, $ordinal);
   return $instance;
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_aria_client_ExpandedValue__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_aria_client_ExpandedValue__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @param {boolean} value
-  * @return {ExpandedValue}
-  * @public
-  */
- static m_of__boolean(value) {
+ /** @return {ExpandedValue} */
+ static m_of__boolean(/** boolean */ value) {
   ExpandedValue.$clinit();
   return value ? ExpandedValue.$f_TRUE__org_gwtproject_aria_client_ExpandedValue : ExpandedValue.$f_FALSE__org_gwtproject_aria_client_ExpandedValue;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getAriaValue__() {
   switch (this.ordinal()) {
    case ExpandedValue.$ordinal$f_TRUE__org_gwtproject_aria_client_ExpandedValue: 
@@ -66,60 +47,37 @@ class ExpandedValue extends Enum {
   }
   return null;
  }
- /**
-  * @param {string} name
-  * @return {!ExpandedValue}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!ExpandedValue} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   ExpandedValue.$clinit();
   if ($Equality.$same(ExpandedValue.f_namesToValuesMap__org_gwtproject_aria_client_ExpandedValue_, null)) {
    ExpandedValue.f_namesToValuesMap__org_gwtproject_aria_client_ExpandedValue_ = $Enums.createMapFromValues(ExpandedValue.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, ExpandedValue.f_namesToValuesMap__org_gwtproject_aria_client_ExpandedValue_);
  }
- /**
-  * @return {!Array<!ExpandedValue>}
-  * @public
-  */
+ /** @return {!Array<!ExpandedValue>} */
  static m_values__() {
   ExpandedValue.$clinit();
-  return /**@type {!Array<ExpandedValue>} */ ($Arrays.$init([ExpandedValue.$f_TRUE__org_gwtproject_aria_client_ExpandedValue, ExpandedValue.$f_FALSE__org_gwtproject_aria_client_ExpandedValue, ExpandedValue.$f_UNDEFINED__org_gwtproject_aria_client_ExpandedValue], ExpandedValue));
+  return /**@type {!Array<ExpandedValue>}*/ ($Arrays.$init([ExpandedValue.$f_TRUE__org_gwtproject_aria_client_ExpandedValue, ExpandedValue.$f_FALSE__org_gwtproject_aria_client_ExpandedValue, ExpandedValue.$f_UNDEFINED__org_gwtproject_aria_client_ExpandedValue], ExpandedValue));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @return {number}
-  * @public
-  */
- m_compareTo__java_lang_Object(arg0) {
-  return super.compareTo(/**@type {ExpandedValue} */ ($Casts.$to(arg0, ExpandedValue)));
+ //Bridge method.
+ /** @override @return {number} */
+ m_compareTo__java_lang_Object(/** * */ arg0) {
+  return super.compareTo(/**@type {ExpandedValue}*/ ($Casts.$to(arg0, ExpandedValue)));
  }
- /**
-  * @return {!ExpandedValue}
-  * @public
-  */
+ /** @return {!ExpandedValue} */
  static get f_TRUE__org_gwtproject_aria_client_ExpandedValue() {
   return (ExpandedValue.$clinit(), ExpandedValue.$f_TRUE__org_gwtproject_aria_client_ExpandedValue);
  }
- /**
-  * @return {!ExpandedValue}
-  * @public
-  */
+ /** @return {!ExpandedValue} */
  static get f_FALSE__org_gwtproject_aria_client_ExpandedValue() {
   return (ExpandedValue.$clinit(), ExpandedValue.$f_FALSE__org_gwtproject_aria_client_ExpandedValue);
  }
- /**
-  * @return {!ExpandedValue}
-  * @public
-  */
+ /** @return {!ExpandedValue} */
  static get f_UNDEFINED__org_gwtproject_aria_client_ExpandedValue() {
   return (ExpandedValue.$clinit(), ExpandedValue.$f_UNDEFINED__org_gwtproject_aria_client_ExpandedValue);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ExpandedValue.$clinit = () =>{};
   ExpandedValue.$loadModules();
@@ -129,17 +87,11 @@ class ExpandedValue extends Enum {
   ExpandedValue.$f_UNDEFINED__org_gwtproject_aria_client_ExpandedValue = ExpandedValue.$create__java_lang_String__int($Util.$makeEnumName("UNDEFINED"), ExpandedValue.$ordinal$f_UNDEFINED__org_gwtproject_aria_client_ExpandedValue);
   ExpandedValue.f_namesToValuesMap__org_gwtproject_aria_client_ExpandedValue_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ExpandedValue;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
@@ -152,19 +104,19 @@ $Util.$setClassMetadataForEnum(ExpandedValue, 'org.gwtproject.aria.client.Expand
 
 AriaAttributeType.$markImplementor(ExpandedValue);
 
-/** @private {!ExpandedValue} */
+/**@private {!ExpandedValue}*/
 ExpandedValue.$f_TRUE__org_gwtproject_aria_client_ExpandedValue;
-/** @private {!ExpandedValue} */
+/**@private {!ExpandedValue}*/
 ExpandedValue.$f_FALSE__org_gwtproject_aria_client_ExpandedValue;
-/** @private {!ExpandedValue} */
+/**@private {!ExpandedValue}*/
 ExpandedValue.$f_UNDEFINED__org_gwtproject_aria_client_ExpandedValue;
-/** @public {Map<?string, !ExpandedValue>} */
+/**@type {Map<?string, !ExpandedValue>}*/
 ExpandedValue.f_namesToValuesMap__org_gwtproject_aria_client_ExpandedValue_;
-/** @public {number} @const */
+/**@const {number}*/
 ExpandedValue.$ordinal$f_TRUE__org_gwtproject_aria_client_ExpandedValue = 0;
-/** @public {number} @const */
+/**@const {number}*/
 ExpandedValue.$ordinal$f_FALSE__org_gwtproject_aria_client_ExpandedValue = 1;
-/** @public {number} @const */
+/**@const {number}*/
 ExpandedValue.$ordinal$f_UNDEFINED__org_gwtproject_aria_client_ExpandedValue = 2;
 
 exports = ExpandedValue; 

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TextColumn.impl.java.js",
-"lineCount":32,
-"mappings":"A;;;;;;;;;;;;MAyBsB,U;;;;CAAA,W;EAAAA,Q;;;;;CAKb,uD;EACLC,8G;;;;;QANkB,O;EAAAC,6B;EAAAA,0B;EAAAA;",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;MAyBsB,U;;CAAA,W;EAAAA,Q;;;CAKb,uD;EACLC,8G;;;QANkB,O;EAAAC,6B;EAAAA,0B;EAAAA;",
 "sources":["TextColumn.java"],
 "names":["org.gwtproject.user.cellview.client.TextColumn.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.TextColumn.<init>","org.gwtproject.user.cellview.client.TextColumn.<clinit>"]
 }

@@ -17,105 +17,71 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {Iterator<Widget>}
   */
 class $1 extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {StackLayoutPanel} */
+  /**@type {StackLayoutPanel}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_StackLayoutPanel_1;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_i__org_gwtproject_user_client_ui_StackLayoutPanel_1 = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_last__org_gwtproject_user_client_ui_StackLayoutPanel_1 = 0;
  }
- /**
-  * @param {StackLayoutPanel} $outer_this
-  * @return {!$1}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_StackLayoutPanel($outer_this) {
+ /** @return {!$1} */
+ static $create__org_gwtproject_user_client_ui_StackLayoutPanel(/** StackLayoutPanel */ $outer_this) {
   $1.$clinit();
   let $instance = new $1();
   $instance.$ctor__org_gwtproject_user_client_ui_StackLayoutPanel_1__org_gwtproject_user_client_ui_StackLayoutPanel($outer_this);
   return $instance;
  }
- /**
-  * @param {StackLayoutPanel} $outer_this
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_StackLayoutPanel_1__org_gwtproject_user_client_ui_StackLayoutPanel($outer_this) {
+ 
+ $ctor__org_gwtproject_user_client_ui_StackLayoutPanel_1__org_gwtproject_user_client_ui_StackLayoutPanel(/** StackLayoutPanel */ $outer_this) {
   this.f_$outer_this__org_gwtproject_user_client_ui_StackLayoutPanel_1 = $outer_this;
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_user_client_ui_StackLayoutPanel_1();
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_hasNext__() {
   return this.f_i__org_gwtproject_user_client_ui_StackLayoutPanel_1 < this.f_$outer_this__org_gwtproject_user_client_ui_StackLayoutPanel_1.f_layoutData__org_gwtproject_user_client_ui_StackLayoutPanel_.size();
  }
- /**
-  * @override
-  * @return {Widget}
-  * @public
-  */
+ /** @override @return {Widget} */
  m_next__() {
   if (!this.m_hasNext__()) {
    throw $Exceptions.toJs(NoSuchElementException.$create__());
   }
-  return /**@type {LayoutData} */ ($Casts.$to(this.f_$outer_this__org_gwtproject_user_client_ui_StackLayoutPanel_1.f_layoutData__org_gwtproject_user_client_ui_StackLayoutPanel_.getAtIndex(this.f_last__org_gwtproject_user_client_ui_StackLayoutPanel_1 = this.f_i__org_gwtproject_user_client_ui_StackLayoutPanel_1++), LayoutData)).f_widget__org_gwtproject_user_client_ui_StackLayoutPanel_LayoutData;
+  return /**@type {LayoutData}*/ ($Casts.$to(this.f_$outer_this__org_gwtproject_user_client_ui_StackLayoutPanel_1.f_layoutData__org_gwtproject_user_client_ui_StackLayoutPanel_.getAtIndex(this.f_last__org_gwtproject_user_client_ui_StackLayoutPanel_1 = this.f_i__org_gwtproject_user_client_ui_StackLayoutPanel_1++), LayoutData)).f_widget__org_gwtproject_user_client_ui_StackLayoutPanel_LayoutData;
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_remove__() {
   if (this.f_last__org_gwtproject_user_client_ui_StackLayoutPanel_1 < 0) {
    throw $Exceptions.toJs(IllegalStateException.$create__());
   }
-  this.f_$outer_this__org_gwtproject_user_client_ui_StackLayoutPanel_1.m_remove__org_gwtproject_user_client_ui_Widget(/**@type {LayoutData} */ ($Casts.$to(this.f_$outer_this__org_gwtproject_user_client_ui_StackLayoutPanel_1.f_layoutData__org_gwtproject_user_client_ui_StackLayoutPanel_.getAtIndex(this.f_last__org_gwtproject_user_client_ui_StackLayoutPanel_1), LayoutData)).f_widget__org_gwtproject_user_client_ui_StackLayoutPanel_LayoutData);
+  this.f_$outer_this__org_gwtproject_user_client_ui_StackLayoutPanel_1.m_remove__org_gwtproject_user_client_ui_Widget(/**@type {LayoutData}*/ ($Casts.$to(this.f_$outer_this__org_gwtproject_user_client_ui_StackLayoutPanel_1.f_layoutData__org_gwtproject_user_client_ui_StackLayoutPanel_.getAtIndex(this.f_last__org_gwtproject_user_client_ui_StackLayoutPanel_1), LayoutData)).f_widget__org_gwtproject_user_client_ui_StackLayoutPanel_LayoutData);
   this.f_i__org_gwtproject_user_client_ui_StackLayoutPanel_1 = this.f_last__org_gwtproject_user_client_ui_StackLayoutPanel_1;
   this.f_last__org_gwtproject_user_client_ui_StackLayoutPanel_1 = -1;
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEachRemaining__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEachRemaining__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterator.m_forEachRemaining__$default__java_util_Iterator__java_util_function_Consumer(this, arg0);
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_StackLayoutPanel_1() {
   this.f_i__org_gwtproject_user_client_ui_StackLayoutPanel_1 = 0;
   this.f_last__org_gwtproject_user_client_ui_StackLayoutPanel_1 = -1;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $1.$clinit = () =>{};
   $1.$loadModules();
   j_l_Object.$clinit();
   Iterator.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $1;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');
   NoSuchElementException = goog.module.get('java.util.NoSuchElementException$impl');

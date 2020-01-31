@@ -17,30 +17,24 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 
 class AttachDetachException extends UmbrellaException {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {Iterable<Widget>} hasWidgets
-  * @param {Command} c
-  * @public
-  */
- static m_tryCommand__java_lang_Iterable__org_gwtproject_user_client_ui_AttachDetachException_Command(hasWidgets, c) {
+ 
+ static m_tryCommand__java_lang_Iterable__org_gwtproject_user_client_ui_AttachDetachException_Command(/** Iterable<Widget> */ hasWidgets, /** Command */ c) {
   AttachDetachException.$clinit();
   let caught = null;
   for (let $iterator = hasWidgets.m_iterator__(); $iterator.m_hasNext__(); ) {
-   let w = /**@type {Widget} */ ($Casts.$to($iterator.m_next__(), Widget));
+   let w = /**@type {Widget}*/ ($Casts.$to($iterator.m_next__(), Widget));
    try {
     c.m_execute__org_gwtproject_user_client_ui_Widget(w);
    } catch (__$exc) {
     __$exc = $Exceptions.toJava(__$exc);
     {
-     let e = /**@type {Throwable} */ (__$exc);
+     let e = /**@type {Throwable}*/ (__$exc);
      if ($Equality.$same(caught, null)) {
-      caught = /**@type {!HashSet<Throwable>} */ (HashSet.$create__());
+      caught = /**@type {!HashSet<Throwable>}*/ (HashSet.$create__());
      }
      caught.add(e);
     }
@@ -50,12 +44,8 @@ class AttachDetachException extends UmbrellaException {
    throw $Exceptions.toJs(AttachDetachException.$create__java_util_Set(caught));
   }
  }
- /**
-  * @param {Command} c
-  * @param {Array<IsWidget>} widgets
-  * @public
-  */
- static m_tryCommand__org_gwtproject_user_client_ui_AttachDetachException_Command__arrayOf_org_gwtproject_user_client_ui_IsWidget(c, widgets) {
+ 
+ static m_tryCommand__org_gwtproject_user_client_ui_AttachDetachException_Command__arrayOf_org_gwtproject_user_client_ui_IsWidget(/** Command */ c, /** Array<IsWidget> */ widgets) {
   AttachDetachException.$clinit();
   let caught = null;
   for (let $array = widgets, $index = 0; $index < $array.length; $index++) {
@@ -67,9 +57,9 @@ class AttachDetachException extends UmbrellaException {
    } catch (__$exc) {
     __$exc = $Exceptions.toJava(__$exc);
     {
-     let e = /**@type {Throwable} */ (__$exc);
+     let e = /**@type {Throwable}*/ (__$exc);
      if ($Equality.$same(caught, null)) {
-      caught = /**@type {!HashSet<Throwable>} */ (HashSet.$create__());
+      caught = /**@type {!HashSet<Throwable>}*/ (HashSet.$create__());
      }
      caught.add(e);
     }
@@ -79,42 +69,27 @@ class AttachDetachException extends UmbrellaException {
    throw $Exceptions.toJs(AttachDetachException.$create__java_util_Set(caught));
   }
  }
- /**
-  * @param {Set<Throwable>} causes
-  * @return {!AttachDetachException}
-  * @public
-  */
- static $create__java_util_Set(causes) {
+ /** @return {!AttachDetachException} */
+ static $create__java_util_Set(/** Set<Throwable> */ causes) {
   AttachDetachException.$clinit();
   let $instance = new AttachDetachException();
   $instance.$ctor__org_gwtproject_user_client_ui_AttachDetachException__java_util_Set(causes);
   $instance.m_privateInitError__java_lang_Object_$pp_java_lang(new Error($instance));
   return $instance;
  }
- /**
-  * @param {Set<Throwable>} causes
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_AttachDetachException__java_util_Set(causes) {
+ 
+ $ctor__org_gwtproject_user_client_ui_AttachDetachException__java_util_Set(/** Set<Throwable> */ causes) {
   this.$ctor__org_gwtproject_event_shared_UmbrellaException__java_util_Set(causes);
  }
- /**
-  * @return {Command}
-  * @public
-  */
+ /** @return {Command} */
  static get f_attachCommand__org_gwtproject_user_client_ui_AttachDetachException() {
   return (AttachDetachException.$clinit(), AttachDetachException.$f_attachCommand__org_gwtproject_user_client_ui_AttachDetachException);
  }
- /**
-  * @return {Command}
-  * @public
-  */
+ /** @return {Command} */
  static get f_detachCommand__org_gwtproject_user_client_ui_AttachDetachException() {
   return (AttachDetachException.$clinit(), AttachDetachException.$f_detachCommand__org_gwtproject_user_client_ui_AttachDetachException);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AttachDetachException.$clinit = () =>{};
   AttachDetachException.$loadModules();
@@ -122,17 +97,11 @@ class AttachDetachException extends UmbrellaException {
   AttachDetachException.$f_attachCommand__org_gwtproject_user_client_ui_AttachDetachException = $1.$create__();
   AttachDetachException.$f_detachCommand__org_gwtproject_user_client_ui_AttachDetachException = $2.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AttachDetachException;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   HashSet = goog.module.get('java.util.HashSet$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -146,9 +115,9 @@ class AttachDetachException extends UmbrellaException {
 }
 $Util.$setClassMetadata(AttachDetachException, 'org.gwtproject.user.client.ui.AttachDetachException');
 
-/** @private {Command} */
+/**@private {Command}*/
 AttachDetachException.$f_attachCommand__org_gwtproject_user_client_ui_AttachDetachException;
-/** @private {Command} */
+/**@private {Command}*/
 AttachDetachException.$f_detachCommand__org_gwtproject_user_client_ui_AttachDetachException;
 
 exports = AttachDetachException; 

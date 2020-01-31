@@ -12,80 +12,51 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {TouchEvent<TouchMoveHandler>}
   */
 class TouchMoveEvent extends TouchEvent {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!TouchMoveEvent}
-  * @public
-  */
+ /** @return {!TouchMoveEvent} */
  static $create__() {
   TouchMoveEvent.$clinit();
   let $instance = new TouchMoveEvent();
   $instance.$ctor__org_gwtproject_event_dom_client_TouchMoveEvent__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_dom_client_TouchMoveEvent__() {
   this.$ctor__org_gwtproject_event_dom_client_TouchEvent__();
  }
- /**
-  * @return {Type<TouchMoveHandler>}
-  * @public
-  */
+ /** @return {Type<TouchMoveHandler>} */
  static m_getType__() {
   TouchMoveEvent.$clinit();
   return TouchMoveEvent.f_TYPE__org_gwtproject_event_dom_client_TouchMoveEvent_;
  }
- /**
-  * @override
-  * @return {Type<TouchMoveHandler>}
-  * @public
-  */
+ /** @override @return {Type<TouchMoveHandler>} */
  m_getAssociatedType__() {
   return TouchMoveEvent.f_TYPE__org_gwtproject_event_dom_client_TouchMoveEvent_;
  }
- /**
-  * @param {TouchMoveHandler} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_event_dom_client_TouchMoveHandler(handler) {
+ 
+ m_dispatch__org_gwtproject_event_dom_client_TouchMoveHandler(/** TouchMoveHandler */ handler) {
   handler.m_onTouchMove__org_gwtproject_event_dom_client_TouchMoveEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_event_dom_client_TouchMoveHandler(/**@type {TouchMoveHandler} */ ($Casts.$to(arg0, TouchMoveHandler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_event_dom_client_TouchMoveHandler(/**@type {TouchMoveHandler}*/ ($Casts.$to(arg0, TouchMoveHandler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TouchMoveEvent.$clinit = () =>{};
   TouchMoveEvent.$loadModules();
   TouchEvent.$clinit();
-  TouchMoveEvent.f_TYPE__org_gwtproject_event_dom_client_TouchMoveEvent_ = /**@type {!Type<TouchMoveHandler>} */ (Type.$create__java_lang_String__org_gwtproject_event_dom_client_DomEvent(BrowserEvents.f_TOUCHMOVE__org_gwtproject_dom_client_BrowserEvents, TouchMoveEvent.$create__()));
+  TouchMoveEvent.f_TYPE__org_gwtproject_event_dom_client_TouchMoveEvent_ = /**@type {!Type<TouchMoveHandler>}*/ (Type.$create__java_lang_String__org_gwtproject_event_dom_client_DomEvent(BrowserEvents.f_TOUCHMOVE__org_gwtproject_dom_client_BrowserEvents, TouchMoveEvent.$create__()));
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TouchMoveEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   BrowserEvents = goog.module.get('org.gwtproject.dom.client.BrowserEvents$impl');
   Type = goog.module.get('org.gwtproject.event.dom.client.DomEvent.Type$impl');
@@ -96,7 +67,7 @@ class TouchMoveEvent extends TouchEvent {
 }
 $Util.$setClassMetadata(TouchMoveEvent, 'org.gwtproject.event.dom.client.TouchMoveEvent');
 
-/** @public {Type<TouchMoveHandler>} */
+/**@type {Type<TouchMoveHandler>}*/
 TouchMoveEvent.f_TYPE__org_gwtproject_event_dom_client_TouchMoveEvent_;
 
 exports = TouchMoveEvent; 

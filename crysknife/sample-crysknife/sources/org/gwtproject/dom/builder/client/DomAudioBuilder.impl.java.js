@@ -12,49 +12,32 @@ let $Overlay = goog.forwardDeclare('org.gwtproject.dom.client.AudioElement.$Over
  * @implements {AudioBuilder}
   */
 class DomAudioBuilder extends DomMediaBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @return {!DomAudioBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ /** @return {!DomAudioBuilder} */
+ static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   DomAudioBuilder.$clinit();
   let $instance = new DomAudioBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_client_DomAudioBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_client_DomAudioBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_client_DomAudioBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_client_DomMediaBuilderBase__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomAudioBuilder.$clinit = () =>{};
   DomAudioBuilder.$loadModules();
   DomMediaBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomAudioBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

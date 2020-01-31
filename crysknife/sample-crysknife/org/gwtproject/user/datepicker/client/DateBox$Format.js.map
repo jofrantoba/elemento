@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DateBox$Format.impl.java.js",
-"lineCount":41,
-"mappings":"A;;;;;;;;;;MAiJmB,M;;;;;;;;CASR,uE,CAAeA,O,EAAcC,I;;;;;;;;;CAW/B,iF,CAAcD,O,EAAgBE,I,EAAcC,W;;;;;;;CAS5C,+D,CAAcH,O,EAAiBI,O;;;;QA7BrB,O;EAAAC,yB;EAAAA;",
+"lineCount":21,
+"mappings":"A;;;;;;;;;;MAiJmB,M;;CASR,uE,gBAAeA,O,cAAcC,I;;CAW/B,iF,gBAAcD,O,iBAAgBE,I,iBAAcC,W;;CAS5C,+D,gBAAcH,O,iBAAiBI,O;;QA7BrB,O;EAAAC,yB;EAAAA;",
 "sources":["DateBox.java"],
 "names":["dateBox","date","text","reportError","abandon","org.gwtproject.user.datepicker.client.DateBox$Format.<clinit>"]
 }

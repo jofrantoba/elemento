@@ -11,53 +11,35 @@ let SafeUri = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeUri$impl')
  * @implements {Template}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(SafeUri):SafeHtml} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(SafeUri):SafeHtml */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(SafeUri):SafeHtml} */
+  /**@type {?function(SafeUri):SafeHtml}*/
   this.f_$$fn__org_gwtproject_cell_client_SafeImageCell_Template_$LambdaAdaptor;
   this.$ctor__org_gwtproject_cell_client_SafeImageCell_Template_$LambdaAdaptor__org_gwtproject_cell_client_SafeImageCell_Template_$JsFunction(fn);
  }
- /**
-  * @param {?function(SafeUri):SafeHtml} fn
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_SafeImageCell_Template_$LambdaAdaptor__org_gwtproject_cell_client_SafeImageCell_Template_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_cell_client_SafeImageCell_Template_$LambdaAdaptor__org_gwtproject_cell_client_SafeImageCell_Template_$JsFunction(/** ?function(SafeUri):SafeHtml */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_cell_client_SafeImageCell_Template_$LambdaAdaptor = fn;
  }
- /**
-  * @param {SafeUri} arg0
-  * @return {SafeHtml}
-  * @public
-  */
- m_img__org_gwtproject_safehtml_shared_SafeUri(arg0) {
+ /** @return {SafeHtml} */
+ m_img__org_gwtproject_safehtml_shared_SafeUri(/** SafeUri */ arg0) {
   let /** ?function(SafeUri):SafeHtml */ $function;
   return ($function = this.f_$$fn__org_gwtproject_cell_client_SafeImageCell_Template_$LambdaAdaptor, $function(arg0));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

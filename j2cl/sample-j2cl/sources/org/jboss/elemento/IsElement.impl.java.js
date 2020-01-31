@@ -10,50 +10,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.jboss.elemento.IsElement.$LambdaAd
  * @template E
  */
 class IsElement {
- /**
-  * @abstract
-  * @return {E}
-  * @public
-  */
+ /** @abstract @return {E} */
  m_element__() {}
- /**
-  * @template E
-  * @param {?function():E} fn
-  * @return {IsElement<E>}
-  * @public
-  */
- static $adapt(fn) {
+ /** @template E @return {IsElement<E>} */
+ static $adapt(/** ?function():E */ fn) {
   IsElement.$clinit();
-  return /**@type {!$LambdaAdaptor<E>} */ (new $LambdaAdaptor(fn));
+  return /**@type {!$LambdaAdaptor<E>}*/ (new $LambdaAdaptor(fn));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   IsElement.$clinit = () =>{};
   IsElement.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_jboss_elemento_IsElement = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_jboss_elemento_IsElement = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_jboss_elemento_IsElement;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.jboss.elemento.IsElement.$LambdaAdaptor$impl');
  }

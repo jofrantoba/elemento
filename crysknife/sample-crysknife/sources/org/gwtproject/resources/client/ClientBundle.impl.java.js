@@ -6,34 +6,21 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @interface
  */
 class ClientBundle {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ClientBundle.$clinit = () =>{};
   ClientBundle.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_resources_client_ClientBundle = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_resources_client_ClientBundle = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_resources_client_ClientBundle;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

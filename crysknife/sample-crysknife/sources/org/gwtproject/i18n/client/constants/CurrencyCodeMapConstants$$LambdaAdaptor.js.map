@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CurrencyCodeMapConstants$$LambdaAdaptor.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;;;;MA0BiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;4F;EAAAA,wK;;;;;;CAAA,8J;EAAAC,iC;EAAAA,+F;;;;;;CAAA,e;EAAAC,uD;EAAAA,4H;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;;MA0BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;4F;EAAAA,wK;;;CAAA,8J;EAAAC,iC;EAAAA,+F;;;CAAA,e;EAAAC,uD;EAAAA,4H;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["CurrencyCodeMapConstants.java"],
 "names":["org.gwtproject.i18n.client.constants.CurrencyCodeMapConstants$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.i18n.client.constants.CurrencyCodeMapConstants$$LambdaAdaptor.<init>","org.gwtproject.i18n.client.constants.CurrencyCodeMapConstants$$LambdaAdaptor.currencyMap","org.gwtproject.i18n.client.constants.CurrencyCodeMapConstants$$LambdaAdaptor.<clinit>"]
 }

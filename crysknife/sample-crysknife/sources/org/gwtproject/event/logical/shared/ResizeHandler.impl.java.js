@@ -9,49 +9,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.event.logical.shared.Re
  * @interface
  */
 class ResizeHandler {
- /**
-  * @abstract
-  * @param {ResizeEvent} event
-  * @public
-  */
- m_onResize__org_gwtproject_event_logical_shared_ResizeEvent(event) {}
- /**
-  * @param {?function(ResizeEvent):void} fn
-  * @return {ResizeHandler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onResize__org_gwtproject_event_logical_shared_ResizeEvent(/** ResizeEvent */ event) {}
+ /** @return {ResizeHandler} */
+ static $adapt(/** ?function(ResizeEvent):void */ fn) {
   ResizeHandler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ResizeHandler.$clinit = () =>{};
   ResizeHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_logical_shared_ResizeHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_event_logical_shared_ResizeHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_logical_shared_ResizeHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.event.logical.shared.ResizeHandler.$LambdaAdaptor$impl');
  }

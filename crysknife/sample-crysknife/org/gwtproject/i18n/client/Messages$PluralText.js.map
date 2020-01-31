@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Messages$PluralText.impl.java.js",
-"lineCount":23,
-"mappings":"A;;;;;;;;;;MAiYoB,U;;;;;;CAEhB,S;;;;QAFgB,O;EAAAA,6B;EAAAA;",
+"lineCount":17,
+"mappings":"A;;;;;;;;;;MAiYoB,U;;CAEhB,S;;QAFgB,O;EAAAA,6B;EAAAA;",
 "sources":["Messages.java"],
 "names":["org.gwtproject.i18n.client.Messages$PluralText.<clinit>"]
 }

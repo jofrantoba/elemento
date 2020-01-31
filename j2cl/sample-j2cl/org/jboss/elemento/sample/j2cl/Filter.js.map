@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Filter.impl.java.js",
-"lineCount":183,
-"mappings":"A;;;;;;;;;;;;;;;MAiBY,M;;;;CAAA,W;EAAAA,Q;EAAAA;OAGa,kDAHbA,C;;;;;;;;;QAKR,gD,kBAAcC,Q;EAAdC,6B;EAAAA,2H;EAAAA,iB;;;;;;;;CAAA,qF,kBAAcD,Q;EAAdE,qC;EAAAA,2C;EAAAA,mE;EACIA,mE;;;;;;CAGU,Y;EACVC,+D;;;;;;CAGU,U;EACVC,+D;;;;;;;QAIiB,8B,CAAkBC,K;EAAlBC,iB;EACjBA;GACIA,4DADJA;;GAGIA;;KAEQA,+DAFRA;;KAIQA,kEAJRA;;;KAOQA,4DAPRA;IAHJA;G;;;;;;;QAnBI,2B;EAAAC,iB;EAAAA;GAAAA,oHAAAA;G;EAAAA,8G;;;;;;QAAA,U;EAAAC,iB;EAAAA,yO;;;;;;;;;CAAA,6B;EAAAC,wE;;;;;;QACR,gD;EAAAC,gF;;;;;;QAAW,mD;EAAAA,mF;;;;;;QAAoB,sD;EAAAA,sF;;;;;QADvB,O;EAAAC,yB;EAAAA,sB;EAAAA,e;EACRA,+M;EAAWA,8N;EAAoBA,0O;EADvBA,yE;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;qD;AAAA;wD;AAAA;2D;AAAA;kE;AACR;iE;AAAW;oE;AAAoB;;",
+"lineCount":131,
+"mappings":"A;;;;;;;;;;;;;;;MAiBY,M;;CAAA,W;EAAAA,Q;EAAAA;OAGa,kDAHbA,C;;;QAKR,gD,8DAAcC,Q;EAAdC,6B;EAAAA,2H;EAAAA,iB;;;CAAA,qF,8DAAcD,Q;EAAdE,qC;EAAAA,2C;EAAAA,mE;EACIA,mE;;;CAGU,Y;EACVC,+D;;;CAGU,U;EACVC,+D;;;QAIiB,8B,gBAAkBC,K;EAAlBC,iB;EACjBA;GACIA,4DADJA;;GAGIA;;KAEQA,+DAFRA;;KAIQA,kEAJRA;;;KAOQA,4DAPRA;IAHJA;G;;;QAnBI,2B;EAAAC,iB;EAAAA;GAAAA,oHAAAA;G;EAAAA,8G;;;QAAA,U;EAAAC,iB;EAAAA,wO;;;;CAAA,6B;EAAAC,uE;;;QACR,gD;EAAAC,gF;;;QAAW,mD;EAAAA,mF;;;QAAoB,sD;EAAAA,sF;;;QADvB,O;EAAAC,yB;EAAAA,sB;EAAAA,e;EACRA,+M;EAAWA,8N;EAAoBA,0O;EADvBA,yE;;;;;;;;;;;;;;;;;;;AAAA;qD;AAAA;wD;AAAA;2D;AAAA;kE;AACR;iE;AAAW;oE;AAAoB;;",
 "sources":["Filter.java"],
 "names":["org.jboss.elemento.sample.j2cl.Filter.<synthetic: ctor_js>","fragment","org.jboss.elemento.sample.j2cl.Filter.<synthetic: ctor_create>","org.jboss.elemento.sample.j2cl.Filter.<init>","org.jboss.elemento.sample.j2cl.Filter.fragment","org.jboss.elemento.sample.j2cl.Filter.filter","token","org.jboss.elemento.sample.j2cl.Filter.parseToken","org.jboss.elemento.sample.j2cl.Filter.valueOf","org.jboss.elemento.sample.j2cl.Filter.values","org.jboss.elemento.sample.j2cl.Filter.compareTo","org.jboss.elemento.sample.j2cl.Filter.<synthetic: getter>","org.jboss.elemento.sample.j2cl.Filter.<clinit>"]
 }

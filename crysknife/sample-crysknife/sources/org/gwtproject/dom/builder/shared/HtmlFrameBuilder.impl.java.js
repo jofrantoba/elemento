@@ -13,138 +13,72 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {FrameBuilder}
   */
 class HtmlFrameBuilder extends HtmlElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @return {!HtmlFrameBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ /** @return {!HtmlFrameBuilder} */
+ static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   HtmlFrameBuilder.$clinit();
   let $instance = new HtmlFrameBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_shared_HtmlFrameBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_shared_HtmlFrameBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_shared_HtmlFrameBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_shared_HtmlElementBuilderBase__org_gwtproject_dom_builder_shared_HtmlBuilderImpl__boolean(delegate, true);
  }
- /**
-  * @override
-  * @param {number} frameBorder
-  * @return {FrameBuilder}
-  * @public
-  */
- m_frameBorder__int(frameBorder) {
-  return /**@type {FrameBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__int_$pp_org_gwtproject_dom_builder_shared("frameBorder", frameBorder), FrameBuilder));
+ /** @override @return {FrameBuilder} */
+ m_frameBorder__int(/** number */ frameBorder) {
+  return /**@type {FrameBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__int_$pp_org_gwtproject_dom_builder_shared("frameBorder", frameBorder), FrameBuilder));
  }
- /**
-  * @override
-  * @param {SafeUri} longDesc
-  * @return {FrameBuilder}
-  * @public
-  */
- m_longDesc__org_gwtproject_safehtml_shared_SafeUri(longDesc) {
+ /** @override @return {FrameBuilder} */
+ m_longDesc__org_gwtproject_safehtml_shared_SafeUri(/** SafeUri */ longDesc) {
   return this.m_longDesc__java_lang_String(longDesc.m_asString__());
  }
- /**
-  * @override
-  * @param {?string} longDesc
-  * @return {FrameBuilder}
-  * @public
-  */
- m_longDesc__java_lang_String(longDesc) {
-  return /**@type {FrameBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("longDesc", longDesc), FrameBuilder));
+ /** @override @return {FrameBuilder} */
+ m_longDesc__java_lang_String(/** ?string */ longDesc) {
+  return /**@type {FrameBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("longDesc", longDesc), FrameBuilder));
  }
- /**
-  * @override
-  * @param {number} marginHeight
-  * @return {FrameBuilder}
-  * @public
-  */
- m_marginHeight__int(marginHeight) {
-  return /**@type {FrameBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__int_$pp_org_gwtproject_dom_builder_shared("marginHeight", marginHeight), FrameBuilder));
+ /** @override @return {FrameBuilder} */
+ m_marginHeight__int(/** number */ marginHeight) {
+  return /**@type {FrameBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__int_$pp_org_gwtproject_dom_builder_shared("marginHeight", marginHeight), FrameBuilder));
  }
- /**
-  * @override
-  * @param {number} marginWidth
-  * @return {FrameBuilder}
-  * @public
-  */
- m_marginWidth__int(marginWidth) {
-  return /**@type {FrameBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__int_$pp_org_gwtproject_dom_builder_shared("marginWidth", marginWidth), FrameBuilder));
+ /** @override @return {FrameBuilder} */
+ m_marginWidth__int(/** number */ marginWidth) {
+  return /**@type {FrameBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__int_$pp_org_gwtproject_dom_builder_shared("marginWidth", marginWidth), FrameBuilder));
  }
- /**
-  * @override
-  * @param {?string} name
-  * @return {FrameBuilder}
-  * @public
-  */
- m_name__java_lang_String(name) {
-  return /**@type {FrameBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("name", name), FrameBuilder));
+ /** @override @return {FrameBuilder} */
+ m_name__java_lang_String(/** ?string */ name) {
+  return /**@type {FrameBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("name", name), FrameBuilder));
  }
- /**
-  * @override
-  * @return {FrameBuilder}
-  * @public
-  */
+ /** @override @return {FrameBuilder} */
  m_noResize__() {
-  return /**@type {FrameBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("noresize", "noresize"), FrameBuilder));
+  return /**@type {FrameBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("noresize", "noresize"), FrameBuilder));
  }
- /**
-  * @override
-  * @param {?string} scrolling
-  * @return {FrameBuilder}
-  * @public
-  */
- m_scrolling__java_lang_String(scrolling) {
-  return /**@type {FrameBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("scrolling", scrolling), FrameBuilder));
+ /** @override @return {FrameBuilder} */
+ m_scrolling__java_lang_String(/** ?string */ scrolling) {
+  return /**@type {FrameBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("scrolling", scrolling), FrameBuilder));
  }
- /**
-  * @override
-  * @param {SafeUri} src
-  * @return {FrameBuilder}
-  * @public
-  */
- m_src__org_gwtproject_safehtml_shared_SafeUri(src) {
+ /** @override @return {FrameBuilder} */
+ m_src__org_gwtproject_safehtml_shared_SafeUri(/** SafeUri */ src) {
   return this.m_src__java_lang_String(src.m_asString__());
  }
- /**
-  * @override
-  * @param {?string} src
-  * @return {FrameBuilder}
-  * @public
-  */
- m_src__java_lang_String(src) {
-  return /**@type {FrameBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("src", src), FrameBuilder));
+ /** @override @return {FrameBuilder} */
+ m_src__java_lang_String(/** ?string */ src) {
+  return /**@type {FrameBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("src", src), FrameBuilder));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HtmlFrameBuilder.$clinit = () =>{};
   HtmlFrameBuilder.$loadModules();
   HtmlElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HtmlFrameBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

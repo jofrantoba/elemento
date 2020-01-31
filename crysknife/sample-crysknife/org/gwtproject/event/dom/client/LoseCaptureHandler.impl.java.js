@@ -11,50 +11,29 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.event.dom.client.LoseCa
  * @extends {EventHandler}
  */
 class LoseCaptureHandler {
- /**
-  * @abstract
-  * @param {LoseCaptureEvent} event
-  * @public
-  */
- m_onLoseCapture__org_gwtproject_event_dom_client_LoseCaptureEvent(event) {}
- /**
-  * @param {?function(LoseCaptureEvent):void} fn
-  * @return {LoseCaptureHandler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onLoseCapture__org_gwtproject_event_dom_client_LoseCaptureEvent(/** LoseCaptureEvent */ event) {}
+ /** @return {LoseCaptureHandler} */
+ static $adapt(/** ?function(LoseCaptureEvent):void */ fn) {
   LoseCaptureHandler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   LoseCaptureHandler.$clinit = () =>{};
   LoseCaptureHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  EventHandler.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_LoseCaptureHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  EventHandler.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_LoseCaptureHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_LoseCaptureHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.event.dom.client.LoseCaptureHandler.$LambdaAdaptor$impl');
  }

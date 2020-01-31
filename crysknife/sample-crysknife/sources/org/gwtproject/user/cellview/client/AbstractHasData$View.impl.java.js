@@ -25,55 +25,32 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {View<T>}
   */
 class AbstractHasData_View extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {AbstractHasData<T>} */
+  /**@type {AbstractHasData<T>}*/
   this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_wasFocused__org_gwtproject_user_cellview_client_AbstractHasData_View_ = false;
  }
- /**
-  * @template T
-  * @param {AbstractHasData<T>} hasData
-  * @return {!AbstractHasData_View<T>}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_AbstractHasData(hasData) {
+ /** @template T @return {!AbstractHasData_View<T>} */
+ static $create__org_gwtproject_user_cellview_client_AbstractHasData(/** AbstractHasData<T> */ hasData) {
   AbstractHasData_View.$clinit();
   let $instance = new AbstractHasData_View();
   $instance.$ctor__org_gwtproject_user_cellview_client_AbstractHasData_View__org_gwtproject_user_cellview_client_AbstractHasData(hasData);
   return $instance;
  }
- /**
-  * @param {AbstractHasData<T>} hasData
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_AbstractHasData_View__org_gwtproject_user_cellview_client_AbstractHasData(hasData) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_AbstractHasData_View__org_gwtproject_user_cellview_client_AbstractHasData(/** AbstractHasData<T> */ hasData) {
   this.$ctor__java_lang_Object__();
   this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_ = hasData;
  }
- /**
-  * @override
-  * @template H
-  * @param {H} handler
-  * @param {Type<H>} type
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, type) {
+ /** @override @template H @return {HandlerRegistration} */
+ m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(/** H */ handler, /** Type<H> */ type) {
   return this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, type);
  }
- /**
-  * @override
-  * @param {List<T>} values
-  * @param {SelectionModel<?>} selectionModel
-  * @param {boolean} stealFocus
-  * @public
-  */
- m_replaceAllChildren__java_util_List__org_gwtproject_view_client_SelectionModel__boolean(values, selectionModel, stealFocus) {
+ /** @override */
+ m_replaceAllChildren__java_util_List__org_gwtproject_view_client_SelectionModel__boolean(/** List<T> */ values, /** SelectionModel<?> */ selectionModel, /** boolean */ stealFocus) {
   let html = this.m_renderRowValues__java_util_List__int__org_gwtproject_view_client_SelectionModel_$p_org_gwtproject_user_cellview_client_AbstractHasData_View(values, this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.m_getPageStart__(), selectionModel);
   this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.f_isFocused__org_gwtproject_user_cellview_client_AbstractHasData = this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.f_isFocused__org_gwtproject_user_cellview_client_AbstractHasData || stealFocus;
   this.f_wasFocused__org_gwtproject_user_cellview_client_AbstractHasData_View_ = this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.f_isFocused__org_gwtproject_user_cellview_client_AbstractHasData;
@@ -90,15 +67,8 @@ class AbstractHasData_View extends j_l_Object {
   this.m_fireValueChangeEvent___$p_org_gwtproject_user_cellview_client_AbstractHasData_View();
   this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.m_fireEvent__org_gwtproject_event_shared_Event(RedrawEvent.$create__());
  }
- /**
-  * @override
-  * @param {List<T>} values
-  * @param {number} start
-  * @param {SelectionModel<?>} selectionModel
-  * @param {boolean} stealFocus
-  * @public
-  */
- m_replaceChildren__java_util_List__int__org_gwtproject_view_client_SelectionModel__boolean(values, start, selectionModel, stealFocus) {
+ /** @override */
+ m_replaceChildren__java_util_List__int__org_gwtproject_view_client_SelectionModel__boolean(/** List<T> */ values, /** number */ start, /** SelectionModel<?> */ selectionModel, /** boolean */ stealFocus) {
   let html = this.m_renderRowValues__java_util_List__int__org_gwtproject_view_client_SelectionModel_$p_org_gwtproject_user_cellview_client_AbstractHasData_View(values, this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.m_getPageStart__() + start, selectionModel);
   this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.f_isFocused__org_gwtproject_user_cellview_client_AbstractHasData = this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.f_isFocused__org_gwtproject_user_cellview_client_AbstractHasData || stealFocus;
   this.f_wasFocused__org_gwtproject_user_cellview_client_AbstractHasData_View_ = this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.f_isFocused__org_gwtproject_user_cellview_client_AbstractHasData;
@@ -115,50 +85,29 @@ class AbstractHasData_View extends j_l_Object {
   this.m_fireValueChangeEvent___$p_org_gwtproject_user_cellview_client_AbstractHasData_View();
   this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.m_fireEvent__org_gwtproject_event_shared_Event(RedrawEvent.$create__());
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_resetFocus__() {
   if (this.f_wasFocused__org_gwtproject_user_cellview_client_AbstractHasData_View_) {
-   CellBasedWidgetImpl.m_get__().m_resetFocus__org_gwtproject_core_client_Scheduler_ScheduledCommand(/**@type {!$1<T>} */ ($1.$create__org_gwtproject_user_cellview_client_AbstractHasData_View(this)));
+   CellBasedWidgetImpl.m_get__().m_resetFocus__org_gwtproject_core_client_Scheduler_ScheduledCommand(/**@type {!$1<T>}*/ ($1.$create__org_gwtproject_user_cellview_client_AbstractHasData_View(this)));
   }
  }
- /**
-  * @override
-  * @param {number} index
-  * @param {boolean} seleted
-  * @param {boolean} stealFocus
-  * @public
-  */
- m_setKeyboardSelected__int__boolean__boolean(index, seleted, stealFocus) {
+ /** @override */
+ m_setKeyboardSelected__int__boolean__boolean(/** number */ index, /** boolean */ seleted, /** boolean */ stealFocus) {
   this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.f_isFocused__org_gwtproject_user_cellview_client_AbstractHasData = this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.f_isFocused__org_gwtproject_user_cellview_client_AbstractHasData || stealFocus;
   this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.m_setKeyboardSelected__int__boolean__boolean(index, seleted, stealFocus);
  }
- /**
-  * @override
-  * @param {LoadingState} state
-  * @public
-  */
- m_setLoadingState__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_LoadingState(state) {
+ /** @override */
+ m_setLoadingState__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_LoadingState(/** LoadingState */ state) {
   this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.f_isRefreshing__org_gwtproject_user_cellview_client_AbstractHasData_ = true;
   this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.m_onLoadingStateChanged__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_LoadingState(state);
   this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.f_isRefreshing__org_gwtproject_user_cellview_client_AbstractHasData_ = false;
  }
- /**
-  * @public
-  */
+ 
  m_fireValueChangeEvent___$p_org_gwtproject_user_cellview_client_AbstractHasData_View() {
-  this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.m_fireEvent__org_gwtproject_event_shared_Event(/**@type {!$2<T>} */ ($2.$create__org_gwtproject_user_cellview_client_AbstractHasData_View__java_util_List(this, this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.m_getVisibleItems__())));
+  this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.m_fireEvent__org_gwtproject_event_shared_Event(/**@type {!$2<T>}*/ ($2.$create__org_gwtproject_user_cellview_client_AbstractHasData_View__java_util_List(this, this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.m_getVisibleItems__())));
  }
- /**
-  * @param {List<T>} values
-  * @param {number} start
-  * @param {SelectionModel<?>} selectionModel
-  * @return {SafeHtml}
-  * @public
-  */
- m_renderRowValues__java_util_List__int__org_gwtproject_view_client_SelectionModel_$p_org_gwtproject_user_cellview_client_AbstractHasData_View(values, start, selectionModel) {
+ /** @return {SafeHtml} */
+ m_renderRowValues__java_util_List__int__org_gwtproject_view_client_SelectionModel_$p_org_gwtproject_user_cellview_client_AbstractHasData_View(/** List<T> */ values, /** number */ start, /** SelectionModel<?> */ selectionModel) {
   try {
    let sb = SafeHtmlBuilder.$create__();
    this.f_hasData__org_gwtproject_user_cellview_client_AbstractHasData_View_.m_renderRowValues__org_gwtproject_safehtml_shared_SafeHtmlBuilder__java_util_List__int__org_gwtproject_view_client_SelectionModel(sb, values, start, selectionModel);
@@ -166,32 +115,24 @@ class AbstractHasData_View extends j_l_Object {
   } catch (__$exc) {
    __$exc = $Exceptions.toJava(__$exc);
    if (UnsupportedOperationException.$isInstance(__$exc)) {
-    let e = /**@type {UnsupportedOperationException} */ (__$exc);
+    let e = /**@type {UnsupportedOperationException}*/ (__$exc);
     return null;
    } else {
     throw $Exceptions.toJs(__$exc);
    }
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AbstractHasData_View.$clinit = () =>{};
   AbstractHasData_View.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AbstractHasData_View;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   UnsupportedOperationException = goog.module.get('java.lang.UnsupportedOperationException$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

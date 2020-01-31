@@ -11,29 +11,19 @@ let Set = goog.forwardDeclare('java.util.Set$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class UmbrellaException extends RuntimeException {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Set<Throwable>} */
+  /**@type {Set<Throwable>}*/
   this.f_causes__org_gwtproject_event_shared_UmbrellaException_;
  }
- /**
-  * @param {Set<Throwable>} causes
-  * @return {Throwable}
-  * @public
-  */
- static m_makeCause__java_util_Set(causes) {
+ /** @return {Throwable} */
+ static m_makeCause__java_util_Set(/** Set<Throwable> */ causes) {
   UmbrellaException.$clinit();
-  return causes.isEmpty() ? null : /**@type {Throwable} */ ($Casts.$to(causes.m_iterator__().m_next__(), Throwable));
+  return causes.isEmpty() ? null : /**@type {Throwable}*/ ($Casts.$to(causes.m_iterator__().m_next__(), Throwable));
  }
- /**
-  * @param {Set<Throwable>} causes
-  * @return {?string}
-  * @public
-  */
- static m_makeMessage__java_util_Set(causes) {
+ /** @return {?string} */
+ static m_makeMessage__java_util_Set(/** Set<Throwable> */ causes) {
   UmbrellaException.$clinit();
   let count = causes.size();
   if (count == 0) {
@@ -42,7 +32,7 @@ class UmbrellaException extends RuntimeException {
   let b = StringBuilder.$create__java_lang_String(count == 1 ? UmbrellaException.f_ONE__org_gwtproject_event_shared_UmbrellaException : count + j_l_String.m_valueOf__java_lang_Object(UmbrellaException.f_MULTIPLE__org_gwtproject_event_shared_UmbrellaException));
   let first = true;
   for (let $iterator = causes.m_iterator__(); $iterator.m_hasNext__(); ) {
-   let t = /**@type {Throwable} */ ($Casts.$to($iterator.m_next__(), Throwable));
+   let t = /**@type {Throwable}*/ ($Casts.$to($iterator.m_next__(), Throwable));
    if (first) {
     first = false;
    } else {
@@ -52,41 +42,31 @@ class UmbrellaException extends RuntimeException {
   }
   return b.toString();
  }
- /**
-  * Factory method corresponding to constructor 'UmbrellaException(Set)'.
-  * @param {Set<Throwable>} causes
-  * @return {!UmbrellaException}
-  * @public
-  */
- static $create__java_util_Set(causes) {
+ //Factory method corresponding to constructor 'UmbrellaException(Set)'.
+ /** @return {!UmbrellaException} */
+ static $create__java_util_Set(/** Set<Throwable> */ causes) {
   UmbrellaException.$clinit();
   let $instance = new UmbrellaException();
   $instance.$ctor__org_gwtproject_event_shared_UmbrellaException__java_util_Set(causes);
   $instance.m_privateInitError__java_lang_Object_$pp_java_lang(new Error($instance));
   return $instance;
  }
- /**
-  * Initialization from constructor 'UmbrellaException(Set)'.
-  * @param {Set<Throwable>} causes
-  * @public
-  */
- $ctor__org_gwtproject_event_shared_UmbrellaException__java_util_Set(causes) {
+ //Initialization from constructor 'UmbrellaException(Set)'.
+ 
+ $ctor__org_gwtproject_event_shared_UmbrellaException__java_util_Set(/** Set<Throwable> */ causes) {
   this.$ctor__java_lang_RuntimeException__java_lang_String__java_lang_Throwable(UmbrellaException.m_makeMessage__java_util_Set(causes), UmbrellaException.m_makeCause__java_util_Set(causes));
   this.f_causes__org_gwtproject_event_shared_UmbrellaException_ = causes;
   let i = 0;
   for (let $iterator = causes.m_iterator__(); $iterator.m_hasNext__(); ) {
-   let cause = /**@type {Throwable} */ ($Casts.$to($iterator.m_next__(), Throwable));
+   let cause = /**@type {Throwable}*/ ($Casts.$to($iterator.m_next__(), Throwable));
    if (i++ == 0) {
     continue;
    }
    this.m_addSuppressed__java_lang_Throwable(cause);
   }
  }
- /**
-  * Factory method corresponding to constructor 'UmbrellaException()'.
-  * @return {!UmbrellaException}
-  * @public
-  */
+ //Factory method corresponding to constructor 'UmbrellaException()'.
+ /** @return {!UmbrellaException} */
  static $create__() {
   UmbrellaException.$clinit();
   let $instance = new UmbrellaException();
@@ -94,40 +74,27 @@ class UmbrellaException extends RuntimeException {
   $instance.m_privateInitError__java_lang_Object_$pp_java_lang(new Error($instance));
   return $instance;
  }
- /**
-  * Initialization from constructor 'UmbrellaException()'.
-  * @public
-  */
+ //Initialization from constructor 'UmbrellaException()'.
+ 
  $ctor__org_gwtproject_event_shared_UmbrellaException__() {
   this.$ctor__java_lang_RuntimeException__java_lang_String(UmbrellaException.f_MULTIPLE__org_gwtproject_event_shared_UmbrellaException);
-  this.f_causes__org_gwtproject_event_shared_UmbrellaException_ = /**@type {Set<Throwable>} */ (Collections.m_emptySet__());
+  this.f_causes__org_gwtproject_event_shared_UmbrellaException_ = /**@type {Set<Throwable>}*/ (Collections.m_emptySet__());
  }
- /**
-  * @return {Set<Throwable>}
-  * @public
-  */
+ /** @return {Set<Throwable>} */
  m_getCauses__() {
   return this.f_causes__org_gwtproject_event_shared_UmbrellaException_;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   UmbrellaException.$clinit = () =>{};
   UmbrellaException.$loadModules();
   RuntimeException.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof UmbrellaException;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   StringBuilder = goog.module.get('java.lang.StringBuilder$impl');
@@ -139,9 +106,9 @@ class UmbrellaException extends RuntimeException {
 }
 $Util.$setClassMetadata(UmbrellaException, 'org.gwtproject.event.shared.UmbrellaException');
 
-/** @public {?string} @const */
+/**@const {?string}*/
 UmbrellaException.f_MULTIPLE__org_gwtproject_event_shared_UmbrellaException = " exceptions caught: ";
-/** @public {?string} @const */
+/**@const {?string}*/
 UmbrellaException.f_ONE__org_gwtproject_event_shared_UmbrellaException = "Exception caught: ";
 
 exports = UmbrellaException; 

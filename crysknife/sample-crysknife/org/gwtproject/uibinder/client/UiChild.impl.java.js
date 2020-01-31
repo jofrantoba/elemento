@@ -8,47 +8,26 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @extends {Annotation}
  */
 class UiChild {
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {number} */
  m_limit__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_tagname__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   UiChild.$clinit = () =>{};
   UiChild.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_uibinder_client_UiChild = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_uibinder_client_UiChild = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_uibinder_client_UiChild;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

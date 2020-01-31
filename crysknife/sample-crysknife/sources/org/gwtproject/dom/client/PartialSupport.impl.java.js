@@ -11,44 +11,27 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.dom.client.PartialSuppo
  * @extends {Annotation}
  */
 class PartialSupport {
- /**
-  * @param {?function():Class<?>} fn
-  * @return {PartialSupport}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {PartialSupport} */
+ static $adapt(/** ?function():Class<?> */ fn) {
   PartialSupport.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   PartialSupport.$clinit = () =>{};
   PartialSupport.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_dom_client_PartialSupport = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_dom_client_PartialSupport = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_dom_client_PartialSupport;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.dom.client.PartialSupport.$LambdaAdaptor$impl');
  }

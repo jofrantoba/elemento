@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CurrencyList_.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;;;MAMa,c;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,yB;EAAAA,qC;EAAAA,8D;EAAAA,iB;;;;;CAAA,iD;EAAAC,wD;;;;;;;CAGY,oB;EACrBC,IAASC,GAATD,8F;EACAA,IAAgBE,MAAhBF,e;EACAA,qH;;;;;;;CAIyB,yB;EACzBG,wP;;;;;;CAGuB,gF;EACvBC,oH;;;;;;;;CAfS,sC;EAAAC,0F;;;;;;;;CAAA,e;EAAAC,4G;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":61,
+"mappings":"A;;;;;;;;;;;;;;;;MAMa,c;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,yB;EAAAA,qC;EAAAA,8D;EAAAA,iB;;;CAAA,iD;EAAAC,wD;;;CAGY,oB;EACrBC,IAASC,GAATD,6F;EACAA,IAAgBE,MAAhBF,e;EACAA,oH;;;CAIyB,yB;EACzBG,wP;;;CAGuB,gF;EACvBC,oH;;;;CAfS,sC;EAAAC,0F;;;;CAAA,e;EAAAC,2G;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["CurrencyList_.java"],
 "names":["org.gwtproject.i18n.client.CurrencyList_.<synthetic: ctor_js>","org.gwtproject.i18n.client.CurrencyList_.<synthetic: ctor_create>","org.gwtproject.i18n.client.CurrencyList_.<init>","org.gwtproject.i18n.client.CurrencyList_.getDefaultNative","arr","result","org.gwtproject.i18n.client.CurrencyList_.loadCurrencyMapNative","org.gwtproject.i18n.client.CurrencyList_.loadMyCurrencyMapOverridesNative","org.gwtproject.i18n.client.CurrencyList_.forEach","org.gwtproject.i18n.client.CurrencyList_.spliterator","org.gwtproject.i18n.client.CurrencyList_.<clinit>"]
 }

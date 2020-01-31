@@ -8,72 +8,44 @@ let RegExp = goog.forwardDeclare('org.gwtproject.regexp.shared.RegExp$impl');
 let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 
 class RegExpFactory extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!RegExpFactory}
-  * @public
-  */
+ /** @return {!RegExpFactory} */
  static $create__() {
   RegExpFactory.$clinit();
   let $instance = new RegExpFactory();
   $instance.$ctor__org_gwtproject_regexp_shared_RegExpFactory__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_regexp_shared_RegExpFactory__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {?string} pattern
-  * @return {RegExp}
-  * @public
-  */
- m_compile__java_lang_String_$pp_org_gwtproject_regexp_shared(pattern) {
+ /** @return {RegExp} */
+ m_compile__java_lang_String_$pp_org_gwtproject_regexp_shared(/** ?string */ pattern) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__());
  }
- /**
-  * @param {?string} pattern
-  * @param {?string} flags
-  * @return {RegExp}
-  * @public
-  */
- m_compile__java_lang_String__java_lang_String_$pp_org_gwtproject_regexp_shared(pattern, flags) {
+ /** @return {RegExp} */
+ m_compile__java_lang_String__java_lang_String_$pp_org_gwtproject_regexp_shared(/** ?string */ pattern, /** ?string */ flags) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__());
  }
- /**
-  * @param {?string} input
-  * @return {?string}
-  * @public
-  */
- m_quote__java_lang_String_$pp_org_gwtproject_regexp_shared(input) {
+ /** @return {?string} */
+ m_quote__java_lang_String_$pp_org_gwtproject_regexp_shared(/** ?string */ input) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RegExpFactory.$clinit = () =>{};
   RegExpFactory.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof RegExpFactory;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   UnsupportedOperationException = goog.module.get('java.lang.UnsupportedOperationException$impl');
   $Exceptions = goog.module.get('vmbootstrap.Exceptions$impl');

@@ -15,161 +15,81 @@ let Promise_$Overlay = goog.forwardDeclare('elemental2.promise.Promise.$Overlay$
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class RTCPeerConnection_$Overlay {
- /**
-  * @param {*} keygenAlgorithm
-  * @return {Promise<RTCCertificate>}
-  * @public
-  */
- static m_generateCertificate__java_lang_Object(keygenAlgorithm) {
+ /** @return {Promise<RTCCertificate>} */
+ static m_generateCertificate__java_lang_Object(/** * */ keygenAlgorithm) {
   RTCPeerConnection_$Overlay.$clinit();
-  return RTCPeerConnection.generateCertificate(/**@type {Object} */ (Js.m_uncheckedCast__java_lang_Object(keygenAlgorithm)));
+  return RTCPeerConnection.generateCertificate(/**@type {Object}*/ (Js.m_uncheckedCast__java_lang_Object(keygenAlgorithm)));
  }
- /**
-  * @param {!RTCPeerConnection} $thisArg
-  * @param {MediaStream} stream
-  * @param {*} constraints
-  * @public
-  */
- static m_addStream__$devirt__elemental2_dom_RTCPeerConnection__elemental2_dom_MediaStream__java_lang_Object($thisArg, stream, constraints) {
+ 
+ static m_addStream__$devirt__elemental2_dom_RTCPeerConnection__elemental2_dom_MediaStream__java_lang_Object(/** !RTCPeerConnection */ $thisArg, /** MediaStream */ stream, /** * */ constraints) {
   RTCPeerConnection_$Overlay.$clinit();
-  $thisArg.addStream(stream, /**@type {Object} */ (Js.m_uncheckedCast__java_lang_Object(constraints)));
+  $thisArg.addStream(stream, /**@type {Object}*/ (Js.m_uncheckedCast__java_lang_Object(constraints)));
  }
- /**
-  * @param {!RTCPeerConnection} $thisArg
-  * @param {MediaStreamTrack} trackOrKind
-  * @param {RTCRtpTransceiverInit} init
-  * @return {RTCRtpTransceiver}
-  * @public
-  */
- static m_addTransceiver__$devirt__elemental2_dom_RTCPeerConnection__elemental2_dom_MediaStreamTrack__elemental2_dom_RTCRtpTransceiverInit($thisArg, trackOrKind, init) {
+ /** @return {RTCRtpTransceiver} */
+ static m_addTransceiver__$devirt__elemental2_dom_RTCPeerConnection__elemental2_dom_MediaStreamTrack__elemental2_dom_RTCRtpTransceiverInit(/** !RTCPeerConnection */ $thisArg, /** MediaStreamTrack */ trackOrKind, /** RTCRtpTransceiverInit */ init) {
   RTCPeerConnection_$Overlay.$clinit();
-  return $thisArg.addTransceiver(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(trackOrKind)), init);
+  return $thisArg.addTransceiver(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(trackOrKind)), init);
  }
- /**
-  * @param {!RTCPeerConnection} $thisArg
-  * @param {MediaStreamTrack} trackOrKind
-  * @return {RTCRtpTransceiver}
-  * @public
-  */
- static m_addTransceiver__$devirt__elemental2_dom_RTCPeerConnection__elemental2_dom_MediaStreamTrack($thisArg, trackOrKind) {
+ /** @return {RTCRtpTransceiver} */
+ static m_addTransceiver__$devirt__elemental2_dom_RTCPeerConnection__elemental2_dom_MediaStreamTrack(/** !RTCPeerConnection */ $thisArg, /** MediaStreamTrack */ trackOrKind) {
   RTCPeerConnection_$Overlay.$clinit();
-  return $thisArg.addTransceiver(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(trackOrKind)));
+  return $thisArg.addTransceiver(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(trackOrKind)));
  }
- /**
-  * @param {!RTCPeerConnection} $thisArg
-  * @param {?string} trackOrKind
-  * @param {RTCRtpTransceiverInit} init
-  * @return {RTCRtpTransceiver}
-  * @public
-  */
- static m_addTransceiver__$devirt__elemental2_dom_RTCPeerConnection__java_lang_String__elemental2_dom_RTCRtpTransceiverInit($thisArg, trackOrKind, init) {
+ /** @return {RTCRtpTransceiver} */
+ static m_addTransceiver__$devirt__elemental2_dom_RTCPeerConnection__java_lang_String__elemental2_dom_RTCRtpTransceiverInit(/** !RTCPeerConnection */ $thisArg, /** ?string */ trackOrKind, /** RTCRtpTransceiverInit */ init) {
   RTCPeerConnection_$Overlay.$clinit();
-  return $thisArg.addTransceiver(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(trackOrKind)), init);
+  return $thisArg.addTransceiver(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(trackOrKind)), init);
  }
- /**
-  * @param {!RTCPeerConnection} $thisArg
-  * @param {?string} trackOrKind
-  * @return {RTCRtpTransceiver}
-  * @public
-  */
- static m_addTransceiver__$devirt__elemental2_dom_RTCPeerConnection__java_lang_String($thisArg, trackOrKind) {
+ /** @return {RTCRtpTransceiver} */
+ static m_addTransceiver__$devirt__elemental2_dom_RTCPeerConnection__java_lang_String(/** !RTCPeerConnection */ $thisArg, /** ?string */ trackOrKind) {
   RTCPeerConnection_$Overlay.$clinit();
-  return $thisArg.addTransceiver(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(trackOrKind)));
+  return $thisArg.addTransceiver(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(trackOrKind)));
  }
- /**
-  * @param {!RTCPeerConnection} $thisArg
-  * @param {*} successCallbackOrConstraints
-  * @param {?function(?string):*} errorCallback
-  * @param {*} constraints
-  * @return {Promise<RTCSessionDescription>}
-  * @public
-  */
- static m_createAnswer__$devirt__elemental2_dom_RTCPeerConnection__java_lang_Object__elemental2_dom_RTCPeerConnectionErrorCallback__java_lang_Object($thisArg, successCallbackOrConstraints, errorCallback, constraints) {
+ /** @return {Promise<RTCSessionDescription>} */
+ static m_createAnswer__$devirt__elemental2_dom_RTCPeerConnection__java_lang_Object__elemental2_dom_RTCPeerConnectionErrorCallback__java_lang_Object(/** !RTCPeerConnection */ $thisArg, /** * */ successCallbackOrConstraints, /** ?function(?string):* */ errorCallback, /** * */ constraints) {
   RTCPeerConnection_$Overlay.$clinit();
-  return $thisArg.createAnswer(/**@type {Object} */ (Js.m_uncheckedCast__java_lang_Object(successCallbackOrConstraints)), errorCallback, /**@type {Object} */ (Js.m_uncheckedCast__java_lang_Object(constraints)));
+  return $thisArg.createAnswer(/**@type {Object}*/ (Js.m_uncheckedCast__java_lang_Object(successCallbackOrConstraints)), errorCallback, /**@type {Object}*/ (Js.m_uncheckedCast__java_lang_Object(constraints)));
  }
- /**
-  * @param {!RTCPeerConnection} $thisArg
-  * @param {*} successCallbackOrConstraints
-  * @param {?function(?string):*} errorCallback
-  * @return {Promise<RTCSessionDescription>}
-  * @public
-  */
- static m_createAnswer__$devirt__elemental2_dom_RTCPeerConnection__java_lang_Object__elemental2_dom_RTCPeerConnectionErrorCallback($thisArg, successCallbackOrConstraints, errorCallback) {
+ /** @return {Promise<RTCSessionDescription>} */
+ static m_createAnswer__$devirt__elemental2_dom_RTCPeerConnection__java_lang_Object__elemental2_dom_RTCPeerConnectionErrorCallback(/** !RTCPeerConnection */ $thisArg, /** * */ successCallbackOrConstraints, /** ?function(?string):* */ errorCallback) {
   RTCPeerConnection_$Overlay.$clinit();
-  return $thisArg.createAnswer(/**@type {Object} */ (Js.m_uncheckedCast__java_lang_Object(successCallbackOrConstraints)), errorCallback);
+  return $thisArg.createAnswer(/**@type {Object}*/ (Js.m_uncheckedCast__java_lang_Object(successCallbackOrConstraints)), errorCallback);
  }
- /**
-  * @param {!RTCPeerConnection} $thisArg
-  * @param {*} successCallbackOrConstraints
-  * @return {Promise<RTCSessionDescription>}
-  * @public
-  */
- static m_createAnswer__$devirt__elemental2_dom_RTCPeerConnection__java_lang_Object($thisArg, successCallbackOrConstraints) {
+ /** @return {Promise<RTCSessionDescription>} */
+ static m_createAnswer__$devirt__elemental2_dom_RTCPeerConnection__java_lang_Object(/** !RTCPeerConnection */ $thisArg, /** * */ successCallbackOrConstraints) {
   RTCPeerConnection_$Overlay.$clinit();
-  return $thisArg.createAnswer(/**@type {Object} */ (Js.m_uncheckedCast__java_lang_Object(successCallbackOrConstraints)));
+  return $thisArg.createAnswer(/**@type {Object}*/ (Js.m_uncheckedCast__java_lang_Object(successCallbackOrConstraints)));
  }
- /**
-  * @param {!RTCPeerConnection} $thisArg
-  * @param {*} successCallbackOrConstraints
-  * @param {?function(?string):*} errorCallback
-  * @param {*} constraints
-  * @return {Promise<RTCSessionDescription>}
-  * @public
-  */
- static m_createOffer__$devirt__elemental2_dom_RTCPeerConnection__java_lang_Object__elemental2_dom_RTCPeerConnectionErrorCallback__java_lang_Object($thisArg, successCallbackOrConstraints, errorCallback, constraints) {
+ /** @return {Promise<RTCSessionDescription>} */
+ static m_createOffer__$devirt__elemental2_dom_RTCPeerConnection__java_lang_Object__elemental2_dom_RTCPeerConnectionErrorCallback__java_lang_Object(/** !RTCPeerConnection */ $thisArg, /** * */ successCallbackOrConstraints, /** ?function(?string):* */ errorCallback, /** * */ constraints) {
   RTCPeerConnection_$Overlay.$clinit();
-  return $thisArg.createOffer(/**@type {Object} */ (Js.m_uncheckedCast__java_lang_Object(successCallbackOrConstraints)), errorCallback, /**@type {Object} */ (Js.m_uncheckedCast__java_lang_Object(constraints)));
+  return $thisArg.createOffer(/**@type {Object}*/ (Js.m_uncheckedCast__java_lang_Object(successCallbackOrConstraints)), errorCallback, /**@type {Object}*/ (Js.m_uncheckedCast__java_lang_Object(constraints)));
  }
- /**
-  * @param {!RTCPeerConnection} $thisArg
-  * @param {*} successCallbackOrConstraints
-  * @param {?function(?string):*} errorCallback
-  * @return {Promise<RTCSessionDescription>}
-  * @public
-  */
- static m_createOffer__$devirt__elemental2_dom_RTCPeerConnection__java_lang_Object__elemental2_dom_RTCPeerConnectionErrorCallback($thisArg, successCallbackOrConstraints, errorCallback) {
+ /** @return {Promise<RTCSessionDescription>} */
+ static m_createOffer__$devirt__elemental2_dom_RTCPeerConnection__java_lang_Object__elemental2_dom_RTCPeerConnectionErrorCallback(/** !RTCPeerConnection */ $thisArg, /** * */ successCallbackOrConstraints, /** ?function(?string):* */ errorCallback) {
   RTCPeerConnection_$Overlay.$clinit();
-  return $thisArg.createOffer(/**@type {Object} */ (Js.m_uncheckedCast__java_lang_Object(successCallbackOrConstraints)), errorCallback);
+  return $thisArg.createOffer(/**@type {Object}*/ (Js.m_uncheckedCast__java_lang_Object(successCallbackOrConstraints)), errorCallback);
  }
- /**
-  * @param {!RTCPeerConnection} $thisArg
-  * @param {*} successCallbackOrConstraints
-  * @return {Promise<RTCSessionDescription>}
-  * @public
-  */
- static m_createOffer__$devirt__elemental2_dom_RTCPeerConnection__java_lang_Object($thisArg, successCallbackOrConstraints) {
+ /** @return {Promise<RTCSessionDescription>} */
+ static m_createOffer__$devirt__elemental2_dom_RTCPeerConnection__java_lang_Object(/** !RTCPeerConnection */ $thisArg, /** * */ successCallbackOrConstraints) {
   RTCPeerConnection_$Overlay.$clinit();
-  return $thisArg.createOffer(/**@type {Object} */ (Js.m_uncheckedCast__java_lang_Object(successCallbackOrConstraints)));
+  return $thisArg.createOffer(/**@type {Object}*/ (Js.m_uncheckedCast__java_lang_Object(successCallbackOrConstraints)));
  }
- /**
-  * @param {!RTCPeerConnection} $thisArg
-  * @param {RTCConfigurationRecord_} configuration
-  * @param {*} constraints
-  * @public
-  */
- static m_updateIce__$devirt__elemental2_dom_RTCPeerConnection__elemental2_dom_RTCConfigurationRecord___java_lang_Object($thisArg, configuration, constraints) {
+ 
+ static m_updateIce__$devirt__elemental2_dom_RTCPeerConnection__elemental2_dom_RTCConfigurationRecord___java_lang_Object(/** !RTCPeerConnection */ $thisArg, /** RTCConfigurationRecord_ */ configuration, /** * */ constraints) {
   RTCPeerConnection_$Overlay.$clinit();
-  $thisArg.updateIce(configuration, /**@type {Object} */ (Js.m_uncheckedCast__java_lang_Object(constraints)));
+  $thisArg.updateIce(configuration, /**@type {Object}*/ (Js.m_uncheckedCast__java_lang_Object(constraints)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RTCPeerConnection_$Overlay.$clinit = () =>{};
   RTCPeerConnection_$Overlay.$loadModules();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof RTCPeerConnection;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }

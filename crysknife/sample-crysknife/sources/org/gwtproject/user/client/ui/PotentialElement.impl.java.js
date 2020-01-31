@@ -23,120 +23,76 @@ let $JavaScriptFunction = goog.forwardDeclare('vmbootstrap.JavaScriptFunction$im
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
 class PotentialElement extends Object {
- /**
-  * @public
-  */
+ 
  constructor() {
   PotentialElement.$clinit();
   super();
   this.$ctor__org_gwtproject_user_client_ui_PotentialElement__();
  }
- /**
-  * @param {Object} e
-  * @return {PotentialElement}
-  * @public
-  */
- static m_as__org_gwtproject_dom_client_Element(e) {
+ /** @return {PotentialElement} */
+ static m_as__org_gwtproject_dom_client_Element(/** Object */ e) {
   PotentialElement.$clinit();
   $Asserts.$assert(PotentialElement.m_isPotential__org_gwtproject_core_client_JavaScriptObject(e));
-  return /**@type {PotentialElement} */ ($Casts.$to(e, PotentialElement));
+  return /**@type {PotentialElement}*/ ($Casts.$to(e, PotentialElement));
  }
- /**
-  * @param {UIObject} o
-  * @return {PotentialElement}
-  * @public
-  */
- static m_build__org_gwtproject_user_client_ui_UIObject(o) {
+ /** @return {PotentialElement} */
+ static m_build__org_gwtproject_user_client_ui_UIObject(/** UIObject */ o) {
   PotentialElement.$clinit();
   return PotentialElement.m_build__org_gwtproject_user_client_ui_UIObject__java_lang_String(o, "div");
  }
- /**
-  * @param {UIObject} o
-  * @param {?string} tagName
-  * @return {PotentialElement}
-  * @public
-  */
- static m_build__org_gwtproject_user_client_ui_UIObject__java_lang_String(o, tagName) {
+ /** @return {PotentialElement} */
+ static m_build__org_gwtproject_user_client_ui_UIObject__java_lang_String(/** UIObject */ o, /** ?string */ tagName) {
   PotentialElement.$clinit();
   let shim = new GwtPotentialElementShim();
   shim.tagName = tagName;
   shim.__gwt_resolve = () =>{
    PotentialElement.m_buildResolveCallback__org_gwtproject_user_client_ui_UIObject(o);
   };
-  return /**@type {PotentialElement} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_as__org_gwtproject_core_client_JavaScriptObject(shim)));
+  return /**@type {PotentialElement}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_as__org_gwtproject_core_client_JavaScriptObject(shim)));
  }
- /**
-  * @param {Object} potentialElement
-  * @return {HtmlElementBuilder}
-  * @public
-  */
- static m_createBuilderFor__org_gwtproject_dom_client_Element(potentialElement) {
+ /** @return {HtmlElementBuilder} */
+ static m_createBuilderFor__org_gwtproject_dom_client_Element(/** Object */ potentialElement) {
   PotentialElement.$clinit();
   let el = PotentialElement.m_as__org_gwtproject_dom_client_Element(potentialElement);
   let builder = HtmlBuilderFactory.m_get__().m_trustedCreate__java_lang_String($Overlay.m_getTagName__$devirt__org_gwtproject_dom_client_Element(el));
   el.m_mergeInto__org_gwtproject_dom_builder_shared_HtmlElementBuilder_$p_org_gwtproject_user_client_ui_PotentialElement(builder);
   return builder;
  }
- /**
-  * @param {Object} o
-  * @return {boolean}
-  * @public
-  */
- static m_isPotential__org_gwtproject_core_client_JavaScriptObject(o) {
+ /** @return {boolean} */
+ static m_isPotential__org_gwtproject_core_client_JavaScriptObject(/** Object */ o) {
   PotentialElement.$clinit();
   return DOM.m_isPotential__org_gwtproject_core_client_JavaScriptObject(o);
  }
- /**
-  * @param {Object} maybePotential
-  * @return {Object}
-  * @public
-  */
- static m_resolve__org_gwtproject_dom_client_Element(maybePotential) {
+ /** @return {Object} */
+ static m_resolve__org_gwtproject_dom_client_Element(/** Object */ maybePotential) {
   PotentialElement.$clinit();
-  return /**@type {PotentialElement} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(maybePotential), PotentialElement)).m_resolve___$p_org_gwtproject_user_client_ui_PotentialElement();
+  return /**@type {PotentialElement}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(maybePotential), PotentialElement)).m_resolve___$p_org_gwtproject_user_client_ui_PotentialElement();
  }
- /**
-  * @param {UIObject} resolver
-  * @return {Object}
-  * @public
-  */
- static m_buildResolveCallback__org_gwtproject_user_client_ui_UIObject(resolver) {
+ /** @return {Object} */
+ static m_buildResolveCallback__org_gwtproject_user_client_ui_UIObject(/** UIObject */ resolver) {
   let func = () =>{
    return resolver.m_resolvePotentialElement__();
   };
-  return /**@type {Object} */ (Js.m_uncheckedCast__java_lang_Object(func));
+  return /**@type {Object}*/ (Js.m_uncheckedCast__java_lang_Object(func));
  }
- /**
-  * @public
-  */
+ 
  static m_cannotResolveTwice__() {
   throw $Exceptions.toJs(Error.$create__java_lang_String("A PotentialElement cannot be resolved twice."));
  }
- /**
-  * @public
-  */
+ 
  static m_declareShim__() {
   JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(Js.m_asPropertyMap__java_lang_Object(window.window), "GwtPotentialElementShim", new GwtPotentialElementShim());
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_PotentialElement__() {}
- /**
-  * @param {UIObject} resolver
-  * @return {Object}
-  * @public
-  */
- m_setResolver__org_gwtproject_user_client_ui_UIObject_$pp_org_gwtproject_user_client_ui(resolver) {
-  JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object} */ (this), "__gwt_resolve", PotentialElement.m_buildResolveCallback__org_gwtproject_user_client_ui_UIObject(resolver));
+ /** @return {Object} */
+ m_setResolver__org_gwtproject_user_client_ui_UIObject_$pp_org_gwtproject_user_client_ui(/** UIObject */ resolver) {
+  JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object}*/ (this), "__gwt_resolve", PotentialElement.m_buildResolveCallback__org_gwtproject_user_client_ui_UIObject(resolver));
   return this;
  }
- /**
-  * @param {HtmlElementBuilder} builder
-  * @public
-  */
- m_mergeInto__org_gwtproject_dom_builder_shared_HtmlElementBuilder_$p_org_gwtproject_user_client_ui_PotentialElement(builder) {
-  let _this = /**@type {Object} */ (this);
+ 
+ m_mergeInto__org_gwtproject_dom_builder_shared_HtmlElementBuilder_$p_org_gwtproject_user_client_ui_PotentialElement(/** HtmlElementBuilder */ builder) {
+  let _this = /**@type {Object}*/ (this);
   let savedProto = $Objects.m_toString__java_lang_Object(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(_this, "__proto__"));
   let tagName = $Objects.m_toString__java_lang_Object(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(_this, "tagName"));
   let gwtResolve = $Objects.m_toString__java_lang_Object(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(_this, "__gwt_resolve"));
@@ -168,32 +124,21 @@ class PotentialElement extends Object {
    JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(_this, "tagName", tagName);
   }
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_resolve___$p_org_gwtproject_user_client_ui_PotentialElement() {
-  return JsPropertyMap_$Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (this), "__gwt_resolve") ? /**@type {?function():Object} */ ($Casts.$to(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (this), "__gwt_resolve"), $JavaScriptFunction))() : this;
+  return JsPropertyMap_$Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (this), "__gwt_resolve") ? /**@type {?function():Object}*/ ($Casts.$to(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (this), "__gwt_resolve"), $JavaScriptFunction))() : this;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   PotentialElement.$clinit = () =>{};
   PotentialElement.$loadModules();
   PotentialElement.m_declareShim__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof PotentialElement;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Error = goog.module.get('java.lang.Error$impl');
   Integer = goog.module.get('java.lang.Integer$impl');

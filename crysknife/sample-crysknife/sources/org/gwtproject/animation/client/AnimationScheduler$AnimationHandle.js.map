@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"AnimationScheduler$AnimationHandle.impl.java.js",
-"lineCount":33,
-"mappings":"A;;;;;;;;MAsF+B,e;;;;CAAA,W;EAAAA,Q;;;;;CAAA,2E;EAAAC,iC;;;;;;CAIN,U;;;;QAJM,O;EAAAC,kC;EAAAA,+B;EAAAA;",
+"lineCount":24,
+"mappings":"A;;;;;;;;MAsF+B,e;;CAAA,W;EAAAA,Q;;;CAAA,2E;EAAAC,iC;;;CAIN,U;;QAJM,O;EAAAC,kC;EAAAA,+B;EAAAA;",
 "sources":["AnimationScheduler.java"],
 "names":["org.gwtproject.animation.client.AnimationScheduler$AnimationHandle.<synthetic: ctor_js>","org.gwtproject.animation.client.AnimationScheduler$AnimationHandle.<init>","org.gwtproject.animation.client.AnimationScheduler$AnimationHandle.<clinit>"]
 }

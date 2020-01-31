@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ImageData$$Overlay.impl.java.js",
-"lineCount":11,
-"mappings":"A;;;;MAwBa,Q;;;;QAAA,O;EAAAA,2B;EAAAA;",
+"lineCount":9,
+"mappings":"A;;;;MAwBa,Q;;QAAA,O;EAAAA,2B;EAAAA;",
 "sources":["ImageData.java"],
 "names":["elemental2.dom.ImageData$$Overlay.<clinit>"]
 }

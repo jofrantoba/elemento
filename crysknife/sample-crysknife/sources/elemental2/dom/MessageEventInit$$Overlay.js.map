@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MessageEventInit$$Overlay.impl.java.js",
-"lineCount":67,
-"mappings":"A;;;;;;;;;;;;MA0BiB,yB;;;;;QAwCS,U;EAAAA,oC;EACtBA,gG;;;;;;;;QA+BW,wF,WAAuBC,K;EAAvBC,oC;EACXA,gG;;;;;;;;QAOW,iF,WAAsBC,M;EAAtBC,oC;EACXA,iF;;;;;;;;QAIW,mF,WAAwBD,M;EAAxBC,oC;EACXA,iF;;;;;;;;QAIW,4E,WAAiBD,M;EAAjBC,oC;EACXA,iF;;;;;QA3Fa,O;EAAAC,4C;EAAAA;",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;;MA0BiB,yB;;QAwCS,U;EAAAA,oC;EACtBA,+F;;;QA+BW,wF,iEAAuBC,K;EAAvBC,oC;EACXA,+F;;;QAOW,iF,0DAAsBC,M;EAAtBC,oC;EACXA,gF;;;QAIW,mF,4DAAwBD,M;EAAxBC,oC;EACXA,gF;;;QAIW,4E,qDAAiBD,M;EAAjBC,oC;EACXA,gF;;;QA3Fa,O;EAAAC,4C;EAAAA;",
 "sources":["MessageEventInit.java"],
 "names":["elemental2.dom.MessageEventInit$$Overlay.create","ports","elemental2.dom.MessageEventInit$$Overlay.setPorts__$devirt","source","elemental2.dom.MessageEventInit$$Overlay.setSource__$devirt","elemental2.dom.MessageEventInit$$Overlay.<clinit>"]
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl$Template$$LambdaAdaptor.impl.java.js",
-"lineCount":51,
-"mappings":"A;;;;;;;;;;;MAOY,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qI;EAAAA,0P;;;;;;CAAA,gP;EAAAC,iC;EAAAA,wI;;;;;;;;;;;CAAA,iG;EAAAC,qF;EAAAA,iM;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;;MAOY,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qI;EAAAA,0P;;;CAAA,gP;EAAAC,iC;EAAAA,wI;;;CAAA,iG;EAAAC,qF;EAAAA,iM;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl.java"],
 "names":["org.gwtproject.user.client.ui.NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl$Template$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl$Template$$LambdaAdaptor.<init>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl$Template$$LambdaAdaptor.html1","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl$Template$$LambdaAdaptor.<clinit>"]
 }

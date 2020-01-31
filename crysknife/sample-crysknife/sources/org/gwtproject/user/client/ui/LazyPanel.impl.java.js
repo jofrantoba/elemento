@@ -13,27 +13,17 @@ let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
  * @abstract
   */
 class LazyPanel extends SimplePanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_LazyPanel__() {
   this.$ctor__org_gwtproject_user_client_ui_SimplePanel__();
  }
- /**
-  * @abstract
-  * @return {Widget}
-  * @public
-  */
+ /** @abstract @return {Widget} */
  m_createWidget__() {}
- /**
-  * @public
-  */
+ 
  m_ensureWidget__() {
   let widget = this.m_getWidget__();
   if ($Equality.$same(widget, null)) {
@@ -41,54 +31,34 @@ class LazyPanel extends SimplePanel {
    this.m_setWidget__org_gwtproject_user_client_ui_Widget(widget);
   }
  }
- /**
-  * @override
-  * @param {boolean} visible
-  * @public
-  */
- m_setVisible__boolean(visible) {
+ /** @override */
+ m_setVisible__boolean(/** boolean */ visible) {
   if (visible) {
    this.m_ensureWidget__();
   }
   super.m_setVisible__boolean(visible);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   LazyPanel.$clinit = () =>{};
   LazyPanel.$loadModules();
   SimplePanel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof LazyPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

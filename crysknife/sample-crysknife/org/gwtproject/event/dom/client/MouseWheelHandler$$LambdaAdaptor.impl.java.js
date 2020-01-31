@@ -10,54 +10,37 @@ let MouseWheelEvent = goog.forwardDeclare('org.gwtproject.event.dom.client.Mouse
  * @implements {MouseWheelHandler}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(MouseWheelEvent):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(MouseWheelEvent):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(MouseWheelEvent):void} */
+  /**@type {?function(MouseWheelEvent):void}*/
   this.f_$$fn__org_gwtproject_event_dom_client_MouseWheelHandler_$LambdaAdaptor;
   this.$ctor__org_gwtproject_event_dom_client_MouseWheelHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_MouseWheelHandler_$JsFunction(fn);
  }
- /**
-  * @param {?function(MouseWheelEvent):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_event_dom_client_MouseWheelHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_MouseWheelHandler_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_event_dom_client_MouseWheelHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_MouseWheelHandler_$JsFunction(/** ?function(MouseWheelEvent):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_event_dom_client_MouseWheelHandler_$LambdaAdaptor = fn;
  }
- /**
-  * @param {MouseWheelEvent} arg0
-  * @public
-  */
- m_onMouseWheel__org_gwtproject_event_dom_client_MouseWheelEvent(arg0) {
+ 
+ m_onMouseWheel__org_gwtproject_event_dom_client_MouseWheelEvent(/** MouseWheelEvent */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_event_dom_client_MouseWheelHandler_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

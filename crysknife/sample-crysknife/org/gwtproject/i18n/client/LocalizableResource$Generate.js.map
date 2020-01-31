@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"LocalizableResource$Generate.impl.java.js",
-"lineCount":66,
-"mappings":"A;;;;;;;;;MAqFoB,Q;;;;;;CAQhB,U;;;;;;CAeA,Y;;;;;;CAkBA,W;;;;QAzCgB,O;EAAAA,2B;EAAAA,wB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAEhB;SAIO,kEAJP;",
+"lineCount":41,
+"mappings":"A;;;;;;;;;MAqFoB,Q;;CAQhB,U;;CAeA,Y;;CAkBA,W;;QAzCgB,O;EAAAA,2B;EAAAA,wB;;;;;;;;;;;;;;;;;;;;AAEhB;SAIO,kEAJP;",
 "sources":["LocalizableResource.java"],
 "names":["org.gwtproject.i18n.client.LocalizableResource$Generate.<clinit>"]
 }

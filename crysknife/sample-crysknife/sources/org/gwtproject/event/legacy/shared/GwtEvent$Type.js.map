@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"GwtEvent$Type.impl.java.js",
-"lineCount":41,
-"mappings":"A;;;;;;;;;;MAuCsB,a;;;;CAAA,W;EAAAA,Q;;;;;;;QAAA,S;EAAAC,wB;EAAAA,oC;EAAAA,sE;EAAAA,iB;;;;;CAAA,yD;EAAAC,uD;;;;;QAAA,O;EAAAC,gC;EAAAA,6B;EAAAA;",
+"lineCount":31,
+"mappings":"A;;;;;;;;;;MAuCsB,a;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,wB;EAAAA,oC;EAAAA,sE;EAAAA,iB;;;CAAA,yD;EAAAC,uD;;;QAAA,O;EAAAC,gC;EAAAA,6B;EAAAA;",
 "sources":["GwtEvent.java"],
 "names":["org.gwtproject.event.legacy.shared.GwtEvent$Type.<synthetic: ctor_js>","org.gwtproject.event.legacy.shared.GwtEvent$Type.<synthetic: ctor_create>","org.gwtproject.event.legacy.shared.GwtEvent$Type.<init>","org.gwtproject.event.legacy.shared.GwtEvent$Type.<clinit>"]
 }

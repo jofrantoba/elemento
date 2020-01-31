@@ -11,50 +11,29 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.user.client.Event.Nativ
  * @extends {EventHandler}
  */
 class NativePreviewHandler {
- /**
-  * @abstract
-  * @param {NativePreviewEvent} event
-  * @public
-  */
- m_onPreviewNativeEvent__org_gwtproject_user_client_Event_NativePreviewEvent(event) {}
- /**
-  * @param {?function(NativePreviewEvent):void} fn
-  * @return {NativePreviewHandler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onPreviewNativeEvent__org_gwtproject_user_client_Event_NativePreviewEvent(/** NativePreviewEvent */ event) {}
+ /** @return {NativePreviewHandler} */
+ static $adapt(/** ?function(NativePreviewEvent):void */ fn) {
   NativePreviewHandler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NativePreviewHandler.$clinit = () =>{};
   NativePreviewHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  EventHandler.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_Event_NativePreviewHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  EventHandler.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_Event_NativePreviewHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_Event_NativePreviewHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.user.client.Event.NativePreviewHandler.$LambdaAdaptor$impl');
  }

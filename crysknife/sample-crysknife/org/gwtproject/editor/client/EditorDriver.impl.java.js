@@ -13,71 +13,33 @@ let EditorVisitor = goog.forwardDeclare('org.gwtproject.editor.client.EditorVisi
  * @template T
  */
 class EditorDriver {
- /**
-  * @abstract
-  * @param {EditorVisitor} visitor
-  * @public
-  */
- m_accept__org_gwtproject_editor_client_EditorVisitor(visitor) {}
- /**
-  * @abstract
-  * @return {T}
-  * @public
-  */
+ /** @abstract */
+ m_accept__org_gwtproject_editor_client_EditorVisitor(/** EditorVisitor */ visitor) {}
+ /** @abstract @return {T} */
  m_flush__() {}
- /**
-  * @abstract
-  * @return {List<EditorError>}
-  * @public
-  */
+ /** @abstract @return {List<EditorError>} */
  m_getErrors__() {}
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_hasErrors__() {}
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_isDirty__() {}
- /**
-  * @abstract
-  * @param {Iterable<ConstraintViolation<?>>} violations
-  * @return {boolean}
-  * @public
-  */
- m_setConstraintViolations__java_lang_Iterable(violations) {}
- /**
-  * @public
-  */
+ /** @abstract @return {boolean} */
+ m_setConstraintViolations__java_lang_Iterable(/** Iterable<ConstraintViolation<?>> */ violations) {}
+ 
  static $clinit() {
   EditorDriver.$clinit = () =>{};
   EditorDriver.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_editor_client_EditorDriver = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_editor_client_EditorDriver = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_editor_client_EditorDriver;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

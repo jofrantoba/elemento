@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DateTimeFormatInfoImpl_zh_Hans_SG.impl.java.js",
-"lineCount":83,
-"mappings":"A;;;;;MAqBa,oC;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,+C;EAAAA,2D;EAAAA,4F;EAAAA,iB;;;;;CAAA,+E;EAAAC,oF;;;;;;;CAGG,mB;EACZC,kB;;;;;;;CAIS,qB;EACTC,S;;;;;;;CAIY,qB;EACZC,iB;;;;;;;CAIY,mB;EACZC,iB;;;;;;;CAIY,qB;EACZC,a;;;;;;;CAIY,yB;EACZC,+B;;;;;QA7BS,O;EAAAC,uD;EAAAA,oD;EAAAA;",
+"lineCount":50,
+"mappings":"A;;;;;MAqBa,oC;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,+C;EAAAA,2D;EAAAA,4F;EAAAA,iB;;;CAAA,+E;EAAAC,oF;;;CAGG,mB;EACZC,kB;;;CAIS,qB;EACTC,S;;;CAIY,qB;EACZC,iB;;;CAIY,mB;EACZC,iB;;;CAIY,qB;EACZC,a;;;CAIY,yB;EACZC,+B;;;QA7BS,O;EAAAC,uD;EAAAA,oD;EAAAA;",
 "sources":["DateTimeFormatInfoImpl_zh_Hans_SG.java"],
 "names":["org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_zh_Hans_SG.<synthetic: ctor_js>","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_zh_Hans_SG.<synthetic: ctor_create>","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_zh_Hans_SG.<init>","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_zh_Hans_SG.dateFormatShort","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_zh_Hans_SG.firstDayOfTheWeek","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_zh_Hans_SG.formatMonthAbbrev","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_zh_Hans_SG.formatMonthFull","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_zh_Hans_SG.formatMonthNumDay","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_zh_Hans_SG.formatYearMonthNumDay","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_zh_Hans_SG.<clinit>"]
 }

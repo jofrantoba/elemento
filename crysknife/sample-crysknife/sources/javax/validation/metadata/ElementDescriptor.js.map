@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ElementDescriptor.impl.java.js",
-"lineCount":14,
-"mappings":"A;;;;;;;MAuBiB,iB;;;;QAAA,O;EAAAA,oC;EAAAA;",
+"lineCount":12,
+"mappings":"A;;;;;;;MAuBiB,iB;;QAAA,O;EAAAA,oC;EAAAA;",
 "sources":["ElementDescriptor.java"],
 "names":["javax.validation.metadata.ElementDescriptor.<clinit>"]
 }

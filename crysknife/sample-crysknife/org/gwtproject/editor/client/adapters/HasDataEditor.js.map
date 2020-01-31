@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasDataEditor.impl.java.js",
-"lineCount":66,
-"mappings":"A;;;;;;;;;;;;;;;MA2Ba,a;;;;CAAA,W;EAAAA,Q;;;;;;;;QA0EwB,wC,CAAcC,I;EAAdC,wB;EACjCA,2G;;;;;;;;QAMM,2C,CAAyBD,I;EAAzBE,oC;EAAAA,+G;EAAAA,iB;;;;;;CAAA,8F,CAAyBF,I;EAC/BG,gO;;;;;;;;CAlFS,4B;EAAAC,iF;;;;;QAAA,O;EAAAC,gC;EAAAA,6B;EAAAA;",
+"lineCount":45,
+"mappings":"A;;;;;;;;;;;;;;;MA2Ba,a;;CAAA,W;EAAAA,Q;;;QA0EwB,wC,qBAAcC,I;EAAdC,wB;EACjCA,0G;;;QAMM,2C,mBAAyBD,I;EAAzBE,oC;EAAAA,+G;EAAAA,iB;;;CAAA,8F,mBAAyBF,I;EAC/BG,+N;;;;CAlFS,4B;EAAAC,gF;;;QAAA,O;EAAAC,gC;EAAAA,6B;EAAAA;",
 "sources":["HasDataEditor.java"],
 "names":["org.gwtproject.editor.client.adapters.HasDataEditor.<synthetic: ctor_js>","data","org.gwtproject.editor.client.adapters.HasDataEditor.of","org.gwtproject.editor.client.adapters.HasDataEditor.<synthetic: ctor_create>","org.gwtproject.editor.client.adapters.HasDataEditor.<init>","org.gwtproject.editor.client.adapters.HasDataEditor.setValue","org.gwtproject.editor.client.adapters.HasDataEditor.<clinit>"]
 }

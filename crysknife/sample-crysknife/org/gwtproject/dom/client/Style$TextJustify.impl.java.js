@@ -9,87 +9,54 @@ let TextJustify = goog.forwardDeclare('org.gwtproject.dom.style.shared.TextJusti
  * @deprecated
   */
 class Style_TextJustify extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!Style_TextJustify}
-  * @public
-  */
+ /** @return {!Style_TextJustify} */
  static $create__() {
   Style_TextJustify.$clinit();
   let $instance = new Style_TextJustify();
   $instance.$ctor__org_gwtproject_dom_client_Style_TextJustify__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_dom_client_Style_TextJustify__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {TextJustify}
-  * @public
-  */
+ /** @return {TextJustify} */
  static get f_AUTO__org_gwtproject_dom_client_Style_TextJustify() {
   return (Style_TextJustify.$clinit(), Style_TextJustify.$f_AUTO__org_gwtproject_dom_client_Style_TextJustify);
  }
- /**
-  * @return {TextJustify}
-  * @public
-  */
+ /** @return {TextJustify} */
  static get f_DISTRIBUTE__org_gwtproject_dom_client_Style_TextJustify() {
   return (Style_TextJustify.$clinit(), Style_TextJustify.$f_DISTRIBUTE__org_gwtproject_dom_client_Style_TextJustify);
  }
- /**
-  * @return {TextJustify}
-  * @public
-  */
+ /** @return {TextJustify} */
  static get f_INTER_CHARACTER__org_gwtproject_dom_client_Style_TextJustify() {
   return (Style_TextJustify.$clinit(), Style_TextJustify.$f_INTER_CHARACTER__org_gwtproject_dom_client_Style_TextJustify);
  }
- /**
-  * @return {TextJustify}
-  * @public
-  */
+ /** @return {TextJustify} */
  static get f_INTER_CLUSTER__org_gwtproject_dom_client_Style_TextJustify() {
   return (Style_TextJustify.$clinit(), Style_TextJustify.$f_INTER_CLUSTER__org_gwtproject_dom_client_Style_TextJustify);
  }
- /**
-  * @return {TextJustify}
-  * @public
-  */
+ /** @return {TextJustify} */
  static get f_INTER_IDEOGRAPH__org_gwtproject_dom_client_Style_TextJustify() {
   return (Style_TextJustify.$clinit(), Style_TextJustify.$f_INTER_IDEOGRAPH__org_gwtproject_dom_client_Style_TextJustify);
  }
- /**
-  * @return {TextJustify}
-  * @public
-  */
+ /** @return {TextJustify} */
  static get f_INTER_WORD__org_gwtproject_dom_client_Style_TextJustify() {
   return (Style_TextJustify.$clinit(), Style_TextJustify.$f_INTER_WORD__org_gwtproject_dom_client_Style_TextJustify);
  }
- /**
-  * @return {TextJustify}
-  * @public
-  */
+ /** @return {TextJustify} */
  static get f_KASHIDA__org_gwtproject_dom_client_Style_TextJustify() {
   return (Style_TextJustify.$clinit(), Style_TextJustify.$f_KASHIDA__org_gwtproject_dom_client_Style_TextJustify);
  }
- /**
-  * @return {TextJustify}
-  * @public
-  */
+ /** @return {TextJustify} */
  static get f_NONE__org_gwtproject_dom_client_Style_TextJustify() {
   return (Style_TextJustify.$clinit(), Style_TextJustify.$f_NONE__org_gwtproject_dom_client_Style_TextJustify);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Style_TextJustify.$clinit = () =>{};
   Style_TextJustify.$loadModules();
@@ -103,17 +70,11 @@ class Style_TextJustify extends j_l_Object {
   Style_TextJustify.$f_KASHIDA__org_gwtproject_dom_client_Style_TextJustify = TextJustify.f_KASHIDA__org_gwtproject_dom_style_shared_TextJustify;
   Style_TextJustify.$f_NONE__org_gwtproject_dom_client_Style_TextJustify = TextJustify.f_NONE__org_gwtproject_dom_style_shared_TextJustify;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Style_TextJustify;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   TextJustify = goog.module.get('org.gwtproject.dom.style.shared.TextJustify$impl');
  }
@@ -121,21 +82,21 @@ class Style_TextJustify extends j_l_Object {
 }
 $Util.$setClassMetadata(Style_TextJustify, 'org.gwtproject.dom.client.Style$TextJustify');
 
-/** @private {TextJustify} */
+/**@private {TextJustify}*/
 Style_TextJustify.$f_AUTO__org_gwtproject_dom_client_Style_TextJustify;
-/** @private {TextJustify} */
+/**@private {TextJustify}*/
 Style_TextJustify.$f_DISTRIBUTE__org_gwtproject_dom_client_Style_TextJustify;
-/** @private {TextJustify} */
+/**@private {TextJustify}*/
 Style_TextJustify.$f_INTER_CHARACTER__org_gwtproject_dom_client_Style_TextJustify;
-/** @private {TextJustify} */
+/**@private {TextJustify}*/
 Style_TextJustify.$f_INTER_CLUSTER__org_gwtproject_dom_client_Style_TextJustify;
-/** @private {TextJustify} */
+/**@private {TextJustify}*/
 Style_TextJustify.$f_INTER_IDEOGRAPH__org_gwtproject_dom_client_Style_TextJustify;
-/** @private {TextJustify} */
+/**@private {TextJustify}*/
 Style_TextJustify.$f_INTER_WORD__org_gwtproject_dom_client_Style_TextJustify;
-/** @private {TextJustify} */
+/**@private {TextJustify}*/
 Style_TextJustify.$f_KASHIDA__org_gwtproject_dom_client_Style_TextJustify;
-/** @private {TextJustify} */
+/**@private {TextJustify}*/
 Style_TextJustify.$f_NONE__org_gwtproject_dom_client_Style_TextJustify;
 
 exports = Style_TextJustify; 

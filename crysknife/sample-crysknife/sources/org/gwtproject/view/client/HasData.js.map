@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasData.impl.java.js",
-"lineCount":69,
-"mappings":"A;;;;;;;;;;;;;;;;;MAwBiB,O;;;;;;CASW,qB;;;;;;;CASxB,qB,CAAmBA,W;;;;;;CAQjB,uB;;;;;;CAOQ,mB;;;;;;;CAkBP,iC,CAAeC,K,EAAyBC,M;;;;;;CASxC,8D,CAA4CC,c;;;;;;;CAiB5C,wE,CAA6DC,K,EAAeC,qB;;;;QA7ElE,O;EAAAC,0B;EAAAA;",
+"lineCount":36,
+"mappings":"A;;;;;;;;;;;;;;;;;MAwBiB,O;;CASW,qB;;CASxB,qB,eAAmBA,W;;CAQjB,uB;;CAOQ,mB;;CAkBP,iC,eAAeC,K,iBAAyBC,M;;CASxC,8D,0BAA4CC,c;;CAiB5C,wE,cAA6DC,K,iBAAeC,qB;;QA7ElE,O;EAAAC,0B;EAAAA;",
 "sources":["HasData.java"],
 "names":["indexOnPage","start","values","selectionModel","range","forceRangeChangeEvent","org.gwtproject.view.client.HasData.<clinit>"]
 }

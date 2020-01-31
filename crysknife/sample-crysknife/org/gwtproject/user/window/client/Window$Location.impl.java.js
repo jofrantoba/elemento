@@ -19,24 +19,16 @@ let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class Window_Location extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} newURL
-  * @public
-  */
- static m_assign__java_lang_String(newURL) {
+ 
+ static m_assign__java_lang_String(/** ?string */ newURL) {
   Window_Location.$clinit();
   window.window.location.assign(newURL);
  }
- /**
-  * @return {UrlBuilder}
-  * @public
-  */
+ /** @return {UrlBuilder} */
  static m_createUrlBuilder__() {
   Window_Location.$clinit();
   let builder = UrlBuilder.$create__();
@@ -56,123 +48,83 @@ class Window_Location extends j_l_Object {
   }
   let params = Window_Location.m_getParameterMap__();
   for (let $iterator = params.m_entrySet__().m_iterator__(); $iterator.m_hasNext__(); ) {
-   let entry = /**@type {Entry<?string, List<?string>>} */ ($Casts.$to($iterator.m_next__(), Entry));
-   let values = /**@type {!ArrayList<?string>} */ (ArrayList.$create__java_util_Collection(/**@type {List<?string>} */ ($Casts.$to(entry.m_getValue__(), List))));
-   builder.m_setParameter__java_lang_String__arrayOf_java_lang_String(/**@type {?string} */ ($Casts.$to(entry.m_getKey__(), j_l_String)), /**@type {Array<?string>} */ ($Arrays.$castTo(values.m_toArray__arrayOf_java_lang_Object(/**@type {!Array<?string>} */ ($Arrays.$create([values.size()], j_l_String))), j_l_String, 1)));
+   let entry = /**@type {Entry<?string, List<?string>>}*/ ($Casts.$to($iterator.m_next__(), Entry));
+   let values = /**@type {!ArrayList<?string>}*/ (ArrayList.$create__java_util_Collection(/**@type {List<?string>}*/ ($Casts.$to(entry.m_getValue__(), List))));
+   builder.m_setParameter__java_lang_String__arrayOf_java_lang_String(/**@type {?string}*/ ($Casts.$to(entry.m_getKey__(), j_l_String)), /**@type {Array<?string>}*/ ($Arrays.$castTo(values.m_toArray__arrayOf_java_lang_Object(/**@type {!Array<?string>}*/ ($Arrays.$create([values.size()], j_l_String))), j_l_String, 1)));
   }
   return builder;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  static m_getHash__() {
   Window_Location.$clinit();
   return window.window.location.hash;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  static m_getHost__() {
   Window_Location.$clinit();
   return window.window.location.host;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  static m_getHostName__() {
   Window_Location.$clinit();
   return window.window.location.hostname;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  static m_getHref__() {
   Window_Location.$clinit();
   return window.window.location.href;
  }
- /**
-  * @param {?string} name
-  * @return {?string}
-  * @public
-  */
- static m_getParameter__java_lang_String(name) {
+ /** @return {?string} */
+ static m_getParameter__java_lang_String(/** ?string */ name) {
   Window_Location.$clinit();
   Window_Location.m_ensureListParameterMap__();
-  let paramsForName = /**@type {List<?string>} */ ($Casts.$to(Window_Location.f_listParamMap__org_gwtproject_user_window_client_Window_Location_.get(name), List));
+  let paramsForName = /**@type {List<?string>}*/ ($Casts.$to(Window_Location.f_listParamMap__org_gwtproject_user_window_client_Window_Location_.get(name), List));
   if ($Equality.$same(paramsForName, null)) {
    return null;
   } else {
-   return /**@type {?string} */ ($Casts.$to(paramsForName.getAtIndex(paramsForName.size() - 1), j_l_String));
+   return /**@type {?string}*/ ($Casts.$to(paramsForName.getAtIndex(paramsForName.size() - 1), j_l_String));
   }
  }
- /**
-  * @return {Map<?string, List<?string>>}
-  * @public
-  */
+ /** @return {Map<?string, List<?string>>} */
  static m_getParameterMap__() {
   Window_Location.$clinit();
   Window_Location.m_ensureListParameterMap__();
   return Window_Location.f_listParamMap__org_gwtproject_user_window_client_Window_Location_;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  static m_getPath__() {
   Window_Location.$clinit();
   return window.window.location.pathname;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  static m_getPort__() {
   Window_Location.$clinit();
   return window.window.location.port;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  static m_getProtocol__() {
   Window_Location.$clinit();
   return window.window.location.protocol;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  static m_getQueryString__() {
   Window_Location.$clinit();
   return window.window.location.search;
  }
- /**
-  * @public
-  */
+ 
  static m_reload__() {
   Window_Location.$clinit();
   window.window.location.reload();
  }
- /**
-  * @param {?string} newURL
-  * @public
-  */
- static m_replace__java_lang_String(newURL) {
+ 
+ static m_replace__java_lang_String(/** ?string */ newURL) {
   Window_Location.$clinit();
   window.window.location.replace(newURL);
  }
- /**
-  * @param {?string} queryString
-  * @return {Map<?string, List<?string>>}
-  * @public
-  */
- static m_buildListParamMap__java_lang_String(queryString) {
+ /** @return {Map<?string, List<?string>>} */
+ static m_buildListParamMap__java_lang_String(/** ?string */ queryString) {
   Window_Location.$clinit();
-  let out = /**@type {!HashMap<?string, List<?string>>} */ (HashMap.$create__());
+  let out = /**@type {!HashMap<?string, List<?string>>}*/ (HashMap.$create__());
   if (!$Equality.$same(queryString, null) && j_l_String.m_length__java_lang_String(queryString) > 1) {
    let qs = j_l_String.m_substring__java_lang_String__int(queryString, 1);
    for (let $array = j_l_String.m_split__java_lang_String__java_lang_String(qs, "&"), $index = 0; $index < $array.length; $index++) {
@@ -186,23 +138,21 @@ class Window_Location extends j_l_Object {
     try {
      val = URL.m_decodeQueryString__java_lang_String(val);
     } catch (__$exc) {}
-    let values = /**@type {List<?string>} */ ($Casts.$to(out.m_computeIfAbsent__java_lang_Object__java_util_function_Function(key, j_u_function_Function.$adapt((k) =>{
-     let k_1 = /**@type {?string} */ ($Casts.$to(k, j_l_String));
-     return /**@type {!ArrayList<?string>} */ (ArrayList.$create__());
+    let values = /**@type {List<?string>}*/ ($Casts.$to(out.m_computeIfAbsent__java_lang_Object__java_util_function_Function(key, j_u_function_Function.$adapt((k) =>{
+     let k_1 = /**@type {?string}*/ ($Casts.$to(k, j_l_String));
+     return /**@type {!ArrayList<?string>}*/ (ArrayList.$create__());
     })), List));
     values.add(val);
    }
   }
   for (let $iterator = out.m_entrySet__().m_iterator__(); $iterator.m_hasNext__(); ) {
-   let entry = /**@type {Entry<?string, List<?string>>} */ ($Casts.$to($iterator.m_next__(), Entry));
-   entry.m_setValue__java_lang_Object(/**@type {List<?string>} */ (Collections.m_unmodifiableList__java_util_List(/**@type {List<?string>} */ ($Casts.$to(entry.m_getValue__(), List)))));
+   let entry = /**@type {Entry<?string, List<?string>>}*/ ($Casts.$to($iterator.m_next__(), Entry));
+   entry.m_setValue__java_lang_Object(/**@type {List<?string>}*/ (Collections.m_unmodifiableList__java_util_List(/**@type {List<?string>}*/ ($Casts.$to(entry.m_getValue__(), List)))));
   }
-  out = /**@type {Map<?string, List<?string>>} */ (Collections.m_unmodifiableMap__java_util_Map(out));
+  out = /**@type {Map<?string, List<?string>>}*/ (Collections.m_unmodifiableMap__java_util_Map(out));
   return out;
  }
- /**
-  * @public
-  */
+ 
  static m_ensureListParameterMap__() {
   let currentQueryString = Window_Location.m_getQueryString__();
   if ($Equality.$same(Window_Location.f_listParamMap__org_gwtproject_user_window_client_Window_Location_, null) || !j_l_String.m_equals__java_lang_String__java_lang_Object(Window_Location.f_cachedQueryString__org_gwtproject_user_window_client_Window_Location_, currentQueryString)) {
@@ -210,41 +160,28 @@ class Window_Location extends j_l_Object {
    Window_Location.f_cachedQueryString__org_gwtproject_user_window_client_Window_Location_ = currentQueryString;
   }
  }
- /**
-  * @return {!Window_Location}
-  * @public
-  */
+ /** @return {!Window_Location} */
  static $create__() {
   let $instance = new Window_Location();
   $instance.$ctor__org_gwtproject_user_window_client_Window_Location__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_window_client_Window_Location__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Window_Location.$clinit = () =>{};
   Window_Location.$loadModules();
   j_l_Object.$clinit();
   Window_Location.f_cachedQueryString__org_gwtproject_user_window_client_Window_Location_ = "";
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Window_Location;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Integer = goog.module.get('java.lang.Integer$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -264,9 +201,9 @@ class Window_Location extends j_l_Object {
 }
 $Util.$setClassMetadata(Window_Location, 'org.gwtproject.user.window.client.Window$Location');
 
-/** @public {?string} */
+/**@type {?string}*/
 Window_Location.f_cachedQueryString__org_gwtproject_user_window_client_Window_Location_;
-/** @public {Map<?string, List<?string>>} */
+/**@type {Map<?string, List<?string>>}*/
 Window_Location.f_listParamMap__org_gwtproject_user_window_client_Window_Location_;
 
 exports = Window_Location; 

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"QuoteBuilder.impl.java.js",
-"lineCount":32,
-"mappings":"A;;;;;;;;;;;MAuBiB,Y;;;;;;;CASF,8C,CAAaA,I;;;;;;;CASb,wB,CAAuBA,I;;;;QAlBrB,O;EAAAC,+B;EAAAA;",
+"lineCount":20,
+"mappings":"A;;;;;;;;;;;MAuBiB,Y;;CASF,8C,gBAAaA,I;;CASb,wB,gBAAuBA,I;;QAlBrB,O;EAAAC,+B;EAAAA;",
 "sources":["QuoteBuilder.java"],
 "names":["cite","org.gwtproject.dom.builder.shared.QuoteBuilder.<clinit>"]
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MultiWordSuggestOracle$MultiWordSuggestion.impl.java.js",
-"lineCount":87,
-"mappings":"A;;;;;;;;;;;MAyEsB,mB;;;;CAAA,W;EAAAA,Q;EAAAA;OACS,0FADTA,C;EAAAA;OAEH,8FAFGA,C;;;;;;;QAOX,S;EAAAC,8B;EAAAA,0C;EAAAA,8F;EAAAA,iB;;;;;;CAAA,iF;EAAAC,iC;;;;;;;;;QAUA,2C,CAA2BC,iB,EAAsCC,a;EAAjEH,8B;EAAAA,0C;EAAAA,gK;EAAAA,iB;;;;;;;;CAAA,mH,CAA2BE,iB,EAAsCC,a;EAAjEF,iC;EACLA,wH;EACAA,gH;;;;;;;CAIY,oB;EACZG,uG;;;;;;;CAGY,wB;EACZC,2G;;;;;QA5BgB,O;EAAAC,sC;EAAAA,mC;EAAAA;",
+"lineCount":61,
+"mappings":"A;;;;;;;;;;;MAyEsB,mB;;CAAA,W;EAAAA,Q;EAAAA;OACS,0FADTA,C;EAAAA;OAEH,8FAFGA,C;;;;QAOX,S;EAAAC,8B;EAAAA,0C;EAAAA,8F;EAAAA,iB;;;;CAAA,iF;EAAAC,iC;;;;QAUA,2C,gBAA2BC,iB,iBAAsCC,a;EAAjEH,8B;EAAAA,0C;EAAAA,gK;EAAAA,iB;;;;CAAA,mH,gBAA2BE,iB,iBAAsCC,a;EAAjEF,iC;EACLA,wH;EACAA,gH;;;CAIY,oB;EACZG,uG;;;CAGY,wB;EACZC,2G;;;QA5BgB,O;EAAAC,sC;EAAAA,mC;EAAAA;",
 "sources":["MultiWordSuggestOracle.java"],
 "names":["org.gwtproject.user.client.ui.MultiWordSuggestOracle$MultiWordSuggestion.<synthetic: ctor_js>","org.gwtproject.user.client.ui.MultiWordSuggestOracle$MultiWordSuggestion.<synthetic: ctor_create>","org.gwtproject.user.client.ui.MultiWordSuggestOracle$MultiWordSuggestion.<init>","replacementString","displayString","org.gwtproject.user.client.ui.MultiWordSuggestOracle$MultiWordSuggestion.getDisplayString","org.gwtproject.user.client.ui.MultiWordSuggestOracle$MultiWordSuggestion.getReplacementString","org.gwtproject.user.client.ui.MultiWordSuggestOracle$MultiWordSuggestion.<clinit>"]
 }

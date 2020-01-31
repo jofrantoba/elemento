@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ValueUpdater$$LambdaAdaptor.impl.java.js",
-"lineCount":47,
-"mappings":"A;;;;;;;;;;MAuBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sE;EAAAA,4H;;;;;;CAAA,kH;EAAAC,iC;EAAAA,yE;;;;;;CAAA,0B;;GAAAC,oF;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":36,
+"mappings":"A;;;;;;;;;;MAuBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sE;EAAAA,4H;;;CAAA,kH;EAAAC,iC;EAAAA,yE;;;CAAA,0B;;GAAAC,oF;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["ValueUpdater.java"],
 "names":["org.gwtproject.cell.client.ValueUpdater$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.cell.client.ValueUpdater$$LambdaAdaptor.<init>","org.gwtproject.cell.client.ValueUpdater$$LambdaAdaptor.update","org.gwtproject.cell.client.ValueUpdater$$LambdaAdaptor.<clinit>"]
 }

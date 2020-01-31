@@ -8,42 +8,26 @@ let IThenable_$Overlay = goog.forwardDeclare('elemental2.promise.IThenable.$Over
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class FetchEvent_$Overlay {
- /**
-  * @param {!FetchEvent} $thisArg
-  * @param {IThenable<Response>} r
-  * @public
-  */
- static m_respondWith__$devirt__elemental2_dom_FetchEvent__elemental2_promise_IThenable($thisArg, r) {
+ 
+ static m_respondWith__$devirt__elemental2_dom_FetchEvent__elemental2_promise_IThenable(/** !FetchEvent */ $thisArg, /** IThenable<Response> */ r) {
   FetchEvent_$Overlay.$clinit();
-  $thisArg.respondWith(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(r)));
+  $thisArg.respondWith(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(r)));
  }
- /**
-  * @param {!FetchEvent} $thisArg
-  * @param {Response} r
-  * @public
-  */
- static m_respondWith__$devirt__elemental2_dom_FetchEvent__elemental2_dom_Response($thisArg, r) {
+ 
+ static m_respondWith__$devirt__elemental2_dom_FetchEvent__elemental2_dom_Response(/** !FetchEvent */ $thisArg, /** Response */ r) {
   FetchEvent_$Overlay.$clinit();
-  $thisArg.respondWith(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(r)));
+  $thisArg.respondWith(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(r)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   FetchEvent_$Overlay.$clinit = () =>{};
   FetchEvent_$Overlay.$loadModules();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof FetchEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CanPlayThroughHandler.impl.java.js",
-"lineCount":34,
-"mappings":"A;;;;;;;;;;;;MAyBiB,qB;;;;;;CAOV,uE,CAAqCA,K;;;;;;QAP3B,M;EAAAC,gC;EAAAA,8B;;;;;QAAA,O;EAAAC,wC;EAAAA;",
+"lineCount":24,
+"mappings":"A;;;;;;;;;;;;MAyBiB,qB;;CAOV,uE,4BAAqCA,K;;QAP3B,M;EAAAC,gC;EAAAA,8B;;;QAAA,O;EAAAC,wC;EAAAA;",
 "sources":["CanPlayThroughHandler.java"],
 "names":["event","org.gwtproject.event.dom.client.CanPlayThroughHandler.<synthetic: adapt_lambda>","org.gwtproject.event.dom.client.CanPlayThroughHandler.<clinit>"]
 }

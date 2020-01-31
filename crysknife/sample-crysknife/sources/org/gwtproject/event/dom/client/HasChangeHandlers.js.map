@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasChangeHandlers.impl.java.js",
-"lineCount":26,
-"mappings":"A;;;;;;;;;;;;MAwBiB,iB;;;;;;;CAQK,iE,CAA+BA,O;;;;QARpC,O;EAAAC,oC;EAAAA;",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;;;MAwBiB,iB;;CAQK,iE,sBAA+BA,O;;QARpC,O;EAAAC,oC;EAAAA;",
 "sources":["HasChangeHandlers.java"],
 "names":["handler","org.gwtproject.event.dom.client.HasChangeHandlers.<clinit>"]
 }

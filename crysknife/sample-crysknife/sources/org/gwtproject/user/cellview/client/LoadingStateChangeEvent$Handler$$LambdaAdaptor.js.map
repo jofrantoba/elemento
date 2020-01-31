@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"LoadingStateChangeEvent$Handler$$LambdaAdaptor.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;MA4BmB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;kG;EAAAA,oL;;;;;;CAAA,0K;EAAAC,iC;EAAAA,qG;;;;;;CAAA,oF;;GAAAC,gH;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MA4BmB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;kG;EAAAA,oL;;;CAAA,0K;EAAAC,iC;EAAAA,qG;;;CAAA,oF;;GAAAC,gH;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["LoadingStateChangeEvent.java"],
 "names":["org.gwtproject.user.cellview.client.LoadingStateChangeEvent$Handler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.cellview.client.LoadingStateChangeEvent$Handler$$LambdaAdaptor.<init>","org.gwtproject.user.cellview.client.LoadingStateChangeEvent$Handler$$LambdaAdaptor.onLoadingStateChanged","org.gwtproject.user.cellview.client.LoadingStateChangeEvent$Handler$$LambdaAdaptor.<clinit>"]
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Location$AssignUrlUnionType$$Overlay.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;MAyBmB,2B;;;;;;QAEoB,sB,CAAUA,C;EAAVC,sC;EACjCA,wD;;;;;;;QAIa,+D;EAAAC,sC;EACbA,iD;;;;;;;QAIiB,mE;EAAAC,sC;EACjBA,8F;;;;;;;QAIc,+D;EAAAC,sC;EACdA,0D;;;;;;;QAIc,mE;EAAAC,sC;EACdA,wD;;;;;QAvBa,O;EAAAC,8C;EAAAA;",
+"lineCount":39,
+"mappings":"A;;;;;;;;;MAyBmB,2B;;QAEoB,sB,UAAUA,C;EAAVC,sC;EACjCA,uD;;;QAIa,+D;EAAAC,sC;EACbA,iD;;;QAIiB,mE;EAAAC,sC;EACjBA,6F;;;QAIc,+D;EAAAC,sC;EACdA,yD;;;QAIc,mE;EAAAC,sC;EACdA,uD;;;QAvBa,O;EAAAC,8C;EAAAA;",
 "sources":["Location.java"],
 "names":["o","elemental2.dom.Location$AssignUrlUnionType$$Overlay.of","elemental2.dom.Location$AssignUrlUnionType$$Overlay.asString__$devirt","elemental2.dom.Location$AssignUrlUnionType$$Overlay.asTrustedURL__$devirt","elemental2.dom.Location$AssignUrlUnionType$$Overlay.isString__$devirt","elemental2.dom.Location$AssignUrlUnionType$$Overlay.isTrustedURL__$devirt","elemental2.dom.Location$AssignUrlUnionType$$Overlay.<clinit>"]
 }

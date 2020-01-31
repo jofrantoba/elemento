@@ -15,80 +15,51 @@ let $1 = goog.forwardDeclare('org.gwtproject.editor.client.impl.SimpleViolation.
  * @implements {Iterable<SimpleViolation>}
   */
 class ConstraintViolationIterable extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Iterable<ConstraintViolation<?>>} */
+  /**@type {Iterable<ConstraintViolation<?>>}*/
   this.f_violations__org_gwtproject_editor_client_impl_SimpleViolation_ConstraintViolationIterable_;
  }
- /**
-  * @param {Iterable<ConstraintViolation<?>>} violations
-  * @return {!ConstraintViolationIterable}
-  * @public
-  */
- static $create__java_lang_Iterable(violations) {
+ /** @return {!ConstraintViolationIterable} */
+ static $create__java_lang_Iterable(/** Iterable<ConstraintViolation<?>> */ violations) {
   ConstraintViolationIterable.$clinit();
   let $instance = new ConstraintViolationIterable();
   $instance.$ctor__org_gwtproject_editor_client_impl_SimpleViolation_ConstraintViolationIterable__java_lang_Iterable(violations);
   return $instance;
  }
- /**
-  * @param {Iterable<ConstraintViolation<?>>} violations
-  * @public
-  */
- $ctor__org_gwtproject_editor_client_impl_SimpleViolation_ConstraintViolationIterable__java_lang_Iterable(violations) {
+ 
+ $ctor__org_gwtproject_editor_client_impl_SimpleViolation_ConstraintViolationIterable__java_lang_Iterable(/** Iterable<ConstraintViolation<?>> */ violations) {
   this.$ctor__java_lang_Object__();
   this.f_violations__org_gwtproject_editor_client_impl_SimpleViolation_ConstraintViolationIterable_ = violations;
  }
- /**
-  * @override
-  * @return {Iterator<SimpleViolation>}
-  * @public
-  */
+ /** @override @return {Iterator<SimpleViolation>} */
  m_iterator__() {
   let source = this.f_violations__org_gwtproject_editor_client_impl_SimpleViolation_ConstraintViolationIterable_.m_iterator__();
   return $1.$create__org_gwtproject_editor_client_impl_SimpleViolation_ConstraintViolationIterable__java_util_Iterator(this, source);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<SimpleViolation>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<SimpleViolation>} */
  m_spliterator__() {
-  return /**@type {Spliterator<SimpleViolation>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<SimpleViolation>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ConstraintViolationIterable.$clinit = () =>{};
   ConstraintViolationIterable.$loadModules();
   j_l_Object.$clinit();
   Iterable.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ConstraintViolationIterable;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $1 = goog.module.get('org.gwtproject.editor.client.impl.SimpleViolation.ConstraintViolationIterable.$1$impl');
  }

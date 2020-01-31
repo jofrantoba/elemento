@@ -11,44 +11,27 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.safehtml.shared.annotat
  * @extends {Annotation}
  */
 class SuppressIsSafeUriCastCheck {
- /**
-  * @param {?function():Class<?>} fn
-  * @return {SuppressIsSafeUriCastCheck}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {SuppressIsSafeUriCastCheck} */
+ static $adapt(/** ?function():Class<?> */ fn) {
   SuppressIsSafeUriCastCheck.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SuppressIsSafeUriCastCheck.$clinit = () =>{};
   SuppressIsSafeUriCastCheck.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_safehtml_shared_annotations_SuppressIsSafeUriCastCheck = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_safehtml_shared_annotations_SuppressIsSafeUriCastCheck = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_safehtml_shared_annotations_SuppressIsSafeUriCastCheck;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.safehtml.shared.annotations.SuppressIsSafeUriCastCheck.$LambdaAdaptor$impl');
  }

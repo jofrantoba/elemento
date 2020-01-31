@@ -10,146 +10,58 @@ let List = goog.forwardDeclare('java.util.List$impl');
  * @extends {Comparable<GwtLocale>}
  */
 class GwtLocale {
- /**
-  * @abstract
-  * @param {GwtLocale} o
-  * @return {number}
-  * @public
-  */
- m_compareTo__org_gwtproject_i18n_shared_GwtLocale(o) {}
- /**
-  * @abstract
-  * @return {List<GwtLocale>}
-  * @public
-  */
+ /** @abstract @return {number} */
+ m_compareTo__org_gwtproject_i18n_shared_GwtLocale(/** GwtLocale */ o) {}
+ /** @abstract @return {List<GwtLocale>} */
  m_getAliases__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getAsString__() {}
- /**
-  * @abstract
-  * @return {GwtLocale}
-  * @public
-  */
+ /** @abstract @return {GwtLocale} */
  m_getCanonicalForm__() {}
- /**
-  * @abstract
-  * @return {List<GwtLocale>}
-  * @public
-  */
+ /** @abstract @return {List<GwtLocale>} */
  m_getCompleteSearchList__() {}
- /**
-  * @abstract
-  * @return {List<GwtLocale>}
-  * @public
-  */
+ /** @abstract @return {List<GwtLocale>} */
  m_getInheritanceChain__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getLanguage__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getLanguageNotNull__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getRegion__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getRegionNotNull__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getScript__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getScriptNotNull__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getVariant__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getVariantNotNull__() {}
- /**
-  * @abstract
-  * @param {GwtLocale} parent
-  * @return {boolean}
-  * @public
-  */
- m_inheritsFrom__org_gwtproject_i18n_shared_GwtLocale(parent) {}
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
+ m_inheritsFrom__org_gwtproject_i18n_shared_GwtLocale(/** GwtLocale */ parent) {}
+ /** @abstract @return {boolean} */
  m_isDefault__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  toString() {}
- /**
-  * @abstract
-  * @param {GwtLocale} other
-  * @return {boolean}
-  * @public
-  */
- m_usesSameScript__org_gwtproject_i18n_shared_GwtLocale(other) {}
- /**
-  * @public
-  */
+ /** @abstract @return {boolean} */
+ m_usesSameScript__org_gwtproject_i18n_shared_GwtLocale(/** GwtLocale */ other) {}
+ 
  static $clinit() {
   GwtLocale.$clinit = () =>{};
   GwtLocale.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Comparable.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_i18n_shared_GwtLocale = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Comparable.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_i18n_shared_GwtLocale = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_i18n_shared_GwtLocale;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }
@@ -157,7 +69,7 @@ $Util.$setClassMetadataForInterface(GwtLocale, 'org.gwtproject.i18n.shared.GwtLo
 
 GwtLocale.$markImplementor(/** @type {Function} */ (GwtLocale));
 
-/** @public {?string} @const */
+/**@const {?string}*/
 GwtLocale.f_DEFAULT_LOCALE__org_gwtproject_i18n_shared_GwtLocale = "default";
 
 exports = GwtLocale; 

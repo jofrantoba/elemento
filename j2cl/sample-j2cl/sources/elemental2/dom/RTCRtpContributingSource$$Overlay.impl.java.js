@@ -7,34 +7,22 @@ let $Overlay = goog.forwardDeclare('elemental2.dom.RTCRtpContributingSource.GetT
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class RTCRtpContributingSource_$Overlay {
- /**
-  * @param {!RTCRtpContributingSource} $thisArg
-  * @param {Date} timestamp
-  * @public
-  */
- static m_setTimestamp__$devirt__elemental2_dom_RTCRtpContributingSource__elemental2_core_JsDate($thisArg, timestamp) {
+ 
+ static m_setTimestamp__$devirt__elemental2_dom_RTCRtpContributingSource__elemental2_core_JsDate(/** !RTCRtpContributingSource */ $thisArg, /** Date */ timestamp) {
   RTCRtpContributingSource_$Overlay.$clinit();
-  $thisArg.timestamp = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(timestamp));
+  $thisArg.timestamp = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(timestamp));
  }
- /**
-  * @param {!RTCRtpContributingSource} $thisArg
-  * @param {number} timestamp
-  * @public
-  */
- static m_setTimestamp__$devirt__elemental2_dom_RTCRtpContributingSource__double($thisArg, timestamp) {
+ 
+ static m_setTimestamp__$devirt__elemental2_dom_RTCRtpContributingSource__double(/** !RTCRtpContributingSource */ $thisArg, /** number */ timestamp) {
   RTCRtpContributingSource_$Overlay.$clinit();
-  $thisArg.timestamp = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(timestamp));
+  $thisArg.timestamp = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(timestamp));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RTCRtpContributingSource_$Overlay.$clinit = () =>{};
   RTCRtpContributingSource_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }

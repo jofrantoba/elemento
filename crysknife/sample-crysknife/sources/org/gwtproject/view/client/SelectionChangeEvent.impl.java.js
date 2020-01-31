@@ -13,93 +13,61 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {Event<Handler>}
   */
 class SelectionChangeEvent extends Event {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {HasSelectionChangedHandlers} source
-  * @public
-  */
- static m_fire__org_gwtproject_view_client_SelectionChangeEvent_HasSelectionChangedHandlers(source) {
+ 
+ static m_fire__org_gwtproject_view_client_SelectionChangeEvent_HasSelectionChangedHandlers(/** HasSelectionChangedHandlers */ source) {
   SelectionChangeEvent.$clinit();
   if (!$Equality.$same(SelectionChangeEvent.f_TYPE__org_gwtproject_view_client_SelectionChangeEvent_, null)) {
    let event = SelectionChangeEvent.$create__();
    source.m_fireEvent__org_gwtproject_event_shared_Event(event);
   }
  }
- /**
-  * @return {Type<Handler>}
-  * @public
-  */
+ /** @return {Type<Handler>} */
  static m_getType__() {
   SelectionChangeEvent.$clinit();
   if ($Equality.$same(SelectionChangeEvent.f_TYPE__org_gwtproject_view_client_SelectionChangeEvent_, null)) {
-   SelectionChangeEvent.f_TYPE__org_gwtproject_view_client_SelectionChangeEvent_ = /**@type {!Type<Handler>} */ (Type.$create__());
+   SelectionChangeEvent.f_TYPE__org_gwtproject_view_client_SelectionChangeEvent_ = /**@type {!Type<Handler>}*/ (Type.$create__());
   }
   return SelectionChangeEvent.f_TYPE__org_gwtproject_view_client_SelectionChangeEvent_;
  }
- /**
-  * @return {!SelectionChangeEvent}
-  * @public
-  */
+ /** @return {!SelectionChangeEvent} */
  static $create__() {
   SelectionChangeEvent.$clinit();
   let $instance = new SelectionChangeEvent();
   $instance.$ctor__org_gwtproject_view_client_SelectionChangeEvent__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_view_client_SelectionChangeEvent__() {
   this.$ctor__org_gwtproject_event_shared_Event__();
  }
- /**
-  * @override
-  * @return {Type<Handler>}
-  * @public
-  */
+ /** @override @return {Type<Handler>} */
  m_getAssociatedType__() {
   return SelectionChangeEvent.f_TYPE__org_gwtproject_view_client_SelectionChangeEvent_;
  }
- /**
-  * @param {Handler} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_view_client_SelectionChangeEvent_Handler(handler) {
+ 
+ m_dispatch__org_gwtproject_view_client_SelectionChangeEvent_Handler(/** Handler */ handler) {
   handler.m_onSelectionChange__org_gwtproject_view_client_SelectionChangeEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_view_client_SelectionChangeEvent_Handler(/**@type {Handler} */ ($Casts.$to(arg0, Handler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_view_client_SelectionChangeEvent_Handler(/**@type {Handler}*/ ($Casts.$to(arg0, Handler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SelectionChangeEvent.$clinit = () =>{};
   SelectionChangeEvent.$loadModules();
   Event.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SelectionChangeEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   Type = goog.module.get('org.gwtproject.event.shared.Event.Type$impl');
@@ -110,7 +78,7 @@ class SelectionChangeEvent extends Event {
 }
 $Util.$setClassMetadata(SelectionChangeEvent, 'org.gwtproject.view.client.SelectionChangeEvent');
 
-/** @public {Type<Handler>} */
+/**@type {Type<Handler>}*/
 SelectionChangeEvent.f_TYPE__org_gwtproject_view_client_SelectionChangeEvent_;
 
 exports = SelectionChangeEvent; 

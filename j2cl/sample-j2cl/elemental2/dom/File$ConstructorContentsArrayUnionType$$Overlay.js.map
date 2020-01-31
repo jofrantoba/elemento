@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"File$ConstructorContentsArrayUnionType$$Overlay.impl.java.js",
-"lineCount":80,
-"mappings":"A;;;;;;;;;;MA4BmB,0C;;;;;;QAE+B,sB,CAAUA,C;EAAVC,qD;EAC5CA,wD;;;;;;;QAIkB,+E;EAAAC,qD;EAClBA,+F;;;;;;;QAIW,wE;EAAAC,qD;EACXA,6F;;;;;;;QAIa,0E;EAAAC,qD;EACbA,iD;;;;;;;QAIc,+E;EAAAC,qD;EACdA,wD;;;;;;;QAIc,wE;EAAAC,qD;EACdA,6D;;;;;;;QAIc,0E;EAAAC,qD;EACdA,0D;;;;;QAjCa,O;EAAAC,6D;EAAAA;",
+"lineCount":50,
+"mappings":"A;;;;;;;;;;MA4BmB,0C;;QAE+B,sB,UAAUA,C;EAAVC,qD;EAC5CA,uD;;;QAIkB,+E;EAAAC,qD;EAClBA,8F;;;QAIW,wE;EAAAC,qD;EACXA,4F;;;QAIa,0E;EAAAC,qD;EACbA,iD;;;QAIc,+E;EAAAC,qD;EACdA,uD;;;QAIc,wE;EAAAC,qD;EACdA,4D;;;QAIc,0E;EAAAC,qD;EACdA,yD;;;QAjCa,O;EAAAC,6D;EAAAA;",
 "sources":["File.java"],
 "names":["o","elemental2.dom.File$ConstructorContentsArrayUnionType$$Overlay.of","elemental2.dom.File$ConstructorContentsArrayUnionType$$Overlay.asArrayBuffer__$devirt","elemental2.dom.File$ConstructorContentsArrayUnionType$$Overlay.asBlob__$devirt","elemental2.dom.File$ConstructorContentsArrayUnionType$$Overlay.asString__$devirt","elemental2.dom.File$ConstructorContentsArrayUnionType$$Overlay.isArrayBuffer__$devirt","elemental2.dom.File$ConstructorContentsArrayUnionType$$Overlay.isBlob__$devirt","elemental2.dom.File$ConstructorContentsArrayUnionType$$Overlay.isString__$devirt","elemental2.dom.File$ConstructorContentsArrayUnionType$$Overlay.<clinit>"]
 }

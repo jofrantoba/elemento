@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SuggestOracle.impl.java.js",
-"lineCount":68,
-"mappings":"A;;;;;;;;;;;;;;;;MA8BsB,a;;;;CAAA,W;EAAAA,Q;EAAAA;OACH,6DADGA,C;;;;;CA8Qb,oD;EAAAC,iC;EAAAA,8D;;;;;;CAUQ,uB;EACbC,a;;;;;;;CAgBU,sI,CAAkCC,O,EAAkBC,Q;EAC9DC,+G;EACAA,sN;;;;;;;;CAWmB,+H,CAA2BF,O,EAAkBC,Q;;;;CAtT9C,sD;EACpBH,0K;;;;;QADoB,O;EAAAK,gC;EAAAA,6B;EAAAA;",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;;;;;;MA8BsB,a;;CAAA,W;EAAAA,Q;EAAAA;OACH,6DADGA,C;;;CA8Qb,oD;EAAAC,iC;EAAAA,8D;;;CAUQ,uB;EACbC,a;;;CAgBU,sI,gBAAkCC,O,kBAAkBC,Q;EAC9DC,+G;EACAA,sN;;;CAWmB,+H,gBAA2BF,O,kBAAkBC,Q;;CAtT9C,sD;EACpBH,yK;;;QADoB,O;EAAAK,gC;EAAAA,6B;EAAAA;",
 "sources":["SuggestOracle.java"],
 "names":["org.gwtproject.user.client.ui.SuggestOracle.<synthetic: ctor_js>","org.gwtproject.user.client.ui.SuggestOracle.<init>","org.gwtproject.user.client.ui.SuggestOracle.isDisplayStringHTML","request","callback","org.gwtproject.user.client.ui.SuggestOracle.requestDefaultSuggestions","org.gwtproject.user.client.ui.SuggestOracle.<clinit>"]
 }

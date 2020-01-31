@@ -6,59 +6,29 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @interface
  */
 class MatchResult {
- /**
-  * @abstract
-  * @param {number} index
-  * @return {?string}
-  * @public
-  */
- m_getGroup__int(index) {}
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {?string} */
+ m_getGroup__int(/** number */ index) {}
+ /** @abstract @return {number} */
  m_getGroupCount__() {}
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {number} */
  m_getIndex__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getInput__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MatchResult.$clinit = () =>{};
   MatchResult.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_regexp_shared_MatchResult = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_regexp_shared_MatchResult = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_regexp_shared_MatchResult;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

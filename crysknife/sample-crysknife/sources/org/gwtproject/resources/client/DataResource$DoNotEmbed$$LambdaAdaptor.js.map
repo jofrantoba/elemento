@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DataResource$DoNotEmbed$$LambdaAdaptor.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;;;;MAyDa,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sF;EAAAA,4J;;;;;;CAAA,kJ;EAAAC,iC;EAAAA,yF;;;;;;CAAA,kB;EAAAC,0C;EAAAA,sH;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;;MAyDa,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sF;EAAAA,4J;;;CAAA,kJ;EAAAC,iC;EAAAA,yF;;;CAAA,kB;EAAAC,0C;EAAAA,sH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["DataResource.java"],
 "names":["org.gwtproject.resources.client.DataResource$DoNotEmbed$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.resources.client.DataResource$DoNotEmbed$$LambdaAdaptor.<init>","org.gwtproject.resources.client.DataResource$DoNotEmbed$$LambdaAdaptor.annotationType","org.gwtproject.resources.client.DataResource$DoNotEmbed$$LambdaAdaptor.<clinit>"]
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DoubleBox.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;;;;;;;;MAwBa,S;;;;CAAA,W;EAAAA,Q;;;;;;QAEJ,S;EAAAC,oB;EAAAA,gC;EAAAA,6D;EAAAA,iB;;;;;CAAA,gD;EACLC,8T;;;;;QAHS,O;EAAAC,4B;EAAAA,yB;EAAAA;",
+"lineCount":33,
+"mappings":"A;;;;;;;;;;;;MAwBa,S;;CAAA,W;EAAAA,Q;;;QAEJ,S;EAAAC,oB;EAAAA,gC;EAAAA,6D;EAAAA,iB;;;CAAA,gD;EACLC,8T;;;QAHS,O;EAAAC,4B;EAAAA,yB;EAAAA;",
 "sources":["DoubleBox.java"],
 "names":["org.gwtproject.user.client.ui.DoubleBox.<synthetic: ctor_js>","org.gwtproject.user.client.ui.DoubleBox.<synthetic: ctor_create>","org.gwtproject.user.client.ui.DoubleBox.<init>","org.gwtproject.user.client.ui.DoubleBox.<clinit>"]
 }

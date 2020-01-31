@@ -8,53 +8,35 @@ const AlternateMessageSelector = goog.require('org.gwtproject.i18n.shared.Altern
  * @implements {AlternateMessageSelector}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(?string):boolean} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(?string):boolean */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(?string):boolean} */
+  /**@type {?function(?string):boolean}*/
   this.f_$$fn__org_gwtproject_i18n_shared_AlternateMessageSelector_$LambdaAdaptor;
   this.$ctor__org_gwtproject_i18n_shared_AlternateMessageSelector_$LambdaAdaptor__org_gwtproject_i18n_shared_AlternateMessageSelector_$JsFunction(fn);
  }
- /**
-  * @param {?function(?string):boolean} fn
-  * @public
-  */
- $ctor__org_gwtproject_i18n_shared_AlternateMessageSelector_$LambdaAdaptor__org_gwtproject_i18n_shared_AlternateMessageSelector_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_i18n_shared_AlternateMessageSelector_$LambdaAdaptor__org_gwtproject_i18n_shared_AlternateMessageSelector_$JsFunction(/** ?function(?string):boolean */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_i18n_shared_AlternateMessageSelector_$LambdaAdaptor = fn;
  }
- /**
-  * @param {?string} arg0
-  * @return {boolean}
-  * @public
-  */
- m_isFormAcceptable__java_lang_String(arg0) {
+ /** @return {boolean} */
+ m_isFormAcceptable__java_lang_String(/** ?string */ arg0) {
   let /** ?function(?string):boolean */ $function;
   return ($function = this.f_$$fn__org_gwtproject_i18n_shared_AlternateMessageSelector_$LambdaAdaptor, $function(arg0));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

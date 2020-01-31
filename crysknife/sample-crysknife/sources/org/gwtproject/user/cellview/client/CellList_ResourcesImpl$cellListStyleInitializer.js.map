@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellList_ResourcesImpl$cellListStyleInitializer.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;MA2DuB,wB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,+C;EAAAA,yG;EAAAA,iB;;;;;CAAA,4F;EAAAC,iC;;;;;;QAIG,O;EAAAC,mC;EACpBA,4G;;;;;QALiB,O;EAAAC,2C;EAAAA,wC;EAAAA,qB;EAEjBA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;MA2DuB,wB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,+C;EAAAA,yG;EAAAA,iB;;;CAAA,4F;EAAAC,iC;;;QAIG,O;EAAAC,mC;EACpBA,4G;;;QALiB,O;EAAAC,2C;EAAAA,wC;EAAAA,qB;EAEjBA;",
 "sources":["CellList_ResourcesImpl.java"],
 "names":["org.gwtproject.user.cellview.client.CellList_ResourcesImpl$cellListStyleInitializer.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.CellList_ResourcesImpl$cellListStyleInitializer.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.CellList_ResourcesImpl$cellListStyleInitializer.<init>","org.gwtproject.user.cellview.client.CellList_ResourcesImpl$cellListStyleInitializer.get","org.gwtproject.user.cellview.client.CellList_ResourcesImpl$cellListStyleInitializer.<clinit>"]
 }

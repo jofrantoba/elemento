@@ -9,46 +9,25 @@ let NumberConstants = goog.forwardDeclare('org.gwtproject.i18n.client.constants.
  * @interface
  */
 class LocaleConstants {
- /**
-  * @abstract
-  * @return {DateTimeConstants}
-  * @public
-  */
+ /** @abstract @return {DateTimeConstants} */
  m_getDateTimeConstants__() {}
- /**
-  * @abstract
-  * @return {NumberConstants}
-  * @public
-  */
+ /** @abstract @return {NumberConstants} */
  m_getNumberConstants__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   LocaleConstants.$clinit = () =>{};
   LocaleConstants.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_i18n_client_constants_LocaleConstants = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_i18n_client_constants_LocaleConstants = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_i18n_client_constants_LocaleConstants;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

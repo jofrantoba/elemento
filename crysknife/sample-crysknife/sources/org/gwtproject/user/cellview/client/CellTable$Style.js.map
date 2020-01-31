@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellTable$Style.impl.java.js",
-"lineCount":198,
-"mappings":"A;;;;;;;;;MAkKmB,K;;;;;;CASR,iB;;;;;;CAKA,oB;;;;;;CAKA,wB;;;;;;CAKA,wB;;;;;;CAKA,8B;;;;;;CAKA,8B;;;;;;CAKA,mB;;;;;;CAKA,mB;;;;;;CAKA,uB;;;;;;CAKA,2B;;;;;;CAKA,iC;;;;;;CAKA,gC;;;;;;CAKA,oC;;;;;;CAKA,uB;;;;;;CAKA,6B;;;;;;CAKA,6B;;;;;;CAKA,oB;;;;;;CAKA,mB;;;;;;CAKA,uB;;;;;;CAKA,wB;;;;;;CAKA,4B;;;;;;CAKA,2B;;;;;;CAKA,kC;;;;;;CAKA,mC;;;;;;CAKA,mB;;;;QAjIQ,O;EAAAA,wB;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AACf;MAGO,kEAHP;",
+"lineCount":85,
+"mappings":"A;;;;;;;;;MAkKmB,K;;CASR,iB;;CAKA,oB;;CAKA,wB;;CAKA,wB;;CAKA,8B;;CAKA,8B;;CAKA,mB;;CAKA,mB;;CAKA,uB;;CAKA,2B;;CAKA,iC;;CAKA,gC;;CAKA,oC;;CAKA,uB;;CAKA,6B;;CAKA,6B;;CAKA,oB;;CAKA,mB;;CAKA,uB;;CAKA,wB;;CAKA,4B;;CAKA,2B;;CAKA,kC;;CAKA,mC;;CAKA,mB;;QAjIQ,O;EAAAA,wB;EAAAA,qB;;;;;;;;;;;;;;;;;;;;AACf;MAGO,kEAHP;",
 "sources":["CellTable.java"],
 "names":["org.gwtproject.user.cellview.client.CellTable$Style.<clinit>"]
 }

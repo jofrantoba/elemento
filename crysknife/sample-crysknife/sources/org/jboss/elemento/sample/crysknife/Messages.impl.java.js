@@ -9,12 +9,8 @@ let SafeHtmlUtils = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHtml
  * @interface
  */
 class Messages {
- /**
-  * @param {number} items
-  * @return {SafeHtml}
-  * @public
-  */
- static m_items__int(items) {
+ /** @return {SafeHtml} */
+ static m_items__int(/** number */ items) {
   Messages.$clinit();
   let /** ?string */ message;
   switch (items) {
@@ -30,34 +26,21 @@ class Messages {
   }
   return SafeHtmlUtils.m_fromSafeConstant__java_lang_String(message);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Messages.$clinit = () =>{};
   Messages.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_jboss_elemento_sample_crysknife_Messages = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_jboss_elemento_sample_crysknife_Messages = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_jboss_elemento_sample_crysknife_Messages;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   SafeHtmlUtils = goog.module.get('org.gwtproject.safehtml.shared.SafeHtmlUtils$impl');
  }

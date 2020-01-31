@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"FormPanel$SubmitCompleteEvent.impl.java.js",
-"lineCount":114,
-"mappings":"A;;;;;;;;;;;;;MAiEsB,mB;;;;CAAA,W;EAAAA,Q;EAAAA;OAkBH,0EAlBGA,C;;;;;;QAWwB,W;EAAAC,8B;EACxCA;GACEA,yJADFA;G;EAGAA,gG;;;;;;;QAUQ,yB,CAA2BC,W;EAA3BC,8B;EAAAA,0C;EAAAA,4G;EAAAA,iB;;;;;;CAAA,oF,CAA2BD,W;EAA3BE,kD;EACRA,8F;;;;;;;CAIuC,qB;EACvCC,yC;;;;;;CAWY,c;EACZC,uF;;;;;;CAIa,yE,CAA+BC,O;EAC5CC,8F;;;;;;;;CAhDgB,4B;EAAAA,8J;;;;;QAAA,O;EAAAC,sC;EAAAA,mC;EAAAA,gB;;;;;;;;;;;;;;;;;;;;;;;AAAA;oBAIyB,oEAJzB;",
+"lineCount":80,
+"mappings":"A;;;;;;;;;;;;;MAiEsB,mB;;CAAA,W;EAAAA,Q;EAAAA;OAkBH,0EAlBGA,C;;;QAWwB,W;EAAAC,8B;EACxCA;GACEA,wJADFA;G;EAGAA,gG;;;QAUQ,yB,gBAA2BC,W;EAA3BC,8B;EAAAA,0C;EAAAA,4G;EAAAA,iB;;;CAAA,oF,gBAA2BD,W;EAA3BE,kD;EACRA,8F;;;CAIuC,qB;EACvCC,yC;;;CAWY,c;EACZC,uF;;;CAIa,yE,8BAA+BC,O;EAC5CC,8F;;;;CAhDgB,4B;EAAAA,6J;;;QAAA,O;EAAAC,sC;EAAAA,mC;EAAAA,gB;;;;;;;;;;;;;;;;;AAAA;oBAIyB,oEAJzB;",
 "sources":["FormPanel.java"],
 "names":["org.gwtproject.user.client.ui.FormPanel$SubmitCompleteEvent.<synthetic: ctor_js>","org.gwtproject.user.client.ui.FormPanel$SubmitCompleteEvent.getType","resultsHtml","org.gwtproject.user.client.ui.FormPanel$SubmitCompleteEvent.<synthetic: ctor_create>","org.gwtproject.user.client.ui.FormPanel$SubmitCompleteEvent.<init>","org.gwtproject.user.client.ui.FormPanel$SubmitCompleteEvent.getAssociatedType","org.gwtproject.user.client.ui.FormPanel$SubmitCompleteEvent.getResults","handler","org.gwtproject.user.client.ui.FormPanel$SubmitCompleteEvent.dispatch","org.gwtproject.user.client.ui.FormPanel$SubmitCompleteEvent.<clinit>"]
 }

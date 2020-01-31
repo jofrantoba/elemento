@@ -18,80 +18,48 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @implements {HasCssName}
   */
 class Overflow extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_dom_style_shared_Overflow__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_dom_style_shared_Overflow__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @abstract
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @override @return {?string} */
  m_getCssName__() {}
- /**
-  * @param {string} name
-  * @return {!Overflow}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!Overflow} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   Overflow.$clinit();
   if ($Equality.$same(Overflow.f_namesToValuesMap__org_gwtproject_dom_style_shared_Overflow_, null)) {
    Overflow.f_namesToValuesMap__org_gwtproject_dom_style_shared_Overflow_ = $Enums.createMapFromValues(Overflow.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, Overflow.f_namesToValuesMap__org_gwtproject_dom_style_shared_Overflow_);
  }
- /**
-  * @return {!Array<!Overflow>}
-  * @public
-  */
+ /** @return {!Array<!Overflow>} */
  static m_values__() {
   Overflow.$clinit();
-  return /**@type {!Array<Overflow>} */ ($Arrays.$init([Overflow.$f_VISIBLE__org_gwtproject_dom_style_shared_Overflow, Overflow.$f_HIDDEN__org_gwtproject_dom_style_shared_Overflow, Overflow.$f_SCROLL__org_gwtproject_dom_style_shared_Overflow, Overflow.$f_AUTO__org_gwtproject_dom_style_shared_Overflow], Overflow));
+  return /**@type {!Array<Overflow>}*/ ($Arrays.$init([Overflow.$f_VISIBLE__org_gwtproject_dom_style_shared_Overflow, Overflow.$f_HIDDEN__org_gwtproject_dom_style_shared_Overflow, Overflow.$f_SCROLL__org_gwtproject_dom_style_shared_Overflow, Overflow.$f_AUTO__org_gwtproject_dom_style_shared_Overflow], Overflow));
  }
- /**
-  * @return {!Overflow}
-  * @public
-  */
+ /** @return {!Overflow} */
  static get f_VISIBLE__org_gwtproject_dom_style_shared_Overflow() {
   return (Overflow.$clinit(), Overflow.$f_VISIBLE__org_gwtproject_dom_style_shared_Overflow);
  }
- /**
-  * @return {!Overflow}
-  * @public
-  */
+ /** @return {!Overflow} */
  static get f_HIDDEN__org_gwtproject_dom_style_shared_Overflow() {
   return (Overflow.$clinit(), Overflow.$f_HIDDEN__org_gwtproject_dom_style_shared_Overflow);
  }
- /**
-  * @return {!Overflow}
-  * @public
-  */
+ /** @return {!Overflow} */
  static get f_SCROLL__org_gwtproject_dom_style_shared_Overflow() {
   return (Overflow.$clinit(), Overflow.$f_SCROLL__org_gwtproject_dom_style_shared_Overflow);
  }
- /**
-  * @return {!Overflow}
-  * @public
-  */
+ /** @return {!Overflow} */
  static get f_AUTO__org_gwtproject_dom_style_shared_Overflow() {
   return (Overflow.$clinit(), Overflow.$f_AUTO__org_gwtproject_dom_style_shared_Overflow);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Overflow.$clinit = () =>{};
   Overflow.$loadModules();
@@ -102,17 +70,11 @@ class Overflow extends Enum {
   Overflow.$f_AUTO__org_gwtproject_dom_style_shared_Overflow = $4.$create__java_lang_String__int($Util.$makeEnumName("AUTO"), Overflow.$ordinal$f_AUTO__org_gwtproject_dom_style_shared_Overflow);
   Overflow.f_namesToValuesMap__org_gwtproject_dom_style_shared_Overflow_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Overflow;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.dom.style.shared.Overflow.$1$impl');
@@ -128,23 +90,23 @@ $Util.$setClassMetadataForEnum(Overflow, 'org.gwtproject.dom.style.shared.Overfl
 
 HasCssName.$markImplementor(Overflow);
 
-/** @private {!Overflow} */
+/**@private {!Overflow}*/
 Overflow.$f_VISIBLE__org_gwtproject_dom_style_shared_Overflow;
-/** @private {!Overflow} */
+/**@private {!Overflow}*/
 Overflow.$f_HIDDEN__org_gwtproject_dom_style_shared_Overflow;
-/** @private {!Overflow} */
+/**@private {!Overflow}*/
 Overflow.$f_SCROLL__org_gwtproject_dom_style_shared_Overflow;
-/** @private {!Overflow} */
+/**@private {!Overflow}*/
 Overflow.$f_AUTO__org_gwtproject_dom_style_shared_Overflow;
-/** @public {Map<?string, !Overflow>} */
+/**@type {Map<?string, !Overflow>}*/
 Overflow.f_namesToValuesMap__org_gwtproject_dom_style_shared_Overflow_;
-/** @public {number} @const */
+/**@const {number}*/
 Overflow.$ordinal$f_VISIBLE__org_gwtproject_dom_style_shared_Overflow = 0;
-/** @public {number} @const */
+/**@const {number}*/
 Overflow.$ordinal$f_HIDDEN__org_gwtproject_dom_style_shared_Overflow = 1;
-/** @public {number} @const */
+/**@const {number}*/
 Overflow.$ordinal$f_SCROLL__org_gwtproject_dom_style_shared_Overflow = 2;
-/** @public {number} @const */
+/**@const {number}*/
 Overflow.$ordinal$f_AUTO__org_gwtproject_dom_style_shared_Overflow = 3;
 
 exports = Overflow; 

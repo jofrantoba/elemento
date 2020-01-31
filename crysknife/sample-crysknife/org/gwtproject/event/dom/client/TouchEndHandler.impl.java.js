@@ -11,50 +11,29 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.event.dom.client.TouchE
  * @extends {EventHandler}
  */
 class TouchEndHandler {
- /**
-  * @abstract
-  * @param {TouchEndEvent} event
-  * @public
-  */
- m_onTouchEnd__org_gwtproject_event_dom_client_TouchEndEvent(event) {}
- /**
-  * @param {?function(TouchEndEvent):void} fn
-  * @return {TouchEndHandler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onTouchEnd__org_gwtproject_event_dom_client_TouchEndEvent(/** TouchEndEvent */ event) {}
+ /** @return {TouchEndHandler} */
+ static $adapt(/** ?function(TouchEndEvent):void */ fn) {
   TouchEndHandler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TouchEndHandler.$clinit = () =>{};
   TouchEndHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  EventHandler.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_TouchEndHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  EventHandler.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_TouchEndHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_TouchEndHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.event.dom.client.TouchEndHandler.$LambdaAdaptor$impl');
  }

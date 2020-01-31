@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HTMLOptionsCollection$AddElementUnionType$$Overlay.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;MAqDmB,4B;;;;;;QAEkC,sB,CAAUA,C;EAAVC,uC;EAC/CA,wD;;;;;;;QAI0B,0F;EAAAC,uC;EAC1BA,uG;;;;;;;QAIwB,wF;EAAAC,uC;EACxBA,uH;;;;;;;QAIc,0F;EAAAC,uC;EACdA,wD;;;;;;;QAIc,wF;EAAAC,uC;EACdA,0E;;;;;QAvBa,O;EAAAC,+C;EAAAA;",
+"lineCount":39,
+"mappings":"A;;;;;;;;;MAqDmB,4B;;QAEkC,sB,UAAUA,C;EAAVC,uC;EAC/CA,uD;;;QAI0B,0F;EAAAC,uC;EAC1BA,sG;;;QAIwB,wF;EAAAC,uC;EACxBA,sH;;;QAIc,0F;EAAAC,uC;EACdA,uD;;;QAIc,wF;EAAAC,uC;EACdA,yE;;;QAvBa,O;EAAAC,+C;EAAAA;",
 "sources":["HTMLOptionsCollection.java"],
 "names":["o","elemental2.dom.HTMLOptionsCollection$AddElementUnionType$$Overlay.of","elemental2.dom.HTMLOptionsCollection$AddElementUnionType$$Overlay.asHTMLOptGroupElement__$devirt","elemental2.dom.HTMLOptionsCollection$AddElementUnionType$$Overlay.asHTMLOptionElement__$devirt","elemental2.dom.HTMLOptionsCollection$AddElementUnionType$$Overlay.isHTMLOptGroupElement__$devirt","elemental2.dom.HTMLOptionsCollection$AddElementUnionType$$Overlay.isHTMLOptionElement__$devirt","elemental2.dom.HTMLOptionsCollection$AddElementUnionType$$Overlay.<clinit>"]
 }

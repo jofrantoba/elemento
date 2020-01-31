@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"RangeChangeEvent.impl.java.js",
-"lineCount":138,
-"mappings":"A;;;;;;;;;;;;;;;;MAsBa,gB;;;;CAAA,W;EAAAA,Q;EAAAA;OA8CoC,qDA9CpCA,C;;;;;;;QA2BQ,4E,CAAwCC,M,EAAyCC,K;EAAjFC,2B;EACjBA;GACEA,IAAiBC,KAAjBD,qEADFA;GAEEA,6DAFFA;G;;;;;;QAW0B,W;EAAAE,2B;EAC1BA;GACEA,wHADFA;G;EAGAA,6E;;;;;;;QAUQ,yC,CAAkDH,K;EAAlDI,2B;EAAAA,uC;EAAAA,sG;EAAAA,iB;;;;;;CAAA,oF,CAAkDJ,K;EAAlDK,kD;EACRA,mE;;;;;;;CAIyB,qB;EACzBC,6E;;;;;;CAQsC,e;EACtCC,kE;;;;;;;CAIY,iB;EACZC,0I;;;;;;CAIa,+D,CAAiBC,O;EAC9BC,2E;;;;;;;;CA9ES,4B;EAAAA,wH;;;;;QAAA,O;EAAAC,mC;EAAAA,gC;EAAAA,gB;;;;;;;;;;;;;;;;;;;;;;;;AAAA;iBAKkB,oDALlB;",
+"lineCount":96,
+"mappings":"A;;;;;;;;;;;;;;;;MAsBa,gB;;CAAA,W;EAAAA,Q;EAAAA;OA8CoC,qDA9CpCA,C;;;QA2BQ,4E,gBAAwCC,M,eAAyCC,K;EAAjFC,2B;EACjBA;GACEA,IAAiBC,KAAjBD,qEADFA;GAEEA,6DAFFA;G;;;QAW0B,W;EAAAE,2B;EAC1BA;GACEA,uHADFA;G;EAGAA,6E;;;QAUQ,yC,cAAkDH,K;EAAlDI,2B;EAAAA,uC;EAAAA,sG;EAAAA,iB;;;CAAA,oF,cAAkDJ,K;EAAlDK,kD;EACRA,mE;;;CAIyB,qB;EACzBC,6E;;;CAQsC,e;EACtCC,kE;;;CAIY,iB;EACZC,0I;;;CAIa,+D,gBAAiBC,O;EAC9BC,2E;;;;CA9ES,4B;EAAAA,uH;;;QAAA,O;EAAAC,mC;EAAAA,gC;EAAAA,gB;;;;;;;;;;;;;;;;;;AAAA;iBAKkB,oDALlB;",
 "sources":["RangeChangeEvent.java"],
 "names":["org.gwtproject.view.client.RangeChangeEvent.<synthetic: ctor_js>","source","range","org.gwtproject.view.client.RangeChangeEvent.fire","event","org.gwtproject.view.client.RangeChangeEvent.getType","org.gwtproject.view.client.RangeChangeEvent.<synthetic: ctor_create>","org.gwtproject.view.client.RangeChangeEvent.<init>","org.gwtproject.view.client.RangeChangeEvent.getAssociatedType","org.gwtproject.view.client.RangeChangeEvent.getNewRange","org.gwtproject.view.client.RangeChangeEvent.toDebugString","handler","org.gwtproject.view.client.RangeChangeEvent.dispatch","org.gwtproject.view.client.RangeChangeEvent.<clinit>"]
 }

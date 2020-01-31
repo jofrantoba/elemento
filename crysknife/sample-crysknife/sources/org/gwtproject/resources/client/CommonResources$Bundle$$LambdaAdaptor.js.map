@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CommonResources$Bundle$$LambdaAdaptor.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;;;;MAyBY,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qF;EAAAA,0J;;;;;;CAAA,gJ;EAAAC,iC;EAAAA,wF;;;;;;CAAA,oB;EAAAC,kD;EAAAA,qH;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;;MAyBY,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qF;EAAAA,0J;;;CAAA,gJ;EAAAC,iC;EAAAA,wF;;;CAAA,oB;EAAAC,kD;EAAAA,qH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["CommonResources.java"],
 "names":["org.gwtproject.resources.client.CommonResources$Bundle$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.resources.client.CommonResources$Bundle$$LambdaAdaptor.<init>","org.gwtproject.resources.client.CommonResources$Bundle$$LambdaAdaptor.inlineBlockStyle","org.gwtproject.resources.client.CommonResources$Bundle$$LambdaAdaptor.<clinit>"]
 }

@@ -12,75 +12,48 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class TableSectionElement_$Overlay {
- /**
-  * @param {Object} elem
-  * @return {Object}
-  * @public
-  */
- static m_as__org_gwtproject_dom_client_Element(elem) {
+ /** @return {Object} */
+ static m_as__org_gwtproject_dom_client_Element(/** Object */ elem) {
   TableSectionElement_$Overlay.$clinit();
   $Asserts.$assert(TableSectionElement_$Overlay.m_is__org_gwtproject_dom_client_Element(elem));
-  return /**@type {Object} */ ($Casts.$to(elem, TableSectionElement_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to(elem, TableSectionElement_$Overlay));
  }
- /**
-  * @param {Object} o
-  * @return {boolean}
-  * @public
-  */
- static m_is__org_gwtproject_core_client_JavaScriptObject(o) {
+ /** @return {boolean} */
+ static m_is__org_gwtproject_core_client_JavaScriptObject(/** Object */ o) {
   TableSectionElement_$Overlay.$clinit();
   if ($Overlay.m_is__org_gwtproject_core_client_JavaScriptObject(o)) {
-   return TableSectionElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object} */ ($Casts.$to(o, $Overlay)));
+   return TableSectionElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object}*/ ($Casts.$to(o, $Overlay)));
   }
   return false;
  }
- /**
-  * @param {Object} node
-  * @return {boolean}
-  * @public
-  */
- static m_is__org_gwtproject_dom_client_Node(node) {
+ /** @return {boolean} */
+ static m_is__org_gwtproject_dom_client_Node(/** Object */ node) {
   TableSectionElement_$Overlay.$clinit();
   if ($Overlay.m_is__org_gwtproject_dom_client_Node(node)) {
-   return TableSectionElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object} */ ($Casts.$to(node, $Overlay)));
+   return TableSectionElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object}*/ ($Casts.$to(node, $Overlay)));
   }
   return false;
  }
- /**
-  * @param {Object} elem
-  * @return {boolean}
-  * @public
-  */
- static m_is__org_gwtproject_dom_client_Element(elem) {
+ /** @return {boolean} */
+ static m_is__org_gwtproject_dom_client_Element(/** Object */ elem) {
   TableSectionElement_$Overlay.$clinit();
   return !$Equality.$same(elem, null) && (j_l_String.m_equalsIgnoreCase__java_lang_String__java_lang_String($Overlay.m_getTagName__$devirt__org_gwtproject_dom_client_Element(elem), TableSectionElement_$Overlay.f_TAG_THEAD__org_gwtproject_dom_client_TableSectionElement_$Overlay) || j_l_String.m_equalsIgnoreCase__java_lang_String__java_lang_String($Overlay.m_getTagName__$devirt__org_gwtproject_dom_client_Element(elem), TableSectionElement_$Overlay.f_TAG_TFOOT__org_gwtproject_dom_client_TableSectionElement_$Overlay) || j_l_String.m_equalsIgnoreCase__java_lang_String__java_lang_String($Overlay.m_getTagName__$devirt__org_gwtproject_dom_client_Element(elem), TableSectionElement_$Overlay.f_TAG_TBODY__org_gwtproject_dom_client_TableSectionElement_$Overlay));
  }
- /**
-  * @return {Array<?string>}
-  * @public
-  */
+ /** @return {Array<?string>} */
  static get f_TAGS__org_gwtproject_dom_client_TableSectionElement_$Overlay() {
   return (TableSectionElement_$Overlay.$clinit(), TableSectionElement_$Overlay.$f_TAGS__org_gwtproject_dom_client_TableSectionElement_$Overlay);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TableSectionElement_$Overlay.$clinit = () =>{};
   TableSectionElement_$Overlay.$loadModules();
-  TableSectionElement_$Overlay.$f_TAGS__org_gwtproject_dom_client_TableSectionElement_$Overlay = /**@type {!Array<?string>} */ ($Arrays.$init([TableSectionElement_$Overlay.f_TAG_TBODY__org_gwtproject_dom_client_TableSectionElement_$Overlay, TableSectionElement_$Overlay.f_TAG_TFOOT__org_gwtproject_dom_client_TableSectionElement_$Overlay, TableSectionElement_$Overlay.f_TAG_THEAD__org_gwtproject_dom_client_TableSectionElement_$Overlay], j_l_String));
+  TableSectionElement_$Overlay.$f_TAGS__org_gwtproject_dom_client_TableSectionElement_$Overlay = /**@type {!Array<?string>}*/ ($Arrays.$init([TableSectionElement_$Overlay.f_TAG_TBODY__org_gwtproject_dom_client_TableSectionElement_$Overlay, TableSectionElement_$Overlay.f_TAG_TFOOT__org_gwtproject_dom_client_TableSectionElement_$Overlay, TableSectionElement_$Overlay.f_TAG_THEAD__org_gwtproject_dom_client_TableSectionElement_$Overlay], j_l_String));
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Object;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -93,13 +66,13 @@ class TableSectionElement_$Overlay {
 }
 $Util.$setClassMetadata(TableSectionElement_$Overlay, 'Object');
 
-/** @private {Array<?string>} */
+/**@private {Array<?string>}*/
 TableSectionElement_$Overlay.$f_TAGS__org_gwtproject_dom_client_TableSectionElement_$Overlay;
-/** @public {?string} @const */
+/**@const {?string}*/
 TableSectionElement_$Overlay.f_TAG_TBODY__org_gwtproject_dom_client_TableSectionElement_$Overlay = "tbody";
-/** @public {?string} @const */
+/**@const {?string}*/
 TableSectionElement_$Overlay.f_TAG_TFOOT__org_gwtproject_dom_client_TableSectionElement_$Overlay = "tfoot";
-/** @public {?string} @const */
+/**@const {?string}*/
 TableSectionElement_$Overlay.f_TAG_THEAD__org_gwtproject_dom_client_TableSectionElement_$Overlay = "thead";
 
 exports = TableSectionElement_$Overlay; 

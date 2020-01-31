@@ -17,88 +17,53 @@ let WordCountDirectionEstimator = goog.forwardDeclare('org.gwtproject.i18n.share
  * @implements {HasDirectionEstimator}
   */
 class AutoDirectionHandler extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {DirectionEstimator} */
+  /**@type {DirectionEstimator}*/
   this.f_directionEstimator__org_gwtproject_i18n_client_AutoDirectionHandler_;
-  /** @public {HandlerRegistration} */
+  /**@type {HandlerRegistration}*/
   this.f_handlerRegistration__org_gwtproject_i18n_client_AutoDirectionHandler_;
-  /** @public {Target} */
+  /**@type {Target}*/
   this.f_target__org_gwtproject_i18n_client_AutoDirectionHandler_;
  }
- /**
-  * @param {Target} target
-  * @return {AutoDirectionHandler}
-  * @public
-  */
- static m_addTo__org_gwtproject_i18n_client_AutoDirectionHandler_Target(target) {
+ /** @return {AutoDirectionHandler} */
+ static m_addTo__org_gwtproject_i18n_client_AutoDirectionHandler_Target(/** Target */ target) {
   AutoDirectionHandler.$clinit();
   return AutoDirectionHandler.m_addTo__org_gwtproject_i18n_client_AutoDirectionHandler_Target__boolean(target, true);
  }
- /**
-  * @param {Target} target
-  * @param {boolean} enabled
-  * @return {AutoDirectionHandler}
-  * @public
-  */
- static m_addTo__org_gwtproject_i18n_client_AutoDirectionHandler_Target__boolean(target, enabled) {
+ /** @return {AutoDirectionHandler} */
+ static m_addTo__org_gwtproject_i18n_client_AutoDirectionHandler_Target__boolean(/** Target */ target, /** boolean */ enabled) {
   AutoDirectionHandler.$clinit();
   return AutoDirectionHandler.m_addTo__org_gwtproject_i18n_client_AutoDirectionHandler_Target__org_gwtproject_i18n_shared_DirectionEstimator(target, enabled ? WordCountDirectionEstimator.m_get__() : null);
  }
- /**
-  * @param {Target} target
-  * @param {DirectionEstimator} directionEstimator
-  * @return {AutoDirectionHandler}
-  * @public
-  */
- static m_addTo__org_gwtproject_i18n_client_AutoDirectionHandler_Target__org_gwtproject_i18n_shared_DirectionEstimator(target, directionEstimator) {
+ /** @return {AutoDirectionHandler} */
+ static m_addTo__org_gwtproject_i18n_client_AutoDirectionHandler_Target__org_gwtproject_i18n_shared_DirectionEstimator(/** Target */ target, /** DirectionEstimator */ directionEstimator) {
   AutoDirectionHandler.$clinit();
   return AutoDirectionHandler.$create__org_gwtproject_i18n_client_AutoDirectionHandler_Target__org_gwtproject_i18n_shared_DirectionEstimator(target, directionEstimator);
  }
- /**
-  * @param {Target} target
-  * @param {DirectionEstimator} directionEstimator
-  * @return {!AutoDirectionHandler}
-  * @public
-  */
- static $create__org_gwtproject_i18n_client_AutoDirectionHandler_Target__org_gwtproject_i18n_shared_DirectionEstimator(target, directionEstimator) {
+ /** @return {!AutoDirectionHandler} */
+ static $create__org_gwtproject_i18n_client_AutoDirectionHandler_Target__org_gwtproject_i18n_shared_DirectionEstimator(/** Target */ target, /** DirectionEstimator */ directionEstimator) {
   let $instance = new AutoDirectionHandler();
   $instance.$ctor__org_gwtproject_i18n_client_AutoDirectionHandler__org_gwtproject_i18n_client_AutoDirectionHandler_Target__org_gwtproject_i18n_shared_DirectionEstimator(target, directionEstimator);
   return $instance;
  }
- /**
-  * @param {Target} target
-  * @param {DirectionEstimator} directionEstimator
-  * @public
-  */
- $ctor__org_gwtproject_i18n_client_AutoDirectionHandler__org_gwtproject_i18n_client_AutoDirectionHandler_Target__org_gwtproject_i18n_shared_DirectionEstimator(target, directionEstimator) {
+ 
+ $ctor__org_gwtproject_i18n_client_AutoDirectionHandler__org_gwtproject_i18n_client_AutoDirectionHandler_Target__org_gwtproject_i18n_shared_DirectionEstimator(/** Target */ target, /** DirectionEstimator */ directionEstimator) {
   this.$ctor__java_lang_Object__();
   this.f_target__org_gwtproject_i18n_client_AutoDirectionHandler_ = target;
   this.f_handlerRegistration__org_gwtproject_i18n_client_AutoDirectionHandler_ = null;
   this.m_setDirectionEstimator__org_gwtproject_i18n_shared_DirectionEstimator(directionEstimator);
  }
- /**
-  * @override
-  * @return {DirectionEstimator}
-  * @public
-  */
+ /** @override @return {DirectionEstimator} */
  m_getDirectionEstimator__() {
   return this.f_directionEstimator__org_gwtproject_i18n_client_AutoDirectionHandler_;
  }
- /**
-  * @override
-  * @param {KeyUpEvent} event
-  * @public
-  */
- m_onKeyUp__org_gwtproject_event_dom_client_KeyUpEvent(event) {
+ /** @override */
+ m_onKeyUp__org_gwtproject_event_dom_client_KeyUpEvent(/** KeyUpEvent */ event) {
   this.m_refreshDirection__();
  }
- /**
-  * @public
-  */
+ 
  m_refreshDirection__() {
   if (!$Equality.$same(this.f_directionEstimator__org_gwtproject_i18n_client_AutoDirectionHandler_, null)) {
    let dir = this.f_directionEstimator__org_gwtproject_i18n_client_AutoDirectionHandler_.m_estimateDirection__java_lang_String(this.f_target__org_gwtproject_i18n_client_AutoDirectionHandler_.m_getText__());
@@ -107,20 +72,12 @@ class AutoDirectionHandler extends j_l_Object {
    }
   }
  }
- /**
-  * @override
-  * @param {boolean} enabled
-  * @public
-  */
- m_setDirectionEstimator__boolean(enabled) {
+ /** @override */
+ m_setDirectionEstimator__boolean(/** boolean */ enabled) {
   this.m_setDirectionEstimator__org_gwtproject_i18n_shared_DirectionEstimator(enabled ? WordCountDirectionEstimator.m_get__() : null);
  }
- /**
-  * @override
-  * @param {DirectionEstimator} directionEstimator
-  * @public
-  */
- m_setDirectionEstimator__org_gwtproject_i18n_shared_DirectionEstimator(directionEstimator) {
+ /** @override */
+ m_setDirectionEstimator__org_gwtproject_i18n_shared_DirectionEstimator(/** DirectionEstimator */ directionEstimator) {
   this.f_directionEstimator__org_gwtproject_i18n_client_AutoDirectionHandler_ = directionEstimator;
   if ($Equality.$same(directionEstimator, null) != $Equality.$same(this.f_handlerRegistration__org_gwtproject_i18n_client_AutoDirectionHandler_, null)) {
    if ($Equality.$same(directionEstimator, null)) {
@@ -132,25 +89,17 @@ class AutoDirectionHandler extends j_l_Object {
   }
   this.m_refreshDirection__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AutoDirectionHandler.$clinit = () =>{};
   AutoDirectionHandler.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AutoDirectionHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   WordCountDirectionEstimator = goog.module.get('org.gwtproject.i18n.shared.WordCountDirectionEstimator$impl');

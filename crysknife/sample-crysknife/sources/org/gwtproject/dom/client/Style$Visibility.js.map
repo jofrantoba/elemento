@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Style$Visibility.impl.java.js",
-"lineCount":79,
-"mappings":"A;;;;;;;;;;MAmWsB,gB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,2B;EAAAA,uC;EAAAA,gE;EAAAA,iB;;;;;CAAA,mD;EAAAC,iC;;;;;;QAClB,yD;EAAAC,6G;;;;;;QACA,wD;EAAAA,4G;;;;;QAFkB,O;EAAAC,mC;EAAAA,gC;EAAAA,qB;EAClBA,2I;EACAA,yI;;;;;;;;;;;;;;;;;;;;AAFkB;wE;AAAA;;",
+"lineCount":58,
+"mappings":"A;;;;;;;;;;MAmWsB,gB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,2B;EAAAA,uC;EAAAA,gE;EAAAA,iB;;;CAAA,mD;EAAAC,iC;;;QAClB,yD;EAAAC,6G;;;QACA,wD;EAAAA,4G;;;QAFkB,O;EAAAC,mC;EAAAA,gC;EAAAA,qB;EAClBA,2I;EACAA,yI;;;;;;;;;;;;;;AAFkB;wE;AAAA;;",
 "sources":["Style.java"],
 "names":["org.gwtproject.dom.client.Style$Visibility.<synthetic: ctor_js>","org.gwtproject.dom.client.Style$Visibility.<synthetic: ctor_create>","org.gwtproject.dom.client.Style$Visibility.<init>","org.gwtproject.dom.client.Style$Visibility.<synthetic: getter>","org.gwtproject.dom.client.Style$Visibility.<clinit>"]
 }

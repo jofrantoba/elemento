@@ -3,135 +3,79 @@ goog.module('elemental2.dom.Node.$Overlay$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 
 class $Overlay {
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_ATTRIBUTE_NODE__elemental2_dom_Node_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_ATTRIBUTE_NODE__elemental2_dom_Node_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_CDATA_SECTION_NODE__elemental2_dom_Node_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_CDATA_SECTION_NODE__elemental2_dom_Node_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_COMMENT_NODE__elemental2_dom_Node_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_COMMENT_NODE__elemental2_dom_Node_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_DOCUMENT_FRAGMENT_NODE__elemental2_dom_Node_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_DOCUMENT_FRAGMENT_NODE__elemental2_dom_Node_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_DOCUMENT_NODE__elemental2_dom_Node_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_DOCUMENT_NODE__elemental2_dom_Node_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_DOCUMENT_POSITION_CONTAINED_BY__elemental2_dom_Node_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_DOCUMENT_POSITION_CONTAINED_BY__elemental2_dom_Node_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_DOCUMENT_POSITION_CONTAINS__elemental2_dom_Node_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_DOCUMENT_POSITION_CONTAINS__elemental2_dom_Node_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_DOCUMENT_POSITION_DISCONNECTED__elemental2_dom_Node_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_DOCUMENT_POSITION_DISCONNECTED__elemental2_dom_Node_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_DOCUMENT_POSITION_FOLLOWING__elemental2_dom_Node_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_DOCUMENT_POSITION_FOLLOWING__elemental2_dom_Node_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC__elemental2_dom_Node_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC__elemental2_dom_Node_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_DOCUMENT_POSITION_PRECEDING__elemental2_dom_Node_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_DOCUMENT_POSITION_PRECEDING__elemental2_dom_Node_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_DOCUMENT_TYPE_NODE__elemental2_dom_Node_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_DOCUMENT_TYPE_NODE__elemental2_dom_Node_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_ELEMENT_NODE__elemental2_dom_Node_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_ELEMENT_NODE__elemental2_dom_Node_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_ENTITY_NODE__elemental2_dom_Node_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_ENTITY_NODE__elemental2_dom_Node_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_ENTITY_REFERENCE_NODE__elemental2_dom_Node_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_ENTITY_REFERENCE_NODE__elemental2_dom_Node_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_NOTATION_NODE__elemental2_dom_Node_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_NOTATION_NODE__elemental2_dom_Node_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_PROCESSING_INSTRUCTION_NODE__elemental2_dom_Node_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_PROCESSING_INSTRUCTION_NODE__elemental2_dom_Node_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_TEXT_NODE__elemental2_dom_Node_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_TEXT_NODE__elemental2_dom_Node_$Overlay);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $Overlay.$clinit = () =>{};
   $Overlay.$loadModules();
@@ -154,57 +98,51 @@ class $Overlay {
   $Overlay.$f_PROCESSING_INSTRUCTION_NODE__elemental2_dom_Node_$Overlay = Node.PROCESSING_INSTRUCTION_NODE;
   $Overlay.$f_TEXT_NODE__elemental2_dom_Node_$Overlay = Node.TEXT_NODE;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Node;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }
 $Util.$setClassMetadata($Overlay, 'Node');
 
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_ATTRIBUTE_NODE__elemental2_dom_Node_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_CDATA_SECTION_NODE__elemental2_dom_Node_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_COMMENT_NODE__elemental2_dom_Node_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_DOCUMENT_FRAGMENT_NODE__elemental2_dom_Node_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_DOCUMENT_NODE__elemental2_dom_Node_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_DOCUMENT_POSITION_CONTAINED_BY__elemental2_dom_Node_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_DOCUMENT_POSITION_CONTAINS__elemental2_dom_Node_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_DOCUMENT_POSITION_DISCONNECTED__elemental2_dom_Node_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_DOCUMENT_POSITION_FOLLOWING__elemental2_dom_Node_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC__elemental2_dom_Node_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_DOCUMENT_POSITION_PRECEDING__elemental2_dom_Node_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_DOCUMENT_TYPE_NODE__elemental2_dom_Node_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_ELEMENT_NODE__elemental2_dom_Node_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_ENTITY_NODE__elemental2_dom_Node_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_ENTITY_REFERENCE_NODE__elemental2_dom_Node_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_NOTATION_NODE__elemental2_dom_Node_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_PROCESSING_INSTRUCTION_NODE__elemental2_dom_Node_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_TEXT_NODE__elemental2_dom_Node_$Overlay = 0;
 
 exports = $Overlay; 

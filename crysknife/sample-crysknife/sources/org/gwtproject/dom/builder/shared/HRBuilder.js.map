@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HRBuilder.impl.java.js",
-"lineCount":16,
-"mappings":"A;;;;;;;;;MAoBiB,S;;;;QAAA,O;EAAAA,4B;EAAAA;",
+"lineCount":14,
+"mappings":"A;;;;;;;;;MAoBiB,S;;QAAA,O;EAAAA,4B;EAAAA;",
 "sources":["HRBuilder.java"],
 "names":["org.gwtproject.dom.builder.shared.HRBuilder.<clinit>"]
 }

@@ -40,58 +40,49 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
 
 class TouchScroller extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {HandlerRegistration} */
+  /**@type {HandlerRegistration}*/
   this.f_bustClickHandlerReg__org_gwtproject_touch_client_TouchScroller_;
-  /** @public {HandlerRegistration} */
+  /**@type {HandlerRegistration}*/
   this.f_attachHandlerReg__org_gwtproject_touch_client_TouchScroller_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_dragging__org_gwtproject_touch_client_TouchScroller_ = false;
-  /** @public {List<HandlerRegistration>} */
+  /**@type {List<HandlerRegistration>}*/
   this.f_handlerRegs__org_gwtproject_touch_client_TouchScroller_;
-  /** @public {TemporalPoint} */
+  /**@type {TemporalPoint}*/
   this.f_lastTouchPosition__org_gwtproject_touch_client_TouchScroller_;
-  /** @public {Momentum} */
+  /**@type {Momentum}*/
   this.f_momentum__org_gwtproject_touch_client_TouchScroller;
-  /** @public {RepeatingCommand} */
+  /**@type {RepeatingCommand}*/
   this.f_momentumCommand__org_gwtproject_touch_client_TouchScroller;
-  /** @public {TemporalPoint} */
+  /**@type {TemporalPoint}*/
   this.f_recentTouchPosition__org_gwtproject_touch_client_TouchScroller_;
-  /** @public {TemporalPoint} */
+  /**@type {TemporalPoint}*/
   this.f_recentTouchPositionOnDeck__org_gwtproject_touch_client_TouchScroller_;
-  /** @public {TemporalPoint} */
+  /**@type {TemporalPoint}*/
   this.f_recentScrollTriggeringTouchPosition__org_gwtproject_touch_client_TouchScroller_;
-  /** @public {List<TemporalPoint>} */
+  /**@type {List<TemporalPoint>}*/
   this.f_touchPositionsDuringMomentum__org_gwtproject_touch_client_TouchScroller_;
-  /** @public {RepeatingCommand} */
+  /**@type {RepeatingCommand}*/
   this.f_momentumTouchRemovalCommand__org_gwtproject_touch_client_TouchScroller_;
-  /** @public {Point} */
+  /**@type {Point}*/
   this.f_startScrollPosition__org_gwtproject_touch_client_TouchScroller_;
-  /** @public {Point} */
+  /**@type {Point}*/
   this.f_startTouchPosition__org_gwtproject_touch_client_TouchScroller_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_touching__org_gwtproject_touch_client_TouchScroller_ = false;
-  /** @public {HasScrolling} */
+  /**@type {HasScrolling}*/
   this.f_widget__org_gwtproject_touch_client_TouchScroller_;
  }
- /**
-  * @return {TouchScroller}
-  * @public
-  */
+ /** @return {TouchScroller} */
  static m_createIfSupported__() {
   TouchScroller.$clinit();
   return TouchScroller.m_isSupported__() ? TouchScroller.$create__() : null;
  }
- /**
-  * @param {HasScrolling} widget
-  * @return {TouchScroller}
-  * @public
-  */
- static m_createIfSupported__org_gwtproject_user_client_ui_HasScrolling(widget) {
+ /** @return {TouchScroller} */
+ static m_createIfSupported__org_gwtproject_user_client_ui_HasScrolling(/** HasScrolling */ widget) {
   TouchScroller.$clinit();
   let scroller = TouchScroller.m_createIfSupported__();
   if (!$Equality.$same(scroller, null)) {
@@ -99,10 +90,7 @@ class TouchScroller extends j_l_Object {
   }
   return scroller;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  static m_isSupported__() {
   TouchScroller.$clinit();
   if ($Equality.$same(TouchScroller.f_isSupported__org_gwtproject_touch_client_TouchScroller_, null)) {
@@ -110,10 +98,7 @@ class TouchScroller extends j_l_Object {
   }
   return Boolean.m_booleanValue__java_lang_Boolean(TouchScroller.f_isSupported__org_gwtproject_touch_client_TouchScroller_);
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  static m_isAndroid3__() {
   let useragent = $Overlay.f_navigator__elemental2_dom_DomGlobal_$Overlay.userAgent;
   window.console.log("isAndroid3 " + j_l_String.m_valueOf__java_lang_Object(useragent));
@@ -125,59 +110,42 @@ class TouchScroller extends j_l_Object {
   }
   return false;
  }
- /**
-  * @return {!TouchScroller}
-  * @public
-  */
+ /** @return {!TouchScroller} */
  static $create__() {
   TouchScroller.$clinit();
   let $instance = new TouchScroller();
   $instance.$ctor__org_gwtproject_touch_client_TouchScroller__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_touch_client_TouchScroller__() {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_touch_client_TouchScroller();
   this.m_setMomentum__org_gwtproject_touch_client_Momentum(DefaultMomentum.$create__());
  }
- /**
-  * @return {Momentum}
-  * @public
-  */
+ /** @return {Momentum} */
  m_getMomentum__() {
   return this.f_momentum__org_gwtproject_touch_client_TouchScroller;
  }
- /**
-  * @return {HasScrolling}
-  * @public
-  */
+ /** @return {HasScrolling} */
  m_getTargetWidget__() {
   return this.f_widget__org_gwtproject_touch_client_TouchScroller_;
  }
- /**
-  * @param {Momentum} momentum
-  * @public
-  */
- m_setMomentum__org_gwtproject_touch_client_Momentum(momentum) {
+ 
+ m_setMomentum__org_gwtproject_touch_client_Momentum(/** Momentum */ momentum) {
   this.f_momentum__org_gwtproject_touch_client_TouchScroller = momentum;
   if ($Equality.$same(momentum, null)) {
    this.f_momentumCommand__org_gwtproject_touch_client_TouchScroller = null;
   }
  }
- /**
-  * @param {HasScrolling} widget
-  * @public
-  */
- m_setTargetWidget__org_gwtproject_user_client_ui_HasScrolling(widget) {
+ 
+ m_setTargetWidget__org_gwtproject_user_client_ui_HasScrolling(/** HasScrolling */ widget) {
   if ($Equality.$same(this.f_widget__org_gwtproject_touch_client_TouchScroller_, widget)) {
    return;
   }
   this.m_cancelAll___$p_org_gwtproject_touch_client_TouchScroller();
   for (let $iterator = this.f_handlerRegs__org_gwtproject_touch_client_TouchScroller_.m_iterator__(); $iterator.m_hasNext__(); ) {
-   let reg = /**@type {HandlerRegistration} */ ($Casts.$to($iterator.m_next__(), HandlerRegistration));
+   let reg = /**@type {HandlerRegistration}*/ ($Casts.$to($iterator.m_next__(), HandlerRegistration));
    reg.m_removeHandler__();
   }
   this.f_handlerRegs__org_gwtproject_touch_client_TouchScroller_.clear();
@@ -195,20 +163,13 @@ class TouchScroller extends j_l_Object {
    this.f_handlerRegs__org_gwtproject_touch_client_TouchScroller_.add(widget.m_asWidget__().m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type($5.$create__org_gwtproject_touch_client_TouchScroller(this), TouchCancelEvent.m_getType__()));
   }
  }
- /**
-  * @param {TouchEvent<?>} event
-  * @return {Object}
-  * @public
-  */
- m_getTouchFromEvent__org_gwtproject_event_dom_client_TouchEvent(event) {
+ /** @return {Object} */
+ m_getTouchFromEvent__org_gwtproject_event_dom_client_TouchEvent(/** TouchEvent<?> */ event) {
   let touches = event.m_getTouches__();
-  return (JsArray_$Overlay.m_length__$devirt__org_gwtproject_core_client_JsArray(touches) > 0) ? /**@type {Object} */ ($Casts.$to(JsArray_$Overlay.m_get__$devirt__org_gwtproject_core_client_JsArray__int(touches, 0), Touch_$Overlay)) : null;
+  return (JsArray_$Overlay.m_length__$devirt__org_gwtproject_core_client_JsArray(touches) > 0) ? /**@type {Object}*/ ($Casts.$to(JsArray_$Overlay.m_get__$devirt__org_gwtproject_core_client_JsArray__int(touches, 0), Touch_$Overlay)) : null;
  }
- /**
-  * @param {TouchEvent<?>} event
-  * @public
-  */
- m_onDragEnd__org_gwtproject_event_dom_client_TouchEvent(event) {
+ 
+ m_onDragEnd__org_gwtproject_event_dom_client_TouchEvent(/** TouchEvent<?> */ event) {
   if ($Equality.$same(this.f_momentum__org_gwtproject_touch_client_TouchScroller, null)) {
    return;
   }
@@ -218,32 +179,20 @@ class TouchScroller extends j_l_Object {
    Scheduler.m_get__().m_scheduleFixedDelay__org_gwtproject_core_client_Scheduler_RepeatingCommand__int(this.f_momentumCommand__org_gwtproject_touch_client_TouchScroller, TouchScroller.f_MS_PER_FRAME__org_gwtproject_touch_client_TouchScroller_);
   }
  }
- /**
-  * @param {TouchEvent<?>} event
-  * @public
-  */
- m_onDragMove__org_gwtproject_event_dom_client_TouchEvent(event) {
+ 
+ m_onDragMove__org_gwtproject_event_dom_client_TouchEvent(/** TouchEvent<?> */ event) {
   let diff = this.f_startTouchPosition__org_gwtproject_touch_client_TouchScroller_.m_minus__org_gwtproject_touch_client_Point(this.f_lastTouchPosition__org_gwtproject_touch_client_TouchScroller_.m_getPoint__());
   let curScrollPosition = this.f_startScrollPosition__org_gwtproject_touch_client_TouchScroller_.m_plus__org_gwtproject_touch_client_Point(diff);
   this.m_setWidgetScrollPosition__org_gwtproject_touch_client_Point_$p_org_gwtproject_touch_client_TouchScroller(curScrollPosition);
  }
- /**
-  * @param {TouchEvent<?>} event
-  * @public
-  */
- m_onDragStart__org_gwtproject_event_dom_client_TouchEvent(event) {}
- /**
-  * @param {TouchEvent<?>} event
-  * @public
-  */
- m_onTouchCancel__org_gwtproject_event_dom_client_TouchEvent(event) {
+ 
+ m_onDragStart__org_gwtproject_event_dom_client_TouchEvent(/** TouchEvent<?> */ event) {}
+ 
+ m_onTouchCancel__org_gwtproject_event_dom_client_TouchEvent(/** TouchEvent<?> */ event) {
   this.m_onTouchEnd__org_gwtproject_event_dom_client_TouchEvent(event);
  }
- /**
-  * @param {TouchEvent<?>} event
-  * @public
-  */
- m_onTouchEnd__org_gwtproject_event_dom_client_TouchEvent(event) {
+ 
+ m_onTouchEnd__org_gwtproject_event_dom_client_TouchEvent(/** TouchEvent<?> */ event) {
   if (!this.f_touching__org_gwtproject_touch_client_TouchScroller_) {
    return;
   }
@@ -253,11 +202,8 @@ class TouchScroller extends j_l_Object {
    this.m_onDragEnd__org_gwtproject_event_dom_client_TouchEvent(event);
   }
  }
- /**
-  * @param {TouchEvent<?>} event
-  * @public
-  */
- m_onTouchMove__org_gwtproject_event_dom_client_TouchEvent(event) {
+ 
+ m_onTouchMove__org_gwtproject_event_dom_client_TouchEvent(/** TouchEvent<?> */ event) {
   if (!this.f_touching__org_gwtproject_touch_client_TouchScroller_) {
    return;
   }
@@ -310,11 +256,8 @@ class TouchScroller extends j_l_Object {
    }
   }
  }
- /**
-  * @param {TouchEvent<?>} event
-  * @public
-  */
- m_onTouchStart__org_gwtproject_event_dom_client_TouchEvent(event) {
+ 
+ m_onTouchStart__org_gwtproject_event_dom_client_TouchEvent(/** TouchEvent<?> */ event) {
   this.f_recentScrollTriggeringTouchPosition__org_gwtproject_touch_client_TouchScroller_.m_setTemporalPoint__org_gwtproject_touch_client_Point__double(null, 0);
   if (this.f_touching__org_gwtproject_touch_client_TouchScroller_) {
    return;
@@ -333,13 +276,8 @@ class TouchScroller extends j_l_Object {
   this.m_cancelAll___$p_org_gwtproject_touch_client_TouchScroller();
   this.f_touching__org_gwtproject_touch_client_TouchScroller_ = true;
  }
- /**
-  * @param {TemporalPoint} from
-  * @param {TemporalPoint} to
-  * @return {Point}
-  * @public
-  */
- m_calculateEndVelocity__org_gwtproject_touch_client_TouchScroller_TemporalPoint__org_gwtproject_touch_client_TouchScroller_TemporalPoint_$pp_org_gwtproject_touch_client(from, to) {
+ /** @return {Point} */
+ m_calculateEndVelocity__org_gwtproject_touch_client_TouchScroller_TemporalPoint__org_gwtproject_touch_client_TouchScroller_TemporalPoint_$pp_org_gwtproject_touch_client(/** TemporalPoint */ from, /** TemporalPoint */ to) {
   let time = to.m_getTime__() - from.m_getTime__();
   if (time <= 0) {
    return null;
@@ -347,114 +285,75 @@ class TouchScroller extends j_l_Object {
   let dist = from.m_getPoint__().m_minus__org_gwtproject_touch_client_Point(to.m_getPoint__());
   return Point.$create__double__double(dist.m_getX__() / time, dist.m_getY__() / time);
  }
- /**
-  * @return {TemporalPoint}
-  * @public
-  */
+ /** @return {TemporalPoint} */
  m_getLastTouchPosition___$pp_org_gwtproject_touch_client() {
   return this.f_lastTouchPosition__org_gwtproject_touch_client_TouchScroller_;
  }
- /**
-  * @return {TemporalPoint}
-  * @public
-  */
+ /** @return {TemporalPoint} */
  m_getRecentTouchPosition___$pp_org_gwtproject_touch_client() {
   return this.f_recentTouchPosition__org_gwtproject_touch_client_TouchScroller_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isDragging___$pp_org_gwtproject_touch_client() {
   return this.f_dragging__org_gwtproject_touch_client_TouchScroller_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isMomentumActive___$pp_org_gwtproject_touch_client() {
   return (!$Equality.$same(this.f_momentumCommand__org_gwtproject_touch_client_TouchScroller, null));
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isTouching___$pp_org_gwtproject_touch_client() {
   return this.f_touching__org_gwtproject_touch_client_TouchScroller_;
  }
- /**
-  * @public
-  */
+ 
  m_removeAttachHandler___$pp_org_gwtproject_touch_client() {
   if (!$Equality.$same(this.f_attachHandlerReg__org_gwtproject_touch_client_TouchScroller_, null)) {
    this.f_attachHandlerReg__org_gwtproject_touch_client_TouchScroller_.m_removeHandler__();
    this.f_attachHandlerReg__org_gwtproject_touch_client_TouchScroller_ = null;
   }
  }
- /**
-  * @public
-  */
+ 
  m_removeBustClickHandler___$pp_org_gwtproject_touch_client() {
   if (!$Equality.$same(this.f_bustClickHandlerReg__org_gwtproject_touch_client_TouchScroller_, null)) {
    this.f_bustClickHandlerReg__org_gwtproject_touch_client_TouchScroller_.m_removeHandler__();
    this.f_bustClickHandlerReg__org_gwtproject_touch_client_TouchScroller_ = null;
   }
  }
- /**
-  * @public
-  */
+ 
  m_setupBustClickHandler___$pp_org_gwtproject_touch_client() {
   this.m_removeBustClickHandler___$pp_org_gwtproject_touch_client();
   this.f_bustClickHandlerReg__org_gwtproject_touch_client_TouchScroller_ = Event.m_addNativePreviewHandler__org_gwtproject_user_client_Event_NativePreviewHandler($6.$create__org_gwtproject_touch_client_TouchScroller(this));
  }
- /**
-  * @public
-  */
+ 
  m_cancelAll___$p_org_gwtproject_touch_client_TouchScroller() {
   this.f_touching__org_gwtproject_touch_client_TouchScroller_ = false;
   this.f_dragging__org_gwtproject_touch_client_TouchScroller_ = false;
   this.f_momentumCommand__org_gwtproject_touch_client_TouchScroller = null;
  }
- /**
-  * @return {Point}
-  * @public
-  */
+ /** @return {Point} */
  m_getWidgetScrollPosition___$p_org_gwtproject_touch_client_TouchScroller() {
   return Point.$create__double__double(this.f_widget__org_gwtproject_touch_client_TouchScroller_.m_getHorizontalScrollPosition__(), this.f_widget__org_gwtproject_touch_client_TouchScroller_.m_getVerticalScrollPosition__());
  }
- /**
-  * @param {Point} point1
-  * @param {Point} point2
-  * @return {boolean}
-  * @public
-  */
- m_hitTest__org_gwtproject_touch_client_Point__org_gwtproject_touch_client_Point_$p_org_gwtproject_touch_client_TouchScroller(point1, point2) {
+ /** @return {boolean} */
+ m_hitTest__org_gwtproject_touch_client_Point__org_gwtproject_touch_client_Point_$p_org_gwtproject_touch_client_TouchScroller(/** Point */ point1, /** Point */ point2) {
   let diff = point1.m_minus__org_gwtproject_touch_client_Point(point2);
   let absDiffX = Math.abs(diff.m_getX__());
   let absDiffY = Math.abs(diff.m_getY__());
   return (absDiffX <= TouchScroller.f_DISTANCE_THRESHOLD__org_gwtproject_touch_client_TouchScroller_) && (absDiffY <= TouchScroller.f_DISTANCE_THRESHOLD__org_gwtproject_touch_client_TouchScroller_);
  }
- /**
-  * @param {Point} clickPoint
-  * @return {boolean}
-  * @public
-  */
- m_isClickScrollTriggeringTouch__org_gwtproject_touch_client_Point_$p_org_gwtproject_touch_client_TouchScroller(clickPoint) {
+ /** @return {boolean} */
+ m_isClickScrollTriggeringTouch__org_gwtproject_touch_client_Point_$p_org_gwtproject_touch_client_TouchScroller(/** Point */ clickPoint) {
   if (!$Equality.$same(this.f_recentScrollTriggeringTouchPosition__org_gwtproject_touch_client_TouchScroller_.m_getPoint__(), null)) {
    return this.m_hitTest__org_gwtproject_touch_client_Point__org_gwtproject_touch_client_Point_$p_org_gwtproject_touch_client_TouchScroller(clickPoint, this.f_recentScrollTriggeringTouchPosition__org_gwtproject_touch_client_TouchScroller_.m_getPoint__());
   }
   return false;
  }
- /**
-  * @param {Point} clickPoint
-  * @return {boolean}
-  * @public
-  */
- m_isClickTouchPositionDuringMomentum__org_gwtproject_touch_client_Point_$p_org_gwtproject_touch_client_TouchScroller(clickPoint) {
+ /** @return {boolean} */
+ m_isClickTouchPositionDuringMomentum__org_gwtproject_touch_client_Point_$p_org_gwtproject_touch_client_TouchScroller(/** Point */ clickPoint) {
   let currentTime = Duration.m_currentTimeMillis__();
   let same = false;
   for (let $iterator = this.f_touchPositionsDuringMomentum__org_gwtproject_touch_client_TouchScroller_.m_iterator__(); $iterator.m_hasNext__(); ) {
-   let point = /**@type {TemporalPoint} */ ($Casts.$to($iterator.m_next__(), TemporalPoint));
+   let point = /**@type {TemporalPoint}*/ ($Casts.$to($iterator.m_next__(), TemporalPoint));
    if (currentTime - point.m_getTime__() <= TouchScroller.f_TIME_THRESHOLD__org_gwtproject_touch_client_TouchScroller_ && this.m_hitTest__org_gwtproject_touch_client_Point__org_gwtproject_touch_client_Point_$p_org_gwtproject_touch_client_TouchScroller(clickPoint, point.m_getPoint__())) {
     same = true;
     break;
@@ -462,44 +361,31 @@ class TouchScroller extends j_l_Object {
   }
   return same;
  }
- /**
-  * @param {Point} position
-  * @public
-  */
- m_setWidgetScrollPosition__org_gwtproject_touch_client_Point_$p_org_gwtproject_touch_client_TouchScroller(position) {
+ 
+ m_setWidgetScrollPosition__org_gwtproject_touch_client_Point_$p_org_gwtproject_touch_client_TouchScroller(/** Point */ position) {
   this.f_widget__org_gwtproject_touch_client_TouchScroller_.m_setHorizontalScrollPosition__int($Primitives.$narrowDoubleToInt(position.m_getX__()));
   this.f_widget__org_gwtproject_touch_client_TouchScroller_.m_setVerticalScrollPosition__int($Primitives.$narrowDoubleToInt(position.m_getY__()));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_touch_client_TouchScroller() {
-  this.f_handlerRegs__org_gwtproject_touch_client_TouchScroller_ = /**@type {!ArrayList<HandlerRegistration>} */ (ArrayList.$create__());
+  this.f_handlerRegs__org_gwtproject_touch_client_TouchScroller_ = /**@type {!ArrayList<HandlerRegistration>}*/ (ArrayList.$create__());
   this.f_lastTouchPosition__org_gwtproject_touch_client_TouchScroller_ = TemporalPoint.$create__();
   this.f_recentTouchPosition__org_gwtproject_touch_client_TouchScroller_ = TemporalPoint.$create__();
   this.f_recentScrollTriggeringTouchPosition__org_gwtproject_touch_client_TouchScroller_ = TemporalPoint.$create__();
-  this.f_touchPositionsDuringMomentum__org_gwtproject_touch_client_TouchScroller_ = /**@type {!ArrayList<TemporalPoint>} */ (ArrayList.$create__());
+  this.f_touchPositionsDuringMomentum__org_gwtproject_touch_client_TouchScroller_ = /**@type {!ArrayList<TemporalPoint>}*/ (ArrayList.$create__());
   this.f_momentumTouchRemovalCommand__org_gwtproject_touch_client_TouchScroller_ = MomentumTouchRemovalCommand.$create__org_gwtproject_touch_client_TouchScroller(this);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TouchScroller.$clinit = () =>{};
   TouchScroller.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TouchScroller;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('elemental2.dom.DomGlobal.$Overlay$impl');
   Boolean = goog.module.get('java.lang.Boolean$impl');
@@ -536,21 +422,21 @@ class TouchScroller extends j_l_Object {
 }
 $Util.$setClassMetadata(TouchScroller, 'org.gwtproject.touch.client.TouchScroller');
 
-/** @public {number} @const */
+/**@const {number}*/
 TouchScroller.f_FRAMES_PER_SECOND__org_gwtproject_touch_client_TouchScroller_ = 60.0;
-/** @public {number} @const */
+/**@const {number}*/
 TouchScroller.f_MAX_TRACKING_TIME__org_gwtproject_touch_client_TouchScroller_ = 200.0;
-/** @public {number} @const */
+/**@const {number}*/
 TouchScroller.f_MAX_TRACKING_TIME_ON_DECK__org_gwtproject_touch_client_TouchScroller_ = 100.0;
-/** @public {number} @const */
+/**@const {number}*/
 TouchScroller.f_MIN_TRACKING_FOR_DRAG__org_gwtproject_touch_client_TouchScroller_ = 5.0;
-/** @public {number} @const */
+/**@const {number}*/
 TouchScroller.f_TIME_THRESHOLD__org_gwtproject_touch_client_TouchScroller_ = 2500;
-/** @public {number} @const */
+/**@const {number}*/
 TouchScroller.f_DISTANCE_THRESHOLD__org_gwtproject_touch_client_TouchScroller_ = 25;
-/** @public {number} @const */
+/**@const {number}*/
 TouchScroller.f_MS_PER_FRAME__org_gwtproject_touch_client_TouchScroller_ = 16;
-/** @public {?boolean} */
+/**@type {?boolean}*/
 TouchScroller.f_isSupported__org_gwtproject_touch_client_TouchScroller_;
 
 exports = TouchScroller; 

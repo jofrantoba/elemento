@@ -12,65 +12,42 @@ let Header = goog.forwardDeclare('org.gwtproject.user.client.ui.StackLayoutPanel
  * @implements {MouseOutHandler}
   */
 class $3 extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {StackLayoutPanel} */
+  /**@type {StackLayoutPanel}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_StackLayoutPanel_3;
-  /** @public {Header} */
+  /**@type {Header}*/
   this.$c_header;
  }
- /**
-  * @param {StackLayoutPanel} $outer_this
-  * @param {Header} $c_header
-  * @return {!$3}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_StackLayoutPanel__org_gwtproject_user_client_ui_StackLayoutPanel_Header($outer_this, $c_header) {
+ /** @return {!$3} */
+ static $create__org_gwtproject_user_client_ui_StackLayoutPanel__org_gwtproject_user_client_ui_StackLayoutPanel_Header(/** StackLayoutPanel */ $outer_this, /** Header */ $c_header) {
   $3.$clinit();
   let $instance = new $3();
   $instance.$ctor__org_gwtproject_user_client_ui_StackLayoutPanel_3__org_gwtproject_user_client_ui_StackLayoutPanel__org_gwtproject_user_client_ui_StackLayoutPanel_Header($outer_this, $c_header);
   return $instance;
  }
- /**
-  * @param {StackLayoutPanel} $outer_this
-  * @param {Header} $c_header
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_StackLayoutPanel_3__org_gwtproject_user_client_ui_StackLayoutPanel__org_gwtproject_user_client_ui_StackLayoutPanel_Header($outer_this, $c_header) {
+ 
+ $ctor__org_gwtproject_user_client_ui_StackLayoutPanel_3__org_gwtproject_user_client_ui_StackLayoutPanel__org_gwtproject_user_client_ui_StackLayoutPanel_Header(/** StackLayoutPanel */ $outer_this, /** Header */ $c_header) {
   this.f_$outer_this__org_gwtproject_user_client_ui_StackLayoutPanel_3 = $outer_this;
   this.$c_header = $c_header;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {MouseOutEvent} event
-  * @public
-  */
- m_onMouseOut__org_gwtproject_event_dom_client_MouseOutEvent(event) {
+ /** @override */
+ m_onMouseOut__org_gwtproject_event_dom_client_MouseOutEvent(/** MouseOutEvent */ event) {
   this.$c_header.m_removeStyleName__java_lang_String(StackLayoutPanel.f_HEADER_STYLE_HOVERING__org_gwtproject_user_client_ui_StackLayoutPanel_);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $3.$clinit = () =>{};
   $3.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $3;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   StackLayoutPanel = goog.module.get('org.gwtproject.user.client.ui.StackLayoutPanel$impl');
  }

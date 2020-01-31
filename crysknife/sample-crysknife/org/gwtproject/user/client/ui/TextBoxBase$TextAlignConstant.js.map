@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TextBoxBase$TextAlignConstant.impl.java.js",
-"lineCount":52,
-"mappings":"A;;;;;;;;;;MA4CsB,iB;;;;CAAA,W;EAAAA,Q;EAAAA;OACI,qEADJA,C;;;;;;;QAGV,iE,CAAgCC,K;EAAhCC,4B;EAAAA,wC;EAAAA,8I;EAAAA,iB;;;;;;CAAA,4H,CAAgCD,K;EAAhCE,iC;EACNA,mF;;;;;;CAGY,wD;EACZC,kF;;;;;QARgB,O;EAAAC,oC;EAAAA,iC;EAAAA;",
+"lineCount":38,
+"mappings":"A;;;;;;;;;;MA4CsB,iB;;CAAA,W;EAAAA,Q;EAAAA;OACI,qEADJA,C;;;QAGV,iE,sBAAgCC,K;EAAhCC,4B;EAAAA,wC;EAAAA,8I;EAAAA,iB;;;CAAA,4H,sBAAgCD,K;EAAhCE,iC;EACNA,mF;;;CAGY,wD;EACZC,kF;;;QARgB,O;EAAAC,oC;EAAAA,iC;EAAAA;",
 "sources":["TextBoxBase.java"],
 "names":["org.gwtproject.user.client.ui.TextBoxBase$TextAlignConstant.<synthetic: ctor_js>","value","org.gwtproject.user.client.ui.TextBoxBase$TextAlignConstant.<synthetic: ctor_create>","org.gwtproject.user.client.ui.TextBoxBase$TextAlignConstant.<init>","org.gwtproject.user.client.ui.TextBoxBase$TextAlignConstant.getTextAlignString","org.gwtproject.user.client.ui.TextBoxBase$TextAlignConstant.<clinit>"]
 }

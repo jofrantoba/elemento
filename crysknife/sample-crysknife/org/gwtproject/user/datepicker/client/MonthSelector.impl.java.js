@@ -7,37 +7,25 @@ const DatePickerComponent = goog.require('org.gwtproject.user.datepicker.client.
  * @abstract
   */
 class MonthSelector extends DatePickerComponent {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_datepicker_client_MonthSelector__() {
   this.$ctor__org_gwtproject_user_datepicker_client_DatePickerComponent__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MonthSelector.$clinit = () =>{};
   MonthSelector.$loadModules();
   DatePickerComponent.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof MonthSelector;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

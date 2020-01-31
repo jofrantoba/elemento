@@ -8,35 +8,22 @@ const LocalizableResource = goog.require('org.gwtproject.i18n.client.Localizable
  * @extends {LocalizableResource}
  */
 class Messages {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Messages.$clinit = () =>{};
   Messages.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  LocalizableResource.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_i18n_client_Messages = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  LocalizableResource.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_i18n_client_Messages = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_i18n_client_Messages;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

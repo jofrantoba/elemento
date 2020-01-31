@@ -10,54 +10,37 @@ let LoadEvent = goog.forwardDeclare('org.gwtproject.event.dom.client.LoadEvent$i
  * @implements {LoadHandler}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(LoadEvent):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(LoadEvent):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(LoadEvent):void} */
+  /**@type {?function(LoadEvent):void}*/
   this.f_$$fn__org_gwtproject_event_dom_client_LoadHandler_$LambdaAdaptor;
   this.$ctor__org_gwtproject_event_dom_client_LoadHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_LoadHandler_$JsFunction(fn);
  }
- /**
-  * @param {?function(LoadEvent):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_event_dom_client_LoadHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_LoadHandler_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_event_dom_client_LoadHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_LoadHandler_$JsFunction(/** ?function(LoadEvent):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_event_dom_client_LoadHandler_$LambdaAdaptor = fn;
  }
- /**
-  * @param {LoadEvent} arg0
-  * @public
-  */
- m_onLoad__org_gwtproject_event_dom_client_LoadEvent(arg0) {
+ 
+ m_onLoad__org_gwtproject_event_dom_client_LoadEvent(/** LoadEvent */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_event_dom_client_LoadHandler_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -12,44 +12,27 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.user.client.ui.Notifica
  * @extends {UiBinder<HTMLPanel, NotificationMole>}
  */
 class Binder {
- /**
-  * @param {?function(NotificationMole):HTMLPanel} fn
-  * @return {Binder}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {Binder} */
+ static $adapt(/** ?function(NotificationMole):HTMLPanel */ fn) {
   Binder.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Binder.$clinit = () =>{};
   Binder.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  UiBinder.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_NotificationMole_Binder = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  UiBinder.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_NotificationMole_Binder = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_NotificationMole_Binder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.user.client.ui.NotificationMole.Binder.$LambdaAdaptor$impl');
  }

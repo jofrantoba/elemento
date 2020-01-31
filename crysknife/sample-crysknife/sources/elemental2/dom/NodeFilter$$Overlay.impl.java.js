@@ -3,121 +3,71 @@ goog.module('elemental2.dom.NodeFilter.$Overlay$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 
 class $Overlay {
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_FILTER_ACCEPT__elemental2_dom_NodeFilter_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_FILTER_ACCEPT__elemental2_dom_NodeFilter_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_FILTER_REJECT__elemental2_dom_NodeFilter_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_FILTER_REJECT__elemental2_dom_NodeFilter_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_FILTER_SKIP__elemental2_dom_NodeFilter_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_FILTER_SKIP__elemental2_dom_NodeFilter_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_SHOW_ALL__elemental2_dom_NodeFilter_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_SHOW_ALL__elemental2_dom_NodeFilter_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_SHOW_ATTRIBUTE__elemental2_dom_NodeFilter_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_SHOW_ATTRIBUTE__elemental2_dom_NodeFilter_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_SHOW_CDATA_SECTION__elemental2_dom_NodeFilter_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_SHOW_CDATA_SECTION__elemental2_dom_NodeFilter_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_SHOW_COMMENT__elemental2_dom_NodeFilter_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_SHOW_COMMENT__elemental2_dom_NodeFilter_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_SHOW_DOCUMENT__elemental2_dom_NodeFilter_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_SHOW_DOCUMENT__elemental2_dom_NodeFilter_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_SHOW_DOCUMENT_FRAGMENT__elemental2_dom_NodeFilter_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_SHOW_DOCUMENT_FRAGMENT__elemental2_dom_NodeFilter_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_SHOW_DOCUMENT_TYPE__elemental2_dom_NodeFilter_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_SHOW_DOCUMENT_TYPE__elemental2_dom_NodeFilter_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_SHOW_ELEMENT__elemental2_dom_NodeFilter_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_SHOW_ELEMENT__elemental2_dom_NodeFilter_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_SHOW_ENTITY__elemental2_dom_NodeFilter_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_SHOW_ENTITY__elemental2_dom_NodeFilter_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_SHOW_ENTITY_REFERENCE__elemental2_dom_NodeFilter_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_SHOW_ENTITY_REFERENCE__elemental2_dom_NodeFilter_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_SHOW_NOTATION__elemental2_dom_NodeFilter_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_SHOW_NOTATION__elemental2_dom_NodeFilter_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_SHOW_PROCESSING_INSTRUCTION__elemental2_dom_NodeFilter_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_SHOW_PROCESSING_INSTRUCTION__elemental2_dom_NodeFilter_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_SHOW_TEXT__elemental2_dom_NodeFilter_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_SHOW_TEXT__elemental2_dom_NodeFilter_$Overlay);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $Overlay.$clinit = () =>{};
   $Overlay.$loadModules();
@@ -138,44 +88,42 @@ class $Overlay {
   $Overlay.$f_SHOW_PROCESSING_INSTRUCTION__elemental2_dom_NodeFilter_$Overlay = NodeFilter.SHOW_PROCESSING_INSTRUCTION;
   $Overlay.$f_SHOW_TEXT__elemental2_dom_NodeFilter_$Overlay = NodeFilter.SHOW_TEXT;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }
 
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_FILTER_ACCEPT__elemental2_dom_NodeFilter_$Overlay = 0.0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_FILTER_REJECT__elemental2_dom_NodeFilter_$Overlay = 0.0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_FILTER_SKIP__elemental2_dom_NodeFilter_$Overlay = 0.0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_SHOW_ALL__elemental2_dom_NodeFilter_$Overlay = 0.0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_SHOW_ATTRIBUTE__elemental2_dom_NodeFilter_$Overlay = 0.0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_SHOW_CDATA_SECTION__elemental2_dom_NodeFilter_$Overlay = 0.0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_SHOW_COMMENT__elemental2_dom_NodeFilter_$Overlay = 0.0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_SHOW_DOCUMENT__elemental2_dom_NodeFilter_$Overlay = 0.0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_SHOW_DOCUMENT_FRAGMENT__elemental2_dom_NodeFilter_$Overlay = 0.0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_SHOW_DOCUMENT_TYPE__elemental2_dom_NodeFilter_$Overlay = 0.0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_SHOW_ELEMENT__elemental2_dom_NodeFilter_$Overlay = 0.0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_SHOW_ENTITY__elemental2_dom_NodeFilter_$Overlay = 0.0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_SHOW_ENTITY_REFERENCE__elemental2_dom_NodeFilter_$Overlay = 0.0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_SHOW_NOTATION__elemental2_dom_NodeFilter_$Overlay = 0.0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_SHOW_PROCESSING_INSTRUCTION__elemental2_dom_NodeFilter_$Overlay = 0.0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_SHOW_TEXT__elemental2_dom_NodeFilter_$Overlay = 0.0;
 
 exports = $Overlay; 

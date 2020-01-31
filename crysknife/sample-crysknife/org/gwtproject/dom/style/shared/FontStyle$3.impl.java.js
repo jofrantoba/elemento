@@ -6,69 +6,41 @@ const FontStyle = goog.require('org.gwtproject.dom.style.shared.FontStyle$impl')
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class $3 extends FontStyle {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @return {!$3}
-  * @public
-  */
- static $create__java_lang_String__int($name, $ordinal) {
+ /** @return {!$3} */
+ static $create__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   $3.$clinit();
   let $instance = new $3();
   $instance.$ctor__org_gwtproject_dom_style_shared_FontStyle_3__java_lang_String__int($name, $ordinal);
   return $instance;
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_dom_style_shared_FontStyle_3__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_dom_style_shared_FontStyle_3__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.$ctor__org_gwtproject_dom_style_shared_FontStyle__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getCssName__() {
   return "oblique";
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @return {number}
-  * @public
-  */
- m_compareTo__java_lang_Object(arg0) {
-  return super.compareTo(/**@type {FontStyle} */ ($Casts.$to(arg0, FontStyle)));
+ //Bridge method.
+ /** @override @return {number} */
+ m_compareTo__java_lang_Object(/** * */ arg0) {
+  return super.compareTo(/**@type {FontStyle}*/ ($Casts.$to(arg0, FontStyle)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $3.$clinit = () =>{};
   $3.$loadModules();
   FontStyle.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $3;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

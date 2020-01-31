@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ResizeHandler$$LambdaAdaptor.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;MAmBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gF;EAAAA,gJ;;;;;;CAAA,sI;EAAAC,iC;EAAAA,mF;;;;;;CAAA,2D;;GAAAC,8F;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MAmBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gF;EAAAA,gJ;;;CAAA,sI;EAAAC,iC;EAAAA,mF;;;CAAA,2D;;GAAAC,8F;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["ResizeHandler.java"],
 "names":["org.gwtproject.event.logical.shared.ResizeHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.logical.shared.ResizeHandler$$LambdaAdaptor.<init>","org.gwtproject.event.logical.shared.ResizeHandler$$LambdaAdaptor.onResize","org.gwtproject.event.logical.shared.ResizeHandler$$LambdaAdaptor.<clinit>"]
 }

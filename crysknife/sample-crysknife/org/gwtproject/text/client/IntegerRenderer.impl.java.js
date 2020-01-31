@@ -13,16 +13,11 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {AbstractRenderer<Integer>}
   */
 class IntegerRenderer extends AbstractRenderer {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {Renderer<Integer>}
-  * @public
-  */
+ /** @return {Renderer<Integer>} */
  static m_instance__() {
   IntegerRenderer.$clinit();
   if ($Equality.$same(IntegerRenderer.f_INSTANCE__org_gwtproject_text_client_IntegerRenderer_, null)) {
@@ -30,59 +25,37 @@ class IntegerRenderer extends AbstractRenderer {
   }
   return IntegerRenderer.f_INSTANCE__org_gwtproject_text_client_IntegerRenderer_;
  }
- /**
-  * @return {!IntegerRenderer}
-  * @public
-  */
+ /** @return {!IntegerRenderer} */
  static $create__() {
   IntegerRenderer.$clinit();
   let $instance = new IntegerRenderer();
   $instance.$ctor__org_gwtproject_text_client_IntegerRenderer__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_text_client_IntegerRenderer__() {
   this.$ctor__org_gwtproject_text_shared_AbstractRenderer__();
  }
- /**
-  * @param {Integer} object
-  * @return {?string}
-  * @public
-  */
- m_render__java_lang_Integer(object) {
+ /** @return {?string} */
+ m_render__java_lang_Integer(/** Integer */ object) {
   return $Equality.$same(null, object) ? "" : NumberFormat.m_getDecimalFormat__().m_format__java_lang_Number(object);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @return {?string}
-  * @public
-  */
- m_render__java_lang_Object(arg0) {
-  return this.m_render__java_lang_Integer(/**@type {Integer} */ ($Casts.$to(arg0, Integer)));
+ //Bridge method.
+ /** @override @return {?string} */
+ m_render__java_lang_Object(/** * */ arg0) {
+  return this.m_render__java_lang_Integer(/**@type {Integer}*/ ($Casts.$to(arg0, Integer)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   IntegerRenderer.$clinit = () =>{};
   IntegerRenderer.$loadModules();
   AbstractRenderer.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof IntegerRenderer;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Integer = goog.module.get('java.lang.Integer$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -93,7 +66,7 @@ class IntegerRenderer extends AbstractRenderer {
 }
 $Util.$setClassMetadata(IntegerRenderer, 'org.gwtproject.text.client.IntegerRenderer');
 
-/** @public {IntegerRenderer} */
+/**@type {IntegerRenderer}*/
 IntegerRenderer.f_INSTANCE__org_gwtproject_text_client_IntegerRenderer_;
 
 exports = IntegerRenderer; 

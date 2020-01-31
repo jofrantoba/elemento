@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DragEnterClickHandler$$LambdaAdaptor.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;MAkBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;oF;EAAAA,wJ;;;;;;CAAA,8I;EAAAC,iC;EAAAA,uF;;;;;;CAAA,+D;;GAAAC,kG;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MAkBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;oF;EAAAA,wJ;;;CAAA,8I;EAAAC,iC;EAAAA,uF;;;CAAA,+D;;GAAAC,kG;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["DragEnterClickHandler.java"],
 "names":["org.gwtproject.event.dom.client.DragEnterClickHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.dom.client.DragEnterClickHandler$$LambdaAdaptor.<init>","org.gwtproject.event.dom.client.DragEnterClickHandler$$LambdaAdaptor.onDoubleClick","org.gwtproject.event.dom.client.DragEnterClickHandler$$LambdaAdaptor.<clinit>"]
 }

@@ -19,87 +19,52 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @implements {HasCssName}
   */
 class WhiteSpace extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_dom_style_shared_WhiteSpace__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_dom_style_shared_WhiteSpace__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @abstract
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @override @return {?string} */
  m_getCssName__() {}
- /**
-  * @param {string} name
-  * @return {!WhiteSpace}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!WhiteSpace} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   WhiteSpace.$clinit();
   if ($Equality.$same(WhiteSpace.f_namesToValuesMap__org_gwtproject_dom_style_shared_WhiteSpace_, null)) {
    WhiteSpace.f_namesToValuesMap__org_gwtproject_dom_style_shared_WhiteSpace_ = $Enums.createMapFromValues(WhiteSpace.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, WhiteSpace.f_namesToValuesMap__org_gwtproject_dom_style_shared_WhiteSpace_);
  }
- /**
-  * @return {!Array<!WhiteSpace>}
-  * @public
-  */
+ /** @return {!Array<!WhiteSpace>} */
  static m_values__() {
   WhiteSpace.$clinit();
-  return /**@type {!Array<WhiteSpace>} */ ($Arrays.$init([WhiteSpace.$f_NORMAL__org_gwtproject_dom_style_shared_WhiteSpace, WhiteSpace.$f_NOWRAP__org_gwtproject_dom_style_shared_WhiteSpace, WhiteSpace.$f_PRE__org_gwtproject_dom_style_shared_WhiteSpace, WhiteSpace.$f_PRE_LINE__org_gwtproject_dom_style_shared_WhiteSpace, WhiteSpace.$f_PRE_WRAP__org_gwtproject_dom_style_shared_WhiteSpace], WhiteSpace));
+  return /**@type {!Array<WhiteSpace>}*/ ($Arrays.$init([WhiteSpace.$f_NORMAL__org_gwtproject_dom_style_shared_WhiteSpace, WhiteSpace.$f_NOWRAP__org_gwtproject_dom_style_shared_WhiteSpace, WhiteSpace.$f_PRE__org_gwtproject_dom_style_shared_WhiteSpace, WhiteSpace.$f_PRE_LINE__org_gwtproject_dom_style_shared_WhiteSpace, WhiteSpace.$f_PRE_WRAP__org_gwtproject_dom_style_shared_WhiteSpace], WhiteSpace));
  }
- /**
-  * @return {!WhiteSpace}
-  * @public
-  */
+ /** @return {!WhiteSpace} */
  static get f_NORMAL__org_gwtproject_dom_style_shared_WhiteSpace() {
   return (WhiteSpace.$clinit(), WhiteSpace.$f_NORMAL__org_gwtproject_dom_style_shared_WhiteSpace);
  }
- /**
-  * @return {!WhiteSpace}
-  * @public
-  */
+ /** @return {!WhiteSpace} */
  static get f_NOWRAP__org_gwtproject_dom_style_shared_WhiteSpace() {
   return (WhiteSpace.$clinit(), WhiteSpace.$f_NOWRAP__org_gwtproject_dom_style_shared_WhiteSpace);
  }
- /**
-  * @return {!WhiteSpace}
-  * @public
-  */
+ /** @return {!WhiteSpace} */
  static get f_PRE__org_gwtproject_dom_style_shared_WhiteSpace() {
   return (WhiteSpace.$clinit(), WhiteSpace.$f_PRE__org_gwtproject_dom_style_shared_WhiteSpace);
  }
- /**
-  * @return {!WhiteSpace}
-  * @public
-  */
+ /** @return {!WhiteSpace} */
  static get f_PRE_LINE__org_gwtproject_dom_style_shared_WhiteSpace() {
   return (WhiteSpace.$clinit(), WhiteSpace.$f_PRE_LINE__org_gwtproject_dom_style_shared_WhiteSpace);
  }
- /**
-  * @return {!WhiteSpace}
-  * @public
-  */
+ /** @return {!WhiteSpace} */
  static get f_PRE_WRAP__org_gwtproject_dom_style_shared_WhiteSpace() {
   return (WhiteSpace.$clinit(), WhiteSpace.$f_PRE_WRAP__org_gwtproject_dom_style_shared_WhiteSpace);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   WhiteSpace.$clinit = () =>{};
   WhiteSpace.$loadModules();
@@ -111,17 +76,11 @@ class WhiteSpace extends Enum {
   WhiteSpace.$f_PRE_WRAP__org_gwtproject_dom_style_shared_WhiteSpace = $5.$create__java_lang_String__int($Util.$makeEnumName("PRE_WRAP"), WhiteSpace.$ordinal$f_PRE_WRAP__org_gwtproject_dom_style_shared_WhiteSpace);
   WhiteSpace.f_namesToValuesMap__org_gwtproject_dom_style_shared_WhiteSpace_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof WhiteSpace;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.dom.style.shared.WhiteSpace.$1$impl');
@@ -138,27 +97,27 @@ $Util.$setClassMetadataForEnum(WhiteSpace, 'org.gwtproject.dom.style.shared.Whit
 
 HasCssName.$markImplementor(WhiteSpace);
 
-/** @private {!WhiteSpace} */
+/**@private {!WhiteSpace}*/
 WhiteSpace.$f_NORMAL__org_gwtproject_dom_style_shared_WhiteSpace;
-/** @private {!WhiteSpace} */
+/**@private {!WhiteSpace}*/
 WhiteSpace.$f_NOWRAP__org_gwtproject_dom_style_shared_WhiteSpace;
-/** @private {!WhiteSpace} */
+/**@private {!WhiteSpace}*/
 WhiteSpace.$f_PRE__org_gwtproject_dom_style_shared_WhiteSpace;
-/** @private {!WhiteSpace} */
+/**@private {!WhiteSpace}*/
 WhiteSpace.$f_PRE_LINE__org_gwtproject_dom_style_shared_WhiteSpace;
-/** @private {!WhiteSpace} */
+/**@private {!WhiteSpace}*/
 WhiteSpace.$f_PRE_WRAP__org_gwtproject_dom_style_shared_WhiteSpace;
-/** @public {Map<?string, !WhiteSpace>} */
+/**@type {Map<?string, !WhiteSpace>}*/
 WhiteSpace.f_namesToValuesMap__org_gwtproject_dom_style_shared_WhiteSpace_;
-/** @public {number} @const */
+/**@const {number}*/
 WhiteSpace.$ordinal$f_NORMAL__org_gwtproject_dom_style_shared_WhiteSpace = 0;
-/** @public {number} @const */
+/**@const {number}*/
 WhiteSpace.$ordinal$f_NOWRAP__org_gwtproject_dom_style_shared_WhiteSpace = 1;
-/** @public {number} @const */
+/**@const {number}*/
 WhiteSpace.$ordinal$f_PRE__org_gwtproject_dom_style_shared_WhiteSpace = 2;
-/** @public {number} @const */
+/**@const {number}*/
 WhiteSpace.$ordinal$f_PRE_LINE__org_gwtproject_dom_style_shared_WhiteSpace = 3;
-/** @public {number} @const */
+/**@const {number}*/
 WhiteSpace.$ordinal$f_PRE_WRAP__org_gwtproject_dom_style_shared_WhiteSpace = 4;
 
 exports = WhiteSpace; 

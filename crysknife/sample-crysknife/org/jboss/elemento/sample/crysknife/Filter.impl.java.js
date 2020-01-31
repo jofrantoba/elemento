@@ -14,58 +14,35 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @extends {Enum<Filter>}
   */
 class Filter extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_fragment__org_jboss_elemento_sample_crysknife_Filter_;
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @param {?string} fragment
-  * @return {!Filter}
-  * @public
-  */
- static $create__java_lang_String__int__java_lang_String($name, $ordinal, fragment) {
+ /** @return {!Filter} */
+ static $create__java_lang_String__int__java_lang_String(/** ?string */ $name, /** number */ $ordinal, /** ?string */ fragment) {
   let $instance = new Filter();
   $instance.$ctor__org_jboss_elemento_sample_crysknife_Filter__java_lang_String__int__java_lang_String($name, $ordinal, fragment);
   return $instance;
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @param {?string} fragment
-  * @public
-  */
- $ctor__org_jboss_elemento_sample_crysknife_Filter__java_lang_String__int__java_lang_String($name, $ordinal, fragment) {
+ 
+ $ctor__org_jboss_elemento_sample_crysknife_Filter__java_lang_String__int__java_lang_String(/** ?string */ $name, /** number */ $ordinal, /** ?string */ fragment) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
   this.f_fragment__org_jboss_elemento_sample_crysknife_Filter_ = fragment;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_fragment__() {
   return this.f_fragment__org_jboss_elemento_sample_crysknife_Filter_;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_filter__() {
   return j_l_String.m_toLowerCase__java_lang_String(this.name());
  }
- /**
-  * @param {?string} token
-  * @return {Filter}
-  * @public
-  */
- static m_parseToken__java_lang_String(token) {
+ /** @return {Filter} */
+ static m_parseToken__java_lang_String(/** ?string */ token) {
   Filter.$clinit();
   if ($Equality.$same(token, null)) {
    return Filter.$f_ALL__org_jboss_elemento_sample_crysknife_Filter;
@@ -81,60 +58,37 @@ class Filter extends Enum {
    }
   }
  }
- /**
-  * @param {string} name
-  * @return {!Filter}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!Filter} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   Filter.$clinit();
   if ($Equality.$same(Filter.f_namesToValuesMap__org_jboss_elemento_sample_crysknife_Filter_, null)) {
    Filter.f_namesToValuesMap__org_jboss_elemento_sample_crysknife_Filter_ = $Enums.createMapFromValues(Filter.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, Filter.f_namesToValuesMap__org_jboss_elemento_sample_crysknife_Filter_);
  }
- /**
-  * @return {!Array<!Filter>}
-  * @public
-  */
+ /** @return {!Array<!Filter>} */
  static m_values__() {
   Filter.$clinit();
-  return /**@type {!Array<Filter>} */ ($Arrays.$init([Filter.$f_ALL__org_jboss_elemento_sample_crysknife_Filter, Filter.$f_ACTIVE__org_jboss_elemento_sample_crysknife_Filter, Filter.$f_COMPLETED__org_jboss_elemento_sample_crysknife_Filter], Filter));
+  return /**@type {!Array<Filter>}*/ ($Arrays.$init([Filter.$f_ALL__org_jboss_elemento_sample_crysknife_Filter, Filter.$f_ACTIVE__org_jboss_elemento_sample_crysknife_Filter, Filter.$f_COMPLETED__org_jboss_elemento_sample_crysknife_Filter], Filter));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @return {number}
-  * @public
-  */
- m_compareTo__java_lang_Object(arg0) {
-  return super.compareTo(/**@type {Filter} */ ($Casts.$to(arg0, Filter)));
+ //Bridge method.
+ /** @override @return {number} */
+ m_compareTo__java_lang_Object(/** * */ arg0) {
+  return super.compareTo(/**@type {Filter}*/ ($Casts.$to(arg0, Filter)));
  }
- /**
-  * @return {!Filter}
-  * @public
-  */
+ /** @return {!Filter} */
  static get f_ALL__org_jboss_elemento_sample_crysknife_Filter() {
   return (Filter.$clinit(), Filter.$f_ALL__org_jboss_elemento_sample_crysknife_Filter);
  }
- /**
-  * @return {!Filter}
-  * @public
-  */
+ /** @return {!Filter} */
  static get f_ACTIVE__org_jboss_elemento_sample_crysknife_Filter() {
   return (Filter.$clinit(), Filter.$f_ACTIVE__org_jboss_elemento_sample_crysknife_Filter);
  }
- /**
-  * @return {!Filter}
-  * @public
-  */
+ /** @return {!Filter} */
  static get f_COMPLETED__org_jboss_elemento_sample_crysknife_Filter() {
   return (Filter.$clinit(), Filter.$f_COMPLETED__org_jboss_elemento_sample_crysknife_Filter);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Filter.$clinit = () =>{};
   Filter.$loadModules();
@@ -144,17 +98,11 @@ class Filter extends Enum {
   Filter.$f_COMPLETED__org_jboss_elemento_sample_crysknife_Filter = Filter.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("COMPLETED"), Filter.$ordinal$f_COMPLETED__org_jboss_elemento_sample_crysknife_Filter, "#/completed");
   Filter.f_namesToValuesMap__org_jboss_elemento_sample_crysknife_Filter_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Filter;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   InternalPreconditions = goog.module.get('javaemul.internal.InternalPreconditions$impl');
@@ -167,19 +115,19 @@ class Filter extends Enum {
 }
 $Util.$setClassMetadataForEnum(Filter, 'org.jboss.elemento.sample.crysknife.Filter');
 
-/** @private {!Filter} */
+/**@private {!Filter}*/
 Filter.$f_ALL__org_jboss_elemento_sample_crysknife_Filter;
-/** @private {!Filter} */
+/**@private {!Filter}*/
 Filter.$f_ACTIVE__org_jboss_elemento_sample_crysknife_Filter;
-/** @private {!Filter} */
+/**@private {!Filter}*/
 Filter.$f_COMPLETED__org_jboss_elemento_sample_crysknife_Filter;
-/** @public {Map<?string, !Filter>} */
+/**@type {Map<?string, !Filter>}*/
 Filter.f_namesToValuesMap__org_jboss_elemento_sample_crysknife_Filter_;
-/** @public {number} @const */
+/**@const {number}*/
 Filter.$ordinal$f_ALL__org_jboss_elemento_sample_crysknife_Filter = 0;
-/** @public {number} @const */
+/**@const {number}*/
 Filter.$ordinal$f_ACTIVE__org_jboss_elemento_sample_crysknife_Filter = 1;
-/** @public {number} @const */
+/**@const {number}*/
 Filter.$ordinal$f_COMPLETED__org_jboss_elemento_sample_crysknife_Filter = 2;
 
 exports = Filter; 

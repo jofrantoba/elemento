@@ -15,16 +15,11 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class Canvas extends FocusWidget {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {Canvas}
-  * @public
-  */
+ /** @return {Canvas} */
  static m_createIfSupported__() {
   Canvas.$clinit();
   let element = $Overlay.m_createCanvasElement__$devirt__org_gwtproject_dom_client_Document($Overlay.m_get__());
@@ -33,12 +28,8 @@ class Canvas extends FocusWidget {
   }
   return Canvas.$create__org_gwtproject_dom_client_CanvasElement(element);
  }
- /**
-  * @param {Object} element
-  * @return {Canvas}
-  * @public
-  */
- static m_wrap__org_gwtproject_dom_client_CanvasElement(element) {
+ /** @return {Canvas} */
+ static m_wrap__org_gwtproject_dom_client_CanvasElement(/** Object */ element) {
   Canvas.$clinit();
   if (!Canvas.m_isSupported__org_gwtproject_dom_client_CanvasElement(element)) {
    return null;
@@ -49,132 +40,77 @@ class Canvas extends FocusWidget {
   RootPanel.m_detachOnWindowClose__org_gwtproject_user_client_ui_Widget(canvas);
   return canvas;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  static m_isSupported__() {
   Canvas.$clinit();
   return Canvas.m_isSupported__org_gwtproject_dom_client_CanvasElement($Overlay.m_createCanvasElement__$devirt__org_gwtproject_dom_client_Document($Overlay.m_get__()));
  }
- /**
-  * @param {Object} element
-  * @return {boolean}
-  * @public
-  */
- static m_isSupported__org_gwtproject_dom_client_CanvasElement(element) {
+ /** @return {boolean} */
+ static m_isSupported__org_gwtproject_dom_client_CanvasElement(/** Object */ element) {
   return Canvas.m_isSupportedRunTime__org_gwtproject_dom_client_CanvasElement(element);
  }
- /**
-  * @param {Object} element
-  * @return {!Canvas}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_CanvasElement(element) {
+ /** @return {!Canvas} */
+ static $create__org_gwtproject_dom_client_CanvasElement(/** Object */ element) {
   let $instance = new Canvas();
   $instance.$ctor__org_gwtproject_canvas_client_Canvas__org_gwtproject_dom_client_CanvasElement(element);
   return $instance;
  }
- /**
-  * @param {Object} element
-  * @public
-  */
- $ctor__org_gwtproject_canvas_client_Canvas__org_gwtproject_dom_client_CanvasElement(element) {
+ 
+ $ctor__org_gwtproject_canvas_client_Canvas__org_gwtproject_dom_client_CanvasElement(/** Object */ element) {
   this.$ctor__org_gwtproject_user_client_ui_FocusWidget__();
   this.m_setElement__org_gwtproject_dom_client_Element(element);
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getCanvasElement__() {
-  return /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(this.m_getElement__()), CanvasElement_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(this.m_getElement__()), CanvasElement_$Overlay));
  }
- /**
-  * @param {?string} contextId
-  * @return {Object}
-  * @public
-  */
- m_getContext__java_lang_String(contextId) {
+ /** @return {Object} */
+ m_getContext__java_lang_String(/** ?string */ contextId) {
   return this.m_getCanvasElement__().getContext(contextId);
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getContext2d__() {
   return CanvasElement_$Overlay.m_getContext2d__$devirt__org_gwtproject_dom_client_CanvasElement(this.m_getCanvasElement__());
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getCoordinateSpaceHeight__() {
   return this.m_getCanvasElement__().height;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getCoordinateSpaceWidth__() {
   return this.m_getCanvasElement__().width;
  }
- /**
-  * @param {number} height
-  * @public
-  */
- m_setCoordinateSpaceHeight__int(height) {
+ 
+ m_setCoordinateSpaceHeight__int(/** number */ height) {
   this.m_getCanvasElement__().height = height;
  }
- /**
-  * @param {number} width
-  * @public
-  */
- m_setCoordinateSpaceWidth__int(width) {
+ 
+ m_setCoordinateSpaceWidth__int(/** number */ width) {
   this.m_getCanvasElement__().width = width;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_toDataUrl__() {
   return this.m_getCanvasElement__().toDataURL();
  }
- /**
-  * @param {?string} type
-  * @return {?string}
-  * @public
-  */
- m_toDataUrl__java_lang_String(type) {
+ /** @return {?string} */
+ m_toDataUrl__java_lang_String(/** ?string */ type) {
   return this.m_getCanvasElement__().toDataURL(type);
  }
- /**
-  * @param {Object} element
-  * @return {boolean}
-  * @public
-  */
- static m_isSupportedRunTime__org_gwtproject_dom_client_CanvasElement(element) {
-  return JsPropertyMap_$Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (element), "getContext");
+ /** @return {boolean} */
+ static m_isSupportedRunTime__org_gwtproject_dom_client_CanvasElement(/** Object */ element) {
+  return JsPropertyMap_$Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (element), "getContext");
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Canvas.$clinit = () =>{};
   Canvas.$loadModules();
   FocusWidget.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Canvas;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   JsPropertyMap_$Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');
   JavaScriptObject_$Overlay = goog.module.get('org.gwtproject.core.client.JavaScriptObject.$Overlay$impl');

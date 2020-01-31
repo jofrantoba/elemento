@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"RowCountChangeEvent$Handler$$LambdaAdaptor.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;MAiC0B,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qF;EAAAA,0J;;;;;;CAAA,gJ;EAAAC,iC;EAAAA,wF;;;;;;CAAA,kE;;GAAAC,mG;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MAiC0B,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qF;EAAAA,0J;;;CAAA,gJ;EAAAC,iC;EAAAA,wF;;;CAAA,kE;;GAAAC,mG;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["RowCountChangeEvent.java"],
 "names":["org.gwtproject.view.client.RowCountChangeEvent$Handler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.view.client.RowCountChangeEvent$Handler$$LambdaAdaptor.<init>","org.gwtproject.view.client.RowCountChangeEvent$Handler$$LambdaAdaptor.onRowCountChange","org.gwtproject.view.client.RowCountChangeEvent$Handler$$LambdaAdaptor.<clinit>"]
 }

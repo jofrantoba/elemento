@@ -13,71 +13,49 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {Factory<TodoRepository>}
   */
 class TodoRepository__Factory extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Interceptor} */
+  /**@type {Interceptor}*/
   this.f_interceptor__org_jboss_elemento_sample_crysknife_TodoRepository_Factory_;
-  /** @public {TodoRepository} */
+  /**@type {TodoRepository}*/
   this.f_instance__org_jboss_elemento_sample_crysknife_TodoRepository_Factory_;
  }
- /**
-  * @override
-  * @return {TodoRepository}
-  * @public
-  */
+ /** @override @return {TodoRepository} */
  m_get__() {
   if (!$Equality.$same(this.f_instance__org_jboss_elemento_sample_crysknife_TodoRepository_Factory_, null)) {
    return this.f_instance__org_jboss_elemento_sample_crysknife_TodoRepository_Factory_;
   }
   this.f_interceptor__org_jboss_elemento_sample_crysknife_TodoRepository_Factory_ = Interceptor.$create__java_lang_Object(TodoRepository.$create__());
-  this.f_instance__org_jboss_elemento_sample_crysknife_TodoRepository_Factory_ = /**@type {TodoRepository} */ ($Casts.$to(this.f_interceptor__org_jboss_elemento_sample_crysknife_TodoRepository_Factory_.m_getProxy__(), TodoRepository));
+  this.f_instance__org_jboss_elemento_sample_crysknife_TodoRepository_Factory_ = /**@type {TodoRepository}*/ ($Casts.$to(this.f_interceptor__org_jboss_elemento_sample_crysknife_TodoRepository_Factory_.m_getProxy__(), TodoRepository));
   return this.f_instance__org_jboss_elemento_sample_crysknife_TodoRepository_Factory_;
  }
- /**
-  * @return {!TodoRepository__Factory}
-  * @public
-  */
+ /** @return {!TodoRepository__Factory} */
  static $create__() {
   let $instance = new TodoRepository__Factory();
   $instance.$ctor__org_jboss_elemento_sample_crysknife_TodoRepository_Factory__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_jboss_elemento_sample_crysknife_TodoRepository_Factory__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {TodoRepository__Factory}
-  * @public
-  */
+ /** @return {TodoRepository__Factory} */
  static m_create__() {
   TodoRepository__Factory.$clinit();
   return TodoRepository__Factory.$create__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TodoRepository__Factory.$clinit = () =>{};
   TodoRepository__Factory.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TodoRepository__Factory;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   TodoRepository = goog.module.get('org.jboss.elemento.sample.crysknife.TodoRepository$impl');

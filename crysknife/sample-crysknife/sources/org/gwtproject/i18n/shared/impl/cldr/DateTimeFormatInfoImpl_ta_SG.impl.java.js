@@ -4,55 +4,36 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const DateTimeFormatInfoImpl__ta = goog.require('org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_ta$impl');
 
 class DateTimeFormatInfoImpl__ta__SG extends DateTimeFormatInfoImpl__ta {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!DateTimeFormatInfoImpl__ta__SG}
-  * @public
-  */
+ /** @return {!DateTimeFormatInfoImpl__ta__SG} */
  static $create__() {
   DateTimeFormatInfoImpl__ta__SG.$clinit();
   let $instance = new DateTimeFormatInfoImpl__ta__SG();
   $instance.$ctor__org_gwtproject_i18n_shared_impl_cldr_DateTimeFormatInfoImpl_ta_SG__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_i18n_shared_impl_cldr_DateTimeFormatInfoImpl_ta_SG__() {
   this.$ctor__org_gwtproject_i18n_shared_impl_cldr_DateTimeFormatInfoImpl_ta__();
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_weekendStart__() {
   return 6;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DateTimeFormatInfoImpl__ta__SG.$clinit = () =>{};
   DateTimeFormatInfoImpl__ta__SG.$loadModules();
   DateTimeFormatInfoImpl__ta.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DateTimeFormatInfoImpl__ta__SG;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

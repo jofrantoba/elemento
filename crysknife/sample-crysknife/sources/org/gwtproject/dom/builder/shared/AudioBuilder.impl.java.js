@@ -8,35 +8,22 @@ const MediaBuilder = goog.require('org.gwtproject.dom.builder.shared.MediaBuilde
  * @extends {MediaBuilder<AudioBuilder>}
  */
 class AudioBuilder {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AudioBuilder.$clinit = () =>{};
   AudioBuilder.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  MediaBuilder.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_dom_builder_shared_AudioBuilder = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  MediaBuilder.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_dom_builder_shared_AudioBuilder = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_dom_builder_shared_AudioBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -10,54 +10,37 @@ let ProgressEvent = goog.forwardDeclare('org.gwtproject.event.dom.client.Progres
  * @implements {ProgressHandler}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(ProgressEvent):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(ProgressEvent):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(ProgressEvent):void} */
+  /**@type {?function(ProgressEvent):void}*/
   this.f_$$fn__org_gwtproject_event_dom_client_ProgressHandler_$LambdaAdaptor;
   this.$ctor__org_gwtproject_event_dom_client_ProgressHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_ProgressHandler_$JsFunction(fn);
  }
- /**
-  * @param {?function(ProgressEvent):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_event_dom_client_ProgressHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_ProgressHandler_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_event_dom_client_ProgressHandler_$LambdaAdaptor__org_gwtproject_event_dom_client_ProgressHandler_$JsFunction(/** ?function(ProgressEvent):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_event_dom_client_ProgressHandler_$LambdaAdaptor = fn;
  }
- /**
-  * @param {ProgressEvent} arg0
-  * @public
-  */
- m_onProgress__org_gwtproject_event_dom_client_ProgressEvent(arg0) {
+ 
+ m_onProgress__org_gwtproject_event_dom_client_ProgressEvent(/** ProgressEvent */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_event_dom_client_ProgressHandler_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CustomScrollPanel$Resources$$LambdaAdaptor.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;;;;MAgEmB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;wF;EAAAA,gK;;;;;;CAAA,sJ;EAAAC,iC;EAAAA,2F;;;;;;CAAA,0B;EAAAC,uC;EAAAA,wH;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;;MAgEmB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;wF;EAAAA,gK;;;CAAA,sJ;EAAAC,iC;EAAAA,2F;;;CAAA,0B;EAAAC,uC;EAAAA,wH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["CustomScrollPanel.java"],
 "names":["org.gwtproject.user.client.ui.CustomScrollPanel$Resources$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.client.ui.CustomScrollPanel$Resources$$LambdaAdaptor.<init>","org.gwtproject.user.client.ui.CustomScrollPanel$Resources$$LambdaAdaptor.customScrollPanelStyle","org.gwtproject.user.client.ui.CustomScrollPanel$Resources$$LambdaAdaptor.<clinit>"]
 }

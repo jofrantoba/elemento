@@ -13,74 +13,45 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {Instance<T>}
   */
 class InstanceImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Provider<T>} */
+  /**@type {Provider<T>}*/
   this.f_provider__org_treblereel_gwt_crysknife_client_internal_InstanceImpl;
  }
- /**
-  * @template T
-  * @param {Provider<T>} provider
-  * @return {!InstanceImpl<T>}
-  * @public
-  */
- static $create__javax_inject_Provider(provider) {
+ /** @template T @return {!InstanceImpl<T>} */
+ static $create__javax_inject_Provider(/** Provider<T> */ provider) {
   InstanceImpl.$clinit();
   let $instance = new InstanceImpl();
   $instance.$ctor__org_treblereel_gwt_crysknife_client_internal_InstanceImpl__javax_inject_Provider(provider);
   return $instance;
  }
- /**
-  * @param {Provider<T>} provider
-  * @public
-  */
- $ctor__org_treblereel_gwt_crysknife_client_internal_InstanceImpl__javax_inject_Provider(provider) {
+ 
+ $ctor__org_treblereel_gwt_crysknife_client_internal_InstanceImpl__javax_inject_Provider(/** Provider<T> */ provider) {
   this.$ctor__java_lang_Object__();
   this.f_provider__org_treblereel_gwt_crysknife_client_internal_InstanceImpl = provider;
  }
- /**
-  * @override
-  * @return {T}
-  * @public
-  */
+ /** @override @return {T} */
  m_get__() {
   return this.f_provider__org_treblereel_gwt_crysknife_client_internal_InstanceImpl.m_get__();
  }
- /**
-  * @override
-  * @param {T} var1
-  * @public
-  */
- m_destroy__java_lang_Object(var1) {
+ /** @override */
+ m_destroy__java_lang_Object(/** T */ var1) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__());
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_destroyAll__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   InstanceImpl.$clinit = () =>{};
   InstanceImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof InstanceImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   UnsupportedOperationException = goog.module.get('java.lang.UnsupportedOperationException$impl');
   $Exceptions = goog.module.get('vmbootstrap.Exceptions$impl');

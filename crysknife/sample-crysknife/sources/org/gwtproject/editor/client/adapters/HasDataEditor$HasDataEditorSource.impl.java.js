@@ -15,107 +15,64 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {EditorSource<LeafValueEditor<T>>}
   */
 class HasDataEditorSource extends EditorSource {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {HasData<T>} */
+  /**@type {HasData<T>}*/
   this.f_data__org_gwtproject_editor_client_adapters_HasDataEditor_HasDataEditorSource_;
  }
- /**
-  * @template T
-  * @param {HasData<T>} data
-  * @return {!HasDataEditorSource<T>}
-  * @public
-  */
- static $create__org_gwtproject_view_client_HasData(data) {
+ /** @template T @return {!HasDataEditorSource<T>} */
+ static $create__org_gwtproject_view_client_HasData(/** HasData<T> */ data) {
   HasDataEditorSource.$clinit();
   let $instance = new HasDataEditorSource();
   $instance.$ctor__org_gwtproject_editor_client_adapters_HasDataEditor_HasDataEditorSource__org_gwtproject_view_client_HasData(data);
   return $instance;
  }
- /**
-  * @param {HasData<T>} data
-  * @public
-  */
- $ctor__org_gwtproject_editor_client_adapters_HasDataEditor_HasDataEditorSource__org_gwtproject_view_client_HasData(data) {
+ 
+ $ctor__org_gwtproject_editor_client_adapters_HasDataEditor_HasDataEditorSource__org_gwtproject_view_client_HasData(/** HasData<T> */ data) {
   this.$ctor__org_gwtproject_editor_client_adapters_EditorSource__();
   this.f_data__org_gwtproject_editor_client_adapters_HasDataEditor_HasDataEditorSource_ = data;
  }
- /**
-  * @override
-  * @param {number} index
-  * @return {IndexedEditor<T>}
-  * @public
-  */
- m_create__int(index) {
+ /** @override @return {IndexedEditor<T>} */
+ m_create__int(/** number */ index) {
   $Asserts.$assert(index >= 0);
-  return /**@type {!IndexedEditor<T>} */ (IndexedEditor.$create__int__org_gwtproject_view_client_HasData(index, this.f_data__org_gwtproject_editor_client_adapters_HasDataEditor_HasDataEditorSource_));
+  return /**@type {!IndexedEditor<T>}*/ (IndexedEditor.$create__int__org_gwtproject_view_client_HasData(index, this.f_data__org_gwtproject_editor_client_adapters_HasDataEditor_HasDataEditorSource_));
  }
- /**
-  * @override
-  * @return {LeafValueEditor<T>}
-  * @public
-  */
+ /** @override @return {LeafValueEditor<T>} */
  m_createEditorForTraversal__() {
-  return /**@type {!IndexedEditor<T>} */ (IndexedEditor.$create__int__org_gwtproject_view_client_HasData(-1, null));
+  return /**@type {!IndexedEditor<T>}*/ (IndexedEditor.$create__int__org_gwtproject_view_client_HasData(-1, null));
  }
- /**
-  * @param {LeafValueEditor<T>} subEditor
-  * @public
-  */
- m_dispose__org_gwtproject_editor_client_LeafValueEditor(subEditor) {
-  $Asserts.$assert(/**@type {IndexedEditor<T>} */ ($Casts.$to(subEditor, IndexedEditor)).f_index__org_gwtproject_editor_client_adapters_HasDataEditor_IndexedEditor_ >= 0);
+ 
+ m_dispose__org_gwtproject_editor_client_LeafValueEditor(/** LeafValueEditor<T> */ subEditor) {
+  $Asserts.$assert(/**@type {IndexedEditor<T>}*/ ($Casts.$to(subEditor, IndexedEditor)).f_index__org_gwtproject_editor_client_adapters_HasDataEditor_IndexedEditor_ >= 0);
   this.f_data__org_gwtproject_editor_client_adapters_HasDataEditor_HasDataEditorSource_.m_setRowCount__int(this.f_data__org_gwtproject_editor_client_adapters_HasDataEditor_HasDataEditorSource_.m_getRowCount__() - 1);
  }
- /**
-  * @param {LeafValueEditor<T>} editor
-  * @param {number} index
-  * @public
-  */
- m_setIndex__org_gwtproject_editor_client_LeafValueEditor__int(editor, index) {
+ 
+ m_setIndex__org_gwtproject_editor_client_LeafValueEditor__int(/** LeafValueEditor<T> */ editor, /** number */ index) {
   $Asserts.$assert(index >= 0);
-  /**@type {IndexedEditor<T>} */ ($Casts.$to(editor, IndexedEditor)).m_setIndex__int_$pp_org_gwtproject_editor_client_adapters(index);
+  /**@type {IndexedEditor<T>}*/ ($Casts.$to(editor, IndexedEditor)).m_setIndex__int_$pp_org_gwtproject_editor_client_adapters(index);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Editor} arg0
-  * @public
-  */
- m_dispose__org_gwtproject_editor_client_Editor(arg0) {
-  this.m_dispose__org_gwtproject_editor_client_LeafValueEditor(/**@type {LeafValueEditor<T>} */ ($Casts.$to(arg0, LeafValueEditor)));
+ //Bridge method.
+ /** @override */
+ m_dispose__org_gwtproject_editor_client_Editor(/** Editor */ arg0) {
+  this.m_dispose__org_gwtproject_editor_client_LeafValueEditor(/**@type {LeafValueEditor<T>}*/ ($Casts.$to(arg0, LeafValueEditor)));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Editor} arg0
-  * @param {number} arg1
-  * @public
-  */
- m_setIndex__org_gwtproject_editor_client_Editor__int(arg0, arg1) {
-  this.m_setIndex__org_gwtproject_editor_client_LeafValueEditor__int(/**@type {LeafValueEditor<T>} */ ($Casts.$to(arg0, LeafValueEditor)), arg1);
+ //Bridge method.
+ /** @override */
+ m_setIndex__org_gwtproject_editor_client_Editor__int(/** Editor */ arg0, /** number */ arg1) {
+  this.m_setIndex__org_gwtproject_editor_client_LeafValueEditor__int(/**@type {LeafValueEditor<T>}*/ ($Casts.$to(arg0, LeafValueEditor)), arg1);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HasDataEditorSource.$clinit = () =>{};
   HasDataEditorSource.$loadModules();
   EditorSource.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HasDataEditorSource;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   LeafValueEditor = goog.module.get('org.gwtproject.editor.client.LeafValueEditor$impl');
   IndexedEditor = goog.module.get('org.gwtproject.editor.client.adapters.HasDataEditor.IndexedEditor$impl');

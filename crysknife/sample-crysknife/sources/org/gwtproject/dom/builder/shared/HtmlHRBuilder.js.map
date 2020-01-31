@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HtmlHRBuilder.impl.java.js",
-"lineCount":44,
-"mappings":"A;;;;;;;;;;;;MAoBa,a;;;;CAAA,W;EAAAA,Q;;;;;;;QAEX,0D,CAA8BC,Q;EAA9BC,wB;EAAAA,oC;EAAAA,8H;EAAAA,iB;;;;;;CAAA,yG,CAA8BD,Q;EAC5BE,iJ;;;;;QAHS,O;EAAAC,gC;EAAAA,6B;EAAAA;",
+"lineCount":33,
+"mappings":"A;;;;;;;;;;;;MAoBa,a;;CAAA,W;EAAAA,Q;;;QAEX,0D,wBAA8BC,Q;EAA9BC,wB;EAAAA,oC;EAAAA,8H;EAAAA,iB;;;CAAA,yG,wBAA8BD,Q;EAC5BE,iJ;;;QAHS,O;EAAAC,gC;EAAAA,6B;EAAAA;",
 "sources":["HtmlHRBuilder.java"],
 "names":["org.gwtproject.dom.builder.shared.HtmlHRBuilder.<synthetic: ctor_js>","delegate","org.gwtproject.dom.builder.shared.HtmlHRBuilder.<synthetic: ctor_create>","org.gwtproject.dom.builder.shared.HtmlHRBuilder.<init>","org.gwtproject.dom.builder.shared.HtmlHRBuilder.<clinit>"]
 }

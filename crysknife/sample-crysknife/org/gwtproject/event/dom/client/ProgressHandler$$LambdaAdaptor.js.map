@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ProgressHandler$$LambdaAdaptor.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;MAyBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;8E;EAAAA,4I;;;;;;CAAA,kI;EAAAC,iC;EAAAA,iF;;;;;;CAAA,2D;;GAAAC,4F;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MAyBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;8E;EAAAA,4I;;;CAAA,kI;EAAAC,iC;EAAAA,iF;;;CAAA,2D;;GAAAC,4F;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["ProgressHandler.java"],
 "names":["org.gwtproject.event.dom.client.ProgressHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.dom.client.ProgressHandler$$LambdaAdaptor.<init>","org.gwtproject.event.dom.client.ProgressHandler$$LambdaAdaptor.onProgress","org.gwtproject.event.dom.client.ProgressHandler$$LambdaAdaptor.<clinit>"]
 }

@@ -10,52 +10,35 @@ let UiStyle = goog.forwardDeclare('org.gwtproject.user.client.ui.NativeVerticalS
  * @implements {UiBinderBundle}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function():UiStyle} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function():UiStyle */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function():UiStyle} */
+  /**@type {?function():UiStyle}*/
   this.f_$$fn__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundle_$LambdaAdaptor;
   this.$ctor__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundle_$LambdaAdaptor__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundle_$JsFunction(fn);
  }
- /**
-  * @param {?function():UiStyle} fn
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundle_$LambdaAdaptor__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundle_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundle_$LambdaAdaptor__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundle_$JsFunction(/** ?function():UiStyle */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundle_$LambdaAdaptor = fn;
  }
- /**
-  * @return {UiStyle}
-  * @public
-  */
+ /** @return {UiStyle} */
  m_nativeVerticalScrollbarUi__() {
   let /** ?function():UiStyle */ $function;
   return ($function = this.f_$$fn__org_gwtproject_user_client_ui_NativeVerticalScrollbar_UiBinderBundle_$LambdaAdaptor, $function());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

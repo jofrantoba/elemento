@@ -29,21 +29,17 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {IsRenderable}
   */
 class RenderablePanel extends ComplexPanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {ScheduledCommand} */
+  /**@type {ScheduledCommand}*/
   this.f_wrapInitializationCallback__org_gwtproject_user_client_ui_RenderablePanel;
-  /** @public {ScheduledCommand} */
+  /**@type {ScheduledCommand}*/
   this.f_detachedInitializationCallback__org_gwtproject_user_client_ui_RenderablePanel;
-  /** @public {SafeHtml} */
+  /**@type {SafeHtml}*/
   this.f_html__org_gwtproject_user_client_ui_RenderablePanel;
  }
- /**
-  * @public
-  */
+ 
  static m_ensureHiddenDiv__() {
   if (!$Equality.$same(RenderablePanel.f_hiddenDiv__org_gwtproject_user_client_ui_RenderablePanel_, null)) {
    return;
@@ -52,74 +48,48 @@ class RenderablePanel extends ComplexPanel {
   UIObject.m_setVisible__org_gwtproject_dom_client_Element__boolean(RenderablePanel.f_hiddenDiv__org_gwtproject_user_client_ui_RenderablePanel_, false);
   RootPanel.m_getBodyElement__().appendChild(RenderablePanel.f_hiddenDiv__org_gwtproject_user_client_ui_RenderablePanel_);
  }
- /**
-  * Factory method corresponding to constructor 'RenderablePanel(String)'.
-  * @param {?string} html
-  * @return {!RenderablePanel}
-  * @public
-  */
- static $create__java_lang_String(html) {
+ //Factory method corresponding to constructor 'RenderablePanel(String)'.
+ /** @return {!RenderablePanel} */
+ static $create__java_lang_String(/** ?string */ html) {
   RenderablePanel.$clinit();
   let $instance = new RenderablePanel();
   $instance.$ctor__org_gwtproject_user_client_ui_RenderablePanel__java_lang_String(html);
   return $instance;
  }
- /**
-  * Initialization from constructor 'RenderablePanel(String)'.
-  * @param {?string} html
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_RenderablePanel__java_lang_String(html) {
+ //Initialization from constructor 'RenderablePanel(String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_RenderablePanel__java_lang_String(/** ?string */ html) {
   this.$ctor__org_gwtproject_user_client_ui_RenderablePanel__org_gwtproject_safehtml_shared_SafeHtml(SafeHtmlUtils.m_fromTrustedString__java_lang_String(html));
  }
- /**
-  * Factory method corresponding to constructor 'RenderablePanel(SafeHtml)'.
-  * @param {SafeHtml} safeHtml
-  * @return {!RenderablePanel}
-  * @public
-  */
- static $create__org_gwtproject_safehtml_shared_SafeHtml(safeHtml) {
+ //Factory method corresponding to constructor 'RenderablePanel(SafeHtml)'.
+ /** @return {!RenderablePanel} */
+ static $create__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ safeHtml) {
   RenderablePanel.$clinit();
   let $instance = new RenderablePanel();
   $instance.$ctor__org_gwtproject_user_client_ui_RenderablePanel__org_gwtproject_safehtml_shared_SafeHtml(safeHtml);
   return $instance;
  }
- /**
-  * Initialization from constructor 'RenderablePanel(SafeHtml)'.
-  * @param {SafeHtml} safeHtml
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_RenderablePanel__org_gwtproject_safehtml_shared_SafeHtml(safeHtml) {
+ //Initialization from constructor 'RenderablePanel(SafeHtml)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_RenderablePanel__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ safeHtml) {
   this.$ctor__org_gwtproject_user_client_ui_ComplexPanel__();
   this.$init___$p_org_gwtproject_user_client_ui_RenderablePanel();
   this.f_html__org_gwtproject_user_client_ui_RenderablePanel = safeHtml;
   this.m_setElement__org_gwtproject_dom_client_Element(PotentialElement.m_build__org_gwtproject_user_client_ui_UIObject__java_lang_String(this, RenderablePanel.f_TAG_NAME__org_gwtproject_user_client_ui_RenderablePanel_));
  }
- /**
-  * @override
-  * @param {Widget} widget
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget(widget) {
+ /** @override */
+ m_add__org_gwtproject_user_client_ui_Widget(/** Widget */ widget) {
   this.m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element(widget, this.m_getElement__());
  }
- /**
-  * @param {Widget} widget
-  * @param {Object} toReplace
-  * @public
-  */
- m_addAndReplaceElement__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element(widget, toReplace) {
+ 
+ m_addAndReplaceElement__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element(/** Widget */ widget, /** Object */ toReplace) {
   widget.m_removeFromParent__();
   this.m_getChildren__().m_add__org_gwtproject_user_client_ui_Widget(widget);
   toReplace.parentNode.replaceChild(widget.m_getElement__(), toReplace);
   this.m_adopt__org_gwtproject_user_client_ui_Widget(widget);
  }
- /**
-  * @override
-  * @param {Object} element
-  * @public
-  */
- m_claimElement__org_gwtproject_dom_client_Element(element) {
+ /** @override */
+ m_claimElement__org_gwtproject_dom_client_Element(/** Object */ element) {
   if (this.m_isFullyInitialized__()) {
    throw $Exceptions.toJs(IllegalStateException.$create__java_lang_String("claimElement() cannot be called twice, or after forcing the widget to" + " render itself (e.g. after adding it to a panel)"));
   }
@@ -130,77 +100,49 @@ class RenderablePanel extends ComplexPanel {
    this.f_wrapInitializationCallback__org_gwtproject_user_client_ui_RenderablePanel = null;
   }
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_initializeClaimedElement__() {
   if (!$Equality.$same(this.f_detachedInitializationCallback__org_gwtproject_user_client_ui_RenderablePanel, null)) {
    this.f_detachedInitializationCallback__org_gwtproject_user_client_ui_RenderablePanel.m_execute__();
    this.f_detachedInitializationCallback__org_gwtproject_user_client_ui_RenderablePanel = null;
   }
  }
- /**
-  * @param {IsRenderable} renderable
-  * @public
-  */
- m_logicalAdd__org_gwtproject_user_client_ui_IsRenderable(renderable) {
+ 
+ m_logicalAdd__org_gwtproject_user_client_ui_IsRenderable(/** IsRenderable */ renderable) {
   if (!IsWidget.$isInstance(renderable)) {
    return;
   }
-  let widget = /**@type {IsWidget} */ ($Casts.$to(renderable, IsWidget)).m_asWidget__();
+  let widget = /**@type {IsWidget}*/ ($Casts.$to(renderable, IsWidget)).m_asWidget__();
   this.m_getChildren__().m_add__org_gwtproject_user_client_ui_Widget(widget);
   this.m_adopt__org_gwtproject_user_client_ui_Widget(widget);
  }
- /**
-  * @override
-  * @param {RenderableStamper} stamper
-  * @return {SafeHtml}
-  * @public
-  */
- m_render__org_gwtproject_user_client_ui_RenderableStamper(stamper) {
+ /** @override @return {SafeHtml} */
+ m_render__org_gwtproject_user_client_ui_RenderableStamper(/** RenderableStamper */ stamper) {
   let builder = PotentialElement.m_createBuilderFor__org_gwtproject_dom_client_Element(this.m_getElement__());
   stamper.m_stamp__org_gwtproject_dom_builder_shared_HtmlElementBuilderBase(builder);
-  /**@type {ElementBuilder} */ ($Casts.$to(builder.m_html__org_gwtproject_safehtml_shared_SafeHtml(this.m_getInnerHtml__()), ElementBuilder)).m_end__();
+  /**@type {ElementBuilder}*/ ($Casts.$to(builder.m_html__org_gwtproject_safehtml_shared_SafeHtml(this.m_getInnerHtml__()), ElementBuilder)).m_end__();
   let returnValue = builder.m_asSafeHtml__();
   return returnValue;
  }
- /**
-  * @override
-  * @param {RenderableStamper} stamper
-  * @param {SafeHtmlBuilder} builder
-  * @public
-  */
- m_render__org_gwtproject_user_client_ui_RenderableStamper__org_gwtproject_safehtml_shared_SafeHtmlBuilder(stamper, builder) {
+ /** @override */
+ m_render__org_gwtproject_user_client_ui_RenderableStamper__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** RenderableStamper */ stamper, /** SafeHtmlBuilder */ builder) {
   builder.m_append__org_gwtproject_safehtml_shared_SafeHtml(this.m_render__org_gwtproject_user_client_ui_RenderableStamper(stamper));
  }
- /**
-  * @override
-  * @return {Object}
-  * @public
-  */
+ /** @override @return {Object} */
  m_resolvePotentialElement__() {
   this.m_buildAndInitDivContainer___$p_org_gwtproject_user_client_ui_RenderablePanel();
   this.f_html__org_gwtproject_user_client_ui_RenderablePanel = null;
   return this.m_getElement__();
  }
- /**
-  * @return {SafeHtml}
-  * @public
-  */
+ /** @return {SafeHtml} */
  m_getInnerHtml__() {
   return this.f_html__org_gwtproject_user_client_ui_RenderablePanel;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isFullyInitialized__() {
   return $Equality.$same(this.f_html__org_gwtproject_user_client_ui_RenderablePanel, null);
  }
- /**
-  * @public
-  */
+ 
  m_buildAndInitDivContainer___$p_org_gwtproject_user_client_ui_RenderablePanel() {
   let element = $Overlay.m_createDivElement__$devirt__org_gwtproject_dom_client_Document($Overlay.m_get__());
   Element_$Overlay.m_setInnerSafeHtml__$devirt__org_gwtproject_dom_client_Element__org_gwtproject_safehtml_shared_SafeHtml(element, this.m_getInnerHtml__());
@@ -219,52 +161,34 @@ class RenderablePanel extends ComplexPanel {
    this.f_detachedInitializationCallback__org_gwtproject_user_client_ui_RenderablePanel.m_execute__();
   }
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_RenderablePanel() {
   this.f_wrapInitializationCallback__org_gwtproject_user_client_ui_RenderablePanel = null;
   this.f_detachedInitializationCallback__org_gwtproject_user_client_ui_RenderablePanel = null;
   this.f_html__org_gwtproject_user_client_ui_RenderablePanel = null;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RenderablePanel.$clinit = () =>{};
   RenderablePanel.$loadModules();
   ComplexPanel.$clinit();
   RenderablePanel.f_TAG_NAME__org_gwtproject_user_client_ui_RenderablePanel_ = "div";
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof RenderablePanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');
   Iterable = goog.module.get('java.lang.Iterable$impl');
@@ -286,9 +210,9 @@ $Util.$setClassMetadata(RenderablePanel, 'org.gwtproject.user.client.ui.Renderab
 
 IsRenderable.$markImplementor(RenderablePanel);
 
-/** @public {Object} */
+/**@type {Object}*/
 RenderablePanel.f_hiddenDiv__org_gwtproject_user_client_ui_RenderablePanel_;
-/** @public {?string} */
+/**@type {?string}*/
 RenderablePanel.f_TAG_NAME__org_gwtproject_user_client_ui_RenderablePanel_;
 
 exports = RenderablePanel; 

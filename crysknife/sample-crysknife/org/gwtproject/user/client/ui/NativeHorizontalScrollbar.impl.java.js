@@ -19,64 +19,47 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {HorizontalScrollbar}
   */
 class NativeHorizontalScrollbar extends AbstractNativeScrollbar {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_contentDiv__org_gwtproject_user_client_ui_NativeHorizontalScrollbar;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_scrollable__org_gwtproject_user_client_ui_NativeHorizontalScrollbar;
  }
- /**
-  * @return {Resources}
-  * @public
-  */
+ /** @return {Resources} */
  static m_getDefaultResources__() {
   if ($Equality.$same(NativeHorizontalScrollbar.f_DEFAULT_RESOURCES__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_, null)) {
    NativeHorizontalScrollbar.f_DEFAULT_RESOURCES__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ = Resources.f_INSTANCE__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_Resources;
   }
   return NativeHorizontalScrollbar.f_DEFAULT_RESOURCES__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_;
  }
- /**
-  * Factory method corresponding to constructor 'NativeHorizontalScrollbar()'.
-  * @return {!NativeHorizontalScrollbar}
-  * @public
-  */
+ //Factory method corresponding to constructor 'NativeHorizontalScrollbar()'.
+ /** @return {!NativeHorizontalScrollbar} */
  static $create__() {
   NativeHorizontalScrollbar.$clinit();
   let $instance = new NativeHorizontalScrollbar();
   $instance.$ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'NativeHorizontalScrollbar()'.
-  * @public
-  */
+ //Initialization from constructor 'NativeHorizontalScrollbar()'.
+ 
  $ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar__() {
   this.$ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_Resources(NativeHorizontalScrollbar.m_getDefaultResources__());
  }
- /**
-  * Factory method corresponding to constructor 'NativeHorizontalScrollbar(Resources)'.
-  * @param {Resources} resources
-  * @return {!NativeHorizontalScrollbar}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_Resources(resources) {
+ //Factory method corresponding to constructor 'NativeHorizontalScrollbar(Resources)'.
+ /** @return {!NativeHorizontalScrollbar} */
+ static $create__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_Resources(/** Resources */ resources) {
   NativeHorizontalScrollbar.$clinit();
   let $instance = new NativeHorizontalScrollbar();
   $instance.$ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_Resources(resources);
   return $instance;
  }
- /**
-  * Initialization from constructor 'NativeHorizontalScrollbar(Resources)'.
-  * @param {Resources} resources
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_Resources(resources) {
+ //Initialization from constructor 'NativeHorizontalScrollbar(Resources)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_Resources(/** Resources */ resources) {
   this.$ctor__org_gwtproject_user_client_ui_AbstractNativeScrollbar__();
-  this.m_setElement__org_gwtproject_dom_client_Element(/**@type {Object} */ ($Casts.$to(NativeHorizontalScrollbar.f_uiBinder__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_.m_createAndBindUi__java_lang_Object(this), $Overlay)));
+  this.m_setElement__org_gwtproject_dom_client_Element(/**@type {Object}*/ ($Casts.$to(NativeHorizontalScrollbar.f_uiBinder__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_.m_createAndBindUi__java_lang_Object(this), $Overlay)));
   $Overlay.m_addClassName__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.m_getElement__(), CommonResources.m_getInlineBlockStyle__());
   this.m_setHeight__java_lang_String(this.m_getNativeHeight__() + "px");
   let style = resources.m_nativeHorizontalScrollbarStyle__();
@@ -84,89 +67,50 @@ class NativeHorizontalScrollbar extends AbstractNativeScrollbar {
   $Overlay.m_addClassName__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.m_getScrollableElement__(), style.m_nativeHorizontalScrollbar__());
   ScrollImpl.m_get__().m_initialize__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(this.f_scrollable__org_gwtproject_user_client_ui_NativeHorizontalScrollbar, this.f_contentDiv__org_gwtproject_user_client_ui_NativeHorizontalScrollbar);
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getHorizontalScrollPosition__() {
   return $Overlay.m_getScrollLeft__$devirt__org_gwtproject_dom_client_Element(this.m_getScrollableElement__());
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getMaximumHorizontalScrollPosition__() {
   return ScrollImpl.m_get__().m_getMaximumHorizontalScrollPosition__org_gwtproject_dom_client_Element(this.m_getScrollableElement__());
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getMinimumHorizontalScrollPosition__() {
   return ScrollImpl.m_get__().m_getMinimumHorizontalScrollPosition__org_gwtproject_dom_client_Element(this.m_getScrollableElement__());
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getScrollWidth__() {
   return $Overlay.m_getOffsetWidth__$devirt__org_gwtproject_dom_client_Element(this.f_contentDiv__org_gwtproject_user_client_ui_NativeHorizontalScrollbar);
  }
- /**
-  * @override
-  * @param {number} position
-  * @public
-  */
- m_setHorizontalScrollPosition__int(position) {
+ /** @override */
+ m_setHorizontalScrollPosition__int(/** number */ position) {
   $Overlay.m_setScrollLeft__$devirt__org_gwtproject_dom_client_Element__int(this.m_getScrollableElement__(), position);
  }
- /**
-  * @override
-  * @param {number} width
-  * @public
-  */
- m_setScrollWidth__int(width) {
+ /** @override */
+ m_setScrollWidth__int(/** number */ width) {
   Style_$Overlay.m_setWidth__$devirt__org_gwtproject_dom_client_Style__double__org_gwtproject_dom_style_shared_Unit(this.f_contentDiv__org_gwtproject_user_client_ui_NativeHorizontalScrollbar.style, width, Unit.f_PX__org_gwtproject_dom_style_shared_Unit);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getNativeHeight__() {
   return AbstractNativeScrollbar.m_getNativeScrollbarHeight__();
  }
- /**
-  * @override
-  * @return {Object}
-  * @public
-  */
+ /** @override @return {Object} */
  m_getScrollableElement__() {
   return this.f_scrollable__org_gwtproject_user_client_ui_NativeHorizontalScrollbar;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NativeHorizontalScrollbar.$clinit = () =>{};
   NativeHorizontalScrollbar.$loadModules();
   AbstractNativeScrollbar.$clinit();
   NativeHorizontalScrollbar.f_uiBinder__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ = NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof NativeHorizontalScrollbar;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.Element.$Overlay$impl');
@@ -184,9 +128,9 @@ $Util.$setClassMetadata(NativeHorizontalScrollbar, 'org.gwtproject.user.client.u
 
 HorizontalScrollbar.$markImplementor(NativeHorizontalScrollbar);
 
-/** @public {Resources} */
+/**@type {Resources}*/
 NativeHorizontalScrollbar.f_DEFAULT_RESOURCES__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_;
-/** @public {NativeHorizontalScrollbarUiBinder} */
+/**@type {NativeHorizontalScrollbarUiBinder}*/
 NativeHorizontalScrollbar.f_uiBinder__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_;
 
 exports = NativeHorizontalScrollbar; 

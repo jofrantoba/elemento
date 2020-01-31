@@ -9,56 +9,37 @@ const FieldUpdater = goog.require('org.gwtproject.cell.client.FieldUpdater$impl'
  * @implements {FieldUpdater<T, C>}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(number, T, C):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(number, T, C):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(number, T, C):void} */
+  /**@type {?function(number, T, C):void}*/
   this.f_$$fn__org_gwtproject_cell_client_FieldUpdater_$LambdaAdaptor;
   this.$ctor__org_gwtproject_cell_client_FieldUpdater_$LambdaAdaptor__org_gwtproject_cell_client_FieldUpdater_$JsFunction(fn);
  }
- /**
-  * @param {?function(number, T, C):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_FieldUpdater_$LambdaAdaptor__org_gwtproject_cell_client_FieldUpdater_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_cell_client_FieldUpdater_$LambdaAdaptor__org_gwtproject_cell_client_FieldUpdater_$JsFunction(/** ?function(number, T, C):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_cell_client_FieldUpdater_$LambdaAdaptor = fn;
  }
- /**
-  * @param {number} arg0
-  * @param {T} arg1
-  * @param {C} arg2
-  * @public
-  */
- m_update__int__java_lang_Object__java_lang_Object(arg0, arg1, arg2) {
+ 
+ m_update__int__java_lang_Object__java_lang_Object(/** number */ arg0, /** T */ arg1, /** C */ arg2) {
   {
    let $function = this.f_$$fn__org_gwtproject_cell_client_FieldUpdater_$LambdaAdaptor;
    $function(arg0, arg1, arg2);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

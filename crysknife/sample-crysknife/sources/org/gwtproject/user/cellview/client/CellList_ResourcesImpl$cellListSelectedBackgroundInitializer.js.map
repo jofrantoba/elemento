@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellList_ResourcesImpl$cellListSelectedBackgroundInitializer.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;MAauB,qC;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,4D;EAAAA,sH;EAAAA,iB;;;;;CAAA,yG;EAAAC,iC;;;;;;QAIkC,O;EAAAC,gD;EACnDA,yH;;;;;QALiB,O;EAAAC,wD;EAAAA,qD;EAAAA,qB;EAEjBA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;MAauB,qC;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,4D;EAAAA,sH;EAAAA,iB;;;CAAA,yG;EAAAC,iC;;;QAIkC,O;EAAAC,gD;EACnDA,yH;;;QALiB,O;EAAAC,wD;EAAAA,qD;EAAAA,qB;EAEjBA;",
 "sources":["CellList_ResourcesImpl.java"],
 "names":["org.gwtproject.user.cellview.client.CellList_ResourcesImpl$cellListSelectedBackgroundInitializer.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.CellList_ResourcesImpl$cellListSelectedBackgroundInitializer.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.CellList_ResourcesImpl$cellListSelectedBackgroundInitializer.<init>","org.gwtproject.user.cellview.client.CellList_ResourcesImpl$cellListSelectedBackgroundInitializer.get","org.gwtproject.user.cellview.client.CellList_ResourcesImpl$cellListSelectedBackgroundInitializer.<clinit>"]
 }

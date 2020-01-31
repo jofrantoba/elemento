@@ -6,58 +6,29 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @interface
  */
 class IsCollapsible {
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_isCollapseLeft__() {}
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_isCollapseRight__() {}
- /**
-  * @abstract
-  * @param {boolean} isCollapsed
-  * @public
-  */
- m_setCollapseLeft__boolean(isCollapsed) {}
- /**
-  * @abstract
-  * @param {boolean} isCollapsed
-  * @public
-  */
- m_setCollapseRight__boolean(isCollapsed) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_setCollapseLeft__boolean(/** boolean */ isCollapsed) {}
+ /** @abstract */
+ m_setCollapseRight__boolean(/** boolean */ isCollapsed) {}
+ 
  static $clinit() {
   IsCollapsible.$clinit = () =>{};
   IsCollapsible.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_cell_client_IsCollapsible = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_cell_client_IsCollapsible = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_cell_client_IsCollapsible;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"NativeVerticalScrollbar_UiBinderBundleImpl.impl.java.js",
-"lineCount":143,
-"mappings":"A;;;;;;;;;;;;;;;;;;MAKa,2C;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,sD;EAAAA,kE;EAAAA,8F;EAAAA,iB;;;;;CAAA,iF;EAAAC,iC;;;;;CAEE,oH;EACXC,iP;;;;;;;CAiCmE,6B;EACnEC,sD;;;;;;CAKyB,gB;EACzBC,0H;;;;;;;CAIuB,+B,CAAmBC,I;EACxCC;GACEA,gNADFA;GAEEA,4MAFFA;G;EAIAA,uN;;;;;;QAnDJ,2F;EAAAC,qM;;;;;;QAAA,2F;EAAAC,sM;;;;;;QAuCA,0G;EAAAD,oN;;;;;;QAAA,0G;EAAAC,qN;;;;;QAxCW,O;EAAAC,8D;EAAAA,2D;EAAAA,qB;EACXA,+L;;;;;;;;;;;;;;;;;;;;;;;;;;;;AADW;qI;AAAA;4CAuCiD,wFAvCjD,C;AAAA;;",
+"lineCount":103,
+"mappings":"A;;;;;;;;;;;;;;;;;;MAKa,2C;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,sD;EAAAA,kE;EAAAA,8F;EAAAA,iB;;;CAAA,iF;EAAAC,iC;;;CAEE,oH;EACXC,iP;;;CAiCmE,6B;EACnEC,sD;;;CAKyB,gB;EACzBC,yH;;;CAIuB,+B,gBAAmBC,I;EACxCC;GACEA,+MADFA;GAEEA,4MAFFA;G;EAIAA,sN;;;QAnDJ,2F;EAAAC,qM;;;QAAA,2F;EAAAC,sM;;;QAuCA,0G;EAAAD,oN;;;QAAA,0G;EAAAC,qN;;;QAxCW,O;EAAAC,8D;EAAAA,2D;EAAAA,qB;EACXA,+L;;;;;;;;;;;;;;;;;;;;;;AADW;qI;AAAA;4CAuCiD,wFAvCjD,C;AAAA;;",
 "sources":["NativeVerticalScrollbar_UiBinderBundleImpl.java"],
 "names":["org.gwtproject.user.client.ui.NativeVerticalScrollbar_UiBinderBundleImpl.<synthetic: ctor_js>","org.gwtproject.user.client.ui.NativeVerticalScrollbar_UiBinderBundleImpl.<synthetic: ctor_create>","org.gwtproject.user.client.ui.NativeVerticalScrollbar_UiBinderBundleImpl.<init>","org.gwtproject.user.client.ui.NativeVerticalScrollbar_UiBinderBundleImpl.nativeVerticalScrollbarUiInitializer","org.gwtproject.user.client.ui.NativeVerticalScrollbar_UiBinderBundleImpl.nativeVerticalScrollbarUi","org.gwtproject.user.client.ui.NativeVerticalScrollbar_UiBinderBundleImpl.getResources","name","org.gwtproject.user.client.ui.NativeVerticalScrollbar_UiBinderBundleImpl.getResource","org.gwtproject.user.client.ui.NativeVerticalScrollbar_UiBinderBundleImpl.<synthetic: getter>","org.gwtproject.user.client.ui.NativeVerticalScrollbar_UiBinderBundleImpl.<synthetic: setter>","org.gwtproject.user.client.ui.NativeVerticalScrollbar_UiBinderBundleImpl.<clinit>"]
 }

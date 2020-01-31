@@ -25,43 +25,36 @@ let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
  * @abstract
   */
 class Splitter extends Widget {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {SplitLayoutPanel} */
+  /**@type {SplitLayoutPanel}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter;
-  /** @public {Widget} */
+  /**@type {Widget}*/
   this.f_target__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_offset__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_ = 0;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_mouseDown__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_ = false;
-  /** @public {ScheduledCommand} */
+  /**@type {ScheduledCommand}*/
   this.f_layoutCommand__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_reverse__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_ = false;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_minSize__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_snapClosedSize__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_centerSize__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_ = 0.0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_syncedCenterSize__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_ = 0.0;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_toggleDisplayAllowed__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_ = false;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_lastClick__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_ = 0.0;
  }
- /**
-  * @param {SplitLayoutPanel} $outer_this
-  * @param {Widget} target
-  * @param {boolean} reverse
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter__org_gwtproject_user_client_ui_SplitLayoutPanel__org_gwtproject_user_client_ui_Widget__boolean($outer_this, target, reverse) {
+ 
+ $ctor__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter__org_gwtproject_user_client_ui_SplitLayoutPanel__org_gwtproject_user_client_ui_Widget__boolean(/** SplitLayoutPanel */ $outer_this, /** Widget */ target, /** boolean */ reverse) {
   this.f_$outer_this__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter = $outer_this;
   this.$ctor__org_gwtproject_user_client_ui_Widget__();
   this.$init___$p_org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter();
@@ -70,12 +63,8 @@ class Splitter extends Widget {
   this.m_setElement__org_gwtproject_dom_client_Element($Overlay.m_createDivElement__$devirt__org_gwtproject_dom_client_Document($Overlay.m_get__()));
   this.m_sinkEvents__int(Event.f_ONMOUSEDOWN__org_gwtproject_user_client_Event | Event.f_ONMOUSEUP__org_gwtproject_user_client_Event | Event.f_ONMOUSEMOVE__org_gwtproject_user_client_Event | Event.f_ONDBLCLICK__org_gwtproject_user_client_Event);
  }
- /**
-  * @override
-  * @param {Event} event
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_user_client_Event(event) {
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_user_client_Event(/** Event */ event) {
   let /** number */ width, /** number */ height;
   switch (DOM.m_eventGetType__org_gwtproject_user_client_Event(event)) {
    case Event.f_ONMOUSEDOWN__org_gwtproject_user_client_Event: 
@@ -96,7 +85,7 @@ class Splitter extends Widget {
      let now = Duration.m_currentTimeMillis__();
      if (now - this.f_lastClick__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_ < SplitLayoutPanel.f_DOUBLE_CLICK_TIMEOUT__org_gwtproject_user_client_ui_SplitLayoutPanel_) {
       now = 0.0;
-      let layout = /**@type {LayoutData} */ ($Casts.$to(this.f_target__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter.m_getLayoutData__(), LayoutData));
+      let layout = /**@type {LayoutData}*/ ($Casts.$to(this.f_target__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter.m_getLayoutData__(), LayoutData));
       if (layout.f_size__org_gwtproject_user_client_ui_DockLayoutPanel_LayoutData == 0) {
        this.m_setAssociatedWidgetSize__double_$p_org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter(layout.f_oldSize__org_gwtproject_user_client_ui_DockLayoutPanel_LayoutData);
       } else {
@@ -117,84 +106,48 @@ class Splitter extends Widget {
      } else {
       size = this.m_getEventPosition__org_gwtproject_user_client_Event(event) - this.m_getTargetPosition__() - this.f_offset__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_;
      }
-     /**@type {LayoutData} */ ($Casts.$to(this.f_target__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter.m_getLayoutData__(), LayoutData)).f_hidden__org_gwtproject_user_client_ui_DockLayoutPanel_LayoutData = false;
+     /**@type {LayoutData}*/ ($Casts.$to(this.f_target__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter.m_getLayoutData__(), LayoutData)).f_hidden__org_gwtproject_user_client_ui_DockLayoutPanel_LayoutData = false;
      this.m_setAssociatedWidgetSize__double_$p_org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter(size);
      NativeEvent_$Overlay.m_preventDefault__$devirt__org_gwtproject_dom_client_NativeEvent(event);
     }
     break;
   }
  }
- /**
-  * @param {number} minSize
-  * @public
-  */
- m_setMinSize__int(minSize) {
+ 
+ m_setMinSize__int(/** number */ minSize) {
   this.f_minSize__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_ = minSize;
-  let layout = /**@type {LayoutData} */ ($Casts.$to(this.f_target__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter.m_getLayoutData__(), LayoutData));
+  let layout = /**@type {LayoutData}*/ ($Casts.$to(this.f_target__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter.m_getLayoutData__(), LayoutData));
   this.m_setAssociatedWidgetSize__double_$p_org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter($Primitives.$narrowDoubleToInt(layout.f_size__org_gwtproject_user_client_ui_DockLayoutPanel_LayoutData));
  }
- /**
-  * @param {number} snapClosedSize
-  * @public
-  */
- m_setSnapClosedSize__int(snapClosedSize) {
+ 
+ m_setSnapClosedSize__int(/** number */ snapClosedSize) {
   this.f_snapClosedSize__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_ = snapClosedSize;
  }
- /**
-  * @param {boolean} allowed
-  * @public
-  */
- m_setToggleDisplayAllowed__boolean(allowed) {
+ 
+ m_setToggleDisplayAllowed__boolean(/** boolean */ allowed) {
   this.f_toggleDisplayAllowed__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_ = allowed;
  }
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {number} */
  m_getAbsolutePosition__() {}
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {number} */
  m_getCenterSize__() {}
- /**
-  * @abstract
-  * @param {Event} event
-  * @return {number}
-  * @public
-  */
- m_getEventPosition__org_gwtproject_user_client_Event(event) {}
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {number} */
+ m_getEventPosition__org_gwtproject_user_client_Event(/** Event */ event) {}
+ /** @abstract @return {number} */
  m_getTargetPosition__() {}
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {number} */
  m_getTargetSize__() {}
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getMaxSize___$p_org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter() {
   let newCenterSize = this.m_getCenterSize__();
   if (this.f_syncedCenterSize__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_ != newCenterSize) {
    this.f_syncedCenterSize__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_ = newCenterSize;
    this.f_centerSize__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_ = newCenterSize;
   }
-  return Math.max(/**@type {LayoutData} */ ($Casts.$to(this.f_target__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter.m_getLayoutData__(), LayoutData)).f_size__org_gwtproject_user_client_ui_DockLayoutPanel_LayoutData + this.f_centerSize__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_, 0);
+  return Math.max(/**@type {LayoutData}*/ ($Casts.$to(this.f_target__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter.m_getLayoutData__(), LayoutData)).f_size__org_gwtproject_user_client_ui_DockLayoutPanel_LayoutData + this.f_centerSize__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_, 0);
  }
- /**
-  * @param {number} size
-  * @public
-  */
- m_setAssociatedWidgetSize__double_$p_org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter(size) {
+ 
+ m_setAssociatedWidgetSize__double_$p_org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter(/** number */ size) {
   let maxSize = this.m_getMaxSize___$p_org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter();
   if (size > maxSize) {
    size = maxSize;
@@ -204,7 +157,7 @@ class Splitter extends Widget {
   } else if (size < this.f_minSize__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_) {
    size = this.f_minSize__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_;
   }
-  let layout = /**@type {LayoutData} */ ($Casts.$to(this.f_target__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter.m_getLayoutData__(), LayoutData));
+  let layout = /**@type {LayoutData}*/ ($Casts.$to(this.f_target__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter.m_getLayoutData__(), LayoutData));
   if (size == layout.f_size__org_gwtproject_user_client_ui_DockLayoutPanel_LayoutData) {
    return;
   }
@@ -215,33 +168,23 @@ class Splitter extends Widget {
    Scheduler.m_get__().m_scheduleDeferred__org_gwtproject_core_client_Scheduler_ScheduledCommand(this.f_layoutCommand__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_);
   }
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter() {
   this.f_snapClosedSize__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_ = -1;
   this.f_toggleDisplayAllowed__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_ = false;
   this.f_lastClick__org_gwtproject_user_client_ui_SplitLayoutPanel_Splitter_ = 0.0;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Splitter.$clinit = () =>{};
   Splitter.$loadModules();
   Widget.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Splitter;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   Duration = goog.module.get('org.gwtproject.core.client.Duration$impl');

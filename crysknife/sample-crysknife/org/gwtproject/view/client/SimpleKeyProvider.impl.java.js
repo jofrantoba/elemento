@@ -9,57 +9,36 @@ const ProvidesKey = goog.require('org.gwtproject.view.client.ProvidesKey$impl');
  * @implements {ProvidesKey<T>}
   */
 class SimpleKeyProvider extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @template T
-  * @return {!SimpleKeyProvider<T>}
-  * @public
-  */
+ /** @template T @return {!SimpleKeyProvider<T>} */
  static $create__() {
   SimpleKeyProvider.$clinit();
   let $instance = new SimpleKeyProvider();
   $instance.$ctor__org_gwtproject_view_client_SimpleKeyProvider__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_view_client_SimpleKeyProvider__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {T} item
-  * @return {*}
-  * @public
-  */
- m_getKey__java_lang_Object(item) {
+ /** @override @return {*} */
+ m_getKey__java_lang_Object(/** T */ item) {
   return item;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SimpleKeyProvider.$clinit = () =>{};
   SimpleKeyProvider.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SimpleKeyProvider;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

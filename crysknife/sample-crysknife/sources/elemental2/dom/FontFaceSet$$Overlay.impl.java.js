@@ -7,26 +7,17 @@ let FontFace_$Overlay = goog.forwardDeclare('elemental2.dom.FontFace.$Overlay$im
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class FontFaceSet_$Overlay {
- /**
-  * @param {!FontFaceSet} $thisArg
-  * @param {?function(FontFace, number, FontFaceSet):*} callback
-  * @param {*} selfObj
-  * @public
-  */
- static m_forEach__$devirt__elemental2_dom_FontFaceSet__elemental2_dom_FontFaceSet_ForEachCallbackFn__java_lang_Object($thisArg, callback, selfObj) {
+ 
+ static m_forEach__$devirt__elemental2_dom_FontFaceSet__elemental2_dom_FontFaceSet_ForEachCallbackFn__java_lang_Object(/** !FontFaceSet */ $thisArg, /** ?function(FontFace, number, FontFaceSet):* */ callback, /** * */ selfObj) {
   FontFaceSet_$Overlay.$clinit();
-  $thisArg.forEach(callback, /**@type {Object} */ (Js.m_uncheckedCast__java_lang_Object(selfObj)));
+  $thisArg.forEach(callback, /**@type {Object}*/ (Js.m_uncheckedCast__java_lang_Object(selfObj)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   FontFaceSet_$Overlay.$clinit = () =>{};
   FontFaceSet_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }

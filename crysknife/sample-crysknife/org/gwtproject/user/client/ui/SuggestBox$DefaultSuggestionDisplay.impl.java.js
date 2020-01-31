@@ -25,35 +25,28 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {HasAnimation}
   */
 class DefaultSuggestionDisplay extends SuggestionDisplay {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {SuggestionMenu} */
+  /**@type {SuggestionMenu}*/
   this.f_suggestionMenu__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_;
-  /** @public {PopupPanel} */
+  /**@type {PopupPanel}*/
   this.f_suggestionPopup__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_;
-  /** @public {SuggestBox} */
+  /**@type {SuggestBox}*/
   this.f_lastSuggestBox__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_hideWhenEmpty__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_ = false;
-  /** @public {UIObject} */
+  /**@type {UIObject}*/
   this.f_positionRelativeTo__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_;
  }
- /**
-  * @return {!DefaultSuggestionDisplay}
-  * @public
-  */
+ /** @return {!DefaultSuggestionDisplay} */
  static $create__() {
   DefaultSuggestionDisplay.$clinit();
   let $instance = new DefaultSuggestionDisplay();
   $instance.$ctor__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay__() {
   this.$ctor__org_gwtproject_user_client_ui_SuggestBox_SuggestionDisplay__();
   this.$init___$p_org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay();
@@ -61,69 +54,39 @@ class DefaultSuggestionDisplay extends SuggestionDisplay {
   this.f_suggestionPopup__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_ = this.m_createPopup__();
   this.f_suggestionPopup__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_.m_setWidget__org_gwtproject_user_client_ui_Widget(this.m_decorateSuggestionList__org_gwtproject_user_client_ui_Widget(this.f_suggestionMenu__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_));
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_hideSuggestions__() {
   this.f_suggestionPopup__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_.m_hide__();
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isAnimationEnabled__() {
   return this.f_suggestionPopup__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_.m_isAnimationEnabled__();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isSuggestionListHiddenWhenEmpty__() {
   return this.f_hideWhenEmpty__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isSuggestionListShowing__() {
   return this.f_suggestionPopup__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_.m_isShowing__();
  }
- /**
-  * @override
-  * @param {boolean} enable
-  * @public
-  */
- m_setAnimationEnabled__boolean(enable) {
+ /** @override */
+ m_setAnimationEnabled__boolean(/** boolean */ enable) {
   this.f_suggestionPopup__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_.m_setAnimationEnabled__boolean(enable);
  }
- /**
-  * @param {?string} style
-  * @public
-  */
- m_setPopupStyleName__java_lang_String(style) {
+ 
+ m_setPopupStyleName__java_lang_String(/** ?string */ style) {
   this.f_suggestionPopup__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_.m_setStyleName__java_lang_String(style);
  }
- /**
-  * @param {UIObject} uiObject
-  * @public
-  */
- m_setPositionRelativeTo__org_gwtproject_user_client_ui_UIObject(uiObject) {
+ 
+ m_setPositionRelativeTo__org_gwtproject_user_client_ui_UIObject(/** UIObject */ uiObject) {
   this.f_positionRelativeTo__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_ = uiObject;
  }
- /**
-  * @param {boolean} hideWhenEmpty
-  * @public
-  */
- m_setSuggestionListHiddenWhenEmpty__boolean(hideWhenEmpty) {
+ 
+ m_setSuggestionListHiddenWhenEmpty__boolean(/** boolean */ hideWhenEmpty) {
   this.f_hideWhenEmpty__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_ = hideWhenEmpty;
  }
- /**
-  * @return {PopupPanel}
-  * @public
-  */
+ /** @return {PopupPanel} */
  m_createPopup__() {
   let p = DecoratedPopupPanel.$create__boolean__boolean__java_lang_String(true, false, "suggestPopup");
   p.m_setStyleName__java_lang_String("gwt-SuggestBoxPopup");
@@ -131,53 +94,33 @@ class DefaultSuggestionDisplay extends SuggestionDisplay {
   p.m_setAnimationType__org_gwtproject_user_client_ui_PopupPanel_AnimationType(AnimationType.f_ROLL_DOWN__org_gwtproject_user_client_ui_PopupPanel_AnimationType);
   return p;
  }
- /**
-  * @param {Widget} suggestionList
-  * @return {Widget}
-  * @public
-  */
- m_decorateSuggestionList__org_gwtproject_user_client_ui_Widget(suggestionList) {
+ /** @return {Widget} */
+ m_decorateSuggestionList__org_gwtproject_user_client_ui_Widget(/** Widget */ suggestionList) {
   return suggestionList;
  }
- /**
-  * @override
-  * @return {Suggestion}
-  * @public
-  */
+ /** @override @return {Suggestion} */
  m_getCurrentSelection__() {
   if (!this.m_isSuggestionListShowing__()) {
    return null;
   }
   let item = this.f_suggestionMenu__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_.m_getSelectedItem__();
-  return $Equality.$same(item, null) ? null : /**@type {SuggestionMenuItem} */ ($Casts.$to(item, SuggestionMenuItem)).m_getSuggestion__();
+  return $Equality.$same(item, null) ? null : /**@type {SuggestionMenuItem}*/ ($Casts.$to(item, SuggestionMenuItem)).m_getSuggestion__();
  }
- /**
-  * @return {PopupPanel}
-  * @public
-  */
+ /** @return {PopupPanel} */
  m_getPopupPanel__() {
   return this.f_suggestionPopup__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_;
  }
- /**
-  * @return {MenuBar}
-  * @public
-  */
+ /** @return {MenuBar} */
  m_getSuggestionMenu__() {
   return this.f_suggestionMenu__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_;
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_moveSelectionDown__() {
   if (this.m_isSuggestionListShowing__()) {
    this.f_suggestionMenu__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_.m_selectItem__int(this.f_suggestionMenu__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_.m_getSelectedItemIndex__() + 1);
   }
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_moveSelectionUp__() {
   if (this.m_isSuggestionListShowing__()) {
    if (this.f_suggestionMenu__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_.m_getSelectedItemIndex__() == -1) {
@@ -187,25 +130,13 @@ class DefaultSuggestionDisplay extends SuggestionDisplay {
    }
   }
  }
- /**
-  * @override
-  * @param {?string} baseID
-  * @public
-  */
- m_onEnsureDebugId__java_lang_String(baseID) {
+ /** @override */
+ m_onEnsureDebugId__java_lang_String(/** ?string */ baseID) {
   this.f_suggestionPopup__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_.m_ensureDebugId__java_lang_String(j_l_String.m_valueOf__java_lang_Object(baseID) + "-popup");
   this.f_suggestionMenu__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_.m_setMenuItemDebugIds__java_lang_String_$pp_org_gwtproject_user_client_ui(baseID);
  }
- /**
-  * @override
-  * @param {SuggestBox} suggestBox
-  * @param {Collection<?>} suggestions
-  * @param {boolean} isDisplayStringHTML
-  * @param {boolean} isAutoSelectEnabled
-  * @param {SuggestionCallback} callback
-  * @public
-  */
- m_showSuggestions__org_gwtproject_user_client_ui_SuggestBox__java_util_Collection__boolean__boolean__org_gwtproject_user_client_ui_SuggestBox_SuggestionCallback(suggestBox, suggestions, isDisplayStringHTML, isAutoSelectEnabled, callback) {
+ /** @override */
+ m_showSuggestions__org_gwtproject_user_client_ui_SuggestBox__java_util_Collection__boolean__boolean__org_gwtproject_user_client_ui_SuggestBox_SuggestionCallback(/** SuggestBox */ suggestBox, /** Collection<?> */ suggestions, /** boolean */ isDisplayStringHTML, /** boolean */ isAutoSelectEnabled, /** SuggestionCallback */ callback) {
   let anySuggestions = (!$Equality.$same(suggestions, null) && suggestions.size() > 0);
   if (!anySuggestions && this.f_hideWhenEmpty__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_) {
    this.m_hideSuggestions__();
@@ -216,7 +147,7 @@ class DefaultSuggestionDisplay extends SuggestionDisplay {
   }
   this.f_suggestionMenu__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_.m_clearItems__();
   for (let $iterator = suggestions.m_iterator__(); $iterator.m_hasNext__(); ) {
-   let curSuggestion = /**@type {Suggestion} */ ($Casts.$to($iterator.m_next__(), Suggestion));
+   let curSuggestion = /**@type {Suggestion}*/ ($Casts.$to($iterator.m_next__(), Suggestion));
    let menuItem = SuggestionMenuItem.$create__org_gwtproject_user_client_ui_SuggestOracle_Suggestion__boolean(curSuggestion, isDisplayStringHTML);
    menuItem.m_setScheduledCommand__org_gwtproject_core_client_Scheduler_ScheduledCommand($1.$create__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay__org_gwtproject_user_client_ui_SuggestBox_SuggestionCallback__org_gwtproject_user_client_ui_SuggestOracle_Suggestion(this, callback, curSuggestion));
    this.f_suggestionMenu__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_.m_addItem__org_gwtproject_user_client_ui_MenuItem(menuItem);
@@ -233,56 +164,34 @@ class DefaultSuggestionDisplay extends SuggestionDisplay {
   }
   this.f_suggestionPopup__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_.m_showRelativeTo__org_gwtproject_user_client_ui_UIObject(!$Equality.$same(this.f_positionRelativeTo__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_, null) ? this.f_positionRelativeTo__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_ : suggestBox);
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isAnimationEnabledImpl___$pp_org_gwtproject_user_client_ui() {
   return this.m_isAnimationEnabled__();
  }
- /**
-  * @override
-  * @param {boolean} enable
-  * @public
-  */
- m_setAnimationEnabledImpl__boolean_$pp_org_gwtproject_user_client_ui(enable) {
+ /** @override */
+ m_setAnimationEnabledImpl__boolean_$pp_org_gwtproject_user_client_ui(/** boolean */ enable) {
   this.m_setAnimationEnabled__boolean(enable);
  }
- /**
-  * @override
-  * @param {?string} style
-  * @public
-  */
- m_setPopupStyleNameImpl__java_lang_String_$pp_org_gwtproject_user_client_ui(style) {
+ /** @override */
+ m_setPopupStyleNameImpl__java_lang_String_$pp_org_gwtproject_user_client_ui(/** ?string */ style) {
   this.m_setPopupStyleName__java_lang_String(style);
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay() {
   this.f_lastSuggestBox__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_ = null;
   this.f_hideWhenEmpty__org_gwtproject_user_client_ui_SuggestBox_DefaultSuggestionDisplay_ = true;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DefaultSuggestionDisplay.$clinit = () =>{};
   DefaultSuggestionDisplay.$loadModules();
   SuggestionDisplay.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DefaultSuggestionDisplay;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

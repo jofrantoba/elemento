@@ -83,20 +83,14 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
  * @implements {IsEditor<LeafValueEditor<?string>>}
   */
 class Label extends LabelBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {LeafValueEditor<?string>} */
+  /**@type {LeafValueEditor<?string>}*/
   this.f_editor__org_gwtproject_user_client_ui_Label_;
  }
- /**
-  * @param {Object} element
-  * @return {Label}
-  * @public
-  */
- static m_wrap__org_gwtproject_dom_client_Element(element) {
+ /** @return {Label} */
+ static m_wrap__org_gwtproject_dom_client_Element(/** Object */ element) {
   Label.$clinit();
   $Asserts.$assert($Overlay.m_isOrHasChild__$devirt__org_gwtproject_dom_client_Node__org_gwtproject_dom_client_Node(Document_$Overlay.m_get__().body, element));
   let label = Label.$create__org_gwtproject_dom_client_Element(element);
@@ -104,426 +98,228 @@ class Label extends LabelBase {
   RootPanel.m_detachOnWindowClose__org_gwtproject_user_client_ui_Widget(label);
   return label;
  }
- /**
-  * Factory method corresponding to constructor 'Label()'.
-  * @return {!Label}
-  * @public
-  */
+ //Factory method corresponding to constructor 'Label()'.
+ /** @return {!Label} */
  static $create__() {
   Label.$clinit();
   let $instance = new Label();
   $instance.$ctor__org_gwtproject_user_client_ui_Label__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'Label()'.
-  * @public
-  */
+ //Initialization from constructor 'Label()'.
+ 
  $ctor__org_gwtproject_user_client_ui_Label__() {
   this.$ctor__org_gwtproject_user_client_ui_LabelBase__boolean(false);
   this.m_setStyleName__java_lang_String("gwt-Label");
  }
- /**
-  * Factory method corresponding to constructor 'Label(String)'.
-  * @param {?string} text
-  * @return {!Label}
-  * @public
-  */
- static $create__java_lang_String(text) {
+ //Factory method corresponding to constructor 'Label(String)'.
+ /** @return {!Label} */
+ static $create__java_lang_String(/** ?string */ text) {
   Label.$clinit();
   let $instance = new Label();
   $instance.$ctor__org_gwtproject_user_client_ui_Label__java_lang_String(text);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Label(String)'.
-  * @param {?string} text
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Label__java_lang_String(text) {
+ //Initialization from constructor 'Label(String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Label__java_lang_String(/** ?string */ text) {
   this.$ctor__org_gwtproject_user_client_ui_Label__();
   this.m_setText__java_lang_String(text);
  }
- /**
-  * Factory method corresponding to constructor 'Label(String, Direction)'.
-  * @param {?string} text
-  * @param {Direction} dir
-  * @return {!Label}
-  * @public
-  */
- static $create__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(text, dir) {
+ //Factory method corresponding to constructor 'Label(String, Direction)'.
+ /** @return {!Label} */
+ static $create__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(/** ?string */ text, /** Direction */ dir) {
   Label.$clinit();
   let $instance = new Label();
   $instance.$ctor__org_gwtproject_user_client_ui_Label__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(text, dir);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Label(String, Direction)'.
-  * @param {?string} text
-  * @param {Direction} dir
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Label__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(text, dir) {
+ //Initialization from constructor 'Label(String, Direction)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Label__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(/** ?string */ text, /** Direction */ dir) {
   this.$ctor__org_gwtproject_user_client_ui_Label__();
   this.m_setText__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(text, dir);
  }
- /**
-  * Factory method corresponding to constructor 'Label(String, DirectionEstimator)'.
-  * @param {?string} text
-  * @param {DirectionEstimator} directionEstimator
-  * @return {!Label}
-  * @public
-  */
- static $create__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator(text, directionEstimator) {
+ //Factory method corresponding to constructor 'Label(String, DirectionEstimator)'.
+ /** @return {!Label} */
+ static $create__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator(/** ?string */ text, /** DirectionEstimator */ directionEstimator) {
   Label.$clinit();
   let $instance = new Label();
   $instance.$ctor__org_gwtproject_user_client_ui_Label__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator(text, directionEstimator);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Label(String, DirectionEstimator)'.
-  * @param {?string} text
-  * @param {DirectionEstimator} directionEstimator
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Label__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator(text, directionEstimator) {
+ //Initialization from constructor 'Label(String, DirectionEstimator)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Label__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator(/** ?string */ text, /** DirectionEstimator */ directionEstimator) {
   this.$ctor__org_gwtproject_user_client_ui_Label__();
   this.m_setDirectionEstimator__org_gwtproject_i18n_shared_DirectionEstimator(directionEstimator);
   this.m_setText__java_lang_String(text);
  }
- /**
-  * Factory method corresponding to constructor 'Label(String, boolean)'.
-  * @param {?string} text
-  * @param {boolean} wordWrap
-  * @return {!Label}
-  * @public
-  */
- static $create__java_lang_String__boolean(text, wordWrap) {
+ //Factory method corresponding to constructor 'Label(String, boolean)'.
+ /** @return {!Label} */
+ static $create__java_lang_String__boolean(/** ?string */ text, /** boolean */ wordWrap) {
   Label.$clinit();
   let $instance = new Label();
   $instance.$ctor__org_gwtproject_user_client_ui_Label__java_lang_String__boolean(text, wordWrap);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Label(String, boolean)'.
-  * @param {?string} text
-  * @param {boolean} wordWrap
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Label__java_lang_String__boolean(text, wordWrap) {
+ //Initialization from constructor 'Label(String, boolean)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Label__java_lang_String__boolean(/** ?string */ text, /** boolean */ wordWrap) {
   this.$ctor__org_gwtproject_user_client_ui_Label__java_lang_String(text);
   this.m_setWordWrap__boolean(wordWrap);
  }
- /**
-  * Factory method corresponding to constructor 'Label(Element)'.
-  * @param {Object} element
-  * @return {!Label}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_Element(element) {
+ //Factory method corresponding to constructor 'Label(Element)'.
+ /** @return {!Label} */
+ static $create__org_gwtproject_dom_client_Element(/** Object */ element) {
   Label.$clinit();
   let $instance = new Label();
   $instance.$ctor__org_gwtproject_user_client_ui_Label__org_gwtproject_dom_client_Element(element);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Label(Element)'.
-  * @param {Object} element
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Label__org_gwtproject_dom_client_Element(element) {
+ //Initialization from constructor 'Label(Element)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Label__org_gwtproject_dom_client_Element(/** Object */ element) {
   this.$ctor__org_gwtproject_user_client_ui_LabelBase__org_gwtproject_dom_client_Element(element);
  }
- /**
-  * @override
-  * @param {ClickHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addClickHandler__org_gwtproject_event_dom_client_ClickHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addClickHandler__org_gwtproject_event_dom_client_ClickHandler(/** ClickHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, ClickEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DoubleClickHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDoubleClickHandler__org_gwtproject_event_dom_client_DoubleClickHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDoubleClickHandler__org_gwtproject_event_dom_client_DoubleClickHandler(/** DoubleClickHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DoubleClickEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DragEndHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDragEndHandler__org_gwtproject_event_dom_client_DragEndHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDragEndHandler__org_gwtproject_event_dom_client_DragEndHandler(/** DragEndHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DragEndEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DragEnterHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDragEnterHandler__org_gwtproject_event_dom_client_DragEnterHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDragEnterHandler__org_gwtproject_event_dom_client_DragEnterHandler(/** DragEnterHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DragEnterEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DragHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDragHandler__org_gwtproject_event_dom_client_DragHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDragHandler__org_gwtproject_event_dom_client_DragHandler(/** DragHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DragEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DragLeaveHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDragLeaveHandler__org_gwtproject_event_dom_client_DragLeaveHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDragLeaveHandler__org_gwtproject_event_dom_client_DragLeaveHandler(/** DragLeaveHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DragLeaveEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DragOverHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDragOverHandler__org_gwtproject_event_dom_client_DragOverHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDragOverHandler__org_gwtproject_event_dom_client_DragOverHandler(/** DragOverHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DragOverEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DragStartHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDragStartHandler__org_gwtproject_event_dom_client_DragStartHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDragStartHandler__org_gwtproject_event_dom_client_DragStartHandler(/** DragStartHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DragStartEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DropHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDropHandler__org_gwtproject_event_dom_client_DropHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDropHandler__org_gwtproject_event_dom_client_DropHandler(/** DropHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DropEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {GestureChangeHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addGestureChangeHandler__org_gwtproject_event_dom_client_GestureChangeHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addGestureChangeHandler__org_gwtproject_event_dom_client_GestureChangeHandler(/** GestureChangeHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, GestureChangeEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {GestureEndHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addGestureEndHandler__org_gwtproject_event_dom_client_GestureEndHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addGestureEndHandler__org_gwtproject_event_dom_client_GestureEndHandler(/** GestureEndHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, GestureEndEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {GestureStartHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addGestureStartHandler__org_gwtproject_event_dom_client_GestureStartHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addGestureStartHandler__org_gwtproject_event_dom_client_GestureStartHandler(/** GestureStartHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, GestureStartEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseDownHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseDownHandler__org_gwtproject_event_dom_client_MouseDownHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseDownHandler__org_gwtproject_event_dom_client_MouseDownHandler(/** MouseDownHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseDownEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseMoveHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseMoveHandler__org_gwtproject_event_dom_client_MouseMoveHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseMoveHandler__org_gwtproject_event_dom_client_MouseMoveHandler(/** MouseMoveHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseMoveEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseOutHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseOutHandler__org_gwtproject_event_dom_client_MouseOutHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseOutHandler__org_gwtproject_event_dom_client_MouseOutHandler(/** MouseOutHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseOutEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseOverHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseOverHandler__org_gwtproject_event_dom_client_MouseOverHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseOverHandler__org_gwtproject_event_dom_client_MouseOverHandler(/** MouseOverHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseOverEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseUpHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseUpHandler__org_gwtproject_event_dom_client_MouseUpHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseUpHandler__org_gwtproject_event_dom_client_MouseUpHandler(/** MouseUpHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseUpEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseWheelHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseWheelHandler__org_gwtproject_event_dom_client_MouseWheelHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseWheelHandler__org_gwtproject_event_dom_client_MouseWheelHandler(/** MouseWheelHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseWheelEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {TouchCancelHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addTouchCancelHandler__org_gwtproject_event_dom_client_TouchCancelHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addTouchCancelHandler__org_gwtproject_event_dom_client_TouchCancelHandler(/** TouchCancelHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, TouchCancelEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {TouchEndHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addTouchEndHandler__org_gwtproject_event_dom_client_TouchEndHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addTouchEndHandler__org_gwtproject_event_dom_client_TouchEndHandler(/** TouchEndHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, TouchEndEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {TouchMoveHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addTouchMoveHandler__org_gwtproject_event_dom_client_TouchMoveHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addTouchMoveHandler__org_gwtproject_event_dom_client_TouchMoveHandler(/** TouchMoveHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, TouchMoveEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {TouchStartHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addTouchStartHandler__org_gwtproject_event_dom_client_TouchStartHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addTouchStartHandler__org_gwtproject_event_dom_client_TouchStartHandler(/** TouchStartHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, TouchStartEvent.m_getType__());
  }
- /**
-  * @override
-  * @return {LeafValueEditor<?string>}
-  * @public
-  */
+ /** @override @return {LeafValueEditor<?string>} */
  m_asEditor__() {
   if ($Equality.$same(this.f_editor__org_gwtproject_user_client_ui_Label_, null)) {
    this.f_editor__org_gwtproject_user_client_ui_Label_ = HasTextEditor.m_of__org_gwtproject_user_client_ui_HasText(this);
   }
   return this.f_editor__org_gwtproject_user_client_ui_Label_;
  }
- /**
-  * @override
-  * @return {Direction}
-  * @public
-  * @deprecated
-  */
+ /** @override @return {Direction} @deprecated */
  m_getDirection__() {
   return BidiUtils.m_getDirectionOnElement__org_gwtproject_dom_client_Element(this.m_getElement__());
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getText__() {
   return this.f_directionalTextHelper__org_gwtproject_user_client_ui_LabelBase.m_getText__();
  }
- /**
-  * @override
-  * @return {Direction}
-  * @public
-  */
+ /** @override @return {Direction} */
  m_getTextDirection__() {
   return this.f_directionalTextHelper__org_gwtproject_user_client_ui_LabelBase.m_getTextDirection__();
  }
- /**
-  * @override
-  * @param {Direction} direction
-  * @public
-  * @deprecated
-  */
- m_setDirection__org_gwtproject_i18n_client_HasDirection_Direction(direction) {
+ /** @override @deprecated */
+ m_setDirection__org_gwtproject_i18n_client_HasDirection_Direction(/** Direction */ direction) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_LabelBase.m_setDirection__org_gwtproject_i18n_client_HasDirection_Direction(direction);
   this.m_updateHorizontalAlignment__();
  }
- /**
-  * @override
-  * @param {?string} text
-  * @public
-  */
- m_setText__java_lang_String(text) {
+ /** @override */
+ m_setText__java_lang_String(/** ?string */ text) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_LabelBase.m_setText__java_lang_String(text);
   this.m_updateHorizontalAlignment__();
  }
- /**
-  * @override
-  * @param {?string} text
-  * @param {Direction} dir
-  * @public
-  */
- m_setText__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(text, dir) {
+ /** @override */
+ m_setText__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(/** ?string */ text, /** Direction */ dir) {
   this.f_directionalTextHelper__org_gwtproject_user_client_ui_LabelBase.m_setText__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(text, dir);
   this.m_updateHorizontalAlignment__();
  }
- /**
-  * @return {DirectionEstimator}
-  * @public
-  */
+ /** @return {DirectionEstimator} */
  static get f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_Label() {
   return (Label.$clinit(), Label.$f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_Label);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Label.$clinit = () =>{};
   Label.$loadModules();
   LabelBase.$clinit();
   Label.$f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_Label = DirectionalTextHelper.f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_DirectionalTextHelper;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Label;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   Document_$Overlay = goog.module.get('org.gwtproject.dom.client.Document.$Overlay$impl');
@@ -570,7 +366,7 @@ HasAllMouseHandlers.$markImplementor(Label);
 HasAllTouchHandlers.$markImplementor(Label);
 IsEditor.$markImplementor(Label);
 
-/** @private {DirectionEstimator} */
+/**@private {DirectionEstimator}*/
 Label.$f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_Label;
 
 exports = Label; 

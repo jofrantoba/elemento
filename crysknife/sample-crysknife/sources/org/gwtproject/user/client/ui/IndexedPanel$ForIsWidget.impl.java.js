@@ -10,42 +10,24 @@ let IsWidget = goog.forwardDeclare('org.gwtproject.user.client.ui.IsWidget$impl'
  * @extends {IndexedPanel}
  */
 class ForIsWidget {
- /**
-  * @abstract
-  * @param {IsWidget} child
-  * @return {number}
-  * @public
-  */
- m_getWidgetIndex__org_gwtproject_user_client_ui_IsWidget(child) {}
- /**
-  * @public
-  */
+ /** @abstract @return {number} */
+ m_getWidgetIndex__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ child) {}
+ 
  static $clinit() {
   ForIsWidget.$clinit = () =>{};
   ForIsWidget.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  IndexedPanel.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_IndexedPanel_ForIsWidget = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  IndexedPanel.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_IndexedPanel_ForIsWidget = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_IndexedPanel_ForIsWidget;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl.impl.java.js",
-"lineCount":75,
-"mappings":"A;;;;;;;;;;;;;;;;;;MAKa,gE;;;;CAAA,W;EAAAA,Q;EAAAA;OAOF,yGAPEA,C;;;;;;QAAA,S;EAAAC,2E;EAAAA,uF;EAAAA,mH;EAAAA,iB;;;;;CAAA,sG;EAAAC,iC;EAAAA,gH;;;;;;;CAU8B,0E,CAA8EC,K;EAGrHC,sT;;;;;;;;;CAbS,mC;EAAAA,8K;;;;;CAAA,wG;EAOXF,4M;;;;;QAPW,O;EAAAG,mF;EAAAA,gF;EAAAA;",
+"lineCount":55,
+"mappings":"A;;;;;;;;;;;;;;;;;;MAKa,gE;;CAAA,W;EAAAA,Q;EAAAA;OAOF,yGAPEA,C;;;QAAA,S;EAAAC,2E;EAAAA,uF;EAAAA,mH;EAAAA,iB;;;CAAA,sG;EAAAC,iC;EAAAA,gH;;;CAU8B,0E,kCAA8EC,K;EAGrHC,sT;;;;CAbS,mC;EAAAA,6K;;;CAAA,wG;EAOXF,4M;;;QAPW,O;EAAAG,mF;EAAAA,gF;EAAAA;",
 "sources":["NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl.java"],
 "names":["org.gwtproject.user.client.ui.NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl.<synthetic: ctor_js>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl.<synthetic: ctor_create>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl.<init>","owner","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl.createAndBindUi","org.gwtproject.user.client.ui.NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl.<clinit>"]
 }

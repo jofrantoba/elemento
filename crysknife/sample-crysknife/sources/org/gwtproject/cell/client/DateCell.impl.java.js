@@ -22,143 +22,93 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @extends {AbstractCell<Date>}
   */
 class DateCell extends AbstractCell {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {DateTimeFormat} */
+  /**@type {DateTimeFormat}*/
   this.f_format__org_gwtproject_cell_client_DateCell_;
-  /** @public {SafeHtmlRenderer<?string>} */
+  /**@type {SafeHtmlRenderer<?string>}*/
   this.f_renderer__org_gwtproject_cell_client_DateCell_;
-  /** @public {TimeZone} */
+  /**@type {TimeZone}*/
   this.f_timeZone__org_gwtproject_cell_client_DateCell_;
  }
- /**
-  * Factory method corresponding to constructor 'DateCell()'.
-  * @return {!DateCell}
-  * @public
-  */
+ //Factory method corresponding to constructor 'DateCell()'.
+ /** @return {!DateCell} */
  static $create__() {
   DateCell.$clinit();
   let $instance = new DateCell();
   $instance.$ctor__org_gwtproject_cell_client_DateCell__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'DateCell()'.
-  * @public
-  */
+ //Initialization from constructor 'DateCell()'.
+ 
  $ctor__org_gwtproject_cell_client_DateCell__() {
   this.$ctor__org_gwtproject_cell_client_DateCell__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer__org_gwtproject_i18n_shared_TimeZone(DateTimeFormat.m_getFormat__org_gwtproject_i18n_shared_DateTimeFormat_PredefinedFormat(PredefinedFormat.f_DATE_FULL__org_gwtproject_i18n_shared_DateTimeFormat_PredefinedFormat), SimpleSafeHtmlRenderer.m_getInstance__(), null);
  }
- /**
-  * Factory method corresponding to constructor 'DateCell(SafeHtmlRenderer)'.
-  * @param {SafeHtmlRenderer<?string>} renderer
-  * @return {!DateCell}
-  * @public
-  */
- static $create__org_gwtproject_text_shared_SafeHtmlRenderer(renderer) {
+ //Factory method corresponding to constructor 'DateCell(SafeHtmlRenderer)'.
+ /** @return {!DateCell} */
+ static $create__org_gwtproject_text_shared_SafeHtmlRenderer(/** SafeHtmlRenderer<?string> */ renderer) {
   DateCell.$clinit();
   let $instance = new DateCell();
   $instance.$ctor__org_gwtproject_cell_client_DateCell__org_gwtproject_text_shared_SafeHtmlRenderer(renderer);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DateCell(SafeHtmlRenderer)'.
-  * @param {SafeHtmlRenderer<?string>} renderer
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_DateCell__org_gwtproject_text_shared_SafeHtmlRenderer(renderer) {
+ //Initialization from constructor 'DateCell(SafeHtmlRenderer)'.
+ 
+ $ctor__org_gwtproject_cell_client_DateCell__org_gwtproject_text_shared_SafeHtmlRenderer(/** SafeHtmlRenderer<?string> */ renderer) {
   this.$ctor__org_gwtproject_cell_client_DateCell__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer__org_gwtproject_i18n_shared_TimeZone(DateTimeFormat.m_getFormat__org_gwtproject_i18n_shared_DateTimeFormat_PredefinedFormat(PredefinedFormat.f_DATE_FULL__org_gwtproject_i18n_shared_DateTimeFormat_PredefinedFormat), renderer, null);
  }
- /**
-  * Factory method corresponding to constructor 'DateCell(DateTimeFormat)'.
-  * @param {DateTimeFormat} format
-  * @return {!DateCell}
-  * @public
-  */
- static $create__org_gwtproject_i18n_shared_DateTimeFormat(format) {
+ //Factory method corresponding to constructor 'DateCell(DateTimeFormat)'.
+ /** @return {!DateCell} */
+ static $create__org_gwtproject_i18n_shared_DateTimeFormat(/** DateTimeFormat */ format) {
   DateCell.$clinit();
   let $instance = new DateCell();
   $instance.$ctor__org_gwtproject_cell_client_DateCell__org_gwtproject_i18n_shared_DateTimeFormat(format);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DateCell(DateTimeFormat)'.
-  * @param {DateTimeFormat} format
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_DateCell__org_gwtproject_i18n_shared_DateTimeFormat(format) {
+ //Initialization from constructor 'DateCell(DateTimeFormat)'.
+ 
+ $ctor__org_gwtproject_cell_client_DateCell__org_gwtproject_i18n_shared_DateTimeFormat(/** DateTimeFormat */ format) {
   this.$ctor__org_gwtproject_cell_client_DateCell__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer__org_gwtproject_i18n_shared_TimeZone(format, SimpleSafeHtmlRenderer.m_getInstance__(), null);
  }
- /**
-  * Factory method corresponding to constructor 'DateCell(DateTimeFormat, SafeHtmlRenderer)'.
-  * @param {DateTimeFormat} format
-  * @param {SafeHtmlRenderer<?string>} renderer
-  * @return {!DateCell}
-  * @public
-  */
- static $create__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer(format, renderer) {
+ //Factory method corresponding to constructor 'DateCell(DateTimeFormat, SafeHtmlRenderer)'.
+ /** @return {!DateCell} */
+ static $create__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer(/** DateTimeFormat */ format, /** SafeHtmlRenderer<?string> */ renderer) {
   DateCell.$clinit();
   let $instance = new DateCell();
   $instance.$ctor__org_gwtproject_cell_client_DateCell__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer(format, renderer);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DateCell(DateTimeFormat, SafeHtmlRenderer)'.
-  * @param {DateTimeFormat} format
-  * @param {SafeHtmlRenderer<?string>} renderer
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_DateCell__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer(format, renderer) {
+ //Initialization from constructor 'DateCell(DateTimeFormat, SafeHtmlRenderer)'.
+ 
+ $ctor__org_gwtproject_cell_client_DateCell__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer(/** DateTimeFormat */ format, /** SafeHtmlRenderer<?string> */ renderer) {
   this.$ctor__org_gwtproject_cell_client_DateCell__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer__org_gwtproject_i18n_shared_TimeZone(format, renderer, null);
  }
- /**
-  * Factory method corresponding to constructor 'DateCell(DateTimeFormat, TimeZone)'.
-  * @param {DateTimeFormat} format
-  * @param {TimeZone} timeZone
-  * @return {!DateCell}
-  * @public
-  */
- static $create__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_i18n_shared_TimeZone(format, timeZone) {
+ //Factory method corresponding to constructor 'DateCell(DateTimeFormat, TimeZone)'.
+ /** @return {!DateCell} */
+ static $create__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_i18n_shared_TimeZone(/** DateTimeFormat */ format, /** TimeZone */ timeZone) {
   DateCell.$clinit();
   let $instance = new DateCell();
   $instance.$ctor__org_gwtproject_cell_client_DateCell__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_i18n_shared_TimeZone(format, timeZone);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DateCell(DateTimeFormat, TimeZone)'.
-  * @param {DateTimeFormat} format
-  * @param {TimeZone} timeZone
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_DateCell__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_i18n_shared_TimeZone(format, timeZone) {
+ //Initialization from constructor 'DateCell(DateTimeFormat, TimeZone)'.
+ 
+ $ctor__org_gwtproject_cell_client_DateCell__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_i18n_shared_TimeZone(/** DateTimeFormat */ format, /** TimeZone */ timeZone) {
   this.$ctor__org_gwtproject_cell_client_DateCell__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer__org_gwtproject_i18n_shared_TimeZone(format, SimpleSafeHtmlRenderer.m_getInstance__(), timeZone);
  }
- /**
-  * Factory method corresponding to constructor 'DateCell(DateTimeFormat, SafeHtmlRenderer, TimeZone)'.
-  * @param {DateTimeFormat} format
-  * @param {SafeHtmlRenderer<?string>} renderer
-  * @param {TimeZone} timeZone
-  * @return {!DateCell}
-  * @public
-  */
- static $create__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer__org_gwtproject_i18n_shared_TimeZone(format, renderer, timeZone) {
+ //Factory method corresponding to constructor 'DateCell(DateTimeFormat, SafeHtmlRenderer, TimeZone)'.
+ /** @return {!DateCell} */
+ static $create__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer__org_gwtproject_i18n_shared_TimeZone(/** DateTimeFormat */ format, /** SafeHtmlRenderer<?string> */ renderer, /** TimeZone */ timeZone) {
   DateCell.$clinit();
   let $instance = new DateCell();
   $instance.$ctor__org_gwtproject_cell_client_DateCell__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer__org_gwtproject_i18n_shared_TimeZone(format, renderer, timeZone);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DateCell(DateTimeFormat, SafeHtmlRenderer, TimeZone)'.
-  * @param {DateTimeFormat} format
-  * @param {SafeHtmlRenderer<?string>} renderer
-  * @param {TimeZone} timeZone
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_DateCell__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer__org_gwtproject_i18n_shared_TimeZone(format, renderer, timeZone) {
-  this.$ctor__org_gwtproject_cell_client_AbstractCell__arrayOf_java_lang_String(/**@type {!Array<?string>} */ ($Arrays.$init([], j_l_String)));
+ //Initialization from constructor 'DateCell(DateTimeFormat, SafeHtmlRenderer, TimeZone)'.
+ 
+ $ctor__org_gwtproject_cell_client_DateCell__org_gwtproject_i18n_shared_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer__org_gwtproject_i18n_shared_TimeZone(/** DateTimeFormat */ format, /** SafeHtmlRenderer<?string> */ renderer, /** TimeZone */ timeZone) {
+  this.$ctor__org_gwtproject_cell_client_AbstractCell__arrayOf_java_lang_String(/**@type {!Array<?string>}*/ ($Arrays.$init([], j_l_String)));
   if ($Equality.$same(format, null)) {
    throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String("format == null"));
   }
@@ -169,47 +119,28 @@ class DateCell extends AbstractCell {
   this.f_renderer__org_gwtproject_cell_client_DateCell_ = renderer;
   this.f_timeZone__org_gwtproject_cell_client_DateCell_ = timeZone;
  }
- /**
-  * @param {Context} context
-  * @param {Date} value
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_util_Date__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, value, sb) {
+ 
+ m_render__org_gwtproject_cell_client_Cell_Context__java_util_Date__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ context, /** Date */ value, /** SafeHtmlBuilder */ sb) {
   if (!$Equality.$same(value, null)) {
    sb.m_append__org_gwtproject_safehtml_shared_SafeHtml(this.f_renderer__org_gwtproject_cell_client_DateCell_.m_render__java_lang_Object(this.f_format__org_gwtproject_cell_client_DateCell_.m_format__java_util_Date__org_gwtproject_i18n_shared_TimeZone(value, this.f_timeZone__org_gwtproject_cell_client_DateCell_)));
   }
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Context} arg0
-  * @param {*} arg1
-  * @param {SafeHtmlBuilder} arg2
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, arg1, arg2) {
-  this.m_render__org_gwtproject_cell_client_Cell_Context__java_util_Date__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, /**@type {Date} */ ($Casts.$to(arg1, Date)), arg2);
+ //Bridge method.
+ /** @override */
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ arg0, /** * */ arg1, /** SafeHtmlBuilder */ arg2) {
+  this.m_render__org_gwtproject_cell_client_Cell_Context__java_util_Date__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, /**@type {Date}*/ ($Casts.$to(arg1, Date)), arg2);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DateCell.$clinit = () =>{};
   DateCell.$loadModules();
   AbstractCell.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DateCell;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
   j_l_String = goog.module.get('java.lang.String$impl');

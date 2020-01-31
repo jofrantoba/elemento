@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellBrowser$Template.impl.java.js",
-"lineCount":106,
-"mappings":"A;;;;;;;;;;;;;MAoLY,Q;;;;;;;;;;;CAIC,wJ,CAAQA,G,EAAYC,O,EAAoBC,O,EAAkBC,S,EAC7CC,Y;;;;;;;;;;;;CAEb,sK,CAAiBJ,G,EAAYC,O,EAAoBC,O,EAAaG,Q,EACxCF,S,EAAoBC,Y;;;;;;;;;;;;;CAE1C,mL,CAAwBJ,G,EAAYC,O,EAAoBC,O,EAAaG,Q,EAC5CC,S,EAAoBH,S,EAAoBC,Y;;;;;;;;CAEjE,iG,CAAwBG,G,EAAcC,K;;;;;QAX/C,wE;EAAAC,4G;;;;;QAFQ,O;EAAAC,2B;EAAAA,wB;EAERA,uH;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFQ;;",
+"lineCount":54,
+"mappings":"A;;;;;;;;;;;;;MAoLY,Q;;CAIC,wJ,eAAQA,G,iBAAYC,O,oBAAoBC,O,kBAAkBC,S,kBAC7CC,Y;;CAEb,sK,eAAiBJ,G,iBAAYC,O,oBAAoBC,O,gBAAaG,Q,kBACxCF,S,kBAAoBC,Y;;CAE1C,mL,eAAwBJ,G,iBAAYC,O,oBAAoBC,O,gBAAaG,Q,gBAC5CC,S,kBAAoBH,S,kBAAoBC,Y;;CAEjE,iG,mBAAwBG,G,kBAAcC,K;;QAX/C,wE;EAAAC,4G;;;QAFQ,O;EAAAC,2B;EAAAA,wB;EAERA,uH;;;;;;;;;;;;;;;;;;;;;;AAFQ;;",
 "sources":["CellBrowser.java"],
 "names":["idx","classes","padding","imageHtml","cellContents","tabIndex","accessKey","css","image","org.gwtproject.user.cellview.client.CellBrowser$Template.<synthetic: getter>","org.gwtproject.user.cellview.client.CellBrowser$Template.<clinit>"]
 }

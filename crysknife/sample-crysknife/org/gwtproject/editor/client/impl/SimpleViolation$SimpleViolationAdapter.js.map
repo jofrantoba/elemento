@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SimpleViolation$SimpleViolationAdapter.impl.java.js",
-"lineCount":75,
-"mappings":"A;;;;;;;;MA8De,sB;;;;CAAA,W;EAAAA,Q;EAAAA;OAC0B,8EAD1BA,C;;;;;;;QAGJ,6C,CAA8CC,C;EAA9CC,iC;EAAAA,6C;EAAAA,mI;EAAAA,iB;;;;;;CAAA,qH,CAA8CD,C;EAA9CE,kE;EACLA,wF;;;;;;;CAIY,U;EACZC,6G;;;;;;;CAIY,c;EACZC,4G;;;;;;;CAIY,W;EAKZC,wJ;;;;;;;CAIY,qB;EACZC,2F;;;;;QA5BS,O;EAAAC,yC;EAAAA,sC;EAAAA;",
+"lineCount":48,
+"mappings":"A;;;;;;;;MA8De,sB;;CAAA,W;EAAAA,Q;EAAAA;OAC0B,8EAD1BA,C;;;QAGJ,6C,+BAA8CC,C;EAA9CC,iC;EAAAA,6C;EAAAA,mI;EAAAA,iB;;;CAAA,qH,+BAA8CD,C;EAA9CE,kE;EACLA,wF;;;CAIY,U;EACZC,6G;;;CAIY,c;EACZC,4G;;;CAIY,W;EAKZC,wJ;;;CAIY,qB;EACZC,2F;;;QA5BS,O;EAAAC,yC;EAAAA,sC;EAAAA;",
 "sources":["SimpleViolation.java"],
 "names":["org.gwtproject.editor.client.impl.SimpleViolation$SimpleViolationAdapter.<synthetic: ctor_js>","v","org.gwtproject.editor.client.impl.SimpleViolation$SimpleViolationAdapter.<synthetic: ctor_create>","org.gwtproject.editor.client.impl.SimpleViolation$SimpleViolationAdapter.<init>","org.gwtproject.editor.client.impl.SimpleViolation$SimpleViolationAdapter.getKey","org.gwtproject.editor.client.impl.SimpleViolation$SimpleViolationAdapter.getMessage","org.gwtproject.editor.client.impl.SimpleViolation$SimpleViolationAdapter.getPath","org.gwtproject.editor.client.impl.SimpleViolation$SimpleViolationAdapter.getUserDataObject","org.gwtproject.editor.client.impl.SimpleViolation$SimpleViolationAdapter.<clinit>"]
 }

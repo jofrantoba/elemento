@@ -12,55 +12,31 @@ let CellList__ResourcesImpl = goog.forwardDeclare('org.gwtproject.user.cellview.
  * @extends {ClientBundle}
  */
 class Resources {
- /**
-  * @abstract
-  * @return {ImageResource}
-  * @public
-  */
+ /** @abstract @return {ImageResource} */
  m_cellListSelectedBackground__() {}
- /**
-  * @abstract
-  * @return {Style}
-  * @public
-  */
+ /** @abstract @return {Style} */
  m_cellListStyle__() {}
- /**
-  * @return {Resources}
-  * @public
-  */
+ /** @return {Resources} */
  static get f_INSTANCE__org_gwtproject_user_cellview_client_CellList_Resources() {
   return (Resources.$clinit(), Resources.$f_INSTANCE__org_gwtproject_user_cellview_client_CellList_Resources);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Resources.$clinit = () =>{};
   Resources.$loadModules();
   Resources.$f_INSTANCE__org_gwtproject_user_cellview_client_CellList_Resources = CellList__ResourcesImpl.$create__();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ClientBundle.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_cellview_client_CellList_Resources = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ClientBundle.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_cellview_client_CellList_Resources = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_cellview_client_CellList_Resources;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   CellList__ResourcesImpl = goog.module.get('org.gwtproject.user.cellview.client.CellList_ResourcesImpl$impl');
  }
@@ -70,7 +46,7 @@ $Util.$setClassMetadataForInterface(Resources, 'org.gwtproject.user.cellview.cli
 
 Resources.$markImplementor(/** @type {Function} */ (Resources));
 
-/** @private {Resources} */
+/**@private {Resources}*/
 Resources.$f_INSTANCE__org_gwtproject_user_cellview_client_CellList_Resources;
 
 exports = Resources; 

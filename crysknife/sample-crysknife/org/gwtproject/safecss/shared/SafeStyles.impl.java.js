@@ -10,63 +10,33 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.safecss.shared.SafeStyl
  * @extends {Serializable}
  */
 class SafeStyles {
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_asString__() {}
- /**
-  * @abstract
-  * @param {*} anObject
-  * @return {boolean}
-  * @public
-  */
- equals(anObject) {}
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {boolean} */
+ equals(/** * */ anObject) {}
+ /** @abstract @return {number} */
  hashCode() {}
- /**
-  * @param {?function():?string} fn
-  * @return {SafeStyles}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {SafeStyles} */
+ static $adapt(/** ?function():?string */ fn) {
   SafeStyles.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SafeStyles.$clinit = () =>{};
   SafeStyles.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Serializable.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_safecss_shared_SafeStyles = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Serializable.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_safecss_shared_SafeStyles = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_safecss_shared_SafeStyles;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.safecss.shared.SafeStyles.$LambdaAdaptor$impl');
  }

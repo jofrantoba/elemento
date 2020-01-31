@@ -20,33 +20,24 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {HasHandlers}
   */
 class UiRendererDispatcher extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {T} */
+  /**@type {T}*/
   this.f_eventTarget__org_gwtproject_uibinder_client_impl_AbstractUiRenderer_UiRendererDispatcher_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_methodIndex__org_gwtproject_uibinder_client_impl_AbstractUiRenderer_UiRendererDispatcher_ = 0;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_root__org_gwtproject_uibinder_client_impl_AbstractUiRenderer_UiRendererDispatcher_;
-  /** @public {HashMap<?string, Integer>} */
+  /**@type {HashMap<?string, Integer>}*/
   this.f_table__org_gwtproject_uibinder_client_impl_AbstractUiRenderer_UiRendererDispatcher_;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_uibinder_client_impl_AbstractUiRenderer_UiRendererDispatcher__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {T} target
-  * @param {Object} event
-  * @param {Object} parentOrRoot
-  * @public
-  */
- m_fireEvent__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_dom_client_Element(target, event, parentOrRoot) {
+ 
+ m_fireEvent__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_dom_client_Element(/** T */ target, /** Object */ event, /** Object */ parentOrRoot) {
   if ($Equality.$same(target, null)) {
    throw $Exceptions.toJs(NullPointerException.$create__java_lang_String("Null event handler received"));
   }
@@ -64,54 +55,33 @@ class UiRendererDispatcher extends j_l_Object {
   this.f_methodIndex__org_gwtproject_uibinder_client_impl_AbstractUiRenderer_UiRendererDispatcher_ = AbstractUiRenderer.m_computeDispatchEvent__java_util_HashMap__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_NativeEvent(this.f_table__org_gwtproject_uibinder_client_impl_AbstractUiRenderer_UiRendererDispatcher_, this.f_root__org_gwtproject_uibinder_client_impl_AbstractUiRenderer_UiRendererDispatcher_, event);
   DomEvent.m_fireNativeEvent__org_gwtproject_dom_client_NativeEvent__org_gwtproject_event_shared_HasHandlers(event, this);
  }
- /**
-  * @return {T}
-  * @public
-  */
+ /** @return {T} */
  m_getEventTarget__() {
   return this.f_eventTarget__org_gwtproject_uibinder_client_impl_AbstractUiRenderer_UiRendererDispatcher_;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getMethodIndex__() {
   return this.f_methodIndex__org_gwtproject_uibinder_client_impl_AbstractUiRenderer_UiRendererDispatcher_;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getRoot__() {
   return this.f_root__org_gwtproject_uibinder_client_impl_AbstractUiRenderer_UiRendererDispatcher_;
  }
- /**
-  * @param {Array<?string>} keys
-  * @param {Array<Integer>} values
-  * @public
-  */
- m_initDispatchTable__arrayOf_java_lang_String__arrayOf_java_lang_Integer(keys, values) {
+ 
+ m_initDispatchTable__arrayOf_java_lang_String__arrayOf_java_lang_Integer(/** Array<?string> */ keys, /** Array<Integer> */ values) {
   this.f_table__org_gwtproject_uibinder_client_impl_AbstractUiRenderer_UiRendererDispatcher_ = AbstractUiRenderer.m_buildDispatchMap__arrayOf_java_lang_String__arrayOf_java_lang_Integer(keys, values);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   UiRendererDispatcher.$clinit = () =>{};
   UiRendererDispatcher.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof UiRendererDispatcher;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   NullPointerException = goog.module.get('java.lang.NullPointerException$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

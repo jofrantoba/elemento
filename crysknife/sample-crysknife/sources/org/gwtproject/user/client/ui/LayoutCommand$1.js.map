@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"LayoutCommand$1.impl.java.js",
-"lineCount":75,
-"mappings":"A;;;;;;;;;;;;;;;;MAiEoD,E;;;;CAAA,W;EAAAA,Q;EAAAA;oE;;;;;;;QAAA,oD;EAAAC,a;EAAAA,yB;EAAAA,yH;EAAAA,iB;;;;;;CAAA,iG;EAAAC,gF;EAAAA,iC;;;;;;CAClC,uB;EAEVC;GACEA,qJADFA;G;;;;;;;;CAKU,6D,CAAeC,K,EAAcC,Q;EAGvCC,IAAOC,KAAPD,wE;EACAA;GACEA,gFADFA;G;EAKAA;GACEA,0MADFA;G;;;;;QAjB4C,O;EAAAE,qB;EAAAA,kB;EAAAA;",
+"lineCount":56,
+"mappings":"A;;;;;;;;;;;;;;;;MAiEoD,E;;CAAA,W;EAAAA,Q;EAAAA;oE;;;QAAA,oD;EAAAC,a;EAAAA,yB;EAAAA,yH;EAAAA,iB;;;CAAA,iG;EAAAC,gF;EAAAA,iC;;;CAClC,uB;EAEVC;GACEA,qJADFA;G;;;CAKU,6D,cAAeC,K,gBAAcC,Q;EAGvCC,IAAOC,KAAPD,uE;EACAA;GACEA,+EADFA;G;EAKAA;GACEA,0MADFA;G;;;QAjB4C,O;EAAAE,qB;EAAAA,kB;EAAAA;",
 "sources":["LayoutCommand.java"],
 "names":["org.gwtproject.user.client.ui.LayoutCommand$1.<synthetic: ctor_js>","org.gwtproject.user.client.ui.LayoutCommand$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.LayoutCommand$1.<init>","org.gwtproject.user.client.ui.LayoutCommand$1.onAnimationComplete","layer","progress","org.gwtproject.user.client.ui.LayoutCommand$1.onLayout","child","org.gwtproject.user.client.ui.LayoutCommand$1.<clinit>"]
 }

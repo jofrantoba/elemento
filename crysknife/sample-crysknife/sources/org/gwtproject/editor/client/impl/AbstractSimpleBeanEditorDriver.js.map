@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"AbstractSimpleBeanEditorDriver.impl.java.js",
-"lineCount":59,
-"mappings":"A;;;;;;;;;;;;;;MA0BsB,8B;;;;CAAA,W;EAAAA,Q;;;;;CAAA,yE;EAAAC,mE;;;;;;;CAGR,wB,CAAOC,M;EACjBC,wC;;;;;;;CAGO,S;EACPC,mB;EACAA,4B;;;;;;;CAGU,iD,CAAaC,M;EACvBC,iE;;;;;QAbkB,O;EAAAC,iD;EAAAA,8C;EAAAA;",
+"lineCount":41,
+"mappings":"A;;;;;;;;;;;;;;MA0BsB,8B;;CAAA,W;EAAAA,Q;;;CAAA,yE;EAAAC,mE;;;CAGR,wB,UAAOC,M;EACjBC,wC;;;CAGO,S;EACPC,mB;EACAA,4B;;;CAGU,iD,UAAaC,M;EACvBC,iE;;;QAbkB,O;EAAAC,iD;EAAAA,8C;EAAAA;",
 "sources":["AbstractSimpleBeanEditorDriver.java"],
 "names":["org.gwtproject.editor.client.impl.AbstractSimpleBeanEditorDriver.<synthetic: ctor_js>","org.gwtproject.editor.client.impl.AbstractSimpleBeanEditorDriver.<init>","object","org.gwtproject.editor.client.impl.AbstractSimpleBeanEditorDriver.edit","org.gwtproject.editor.client.impl.AbstractSimpleBeanEditorDriver.flush","editor","org.gwtproject.editor.client.impl.AbstractSimpleBeanEditorDriver.initialize","org.gwtproject.editor.client.impl.AbstractSimpleBeanEditorDriver.<clinit>"]
 }

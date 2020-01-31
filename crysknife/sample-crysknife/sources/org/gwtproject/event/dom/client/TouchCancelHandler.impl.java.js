@@ -11,50 +11,29 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.event.dom.client.TouchC
  * @extends {EventHandler}
  */
 class TouchCancelHandler {
- /**
-  * @abstract
-  * @param {TouchCancelEvent} event
-  * @public
-  */
- m_onTouchCancel__org_gwtproject_event_dom_client_TouchCancelEvent(event) {}
- /**
-  * @param {?function(TouchCancelEvent):void} fn
-  * @return {TouchCancelHandler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onTouchCancel__org_gwtproject_event_dom_client_TouchCancelEvent(/** TouchCancelEvent */ event) {}
+ /** @return {TouchCancelHandler} */
+ static $adapt(/** ?function(TouchCancelEvent):void */ fn) {
   TouchCancelHandler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TouchCancelHandler.$clinit = () =>{};
   TouchCancelHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  EventHandler.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_TouchCancelHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  EventHandler.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_TouchCancelHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_TouchCancelHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.event.dom.client.TouchCancelHandler.$LambdaAdaptor$impl');
  }

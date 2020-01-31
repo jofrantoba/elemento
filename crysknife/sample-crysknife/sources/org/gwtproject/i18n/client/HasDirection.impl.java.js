@@ -8,46 +8,25 @@ let Direction = goog.forwardDeclare('org.gwtproject.i18n.client.HasDirection.Dir
  * @interface
  */
 class HasDirection {
- /**
-  * @abstract
-  * @param {Direction} direction
-  * @public
-  */
- m_setDirection__org_gwtproject_i18n_client_HasDirection_Direction(direction) {}
- /**
-  * @abstract
-  * @return {Direction}
-  * @public
-  */
+ /** @abstract */
+ m_setDirection__org_gwtproject_i18n_client_HasDirection_Direction(/** Direction */ direction) {}
+ /** @abstract @return {Direction} */
  m_getDirection__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HasDirection.$clinit = () =>{};
   HasDirection.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_i18n_client_HasDirection = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_i18n_client_HasDirection = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_i18n_client_HasDirection;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

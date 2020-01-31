@@ -10,47 +10,26 @@ let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
  * @extends {AcceptsOneWidget}
  */
 class HasOneWidget {
- /**
-  * @abstract
-  * @return {Widget}
-  * @public
-  */
+ /** @abstract @return {Widget} */
  m_getWidget__() {}
- /**
-  * @abstract
-  * @param {Widget} w
-  * @public
-  */
- m_setWidget__org_gwtproject_user_client_ui_Widget(w) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_setWidget__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {}
+ 
  static $clinit() {
   HasOneWidget.$clinit = () =>{};
   HasOneWidget.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  AcceptsOneWidget.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_HasOneWidget = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  AcceptsOneWidget.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_HasOneWidget = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_HasOneWidget;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

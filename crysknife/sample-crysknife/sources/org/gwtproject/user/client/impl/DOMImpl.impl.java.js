@@ -17,95 +17,53 @@ let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
  * @abstract
   */
 class DOMImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_impl_DOMImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {Object} elem
-  * @return {EventListener}
-  * @public
-  */
- static m_getEventListener__org_gwtproject_dom_client_Element(elem) {
+ /** @return {EventListener} */
+ static m_getEventListener__org_gwtproject_dom_client_Element(/** Object */ elem) {
   DOMImpl.$clinit();
   let _this = Js.m_asPropertyMap__java_lang_Object(elem);
   if ($Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(_this, "__listener")) {
-   let maybeListener = /**@type {EventListener} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(_this, "__listener")));
+   let maybeListener = /**@type {EventListener}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(_this, "__listener")));
    return DOMImpl.m_isMyListener__java_lang_Object(maybeListener) ? maybeListener : null;
   }
   return null;
  }
- /**
-  * @param {Object} elem
-  * @param {EventListener} listener
-  * @public
-  */
- static m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(elem, listener) {
+ 
+ static m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(/** Object */ elem, /** EventListener */ listener) {
   DOMImpl.$clinit();
   $Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(Js.m_asPropertyMap__java_lang_Object(elem), "__listener", listener);
  }
- /**
-  * @param {*} object
-  * @return {boolean}
-  * @public
-  */
- static m_isMyListener__java_lang_Object(object) {
+ /** @return {boolean} */
+ static m_isMyListener__java_lang_Object(/** * */ object) {
   return EventListener.$isInstance(object);
  }
- /**
-  * @param {Event} event
-  * @param {boolean} cancel
-  * @public
-  */
- m_eventCancelBubble__org_gwtproject_user_client_Event__boolean(event, cancel) {
+ 
+ m_eventCancelBubble__org_gwtproject_user_client_Event__boolean(/** Event */ event, /** boolean */ cancel) {
   if (cancel == false) {
    NativeEvent_$Overlay.m_stopPropagation__$devirt__org_gwtproject_dom_client_NativeEvent(event);
   }
  }
- /**
-  * @abstract
-  * @param {Event} evt
-  * @return {Object}
-  * @public
-  */
- m_eventGetFromElement__org_gwtproject_user_client_Event(evt) {}
- /**
-  * @param {Event} evt
-  * @return {boolean}
-  * @public
-  */
- m_eventGetRepeat__org_gwtproject_user_client_Event(evt) {
+ /** @abstract @return {Object} */
+ m_eventGetFromElement__org_gwtproject_user_client_Event(/** Event */ evt) {}
+ /** @return {boolean} */
+ m_eventGetRepeat__org_gwtproject_user_client_Event(/** Event */ evt) {
   return $Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(Js.m_asPropertyMap__java_lang_Object(evt), "repeat");
  }
- /**
-  * @abstract
-  * @param {Event} evt
-  * @return {Object}
-  * @public
-  */
- m_eventGetToElement__org_gwtproject_user_client_Event(evt) {}
- /**
-  * @param {Event} evt
-  * @return {number}
-  * @public
-  */
- m_eventGetTypeInt__org_gwtproject_user_client_Event(evt) {
+ /** @abstract @return {Object} */
+ m_eventGetToElement__org_gwtproject_user_client_Event(/** Event */ evt) {}
+ /** @return {number} */
+ m_eventGetTypeInt__org_gwtproject_user_client_Event(/** Event */ evt) {
   return this.m_eventGetTypeInt__java_lang_String(NativeEvent_$Overlay.m_getType__$devirt__org_gwtproject_dom_client_NativeEvent(evt));
  }
- /**
-  * @param {?string} eventType
-  * @return {number}
-  * @public
-  */
- m_eventGetTypeInt__java_lang_String(eventType) {
+ /** @return {number} */
+ m_eventGetTypeInt__java_lang_String(/** ?string */ eventType) {
   switch (InternalPreconditions.m_checkNotNull__java_lang_Object(eventType)) {
    case "blur": 
     return 4096;
@@ -167,129 +125,61 @@ class DOMImpl extends j_l_Object {
     return -1;
   }
  }
- /**
-  * @param {Event} evt
-  * @param {number} key
-  * @public
-  */
- m_eventSetKeyCode__org_gwtproject_user_client_Event__char(evt, key) {
+ 
+ m_eventSetKeyCode__org_gwtproject_user_client_Event__char(/** Event */ evt, /** number */ key) {
   $Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(Js.m_asPropertyMap__java_lang_Object(evt), "keyCode", key);
  }
- /**
-  * @abstract
-  * @param {Object} elem
-  * @param {number} index
-  * @return {Object}
-  * @public
-  */
- m_getChild__org_gwtproject_dom_client_Element__int(elem, index) {}
- /**
-  * @abstract
-  * @param {Object} elem
-  * @return {number}
-  * @public
-  */
- m_getChildCount__org_gwtproject_dom_client_Element(elem) {}
- /**
-  * @abstract
-  * @param {Object} parent
-  * @param {Object} child
-  * @return {number}
-  * @public
-  */
- m_getChildIndex__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(parent, child) {}
- /**
-  * @param {Object} elem
-  * @return {number}
-  * @public
-  */
- m_getEventsSunk__org_gwtproject_dom_client_Element(elem) {
-  if ($Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (elem), "__eventBits")) {
-   return Integer.m_valueOf__java_lang_String($Objects.m_toString__java_lang_Object($Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (elem), "__eventBits"))).m_intValue__();
+ /** @abstract @return {Object} */
+ m_getChild__org_gwtproject_dom_client_Element__int(/** Object */ elem, /** number */ index) {}
+ /** @abstract @return {number} */
+ m_getChildCount__org_gwtproject_dom_client_Element(/** Object */ elem) {}
+ /** @abstract @return {number} */
+ m_getChildIndex__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(/** Object */ parent, /** Object */ child) {}
+ /** @return {number} */
+ m_getEventsSunk__org_gwtproject_dom_client_Element(/** Object */ elem) {
+  if ($Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (elem), "__eventBits")) {
+   return Integer.m_valueOf__java_lang_String($Objects.m_toString__java_lang_Object($Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (elem), "__eventBits"))).m_intValue__();
   }
   return 0;
  }
- /**
-  * @abstract
-  * @param {Object} parent
-  * @param {Object} child
-  * @param {number} index
-  * @public
-  */
- m_insertChild__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element__int(parent, child, index) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_insertChild__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element__int(/** Object */ parent, /** Object */ child, /** number */ index) {}
+ 
  m_maybeInitializeEventSystem__() {
   if (!DOMImpl.$f_eventSystemIsInitialized__org_gwtproject_user_client_impl_DOMImpl) {
    this.m_initEventSystem__();
    DOMImpl.$f_eventSystemIsInitialized__org_gwtproject_user_client_impl_DOMImpl = true;
   }
  }
- /**
-  * @abstract
-  * @param {Object} elem
-  * @public
-  */
- m_releaseCapture__org_gwtproject_dom_client_Element(elem) {}
- /**
-  * @abstract
-  * @param {Object} elem
-  * @public
-  */
- m_setCapture__org_gwtproject_dom_client_Element(elem) {}
- /**
-  * @abstract
-  * @param {Object} elem
-  * @param {?string} eventTypeName
-  * @public
-  */
- m_sinkBitlessEvent__org_gwtproject_dom_client_Element__java_lang_String(elem, eventTypeName) {}
- /**
-  * @abstract
-  * @param {Object} elem
-  * @param {number} eventBits
-  * @public
-  */
- m_sinkEvents__org_gwtproject_dom_client_Element__int(elem, eventBits) {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
+ m_releaseCapture__org_gwtproject_dom_client_Element(/** Object */ elem) {}
+ /** @abstract */
+ m_setCapture__org_gwtproject_dom_client_Element(/** Object */ elem) {}
+ /** @abstract */
+ m_sinkBitlessEvent__org_gwtproject_dom_client_Element__java_lang_String(/** Object */ elem, /** ?string */ eventTypeName) {}
+ /** @abstract */
+ m_sinkEvents__org_gwtproject_dom_client_Element__int(/** Object */ elem, /** number */ eventBits) {}
+ /** @abstract */
  m_initEventSystem__() {}
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  static get f_eventSystemIsInitialized__org_gwtproject_user_client_impl_DOMImpl() {
   return (DOMImpl.$clinit(), DOMImpl.$f_eventSystemIsInitialized__org_gwtproject_user_client_impl_DOMImpl);
  }
- /**
-  * @param {boolean} value
-  * @public
-  */
- static set f_eventSystemIsInitialized__org_gwtproject_user_client_impl_DOMImpl(value) {
+ 
+ static set f_eventSystemIsInitialized__org_gwtproject_user_client_impl_DOMImpl(/** boolean */ value) {
   (DOMImpl.$clinit(), DOMImpl.$f_eventSystemIsInitialized__org_gwtproject_user_client_impl_DOMImpl = value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DOMImpl.$clinit = () =>{};
   DOMImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DOMImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Integer = goog.module.get('java.lang.Integer$impl');
   InternalPreconditions = goog.module.get('javaemul.internal.InternalPreconditions$impl');
@@ -303,7 +193,7 @@ class DOMImpl extends j_l_Object {
 }
 $Util.$setClassMetadata(DOMImpl, 'org.gwtproject.user.client.impl.DOMImpl');
 
-/** @private {boolean} */
+/**@private {boolean}*/
 DOMImpl.$f_eventSystemIsInitialized__org_gwtproject_user_client_impl_DOMImpl = false;
 
 exports = DOMImpl; 

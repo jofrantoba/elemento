@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasWidgets.impl.java.js",
-"lineCount":45,
-"mappings":"A;;;;;;;;;;;;MAuBiB,U;;;;;;CAkBV,2C,CAAWA,C;;;;;CAKX,S;;;;;;;CAMY,Y;;;;;;;CAQT,8C,CAAcA,C;;;;QArCP,O;EAAAC,6B;EAAAA,0B;EAAAA;",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;MAuBiB,U;;CAkBV,2C,eAAWA,C;;CAKX,S;;CAMY,Y;;CAQT,8C,eAAcA,C;;QArCP,O;EAAAC,6B;EAAAA,0B;EAAAA;",
 "sources":["HasWidgets.java"],
 "names":["w","org.gwtproject.user.client.ui.HasWidgets.<clinit>"]
 }

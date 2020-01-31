@@ -10,50 +10,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.event.logical.shared.Hi
  * @template V
  */
 class HighlightHandler {
- /**
-  * @abstract
-  * @param {HighlightEvent<V>} event
-  * @public
-  */
- m_onHighlight__org_gwtproject_event_logical_shared_HighlightEvent(event) {}
- /**
-  * @template V
-  * @param {?function(HighlightEvent<V>):void} fn
-  * @return {HighlightHandler<V>}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onHighlight__org_gwtproject_event_logical_shared_HighlightEvent(/** HighlightEvent<V> */ event) {}
+ /** @template V @return {HighlightHandler<V>} */
+ static $adapt(/** ?function(HighlightEvent<V>):void */ fn) {
   HighlightHandler.$clinit();
-  return /**@type {!$LambdaAdaptor<V>} */ (new $LambdaAdaptor(fn));
+  return /**@type {!$LambdaAdaptor<V>}*/ (new $LambdaAdaptor(fn));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HighlightHandler.$clinit = () =>{};
   HighlightHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_logical_shared_HighlightHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_event_logical_shared_HighlightHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_logical_shared_HighlightHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.event.logical.shared.HighlightHandler.$LambdaAdaptor$impl');
  }

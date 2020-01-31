@@ -8,35 +8,22 @@ const LandmarkRole = goog.require('org.gwtproject.aria.client.LandmarkRole$impl'
  * @extends {LandmarkRole}
  */
 class FormRole {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   FormRole.$clinit = () =>{};
   FormRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  LandmarkRole.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_FormRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  LandmarkRole.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_FormRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_FormRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DirectionEstimator.impl.java.js",
-"lineCount":56,
-"mappings":"A;;;;;;;;;;;;MAuBsB,kB;;;;CAAA,W;EAAAA,Q;;;;;CAAA,sD;EAAAC,iC;;;;;;;;CAQM,qC,CAAyBC,G;;;;;;;CAUlC,8C,CAAyBA,G,EAAaC,M;EACrDC,kK;;;;;;;CASe,4D,CAA2BC,I;EAC1CD,gL;;;;;QA7BkB,O;EAAAE,qC;EAAAA,kC;EAAAA;",
+"lineCount":36,
+"mappings":"A;;;;;;;;;;;;MAuBsB,kB;;CAAA,W;EAAAA,Q;;;CAAA,sD;EAAAC,iC;;;CAQM,qC,gBAAyBC,G;;CAUlC,8C,gBAAyBA,G,iBAAaC,M;EACrDC,kK;;;CASe,4D,iBAA2BC,I;EAC1CD,gL;;;QA7BkB,O;EAAAE,qC;EAAAA,kC;EAAAA;",
 "sources":["DirectionEstimator.java"],
 "names":["org.gwtproject.i18n.shared.DirectionEstimator.<synthetic: ctor_js>","org.gwtproject.i18n.shared.DirectionEstimator.<init>","str","isHtml","org.gwtproject.i18n.shared.DirectionEstimator.estimateDirection","html","org.gwtproject.i18n.shared.DirectionEstimator.<clinit>"]
 }

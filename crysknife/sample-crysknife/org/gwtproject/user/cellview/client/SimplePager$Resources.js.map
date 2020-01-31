@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SimplePager$Resources.impl.java.js",
-"lineCount":128,
-"mappings":"A;;;;;;;;;;;;;MAqEmB,S;;;;;;CAQD,0B;;;;;;CAMA,kC;;;;;;CAMA,wB;;;;;;CAMA,gC;;;;;;CAMA,uB;;;;;;CAMA,+B;;;;;;CAMA,uB;;;;;;CAMA,+B;;;;;;CAMA,2B;;;;;;CAMA,mC;;;;;;CAMR,oB;;;;;QAlEN,yE;EAAAA,+G;;;;;QAFe,O;EAAAC,4B;EAAAA,yB;EAEfA,0H;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFe;;",
+"lineCount":68,
+"mappings":"A;;;;;;;;;;;;;MAqEmB,S;;CAQD,0B;;CAMA,kC;;CAMA,wB;;CAMA,gC;;CAMA,uB;;CAMA,+B;;CAMA,uB;;CAMA,+B;;CAMA,2B;;CAMA,mC;;CAMR,oB;;QAlEN,yE;EAAAA,+G;;;QAFe,O;EAAAC,4B;EAAAA,yB;EAEfA,0H;;;;;;;;;;;;;;;;;;;;;;AAFe;;",
 "sources":["SimplePager.java"],
 "names":["org.gwtproject.user.cellview.client.SimplePager$Resources.<synthetic: getter>","org.gwtproject.user.cellview.client.SimplePager$Resources.<clinit>"]
 }

@@ -7,46 +7,25 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @template V
  */
 class TakesValue {
- /**
-  * @abstract
-  * @param {V} value
-  * @public
-  */
- m_setValue__java_lang_Object(value) {}
- /**
-  * @abstract
-  * @return {V}
-  * @public
-  */
+ /** @abstract */
+ m_setValue__java_lang_Object(/** V */ value) {}
+ /** @abstract @return {V} */
  m_getValue__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TakesValue.$clinit = () =>{};
   TakesValue.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_TakesValue = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_client_TakesValue = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_TakesValue;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"FormPanel$SubmitHandler$$LambdaAdaptor.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;MAkMmB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;oF;EAAAA,wJ;;;;;;CAAA,8I;EAAAC,iC;EAAAA,uF;;;;;;CAAA,+D;;GAAAC,kG;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MAkMmB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;oF;EAAAA,wJ;;;CAAA,8I;EAAAC,iC;EAAAA,uF;;;CAAA,+D;;GAAAC,kG;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["FormPanel.java"],
 "names":["org.gwtproject.user.client.ui.FormPanel$SubmitHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.client.ui.FormPanel$SubmitHandler$$LambdaAdaptor.<init>","org.gwtproject.user.client.ui.FormPanel$SubmitHandler$$LambdaAdaptor.onSubmit","org.gwtproject.user.client.ui.FormPanel$SubmitHandler$$LambdaAdaptor.<clinit>"]
 }

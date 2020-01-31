@@ -470,32 +470,22 @@ let DateTimeFormatInfo = goog.forwardDeclare('org.gwtproject.i18n.shared.DateTim
 let DefaultDateTimeFormatInfo = goog.forwardDeclare('org.gwtproject.i18n.shared.DefaultDateTimeFormatInfo$impl');
 
 class DateTimeFormatInfo__factory extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!DateTimeFormatInfo__factory}
-  * @public
-  */
+ /** @return {!DateTimeFormatInfo__factory} */
  static $create__() {
   DateTimeFormatInfo__factory.$clinit();
   let $instance = new DateTimeFormatInfo__factory();
   $instance.$ctor__org_gwtproject_i18n_client_impl_cldr_DateTimeFormatInfo_factory__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_i18n_client_impl_cldr_DateTimeFormatInfo_factory__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {DateTimeFormatInfo}
-  * @public
-  */
+ /** @return {DateTimeFormatInfo} */
  static m_create__() {
   DateTimeFormatInfo__factory.$clinit();
   if (j_l_String.m_startsWith__java_lang_String__java_lang_String($Util.$getDefine("locale"), "zu")) {
@@ -1886,25 +1876,17 @@ class DateTimeFormatInfo__factory extends j_l_Object {
   }
   return DefaultDateTimeFormatInfo.$create__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DateTimeFormatInfo__factory.$clinit = () =>{};
   DateTimeFormatInfo__factory.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DateTimeFormatInfo__factory;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   DateTimeFormatInfoImpl__af = goog.module.get('org.gwtproject.i18n.client.impl.cldr.DateTimeFormatInfoImpl_af$impl');

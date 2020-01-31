@@ -9,42 +9,27 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Overlay = goog.forwardDeclare('jsinterop.base.JsPropertyMap.$Overlay$impl');
 
 class RTCRtpTransceiverInit_$Overlay {
- /**
-  * @return {RTCRtpTransceiverInit}
-  * @public
-  */
+ /** @return {RTCRtpTransceiverInit} */
  static m_create__() {
   RTCRtpTransceiverInit_$Overlay.$clinit();
-  return /**@type {RTCRtpTransceiverInit} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
+  return /**@type {RTCRtpTransceiverInit}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
  }
- /**
-  * @param {!RTCRtpTransceiverInit} $thisArg
-  * @param {Array<RTCRtpEncodingParameters>} sendEncodings
-  * @public
-  */
- static m_setSendEncodings__$devirt__elemental2_dom_RTCRtpTransceiverInit__arrayOf_elemental2_dom_RTCRtpEncodingParameters($thisArg, sendEncodings) {
+ 
+ static m_setSendEncodings__$devirt__elemental2_dom_RTCRtpTransceiverInit__arrayOf_elemental2_dom_RTCRtpEncodingParameters(/** !RTCRtpTransceiverInit */ $thisArg, /** Array<RTCRtpEncodingParameters> */ sendEncodings) {
   RTCRtpTransceiverInit_$Overlay.$clinit();
-  $thisArg.sendEncodings = /**@type {Array<RTCRtpEncodingParameters>} */ (Js.m_uncheckedCast__java_lang_Object(sendEncodings));
+  $thisArg.sendEncodings = /**@type {Array<RTCRtpEncodingParameters>}*/ (Js.m_uncheckedCast__java_lang_Object(sendEncodings));
  }
- /**
-  * @param {!RTCRtpTransceiverInit} $thisArg
-  * @param {Array<MediaStream>} streams
-  * @public
-  */
- static m_setStreams__$devirt__elemental2_dom_RTCRtpTransceiverInit__arrayOf_elemental2_dom_MediaStream($thisArg, streams) {
+ 
+ static m_setStreams__$devirt__elemental2_dom_RTCRtpTransceiverInit__arrayOf_elemental2_dom_MediaStream(/** !RTCRtpTransceiverInit */ $thisArg, /** Array<MediaStream> */ streams) {
   RTCRtpTransceiverInit_$Overlay.$clinit();
-  $thisArg.streams = /**@type {Array<MediaStream>} */ (Js.m_uncheckedCast__java_lang_Object(streams));
+  $thisArg.streams = /**@type {Array<MediaStream>}*/ (Js.m_uncheckedCast__java_lang_Object(streams));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RTCRtpTransceiverInit_$Overlay.$clinit = () =>{};
   RTCRtpTransceiverInit_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');

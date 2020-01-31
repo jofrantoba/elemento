@@ -10,50 +10,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.editor.client.IsEditor.
  * @template E
  */
 class IsEditor {
- /**
-  * @abstract
-  * @return {E}
-  * @public
-  */
+ /** @abstract @return {E} */
  m_asEditor__() {}
- /**
-  * @template E
-  * @param {?function():E} fn
-  * @return {IsEditor<E>}
-  * @public
-  */
- static $adapt(fn) {
+ /** @template E @return {IsEditor<E>} */
+ static $adapt(/** ?function():E */ fn) {
   IsEditor.$clinit();
-  return /**@type {!$LambdaAdaptor<E>} */ (new $LambdaAdaptor(fn));
+  return /**@type {!$LambdaAdaptor<E>}*/ (new $LambdaAdaptor(fn));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   IsEditor.$clinit = () =>{};
   IsEditor.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_editor_client_IsEditor = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_editor_client_IsEditor = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_editor_client_IsEditor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.editor.client.IsEditor.$LambdaAdaptor$impl');
  }

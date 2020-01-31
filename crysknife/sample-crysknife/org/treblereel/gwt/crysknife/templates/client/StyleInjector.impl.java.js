@@ -10,67 +10,44 @@ let FromString = goog.forwardDeclare('org.treblereel.gwt.crysknife.templates.cli
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class StyleInjector extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!StyleInjector}
-  * @public
-  */
+ /** @return {!StyleInjector} */
  static $create__() {
   let $instance = new StyleInjector();
   $instance.$ctor__org_treblereel_gwt_crysknife_templates_client_StyleInjector__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_treblereel_gwt_crysknife_templates_client_StyleInjector__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {?string} styleBody
-  * @return {FromString}
-  * @public
-  */
- static m_fromString__java_lang_String(styleBody) {
+ /** @return {FromString} */
+ static m_fromString__java_lang_String(/** ?string */ styleBody) {
   StyleInjector.$clinit();
   return FromString.$create__java_lang_String(styleBody);
  }
- /**
-  * @param {?string} contents
-  * @return {HTMLStyleElement}
-  * @public
-  */
- static m_createElement__java_lang_String(contents) {
+ /** @return {HTMLStyleElement} */
+ static m_createElement__java_lang_String(/** ?string */ contents) {
   StyleInjector.$clinit();
-  let style = /**@type {HTMLStyleElement} */ ($Casts.$to($Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("style"), HTMLStyleElement_$Overlay));
+  let style = /**@type {HTMLStyleElement}*/ ($Casts.$to($Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("style"), HTMLStyleElement_$Overlay));
   Element_$Overlay.m_setAttribute__$devirt__elemental2_dom_Element__java_lang_String__java_lang_String(style, "language", "text/css");
   style.innerHTML = contents;
   return style;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   StyleInjector.$clinit = () =>{};
   StyleInjector.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof StyleInjector;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('elemental2.dom.DomGlobal.$Overlay$impl');
   Element_$Overlay = goog.module.get('elemental2.dom.Element.$Overlay$impl');

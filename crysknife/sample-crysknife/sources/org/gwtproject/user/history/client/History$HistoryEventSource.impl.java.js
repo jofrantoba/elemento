@@ -14,80 +14,51 @@ let SimpleEventBus = goog.forwardDeclare('org.gwtproject.event.shared.SimpleEven
  * @implements {HasValueChangeHandlers<?string>}
   */
 class HistoryEventSource extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {SimpleEventBus} */
+  /**@type {SimpleEventBus}*/
   this.f_handlers__org_gwtproject_user_history_client_History_HistoryEventSource_;
  }
- /**
-  * @return {!HistoryEventSource}
-  * @public
-  */
+ /** @return {!HistoryEventSource} */
  static $create__() {
   HistoryEventSource.$clinit();
   let $instance = new HistoryEventSource();
   $instance.$ctor__org_gwtproject_user_history_client_History_HistoryEventSource__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_history_client_History_HistoryEventSource__() {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_user_history_client_History_HistoryEventSource();
  }
- /**
-  * @override
-  * @param {Event<?>} event
-  * @public
-  */
- m_fireEvent__org_gwtproject_event_shared_Event(event) {
+ /** @override */
+ m_fireEvent__org_gwtproject_event_shared_Event(/** Event<?> */ event) {
   this.f_handlers__org_gwtproject_user_history_client_History_HistoryEventSource_.m_fireEvent__org_gwtproject_event_shared_Event(event);
  }
- /**
-  * @override
-  * @param {ValueChangeHandler<?string>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler(/** ValueChangeHandler<?string> */ handler) {
   return this.f_handlers__org_gwtproject_user_history_client_History_HistoryEventSource_.m_addHandler__org_gwtproject_event_shared_Event_Type__java_lang_Object(ValueChangeEvent.m_getType__(), handler);
  }
- /**
-  * @param {?string} newToken
-  * @public
-  */
- m_fireValueChangedEvent__java_lang_String(newToken) {
+ 
+ m_fireValueChangedEvent__java_lang_String(/** ?string */ newToken) {
   ValueChangeEvent.m_fire__org_gwtproject_event_logical_shared_HasValueChangeHandlers__java_lang_Object(this, newToken);
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_history_client_History_HistoryEventSource() {
   this.f_handlers__org_gwtproject_user_history_client_History_HistoryEventSource_ = SimpleEventBus.$create__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HistoryEventSource.$clinit = () =>{};
   HistoryEventSource.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HistoryEventSource;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   ValueChangeEvent = goog.module.get('org.gwtproject.event.logical.shared.ValueChangeEvent$impl');
   SimpleEventBus = goog.module.get('org.gwtproject.event.shared.SimpleEventBus$impl');

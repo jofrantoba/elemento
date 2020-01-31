@@ -11,46 +11,26 @@ let Set = goog.forwardDeclare('java.util.Set$impl');
  * @extends {SelectionModel<T>}
  */
 class SetSelectionModel {
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_clear__() {}
- /**
-  * @abstract
-  * @return {Set<T>}
-  * @public
-  */
+ /** @abstract @return {Set<T>} */
  m_getSelectedSet__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SetSelectionModel.$clinit = () =>{};
   SetSelectionModel.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  SelectionModel.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_view_client_SetSelectionModel = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  SelectionModel.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_view_client_SetSelectionModel = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_view_client_SetSelectionModel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

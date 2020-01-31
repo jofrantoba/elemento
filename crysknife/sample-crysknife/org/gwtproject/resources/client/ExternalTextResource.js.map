@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ExternalTextResource.impl.java.js",
-"lineCount":25,
-"mappings":"A;;;;;;;;;;;;MA0CiB,oB;;;;;;CAYV,2D,CAAuCA,Q;;;;QAZ7B,O;EAAAC,uC;EAAAA;",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;;;MA0CiB,oB;;CAYV,2D,uCAAuCA,Q;;QAZ7B,O;EAAAC,uC;EAAAA;",
 "sources":["ExternalTextResource.java"],
 "names":["callback","org.gwtproject.resources.client.ExternalTextResource.<clinit>"]
 }

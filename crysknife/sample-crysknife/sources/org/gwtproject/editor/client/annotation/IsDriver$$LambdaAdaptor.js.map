@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"IsDriver$$LambdaAdaptor.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;;;;MA2BkB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;+E;EAAAA,8I;;;;;;CAAA,oI;EAAAC,iC;EAAAA,kF;;;;;;CAAA,kB;EAAAC,0C;EAAAA,+G;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;;MA2BkB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;+E;EAAAA,8I;;;CAAA,oI;EAAAC,iC;EAAAA,kF;;;CAAA,kB;EAAAC,0C;EAAAA,+G;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["IsDriver.java"],
 "names":["org.gwtproject.editor.client.annotation.IsDriver$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.editor.client.annotation.IsDriver$$LambdaAdaptor.<init>","org.gwtproject.editor.client.annotation.IsDriver$$LambdaAdaptor.annotationType","org.gwtproject.editor.client.annotation.IsDriver$$LambdaAdaptor.<clinit>"]
 }

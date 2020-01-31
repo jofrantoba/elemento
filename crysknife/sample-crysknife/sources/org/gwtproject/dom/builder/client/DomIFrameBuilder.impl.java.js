@@ -18,154 +18,84 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {IFrameBuilder}
   */
 class DomIFrameBuilder extends DomElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @return {!DomIFrameBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ /** @return {!DomIFrameBuilder} */
+ static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   DomIFrameBuilder.$clinit();
   let $instance = new DomIFrameBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_client_DomIFrameBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_client_DomIFrameBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_client_DomIFrameBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_client_DomElementBuilderBase__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
  }
- /**
-  * @override
-  * @param {number} frameBorder
-  * @return {IFrameBuilder}
-  * @public
-  */
- m_frameBorder__int(frameBorder) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).frameBorder = frameBorder;
+ /** @override @return {IFrameBuilder} */
+ m_frameBorder__int(/** number */ frameBorder) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).frameBorder = frameBorder;
   return this;
  }
- /**
-  * @override
-  * @param {SafeHtml} html
-  * @return {HtmlIFrameBuilder}
-  * @public
-  */
- m_html__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ /** @override @return {HtmlIFrameBuilder} */
+ m_html__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__());
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isChildElementSupported__() {
   return false;
  }
- /**
-  * @override
-  * @param {number} marginHeight
-  * @return {IFrameBuilder}
-  * @public
-  */
- m_marginHeight__int(marginHeight) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).marginHeight = marginHeight;
+ /** @override @return {IFrameBuilder} */
+ m_marginHeight__int(/** number */ marginHeight) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).marginHeight = marginHeight;
   return this;
  }
- /**
-  * @override
-  * @param {number} marginWidth
-  * @return {IFrameBuilder}
-  * @public
-  */
- m_marginWidth__int(marginWidth) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).marginWidth = marginWidth;
+ /** @override @return {IFrameBuilder} */
+ m_marginWidth__int(/** number */ marginWidth) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).marginWidth = marginWidth;
   return this;
  }
- /**
-  * @override
-  * @param {?string} name
-  * @return {IFrameBuilder}
-  * @public
-  */
- m_name__java_lang_String(name) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).name = name;
+ /** @override @return {IFrameBuilder} */
+ m_name__java_lang_String(/** ?string */ name) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).name = name;
   return this;
  }
- /**
-  * @override
-  * @return {IFrameBuilder}
-  * @public
-  */
+ /** @override @return {IFrameBuilder} */
  m_noResize__() {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).noResize = true;
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).noResize = true;
   return this;
  }
- /**
-  * @override
-  * @param {?string} scrolling
-  * @return {IFrameBuilder}
-  * @public
-  */
- m_scrolling__java_lang_String(scrolling) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).scrolling = scrolling;
+ /** @override @return {IFrameBuilder} */
+ m_scrolling__java_lang_String(/** ?string */ scrolling) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).scrolling = scrolling;
   return this;
  }
- /**
-  * @override
-  * @param {SafeUri} src
-  * @return {IFrameBuilder}
-  * @public
-  */
- m_src__org_gwtproject_safehtml_shared_SafeUri(src) {
-  $Overlay.m_setSrc__$devirt__org_gwtproject_dom_client_IFrameElement__org_gwtproject_safehtml_shared_SafeUri(/**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)), src);
+ /** @override @return {IFrameBuilder} */
+ m_src__org_gwtproject_safehtml_shared_SafeUri(/** SafeUri */ src) {
+  $Overlay.m_setSrc__$devirt__org_gwtproject_dom_client_IFrameElement__org_gwtproject_safehtml_shared_SafeUri(/**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)), src);
   return this;
  }
- /**
-  * @override
-  * @param {?string} src
-  * @return {IFrameBuilder}
-  * @public
-  */
- m_src__java_lang_String(src) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).src = src;
+ /** @override @return {IFrameBuilder} */
+ m_src__java_lang_String(/** ?string */ src) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).src = src;
   return this;
  }
- /**
-  * @override
-  * @param {?string} text
-  * @return {HtmlIFrameBuilder}
-  * @public
-  */
- m_text__java_lang_String(text) {
+ /** @override @return {HtmlIFrameBuilder} */
+ m_text__java_lang_String(/** ?string */ text) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomIFrameBuilder.$clinit = () =>{};
   DomIFrameBuilder.$loadModules();
   DomElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomIFrameBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   UnsupportedOperationException = goog.module.get('java.lang.UnsupportedOperationException$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.IFrameElement.$Overlay$impl');

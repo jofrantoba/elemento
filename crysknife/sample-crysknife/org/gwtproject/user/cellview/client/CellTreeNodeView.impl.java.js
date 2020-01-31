@@ -41,79 +41,62 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @template T
   */
 class CellTreeNodeView extends UIObject {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {NodeCellList<?>} */
+  /**@type {NodeCellList<?>}*/
   this.f_listView__org_gwtproject_user_cellview_client_CellTreeNodeView;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_animate__org_gwtproject_user_cellview_client_CellTreeNodeView_ = false;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_animationFrame__org_gwtproject_user_cellview_client_CellTreeNodeView_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_childContainer__org_gwtproject_user_cellview_client_CellTreeNodeView_;
-  /** @public {List<CellTreeNodeView<?>>} */
+  /**@type {List<CellTreeNodeView<?>>}*/
   this.f_children__org_gwtproject_user_cellview_client_CellTreeNodeView_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_contentContainer__org_gwtproject_user_cellview_client_CellTreeNodeView_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_depth__org_gwtproject_user_cellview_client_CellTreeNodeView_ = 0;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_emptyMessageElem__org_gwtproject_user_cellview_client_CellTreeNodeView_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isDestroyed__org_gwtproject_user_cellview_client_CellTreeNodeView_ = false;
-  /** @public {CellTreeMessages} */
+  /**@type {CellTreeMessages}*/
   this.f_messages__org_gwtproject_user_cellview_client_CellTreeNodeView_;
-  /** @public {NodeInfo<?>} */
+  /**@type {NodeInfo<?>}*/
   this.f_nodeInfo__org_gwtproject_user_cellview_client_CellTreeNodeView_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_nodeInfoLoaded__org_gwtproject_user_cellview_client_CellTreeNodeView_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_open__org_gwtproject_user_cellview_client_CellTreeNodeView_ = false;
-  /** @public {CellTreeNodeView<?>} */
+  /**@type {CellTreeNodeView<?>}*/
   this.f_parentNode__org_gwtproject_user_cellview_client_CellTreeNodeView_;
-  /** @public {NodeInfo<T>} */
+  /**@type {NodeInfo<T>}*/
   this.f_parentNodeInfo__org_gwtproject_user_cellview_client_CellTreeNodeView_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_showMoreElem__org_gwtproject_user_cellview_client_CellTreeNodeView_;
-  /** @public {CellTree} */
+  /**@type {CellTree}*/
   this.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_;
-  /** @public {TreeNodeImpl} */
+  /**@type {TreeNodeImpl}*/
   this.f_treeNode__org_gwtproject_user_cellview_client_CellTreeNodeView_;
-  /** @public {T} */
+  /**@type {T}*/
   this.f_value__org_gwtproject_user_cellview_client_CellTreeNodeView_;
  }
- /**
-  * @param {Object} nodeElem
-  * @return {Object}
-  * @public
-  */
- static m_getCellParent__org_gwtproject_dom_client_Element(nodeElem) {
-  return /**@type {Object} */ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Node_$Overlay.m_getChild__$devirt__org_gwtproject_dom_client_Node__int(Element_$Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(CellTreeNodeView.m_getSelectionElement__org_gwtproject_dom_client_Element(nodeElem)), 1)), Element_$Overlay));
+ /** @return {Object} */
+ static m_getCellParent__org_gwtproject_dom_client_Element(/** Object */ nodeElem) {
+  return /**@type {Object}*/ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Node_$Overlay.m_getChild__$devirt__org_gwtproject_dom_client_Node__int(Element_$Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(CellTreeNodeView.m_getSelectionElement__org_gwtproject_dom_client_Element(nodeElem)), 1)), Element_$Overlay));
  }
- /**
-  * @param {Object} nodeElem
-  * @return {Object}
-  * @public
-  */
- static m_getImageElement__org_gwtproject_dom_client_Element(nodeElem) {
+ /** @return {Object} */
+ static m_getImageElement__org_gwtproject_dom_client_Element(/** Object */ nodeElem) {
   return Element_$Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(Element_$Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(CellTreeNodeView.m_getSelectionElement__org_gwtproject_dom_client_Element(nodeElem)));
  }
- /**
-  * @param {Object} nodeElem
-  * @return {Object}
-  * @public
-  */
- static m_getSelectionElement__org_gwtproject_dom_client_Element(nodeElem) {
+ /** @return {Object} */
+ static m_getSelectionElement__org_gwtproject_dom_client_Element(/** Object */ nodeElem) {
   CellTreeNodeView.$clinit();
   return Element_$Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(nodeElem);
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  static m_getTmpElem__() {
   CellTreeNodeView.$clinit();
   if ($Equality.$same(CellTreeNodeView.f_tmpElem__org_gwtproject_user_cellview_client_CellTreeNodeView_, null)) {
@@ -121,12 +104,8 @@ class CellTreeNodeView extends UIObject {
   }
   return CellTreeNodeView.f_tmpElem__org_gwtproject_user_cellview_client_CellTreeNodeView_;
  }
- /**
-  * @param {Object} element
-  * @param {boolean} show
-  * @public
-  */
- static m_showOrHide__org_gwtproject_dom_client_Element__boolean(element, show) {
+ 
+ static m_showOrHide__org_gwtproject_dom_client_Element__boolean(/** Object */ element, /** boolean */ show) {
   CellTreeNodeView.$clinit();
   if (show) {
    Style_$Overlay.m_clearDisplay__$devirt__org_gwtproject_dom_client_Style(element.style);
@@ -134,33 +113,15 @@ class CellTreeNodeView extends UIObject {
    Style_$Overlay.m_setDisplay__$devirt__org_gwtproject_dom_client_Style__org_gwtproject_dom_style_shared_Display(element.style, Display.f_NONE__org_gwtproject_dom_style_shared_Display);
   }
  }
- /**
-  * @template T
-  * @param {CellTree} tree
-  * @param {CellTreeNodeView<?>} parent
-  * @param {NodeInfo<T>} parentNodeInfo
-  * @param {Object} elem
-  * @param {T} value
-  * @param {CellTreeMessages} messages
-  * @return {!CellTreeNodeView<T>}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_CellTree__org_gwtproject_user_cellview_client_CellTreeNodeView__org_gwtproject_view_client_TreeViewModel_NodeInfo__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_user_cellview_client_CellTree_CellTreeMessages(tree, parent, parentNodeInfo, elem, value, messages) {
+ /** @template T @return {!CellTreeNodeView<T>} */
+ static $create__org_gwtproject_user_cellview_client_CellTree__org_gwtproject_user_cellview_client_CellTreeNodeView__org_gwtproject_view_client_TreeViewModel_NodeInfo__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_user_cellview_client_CellTree_CellTreeMessages(/** CellTree */ tree, /** CellTreeNodeView<?> */ parent, /** NodeInfo<T> */ parentNodeInfo, /** Object */ elem, /** T */ value, /** CellTreeMessages */ messages) {
   CellTreeNodeView.$clinit();
   let $instance = new CellTreeNodeView();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellTreeNodeView__org_gwtproject_user_cellview_client_CellTree__org_gwtproject_user_cellview_client_CellTreeNodeView__org_gwtproject_view_client_TreeViewModel_NodeInfo__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_user_cellview_client_CellTree_CellTreeMessages(tree, parent, parentNodeInfo, elem, value, messages);
   return $instance;
  }
- /**
-  * @param {CellTree} tree
-  * @param {CellTreeNodeView<?>} parent
-  * @param {NodeInfo<T>} parentNodeInfo
-  * @param {Object} elem
-  * @param {T} value
-  * @param {CellTreeMessages} messages
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_CellTreeNodeView__org_gwtproject_user_cellview_client_CellTree__org_gwtproject_user_cellview_client_CellTreeNodeView__org_gwtproject_view_client_TreeViewModel_NodeInfo__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_user_cellview_client_CellTree_CellTreeMessages(tree, parent, parentNodeInfo, elem, value, messages) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_CellTreeNodeView__org_gwtproject_user_cellview_client_CellTree__org_gwtproject_user_cellview_client_CellTreeNodeView__org_gwtproject_view_client_TreeViewModel_NodeInfo__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_user_cellview_client_CellTree_CellTreeMessages(/** CellTree */ tree, /** CellTreeNodeView<?> */ parent, /** NodeInfo<T> */ parentNodeInfo, /** Object */ elem, /** T */ value, /** CellTreeMessages */ messages) {
   this.$ctor__org_gwtproject_user_client_ui_UIObject__();
   this.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_ = tree;
   this.f_parentNode__org_gwtproject_user_cellview_client_CellTreeNodeView_ = parent;
@@ -171,42 +132,24 @@ class CellTreeNodeView extends UIObject {
   this.m_setElement__org_gwtproject_dom_client_Element(elem);
   Roles.m_getTreeitemRole__().m_set__org_gwtproject_dom_client_Element(this.m_getElement__());
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getChildCount__() {
   return $Equality.$same(this.f_children__org_gwtproject_user_cellview_client_CellTreeNodeView_, null) ? 0 : this.f_children__org_gwtproject_user_cellview_client_CellTreeNodeView_.size();
  }
- /**
-  * @param {number} childIndex
-  * @return {CellTreeNodeView<?>}
-  * @public
-  */
- m_getChildNode__int(childIndex) {
-  return /**@type {CellTreeNodeView<*>} */ ($Casts.$to(this.f_children__org_gwtproject_user_cellview_client_CellTreeNodeView_.getAtIndex(childIndex), CellTreeNodeView));
+ /** @return {CellTreeNodeView<?>} */
+ m_getChildNode__int(/** number */ childIndex) {
+  return /**@type {CellTreeNodeView<*>}*/ ($Casts.$to(this.f_children__org_gwtproject_user_cellview_client_CellTreeNodeView_.getAtIndex(childIndex), CellTreeNodeView));
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isLeaf__() {
   return this.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_isLeaf__java_lang_Object(this.f_value__org_gwtproject_user_cellview_client_CellTreeNodeView_);
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isOpen__() {
   return this.f_open__org_gwtproject_user_cellview_client_CellTreeNodeView_;
  }
- /**
-  * @param {boolean} open
-  * @param {boolean} fireEvents
-  * @return {boolean}
-  * @public
-  */
- m_setOpen__boolean__boolean(open, fireEvents) {
+ /** @return {boolean} */
+ m_setOpen__boolean__boolean(/** boolean */ open, /** boolean */ fireEvents) {
   if (this.f_open__org_gwtproject_user_cellview_client_CellTreeNodeView_ == open) {
    return this.f_open__org_gwtproject_user_cellview_client_CellTreeNodeView_;
   }
@@ -221,7 +164,7 @@ class CellTreeNodeView extends UIObject {
     this.f_nodeInfoLoaded__org_gwtproject_user_cellview_client_CellTreeNodeView_ = true;
     this.f_nodeInfo__org_gwtproject_user_cellview_client_CellTreeNodeView_ = this.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_getNodeInfo__java_lang_Object(this.f_value__org_gwtproject_user_cellview_client_CellTreeNodeView_);
     if (!$Equality.$same(this.f_nodeInfo__org_gwtproject_user_cellview_client_CellTreeNodeView_, null)) {
-     let eventsToSink = /**@type {!HashSet<?string>} */ (HashSet.$create__());
+     let eventsToSink = /**@type {!HashSet<?string>}*/ (HashSet.$create__());
      eventsToSink.add(BrowserEvents.f_FOCUS__org_gwtproject_dom_client_BrowserEvents);
      eventsToSink.add(BrowserEvents.f_BLUR__org_gwtproject_dom_client_BrowserEvents);
      let consumedEvents = this.f_nodeInfo__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_getCell__().m_getConsumedEvents__();
@@ -267,11 +210,8 @@ class CellTreeNodeView extends UIObject {
   }
   return this.f_open__org_gwtproject_user_cellview_client_CellTreeNodeView_;
  }
- /**
-  * @param {boolean} destroy
-  * @public
-  */
- m_cleanup__boolean(destroy) {
+ 
+ m_cleanup__boolean(/** boolean */ destroy) {
   if (!$Equality.$same(this.f_listView__org_gwtproject_user_cellview_client_CellTreeNodeView, null)) {
    this.f_listView__org_gwtproject_user_cellview_client_CellTreeNodeView.m_cleanup__();
    this.f_nodeInfo__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_unsetDataDisplay__();
@@ -279,7 +219,7 @@ class CellTreeNodeView extends UIObject {
   }
   if (!$Equality.$same(this.f_children__org_gwtproject_user_cellview_client_CellTreeNodeView_, null)) {
    for (let $iterator = this.f_children__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_iterator__(); $iterator.m_hasNext__(); ) {
-    let child = /**@type {CellTreeNodeView<*>} */ ($Casts.$to($iterator.m_next__(), CellTreeNodeView));
+    let child = /**@type {CellTreeNodeView<*>}*/ ($Casts.$to($iterator.m_next__(), CellTreeNodeView));
     child.m_cleanup__boolean(true);
    }
    this.f_children__org_gwtproject_user_cellview_client_CellTreeNodeView_ = null;
@@ -291,32 +231,18 @@ class CellTreeNodeView extends UIObject {
    }
   }
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_consumeAnimate__() {
   let hasAnimate = this.f_animate__org_gwtproject_user_cellview_client_CellTreeNodeView_;
   this.f_animate__org_gwtproject_user_cellview_client_CellTreeNodeView_ = false;
   return hasAnimate;
  }
- /**
-  * @template C
-  * @param {NodeInfo<C>} nodeInfo
-  * @param {Object} childElem
-  * @param {C} childValue
-  * @param {*} viewData
-  * @return {CellTreeNodeView<C>}
-  * @public
-  */
- m_createTreeNodeView__org_gwtproject_view_client_TreeViewModel_NodeInfo__org_gwtproject_dom_client_Element__java_lang_Object__java_lang_Object(nodeInfo, childElem, childValue, viewData) {
-  return /**@type {!CellTreeNodeView<C>} */ (CellTreeNodeView.$create__org_gwtproject_user_cellview_client_CellTree__org_gwtproject_user_cellview_client_CellTreeNodeView__org_gwtproject_view_client_TreeViewModel_NodeInfo__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_user_cellview_client_CellTree_CellTreeMessages(this.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_, this, nodeInfo, childElem, childValue, this.f_messages__org_gwtproject_user_cellview_client_CellTreeNodeView_));
+ /** @template C @return {CellTreeNodeView<C>} */
+ m_createTreeNodeView__org_gwtproject_view_client_TreeViewModel_NodeInfo__org_gwtproject_dom_client_Element__java_lang_Object__java_lang_Object(/** NodeInfo<C> */ nodeInfo, /** Object */ childElem, /** C */ childValue, /** * */ viewData) {
+  return /**@type {!CellTreeNodeView<C>}*/ (CellTreeNodeView.$create__org_gwtproject_user_cellview_client_CellTree__org_gwtproject_user_cellview_client_CellTreeNodeView__org_gwtproject_view_client_TreeViewModel_NodeInfo__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_user_cellview_client_CellTree_CellTreeMessages(this.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_, this, nodeInfo, childElem, childValue, this.f_messages__org_gwtproject_user_cellview_client_CellTreeNodeView_));
  }
- /**
-  * @param {Object} event
-  * @public
-  */
- m_fireEventToCell__org_gwtproject_dom_client_NativeEvent(event) {
+ 
+ m_fireEventToCell__org_gwtproject_dom_client_NativeEvent(/** Object */ event) {
   if ($Equality.$same(this.f_parentNodeInfo__org_gwtproject_user_cellview_client_CellTreeNodeView_, null)) {
    return;
   }
@@ -327,8 +253,8 @@ class CellTreeNodeView extends UIObject {
   let context = Context.$create__int__int__java_lang_Object(this.m_getIndex___$pp_org_gwtproject_user_cellview_client(), 0, key);
   let cellWasEditing = parentCell.m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(context, cellParent, this.f_value__org_gwtproject_user_cellview_client_CellTreeNodeView_);
   let isSelectionHandled = parentCell.m_handlesSelection__() || $Equality.$same(KeyboardSelectionPolicy.f_BOUND_TO_SELECTION__org_gwtproject_user_cellview_client_HasKeyboardSelectionPolicy_KeyboardSelectionPolicy, this.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_getKeyboardSelectionPolicy__());
-  let display = /**@type {HasData<T>} */ (this.f_parentNode__org_gwtproject_user_cellview_client_CellTreeNodeView_.f_listView__org_gwtproject_user_cellview_client_CellTreeNodeView);
-  let previewEvent = /**@type {CellPreviewEvent<T>} */ (CellPreviewEvent.m_fire__org_gwtproject_view_client_HasCellPreviewHandlers__org_gwtproject_dom_client_NativeEvent__org_gwtproject_view_client_HasData__org_gwtproject_cell_client_Cell_Context__java_lang_Object__boolean__boolean(display, event, display, context, this.f_value__org_gwtproject_user_cellview_client_CellTreeNodeView_, cellWasEditing, isSelectionHandled));
+  let display = /**@type {HasData<T>}*/ (this.f_parentNode__org_gwtproject_user_cellview_client_CellTreeNodeView_.f_listView__org_gwtproject_user_cellview_client_CellTreeNodeView);
+  let previewEvent = /**@type {CellPreviewEvent<T>}*/ (CellPreviewEvent.m_fire__org_gwtproject_view_client_HasCellPreviewHandlers__org_gwtproject_dom_client_NativeEvent__org_gwtproject_view_client_HasData__org_gwtproject_cell_client_Cell_Context__java_lang_Object__boolean__boolean(display, event, display, context, this.f_value__org_gwtproject_user_cellview_client_CellTreeNodeView_, cellWasEditing, isSelectionHandled));
   if (previewEvent.m_isCanceled__() || !Node_$Overlay.m_isOrHasChild__$devirt__org_gwtproject_dom_client_Node__org_gwtproject_dom_client_Node(cellParent, Element_$Overlay.m_as__org_gwtproject_core_client_JavaScriptObject(NativeEvent_$Overlay.m_getEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(event)))) {
    return;
   }
@@ -337,61 +263,38 @@ class CellTreeNodeView extends UIObject {
    parentCell.m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, cellParent, this.f_value__org_gwtproject_user_cellview_client_CellTreeNodeView_, event, this.f_parentNodeInfo__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_getValueUpdater__());
    this.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_.f_cellIsEditing__org_gwtproject_user_cellview_client_CellTree = parentCell.m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(context, cellParent, this.f_value__org_gwtproject_user_cellview_client_CellTreeNodeView_);
    if (cellWasEditing && !this.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_.f_cellIsEditing__org_gwtproject_user_cellview_client_CellTree) {
-    CellBasedWidgetImpl.m_get__().m_resetFocus__org_gwtproject_core_client_Scheduler_ScheduledCommand(/**@type {!$1<T>} */ ($1.$create__org_gwtproject_user_cellview_client_CellTreeNodeView(this)));
+    CellBasedWidgetImpl.m_get__().m_resetFocus__org_gwtproject_core_client_Scheduler_ScheduledCommand(/**@type {!$1<T>}*/ ($1.$create__org_gwtproject_user_cellview_client_CellTreeNodeView(this)));
    }
   }
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getCellParent__() {
   return CellTreeNodeView.m_getCellParent__org_gwtproject_dom_client_Element(this.m_getElement__());
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getImageElement__() {
   return CellTreeNodeView.m_getImageElement__org_gwtproject_dom_client_Element(this.m_getElement__());
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getSelectionElement__() {
   return CellTreeNodeView.m_getSelectionElement__org_gwtproject_dom_client_Element(this.m_getElement__());
  }
- /**
-  * @return {*}
-  * @public
-  */
+ /** @return {*} */
  m_getValueKey__() {
   return this.f_parentNodeInfo__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_getProvidesKey__().m_getKey__java_lang_Object(this.f_value__org_gwtproject_user_cellview_client_CellTreeNodeView_);
  }
- /**
-  * @template C
-  * @param {NodeInfo<C>} nodeInfo
-  * @public
-  */
- m_onOpen__org_gwtproject_view_client_TreeViewModel_NodeInfo(nodeInfo) {
-  let view = /**@type {!NodeCellList<C>} */ (NodeCellList.$create__org_gwtproject_view_client_TreeViewModel_NodeInfo__org_gwtproject_user_cellview_client_CellTreeNodeView__int(nodeInfo, this, this.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_getDefaultNodeSize__()));
+ /** @template C */
+ m_onOpen__org_gwtproject_view_client_TreeViewModel_NodeInfo(/** NodeInfo<C> */ nodeInfo) {
+  let view = /**@type {!NodeCellList<C>}*/ (NodeCellList.$create__org_gwtproject_view_client_TreeViewModel_NodeInfo__org_gwtproject_user_cellview_client_CellTreeNodeView__int(nodeInfo, this, this.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_getDefaultNodeSize__()));
   this.f_listView__org_gwtproject_user_cellview_client_CellTreeNodeView = view;
   view.m_setSelectionModel__org_gwtproject_view_client_SelectionModel(nodeInfo.m_getSelectionModel__());
   nodeInfo.m_setDataDisplay__org_gwtproject_view_client_HasData(view);
  }
- /**
-  * @param {CellTree} tree
-  * @return {boolean}
-  * @public
-  */
- m_belongsToTree__org_gwtproject_user_cellview_client_CellTree_$pp_org_gwtproject_user_cellview_client(tree) {
+ /** @return {boolean} */
+ m_belongsToTree__org_gwtproject_user_cellview_client_CellTree_$pp_org_gwtproject_user_cellview_client(/** CellTree */ tree) {
   return $Equality.$same(this.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_, tree);
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_ensureAnimationFrame___$pp_org_gwtproject_user_cellview_client() {
   if ($Equality.$same(this.f_animationFrame__org_gwtproject_user_cellview_client_CellTreeNodeView_, null)) {
    this.f_animationFrame__org_gwtproject_user_cellview_client_CellTreeNodeView_ = Document_$Overlay.m_createDivElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__());
@@ -401,10 +304,7 @@ class CellTreeNodeView extends UIObject {
   }
   return this.f_animationFrame__org_gwtproject_user_cellview_client_CellTreeNodeView_;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_ensureChildContainer___$pp_org_gwtproject_user_cellview_client() {
   if ($Equality.$same(this.f_childContainer__org_gwtproject_user_cellview_client_CellTreeNodeView_, null)) {
    this.f_childContainer__org_gwtproject_user_cellview_client_CellTreeNodeView_ = Document_$Overlay.m_createDivElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__());
@@ -412,10 +312,7 @@ class CellTreeNodeView extends UIObject {
   }
   return this.f_childContainer__org_gwtproject_user_cellview_client_CellTreeNodeView_;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_ensureContentContainer___$pp_org_gwtproject_user_cellview_client() {
   if ($Equality.$same(this.f_contentContainer__org_gwtproject_user_cellview_client_CellTreeNodeView_, null)) {
    this.f_contentContainer__org_gwtproject_user_cellview_client_CellTreeNodeView_ = Document_$Overlay.m_createDivElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__());
@@ -434,63 +331,38 @@ class CellTreeNodeView extends UIObject {
   }
   return this.f_contentContainer__org_gwtproject_user_cellview_client_CellTreeNodeView_;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getIndex___$pp_org_gwtproject_user_cellview_client() {
   return $Equality.$same(this.f_parentNode__org_gwtproject_user_cellview_client_CellTreeNodeView_, null) ? 0 : this.f_parentNode__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_indexOf__org_gwtproject_user_cellview_client_CellTreeNodeView_$pp_org_gwtproject_user_cellview_client(this);
  }
- /**
-  * @return {CellTreeNodeView<?>}
-  * @public
-  */
+ /** @return {CellTreeNodeView<?>} */
  m_getParentNode___$pp_org_gwtproject_user_cellview_client() {
   return this.f_parentNode__org_gwtproject_user_cellview_client_CellTreeNodeView_;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getShowMoreElement___$pp_org_gwtproject_user_cellview_client() {
   return this.f_showMoreElem__org_gwtproject_user_cellview_client_CellTreeNodeView_;
  }
- /**
-  * @return {TreeNode}
-  * @public
-  */
+ /** @return {TreeNode} */
  m_getTreeNode___$pp_org_gwtproject_user_cellview_client() {
   if ($Equality.$same(this.f_treeNode__org_gwtproject_user_cellview_client_CellTreeNodeView_, null)) {
    this.f_treeNode__org_gwtproject_user_cellview_client_CellTreeNodeView_ = TreeNodeImpl.$create__org_gwtproject_user_cellview_client_CellTreeNodeView(this);
   }
   return this.f_treeNode__org_gwtproject_user_cellview_client_CellTreeNodeView_;
  }
- /**
-  * @param {CellTreeNodeView<?>} child
-  * @return {number}
-  * @public
-  */
- m_indexOf__org_gwtproject_user_cellview_client_CellTreeNodeView_$pp_org_gwtproject_user_cellview_client(child) {
+ /** @return {number} */
+ m_indexOf__org_gwtproject_user_cellview_client_CellTreeNodeView_$pp_org_gwtproject_user_cellview_client(/** CellTreeNodeView<?> */ child) {
   return this.f_children__org_gwtproject_user_cellview_client_CellTreeNodeView_.indexOf(child);
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isDestroyed___$pp_org_gwtproject_user_cellview_client() {
   return this.f_isDestroyed__org_gwtproject_user_cellview_client_CellTreeNodeView_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isRootNode___$pp_org_gwtproject_user_cellview_client() {
   return $Equality.$same(this.f_parentNode__org_gwtproject_user_cellview_client_CellTreeNodeView_, null);
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isSelected___$pp_org_gwtproject_user_cellview_client() {
   if (!$Equality.$same(this.f_parentNodeInfo__org_gwtproject_user_cellview_client_CellTreeNodeView_, null)) {
    let selectionModel = this.f_parentNodeInfo__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_getSelectionModel__();
@@ -500,10 +372,7 @@ class CellTreeNodeView extends UIObject {
   }
   return false;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_resetFocusOnCell___$pp_org_gwtproject_user_cellview_client() {
   if (!$Equality.$same(this.f_parentNodeInfo__org_gwtproject_user_cellview_client_CellTreeNodeView_, null)) {
    let context = Context.$create__int__int__java_lang_Object(this.m_getIndex___$pp_org_gwtproject_user_cellview_client(), 0, this.m_getValueKey__());
@@ -512,12 +381,8 @@ class CellTreeNodeView extends UIObject {
   }
   return false;
  }
- /**
-  * @param {boolean} selected
-  * @param {boolean} stealFocus
-  * @public
-  */
- m_setKeyboardSelected__boolean__boolean_$pp_org_gwtproject_user_cellview_client(selected, stealFocus) {
+ 
+ m_setKeyboardSelected__boolean__boolean_$pp_org_gwtproject_user_cellview_client(/** boolean */ selected, /** boolean */ stealFocus) {
   if (this.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_isKeyboardSelectionDisabled__()) {
    return;
   }
@@ -544,11 +409,8 @@ class CellTreeNodeView extends UIObject {
    this.m_setSelected__boolean_$pp_org_gwtproject_user_cellview_client(selected);
   }
  }
- /**
-  * @param {boolean} selected
-  * @public
-  */
- m_setKeyboardSelectedStyle__boolean_$pp_org_gwtproject_user_cellview_client(selected) {
+ 
+ m_setKeyboardSelectedStyle__boolean_$pp_org_gwtproject_user_cellview_client(/** boolean */ selected) {
   if (!this.m_isRootNode___$pp_org_gwtproject_user_cellview_client()) {
    let selectionElem = CellTreeNodeView.m_getSelectionElement__org_gwtproject_dom_client_Element(this.m_getElement__());
    if (!$Equality.$same(selectionElem, null)) {
@@ -556,11 +418,8 @@ class CellTreeNodeView extends UIObject {
    }
   }
  }
- /**
-  * @param {boolean} selected
-  * @public
-  */
- m_setSelected__boolean_$pp_org_gwtproject_user_cellview_client(selected) {
+ 
+ m_setSelected__boolean_$pp_org_gwtproject_user_cellview_client(/** boolean */ selected) {
   if (!$Equality.$same(this.f_parentNodeInfo__org_gwtproject_user_cellview_client_CellTreeNodeView_, null)) {
    let selectionModel = this.f_parentNodeInfo__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_getSelectionModel__();
    if (!$Equality.$same(selectionModel, null)) {
@@ -568,28 +427,21 @@ class CellTreeNodeView extends UIObject {
    }
   }
  }
- /**
-  * @public
-  */
+ 
  m_showFewer___$pp_org_gwtproject_user_cellview_client() {
   let range = this.f_listView__org_gwtproject_user_cellview_client_CellTreeNodeView.m_getVisibleRange__();
   let defaultPageSize = this.f_listView__org_gwtproject_user_cellview_client_CellTreeNodeView.m_getDefaultPageSize__();
   let maxSize = Math.max(defaultPageSize, range.m_getLength__() - defaultPageSize);
   this.f_listView__org_gwtproject_user_cellview_client_CellTreeNodeView.m_setVisibleRange__int__int(range.m_getStart__(), maxSize);
  }
- /**
-  * @public
-  */
+ 
  m_showMore___$pp_org_gwtproject_user_cellview_client() {
   let range = this.f_listView__org_gwtproject_user_cellview_client_CellTreeNodeView.m_getVisibleRange__();
   let pageSize = range.m_getLength__() + this.f_listView__org_gwtproject_user_cellview_client_CellTreeNodeView.m_getDefaultPageSize__();
   this.f_listView__org_gwtproject_user_cellview_client_CellTreeNodeView.m_setVisibleRange__int__int(range.m_getStart__(), pageSize);
  }
- /**
-  * @param {number} setSize
-  * @public
-  */
- m_updateAriaAttributes__int_$p_org_gwtproject_user_cellview_client_CellTreeNodeView(setSize) {
+ 
+ m_updateAriaAttributes__int_$p_org_gwtproject_user_cellview_client_CellTreeNodeView(/** number */ setSize) {
   if (this.m_isRootNode___$pp_org_gwtproject_user_cellview_client()) {
    return;
   }
@@ -603,11 +455,8 @@ class CellTreeNodeView extends UIObject {
   }
   Roles.m_getTreeitemRole__().m_setAriaLevelProperty__org_gwtproject_dom_client_Element__int(this.m_getElement__(), this.f_depth__org_gwtproject_user_cellview_client_CellTreeNodeView_);
  }
- /**
-  * @param {boolean} isLoading
-  * @public
-  */
- m_updateImage__boolean_$p_org_gwtproject_user_cellview_client_CellTreeNodeView(isLoading) {
+ 
+ m_updateImage__boolean_$p_org_gwtproject_user_cellview_client_CellTreeNodeView(/** boolean */ isLoading) {
   if (this.m_isRootNode___$pp_org_gwtproject_user_cellview_client()) {
    return;
   }
@@ -630,33 +479,22 @@ class CellTreeNodeView extends UIObject {
    Roles.m_getTreeitemRole__().m_setAriaExpandedState__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_ExpandedValue(this.m_getElement__(), ExpandedValue.m_of__boolean(this.f_open__org_gwtproject_user_cellview_client_CellTreeNodeView_));
   }
  }
- /**
-  * @return {SafeHtml}
-  * @public
-  */
+ /** @return {SafeHtml} */
  static get f_LEAF_IMAGE__org_gwtproject_user_cellview_client_CellTreeNodeView_() {
   return (CellTreeNodeView.$clinit(), CellTreeNodeView.$f_LEAF_IMAGE__org_gwtproject_user_cellview_client_CellTreeNodeView_);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CellTreeNodeView.$clinit = () =>{};
   CellTreeNodeView.$loadModules();
   UIObject.$clinit();
   CellTreeNodeView.$f_LEAF_IMAGE__org_gwtproject_user_cellview_client_CellTreeNodeView_ = SafeHtmlUtils.m_fromSafeConstant__java_lang_String("<div style='position:absolute;display:none;'></div>");
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CellTreeNodeView;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   HashSet = goog.module.get('java.util.HashSet$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -688,9 +526,9 @@ class CellTreeNodeView extends UIObject {
 }
 $Util.$setClassMetadata(CellTreeNodeView, 'org.gwtproject.user.cellview.client.CellTreeNodeView');
 
-/** @private {SafeHtml} */
+/**@private {SafeHtml}*/
 CellTreeNodeView.$f_LEAF_IMAGE__org_gwtproject_user_cellview_client_CellTreeNodeView_;
-/** @public {Object} */
+/**@type {Object}*/
 CellTreeNodeView.f_tmpElem__org_gwtproject_user_cellview_client_CellTreeNodeView_;
 
 exports = CellTreeNodeView; 

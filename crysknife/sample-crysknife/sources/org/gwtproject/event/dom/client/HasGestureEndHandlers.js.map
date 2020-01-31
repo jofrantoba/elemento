@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasGestureEndHandlers.impl.java.js",
-"lineCount":26,
-"mappings":"A;;;;;;;;;;;;MAwBiB,qB;;;;;;;CAQK,yE,CAAuCA,O;;;;QAR5C,O;EAAAC,wC;EAAAA;",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;;;MAwBiB,qB;;CAQK,yE,0BAAuCA,O;;QAR5C,O;EAAAC,wC;EAAAA;",
 "sources":["HasGestureEndHandlers.java"],
 "names":["handler","org.gwtproject.event.dom.client.HasGestureEndHandlers.<clinit>"]
 }

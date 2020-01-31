@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DoubleRenderer.impl.java.js",
-"lineCount":97,
-"mappings":"A;;;;;;;;;;;;;;MAMa,c;;;;CAAA,W;EAAAA,Q;;;;;;QAGsB,Y;EAAAC,yB;EAC3BA;GACIA,mGADJA;G;EAIAA,6E;;;;;;QAGM,S;EAAAC,yB;EAAAA,qC;EAAAA,+D;EAAAA,iB;;;;;CAAA,kD;EAAAC,4D;;;;;;;CAGI,0B,CAAcC,M;EACxBC,mH;;;;;;;;;CAfK,0B;EAAAA,yF;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,2B;;;;;;;;;;;;;;;;;;;;;;;AAAA;eACqB,sDADrB;",
+"lineCount":70,
+"mappings":"A;;;;;;;;;;;;;;MAMa,c;;CAAA,W;EAAAA,Q;;;QAGsB,Y;EAAAC,yB;EAC3BA;GACIA,mGADJA;G;EAIAA,6E;;;QAGM,S;EAAAC,yB;EAAAA,qC;EAAAA,+D;EAAAA,iB;;;CAAA,kD;EAAAC,4D;;;CAGI,0B,gBAAcC,M;EACxBC,mH;;;;CAfK,0B;EAAAA,wF;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,2B;;;;;;;;;;;;;;;;;AAAA;eACqB,sDADrB;",
 "sources":["DoubleRenderer.java"],
 "names":["org.gwtproject.text.client.DoubleRenderer.<synthetic: ctor_js>","org.gwtproject.text.client.DoubleRenderer.instance","org.gwtproject.text.client.DoubleRenderer.<synthetic: ctor_create>","org.gwtproject.text.client.DoubleRenderer.<init>","object","org.gwtproject.text.client.DoubleRenderer.render","org.gwtproject.text.client.DoubleRenderer.<clinit>"]
 }

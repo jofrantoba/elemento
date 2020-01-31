@@ -14,100 +14,56 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {MediaBuilder<R>}
   */
 class HtmlMediaBuilderBase extends HtmlElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @template R
-  * @param {HtmlBuilderImpl} delegate
-  * @return {!HtmlMediaBuilderBase<R>}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ /** @template R @return {!HtmlMediaBuilderBase<R>} */
+ static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   HtmlMediaBuilderBase.$clinit();
   let $instance = new HtmlMediaBuilderBase();
   $instance.$ctor__org_gwtproject_dom_builder_shared_HtmlMediaBuilderBase__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_shared_HtmlMediaBuilderBase__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_shared_HtmlMediaBuilderBase__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_shared_HtmlElementBuilderBase__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate);
  }
- /**
-  * @override
-  * @return {R}
-  * @public
-  */
+ /** @override @return {R} */
  m_autoplay__() {
-  return /**@type {R} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("autoplay", "autoplay"), MediaBuilder));
+  return /**@type {R}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("autoplay", "autoplay"), MediaBuilder));
  }
- /**
-  * @override
-  * @return {R}
-  * @public
-  */
+ /** @override @return {R} */
  m_controls__() {
-  return /**@type {R} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("controls", "controls"), MediaBuilder));
+  return /**@type {R}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("controls", "controls"), MediaBuilder));
  }
- /**
-  * @override
-  * @return {R}
-  * @public
-  */
+ /** @override @return {R} */
  m_loop__() {
-  return /**@type {R} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("loop", "loop"), MediaBuilder));
+  return /**@type {R}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("loop", "loop"), MediaBuilder));
  }
- /**
-  * @override
-  * @return {R}
-  * @public
-  */
+ /** @override @return {R} */
  m_muted__() {
-  return /**@type {R} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("muted", "muted"), MediaBuilder));
+  return /**@type {R}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("muted", "muted"), MediaBuilder));
  }
- /**
-  * @override
-  * @param {?string} preload
-  * @return {R}
-  * @public
-  */
- m_preload__java_lang_String(preload) {
-  return /**@type {R} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("preload", preload), MediaBuilder));
+ /** @override @return {R} */
+ m_preload__java_lang_String(/** ?string */ preload) {
+  return /**@type {R}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("preload", preload), MediaBuilder));
  }
- /**
-  * @override
-  * @param {?string} url
-  * @return {R}
-  * @public
-  */
- m_src__java_lang_String(url) {
-  return /**@type {R} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("src", url), MediaBuilder));
+ /** @override @return {R} */
+ m_src__java_lang_String(/** ?string */ url) {
+  return /**@type {R}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("src", url), MediaBuilder));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HtmlMediaBuilderBase.$clinit = () =>{};
   HtmlMediaBuilderBase.$loadModules();
   HtmlElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HtmlMediaBuilderBase;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

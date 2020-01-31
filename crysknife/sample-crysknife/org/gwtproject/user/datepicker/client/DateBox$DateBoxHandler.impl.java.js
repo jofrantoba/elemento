@@ -30,77 +30,48 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {CloseHandler<PopupPanel>}
   */
 class DateBoxHandler extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {DateBox} */
+  /**@type {DateBox}*/
   this.f_$outer_this__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler;
  }
- /**
-  * @param {DateBox} $outer_this
-  * @return {!DateBoxHandler}
-  * @public
-  */
- static $create__org_gwtproject_user_datepicker_client_DateBox($outer_this) {
+ /** @return {!DateBoxHandler} */
+ static $create__org_gwtproject_user_datepicker_client_DateBox(/** DateBox */ $outer_this) {
   DateBoxHandler.$clinit();
   let $instance = new DateBoxHandler();
   $instance.$ctor__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler__org_gwtproject_user_datepicker_client_DateBox($outer_this);
   return $instance;
  }
- /**
-  * @param {DateBox} $outer_this
-  * @public
-  */
- $ctor__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler__org_gwtproject_user_datepicker_client_DateBox($outer_this) {
+ 
+ $ctor__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler__org_gwtproject_user_datepicker_client_DateBox(/** DateBox */ $outer_this) {
   this.f_$outer_this__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler = $outer_this;
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {BlurEvent} event
-  * @public
-  */
- m_onBlur__org_gwtproject_event_dom_client_BlurEvent(event) {
+ /** @override */
+ m_onBlur__org_gwtproject_event_dom_client_BlurEvent(/** BlurEvent */ event) {
   if (this.f_$outer_this__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler.m_isDatePickerShowing__() == false) {
    this.f_$outer_this__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler.m_updateDateFromTextBox___$p_org_gwtproject_user_datepicker_client_DateBox();
   }
  }
- /**
-  * @override
-  * @param {ClickEvent} event
-  * @public
-  */
- m_onClick__org_gwtproject_event_dom_client_ClickEvent(event) {
+ /** @override */
+ m_onClick__org_gwtproject_event_dom_client_ClickEvent(/** ClickEvent */ event) {
   this.f_$outer_this__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler.m_showDatePicker__();
  }
- /**
-  * @override
-  * @param {CloseEvent<PopupPanel>} event
-  * @public
-  */
- m_onClose__org_gwtproject_event_logical_shared_CloseEvent(event) {
+ /** @override */
+ m_onClose__org_gwtproject_event_logical_shared_CloseEvent(/** CloseEvent<PopupPanel> */ event) {
   if (this.f_$outer_this__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler.f_allowDPShow__org_gwtproject_user_datepicker_client_DateBox_) {
    this.f_$outer_this__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler.m_updateDateFromTextBox___$p_org_gwtproject_user_datepicker_client_DateBox();
   }
  }
- /**
-  * @override
-  * @param {FocusEvent} event
-  * @public
-  */
- m_onFocus__org_gwtproject_event_dom_client_FocusEvent(event) {
+ /** @override */
+ m_onFocus__org_gwtproject_event_dom_client_FocusEvent(/** FocusEvent */ event) {
   if (this.f_$outer_this__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler.f_allowDPShow__org_gwtproject_user_datepicker_client_DateBox_ && this.f_$outer_this__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler.m_isDatePickerShowing__() == false) {
    this.f_$outer_this__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler.m_showDatePicker__();
   }
  }
- /**
-  * @override
-  * @param {KeyDownEvent} event
-  * @public
-  */
- m_onKeyDown__org_gwtproject_event_dom_client_KeyDownEvent(event) {
+ /** @override */
+ m_onKeyDown__org_gwtproject_event_dom_client_KeyDownEvent(/** KeyDownEvent */ event) {
   switch (event.m_getNativeKeyCode__()) {
    case KeyCodes.f_KEY_ENTER__org_gwtproject_event_dom_client_KeyCodes: 
    case KeyCodes.f_KEY_TAB__org_gwtproject_event_dom_client_KeyCodes: 
@@ -114,45 +85,29 @@ class DateBoxHandler extends j_l_Object {
     break;
   }
  }
- /**
-  * @override
-  * @param {ValueChangeEvent<Date>} event
-  * @public
-  */
- m_onValueChange__org_gwtproject_event_logical_shared_ValueChangeEvent(event) {
-  this.f_$outer_this__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler.m_setValue__java_util_Date__java_util_Date__boolean__boolean_$p_org_gwtproject_user_datepicker_client_DateBox(this.f_$outer_this__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler.m_parseDate__boolean_$p_org_gwtproject_user_datepicker_client_DateBox(false), this.m_normalize__java_util_Date_$p_org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler(/**@type {Date} */ ($Casts.$to(event.m_getValue__(), Date))), true, true);
+ /** @override */
+ m_onValueChange__org_gwtproject_event_logical_shared_ValueChangeEvent(/** ValueChangeEvent<Date> */ event) {
+  this.f_$outer_this__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler.m_setValue__java_util_Date__java_util_Date__boolean__boolean_$p_org_gwtproject_user_datepicker_client_DateBox(this.f_$outer_this__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler.m_parseDate__boolean_$p_org_gwtproject_user_datepicker_client_DateBox(false), this.m_normalize__java_util_Date_$p_org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler(/**@type {Date}*/ ($Casts.$to(event.m_getValue__(), Date))), true, true);
   this.f_$outer_this__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler.m_hideDatePicker__();
   this.f_$outer_this__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler.m_preventDatePickerPopup___$p_org_gwtproject_user_datepicker_client_DateBox();
   this.f_$outer_this__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler.f_box__org_gwtproject_user_datepicker_client_DateBox_.m_setFocus__boolean(true);
  }
- /**
-  * @param {Date} date
-  * @return {Date}
-  * @public
-  */
- m_normalize__java_util_Date_$p_org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler(date) {
+ /** @return {Date} */
+ m_normalize__java_util_Date_$p_org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler(/** Date */ date) {
   let dateBox = this.f_$outer_this__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler;
   return this.f_$outer_this__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler.m_getFormat__().m_parse__org_gwtproject_user_datepicker_client_DateBox__java_lang_String__boolean(dateBox, this.f_$outer_this__org_gwtproject_user_datepicker_client_DateBox_DateBoxHandler.m_getFormat__().m_format__org_gwtproject_user_datepicker_client_DateBox__java_util_Date(dateBox, date), false);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DateBoxHandler.$clinit = () =>{};
   DateBoxHandler.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DateBoxHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Date = goog.module.get('java.util.Date$impl');
   KeyCodes = goog.module.get('org.gwtproject.event.dom.client.KeyCodes$impl');

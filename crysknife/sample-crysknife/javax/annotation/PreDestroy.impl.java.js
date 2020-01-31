@@ -11,44 +11,27 @@ let $LambdaAdaptor = goog.forwardDeclare('javax.annotation.PreDestroy.$LambdaAda
  * @extends {Annotation}
  */
 class PreDestroy {
- /**
-  * @param {?function():Class<?>} fn
-  * @return {PreDestroy}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {PreDestroy} */
+ static $adapt(/** ?function():Class<?> */ fn) {
   PreDestroy.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   PreDestroy.$clinit = () =>{};
   PreDestroy.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__javax_annotation_PreDestroy = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__javax_annotation_PreDestroy = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__javax_annotation_PreDestroy;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('javax.annotation.PreDestroy.$LambdaAdaptor$impl');
  }

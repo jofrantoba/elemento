@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ResizeLayoutPanel$2.impl.java.js",
-"lineCount":53,
-"mappings":"A;;;;;;;;;;;MAqU2C,E;;;;CAAA,W;EAAAA,Q;EAAAA;wE;;;;;;;QAAA,wD;EAAAC,a;EAAAA,yB;EAAAA,iI;EAAAA,iB;;;;;;CAAA,yG;EAAAC,oF;EAAAA,iC;;;;;;CACzB,Y;EACVC,8I;;;;;QAFmC,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":39,
+"mappings":"A;;;;;;;;;;;MAqU2C,E;;CAAA,W;EAAAA,Q;EAAAA;wE;;;QAAA,wD;EAAAC,a;EAAAA,yB;EAAAA,iI;EAAAA,iB;;;CAAA,yG;EAAAC,oF;EAAAA,iC;;;CACzB,Y;EACVC,8I;;;QAFmC,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["ResizeLayoutPanel.java"],
 "names":["org.gwtproject.user.client.ui.ResizeLayoutPanel$2.<synthetic: ctor_js>","org.gwtproject.user.client.ui.ResizeLayoutPanel$2.<synthetic: ctor_create>","org.gwtproject.user.client.ui.ResizeLayoutPanel$2.<init>","org.gwtproject.user.client.ui.ResizeLayoutPanel$2.onResize","org.gwtproject.user.client.ui.ResizeLayoutPanel$2.<clinit>"]
 }

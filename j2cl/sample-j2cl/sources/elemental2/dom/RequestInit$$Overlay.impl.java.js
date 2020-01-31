@@ -16,123 +16,72 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Overlay = goog.forwardDeclare('jsinterop.base.JsPropertyMap.$Overlay$impl');
 
 class RequestInit_$Overlay {
- /**
-  * @return {RequestInit}
-  * @public
-  */
+ /** @return {RequestInit} */
  static m_create__() {
   RequestInit_$Overlay.$clinit();
-  return /**@type {RequestInit} */ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
+  return /**@type {RequestInit}*/ (Js.m_uncheckedCast__java_lang_Object($Overlay.m_of__()));
  }
- /**
-  * @param {!RequestInit} $thisArg
-  * @param {ArrayBuffer} body
-  * @public
-  */
- static m_setBody__$devirt__elemental2_dom_RequestInit__elemental2_core_ArrayBuffer($thisArg, body) {
+ 
+ static m_setBody__$devirt__elemental2_dom_RequestInit__elemental2_core_ArrayBuffer(/** !RequestInit */ $thisArg, /** ArrayBuffer */ body) {
   RequestInit_$Overlay.$clinit();
-  $thisArg.body = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(body));
+  $thisArg.body = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(body));
  }
- /**
-  * @param {!RequestInit} $thisArg
-  * @param {ArrayBufferView} body
-  * @public
-  */
- static m_setBody__$devirt__elemental2_dom_RequestInit__elemental2_core_ArrayBufferView($thisArg, body) {
+ 
+ static m_setBody__$devirt__elemental2_dom_RequestInit__elemental2_core_ArrayBufferView(/** !RequestInit */ $thisArg, /** ArrayBufferView */ body) {
   RequestInit_$Overlay.$clinit();
-  $thisArg.body = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(body));
+  $thisArg.body = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(body));
  }
- /**
-  * @param {!RequestInit} $thisArg
-  * @param {Blob} body
-  * @public
-  */
- static m_setBody__$devirt__elemental2_dom_RequestInit__elemental2_dom_Blob($thisArg, body) {
+ 
+ static m_setBody__$devirt__elemental2_dom_RequestInit__elemental2_dom_Blob(/** !RequestInit */ $thisArg, /** Blob */ body) {
   RequestInit_$Overlay.$clinit();
-  $thisArg.body = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(body));
+  $thisArg.body = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(body));
  }
- /**
-  * @param {!RequestInit} $thisArg
-  * @param {FormData} body
-  * @public
-  */
- static m_setBody__$devirt__elemental2_dom_RequestInit__elemental2_dom_FormData($thisArg, body) {
+ 
+ static m_setBody__$devirt__elemental2_dom_RequestInit__elemental2_dom_FormData(/** !RequestInit */ $thisArg, /** FormData */ body) {
   RequestInit_$Overlay.$clinit();
-  $thisArg.body = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(body));
+  $thisArg.body = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(body));
  }
- /**
-  * @param {!RequestInit} $thisArg
-  * @param {ReadableStream} body
-  * @public
-  */
- static m_setBody__$devirt__elemental2_dom_RequestInit__elemental2_dom_ReadableStream($thisArg, body) {
+ 
+ static m_setBody__$devirt__elemental2_dom_RequestInit__elemental2_dom_ReadableStream(/** !RequestInit */ $thisArg, /** ReadableStream */ body) {
   RequestInit_$Overlay.$clinit();
-  $thisArg.body = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(body));
+  $thisArg.body = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(body));
  }
- /**
-  * @param {!RequestInit} $thisArg
-  * @param {?string} body
-  * @public
-  */
- static m_setBody__$devirt__elemental2_dom_RequestInit__java_lang_String($thisArg, body) {
+ 
+ static m_setBody__$devirt__elemental2_dom_RequestInit__java_lang_String(/** !RequestInit */ $thisArg, /** ?string */ body) {
   RequestInit_$Overlay.$clinit();
-  $thisArg.body = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(body));
+  $thisArg.body = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(body));
  }
- /**
-  * @param {!RequestInit} $thisArg
-  * @param {URLSearchParams} body
-  * @public
-  */
- static m_setBody__$devirt__elemental2_dom_RequestInit__elemental2_dom_URLSearchParams($thisArg, body) {
+ 
+ static m_setBody__$devirt__elemental2_dom_RequestInit__elemental2_dom_URLSearchParams(/** !RequestInit */ $thisArg, /** URLSearchParams */ body) {
   RequestInit_$Overlay.$clinit();
-  $thisArg.body = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(body));
+  $thisArg.body = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(body));
  }
- /**
-  * @param {!RequestInit} $thisArg
-  * @param {Headers} headers
-  * @public
-  */
- static m_setHeaders__$devirt__elemental2_dom_RequestInit__elemental2_dom_Headers($thisArg, headers) {
+ 
+ static m_setHeaders__$devirt__elemental2_dom_RequestInit__elemental2_dom_Headers(/** !RequestInit */ $thisArg, /** Headers */ headers) {
   RequestInit_$Overlay.$clinit();
-  $thisArg.headers = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(headers));
+  $thisArg.headers = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(headers));
  }
- /**
-  * @param {!RequestInit} $thisArg
-  * @param {Array<Array<?string>>} headers
-  * @public
-  */
- static m_setHeaders__$devirt__elemental2_dom_RequestInit__elemental2_core_JsArray($thisArg, headers) {
+ 
+ static m_setHeaders__$devirt__elemental2_dom_RequestInit__elemental2_core_JsArray(/** !RequestInit */ $thisArg, /** Array<Array<?string>> */ headers) {
   RequestInit_$Overlay.$clinit();
-  $thisArg.headers = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(headers));
+  $thisArg.headers = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(headers));
  }
- /**
-  * @param {!RequestInit} $thisArg
-  * @param {Object<string, ?string>} headers
-  * @public
-  */
- static m_setHeaders__$devirt__elemental2_dom_RequestInit__jsinterop_base_JsPropertyMap($thisArg, headers) {
+ 
+ static m_setHeaders__$devirt__elemental2_dom_RequestInit__jsinterop_base_JsPropertyMap(/** !RequestInit */ $thisArg, /** Object<string, ?string> */ headers) {
   RequestInit_$Overlay.$clinit();
-  $thisArg.headers = /**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(headers));
+  $thisArg.headers = /**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(headers));
  }
- /**
-  * @param {!RequestInit} $thisArg
-  * @param {Array<Array<?string>>} headers
-  * @public
-  */
- static m_setHeaders__$devirt__elemental2_dom_RequestInit__arrayOf_arrayOf_java_lang_String($thisArg, headers) {
+ 
+ static m_setHeaders__$devirt__elemental2_dom_RequestInit__arrayOf_arrayOf_java_lang_String(/** !RequestInit */ $thisArg, /** Array<Array<?string>> */ headers) {
   RequestInit_$Overlay.$clinit();
-  RequestInit_$Overlay.m_setHeaders__$devirt__elemental2_dom_RequestInit__elemental2_core_JsArray($thisArg, /**@type {Array<Array<?string>>} */ (Js.m_uncheckedCast__java_lang_Object(headers)));
+  RequestInit_$Overlay.m_setHeaders__$devirt__elemental2_dom_RequestInit__elemental2_core_JsArray($thisArg, /**@type {Array<Array<?string>>}*/ (Js.m_uncheckedCast__java_lang_Object(headers)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RequestInit_$Overlay.$clinit = () =>{};
   RequestInit_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Overlay = goog.module.get('jsinterop.base.JsPropertyMap.$Overlay$impl');

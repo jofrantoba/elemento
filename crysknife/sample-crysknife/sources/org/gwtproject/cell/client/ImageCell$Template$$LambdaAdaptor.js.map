@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ImageCell$Template$$LambdaAdaptor.impl.java.js",
-"lineCount":47,
-"mappings":"A;;;;;;;;;;;MAmCY,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;4E;EAAAA,wI;;;;;;CAAA,8H;EAAAC,iC;EAAAA,+E;;;;;;;CAAA,uB;EAAAC,iD;EAAAA,gH;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;;MAmCY,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;4E;EAAAA,wI;;;CAAA,8H;EAAAC,iC;EAAAA,+E;;;CAAA,uB;EAAAC,iD;EAAAA,gH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["ImageCell.java"],
 "names":["org.gwtproject.cell.client.ImageCell$Template$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.cell.client.ImageCell$Template$$LambdaAdaptor.<init>","org.gwtproject.cell.client.ImageCell$Template$$LambdaAdaptor.img","org.gwtproject.cell.client.ImageCell$Template$$LambdaAdaptor.<clinit>"]
 }

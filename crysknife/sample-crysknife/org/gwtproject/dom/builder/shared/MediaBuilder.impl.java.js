@@ -9,73 +9,34 @@ const ElementBuilderBase = goog.require('org.gwtproject.dom.builder.shared.Eleme
  * @extends {ElementBuilderBase<T>}
  */
 class MediaBuilder {
- /**
-  * @abstract
-  * @return {T}
-  * @public
-  */
+ /** @abstract @return {T} */
  m_autoplay__() {}
- /**
-  * @abstract
-  * @return {T}
-  * @public
-  */
+ /** @abstract @return {T} */
  m_controls__() {}
- /**
-  * @abstract
-  * @return {T}
-  * @public
-  */
+ /** @abstract @return {T} */
  m_loop__() {}
- /**
-  * @abstract
-  * @return {T}
-  * @public
-  */
+ /** @abstract @return {T} */
  m_muted__() {}
- /**
-  * @abstract
-  * @param {?string} preload
-  * @return {T}
-  * @public
-  */
- m_preload__java_lang_String(preload) {}
- /**
-  * @abstract
-  * @param {?string} url
-  * @return {T}
-  * @public
-  */
- m_src__java_lang_String(url) {}
- /**
-  * @public
-  */
+ /** @abstract @return {T} */
+ m_preload__java_lang_String(/** ?string */ preload) {}
+ /** @abstract @return {T} */
+ m_src__java_lang_String(/** ?string */ url) {}
+ 
  static $clinit() {
   MediaBuilder.$clinit = () =>{};
   MediaBuilder.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ElementBuilderBase.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_dom_builder_shared_MediaBuilder = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ElementBuilderBase.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_dom_builder_shared_MediaBuilder = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_dom_builder_shared_MediaBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

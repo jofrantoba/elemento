@@ -13,64 +13,40 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {ValueChangeEvent<List<T>>}
   */
 class $2 extends ValueChangeEvent {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {View<T>} */
+  /**@type {View<T>}*/
   this.f_$outer_this__org_gwtproject_user_cellview_client_AbstractHasData_View_2;
  }
- /**
-  * @template T
-  * @param {View<T>} $outer_this
-  * @param {List<T>} $_0
-  * @return {!$2<T>}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_AbstractHasData_View__java_util_List($outer_this, $_0) {
+ /** @template T @return {!$2<T>} */
+ static $create__org_gwtproject_user_cellview_client_AbstractHasData_View__java_util_List(/** View<T> */ $outer_this, /** List<T> */ $_0) {
   $2.$clinit();
   let $instance = new $2();
   $instance.$ctor__org_gwtproject_user_cellview_client_AbstractHasData_View_2__org_gwtproject_user_cellview_client_AbstractHasData_View__java_util_List($outer_this, $_0);
   return $instance;
  }
- /**
-  * @param {View<T>} $outer_this
-  * @param {List<T>} $_0
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_AbstractHasData_View_2__org_gwtproject_user_cellview_client_AbstractHasData_View__java_util_List($outer_this, $_0) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_AbstractHasData_View_2__org_gwtproject_user_cellview_client_AbstractHasData_View__java_util_List(/** View<T> */ $outer_this, /** List<T> */ $_0) {
   this.f_$outer_this__org_gwtproject_user_cellview_client_AbstractHasData_View_2 = $outer_this;
   this.$ctor__org_gwtproject_event_logical_shared_ValueChangeEvent__java_lang_Object($_0);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  super.m_dispatch__org_gwtproject_event_logical_shared_ValueChangeHandler(/**@type {ValueChangeHandler<List<T>>} */ ($Casts.$to(arg0, ValueChangeHandler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  super.m_dispatch__org_gwtproject_event_logical_shared_ValueChangeHandler(/**@type {ValueChangeHandler<List<T>>}*/ ($Casts.$to(arg0, ValueChangeHandler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $2.$clinit = () =>{};
   $2.$loadModules();
   ValueChangeEvent.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $2;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   ValueChangeHandler = goog.module.get('org.gwtproject.event.logical.shared.ValueChangeHandler$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

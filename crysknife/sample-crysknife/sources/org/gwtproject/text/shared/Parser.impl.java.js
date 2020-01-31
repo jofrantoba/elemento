@@ -10,51 +10,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.text.shared.Parser.$Lam
  * @template T
  */
 class Parser {
- /**
-  * @abstract
-  * @param {(CharSequence|string)} var1
-  * @return {T}
-  * @public
-  */
- m_parse__java_lang_CharSequence(var1) {}
- /**
-  * @template T
-  * @param {?function((CharSequence|string)):T} fn
-  * @return {Parser<T>}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract @return {T} */
+ m_parse__java_lang_CharSequence(/** (CharSequence|string) */ var1) {}
+ /** @template T @return {Parser<T>} */
+ static $adapt(/** ?function((CharSequence|string)):T */ fn) {
   Parser.$clinit();
-  return /**@type {!$LambdaAdaptor<T>} */ (new $LambdaAdaptor(fn));
+  return /**@type {!$LambdaAdaptor<T>}*/ (new $LambdaAdaptor(fn));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Parser.$clinit = () =>{};
   Parser.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_text_shared_Parser = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_text_shared_Parser = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_text_shared_Parser;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.text.shared.Parser.$LambdaAdaptor$impl');
  }

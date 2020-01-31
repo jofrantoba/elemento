@@ -14,129 +14,72 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {AnchorBuilder}
   */
 class DomAnchorBuilder extends DomElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @return {!DomAnchorBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ /** @return {!DomAnchorBuilder} */
+ static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   DomAnchorBuilder.$clinit();
   let $instance = new DomAnchorBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_client_DomAnchorBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_client_DomAnchorBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_client_DomAnchorBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_client_DomElementBuilderBase__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
  }
- /**
-  * @override
-  * @param {?string} accessKey
-  * @return {AnchorBuilder}
-  * @public
-  */
- m_accessKey__java_lang_String(accessKey) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).accessKey = accessKey;
+ /** @override @return {AnchorBuilder} */
+ m_accessKey__java_lang_String(/** ?string */ accessKey) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).accessKey = accessKey;
   return this;
  }
- /**
-  * @override
-  * @param {SafeUri} href
-  * @return {AnchorBuilder}
-  * @public
-  */
- m_href__org_gwtproject_safehtml_shared_SafeUri(href) {
-  $Overlay.m_setHref__$devirt__org_gwtproject_dom_client_AnchorElement__org_gwtproject_safehtml_shared_SafeUri(/**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)), href);
+ /** @override @return {AnchorBuilder} */
+ m_href__org_gwtproject_safehtml_shared_SafeUri(/** SafeUri */ href) {
+  $Overlay.m_setHref__$devirt__org_gwtproject_dom_client_AnchorElement__org_gwtproject_safehtml_shared_SafeUri(/**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)), href);
   return this;
  }
- /**
-  * @override
-  * @param {?string} href
-  * @return {AnchorBuilder}
-  * @public
-  */
- m_href__java_lang_String(href) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).href = href;
+ /** @override @return {AnchorBuilder} */
+ m_href__java_lang_String(/** ?string */ href) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).href = href;
   return this;
  }
- /**
-  * @override
-  * @param {?string} hreflang
-  * @return {AnchorBuilder}
-  * @public
-  */
- m_hreflang__java_lang_String(hreflang) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).hreflang = hreflang;
+ /** @override @return {AnchorBuilder} */
+ m_hreflang__java_lang_String(/** ?string */ hreflang) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).hreflang = hreflang;
   return this;
  }
- /**
-  * @override
-  * @param {?string} name
-  * @return {AnchorBuilder}
-  * @public
-  */
- m_name__java_lang_String(name) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).name = name;
+ /** @override @return {AnchorBuilder} */
+ m_name__java_lang_String(/** ?string */ name) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).name = name;
   return this;
  }
- /**
-  * @override
-  * @param {?string} rel
-  * @return {AnchorBuilder}
-  * @public
-  */
- m_rel__java_lang_String(rel) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).rel = rel;
+ /** @override @return {AnchorBuilder} */
+ m_rel__java_lang_String(/** ?string */ rel) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).rel = rel;
   return this;
  }
- /**
-  * @override
-  * @param {?string} target
-  * @return {AnchorBuilder}
-  * @public
-  */
- m_target__java_lang_String(target) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).target = target;
+ /** @override @return {AnchorBuilder} */
+ m_target__java_lang_String(/** ?string */ target) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).target = target;
   return this;
  }
- /**
-  * @override
-  * @param {?string} type
-  * @return {AnchorBuilder}
-  * @public
-  */
- m_type__java_lang_String(type) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).type = type;
+ /** @override @return {AnchorBuilder} */
+ m_type__java_lang_String(/** ?string */ type) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).type = type;
   return this;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomAnchorBuilder.$clinit = () =>{};
   DomAnchorBuilder.$loadModules();
   DomElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomAnchorBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('org.gwtproject.dom.client.AnchorElement.$Overlay$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

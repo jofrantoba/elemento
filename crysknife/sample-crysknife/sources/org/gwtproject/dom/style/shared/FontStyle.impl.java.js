@@ -17,73 +17,44 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @implements {HasCssName}
   */
 class FontStyle extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_dom_style_shared_FontStyle__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_dom_style_shared_FontStyle__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @abstract
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @override @return {?string} */
  m_getCssName__() {}
- /**
-  * @param {string} name
-  * @return {!FontStyle}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!FontStyle} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   FontStyle.$clinit();
   if ($Equality.$same(FontStyle.f_namesToValuesMap__org_gwtproject_dom_style_shared_FontStyle_, null)) {
    FontStyle.f_namesToValuesMap__org_gwtproject_dom_style_shared_FontStyle_ = $Enums.createMapFromValues(FontStyle.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, FontStyle.f_namesToValuesMap__org_gwtproject_dom_style_shared_FontStyle_);
  }
- /**
-  * @return {!Array<!FontStyle>}
-  * @public
-  */
+ /** @return {!Array<!FontStyle>} */
  static m_values__() {
   FontStyle.$clinit();
-  return /**@type {!Array<FontStyle>} */ ($Arrays.$init([FontStyle.$f_NORMAL__org_gwtproject_dom_style_shared_FontStyle, FontStyle.$f_ITALIC__org_gwtproject_dom_style_shared_FontStyle, FontStyle.$f_OBLIQUE__org_gwtproject_dom_style_shared_FontStyle], FontStyle));
+  return /**@type {!Array<FontStyle>}*/ ($Arrays.$init([FontStyle.$f_NORMAL__org_gwtproject_dom_style_shared_FontStyle, FontStyle.$f_ITALIC__org_gwtproject_dom_style_shared_FontStyle, FontStyle.$f_OBLIQUE__org_gwtproject_dom_style_shared_FontStyle], FontStyle));
  }
- /**
-  * @return {!FontStyle}
-  * @public
-  */
+ /** @return {!FontStyle} */
  static get f_NORMAL__org_gwtproject_dom_style_shared_FontStyle() {
   return (FontStyle.$clinit(), FontStyle.$f_NORMAL__org_gwtproject_dom_style_shared_FontStyle);
  }
- /**
-  * @return {!FontStyle}
-  * @public
-  */
+ /** @return {!FontStyle} */
  static get f_ITALIC__org_gwtproject_dom_style_shared_FontStyle() {
   return (FontStyle.$clinit(), FontStyle.$f_ITALIC__org_gwtproject_dom_style_shared_FontStyle);
  }
- /**
-  * @return {!FontStyle}
-  * @public
-  */
+ /** @return {!FontStyle} */
  static get f_OBLIQUE__org_gwtproject_dom_style_shared_FontStyle() {
   return (FontStyle.$clinit(), FontStyle.$f_OBLIQUE__org_gwtproject_dom_style_shared_FontStyle);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   FontStyle.$clinit = () =>{};
   FontStyle.$loadModules();
@@ -93,17 +64,11 @@ class FontStyle extends Enum {
   FontStyle.$f_OBLIQUE__org_gwtproject_dom_style_shared_FontStyle = $3.$create__java_lang_String__int($Util.$makeEnumName("OBLIQUE"), FontStyle.$ordinal$f_OBLIQUE__org_gwtproject_dom_style_shared_FontStyle);
   FontStyle.f_namesToValuesMap__org_gwtproject_dom_style_shared_FontStyle_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof FontStyle;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.dom.style.shared.FontStyle.$1$impl');
@@ -118,19 +83,19 @@ $Util.$setClassMetadataForEnum(FontStyle, 'org.gwtproject.dom.style.shared.FontS
 
 HasCssName.$markImplementor(FontStyle);
 
-/** @private {!FontStyle} */
+/**@private {!FontStyle}*/
 FontStyle.$f_NORMAL__org_gwtproject_dom_style_shared_FontStyle;
-/** @private {!FontStyle} */
+/**@private {!FontStyle}*/
 FontStyle.$f_ITALIC__org_gwtproject_dom_style_shared_FontStyle;
-/** @private {!FontStyle} */
+/**@private {!FontStyle}*/
 FontStyle.$f_OBLIQUE__org_gwtproject_dom_style_shared_FontStyle;
-/** @public {Map<?string, !FontStyle>} */
+/**@type {Map<?string, !FontStyle>}*/
 FontStyle.f_namesToValuesMap__org_gwtproject_dom_style_shared_FontStyle_;
-/** @public {number} @const */
+/**@const {number}*/
 FontStyle.$ordinal$f_NORMAL__org_gwtproject_dom_style_shared_FontStyle = 0;
-/** @public {number} @const */
+/**@const {number}*/
 FontStyle.$ordinal$f_ITALIC__org_gwtproject_dom_style_shared_FontStyle = 1;
-/** @public {number} @const */
+/**@const {number}*/
 FontStyle.$ordinal$f_OBLIQUE__org_gwtproject_dom_style_shared_FontStyle = 2;
 
 exports = FontStyle; 

@@ -32,301 +32,175 @@ let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
  * @implements {Formatter}
   */
 class RichTextAreaImplStandard extends RichTextAreaImpl {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_beforeInitPlaceholder__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_initializing__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isPendingFocus__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isReady__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_ = false;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard__() {
   this.$ctor__org_gwtproject_user_client_ui_impl_RichTextAreaImpl__();
   this.$init___$p_org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard();
  }
- /**
-  * @override
-  * @return {Object}
-  * @public
-  */
+ /** @override @return {Object} */
  m_createElement__() {
   return $Overlay.m_createIFrameElement__$devirt__org_gwtproject_dom_client_Document($Overlay.m_get__());
  }
- /**
-  * @override
-  * @param {?string} url
-  * @public
-  */
- m_createLink__java_lang_String(url) {
+ /** @override */
+ m_createLink__java_lang_String(/** ?string */ url) {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("CreateLink", url);
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getBackColor__() {
   return this.m_queryCommandValue__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("BackColor");
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getForeColor__() {
   return this.m_queryCommandValue__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("ForeColor");
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getHTML__() {
   return $Equality.$same(this.f_beforeInitPlaceholder__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_, null) ? this.m_getHTMLImpl__() : Element_$Overlay.m_getInnerHTML__$devirt__org_gwtproject_dom_client_Element(this.f_beforeInitPlaceholder__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_);
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getText__() {
   return $Equality.$same(this.f_beforeInitPlaceholder__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_, null) ? this.m_getTextImpl__() : Element_$Overlay.m_getInnerText__$devirt__org_gwtproject_dom_client_Element(this.f_beforeInitPlaceholder__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_initElement__() {
   let _this = this;
   _this.m_onElementInitializing__();
   DomGlobal_$Overlay.m_setTimeout__elemental2_dom_DomGlobal_SetTimeoutCallbackFn__double__arrayOf_java_lang_Object((.../** ...* */ ignore) =>{
    if (!$Equality.$same(_this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl, null)) {
-    let iframe = /**@type {HTMLIFrameElement} */ (Js.m_uncheckedCast__java_lang_Object(_this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
+    let iframe = /**@type {HTMLIFrameElement}*/ (Js.m_uncheckedCast__java_lang_Object(_this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
     if (!$Equality.$same(iframe.contentWindow, null)) {
-     JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object} */ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (iframe.contentWindow), "document")), "designMode", "On");
+     JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object}*/ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (iframe.contentWindow), "document")), "designMode", "On");
      _this.m_onElementInitialized__();
     }
    }
   }, 1.0, new Array(0));
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_insertHorizontalRule__() {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("InsertHorizontalRule", null);
  }
- /**
-  * @override
-  * @param {?string} html
-  * @public
-  */
- m_insertHTML__java_lang_String(html) {
+ /** @override */
+ m_insertHTML__java_lang_String(/** ?string */ html) {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("InsertHTML", html);
  }
- /**
-  * @override
-  * @param {?string} url
-  * @public
-  */
- m_insertImage__java_lang_String(url) {
+ /** @override */
+ m_insertImage__java_lang_String(/** ?string */ url) {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("InsertImage", url);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_insertOrderedList__() {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("InsertOrderedList", null);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_insertUnorderedList__() {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("InsertUnorderedList", null);
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isBold__() {
   return this.m_queryCommandState__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("Bold");
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isEnabled__() {
   return $Equality.$same(this.f_beforeInitPlaceholder__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_, null) ? this.m_isEnabledImpl__() : !Element_$Overlay.m_getPropertyBoolean__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.f_beforeInitPlaceholder__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_, "disabled");
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isItalic__() {
   return this.m_queryCommandState__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("Italic");
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isStrikethrough__() {
   return this.m_queryCommandState__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("Strikethrough");
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isSubscript__() {
   return this.m_queryCommandState__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("Subscript");
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isSuperscript__() {
   return this.m_queryCommandState__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("Superscript");
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isUnderlined__() {
   return this.m_queryCommandState__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("Underline");
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_leftIndent__() {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("Outdent", null);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_redo__() {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("Redo", "false");
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_removeFormat__() {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("RemoveFormat", null);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_removeLink__() {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("Unlink", "false");
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_rightIndent__() {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("Indent", null);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_selectAll__() {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("SelectAll", null);
  }
- /**
-  * @override
-  * @param {?string} color
-  * @public
-  */
- m_setBackColor__java_lang_String(color) {
+ /** @override */
+ m_setBackColor__java_lang_String(/** ?string */ color) {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("BackColor", color);
  }
- /**
-  * @override
-  * @param {boolean} enabled
-  * @public
-  */
- m_setEnabled__boolean(enabled) {
+ /** @override */
+ m_setEnabled__boolean(/** boolean */ enabled) {
   if ($Equality.$same(this.f_beforeInitPlaceholder__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_, null)) {
    this.m_setEnabledImpl__boolean(enabled);
   } else {
    Element_$Overlay.m_setPropertyBoolean__$devirt__org_gwtproject_dom_client_Element__java_lang_String__boolean(this.f_beforeInitPlaceholder__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_, "disabled", !enabled);
   }
  }
- /**
-  * @override
-  * @param {boolean} focused
-  * @public
-  */
- m_setFocus__boolean(focused) {
+ /** @override */
+ m_setFocus__boolean(/** boolean */ focused) {
   if (this.f_initializing__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard) {
    this.f_isPendingFocus__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_ = focused;
   } else {
    this.m_setFocusImpl__boolean(focused);
   }
  }
- /**
-  * @override
-  * @param {?string} name
-  * @public
-  */
- m_setFontName__java_lang_String(name) {
+ /** @override */
+ m_setFontName__java_lang_String(/** ?string */ name) {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("FontName", name);
  }
- /**
-  * @override
-  * @param {FontSize} fontSize
-  * @public
-  */
- m_setFontSize__org_gwtproject_user_client_ui_RichTextArea_FontSize(fontSize) {
+ /** @override */
+ m_setFontSize__org_gwtproject_user_client_ui_RichTextArea_FontSize(/** FontSize */ fontSize) {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("FontSize", Integer.m_toString__int(fontSize.m_getNumber__()));
  }
- /**
-  * @override
-  * @param {?string} color
-  * @public
-  */
- m_setForeColor__java_lang_String(color) {
+ /** @override */
+ m_setForeColor__java_lang_String(/** ?string */ color) {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("ForeColor", color);
  }
- /**
-  * @override
-  * @param {?string} html
-  * @public
-  */
- m_setHTML__java_lang_String(html) {
+ /** @override */
+ m_setHTML__java_lang_String(/** ?string */ html) {
   if ($Equality.$same(this.f_beforeInitPlaceholder__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_, null)) {
    this.m_setHTMLImpl__java_lang_String(html);
   } else {
    Element_$Overlay.m_setInnerHTML__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.f_beforeInitPlaceholder__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_, html);
   }
  }
- /**
-  * @override
-  * @param {Justification} justification
-  * @public
-  */
- m_setJustification__org_gwtproject_user_client_ui_RichTextArea_Justification(justification) {
+ /** @override */
+ m_setJustification__org_gwtproject_user_client_ui_RichTextArea_Justification(/** Justification */ justification) {
   if ($Equality.$same(justification, Justification.f_CENTER__org_gwtproject_user_client_ui_RichTextArea_Justification)) {
    this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("JustifyCenter", null);
   } else if ($Equality.$same(justification, Justification.f_FULL__org_gwtproject_user_client_ui_RichTextArea_Justification)) {
@@ -337,71 +211,43 @@ class RichTextAreaImplStandard extends RichTextAreaImpl {
    this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("JustifyRight", null);
   }
  }
- /**
-  * @override
-  * @param {?string} text
-  * @public
-  */
- m_setText__java_lang_String(text) {
+ /** @override */
+ m_setText__java_lang_String(/** ?string */ text) {
   if ($Equality.$same(this.f_beforeInitPlaceholder__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_, null)) {
    this.m_setTextImpl__java_lang_String(text);
   } else {
    Element_$Overlay.m_setInnerText__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.f_beforeInitPlaceholder__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_, text);
   }
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_toggleBold__() {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("Bold", "false");
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_toggleItalic__() {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("Italic", "false");
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_toggleStrikethrough__() {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("Strikethrough", "false");
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_toggleSubscript__() {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("Subscript", "false");
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_toggleSuperscript__() {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("Superscript", "false");
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_toggleUnderline__() {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("Underline", "False");
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_undo__() {
   this.m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl("Undo", "false");
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_uninitElement__() {
   this.f_isReady__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_ = false;
   if (this.f_initializing__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard) {
@@ -415,47 +261,38 @@ class RichTextAreaImplStandard extends RichTextAreaImpl {
   Element_$Overlay.m_setInnerHTML__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.f_beforeInitPlaceholder__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_, html);
   this.m_setEnabled__boolean(enabled);
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getHTMLImpl__() {
-  return Element_$Overlay.m_getInnerHTML__$devirt__org_gwtproject_dom_client_Element(/**@type {Object} */ ($Casts.$to(Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), IFrameElement_$Overlay)).contentWindow.document.body);
+  return Element_$Overlay.m_getInnerHTML__$devirt__org_gwtproject_dom_client_Element(/**@type {Object}*/ ($Casts.$to(Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), IFrameElement_$Overlay)).contentWindow.document.body);
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getTextImpl__() {
-  return Element_$Overlay.m_getInnerText__$devirt__org_gwtproject_dom_client_Element(/**@type {Object} */ ($Casts.$to(Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), IFrameElement_$Overlay)).contentWindow.document.body);
+  return Element_$Overlay.m_getInnerText__$devirt__org_gwtproject_dom_client_Element(/**@type {Object}*/ ($Casts.$to(Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), IFrameElement_$Overlay)).contentWindow.document.body);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_hookEvents__() {
-  let iframe = /**@type {HTMLIFrameElement} */ (Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
+  let iframe = /**@type {HTMLIFrameElement}*/ (Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
   let wnd = iframe.contentWindow;
-  Element_$Overlay.m_setPropertyObject__$devirt__org_gwtproject_dom_client_Element__java_lang_String__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl, "__gwt_handler", /**@type {?function(Event):void} */ ((/** Event */ event) =>{
+  Element_$Overlay.m_setPropertyObject__$devirt__org_gwtproject_dom_client_Element__java_lang_String__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl, "__gwt_handler", /**@type {?function(Event):void}*/ ((/** Event */ event) =>{
    DOM.m_dispatchEvent__org_gwtproject_user_client_Event__org_gwtproject_dom_client_Element(event, this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl);
   }));
-  Element_$Overlay.m_setPropertyObject__$devirt__org_gwtproject_dom_client_Element__java_lang_String__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl, "__gwt_focusHandler", /**@type {?function(Event):void} */ ((/** Event */ event_1) =>{
-   if (JsPropertyMap_$Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), "__gwt_isFocused")) {
+  Element_$Overlay.m_setPropertyObject__$devirt__org_gwtproject_dom_client_Element__java_lang_String__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl, "__gwt_focusHandler", /**@type {?function(Event):void}*/ ((/** Event */ event_1) =>{
+   if (JsPropertyMap_$Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), "__gwt_isFocused")) {
     return;
    }
-   JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object} */ (this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), "__gwt_isFocused", true);
-   /**@type {?function(Event):void} */ ($Casts.$to(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), "__gwt_handler"), $JavaScriptFunction))(event_1);
+   JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object}*/ (this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), "__gwt_isFocused", true);
+   /**@type {?function(Event):void}*/ ($Casts.$to(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), "__gwt_handler"), $JavaScriptFunction))(event_1);
   }));
-  Element_$Overlay.m_setPropertyObject__$devirt__org_gwtproject_dom_client_Element__java_lang_String__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl, "__gwt_blurHandler", /**@type {?function(Event):void} */ ((/** Event */ event_2) =>{
-   if (JsPropertyMap_$Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), "__gwt_isFocused")) {
+  Element_$Overlay.m_setPropertyObject__$devirt__org_gwtproject_dom_client_Element__java_lang_String__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl, "__gwt_blurHandler", /**@type {?function(Event):void}*/ ((/** Event */ event_2) =>{
+   if (JsPropertyMap_$Overlay.m_has__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), "__gwt_isFocused")) {
     return;
    }
-   JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object} */ (this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), "__gwt_isFocused", true);
-   /**@type {?function(Event):void} */ ($Casts.$to(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), "__gwt_handler"), $JavaScriptFunction))(event_2);
+   JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object}*/ (this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), "__gwt_isFocused", true);
+   /**@type {?function(Event):void}*/ ($Casts.$to(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), "__gwt_handler"), $JavaScriptFunction))(event_2);
   }));
-  let __gwt_handler = /**@type {EventListener} */ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), "__gwt_handler"));
-  let __gwt_focusHandler = /**@type {EventListener} */ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), "__gwt_focusHandler"));
-  let __gwt_blurHandler = /**@type {EventListener} */ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), "__gwt_blurHandler"));
+  let __gwt_handler = /**@type {EventListener}*/ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), "__gwt_handler"));
+  let __gwt_focusHandler = /**@type {EventListener}*/ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), "__gwt_focusHandler"));
+  let __gwt_blurHandler = /**@type {EventListener}*/ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl), "__gwt_blurHandler"));
   EventTarget_$Overlay.m_addEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "keydown", __gwt_handler, true);
   EventTarget_$Overlay.m_addEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "keyup", __gwt_handler, true);
   EventTarget_$Overlay.m_addEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "keypress", __gwt_handler, true);
@@ -468,18 +305,12 @@ class RichTextAreaImplStandard extends RichTextAreaImpl {
   EventTarget_$Overlay.m_addEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "focus", __gwt_focusHandler, true);
   EventTarget_$Overlay.m_addEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "blur", __gwt_blurHandler, true);
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isEnabledImpl__() {
-  let iframe = /**@type {HTMLIFrameElement} */ (Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
-  return j_l_String.m_equals__java_lang_String__java_lang_Object(j_l_String.m_toUpperCase__java_lang_String($Objects.m_toString__java_lang_Object(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (iframe.contentWindow), "document")), "designMode"))), "ON");
+  let iframe = /**@type {HTMLIFrameElement}*/ (Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
+  return j_l_String.m_equals__java_lang_String__java_lang_Object(j_l_String.m_toUpperCase__java_lang_String($Objects.m_toString__java_lang_Object(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (iframe.contentWindow), "document")), "designMode"))), "ON");
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onElementInitialized__() {
   if (!this.f_initializing__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard) {
    return;
@@ -497,77 +328,57 @@ class RichTextAreaImplStandard extends RichTextAreaImpl {
    this.m_setFocus__boolean(true);
   }
  }
- /**
-  * @public
-  */
+ 
  m_onElementInitializing__() {
   this.f_initializing__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard = true;
   this.f_isPendingFocus__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_ = false;
  }
- /**
-  * @param {boolean} enabled
-  * @public
-  */
- m_setEnabledImpl__boolean(enabled) {
-  let iframe = /**@type {HTMLIFrameElement} */ (Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
-  JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object} */ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object} */ (iframe.contentWindow), "document")), "designMode", enabled ? "On" : "Off");
+ 
+ m_setEnabledImpl__boolean(/** boolean */ enabled) {
+  let iframe = /**@type {HTMLIFrameElement}*/ (Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
+  JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(/**@type {Object}*/ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(/**@type {Object}*/ (iframe.contentWindow), "document")), "designMode", enabled ? "On" : "Off");
  }
- /**
-  * @param {boolean} focused
-  * @public
-  */
- m_setFocusImpl__boolean(focused) {
-  let iframe = /**@type {HTMLIFrameElement} */ (Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
+ 
+ m_setFocusImpl__boolean(/** boolean */ focused) {
+  let iframe = /**@type {HTMLIFrameElement}*/ (Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
   if (focused) {
    iframe.contentWindow.focus();
   } else {
    iframe.contentWindow.blur();
   }
  }
- /**
-  * @param {?string} html
-  * @public
-  */
- m_setHTMLImpl__java_lang_String(html) {
-  let iframe = /**@type {Object} */ (Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
+ 
+ m_setHTMLImpl__java_lang_String(/** ?string */ html) {
+  let iframe = /**@type {Object}*/ (Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
   Element_$Overlay.m_setInnerHTML__$devirt__org_gwtproject_dom_client_Element__java_lang_String(iframe.contentWindow.document.body, html);
  }
- /**
-  * @param {?string} text
-  * @public
-  */
- m_setTextImpl__java_lang_String(text) {
-  let iframe = /**@type {Object} */ (Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
+ 
+ m_setTextImpl__java_lang_String(/** ?string */ text) {
+  let iframe = /**@type {Object}*/ (Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
   Element_$Overlay.m_setInnerText__$devirt__org_gwtproject_dom_client_Element__java_lang_String(iframe.contentWindow.document.body, text);
  }
- /**
-  * @public
-  */
+ 
  m_unhookEvents__() {
-  let iframe = /**@type {HTMLIFrameElement} */ (Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
+  let iframe = /**@type {HTMLIFrameElement}*/ (Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
   let wnd = iframe.contentWindow;
-  let asMap = /**@type {Object} */ (iframe);
-  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "keydown", /**@type {EventListener} */ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_handler")), true);
-  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "keyup", /**@type {EventListener} */ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_handler")), true);
-  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "keypress", /**@type {EventListener} */ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_handler")), true);
-  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "mousedown", /**@type {EventListener} */ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_handler")), true);
-  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "mouseup", /**@type {EventListener} */ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_handler")), true);
-  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "mousemove", /**@type {EventListener} */ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_handler")), true);
-  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "mouseover", /**@type {EventListener} */ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_handler")), true);
-  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "mouseout", /**@type {EventListener} */ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_handler")), true);
-  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "click", /**@type {EventListener} */ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_handler")), true);
-  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "focus", /**@type {EventListener} */ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_focusHandler")), true);
-  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "blur", /**@type {EventListener} */ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_blurHandler")), true);
+  let asMap = /**@type {Object}*/ (iframe);
+  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "keydown", /**@type {EventListener}*/ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_handler")), true);
+  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "keyup", /**@type {EventListener}*/ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_handler")), true);
+  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "keypress", /**@type {EventListener}*/ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_handler")), true);
+  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "mousedown", /**@type {EventListener}*/ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_handler")), true);
+  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "mouseup", /**@type {EventListener}*/ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_handler")), true);
+  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "mousemove", /**@type {EventListener}*/ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_handler")), true);
+  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "mouseover", /**@type {EventListener}*/ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_handler")), true);
+  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "mouseout", /**@type {EventListener}*/ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_handler")), true);
+  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "click", /**@type {EventListener}*/ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_handler")), true);
+  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "focus", /**@type {EventListener}*/ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_focusHandler")), true);
+  EventTarget_$Overlay.m_removeEventListener__$devirt__elemental2_dom_EventTarget__java_lang_String__elemental2_dom_EventListener__boolean(wnd, "blur", /**@type {EventListener}*/ (JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(asMap, "__gwt_blurHandler")), true);
   JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(asMap, "__gwt_handler", null);
   JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(asMap, "__gwt_focusHandler", null);
   JsPropertyMap_$Overlay.m_set__$devirt__jsinterop_base_JsPropertyMap__java_lang_String__java_lang_Object(asMap, "__gwt_blurHandler", null);
  }
- /**
-  * @param {?string} cmd
-  * @param {?string} param
-  * @public
-  */
- m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl(cmd, param) {
+ 
+ m_execCommand__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl(/** ?string */ cmd, /** ?string */ param) {
   $Asserts.$assertWithMessage(this.f_isReady__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_, RichTextAreaImplStandard.f_INACTIVE_MESSAGE__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_);
   if (this.f_isReady__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_) {
    this.m_setFocus__boolean(true);
@@ -581,22 +392,14 @@ class RichTextAreaImplStandard extends RichTextAreaImpl {
    }
   }
  }
- /**
-  * @param {?string} cmd
-  * @param {?string} param
-  * @public
-  */
- m_execCommandAssumingFocus__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl(cmd, param) {
-  let iframe = /**@type {HTMLIFrameElement} */ (Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
-  let document = /**@type {Object} */ (Js.m_uncheckedCast__java_lang_Object(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(Js.m_asPropertyMap__java_lang_Object(iframe.contentWindow), "document")));
-  /**@type {?function(?string, boolean, ?string):void} */ ($Casts.$to(Js.m_uncheckedCast__java_lang_Object(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(Js.m_asPropertyMap__java_lang_Object(document), "execCommand")), $JavaScriptFunction))(cmd, false, param);
+ 
+ m_execCommandAssumingFocus__java_lang_String__java_lang_String_$pp_org_gwtproject_user_client_ui_impl(/** ?string */ cmd, /** ?string */ param) {
+  let iframe = /**@type {HTMLIFrameElement}*/ (Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
+  let document = /**@type {Object}*/ (Js.m_uncheckedCast__java_lang_Object(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(Js.m_asPropertyMap__java_lang_Object(iframe.contentWindow), "document")));
+  /**@type {?function(?string, boolean, ?string):void}*/ ($Casts.$to(Js.m_uncheckedCast__java_lang_Object(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(Js.m_asPropertyMap__java_lang_Object(document), "execCommand")), $JavaScriptFunction))(cmd, false, param);
  }
- /**
-  * @param {?string} cmd
-  * @return {boolean}
-  * @public
-  */
- m_queryCommandState__java_lang_String_$pp_org_gwtproject_user_client_ui_impl(cmd) {
+ /** @return {boolean} */
+ m_queryCommandState__java_lang_String_$pp_org_gwtproject_user_client_ui_impl(/** ?string */ cmd) {
   if (this.f_isReady__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_) {
    this.m_setFocus__boolean(true);
    try {
@@ -604,7 +407,7 @@ class RichTextAreaImplStandard extends RichTextAreaImpl {
    } catch (__$exc) {
     __$exc = $Exceptions.toJava(__$exc);
     if (Exception.$isInstance(__$exc)) {
-     let e = /**@type {Exception} */ (__$exc);
+     let e = /**@type {Exception}*/ (__$exc);
      return false;
     } else {
      throw $Exceptions.toJs(__$exc);
@@ -613,22 +416,14 @@ class RichTextAreaImplStandard extends RichTextAreaImpl {
   }
   return false;
  }
- /**
-  * @param {?string} cmd
-  * @return {boolean}
-  * @public
-  */
- m_queryCommandStateAssumingFocus__java_lang_String_$pp_org_gwtproject_user_client_ui_impl(cmd) {
-  let iframe = /**@type {HTMLIFrameElement} */ (Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
-  let document = /**@type {Object} */ (Js.m_uncheckedCast__java_lang_Object(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(Js.m_asPropertyMap__java_lang_Object(iframe.contentWindow), "document")));
-  return /**@type {?function(?string):boolean} */ ($Casts.$to(Js.m_uncheckedCast__java_lang_Object(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(Js.m_asPropertyMap__java_lang_Object(document), "queryCommandState")), $JavaScriptFunction))(cmd);
+ /** @return {boolean} */
+ m_queryCommandStateAssumingFocus__java_lang_String_$pp_org_gwtproject_user_client_ui_impl(/** ?string */ cmd) {
+  let iframe = /**@type {HTMLIFrameElement}*/ (Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
+  let document = /**@type {Object}*/ (Js.m_uncheckedCast__java_lang_Object(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(Js.m_asPropertyMap__java_lang_Object(iframe.contentWindow), "document")));
+  return /**@type {?function(?string):boolean}*/ ($Casts.$to(Js.m_uncheckedCast__java_lang_Object(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(Js.m_asPropertyMap__java_lang_Object(document), "queryCommandState")), $JavaScriptFunction))(cmd);
  }
- /**
-  * @param {?string} cmd
-  * @return {?string}
-  * @public
-  */
- m_queryCommandValue__java_lang_String_$pp_org_gwtproject_user_client_ui_impl(cmd) {
+ /** @return {?string} */
+ m_queryCommandValue__java_lang_String_$pp_org_gwtproject_user_client_ui_impl(/** ?string */ cmd) {
   if (this.f_isReady__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_) {
    this.m_setFocus__boolean(true);
    try {
@@ -636,7 +431,7 @@ class RichTextAreaImplStandard extends RichTextAreaImpl {
    } catch (__$exc) {
     __$exc = $Exceptions.toJava(__$exc);
     if (Exception.$isInstance(__$exc)) {
-     let e = /**@type {Exception} */ (__$exc);
+     let e = /**@type {Exception}*/ (__$exc);
      return "";
     } else {
      throw $Exceptions.toJs(__$exc);
@@ -645,41 +440,27 @@ class RichTextAreaImplStandard extends RichTextAreaImpl {
   }
   return "";
  }
- /**
-  * @param {?string} cmd
-  * @return {?string}
-  * @public
-  */
- m_queryCommandValueAssumingFocus__java_lang_String_$pp_org_gwtproject_user_client_ui_impl(cmd) {
-  let iframe = /**@type {HTMLIFrameElement} */ (Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
-  let document = /**@type {Object} */ (Js.m_uncheckedCast__java_lang_Object(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(Js.m_asPropertyMap__java_lang_Object(iframe.contentWindow), "document")));
-  return /**@type {?function(?string):?string} */ ($Casts.$to(Js.m_uncheckedCast__java_lang_Object(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(Js.m_asPropertyMap__java_lang_Object(document), "queryCommandValue")), $JavaScriptFunction))(cmd);
+ /** @return {?string} */
+ m_queryCommandValueAssumingFocus__java_lang_String_$pp_org_gwtproject_user_client_ui_impl(/** ?string */ cmd) {
+  let iframe = /**@type {HTMLIFrameElement}*/ (Js.m_uncheckedCast__java_lang_Object(this.f_elem__org_gwtproject_user_client_ui_impl_RichTextAreaImpl));
+  let document = /**@type {Object}*/ (Js.m_uncheckedCast__java_lang_Object(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(Js.m_asPropertyMap__java_lang_Object(iframe.contentWindow), "document")));
+  return /**@type {?function(?string):?string}*/ ($Casts.$to(Js.m_uncheckedCast__java_lang_Object(JsPropertyMap_$Overlay.m_get__$devirt__jsinterop_base_JsPropertyMap__java_lang_String(Js.m_asPropertyMap__java_lang_Object(document), "queryCommandValue")), $JavaScriptFunction))(cmd);
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard() {
   this.f_beforeInitPlaceholder__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_ = DOM.m_createDiv__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RichTextAreaImplStandard.$clinit = () =>{};
   RichTextAreaImplStandard.$loadModules();
   RichTextAreaImpl.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof RichTextAreaImplStandard;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   DomGlobal_$Overlay = goog.module.get('elemental2.dom.DomGlobal.$Overlay$impl');
   EventTarget_$Overlay = goog.module.get('elemental2.dom.EventTarget.$Overlay$impl');
@@ -706,7 +487,7 @@ $Util.$setClassMetadata(RichTextAreaImplStandard, 'org.gwtproject.user.client.ui
 
 Formatter.$markImplementor(RichTextAreaImplStandard);
 
-/** @public {?string} @const */
+/**@const {?string}*/
 RichTextAreaImplStandard.f_INACTIVE_MESSAGE__org_gwtproject_user_client_ui_impl_RichTextAreaImplStandard_ = "RichTextArea formatters cannot be used until the RichTextArea is attached and focused.";
 
 exports = RichTextAreaImplStandard; 

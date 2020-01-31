@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"NavigationRole.impl.java.js",
-"lineCount":16,
-"mappings":"A;;;;;;;;;MA2BiB,c;;;;QAAA,O;EAAAA,iC;EAAAA;",
+"lineCount":14,
+"mappings":"A;;;;;;;;;MA2BiB,c;;QAAA,O;EAAAA,iC;EAAAA;",
 "sources":["NavigationRole.java"],
 "names":["org.gwtproject.aria.client.NavigationRole.<clinit>"]
 }

@@ -16,119 +16,72 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {EditorChain<C, FakeLeafValueEditor<C>>}
   */
 class MockEditorChain extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Map<FakeLeafValueEditor<C>, ?boolean>} */
+  /**@type {Map<FakeLeafValueEditor<C>, ?boolean>}*/
   this.f_attached__org_gwtproject_editor_client_testing_MockEditorChain_;
  }
- /**
-  * @template C
-  * @return {!MockEditorChain<C>}
-  * @public
-  */
+ /** @template C @return {!MockEditorChain<C>} */
  static $create__() {
   MockEditorChain.$clinit();
   let $instance = new MockEditorChain();
   $instance.$ctor__org_gwtproject_editor_client_testing_MockEditorChain__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_editor_client_testing_MockEditorChain__() {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_editor_client_testing_MockEditorChain();
  }
- /**
-  * @param {C} object
-  * @param {FakeLeafValueEditor<C>} subEditor
-  * @public
-  */
- m_attach__java_lang_Object__org_gwtproject_editor_client_testing_FakeLeafValueEditor(object, subEditor) {
+ 
+ m_attach__java_lang_Object__org_gwtproject_editor_client_testing_FakeLeafValueEditor(/** C */ object, /** FakeLeafValueEditor<C> */ subEditor) {
   subEditor.m_setValue__java_lang_Object(object);
   this.f_attached__org_gwtproject_editor_client_testing_MockEditorChain_.put(subEditor, true);
  }
- /**
-  * @param {FakeLeafValueEditor<C>} subEditor
-  * @public
-  */
- m_detach__org_gwtproject_editor_client_testing_FakeLeafValueEditor(subEditor) {
+ 
+ m_detach__org_gwtproject_editor_client_testing_FakeLeafValueEditor(/** FakeLeafValueEditor<C> */ subEditor) {
   subEditor.m_setValue__java_lang_Object(null);
   this.f_attached__org_gwtproject_editor_client_testing_MockEditorChain_.put(subEditor, false);
  }
- /**
-  * @param {FakeLeafValueEditor<C>} subEditor
-  * @return {C}
-  * @public
-  */
- m_getValue__org_gwtproject_editor_client_testing_FakeLeafValueEditor(subEditor) {
+ /** @return {C} */
+ m_getValue__org_gwtproject_editor_client_testing_FakeLeafValueEditor(/** FakeLeafValueEditor<C> */ subEditor) {
   return subEditor.m_getValue__();
  }
- /**
-  * @param {FakeLeafValueEditor<C>} subEditor
-  * @return {boolean}
-  * @public
-  */
- m_isAttached__org_gwtproject_editor_client_testing_FakeLeafValueEditor(subEditor) {
-  return this.f_attached__org_gwtproject_editor_client_testing_MockEditorChain_.containsKey(subEditor) && Boolean.m_booleanValue__java_lang_Boolean(/**@type {?boolean} */ ($Casts.$to(this.f_attached__org_gwtproject_editor_client_testing_MockEditorChain_.get(subEditor), Boolean)));
+ /** @return {boolean} */
+ m_isAttached__org_gwtproject_editor_client_testing_FakeLeafValueEditor(/** FakeLeafValueEditor<C> */ subEditor) {
+  return this.f_attached__org_gwtproject_editor_client_testing_MockEditorChain_.containsKey(subEditor) && Boolean.m_booleanValue__java_lang_Boolean(/**@type {?boolean}*/ ($Casts.$to(this.f_attached__org_gwtproject_editor_client_testing_MockEditorChain_.get(subEditor), Boolean)));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @param {Editor} arg1
-  * @public
-  */
- m_attach__java_lang_Object__org_gwtproject_editor_client_Editor(arg0, arg1) {
-  this.m_attach__java_lang_Object__org_gwtproject_editor_client_testing_FakeLeafValueEditor(arg0, /**@type {FakeLeafValueEditor<C>} */ ($Casts.$to(arg1, FakeLeafValueEditor)));
+ //Bridge method.
+ /** @override */
+ m_attach__java_lang_Object__org_gwtproject_editor_client_Editor(/** * */ arg0, /** Editor */ arg1) {
+  this.m_attach__java_lang_Object__org_gwtproject_editor_client_testing_FakeLeafValueEditor(arg0, /**@type {FakeLeafValueEditor<C>}*/ ($Casts.$to(arg1, FakeLeafValueEditor)));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Editor} arg0
-  * @public
-  */
- m_detach__org_gwtproject_editor_client_Editor(arg0) {
-  this.m_detach__org_gwtproject_editor_client_testing_FakeLeafValueEditor(/**@type {FakeLeafValueEditor<C>} */ ($Casts.$to(arg0, FakeLeafValueEditor)));
+ //Bridge method.
+ /** @override */
+ m_detach__org_gwtproject_editor_client_Editor(/** Editor */ arg0) {
+  this.m_detach__org_gwtproject_editor_client_testing_FakeLeafValueEditor(/**@type {FakeLeafValueEditor<C>}*/ ($Casts.$to(arg0, FakeLeafValueEditor)));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Editor} arg0
-  * @return {C}
-  * @public
-  */
- m_getValue__org_gwtproject_editor_client_Editor(arg0) {
-  return this.m_getValue__org_gwtproject_editor_client_testing_FakeLeafValueEditor(/**@type {FakeLeafValueEditor<C>} */ ($Casts.$to(arg0, FakeLeafValueEditor)));
+ //Bridge method.
+ /** @override @return {C} */
+ m_getValue__org_gwtproject_editor_client_Editor(/** Editor */ arg0) {
+  return this.m_getValue__org_gwtproject_editor_client_testing_FakeLeafValueEditor(/**@type {FakeLeafValueEditor<C>}*/ ($Casts.$to(arg0, FakeLeafValueEditor)));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_editor_client_testing_MockEditorChain() {
-  this.f_attached__org_gwtproject_editor_client_testing_MockEditorChain_ = /**@type {!HashMap<FakeLeafValueEditor<C>, ?boolean>} */ (HashMap.$create__());
+  this.f_attached__org_gwtproject_editor_client_testing_MockEditorChain_ = /**@type {!HashMap<FakeLeafValueEditor<C>, ?boolean>}*/ (HashMap.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MockEditorChain.$clinit = () =>{};
   MockEditorChain.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof MockEditorChain;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Boolean = goog.module.get('java.lang.Boolean$impl');
   HashMap = goog.module.get('java.util.HashMap$impl');

@@ -59,16 +59,11 @@ let VideoBuilder = goog.forwardDeclare('org.gwtproject.dom.builder.shared.VideoB
  * @abstract
   */
 class ElementBuilderFactory extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {ElementBuilderFactory}
-  * @public
-  */
+ /** @return {ElementBuilderFactory} */
  static m_get__() {
   ElementBuilderFactory.$clinit();
   if ($Equality.$same(ElementBuilderFactory.f_instance__org_gwtproject_dom_builder_shared_ElementBuilderFactory_, null)) {
@@ -80,447 +75,159 @@ class ElementBuilderFactory extends j_l_Object {
   }
   return ElementBuilderFactory.f_instance__org_gwtproject_dom_builder_shared_ElementBuilderFactory_;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_dom_builder_shared_ElementBuilderFactory__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @abstract
-  * @return {AnchorBuilder}
-  * @public
-  */
+ /** @abstract @return {AnchorBuilder} */
  m_createAnchorBuilder__() {}
- /**
-  * @abstract
-  * @return {AreaBuilder}
-  * @public
-  */
+ /** @abstract @return {AreaBuilder} */
  m_createAreaBuilder__() {}
- /**
-  * @abstract
-  * @return {AudioBuilder}
-  * @public
-  */
+ /** @abstract @return {AudioBuilder} */
  m_createAudioBuilder__() {}
- /**
-  * @abstract
-  * @return {BaseBuilder}
-  * @public
-  */
+ /** @abstract @return {BaseBuilder} */
  m_createBaseBuilder__() {}
- /**
-  * @abstract
-  * @return {QuoteBuilder}
-  * @public
-  */
+ /** @abstract @return {QuoteBuilder} */
  m_createBlockQuoteBuilder__() {}
- /**
-  * @abstract
-  * @return {BodyBuilder}
-  * @public
-  */
+ /** @abstract @return {BodyBuilder} */
  m_createBodyBuilder__() {}
- /**
-  * @abstract
-  * @return {BRBuilder}
-  * @public
-  */
+ /** @abstract @return {BRBuilder} */
  m_createBRBuilder__() {}
- /**
-  * @abstract
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @abstract @return {InputBuilder} */
  m_createButtonInputBuilder__() {}
- /**
-  * @abstract
-  * @return {CanvasBuilder}
-  * @public
-  */
+ /** @abstract @return {CanvasBuilder} */
  m_createCanvasBuilder__() {}
- /**
-  * @abstract
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @abstract @return {InputBuilder} */
  m_createCheckboxInputBuilder__() {}
- /**
-  * @abstract
-  * @return {TableColBuilder}
-  * @public
-  */
+ /** @abstract @return {TableColBuilder} */
  m_createColBuilder__() {}
- /**
-  * @abstract
-  * @return {TableColBuilder}
-  * @public
-  */
+ /** @abstract @return {TableColBuilder} */
  m_createColGroupBuilder__() {}
- /**
-  * @abstract
-  * @return {DivBuilder}
-  * @public
-  */
+ /** @abstract @return {DivBuilder} */
  m_createDivBuilder__() {}
- /**
-  * @abstract
-  * @return {DListBuilder}
-  * @public
-  */
+ /** @abstract @return {DListBuilder} */
  m_createDListBuilder__() {}
- /**
-  * @abstract
-  * @return {FieldSetBuilder}
-  * @public
-  */
+ /** @abstract @return {FieldSetBuilder} */
  m_createFieldSetBuilder__() {}
- /**
-  * @abstract
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @abstract @return {InputBuilder} */
  m_createFileInputBuilder__() {}
- /**
-  * @abstract
-  * @return {FormBuilder}
-  * @public
-  */
+ /** @abstract @return {FormBuilder} */
  m_createFormBuilder__() {}
- /**
-  * @abstract
-  * @return {FrameBuilder}
-  * @public
-  */
+ /** @abstract @return {FrameBuilder} */
  m_createFrameBuilder__() {}
- /**
-  * @abstract
-  * @return {FrameSetBuilder}
-  * @public
-  */
+ /** @abstract @return {FrameSetBuilder} */
  m_createFrameSetBuilder__() {}
- /**
-  * @abstract
-  * @return {HeadingBuilder}
-  * @public
-  */
+ /** @abstract @return {HeadingBuilder} */
  m_createH1Builder__() {}
- /**
-  * @abstract
-  * @return {HeadingBuilder}
-  * @public
-  */
+ /** @abstract @return {HeadingBuilder} */
  m_createH2Builder__() {}
- /**
-  * @abstract
-  * @return {HeadingBuilder}
-  * @public
-  */
+ /** @abstract @return {HeadingBuilder} */
  m_createH3Builder__() {}
- /**
-  * @abstract
-  * @return {HeadingBuilder}
-  * @public
-  */
+ /** @abstract @return {HeadingBuilder} */
  m_createH4Builder__() {}
- /**
-  * @abstract
-  * @return {HeadingBuilder}
-  * @public
-  */
+ /** @abstract @return {HeadingBuilder} */
  m_createH5Builder__() {}
- /**
-  * @abstract
-  * @return {HeadingBuilder}
-  * @public
-  */
+ /** @abstract @return {HeadingBuilder} */
  m_createH6Builder__() {}
- /**
-  * @abstract
-  * @return {HeadBuilder}
-  * @public
-  */
+ /** @abstract @return {HeadBuilder} */
  m_createHeadBuilder__() {}
- /**
-  * @abstract
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @abstract @return {InputBuilder} */
  m_createHiddenInputBuilder__() {}
- /**
-  * @abstract
-  * @return {HRBuilder}
-  * @public
-  */
+ /** @abstract @return {HRBuilder} */
  m_createHRBuilder__() {}
- /**
-  * @abstract
-  * @return {IFrameBuilder}
-  * @public
-  */
+ /** @abstract @return {IFrameBuilder} */
  m_createIFrameBuilder__() {}
- /**
-  * @abstract
-  * @return {ImageBuilder}
-  * @public
-  */
+ /** @abstract @return {ImageBuilder} */
  m_createImageBuilder__() {}
- /**
-  * @abstract
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @abstract @return {InputBuilder} */
  m_createImageInputBuilder__() {}
- /**
-  * @abstract
-  * @return {LabelBuilder}
-  * @public
-  */
+ /** @abstract @return {LabelBuilder} */
  m_createLabelBuilder__() {}
- /**
-  * @abstract
-  * @return {LegendBuilder}
-  * @public
-  */
+ /** @abstract @return {LegendBuilder} */
  m_createLegendBuilder__() {}
- /**
-  * @abstract
-  * @return {LIBuilder}
-  * @public
-  */
+ /** @abstract @return {LIBuilder} */
  m_createLIBuilder__() {}
- /**
-  * @abstract
-  * @return {LinkBuilder}
-  * @public
-  */
+ /** @abstract @return {LinkBuilder} */
  m_createLinkBuilder__() {}
- /**
-  * @abstract
-  * @return {MapBuilder}
-  * @public
-  */
+ /** @abstract @return {MapBuilder} */
  m_createMapBuilder__() {}
- /**
-  * @abstract
-  * @return {MetaBuilder}
-  * @public
-  */
+ /** @abstract @return {MetaBuilder} */
  m_createMetaBuilder__() {}
- /**
-  * @abstract
-  * @return {OListBuilder}
-  * @public
-  */
+ /** @abstract @return {OListBuilder} */
  m_createOListBuilder__() {}
- /**
-  * @abstract
-  * @return {OptGroupBuilder}
-  * @public
-  */
+ /** @abstract @return {OptGroupBuilder} */
  m_createOptGroupBuilder__() {}
- /**
-  * @abstract
-  * @return {OptionBuilder}
-  * @public
-  */
+ /** @abstract @return {OptionBuilder} */
  m_createOptionBuilder__() {}
- /**
-  * @abstract
-  * @return {ParagraphBuilder}
-  * @public
-  */
+ /** @abstract @return {ParagraphBuilder} */
  m_createParagraphBuilder__() {}
- /**
-  * @abstract
-  * @return {ParamBuilder}
-  * @public
-  */
+ /** @abstract @return {ParamBuilder} */
  m_createParamBuilder__() {}
- /**
-  * @abstract
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @abstract @return {InputBuilder} */
  m_createPasswordInputBuilder__() {}
- /**
-  * @abstract
-  * @return {PreBuilder}
-  * @public
-  */
+ /** @abstract @return {PreBuilder} */
  m_createPreBuilder__() {}
- /**
-  * @abstract
-  * @return {ButtonBuilder}
-  * @public
-  */
+ /** @abstract @return {ButtonBuilder} */
  m_createPushButtonBuilder__() {}
- /**
-  * @abstract
-  * @return {QuoteBuilder}
-  * @public
-  */
+ /** @abstract @return {QuoteBuilder} */
  m_createQuoteBuilder__() {}
- /**
-  * @abstract
-  * @param {?string} name
-  * @return {InputBuilder}
-  * @public
-  */
- m_createRadioInputBuilder__java_lang_String(name) {}
- /**
-  * @abstract
-  * @return {ButtonBuilder}
-  * @public
-  */
+ /** @abstract @return {InputBuilder} */
+ m_createRadioInputBuilder__java_lang_String(/** ?string */ name) {}
+ /** @abstract @return {ButtonBuilder} */
  m_createResetButtonBuilder__() {}
- /**
-  * @abstract
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @abstract @return {InputBuilder} */
  m_createResetInputBuilder__() {}
- /**
-  * @abstract
-  * @return {ScriptBuilder}
-  * @public
-  */
+ /** @abstract @return {ScriptBuilder} */
  m_createScriptBuilder__() {}
- /**
-  * @abstract
-  * @return {SelectBuilder}
-  * @public
-  */
+ /** @abstract @return {SelectBuilder} */
  m_createSelectBuilder__() {}
- /**
-  * @abstract
-  * @return {SourceBuilder}
-  * @public
-  */
+ /** @abstract @return {SourceBuilder} */
  m_createSourceBuilder__() {}
- /**
-  * @abstract
-  * @return {SpanBuilder}
-  * @public
-  */
+ /** @abstract @return {SpanBuilder} */
  m_createSpanBuilder__() {}
- /**
-  * @abstract
-  * @return {StyleBuilder}
-  * @public
-  */
+ /** @abstract @return {StyleBuilder} */
  m_createStyleBuilder__() {}
- /**
-  * @abstract
-  * @return {ButtonBuilder}
-  * @public
-  */
+ /** @abstract @return {ButtonBuilder} */
  m_createSubmitButtonBuilder__() {}
- /**
-  * @abstract
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @abstract @return {InputBuilder} */
  m_createSubmitInputBuilder__() {}
- /**
-  * @abstract
-  * @return {TableBuilder}
-  * @public
-  */
+ /** @abstract @return {TableBuilder} */
  m_createTableBuilder__() {}
- /**
-  * @abstract
-  * @return {TableCaptionBuilder}
-  * @public
-  */
+ /** @abstract @return {TableCaptionBuilder} */
  m_createTableCaptionBuilder__() {}
- /**
-  * @abstract
-  * @return {TableSectionBuilder}
-  * @public
-  */
+ /** @abstract @return {TableSectionBuilder} */
  m_createTBodyBuilder__() {}
- /**
-  * @abstract
-  * @return {TableCellBuilder}
-  * @public
-  */
+ /** @abstract @return {TableCellBuilder} */
  m_createTDBuilder__() {}
- /**
-  * @abstract
-  * @return {TextAreaBuilder}
-  * @public
-  */
+ /** @abstract @return {TextAreaBuilder} */
  m_createTextAreaBuilder__() {}
- /**
-  * @abstract
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @abstract @return {InputBuilder} */
  m_createTextInputBuilder__() {}
- /**
-  * @abstract
-  * @return {TableSectionBuilder}
-  * @public
-  */
+ /** @abstract @return {TableSectionBuilder} */
  m_createTFootBuilder__() {}
- /**
-  * @abstract
-  * @return {TableCellBuilder}
-  * @public
-  */
+ /** @abstract @return {TableCellBuilder} */
  m_createTHBuilder__() {}
- /**
-  * @abstract
-  * @return {TableSectionBuilder}
-  * @public
-  */
+ /** @abstract @return {TableSectionBuilder} */
  m_createTHeadBuilder__() {}
- /**
-  * @abstract
-  * @return {TableRowBuilder}
-  * @public
-  */
+ /** @abstract @return {TableRowBuilder} */
  m_createTRBuilder__() {}
- /**
-  * @abstract
-  * @return {UListBuilder}
-  * @public
-  */
+ /** @abstract @return {UListBuilder} */
  m_createUListBuilder__() {}
- /**
-  * @abstract
-  * @return {VideoBuilder}
-  * @public
-  */
+ /** @abstract @return {VideoBuilder} */
  m_createVideoBuilder__() {}
- /**
-  * @abstract
-  * @param {?string} tagName
-  * @return {ElementBuilder}
-  * @public
-  */
- m_trustedCreate__java_lang_String(tagName) {}
- /**
-  * @public
-  */
+ /** @abstract @return {ElementBuilder} */
+ m_trustedCreate__java_lang_String(/** ?string */ tagName) {}
+ 
  static $clinit() {
   ElementBuilderFactory.$clinit = () =>{};
   ElementBuilderFactory.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ElementBuilderFactory;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   DomBuilderFactory = goog.module.get('org.gwtproject.dom.builder.client.DomBuilderFactory$impl');
@@ -530,7 +237,7 @@ class ElementBuilderFactory extends j_l_Object {
 }
 $Util.$setClassMetadata(ElementBuilderFactory, 'org.gwtproject.dom.builder.shared.ElementBuilderFactory');
 
-/** @public {ElementBuilderFactory} */
+/**@type {ElementBuilderFactory}*/
 ElementBuilderFactory.f_instance__org_gwtproject_dom_builder_shared_ElementBuilderFactory_;
 
 /* NATIVE.JS EPILOG */

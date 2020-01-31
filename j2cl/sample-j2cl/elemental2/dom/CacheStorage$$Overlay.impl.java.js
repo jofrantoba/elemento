@@ -10,58 +10,32 @@ let Promise_$Overlay = goog.forwardDeclare('elemental2.promise.Promise.$Overlay$
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class CacheStorage_$Overlay {
- /**
-  * @param {!CacheStorage} $thisArg
-  * @param {Request} request
-  * @param {CacheQueryOptions} options
-  * @return {Promise<Response>}
-  * @public
-  */
- static m_match__$devirt__elemental2_dom_CacheStorage__elemental2_dom_Request__elemental2_dom_CacheQueryOptions($thisArg, request, options) {
+ /** @return {Promise<Response>} */
+ static m_match__$devirt__elemental2_dom_CacheStorage__elemental2_dom_Request__elemental2_dom_CacheQueryOptions(/** !CacheStorage */ $thisArg, /** Request */ request, /** CacheQueryOptions */ options) {
   CacheStorage_$Overlay.$clinit();
-  return $thisArg.match(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)), options);
+  return $thisArg.match(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)), options);
  }
- /**
-  * @param {!CacheStorage} $thisArg
-  * @param {Request} request
-  * @return {Promise<Response>}
-  * @public
-  */
- static m_match__$devirt__elemental2_dom_CacheStorage__elemental2_dom_Request($thisArg, request) {
+ /** @return {Promise<Response>} */
+ static m_match__$devirt__elemental2_dom_CacheStorage__elemental2_dom_Request(/** !CacheStorage */ $thisArg, /** Request */ request) {
   CacheStorage_$Overlay.$clinit();
-  return $thisArg.match(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)));
+  return $thisArg.match(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)));
  }
- /**
-  * @param {!CacheStorage} $thisArg
-  * @param {?string} request
-  * @param {CacheQueryOptions} options
-  * @return {Promise<Response>}
-  * @public
-  */
- static m_match__$devirt__elemental2_dom_CacheStorage__java_lang_String__elemental2_dom_CacheQueryOptions($thisArg, request, options) {
+ /** @return {Promise<Response>} */
+ static m_match__$devirt__elemental2_dom_CacheStorage__java_lang_String__elemental2_dom_CacheQueryOptions(/** !CacheStorage */ $thisArg, /** ?string */ request, /** CacheQueryOptions */ options) {
   CacheStorage_$Overlay.$clinit();
-  return $thisArg.match(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)), options);
+  return $thisArg.match(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)), options);
  }
- /**
-  * @param {!CacheStorage} $thisArg
-  * @param {?string} request
-  * @return {Promise<Response>}
-  * @public
-  */
- static m_match__$devirt__elemental2_dom_CacheStorage__java_lang_String($thisArg, request) {
+ /** @return {Promise<Response>} */
+ static m_match__$devirt__elemental2_dom_CacheStorage__java_lang_String(/** !CacheStorage */ $thisArg, /** ?string */ request) {
   CacheStorage_$Overlay.$clinit();
-  return $thisArg.match(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)));
+  return $thisArg.match(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CacheStorage_$Overlay.$clinit = () =>{};
   CacheStorage_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }

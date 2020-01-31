@@ -14,55 +14,35 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {BlurHandler}
   */
 class HandlesAllFocusEvents extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_dom_client_HandlesAllFocusEvents__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {HasAllFocusHandlers} source
-  * @public
-  */
- m_handle__org_gwtproject_event_dom_client_HasAllFocusHandlers(source) {
+ 
+ m_handle__org_gwtproject_event_dom_client_HasAllFocusHandlers(/** HasAllFocusHandlers */ source) {
   HandlesAllFocusEvents.m_handle__org_gwtproject_event_dom_client_HasAllFocusHandlers__org_gwtproject_event_dom_client_BlurHandler(source, this);
  }
- /**
-  * @template H
-  * @param {HasAllFocusHandlers} eventSource
-  * @param {H} reciever
-  * @public
-  */
- static m_handle__org_gwtproject_event_dom_client_HasAllFocusHandlers__org_gwtproject_event_dom_client_BlurHandler(eventSource, reciever) {
+ /** @template H */
+ static m_handle__org_gwtproject_event_dom_client_HasAllFocusHandlers__org_gwtproject_event_dom_client_BlurHandler(/** HasAllFocusHandlers */ eventSource, /** H */ reciever) {
   HandlesAllFocusEvents.$clinit();
   eventSource.m_addBlurHandler__org_gwtproject_event_dom_client_BlurHandler(reciever);
-  eventSource.m_addFocusHandler__org_gwtproject_event_dom_client_FocusHandler(/**@type {FocusHandler} */ ($Casts.$to(reciever, FocusHandler)));
+  eventSource.m_addFocusHandler__org_gwtproject_event_dom_client_FocusHandler(/**@type {FocusHandler}*/ ($Casts.$to(reciever, FocusHandler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HandlesAllFocusEvents.$clinit = () =>{};
   HandlesAllFocusEvents.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HandlesAllFocusEvents;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

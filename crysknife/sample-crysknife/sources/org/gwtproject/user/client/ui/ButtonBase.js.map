@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ButtonBase.impl.java.js",
-"lineCount":76,
-"mappings":"A;;;;;;;;;;;;;;;MA2BsB,U;;;;CAAA,W;EAAAA,Q;;;;;;CAQV,kF,CAAmBC,I;EAC3BC,+F;;;;;;;CAGY,W;EACZC,kG;;;;;;;CAGY,W;EACZC,kG;;;;;;;CAGU,2B,CAA2BC,I;EACrCC,mH;;;;;;;CAGU,kD,CAAiBD,I;EAC3BC,sD;;;;;;;CAGU,2B,CAAeC,I;EACzBC,mH;;;;;QA7BkB,O;EAAAC,6B;EAAAA,0B;EAAAA;",
+"lineCount":49,
+"mappings":"A;;;;;;;;;;;;;;;MA2BsB,U;;CAAA,W;EAAAA,Q;;;CAQV,kF,eAAmBC,I;EAC3BC,+F;;;CAGY,W;EACZC,kG;;;CAGY,W;EACZC,kG;;;CAGU,2B,gBAA2BC,I;EACrCC,mH;;;CAGU,kD,iBAAiBD,I;EAC3BC,sD;;;CAGU,2B,gBAAeC,I;EACzBC,mH;;;QA7BkB,O;EAAAC,6B;EAAAA,0B;EAAAA;",
 "sources":["ButtonBase.java"],
 "names":["org.gwtproject.user.client.ui.ButtonBase.<synthetic: ctor_js>","elem","org.gwtproject.user.client.ui.ButtonBase.<init>","org.gwtproject.user.client.ui.ButtonBase.getHTML","org.gwtproject.user.client.ui.ButtonBase.getText","html","org.gwtproject.user.client.ui.ButtonBase.setHTML","text","org.gwtproject.user.client.ui.ButtonBase.setText","org.gwtproject.user.client.ui.ButtonBase.<clinit>"]
 }

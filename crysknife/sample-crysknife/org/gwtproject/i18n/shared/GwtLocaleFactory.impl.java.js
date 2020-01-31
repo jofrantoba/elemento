@@ -8,57 +8,27 @@ let GwtLocale = goog.forwardDeclare('org.gwtproject.i18n.shared.GwtLocale$impl')
  * @interface
  */
 class GwtLocaleFactory {
- /**
-  * @abstract
-  * @param {?string} language
-  * @param {?string} script
-  * @param {?string} region
-  * @param {?string} variant
-  * @return {GwtLocale}
-  * @public
-  */
- m_fromComponents__java_lang_String__java_lang_String__java_lang_String__java_lang_String(language, script, region, variant) {}
- /**
-  * @abstract
-  * @param {?string} localeName
-  * @return {GwtLocale}
-  * @public
-  */
- m_fromString__java_lang_String(localeName) {}
- /**
-  * @abstract
-  * @return {GwtLocale}
-  * @public
-  */
+ /** @abstract @return {GwtLocale} */
+ m_fromComponents__java_lang_String__java_lang_String__java_lang_String__java_lang_String(/** ?string */ language, /** ?string */ script, /** ?string */ region, /** ?string */ variant) {}
+ /** @abstract @return {GwtLocale} */
+ m_fromString__java_lang_String(/** ?string */ localeName) {}
+ /** @abstract @return {GwtLocale} */
  m_getDefault__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   GwtLocaleFactory.$clinit = () =>{};
   GwtLocaleFactory.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_i18n_shared_GwtLocaleFactory = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_i18n_shared_GwtLocaleFactory = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_i18n_shared_GwtLocaleFactory;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

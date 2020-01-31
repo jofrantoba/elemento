@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"IsTreeItem.impl.java.js",
-"lineCount":32,
-"mappings":"A;;;;;;;;;;MAsBiB,U;;;;;;CAKN,c;;;;;;QALM,M;EAAAA,qB;EAAAA,8B;;;;;QAAA,O;EAAAC,6B;EAAAA;",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;MAsBiB,U;;CAKN,c;;QALM,M;EAAAA,qB;EAAAA,8B;;;QAAA,O;EAAAC,6B;EAAAA;",
 "sources":["IsTreeItem.java"],
 "names":["org.gwtproject.user.client.ui.IsTreeItem.<synthetic: adapt_lambda>","org.gwtproject.user.client.ui.IsTreeItem.<clinit>"]
 }

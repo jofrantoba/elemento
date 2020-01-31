@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"KeyboardEventInit$$Overlay.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;MAyBiB,0B;;;;;QAEU,U;EAAAA,qC;EACvBA,iG;;;;;QAHa,O;EAAAC,6C;EAAAA;",
+"lineCount":17,
+"mappings":"A;;;;;;;MAyBiB,0B;;QAEU,U;EAAAA,qC;EACvBA,gG;;;QAHa,O;EAAAC,6C;EAAAA;",
 "sources":["KeyboardEventInit.java"],
 "names":["elemental2.dom.KeyboardEventInit$$Overlay.create","elemental2.dom.KeyboardEventInit$$Overlay.<clinit>"]
 }

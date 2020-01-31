@@ -6,44 +6,29 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 let Character = goog.forwardDeclare('java.lang.Character$impl');
 
 class Format extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!Format}
-  * @public
-  */
+ /** @return {!Format} */
  static $create__() {
   let $instance = new Format();
   $instance.$ctor__org_gwtproject_i18n_shared_BidiFormatterBase_Format__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_i18n_shared_BidiFormatterBase_Format__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  static get f_LRM_STRING__org_gwtproject_i18n_shared_BidiFormatterBase_Format() {
   return (Format.$clinit(), Format.$f_LRM_STRING__org_gwtproject_i18n_shared_BidiFormatterBase_Format);
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  static get f_RLM_STRING__org_gwtproject_i18n_shared_BidiFormatterBase_Format() {
   return (Format.$clinit(), Format.$f_RLM_STRING__org_gwtproject_i18n_shared_BidiFormatterBase_Format);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Format.$clinit = () =>{};
   Format.$loadModules();
@@ -51,17 +36,11 @@ class Format extends j_l_Object {
   Format.$f_LRM_STRING__org_gwtproject_i18n_shared_BidiFormatterBase_Format = Character.m_toString__char(Format.f_LRM__org_gwtproject_i18n_shared_BidiFormatterBase_Format);
   Format.$f_RLM_STRING__org_gwtproject_i18n_shared_BidiFormatterBase_Format = Character.m_toString__char(Format.f_RLM__org_gwtproject_i18n_shared_BidiFormatterBase_Format);
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Format;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Character = goog.module.get('java.lang.Character$impl');
  }
@@ -69,23 +48,23 @@ class Format extends j_l_Object {
 }
 $Util.$setClassMetadata(Format, 'org.gwtproject.i18n.shared.BidiFormatterBase$Format');
 
-/** @public {?string} @const */
+/**@const {?string}*/
 Format.f_LEFT__org_gwtproject_i18n_shared_BidiFormatterBase_Format = "left";
-/** @public {number} @const */
+/**@const {number}*/
 Format.f_LRE__org_gwtproject_i18n_shared_BidiFormatterBase_Format = 8234 /* '\u202A' */;
-/** @public {number} @const */
+/**@const {number}*/
 Format.f_LRM__org_gwtproject_i18n_shared_BidiFormatterBase_Format = 8206 /* '\u200E' */;
-/** @private {?string} */
+/**@private {?string}*/
 Format.$f_LRM_STRING__org_gwtproject_i18n_shared_BidiFormatterBase_Format;
-/** @public {number} @const */
+/**@const {number}*/
 Format.f_PDF__org_gwtproject_i18n_shared_BidiFormatterBase_Format = 8236 /* '\u202C' */;
-/** @public {?string} @const */
+/**@const {?string}*/
 Format.f_RIGHT__org_gwtproject_i18n_shared_BidiFormatterBase_Format = "right";
-/** @public {number} @const */
+/**@const {number}*/
 Format.f_RLE__org_gwtproject_i18n_shared_BidiFormatterBase_Format = 8235 /* '\u202B' */;
-/** @public {number} @const */
+/**@const {number}*/
 Format.f_RLM__org_gwtproject_i18n_shared_BidiFormatterBase_Format = 8207 /* '\u200F' */;
-/** @private {?string} */
+/**@private {?string}*/
 Format.$f_RLM_STRING__org_gwtproject_i18n_shared_BidiFormatterBase_Format;
 
 exports = Format; 

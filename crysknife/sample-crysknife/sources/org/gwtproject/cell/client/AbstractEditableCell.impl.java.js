@@ -16,65 +16,38 @@ let $Overlay = goog.forwardDeclare('org.gwtproject.dom.client.Element.$Overlay$i
  * @extends {AbstractCell<C>}
   */
 class AbstractEditableCell extends AbstractCell {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Map<*, V>} */
+  /**@type {Map<*, V>}*/
   this.f_viewDataMap__org_gwtproject_cell_client_AbstractEditableCell_;
  }
- /**
-  * Initialization from constructor 'AbstractEditableCell(String...)'.
-  * @param {Array<?string>} consumedEvents
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_AbstractEditableCell__arrayOf_java_lang_String(consumedEvents) {
+ //Initialization from constructor 'AbstractEditableCell(String...)'.
+ 
+ $ctor__org_gwtproject_cell_client_AbstractEditableCell__arrayOf_java_lang_String(/** Array<?string> */ consumedEvents) {
   this.$ctor__org_gwtproject_cell_client_AbstractCell__arrayOf_java_lang_String(consumedEvents);
   this.$init___$p_org_gwtproject_cell_client_AbstractEditableCell();
  }
- /**
-  * Initialization from constructor 'AbstractEditableCell(Set)'.
-  * @param {Set<?string>} consumedEvents
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_AbstractEditableCell__java_util_Set(consumedEvents) {
+ //Initialization from constructor 'AbstractEditableCell(Set)'.
+ 
+ $ctor__org_gwtproject_cell_client_AbstractEditableCell__java_util_Set(/** Set<?string> */ consumedEvents) {
   this.$ctor__org_gwtproject_cell_client_AbstractCell__java_util_Set(consumedEvents);
   this.$init___$p_org_gwtproject_cell_client_AbstractEditableCell();
  }
- /**
-  * @param {*} key
-  * @public
-  */
- m_clearViewData__java_lang_Object(key) {
+ 
+ m_clearViewData__java_lang_Object(/** * */ key) {
   if (!$Equality.$same(key, null)) {
    this.f_viewDataMap__org_gwtproject_cell_client_AbstractEditableCell_.remove(key);
   }
  }
- /**
-  * @param {*} key
-  * @return {V}
-  * @public
-  */
- m_getViewData__java_lang_Object(key) {
+ /** @return {V} */
+ m_getViewData__java_lang_Object(/** * */ key) {
   return $Equality.$same(key, null) ? null : this.f_viewDataMap__org_gwtproject_cell_client_AbstractEditableCell_.get(key);
  }
- /**
-  * @abstract
-  * @override
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {C} value
-  * @return {boolean}
-  * @public
-  */
- m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(context, parent, value) {}
- /**
-  * @param {*} key
-  * @param {V} viewData
-  * @public
-  */
- m_setViewData__java_lang_Object__java_lang_Object(key, viewData) {
+ /** @abstract @override @return {boolean} */
+ m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(/** Context */ context, /** Object */ parent, /** C */ value) {}
+ 
+ m_setViewData__java_lang_Object__java_lang_Object(/** * */ key, /** V */ viewData) {
   if ($Equality.$same(key, null)) {
    return;
   }
@@ -84,31 +57,21 @@ class AbstractEditableCell extends AbstractCell {
    this.f_viewDataMap__org_gwtproject_cell_client_AbstractEditableCell_.put(key, viewData);
   }
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_cell_client_AbstractEditableCell() {
-  this.f_viewDataMap__org_gwtproject_cell_client_AbstractEditableCell_ = /**@type {!HashMap<*, V>} */ (HashMap.$create__());
+  this.f_viewDataMap__org_gwtproject_cell_client_AbstractEditableCell_ = /**@type {!HashMap<*, V>}*/ (HashMap.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AbstractEditableCell.$clinit = () =>{};
   AbstractEditableCell.$loadModules();
   AbstractCell.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AbstractEditableCell;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   HashMap = goog.module.get('java.util.HashMap$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

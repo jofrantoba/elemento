@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CompositeEditor$EditorChain.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;MAqDmB,W;;;;;;;CAQV,+D,CAASA,M,EAAUC,S;;;;;;CAOnB,6C,CAASA,S;;;;;;;CAQZ,+C,CAAWA,S;;;;QAvBE,O;EAAAC,8B;EAAAA;",
+"lineCount":21,
+"mappings":"A;;;;;;;;;;MAqDmB,W;;CAQV,+D,UAASA,M,WAAUC,S;;CAOnB,6C,UAASA,S;;CAQZ,+C,UAAWA,S;;QAvBE,O;EAAAC,8B;EAAAA;",
 "sources":["CompositeEditor.java"],
 "names":["object","subEditor","org.gwtproject.editor.client.CompositeEditor$EditorChain.<clinit>"]
 }

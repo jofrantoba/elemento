@@ -9,52 +9,32 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $JavaScriptFunction = goog.forwardDeclare('vmbootstrap.JavaScriptFunction$impl');
 
 class OpenDatabaseCallbackUnionType_$Overlay {
- /**
-  * @param {*} o
-  * @return {?}
-  * @public
-  */
- static m_of__java_lang_Object(o) {
+ /** @return {?} */
+ static m_of__java_lang_Object(/** * */ o) {
   OpenDatabaseCallbackUnionType_$Overlay.$clinit();
-  return /**@type {?} */ (Js.m_cast__java_lang_Object(o));
+  return /**@type {?}*/ (Js.m_cast__java_lang_Object(o));
  }
- /**
-  * @param {?} $thisArg
-  * @return {DatabaseCallback}
-  * @public
-  */
- static m_asDatabaseCallback__$devirt__elemental2_dom_Window_OpenDatabaseCallbackUnionType($thisArg) {
+ /** @return {DatabaseCallback} */
+ static m_asDatabaseCallback__$devirt__elemental2_dom_Window_OpenDatabaseCallbackUnionType(/** ? */ $thisArg) {
   OpenDatabaseCallbackUnionType_$Overlay.$clinit();
-  return /**@type {DatabaseCallback} */ (Js.m_cast__java_lang_Object($thisArg));
+  return /**@type {DatabaseCallback}*/ (Js.m_cast__java_lang_Object($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {?function(Database):*}
-  * @public
-  */
- static m_asOpenDatabaseCallbackFn__$devirt__elemental2_dom_Window_OpenDatabaseCallbackUnionType($thisArg) {
+ /** @return {?function(Database):*} */
+ static m_asOpenDatabaseCallbackFn__$devirt__elemental2_dom_Window_OpenDatabaseCallbackUnionType(/** ? */ $thisArg) {
   OpenDatabaseCallbackUnionType_$Overlay.$clinit();
-  return /**@type {?function(Database):*} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $JavaScriptFunction));
+  return /**@type {?function(Database):*}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $JavaScriptFunction));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isOpenDatabaseCallbackFn__$devirt__elemental2_dom_Window_OpenDatabaseCallbackUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isOpenDatabaseCallbackFn__$devirt__elemental2_dom_Window_OpenDatabaseCallbackUnionType(/** ? */ $thisArg) {
   OpenDatabaseCallbackUnionType_$Overlay.$clinit();
-  return $JavaScriptFunction.$isInstance(/**@type {*} */ ($thisArg));
+  return $JavaScriptFunction.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   OpenDatabaseCallbackUnionType_$Overlay.$clinit = () =>{};
   OpenDatabaseCallbackUnionType_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

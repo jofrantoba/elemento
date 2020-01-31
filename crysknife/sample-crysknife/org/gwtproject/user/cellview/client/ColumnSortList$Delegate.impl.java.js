@@ -8,48 +8,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.user.cellview.client.Co
  * @interface
  */
 class Delegate {
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_onModification__() {}
- /**
-  * @param {?function():void} fn
-  * @return {Delegate}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {Delegate} */
+ static $adapt(/** ?function():void */ fn) {
   Delegate.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Delegate.$clinit = () =>{};
   Delegate.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_cellview_client_ColumnSortList_Delegate = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_cellview_client_ColumnSortList_Delegate = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_cellview_client_ColumnSortList_Delegate;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.user.cellview.client.ColumnSortList.Delegate.$LambdaAdaptor$impl');
  }

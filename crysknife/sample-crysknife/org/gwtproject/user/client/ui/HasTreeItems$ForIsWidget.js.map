@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasTreeItems$ForIsWidget.impl.java.js",
-"lineCount":26,
-"mappings":"A;;;;;;;;;;;;MA4BY,W;;;;;;;CACC,iD,CAAiBA,C;;;;QADlB,O;EAAAC,8B;EAAAA;",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;;;MA4BY,W;;CACC,iD,iBAAiBA,C;;QADlB,O;EAAAC,8B;EAAAA;",
 "sources":["HasTreeItems.java"],
 "names":["w","org.gwtproject.user.client.ui.HasTreeItems$ForIsWidget.<clinit>"]
 }

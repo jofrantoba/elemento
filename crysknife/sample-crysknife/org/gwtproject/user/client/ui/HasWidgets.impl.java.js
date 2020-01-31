@@ -11,61 +11,31 @@ let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
  * @extends {Iterable<Widget>}
  */
 class HasWidgets {
- /**
-  * @abstract
-  * @param {Widget} w
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget(w) {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
+ m_add__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {}
+ /** @abstract */
  m_clear__() {}
- /**
-  * @abstract
-  * @override
-  * @return {Iterator<Widget>}
-  * @public
-  */
+ /** @abstract @override @return {Iterator<Widget>} */
  m_iterator__() {}
- /**
-  * @abstract
-  * @param {Widget} w
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_Widget(w) {}
- /**
-  * @public
-  */
+ /** @abstract @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {}
+ 
  static $clinit() {
   HasWidgets.$clinit = () =>{};
   HasWidgets.$loadModules();
   Iterable.$clinit();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Iterable.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_HasWidgets = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Iterable.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_HasWidgets = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_HasWidgets;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

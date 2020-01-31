@@ -9,91 +9,60 @@ let SafeHtml = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHtml$impl
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class HtmlOnlyTableSectionBuilder extends HtmlTableSectionBuilder {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {HtmlBuilderImpl} */
+  /**@type {HtmlBuilderImpl}*/
   this.f_delegate__org_gwtproject_dom_builder_shared_HtmlOnlyTableSectionBuilder_;
  }
- /**
-  * @return {HtmlOnlyTableSectionBuilder}
-  * @public
-  */
+ /** @return {HtmlOnlyTableSectionBuilder} */
  static m_createTBodyBuilder__() {
   HtmlOnlyTableSectionBuilder.$clinit();
   let htmlBuilderImpl = HtmlBuilderImpl.$create__();
   htmlBuilderImpl.m_startTBody__();
   return HtmlOnlyTableSectionBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(htmlBuilderImpl);
  }
- /**
-  * @return {HtmlOnlyTableSectionBuilder}
-  * @public
-  */
+ /** @return {HtmlOnlyTableSectionBuilder} */
  static m_createTFootBuilder__() {
   HtmlOnlyTableSectionBuilder.$clinit();
   let htmlBuilderImpl = HtmlBuilderImpl.$create__();
   htmlBuilderImpl.m_startTFoot__();
   return HtmlOnlyTableSectionBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(htmlBuilderImpl);
  }
- /**
-  * @return {HtmlOnlyTableSectionBuilder}
-  * @public
-  */
+ /** @return {HtmlOnlyTableSectionBuilder} */
  static m_createTHeadBuilder__() {
   HtmlOnlyTableSectionBuilder.$clinit();
   let htmlBuilderImpl = HtmlBuilderImpl.$create__();
   htmlBuilderImpl.m_startTHead__();
   return HtmlOnlyTableSectionBuilder.$create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(htmlBuilderImpl);
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @return {!HtmlOnlyTableSectionBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ /** @return {!HtmlOnlyTableSectionBuilder} */
+ static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   let $instance = new HtmlOnlyTableSectionBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_shared_HtmlOnlyTableSectionBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_shared_HtmlOnlyTableSectionBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_shared_HtmlOnlyTableSectionBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_shared_HtmlTableSectionBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate);
   this.f_delegate__org_gwtproject_dom_builder_shared_HtmlOnlyTableSectionBuilder_ = delegate;
  }
- /**
-  * @override
-  * @param {SafeHtml} html
-  * @return {TableSectionBuilder}
-  * @public
-  */
- m_html__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ /** @override @return {TableSectionBuilder} */
+ m_html__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   this.f_delegate__org_gwtproject_dom_builder_shared_HtmlOnlyTableSectionBuilder_.m_html__org_gwtproject_safehtml_shared_SafeHtml(html);
-  return /**@type {TableSectionBuilder} */ ($Casts.$to(this.m_getReturnBuilder__(), TableSectionBuilder));
+  return /**@type {TableSectionBuilder}*/ ($Casts.$to(this.m_getReturnBuilder__(), TableSectionBuilder));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HtmlOnlyTableSectionBuilder.$clinit = () =>{};
   HtmlOnlyTableSectionBuilder.$loadModules();
   HtmlTableSectionBuilder.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HtmlOnlyTableSectionBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   HtmlBuilderImpl = goog.module.get('org.gwtproject.dom.builder.shared.HtmlBuilderImpl$impl');
   TableSectionBuilder = goog.module.get('org.gwtproject.dom.builder.shared.TableSectionBuilder$impl');

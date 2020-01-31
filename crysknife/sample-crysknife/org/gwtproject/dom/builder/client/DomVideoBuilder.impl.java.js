@@ -13,79 +13,47 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {VideoBuilder}
   */
 class DomVideoBuilder extends DomMediaBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @return {!DomVideoBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ /** @return {!DomVideoBuilder} */
+ static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   DomVideoBuilder.$clinit();
   let $instance = new DomVideoBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_client_DomVideoBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_client_DomVideoBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_client_DomVideoBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_client_DomMediaBuilderBase__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
  }
- /**
-  * @override
-  * @param {number} height
-  * @return {VideoBuilder}
-  * @public
-  */
- m_height__int(height) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).height = height;
+ /** @override @return {VideoBuilder} */
+ m_height__int(/** number */ height) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).height = height;
   return this;
  }
- /**
-  * @override
-  * @param {?string} url
-  * @return {VideoBuilder}
-  * @public
-  */
- m_poster__java_lang_String(url) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).poster = url;
+ /** @override @return {VideoBuilder} */
+ m_poster__java_lang_String(/** ?string */ url) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).poster = url;
   return this;
  }
- /**
-  * @override
-  * @param {number} width
-  * @return {VideoBuilder}
-  * @public
-  */
- m_width__int(width) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).width = width;
+ /** @override @return {VideoBuilder} */
+ m_width__int(/** number */ width) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).width = width;
   return this;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomVideoBuilder.$clinit = () =>{};
   DomVideoBuilder.$loadModules();
   DomMediaBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomVideoBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('org.gwtproject.dom.client.VideoElement.$Overlay$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

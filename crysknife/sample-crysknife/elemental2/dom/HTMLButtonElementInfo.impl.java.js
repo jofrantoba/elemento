@@ -4,47 +4,32 @@ const j_l_Object = goog.require('java.lang.Object$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 
 class HTMLButtonElementInfo extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!HTMLButtonElementInfo}
-  * @public
-  */
+ /** @return {!HTMLButtonElementInfo} */
  static $create__() {
   HTMLButtonElementInfo.$clinit();
   let $instance = new HTMLButtonElementInfo();
   $instance.$ctor__elemental2_dom_HTMLButtonElementInfo__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__elemental2_dom_HTMLButtonElementInfo__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HTMLButtonElementInfo.$clinit = () =>{};
   HTMLButtonElementInfo.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HTMLButtonElementInfo;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

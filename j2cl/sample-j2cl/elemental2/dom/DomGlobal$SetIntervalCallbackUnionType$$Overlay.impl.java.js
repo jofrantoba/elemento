@@ -9,79 +9,47 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $JavaScriptFunction = goog.forwardDeclare('vmbootstrap.JavaScriptFunction$impl');
 
 class SetIntervalCallbackUnionType_$Overlay {
- /**
-  * @param {*} o
-  * @return {?}
-  * @public
-  */
- static m_of__java_lang_Object(o) {
+ /** @return {?} */
+ static m_of__java_lang_Object(/** * */ o) {
   SetIntervalCallbackUnionType_$Overlay.$clinit();
-  return /**@type {?} */ (Js.m_cast__java_lang_Object(o));
+  return /**@type {?}*/ (Js.m_cast__java_lang_Object(o));
  }
- /**
-  * @param {?} $thisArg
-  * @return {?function(...*):void}
-  * @public
-  */
- static m_asSetIntervalCallbackFn__$devirt__elemental2_dom_DomGlobal_SetIntervalCallbackUnionType($thisArg) {
+ /** @return {?function(...*):void} */
+ static m_asSetIntervalCallbackFn__$devirt__elemental2_dom_DomGlobal_SetIntervalCallbackUnionType(/** ? */ $thisArg) {
   SetIntervalCallbackUnionType_$Overlay.$clinit();
-  return /**@type {?function(...*):void} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $JavaScriptFunction));
+  return /**@type {?function(...*):void}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $JavaScriptFunction));
  }
- /**
-  * @param {?} $thisArg
-  * @return {?string}
-  * @public
-  */
- static m_asString__$devirt__elemental2_dom_DomGlobal_SetIntervalCallbackUnionType($thisArg) {
+ /** @return {?string} */
+ static m_asString__$devirt__elemental2_dom_DomGlobal_SetIntervalCallbackUnionType(/** ? */ $thisArg) {
   SetIntervalCallbackUnionType_$Overlay.$clinit();
   return Js.m_asString__java_lang_Object($thisArg);
  }
- /**
-  * @param {?} $thisArg
-  * @return {TrustedScript}
-  * @public
-  */
- static m_asTrustedScript__$devirt__elemental2_dom_DomGlobal_SetIntervalCallbackUnionType($thisArg) {
+ /** @return {TrustedScript} */
+ static m_asTrustedScript__$devirt__elemental2_dom_DomGlobal_SetIntervalCallbackUnionType(/** ? */ $thisArg) {
   SetIntervalCallbackUnionType_$Overlay.$clinit();
-  return /**@type {TrustedScript} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $Overlay));
+  return /**@type {TrustedScript}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $Overlay));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isSetIntervalCallbackFn__$devirt__elemental2_dom_DomGlobal_SetIntervalCallbackUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isSetIntervalCallbackFn__$devirt__elemental2_dom_DomGlobal_SetIntervalCallbackUnionType(/** ? */ $thisArg) {
   SetIntervalCallbackUnionType_$Overlay.$clinit();
-  return $JavaScriptFunction.$isInstance(/**@type {*} */ ($thisArg));
+  return $JavaScriptFunction.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isString__$devirt__elemental2_dom_DomGlobal_SetIntervalCallbackUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isString__$devirt__elemental2_dom_DomGlobal_SetIntervalCallbackUnionType(/** ? */ $thisArg) {
   SetIntervalCallbackUnionType_$Overlay.$clinit();
-  return j_l_String.$isInstance(/**@type {*} */ ($thisArg));
+  return j_l_String.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isTrustedScript__$devirt__elemental2_dom_DomGlobal_SetIntervalCallbackUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isTrustedScript__$devirt__elemental2_dom_DomGlobal_SetIntervalCallbackUnionType(/** ? */ $thisArg) {
   SetIntervalCallbackUnionType_$Overlay.$clinit();
-  return $Overlay.$isInstance(/**@type {*} */ ($thisArg));
+  return $Overlay.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SetIntervalCallbackUnionType_$Overlay.$clinit = () =>{};
   SetIntervalCallbackUnionType_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('elemental2.dom.TrustedScript.$Overlay$impl');
   j_l_String = goog.module.get('java.lang.String$impl');

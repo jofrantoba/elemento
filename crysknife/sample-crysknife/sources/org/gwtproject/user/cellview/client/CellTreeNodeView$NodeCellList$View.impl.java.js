@@ -38,58 +38,33 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {View<C>}
   */
 class NodeCellList_View extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {NodeCellList<C>} */
+  /**@type {NodeCellList<C>}*/
   this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_childContainer__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View_;
  }
- /**
-  * @template C
-  * @param {NodeCellList<C>} $outer_this
-  * @param {Object} childContainer
-  * @return {!NodeCellList_View<C>}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList__org_gwtproject_dom_client_Element($outer_this, childContainer) {
+ /** @template C @return {!NodeCellList_View<C>} */
+ static $create__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList__org_gwtproject_dom_client_Element(/** NodeCellList<C> */ $outer_this, /** Object */ childContainer) {
   NodeCellList_View.$clinit();
   let $instance = new NodeCellList_View();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList__org_gwtproject_dom_client_Element($outer_this, childContainer);
   return $instance;
  }
- /**
-  * @param {NodeCellList<C>} $outer_this
-  * @param {Object} childContainer
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList__org_gwtproject_dom_client_Element($outer_this, childContainer) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList__org_gwtproject_dom_client_Element(/** NodeCellList<C> */ $outer_this, /** Object */ childContainer) {
   this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View = $outer_this;
   this.$ctor__java_lang_Object__();
   this.f_childContainer__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View_ = childContainer;
  }
- /**
-  * @override
-  * @template H
-  * @param {H} handler
-  * @param {Type<H>} type
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, type) {
+ /** @override @template H @return {HandlerRegistration} */
+ m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(/** H */ handler, /** Type<H> */ type) {
   return this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_handlerManger__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.m_addHandler__org_gwtproject_event_shared_Event_Type__java_lang_Object(type, handler);
  }
- /**
-  * @param {SafeHtmlBuilder} sb
-  * @param {List<C>} values
-  * @param {number} start
-  * @param {SelectionModel<?>} selectionModel
-  * @public
-  */
- m_render__org_gwtproject_safehtml_shared_SafeHtmlBuilder__java_util_List__int__org_gwtproject_view_client_SelectionModel(sb, values, start, selectionModel) {
+ 
+ m_render__org_gwtproject_safehtml_shared_SafeHtmlBuilder__java_util_List__int__org_gwtproject_view_client_SelectionModel(/** SafeHtmlBuilder */ sb, /** List<C> */ values, /** number */ start, /** SelectionModel<?> */ selectionModel) {
   let style = this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_getStyle___$pp_org_gwtproject_user_cellview_client();
   let itemValueStyle = style.m_cellTreeItemValue__();
   let selectedStyle = " " + j_l_String.m_valueOf__java_lang_Object(style.m_cellTreeSelectedItem__());
@@ -104,7 +79,7 @@ class NodeCellList_View extends j_l_Object {
   let imageWidth = this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_getImageWidth___$pp_org_gwtproject_user_cellview_client();
   let paddingDirection = LocaleInfo.m_getCurrentLocale__().m_isRTL__() ? "right" : "left";
   let paddingAmount = imageWidth * this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_depth__org_gwtproject_user_cellview_client_CellTreeNodeView_;
-  let openNodes = /**@type {!HashSet<*>} */ (HashSet.$create__());
+  let openNodes = /**@type {!HashSet<*>}*/ (HashSet.$create__());
   let childCount = this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.m_getChildCount__();
   let end = start + values.size();
   for (let i = start; i < end && i < childCount; i++) {
@@ -153,14 +128,8 @@ class NodeCellList_View extends j_l_Object {
    sb.m_append__org_gwtproject_safehtml_shared_SafeHtml(Template.f_INSTANCE__org_gwtproject_user_cellview_client_CellTreeNodeView_Template.m_outerDiv__org_gwtproject_safecss_shared_SafeStyles__java_lang_String__org_gwtproject_safehtml_shared_SafeHtml__java_lang_String(outerPadding, outerClasses.toString(), innerDiv, ariaSelected));
   }
  }
- /**
-  * @override
-  * @param {List<C>} values
-  * @param {SelectionModel<?>} selectionModel
-  * @param {boolean} stealFocus
-  * @public
-  */
- m_replaceAllChildren__java_util_List__org_gwtproject_view_client_SelectionModel__boolean(values, selectionModel, stealFocus) {
+ /** @override */
+ m_replaceAllChildren__java_util_List__org_gwtproject_view_client_SelectionModel__boolean(/** List<C> */ values, /** SelectionModel<?> */ selectionModel, /** boolean */ stealFocus) {
   let sb = SafeHtmlBuilder.$create__();
   this.m_render__org_gwtproject_safehtml_shared_SafeHtmlBuilder__java_util_List__int__org_gwtproject_view_client_SelectionModel(sb, values, 0, selectionModel);
   if (this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_isAnimationEnabled__()) {
@@ -174,26 +143,19 @@ class NodeCellList_View extends j_l_Object {
   let childCount = this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_children__org_gwtproject_user_cellview_client_CellTreeNodeView_.size();
   while (childCount > size) {
    childCount--;
-   let deleted = /**@type {CellTreeNodeView<*>} */ ($Casts.$to(this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_children__org_gwtproject_user_cellview_client_CellTreeNodeView_.removeAtIndex(childCount), CellTreeNodeView));
+   let deleted = /**@type {CellTreeNodeView<*>}*/ ($Casts.$to(this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_children__org_gwtproject_user_cellview_client_CellTreeNodeView_.removeAtIndex(childCount), CellTreeNodeView));
    deleted.m_cleanup__boolean(true);
   }
   this.m_loadChildState__java_util_List__int__java_util_Map_$p_org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View(values, 0, savedViews);
   if (this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.m_isRootNode___$pp_org_gwtproject_user_cellview_client() && $Equality.$same(this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_getKeyboardSelectedNode___$pp_org_gwtproject_user_cellview_client(), this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_) && values.size() > 0) {
-   this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_keyboardSelect__org_gwtproject_user_cellview_client_CellTreeNodeView__boolean_$pp_org_gwtproject_user_cellview_client(/**@type {CellTreeNodeView<*>} */ ($Casts.$to(this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_children__org_gwtproject_user_cellview_client_CellTreeNodeView_.getAtIndex(0), CellTreeNodeView)), false);
+   this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_keyboardSelect__org_gwtproject_user_cellview_client_CellTreeNodeView__boolean_$pp_org_gwtproject_user_cellview_client(/**@type {CellTreeNodeView<*>}*/ ($Casts.$to(this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_children__org_gwtproject_user_cellview_client_CellTreeNodeView_.getAtIndex(0), CellTreeNodeView)), false);
   }
   if (this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_isAnimationEnabled__()) {
    this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_maybeAnimateTreeNode__org_gwtproject_user_cellview_client_CellTreeNodeView_$pp_org_gwtproject_user_cellview_client(this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_);
   }
  }
- /**
-  * @override
-  * @param {List<C>} values
-  * @param {number} start
-  * @param {SelectionModel<?>} selectionModel
-  * @param {boolean} stealFocus
-  * @public
-  */
- m_replaceChildren__java_util_List__int__org_gwtproject_view_client_SelectionModel__boolean(values, start, selectionModel, stealFocus) {
+ /** @override */
+ m_replaceChildren__java_util_List__int__org_gwtproject_view_client_SelectionModel__boolean(/** List<C> */ values, /** number */ start, /** SelectionModel<?> */ selectionModel, /** boolean */ stealFocus) {
   let sb = SafeHtmlBuilder.$create__();
   this.m_render__org_gwtproject_safehtml_shared_SafeHtmlBuilder__java_util_List__int__org_gwtproject_view_client_SelectionModel(sb, values, 0, selectionModel);
   let savedViews = this.m_saveChildState__java_util_List__int_$p_org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View(values, start);
@@ -204,40 +166,22 @@ class NodeCellList_View extends j_l_Object {
   this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_.f_isRefreshing__org_gwtproject_user_cellview_client_CellTree = false;
   this.m_loadChildState__java_util_List__int__java_util_Map_$p_org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View(values, start, savedViews);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_resetFocus__() {
   this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_resetFocus___$pp_org_gwtproject_user_cellview_client();
  }
- /**
-  * @override
-  * @param {number} index
-  * @param {boolean} selected
-  * @param {boolean} stealFocus
-  * @public
-  */
- m_setKeyboardSelected__int__boolean__boolean(index, selected, stealFocus) {
-  let elem = /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Node_$Overlay.m_getChild__$devirt__org_gwtproject_dom_client_Node__int(this.f_childContainer__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View_, index)), Element_$Overlay));
+ /** @override */
+ m_setKeyboardSelected__int__boolean__boolean(/** number */ index, /** boolean */ selected, /** boolean */ stealFocus) {
+  let elem = /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Node_$Overlay.m_getChild__$devirt__org_gwtproject_dom_client_Node__int(this.f_childContainer__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View_, index)), Element_$Overlay));
   UIObject.m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String__boolean(CellTreeNodeView.m_getSelectionElement__org_gwtproject_dom_client_Element(elem), this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_getStyle___$pp_org_gwtproject_user_cellview_client().m_cellTreeKeyboardSelectedItem__(), selected);
  }
- /**
-  * @override
-  * @param {LoadingState} state
-  * @public
-  */
- m_setLoadingState__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_LoadingState(state) {
+ /** @override */
+ m_setLoadingState__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_LoadingState(/** LoadingState */ state) {
   this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.m_updateImage__boolean_$p_org_gwtproject_user_cellview_client_CellTreeNodeView($Equality.$same(state, LoadingState.f_LOADING__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_LoadingState));
   CellTreeNodeView.m_showOrHide__org_gwtproject_dom_client_Element__boolean(this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_emptyMessageElem__org_gwtproject_user_cellview_client_CellTreeNodeView_, $Equality.$same(state, LoadingState.f_LOADED__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_LoadingState) && this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_presenter__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList.m_isEmpty__());
  }
- /**
-  * @param {List<C>} values
-  * @param {number} start
-  * @param {Map<*, CellTreeNodeView<?>>} savedViews
-  * @public
-  */
- m_loadChildState__java_util_List__int__java_util_Map_$p_org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View(values, start, savedViews) {
+ 
+ m_loadChildState__java_util_List__int__java_util_Map_$p_org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View(/** List<C> */ values, /** number */ start, /** Map<*, CellTreeNodeView<?>> */ savedViews) {
   let len = values.size();
   let end = start + len;
   let childCount = this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.m_getChildCount__();
@@ -248,8 +192,8 @@ class NodeCellList_View extends j_l_Object {
   let keyboardSelected = this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_getKeyboardSelectedNode___$pp_org_gwtproject_user_cellview_client();
   for (let i = start; i < end; i++) {
    let childValue = values.getAtIndex(i - start);
-   let child = /**@type {CellTreeNodeView<C>} */ (this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.m_createTreeNodeView__org_gwtproject_view_client_TreeViewModel_NodeInfo__org_gwtproject_dom_client_Element__java_lang_Object__java_lang_Object(this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeInfo__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_, childElem, childValue, null));
-   let savedChild = /**@type {CellTreeNodeView<*>} */ ($Casts.$to(savedViews.remove(keyProvider.m_getKey__java_lang_Object(childValue)), CellTreeNodeView));
+   let child = /**@type {CellTreeNodeView<C>}*/ (this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.m_createTreeNodeView__org_gwtproject_view_client_TreeViewModel_NodeInfo__org_gwtproject_dom_client_Element__java_lang_Object__java_lang_Object(this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeInfo__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_, childElem, childValue, null));
+   let savedChild = /**@type {CellTreeNodeView<*>}*/ ($Casts.$to(savedViews.remove(keyProvider.m_getKey__java_lang_Object(childValue)), CellTreeNodeView));
    if (!$Equality.$same(savedChild, null)) {
     child.f_animationFrame__org_gwtproject_user_cellview_client_CellTreeNodeView_ = savedChild.f_animationFrame__org_gwtproject_user_cellview_client_CellTreeNodeView_;
     child.f_contentContainer__org_gwtproject_user_cellview_client_CellTreeNodeView_ = savedChild.f_contentContainer__org_gwtproject_user_cellview_client_CellTreeNodeView_;
@@ -270,7 +214,7 @@ class NodeCellList_View extends j_l_Object {
     }
     if (!$Equality.$same(child.f_children__org_gwtproject_user_cellview_client_CellTreeNodeView_, null)) {
      for (let $iterator = child.f_children__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_iterator__(); $iterator.m_hasNext__(); ) {
-      let grandchild = /**@type {CellTreeNodeView<*>} */ ($Casts.$to($iterator.m_next__(), CellTreeNodeView));
+      let grandchild = /**@type {CellTreeNodeView<*>}*/ ($Casts.$to($iterator.m_next__(), CellTreeNodeView));
       grandchild.f_parentNode__org_gwtproject_user_cellview_client_CellTreeNodeView_ = child;
      }
     }
@@ -297,21 +241,16 @@ class NodeCellList_View extends j_l_Object {
    curNode = curNode.f_parentNode__org_gwtproject_user_cellview_client_CellTreeNodeView_;
   }
  }
- /**
-  * @param {List<C>} values
-  * @param {number} start
-  * @return {Map<*, CellTreeNodeView<?>>}
-  * @public
-  */
- m_saveChildState__java_util_List__int_$p_org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View(values, start) {
+ /** @return {Map<*, CellTreeNodeView<?>>} */
+ m_saveChildState__java_util_List__int_$p_org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View(/** List<C> */ values, /** number */ start) {
   if ($Equality.$same(this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_children__org_gwtproject_user_cellview_client_CellTreeNodeView_, null)) {
-   this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_children__org_gwtproject_user_cellview_client_CellTreeNodeView_ = /**@type {!ArrayList<CellTreeNodeView<?>>} */ (ArrayList.$create__());
+   this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_children__org_gwtproject_user_cellview_client_CellTreeNodeView_ = /**@type {!ArrayList<CellTreeNodeView<?>>}*/ (ArrayList.$create__());
   }
   let len = values.size();
   let end = start + len;
   let childCount = this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.m_getChildCount__();
   let keyboardSelected = this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.f_tree__org_gwtproject_user_cellview_client_CellTreeNodeView_.m_getKeyboardSelectedNode___$pp_org_gwtproject_user_cellview_client();
-  let openNodes = /**@type {!HashMap<*, CellTreeNodeView<?>>} */ (HashMap.$create__());
+  let openNodes = /**@type {!HashMap<*, CellTreeNodeView<?>>}*/ (HashMap.$create__());
   for (let i = start; i < end && i < childCount; i++) {
    let child = this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeView__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.m_getChildNode__int(i);
    if (child.m_isOpen__() || $Equality.$same(child, keyboardSelected)) {
@@ -321,41 +260,33 @@ class NodeCellList_View extends j_l_Object {
    }
   }
   let keyProvider = this.f_$outer_this__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_View.f_nodeInfo__org_gwtproject_user_cellview_client_CellTreeNodeView_NodeCellList_.m_getProvidesKey__();
-  let savedViews = /**@type {!HashMap<*, CellTreeNodeView<?>>} */ (HashMap.$create__());
+  let savedViews = /**@type {!HashMap<*, CellTreeNodeView<?>>}*/ (HashMap.$create__());
   for (let $iterator = values.m_iterator__(); $iterator.m_hasNext__(); ) {
    let childValue = $iterator.m_next__();
    let key = keyProvider.m_getKey__java_lang_Object(childValue);
-   let savedView = /**@type {CellTreeNodeView<*>} */ ($Casts.$to(openNodes.remove(key), CellTreeNodeView));
+   let savedView = /**@type {CellTreeNodeView<*>}*/ ($Casts.$to(openNodes.remove(key), CellTreeNodeView));
    if (!$Equality.$same(savedView, null)) {
     Node_$Overlay.m_removeFromParent__$devirt__org_gwtproject_dom_client_Node(savedView.m_ensureAnimationFrame___$pp_org_gwtproject_user_cellview_client());
     savedViews.put(key, savedView);
    }
   }
   for (let $iterator_1 = openNodes.values().m_iterator__(); $iterator_1.m_hasNext__(); ) {
-   let lostNode = /**@type {CellTreeNodeView<*>} */ ($Casts.$to($iterator_1.m_next__(), CellTreeNodeView));
+   let lostNode = /**@type {CellTreeNodeView<*>}*/ ($Casts.$to($iterator_1.m_next__(), CellTreeNodeView));
    lostNode.m_cleanup__boolean(true);
   }
   return savedViews;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NodeCellList_View.$clinit = () =>{};
   NodeCellList_View.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof NodeCellList_View;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   StringBuilder = goog.module.get('java.lang.StringBuilder$impl');

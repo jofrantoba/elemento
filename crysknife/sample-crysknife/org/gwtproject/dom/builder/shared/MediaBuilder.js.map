@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MediaBuilder.impl.java.js",
-"lineCount":55,
-"mappings":"A;;;;;;;;;;MAsBiB,Y;;;;;;CAKb,Y;;;;;;CAKA,Y;;;;;;CAKA,Q;;;;;;CAKA,S;;;;;;;CAUA,2B,CAAeA,O;;;;;;;CAKf,uB,CAAWC,G;;;;QAnCE,O;EAAAC,+B;EAAAA;",
+"lineCount":27,
+"mappings":"A;;;;;;;;;;MAsBiB,Y;;CAKb,Y;;CAKA,Y;;CAKA,Q;;CAKA,S;;CAUA,2B,gBAAeA,O;;CAKf,uB,gBAAWC,G;;QAnCE,O;EAAAC,+B;EAAAA;",
 "sources":["MediaBuilder.java"],
 "names":["preload","url","org.gwtproject.dom.builder.shared.MediaBuilder.<clinit>"]
 }

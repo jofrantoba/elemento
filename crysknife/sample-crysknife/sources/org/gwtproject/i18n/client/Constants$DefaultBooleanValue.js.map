@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Constants$DefaultBooleanValue.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;MAmPoB,mB;;;;;;CAChB,S;;;;QADgB,O;EAAAA,sC;EAAAA;",
+"lineCount":16,
+"mappings":"A;;;;;;;;;MAmPoB,mB;;CAChB,S;;QADgB,O;EAAAA,sC;EAAAA;",
 "sources":["Constants.java"],
 "names":["org.gwtproject.i18n.client.Constants$DefaultBooleanValue.<clinit>"]
 }

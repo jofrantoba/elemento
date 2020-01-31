@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"InstanceImpl.impl.java.js",
-"lineCount":71,
-"mappings":"A;;;;;;;;;;;;;;MAUa,Y;;;;CAAA,W;EAAAA,Q;EAAAA;OAEG,qEAFHA,C;;;;;;;;QAIF,8B,CAAyBC,Q;EAAzBC,uB;EAAAA,mC;EAAAA,4G;EAAAA,iB;;;;;;CAAA,uF,CAAyBD,Q;EAAzBE,iC;EACHA,sF;;;;;;;CAIK,O;EACLC,4F;;;;;;;CAIQ,2B,CAAUC,I;EAClBC,kE;;;;;;CAIQ,c;;;;QAnBH,O;EAAAC,+B;EAAAA,4B;EAAAA;",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;;;;MAUa,Y;;CAAA,W;EAAAA,Q;EAAAA;OAEG,qEAFHA,C;;;QAIF,8B,oBAAyBC,Q;EAAzBC,uB;EAAAA,mC;EAAAA,4G;EAAAA,iB;;;CAAA,uF,oBAAyBD,Q;EAAzBE,iC;EACHA,sF;;;CAIK,O;EACLC,4F;;;CAIQ,2B,UAAUC,I;EAClBC,kE;;;CAIQ,c;;QAnBH,O;EAAAC,+B;EAAAA,4B;EAAAA;",
 "sources":["InstanceImpl.java"],
 "names":["org.treblereel.gwt.crysknife.client.internal.InstanceImpl.<synthetic: ctor_js>","provider","org.treblereel.gwt.crysknife.client.internal.InstanceImpl.<synthetic: ctor_create>","org.treblereel.gwt.crysknife.client.internal.InstanceImpl.<init>","org.treblereel.gwt.crysknife.client.internal.InstanceImpl.get","var1","org.treblereel.gwt.crysknife.client.internal.InstanceImpl.destroy","org.treblereel.gwt.crysknife.client.internal.InstanceImpl.<clinit>"]
 }

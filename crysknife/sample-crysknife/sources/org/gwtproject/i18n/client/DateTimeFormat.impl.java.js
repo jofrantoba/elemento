@@ -17,18 +17,12 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 
 class org_gwtproject_i18n_client_DateTimeFormat extends DateTimeFormat {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {PredefinedFormat} predef
-  * @return {org_gwtproject_i18n_client_DateTimeFormat}
-  * @public
-  */
- static m_getFormat__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(predef) {
+ /** @return {org_gwtproject_i18n_client_DateTimeFormat} */
+ static m_getFormat__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(/** PredefinedFormat */ predef) {
   org_gwtproject_i18n_client_DateTimeFormat.$clinit();
   if (org_gwtproject_i18n_client_DateTimeFormat.m_usesFixedEnglishStrings__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(predef)) {
    let /** ?string */ pattern;
@@ -154,135 +148,78 @@ class org_gwtproject_i18n_client_DateTimeFormat extends DateTimeFormat {
   }
   return org_gwtproject_i18n_client_DateTimeFormat.m_getFormat__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(pattern_1, dtfi);
  }
- /**
-  * @param {?string} pattern
-  * @return {org_gwtproject_i18n_client_DateTimeFormat}
-  * @public
-  */
- static m_getFormat__java_lang_String(pattern) {
+ /** @return {org_gwtproject_i18n_client_DateTimeFormat} */
+ static m_getFormat__java_lang_String(/** ?string */ pattern) {
   org_gwtproject_i18n_client_DateTimeFormat.$clinit();
   return org_gwtproject_i18n_client_DateTimeFormat.m_getFormat__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(pattern, org_gwtproject_i18n_client_DateTimeFormat.m_getDefaultDateTimeFormatInfo__());
  }
- /**
-  * @return {org_gwtproject_i18n_client_DateTimeFormat}
-  * @public
-  * @deprecated
-  */
+ /** @return {org_gwtproject_i18n_client_DateTimeFormat} @deprecated */
  static m_getFullDateFormat__() {
   org_gwtproject_i18n_client_DateTimeFormat.$clinit();
   return org_gwtproject_i18n_client_DateTimeFormat.m_getFormat__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(PredefinedFormat.f_DATE_FULL__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat);
  }
- /**
-  * @return {org_gwtproject_i18n_client_DateTimeFormat}
-  * @public
-  * @deprecated
-  */
+ /** @return {org_gwtproject_i18n_client_DateTimeFormat} @deprecated */
  static m_getFullDateTimeFormat__() {
   org_gwtproject_i18n_client_DateTimeFormat.$clinit();
   return org_gwtproject_i18n_client_DateTimeFormat.m_getFormat__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(PredefinedFormat.f_DATE_TIME_FULL__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat);
  }
- /**
-  * @return {org_gwtproject_i18n_client_DateTimeFormat}
-  * @public
-  * @deprecated
-  */
+ /** @return {org_gwtproject_i18n_client_DateTimeFormat} @deprecated */
  static m_getFullTimeFormat__() {
   org_gwtproject_i18n_client_DateTimeFormat.$clinit();
   return org_gwtproject_i18n_client_DateTimeFormat.m_getFormat__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(PredefinedFormat.f_TIME_FULL__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat);
  }
- /**
-  * @return {org_gwtproject_i18n_client_DateTimeFormat}
-  * @public
-  * @deprecated
-  */
+ /** @return {org_gwtproject_i18n_client_DateTimeFormat} @deprecated */
  static m_getLongDateFormat__() {
   org_gwtproject_i18n_client_DateTimeFormat.$clinit();
   return org_gwtproject_i18n_client_DateTimeFormat.m_getFormat__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(PredefinedFormat.f_DATE_LONG__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat);
  }
- /**
-  * @return {org_gwtproject_i18n_client_DateTimeFormat}
-  * @public
-  * @deprecated
-  */
+ /** @return {org_gwtproject_i18n_client_DateTimeFormat} @deprecated */
  static m_getLongDateTimeFormat__() {
   org_gwtproject_i18n_client_DateTimeFormat.$clinit();
   return org_gwtproject_i18n_client_DateTimeFormat.m_getFormat__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(PredefinedFormat.f_DATE_TIME_LONG__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat);
  }
- /**
-  * @return {org_gwtproject_i18n_client_DateTimeFormat}
-  * @public
-  * @deprecated
-  */
+ /** @return {org_gwtproject_i18n_client_DateTimeFormat} @deprecated */
  static m_getLongTimeFormat__() {
   org_gwtproject_i18n_client_DateTimeFormat.$clinit();
   return org_gwtproject_i18n_client_DateTimeFormat.m_getFormat__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(PredefinedFormat.f_TIME_LONG__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat);
  }
- /**
-  * @return {org_gwtproject_i18n_client_DateTimeFormat}
-  * @public
-  * @deprecated
-  */
+ /** @return {org_gwtproject_i18n_client_DateTimeFormat} @deprecated */
  static m_getMediumDateFormat__() {
   org_gwtproject_i18n_client_DateTimeFormat.$clinit();
   return org_gwtproject_i18n_client_DateTimeFormat.m_getFormat__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(PredefinedFormat.f_DATE_MEDIUM__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat);
  }
- /**
-  * @return {org_gwtproject_i18n_client_DateTimeFormat}
-  * @public
-  * @deprecated
-  */
+ /** @return {org_gwtproject_i18n_client_DateTimeFormat} @deprecated */
  static m_getMediumDateTimeFormat__() {
   org_gwtproject_i18n_client_DateTimeFormat.$clinit();
   return org_gwtproject_i18n_client_DateTimeFormat.m_getFormat__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(PredefinedFormat.f_DATE_TIME_MEDIUM__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat);
  }
- /**
-  * @return {org_gwtproject_i18n_client_DateTimeFormat}
-  * @public
-  * @deprecated
-  */
+ /** @return {org_gwtproject_i18n_client_DateTimeFormat} @deprecated */
  static m_getMediumTimeFormat__() {
   org_gwtproject_i18n_client_DateTimeFormat.$clinit();
   return org_gwtproject_i18n_client_DateTimeFormat.m_getFormat__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(PredefinedFormat.f_TIME_MEDIUM__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat);
  }
- /**
-  * @return {org_gwtproject_i18n_client_DateTimeFormat}
-  * @public
-  * @deprecated
-  */
+ /** @return {org_gwtproject_i18n_client_DateTimeFormat} @deprecated */
  static m_getShortDateFormat__() {
   org_gwtproject_i18n_client_DateTimeFormat.$clinit();
   return org_gwtproject_i18n_client_DateTimeFormat.m_getFormat__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(PredefinedFormat.f_DATE_SHORT__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat);
  }
- /**
-  * @return {org_gwtproject_i18n_client_DateTimeFormat}
-  * @public
-  * @deprecated
-  */
+ /** @return {org_gwtproject_i18n_client_DateTimeFormat} @deprecated */
  static m_getShortDateTimeFormat__() {
   org_gwtproject_i18n_client_DateTimeFormat.$clinit();
   return org_gwtproject_i18n_client_DateTimeFormat.m_getFormat__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(PredefinedFormat.f_DATE_TIME_SHORT__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat);
  }
- /**
-  * @return {org_gwtproject_i18n_client_DateTimeFormat}
-  * @public
-  * @deprecated
-  */
+ /** @return {org_gwtproject_i18n_client_DateTimeFormat} @deprecated */
  static m_getShortTimeFormat__() {
   org_gwtproject_i18n_client_DateTimeFormat.$clinit();
   return org_gwtproject_i18n_client_DateTimeFormat.m_getFormat__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(PredefinedFormat.f_TIME_SHORT__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat);
  }
- /**
-  * @param {?string} pattern
-  * @param {DateTimeFormatInfo} dtfi
-  * @return {org_gwtproject_i18n_client_DateTimeFormat}
-  * @public
-  */
- static m_getFormat__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(pattern, dtfi) {
+ /** @return {org_gwtproject_i18n_client_DateTimeFormat} */
+ static m_getFormat__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(/** ?string */ pattern, /** DateTimeFormatInfo */ dtfi) {
   org_gwtproject_i18n_client_DateTimeFormat.$clinit();
   let defaultDtfi = org_gwtproject_i18n_client_DateTimeFormat.m_getDefaultDateTimeFormatInfo__();
   let dtf = null;
   if ($Equality.$same(dtfi, defaultDtfi)) {
-   dtf = /**@type {org_gwtproject_i18n_client_DateTimeFormat} */ ($Casts.$to(org_gwtproject_i18n_client_DateTimeFormat.f_cache__org_gwtproject_i18n_client_DateTimeFormat_.get(pattern), org_gwtproject_i18n_client_DateTimeFormat));
+   dtf = /**@type {org_gwtproject_i18n_client_DateTimeFormat}*/ ($Casts.$to(org_gwtproject_i18n_client_DateTimeFormat.f_cache__org_gwtproject_i18n_client_DateTimeFormat_.get(pattern), org_gwtproject_i18n_client_DateTimeFormat));
   }
   if ($Equality.$same(dtf, null)) {
    dtf = org_gwtproject_i18n_client_DateTimeFormat.$create__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(pattern, dtfi);
@@ -292,19 +229,12 @@ class org_gwtproject_i18n_client_DateTimeFormat extends DateTimeFormat {
   }
   return dtf;
  }
- /**
-  * @return {DateTimeFormatInfo}
-  * @public
-  */
+ /** @return {DateTimeFormatInfo} */
  static m_getDefaultDateTimeFormatInfo__() {
   return DateTimeFormatInfo__factory.m_create__();
  }
- /**
-  * @param {PredefinedFormat} predef
-  * @return {boolean}
-  * @public
-  */
- static m_usesFixedEnglishStrings__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(predef) {
+ /** @return {boolean} */
+ static m_usesFixedEnglishStrings__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(/** PredefinedFormat */ predef) {
   switch (predef.ordinal()) {
    case PredefinedFormat.$ordinal$f_RFC_2822__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat: 
     return true;
@@ -314,68 +244,44 @@ class org_gwtproject_i18n_client_DateTimeFormat extends DateTimeFormat {
     return false;
   }
  }
- /**
-  * Factory method corresponding to constructor 'DateTimeFormat(String)'.
-  * @param {?string} pattern
-  * @return {!org_gwtproject_i18n_client_DateTimeFormat}
-  * @public
-  */
- static $create__java_lang_String(pattern) {
+ //Factory method corresponding to constructor 'DateTimeFormat(String)'.
+ /** @return {!org_gwtproject_i18n_client_DateTimeFormat} */
+ static $create__java_lang_String(/** ?string */ pattern) {
   org_gwtproject_i18n_client_DateTimeFormat.$clinit();
   let $instance = new org_gwtproject_i18n_client_DateTimeFormat();
   $instance.$ctor__org_gwtproject_i18n_client_DateTimeFormat__java_lang_String(pattern);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DateTimeFormat(String)'.
-  * @param {?string} pattern
-  * @public
-  */
- $ctor__org_gwtproject_i18n_client_DateTimeFormat__java_lang_String(pattern) {
+ //Initialization from constructor 'DateTimeFormat(String)'.
+ 
+ $ctor__org_gwtproject_i18n_client_DateTimeFormat__java_lang_String(/** ?string */ pattern) {
   this.$ctor__org_gwtproject_i18n_client_DateTimeFormat__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(pattern, org_gwtproject_i18n_client_DateTimeFormat.m_getDefaultDateTimeFormatInfo__());
  }
- /**
-  * Factory method corresponding to constructor 'DateTimeFormat(String, DateTimeFormatInfo)'.
-  * @param {?string} pattern
-  * @param {DateTimeFormatInfo} dtfi
-  * @return {!org_gwtproject_i18n_client_DateTimeFormat}
-  * @public
-  */
- static $create__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(pattern, dtfi) {
+ //Factory method corresponding to constructor 'DateTimeFormat(String, DateTimeFormatInfo)'.
+ /** @return {!org_gwtproject_i18n_client_DateTimeFormat} */
+ static $create__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(/** ?string */ pattern, /** DateTimeFormatInfo */ dtfi) {
   org_gwtproject_i18n_client_DateTimeFormat.$clinit();
   let $instance = new org_gwtproject_i18n_client_DateTimeFormat();
   $instance.$ctor__org_gwtproject_i18n_client_DateTimeFormat__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(pattern, dtfi);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DateTimeFormat(String, DateTimeFormatInfo)'.
-  * @param {?string} pattern
-  * @param {DateTimeFormatInfo} dtfi
-  * @public
-  */
- $ctor__org_gwtproject_i18n_client_DateTimeFormat__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(pattern, dtfi) {
+ //Initialization from constructor 'DateTimeFormat(String, DateTimeFormatInfo)'.
+ 
+ $ctor__org_gwtproject_i18n_client_DateTimeFormat__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(/** ?string */ pattern, /** DateTimeFormatInfo */ dtfi) {
   this.$ctor__org_gwtproject_i18n_shared_DateTimeFormat__java_lang_String__org_gwtproject_i18n_shared_DateTimeFormatInfo(pattern, dtfi);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   org_gwtproject_i18n_client_DateTimeFormat.$clinit = () =>{};
   org_gwtproject_i18n_client_DateTimeFormat.$loadModules();
   DateTimeFormat.$clinit();
-  org_gwtproject_i18n_client_DateTimeFormat.f_cache__org_gwtproject_i18n_client_DateTimeFormat_ = /**@type {!HashMap<?string, org_gwtproject_i18n_client_DateTimeFormat>} */ (HashMap.$create__());
+  org_gwtproject_i18n_client_DateTimeFormat.f_cache__org_gwtproject_i18n_client_DateTimeFormat_ = /**@type {!HashMap<?string, org_gwtproject_i18n_client_DateTimeFormat>}*/ (HashMap.$create__());
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof org_gwtproject_i18n_client_DateTimeFormat;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');
@@ -392,7 +298,7 @@ class org_gwtproject_i18n_client_DateTimeFormat extends DateTimeFormat {
 }
 $Util.$setClassMetadata(org_gwtproject_i18n_client_DateTimeFormat, 'org.gwtproject.i18n.client.DateTimeFormat');
 
-/** @public {Map<?string, org_gwtproject_i18n_client_DateTimeFormat>} */
+/**@type {Map<?string, org_gwtproject_i18n_client_DateTimeFormat>}*/
 org_gwtproject_i18n_client_DateTimeFormat.f_cache__org_gwtproject_i18n_client_DateTimeFormat_;
 
 exports = org_gwtproject_i18n_client_DateTimeFormat; 

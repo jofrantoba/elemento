@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"NativeVerticalScrollbar$UiStyle.impl.java.js",
-"lineCount":28,
-"mappings":"A;;;;;;;;;MA2GY,O;;;;;;CACD,Y;;;;;;CAEA,c;;;;QAHC,O;EAAAA,0B;EAAAA;",
+"lineCount":18,
+"mappings":"A;;;;;;;;;MA2GY,O;;CACD,Y;;CAEA,c;;QAHC,O;EAAAA,0B;EAAAA;",
 "sources":["NativeVerticalScrollbar.java"],
 "names":["org.gwtproject.user.client.ui.NativeVerticalScrollbar$UiStyle.<clinit>"]
 }

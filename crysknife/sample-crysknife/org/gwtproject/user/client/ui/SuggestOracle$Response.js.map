@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SuggestOracle$Response.impl.java.js",
-"lineCount":122,
-"mappings":"A;;;;;;;;;;;MAoIsB,Q;;;;CAAA,W;EAAAA,Q;EAAAA;OACuB,oEADvBA,C;EAAAA;OAQF,wEAREA,S;EAAAA;OAaN,2EAbMA,K;;;;;;;QAkBX,S;EAAAC,mB;EAAAA,+B;EAAAA,0E;EAAAA,iB;;;;;;CAAA,6D;EAAAC,iC;EAAAA,uE;;;;;;;;QASA,6B,CAA0CC,W;EAA1CF,mB;EAAAA,+B;EAAAA,yG;EAAAA,iB;;;;;;;CAAA,iF,CAA0CE,W;EAA1CD,iC;EAAAA,uE;EACLA,yD;;;;;;CASS,2B;EACTE,wF;;;;;;CASsC,kB;EACtCC,iF;;;;;;CAOa,sB;EACbC,qF;;;;;;CAOU,6B,CAA2BC,e;EACrCC,gG;;;;;;CAYU,8B,CAA4BC,K;EACtCC,yF;EACAA,4F;;;;;;CASU,sC,CAAgDP,W;EAC1DQ,wF;;;;;CAxFgB,+D;EAGlBT,sF;EAOAA,qF;;;;;QAVkB,O;EAAAU,2B;EAAAA,wB;EAAAA;",
+"lineCount":86,
+"mappings":"A;;;;;;;;;;;MAoIsB,Q;;CAAA,W;EAAAA,Q;EAAAA;OACuB,oEADvBA,C;EAAAA;OAQF,wEAREA,S;EAAAA;OAaN,2EAbMA,K;;;;QAkBX,S;EAAAC,mB;EAAAA,+B;EAAAA,0E;EAAAA,iB;;;;CAAA,6D;EAAAC,iC;EAAAA,uE;;;;QASA,6B,sBAA0CC,W;EAA1CF,mB;EAAAA,+B;EAAAA,yG;EAAAA,iB;;;;CAAA,iF,sBAA0CE,W;EAA1CD,iC;EAAAA,uE;EACLA,yD;;;CASS,2B;EACTE,wF;;;CASsC,kB;EACtCC,iF;;;CAOa,sB;EACbC,qF;;;CAOU,6B,gBAA2BC,e;EACrCC,gG;;;CAYU,8B,eAA4BC,K;EACtCC,yF;EACAA,4F;;;CASU,sC,sBAAgDP,W;EAC1DQ,wF;;;CAxFgB,+D;EAGlBT,sF;EAOAA,qF;;;QAVkB,O;EAAAU,2B;EAAAA,wB;EAAAA;",
 "sources":["SuggestOracle.java"],
 "names":["org.gwtproject.user.client.ui.SuggestOracle$Response.<synthetic: ctor_js>","org.gwtproject.user.client.ui.SuggestOracle$Response.<synthetic: ctor_create>","org.gwtproject.user.client.ui.SuggestOracle$Response.<init>","suggestions","org.gwtproject.user.client.ui.SuggestOracle$Response.getMoreSuggestionsCount","org.gwtproject.user.client.ui.SuggestOracle$Response.getSuggestions","org.gwtproject.user.client.ui.SuggestOracle$Response.hasMoreSuggestions","moreSuggestions","org.gwtproject.user.client.ui.SuggestOracle$Response.setMoreSuggestions","count","org.gwtproject.user.client.ui.SuggestOracle$Response.setMoreSuggestionsCount","org.gwtproject.user.client.ui.SuggestOracle$Response.setSuggestions","org.gwtproject.user.client.ui.SuggestOracle$Response.<clinit>"]
 }

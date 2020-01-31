@@ -13,102 +13,59 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {AbstractEditorContext<T>}
   */
 class RootEditorContext extends AbstractEditorContext {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Class<T>} */
+  /**@type {Class<T>}*/
   this.f_editedType__org_gwtproject_editor_client_impl_RootEditorContext_;
-  /** @public {T} */
+  /**@type {T}*/
   this.f_value__org_gwtproject_editor_client_impl_RootEditorContext_;
  }
- /**
-  * @template T
-  * @param {AbstractEditorDelegate<T, ?>} editorDelegate
-  * @param {Class<T>} editedType
-  * @param {T} value
-  * @return {!RootEditorContext<T>}
-  * @public
-  */
- static $create__org_gwtproject_editor_client_impl_AbstractEditorDelegate__java_lang_Class__java_lang_Object(editorDelegate, editedType, value) {
+ /** @template T @return {!RootEditorContext<T>} */
+ static $create__org_gwtproject_editor_client_impl_AbstractEditorDelegate__java_lang_Class__java_lang_Object(/** AbstractEditorDelegate<T, ?> */ editorDelegate, /** Class<T> */ editedType, /** T */ value) {
   RootEditorContext.$clinit();
   let $instance = new RootEditorContext();
   $instance.$ctor__org_gwtproject_editor_client_impl_RootEditorContext__org_gwtproject_editor_client_impl_AbstractEditorDelegate__java_lang_Class__java_lang_Object(editorDelegate, editedType, value);
   return $instance;
  }
- /**
-  * @param {AbstractEditorDelegate<T, ?>} editorDelegate
-  * @param {Class<T>} editedType
-  * @param {T} value
-  * @public
-  */
- $ctor__org_gwtproject_editor_client_impl_RootEditorContext__org_gwtproject_editor_client_impl_AbstractEditorDelegate__java_lang_Class__java_lang_Object(editorDelegate, editedType, value) {
+ 
+ $ctor__org_gwtproject_editor_client_impl_RootEditorContext__org_gwtproject_editor_client_impl_AbstractEditorDelegate__java_lang_Class__java_lang_Object(/** AbstractEditorDelegate<T, ?> */ editorDelegate, /** Class<T> */ editedType, /** T */ value) {
   this.$ctor__org_gwtproject_editor_client_impl_AbstractEditorContext__org_gwtproject_editor_client_Editor__java_lang_String(editorDelegate.m_getEditor__(), editorDelegate.m_getPath__());
   this.m_setEditorDelegate__org_gwtproject_editor_client_impl_AbstractEditorDelegate(editorDelegate);
   this.f_editedType__org_gwtproject_editor_client_impl_RootEditorContext_ = editedType;
   this.f_value__org_gwtproject_editor_client_impl_RootEditorContext_ = value;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_canSetInModel__() {
   return true;
  }
- /**
-  * @override
-  * @param {*} value
-  * @return {T}
-  * @public
-  */
- m_checkAssignment__java_lang_Object(value) {
-  return /**@type {T} */ (value);
+ /** @override @return {T} */
+ m_checkAssignment__java_lang_Object(/** * */ value) {
+  return /**@type {T}*/ (value);
  }
- /**
-  * @override
-  * @return {Class<T>}
-  * @public
-  */
+ /** @override @return {Class<T>} */
  m_getEditedType__() {
   return this.f_editedType__org_gwtproject_editor_client_impl_RootEditorContext_;
  }
- /**
-  * @override
-  * @return {T}
-  * @public
-  */
+ /** @override @return {T} */
  m_getFromModel__() {
   return this.f_value__org_gwtproject_editor_client_impl_RootEditorContext_;
  }
- /**
-  * @override
-  * @param {T} data
-  * @public
-  */
- m_setInModel__java_lang_Object(data) {
-  /**@type {AbstractEditorDelegate<T, Editor>} */ ($Casts.$to(this.m_getEditorDelegate__(), AbstractEditorDelegate)).m_setObject__java_lang_Object(data);
+ /** @override */
+ m_setInModel__java_lang_Object(/** T */ data) {
+  /**@type {AbstractEditorDelegate<T, Editor>}*/ ($Casts.$to(this.m_getEditorDelegate__(), AbstractEditorDelegate)).m_setObject__java_lang_Object(data);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RootEditorContext.$clinit = () =>{};
   RootEditorContext.$loadModules();
   AbstractEditorContext.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof RootEditorContext;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   AbstractEditorDelegate = goog.module.get('org.gwtproject.editor.client.impl.AbstractEditorDelegate$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

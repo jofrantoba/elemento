@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"BeforeSelectionHandler$$LambdaAdaptor.impl.java.js",
-"lineCount":49,
-"mappings":"A;;;;;;;;;;;;MAsBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;yF;EAAAA,kK;;;;;;CAAA,wJ;EAAAC,iC;EAAAA,4F;;;;;;CAAA,6E;;GAAAC,uG;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":38,
+"mappings":"A;;;;;;;;;;;;MAsBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;yF;EAAAA,kK;;;CAAA,wJ;EAAAC,iC;EAAAA,4F;;;CAAA,6E;;GAAAC,uG;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["BeforeSelectionHandler.java"],
 "names":["org.gwtproject.event.logical.shared.BeforeSelectionHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.logical.shared.BeforeSelectionHandler$$LambdaAdaptor.<init>","org.gwtproject.event.logical.shared.BeforeSelectionHandler$$LambdaAdaptor.onBeforeSelection","org.gwtproject.event.logical.shared.BeforeSelectionHandler$$LambdaAdaptor.<clinit>"]
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"OptionRole.impl.java.js",
-"lineCount":100,
-"mappings":"A;;;;;;;;;;;;;MA4BiB,U;;;;;;;CAOR,wD,CAA4BA,O;;;;;;;CAO5B,4D,CAAgCA,O;;;;;;;CAOhC,yD,CAA6BA,O;;;;;;;CAO7B,2D,CAA+BA,O;;;;;;CAMjC,2D,CAA+BA,O;;;;;;CAM/B,+D,CAAmCA,O;;;;;;CAMnC,4D,CAAgCA,O;;;;;;CAMhC,8D,CAAkCA,O;;;;;;;CAMlC,iG,CAA4BA,O,EAAsBC,K;;;;;;;CAMlD,iE,CAAgCD,O,EAAaC,K;;;;;;;CAM7C,mG,CAA6BD,O,EAAuBC,K;;;;;;;CAMpD,gE,CAA+BD,O,EAAaC,K;;;;QA5ElC,O;EAAAC,6B;EAAAA;",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;;;MA4BiB,U;;CAOR,wD,eAA4BA,O;;CAO5B,4D,eAAgCA,O;;CAOhC,yD,eAA6BA,O;;CAO7B,2D,eAA+BA,O;;CAMjC,2D,eAA+BA,O;;CAM/B,+D,eAAmCA,O;;CAMnC,4D,eAAgCA,O;;CAMhC,8D,eAAkCA,O;;CAMlC,iG,eAA4BA,O,sBAAsBC,K;;CAMlD,iE,eAAgCD,O,gBAAaC,K;;CAM7C,mG,eAA6BD,O,uBAAuBC,K;;CAMpD,gE,eAA+BD,O,gBAAaC,K;;QA5ElC,O;EAAAC,6B;EAAAA;",
 "sources":["OptionRole.java"],
 "names":["element","value","org.gwtproject.aria.client.OptionRole.<clinit>"]
 }

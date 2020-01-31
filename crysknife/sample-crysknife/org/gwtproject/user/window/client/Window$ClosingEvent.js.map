@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Window$ClosingEvent.impl.java.js",
-"lineCount":121,
-"mappings":"A;;;;;;;;;;;;MAmDsB,Y;;;;CAAA,W;EAAAA,Q;EAAAA;OASH,iEATGA,C;;;;;;QAAA,S;EAAAC,uB;EAAAA,mC;EAAAA,2E;EAAAA,iB;;;;;CAAA,8D;EAAAC,kD;EAAAA,wE;;;;;;QAIU,W;EAAAC,uB;EAC1BA,mF;;;;;;;CAOgC,qB;EAChCC,mF;;;;;;CASY,c;EACZC,8E;;;;;;CAUU,8B,CAAkBC,O;EAC5BC,iF;;;;;;CAIa,mE,CAAwBC,O;EACrCC,uF;;;;;;;;CAvCgB,4B;EAAAA,0I;;;;;CAAA,gE;EAQlBP,8E;;;;;QARkB,O;EAAAQ,+B;EAAAA,4B;EAAAA,gB;EAClBA,qI;;;;;;;;;;;;;;;;;;;;;;AADkB;aAEwB,8DAFxB;",
+"lineCount":84,
+"mappings":"A;;;;;;;;;;;;MAmDsB,Y;;CAAA,W;EAAAA,Q;EAAAA;OASH,iEATGA,C;;;QAAA,S;EAAAC,uB;EAAAA,mC;EAAAA,2E;EAAAA,iB;;;CAAA,8D;EAAAC,kD;EAAAA,wE;;;QAIU,W;EAAAC,uB;EAC1BA,mF;;;CAOgC,qB;EAChCC,mF;;;CASY,c;EACZC,8E;;;CAUU,8B,gBAAkBC,O;EAC5BC,iF;;;CAIa,mE,uBAAwBC,O;EACrCC,uF;;;;CAvCgB,4B;EAAAA,yI;;;CAAA,gE;EAQlBP,8E;;;QARkB,O;EAAAQ,+B;EAAAA,4B;EAAAA,gB;EAClBA,oI;;;;;;;;;;;;;;;;AADkB;aAEwB,8DAFxB;",
 "sources":["Window.java"],
 "names":["org.gwtproject.user.window.client.Window$ClosingEvent.<synthetic: ctor_js>","org.gwtproject.user.window.client.Window$ClosingEvent.<synthetic: ctor_create>","org.gwtproject.user.window.client.Window$ClosingEvent.<init>","org.gwtproject.user.window.client.Window$ClosingEvent.getType","org.gwtproject.user.window.client.Window$ClosingEvent.getAssociatedType","org.gwtproject.user.window.client.Window$ClosingEvent.getMessage","message","org.gwtproject.user.window.client.Window$ClosingEvent.setMessage","handler","org.gwtproject.user.window.client.Window$ClosingEvent.dispatch","org.gwtproject.user.window.client.Window$ClosingEvent.<clinit>"]
 }

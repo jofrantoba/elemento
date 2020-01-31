@@ -11,44 +11,27 @@ let $LambdaAdaptor = goog.forwardDeclare('javax.enterprise.context.ApplicationSc
  * @extends {Annotation}
  */
 class ApplicationScoped {
- /**
-  * @param {?function():Class<?>} fn
-  * @return {ApplicationScoped}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {ApplicationScoped} */
+ static $adapt(/** ?function():Class<?> */ fn) {
   ApplicationScoped.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ApplicationScoped.$clinit = () =>{};
   ApplicationScoped.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__javax_enterprise_context_ApplicationScoped = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__javax_enterprise_context_ApplicationScoped = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__javax_enterprise_context_ApplicationScoped;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('javax.enterprise.context.ApplicationScoped.$LambdaAdaptor$impl');
  }

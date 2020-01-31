@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"PresentationRole.impl.java.js",
-"lineCount":16,
-"mappings":"A;;;;;;;;;MA2BiB,gB;;;;QAAA,O;EAAAA,mC;EAAAA;",
+"lineCount":14,
+"mappings":"A;;;;;;;;;MA2BiB,gB;;QAAA,O;EAAAA,mC;EAAAA;",
 "sources":["PresentationRole.java"],
 "names":["org.gwtproject.aria.client.PresentationRole.<clinit>"]
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ImageResourceRenderer.impl.java.js",
-"lineCount":94,
-"mappings":"A;;;;;;;;;;;;;;;;MA2Ba,qB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,gC;EAAAA,4C;EAAAA,yE;EAAAA,iB;;;;;CAAA,4D;EAAAC,oE;;;;;;;CASK,uD,CAAqBC,K;EACnCC;GACEA,+GADFA;;GAGEA,6NAHFA;G;;;;;;;;;CAVS,0B;EAAAA,mI;;;;;QAAA,O;EAAAC,wC;EAAAA,qC;EAAAA,mC;EAMXA,yI;;;;;;;;;;;;;;;;;;;;;;;;AANW;sBAMmB,gEANnB;",
+"lineCount":70,
+"mappings":"A;;;;;;;;;;;;;;;;MA2Ba,qB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,gC;EAAAA,4C;EAAAA,yE;EAAAA,iB;;;CAAA,4D;EAAAC,oE;;;CASK,uD,sBAAqBC,K;EACnCC;GACEA,+GADFA;;GAGEA,6NAHFA;G;;;;CAVS,0B;EAAAA,kI;;;QAAA,O;EAAAC,wC;EAAAA,qC;EAAAA,mC;EAMXA,yI;;;;;;;;;;;;;;;;;;AANW;sBAMmB,gEANnB;",
 "sources":["ImageResourceRenderer.java"],
 "names":["org.gwtproject.user.client.ui.ImageResourceRenderer.<synthetic: ctor_js>","org.gwtproject.user.client.ui.ImageResourceRenderer.<synthetic: ctor_create>","org.gwtproject.user.client.ui.ImageResourceRenderer.<init>","image","org.gwtproject.user.client.ui.ImageResourceRenderer.render","org.gwtproject.user.client.ui.ImageResourceRenderer.<clinit>"]
 }

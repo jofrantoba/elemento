@@ -8,84 +8,36 @@ const ElementBuilderBase = goog.require('org.gwtproject.dom.builder.shared.Eleme
  * @extends {ElementBuilderBase<TableCellBuilder>}
  */
 class TableCellBuilder {
- /**
-  * @abstract
-  * @param {?string} align
-  * @return {TableCellBuilder}
-  * @public
-  */
- m_align__java_lang_String(align) {}
- /**
-  * @abstract
-  * @param {?string} ch
-  * @return {TableCellBuilder}
-  * @public
-  */
- m_ch__java_lang_String(ch) {}
- /**
-  * @abstract
-  * @param {?string} chOff
-  * @return {TableCellBuilder}
-  * @public
-  */
- m_chOff__java_lang_String(chOff) {}
- /**
-  * @abstract
-  * @param {number} colSpan
-  * @return {TableCellBuilder}
-  * @public
-  */
- m_colSpan__int(colSpan) {}
- /**
-  * @abstract
-  * @param {?string} headers
-  * @return {TableCellBuilder}
-  * @public
-  */
- m_headers__java_lang_String(headers) {}
- /**
-  * @abstract
-  * @param {number} rowSpan
-  * @return {TableCellBuilder}
-  * @public
-  */
- m_rowSpan__int(rowSpan) {}
- /**
-  * @abstract
-  * @param {?string} vAlign
-  * @return {TableCellBuilder}
-  * @public
-  */
- m_vAlign__java_lang_String(vAlign) {}
- /**
-  * @public
-  */
+ /** @abstract @return {TableCellBuilder} */
+ m_align__java_lang_String(/** ?string */ align) {}
+ /** @abstract @return {TableCellBuilder} */
+ m_ch__java_lang_String(/** ?string */ ch) {}
+ /** @abstract @return {TableCellBuilder} */
+ m_chOff__java_lang_String(/** ?string */ chOff) {}
+ /** @abstract @return {TableCellBuilder} */
+ m_colSpan__int(/** number */ colSpan) {}
+ /** @abstract @return {TableCellBuilder} */
+ m_headers__java_lang_String(/** ?string */ headers) {}
+ /** @abstract @return {TableCellBuilder} */
+ m_rowSpan__int(/** number */ rowSpan) {}
+ /** @abstract @return {TableCellBuilder} */
+ m_vAlign__java_lang_String(/** ?string */ vAlign) {}
+ 
  static $clinit() {
   TableCellBuilder.$clinit = () =>{};
   TableCellBuilder.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ElementBuilderBase.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_dom_builder_shared_TableCellBuilder = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ElementBuilderBase.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_dom_builder_shared_TableCellBuilder = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_dom_builder_shared_TableCellBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

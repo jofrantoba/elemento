@@ -19,78 +19,56 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {Iterator<Widget>}
   */
 class $1 extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {HTMLTable} */
+  /**@type {HTMLTable}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_HTMLTable_1;
-  /** @public {ArrayList<Widget>} */
+  /**@type {ArrayList<Widget>}*/
   this.f_widgetList__org_gwtproject_user_client_ui_HTMLTable_1;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_lastIndex__org_gwtproject_user_client_ui_HTMLTable_1 = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_nextIndex__org_gwtproject_user_client_ui_HTMLTable_1 = 0;
  }
- /**
-  * @param {HTMLTable} $outer_this
-  * @return {!$1}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_HTMLTable($outer_this) {
+ /** @return {!$1} */
+ static $create__org_gwtproject_user_client_ui_HTMLTable(/** HTMLTable */ $outer_this) {
   $1.$clinit();
   let $instance = new $1();
   $instance.$ctor__org_gwtproject_user_client_ui_HTMLTable_1__org_gwtproject_user_client_ui_HTMLTable($outer_this);
   return $instance;
  }
- /**
-  * @param {HTMLTable} $outer_this
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_HTMLTable_1__org_gwtproject_user_client_ui_HTMLTable($outer_this) {
+ 
+ $ctor__org_gwtproject_user_client_ui_HTMLTable_1__org_gwtproject_user_client_ui_HTMLTable(/** HTMLTable */ $outer_this) {
   this.f_$outer_this__org_gwtproject_user_client_ui_HTMLTable_1 = $outer_this;
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_user_client_ui_HTMLTable_1();
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_hasNext__() {
   return this.f_nextIndex__org_gwtproject_user_client_ui_HTMLTable_1 < this.f_widgetList__org_gwtproject_user_client_ui_HTMLTable_1.size();
  }
- /**
-  * @override
-  * @return {Widget}
-  * @public
-  */
+ /** @override @return {Widget} */
  m_next__() {
   if (!this.m_hasNext__()) {
    throw $Exceptions.toJs(NoSuchElementException.$create__());
   }
-  let result = /**@type {Widget} */ ($Casts.$to(this.f_widgetList__org_gwtproject_user_client_ui_HTMLTable_1.getAtIndex(this.f_nextIndex__org_gwtproject_user_client_ui_HTMLTable_1), Widget));
+  let result = /**@type {Widget}*/ ($Casts.$to(this.f_widgetList__org_gwtproject_user_client_ui_HTMLTable_1.getAtIndex(this.f_nextIndex__org_gwtproject_user_client_ui_HTMLTable_1), Widget));
   this.f_lastIndex__org_gwtproject_user_client_ui_HTMLTable_1 = this.f_nextIndex__org_gwtproject_user_client_ui_HTMLTable_1;
   this.m_findNext___$p_org_gwtproject_user_client_ui_HTMLTable_1();
   return result;
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_remove__() {
   if (this.f_lastIndex__org_gwtproject_user_client_ui_HTMLTable_1 < 0) {
    throw $Exceptions.toJs(IllegalStateException.$create__());
   }
-  let w = /**@type {Widget} */ ($Casts.$to(this.f_widgetList__org_gwtproject_user_client_ui_HTMLTable_1.getAtIndex(this.f_lastIndex__org_gwtproject_user_client_ui_HTMLTable_1), Widget));
+  let w = /**@type {Widget}*/ ($Casts.$to(this.f_widgetList__org_gwtproject_user_client_ui_HTMLTable_1.getAtIndex(this.f_lastIndex__org_gwtproject_user_client_ui_HTMLTable_1), Widget));
   $Asserts.$assert(HTMLTable.$isInstance(w.m_getParent__()));
   w.m_removeFromParent__();
   this.f_lastIndex__org_gwtproject_user_client_ui_HTMLTable_1 = -1;
  }
- /**
-  * @public
-  */
+ 
  m_findNext___$p_org_gwtproject_user_client_ui_HTMLTable_1() {
   while (++this.f_nextIndex__org_gwtproject_user_client_ui_HTMLTable_1 < this.f_widgetList__org_gwtproject_user_client_ui_HTMLTable_1.size()) {
    if (!$Equality.$same(this.f_widgetList__org_gwtproject_user_client_ui_HTMLTable_1.getAtIndex(this.f_nextIndex__org_gwtproject_user_client_ui_HTMLTable_1), null)) {
@@ -98,44 +76,30 @@ class $1 extends j_l_Object {
    }
   }
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEachRemaining__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEachRemaining__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterator.m_forEachRemaining__$default__java_util_Iterator__java_util_function_Consumer(this, arg0);
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_HTMLTable_1() {
   this.f_widgetList__org_gwtproject_user_client_ui_HTMLTable_1 = this.f_$outer_this__org_gwtproject_user_client_ui_HTMLTable_1.f_widgetMap__org_gwtproject_user_client_ui_HTMLTable_.m_getObjectList__();
   this.f_lastIndex__org_gwtproject_user_client_ui_HTMLTable_1 = -1;
   this.f_nextIndex__org_gwtproject_user_client_ui_HTMLTable_1 = -1;
   this.m_findNext___$p_org_gwtproject_user_client_ui_HTMLTable_1();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $1.$clinit = () =>{};
   $1.$loadModules();
   j_l_Object.$clinit();
   Iterator.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $1;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');
   NoSuchElementException = goog.module.get('java.util.NoSuchElementException$impl');

@@ -9,49 +9,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.user.window.client.Wind
  * @interface
  */
 class ScrollHandler {
- /**
-  * @abstract
-  * @param {ScrollEvent} event
-  * @public
-  */
- m_onWindowScroll__org_gwtproject_user_window_client_Window_ScrollEvent(event) {}
- /**
-  * @param {?function(ScrollEvent):void} fn
-  * @return {ScrollHandler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onWindowScroll__org_gwtproject_user_window_client_Window_ScrollEvent(/** ScrollEvent */ event) {}
+ /** @return {ScrollHandler} */
+ static $adapt(/** ?function(ScrollEvent):void */ fn) {
   ScrollHandler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ScrollHandler.$clinit = () =>{};
   ScrollHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_window_client_Window_ScrollHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_window_client_Window_ScrollHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_window_client_Window_ScrollHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.user.window.client.Window.ScrollHandler.$LambdaAdaptor$impl');
  }

@@ -17,84 +17,54 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {Format}
   */
 class DefaultFormat extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {DateTimeFormat} */
+  /**@type {DateTimeFormat}*/
   this.f_dateTimeFormat__org_gwtproject_user_datepicker_client_DateBox_DefaultFormat_;
  }
- /**
-  * Factory method corresponding to constructor 'DefaultFormat()'.
-  * @return {!DefaultFormat}
-  * @public
-  */
+ //Factory method corresponding to constructor 'DefaultFormat()'.
+ /** @return {!DefaultFormat} */
  static $create__() {
   DefaultFormat.$clinit();
   let $instance = new DefaultFormat();
   $instance.$ctor__org_gwtproject_user_datepicker_client_DateBox_DefaultFormat__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'DefaultFormat()'.
-  * @public
-  */
+ //Initialization from constructor 'DefaultFormat()'.
+ 
  $ctor__org_gwtproject_user_datepicker_client_DateBox_DefaultFormat__() {
   this.$ctor__java_lang_Object__();
   this.f_dateTimeFormat__org_gwtproject_user_datepicker_client_DateBox_DefaultFormat_ = DateTimeFormat.m_getFormat__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(PredefinedFormat.f_DATE_TIME_MEDIUM__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat);
  }
- /**
-  * Factory method corresponding to constructor 'DefaultFormat(DateTimeFormat)'.
-  * @param {DateTimeFormat} dateTimeFormat
-  * @return {!DefaultFormat}
-  * @public
-  */
- static $create__org_gwtproject_i18n_client_DateTimeFormat(dateTimeFormat) {
+ //Factory method corresponding to constructor 'DefaultFormat(DateTimeFormat)'.
+ /** @return {!DefaultFormat} */
+ static $create__org_gwtproject_i18n_client_DateTimeFormat(/** DateTimeFormat */ dateTimeFormat) {
   DefaultFormat.$clinit();
   let $instance = new DefaultFormat();
   $instance.$ctor__org_gwtproject_user_datepicker_client_DateBox_DefaultFormat__org_gwtproject_i18n_client_DateTimeFormat(dateTimeFormat);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DefaultFormat(DateTimeFormat)'.
-  * @param {DateTimeFormat} dateTimeFormat
-  * @public
-  */
- $ctor__org_gwtproject_user_datepicker_client_DateBox_DefaultFormat__org_gwtproject_i18n_client_DateTimeFormat(dateTimeFormat) {
+ //Initialization from constructor 'DefaultFormat(DateTimeFormat)'.
+ 
+ $ctor__org_gwtproject_user_datepicker_client_DateBox_DefaultFormat__org_gwtproject_i18n_client_DateTimeFormat(/** DateTimeFormat */ dateTimeFormat) {
   this.$ctor__java_lang_Object__();
   this.f_dateTimeFormat__org_gwtproject_user_datepicker_client_DateBox_DefaultFormat_ = dateTimeFormat;
  }
- /**
-  * @override
-  * @param {DateBox} box
-  * @param {Date} date
-  * @return {?string}
-  * @public
-  */
- m_format__org_gwtproject_user_datepicker_client_DateBox__java_util_Date(box, date) {
+ /** @override @return {?string} */
+ m_format__org_gwtproject_user_datepicker_client_DateBox__java_util_Date(/** DateBox */ box, /** Date */ date) {
   if ($Equality.$same(date, null)) {
    return "";
   } else {
    return this.f_dateTimeFormat__org_gwtproject_user_datepicker_client_DateBox_DefaultFormat_.m_format__java_util_Date(date);
   }
  }
- /**
-  * @return {DateTimeFormat}
-  * @public
-  */
+ /** @return {DateTimeFormat} */
  m_getDateTimeFormat__() {
   return this.f_dateTimeFormat__org_gwtproject_user_datepicker_client_DateBox_DefaultFormat_;
  }
- /**
-  * @override
-  * @param {DateBox} dateBox
-  * @param {?string} dateText
-  * @param {boolean} reportError
-  * @return {Date}
-  * @public
-  */
- m_parse__org_gwtproject_user_datepicker_client_DateBox__java_lang_String__boolean(dateBox, dateText, reportError) {
+ /** @override @return {Date} */
+ m_parse__org_gwtproject_user_datepicker_client_DateBox__java_lang_String__boolean(/** DateBox */ dateBox, /** ?string */ dateText, /** boolean */ reportError) {
   let date = null;
   try {
    if (j_l_String.m_length__java_lang_String(dateText) > 0) {
@@ -103,14 +73,14 @@ class DefaultFormat extends j_l_Object {
   } catch (__$exc) {
    __$exc = $Exceptions.toJava(__$exc);
    if (IllegalArgumentException.$isInstance(__$exc)) {
-    let exception = /**@type {IllegalArgumentException} */ (__$exc);
+    let exception = /**@type {IllegalArgumentException}*/ (__$exc);
     try {
      date = Date.$create__java_lang_String(dateText);
      date = this.f_dateTimeFormat__org_gwtproject_user_datepicker_client_DateBox_DefaultFormat_.m_parse__java_lang_String(this.f_dateTimeFormat__org_gwtproject_user_datepicker_client_DateBox_DefaultFormat_.m_format__java_util_Date(date));
     } catch (__$exc_1) {
      __$exc_1 = $Exceptions.toJava(__$exc_1);
      if (IllegalArgumentException.$isInstance(__$exc_1)) {
-      let e = /**@type {IllegalArgumentException} */ (__$exc_1);
+      let e = /**@type {IllegalArgumentException}*/ (__$exc_1);
       if (reportError) {
        dateBox.m_addStyleName__java_lang_String(DateBox.f_DATE_BOX_FORMAT_ERROR__org_gwtproject_user_datepicker_client_DateBox_);
       }
@@ -125,34 +95,21 @@ class DefaultFormat extends j_l_Object {
   }
   return date;
  }
- /**
-  * @override
-  * @param {DateBox} dateBox
-  * @param {boolean} abandon
-  * @public
-  */
- m_reset__org_gwtproject_user_datepicker_client_DateBox__boolean(dateBox, abandon) {
+ /** @override */
+ m_reset__org_gwtproject_user_datepicker_client_DateBox__boolean(/** DateBox */ dateBox, /** boolean */ abandon) {
   dateBox.m_removeStyleName__java_lang_String(DateBox.f_DATE_BOX_FORMAT_ERROR__org_gwtproject_user_datepicker_client_DateBox_);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DefaultFormat.$clinit = () =>{};
   DefaultFormat.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DefaultFormat;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
   j_l_String = goog.module.get('java.lang.String$impl');

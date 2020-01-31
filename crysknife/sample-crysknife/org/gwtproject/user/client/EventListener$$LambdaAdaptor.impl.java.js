@@ -10,54 +10,37 @@ let Event = goog.forwardDeclare('org.gwtproject.user.client.Event$impl');
  * @implements {EventListener}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(Event):void} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(Event):void */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(Event):void} */
+  /**@type {?function(Event):void}*/
   this.f_$$fn__org_gwtproject_user_client_EventListener_$LambdaAdaptor;
   this.$ctor__org_gwtproject_user_client_EventListener_$LambdaAdaptor__org_gwtproject_user_client_EventListener_$JsFunction(fn);
  }
- /**
-  * @param {?function(Event):void} fn
-  * @public
-  */
- $ctor__org_gwtproject_user_client_EventListener_$LambdaAdaptor__org_gwtproject_user_client_EventListener_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_user_client_EventListener_$LambdaAdaptor__org_gwtproject_user_client_EventListener_$JsFunction(/** ?function(Event):void */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_user_client_EventListener_$LambdaAdaptor = fn;
  }
- /**
-  * @param {Event} arg0
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_user_client_Event(arg0) {
+ 
+ m_onBrowserEvent__org_gwtproject_user_client_Event(/** Event */ arg0) {
   {
    let $function = this.f_$$fn__org_gwtproject_user_client_EventListener_$LambdaAdaptor;
    $function(arg0);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellBrowser$Style.impl.java.js",
-"lineCount":96,
-"mappings":"A;;;;;;;;;MAqImB,K;;;;;;CASR,qB;;;;;;CAKA,uB;;;;;;CAKA,0B;;;;;;CAKA,mC;;;;;;CAKA,sB;;;;;;CAKA,uB;;;;;;CAKA,2B;;;;;;CAKA,qB;;;;QA5CQ,O;EAAAA,wB;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AACf;MAGO,oEAHP;",
+"lineCount":51,
+"mappings":"A;;;;;;;;;MAqImB,K;;CASR,qB;;CAKA,uB;;CAKA,0B;;CAKA,mC;;CAKA,sB;;CAKA,uB;;CAKA,2B;;CAKA,qB;;QA5CQ,O;EAAAA,wB;EAAAA,qB;;;;;;;;;;;;;;;;;;;;AACf;MAGO,oEAHP;",
 "sources":["CellBrowser.java"],
 "names":["org.gwtproject.user.cellview.client.CellBrowser$Style.<clinit>"]
 }

@@ -13,89 +13,43 @@ let HandlerRegistration = goog.forwardDeclare('org.gwtproject.event.shared.Handl
  * @implements {HasHandlers}
   */
 class EventBus extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_shared_EventBus__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @template H
-  * @param {Event<H>} event
-  * @param {H} handler
-  * @public
-  */
- static m_dispatchEvent__org_gwtproject_event_shared_Event__java_lang_Object(event, handler) {
+ /** @template H */
+ static m_dispatchEvent__org_gwtproject_event_shared_Event__java_lang_Object(/** Event<H> */ event, /** H */ handler) {
   EventBus.$clinit();
   event.m_dispatch__java_lang_Object(handler);
  }
- /**
-  * @param {Event<?>} event
-  * @param {*} source
-  * @public
-  */
- static m_setSourceOfEvent__org_gwtproject_event_shared_Event__java_lang_Object(event, source) {
+ 
+ static m_setSourceOfEvent__org_gwtproject_event_shared_Event__java_lang_Object(/** Event<?> */ event, /** * */ source) {
   EventBus.$clinit();
   event.m_setSource__java_lang_Object(source);
  }
- /**
-  * @abstract
-  * @template H
-  * @param {Type<H>} type
-  * @param {H} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addHandler__org_gwtproject_event_shared_Event_Type__java_lang_Object(type, handler) {}
- /**
-  * @abstract
-  * @template H
-  * @param {Type<H>} type
-  * @param {*} source
-  * @param {H} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addHandlerToSource__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object(type, source, handler) {}
- /**
-  * @abstract
-  * @override
-  * @param {Event<?>} event
-  * @public
-  */
- m_fireEvent__org_gwtproject_event_shared_Event(event) {}
- /**
-  * @abstract
-  * @param {Event<?>} event
-  * @param {*} source
-  * @public
-  */
- m_fireEventFromSource__org_gwtproject_event_shared_Event__java_lang_Object(event, source) {}
- /**
-  * @public
-  */
+ /** @abstract @template H @return {HandlerRegistration} */
+ m_addHandler__org_gwtproject_event_shared_Event_Type__java_lang_Object(/** Type<H> */ type, /** H */ handler) {}
+ /** @abstract @template H @return {HandlerRegistration} */
+ m_addHandlerToSource__org_gwtproject_event_shared_Event_Type__java_lang_Object__java_lang_Object(/** Type<H> */ type, /** * */ source, /** H */ handler) {}
+ /** @abstract @override */
+ m_fireEvent__org_gwtproject_event_shared_Event(/** Event<?> */ event) {}
+ /** @abstract */
+ m_fireEventFromSource__org_gwtproject_event_shared_Event__java_lang_Object(/** Event<?> */ event, /** * */ source) {}
+ 
  static $clinit() {
   EventBus.$clinit = () =>{};
   EventBus.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof EventBus;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

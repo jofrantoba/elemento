@@ -26,114 +26,67 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {Handler<T>}
   */
 class DefaultSelectionEventManager extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {HasData<T>} */
+  /**@type {HasData<T>}*/
   this.f_lastDisplay__org_gwtproject_view_client_DefaultSelectionEventManager_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_lastPageStart__org_gwtproject_view_client_DefaultSelectionEventManager_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_lastSelectedIndex__org_gwtproject_view_client_DefaultSelectionEventManager_ = 0;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_shiftAdditive__org_gwtproject_view_client_DefaultSelectionEventManager_ = false;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_shiftAnchor__org_gwtproject_view_client_DefaultSelectionEventManager_ = 0;
-  /** @public {EventTranslator<T>} */
+  /**@type {EventTranslator<T>}*/
   this.f_translator__org_gwtproject_view_client_DefaultSelectionEventManager_;
  }
- /**
-  * @template T_1
-  * @param {Array<number>} blacklistedColumns
-  * @return {DefaultSelectionEventManager<T_1>}
-  * @public
-  */
- static m_createBlacklistManager__arrayOf_int(blacklistedColumns) {
+ /** @template T_1 @return {DefaultSelectionEventManager<T_1>} */
+ static m_createBlacklistManager__arrayOf_int(/** Array<number> */ blacklistedColumns) {
   DefaultSelectionEventManager.$clinit();
-  return /**@type {!DefaultSelectionEventManager<T_1>} */ (DefaultSelectionEventManager.$create__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator(/**@type {!BlacklistEventTranslator<T_1>} */ (BlacklistEventTranslator.$create__arrayOf_int(blacklistedColumns))));
+  return /**@type {!DefaultSelectionEventManager<T_1>}*/ (DefaultSelectionEventManager.$create__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator(/**@type {!BlacklistEventTranslator<T_1>}*/ (BlacklistEventTranslator.$create__arrayOf_int(blacklistedColumns))));
  }
- /**
-  * @template T_1
-  * @return {DefaultSelectionEventManager<T_1>}
-  * @public
-  */
+ /** @template T_1 @return {DefaultSelectionEventManager<T_1>} */
  static m_createCheckboxManager__() {
   DefaultSelectionEventManager.$clinit();
-  return /**@type {!DefaultSelectionEventManager<T_1>} */ (DefaultSelectionEventManager.$create__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator(/**@type {!CheckboxEventTranslator<T_1>} */ (CheckboxEventTranslator.$create__())));
+  return /**@type {!DefaultSelectionEventManager<T_1>}*/ (DefaultSelectionEventManager.$create__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator(/**@type {!CheckboxEventTranslator<T_1>}*/ (CheckboxEventTranslator.$create__())));
  }
- /**
-  * @template T_1
-  * @param {number} column
-  * @return {DefaultSelectionEventManager<T_1>}
-  * @public
-  */
- static m_createCheckboxManager__int(column) {
+ /** @template T_1 @return {DefaultSelectionEventManager<T_1>} */
+ static m_createCheckboxManager__int(/** number */ column) {
   DefaultSelectionEventManager.$clinit();
-  return /**@type {!DefaultSelectionEventManager<T_1>} */ (DefaultSelectionEventManager.$create__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator(/**@type {!CheckboxEventTranslator<T_1>} */ (CheckboxEventTranslator.$create__int(column))));
+  return /**@type {!DefaultSelectionEventManager<T_1>}*/ (DefaultSelectionEventManager.$create__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator(/**@type {!CheckboxEventTranslator<T_1>}*/ (CheckboxEventTranslator.$create__int(column))));
  }
- /**
-  * @template T_1
-  * @param {EventTranslator<T_1>} translator
-  * @return {DefaultSelectionEventManager<T_1>}
-  * @public
-  */
- static m_createCustomManager__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator(translator) {
+ /** @template T_1 @return {DefaultSelectionEventManager<T_1>} */
+ static m_createCustomManager__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator(/** EventTranslator<T_1> */ translator) {
   DefaultSelectionEventManager.$clinit();
-  return /**@type {!DefaultSelectionEventManager<T_1>} */ (DefaultSelectionEventManager.$create__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator(translator));
+  return /**@type {!DefaultSelectionEventManager<T_1>}*/ (DefaultSelectionEventManager.$create__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator(translator));
  }
- /**
-  * @template T_1
-  * @return {DefaultSelectionEventManager<T_1>}
-  * @public
-  */
+ /** @template T_1 @return {DefaultSelectionEventManager<T_1>} */
  static m_createDefaultManager__() {
   DefaultSelectionEventManager.$clinit();
-  return /**@type {!DefaultSelectionEventManager<T_1>} */ (DefaultSelectionEventManager.$create__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator(null));
+  return /**@type {!DefaultSelectionEventManager<T_1>}*/ (DefaultSelectionEventManager.$create__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator(null));
  }
- /**
-  * @template T_1
-  * @param {Array<number>} whitelistedColumns
-  * @return {DefaultSelectionEventManager<T_1>}
-  * @public
-  */
- static m_createWhitelistManager__arrayOf_int(whitelistedColumns) {
+ /** @template T_1 @return {DefaultSelectionEventManager<T_1>} */
+ static m_createWhitelistManager__arrayOf_int(/** Array<number> */ whitelistedColumns) {
   DefaultSelectionEventManager.$clinit();
-  return /**@type {!DefaultSelectionEventManager<T_1>} */ (DefaultSelectionEventManager.$create__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator(/**@type {!WhitelistEventTranslator<T_1>} */ (WhitelistEventTranslator.$create__arrayOf_int(whitelistedColumns))));
+  return /**@type {!DefaultSelectionEventManager<T_1>}*/ (DefaultSelectionEventManager.$create__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator(/**@type {!WhitelistEventTranslator<T_1>}*/ (WhitelistEventTranslator.$create__arrayOf_int(whitelistedColumns))));
  }
- /**
-  * @template T
-  * @param {EventTranslator<T>} translator
-  * @return {!DefaultSelectionEventManager<T>}
-  * @public
-  */
- static $create__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator(translator) {
+ /** @template T @return {!DefaultSelectionEventManager<T>} */
+ static $create__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator(/** EventTranslator<T> */ translator) {
   DefaultSelectionEventManager.$clinit();
   let $instance = new DefaultSelectionEventManager();
   $instance.$ctor__org_gwtproject_view_client_DefaultSelectionEventManager__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator(translator);
   return $instance;
  }
- /**
-  * @param {EventTranslator<T>} translator
-  * @public
-  */
- $ctor__org_gwtproject_view_client_DefaultSelectionEventManager__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator(translator) {
+ 
+ $ctor__org_gwtproject_view_client_DefaultSelectionEventManager__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator(/** EventTranslator<T> */ translator) {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_view_client_DefaultSelectionEventManager();
   this.f_translator__org_gwtproject_view_client_DefaultSelectionEventManager_ = translator;
  }
- /**
-  * @param {MultiSelectionModel<?>} selectionModel
-  * @param {HasData<T>} display
-  * @param {number} row
-  * @param {T} rowValue
-  * @param {SelectAction} action
-  * @param {boolean} selectRange
-  * @param {boolean} clearOthers
-  * @public
-  */
- m_doMultiSelection__org_gwtproject_view_client_MultiSelectionModel__org_gwtproject_view_client_HasData__int__java_lang_Object__org_gwtproject_view_client_DefaultSelectionEventManager_SelectAction__boolean__boolean(selectionModel, display, row, rowValue, action, selectRange, clearOthers) {
+ 
+ m_doMultiSelection__org_gwtproject_view_client_MultiSelectionModel__org_gwtproject_view_client_HasData__int__java_lang_Object__org_gwtproject_view_client_DefaultSelectionEventManager_SelectAction__boolean__boolean(/** MultiSelectionModel<?> */ selectionModel, /** HasData<T> */ display, /** number */ row, /** T */ rowValue, /** SelectAction */ action, /** boolean */ selectRange, /** boolean */ clearOthers) {
   let addToSelection = true;
   if (!$Equality.$same(action, null)) {
    switch (action.ordinal()) {
@@ -171,12 +124,8 @@ class DefaultSelectionEventManager extends j_l_Object {
    this.m_selectOne__org_gwtproject_view_client_MultiSelectionModel__java_lang_Object__boolean__boolean(selectionModel, rowValue, addToSelection, clearOthers);
   }
  }
- /**
-  * @override
-  * @param {CellPreviewEvent<T>} event
-  * @public
-  */
- m_onCellPreview__org_gwtproject_view_client_CellPreviewEvent(event) {
+ /** @override */
+ m_onCellPreview__org_gwtproject_view_client_CellPreviewEvent(/** CellPreviewEvent<T> */ event) {
   if (event.m_isCellEditing__() || event.m_isSelectionHandled__()) {
    return;
   }
@@ -187,25 +136,17 @@ class DefaultSelectionEventManager extends j_l_Object {
   }
   let action = $Equality.$same(this.f_translator__org_gwtproject_view_client_DefaultSelectionEventManager_, null) ? SelectAction.f_DEFAULT__org_gwtproject_view_client_DefaultSelectionEventManager_SelectAction : this.f_translator__org_gwtproject_view_client_DefaultSelectionEventManager_.m_translateSelectionEvent__org_gwtproject_view_client_CellPreviewEvent(event);
   if (MultiSelectionModel.$isInstance(selectionModel)) {
-   this.m_handleMultiSelectionEvent__org_gwtproject_view_client_CellPreviewEvent__org_gwtproject_view_client_DefaultSelectionEventManager_SelectAction__org_gwtproject_view_client_MultiSelectionModel(event, action, /**@type {MultiSelectionModel<*>} */ ($Casts.$to(selectionModel, MultiSelectionModel)));
+   this.m_handleMultiSelectionEvent__org_gwtproject_view_client_CellPreviewEvent__org_gwtproject_view_client_DefaultSelectionEventManager_SelectAction__org_gwtproject_view_client_MultiSelectionModel(event, action, /**@type {MultiSelectionModel<*>}*/ ($Casts.$to(selectionModel, MultiSelectionModel)));
   } else {
    this.m_handleSelectionEvent__org_gwtproject_view_client_CellPreviewEvent__org_gwtproject_view_client_DefaultSelectionEventManager_SelectAction__org_gwtproject_view_client_SelectionModel(event, action, selectionModel);
   }
  }
- /**
-  * @param {MultiSelectionModel<?>} selectionModel
-  * @public
-  */
- m_clearSelection__org_gwtproject_view_client_MultiSelectionModel(selectionModel) {
+ 
+ m_clearSelection__org_gwtproject_view_client_MultiSelectionModel(/** MultiSelectionModel<?> */ selectionModel) {
   selectionModel.m_clear__();
  }
- /**
-  * @param {CellPreviewEvent<T>} event
-  * @param {SelectAction} action
-  * @param {MultiSelectionModel<?>} selectionModel
-  * @public
-  */
- m_handleMultiSelectionEvent__org_gwtproject_view_client_CellPreviewEvent__org_gwtproject_view_client_DefaultSelectionEventManager_SelectAction__org_gwtproject_view_client_MultiSelectionModel(event, action, selectionModel) {
+ 
+ m_handleMultiSelectionEvent__org_gwtproject_view_client_CellPreviewEvent__org_gwtproject_view_client_DefaultSelectionEventManager_SelectAction__org_gwtproject_view_client_MultiSelectionModel(/** CellPreviewEvent<T> */ event, /** SelectAction */ action, /** MultiSelectionModel<?> */ selectionModel) {
   let nativeEvent = event.m_getNativeEvent__();
   let type = $Overlay.m_getType__$devirt__org_gwtproject_dom_client_NativeEvent(nativeEvent);
   if (j_l_String.m_equals__java_lang_String__java_lang_Object(BrowserEvents.f_CLICK__org_gwtproject_dom_client_BrowserEvents, type)) {
@@ -228,13 +169,8 @@ class DefaultSelectionEventManager extends j_l_Object {
    }
   }
  }
- /**
-  * @param {CellPreviewEvent<T>} event
-  * @param {SelectAction} action
-  * @param {SelectionModel<?>} selectionModel
-  * @public
-  */
- m_handleSelectionEvent__org_gwtproject_view_client_CellPreviewEvent__org_gwtproject_view_client_DefaultSelectionEventManager_SelectAction__org_gwtproject_view_client_SelectionModel(event, action, selectionModel) {
+ 
+ m_handleSelectionEvent__org_gwtproject_view_client_CellPreviewEvent__org_gwtproject_view_client_DefaultSelectionEventManager_SelectAction__org_gwtproject_view_client_SelectionModel(/** CellPreviewEvent<T> */ event, /** SelectAction */ action, /** SelectionModel<?> */ selectionModel) {
   let value = event.m_getValue__();
   if (!$Equality.$same(action, null)) {
    switch (action.ordinal()) {
@@ -266,29 +202,16 @@ class DefaultSelectionEventManager extends j_l_Object {
    }
   }
  }
- /**
-  * @param {MultiSelectionModel<?>} selectionModel
-  * @param {T} target
-  * @param {boolean} selected
-  * @param {boolean} clearOthers
-  * @public
-  */
- m_selectOne__org_gwtproject_view_client_MultiSelectionModel__java_lang_Object__boolean__boolean(selectionModel, target, selected, clearOthers) {
+ 
+ m_selectOne__org_gwtproject_view_client_MultiSelectionModel__java_lang_Object__boolean__boolean(/** MultiSelectionModel<?> */ selectionModel, /** T */ target, /** boolean */ selected, /** boolean */ clearOthers) {
   if (clearOthers) {
    this.m_clearSelection__org_gwtproject_view_client_MultiSelectionModel(selectionModel);
   }
   selectionModel.m_setSelected__java_lang_Object__boolean(target, selected);
  }
- /**
-  * @param {MultiSelectionModel<?>} selectionModel
-  * @param {HasData<T>} display
-  * @param {Range} range
-  * @param {boolean} addToSelection
-  * @param {boolean} clearOthers
-  * @public
-  */
- m_setRangeSelection__org_gwtproject_view_client_MultiSelectionModel__org_gwtproject_view_client_HasData__org_gwtproject_view_client_Range__boolean__boolean(selectionModel, display, range, addToSelection, clearOthers) {
-  let toUpdate = /**@type {!ArrayList<T>} */ (ArrayList.$create__());
+ 
+ m_setRangeSelection__org_gwtproject_view_client_MultiSelectionModel__org_gwtproject_view_client_HasData__org_gwtproject_view_client_Range__boolean__boolean(/** MultiSelectionModel<?> */ selectionModel, /** HasData<T> */ display, /** Range */ range, /** boolean */ addToSelection, /** boolean */ clearOthers) {
+  let toUpdate = /**@type {!ArrayList<T>}*/ (ArrayList.$create__());
   let itemCount = display.m_getVisibleItemCount__();
   let relativeStart = range.m_getStart__() - display.m_getVisibleRange__().m_getStart__();
   let relativeEnd = relativeStart + range.m_getLength__();
@@ -303,32 +226,22 @@ class DefaultSelectionEventManager extends j_l_Object {
    selectionModel.m_setSelected__java_lang_Object__boolean(value, addToSelection);
   }
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_view_client_DefaultSelectionEventManager() {
   this.f_lastSelectedIndex__org_gwtproject_view_client_DefaultSelectionEventManager_ = -1;
   this.f_shiftAnchor__org_gwtproject_view_client_DefaultSelectionEventManager_ = -1;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DefaultSelectionEventManager.$clinit = () =>{};
   DefaultSelectionEventManager.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DefaultSelectionEventManager;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   ArrayList = goog.module.get('java.util.ArrayList$impl');

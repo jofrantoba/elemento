@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MessagePort$$Overlay.impl.java.js",
-"lineCount":25,
-"mappings":"A;;;;;;;;MA0Ba,oB;;;;;;;QAoBO,0G,WAAmBA,O,EAAwBC,Q;EAA3CC,+B;EAChBA,kH;;;;;QArBS,O;EAAAC,uC;EAAAA;",
+"lineCount":18,
+"mappings":"A;;;;;;;;MA0Ba,oB;;QAoBO,0G,wCAAmBA,O,6BAAwBC,Q;EAA3CC,+B;EAChBA,iH;;;QArBS,O;EAAAC,uC;EAAAA;",
 "sources":["MessagePort.java"],
 "names":["message","transfer","elemental2.dom.MessagePort$$Overlay.postMessage__$devirt","elemental2.dom.MessagePort$$Overlay.<clinit>"]
 }

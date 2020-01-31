@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"FiniteWidgetIterator$WidgetProvider.impl.java.js",
-"lineCount":33,
-"mappings":"A;;;;;;;;;;MAoC0B,c;;;;;;;CACb,U,CAAQA,K;;;;;;QADK,M;EAAAC,yB;EAAAA,8B;;;;;QAAA,O;EAAAC,iC;EAAAA;",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;MAoC0B,c;;CACb,U,eAAQA,K;;QADK,M;EAAAC,yB;EAAAA,8B;;;QAAA,O;EAAAC,iC;EAAAA;",
 "sources":["FiniteWidgetIterator.java"],
 "names":["index","org.gwtproject.user.client.ui.FiniteWidgetIterator$WidgetProvider.<synthetic: adapt_lambda>","org.gwtproject.user.client.ui.FiniteWidgetIterator$WidgetProvider.<clinit>"]
 }

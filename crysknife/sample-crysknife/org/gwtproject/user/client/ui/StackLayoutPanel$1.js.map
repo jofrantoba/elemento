@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"StackLayoutPanel$1.impl.java.js",
-"lineCount":106,
-"mappings":"A;;;;;;;;;;;;;;;;;;MA6akC,E;;;;CAAA,W;EAAAA,Q;EAAAA;uE;EAAAA;OACxB,qDADwBA,K;EAAAA;OACjB,wDADiBA,K;;;;;;;QAAA,uD;EAAAC,a;EAAAA,yB;EAAAA,+H;EAAAA,iB;;;;;;CAAA,uG;EAAAC,mF;EAAAA,iC;EAAAA,mE;;;;;;;CAGb,W;EACbC,8M;;;;;;;CAGY,Q;EACZC;GACEA,2DADFA;G;EAGAA,0Y;;;;;;CAGU,U;EACVC;GACEA,0DADFA;G;EAIAA,yb;EACAA,2H;EACAA,mE;;;;;;;;CArB0B,+C;EAAAC,mG;;;;;CAAA,2D;EAC5BJ,+D;EAAAA,mE;;;;;QAD4B,O;EAAAK,qB;EAAAA,kB;EAAAA,qB;EAAAA;",
+"lineCount":78,
+"mappings":"A;;;;;;;;;;;;;;;;;;MA6akC,E;;CAAA,W;EAAAA,Q;EAAAA;uE;EAAAA;OACxB,qDADwBA,K;EAAAA;OACjB,wDADiBA,K;;;QAAA,uD;EAAAC,a;EAAAA,yB;EAAAA,+H;EAAAA,iB;;;CAAA,uG;EAAAC,mF;EAAAA,iC;EAAAA,mE;;;CAGb,W;EACbC,8M;;;CAGY,Q;EACZC;GACEA,2DADFA;G;EAGAA,yY;;;CAGU,U;EACVC;GACEA,0DADFA;G;EAIAA,wb;EACAA,2H;EACAA,mE;;;;CArB0B,+C;EAAAC,mG;;;CAAA,2D;EAC5BJ,+D;EAAAA,mE;;;QAD4B,O;EAAAK,qB;EAAAA,kB;EAAAA,qB;EAAAA;",
 "sources":["StackLayoutPanel.java"],
 "names":["org.gwtproject.user.client.ui.StackLayoutPanel$1.<synthetic: ctor_js>","org.gwtproject.user.client.ui.StackLayoutPanel$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.StackLayoutPanel$1.<init>","org.gwtproject.user.client.ui.StackLayoutPanel$1.hasNext","org.gwtproject.user.client.ui.StackLayoutPanel$1.next","org.gwtproject.user.client.ui.StackLayoutPanel$1.remove","org.gwtproject.user.client.ui.StackLayoutPanel$1.forEachRemaining","org.gwtproject.user.client.ui.StackLayoutPanel$1.<clinit>"]
 }

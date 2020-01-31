@@ -12,79 +12,50 @@ let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
  * @extends {AbstractSelectionModel<T>}
   */
 class NoSelectionModel extends AbstractSelectionModel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {*} */
+  /**@type {*}*/
   this.f_lastKey__org_gwtproject_view_client_NoSelectionModel_;
-  /** @public {T} */
+  /**@type {T}*/
   this.f_lastSelection__org_gwtproject_view_client_NoSelectionModel_;
  }
- /**
-  * Factory method corresponding to constructor 'NoSelectionModel()'.
-  * @template T
-  * @return {!NoSelectionModel<T>}
-  * @public
-  */
+ //Factory method corresponding to constructor 'NoSelectionModel()'.
+ /** @template T @return {!NoSelectionModel<T>} */
  static $create__() {
   NoSelectionModel.$clinit();
   let $instance = new NoSelectionModel();
   $instance.$ctor__org_gwtproject_view_client_NoSelectionModel__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'NoSelectionModel()'.
-  * @public
-  */
+ //Initialization from constructor 'NoSelectionModel()'.
+ 
  $ctor__org_gwtproject_view_client_NoSelectionModel__() {
   this.$ctor__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel__org_gwtproject_view_client_ProvidesKey(null);
  }
- /**
-  * Factory method corresponding to constructor 'NoSelectionModel(ProvidesKey)'.
-  * @template T
-  * @param {ProvidesKey<T>} keyProvider
-  * @return {!NoSelectionModel<T>}
-  * @public
-  */
- static $create__org_gwtproject_view_client_ProvidesKey(keyProvider) {
+ //Factory method corresponding to constructor 'NoSelectionModel(ProvidesKey)'.
+ /** @template T @return {!NoSelectionModel<T>} */
+ static $create__org_gwtproject_view_client_ProvidesKey(/** ProvidesKey<T> */ keyProvider) {
   NoSelectionModel.$clinit();
   let $instance = new NoSelectionModel();
   $instance.$ctor__org_gwtproject_view_client_NoSelectionModel__org_gwtproject_view_client_ProvidesKey(keyProvider);
   return $instance;
  }
- /**
-  * Initialization from constructor 'NoSelectionModel(ProvidesKey)'.
-  * @param {ProvidesKey<T>} keyProvider
-  * @public
-  */
- $ctor__org_gwtproject_view_client_NoSelectionModel__org_gwtproject_view_client_ProvidesKey(keyProvider) {
+ //Initialization from constructor 'NoSelectionModel(ProvidesKey)'.
+ 
+ $ctor__org_gwtproject_view_client_NoSelectionModel__org_gwtproject_view_client_ProvidesKey(/** ProvidesKey<T> */ keyProvider) {
   this.$ctor__org_gwtproject_view_client_SelectionModel_AbstractSelectionModel__org_gwtproject_view_client_ProvidesKey(keyProvider);
  }
- /**
-  * @return {T}
-  * @public
-  */
+ /** @return {T} */
  m_getLastSelectedObject__() {
   return this.f_lastSelection__org_gwtproject_view_client_NoSelectionModel_;
  }
- /**
-  * @override
-  * @param {T} item
-  * @return {boolean}
-  * @public
-  */
- m_isSelected__java_lang_Object(item) {
+ /** @override @return {boolean} */
+ m_isSelected__java_lang_Object(/** T */ item) {
   return false;
  }
- /**
-  * @override
-  * @param {T} item
-  * @param {boolean} selected
-  * @public
-  */
- m_setSelected__java_lang_Object__boolean(item, selected) {
+ /** @override */
+ m_setSelected__java_lang_Object__boolean(/** T */ item, /** boolean */ selected) {
   let key = this.m_getKey__java_lang_Object(item);
   if (selected) {
    this.f_lastSelection__org_gwtproject_view_client_NoSelectionModel_ = item;
@@ -95,25 +66,17 @@ class NoSelectionModel extends AbstractSelectionModel {
   }
   this.m_scheduleSelectionChangeEvent__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NoSelectionModel.$clinit = () =>{};
   NoSelectionModel.$loadModules();
   AbstractSelectionModel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof NoSelectionModel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $Objects = goog.module.get('vmbootstrap.Objects$impl');

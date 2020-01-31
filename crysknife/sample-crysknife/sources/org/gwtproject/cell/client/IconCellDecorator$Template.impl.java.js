@@ -12,76 +12,35 @@ let SafeHtml = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHtml$impl
  * @extends {SafeHtmlTemplates}
  */
 class Template {
- /**
-  * @abstract
-  * @param {SafeStyles} padding
-  * @param {SafeHtml} icon
-  * @param {SafeHtml} cellContents
-  * @return {SafeHtml}
-  * @public
-  */
- m_outerDiv__org_gwtproject_safecss_shared_SafeStyles__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_safehtml_shared_SafeHtml(padding, icon, cellContents) {}
- /**
-  * @abstract
-  * @param {SafeStyles} styles
-  * @param {SafeHtml} image
-  * @return {SafeHtml}
-  * @public
-  */
- m_imageWrapperBottom__org_gwtproject_safecss_shared_SafeStyles__org_gwtproject_safehtml_shared_SafeHtml(styles, image) {}
- /**
-  * @abstract
-  * @param {SafeStyles} styles
-  * @param {SafeHtml} image
-  * @return {SafeHtml}
-  * @public
-  */
- m_imageWrapperMiddle__org_gwtproject_safecss_shared_SafeStyles__org_gwtproject_safehtml_shared_SafeHtml(styles, image) {}
- /**
-  * @abstract
-  * @param {SafeStyles} styles
-  * @param {SafeHtml} image
-  * @return {SafeHtml}
-  * @public
-  */
- m_imageWrapperTop__org_gwtproject_safecss_shared_SafeStyles__org_gwtproject_safehtml_shared_SafeHtml(styles, image) {}
- /**
-  * @return {Template}
-  * @public
-  */
+ /** @abstract @return {SafeHtml} */
+ m_outerDiv__org_gwtproject_safecss_shared_SafeStyles__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_safehtml_shared_SafeHtml(/** SafeStyles */ padding, /** SafeHtml */ icon, /** SafeHtml */ cellContents) {}
+ /** @abstract @return {SafeHtml} */
+ m_imageWrapperBottom__org_gwtproject_safecss_shared_SafeStyles__org_gwtproject_safehtml_shared_SafeHtml(/** SafeStyles */ styles, /** SafeHtml */ image) {}
+ /** @abstract @return {SafeHtml} */
+ m_imageWrapperMiddle__org_gwtproject_safecss_shared_SafeStyles__org_gwtproject_safehtml_shared_SafeHtml(/** SafeStyles */ styles, /** SafeHtml */ image) {}
+ /** @abstract @return {SafeHtml} */
+ m_imageWrapperTop__org_gwtproject_safecss_shared_SafeStyles__org_gwtproject_safehtml_shared_SafeHtml(/** SafeStyles */ styles, /** SafeHtml */ image) {}
+ /** @return {Template} */
  static get f_INSTANCE__org_gwtproject_cell_client_IconCellDecorator_Template() {
   return (Template.$clinit(), Template.$f_INSTANCE__org_gwtproject_cell_client_IconCellDecorator_Template);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Template.$clinit = () =>{};
   Template.$loadModules();
   Template.$f_INSTANCE__org_gwtproject_cell_client_IconCellDecorator_Template = IconCellDecorator__TemplateImpl.$create__();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  SafeHtmlTemplates.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_cell_client_IconCellDecorator_Template = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  SafeHtmlTemplates.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_cell_client_IconCellDecorator_Template = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_cell_client_IconCellDecorator_Template;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IconCellDecorator__TemplateImpl = goog.module.get('org.gwtproject.cell.client.IconCellDecorator_TemplateImpl$impl');
  }
@@ -91,7 +50,7 @@ $Util.$setClassMetadataForInterface(Template, 'org.gwtproject.cell.client.IconCe
 
 Template.$markImplementor(/** @type {Function} */ (Template));
 
-/** @private {Template} */
+/**@private {Template}*/
 Template.$f_INSTANCE__org_gwtproject_cell_client_IconCellDecorator_Template;
 
 exports = Template; 

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DefaultSelectionEventManager$EventTranslator.impl.java.js",
-"lineCount":32,
-"mappings":"A;;;;;;;;;;;MAyK0B,e;;;;;;;CAOd,oE,CAA0CA,K;;;;;;;CAOrC,sE,CAA4CA,K;;;;QAdnC,O;EAAAC,kC;EAAAA;",
+"lineCount":20,
+"mappings":"A;;;;;;;;;;;MAyK0B,e;;CAOd,oE,4BAA0CA,K;;CAOrC,sE,4BAA4CA,K;;QAdnC,O;EAAAC,kC;EAAAA;",
 "sources":["DefaultSelectionEventManager.java"],
 "names":["event","org.gwtproject.view.client.DefaultSelectionEventManager$EventTranslator.<clinit>"]
 }

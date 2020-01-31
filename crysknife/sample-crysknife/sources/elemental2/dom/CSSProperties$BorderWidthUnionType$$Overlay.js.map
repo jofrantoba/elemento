@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CSSProperties$BorderWidthUnionType$$Overlay.impl.java.js",
-"lineCount":60,
-"mappings":"A;;;;;;;;MAiamB,Q;;;;;;QAE2B,sB,CAAUA,C;EAAVC,mB;EACxCA,wD;;;;;;;QAIa,sE;EAAAC,mB;EACbA,iD;;;;;;;QAIa,sE;EAAAC,mB;EACbA,iD;;;;;;;QAIc,sE;EAAAC,mB;EACdA,sD;;;;;;;QAIc,sE;EAAAC,mB;EACdA,0D;;;;;QAvBa,O;EAAAC,2B;EAAAA;",
+"lineCount":38,
+"mappings":"A;;;;;;;;MAiamB,Q;;QAE2B,sB,UAAUA,C;EAAVC,mB;EACxCA,uD;;;QAIa,sE;EAAAC,mB;EACbA,iD;;;QAIa,sE;EAAAC,mB;EACbA,iD;;;QAIc,sE;EAAAC,mB;EACdA,qD;;;QAIc,sE;EAAAC,mB;EACdA,yD;;;QAvBa,O;EAAAC,2B;EAAAA;",
 "sources":["CSSProperties.java"],
 "names":["o","elemental2.dom.CSSProperties$BorderWidthUnionType$$Overlay.of","elemental2.dom.CSSProperties$BorderWidthUnionType$$Overlay.asDouble__$devirt","elemental2.dom.CSSProperties$BorderWidthUnionType$$Overlay.asString__$devirt","elemental2.dom.CSSProperties$BorderWidthUnionType$$Overlay.isDouble__$devirt","elemental2.dom.CSSProperties$BorderWidthUnionType$$Overlay.isString__$devirt","elemental2.dom.CSSProperties$BorderWidthUnionType$$Overlay.<clinit>"]
 }

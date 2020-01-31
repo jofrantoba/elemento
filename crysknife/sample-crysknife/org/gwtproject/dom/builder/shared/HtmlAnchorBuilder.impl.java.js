@@ -13,121 +13,64 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {AnchorBuilder}
   */
 class HtmlAnchorBuilder extends HtmlElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @return {!HtmlAnchorBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ /** @return {!HtmlAnchorBuilder} */
+ static $create__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   HtmlAnchorBuilder.$clinit();
   let $instance = new HtmlAnchorBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_shared_HtmlAnchorBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {HtmlBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_shared_HtmlAnchorBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_shared_HtmlAnchorBuilder__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(/** HtmlBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_shared_HtmlElementBuilderBase__org_gwtproject_dom_builder_shared_HtmlBuilderImpl(delegate);
  }
- /**
-  * @override
-  * @param {?string} accessKey
-  * @return {AnchorBuilder}
-  * @public
-  */
- m_accessKey__java_lang_String(accessKey) {
-  return /**@type {AnchorBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("accessKey", accessKey), AnchorBuilder));
+ /** @override @return {AnchorBuilder} */
+ m_accessKey__java_lang_String(/** ?string */ accessKey) {
+  return /**@type {AnchorBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("accessKey", accessKey), AnchorBuilder));
  }
- /**
-  * @override
-  * @param {SafeUri} href
-  * @return {AnchorBuilder}
-  * @public
-  */
- m_href__org_gwtproject_safehtml_shared_SafeUri(href) {
+ /** @override @return {AnchorBuilder} */
+ m_href__org_gwtproject_safehtml_shared_SafeUri(/** SafeUri */ href) {
   return this.m_href__java_lang_String(href.m_asString__());
  }
- /**
-  * @override
-  * @param {?string} href
-  * @return {AnchorBuilder}
-  * @public
-  */
- m_href__java_lang_String(href) {
-  return /**@type {AnchorBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("href", href), AnchorBuilder));
+ /** @override @return {AnchorBuilder} */
+ m_href__java_lang_String(/** ?string */ href) {
+  return /**@type {AnchorBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("href", href), AnchorBuilder));
  }
- /**
-  * @override
-  * @param {?string} hreflang
-  * @return {AnchorBuilder}
-  * @public
-  */
- m_hreflang__java_lang_String(hreflang) {
-  return /**@type {AnchorBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("hreflang", hreflang), AnchorBuilder));
+ /** @override @return {AnchorBuilder} */
+ m_hreflang__java_lang_String(/** ?string */ hreflang) {
+  return /**@type {AnchorBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("hreflang", hreflang), AnchorBuilder));
  }
- /**
-  * @override
-  * @param {?string} name
-  * @return {AnchorBuilder}
-  * @public
-  */
- m_name__java_lang_String(name) {
-  return /**@type {AnchorBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("name", name), AnchorBuilder));
+ /** @override @return {AnchorBuilder} */
+ m_name__java_lang_String(/** ?string */ name) {
+  return /**@type {AnchorBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("name", name), AnchorBuilder));
  }
- /**
-  * @override
-  * @param {?string} rel
-  * @return {AnchorBuilder}
-  * @public
-  */
- m_rel__java_lang_String(rel) {
-  return /**@type {AnchorBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("rel", rel), AnchorBuilder));
+ /** @override @return {AnchorBuilder} */
+ m_rel__java_lang_String(/** ?string */ rel) {
+  return /**@type {AnchorBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("rel", rel), AnchorBuilder));
  }
- /**
-  * @override
-  * @param {?string} target
-  * @return {AnchorBuilder}
-  * @public
-  */
- m_target__java_lang_String(target) {
-  return /**@type {AnchorBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("target", target), AnchorBuilder));
+ /** @override @return {AnchorBuilder} */
+ m_target__java_lang_String(/** ?string */ target) {
+  return /**@type {AnchorBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("target", target), AnchorBuilder));
  }
- /**
-  * @override
-  * @param {?string} type
-  * @return {AnchorBuilder}
-  * @public
-  */
- m_type__java_lang_String(type) {
-  return /**@type {AnchorBuilder} */ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("type", type), AnchorBuilder));
+ /** @override @return {AnchorBuilder} */
+ m_type__java_lang_String(/** ?string */ type) {
+  return /**@type {AnchorBuilder}*/ ($Casts.$to(this.m_trustedAttribute__java_lang_String__java_lang_String_$pp_org_gwtproject_dom_builder_shared("type", type), AnchorBuilder));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HtmlAnchorBuilder.$clinit = () =>{};
   HtmlAnchorBuilder.$loadModules();
   HtmlElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HtmlAnchorBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

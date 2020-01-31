@@ -9,93 +9,44 @@ const BasicFormatter = goog.require('org.gwtproject.user.client.ui.RichTextArea.
  * @deprecated
  */
 class ExtendedFormatter {
- /**
-  * @abstract
-  * @param {?string} url
-  * @public
-  */
- m_createLink__java_lang_String(url) {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
+ m_createLink__java_lang_String(/** ?string */ url) {}
+ /** @abstract */
  m_insertHorizontalRule__() {}
- /**
-  * @abstract
-  * @param {?string} url
-  * @public
-  */
- m_insertImage__java_lang_String(url) {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
+ m_insertImage__java_lang_String(/** ?string */ url) {}
+ /** @abstract */
  m_insertOrderedList__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_insertUnorderedList__() {}
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_isStrikethrough__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_leftIndent__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_removeFormat__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_removeLink__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_rightIndent__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_toggleStrikethrough__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ExtendedFormatter.$clinit = () =>{};
   ExtendedFormatter.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  BasicFormatter.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_RichTextArea_ExtendedFormatter = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  BasicFormatter.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_RichTextArea_ExtendedFormatter = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_RichTextArea_ExtendedFormatter;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

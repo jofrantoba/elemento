@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"EditorDelegate.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;;MA2BiB,c;;;;;;CAMR,W;;;;;;;;CAaF,mE,CAAmBA,O,EAAgBC,K,EAAcC,Q;;;;;;CAejD,mB,CAAiBC,K;;;;;;CAaF,a;;;;QA/CL,O;EAAAC,iC;EAAAA;",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;MA2BiB,c;;CAMR,W;;CAaF,mE,gBAAmBA,O,WAAgBC,K,WAAcC,Q;;CAejD,mB,gBAAiBC,K;;CAaF,a;;QA/CL,O;EAAAC,iC;EAAAA;",
 "sources":["EditorDelegate.java"],
 "names":["message","value","userData","dirty","org.gwtproject.editor.client.EditorDelegate.<clinit>"]
 }

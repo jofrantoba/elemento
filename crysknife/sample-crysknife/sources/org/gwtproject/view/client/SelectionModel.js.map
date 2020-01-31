@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SelectionModel.impl.java.js",
-"lineCount":44,
-"mappings":"A;;;;;;;;;;;;;;;MA6BiB,c;;;;;;;;CAwIK,oF,CAAkFA,O;;;;;;;CAQ9F,8B,CAAaC,M;;;;;;;CAYhB,wC,CAAcA,M,EAAgBC,Q;;;;QA5JpB,O;EAAAC,iC;EAAAA;",
+"lineCount":26,
+"mappings":"A;;;;;;;;;;;;;;;MA6BiB,c;;CAwIK,oF,gBAAkFA,O;;CAQ9F,8B,UAAaC,M;;CAYhB,wC,UAAcA,M,iBAAgBC,Q;;QA5JpB,O;EAAAC,iC;EAAAA;",
 "sources":["SelectionModel.java"],
 "names":["handler","object","selected","org.gwtproject.view.client.SelectionModel.<clinit>"]
 }

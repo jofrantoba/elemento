@@ -16,81 +16,53 @@ let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
  * @extends {AbstractSafeHtmlCell<?string>}
   */
 class TextCell extends AbstractSafeHtmlCell {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * Factory method corresponding to constructor 'TextCell()'.
-  * @return {!TextCell}
-  * @public
-  */
+ //Factory method corresponding to constructor 'TextCell()'.
+ /** @return {!TextCell} */
  static $create__() {
   TextCell.$clinit();
   let $instance = new TextCell();
   $instance.$ctor__org_gwtproject_cell_client_TextCell__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'TextCell()'.
-  * @public
-  */
+ //Initialization from constructor 'TextCell()'.
+ 
  $ctor__org_gwtproject_cell_client_TextCell__() {
-  this.$ctor__org_gwtproject_cell_client_AbstractSafeHtmlCell__org_gwtproject_text_shared_SafeHtmlRenderer__arrayOf_java_lang_String(SimpleSafeHtmlRenderer.m_getInstance__(), /**@type {!Array<?string>} */ ($Arrays.$init([], j_l_String)));
+  this.$ctor__org_gwtproject_cell_client_AbstractSafeHtmlCell__org_gwtproject_text_shared_SafeHtmlRenderer__arrayOf_java_lang_String(SimpleSafeHtmlRenderer.m_getInstance__(), /**@type {!Array<?string>}*/ ($Arrays.$init([], j_l_String)));
  }
- /**
-  * Factory method corresponding to constructor 'TextCell(SafeHtmlRenderer)'.
-  * @param {SafeHtmlRenderer<?string>} renderer
-  * @return {!TextCell}
-  * @public
-  */
- static $create__org_gwtproject_text_shared_SafeHtmlRenderer(renderer) {
+ //Factory method corresponding to constructor 'TextCell(SafeHtmlRenderer)'.
+ /** @return {!TextCell} */
+ static $create__org_gwtproject_text_shared_SafeHtmlRenderer(/** SafeHtmlRenderer<?string> */ renderer) {
   TextCell.$clinit();
   let $instance = new TextCell();
   $instance.$ctor__org_gwtproject_cell_client_TextCell__org_gwtproject_text_shared_SafeHtmlRenderer(renderer);
   return $instance;
  }
- /**
-  * Initialization from constructor 'TextCell(SafeHtmlRenderer)'.
-  * @param {SafeHtmlRenderer<?string>} renderer
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_TextCell__org_gwtproject_text_shared_SafeHtmlRenderer(renderer) {
-  this.$ctor__org_gwtproject_cell_client_AbstractSafeHtmlCell__org_gwtproject_text_shared_SafeHtmlRenderer__arrayOf_java_lang_String(renderer, /**@type {!Array<?string>} */ ($Arrays.$init([], j_l_String)));
+ //Initialization from constructor 'TextCell(SafeHtmlRenderer)'.
+ 
+ $ctor__org_gwtproject_cell_client_TextCell__org_gwtproject_text_shared_SafeHtmlRenderer(/** SafeHtmlRenderer<?string> */ renderer) {
+  this.$ctor__org_gwtproject_cell_client_AbstractSafeHtmlCell__org_gwtproject_text_shared_SafeHtmlRenderer__arrayOf_java_lang_String(renderer, /**@type {!Array<?string>}*/ ($Arrays.$init([], j_l_String)));
  }
- /**
-  * @override
-  * @param {Context} context
-  * @param {SafeHtml} value
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, value, sb) {
+ /** @override */
+ m_render__org_gwtproject_cell_client_Cell_Context__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ context, /** SafeHtml */ value, /** SafeHtmlBuilder */ sb) {
   if (!$Equality.$same(value, null)) {
    sb.m_append__org_gwtproject_safehtml_shared_SafeHtml(value);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TextCell.$clinit = () =>{};
   TextCell.$loadModules();
   AbstractSafeHtmlCell.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TextCell;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

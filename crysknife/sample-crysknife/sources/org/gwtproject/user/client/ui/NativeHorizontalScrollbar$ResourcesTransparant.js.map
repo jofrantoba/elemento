@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"NativeHorizontalScrollbar$ResourcesTransparant.impl.java.js",
-"lineCount":79,
-"mappings":"A;;;;;;;;;;;;;MAsDmB,oB;;;;;;;CAOT,kC;;;;;;QAPS,M;EAAAA,+B;EAAAA,8B;;;;;;QAEf,4F;EAAAC,wJ;;;;;QAFe,O;EAAAC,uC;EAAAA,oC;EAEfA,iL;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFe;;",
+"lineCount":54,
+"mappings":"A;;;;;;;;;;;;;MAsDmB,oB;;CAOT,kC;;QAPS,M;EAAAA,+B;EAAAA,8B;;;QAEf,4F;EAAAC,wJ;;;QAFe,O;EAAAC,uC;EAAAA,oC;EAEfA,iL;;;;;;;;;;;;;;;;;;;;;;;AAFe;;",
 "sources":["NativeHorizontalScrollbar.java"],
 "names":["org.gwtproject.user.client.ui.NativeHorizontalScrollbar$ResourcesTransparant.<synthetic: adapt_lambda>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar$ResourcesTransparant.<synthetic: getter>","org.gwtproject.user.client.ui.NativeHorizontalScrollbar$ResourcesTransparant.<clinit>"]
 }

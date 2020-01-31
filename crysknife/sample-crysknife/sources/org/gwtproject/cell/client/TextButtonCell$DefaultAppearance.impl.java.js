@@ -12,69 +12,47 @@ let SimpleSafeHtmlRenderer = goog.forwardDeclare('org.gwtproject.text.shared.Sim
  * @implements {Appearance}
   */
 class TextButtonCell_DefaultAppearance extends DefaultAppearance {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * Factory method corresponding to constructor 'DefaultAppearance()'.
-  * @return {!TextButtonCell_DefaultAppearance}
-  * @public
-  */
+ //Factory method corresponding to constructor 'DefaultAppearance()'.
+ /** @return {!TextButtonCell_DefaultAppearance} */
  static $create__() {
   TextButtonCell_DefaultAppearance.$clinit();
   let $instance = new TextButtonCell_DefaultAppearance();
   $instance.$ctor__org_gwtproject_cell_client_TextButtonCell_DefaultAppearance__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'DefaultAppearance()'.
-  * @public
-  */
+ //Initialization from constructor 'DefaultAppearance()'.
+ 
  $ctor__org_gwtproject_cell_client_TextButtonCell_DefaultAppearance__() {
   this.$ctor__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance__org_gwtproject_text_shared_SafeHtmlRenderer(SimpleSafeHtmlRenderer.m_getInstance__());
  }
- /**
-  * Factory method corresponding to constructor 'DefaultAppearance(Resources)'.
-  * @param {Resources} resources
-  * @return {!TextButtonCell_DefaultAppearance}
-  * @public
-  */
- static $create__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Resources(resources) {
+ //Factory method corresponding to constructor 'DefaultAppearance(Resources)'.
+ /** @return {!TextButtonCell_DefaultAppearance} */
+ static $create__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Resources(/** Resources */ resources) {
   TextButtonCell_DefaultAppearance.$clinit();
   let $instance = new TextButtonCell_DefaultAppearance();
   $instance.$ctor__org_gwtproject_cell_client_TextButtonCell_DefaultAppearance__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Resources(resources);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DefaultAppearance(Resources)'.
-  * @param {Resources} resources
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_TextButtonCell_DefaultAppearance__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Resources(resources) {
+ //Initialization from constructor 'DefaultAppearance(Resources)'.
+ 
+ $ctor__org_gwtproject_cell_client_TextButtonCell_DefaultAppearance__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Resources(/** Resources */ resources) {
   this.$ctor__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance__org_gwtproject_text_shared_SafeHtmlRenderer__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Resources(SimpleSafeHtmlRenderer.m_getInstance__(), resources);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TextButtonCell_DefaultAppearance.$clinit = () =>{};
   TextButtonCell_DefaultAppearance.$loadModules();
   DefaultAppearance.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TextButtonCell_DefaultAppearance;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   SimpleSafeHtmlRenderer = goog.module.get('org.gwtproject.text.shared.SimpleSafeHtmlRenderer$impl');
  }

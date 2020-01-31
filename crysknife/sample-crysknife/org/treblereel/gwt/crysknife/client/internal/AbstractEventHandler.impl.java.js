@@ -15,64 +15,43 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {Event<T>}
   */
 class AbstractEventHandler extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Set<Consumer<T>>} */
+  /**@type {Set<Consumer<T>>}*/
   this.f_subscribers__org_treblereel_gwt_crysknife_client_internal_AbstractEventHandler_;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_treblereel_gwt_crysknife_client_internal_AbstractEventHandler__() {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_treblereel_gwt_crysknife_client_internal_AbstractEventHandler();
  }
- /**
-  * @override
-  * @param {T} t
-  * @public
-  */
- m_fire__java_lang_Object(t) {
+ /** @override */
+ m_fire__java_lang_Object(/** T */ t) {
   this.f_subscribers__org_treblereel_gwt_crysknife_client_internal_AbstractEventHandler_.m_forEach__java_util_function_Consumer(Consumer.$adapt((subscriber) =>{
-   let subscriber_1 = /**@type {Consumer} */ ($Casts.$to(subscriber, Consumer));
+   let subscriber_1 = /**@type {Consumer}*/ ($Casts.$to(subscriber, Consumer));
    subscriber_1.m_accept__java_lang_Object(t);
   }));
  }
- /**
-  * @param {Consumer<T>} subscriber
-  * @public
-  */
- m_addSubscriber__java_util_function_Consumer(subscriber) {
+ 
+ m_addSubscriber__java_util_function_Consumer(/** Consumer<T> */ subscriber) {
   this.f_subscribers__org_treblereel_gwt_crysknife_client_internal_AbstractEventHandler_.add(subscriber);
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_treblereel_gwt_crysknife_client_internal_AbstractEventHandler() {
-  this.f_subscribers__org_treblereel_gwt_crysknife_client_internal_AbstractEventHandler_ = /**@type {!HashSet<Consumer<T>>} */ (HashSet.$create__());
+  this.f_subscribers__org_treblereel_gwt_crysknife_client_internal_AbstractEventHandler_ = /**@type {!HashSet<Consumer<T>>}*/ (HashSet.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AbstractEventHandler.$clinit = () =>{};
   AbstractEventHandler.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AbstractEventHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   HashSet = goog.module.get('java.util.HashSet$impl');
   Consumer = goog.module.get('java.util.function.Consumer$impl');

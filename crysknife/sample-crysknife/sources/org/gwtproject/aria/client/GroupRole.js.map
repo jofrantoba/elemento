@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"GroupRole.impl.java.js",
-"lineCount":39,
-"mappings":"A;;;;;;;;;;;;MA4BiB,S;;;;;;;CAQR,oE,CAAwCA,O;;;;;;CAO1C,uE,CAA2CA,O;;;;;;;CAM3C,mG,CAAwCA,O,EAAYC,K;;;;QArB1C,O;EAAAC,4B;EAAAA;",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;;MA4BiB,S;;CAQR,oE,eAAwCA,O;;CAO1C,uE,eAA2CA,O;;CAM3C,mG,eAAwCA,O,YAAYC,K;;QArB1C,O;EAAAC,4B;EAAAA;",
 "sources":["GroupRole.java"],
 "names":["element","value","org.gwtproject.aria.client.GroupRole.<clinit>"]
 }

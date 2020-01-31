@@ -15,90 +15,59 @@ let NoopHistoryTokenEncoder = goog.forwardDeclare('org.gwtproject.user.history.c
 let Window_Location = goog.forwardDeclare('org.gwtproject.user.window.client.Window.Location$impl');
 
 class org_gwtproject_user_history_client_History extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!org_gwtproject_user_history_client_History}
-  * @public
-  */
+ /** @return {!org_gwtproject_user_history_client_History} */
  static $create__() {
   org_gwtproject_user_history_client_History.$clinit();
   let $instance = new org_gwtproject_user_history_client_History();
   $instance.$ctor__org_gwtproject_user_history_client_History__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_history_client_History__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @param {ValueChangeHandler<?string>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- static m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler(handler) {
+ /** @return {HandlerRegistration} */
+ static m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler(/** ValueChangeHandler<?string> */ handler) {
   org_gwtproject_user_history_client_History.$clinit();
   return org_gwtproject_user_history_client_History.f_historyEventSource__org_gwtproject_user_history_client_History_.m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler(handler);
  }
- /**
-  * @public
-  */
+ 
  static m_back__() {
   org_gwtproject_user_history_client_History.$clinit();
   window.window.history.back();
  }
- /**
-  * @param {?string} historyToken
-  * @return {?string}
-  * @public
-  */
- static m_encodeHistoryToken__java_lang_String(historyToken) {
+ /** @return {?string} */
+ static m_encodeHistoryToken__java_lang_String(/** ?string */ historyToken) {
   org_gwtproject_user_history_client_History.$clinit();
   return org_gwtproject_user_history_client_History.f_tokenEncoder__org_gwtproject_user_history_client_History_.m_encode__java_lang_String_$pp_org_gwtproject_user_history_client(historyToken);
  }
- /**
-  * @public
-  */
+ 
  static m_fireCurrentHistoryState__() {
   org_gwtproject_user_history_client_History.$clinit();
   let currentToken = org_gwtproject_user_history_client_History.m_getToken__();
   org_gwtproject_user_history_client_History.f_historyEventSource__org_gwtproject_user_history_client_History_.m_fireValueChangedEvent__java_lang_String(currentToken);
  }
- /**
-  * @public
-  */
+ 
  static m_forward__() {
   org_gwtproject_user_history_client_History.$clinit();
   window.window.history.forward();
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  static m_getToken__() {
   org_gwtproject_user_history_client_History.$clinit();
   return org_gwtproject_user_history_client_History.f_token__org_gwtproject_user_history_client_History_;
  }
- /**
-  * @param {?string} historyToken
-  * @public
-  */
- static m_newItem__java_lang_String(historyToken) {
+ 
+ static m_newItem__java_lang_String(/** ?string */ historyToken) {
   org_gwtproject_user_history_client_History.$clinit();
   org_gwtproject_user_history_client_History.m_newItem__java_lang_String__boolean(historyToken, true);
  }
- /**
-  * @param {?string} historyToken
-  * @param {boolean} issueEvent
-  * @public
-  */
- static m_newItem__java_lang_String__boolean(historyToken, issueEvent) {
+ 
+ static m_newItem__java_lang_String__boolean(/** ?string */ historyToken, /** boolean */ issueEvent) {
   org_gwtproject_user_history_client_History.$clinit();
   historyToken = $Equality.$same(historyToken, null) ? "" : historyToken;
   if (!j_l_String.m_equals__java_lang_String__java_lang_Object(historyToken, org_gwtproject_user_history_client_History.m_getToken__())) {
@@ -110,27 +79,17 @@ class org_gwtproject_user_history_client_History extends j_l_Object {
    }
   }
  }
- /**
-  * @param {?string} historyToken
-  * @public
-  */
- static m_newToken__java_lang_String(historyToken) {
+ 
+ static m_newToken__java_lang_String(/** ?string */ historyToken) {
   window.window.location.hash = historyToken;
  }
- /**
-  * @param {?string} historyToken
-  * @public
-  */
- static m_replaceItem__java_lang_String(historyToken) {
+ 
+ static m_replaceItem__java_lang_String(/** ?string */ historyToken) {
   org_gwtproject_user_history_client_History.$clinit();
   org_gwtproject_user_history_client_History.m_replaceItem__java_lang_String__boolean(historyToken, true);
  }
- /**
-  * @param {?string} historyToken
-  * @param {boolean} issueEvent
-  * @public
-  */
- static m_replaceItem__java_lang_String__boolean(historyToken, issueEvent) {
+ 
+ static m_replaceItem__java_lang_String__boolean(/** ?string */ historyToken, /** boolean */ issueEvent) {
   org_gwtproject_user_history_client_History.$clinit();
   org_gwtproject_user_history_client_History.f_token__org_gwtproject_user_history_client_History_ = historyToken;
   Window_Location.m_replace__java_lang_String("#" + j_l_String.m_valueOf__java_lang_Object(org_gwtproject_user_history_client_History.m_encodeHistoryToken__java_lang_String(historyToken)));
@@ -138,10 +97,7 @@ class org_gwtproject_user_history_client_History extends j_l_Object {
    org_gwtproject_user_history_client_History.m_fireCurrentHistoryState__();
   }
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  static m_getDecodedHash__() {
   let hashToken = Window_Location.m_getHash__();
   if ($Equality.$same(hashToken, null) || j_l_String.m_isEmpty__java_lang_String(hashToken)) {
@@ -149,9 +105,7 @@ class org_gwtproject_user_history_client_History extends j_l_Object {
   }
   return org_gwtproject_user_history_client_History.f_tokenEncoder__org_gwtproject_user_history_client_History_.m_decode__java_lang_String_$pp_org_gwtproject_user_history_client(j_l_String.m_substring__java_lang_String__int(hashToken, 1));
  }
- /**
-  * @public
-  */
+ 
  static m_onHashChanged__() {
   let hashToken = org_gwtproject_user_history_client_History.m_getDecodedHash__();
   if (!j_l_String.m_equals__java_lang_String__java_lang_Object(hashToken, org_gwtproject_user_history_client_History.m_getToken__())) {
@@ -159,9 +113,7 @@ class org_gwtproject_user_history_client_History extends j_l_Object {
    org_gwtproject_user_history_client_History.f_historyEventSource__org_gwtproject_user_history_client_History_.m_fireValueChangedEvent__java_lang_String(hashToken);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   org_gwtproject_user_history_client_History.$clinit = () =>{};
   org_gwtproject_user_history_client_History.$loadModules();
@@ -173,17 +125,11 @@ class org_gwtproject_user_history_client_History extends j_l_Object {
   org_gwtproject_user_history_client_History.f_tokenEncoder__org_gwtproject_user_history_client_History_ = $Equality.$same($Util.$getDefine("history.noDoubleEncoding", null), "true") ? NoopHistoryTokenEncoder.$create__() : HistoryTokenEncoder.$create__();
   org_gwtproject_user_history_client_History.f_token__org_gwtproject_user_history_client_History_ = org_gwtproject_user_history_client_History.m_getDecodedHash__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof org_gwtproject_user_history_client_History;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -197,11 +143,11 @@ class org_gwtproject_user_history_client_History extends j_l_Object {
 }
 $Util.$setClassMetadata(org_gwtproject_user_history_client_History, 'org.gwtproject.user.history.client.History');
 
-/** @public {HistoryEventSource} */
+/**@type {HistoryEventSource}*/
 org_gwtproject_user_history_client_History.f_historyEventSource__org_gwtproject_user_history_client_History_;
-/** @public {HistoryTokenEncoder} */
+/**@type {HistoryTokenEncoder}*/
 org_gwtproject_user_history_client_History.f_tokenEncoder__org_gwtproject_user_history_client_History_;
-/** @public {?string} */
+/**@type {?string}*/
 org_gwtproject_user_history_client_History.f_token__org_gwtproject_user_history_client_History_;
 
 exports = org_gwtproject_user_history_client_History; 

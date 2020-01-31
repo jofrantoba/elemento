@@ -42,29 +42,22 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {SelectionHandler<Integer>}
   */
 class TabPanel extends Composite {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {UnmodifiableTabBar} */
+  /**@type {UnmodifiableTabBar}*/
   this.f_tabBar__org_gwtproject_user_client_ui_TabPanel_;
-  /** @public {TabbedDeckPanel} */
+  /**@type {TabbedDeckPanel}*/
   this.f_deck__org_gwtproject_user_client_ui_TabPanel_;
  }
- /**
-  * @return {!TabPanel}
-  * @public
-  */
+ /** @return {!TabPanel} */
  static $create__() {
   TabPanel.$clinit();
   let $instance = new TabPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_TabPanel__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_TabPanel__() {
   this.$ctor__org_gwtproject_user_client_ui_Composite__();
   this.$init___$p_org_gwtproject_user_client_ui_TabPanel();
@@ -80,335 +73,172 @@ class TabPanel extends Composite {
   this.f_deck__org_gwtproject_user_client_ui_TabPanel_.m_setStyleName__java_lang_String("gwt-TabPanelBottom");
   Roles.m_getTabpanelRole__().m_set__org_gwtproject_dom_client_Element(this.f_deck__org_gwtproject_user_client_ui_TabPanel_.m_getElement__());
  }
- /**
-  * @param {IsWidget} w
-  * @param {IsWidget} tabWidget
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_IsWidget__org_gwtproject_user_client_ui_IsWidget(w, tabWidget) {
+ 
+ m_add__org_gwtproject_user_client_ui_IsWidget__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ w, /** IsWidget */ tabWidget) {
   this.m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(w), Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(tabWidget));
  }
- /**
-  * @param {IsWidget} w
-  * @param {?string} tabText
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_IsWidget__java_lang_String(w, tabText) {
+ 
+ m_add__org_gwtproject_user_client_ui_IsWidget__java_lang_String(/** IsWidget */ w, /** ?string */ tabText) {
   this.m_add__org_gwtproject_user_client_ui_Widget__java_lang_String(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(w), tabText);
  }
- /**
-  * @param {IsWidget} w
-  * @param {?string} tabText
-  * @param {boolean} asHTML
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_IsWidget__java_lang_String__boolean(w, tabText, asHTML) {
+ 
+ m_add__org_gwtproject_user_client_ui_IsWidget__java_lang_String__boolean(/** IsWidget */ w, /** ?string */ tabText, /** boolean */ asHTML) {
   this.m_add__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(w), tabText, asHTML);
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override */
+ m_add__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String("A tabText parameter must be specified with add()."));
  }
- /**
-  * @param {Widget} w
-  * @param {?string} tabText
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget__java_lang_String(w, tabText) {
+ 
+ m_add__org_gwtproject_user_client_ui_Widget__java_lang_String(/** Widget */ w, /** ?string */ tabText) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__java_lang_String__int(w, tabText, this.m_getWidgetCount__());
  }
- /**
-  * @param {Widget} w
-  * @param {?string} tabText
-  * @param {boolean} asHTML
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean(w, tabText, asHTML) {
+ 
+ m_add__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean(/** Widget */ w, /** ?string */ tabText, /** boolean */ asHTML) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean__int(w, tabText, asHTML, this.m_getWidgetCount__());
  }
- /**
-  * @param {Widget} w
-  * @param {Widget} tabWidget
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget(w, tabWidget) {
+ 
+ m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget(/** Widget */ w, /** Widget */ tabWidget) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget__int(w, tabWidget, this.m_getWidgetCount__());
  }
- /**
-  * @override
-  * @param {BeforeSelectionHandler<Integer>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addBeforeSelectionHandler__org_gwtproject_event_logical_shared_BeforeSelectionHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addBeforeSelectionHandler__org_gwtproject_event_logical_shared_BeforeSelectionHandler(/** BeforeSelectionHandler<Integer> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, BeforeSelectionEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {SelectionHandler<Integer>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addSelectionHandler__org_gwtproject_event_logical_shared_SelectionHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addSelectionHandler__org_gwtproject_event_logical_shared_SelectionHandler(/** SelectionHandler<Integer> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, SelectionEvent.m_getType__());
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_clear__() {
   while (this.m_getWidgetCount__() > 0) {
    this.m_remove__org_gwtproject_user_client_ui_Widget(this.m_getWidget__int(0));
   }
  }
- /**
-  * @return {DeckPanel}
-  * @public
-  */
+ /** @return {DeckPanel} */
  m_getDeckPanel__() {
   return this.f_deck__org_gwtproject_user_client_ui_TabPanel_;
  }
- /**
-  * @return {TabBar}
-  * @public
-  */
+ /** @return {TabBar} */
  m_getTabBar__() {
   return this.f_tabBar__org_gwtproject_user_client_ui_TabPanel_;
  }
- /**
-  * @override
-  * @param {number} index
-  * @return {Widget}
-  * @public
-  */
- m_getWidget__int(index) {
+ /** @override @return {Widget} */
+ m_getWidget__int(/** number */ index) {
   return this.f_deck__org_gwtproject_user_client_ui_TabPanel_.m_getWidget__int(index);
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getWidgetCount__() {
   return this.f_deck__org_gwtproject_user_client_ui_TabPanel_.m_getWidgetCount__();
  }
- /**
-  * @override
-  * @param {IsWidget} child
-  * @return {number}
-  * @public
-  */
- m_getWidgetIndex__org_gwtproject_user_client_ui_IsWidget(child) {
+ /** @override @return {number} */
+ m_getWidgetIndex__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ child) {
   return this.m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(child));
  }
- /**
-  * @override
-  * @param {Widget} widget
-  * @return {number}
-  * @public
-  */
- m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(widget) {
+ /** @override @return {number} */
+ m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(/** Widget */ widget) {
   return this.f_deck__org_gwtproject_user_client_ui_TabPanel_.m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(widget);
  }
- /**
-  * @param {IsWidget} widget
-  * @param {IsWidget} tabWidget
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_IsWidget__org_gwtproject_user_client_ui_IsWidget__int(widget, tabWidget, beforeIndex) {
+ 
+ m_insert__org_gwtproject_user_client_ui_IsWidget__org_gwtproject_user_client_ui_IsWidget__int(/** IsWidget */ widget, /** IsWidget */ tabWidget, /** number */ beforeIndex) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget__int(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(widget), Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(tabWidget), beforeIndex);
  }
- /**
-  * @param {IsWidget} widget
-  * @param {?string} tabText
-  * @param {boolean} asHTML
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_IsWidget__java_lang_String__boolean__int(widget, tabText, asHTML, beforeIndex) {
+ 
+ m_insert__org_gwtproject_user_client_ui_IsWidget__java_lang_String__boolean__int(/** IsWidget */ widget, /** ?string */ tabText, /** boolean */ asHTML, /** number */ beforeIndex) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean__int(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(widget), tabText, asHTML, beforeIndex);
  }
- /**
-  * @param {IsWidget} widget
-  * @param {?string} tabText
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_IsWidget__java_lang_String__int(widget, tabText, beforeIndex) {
+ 
+ m_insert__org_gwtproject_user_client_ui_IsWidget__java_lang_String__int(/** IsWidget */ widget, /** ?string */ tabText, /** number */ beforeIndex) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__java_lang_String__int(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(widget), tabText, beforeIndex);
  }
- /**
-  * @param {Widget} widget
-  * @param {?string} tabText
-  * @param {boolean} asHTML
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean__int(widget, tabText, asHTML, beforeIndex) {
+ 
+ m_insert__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean__int(/** Widget */ widget, /** ?string */ tabText, /** boolean */ asHTML, /** number */ beforeIndex) {
   this.f_deck__org_gwtproject_user_client_ui_TabPanel_.m_insertProtected__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean__int(widget, tabText, asHTML, beforeIndex);
  }
- /**
-  * @param {Widget} widget
-  * @param {?string} tabText
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_Widget__java_lang_String__int(widget, tabText, beforeIndex) {
+ 
+ m_insert__org_gwtproject_user_client_ui_Widget__java_lang_String__int(/** Widget */ widget, /** ?string */ tabText, /** number */ beforeIndex) {
   this.m_insert__org_gwtproject_user_client_ui_Widget__java_lang_String__boolean__int(widget, tabText, false, beforeIndex);
  }
- /**
-  * @param {Widget} widget
-  * @param {Widget} tabWidget
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget__int(widget, tabWidget, beforeIndex) {
+ 
+ m_insert__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget__int(/** Widget */ widget, /** Widget */ tabWidget, /** number */ beforeIndex) {
   this.f_deck__org_gwtproject_user_client_ui_TabPanel_.m_insertProtected__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget__int(widget, tabWidget, beforeIndex);
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isAnimationEnabled__() {
   return this.f_deck__org_gwtproject_user_client_ui_TabPanel_.m_isAnimationEnabled__();
  }
- /**
-  * @override
-  * @return {Iterator<Widget>}
-  * @public
-  */
+ /** @override @return {Iterator<Widget>} */
  m_iterator__() {
   return this.f_deck__org_gwtproject_user_client_ui_TabPanel_.m_iterator__();
  }
- /**
-  * @override
-  * @param {BeforeSelectionEvent<Integer>} event
-  * @public
-  */
- m_onBeforeSelection__org_gwtproject_event_logical_shared_BeforeSelectionEvent(event) {
-  let tabIndex = /**@type {Integer} */ ($Casts.$to(event.m_getItem__(), Integer)).m_intValue__();
+ /** @override */
+ m_onBeforeSelection__org_gwtproject_event_logical_shared_BeforeSelectionEvent(/** BeforeSelectionEvent<Integer> */ event) {
+  let tabIndex = /**@type {Integer}*/ ($Casts.$to(event.m_getItem__(), Integer)).m_intValue__();
   BeforeSelectionEvent.m_fire__org_gwtproject_event_logical_shared_HasBeforeSelectionHandlers__java_lang_Object(this, Integer.m_valueOf__int(tabIndex));
  }
- /**
-  * @override
-  * @param {SelectionEvent<Integer>} event
-  * @public
-  * @deprecated
-  */
- m_onSelection__org_gwtproject_event_logical_shared_SelectionEvent(event) {
-  let tabIndex = /**@type {Integer} */ ($Casts.$to(event.m_getSelectedItem__(), Integer)).m_intValue__();
+ /** @override @deprecated */
+ m_onSelection__org_gwtproject_event_logical_shared_SelectionEvent(/** SelectionEvent<Integer> */ event) {
+  let tabIndex = /**@type {Integer}*/ ($Casts.$to(event.m_getSelectedItem__(), Integer)).m_intValue__();
   this.f_deck__org_gwtproject_user_client_ui_TabPanel_.m_showWidget__int(tabIndex);
   SelectionEvent.m_fire__org_gwtproject_event_logical_shared_HasSelectionHandlers__java_lang_Object(this, Integer.m_valueOf__int(tabIndex));
  }
- /**
-  * @override
-  * @param {number} index
-  * @return {boolean}
-  * @public
-  */
- m_remove__int(index) {
+ /** @override @return {boolean} */
+ m_remove__int(/** number */ index) {
   return this.f_deck__org_gwtproject_user_client_ui_TabPanel_.m_remove__int(index);
  }
- /**
-  * @override
-  * @param {Widget} widget
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_Widget(widget) {
+ /** @override @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_Widget(/** Widget */ widget) {
   return this.f_deck__org_gwtproject_user_client_ui_TabPanel_.m_remove__org_gwtproject_user_client_ui_Widget(widget);
  }
- /**
-  * @param {number} index
-  * @public
-  */
- m_selectTab__int(index) {
+ 
+ m_selectTab__int(/** number */ index) {
   this.m_selectTab__int__boolean(index, true);
  }
- /**
-  * @param {number} index
-  * @param {boolean} fireEvents
-  * @public
-  */
- m_selectTab__int__boolean(index, fireEvents) {
+ 
+ m_selectTab__int__boolean(/** number */ index, /** boolean */ fireEvents) {
   this.f_tabBar__org_gwtproject_user_client_ui_TabPanel_.m_selectTab__int__boolean(index, fireEvents);
  }
- /**
-  * @override
-  * @param {boolean} enable
-  * @public
-  */
- m_setAnimationEnabled__boolean(enable) {
+ /** @override */
+ m_setAnimationEnabled__boolean(/** boolean */ enable) {
   this.f_deck__org_gwtproject_user_client_ui_TabPanel_.m_setAnimationEnabled__boolean(enable);
  }
- /**
-  * @return {SimplePanel}
-  * @public
-  */
+ /** @return {SimplePanel} */
  m_createTabTextWrapper__() {
   return null;
  }
- /**
-  * @override
-  * @param {?string} baseID
-  * @public
-  */
- m_onEnsureDebugId__java_lang_String(baseID) {
+ /** @override */
+ m_onEnsureDebugId__java_lang_String(/** ?string */ baseID) {
   super.m_onEnsureDebugId__java_lang_String(baseID);
   this.f_tabBar__org_gwtproject_user_client_ui_TabPanel_.m_ensureDebugId__java_lang_String(j_l_String.m_valueOf__java_lang_Object(baseID) + "-bar");
   this.f_deck__org_gwtproject_user_client_ui_TabPanel_.m_ensureDebugId__java_lang_String(j_l_String.m_valueOf__java_lang_Object(baseID) + "-bottom");
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_TabPanel() {
   this.f_tabBar__org_gwtproject_user_client_ui_TabPanel_ = UnmodifiableTabBar.$create__org_gwtproject_user_client_ui_TabPanel(this);
   this.f_deck__org_gwtproject_user_client_ui_TabPanel_ = TabbedDeckPanel.$create__org_gwtproject_user_client_ui_TabPanel_UnmodifiableTabBar(this.f_tabBar__org_gwtproject_user_client_ui_TabPanel_);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TabPanel.$clinit = () =>{};
   TabPanel.$loadModules();
   Composite.$clinit();
   Iterable.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TabPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Integer = goog.module.get('java.lang.Integer$impl');
   Iterable = goog.module.get('java.lang.Iterable$impl');

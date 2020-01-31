@@ -8,46 +8,25 @@ let Layer = goog.forwardDeclare('org.gwtproject.layout.client.Layout.Layer$impl'
  * @interface
  */
 class AnimationCallback {
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_onAnimationComplete__() {}
- /**
-  * @abstract
-  * @param {Layer} layer
-  * @param {number} progress
-  * @public
-  */
- m_onLayout__org_gwtproject_layout_client_Layout_Layer__double(layer, progress) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_onLayout__org_gwtproject_layout_client_Layout_Layer__double(/** Layer */ layer, /** number */ progress) {}
+ 
  static $clinit() {
   AnimationCallback.$clinit = () =>{};
   AnimationCallback.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_layout_client_Layout_AnimationCallback = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_layout_client_Layout_AnimationCallback = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_layout_client_Layout_AnimationCallback;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

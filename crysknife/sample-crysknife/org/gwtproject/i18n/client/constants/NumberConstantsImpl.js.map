@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"NumberConstantsImpl.impl.java.js",
-"lineCount":151,
-"mappings":"A;;;;;;;;;;;MA4BiB,mB;;;;;;;CAER,c;;;;;;;CAGA,mB;;;;;;;CAGA,kB;;;;;;;CAGA,oB;;;;;;;CAGA,mB;;;;;;;CAGA,qB;;;;;;;CAGA,yB;;;;;;;CAGA,qB;;;;;;;CAGA,Y;;;;;;;CAGA,a;;;;;;;CAGA,6B;;;;;;;CAGA,qB;;;;;;;CAGA,W;;;;;;;CAGA,kB;;;;;;;CAGA,W;;;;;;;CAGA,Y;;;;;;;CAGA,qB;;;;;;;CAGA,yB;;;;;;;CAGA,a;;;;QAxDQ,O;EAAAA,sC;EAAAA;",
+"lineCount":54,
+"mappings":"A;;;;;;;;;;;MA4BiB,mB;;CAER,c;;CAGA,mB;;CAGA,kB;;CAGA,oB;;CAGA,mB;;CAGA,qB;;CAGA,yB;;CAGA,qB;;CAGA,Y;;CAGA,a;;CAGA,6B;;CAGA,qB;;CAGA,W;;CAGA,kB;;CAGA,W;;CAGA,Y;;CAGA,qB;;CAGA,yB;;CAGA,a;;QAxDQ,O;EAAAA,sC;EAAAA;",
 "sources":["NumberConstantsImpl.java"],
 "names":["org.gwtproject.i18n.client.constants.NumberConstantsImpl.<clinit>"]
 }

@@ -18,103 +18,71 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {Iterator<AbstractEditorDelegate<?, ?>>}
   */
 class MapIterator extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {AbstractEditorDelegate<?, ?>} */
+  /**@type {AbstractEditorDelegate<?, ?>}*/
   this.f_next__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_;
-  /** @public {Iterator<AbstractEditorDelegate<?, ?>>} */
+  /**@type {Iterator<AbstractEditorDelegate<?, ?>>}*/
   this.f_list__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_;
-  /** @public {Iterator<List<AbstractEditorDelegate<?, ?>>>} */
+  /**@type {Iterator<List<AbstractEditorDelegate<?, ?>>>}*/
   this.f_values__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_;
  }
- /**
-  * @param {DelegateMap} map
-  * @return {!MapIterator}
-  * @public
-  */
- static $create__org_gwtproject_editor_client_impl_DelegateMap(map) {
+ /** @return {!MapIterator} */
+ static $create__org_gwtproject_editor_client_impl_DelegateMap(/** DelegateMap */ map) {
   MapIterator.$clinit();
   let $instance = new MapIterator();
   $instance.$ctor__org_gwtproject_editor_client_impl_DelegateMap_MapIterator__org_gwtproject_editor_client_impl_DelegateMap(map);
   return $instance;
  }
- /**
-  * @param {DelegateMap} map
-  * @public
-  */
- $ctor__org_gwtproject_editor_client_impl_DelegateMap_MapIterator__org_gwtproject_editor_client_impl_DelegateMap(map) {
+ 
+ $ctor__org_gwtproject_editor_client_impl_DelegateMap_MapIterator__org_gwtproject_editor_client_impl_DelegateMap(/** DelegateMap */ map) {
   this.$ctor__java_lang_Object__();
   this.f_values__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_ = map.f_map__org_gwtproject_editor_client_impl_DelegateMap_.values().m_iterator__();
   this.m_next__();
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_hasNext__() {
   return !$Equality.$same(this.f_next__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_, null);
  }
- /**
-  * @override
-  * @return {AbstractEditorDelegate<?, ?>}
-  * @public
-  */
+ /** @override @return {AbstractEditorDelegate<?, ?>} */
  m_next__() {
   let toReturn = this.f_next__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_;
   if (!$Equality.$same(this.f_list__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_, null) && this.f_list__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_.m_hasNext__()) {
-   this.f_next__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_ = /**@type {AbstractEditorDelegate<*, Editor>} */ ($Casts.$to(this.f_list__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_.m_next__(), AbstractEditorDelegate));
+   this.f_next__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_ = /**@type {AbstractEditorDelegate<*, Editor>}*/ ($Casts.$to(this.f_list__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_.m_next__(), AbstractEditorDelegate));
   } else {
    this.f_next__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_ = null;
    while (this.f_values__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_.m_hasNext__()) {
-    this.f_list__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_ = /**@type {List<AbstractEditorDelegate<?, ?>>} */ ($Casts.$to(this.f_values__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_.m_next__(), List)).m_iterator__();
+    this.f_list__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_ = /**@type {List<AbstractEditorDelegate<?, ?>>}*/ ($Casts.$to(this.f_values__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_.m_next__(), List)).m_iterator__();
     if (this.f_list__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_.m_hasNext__()) {
-     this.f_next__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_ = /**@type {AbstractEditorDelegate<*, Editor>} */ ($Casts.$to(this.f_list__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_.m_next__(), AbstractEditorDelegate));
+     this.f_next__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_ = /**@type {AbstractEditorDelegate<*, Editor>}*/ ($Casts.$to(this.f_list__org_gwtproject_editor_client_impl_DelegateMap_MapIterator_.m_next__(), AbstractEditorDelegate));
      break;
     }
    }
   }
   return toReturn;
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_remove__() {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__());
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEachRemaining__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEachRemaining__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterator.m_forEachRemaining__$default__java_util_Iterator__java_util_function_Consumer(this, arg0);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MapIterator.$clinit = () =>{};
   MapIterator.$loadModules();
   j_l_Object.$clinit();
   Iterator.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof MapIterator;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   UnsupportedOperationException = goog.module.get('java.lang.UnsupportedOperationException$impl');
   List = goog.module.get('java.util.List$impl');

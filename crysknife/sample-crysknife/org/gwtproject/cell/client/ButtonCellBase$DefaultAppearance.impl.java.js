@@ -34,107 +34,66 @@ let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
  * @implements {Appearance<C>}
   */
 class DefaultAppearance extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {SafeHtml} */
+  /**@type {SafeHtml}*/
   this.f_iconSafeHtml__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_;
-  /** @public {ImageResource} */
+  /**@type {ImageResource}*/
   this.f_lastIcon__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_;
-  /** @public {SafeHtmlRenderer<C>} */
+  /**@type {SafeHtmlRenderer<C>}*/
   this.f_renderer__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_;
-  /** @public {Style} */
+  /**@type {Style}*/
   this.f_style__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_;
  }
- /**
-  * @return {Resources}
-  * @public
-  */
+ /** @return {Resources} */
  static m_getDefaultResources__() {
   return Resources.f_INSTANCE__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Resources;
  }
- /**
-  * Factory method corresponding to constructor 'DefaultAppearance(SafeHtmlRenderer)'.
-  * @template C
-  * @param {SafeHtmlRenderer<C>} renderer
-  * @return {!DefaultAppearance<C>}
-  * @public
-  */
- static $create__org_gwtproject_text_shared_SafeHtmlRenderer(renderer) {
+ //Factory method corresponding to constructor 'DefaultAppearance(SafeHtmlRenderer)'.
+ /** @template C @return {!DefaultAppearance<C>} */
+ static $create__org_gwtproject_text_shared_SafeHtmlRenderer(/** SafeHtmlRenderer<C> */ renderer) {
   DefaultAppearance.$clinit();
   let $instance = new DefaultAppearance();
   $instance.$ctor__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance__org_gwtproject_text_shared_SafeHtmlRenderer(renderer);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DefaultAppearance(SafeHtmlRenderer)'.
-  * @param {SafeHtmlRenderer<C>} renderer
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance__org_gwtproject_text_shared_SafeHtmlRenderer(renderer) {
+ //Initialization from constructor 'DefaultAppearance(SafeHtmlRenderer)'.
+ 
+ $ctor__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance__org_gwtproject_text_shared_SafeHtmlRenderer(/** SafeHtmlRenderer<C> */ renderer) {
   this.$ctor__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance__org_gwtproject_text_shared_SafeHtmlRenderer__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Resources(renderer, DefaultAppearance.m_getDefaultResources__());
  }
- /**
-  * Factory method corresponding to constructor 'DefaultAppearance(SafeHtmlRenderer, Resources)'.
-  * @template C
-  * @param {SafeHtmlRenderer<C>} renderer
-  * @param {Resources} resources
-  * @return {!DefaultAppearance<C>}
-  * @public
-  */
- static $create__org_gwtproject_text_shared_SafeHtmlRenderer__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Resources(renderer, resources) {
+ //Factory method corresponding to constructor 'DefaultAppearance(SafeHtmlRenderer, Resources)'.
+ /** @template C @return {!DefaultAppearance<C>} */
+ static $create__org_gwtproject_text_shared_SafeHtmlRenderer__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Resources(/** SafeHtmlRenderer<C> */ renderer, /** Resources */ resources) {
   DefaultAppearance.$clinit();
   let $instance = new DefaultAppearance();
   $instance.$ctor__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance__org_gwtproject_text_shared_SafeHtmlRenderer__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Resources(renderer, resources);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DefaultAppearance(SafeHtmlRenderer, Resources)'.
-  * @param {SafeHtmlRenderer<C>} renderer
-  * @param {Resources} resources
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance__org_gwtproject_text_shared_SafeHtmlRenderer__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Resources(renderer, resources) {
+ //Initialization from constructor 'DefaultAppearance(SafeHtmlRenderer, Resources)'.
+ 
+ $ctor__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance__org_gwtproject_text_shared_SafeHtmlRenderer__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Resources(/** SafeHtmlRenderer<C> */ renderer, /** Resources */ resources) {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance();
   this.f_renderer__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ = renderer;
   this.f_style__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ = resources.m_buttonCellBaseStyle__();
   this.f_style__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_.m_ensureInjected__();
  }
- /**
-  * @return {SafeHtmlRenderer<C>}
-  * @public
-  */
+ /** @return {SafeHtmlRenderer<C>} */
  m_getRenderer__() {
   return this.f_renderer__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_;
  }
- /**
-  * @override
-  * @param {Object} parent
-  * @public
-  */
- m_onPush__org_gwtproject_dom_client_Element(parent) {
+ /** @override */
+ m_onPush__org_gwtproject_dom_client_Element(/** Object */ parent) {
   $Overlay.m_addClassName__$devirt__org_gwtproject_dom_client_Element__java_lang_String($Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(parent), this.f_style__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_.m_buttonCellBasePushing__());
  }
- /**
-  * @override
-  * @param {Object} parent
-  * @public
-  */
- m_onUnpush__org_gwtproject_dom_client_Element(parent) {
+ /** @override */
+ m_onUnpush__org_gwtproject_dom_client_Element(/** Object */ parent) {
   $Overlay.m_removeClassName__$devirt__org_gwtproject_dom_client_Element__java_lang_String($Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(parent), this.f_style__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_.m_buttonCellBasePushing__());
  }
- /**
-  * @override
-  * @param {ButtonCellBase<C>} cell
-  * @param {Context} context
-  * @param {C} value
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_ButtonCellBase__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(cell, context, value, sb) {
+ /** @override */
+ m_render__org_gwtproject_cell_client_ButtonCellBase__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** ButtonCellBase<C> */ cell, /** Context */ context, /** C */ value, /** SafeHtmlBuilder */ sb) {
   let classes = SafeHtmlBuilder.$create__();
   classes.m_appendEscaped__java_lang_String(this.f_style__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_.m_buttonCellBase__());
   let decoration = cell.m_getDecoration__();
@@ -198,45 +157,30 @@ class DefaultAppearance extends j_l_Object {
   sb.m_append__org_gwtproject_safehtml_shared_SafeHtml(content);
   sb.m_appendHtmlConstant__java_lang_String("</button>");
  }
- /**
-  * @override
-  * @param {Object} parent
-  * @param {boolean} focused
-  * @public
-  */
- m_setFocus__org_gwtproject_dom_client_Element__boolean(parent, focused) {
-  let focusable = /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject($Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(parent)), $Overlay));
+ /** @override */
+ m_setFocus__org_gwtproject_dom_client_Element__boolean(/** Object */ parent, /** boolean */ focused) {
+  let focusable = /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject($Overlay.m_getFirstChildElement__$devirt__org_gwtproject_dom_client_Element(parent)), $Overlay));
   if (focused) {
    focusable.focus();
   } else {
    focusable.blur();
   }
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance() {
   this.f_iconSafeHtml__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ = SafeHtmlUtils.f_EMPTY_SAFE_HTML__org_gwtproject_safehtml_shared_SafeHtmlUtils;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DefaultAppearance.$clinit = () =>{};
   DefaultAppearance.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DefaultAppearance;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Math = goog.module.get('java.lang.Math$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -263,7 +207,7 @@ $Util.$setClassMetadata(DefaultAppearance, 'org.gwtproject.cell.client.ButtonCel
 
 Appearance.$markImplementor(DefaultAppearance);
 
-/** @public {number} @const */
+/**@const {number}*/
 DefaultAppearance.f_DEFAULT_ICON_PADDING__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_ = 3;
 
 exports = DefaultAppearance; 

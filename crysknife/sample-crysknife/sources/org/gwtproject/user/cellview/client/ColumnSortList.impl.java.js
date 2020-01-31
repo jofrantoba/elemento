@@ -16,115 +16,79 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
 class ColumnSortList extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Delegate} */
+  /**@type {Delegate}*/
   this.f_delegate__org_gwtproject_user_cellview_client_ColumnSortList_;
-  /** @public {List<ColumnSortInfo>} */
+  /**@type {List<ColumnSortInfo>}*/
   this.f_infos__org_gwtproject_user_cellview_client_ColumnSortList_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_limit__org_gwtproject_user_cellview_client_ColumnSortList_ = 0;
  }
- /**
-  * Factory method corresponding to constructor 'ColumnSortList()'.
-  * @return {!ColumnSortList}
-  * @public
-  */
+ //Factory method corresponding to constructor 'ColumnSortList()'.
+ /** @return {!ColumnSortList} */
  static $create__() {
   ColumnSortList.$clinit();
   let $instance = new ColumnSortList();
   $instance.$ctor__org_gwtproject_user_cellview_client_ColumnSortList__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'ColumnSortList()'.
-  * @public
-  */
+ //Initialization from constructor 'ColumnSortList()'.
+ 
  $ctor__org_gwtproject_user_cellview_client_ColumnSortList__() {
   this.$ctor__org_gwtproject_user_cellview_client_ColumnSortList__org_gwtproject_user_cellview_client_ColumnSortList_Delegate(null);
  }
- /**
-  * Factory method corresponding to constructor 'ColumnSortList(Delegate)'.
-  * @param {Delegate} delegate
-  * @return {!ColumnSortList}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_ColumnSortList_Delegate(delegate) {
+ //Factory method corresponding to constructor 'ColumnSortList(Delegate)'.
+ /** @return {!ColumnSortList} */
+ static $create__org_gwtproject_user_cellview_client_ColumnSortList_Delegate(/** Delegate */ delegate) {
   ColumnSortList.$clinit();
   let $instance = new ColumnSortList();
   $instance.$ctor__org_gwtproject_user_cellview_client_ColumnSortList__org_gwtproject_user_cellview_client_ColumnSortList_Delegate(delegate);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ColumnSortList(Delegate)'.
-  * @param {Delegate} delegate
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_ColumnSortList__org_gwtproject_user_cellview_client_ColumnSortList_Delegate(delegate) {
+ //Initialization from constructor 'ColumnSortList(Delegate)'.
+ 
+ $ctor__org_gwtproject_user_cellview_client_ColumnSortList__org_gwtproject_user_cellview_client_ColumnSortList_Delegate(/** Delegate */ delegate) {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_user_cellview_client_ColumnSortList();
   this.f_delegate__org_gwtproject_user_cellview_client_ColumnSortList_ = delegate;
  }
- /**
-  * @public
-  */
+ 
  m_clear__() {
   this.f_infos__org_gwtproject_user_cellview_client_ColumnSortList_.clear();
   this.m_fireDelegate___$p_org_gwtproject_user_cellview_client_ColumnSortList();
  }
- /**
-  * @override
-  * @param {*} obj
-  * @return {boolean}
-  * @public
-  */
- equals(obj) {
+ /** @override @return {boolean} */
+ equals(/** * */ obj) {
   if ($Equality.$same(obj, this)) {
    return true;
   } else if (!ColumnSortList.$isInstance(obj)) {
    return false;
   }
-  let other = /**@type {ColumnSortList} */ ($Casts.$to(obj, ColumnSortList));
+  let other = /**@type {ColumnSortList}*/ ($Casts.$to(obj, ColumnSortList));
   return $Objects.m_equals__java_lang_Object__java_lang_Object(this.f_infos__org_gwtproject_user_cellview_client_ColumnSortList_, other.f_infos__org_gwtproject_user_cellview_client_ColumnSortList_);
  }
- /**
-  * @param {number} index
-  * @return {ColumnSortInfo}
-  * @public
-  */
- m_get__int(index) {
-  return /**@type {ColumnSortInfo} */ ($Casts.$to(this.f_infos__org_gwtproject_user_cellview_client_ColumnSortList_.getAtIndex(index), ColumnSortInfo));
+ /** @return {ColumnSortInfo} */
+ m_get__int(/** number */ index) {
+  return /**@type {ColumnSortInfo}*/ ($Casts.$to(this.f_infos__org_gwtproject_user_cellview_client_ColumnSortList_.getAtIndex(index), ColumnSortInfo));
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getLimit__() {
   return this.f_limit__org_gwtproject_user_cellview_client_ColumnSortList_;
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  hashCode() {
   return 31 * $Objects.m_hashCode__java_lang_Object(this.f_infos__org_gwtproject_user_cellview_client_ColumnSortList_) + 13;
  }
- /**
-  * @param {number} index
-  * @param {ColumnSortInfo} sortInfo
-  * @public
-  */
- m_insert__int__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo(index, sortInfo) {
+ 
+ m_insert__int__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo(/** number */ index, /** ColumnSortInfo */ sortInfo) {
   if ($Equality.$same(sortInfo, null)) {
    throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String("sortInfo cannot be null"));
   }
   let column = sortInfo.m_getColumn__();
   for (let i = 0; i < this.f_infos__org_gwtproject_user_cellview_client_ColumnSortList_.size(); i++) {
-   let curInfo = /**@type {ColumnSortInfo} */ ($Casts.$to(this.f_infos__org_gwtproject_user_cellview_client_ColumnSortList_.getAtIndex(i), ColumnSortInfo));
+   let curInfo = /**@type {ColumnSortInfo}*/ ($Casts.$to(this.f_infos__org_gwtproject_user_cellview_client_ColumnSortList_.getAtIndex(i), ColumnSortInfo));
    if ($Equality.$same(curInfo.m_getColumn__(), column)) {
     this.f_infos__org_gwtproject_user_cellview_client_ColumnSortList_.removeAtIndex(i);
     if (i < index) {
@@ -144,12 +108,8 @@ class ColumnSortList extends j_l_Object {
   this.f_infos__org_gwtproject_user_cellview_client_ColumnSortList_.addAtIndex(index, sortInfo);
   this.m_fireDelegate___$p_org_gwtproject_user_cellview_client_ColumnSortList();
  }
- /**
-  * @param {Column<?, ?>} column
-  * @return {ColumnSortInfo}
-  * @public
-  */
- m_push__org_gwtproject_user_cellview_client_Column(column) {
+ /** @return {ColumnSortInfo} */
+ m_push__org_gwtproject_user_cellview_client_Column(/** Column<?, ?> */ column) {
   let ascending = $Equality.$same(column, null) ? true : column.m_isDefaultSortAscending__();
   if (this.m_size__() > 0 && $Equality.$same(this.m_get__int(0).m_getColumn__(), column)) {
    ascending = !this.m_get__int(0).m_isAscending__();
@@ -158,28 +118,18 @@ class ColumnSortList extends j_l_Object {
   this.m_push__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo(toRet);
   return toRet;
  }
- /**
-  * @param {ColumnSortInfo} sortInfo
-  * @public
-  */
- m_push__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo(sortInfo) {
+ 
+ m_push__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo(/** ColumnSortInfo */ sortInfo) {
   this.m_insert__int__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo(0, sortInfo);
  }
- /**
-  * @param {ColumnSortInfo} sortInfo
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo(sortInfo) {
+ /** @return {boolean} */
+ m_remove__org_gwtproject_user_cellview_client_ColumnSortList_ColumnSortInfo(/** ColumnSortInfo */ sortInfo) {
   let toRet = this.f_infos__org_gwtproject_user_cellview_client_ColumnSortList_.remove(sortInfo);
   this.m_fireDelegate___$p_org_gwtproject_user_cellview_client_ColumnSortList();
   return toRet;
  }
- /**
-  * @param {number} limit
-  * @public
-  */
- m_setLimit__int(limit) {
+ 
+ m_setLimit__int(/** number */ limit) {
   this.f_limit__org_gwtproject_user_cellview_client_ColumnSortList_ = limit;
   if (limit > 0) {
    let modified = false;
@@ -192,47 +142,32 @@ class ColumnSortList extends j_l_Object {
    }
   }
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_size__() {
   return this.f_infos__org_gwtproject_user_cellview_client_ColumnSortList_.size();
  }
- /**
-  * @public
-  */
+ 
  m_fireDelegate___$p_org_gwtproject_user_cellview_client_ColumnSortList() {
   if (!$Equality.$same(this.f_delegate__org_gwtproject_user_cellview_client_ColumnSortList_, null)) {
    this.f_delegate__org_gwtproject_user_cellview_client_ColumnSortList_.m_onModification__();
   }
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_cellview_client_ColumnSortList() {
-  this.f_infos__org_gwtproject_user_cellview_client_ColumnSortList_ = /**@type {!ArrayList<ColumnSortInfo>} */ (ArrayList.$create__());
+  this.f_infos__org_gwtproject_user_cellview_client_ColumnSortList_ = /**@type {!ArrayList<ColumnSortInfo>}*/ (ArrayList.$create__());
   this.f_limit__org_gwtproject_user_cellview_client_ColumnSortList_ = 0;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ColumnSortList.$clinit = () =>{};
   ColumnSortList.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ColumnSortList;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
   IndexOutOfBoundsException = goog.module.get('java.lang.IndexOutOfBoundsException$impl');

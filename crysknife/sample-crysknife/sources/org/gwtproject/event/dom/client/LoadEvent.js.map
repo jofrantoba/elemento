@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"LoadEvent.impl.java.js",
-"lineCount":100,
-"mappings":"A;;;;;;;;;;;;;MAoBa,S;;;;CAAA,W;EAAAA,Q;;;;;;QAUD,S;EAAAC,oB;EAAAA,gC;EAAAA,+D;EAAAA,iB;;;;;CAAA,kD;EAAAC,yD;;;;;;QAOsB,W;EAAAC,oB;EAC9BA,oE;;;;;;;CAI6B,qB;EAC7BC,oE;;;;;;CAIa,uD,CAAqBC,O;EAClCC,kE;;;;;;;;CA5BS,4B;EAAAA,wH;;;;;QAAA,O;EAAAC,4B;EAAAA,yB;EAAAA,mB;EAEXA,iQ;;;;;;;;;;;;;;;;;;;;;;;AAFW;UAG4B,kDAH5B;",
+"lineCount":71,
+"mappings":"A;;;;;;;;;;;;;MAoBa,S;;CAAA,W;EAAAA,Q;;;QAUD,S;EAAAC,oB;EAAAA,gC;EAAAA,+D;EAAAA,iB;;;CAAA,kD;EAAAC,yD;;;QAOsB,W;EAAAC,oB;EAC9BA,oE;;;CAI6B,qB;EAC7BC,oE;;;CAIa,uD,oBAAqBC,O;EAClCC,kE;;;;CA5BS,4B;EAAAA,uH;;;QAAA,O;EAAAC,4B;EAAAA,yB;EAAAA,mB;EAEXA,gQ;;;;;;;;;;;;;;;;;AAFW;UAG4B,kDAH5B;",
 "sources":["LoadEvent.java"],
 "names":["org.gwtproject.event.dom.client.LoadEvent.<synthetic: ctor_js>","org.gwtproject.event.dom.client.LoadEvent.<synthetic: ctor_create>","org.gwtproject.event.dom.client.LoadEvent.<init>","org.gwtproject.event.dom.client.LoadEvent.getType","org.gwtproject.event.dom.client.LoadEvent.getAssociatedType","handler","org.gwtproject.event.dom.client.LoadEvent.dispatch","org.gwtproject.event.dom.client.LoadEvent.<clinit>"]
 }

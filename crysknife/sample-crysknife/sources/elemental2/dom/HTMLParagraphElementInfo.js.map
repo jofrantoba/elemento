@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HTMLParagraphElementInfo.impl.java.js",
-"lineCount":35,
-"mappings":"A;;;;;MAIa,wB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,mC;EAAAA,+C;EAAAA,6D;EAAAA,iB;;;;;CAAA,gD;EAAAC,iC;;;;;QAAA,O;EAAAC,2C;EAAAA,wC;EAAAA;",
+"lineCount":26,
+"mappings":"A;;;;;MAIa,wB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,mC;EAAAA,+C;EAAAA,6D;EAAAA,iB;;;CAAA,gD;EAAAC,iC;;;QAAA,O;EAAAC,2C;EAAAA,wC;EAAAA;",
 "sources":["HTMLParagraphElementInfo.java"],
 "names":["elemental2.dom.HTMLParagraphElementInfo.<synthetic: ctor_js>","elemental2.dom.HTMLParagraphElementInfo.<synthetic: ctor_create>","elemental2.dom.HTMLParagraphElementInfo.<init>","elemental2.dom.HTMLParagraphElementInfo.<clinit>"]
 }

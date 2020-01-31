@@ -12,44 +12,27 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.resources.client.CssRes
  * @deprecated
  */
 class Strict {
- /**
-  * @param {?function():Class<?>} fn
-  * @return {Strict}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {Strict} */
+ static $adapt(/** ?function():Class<?> */ fn) {
   Strict.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Strict.$clinit = () =>{};
   Strict.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_resources_client_CssResource_Strict = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_resources_client_CssResource_Strict = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_resources_client_CssResource_Strict;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.resources.client.CssResource.Strict.$LambdaAdaptor$impl');
  }

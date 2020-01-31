@@ -19,38 +19,22 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {AbstractHeaderOrFooterBuilder<T>}
   */
 class DefaultHeaderOrFooterBuilder extends AbstractHeaderOrFooterBuilder {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @template T
-  * @param {AbstractCellTable<T>} table
-  * @param {boolean} isFooter
-  * @return {!DefaultHeaderOrFooterBuilder<T>}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_AbstractCellTable__boolean(table, isFooter) {
+ /** @template T @return {!DefaultHeaderOrFooterBuilder<T>} */
+ static $create__org_gwtproject_user_cellview_client_AbstractCellTable__boolean(/** AbstractCellTable<T> */ table, /** boolean */ isFooter) {
   DefaultHeaderOrFooterBuilder.$clinit();
   let $instance = new DefaultHeaderOrFooterBuilder();
   $instance.$ctor__org_gwtproject_user_cellview_client_DefaultHeaderOrFooterBuilder__org_gwtproject_user_cellview_client_AbstractCellTable__boolean(table, isFooter);
   return $instance;
  }
- /**
-  * @param {AbstractCellTable<T>} table
-  * @param {boolean} isFooter
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_DefaultHeaderOrFooterBuilder__org_gwtproject_user_cellview_client_AbstractCellTable__boolean(table, isFooter) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_DefaultHeaderOrFooterBuilder__org_gwtproject_user_cellview_client_AbstractCellTable__boolean(/** AbstractCellTable<T> */ table, /** boolean */ isFooter) {
   this.$ctor__org_gwtproject_user_cellview_client_AbstractHeaderOrFooterBuilder__org_gwtproject_user_cellview_client_AbstractCellTable__boolean(table, isFooter);
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_buildHeaderOrFooterImpl__() {
   let table = this.m_getTable__();
   let isFooter = this.m_isBuildingFooter__();
@@ -112,21 +96,8 @@ class DefaultHeaderOrFooterBuilder extends AbstractHeaderOrFooterBuilder {
   tr.m_endTR__();
   return true;
  }
- /**
-  * @param {TableRowBuilder} tr
-  * @param {Column<T, ?>} column
-  * @param {Header<?>} header
-  * @param {boolean} isSortable
-  * @param {boolean} isSorted
-  * @param {boolean} isSortAscending
-  * @param {StringBuilder} classesBuilder
-  * @param {?string} sortableStyle
-  * @param {?string} sortedStyle
-  * @param {number} prevColspan
-  * @param {number} curColumn
-  * @public
-  */
- m_buildTableHeader__org_gwtproject_dom_builder_shared_TableRowBuilder__org_gwtproject_user_cellview_client_Column__org_gwtproject_user_cellview_client_Header__boolean__boolean__boolean__java_lang_StringBuilder__java_lang_String__java_lang_String__int__int_$p_org_gwtproject_user_cellview_client_DefaultHeaderOrFooterBuilder(tr, column, header, isSortable, isSorted, isSortAscending, classesBuilder, sortableStyle, sortedStyle, prevColspan, curColumn) {
+ 
+ m_buildTableHeader__org_gwtproject_dom_builder_shared_TableRowBuilder__org_gwtproject_user_cellview_client_Column__org_gwtproject_user_cellview_client_Header__boolean__boolean__boolean__java_lang_StringBuilder__java_lang_String__java_lang_String__int__int_$p_org_gwtproject_user_cellview_client_DefaultHeaderOrFooterBuilder(/** TableRowBuilder */ tr, /** Column<T, ?> */ column, /** Header<?> */ header, /** boolean */ isSortable, /** boolean */ isSorted, /** boolean */ isSortAscending, /** StringBuilder */ classesBuilder, /** ?string */ sortableStyle, /** ?string */ sortedStyle, /** number */ prevColspan, /** number */ curColumn) {
   if (isSortable) {
    classesBuilder.m_append__java_lang_String(sortableStyle);
   }
@@ -134,7 +105,7 @@ class DefaultHeaderOrFooterBuilder extends AbstractHeaderOrFooterBuilder {
    classesBuilder.m_append__java_lang_String(sortedStyle);
   }
   this.m_appendExtraStyles__org_gwtproject_user_cellview_client_Header__java_lang_StringBuilder_$p_org_gwtproject_user_cellview_client_DefaultHeaderOrFooterBuilder(header, classesBuilder);
-  let th = /**@type {TableCellBuilder} */ ($Casts.$to(tr.m_startTH__().m_colSpan__int(prevColspan).m_className__java_lang_String(classesBuilder.toString()), TableCellBuilder));
+  let th = /**@type {TableCellBuilder}*/ ($Casts.$to(tr.m_startTH__().m_colSpan__int(prevColspan).m_className__java_lang_String(classesBuilder.toString()), TableCellBuilder));
   this.m_enableColumnHandlers__org_gwtproject_dom_builder_shared_ElementBuilderBase__org_gwtproject_user_cellview_client_Column(th, column);
   if (!$Equality.$same(header, null)) {
    let context = Context.$create__int__int__java_lang_Object(0, curColumn - prevColspan, header.m_getKey__());
@@ -146,13 +117,8 @@ class DefaultHeaderOrFooterBuilder extends AbstractHeaderOrFooterBuilder {
   }
   th.m_endTH__();
  }
- /**
-  * @template H
-  * @param {Header<H>} header
-  * @param {StringBuilder} classesBuilder
-  * @public
-  */
- m_appendExtraStyles__org_gwtproject_user_cellview_client_Header__java_lang_StringBuilder_$p_org_gwtproject_user_cellview_client_DefaultHeaderOrFooterBuilder(header, classesBuilder) {
+ /** @template H */
+ m_appendExtraStyles__org_gwtproject_user_cellview_client_Header__java_lang_StringBuilder_$p_org_gwtproject_user_cellview_client_DefaultHeaderOrFooterBuilder(/** Header<H> */ header, /** StringBuilder */ classesBuilder) {
   if ($Equality.$same(header, null)) {
    return;
   }
@@ -162,25 +128,17 @@ class DefaultHeaderOrFooterBuilder extends AbstractHeaderOrFooterBuilder {
    classesBuilder.m_append__java_lang_String(headerStyleNames);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DefaultHeaderOrFooterBuilder.$clinit = () =>{};
   DefaultHeaderOrFooterBuilder.$loadModules();
   AbstractHeaderOrFooterBuilder.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DefaultHeaderOrFooterBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   StringBuilder = goog.module.get('java.lang.StringBuilder$impl');

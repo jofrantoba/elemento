@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Command.impl.java.js",
-"lineCount":33,
-"mappings":"A;;;;;;;;;;;MAIiB,O;;;;;;CACV,W;;;;;;QADU,M;EAAAA,kB;EAAAA,8B;;;;;QAAA,O;EAAAC,0B;EAAAA;",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;MAIiB,O;;CACV,W;;QADU,M;EAAAA,kB;EAAAA,8B;;;QAAA,O;EAAAC,0B;EAAAA;",
 "sources":["Command.java"],
 "names":["org.gwtproject.user.client.Command.<synthetic: adapt_lambda>","org.gwtproject.user.client.Command.<clinit>"]
 }

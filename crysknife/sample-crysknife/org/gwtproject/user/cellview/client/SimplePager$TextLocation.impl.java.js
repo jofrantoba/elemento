@@ -12,87 +12,53 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @extends {Enum<TextLocation>}
   */
 class TextLocation extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @return {!TextLocation}
-  * @public
-  */
- static $create__java_lang_String__int($name, $ordinal) {
+ /** @return {!TextLocation} */
+ static $create__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   let $instance = new TextLocation();
   $instance.$ctor__org_gwtproject_user_cellview_client_SimplePager_TextLocation__java_lang_String__int($name, $ordinal);
   return $instance;
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_SimplePager_TextLocation__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_SimplePager_TextLocation__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @param {string} name
-  * @return {!TextLocation}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!TextLocation} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   TextLocation.$clinit();
   if ($Equality.$same(TextLocation.f_namesToValuesMap__org_gwtproject_user_cellview_client_SimplePager_TextLocation_, null)) {
    TextLocation.f_namesToValuesMap__org_gwtproject_user_cellview_client_SimplePager_TextLocation_ = $Enums.createMapFromValues(TextLocation.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, TextLocation.f_namesToValuesMap__org_gwtproject_user_cellview_client_SimplePager_TextLocation_);
  }
- /**
-  * @return {!Array<!TextLocation>}
-  * @public
-  */
+ /** @return {!Array<!TextLocation>} */
  static m_values__() {
   TextLocation.$clinit();
-  return /**@type {!Array<TextLocation>} */ ($Arrays.$init([TextLocation.$f_CENTER__org_gwtproject_user_cellview_client_SimplePager_TextLocation, TextLocation.$f_LEFT__org_gwtproject_user_cellview_client_SimplePager_TextLocation, TextLocation.$f_RIGHT__org_gwtproject_user_cellview_client_SimplePager_TextLocation], TextLocation));
+  return /**@type {!Array<TextLocation>}*/ ($Arrays.$init([TextLocation.$f_CENTER__org_gwtproject_user_cellview_client_SimplePager_TextLocation, TextLocation.$f_LEFT__org_gwtproject_user_cellview_client_SimplePager_TextLocation, TextLocation.$f_RIGHT__org_gwtproject_user_cellview_client_SimplePager_TextLocation], TextLocation));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @return {number}
-  * @public
-  */
- m_compareTo__java_lang_Object(arg0) {
-  return super.compareTo(/**@type {TextLocation} */ ($Casts.$to(arg0, TextLocation)));
+ //Bridge method.
+ /** @override @return {number} */
+ m_compareTo__java_lang_Object(/** * */ arg0) {
+  return super.compareTo(/**@type {TextLocation}*/ ($Casts.$to(arg0, TextLocation)));
  }
- /**
-  * @return {!TextLocation}
-  * @public
-  */
+ /** @return {!TextLocation} */
  static get f_CENTER__org_gwtproject_user_cellview_client_SimplePager_TextLocation() {
   return (TextLocation.$clinit(), TextLocation.$f_CENTER__org_gwtproject_user_cellview_client_SimplePager_TextLocation);
  }
- /**
-  * @return {!TextLocation}
-  * @public
-  */
+ /** @return {!TextLocation} */
  static get f_LEFT__org_gwtproject_user_cellview_client_SimplePager_TextLocation() {
   return (TextLocation.$clinit(), TextLocation.$f_LEFT__org_gwtproject_user_cellview_client_SimplePager_TextLocation);
  }
- /**
-  * @return {!TextLocation}
-  * @public
-  */
+ /** @return {!TextLocation} */
  static get f_RIGHT__org_gwtproject_user_cellview_client_SimplePager_TextLocation() {
   return (TextLocation.$clinit(), TextLocation.$f_RIGHT__org_gwtproject_user_cellview_client_SimplePager_TextLocation);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TextLocation.$clinit = () =>{};
   TextLocation.$loadModules();
@@ -102,17 +68,11 @@ class TextLocation extends Enum {
   TextLocation.$f_RIGHT__org_gwtproject_user_cellview_client_SimplePager_TextLocation = TextLocation.$create__java_lang_String__int($Util.$makeEnumName("RIGHT"), TextLocation.$ordinal$f_RIGHT__org_gwtproject_user_cellview_client_SimplePager_TextLocation);
   TextLocation.f_namesToValuesMap__org_gwtproject_user_cellview_client_SimplePager_TextLocation_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TextLocation;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
@@ -123,19 +83,19 @@ class TextLocation extends Enum {
 }
 $Util.$setClassMetadataForEnum(TextLocation, 'org.gwtproject.user.cellview.client.SimplePager$TextLocation');
 
-/** @private {!TextLocation} */
+/**@private {!TextLocation}*/
 TextLocation.$f_CENTER__org_gwtproject_user_cellview_client_SimplePager_TextLocation;
-/** @private {!TextLocation} */
+/**@private {!TextLocation}*/
 TextLocation.$f_LEFT__org_gwtproject_user_cellview_client_SimplePager_TextLocation;
-/** @private {!TextLocation} */
+/**@private {!TextLocation}*/
 TextLocation.$f_RIGHT__org_gwtproject_user_cellview_client_SimplePager_TextLocation;
-/** @public {Map<?string, !TextLocation>} */
+/**@type {Map<?string, !TextLocation>}*/
 TextLocation.f_namesToValuesMap__org_gwtproject_user_cellview_client_SimplePager_TextLocation_;
-/** @public {number} @const */
+/**@const {number}*/
 TextLocation.$ordinal$f_CENTER__org_gwtproject_user_cellview_client_SimplePager_TextLocation = 0;
-/** @public {number} @const */
+/**@const {number}*/
 TextLocation.$ordinal$f_LEFT__org_gwtproject_user_cellview_client_SimplePager_TextLocation = 1;
-/** @public {number} @const */
+/**@const {number}*/
 TextLocation.$ordinal$f_RIGHT__org_gwtproject_user_cellview_client_SimplePager_TextLocation = 2;
 
 exports = TextLocation; 

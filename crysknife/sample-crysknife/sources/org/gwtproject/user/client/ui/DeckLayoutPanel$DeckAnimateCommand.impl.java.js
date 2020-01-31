@@ -9,70 +9,43 @@ let DeckLayoutPanel = goog.forwardDeclare('org.gwtproject.user.client.ui.DeckLay
 let $1 = goog.forwardDeclare('org.gwtproject.user.client.ui.DeckLayoutPanel.DeckAnimateCommand.$1$impl');
 
 class DeckAnimateCommand extends LayoutCommand {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {DeckLayoutPanel} */
+  /**@type {DeckLayoutPanel}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_DeckLayoutPanel_DeckAnimateCommand;
  }
- /**
-  * @param {DeckLayoutPanel} $outer_this
-  * @param {Layout} layout
-  * @return {!DeckAnimateCommand}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_DeckLayoutPanel__org_gwtproject_layout_client_Layout($outer_this, layout) {
+ /** @return {!DeckAnimateCommand} */
+ static $create__org_gwtproject_user_client_ui_DeckLayoutPanel__org_gwtproject_layout_client_Layout(/** DeckLayoutPanel */ $outer_this, /** Layout */ layout) {
   DeckAnimateCommand.$clinit();
   let $instance = new DeckAnimateCommand();
   $instance.$ctor__org_gwtproject_user_client_ui_DeckLayoutPanel_DeckAnimateCommand__org_gwtproject_user_client_ui_DeckLayoutPanel__org_gwtproject_layout_client_Layout($outer_this, layout);
   return $instance;
  }
- /**
-  * @param {DeckLayoutPanel} $outer_this
-  * @param {Layout} layout
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_DeckLayoutPanel_DeckAnimateCommand__org_gwtproject_user_client_ui_DeckLayoutPanel__org_gwtproject_layout_client_Layout($outer_this, layout) {
+ 
+ $ctor__org_gwtproject_user_client_ui_DeckLayoutPanel_DeckAnimateCommand__org_gwtproject_user_client_ui_DeckLayoutPanel__org_gwtproject_layout_client_Layout(/** DeckLayoutPanel */ $outer_this, /** Layout */ layout) {
   this.f_$outer_this__org_gwtproject_user_client_ui_DeckLayoutPanel_DeckAnimateCommand = $outer_this;
   this.$ctor__org_gwtproject_user_client_ui_LayoutCommand__org_gwtproject_layout_client_Layout(layout);
  }
- /**
-  * @override
-  * @param {number} duration
-  * @param {AnimationCallback} callback
-  * @public
-  */
- m_schedule__int__org_gwtproject_layout_client_Layout_AnimationCallback(duration, callback) {
+ /** @override */
+ m_schedule__int__org_gwtproject_layout_client_Layout_AnimationCallback(/** number */ duration, /** AnimationCallback */ callback) {
   super.m_schedule__int__org_gwtproject_layout_client_Layout_AnimationCallback(duration, $1.$create__org_gwtproject_user_client_ui_DeckLayoutPanel_DeckAnimateCommand__org_gwtproject_layout_client_Layout_AnimationCallback(this, callback));
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_doBeforeLayout__() {
   this.f_$outer_this__org_gwtproject_user_client_ui_DeckLayoutPanel_DeckAnimateCommand.m_doBeforeLayout___$p_org_gwtproject_user_client_ui_DeckLayoutPanel();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DeckAnimateCommand.$clinit = () =>{};
   DeckAnimateCommand.$loadModules();
   LayoutCommand.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DeckAnimateCommand;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $1 = goog.module.get('org.gwtproject.user.client.ui.DeckLayoutPanel.DeckAnimateCommand.$1$impl');
  }

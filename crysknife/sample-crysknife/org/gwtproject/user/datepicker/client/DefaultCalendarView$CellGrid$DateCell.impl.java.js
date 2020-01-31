@@ -16,36 +16,25 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {Cell<Date>}
   */
 class DateCell extends Cell {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {CellGrid} */
+  /**@type {CellGrid}*/
   this.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_cellStyle__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_dateStyle__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell_;
  }
- /**
-  * @param {CellGrid} $outer_this
-  * @param {boolean} isWeekend
-  * @return {!DateCell}
-  * @public
-  */
- static $create__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid__boolean($outer_this, isWeekend) {
+ /** @return {!DateCell} */
+ static $create__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid__boolean(/** CellGrid */ $outer_this, /** boolean */ isWeekend) {
   DateCell.$clinit();
   let $instance = new DateCell();
   $instance.$ctor__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid__boolean($outer_this, isWeekend);
   return $instance;
  }
- /**
-  * @param {CellGrid} $outer_this
-  * @param {boolean} isWeekend
-  * @public
-  */
- $ctor__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid__boolean($outer_this, isWeekend) {
+ 
+ $ctor__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid__boolean(/** CellGrid */ $outer_this, /** boolean */ isWeekend) {
   this.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell = $outer_this;
   this.$ctor__org_gwtproject_user_datepicker_client_CellGridImpl_Cell__org_gwtproject_user_datepicker_client_CellGridImpl__java_lang_Object($outer_this, Date.$create__());
   this.f_cellStyle__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell_ = $outer_this.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid.m_css___$pp_org_gwtproject_user_datepicker_client().m_day__();
@@ -55,67 +44,42 @@ class DateCell extends Cell {
   this.m_getElement__().tabIndex = this.m_isFiller__() ? -1 : 0;
   this.m_setAriaSelected__boolean(false);
  }
- /**
-  * @override
-  * @param {?string} styleName
-  * @public
-  */
- m_addStyleName__java_lang_String(styleName) {
+ /** @override */
+ m_addStyleName__java_lang_String(/** ?string */ styleName) {
   if (j_l_String.m_indexOf__java_lang_String__java_lang_String(this.f_dateStyle__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell_, " " + j_l_String.m_valueOf__java_lang_Object(styleName) + " ") == -1) {
    this.f_dateStyle__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell_ = j_l_String.m_valueOf__java_lang_Object(this.f_dateStyle__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell_) + j_l_String.m_valueOf__java_lang_Object((j_l_String.m_valueOf__java_lang_Object(styleName) + " "));
   }
   this.m_updateStyle__();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isFiller__() {
-  return !this.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid.m_getModel__().m_isInCurrentMonth__java_util_Date(/**@type {Date} */ ($Casts.$to(this.m_getValue__(), Date)));
+  return !this.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid.m_getModel__().m_isInCurrentMonth__java_util_Date(/**@type {Date}*/ ($Casts.$to(this.m_getValue__(), Date)));
  }
- /**
-  * @override
-  * @param {boolean} highlighted
-  * @public
-  */
- m_onHighlighted__boolean(highlighted) {
-  this.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid.m_setHighlightedDate__java_util_Date(/**@type {Date} */ ($Casts.$to(this.m_getValue__(), Date)));
+ /** @override */
+ m_onHighlighted__boolean(/** boolean */ highlighted) {
+  this.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid.m_setHighlightedDate__java_util_Date(/**@type {Date}*/ ($Casts.$to(this.m_getValue__(), Date)));
   this.m_updateStyle__();
  }
- /**
-  * @override
-  * @param {boolean} selected
-  * @public
-  */
- m_onSelected__boolean(selected) {
+ /** @override */
+ m_onSelected__boolean(/** boolean */ selected) {
   if (selected) {
-   this.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid.m_getDatePicker__().m_setValue__java_util_Date__boolean(/**@type {Date} */ ($Casts.$to(this.m_getValue__(), Date)), true);
+   this.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid.m_getDatePicker__().m_setValue__java_util_Date__boolean(/**@type {Date}*/ ($Casts.$to(this.m_getValue__(), Date)), true);
    if (this.m_isFiller__()) {
-    this.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid.m_getDatePicker__().m_setCurrentMonth__java_util_Date(/**@type {Date} */ ($Casts.$to(this.m_getValue__(), Date)));
+    this.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid.m_getDatePicker__().m_setCurrentMonth__java_util_Date(/**@type {Date}*/ ($Casts.$to(this.m_getValue__(), Date)));
    }
   }
   this.m_updateStyle__();
  }
- /**
-  * @override
-  * @param {?string} styleName
-  * @public
-  */
- m_removeStyleName__java_lang_String(styleName) {
+ /** @override */
+ m_removeStyleName__java_lang_String(/** ?string */ styleName) {
   this.f_dateStyle__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell_ = j_l_String.m_replace__java_lang_String__java_lang_CharSequence__java_lang_CharSequence(this.f_dateStyle__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell_, " " + j_l_String.m_valueOf__java_lang_Object(styleName) + " ", " ");
   this.m_updateStyle__();
  }
- /**
-  * @param {boolean} value
-  * @public
-  */
- m_setAriaSelected__boolean(value) {
+ 
+ m_setAriaSelected__boolean(/** boolean */ value) {
   Roles.m_getGridcellRole__().m_setAriaSelectedState__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_SelectedValue(this.m_getElement__(), SelectedValue.m_of__boolean(value));
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_updateStyle__() {
   let accum = this.f_dateStyle__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell_;
   if (this.m_isHighlighted__()) {
@@ -129,14 +93,11 @@ class DateCell extends Cell {
   }
   this.m_setStyleName__java_lang_String(accum);
  }
- /**
-  * @param {Date} current
-  * @public
-  */
- m_update__java_util_Date_$pp_org_gwtproject_user_datepicker_client(current) {
+ 
+ m_update__java_util_Date_$pp_org_gwtproject_user_datepicker_client(/** Date */ current) {
   this.m_setEnabled__boolean(true);
-  /**@type {Date} */ ($Casts.$to(this.m_getValue__(), Date)).m_setTime__long(current.m_getTime__());
-  let value = this.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid.m_getModel__().m_formatDayOfMonth__java_util_Date(/**@type {Date} */ ($Casts.$to(this.m_getValue__(), Date)));
+  /**@type {Date}*/ ($Casts.$to(this.m_getValue__(), Date)).m_setTime__long(current.m_getTime__());
+  let value = this.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell.f_$outer_this__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid.m_getModel__().m_formatDayOfMonth__java_util_Date(/**@type {Date}*/ ($Casts.$to(this.m_getValue__(), Date)));
   this.m_setText__java_lang_String_$p_org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell(value);
   this.f_dateStyle__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell_ = this.f_cellStyle__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell_;
   if (this.m_isFiller__()) {
@@ -152,32 +113,21 @@ class DateCell extends Cell {
   this.f_dateStyle__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell_ = j_l_String.m_valueOf__java_lang_Object(this.f_dateStyle__org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell_) + " ";
   this.m_updateStyle__();
  }
- /**
-  * @param {?string} value
-  * @public
-  */
- m_setText__java_lang_String_$p_org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell(value) {
+ 
+ m_setText__java_lang_String_$p_org_gwtproject_user_datepicker_client_DefaultCalendarView_CellGrid_DateCell(/** ?string */ value) {
   $Overlay.m_setInnerText__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.m_getElement__(), value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DateCell.$clinit = () =>{};
   DateCell.$loadModules();
   Cell.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DateCell;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   Date = goog.module.get('java.util.Date$impl');

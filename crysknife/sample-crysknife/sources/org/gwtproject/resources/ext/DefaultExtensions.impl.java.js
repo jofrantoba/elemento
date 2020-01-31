@@ -8,41 +8,24 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @extends {Annotation}
  */
 class DefaultExtensions {
- /**
-  * @abstract
-  * @return {Array<?string>}
-  * @public
-  */
+ /** @abstract @return {Array<?string>} */
  m_value__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DefaultExtensions.$clinit = () =>{};
   DefaultExtensions.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_resources_ext_DefaultExtensions = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_resources_ext_DefaultExtensions = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_resources_ext_DefaultExtensions;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

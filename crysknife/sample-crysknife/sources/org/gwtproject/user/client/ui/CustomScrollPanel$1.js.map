@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CustomScrollPanel$1.impl.java.js",
-"lineCount":69,
-"mappings":"A;;;;;;;;;;;;;;MAgWyE,E;;;;CAAA,W;EAAAA,Q;EAAAA;wE;EAAAA;OAVVC,YAUUD,C;;;;;;;;QAAA,2G;EAAAE,a;EAAAA,yB;EAAAA,kM;EAAAA,iB;;;;;;;CAAA,4J;EAAAC,oF;EAAAA,iC;EAAAA,iC;;;;;;;CAErD,uD,CAAqBC,K;EAC/BC,IAAOC,OAAPD,oC;EACAA;GACEA,qPADFA;GAEEA,IAAIE,IAAJF,uDAFFA;GAGEA;IACEA,+GADFA;IAHFA;G;;;;;QAJ+D,O;EAAAG,qB;EAAAA,kB;EAAAA;",
+"lineCount":52,
+"mappings":"A;;;;;;;;;;;;;;MAgWyE,E;;CAAA,W;EAAAA,Q;EAAAA;wE;EAAAA;OAVVC,YAUUD,C;;;QAAA,2G;EAAAE,a;EAAAA,yB;EAAAA,kM;EAAAA,iB;;;CAAA,4J;EAAAC,oF;EAAAA,iC;EAAAA,iC;;;CAErD,uD,oBAAqBC,K;EAC/BC,IAAOC,OAAPD,oC;EACAA;GACEA,qPADFA;GAEEA,IAAIE,IAAJF,uDAFFA;GAGEA;IACEA,+GADFA;IAHFA;G;;;QAJ+D,O;EAAAG,qB;EAAAA,kB;EAAAA;",
 "sources":["CustomScrollPanel.java"],
 "names":["org.gwtproject.user.client.ui.CustomScrollPanel$1.<synthetic: ctor_js>","scrollbar","org.gwtproject.user.client.ui.CustomScrollPanel$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.CustomScrollPanel$1.<init>","event","org.gwtproject.user.client.ui.CustomScrollPanel$1.onScroll","curTime","hPos","org.gwtproject.user.client.ui.CustomScrollPanel$1.<clinit>"]
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"NotificationMole_BinderImpl_GenBundle.impl.java.js",
-"lineCount":34,
-"mappings":"A;;;;;;;;;;;;MAWiB,uC;;;;;;CAE0B,S;;;;;;QAF1B,M;EAAAA,kD;EAAAA,8B;;;;;QAAA,O;EAAAC,0D;EAAAA;",
+"lineCount":24,
+"mappings":"A;;;;;;;;;;;;MAWiB,uC;;CAE0B,S;;QAF1B,M;EAAAA,kD;EAAAA,8B;;;QAAA,O;EAAAC,0D;EAAAA;",
 "sources":["NotificationMole_BinderImpl_GenBundle.java"],
 "names":["org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundle.<synthetic: adapt_lambda>","org.gwtproject.user.client.ui.NotificationMole_BinderImpl_GenBundle.<clinit>"]
 }

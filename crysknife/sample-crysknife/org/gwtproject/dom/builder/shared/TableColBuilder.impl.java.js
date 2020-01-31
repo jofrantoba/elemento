@@ -8,77 +8,34 @@ const ElementBuilderBase = goog.require('org.gwtproject.dom.builder.shared.Eleme
  * @extends {ElementBuilderBase<TableColBuilder>}
  */
 class TableColBuilder {
- /**
-  * @abstract
-  * @param {?string} align
-  * @return {TableColBuilder}
-  * @public
-  */
- m_align__java_lang_String(align) {}
- /**
-  * @abstract
-  * @param {?string} ch
-  * @return {TableColBuilder}
-  * @public
-  */
- m_ch__java_lang_String(ch) {}
- /**
-  * @abstract
-  * @param {?string} chOff
-  * @return {TableColBuilder}
-  * @public
-  */
- m_chOff__java_lang_String(chOff) {}
- /**
-  * @abstract
-  * @param {number} span
-  * @return {TableColBuilder}
-  * @public
-  */
- m_span__int(span) {}
- /**
-  * @abstract
-  * @param {?string} vAlign
-  * @return {TableColBuilder}
-  * @public
-  */
- m_vAlign__java_lang_String(vAlign) {}
- /**
-  * @abstract
-  * @param {?string} width
-  * @return {TableColBuilder}
-  * @public
-  */
- m_width__java_lang_String(width) {}
- /**
-  * @public
-  */
+ /** @abstract @return {TableColBuilder} */
+ m_align__java_lang_String(/** ?string */ align) {}
+ /** @abstract @return {TableColBuilder} */
+ m_ch__java_lang_String(/** ?string */ ch) {}
+ /** @abstract @return {TableColBuilder} */
+ m_chOff__java_lang_String(/** ?string */ chOff) {}
+ /** @abstract @return {TableColBuilder} */
+ m_span__int(/** number */ span) {}
+ /** @abstract @return {TableColBuilder} */
+ m_vAlign__java_lang_String(/** ?string */ vAlign) {}
+ /** @abstract @return {TableColBuilder} */
+ m_width__java_lang_String(/** ?string */ width) {}
+ 
  static $clinit() {
   TableColBuilder.$clinit = () =>{};
   TableColBuilder.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ElementBuilderBase.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_dom_builder_shared_TableColBuilder = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ElementBuilderBase.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_dom_builder_shared_TableColBuilder = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_dom_builder_shared_TableColBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

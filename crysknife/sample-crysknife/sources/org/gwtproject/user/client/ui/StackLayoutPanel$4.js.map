@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"StackLayoutPanel$4.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;;;;;MAqoBsD,E;;;;CAAA,W;EAAAA,Q;EAAAA;uE;EAAAA;OAvCCC,SAuCDD,C;;;;;;;;QAAA,8G;EAAAE,a;EAAAA,yB;EAAAA,iM;EAAAA,iB;;;;;;;CAAA,8J;EAAAC,mF;EAAAA,2B;EAAAA,iC;;;;;;;CACpC,6D,CAA2BC,K;EACrCC,2I;;;;;QAF8C,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":44,
+"mappings":"A;;;;;;;;;;;;;MAqoBsD,E;;CAAA,W;EAAAA,Q;EAAAA;uE;EAAAA;OAvCCC,SAuCDD,C;;;QAAA,8G;EAAAE,a;EAAAA,yB;EAAAA,iM;EAAAA,iB;;;CAAA,8J;EAAAC,mF;EAAAA,2B;EAAAA,iC;;;CACpC,6D,uBAA2BC,K;EACrCC,2I;;;QAF8C,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["StackLayoutPanel.java"],
 "names":["org.gwtproject.user.client.ui.StackLayoutPanel$4.<synthetic: ctor_js>","header","org.gwtproject.user.client.ui.StackLayoutPanel$4.<synthetic: ctor_create>","org.gwtproject.user.client.ui.StackLayoutPanel$4.<init>","event","org.gwtproject.user.client.ui.StackLayoutPanel$4.onMouseOver","org.gwtproject.user.client.ui.StackLayoutPanel$4.<clinit>"]
 }

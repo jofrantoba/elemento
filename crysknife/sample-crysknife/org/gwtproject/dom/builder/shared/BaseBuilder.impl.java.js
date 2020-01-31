@@ -8,49 +8,26 @@ const ElementBuilderBase = goog.require('org.gwtproject.dom.builder.shared.Eleme
  * @extends {ElementBuilderBase<BaseBuilder>}
  */
 class BaseBuilder {
- /**
-  * @abstract
-  * @param {?string} href
-  * @return {BaseBuilder}
-  * @public
-  */
- m_href__java_lang_String(href) {}
- /**
-  * @abstract
-  * @param {?string} target
-  * @return {BaseBuilder}
-  * @public
-  */
- m_target__java_lang_String(target) {}
- /**
-  * @public
-  */
+ /** @abstract @return {BaseBuilder} */
+ m_href__java_lang_String(/** ?string */ href) {}
+ /** @abstract @return {BaseBuilder} */
+ m_target__java_lang_String(/** ?string */ target) {}
+ 
  static $clinit() {
   BaseBuilder.$clinit = () =>{};
   BaseBuilder.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ElementBuilderBase.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_dom_builder_shared_BaseBuilder = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ElementBuilderBase.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_dom_builder_shared_BaseBuilder = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_dom_builder_shared_BaseBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

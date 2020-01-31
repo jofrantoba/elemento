@@ -7,55 +7,37 @@ let ImageResource = goog.forwardDeclare('org.gwtproject.resources.client.ImageRe
 let CellTable__BasicResourcesImpl = goog.forwardDeclare('org.gwtproject.user.cellview.client.CellTable_BasicResourcesImpl$impl');
 
 class cellTableHeaderBackgroundInitializer extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!cellTableHeaderBackgroundInitializer}
-  * @public
-  */
+ /** @return {!cellTableHeaderBackgroundInitializer} */
  static $create__() {
   let $instance = new cellTableHeaderBackgroundInitializer();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellTable_BasicResourcesImpl_cellTableHeaderBackgroundInitializer__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_cellview_client_CellTable_BasicResourcesImpl_cellTableHeaderBackgroundInitializer__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {ImageResource}
-  * @public
-  */
+ /** @return {ImageResource} */
  static m_get__() {
   cellTableHeaderBackgroundInitializer.$clinit();
   return CellTable__BasicResourcesImpl.f_cellTableHeaderBackground__org_gwtproject_user_cellview_client_CellTable_BasicResourcesImpl_;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   cellTableHeaderBackgroundInitializer.$clinit = () =>{};
   cellTableHeaderBackgroundInitializer.$loadModules();
   j_l_Object.$clinit();
   CellTable__BasicResourcesImpl.f__instance0__org_gwtproject_user_cellview_client_CellTable_BasicResourcesImpl_.m_cellTableHeaderBackgroundInitializer___$p_org_gwtproject_user_cellview_client_CellTable_BasicResourcesImpl();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof cellTableHeaderBackgroundInitializer;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   CellTable__BasicResourcesImpl = goog.module.get('org.gwtproject.user.cellview.client.CellTable_BasicResourcesImpl$impl');
  }

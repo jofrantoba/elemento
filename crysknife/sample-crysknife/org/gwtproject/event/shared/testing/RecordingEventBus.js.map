@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"RecordingEventBus.impl.java.js",
-"lineCount":132,
-"mappings":"A;;;;;;;;;;;;MA0Ba,iB;;;;CAAA,W;EAAAA,Q;EAAAA;OACiB,qEADjBA,C;EAAAA;OAEY,iEAFZA,C;;;;;;;QAIJ,S;EAAAC,4B;EAAAA,wC;EAAAA,2E;EAAAA,iB;;;;;;CAAA,8D;EACLC,oI;;;;;;;;QAGK,6C,CAA2BC,O;EAA3BF,4B;EAAAA,wC;EAAAA,sH;EAAAA,iB;;;;;;;CAAA,kG,CAA2BE,O;EAA3BD,qD;EAAAA,wE;EACLA,iF;;;;;;;;;;CAI6B,sE,CAAmBE,I,EAAQC,O;EACxDC,oK;;;;;;;;;;;CAI6B,gG,CAA2BF,I,EAAaG,M,EAAUF,O;EAC/EG,sM;;;;;CAIU,oB;EACVC,mF;;;;;;;CAIU,8C,CAAmBC,K;EAC7BC,6H;EACAA,sF;;;;;;;;CAIU,0E,CAA6BD,K,EAAcH,M;EACrDK,sF;EACAA,iK;;;;;;;CAIa,kD,CAAuBF,K;EACpCG,kG;;;;;CAzCS,gE;EACXX,oI;;;;;QADW,O;EAAAY,oC;EAAAA,iC;EAAAA;",
+"lineCount":84,
+"mappings":"A;;;;;;;;;;;;MA0Ba,iB;;CAAA,W;EAAAA,Q;EAAAA;OACiB,qEADjBA,C;EAAAA;OAEY,iEAFZA,C;;;;QAIJ,S;EAAAC,4B;EAAAA,wC;EAAAA,2E;EAAAA,iB;;;;CAAA,8D;EACLC,oI;;;;QAGK,6C,iBAA2BC,O;EAA3BF,4B;EAAAA,wC;EAAAA,sH;EAAAA,iB;;;;CAAA,kG,iBAA2BE,O;EAA3BD,qD;EAAAA,wE;EACLA,iF;;;CAI6B,sE,gBAAmBE,I,WAAQC,O;EACxDC,oK;;;CAI6B,gG,gBAA2BF,I,WAAaG,M,WAAUF,O;EAC/EG,sM;;;CAIU,oB;EACVC,mF;;;CAIU,8C,iBAAmBC,K;EAC7BC,6H;EACAA,sF;;;CAIU,0E,iBAA6BD,K,WAAcH,M;EACrDK,sF;EACAA,iK;;;CAIa,kD,iBAAuBF,K;EACpCG,kG;;;CAzCS,gE;EACXX,mI;;;QADW,O;EAAAY,oC;EAAAA,iC;EAAAA;",
 "sources":["RecordingEventBus.java"],
 "names":["org.gwtproject.event.shared.testing.RecordingEventBus.<synthetic: ctor_js>","org.gwtproject.event.shared.testing.RecordingEventBus.<synthetic: ctor_create>","org.gwtproject.event.shared.testing.RecordingEventBus.<init>","wrapped","type","handler","org.gwtproject.event.shared.testing.RecordingEventBus.addHandler","source","org.gwtproject.event.shared.testing.RecordingEventBus.addHandlerToSource","org.gwtproject.event.shared.testing.RecordingEventBus.clearFiredEvents","event","org.gwtproject.event.shared.testing.RecordingEventBus.fireEvent","org.gwtproject.event.shared.testing.RecordingEventBus.fireEventFromSource","org.gwtproject.event.shared.testing.RecordingEventBus.wasEventFired","org.gwtproject.event.shared.testing.RecordingEventBus.<clinit>"]
 }

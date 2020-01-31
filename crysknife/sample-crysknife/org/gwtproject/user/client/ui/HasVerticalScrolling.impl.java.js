@@ -6,58 +6,29 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @interface
  */
 class HasVerticalScrolling {
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {number} */
  m_getMaximumVerticalScrollPosition__() {}
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {number} */
  m_getMinimumVerticalScrollPosition__() {}
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {number} */
  m_getVerticalScrollPosition__() {}
- /**
-  * @abstract
-  * @param {number} position
-  * @public
-  */
- m_setVerticalScrollPosition__int(position) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_setVerticalScrollPosition__int(/** number */ position) {}
+ 
  static $clinit() {
   HasVerticalScrolling.$clinit = () =>{};
   HasVerticalScrolling.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_HasVerticalScrolling = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_HasVerticalScrolling = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_HasVerticalScrolling;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

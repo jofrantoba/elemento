@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HandlesAllMouseEvents.impl.java.js",
-"lineCount":65,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;MAwBsB,qB;;;;CAAA,W;EAAAA,Q;;;;;CASb,8D;EAAAC,iC;;;;;;CAOK,6D,CAA2BC,W;EACrCC,yJ;;;;;;;;QAcO,+G,CAA2BC,M,EAAUC,Q;EAArCF,gC;EACPA,yF;EACAA,gJ;EACAA,oJ;EACAA,wJ;EACAA,wJ;EACAA,4J;;;;;QArCkB,O;EAAAG,wC;EAAAA,qC;EAAAA;",
+"lineCount":51,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;MAwBsB,qB;;CAAA,W;EAAAA,Q;;;CASb,8D;EAAAC,iC;;;CAOK,6D,4BAA2BC,W;EACrCC,yJ;;;QAcO,+G,4BAA2BC,M,WAAUC,Q;EAArCF,gC;EACPA,yF;EACAA,+I;EACAA,mJ;EACAA,uJ;EACAA,uJ;EACAA,2J;;;QArCkB,O;EAAAG,wC;EAAAA,qC;EAAAA;",
 "sources":["HandlesAllMouseEvents.java"],
 "names":["org.gwtproject.event.dom.client.HandlesAllMouseEvents.<synthetic: ctor_js>","org.gwtproject.event.dom.client.HandlesAllMouseEvents.<init>","eventSource","org.gwtproject.event.dom.client.HandlesAllMouseEvents.handle","source","reciever","org.gwtproject.event.dom.client.HandlesAllMouseEvents.<clinit>"]
 }

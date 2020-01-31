@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DOMErrorHandler$$Overlay.impl.java.js",
-"lineCount":11,
-"mappings":"A;;;;MAqBa,Q;;;;QAAA,O;EAAAA,2B;EAAAA;",
+"lineCount":9,
+"mappings":"A;;;;MAqBa,Q;;QAAA,O;EAAAA,2B;EAAAA;",
 "sources":["DOMErrorHandler.java"],
 "names":["elemental2.dom.DOMErrorHandler$$Overlay.<clinit>"]
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"FormPanel$IFrameTemplate.impl.java.js",
-"lineCount":79,
-"mappings":"A;;;;;;;;;;;;;MAiNY,c;;;;;;;CAGC,uB,CAAWA,I;;;;;;QAHZ,M;EAAAC,yB;EAAAA,8B;;;;;;QACR,sE;EAAAC,sH;;;;;QADQ,O;EAAAC,iC;EAAAA,8B;EACRA,+H;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AADQ;;",
+"lineCount":54,
+"mappings":"A;;;;;;;;;;;;;MAiNY,c;;CAGC,uB,gBAAWA,I;;QAHZ,M;EAAAC,yB;EAAAA,8B;;;QACR,sE;EAAAC,sH;;;QADQ,O;EAAAC,iC;EAAAA,8B;EACRA,+H;;;;;;;;;;;;;;;;;;;;;;;AADQ;;",
 "sources":["FormPanel.java"],
 "names":["name","org.gwtproject.user.client.ui.FormPanel$IFrameTemplate.<synthetic: adapt_lambda>","org.gwtproject.user.client.ui.FormPanel$IFrameTemplate.<synthetic: getter>","org.gwtproject.user.client.ui.FormPanel$IFrameTemplate.<clinit>"]
 }

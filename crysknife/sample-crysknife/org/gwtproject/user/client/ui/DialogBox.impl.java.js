@@ -39,130 +39,89 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
  * @implements {HasSafeHtml}
   */
 class DialogBox extends DecoratedPopupPanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Caption} */
+  /**@type {Caption}*/
   this.f_caption__org_gwtproject_user_client_ui_DialogBox_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_dragging__org_gwtproject_user_client_ui_DialogBox_ = false;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_dragStartX__org_gwtproject_user_client_ui_DialogBox_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_dragStartY__org_gwtproject_user_client_ui_DialogBox_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_windowWidth__org_gwtproject_user_client_ui_DialogBox_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_clientLeft__org_gwtproject_user_client_ui_DialogBox_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_clientTop__org_gwtproject_user_client_ui_DialogBox_ = 0;
-  /** @public {HandlerRegistration} */
+  /**@type {HandlerRegistration}*/
   this.f_resizeHandlerRegistration__org_gwtproject_user_client_ui_DialogBox;
  }
- /**
-  * Factory method corresponding to constructor 'DialogBox()'.
-  * @return {!DialogBox}
-  * @public
-  */
+ //Factory method corresponding to constructor 'DialogBox()'.
+ /** @return {!DialogBox} */
  static $create__() {
   DialogBox.$clinit();
   let $instance = new DialogBox();
   $instance.$ctor__org_gwtproject_user_client_ui_DialogBox__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'DialogBox()'.
-  * @public
-  */
+ //Initialization from constructor 'DialogBox()'.
+ 
  $ctor__org_gwtproject_user_client_ui_DialogBox__() {
   this.$ctor__org_gwtproject_user_client_ui_DialogBox__boolean(false);
  }
- /**
-  * Factory method corresponding to constructor 'DialogBox(boolean)'.
-  * @param {boolean} autoHide
-  * @return {!DialogBox}
-  * @public
-  */
- static $create__boolean(autoHide) {
+ //Factory method corresponding to constructor 'DialogBox(boolean)'.
+ /** @return {!DialogBox} */
+ static $create__boolean(/** boolean */ autoHide) {
   DialogBox.$clinit();
   let $instance = new DialogBox();
   $instance.$ctor__org_gwtproject_user_client_ui_DialogBox__boolean(autoHide);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DialogBox(boolean)'.
-  * @param {boolean} autoHide
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_DialogBox__boolean(autoHide) {
+ //Initialization from constructor 'DialogBox(boolean)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_DialogBox__boolean(/** boolean */ autoHide) {
   this.$ctor__org_gwtproject_user_client_ui_DialogBox__boolean__boolean(autoHide, true);
  }
- /**
-  * Factory method corresponding to constructor 'DialogBox(Caption)'.
-  * @param {Caption} captionWidget
-  * @return {!DialogBox}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_DialogBox_Caption(captionWidget) {
+ //Factory method corresponding to constructor 'DialogBox(Caption)'.
+ /** @return {!DialogBox} */
+ static $create__org_gwtproject_user_client_ui_DialogBox_Caption(/** Caption */ captionWidget) {
   DialogBox.$clinit();
   let $instance = new DialogBox();
   $instance.$ctor__org_gwtproject_user_client_ui_DialogBox__org_gwtproject_user_client_ui_DialogBox_Caption(captionWidget);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DialogBox(Caption)'.
-  * @param {Caption} captionWidget
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_DialogBox__org_gwtproject_user_client_ui_DialogBox_Caption(captionWidget) {
+ //Initialization from constructor 'DialogBox(Caption)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_DialogBox__org_gwtproject_user_client_ui_DialogBox_Caption(/** Caption */ captionWidget) {
   this.$ctor__org_gwtproject_user_client_ui_DialogBox__boolean__boolean__org_gwtproject_user_client_ui_DialogBox_Caption(false, true, captionWidget);
  }
- /**
-  * Factory method corresponding to constructor 'DialogBox(boolean, boolean)'.
-  * @param {boolean} autoHide
-  * @param {boolean} modal
-  * @return {!DialogBox}
-  * @public
-  */
- static $create__boolean__boolean(autoHide, modal) {
+ //Factory method corresponding to constructor 'DialogBox(boolean, boolean)'.
+ /** @return {!DialogBox} */
+ static $create__boolean__boolean(/** boolean */ autoHide, /** boolean */ modal) {
   DialogBox.$clinit();
   let $instance = new DialogBox();
   $instance.$ctor__org_gwtproject_user_client_ui_DialogBox__boolean__boolean(autoHide, modal);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DialogBox(boolean, boolean)'.
-  * @param {boolean} autoHide
-  * @param {boolean} modal
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_DialogBox__boolean__boolean(autoHide, modal) {
+ //Initialization from constructor 'DialogBox(boolean, boolean)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_DialogBox__boolean__boolean(/** boolean */ autoHide, /** boolean */ modal) {
   this.$ctor__org_gwtproject_user_client_ui_DialogBox__boolean__boolean__org_gwtproject_user_client_ui_DialogBox_Caption(autoHide, modal, CaptionImpl.$create__());
  }
- /**
-  * Factory method corresponding to constructor 'DialogBox(boolean, boolean, Caption)'.
-  * @param {boolean} autoHide
-  * @param {boolean} modal
-  * @param {Caption} captionWidget
-  * @return {!DialogBox}
-  * @public
-  */
- static $create__boolean__boolean__org_gwtproject_user_client_ui_DialogBox_Caption(autoHide, modal, captionWidget) {
+ //Factory method corresponding to constructor 'DialogBox(boolean, boolean, Caption)'.
+ /** @return {!DialogBox} */
+ static $create__boolean__boolean__org_gwtproject_user_client_ui_DialogBox_Caption(/** boolean */ autoHide, /** boolean */ modal, /** Caption */ captionWidget) {
   DialogBox.$clinit();
   let $instance = new DialogBox();
   $instance.$ctor__org_gwtproject_user_client_ui_DialogBox__boolean__boolean__org_gwtproject_user_client_ui_DialogBox_Caption(autoHide, modal, captionWidget);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DialogBox(boolean, boolean, Caption)'.
-  * @param {boolean} autoHide
-  * @param {boolean} modal
-  * @param {Caption} captionWidget
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_DialogBox__boolean__boolean__org_gwtproject_user_client_ui_DialogBox_Caption(autoHide, modal, captionWidget) {
+ //Initialization from constructor 'DialogBox(boolean, boolean, Caption)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_DialogBox__boolean__boolean__org_gwtproject_user_client_ui_DialogBox_Caption(/** boolean */ autoHide, /** boolean */ modal, /** Caption */ captionWidget) {
   this.$ctor__org_gwtproject_user_client_ui_DecoratedPopupPanel__boolean__boolean__java_lang_String(autoHide, modal, "dialog");
   $Asserts.$assertWithMessage(!$Equality.$same(captionWidget, null), "The caption must not be null");
   captionWidget.m_asWidget__().m_removeFromParent__();
@@ -181,47 +140,28 @@ class DialogBox extends DecoratedPopupPanel {
   this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(mouseHandler, MouseOverEvent.m_getType__());
   this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(mouseHandler, MouseOutEvent.m_getType__());
  }
- /**
-  * @return {Caption}
-  * @public
-  */
+ /** @return {Caption} */
  m_getCaption__() {
   return this.f_caption__org_gwtproject_user_client_ui_DialogBox_;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getHTML__() {
   return this.f_caption__org_gwtproject_user_client_ui_DialogBox_.m_getHTML__();
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getText__() {
   return this.f_caption__org_gwtproject_user_client_ui_DialogBox_.m_getText__();
  }
- /**
-  * @override
-  * @param {boolean} autoClosed
-  * @public
-  */
- m_hide__boolean(autoClosed) {
+ /** @override */
+ m_hide__boolean(/** boolean */ autoClosed) {
   if (!$Equality.$same(this.f_resizeHandlerRegistration__org_gwtproject_user_client_ui_DialogBox, null)) {
    this.f_resizeHandlerRegistration__org_gwtproject_user_client_ui_DialogBox.m_removeHandler__();
    this.f_resizeHandlerRegistration__org_gwtproject_user_client_ui_DialogBox = null;
   }
   super.m_hide__boolean(autoClosed);
  }
- /**
-  * @override
-  * @param {Event} event
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_user_client_Event(event) {
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_user_client_Event(/** Event */ event) {
   switch (DOM.m_eventGetType__org_gwtproject_user_client_Event(event)) {
    case Event.f_ONMOUSEDOWN__org_gwtproject_user_client_Event: 
    case Event.f_ONMOUSEUP__org_gwtproject_user_client_Event: 
@@ -234,14 +174,8 @@ class DialogBox extends DecoratedPopupPanel {
   }
   super.m_onBrowserEvent__org_gwtproject_user_client_Event(event);
  }
- /**
-  * @param {Widget} sender
-  * @param {number} x
-  * @param {number} y
-  * @public
-  * @deprecated
-  */
- m_onMouseDown__org_gwtproject_user_client_ui_Widget__int__int(sender, x, y) {
+ /** @deprecated */
+ m_onMouseDown__org_gwtproject_user_client_ui_Widget__int__int(/** Widget */ sender, /** number */ x, /** number */ y) {
   if ($Equality.$same(DOM.m_getCaptureElement__(), null)) {
    this.f_dragging__org_gwtproject_user_client_ui_DialogBox_ = true;
    DOM.m_setCapture__org_gwtproject_dom_client_Element(this.m_getElement__());
@@ -249,26 +183,12 @@ class DialogBox extends DecoratedPopupPanel {
    this.f_dragStartY__org_gwtproject_user_client_ui_DialogBox_ = y;
   }
  }
- /**
-  * @param {Widget} sender
-  * @public
-  * @deprecated
-  */
- m_onMouseEnter__org_gwtproject_user_client_ui_Widget(sender) {}
- /**
-  * @param {Widget} sender
-  * @public
-  * @deprecated
-  */
- m_onMouseLeave__org_gwtproject_user_client_ui_Widget(sender) {}
- /**
-  * @param {Widget} sender
-  * @param {number} x
-  * @param {number} y
-  * @public
-  * @deprecated
-  */
- m_onMouseMove__org_gwtproject_user_client_ui_Widget__int__int(sender, x, y) {
+ /** @deprecated */
+ m_onMouseEnter__org_gwtproject_user_client_ui_Widget(/** Widget */ sender) {}
+ /** @deprecated */
+ m_onMouseLeave__org_gwtproject_user_client_ui_Widget(/** Widget */ sender) {}
+ /** @deprecated */
+ m_onMouseMove__org_gwtproject_user_client_ui_Widget__int__int(/** Widget */ sender, /** number */ x, /** number */ y) {
   if (this.f_dragging__org_gwtproject_user_client_ui_DialogBox_) {
    let absX = x + this.m_getAbsoluteLeft__();
    let absY = y + this.m_getAbsoluteTop__();
@@ -278,69 +198,39 @@ class DialogBox extends DecoratedPopupPanel {
    this.m_setPopupPosition__int__int(absX - this.f_dragStartX__org_gwtproject_user_client_ui_DialogBox_, absY - this.f_dragStartY__org_gwtproject_user_client_ui_DialogBox_);
   }
  }
- /**
-  * @param {Widget} sender
-  * @param {number} x
-  * @param {number} y
-  * @public
-  * @deprecated
-  */
- m_onMouseUp__org_gwtproject_user_client_ui_Widget__int__int(sender, x, y) {
+ /** @deprecated */
+ m_onMouseUp__org_gwtproject_user_client_ui_Widget__int__int(/** Widget */ sender, /** number */ x, /** number */ y) {
   this.f_dragging__org_gwtproject_user_client_ui_DialogBox_ = false;
   DOM.m_releaseCapture__org_gwtproject_dom_client_Element(this.m_getElement__());
  }
- /**
-  * @override
-  * @param {SafeHtml} html
-  * @public
-  */
- m_setHTML__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ /** @override */
+ m_setHTML__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   this.f_caption__org_gwtproject_user_client_ui_DialogBox_.m_setHTML__org_gwtproject_safehtml_shared_SafeHtml(html);
  }
- /**
-  * @override
-  * @param {?string} html
-  * @public
-  */
- m_setHTML__java_lang_String(html) {
+ /** @override */
+ m_setHTML__java_lang_String(/** ?string */ html) {
   this.f_caption__org_gwtproject_user_client_ui_DialogBox_.m_setHTML__org_gwtproject_safehtml_shared_SafeHtml(SafeHtmlUtils.m_fromTrustedString__java_lang_String(html));
  }
- /**
-  * @override
-  * @param {?string} text
-  * @public
-  */
- m_setText__java_lang_String(text) {
+ /** @override */
+ m_setText__java_lang_String(/** ?string */ text) {
   this.f_caption__org_gwtproject_user_client_ui_DialogBox_.m_setText__java_lang_String(text);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_show__() {
   if ($Equality.$same(this.f_resizeHandlerRegistration__org_gwtproject_user_client_ui_DialogBox, null)) {
    this.f_resizeHandlerRegistration__org_gwtproject_user_client_ui_DialogBox = Window.m_addResizeHandler__org_gwtproject_event_logical_shared_ResizeHandler($1.$create__org_gwtproject_user_client_ui_DialogBox(this));
   }
   super.m_show__();
  }
- /**
-  * @param {MouseDownEvent} event
-  * @public
-  */
- m_beginDragging__org_gwtproject_event_dom_client_MouseDownEvent(event) {
+ 
+ m_beginDragging__org_gwtproject_event_dom_client_MouseDownEvent(/** MouseDownEvent */ event) {
   this.m_onMouseDown__org_gwtproject_user_client_ui_Widget__int__int(this.f_caption__org_gwtproject_user_client_ui_DialogBox_.m_asWidget__(), event.m_getX__(), event.m_getY__());
  }
- /**
-  * @param {MouseMoveEvent} event
-  * @public
-  */
- m_continueDragging__org_gwtproject_event_dom_client_MouseMoveEvent(event) {
+ 
+ m_continueDragging__org_gwtproject_event_dom_client_MouseMoveEvent(/** MouseMoveEvent */ event) {
   this.m_onMouseMove__org_gwtproject_user_client_ui_Widget__int__int(this.f_caption__org_gwtproject_user_client_ui_DialogBox_.m_asWidget__(), event.m_getX__(), event.m_getY__());
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_doAttachChildren__() {
   try {
    super.m_doAttachChildren__();
@@ -348,10 +238,7 @@ class DialogBox extends DecoratedPopupPanel {
    this.f_caption__org_gwtproject_user_client_ui_DialogBox_.m_asWidget__().m_onAttach__();
   }
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_doDetachChildren__() {
   try {
    super.m_doDetachChildren__();
@@ -359,84 +246,53 @@ class DialogBox extends DecoratedPopupPanel {
    this.f_caption__org_gwtproject_user_client_ui_DialogBox_.m_asWidget__().m_onDetach__();
   }
  }
- /**
-  * @param {MouseUpEvent} event
-  * @public
-  */
- m_endDragging__org_gwtproject_event_dom_client_MouseUpEvent(event) {
+ 
+ m_endDragging__org_gwtproject_event_dom_client_MouseUpEvent(/** MouseUpEvent */ event) {
   this.m_onMouseUp__org_gwtproject_user_client_ui_Widget__int__int(this.f_caption__org_gwtproject_user_client_ui_DialogBox_.m_asWidget__(), event.m_getX__(), event.m_getY__());
  }
- /**
-  * @override
-  * @param {?string} baseID
-  * @public
-  */
- m_onEnsureDebugId__java_lang_String(baseID) {
+ /** @override */
+ m_onEnsureDebugId__java_lang_String(/** ?string */ baseID) {
   super.m_onEnsureDebugId__java_lang_String(baseID);
   this.f_caption__org_gwtproject_user_client_ui_DialogBox_.m_asWidget__().m_ensureDebugId__java_lang_String(j_l_String.m_valueOf__java_lang_Object(baseID) + "-caption");
   UIObject.m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(this.m_getCellElement__int__int(1, 1), baseID, "content");
  }
- /**
-  * @override
-  * @param {NativePreviewEvent} event
-  * @public
-  */
- m_onPreviewNativeEvent__org_gwtproject_user_client_Event_NativePreviewEvent(event) {
+ /** @override */
+ m_onPreviewNativeEvent__org_gwtproject_user_client_Event_NativePreviewEvent(/** NativePreviewEvent */ event) {
   let nativeEvent = event.m_getNativeEvent__();
   if (!event.m_isCanceled__() && (event.m_getTypeInt__() == Event.f_ONMOUSEDOWN__org_gwtproject_user_client_Event) && this.m_isCaptionEvent__org_gwtproject_dom_client_NativeEvent_$p_org_gwtproject_user_client_ui_DialogBox(nativeEvent)) {
    NativeEvent_$Overlay.m_preventDefault__$devirt__org_gwtproject_dom_client_NativeEvent(nativeEvent);
   }
   super.m_onPreviewNativeEvent__org_gwtproject_user_client_Event_NativePreviewEvent(event);
  }
- /**
-  * @param {Object} event
-  * @return {boolean}
-  * @public
-  */
- m_isCaptionEvent__org_gwtproject_dom_client_NativeEvent_$p_org_gwtproject_user_client_ui_DialogBox(event) {
+ /** @return {boolean} */
+ m_isCaptionEvent__org_gwtproject_dom_client_NativeEvent_$p_org_gwtproject_user_client_ui_DialogBox(/** Object */ event) {
   let target = NativeEvent_$Overlay.m_getEventTarget__$devirt__org_gwtproject_dom_client_NativeEvent(event);
   if (Element_$Overlay.m_is__org_gwtproject_core_client_JavaScriptObject(target)) {
    return Node_$Overlay.m_isOrHasChild__$devirt__org_gwtproject_dom_client_Node__org_gwtproject_dom_client_Node(Node_$Overlay.m_getParentElement__$devirt__org_gwtproject_dom_client_Node(this.m_getCellElement__int__int(0, 1)), Element_$Overlay.m_as__org_gwtproject_core_client_JavaScriptObject(target));
   }
   return false;
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DialogBox.$clinit = () =>{};
   DialogBox.$loadModules();
   DecoratedPopupPanel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DialogBox;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -467,7 +323,7 @@ $Util.$setClassMetadata(DialogBox, 'org.gwtproject.user.client.ui.DialogBox');
 HasHTML.$markImplementor(DialogBox);
 HasSafeHtml.$markImplementor(DialogBox);
 
-/** @public {?string} @const */
+/**@const {?string}*/
 DialogBox.f_DEFAULT_STYLENAME__org_gwtproject_user_client_ui_DialogBox_ = "gwt-DialogBox";
 
 exports = DialogBox; 

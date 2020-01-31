@@ -10,48 +10,25 @@ let SelectAction = goog.forwardDeclare('org.gwtproject.view.client.DefaultSelect
  * @template T
  */
 class EventTranslator {
- /**
-  * @abstract
-  * @param {CellPreviewEvent<T>} event
-  * @return {boolean}
-  * @public
-  */
- m_clearCurrentSelection__org_gwtproject_view_client_CellPreviewEvent(event) {}
- /**
-  * @abstract
-  * @param {CellPreviewEvent<T>} event
-  * @return {SelectAction}
-  * @public
-  */
- m_translateSelectionEvent__org_gwtproject_view_client_CellPreviewEvent(event) {}
- /**
-  * @public
-  */
+ /** @abstract @return {boolean} */
+ m_clearCurrentSelection__org_gwtproject_view_client_CellPreviewEvent(/** CellPreviewEvent<T> */ event) {}
+ /** @abstract @return {SelectAction} */
+ m_translateSelectionEvent__org_gwtproject_view_client_CellPreviewEvent(/** CellPreviewEvent<T> */ event) {}
+ 
  static $clinit() {
   EventTranslator.$clinit = () =>{};
   EventTranslator.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_view_client_DefaultSelectionEventManager_EventTranslator;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

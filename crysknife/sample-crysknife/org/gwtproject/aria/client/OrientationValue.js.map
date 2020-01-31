@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"OrientationValue.impl.java.js",
-"lineCount":145,
-"mappings":"A;;;;;;;;;;;;;;;MAoBY,gB;;;;CAAA,W;EAAAA,Q;;;;;;;;QAAA,8B;EAAAC,uC;EAAAA,qG;EAAAA,iB;;;;;;;CAAA,yE;EAAAC,qC;EAAAA,2C;EAAAA,mE;;;;;;;CAKI,gB;EACZC;;IAEIA,oBAFJA;;IAIIA,kBAJJA;G;EAMAA,Y;;;;;;;QAZQ,2B;EAAAC,2B;EAAAA;GAAAA,8IAAAA;G;EAAAA,8H;;;;;;QAAA,U;EAAAC,2B;EAAAA,0O;;;;;;;;;CAAA,6B;EAAAC,4F;;;;;;QACV,6D;EAAAC,iH;;;;;;QACA,2D;EAAAA,+G;;;;;QAFU,O;EAAAC,mC;EAAAA,gC;EAAAA,e;EACVA,sP;EACAA,gP;EAFUA,yF;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;4E;AAAA;0E;AAAA;kF;AACV;wF;AACA;;",
+"lineCount":104,
+"mappings":"A;;;;;;;;;;;;;;;MAoBY,gB;;CAAA,W;EAAAA,Q;;;QAAA,8B;EAAAC,uC;EAAAA,qG;EAAAA,iB;;;CAAA,yE;EAAAC,qC;EAAAA,2C;EAAAA,mE;;;CAKI,gB;EACZC;;IAEIA,oBAFJA;;IAIIA,kBAJJA;G;EAMAA,Y;;;QAZQ,2B;EAAAC,2B;EAAAA;GAAAA,8IAAAA;G;EAAAA,8H;;;QAAA,U;EAAAC,2B;EAAAA,yO;;;;CAAA,6B;EAAAC,2F;;;QACV,6D;EAAAC,iH;;;QACA,2D;EAAAA,+G;;;QAFU,O;EAAAC,mC;EAAAA,gC;EAAAA,e;EACVA,sP;EACAA,gP;EAFUA,yF;;;;;;;;;;;;;;;;;;;AAAA;4E;AAAA;0E;AAAA;kF;AACV;wF;AACA;;",
 "sources":["OrientationValue.java"],
 "names":["org.gwtproject.aria.client.OrientationValue.<synthetic: ctor_js>","org.gwtproject.aria.client.OrientationValue.<synthetic: ctor_create>","org.gwtproject.aria.client.OrientationValue.<init>","org.gwtproject.aria.client.OrientationValue.getAriaValue","org.gwtproject.aria.client.OrientationValue.valueOf","org.gwtproject.aria.client.OrientationValue.values","org.gwtproject.aria.client.OrientationValue.compareTo","org.gwtproject.aria.client.OrientationValue.<synthetic: getter>","org.gwtproject.aria.client.OrientationValue.<clinit>"]
 }

@@ -32,115 +32,85 @@ let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
  * @extends {AbstractEditableCell<Date, Date>}
   */
 class DatePickerCell extends AbstractEditableCell {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {DatePicker} */
+  /**@type {DatePicker}*/
   this.f_datePicker__org_gwtproject_cell_client_DatePickerCell_;
-  /** @public {DateTimeFormat} */
+  /**@type {DateTimeFormat}*/
   this.f_format__org_gwtproject_cell_client_DatePickerCell_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_offsetX__org_gwtproject_cell_client_DatePickerCell_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_offsetY__org_gwtproject_cell_client_DatePickerCell_ = 0;
-  /** @public {*} */
+  /**@type {*}*/
   this.f_lastKey__org_gwtproject_cell_client_DatePickerCell_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_lastParent__org_gwtproject_cell_client_DatePickerCell_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_lastIndex__org_gwtproject_cell_client_DatePickerCell_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_lastColumn__org_gwtproject_cell_client_DatePickerCell_ = 0;
-  /** @public {Date} */
+  /**@type {Date}*/
   this.f_lastValue__org_gwtproject_cell_client_DatePickerCell_;
-  /** @public {PopupPanel} */
+  /**@type {PopupPanel}*/
   this.f_panel__org_gwtproject_cell_client_DatePickerCell_;
-  /** @public {SafeHtmlRenderer<?string>} */
+  /**@type {SafeHtmlRenderer<?string>}*/
   this.f_renderer__org_gwtproject_cell_client_DatePickerCell_;
-  /** @public {ValueUpdater<Date>} */
+  /**@type {ValueUpdater<Date>}*/
   this.f_valueUpdater__org_gwtproject_cell_client_DatePickerCell_;
  }
- /**
-  * Factory method corresponding to constructor 'DatePickerCell()'.
-  * @return {!DatePickerCell}
-  * @public
-  */
+ //Factory method corresponding to constructor 'DatePickerCell()'.
+ /** @return {!DatePickerCell} */
  static $create__() {
   DatePickerCell.$clinit();
   let $instance = new DatePickerCell();
   $instance.$ctor__org_gwtproject_cell_client_DatePickerCell__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'DatePickerCell()'.
-  * @public
-  */
+ //Initialization from constructor 'DatePickerCell()'.
+ 
  $ctor__org_gwtproject_cell_client_DatePickerCell__() {
   this.$ctor__org_gwtproject_cell_client_DatePickerCell__org_gwtproject_i18n_client_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer(DateTimeFormat.m_getFullDateFormat__(), SimpleSafeHtmlRenderer.m_getInstance__());
  }
- /**
-  * Factory method corresponding to constructor 'DatePickerCell(DateTimeFormat)'.
-  * @param {DateTimeFormat} format
-  * @return {!DatePickerCell}
-  * @public
-  */
- static $create__org_gwtproject_i18n_client_DateTimeFormat(format) {
+ //Factory method corresponding to constructor 'DatePickerCell(DateTimeFormat)'.
+ /** @return {!DatePickerCell} */
+ static $create__org_gwtproject_i18n_client_DateTimeFormat(/** DateTimeFormat */ format) {
   DatePickerCell.$clinit();
   let $instance = new DatePickerCell();
   $instance.$ctor__org_gwtproject_cell_client_DatePickerCell__org_gwtproject_i18n_client_DateTimeFormat(format);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DatePickerCell(DateTimeFormat)'.
-  * @param {DateTimeFormat} format
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_DatePickerCell__org_gwtproject_i18n_client_DateTimeFormat(format) {
+ //Initialization from constructor 'DatePickerCell(DateTimeFormat)'.
+ 
+ $ctor__org_gwtproject_cell_client_DatePickerCell__org_gwtproject_i18n_client_DateTimeFormat(/** DateTimeFormat */ format) {
   this.$ctor__org_gwtproject_cell_client_DatePickerCell__org_gwtproject_i18n_client_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer(format, SimpleSafeHtmlRenderer.m_getInstance__());
  }
- /**
-  * Factory method corresponding to constructor 'DatePickerCell(SafeHtmlRenderer)'.
-  * @param {SafeHtmlRenderer<?string>} renderer
-  * @return {!DatePickerCell}
-  * @public
-  */
- static $create__org_gwtproject_text_shared_SafeHtmlRenderer(renderer) {
+ //Factory method corresponding to constructor 'DatePickerCell(SafeHtmlRenderer)'.
+ /** @return {!DatePickerCell} */
+ static $create__org_gwtproject_text_shared_SafeHtmlRenderer(/** SafeHtmlRenderer<?string> */ renderer) {
   DatePickerCell.$clinit();
   let $instance = new DatePickerCell();
   $instance.$ctor__org_gwtproject_cell_client_DatePickerCell__org_gwtproject_text_shared_SafeHtmlRenderer(renderer);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DatePickerCell(SafeHtmlRenderer)'.
-  * @param {SafeHtmlRenderer<?string>} renderer
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_DatePickerCell__org_gwtproject_text_shared_SafeHtmlRenderer(renderer) {
+ //Initialization from constructor 'DatePickerCell(SafeHtmlRenderer)'.
+ 
+ $ctor__org_gwtproject_cell_client_DatePickerCell__org_gwtproject_text_shared_SafeHtmlRenderer(/** SafeHtmlRenderer<?string> */ renderer) {
   this.$ctor__org_gwtproject_cell_client_DatePickerCell__org_gwtproject_i18n_client_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer(DateTimeFormat.m_getFormat__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(PredefinedFormat.f_DATE_FULL__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat), renderer);
  }
- /**
-  * Factory method corresponding to constructor 'DatePickerCell(DateTimeFormat, SafeHtmlRenderer)'.
-  * @param {DateTimeFormat} format
-  * @param {SafeHtmlRenderer<?string>} renderer
-  * @return {!DatePickerCell}
-  * @public
-  */
- static $create__org_gwtproject_i18n_client_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer(format, renderer) {
+ //Factory method corresponding to constructor 'DatePickerCell(DateTimeFormat, SafeHtmlRenderer)'.
+ /** @return {!DatePickerCell} */
+ static $create__org_gwtproject_i18n_client_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer(/** DateTimeFormat */ format, /** SafeHtmlRenderer<?string> */ renderer) {
   DatePickerCell.$clinit();
   let $instance = new DatePickerCell();
   $instance.$ctor__org_gwtproject_cell_client_DatePickerCell__org_gwtproject_i18n_client_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer(format, renderer);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DatePickerCell(DateTimeFormat, SafeHtmlRenderer)'.
-  * @param {DateTimeFormat} format
-  * @param {SafeHtmlRenderer<?string>} renderer
-  * @public
-  */
- $ctor__org_gwtproject_cell_client_DatePickerCell__org_gwtproject_i18n_client_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer(format, renderer) {
-  this.$ctor__org_gwtproject_cell_client_AbstractEditableCell__arrayOf_java_lang_String(/**@type {!Array<?string>} */ ($Arrays.$init([BrowserEvents.f_CLICK__org_gwtproject_dom_client_BrowserEvents, BrowserEvents.f_KEYDOWN__org_gwtproject_dom_client_BrowserEvents], j_l_String)));
+ //Initialization from constructor 'DatePickerCell(DateTimeFormat, SafeHtmlRenderer)'.
+ 
+ $ctor__org_gwtproject_cell_client_DatePickerCell__org_gwtproject_i18n_client_DateTimeFormat__org_gwtproject_text_shared_SafeHtmlRenderer(/** DateTimeFormat */ format, /** SafeHtmlRenderer<?string> */ renderer) {
+  this.$ctor__org_gwtproject_cell_client_AbstractEditableCell__arrayOf_java_lang_String(/**@type {!Array<?string>}*/ ($Arrays.$init([BrowserEvents.f_CLICK__org_gwtproject_dom_client_BrowserEvents, BrowserEvents.f_KEYDOWN__org_gwtproject_dom_client_BrowserEvents], j_l_String)));
   this.$init___$p_org_gwtproject_cell_client_DatePickerCell();
   if ($Equality.$same(format, null)) {
    throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String("format == null"));
@@ -156,46 +126,25 @@ class DatePickerCell extends AbstractEditableCell {
   this.f_panel__org_gwtproject_cell_client_DatePickerCell_.m_add__org_gwtproject_user_client_ui_Widget(this.f_datePicker__org_gwtproject_cell_client_DatePickerCell_);
   this.f_datePicker__org_gwtproject_cell_client_DatePickerCell_.m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler($3.$create__org_gwtproject_cell_client_DatePickerCell(this));
  }
- /**
-  * @return {DatePicker}
-  * @public
-  */
+ /** @return {DatePicker} */
  m_getDatePicker__() {
   return this.f_datePicker__org_gwtproject_cell_client_DatePickerCell_;
  }
- /**
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {Date} value
-  * @return {boolean}
-  * @public
-  */
- m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_util_Date(context, parent, value) {
+ /** @return {boolean} */
+ m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_util_Date(/** Context */ context, /** Object */ parent, /** Date */ value) {
   return !$Equality.$same(this.f_lastKey__org_gwtproject_cell_client_DatePickerCell_, null) && $Objects.m_equals__java_lang_Object__java_lang_Object(this.f_lastKey__org_gwtproject_cell_client_DatePickerCell_, context.m_getKey__());
  }
- /**
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {Date} value
-  * @param {Object} event
-  * @param {ValueUpdater<Date>} valueUpdater
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_util_Date__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, parent, value, event, valueUpdater) {
+ 
+ m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_util_Date__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(/** Context */ context, /** Object */ parent, /** Date */ value, /** Object */ event, /** ValueUpdater<Date> */ valueUpdater) {
   super.m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, parent, value, event, valueUpdater);
   if (j_l_String.m_equals__java_lang_String__java_lang_Object(BrowserEvents.f_CLICK__org_gwtproject_dom_client_BrowserEvents, $Overlay.m_getType__$devirt__org_gwtproject_dom_client_NativeEvent(event))) {
    this.m_onEnterKeyDown__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_util_Date__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, parent, value, event, valueUpdater);
   }
  }
- /**
-  * @param {Context} context
-  * @param {Date} value
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_util_Date__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, value, sb) {
+ 
+ m_render__org_gwtproject_cell_client_Cell_Context__java_util_Date__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ context, /** Date */ value, /** SafeHtmlBuilder */ sb) {
   let key = context.m_getKey__();
-  let viewData = /**@type {Date} */ ($Casts.$to(this.m_getViewData__java_lang_Object(key), Date));
+  let viewData = /**@type {Date}*/ ($Casts.$to(this.m_getViewData__java_lang_Object(key), Date));
   if (!$Equality.$same(viewData, null) && viewData.equals(value)) {
    this.m_clearViewData__java_lang_Object(key);
    viewData = null;
@@ -210,102 +159,56 @@ class DatePickerCell extends AbstractEditableCell {
    sb.m_append__org_gwtproject_safehtml_shared_SafeHtml(this.f_renderer__org_gwtproject_cell_client_DatePickerCell_.m_render__java_lang_Object(s));
   }
  }
- /**
-  * @param {Context} context
-  * @param {Object} parent
-  * @param {Date} value
-  * @param {Object} event
-  * @param {ValueUpdater<Date>} valueUpdater
-  * @public
-  */
- m_onEnterKeyDown__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_util_Date__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(context, parent, value, event, valueUpdater) {
+ 
+ m_onEnterKeyDown__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_util_Date__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(/** Context */ context, /** Object */ parent, /** Date */ value, /** Object */ event, /** ValueUpdater<Date> */ valueUpdater) {
   this.f_lastKey__org_gwtproject_cell_client_DatePickerCell_ = context.m_getKey__();
   this.f_lastParent__org_gwtproject_cell_client_DatePickerCell_ = parent;
   this.f_lastValue__org_gwtproject_cell_client_DatePickerCell_ = value;
   this.f_lastIndex__org_gwtproject_cell_client_DatePickerCell_ = context.m_getIndex__();
   this.f_lastColumn__org_gwtproject_cell_client_DatePickerCell_ = context.m_getColumn__();
   this.f_valueUpdater__org_gwtproject_cell_client_DatePickerCell_ = valueUpdater;
-  let viewData = /**@type {Date} */ ($Casts.$to(this.m_getViewData__java_lang_Object(this.f_lastKey__org_gwtproject_cell_client_DatePickerCell_), Date));
+  let viewData = /**@type {Date}*/ ($Casts.$to(this.m_getViewData__java_lang_Object(this.f_lastKey__org_gwtproject_cell_client_DatePickerCell_), Date));
   let date = $Equality.$same(viewData, null) ? this.f_lastValue__org_gwtproject_cell_client_DatePickerCell_ : viewData;
   this.f_datePicker__org_gwtproject_cell_client_DatePickerCell_.m_setCurrentMonth__java_util_Date(date);
   this.f_datePicker__org_gwtproject_cell_client_DatePickerCell_.m_setValue__java_util_Date(date);
   this.f_panel__org_gwtproject_cell_client_DatePickerCell_.m_setPopupPositionAndShow__org_gwtproject_user_client_ui_PopupPanel_PositionCallback($4.$create__org_gwtproject_cell_client_DatePickerCell(this));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Context} arg0
-  * @param {Object} arg1
-  * @param {*} arg2
-  * @return {boolean}
-  * @public
-  */
- m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(arg0, arg1, arg2) {
-  return this.m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_util_Date(arg0, arg1, /**@type {Date} */ ($Casts.$to(arg2, Date)));
+ //Bridge method.
+ /** @override @return {boolean} */
+ m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object(/** Context */ arg0, /** Object */ arg1, /** * */ arg2) {
+  return this.m_isEditing__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_util_Date(arg0, arg1, /**@type {Date}*/ ($Casts.$to(arg2, Date)));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Context} arg0
-  * @param {Object} arg1
-  * @param {*} arg2
-  * @param {Object} arg3
-  * @param {ValueUpdater} arg4
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(arg0, arg1, arg2, arg3, arg4) {
-  this.m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_util_Date__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(arg0, arg1, /**@type {Date} */ ($Casts.$to(arg2, Date)), arg3, arg4);
+ //Bridge method.
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(/** Context */ arg0, /** Object */ arg1, /** * */ arg2, /** Object */ arg3, /** ValueUpdater */ arg4) {
+  this.m_onBrowserEvent__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_util_Date__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(arg0, arg1, /**@type {Date}*/ ($Casts.$to(arg2, Date)), arg3, arg4);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Context} arg0
-  * @param {Object} arg1
-  * @param {*} arg2
-  * @param {Object} arg3
-  * @param {ValueUpdater} arg4
-  * @public
-  */
- m_onEnterKeyDown__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(arg0, arg1, arg2, arg3, arg4) {
-  this.m_onEnterKeyDown__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_util_Date__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(arg0, arg1, /**@type {Date} */ ($Casts.$to(arg2, Date)), arg3, arg4);
+ //Bridge method.
+ /** @override */
+ m_onEnterKeyDown__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_lang_Object__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(/** Context */ arg0, /** Object */ arg1, /** * */ arg2, /** Object */ arg3, /** ValueUpdater */ arg4) {
+  this.m_onEnterKeyDown__org_gwtproject_cell_client_Cell_Context__org_gwtproject_dom_client_Element__java_util_Date__org_gwtproject_dom_client_NativeEvent__org_gwtproject_cell_client_ValueUpdater(arg0, arg1, /**@type {Date}*/ ($Casts.$to(arg2, Date)), arg3, arg4);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {Context} arg0
-  * @param {*} arg1
-  * @param {SafeHtmlBuilder} arg2
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, arg1, arg2) {
-  this.m_render__org_gwtproject_cell_client_Cell_Context__java_util_Date__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, /**@type {Date} */ ($Casts.$to(arg1, Date)), arg2);
+ //Bridge method.
+ /** @override */
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ arg0, /** * */ arg1, /** SafeHtmlBuilder */ arg2) {
+  this.m_render__org_gwtproject_cell_client_Cell_Context__java_util_Date__org_gwtproject_safehtml_shared_SafeHtmlBuilder(arg0, /**@type {Date}*/ ($Casts.$to(arg1, Date)), arg2);
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_cell_client_DatePickerCell() {
   this.f_offsetX__org_gwtproject_cell_client_DatePickerCell_ = 10;
   this.f_offsetY__org_gwtproject_cell_client_DatePickerCell_ = 10;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DatePickerCell.$clinit = () =>{};
   DatePickerCell.$loadModules();
   AbstractEditableCell.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DatePickerCell;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -330,7 +233,7 @@ class DatePickerCell extends AbstractEditableCell {
 }
 $Util.$setClassMetadata(DatePickerCell, 'org.gwtproject.cell.client.DatePickerCell');
 
-/** @public {number} @const */
+/**@const {number}*/
 DatePickerCell.f_ESCAPE__org_gwtproject_cell_client_DatePickerCell_ = 27;
 
 exports = DatePickerCell; 

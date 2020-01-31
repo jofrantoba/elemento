@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasMouseMoveHandlers.impl.java.js",
-"lineCount":26,
-"mappings":"A;;;;;;;;;;;;MAwBiB,oB;;;;;;;CAQK,uE,CAAqCA,O;;;;QAR1C,O;EAAAC,uC;EAAAA;",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;;;MAwBiB,oB;;CAQK,uE,yBAAqCA,O;;QAR1C,O;EAAAC,uC;EAAAA;",
 "sources":["HasMouseMoveHandlers.java"],
 "names":["handler","org.gwtproject.event.dom.client.HasMouseMoveHandlers.<clinit>"]
 }

@@ -35,49 +35,42 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {RequiresResize}
   */
 class HeaderPanel extends Panel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Widget} */
+  /**@type {Widget}*/
   this.f_content__org_gwtproject_user_client_ui_HeaderPanel_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_contentContainer__org_gwtproject_user_client_ui_HeaderPanel_;
-  /** @public {Widget} */
+  /**@type {Widget}*/
   this.f_footer__org_gwtproject_user_client_ui_HeaderPanel_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_footerContainer__org_gwtproject_user_client_ui_HeaderPanel_;
-  /** @public {Impl} */
+  /**@type {Impl}*/
   this.f_footerImpl__org_gwtproject_user_client_ui_HeaderPanel_;
-  /** @public {Widget} */
+  /**@type {Widget}*/
   this.f_header__org_gwtproject_user_client_ui_HeaderPanel_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_headerContainer__org_gwtproject_user_client_ui_HeaderPanel_;
-  /** @public {Impl} */
+  /**@type {Impl}*/
   this.f_headerImpl__org_gwtproject_user_client_ui_HeaderPanel_;
-  /** @public {ScheduledCommand} */
+  /**@type {ScheduledCommand}*/
   this.f_layoutCmd__org_gwtproject_user_client_ui_HeaderPanel_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_layoutScheduled__org_gwtproject_user_client_ui_HeaderPanel_ = false;
  }
- /**
-  * @return {!HeaderPanel}
-  * @public
-  */
+ /** @return {!HeaderPanel} */
  static $create__() {
   HeaderPanel.$clinit();
   let $instance = new HeaderPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_HeaderPanel__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_HeaderPanel__() {
   this.$ctor__org_gwtproject_user_client_ui_Panel__();
   this.$init___$p_org_gwtproject_user_client_ui_HeaderPanel();
-  let elem = /**@type {Object} */ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Document_$Overlay.m_createDivElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__())), Element_$Overlay));
+  let elem = /**@type {Object}*/ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Document_$Overlay.m_createDivElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__())), Element_$Overlay));
   Style_$Overlay.m_setPosition__$devirt__org_gwtproject_dom_client_Style__org_gwtproject_dom_style_shared_Position(elem.style, Position.f_RELATIVE__org_gwtproject_dom_style_shared_Position);
   Style_$Overlay.m_setOverflow__$devirt__org_gwtproject_dom_client_Style__org_gwtproject_dom_style_shared_Overflow(elem.style, Overflow.f_HIDDEN__org_gwtproject_dom_style_shared_Overflow);
   this.m_setElement__org_gwtproject_dom_client_Element(elem);
@@ -96,12 +89,8 @@ class HeaderPanel extends Panel {
   Style_$Overlay.m_setHeight__$devirt__org_gwtproject_dom_client_Style__double__org_gwtproject_dom_style_shared_Unit(this.f_contentContainer__org_gwtproject_user_client_ui_HeaderPanel_.style, 0.0, Unit.f_PX__org_gwtproject_dom_style_shared_Unit);
   elem.appendChild(this.f_contentContainer__org_gwtproject_user_client_ui_HeaderPanel_);
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override */
+ m_add__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   if ($Equality.$same(this.f_header__org_gwtproject_user_client_ui_HeaderPanel_, null)) {
    this.m_setHeaderWidget__org_gwtproject_user_client_ui_Widget(w);
   } else if ($Equality.$same(this.f_content__org_gwtproject_user_client_ui_HeaderPanel_, null)) {
@@ -112,68 +101,41 @@ class HeaderPanel extends Panel {
    throw $Exceptions.toJs(IllegalStateException.$create__java_lang_String("HeaderPanel already contains header, content, and footer widgets."));
   }
  }
- /**
-  * @return {Widget}
-  * @public
-  */
+ /** @return {Widget} */
  m_getContentWidget__() {
   return this.f_content__org_gwtproject_user_client_ui_HeaderPanel_;
  }
- /**
-  * @return {Widget}
-  * @public
-  */
+ /** @return {Widget} */
  m_getFooterWidget__() {
   return this.f_footer__org_gwtproject_user_client_ui_HeaderPanel_;
  }
- /**
-  * @return {Widget}
-  * @public
-  */
+ /** @return {Widget} */
  m_getHeaderWidget__() {
   return this.f_header__org_gwtproject_user_client_ui_HeaderPanel_;
  }
- /**
-  * @override
-  * @return {Iterator<Widget>}
-  * @public
-  */
+ /** @override @return {Iterator<Widget>} */
  m_iterator__() {
   return FiniteWidgetIterator.$create__org_gwtproject_user_client_ui_FiniteWidgetIterator_WidgetProvider__int(WidgetProviderImpl.$create__org_gwtproject_user_client_ui_HeaderPanel(this), 3);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onAttach__() {
   super.m_onAttach__();
   this.f_headerImpl__org_gwtproject_user_client_ui_HeaderPanel_.m_onAttach__();
   this.f_footerImpl__org_gwtproject_user_client_ui_HeaderPanel_.m_onAttach__();
   this.m_scheduledLayout___$p_org_gwtproject_user_client_ui_HeaderPanel();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onDetach__() {
   super.m_onDetach__();
   this.f_headerImpl__org_gwtproject_user_client_ui_HeaderPanel_.m_onDetach__();
   this.f_footerImpl__org_gwtproject_user_client_ui_HeaderPanel_.m_onDetach__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onResize__() {
   this.m_scheduledLayout___$p_org_gwtproject_user_client_ui_HeaderPanel();
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   if (!$Equality.$same(w.m_getParent__(), this)) {
    return false;
   }
@@ -194,40 +156,26 @@ class HeaderPanel extends Panel {
   }
   return true;
  }
- /**
-  * @param {Widget} w
-  * @public
-  */
- m_setContentWidget__org_gwtproject_user_client_ui_Widget(w) {
+ 
+ m_setContentWidget__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   this.m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_HeaderPanel(w, this.f_content__org_gwtproject_user_client_ui_HeaderPanel_, this.f_contentContainer__org_gwtproject_user_client_ui_HeaderPanel_);
   this.f_content__org_gwtproject_user_client_ui_HeaderPanel_ = w;
   this.m_scheduledLayout___$p_org_gwtproject_user_client_ui_HeaderPanel();
  }
- /**
-  * @param {Widget} w
-  * @public
-  */
- m_setFooterWidget__org_gwtproject_user_client_ui_Widget(w) {
+ 
+ m_setFooterWidget__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   this.m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_HeaderPanel(w, this.f_footer__org_gwtproject_user_client_ui_HeaderPanel_, this.f_footerContainer__org_gwtproject_user_client_ui_HeaderPanel_);
   this.f_footer__org_gwtproject_user_client_ui_HeaderPanel_ = w;
   this.m_scheduledLayout___$p_org_gwtproject_user_client_ui_HeaderPanel();
  }
- /**
-  * @param {Widget} w
-  * @public
-  */
- m_setHeaderWidget__org_gwtproject_user_client_ui_Widget(w) {
+ 
+ m_setHeaderWidget__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   this.m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_HeaderPanel(w, this.f_header__org_gwtproject_user_client_ui_HeaderPanel_, this.f_headerContainer__org_gwtproject_user_client_ui_HeaderPanel_);
   this.f_header__org_gwtproject_user_client_ui_HeaderPanel_ = w;
   this.m_scheduledLayout___$p_org_gwtproject_user_client_ui_HeaderPanel();
  }
- /**
-  * @param {Widget} w
-  * @param {Widget} toReplace
-  * @param {Object} container
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_HeaderPanel(w, toReplace, container) {
+ 
+ m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_HeaderPanel(/** Widget */ w, /** Widget */ toReplace, /** Object */ container) {
   if ($Equality.$same(w, toReplace)) {
    return;
   }
@@ -243,21 +191,16 @@ class HeaderPanel extends Panel {
    this.m_adopt__org_gwtproject_user_client_ui_Widget(w);
   }
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_createContainer___$p_org_gwtproject_user_client_ui_HeaderPanel() {
-  let container = /**@type {Object} */ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Document_$Overlay.m_createDivElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__())), Element_$Overlay));
+  let container = /**@type {Object}*/ ($Casts.$to($Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Document_$Overlay.m_createDivElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__())), Element_$Overlay));
   Style_$Overlay.m_setPosition__$devirt__org_gwtproject_dom_client_Style__org_gwtproject_dom_style_shared_Position(container.style, Position.f_ABSOLUTE__org_gwtproject_dom_style_shared_Position);
   Style_$Overlay.m_setDisplay__$devirt__org_gwtproject_dom_client_Style__org_gwtproject_dom_style_shared_Display(container.style, Display.f_NONE__org_gwtproject_dom_style_shared_Display);
   Style_$Overlay.m_setLeft__$devirt__org_gwtproject_dom_client_Style__double__org_gwtproject_dom_style_shared_Unit(container.style, 0.0, Unit.f_PX__org_gwtproject_dom_style_shared_Unit);
   Style_$Overlay.m_setWidth__$devirt__org_gwtproject_dom_client_Style__double__org_gwtproject_dom_style_shared_Unit(container.style, 100.0, Unit.f_PCT__org_gwtproject_dom_style_shared_Unit);
   return container;
  }
- /**
-  * @public
-  */
+ 
  m_forceLayout___$p_org_gwtproject_user_client_ui_HeaderPanel() {
   if (!this.m_isAttached__() || $Equality.$same(this.f_content__org_gwtproject_user_client_ui_HeaderPanel_, null)) {
    return;
@@ -275,64 +218,44 @@ class HeaderPanel extends Panel {
   }
   Style_$Overlay.m_setHeight__$devirt__org_gwtproject_dom_client_Style__double__org_gwtproject_dom_style_shared_Unit(this.f_contentContainer__org_gwtproject_user_client_ui_HeaderPanel_.style, Math.max(0, remainingHeight), Unit.f_PX__org_gwtproject_dom_style_shared_Unit);
   if (RequiresResize.$isInstance(this.f_content__org_gwtproject_user_client_ui_HeaderPanel_)) {
-   /**@type {RequiresResize} */ ($Casts.$to(this.f_content__org_gwtproject_user_client_ui_HeaderPanel_, RequiresResize)).m_onResize__();
+   /**@type {RequiresResize}*/ ($Casts.$to(this.f_content__org_gwtproject_user_client_ui_HeaderPanel_, RequiresResize)).m_onResize__();
   }
  }
- /**
-  * @public
-  */
+ 
  m_scheduledLayout___$p_org_gwtproject_user_client_ui_HeaderPanel() {
   if (this.m_isAttached__() && !this.f_layoutScheduled__org_gwtproject_user_client_ui_HeaderPanel_) {
    this.f_layoutScheduled__org_gwtproject_user_client_ui_HeaderPanel_ = true;
    Scheduler.m_get__().m_scheduleDeferred__org_gwtproject_core_client_Scheduler_ScheduledCommand(this.f_layoutCmd__org_gwtproject_user_client_ui_HeaderPanel_);
   }
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_HeaderPanel() {
   this.f_footerImpl__org_gwtproject_user_client_ui_HeaderPanel_ = ImplStandard.$create__();
   this.f_headerImpl__org_gwtproject_user_client_ui_HeaderPanel_ = ImplStandard.$create__();
   this.f_layoutCmd__org_gwtproject_user_client_ui_HeaderPanel_ = $1.$create__org_gwtproject_user_client_ui_HeaderPanel(this);
   this.f_layoutScheduled__org_gwtproject_user_client_ui_HeaderPanel_ = false;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HeaderPanel.$clinit = () =>{};
   HeaderPanel.$loadModules();
   Panel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HeaderPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');
   Iterable = goog.module.get('java.lang.Iterable$impl');

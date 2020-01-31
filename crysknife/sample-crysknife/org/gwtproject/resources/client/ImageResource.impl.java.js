@@ -11,77 +11,36 @@ let SafeUri = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeUri$impl')
  * @extends {ResourcePrototype}
  */
 class ImageResource {
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {number} */
  m_getHeight__() {}
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {number} */
  m_getLeft__() {}
- /**
-  * @abstract
-  * @return {Image}
-  * @public
-  */
+ /** @abstract @return {Image} */
  m_getImage__() {}
- /**
-  * @abstract
-  * @return {SafeUri}
-  * @public
-  */
+ /** @abstract @return {SafeUri} */
  m_getSafeUri__() {}
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {number} */
  m_getTop__() {}
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {number} */
  m_getWidth__() {}
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_isAnimated__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ImageResource.$clinit = () =>{};
   ImageResource.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ResourcePrototype.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_resources_client_ImageResource = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ResourcePrototype.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_resources_client_ImageResource = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_resources_client_ImageResource;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

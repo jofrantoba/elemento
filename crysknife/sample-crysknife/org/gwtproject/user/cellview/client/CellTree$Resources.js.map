@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellTree$Resources.impl.java.js",
-"lineCount":92,
-"mappings":"A;;;;;;;;;;;;;MA6JmB,S;;;;;;CASD,sB;;;;;;CAMA,mB;;;;;;CAOA,oB;;;;;;CAMA,8B;;;;;;CAMR,iB;;;;;QAhCN,sE;EAAAA,4G;;;;;QAFe,O;EAAAC,4B;EAAAA,yB;EAEfA,oH;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAFe;;",
+"lineCount":56,
+"mappings":"A;;;;;;;;;;;;;MA6JmB,S;;CASD,sB;;CAMA,mB;;CAOA,oB;;CAMA,8B;;CAMR,iB;;QAhCN,sE;EAAAA,4G;;;QAFe,O;EAAAC,4B;EAAAA,yB;EAEfA,oH;;;;;;;;;;;;;;;;;;;;;;AAFe;;",
 "sources":["CellTree.java"],
 "names":["org.gwtproject.user.cellview.client.CellTree$Resources.<synthetic: getter>","org.gwtproject.user.cellview.client.CellTree$Resources.<clinit>"]
 }

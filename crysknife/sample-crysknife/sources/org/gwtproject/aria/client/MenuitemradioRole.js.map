@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MenuitemradioRole.impl.java.js",
-"lineCount":18,
-"mappings":"A;;;;;;;;;;;MA2BiB,iB;;;;QAAA,O;EAAAA,oC;EAAAA;",
+"lineCount":16,
+"mappings":"A;;;;;;;;;;;MA2BiB,iB;;QAAA,O;EAAAA,oC;EAAAA;",
 "sources":["MenuitemradioRole.java"],
 "names":["org.gwtproject.aria.client.MenuitemradioRole.<clinit>"]
 }

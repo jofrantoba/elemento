@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TextCell.impl.java.js",
-"lineCount":81,
-"mappings":"A;;;;;;;;;;;;;;;;;MAyBa,Q;;;;CAAA,W;EAAAA,Q;;;;;;;QAMJ,S;EAAAC,mB;EAAAA,+B;EAAAA,yD;EAAAA,iB;;;;;;CAAA,4C;EACLC,4O;;;;;;;;QASK,oD,CAAkCC,Q;EAAlCF,mB;EAAAA,+B;EAAAA,4G;EAAAA,iB;;;;;;;CAAA,uF,CAAkCE,Q;EACvCD,4M;;;;;;;;;CAIU,0I,CAAeE,O,EAAkBC,K,EAAuBC,E;EAClEC;GACEA,4DADFA;G;;;;;QAtBS,O;EAAAC,2B;EAAAA,wB;EAAAA;",
+"lineCount":59,
+"mappings":"A;;;;;;;;;;;;;;;;;MAyBa,Q;;CAAA,W;EAAAA,Q;;;;QAMJ,S;EAAAC,mB;EAAAA,+B;EAAAA,yD;EAAAA,iB;;;;CAAA,4C;EACLC,2O;;;;QASK,oD,kCAAkCC,Q;EAAlCF,mB;EAAAA,+B;EAAAA,4G;EAAAA,iB;;;;CAAA,uF,kCAAkCE,Q;EACvCD,2M;;;CAIU,0I,gBAAeE,O,kBAAkBC,K,yBAAuBC,E;EAClEC;GACEA,4DADFA;G;;;QAtBS,O;EAAAC,2B;EAAAA,wB;EAAAA;",
 "sources":["TextCell.java"],
 "names":["org.gwtproject.cell.client.TextCell.<synthetic: ctor_js>","org.gwtproject.cell.client.TextCell.<synthetic: ctor_create>","org.gwtproject.cell.client.TextCell.<init>","renderer","context","value","sb","org.gwtproject.cell.client.TextCell.render","org.gwtproject.cell.client.TextCell.<clinit>"]
 }

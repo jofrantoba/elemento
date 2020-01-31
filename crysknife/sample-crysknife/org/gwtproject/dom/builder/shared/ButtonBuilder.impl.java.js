@@ -8,62 +8,30 @@ const ElementBuilderBase = goog.require('org.gwtproject.dom.builder.shared.Eleme
  * @extends {ElementBuilderBase<ButtonBuilder>}
  */
 class ButtonBuilder {
- /**
-  * @abstract
-  * @param {?string} accessKey
-  * @return {ButtonBuilder}
-  * @public
-  */
- m_accessKey__java_lang_String(accessKey) {}
- /**
-  * @abstract
-  * @return {ButtonBuilder}
-  * @public
-  */
+ /** @abstract @return {ButtonBuilder} */
+ m_accessKey__java_lang_String(/** ?string */ accessKey) {}
+ /** @abstract @return {ButtonBuilder} */
  m_disabled__() {}
- /**
-  * @abstract
-  * @param {?string} name
-  * @return {ButtonBuilder}
-  * @public
-  */
- m_name__java_lang_String(name) {}
- /**
-  * @abstract
-  * @param {?string} value
-  * @return {ButtonBuilder}
-  * @public
-  */
- m_value__java_lang_String(value) {}
- /**
-  * @public
-  */
+ /** @abstract @return {ButtonBuilder} */
+ m_name__java_lang_String(/** ?string */ name) {}
+ /** @abstract @return {ButtonBuilder} */
+ m_value__java_lang_String(/** ?string */ value) {}
+ 
  static $clinit() {
   ButtonBuilder.$clinit = () =>{};
   ButtonBuilder.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ElementBuilderBase.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_dom_builder_shared_ButtonBuilder = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ElementBuilderBase.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_dom_builder_shared_ButtonBuilder = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_dom_builder_shared_ButtonBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

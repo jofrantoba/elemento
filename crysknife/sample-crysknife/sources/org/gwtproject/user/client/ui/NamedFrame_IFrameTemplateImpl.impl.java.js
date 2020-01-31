@@ -13,60 +13,40 @@ let SafeHtmlUtils = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHtml
  * @implements {IFrameTemplate}
   */
 class NamedFrame__IFrameTemplateImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!NamedFrame__IFrameTemplateImpl}
-  * @public
-  */
+ /** @return {!NamedFrame__IFrameTemplateImpl} */
  static $create__() {
   NamedFrame__IFrameTemplateImpl.$clinit();
   let $instance = new NamedFrame__IFrameTemplateImpl();
   $instance.$ctor__org_gwtproject_user_client_ui_NamedFrame_IFrameTemplateImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_NamedFrame_IFrameTemplateImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {?string} arg0
-  * @return {SafeHtml}
-  * @public
-  */
- m_get__java_lang_String(arg0) {
+ /** @override @return {SafeHtml} */
+ m_get__java_lang_String(/** ?string */ arg0) {
   let sb = StringBuilder.$create__();
   sb.m_append__java_lang_String("<iframe src=\"about:blank\" name='");
   sb.m_append__java_lang_String(SafeHtmlUtils.m_htmlEscape__java_lang_String(arg0));
   sb.m_append__java_lang_String("'>");
   return OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml.$create__java_lang_String(sb.toString());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NamedFrame__IFrameTemplateImpl.$clinit = () =>{};
   NamedFrame__IFrameTemplateImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof NamedFrame__IFrameTemplateImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   StringBuilder = goog.module.get('java.lang.StringBuilder$impl');
   OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml = goog.module.get('org.gwtproject.safehtml.shared.OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml$impl');

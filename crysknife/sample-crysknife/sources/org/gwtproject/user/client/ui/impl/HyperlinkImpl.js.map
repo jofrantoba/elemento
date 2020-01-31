@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HyperlinkImpl.impl.java.js",
-"lineCount":54,
-"mappings":"A;;;;;;;;MA0Ba,a;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,wB;EAAAA,oC;EAAAA,sE;EAAAA,iB;;;;;CAAA,yD;EAAAC,iC;;;;;;;CAMI,iD,CAAoBC,K;EACjCC,IAAIC,YAAJD,+E;EACAA,IAAQE,GAARF,+E;EACAA,IAAQG,IAARH,gF;EACAA,IAAQI,IAARJ,gF;EACAA,IAAQK,KAARL,iF;EACAA,IAAQM,SAARN,gC;EACAA,IAAQO,MAARP,4F;EACAA,IAAQQ,KAARR,2F;EAEAA,uC;;;;;QAhBS,O;EAAAS,gC;EAAAA,6B;EAAAA;",
+"lineCount":41,
+"mappings":"A;;;;;;;;MA0Ba,a;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,wB;EAAAA,oC;EAAAA,sE;EAAAA,iB;;;CAAA,yD;EAAAC,iC;;;CAMI,iD,cAAoBC,K;EACjCC,IAAIC,YAAJD,+E;EACAA,IAAQE,GAARF,+E;EACAA,IAAQG,IAARH,gF;EACAA,IAAQI,IAARJ,gF;EACAA,IAAQK,KAARL,iF;EACAA,IAAQM,SAARN,gC;EACAA,IAAQO,MAARP,4F;EACAA,IAAQQ,KAARR,2F;EAEAA,uC;;;QAhBS,O;EAAAS,gC;EAAAA,6B;EAAAA;",
 "sources":["HyperlinkImpl.java"],
 "names":["org.gwtproject.user.client.ui.impl.HyperlinkImpl.<synthetic: ctor_js>","org.gwtproject.user.client.ui.impl.HyperlinkImpl.<synthetic: ctor_create>","org.gwtproject.user.client.ui.impl.HyperlinkImpl.<init>","event","org.gwtproject.user.client.ui.impl.HyperlinkImpl.handleAsClick","mouseButtons","alt","ctrl","meta","shift","modifiers","middle","right","org.gwtproject.user.client.ui.impl.HyperlinkImpl.<clinit>"]
 }

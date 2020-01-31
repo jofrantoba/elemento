@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DateTimeFormatInfoImpl_sq_MK.impl.java.js",
-"lineCount":67,
-"mappings":"A;;;;;MAqBa,8B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,yC;EAAAA,qD;EAAAA,uF;EAAAA,iB;;;;;CAAA,0E;EAAAC,+E;;;;;;;CAGG,kB;EACZC,uB;;;;;;;CAIY,kB;EACZC,oB;;;;;;;CAIY,oB;EACZC,kB;;;;;;;CAIY,mB;EACZC,e;;;;;QAnBS,O;EAAAC,iD;EAAAA,8C;EAAAA;",
+"lineCount":42,
+"mappings":"A;;;;;MAqBa,8B;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,yC;EAAAA,qD;EAAAA,uF;EAAAA,iB;;;CAAA,0E;EAAAC,+E;;;CAGG,kB;EACZC,uB;;;CAIY,kB;EACZC,oB;;;CAIY,oB;EACZC,kB;;;CAIY,mB;EACZC,e;;;QAnBS,O;EAAAC,iD;EAAAA,8C;EAAAA;",
 "sources":["DateTimeFormatInfoImpl_sq_MK.java"],
 "names":["org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_sq_MK.<synthetic: ctor_js>","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_sq_MK.<synthetic: ctor_create>","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_sq_MK.<init>","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_sq_MK.timeFormatFull","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_sq_MK.timeFormatLong","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_sq_MK.timeFormatMedium","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_sq_MK.timeFormatShort","org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_sq_MK.<clinit>"]
 }

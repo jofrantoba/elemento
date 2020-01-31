@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"EditorDriver.impl.java.js",
-"lineCount":58,
-"mappings":"A;;;;;;;;;;;;;;MA0BiB,Y;;;;;;CAEV,oD,CAAqBA,O;;;;;;CAOxB,S;;;;;;CAOgB,a;;;;;;CAOV,a;;;;;;CA2BA,W;;;;;;;CAYA,6C,CAAyDC,U;;;;QA9DlD,O;EAAAC,+B;EAAAA;",
+"lineCount":31,
+"mappings":"A;;;;;;;;;;;;;;MA0BiB,Y;;CAEV,oD,sBAAqBA,O;;CAOxB,S;;CAOgB,a;;CAOV,a;;CA2BA,W;;CAYA,6C,yCAAyDC,U;;QA9DlD,O;EAAAC,+B;EAAAA;",
 "sources":["EditorDriver.java"],
 "names":["visitor","violations","org.gwtproject.editor.client.EditorDriver.<clinit>"]
 }

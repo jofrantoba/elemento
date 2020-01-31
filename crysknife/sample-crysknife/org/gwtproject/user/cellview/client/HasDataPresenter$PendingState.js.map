@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasDataPresenter$PendingState.impl.java.js",
-"lineCount":84,
-"mappings":"A;;;;;;;;;;;;;;MAiPuB,Y;;;;CAAA,W;EAAAA,Q;EAAAA;OAKH,gGALGA,S;EAAAA;OAWH,wFAXGA,S;EAAAA;OAgBH,oFAhBGA,S;EAAAA;OAqBO,oFArBPA,C;;;;;;;;QAuBZ,mE,CAAsBC,K;EAAtBC,uB;EAAAA,mC;EAAAA,sJ;EAAAA,iB;;;;;;CAAA,oI,CAAsBD,K;EAC3BE,4G;EADKA,oF;EAELA,mI;EACAA,6I;EACAA,6G;EACAA,+G;EACAA,6G;EACAA,wH;EACAA,uH;EACAA,kH;EAGAA,IAAIC,WAAJD,8B;EACAA,SAASE,CAATF;GACEA,uHADFA;G;;;;;;;CAgBU,wB,CAAiBG,K,EAAWC,G;EACtCC,2I;;;;;CArDiB,4E;EAOnBL,sG;EAMAA,kG;EAKAA,oJ;;;;;QAlBmB,O;EAAAM,+B;EAAAA,4B;EAAAA;",
+"lineCount":66,
+"mappings":"A;;;;;;;;;;;;;;MAiPuB,Y;;CAAA,W;EAAAA,Q;EAAAA;OAKH,gGALGA,S;EAAAA;OAWH,wFAXGA,S;EAAAA;OAgBH,oFAhBGA,S;EAAAA;OAqBO,oFArBPA,C;;;QAuBZ,mE,iBAAsBC,K;EAAtBC,uB;EAAAA,mC;EAAAA,sJ;EAAAA,iB;;;CAAA,oI,iBAAsBD,K;EAC3BE,4G;EADKA,oF;EAELA,mI;EACAA,6I;EACAA,6G;EACAA,+G;EACAA,6G;EACAA,wH;EACAA,uH;EACAA,kH;EAGAA,IAAIC,WAAJD,8B;EACAA,SAASE,CAATF;GACEA,uHADFA;G;;;CAgBU,wB,eAAiBG,K,gBAAWC,G;EACtCC,2I;;;CArDiB,4E;EAOnBL,sG;EAMAA,kG;EAKAA,mJ;;;QAlBmB,O;EAAAM,+B;EAAAA,4B;EAAAA;",
 "sources":["HasDataPresenter.java"],
 "names":["org.gwtproject.user.cellview.client.HasDataPresenter$PendingState.<synthetic: ctor_js>","state","org.gwtproject.user.cellview.client.HasDataPresenter$PendingState.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.HasDataPresenter$PendingState.<init>","rowDataSize","i","start","end","org.gwtproject.user.cellview.client.HasDataPresenter$PendingState.replaceRange","org.gwtproject.user.cellview.client.HasDataPresenter$PendingState.<clinit>"]
 }

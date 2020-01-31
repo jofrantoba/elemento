@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"TouchStartEvent.impl.java.js",
-"lineCount":100,
-"mappings":"A;;;;;;;;;;;;;MAoCa,e;;;;CAAA,W;EAAAA,Q;;;;;;QAWD,S;EAAAC,0B;EAAAA,sC;EAAAA,qE;EAAAA,iB;;;;;CAAA,wD;EAAAC,2D;;;;;;QAO4B,W;EAAAC,0B;EACpCA,gF;;;;;;;CAImC,qB;EACnCC,gF;;;;;;CAIa,6D,CAA2BC,O;EACxCC,8E;;;;;;;;CA7BS,4B;EAAAA,0I;;;;;QAAA,O;EAAAC,kC;EAAAA,+B;EAAAA,qB;EAEXA,+R;;;;;;;;;;;;;;;;;;;;;;;AAFW;gBAGkC,wDAHlC;",
+"lineCount":71,
+"mappings":"A;;;;;;;;;;;;;MAoCa,e;;CAAA,W;EAAAA,Q;;;QAWD,S;EAAAC,0B;EAAAA,sC;EAAAA,qE;EAAAA,iB;;;CAAA,wD;EAAAC,2D;;;QAO4B,W;EAAAC,0B;EACpCA,gF;;;CAImC,qB;EACnCC,gF;;;CAIa,6D,0BAA2BC,O;EACxCC,8E;;;;CA7BS,4B;EAAAA,yI;;;QAAA,O;EAAAC,kC;EAAAA,+B;EAAAA,qB;EAEXA,8R;;;;;;;;;;;;;;;;;AAFW;gBAGkC,wDAHlC;",
 "sources":["TouchStartEvent.java"],
 "names":["org.gwtproject.event.dom.client.TouchStartEvent.<synthetic: ctor_js>","org.gwtproject.event.dom.client.TouchStartEvent.<synthetic: ctor_create>","org.gwtproject.event.dom.client.TouchStartEvent.<init>","org.gwtproject.event.dom.client.TouchStartEvent.getType","org.gwtproject.event.dom.client.TouchStartEvent.getAssociatedType","handler","org.gwtproject.event.dom.client.TouchStartEvent.dispatch","org.gwtproject.event.dom.client.TouchStartEvent.<clinit>"]
 }

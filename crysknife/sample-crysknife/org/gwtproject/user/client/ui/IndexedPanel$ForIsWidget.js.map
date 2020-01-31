@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"IndexedPanel$ForIsWidget.impl.java.js",
-"lineCount":25,
-"mappings":"A;;;;;;;;;;;MA2BY,W;;;;;;;CACJ,wD,CAAwBA,K;;;;QADpB,O;EAAAC,8B;EAAAA;",
+"lineCount":18,
+"mappings":"A;;;;;;;;;;;MA2BY,W;;CACJ,wD,iBAAwBA,K;;QADpB,O;EAAAC,8B;EAAAA;",
 "sources":["IndexedPanel.java"],
 "names":["child","org.gwtproject.user.client.ui.IndexedPanel$ForIsWidget.<clinit>"]
 }

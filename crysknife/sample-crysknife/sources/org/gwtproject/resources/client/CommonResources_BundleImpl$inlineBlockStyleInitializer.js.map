@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CommonResources_BundleImpl$inlineBlockStyleInitializer.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;MA2BuB,2B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,kD;EAAAA,4G;EAAAA,iB;;;;;CAAA,+F;EAAAC,iC;;;;;;QAIqB,O;EAAAC,sC;EACtCA,mH;;;;;QALiB,O;EAAAC,8C;EAAAA,2C;EAAAA,qB;EAEjBA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;MA2BuB,2B;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,kD;EAAAA,4G;EAAAA,iB;;;CAAA,+F;EAAAC,iC;;;QAIqB,O;EAAAC,sC;EACtCA,mH;;;QALiB,O;EAAAC,8C;EAAAA,2C;EAAAA,qB;EAEjBA;",
 "sources":["CommonResources_BundleImpl.java"],
 "names":["org.gwtproject.resources.client.CommonResources_BundleImpl$inlineBlockStyleInitializer.<synthetic: ctor_js>","org.gwtproject.resources.client.CommonResources_BundleImpl$inlineBlockStyleInitializer.<synthetic: ctor_create>","org.gwtproject.resources.client.CommonResources_BundleImpl$inlineBlockStyleInitializer.<init>","org.gwtproject.resources.client.CommonResources_BundleImpl$inlineBlockStyleInitializer.get","org.gwtproject.resources.client.CommonResources_BundleImpl$inlineBlockStyleInitializer.<clinit>"]
 }

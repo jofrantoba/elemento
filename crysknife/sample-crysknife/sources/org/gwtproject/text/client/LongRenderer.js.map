@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"LongRenderer.impl.java.js",
-"lineCount":97,
-"mappings":"A;;;;;;;;;;;;;;MAMa,Y;;;;CAAA,W;EAAAA,Q;;;;;;QAGoB,Y;EAAAC,uB;EACzBA;GACIA,6FADJA;G;EAIAA,yE;;;;;;QAGM,S;EAAAC,uB;EAAAA,mC;EAAAA,6D;EAAAA,iB;;;;;CAAA,gD;EAAAC,4D;;;;;;;CAGI,wB,CAAYC,M;EACtBC,mH;;;;;;;;;CAfK,0B;EAAAA,kF;;;;;QAAA,O;EAAAC,+B;EAAAA,4B;EAAAA,2B;;;;;;;;;;;;;;;;;;;;;;;AAAA;aACmB,oDADnB;",
+"lineCount":70,
+"mappings":"A;;;;;;;;;;;;;;MAMa,Y;;CAAA,W;EAAAA,Q;;;QAGoB,Y;EAAAC,uB;EACzBA;GACIA,6FADJA;G;EAIAA,yE;;;QAGM,S;EAAAC,uB;EAAAA,mC;EAAAA,6D;EAAAA,iB;;;CAAA,gD;EAAAC,4D;;;CAGI,wB,aAAYC,M;EACtBC,mH;;;;CAfK,0B;EAAAA,iF;;;QAAA,O;EAAAC,+B;EAAAA,4B;EAAAA,2B;;;;;;;;;;;;;;;;;AAAA;aACmB,oDADnB;",
 "sources":["LongRenderer.java"],
 "names":["org.gwtproject.text.client.LongRenderer.<synthetic: ctor_js>","org.gwtproject.text.client.LongRenderer.instance","org.gwtproject.text.client.LongRenderer.<synthetic: ctor_create>","org.gwtproject.text.client.LongRenderer.<init>","object","org.gwtproject.text.client.LongRenderer.render","org.gwtproject.text.client.LongRenderer.<clinit>"]
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DisclosurePanel$ContentAnimation.impl.java.js",
-"lineCount":99,
-"mappings":"A;;;;;;;;;;MAmIuB,gB;;;;CAAA,W;EAAAA,Q;EAAAA;OAIH,0EAJGA,S;EAAAA;OASK,2EATLA,C;;;;;;QAAA,S;EAAAC,2B;EAAAA,uC;EAAAA,oF;EAAAA,iB;;;;;CAAA,uE;EAAAC,0D;;;;;;;CAiBP,iE,CAAwBC,K,EAAeC,O;EAEjDC,kB;EAGAA;GACEA,yFADFA;GAEEA,iJAFFA;GAGEA,sGAHFA;;GAKEA,6JALFA;GAMEA;IAEEA,mDAFFA;IANFA;G;;;;;;CAca,c;EACbC;GACEA,+KADFA;G;EAGAA,iS;EACAA,wF;;;;;;CAIa,W;EACbC,oB;EACAA;GACEA,8KADFA;GAGEA,8HAHFA;G;;;;;;;CAQa,kB,CAAgBC,Q;EAC7BC,IAAIC,YAAJD,uR;EACAA,IAAIE,MAAJF,6D;EACAA;GACEA,+BADFA;G;EAGAA,6B;EACAA,wS;EACAA,gS;;;;;QA/DiB,O;EAAAG,mC;EAAAA,gC;EAAAA;",
+"lineCount":76,
+"mappings":"A;;;;;;;;;;MAmIuB,gB;;CAAA,W;EAAAA,Q;EAAAA;OAIH,0EAJGA,S;EAAAA;OASK,2EATLA,C;;;QAAA,S;EAAAC,2B;EAAAA,uC;EAAAA,oF;EAAAA,iB;;;CAAA,uE;EAAAC,0D;;;CAiBP,iE,wBAAwBC,K,iBAAeC,O;EAEjDC,kB;EAGAA;GACEA,yFADFA;GAEEA,iJAFFA;GAGEA,sGAHFA;;GAKEA,6JALFA;GAMEA;IAEEA,mDAFFA;IANFA;G;;;CAca,c;EACbC;GACEA,+KADFA;G;EAGAA,iS;EACAA,wF;;;CAIa,W;EACbC,oB;EACAA;GACEA,8KADFA;GAGEA,8HAHFA;G;;;CAQa,kB,eAAgBC,Q;EAC7BC,IAAIC,YAAJD,uR;EACAA,IAAIE,MAAJF,6D;EACAA;GACEA,+BADFA;G;EAGAA,6B;EACAA,wS;EACAA,gS;;;QA/DiB,O;EAAAG,mC;EAAAA,gC;EAAAA;",
 "sources":["DisclosurePanel.java"],
 "names":["org.gwtproject.user.client.ui.DisclosurePanel$ContentAnimation.<synthetic: ctor_js>","org.gwtproject.user.client.ui.DisclosurePanel$ContentAnimation.<synthetic: ctor_create>","org.gwtproject.user.client.ui.DisclosurePanel$ContentAnimation.<init>","panel","animate","org.gwtproject.user.client.ui.DisclosurePanel$ContentAnimation.setOpen","org.gwtproject.user.client.ui.DisclosurePanel$ContentAnimation.onComplete","org.gwtproject.user.client.ui.DisclosurePanel$ContentAnimation.onStart","progress","org.gwtproject.user.client.ui.DisclosurePanel$ContentAnimation.onUpdate","scrollHeight","height","org.gwtproject.user.client.ui.DisclosurePanel$ContentAnimation.<clinit>"]
 }

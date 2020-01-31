@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"BeanManagerInfo.impl.java.js",
-"lineCount":35,
-"mappings":"A;;;;;MAIa,e;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,0B;EAAAA,sC;EAAAA,yE;EAAAA,iB;;;;;CAAA,4D;EAAAC,iC;;;;;QAAA,O;EAAAC,kC;EAAAA,+B;EAAAA;",
+"lineCount":26,
+"mappings":"A;;;;;MAIa,e;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,0B;EAAAA,sC;EAAAA,yE;EAAAA,iB;;;CAAA,4D;EAAAC,iC;;;QAAA,O;EAAAC,kC;EAAAA,+B;EAAAA;",
 "sources":["BeanManagerInfo.java"],
 "names":["org.treblereel.gwt.crysknife.client.BeanManagerInfo.<synthetic: ctor_js>","org.treblereel.gwt.crysknife.client.BeanManagerInfo.<synthetic: ctor_create>","org.treblereel.gwt.crysknife.client.BeanManagerInfo.<init>","org.treblereel.gwt.crysknife.client.BeanManagerInfo.<clinit>"]
 }

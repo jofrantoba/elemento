@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"GridRole.impl.java.js",
-"lineCount":80,
-"mappings":"A;;;;;;;;;;;;;MA4BiB,Q;;;;;;;CAOR,yD,CAA6BA,O;;;;;;;CAQ7B,mE,CAAuCA,O;;;;;;;CAOvC,4D,CAAgCA,O;;;;;;CAMlC,4D,CAAgCA,O;;;;;;CAMhC,sE,CAA0CA,O;;;;;;CAM1C,+D,CAAmCA,O;;;;;;;CAMnC,8D,CAA6BA,O,EAAaC,K;;;;;;;CAM1C,4E,CAAuCD,O,EAAiBC,K;;;;;;;CAMxD,qE,CAAgCD,O,EAAiBC,K;;;;QA1DvC,O;EAAAC,2B;EAAAA;",
+"lineCount":36,
+"mappings":"A;;;;;;;;;;;;;MA4BiB,Q;;CAOR,yD,eAA6BA,O;;CAQ7B,mE,eAAuCA,O;;CAOvC,4D,eAAgCA,O;;CAMlC,4D,eAAgCA,O;;CAMhC,sE,eAA0CA,O;;CAM1C,+D,eAAmCA,O;;CAMnC,8D,eAA6BA,O,gBAAaC,K;;CAM1C,4E,eAAuCD,O,iBAAiBC,K;;CAMxD,qE,eAAgCD,O,iBAAiBC,K;;QA1DvC,O;EAAAC,2B;EAAAA;",
 "sources":["GridRole.java"],
 "names":["element","value","org.gwtproject.aria.client.GridRole.<clinit>"]
 }

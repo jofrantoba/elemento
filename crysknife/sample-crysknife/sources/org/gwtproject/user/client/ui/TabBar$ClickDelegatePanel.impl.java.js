@@ -32,36 +32,25 @@ let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
  * @implements {Tab}
   */
 class ClickDelegatePanel extends Composite {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {TabBar} */
+  /**@type {TabBar}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_TabBar_ClickDelegatePanel;
-  /** @public {SimplePanel} */
+  /**@type {SimplePanel}*/
   this.f_focusablePanel__org_gwtproject_user_client_ui_TabBar_ClickDelegatePanel_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_enabled__org_gwtproject_user_client_ui_TabBar_ClickDelegatePanel_ = false;
  }
- /**
-  * @param {TabBar} $outer_this
-  * @param {Widget} child
-  * @return {!ClickDelegatePanel}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_TabBar__org_gwtproject_user_client_ui_Widget($outer_this, child) {
+ /** @return {!ClickDelegatePanel} */
+ static $create__org_gwtproject_user_client_ui_TabBar__org_gwtproject_user_client_ui_Widget(/** TabBar */ $outer_this, /** Widget */ child) {
   ClickDelegatePanel.$clinit();
   let $instance = new ClickDelegatePanel();
   $instance.$ctor__org_gwtproject_user_client_ui_TabBar_ClickDelegatePanel__org_gwtproject_user_client_ui_TabBar__org_gwtproject_user_client_ui_Widget($outer_this, child);
   return $instance;
  }
- /**
-  * @param {TabBar} $outer_this
-  * @param {Widget} child
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_TabBar_ClickDelegatePanel__org_gwtproject_user_client_ui_TabBar__org_gwtproject_user_client_ui_Widget($outer_this, child) {
+ 
+ $ctor__org_gwtproject_user_client_ui_TabBar_ClickDelegatePanel__org_gwtproject_user_client_ui_TabBar__org_gwtproject_user_client_ui_Widget(/** TabBar */ $outer_this, /** Widget */ child) {
   this.f_$outer_this__org_gwtproject_user_client_ui_TabBar_ClickDelegatePanel = $outer_this;
   this.$ctor__org_gwtproject_user_client_ui_Composite__();
   this.$init___$p_org_gwtproject_user_client_ui_TabBar_ClickDelegatePanel();
@@ -76,81 +65,43 @@ class ClickDelegatePanel extends Composite {
   }
   this.m_sinkEvents__int(Event.f_ONCLICK__org_gwtproject_user_client_Event | Event.f_ONKEYDOWN__org_gwtproject_user_client_Event);
  }
- /**
-  * @override
-  * @param {ClickHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addClickHandler__org_gwtproject_event_dom_client_ClickHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addClickHandler__org_gwtproject_event_dom_client_ClickHandler(/** ClickHandler */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, ClickEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {KeyDownHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addKeyDownHandler__org_gwtproject_event_dom_client_KeyDownHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addKeyDownHandler__org_gwtproject_event_dom_client_KeyDownHandler(/** KeyDownHandler */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, KeyDownEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {KeyPressHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addKeyPressHandler__org_gwtproject_event_dom_client_KeyPressHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addKeyPressHandler__org_gwtproject_event_dom_client_KeyPressHandler(/** KeyPressHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, KeyPressEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {KeyUpHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addKeyUpHandler__org_gwtproject_event_dom_client_KeyUpHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addKeyUpHandler__org_gwtproject_event_dom_client_KeyUpHandler(/** KeyUpHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, KeyUpEvent.m_getType__());
  }
- /**
-  * @return {SimplePanel}
-  * @public
-  */
+ /** @return {SimplePanel} */
  m_getFocusablePanel__() {
   return this.f_focusablePanel__org_gwtproject_user_client_ui_TabBar_ClickDelegatePanel_;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_getWordWrap__() {
   if (this.m_hasWordWrap__()) {
-   return /**@type {HasWordWrap} */ ($Casts.$to(this.f_focusablePanel__org_gwtproject_user_client_ui_TabBar_ClickDelegatePanel_.m_getWidget__(), HasWordWrap)).m_getWordWrap__();
+   return /**@type {HasWordWrap}*/ ($Casts.$to(this.f_focusablePanel__org_gwtproject_user_client_ui_TabBar_ClickDelegatePanel_.m_getWidget__(), HasWordWrap)).m_getWordWrap__();
   }
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String("Widget does not implement HasWordWrap"));
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_hasWordWrap__() {
   return HasWordWrap.$isInstance(this.f_focusablePanel__org_gwtproject_user_client_ui_TabBar_ClickDelegatePanel_.m_getWidget__());
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isEnabled__() {
   return this.f_enabled__org_gwtproject_user_client_ui_TabBar_ClickDelegatePanel_;
  }
- /**
-  * @override
-  * @param {Event} event
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_user_client_Event(event) {
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_user_client_Event(/** Event */ event) {
   if (!this.f_enabled__org_gwtproject_user_client_ui_TabBar_ClickDelegatePanel_) {
    return;
   }
@@ -166,50 +117,33 @@ class ClickDelegatePanel extends Composite {
   }
   super.m_onBrowserEvent__org_gwtproject_user_client_Event(event);
  }
- /**
-  * @param {boolean} enabled
-  * @public
-  */
- m_setEnabled__boolean(enabled) {
+ 
+ m_setEnabled__boolean(/** boolean */ enabled) {
   this.f_enabled__org_gwtproject_user_client_ui_TabBar_ClickDelegatePanel_ = enabled;
  }
- /**
-  * @override
-  * @param {boolean} wrap
-  * @public
-  */
- m_setWordWrap__boolean(wrap) {
+ /** @override */
+ m_setWordWrap__boolean(/** boolean */ wrap) {
   if (this.m_hasWordWrap__()) {
-   /**@type {HasWordWrap} */ ($Casts.$to(this.f_focusablePanel__org_gwtproject_user_client_ui_TabBar_ClickDelegatePanel_.m_getWidget__(), HasWordWrap)).m_setWordWrap__boolean(wrap);
+   /**@type {HasWordWrap}*/ ($Casts.$to(this.f_focusablePanel__org_gwtproject_user_client_ui_TabBar_ClickDelegatePanel_.m_getWidget__(), HasWordWrap)).m_setWordWrap__boolean(wrap);
   } else {
    throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String("Widget does not implement HasWordWrap"));
   }
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_TabBar_ClickDelegatePanel() {
   this.f_enabled__org_gwtproject_user_client_ui_TabBar_ClickDelegatePanel_ = true;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ClickDelegatePanel.$clinit = () =>{};
   ClickDelegatePanel.$loadModules();
   Composite.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ClickDelegatePanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   UnsupportedOperationException = goog.module.get('java.lang.UnsupportedOperationException$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Layout$Alignment.impl.java.js",
-"lineCount":139,
-"mappings":"A;;;;;;;;;;;;;MA6bc,S;;;;CAAA,W;EAAAA,Q;;;;;;;;QAAA,8B;EAAAC,gC;EAAAA,uG;EAAAA,iB;;;;;;;CAAA,2E;EAAAC,qC;EAAAA,2C;EAAAA,mE;;;;;;;QAAA,2B;EAAAC,oB;EAAAA;GAAAA,kIAAAA;G;EAAAA,yH;;;;;;QAAA,U;EAAAC,oB;EAAAA,6Q;;;;;;;;;CAAA,6B;EAAAC,8E;;;;;;QAEV,0D;EAAAC,gG;;;;;;QAGA,wD;EAAAA,8F;;;;;;QAGA,4D;EAAAA,kG;;;;;QARU,O;EAAAC,4B;EAAAA,yB;EAAAA,e;EAEVA,sN;EAGAA,gN;EAGAA,4N;EARUA,oF;;;;;;;;;;;;;;;;;;;;;;;AAAA;kE;AAAA;gE;AAAA;oE;AAAA;6E;AAEV;8E;AAGA;4E;AAGA;;",
+"lineCount":99,
+"mappings":"A;;;;;;;;;;;;;MA6bc,S;;CAAA,W;EAAAA,Q;;;QAAA,8B;EAAAC,gC;EAAAA,uG;EAAAA,iB;;;CAAA,2E;EAAAC,qC;EAAAA,2C;EAAAA,mE;;;QAAA,2B;EAAAC,oB;EAAAA;GAAAA,kIAAAA;G;EAAAA,yH;;;QAAA,U;EAAAC,oB;EAAAA,4Q;;;;CAAA,6B;EAAAC,6E;;;QAEV,0D;EAAAC,gG;;;QAGA,wD;EAAAA,8F;;;QAGA,4D;EAAAA,kG;;;QARU,O;EAAAC,4B;EAAAA,yB;EAAAA,e;EAEVA,sN;EAGAA,gN;EAGAA,4N;EARUA,oF;;;;;;;;;;;;;;;;;AAAA;kE;AAAA;gE;AAAA;oE;AAAA;6E;AAEV;8E;AAGA;4E;AAGA;;",
 "sources":["Layout.java"],
 "names":["org.gwtproject.layout.client.Layout$Alignment.<synthetic: ctor_js>","org.gwtproject.layout.client.Layout$Alignment.<synthetic: ctor_create>","org.gwtproject.layout.client.Layout$Alignment.<init>","org.gwtproject.layout.client.Layout$Alignment.valueOf","org.gwtproject.layout.client.Layout$Alignment.values","org.gwtproject.layout.client.Layout$Alignment.compareTo","org.gwtproject.layout.client.Layout$Alignment.<synthetic: getter>","org.gwtproject.layout.client.Layout$Alignment.<clinit>"]
 }

@@ -11,63 +11,39 @@ let EditorDriver = goog.forwardDeclare('org.gwtproject.editor.client.EditorDrive
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
 class EditorHierarchyPrinter extends EditorVisitor {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {number} */
+  /**@type {number}*/
   this.f_level__org_gwtproject_editor_client_testing_EditorHierarchyPrinter_ = 0;
-  /** @public {StringBuilder} */
+  /**@type {StringBuilder}*/
   this.f_sb__org_gwtproject_editor_client_testing_EditorHierarchyPrinter_;
  }
- /**
-  * @param {EditorDriver<?>} driver
-  * @return {?string}
-  * @public
-  */
- static m_toString__org_gwtproject_editor_client_EditorDriver(driver) {
+ /** @return {?string} */
+ static m_toString__org_gwtproject_editor_client_EditorDriver(/** EditorDriver<?> */ driver) {
   EditorHierarchyPrinter.$clinit();
   let sb = StringBuilder.$create__();
   driver.m_accept__org_gwtproject_editor_client_EditorVisitor(EditorHierarchyPrinter.$create__java_lang_StringBuilder(sb));
   return sb.toString();
  }
- /**
-  * @param {StringBuilder} out
-  * @return {!EditorHierarchyPrinter}
-  * @public
-  */
- static $create__java_lang_StringBuilder(out) {
+ /** @return {!EditorHierarchyPrinter} */
+ static $create__java_lang_StringBuilder(/** StringBuilder */ out) {
   let $instance = new EditorHierarchyPrinter();
   $instance.$ctor__org_gwtproject_editor_client_testing_EditorHierarchyPrinter__java_lang_StringBuilder(out);
   return $instance;
  }
- /**
-  * @param {StringBuilder} out
-  * @public
-  */
- $ctor__org_gwtproject_editor_client_testing_EditorHierarchyPrinter__java_lang_StringBuilder(out) {
+ 
+ $ctor__org_gwtproject_editor_client_testing_EditorHierarchyPrinter__java_lang_StringBuilder(/** StringBuilder */ out) {
   this.$ctor__org_gwtproject_editor_client_EditorVisitor__();
   this.$init___$p_org_gwtproject_editor_client_testing_EditorHierarchyPrinter();
   this.f_sb__org_gwtproject_editor_client_testing_EditorHierarchyPrinter_ = out;
  }
- /**
-  * @override
-  * @template T
-  * @param {EditorContext<T>} ctx
-  * @public
-  */
- m_endVisit__org_gwtproject_editor_client_EditorContext(ctx) {
+ /** @override @template T */
+ m_endVisit__org_gwtproject_editor_client_EditorContext(/** EditorContext<T> */ ctx) {
   this.f_level__org_gwtproject_editor_client_testing_EditorHierarchyPrinter_--;
  }
- /**
-  * @override
-  * @template T
-  * @param {EditorContext<T>} ctx
-  * @return {boolean}
-  * @public
-  */
- m_visit__org_gwtproject_editor_client_EditorContext(ctx) {
+ /** @override @template T @return {boolean} */
+ m_visit__org_gwtproject_editor_client_EditorContext(/** EditorContext<T> */ ctx) {
   this.m_println__java_lang_String_$p_org_gwtproject_editor_client_testing_EditorHierarchyPrinter(ctx.m_getAbsolutePath__());
   this.m_data__java_lang_String_$p_org_gwtproject_editor_client_testing_EditorHierarchyPrinter(ctx.m_getEditedType__().m_getName__());
   this.m_data__java_lang_String_$p_org_gwtproject_editor_client_testing_EditorHierarchyPrinter($Objects.m_getClass__java_lang_Object(ctx.m_getEditor__()).m_getName__());
@@ -75,49 +51,33 @@ class EditorHierarchyPrinter extends EditorVisitor {
   this.f_level__org_gwtproject_editor_client_testing_EditorHierarchyPrinter_++;
   return true;
  }
- /**
-  * @param {?string} msg
-  * @public
-  */
- m_data__java_lang_String_$p_org_gwtproject_editor_client_testing_EditorHierarchyPrinter(msg) {
+ 
+ m_data__java_lang_String_$p_org_gwtproject_editor_client_testing_EditorHierarchyPrinter(/** ?string */ msg) {
   this.m_println__java_lang_String_$p_org_gwtproject_editor_client_testing_EditorHierarchyPrinter(j_l_String.m_valueOf__java_lang_Object(EditorHierarchyPrinter.f_SPACE__org_gwtproject_editor_client_testing_EditorHierarchyPrinter_) + j_l_String.m_valueOf__java_lang_Object(msg));
  }
- /**
-  * @param {?string} msg
-  * @public
-  */
- m_println__java_lang_String_$p_org_gwtproject_editor_client_testing_EditorHierarchyPrinter(msg) {
+ 
+ m_println__java_lang_String_$p_org_gwtproject_editor_client_testing_EditorHierarchyPrinter(/** ?string */ msg) {
   for (let i = 0; i < this.f_level__org_gwtproject_editor_client_testing_EditorHierarchyPrinter_; i++) {
    this.f_sb__org_gwtproject_editor_client_testing_EditorHierarchyPrinter_.m_append__java_lang_String(EditorHierarchyPrinter.f_INDENT__org_gwtproject_editor_client_testing_EditorHierarchyPrinter_);
   }
   this.f_sb__org_gwtproject_editor_client_testing_EditorHierarchyPrinter_.m_append__java_lang_String(msg);
   this.f_sb__org_gwtproject_editor_client_testing_EditorHierarchyPrinter_.m_append__java_lang_String("\n");
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_editor_client_testing_EditorHierarchyPrinter() {
   this.f_level__org_gwtproject_editor_client_testing_EditorHierarchyPrinter_ = 0;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   EditorHierarchyPrinter.$clinit = () =>{};
   EditorHierarchyPrinter.$loadModules();
   EditorVisitor.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof EditorHierarchyPrinter;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   StringBuilder = goog.module.get('java.lang.StringBuilder$impl');
@@ -128,9 +88,9 @@ class EditorHierarchyPrinter extends EditorVisitor {
 }
 $Util.$setClassMetadata(EditorHierarchyPrinter, 'org.gwtproject.editor.client.testing.EditorHierarchyPrinter');
 
-/** @public {?string} @const */
+/**@const {?string}*/
 EditorHierarchyPrinter.f_INDENT__org_gwtproject_editor_client_testing_EditorHierarchyPrinter_ = "  ";
-/** @public {?string} @const */
+/**@const {?string}*/
 EditorHierarchyPrinter.f_SPACE__org_gwtproject_editor_client_testing_EditorHierarchyPrinter_ = " ";
 
 exports = EditorHierarchyPrinter; 

@@ -12,16 +12,11 @@ let $CharSequences = goog.forwardDeclare('vmbootstrap.CharSequences$impl');
  * @implements {Parser<?string>}
   */
 class PassthroughParser extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {Parser<?string>}
-  * @public
-  */
+ /** @return {Parser<?string>} */
  static m_instance__() {
   PassthroughParser.$clinit();
   if ($Equality.$same(PassthroughParser.f_INSTANCE__org_gwtproject_text_shared_testing_PassthroughParser_, null)) {
@@ -29,50 +24,32 @@ class PassthroughParser extends j_l_Object {
   }
   return PassthroughParser.f_INSTANCE__org_gwtproject_text_shared_testing_PassthroughParser_;
  }
- /**
-  * @return {!PassthroughParser}
-  * @public
-  */
+ /** @return {!PassthroughParser} */
  static $create__() {
   PassthroughParser.$clinit();
   let $instance = new PassthroughParser();
   $instance.$ctor__org_gwtproject_text_shared_testing_PassthroughParser__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_text_shared_testing_PassthroughParser__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {(CharSequence|string)} object
-  * @return {?string}
-  * @public
-  */
- m_parse__java_lang_CharSequence(object) {
+ /** @override @return {?string} */
+ m_parse__java_lang_CharSequence(/** (CharSequence|string) */ object) {
   return $CharSequences.m_toString__java_lang_CharSequence(object);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   PassthroughParser.$clinit = () =>{};
   PassthroughParser.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof PassthroughParser;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $CharSequences = goog.module.get('vmbootstrap.CharSequences$impl');
@@ -83,7 +60,7 @@ $Util.$setClassMetadata(PassthroughParser, 'org.gwtproject.text.shared.testing.P
 
 Parser.$markImplementor(PassthroughParser);
 
-/** @public {PassthroughParser} */
+/**@type {PassthroughParser}*/
 PassthroughParser.f_INSTANCE__org_gwtproject_text_shared_testing_PassthroughParser_;
 
 exports = PassthroughParser; 

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"History$$LambdaAdaptor$1.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;MAwG0C,gB;;;;;CAAA,W;EAAAA,2B;EAAAA,Q;EAAAA;2E;EAAAA,sH;;;;;;CAAA,4G;EAAAC,iC;EAAAA,8E;;;;;;CAAA,W;;GAAAC,yF;GAAAA,gB;;;;;;QAAA,O;EAAAC,mC;EAAAA,gC;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MAwG0C,gB;;CAAA,W;EAAAA,2B;EAAAA,Q;EAAAA;2E;EAAAA,sH;;;CAAA,4G;EAAAC,iC;EAAAA,8E;;;CAAA,W;;GAAAC,yF;GAAAA,gB;;;;QAAA,O;EAAAC,mC;EAAAA,gC;EAAAA;",
 "sources":["History.java"],
 "names":["org.gwtproject.user.history.client.History$$LambdaAdaptor$1.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.history.client.History$$LambdaAdaptor$1.<init>","org.gwtproject.user.history.client.History$$LambdaAdaptor$1.handleEvent","org.gwtproject.user.history.client.History$$LambdaAdaptor$1.<clinit>"]
 }

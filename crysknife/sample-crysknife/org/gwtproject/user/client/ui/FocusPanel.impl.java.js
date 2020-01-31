@@ -85,375 +85,191 @@ let FocusImpl = goog.forwardDeclare('org.gwtproject.user.client.ui.impl.FocusImp
  * @implements {HasAllTouchHandlers}
   */
 class FocusPanel extends SimplePanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * Factory method corresponding to constructor 'FocusPanel()'.
-  * @return {!FocusPanel}
-  * @public
-  */
+ //Factory method corresponding to constructor 'FocusPanel()'.
+ /** @return {!FocusPanel} */
  static $create__() {
   FocusPanel.$clinit();
   let $instance = new FocusPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_FocusPanel__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'FocusPanel()'.
-  * @public
-  */
+ //Initialization from constructor 'FocusPanel()'.
+ 
  $ctor__org_gwtproject_user_client_ui_FocusPanel__() {
   this.$ctor__org_gwtproject_user_client_ui_SimplePanel__org_gwtproject_dom_client_Element(FocusPanel.$f_impl__org_gwtproject_user_client_ui_FocusPanel.m_createFocusable__());
  }
- /**
-  * Factory method corresponding to constructor 'FocusPanel(Widget)'.
-  * @param {Widget} child
-  * @return {!FocusPanel}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_Widget(child) {
+ //Factory method corresponding to constructor 'FocusPanel(Widget)'.
+ /** @return {!FocusPanel} */
+ static $create__org_gwtproject_user_client_ui_Widget(/** Widget */ child) {
   FocusPanel.$clinit();
   let $instance = new FocusPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_FocusPanel__org_gwtproject_user_client_ui_Widget(child);
   return $instance;
  }
- /**
-  * Initialization from constructor 'FocusPanel(Widget)'.
-  * @param {Widget} child
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_FocusPanel__org_gwtproject_user_client_ui_Widget(child) {
+ //Initialization from constructor 'FocusPanel(Widget)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_FocusPanel__org_gwtproject_user_client_ui_Widget(/** Widget */ child) {
   this.$ctor__org_gwtproject_user_client_ui_FocusPanel__();
   this.m_setWidget__org_gwtproject_user_client_ui_Widget(child);
  }
- /**
-  * @override
-  * @param {BlurHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addBlurHandler__org_gwtproject_event_dom_client_BlurHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addBlurHandler__org_gwtproject_event_dom_client_BlurHandler(/** BlurHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, BlurEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {ClickHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addClickHandler__org_gwtproject_event_dom_client_ClickHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addClickHandler__org_gwtproject_event_dom_client_ClickHandler(/** ClickHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, ClickEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DoubleClickHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDoubleClickHandler__org_gwtproject_event_dom_client_DoubleClickHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDoubleClickHandler__org_gwtproject_event_dom_client_DoubleClickHandler(/** DoubleClickHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DoubleClickEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DragEndHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDragEndHandler__org_gwtproject_event_dom_client_DragEndHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDragEndHandler__org_gwtproject_event_dom_client_DragEndHandler(/** DragEndHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DragEndEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DragEnterHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDragEnterHandler__org_gwtproject_event_dom_client_DragEnterHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDragEnterHandler__org_gwtproject_event_dom_client_DragEnterHandler(/** DragEnterHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DragEnterEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DragHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDragHandler__org_gwtproject_event_dom_client_DragHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDragHandler__org_gwtproject_event_dom_client_DragHandler(/** DragHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DragEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DragLeaveHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDragLeaveHandler__org_gwtproject_event_dom_client_DragLeaveHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDragLeaveHandler__org_gwtproject_event_dom_client_DragLeaveHandler(/** DragLeaveHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DragLeaveEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DragOverHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDragOverHandler__org_gwtproject_event_dom_client_DragOverHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDragOverHandler__org_gwtproject_event_dom_client_DragOverHandler(/** DragOverHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DragOverEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DragStartHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDragStartHandler__org_gwtproject_event_dom_client_DragStartHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDragStartHandler__org_gwtproject_event_dom_client_DragStartHandler(/** DragStartHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DragStartEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {DropHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addDropHandler__org_gwtproject_event_dom_client_DropHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addDropHandler__org_gwtproject_event_dom_client_DropHandler(/** DropHandler */ handler) {
   return this.m_addBitlessDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, DropEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {FocusHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addFocusHandler__org_gwtproject_event_dom_client_FocusHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addFocusHandler__org_gwtproject_event_dom_client_FocusHandler(/** FocusHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, FocusEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {GestureChangeHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addGestureChangeHandler__org_gwtproject_event_dom_client_GestureChangeHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addGestureChangeHandler__org_gwtproject_event_dom_client_GestureChangeHandler(/** GestureChangeHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, GestureChangeEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {GestureEndHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addGestureEndHandler__org_gwtproject_event_dom_client_GestureEndHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addGestureEndHandler__org_gwtproject_event_dom_client_GestureEndHandler(/** GestureEndHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, GestureEndEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {GestureStartHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addGestureStartHandler__org_gwtproject_event_dom_client_GestureStartHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addGestureStartHandler__org_gwtproject_event_dom_client_GestureStartHandler(/** GestureStartHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, GestureStartEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {KeyDownHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addKeyDownHandler__org_gwtproject_event_dom_client_KeyDownHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addKeyDownHandler__org_gwtproject_event_dom_client_KeyDownHandler(/** KeyDownHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, KeyDownEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {KeyPressHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addKeyPressHandler__org_gwtproject_event_dom_client_KeyPressHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addKeyPressHandler__org_gwtproject_event_dom_client_KeyPressHandler(/** KeyPressHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, KeyPressEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {KeyUpHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addKeyUpHandler__org_gwtproject_event_dom_client_KeyUpHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addKeyUpHandler__org_gwtproject_event_dom_client_KeyUpHandler(/** KeyUpHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, KeyUpEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseDownHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseDownHandler__org_gwtproject_event_dom_client_MouseDownHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseDownHandler__org_gwtproject_event_dom_client_MouseDownHandler(/** MouseDownHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseDownEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseMoveHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseMoveHandler__org_gwtproject_event_dom_client_MouseMoveHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseMoveHandler__org_gwtproject_event_dom_client_MouseMoveHandler(/** MouseMoveHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseMoveEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseOutHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseOutHandler__org_gwtproject_event_dom_client_MouseOutHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseOutHandler__org_gwtproject_event_dom_client_MouseOutHandler(/** MouseOutHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseOutEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseOverHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseOverHandler__org_gwtproject_event_dom_client_MouseOverHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseOverHandler__org_gwtproject_event_dom_client_MouseOverHandler(/** MouseOverHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseOverEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseUpHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseUpHandler__org_gwtproject_event_dom_client_MouseUpHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseUpHandler__org_gwtproject_event_dom_client_MouseUpHandler(/** MouseUpHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseUpEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseWheelHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseWheelHandler__org_gwtproject_event_dom_client_MouseWheelHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseWheelHandler__org_gwtproject_event_dom_client_MouseWheelHandler(/** MouseWheelHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseWheelEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {TouchCancelHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addTouchCancelHandler__org_gwtproject_event_dom_client_TouchCancelHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addTouchCancelHandler__org_gwtproject_event_dom_client_TouchCancelHandler(/** TouchCancelHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, TouchCancelEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {TouchEndHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addTouchEndHandler__org_gwtproject_event_dom_client_TouchEndHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addTouchEndHandler__org_gwtproject_event_dom_client_TouchEndHandler(/** TouchEndHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, TouchEndEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {TouchMoveHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addTouchMoveHandler__org_gwtproject_event_dom_client_TouchMoveHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addTouchMoveHandler__org_gwtproject_event_dom_client_TouchMoveHandler(/** TouchMoveHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, TouchMoveEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {TouchStartHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addTouchStartHandler__org_gwtproject_event_dom_client_TouchStartHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addTouchStartHandler__org_gwtproject_event_dom_client_TouchStartHandler(/** TouchStartHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, TouchStartEvent.m_getType__());
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getTabIndex__() {
   return FocusPanel.$f_impl__org_gwtproject_user_client_ui_FocusPanel.m_getTabIndex__org_gwtproject_dom_client_Element(this.m_getElement__());
  }
- /**
-  * @override
-  * @param {number} key
-  * @public
-  */
- m_setAccessKey__char(key) {
+ /** @override */
+ m_setAccessKey__char(/** number */ key) {
   FocusPanel.$f_impl__org_gwtproject_user_client_ui_FocusPanel.m_setAccessKey__org_gwtproject_dom_client_Element__char(this.m_getElement__(), key);
  }
- /**
-  * @override
-  * @param {boolean} focused
-  * @public
-  */
- m_setFocus__boolean(focused) {
+ /** @override */
+ m_setFocus__boolean(/** boolean */ focused) {
   if (focused) {
    FocusPanel.$f_impl__org_gwtproject_user_client_ui_FocusPanel.m_focus__org_gwtproject_dom_client_Element(this.m_getElement__());
   } else {
    FocusPanel.$f_impl__org_gwtproject_user_client_ui_FocusPanel.m_blur__org_gwtproject_dom_client_Element(this.m_getElement__());
   }
  }
- /**
-  * @override
-  * @param {number} index
-  * @public
-  */
- m_setTabIndex__int(index) {
+ /** @override */
+ m_setTabIndex__int(/** number */ index) {
   FocusPanel.$f_impl__org_gwtproject_user_client_ui_FocusPanel.m_setTabIndex__org_gwtproject_dom_client_Element__int(this.m_getElement__(), index);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @return {FocusImpl}
-  * @public
-  */
+ /** @return {FocusImpl} */
  static get f_impl__org_gwtproject_user_client_ui_FocusPanel() {
   return (FocusPanel.$clinit(), FocusPanel.$f_impl__org_gwtproject_user_client_ui_FocusPanel);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   FocusPanel.$clinit = () =>{};
   FocusPanel.$loadModules();
   SimplePanel.$clinit();
   FocusPanel.$f_impl__org_gwtproject_user_client_ui_FocusPanel = FocusImpl.m_getFocusImplForPanel__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof FocusPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   BlurEvent = goog.module.get('org.gwtproject.event.dom.client.BlurEvent$impl');
@@ -499,7 +315,7 @@ HasAllFocusHandlers.$markImplementor(FocusPanel);
 HasAllGestureHandlers.$markImplementor(FocusPanel);
 HasAllTouchHandlers.$markImplementor(FocusPanel);
 
-/** @private {FocusImpl} */
+/**@private {FocusImpl}*/
 FocusPanel.$f_impl__org_gwtproject_user_client_ui_FocusPanel;
 
 exports = FocusPanel; 

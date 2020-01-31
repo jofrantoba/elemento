@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DropHandler$$LambdaAdaptor.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;MAoBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;0E;EAAAA,oI;;;;;;CAAA,0H;EAAAC,iC;EAAAA,6E;;;;;;CAAA,mD;;GAAAC,wF;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MAoBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;0E;EAAAA,oI;;;CAAA,0H;EAAAC,iC;EAAAA,6E;;;CAAA,mD;;GAAAC,wF;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["DropHandler.java"],
 "names":["org.gwtproject.event.dom.client.DropHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.event.dom.client.DropHandler$$LambdaAdaptor.<init>","org.gwtproject.event.dom.client.DropHandler$$LambdaAdaptor.onDrop","org.gwtproject.event.dom.client.DropHandler$$LambdaAdaptor.<clinit>"]
 }

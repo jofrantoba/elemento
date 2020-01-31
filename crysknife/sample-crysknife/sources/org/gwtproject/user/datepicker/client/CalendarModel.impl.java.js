@@ -11,29 +11,22 @@ let CalendarUtil = goog.forwardDeclare('org.gwtproject.user.datepicker.client.Ca
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 
 class CalendarModel extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Array<?string>} */
+  /**@type {Array<?string>}*/
   this.f_monthOfYearNames__org_gwtproject_user_datepicker_client_CalendarModel_;
-  /** @public {Date} */
+  /**@type {Date}*/
   this.f_currentMonth__org_gwtproject_user_datepicker_client_CalendarModel_;
  }
- /**
-  * @return {!CalendarModel}
-  * @public
-  */
+ /** @return {!CalendarModel} */
  static $create__() {
   CalendarModel.$clinit();
   let $instance = new CalendarModel();
   $instance.$ctor__org_gwtproject_user_datepicker_client_CalendarModel__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_datepicker_client_CalendarModel__() {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_user_datepicker_client_CalendarModel();
@@ -56,55 +49,31 @@ class CalendarModel extends j_l_Object {
    $Arrays.$set(this.f_monthOfYearNames__org_gwtproject_user_datepicker_client_CalendarModel_, i_2, this.m_getMonthFormatter__().m_format__java_util_Date(date));
   }
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_formatCurrentMonth__() {
   return this.m_getMonthFormatter__().m_format__java_util_Date(this.m_getCurrentMonth__());
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_formatCurrentMonthAndYear__() {
   return this.m_getMonthAndYearFormatter__().m_format__java_util_Date(this.m_getCurrentMonth__());
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_formatCurrentYear__() {
   return this.m_getYearFormatter__().m_format__java_util_Date(this.m_getCurrentMonth__());
  }
- /**
-  * @param {Date} date
-  * @return {?string}
-  * @public
-  */
- m_formatDayOfMonth__java_util_Date(date) {
+ /** @return {?string} */
+ m_formatDayOfMonth__java_util_Date(/** Date */ date) {
   return CalendarModel.f_dayOfMonthNames__org_gwtproject_user_datepicker_client_CalendarModel_[date.m_getDate__()];
  }
- /**
-  * @param {number} dayInWeek
-  * @return {?string}
-  * @public
-  */
- m_formatDayOfWeek__int(dayInWeek) {
+ /** @return {?string} */
+ m_formatDayOfWeek__int(/** number */ dayInWeek) {
   return CalendarModel.f_dayOfWeekNames__org_gwtproject_user_datepicker_client_CalendarModel_[dayInWeek];
  }
- /**
-  * @param {number} month
-  * @return {?string}
-  * @public
-  */
- m_formatMonth__int(month) {
+ /** @return {?string} */
+ m_formatMonth__int(/** number */ month) {
   return this.f_monthOfYearNames__org_gwtproject_user_datepicker_client_CalendarModel_[month];
  }
- /**
-  * @return {Date}
-  * @public
-  */
+ /** @return {Date} */
  m_getCurrentFirstDayOfFirstWeek__() {
   let wkDayOfMonth1st = this.f_currentMonth__org_gwtproject_user_datepicker_client_CalendarModel_.m_getDay__();
   let start = CalendarUtil.m_getStartingDayOfWeek__();
@@ -117,76 +86,45 @@ class CalendarModel extends j_l_Object {
    return d;
   }
  }
- /**
-  * @return {Date}
-  * @public
-  */
+ /** @return {Date} */
  m_getCurrentMonth__() {
   return this.f_currentMonth__org_gwtproject_user_datepicker_client_CalendarModel_;
  }
- /**
-  * @param {Date} date
-  * @return {boolean}
-  * @public
-  */
- m_isInCurrentMonth__java_util_Date(date) {
+ /** @return {boolean} */
+ m_isInCurrentMonth__java_util_Date(/** Date */ date) {
   return this.f_currentMonth__org_gwtproject_user_datepicker_client_CalendarModel_.m_getMonth__() == date.m_getMonth__();
  }
- /**
-  * @param {Date} currentDate
-  * @public
-  */
- m_setCurrentMonth__java_util_Date(currentDate) {
+ 
+ m_setCurrentMonth__java_util_Date(/** Date */ currentDate) {
   this.f_currentMonth__org_gwtproject_user_datepicker_client_CalendarModel_.m_setYear__int(currentDate.m_getYear__());
   this.f_currentMonth__org_gwtproject_user_datepicker_client_CalendarModel_.m_setMonth__int(currentDate.m_getMonth__());
  }
- /**
-  * @param {number} deltaMonths
-  * @public
-  */
- m_shiftCurrentMonth__int(deltaMonths) {
+ 
+ m_shiftCurrentMonth__int(/** number */ deltaMonths) {
   CalendarUtil.m_addMonthsToDate__java_util_Date__int(this.f_currentMonth__org_gwtproject_user_datepicker_client_CalendarModel_, deltaMonths);
   this.m_refresh__();
  }
- /**
-  * @return {DateTimeFormat}
-  * @public
-  */
+ /** @return {DateTimeFormat} */
  m_getDayOfMonthFormatter__() {
   return DateTimeFormat.m_getFormat__java_lang_String("d");
  }
- /**
-  * @return {DateTimeFormat}
-  * @public
-  */
+ /** @return {DateTimeFormat} */
  m_getDayOfWeekFormatter__() {
   return DateTimeFormat.m_getFormat__java_lang_String("ccccc");
  }
- /**
-  * @return {DateTimeFormat}
-  * @public
-  */
+ /** @return {DateTimeFormat} */
  m_getMonthAndYearFormatter__() {
   return DateTimeFormat.m_getFormat__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(PredefinedFormat.f_YEAR_MONTH_ABBR__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat);
  }
- /**
-  * @return {DateTimeFormat}
-  * @public
-  */
+ /** @return {DateTimeFormat} */
  m_getMonthFormatter__() {
   return DateTimeFormat.m_getFormat__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(PredefinedFormat.f_MONTH_ABBR__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat);
  }
- /**
-  * @return {DateTimeFormat}
-  * @public
-  */
+ /** @return {DateTimeFormat} */
  m_getYearFormatter__() {
   return DateTimeFormat.m_getFormat__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat(PredefinedFormat.f_YEAR__org_gwtproject_i18n_client_DateTimeFormat_PredefinedFormat);
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isMonthBeforeYear__() {
   let monthAndYearPattern = this.m_getMonthAndYearFormatter__().m_getPattern__();
   for (let i = 0; i < j_l_String.m_length__java_lang_String(monthAndYearPattern); ++i) {
@@ -200,37 +138,25 @@ class CalendarModel extends j_l_Object {
   }
   return true;
  }
- /**
-  * @public
-  */
+ 
  m_refresh__() {}
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_datepicker_client_CalendarModel() {
-  this.f_monthOfYearNames__org_gwtproject_user_datepicker_client_CalendarModel_ = /**@type {!Array<?string>} */ ($Arrays.$create([12], j_l_String));
+  this.f_monthOfYearNames__org_gwtproject_user_datepicker_client_CalendarModel_ = /**@type {!Array<?string>}*/ ($Arrays.$create([12], j_l_String));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CalendarModel.$clinit = () =>{};
   CalendarModel.$loadModules();
   j_l_Object.$clinit();
-  CalendarModel.f_dayOfWeekNames__org_gwtproject_user_datepicker_client_CalendarModel_ = /**@type {!Array<?string>} */ ($Arrays.$create([7], j_l_String));
-  CalendarModel.f_dayOfMonthNames__org_gwtproject_user_datepicker_client_CalendarModel_ = /**@type {!Array<?string>} */ ($Arrays.$create([32], j_l_String));
+  CalendarModel.f_dayOfWeekNames__org_gwtproject_user_datepicker_client_CalendarModel_ = /**@type {!Array<?string>}*/ ($Arrays.$create([7], j_l_String));
+  CalendarModel.f_dayOfMonthNames__org_gwtproject_user_datepicker_client_CalendarModel_ = /**@type {!Array<?string>}*/ ($Arrays.$create([32], j_l_String));
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CalendarModel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   Date = goog.module.get('java.util.Date$impl');
@@ -243,17 +169,17 @@ class CalendarModel extends j_l_Object {
 }
 $Util.$setClassMetadata(CalendarModel, 'org.gwtproject.user.datepicker.client.CalendarModel');
 
-/** @public {number} @const */
+/**@const {number}*/
 CalendarModel.f_WEEKS_IN_MONTH__org_gwtproject_user_datepicker_client_CalendarModel = 6;
-/** @public {number} @const */
+/**@const {number}*/
 CalendarModel.f_DAYS_IN_WEEK__org_gwtproject_user_datepicker_client_CalendarModel = 7;
-/** @public {number} @const */
+/**@const {number}*/
 CalendarModel.f_MONTHS_IN_YEAR__org_gwtproject_user_datepicker_client_CalendarModel = 12;
-/** @public {number} @const */
+/**@const {number}*/
 CalendarModel.f_MAX_DAYS_IN_MONTH__org_gwtproject_user_datepicker_client_CalendarModel_ = 32;
-/** @public {Array<?string>} */
+/**@type {Array<?string>}*/
 CalendarModel.f_dayOfWeekNames__org_gwtproject_user_datepicker_client_CalendarModel_;
-/** @public {Array<?string>} */
+/**@type {Array<?string>}*/
 CalendarModel.f_dayOfMonthNames__org_gwtproject_user_datepicker_client_CalendarModel_;
 
 exports = CalendarModel; 

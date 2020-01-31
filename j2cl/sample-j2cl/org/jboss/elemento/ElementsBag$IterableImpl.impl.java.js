@@ -15,77 +15,50 @@ let Elements = goog.forwardDeclare('org.jboss.elemento.Elements$impl');
  * @implements {Iterable<HTMLElement>}
   */
 class IterableImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Array<HTMLElement>} */
+  /**@type {Array<HTMLElement>}*/
   this.f_elements__org_jboss_elemento_ElementsBag_IterableImpl;
  }
- /**
-  * @return {!IterableImpl}
-  * @public
-  */
+ /** @return {!IterableImpl} */
  static $create__() {
   IterableImpl.$clinit();
   let $instance = new IterableImpl();
   $instance.$ctor__org_jboss_elemento_ElementsBag_IterableImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_jboss_elemento_ElementsBag_IterableImpl__() {
   this.$ctor__java_lang_Object__();
-  this.f_elements__org_jboss_elemento_ElementsBag_IterableImpl = /**@type {!Array<HTMLElement>} */ (new Array());
+  this.f_elements__org_jboss_elemento_ElementsBag_IterableImpl = /**@type {!Array<HTMLElement>}*/ (new Array());
  }
- /**
-  * @override
-  * @return {Iterator<HTMLElement>}
-  * @public
-  */
+ /** @override @return {Iterator<HTMLElement>} */
  m_iterator__() {
-  return /**@type {Iterator<HTMLElement>} */ (Elements.m_iterator__jsinterop_base_JsArrayLike(this.f_elements__org_jboss_elemento_ElementsBag_IterableImpl));
+  return /**@type {Iterator<HTMLElement>}*/ (Elements.m_iterator__jsinterop_base_JsArrayLike(this.f_elements__org_jboss_elemento_ElementsBag_IterableImpl));
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<HTMLElement>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<HTMLElement>} */
  m_spliterator__() {
-  return /**@type {Spliterator<HTMLElement>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<HTMLElement>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   IterableImpl.$clinit = () =>{};
   IterableImpl.$loadModules();
   j_l_Object.$clinit();
   Iterable.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof IterableImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Elements = goog.module.get('org.jboss.elemento.Elements$impl');
  }

@@ -8,43 +8,28 @@ let MenuItem = goog.forwardDeclare('org.gwtproject.user.client.ui.MenuItem$impl'
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class SuggestionMenu extends MenuBar {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {boolean} vertical
-  * @return {!SuggestionMenu}
-  * @public
-  */
- static $create__boolean(vertical) {
+ /** @return {!SuggestionMenu} */
+ static $create__boolean(/** boolean */ vertical) {
   SuggestionMenu.$clinit();
   let $instance = new SuggestionMenu();
   $instance.$ctor__org_gwtproject_user_client_ui_SuggestBox_SuggestionMenu__boolean(vertical);
   return $instance;
  }
- /**
-  * @param {boolean} vertical
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_SuggestBox_SuggestionMenu__boolean(vertical) {
+ 
+ $ctor__org_gwtproject_user_client_ui_SuggestBox_SuggestionMenu__boolean(/** boolean */ vertical) {
   this.$ctor__org_gwtproject_user_client_ui_MenuBar__boolean(vertical);
   this.m_setStyleName__java_lang_String("");
   this.m_setFocusOnHoverEnabled__boolean(false);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getNumItems__() {
   return this.m_getItems__().size();
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getSelectedItemIndex__() {
   let selectedItem = this.m_getSelectedItem__();
   if (!$Equality.$same(selectedItem, null)) {
@@ -52,35 +37,24 @@ class SuggestionMenu extends MenuBar {
   }
   return -1;
  }
- /**
-  * @param {number} index
-  * @public
-  */
- m_selectItem__int(index) {
+ 
+ m_selectItem__int(/** number */ index) {
   let items = this.m_getItems__();
   if (index > -1 && index < items.size()) {
-   this.m_itemOver__org_gwtproject_user_client_ui_MenuItem__boolean_$pp_org_gwtproject_user_client_ui(/**@type {MenuItem} */ ($Casts.$to(items.getAtIndex(index), MenuItem)), false);
+   this.m_itemOver__org_gwtproject_user_client_ui_MenuItem__boolean_$pp_org_gwtproject_user_client_ui(/**@type {MenuItem}*/ ($Casts.$to(items.getAtIndex(index), MenuItem)), false);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SuggestionMenu.$clinit = () =>{};
   SuggestionMenu.$loadModules();
   MenuBar.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SuggestionMenu;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   MenuItem = goog.module.get('org.gwtproject.user.client.ui.MenuItem$impl');

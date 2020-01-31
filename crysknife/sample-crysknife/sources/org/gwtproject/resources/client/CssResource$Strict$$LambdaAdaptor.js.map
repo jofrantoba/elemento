@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CssResource$Strict$$LambdaAdaptor.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;;;;MAoSa,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;iF;EAAAA,kJ;;;;;;CAAA,wI;EAAAC,iC;EAAAA,oF;;;;;;CAAA,kB;EAAAC,0C;EAAAA,iH;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;;MAoSa,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;iF;EAAAA,kJ;;;CAAA,wI;EAAAC,iC;EAAAA,oF;;;CAAA,kB;EAAAC,0C;EAAAA,iH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["CssResource.java"],
 "names":["org.gwtproject.resources.client.CssResource$Strict$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.resources.client.CssResource$Strict$$LambdaAdaptor.<init>","org.gwtproject.resources.client.CssResource$Strict$$LambdaAdaptor.annotationType","org.gwtproject.resources.client.CssResource$Strict$$LambdaAdaptor.<clinit>"]
 }

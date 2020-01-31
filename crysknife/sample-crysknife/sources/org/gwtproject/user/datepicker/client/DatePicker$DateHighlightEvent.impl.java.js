@@ -12,66 +12,41 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {HighlightEvent<Date>}
   */
 class DateHighlightEvent extends HighlightEvent {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {Date} highlighted
-  * @return {!DateHighlightEvent}
-  * @public
-  */
- static $create__java_util_Date(highlighted) {
+ /** @return {!DateHighlightEvent} */
+ static $create__java_util_Date(/** Date */ highlighted) {
   DateHighlightEvent.$clinit();
   let $instance = new DateHighlightEvent();
   $instance.$ctor__org_gwtproject_user_datepicker_client_DatePicker_DateHighlightEvent__java_util_Date(highlighted);
   return $instance;
  }
- /**
-  * @param {Date} highlighted
-  * @public
-  */
- $ctor__org_gwtproject_user_datepicker_client_DatePicker_DateHighlightEvent__java_util_Date(highlighted) {
+ 
+ $ctor__org_gwtproject_user_datepicker_client_DatePicker_DateHighlightEvent__java_util_Date(/** Date */ highlighted) {
   this.$ctor__org_gwtproject_event_logical_shared_HighlightEvent__java_lang_Object(highlighted);
  }
- /**
-  * @override
-  * @return {Date}
-  * @public
-  */
+ /** @override @return {Date} */
  m_getHighlighted__() {
-  return CalendarUtil.m_copyDate__java_util_Date(/**@type {Date} */ ($Casts.$to(super.m_getHighlighted__(), Date)));
+  return CalendarUtil.m_copyDate__java_util_Date(/**@type {Date}*/ ($Casts.$to(super.m_getHighlighted__(), Date)));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  super.m_dispatch__org_gwtproject_event_logical_shared_HighlightHandler(/**@type {HighlightHandler<Date>} */ ($Casts.$to(arg0, HighlightHandler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  super.m_dispatch__org_gwtproject_event_logical_shared_HighlightHandler(/**@type {HighlightHandler<Date>}*/ ($Casts.$to(arg0, HighlightHandler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DateHighlightEvent.$clinit = () =>{};
   DateHighlightEvent.$loadModules();
   HighlightEvent.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DateHighlightEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Date = goog.module.get('java.util.Date$impl');
   HighlightHandler = goog.module.get('org.gwtproject.event.logical.shared.HighlightHandler$impl');

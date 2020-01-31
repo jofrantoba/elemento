@@ -10,50 +10,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.event.logical.shared.Se
  * @template T
  */
 class SelectionHandler {
- /**
-  * @abstract
-  * @param {SelectionEvent<T>} event
-  * @public
-  */
- m_onSelection__org_gwtproject_event_logical_shared_SelectionEvent(event) {}
- /**
-  * @template T
-  * @param {?function(SelectionEvent<T>):void} fn
-  * @return {SelectionHandler<T>}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onSelection__org_gwtproject_event_logical_shared_SelectionEvent(/** SelectionEvent<T> */ event) {}
+ /** @template T @return {SelectionHandler<T>} */
+ static $adapt(/** ?function(SelectionEvent<T>):void */ fn) {
   SelectionHandler.$clinit();
-  return /**@type {!$LambdaAdaptor<T>} */ (new $LambdaAdaptor(fn));
+  return /**@type {!$LambdaAdaptor<T>}*/ (new $LambdaAdaptor(fn));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SelectionHandler.$clinit = () =>{};
   SelectionHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_logical_shared_SelectionHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_event_logical_shared_SelectionHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_logical_shared_SelectionHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.event.logical.shared.SelectionHandler.$LambdaAdaptor$impl');
  }

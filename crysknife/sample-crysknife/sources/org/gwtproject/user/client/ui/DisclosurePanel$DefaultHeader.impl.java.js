@@ -24,62 +24,40 @@ let Image = goog.forwardDeclare('org.gwtproject.user.client.ui.Image$impl');
  * @implements {CloseHandler<DisclosurePanel>}
   */
 class DefaultHeader extends Widget {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {DisclosurePanel} */
+  /**@type {DisclosurePanel}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_labelTD__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader_;
-  /** @public {Image} */
+  /**@type {Image}*/
   this.f_iconImage__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader_;
-  /** @public {Imager} */
+  /**@type {Imager}*/
   this.f_imager__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader_;
  }
- /**
-  * Factory method corresponding to constructor 'DefaultHeader(DisclosurePanel, String)'.
-  * @param {DisclosurePanel} $outer_this
-  * @param {?string} text
-  * @return {!DefaultHeader}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_DisclosurePanel__java_lang_String($outer_this, text) {
+ //Factory method corresponding to constructor 'DefaultHeader(DisclosurePanel, String)'.
+ /** @return {!DefaultHeader} */
+ static $create__org_gwtproject_user_client_ui_DisclosurePanel__java_lang_String(/** DisclosurePanel */ $outer_this, /** ?string */ text) {
   let $instance = new DefaultHeader();
   $instance.$ctor__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader__org_gwtproject_user_client_ui_DisclosurePanel__java_lang_String($outer_this, text);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DefaultHeader(DisclosurePanel, String)'.
-  * @param {DisclosurePanel} $outer_this
-  * @param {?string} text
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader__org_gwtproject_user_client_ui_DisclosurePanel__java_lang_String($outer_this, text) {
+ //Initialization from constructor 'DefaultHeader(DisclosurePanel, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader__org_gwtproject_user_client_ui_DisclosurePanel__java_lang_String(/** DisclosurePanel */ $outer_this, /** ?string */ text) {
   this.$ctor__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader__org_gwtproject_user_client_ui_DisclosurePanel__org_gwtproject_user_client_ui_DisclosurePanel_Imager__java_lang_String($outer_this, $1.$create__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader(this), text);
  }
- /**
-  * Factory method corresponding to constructor 'DefaultHeader(DisclosurePanel, Imager, String)'.
-  * @param {DisclosurePanel} $outer_this
-  * @param {Imager} imager
-  * @param {?string} text
-  * @return {!DefaultHeader}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_DisclosurePanel__org_gwtproject_user_client_ui_DisclosurePanel_Imager__java_lang_String($outer_this, imager, text) {
+ //Factory method corresponding to constructor 'DefaultHeader(DisclosurePanel, Imager, String)'.
+ /** @return {!DefaultHeader} */
+ static $create__org_gwtproject_user_client_ui_DisclosurePanel__org_gwtproject_user_client_ui_DisclosurePanel_Imager__java_lang_String(/** DisclosurePanel */ $outer_this, /** Imager */ imager, /** ?string */ text) {
   let $instance = new DefaultHeader();
   $instance.$ctor__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader__org_gwtproject_user_client_ui_DisclosurePanel__org_gwtproject_user_client_ui_DisclosurePanel_Imager__java_lang_String($outer_this, imager, text);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DefaultHeader(DisclosurePanel, Imager, String)'.
-  * @param {DisclosurePanel} $outer_this
-  * @param {Imager} imager
-  * @param {?string} text
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader__org_gwtproject_user_client_ui_DisclosurePanel__org_gwtproject_user_client_ui_DisclosurePanel_Imager__java_lang_String($outer_this, imager, text) {
+ //Initialization from constructor 'DefaultHeader(DisclosurePanel, Imager, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader__org_gwtproject_user_client_ui_DisclosurePanel__org_gwtproject_user_client_ui_DisclosurePanel_Imager__java_lang_String(/** DisclosurePanel */ $outer_this, /** Imager */ imager, /** ?string */ text) {
   this.f_$outer_this__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader = $outer_this;
   this.$ctor__org_gwtproject_user_client_ui_Widget__();
   this.f_imager__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader_ = imager;
@@ -103,89 +81,50 @@ class DefaultHeader extends Widget {
   $outer_this.m_addCloseHandler__org_gwtproject_event_logical_shared_CloseHandler(this);
   this.m_setStyle___$p_org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader();
  }
- /**
-  * Factory method corresponding to constructor 'DefaultHeader(DisclosurePanel, ImageResource, ImageResource, String)'.
-  * @param {DisclosurePanel} $outer_this
-  * @param {ImageResource} openImage
-  * @param {ImageResource} closedImage
-  * @param {?string} text
-  * @return {!DefaultHeader}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_DisclosurePanel__org_gwtproject_resources_client_ImageResource__org_gwtproject_resources_client_ImageResource__java_lang_String($outer_this, openImage, closedImage, text) {
+ //Factory method corresponding to constructor 'DefaultHeader(DisclosurePanel, ImageResource, ImageResource, String)'.
+ /** @return {!DefaultHeader} */
+ static $create__org_gwtproject_user_client_ui_DisclosurePanel__org_gwtproject_resources_client_ImageResource__org_gwtproject_resources_client_ImageResource__java_lang_String(/** DisclosurePanel */ $outer_this, /** ImageResource */ openImage, /** ImageResource */ closedImage, /** ?string */ text) {
   DefaultHeader.$clinit();
   let $instance = new DefaultHeader();
   $instance.$ctor__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader__org_gwtproject_user_client_ui_DisclosurePanel__org_gwtproject_resources_client_ImageResource__org_gwtproject_resources_client_ImageResource__java_lang_String($outer_this, openImage, closedImage, text);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DefaultHeader(DisclosurePanel, ImageResource, ImageResource, String)'.
-  * @param {DisclosurePanel} $outer_this
-  * @param {ImageResource} openImage
-  * @param {ImageResource} closedImage
-  * @param {?string} text
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader__org_gwtproject_user_client_ui_DisclosurePanel__org_gwtproject_resources_client_ImageResource__org_gwtproject_resources_client_ImageResource__java_lang_String($outer_this, openImage, closedImage, text) {
+ //Initialization from constructor 'DefaultHeader(DisclosurePanel, ImageResource, ImageResource, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader__org_gwtproject_user_client_ui_DisclosurePanel__org_gwtproject_resources_client_ImageResource__org_gwtproject_resources_client_ImageResource__java_lang_String(/** DisclosurePanel */ $outer_this, /** ImageResource */ openImage, /** ImageResource */ closedImage, /** ?string */ text) {
   this.$ctor__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader__org_gwtproject_user_client_ui_DisclosurePanel__org_gwtproject_user_client_ui_DisclosurePanel_Imager__java_lang_String($outer_this, $2.$create__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader__org_gwtproject_resources_client_ImageResource__org_gwtproject_resources_client_ImageResource(this, closedImage, openImage), text);
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getText__() {
   return $Overlay.m_getInnerText__$devirt__org_gwtproject_dom_client_Element(this.f_labelTD__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader_);
  }
- /**
-  * @override
-  * @param {CloseEvent<DisclosurePanel>} event
-  * @public
-  */
- m_onClose__org_gwtproject_event_logical_shared_CloseEvent(event) {
+ /** @override */
+ m_onClose__org_gwtproject_event_logical_shared_CloseEvent(/** CloseEvent<DisclosurePanel> */ event) {
   this.m_setStyle___$p_org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader();
  }
- /**
-  * @override
-  * @param {OpenEvent<DisclosurePanel>} event
-  * @public
-  */
- m_onOpen__org_gwtproject_event_logical_shared_OpenEvent(event) {
+ /** @override */
+ m_onOpen__org_gwtproject_event_logical_shared_OpenEvent(/** OpenEvent<DisclosurePanel> */ event) {
   this.m_setStyle___$p_org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader();
  }
- /**
-  * @override
-  * @param {?string} text
-  * @public
-  */
- m_setText__java_lang_String(text) {
+ /** @override */
+ m_setText__java_lang_String(/** ?string */ text) {
   $Overlay.m_setInnerText__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.f_labelTD__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader_, text);
  }
- /**
-  * @public
-  */
+ 
  m_setStyle___$p_org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader() {
   this.f_imager__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader_.m_updateImage__boolean__org_gwtproject_user_client_ui_Image(this.f_$outer_this__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader.f_isOpen__org_gwtproject_user_client_ui_DisclosurePanel_, this.f_iconImage__org_gwtproject_user_client_ui_DisclosurePanel_DefaultHeader_);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DefaultHeader.$clinit = () =>{};
   DefaultHeader.$loadModules();
   Widget.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DefaultHeader;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('org.gwtproject.dom.client.Element.$Overlay$impl');
   Style_$Overlay = goog.module.get('org.gwtproject.dom.client.Style.$Overlay$impl');

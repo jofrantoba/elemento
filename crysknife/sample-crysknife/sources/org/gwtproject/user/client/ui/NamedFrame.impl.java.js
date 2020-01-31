@@ -16,85 +16,55 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 
 class NamedFrame extends Frame {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} name
-  * @return {Object}
-  * @public
-  */
- static m_createIFrame__java_lang_String(name) {
+ /** @return {Object} */
+ static m_createIFrame__java_lang_String(/** ?string */ name) {
   if ($Equality.$same(name, null) || !NamedFrame.m_isValidName__java_lang_String(j_l_String.m_trim__java_lang_String(name))) {
    throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String("expecting one or more non-whitespace chars with no '<', '>', or '&'"));
   }
   let div = DOM.m_createDiv__();
   $Overlay.m_setInnerSafeHtml__$devirt__org_gwtproject_dom_client_Element__org_gwtproject_safehtml_shared_SafeHtml(div, IFrameTemplate.f_INSTANCE__org_gwtproject_user_client_ui_NamedFrame_IFrameTemplate.m_get__java_lang_String(name));
-  return /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(div.firstChild), IFrameElement_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(div.firstChild), IFrameElement_$Overlay));
  }
- /**
-  * @public
-  */
+ 
  static m_initStatics__() {
   NamedFrame.f_PATTERN_NAME__org_gwtproject_user_client_ui_NamedFrame_ = RegExp.m_compile__java_lang_String("^[^<>&\\'\\\"]+$");
  }
- /**
-  * @param {?string} name
-  * @return {boolean}
-  * @public
-  */
- static m_isValidName__java_lang_String(name) {
+ /** @return {boolean} */
+ static m_isValidName__java_lang_String(/** ?string */ name) {
   return NamedFrame.f_PATTERN_NAME__org_gwtproject_user_client_ui_NamedFrame_.m_test__java_lang_String(name);
  }
- /**
-  * @param {?string} name
-  * @return {!NamedFrame}
-  * @public
-  */
- static $create__java_lang_String(name) {
+ /** @return {!NamedFrame} */
+ static $create__java_lang_String(/** ?string */ name) {
   NamedFrame.$clinit();
   let $instance = new NamedFrame();
   $instance.$ctor__org_gwtproject_user_client_ui_NamedFrame__java_lang_String(name);
   return $instance;
  }
- /**
-  * @param {?string} name
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_NamedFrame__java_lang_String(name) {
+ 
+ $ctor__org_gwtproject_user_client_ui_NamedFrame__java_lang_String(/** ?string */ name) {
   this.$ctor__org_gwtproject_user_client_ui_Frame__org_gwtproject_dom_client_Element(NamedFrame.m_createIFrame__java_lang_String(name));
   this.m_setStyleName__java_lang_String(Frame.f_DEFAULT_STYLENAME__org_gwtproject_user_client_ui_Frame);
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getName__() {
   return $Overlay.m_getPropertyString__$devirt__org_gwtproject_dom_client_Element__java_lang_String(this.m_getElement__(), "name");
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NamedFrame.$clinit = () =>{};
   NamedFrame.$loadModules();
   Frame.$clinit();
   NamedFrame.m_initStatics__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof NamedFrame;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -112,7 +82,7 @@ class NamedFrame extends Frame {
 }
 $Util.$setClassMetadata(NamedFrame, 'org.gwtproject.user.client.ui.NamedFrame');
 
-/** @public {RegExp} */
+/**@type {RegExp}*/
 NamedFrame.f_PATTERN_NAME__org_gwtproject_user_client_ui_NamedFrame_;
 
 exports = NamedFrame; 

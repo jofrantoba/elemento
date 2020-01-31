@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Messages$Select$$LambdaAdaptor.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;;;;MA6aoB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;yE;EAAAA,kI;;;;;;CAAA,wH;EAAAC,iC;EAAAA,4E;;;;;;CAAA,kB;EAAAC,0C;EAAAA,yG;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;;MA6aoB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;yE;EAAAA,kI;;;CAAA,wH;EAAAC,iC;EAAAA,4E;;;CAAA,kB;EAAAC,0C;EAAAA,yG;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["Messages.java"],
 "names":["org.gwtproject.i18n.client.Messages$Select$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.i18n.client.Messages$Select$$LambdaAdaptor.<init>","org.gwtproject.i18n.client.Messages$Select$$LambdaAdaptor.annotationType","org.gwtproject.i18n.client.Messages$Select$$LambdaAdaptor.<clinit>"]
 }

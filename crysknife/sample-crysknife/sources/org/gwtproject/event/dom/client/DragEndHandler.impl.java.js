@@ -11,50 +11,29 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.event.dom.client.DragEn
  * @extends {EventHandler}
  */
 class DragEndHandler {
- /**
-  * @abstract
-  * @param {DragEndEvent} event
-  * @public
-  */
- m_onDragEnd__org_gwtproject_event_dom_client_DragEndEvent(event) {}
- /**
-  * @param {?function(DragEndEvent):void} fn
-  * @return {DragEndHandler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onDragEnd__org_gwtproject_event_dom_client_DragEndEvent(/** DragEndEvent */ event) {}
+ /** @return {DragEndHandler} */
+ static $adapt(/** ?function(DragEndEvent):void */ fn) {
   DragEndHandler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DragEndHandler.$clinit = () =>{};
   DragEndHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  EventHandler.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_DragEndHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  EventHandler.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_DragEndHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_DragEndHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.event.dom.client.DragEndHandler.$LambdaAdaptor$impl');
  }

@@ -12,94 +12,58 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class OptionElement_$Overlay {
- /**
-  * @param {Object} elem
-  * @return {Object}
-  * @public
-  */
- static m_as__org_gwtproject_dom_client_Element(elem) {
+ /** @return {Object} */
+ static m_as__org_gwtproject_dom_client_Element(/** Object */ elem) {
   OptionElement_$Overlay.$clinit();
   $Asserts.$assert(OptionElement_$Overlay.m_is__org_gwtproject_dom_client_Element(elem));
-  return /**@type {Object} */ ($Casts.$to(elem, OptionElement_$Overlay));
+  return /**@type {Object}*/ ($Casts.$to(elem, OptionElement_$Overlay));
  }
- /**
-  * @param {Object} o
-  * @return {boolean}
-  * @public
-  */
- static m_is__org_gwtproject_core_client_JavaScriptObject(o) {
+ /** @return {boolean} */
+ static m_is__org_gwtproject_core_client_JavaScriptObject(/** Object */ o) {
   OptionElement_$Overlay.$clinit();
   if ($Overlay.m_is__org_gwtproject_core_client_JavaScriptObject(o)) {
-   return OptionElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object} */ ($Casts.$to(o, $Overlay)));
+   return OptionElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object}*/ ($Casts.$to(o, $Overlay)));
   }
   return false;
  }
- /**
-  * @param {Object} node
-  * @return {boolean}
-  * @public
-  */
- static m_is__org_gwtproject_dom_client_Node(node) {
+ /** @return {boolean} */
+ static m_is__org_gwtproject_dom_client_Node(/** Object */ node) {
   OptionElement_$Overlay.$clinit();
   if ($Overlay.m_is__org_gwtproject_dom_client_Node(node)) {
-   return OptionElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object} */ ($Casts.$to(node, $Overlay)));
+   return OptionElement_$Overlay.m_is__org_gwtproject_dom_client_Element(/**@type {Object}*/ ($Casts.$to(node, $Overlay)));
   }
   return false;
  }
- /**
-  * @param {Object} elem
-  * @return {boolean}
-  * @public
-  */
- static m_is__org_gwtproject_dom_client_Element(elem) {
+ /** @return {boolean} */
+ static m_is__org_gwtproject_dom_client_Element(/** Object */ elem) {
   OptionElement_$Overlay.$clinit();
   return !$Equality.$same(elem, null) && $Overlay.m_hasTagName__$devirt__org_gwtproject_dom_client_Element__java_lang_String(elem, OptionElement_$Overlay.f_TAG__org_gwtproject_dom_client_OptionElement_$Overlay);
  }
- /**
-  * @param {!Object} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isDefaultSelected__$devirt__org_gwtproject_dom_client_OptionElement($thisArg) {
+ /** @return {boolean} */
+ static m_isDefaultSelected__$devirt__org_gwtproject_dom_client_OptionElement(/** !Object */ $thisArg) {
   OptionElement_$Overlay.$clinit();
-  return Js.m_isTruthy__java_lang_Object(/**@type {HTMLOptionElement} */ (Js.m_uncheckedCast__java_lang_Object($thisArg)).defaultSelected);
+  return Js.m_isTruthy__java_lang_Object(/**@type {HTMLOptionElement}*/ (Js.m_uncheckedCast__java_lang_Object($thisArg)).defaultSelected);
  }
- /**
-  * @param {!Object} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isDisabled__$devirt__org_gwtproject_dom_client_OptionElement($thisArg) {
+ /** @return {boolean} */
+ static m_isDisabled__$devirt__org_gwtproject_dom_client_OptionElement(/** !Object */ $thisArg) {
   OptionElement_$Overlay.$clinit();
-  return Js.m_isTruthy__java_lang_Object(/**@type {HTMLOptionElement} */ (Js.m_uncheckedCast__java_lang_Object($thisArg)).disabled);
+  return Js.m_isTruthy__java_lang_Object(/**@type {HTMLOptionElement}*/ (Js.m_uncheckedCast__java_lang_Object($thisArg)).disabled);
  }
- /**
-  * @param {!Object} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isSelected__$devirt__org_gwtproject_dom_client_OptionElement($thisArg) {
+ /** @return {boolean} */
+ static m_isSelected__$devirt__org_gwtproject_dom_client_OptionElement(/** !Object */ $thisArg) {
   OptionElement_$Overlay.$clinit();
-  return Js.m_isTruthy__java_lang_Object(/**@type {HTMLOptionElement} */ (Js.m_uncheckedCast__java_lang_Object($thisArg)).selected);
+  return Js.m_isTruthy__java_lang_Object(/**@type {HTMLOptionElement}*/ (Js.m_uncheckedCast__java_lang_Object($thisArg)).selected);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   OptionElement_$Overlay.$clinit = () =>{};
   OptionElement_$Overlay.$loadModules();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Object;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -111,7 +75,7 @@ class OptionElement_$Overlay {
 }
 $Util.$setClassMetadata(OptionElement_$Overlay, 'Object');
 
-/** @public {?string} @const */
+/**@const {?string}*/
 OptionElement_$Overlay.f_TAG__org_gwtproject_dom_client_OptionElement_$Overlay = "option";
 
 exports = OptionElement_$Overlay; 

@@ -12,87 +12,53 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @extends {Enum<AnimationType>}
   */
 class AnimationType extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @return {!AnimationType}
-  * @public
-  */
- static $create__java_lang_String__int($name, $ordinal) {
+ /** @return {!AnimationType} */
+ static $create__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   let $instance = new AnimationType();
   $instance.$ctor__org_gwtproject_user_client_ui_PopupPanel_AnimationType__java_lang_String__int($name, $ordinal);
   return $instance;
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_PopupPanel_AnimationType__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_user_client_ui_PopupPanel_AnimationType__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @param {string} name
-  * @return {!AnimationType}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!AnimationType} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   AnimationType.$clinit();
   if ($Equality.$same(AnimationType.f_namesToValuesMap__org_gwtproject_user_client_ui_PopupPanel_AnimationType_, null)) {
    AnimationType.f_namesToValuesMap__org_gwtproject_user_client_ui_PopupPanel_AnimationType_ = $Enums.createMapFromValues(AnimationType.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, AnimationType.f_namesToValuesMap__org_gwtproject_user_client_ui_PopupPanel_AnimationType_);
  }
- /**
-  * @return {!Array<!AnimationType>}
-  * @public
-  */
+ /** @return {!Array<!AnimationType>} */
  static m_values__() {
   AnimationType.$clinit();
-  return /**@type {!Array<AnimationType>} */ ($Arrays.$init([AnimationType.$f_CENTER__org_gwtproject_user_client_ui_PopupPanel_AnimationType, AnimationType.$f_ONE_WAY_CORNER__org_gwtproject_user_client_ui_PopupPanel_AnimationType, AnimationType.$f_ROLL_DOWN__org_gwtproject_user_client_ui_PopupPanel_AnimationType], AnimationType));
+  return /**@type {!Array<AnimationType>}*/ ($Arrays.$init([AnimationType.$f_CENTER__org_gwtproject_user_client_ui_PopupPanel_AnimationType, AnimationType.$f_ONE_WAY_CORNER__org_gwtproject_user_client_ui_PopupPanel_AnimationType, AnimationType.$f_ROLL_DOWN__org_gwtproject_user_client_ui_PopupPanel_AnimationType], AnimationType));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @return {number}
-  * @public
-  */
- m_compareTo__java_lang_Object(arg0) {
-  return super.compareTo(/**@type {AnimationType} */ ($Casts.$to(arg0, AnimationType)));
+ //Bridge method.
+ /** @override @return {number} */
+ m_compareTo__java_lang_Object(/** * */ arg0) {
+  return super.compareTo(/**@type {AnimationType}*/ ($Casts.$to(arg0, AnimationType)));
  }
- /**
-  * @return {!AnimationType}
-  * @public
-  */
+ /** @return {!AnimationType} */
  static get f_CENTER__org_gwtproject_user_client_ui_PopupPanel_AnimationType() {
   return (AnimationType.$clinit(), AnimationType.$f_CENTER__org_gwtproject_user_client_ui_PopupPanel_AnimationType);
  }
- /**
-  * @return {!AnimationType}
-  * @public
-  */
+ /** @return {!AnimationType} */
  static get f_ONE_WAY_CORNER__org_gwtproject_user_client_ui_PopupPanel_AnimationType() {
   return (AnimationType.$clinit(), AnimationType.$f_ONE_WAY_CORNER__org_gwtproject_user_client_ui_PopupPanel_AnimationType);
  }
- /**
-  * @return {!AnimationType}
-  * @public
-  */
+ /** @return {!AnimationType} */
  static get f_ROLL_DOWN__org_gwtproject_user_client_ui_PopupPanel_AnimationType() {
   return (AnimationType.$clinit(), AnimationType.$f_ROLL_DOWN__org_gwtproject_user_client_ui_PopupPanel_AnimationType);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AnimationType.$clinit = () =>{};
   AnimationType.$loadModules();
@@ -102,17 +68,11 @@ class AnimationType extends Enum {
   AnimationType.$f_ROLL_DOWN__org_gwtproject_user_client_ui_PopupPanel_AnimationType = AnimationType.$create__java_lang_String__int($Util.$makeEnumName("ROLL_DOWN"), AnimationType.$ordinal$f_ROLL_DOWN__org_gwtproject_user_client_ui_PopupPanel_AnimationType);
   AnimationType.f_namesToValuesMap__org_gwtproject_user_client_ui_PopupPanel_AnimationType_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AnimationType;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
@@ -123,19 +83,19 @@ class AnimationType extends Enum {
 }
 $Util.$setClassMetadataForEnum(AnimationType, 'org.gwtproject.user.client.ui.PopupPanel$AnimationType');
 
-/** @private {!AnimationType} */
+/**@private {!AnimationType}*/
 AnimationType.$f_CENTER__org_gwtproject_user_client_ui_PopupPanel_AnimationType;
-/** @private {!AnimationType} */
+/**@private {!AnimationType}*/
 AnimationType.$f_ONE_WAY_CORNER__org_gwtproject_user_client_ui_PopupPanel_AnimationType;
-/** @private {!AnimationType} */
+/**@private {!AnimationType}*/
 AnimationType.$f_ROLL_DOWN__org_gwtproject_user_client_ui_PopupPanel_AnimationType;
-/** @public {Map<?string, !AnimationType>} */
+/**@type {Map<?string, !AnimationType>}*/
 AnimationType.f_namesToValuesMap__org_gwtproject_user_client_ui_PopupPanel_AnimationType_;
-/** @public {number} @const */
+/**@const {number}*/
 AnimationType.$ordinal$f_CENTER__org_gwtproject_user_client_ui_PopupPanel_AnimationType = 0;
-/** @public {number} @const */
+/**@const {number}*/
 AnimationType.$ordinal$f_ONE_WAY_CORNER__org_gwtproject_user_client_ui_PopupPanel_AnimationType = 1;
-/** @public {number} @const */
+/**@const {number}*/
 AnimationType.$ordinal$f_ROLL_DOWN__org_gwtproject_user_client_ui_PopupPanel_AnimationType = 2;
 
 exports = AnimationType; 

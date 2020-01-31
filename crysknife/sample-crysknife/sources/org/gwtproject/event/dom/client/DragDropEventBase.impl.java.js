@@ -13,69 +13,43 @@ let EventHandler = goog.forwardDeclare('org.gwtproject.event.legacy.shared.Event
  * @extends {DomEvent<H>}
   */
 class DragDropEventBase extends DomEvent {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_dom_client_DragDropEventBase__() {
   this.$ctor__org_gwtproject_event_dom_client_DomEvent__();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  static m_isSupported__() {
   DragDropEventBase.$clinit();
   return true;
  }
- /**
-  * @param {?string} format
-  * @return {?string}
-  * @public
-  */
- m_getData__java_lang_String(format) {
+ /** @return {?string} */
+ m_getData__java_lang_String(/** ?string */ format) {
   let dt = this.m_getDataTransfer__();
   return this.m_getDataTransfer__().getData(format);
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getDataTransfer__() {
   return $Overlay.m_getDataTransfer__$devirt__org_gwtproject_dom_client_NativeEvent(this.m_getNativeEvent__());
  }
- /**
-  * @param {?string} format
-  * @param {?string} data
-  * @public
-  */
- m_setData__java_lang_String__java_lang_String(format, data) {
+ 
+ m_setData__java_lang_String__java_lang_String(/** ?string */ format, /** ?string */ data) {
   this.m_getDataTransfer__().setData(format, data);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DragDropEventBase.$clinit = () =>{};
   DragDropEventBase.$loadModules();
   DomEvent.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DragDropEventBase;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('org.gwtproject.dom.client.NativeEvent.$Overlay$impl');
  }

@@ -17,73 +17,59 @@ let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class ErrorCollector extends EditorVisitor {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Stack<List<EditorError>>} */
+  /**@type {Stack<List<EditorError>>}*/
   this.f_errorStack__org_gwtproject_editor_client_impl_ErrorCollector_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_lastAddedPath__org_gwtproject_editor_client_impl_ErrorCollector_;
-  /** @public {List<EditorError>} */
+  /**@type {List<EditorError>}*/
   this.f_lastAdded__org_gwtproject_editor_client_impl_ErrorCollector_;
  }
- /**
-  * @param {List<EditorError>} errors
-  * @return {!ErrorCollector}
-  * @public
-  */
- static $create__java_util_List(errors) {
+ /** @return {!ErrorCollector} */
+ static $create__java_util_List(/** List<EditorError> */ errors) {
   ErrorCollector.$clinit();
   let $instance = new ErrorCollector();
   $instance.$ctor__org_gwtproject_editor_client_impl_ErrorCollector__java_util_List(errors);
   return $instance;
  }
- /**
-  * @param {List<EditorError>} errors
-  * @public
-  */
- $ctor__org_gwtproject_editor_client_impl_ErrorCollector__java_util_List(errors) {
+ 
+ $ctor__org_gwtproject_editor_client_impl_ErrorCollector__java_util_List(/** List<EditorError> */ errors) {
   this.$ctor__org_gwtproject_editor_client_EditorVisitor__();
   this.$init___$p_org_gwtproject_editor_client_impl_ErrorCollector();
   $Asserts.$assert(!$Equality.$same(errors, null));
   this.f_errorStack__org_gwtproject_editor_client_impl_ErrorCollector_.m_push__java_lang_Object(errors);
  }
- /**
-  * @override
-  * @template T
-  * @param {EditorContext<T>} ctx
-  * @public
-  */
- m_endVisit__org_gwtproject_editor_client_EditorContext(ctx) {
-  let delegate = /**@type {AbstractEditorDelegate<*, Editor>} */ ($Casts.$to(ctx.m_getEditorDelegate__(), AbstractEditorDelegate));
+ /** @override @template T */
+ m_endVisit__org_gwtproject_editor_client_EditorContext(/** EditorContext<T> */ ctx) {
+  let delegate = /**@type {AbstractEditorDelegate<*, Editor>}*/ ($Casts.$to(ctx.m_getEditorDelegate__(), AbstractEditorDelegate));
   if ($Equality.$same(delegate, null)) {
    return;
   }
   let errors = delegate.m_getErrors__();
-  this.f_lastAdded__org_gwtproject_editor_client_impl_ErrorCollector_ = /**@type {!ArrayList<EditorError>} */ (ArrayList.$create__java_util_Collection(errors));
+  this.f_lastAdded__org_gwtproject_editor_client_impl_ErrorCollector_ = /**@type {!ArrayList<EditorError>}*/ (ArrayList.$create__java_util_Collection(errors));
   this.f_lastAddedPath__org_gwtproject_editor_client_impl_ErrorCollector_ = ctx.m_getAbsolutePath__();
-  /**@type {List<EditorError>} */ ($Casts.$to(this.f_errorStack__org_gwtproject_editor_client_impl_ErrorCollector_.m_peek__(), List)).addAll(errors);
+  /**@type {List<EditorError>}*/ ($Casts.$to(this.f_errorStack__org_gwtproject_editor_client_impl_ErrorCollector_.m_peek__(), List)).addAll(errors);
   errors.clear();
   let asErrors = ctx.m_asHasEditorErrors__();
   if (!$Equality.$same(asErrors, null)) {
-   let tryConsume = /**@type {List<EditorError>} */ ($Casts.$to(this.f_errorStack__org_gwtproject_editor_client_impl_ErrorCollector_.m_pop__(), List));
+   let tryConsume = /**@type {List<EditorError>}*/ ($Casts.$to(this.f_errorStack__org_gwtproject_editor_client_impl_ErrorCollector_.m_pop__(), List));
    let prefixLength = j_l_String.m_length__java_lang_String(ctx.m_getAbsolutePath__());
    for (let $iterator = tryConsume.m_iterator__(); $iterator.m_hasNext__(); ) {
-    let error = /**@type {EditorError} */ ($Casts.$to($iterator.m_next__(), EditorError));
+    let error = /**@type {EditorError}*/ ($Casts.$to($iterator.m_next__(), EditorError));
     if ((prefixLength > 0) && (prefixLength < j_l_String.m_length__java_lang_String(error.m_getAbsolutePath__()))) {
-     /**@type {SimpleError} */ ($Casts.$to(error, SimpleError)).m_setPathPrefixLength__int_$pp_org_gwtproject_editor_client_impl(prefixLength + 1);
+     /**@type {SimpleError}*/ ($Casts.$to(error, SimpleError)).m_setPathPrefixLength__int_$pp_org_gwtproject_editor_client_impl(prefixLength + 1);
     } else {
      $Asserts.$assert(prefixLength == 0 || j_l_String.m_equals__java_lang_String__java_lang_Object(error.m_getAbsolutePath__(), ctx.m_getAbsolutePath__()));
-     /**@type {SimpleError} */ ($Casts.$to(error, SimpleError)).m_setPathPrefixLength__int_$pp_org_gwtproject_editor_client_impl(prefixLength);
+     /**@type {SimpleError}*/ ($Casts.$to(error, SimpleError)).m_setPathPrefixLength__int_$pp_org_gwtproject_editor_client_impl(prefixLength);
     }
    }
    asErrors.m_showErrors__java_util_List(tryConsume);
    if (!tryConsume.isEmpty()) {
-    let accumulator = /**@type {List<EditorError>} */ ($Casts.$to(this.f_errorStack__org_gwtproject_editor_client_impl_ErrorCollector_.m_peek__(), List));
+    let accumulator = /**@type {List<EditorError>}*/ ($Casts.$to(this.f_errorStack__org_gwtproject_editor_client_impl_ErrorCollector_.m_peek__(), List));
     for (let $iterator_1 = tryConsume.m_iterator__(); $iterator_1.m_hasNext__(); ) {
-     let e = /**@type {EditorError} */ ($Casts.$to($iterator_1.m_next__(), EditorError));
+     let e = /**@type {EditorError}*/ ($Casts.$to($iterator_1.m_next__(), EditorError));
      if (!e.m_isConsumed__()) {
       accumulator.add(e);
      }
@@ -91,50 +77,34 @@ class ErrorCollector extends EditorVisitor {
    }
   }
  }
- /**
-  * @override
-  * @template Q
-  * @param {EditorContext<Q>} ctx
-  * @return {boolean}
-  * @public
-  */
- m_visit__org_gwtproject_editor_client_EditorContext(ctx) {
+ /** @override @template Q @return {boolean} */
+ m_visit__org_gwtproject_editor_client_EditorContext(/** EditorContext<Q> */ ctx) {
   let asErrors = ctx.m_asHasEditorErrors__();
   if (!$Equality.$same(asErrors, null)) {
    if (j_l_String.m_equals__java_lang_String__java_lang_Object(ctx.m_getAbsolutePath__(), this.f_lastAddedPath__org_gwtproject_editor_client_impl_ErrorCollector_)) {
-    /**@type {List<EditorError>} */ ($Casts.$to(this.f_errorStack__org_gwtproject_editor_client_impl_ErrorCollector_.m_peek__(), List)).removeAll(this.f_lastAdded__org_gwtproject_editor_client_impl_ErrorCollector_);
+    /**@type {List<EditorError>}*/ ($Casts.$to(this.f_errorStack__org_gwtproject_editor_client_impl_ErrorCollector_.m_peek__(), List)).removeAll(this.f_lastAdded__org_gwtproject_editor_client_impl_ErrorCollector_);
     this.f_errorStack__org_gwtproject_editor_client_impl_ErrorCollector_.m_push__java_lang_Object(this.f_lastAdded__org_gwtproject_editor_client_impl_ErrorCollector_);
    } else {
-    this.f_errorStack__org_gwtproject_editor_client_impl_ErrorCollector_.m_push__java_lang_Object(/**@type {!ArrayList<EditorError>} */ (ArrayList.$create__()));
+    this.f_errorStack__org_gwtproject_editor_client_impl_ErrorCollector_.m_push__java_lang_Object(/**@type {!ArrayList<EditorError>}*/ (ArrayList.$create__()));
    }
   }
   return true;
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_editor_client_impl_ErrorCollector() {
-  this.f_errorStack__org_gwtproject_editor_client_impl_ErrorCollector_ = /**@type {!Stack<List<EditorError>>} */ (Stack.$create__());
+  this.f_errorStack__org_gwtproject_editor_client_impl_ErrorCollector_ = /**@type {!Stack<List<EditorError>>}*/ (Stack.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ErrorCollector.$clinit = () =>{};
   ErrorCollector.$loadModules();
   EditorVisitor.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ErrorCollector;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   ArrayList = goog.module.get('java.util.ArrayList$impl');

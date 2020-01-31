@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"NotificationMole_BinderImpl_TemplateImpl.impl.java.js",
-"lineCount":69,
-"mappings":"A;;;;;;;;;;;;;;MAKa,0C;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,qD;EAAAA,iE;EAAAA,4F;EAAAA,iB;;;;;CAAA,+E;EAAAC,iC;;;;;;;;;;;;CAKoC,iG,CACxBC,I,EACAC,I,EACAC,I,EACAC,I,EACAC,I;EACrBC,IAAcC,EAAdD,6B;EACAA,8C;EACAA,kF;EACAA,wC;EACAA,kF;EACAA,mE;EACAA,kF;EACAA,kD;EACAA,kF;EACAA,wC;EACAA,kF;EACAA,yD;EACJA,mG;;;;;QAvBa,O;EAAAE,6D;EAAAA,0D;EAAAA;",
+"lineCount":51,
+"mappings":"A;;;;;;;;;;;;;;MAKa,0C;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,qD;EAAAA,iE;EAAAA,4F;EAAAA,iB;;;CAAA,+E;EAAAC,iC;;;CAKoC,iG,gBACxBC,I,iBACAC,I,iBACAC,I,iBACAC,I,iBACAC,I;EACrBC,IAAcC,EAAdD,6B;EACAA,8C;EACAA,kF;EACAA,wC;EACAA,kF;EACAA,mE;EACAA,kF;EACAA,kD;EACAA,kF;EACAA,wC;EACAA,kF;EACAA,yD;EACJA,mG;;;QAvBa,O;EAAAE,6D;EAAAA,0D;EAAAA;",
 "sources":["NotificationMole_BinderImpl_TemplateImpl.java"],
 "names":["org.gwtproject.user.client.ui.NotificationMole_BinderImpl_TemplateImpl.<synthetic: ctor_js>","org.gwtproject.user.client.ui.NotificationMole_BinderImpl_TemplateImpl.<synthetic: ctor_create>","org.gwtproject.user.client.ui.NotificationMole_BinderImpl_TemplateImpl.<init>","arg0","arg1","arg2","arg3","arg4","org.gwtproject.user.client.ui.NotificationMole_BinderImpl_TemplateImpl.html1","sb","org.gwtproject.user.client.ui.NotificationMole_BinderImpl_TemplateImpl.<clinit>"]
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"FormPanel$SubmitEvent.impl.java.js",
-"lineCount":132,
-"mappings":"A;;;;;;;;;;;;;MAoIsB,W;;;;CAAA,W;EAAAA,Q;EAAAA;OAkBF,gEAlBEA,S;;;;;;QAAA,S;EAAAC,sB;EAAAA,kC;EAAAA,yE;EAAAA,iB;;;;;CAAA,4D;EAAAC,kD;EAAAA,sE;;;;;;QAWgB,W;EAAAC,sB;EAChCA;GACEA,iIADFA;G;EAGAA,gF;;;;;CASU,U;EACVC,6E;;;;;;;CAI+B,qB;EAC/BC,iC;;;;;;CAQa,c;EACbC,6E;;;;;;CAIa,iE,CAAuBC,O;EACpCC,8E;;;;;;;CAUG,wD,CAAoBC,Q;EACvBC,iF;;;;;;;;CAvDgB,4B;EAAAF,sI;;;;;CAAA,8D;EAkBlBN,8E;;;;;QAlBkB,O;EAAAS,8B;EAAAA,2B;EAAAA,gB;;;;;;;;;;;;;;;;;;;;;;;AAAA;YAIiB,4DAJjB;",
+"lineCount":92,
+"mappings":"A;;;;;;;;;;;;;MAoIsB,W;;CAAA,W;EAAAA,Q;EAAAA;OAkBF,gEAlBEA,S;;;QAAA,S;EAAAC,sB;EAAAA,kC;EAAAA,yE;EAAAA,iB;;;CAAA,4D;EAAAC,kD;EAAAA,sE;;;QAWgB,W;EAAAC,sB;EAChCA;GACEA,gIADFA;G;EAGAA,gF;;;CASU,U;EACVC,6E;;;CAI+B,qB;EAC/BC,iC;;;CAQa,c;EACbC,6E;;;CAIa,iE,sBAAuBC,O;EACpCC,8E;;;CAUG,wD,gBAAoBC,Q;EACvBC,iF;;;;CAvDgB,4B;EAAAF,qI;;;CAAA,8D;EAkBlBN,8E;;;QAlBkB,O;EAAAS,8B;EAAAA,2B;EAAAA,gB;;;;;;;;;;;;;;;;;AAAA;YAIiB,4DAJjB;",
 "sources":["FormPanel.java"],
 "names":["org.gwtproject.user.client.ui.FormPanel$SubmitEvent.<synthetic: ctor_js>","org.gwtproject.user.client.ui.FormPanel$SubmitEvent.<synthetic: ctor_create>","org.gwtproject.user.client.ui.FormPanel$SubmitEvent.<init>","org.gwtproject.user.client.ui.FormPanel$SubmitEvent.getType","org.gwtproject.user.client.ui.FormPanel$SubmitEvent.cancel","org.gwtproject.user.client.ui.FormPanel$SubmitEvent.getAssociatedType","org.gwtproject.user.client.ui.FormPanel$SubmitEvent.isCanceled","handler","org.gwtproject.user.client.ui.FormPanel$SubmitEvent.dispatch","canceled","org.gwtproject.user.client.ui.FormPanel$SubmitEvent.setCanceled","org.gwtproject.user.client.ui.FormPanel$SubmitEvent.<clinit>"]
 }

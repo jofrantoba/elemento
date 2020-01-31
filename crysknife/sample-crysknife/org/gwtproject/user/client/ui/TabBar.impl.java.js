@@ -38,29 +38,22 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {HasSelectionHandlers<Integer>}
   */
 class TabBar extends Composite {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {HorizontalPanel} */
+  /**@type {HorizontalPanel}*/
   this.f_panel__org_gwtproject_user_client_ui_TabBar_;
-  /** @public {Widget} */
+  /**@type {Widget}*/
   this.f_selectedTab__org_gwtproject_user_client_ui_TabBar_;
  }
- /**
-  * @return {!TabBar}
-  * @public
-  */
+ /** @return {!TabBar} */
  static $create__() {
   TabBar.$clinit();
   let $instance = new TabBar();
   $instance.$ctor__org_gwtproject_user_client_ui_TabBar__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_TabBar__() {
   this.$ctor__org_gwtproject_user_client_ui_Composite__();
   this.$init___$p_org_gwtproject_user_client_ui_TabBar();
@@ -82,117 +75,71 @@ class TabBar extends Composite {
   UIObject.m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String($Overlay.m_getParentElement__$devirt__org_gwtproject_dom_client_Node(first.m_getElement__()), "gwt-TabBarFirst-wrapper");
   UIObject.m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String($Overlay.m_getParentElement__$devirt__org_gwtproject_dom_client_Node(rest.m_getElement__()), "gwt-TabBarRest-wrapper");
  }
- /**
-  * @override
-  * @param {BeforeSelectionHandler<Integer>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addBeforeSelectionHandler__org_gwtproject_event_logical_shared_BeforeSelectionHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addBeforeSelectionHandler__org_gwtproject_event_logical_shared_BeforeSelectionHandler(/** BeforeSelectionHandler<Integer> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, BeforeSelectionEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {SelectionHandler<Integer>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addSelectionHandler__org_gwtproject_event_logical_shared_SelectionHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addSelectionHandler__org_gwtproject_event_logical_shared_SelectionHandler(/** SelectionHandler<Integer> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, SelectionEvent.m_getType__());
  }
- /**
-  * @param {SafeHtml} html
-  * @public
-  */
- m_addTab__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ 
+ m_addTab__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   this.m_addTab__java_lang_String__boolean(html.m_asString__(), true);
  }
- /**
-  * @param {?string} text
-  * @public
-  */
- m_addTab__java_lang_String(text) {
+ 
+ m_addTab__java_lang_String(/** ?string */ text) {
   this.m_insertTab__java_lang_String__int(text, this.m_getTabCount__());
  }
- /**
-  * @param {?string} text
-  * @param {boolean} asHTML
-  * @public
-  */
- m_addTab__java_lang_String__boolean(text, asHTML) {
+ 
+ m_addTab__java_lang_String__boolean(/** ?string */ text, /** boolean */ asHTML) {
   this.m_insertTab__java_lang_String__boolean__int(text, asHTML, this.m_getTabCount__());
  }
- /**
-  * @param {Widget} widget
-  * @public
-  */
- m_addTab__org_gwtproject_user_client_ui_Widget(widget) {
+ 
+ m_addTab__org_gwtproject_user_client_ui_Widget(/** Widget */ widget) {
   this.m_insertTab__org_gwtproject_user_client_ui_Widget__int(widget, this.m_getTabCount__());
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getSelectedTab__() {
   if ($Equality.$same(this.f_selectedTab__org_gwtproject_user_client_ui_TabBar_, null)) {
    return -1;
   }
   return this.f_panel__org_gwtproject_user_client_ui_TabBar_.m_getWidgetIndex__org_gwtproject_user_client_ui_Widget(this.f_selectedTab__org_gwtproject_user_client_ui_TabBar_) - 1;
  }
- /**
-  * @param {number} index
-  * @return {Tab}
-  * @public
-  */
- m_getTab__int(index) {
+ /** @return {Tab} */
+ m_getTab__int(/** number */ index) {
   if (index >= this.m_getTabCount__()) {
    return null;
   }
-  let p = /**@type {ClickDelegatePanel} */ ($Casts.$to(this.f_panel__org_gwtproject_user_client_ui_TabBar_.m_getWidget__int(index + 1), ClickDelegatePanel));
+  let p = /**@type {ClickDelegatePanel}*/ ($Casts.$to(this.f_panel__org_gwtproject_user_client_ui_TabBar_.m_getWidget__int(index + 1), ClickDelegatePanel));
   return p;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getTabCount__() {
   return this.f_panel__org_gwtproject_user_client_ui_TabBar_.m_getWidgetCount__() - 2;
  }
- /**
-  * @param {number} index
-  * @return {?string}
-  * @public
-  */
- m_getTabHTML__int(index) {
+ /** @return {?string} */
+ m_getTabHTML__int(/** number */ index) {
   if (index >= this.m_getTabCount__()) {
    return null;
   }
-  let delPanel = /**@type {ClickDelegatePanel} */ ($Casts.$to(this.f_panel__org_gwtproject_user_client_ui_TabBar_.m_getWidget__int(index + 1), ClickDelegatePanel));
+  let delPanel = /**@type {ClickDelegatePanel}*/ ($Casts.$to(this.f_panel__org_gwtproject_user_client_ui_TabBar_.m_getWidget__int(index + 1), ClickDelegatePanel));
   let focusablePanel = delPanel.m_getFocusablePanel__();
   let widget = focusablePanel.m_getWidget__();
   if (HTML.$isInstance(widget)) {
-   return /**@type {HTML} */ ($Casts.$to(widget, HTML)).m_getHTML__();
+   return /**@type {HTML}*/ ($Casts.$to(widget, HTML)).m_getHTML__();
   } else if (Label.$isInstance(widget)) {
-   return /**@type {Label} */ ($Casts.$to(widget, Label)).m_getText__();
+   return /**@type {Label}*/ ($Casts.$to(widget, Label)).m_getText__();
   } else {
    return Element_$Overlay.m_getInnerHTML__$devirt__org_gwtproject_dom_client_Element($Overlay.m_getParentElement__$devirt__org_gwtproject_dom_client_Node(focusablePanel.m_getElement__()));
   }
  }
- /**
-  * @param {SafeHtml} html
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insertTab__org_gwtproject_safehtml_shared_SafeHtml__int(html, beforeIndex) {
+ 
+ m_insertTab__org_gwtproject_safehtml_shared_SafeHtml__int(/** SafeHtml */ html, /** number */ beforeIndex) {
   this.m_insertTab__java_lang_String__boolean__int(html.m_asString__(), true, beforeIndex);
  }
- /**
-  * @param {?string} text
-  * @param {boolean} asHTML
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insertTab__java_lang_String__boolean__int(text, asHTML, beforeIndex) {
+ 
+ m_insertTab__java_lang_String__boolean__int(/** ?string */ text, /** boolean */ asHTML, /** number */ beforeIndex) {
   this.m_checkInsertBeforeTabIndex__int_$p_org_gwtproject_user_client_ui_TabBar(beforeIndex);
   let /** Label */ item;
   if (asHTML) {
@@ -203,37 +150,22 @@ class TabBar extends Composite {
   item.m_setWordWrap__boolean(false);
   this.m_insertTabWidget__org_gwtproject_user_client_ui_Widget__int(item, beforeIndex);
  }
- /**
-  * @param {?string} text
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insertTab__java_lang_String__int(text, beforeIndex) {
+ 
+ m_insertTab__java_lang_String__int(/** ?string */ text, /** number */ beforeIndex) {
   this.m_insertTab__java_lang_String__boolean__int(text, false, beforeIndex);
  }
- /**
-  * @param {Widget} widget
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insertTab__org_gwtproject_user_client_ui_Widget__int(widget, beforeIndex) {
+ 
+ m_insertTab__org_gwtproject_user_client_ui_Widget__int(/** Widget */ widget, /** number */ beforeIndex) {
   this.m_insertTabWidget__org_gwtproject_user_client_ui_Widget__int(widget, beforeIndex);
  }
- /**
-  * @param {number} index
-  * @return {boolean}
-  * @public
-  */
- m_isTabEnabled__int(index) {
+ /** @return {boolean} */
+ m_isTabEnabled__int(/** number */ index) {
   $Asserts.$assertWithMessage((index >= 0) && (index < this.m_getTabCount__()), "Tab index out of bounds");
-  let delPanel = /**@type {ClickDelegatePanel} */ ($Casts.$to(this.f_panel__org_gwtproject_user_client_ui_TabBar_.m_getWidget__int(index + 1), ClickDelegatePanel));
+  let delPanel = /**@type {ClickDelegatePanel}*/ ($Casts.$to(this.f_panel__org_gwtproject_user_client_ui_TabBar_.m_getWidget__int(index + 1), ClickDelegatePanel));
   return delPanel.m_isEnabled__();
  }
- /**
-  * @param {number} index
-  * @public
-  */
- m_removeTab__int(index) {
+ 
+ m_removeTab__int(/** number */ index) {
   this.m_checkTabIndex__int_$p_org_gwtproject_user_client_ui_TabBar(index);
   let toRemove = this.f_panel__org_gwtproject_user_client_ui_TabBar_.m_getWidget__int(index + 1);
   if ($Equality.$same(toRemove, this.f_selectedTab__org_gwtproject_user_client_ui_TabBar_)) {
@@ -241,24 +173,15 @@ class TabBar extends Composite {
   }
   this.f_panel__org_gwtproject_user_client_ui_TabBar_.m_remove__org_gwtproject_user_client_ui_Widget(toRemove);
  }
- /**
-  * @param {number} index
-  * @return {boolean}
-  * @public
-  */
- m_selectTab__int(index) {
+ /** @return {boolean} */
+ m_selectTab__int(/** number */ index) {
   return this.m_selectTab__int__boolean(index, true);
  }
- /**
-  * @param {number} index
-  * @param {boolean} fireEvents
-  * @return {boolean}
-  * @public
-  */
- m_selectTab__int__boolean(index, fireEvents) {
+ /** @return {boolean} */
+ m_selectTab__int__boolean(/** number */ index, /** boolean */ fireEvents) {
   this.m_checkTabIndex__int_$p_org_gwtproject_user_client_ui_TabBar(index);
   if (fireEvents) {
-   let event = /**@type {BeforeSelectionEvent<Integer>} */ (BeforeSelectionEvent.m_fire__org_gwtproject_event_logical_shared_HasBeforeSelectionHandlers__java_lang_Object(this, Integer.m_valueOf__int(index)));
+   let event = /**@type {BeforeSelectionEvent<Integer>}*/ (BeforeSelectionEvent.m_fire__org_gwtproject_event_logical_shared_HasBeforeSelectionHandlers__java_lang_Object(this, Integer.m_valueOf__int(index)));
    if (!$Equality.$same(event, null) && event.m_isCanceled__()) {
     return false;
    }
@@ -275,61 +198,38 @@ class TabBar extends Composite {
   }
   return true;
  }
- /**
-  * @param {number} index
-  * @param {boolean} enabled
-  * @public
-  */
- m_setTabEnabled__int__boolean(index, enabled) {
+ 
+ m_setTabEnabled__int__boolean(/** number */ index, /** boolean */ enabled) {
   $Asserts.$assertWithMessage((index >= 0) && (index < this.m_getTabCount__()), "Tab index out of bounds");
-  let delPanel = /**@type {ClickDelegatePanel} */ ($Casts.$to(this.f_panel__org_gwtproject_user_client_ui_TabBar_.m_getWidget__int(index + 1), ClickDelegatePanel));
+  let delPanel = /**@type {ClickDelegatePanel}*/ ($Casts.$to(this.f_panel__org_gwtproject_user_client_ui_TabBar_.m_getWidget__int(index + 1), ClickDelegatePanel));
   delPanel.m_setEnabled__boolean(enabled);
   UIObject.m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String__boolean(delPanel.m_getElement__(), "gwt-TabBarItem-disabled", !enabled);
   UIObject.m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String__boolean($Overlay.m_getParentElement__$devirt__org_gwtproject_dom_client_Node(delPanel.m_getElement__()), "gwt-TabBarItem-wrapper-disabled", !enabled);
  }
- /**
-  * @param {number} index
-  * @param {?string} html
-  * @public
-  */
- m_setTabHTML__int__java_lang_String(index, html) {
+ 
+ m_setTabHTML__int__java_lang_String(/** number */ index, /** ?string */ html) {
   $Asserts.$assertWithMessage((index >= 0) && (index < this.m_getTabCount__()), "Tab index out of bounds");
-  let delPanel = /**@type {ClickDelegatePanel} */ ($Casts.$to(this.f_panel__org_gwtproject_user_client_ui_TabBar_.m_getWidget__int(index + 1), ClickDelegatePanel));
+  let delPanel = /**@type {ClickDelegatePanel}*/ ($Casts.$to(this.f_panel__org_gwtproject_user_client_ui_TabBar_.m_getWidget__int(index + 1), ClickDelegatePanel));
   let focusablePanel = delPanel.m_getFocusablePanel__();
   focusablePanel.m_setWidget__org_gwtproject_user_client_ui_Widget(HTML.$create__java_lang_String__boolean(html, false));
  }
- /**
-  * @param {number} index
-  * @param {SafeHtml} html
-  * @public
-  */
- m_setTabHTML__int__org_gwtproject_safehtml_shared_SafeHtml(index, html) {
+ 
+ m_setTabHTML__int__org_gwtproject_safehtml_shared_SafeHtml(/** number */ index, /** SafeHtml */ html) {
   this.m_setTabHTML__int__java_lang_String(index, html.m_asString__());
  }
- /**
-  * @param {number} index
-  * @param {?string} text
-  * @public
-  */
- m_setTabText__int__java_lang_String(index, text) {
+ 
+ m_setTabText__int__java_lang_String(/** number */ index, /** ?string */ text) {
   $Asserts.$assertWithMessage((index >= 0) && (index < this.m_getTabCount__()), "Tab index out of bounds");
-  let delPanel = /**@type {ClickDelegatePanel} */ ($Casts.$to(this.f_panel__org_gwtproject_user_client_ui_TabBar_.m_getWidget__int(index + 1), ClickDelegatePanel));
+  let delPanel = /**@type {ClickDelegatePanel}*/ ($Casts.$to(this.f_panel__org_gwtproject_user_client_ui_TabBar_.m_getWidget__int(index + 1), ClickDelegatePanel));
   let focusablePanel = delPanel.m_getFocusablePanel__();
   focusablePanel.m_setWidget__org_gwtproject_user_client_ui_Widget(Label.$create__java_lang_String__boolean(text, false));
  }
- /**
-  * @return {SimplePanel}
-  * @public
-  */
+ /** @return {SimplePanel} */
  m_createTabTextWrapper__() {
   return null;
  }
- /**
-  * @param {Widget} widget
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insertTabWidget__org_gwtproject_user_client_ui_Widget__int(widget, beforeIndex) {
+ 
+ m_insertTabWidget__org_gwtproject_user_client_ui_Widget__int(/** Widget */ widget, /** number */ beforeIndex) {
   this.m_checkInsertBeforeTabIndex__int_$p_org_gwtproject_user_client_ui_TabBar(beforeIndex);
   let delWidget = ClickDelegatePanel.$create__org_gwtproject_user_client_ui_TabBar__org_gwtproject_user_client_ui_Widget(this, widget);
   delWidget.m_setStyleName__java_lang_String(TabBar.f_STYLENAME_DEFAULT__org_gwtproject_user_client_ui_TabBar_);
@@ -338,45 +238,31 @@ class TabBar extends Composite {
   this.f_panel__org_gwtproject_user_client_ui_TabBar_.m_insert__org_gwtproject_user_client_ui_Widget__int(delWidget, beforeIndex + 1);
   UIObject.m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String__boolean(DOM.m_getParent__org_gwtproject_dom_client_Element(delWidget.m_getElement__()), j_l_String.m_valueOf__java_lang_Object(TabBar.f_STYLENAME_DEFAULT__org_gwtproject_user_client_ui_TabBar_) + "-wrapper", true);
  }
- /**
-  * @override
-  * @param {?string} baseID
-  * @public
-  */
- m_onEnsureDebugId__java_lang_String(baseID) {
+ /** @override */
+ m_onEnsureDebugId__java_lang_String(/** ?string */ baseID) {
   super.m_onEnsureDebugId__java_lang_String(baseID);
   let numTabs = this.m_getTabCount__();
   for (let i = 0; i < numTabs; i++) {
-   let delPanel = /**@type {ClickDelegatePanel} */ ($Casts.$to(this.f_panel__org_gwtproject_user_client_ui_TabBar_.m_getWidget__int(i + 1), ClickDelegatePanel));
+   let delPanel = /**@type {ClickDelegatePanel}*/ ($Casts.$to(this.f_panel__org_gwtproject_user_client_ui_TabBar_.m_getWidget__int(i + 1), ClickDelegatePanel));
    let focusablePanel = delPanel.m_getFocusablePanel__();
    UIObject.m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(focusablePanel.m_getContainerElement__(), baseID, "tab" + i);
    UIObject.m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(DOM.m_getParent__org_gwtproject_dom_client_Element(delPanel.m_getElement__()), baseID, "tab-wrapper" + i);
   }
  }
- /**
-  * @param {number} beforeIndex
-  * @public
-  */
- m_checkInsertBeforeTabIndex__int_$p_org_gwtproject_user_client_ui_TabBar(beforeIndex) {
+ 
+ m_checkInsertBeforeTabIndex__int_$p_org_gwtproject_user_client_ui_TabBar(/** number */ beforeIndex) {
   if ((beforeIndex < 0) || (beforeIndex > this.m_getTabCount__())) {
    throw $Exceptions.toJs(IndexOutOfBoundsException.$create__());
   }
  }
- /**
-  * @param {number} index
-  * @public
-  */
- m_checkTabIndex__int_$p_org_gwtproject_user_client_ui_TabBar(index) {
+ 
+ m_checkTabIndex__int_$p_org_gwtproject_user_client_ui_TabBar(/** number */ index) {
   if ((index < -1) || (index >= this.m_getTabCount__())) {
    throw $Exceptions.toJs(IndexOutOfBoundsException.$create__());
   }
  }
- /**
-  * @param {Widget} tabWidget
-  * @return {boolean}
-  * @public
-  */
- m_selectTabByTabWidget__org_gwtproject_user_client_ui_Widget_$p_org_gwtproject_user_client_ui_TabBar(tabWidget) {
+ /** @return {boolean} */
+ m_selectTabByTabWidget__org_gwtproject_user_client_ui_Widget_$p_org_gwtproject_user_client_ui_TabBar(/** Widget */ tabWidget) {
   let numTabs = this.f_panel__org_gwtproject_user_client_ui_TabBar_.m_getWidgetCount__() - 1;
   for (let i = 1; i < numTabs; ++i) {
    if ($Equality.$same(this.f_panel__org_gwtproject_user_client_ui_TabBar_.m_getWidget__int(i), tabWidget)) {
@@ -385,12 +271,8 @@ class TabBar extends Composite {
   }
   return false;
  }
- /**
-  * @param {Widget} item
-  * @param {boolean} selected
-  * @public
-  */
- m_setSelectionStyle__org_gwtproject_user_client_ui_Widget__boolean_$p_org_gwtproject_user_client_ui_TabBar(item, selected) {
+ 
+ m_setSelectionStyle__org_gwtproject_user_client_ui_Widget__boolean_$p_org_gwtproject_user_client_ui_TabBar(/** Widget */ item, /** boolean */ selected) {
   if (!$Equality.$same(item, null)) {
    if (selected) {
     item.m_addStyleName__java_lang_String("gwt-TabBarItem-selected");
@@ -401,31 +283,21 @@ class TabBar extends Composite {
    }
   }
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_TabBar() {
   this.f_panel__org_gwtproject_user_client_ui_TabBar_ = HorizontalPanel.$create__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TabBar.$clinit = () =>{};
   TabBar.$loadModules();
   Composite.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TabBar;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IndexOutOfBoundsException = goog.module.get('java.lang.IndexOutOfBoundsException$impl');
   Integer = goog.module.get('java.lang.Integer$impl');
@@ -455,7 +327,7 @@ $Util.$setClassMetadata(TabBar, 'org.gwtproject.user.client.ui.TabBar');
 HasBeforeSelectionHandlers.$markImplementor(TabBar);
 HasSelectionHandlers.$markImplementor(TabBar);
 
-/** @public {?string} @const */
+/**@const {?string}*/
 TabBar.f_STYLENAME_DEFAULT__org_gwtproject_user_client_ui_TabBar_ = "gwt-TabBarItem";
 
 exports = TabBar; 

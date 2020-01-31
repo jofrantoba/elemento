@@ -14,69 +14,42 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {QuoteBuilder}
   */
 class DomQuoteBuilder extends DomElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @return {!DomQuoteBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ /** @return {!DomQuoteBuilder} */
+ static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   DomQuoteBuilder.$clinit();
   let $instance = new DomQuoteBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_client_DomQuoteBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_client_DomQuoteBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_client_DomQuoteBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_client_DomElementBuilderBase__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
  }
- /**
-  * @override
-  * @param {SafeUri} cite
-  * @return {QuoteBuilder}
-  * @public
-  */
- m_cite__org_gwtproject_safehtml_shared_SafeUri(cite) {
-  $Overlay.m_setCite__$devirt__org_gwtproject_dom_client_QuoteElement__org_gwtproject_safehtml_shared_SafeUri(/**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)), cite);
+ /** @override @return {QuoteBuilder} */
+ m_cite__org_gwtproject_safehtml_shared_SafeUri(/** SafeUri */ cite) {
+  $Overlay.m_setCite__$devirt__org_gwtproject_dom_client_QuoteElement__org_gwtproject_safehtml_shared_SafeUri(/**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)), cite);
   return this;
  }
- /**
-  * @override
-  * @param {?string} cite
-  * @return {QuoteBuilder}
-  * @public
-  */
- m_cite__java_lang_String(cite) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).cite = cite;
+ /** @override @return {QuoteBuilder} */
+ m_cite__java_lang_String(/** ?string */ cite) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).cite = cite;
   return this;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomQuoteBuilder.$clinit = () =>{};
   DomQuoteBuilder.$loadModules();
   DomElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomQuoteBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('org.gwtproject.dom.client.QuoteElement.$Overlay$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

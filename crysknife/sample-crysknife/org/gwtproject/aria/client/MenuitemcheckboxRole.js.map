@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MenuitemcheckboxRole.impl.java.js",
-"lineCount":18,
-"mappings":"A;;;;;;;;;;;MA2BiB,oB;;;;QAAA,O;EAAAA,uC;EAAAA;",
+"lineCount":16,
+"mappings":"A;;;;;;;;;;;MA2BiB,oB;;QAAA,O;EAAAA,uC;EAAAA;",
 "sources":["MenuitemcheckboxRole.java"],
 "names":["org.gwtproject.aria.client.MenuitemcheckboxRole.<clinit>"]
 }

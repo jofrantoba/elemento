@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"AriaValueAttribute.impl.java.js",
-"lineCount":88,
-"mappings":"A;;;;;;;;;;;;MAoBM,kB;;;;CAAA,W;EAAAA,Q;;;;;;;;;;QAEG,2C,CAA0BC,I,EAAaC,Y;EAAvCC,6B;EAAAA,yC;EAAAA,uH;EAAAA,iB;;;;;;;;CAAA,wF,CAA0BF,I,EAAaC,Y;EAC5CE,yG;;;;;;;;;QAGK,yB,CAA0BH,I;EAA1BE,6B;EAAAA,yC;EAAAA,uF;EAAAA,iB;;;;;;;CAAA,sE,CAA0BF,I;EAC/BG,yE;;;;;;;CAIe,8D,CAAiBC,K;EAChCC,kE;;;;;;;;;CAZE,kC;EAAAA,kI;;;;;QAAA,O;EAAAC,qC;EAAAA,kC;EAAAA;",
+"lineCount":57,
+"mappings":"A;;;;;;;;;;;;MAoBM,kB;;CAAA,W;EAAAA,Q;;;;QAEG,2C,gBAA0BC,I,iBAAaC,Y;EAAvCC,6B;EAAAA,yC;EAAAA,uH;EAAAA,iB;;;;CAAA,wF,gBAA0BF,I,iBAAaC,Y;EAC5CE,yG;;;;QAGK,yB,gBAA0BH,I;EAA1BE,6B;EAAAA,yC;EAAAA,uF;EAAAA,iB;;;;CAAA,sE,gBAA0BF,I;EAC/BG,yE;;;CAIe,8D,UAAiBC,K;EAChCC,iE;;;;CAZE,kC;EAAAA,iI;;;QAAA,O;EAAAC,qC;EAAAA,kC;EAAAA;",
 "sources":["AriaValueAttribute.java"],
 "names":["org.gwtproject.aria.client.AriaValueAttribute.<synthetic: ctor_js>","name","defaultValue","org.gwtproject.aria.client.AriaValueAttribute.<synthetic: ctor_create>","org.gwtproject.aria.client.AriaValueAttribute.<init>","value","org.gwtproject.aria.client.AriaValueAttribute.getSingleValue","org.gwtproject.aria.client.AriaValueAttribute.<clinit>"]
 }

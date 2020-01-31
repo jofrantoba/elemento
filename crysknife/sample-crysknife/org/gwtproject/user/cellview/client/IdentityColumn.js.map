@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"IdentityColumn.impl.java.js",
-"lineCount":53,
-"mappings":"A;;;;;;;;;;;MAyBa,c;;;;CAAA,W;EAAAA,Q;;;;;;;;QAOJ,wC,CAAuBC,I;EAAvBC,yB;EAAAA,qC;EAAAA,2G;EAAAA,iB;;;;;;CAAA,0F,CAAuBD,I;EAC5BE,8F;;;;;;;;CASO,4B,CAAWC,M;EAClBC,c;;;;;QAlBS,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":36,
+"mappings":"A;;;;;;;;;;;MAyBa,c;;CAAA,W;EAAAA,Q;;;QAOJ,wC,gBAAuBC,I;EAAvBC,yB;EAAAA,qC;EAAAA,2G;EAAAA,iB;;;CAAA,0F,gBAAuBD,I;EAC5BE,8F;;;CASO,4B,UAAWC,M;EAClBC,c;;;QAlBS,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["IdentityColumn.java"],
 "names":["org.gwtproject.user.cellview.client.IdentityColumn.<synthetic: ctor_js>","cell","org.gwtproject.user.cellview.client.IdentityColumn.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.IdentityColumn.<init>","object","org.gwtproject.user.cellview.client.IdentityColumn.getValue","org.gwtproject.user.cellview.client.IdentityColumn.<clinit>"]
 }

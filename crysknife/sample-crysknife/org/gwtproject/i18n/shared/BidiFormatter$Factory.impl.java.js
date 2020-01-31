@@ -10,57 +10,36 @@ let BidiFormatter = goog.forwardDeclare('org.gwtproject.i18n.shared.BidiFormatte
  * @extends {Factory<BidiFormatter>}
   */
 class BidiFormatter_Factory extends Factory {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!BidiFormatter_Factory}
-  * @public
-  */
+ /** @return {!BidiFormatter_Factory} */
  static $create__() {
   BidiFormatter_Factory.$clinit();
   let $instance = new BidiFormatter_Factory();
   $instance.$ctor__org_gwtproject_i18n_shared_BidiFormatter_Factory__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_i18n_shared_BidiFormatter_Factory__() {
   this.$ctor__org_gwtproject_i18n_shared_BidiFormatterBase_Factory__();
  }
- /**
-  * @override
-  * @param {Direction} contextDir
-  * @param {boolean} alwaysSpan
-  * @return {BidiFormatter}
-  * @public
-  */
- m_createInstance__org_gwtproject_i18n_client_HasDirection_Direction__boolean(contextDir, alwaysSpan) {
+ /** @override @return {BidiFormatter} */
+ m_createInstance__org_gwtproject_i18n_client_HasDirection_Direction__boolean(/** Direction */ contextDir, /** boolean */ alwaysSpan) {
   return BidiFormatter.$create__org_gwtproject_i18n_client_HasDirection_Direction__boolean(contextDir, alwaysSpan);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   BidiFormatter_Factory.$clinit = () =>{};
   BidiFormatter_Factory.$loadModules();
   Factory.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof BidiFormatter_Factory;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   BidiFormatter = goog.module.get('org.gwtproject.i18n.shared.BidiFormatter$impl');
  }

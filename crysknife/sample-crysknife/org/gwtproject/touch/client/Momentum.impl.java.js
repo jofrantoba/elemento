@@ -9,49 +9,25 @@ let Point = goog.forwardDeclare('org.gwtproject.touch.client.Point$impl');
  * @interface
  */
 class Momentum {
- /**
-  * @abstract
-  * @param {Point} initialPosition
-  * @param {Point} initialVelocity
-  * @return {State}
-  * @public
-  */
- m_createState__org_gwtproject_touch_client_Point__org_gwtproject_touch_client_Point(initialPosition, initialVelocity) {}
- /**
-  * @abstract
-  * @param {State} state
-  * @return {boolean}
-  * @public
-  */
- m_updateState__org_gwtproject_touch_client_Momentum_State(state) {}
- /**
-  * @public
-  */
+ /** @abstract @return {State} */
+ m_createState__org_gwtproject_touch_client_Point__org_gwtproject_touch_client_Point(/** Point */ initialPosition, /** Point */ initialVelocity) {}
+ /** @abstract @return {boolean} */
+ m_updateState__org_gwtproject_touch_client_Momentum_State(/** State */ state) {}
+ 
  static $clinit() {
   Momentum.$clinit = () =>{};
   Momentum.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_touch_client_Momentum = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_touch_client_Momentum = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_touch_client_Momentum;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

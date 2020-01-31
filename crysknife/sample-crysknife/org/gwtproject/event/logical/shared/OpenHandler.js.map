@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"OpenHandler.impl.java.js",
-"lineCount":34,
-"mappings":"A;;;;;;;;;;;MAsBiB,W;;;;;;CAOV,uD,CAAoBA,K;;;;;;;QAPV,M;EAAAC,sB;EAAAA,iE;;;;;QAAA,O;EAAAC,8B;EAAAA;",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;MAsBiB,W;;CAOV,uD,qBAAoBA,K;;QAPV,M;EAAAC,sB;EAAAA,gE;;;QAAA,O;EAAAC,8B;EAAAA;",
 "sources":["OpenHandler.java"],
 "names":["event","org.gwtproject.event.logical.shared.OpenHandler.<synthetic: adapt_lambda>","org.gwtproject.event.logical.shared.OpenHandler.<clinit>"]
 }

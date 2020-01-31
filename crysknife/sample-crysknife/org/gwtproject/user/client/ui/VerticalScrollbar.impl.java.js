@@ -12,49 +12,28 @@ const IsWidget = goog.require('org.gwtproject.user.client.ui.IsWidget$impl');
  * @extends {IsWidget}
  */
 class VerticalScrollbar {
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {number} */
  m_getScrollHeight__() {}
- /**
-  * @abstract
-  * @param {number} height
-  * @public
-  */
- m_setScrollHeight__int(height) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_setScrollHeight__int(/** number */ height) {}
+ 
  static $clinit() {
   VerticalScrollbar.$clinit = () =>{};
   VerticalScrollbar.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasVerticalScrolling.$markImplementor(classConstructor);
-  HasScrollHandlers.$markImplementor(classConstructor);
-  IsWidget.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_VerticalScrollbar = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasVerticalScrolling.$markImplementor(ctor);
+  HasScrollHandlers.$markImplementor(ctor);
+  IsWidget.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_VerticalScrollbar = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_VerticalScrollbar;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

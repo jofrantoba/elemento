@@ -10,84 +10,36 @@ let Map = goog.forwardDeclare('java.util.Map$impl');
  * @extends {Constants}
  */
 class ConstantsWithLookup {
- /**
-  * @abstract
-  * @param {?string} methodName
-  * @return {boolean}
-  * @public
-  */
- m_getBoolean__java_lang_String(methodName) {}
- /**
-  * @abstract
-  * @param {?string} methodName
-  * @return {number}
-  * @public
-  */
- m_getDouble__java_lang_String(methodName) {}
- /**
-  * @abstract
-  * @param {?string} methodName
-  * @return {number}
-  * @public
-  */
- m_getFloat__java_lang_String(methodName) {}
- /**
-  * @abstract
-  * @param {?string} methodName
-  * @return {number}
-  * @public
-  */
- m_getInt__java_lang_String(methodName) {}
- /**
-  * @abstract
-  * @param {?string} methodName
-  * @return {Map<?string, ?string>}
-  * @public
-  */
- m_getMap__java_lang_String(methodName) {}
- /**
-  * @abstract
-  * @param {?string} methodName
-  * @return {?string}
-  * @public
-  */
- m_getString__java_lang_String(methodName) {}
- /**
-  * @abstract
-  * @param {?string} methodName
-  * @return {Array<?string>}
-  * @public
-  */
- m_getStringArray__java_lang_String(methodName) {}
- /**
-  * @public
-  */
+ /** @abstract @return {boolean} */
+ m_getBoolean__java_lang_String(/** ?string */ methodName) {}
+ /** @abstract @return {number} */
+ m_getDouble__java_lang_String(/** ?string */ methodName) {}
+ /** @abstract @return {number} */
+ m_getFloat__java_lang_String(/** ?string */ methodName) {}
+ /** @abstract @return {number} */
+ m_getInt__java_lang_String(/** ?string */ methodName) {}
+ /** @abstract @return {Map<?string, ?string>} */
+ m_getMap__java_lang_String(/** ?string */ methodName) {}
+ /** @abstract @return {?string} */
+ m_getString__java_lang_String(/** ?string */ methodName) {}
+ /** @abstract @return {Array<?string>} */
+ m_getStringArray__java_lang_String(/** ?string */ methodName) {}
+ 
  static $clinit() {
   ConstantsWithLookup.$clinit = () =>{};
   ConstantsWithLookup.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Constants.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_i18n_client_ConstantsWithLookup = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Constants.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_i18n_client_ConstantsWithLookup = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_i18n_client_ConstantsWithLookup;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

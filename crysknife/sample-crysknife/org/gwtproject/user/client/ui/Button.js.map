@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Button.impl.java.js",
-"lineCount":182,
-"mappings":"A;;;;;;;;;;;;;;;;MA0Ca,M;;;;CAAA,W;EAAAA,Q;;;;;;;QAWU,yC,CAAaC,O;EAAbC,iB;EAEnBA,8J;EAEAA,IAAOC,MAAPD,8D;EAGAA,sB;EACAA,8E;EAEAA,c;;;;;;;QAMK,S;EAAAE,iB;EAAAA,6B;EAAAA,0D;EAAAA,iB;;;;;;CAAA,6C;EACLC,+M;EACAA,oD;;;;;;;;QAQK,gD,CAAgBC,I;EAAhBF,iB;EAAAA,6B;EAAAA,qG;EAAAA,iB;;;;;;;CAAA,oF,CAAgBE,I;EACrBD,wF;;;;;;;;QAQK,yB,CAA0BC,I;EAA1BF,iB;EAAAA,6B;EAAAA,8E;EAAAA,iB;;;;;;;CAAA,6D,CAA0BE,I;EAC/BD,qD;EACAA,uC;;;;;;;;;QASK,8F,CAAgBC,I,EAAmBC,O;EAAnCH,iB;EAAAA,6B;EAAAA,4J;EAAAA,iB;;;;;;;;CAAA,kI,CAAgBE,I,EAAmBC,O;EACxCF,+I;;;;;;;;;QASK,uE,CAA0BC,I,EAAmBC,O;EAA7CH,iB;EAAAA,6B;EAAAA,qI;EAAAA,iB;;;;;;;;CAAA,2G,CAA0BE,I,EAAmBC,O;EAClDF,yE;EACAA,8E;;;;;;;;QASQ,0C,CAAeJ,O;EAAfG,iB;EAAAA,6B;EAAAA,kG;EAAAA,iB;;;;;;;CAAA,8E,CAAeH,O;EACvBI,8O;EACAA,wE;;;;;CAMU,S;EACVG,oC;;;;;;CAQsB,oB;EACtBC,gL;;;;;QAhGS,O;EAAAC,yB;EAAAA,sB;EAAAA;",
+"lineCount":125,
+"mappings":"A;;;;;;;;;;;;;;;;MA0Ca,M;;CAAA,W;EAAAA,Q;;;QAWU,yC,eAAaC,O;EAAbC,iB;EAEnBA,8J;EAEAA,IAAOC,MAAPD,8D;EAGAA,sB;EACAA,8E;EAEAA,c;;;;QAMK,S;EAAAE,iB;EAAAA,6B;EAAAA,0D;EAAAA,iB;;;;CAAA,6C;EACLC,+M;EACAA,oD;;;;QAQK,gD,iBAAgBC,I;EAAhBF,iB;EAAAA,6B;EAAAA,qG;EAAAA,iB;;;;CAAA,oF,iBAAgBE,I;EACrBD,wF;;;;QAQK,yB,gBAA0BC,I;EAA1BF,iB;EAAAA,6B;EAAAA,8E;EAAAA,iB;;;;CAAA,6D,gBAA0BE,I;EAC/BD,qD;EACAA,uC;;;;QASK,8F,iBAAgBC,I,sBAAmBC,O;EAAnCH,iB;EAAAA,6B;EAAAA,4J;EAAAA,iB;;;;CAAA,kI,iBAAgBE,I,sBAAmBC,O;EACxCF,+I;;;;QASK,uE,gBAA0BC,I,sBAAmBC,O;EAA7CH,iB;EAAAA,6B;EAAAA,qI;EAAAA,iB;;;;CAAA,2G,gBAA0BE,I,sBAAmBC,O;EAClDF,yE;EACAA,8E;;;;QASQ,0C,eAAeJ,O;EAAfG,iB;EAAAA,6B;EAAAA,kG;EAAAA,iB;;;;CAAA,8E,eAAeH,O;EACvBI,6O;EACAA,wE;;;CAMU,S;EACVG,oC;;;CAQsB,oB;EACtBC,+K;;;QAhGS,O;EAAAC,yB;EAAAA,sB;EAAAA;",
 "sources":["Button.java"],
 "names":["org.gwtproject.user.client.ui.Button.<synthetic: ctor_js>","element","org.gwtproject.user.client.ui.Button.wrap","button","org.gwtproject.user.client.ui.Button.<synthetic: ctor_create>","org.gwtproject.user.client.ui.Button.<init>","html","handler","org.gwtproject.user.client.ui.Button.click","org.gwtproject.user.client.ui.Button.getButtonElement","org.gwtproject.user.client.ui.Button.<clinit>"]
 }

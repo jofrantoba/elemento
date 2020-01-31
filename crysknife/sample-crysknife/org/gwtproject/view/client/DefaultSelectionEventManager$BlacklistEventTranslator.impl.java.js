@@ -16,31 +16,21 @@ let SelectAction = goog.forwardDeclare('org.gwtproject.view.client.DefaultSelect
  * @implements {EventTranslator<T>}
   */
 class BlacklistEventTranslator extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Set<Integer>} */
+  /**@type {Set<Integer>}*/
   this.f_blacklist__org_gwtproject_view_client_DefaultSelectionEventManager_BlacklistEventTranslator_;
  }
- /**
-  * @template T
-  * @param {Array<number>} blacklistedColumns
-  * @return {!BlacklistEventTranslator<T>}
-  * @public
-  */
- static $create__arrayOf_int(blacklistedColumns) {
+ /** @template T @return {!BlacklistEventTranslator<T>} */
+ static $create__arrayOf_int(/** Array<number> */ blacklistedColumns) {
   BlacklistEventTranslator.$clinit();
   let $instance = new BlacklistEventTranslator();
   $instance.$ctor__org_gwtproject_view_client_DefaultSelectionEventManager_BlacklistEventTranslator__arrayOf_int(blacklistedColumns);
   return $instance;
  }
- /**
-  * @param {Array<number>} blacklistedColumns
-  * @public
-  */
- $ctor__org_gwtproject_view_client_DefaultSelectionEventManager_BlacklistEventTranslator__arrayOf_int(blacklistedColumns) {
+ 
+ $ctor__org_gwtproject_view_client_DefaultSelectionEventManager_BlacklistEventTranslator__arrayOf_int(/** Array<number> */ blacklistedColumns) {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_view_client_DefaultSelectionEventManager_BlacklistEventTranslator();
   if (!$Equality.$same(blacklistedColumns, null)) {
@@ -50,75 +40,45 @@ class BlacklistEventTranslator extends j_l_Object {
    }
   }
  }
- /**
-  * @public
-  */
+ 
  m_clearBlacklist__() {
   this.f_blacklist__org_gwtproject_view_client_DefaultSelectionEventManager_BlacklistEventTranslator_.clear();
  }
- /**
-  * @override
-  * @param {CellPreviewEvent<T>} event
-  * @return {boolean}
-  * @public
-  */
- m_clearCurrentSelection__org_gwtproject_view_client_CellPreviewEvent(event) {
+ /** @override @return {boolean} */
+ m_clearCurrentSelection__org_gwtproject_view_client_CellPreviewEvent(/** CellPreviewEvent<T> */ event) {
   return false;
  }
- /**
-  * @param {number} index
-  * @return {boolean}
-  * @public
-  */
- m_isColumnBlacklisted__int(index) {
+ /** @return {boolean} */
+ m_isColumnBlacklisted__int(/** number */ index) {
   return this.f_blacklist__org_gwtproject_view_client_DefaultSelectionEventManager_BlacklistEventTranslator_.contains(Integer.m_valueOf__int(index));
  }
- /**
-  * @param {number} index
-  * @param {boolean} isBlacklisted
-  * @public
-  */
- m_setColumnBlacklisted__int__boolean(index, isBlacklisted) {
+ 
+ m_setColumnBlacklisted__int__boolean(/** number */ index, /** boolean */ isBlacklisted) {
   if (isBlacklisted) {
    this.f_blacklist__org_gwtproject_view_client_DefaultSelectionEventManager_BlacklistEventTranslator_.add(Integer.m_valueOf__int(index));
   } else {
    this.f_blacklist__org_gwtproject_view_client_DefaultSelectionEventManager_BlacklistEventTranslator_.remove(Integer.m_valueOf__int(index));
   }
  }
- /**
-  * @override
-  * @param {CellPreviewEvent<T>} event
-  * @return {SelectAction}
-  * @public
-  */
- m_translateSelectionEvent__org_gwtproject_view_client_CellPreviewEvent(event) {
+ /** @override @return {SelectAction} */
+ m_translateSelectionEvent__org_gwtproject_view_client_CellPreviewEvent(/** CellPreviewEvent<T> */ event) {
   return this.m_isColumnBlacklisted__int(event.m_getColumn__()) ? SelectAction.f_IGNORE__org_gwtproject_view_client_DefaultSelectionEventManager_SelectAction : SelectAction.f_DEFAULT__org_gwtproject_view_client_DefaultSelectionEventManager_SelectAction;
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_view_client_DefaultSelectionEventManager_BlacklistEventTranslator() {
-  this.f_blacklist__org_gwtproject_view_client_DefaultSelectionEventManager_BlacklistEventTranslator_ = /**@type {!HashSet<Integer>} */ (HashSet.$create__());
+  this.f_blacklist__org_gwtproject_view_client_DefaultSelectionEventManager_BlacklistEventTranslator_ = /**@type {!HashSet<Integer>}*/ (HashSet.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   BlacklistEventTranslator.$clinit = () =>{};
   BlacklistEventTranslator.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof BlacklistEventTranslator;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Integer = goog.module.get('java.lang.Integer$impl');
   HashSet = goog.module.get('java.util.HashSet$impl');

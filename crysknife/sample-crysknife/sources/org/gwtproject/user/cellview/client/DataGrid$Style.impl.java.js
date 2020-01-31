@@ -8,179 +8,70 @@ const CssResource = goog.require('org.gwtproject.resources.client.CssResource$im
  * @extends {CssResource}
  */
 class Style {
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridCell__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridEvenRow__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridEvenRowCell__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridFirstColumn__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridFirstColumnFooter__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridFirstColumnHeader__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridFooter__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridHeader__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridHoveredRow__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridHoveredRowCell__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridKeyboardSelectedCell__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridKeyboardSelectedRow__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridKeyboardSelectedRowCell__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridLastColumn__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridLastColumnFooter__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridLastColumnHeader__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridOddRow__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridOddRowCell__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridSelectedRow__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridSelectedRowCell__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridSortableHeader__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridSortedHeaderAscending__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridSortedHeaderDescending__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_dataGridWidget__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Style.$clinit = () =>{};
   Style.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  CssResource.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_cellview_client_DataGrid_Style = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  CssResource.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_cellview_client_DataGrid_Style = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_cellview_client_DataGrid_Style;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }
@@ -188,7 +79,7 @@ $Util.$setClassMetadataForInterface(Style, 'org.gwtproject.user.cellview.client.
 
 Style.$markImplementor(/** @type {Function} */ (Style));
 
-/** @public {?string} @const */
+/**@const {?string}*/
 Style.f_DEFAULT_CSS__org_gwtproject_user_cellview_client_DataGrid_Style = "org/gwtproject/user/cellview/client/DataGrid.gss";
 
 exports = Style; 

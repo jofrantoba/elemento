@@ -20,49 +20,34 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {ProvidesResize}
   */
 class SimpleLayoutPanel extends SimplePanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Layer} */
+  /**@type {Layer}*/
   this.f_layer__org_gwtproject_user_client_ui_SimpleLayoutPanel_;
-  /** @public {Layout} */
+  /**@type {Layout}*/
   this.f_layout__org_gwtproject_user_client_ui_SimpleLayoutPanel_;
  }
- /**
-  * @return {!SimpleLayoutPanel}
-  * @public
-  */
+ /** @return {!SimpleLayoutPanel} */
  static $create__() {
   SimpleLayoutPanel.$clinit();
   let $instance = new SimpleLayoutPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_SimpleLayoutPanel__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_SimpleLayoutPanel__() {
   this.$ctor__org_gwtproject_user_client_ui_SimplePanel__();
   this.f_layout__org_gwtproject_user_client_ui_SimpleLayoutPanel_ = Layout.$create__org_gwtproject_dom_client_Element(this.m_getElement__());
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onResize__() {
   if (RequiresResize.$isInstance(this.f_widget__org_gwtproject_user_client_ui_SimplePanel)) {
-   /**@type {RequiresResize} */ ($Casts.$to(this.f_widget__org_gwtproject_user_client_ui_SimplePanel, RequiresResize)).m_onResize__();
+   /**@type {RequiresResize}*/ ($Casts.$to(this.f_widget__org_gwtproject_user_client_ui_SimplePanel, RequiresResize)).m_onResize__();
   }
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   if (!$Equality.$same(this.f_widget__org_gwtproject_user_client_ui_SimplePanel, w)) {
    return false;
   }
@@ -75,12 +60,8 @@ class SimpleLayoutPanel extends SimplePanel {
   }
   return true;
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @public
-  */
- m_setWidget__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override */
+ m_setWidget__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   if ($Equality.$same(w, this.f_widget__org_gwtproject_user_client_ui_SimplePanel)) {
    return;
   }
@@ -100,59 +81,37 @@ class SimpleLayoutPanel extends SimplePanel {
    this.m_onResize__();
   }
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onAttach__() {
   super.m_onAttach__();
   this.f_layout__org_gwtproject_user_client_ui_SimpleLayoutPanel_.m_onAttach__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onDetach__() {
   super.m_onDetach__();
   this.f_layout__org_gwtproject_user_client_ui_SimpleLayoutPanel_.m_onDetach__();
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SimpleLayoutPanel.$clinit = () =>{};
   SimpleLayoutPanel.$loadModules();
   SimplePanel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SimpleLayoutPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

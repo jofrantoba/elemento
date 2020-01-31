@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"LocalizedNamesImpl_ur_IN.impl.java.js",
-"lineCount":76,
-"mappings":"A;;;;;;;;MAsBa,0B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,qC;EAAAA,iD;EAAAA,mF;EAAAA,iB;;;;;CAAA,sE;EAAAC,2E;;;;;;;CAGK,yB;EACdC,umD;;;;;;CA2Qa,e;EACbC,wB;EACAA,uJ;EACAA,iJ;EACAA,iJ;EACAA,kL;EACAA,+H;EACAA,uJ;EACAA,iJ;EACAA,6J;EACAA,2I;EACAA,mK;EACAA,uL;EACAA,iJ;EACAA,sL;EACAA,iJ;EACAA,4L;EACAA,uJ;EACAA,uJ;EACAA,uJ;EACAA,oK;EACAA,iL;EACAA,4L;EACAA,sL;EACAA,gL;;;;;QAvSS,O;EAAAC,6C;EAAAA,0C;EAAAA;",
+"lineCount":60,
+"mappings":"A;;;;;;;;MAsBa,0B;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,qC;EAAAA,iD;EAAAA,mF;EAAAA,iB;;;CAAA,sE;EAAAC,2E;;;CAGK,yB;EACdC,smD;;;CA2Qa,e;EACbC,wB;EACAA,uJ;EACAA,iJ;EACAA,iJ;EACAA,kL;EACAA,+H;EACAA,uJ;EACAA,iJ;EACAA,6J;EACAA,2I;EACAA,mK;EACAA,uL;EACAA,iJ;EACAA,sL;EACAA,iJ;EACAA,4L;EACAA,uJ;EACAA,uJ;EACAA,uJ;EACAA,oK;EACAA,iL;EACAA,4L;EACAA,sL;EACAA,gL;;;QAvSS,O;EAAAC,6C;EAAAA,0C;EAAAA;",
 "sources":["LocalizedNamesImpl_ur_IN.java"],
 "names":["org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_ur_IN.<synthetic: ctor_js>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_ur_IN.<synthetic: ctor_create>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_ur_IN.<init>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_ur_IN.loadSortedRegionCodes","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_ur_IN.loadNameMap","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_ur_IN.<clinit>"]
 }

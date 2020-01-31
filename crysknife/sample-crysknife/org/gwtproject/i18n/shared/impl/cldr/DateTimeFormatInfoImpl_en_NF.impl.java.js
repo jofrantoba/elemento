@@ -4,79 +4,48 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const DateTimeFormatInfoImpl__en__001 = goog.require('org.gwtproject.i18n.shared.impl.cldr.DateTimeFormatInfoImpl_en_001$impl');
 
 class DateTimeFormatInfoImpl__en__NF extends DateTimeFormatInfoImpl__en__001 {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!DateTimeFormatInfoImpl__en__NF}
-  * @public
-  */
+ /** @return {!DateTimeFormatInfoImpl__en__NF} */
  static $create__() {
   DateTimeFormatInfoImpl__en__NF.$clinit();
   let $instance = new DateTimeFormatInfoImpl__en__NF();
   $instance.$ctor__org_gwtproject_i18n_shared_impl_cldr_DateTimeFormatInfoImpl_en_NF__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_i18n_shared_impl_cldr_DateTimeFormatInfoImpl_en_NF__() {
   this.$ctor__org_gwtproject_i18n_shared_impl_cldr_DateTimeFormatInfoImpl_en_001__();
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_timeFormatFull__() {
   return "HH:mm:ss zzzz";
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_timeFormatLong__() {
   return "HH:mm:ss z";
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_timeFormatMedium__() {
   return "HH:mm:ss";
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_timeFormatShort__() {
   return "HH:mm";
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DateTimeFormatInfoImpl__en__NF.$clinit = () =>{};
   DateTimeFormatInfoImpl__en__NF.$loadModules();
   DateTimeFormatInfoImpl__en__001.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DateTimeFormatInfoImpl__en__NF;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

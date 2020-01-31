@@ -13,80 +13,52 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @template K
   */
 class KeyedCounter extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Map<K, Integer>} */
+  /**@type {Map<K, Integer>}*/
   this.f_counts__org_gwtproject_event_shared_testing_CountingEventBus_KeyedCounter_;
  }
- /**
-  * @template K
-  * @return {!KeyedCounter<K>}
-  * @public
-  */
+ /** @template K @return {!KeyedCounter<K>} */
  static $create__() {
   KeyedCounter.$clinit();
   let $instance = new KeyedCounter();
   $instance.$ctor__org_gwtproject_event_shared_testing_CountingEventBus_KeyedCounter__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_shared_testing_CountingEventBus_KeyedCounter__() {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_event_shared_testing_CountingEventBus_KeyedCounter();
  }
- /**
-  * @param {K} key
-  * @return {number}
-  * @public
-  */
- m_getCount__java_lang_Object_$pp_org_gwtproject_event_shared_testing(key) {
-  let count = /**@type {Integer} */ ($Casts.$to(this.f_counts__org_gwtproject_event_shared_testing_CountingEventBus_KeyedCounter_.get(key), Integer));
+ /** @return {number} */
+ m_getCount__java_lang_Object_$pp_org_gwtproject_event_shared_testing(/** K */ key) {
+  let count = /**@type {Integer}*/ ($Casts.$to(this.f_counts__org_gwtproject_event_shared_testing_CountingEventBus_KeyedCounter_.get(key), Integer));
   return $Equality.$same(count, null) ? 0 : count.m_intValue__();
  }
- /**
-  * @param {K} key
-  * @public
-  */
- m_decrement__java_lang_Object_$pp_org_gwtproject_event_shared_testing(key) {
+ 
+ m_decrement__java_lang_Object_$pp_org_gwtproject_event_shared_testing(/** K */ key) {
   this.f_counts__org_gwtproject_event_shared_testing_CountingEventBus_KeyedCounter_.put(key, Integer.m_valueOf__int(this.m_getCount__java_lang_Object_$pp_org_gwtproject_event_shared_testing(key) - 1));
  }
- /**
-  * @param {K} key
-  * @public
-  */
- m_increment__java_lang_Object_$pp_org_gwtproject_event_shared_testing(key) {
+ 
+ m_increment__java_lang_Object_$pp_org_gwtproject_event_shared_testing(/** K */ key) {
   this.f_counts__org_gwtproject_event_shared_testing_CountingEventBus_KeyedCounter_.put(key, Integer.m_valueOf__int(this.m_getCount__java_lang_Object_$pp_org_gwtproject_event_shared_testing(key) + 1));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_event_shared_testing_CountingEventBus_KeyedCounter() {
-  this.f_counts__org_gwtproject_event_shared_testing_CountingEventBus_KeyedCounter_ = /**@type {!HashMap<K, Integer>} */ (HashMap.$create__());
+  this.f_counts__org_gwtproject_event_shared_testing_CountingEventBus_KeyedCounter_ = /**@type {!HashMap<K, Integer>}*/ (HashMap.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   KeyedCounter.$clinit = () =>{};
   KeyedCounter.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof KeyedCounter;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Integer = goog.module.get('java.lang.Integer$impl');
   HashMap = goog.module.get('java.util.HashMap$impl');

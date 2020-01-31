@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SplitLayoutPanel$VSplitter.impl.java.js",
-"lineCount":93,
-"mappings":"A;;;;;;;;;;;MA0QQ,S;;;;CAAA,W;EAAAA,Q;EAAAA;+E;;;;;;;;;QACG,sG,cAAiBC,M,EAAgBC,O;EAAjCC,oB;EAAAA,gC;EAAAA,uM;EAAAA,iB;;;;;;;;CAAA,8J,cAAiBF,M,EAAgBC,O;EAAjCE,2F;EACLA,iM;EACAA,8M;EACAA,uE;;;;;;;CAIY,uB;EACZC,iC;;;;;;;CAIe,iB;EACfC,0G;;;;;;;;CAIY,oD,CAAuBC,K;EACnCC,gG;;;;;;;CAIY,qB;EACZC,mG;;;;;;;CAIY,iB;EACZC,oG;;;;;QA7BE,O;EAAAC,4B;EAAAA,yB;EAAAA;",
+"lineCount":57,
+"mappings":"A;;;;;;;;;;;MA0QQ,S;;CAAA,W;EAAAA,Q;EAAAA;+E;;;QACG,sG,oDAAiBC,M,iBAAgBC,O;EAAjCC,oB;EAAAA,gC;EAAAA,uM;EAAAA,iB;;;CAAA,8J,oDAAiBF,M,iBAAgBC,O;EAAjCE,2F;EACLA,iM;EACAA,8M;EACAA,uE;;;CAIY,uB;EACZC,iC;;;CAIe,iB;EACfC,0G;;;CAIY,oD,cAAuBC,K;EACnCC,gG;;;CAIY,qB;EACZC,mG;;;CAIY,iB;EACZC,oG;;;QA7BE,O;EAAAC,4B;EAAAA,yB;EAAAA;",
 "sources":["SplitLayoutPanel.java"],
 "names":["org.gwtproject.user.client.ui.SplitLayoutPanel$VSplitter.<synthetic: ctor_js>","target","reverse","org.gwtproject.user.client.ui.SplitLayoutPanel$VSplitter.<synthetic: ctor_create>","org.gwtproject.user.client.ui.SplitLayoutPanel$VSplitter.<init>","org.gwtproject.user.client.ui.SplitLayoutPanel$VSplitter.getAbsolutePosition","org.gwtproject.user.client.ui.SplitLayoutPanel$VSplitter.getCenterSize","event","org.gwtproject.user.client.ui.SplitLayoutPanel$VSplitter.getEventPosition","org.gwtproject.user.client.ui.SplitLayoutPanel$VSplitter.getTargetPosition","org.gwtproject.user.client.ui.SplitLayoutPanel$VSplitter.getTargetSize","org.gwtproject.user.client.ui.SplitLayoutPanel$VSplitter.<clinit>"]
 }

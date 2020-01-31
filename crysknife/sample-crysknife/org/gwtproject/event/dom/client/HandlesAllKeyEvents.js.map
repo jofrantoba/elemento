@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HandlesAllKeyEvents.impl.java.js",
-"lineCount":56,
-"mappings":"A;;;;;;;;;;;;;;;;;MAwBsB,mB;;;;CAAA,W;EAAAA,Q;;;;;CAGb,4D;EAAAC,iC;;;;;;CAOW,qE,CAAmCC,M;EACnDC,mJ;;;;;;;;QAU6E,gH,CACzDC,W,EAAeC,Q;EAD0CC,8B;EAE7EA,0F;EACAA,yJ;EACAA,6I;;;;;QAzBkB,O;EAAAC,sC;EAAAA,mC;EAAAA;",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;;;;;;;MAwBsB,mB;;CAAA,W;EAAAA,Q;;;CAGb,4D;EAAAC,iC;;;CAOW,qE,0BAAmCC,M;EACnDC,mJ;;;QAU6E,gH,0BACzDC,W,WAAeC,Q;EAD0CC,8B;EAE7EA,0F;EACAA,wJ;EACAA,4I;;;QAzBkB,O;EAAAC,sC;EAAAA,mC;EAAAA;",
 "sources":["HandlesAllKeyEvents.java"],
 "names":["org.gwtproject.event.dom.client.HandlesAllKeyEvents.<synthetic: ctor_js>","org.gwtproject.event.dom.client.HandlesAllKeyEvents.<init>","source","org.gwtproject.event.dom.client.HandlesAllKeyEvents.addKeyHandlersTo","eventSource","reciever","org.gwtproject.event.dom.client.HandlesAllKeyEvents.addHandlers","org.gwtproject.event.dom.client.HandlesAllKeyEvents.<clinit>"]
 }

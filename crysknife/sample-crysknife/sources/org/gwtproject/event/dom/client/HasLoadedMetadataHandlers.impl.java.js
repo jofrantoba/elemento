@@ -11,42 +11,24 @@ let HandlerRegistration = goog.forwardDeclare('org.gwtproject.event.shared.Handl
  * @extends {HasHandlers}
  */
 class HasLoadedMetadataHandlers {
- /**
-  * @abstract
-  * @param {LoadedMetadataHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addLoadedMetadataHandler__org_gwtproject_event_dom_client_LoadedMetadataHandler(handler) {}
- /**
-  * @public
-  */
+ /** @abstract @return {HandlerRegistration} */
+ m_addLoadedMetadataHandler__org_gwtproject_event_dom_client_LoadedMetadataHandler(/** LoadedMetadataHandler */ handler) {}
+ 
  static $clinit() {
   HasLoadedMetadataHandlers.$clinit = () =>{};
   HasLoadedMetadataHandlers.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasHandlers.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_HasLoadedMetadataHandlers = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasHandlers.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_HasLoadedMetadataHandlers = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_HasLoadedMetadataHandlers;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

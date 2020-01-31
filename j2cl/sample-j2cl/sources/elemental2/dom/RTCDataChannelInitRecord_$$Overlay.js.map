@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"RTCDataChannelInitRecord_$$Overlay.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;MAyBiB,mC;;;;;QAEkB,U;EAAAA,8C;EAC/BA,yG;;;;;QAHa,O;EAAAC,sD;EAAAA;",
+"lineCount":17,
+"mappings":"A;;;;;;;MAyBiB,mC;;QAEkB,U;EAAAA,8C;EAC/BA,wG;;;QAHa,O;EAAAC,sD;EAAAA;",
 "sources":["RTCDataChannelInitRecord_.java"],
 "names":["elemental2.dom.RTCDataChannelInitRecord_$$Overlay.create","elemental2.dom.RTCDataChannelInitRecord_$$Overlay.<clinit>"]
 }

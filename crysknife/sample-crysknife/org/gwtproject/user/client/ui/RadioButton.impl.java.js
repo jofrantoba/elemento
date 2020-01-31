@@ -18,32 +18,23 @@ let DirectionalTextHelper = goog.forwardDeclare('org.gwtproject.user.client.ui.D
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class RadioButton extends CheckBox {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {?boolean} */
+  /**@type {?boolean}*/
   this.f_oldValue__org_gwtproject_user_client_ui_RadioButton_;
  }
- /**
-  * Factory method corresponding to constructor 'RadioButton(String)'.
-  * @param {?string} name
-  * @return {!RadioButton}
-  * @public
-  */
- static $create__java_lang_String(name) {
+ //Factory method corresponding to constructor 'RadioButton(String)'.
+ /** @return {!RadioButton} */
+ static $create__java_lang_String(/** ?string */ name) {
   RadioButton.$clinit();
   let $instance = new RadioButton();
   $instance.$ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String(name);
   return $instance;
  }
- /**
-  * Initialization from constructor 'RadioButton(String)'.
-  * @param {?string} name
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String(name) {
+ //Initialization from constructor 'RadioButton(String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String(/** ?string */ name) {
   this.$ctor__org_gwtproject_user_client_ui_CheckBox__org_gwtproject_dom_client_Element(DOM.m_createInputRadio__java_lang_String(name));
   this.m_setStyleName__java_lang_String("gwt-RadioButton");
   this.m_sinkEvents__int(Event.f_ONCLICK__org_gwtproject_user_client_Event);
@@ -51,175 +42,102 @@ class RadioButton extends CheckBox {
   this.m_sinkEvents__int(Event.f_ONBLUR__org_gwtproject_user_client_Event);
   this.m_sinkEvents__int(Event.f_ONKEYDOWN__org_gwtproject_user_client_Event);
  }
- /**
-  * Factory method corresponding to constructor 'RadioButton(String, SafeHtml)'.
-  * @param {?string} name
-  * @param {SafeHtml} label
-  * @return {!RadioButton}
-  * @public
-  */
- static $create__java_lang_String__org_gwtproject_safehtml_shared_SafeHtml(name, label) {
+ //Factory method corresponding to constructor 'RadioButton(String, SafeHtml)'.
+ /** @return {!RadioButton} */
+ static $create__java_lang_String__org_gwtproject_safehtml_shared_SafeHtml(/** ?string */ name, /** SafeHtml */ label) {
   RadioButton.$clinit();
   let $instance = new RadioButton();
   $instance.$ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__org_gwtproject_safehtml_shared_SafeHtml(name, label);
   return $instance;
  }
- /**
-  * Initialization from constructor 'RadioButton(String, SafeHtml)'.
-  * @param {?string} name
-  * @param {SafeHtml} label
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__org_gwtproject_safehtml_shared_SafeHtml(name, label) {
+ //Initialization from constructor 'RadioButton(String, SafeHtml)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__org_gwtproject_safehtml_shared_SafeHtml(/** ?string */ name, /** SafeHtml */ label) {
   this.$ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__java_lang_String__boolean(name, label.m_asString__(), true);
  }
- /**
-  * Factory method corresponding to constructor 'RadioButton(String, SafeHtml, Direction)'.
-  * @param {?string} name
-  * @param {SafeHtml} label
-  * @param {Direction} dir
-  * @return {!RadioButton}
-  * @public
-  */
- static $create__java_lang_String__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(name, label, dir) {
+ //Factory method corresponding to constructor 'RadioButton(String, SafeHtml, Direction)'.
+ /** @return {!RadioButton} */
+ static $create__java_lang_String__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(/** ?string */ name, /** SafeHtml */ label, /** Direction */ dir) {
   RadioButton.$clinit();
   let $instance = new RadioButton();
   $instance.$ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(name, label, dir);
   return $instance;
  }
- /**
-  * Initialization from constructor 'RadioButton(String, SafeHtml, Direction)'.
-  * @param {?string} name
-  * @param {SafeHtml} label
-  * @param {Direction} dir
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(name, label, dir) {
+ //Initialization from constructor 'RadioButton(String, SafeHtml, Direction)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(/** ?string */ name, /** SafeHtml */ label, /** Direction */ dir) {
   this.$ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String(name);
   this.m_setHTML__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_client_HasDirection_Direction(label, dir);
  }
- /**
-  * Factory method corresponding to constructor 'RadioButton(String, SafeHtml, DirectionEstimator)'.
-  * @param {?string} name
-  * @param {SafeHtml} label
-  * @param {DirectionEstimator} directionEstimator
-  * @return {!RadioButton}
-  * @public
-  */
- static $create__java_lang_String__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator(name, label, directionEstimator) {
+ //Factory method corresponding to constructor 'RadioButton(String, SafeHtml, DirectionEstimator)'.
+ /** @return {!RadioButton} */
+ static $create__java_lang_String__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator(/** ?string */ name, /** SafeHtml */ label, /** DirectionEstimator */ directionEstimator) {
   RadioButton.$clinit();
   let $instance = new RadioButton();
   $instance.$ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator(name, label, directionEstimator);
   return $instance;
  }
- /**
-  * Initialization from constructor 'RadioButton(String, SafeHtml, DirectionEstimator)'.
-  * @param {?string} name
-  * @param {SafeHtml} label
-  * @param {DirectionEstimator} directionEstimator
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator(name, label, directionEstimator) {
+ //Initialization from constructor 'RadioButton(String, SafeHtml, DirectionEstimator)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__org_gwtproject_safehtml_shared_SafeHtml__org_gwtproject_i18n_shared_DirectionEstimator(/** ?string */ name, /** SafeHtml */ label, /** DirectionEstimator */ directionEstimator) {
   this.$ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String(name);
   this.m_setDirectionEstimator__org_gwtproject_i18n_shared_DirectionEstimator(directionEstimator);
   this.m_setHTML__java_lang_String(label.m_asString__());
  }
- /**
-  * Factory method corresponding to constructor 'RadioButton(String, String)'.
-  * @param {?string} name
-  * @param {?string} label
-  * @return {!RadioButton}
-  * @public
-  */
- static $create__java_lang_String__java_lang_String(name, label) {
+ //Factory method corresponding to constructor 'RadioButton(String, String)'.
+ /** @return {!RadioButton} */
+ static $create__java_lang_String__java_lang_String(/** ?string */ name, /** ?string */ label) {
   RadioButton.$clinit();
   let $instance = new RadioButton();
   $instance.$ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__java_lang_String(name, label);
   return $instance;
  }
- /**
-  * Initialization from constructor 'RadioButton(String, String)'.
-  * @param {?string} name
-  * @param {?string} label
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__java_lang_String(name, label) {
+ //Initialization from constructor 'RadioButton(String, String)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__java_lang_String(/** ?string */ name, /** ?string */ label) {
   this.$ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String(name);
   this.m_setText__java_lang_String(label);
  }
- /**
-  * Factory method corresponding to constructor 'RadioButton(String, String, Direction)'.
-  * @param {?string} name
-  * @param {?string} label
-  * @param {Direction} dir
-  * @return {!RadioButton}
-  * @public
-  */
- static $create__java_lang_String__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(name, label, dir) {
+ //Factory method corresponding to constructor 'RadioButton(String, String, Direction)'.
+ /** @return {!RadioButton} */
+ static $create__java_lang_String__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(/** ?string */ name, /** ?string */ label, /** Direction */ dir) {
   RadioButton.$clinit();
   let $instance = new RadioButton();
   $instance.$ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(name, label, dir);
   return $instance;
  }
- /**
-  * Initialization from constructor 'RadioButton(String, String, Direction)'.
-  * @param {?string} name
-  * @param {?string} label
-  * @param {Direction} dir
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(name, label, dir) {
+ //Initialization from constructor 'RadioButton(String, String, Direction)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(/** ?string */ name, /** ?string */ label, /** Direction */ dir) {
   this.$ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String(name);
   this.m_setText__java_lang_String__org_gwtproject_i18n_client_HasDirection_Direction(label, dir);
  }
- /**
-  * Factory method corresponding to constructor 'RadioButton(String, String, DirectionEstimator)'.
-  * @param {?string} name
-  * @param {?string} label
-  * @param {DirectionEstimator} directionEstimator
-  * @return {!RadioButton}
-  * @public
-  */
- static $create__java_lang_String__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator(name, label, directionEstimator) {
+ //Factory method corresponding to constructor 'RadioButton(String, String, DirectionEstimator)'.
+ /** @return {!RadioButton} */
+ static $create__java_lang_String__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator(/** ?string */ name, /** ?string */ label, /** DirectionEstimator */ directionEstimator) {
   RadioButton.$clinit();
   let $instance = new RadioButton();
   $instance.$ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator(name, label, directionEstimator);
   return $instance;
  }
- /**
-  * Initialization from constructor 'RadioButton(String, String, DirectionEstimator)'.
-  * @param {?string} name
-  * @param {?string} label
-  * @param {DirectionEstimator} directionEstimator
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator(name, label, directionEstimator) {
+ //Initialization from constructor 'RadioButton(String, String, DirectionEstimator)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__java_lang_String__org_gwtproject_i18n_shared_DirectionEstimator(/** ?string */ name, /** ?string */ label, /** DirectionEstimator */ directionEstimator) {
   this.$ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String(name);
   this.m_setDirectionEstimator__org_gwtproject_i18n_shared_DirectionEstimator(directionEstimator);
   this.m_setText__java_lang_String(label);
  }
- /**
-  * Factory method corresponding to constructor 'RadioButton(String, String, boolean)'.
-  * @param {?string} name
-  * @param {?string} label
-  * @param {boolean} asHTML
-  * @return {!RadioButton}
-  * @public
-  */
- static $create__java_lang_String__java_lang_String__boolean(name, label, asHTML) {
+ //Factory method corresponding to constructor 'RadioButton(String, String, boolean)'.
+ /** @return {!RadioButton} */
+ static $create__java_lang_String__java_lang_String__boolean(/** ?string */ name, /** ?string */ label, /** boolean */ asHTML) {
   RadioButton.$clinit();
   let $instance = new RadioButton();
   $instance.$ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__java_lang_String__boolean(name, label, asHTML);
   return $instance;
  }
- /**
-  * Initialization from constructor 'RadioButton(String, String, boolean)'.
-  * @param {?string} name
-  * @param {?string} label
-  * @param {boolean} asHTML
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__java_lang_String__boolean(name, label, asHTML) {
+ //Initialization from constructor 'RadioButton(String, String, boolean)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String__java_lang_String__boolean(/** ?string */ name, /** ?string */ label, /** boolean */ asHTML) {
   this.$ctor__org_gwtproject_user_client_ui_RadioButton__java_lang_String(name);
   if (asHTML) {
    this.m_setHTML__java_lang_String(label);
@@ -227,12 +145,8 @@ class RadioButton extends CheckBox {
    this.m_setText__java_lang_String(label);
   }
  }
- /**
-  * @override
-  * @param {Event} event
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_user_client_Event(event) {
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_user_client_Event(/** Event */ event) {
   let /** Object */ target;
   switch (DOM.m_eventGetType__org_gwtproject_user_client_Event(event)) {
    case Event.f_ONMOUSEUP__org_gwtproject_user_client_Event: 
@@ -252,20 +166,12 @@ class RadioButton extends CheckBox {
   }
   super.m_onBrowserEvent__org_gwtproject_user_client_Event(event);
  }
- /**
-  * @override
-  * @param {?string} name
-  * @public
-  */
- m_setName__java_lang_String(name) {
+ /** @override */
+ m_setName__java_lang_String(/** ?string */ name) {
   this.m_replaceInputElement__org_gwtproject_dom_client_Element(DOM.m_createInputRadio__java_lang_String(name));
  }
- /**
-  * @override
-  * @param {number} eventBitsToAdd
-  * @public
-  */
- m_sinkEvents__int(eventBitsToAdd) {
+ /** @override */
+ m_sinkEvents__int(/** number */ eventBitsToAdd) {
   if (this.m_isOrWasAttached__()) {
    Event.m_sinkEvents__org_gwtproject_dom_client_Element__int(this.f_inputElem__org_gwtproject_user_client_ui_CheckBox, eventBitsToAdd | Event.m_getEventsSunk__org_gwtproject_dom_client_Element(this.f_inputElem__org_gwtproject_user_client_ui_CheckBox));
    Event.m_sinkEvents__org_gwtproject_dom_client_Element__int(this.f_labelElem__org_gwtproject_user_client_ui_CheckBox, eventBitsToAdd | Event.m_getEventsSunk__org_gwtproject_dom_client_Element(this.f_labelElem__org_gwtproject_user_client_ui_CheckBox));
@@ -273,57 +179,34 @@ class RadioButton extends CheckBox {
    super.m_sinkEvents__int(eventBitsToAdd);
   }
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_ensureDomEventHandlers__() {}
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_setValue__java_lang_Object(arg0) {
-  super.m_setValue__java_lang_Boolean(/**@type {?boolean} */ ($Casts.$to(arg0, Boolean)));
+ //Bridge method.
+ /** @override */
+ m_setValue__java_lang_Object(/** * */ arg0) {
+  super.m_setValue__java_lang_Boolean(/**@type {?boolean}*/ ($Casts.$to(arg0, Boolean)));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @param {boolean} arg1
-  * @public
-  */
- m_setValue__java_lang_Object__boolean(arg0, arg1) {
-  super.m_setValue__java_lang_Boolean__boolean(/**@type {?boolean} */ ($Casts.$to(arg0, Boolean)), arg1);
+ //Bridge method.
+ /** @override */
+ m_setValue__java_lang_Object__boolean(/** * */ arg0, /** boolean */ arg1) {
+  super.m_setValue__java_lang_Boolean__boolean(/**@type {?boolean}*/ ($Casts.$to(arg0, Boolean)), arg1);
  }
- /**
-  * @return {DirectionEstimator}
-  * @public
-  */
+ /** @return {DirectionEstimator} */
  static get f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_RadioButton() {
   return (RadioButton.$clinit(), RadioButton.$f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_RadioButton);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RadioButton.$clinit = () =>{};
   RadioButton.$loadModules();
   CheckBox.$clinit();
   RadioButton.$f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_RadioButton = DirectionalTextHelper.f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_DirectionalTextHelper;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof RadioButton;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Boolean = goog.module.get('java.lang.Boolean$impl');
   Element_$Overlay = goog.module.get('org.gwtproject.dom.client.Element.$Overlay$impl');
@@ -339,7 +222,7 @@ class RadioButton extends CheckBox {
 }
 $Util.$setClassMetadata(RadioButton, 'org.gwtproject.user.client.ui.RadioButton');
 
-/** @private {DirectionEstimator} */
+/**@private {DirectionEstimator}*/
 RadioButton.$f_DEFAULT_DIRECTION_ESTIMATOR__org_gwtproject_user_client_ui_RadioButton;
 
 exports = RadioButton; 

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"LocalizedNamesImpl_ro_MD.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;MAsBa,0B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,qC;EAAAA,iD;EAAAA,mF;EAAAA,iB;;;;;CAAA,sE;EAAAC,2E;;;;;;CAGI,e;EACbC,wB;EACAA,2F;;;;;QALS,O;EAAAC,6C;EAAAA,0C;EAAAA;",
+"lineCount":31,
+"mappings":"A;;;;;MAsBa,0B;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,qC;EAAAA,iD;EAAAA,mF;EAAAA,iB;;;CAAA,sE;EAAAC,2E;;;CAGI,e;EACbC,wB;EACAA,2F;;;QALS,O;EAAAC,6C;EAAAA,0C;EAAAA;",
 "sources":["LocalizedNamesImpl_ro_MD.java"],
 "names":["org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_ro_MD.<synthetic: ctor_js>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_ro_MD.<synthetic: ctor_create>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_ro_MD.<init>","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_ro_MD.loadNameMap","org.gwtproject.i18n.client.impl.cldr.LocalizedNamesImpl_ro_MD.<clinit>"]
 }

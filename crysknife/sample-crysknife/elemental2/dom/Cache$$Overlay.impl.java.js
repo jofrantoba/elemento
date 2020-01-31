@@ -17,236 +17,117 @@ let Promise_$Overlay = goog.forwardDeclare('elemental2.promise.Promise.$Overlay$
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class Cache_$Overlay {
- /**
-  * @param {!Cache} $thisArg
-  * @param {Request} request
-  * @return {Promise<?void>}
-  * @public
-  */
- static m_add__$devirt__elemental2_dom_Cache__elemental2_dom_Request($thisArg, request) {
+ /** @return {Promise<?void>} */
+ static m_add__$devirt__elemental2_dom_Cache__elemental2_dom_Request(/** !Cache */ $thisArg, /** Request */ request) {
   Cache_$Overlay.$clinit();
-  return $thisArg.add(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)));
+  return $thisArg.add(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)));
  }
- /**
-  * @param {!Cache} $thisArg
-  * @param {?string} request
-  * @return {Promise<?void>}
-  * @public
-  */
- static m_add__$devirt__elemental2_dom_Cache__java_lang_String($thisArg, request) {
+ /** @return {Promise<?void>} */
+ static m_add__$devirt__elemental2_dom_Cache__java_lang_String(/** !Cache */ $thisArg, /** ?string */ request) {
   Cache_$Overlay.$clinit();
-  return $thisArg.add(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)));
+  return $thisArg.add(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)));
  }
- /**
-  * @param {!Cache} $thisArg
-  * @param {Array<?>} requests
-  * @return {Promise<?void>}
-  * @public
-  */
- static m_addAll__$devirt__elemental2_dom_Cache__arrayOf_elemental2_dom_Cache_AddAllRequestsArrayUnionType($thisArg, requests) {
+ /** @return {Promise<?void>} */
+ static m_addAll__$devirt__elemental2_dom_Cache__arrayOf_elemental2_dom_Cache_AddAllRequestsArrayUnionType(/** !Cache */ $thisArg, /** Array<?> */ requests) {
   Cache_$Overlay.$clinit();
-  return $thisArg.addAll(/**@type {Array<?>} */ (Js.m_uncheckedCast__java_lang_Object(requests)));
+  return $thisArg.addAll(/**@type {Array<?>}*/ (Js.m_uncheckedCast__java_lang_Object(requests)));
  }
- /**
-  * @param {!Cache} $thisArg
-  * @param {Request} request
-  * @param {CacheQueryOptions} options
-  * @return {Promise<?boolean>}
-  * @public
-  */
- static m_delete__$devirt__elemental2_dom_Cache__elemental2_dom_Request__elemental2_dom_CacheQueryOptions($thisArg, request, options) {
+ /** @return {Promise<?boolean>} */
+ static m_delete__$devirt__elemental2_dom_Cache__elemental2_dom_Request__elemental2_dom_CacheQueryOptions(/** !Cache */ $thisArg, /** Request */ request, /** CacheQueryOptions */ options) {
   Cache_$Overlay.$clinit();
-  return $thisArg.delete(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)), options);
+  return $thisArg.delete(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)), options);
  }
- /**
-  * @param {!Cache} $thisArg
-  * @param {Request} request
-  * @return {Promise<?boolean>}
-  * @public
-  */
- static m_delete__$devirt__elemental2_dom_Cache__elemental2_dom_Request($thisArg, request) {
+ /** @return {Promise<?boolean>} */
+ static m_delete__$devirt__elemental2_dom_Cache__elemental2_dom_Request(/** !Cache */ $thisArg, /** Request */ request) {
   Cache_$Overlay.$clinit();
-  return $thisArg.delete(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)));
+  return $thisArg.delete(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)));
  }
- /**
-  * @param {!Cache} $thisArg
-  * @param {?string} request
-  * @param {CacheQueryOptions} options
-  * @return {Promise<?boolean>}
-  * @public
-  */
- static m_delete__$devirt__elemental2_dom_Cache__java_lang_String__elemental2_dom_CacheQueryOptions($thisArg, request, options) {
+ /** @return {Promise<?boolean>} */
+ static m_delete__$devirt__elemental2_dom_Cache__java_lang_String__elemental2_dom_CacheQueryOptions(/** !Cache */ $thisArg, /** ?string */ request, /** CacheQueryOptions */ options) {
   Cache_$Overlay.$clinit();
-  return $thisArg.delete(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)), options);
+  return $thisArg.delete(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)), options);
  }
- /**
-  * @param {!Cache} $thisArg
-  * @param {?string} request
-  * @return {Promise<?boolean>}
-  * @public
-  */
- static m_delete__$devirt__elemental2_dom_Cache__java_lang_String($thisArg, request) {
+ /** @return {Promise<?boolean>} */
+ static m_delete__$devirt__elemental2_dom_Cache__java_lang_String(/** !Cache */ $thisArg, /** ?string */ request) {
   Cache_$Overlay.$clinit();
-  return $thisArg.delete(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)));
+  return $thisArg.delete(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)));
  }
- /**
-  * @param {!Cache} $thisArg
-  * @param {Request} request
-  * @param {CacheQueryOptions} options
-  * @return {Promise<Array<Request>>}
-  * @public
-  */
- static m_keys__$devirt__elemental2_dom_Cache__elemental2_dom_Request__elemental2_dom_CacheQueryOptions($thisArg, request, options) {
+ /** @return {Promise<Array<Request>>} */
+ static m_keys__$devirt__elemental2_dom_Cache__elemental2_dom_Request__elemental2_dom_CacheQueryOptions(/** !Cache */ $thisArg, /** Request */ request, /** CacheQueryOptions */ options) {
   Cache_$Overlay.$clinit();
-  return $thisArg.keys(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)), options);
+  return $thisArg.keys(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)), options);
  }
- /**
-  * @param {!Cache} $thisArg
-  * @param {Request} request
-  * @return {Promise<Array<Request>>}
-  * @public
-  */
- static m_keys__$devirt__elemental2_dom_Cache__elemental2_dom_Request($thisArg, request) {
+ /** @return {Promise<Array<Request>>} */
+ static m_keys__$devirt__elemental2_dom_Cache__elemental2_dom_Request(/** !Cache */ $thisArg, /** Request */ request) {
   Cache_$Overlay.$clinit();
-  return $thisArg.keys(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)));
+  return $thisArg.keys(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)));
  }
- /**
-  * @param {!Cache} $thisArg
-  * @param {?string} request
-  * @param {CacheQueryOptions} options
-  * @return {Promise<Array<Request>>}
-  * @public
-  */
- static m_keys__$devirt__elemental2_dom_Cache__java_lang_String__elemental2_dom_CacheQueryOptions($thisArg, request, options) {
+ /** @return {Promise<Array<Request>>} */
+ static m_keys__$devirt__elemental2_dom_Cache__java_lang_String__elemental2_dom_CacheQueryOptions(/** !Cache */ $thisArg, /** ?string */ request, /** CacheQueryOptions */ options) {
   Cache_$Overlay.$clinit();
-  return $thisArg.keys(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)), options);
+  return $thisArg.keys(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)), options);
  }
- /**
-  * @param {!Cache} $thisArg
-  * @param {?string} request
-  * @return {Promise<Array<Request>>}
-  * @public
-  */
- static m_keys__$devirt__elemental2_dom_Cache__java_lang_String($thisArg, request) {
+ /** @return {Promise<Array<Request>>} */
+ static m_keys__$devirt__elemental2_dom_Cache__java_lang_String(/** !Cache */ $thisArg, /** ?string */ request) {
   Cache_$Overlay.$clinit();
-  return $thisArg.keys(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)));
+  return $thisArg.keys(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)));
  }
- /**
-  * @param {!Cache} $thisArg
-  * @param {Request} request
-  * @param {CacheQueryOptions} options
-  * @return {Promise<Response>}
-  * @public
-  */
- static m_match__$devirt__elemental2_dom_Cache__elemental2_dom_Request__elemental2_dom_CacheQueryOptions($thisArg, request, options) {
+ /** @return {Promise<Response>} */
+ static m_match__$devirt__elemental2_dom_Cache__elemental2_dom_Request__elemental2_dom_CacheQueryOptions(/** !Cache */ $thisArg, /** Request */ request, /** CacheQueryOptions */ options) {
   Cache_$Overlay.$clinit();
-  return $thisArg.match(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)), options);
+  return $thisArg.match(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)), options);
  }
- /**
-  * @param {!Cache} $thisArg
-  * @param {Request} request
-  * @return {Promise<Response>}
-  * @public
-  */
- static m_match__$devirt__elemental2_dom_Cache__elemental2_dom_Request($thisArg, request) {
+ /** @return {Promise<Response>} */
+ static m_match__$devirt__elemental2_dom_Cache__elemental2_dom_Request(/** !Cache */ $thisArg, /** Request */ request) {
   Cache_$Overlay.$clinit();
-  return $thisArg.match(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)));
+  return $thisArg.match(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)));
  }
- /**
-  * @param {!Cache} $thisArg
-  * @param {?string} request
-  * @param {CacheQueryOptions} options
-  * @return {Promise<Response>}
-  * @public
-  */
- static m_match__$devirt__elemental2_dom_Cache__java_lang_String__elemental2_dom_CacheQueryOptions($thisArg, request, options) {
+ /** @return {Promise<Response>} */
+ static m_match__$devirt__elemental2_dom_Cache__java_lang_String__elemental2_dom_CacheQueryOptions(/** !Cache */ $thisArg, /** ?string */ request, /** CacheQueryOptions */ options) {
   Cache_$Overlay.$clinit();
-  return $thisArg.match(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)), options);
+  return $thisArg.match(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)), options);
  }
- /**
-  * @param {!Cache} $thisArg
-  * @param {?string} request
-  * @return {Promise<Response>}
-  * @public
-  */
- static m_match__$devirt__elemental2_dom_Cache__java_lang_String($thisArg, request) {
+ /** @return {Promise<Response>} */
+ static m_match__$devirt__elemental2_dom_Cache__java_lang_String(/** !Cache */ $thisArg, /** ?string */ request) {
   Cache_$Overlay.$clinit();
-  return $thisArg.match(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)));
+  return $thisArg.match(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)));
  }
- /**
-  * @param {!Cache} $thisArg
-  * @param {Request} request
-  * @param {CacheQueryOptions} options
-  * @return {Promise<Array<Response>>}
-  * @public
-  */
- static m_matchAll__$devirt__elemental2_dom_Cache__elemental2_dom_Request__elemental2_dom_CacheQueryOptions($thisArg, request, options) {
+ /** @return {Promise<Array<Response>>} */
+ static m_matchAll__$devirt__elemental2_dom_Cache__elemental2_dom_Request__elemental2_dom_CacheQueryOptions(/** !Cache */ $thisArg, /** Request */ request, /** CacheQueryOptions */ options) {
   Cache_$Overlay.$clinit();
-  return $thisArg.matchAll(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)), options);
+  return $thisArg.matchAll(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)), options);
  }
- /**
-  * @param {!Cache} $thisArg
-  * @param {Request} request
-  * @return {Promise<Array<Response>>}
-  * @public
-  */
- static m_matchAll__$devirt__elemental2_dom_Cache__elemental2_dom_Request($thisArg, request) {
+ /** @return {Promise<Array<Response>>} */
+ static m_matchAll__$devirt__elemental2_dom_Cache__elemental2_dom_Request(/** !Cache */ $thisArg, /** Request */ request) {
   Cache_$Overlay.$clinit();
-  return $thisArg.matchAll(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)));
+  return $thisArg.matchAll(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)));
  }
- /**
-  * @param {!Cache} $thisArg
-  * @param {?string} request
-  * @param {CacheQueryOptions} options
-  * @return {Promise<Array<Response>>}
-  * @public
-  */
- static m_matchAll__$devirt__elemental2_dom_Cache__java_lang_String__elemental2_dom_CacheQueryOptions($thisArg, request, options) {
+ /** @return {Promise<Array<Response>>} */
+ static m_matchAll__$devirt__elemental2_dom_Cache__java_lang_String__elemental2_dom_CacheQueryOptions(/** !Cache */ $thisArg, /** ?string */ request, /** CacheQueryOptions */ options) {
   Cache_$Overlay.$clinit();
-  return $thisArg.matchAll(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)), options);
+  return $thisArg.matchAll(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)), options);
  }
- /**
-  * @param {!Cache} $thisArg
-  * @param {?string} request
-  * @return {Promise<Array<Response>>}
-  * @public
-  */
- static m_matchAll__$devirt__elemental2_dom_Cache__java_lang_String($thisArg, request) {
+ /** @return {Promise<Array<Response>>} */
+ static m_matchAll__$devirt__elemental2_dom_Cache__java_lang_String(/** !Cache */ $thisArg, /** ?string */ request) {
   Cache_$Overlay.$clinit();
-  return $thisArg.matchAll(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)));
+  return $thisArg.matchAll(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)));
  }
- /**
-  * @param {!Cache} $thisArg
-  * @param {Request} request
-  * @param {Response} response
-  * @return {Promise<?void>}
-  * @public
-  */
- static m_put__$devirt__elemental2_dom_Cache__elemental2_dom_Request__elemental2_dom_Response($thisArg, request, response) {
+ /** @return {Promise<?void>} */
+ static m_put__$devirt__elemental2_dom_Cache__elemental2_dom_Request__elemental2_dom_Response(/** !Cache */ $thisArg, /** Request */ request, /** Response */ response) {
   Cache_$Overlay.$clinit();
-  return $thisArg.put(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)), response);
+  return $thisArg.put(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)), response);
  }
- /**
-  * @param {!Cache} $thisArg
-  * @param {?string} request
-  * @param {Response} response
-  * @return {Promise<?void>}
-  * @public
-  */
- static m_put__$devirt__elemental2_dom_Cache__java_lang_String__elemental2_dom_Response($thisArg, request, response) {
+ /** @return {Promise<?void>} */
+ static m_put__$devirt__elemental2_dom_Cache__java_lang_String__elemental2_dom_Response(/** !Cache */ $thisArg, /** ?string */ request, /** Response */ response) {
   Cache_$Overlay.$clinit();
-  return $thisArg.put(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(request)), response);
+  return $thisArg.put(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(request)), response);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Cache_$Overlay.$clinit = () =>{};
   Cache_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }

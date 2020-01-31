@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HTMLBRElementInfo.impl.java.js",
-"lineCount":35,
-"mappings":"A;;;;;MAIa,iB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,4B;EAAAA,wC;EAAAA,sD;EAAAA,iB;;;;;CAAA,yC;EAAAC,iC;;;;;QAAA,O;EAAAC,oC;EAAAA,iC;EAAAA;",
+"lineCount":26,
+"mappings":"A;;;;;MAIa,iB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,4B;EAAAA,wC;EAAAA,sD;EAAAA,iB;;;CAAA,yC;EAAAC,iC;;;QAAA,O;EAAAC,oC;EAAAA,iC;EAAAA;",
 "sources":["HTMLBRElementInfo.java"],
 "names":["elemental2.dom.HTMLBRElementInfo.<synthetic: ctor_js>","elemental2.dom.HTMLBRElementInfo.<synthetic: ctor_create>","elemental2.dom.HTMLBRElementInfo.<init>","elemental2.dom.HTMLBRElementInfo.<clinit>"]
 }

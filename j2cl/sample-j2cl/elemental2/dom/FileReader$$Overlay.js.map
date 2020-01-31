@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"FileReader$$Overlay.impl.java.js",
-"lineCount":58,
-"mappings":"A;;;;MAyBa,Q;;;;;QAqEX,8C;EAAAA,kF;;;;;;QACA,+C;EAAAA,mF;;;;;;QACA,iD;EAAAA,qF;;;;;QAvEW,O;EAAAC,2B;EAAAA,wB;EAqEXA,uE;EACAA,yE;EACAA,6E;;;;;;;;;;;;;;;;;;AAvEW;yD;AAAA;0D;AAAA;;",
+"lineCount":41,
+"mappings":"A;;;;MAyBa,Q;;QAqEX,8C;EAAAA,kF;;;QACA,+C;EAAAA,mF;;;QACA,iD;EAAAA,qF;;;QAvEW,O;EAAAC,2B;EAAAA,wB;EAqEXA,uE;EACAA,yE;EACAA,6E;;;;;;;;;;;;AAvEW;yD;AAAA;0D;AAAA;;",
 "sources":["FileReader.java"],
 "names":["elemental2.dom.FileReader$$Overlay.<synthetic: getter>","elemental2.dom.FileReader$$Overlay.<clinit>"]
 }

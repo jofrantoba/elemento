@@ -14,46 +14,34 @@ let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
 let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
 
 class SlideAnimation extends Animation {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_container1__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_container2__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_growing__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_ = false;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_fixedHeight__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_ = 0;
-  /** @public {Widget} */
+  /**@type {Widget}*/
   this.f_oldWidget__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_;
  }
- /**
-  * @return {!SlideAnimation}
-  * @public
-  */
+ /** @return {!SlideAnimation} */
  static $create__() {
   SlideAnimation.$clinit();
   let $instance = new SlideAnimation();
   $instance.$ctor__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation__() {
   this.$ctor__org_gwtproject_animation_client_Animation__();
   this.$init___$p_org_gwtproject_user_client_ui_DeckPanel_SlideAnimation();
  }
- /**
-  * @param {Widget} oldWidget
-  * @param {Widget} newWidget
-  * @param {boolean} animate
-  * @public
-  */
- m_showWidget__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget__boolean(oldWidget, newWidget, animate) {
+ 
+ m_showWidget__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_Widget__boolean(/** Widget */ oldWidget, /** Widget */ newWidget, /** boolean */ animate) {
   this.m_cancel__();
   let newContainer = DeckPanel.m_getContainer__org_gwtproject_user_client_ui_Widget(newWidget);
   let newIndex = DOM.m_getChildIndex__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(DOM.m_getParent__org_gwtproject_dom_client_Element(newContainer), newContainer);
@@ -93,10 +81,7 @@ class SlideAnimation extends Animation {
   }
   newWidget.m_setVisible__boolean(true);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onComplete__() {
   if (this.f_growing__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_) {
    Style_$Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(this.f_container1__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_.style, "height", "100%");
@@ -115,10 +100,7 @@ class SlideAnimation extends Animation {
   this.f_container2__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_ = null;
   this.m_hideOldWidget___$p_org_gwtproject_user_client_ui_DeckPanel_SlideAnimation();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onStart__() {
   Style_$Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(this.f_container1__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_.style, "overflow", "hidden");
   Style_$Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(this.f_container2__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_.style, "overflow", "hidden");
@@ -126,12 +108,8 @@ class SlideAnimation extends Animation {
   UIObject.m_setVisible__org_gwtproject_dom_client_Element__boolean(this.f_container1__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_, true);
   UIObject.m_setVisible__org_gwtproject_dom_client_Element__boolean(this.f_container2__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_, true);
  }
- /**
-  * @override
-  * @param {number} progress
-  * @public
-  */
- m_onUpdate__double(progress) {
+ /** @override */
+ m_onUpdate__double(/** number */ progress) {
   if (!this.f_growing__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_) {
    progress = 1.0 - progress;
   }
@@ -154,16 +132,12 @@ class SlideAnimation extends Animation {
   Style_$Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(this.f_container1__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_.style, "height", height1 + "px");
   Style_$Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(this.f_container2__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_.style, "height", height2 + "px");
  }
- /**
-  * @public
-  */
+ 
  m_hideOldWidget___$p_org_gwtproject_user_client_ui_DeckPanel_SlideAnimation() {
   this.f_oldWidget__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_.m_setVisible__boolean(false);
   this.f_oldWidget__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_ = null;
  }
- /**
-  * @public
-  */
+ 
  m_onInstantaneousRun___$p_org_gwtproject_user_client_ui_DeckPanel_SlideAnimation() {
   UIObject.m_setVisible__org_gwtproject_dom_client_Element__boolean(this.f_container1__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_, this.f_growing__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_);
   UIObject.m_setVisible__org_gwtproject_dom_client_Element__boolean(this.f_container2__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_, !this.f_growing__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_);
@@ -171,9 +145,7 @@ class SlideAnimation extends Animation {
   this.f_container2__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_ = null;
   this.m_hideOldWidget___$p_org_gwtproject_user_client_ui_DeckPanel_SlideAnimation();
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_DeckPanel_SlideAnimation() {
   this.f_container1__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_ = null;
   this.f_container2__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_ = null;
@@ -181,25 +153,17 @@ class SlideAnimation extends Animation {
   this.f_fixedHeight__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_ = -1;
   this.f_oldWidget__org_gwtproject_user_client_ui_DeckPanel_SlideAnimation_ = null;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SlideAnimation.$clinit = () =>{};
   SlideAnimation.$loadModules();
   Animation.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SlideAnimation;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   Element_$Overlay = goog.module.get('org.gwtproject.dom.client.Element.$Overlay$impl');

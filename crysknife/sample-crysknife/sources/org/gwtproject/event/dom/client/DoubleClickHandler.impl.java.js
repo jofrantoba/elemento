@@ -11,50 +11,29 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.event.dom.client.Double
  * @extends {EventHandler}
  */
 class DoubleClickHandler {
- /**
-  * @abstract
-  * @param {DoubleClickEvent} event
-  * @public
-  */
- m_onDoubleClick__org_gwtproject_event_dom_client_DoubleClickEvent(event) {}
- /**
-  * @param {?function(DoubleClickEvent):void} fn
-  * @return {DoubleClickHandler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onDoubleClick__org_gwtproject_event_dom_client_DoubleClickEvent(/** DoubleClickEvent */ event) {}
+ /** @return {DoubleClickHandler} */
+ static $adapt(/** ?function(DoubleClickEvent):void */ fn) {
   DoubleClickHandler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DoubleClickHandler.$clinit = () =>{};
   DoubleClickHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  EventHandler.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_DoubleClickHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  EventHandler.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_DoubleClickHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_DoubleClickHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.event.dom.client.DoubleClickHandler.$LambdaAdaptor$impl');
  }

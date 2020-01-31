@@ -12,71 +12,35 @@ let CellTree__BasicResourcesImpl = goog.forwardDeclare('org.gwtproject.user.cell
  * @extends {Resources}
  */
 class BasicResources {
- /**
-  * @abstract
-  * @override
-  * @return {ImageResource}
-  * @public
-  */
+ /** @abstract @override @return {ImageResource} */
  m_cellTreeClosedItem__() {}
- /**
-  * @abstract
-  * @override
-  * @return {ImageResource}
-  * @public
-  */
+ /** @abstract @override @return {ImageResource} */
  m_cellTreeLoading__() {}
- /**
-  * @abstract
-  * @override
-  * @return {ImageResource}
-  * @public
-  */
+ /** @abstract @override @return {ImageResource} */
  m_cellTreeOpenItem__() {}
- /**
-  * @abstract
-  * @override
-  * @return {BasicStyle}
-  * @public
-  */
+ /** @abstract @override @return {BasicStyle} */
  m_cellTreeStyle__() {}
- /**
-  * @return {BasicResources}
-  * @public
-  */
+ /** @return {BasicResources} */
  static get f_INSTANCE__org_gwtproject_user_cellview_client_CellTree_BasicResources() {
   return (BasicResources.$clinit(), BasicResources.$f_INSTANCE__org_gwtproject_user_cellview_client_CellTree_BasicResources);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   BasicResources.$clinit = () =>{};
   BasicResources.$loadModules();
   BasicResources.$f_INSTANCE__org_gwtproject_user_cellview_client_CellTree_BasicResources = CellTree__BasicResourcesImpl.$create__();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Resources.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_cellview_client_CellTree_BasicResources = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Resources.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_user_cellview_client_CellTree_BasicResources = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_cellview_client_CellTree_BasicResources;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   CellTree__BasicResourcesImpl = goog.module.get('org.gwtproject.user.cellview.client.CellTree_BasicResourcesImpl$impl');
  }
@@ -86,7 +50,7 @@ $Util.$setClassMetadataForInterface(BasicResources, 'org.gwtproject.user.cellvie
 
 BasicResources.$markImplementor(/** @type {Function} */ (BasicResources));
 
-/** @private {BasicResources} */
+/**@private {BasicResources}*/
 BasicResources.$f_INSTANCE__org_gwtproject_user_cellview_client_CellTree_BasicResources;
 
 exports = BasicResources; 

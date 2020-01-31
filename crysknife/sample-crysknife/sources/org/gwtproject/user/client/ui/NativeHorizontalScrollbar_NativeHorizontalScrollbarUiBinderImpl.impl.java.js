@@ -17,74 +17,48 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {NativeHorizontalScrollbarUiBinder}
   */
 class NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Template} */
+  /**@type {Template}*/
   this.f_template__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl;
  }
- /**
-  * @return {!NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl}
-  * @public
-  */
+ /** @return {!NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl} */
  static $create__() {
   NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl.$clinit();
   let $instance = new NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl();
   $instance.$ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl__() {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl();
  }
- /**
-  * @param {NativeHorizontalScrollbar} owner
-  * @return {Object}
-  * @public
-  */
- m_createAndBindUi__org_gwtproject_user_client_ui_NativeHorizontalScrollbar(owner) {
+ /** @return {Object} */
+ m_createAndBindUi__org_gwtproject_user_client_ui_NativeHorizontalScrollbar(/** NativeHorizontalScrollbar */ owner) {
   return Widgets.$create__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl__org_gwtproject_user_client_ui_NativeHorizontalScrollbar(this, owner).m_get_f_div1___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl_Widgets();
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @return {Object}
-  * @public
-  */
- m_createAndBindUi__java_lang_Object(arg0) {
-  return this.m_createAndBindUi__org_gwtproject_user_client_ui_NativeHorizontalScrollbar(/**@type {NativeHorizontalScrollbar} */ ($Casts.$to(arg0, NativeHorizontalScrollbar)));
+ //Bridge method.
+ /** @override @return {Object} */
+ m_createAndBindUi__java_lang_Object(/** * */ arg0) {
+  return this.m_createAndBindUi__org_gwtproject_user_client_ui_NativeHorizontalScrollbar(/**@type {NativeHorizontalScrollbar}*/ ($Casts.$to(arg0, NativeHorizontalScrollbar)));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl() {
   this.f_template__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl = NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl__TemplateImpl.$create__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl.$clinit = () =>{};
   NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof NativeHorizontalScrollbar__NativeHorizontalScrollbarUiBinderImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   NativeHorizontalScrollbar = goog.module.get('org.gwtproject.user.client.ui.NativeHorizontalScrollbar$impl');
   Widgets = goog.module.get('org.gwtproject.user.client.ui.NativeHorizontalScrollbar_NativeHorizontalScrollbarUiBinderImpl.Widgets$impl');

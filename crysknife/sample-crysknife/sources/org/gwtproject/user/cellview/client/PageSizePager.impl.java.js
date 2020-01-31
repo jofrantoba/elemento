@@ -11,36 +11,27 @@ let FlexTable = goog.forwardDeclare('org.gwtproject.user.client.ui.FlexTable$imp
 let HasRows = goog.forwardDeclare('org.gwtproject.view.client.HasRows$impl');
 
 class PageSizePager extends AbstractPager {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {number} */
+  /**@type {number}*/
   this.f_increment__org_gwtproject_user_cellview_client_PageSizePager_ = 0;
-  /** @public {FlexTable} */
+  /**@type {FlexTable}*/
   this.f_layout__org_gwtproject_user_cellview_client_PageSizePager_;
-  /** @public {Anchor} */
+  /**@type {Anchor}*/
   this.f_showMoreButton__org_gwtproject_user_cellview_client_PageSizePager_;
-  /** @public {Anchor} */
+  /**@type {Anchor}*/
   this.f_showLessButton__org_gwtproject_user_cellview_client_PageSizePager_;
  }
- /**
-  * @param {number} increment
-  * @return {!PageSizePager}
-  * @public
-  */
- static $create__int(increment) {
+ /** @return {!PageSizePager} */
+ static $create__int(/** number */ increment) {
   PageSizePager.$clinit();
   let $instance = new PageSizePager();
   $instance.$ctor__org_gwtproject_user_cellview_client_PageSizePager__int(increment);
   return $instance;
  }
- /**
-  * @param {number} increment
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_PageSizePager__int(increment) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_PageSizePager__int(/** number */ increment) {
   this.$ctor__org_gwtproject_user_cellview_client_AbstractPager__();
   this.$init___$p_org_gwtproject_user_cellview_client_PageSizePager();
   this.f_increment__org_gwtproject_user_cellview_client_PageSizePager_ = increment;
@@ -54,30 +45,19 @@ class PageSizePager extends AbstractPager {
   this.f_layout__org_gwtproject_user_cellview_client_PageSizePager_.m_setWidget__int__int__org_gwtproject_user_client_ui_Widget(0, 2, this.f_showMoreButton__org_gwtproject_user_cellview_client_PageSizePager_);
   this.m_setDisplay__org_gwtproject_view_client_HasRows(null);
  }
- /**
-  * @override
-  * @param {HasRows} display
-  * @public
-  */
- m_setDisplay__org_gwtproject_view_client_HasRows(display) {
+ /** @override */
+ m_setDisplay__org_gwtproject_view_client_HasRows(/** HasRows */ display) {
   if ($Equality.$same(display, null)) {
    this.f_showLessButton__org_gwtproject_user_cellview_client_PageSizePager_.m_setVisible__boolean(false);
    this.f_showMoreButton__org_gwtproject_user_cellview_client_PageSizePager_.m_setVisible__boolean(false);
   }
   super.m_setDisplay__org_gwtproject_view_client_HasRows(display);
  }
- /**
-  * @override
-  * @param {number} pageSize
-  * @public
-  */
- m_setPageSize__int(pageSize) {
+ /** @override */
+ m_setPageSize__int(/** number */ pageSize) {
   super.m_setPageSize__int(pageSize);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onRangeOrRowCountChanged__() {
   let display = this.m_getDisplay__();
   let pageSize = display.m_getVisibleRange__().m_getLength__();
@@ -87,47 +67,31 @@ class PageSizePager extends AbstractPager {
   this.f_showMoreButton__org_gwtproject_user_cellview_client_PageSizePager_.m_setVisible__boolean(hasMore);
   this.f_layout__org_gwtproject_user_cellview_client_PageSizePager_.m_setText__int__int__java_lang_String(0, 1, (hasLess && hasMore) ? " | " : "");
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isShowLessButtonVisible___$pp_org_gwtproject_user_cellview_client() {
   return this.f_showLessButton__org_gwtproject_user_cellview_client_PageSizePager_.m_isVisible__();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isShowMoreButtonVisible___$pp_org_gwtproject_user_cellview_client() {
   return this.f_showMoreButton__org_gwtproject_user_cellview_client_PageSizePager_.m_isVisible__();
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_cellview_client_PageSizePager() {
   this.f_layout__org_gwtproject_user_cellview_client_PageSizePager_ = FlexTable.$create__();
   this.f_showMoreButton__org_gwtproject_user_cellview_client_PageSizePager_ = Anchor.$create__java_lang_String("Show More");
   this.f_showLessButton__org_gwtproject_user_cellview_client_PageSizePager_ = Anchor.$create__java_lang_String("Show Less");
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   PageSizePager.$clinit = () =>{};
   PageSizePager.$loadModules();
   AbstractPager.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof PageSizePager;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.user.cellview.client.PageSizePager.$1$impl');

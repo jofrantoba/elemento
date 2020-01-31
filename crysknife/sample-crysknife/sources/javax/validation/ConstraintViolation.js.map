@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ConstraintViolation.impl.java.js",
-"lineCount":60,
-"mappings":"A;;;;;;;;;;;MAiBiB,mB;;;;;;CAER,c;;;;;;CAEA,sB;;;;;;CAEL,e;;;;;;CAEO,oB;;;;;;CAEF,e;;;;;;CAEF,mB;;;;;;CAEE,mB;;;;QAdQ,O;EAAAA,sC;EAAAA;",
+"lineCount":30,
+"mappings":"A;;;;;;;;;;;MAiBiB,mB;;CAER,c;;CAEA,sB;;CAEL,e;;CAEO,oB;;CAEF,e;;CAEF,mB;;CAEE,mB;;QAdQ,O;EAAAA,sC;EAAAA;",
 "sources":["ConstraintViolation.java"],
 "names":["javax.validation.ConstraintViolation.<clinit>"]
 }

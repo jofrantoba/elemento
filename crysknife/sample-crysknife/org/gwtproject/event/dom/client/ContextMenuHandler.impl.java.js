@@ -11,50 +11,29 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.event.dom.client.Contex
  * @extends {EventHandler}
  */
 class ContextMenuHandler {
- /**
-  * @abstract
-  * @param {ContextMenuEvent} event
-  * @public
-  */
- m_onContextMenu__org_gwtproject_event_dom_client_ContextMenuEvent(event) {}
- /**
-  * @param {?function(ContextMenuEvent):void} fn
-  * @return {ContextMenuHandler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onContextMenu__org_gwtproject_event_dom_client_ContextMenuEvent(/** ContextMenuEvent */ event) {}
+ /** @return {ContextMenuHandler} */
+ static $adapt(/** ?function(ContextMenuEvent):void */ fn) {
   ContextMenuHandler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ContextMenuHandler.$clinit = () =>{};
   ContextMenuHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  EventHandler.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_ContextMenuHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  EventHandler.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_ContextMenuHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_ContextMenuHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.event.dom.client.ContextMenuHandler.$LambdaAdaptor$impl');
  }

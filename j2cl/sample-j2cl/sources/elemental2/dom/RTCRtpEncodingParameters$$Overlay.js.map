@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"RTCRtpEncodingParameters$$Overlay.impl.java.js",
-"lineCount":41,
-"mappings":"A;;;;;;;;MAyBiB,iC;;;;;QA8BiB,U;EAAAA,4C;EAC9BA,wG;;;;;;;QA6DW,4E,WAAcC,G;EAAdC,4C;EACXA,2E;;;;;;;QAIW,kE,WAAcD,G;EAAdC,4C;EACXA,2E;;;;;QAlGa,O;EAAAC,oD;EAAAA;",
+"lineCount":28,
+"mappings":"A;;;;;;;;MAyBiB,iC;;QA8BiB,U;EAAAA,4C;EAC9BA,uG;;;QA6DW,4E,2DAAcC,G;EAAdC,4C;EACXA,0E;;;QAIW,kE,0DAAcD,G;EAAdC,4C;EACXA,0E;;;QAlGa,O;EAAAC,oD;EAAAA;",
 "sources":["RTCRtpEncodingParameters.java"],
 "names":["elemental2.dom.RTCRtpEncodingParameters$$Overlay.create","rid","elemental2.dom.RTCRtpEncodingParameters$$Overlay.setRid__$devirt","elemental2.dom.RTCRtpEncodingParameters$$Overlay.<clinit>"]
 }

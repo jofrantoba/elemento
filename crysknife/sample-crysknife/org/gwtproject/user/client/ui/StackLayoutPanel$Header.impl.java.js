@@ -18,80 +18,48 @@ let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
  * @implements {HasClickHandlers}
   */
 class Header extends Composite {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {StackLayoutPanel} */
+  /**@type {StackLayoutPanel}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_StackLayoutPanel_Header;
  }
- /**
-  * @param {StackLayoutPanel} $outer_this
-  * @param {Widget} child
-  * @return {!Header}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_StackLayoutPanel__org_gwtproject_user_client_ui_Widget($outer_this, child) {
+ /** @return {!Header} */
+ static $create__org_gwtproject_user_client_ui_StackLayoutPanel__org_gwtproject_user_client_ui_Widget(/** StackLayoutPanel */ $outer_this, /** Widget */ child) {
   Header.$clinit();
   let $instance = new Header();
   $instance.$ctor__org_gwtproject_user_client_ui_StackLayoutPanel_Header__org_gwtproject_user_client_ui_StackLayoutPanel__org_gwtproject_user_client_ui_Widget($outer_this, child);
   return $instance;
  }
- /**
-  * @param {StackLayoutPanel} $outer_this
-  * @param {Widget} child
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_StackLayoutPanel_Header__org_gwtproject_user_client_ui_StackLayoutPanel__org_gwtproject_user_client_ui_Widget($outer_this, child) {
+ 
+ $ctor__org_gwtproject_user_client_ui_StackLayoutPanel_Header__org_gwtproject_user_client_ui_StackLayoutPanel__org_gwtproject_user_client_ui_Widget(/** StackLayoutPanel */ $outer_this, /** Widget */ child) {
   this.f_$outer_this__org_gwtproject_user_client_ui_StackLayoutPanel_Header = $outer_this;
   this.$ctor__org_gwtproject_user_client_ui_Composite__();
   this.m_initWidget__org_gwtproject_user_client_ui_Widget(child);
  }
- /**
-  * @override
-  * @param {ClickHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addClickHandler__org_gwtproject_event_dom_client_ClickHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addClickHandler__org_gwtproject_event_dom_client_ClickHandler(/** ClickHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, ClickEvent.m_getType__());
  }
- /**
-  * @param {MouseOutHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseOutHandler__org_gwtproject_event_dom_client_MouseOutHandler(handler) {
+ /** @return {HandlerRegistration} */
+ m_addMouseOutHandler__org_gwtproject_event_dom_client_MouseOutHandler(/** MouseOutHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseOutEvent.m_getType__());
  }
- /**
-  * @param {MouseOverHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseOverHandler__org_gwtproject_event_dom_client_MouseOverHandler(handler) {
+ /** @return {HandlerRegistration} */
+ m_addMouseOverHandler__org_gwtproject_event_dom_client_MouseOverHandler(/** MouseOverHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseOverEvent.m_getType__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Header.$clinit = () =>{};
   Header.$loadModules();
   Composite.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Header;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   ClickEvent = goog.module.get('org.gwtproject.event.dom.client.ClickEvent$impl');
   MouseOutEvent = goog.module.get('org.gwtproject.event.dom.client.MouseOutEvent$impl');

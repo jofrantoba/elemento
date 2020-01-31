@@ -18,80 +18,48 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @implements {HasCssName}
   */
 class FontWeight extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_dom_style_shared_FontWeight__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_dom_style_shared_FontWeight__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @abstract
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @override @return {?string} */
  m_getCssName__() {}
- /**
-  * @param {string} name
-  * @return {!FontWeight}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!FontWeight} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   FontWeight.$clinit();
   if ($Equality.$same(FontWeight.f_namesToValuesMap__org_gwtproject_dom_style_shared_FontWeight_, null)) {
    FontWeight.f_namesToValuesMap__org_gwtproject_dom_style_shared_FontWeight_ = $Enums.createMapFromValues(FontWeight.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, FontWeight.f_namesToValuesMap__org_gwtproject_dom_style_shared_FontWeight_);
  }
- /**
-  * @return {!Array<!FontWeight>}
-  * @public
-  */
+ /** @return {!Array<!FontWeight>} */
  static m_values__() {
   FontWeight.$clinit();
-  return /**@type {!Array<FontWeight>} */ ($Arrays.$init([FontWeight.$f_NORMAL__org_gwtproject_dom_style_shared_FontWeight, FontWeight.$f_BOLD__org_gwtproject_dom_style_shared_FontWeight, FontWeight.$f_BOLDER__org_gwtproject_dom_style_shared_FontWeight, FontWeight.$f_LIGHTER__org_gwtproject_dom_style_shared_FontWeight], FontWeight));
+  return /**@type {!Array<FontWeight>}*/ ($Arrays.$init([FontWeight.$f_NORMAL__org_gwtproject_dom_style_shared_FontWeight, FontWeight.$f_BOLD__org_gwtproject_dom_style_shared_FontWeight, FontWeight.$f_BOLDER__org_gwtproject_dom_style_shared_FontWeight, FontWeight.$f_LIGHTER__org_gwtproject_dom_style_shared_FontWeight], FontWeight));
  }
- /**
-  * @return {!FontWeight}
-  * @public
-  */
+ /** @return {!FontWeight} */
  static get f_NORMAL__org_gwtproject_dom_style_shared_FontWeight() {
   return (FontWeight.$clinit(), FontWeight.$f_NORMAL__org_gwtproject_dom_style_shared_FontWeight);
  }
- /**
-  * @return {!FontWeight}
-  * @public
-  */
+ /** @return {!FontWeight} */
  static get f_BOLD__org_gwtproject_dom_style_shared_FontWeight() {
   return (FontWeight.$clinit(), FontWeight.$f_BOLD__org_gwtproject_dom_style_shared_FontWeight);
  }
- /**
-  * @return {!FontWeight}
-  * @public
-  */
+ /** @return {!FontWeight} */
  static get f_BOLDER__org_gwtproject_dom_style_shared_FontWeight() {
   return (FontWeight.$clinit(), FontWeight.$f_BOLDER__org_gwtproject_dom_style_shared_FontWeight);
  }
- /**
-  * @return {!FontWeight}
-  * @public
-  */
+ /** @return {!FontWeight} */
  static get f_LIGHTER__org_gwtproject_dom_style_shared_FontWeight() {
   return (FontWeight.$clinit(), FontWeight.$f_LIGHTER__org_gwtproject_dom_style_shared_FontWeight);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   FontWeight.$clinit = () =>{};
   FontWeight.$loadModules();
@@ -102,17 +70,11 @@ class FontWeight extends Enum {
   FontWeight.$f_LIGHTER__org_gwtproject_dom_style_shared_FontWeight = $4.$create__java_lang_String__int($Util.$makeEnumName("LIGHTER"), FontWeight.$ordinal$f_LIGHTER__org_gwtproject_dom_style_shared_FontWeight);
   FontWeight.f_namesToValuesMap__org_gwtproject_dom_style_shared_FontWeight_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof FontWeight;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.dom.style.shared.FontWeight.$1$impl');
@@ -128,23 +90,23 @@ $Util.$setClassMetadataForEnum(FontWeight, 'org.gwtproject.dom.style.shared.Font
 
 HasCssName.$markImplementor(FontWeight);
 
-/** @private {!FontWeight} */
+/**@private {!FontWeight}*/
 FontWeight.$f_NORMAL__org_gwtproject_dom_style_shared_FontWeight;
-/** @private {!FontWeight} */
+/**@private {!FontWeight}*/
 FontWeight.$f_BOLD__org_gwtproject_dom_style_shared_FontWeight;
-/** @private {!FontWeight} */
+/**@private {!FontWeight}*/
 FontWeight.$f_BOLDER__org_gwtproject_dom_style_shared_FontWeight;
-/** @private {!FontWeight} */
+/**@private {!FontWeight}*/
 FontWeight.$f_LIGHTER__org_gwtproject_dom_style_shared_FontWeight;
-/** @public {Map<?string, !FontWeight>} */
+/**@type {Map<?string, !FontWeight>}*/
 FontWeight.f_namesToValuesMap__org_gwtproject_dom_style_shared_FontWeight_;
-/** @public {number} @const */
+/**@const {number}*/
 FontWeight.$ordinal$f_NORMAL__org_gwtproject_dom_style_shared_FontWeight = 0;
-/** @public {number} @const */
+/**@const {number}*/
 FontWeight.$ordinal$f_BOLD__org_gwtproject_dom_style_shared_FontWeight = 1;
-/** @public {number} @const */
+/**@const {number}*/
 FontWeight.$ordinal$f_BOLDER__org_gwtproject_dom_style_shared_FontWeight = 2;
-/** @public {number} @const */
+/**@const {number}*/
 FontWeight.$ordinal$f_LIGHTER__org_gwtproject_dom_style_shared_FontWeight = 3;
 
 exports = FontWeight; 

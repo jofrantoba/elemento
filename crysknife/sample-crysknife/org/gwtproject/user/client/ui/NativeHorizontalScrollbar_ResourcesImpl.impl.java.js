@@ -17,109 +17,69 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {Resources}
   */
 class NativeHorizontalScrollbar__ResourcesImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!NativeHorizontalScrollbar__ResourcesImpl}
-  * @public
-  */
+ /** @return {!NativeHorizontalScrollbar__ResourcesImpl} */
  static $create__() {
   NativeHorizontalScrollbar__ResourcesImpl.$clinit();
   let $instance = new NativeHorizontalScrollbar__ResourcesImpl();
   $instance.$ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @public
-  */
+ 
  m_nativeHorizontalScrollbarStyleInitializer___$p_org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl() {
   NativeHorizontalScrollbar__ResourcesImpl.$f_nativeHorizontalScrollbarStyle__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl_ = $1.$create__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl(this);
  }
- /**
-  * @override
-  * @return {Style}
-  * @public
-  */
+ /** @override @return {Style} */
  m_nativeHorizontalScrollbarStyle__() {
   return nativeHorizontalScrollbarStyleInitializer.m_get__();
  }
- /**
-  * @return {Array<ResourcePrototype>}
-  * @public
-  */
+ /** @return {Array<ResourcePrototype>} */
  m_getResources__() {
-  return /**@type {!Array<ResourcePrototype>} */ ($Arrays.$init([this.m_nativeHorizontalScrollbarStyle__()], ResourcePrototype));
+  return /**@type {!Array<ResourcePrototype>}*/ ($Arrays.$init([this.m_nativeHorizontalScrollbarStyle__()], ResourcePrototype));
  }
- /**
-  * @param {?string} name
-  * @return {ResourcePrototype}
-  * @public
-  */
- m_getResource__java_lang_String(name) {
+ /** @return {ResourcePrototype} */
+ m_getResource__java_lang_String(/** ?string */ name) {
   if ($Equality.$same(NativeHorizontalScrollbar__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl_, null)) {
-   NativeHorizontalScrollbar__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl_ = /**@type {!HashMap<?string, ResourcePrototype>} */ (HashMap.$create__());
+   NativeHorizontalScrollbar__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl_ = /**@type {!HashMap<?string, ResourcePrototype>}*/ (HashMap.$create__());
    NativeHorizontalScrollbar__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl_.put("nativeHorizontalScrollbarStyle", this.m_nativeHorizontalScrollbarStyle__());
   }
-  return /**@type {ResourcePrototype} */ ($Casts.$to(NativeHorizontalScrollbar__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl_.get(name), ResourcePrototype));
+  return /**@type {ResourcePrototype}*/ ($Casts.$to(NativeHorizontalScrollbar__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl_.get(name), ResourcePrototype));
  }
- /**
-  * @return {NativeHorizontalScrollbar__ResourcesImpl}
-  * @public
-  */
+ /** @return {NativeHorizontalScrollbar__ResourcesImpl} */
  static get f__instance0__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl_() {
   return (NativeHorizontalScrollbar__ResourcesImpl.$clinit(), NativeHorizontalScrollbar__ResourcesImpl.$f__instance0__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl_);
  }
- /**
-  * @param {NativeHorizontalScrollbar__ResourcesImpl} value
-  * @public
-  */
- static set f__instance0__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl_(value) {
+ 
+ static set f__instance0__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl_(/** NativeHorizontalScrollbar__ResourcesImpl */ value) {
   (NativeHorizontalScrollbar__ResourcesImpl.$clinit(), NativeHorizontalScrollbar__ResourcesImpl.$f__instance0__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl_ = value);
  }
- /**
-  * @return {Style}
-  * @public
-  */
+ /** @return {Style} */
  static get f_nativeHorizontalScrollbarStyle__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl_() {
   return (NativeHorizontalScrollbar__ResourcesImpl.$clinit(), NativeHorizontalScrollbar__ResourcesImpl.$f_nativeHorizontalScrollbarStyle__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl_);
  }
- /**
-  * @param {Style} value
-  * @public
-  */
- static set f_nativeHorizontalScrollbarStyle__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl_(value) {
+ 
+ static set f_nativeHorizontalScrollbarStyle__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl_(/** Style */ value) {
   (NativeHorizontalScrollbar__ResourcesImpl.$clinit(), NativeHorizontalScrollbar__ResourcesImpl.$f_nativeHorizontalScrollbarStyle__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl_ = value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NativeHorizontalScrollbar__ResourcesImpl.$clinit = () =>{};
   NativeHorizontalScrollbar__ResourcesImpl.$loadModules();
   j_l_Object.$clinit();
   NativeHorizontalScrollbar__ResourcesImpl.$f__instance0__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl_ = NativeHorizontalScrollbar__ResourcesImpl.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof NativeHorizontalScrollbar__ResourcesImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   HashMap = goog.module.get('java.util.HashMap$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -135,11 +95,11 @@ $Util.$setClassMetadata(NativeHorizontalScrollbar__ResourcesImpl, 'org.gwtprojec
 
 Resources.$markImplementor(NativeHorizontalScrollbar__ResourcesImpl);
 
-/** @private {NativeHorizontalScrollbar__ResourcesImpl} */
+/**@private {NativeHorizontalScrollbar__ResourcesImpl}*/
 NativeHorizontalScrollbar__ResourcesImpl.$f__instance0__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl_;
-/** @public {HashMap<?string, ResourcePrototype>} */
+/**@type {HashMap<?string, ResourcePrototype>}*/
 NativeHorizontalScrollbar__ResourcesImpl.f_resourceMap__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl_;
-/** @private {Style} */
+/**@private {Style}*/
 NativeHorizontalScrollbar__ResourcesImpl.$f_nativeHorizontalScrollbarStyle__org_gwtproject_user_client_ui_NativeHorizontalScrollbar_ResourcesImpl_;
 
 exports = NativeHorizontalScrollbar__ResourcesImpl; 

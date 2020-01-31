@@ -3,37 +3,23 @@ goog.module('elemental2.dom.MediaError.$Overlay$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 
 class $Overlay {
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_MEDIA_ERR_ABORTED__elemental2_dom_MediaError_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_MEDIA_ERR_ABORTED__elemental2_dom_MediaError_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_MEDIA_ERR_DECODE__elemental2_dom_MediaError_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_MEDIA_ERR_DECODE__elemental2_dom_MediaError_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_MEDIA_ERR_NETWORK__elemental2_dom_MediaError_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_MEDIA_ERR_NETWORK__elemental2_dom_MediaError_$Overlay);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_MEDIA_ERR_SRC_NOT_SUPPORTED__elemental2_dom_MediaError_$Overlay() {
   return ($Overlay.$clinit(), $Overlay.$f_MEDIA_ERR_SRC_NOT_SUPPORTED__elemental2_dom_MediaError_$Overlay);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $Overlay.$clinit = () =>{};
   $Overlay.$loadModules();
@@ -42,29 +28,23 @@ class $Overlay {
   $Overlay.$f_MEDIA_ERR_NETWORK__elemental2_dom_MediaError_$Overlay = MediaError.MEDIA_ERR_NETWORK;
   $Overlay.$f_MEDIA_ERR_SRC_NOT_SUPPORTED__elemental2_dom_MediaError_$Overlay = MediaError.MEDIA_ERR_SRC_NOT_SUPPORTED;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof MediaError;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }
 $Util.$setClassMetadata($Overlay, 'MediaError');
 
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_MEDIA_ERR_ABORTED__elemental2_dom_MediaError_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_MEDIA_ERR_DECODE__elemental2_dom_MediaError_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_MEDIA_ERR_NETWORK__elemental2_dom_MediaError_$Overlay = 0;
-/** @private {number} */
+/**@private {number}*/
 $Overlay.$f_MEDIA_ERR_SRC_NOT_SUPPORTED__elemental2_dom_MediaError_$Overlay = 0;
 
 exports = $Overlay; 

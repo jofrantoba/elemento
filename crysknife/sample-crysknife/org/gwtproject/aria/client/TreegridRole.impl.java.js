@@ -10,36 +10,23 @@ const TreeRole = goog.require('org.gwtproject.aria.client.TreeRole$impl');
  * @extends {TreeRole}
  */
 class TreegridRole {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TreegridRole.$clinit = () =>{};
   TreegridRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  GridRole.$markImplementor(classConstructor);
-  TreeRole.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_TreegridRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  GridRole.$markImplementor(ctor);
+  TreeRole.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_TreegridRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_TreegridRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

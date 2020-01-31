@@ -9,61 +9,37 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class ConstructorStreamOrTracksUnionType_$Overlay {
- /**
-  * @param {*} o
-  * @return {?}
-  * @public
-  */
- static m_of__java_lang_Object(o) {
+ /** @return {?} */
+ static m_of__java_lang_Object(/** * */ o) {
   ConstructorStreamOrTracksUnionType_$Overlay.$clinit();
-  return /**@type {?} */ (Js.m_cast__java_lang_Object(o));
+  return /**@type {?}*/ (Js.m_cast__java_lang_Object(o));
  }
- /**
-  * @param {?} $thisArg
-  * @return {Array<MediaStreamTrack>}
-  * @public
-  */
- static m_asJsArray__$devirt__elemental2_dom_MediaStream_ConstructorStreamOrTracksUnionType($thisArg) {
+ /** @return {Array<MediaStreamTrack>} */
+ static m_asJsArray__$devirt__elemental2_dom_MediaStream_ConstructorStreamOrTracksUnionType(/** ? */ $thisArg) {
   ConstructorStreamOrTracksUnionType_$Overlay.$clinit();
-  return /**@type {Array<MediaStreamTrack>} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $Overlay));
+  return /**@type {Array<MediaStreamTrack>}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), $Overlay));
  }
- /**
-  * @param {?} $thisArg
-  * @return {MediaStream}
-  * @public
-  */
- static m_asMediaStream__$devirt__elemental2_dom_MediaStream_ConstructorStreamOrTracksUnionType($thisArg) {
+ /** @return {MediaStream} */
+ static m_asMediaStream__$devirt__elemental2_dom_MediaStream_ConstructorStreamOrTracksUnionType(/** ? */ $thisArg) {
   ConstructorStreamOrTracksUnionType_$Overlay.$clinit();
-  return /**@type {MediaStream} */ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), MediaStream_$Overlay));
+  return /**@type {MediaStream}*/ ($Casts.$to(Js.m_cast__java_lang_Object($thisArg), MediaStream_$Overlay));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isJsArray__$devirt__elemental2_dom_MediaStream_ConstructorStreamOrTracksUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isJsArray__$devirt__elemental2_dom_MediaStream_ConstructorStreamOrTracksUnionType(/** ? */ $thisArg) {
   ConstructorStreamOrTracksUnionType_$Overlay.$clinit();
-  return $Overlay.$isInstance(/**@type {*} */ ($thisArg));
+  return $Overlay.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @param {?} $thisArg
-  * @return {boolean}
-  * @public
-  */
- static m_isMediaStream__$devirt__elemental2_dom_MediaStream_ConstructorStreamOrTracksUnionType($thisArg) {
+ /** @return {boolean} */
+ static m_isMediaStream__$devirt__elemental2_dom_MediaStream_ConstructorStreamOrTracksUnionType(/** ? */ $thisArg) {
   ConstructorStreamOrTracksUnionType_$Overlay.$clinit();
-  return MediaStream_$Overlay.$isInstance(/**@type {*} */ ($thisArg));
+  return MediaStream_$Overlay.$isInstance(/**@type {*}*/ ($thisArg));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ConstructorStreamOrTracksUnionType_$Overlay.$clinit = () =>{};
   ConstructorStreamOrTracksUnionType_$Overlay.$loadModules();
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('elemental2.core.JsArray.$Overlay$impl');
   MediaStream_$Overlay = goog.module.get('elemental2.dom.MediaStream.$Overlay$impl');

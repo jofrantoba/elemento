@@ -34,25 +34,18 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {HasAlignment}
   */
 class DockPanel extends CellPanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {HorizontalAlignmentConstant} */
+  /**@type {HorizontalAlignmentConstant}*/
   this.f_horzAlign__org_gwtproject_user_client_ui_DockPanel_;
-  /** @public {VerticalAlignmentConstant} */
+  /**@type {VerticalAlignmentConstant}*/
   this.f_vertAlign__org_gwtproject_user_client_ui_DockPanel_;
-  /** @public {Widget} */
+  /**@type {Widget}*/
   this.f_center__org_gwtproject_user_client_ui_DockPanel_;
  }
- /**
-  * @param {DockLayoutConstant} direction
-  * @param {number} count
-  * @return {?string}
-  * @public
-  */
- static m_generateDebugId__org_gwtproject_user_client_ui_DockPanel_DockLayoutConstant__int(direction, count) {
+ /** @return {?string} */
+ static m_generateDebugId__org_gwtproject_user_client_ui_DockPanel_DockLayoutConstant__int(/** DockLayoutConstant */ direction, /** number */ count) {
   if ($Equality.$same(direction, DockPanel.$f_NORTH__org_gwtproject_user_client_ui_DockPanel)) {
    return "north" + count;
   } else if ($Equality.$same(direction, DockPanel.$f_SOUTH__org_gwtproject_user_client_ui_DockPanel)) {
@@ -69,31 +62,22 @@ class DockPanel extends CellPanel {
    return "center";
   }
  }
- /**
-  * @return {!DockPanel}
-  * @public
-  */
+ /** @return {!DockPanel} */
  static $create__() {
   DockPanel.$clinit();
   let $instance = new DockPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_DockPanel__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_DockPanel__() {
   this.$ctor__org_gwtproject_user_client_ui_CellPanel__();
   this.$init___$p_org_gwtproject_user_client_ui_DockPanel();
   $Overlay.m_setPropertyInt__$devirt__org_gwtproject_dom_client_Element__java_lang_String__int(this.m_getTable__(), "cellSpacing", 0);
   $Overlay.m_setPropertyInt__$devirt__org_gwtproject_dom_client_Element__java_lang_String__int(this.m_getTable__(), "cellPadding", 0);
  }
- /**
-  * @param {Widget} widget
-  * @param {DockLayoutConstant} direction
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_DockPanel_DockLayoutConstant(widget, direction) {
+ 
+ m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_DockPanel_DockLayoutConstant(/** Widget */ widget, /** DockLayoutConstant */ direction) {
   if ($Equality.$same(direction, DockPanel.$f_CENTER__org_gwtproject_user_client_ui_DockPanel)) {
    if ($Equality.$same(widget, this.f_center__org_gwtproject_user_client_ui_DockPanel_)) {
     return;
@@ -113,48 +97,27 @@ class DockPanel extends CellPanel {
   this.m_realizeTable___$p_org_gwtproject_user_client_ui_DockPanel();
   this.m_adopt__org_gwtproject_user_client_ui_Widget(widget);
  }
- /**
-  * @param {IsWidget} widget
-  * @param {DockLayoutConstant} direction
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_IsWidget__org_gwtproject_user_client_ui_DockPanel_DockLayoutConstant(widget, direction) {
+ 
+ m_add__org_gwtproject_user_client_ui_IsWidget__org_gwtproject_user_client_ui_DockPanel_DockLayoutConstant(/** IsWidget */ widget, /** DockLayoutConstant */ direction) {
   this.m_add__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_DockPanel_DockLayoutConstant(widget.m_asWidget__(), direction);
  }
- /**
-  * @override
-  * @return {HorizontalAlignmentConstant}
-  * @public
-  */
+ /** @override @return {HorizontalAlignmentConstant} */
  m_getHorizontalAlignment__() {
   return this.f_horzAlign__org_gwtproject_user_client_ui_DockPanel_;
  }
- /**
-  * @override
-  * @return {VerticalAlignmentConstant}
-  * @public
-  */
+ /** @override @return {VerticalAlignmentConstant} */
  m_getVerticalAlignment__() {
   return this.f_vertAlign__org_gwtproject_user_client_ui_DockPanel_;
  }
- /**
-  * @param {Widget} w
-  * @return {DockLayoutConstant}
-  * @public
-  */
- m_getWidgetDirection__org_gwtproject_user_client_ui_Widget(w) {
+ /** @return {DockLayoutConstant} */
+ m_getWidgetDirection__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   if (!$Equality.$same(w.m_getParent__(), this)) {
    return null;
   }
-  return /**@type {LayoutData} */ ($Casts.$to(w.m_getLayoutData__(), LayoutData)).f_direction__org_gwtproject_user_client_ui_DockPanel_LayoutData;
+  return /**@type {LayoutData}*/ ($Casts.$to(w.m_getLayoutData__(), LayoutData)).f_direction__org_gwtproject_user_client_ui_DockPanel_LayoutData;
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   let removed = super.m_remove__org_gwtproject_user_client_ui_Widget(w);
   if (removed) {
    if ($Equality.$same(w, this.f_center__org_gwtproject_user_client_ui_DockPanel_)) {
@@ -164,96 +127,62 @@ class DockPanel extends CellPanel {
   }
   return removed;
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @param {?string} height
-  * @public
-  */
- m_setCellHeight__org_gwtproject_user_client_ui_Widget__java_lang_String(w, height) {
-  let data = /**@type {LayoutData} */ ($Casts.$to(w.m_getLayoutData__(), LayoutData));
+ /** @override */
+ m_setCellHeight__org_gwtproject_user_client_ui_Widget__java_lang_String(/** Widget */ w, /** ?string */ height) {
+  let data = /**@type {LayoutData}*/ ($Casts.$to(w.m_getLayoutData__(), LayoutData));
   data.f_height__org_gwtproject_user_client_ui_DockPanel_LayoutData = height;
   if (!$Equality.$same(data.f_td__org_gwtproject_user_client_ui_DockPanel_LayoutData, null)) {
    Style_$Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(data.f_td__org_gwtproject_user_client_ui_DockPanel_LayoutData.style, "height", data.f_height__org_gwtproject_user_client_ui_DockPanel_LayoutData);
   }
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @param {HorizontalAlignmentConstant} align
-  * @public
-  */
- m_setCellHorizontalAlignment__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_HasHorizontalAlignment_HorizontalAlignmentConstant(w, align) {
-  let data = /**@type {LayoutData} */ ($Casts.$to(w.m_getLayoutData__(), LayoutData));
+ /** @override */
+ m_setCellHorizontalAlignment__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_HasHorizontalAlignment_HorizontalAlignmentConstant(/** Widget */ w, /** HorizontalAlignmentConstant */ align) {
+  let data = /**@type {LayoutData}*/ ($Casts.$to(w.m_getLayoutData__(), LayoutData));
   data.f_hAlign__org_gwtproject_user_client_ui_DockPanel_LayoutData = align.m_getTextAlignString__();
   if (!$Equality.$same(data.f_td__org_gwtproject_user_client_ui_DockPanel_LayoutData, null)) {
    this.m_setCellHorizontalAlignment__org_gwtproject_dom_client_Element__org_gwtproject_user_client_ui_HasHorizontalAlignment_HorizontalAlignmentConstant(data.f_td__org_gwtproject_user_client_ui_DockPanel_LayoutData, align);
   }
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @param {VerticalAlignmentConstant} align
-  * @public
-  */
- m_setCellVerticalAlignment__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant(w, align) {
-  let data = /**@type {LayoutData} */ ($Casts.$to(w.m_getLayoutData__(), LayoutData));
+ /** @override */
+ m_setCellVerticalAlignment__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant(/** Widget */ w, /** VerticalAlignmentConstant */ align) {
+  let data = /**@type {LayoutData}*/ ($Casts.$to(w.m_getLayoutData__(), LayoutData));
   data.f_vAlign__org_gwtproject_user_client_ui_DockPanel_LayoutData = align.m_getVerticalAlignString__();
   if (!$Equality.$same(data.f_td__org_gwtproject_user_client_ui_DockPanel_LayoutData, null)) {
    this.m_setCellVerticalAlignment__org_gwtproject_dom_client_Element__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant(data.f_td__org_gwtproject_user_client_ui_DockPanel_LayoutData, align);
   }
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @param {?string} width
-  * @public
-  */
- m_setCellWidth__org_gwtproject_user_client_ui_Widget__java_lang_String(w, width) {
-  let data = /**@type {LayoutData} */ ($Casts.$to(w.m_getLayoutData__(), LayoutData));
+ /** @override */
+ m_setCellWidth__org_gwtproject_user_client_ui_Widget__java_lang_String(/** Widget */ w, /** ?string */ width) {
+  let data = /**@type {LayoutData}*/ ($Casts.$to(w.m_getLayoutData__(), LayoutData));
   data.f_width__org_gwtproject_user_client_ui_DockPanel_LayoutData = width;
   if (!$Equality.$same(data.f_td__org_gwtproject_user_client_ui_DockPanel_LayoutData, null)) {
    Style_$Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(data.f_td__org_gwtproject_user_client_ui_DockPanel_LayoutData.style, "width", data.f_width__org_gwtproject_user_client_ui_DockPanel_LayoutData);
   }
  }
- /**
-  * @override
-  * @param {HorizontalAlignmentConstant} align
-  * @public
-  */
- m_setHorizontalAlignment__org_gwtproject_user_client_ui_HasHorizontalAlignment_HorizontalAlignmentConstant(align) {
+ /** @override */
+ m_setHorizontalAlignment__org_gwtproject_user_client_ui_HasHorizontalAlignment_HorizontalAlignmentConstant(/** HorizontalAlignmentConstant */ align) {
   this.f_horzAlign__org_gwtproject_user_client_ui_DockPanel_ = align;
  }
- /**
-  * @override
-  * @param {VerticalAlignmentConstant} align
-  * @public
-  */
- m_setVerticalAlignment__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant(align) {
+ /** @override */
+ m_setVerticalAlignment__org_gwtproject_user_client_ui_HasVerticalAlignment_VerticalAlignmentConstant(/** VerticalAlignmentConstant */ align) {
   this.f_vertAlign__org_gwtproject_user_client_ui_DockPanel_ = align;
  }
- /**
-  * @override
-  * @param {?string} baseID
-  * @public
-  */
- m_onEnsureDebugId__java_lang_String(baseID) {
+ /** @override */
+ m_onEnsureDebugId__java_lang_String(/** ?string */ baseID) {
   super.m_onEnsureDebugId__java_lang_String(baseID);
-  let dirCount = /**@type {!HashMap<DockLayoutConstant, Integer>} */ (HashMap.$create__());
+  let dirCount = /**@type {!HashMap<DockLayoutConstant, Integer>}*/ (HashMap.$create__());
   let it = this.m_getChildren__().m_iterator__();
   while (it.m_hasNext__()) {
-   let child = /**@type {Widget} */ ($Casts.$to(it.m_next__(), Widget));
-   let dir = /**@type {LayoutData} */ ($Casts.$to(child.m_getLayoutData__(), LayoutData)).f_direction__org_gwtproject_user_client_ui_DockPanel_LayoutData;
-   let countObj = /**@type {Integer} */ ($Casts.$to(dirCount.get(dir), Integer));
+   let child = /**@type {Widget}*/ ($Casts.$to(it.m_next__(), Widget));
+   let dir = /**@type {LayoutData}*/ ($Casts.$to(child.m_getLayoutData__(), LayoutData)).f_direction__org_gwtproject_user_client_ui_DockPanel_LayoutData;
+   let countObj = /**@type {Integer}*/ ($Casts.$to(dirCount.get(dir), Integer));
    let count = $Equality.$same(countObj, null) ? 1 : countObj.m_intValue__();
    let debugID = DockPanel.m_generateDebugId__org_gwtproject_user_client_ui_DockPanel_DockLayoutConstant__int(dir, count);
    UIObject.m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(DOM.m_getParent__org_gwtproject_dom_client_Element(child.m_getElement__()), baseID, debugID);
    dirCount.put(dir, Integer.m_valueOf__int(count + 1));
   }
  }
- /**
-  * @public
-  */
+ 
  m_realizeTable___$p_org_gwtproject_user_client_ui_DockPanel() {
   let bodyElem = this.m_getBody__();
   while (DOM.m_getChildCount__org_gwtproject_dom_client_Element(bodyElem) > 0) {
@@ -261,15 +190,15 @@ class DockPanel extends CellPanel {
   }
   let rowCount = 1, colCount = 1;
   for (let it = this.m_getChildren__().m_iterator__(); it.m_hasNext__(); ) {
-   let child = /**@type {Widget} */ ($Casts.$to(it.m_next__(), Widget));
-   let dir = /**@type {LayoutData} */ ($Casts.$to(child.m_getLayoutData__(), LayoutData)).f_direction__org_gwtproject_user_client_ui_DockPanel_LayoutData;
+   let child = /**@type {Widget}*/ ($Casts.$to(it.m_next__(), Widget));
+   let dir = /**@type {LayoutData}*/ ($Casts.$to(child.m_getLayoutData__(), LayoutData)).f_direction__org_gwtproject_user_client_ui_DockPanel_LayoutData;
    if ($Equality.$same(dir, DockPanel.$f_NORTH__org_gwtproject_user_client_ui_DockPanel) || $Equality.$same(dir, DockPanel.$f_SOUTH__org_gwtproject_user_client_ui_DockPanel)) {
     ++rowCount;
    } else if ($Equality.$same(dir, DockPanel.$f_EAST__org_gwtproject_user_client_ui_DockPanel) || $Equality.$same(dir, DockPanel.$f_WEST__org_gwtproject_user_client_ui_DockPanel) || $Equality.$same(dir, DockPanel.$f_LINE_START__org_gwtproject_user_client_ui_DockPanel) || $Equality.$same(dir, DockPanel.$f_LINE_END__org_gwtproject_user_client_ui_DockPanel)) {
     ++colCount;
    }
   }
-  let rows = /**@type {!Array<TmpRow>} */ ($Arrays.$create([rowCount], TmpRow));
+  let rows = /**@type {!Array<TmpRow>}*/ ($Arrays.$create([rowCount], TmpRow));
   for (let i = 0; i < rowCount; ++i) {
    $Arrays.$set(rows, i, TmpRow.$create__());
    rows[i].f_tr__org_gwtproject_user_client_ui_DockPanel_TmpRow = DOM.m_createTR__();
@@ -279,8 +208,8 @@ class DockPanel extends CellPanel {
   let northRow = 0, southRow = rowCount - 1;
   let centerTd = null;
   for (let it_1 = this.m_getChildren__().m_iterator__(); it_1.m_hasNext__(); ) {
-   let child_1 = /**@type {Widget} */ ($Casts.$to(it_1.m_next__(), Widget));
-   let layout = /**@type {LayoutData} */ ($Casts.$to(child_1.m_getLayoutData__(), LayoutData));
+   let child_1 = /**@type {Widget}*/ ($Casts.$to(it_1.m_next__(), Widget));
+   let layout = /**@type {LayoutData}*/ ($Casts.$to(child_1.m_getLayoutData__(), LayoutData));
    let td = DOM.m_createTD__();
    layout.f_td__org_gwtproject_user_client_ui_DockPanel_LayoutData = td;
    $Overlay.m_setPropertyString__$devirt__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(layout.f_td__org_gwtproject_user_client_ui_DockPanel_LayoutData, "align", layout.f_hAlign__org_gwtproject_user_client_ui_DockPanel_LayoutData);
@@ -319,12 +248,8 @@ class DockPanel extends CellPanel {
    DOM.m_appendChild__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(centerTd, this.f_center__org_gwtproject_user_client_ui_DockPanel_.m_getElement__());
   }
  }
- /**
-  * @param {DockLayoutConstant} widgetDirection
-  * @return {boolean}
-  * @public
-  */
- m_shouldAddToLogicalLeftOfTable__org_gwtproject_user_client_ui_DockPanel_DockLayoutConstant_$p_org_gwtproject_user_client_ui_DockPanel(widgetDirection) {
+ /** @return {boolean} */
+ m_shouldAddToLogicalLeftOfTable__org_gwtproject_user_client_ui_DockPanel_DockLayoutConstant_$p_org_gwtproject_user_client_ui_DockPanel(/** DockLayoutConstant */ widgetDirection) {
   $Asserts.$assert(($Equality.$same(widgetDirection, DockPanel.$f_LINE_START__org_gwtproject_user_client_ui_DockPanel) || $Equality.$same(widgetDirection, DockPanel.$f_LINE_END__org_gwtproject_user_client_ui_DockPanel) || $Equality.$same(widgetDirection, DockPanel.$f_EAST__org_gwtproject_user_client_ui_DockPanel) || $Equality.$same(widgetDirection, DockPanel.$f_WEST__org_gwtproject_user_client_ui_DockPanel)));
   if ($Equality.$same(widgetDirection, DockPanel.$f_LINE_START__org_gwtproject_user_client_ui_DockPanel)) {
    return true;
@@ -334,12 +259,8 @@ class DockPanel extends CellPanel {
   }
   return $Equality.$same(widgetDirection, DockPanel.$f_WEST__org_gwtproject_user_client_ui_DockPanel);
  }
- /**
-  * @param {DockLayoutConstant} widgetDirection
-  * @return {boolean}
-  * @public
-  */
- m_shouldAddToLogicalRightOfTable__org_gwtproject_user_client_ui_DockPanel_DockLayoutConstant_$p_org_gwtproject_user_client_ui_DockPanel(widgetDirection) {
+ /** @return {boolean} */
+ m_shouldAddToLogicalRightOfTable__org_gwtproject_user_client_ui_DockPanel_DockLayoutConstant_$p_org_gwtproject_user_client_ui_DockPanel(/** DockLayoutConstant */ widgetDirection) {
   $Asserts.$assert(($Equality.$same(widgetDirection, DockPanel.$f_LINE_START__org_gwtproject_user_client_ui_DockPanel) || $Equality.$same(widgetDirection, DockPanel.$f_LINE_END__org_gwtproject_user_client_ui_DockPanel) || $Equality.$same(widgetDirection, DockPanel.$f_EAST__org_gwtproject_user_client_ui_DockPanel) || $Equality.$same(widgetDirection, DockPanel.$f_WEST__org_gwtproject_user_client_ui_DockPanel)));
   if ($Equality.$same(widgetDirection, DockPanel.$f_LINE_END__org_gwtproject_user_client_ui_DockPanel)) {
    return true;
@@ -349,83 +270,50 @@ class DockPanel extends CellPanel {
   }
   return $Equality.$same(widgetDirection, DockPanel.$f_EAST__org_gwtproject_user_client_ui_DockPanel);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_DockPanel() {
   this.f_horzAlign__org_gwtproject_user_client_ui_DockPanel_ = HasHorizontalAlignment.f_ALIGN_DEFAULT__org_gwtproject_user_client_ui_HasHorizontalAlignment;
   this.f_vertAlign__org_gwtproject_user_client_ui_DockPanel_ = HasVerticalAlignment.f_ALIGN_TOP__org_gwtproject_user_client_ui_HasVerticalAlignment;
  }
- /**
-  * @return {DockLayoutConstant}
-  * @public
-  */
+ /** @return {DockLayoutConstant} */
  static get f_CENTER__org_gwtproject_user_client_ui_DockPanel() {
   return (DockPanel.$clinit(), DockPanel.$f_CENTER__org_gwtproject_user_client_ui_DockPanel);
  }
- /**
-  * @return {DockLayoutConstant}
-  * @public
-  */
+ /** @return {DockLayoutConstant} */
  static get f_LINE_START__org_gwtproject_user_client_ui_DockPanel() {
   return (DockPanel.$clinit(), DockPanel.$f_LINE_START__org_gwtproject_user_client_ui_DockPanel);
  }
- /**
-  * @return {DockLayoutConstant}
-  * @public
-  */
+ /** @return {DockLayoutConstant} */
  static get f_LINE_END__org_gwtproject_user_client_ui_DockPanel() {
   return (DockPanel.$clinit(), DockPanel.$f_LINE_END__org_gwtproject_user_client_ui_DockPanel);
  }
- /**
-  * @return {DockLayoutConstant}
-  * @public
-  */
+ /** @return {DockLayoutConstant} */
  static get f_EAST__org_gwtproject_user_client_ui_DockPanel() {
   return (DockPanel.$clinit(), DockPanel.$f_EAST__org_gwtproject_user_client_ui_DockPanel);
  }
- /**
-  * @return {DockLayoutConstant}
-  * @public
-  */
+ /** @return {DockLayoutConstant} */
  static get f_NORTH__org_gwtproject_user_client_ui_DockPanel() {
   return (DockPanel.$clinit(), DockPanel.$f_NORTH__org_gwtproject_user_client_ui_DockPanel);
  }
- /**
-  * @return {DockLayoutConstant}
-  * @public
-  */
+ /** @return {DockLayoutConstant} */
  static get f_SOUTH__org_gwtproject_user_client_ui_DockPanel() {
   return (DockPanel.$clinit(), DockPanel.$f_SOUTH__org_gwtproject_user_client_ui_DockPanel);
  }
- /**
-  * @return {DockLayoutConstant}
-  * @public
-  */
+ /** @return {DockLayoutConstant} */
  static get f_WEST__org_gwtproject_user_client_ui_DockPanel() {
   return (DockPanel.$clinit(), DockPanel.$f_WEST__org_gwtproject_user_client_ui_DockPanel);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DockPanel.$clinit = () =>{};
   DockPanel.$loadModules();
@@ -438,17 +326,11 @@ class DockPanel extends CellPanel {
   DockPanel.$f_SOUTH__org_gwtproject_user_client_ui_DockPanel = DockLayoutConstant.$create__();
   DockPanel.$f_WEST__org_gwtproject_user_client_ui_DockPanel = DockLayoutConstant.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DockPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
   Integer = goog.module.get('java.lang.Integer$impl');
@@ -477,19 +359,19 @@ $Util.$setClassMetadata(DockPanel, 'org.gwtproject.user.client.ui.DockPanel');
 
 HasAlignment.$markImplementor(DockPanel);
 
-/** @private {DockLayoutConstant} */
+/**@private {DockLayoutConstant}*/
 DockPanel.$f_CENTER__org_gwtproject_user_client_ui_DockPanel;
-/** @private {DockLayoutConstant} */
+/**@private {DockLayoutConstant}*/
 DockPanel.$f_LINE_START__org_gwtproject_user_client_ui_DockPanel;
-/** @private {DockLayoutConstant} */
+/**@private {DockLayoutConstant}*/
 DockPanel.$f_LINE_END__org_gwtproject_user_client_ui_DockPanel;
-/** @private {DockLayoutConstant} */
+/**@private {DockLayoutConstant}*/
 DockPanel.$f_EAST__org_gwtproject_user_client_ui_DockPanel;
-/** @private {DockLayoutConstant} */
+/**@private {DockLayoutConstant}*/
 DockPanel.$f_NORTH__org_gwtproject_user_client_ui_DockPanel;
-/** @private {DockLayoutConstant} */
+/**@private {DockLayoutConstant}*/
 DockPanel.$f_SOUTH__org_gwtproject_user_client_ui_DockPanel;
-/** @private {DockLayoutConstant} */
+/**@private {DockLayoutConstant}*/
 DockPanel.$f_WEST__org_gwtproject_user_client_ui_DockPanel;
 
 exports = DockPanel; 

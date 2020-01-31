@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellTree_TemplateImpl.impl.java.js",
-"lineCount":64,
-"mappings":"A;;;;;;;;;;;;;;;MAKa,sB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,iC;EAAAA,6C;EAAAA,+E;EAAAA,iB;;;;;CAAA,kE;EAAAC,iC;;;;;;;;;;CAKoC,mH,CACxBC,I,EACwBC,I,EACDC,I;EAC5CC,IAAcC,EAAdD,6B;EACAA,+C;EACAA,kF;EACAA,6C;EACAA,iG;EACAA,uD;EACAA,mD;EACAA,wC;EACJA,mG;;;;;QAjBa,O;EAAAE,yC;EAAAA,sC;EAAAA;",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;;;;;MAKa,sB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,iC;EAAAA,6C;EAAAA,+E;EAAAA,iB;;;CAAA,kE;EAAAC,iC;;;CAKoC,mH,gBACxBC,I,oBACwBC,I,kBACDC,I;EAC5CC,IAAcC,EAAdD,6B;EACAA,+C;EACAA,kF;EACAA,6C;EACAA,iG;EACAA,uD;EACAA,mD;EACAA,wC;EACJA,mG;;;QAjBa,O;EAAAE,yC;EAAAA,sC;EAAAA;",
 "sources":["CellTree_TemplateImpl.java"],
 "names":["org.gwtproject.user.cellview.client.CellTree_TemplateImpl.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.CellTree_TemplateImpl.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.CellTree_TemplateImpl.<init>","arg0","arg1","arg2","org.gwtproject.user.cellview.client.CellTree_TemplateImpl.imageWrapper","sb","org.gwtproject.user.cellview.client.CellTree_TemplateImpl.<clinit>"]
 }

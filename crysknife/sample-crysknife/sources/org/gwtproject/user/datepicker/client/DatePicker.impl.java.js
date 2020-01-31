@@ -45,74 +45,56 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {IsEditor<LeafValueEditor<Date>>}
   */
 class DatePicker extends Composite {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {DateStyler} */
+  /**@type {DateStyler}*/
   this.f_styler__org_gwtproject_user_datepicker_client_DatePicker_;
-  /** @public {MonthSelector} */
+  /**@type {MonthSelector}*/
   this.f_monthAndYearSelector__org_gwtproject_user_datepicker_client_DatePicker_;
-  /** @public {CalendarView} */
+  /**@type {CalendarView}*/
   this.f_view__org_gwtproject_user_datepicker_client_DatePicker_;
-  /** @public {CalendarModel} */
+  /**@type {CalendarModel}*/
   this.f_model__org_gwtproject_user_datepicker_client_DatePicker_;
-  /** @public {Date} */
+  /**@type {Date}*/
   this.f_value__org_gwtproject_user_datepicker_client_DatePicker_;
-  /** @public {Date} */
+  /**@type {Date}*/
   this.f_highlighted__org_gwtproject_user_datepicker_client_DatePicker_;
-  /** @public {StandardCss} */
+  /**@type {StandardCss}*/
   this.f_css__org_gwtproject_user_datepicker_client_DatePicker_;
-  /** @public {LeafValueEditor<Date>} */
+  /**@type {LeafValueEditor<Date>}*/
   this.f_editor__org_gwtproject_user_datepicker_client_DatePicker_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_visibleYearCount__org_gwtproject_user_datepicker_client_DatePicker_ = 0;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_yearArrowsVisible__org_gwtproject_user_datepicker_client_DatePicker_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_yearAndMonthDropdownVisible__org_gwtproject_user_datepicker_client_DatePicker_ = false;
  }
- /**
-  * Factory method corresponding to constructor 'DatePicker()'.
-  * @return {!DatePicker}
-  * @public
-  */
+ //Factory method corresponding to constructor 'DatePicker()'.
+ /** @return {!DatePicker} */
  static $create__() {
   DatePicker.$clinit();
   let $instance = new DatePicker();
   $instance.$ctor__org_gwtproject_user_datepicker_client_DatePicker__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'DatePicker()'.
-  * @public
-  */
+ //Initialization from constructor 'DatePicker()'.
+ 
  $ctor__org_gwtproject_user_datepicker_client_DatePicker__() {
   this.$ctor__org_gwtproject_user_datepicker_client_DatePicker__org_gwtproject_user_datepicker_client_MonthSelector__org_gwtproject_user_datepicker_client_CalendarView__org_gwtproject_user_datepicker_client_CalendarModel(DefaultMonthSelector.$create__(), DefaultCalendarView.$create__(), CalendarModel.$create__());
  }
- /**
-  * Factory method corresponding to constructor 'DatePicker(MonthSelector, CalendarView, CalendarModel)'.
-  * @param {MonthSelector} monthAndYearSelector
-  * @param {CalendarView} view
-  * @param {CalendarModel} model
-  * @return {!DatePicker}
-  * @public
-  */
- static $create__org_gwtproject_user_datepicker_client_MonthSelector__org_gwtproject_user_datepicker_client_CalendarView__org_gwtproject_user_datepicker_client_CalendarModel(monthAndYearSelector, view, model) {
+ //Factory method corresponding to constructor 'DatePicker(MonthSelector, CalendarView, CalendarModel)'.
+ /** @return {!DatePicker} */
+ static $create__org_gwtproject_user_datepicker_client_MonthSelector__org_gwtproject_user_datepicker_client_CalendarView__org_gwtproject_user_datepicker_client_CalendarModel(/** MonthSelector */ monthAndYearSelector, /** CalendarView */ view, /** CalendarModel */ model) {
   DatePicker.$clinit();
   let $instance = new DatePicker();
   $instance.$ctor__org_gwtproject_user_datepicker_client_DatePicker__org_gwtproject_user_datepicker_client_MonthSelector__org_gwtproject_user_datepicker_client_CalendarView__org_gwtproject_user_datepicker_client_CalendarModel(monthAndYearSelector, view, model);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DatePicker(MonthSelector, CalendarView, CalendarModel)'.
-  * @param {MonthSelector} monthAndYearSelector
-  * @param {CalendarView} view
-  * @param {CalendarModel} model
-  * @public
-  */
- $ctor__org_gwtproject_user_datepicker_client_DatePicker__org_gwtproject_user_datepicker_client_MonthSelector__org_gwtproject_user_datepicker_client_CalendarView__org_gwtproject_user_datepicker_client_CalendarModel(monthAndYearSelector, view, model) {
+ //Initialization from constructor 'DatePicker(MonthSelector, CalendarView, CalendarModel)'.
+ 
+ $ctor__org_gwtproject_user_datepicker_client_DatePicker__org_gwtproject_user_datepicker_client_MonthSelector__org_gwtproject_user_datepicker_client_CalendarView__org_gwtproject_user_datepicker_client_CalendarModel(/** MonthSelector */ monthAndYearSelector, /** CalendarView */ view, /** CalendarModel */ model) {
   this.$ctor__org_gwtproject_user_client_ui_Composite__();
   this.$init___$p_org_gwtproject_user_datepicker_client_DatePicker();
   this.f_model__org_gwtproject_user_datepicker_client_DatePicker_ = model;
@@ -126,339 +108,201 @@ class DatePicker extends Composite {
   this.m_setCurrentMonth__java_util_Date(Date.$create__());
   this.m_addStyleToDates__java_lang_String__java_util_Date(this.m_css___$pp_org_gwtproject_user_datepicker_client().m_dayIsToday__(), Date.$create__());
  }
- /**
-  * @override
-  * @param {HighlightHandler<Date>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addHighlightHandler__org_gwtproject_event_logical_shared_HighlightHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addHighlightHandler__org_gwtproject_event_logical_shared_HighlightHandler(/** HighlightHandler<Date> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, HighlightEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {ShowRangeHandler<Date>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addShowRangeHandler__org_gwtproject_event_logical_shared_ShowRangeHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addShowRangeHandler__org_gwtproject_event_logical_shared_ShowRangeHandler(/** ShowRangeHandler<Date> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, ShowRangeEvent.m_getType__());
  }
- /**
-  * @param {ShowRangeHandler<Date>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addShowRangeHandlerAndFire__org_gwtproject_event_logical_shared_ShowRangeHandler(handler) {
+ /** @return {HandlerRegistration} */
+ m_addShowRangeHandlerAndFire__org_gwtproject_event_logical_shared_ShowRangeHandler(/** ShowRangeHandler<Date> */ handler) {
   let event = $1.$create__org_gwtproject_user_datepicker_client_DatePicker__java_util_Date__java_util_Date(this, this.m_getView__().m_getFirstDate__(), this.m_getView__().m_getLastDate__());
   handler.m_onShowRange__org_gwtproject_event_logical_shared_ShowRangeEvent(event);
   return this.m_addShowRangeHandler__org_gwtproject_event_logical_shared_ShowRangeHandler(handler);
  }
- /**
-  * @param {?string} styleName
-  * @param {Date} date
-  * @public
-  */
- m_addStyleToDates__java_lang_String__java_util_Date(styleName, date) {
+ 
+ m_addStyleToDates__java_lang_String__java_util_Date(/** ?string */ styleName, /** Date */ date) {
   this.f_styler__org_gwtproject_user_datepicker_client_DatePicker_.m_setStyleName__java_util_Date__java_lang_String__boolean(date, styleName, true);
   if (this.m_isDateVisible__java_util_Date(date)) {
    this.m_getView__().m_addStyleToDate__java_lang_String__java_util_Date(styleName, date);
   }
  }
- /**
-  * @param {?string} styleName
-  * @param {Date} date
-  * @param {Array<Date>} moreDates
-  * @public
-  */
- m_addStyleToDates__java_lang_String__java_util_Date__arrayOf_java_util_Date(styleName, date, moreDates) {
+ 
+ m_addStyleToDates__java_lang_String__java_util_Date__arrayOf_java_util_Date(/** ?string */ styleName, /** Date */ date, /** Array<Date> */ moreDates) {
   this.m_addStyleToDates__java_lang_String__java_util_Date(styleName, date);
   for (let $array = moreDates, $index = 0; $index < $array.length; $index++) {
    let d = $array[$index];
    this.m_addStyleToDates__java_lang_String__java_util_Date(styleName, d);
   }
  }
- /**
-  * @param {?string} styleName
-  * @param {Iterable<Date>} dates
-  * @public
-  */
- m_addStyleToDates__java_lang_String__java_lang_Iterable(styleName, dates) {
+ 
+ m_addStyleToDates__java_lang_String__java_lang_Iterable(/** ?string */ styleName, /** Iterable<Date> */ dates) {
   for (let $iterator = dates.m_iterator__(); $iterator.m_hasNext__(); ) {
-   let d = /**@type {Date} */ ($Casts.$to($iterator.m_next__(), Date));
+   let d = /**@type {Date}*/ ($Casts.$to($iterator.m_next__(), Date));
    this.m_addStyleToDates__java_lang_String__java_util_Date(styleName, d);
   }
  }
- /**
-  * @param {?string} styleName
-  * @param {Date} date
-  * @public
-  */
- m_addTransientStyleToDates__java_lang_String__java_util_Date(styleName, date) {
+ 
+ m_addTransientStyleToDates__java_lang_String__java_util_Date(/** ?string */ styleName, /** Date */ date) {
   $Asserts.$assertWithMessage(this.m_isDateVisible__java_util_Date(date), j_l_String.m_valueOf__java_lang_Object(date) + " must be visible");
   this.m_getView__().m_addStyleToDate__java_lang_String__java_util_Date(styleName, date);
  }
- /**
-  * @param {?string} styleName
-  * @param {Date} date
-  * @param {Array<Date>} moreDates
-  * @public
-  */
- m_addTransientStyleToDates__java_lang_String__java_util_Date__arrayOf_java_util_Date(styleName, date, moreDates) {
+ 
+ m_addTransientStyleToDates__java_lang_String__java_util_Date__arrayOf_java_util_Date(/** ?string */ styleName, /** Date */ date, /** Array<Date> */ moreDates) {
   this.m_addTransientStyleToDates__java_lang_String__java_util_Date(styleName, date);
   for (let $array = moreDates, $index = 0; $index < $array.length; $index++) {
    let d = $array[$index];
    this.m_addTransientStyleToDates__java_lang_String__java_util_Date(styleName, d);
   }
  }
- /**
-  * @param {?string} styleName
-  * @param {Iterable<Date>} dates
-  * @public
-  */
- m_addTransientStyleToDates__java_lang_String__java_lang_Iterable(styleName, dates) {
+ 
+ m_addTransientStyleToDates__java_lang_String__java_lang_Iterable(/** ?string */ styleName, /** Iterable<Date> */ dates) {
   for (let $iterator = dates.m_iterator__(); $iterator.m_hasNext__(); ) {
-   let d = /**@type {Date} */ ($Casts.$to($iterator.m_next__(), Date));
+   let d = /**@type {Date}*/ ($Casts.$to($iterator.m_next__(), Date));
    this.m_addTransientStyleToDates__java_lang_String__java_util_Date(styleName, d);
   }
  }
- /**
-  * @override
-  * @param {ValueChangeHandler<Date>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler(/** ValueChangeHandler<Date> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, ValueChangeEvent.m_getType__());
  }
- /**
-  * @override
-  * @return {LeafValueEditor<Date>}
-  * @public
-  */
+ /** @override @return {LeafValueEditor<Date>} */
  m_asEditor__() {
   if ($Equality.$same(this.f_editor__org_gwtproject_user_datepicker_client_DatePicker_, null)) {
-   this.f_editor__org_gwtproject_user_datepicker_client_DatePicker_ = /**@type {TakesValueEditor<Date>} */ (TakesValueEditor.m_of__org_gwtproject_user_client_TakesValue(this));
+   this.f_editor__org_gwtproject_user_datepicker_client_DatePicker_ = /**@type {TakesValueEditor<Date>}*/ (TakesValueEditor.m_of__org_gwtproject_user_client_TakesValue(this));
   }
   return this.f_editor__org_gwtproject_user_datepicker_client_DatePicker_;
  }
- /**
-  * @return {Date}
-  * @public
-  */
+ /** @return {Date} */
  m_getCurrentMonth__() {
   return this.m_getModel__().m_getCurrentMonth__();
  }
- /**
-  * @return {Date}
-  * @public
-  */
+ /** @return {Date} */
  m_getFirstDate__() {
   return this.f_view__org_gwtproject_user_datepicker_client_DatePicker_.m_getFirstDate__();
  }
- /**
-  * @return {Date}
-  * @public
-  */
+ /** @return {Date} */
  m_getHighlightedDate__() {
   return CalendarUtil.m_copyDate__java_util_Date(this.f_highlighted__org_gwtproject_user_datepicker_client_DatePicker_);
  }
- /**
-  * @return {Date}
-  * @public
-  */
+ /** @return {Date} */
  m_getLastDate__() {
   return this.f_view__org_gwtproject_user_datepicker_client_DatePicker_.m_getLastDate__();
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getVisibleYearCount__() {
   return this.f_visibleYearCount__org_gwtproject_user_datepicker_client_DatePicker_;
  }
- /**
-  * @param {Date} date
-  * @return {?string}
-  * @public
-  */
- m_getStyleOfDate__java_util_Date(date) {
+ /** @return {?string} */
+ m_getStyleOfDate__java_util_Date(/** Date */ date) {
   return this.f_styler__org_gwtproject_user_datepicker_client_DatePicker_.m_getStyleName__java_util_Date(date);
  }
- /**
-  * @override
-  * @return {Date}
-  * @public
-  */
+ /** @override @return {Date} */
  m_getValue__() {
   return CalendarUtil.m_copyDate__java_util_Date(this.f_value__org_gwtproject_user_datepicker_client_DatePicker_);
  }
- /**
-  * @param {Date} date
-  * @return {boolean}
-  * @public
-  */
- m_isDateEnabled__java_util_Date(date) {
+ /** @return {boolean} */
+ m_isDateEnabled__java_util_Date(/** Date */ date) {
   $Asserts.$assertWithMessage(this.m_isDateVisible__java_util_Date(date), j_l_String.m_valueOf__java_lang_Object(date) + " is not visible");
   return this.m_getView__().m_isDateEnabled__java_util_Date(date);
  }
- /**
-  * @param {Date} date
-  * @return {boolean}
-  * @public
-  */
- m_isDateVisible__java_util_Date(date) {
+ /** @return {boolean} */
+ m_isDateVisible__java_util_Date(/** Date */ date) {
   let r = this.m_getView__();
   let first = r.m_getFirstDate__();
   let last = r.m_getLastDate__();
   return (!$Equality.$same(date, null) && (CalendarUtil.m_isSameDate__java_util_Date__java_util_Date(first, date) || CalendarUtil.m_isSameDate__java_util_Date__java_util_Date(last, date) || (first.m_before__java_util_Date(date) && last.m_after__java_util_Date(date))));
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isYearArrowsVisible__() {
   return this.f_yearArrowsVisible__org_gwtproject_user_datepicker_client_DatePicker_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isYearAndMonthDropdownVisible__() {
   return this.f_yearAndMonthDropdownVisible__org_gwtproject_user_datepicker_client_DatePicker_;
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onLoad__() {
   ShowRangeEvent.m_fire__org_gwtproject_event_logical_shared_HasShowRangeHandlers__java_lang_Object__java_lang_Object(this, this.m_getFirstDate__(), this.m_getLastDate__());
  }
- /**
-  * @param {?string} styleName
-  * @param {Date} date
-  * @public
-  */
- m_removeStyleFromDates__java_lang_String__java_util_Date(styleName, date) {
+ 
+ m_removeStyleFromDates__java_lang_String__java_util_Date(/** ?string */ styleName, /** Date */ date) {
   this.f_styler__org_gwtproject_user_datepicker_client_DatePicker_.m_setStyleName__java_util_Date__java_lang_String__boolean(date, styleName, false);
   if (this.m_isDateVisible__java_util_Date(date)) {
    this.m_getView__().m_removeStyleFromDate__java_lang_String__java_util_Date(styleName, date);
   }
  }
- /**
-  * @param {?string} styleName
-  * @param {Date} date
-  * @param {Array<Date>} moreDates
-  * @public
-  */
- m_removeStyleFromDates__java_lang_String__java_util_Date__arrayOf_java_util_Date(styleName, date, moreDates) {
+ 
+ m_removeStyleFromDates__java_lang_String__java_util_Date__arrayOf_java_util_Date(/** ?string */ styleName, /** Date */ date, /** Array<Date> */ moreDates) {
   this.m_removeStyleFromDates__java_lang_String__java_util_Date(styleName, date);
   for (let $array = moreDates, $index = 0; $index < $array.length; $index++) {
    let d = $array[$index];
    this.m_removeStyleFromDates__java_lang_String__java_util_Date(styleName, d);
   }
  }
- /**
-  * @param {?string} styleName
-  * @param {Iterable<Date>} dates
-  * @public
-  */
- m_removeStyleFromDates__java_lang_String__java_lang_Iterable(styleName, dates) {
+ 
+ m_removeStyleFromDates__java_lang_String__java_lang_Iterable(/** ?string */ styleName, /** Iterable<Date> */ dates) {
   for (let $iterator = dates.m_iterator__(); $iterator.m_hasNext__(); ) {
-   let d = /**@type {Date} */ ($Casts.$to($iterator.m_next__(), Date));
+   let d = /**@type {Date}*/ ($Casts.$to($iterator.m_next__(), Date));
    this.m_removeStyleFromDates__java_lang_String__java_util_Date(styleName, d);
   }
  }
- /**
-  * @param {Date} month
-  * @public
-  */
- m_setCurrentMonth__java_util_Date(month) {
+ 
+ m_setCurrentMonth__java_util_Date(/** Date */ month) {
   this.m_getModel__().m_setCurrentMonth__java_util_Date(month);
   this.m_refreshAll__();
  }
- /**
-  * @param {number} numberOfYears
-  * @public
-  */
- m_setVisibleYearCount__int(numberOfYears) {
+ 
+ m_setVisibleYearCount__int(/** number */ numberOfYears) {
   if (numberOfYears <= 0) {
    throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String("The number of years to display must be positive"));
   }
   this.f_visibleYearCount__org_gwtproject_user_datepicker_client_DatePicker_ = numberOfYears;
   this.m_getMonthSelector__().m_refresh__();
  }
- /**
-  * @param {boolean} yearArrowsVisible
-  * @public
-  */
- m_setYearArrowsVisible__boolean(yearArrowsVisible) {
+ 
+ m_setYearArrowsVisible__boolean(/** boolean */ yearArrowsVisible) {
   this.f_yearArrowsVisible__org_gwtproject_user_datepicker_client_DatePicker_ = yearArrowsVisible;
   this.m_getMonthSelector__().m_refresh__();
  }
- /**
-  * @param {boolean} dropdownVisible
-  * @public
-  */
- m_setYearAndMonthDropdownVisible__boolean(dropdownVisible) {
+ 
+ m_setYearAndMonthDropdownVisible__boolean(/** boolean */ dropdownVisible) {
   this.f_yearAndMonthDropdownVisible__org_gwtproject_user_datepicker_client_DatePicker_ = dropdownVisible;
   this.m_getMonthSelector__().m_refresh__();
  }
- /**
-  * @override
-  * @param {?string} styleName
-  * @public
-  */
- m_setStyleName__java_lang_String(styleName) {
+ /** @override */
+ m_setStyleName__java_lang_String(/** ?string */ styleName) {
   this.f_css__org_gwtproject_user_datepicker_client_DatePicker_ = StandardCss.$create__java_lang_String__java_lang_String(styleName, "datePicker");
   super.m_setStyleName__java_lang_String(styleName);
  }
- /**
-  * @param {boolean} enabled
-  * @param {Date} date
-  * @public
-  */
- m_setTransientEnabledOnDates__boolean__java_util_Date(enabled, date) {
+ 
+ m_setTransientEnabledOnDates__boolean__java_util_Date(/** boolean */ enabled, /** Date */ date) {
   $Asserts.$assertWithMessage(this.m_isDateVisible__java_util_Date(date), j_l_String.m_valueOf__java_lang_Object(date) + " must be visible");
   this.m_getView__().m_setEnabledOnDate__boolean__java_util_Date(enabled, date);
  }
- /**
-  * @param {boolean} enabled
-  * @param {Date} date
-  * @param {Array<Date>} moreDates
-  * @public
-  */
- m_setTransientEnabledOnDates__boolean__java_util_Date__arrayOf_java_util_Date(enabled, date, moreDates) {
+ 
+ m_setTransientEnabledOnDates__boolean__java_util_Date__arrayOf_java_util_Date(/** boolean */ enabled, /** Date */ date, /** Array<Date> */ moreDates) {
   this.m_setTransientEnabledOnDates__boolean__java_util_Date(enabled, date);
   for (let $array = moreDates, $index = 0; $index < $array.length; $index++) {
    let d = $array[$index];
    this.m_setTransientEnabledOnDates__boolean__java_util_Date(enabled, d);
   }
  }
- /**
-  * @param {boolean} enabled
-  * @param {Iterable<Date>} dates
-  * @public
-  */
- m_setTransientEnabledOnDates__boolean__java_lang_Iterable(enabled, dates) {
+ 
+ m_setTransientEnabledOnDates__boolean__java_lang_Iterable(/** boolean */ enabled, /** Iterable<Date> */ dates) {
   for (let $iterator = dates.m_iterator__(); $iterator.m_hasNext__(); ) {
-   let d = /**@type {Date} */ ($Casts.$to($iterator.m_next__(), Date));
+   let d = /**@type {Date}*/ ($Casts.$to($iterator.m_next__(), Date));
    this.m_setTransientEnabledOnDates__boolean__java_util_Date(enabled, d);
   }
  }
- /**
-  * @param {Date} newValue
-  * @public
-  */
- m_setValue__java_util_Date(newValue) {
+ 
+ m_setValue__java_util_Date(/** Date */ newValue) {
   this.m_setValue__java_util_Date__boolean(newValue, false);
  }
- /**
-  * @param {Date} newValue
-  * @param {boolean} fireEvents
-  * @public
-  */
- m_setValue__java_util_Date__boolean(newValue, fireEvents) {
+ 
+ m_setValue__java_util_Date__boolean(/** Date */ newValue, /** boolean */ fireEvents) {
   let oldValue = this.f_value__org_gwtproject_user_datepicker_client_DatePicker_;
   if (!$Equality.$same(oldValue, null)) {
    this.m_removeStyleFromDates__java_lang_String__java_util_Date(this.m_css___$pp_org_gwtproject_user_datepicker_client().m_dayIsValue__(), oldValue);
@@ -472,30 +316,19 @@ class DatePicker extends Composite {
    DateChangeEvent.m_fireIfNotEqualDates__org_gwtproject_event_logical_shared_HasValueChangeHandlers__java_util_Date__java_util_Date(this, oldValue, newValue);
   }
  }
- /**
-  * @return {CalendarModel}
-  * @public
-  */
+ /** @return {CalendarModel} */
  m_getModel__() {
   return this.f_model__org_gwtproject_user_datepicker_client_DatePicker_;
  }
- /**
-  * @return {MonthSelector}
-  * @public
-  */
+ /** @return {MonthSelector} */
  m_getMonthSelector__() {
   return this.f_monthAndYearSelector__org_gwtproject_user_datepicker_client_DatePicker_;
  }
- /**
-  * @return {CalendarView}
-  * @public
-  */
+ /** @return {CalendarView} */
  m_getView__() {
   return this.f_view__org_gwtproject_user_datepicker_client_DatePicker_;
  }
- /**
-  * @public
-  */
+ 
  m_refreshAll__() {
   this.f_highlighted__org_gwtproject_user_datepicker_client_DatePicker_ = null;
   this.m_getModel__().m_refresh__();
@@ -506,9 +339,7 @@ class DatePicker extends Composite {
   }
   this.m_getView__().m_setAriaSelectedCell__java_util_Date(this.f_value__org_gwtproject_user_datepicker_client_DatePicker_);
  }
- /**
-  * @public
-  */
+ 
  m_setup__() {
   let panel = VerticalPanel.$create__();
   this.m_initWidget__org_gwtproject_user_client_ui_Widget(panel);
@@ -517,67 +348,42 @@ class DatePicker extends Composite {
   panel.m_add__org_gwtproject_user_client_ui_Widget(this.m_getMonthSelector__());
   panel.m_add__org_gwtproject_user_client_ui_Widget(this.m_getView__());
  }
- /**
-  * @return {StandardCss}
-  * @public
-  */
+ /** @return {StandardCss} */
  m_css___$pp_org_gwtproject_user_datepicker_client() {
   return this.f_css__org_gwtproject_user_datepicker_client_DatePicker_;
  }
- /**
-  * @param {Date} highlighted
-  * @public
-  */
- m_setHighlightedDate__java_util_Date_$pp_org_gwtproject_user_datepicker_client(highlighted) {
+ 
+ m_setHighlightedDate__java_util_Date_$pp_org_gwtproject_user_datepicker_client(/** Date */ highlighted) {
   this.f_highlighted__org_gwtproject_user_datepicker_client_DatePicker_ = highlighted;
   this.m_fireEvent__org_gwtproject_event_shared_Event(DateHighlightEvent.$create__java_util_Date(highlighted));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_setValue__java_lang_Object(arg0) {
-  this.m_setValue__java_util_Date(/**@type {Date} */ ($Casts.$to(arg0, Date)));
+ //Bridge method.
+ /** @override */
+ m_setValue__java_lang_Object(/** * */ arg0) {
+  this.m_setValue__java_util_Date(/**@type {Date}*/ ($Casts.$to(arg0, Date)));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @param {boolean} arg1
-  * @public
-  */
- m_setValue__java_lang_Object__boolean(arg0, arg1) {
-  this.m_setValue__java_util_Date__boolean(/**@type {Date} */ ($Casts.$to(arg0, Date)), arg1);
+ //Bridge method.
+ /** @override */
+ m_setValue__java_lang_Object__boolean(/** * */ arg0, /** boolean */ arg1) {
+  this.m_setValue__java_util_Date__boolean(/**@type {Date}*/ ($Casts.$to(arg0, Date)), arg1);
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_datepicker_client_DatePicker() {
   this.f_styler__org_gwtproject_user_datepicker_client_DatePicker_ = DateStyler.$create__();
   this.f_css__org_gwtproject_user_datepicker_client_DatePicker_ = StandardCss.f_DEFAULT__org_gwtproject_user_datepicker_client_DatePicker_StandardCss;
   this.f_visibleYearCount__org_gwtproject_user_datepicker_client_DatePicker_ = DatePicker.f_DEFAULT_VISIBLE_YEAR_COUNT__org_gwtproject_user_datepicker_client_DatePicker_;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DatePicker.$clinit = () =>{};
   DatePicker.$loadModules();
   Composite.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DatePicker;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -611,7 +417,7 @@ HasShowRangeHandlers.$markImplementor(DatePicker);
 HasValue.$markImplementor(DatePicker);
 IsEditor.$markImplementor(DatePicker);
 
-/** @public {number} @const */
+/**@const {number}*/
 DatePicker.f_DEFAULT_VISIBLE_YEAR_COUNT__org_gwtproject_user_datepicker_client_DatePicker_ = 21;
 
 exports = DatePicker; 

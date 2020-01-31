@@ -11,45 +11,27 @@ let $LambdaAdaptor = goog.forwardDeclare('org.treblereel.gwt.crysknife.client.in
  * @extends {Provider<T>}
  */
 class Factory {
- /**
-  * @template T
-  * @param {?function():T} fn
-  * @return {Factory<T>}
-  * @public
-  */
- static $adapt(fn) {
+ /** @template T @return {Factory<T>} */
+ static $adapt(/** ?function():T */ fn) {
   Factory.$clinit();
-  return /**@type {!$LambdaAdaptor<T>} */ (new $LambdaAdaptor(fn));
+  return /**@type {!$LambdaAdaptor<T>}*/ (new $LambdaAdaptor(fn));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Factory.$clinit = () =>{};
   Factory.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Provider.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_treblereel_gwt_crysknife_client_internal_Factory = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Provider.$markImplementor(ctor);
+  ctor.prototype.$implements__org_treblereel_gwt_crysknife_client_internal_Factory = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_treblereel_gwt_crysknife_client_internal_Factory;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.treblereel.gwt.crysknife.client.internal.Factory.$LambdaAdaptor$impl');
  }

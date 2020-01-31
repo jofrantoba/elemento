@@ -11,45 +11,27 @@ let UIObject = goog.forwardDeclare('org.gwtproject.user.client.ui.UIObject$impl'
 let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
 
 class DebugIdImplEnabled extends DebugIdImpl {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!DebugIdImplEnabled}
-  * @public
-  */
+ /** @return {!DebugIdImplEnabled} */
  static $create__() {
   DebugIdImplEnabled.$clinit();
   let $instance = new DebugIdImplEnabled();
   $instance.$ctor__org_gwtproject_user_client_ui_UIObject_DebugIdImplEnabled__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_UIObject_DebugIdImplEnabled__() {
   this.$ctor__org_gwtproject_user_client_ui_UIObject_DebugIdImpl__();
  }
- /**
-  * @override
-  * @param {UIObject} uiObject
-  * @param {?string} id
-  * @public
-  */
- m_ensureDebugId__org_gwtproject_user_client_ui_UIObject__java_lang_String(uiObject, id) {
+ /** @override */
+ m_ensureDebugId__org_gwtproject_user_client_ui_UIObject__java_lang_String(/** UIObject */ uiObject, /** ?string */ id) {
   uiObject.m_onEnsureDebugId__java_lang_String(id);
  }
- /**
-  * @override
-  * @param {Object} elem
-  * @param {?string} baseID
-  * @param {?string} id
-  * @public
-  */
- m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(elem, baseID, id) {
+ /** @override */
+ m_ensureDebugId__org_gwtproject_dom_client_Element__java_lang_String__java_lang_String(/** Object */ elem, /** ?string */ baseID, /** ?string */ id) {
   $Asserts.$assert(!$Equality.$same(baseID, null));
   baseID = (j_l_String.m_length__java_lang_String(baseID) > 0) ? j_l_String.m_valueOf__java_lang_Object(baseID) + "-" : "";
   let prefix = DebugInfo.m_getDebugIdPrefix__();
@@ -61,25 +43,17 @@ class DebugIdImplEnabled extends DebugIdImpl {
    elem.setAttribute(attribute, debugId);
   }
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DebugIdImplEnabled.$clinit = () =>{};
   DebugIdImplEnabled.$loadModules();
   DebugIdImpl.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DebugIdImplEnabled;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

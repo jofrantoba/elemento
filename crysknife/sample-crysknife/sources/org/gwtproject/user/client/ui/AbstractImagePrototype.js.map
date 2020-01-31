@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"AbstractImagePrototype.impl.java.js",
-"lineCount":87,
-"mappings":"A;;;;;;;;;;;;;;;;MAqDsB,sB;;;;CAGV,W;EAAAA,iC;EAAAA,Q;EAAAA,qE;;;;;CAAA,6D;EAAAA,iC;;;;;;;QAyB2B,uD,CAAqBC,Q;EAArBC,iC;EAGnCA,8J;;;;;;;CAUmB,8C,CAAcC,K;;;;;CASvB,qF,CAA8BC,Y;EAGxCC,kE;;;;;;CAY2B,iB;EAG3BC,kE;;;;;;;CASoB,e;;;;;CAYR,W;EACZC,6C;;;;;;CAac,e;EAGdC,kE;;;;;QA1GkB,O;EAAAC,yC;EAAAA,sC;EAAAA;",
+"lineCount":57,
+"mappings":"A;;;;;;;;;;;;;;;;MAqDsB,sB;;CAGV,W;EAAAA,iC;EAAAA,Q;EAAAA,qE;;;CAAA,6D;EAAAA,iC;;;QAyB2B,uD,sBAAqBC,Q;EAArBC,iC;EAGnCA,8J;;;CAUmB,8C,cAAcC,K;;CASvB,qF,8BAA8BC,Y;EAGxCC,kE;;;CAY2B,iB;EAG3BC,kE;;;CASoB,e;;CAYR,W;EACZC,6C;;;CAac,e;EAGdC,kE;;;QA1GkB,O;EAAAC,yC;EAAAA,sC;EAAAA;",
 "sources":["AbstractImagePrototype.java"],
 "names":["org.gwtproject.user.client.ui.AbstractImagePrototype.<init>","resource","org.gwtproject.user.client.ui.AbstractImagePrototype.create","image","imageElement","org.gwtproject.user.client.ui.AbstractImagePrototype.applyTo","org.gwtproject.user.client.ui.AbstractImagePrototype.createElement","org.gwtproject.user.client.ui.AbstractImagePrototype.getHTML","org.gwtproject.user.client.ui.AbstractImagePrototype.getSafeHtml","org.gwtproject.user.client.ui.AbstractImagePrototype.<clinit>"]
 }

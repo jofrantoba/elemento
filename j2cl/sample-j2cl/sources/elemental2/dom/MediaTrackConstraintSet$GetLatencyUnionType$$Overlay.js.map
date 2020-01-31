@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MediaTrackConstraintSet$GetLatencyUnionType$$Overlay.impl.java.js",
-"lineCount":51,
-"mappings":"A;;;;;;;;MAyQmB,4B;;;;;;QAEoC,sB,CAAUA,C;EAAVC,uC;EACjDA,wD;;;;;;;QAI2B,6F;EAAAC,uC;EAC3BA,kF;;;;;;;QAIa,+E;EAAAC,uC;EACbA,iD;;;;;;;QAIc,+E;EAAAC,uC;EACdA,sD;;;;;QAlBa,O;EAAAC,+C;EAAAA;",
+"lineCount":33,
+"mappings":"A;;;;;;;;MAyQmB,4B;;QAEoC,sB,UAAUA,C;EAAVC,uC;EACjDA,uD;;;QAI2B,6F;EAAAC,uC;EAC3BA,iF;;;QAIa,+E;EAAAC,uC;EACbA,iD;;;QAIc,+E;EAAAC,uC;EACdA,qD;;;QAlBa,O;EAAAC,+C;EAAAA;",
 "sources":["MediaTrackConstraintSet.java"],
 "names":["o","elemental2.dom.MediaTrackConstraintSet$GetLatencyUnionType$$Overlay.of","elemental2.dom.MediaTrackConstraintSet$GetLatencyUnionType$$Overlay.asConstrainDoubleRange__$devirt","elemental2.dom.MediaTrackConstraintSet$GetLatencyUnionType$$Overlay.asDouble__$devirt","elemental2.dom.MediaTrackConstraintSet$GetLatencyUnionType$$Overlay.isDouble__$devirt","elemental2.dom.MediaTrackConstraintSet$GetLatencyUnionType$$Overlay.<clinit>"]
 }

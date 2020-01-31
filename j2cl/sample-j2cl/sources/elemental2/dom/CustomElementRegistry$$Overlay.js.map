@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CustomElementRegistry$$Overlay.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;MA2Ba,8B;;;;;;;;QAgBO,kJ,WACPA,O,EACsBC,K,EACWC,O;EAH1BC,yC;EAIhBA,qH;;;;;;;;QAIgB,0F,WAAcH,O,EAAsCC,K;EAApDE,yC;EAChBA,4G;;;;;QAzBS,O;EAAAC,iD;EAAAA;",
+"lineCount":24,
+"mappings":"A;;;;;;;;;MA2Ba,8B;;QAgBO,kJ,wDACPA,O,kBACsBC,K,WACWC,O;EAH1BC,yC;EAIhBA,oH;;;QAIgB,0F,wDAAcH,O,kBAAsCC,K;EAApDE,yC;EAChBA,2G;;;QAzBS,O;EAAAC,iD;EAAAA;",
 "sources":["CustomElementRegistry.java"],
 "names":["tagName","klass","options","elemental2.dom.CustomElementRegistry$$Overlay.define__$devirt","elemental2.dom.CustomElementRegistry$$Overlay.<clinit>"]
 }

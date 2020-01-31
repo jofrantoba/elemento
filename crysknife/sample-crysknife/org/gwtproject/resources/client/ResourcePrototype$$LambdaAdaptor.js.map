@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ResourcePrototype$$LambdaAdaptor.impl.java.js",
-"lineCount":44,
-"mappings":"A;;;;;;;;;MAkBiB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gF;EAAAA,gJ;;;;;;CAAA,sI;EAAAC,iC;EAAAA,mF;;;;;;CAAA,W;EAAAC,yC;EAAAA,gH;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":33,
+"mappings":"A;;;;;;;;;MAkBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gF;EAAAA,gJ;;;CAAA,sI;EAAAC,iC;EAAAA,mF;;;CAAA,W;EAAAC,yC;EAAAA,gH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["ResourcePrototype.java"],
 "names":["org.gwtproject.resources.client.ResourcePrototype$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.resources.client.ResourcePrototype$$LambdaAdaptor.<init>","org.gwtproject.resources.client.ResourcePrototype$$LambdaAdaptor.getName","org.gwtproject.resources.client.ResourcePrototype$$LambdaAdaptor.<clinit>"]
 }

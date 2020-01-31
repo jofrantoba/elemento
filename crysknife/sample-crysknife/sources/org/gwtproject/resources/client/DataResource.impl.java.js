@@ -10,41 +10,24 @@ let SafeUri = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeUri$impl')
  * @extends {ResourcePrototype}
  */
 class DataResource {
- /**
-  * @abstract
-  * @return {SafeUri}
-  * @public
-  */
+ /** @abstract @return {SafeUri} */
  m_getSafeUri__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DataResource.$clinit = () =>{};
   DataResource.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  ResourcePrototype.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_resources_client_DataResource = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ResourcePrototype.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_resources_client_DataResource = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_resources_client_DataResource;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

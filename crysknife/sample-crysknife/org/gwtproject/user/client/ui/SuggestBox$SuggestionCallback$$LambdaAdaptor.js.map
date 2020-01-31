@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SuggestBox$SuggestionCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;MAkGmB,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;0F;EAAAA,oK;;;;;;CAAA,0J;EAAAC,iC;EAAAA,6F;;;;;;CAAA,8E;;GAAAC,wG;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MAkGmB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;0F;EAAAA,oK;;;CAAA,0J;EAAAC,iC;EAAAA,6F;;;CAAA,8E;;GAAAC,wG;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["SuggestBox.java"],
 "names":["org.gwtproject.user.client.ui.SuggestBox$SuggestionCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.client.ui.SuggestBox$SuggestionCallback$$LambdaAdaptor.<init>","org.gwtproject.user.client.ui.SuggestBox$SuggestionCallback$$LambdaAdaptor.onSuggestionSelected","org.gwtproject.user.client.ui.SuggestBox$SuggestionCallback$$LambdaAdaptor.<clinit>"]
 }

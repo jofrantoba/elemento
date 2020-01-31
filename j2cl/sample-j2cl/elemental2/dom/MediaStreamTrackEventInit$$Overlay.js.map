@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MediaStreamTrackEventInit$$Overlay.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;MAyBiB,kC;;;;;QAEkB,U;EAAAA,6C;EAC/BA,yG;;;;;QAHa,O;EAAAC,qD;EAAAA;",
+"lineCount":17,
+"mappings":"A;;;;;;;MAyBiB,kC;;QAEkB,U;EAAAA,6C;EAC/BA,wG;;;QAHa,O;EAAAC,qD;EAAAA;",
 "sources":["MediaStreamTrackEventInit.java"],
 "names":["elemental2.dom.MediaStreamTrackEventInit$$Overlay.create","elemental2.dom.MediaStreamTrackEventInit$$Overlay.<clinit>"]
 }

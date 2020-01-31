@@ -14,56 +14,40 @@ let CellTreeNodeView = goog.forwardDeclare('org.gwtproject.user.cellview.client.
 let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
 
 class RevealAnimation extends NodeAnimation {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_contentContainer__org_gwtproject_user_cellview_client_CellTree_RevealAnimation;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_height__org_gwtproject_user_cellview_client_CellTree_RevealAnimation = 0;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_opening__org_gwtproject_user_cellview_client_CellTree_RevealAnimation = false;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_animFrame__org_gwtproject_user_cellview_client_CellTree_RevealAnimation_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_childContainer__org_gwtproject_user_cellview_client_CellTree_RevealAnimation_;
  }
- /**
-  * @return {RevealAnimation}
-  * @public
-  */
+ /** @return {RevealAnimation} */
  static m_create__() {
   RevealAnimation.$clinit();
   return RevealAnimation.$create__();
  }
- /**
-  * @return {!RevealAnimation}
-  * @public
-  */
+ /** @return {!RevealAnimation} */
  static $create__() {
   let $instance = new RevealAnimation();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellTree_RevealAnimation__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_cellview_client_CellTree_RevealAnimation__() {
   this.$ctor__org_gwtproject_user_cellview_client_CellTree_NodeAnimation__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onComplete__() {
   this.m_cleanup___$p_org_gwtproject_user_cellview_client_CellTree_RevealAnimation();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onStart__() {
   if (this.f_opening__org_gwtproject_user_cellview_client_CellTree_RevealAnimation) {
    $Overlay.m_setHeight__$devirt__org_gwtproject_dom_client_Style__double__org_gwtproject_dom_style_shared_Unit(this.f_animFrame__org_gwtproject_user_cellview_client_CellTree_RevealAnimation_.style, 1.0, Unit.f_PX__org_gwtproject_dom_style_shared_Unit);
@@ -74,12 +58,8 @@ class RevealAnimation extends NodeAnimation {
    this.f_height__org_gwtproject_user_cellview_client_CellTree_RevealAnimation = Element_$Overlay.m_getOffsetHeight__$devirt__org_gwtproject_dom_client_Element(this.f_contentContainer__org_gwtproject_user_cellview_client_CellTree_RevealAnimation);
   }
  }
- /**
-  * @override
-  * @param {number} progress
-  * @public
-  */
- m_onUpdate__double(progress) {
+ /** @override */
+ m_onUpdate__double(/** number */ progress) {
   if (this.f_opening__org_gwtproject_user_cellview_client_CellTree_RevealAnimation) {
    let curHeight = progress * this.f_height__org_gwtproject_user_cellview_client_CellTree_RevealAnimation;
    $Overlay.m_setHeight__$devirt__org_gwtproject_dom_client_Style__double__org_gwtproject_dom_style_shared_Unit(this.f_animFrame__org_gwtproject_user_cellview_client_CellTree_RevealAnimation_.style, curHeight, Unit.f_PX__org_gwtproject_dom_style_shared_Unit);
@@ -90,13 +70,8 @@ class RevealAnimation extends NodeAnimation {
   $Overlay.m_setOverflow__$devirt__org_gwtproject_dom_client_Style__org_gwtproject_dom_style_shared_Overflow(this.f_animFrame__org_gwtproject_user_cellview_client_CellTree_RevealAnimation_.style, Overflow.f_HIDDEN__org_gwtproject_dom_style_shared_Overflow);
   $Overlay.m_setPosition__$devirt__org_gwtproject_dom_client_Style__org_gwtproject_dom_style_shared_Position(this.f_animFrame__org_gwtproject_user_cellview_client_CellTree_RevealAnimation_.style, Position.f_RELATIVE__org_gwtproject_dom_style_shared_Position);
  }
- /**
-  * @override
-  * @param {CellTreeNodeView<?>} node
-  * @param {boolean} isAnimationEnabled
-  * @public
-  */
- m_animate__org_gwtproject_user_cellview_client_CellTreeNodeView__boolean_$pp_org_gwtproject_user_cellview_client(node, isAnimationEnabled) {
+ /** @override */
+ m_animate__org_gwtproject_user_cellview_client_CellTreeNodeView__boolean_$pp_org_gwtproject_user_cellview_client(/** CellTreeNodeView<?> */ node, /** boolean */ isAnimationEnabled) {
   this.m_cancel__();
   this.f_opening__org_gwtproject_user_cellview_client_CellTree_RevealAnimation = node.m_isOpen__();
   this.f_animFrame__org_gwtproject_user_cellview_client_CellTree_RevealAnimation_ = node.m_ensureAnimationFrame___$pp_org_gwtproject_user_cellview_client();
@@ -113,9 +88,7 @@ class RevealAnimation extends NodeAnimation {
    this.m_cleanup___$p_org_gwtproject_user_cellview_client_CellTree_RevealAnimation();
   }
  }
- /**
-  * @public
-  */
+ 
  m_cleanup___$p_org_gwtproject_user_cellview_client_CellTree_RevealAnimation() {
   if (this.f_opening__org_gwtproject_user_cellview_client_CellTree_RevealAnimation) {
    $Overlay.m_clearDisplay__$devirt__org_gwtproject_dom_client_Style(this.f_animFrame__org_gwtproject_user_cellview_client_CellTree_RevealAnimation_.style);
@@ -129,25 +102,17 @@ class RevealAnimation extends NodeAnimation {
   this.f_childContainer__org_gwtproject_user_cellview_client_CellTree_RevealAnimation_ = null;
   this.f_animFrame__org_gwtproject_user_cellview_client_CellTree_RevealAnimation_ = null;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RevealAnimation.$clinit = () =>{};
   RevealAnimation.$loadModules();
   NodeAnimation.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof RevealAnimation;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Element_$Overlay = goog.module.get('org.gwtproject.dom.client.Element.$Overlay$impl');
   Node_$Overlay = goog.module.get('org.gwtproject.dom.client.Node.$Overlay$impl');

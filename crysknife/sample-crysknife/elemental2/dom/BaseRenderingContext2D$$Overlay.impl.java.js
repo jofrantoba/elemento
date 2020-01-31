@@ -18,885 +18,356 @@ let Path2D_$Overlay = goog.forwardDeclare('elemental2.dom.Path2D.$Overlay$impl')
 let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 
 class BaseRenderingContext2D_$Overlay {
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {Path2D} optFillRuleOrPath
-  * @param {?string} optFillRule
-  * @public
-  */
- static m_clip__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_Path2D__java_lang_String($thisArg, optFillRuleOrPath, optFillRule) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.clip(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(optFillRuleOrPath)), optFillRule);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {Path2D} optFillRuleOrPath
-  * @public
-  */
- static m_clip__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_Path2D($thisArg, optFillRuleOrPath) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.clip(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(optFillRuleOrPath)));
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {?string} optFillRuleOrPath
-  * @param {?string} optFillRule
-  * @public
-  */
- static m_clip__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String__java_lang_String($thisArg, optFillRuleOrPath, optFillRule) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.clip(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(optFillRuleOrPath)), optFillRule);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {?string} optFillRuleOrPath
-  * @public
-  */
- static m_clip__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String($thisArg, optFillRuleOrPath) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.clip(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(optFillRuleOrPath)));
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLCanvasElement} image
-  * @param {?string} repetition
-  * @return {CanvasPattern}
-  * @public
-  */
- static m_createPattern__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLCanvasElement__java_lang_String($thisArg, image, repetition) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  return $thisArg.createPattern(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), repetition);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLImageElement} image
-  * @param {?string} repetition
-  * @return {CanvasPattern}
-  * @public
-  */
- static m_createPattern__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLImageElement__java_lang_String($thisArg, image, repetition) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  return $thisArg.createPattern(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), repetition);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLVideoElement} image
-  * @param {?string} repetition
-  * @return {CanvasPattern}
-  * @public
-  */
- static m_createPattern__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLVideoElement__java_lang_String($thisArg, image, repetition) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  return $thisArg.createPattern(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), repetition);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {ImageBitmap} image
-  * @param {?string} repetition
-  * @return {CanvasPattern}
-  * @public
-  */
- static m_createPattern__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_ImageBitmap__java_lang_String($thisArg, image, repetition) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  return $thisArg.createPattern(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), repetition);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {OffscreenCanvas} image
-  * @param {?string} repetition
-  * @return {CanvasPattern}
-  * @public
-  */
- static m_createPattern__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_OffscreenCanvas__java_lang_String($thisArg, image, repetition) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  return $thisArg.createPattern(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), repetition);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLCanvasElement} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @param {number} sx
-  * @param {number} sy
-  * @param {number} sw
-  * @param {number} sh
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLCanvasElement__double__double__double__double__double__double__double__double($thisArg, image, dx, dy, dw, dh, sx, sy, sw, sh) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy, sw, sh);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLCanvasElement} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @param {number} sx
-  * @param {number} sy
-  * @param {number} sw
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLCanvasElement__double__double__double__double__double__double__double($thisArg, image, dx, dy, dw, dh, sx, sy, sw) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy, sw);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLCanvasElement} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @param {number} sx
-  * @param {number} sy
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLCanvasElement__double__double__double__double__double__double($thisArg, image, dx, dy, dw, dh, sx, sy) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLCanvasElement} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @param {number} sx
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLCanvasElement__double__double__double__double__double($thisArg, image, dx, dy, dw, dh, sx) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLCanvasElement} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLCanvasElement__double__double__double__double($thisArg, image, dx, dy, dw, dh) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLCanvasElement} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLCanvasElement__double__double__double($thisArg, image, dx, dy, dw) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLCanvasElement} image
-  * @param {number} dx
-  * @param {number} dy
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLCanvasElement__double__double($thisArg, image, dx, dy) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLImageElement} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @param {number} sx
-  * @param {number} sy
-  * @param {number} sw
-  * @param {number} sh
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLImageElement__double__double__double__double__double__double__double__double($thisArg, image, dx, dy, dw, dh, sx, sy, sw, sh) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy, sw, sh);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLImageElement} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @param {number} sx
-  * @param {number} sy
-  * @param {number} sw
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLImageElement__double__double__double__double__double__double__double($thisArg, image, dx, dy, dw, dh, sx, sy, sw) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy, sw);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLImageElement} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @param {number} sx
-  * @param {number} sy
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLImageElement__double__double__double__double__double__double($thisArg, image, dx, dy, dw, dh, sx, sy) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLImageElement} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @param {number} sx
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLImageElement__double__double__double__double__double($thisArg, image, dx, dy, dw, dh, sx) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLImageElement} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLImageElement__double__double__double__double($thisArg, image, dx, dy, dw, dh) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLImageElement} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLImageElement__double__double__double($thisArg, image, dx, dy, dw) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLImageElement} image
-  * @param {number} dx
-  * @param {number} dy
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLImageElement__double__double($thisArg, image, dx, dy) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLVideoElement} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @param {number} sx
-  * @param {number} sy
-  * @param {number} sw
-  * @param {number} sh
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLVideoElement__double__double__double__double__double__double__double__double($thisArg, image, dx, dy, dw, dh, sx, sy, sw, sh) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy, sw, sh);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLVideoElement} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @param {number} sx
-  * @param {number} sy
-  * @param {number} sw
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLVideoElement__double__double__double__double__double__double__double($thisArg, image, dx, dy, dw, dh, sx, sy, sw) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy, sw);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLVideoElement} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @param {number} sx
-  * @param {number} sy
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLVideoElement__double__double__double__double__double__double($thisArg, image, dx, dy, dw, dh, sx, sy) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLVideoElement} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @param {number} sx
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLVideoElement__double__double__double__double__double($thisArg, image, dx, dy, dw, dh, sx) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLVideoElement} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLVideoElement__double__double__double__double($thisArg, image, dx, dy, dw, dh) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLVideoElement} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLVideoElement__double__double__double($thisArg, image, dx, dy, dw) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {HTMLVideoElement} image
-  * @param {number} dx
-  * @param {number} dy
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLVideoElement__double__double($thisArg, image, dx, dy) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {ImageBitmap} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @param {number} sx
-  * @param {number} sy
-  * @param {number} sw
-  * @param {number} sh
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_ImageBitmap__double__double__double__double__double__double__double__double($thisArg, image, dx, dy, dw, dh, sx, sy, sw, sh) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy, sw, sh);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {ImageBitmap} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @param {number} sx
-  * @param {number} sy
-  * @param {number} sw
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_ImageBitmap__double__double__double__double__double__double__double($thisArg, image, dx, dy, dw, dh, sx, sy, sw) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy, sw);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {ImageBitmap} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @param {number} sx
-  * @param {number} sy
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_ImageBitmap__double__double__double__double__double__double($thisArg, image, dx, dy, dw, dh, sx, sy) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {ImageBitmap} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @param {number} sx
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_ImageBitmap__double__double__double__double__double($thisArg, image, dx, dy, dw, dh, sx) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {ImageBitmap} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_ImageBitmap__double__double__double__double($thisArg, image, dx, dy, dw, dh) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {ImageBitmap} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_ImageBitmap__double__double__double($thisArg, image, dx, dy, dw) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {ImageBitmap} image
-  * @param {number} dx
-  * @param {number} dy
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_ImageBitmap__double__double($thisArg, image, dx, dy) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {OffscreenCanvas} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @param {number} sx
-  * @param {number} sy
-  * @param {number} sw
-  * @param {number} sh
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_OffscreenCanvas__double__double__double__double__double__double__double__double($thisArg, image, dx, dy, dw, dh, sx, sy, sw, sh) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy, sw, sh);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {OffscreenCanvas} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @param {number} sx
-  * @param {number} sy
-  * @param {number} sw
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_OffscreenCanvas__double__double__double__double__double__double__double($thisArg, image, dx, dy, dw, dh, sx, sy, sw) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy, sw);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {OffscreenCanvas} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @param {number} sx
-  * @param {number} sy
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_OffscreenCanvas__double__double__double__double__double__double($thisArg, image, dx, dy, dw, dh, sx, sy) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {OffscreenCanvas} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @param {number} sx
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_OffscreenCanvas__double__double__double__double__double($thisArg, image, dx, dy, dw, dh, sx) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {OffscreenCanvas} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @param {number} dh
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_OffscreenCanvas__double__double__double__double($thisArg, image, dx, dy, dw, dh) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {OffscreenCanvas} image
-  * @param {number} dx
-  * @param {number} dy
-  * @param {number} dw
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_OffscreenCanvas__double__double__double($thisArg, image, dx, dy, dw) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {OffscreenCanvas} image
-  * @param {number} dx
-  * @param {number} dy
-  * @public
-  */
- static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_OffscreenCanvas__double__double($thisArg, image, dx, dy) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.drawImage(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {Path2D} optFillRuleOrPath
-  * @param {?string} optFillRule
-  * @public
-  */
- static m_fill__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_Path2D__java_lang_String($thisArg, optFillRuleOrPath, optFillRule) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.fill(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(optFillRuleOrPath)), optFillRule);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {Path2D} optFillRuleOrPath
-  * @public
-  */
- static m_fill__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_Path2D($thisArg, optFillRuleOrPath) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.fill(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(optFillRuleOrPath)));
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {?string} optFillRuleOrPath
-  * @param {?string} optFillRule
-  * @public
-  */
- static m_fill__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String__java_lang_String($thisArg, optFillRuleOrPath, optFillRule) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.fill(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(optFillRuleOrPath)), optFillRule);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {?string} optFillRuleOrPath
-  * @public
-  */
- static m_fill__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String($thisArg, optFillRuleOrPath) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.fill(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(optFillRuleOrPath)));
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {?string} a
-  * @param {number} b
-  * @param {number} c
-  * @param {number} d
-  * @param {number} e
-  * @public
-  * @deprecated
-  */
- static m_setFillColor__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String__double__double__double__double($thisArg, a, b, c, d, e) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.setFillColor(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(a)), b, c, d, e);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {?string} a
-  * @param {number} b
-  * @param {number} c
-  * @param {number} d
-  * @public
-  * @deprecated
-  */
- static m_setFillColor__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String__double__double__double($thisArg, a, b, c, d) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.setFillColor(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(a)), b, c, d);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {?string} a
-  * @param {number} b
-  * @param {number} c
-  * @public
-  * @deprecated
-  */
- static m_setFillColor__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String__double__double($thisArg, a, b, c) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.setFillColor(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(a)), b, c);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {?string} a
-  * @param {number} b
-  * @public
-  * @deprecated
-  */
- static m_setFillColor__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String__double($thisArg, a, b) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.setFillColor(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(a)), b);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {?string} a
-  * @public
-  * @deprecated
-  */
- static m_setFillColor__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String($thisArg, a) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.setFillColor(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(a)));
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {number} a
-  * @param {number} b
-  * @param {number} c
-  * @param {number} d
-  * @param {number} e
-  * @public
-  * @deprecated
-  */
- static m_setFillColor__$devirt__elemental2_dom_BaseRenderingContext2D__double__double__double__double__double($thisArg, a, b, c, d, e) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.setFillColor(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(a)), b, c, d, e);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {number} a
-  * @param {number} b
-  * @param {number} c
-  * @param {number} d
-  * @public
-  * @deprecated
-  */
- static m_setFillColor__$devirt__elemental2_dom_BaseRenderingContext2D__double__double__double__double($thisArg, a, b, c, d) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.setFillColor(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(a)), b, c, d);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {number} a
-  * @param {number} b
-  * @param {number} c
-  * @public
-  * @deprecated
-  */
- static m_setFillColor__$devirt__elemental2_dom_BaseRenderingContext2D__double__double__double($thisArg, a, b, c) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.setFillColor(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(a)), b, c);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {number} a
-  * @param {number} b
-  * @public
-  * @deprecated
-  */
- static m_setFillColor__$devirt__elemental2_dom_BaseRenderingContext2D__double__double($thisArg, a, b) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.setFillColor(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(a)), b);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {number} a
-  * @public
-  * @deprecated
-  */
- static m_setFillColor__$devirt__elemental2_dom_BaseRenderingContext2D__double($thisArg, a) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.setFillColor(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(a)));
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {?string} a
-  * @param {number} b
-  * @param {number} c
-  * @param {number} d
-  * @param {number} e
-  * @public
-  * @deprecated
-  */
- static m_setStrokeColor__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String__double__double__double__double($thisArg, a, b, c, d, e) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.setStrokeColor(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(a)), b, c, d, e);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {?string} a
-  * @param {number} b
-  * @param {number} c
-  * @param {number} d
-  * @public
-  * @deprecated
-  */
- static m_setStrokeColor__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String__double__double__double($thisArg, a, b, c, d) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.setStrokeColor(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(a)), b, c, d);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {?string} a
-  * @param {number} b
-  * @param {number} c
-  * @public
-  * @deprecated
-  */
- static m_setStrokeColor__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String__double__double($thisArg, a, b, c) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.setStrokeColor(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(a)), b, c);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {?string} a
-  * @param {number} b
-  * @public
-  * @deprecated
-  */
- static m_setStrokeColor__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String__double($thisArg, a, b) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.setStrokeColor(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(a)), b);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {?string} a
-  * @public
-  * @deprecated
-  */
- static m_setStrokeColor__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String($thisArg, a) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.setStrokeColor(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(a)));
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {number} a
-  * @param {number} b
-  * @param {number} c
-  * @param {number} d
-  * @param {number} e
-  * @public
-  * @deprecated
-  */
- static m_setStrokeColor__$devirt__elemental2_dom_BaseRenderingContext2D__double__double__double__double__double($thisArg, a, b, c, d, e) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.setStrokeColor(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(a)), b, c, d, e);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {number} a
-  * @param {number} b
-  * @param {number} c
-  * @param {number} d
-  * @public
-  * @deprecated
-  */
- static m_setStrokeColor__$devirt__elemental2_dom_BaseRenderingContext2D__double__double__double__double($thisArg, a, b, c, d) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.setStrokeColor(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(a)), b, c, d);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {number} a
-  * @param {number} b
-  * @param {number} c
-  * @public
-  * @deprecated
-  */
- static m_setStrokeColor__$devirt__elemental2_dom_BaseRenderingContext2D__double__double__double($thisArg, a, b, c) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.setStrokeColor(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(a)), b, c);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {number} a
-  * @param {number} b
-  * @public
-  * @deprecated
-  */
- static m_setStrokeColor__$devirt__elemental2_dom_BaseRenderingContext2D__double__double($thisArg, a, b) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.setStrokeColor(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(a)), b);
- }
- /**
-  * @param {!BaseRenderingContext2D} $thisArg
-  * @param {number} a
-  * @public
-  * @deprecated
-  */
- static m_setStrokeColor__$devirt__elemental2_dom_BaseRenderingContext2D__double($thisArg, a) {
-  BaseRenderingContext2D_$Overlay.$clinit();
-  $thisArg.setStrokeColor(/**@type {?} */ (Js.m_uncheckedCast__java_lang_Object(a)));
- }
- /**
-  * @public
-  */
+ 
+ static m_clip__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_Path2D__java_lang_String(/** !BaseRenderingContext2D */ $thisArg, /** Path2D */ optFillRuleOrPath, /** ?string */ optFillRule) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.clip(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(optFillRuleOrPath)), optFillRule);
+ }
+ 
+ static m_clip__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_Path2D(/** !BaseRenderingContext2D */ $thisArg, /** Path2D */ optFillRuleOrPath) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.clip(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(optFillRuleOrPath)));
+ }
+ 
+ static m_clip__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String__java_lang_String(/** !BaseRenderingContext2D */ $thisArg, /** ?string */ optFillRuleOrPath, /** ?string */ optFillRule) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.clip(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(optFillRuleOrPath)), optFillRule);
+ }
+ 
+ static m_clip__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String(/** !BaseRenderingContext2D */ $thisArg, /** ?string */ optFillRuleOrPath) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.clip(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(optFillRuleOrPath)));
+ }
+ /** @return {CanvasPattern} */
+ static m_createPattern__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLCanvasElement__java_lang_String(/** !BaseRenderingContext2D */ $thisArg, /** HTMLCanvasElement */ image, /** ?string */ repetition) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  return $thisArg.createPattern(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), repetition);
+ }
+ /** @return {CanvasPattern} */
+ static m_createPattern__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLImageElement__java_lang_String(/** !BaseRenderingContext2D */ $thisArg, /** HTMLImageElement */ image, /** ?string */ repetition) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  return $thisArg.createPattern(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), repetition);
+ }
+ /** @return {CanvasPattern} */
+ static m_createPattern__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLVideoElement__java_lang_String(/** !BaseRenderingContext2D */ $thisArg, /** HTMLVideoElement */ image, /** ?string */ repetition) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  return $thisArg.createPattern(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), repetition);
+ }
+ /** @return {CanvasPattern} */
+ static m_createPattern__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_ImageBitmap__java_lang_String(/** !BaseRenderingContext2D */ $thisArg, /** ImageBitmap */ image, /** ?string */ repetition) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  return $thisArg.createPattern(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), repetition);
+ }
+ /** @return {CanvasPattern} */
+ static m_createPattern__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_OffscreenCanvas__java_lang_String(/** !BaseRenderingContext2D */ $thisArg, /** OffscreenCanvas */ image, /** ?string */ repetition) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  return $thisArg.createPattern(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), repetition);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLCanvasElement__double__double__double__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** HTMLCanvasElement */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh, /** number */ sx, /** number */ sy, /** number */ sw, /** number */ sh) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy, sw, sh);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLCanvasElement__double__double__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** HTMLCanvasElement */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh, /** number */ sx, /** number */ sy, /** number */ sw) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy, sw);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLCanvasElement__double__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** HTMLCanvasElement */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh, /** number */ sx, /** number */ sy) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLCanvasElement__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** HTMLCanvasElement */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh, /** number */ sx) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLCanvasElement__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** HTMLCanvasElement */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLCanvasElement__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** HTMLCanvasElement */ image, /** number */ dx, /** number */ dy, /** number */ dw) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLCanvasElement__double__double(/** !BaseRenderingContext2D */ $thisArg, /** HTMLCanvasElement */ image, /** number */ dx, /** number */ dy) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLImageElement__double__double__double__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** HTMLImageElement */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh, /** number */ sx, /** number */ sy, /** number */ sw, /** number */ sh) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy, sw, sh);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLImageElement__double__double__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** HTMLImageElement */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh, /** number */ sx, /** number */ sy, /** number */ sw) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy, sw);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLImageElement__double__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** HTMLImageElement */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh, /** number */ sx, /** number */ sy) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLImageElement__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** HTMLImageElement */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh, /** number */ sx) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLImageElement__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** HTMLImageElement */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLImageElement__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** HTMLImageElement */ image, /** number */ dx, /** number */ dy, /** number */ dw) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLImageElement__double__double(/** !BaseRenderingContext2D */ $thisArg, /** HTMLImageElement */ image, /** number */ dx, /** number */ dy) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLVideoElement__double__double__double__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** HTMLVideoElement */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh, /** number */ sx, /** number */ sy, /** number */ sw, /** number */ sh) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy, sw, sh);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLVideoElement__double__double__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** HTMLVideoElement */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh, /** number */ sx, /** number */ sy, /** number */ sw) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy, sw);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLVideoElement__double__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** HTMLVideoElement */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh, /** number */ sx, /** number */ sy) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLVideoElement__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** HTMLVideoElement */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh, /** number */ sx) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLVideoElement__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** HTMLVideoElement */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLVideoElement__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** HTMLVideoElement */ image, /** number */ dx, /** number */ dy, /** number */ dw) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_HTMLVideoElement__double__double(/** !BaseRenderingContext2D */ $thisArg, /** HTMLVideoElement */ image, /** number */ dx, /** number */ dy) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_ImageBitmap__double__double__double__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** ImageBitmap */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh, /** number */ sx, /** number */ sy, /** number */ sw, /** number */ sh) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy, sw, sh);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_ImageBitmap__double__double__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** ImageBitmap */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh, /** number */ sx, /** number */ sy, /** number */ sw) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy, sw);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_ImageBitmap__double__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** ImageBitmap */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh, /** number */ sx, /** number */ sy) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_ImageBitmap__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** ImageBitmap */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh, /** number */ sx) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_ImageBitmap__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** ImageBitmap */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_ImageBitmap__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** ImageBitmap */ image, /** number */ dx, /** number */ dy, /** number */ dw) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_ImageBitmap__double__double(/** !BaseRenderingContext2D */ $thisArg, /** ImageBitmap */ image, /** number */ dx, /** number */ dy) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_OffscreenCanvas__double__double__double__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** OffscreenCanvas */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh, /** number */ sx, /** number */ sy, /** number */ sw, /** number */ sh) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy, sw, sh);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_OffscreenCanvas__double__double__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** OffscreenCanvas */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh, /** number */ sx, /** number */ sy, /** number */ sw) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy, sw);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_OffscreenCanvas__double__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** OffscreenCanvas */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh, /** number */ sx, /** number */ sy) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx, sy);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_OffscreenCanvas__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** OffscreenCanvas */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh, /** number */ sx) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh, sx);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_OffscreenCanvas__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** OffscreenCanvas */ image, /** number */ dx, /** number */ dy, /** number */ dw, /** number */ dh) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw, dh);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_OffscreenCanvas__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** OffscreenCanvas */ image, /** number */ dx, /** number */ dy, /** number */ dw) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy, dw);
+ }
+ 
+ static m_drawImage__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_OffscreenCanvas__double__double(/** !BaseRenderingContext2D */ $thisArg, /** OffscreenCanvas */ image, /** number */ dx, /** number */ dy) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.drawImage(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(image)), dx, dy);
+ }
+ 
+ static m_fill__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_Path2D__java_lang_String(/** !BaseRenderingContext2D */ $thisArg, /** Path2D */ optFillRuleOrPath, /** ?string */ optFillRule) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.fill(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(optFillRuleOrPath)), optFillRule);
+ }
+ 
+ static m_fill__$devirt__elemental2_dom_BaseRenderingContext2D__elemental2_dom_Path2D(/** !BaseRenderingContext2D */ $thisArg, /** Path2D */ optFillRuleOrPath) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.fill(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(optFillRuleOrPath)));
+ }
+ 
+ static m_fill__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String__java_lang_String(/** !BaseRenderingContext2D */ $thisArg, /** ?string */ optFillRuleOrPath, /** ?string */ optFillRule) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.fill(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(optFillRuleOrPath)), optFillRule);
+ }
+ 
+ static m_fill__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String(/** !BaseRenderingContext2D */ $thisArg, /** ?string */ optFillRuleOrPath) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.fill(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(optFillRuleOrPath)));
+ }
+ /** @deprecated */
+ static m_setFillColor__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** ?string */ a, /** number */ b, /** number */ c, /** number */ d, /** number */ e) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.setFillColor(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(a)), b, c, d, e);
+ }
+ /** @deprecated */
+ static m_setFillColor__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** ?string */ a, /** number */ b, /** number */ c, /** number */ d) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.setFillColor(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(a)), b, c, d);
+ }
+ /** @deprecated */
+ static m_setFillColor__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String__double__double(/** !BaseRenderingContext2D */ $thisArg, /** ?string */ a, /** number */ b, /** number */ c) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.setFillColor(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(a)), b, c);
+ }
+ /** @deprecated */
+ static m_setFillColor__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String__double(/** !BaseRenderingContext2D */ $thisArg, /** ?string */ a, /** number */ b) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.setFillColor(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(a)), b);
+ }
+ /** @deprecated */
+ static m_setFillColor__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String(/** !BaseRenderingContext2D */ $thisArg, /** ?string */ a) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.setFillColor(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(a)));
+ }
+ /** @deprecated */
+ static m_setFillColor__$devirt__elemental2_dom_BaseRenderingContext2D__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** number */ a, /** number */ b, /** number */ c, /** number */ d, /** number */ e) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.setFillColor(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(a)), b, c, d, e);
+ }
+ /** @deprecated */
+ static m_setFillColor__$devirt__elemental2_dom_BaseRenderingContext2D__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** number */ a, /** number */ b, /** number */ c, /** number */ d) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.setFillColor(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(a)), b, c, d);
+ }
+ /** @deprecated */
+ static m_setFillColor__$devirt__elemental2_dom_BaseRenderingContext2D__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** number */ a, /** number */ b, /** number */ c) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.setFillColor(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(a)), b, c);
+ }
+ /** @deprecated */
+ static m_setFillColor__$devirt__elemental2_dom_BaseRenderingContext2D__double__double(/** !BaseRenderingContext2D */ $thisArg, /** number */ a, /** number */ b) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.setFillColor(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(a)), b);
+ }
+ /** @deprecated */
+ static m_setFillColor__$devirt__elemental2_dom_BaseRenderingContext2D__double(/** !BaseRenderingContext2D */ $thisArg, /** number */ a) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.setFillColor(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(a)));
+ }
+ /** @deprecated */
+ static m_setStrokeColor__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** ?string */ a, /** number */ b, /** number */ c, /** number */ d, /** number */ e) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.setStrokeColor(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(a)), b, c, d, e);
+ }
+ /** @deprecated */
+ static m_setStrokeColor__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** ?string */ a, /** number */ b, /** number */ c, /** number */ d) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.setStrokeColor(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(a)), b, c, d);
+ }
+ /** @deprecated */
+ static m_setStrokeColor__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String__double__double(/** !BaseRenderingContext2D */ $thisArg, /** ?string */ a, /** number */ b, /** number */ c) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.setStrokeColor(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(a)), b, c);
+ }
+ /** @deprecated */
+ static m_setStrokeColor__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String__double(/** !BaseRenderingContext2D */ $thisArg, /** ?string */ a, /** number */ b) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.setStrokeColor(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(a)), b);
+ }
+ /** @deprecated */
+ static m_setStrokeColor__$devirt__elemental2_dom_BaseRenderingContext2D__java_lang_String(/** !BaseRenderingContext2D */ $thisArg, /** ?string */ a) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.setStrokeColor(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(a)));
+ }
+ /** @deprecated */
+ static m_setStrokeColor__$devirt__elemental2_dom_BaseRenderingContext2D__double__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** number */ a, /** number */ b, /** number */ c, /** number */ d, /** number */ e) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.setStrokeColor(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(a)), b, c, d, e);
+ }
+ /** @deprecated */
+ static m_setStrokeColor__$devirt__elemental2_dom_BaseRenderingContext2D__double__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** number */ a, /** number */ b, /** number */ c, /** number */ d) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.setStrokeColor(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(a)), b, c, d);
+ }
+ /** @deprecated */
+ static m_setStrokeColor__$devirt__elemental2_dom_BaseRenderingContext2D__double__double__double(/** !BaseRenderingContext2D */ $thisArg, /** number */ a, /** number */ b, /** number */ c) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.setStrokeColor(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(a)), b, c);
+ }
+ /** @deprecated */
+ static m_setStrokeColor__$devirt__elemental2_dom_BaseRenderingContext2D__double__double(/** !BaseRenderingContext2D */ $thisArg, /** number */ a, /** number */ b) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.setStrokeColor(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(a)), b);
+ }
+ /** @deprecated */
+ static m_setStrokeColor__$devirt__elemental2_dom_BaseRenderingContext2D__double(/** !BaseRenderingContext2D */ $thisArg, /** number */ a) {
+  BaseRenderingContext2D_$Overlay.$clinit();
+  $thisArg.setStrokeColor(/**@type {?}*/ (Js.m_uncheckedCast__java_lang_Object(a)));
+ }
+ 
  static $clinit() {
   BaseRenderingContext2D_$Overlay.$clinit = () =>{};
   BaseRenderingContext2D_$Overlay.$loadModules();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof BaseRenderingContext2D;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
  }

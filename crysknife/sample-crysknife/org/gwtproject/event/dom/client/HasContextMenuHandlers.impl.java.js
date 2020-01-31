@@ -11,42 +11,24 @@ let HandlerRegistration = goog.forwardDeclare('org.gwtproject.event.shared.Handl
  * @extends {HasHandlers}
  */
 class HasContextMenuHandlers {
- /**
-  * @abstract
-  * @param {ContextMenuHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addContextMenuHandler__org_gwtproject_event_dom_client_ContextMenuHandler(handler) {}
- /**
-  * @public
-  */
+ /** @abstract @return {HandlerRegistration} */
+ m_addContextMenuHandler__org_gwtproject_event_dom_client_ContextMenuHandler(/** ContextMenuHandler */ handler) {}
+ 
  static $clinit() {
   HasContextMenuHandlers.$clinit = () =>{};
   HasContextMenuHandlers.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasHandlers.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_HasContextMenuHandlers = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasHandlers.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_HasContextMenuHandlers = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_HasContextMenuHandlers;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

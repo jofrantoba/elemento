@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Tree_ResourcesImpl$treeOpenInitializer.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;MAiDuB,mB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,0C;EAAAA,0F;EAAAA,iB;;;;;CAAA,6E;EAAAC,iC;;;;;;QAIkC,O;EAAAC,8B;EACnDA,yF;;;;;QALiB,O;EAAAC,sC;EAAAA,mC;EAAAA,qB;EAEjBA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;MAiDuB,mB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,0C;EAAAA,0F;EAAAA,iB;;;CAAA,6E;EAAAC,iC;;;QAIkC,O;EAAAC,8B;EACnDA,yF;;;QALiB,O;EAAAC,sC;EAAAA,mC;EAAAA,qB;EAEjBA;",
 "sources":["Tree_ResourcesImpl.java"],
 "names":["org.gwtproject.user.client.ui.Tree_ResourcesImpl$treeOpenInitializer.<synthetic: ctor_js>","org.gwtproject.user.client.ui.Tree_ResourcesImpl$treeOpenInitializer.<synthetic: ctor_create>","org.gwtproject.user.client.ui.Tree_ResourcesImpl$treeOpenInitializer.<init>","org.gwtproject.user.client.ui.Tree_ResourcesImpl$treeOpenInitializer.get","org.gwtproject.user.client.ui.Tree_ResourcesImpl$treeOpenInitializer.<clinit>"]
 }

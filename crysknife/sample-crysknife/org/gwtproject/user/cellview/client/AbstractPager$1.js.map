@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"AbstractPager$1.impl.java.js",
-"lineCount":58,
-"mappings":"A;;;;;;;;;;;;;MAsHwF,E;;;;CAAA,W;EAAAA,Q;EAAAA;0E;;;;;;;QAAA,0D;EAAAC,a;EAAAA,yB;EAAAA,qI;EAAAA,iB;;;;;;CAAA,6G;EAAAC,sF;EAAAA,iC;;;;;;;CAEpE,4D,CAA+BC,K;EACzCC;GACEA,uGADFA;G;;;;;QAH8E,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":43,
+"mappings":"A;;;;;;;;;;;;;MAsHwF,E;;CAAA,W;EAAAA,Q;EAAAA;0E;;;QAAA,0D;EAAAC,a;EAAAA,yB;EAAAA,qI;EAAAA,iB;;;CAAA,6G;EAAAC,sF;EAAAA,iC;;;CAEpE,4D,yBAA+BC,K;EACzCC;GACEA,uGADFA;G;;;QAH8E,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["AbstractPager.java"],
 "names":["org.gwtproject.user.cellview.client.AbstractPager$1.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.AbstractPager$1.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.AbstractPager$1.<init>","event","org.gwtproject.user.cellview.client.AbstractPager$1.onRangeChange","org.gwtproject.user.cellview.client.AbstractPager$1.<clinit>"]
 }

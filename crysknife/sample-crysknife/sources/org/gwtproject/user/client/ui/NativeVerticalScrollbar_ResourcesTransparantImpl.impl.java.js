@@ -17,109 +17,69 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {ResourcesTransparant}
   */
 class NativeVerticalScrollbar__ResourcesTransparantImpl extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!NativeVerticalScrollbar__ResourcesTransparantImpl}
-  * @public
-  */
+ /** @return {!NativeVerticalScrollbar__ResourcesTransparantImpl} */
  static $create__() {
   NativeVerticalScrollbar__ResourcesTransparantImpl.$clinit();
   let $instance = new NativeVerticalScrollbar__ResourcesTransparantImpl();
   $instance.$ctor__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @public
-  */
+ 
  m_nativeVerticalScrollbarStyleInitializer___$p_org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl() {
   NativeVerticalScrollbar__ResourcesTransparantImpl.$f_nativeVerticalScrollbarStyle__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl_ = $1.$create__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl(this);
  }
- /**
-  * @override
-  * @return {Style}
-  * @public
-  */
+ /** @override @return {Style} */
  m_nativeVerticalScrollbarStyle__() {
   return nativeVerticalScrollbarStyleInitializer.m_get__();
  }
- /**
-  * @return {Array<ResourcePrototype>}
-  * @public
-  */
+ /** @return {Array<ResourcePrototype>} */
  m_getResources__() {
-  return /**@type {!Array<ResourcePrototype>} */ ($Arrays.$init([this.m_nativeVerticalScrollbarStyle__()], ResourcePrototype));
+  return /**@type {!Array<ResourcePrototype>}*/ ($Arrays.$init([this.m_nativeVerticalScrollbarStyle__()], ResourcePrototype));
  }
- /**
-  * @param {?string} name
-  * @return {ResourcePrototype}
-  * @public
-  */
- m_getResource__java_lang_String(name) {
+ /** @return {ResourcePrototype} */
+ m_getResource__java_lang_String(/** ?string */ name) {
   if ($Equality.$same(NativeVerticalScrollbar__ResourcesTransparantImpl.f_resourceMap__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl_, null)) {
-   NativeVerticalScrollbar__ResourcesTransparantImpl.f_resourceMap__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl_ = /**@type {!HashMap<?string, ResourcePrototype>} */ (HashMap.$create__());
+   NativeVerticalScrollbar__ResourcesTransparantImpl.f_resourceMap__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl_ = /**@type {!HashMap<?string, ResourcePrototype>}*/ (HashMap.$create__());
    NativeVerticalScrollbar__ResourcesTransparantImpl.f_resourceMap__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl_.put("nativeVerticalScrollbarStyle", this.m_nativeVerticalScrollbarStyle__());
   }
-  return /**@type {ResourcePrototype} */ ($Casts.$to(NativeVerticalScrollbar__ResourcesTransparantImpl.f_resourceMap__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl_.get(name), ResourcePrototype));
+  return /**@type {ResourcePrototype}*/ ($Casts.$to(NativeVerticalScrollbar__ResourcesTransparantImpl.f_resourceMap__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl_.get(name), ResourcePrototype));
  }
- /**
-  * @return {NativeVerticalScrollbar__ResourcesTransparantImpl}
-  * @public
-  */
+ /** @return {NativeVerticalScrollbar__ResourcesTransparantImpl} */
  static get f__instance0__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl_() {
   return (NativeVerticalScrollbar__ResourcesTransparantImpl.$clinit(), NativeVerticalScrollbar__ResourcesTransparantImpl.$f__instance0__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl_);
  }
- /**
-  * @param {NativeVerticalScrollbar__ResourcesTransparantImpl} value
-  * @public
-  */
- static set f__instance0__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl_(value) {
+ 
+ static set f__instance0__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl_(/** NativeVerticalScrollbar__ResourcesTransparantImpl */ value) {
   (NativeVerticalScrollbar__ResourcesTransparantImpl.$clinit(), NativeVerticalScrollbar__ResourcesTransparantImpl.$f__instance0__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl_ = value);
  }
- /**
-  * @return {Style}
-  * @public
-  */
+ /** @return {Style} */
  static get f_nativeVerticalScrollbarStyle__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl_() {
   return (NativeVerticalScrollbar__ResourcesTransparantImpl.$clinit(), NativeVerticalScrollbar__ResourcesTransparantImpl.$f_nativeVerticalScrollbarStyle__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl_);
  }
- /**
-  * @param {Style} value
-  * @public
-  */
- static set f_nativeVerticalScrollbarStyle__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl_(value) {
+ 
+ static set f_nativeVerticalScrollbarStyle__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl_(/** Style */ value) {
   (NativeVerticalScrollbar__ResourcesTransparantImpl.$clinit(), NativeVerticalScrollbar__ResourcesTransparantImpl.$f_nativeVerticalScrollbarStyle__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl_ = value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NativeVerticalScrollbar__ResourcesTransparantImpl.$clinit = () =>{};
   NativeVerticalScrollbar__ResourcesTransparantImpl.$loadModules();
   j_l_Object.$clinit();
   NativeVerticalScrollbar__ResourcesTransparantImpl.$f__instance0__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl_ = NativeVerticalScrollbar__ResourcesTransparantImpl.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof NativeVerticalScrollbar__ResourcesTransparantImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   HashMap = goog.module.get('java.util.HashMap$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -135,11 +95,11 @@ $Util.$setClassMetadata(NativeVerticalScrollbar__ResourcesTransparantImpl, 'org.
 
 ResourcesTransparant.$markImplementor(NativeVerticalScrollbar__ResourcesTransparantImpl);
 
-/** @private {NativeVerticalScrollbar__ResourcesTransparantImpl} */
+/**@private {NativeVerticalScrollbar__ResourcesTransparantImpl}*/
 NativeVerticalScrollbar__ResourcesTransparantImpl.$f__instance0__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl_;
-/** @public {HashMap<?string, ResourcePrototype>} */
+/**@type {HashMap<?string, ResourcePrototype>}*/
 NativeVerticalScrollbar__ResourcesTransparantImpl.f_resourceMap__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl_;
-/** @private {Style} */
+/**@private {Style}*/
 NativeVerticalScrollbar__ResourcesTransparantImpl.$f_nativeVerticalScrollbarStyle__org_gwtproject_user_client_ui_NativeVerticalScrollbar_ResourcesTransparantImpl_;
 
 exports = NativeVerticalScrollbar__ResourcesTransparantImpl; 

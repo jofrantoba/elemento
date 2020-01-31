@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasDirectionalSafeHtml.impl.java.js",
-"lineCount":28,
-"mappings":"A;;;;;;;;;;;;;;MAwBiB,sB;;;;;;;CAQV,qG,CAAiBA,I,EAAgBC,G;;;;QARvB,O;EAAAC,yC;EAAAA;",
+"lineCount":21,
+"mappings":"A;;;;;;;;;;;;;;MAwBiB,sB;;CAQV,qG,iBAAiBA,I,mBAAgBC,G;;QARvB,O;EAAAC,yC;EAAAA;",
 "sources":["HasDirectionalSafeHtml.java"],
 "names":["html","dir","org.gwtproject.user.client.ui.HasDirectionalSafeHtml.<clinit>"]
 }

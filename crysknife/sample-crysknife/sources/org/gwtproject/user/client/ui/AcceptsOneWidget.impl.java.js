@@ -9,49 +9,28 @@ let IsWidget = goog.forwardDeclare('org.gwtproject.user.client.ui.IsWidget$impl'
  * @interface
  */
 class AcceptsOneWidget {
- /**
-  * @abstract
-  * @param {IsWidget} w
-  * @public
-  */
- m_setWidget__org_gwtproject_user_client_ui_IsWidget(w) {}
- /**
-  * @param {?function(IsWidget):void} fn
-  * @return {AcceptsOneWidget}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_setWidget__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ w) {}
+ /** @return {AcceptsOneWidget} */
+ static $adapt(/** ?function(IsWidget):void */ fn) {
   AcceptsOneWidget.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AcceptsOneWidget.$clinit = () =>{};
   AcceptsOneWidget.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_AcceptsOneWidget = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_AcceptsOneWidget = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_AcceptsOneWidget;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.user.client.ui.AcceptsOneWidget.$LambdaAdaptor$impl');
  }

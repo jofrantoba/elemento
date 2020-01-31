@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellTree$Style.impl.java.js",
-"lineCount":126,
-"mappings":"A;;;;;;;;;MAyXmB,K;;;;;;CASR,wB;;;;;;CAKA,gB;;;;;;CAKA,qB;;;;;;CAKA,0B;;;;;;CAKA,qB;;;;;;CAKA,gC;;;;;;CAKA,oB;;;;;;CAKA,wB;;;;;;CAKA,0B;;;;;;CAKA,mB;;;;;;CAKA,wB;;;;;;CAKA,6B;;;;;;CAKA,kB;;;;QArEQ,O;EAAAA,wB;EAAAA,qB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AACf;MAGO,iEAHP;",
+"lineCount":61,
+"mappings":"A;;;;;;;;;MAyXmB,K;;CASR,wB;;CAKA,gB;;CAKA,qB;;CAKA,0B;;CAKA,qB;;CAKA,gC;;CAKA,oB;;CAKA,wB;;CAKA,0B;;CAKA,mB;;CAKA,wB;;CAKA,6B;;CAKA,kB;;QArEQ,O;EAAAA,wB;EAAAA,qB;;;;;;;;;;;;;;;;;;;;AACf;MAGO,iEAHP;",
 "sources":["CellTree.java"],
 "names":["org.gwtproject.user.cellview.client.CellTree$Style.<clinit>"]
 }

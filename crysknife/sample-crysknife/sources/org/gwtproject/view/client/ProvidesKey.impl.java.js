@@ -9,51 +9,28 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.view.client.ProvidesKey
  * @template T
  */
 class ProvidesKey {
- /**
-  * @abstract
-  * @param {T} item
-  * @return {*}
-  * @public
-  */
- m_getKey__java_lang_Object(item) {}
- /**
-  * @template T
-  * @param {?function(T):*} fn
-  * @return {ProvidesKey<T>}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract @return {*} */
+ m_getKey__java_lang_Object(/** T */ item) {}
+ /** @template T @return {ProvidesKey<T>} */
+ static $adapt(/** ?function(T):* */ fn) {
   ProvidesKey.$clinit();
-  return /**@type {!$LambdaAdaptor<T>} */ (new $LambdaAdaptor(fn));
+  return /**@type {!$LambdaAdaptor<T>}*/ (new $LambdaAdaptor(fn));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ProvidesKey.$clinit = () =>{};
   ProvidesKey.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_view_client_ProvidesKey = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_view_client_ProvidesKey = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_view_client_ProvidesKey;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.view.client.ProvidesKey.$LambdaAdaptor$impl');
  }

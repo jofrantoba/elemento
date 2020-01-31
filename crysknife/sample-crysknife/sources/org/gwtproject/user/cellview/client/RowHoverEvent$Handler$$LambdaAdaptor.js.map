@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"RowHoverEvent$Handler$$LambdaAdaptor.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;MA+B0B,c;;;;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;wF;EAAAA,gK;;;;;;CAAA,sJ;EAAAC,iC;EAAAA,2F;;;;;;CAAA,+D;;GAAAC,sG;GAAAA,gB;;;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MA+B0B,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;wF;EAAAA,gK;;;CAAA,sJ;EAAAC,iC;EAAAA,2F;;;CAAA,+D;;GAAAC,sG;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["RowHoverEvent.java"],
 "names":["org.gwtproject.user.cellview.client.RowHoverEvent$Handler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.gwtproject.user.cellview.client.RowHoverEvent$Handler$$LambdaAdaptor.<init>","org.gwtproject.user.cellview.client.RowHoverEvent$Handler$$LambdaAdaptor.onRowHover","org.gwtproject.user.cellview.client.RowHoverEvent$Handler$$LambdaAdaptor.<clinit>"]
 }

@@ -8,35 +8,22 @@ const GroupRole = goog.require('org.gwtproject.aria.client.GroupRole$impl');
  * @extends {GroupRole}
  */
 class RowgroupRole {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RowgroupRole.$clinit = () =>{};
   RowgroupRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  GroupRole.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_RowgroupRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  GroupRole.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_RowgroupRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_RowgroupRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

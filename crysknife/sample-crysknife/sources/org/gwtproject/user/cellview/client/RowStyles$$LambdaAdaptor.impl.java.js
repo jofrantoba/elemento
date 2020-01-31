@@ -9,54 +9,35 @@ const RowStyles = goog.require('org.gwtproject.user.cellview.client.RowStyles$im
  * @implements {RowStyles<T>}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(T, number):?string} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(T, number):?string */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(T, number):?string} */
+  /**@type {?function(T, number):?string}*/
   this.f_$$fn__org_gwtproject_user_cellview_client_RowStyles_$LambdaAdaptor;
   this.$ctor__org_gwtproject_user_cellview_client_RowStyles_$LambdaAdaptor__org_gwtproject_user_cellview_client_RowStyles_$JsFunction(fn);
  }
- /**
-  * @param {?function(T, number):?string} fn
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_RowStyles_$LambdaAdaptor__org_gwtproject_user_cellview_client_RowStyles_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_RowStyles_$LambdaAdaptor__org_gwtproject_user_cellview_client_RowStyles_$JsFunction(/** ?function(T, number):?string */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_user_cellview_client_RowStyles_$LambdaAdaptor = fn;
  }
- /**
-  * @param {T} arg0
-  * @param {number} arg1
-  * @return {?string}
-  * @public
-  */
- m_getStyleNames__java_lang_Object__int(arg0, arg1) {
+ /** @return {?string} */
+ m_getStyleNames__java_lang_Object__int(/** T */ arg0, /** number */ arg1) {
   let /** ?function(T, number):?string */ $function;
   return ($function = this.f_$$fn__org_gwtproject_user_cellview_client_RowStyles_$LambdaAdaptor, $function(arg0, arg1));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"FontFaceSet$$Overlay.impl.java.js",
-"lineCount":25,
-"mappings":"A;;;;;;;;MA4BiB,oB;;;;;;;QAkCF,8G,WAAsCA,Q,EAAiBC,O;EAAvDC,+B;EACXA,iG;;;;;QAnCa,O;EAAAC,uC;EAAAA;",
+"lineCount":18,
+"mappings":"A;;;;;;;;MA4BiB,oB;;QAkCF,8G,iFAAsCA,Q,WAAiBC,O;EAAvDC,+B;EACXA,gG;;;QAnCa,O;EAAAC,uC;EAAAA;",
 "sources":["FontFaceSet.java"],
 "names":["callback","selfObj","elemental2.dom.FontFaceSet$$Overlay.forEach__$devirt","elemental2.dom.FontFaceSet$$Overlay.<clinit>"]
 }

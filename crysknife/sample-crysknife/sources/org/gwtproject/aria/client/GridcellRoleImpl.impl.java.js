@@ -16,153 +16,80 @@ let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
  * @implements {GridcellRole}
   */
 class GridcellRoleImpl extends RoleImpl {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} roleName
-  * @return {!GridcellRoleImpl}
-  * @public
-  */
- static $create__java_lang_String(roleName) {
+ /** @return {!GridcellRoleImpl} */
+ static $create__java_lang_String(/** ?string */ roleName) {
   GridcellRoleImpl.$clinit();
   let $instance = new GridcellRoleImpl();
   $instance.$ctor__org_gwtproject_aria_client_GridcellRoleImpl__java_lang_String(roleName);
   return $instance;
  }
- /**
-  * @param {?string} roleName
-  * @public
-  */
- $ctor__org_gwtproject_aria_client_GridcellRoleImpl__java_lang_String(roleName) {
+ 
+ $ctor__org_gwtproject_aria_client_GridcellRoleImpl__java_lang_String(/** ?string */ roleName) {
   this.$ctor__org_gwtproject_aria_client_RoleImpl__java_lang_String(roleName);
  }
- /**
-  * @override
-  * @param {Object} element
-  * @return {?string}
-  * @public
-  */
- m_getAriaExpandedState__org_gwtproject_dom_client_Element(element) {
+ /** @override @return {?string} */
+ m_getAriaExpandedState__org_gwtproject_dom_client_Element(/** Object */ element) {
   return State.f_EXPANDED__org_gwtproject_aria_client_State.m_get__org_gwtproject_dom_client_Element(element);
  }
- /**
-  * @override
-  * @param {Object} element
-  * @public
-  */
- m_removeAriaExpandedState__org_gwtproject_dom_client_Element(element) {
+ /** @override */
+ m_removeAriaExpandedState__org_gwtproject_dom_client_Element(/** Object */ element) {
   State.f_EXPANDED__org_gwtproject_aria_client_State.m_remove__org_gwtproject_dom_client_Element(element);
  }
- /**
-  * @override
-  * @param {Object} element
-  * @param {ExpandedValue} value
-  * @public
-  */
- m_setAriaExpandedState__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_ExpandedValue(element, value) {
-  State.f_EXPANDED__org_gwtproject_aria_client_State.m_set__org_gwtproject_dom_client_Element__arrayOf_java_lang_Object(element, /**@type {!Array<ExpandedValue>} */ ($Arrays.$init([value], ExpandedValue)));
+ /** @override */
+ m_setAriaExpandedState__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_ExpandedValue(/** Object */ element, /** ExpandedValue */ value) {
+  State.f_EXPANDED__org_gwtproject_aria_client_State.m_set__org_gwtproject_dom_client_Element__arrayOf_java_lang_Object(element, /**@type {!Array<ExpandedValue>}*/ ($Arrays.$init([value], ExpandedValue)));
  }
- /**
-  * @override
-  * @param {Object} element
-  * @return {?string}
-  * @public
-  */
- m_getAriaReadonlyProperty__org_gwtproject_dom_client_Element(element) {
+ /** @override @return {?string} */
+ m_getAriaReadonlyProperty__org_gwtproject_dom_client_Element(/** Object */ element) {
   return Property.f_READONLY__org_gwtproject_aria_client_Property.m_get__org_gwtproject_dom_client_Element(element);
  }
- /**
-  * @override
-  * @param {Object} element
-  * @return {?string}
-  * @public
-  */
- m_getAriaRequiredProperty__org_gwtproject_dom_client_Element(element) {
+ /** @override @return {?string} */
+ m_getAriaRequiredProperty__org_gwtproject_dom_client_Element(/** Object */ element) {
   return Property.f_REQUIRED__org_gwtproject_aria_client_Property.m_get__org_gwtproject_dom_client_Element(element);
  }
- /**
-  * @override
-  * @param {Object} element
-  * @return {?string}
-  * @public
-  */
- m_getAriaSelectedState__org_gwtproject_dom_client_Element(element) {
+ /** @override @return {?string} */
+ m_getAriaSelectedState__org_gwtproject_dom_client_Element(/** Object */ element) {
   return State.f_SELECTED__org_gwtproject_aria_client_State.m_get__org_gwtproject_dom_client_Element(element);
  }
- /**
-  * @override
-  * @param {Object} element
-  * @public
-  */
- m_removeAriaReadonlyProperty__org_gwtproject_dom_client_Element(element) {
+ /** @override */
+ m_removeAriaReadonlyProperty__org_gwtproject_dom_client_Element(/** Object */ element) {
   Property.f_READONLY__org_gwtproject_aria_client_Property.m_remove__org_gwtproject_dom_client_Element(element);
  }
- /**
-  * @override
-  * @param {Object} element
-  * @public
-  */
- m_removeAriaRequiredProperty__org_gwtproject_dom_client_Element(element) {
+ /** @override */
+ m_removeAriaRequiredProperty__org_gwtproject_dom_client_Element(/** Object */ element) {
   Property.f_REQUIRED__org_gwtproject_aria_client_Property.m_remove__org_gwtproject_dom_client_Element(element);
  }
- /**
-  * @override
-  * @param {Object} element
-  * @public
-  */
- m_removeAriaSelectedState__org_gwtproject_dom_client_Element(element) {
+ /** @override */
+ m_removeAriaSelectedState__org_gwtproject_dom_client_Element(/** Object */ element) {
   State.f_SELECTED__org_gwtproject_aria_client_State.m_remove__org_gwtproject_dom_client_Element(element);
  }
- /**
-  * @override
-  * @param {Object} element
-  * @param {boolean} value
-  * @public
-  */
- m_setAriaReadonlyProperty__org_gwtproject_dom_client_Element__boolean(element, value) {
-  Property.f_READONLY__org_gwtproject_aria_client_Property.m_set__org_gwtproject_dom_client_Element__arrayOf_java_lang_Object(element, /**@type {!Array<?boolean>} */ ($Arrays.$init([value], Boolean)));
+ /** @override */
+ m_setAriaReadonlyProperty__org_gwtproject_dom_client_Element__boolean(/** Object */ element, /** boolean */ value) {
+  Property.f_READONLY__org_gwtproject_aria_client_Property.m_set__org_gwtproject_dom_client_Element__arrayOf_java_lang_Object(element, /**@type {!Array<?boolean>}*/ ($Arrays.$init([value], Boolean)));
  }
- /**
-  * @override
-  * @param {Object} element
-  * @param {boolean} value
-  * @public
-  */
- m_setAriaRequiredProperty__org_gwtproject_dom_client_Element__boolean(element, value) {
-  Property.f_REQUIRED__org_gwtproject_aria_client_Property.m_set__org_gwtproject_dom_client_Element__arrayOf_java_lang_Object(element, /**@type {!Array<?boolean>} */ ($Arrays.$init([value], Boolean)));
+ /** @override */
+ m_setAriaRequiredProperty__org_gwtproject_dom_client_Element__boolean(/** Object */ element, /** boolean */ value) {
+  Property.f_REQUIRED__org_gwtproject_aria_client_Property.m_set__org_gwtproject_dom_client_Element__arrayOf_java_lang_Object(element, /**@type {!Array<?boolean>}*/ ($Arrays.$init([value], Boolean)));
  }
- /**
-  * @override
-  * @param {Object} element
-  * @param {SelectedValue} value
-  * @public
-  */
- m_setAriaSelectedState__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_SelectedValue(element, value) {
-  State.f_SELECTED__org_gwtproject_aria_client_State.m_set__org_gwtproject_dom_client_Element__arrayOf_java_lang_Object(element, /**@type {!Array<SelectedValue>} */ ($Arrays.$init([value], SelectedValue)));
+ /** @override */
+ m_setAriaSelectedState__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_SelectedValue(/** Object */ element, /** SelectedValue */ value) {
+  State.f_SELECTED__org_gwtproject_aria_client_State.m_set__org_gwtproject_dom_client_Element__arrayOf_java_lang_Object(element, /**@type {!Array<SelectedValue>}*/ ($Arrays.$init([value], SelectedValue)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   GridcellRoleImpl.$clinit = () =>{};
   GridcellRoleImpl.$loadModules();
   RoleImpl.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof GridcellRoleImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Boolean = goog.module.get('java.lang.Boolean$impl');
   ExpandedValue = goog.module.get('org.gwtproject.aria.client.ExpandedValue$impl');

@@ -7,72 +7,46 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @template T
   */
 class SelectionChange extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {T} */
+  /**@type {T}*/
   this.f_item__org_gwtproject_view_client_MultiSelectionModel_SelectionChange_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isSelected__org_gwtproject_view_client_MultiSelectionModel_SelectionChange_ = false;
  }
- /**
-  * @template T
-  * @param {T} item
-  * @param {boolean} isSelected
-  * @return {!SelectionChange<T>}
-  * @public
-  */
- static $create__java_lang_Object__boolean(item, isSelected) {
+ /** @template T @return {!SelectionChange<T>} */
+ static $create__java_lang_Object__boolean(/** T */ item, /** boolean */ isSelected) {
   SelectionChange.$clinit();
   let $instance = new SelectionChange();
   $instance.$ctor__org_gwtproject_view_client_MultiSelectionModel_SelectionChange__java_lang_Object__boolean(item, isSelected);
   return $instance;
  }
- /**
-  * @param {T} item
-  * @param {boolean} isSelected
-  * @public
-  */
- $ctor__org_gwtproject_view_client_MultiSelectionModel_SelectionChange__java_lang_Object__boolean(item, isSelected) {
+ 
+ $ctor__org_gwtproject_view_client_MultiSelectionModel_SelectionChange__java_lang_Object__boolean(/** T */ item, /** boolean */ isSelected) {
   this.$ctor__java_lang_Object__();
   this.f_item__org_gwtproject_view_client_MultiSelectionModel_SelectionChange_ = item;
   this.f_isSelected__org_gwtproject_view_client_MultiSelectionModel_SelectionChange_ = isSelected;
  }
- /**
-  * @return {T}
-  * @public
-  */
+ /** @return {T} */
  m_getItem__() {
   return this.f_item__org_gwtproject_view_client_MultiSelectionModel_SelectionChange_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isSelected__() {
   return this.f_isSelected__org_gwtproject_view_client_MultiSelectionModel_SelectionChange_;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SelectionChange.$clinit = () =>{};
   SelectionChange.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SelectionChange;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

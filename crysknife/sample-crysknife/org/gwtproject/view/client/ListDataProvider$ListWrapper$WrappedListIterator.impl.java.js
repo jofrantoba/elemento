@@ -17,62 +17,42 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {ListIterator<T>}
   */
 class WrappedListIterator extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {ListWrapper<T>} */
+  /**@type {ListWrapper<T>}*/
   this.f_$outer_this__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_i__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_last__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_ = 0;
  }
- /**
-  * Factory method corresponding to constructor 'WrappedListIterator(ListWrapper)'.
-  * @template T
-  * @param {ListWrapper<T>} $outer_this
-  * @return {!WrappedListIterator<T>}
-  * @public
-  */
- static $create__org_gwtproject_view_client_ListDataProvider_ListWrapper($outer_this) {
+ //Factory method corresponding to constructor 'WrappedListIterator(ListWrapper)'.
+ /** @template T @return {!WrappedListIterator<T>} */
+ static $create__org_gwtproject_view_client_ListDataProvider_ListWrapper(/** ListWrapper<T> */ $outer_this) {
   WrappedListIterator.$clinit();
   let $instance = new WrappedListIterator();
   $instance.$ctor__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator__org_gwtproject_view_client_ListDataProvider_ListWrapper($outer_this);
   return $instance;
  }
- /**
-  * Initialization from constructor 'WrappedListIterator(ListWrapper)'.
-  * @param {ListWrapper<T>} $outer_this
-  * @public
-  */
- $ctor__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator__org_gwtproject_view_client_ListDataProvider_ListWrapper($outer_this) {
+ //Initialization from constructor 'WrappedListIterator(ListWrapper)'.
+ 
+ $ctor__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator__org_gwtproject_view_client_ListDataProvider_ListWrapper(/** ListWrapper<T> */ $outer_this) {
   this.f_$outer_this__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator = $outer_this;
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator();
  }
- /**
-  * Factory method corresponding to constructor 'WrappedListIterator(ListWrapper, int)'.
-  * @template T
-  * @param {ListWrapper<T>} $outer_this
-  * @param {number} start
-  * @return {!WrappedListIterator<T>}
-  * @public
-  */
- static $create__org_gwtproject_view_client_ListDataProvider_ListWrapper__int($outer_this, start) {
+ //Factory method corresponding to constructor 'WrappedListIterator(ListWrapper, int)'.
+ /** @template T @return {!WrappedListIterator<T>} */
+ static $create__org_gwtproject_view_client_ListDataProvider_ListWrapper__int(/** ListWrapper<T> */ $outer_this, /** number */ start) {
   WrappedListIterator.$clinit();
   let $instance = new WrappedListIterator();
   $instance.$ctor__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator__org_gwtproject_view_client_ListDataProvider_ListWrapper__int($outer_this, start);
   return $instance;
  }
- /**
-  * Initialization from constructor 'WrappedListIterator(ListWrapper, int)'.
-  * @param {ListWrapper<T>} $outer_this
-  * @param {number} start
-  * @public
-  */
- $ctor__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator__org_gwtproject_view_client_ListDataProvider_ListWrapper__int($outer_this, start) {
+ //Initialization from constructor 'WrappedListIterator(ListWrapper, int)'.
+ 
+ $ctor__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator__org_gwtproject_view_client_ListDataProvider_ListWrapper__int(/** ListWrapper<T> */ $outer_this, /** number */ start) {
   this.f_$outer_this__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator = $outer_this;
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator();
@@ -82,76 +62,45 @@ class WrappedListIterator extends j_l_Object {
   }
   this.f_i__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_ = start;
  }
- /**
-  * @override
-  * @param {T} o
-  * @public
-  */
- m_add__java_lang_Object(o) {
+ /** @override */
+ m_add__java_lang_Object(/** T */ o) {
   if (this.f_last__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_ < 0) {
    throw $Exceptions.toJs(IllegalStateException.$create__java_lang_String(WrappedListIterator.f_IMPERMEABLE_EXCEPTION__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_));
   }
   this.f_$outer_this__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator.addAtIndex(this.f_i__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_++, o);
   this.f_last__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_ = -1;
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_hasNext__() {
   return this.f_i__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_ < this.f_$outer_this__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator.size();
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_hasPrevious__() {
   return this.f_i__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_ > 0;
  }
- /**
-  * @override
-  * @return {T}
-  * @public
-  */
+ /** @override @return {T} */
  m_next__() {
   if (!this.m_hasNext__()) {
    throw $Exceptions.toJs(NoSuchElementException.$create__());
   }
   return this.f_$outer_this__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator.getAtIndex(this.f_last__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_ = this.f_i__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_++);
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_nextIndex__() {
   return this.f_i__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_;
  }
- /**
-  * @override
-  * @return {T}
-  * @public
-  */
+ /** @override @return {T} */
  m_previous__() {
   if (!this.m_hasPrevious__()) {
    throw $Exceptions.toJs(NoSuchElementException.$create__());
   }
   return this.f_$outer_this__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator.getAtIndex(this.f_last__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_ = --this.f_i__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_);
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_previousIndex__() {
   return this.f_i__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_ - 1;
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_remove__() {
   if (this.f_last__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_ < 0) {
    throw $Exceptions.toJs(IllegalStateException.$create__java_lang_String(WrappedListIterator.f_IMPERMEABLE_EXCEPTION__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_));
@@ -160,53 +109,35 @@ class WrappedListIterator extends j_l_Object {
   this.f_i__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_ = this.f_last__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_;
   this.f_last__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_ = -1;
  }
- /**
-  * @override
-  * @param {T} o
-  * @public
-  */
- m_set__java_lang_Object(o) {
+ /** @override */
+ m_set__java_lang_Object(/** T */ o) {
   if (this.f_last__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_ == -1) {
    throw $Exceptions.toJs(IllegalStateException.$create__());
   }
   this.f_$outer_this__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator.setAtIndex(this.f_last__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_, o);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEachRemaining__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEachRemaining__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterator.m_forEachRemaining__$default__java_util_Iterator__java_util_function_Consumer(this, arg0);
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator() {
   this.f_i__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_ = 0;
   this.f_last__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_ = -1;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   WrappedListIterator.$clinit = () =>{};
   WrappedListIterator.$loadModules();
   j_l_Object.$clinit();
   Iterator.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof WrappedListIterator;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');
   IndexOutOfBoundsException = goog.module.get('java.lang.IndexOutOfBoundsException$impl');
@@ -220,7 +151,7 @@ $Util.$setClassMetadata(WrappedListIterator, 'org.gwtproject.view.client.ListDat
 
 ListIterator.$markImplementor(WrappedListIterator);
 
-/** @public {?string} @const */
+/**@const {?string}*/
 WrappedListIterator.f_IMPERMEABLE_EXCEPTION__org_gwtproject_view_client_ListDataProvider_ListWrapper_WrappedListIterator_ = "Cannot call add/remove more than once per call to next/previous.";
 
 exports = WrappedListIterator; 

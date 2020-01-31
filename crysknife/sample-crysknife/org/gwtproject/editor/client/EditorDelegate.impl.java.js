@@ -9,60 +9,29 @@ let HandlerRegistration = goog.forwardDeclare('org.gwtproject.event.shared.Handl
  * @template T
  */
 class EditorDelegate {
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_getPath__() {}
- /**
-  * @abstract
-  * @param {?string} message
-  * @param {*} value
-  * @param {*} userData
-  * @public
-  */
- m_recordError__java_lang_String__java_lang_Object__java_lang_Object(message, value, userData) {}
- /**
-  * @abstract
-  * @param {boolean} dirty
-  * @public
-  */
- m_setDirty__boolean(dirty) {}
- /**
-  * @abstract
-  * @return {HandlerRegistration}
-  * @public
-  */
+ /** @abstract */
+ m_recordError__java_lang_String__java_lang_Object__java_lang_Object(/** ?string */ message, /** * */ value, /** * */ userData) {}
+ /** @abstract */
+ m_setDirty__boolean(/** boolean */ dirty) {}
+ /** @abstract @return {HandlerRegistration} */
  m_subscribe__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   EditorDelegate.$clinit = () =>{};
   EditorDelegate.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_editor_client_EditorDelegate = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_editor_client_EditorDelegate = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_editor_client_EditorDelegate;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

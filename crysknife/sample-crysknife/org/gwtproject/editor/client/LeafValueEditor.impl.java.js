@@ -9,47 +9,26 @@ const Editor = goog.require('org.gwtproject.editor.client.Editor$impl');
  * @extends {Editor<T>}
  */
 class LeafValueEditor {
- /**
-  * @abstract
-  * @param {T} value
-  * @public
-  */
- m_setValue__java_lang_Object(value) {}
- /**
-  * @abstract
-  * @return {T}
-  * @public
-  */
+ /** @abstract */
+ m_setValue__java_lang_Object(/** T */ value) {}
+ /** @abstract @return {T} */
  m_getValue__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   LeafValueEditor.$clinit = () =>{};
   LeafValueEditor.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Editor.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_editor_client_LeafValueEditor = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Editor.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_editor_client_LeafValueEditor = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_editor_client_LeafValueEditor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -14,127 +14,79 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {Event<Handler>}
   */
 class RowCountChangeEvent extends Event {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {number} */
+  /**@type {number}*/
   this.f_rowCount__org_gwtproject_view_client_RowCountChangeEvent_ = 0;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isExact__org_gwtproject_view_client_RowCountChangeEvent_ = false;
  }
- /**
-  * @param {HasRows} source
-  * @param {number} rowCount
-  * @param {boolean} isExact
-  * @public
-  */
- static m_fire__org_gwtproject_view_client_HasRows__int__boolean(source, rowCount, isExact) {
+ 
+ static m_fire__org_gwtproject_view_client_HasRows__int__boolean(/** HasRows */ source, /** number */ rowCount, /** boolean */ isExact) {
   RowCountChangeEvent.$clinit();
   if (!$Equality.$same(RowCountChangeEvent.f_TYPE__org_gwtproject_view_client_RowCountChangeEvent_, null)) {
    let event = RowCountChangeEvent.$create__int__boolean(rowCount, isExact);
    source.m_fireEvent__org_gwtproject_event_shared_Event(event);
   }
  }
- /**
-  * @return {Type<Handler>}
-  * @public
-  */
+ /** @return {Type<Handler>} */
  static m_getType__() {
   RowCountChangeEvent.$clinit();
   if ($Equality.$same(RowCountChangeEvent.f_TYPE__org_gwtproject_view_client_RowCountChangeEvent_, null)) {
-   RowCountChangeEvent.f_TYPE__org_gwtproject_view_client_RowCountChangeEvent_ = /**@type {!Type<Handler>} */ (Type.$create__());
+   RowCountChangeEvent.f_TYPE__org_gwtproject_view_client_RowCountChangeEvent_ = /**@type {!Type<Handler>}*/ (Type.$create__());
   }
   return RowCountChangeEvent.f_TYPE__org_gwtproject_view_client_RowCountChangeEvent_;
  }
- /**
-  * @param {number} rowCount
-  * @param {boolean} isExact
-  * @return {!RowCountChangeEvent}
-  * @public
-  */
- static $create__int__boolean(rowCount, isExact) {
+ /** @return {!RowCountChangeEvent} */
+ static $create__int__boolean(/** number */ rowCount, /** boolean */ isExact) {
   RowCountChangeEvent.$clinit();
   let $instance = new RowCountChangeEvent();
   $instance.$ctor__org_gwtproject_view_client_RowCountChangeEvent__int__boolean(rowCount, isExact);
   return $instance;
  }
- /**
-  * @param {number} rowCount
-  * @param {boolean} isExact
-  * @public
-  */
- $ctor__org_gwtproject_view_client_RowCountChangeEvent__int__boolean(rowCount, isExact) {
+ 
+ $ctor__org_gwtproject_view_client_RowCountChangeEvent__int__boolean(/** number */ rowCount, /** boolean */ isExact) {
   this.$ctor__org_gwtproject_event_shared_Event__();
   this.f_rowCount__org_gwtproject_view_client_RowCountChangeEvent_ = rowCount;
   this.f_isExact__org_gwtproject_view_client_RowCountChangeEvent_ = isExact;
  }
- /**
-  * @override
-  * @return {Type<Handler>}
-  * @public
-  */
+ /** @override @return {Type<Handler>} */
  m_getAssociatedType__() {
   return RowCountChangeEvent.f_TYPE__org_gwtproject_view_client_RowCountChangeEvent_;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getNewRowCount__() {
   return this.f_rowCount__org_gwtproject_view_client_RowCountChangeEvent_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isNewRowCountExact__() {
   return this.f_isExact__org_gwtproject_view_client_RowCountChangeEvent_;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_toDebugString__() {
   return j_l_String.m_valueOf__java_lang_Object(super.m_toDebugString__()) + this.m_getNewRowCount__();
  }
- /**
-  * @param {Handler} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_view_client_RowCountChangeEvent_Handler(handler) {
+ 
+ m_dispatch__org_gwtproject_view_client_RowCountChangeEvent_Handler(/** Handler */ handler) {
   handler.m_onRowCountChange__org_gwtproject_view_client_RowCountChangeEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_view_client_RowCountChangeEvent_Handler(/**@type {Handler} */ ($Casts.$to(arg0, Handler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_view_client_RowCountChangeEvent_Handler(/**@type {Handler}*/ ($Casts.$to(arg0, Handler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RowCountChangeEvent.$clinit = () =>{};
   RowCountChangeEvent.$loadModules();
   Event.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof RowCountChangeEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -146,7 +98,7 @@ class RowCountChangeEvent extends Event {
 }
 $Util.$setClassMetadata(RowCountChangeEvent, 'org.gwtproject.view.client.RowCountChangeEvent');
 
-/** @public {Type<Handler>} */
+/**@type {Type<Handler>}*/
 RowCountChangeEvent.f_TYPE__org_gwtproject_view_client_RowCountChangeEvent_;
 
 exports = RowCountChangeEvent; 

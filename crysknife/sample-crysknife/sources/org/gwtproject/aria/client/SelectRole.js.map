@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SelectRole.impl.java.js",
-"lineCount":20,
-"mappings":"A;;;;;;;;;;;;;MA0BiB,U;;;;QAAA,O;EAAAA,6B;EAAAA;",
+"lineCount":18,
+"mappings":"A;;;;;;;;;;;;;MA0BiB,U;;QAAA,O;EAAAA,6B;EAAAA;",
 "sources":["SelectRole.java"],
 "names":["org.gwtproject.aria.client.SelectRole.<clinit>"]
 }

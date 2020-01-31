@@ -21,38 +21,25 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {HtmlSanitizer}
   */
 class SimpleHtmlSanitizer extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {SimpleHtmlSanitizer}
-  * @public
-  */
+ /** @return {SimpleHtmlSanitizer} */
  static m_getInstance__() {
   SimpleHtmlSanitizer.$clinit();
   return SimpleHtmlSanitizer.f_INSTANCE__org_gwtproject_safehtml_shared_SimpleHtmlSanitizer_;
  }
- /**
-  * @param {?string} html
-  * @return {SafeHtml}
-  * @public
-  */
- static m_sanitizeHtml__java_lang_String(html) {
+ /** @return {SafeHtml} */
+ static m_sanitizeHtml__java_lang_String(/** ?string */ html) {
   SimpleHtmlSanitizer.$clinit();
   if ($Equality.$same(html, null)) {
    throw $Exceptions.toJs(NullPointerException.$create__java_lang_String("html is null"));
   }
   return SafeHtmlString.$create__java_lang_String(SimpleHtmlSanitizer.m_simpleSanitize__java_lang_String(html));
  }
- /**
-  * @param {?string} text
-  * @return {?string}
-  * @public
-  */
- static m_simpleSanitize__java_lang_String(text) {
+ /** @return {?string} */
+ static m_simpleSanitize__java_lang_String(/** ?string */ text) {
   let sanitized = StringBuilder.$create__();
   let firstSegment = true;
   for (let $array = j_l_String.m_split__java_lang_String__java_lang_String__int(text, "<", -1), $index = 0; $index < $array.length; $index++) {
@@ -89,51 +76,33 @@ class SimpleHtmlSanitizer extends j_l_Object {
   }
   return sanitized.toString();
  }
- /**
-  * @return {!SimpleHtmlSanitizer}
-  * @public
-  */
+ /** @return {!SimpleHtmlSanitizer} */
  static $create__() {
   let $instance = new SimpleHtmlSanitizer();
   $instance.$ctor__org_gwtproject_safehtml_shared_SimpleHtmlSanitizer__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_safehtml_shared_SimpleHtmlSanitizer__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @override
-  * @param {?string} html
-  * @return {SafeHtml}
-  * @public
-  */
- m_sanitize__java_lang_String(html) {
+ /** @override @return {SafeHtml} */
+ m_sanitize__java_lang_String(/** ?string */ html) {
   return SimpleHtmlSanitizer.m_sanitizeHtml__java_lang_String(html);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SimpleHtmlSanitizer.$clinit = () =>{};
   SimpleHtmlSanitizer.$loadModules();
   j_l_Object.$clinit();
   SimpleHtmlSanitizer.f_INSTANCE__org_gwtproject_safehtml_shared_SimpleHtmlSanitizer_ = SimpleHtmlSanitizer.$create__();
-  SimpleHtmlSanitizer.f_TAG_WHITELIST__org_gwtproject_safehtml_shared_SimpleHtmlSanitizer_ = /**@type {!HashSet<?string>} */ (HashSet.$create__java_util_Collection(Arrays.m_asList__arrayOf_java_lang_Object(/**@type {!Array<?string>} */ ($Arrays.$init(["b", "em", "i", "h1", "h2", "h3", "h4", "h5", "h6", "hr", "ul", "ol", "li", "strong", "br"], j_l_String)))));
+  SimpleHtmlSanitizer.f_TAG_WHITELIST__org_gwtproject_safehtml_shared_SimpleHtmlSanitizer_ = /**@type {!HashSet<?string>}*/ (HashSet.$create__java_util_Collection(Arrays.m_asList__arrayOf_java_lang_Object(/**@type {!Array<?string>}*/ ($Arrays.$init(["b", "em", "i", "h1", "h2", "h3", "h4", "h5", "h6", "hr", "ul", "ol", "li", "strong", "br"], j_l_String)))));
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SimpleHtmlSanitizer;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   NullPointerException = goog.module.get('java.lang.NullPointerException$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -152,9 +121,9 @@ $Util.$setClassMetadata(SimpleHtmlSanitizer, 'org.gwtproject.safehtml.shared.Sim
 
 HtmlSanitizer.$markImplementor(SimpleHtmlSanitizer);
 
-/** @public {SimpleHtmlSanitizer} */
+/**@type {SimpleHtmlSanitizer}*/
 SimpleHtmlSanitizer.f_INSTANCE__org_gwtproject_safehtml_shared_SimpleHtmlSanitizer_;
-/** @public {Set<?string>} */
+/**@type {Set<?string>}*/
 SimpleHtmlSanitizer.f_TAG_WHITELIST__org_gwtproject_safehtml_shared_SimpleHtmlSanitizer_;
 
 exports = SimpleHtmlSanitizer; 

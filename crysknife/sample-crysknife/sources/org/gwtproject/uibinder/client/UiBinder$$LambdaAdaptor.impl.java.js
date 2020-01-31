@@ -9,53 +9,35 @@ const UiBinder = goog.require('org.gwtproject.uibinder.client.UiBinder$impl');
  * @implements {UiBinder<U, O>}
   */
 class $LambdaAdaptor extends j_l_Object {
- /**
-  * @param {?function(O):U} fn
-  * @public
-  */
- constructor(fn) {
+ 
+ constructor(/** ?function(O):U */ fn) {
   $LambdaAdaptor.$clinit();
   super();
-  /** @public {?function(O):U} */
+  /**@type {?function(O):U}*/
   this.f_$$fn__org_gwtproject_uibinder_client_UiBinder_$LambdaAdaptor;
   this.$ctor__org_gwtproject_uibinder_client_UiBinder_$LambdaAdaptor__org_gwtproject_uibinder_client_UiBinder_$JsFunction(fn);
  }
- /**
-  * @param {?function(O):U} fn
-  * @public
-  */
- $ctor__org_gwtproject_uibinder_client_UiBinder_$LambdaAdaptor__org_gwtproject_uibinder_client_UiBinder_$JsFunction(fn) {
+ 
+ $ctor__org_gwtproject_uibinder_client_UiBinder_$LambdaAdaptor__org_gwtproject_uibinder_client_UiBinder_$JsFunction(/** ?function(O):U */ fn) {
   this.$ctor__java_lang_Object__();
   this.f_$$fn__org_gwtproject_uibinder_client_UiBinder_$LambdaAdaptor = fn;
  }
- /**
-  * @param {O} arg0
-  * @return {U}
-  * @public
-  */
- m_createAndBindUi__java_lang_Object(arg0) {
+ /** @return {U} */
+ m_createAndBindUi__java_lang_Object(/** O */ arg0) {
   let /** ?function(O):U */ $function;
   return ($function = this.f_$$fn__org_gwtproject_uibinder_client_UiBinder_$LambdaAdaptor, $function(arg0));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};
   $LambdaAdaptor.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof $LambdaAdaptor;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

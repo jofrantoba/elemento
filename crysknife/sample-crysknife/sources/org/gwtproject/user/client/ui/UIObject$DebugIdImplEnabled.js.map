@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"UIObject$DebugIdImplEnabled.impl.java.js",
-"lineCount":70,
-"mappings":"A;;;;;;;;;;;;MA43BwB,kB;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,6B;EAAAA,yC;EAAAA,+E;EAAAA,iB;;;;;CAAA,kE;EAAAC,mE;;;;;;;;CAGJ,yE,CAAuBC,Q,EAAiBC,E;EAChDC,iD;;;;;;;;;CAIQ,sF,CAAsBC,I,EAAaC,M,EAAeH,E;EAC1DC,iD;EACAA,yH;EACAA,IAAOG,MAAPH,oC;EACAA,IAAOI,OAAPJ,uL;EACAA,IAAOK,SAAPL,uC;EACAA;GACIA,uIADJA;;GAGIA,sCAHJA;G;;;;;QAdY,O;EAAAM,qC;EAAAA,kC;EAAAA;",
+"lineCount":50,
+"mappings":"A;;;;;;;;;;;;MA43BwB,kB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,6B;EAAAA,yC;EAAAA,+E;EAAAA,iB;;;CAAA,kE;EAAAC,mE;;;CAGJ,yE,iBAAuBC,Q,iBAAiBC,E;EAChDC,iD;;;CAIQ,sF,eAAsBC,I,iBAAaC,M,iBAAeH,E;EAC1DC,iD;EACAA,yH;EACAA,IAAOG,MAAPH,oC;EACAA,IAAOI,OAAPJ,uL;EACAA,IAAOK,SAAPL,uC;EACAA;GACIA,uIADJA;;GAGIA,sCAHJA;G;;;QAdY,O;EAAAM,qC;EAAAA,kC;EAAAA;",
 "sources":["UIObject.java"],
 "names":["org.gwtproject.user.client.ui.UIObject$DebugIdImplEnabled.<synthetic: ctor_js>","org.gwtproject.user.client.ui.UIObject$DebugIdImplEnabled.<synthetic: ctor_create>","org.gwtproject.user.client.ui.UIObject$DebugIdImplEnabled.<init>","uiObject","id","org.gwtproject.user.client.ui.UIObject$DebugIdImplEnabled.ensureDebugId","elem","baseID","prefix","debugId","attribute","org.gwtproject.user.client.ui.UIObject$DebugIdImplEnabled.<clinit>"]
 }

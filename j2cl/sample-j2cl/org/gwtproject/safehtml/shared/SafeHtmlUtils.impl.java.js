@@ -11,46 +11,28 @@ let SafeHtmlString = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHtm
 let JvmImpl = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHtmlUtils.JvmImpl$impl');
 
 class SafeHtmlUtils extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} s
-  * @return {SafeHtml}
-  * @public
-  */
- static m_fromSafeConstant__java_lang_String(s) {
+ /** @return {SafeHtml} */
+ static m_fromSafeConstant__java_lang_String(/** ?string */ s) {
   SafeHtmlUtils.$clinit();
   SafeHtmlHostedModeUtils.m_maybeCheckCompleteHtml__java_lang_String(s);
   return SafeHtmlString.$create__java_lang_String(s);
  }
- /**
-  * @param {?string} s
-  * @return {SafeHtml}
-  * @public
-  */
- static m_fromString__java_lang_String(s) {
+ /** @return {SafeHtml} */
+ static m_fromString__java_lang_String(/** ?string */ s) {
   SafeHtmlUtils.$clinit();
   return SafeHtmlString.$create__java_lang_String(SafeHtmlUtils.m_htmlEscape__java_lang_String(s));
  }
- /**
-  * @param {?string} s
-  * @return {SafeHtml}
-  * @public
-  */
- static m_fromTrustedString__java_lang_String(s) {
+ /** @return {SafeHtml} */
+ static m_fromTrustedString__java_lang_String(/** ?string */ s) {
   SafeHtmlUtils.$clinit();
   return SafeHtmlString.$create__java_lang_String(s);
  }
- /**
-  * @param {number} c
-  * @return {?string}
-  * @public
-  */
- static m_htmlEscape__char(c) {
+ /** @return {?string} */
+ static m_htmlEscape__char(/** number */ c) {
   SafeHtmlUtils.$clinit();
   switch (c) {
    case 38 /* '&' */: 
@@ -67,21 +49,13 @@ class SafeHtmlUtils extends j_l_Object {
     return "" + j_l_String.m_valueOf__char(c);
   }
  }
- /**
-  * @param {?string} s
-  * @return {?string}
-  * @public
-  */
- static m_htmlEscape__java_lang_String(s) {
+ /** @return {?string} */
+ static m_htmlEscape__java_lang_String(/** ?string */ s) {
   SafeHtmlUtils.$clinit();
   return SafeHtmlUtils.f_impl__org_gwtproject_safehtml_shared_SafeHtmlUtils_.m_htmlEscape__java_lang_String_$pp_org_gwtproject_safehtml_shared(s);
  }
- /**
-  * @param {?string} text
-  * @return {?string}
-  * @public
-  */
- static m_htmlEscapeAllowEntities__java_lang_String(text) {
+ /** @return {?string} */
+ static m_htmlEscapeAllowEntities__java_lang_String(/** ?string */ text) {
   SafeHtmlUtils.$clinit();
   let escaped = StringBuilder.$create__();
   let firstSegment = true;
@@ -102,31 +76,21 @@ class SafeHtmlUtils extends j_l_Object {
   }
   return escaped.toString();
  }
- /**
-  * @return {!SafeHtmlUtils}
-  * @public
-  */
+ /** @return {!SafeHtmlUtils} */
  static $create__() {
   let $instance = new SafeHtmlUtils();
   $instance.$ctor__org_gwtproject_safehtml_shared_SafeHtmlUtils__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_safehtml_shared_SafeHtmlUtils__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {SafeHtml}
-  * @public
-  */
+ /** @return {SafeHtml} */
  static get f_EMPTY_SAFE_HTML__org_gwtproject_safehtml_shared_SafeHtmlUtils() {
   return (SafeHtmlUtils.$clinit(), SafeHtmlUtils.$f_EMPTY_SAFE_HTML__org_gwtproject_safehtml_shared_SafeHtmlUtils);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   SafeHtmlUtils.$clinit = () =>{};
   SafeHtmlUtils.$loadModules();
@@ -134,17 +98,11 @@ class SafeHtmlUtils extends j_l_Object {
   SafeHtmlUtils.$f_EMPTY_SAFE_HTML__org_gwtproject_safehtml_shared_SafeHtmlUtils = SafeHtmlString.$create__java_lang_String("");
   SafeHtmlUtils.f_impl__org_gwtproject_safehtml_shared_SafeHtmlUtils_ = JvmImpl.$create__();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof SafeHtmlUtils;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   StringBuilder = goog.module.get('java.lang.StringBuilder$impl');
@@ -156,13 +114,13 @@ class SafeHtmlUtils extends j_l_Object {
 }
 $Util.$setClassMetadata(SafeHtmlUtils, 'org.gwtproject.safehtml.shared.SafeHtmlUtils');
 
-/** @private {SafeHtml} */
+/**@private {SafeHtml}*/
 SafeHtmlUtils.$f_EMPTY_SAFE_HTML__org_gwtproject_safehtml_shared_SafeHtmlUtils;
-/** @public {?string} @const */
+/**@const {?string}*/
 SafeHtmlUtils.f_HTML_ENTITY_REGEX__org_gwtproject_safehtml_shared_SafeHtmlUtils_ = "[a-z]+|#[0-9]+|#x[0-9a-fA-F]+";
-/** @public {?string} @const */
+/**@const {?string}*/
 SafeHtmlUtils.f_HTML_CHARS__org_gwtproject_safehtml_shared_SafeHtmlUtils = "[&<>'\"]";
-/** @public {JvmImpl} */
+/**@type {JvmImpl}*/
 SafeHtmlUtils.f_impl__org_gwtproject_safehtml_shared_SafeHtmlUtils_;
 
 exports = SafeHtmlUtils; 

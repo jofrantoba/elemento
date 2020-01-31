@@ -9,54 +9,27 @@ let Editor = goog.forwardDeclare('org.gwtproject.editor.client.Editor$impl');
  * @template C, E
  */
 class EditorChain {
- /**
-  * @abstract
-  * @param {C} object
-  * @param {E} subEditor
-  * @public
-  */
- m_attach__java_lang_Object__org_gwtproject_editor_client_Editor(object, subEditor) {}
- /**
-  * @abstract
-  * @param {E} subEditor
-  * @public
-  */
- m_detach__org_gwtproject_editor_client_Editor(subEditor) {}
- /**
-  * @abstract
-  * @param {E} subEditor
-  * @return {C}
-  * @public
-  */
- m_getValue__org_gwtproject_editor_client_Editor(subEditor) {}
- /**
-  * @public
-  */
+ /** @abstract */
+ m_attach__java_lang_Object__org_gwtproject_editor_client_Editor(/** C */ object, /** E */ subEditor) {}
+ /** @abstract */
+ m_detach__org_gwtproject_editor_client_Editor(/** E */ subEditor) {}
+ /** @abstract @return {C} */
+ m_getValue__org_gwtproject_editor_client_Editor(/** E */ subEditor) {}
+ 
  static $clinit() {
   EditorChain.$clinit = () =>{};
   EditorChain.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_editor_client_CompositeEditor_EditorChain = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_editor_client_CompositeEditor_EditorChain = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_editor_client_CompositeEditor_EditorChain;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

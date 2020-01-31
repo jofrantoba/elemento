@@ -10,48 +10,31 @@ let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let AttributeOperator = goog.forwardDeclare('org.jboss.elemento.By.AttributeOperator$impl');
 
 class ByAttribute extends By {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_name__org_jboss_elemento_By_ByAttribute_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_value__org_jboss_elemento_By_ByAttribute_;
-  /** @public {AttributeOperator} */
+  /**@type {AttributeOperator}*/
   this.f_operator__org_jboss_elemento_By_ByAttribute_;
  }
- /**
-  * @param {?string} name
-  * @param {AttributeOperator} operator
-  * @param {?string} value
-  * @return {!ByAttribute}
-  * @public
-  */
- static $create__java_lang_String__org_jboss_elemento_By_AttributeOperator__java_lang_String(name, operator, value) {
+ /** @return {!ByAttribute} */
+ static $create__java_lang_String__org_jboss_elemento_By_AttributeOperator__java_lang_String(/** ?string */ name, /** AttributeOperator */ operator, /** ?string */ value) {
   ByAttribute.$clinit();
   let $instance = new ByAttribute();
   $instance.$ctor__org_jboss_elemento_By_ByAttribute__java_lang_String__org_jboss_elemento_By_AttributeOperator__java_lang_String(name, operator, value);
   return $instance;
  }
- /**
-  * @param {?string} name
-  * @param {AttributeOperator} operator
-  * @param {?string} value
-  * @public
-  */
- $ctor__org_jboss_elemento_By_ByAttribute__java_lang_String__org_jboss_elemento_By_AttributeOperator__java_lang_String(name, operator, value) {
+ 
+ $ctor__org_jboss_elemento_By_ByAttribute__java_lang_String__org_jboss_elemento_By_AttributeOperator__java_lang_String(/** ?string */ name, /** AttributeOperator */ operator, /** ?string */ value) {
   this.$ctor__org_jboss_elemento_By__();
   this.f_name__org_jboss_elemento_By_ByAttribute_ = name;
   this.f_value__org_jboss_elemento_By_ByAttribute_ = value;
   this.f_operator__org_jboss_elemento_By_ByAttribute_ = operator;
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_selector___$pp_org_jboss_elemento() {
   let builder = StringBuilder.$create__();
   builder.m_append__java_lang_String("[").m_append__java_lang_String(this.f_name__org_jboss_elemento_By_ByAttribute_);
@@ -72,12 +55,8 @@ class ByAttribute extends By {
   builder.m_append__java_lang_String("]");
   return builder.toString();
  }
- /**
-  * @param {?string} value
-  * @return {boolean}
-  * @public
-  */
- m_needsQuotes__java_lang_String_$p_org_jboss_elemento_By_ByAttribute(value) {
+ /** @return {boolean} */
+ m_needsQuotes__java_lang_String_$p_org_jboss_elemento_By_ByAttribute(/** ?string */ value) {
   if (j_l_String.m_equals__java_lang_String__java_lang_Object(value, "-")) {
    return true;
   }
@@ -95,25 +74,17 @@ class ByAttribute extends By {
   }
   return false;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ByAttribute.$clinit = () =>{};
   ByAttribute.$loadModules();
   By.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ByAttribute;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Character = goog.module.get('java.lang.Character$impl');
   j_l_String = goog.module.get('java.lang.String$impl');

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"NumberFormatRenderer.impl.java.js",
-"lineCount":86,
-"mappings":"A;;;;;;;;;;;;;MAKa,oB;;;;CAAA,W;EAAAA,Q;EAAAA;OACkB,0DADlBA,C;;;;;;;QAGF,S;EAAAC,+B;EAAAA,2C;EAAAA,qE;EAAAA,iB;;;;;;CAAA,wD;EACHC,0I;;;;;;;;QAGG,gD,CAAkCC,M;EAAlCF,+B;EAAAA,2C;EAAAA,kH;EAAAA,iB;;;;;;;CAAA,+F,CAAkCE,M;EAAlCD,4D;EACHA,yE;;;;;;;CAGU,0B,CAAcE,M;EACxBC,+I;;;;;;;;;CAZK,0B;EAAAA,iG;;;;;QAAA,O;EAAAC,uC;EAAAA,oC;EAAAA;",
+"lineCount":61,
+"mappings":"A;;;;;;;;;;;;;MAKa,oB;;CAAA,W;EAAAA,Q;EAAAA;OACkB,0DADlBA,C;;;;QAGF,S;EAAAC,+B;EAAAA,2C;EAAAA,qE;EAAAA,iB;;;;CAAA,wD;EACHC,0I;;;;QAGG,gD,qBAAkCC,M;EAAlCF,+B;EAAAA,2C;EAAAA,kH;EAAAA,iB;;;;CAAA,+F,qBAAkCE,M;EAAlCD,4D;EACHA,yE;;;CAGU,0B,wBAAcE,M;EACxBC,+I;;;;CAZK,0B;EAAAA,gG;;;QAAA,O;EAAAC,uC;EAAAA,oC;EAAAA;",
 "sources":["NumberFormatRenderer.java"],
 "names":["org.gwtproject.text.client.NumberFormatRenderer.<synthetic: ctor_js>","org.gwtproject.text.client.NumberFormatRenderer.<synthetic: ctor_create>","org.gwtproject.text.client.NumberFormatRenderer.<init>","format","object","org.gwtproject.text.client.NumberFormatRenderer.render","org.gwtproject.text.client.NumberFormatRenderer.<clinit>"]
 }

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"GridcellRole.impl.java.js",
-"lineCount":81,
-"mappings":"A;;;;;;;;;;;;;;MA4BiB,Y;;;;;;;CAOR,4D,CAAgCA,O;;;;;;;CAOhC,4D,CAAgCA,O;;;;;;;CAOhC,yD,CAA6BA,O;;;;;;CAM/B,+D,CAAmCA,O;;;;;;CAMnC,+D,CAAmCA,O;;;;;;CAMnC,4D,CAAgCA,O;;;;;;;CAMhC,qE,CAAgCA,O,EAAiBC,K;;;;;;;CAMjD,qE,CAAgCD,O,EAAiBC,K;;;;;;;CAMjD,mG,CAA6BD,O,EAAuBC,K;;;;QAzD1C,O;EAAAC,+B;EAAAA;",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;;;;MA4BiB,Y;;CAOR,4D,eAAgCA,O;;CAOhC,4D,eAAgCA,O;;CAOhC,yD,eAA6BA,O;;CAM/B,+D,eAAmCA,O;;CAMnC,+D,eAAmCA,O;;CAMnC,4D,eAAgCA,O;;CAMhC,qE,eAAgCA,O,iBAAiBC,K;;CAMjD,qE,eAAgCD,O,iBAAiBC,K;;CAMjD,mG,eAA6BD,O,uBAAuBC,K;;QAzD1C,O;EAAAC,+B;EAAAA;",
 "sources":["GridcellRole.java"],
 "names":["element","value","org.gwtproject.aria.client.GridcellRole.<clinit>"]
 }

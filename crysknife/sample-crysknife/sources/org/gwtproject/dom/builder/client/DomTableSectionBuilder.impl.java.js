@@ -16,107 +16,60 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {TableSectionBuilder}
   */
 class DomTableSectionBuilder extends DomElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @return {!DomTableSectionBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ /** @return {!DomTableSectionBuilder} */
+ static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   DomTableSectionBuilder.$clinit();
   let $instance = new DomTableSectionBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_client_DomTableSectionBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_client_DomTableSectionBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_client_DomTableSectionBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_client_DomElementBuilderBase__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
  }
- /**
-  * @override
-  * @param {?string} align
-  * @return {TableSectionBuilder}
-  * @public
-  */
- m_align__java_lang_String(align) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).align = align;
+ /** @override @return {TableSectionBuilder} */
+ m_align__java_lang_String(/** ?string */ align) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).align = align;
   return this;
  }
- /**
-  * @override
-  * @param {?string} ch
-  * @return {TableSectionBuilder}
-  * @public
-  */
- m_ch__java_lang_String(ch) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).ch = ch;
+ /** @override @return {TableSectionBuilder} */
+ m_ch__java_lang_String(/** ?string */ ch) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).ch = ch;
   return this;
  }
- /**
-  * @override
-  * @param {?string} chOff
-  * @return {TableSectionBuilder}
-  * @public
-  */
- m_chOff__java_lang_String(chOff) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).chOff = chOff;
+ /** @override @return {TableSectionBuilder} */
+ m_chOff__java_lang_String(/** ?string */ chOff) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).chOff = chOff;
   return this;
  }
- /**
-  * @override
-  * @param {SafeHtml} html
-  * @return {TableSectionBuilder}
-  * @public
-  */
- m_html__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ /** @override @return {TableSectionBuilder} */
+ m_html__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String(TableSectionBuilder.f_UNSUPPORTED_HTML__org_gwtproject_dom_builder_shared_TableSectionBuilder));
  }
- /**
-  * @override
-  * @param {?string} text
-  * @return {TableSectionBuilder}
-  * @public
-  */
- m_text__java_lang_String(text) {
+ /** @override @return {TableSectionBuilder} */
+ m_text__java_lang_String(/** ?string */ text) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String(TableSectionBuilder.f_UNSUPPORTED_HTML__org_gwtproject_dom_builder_shared_TableSectionBuilder));
  }
- /**
-  * @override
-  * @param {?string} vAlign
-  * @return {TableSectionBuilder}
-  * @public
-  */
- m_vAlign__java_lang_String(vAlign) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).VAlign = vAlign;
+ /** @override @return {TableSectionBuilder} */
+ m_vAlign__java_lang_String(/** ?string */ vAlign) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).VAlign = vAlign;
   return this;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomTableSectionBuilder.$clinit = () =>{};
   DomTableSectionBuilder.$loadModules();
   DomElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomTableSectionBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   UnsupportedOperationException = goog.module.get('java.lang.UnsupportedOperationException$impl');
   $Overlay = goog.module.get('org.gwtproject.dom.client.TableSectionElement.$Overlay$impl');

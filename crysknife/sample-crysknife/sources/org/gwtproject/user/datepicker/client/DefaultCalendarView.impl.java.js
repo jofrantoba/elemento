@@ -16,76 +16,48 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 
 class DefaultCalendarView extends CalendarView {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {CellGrid} */
+  /**@type {CellGrid}*/
   this.f_grid__org_gwtproject_user_datepicker_client_DefaultCalendarView_;
-  /** @public {Date} */
+  /**@type {Date}*/
   this.f_firstDisplayed__org_gwtproject_user_datepicker_client_DefaultCalendarView_;
-  /** @public {Date} */
+  /**@type {Date}*/
   this.f_lastDisplayed__org_gwtproject_user_datepicker_client_DefaultCalendarView_;
-  /** @public {DateCell} */
+  /**@type {DateCell}*/
   this.f_ariaSelectedCell__org_gwtproject_user_datepicker_client_DefaultCalendarView_;
  }
- /**
-  * @return {!DefaultCalendarView}
-  * @public
-  */
+ /** @return {!DefaultCalendarView} */
  static $create__() {
   DefaultCalendarView.$clinit();
   let $instance = new DefaultCalendarView();
   $instance.$ctor__org_gwtproject_user_datepicker_client_DefaultCalendarView__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_datepicker_client_DefaultCalendarView__() {
   this.$ctor__org_gwtproject_user_datepicker_client_CalendarView__();
   this.$init___$p_org_gwtproject_user_datepicker_client_DefaultCalendarView();
  }
- /**
-  * @override
-  * @param {?string} styleName
-  * @param {Date} date
-  * @public
-  */
- m_addStyleToDate__java_lang_String__java_util_Date(styleName, date) {
+ /** @override */
+ m_addStyleToDate__java_lang_String__java_util_Date(/** ?string */ styleName, /** Date */ date) {
   $Asserts.$assertWithMessage(this.m_getDatePicker__().m_isDateVisible__java_util_Date(date), "You tried to add style " + j_l_String.m_valueOf__java_lang_Object(styleName) + " to " + j_l_String.m_valueOf__java_lang_Object(date) + ". The calendar is currently showing " + j_l_String.m_valueOf__java_lang_Object(this.m_getFirstDate__()) + " to " + j_l_String.m_valueOf__java_lang_Object(this.m_getLastDate__()));
   this.m_getCell__java_util_Date_$p_org_gwtproject_user_datepicker_client_DefaultCalendarView(date).m_addStyleName__java_lang_String(styleName);
  }
- /**
-  * @override
-  * @return {Date}
-  * @public
-  */
+ /** @override @return {Date} */
  m_getFirstDate__() {
   return this.f_firstDisplayed__org_gwtproject_user_datepicker_client_DefaultCalendarView_;
  }
- /**
-  * @override
-  * @return {Date}
-  * @public
-  */
+ /** @override @return {Date} */
  m_getLastDate__() {
   return this.f_lastDisplayed__org_gwtproject_user_datepicker_client_DefaultCalendarView_;
  }
- /**
-  * @override
-  * @param {Date} d
-  * @return {boolean}
-  * @public
-  */
- m_isDateEnabled__java_util_Date(d) {
+ /** @override @return {boolean} */
+ m_isDateEnabled__java_util_Date(/** Date */ d) {
   return this.m_getCell__java_util_Date_$p_org_gwtproject_user_datepicker_client_DefaultCalendarView(d).m_isEnabled__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_refresh__() {
   this.f_firstDisplayed__org_gwtproject_user_datepicker_client_DefaultCalendarView_ = this.m_getModel__().m_getCurrentFirstDayOfFirstWeek__();
   if (this.f_firstDisplayed__org_gwtproject_user_datepicker_client_DefaultCalendarView_.m_getDate__() == 1) {
@@ -96,35 +68,22 @@ class DefaultCalendarView extends CalendarView {
    if (i != 0) {
     DefaultCalendarView.m_addDays__java_util_Date__int(this.f_lastDisplayed__org_gwtproject_user_datepicker_client_DefaultCalendarView_, 1);
    }
-   let cell = /**@type {DateCell} */ ($Casts.$to(this.f_grid__org_gwtproject_user_datepicker_client_DefaultCalendarView_.m_getCell__int(i), DateCell));
+   let cell = /**@type {DateCell}*/ ($Casts.$to(this.f_grid__org_gwtproject_user_datepicker_client_DefaultCalendarView_.m_getCell__int(i), DateCell));
    cell.m_update__java_util_Date_$pp_org_gwtproject_user_datepicker_client(this.f_lastDisplayed__org_gwtproject_user_datepicker_client_DefaultCalendarView_);
   }
   this.m_setAriaSelectedCell__java_util_Date(null);
  }
- /**
-  * @param {Date} date
-  * @param {number} days
-  * @public
-  */
- static m_addDays__java_util_Date__int(date, days) {
+ 
+ static m_addDays__java_util_Date__int(/** Date */ date, /** number */ days) {
   CalendarUtil.m_addDaysToDate__java_util_Date__int(date, days);
   CalendarUtil.m_resetTime__java_util_Date(date);
  }
- /**
-  * @override
-  * @param {?string} styleName
-  * @param {Date} date
-  * @public
-  */
- m_removeStyleFromDate__java_lang_String__java_util_Date(styleName, date) {
+ /** @override */
+ m_removeStyleFromDate__java_lang_String__java_util_Date(/** ?string */ styleName, /** Date */ date) {
   this.m_getCell__java_util_Date_$p_org_gwtproject_user_datepicker_client_DefaultCalendarView(date).m_removeStyleName__java_lang_String(styleName);
  }
- /**
-  * @override
-  * @param {Date} date
-  * @public
-  */
- m_setAriaSelectedCell__java_util_Date(date) {
+ /** @override */
+ m_setAriaSelectedCell__java_util_Date(/** Date */ date) {
   if (!$Equality.$same(this.f_ariaSelectedCell__org_gwtproject_user_datepicker_client_DefaultCalendarView_, null)) {
    this.f_ariaSelectedCell__org_gwtproject_user_datepicker_client_DefaultCalendarView_.m_setAriaSelected__boolean(false);
   }
@@ -134,19 +93,11 @@ class DefaultCalendarView extends CalendarView {
   }
   this.f_ariaSelectedCell__org_gwtproject_user_datepicker_client_DefaultCalendarView_ = newSelectedCell;
  }
- /**
-  * @override
-  * @param {boolean} enabled
-  * @param {Date} date
-  * @public
-  */
- m_setEnabledOnDate__boolean__java_util_Date(enabled, date) {
+ /** @override */
+ m_setEnabledOnDate__boolean__java_util_Date(/** boolean */ enabled, /** Date */ date) {
   this.m_getCell__java_util_Date_$p_org_gwtproject_user_datepicker_client_DefaultCalendarView(date).m_setEnabled__boolean(enabled);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_setup__() {
   let formatter = this.f_grid__org_gwtproject_user_datepicker_client_DefaultCalendarView_.m_getCellFormatter__();
   let weekendStartColumn = -1;
@@ -175,48 +126,34 @@ class DefaultCalendarView extends CalendarView {
   this.m_initWidget__org_gwtproject_user_client_ui_Widget(this.f_grid__org_gwtproject_user_datepicker_client_DefaultCalendarView_);
   this.f_grid__org_gwtproject_user_datepicker_client_DefaultCalendarView_.m_setStyleName__java_lang_String(this.m_css___$pp_org_gwtproject_user_datepicker_client().m_days__());
  }
- /**
-  * @param {Date} d
-  * @return {DateCell}
-  * @public
-  */
- m_getCell__java_util_Date_$p_org_gwtproject_user_datepicker_client_DefaultCalendarView(d) {
+ /** @return {DateCell} */
+ m_getCell__java_util_Date_$p_org_gwtproject_user_datepicker_client_DefaultCalendarView(/** Date */ d) {
   let index = CalendarUtil.m_getDaysBetween__java_util_Date__java_util_Date(this.f_firstDisplayed__org_gwtproject_user_datepicker_client_DefaultCalendarView_, d);
   if (index < 0 || this.f_grid__org_gwtproject_user_datepicker_client_DefaultCalendarView_.m_getNumCells__() <= index) {
    return null;
   }
-  let cell = /**@type {DateCell} */ ($Casts.$to(this.f_grid__org_gwtproject_user_datepicker_client_DefaultCalendarView_.m_getCell__int(index), DateCell));
-  if (/**@type {Date} */ ($Casts.$to(cell.m_getValue__(), Date)).m_getDate__() != d.m_getDate__()) {
+  let cell = /**@type {DateCell}*/ ($Casts.$to(this.f_grid__org_gwtproject_user_datepicker_client_DefaultCalendarView_.m_getCell__int(index), DateCell));
+  if (/**@type {Date}*/ ($Casts.$to(cell.m_getValue__(), Date)).m_getDate__() != d.m_getDate__()) {
    throw $Exceptions.toJs(IllegalStateException.$create__java_lang_String(j_l_String.m_valueOf__java_lang_Object(d) + " cannot be associated with cell " + j_l_String.m_valueOf__java_lang_Object(cell) + " as it has date " + j_l_String.m_valueOf__java_lang_Object(cell.m_getValue__())));
   }
   return cell;
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_datepicker_client_DefaultCalendarView() {
   this.f_grid__org_gwtproject_user_datepicker_client_DefaultCalendarView_ = CellGrid.$create__org_gwtproject_user_datepicker_client_DefaultCalendarView(this);
   this.f_lastDisplayed__org_gwtproject_user_datepicker_client_DefaultCalendarView_ = Date.$create__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DefaultCalendarView.$clinit = () =>{};
   DefaultCalendarView.$loadModules();
   CalendarView.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DefaultCalendarView;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IllegalStateException = goog.module.get('java.lang.IllegalStateException$impl');
   j_l_String = goog.module.get('java.lang.String$impl');

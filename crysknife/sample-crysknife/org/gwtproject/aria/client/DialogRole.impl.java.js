@@ -8,35 +8,22 @@ const WindowRole = goog.require('org.gwtproject.aria.client.WindowRole$impl');
  * @extends {WindowRole}
  */
 class DialogRole {
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DialogRole.$clinit = () =>{};
   DialogRole.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  WindowRole.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_aria_client_DialogRole = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  WindowRole.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_aria_client_DialogRole = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_aria_client_DialogRole;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

@@ -9,52 +9,27 @@ let Style = goog.forwardDeclare('org.gwtproject.user.cellview.client.AbstractCel
  * @interface
  */
 class Resources {
- /**
-  * @abstract
-  * @return {ImageResource}
-  * @public
-  */
+ /** @abstract @return {ImageResource} */
  m_sortAscending__() {}
- /**
-  * @abstract
-  * @return {ImageResource}
-  * @public
-  */
+ /** @abstract @return {ImageResource} */
  m_sortDescending__() {}
- /**
-  * @abstract
-  * @return {Style}
-  * @public
-  */
+ /** @abstract @return {Style} */
  m_style__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Resources.$clinit = () =>{};
   Resources.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_cellview_client_AbstractCellTable_Resources = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_cellview_client_AbstractCellTable_Resources = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_cellview_client_AbstractCellTable_Resources;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

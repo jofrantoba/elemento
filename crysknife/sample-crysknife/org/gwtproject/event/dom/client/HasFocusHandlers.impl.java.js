@@ -11,42 +11,24 @@ let HandlerRegistration = goog.forwardDeclare('org.gwtproject.event.shared.Handl
  * @extends {HasHandlers}
  */
 class HasFocusHandlers {
- /**
-  * @abstract
-  * @param {FocusHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addFocusHandler__org_gwtproject_event_dom_client_FocusHandler(handler) {}
- /**
-  * @public
-  */
+ /** @abstract @return {HandlerRegistration} */
+ m_addFocusHandler__org_gwtproject_event_dom_client_FocusHandler(/** FocusHandler */ handler) {}
+ 
  static $clinit() {
   HasFocusHandlers.$clinit = () =>{};
   HasFocusHandlers.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  HasHandlers.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_HasFocusHandlers = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  HasHandlers.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_HasFocusHandlers = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_HasFocusHandlers;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

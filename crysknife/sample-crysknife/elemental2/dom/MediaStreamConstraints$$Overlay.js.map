@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MediaStreamConstraints$$Overlay.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;;MAyBiB,+B;;;;;QAgDe,U;EAAAA,0C;EAC5BA,sG;;;;;;;QAaW,gG,WAA+BC,K;EAA/BC,0C;EACXA,+E;;;;;;;QAIW,mE,WAAiBD,K;EAAjBC,0C;EACXA,+E;;;;;;;QAOW,gG,WAA+BC,K;EAA/BC,0C;EACXA,+E;;;;;;;QAIW,mE,WAAiBD,K;EAAjBC,0C;EACXA,+E;;;;;QAjFa,O;EAAAC,kD;EAAAA;",
+"lineCount":40,
+"mappings":"A;;;;;;;;;;MAyBiB,+B;;QAgDe,U;EAAAA,0C;EAC5BA,qG;;;QAaW,gG,uEAA+BC,K;EAA/BC,0C;EACXA,8E;;;QAIW,mE,yDAAiBD,K;EAAjBC,0C;EACXA,8E;;;QAOW,gG,uEAA+BC,K;EAA/BC,0C;EACXA,8E;;;QAIW,mE,yDAAiBD,K;EAAjBC,0C;EACXA,8E;;;QAjFa,O;EAAAC,kD;EAAAA;",
 "sources":["MediaStreamConstraints.java"],
 "names":["elemental2.dom.MediaStreamConstraints$$Overlay.create","audio","elemental2.dom.MediaStreamConstraints$$Overlay.setAudio__$devirt","video","elemental2.dom.MediaStreamConstraints$$Overlay.setVideo__$devirt","elemental2.dom.MediaStreamConstraints$$Overlay.<clinit>"]
 }

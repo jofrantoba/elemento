@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SubmitButton.impl.java.js",
-"lineCount":171,
-"mappings":"A;;;;;;;;;;;;;;;;;MAiCa,Y;;;;CAAA,W;EAAAA,Q;;;;;;;QAYU,yC,CAAuCC,O;EAAvCC,uB;EAEnBA,8J;EAEAA,IAAaC,MAAbD,oE;EACAA,kI;EAGAA,sB;EACAA,8E;EAEAA,c;;;;;;;QAMK,S;EAAAE,uB;EAAAA,mC;EAAAA,gE;EAAAA,iB;;;;;;CAAA,mD;EACLC,6M;EACAA,0D;;;;;;;;QAQK,gD,CAAsBC,I;EAAtBF,uB;EAAAA,mC;EAAAA,2G;EAAAA,iB;;;;;;;CAAA,0F,CAAsBE,I;EAC3BD,8F;;;;;;;;QAQK,yB,CAAgCC,I;EAAhCF,uB;EAAAA,mC;EAAAA,oF;EAAAA,iB;;;;;;;CAAA,mE,CAAgCE,I;EACrCD,2D;EACAA,uC;;;;;;;;;QASK,8F,CAAsBC,I,EAAmBC,O;EAAzCH,uB;EAAAA,mC;EAAAA,kK;EAAAA,iB;;;;;;;;CAAA,wI,CAAsBE,I,EAAmBC,O;EAC9CF,qJ;;;;;;;;;QASK,uE,CAAgCC,I,EAAmBC,O;EAAnDH,uB;EAAAA,mC;EAAAA,2I;EAAAA,iB;;;;;;;;CAAA,iH,CAAgCE,I,EAAmBC,O;EACxDF,+E;EACAA,8E;;;;;;;;QASQ,0C,CAA+CJ,O;EAA/CG,uB;EAAAA,mC;EAAAA,wG;EAAAA,iB;;;;;;;CAAA,oF,CAA+CH,O;EACvDI,6F;EACAA,+P;;;;;QAlFS,O;EAAAG,+B;EAAAA,4B;EAAAA;",
+"lineCount":119,
+"mappings":"A;;;;;;;;;;;;;;;;;MAiCa,Y;;CAAA,W;EAAAA,Q;;;QAYU,yC,eAAuCC,O;EAAvCC,uB;EAEnBA,8J;EAEAA,IAAaC,MAAbD,oE;EACAA,kI;EAGAA,sB;EACAA,8E;EAEAA,c;;;;QAMK,S;EAAAE,uB;EAAAA,mC;EAAAA,gE;EAAAA,iB;;;;CAAA,mD;EACLC,6M;EACAA,0D;;;;QAQK,gD,iBAAsBC,I;EAAtBF,uB;EAAAA,mC;EAAAA,2G;EAAAA,iB;;;;CAAA,0F,iBAAsBE,I;EAC3BD,8F;;;;QAQK,yB,gBAAgCC,I;EAAhCF,uB;EAAAA,mC;EAAAA,oF;EAAAA,iB;;;;CAAA,mE,gBAAgCE,I;EACrCD,2D;EACAA,uC;;;;QASK,8F,iBAAsBC,I,sBAAmBC,O;EAAzCH,uB;EAAAA,mC;EAAAA,kK;EAAAA,iB;;;;CAAA,wI,iBAAsBE,I,sBAAmBC,O;EAC9CF,qJ;;;;QASK,uE,gBAAgCC,I,sBAAmBC,O;EAAnDH,uB;EAAAA,mC;EAAAA,2I;EAAAA,iB;;;;CAAA,iH,gBAAgCE,I,sBAAmBC,O;EACxDF,+E;EACAA,8E;;;;QASQ,0C,eAA+CJ,O;EAA/CG,uB;EAAAA,mC;EAAAA,wG;EAAAA,iB;;;;CAAA,oF,eAA+CH,O;EACvDI,6F;EACAA,8P;;;QAlFS,O;EAAAG,+B;EAAAA,4B;EAAAA;",
 "sources":["SubmitButton.java"],
 "names":["org.gwtproject.user.client.ui.SubmitButton.<synthetic: ctor_js>","element","org.gwtproject.user.client.ui.SubmitButton.wrap","button","org.gwtproject.user.client.ui.SubmitButton.<synthetic: ctor_create>","org.gwtproject.user.client.ui.SubmitButton.<init>","html","handler","org.gwtproject.user.client.ui.SubmitButton.<clinit>"]
 }

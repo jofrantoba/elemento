@@ -32,33 +32,26 @@ let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
  * @implements {HasScrolling}
   */
 class ScrollPanel extends SimplePanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_containerElem__org_gwtproject_user_client_ui_ScrollPanel_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_scrollableElem__org_gwtproject_user_client_ui_ScrollPanel_;
-  /** @public {TouchScroller} */
+  /**@type {TouchScroller}*/
   this.f_touchScroller__org_gwtproject_user_client_ui_ScrollPanel_;
  }
- /**
-  * Factory method corresponding to constructor 'ScrollPanel()'.
-  * @return {!ScrollPanel}
-  * @public
-  */
+ //Factory method corresponding to constructor 'ScrollPanel()'.
+ /** @return {!ScrollPanel} */
  static $create__() {
   ScrollPanel.$clinit();
   let $instance = new ScrollPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_ScrollPanel__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'ScrollPanel()'.
-  * @public
-  */
+ //Initialization from constructor 'ScrollPanel()'.
+ 
  $ctor__org_gwtproject_user_client_ui_ScrollPanel__() {
   this.$ctor__org_gwtproject_user_client_ui_SimplePanel__();
   this.f_scrollableElem__org_gwtproject_user_client_ui_ScrollPanel_ = this.m_getElement__();
@@ -66,216 +59,124 @@ class ScrollPanel extends SimplePanel {
   this.f_scrollableElem__org_gwtproject_user_client_ui_ScrollPanel_.appendChild(this.f_containerElem__org_gwtproject_user_client_ui_ScrollPanel_);
   this.m_initialize___$p_org_gwtproject_user_client_ui_ScrollPanel();
  }
- /**
-  * Factory method corresponding to constructor 'ScrollPanel(Widget)'.
-  * @param {Widget} child
-  * @return {!ScrollPanel}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_Widget(child) {
+ //Factory method corresponding to constructor 'ScrollPanel(Widget)'.
+ /** @return {!ScrollPanel} */
+ static $create__org_gwtproject_user_client_ui_Widget(/** Widget */ child) {
   ScrollPanel.$clinit();
   let $instance = new ScrollPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_ScrollPanel__org_gwtproject_user_client_ui_Widget(child);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ScrollPanel(Widget)'.
-  * @param {Widget} child
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ScrollPanel__org_gwtproject_user_client_ui_Widget(child) {
+ //Initialization from constructor 'ScrollPanel(Widget)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_ScrollPanel__org_gwtproject_user_client_ui_Widget(/** Widget */ child) {
   this.$ctor__org_gwtproject_user_client_ui_ScrollPanel__();
   this.m_setWidget__org_gwtproject_user_client_ui_Widget(child);
  }
- /**
-  * Factory method corresponding to constructor 'ScrollPanel(Element, Element, Element)'.
-  * @param {Object} root
-  * @param {Object} scrollable
-  * @param {Object} container
-  * @return {!ScrollPanel}
-  * @public
-  */
- static $create__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(root, scrollable, container) {
+ //Factory method corresponding to constructor 'ScrollPanel(Element, Element, Element)'.
+ /** @return {!ScrollPanel} */
+ static $create__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(/** Object */ root, /** Object */ scrollable, /** Object */ container) {
   ScrollPanel.$clinit();
   let $instance = new ScrollPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_ScrollPanel__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(root, scrollable, container);
   return $instance;
  }
- /**
-  * Initialization from constructor 'ScrollPanel(Element, Element, Element)'.
-  * @param {Object} root
-  * @param {Object} scrollable
-  * @param {Object} container
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ScrollPanel__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(root, scrollable, container) {
+ //Initialization from constructor 'ScrollPanel(Element, Element, Element)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_ScrollPanel__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(/** Object */ root, /** Object */ scrollable, /** Object */ container) {
   this.$ctor__org_gwtproject_user_client_ui_SimplePanel__org_gwtproject_dom_client_Element(root);
   this.f_scrollableElem__org_gwtproject_user_client_ui_ScrollPanel_ = scrollable;
   this.f_containerElem__org_gwtproject_user_client_ui_ScrollPanel_ = container;
   this.m_initialize___$p_org_gwtproject_user_client_ui_ScrollPanel();
  }
- /**
-  * @override
-  * @param {ScrollHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addScrollHandler__org_gwtproject_event_dom_client_ScrollHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addScrollHandler__org_gwtproject_event_dom_client_ScrollHandler(/** ScrollHandler */ handler) {
   Event.m_sinkEvents__org_gwtproject_dom_client_Element__int(this.m_getScrollableElement__(), Event.f_ONSCROLL__org_gwtproject_user_client_Event);
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, ScrollEvent.m_getType__());
  }
- /**
-  * @param {UIObject} item
-  * @public
-  */
- m_ensureVisible__org_gwtproject_user_client_ui_UIObject(item) {
+ 
+ m_ensureVisible__org_gwtproject_user_client_ui_UIObject(/** UIObject */ item) {
   let scroll = this.m_getScrollableElement__();
   let element = item.m_getElement__();
   this.m_ensureVisibleImpl__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_ScrollPanel(scroll, element);
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getHorizontalScrollPosition__() {
   return Element_$Overlay.m_getScrollLeft__$devirt__org_gwtproject_dom_client_Element(this.m_getScrollableElement__());
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getMaximumHorizontalScrollPosition__() {
   return ScrollImpl.m_get__().m_getMaximumHorizontalScrollPosition__org_gwtproject_dom_client_Element(this.m_getScrollableElement__());
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getMaximumVerticalScrollPosition__() {
   return Element_$Overlay.m_getScrollHeight__$devirt__org_gwtproject_dom_client_Element(this.m_getScrollableElement__()) - Element_$Overlay.m_getClientHeight__$devirt__org_gwtproject_dom_client_Element(this.m_getScrollableElement__());
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getMinimumHorizontalScrollPosition__() {
   return ScrollImpl.m_get__().m_getMinimumHorizontalScrollPosition__org_gwtproject_dom_client_Element(this.m_getScrollableElement__());
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getMinimumVerticalScrollPosition__() {
   return 0;
  }
- /**
-  * @return {number}
-  * @public
-  * @deprecated
-  */
+ /** @return {number} @deprecated */
  m_getScrollPosition__() {
   return Element_$Overlay.m_getScrollTop__$devirt__org_gwtproject_dom_client_Element(this.m_getScrollableElement__());
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getVerticalScrollPosition__() {
   return this.m_getScrollPosition__();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isTouchScrollingDisabled__() {
   return $Equality.$same(this.f_touchScroller__org_gwtproject_user_client_ui_ScrollPanel_, null);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onResize__() {
   let child = this.m_getWidget__();
   if ((!$Equality.$same(child, null)) && RequiresResize.$isInstance(child)) {
-   /**@type {RequiresResize} */ ($Casts.$to(child, RequiresResize)).m_onResize__();
+   /**@type {RequiresResize}*/ ($Casts.$to(child, RequiresResize)).m_onResize__();
   }
  }
- /**
-  * @public
-  */
+ 
  m_scrollToBottom__() {
   this.m_setVerticalScrollPosition__int(this.m_getMaximumVerticalScrollPosition__());
  }
- /**
-  * @public
-  */
+ 
  m_scrollToLeft__() {
   this.m_setHorizontalScrollPosition__int(this.m_getMinimumHorizontalScrollPosition__());
  }
- /**
-  * @public
-  */
+ 
  m_scrollToRight__() {
   this.m_setHorizontalScrollPosition__int(this.m_getMaximumHorizontalScrollPosition__());
  }
- /**
-  * @public
-  */
+ 
  m_scrollToTop__() {
   this.m_setVerticalScrollPosition__int(this.m_getMinimumVerticalScrollPosition__());
  }
- /**
-  * @param {boolean} alwaysShow
-  * @public
-  */
- m_setAlwaysShowScrollBars__boolean(alwaysShow) {
+ 
+ m_setAlwaysShowScrollBars__boolean(/** boolean */ alwaysShow) {
   Style_$Overlay.m_setOverflow__$devirt__org_gwtproject_dom_client_Style__org_gwtproject_dom_style_shared_Overflow(this.m_getScrollableElement__().style, alwaysShow ? Overflow.f_SCROLL__org_gwtproject_dom_style_shared_Overflow : Overflow.f_AUTO__org_gwtproject_dom_style_shared_Overflow);
  }
- /**
-  * @override
-  * @param {?string} height
-  * @public
-  */
- m_setHeight__java_lang_String(height) {
+ /** @override */
+ m_setHeight__java_lang_String(/** ?string */ height) {
   super.m_setHeight__java_lang_String(height);
  }
- /**
-  * @override
-  * @param {number} position
-  * @public
-  */
- m_setHorizontalScrollPosition__int(position) {
+ /** @override */
+ m_setHorizontalScrollPosition__int(/** number */ position) {
   Element_$Overlay.m_setScrollLeft__$devirt__org_gwtproject_dom_client_Element__int(this.m_getScrollableElement__(), position);
  }
- /**
-  * @param {number} position
-  * @public
-  * @deprecated
-  */
- m_setScrollPosition__int(position) {
+ /** @deprecated */
+ m_setScrollPosition__int(/** number */ position) {
   this.m_getScrollableElement__().scrollTop = position;
  }
- /**
-  * @override
-  * @param {?string} width
-  * @param {?string} height
-  * @public
-  */
- m_setSize__java_lang_String__java_lang_String(width, height) {
+ /** @override */
+ m_setSize__java_lang_String__java_lang_String(/** ?string */ width, /** ?string */ height) {
   super.m_setSize__java_lang_String__java_lang_String(width, height);
  }
- /**
-  * @param {boolean} isDisabled
-  * @return {boolean}
-  * @public
-  */
- m_setTouchScrollingDisabled__boolean(isDisabled) {
+ /** @return {boolean} */
+ m_setTouchScrollingDisabled__boolean(/** boolean */ isDisabled) {
   if (isDisabled == this.m_isTouchScrollingDisabled__()) {
    return isDisabled;
   }
@@ -287,59 +188,34 @@ class ScrollPanel extends SimplePanel {
   }
   return this.m_isTouchScrollingDisabled__();
  }
- /**
-  * @override
-  * @param {number} position
-  * @public
-  */
- m_setVerticalScrollPosition__int(position) {
+ /** @override */
+ m_setVerticalScrollPosition__int(/** number */ position) {
   this.m_setScrollPosition__int(position);
  }
- /**
-  * @override
-  * @param {?string} width
-  * @public
-  */
- m_setWidth__java_lang_String(width) {
+ /** @override */
+ m_setWidth__java_lang_String(/** ?string */ width) {
   super.m_setWidth__java_lang_String(width);
  }
- /**
-  * @override
-  * @return {Object}
-  * @public
-  */
+ /** @override @return {Object} */
  m_getContainerElement__() {
   return this.f_containerElem__org_gwtproject_user_client_ui_ScrollPanel_;
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getScrollableElement__() {
   return this.f_scrollableElem__org_gwtproject_user_client_ui_ScrollPanel_;
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onAttach__() {
   super.m_onAttach__();
   Event.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(this.m_getScrollableElement__(), this);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onDetach__() {
   Event.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(this.m_getScrollableElement__(), null);
   super.m_onDetach__();
  }
- /**
-  * @param {Object} scroll
-  * @param {Object} e
-  * @public
-  */
- m_ensureVisibleImpl__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_ScrollPanel(scroll, e) {
+ 
+ m_ensureVisibleImpl__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_ScrollPanel(/** Object */ scroll, /** Object */ e) {
   if ($Equality.$same(e, null)) {
    return;
   }
@@ -351,9 +227,7 @@ class ScrollPanel extends SimplePanel {
   }
   scroll.scrollTop = realOffset - $Primitives.$coerceDivision(Element_$Overlay.m_getOffsetHeight__$devirt__org_gwtproject_dom_client_Element(scroll) / 2);
  }
- /**
-  * @public
-  */
+ 
  m_initialize___$p_org_gwtproject_user_client_ui_ScrollPanel() {
   this.m_setAlwaysShowScrollBars__boolean(false);
   Style_$Overlay.m_setPosition__$devirt__org_gwtproject_dom_client_Style__org_gwtproject_dom_style_shared_Position(this.f_scrollableElem__org_gwtproject_user_client_ui_ScrollPanel_.style, Position.f_RELATIVE__org_gwtproject_dom_style_shared_Position);
@@ -363,43 +237,27 @@ class ScrollPanel extends SimplePanel {
   this.m_setTouchScrollingDisabled__boolean(false);
   ScrollImpl.m_get__().m_initialize__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(this.f_scrollableElem__org_gwtproject_user_client_ui_ScrollPanel_, this.f_containerElem__org_gwtproject_user_client_ui_ScrollPanel_);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ScrollPanel.$clinit = () =>{};
   ScrollPanel.$loadModules();
   SimplePanel.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ScrollPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

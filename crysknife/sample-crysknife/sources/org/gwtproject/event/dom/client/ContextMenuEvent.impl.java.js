@@ -12,80 +12,51 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {DomEvent<ContextMenuHandler>}
   */
 class ContextMenuEvent extends DomEvent {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!ContextMenuEvent}
-  * @public
-  */
+ /** @return {!ContextMenuEvent} */
  static $create__() {
   ContextMenuEvent.$clinit();
   let $instance = new ContextMenuEvent();
   $instance.$ctor__org_gwtproject_event_dom_client_ContextMenuEvent__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_dom_client_ContextMenuEvent__() {
   this.$ctor__org_gwtproject_event_dom_client_DomEvent__();
  }
- /**
-  * @return {Type<ContextMenuHandler>}
-  * @public
-  */
+ /** @return {Type<ContextMenuHandler>} */
  static m_getType__() {
   ContextMenuEvent.$clinit();
   return ContextMenuEvent.f_TYPE__org_gwtproject_event_dom_client_ContextMenuEvent_;
  }
- /**
-  * @override
-  * @return {Type<ContextMenuHandler>}
-  * @public
-  */
+ /** @override @return {Type<ContextMenuHandler>} */
  m_getAssociatedType__() {
   return ContextMenuEvent.f_TYPE__org_gwtproject_event_dom_client_ContextMenuEvent_;
  }
- /**
-  * @param {ContextMenuHandler} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_event_dom_client_ContextMenuHandler(handler) {
+ 
+ m_dispatch__org_gwtproject_event_dom_client_ContextMenuHandler(/** ContextMenuHandler */ handler) {
   handler.m_onContextMenu__org_gwtproject_event_dom_client_ContextMenuEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_event_dom_client_ContextMenuHandler(/**@type {ContextMenuHandler} */ ($Casts.$to(arg0, ContextMenuHandler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_event_dom_client_ContextMenuHandler(/**@type {ContextMenuHandler}*/ ($Casts.$to(arg0, ContextMenuHandler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   ContextMenuEvent.$clinit = () =>{};
   ContextMenuEvent.$loadModules();
   DomEvent.$clinit();
-  ContextMenuEvent.f_TYPE__org_gwtproject_event_dom_client_ContextMenuEvent_ = /**@type {!Type<ContextMenuHandler>} */ (Type.$create__java_lang_String__org_gwtproject_event_dom_client_DomEvent(BrowserEvents.f_CONTEXTMENU__org_gwtproject_dom_client_BrowserEvents, ContextMenuEvent.$create__()));
+  ContextMenuEvent.f_TYPE__org_gwtproject_event_dom_client_ContextMenuEvent_ = /**@type {!Type<ContextMenuHandler>}*/ (Type.$create__java_lang_String__org_gwtproject_event_dom_client_DomEvent(BrowserEvents.f_CONTEXTMENU__org_gwtproject_dom_client_BrowserEvents, ContextMenuEvent.$create__()));
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof ContextMenuEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   BrowserEvents = goog.module.get('org.gwtproject.dom.client.BrowserEvents$impl');
   ContextMenuHandler = goog.module.get('org.gwtproject.event.dom.client.ContextMenuHandler$impl');
@@ -96,7 +67,7 @@ class ContextMenuEvent extends DomEvent {
 }
 $Util.$setClassMetadata(ContextMenuEvent, 'org.gwtproject.event.dom.client.ContextMenuEvent');
 
-/** @public {Type<ContextMenuHandler>} */
+/**@type {Type<ContextMenuHandler>}*/
 ContextMenuEvent.f_TYPE__org_gwtproject_event_dom_client_ContextMenuEvent_;
 
 exports = ContextMenuEvent; 

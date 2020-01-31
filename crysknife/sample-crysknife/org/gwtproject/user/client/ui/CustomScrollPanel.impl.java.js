@@ -43,90 +43,73 @@ let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 
 class CustomScrollPanel extends ScrollPanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_alwaysShowScrollbars__org_gwtproject_user_client_ui_CustomScrollPanel_ = false;
-  /** @public {Impl} */
+  /**@type {Impl}*/
   this.f_containerResizeImpl__org_gwtproject_user_client_ui_CustomScrollPanel_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_cornerElem__org_gwtproject_user_client_ui_CustomScrollPanel_;
-  /** @public {Layer} */
+  /**@type {Layer}*/
   this.f_cornerLayer__org_gwtproject_user_client_ui_CustomScrollPanel_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_ignoreContentUntil__org_gwtproject_user_client_ui_CustomScrollPanel_ = 0.0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_ignoreScrollbarsUntil__org_gwtproject_user_client_ui_CustomScrollPanel_ = 0.0;
-  /** @public {Layout} */
+  /**@type {Layout}*/
   this.f_layout__org_gwtproject_user_client_ui_CustomScrollPanel_;
-  /** @public {Layer} */
+  /**@type {Layer}*/
   this.f_scrollableLayer__org_gwtproject_user_client_ui_CustomScrollPanel_;
-  /** @public {HorizontalScrollbar} */
+  /**@type {HorizontalScrollbar}*/
   this.f_hScrollbar__org_gwtproject_user_client_ui_CustomScrollPanel_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_hScrollbarHeight__org_gwtproject_user_client_ui_CustomScrollPanel_ = 0;
-  /** @public {HandlerRegistration} */
+  /**@type {HandlerRegistration}*/
   this.f_hScrollbarHandler__org_gwtproject_user_client_ui_CustomScrollPanel_;
-  /** @public {Layer} */
+  /**@type {Layer}*/
   this.f_hScrollbarLayer__org_gwtproject_user_client_ui_CustomScrollPanel_;
-  /** @public {VerticalScrollbar} */
+  /**@type {VerticalScrollbar}*/
   this.f_vScrollbar__org_gwtproject_user_client_ui_CustomScrollPanel_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_vScrollbarWidth__org_gwtproject_user_client_ui_CustomScrollPanel_ = 0;
-  /** @public {HandlerRegistration} */
+  /**@type {HandlerRegistration}*/
   this.f_vScrollbarHandler__org_gwtproject_user_client_ui_CustomScrollPanel_;
-  /** @public {Layer} */
+  /**@type {Layer}*/
   this.f_vScrollbarLayer__org_gwtproject_user_client_ui_CustomScrollPanel_;
  }
- /**
-  * @return {Resources}
-  * @public
-  */
+ /** @return {Resources} */
  static m_getDefaultResources__() {
   if ($Equality.$same(CustomScrollPanel.f_DEFAULT_RESOURCES__org_gwtproject_user_client_ui_CustomScrollPanel_, null)) {
    CustomScrollPanel.f_DEFAULT_RESOURCES__org_gwtproject_user_client_ui_CustomScrollPanel_ = CustomScrollPanel__ResourcesImpl.$create__();
   }
   return CustomScrollPanel.f_DEFAULT_RESOURCES__org_gwtproject_user_client_ui_CustomScrollPanel_;
  }
- /**
-  * Factory method corresponding to constructor 'CustomScrollPanel()'.
-  * @return {!CustomScrollPanel}
-  * @public
-  */
+ //Factory method corresponding to constructor 'CustomScrollPanel()'.
+ /** @return {!CustomScrollPanel} */
  static $create__() {
   CustomScrollPanel.$clinit();
   let $instance = new CustomScrollPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_CustomScrollPanel__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'CustomScrollPanel()'.
-  * @public
-  */
+ //Initialization from constructor 'CustomScrollPanel()'.
+ 
  $ctor__org_gwtproject_user_client_ui_CustomScrollPanel__() {
   this.$ctor__org_gwtproject_user_client_ui_CustomScrollPanel__org_gwtproject_user_client_ui_CustomScrollPanel_Resources(CustomScrollPanel.m_getDefaultResources__());
  }
- /**
-  * Factory method corresponding to constructor 'CustomScrollPanel(Resources)'.
-  * @param {Resources} resources
-  * @return {!CustomScrollPanel}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_CustomScrollPanel_Resources(resources) {
+ //Factory method corresponding to constructor 'CustomScrollPanel(Resources)'.
+ /** @return {!CustomScrollPanel} */
+ static $create__org_gwtproject_user_client_ui_CustomScrollPanel_Resources(/** Resources */ resources) {
   CustomScrollPanel.$clinit();
   let $instance = new CustomScrollPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_CustomScrollPanel__org_gwtproject_user_client_ui_CustomScrollPanel_Resources(resources);
   return $instance;
  }
- /**
-  * Initialization from constructor 'CustomScrollPanel(Resources)'.
-  * @param {Resources} resources
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_CustomScrollPanel__org_gwtproject_user_client_ui_CustomScrollPanel_Resources(resources) {
+ //Initialization from constructor 'CustomScrollPanel(Resources)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_CustomScrollPanel__org_gwtproject_user_client_ui_CustomScrollPanel_Resources(/** Resources */ resources) {
   this.$ctor__org_gwtproject_user_client_ui_ScrollPanel__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(DOM.m_createDiv__(), DOM.m_createDiv__(), DOM.m_createDiv__());
   this.$init___$p_org_gwtproject_user_client_ui_CustomScrollPanel();
   let style = resources.m_customScrollPanelStyle__();
@@ -154,47 +137,30 @@ class CustomScrollPanel extends ScrollPanel {
   Event.m_sinkEvents__org_gwtproject_dom_client_Element__int(this.m_getElement__(), Event.f_ONSCROLL__org_gwtproject_user_client_Event);
   Event.m_sinkEvents__org_gwtproject_dom_client_Element__int(this.m_getScrollableElement__(), Event.f_ONSCROLL__org_gwtproject_user_client_Event);
  }
- /**
-  * Factory method corresponding to constructor 'CustomScrollPanel(Widget)'.
-  * @param {Widget} child
-  * @return {!CustomScrollPanel}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_Widget(child) {
+ //Factory method corresponding to constructor 'CustomScrollPanel(Widget)'.
+ /** @return {!CustomScrollPanel} */
+ static $create__org_gwtproject_user_client_ui_Widget(/** Widget */ child) {
   CustomScrollPanel.$clinit();
   let $instance = new CustomScrollPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_CustomScrollPanel__org_gwtproject_user_client_ui_Widget(child);
   return $instance;
  }
- /**
-  * Initialization from constructor 'CustomScrollPanel(Widget)'.
-  * @param {Widget} child
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_CustomScrollPanel__org_gwtproject_user_client_ui_Widget(child) {
+ //Initialization from constructor 'CustomScrollPanel(Widget)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_CustomScrollPanel__org_gwtproject_user_client_ui_Widget(/** Widget */ child) {
   this.$ctor__org_gwtproject_user_client_ui_CustomScrollPanel__org_gwtproject_user_client_ui_CustomScrollPanel_Resources(CustomScrollPanel.m_getDefaultResources__());
   this.m_setWidget__org_gwtproject_user_client_ui_Widget(child);
  }
- /**
-  * @return {HorizontalScrollbar}
-  * @public
-  */
+ /** @return {HorizontalScrollbar} */
  m_getHorizontalScrollbar__() {
   return this.f_hScrollbar__org_gwtproject_user_client_ui_CustomScrollPanel_;
  }
- /**
-  * @return {VerticalScrollbar}
-  * @public
-  */
+ /** @return {VerticalScrollbar} */
  m_getVerticalScrollbar__() {
   return this.f_vScrollbar__org_gwtproject_user_client_ui_CustomScrollPanel_;
  }
- /**
-  * @override
-  * @param {Event} event
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_user_client_Event(event) {
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_user_client_Event(/** Event */ event) {
   if (Event.f_ONSCROLL__org_gwtproject_user_client_Event == DOM.m_eventGetType__org_gwtproject_user_client_Event(event)) {
    let curTime = Duration.m_currentTimeMillis__();
    if (curTime > this.f_ignoreContentUntil__org_gwtproject_user_client_ui_CustomScrollPanel_) {
@@ -204,21 +170,13 @@ class CustomScrollPanel extends ScrollPanel {
   }
   super.m_onBrowserEvent__org_gwtproject_user_client_Event(event);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onResize__() {
   this.m_maybeUpdateScrollbars___$p_org_gwtproject_user_client_ui_CustomScrollPanel();
   super.m_onResize__();
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   if (!$Equality.$same(w.m_getParent__(), this)) {
    return false;
   }
@@ -250,39 +208,27 @@ class CustomScrollPanel extends ScrollPanel {
   this.m_maybeUpdateScrollbars___$p_org_gwtproject_user_client_ui_CustomScrollPanel();
   return true;
  }
- /**
-  * @public
-  */
+ 
  m_removeHorizontalScrollbar__() {
   if (!$Equality.$same(this.f_hScrollbar__org_gwtproject_user_client_ui_CustomScrollPanel_, null)) {
    this.m_remove__org_gwtproject_user_client_ui_IsWidget(this.f_hScrollbar__org_gwtproject_user_client_ui_CustomScrollPanel_);
   }
  }
- /**
-  * @public
-  */
+ 
  m_removeVerticalScrollbar__() {
   if (!$Equality.$same(this.f_vScrollbar__org_gwtproject_user_client_ui_CustomScrollPanel_, null)) {
    this.m_remove__org_gwtproject_user_client_ui_IsWidget(this.f_vScrollbar__org_gwtproject_user_client_ui_CustomScrollPanel_);
   }
  }
- /**
-  * @override
-  * @param {boolean} alwaysShow
-  * @public
-  */
- m_setAlwaysShowScrollBars__boolean(alwaysShow) {
+ /** @override */
+ m_setAlwaysShowScrollBars__boolean(/** boolean */ alwaysShow) {
   if (this.f_alwaysShowScrollbars__org_gwtproject_user_client_ui_CustomScrollPanel_ != alwaysShow) {
    this.f_alwaysShowScrollbars__org_gwtproject_user_client_ui_CustomScrollPanel_ = alwaysShow;
    this.m_maybeUpdateScrollbars___$p_org_gwtproject_user_client_ui_CustomScrollPanel();
   }
  }
- /**
-  * @param {HorizontalScrollbar} scrollbar
-  * @param {number} height
-  * @public
-  */
- m_setHorizontalScrollbar__org_gwtproject_user_client_ui_HorizontalScrollbar__int(scrollbar, height) {
+ 
+ m_setHorizontalScrollbar__org_gwtproject_user_client_ui_HorizontalScrollbar__int(/** HorizontalScrollbar */ scrollbar, /** number */ height) {
   this.f_hScrollbarLayer__org_gwtproject_user_client_ui_CustomScrollPanel_ = this.m_add__org_gwtproject_user_client_ui_IsWidget__org_gwtproject_user_client_ui_IsWidget__org_gwtproject_layout_client_Layout_Layer_$p_org_gwtproject_user_client_ui_CustomScrollPanel(scrollbar, this.f_hScrollbar__org_gwtproject_user_client_ui_CustomScrollPanel_, this.f_hScrollbarLayer__org_gwtproject_user_client_ui_CustomScrollPanel_);
   this.f_hScrollbar__org_gwtproject_user_client_ui_CustomScrollPanel_ = scrollbar;
   this.f_hScrollbarHeight__org_gwtproject_user_client_ui_CustomScrollPanel_ = height;
@@ -291,12 +237,8 @@ class CustomScrollPanel extends ScrollPanel {
   }
   this.m_maybeUpdateScrollbars___$p_org_gwtproject_user_client_ui_CustomScrollPanel();
  }
- /**
-  * @param {VerticalScrollbar} scrollbar
-  * @param {number} width
-  * @public
-  */
- m_setVerticalScrollbar__org_gwtproject_user_client_ui_VerticalScrollbar__int(scrollbar, width) {
+ 
+ m_setVerticalScrollbar__org_gwtproject_user_client_ui_VerticalScrollbar__int(/** VerticalScrollbar */ scrollbar, /** number */ width) {
   this.f_vScrollbarLayer__org_gwtproject_user_client_ui_CustomScrollPanel_ = this.m_add__org_gwtproject_user_client_ui_IsWidget__org_gwtproject_user_client_ui_IsWidget__org_gwtproject_layout_client_Layout_Layer_$p_org_gwtproject_user_client_ui_CustomScrollPanel(scrollbar, this.f_vScrollbar__org_gwtproject_user_client_ui_CustomScrollPanel_, this.f_vScrollbarLayer__org_gwtproject_user_client_ui_CustomScrollPanel_);
   this.f_vScrollbar__org_gwtproject_user_client_ui_CustomScrollPanel_ = scrollbar;
   this.f_vScrollbarWidth__org_gwtproject_user_client_ui_CustomScrollPanel_ = width;
@@ -305,66 +247,41 @@ class CustomScrollPanel extends ScrollPanel {
   }
   this.m_maybeUpdateScrollbars___$p_org_gwtproject_user_client_ui_CustomScrollPanel();
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @public
-  */
- m_setWidget__org_gwtproject_user_client_ui_Widget(w) {
+ /** @override */
+ m_setWidget__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
   if ($Equality.$same(w, this.m_getWidget__())) {
    return;
   }
   super.m_setWidget__org_gwtproject_user_client_ui_Widget(w);
   this.m_maybeUpdateScrollbars___$p_org_gwtproject_user_client_ui_CustomScrollPanel();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_doAttachChildren__() {
-  AttachDetachException.m_tryCommand__org_gwtproject_user_client_ui_AttachDetachException_Command__arrayOf_org_gwtproject_user_client_ui_IsWidget(AttachDetachException.f_attachCommand__org_gwtproject_user_client_ui_AttachDetachException, /**@type {!Array<IsWidget>} */ ($Arrays.$init([this.m_getWidget__(), this.f_hScrollbar__org_gwtproject_user_client_ui_CustomScrollPanel_, this.f_vScrollbar__org_gwtproject_user_client_ui_CustomScrollPanel_], IsWidget)));
+  AttachDetachException.m_tryCommand__org_gwtproject_user_client_ui_AttachDetachException_Command__arrayOf_org_gwtproject_user_client_ui_IsWidget(AttachDetachException.f_attachCommand__org_gwtproject_user_client_ui_AttachDetachException, /**@type {!Array<IsWidget>}*/ ($Arrays.$init([this.m_getWidget__(), this.f_hScrollbar__org_gwtproject_user_client_ui_CustomScrollPanel_, this.f_vScrollbar__org_gwtproject_user_client_ui_CustomScrollPanel_], IsWidget)));
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_doDetachChildren__() {
-  AttachDetachException.m_tryCommand__org_gwtproject_user_client_ui_AttachDetachException_Command__arrayOf_org_gwtproject_user_client_ui_IsWidget(AttachDetachException.f_detachCommand__org_gwtproject_user_client_ui_AttachDetachException, /**@type {!Array<IsWidget>} */ ($Arrays.$init([this.m_getWidget__(), this.f_hScrollbar__org_gwtproject_user_client_ui_CustomScrollPanel_, this.f_vScrollbar__org_gwtproject_user_client_ui_CustomScrollPanel_], IsWidget)));
+  AttachDetachException.m_tryCommand__org_gwtproject_user_client_ui_AttachDetachException_Command__arrayOf_org_gwtproject_user_client_ui_IsWidget(AttachDetachException.f_detachCommand__org_gwtproject_user_client_ui_AttachDetachException, /**@type {!Array<IsWidget>}*/ ($Arrays.$init([this.m_getWidget__(), this.f_hScrollbar__org_gwtproject_user_client_ui_CustomScrollPanel_, this.f_vScrollbar__org_gwtproject_user_client_ui_CustomScrollPanel_], IsWidget)));
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onAttach__() {
   super.m_onAttach__();
   this.f_containerResizeImpl__org_gwtproject_user_client_ui_CustomScrollPanel_.m_onAttach__();
   this.f_layout__org_gwtproject_user_client_ui_CustomScrollPanel_.m_onAttach__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onDetach__() {
   super.m_onDetach__();
   this.f_containerResizeImpl__org_gwtproject_user_client_ui_CustomScrollPanel_.m_onDetach__();
   this.f_layout__org_gwtproject_user_client_ui_CustomScrollPanel_.m_onDetach__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onLoad__() {
   this.m_hideNativeScrollbars___$p_org_gwtproject_user_client_ui_CustomScrollPanel();
   Scheduler.m_get__().m_scheduleDeferred__org_gwtproject_core_client_Scheduler_ScheduledCommand($3.$create__org_gwtproject_user_client_ui_CustomScrollPanel(this));
  }
- /**
-  * @param {IsWidget} w
-  * @param {IsWidget} toReplace
-  * @param {Layer} layer
-  * @return {Layer}
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_IsWidget__org_gwtproject_user_client_ui_IsWidget__org_gwtproject_layout_client_Layout_Layer_$p_org_gwtproject_user_client_ui_CustomScrollPanel(w, toReplace, layer) {
+ /** @return {Layer} */
+ m_add__org_gwtproject_user_client_ui_IsWidget__org_gwtproject_user_client_ui_IsWidget__org_gwtproject_layout_client_Layout_Layer_$p_org_gwtproject_user_client_ui_CustomScrollPanel(/** IsWidget */ w, /** IsWidget */ toReplace, /** Layer */ layer) {
   if ($Equality.$same(w, toReplace)) {
    return layer;
   }
@@ -381,9 +298,7 @@ class CustomScrollPanel extends ScrollPanel {
   }
   return toRet;
  }
- /**
-  * @public
-  */
+ 
  m_hideNativeScrollbars___$p_org_gwtproject_user_client_ui_CustomScrollPanel() {
   let barWidth = AbstractNativeScrollbar.m_getNativeScrollbarWidth__();
   let barHeight = AbstractNativeScrollbar.m_getNativeScrollbarHeight__();
@@ -395,9 +310,7 @@ class CustomScrollPanel extends ScrollPanel {
   }
   this.f_layout__org_gwtproject_user_client_ui_CustomScrollPanel_.m_layout__();
  }
- /**
-  * @public
-  */
+ 
  m_maybeUpdateScrollbarPositions___$p_org_gwtproject_user_client_ui_CustomScrollPanel() {
   if (!this.m_isAttached__()) {
    return;
@@ -421,9 +334,7 @@ class CustomScrollPanel extends ScrollPanel {
    this.m_getElement__().scrollTop = 0;
   }
  }
- /**
-  * @public
-  */
+ 
  m_maybeUpdateScrollbars___$p_org_gwtproject_user_client_ui_CustomScrollPanel() {
   if (!this.m_isAttached__()) {
    return;
@@ -482,66 +393,42 @@ class CustomScrollPanel extends ScrollPanel {
   this.f_layout__org_gwtproject_user_client_ui_CustomScrollPanel_.m_layout__();
   this.m_maybeUpdateScrollbarPositions___$p_org_gwtproject_user_client_ui_CustomScrollPanel();
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_CustomScrollPanel() {
   this.f_containerResizeImpl__org_gwtproject_user_client_ui_CustomScrollPanel_ = ImplStandard.$create__();
   this.f_ignoreContentUntil__org_gwtproject_user_client_ui_CustomScrollPanel_ = 0.0;
   this.f_ignoreScrollbarsUntil__org_gwtproject_user_client_ui_CustomScrollPanel_ = 0.0;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  static get f_IGNORE_SCROLL_TIMEOUT__org_gwtproject_user_client_ui_CustomScrollPanel_() {
   return (CustomScrollPanel.$clinit(), CustomScrollPanel.$f_IGNORE_SCROLL_TIMEOUT__org_gwtproject_user_client_ui_CustomScrollPanel_);
  }
- /**
-  * @param {number} value
-  * @public
-  */
- static set f_IGNORE_SCROLL_TIMEOUT__org_gwtproject_user_client_ui_CustomScrollPanel_(value) {
+ 
+ static set f_IGNORE_SCROLL_TIMEOUT__org_gwtproject_user_client_ui_CustomScrollPanel_(/** number */ value) {
   (CustomScrollPanel.$clinit(), CustomScrollPanel.$f_IGNORE_SCROLL_TIMEOUT__org_gwtproject_user_client_ui_CustomScrollPanel_ = value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CustomScrollPanel.$clinit = () =>{};
   CustomScrollPanel.$loadModules();
   ScrollPanel.$clinit();
   CustomScrollPanel.$f_IGNORE_SCROLL_TIMEOUT__org_gwtproject_user_client_ui_CustomScrollPanel_ = 500;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CustomScrollPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -577,9 +464,9 @@ class CustomScrollPanel extends ScrollPanel {
 }
 $Util.$setClassMetadata(CustomScrollPanel, 'org.gwtproject.user.client.ui.CustomScrollPanel');
 
-/** @public {Resources} */
+/**@type {Resources}*/
 CustomScrollPanel.f_DEFAULT_RESOURCES__org_gwtproject_user_client_ui_CustomScrollPanel_;
-/** @private {number} */
+/**@private {number}*/
 CustomScrollPanel.$f_IGNORE_SCROLL_TIMEOUT__org_gwtproject_user_client_ui_CustomScrollPanel_ = 0;
 
 exports = CustomScrollPanel; 

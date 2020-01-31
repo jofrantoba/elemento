@@ -7,55 +7,37 @@ let BasicStyle = goog.forwardDeclare('org.gwtproject.user.cellview.client.CellTr
 let CellTree__BasicResourcesImpl = goog.forwardDeclare('org.gwtproject.user.cellview.client.CellTree_BasicResourcesImpl$impl');
 
 class cellTreeStyleInitializer extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @return {!cellTreeStyleInitializer}
-  * @public
-  */
+ /** @return {!cellTreeStyleInitializer} */
  static $create__() {
   let $instance = new cellTreeStyleInitializer();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellTree_BasicResourcesImpl_cellTreeStyleInitializer__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_cellview_client_CellTree_BasicResourcesImpl_cellTreeStyleInitializer__() {
   this.$ctor__java_lang_Object__();
  }
- /**
-  * @return {BasicStyle}
-  * @public
-  */
+ /** @return {BasicStyle} */
  static m_get__() {
   cellTreeStyleInitializer.$clinit();
   return CellTree__BasicResourcesImpl.f_cellTreeStyle__org_gwtproject_user_cellview_client_CellTree_BasicResourcesImpl_;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   cellTreeStyleInitializer.$clinit = () =>{};
   cellTreeStyleInitializer.$loadModules();
   j_l_Object.$clinit();
   CellTree__BasicResourcesImpl.f__instance0__org_gwtproject_user_cellview_client_CellTree_BasicResourcesImpl_.m_cellTreeStyleInitializer___$p_org_gwtproject_user_cellview_client_CellTree_BasicResourcesImpl();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof cellTreeStyleInitializer;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   CellTree__BasicResourcesImpl = goog.module.get('org.gwtproject.user.cellview.client.CellTree_BasicResourcesImpl$impl');
  }

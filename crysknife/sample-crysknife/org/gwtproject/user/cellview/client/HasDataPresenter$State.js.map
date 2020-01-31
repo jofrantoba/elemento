@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasDataPresenter$State.impl.java.js",
-"lineCount":91,
-"mappings":"A;;;;;;;;;;MA+S2B,K;;;;;;CAKnB,0B;;;;;;CAKF,+B;;;;;;CAKE,e;;;;;;CAKA,gB;;;;;;CAKA,e;;;;;;CAKA,kB;;;;;;;CAKF,sB,CAAoBA,K;;;;;;CAKd,oB;;;;;;CAKN,oB;;;;;;CAKM,mB;;;;;;;CAQA,oB,CAAkBA,K;;;;;;CAOlB,iB;;;;QAjEe,O;EAAAC,wB;EAAAA;",
+"lineCount":39,
+"mappings":"A;;;;;;;;;;MA+S2B,K;;CAKnB,0B;;CAKF,+B;;CAKE,e;;CAKA,gB;;CAKA,e;;CAKA,kB;;CAKF,sB,eAAoBA,K;;CAKd,oB;;CAKN,oB;;CAKM,mB;;CAQA,oB,eAAkBA,K;;CAOlB,iB;;QAjEe,O;EAAAC,wB;EAAAA;",
 "sources":["HasDataPresenter.java"],
 "names":["index","org.gwtproject.user.cellview.client.HasDataPresenter$State.<clinit>"]
 }

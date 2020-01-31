@@ -11,49 +11,33 @@ let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class DateStyler extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Map<?string, ?string>} */
+  /**@type {Map<?string, ?string>}*/
   this.f_info__org_gwtproject_user_datepicker_client_DatePicker_DateStyler_;
  }
- /**
-  * @return {!DateStyler}
-  * @public
-  */
+ /** @return {!DateStyler} */
  static $create__() {
   DateStyler.$clinit();
   let $instance = new DateStyler();
   $instance.$ctor__org_gwtproject_user_datepicker_client_DatePicker_DateStyler__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_user_datepicker_client_DatePicker_DateStyler__() {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_user_datepicker_client_DatePicker_DateStyler();
  }
- /**
-  * @param {Date} d
-  * @return {?string}
-  * @public
-  */
- m_getStyleName__java_util_Date(d) {
-  return /**@type {?string} */ ($Casts.$to(this.f_info__org_gwtproject_user_datepicker_client_DatePicker_DateStyler_.get(this.m_genKey__java_util_Date_$p_org_gwtproject_user_datepicker_client_DatePicker_DateStyler(d)), j_l_String));
+ /** @return {?string} */
+ m_getStyleName__java_util_Date(/** Date */ d) {
+  return /**@type {?string}*/ ($Casts.$to(this.f_info__org_gwtproject_user_datepicker_client_DatePicker_DateStyler_.get(this.m_genKey__java_util_Date_$p_org_gwtproject_user_datepicker_client_DatePicker_DateStyler(d)), j_l_String));
  }
- /**
-  * @param {Date} d
-  * @param {?string} styleName
-  * @param {boolean} add
-  * @public
-  */
- m_setStyleName__java_util_Date__java_lang_String__boolean(d, styleName, add) {
+ 
+ m_setStyleName__java_util_Date__java_lang_String__boolean(/** Date */ d, /** ?string */ styleName, /** boolean */ add) {
   styleName = " " + j_l_String.m_valueOf__java_lang_Object(styleName) + " ";
   let key = this.m_genKey__java_util_Date_$p_org_gwtproject_user_datepicker_client_DatePicker_DateStyler(d);
-  let current = /**@type {?string} */ ($Casts.$to(this.f_info__org_gwtproject_user_datepicker_client_DatePicker_DateStyler_.get(key), j_l_String));
+  let current = /**@type {?string}*/ ($Casts.$to(this.f_info__org_gwtproject_user_datepicker_client_DatePicker_DateStyler_.get(key), j_l_String));
   if (add) {
    if ($Equality.$same(current, null)) {
     this.f_info__org_gwtproject_user_datepicker_client_DatePicker_DateStyler_.put(key, styleName);
@@ -71,39 +55,25 @@ class DateStyler extends j_l_Object {
    }
   }
  }
- /**
-  * @param {Date} d
-  * @return {?string}
-  * @public
-  */
- m_genKey__java_util_Date_$p_org_gwtproject_user_datepicker_client_DatePicker_DateStyler(d) {
+ /** @return {?string} */
+ m_genKey__java_util_Date_$p_org_gwtproject_user_datepicker_client_DatePicker_DateStyler(/** Date */ d) {
   return d.m_getYear__() + "/" + d.m_getMonth__() + "/" + d.m_getDate__();
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_datepicker_client_DatePicker_DateStyler() {
-  this.f_info__org_gwtproject_user_datepicker_client_DatePicker_DateStyler_ = /**@type {!HashMap<?string, ?string>} */ (HashMap.$create__());
+  this.f_info__org_gwtproject_user_datepicker_client_DatePicker_DateStyler_ = /**@type {!HashMap<?string, ?string>}*/ (HashMap.$create__());
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DateStyler.$clinit = () =>{};
   DateStyler.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DateStyler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   HashMap = goog.module.get('java.util.HashMap$impl');

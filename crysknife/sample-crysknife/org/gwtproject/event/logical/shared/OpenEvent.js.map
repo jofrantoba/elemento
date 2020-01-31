@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"OpenEvent.impl.java.js",
-"lineCount":130,
-"mappings":"A;;;;;;;;;;;;;;;MAwBa,S;;;;CAAA,W;EAAAA,Q;EAAAA;OAgCK,wDAhCLA,C;;;;;;;;QAaY,6E,CAAwBC,M,EAAUC,M;EAAlCC,oB;EACrBA;GACEA,IAAaC,KAAbD,+EADFA;GAEEA,6DAFFA;G;;;;;;QAWiC,W;EAAAE,oB;EACjCA;GACEA,0HADFA;G;EAGAA,wE;;;;;;;;QAUQ,yB,CAAYH,M;EAAZI,oB;EAAAA,gC;EAAAA,yF;EAAAA,iB;;;;;;CAAA,sE,CAAYJ,M;EAAZK,kD;EACRA,uE;;;;;;;CAKgC,qB;EAChCC,6F;;;;;;CAQO,a;EACPC,qE;;;;;;CAOa,2D,CAAwBC,O;EACrCC,sE;;;;;;;;CA/DS,4B;EAAAA,+H;;;;;QAAA,O;EAAAC,4B;EAAAA,yB;EAAAA,gB;;;;;;;;;;;;;;;;;;;;;;;AAAA;UAGyB,sDAHzB;",
+"lineCount":90,
+"mappings":"A;;;;;;;;;;;;;;;MAwBa,S;;CAAA,W;EAAAA,Q;EAAAA;OAgCK,wDAhCLA,C;;;QAaY,6E,6BAAwBC,M,aAAUC,M;EAAlCC,oB;EACrBA;GACEA,IAAaC,KAAbD,8EADFA;GAEEA,6DAFFA;G;;;QAWiC,W;EAAAE,oB;EACjCA;GACEA,yHADFA;G;EAGAA,wE;;;QAUQ,yB,UAAYH,M;EAAZI,oB;EAAAA,gC;EAAAA,yF;EAAAA,iB;;;CAAA,sE,UAAYJ,M;EAAZK,kD;EACRA,uE;;;CAKgC,qB;EAChCC,4F;;;CAQO,a;EACPC,qE;;;CAOa,2D,uBAAwBC,O;EACrCC,sE;;;;CA/DS,4B;EAAAA,8H;;;QAAA,O;EAAAC,4B;EAAAA,yB;EAAAA,gB;;;;;;;;;;;;;;;;;AAAA;UAGyB,sDAHzB;",
 "sources":["OpenEvent.java"],
 "names":["org.gwtproject.event.logical.shared.OpenEvent.<synthetic: ctor_js>","source","target","org.gwtproject.event.logical.shared.OpenEvent.fire","event","org.gwtproject.event.logical.shared.OpenEvent.getType","org.gwtproject.event.logical.shared.OpenEvent.<synthetic: ctor_create>","org.gwtproject.event.logical.shared.OpenEvent.<init>","org.gwtproject.event.logical.shared.OpenEvent.getAssociatedType","org.gwtproject.event.logical.shared.OpenEvent.getTarget","handler","org.gwtproject.event.logical.shared.OpenEvent.dispatch","org.gwtproject.event.logical.shared.OpenEvent.<clinit>"]
 }

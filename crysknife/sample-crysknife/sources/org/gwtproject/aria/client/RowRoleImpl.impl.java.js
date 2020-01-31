@@ -17,153 +17,80 @@ let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
  * @implements {RowRole}
   */
 class RowRoleImpl extends RoleImpl {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} roleName
-  * @return {!RowRoleImpl}
-  * @public
-  */
- static $create__java_lang_String(roleName) {
+ /** @return {!RowRoleImpl} */
+ static $create__java_lang_String(/** ?string */ roleName) {
   RowRoleImpl.$clinit();
   let $instance = new RowRoleImpl();
   $instance.$ctor__org_gwtproject_aria_client_RowRoleImpl__java_lang_String(roleName);
   return $instance;
  }
- /**
-  * @param {?string} roleName
-  * @public
-  */
- $ctor__org_gwtproject_aria_client_RowRoleImpl__java_lang_String(roleName) {
+ 
+ $ctor__org_gwtproject_aria_client_RowRoleImpl__java_lang_String(/** ?string */ roleName) {
   this.$ctor__org_gwtproject_aria_client_RoleImpl__java_lang_String(roleName);
  }
- /**
-  * @override
-  * @param {Object} element
-  * @return {?string}
-  * @public
-  */
- m_getAriaActivedescendantProperty__org_gwtproject_dom_client_Element(element) {
+ /** @override @return {?string} */
+ m_getAriaActivedescendantProperty__org_gwtproject_dom_client_Element(/** Object */ element) {
   return Property.f_ACTIVEDESCENDANT__org_gwtproject_aria_client_Property.m_get__org_gwtproject_dom_client_Element(element);
  }
- /**
-  * @override
-  * @param {Object} element
-  * @public
-  */
- m_removeAriaActivedescendantProperty__org_gwtproject_dom_client_Element(element) {
+ /** @override */
+ m_removeAriaActivedescendantProperty__org_gwtproject_dom_client_Element(/** Object */ element) {
   Property.f_ACTIVEDESCENDANT__org_gwtproject_aria_client_Property.m_remove__org_gwtproject_dom_client_Element(element);
  }
- /**
-  * @override
-  * @param {Object} element
-  * @param {Id} value
-  * @public
-  */
- m_setAriaActivedescendantProperty__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_Id(element, value) {
-  Property.f_ACTIVEDESCENDANT__org_gwtproject_aria_client_Property.m_set__org_gwtproject_dom_client_Element__arrayOf_java_lang_Object(element, /**@type {!Array<Id>} */ ($Arrays.$init([value], Id)));
+ /** @override */
+ m_setAriaActivedescendantProperty__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_Id(/** Object */ element, /** Id */ value) {
+  Property.f_ACTIVEDESCENDANT__org_gwtproject_aria_client_Property.m_set__org_gwtproject_dom_client_Element__arrayOf_java_lang_Object(element, /**@type {!Array<Id>}*/ ($Arrays.$init([value], Id)));
  }
- /**
-  * @override
-  * @param {Object} element
-  * @return {?string}
-  * @public
-  */
- m_getAriaExpandedState__org_gwtproject_dom_client_Element(element) {
+ /** @override @return {?string} */
+ m_getAriaExpandedState__org_gwtproject_dom_client_Element(/** Object */ element) {
   return State.f_EXPANDED__org_gwtproject_aria_client_State.m_get__org_gwtproject_dom_client_Element(element);
  }
- /**
-  * @override
-  * @param {Object} element
-  * @public
-  */
- m_removeAriaExpandedState__org_gwtproject_dom_client_Element(element) {
+ /** @override */
+ m_removeAriaExpandedState__org_gwtproject_dom_client_Element(/** Object */ element) {
   State.f_EXPANDED__org_gwtproject_aria_client_State.m_remove__org_gwtproject_dom_client_Element(element);
  }
- /**
-  * @override
-  * @param {Object} element
-  * @param {ExpandedValue} value
-  * @public
-  */
- m_setAriaExpandedState__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_ExpandedValue(element, value) {
-  State.f_EXPANDED__org_gwtproject_aria_client_State.m_set__org_gwtproject_dom_client_Element__arrayOf_java_lang_Object(element, /**@type {!Array<ExpandedValue>} */ ($Arrays.$init([value], ExpandedValue)));
+ /** @override */
+ m_setAriaExpandedState__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_ExpandedValue(/** Object */ element, /** ExpandedValue */ value) {
+  State.f_EXPANDED__org_gwtproject_aria_client_State.m_set__org_gwtproject_dom_client_Element__arrayOf_java_lang_Object(element, /**@type {!Array<ExpandedValue>}*/ ($Arrays.$init([value], ExpandedValue)));
  }
- /**
-  * @override
-  * @param {Object} element
-  * @return {?string}
-  * @public
-  */
- m_getAriaLevelProperty__org_gwtproject_dom_client_Element(element) {
+ /** @override @return {?string} */
+ m_getAriaLevelProperty__org_gwtproject_dom_client_Element(/** Object */ element) {
   return Property.f_LEVEL__org_gwtproject_aria_client_Property.m_get__org_gwtproject_dom_client_Element(element);
  }
- /**
-  * @override
-  * @param {Object} element
-  * @return {?string}
-  * @public
-  */
- m_getAriaSelectedState__org_gwtproject_dom_client_Element(element) {
+ /** @override @return {?string} */
+ m_getAriaSelectedState__org_gwtproject_dom_client_Element(/** Object */ element) {
   return State.f_SELECTED__org_gwtproject_aria_client_State.m_get__org_gwtproject_dom_client_Element(element);
  }
- /**
-  * @override
-  * @param {Object} element
-  * @public
-  */
- m_removeAriaLevelProperty__org_gwtproject_dom_client_Element(element) {
+ /** @override */
+ m_removeAriaLevelProperty__org_gwtproject_dom_client_Element(/** Object */ element) {
   Property.f_LEVEL__org_gwtproject_aria_client_Property.m_remove__org_gwtproject_dom_client_Element(element);
  }
- /**
-  * @override
-  * @param {Object} element
-  * @public
-  */
- m_removeAriaSelectedState__org_gwtproject_dom_client_Element(element) {
+ /** @override */
+ m_removeAriaSelectedState__org_gwtproject_dom_client_Element(/** Object */ element) {
   State.f_SELECTED__org_gwtproject_aria_client_State.m_remove__org_gwtproject_dom_client_Element(element);
  }
- /**
-  * @override
-  * @param {Object} element
-  * @param {number} value
-  * @public
-  */
- m_setAriaLevelProperty__org_gwtproject_dom_client_Element__int(element, value) {
-  Property.f_LEVEL__org_gwtproject_aria_client_Property.m_set__org_gwtproject_dom_client_Element__arrayOf_java_lang_Object(element, /**@type {!Array<Integer>} */ ($Arrays.$init([Integer.m_valueOf__int(value)], Integer)));
+ /** @override */
+ m_setAriaLevelProperty__org_gwtproject_dom_client_Element__int(/** Object */ element, /** number */ value) {
+  Property.f_LEVEL__org_gwtproject_aria_client_Property.m_set__org_gwtproject_dom_client_Element__arrayOf_java_lang_Object(element, /**@type {!Array<Integer>}*/ ($Arrays.$init([Integer.m_valueOf__int(value)], Integer)));
  }
- /**
-  * @override
-  * @param {Object} element
-  * @param {SelectedValue} value
-  * @public
-  */
- m_setAriaSelectedState__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_SelectedValue(element, value) {
-  State.f_SELECTED__org_gwtproject_aria_client_State.m_set__org_gwtproject_dom_client_Element__arrayOf_java_lang_Object(element, /**@type {!Array<SelectedValue>} */ ($Arrays.$init([value], SelectedValue)));
+ /** @override */
+ m_setAriaSelectedState__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_SelectedValue(/** Object */ element, /** SelectedValue */ value) {
+  State.f_SELECTED__org_gwtproject_aria_client_State.m_set__org_gwtproject_dom_client_Element__arrayOf_java_lang_Object(element, /**@type {!Array<SelectedValue>}*/ ($Arrays.$init([value], SelectedValue)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   RowRoleImpl.$clinit = () =>{};
   RowRoleImpl.$loadModules();
   RoleImpl.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof RowRoleImpl;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Integer = goog.module.get('java.lang.Integer$impl');
   ExpandedValue = goog.module.get('org.gwtproject.aria.client.ExpandedValue$impl');

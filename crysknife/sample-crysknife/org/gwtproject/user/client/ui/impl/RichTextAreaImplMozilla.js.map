@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"RichTextAreaImplMozilla.impl.java.js",
-"lineCount":53,
-"mappings":"A;;;;;MAoBa,uB;;;;CAAA,W;EAAAA,Q;EAAAA;OAMD,0EANCA,S;;;;;;QAAA,S;EAAAC,kC;EAAAA,8C;EAAAA,gF;EAAAA,iB;;;;;CAAA,mE;EAAAC,4E;;;;;;;CASK,gB;EACVC,wG;;;;;;;CAIQ,gC,CAAoBC,K;EAG5BC,oH;;;;;QAjBK,O;EAAAC,0C;EAAAA,uC;EAAAA;",
+"lineCount":36,
+"mappings":"A;;;;;MAoBa,uB;;CAAA,W;EAAAA,Q;EAAAA;OAMD,0EANCA,S;;;QAAA,S;EAAAC,kC;EAAAA,8C;EAAAA,gF;EAAAA,iB;;;CAAA,mE;EAAAC,4E;;;CASK,gB;EACVC,wG;;;CAIQ,gC,gBAAoBC,K;EAG5BC,oH;;;QAjBK,O;EAAAC,0C;EAAAA,uC;EAAAA;",
 "sources":["RichTextAreaImplMozilla.java"],
 "names":["org.gwtproject.user.client.ui.impl.RichTextAreaImplMozilla.<synthetic: ctor_js>","org.gwtproject.user.client.ui.impl.RichTextAreaImplMozilla.<synthetic: ctor_create>","org.gwtproject.user.client.ui.impl.RichTextAreaImplMozilla.<init>","org.gwtproject.user.client.ui.impl.RichTextAreaImplMozilla.getBackColor","color","org.gwtproject.user.client.ui.impl.RichTextAreaImplMozilla.setBackColor","org.gwtproject.user.client.ui.impl.RichTextAreaImplMozilla.<clinit>"]
 }

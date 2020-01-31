@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HasOpenHandlers.impl.java.js",
-"lineCount":27,
-"mappings":"A;;;;;;;;;;;;;MAyBiB,e;;;;;;;CAOK,iE,CAA8BA,O;;;;QAPnC,O;EAAAC,kC;EAAAA;",
+"lineCount":20,
+"mappings":"A;;;;;;;;;;;;;MAyBiB,e;;CAOK,iE,uBAA8BA,O;;QAPnC,O;EAAAC,kC;EAAAA;",
 "sources":["HasOpenHandlers.java"],
 "names":["handler","org.gwtproject.event.logical.shared.HasOpenHandlers.<clinit>"]
 }

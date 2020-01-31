@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"OnFieldAccessed.impl.java.js",
-"lineCount":88,
-"mappings":"A;;;;;;;;;;;;;;;;;MAYmB,e;;;;CAAA,W;EAAAA,Q;EAAAA;OAEQ,yEAFRA,C;;;;;;;QAIR,oC,CAAyBC,Q;EAAzBC,0B;EAAAA,sC;EAAAA,qH;EAAAA,iB;;;;;;CAAA,gG,CAAyBD,Q;EAAzBE,iC;EACHA,0F;;;;;;;;CAIU,2C,CAAaC,C,EAAUC,W;EACjCC;GACIA,sDADJA;GAEIA,0OAFJA;G;EAIAA,qI;;;;;;;;;;CAdW,sC;EAAAC,wJ;;;;;;;;;;CAAA,2C;EAAAD,oH;;;;;QAAA,O;EAAAE,kC;EAAAA,+B;EAAAA,qB;EAAAA;",
+"lineCount":60,
+"mappings":"A;;;;;;;;;;;;;;;;;MAYmB,e;;CAAA,W;EAAAA,Q;EAAAA;OAEQ,yEAFRA,C;;;QAIR,oC,iBAAyBC,Q;EAAzBC,0B;EAAAA,sC;EAAAA,qH;EAAAA,iB;;;CAAA,gG,iBAAyBD,Q;EAAzBE,iC;EACHA,0F;;;CAIU,2C,UAAaC,C,iBAAUC,W;EACjCC;GACIA,sDADJA;GAEIA,0OAFJA;G;EAIAA,qI;;;;CAdW,sC;EAAAC,uJ;;;;CAAA,2C;EAAAD,mH;;;QAAA,O;EAAAE,kC;EAAAA,+B;EAAAA,qB;EAAAA;",
 "sources":["OnFieldAccessed.java"],
 "names":["org.treblereel.gwt.crysknife.client.internal.OnFieldAccessed.<synthetic: ctor_js>","supplier","org.treblereel.gwt.crysknife.client.internal.OnFieldAccessed.<synthetic: ctor_create>","org.treblereel.gwt.crysknife.client.internal.OnFieldAccessed.<init>","o","propertyKey","org.treblereel.gwt.crysknife.client.internal.OnFieldAccessed.apply","org.treblereel.gwt.crysknife.client.internal.OnFieldAccessed.andThen","org.treblereel.gwt.crysknife.client.internal.OnFieldAccessed.<clinit>"]
 }

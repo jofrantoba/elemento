@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"HTMLTable$Cell.impl.java.js",
-"lineCount":74,
-"mappings":"A;;;;;;;;MAwEe,I;;;;CAAA,W;EAAAA,Q;EAAAA;mE;EAAAA;OACO,yDADPA,K;EAAAA;OAEO,0DAFPA,K;;;;;;;;;QAUD,0D,cAASC,Q,EAAcC,S;EAAvBC,e;EAAAA,2B;EAAAA,mJ;EAAAA,iB;;;;;;;;CAAA,sG,cAASF,Q,EAAcC,S;EAAvBE,+E;EAAAA,iC;EACRA,4E;EACAA,0E;;;;;;CAQS,gB;EACTC,uE;;;;;;CAQa,c;EACbC,uP;;;;;;CAQS,e;EACTC,sE;;;;;QAvCS,O;EAAAC,uB;EAAAA,oB;EAAAA;",
+"lineCount":50,
+"mappings":"A;;;;;;;;MAwEe,I;;CAAA,W;EAAAA,Q;EAAAA;mE;EAAAA;OACO,yDADPA,K;EAAAA;OAEO,0DAFPA,K;;;QAUD,0D,6CAASC,Q,gBAAcC,S;EAAvBC,e;EAAAA,2B;EAAAA,mJ;EAAAA,iB;;;CAAA,sG,6CAASF,Q,gBAAcC,S;EAAvBE,+E;EAAAA,iC;EACRA,4E;EACAA,0E;;;CAQS,gB;EACTC,uE;;;CAQa,c;EACbC,uP;;;CAQS,e;EACTC,sE;;;QAvCS,O;EAAAC,uB;EAAAA,oB;EAAAA;",
 "sources":["HTMLTable.java"],
 "names":["org.gwtproject.user.client.ui.HTMLTable$Cell.<synthetic: ctor_js>","rowIndex","cellIndex","org.gwtproject.user.client.ui.HTMLTable$Cell.<synthetic: ctor_create>","org.gwtproject.user.client.ui.HTMLTable$Cell.<init>","org.gwtproject.user.client.ui.HTMLTable$Cell.getCellIndex","org.gwtproject.user.client.ui.HTMLTable$Cell.getElement","org.gwtproject.user.client.ui.HTMLTable$Cell.getRowIndex","org.gwtproject.user.client.ui.HTMLTable$Cell.<clinit>"]
 }

@@ -55,122 +55,80 @@ let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
  * @implements {HasAnimation}
   */
 class CellBrowser extends AbstractCellTree {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {List<TreeNodeImpl<?>>} */
+  /**@type {List<TreeNodeImpl<?>>}*/
   this.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser;
-  /** @public {ScrollAnimation} */
+  /**@type {ScrollAnimation}*/
   this.f_animation__org_gwtproject_user_cellview_client_CellBrowser_;
-  /** @public {CellList_Resources} */
+  /**@type {CellList_Resources}*/
   this.f_cellListResources__org_gwtproject_user_cellview_client_CellBrowser_;
-  /** @public {SafeHtml} */
+  /**@type {SafeHtml}*/
   this.f_closedImageHtml__org_gwtproject_user_cellview_client_CellBrowser_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_defaultWidth__org_gwtproject_user_cellview_client_CellBrowser_ = 0;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_imageWidth__org_gwtproject_user_cellview_client_CellBrowser_ = 0;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isAnimationEnabled__org_gwtproject_user_cellview_client_CellBrowser_ = false;
-  /** @public {Widget} */
+  /**@type {Widget}*/
   this.f_loadingIndicator__org_gwtproject_user_cellview_client_CellBrowser_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_minWidth__org_gwtproject_user_cellview_client_CellBrowser_ = 0;
-  /** @public {SafeHtml} */
+  /**@type {SafeHtml}*/
   this.f_openImageHtml__org_gwtproject_user_cellview_client_CellBrowser_;
-  /** @public {PagerFactory} */
+  /**@type {PagerFactory}*/
   this.f_pagerFactory__org_gwtproject_user_cellview_client_CellBrowser_;
-  /** @public {Integer} */
+  /**@type {Integer}*/
   this.f_pageSize__org_gwtproject_user_cellview_client_CellBrowser_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_scrollLock__org_gwtproject_user_cellview_client_CellBrowser_;
-  /** @public {Style} */
+  /**@type {Style}*/
   this.f_style__org_gwtproject_user_cellview_client_CellBrowser_;
  }
- /**
-  * @return {Resources}
-  * @public
-  */
+ /** @return {Resources} */
  static m_getDefaultResources__() {
   CellBrowser.$clinit();
   return Resources.f_INSTANCE__org_gwtproject_user_cellview_client_CellBrowser_Resources;
  }
- /**
-  * Factory method corresponding to constructor 'CellBrowser(TreeViewModel, Object)'.
-  * @template T
-  * @param {TreeViewModel} viewModel
-  * @param {T} rootValue
-  * @return {!CellBrowser}
-  * @public
-  * @deprecated
-  */
- static $create__org_gwtproject_view_client_TreeViewModel__java_lang_Object(viewModel, rootValue) {
+ //Factory method corresponding to constructor 'CellBrowser(TreeViewModel, Object)'.
+ /** @template T @return {!CellBrowser} @deprecated */
+ static $create__org_gwtproject_view_client_TreeViewModel__java_lang_Object(/** TreeViewModel */ viewModel, /** T */ rootValue) {
   CellBrowser.$clinit();
   let $instance = new CellBrowser();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_view_client_TreeViewModel__java_lang_Object(viewModel, rootValue);
   return $instance;
  }
- /**
-  * Initialization from constructor 'CellBrowser(TreeViewModel, Object)'.
-  * @template T
-  * @param {TreeViewModel} viewModel
-  * @param {T} rootValue
-  * @public
-  * @deprecated
-  */
- $ctor__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_view_client_TreeViewModel__java_lang_Object(viewModel, rootValue) {
-  this.$ctor__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_user_cellview_client_CellBrowser_Builder(/**@type {!Builder<T>} */ (Builder.$create__org_gwtproject_view_client_TreeViewModel__java_lang_Object(viewModel, rootValue)));
+ //Initialization from constructor 'CellBrowser(TreeViewModel, Object)'.
+ /** @template T @deprecated */
+ $ctor__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_view_client_TreeViewModel__java_lang_Object(/** TreeViewModel */ viewModel, /** T */ rootValue) {
+  this.$ctor__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_user_cellview_client_CellBrowser_Builder(/**@type {!Builder<T>}*/ (Builder.$create__org_gwtproject_view_client_TreeViewModel__java_lang_Object(viewModel, rootValue)));
  }
- /**
-  * Factory method corresponding to constructor 'CellBrowser(TreeViewModel, Object, Resources)'.
-  * @template T
-  * @param {TreeViewModel} viewModel
-  * @param {T} rootValue
-  * @param {Resources} resources
-  * @return {!CellBrowser}
-  * @public
-  * @deprecated
-  */
- static $create__org_gwtproject_view_client_TreeViewModel__java_lang_Object__org_gwtproject_user_cellview_client_CellBrowser_Resources(viewModel, rootValue, resources) {
+ //Factory method corresponding to constructor 'CellBrowser(TreeViewModel, Object, Resources)'.
+ /** @template T @return {!CellBrowser} @deprecated */
+ static $create__org_gwtproject_view_client_TreeViewModel__java_lang_Object__org_gwtproject_user_cellview_client_CellBrowser_Resources(/** TreeViewModel */ viewModel, /** T */ rootValue, /** Resources */ resources) {
   CellBrowser.$clinit();
   let $instance = new CellBrowser();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_view_client_TreeViewModel__java_lang_Object__org_gwtproject_user_cellview_client_CellBrowser_Resources(viewModel, rootValue, resources);
   return $instance;
  }
- /**
-  * Initialization from constructor 'CellBrowser(TreeViewModel, Object, Resources)'.
-  * @template T
-  * @param {TreeViewModel} viewModel
-  * @param {T} rootValue
-  * @param {Resources} resources
-  * @public
-  * @deprecated
-  */
- $ctor__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_view_client_TreeViewModel__java_lang_Object__org_gwtproject_user_cellview_client_CellBrowser_Resources(viewModel, rootValue, resources) {
-  this.$ctor__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_user_cellview_client_CellBrowser_Builder(/**@type {!Builder<T>} */ (Builder.$create__org_gwtproject_view_client_TreeViewModel__java_lang_Object(viewModel, rootValue)).m_resources__org_gwtproject_user_cellview_client_CellBrowser_Resources(resources));
+ //Initialization from constructor 'CellBrowser(TreeViewModel, Object, Resources)'.
+ /** @template T @deprecated */
+ $ctor__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_view_client_TreeViewModel__java_lang_Object__org_gwtproject_user_cellview_client_CellBrowser_Resources(/** TreeViewModel */ viewModel, /** T */ rootValue, /** Resources */ resources) {
+  this.$ctor__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_user_cellview_client_CellBrowser_Builder(/**@type {!Builder<T>}*/ (Builder.$create__org_gwtproject_view_client_TreeViewModel__java_lang_Object(viewModel, rootValue)).m_resources__org_gwtproject_user_cellview_client_CellBrowser_Resources(resources));
  }
- /**
-  * Factory method corresponding to constructor 'CellBrowser(Builder)'.
-  * @template T
-  * @param {Builder<T>} builder
-  * @return {!CellBrowser}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_CellBrowser_Builder(builder) {
+ //Factory method corresponding to constructor 'CellBrowser(Builder)'.
+ /** @template T @return {!CellBrowser} */
+ static $create__org_gwtproject_user_cellview_client_CellBrowser_Builder(/** Builder<T> */ builder) {
   CellBrowser.$clinit();
   let $instance = new CellBrowser();
   $instance.$ctor__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_user_cellview_client_CellBrowser_Builder(builder);
   return $instance;
  }
- /**
-  * Initialization from constructor 'CellBrowser(Builder)'.
-  * @template T
-  * @param {Builder<T>} builder
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_user_cellview_client_CellBrowser_Builder(builder) {
+ //Initialization from constructor 'CellBrowser(Builder)'.
+ /** @template T */
+ $ctor__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_user_cellview_client_CellBrowser_Builder(/** Builder<T> */ builder) {
   this.$ctor__org_gwtproject_user_cellview_client_AbstractCellTree__org_gwtproject_view_client_TreeViewModel(builder.f_viewModel__org_gwtproject_user_cellview_client_CellBrowser_Builder_);
   this.$init___$p_org_gwtproject_user_cellview_client_CellBrowser();
   let resources = builder.m_resources___$p_org_gwtproject_user_cellview_client_CellBrowser_Builder();
@@ -205,42 +163,24 @@ class CellBrowser extends AbstractCellTree {
   this.m_appendTreeNode__org_gwtproject_view_client_TreeViewModel_NodeInfo__java_lang_Object_$p_org_gwtproject_user_cellview_client_CellBrowser(this.m_getNodeInfo__java_lang_Object(builder.f_rootValue__org_gwtproject_user_cellview_client_CellBrowser_Builder_), builder.f_rootValue__org_gwtproject_user_cellview_client_CellBrowser_Builder_);
   this.m_sinkEvents__int(Event.f_ONSCROLL__org_gwtproject_user_client_Event);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getDefaultColumnWidth__() {
   return this.f_defaultWidth__org_gwtproject_user_cellview_client_CellBrowser_;
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getMinimumColumnWidth__() {
   return this.f_minWidth__org_gwtproject_user_cellview_client_CellBrowser_;
  }
- /**
-  * @override
-  * @return {TreeNode}
-  * @public
-  */
+ /** @override @return {TreeNode} */
  m_getRootTreeNode__() {
-  return /**@type {TreeNodeImpl<*>} */ ($Casts.$to(this.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser.getAtIndex(0), TreeNodeImpl));
+  return /**@type {TreeNodeImpl<*>}*/ ($Casts.$to(this.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser.getAtIndex(0), TreeNodeImpl));
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isAnimationEnabled__() {
   return this.f_isAnimationEnabled__org_gwtproject_user_cellview_client_CellBrowser_;
  }
- /**
-  * @override
-  * @param {Event} event
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_user_client_Event(event) {
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_user_client_Event(/** Event */ event) {
   switch (DOM.m_eventGetType__org_gwtproject_user_client_Event(event)) {
    case Event.f_ONSCROLL__org_gwtproject_user_client_Event: 
     this.m_adjustScrollLock___$p_org_gwtproject_user_cellview_client_CellBrowser();
@@ -248,42 +188,24 @@ class CellBrowser extends AbstractCellTree {
   }
   super.m_onBrowserEvent__org_gwtproject_user_client_Event(event);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onResize__() {
   this.m_getSplitLayoutPanel___$p_org_gwtproject_user_cellview_client_CellBrowser().m_onResize__();
  }
- /**
-  * @override
-  * @param {boolean} enable
-  * @public
-  */
- m_setAnimationEnabled__boolean(enable) {
+ /** @override */
+ m_setAnimationEnabled__boolean(/** boolean */ enable) {
   this.f_isAnimationEnabled__org_gwtproject_user_cellview_client_CellBrowser_ = enable;
  }
- /**
-  * @param {number} width
-  * @public
-  */
- m_setDefaultColumnWidth__int(width) {
+ 
+ m_setDefaultColumnWidth__int(/** number */ width) {
   this.f_defaultWidth__org_gwtproject_user_cellview_client_CellBrowser_ = width;
  }
- /**
-  * @param {number} minWidth
-  * @public
-  */
- m_setMinimumColumnWidth__int(minWidth) {
+ 
+ m_setMinimumColumnWidth__int(/** number */ minWidth) {
   this.f_minWidth__org_gwtproject_user_cellview_client_CellBrowser_ = minWidth;
  }
- /**
-  * @template C
-  * @param {HasData<C>} display
-  * @return {Widget}
-  * @public
-  */
- m_createPager__org_gwtproject_view_client_HasData(display) {
+ /** @template C @return {Widget} */
+ m_createPager__org_gwtproject_view_client_HasData(/** HasData<C> */ display) {
   if ($Equality.$same(this.f_pagerFactory__org_gwtproject_user_cellview_client_CellBrowser_, null)) {
    return null;
   }
@@ -291,9 +213,7 @@ class CellBrowser extends AbstractCellTree {
   pager.m_setDisplay__org_gwtproject_view_client_HasRows(display);
   return pager;
  }
- /**
-  * @public
-  */
+ 
  m_adjustScrollLock___$p_org_gwtproject_user_cellview_client_CellBrowser() {
   let scrollLeft = Math.abs(Element_$Overlay.m_getScrollLeft__$devirt__org_gwtproject_dom_client_Element(this.m_getElement__()));
   if (scrollLeft > 0) {
@@ -303,16 +223,10 @@ class CellBrowser extends AbstractCellTree {
    $Overlay.m_setWidth__$devirt__org_gwtproject_dom_client_Style__double__org_gwtproject_dom_style_shared_Unit(this.f_scrollLock__org_gwtproject_user_cellview_client_CellBrowser_.style, 1.0, Unit.f_PX__org_gwtproject_dom_style_shared_Unit);
   }
  }
- /**
-  * @template C
-  * @param {NodeInfo<C>} nodeInfo
-  * @param {*} value
-  * @return {TreeNode}
-  * @public
-  */
- m_appendTreeNode__org_gwtproject_view_client_TreeViewModel_NodeInfo__java_lang_Object_$p_org_gwtproject_user_cellview_client_CellBrowser(nodeInfo, value) {
+ /** @template C @return {TreeNode} */
+ m_appendTreeNode__org_gwtproject_view_client_TreeViewModel_NodeInfo__java_lang_Object_$p_org_gwtproject_user_cellview_client_CellBrowser(/** NodeInfo<C> */ nodeInfo, /** * */ value) {
   let level = this.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser.size();
-  let view = /**@type {BrowserCellList<C>} */ (this.m_createDisplay__org_gwtproject_view_client_TreeViewModel_NodeInfo__int_$p_org_gwtproject_user_cellview_client_CellBrowser(nodeInfo, level));
+  let view = /**@type {BrowserCellList<C>}*/ (this.m_createDisplay__org_gwtproject_view_client_TreeViewModel_NodeInfo__int_$p_org_gwtproject_user_cellview_client_CellBrowser(nodeInfo, level));
   let scrollable = ScrollPanel.$create__();
   scrollable.m_getElement__().tabIndex = -1;
   let pager = this.m_createPager__org_gwtproject_view_client_HasData(view);
@@ -328,7 +242,7 @@ class CellBrowser extends AbstractCellTree {
   if (level == 0) {
    scrollable.m_addStyleName__java_lang_String(this.f_style__org_gwtproject_user_cellview_client_CellBrowser_.m_cellBrowserFirstColumn__());
   }
-  let treeNode = /**@type {!TreeNodeImpl<C>} */ (TreeNodeImpl.$create__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_view_client_TreeViewModel_NodeInfo__java_lang_Object__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList__org_gwtproject_user_client_ui_Widget(this, nodeInfo, value, view, scrollable));
+  let treeNode = /**@type {!TreeNodeImpl<C>}*/ (TreeNodeImpl.$create__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_view_client_TreeViewModel_NodeInfo__java_lang_Object__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList__org_gwtproject_user_client_ui_Widget(this, nodeInfo, value, view, scrollable));
   this.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser.add(treeNode);
   view.m_setSelectionModel__org_gwtproject_view_client_SelectionModel__org_gwtproject_view_client_CellPreviewEvent_Handler(nodeInfo.m_getSelectionModel__(), null);
   nodeInfo.m_setDataDisplay__org_gwtproject_view_client_HasData(view);
@@ -339,15 +253,9 @@ class CellBrowser extends AbstractCellTree {
   this.f_animation__org_gwtproject_user_cellview_client_CellBrowser_.m_scrollToEnd___$pp_org_gwtproject_user_cellview_client();
   return treeNode;
  }
- /**
-  * @template C
-  * @param {NodeInfo<C>} nodeInfo
-  * @param {number} level
-  * @return {BrowserCellList<C>}
-  * @public
-  */
- m_createDisplay__org_gwtproject_view_client_TreeViewModel_NodeInfo__int_$p_org_gwtproject_user_cellview_client_CellBrowser(nodeInfo, level) {
-  let display = /**@type {!BrowserCellList<C>} */ (BrowserCellList.$create__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_cell_client_Cell__int__org_gwtproject_view_client_ProvidesKey(this, nodeInfo.m_getCell__(), level, nodeInfo.m_getProvidesKey__()));
+ /** @template C @return {BrowserCellList<C>} */
+ m_createDisplay__org_gwtproject_view_client_TreeViewModel_NodeInfo__int_$p_org_gwtproject_user_cellview_client_CellBrowser(/** NodeInfo<C> */ nodeInfo, /** number */ level) {
+  let display = /**@type {!BrowserCellList<C>}*/ (BrowserCellList.$create__org_gwtproject_user_cellview_client_CellBrowser__org_gwtproject_cell_client_Cell__int__org_gwtproject_view_client_ProvidesKey(this, nodeInfo.m_getCell__(), level, nodeInfo.m_getProvidesKey__()));
   if (!$Equality.$same(this.f_loadingIndicator__org_gwtproject_user_cellview_client_CellBrowser_, null)) {
    display.m_setLoadingIndicator__org_gwtproject_user_client_ui_Widget(this.f_loadingIndicator__org_gwtproject_user_cellview_client_CellBrowser_);
   }
@@ -358,12 +266,8 @@ class CellBrowser extends AbstractCellTree {
   display.m_setKeyboardSelectionPolicy__org_gwtproject_user_cellview_client_HasKeyboardSelectionPolicy_KeyboardSelectionPolicy(KeyboardSelectionPolicy.f_ENABLED__org_gwtproject_user_cellview_client_HasKeyboardSelectionPolicy_KeyboardSelectionPolicy);
   return display;
  }
- /**
-  * @param {ImageResource} res
-  * @return {SafeHtml}
-  * @public
-  */
- m_getImageHtml__org_gwtproject_resources_client_ImageResource_$p_org_gwtproject_user_cellview_client_CellBrowser(res) {
+ /** @return {SafeHtml} */
+ m_getImageHtml__org_gwtproject_resources_client_ImageResource_$p_org_gwtproject_user_cellview_client_CellBrowser(/** ImageResource */ res) {
   let proto = AbstractImagePrototype.m_create__org_gwtproject_resources_client_ImageResource(res);
   let image = proto.m_getSafeHtml__();
   let cssBuilder = SafeStylesBuilder.$create__();
@@ -376,39 +280,27 @@ class CellBrowser extends AbstractCellTree {
   cssBuilder.m_appendTrustedString__java_lang_String("height: " + res.m_getHeight__() + "px;");
   return Template.f_INSTANCE__org_gwtproject_user_cellview_client_CellBrowser_Template.m_imageWrapper__org_gwtproject_safecss_shared_SafeStyles__org_gwtproject_safehtml_shared_SafeHtml(cssBuilder.m_toSafeStyles__(), image);
  }
- /**
-  * @return {SplitLayoutPanel}
-  * @public
-  */
+ /** @return {SplitLayoutPanel} */
  m_getSplitLayoutPanel___$p_org_gwtproject_user_cellview_client_CellBrowser() {
-  return /**@type {SplitLayoutPanel} */ ($Casts.$to(this.m_getWidget__(), SplitLayoutPanel));
+  return /**@type {SplitLayoutPanel}*/ ($Casts.$to(this.m_getWidget__(), SplitLayoutPanel));
  }
- /**
-  * @param {number} level
-  * @public
-  */
- m_trimToLevel__int_$p_org_gwtproject_user_cellview_client_CellBrowser(level) {
+ 
+ m_trimToLevel__int_$p_org_gwtproject_user_cellview_client_CellBrowser(/** number */ level) {
   this.m_adjustScrollLock___$p_org_gwtproject_user_cellview_client_CellBrowser();
   let curLevel = this.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser.size() - 1;
   while (curLevel > level) {
-   let removed = /**@type {TreeNodeImpl<*>} */ ($Casts.$to(this.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser.removeAtIndex(curLevel), TreeNodeImpl));
+   let removed = /**@type {TreeNodeImpl<*>}*/ ($Casts.$to(this.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser.removeAtIndex(curLevel), TreeNodeImpl));
    removed.m_destroy___$p_org_gwtproject_user_cellview_client_CellBrowser_TreeNodeImpl();
    curLevel--;
   }
   if (level < this.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser.size()) {
-   let node = /**@type {TreeNodeImpl<*>} */ ($Casts.$to(this.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser.getAtIndex(level), TreeNodeImpl));
+   let node = /**@type {TreeNodeImpl<*>}*/ ($Casts.$to(this.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser.getAtIndex(level), TreeNodeImpl));
    node.f_display__org_gwtproject_user_cellview_client_CellBrowser_TreeNodeImpl_.f_focusedKey__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ = null;
    node.f_display__org_gwtproject_user_cellview_client_CellBrowser_TreeNodeImpl_.f_isFocusedOpen__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ = false;
   }
  }
- /**
-  * @template C
-  * @param {BrowserCellList<C>} cellList
-  * @param {boolean} fireEvents
-  * @return {TreeNode}
-  * @public
-  */
- m_updateChildState__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList__boolean_$p_org_gwtproject_user_cellview_client_CellBrowser(cellList, fireEvents) {
+ /** @template C @return {TreeNode} */
+ m_updateChildState__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList__boolean_$p_org_gwtproject_user_cellview_client_CellBrowser(/** BrowserCellList<C> */ cellList, /** boolean */ fireEvents) {
   if (cellList.f_isDestroyed__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_) {
    return null;
   }
@@ -416,14 +308,14 @@ class CellBrowser extends AbstractCellTree {
   let newKey = cellList.m_getValueKey__java_lang_Object(newValue);
   let closedNode = null;
   if (!$Equality.$same(cellList.f_focusedKey__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_, null) && cellList.f_isFocusedOpen__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ && !$Objects.m_equals__java_lang_Object__java_lang_Object(cellList.f_focusedKey__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_, newKey)) {
-   closedNode = (this.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser.size() > cellList.f_level__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ + 1) ? /**@type {TreeNodeImpl<*>} */ ($Casts.$to(this.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser.getAtIndex(cellList.f_level__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ + 1), TreeNodeImpl)) : null;
+   closedNode = (this.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser.size() > cellList.f_level__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ + 1) ? /**@type {TreeNodeImpl<*>}*/ ($Casts.$to(this.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser.getAtIndex(cellList.f_level__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ + 1), TreeNodeImpl)) : null;
    this.m_trimToLevel__int_$p_org_gwtproject_user_cellview_client_CellBrowser(cellList.f_level__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_);
   }
   let openNode = null;
   let justOpenedNode = false;
   if (!$Equality.$same(newKey, null)) {
    if ($Objects.m_equals__java_lang_Object__java_lang_Object(newKey, cellList.f_focusedKey__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_)) {
-    openNode = cellList.f_isFocusedOpen__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ ? /**@type {TreeNodeImpl<*>} */ ($Casts.$to(this.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser.getAtIndex(cellList.f_level__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ + 1), TreeNodeImpl)) : null;
+    openNode = cellList.f_isFocusedOpen__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ ? /**@type {TreeNodeImpl<*>}*/ ($Casts.$to(this.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser.getAtIndex(cellList.f_level__org_gwtproject_user_cellview_client_CellBrowser_BrowserCellList_ + 1), TreeNodeImpl)) : null;
    } else {
     if ($Equality.$same(KeyboardSelectionPolicy.f_BOUND_TO_SELECTION__org_gwtproject_user_cellview_client_HasKeyboardSelectionPolicy_KeyboardSelectionPolicy, this.m_getKeyboardSelectionPolicy__())) {
      cellList.m_setSelectedValue__java_lang_Object(newValue);
@@ -447,41 +339,28 @@ class CellBrowser extends AbstractCellTree {
   }
   return ($Equality.$same(openNode, null) || openNode.m_isDestroyed__()) ? null : openNode;
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_cellview_client_CellBrowser() {
-  this.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser = /**@type {!ArrayList<TreeNodeImpl<?>>} */ (ArrayList.$create__());
+  this.f_treeNodes__org_gwtproject_user_cellview_client_CellBrowser = /**@type {!ArrayList<TreeNodeImpl<?>>}*/ (ArrayList.$create__());
   this.f_animation__org_gwtproject_user_cellview_client_CellBrowser_ = ScrollAnimation.$create__org_gwtproject_user_cellview_client_CellBrowser(this);
   this.f_defaultWidth__org_gwtproject_user_cellview_client_CellBrowser_ = 200;
  }
- /**
-  * @return {SafeHtml}
-  * @public
-  */
+ /** @return {SafeHtml} */
  static get f_LEAF_IMAGE__org_gwtproject_user_cellview_client_CellBrowser_() {
   return (CellBrowser.$clinit(), CellBrowser.$f_LEAF_IMAGE__org_gwtproject_user_cellview_client_CellBrowser_);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CellBrowser.$clinit = () =>{};
   CellBrowser.$loadModules();
   AbstractCellTree.$clinit();
   CellBrowser.$f_LEAF_IMAGE__org_gwtproject_user_cellview_client_CellBrowser_ = SafeHtmlUtils.m_fromSafeConstant__java_lang_String("<div style='position:absolute;display:none;'></div>");
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CellBrowser;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   ArrayList = goog.module.get('java.util.ArrayList$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
@@ -522,9 +401,9 @@ ProvidesResize.$markImplementor(CellBrowser);
 RequiresResize.$markImplementor(CellBrowser);
 HasAnimation.$markImplementor(CellBrowser);
 
-/** @public {Resources} */
+/**@type {Resources}*/
 CellBrowser.f_DEFAULT_RESOURCES__org_gwtproject_user_cellview_client_CellBrowser_;
-/** @private {SafeHtml} */
+/**@private {SafeHtml}*/
 CellBrowser.$f_LEAF_IMAGE__org_gwtproject_user_cellview_client_CellBrowser_;
 
 exports = CellBrowser; 

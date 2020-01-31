@@ -22,108 +22,64 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @implements {HasCssName}
   */
 class VerticalAlign extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_dom_style_shared_VerticalAlign__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_dom_style_shared_VerticalAlign__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @abstract
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @override @return {?string} */
  m_getCssName__() {}
- /**
-  * @param {string} name
-  * @return {!VerticalAlign}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!VerticalAlign} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   VerticalAlign.$clinit();
   if ($Equality.$same(VerticalAlign.f_namesToValuesMap__org_gwtproject_dom_style_shared_VerticalAlign_, null)) {
    VerticalAlign.f_namesToValuesMap__org_gwtproject_dom_style_shared_VerticalAlign_ = $Enums.createMapFromValues(VerticalAlign.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, VerticalAlign.f_namesToValuesMap__org_gwtproject_dom_style_shared_VerticalAlign_);
  }
- /**
-  * @return {!Array<!VerticalAlign>}
-  * @public
-  */
+ /** @return {!Array<!VerticalAlign>} */
  static m_values__() {
   VerticalAlign.$clinit();
-  return /**@type {!Array<VerticalAlign>} */ ($Arrays.$init([VerticalAlign.$f_BASELINE__org_gwtproject_dom_style_shared_VerticalAlign, VerticalAlign.$f_SUB__org_gwtproject_dom_style_shared_VerticalAlign, VerticalAlign.$f_SUPER__org_gwtproject_dom_style_shared_VerticalAlign, VerticalAlign.$f_TOP__org_gwtproject_dom_style_shared_VerticalAlign, VerticalAlign.$f_TEXT_TOP__org_gwtproject_dom_style_shared_VerticalAlign, VerticalAlign.$f_MIDDLE__org_gwtproject_dom_style_shared_VerticalAlign, VerticalAlign.$f_BOTTOM__org_gwtproject_dom_style_shared_VerticalAlign, VerticalAlign.$f_TEXT_BOTTOM__org_gwtproject_dom_style_shared_VerticalAlign], VerticalAlign));
+  return /**@type {!Array<VerticalAlign>}*/ ($Arrays.$init([VerticalAlign.$f_BASELINE__org_gwtproject_dom_style_shared_VerticalAlign, VerticalAlign.$f_SUB__org_gwtproject_dom_style_shared_VerticalAlign, VerticalAlign.$f_SUPER__org_gwtproject_dom_style_shared_VerticalAlign, VerticalAlign.$f_TOP__org_gwtproject_dom_style_shared_VerticalAlign, VerticalAlign.$f_TEXT_TOP__org_gwtproject_dom_style_shared_VerticalAlign, VerticalAlign.$f_MIDDLE__org_gwtproject_dom_style_shared_VerticalAlign, VerticalAlign.$f_BOTTOM__org_gwtproject_dom_style_shared_VerticalAlign, VerticalAlign.$f_TEXT_BOTTOM__org_gwtproject_dom_style_shared_VerticalAlign], VerticalAlign));
  }
- /**
-  * @return {!VerticalAlign}
-  * @public
-  */
+ /** @return {!VerticalAlign} */
  static get f_BASELINE__org_gwtproject_dom_style_shared_VerticalAlign() {
   return (VerticalAlign.$clinit(), VerticalAlign.$f_BASELINE__org_gwtproject_dom_style_shared_VerticalAlign);
  }
- /**
-  * @return {!VerticalAlign}
-  * @public
-  */
+ /** @return {!VerticalAlign} */
  static get f_SUB__org_gwtproject_dom_style_shared_VerticalAlign() {
   return (VerticalAlign.$clinit(), VerticalAlign.$f_SUB__org_gwtproject_dom_style_shared_VerticalAlign);
  }
- /**
-  * @return {!VerticalAlign}
-  * @public
-  */
+ /** @return {!VerticalAlign} */
  static get f_SUPER__org_gwtproject_dom_style_shared_VerticalAlign() {
   return (VerticalAlign.$clinit(), VerticalAlign.$f_SUPER__org_gwtproject_dom_style_shared_VerticalAlign);
  }
- /**
-  * @return {!VerticalAlign}
-  * @public
-  */
+ /** @return {!VerticalAlign} */
  static get f_TOP__org_gwtproject_dom_style_shared_VerticalAlign() {
   return (VerticalAlign.$clinit(), VerticalAlign.$f_TOP__org_gwtproject_dom_style_shared_VerticalAlign);
  }
- /**
-  * @return {!VerticalAlign}
-  * @public
-  */
+ /** @return {!VerticalAlign} */
  static get f_TEXT_TOP__org_gwtproject_dom_style_shared_VerticalAlign() {
   return (VerticalAlign.$clinit(), VerticalAlign.$f_TEXT_TOP__org_gwtproject_dom_style_shared_VerticalAlign);
  }
- /**
-  * @return {!VerticalAlign}
-  * @public
-  */
+ /** @return {!VerticalAlign} */
  static get f_MIDDLE__org_gwtproject_dom_style_shared_VerticalAlign() {
   return (VerticalAlign.$clinit(), VerticalAlign.$f_MIDDLE__org_gwtproject_dom_style_shared_VerticalAlign);
  }
- /**
-  * @return {!VerticalAlign}
-  * @public
-  */
+ /** @return {!VerticalAlign} */
  static get f_BOTTOM__org_gwtproject_dom_style_shared_VerticalAlign() {
   return (VerticalAlign.$clinit(), VerticalAlign.$f_BOTTOM__org_gwtproject_dom_style_shared_VerticalAlign);
  }
- /**
-  * @return {!VerticalAlign}
-  * @public
-  */
+ /** @return {!VerticalAlign} */
  static get f_TEXT_BOTTOM__org_gwtproject_dom_style_shared_VerticalAlign() {
   return (VerticalAlign.$clinit(), VerticalAlign.$f_TEXT_BOTTOM__org_gwtproject_dom_style_shared_VerticalAlign);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   VerticalAlign.$clinit = () =>{};
   VerticalAlign.$loadModules();
@@ -138,17 +94,11 @@ class VerticalAlign extends Enum {
   VerticalAlign.$f_TEXT_BOTTOM__org_gwtproject_dom_style_shared_VerticalAlign = $8.$create__java_lang_String__int($Util.$makeEnumName("TEXT_BOTTOM"), VerticalAlign.$ordinal$f_TEXT_BOTTOM__org_gwtproject_dom_style_shared_VerticalAlign);
   VerticalAlign.f_namesToValuesMap__org_gwtproject_dom_style_shared_VerticalAlign_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof VerticalAlign;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.gwtproject.dom.style.shared.VerticalAlign.$1$impl');
@@ -168,39 +118,39 @@ $Util.$setClassMetadataForEnum(VerticalAlign, 'org.gwtproject.dom.style.shared.V
 
 HasCssName.$markImplementor(VerticalAlign);
 
-/** @private {!VerticalAlign} */
+/**@private {!VerticalAlign}*/
 VerticalAlign.$f_BASELINE__org_gwtproject_dom_style_shared_VerticalAlign;
-/** @private {!VerticalAlign} */
+/**@private {!VerticalAlign}*/
 VerticalAlign.$f_SUB__org_gwtproject_dom_style_shared_VerticalAlign;
-/** @private {!VerticalAlign} */
+/**@private {!VerticalAlign}*/
 VerticalAlign.$f_SUPER__org_gwtproject_dom_style_shared_VerticalAlign;
-/** @private {!VerticalAlign} */
+/**@private {!VerticalAlign}*/
 VerticalAlign.$f_TOP__org_gwtproject_dom_style_shared_VerticalAlign;
-/** @private {!VerticalAlign} */
+/**@private {!VerticalAlign}*/
 VerticalAlign.$f_TEXT_TOP__org_gwtproject_dom_style_shared_VerticalAlign;
-/** @private {!VerticalAlign} */
+/**@private {!VerticalAlign}*/
 VerticalAlign.$f_MIDDLE__org_gwtproject_dom_style_shared_VerticalAlign;
-/** @private {!VerticalAlign} */
+/**@private {!VerticalAlign}*/
 VerticalAlign.$f_BOTTOM__org_gwtproject_dom_style_shared_VerticalAlign;
-/** @private {!VerticalAlign} */
+/**@private {!VerticalAlign}*/
 VerticalAlign.$f_TEXT_BOTTOM__org_gwtproject_dom_style_shared_VerticalAlign;
-/** @public {Map<?string, !VerticalAlign>} */
+/**@type {Map<?string, !VerticalAlign>}*/
 VerticalAlign.f_namesToValuesMap__org_gwtproject_dom_style_shared_VerticalAlign_;
-/** @public {number} @const */
+/**@const {number}*/
 VerticalAlign.$ordinal$f_BASELINE__org_gwtproject_dom_style_shared_VerticalAlign = 0;
-/** @public {number} @const */
+/**@const {number}*/
 VerticalAlign.$ordinal$f_SUB__org_gwtproject_dom_style_shared_VerticalAlign = 1;
-/** @public {number} @const */
+/**@const {number}*/
 VerticalAlign.$ordinal$f_SUPER__org_gwtproject_dom_style_shared_VerticalAlign = 2;
-/** @public {number} @const */
+/**@const {number}*/
 VerticalAlign.$ordinal$f_TOP__org_gwtproject_dom_style_shared_VerticalAlign = 3;
-/** @public {number} @const */
+/**@const {number}*/
 VerticalAlign.$ordinal$f_TEXT_TOP__org_gwtproject_dom_style_shared_VerticalAlign = 4;
-/** @public {number} @const */
+/**@const {number}*/
 VerticalAlign.$ordinal$f_MIDDLE__org_gwtproject_dom_style_shared_VerticalAlign = 5;
-/** @public {number} @const */
+/**@const {number}*/
 VerticalAlign.$ordinal$f_BOTTOM__org_gwtproject_dom_style_shared_VerticalAlign = 6;
-/** @public {number} @const */
+/**@const {number}*/
 VerticalAlign.$ordinal$f_TEXT_BOTTOM__org_gwtproject_dom_style_shared_VerticalAlign = 7;
 
 exports = VerticalAlign; 

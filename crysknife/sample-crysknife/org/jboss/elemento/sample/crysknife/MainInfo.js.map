@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MainInfo.impl.java.js",
-"lineCount":58,
-"mappings":"A;;;;;MAIa,Q;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,mB;EAAAA,+B;EAAAA,kE;EAAAA,iB;;;;;CAAA,qD;EAAAC,iC;;;;;QAAA,O;EAAAC,2B;EAAAA,wB;EAAAA,qB;;;;;;;;;;;;;;;;;;AAET;SAA2B,0DAA3B,4D;AAEA;SAA2B,2DAA3B,6D;AAEA;SAA2B,sDAA3B;",
+"lineCount":43,
+"mappings":"A;;;;;MAIa,Q;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,mB;EAAAA,+B;EAAAA,kE;EAAAA,iB;;;CAAA,qD;EAAAC,iC;;;QAAA,O;EAAAC,2B;EAAAA,wB;EAAAA,qB;;;;;;;;;;;;AAET;SAA2B,0DAA3B,4D;AAEA;SAA2B,2DAA3B,6D;AAEA;SAA2B,sDAA3B;",
 "sources":["MainInfo.java"],
 "names":["org.jboss.elemento.sample.crysknife.MainInfo.<synthetic: ctor_js>","org.jboss.elemento.sample.crysknife.MainInfo.<synthetic: ctor_create>","org.jboss.elemento.sample.crysknife.MainInfo.<init>","org.jboss.elemento.sample.crysknife.MainInfo.<clinit>"]
 }

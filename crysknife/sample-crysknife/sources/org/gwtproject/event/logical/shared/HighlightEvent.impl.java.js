@@ -15,108 +15,68 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @extends {Event<HighlightHandler<V>>}
   */
 class HighlightEvent extends Event {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {V} */
+  /**@type {V}*/
   this.f_highlighted__org_gwtproject_event_logical_shared_HighlightEvent_;
  }
- /**
-  * @template V_1, S
-  * @param {S} source
-  * @param {V_1} highlighted
-  * @public
-  */
- static m_fire__org_gwtproject_event_logical_shared_HasHighlightHandlers__java_lang_Object(source, highlighted) {
+ /** @template V_1, S */
+ static m_fire__org_gwtproject_event_logical_shared_HasHighlightHandlers__java_lang_Object(/** S */ source, /** V_1 */ highlighted) {
   HighlightEvent.$clinit();
   if (!$Equality.$same(HighlightEvent.f_TYPE__org_gwtproject_event_logical_shared_HighlightEvent_, null)) {
-   let event = /**@type {!HighlightEvent<V_1>} */ (HighlightEvent.$create__java_lang_Object(highlighted));
-   /**@type {HasHighlightHandlers} */ (source).m_fireEvent__org_gwtproject_event_shared_Event(event);
+   let event = /**@type {!HighlightEvent<V_1>}*/ (HighlightEvent.$create__java_lang_Object(highlighted));
+   /**@type {HasHighlightHandlers}*/ (source).m_fireEvent__org_gwtproject_event_shared_Event(event);
   }
  }
- /**
-  * @return {Type<HighlightHandler<?>>}
-  * @public
-  */
+ /** @return {Type<HighlightHandler<?>>} */
  static m_getType__() {
   HighlightEvent.$clinit();
   if ($Equality.$same(HighlightEvent.f_TYPE__org_gwtproject_event_logical_shared_HighlightEvent_, null)) {
-   HighlightEvent.f_TYPE__org_gwtproject_event_logical_shared_HighlightEvent_ = /**@type {!Type<HighlightHandler<?>>} */ (Type.$create__());
+   HighlightEvent.f_TYPE__org_gwtproject_event_logical_shared_HighlightEvent_ = /**@type {!Type<HighlightHandler<?>>}*/ (Type.$create__());
   }
   return HighlightEvent.f_TYPE__org_gwtproject_event_logical_shared_HighlightEvent_;
  }
- /**
-  * @template V
-  * @param {V} highlighted
-  * @return {!HighlightEvent<V>}
-  * @public
-  */
- static $create__java_lang_Object(highlighted) {
+ /** @template V @return {!HighlightEvent<V>} */
+ static $create__java_lang_Object(/** V */ highlighted) {
   HighlightEvent.$clinit();
   let $instance = new HighlightEvent();
   $instance.$ctor__org_gwtproject_event_logical_shared_HighlightEvent__java_lang_Object(highlighted);
   return $instance;
  }
- /**
-  * @param {V} highlighted
-  * @public
-  */
- $ctor__org_gwtproject_event_logical_shared_HighlightEvent__java_lang_Object(highlighted) {
+ 
+ $ctor__org_gwtproject_event_logical_shared_HighlightEvent__java_lang_Object(/** V */ highlighted) {
   this.$ctor__org_gwtproject_event_shared_Event__();
   this.f_highlighted__org_gwtproject_event_logical_shared_HighlightEvent_ = highlighted;
  }
- /**
-  * @override
-  * @return {Type<HighlightHandler<V>>}
-  * @public
-  */
+ /** @override @return {Type<HighlightHandler<V>>} */
  m_getAssociatedType__() {
-  return /**@type {Type} */ (HighlightEvent.f_TYPE__org_gwtproject_event_logical_shared_HighlightEvent_);
+  return /**@type {Type}*/ (HighlightEvent.f_TYPE__org_gwtproject_event_logical_shared_HighlightEvent_);
  }
- /**
-  * @return {V}
-  * @public
-  */
+ /** @return {V} */
  m_getHighlighted__() {
   return this.f_highlighted__org_gwtproject_event_logical_shared_HighlightEvent_;
  }
- /**
-  * @param {HighlightHandler<V>} handler
-  * @public
-  */
- m_dispatch__org_gwtproject_event_logical_shared_HighlightHandler(handler) {
+ 
+ m_dispatch__org_gwtproject_event_logical_shared_HighlightHandler(/** HighlightHandler<V> */ handler) {
   handler.m_onHighlight__org_gwtproject_event_logical_shared_HighlightEvent(this);
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @public
-  */
- m_dispatch__java_lang_Object(arg0) {
-  this.m_dispatch__org_gwtproject_event_logical_shared_HighlightHandler(/**@type {HighlightHandler<V>} */ ($Casts.$to(arg0, HighlightHandler)));
+ //Bridge method.
+ /** @override */
+ m_dispatch__java_lang_Object(/** * */ arg0) {
+  this.m_dispatch__org_gwtproject_event_logical_shared_HighlightHandler(/**@type {HighlightHandler<V>}*/ ($Casts.$to(arg0, HighlightHandler)));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   HighlightEvent.$clinit = () =>{};
   HighlightEvent.$loadModules();
   Event.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof HighlightEvent;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   HighlightHandler = goog.module.get('org.gwtproject.event.logical.shared.HighlightHandler$impl');
@@ -127,7 +87,7 @@ class HighlightEvent extends Event {
 }
 $Util.$setClassMetadata(HighlightEvent, 'org.gwtproject.event.logical.shared.HighlightEvent');
 
-/** @public {Type<HighlightHandler<?>>} */
+/**@type {Type<HighlightHandler<?>>}*/
 HighlightEvent.f_TYPE__org_gwtproject_event_logical_shared_HighlightEvent_;
 
 exports = HighlightEvent; 

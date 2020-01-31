@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Image$State$1.impl.java.js",
-"lineCount":72,
-"mappings":"A;;;;;;;;;;;;;;;;MAgwB2D,E;;;;CAAA,W;EAAAA,Q;EAAAA;kE;EAAAA;OAPDC,QAOCD,C;;;;;;;;QAAA,uF;EAAAE,a;EAAAA,yB;EAAAA,oK;EAAAA,iB;;;;;;;CAAA,kI;EAAAC,8E;EAAAA,yB;EAAAA,iC;;;;;;CAC/B,W;EAKRC;GACIA,OADJA;G;EAGAA,2I;EAQAA;GACIA,uXADJA;GAEIA,OAFJA;G;EAKAA,IAAYC,GAAZD,iH;EACAA,wP;;;;;QAvBuC,O;EAAAE,qB;EAAAA,kB;EAAAA;",
+"lineCount":56,
+"mappings":"A;;;;;;;;;;;;;;;;MAgwB2D,E;;CAAA,W;EAAAA,Q;EAAAA;kE;EAAAA;OAPDC,QAOCD,C;;;QAAA,uF;EAAAE,a;EAAAA,yB;EAAAA,oK;EAAAA,iB;;;CAAA,kI;EAAAC,8E;EAAAA,yB;EAAAA,iC;;;CAC/B,W;EAKRC;GACIA,OADJA;G;EAGAA,2I;EAQAA;GACIA,uXADJA;GAEIA,OAFJA;G;EAKAA,IAAYC,GAAZD,iH;EACAA,wP;;;QAvBuC,O;EAAAE,qB;EAAAA,kB;EAAAA;",
 "sources":["Image.java"],
 "names":["org.gwtproject.user.client.ui.Image$State$1.<synthetic: ctor_js>","image","org.gwtproject.user.client.ui.Image$State$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.Image$State$1.<init>","org.gwtproject.user.client.ui.Image$State$1.execute","evt","org.gwtproject.user.client.ui.Image$State$1.<clinit>"]
 }

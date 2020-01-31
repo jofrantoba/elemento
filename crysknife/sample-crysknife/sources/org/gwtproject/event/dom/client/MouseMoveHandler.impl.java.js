@@ -11,50 +11,29 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.event.dom.client.MouseM
  * @extends {EventHandler}
  */
 class MouseMoveHandler {
- /**
-  * @abstract
-  * @param {MouseMoveEvent} event
-  * @public
-  */
- m_onMouseMove__org_gwtproject_event_dom_client_MouseMoveEvent(event) {}
- /**
-  * @param {?function(MouseMoveEvent):void} fn
-  * @return {MouseMoveHandler}
-  * @public
-  */
- static $adapt(fn) {
+ /** @abstract */
+ m_onMouseMove__org_gwtproject_event_dom_client_MouseMoveEvent(/** MouseMoveEvent */ event) {}
+ /** @return {MouseMoveHandler} */
+ static $adapt(/** ?function(MouseMoveEvent):void */ fn) {
   MouseMoveHandler.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   MouseMoveHandler.$clinit = () =>{};
   MouseMoveHandler.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  EventHandler.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_event_dom_client_MouseMoveHandler = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  EventHandler.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_event_dom_client_MouseMoveHandler = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_event_dom_client_MouseMoveHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.event.dom.client.MouseMoveHandler.$LambdaAdaptor$impl');
  }

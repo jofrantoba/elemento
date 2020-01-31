@@ -59,855 +59,309 @@ let SafeHtml = goog.forwardDeclare('org.gwtproject.safehtml.shared.SafeHtml$impl
  * @template T
  */
 class ElementBuilderBase {
- /**
-  * @abstract
-  * @param {?string} name
-  * @param {number} value
-  * @return {T}
-  * @public
-  */
- m_attribute__java_lang_String__int(name, value) {}
- /**
-  * @abstract
-  * @param {?string} name
-  * @param {?string} value
-  * @return {T}
-  * @public
-  */
- m_attribute__java_lang_String__java_lang_String(name, value) {}
- /**
-  * @abstract
-  * @param {?string} className
-  * @return {T}
-  * @public
-  */
- m_className__java_lang_String(className) {}
- /**
-  * @abstract
-  * @param {?string} dir
-  * @return {T}
-  * @public
-  */
- m_dir__java_lang_String(dir) {}
- /**
-  * @abstract
-  * @param {?string} draggable
-  * @return {T}
-  * @public
-  */
- m_draggable__java_lang_String(draggable) {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract @return {T} */
+ m_attribute__java_lang_String__int(/** ?string */ name, /** number */ value) {}
+ /** @abstract @return {T} */
+ m_attribute__java_lang_String__java_lang_String(/** ?string */ name, /** ?string */ value) {}
+ /** @abstract @return {T} */
+ m_className__java_lang_String(/** ?string */ className) {}
+ /** @abstract @return {T} */
+ m_dir__java_lang_String(/** ?string */ dir) {}
+ /** @abstract @return {T} */
+ m_draggable__java_lang_String(/** ?string */ draggable) {}
+ /** @abstract */
  m_end__() {}
- /**
-  * @abstract
-  * @param {?string} tagName
-  * @public
-  */
- m_end__java_lang_String(tagName) {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
+ m_end__java_lang_String(/** ?string */ tagName) {}
+ /** @abstract */
  m_endAnchor__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endArea__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endAudio__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endBase__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endBlockQuote__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endBody__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endBR__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endButton__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endCanvas__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endCol__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endColGroup__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endDiv__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endDList__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endFieldSet__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endForm__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endFrame__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endFrameSet__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endH1__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endH2__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endH3__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endH4__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endH5__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endH6__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endHead__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endHR__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endIFrame__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endImage__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endInput__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endLabel__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endLegend__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endLI__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endLink__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endMap__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endMeta__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endOList__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endOptGroup__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endOption__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endParagraph__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endParam__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endPre__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endQuote__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endScript__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endSelect__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endSource__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endSpan__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endStyle__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endTable__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endTableCaption__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endTBody__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endTD__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endTextArea__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endTFoot__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endTH__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endTHead__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endTR__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endUList__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_endVideo__() {}
- /**
-  * @abstract
-  * @return {Object}
-  * @public
-  */
+ /** @abstract @return {Object} */
  m_finish__() {}
- /**
-  * @abstract
-  * @return {number}
-  * @public
-  */
+ /** @abstract @return {number} */
  m_getDepth__() {}
- /**
-  * @abstract
-  * @param {SafeHtml} html
-  * @return {T}
-  * @public
-  */
- m_html__org_gwtproject_safehtml_shared_SafeHtml(html) {}
- /**
-  * @abstract
-  * @param {?string} id
-  * @return {T}
-  * @public
-  */
- m_id__java_lang_String(id) {}
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {T} */
+ m_html__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {}
+ /** @abstract @return {T} */
+ m_id__java_lang_String(/** ?string */ id) {}
+ /** @abstract @return {boolean} */
  m_isChildElementSupported__() {}
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_isEndTagForbidden__() {}
- /**
-  * @abstract
-  * @param {?string} lang
-  * @return {T}
-  * @public
-  */
- m_lang__java_lang_String(lang) {}
- /**
-  * @abstract
-  * @return {AnchorBuilder}
-  * @public
-  */
+ /** @abstract @return {T} */
+ m_lang__java_lang_String(/** ?string */ lang) {}
+ /** @abstract @return {AnchorBuilder} */
  m_startAnchor__() {}
- /**
-  * @abstract
-  * @return {AreaBuilder}
-  * @public
-  */
+ /** @abstract @return {AreaBuilder} */
  m_startArea__() {}
- /**
-  * @abstract
-  * @return {AudioBuilder}
-  * @public
-  */
+ /** @abstract @return {AudioBuilder} */
  m_startAudio__() {}
- /**
-  * @abstract
-  * @return {BaseBuilder}
-  * @public
-  */
+ /** @abstract @return {BaseBuilder} */
  m_startBase__() {}
- /**
-  * @abstract
-  * @return {QuoteBuilder}
-  * @public
-  */
+ /** @abstract @return {QuoteBuilder} */
  m_startBlockQuote__() {}
- /**
-  * @abstract
-  * @return {BodyBuilder}
-  * @public
-  */
+ /** @abstract @return {BodyBuilder} */
  m_startBody__() {}
- /**
-  * @abstract
-  * @return {BRBuilder}
-  * @public
-  */
+ /** @abstract @return {BRBuilder} */
  m_startBR__() {}
- /**
-  * @abstract
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @abstract @return {InputBuilder} */
  m_startButtonInput__() {}
- /**
-  * @abstract
-  * @return {CanvasBuilder}
-  * @public
-  */
+ /** @abstract @return {CanvasBuilder} */
  m_startCanvas__() {}
- /**
-  * @abstract
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @abstract @return {InputBuilder} */
  m_startCheckboxInput__() {}
- /**
-  * @abstract
-  * @return {TableColBuilder}
-  * @public
-  */
+ /** @abstract @return {TableColBuilder} */
  m_startCol__() {}
- /**
-  * @abstract
-  * @return {TableColBuilder}
-  * @public
-  */
+ /** @abstract @return {TableColBuilder} */
  m_startColGroup__() {}
- /**
-  * @abstract
-  * @return {DivBuilder}
-  * @public
-  */
+ /** @abstract @return {DivBuilder} */
  m_startDiv__() {}
- /**
-  * @abstract
-  * @return {DListBuilder}
-  * @public
-  */
+ /** @abstract @return {DListBuilder} */
  m_startDList__() {}
- /**
-  * @abstract
-  * @return {FieldSetBuilder}
-  * @public
-  */
+ /** @abstract @return {FieldSetBuilder} */
  m_startFieldSet__() {}
- /**
-  * @abstract
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @abstract @return {InputBuilder} */
  m_startFileInput__() {}
- /**
-  * @abstract
-  * @return {FormBuilder}
-  * @public
-  */
+ /** @abstract @return {FormBuilder} */
  m_startForm__() {}
- /**
-  * @abstract
-  * @return {FrameBuilder}
-  * @public
-  */
+ /** @abstract @return {FrameBuilder} */
  m_startFrame__() {}
- /**
-  * @abstract
-  * @return {FrameSetBuilder}
-  * @public
-  */
+ /** @abstract @return {FrameSetBuilder} */
  m_startFrameSet__() {}
- /**
-  * @abstract
-  * @return {HeadingBuilder}
-  * @public
-  */
+ /** @abstract @return {HeadingBuilder} */
  m_startH1__() {}
- /**
-  * @abstract
-  * @return {HeadingBuilder}
-  * @public
-  */
+ /** @abstract @return {HeadingBuilder} */
  m_startH2__() {}
- /**
-  * @abstract
-  * @return {HeadingBuilder}
-  * @public
-  */
+ /** @abstract @return {HeadingBuilder} */
  m_startH3__() {}
- /**
-  * @abstract
-  * @return {HeadingBuilder}
-  * @public
-  */
+ /** @abstract @return {HeadingBuilder} */
  m_startH4__() {}
- /**
-  * @abstract
-  * @return {HeadingBuilder}
-  * @public
-  */
+ /** @abstract @return {HeadingBuilder} */
  m_startH5__() {}
- /**
-  * @abstract
-  * @return {HeadingBuilder}
-  * @public
-  */
+ /** @abstract @return {HeadingBuilder} */
  m_startH6__() {}
- /**
-  * @abstract
-  * @return {HeadBuilder}
-  * @public
-  */
+ /** @abstract @return {HeadBuilder} */
  m_startHead__() {}
- /**
-  * @abstract
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @abstract @return {InputBuilder} */
  m_startHiddenInput__() {}
- /**
-  * @abstract
-  * @return {HRBuilder}
-  * @public
-  */
+ /** @abstract @return {HRBuilder} */
  m_startHR__() {}
- /**
-  * @abstract
-  * @return {IFrameBuilder}
-  * @public
-  */
+ /** @abstract @return {IFrameBuilder} */
  m_startIFrame__() {}
- /**
-  * @abstract
-  * @return {ImageBuilder}
-  * @public
-  */
+ /** @abstract @return {ImageBuilder} */
  m_startImage__() {}
- /**
-  * @abstract
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @abstract @return {InputBuilder} */
  m_startImageInput__() {}
- /**
-  * @abstract
-  * @return {LabelBuilder}
-  * @public
-  */
+ /** @abstract @return {LabelBuilder} */
  m_startLabel__() {}
- /**
-  * @abstract
-  * @return {LegendBuilder}
-  * @public
-  */
+ /** @abstract @return {LegendBuilder} */
  m_startLegend__() {}
- /**
-  * @abstract
-  * @return {LIBuilder}
-  * @public
-  */
+ /** @abstract @return {LIBuilder} */
  m_startLI__() {}
- /**
-  * @abstract
-  * @return {LinkBuilder}
-  * @public
-  */
+ /** @abstract @return {LinkBuilder} */
  m_startLink__() {}
- /**
-  * @abstract
-  * @return {MapBuilder}
-  * @public
-  */
+ /** @abstract @return {MapBuilder} */
  m_startMap__() {}
- /**
-  * @abstract
-  * @return {MetaBuilder}
-  * @public
-  */
+ /** @abstract @return {MetaBuilder} */
  m_startMeta__() {}
- /**
-  * @abstract
-  * @return {OListBuilder}
-  * @public
-  */
+ /** @abstract @return {OListBuilder} */
  m_startOList__() {}
- /**
-  * @abstract
-  * @return {OptGroupBuilder}
-  * @public
-  */
+ /** @abstract @return {OptGroupBuilder} */
  m_startOptGroup__() {}
- /**
-  * @abstract
-  * @return {OptionBuilder}
-  * @public
-  */
+ /** @abstract @return {OptionBuilder} */
  m_startOption__() {}
- /**
-  * @abstract
-  * @return {ParagraphBuilder}
-  * @public
-  */
+ /** @abstract @return {ParagraphBuilder} */
  m_startParagraph__() {}
- /**
-  * @abstract
-  * @return {ParamBuilder}
-  * @public
-  */
+ /** @abstract @return {ParamBuilder} */
  m_startParam__() {}
- /**
-  * @abstract
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @abstract @return {InputBuilder} */
  m_startPasswordInput__() {}
- /**
-  * @abstract
-  * @return {PreBuilder}
-  * @public
-  */
+ /** @abstract @return {PreBuilder} */
  m_startPre__() {}
- /**
-  * @abstract
-  * @return {ButtonBuilder}
-  * @public
-  */
+ /** @abstract @return {ButtonBuilder} */
  m_startPushButton__() {}
- /**
-  * @abstract
-  * @return {QuoteBuilder}
-  * @public
-  */
+ /** @abstract @return {QuoteBuilder} */
  m_startQuote__() {}
- /**
-  * @abstract
-  * @param {?string} name
-  * @return {InputBuilder}
-  * @public
-  */
- m_startRadioInput__java_lang_String(name) {}
- /**
-  * @abstract
-  * @return {ButtonBuilder}
-  * @public
-  */
+ /** @abstract @return {InputBuilder} */
+ m_startRadioInput__java_lang_String(/** ?string */ name) {}
+ /** @abstract @return {ButtonBuilder} */
  m_startResetButton__() {}
- /**
-  * @abstract
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @abstract @return {InputBuilder} */
  m_startResetInput__() {}
- /**
-  * @abstract
-  * @return {ScriptBuilder}
-  * @public
-  */
+ /** @abstract @return {ScriptBuilder} */
  m_startScript__() {}
- /**
-  * @abstract
-  * @return {SelectBuilder}
-  * @public
-  */
+ /** @abstract @return {SelectBuilder} */
  m_startSelect__() {}
- /**
-  * @abstract
-  * @return {SourceBuilder}
-  * @public
-  */
+ /** @abstract @return {SourceBuilder} */
  m_startSource__() {}
- /**
-  * @abstract
-  * @return {SpanBuilder}
-  * @public
-  */
+ /** @abstract @return {SpanBuilder} */
  m_startSpan__() {}
- /**
-  * @abstract
-  * @return {StyleBuilder}
-  * @public
-  */
+ /** @abstract @return {StyleBuilder} */
  m_startStyle__() {}
- /**
-  * @abstract
-  * @return {ButtonBuilder}
-  * @public
-  */
+ /** @abstract @return {ButtonBuilder} */
  m_startSubmitButton__() {}
- /**
-  * @abstract
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @abstract @return {InputBuilder} */
  m_startSubmitInput__() {}
- /**
-  * @abstract
-  * @return {TableBuilder}
-  * @public
-  */
+ /** @abstract @return {TableBuilder} */
  m_startTable__() {}
- /**
-  * @abstract
-  * @return {TableCaptionBuilder}
-  * @public
-  */
+ /** @abstract @return {TableCaptionBuilder} */
  m_startTableCaption__() {}
- /**
-  * @abstract
-  * @return {TableSectionBuilder}
-  * @public
-  */
+ /** @abstract @return {TableSectionBuilder} */
  m_startTBody__() {}
- /**
-  * @abstract
-  * @return {TableCellBuilder}
-  * @public
-  */
+ /** @abstract @return {TableCellBuilder} */
  m_startTD__() {}
- /**
-  * @abstract
-  * @return {TextAreaBuilder}
-  * @public
-  */
+ /** @abstract @return {TextAreaBuilder} */
  m_startTextArea__() {}
- /**
-  * @abstract
-  * @return {InputBuilder}
-  * @public
-  */
+ /** @abstract @return {InputBuilder} */
  m_startTextInput__() {}
- /**
-  * @abstract
-  * @return {TableSectionBuilder}
-  * @public
-  */
+ /** @abstract @return {TableSectionBuilder} */
  m_startTFoot__() {}
- /**
-  * @abstract
-  * @return {TableCellBuilder}
-  * @public
-  */
+ /** @abstract @return {TableCellBuilder} */
  m_startTH__() {}
- /**
-  * @abstract
-  * @return {TableSectionBuilder}
-  * @public
-  */
+ /** @abstract @return {TableSectionBuilder} */
  m_startTHead__() {}
- /**
-  * @abstract
-  * @return {TableRowBuilder}
-  * @public
-  */
+ /** @abstract @return {TableRowBuilder} */
  m_startTR__() {}
- /**
-  * @abstract
-  * @return {UListBuilder}
-  * @public
-  */
+ /** @abstract @return {UListBuilder} */
  m_startUList__() {}
- /**
-  * @abstract
-  * @return {VideoBuilder}
-  * @public
-  */
+ /** @abstract @return {VideoBuilder} */
  m_startVideo__() {}
- /**
-  * @abstract
-  * @return {StylesBuilder}
-  * @public
-  */
+ /** @abstract @return {StylesBuilder} */
  m_style__() {}
- /**
-  * @abstract
-  * @param {number} tabIndex
-  * @return {T}
-  * @public
-  */
- m_tabIndex__int(tabIndex) {}
- /**
-  * @abstract
-  * @param {?string} text
-  * @return {T}
-  * @public
-  */
- m_text__java_lang_String(text) {}
- /**
-  * @abstract
-  * @param {?string} title
-  * @return {T}
-  * @public
-  */
- m_title__java_lang_String(title) {}
- /**
-  * @abstract
-  * @param {?string} tagName
-  * @return {ElementBuilder}
-  * @public
-  */
- m_trustedStart__java_lang_String(tagName) {}
- /**
-  * @public
-  */
+ /** @abstract @return {T} */
+ m_tabIndex__int(/** number */ tabIndex) {}
+ /** @abstract @return {T} */
+ m_text__java_lang_String(/** ?string */ text) {}
+ /** @abstract @return {T} */
+ m_title__java_lang_String(/** ?string */ title) {}
+ /** @abstract @return {ElementBuilder} */
+ m_trustedStart__java_lang_String(/** ?string */ tagName) {}
+ 
  static $clinit() {
   ElementBuilderBase.$clinit = () =>{};
   ElementBuilderBase.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_dom_builder_shared_ElementBuilderBase = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_dom_builder_shared_ElementBuilderBase = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_dom_builder_shared_ElementBuilderBase;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }

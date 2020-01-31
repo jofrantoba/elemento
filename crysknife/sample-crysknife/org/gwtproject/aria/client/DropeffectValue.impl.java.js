@@ -14,38 +14,23 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @implements {AriaAttributeType}
   */
 class DropeffectValue extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @return {!DropeffectValue}
-  * @public
-  */
- static $create__java_lang_String__int($name, $ordinal) {
+ /** @return {!DropeffectValue} */
+ static $create__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   let $instance = new DropeffectValue();
   $instance.$ctor__org_gwtproject_aria_client_DropeffectValue__java_lang_String__int($name, $ordinal);
   return $instance;
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @public
-  */
- $ctor__org_gwtproject_aria_client_DropeffectValue__java_lang_String__int($name, $ordinal) {
+ 
+ $ctor__org_gwtproject_aria_client_DropeffectValue__java_lang_String__int(/** ?string */ $name, /** number */ $ordinal) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
  }
- /**
-  * @override
-  * @return {?string}
-  * @public
-  */
+ /** @override @return {?string} */
  m_getAriaValue__() {
   switch (this.ordinal()) {
    case DropeffectValue.$ordinal$f_COPY__org_gwtproject_aria_client_DropeffectValue: 
@@ -63,81 +48,49 @@ class DropeffectValue extends Enum {
   }
   return null;
  }
- /**
-  * @param {string} name
-  * @return {!DropeffectValue}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!DropeffectValue} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   DropeffectValue.$clinit();
   if ($Equality.$same(DropeffectValue.f_namesToValuesMap__org_gwtproject_aria_client_DropeffectValue_, null)) {
    DropeffectValue.f_namesToValuesMap__org_gwtproject_aria_client_DropeffectValue_ = $Enums.createMapFromValues(DropeffectValue.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, DropeffectValue.f_namesToValuesMap__org_gwtproject_aria_client_DropeffectValue_);
  }
- /**
-  * @return {!Array<!DropeffectValue>}
-  * @public
-  */
+ /** @return {!Array<!DropeffectValue>} */
  static m_values__() {
   DropeffectValue.$clinit();
-  return /**@type {!Array<DropeffectValue>} */ ($Arrays.$init([DropeffectValue.$f_COPY__org_gwtproject_aria_client_DropeffectValue, DropeffectValue.$f_MOVE__org_gwtproject_aria_client_DropeffectValue, DropeffectValue.$f_LINK__org_gwtproject_aria_client_DropeffectValue, DropeffectValue.$f_EXECUTE__org_gwtproject_aria_client_DropeffectValue, DropeffectValue.$f_POPUP__org_gwtproject_aria_client_DropeffectValue, DropeffectValue.$f_NONE__org_gwtproject_aria_client_DropeffectValue], DropeffectValue));
+  return /**@type {!Array<DropeffectValue>}*/ ($Arrays.$init([DropeffectValue.$f_COPY__org_gwtproject_aria_client_DropeffectValue, DropeffectValue.$f_MOVE__org_gwtproject_aria_client_DropeffectValue, DropeffectValue.$f_LINK__org_gwtproject_aria_client_DropeffectValue, DropeffectValue.$f_EXECUTE__org_gwtproject_aria_client_DropeffectValue, DropeffectValue.$f_POPUP__org_gwtproject_aria_client_DropeffectValue, DropeffectValue.$f_NONE__org_gwtproject_aria_client_DropeffectValue], DropeffectValue));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @return {number}
-  * @public
-  */
- m_compareTo__java_lang_Object(arg0) {
-  return super.compareTo(/**@type {DropeffectValue} */ ($Casts.$to(arg0, DropeffectValue)));
+ //Bridge method.
+ /** @override @return {number} */
+ m_compareTo__java_lang_Object(/** * */ arg0) {
+  return super.compareTo(/**@type {DropeffectValue}*/ ($Casts.$to(arg0, DropeffectValue)));
  }
- /**
-  * @return {!DropeffectValue}
-  * @public
-  */
+ /** @return {!DropeffectValue} */
  static get f_COPY__org_gwtproject_aria_client_DropeffectValue() {
   return (DropeffectValue.$clinit(), DropeffectValue.$f_COPY__org_gwtproject_aria_client_DropeffectValue);
  }
- /**
-  * @return {!DropeffectValue}
-  * @public
-  */
+ /** @return {!DropeffectValue} */
  static get f_MOVE__org_gwtproject_aria_client_DropeffectValue() {
   return (DropeffectValue.$clinit(), DropeffectValue.$f_MOVE__org_gwtproject_aria_client_DropeffectValue);
  }
- /**
-  * @return {!DropeffectValue}
-  * @public
-  */
+ /** @return {!DropeffectValue} */
  static get f_LINK__org_gwtproject_aria_client_DropeffectValue() {
   return (DropeffectValue.$clinit(), DropeffectValue.$f_LINK__org_gwtproject_aria_client_DropeffectValue);
  }
- /**
-  * @return {!DropeffectValue}
-  * @public
-  */
+ /** @return {!DropeffectValue} */
  static get f_EXECUTE__org_gwtproject_aria_client_DropeffectValue() {
   return (DropeffectValue.$clinit(), DropeffectValue.$f_EXECUTE__org_gwtproject_aria_client_DropeffectValue);
  }
- /**
-  * @return {!DropeffectValue}
-  * @public
-  */
+ /** @return {!DropeffectValue} */
  static get f_POPUP__org_gwtproject_aria_client_DropeffectValue() {
   return (DropeffectValue.$clinit(), DropeffectValue.$f_POPUP__org_gwtproject_aria_client_DropeffectValue);
  }
- /**
-  * @return {!DropeffectValue}
-  * @public
-  */
+ /** @return {!DropeffectValue} */
  static get f_NONE__org_gwtproject_aria_client_DropeffectValue() {
   return (DropeffectValue.$clinit(), DropeffectValue.$f_NONE__org_gwtproject_aria_client_DropeffectValue);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DropeffectValue.$clinit = () =>{};
   DropeffectValue.$loadModules();
@@ -150,17 +103,11 @@ class DropeffectValue extends Enum {
   DropeffectValue.$f_NONE__org_gwtproject_aria_client_DropeffectValue = DropeffectValue.$create__java_lang_String__int($Util.$makeEnumName("NONE"), DropeffectValue.$ordinal$f_NONE__org_gwtproject_aria_client_DropeffectValue);
   DropeffectValue.f_namesToValuesMap__org_gwtproject_aria_client_DropeffectValue_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DropeffectValue;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
@@ -173,31 +120,31 @@ $Util.$setClassMetadataForEnum(DropeffectValue, 'org.gwtproject.aria.client.Drop
 
 AriaAttributeType.$markImplementor(DropeffectValue);
 
-/** @private {!DropeffectValue} */
+/**@private {!DropeffectValue}*/
 DropeffectValue.$f_COPY__org_gwtproject_aria_client_DropeffectValue;
-/** @private {!DropeffectValue} */
+/**@private {!DropeffectValue}*/
 DropeffectValue.$f_MOVE__org_gwtproject_aria_client_DropeffectValue;
-/** @private {!DropeffectValue} */
+/**@private {!DropeffectValue}*/
 DropeffectValue.$f_LINK__org_gwtproject_aria_client_DropeffectValue;
-/** @private {!DropeffectValue} */
+/**@private {!DropeffectValue}*/
 DropeffectValue.$f_EXECUTE__org_gwtproject_aria_client_DropeffectValue;
-/** @private {!DropeffectValue} */
+/**@private {!DropeffectValue}*/
 DropeffectValue.$f_POPUP__org_gwtproject_aria_client_DropeffectValue;
-/** @private {!DropeffectValue} */
+/**@private {!DropeffectValue}*/
 DropeffectValue.$f_NONE__org_gwtproject_aria_client_DropeffectValue;
-/** @public {Map<?string, !DropeffectValue>} */
+/**@type {Map<?string, !DropeffectValue>}*/
 DropeffectValue.f_namesToValuesMap__org_gwtproject_aria_client_DropeffectValue_;
-/** @public {number} @const */
+/**@const {number}*/
 DropeffectValue.$ordinal$f_COPY__org_gwtproject_aria_client_DropeffectValue = 0;
-/** @public {number} @const */
+/**@const {number}*/
 DropeffectValue.$ordinal$f_MOVE__org_gwtproject_aria_client_DropeffectValue = 1;
-/** @public {number} @const */
+/**@const {number}*/
 DropeffectValue.$ordinal$f_LINK__org_gwtproject_aria_client_DropeffectValue = 2;
-/** @public {number} @const */
+/**@const {number}*/
 DropeffectValue.$ordinal$f_EXECUTE__org_gwtproject_aria_client_DropeffectValue = 3;
-/** @public {number} @const */
+/**@const {number}*/
 DropeffectValue.$ordinal$f_POPUP__org_gwtproject_aria_client_DropeffectValue = 4;
-/** @public {number} @const */
+/**@const {number}*/
 DropeffectValue.$ordinal$f_NONE__org_gwtproject_aria_client_DropeffectValue = 5;
 
 exports = DropeffectValue; 

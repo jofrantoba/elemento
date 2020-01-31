@@ -64,49 +64,37 @@ let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
  * @implements {HasKeyboardPagingPolicy}
   */
 class AbstractHasData extends Composite {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {HasDataPresenter<T>} */
+  /**@type {HasDataPresenter<T>}*/
   this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isFocused__org_gwtproject_user_cellview_client_AbstractHasData = false;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_accessKey__org_gwtproject_user_cellview_client_AbstractHasData_ = 0 /* '\u0000' */;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isRefreshing__org_gwtproject_user_cellview_client_AbstractHasData_ = false;
-  /** @public {HandlerRegistration} */
+  /**@type {HandlerRegistration}*/
   this.f_keyboardSelectionReg__org_gwtproject_user_cellview_client_AbstractHasData_;
-  /** @public {HandlerRegistration} */
+  /**@type {HandlerRegistration}*/
   this.f_selectionManagerReg__org_gwtproject_user_cellview_client_AbstractHasData_;
-  /** @public {number} */
+  /**@type {number}*/
   this.f_tabIndex__org_gwtproject_user_cellview_client_AbstractHasData_ = 0;
  }
- /**
-  * Initialization from constructor 'AbstractHasData(Element, int, ProvidesKey)'.
-  * @param {Object} elem
-  * @param {number} pageSize
-  * @param {ProvidesKey<T>} keyProvider
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_AbstractHasData__org_gwtproject_dom_client_Element__int__org_gwtproject_view_client_ProvidesKey(elem, pageSize, keyProvider) {
-  this.$ctor__org_gwtproject_user_cellview_client_AbstractHasData__org_gwtproject_user_client_ui_Widget__int__org_gwtproject_view_client_ProvidesKey(/**@type {!$1<T>} */ ($1.$create__org_gwtproject_user_cellview_client_AbstractHasData__org_gwtproject_dom_client_Element(this, elem)), pageSize, keyProvider);
+ //Initialization from constructor 'AbstractHasData(Element, int, ProvidesKey)'.
+ 
+ $ctor__org_gwtproject_user_cellview_client_AbstractHasData__org_gwtproject_dom_client_Element__int__org_gwtproject_view_client_ProvidesKey(/** Object */ elem, /** number */ pageSize, /** ProvidesKey<T> */ keyProvider) {
+  this.$ctor__org_gwtproject_user_cellview_client_AbstractHasData__org_gwtproject_user_client_ui_Widget__int__org_gwtproject_view_client_ProvidesKey(/**@type {!$1<T>}*/ ($1.$create__org_gwtproject_user_cellview_client_AbstractHasData__org_gwtproject_dom_client_Element(this, elem)), pageSize, keyProvider);
  }
- /**
-  * Initialization from constructor 'AbstractHasData(Widget, int, ProvidesKey)'.
-  * @param {Widget} widget
-  * @param {number} pageSize
-  * @param {ProvidesKey<T>} keyProvider
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_AbstractHasData__org_gwtproject_user_client_ui_Widget__int__org_gwtproject_view_client_ProvidesKey(widget, pageSize, keyProvider) {
+ //Initialization from constructor 'AbstractHasData(Widget, int, ProvidesKey)'.
+ 
+ $ctor__org_gwtproject_user_cellview_client_AbstractHasData__org_gwtproject_user_client_ui_Widget__int__org_gwtproject_view_client_ProvidesKey(/** Widget */ widget, /** number */ pageSize, /** ProvidesKey<T> */ keyProvider) {
   this.$ctor__org_gwtproject_user_client_ui_Composite__();
   this.$init___$p_org_gwtproject_user_cellview_client_AbstractHasData();
   this.m_initWidget__org_gwtproject_user_client_ui_Widget(widget);
-  this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_ = /**@type {!HasDataPresenter<T>} */ (HasDataPresenter.$create__org_gwtproject_view_client_HasData__org_gwtproject_user_cellview_client_HasDataPresenter_View__int__org_gwtproject_view_client_ProvidesKey(this, /**@type {!View<T>} */ (View.$create__org_gwtproject_user_cellview_client_AbstractHasData(this)), pageSize, keyProvider));
-  let eventTypes = /**@type {!HashSet<?string>} */ (HashSet.$create__());
+  this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_ = /**@type {!HasDataPresenter<T>}*/ (HasDataPresenter.$create__org_gwtproject_view_client_HasData__org_gwtproject_user_cellview_client_HasDataPresenter_View__int__org_gwtproject_view_client_ProvidesKey(this, /**@type {!View<T>}*/ (View.$create__org_gwtproject_user_cellview_client_AbstractHasData(this)), pageSize, keyProvider));
+  let eventTypes = /**@type {!HashSet<?string>}*/ (HashSet.$create__());
   eventTypes.add(BrowserEvents.f_FOCUS__org_gwtproject_dom_client_BrowserEvents);
   eventTypes.add(BrowserEvents.f_BLUR__org_gwtproject_dom_client_BrowserEvents);
   eventTypes.add(BrowserEvents.f_KEYDOWN__org_gwtproject_dom_client_BrowserEvents);
@@ -114,30 +102,19 @@ class AbstractHasData extends Composite {
   eventTypes.add(BrowserEvents.f_CLICK__org_gwtproject_dom_client_BrowserEvents);
   eventTypes.add(BrowserEvents.f_MOUSEDOWN__org_gwtproject_dom_client_BrowserEvents);
   CellBasedWidgetImpl.m_get__().m_sinkEvents__org_gwtproject_user_client_ui_Widget__java_util_Set(this, eventTypes);
-  this.f_selectionManagerReg__org_gwtproject_user_cellview_client_AbstractHasData_ = this.m_addCellPreviewHandler__org_gwtproject_view_client_CellPreviewEvent_Handler(/**@type {DefaultSelectionEventManager<T>} */ (DefaultSelectionEventManager.m_createDefaultManager__()));
-  this.m_setKeyboardSelectionHandler__org_gwtproject_view_client_CellPreviewEvent_Handler(/**@type {!DefaultKeyboardSelectionHandler<T>} */ (DefaultKeyboardSelectionHandler.$create__org_gwtproject_user_cellview_client_AbstractHasData(this)));
+  this.f_selectionManagerReg__org_gwtproject_user_cellview_client_AbstractHasData_ = this.m_addCellPreviewHandler__org_gwtproject_view_client_CellPreviewEvent_Handler(/**@type {DefaultSelectionEventManager<T>}*/ (DefaultSelectionEventManager.m_createDefaultManager__()));
+  this.m_setKeyboardSelectionHandler__org_gwtproject_view_client_CellPreviewEvent_Handler(/**@type {!DefaultKeyboardSelectionHandler<T>}*/ (DefaultKeyboardSelectionHandler.$create__org_gwtproject_user_cellview_client_AbstractHasData(this)));
  }
- /**
-  * @param {Widget} widget
-  * @param {Object} tmpElem
-  * @param {SafeHtml} html
-  * @return {Object}
-  * @public
-  */
- static m_convertToElements__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element__org_gwtproject_safehtml_shared_SafeHtml(widget, tmpElem, html) {
+ /** @return {Object} */
+ static m_convertToElements__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element__org_gwtproject_safehtml_shared_SafeHtml(/** Widget */ widget, /** Object */ tmpElem, /** SafeHtml */ html) {
   AbstractHasData.$clinit();
   DOM.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(tmpElem, widget);
   $Overlay.m_setInnerSafeHtml__$devirt__org_gwtproject_dom_client_Element__org_gwtproject_safehtml_shared_SafeHtml(tmpElem, html);
   DOM.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(tmpElem, null);
   return tmpElem;
  }
- /**
-  * @param {Widget} widget
-  * @param {Object} childContainer
-  * @param {SafeHtml} html
-  * @public
-  */
- static m_replaceAllChildren__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element__org_gwtproject_safehtml_shared_SafeHtml(widget, childContainer, html) {
+ 
+ static m_replaceAllChildren__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element__org_gwtproject_safehtml_shared_SafeHtml(/** Widget */ widget, /** Object */ childContainer, /** SafeHtml */ html) {
   AbstractHasData.$clinit();
   if (!widget.m_isAttached__()) {
    DOM.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(widget.m_getElement__(), widget);
@@ -147,20 +124,13 @@ class AbstractHasData extends Composite {
    DOM.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(widget.m_getElement__(), null);
   }
  }
- /**
-  * @param {Widget} widget
-  * @param {Object} childContainer
-  * @param {Object} newChildren
-  * @param {number} start
-  * @param {SafeHtml} html
-  * @public
-  */
- static m_replaceChildren__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element__int__org_gwtproject_safehtml_shared_SafeHtml(widget, childContainer, newChildren, start, html) {
+ 
+ static m_replaceChildren__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element__int__org_gwtproject_safehtml_shared_SafeHtml(/** Widget */ widget, /** Object */ childContainer, /** Object */ newChildren, /** number */ start, /** SafeHtml */ html) {
   AbstractHasData.$clinit();
   let childCount = Node_$Overlay.m_getChildCount__$devirt__org_gwtproject_dom_client_Node(childContainer);
   let toReplace = null;
   if (start < childCount) {
-   toReplace = /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Node_$Overlay.m_getChild__$devirt__org_gwtproject_dom_client_Node__int(childContainer, start)), $Overlay));
+   toReplace = /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Node_$Overlay.m_getChild__$devirt__org_gwtproject_dom_client_Node__int(childContainer, start)), $Overlay));
   }
   let count = Node_$Overlay.m_getChildCount__$devirt__org_gwtproject_dom_client_Node(newChildren);
   for (let i = 0; i < count; i++) {
@@ -173,296 +143,156 @@ class AbstractHasData extends Composite {
    }
   }
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  static m_getTmpElem__() {
   if ($Equality.$same(AbstractHasData.f_tmpElem__org_gwtproject_user_cellview_client_AbstractHasData_, null)) {
    AbstractHasData.f_tmpElem__org_gwtproject_user_cellview_client_AbstractHasData_ = Document_$Overlay.m_createDivElement__$devirt__org_gwtproject_dom_client_Document(Document_$Overlay.m_get__());
   }
   return AbstractHasData.f_tmpElem__org_gwtproject_user_cellview_client_AbstractHasData_;
  }
- /**
-  * @override
-  * @param {Handler<T>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addCellPreviewHandler__org_gwtproject_view_client_CellPreviewEvent_Handler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addCellPreviewHandler__org_gwtproject_view_client_CellPreviewEvent_Handler(/** Handler<T> */ handler) {
   return this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_addCellPreviewHandler__org_gwtproject_view_client_CellPreviewEvent_Handler(handler);
  }
- /**
-  * @param {LoadingStateChangeEvent_Handler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addLoadingStateChangeHandler__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_Handler(handler) {
+ /** @return {HandlerRegistration} */
+ m_addLoadingStateChangeHandler__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_Handler(/** LoadingStateChangeEvent_Handler */ handler) {
   return this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_addLoadingStateChangeHandler__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_Handler(handler);
  }
- /**
-  * @override
-  * @param {RangeChangeEvent_Handler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addRangeChangeHandler__org_gwtproject_view_client_RangeChangeEvent_Handler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addRangeChangeHandler__org_gwtproject_view_client_RangeChangeEvent_Handler(/** RangeChangeEvent_Handler */ handler) {
   return this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_addRangeChangeHandler__org_gwtproject_view_client_RangeChangeEvent_Handler(handler);
  }
- /**
-  * @override
-  * @param {RowCountChangeEvent_Handler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addRowCountChangeHandler__org_gwtproject_view_client_RowCountChangeEvent_Handler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addRowCountChangeHandler__org_gwtproject_view_client_RowCountChangeEvent_Handler(/** RowCountChangeEvent_Handler */ handler) {
   return this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_addRowCountChangeHandler__org_gwtproject_view_client_RowCountChangeEvent_Handler(handler);
  }
- /**
-  * @param {RedrawEvent_Handler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addRedrawHandler__org_gwtproject_user_cellview_client_AbstractHasData_RedrawEvent_Handler(handler) {
+ /** @return {HandlerRegistration} */
+ m_addRedrawHandler__org_gwtproject_user_cellview_client_AbstractHasData_RedrawEvent_Handler(/** RedrawEvent_Handler */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, RedrawEvent.f_TYPE__org_gwtproject_user_cellview_client_AbstractHasData_RedrawEvent_);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getAccessKey__() {
   return this.f_accessKey__org_gwtproject_user_cellview_client_AbstractHasData_;
  }
- /**
-  * @override
-  * @param {number} key
-  * @public
-  */
- m_setAccessKey__char(key) {
+ /** @override */
+ m_setAccessKey__char(/** number */ key) {
   this.f_accessKey__org_gwtproject_user_cellview_client_AbstractHasData_ = key;
   this.m_setKeyboardSelected__int__boolean__boolean(this.m_getKeyboardSelectedRow__(), true, false);
  }
- /**
-  * @param {number} indexOnPage
-  * @return {T}
-  * @public
-  * @deprecated
-  */
- m_getDisplayedItem__int(indexOnPage) {
+ /** @return {T} @deprecated */
+ m_getDisplayedItem__int(/** number */ indexOnPage) {
   return this.m_getVisibleItem__int(indexOnPage);
  }
- /**
-  * @return {List<T>}
-  * @public
-  * @deprecated
-  */
+ /** @return {List<T>} @deprecated */
  m_getDisplayedItems__() {
   return this.m_getVisibleItems__();
  }
- /**
-  * @override
-  * @return {KeyboardPagingPolicy}
-  * @public
-  */
+ /** @override @return {KeyboardPagingPolicy} */
  m_getKeyboardPagingPolicy__() {
   return this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_getKeyboardPagingPolicy__();
  }
- /**
-  * @override
-  * @param {KeyboardPagingPolicy} policy
-  * @public
-  */
- m_setKeyboardPagingPolicy__org_gwtproject_user_cellview_client_HasKeyboardPagingPolicy_KeyboardPagingPolicy(policy) {
+ /** @override */
+ m_setKeyboardPagingPolicy__org_gwtproject_user_cellview_client_HasKeyboardPagingPolicy_KeyboardPagingPolicy(/** KeyboardPagingPolicy */ policy) {
   this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_setKeyboardPagingPolicy__org_gwtproject_user_cellview_client_HasKeyboardPagingPolicy_KeyboardPagingPolicy(policy);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getKeyboardSelectedRow__() {
   return this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_getKeyboardSelectedRow__();
  }
- /**
-  * @param {number} row
-  * @public
-  */
- m_setKeyboardSelectedRow__int(row) {
+ 
+ m_setKeyboardSelectedRow__int(/** number */ row) {
   this.m_setKeyboardSelectedRow__int__boolean(row, true);
  }
- /**
-  * @override
-  * @return {KeyboardSelectionPolicy}
-  * @public
-  */
+ /** @override @return {KeyboardSelectionPolicy} */
  m_getKeyboardSelectionPolicy__() {
   return this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_getKeyboardSelectionPolicy__();
  }
- /**
-  * @override
-  * @param {KeyboardSelectionPolicy} policy
-  * @public
-  */
- m_setKeyboardSelectionPolicy__org_gwtproject_user_cellview_client_HasKeyboardSelectionPolicy_KeyboardSelectionPolicy(policy) {
+ /** @override */
+ m_setKeyboardSelectionPolicy__org_gwtproject_user_cellview_client_HasKeyboardSelectionPolicy_KeyboardSelectionPolicy(/** KeyboardSelectionPolicy */ policy) {
   this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_setKeyboardSelectionPolicy__org_gwtproject_user_cellview_client_HasKeyboardSelectionPolicy_KeyboardSelectionPolicy(policy);
  }
- /**
-  * @override
-  * @return {ProvidesKey<T>}
-  * @public
-  */
+ /** @override @return {ProvidesKey<T>} */
  m_getKeyProvider__() {
   return this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_getKeyProvider__();
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getPageSize__() {
   return this.m_getVisibleRange__().m_getLength__();
  }
- /**
-  * @param {number} pageSize
-  * @public
-  */
- m_setPageSize__int(pageSize) {
+ 
+ m_setPageSize__int(/** number */ pageSize) {
   this.m_setVisibleRange__int__int(this.m_getPageStart__(), pageSize);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getPageStart__() {
   return this.m_getVisibleRange__().m_getStart__();
  }
- /**
-  * @param {number} pageStart
-  * @public
-  */
- m_setPageStart__int(pageStart) {
+ 
+ m_setPageStart__int(/** number */ pageStart) {
   this.m_setVisibleRange__int__int(pageStart, this.m_getPageSize__());
  }
- /**
-  * @return {Object}
-  * @public
-  */
+ /** @return {Object} */
  m_getRowContainer__() {
   this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_flush__();
   return this.m_getChildContainer__();
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getRowCount__() {
   return this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_getRowCount__();
  }
- /**
-  * @override
-  * @param {number} count
-  * @public
-  */
- m_setRowCount__int(count) {
+ /** @override */
+ m_setRowCount__int(/** number */ count) {
   this.m_setRowCount__int__boolean(count, true);
  }
- /**
-  * @override
-  * @return {SelectionModel<?>}
-  * @public
-  */
+ /** @override @return {SelectionModel<?>} */
  m_getSelectionModel__() {
   return this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_getSelectionModel__();
  }
- /**
-  * @override
-  * @param {SelectionModel<?>} selectionModel
-  * @public
-  */
- m_setSelectionModel__org_gwtproject_view_client_SelectionModel(selectionModel) {
+ /** @override */
+ m_setSelectionModel__org_gwtproject_view_client_SelectionModel(/** SelectionModel<?> */ selectionModel) {
   this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_setSelectionModel__org_gwtproject_view_client_SelectionModel(selectionModel);
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getTabIndex__() {
   return this.f_tabIndex__org_gwtproject_user_cellview_client_AbstractHasData_;
  }
- /**
-  * @override
-  * @param {number} index
-  * @public
-  */
- m_setTabIndex__int(index) {
+ /** @override */
+ m_setTabIndex__int(/** number */ index) {
   this.f_tabIndex__org_gwtproject_user_cellview_client_AbstractHasData_ = index;
   this.m_setKeyboardSelected__int__boolean__boolean(this.m_getKeyboardSelectedRow__(), true, false);
  }
- /**
-  * @param {T} value
-  * @return {*}
-  * @public
-  */
- m_getValueKey__java_lang_Object(value) {
+ /** @return {*} */
+ m_getValueKey__java_lang_Object(/** T */ value) {
   let keyProvider = this.m_getKeyProvider__();
   return ($Equality.$same(keyProvider, null) || $Equality.$same(value, null)) ? value : keyProvider.m_getKey__java_lang_Object(value);
  }
- /**
-  * @override
-  * @param {number} indexOnPage
-  * @return {T}
-  * @public
-  */
- m_getVisibleItem__int(indexOnPage) {
+ /** @override @return {T} */
+ m_getVisibleItem__int(/** number */ indexOnPage) {
   this.m_checkRowBounds__int(indexOnPage);
   return this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_getVisibleItem__int(indexOnPage);
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getVisibleItemCount__() {
   return this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_getVisibleItemCount__();
  }
- /**
-  * @override
-  * @return {List<T>}
-  * @public
-  */
+ /** @override @return {List<T>} */
  m_getVisibleItems__() {
   return this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_getVisibleItems__();
  }
- /**
-  * @override
-  * @return {Range}
-  * @public
-  */
+ /** @override @return {Range} */
  m_getVisibleRange__() {
   return this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_getVisibleRange__();
  }
- /**
-  * @override
-  * @param {Range} range
-  * @public
-  */
- m_setVisibleRange__org_gwtproject_view_client_Range(range) {
+ /** @override */
+ m_setVisibleRange__org_gwtproject_view_client_Range(/** Range */ range) {
   this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_setVisibleRange__org_gwtproject_view_client_Range(range);
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isRowCountExact__() {
   return this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_isRowCountExact__();
  }
- /**
-  * @override
-  * @param {Event} event
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_user_client_Event(event) {
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_user_client_Event(/** Event */ event) {
   CellBasedWidgetImpl.m_get__().m_onBrowserEvent__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_Event(this, event);
   if (this.f_isRefreshing__org_gwtproject_user_cellview_client_AbstractHasData_) {
    return;
@@ -490,27 +320,18 @@ class AbstractHasData extends Composite {
   }
   this.m_onBrowserEvent2__org_gwtproject_user_client_Event(event);
  }
- /**
-  * @public
-  */
+ 
  m_redraw__() {
   this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_redraw__();
  }
- /**
-  * @param {number} absRowIndex
-  * @public
-  */
- m_redrawRow__int(absRowIndex) {
+ 
+ m_redrawRow__int(/** number */ absRowIndex) {
   let relRowIndex = absRowIndex - this.m_getPageStart__();
   this.m_checkRowBounds__int(relRowIndex);
-  this.m_setRowData__int__java_util_List(absRowIndex, /**@type {List<T>} */ (Collections.m_singletonList__java_lang_Object(this.m_getVisibleItem__int(relRowIndex))));
+  this.m_setRowData__int__java_util_List(absRowIndex, /**@type {List<T>}*/ (Collections.m_singletonList__java_lang_Object(this.m_getVisibleItem__int(relRowIndex))));
  }
- /**
-  * @override
-  * @param {boolean} focused
-  * @public
-  */
- m_setFocus__boolean(focused) {
+ /** @override */
+ m_setFocus__boolean(/** boolean */ focused) {
   let elem = this.m_getKeyboardSelectedElement__();
   if (!$Equality.$same(elem, null)) {
    if (focused) {
@@ -520,19 +341,12 @@ class AbstractHasData extends Composite {
    }
   }
  }
- /**
-  * @param {number} row
-  * @param {boolean} stealFocus
-  * @public
-  */
- m_setKeyboardSelectedRow__int__boolean(row, stealFocus) {
+ 
+ m_setKeyboardSelectedRow__int__boolean(/** number */ row, /** boolean */ stealFocus) {
   this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_setKeyboardSelectedRow__int__boolean__boolean(row, stealFocus, true);
  }
- /**
-  * @param {Handler<T>} keyboardSelectionReg
-  * @public
-  */
- m_setKeyboardSelectionHandler__org_gwtproject_view_client_CellPreviewEvent_Handler(keyboardSelectionReg) {
+ 
+ m_setKeyboardSelectionHandler__org_gwtproject_view_client_CellPreviewEvent_Handler(/** Handler<T> */ keyboardSelectionReg) {
   if (!$Equality.$same(this.f_keyboardSelectionReg__org_gwtproject_user_cellview_client_AbstractHasData_, null)) {
    this.f_keyboardSelectionReg__org_gwtproject_user_cellview_client_AbstractHasData_.m_removeHandler__();
    this.f_keyboardSelectionReg__org_gwtproject_user_cellview_client_AbstractHasData_ = null;
@@ -541,39 +355,22 @@ class AbstractHasData extends Composite {
    this.f_keyboardSelectionReg__org_gwtproject_user_cellview_client_AbstractHasData_ = this.m_addCellPreviewHandler__org_gwtproject_view_client_CellPreviewEvent_Handler(keyboardSelectionReg);
   }
  }
- /**
-  * @override
-  * @param {number} size
-  * @param {boolean} isExact
-  * @public
-  */
- m_setRowCount__int__boolean(size, isExact) {
+ /** @override */
+ m_setRowCount__int__boolean(/** number */ size, /** boolean */ isExact) {
   this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_setRowCount__int__boolean(size, isExact);
  }
- /**
-  * @param {List<?>} values
-  * @public
-  */
- m_setRowData__java_util_List(values) {
+ 
+ m_setRowData__java_util_List(/** List<?> */ values) {
   this.m_setRowCount__int(values.size());
   this.m_setVisibleRange__int__int(0, values.size());
   this.m_setRowData__int__java_util_List(0, values);
  }
- /**
-  * @override
-  * @param {number} start
-  * @param {List<?>} values
-  * @public
-  */
- m_setRowData__int__java_util_List(start, values) {
+ /** @override */
+ m_setRowData__int__java_util_List(/** number */ start, /** List<?> */ values) {
   this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_setRowData__int__java_util_List(start, values);
  }
- /**
-  * @param {SelectionModel<?>} selectionModel
-  * @param {Handler<T>} selectionEventManager
-  * @public
-  */
- m_setSelectionModel__org_gwtproject_view_client_SelectionModel__org_gwtproject_view_client_CellPreviewEvent_Handler(selectionModel, selectionEventManager) {
+ 
+ m_setSelectionModel__org_gwtproject_view_client_SelectionModel__org_gwtproject_view_client_CellPreviewEvent_Handler(/** SelectionModel<?> */ selectionModel, /** Handler<T> */ selectionEventManager) {
   if (!$Equality.$same(this.f_selectionManagerReg__org_gwtproject_user_cellview_client_AbstractHasData_, null)) {
    this.f_selectionManagerReg__org_gwtproject_user_cellview_client_AbstractHasData_.m_removeHandler__();
    this.f_selectionManagerReg__org_gwtproject_user_cellview_client_AbstractHasData_ = null;
@@ -583,160 +380,77 @@ class AbstractHasData extends Composite {
   }
   this.m_setSelectionModel__org_gwtproject_view_client_SelectionModel(selectionModel);
  }
- /**
-  * @override
-  * @param {number} start
-  * @param {number} length
-  * @public
-  */
- m_setVisibleRange__int__int(start, length) {
+ /** @override */
+ m_setVisibleRange__int__int(/** number */ start, /** number */ length) {
   this.m_setVisibleRange__org_gwtproject_view_client_Range(Range.$create__int__int(start, length));
  }
- /**
-  * @override
-  * @param {Range} range
-  * @param {boolean} forceRangeChangeEvent
-  * @public
-  */
- m_setVisibleRangeAndClearData__org_gwtproject_view_client_Range__boolean(range, forceRangeChangeEvent) {
+ /** @override */
+ m_setVisibleRangeAndClearData__org_gwtproject_view_client_Range__boolean(/** Range */ range, /** boolean */ forceRangeChangeEvent) {
   this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_setVisibleRangeAndClearData__org_gwtproject_view_client_Range__boolean(range, forceRangeChangeEvent);
  }
- /**
-  * @param {Cell<?>} cell
-  * @param {?string} eventType
-  * @return {boolean}
-  * @public
-  */
- m_cellConsumesEventType__org_gwtproject_cell_client_Cell__java_lang_String(cell, eventType) {
+ /** @return {boolean} */
+ m_cellConsumesEventType__org_gwtproject_cell_client_Cell__java_lang_String(/** Cell<?> */ cell, /** ?string */ eventType) {
   let consumedEvents = cell.m_getConsumedEvents__();
   return !$Equality.$same(consumedEvents, null) && consumedEvents.contains(eventType);
  }
- /**
-  * @param {number} row
-  * @public
-  */
- m_checkRowBounds__int(row) {
+ 
+ m_checkRowBounds__int(/** number */ row) {
   if (!this.m_isRowWithinBounds__int(row)) {
    throw $Exceptions.toJs(IndexOutOfBoundsException.$create__java_lang_String("Row index: " + row + ", Row size: " + this.m_getRowCount__()));
   }
  }
- /**
-  * @param {SafeHtml} html
-  * @return {Object}
-  * @public
-  */
- m_convertToElements__org_gwtproject_safehtml_shared_SafeHtml(html) {
+ /** @return {Object} */
+ m_convertToElements__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ html) {
   return AbstractHasData.m_convertToElements__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element__org_gwtproject_safehtml_shared_SafeHtml(this, AbstractHasData.m_getTmpElem__(), html);
  }
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_dependsOnSelection__() {}
- /**
-  * @abstract
-  * @return {Object}
-  * @public
-  */
+ /** @abstract @return {Object} */
  m_getChildContainer__() {}
- /**
-  * @param {number} index
-  * @return {Object}
-  * @public
-  */
- m_getChildElement__int(index) {
+ /** @return {Object} */
+ m_getChildElement__int(/** number */ index) {
   let childContainer = this.m_getChildContainer__();
   let childCount = Node_$Overlay.m_getChildCount__$devirt__org_gwtproject_dom_client_Node(childContainer);
-  return (index < childCount) ? /**@type {Object} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Node_$Overlay.m_getChild__$devirt__org_gwtproject_dom_client_Node__int(childContainer, index)), $Overlay)) : null;
+  return (index < childCount) ? /**@type {Object}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject(Node_$Overlay.m_getChild__$devirt__org_gwtproject_dom_client_Node__int(childContainer, index)), $Overlay)) : null;
  }
- /**
-  * @abstract
-  * @return {Object}
-  * @public
-  */
+ /** @abstract @return {Object} */
  m_getKeyboardSelectedElement__() {}
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_isKeyboardNavigationSuppressed__() {}
- /**
-  * @param {number} row
-  * @return {boolean}
-  * @public
-  */
- m_isRowWithinBounds__int(row) {
+ /** @return {boolean} */
+ m_isRowWithinBounds__int(/** number */ row) {
   return row >= 0 && row < this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_.m_getVisibleItemCount__();
  }
- /**
-  * @public
-  */
+ 
  m_onBlur__() {}
- /**
-  * @param {Event} event
-  * @public
-  */
- m_onBrowserEvent2__org_gwtproject_user_client_Event(event) {}
- /**
-  * @public
-  */
+ 
+ m_onBrowserEvent2__org_gwtproject_user_client_Event(/** Event */ event) {}
+ 
  m_onFocus__() {}
- /**
-  * @param {LoadingState} state
-  * @public
-  */
- m_onLoadingStateChanged__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_LoadingState(state) {
+ 
+ m_onLoadingStateChanged__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_LoadingState(/** LoadingState */ state) {
   this.m_fireEvent__org_gwtproject_event_shared_Event(LoadingStateChangeEvent.$create__org_gwtproject_user_cellview_client_LoadingStateChangeEvent_LoadingState(state));
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onUnload__() {
   this.f_isFocused__org_gwtproject_user_cellview_client_AbstractHasData = false;
   super.m_onUnload__();
  }
- /**
-  * @abstract
-  * @param {SafeHtmlBuilder} sb
-  * @param {List<T>} values
-  * @param {number} start
-  * @param {SelectionModel<?>} selectionModel
-  * @public
-  */
- m_renderRowValues__org_gwtproject_safehtml_shared_SafeHtmlBuilder__java_util_List__int__org_gwtproject_view_client_SelectionModel(sb, values, start, selectionModel) {}
- /**
-  * @param {List<T>} values
-  * @param {SafeHtml} html
-  * @public
-  */
- m_replaceAllChildren__java_util_List__org_gwtproject_safehtml_shared_SafeHtml(values, html) {
+ /** @abstract */
+ m_renderRowValues__org_gwtproject_safehtml_shared_SafeHtmlBuilder__java_util_List__int__org_gwtproject_view_client_SelectionModel(/** SafeHtmlBuilder */ sb, /** List<T> */ values, /** number */ start, /** SelectionModel<?> */ selectionModel) {}
+ 
+ m_replaceAllChildren__java_util_List__org_gwtproject_safehtml_shared_SafeHtml(/** List<T> */ values, /** SafeHtml */ html) {
   AbstractHasData.m_replaceAllChildren__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element__org_gwtproject_safehtml_shared_SafeHtml(this, this.m_getChildContainer__(), html);
  }
- /**
-  * @param {List<T>} values
-  * @param {number} start
-  * @param {SafeHtml} html
-  * @public
-  */
- m_replaceChildren__java_util_List__int__org_gwtproject_safehtml_shared_SafeHtml(values, start, html) {
+ 
+ m_replaceChildren__java_util_List__int__org_gwtproject_safehtml_shared_SafeHtml(/** List<T> */ values, /** number */ start, /** SafeHtml */ html) {
   let newChildren = this.m_convertToElements__org_gwtproject_safehtml_shared_SafeHtml(html);
   AbstractHasData.m_replaceChildren__org_gwtproject_user_client_ui_Widget__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element__int__org_gwtproject_safehtml_shared_SafeHtml(this, this.m_getChildContainer__(), newChildren, start, html);
  }
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_resetFocusOnCell__() {}
- /**
-  * @param {Object} elem
-  * @param {boolean} focusable
-  * @public
-  */
- m_setFocusable__org_gwtproject_dom_client_Element__boolean(elem, focusable) {
+ 
+ m_setFocusable__org_gwtproject_dom_client_Element__boolean(/** Object */ elem, /** boolean */ focusable) {
   if (focusable) {
    let focusImpl = FocusImpl.m_getFocusImplForWidget__();
    focusImpl.m_setTabIndex__org_gwtproject_dom_client_Element__int(elem, this.m_getTabIndex__());
@@ -749,66 +463,35 @@ class AbstractHasData extends Composite {
    elem.removeAttribute("accessKey");
   }
  }
- /**
-  * @abstract
-  * @param {number} index
-  * @param {boolean} selected
-  * @param {boolean} stealFocus
-  * @public
-  */
- m_setKeyboardSelected__int__boolean__boolean(index, selected, stealFocus) {}
- /**
-  * @param {Object} elem
-  * @param {boolean} selected
-  * @public
-  * @deprecated
-  */
- m_setSelected__org_gwtproject_dom_client_Element__boolean(elem, selected) {}
- /**
-  * @param {ValueChangeHandler<List<T>>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler_$pp_org_gwtproject_user_cellview_client(handler) {
+ /** @abstract */
+ m_setKeyboardSelected__int__boolean__boolean(/** number */ index, /** boolean */ selected, /** boolean */ stealFocus) {}
+ /** @deprecated */
+ m_setSelected__org_gwtproject_dom_client_Element__boolean(/** Object */ elem, /** boolean */ selected) {}
+ /** @return {HandlerRegistration} */
+ m_addValueChangeHandler__org_gwtproject_event_logical_shared_ValueChangeHandler_$pp_org_gwtproject_user_cellview_client(/** ValueChangeHandler<List<T>> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, ValueChangeEvent.m_getType__());
  }
- /**
-  * @param {Widget} child
-  * @public
-  */
- m_adopt__org_gwtproject_user_client_ui_Widget_$pp_org_gwtproject_user_cellview_client(child) {
-  let proxy = /**@type {__Widget<T>} */ (Js.m_uncheckedCast__java_lang_Object(child));
+ 
+ m_adopt__org_gwtproject_user_client_ui_Widget_$pp_org_gwtproject_user_cellview_client(/** Widget */ child) {
+  let proxy = /**@type {__Widget<T>}*/ (Js.m_uncheckedCast__java_lang_Object(child));
   proxy.m_setParent__org_gwtproject_user_client_ui_Widget(this);
  }
- /**
-  * @param {Widget} child
-  * @public
-  */
- m_doAttach__org_gwtproject_user_client_ui_Widget_$pp_org_gwtproject_user_cellview_client(child) {
-  let proxy = /**@type {__Widget<T>} */ (Js.m_uncheckedCast__java_lang_Object(child));
+ 
+ m_doAttach__org_gwtproject_user_client_ui_Widget_$pp_org_gwtproject_user_cellview_client(/** Widget */ child) {
+  let proxy = /**@type {__Widget<T>}*/ (Js.m_uncheckedCast__java_lang_Object(child));
   proxy.m_onAttach__();
  }
- /**
-  * @param {Widget} child
-  * @public
-  */
- m_doDetach__org_gwtproject_user_client_ui_Widget_$pp_org_gwtproject_user_cellview_client(child) {
-  let proxy = /**@type {__Widget<T>} */ (Js.m_uncheckedCast__java_lang_Object(child));
+ 
+ m_doDetach__org_gwtproject_user_client_ui_Widget_$pp_org_gwtproject_user_cellview_client(/** Widget */ child) {
+  let proxy = /**@type {__Widget<T>}*/ (Js.m_uncheckedCast__java_lang_Object(child));
   proxy.m_onDetach__();
  }
- /**
-  * @return {HasDataPresenter<T>}
-  * @public
-  */
+ /** @return {HasDataPresenter<T>} */
  m_getPresenter___$pp_org_gwtproject_user_cellview_client() {
   return this.f_presenter__org_gwtproject_user_cellview_client_AbstractHasData_;
  }
- /**
-  * @param {Object} element
-  * @param {boolean} show
-  * @public
-  */
- m_showOrHide__org_gwtproject_dom_client_Element__boolean_$pp_org_gwtproject_user_cellview_client(element, show) {
+ 
+ m_showOrHide__org_gwtproject_dom_client_Element__boolean_$pp_org_gwtproject_user_cellview_client(/** Object */ element, /** boolean */ show) {
   if ($Equality.$same(element, null)) {
    return;
   }
@@ -818,31 +501,21 @@ class AbstractHasData extends Composite {
    Style_$Overlay.m_setDisplay__$devirt__org_gwtproject_dom_client_Style__org_gwtproject_dom_style_shared_Display(element.style, Display.f_NONE__org_gwtproject_dom_style_shared_Display);
   }
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_cellview_client_AbstractHasData() {
   this.f_accessKey__org_gwtproject_user_cellview_client_AbstractHasData_ = 0 /* '\u0000' */;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   AbstractHasData.$clinit = () =>{};
   AbstractHasData.$loadModules();
   Composite.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof AbstractHasData;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   IndexOutOfBoundsException = goog.module.get('java.lang.IndexOutOfBoundsException$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -882,7 +555,7 @@ HasKeyProvider.$markImplementor(AbstractHasData);
 Focusable.$markImplementor(AbstractHasData);
 HasKeyboardPagingPolicy.$markImplementor(AbstractHasData);
 
-/** @public {Object} */
+/**@type {Object}*/
 AbstractHasData.f_tmpElem__org_gwtproject_user_cellview_client_AbstractHasData_;
 
 exports = AbstractHasData; 

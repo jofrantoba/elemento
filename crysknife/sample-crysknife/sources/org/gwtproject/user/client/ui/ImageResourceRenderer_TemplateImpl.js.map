@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ImageResourceRenderer_TemplateImpl.impl.java.js",
-"lineCount":65,
-"mappings":"A;;;;;;;;;;;;;;;;MAKa,mC;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,8C;EAAAA,0D;EAAAA,sF;EAAAA,iB;;;;;CAAA,yE;EAAAC,iC;;;;;;;;;;CAKoC,yD,CACFC,I,EACnCC,I,EACAC,I;EACRC,IAAcC,EAAdD,6B;EACAA,4C;EACAA,iG;EACAA,sD;EACAA,6G;EACAA,4C;EACAA,6G;EACAA,oC;EACJA,mG;;;;;QAjBa,O;EAAAE,sD;EAAAA,mD;EAAAA;",
+"lineCount":49,
+"mappings":"A;;;;;;;;;;;;;;;;MAKa,mC;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,8C;EAAAA,0D;EAAAA,sF;EAAAA,iB;;;CAAA,yE;EAAAC,iC;;;CAKoC,yD,gBACFC,I,gBACnCC,I,gBACAC,I;EACRC,IAAcC,EAAdD,6B;EACAA,4C;EACAA,iG;EACAA,sD;EACAA,6G;EACAA,4C;EACAA,6G;EACAA,oC;EACJA,mG;;;QAjBa,O;EAAAE,sD;EAAAA,mD;EAAAA;",
 "sources":["ImageResourceRenderer_TemplateImpl.java"],
 "names":["org.gwtproject.user.client.ui.ImageResourceRenderer_TemplateImpl.<synthetic: ctor_js>","org.gwtproject.user.client.ui.ImageResourceRenderer_TemplateImpl.<synthetic: ctor_create>","org.gwtproject.user.client.ui.ImageResourceRenderer_TemplateImpl.<init>","arg0","arg1","arg2","org.gwtproject.user.client.ui.ImageResourceRenderer_TemplateImpl.image","sb","org.gwtproject.user.client.ui.ImageResourceRenderer_TemplateImpl.<clinit>"]
 }

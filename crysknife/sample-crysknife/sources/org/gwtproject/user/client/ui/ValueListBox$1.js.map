@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ValueListBox$1.impl.java.js",
-"lineCount":62,
-"mappings":"A;;;;;;;;;;;;;MAiEsD,E;;;;CAAA,W;EAAAA,Q;EAAAA;mE;;;;;;;;QAAA,mD;EAAAC,a;EAAAA,yB;EAAAA,uH;EAAAA,iB;;;;;;CAAA,+F;EAAAC,+E;EAAAA,iC;;;;;;;CACpC,uD,CAAqBC,K;EAC/BC,IAAIC,aAAJD,0J;EAEAA;GACEA,OADFA;G;EAGAA,IAAEE,QAAFF,oJ;EACAA,uH;;;;;QAR8C,O;EAAAG,qB;EAAAA,kB;EAAAA;",
+"lineCount":46,
+"mappings":"A;;;;;;;;;;;;;MAiEsD,E;;CAAA,W;EAAAA,Q;EAAAA;mE;;;QAAA,mD;EAAAC,a;EAAAA,yB;EAAAA,uH;EAAAA,iB;;;CAAA,+F;EAAAC,+E;EAAAA,iC;;;CACpC,uD,oBAAqBC,K;EAC/BC,IAAIC,aAAJD,0J;EAEAA;GACEA,OADFA;G;EAGAA,IAAEE,QAAFF,oJ;EACAA,uH;;;QAR8C,O;EAAAG,qB;EAAAA,kB;EAAAA;",
 "sources":["ValueListBox.java"],
 "names":["org.gwtproject.user.client.ui.ValueListBox$1.<synthetic: ctor_js>","org.gwtproject.user.client.ui.ValueListBox$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.ValueListBox$1.<init>","event","org.gwtproject.user.client.ui.ValueListBox$1.onChange","selectedIndex","newValue","org.gwtproject.user.client.ui.ValueListBox$1.<clinit>"]
 }

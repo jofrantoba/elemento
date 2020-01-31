@@ -14,63 +14,39 @@ let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
  * @extends {AbstractCell<T>}
   */
 class DefaultCell extends AbstractCell {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Renderer<?>} */
+  /**@type {Renderer<?>}*/
   this.f_renderer__org_gwtproject_user_client_ui_ValuePicker_DefaultCell_;
  }
- /**
-  * @template T
-  * @param {Renderer<?>} renderer
-  * @return {!DefaultCell<T>}
-  * @public
-  */
- static $create__org_gwtproject_text_shared_Renderer(renderer) {
+ /** @template T @return {!DefaultCell<T>} */
+ static $create__org_gwtproject_text_shared_Renderer(/** Renderer<?> */ renderer) {
   DefaultCell.$clinit();
   let $instance = new DefaultCell();
   $instance.$ctor__org_gwtproject_user_client_ui_ValuePicker_DefaultCell__org_gwtproject_text_shared_Renderer(renderer);
   return $instance;
  }
- /**
-  * @param {Renderer<?>} renderer
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_ValuePicker_DefaultCell__org_gwtproject_text_shared_Renderer(renderer) {
-  this.$ctor__org_gwtproject_cell_client_AbstractCell__arrayOf_java_lang_String(/**@type {!Array<?string>} */ ($Arrays.$init([], j_l_String)));
+ 
+ $ctor__org_gwtproject_user_client_ui_ValuePicker_DefaultCell__org_gwtproject_text_shared_Renderer(/** Renderer<?> */ renderer) {
+  this.$ctor__org_gwtproject_cell_client_AbstractCell__arrayOf_java_lang_String(/**@type {!Array<?string>}*/ ($Arrays.$init([], j_l_String)));
   this.f_renderer__org_gwtproject_user_client_ui_ValuePicker_DefaultCell_ = renderer;
  }
- /**
-  * @override
-  * @param {Context} context
-  * @param {T} value
-  * @param {SafeHtmlBuilder} sb
-  * @public
-  */
- m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(context, value, sb) {
+ /** @override */
+ m_render__org_gwtproject_cell_client_Cell_Context__java_lang_Object__org_gwtproject_safehtml_shared_SafeHtmlBuilder(/** Context */ context, /** T */ value, /** SafeHtmlBuilder */ sb) {
   sb.m_appendEscaped__java_lang_String(this.f_renderer__org_gwtproject_user_client_ui_ValuePicker_DefaultCell_.m_render__java_lang_Object(value));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DefaultCell.$clinit = () =>{};
   DefaultCell.$loadModules();
   AbstractCell.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DefaultCell;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');

@@ -7,33 +7,21 @@ let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class WebStorageWindow_$Overlay {
- /**
-  * @param {Window} o
-  * @return {Window}
-  * @public
-  */
- static m_of__elemental2_dom_Window(o) {
+ /** @return {Window} */
+ static m_of__elemental2_dom_Window(/** Window */ o) {
   WebStorageWindow_$Overlay.$clinit();
-  return /**@type {Window} */ ($Casts.$to(Js.m_cast__java_lang_Object(o), WebStorageWindow_$Overlay));
+  return /**@type {Window}*/ ($Casts.$to(Js.m_cast__java_lang_Object(o), WebStorageWindow_$Overlay));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   WebStorageWindow_$Overlay.$clinit = () =>{};
   WebStorageWindow_$Overlay.$loadModules();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Window;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Js = goog.module.get('jsinterop.base.Js$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

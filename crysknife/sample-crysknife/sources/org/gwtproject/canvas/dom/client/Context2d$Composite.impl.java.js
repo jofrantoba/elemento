@@ -12,155 +12,92 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
  * @extends {Enum<Composite>}
   */
 class Composite extends Enum {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_value__org_gwtproject_canvas_dom_client_Context2d_Composite_;
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @param {?string} value
-  * @return {!Composite}
-  * @public
-  */
- static $create__java_lang_String__int__java_lang_String($name, $ordinal, value) {
+ /** @return {!Composite} */
+ static $create__java_lang_String__int__java_lang_String(/** ?string */ $name, /** number */ $ordinal, /** ?string */ value) {
   let $instance = new Composite();
   $instance.$ctor__org_gwtproject_canvas_dom_client_Context2d_Composite__java_lang_String__int__java_lang_String($name, $ordinal, value);
   return $instance;
  }
- /**
-  * @param {?string} $name
-  * @param {number} $ordinal
-  * @param {?string} value
-  * @public
-  */
- $ctor__org_gwtproject_canvas_dom_client_Context2d_Composite__java_lang_String__int__java_lang_String($name, $ordinal, value) {
+ 
+ $ctor__org_gwtproject_canvas_dom_client_Context2d_Composite__java_lang_String__int__java_lang_String(/** ?string */ $name, /** number */ $ordinal, /** ?string */ value) {
   this.f_name__java_lang_Enum_ = $name;
   this.f_ordinal__java_lang_Enum_ = $ordinal;
   this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
   this.f_value__org_gwtproject_canvas_dom_client_Context2d_Composite_ = value;
  }
- /**
-  * @return {?string}
-  * @public
-  */
+ /** @return {?string} */
  m_getValue__() {
   return this.f_value__org_gwtproject_canvas_dom_client_Context2d_Composite_;
  }
- /**
-  * @param {string} name
-  * @return {!Composite}
-  * @public
-  */
- static m_valueOf__java_lang_String(name) {
+ /** @return {!Composite} */
+ static m_valueOf__java_lang_String(/** string */ name) {
   Composite.$clinit();
   if ($Equality.$same(Composite.f_namesToValuesMap__org_gwtproject_canvas_dom_client_Context2d_Composite_, null)) {
    Composite.f_namesToValuesMap__org_gwtproject_canvas_dom_client_Context2d_Composite_ = $Enums.createMapFromValues(Composite.m_values__());
   }
   return $Enums.getValueFromNameAndMap(name, Composite.f_namesToValuesMap__org_gwtproject_canvas_dom_client_Context2d_Composite_);
  }
- /**
-  * @return {!Array<!Composite>}
-  * @public
-  */
+ /** @return {!Array<!Composite>} */
  static m_values__() {
   Composite.$clinit();
-  return /**@type {!Array<Composite>} */ ($Arrays.$init([Composite.$f_COPY__org_gwtproject_canvas_dom_client_Context2d_Composite, Composite.$f_DESTINATION_ATOP__org_gwtproject_canvas_dom_client_Context2d_Composite, Composite.$f_DESTINATION_IN__org_gwtproject_canvas_dom_client_Context2d_Composite, Composite.$f_DESTINATION_OUT__org_gwtproject_canvas_dom_client_Context2d_Composite, Composite.$f_DESTINATION_OVER__org_gwtproject_canvas_dom_client_Context2d_Composite, Composite.$f_LIGHTER__org_gwtproject_canvas_dom_client_Context2d_Composite, Composite.$f_SOURCE_ATOP__org_gwtproject_canvas_dom_client_Context2d_Composite, Composite.$f_SOURCE_IN__org_gwtproject_canvas_dom_client_Context2d_Composite, Composite.$f_SOURCE_OUT__org_gwtproject_canvas_dom_client_Context2d_Composite, Composite.$f_SOURCE_OVER__org_gwtproject_canvas_dom_client_Context2d_Composite, Composite.$f_XOR__org_gwtproject_canvas_dom_client_Context2d_Composite], Composite));
+  return /**@type {!Array<Composite>}*/ ($Arrays.$init([Composite.$f_COPY__org_gwtproject_canvas_dom_client_Context2d_Composite, Composite.$f_DESTINATION_ATOP__org_gwtproject_canvas_dom_client_Context2d_Composite, Composite.$f_DESTINATION_IN__org_gwtproject_canvas_dom_client_Context2d_Composite, Composite.$f_DESTINATION_OUT__org_gwtproject_canvas_dom_client_Context2d_Composite, Composite.$f_DESTINATION_OVER__org_gwtproject_canvas_dom_client_Context2d_Composite, Composite.$f_LIGHTER__org_gwtproject_canvas_dom_client_Context2d_Composite, Composite.$f_SOURCE_ATOP__org_gwtproject_canvas_dom_client_Context2d_Composite, Composite.$f_SOURCE_IN__org_gwtproject_canvas_dom_client_Context2d_Composite, Composite.$f_SOURCE_OUT__org_gwtproject_canvas_dom_client_Context2d_Composite, Composite.$f_SOURCE_OVER__org_gwtproject_canvas_dom_client_Context2d_Composite, Composite.$f_XOR__org_gwtproject_canvas_dom_client_Context2d_Composite], Composite));
  }
- /**
-  * Bridge method.
-  * @override
-  * @param {*} arg0
-  * @return {number}
-  * @public
-  */
- m_compareTo__java_lang_Object(arg0) {
-  return super.compareTo(/**@type {Composite} */ ($Casts.$to(arg0, Composite)));
+ //Bridge method.
+ /** @override @return {number} */
+ m_compareTo__java_lang_Object(/** * */ arg0) {
+  return super.compareTo(/**@type {Composite}*/ ($Casts.$to(arg0, Composite)));
  }
- /**
-  * @return {!Composite}
-  * @public
-  */
+ /** @return {!Composite} */
  static get f_COPY__org_gwtproject_canvas_dom_client_Context2d_Composite() {
   return (Composite.$clinit(), Composite.$f_COPY__org_gwtproject_canvas_dom_client_Context2d_Composite);
  }
- /**
-  * @return {!Composite}
-  * @public
-  */
+ /** @return {!Composite} */
  static get f_DESTINATION_ATOP__org_gwtproject_canvas_dom_client_Context2d_Composite() {
   return (Composite.$clinit(), Composite.$f_DESTINATION_ATOP__org_gwtproject_canvas_dom_client_Context2d_Composite);
  }
- /**
-  * @return {!Composite}
-  * @public
-  */
+ /** @return {!Composite} */
  static get f_DESTINATION_IN__org_gwtproject_canvas_dom_client_Context2d_Composite() {
   return (Composite.$clinit(), Composite.$f_DESTINATION_IN__org_gwtproject_canvas_dom_client_Context2d_Composite);
  }
- /**
-  * @return {!Composite}
-  * @public
-  */
+ /** @return {!Composite} */
  static get f_DESTINATION_OUT__org_gwtproject_canvas_dom_client_Context2d_Composite() {
   return (Composite.$clinit(), Composite.$f_DESTINATION_OUT__org_gwtproject_canvas_dom_client_Context2d_Composite);
  }
- /**
-  * @return {!Composite}
-  * @public
-  */
+ /** @return {!Composite} */
  static get f_DESTINATION_OVER__org_gwtproject_canvas_dom_client_Context2d_Composite() {
   return (Composite.$clinit(), Composite.$f_DESTINATION_OVER__org_gwtproject_canvas_dom_client_Context2d_Composite);
  }
- /**
-  * @return {!Composite}
-  * @public
-  */
+ /** @return {!Composite} */
  static get f_LIGHTER__org_gwtproject_canvas_dom_client_Context2d_Composite() {
   return (Composite.$clinit(), Composite.$f_LIGHTER__org_gwtproject_canvas_dom_client_Context2d_Composite);
  }
- /**
-  * @return {!Composite}
-  * @public
-  */
+ /** @return {!Composite} */
  static get f_SOURCE_ATOP__org_gwtproject_canvas_dom_client_Context2d_Composite() {
   return (Composite.$clinit(), Composite.$f_SOURCE_ATOP__org_gwtproject_canvas_dom_client_Context2d_Composite);
  }
- /**
-  * @return {!Composite}
-  * @public
-  */
+ /** @return {!Composite} */
  static get f_SOURCE_IN__org_gwtproject_canvas_dom_client_Context2d_Composite() {
   return (Composite.$clinit(), Composite.$f_SOURCE_IN__org_gwtproject_canvas_dom_client_Context2d_Composite);
  }
- /**
-  * @return {!Composite}
-  * @public
-  */
+ /** @return {!Composite} */
  static get f_SOURCE_OUT__org_gwtproject_canvas_dom_client_Context2d_Composite() {
   return (Composite.$clinit(), Composite.$f_SOURCE_OUT__org_gwtproject_canvas_dom_client_Context2d_Composite);
  }
- /**
-  * @return {!Composite}
-  * @public
-  */
+ /** @return {!Composite} */
  static get f_SOURCE_OVER__org_gwtproject_canvas_dom_client_Context2d_Composite() {
   return (Composite.$clinit(), Composite.$f_SOURCE_OVER__org_gwtproject_canvas_dom_client_Context2d_Composite);
  }
- /**
-  * @return {!Composite}
-  * @public
-  */
+ /** @return {!Composite} */
  static get f_XOR__org_gwtproject_canvas_dom_client_Context2d_Composite() {
   return (Composite.$clinit(), Composite.$f_XOR__org_gwtproject_canvas_dom_client_Context2d_Composite);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Composite.$clinit = () =>{};
   Composite.$loadModules();
@@ -178,17 +115,11 @@ class Composite extends Enum {
   Composite.$f_XOR__org_gwtproject_canvas_dom_client_Context2d_Composite = Composite.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("XOR"), Composite.$ordinal$f_XOR__org_gwtproject_canvas_dom_client_Context2d_Composite, "xor");
   Composite.f_namesToValuesMap__org_gwtproject_canvas_dom_client_Context2d_Composite_ = null;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Composite;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
@@ -199,51 +130,51 @@ class Composite extends Enum {
 }
 $Util.$setClassMetadataForEnum(Composite, 'org.gwtproject.canvas.dom.client.Context2d$Composite');
 
-/** @private {!Composite} */
+/**@private {!Composite}*/
 Composite.$f_COPY__org_gwtproject_canvas_dom_client_Context2d_Composite;
-/** @private {!Composite} */
+/**@private {!Composite}*/
 Composite.$f_DESTINATION_ATOP__org_gwtproject_canvas_dom_client_Context2d_Composite;
-/** @private {!Composite} */
+/**@private {!Composite}*/
 Composite.$f_DESTINATION_IN__org_gwtproject_canvas_dom_client_Context2d_Composite;
-/** @private {!Composite} */
+/**@private {!Composite}*/
 Composite.$f_DESTINATION_OUT__org_gwtproject_canvas_dom_client_Context2d_Composite;
-/** @private {!Composite} */
+/**@private {!Composite}*/
 Composite.$f_DESTINATION_OVER__org_gwtproject_canvas_dom_client_Context2d_Composite;
-/** @private {!Composite} */
+/**@private {!Composite}*/
 Composite.$f_LIGHTER__org_gwtproject_canvas_dom_client_Context2d_Composite;
-/** @private {!Composite} */
+/**@private {!Composite}*/
 Composite.$f_SOURCE_ATOP__org_gwtproject_canvas_dom_client_Context2d_Composite;
-/** @private {!Composite} */
+/**@private {!Composite}*/
 Composite.$f_SOURCE_IN__org_gwtproject_canvas_dom_client_Context2d_Composite;
-/** @private {!Composite} */
+/**@private {!Composite}*/
 Composite.$f_SOURCE_OUT__org_gwtproject_canvas_dom_client_Context2d_Composite;
-/** @private {!Composite} */
+/**@private {!Composite}*/
 Composite.$f_SOURCE_OVER__org_gwtproject_canvas_dom_client_Context2d_Composite;
-/** @private {!Composite} */
+/**@private {!Composite}*/
 Composite.$f_XOR__org_gwtproject_canvas_dom_client_Context2d_Composite;
-/** @public {Map<?string, !Composite>} */
+/**@type {Map<?string, !Composite>}*/
 Composite.f_namesToValuesMap__org_gwtproject_canvas_dom_client_Context2d_Composite_;
-/** @public {number} @const */
+/**@const {number}*/
 Composite.$ordinal$f_COPY__org_gwtproject_canvas_dom_client_Context2d_Composite = 0;
-/** @public {number} @const */
+/**@const {number}*/
 Composite.$ordinal$f_DESTINATION_ATOP__org_gwtproject_canvas_dom_client_Context2d_Composite = 1;
-/** @public {number} @const */
+/**@const {number}*/
 Composite.$ordinal$f_DESTINATION_IN__org_gwtproject_canvas_dom_client_Context2d_Composite = 2;
-/** @public {number} @const */
+/**@const {number}*/
 Composite.$ordinal$f_DESTINATION_OUT__org_gwtproject_canvas_dom_client_Context2d_Composite = 3;
-/** @public {number} @const */
+/**@const {number}*/
 Composite.$ordinal$f_DESTINATION_OVER__org_gwtproject_canvas_dom_client_Context2d_Composite = 4;
-/** @public {number} @const */
+/**@const {number}*/
 Composite.$ordinal$f_LIGHTER__org_gwtproject_canvas_dom_client_Context2d_Composite = 5;
-/** @public {number} @const */
+/**@const {number}*/
 Composite.$ordinal$f_SOURCE_ATOP__org_gwtproject_canvas_dom_client_Context2d_Composite = 6;
-/** @public {number} @const */
+/**@const {number}*/
 Composite.$ordinal$f_SOURCE_IN__org_gwtproject_canvas_dom_client_Context2d_Composite = 7;
-/** @public {number} @const */
+/**@const {number}*/
 Composite.$ordinal$f_SOURCE_OUT__org_gwtproject_canvas_dom_client_Context2d_Composite = 8;
-/** @public {number} @const */
+/**@const {number}*/
 Composite.$ordinal$f_SOURCE_OVER__org_gwtproject_canvas_dom_client_Context2d_Composite = 9;
-/** @public {number} @const */
+/**@const {number}*/
 Composite.$ordinal$f_XOR__org_gwtproject_canvas_dom_client_Context2d_Composite = 10;
 
 exports = Composite; 

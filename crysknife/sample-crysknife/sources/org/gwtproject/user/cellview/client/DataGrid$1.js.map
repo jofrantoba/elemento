@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"DataGrid$1.impl.java.js",
-"lineCount":60,
-"mappings":"A;;;;;;;;;;;;;;MAkpB2D,E;;;;CAAA,W;EAAAA,Q;EAAAA;qE;;;;;;;;QAAA,qD;EAAAC,a;EAAAA,yB;EAAAA,2H;EAAAA,iB;;;;;;CAAA,mG;EAAAC,iF;EAAAA,iC;;;;;;;CAEzC,uD,CAAqBC,K;EAC/BC,IAAIC,UAAJD,2K;EACAA,+N;EACAA,+N;;;;;QALmD,O;EAAAE,qB;EAAAA,kB;EAAAA;",
+"lineCount":44,
+"mappings":"A;;;;;;;;;;;;;;MAkpB2D,E;;CAAA,W;EAAAA,Q;EAAAA;qE;;;QAAA,qD;EAAAC,a;EAAAA,yB;EAAAA,2H;EAAAA,iB;;;CAAA,mG;EAAAC,iF;EAAAA,iC;;;CAEzC,uD,oBAAqBC,K;EAC/BC,IAAIC,UAAJD,2K;EACAA,+N;EACAA,+N;;;QALmD,O;EAAAE,qB;EAAAA,kB;EAAAA;",
 "sources":["DataGrid.java"],
 "names":["org.gwtproject.user.cellview.client.DataGrid$1.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.DataGrid$1.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.DataGrid$1.<init>","event","org.gwtproject.user.cellview.client.DataGrid$1.onScroll","scrollLeft","org.gwtproject.user.cellview.client.DataGrid$1.<clinit>"]
 }

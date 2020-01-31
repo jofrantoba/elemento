@@ -15,22 +15,16 @@ let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 
 class DecoratorPanel extends SimplePanel {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_containerElem__org_gwtproject_user_client_ui_DecoratorPanel_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_tbody__org_gwtproject_user_client_ui_DecoratorPanel_;
  }
- /**
-  * @param {?string} styleName
-  * @return {Object}
-  * @public
-  */
- static m_createTR__java_lang_String(styleName) {
+ /** @return {Object} */
+ static m_createTR__java_lang_String(/** ?string */ styleName) {
   DecoratorPanel.$clinit();
   let trElem = DOM.m_createTR__();
   UIObject.m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String(trElem, styleName);
@@ -45,12 +39,8 @@ class DecoratorPanel extends SimplePanel {
   }
   return trElem;
  }
- /**
-  * @param {?string} styleName
-  * @return {Object}
-  * @public
-  */
- static m_createTD__java_lang_String(styleName) {
+ /** @return {Object} */
+ static m_createTD__java_lang_String(/** ?string */ styleName) {
   let tdElem = DOM.m_createTD__();
   let inner = DOM.m_createDiv__();
   DOM.m_appendChild__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(tdElem, inner);
@@ -58,44 +48,30 @@ class DecoratorPanel extends SimplePanel {
   UIObject.m_setStyleName__org_gwtproject_dom_client_Element__java_lang_String(inner, j_l_String.m_valueOf__java_lang_Object(styleName) + "Inner");
   return tdElem;
  }
- /**
-  * Factory method corresponding to constructor 'DecoratorPanel()'.
-  * @return {!DecoratorPanel}
-  * @public
-  */
+ //Factory method corresponding to constructor 'DecoratorPanel()'.
+ /** @return {!DecoratorPanel} */
  static $create__() {
   DecoratorPanel.$clinit();
   let $instance = new DecoratorPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_DecoratorPanel__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'DecoratorPanel()'.
-  * @public
-  */
+ //Initialization from constructor 'DecoratorPanel()'.
+ 
  $ctor__org_gwtproject_user_client_ui_DecoratorPanel__() {
   this.$ctor__org_gwtproject_user_client_ui_DecoratorPanel__arrayOf_java_lang_String__int(DecoratorPanel.f_DEFAULT_ROW_STYLENAMES__org_gwtproject_user_client_ui_DecoratorPanel_, 1);
  }
- /**
-  * Factory method corresponding to constructor 'DecoratorPanel(String[], int)'.
-  * @param {Array<?string>} rowStyles
-  * @param {number} containerIndex
-  * @return {!DecoratorPanel}
-  * @public
-  */
- static $create__arrayOf_java_lang_String__int(rowStyles, containerIndex) {
+ //Factory method corresponding to constructor 'DecoratorPanel(String[], int)'.
+ /** @return {!DecoratorPanel} */
+ static $create__arrayOf_java_lang_String__int(/** Array<?string> */ rowStyles, /** number */ containerIndex) {
   DecoratorPanel.$clinit();
   let $instance = new DecoratorPanel();
   $instance.$ctor__org_gwtproject_user_client_ui_DecoratorPanel__arrayOf_java_lang_String__int(rowStyles, containerIndex);
   return $instance;
  }
- /**
-  * Initialization from constructor 'DecoratorPanel(String[], int)'.
-  * @param {Array<?string>} rowStyles
-  * @param {number} containerIndex
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_DecoratorPanel__arrayOf_java_lang_String__int(rowStyles, containerIndex) {
+ //Initialization from constructor 'DecoratorPanel(String[], int)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_DecoratorPanel__arrayOf_java_lang_String__int(/** Array<?string> */ rowStyles, /** number */ containerIndex) {
   this.$ctor__org_gwtproject_user_client_ui_SimplePanel__org_gwtproject_dom_client_Element(DOM.m_createTable__());
   let table = this.m_getElement__();
   this.f_tbody__org_gwtproject_user_client_ui_DecoratorPanel_ = DOM.m_createTBody__();
@@ -111,63 +87,38 @@ class DecoratorPanel extends SimplePanel {
   }
   this.m_setStyleName__java_lang_String(DecoratorPanel.f_DEFAULT_STYLENAME__org_gwtproject_user_client_ui_DecoratorPanel_);
  }
- /**
-  * @param {number} row
-  * @param {number} cell
-  * @return {Object}
-  * @public
-  */
- m_getCellElement__int__int(row, cell) {
+ /** @return {Object} */
+ m_getCellElement__int__int(/** number */ row, /** number */ cell) {
   let tr = DOM.m_getChild__org_gwtproject_dom_client_Element__int(this.f_tbody__org_gwtproject_user_client_ui_DecoratorPanel_, row);
   let td = DOM.m_getChild__org_gwtproject_dom_client_Element__int(tr, cell);
   return DOM.m_getFirstChild__org_gwtproject_dom_client_Element(td);
  }
- /**
-  * @override
-  * @return {Object}
-  * @public
-  */
+ /** @override @return {Object} */
  m_getContainerElement__() {
   return this.f_containerElem__org_gwtproject_user_client_ui_DecoratorPanel_;
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DecoratorPanel.$clinit = () =>{};
   DecoratorPanel.$loadModules();
   SimplePanel.$clinit();
-  DecoratorPanel.f_DEFAULT_ROW_STYLENAMES__org_gwtproject_user_client_ui_DecoratorPanel_ = /**@type {!Array<?string>} */ ($Arrays.$init(["top", "middle", "bottom"], j_l_String));
+  DecoratorPanel.f_DEFAULT_ROW_STYLENAMES__org_gwtproject_user_client_ui_DecoratorPanel_ = /**@type {!Array<?string>}*/ ($Arrays.$init(["top", "middle", "bottom"], j_l_String));
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DecoratorPanel;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
@@ -181,9 +132,9 @@ class DecoratorPanel extends SimplePanel {
 }
 $Util.$setClassMetadata(DecoratorPanel, 'org.gwtproject.user.client.ui.DecoratorPanel');
 
-/** @public {?string} @const */
+/**@const {?string}*/
 DecoratorPanel.f_DEFAULT_STYLENAME__org_gwtproject_user_client_ui_DecoratorPanel_ = "gwt-DecoratorPanel";
-/** @public {Array<?string>} */
+/**@type {Array<?string>}*/
 DecoratorPanel.f_DEFAULT_ROW_STYLENAMES__org_gwtproject_user_client_ui_DecoratorPanel_;
 
 exports = DecoratorPanel; 

@@ -8,77 +8,36 @@ const CssResource = goog.require('org.gwtproject.resources.client.CssResource$im
  * @extends {CssResource}
  */
 class Style {
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_buttonCellBase__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_buttonCellBaseCollapseLeft__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_buttonCellBaseCollapseRight__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_buttonCellBaseDefault__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_buttonCellBaseNegative__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_buttonCellBasePrimary__() {}
- /**
-  * @abstract
-  * @return {?string}
-  * @public
-  */
+ /** @abstract @return {?string} */
  m_buttonCellBasePushing__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Style.$clinit = () =>{};
   Style.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  CssResource.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Style = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  CssResource.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Style = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Style;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }
@@ -86,7 +45,7 @@ $Util.$setClassMetadataForInterface(Style, 'org.gwtproject.cell.client.ButtonCel
 
 Style.$markImplementor(/** @type {Function} */ (Style));
 
-/** @public {?string} @const */
+/**@const {?string}*/
 Style.f_DEFAULT_CSS__org_gwtproject_cell_client_ButtonCellBase_DefaultAppearance_Style = "org/gwtproject/cell/client/ButtonCellBase.gss";
 
 exports = Style; 

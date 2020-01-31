@@ -10,54 +10,32 @@ let JavaScriptObject_$Overlay = goog.forwardDeclare('org.gwtproject.core.client.
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class CanvasPixelArray_$Overlay {
- /**
-  * @param {!Object} $thisArg
-  * @param {number} i
-  * @return {number}
-  * @public
-  */
- static m_get__$devirt__org_gwtproject_canvas_dom_client_CanvasPixelArray__int($thisArg, i) {
+ /** @return {number} */
+ static m_get__$devirt__org_gwtproject_canvas_dom_client_CanvasPixelArray__int(/** !Object */ $thisArg, /** number */ i) {
   CanvasPixelArray_$Overlay.$clinit();
-  let value = /**@type {?number} */ ($Casts.$to($Overlay.m_getAt__$devirt__jsinterop_base_JsArrayLike__int(/**@type {Uint8ClampedArray} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject($thisArg), Uint8ClampedArray_$Overlay)), i), Double));
+  let value = /**@type {?number}*/ ($Casts.$to($Overlay.m_getAt__$devirt__jsinterop_base_JsArrayLike__int(/**@type {Uint8ClampedArray}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject($thisArg), Uint8ClampedArray_$Overlay)), i), Double));
   return Js.m_isTruthy__java_lang_Object(value) ? Js.m_asInt__java_lang_Object(value) : 0;
  }
- /**
-  * @param {!Object} $thisArg
-  * @return {number}
-  * @public
-  */
- static m_getLength__$devirt__org_gwtproject_canvas_dom_client_CanvasPixelArray($thisArg) {
+ /** @return {number} */
+ static m_getLength__$devirt__org_gwtproject_canvas_dom_client_CanvasPixelArray(/** !Object */ $thisArg) {
   CanvasPixelArray_$Overlay.$clinit();
-  return /**@type {Uint8ClampedArray} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject($thisArg), Uint8ClampedArray_$Overlay)).length;
+  return /**@type {Uint8ClampedArray}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject($thisArg), Uint8ClampedArray_$Overlay)).length;
  }
- /**
-  * @param {!Object} $thisArg
-  * @param {number} i
-  * @param {number} value
-  * @public
-  */
- static m_set__$devirt__org_gwtproject_canvas_dom_client_CanvasPixelArray__int__int($thisArg, i, value) {
+ 
+ static m_set__$devirt__org_gwtproject_canvas_dom_client_CanvasPixelArray__int__int(/** !Object */ $thisArg, /** number */ i, /** number */ value) {
   CanvasPixelArray_$Overlay.$clinit();
-  $Overlay.m_setAt__$devirt__jsinterop_base_JsArrayLike__int__java_lang_Object(/**@type {Uint8ClampedArray} */ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject($thisArg), Uint8ClampedArray_$Overlay)), i, value);
+  $Overlay.m_setAt__$devirt__jsinterop_base_JsArrayLike__int__java_lang_Object(/**@type {Uint8ClampedArray}*/ ($Casts.$to(JavaScriptObject_$Overlay.m_cast__$devirt__org_gwtproject_core_client_JavaScriptObject($thisArg), Uint8ClampedArray_$Overlay)), i, value);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CanvasPixelArray_$Overlay.$clinit = () =>{};
   CanvasPixelArray_$Overlay.$loadModules();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Object;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Uint8ClampedArray_$Overlay = goog.module.get('elemental2.core.Uint8ClampedArray.$Overlay$impl');
   Double = goog.module.get('java.lang.Double$impl');

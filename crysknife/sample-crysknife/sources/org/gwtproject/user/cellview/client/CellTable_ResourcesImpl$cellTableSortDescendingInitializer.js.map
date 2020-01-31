@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellTable_ResourcesImpl$cellTableSortDescendingInitializer.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;MAwGuB,kC;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,yD;EAAAA,oH;EAAAA,iB;;;;;CAAA,uG;EAAAC,iC;;;;;;QAIkC,O;EAAAC,6C;EACnDA,wH;;;;;QALiB,O;EAAAC,qD;EAAAA,kD;EAAAA,qB;EAEjBA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;MAwGuB,kC;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,yD;EAAAA,oH;EAAAA,iB;;;CAAA,uG;EAAAC,iC;;;QAIkC,O;EAAAC,6C;EACnDA,wH;;;QALiB,O;EAAAC,qD;EAAAA,kD;EAAAA,qB;EAEjBA;",
 "sources":["CellTable_ResourcesImpl.java"],
 "names":["org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$cellTableSortDescendingInitializer.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$cellTableSortDescendingInitializer.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$cellTableSortDescendingInitializer.<init>","org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$cellTableSortDescendingInitializer.get","org.gwtproject.user.cellview.client.CellTable_ResourcesImpl$cellTableSortDescendingInitializer.<clinit>"]
 }

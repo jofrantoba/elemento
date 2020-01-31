@@ -13,69 +13,42 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {BaseBuilder}
   */
 class DomBaseBuilder extends DomElementBuilderBase {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @return {!DomBaseBuilder}
-  * @public
-  */
- static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ /** @return {!DomBaseBuilder} */
+ static $create__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   DomBaseBuilder.$clinit();
   let $instance = new DomBaseBuilder();
   $instance.$ctor__org_gwtproject_dom_builder_client_DomBaseBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate);
   return $instance;
  }
- /**
-  * @param {DomBuilderImpl} delegate
-  * @public
-  */
- $ctor__org_gwtproject_dom_builder_client_DomBaseBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(delegate) {
+ 
+ $ctor__org_gwtproject_dom_builder_client_DomBaseBuilder__org_gwtproject_dom_builder_client_DomBuilderImpl(/** DomBuilderImpl */ delegate) {
   this.$ctor__org_gwtproject_dom_builder_client_DomElementBuilderBase__org_gwtproject_dom_builder_client_DomBuilderImpl__boolean(delegate, true);
  }
- /**
-  * @override
-  * @param {?string} href
-  * @return {BaseBuilder}
-  * @public
-  */
- m_href__java_lang_String(href) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).href = href;
+ /** @override @return {BaseBuilder} */
+ m_href__java_lang_String(/** ?string */ href) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).href = href;
   return this;
  }
- /**
-  * @override
-  * @param {?string} target
-  * @return {BaseBuilder}
-  * @public
-  */
- m_target__java_lang_String(target) {
-  /**@type {Object} */ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).target = target;
+ /** @override @return {BaseBuilder} */
+ m_target__java_lang_String(/** ?string */ target) {
+  /**@type {Object}*/ ($Casts.$to(this.m_assertCanAddAttribute__(), $Overlay)).target = target;
   return this;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   DomBaseBuilder.$clinit = () =>{};
   DomBaseBuilder.$loadModules();
   DomElementBuilderBase.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof DomBaseBuilder;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('org.gwtproject.dom.client.BaseElement.$Overlay$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

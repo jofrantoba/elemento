@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"CellTree_ResourcesImpl$cellTreeOpenItemInitializer.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;MAkDuB,2B;;;;CAAA,W;EAAAA,Q;;;;;;QAAA,S;EAAAC,kD;EAAAA,4G;EAAAA,iB;;;;;CAAA,+F;EAAAC,iC;;;;;;QAIkC,O;EAAAC,sC;EACnDA,+G;;;;;QALiB,O;EAAAC,8C;EAAAA,2C;EAAAA,qB;EAEjBA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;MAkDuB,2B;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,kD;EAAAA,4G;EAAAA,iB;;;CAAA,+F;EAAAC,iC;;;QAIkC,O;EAAAC,sC;EACnDA,+G;;;QALiB,O;EAAAC,8C;EAAAA,2C;EAAAA,qB;EAEjBA;",
 "sources":["CellTree_ResourcesImpl.java"],
 "names":["org.gwtproject.user.cellview.client.CellTree_ResourcesImpl$cellTreeOpenItemInitializer.<synthetic: ctor_js>","org.gwtproject.user.cellview.client.CellTree_ResourcesImpl$cellTreeOpenItemInitializer.<synthetic: ctor_create>","org.gwtproject.user.cellview.client.CellTree_ResourcesImpl$cellTreeOpenItemInitializer.<init>","org.gwtproject.user.cellview.client.CellTree_ResourcesImpl$cellTreeOpenItemInitializer.get","org.gwtproject.user.cellview.client.CellTree_ResourcesImpl$cellTreeOpenItemInitializer.<clinit>"]
 }

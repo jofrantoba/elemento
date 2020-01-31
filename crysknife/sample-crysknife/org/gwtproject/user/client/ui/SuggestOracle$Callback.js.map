@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"SuggestOracle$Callback.impl.java.js",
-"lineCount":34,
-"mappings":"A;;;;;;;;;;;MAqCmB,Q;;;;;;;CASV,+H,CAA2BA,O,EAAkBC,Q;;;;;;QATnC,M;EAAAC,mB;EAAAA,8B;;;;;QAAA,O;EAAAC,2B;EAAAA;",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;MAqCmB,Q;;CASV,+H,gBAA2BA,O,kBAAkBC,Q;;QATnC,M;EAAAC,mB;EAAAA,8B;;;QAAA,O;EAAAC,2B;EAAAA;",
 "sources":["SuggestOracle.java"],
 "names":["request","response","org.gwtproject.user.client.ui.SuggestOracle$Callback.<synthetic: adapt_lambda>","org.gwtproject.user.client.ui.SuggestOracle$Callback.<clinit>"]
 }

@@ -10,65 +10,45 @@ let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class TouchSupportDetector extends j_l_Object {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isSupported__org_gwtproject_event_dom_client_TouchEvent_TouchSupportDetector_ = false;
  }
- /**
-  * @return {!TouchSupportDetector}
-  * @public
-  */
+ /** @return {!TouchSupportDetector} */
  static $create__() {
   TouchSupportDetector.$clinit();
   let $instance = new TouchSupportDetector();
   $instance.$ctor__org_gwtproject_event_dom_client_TouchEvent_TouchSupportDetector__();
   return $instance;
  }
- /**
-  * @public
-  */
+ 
  $ctor__org_gwtproject_event_dom_client_TouchEvent_TouchSupportDetector__() {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_gwtproject_event_dom_client_TouchEvent_TouchSupportDetector();
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_detectTouchSupport___$p_org_gwtproject_event_dom_client_TouchEvent_TouchSupportDetector() {
-  let divElement = /**@type {HTMLDivElement} */ ($Casts.$to($Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("div"), HTMLDivElement_$Overlay));
+  let divElement = /**@type {HTMLDivElement}*/ ($Casts.$to($Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("div"), HTMLDivElement_$Overlay));
   Element_$Overlay.m_setAttribute__$devirt__elemental2_dom_Element__java_lang_String__java_lang_String(divElement, "ontouchstart", "return;");
   return $Equality.$same("function", typeof(divElement.ontouchstart));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_event_dom_client_TouchEvent_TouchSupportDetector() {
   this.f_isSupported__org_gwtproject_event_dom_client_TouchEvent_TouchSupportDetector_ = this.m_detectTouchSupport___$p_org_gwtproject_event_dom_client_TouchEvent_TouchSupportDetector();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   TouchSupportDetector.$clinit = () =>{};
   TouchSupportDetector.$loadModules();
   j_l_Object.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof TouchSupportDetector;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $Overlay = goog.module.get('elemental2.dom.DomGlobal.$Overlay$impl');
   Element_$Overlay = goog.module.get('elemental2.dom.Element.$Overlay$impl');

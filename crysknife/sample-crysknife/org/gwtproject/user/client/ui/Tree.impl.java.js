@@ -93,312 +93,174 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {HasAllMouseHandlers}
   */
 class Tree extends Widget {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {Map<Widget, TreeItem>} */
+  /**@type {Map<Widget, TreeItem>}*/
   this.f_childWidgets__org_gwtproject_user_client_ui_Tree_;
-  /** @public {TreeItem} */
+  /**@type {TreeItem}*/
   this.f_curSelection__org_gwtproject_user_client_ui_Tree_;
-  /** @public {Object} */
+  /**@type {Object}*/
   this.f_focusable__org_gwtproject_user_client_ui_Tree_;
-  /** @public {ImageAdapter} */
+  /**@type {ImageAdapter}*/
   this.f_images__org_gwtproject_user_client_ui_Tree_;
-  /** @public {?string} */
+  /**@type {?string}*/
   this.f_indentValue__org_gwtproject_user_client_ui_Tree_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_isAnimationEnabled__org_gwtproject_user_client_ui_Tree_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_lastWasKeyDown__org_gwtproject_user_client_ui_Tree_ = false;
-  /** @public {TreeItem} */
+  /**@type {TreeItem}*/
   this.f_root__org_gwtproject_user_client_ui_Tree_;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_scrollOnSelectEnabled__org_gwtproject_user_client_ui_Tree_ = false;
-  /** @public {boolean} */
+  /**@type {boolean}*/
   this.f_useLeafImages__org_gwtproject_user_client_ui_Tree_ = false;
  }
- /**
-  * @param {Object} elem
-  * @return {boolean}
-  * @public
-  */
- static m_shouldTreeDelegateFocusToElement__org_gwtproject_dom_client_Element(elem) {
+ /** @return {boolean} */
+ static m_shouldTreeDelegateFocusToElement__org_gwtproject_dom_client_Element(/** Object */ elem) {
   Tree.$clinit();
   let name = elem.nodeName;
   return j_l_String.m_equals__java_lang_String__java_lang_Object(name, "SELECT") || j_l_String.m_equals__java_lang_String__java_lang_Object(name, "INPUT") || j_l_String.m_equals__java_lang_String__java_lang_Object(name, "TEXTAREA") || j_l_String.m_equals__java_lang_String__java_lang_Object(name, "OPTION") || j_l_String.m_equals__java_lang_String__java_lang_Object(name, "BUTTON") || j_l_String.m_equals__java_lang_String__java_lang_Object(name, "LABEL");
  }
- /**
-  * Factory method corresponding to constructor 'Tree()'.
-  * @return {!Tree}
-  * @public
-  */
+ //Factory method corresponding to constructor 'Tree()'.
+ /** @return {!Tree} */
  static $create__() {
   Tree.$clinit();
   let $instance = new Tree();
   $instance.$ctor__org_gwtproject_user_client_ui_Tree__();
   return $instance;
  }
- /**
-  * Initialization from constructor 'Tree()'.
-  * @public
-  */
+ //Initialization from constructor 'Tree()'.
+ 
  $ctor__org_gwtproject_user_client_ui_Tree__() {
   this.$ctor__org_gwtproject_user_client_ui_Widget__();
   this.$init___$p_org_gwtproject_user_client_ui_Tree();
   this.m_init__org_gwtproject_user_client_ui_Tree_ImageAdapter__boolean_$p_org_gwtproject_user_client_ui_Tree(ImageAdapter.$create__(), false);
  }
- /**
-  * Factory method corresponding to constructor 'Tree(Resources)'.
-  * @param {Resources} resources
-  * @return {!Tree}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_Tree_Resources(resources) {
+ //Factory method corresponding to constructor 'Tree(Resources)'.
+ /** @return {!Tree} */
+ static $create__org_gwtproject_user_client_ui_Tree_Resources(/** Resources */ resources) {
   Tree.$clinit();
   let $instance = new Tree();
   $instance.$ctor__org_gwtproject_user_client_ui_Tree__org_gwtproject_user_client_ui_Tree_Resources(resources);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Tree(Resources)'.
-  * @param {Resources} resources
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Tree__org_gwtproject_user_client_ui_Tree_Resources(resources) {
+ //Initialization from constructor 'Tree(Resources)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Tree__org_gwtproject_user_client_ui_Tree_Resources(/** Resources */ resources) {
   this.$ctor__org_gwtproject_user_client_ui_Widget__();
   this.$init___$p_org_gwtproject_user_client_ui_Tree();
   this.m_init__org_gwtproject_user_client_ui_Tree_ImageAdapter__boolean_$p_org_gwtproject_user_client_ui_Tree(ImageAdapter.$create__org_gwtproject_user_client_ui_Tree_Resources(resources), false);
  }
- /**
-  * Factory method corresponding to constructor 'Tree(Resources, boolean)'.
-  * @param {Resources} resources
-  * @param {boolean} useLeafImages
-  * @return {!Tree}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_Tree_Resources__boolean(resources, useLeafImages) {
+ //Factory method corresponding to constructor 'Tree(Resources, boolean)'.
+ /** @return {!Tree} */
+ static $create__org_gwtproject_user_client_ui_Tree_Resources__boolean(/** Resources */ resources, /** boolean */ useLeafImages) {
   Tree.$clinit();
   let $instance = new Tree();
   $instance.$ctor__org_gwtproject_user_client_ui_Tree__org_gwtproject_user_client_ui_Tree_Resources__boolean(resources, useLeafImages);
   return $instance;
  }
- /**
-  * Initialization from constructor 'Tree(Resources, boolean)'.
-  * @param {Resources} resources
-  * @param {boolean} useLeafImages
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_Tree__org_gwtproject_user_client_ui_Tree_Resources__boolean(resources, useLeafImages) {
+ //Initialization from constructor 'Tree(Resources, boolean)'.
+ 
+ $ctor__org_gwtproject_user_client_ui_Tree__org_gwtproject_user_client_ui_Tree_Resources__boolean(/** Resources */ resources, /** boolean */ useLeafImages) {
   this.$ctor__org_gwtproject_user_client_ui_Widget__();
   this.$init___$p_org_gwtproject_user_client_ui_Tree();
   this.m_init__org_gwtproject_user_client_ui_Tree_ImageAdapter__boolean_$p_org_gwtproject_user_client_ui_Tree(ImageAdapter.$create__org_gwtproject_user_client_ui_Tree_Resources(resources), useLeafImages);
  }
- /**
-  * @override
-  * @param {Widget} widget
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_Widget(widget) {
+ /** @override */
+ m_add__org_gwtproject_user_client_ui_Widget(/** Widget */ widget) {
   this.m_addItem__org_gwtproject_user_client_ui_Widget(widget);
  }
- /**
-  * @override
-  * @param {IsWidget} w
-  * @public
-  */
- m_add__org_gwtproject_user_client_ui_IsWidget(w) {
+ /** @override */
+ m_add__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ w) {
   this.m_add__org_gwtproject_user_client_ui_Widget(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(w));
  }
- /**
-  * @override
-  * @param {BlurHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addBlurHandler__org_gwtproject_event_dom_client_BlurHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addBlurHandler__org_gwtproject_event_dom_client_BlurHandler(/** BlurHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, BlurEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {CloseHandler<TreeItem>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addCloseHandler__org_gwtproject_event_logical_shared_CloseHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addCloseHandler__org_gwtproject_event_logical_shared_CloseHandler(/** CloseHandler<TreeItem> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, CloseEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {FocusHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addFocusHandler__org_gwtproject_event_dom_client_FocusHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addFocusHandler__org_gwtproject_event_dom_client_FocusHandler(/** FocusHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, FocusEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {SafeHtml} itemHtml
-  * @return {TreeItem}
-  * @public
-  */
- m_addItem__org_gwtproject_safehtml_shared_SafeHtml(itemHtml) {
+ /** @override @return {TreeItem} */
+ m_addItem__org_gwtproject_safehtml_shared_SafeHtml(/** SafeHtml */ itemHtml) {
   return this.f_root__org_gwtproject_user_client_ui_Tree_.m_addItem__org_gwtproject_safehtml_shared_SafeHtml(itemHtml);
  }
- /**
-  * @override
-  * @param {TreeItem} item
-  * @public
-  */
- m_addItem__org_gwtproject_user_client_ui_TreeItem(item) {
+ /** @override */
+ m_addItem__org_gwtproject_user_client_ui_TreeItem(/** TreeItem */ item) {
   this.f_root__org_gwtproject_user_client_ui_Tree_.m_addItem__org_gwtproject_user_client_ui_TreeItem(item);
  }
- /**
-  * @override
-  * @param {IsTreeItem} isItem
-  * @public
-  */
- m_addItem__org_gwtproject_user_client_ui_IsTreeItem(isItem) {
+ /** @override */
+ m_addItem__org_gwtproject_user_client_ui_IsTreeItem(/** IsTreeItem */ isItem) {
   this.f_root__org_gwtproject_user_client_ui_Tree_.m_addItem__org_gwtproject_user_client_ui_IsTreeItem(isItem);
  }
- /**
-  * @override
-  * @param {Widget} widget
-  * @return {TreeItem}
-  * @public
-  */
- m_addItem__org_gwtproject_user_client_ui_Widget(widget) {
+ /** @override @return {TreeItem} */
+ m_addItem__org_gwtproject_user_client_ui_Widget(/** Widget */ widget) {
   return this.f_root__org_gwtproject_user_client_ui_Tree_.m_addItem__org_gwtproject_user_client_ui_Widget(widget);
  }
- /**
-  * @override
-  * @param {IsWidget} w
-  * @return {TreeItem}
-  * @public
-  */
- m_addItem__org_gwtproject_user_client_ui_IsWidget(w) {
+ /** @override @return {TreeItem} */
+ m_addItem__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ w) {
   return this.m_addItem__org_gwtproject_user_client_ui_Widget(Widget.m_asWidgetOrNull__org_gwtproject_user_client_ui_IsWidget(w));
  }
- /**
-  * @override
-  * @param {KeyDownHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addKeyDownHandler__org_gwtproject_event_dom_client_KeyDownHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addKeyDownHandler__org_gwtproject_event_dom_client_KeyDownHandler(/** KeyDownHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, KeyDownEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {KeyPressHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addKeyPressHandler__org_gwtproject_event_dom_client_KeyPressHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addKeyPressHandler__org_gwtproject_event_dom_client_KeyPressHandler(/** KeyPressHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, KeyPressEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {KeyUpHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addKeyUpHandler__org_gwtproject_event_dom_client_KeyUpHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addKeyUpHandler__org_gwtproject_event_dom_client_KeyUpHandler(/** KeyUpHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, KeyUpEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseDownHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseDownHandler__org_gwtproject_event_dom_client_MouseDownHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseDownHandler__org_gwtproject_event_dom_client_MouseDownHandler(/** MouseDownHandler */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, MouseDownEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseMoveHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseMoveHandler__org_gwtproject_event_dom_client_MouseMoveHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseMoveHandler__org_gwtproject_event_dom_client_MouseMoveHandler(/** MouseMoveHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseMoveEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseOutHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseOutHandler__org_gwtproject_event_dom_client_MouseOutHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseOutHandler__org_gwtproject_event_dom_client_MouseOutHandler(/** MouseOutHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseOutEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseOverHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseOverHandler__org_gwtproject_event_dom_client_MouseOverHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseOverHandler__org_gwtproject_event_dom_client_MouseOverHandler(/** MouseOverHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseOverEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseUpHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseUpHandler__org_gwtproject_event_dom_client_MouseUpHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseUpHandler__org_gwtproject_event_dom_client_MouseUpHandler(/** MouseUpHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseUpEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {MouseWheelHandler} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addMouseWheelHandler__org_gwtproject_event_dom_client_MouseWheelHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addMouseWheelHandler__org_gwtproject_event_dom_client_MouseWheelHandler(/** MouseWheelHandler */ handler) {
   return this.m_addDomHandler__org_gwtproject_event_legacy_shared_EventHandler__org_gwtproject_event_dom_client_DomEvent_Type(handler, MouseWheelEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {OpenHandler<TreeItem>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addOpenHandler__org_gwtproject_event_logical_shared_OpenHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addOpenHandler__org_gwtproject_event_logical_shared_OpenHandler(/** OpenHandler<TreeItem> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, OpenEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {SelectionHandler<TreeItem>} handler
-  * @return {HandlerRegistration}
-  * @public
-  */
- m_addSelectionHandler__org_gwtproject_event_logical_shared_SelectionHandler(handler) {
+ /** @override @return {HandlerRegistration} */
+ m_addSelectionHandler__org_gwtproject_event_logical_shared_SelectionHandler(/** SelectionHandler<TreeItem> */ handler) {
   return this.m_addHandler__java_lang_Object__org_gwtproject_event_shared_Event_Type(handler, SelectionEvent.m_getType__());
  }
- /**
-  * @override
-  * @param {?string} itemText
-  * @return {TreeItem}
-  * @public
-  */
- m_addTextItem__java_lang_String(itemText) {
+ /** @override @return {TreeItem} */
+ m_addTextItem__java_lang_String(/** ?string */ itemText) {
   return this.f_root__org_gwtproject_user_client_ui_Tree_.m_addTextItem__java_lang_String(itemText);
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_clear__() {
   this.f_root__org_gwtproject_user_client_ui_Tree_.m_removeItems__();
  }
- /**
-  * @public
-  */
+ 
  m_ensureSelectedItemVisible__() {
   if ($Equality.$same(this.f_curSelection__org_gwtproject_user_client_ui_Tree_, null)) {
    return;
@@ -409,102 +271,54 @@ class Tree extends Widget {
    parent = parent.m_getParentItem__();
   }
  }
- /**
-  * @param {number} index
-  * @return {TreeItem}
-  * @public
-  */
- m_getItem__int(index) {
+ /** @return {TreeItem} */
+ m_getItem__int(/** number */ index) {
   return this.f_root__org_gwtproject_user_client_ui_Tree_.m_getChild__int(index);
  }
- /**
-  * @return {number}
-  * @public
-  */
+ /** @return {number} */
  m_getItemCount__() {
   return this.f_root__org_gwtproject_user_client_ui_Tree_.m_getChildCount__();
  }
- /**
-  * @return {TreeItem}
-  * @public
-  */
+ /** @return {TreeItem} */
  m_getSelectedItem__() {
   return this.f_curSelection__org_gwtproject_user_client_ui_Tree_;
  }
- /**
-  * @override
-  * @return {number}
-  * @public
-  */
+ /** @override @return {number} */
  m_getTabIndex__() {
   return FocusPanel.f_impl__org_gwtproject_user_client_ui_FocusPanel.m_getTabIndex__org_gwtproject_dom_client_Element(this.f_focusable__org_gwtproject_user_client_ui_Tree_);
  }
- /**
-  * @param {number} beforeIndex
-  * @param {SafeHtml} itemHtml
-  * @return {TreeItem}
-  * @public
-  */
- m_insertItem__int__org_gwtproject_safehtml_shared_SafeHtml(beforeIndex, itemHtml) {
+ /** @return {TreeItem} */
+ m_insertItem__int__org_gwtproject_safehtml_shared_SafeHtml(/** number */ beforeIndex, /** SafeHtml */ itemHtml) {
   return this.f_root__org_gwtproject_user_client_ui_Tree_.m_insertItem__int__org_gwtproject_safehtml_shared_SafeHtml(beforeIndex, itemHtml);
  }
- /**
-  * @param {number} beforeIndex
-  * @param {TreeItem} item
-  * @public
-  */
- m_insertItem__int__org_gwtproject_user_client_ui_TreeItem(beforeIndex, item) {
+ 
+ m_insertItem__int__org_gwtproject_user_client_ui_TreeItem(/** number */ beforeIndex, /** TreeItem */ item) {
   this.f_root__org_gwtproject_user_client_ui_Tree_.m_insertItem__int__org_gwtproject_user_client_ui_TreeItem(beforeIndex, item);
  }
- /**
-  * @param {number} beforeIndex
-  * @param {Widget} widget
-  * @return {TreeItem}
-  * @public
-  */
- m_insertItem__int__org_gwtproject_user_client_ui_Widget(beforeIndex, widget) {
+ /** @return {TreeItem} */
+ m_insertItem__int__org_gwtproject_user_client_ui_Widget(/** number */ beforeIndex, /** Widget */ widget) {
   return this.f_root__org_gwtproject_user_client_ui_Tree_.m_insertItem__int__org_gwtproject_user_client_ui_Widget(beforeIndex, widget);
  }
- /**
-  * @param {number} beforeIndex
-  * @param {?string} itemText
-  * @return {TreeItem}
-  * @public
-  */
- m_insertTextItem__int__java_lang_String(beforeIndex, itemText) {
+ /** @return {TreeItem} */
+ m_insertTextItem__int__java_lang_String(/** number */ beforeIndex, /** ?string */ itemText) {
   return this.f_root__org_gwtproject_user_client_ui_Tree_.m_insertTextItem__int__java_lang_String(beforeIndex, itemText);
  }
- /**
-  * @override
-  * @return {boolean}
-  * @public
-  */
+ /** @override @return {boolean} */
  m_isAnimationEnabled__() {
   return this.f_isAnimationEnabled__org_gwtproject_user_client_ui_Tree_;
  }
- /**
-  * @return {boolean}
-  * @public
-  */
+ /** @return {boolean} */
  m_isScrollOnSelectEnabled__() {
   return this.f_scrollOnSelectEnabled__org_gwtproject_user_client_ui_Tree_;
  }
- /**
-  * @override
-  * @return {Iterator<Widget>}
-  * @public
-  */
+ /** @override @return {Iterator<Widget>} */
  m_iterator__() {
-  let widgets = /**@type {!Array<Widget>} */ ($Arrays.$create([this.f_childWidgets__org_gwtproject_user_client_ui_Tree_.size()], Widget));
+  let widgets = /**@type {!Array<Widget>}*/ ($Arrays.$create([this.f_childWidgets__org_gwtproject_user_client_ui_Tree_.size()], Widget));
   this.f_childWidgets__org_gwtproject_user_client_ui_Tree_.keySet().m_toArray__arrayOf_java_lang_Object(widgets);
   return WidgetIterators.m_createWidgetIterator__org_gwtproject_user_client_ui_HasWidgets__arrayOf_org_gwtproject_user_client_ui_Widget(this, widgets);
  }
- /**
-  * @override
-  * @param {Event} event
-  * @public
-  */
- m_onBrowserEvent__org_gwtproject_user_client_Event(event) {
+ /** @override */
+ m_onBrowserEvent__org_gwtproject_user_client_Event(/** Event */ event) {
   let eventType = DOM.m_eventGetType__org_gwtproject_user_client_Event(event);
   switch (eventType) {
    case Event.f_ONKEYDOWN__org_gwtproject_user_client_Event: 
@@ -558,7 +372,7 @@ class Tree extends Widget {
    case Event.f_ONKEYUP__org_gwtproject_user_client_Event: 
     {
      if ($Overlay.m_getKeyCode__$devirt__org_gwtproject_dom_client_NativeEvent(event) == KeyCodes.f_KEY_TAB__org_gwtproject_event_dom_client_KeyCodes) {
-      let chain = /**@type {!ArrayList<Object>} */ (ArrayList.$create__());
+      let chain = /**@type {!ArrayList<Object>}*/ (ArrayList.$create__());
       this.m_collectElementChain__java_util_ArrayList__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_Tree(chain, this.m_getElement__(), DOM.m_eventGetTarget__org_gwtproject_user_client_Event(event));
       let item = this.m_findItemByChain__java_util_ArrayList__int__org_gwtproject_user_client_ui_TreeItem_$p_org_gwtproject_user_client_ui_Tree(chain, 0, this.f_root__org_gwtproject_user_client_ui_Tree_);
       if (!$Equality.$same(item, this.m_getSelectedItem__())) {
@@ -582,105 +396,62 @@ class Tree extends Widget {
   }
   super.m_onBrowserEvent__org_gwtproject_user_client_Event(event);
  }
- /**
-  * @override
-  * @param {Widget} w
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_Widget(w) {
-  let item = /**@type {TreeItem} */ ($Casts.$to(this.f_childWidgets__org_gwtproject_user_client_ui_Tree_.get(w), TreeItem));
+ /** @override @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_Widget(/** Widget */ w) {
+  let item = /**@type {TreeItem}*/ ($Casts.$to(this.f_childWidgets__org_gwtproject_user_client_ui_Tree_.get(w), TreeItem));
   if ($Equality.$same(item, null)) {
    return false;
   }
   item.m_setWidget__org_gwtproject_user_client_ui_Widget(null);
   return true;
  }
- /**
-  * @override
-  * @param {IsWidget} w
-  * @return {boolean}
-  * @public
-  */
- m_remove__org_gwtproject_user_client_ui_IsWidget(w) {
+ /** @override @return {boolean} */
+ m_remove__org_gwtproject_user_client_ui_IsWidget(/** IsWidget */ w) {
   return this.m_remove__org_gwtproject_user_client_ui_Widget(w.m_asWidget__());
  }
- /**
-  * @override
-  * @param {TreeItem} item
-  * @public
-  */
- m_removeItem__org_gwtproject_user_client_ui_TreeItem(item) {
+ /** @override */
+ m_removeItem__org_gwtproject_user_client_ui_TreeItem(/** TreeItem */ item) {
   this.f_root__org_gwtproject_user_client_ui_Tree_.m_removeItem__org_gwtproject_user_client_ui_TreeItem(item);
  }
- /**
-  * @override
-  * @param {IsTreeItem} isItem
-  * @public
-  */
- m_removeItem__org_gwtproject_user_client_ui_IsTreeItem(isItem) {
+ /** @override */
+ m_removeItem__org_gwtproject_user_client_ui_IsTreeItem(/** IsTreeItem */ isItem) {
   if (!$Equality.$same(isItem, null)) {
    let item = isItem.m_asTreeItem__();
    this.m_removeItem__org_gwtproject_user_client_ui_TreeItem(item);
   }
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_removeItems__() {
   while (this.m_getItemCount__() > 0) {
    this.m_removeItem__org_gwtproject_user_client_ui_TreeItem(this.m_getItem__int(0));
   }
  }
- /**
-  * @override
-  * @param {number} key
-  * @public
-  */
- m_setAccessKey__char(key) {
+ /** @override */
+ m_setAccessKey__char(/** number */ key) {
   FocusPanel.f_impl__org_gwtproject_user_client_ui_FocusPanel.m_setAccessKey__org_gwtproject_dom_client_Element__char(this.f_focusable__org_gwtproject_user_client_ui_Tree_, key);
  }
- /**
-  * @override
-  * @param {boolean} enable
-  * @public
-  */
- m_setAnimationEnabled__boolean(enable) {
+ /** @override */
+ m_setAnimationEnabled__boolean(/** boolean */ enable) {
   this.f_isAnimationEnabled__org_gwtproject_user_client_ui_Tree_ = enable;
  }
- /**
-  * @override
-  * @param {boolean} focus
-  * @public
-  */
- m_setFocus__boolean(focus) {
+ /** @override */
+ m_setFocus__boolean(/** boolean */ focus) {
   if (focus) {
    FocusPanel.f_impl__org_gwtproject_user_client_ui_FocusPanel.m_focus__org_gwtproject_dom_client_Element(this.f_focusable__org_gwtproject_user_client_ui_Tree_);
   } else {
    FocusPanel.f_impl__org_gwtproject_user_client_ui_FocusPanel.m_blur__org_gwtproject_dom_client_Element(this.f_focusable__org_gwtproject_user_client_ui_Tree_);
   }
  }
- /**
-  * @param {boolean} enable
-  * @public
-  */
- m_setScrollOnSelectEnabled__boolean(enable) {
+ 
+ m_setScrollOnSelectEnabled__boolean(/** boolean */ enable) {
   this.f_scrollOnSelectEnabled__org_gwtproject_user_client_ui_Tree_ = enable;
  }
- /**
-  * @param {TreeItem} item
-  * @public
-  */
- m_setSelectedItem__org_gwtproject_user_client_ui_TreeItem(item) {
+ 
+ m_setSelectedItem__org_gwtproject_user_client_ui_TreeItem(/** TreeItem */ item) {
   this.m_setSelectedItem__org_gwtproject_user_client_ui_TreeItem__boolean(item, true);
  }
- /**
-  * @param {TreeItem} item
-  * @param {boolean} fireEvents
-  * @public
-  */
- m_setSelectedItem__org_gwtproject_user_client_ui_TreeItem__boolean(item, fireEvents) {
+ 
+ m_setSelectedItem__org_gwtproject_user_client_ui_TreeItem__boolean(/** TreeItem */ item, /** boolean */ fireEvents) {
   if ($Equality.$same(item, null)) {
    if ($Equality.$same(this.f_curSelection__org_gwtproject_user_client_ui_Tree_, null)) {
     return;
@@ -691,27 +462,17 @@ class Tree extends Widget {
   }
   this.m_onSelection__org_gwtproject_user_client_ui_TreeItem__boolean__boolean_$p_org_gwtproject_user_client_ui_Tree(item, fireEvents, true);
  }
- /**
-  * @override
-  * @param {number} index
-  * @public
-  */
- m_setTabIndex__int(index) {
+ /** @override */
+ m_setTabIndex__int(/** number */ index) {
   FocusPanel.f_impl__org_gwtproject_user_client_ui_FocusPanel.m_setTabIndex__org_gwtproject_dom_client_Element__int(this.f_focusable__org_gwtproject_user_client_ui_Tree_, index);
  }
- /**
-  * @return {Iterator<TreeItem>}
-  * @public
-  */
+ /** @return {Iterator<TreeItem>} */
  m_treeItemIterator__() {
-  let accum = /**@type {!ArrayList<TreeItem>} */ (ArrayList.$create__());
+  let accum = /**@type {!ArrayList<TreeItem>}*/ (ArrayList.$create__());
   this.f_root__org_gwtproject_user_client_ui_Tree_.m_addTreeItems__java_util_List_$pp_org_gwtproject_user_client_ui(accum);
   return accum.m_iterator__();
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_doAttachChildren__() {
   try {
    AttachDetachException.m_tryCommand__java_lang_Iterable__org_gwtproject_user_client_ui_AttachDetachException_Command(this, AttachDetachException.f_attachCommand__org_gwtproject_user_client_ui_AttachDetachException);
@@ -719,10 +480,7 @@ class Tree extends Widget {
    DOM.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(this.f_focusable__org_gwtproject_user_client_ui_Tree_, this);
   }
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_doDetachChildren__() {
   try {
    AttachDetachException.m_tryCommand__java_lang_Iterable__org_gwtproject_user_client_ui_AttachDetachException_Command(this, AttachDetachException.f_detachCommand__org_gwtproject_user_client_ui_AttachDetachException);
@@ -730,72 +488,43 @@ class Tree extends Widget {
    DOM.m_setEventListener__org_gwtproject_dom_client_Element__org_gwtproject_user_client_EventListener(this.f_focusable__org_gwtproject_user_client_ui_Tree_, null);
   }
  }
- /**
-  * @param {TreeItem} currentItem
-  * @return {boolean}
-  * @public
-  */
- m_isKeyboardNavigationEnabled__org_gwtproject_user_client_ui_TreeItem(currentItem) {
+ /** @return {boolean} */
+ m_isKeyboardNavigationEnabled__org_gwtproject_user_client_ui_TreeItem(/** TreeItem */ currentItem) {
   return true;
  }
- /**
-  * @override
-  * @param {?string} baseID
-  * @public
-  */
- m_onEnsureDebugId__java_lang_String(baseID) {
+ /** @override */
+ m_onEnsureDebugId__java_lang_String(/** ?string */ baseID) {
   super.m_onEnsureDebugId__java_lang_String(baseID);
   this.f_root__org_gwtproject_user_client_ui_Tree_.m_ensureDebugId__java_lang_String(j_l_String.m_valueOf__java_lang_Object(baseID) + "-root");
  }
- /**
-  * @override
-  * @public
-  */
+ /** @override */
  m_onLoad__() {
   this.f_root__org_gwtproject_user_client_ui_Tree_.m_updateStateRecursive___$pp_org_gwtproject_user_client_ui();
  }
- /**
-  * @param {Widget} widget
-  * @param {TreeItem} treeItem
-  * @public
-  */
- m_adopt__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_TreeItem_$pp_org_gwtproject_user_client_ui(widget, treeItem) {
+ 
+ m_adopt__org_gwtproject_user_client_ui_Widget__org_gwtproject_user_client_ui_TreeItem_$pp_org_gwtproject_user_client_ui(/** Widget */ widget, /** TreeItem */ treeItem) {
   $Asserts.$assert((!this.f_childWidgets__org_gwtproject_user_client_ui_Tree_.containsKey(widget)));
   this.f_childWidgets__org_gwtproject_user_client_ui_Tree_.put(widget, treeItem);
   widget.m_setParent__org_gwtproject_user_client_ui_Widget(this);
  }
- /**
-  * @param {TreeItem} item
-  * @param {boolean} open
-  * @public
-  */
- m_fireStateChanged__org_gwtproject_user_client_ui_TreeItem__boolean_$pp_org_gwtproject_user_client_ui(item, open) {
+ 
+ m_fireStateChanged__org_gwtproject_user_client_ui_TreeItem__boolean_$pp_org_gwtproject_user_client_ui(/** TreeItem */ item, /** boolean */ open) {
   if (open) {
    OpenEvent.m_fire__org_gwtproject_event_logical_shared_HasOpenHandlers__java_lang_Object(this, item);
   } else {
    CloseEvent.m_fire__org_gwtproject_event_logical_shared_HasCloseHandlers__java_lang_Object(this, item);
   }
  }
- /**
-  * @return {Map<Widget, TreeItem>}
-  * @public
-  */
+ /** @return {Map<Widget, TreeItem>} */
  m_getChildWidgets___$pp_org_gwtproject_user_client_ui() {
   return this.f_childWidgets__org_gwtproject_user_client_ui_Tree_;
  }
- /**
-  * @return {ImageAdapter}
-  * @public
-  */
+ /** @return {ImageAdapter} */
  m_getImages___$pp_org_gwtproject_user_client_ui() {
   return this.f_images__org_gwtproject_user_client_ui_Tree_;
  }
- /**
-  * @param {TreeItem} itemThatChangedState
-  * @param {boolean} isItemOpening
-  * @public
-  */
- m_maybeUpdateSelection__org_gwtproject_user_client_ui_TreeItem__boolean_$pp_org_gwtproject_user_client_ui(itemThatChangedState, isItemOpening) {
+ 
+ m_maybeUpdateSelection__org_gwtproject_user_client_ui_TreeItem__boolean_$pp_org_gwtproject_user_client_ui(/** TreeItem */ itemThatChangedState, /** boolean */ isItemOpening) {
   if (!isItemOpening) {
    let tempItem = this.f_curSelection__org_gwtproject_user_client_ui_Tree_;
    while (!$Equality.$same(tempItem, null)) {
@@ -807,11 +536,8 @@ class Tree extends Widget {
    }
   }
  }
- /**
-  * @param {Widget} widget
-  * @public
-  */
- m_orphan__org_gwtproject_user_client_ui_Widget_$pp_org_gwtproject_user_client_ui(widget) {
+ 
+ m_orphan__org_gwtproject_user_client_ui_Widget_$pp_org_gwtproject_user_client_ui(/** Widget */ widget) {
   $Asserts.$assert($Equality.$same(widget.m_getParent__(), this));
   try {
    widget.m_setParent__org_gwtproject_user_client_ui_Widget(null);
@@ -819,18 +545,12 @@ class Tree extends Widget {
    this.f_childWidgets__org_gwtproject_user_client_ui_Tree_.remove(widget);
   }
  }
- /**
-  * @param {TreeItem} treeItem
-  * @public
-  */
- m_showClosedImage__org_gwtproject_user_client_ui_TreeItem_$pp_org_gwtproject_user_client_ui(treeItem) {
+ 
+ m_showClosedImage__org_gwtproject_user_client_ui_TreeItem_$pp_org_gwtproject_user_client_ui(/** TreeItem */ treeItem) {
   this.m_showImage__org_gwtproject_user_client_ui_TreeItem__org_gwtproject_user_client_ui_AbstractImagePrototype_$p_org_gwtproject_user_client_ui_Tree(treeItem, this.f_images__org_gwtproject_user_client_ui_Tree_.m_treeClosed__());
  }
- /**
-  * @param {TreeItem} treeItem
-  * @public
-  */
- m_showLeafImage__org_gwtproject_user_client_ui_TreeItem_$pp_org_gwtproject_user_client_ui(treeItem) {
+ 
+ m_showLeafImage__org_gwtproject_user_client_ui_TreeItem_$pp_org_gwtproject_user_client_ui(/** TreeItem */ treeItem) {
   if (this.f_useLeafImages__org_gwtproject_user_client_ui_Tree_ || treeItem.m_isFullNode___$pp_org_gwtproject_user_client_ui()) {
    this.m_showImage__org_gwtproject_user_client_ui_TreeItem__org_gwtproject_user_client_ui_AbstractImagePrototype_$p_org_gwtproject_user_client_ui_Tree(treeItem, this.f_images__org_gwtproject_user_client_ui_Tree_.m_treeLeaf__());
   } else if (LocaleInfo.m_getCurrentLocale__().m_isRTL__()) {
@@ -839,33 +559,21 @@ class Tree extends Widget {
    Style_$Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(treeItem.m_getElement__().style, "paddingLeft", this.f_indentValue__org_gwtproject_user_client_ui_Tree_);
   }
  }
- /**
-  * @param {TreeItem} treeItem
-  * @public
-  */
- m_showOpenImage__org_gwtproject_user_client_ui_TreeItem_$pp_org_gwtproject_user_client_ui(treeItem) {
+ 
+ m_showOpenImage__org_gwtproject_user_client_ui_TreeItem_$pp_org_gwtproject_user_client_ui(/** TreeItem */ treeItem) {
   this.m_showImage__org_gwtproject_user_client_ui_TreeItem__org_gwtproject_user_client_ui_AbstractImagePrototype_$p_org_gwtproject_user_client_ui_Tree(treeItem, this.f_images__org_gwtproject_user_client_ui_Tree_.m_treeOpen__());
  }
- /**
-  * @param {ArrayList<Object>} chain
-  * @param {Object} hRoot
-  * @param {Object} hElem
-  * @public
-  */
- m_collectElementChain__java_util_ArrayList__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_Tree(chain, hRoot, hElem) {
+ 
+ m_collectElementChain__java_util_ArrayList__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_Tree(/** ArrayList<Object> */ chain, /** Object */ hRoot, /** Object */ hElem) {
   if ($Equality.$same(hElem, null) || $Equality.$same(hElem, hRoot)) {
    return;
   }
   this.m_collectElementChain__java_util_ArrayList__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_Tree(chain, hRoot, DOM.m_getParent__org_gwtproject_dom_client_Element(hElem));
   chain.add(hElem);
  }
- /**
-  * @param {Object} hElem
-  * @return {boolean}
-  * @public
-  */
- m_elementClicked__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_Tree(hElem) {
-  let chain = /**@type {!ArrayList<Object>} */ (ArrayList.$create__());
+ /** @return {boolean} */
+ m_elementClicked__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_Tree(/** Object */ hElem) {
+  let chain = /**@type {!ArrayList<Object>}*/ (ArrayList.$create__());
   this.m_collectElementChain__java_util_ArrayList__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element_$p_org_gwtproject_user_client_ui_Tree(chain, this.m_getElement__(), hElem);
   let item = this.m_findItemByChain__java_util_ArrayList__int__org_gwtproject_user_client_ui_TreeItem_$p_org_gwtproject_user_client_ui_Tree(chain, 0, this.f_root__org_gwtproject_user_client_ui_Tree_);
   if (!$Equality.$same(item, null) && !$Equality.$same(item, this.f_root__org_gwtproject_user_client_ui_Tree_)) {
@@ -879,29 +587,19 @@ class Tree extends Widget {
   }
   return false;
  }
- /**
-  * @param {TreeItem} item
-  * @return {TreeItem}
-  * @public
-  */
- m_findDeepestOpenChild__org_gwtproject_user_client_ui_TreeItem_$p_org_gwtproject_user_client_ui_Tree(item) {
+ /** @return {TreeItem} */
+ m_findDeepestOpenChild__org_gwtproject_user_client_ui_TreeItem_$p_org_gwtproject_user_client_ui_Tree(/** TreeItem */ item) {
   if (!item.m_getState__()) {
    return item;
   }
   return this.m_findDeepestOpenChild__org_gwtproject_user_client_ui_TreeItem_$p_org_gwtproject_user_client_ui_Tree(item.m_getChild__int(item.m_getChildCount__() - 1));
  }
- /**
-  * @param {ArrayList<Object>} chain
-  * @param {number} idx
-  * @param {TreeItem} root
-  * @return {TreeItem}
-  * @public
-  */
- m_findItemByChain__java_util_ArrayList__int__org_gwtproject_user_client_ui_TreeItem_$p_org_gwtproject_user_client_ui_Tree(chain, idx, root) {
+ /** @return {TreeItem} */
+ m_findItemByChain__java_util_ArrayList__int__org_gwtproject_user_client_ui_TreeItem_$p_org_gwtproject_user_client_ui_Tree(/** ArrayList<Object> */ chain, /** number */ idx, /** TreeItem */ root) {
   if (idx == chain.size()) {
    return root;
   }
-  let hCurElem = /**@type {Object} */ ($Casts.$to(chain.getAtIndex(idx), Element_$Overlay));
+  let hCurElem = /**@type {Object}*/ ($Casts.$to(chain.getAtIndex(idx), Element_$Overlay));
   for (let i = 0, n = root.m_getChildCount__(); i < n; ++i) {
    let child = root.m_getChild__int(i);
    if ($Equality.$same(child.m_getElement__(), hCurElem)) {
@@ -914,12 +612,8 @@ class Tree extends Widget {
   }
   return this.m_findItemByChain__java_util_ArrayList__int__org_gwtproject_user_client_ui_TreeItem_$p_org_gwtproject_user_client_ui_Tree(chain, idx + 1, root);
  }
- /**
-  * @param {TreeItem} item
-  * @return {TreeItem}
-  * @public
-  */
- m_getTopClosedParent__org_gwtproject_user_client_ui_TreeItem_$p_org_gwtproject_user_client_ui_Tree(item) {
+ /** @return {TreeItem} */
+ m_getTopClosedParent__org_gwtproject_user_client_ui_TreeItem_$p_org_gwtproject_user_client_ui_Tree(/** TreeItem */ item) {
   let topClosedParent = null;
   let parent = item.m_getParentItem__();
   while (!$Equality.$same(parent, null) && !$Equality.$same(parent, this.f_root__org_gwtproject_user_client_ui_Tree_)) {
@@ -930,12 +624,8 @@ class Tree extends Widget {
   }
   return topClosedParent;
  }
- /**
-  * @param {ImageAdapter} images
-  * @param {boolean} useLeafImages
-  * @public
-  */
- m_init__org_gwtproject_user_client_ui_Tree_ImageAdapter__boolean_$p_org_gwtproject_user_client_ui_Tree(images, useLeafImages) {
+ 
+ m_init__org_gwtproject_user_client_ui_Tree_ImageAdapter__boolean_$p_org_gwtproject_user_client_ui_Tree(/** ImageAdapter */ images, /** boolean */ useLeafImages) {
   this.m_setImages__org_gwtproject_user_client_ui_Tree_ImageAdapter__boolean_$p_org_gwtproject_user_client_ui_Tree(images, useLeafImages);
   this.m_setElement__org_gwtproject_dom_client_Element(DOM.m_createDiv__());
   Style_$Overlay.m_setProperty__$devirt__org_gwtproject_dom_client_Style__java_lang_String__java_lang_String(this.m_getElement__().style, "position", "relative");
@@ -954,11 +644,8 @@ class Tree extends Widget {
   this.m_setStyleName__java_lang_String("gwt-Tree");
   Roles.m_getTreeRole__().m_set__org_gwtproject_dom_client_Element(this.f_focusable__org_gwtproject_user_client_ui_Tree_);
  }
- /**
-  * @param {Event} event
-  * @public
-  */
- m_keyboardNavigation__org_gwtproject_user_client_Event_$p_org_gwtproject_user_client_ui_Tree(event) {
+ 
+ m_keyboardNavigation__org_gwtproject_user_client_Event_$p_org_gwtproject_user_client_ui_Tree(/** Event */ event) {
   if (this.m_isKeyboardNavigationEnabled__org_gwtproject_user_client_ui_TreeItem(this.f_curSelection__org_gwtproject_user_client_ui_Tree_)) {
    let code = $Overlay.m_getKeyCode__$devirt__org_gwtproject_dom_client_NativeEvent(event);
    switch (KeyCodes.m_maybeSwapArrowKeysForRtl__int__boolean(code, LocaleInfo.m_getCurrentLocale__().m_isRTL__())) {
@@ -989,9 +676,7 @@ class Tree extends Widget {
    }
   }
  }
- /**
-  * @public
-  */
+ 
  m_maybeCollapseTreeItem___$p_org_gwtproject_user_client_ui_Tree() {
   let topClosedParent = this.m_getTopClosedParent__org_gwtproject_user_client_ui_TreeItem_$p_org_gwtproject_user_client_ui_Tree(this.f_curSelection__org_gwtproject_user_client_ui_Tree_);
   if (!$Equality.$same(topClosedParent, null)) {
@@ -1005,9 +690,7 @@ class Tree extends Widget {
    }
   }
  }
- /**
-  * @public
-  */
+ 
  m_maybeExpandTreeItem___$p_org_gwtproject_user_client_ui_Tree() {
   let topClosedParent = this.m_getTopClosedParent__org_gwtproject_user_client_ui_TreeItem_$p_org_gwtproject_user_client_ui_Tree(this.f_curSelection__org_gwtproject_user_client_ui_Tree_);
   if (!$Equality.$same(topClosedParent, null)) {
@@ -1018,15 +701,13 @@ class Tree extends Widget {
    this.m_setSelectedItem__org_gwtproject_user_client_ui_TreeItem(this.f_curSelection__org_gwtproject_user_client_ui_Tree_.m_getChild__int(0));
   }
  }
- /**
-  * @public
-  */
+ 
  m_moveFocus___$p_org_gwtproject_user_client_ui_Tree() {
   let focusableWidget = this.f_curSelection__org_gwtproject_user_client_ui_Tree_.m_getFocusable__();
   if (!$Equality.$same(focusableWidget, null)) {
    focusableWidget.m_setFocus__boolean(true);
    if (this.f_scrollOnSelectEnabled__org_gwtproject_user_client_ui_Tree_) {
-    Element_$Overlay.m_scrollIntoView__$devirt__org_gwtproject_dom_client_Element(/**@type {Widget} */ ($Casts.$to(focusableWidget, Widget)).m_getElement__());
+    Element_$Overlay.m_scrollIntoView__$devirt__org_gwtproject_dom_client_Element(/**@type {Widget}*/ ($Casts.$to(focusableWidget, Widget)).m_getElement__());
    }
   } else {
    if (this.f_scrollOnSelectEnabled__org_gwtproject_user_client_ui_Tree_) {
@@ -1052,12 +733,8 @@ class Tree extends Widget {
    this.m_setFocus__boolean(true);
   }
  }
- /**
-  * @param {TreeItem} sel
-  * @param {boolean} dig
-  * @public
-  */
- m_moveSelectionDown__org_gwtproject_user_client_ui_TreeItem__boolean_$p_org_gwtproject_user_client_ui_Tree(sel, dig) {
+ 
+ m_moveSelectionDown__org_gwtproject_user_client_ui_TreeItem__boolean_$p_org_gwtproject_user_client_ui_Tree(/** TreeItem */ sel, /** boolean */ dig) {
   if ($Equality.$same(sel, this.f_root__org_gwtproject_user_client_ui_Tree_)) {
    return;
   }
@@ -1081,11 +758,8 @@ class Tree extends Widget {
    this.m_onSelection__org_gwtproject_user_client_ui_TreeItem__boolean__boolean_$p_org_gwtproject_user_client_ui_Tree(sel.m_getChild__int(0), true, true);
   }
  }
- /**
-  * @param {TreeItem} sel
-  * @public
-  */
- m_moveSelectionUp__org_gwtproject_user_client_ui_TreeItem_$p_org_gwtproject_user_client_ui_Tree(sel) {
+ 
+ m_moveSelectionUp__org_gwtproject_user_client_ui_TreeItem_$p_org_gwtproject_user_client_ui_Tree(/** TreeItem */ sel) {
   let topClosedParent = this.m_getTopClosedParent__org_gwtproject_user_client_ui_TreeItem_$p_org_gwtproject_user_client_ui_Tree(sel);
   if (!$Equality.$same(topClosedParent, null)) {
    this.m_onSelection__org_gwtproject_user_client_ui_TreeItem__boolean__boolean_$p_org_gwtproject_user_client_ui_Tree(topClosedParent, true, true);
@@ -1103,13 +777,8 @@ class Tree extends Widget {
    this.m_onSelection__org_gwtproject_user_client_ui_TreeItem__boolean__boolean_$p_org_gwtproject_user_client_ui_Tree(parent, true, true);
   }
  }
- /**
-  * @param {TreeItem} item
-  * @param {boolean} fireEvents
-  * @param {boolean} moveFocus
-  * @public
-  */
- m_onSelection__org_gwtproject_user_client_ui_TreeItem__boolean__boolean_$p_org_gwtproject_user_client_ui_Tree(item, fireEvents, moveFocus) {
+ 
+ m_onSelection__org_gwtproject_user_client_ui_TreeItem__boolean__boolean_$p_org_gwtproject_user_client_ui_Tree(/** TreeItem */ item, /** boolean */ fireEvents, /** boolean */ moveFocus) {
   if ($Equality.$same(item, this.f_root__org_gwtproject_user_client_ui_Tree_)) {
    return;
   }
@@ -1127,12 +796,8 @@ class Tree extends Widget {
    }
   }
  }
- /**
-  * @param {ImageAdapter} images
-  * @param {boolean} useLeafImages
-  * @public
-  */
- m_setImages__org_gwtproject_user_client_ui_Tree_ImageAdapter__boolean_$p_org_gwtproject_user_client_ui_Tree(images, useLeafImages) {
+ 
+ m_setImages__org_gwtproject_user_client_ui_Tree_ImageAdapter__boolean_$p_org_gwtproject_user_client_ui_Tree(/** ImageAdapter */ images, /** boolean */ useLeafImages) {
   this.f_images__org_gwtproject_user_client_ui_Tree_ = images;
   this.f_useLeafImages__org_gwtproject_user_client_ui_Tree_ = useLeafImages;
   if (!useLeafImages) {
@@ -1144,23 +809,17 @@ class Tree extends Widget {
    this.f_indentValue__org_gwtproject_user_client_ui_Tree_ = size + "px";
   }
  }
- /**
-  * @param {TreeItem} treeItem
-  * @param {AbstractImagePrototype} proto
-  * @public
-  */
- m_showImage__org_gwtproject_user_client_ui_TreeItem__org_gwtproject_user_client_ui_AbstractImagePrototype_$p_org_gwtproject_user_client_ui_Tree(treeItem, proto) {
+ 
+ m_showImage__org_gwtproject_user_client_ui_TreeItem__org_gwtproject_user_client_ui_AbstractImagePrototype_$p_org_gwtproject_user_client_ui_Tree(/** TreeItem */ treeItem, /** AbstractImagePrototype */ proto) {
   let holder = treeItem.m_getImageHolderElement___$pp_org_gwtproject_user_client_ui();
   let child = DOM.m_getFirstChild__org_gwtproject_dom_client_Element(holder);
   if ($Equality.$same(child, null)) {
    DOM.m_appendChild__org_gwtproject_dom_client_Element__org_gwtproject_dom_client_Element(holder, proto.m_createElement__());
   } else {
-   proto.m_applyTo__org_gwtproject_user_client_ui_Image(/**@type {Image} */ (Js.m_uncheckedCast__java_lang_Object(child)));
+   proto.m_applyTo__org_gwtproject_user_client_ui_Image(/**@type {Image}*/ (Js.m_uncheckedCast__java_lang_Object(child)));
   }
  }
- /**
-  * @public
-  */
+ 
  m_updateAriaAttributes___$p_org_gwtproject_user_client_ui_Tree() {
   let curSelectionContentElem = this.f_curSelection__org_gwtproject_user_client_ui_Tree_.m_getContentElem___$pp_org_gwtproject_user_client_ui();
   let curSelectionLevel = -1;
@@ -1185,52 +844,34 @@ class Tree extends Widget {
   Roles.m_getTreeitemRole__().m_setAriaSelectedState__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_SelectedValue(curSelectionContentElem, SelectedValue.m_of__boolean(true));
   Roles.m_getTreeRole__().m_setAriaActivedescendantProperty__org_gwtproject_dom_client_Element__org_gwtproject_aria_client_Id(this.f_focusable__org_gwtproject_user_client_ui_Tree_, Id.m_of__org_gwtproject_dom_client_Element(curSelectionContentElem));
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @param {Consumer<?>} arg0
-  * @public
-  */
- m_forEach__java_util_function_Consumer(arg0) {
+ //Default method forwarding stub.
+ /** @override */
+ m_forEach__java_util_function_Consumer(/** Consumer<?> */ arg0) {
   Iterable.m_forEach__$default__java_lang_Iterable__java_util_function_Consumer(this, arg0);
  }
- /**
-  * Default method forwarding stub.
-  * @override
-  * @return {Spliterator<Widget>}
-  * @public
-  */
+ //Default method forwarding stub.
+ /** @override @return {Spliterator<Widget>} */
  m_spliterator__() {
-  return /**@type {Spliterator<Widget>} */ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
+  return /**@type {Spliterator<Widget>}*/ (Iterable.m_spliterator__$default__java_lang_Iterable(this));
  }
- /**
-  * @private
-  */
+ /** @private */
  $init___$p_org_gwtproject_user_client_ui_Tree() {
-  this.f_childWidgets__org_gwtproject_user_client_ui_Tree_ = /**@type {!HashMap<Widget, TreeItem>} */ (HashMap.$create__());
+  this.f_childWidgets__org_gwtproject_user_client_ui_Tree_ = /**@type {!HashMap<Widget, TreeItem>}*/ (HashMap.$create__());
   this.f_isAnimationEnabled__org_gwtproject_user_client_ui_Tree_ = false;
   this.f_scrollOnSelectEnabled__org_gwtproject_user_client_ui_Tree_ = true;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   Tree.$clinit = () =>{};
   Tree.$loadModules();
   Widget.$clinit();
   Iterable.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof Tree;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   j_l_String = goog.module.get('java.lang.String$impl');

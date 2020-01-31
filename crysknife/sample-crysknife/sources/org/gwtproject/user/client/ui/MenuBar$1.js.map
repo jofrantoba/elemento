@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"MenuBar$1.impl.java.js",
-"lineCount":58,
-"mappings":"A;;;;;;;;;;;MA87B6D,E;;;;CAAA,W;EAAAA,Q;EAAAA;8D;EAAAA;OADhCC,MACgCD,C;;;;;;;;QAAA,qG;EAAAE,a;EAAAA,yB;EAAAA,4K;EAAAA,iB;;;;;;;CAAA,4I;EAAAC,0E;EAAAA,qB;EAAAA,iC;;;;;;CAEzC,W;EACVC,0B;;;;;QAHmD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;MA87B6D,E;;CAAA,W;EAAAA,Q;EAAAA;8D;EAAAA;OADhCC,MACgCD,C;;;QAAA,qG;EAAAE,a;EAAAA,yB;EAAAA,4K;EAAAA,iB;;;CAAA,4I;EAAAC,0E;EAAAA,qB;EAAAA,iC;;;CAEzC,W;EACVC,0B;;;QAHmD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["MenuBar.java"],
 "names":["org.gwtproject.user.client.ui.MenuBar$1.<synthetic: ctor_js>","cmd","org.gwtproject.user.client.ui.MenuBar$1.<synthetic: ctor_create>","org.gwtproject.user.client.ui.MenuBar$1.<init>","org.gwtproject.user.client.ui.MenuBar$1.execute","org.gwtproject.user.client.ui.MenuBar$1.<clinit>"]
 }

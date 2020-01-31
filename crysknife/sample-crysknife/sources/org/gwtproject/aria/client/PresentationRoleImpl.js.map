@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"PresentationRoleImpl.impl.java.js",
-"lineCount":41,
-"mappings":"A;;;;;;;;;MAoBM,oB;;;;CAAA,W;EAAAA,Q;;;;;;;QAEJ,yB,CAA4BC,Q;EAA5BC,+B;EAAAA,2C;EAAAA,6F;EAAAA,iB;;;;;;CAAA,wE,CAA4BD,Q;EAC1BE,4E;;;;;QAHE,O;EAAAC,uC;EAAAA,oC;EAAAA;",
+"lineCount":30,
+"mappings":"A;;;;;;;;;MAoBM,oB;;CAAA,W;EAAAA,Q;;;QAEJ,yB,gBAA4BC,Q;EAA5BC,+B;EAAAA,2C;EAAAA,6F;EAAAA,iB;;;CAAA,wE,gBAA4BD,Q;EAC1BE,4E;;;QAHE,O;EAAAC,uC;EAAAA,oC;EAAAA;",
 "sources":["PresentationRoleImpl.java"],
 "names":["org.gwtproject.aria.client.PresentationRoleImpl.<synthetic: ctor_js>","roleName","org.gwtproject.aria.client.PresentationRoleImpl.<synthetic: ctor_create>","org.gwtproject.aria.client.PresentationRoleImpl.<init>","org.gwtproject.aria.client.PresentationRoleImpl.<clinit>"]
 }

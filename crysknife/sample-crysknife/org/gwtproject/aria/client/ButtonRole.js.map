@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ButtonRole.impl.java.js",
-"lineCount":60,
-"mappings":"A;;;;;;;;;;;;;MA4BiB,U;;;;;;;CAOR,yD,CAA6BA,O;;;;;;;CAO7B,wD,CAA4BA,O;;;;;;CAM9B,4D,CAAgCA,O;;;;;;CAMhC,2D,CAA+BA,O;;;;;;;CAM/B,mG,CAA6BA,O,EAAuBC,K;;;;;;;CAMpD,iG,CAA4BD,O,EAAsBC,K;;;;QAtCxC,O;EAAAC,6B;EAAAA;",
+"lineCount":30,
+"mappings":"A;;;;;;;;;;;;;MA4BiB,U;;CAOR,yD,eAA6BA,O;;CAO7B,wD,eAA4BA,O;;CAM9B,4D,eAAgCA,O;;CAMhC,2D,eAA+BA,O;;CAM/B,mG,eAA6BA,O,uBAAuBC,K;;CAMpD,iG,eAA4BD,O,sBAAsBC,K;;QAtCxC,O;EAAAC,6B;EAAAA;",
 "sources":["ButtonRole.java"],
 "names":["element","value","org.gwtproject.aria.client.ButtonRole.<clinit>"]
 }

@@ -10,111 +10,63 @@ let Widget = goog.forwardDeclare('org.gwtproject.user.client.ui.Widget$impl');
 let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 
 class UnmodifiableTabBar extends TabBar {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {TabPanel} */
+  /**@type {TabPanel}*/
   this.f_$outer_this__org_gwtproject_user_client_ui_TabPanel_UnmodifiableTabBar;
  }
- /**
-  * @param {TabPanel} $outer_this
-  * @return {!UnmodifiableTabBar}
-  * @public
-  */
- static $create__org_gwtproject_user_client_ui_TabPanel($outer_this) {
+ /** @return {!UnmodifiableTabBar} */
+ static $create__org_gwtproject_user_client_ui_TabPanel(/** TabPanel */ $outer_this) {
   UnmodifiableTabBar.$clinit();
   let $instance = new UnmodifiableTabBar();
   $instance.$ctor__org_gwtproject_user_client_ui_TabPanel_UnmodifiableTabBar__org_gwtproject_user_client_ui_TabPanel($outer_this);
   return $instance;
  }
- /**
-  * @param {TabPanel} $outer_this
-  * @public
-  */
- $ctor__org_gwtproject_user_client_ui_TabPanel_UnmodifiableTabBar__org_gwtproject_user_client_ui_TabPanel($outer_this) {
+ 
+ $ctor__org_gwtproject_user_client_ui_TabPanel_UnmodifiableTabBar__org_gwtproject_user_client_ui_TabPanel(/** TabPanel */ $outer_this) {
   this.f_$outer_this__org_gwtproject_user_client_ui_TabPanel_UnmodifiableTabBar = $outer_this;
   this.$ctor__org_gwtproject_user_client_ui_TabBar__();
  }
- /**
-  * @override
-  * @param {?string} text
-  * @param {boolean} asHTML
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insertTab__java_lang_String__boolean__int(text, asHTML, beforeIndex) {
+ /** @override */
+ m_insertTab__java_lang_String__boolean__int(/** ?string */ text, /** boolean */ asHTML, /** number */ beforeIndex) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String("Use TabPanel.insert() to alter the TabBar"));
  }
- /**
-  * @override
-  * @param {Widget} widget
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insertTab__org_gwtproject_user_client_ui_Widget__int(widget, beforeIndex) {
+ /** @override */
+ m_insertTab__org_gwtproject_user_client_ui_Widget__int(/** Widget */ widget, /** number */ beforeIndex) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String("Use TabPanel.insert() to alter the TabBar"));
  }
- /**
-  * @param {?string} text
-  * @param {boolean} asHTML
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insertTabProtected__java_lang_String__boolean__int(text, asHTML, beforeIndex) {
+ 
+ m_insertTabProtected__java_lang_String__boolean__int(/** ?string */ text, /** boolean */ asHTML, /** number */ beforeIndex) {
   super.m_insertTab__java_lang_String__boolean__int(text, asHTML, beforeIndex);
  }
- /**
-  * @param {Widget} widget
-  * @param {number} beforeIndex
-  * @public
-  */
- m_insertTabProtected__org_gwtproject_user_client_ui_Widget__int(widget, beforeIndex) {
+ 
+ m_insertTabProtected__org_gwtproject_user_client_ui_Widget__int(/** Widget */ widget, /** number */ beforeIndex) {
   super.m_insertTab__org_gwtproject_user_client_ui_Widget__int(widget, beforeIndex);
  }
- /**
-  * @override
-  * @param {number} index
-  * @public
-  */
- m_removeTab__int(index) {
+ /** @override */
+ m_removeTab__int(/** number */ index) {
   throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String("Use TabPanel.remove() to alter the TabBar"));
  }
- /**
-  * @param {number} index
-  * @public
-  */
- m_removeTabProtected__int(index) {
+ 
+ m_removeTabProtected__int(/** number */ index) {
   super.m_removeTab__int(index);
  }
- /**
-  * @override
-  * @return {SimplePanel}
-  * @public
-  */
+ /** @override @return {SimplePanel} */
  m_createTabTextWrapper__() {
   return this.f_$outer_this__org_gwtproject_user_client_ui_TabPanel_UnmodifiableTabBar.m_createTabTextWrapper__();
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   UnmodifiableTabBar.$clinit = () =>{};
   UnmodifiableTabBar.$loadModules();
   TabBar.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof UnmodifiableTabBar;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   UnsupportedOperationException = goog.module.get('java.lang.UnsupportedOperationException$impl');
   $Exceptions = goog.module.get('vmbootstrap.Exceptions$impl');

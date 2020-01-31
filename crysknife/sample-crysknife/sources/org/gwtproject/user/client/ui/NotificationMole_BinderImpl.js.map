@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"NotificationMole_BinderImpl.impl.java.js",
-"lineCount":75,
-"mappings":"A;;;;;;;;;;;;;;;;;;MAKa,4B;;;;CAAA,W;EAAAA,Q;EAAAA;OAOF,qEAPEA,C;;;;;;QAAA,S;EAAAC,uC;EAAAA,mD;EAAAA,+E;EAAAA,iB;;;;;CAAA,kE;EAAAC,iC;EAAAA,4E;;;;;;;CAUoC,iE,CAAqEC,K;EAGlHC,2O;;;;;;;;;CAbS,mC;EAAAA,mJ;;;;;CAAA,oE;EAOXF,oI;;;;;QAPW,O;EAAAG,+C;EAAAA,4C;EAAAA;",
+"lineCount":55,
+"mappings":"A;;;;;;;;;;;;;;;;;;MAKa,4B;;CAAA,W;EAAAA,Q;EAAAA;OAOF,qEAPEA,C;;;QAAA,S;EAAAC,uC;EAAAA,mD;EAAAA,+E;EAAAA,iB;;;CAAA,kE;EAAAC,iC;EAAAA,4E;;;CAUoC,iE,yBAAqEC,K;EAGlHC,2O;;;;CAbS,mC;EAAAA,kJ;;;CAAA,oE;EAOXF,oI;;;QAPW,O;EAAAG,+C;EAAAA,4C;EAAAA;",
 "sources":["NotificationMole_BinderImpl.java"],
 "names":["org.gwtproject.user.client.ui.NotificationMole_BinderImpl.<synthetic: ctor_js>","org.gwtproject.user.client.ui.NotificationMole_BinderImpl.<synthetic: ctor_create>","org.gwtproject.user.client.ui.NotificationMole_BinderImpl.<init>","owner","org.gwtproject.user.client.ui.NotificationMole_BinderImpl.createAndBindUi","org.gwtproject.user.client.ui.NotificationMole_BinderImpl.<clinit>"]
 }

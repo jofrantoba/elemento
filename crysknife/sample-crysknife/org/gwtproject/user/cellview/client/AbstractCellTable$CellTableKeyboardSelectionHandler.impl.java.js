@@ -18,48 +18,30 @@ let CellPreviewEvent = goog.forwardDeclare('org.gwtproject.view.client.CellPrevi
  * @extends {DefaultKeyboardSelectionHandler<T>}
   */
 class CellTableKeyboardSelectionHandler extends DefaultKeyboardSelectionHandler {
- /**
-  * @protected
-  */
+ /** @protected */
  constructor() {
   super();
-  /** @public {AbstractCellTable<T>} */
+  /**@type {AbstractCellTable<T>}*/
   this.f_table__org_gwtproject_user_cellview_client_AbstractCellTable_CellTableKeyboardSelectionHandler_;
  }
- /**
-  * @template T
-  * @param {AbstractCellTable<T>} table
-  * @return {!CellTableKeyboardSelectionHandler<T>}
-  * @public
-  */
- static $create__org_gwtproject_user_cellview_client_AbstractCellTable(table) {
+ /** @template T @return {!CellTableKeyboardSelectionHandler<T>} */
+ static $create__org_gwtproject_user_cellview_client_AbstractCellTable(/** AbstractCellTable<T> */ table) {
   CellTableKeyboardSelectionHandler.$clinit();
   let $instance = new CellTableKeyboardSelectionHandler();
   $instance.$ctor__org_gwtproject_user_cellview_client_AbstractCellTable_CellTableKeyboardSelectionHandler__org_gwtproject_user_cellview_client_AbstractCellTable(table);
   return $instance;
  }
- /**
-  * @param {AbstractCellTable<T>} table
-  * @public
-  */
- $ctor__org_gwtproject_user_cellview_client_AbstractCellTable_CellTableKeyboardSelectionHandler__org_gwtproject_user_cellview_client_AbstractCellTable(table) {
+ 
+ $ctor__org_gwtproject_user_cellview_client_AbstractCellTable_CellTableKeyboardSelectionHandler__org_gwtproject_user_cellview_client_AbstractCellTable(/** AbstractCellTable<T> */ table) {
   this.$ctor__org_gwtproject_user_cellview_client_AbstractHasData_DefaultKeyboardSelectionHandler__org_gwtproject_user_cellview_client_AbstractHasData(table);
   this.f_table__org_gwtproject_user_cellview_client_AbstractCellTable_CellTableKeyboardSelectionHandler_ = table;
  }
- /**
-  * @override
-  * @return {AbstractCellTable<T>}
-  * @public
-  */
+ /** @override @return {AbstractCellTable<T>} */
  m_getDisplay__() {
   return this.f_table__org_gwtproject_user_cellview_client_AbstractCellTable_CellTableKeyboardSelectionHandler_;
  }
- /**
-  * @override
-  * @param {CellPreviewEvent<T>} event
-  * @public
-  */
- m_onCellPreview__org_gwtproject_view_client_CellPreviewEvent(event) {
+ /** @override */
+ m_onCellPreview__org_gwtproject_view_client_CellPreviewEvent(/** CellPreviewEvent<T> */ event) {
   let nativeEvent = event.m_getNativeEvent__();
   let eventType = $Overlay.m_getType__$devirt__org_gwtproject_dom_client_NativeEvent(event.m_getNativeEvent__());
   if (j_l_String.m_equals__java_lang_String__java_lang_Object(BrowserEvents.f_KEYDOWN__org_gwtproject_dom_client_BrowserEvents, eventType) && !event.m_isCellEditing__()) {
@@ -115,13 +97,8 @@ class CellTableKeyboardSelectionHandler extends DefaultKeyboardSelectionHandler 
   }
   super.m_onCellPreview__org_gwtproject_view_client_CellPreviewEvent(event);
  }
- /**
-  * @param {number} start
-  * @param {boolean} reverse
-  * @return {number}
-  * @public
-  */
- m_findInteractiveColumn__int__boolean_$p_org_gwtproject_user_cellview_client_AbstractCellTable_CellTableKeyboardSelectionHandler(start, reverse) {
+ /** @return {number} */
+ m_findInteractiveColumn__int__boolean_$p_org_gwtproject_user_cellview_client_AbstractCellTable_CellTableKeyboardSelectionHandler(/** number */ start, /** boolean */ reverse) {
   if (!this.f_table__org_gwtproject_user_cellview_client_AbstractCellTable_CellTableKeyboardSelectionHandler_.f_isInteractive__org_gwtproject_user_cellview_client_AbstractCellTable_) {
    return 0;
   } else if (reverse) {
@@ -149,25 +126,17 @@ class CellTableKeyboardSelectionHandler extends DefaultKeyboardSelectionHandler 
   }
   return 0;
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   CellTableKeyboardSelectionHandler.$clinit = () =>{};
   CellTableKeyboardSelectionHandler.$loadModules();
   DefaultKeyboardSelectionHandler.$clinit();
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance instanceof CellTableKeyboardSelectionHandler;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   BrowserEvents = goog.module.get('org.gwtproject.dom.client.BrowserEvents$impl');

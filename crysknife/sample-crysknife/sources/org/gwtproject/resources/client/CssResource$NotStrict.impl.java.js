@@ -11,44 +11,27 @@ let $LambdaAdaptor = goog.forwardDeclare('org.gwtproject.resources.client.CssRes
  * @extends {Annotation}
  */
 class NotStrict {
- /**
-  * @param {?function():Class<?>} fn
-  * @return {NotStrict}
-  * @public
-  */
- static $adapt(fn) {
+ /** @return {NotStrict} */
+ static $adapt(/** ?function():Class<?> */ fn) {
   NotStrict.$clinit();
   return new $LambdaAdaptor(fn);
  }
- /**
-  * @public
-  */
+ 
  static $clinit() {
   NotStrict.$clinit = () =>{};
   NotStrict.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  Annotation.$markImplementor(classConstructor);
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_resources_client_CssResource_NotStrict = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  Annotation.$markImplementor(ctor);
+  ctor.prototype.$implements__org_gwtproject_resources_client_CssResource_NotStrict = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_resources_client_CssResource_NotStrict;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {
   $LambdaAdaptor = goog.module.get('org.gwtproject.resources.client.CssResource.NotStrict.$LambdaAdaptor$impl');
  }

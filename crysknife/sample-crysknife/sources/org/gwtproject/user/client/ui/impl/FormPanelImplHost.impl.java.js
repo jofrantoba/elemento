@@ -6,45 +6,25 @@ const $Util = goog.require('nativebootstrap.Util$impl');
  * @interface
  */
 class FormPanelImplHost {
- /**
-  * @abstract
-  * @return {boolean}
-  * @public
-  */
+ /** @abstract @return {boolean} */
  m_onFormSubmit__() {}
- /**
-  * @abstract
-  * @public
-  */
+ /** @abstract */
  m_onFrameLoad__() {}
- /**
-  * @public
-  */
+ 
  static $clinit() {
   FormPanelImplHost.$clinit = () =>{};
   FormPanelImplHost.$loadModules();
  }
- /**
-  * @param {Function} classConstructor
-  * @public
-  */
- static $markImplementor(classConstructor) {
-  /**
-   * @public {boolean}
-   */
-  classConstructor.prototype.$implements__org_gwtproject_user_client_ui_impl_FormPanelImplHost = true;
+ 
+ static $markImplementor(/** Function*/ ctor)
+ {
+  ctor.prototype.$implements__org_gwtproject_user_client_ui_impl_FormPanelImplHost = true;
  }
- /**
-  * @param {?} instance
-  * @return {boolean}
-  * @public
-  */
- static $isInstance(instance) {
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
   return instance != null && !!instance.$implements__org_gwtproject_user_client_ui_impl_FormPanelImplHost;
  }
- /**
-  * @public
-  */
+ 
  static $loadModules() {}
  
 }
